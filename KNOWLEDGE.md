@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **107 sections, about 6650 lines**, written as the
+The full working record of the project: **107 sections, about 6700 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -6633,8 +6633,35 @@ neither exists, so the audit reported a failure for a sentence that was not ther
 wrong -- and `python audit.py` is the FIRST command the README tells a reviewer to run.  It
 now stands down and says which it is doing, as checks 5h and 5s already did.
 
-That fault has now occurred twice, in two checks written months apart, and both times it was
-found by copying the package somewhere else and running it rather than by reading it.  **A
+**And copying it somewhere else was not enough.**  The package was pushed, cloned back from
+GitHub, and `python audit.py` CRASHED in the clone:
+
+    AttributeError: 'set' object has no attribute 'items'
+
+Checks 5l, 5m and 5n sweep `os.walk(os.path.dirname(HERE))` -- the PARENT of the package.
+In the author's working folder that is the right set, because `paper/` lives there and its
+scripts have to be swept.  In a clone it is whatever directory the clone was made in, so the
+audit was reading the reviewer's unrelated files.  Here that directory held a scratch script
+with a set literal named `TAU`, and 5n's `eval('{' + body + '}')` returns a SET for
+`{1, 2, 3}` and a dict for `{1: 2}` -- `.items()` was called before anything checked which.
+Two defects, and the second would have fired without any clone at all: any `TAU = {...}` set
+literal anywhere in the swept tree crashed it.
+
+Checks 5f and 6 in the same file already did this correctly -- walk `HERE`, and add named
+outside files only where they exist -- so the pattern to copy was ten lines above the fault.
+The three sweeps now scan this package plus the sibling `paper/` ONLY when the paper beside
+it is this project's paper, which is verified two ways: a planted bad `TAU` in `paper/`
+still fails 5n, and a checkout placed next to a hostile neighbour passes clean.
+
+**The lesson is sharper than "test from a clean checkout", which had already been learned
+twice.**  Four clean-checkout runs passed that morning, and they passed BECAUSE the copies
+sat in directories with nothing beside them: a sweep of the parent swept nothing, so the
+scope bug was invisible in exactly the test designed to find it.  A copy is not a clone.
+**The neighbours of the checkout are part of the test** -- clone what was actually pushed,
+into a directory that has other things in it, and run the first command the README gives.
+
+That fault has now occurred three times, in three checks written months apart, and every
+time it was found by running the package somewhere else rather than by reading it.  **A
 check that reads outside the package must be written to notice that the outside is not
 there.**  The rule for this repository: after adding any check that opens a path beginning
 `..`, run the audit from a copy of `kissing_verifications` alone before believing it.

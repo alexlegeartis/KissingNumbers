@@ -736,6 +736,23 @@ _ALSO = [os.path.join(HERE, os.pardir, 'README.md'),
          os.path.join(HERE, os.pardir, 'paper', 'kissing46.tex')]
 _walked = [(os.path.dirname(_q), [], [os.path.basename(_q)])
            for _q in _ALSO if os.path.exists(_q)]
+
+# The text sweeps of 5l, 5m and 5n used to walk os.path.dirname(HERE) -- the PARENT of this
+# package.  In the author's working folder that is right, because paper/ is there.  In a
+# CLONE it is whatever directory the clone was made in, so the audit swept the reviewer's
+# unrelated files: a scratch script holding a set literal named TAU crashed 5n outright, on
+# the first command the README gives.  Scan this package, and the paper beside it only when
+# that paper is THIS one.  Checks 5f and 6 above already had it right.
+_PAPER = os.path.join(HERE, os.pardir, 'paper')
+_ROOTS = [HERE] + ([_PAPER] if os.path.exists(os.path.join(_PAPER, 'kissing46.tex')) else [])
+
+
+def _sweep():
+    """os.walk over this package and, when it is beside it, the paper -- and nothing else"""
+    for _r in _ROOTS:
+        for _tup in os.walk(_r):
+            yield _tup
+
 print()
 print("5f. every pointer into an outside document says which document")
 # "Equation (3)" of tau(47) = 23766960 was the preprint's in two files and the journal
@@ -972,7 +989,7 @@ print("5l. no LaTeX escape has been halved, and no Cyrillic look-alike letter")
 _CYR = re.compile('[' + chr(0x0400) + '-' + chr(0x04FF) + ']+')
 _CTRL = {chr(7): 'a', chr(8): 'b', chr(9): 't', chr(11): 'v', chr(12): 'f'}
 _halved = []
-for _dp, _dn, _fn in os.walk(os.path.dirname(HERE)):
+for _dp, _dn, _fn in _sweep():
     _dn[:] = [_d for _d in _dn if _d not in ('__pycache__', '.git', 'research', 'colab')]
     for _f in _fn:
         if not _f.endswith(('.md', '.tex')):
@@ -1030,7 +1047,7 @@ else:
 
     _canon = dict((_d, _v) for _d, _v, _p, _h in claims)
     _stale = []
-    for _dp, _dn, _fn in os.walk(os.path.dirname(HERE)):
+    for _dp, _dn, _fn in _sweep():
         _dn[:] = [_x for _x in _dn if _x not in ('__pycache__', '.git', 'research', 'colab')]
         for _f in _fn:
             # RESULTS.md is the generated authority these claims are read FROM, and in
@@ -1076,7 +1093,7 @@ else:
 print()
 print("5n. no script carries a tau table that disagrees with common/published.py")
 _drift = []
-for _dp, _dn, _fn in os.walk(os.path.dirname(HERE)):
+for _dp, _dn, _fn in _sweep():
     _dn[:] = [_d for _d in _dn if _d not in ('__pycache__', '.git', 'research', 'colab')]
     for _f in _fn:
         if not _f.endswith('.py'):
@@ -1094,8 +1111,11 @@ for _dp, _dn, _fn in os.walk(os.path.dirname(HERE)):
                 _d = eval('{' + _body + '}', {'__builtins__': {}}, {})
             except Exception:
                 continue
-            if not _d or not all(isinstance(_k, int) and isinstance(_v, int)
-                                 for _k, _v in _d.items()):
+            # eval of a brace body gives a SET for {1, 2, 3} and a dict for {1: 2}, and
+            # .items() was called before anything checked which.  A set literal named TAU
+            # anywhere in the swept tree crashed this, clone or not.
+            if not isinstance(_d, dict) or not _d or not all(
+                    isinstance(_k, int) and isinstance(_v, int) for _k, _v in _d.items()):
                 continue
             for _k in sorted(_d):
                 if _k in PUBTAU and _d[_k] != PUBTAU[_k]:
