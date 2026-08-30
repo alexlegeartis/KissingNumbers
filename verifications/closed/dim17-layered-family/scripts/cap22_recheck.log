@@ -1,0 +1,37 @@
+[Saved transcript. This is a re-run of the cap22 model from an earlier stage of the
+work, when the driver was still called tierB_lean.py; there is no cap22_recheck.py.
+The shipped scripts that reproduce this are cap22.py, cap22_decide.py and
+cap22_det.py. The dimension-17 closure does NOT rest on this file: it is proved by
+closed/dim17-23-cohn-li-mechanism/, which run_all.py runs and which settles
+alpha = 192 by an exact Delsarte dual rather than by search.]
+
+alpha with every fibre capped at 22 -- the only regime where 193 could live.
+
+The heavy model (61440 vertex 4-clique cuts) spends its budget building rather than searching.
+The fibre cuts dominate them anyway: for any 4 MUTUALLY ADJACENT fibres the exact independence
+number is 32, and Q has 120 such 4-cliques, so 120 constraints replace 61440.  With
+vertex-transitivity (x_0 = 1) and maximality that is the whole model.
+
+Progress is printed as it comes so the bracket on alpha is visible while it runs.
+
+    tau(17) = 5346 + 2*alpha ; alpha = 192 closes dimension 17, alpha >= 193 is a record.
+
+    python tierB_lean.py [seconds]
+
+graph 1024 vertices, 60-regular ; quotient 32 fibres with 120 4-cliques
+   solution 1: |S| = 55   bound 249   (1s)
+   solution 2: |S| = 56   bound 248   (1s)
+   solution 3: |S| = 59   bound 244   (1s)
+   solution 4: |S| = 85   bound 243   (1s)
+   solution 5: |S| = 87   bound 243   (1s)
+   solution 6: |S| = 114   bound 243   (1s)
+   solution 7: |S| = 127   bound 236   (1s)
+   solution 8: |S| = 131   bound 217   (2s)
+   solution 9: |S| = 132   bound 217   (2s)
+   solution 10: |S| = 134   bound 208   (3s)
+   solution 11: |S| = 136   bound 204   (4s)
+   solution 12: |S| = 137   bound 199   (24s)
+   solution 13: |S| = 138   bound 199   (38s)
+
+alpha = 138, proven upper bound 193, status FEASIBLE
+tau(17): achieved 5622, ceiling 5732   (record 5730)

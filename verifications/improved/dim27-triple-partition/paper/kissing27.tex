@@ -1,0 +1,553 @@
+\documentclass[11pt]{amsart}
+\usepackage{amssymb,booktabs}
+\usepackage[hidelinks,pdftitle={A kissing configuration of 200540 points in 27 dimensions},pdfauthor={Alexey Kravatskiy}]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+% a symbol, not an operator: \DeclareMathOperator would make it a \mathop,
+% adding operator spacing and detaching sub- and superscripts
+\newcommand{\Leech}{\Lambda_{24}}
+\newcommand{\ip}[2]{\langle #1,#2\rangle}
+\newcommand{\wh}{\widehat{w}}
+
+\title{A kissing configuration of $200540$ points in $\mathbb{R}^{27}$}
+\author{Alexey Kravatskiy}
+\address{MIRIAI (Moscow Independent Research Institute\newline
+of Artificial Intelligence), Moscow, Russia}
+\email{kravatskii.a@miriai.org}
+\date{19 August 2026}
+\subjclass[2020]{Primary 52C17; Secondary 11H31, 94B25}
+\keywords{Kissing number, Leech lattice, Golay code, root system,
+exact verification}
+
+% pages end where their content ends; amsart's default \flushbottom stretches
+% the vertical glue on the one page whose last display will not fit
+\raggedbottom
+
+\begin{document}
+
+\begin{abstract}
+We show that the kissing number in $27$ dimensions satisfies $K(27)\ge 200540$,
+improving the record of $200044$ by $496$. The record configurations in
+dimensions $25$ through $31$ all have a common form, and the number of points
+in such a configuration is governed by a single integer $m$. We prove that
+$m\le\lfloor 2K(k)/3\rfloor$ in dimension $24+k$, under hypotheses that all
+seven published configurations satisfy, and find that all seven attain this
+bound except in dimension $27$, where $m$ falls one short. Closing that gap
+needs no new coordinates, only a regrouping of the configuration already
+published,
+and it adds $496$ points. For $k=5,6,7$ the value of $K(k)$ is not known, and
+the comparison there is against the best lower bound known for it. Every
+assertion made here about the configurations is verified in exact arithmetic
+over $\mathbb Z[\sqrt2,\sqrt3,\sqrt6]$, the ring in which the published
+coordinates lie.
+\end{abstract}
+
+\maketitle
+
+The kissing number $K(n)$ is the largest number of unit vectors in
+$\mathbb{R}^{n}$ whose pairwise inner products are all at most $\tfrac12$. We
+prove the following, improving the record of $200044$ held by the configuration
+of \cite{ma2025} by $496$.
+
+\begin{theorem*}
+$K(27)\ge 200540$.
+\end{theorem*}
+
+This is Theorem~\ref{thm:main} below. Section~\ref{sec:family} describes the
+family of constructions the record configurations in dimensions $25$ through
+$31$ all belong to, Section~\ref{sec:bound} bounds the quantity that governs
+their size, Section~\ref{sec:dim27} gives the configuration, and
+Section~\ref{sec:verification} verifies it.
+
+\section{The construction family}\label{sec:family}
+
+Write $\mathbb{R}^{24+k}=\mathbb{R}^{24}\oplus\mathbb{R}^{k}$ and split a unit
+vector as $p=(v,w)$. Let $X\subset S^{23}$ denote the $196560$ minimal vectors
+of the Leech lattice $\Leech$, normalised to unit length; recall that
+$\ip{x}{x'}\in\{0,\pm\tfrac14,\pm\tfrac12,\pm1\}$ for $x,x'\in X$ \cite{cs};
+we re-verified this value set in exact arithmetic for the copy of $X$ recovered
+from \cite{cohn-data}.
+
+Those configurations all have the following form, which we extracted directly
+from the published coordinates \cite{cohn-data} for every $k=1,\dots,7$:
+
+\begin{itemize}
+\item an \emph{equator} $\{(x,0):x\in X\setminus D\}$, for a set $D\subset X$
+      of \emph{deleted} vectors;
+\item \emph{caps} $\bigl(\sqrt{\tfrac23}\,u,\ \sqrt{\tfrac13}\,\wh\bigr)$, in
+      which $u\in X$ is the cap's \emph{head} and the unit vector
+      $\wh\in\mathbb{R}^{k}$ its \emph{direction};
+\item \emph{axis points} $(0,\omega)$, the $\omega$ forming a kissing
+      configuration in $\mathbb{R}^{k}$: at most $K(k)$ of them, further
+      constrained by \eqref{eq:A} below.
+\end{itemize}
+
+Let $W\subset S^{k-1}$ be the set of directions that occur and, for $\wh\in W$,
+let $U_{\wh}\subset X$ be the set of heads occurring with $\wh$, the
+\emph{class} of $\wh$. The constraints are as follows; all are immediate from
+$\ip{p}{p'}\le\tfrac12$.
+
+\begin{lemma}\label{lem:constraints}
+The above configuration is a kissing configuration if and only if
+\begin{align}
+&\text{(E)} && u\in D \text{ for every } u\in\textstyle\bigcup_{\wh}U_{\wh},
+   \label{eq:E}\\
+&\text{(C)} && \tfrac23\ip{u}{u'}+\tfrac13\ip{\wh}{\wh{}'}\le\tfrac12
+   \quad\text{for caps } (u,\wh)\ne(u',\wh{}'),\label{eq:C}\\
+&\text{(A)} && \ip{\omega}{\wh}\le\tfrac{\sqrt3}{2}\quad\text{for all
+   axis points }\omega\text{ and }\wh\in W.\label{eq:A}
+\end{align}
+\end{lemma}
+
+\begin{proof}
+An equatorial point $(x,0)$ and a cap $(\sqrt{2/3}\,u,\sqrt{1/3}\,\wh)$ have
+inner product $\sqrt{2/3}\,\ip{x}{u}$, which is at most
+$\sqrt{2/3}\cdot\tfrac12<\tfrac12$ when $x\ne u$, and equals
+$\sqrt{2/3}>\tfrac12$ when $x=u$; this gives \eqref{eq:E}. Two caps give
+\eqref{eq:C} directly, and an axis point and a cap give
+$\sqrt{1/3}\,\ip{\omega}{\wh}\le\tfrac12$, which is \eqref{eq:A}. Equatorial
+pairs and axis pairs are inherited from $X$ and from the kissing configuration
+in $\mathbb{R}^{k}$, and $(x,0)\perp(0,\omega)$.
+\end{proof}
+
+Condition \eqref{eq:E} is the essential point: the head of a cap must be
+deleted from the equator. Only then may the cap sit at
+$|v|=\sqrt{2/3}>\tfrac12$.
+
+\begin{remark}\label{rem:k1}
+Condition \eqref{eq:A} admits no axis point at all when $k=1$: there
+$W=\{\pm1\}$, so either choice of $\omega=\pm1$ has $\ip{\omega}{\wh}=1>
+\tfrac{\sqrt3}{2}$ for one of the two cap directions. This is why the $k=1$ row
+of Table~\ref{tab:m} carries no axis points where every other row carries
+$K(k)$ of them.
+\end{remark}
+
+Specialising \eqref{eq:C} to $\wh{}'=\wh$ gives $\ip{u}{u'}\le\tfrac14$: every
+class has pairwise cosines at most $\tfrac14$. Write
+$\mathcal S=\{U_{\wh}:\wh\in W\}$ for the set of distinct classes.
+
+\begin{proposition}\label{prop:count}
+If the classes in $\mathcal S$ are pairwise disjoint and all have size $N$, and
+$D=\bigcup_{\wh}U_{\wh}$, then the configuration has
+\begin{multline*}
+   \bigl(196560-|\mathcal S|\,N\bigr)\;+\;|W|\,N\;+\;(\text{\# axis points})\\
+   {}=\;196560+\bigl(|W|-|\mathcal S|\bigr)N+(\text{\# axis points})
+\end{multline*}
+points. In particular the net gain is governed by $m:=|W|-|\mathcal S|$.
+\end{proposition}
+
+Each direction contributes $N$ points, while each \emph{distinct} class costs
+$N$ deletions from the equator; a class reused on several directions is paid for
+only once.
+
+\section{The bound on \texorpdfstring{$m$}{m}}\label{sec:bound}
+
+\begin{lemma}\label{lem:group}
+Let $\wh\ne\wh{}'$ in $W$.
+\begin{enumerate}
+\item If $U_{\wh}\cap U_{\wh'}\ne\emptyset$ then $\ip{\wh}{\wh{}'}\le-\tfrac12$.
+\item If there are $u\in U_{\wh}$ and $u'\in U_{\wh'}$ with
+      $\ip{u}{u'}=\tfrac12$, then $\ip{\wh}{\wh{}'}\le\tfrac12$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(i) Taking $u=u'$ in the intersection in \eqref{eq:C} gives
+$\tfrac23+\tfrac13\ip{\wh}{\wh{}'}\le\tfrac12$.
+(ii) Applying \eqref{eq:C} to that pair gives
+$\tfrac13+\tfrac13\ip{\wh}{\wh{}'}\le\tfrac12$.
+\end{proof}
+
+In (ii) it is essential that $u$ and $u'$ lie in \emph{different} classes: all
+cosines within a class are at most $\tfrac14$, so a pair at cosine $\tfrac12$
+inside a single class does not exist, and the hypothesis read that way would be
+unsatisfiable.
+
+\begin{theorem}\label{thm:bound}
+Let a configuration be as in Proposition~\ref{prop:count}, so that the classes
+$U_{\wh}$ are pairwise equal or disjoint. Then
+\begin{enumerate}
+\item $m=|W|-|\mathcal S|\le|W|-\lceil |W|/3\rceil=\lfloor 2|W|/3\rfloor$;
+\item if in addition any two \emph{distinct} classes $U_{\wh}\ne U_{\wh'}$
+      contain a cross pair $u\in U_{\wh}$, $u'\in U_{\wh'}$ with
+      $\ip{u}{u'}=\tfrac12$, then $|W|\le K(k)$ and hence
+      $m\le\lfloor 2K(k)/3\rfloor$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(i) Group the elements of $W$ according to which class they carry; this is a
+partition because the classes are pairwise equal or disjoint. By
+Lemma~\ref{lem:group}(i) the members of a group are pairwise at cosine at most
+$-\tfrac12$, so if a group has $t$ members then
+$0\le\bigl|\sum \wh\bigr|^{2}\le t+2\binom{t}{2}\bigl(-\tfrac12\bigr)
+ =t-\tfrac{t(t-1)}{2}$,
+whence $t\le3$. (This uses no property of $\mathbb{R}^{k}$ beyond the inner
+product, so it holds in every dimension.) Therefore
+$|\mathcal S|\ge\lceil |W|/3\rceil$.
+
+(ii) Two directions carrying the same class are at cosine at most $-\tfrac12$
+by Lemma~\ref{lem:group}(i); two carrying different classes are at cosine at
+most $\tfrac12$ by Lemma~\ref{lem:group}(ii). So $W$ is a set of unit vectors
+in $\mathbb{R}^{k}$ that are pairwise at angle at least $60^\circ$, i.e.\
+$|W|\le K(k)$. Since $n\mapsto\lfloor 2n/3\rfloor$ is nondecreasing, (i) gives
+the stated bound.
+\end{proof}
+
+\begin{remark}\label{rem:hyp}
+Neither hypothesis can be dropped. Without the first, the classes carried by the
+elements of $W$ need not be equal or disjoint, so the grouping used in the
+proof of (i) is not a partition. Without the second, two disjoint classes all of
+whose cross cosines are at most $0$ impose, through \eqref{eq:C}, only
+$\ip{\wh}{\wh{}'}\le\tfrac32$, which is no constraint; $|W|$ could then exceed
+$K(k)$. Both hypotheses do hold for all seven published configurations, as
+recorded in Table~\ref{tab:m}.
+\end{remark}
+
+\begin{table}[t]
+\centering
+{\small\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{ccccccccr}
+\toprule
+$k$ & $24+k$ & $W$ & $|W|$ & $|\mathcal S|$ & $m$
+    & $\lfloor 2K(k)/3\rfloor$ & $K(k)$ & points\\
+\midrule
+\multicolumn{9}{l}{\itshape $K(k)$ known exactly}\\
+$1$ & $25$ & $A_1$ & $2$   & $1$  & $1$  & $1$  & $2$  & $197056$\\
+$2$ & $26$ & $A_2$ & $6$   & $2$  & $4$  & $4$  & $6$  & $198550$\\
+$3$ & $27$ & $A_3$ & $12$  & $5$  & $\mathbf{7}$ & $\mathbf{8}$ & $12$ & $200044$\\
+$4$ & $28$ & $D_4$ & $24$  & $8$  & $16$ & $16$ & $24$ & $204520$\\
+\midrule
+\multicolumn{9}{l}{\itshape $K(k)$ known only within the range shown}\\
+$5$ & $29$ & $D_5$ & $40$  & $14$ & $26$ & $26$--$29$ & $40$--$44$   & $209496$\\
+$6$ & $30$ & $E_6$ & $72$  & $24$ & $48$ & $48$--$51$ & $72$--$77$   & $220440$\\
+$7$ & $31$ & $E_7$ & $126$ & $42$ & $84$ & $84$--$89$ & $126$--$134$ & $238350$\\
+\bottomrule
+\end{tabular}}
+\caption{The bound of Theorem~\ref{thm:bound}(ii) against the values of $m$ in
+the record configurations of \cite{ma2025,cohn-data}, all seven computed from
+the published coordinates in exact arithmetic. The two middle columns are the
+comparison, and they agree in every row but $k=3$, where $m=7$ falls one short
+of $8$ --- the slack this note removes. In every row $W$ is closed under
+negation and has the cosine distribution of the roots of the named root system,
+so $|W|$ equals $K(k)$ in the upper block and the best known lower bound for
+$K(k)$ in the lower one, where the comparison is accordingly conditional on the
+configurations named in the $W$ column. Throughout, the classes are pairwise
+disjoint with $N=496$; the axis points number $K(k)$ for $k\ge2$ and none for
+$k=1$ (Remark~\ref{rem:k1}); and both hypotheses of Theorem~\ref{thm:bound}
+hold, the maximum cross cosine over all $1267$ pairs of distinct classes
+arising at $k=1,\dots,7$ being exactly $\tfrac12$.}
+\label{tab:m}
+\end{table}
+
+\begin{remark}\label{rem:table}
+The kissing number is known exactly only in dimensions $1$, $2$, $3$, $4$, $8$
+and $24$; that is what separates the two blocks of Table~\ref{tab:m}. In the
+lower block the entries $40$, $72$, $126$ are the best known lower bounds for
+$K(5)$, $K(6)$, $K(7)$, each realised by the root system named in the same row,
+and the best known upper bounds are $44$ and $134$ \cite{mv2010} and $77$
+\cite{dllk2024}, as recorded in \cite{cohn-table}. Since $n\mapsto\lfloor2n/3\rfloor$ is
+nondecreasing, the bound there is understated: were $K$ to equal its upper
+bound, the entries would read $29$, $51$, $89$ and $m$ would fall short by $3$,
+$3$, $5$. So in that block ``$m$ meets the bound'' asserts only that it meets
+the value computed from the lower end of the range.
+
+The distinction is not bookkeeping. What Theorem~\ref{thm:bound}(i) constrains
+is $|\mathcal S|\ge\lceil|W|/3\rceil$, and six of the seven rows already sit at
+that minimum: $|\mathcal S|=1,2,\mathbf{5},8,14,24,42$ against
+$\lceil|W|/3\rceil=1,2,\mathbf{4},8,14,24,42$. Only $k=3$ spends a class it need
+not, and that is the whole of the improvement below. For $k=5,6,7$ a larger $m$
+therefore cannot come from regrouping a given $W$; it would need a larger $W$,
+that is, a kissing configuration in $\mathbb{R}^{k}$ beating $D_5$, $E_6$ or
+$E_7$ --- the open problem that put those rows in the lower block to begin with.
+Rows $k=1,2,3,4$ use the proven values $K=2,6,12,24$, so the slack at $k=3$ is
+unconditional.
+\end{remark}
+
+\section{Dimension \texorpdfstring{$27$}{27}}\label{sec:dim27}
+
+We extracted the published $200044$-point configuration in $\mathbb{R}^{27}$
+from \cite{cohn-data} and computed its structure. It consists of $194080$
+equatorial points, $5952$ caps with $|w|=1/\sqrt3$ exactly, and $12$ axis
+points. The caps lie on $|W|=12$ directions whose pairwise cosines lie in
+$\{0,\pm\tfrac12,\pm1\}$, so $W$ is a cuboctahedron --- the $A_3$ root system of
+Table~\ref{tab:m} --- and $|W|=K(3)=12$ is maximal. Each class has $N=496$
+elements and there are $|\mathcal S|=5$ of them, pairwise disjoint, whose
+$5\cdot496=2480$ vectors are exactly the $196560-194080=2480$ deleted from the
+equator. Thus $m=12-5=7$, in agreement with Proposition~\ref{prop:count}:
+$196560+7\cdot496+12=200044$.
+
+The grouping of the twelve directions is $\{3,3,2,2,2\}$, with pairwise cosine
+$-\tfrac12$ inside each triple and $-1$ inside each pair. By the proof of
+Theorem~\ref{thm:bound}(i) a group has at most three members, so the minimum
+possible number of groups is $\lceil 12/3\rceil=4$. We verified by exhaustive
+search over the $\binom{12}{3}$ triples and $\binom{12}{4}$ quadruples that the
+twelve directions contain exactly eight triples that are pairwise at cosine
+$-\tfrac12$ (and no set of four with all cosines $\le-\tfrac12$) and that
+these eight triples admit exactly two partitions of $W$ into four of them,
+namely
+\[
+\begin{aligned}
+   P_1:\quad&\{\wh_0,\wh_7,\wh_{10}\},&&\{\wh_1,\wh_6,\wh_9\},
+   &&\{\wh_2,\wh_3,\wh_{11}\},&&\{\wh_4,\wh_5,\wh_8\};\\
+   P_2:\quad&\{\wh_0,\wh_8,\wh_9\},   &&\{\wh_1,\wh_4,\wh_{11}\},
+   &&\{\wh_2,\wh_5,\wh_{10}\},&&\{\wh_3,\wh_6,\wh_7\}.
+\end{aligned}
+\]
+Here $\wh_0,\dots,\wh_{11}$ are the twelve directions in lexicographic order of
+their coordinate triples; the statement is of course independent of the
+labelling. Each of $P_1$ and $P_2$ reuses one of the two triples already present
+in the published grouping. Assigning any four of the five existing classes to
+the four triples of either partition yields $|\mathcal S|=4$, and hence $m=8$.
+
+\begin{theorem}\label{thm:main}
+$K(27)\ge 200540$.
+\end{theorem}
+
+\begin{proof}
+Let $S_1,\dots,S_4$ be any four of the five classes. Take
+$D=S_1\cup S_2\cup S_3\cup S_4$, of size $4\cdot496=1984$; the equator
+$X\setminus D$ has $194576$ points. Place $S_i$ on the $i$-th triple of $P_1$
+(or of $P_2$; the argument is identical), giving $12\cdot496=5952$ caps, and
+retain the $12$ axis points. Equatorial
+pairs are inherited from $X$ and axis pairs from the cuboctahedron of axis
+points; $(x,0)\perp(0,\omega)$. Condition \eqref{eq:E} holds by construction,
+since every cap head lies in $D$ and the equator is $X\setminus D$. Condition
+\eqref{eq:A} holds because $W$ and the axis points are unchanged from the
+published configuration:
+$\max_{\omega,\wh}\ip{\omega}{\wh}=\tfrac12+\tfrac{\sqrt2}{4}=0.8535\ldots
+<\tfrac{\sqrt3}{2}=0.8660\ldots$, equivalently the largest inner product between
+a cap and an axis point is
+$\tfrac{\sqrt3}{6}+\tfrac{\sqrt6}{12}=0.4927\ldots<\tfrac12$. For \eqref{eq:C}
+there are three cases, using that distinct elements of $X$ have
+$\ip{u}{u'}\le\tfrac12$ and that the four classes are pairwise disjoint, so that
+$u=u'$ can occur only within one class:
+\begin{itemize}
+\item $\wh=\wh{}'$: then $u\ne u'$ lie in one class, so $\ip{u}{u'}\le\tfrac14$
+      and $\tfrac23\cdot\tfrac14+\tfrac13=\tfrac12$;
+\item $\wh\ne\wh{}'$ in the same triple: $\ip{\wh}{\wh{}'}=-\tfrac12$ and
+      $\ip{u}{u'}\le1$, giving $\tfrac23-\tfrac16=\tfrac12$;
+\item $\wh,\wh{}'$ in different triples: they carry different classes, which are
+      disjoint, so $u\ne u'$ and $\ip{u}{u'}\le\tfrac12$; and
+      $\ip{\wh}{\wh{}'}\le\tfrac12$ for any two distinct elements of a
+      cuboctahedron. Hence
+      $\tfrac23\cdot\tfrac12+\tfrac13\cdot\tfrac12=\tfrac12$, with equality
+      exactly when both bounds are met.
+\end{itemize}
+The last case covers the remaining cuboctahedron cosines $0,-\tfrac12,-1$ across
+triples as well, with strictly smaller values. Finally, an equatorial point and
+a cap have inner product $\sqrt{2/3}\,\ip{x}{u}\le\sqrt{2/3}\cdot\tfrac12
+=0.408\ldots$, since $x\ne u$ by \eqref{eq:E}. The total is
+$194576+5952+12=200540$.
+\end{proof}
+
+By Theorem~\ref{thm:bound} this value of $m$ is optimal within the family:
+$|W|\le K(3)=12$ and each group has at most three members, whence
+$m\le\lfloor 2\cdot12/3\rfloor=8$. Since $K(3)=12$ is a theorem
+\cite{svdw,cs}, this optimality statement is unconditional, in contrast to the
+rows $k=5,6,7$ of Table~\ref{tab:m}. The configuration just built satisfies the
+hypotheses of Theorem~\ref{thm:bound} as well as the published one does: its
+four classes are four of the five of \cite{ma2025}, so they are still pairwise
+disjoint of size $496$, and by Remark~\ref{rem:hyp} any two of them contain a
+cross pair at cosine $\tfrac12$.
+
+\begin{remark}\label{rem:N}
+Theorem~\ref{thm:bound} bounds $m$, not the number of points, which by
+Proposition~\ref{prop:count} is $196560+mN+(\text{\# axis points})$ and so is
+linear in $N$. We prove nothing about $N$: we do not know the largest $N$ for
+which $X$ contains $\lceil|W|/3\rceil$ pairwise disjoint $N$-element subsets of
+pairwise cosine at most $\tfrac14$, and indeed we do not bound the size of even
+one such subset. All seven published configurations use $N=496$ and the
+improvement here keeps it, so Table~\ref{tab:m} compares configurations with the
+same $N$; a larger admissible $N$ would give more points by the same counting.
+Finding one, or ruling it out, is the natural next question for this family.
+\end{remark}
+
+\section{Verification}\label{sec:verification}
+
+The configuration is available as \texttt{data/dimension27\_200540.txt} in the
+accompanying verification package \cite{repo}, written in the format of
+\cite{cohn-data}. The package proves the theorem twice, by different routes,
+with no floating-point arithmetic and no tolerance at any step.
+
+\texttt{scripts/verify\_configuration.py} works from the coordinate file alone,
+needs no third-party packages, and takes some fifteen seconds on a laptop; it is
+described below. \texttt{scripts/verify\_exhaustive.py} assumes nothing about the
+geometry and compares all $\binom{200540}{2}=20\,108\,045\,530$ pairs directly.
+Both also certify the published $200044$-point configuration of \cite{ma2025}
+unchanged, which is a check on the verifiers as much as on the configuration.
+
+Every coordinate in the dimension-$27$ block of \cite{cohn-data} lies in
+$\mathbb{Z}[\sqrt2,\sqrt3,\sqrt6]$; the block uses $45$ distinct coordinate
+tokens, all of that form. We represent the ring by integer $4$-tuples in the
+basis $(1,\sqrt2,\sqrt3,\sqrt6)$, so ring arithmetic is integer arithmetic; the
+comparisons that integers alone do not settle are settled by certified rational
+enclosures of the radicals.
+
+\begin{proposition}\label{prop:reduction}
+After an exact rational rescaling, every point of the block in dimension $27$
+takes one of three forms
+\[
+   \frac{(y,0)}{\sqrt{32}},\qquad
+   \frac{(3y,t)}{\sqrt{432}},\qquad
+   \frac{(0,a)}{\sqrt{48}},
+\]
+for the equatorial, cap and axis points respectively, where in the first two
+$y\in\mathbb{Z}^{24}$ with $y\cdot y=32$, and where $t$ and $a$ lie in the ring
+with $t\cdot t=144$ and $a\cdot a=48$. Consequently each pairwise inner product
+is $\le\tfrac12$ precisely when the corresponding condition below holds:
+\[
+\begin{array}{lll@{\quad}l}
+   \text{equator--equator} & \dfrac{y\cdot y'}{32}
+      &\le\tfrac12 &\Longleftrightarrow\ y\cdot y'\le16,\\[8pt]
+   \text{equator--cap}     & \dfrac{y\cdot y'}{16\sqrt6}
+      &\le\tfrac12 &\Longleftrightarrow\ y\cdot y'\le\lfloor8\sqrt6\rfloor=19,\\[8pt]
+   \text{cap--cap}         & \dfrac{9\,y\cdot y'+t\cdot t'}{432}
+      &\le\tfrac12 &\Longleftrightarrow\ 9\,y\cdot y'\le216-t\cdot t',\\[8pt]
+   \text{equator--axis}    & 0 && \text{always},\\[4pt]
+   \text{cap--axis}        & \dfrac{t\cdot a}{144}
+      &\le\tfrac12 &\Longleftrightarrow\ t\cdot a\le72,\\[8pt]
+   \text{axis--axis}       & \dfrac{a\cdot a'}{48}
+      &\le\tfrac12 &\Longleftrightarrow\ a\cdot a'\le24.
+\end{array}
+\]
+The equator--equator, equator--cap and cap--cap conditions are comparisons of
+integers; the cap--axis and axis--axis conditions are $12\times12$ tables of
+comparisons in the ring.
+\end{proposition}
+
+\begin{proof}
+The classification into the three forms is exact and scale invariant: the
+equatorial points are the rows with $w=0$, the axis points those with $v=0$, and
+the caps those with $|w|^{2}/|p|^{2}=\tfrac13$ as an identity between integers.
+Only then is a row rescaled, to squared norm $32$, $432$ or $48$ according to its
+family. The block contains rows of nine distinct squared norms, namely $2$, $3$,
+$8$, $12$, $27$, $32$, $48$, $108$ and $432$; the factors required are
+$4,2,1$ for the equatorial rows of norm $2,8,32$, then $12,6,4,3,2,1$ for the
+cap rows of norm $3,12,27,48,108,432$, and $4,2,1$ for the axis rows of norm
+$3,12,48$. Every factor is a positive integer, so the rescaling stays inside the
+ring, and a rescaled cap head is divisible by $3$. The six displayed equivalences are
+then immediate on clearing denominators, using $\sqrt{32\cdot432}=48\sqrt6$ in
+the second, $\sqrt{432\cdot48}=144$ in the fifth, and
+$19^{2}=361\le384<400=20^{2}$ to evaluate $\lfloor8\sqrt6\rfloor$.
+\end{proof}
+
+\begin{remark}\label{rem:scale}
+The scaling above is the only one used anywhere in this note or in the
+verification package. Fixing a single convention matters: an earlier
+draft of the package inherited the cap--axis threshold from a normalisation in
+which axis rows had squared norm $432$, and so tested $t\cdot a\le216$ rather
+than $t\cdot a\le72$. Since $|t\cdot a|\le\sqrt{144\cdot48}=48\sqrt3<216$ always,
+that test could not fail, and the tightest condition in the configuration --
+$t\cdot a=24\sqrt3+12\sqrt6=70.96\ldots$ against a limit of $72$ -- went
+unchecked. The package now derives each threshold from the squared norms of the
+two families involved, and also asserts of each that Cauchy--Schwarz permits a
+value above it, so that a vacuous test is itself a failure.
+\end{remark}
+
+\begin{remark}
+Where a script evaluates the integer dot products with a floating point matrix
+product, it is exact. The rational coordinates are bounded by $12$, so each of
+the $24$ products has absolute value at most $144$ and every partial sum is an
+integer of absolute value at most $3456$; integers of that size are represented
+exactly in IEEE~754 binary64, so no rounding occurs at any step, under any
+summation order and with or without fused multiply--add. The scripts do not
+assume this: each checks a sample of its products against exact integer
+arithmetic, and derives the bound from the data rather than assuming it.
+\end{remark}
+
+The outcome is that all $200540$ points are distinct and of norm exactly $1$,
+and that every one of the $20\,108\,045\,530$ pairs satisfies
+$\ip{p}{q}\le\tfrac12$.
+
+The fast script avoids the quadratic sweep by certifying, from the coordinates
+alone, that the $196560$ heads are the minimal vectors of a copy of $\Leech$.
+Call the multiset of absolute values of the nonzero coordinates of a vector its
+\emph{shape}. The census by shape is $1104$ of shape $(\pm4^{2})$, $97152$ of
+shape $(\pm2^{8})$ and $98304$ of shape $(\mp3,\pm1^{23})$, which is the census
+of $\Leech$; the supports of those of shape $(\pm2^{8})$ are $759$ octads,
+spanning a $[24,12]$
+binary code with the weight enumerator
+$1+759x^{8}+2576x^{12}+759x^{16}+x^{24}$ of the extended Golay code and equal to
+its weight-$8$ words; and every head satisfies the congruences defining $\Leech$
+with respect to that code. Two distinct minimal vectors then satisfy
+$y\cdot y'\le16$, which disposes of the equatorial pairs. As a further check on
+the input, every one of the $196560$ was confirmed to have the inner product
+distribution of the Leech minimal vectors: the numbers of $x'$ with
+$\ip{x}{x'}$ equal to $-1,-\tfrac12,-\tfrac14,0,\tfrac14,\tfrac12,1$ are
+$1,4600,47104,93150,47104,4600,1$, summing to $196560$.
+
+Equality is attained, and attained exactly. The pairs realising $\tfrac12$ are
+the equatorial pairs at Leech cosine $\tfrac12$, the $48$ ordered axis pairs at
+cosine $\tfrac12$, and three families of cap pairs:
+\[
+\begin{array}{lll@{\qquad}r}
+   \ip{\wh}{\wh{}'}=1,        &\ip{u}{u'}=\tfrac14:
+      &\tfrac23\cdot\tfrac14+\tfrac13\cdot1=\tfrac12,
+      &900096,\\[3pt]
+   \ip{\wh}{\wh{}'}=\tfrac12, &\ip{u}{u'}=\tfrac12:
+      &\tfrac23\cdot\tfrac12+\tfrac13\cdot\tfrac12=\tfrac12,
+      &277408,\\[3pt]
+   \ip{\wh}{\wh{}'}=-\tfrac12,&u=u':
+      &\tfrac23\cdot1+\tfrac13\cdot\bigl(-\tfrac12\bigr)=\tfrac12,
+      &11904,
+\end{array}
+\]
+where the counts are of ordered pairs. The third family is the one created by
+the regrouping: it consists of the $4\cdot6\cdot496$ pairs of caps that share a
+head and sit on two distinct directions of a single triple. Its presence is the
+reason a triple, and no larger set, is the most that can share a class.
+
+\begin{remark}
+The classes $S_1,\dots,S_4$ are taken verbatim from the configuration of
+\cite{ma2025}: every Leech vector, direction and axis point used here already
+occurs there, and no coordinate was computed anew. The improvement is purely the
+observation that partitioning the twelve directions into four triples, rather
+than two triples and three antipodal pairs, makes the fifth class unnecessary
+and returns the $496$ vectors it was deleting to the equator.
+\end{remark}
+
+\section*{Use of AI assistance}
+
+The construction of Section~\ref{sec:dim27} was found by Claude Opus~5 (Max
+effort), at the fortieth prompt of a session in which the author supplied the
+problem, Cohn's table \cite{cohn-table} and data set \cite{cohn-data}; most of
+the thirty-nine earlier prompts were some form of ``try harder''. The model
+maintained throughout that it would not succeed: ``I have not produced a new
+SOTA \dots\ continuing would be me generating variations faster than either of
+us can check them.'' This note and the verification of
+Section~\ref{sec:verification} were then written by the author with Claude Code
+(Opus~5, Extra effort) and attacked by further instances of the same model as
+adversarial reviewers.
+
+\begin{thebibliography}{9}
+\bibitem{cohn-data} H.~Cohn, \emph{Table of kissing number bounds}, data set,
+DSpace@MIT, \url{https://hdl.handle.net/1721.1/153312}.
+\bibitem{cohn-table} H.~Cohn, \emph{Kissing numbers},
+\url{https://cohn.mit.edu/kissing-numbers/}.
+\bibitem{cs} J.~H.~Conway and N.~J.~A.~Sloane, \emph{Sphere packings, lattices
+and groups}, 3rd ed., Springer, New York, 1999.
+\bibitem{dllk2024} D.~de~Laat, N.~Leijenhorst, and W.~H.~H.~de~Muinck Keizer,
+\emph{Optimality and uniqueness of the $D_4$ root system}, preprint, 2024,
+arXiv:2404.18794.
+\bibitem{repo} A.~Kravatskiy, \emph{Verification package for a kissing
+configuration of $200540$ points in $\mathbb{R}^{27}$}, software and data, 2026,
+\url{https://github.com/alexlegeartis/KissingNumbers}.
+\bibitem{ma2025} Chengdong Ma, Th\'{e}o Tao Zhaowei, Pengyu Li, Minghao Liu,
+Haojun Chen, Zihao Mao, Bo Li, Yuan Cheng, Yuan Qi, and Yaodong Yang,
+\emph{Finding kissing numbers with game-theoretic reinforcement learning},
+preprint, 2025, arXiv:2511.13391.
+\bibitem{mv2010} H.~D.~Mittelmann and F.~Vallentin, \emph{High-accuracy
+semidefinite programming bounds for kissing numbers}, Experiment.\ Math.\
+\textbf{19} (2010), 175--179.
+\bibitem{svdw} K.~Sch\"{u}tte and B.~L.~van~der~Waerden, \emph{Das Problem der
+dreizehn Kugeln}, Math.\ Ann.\ \textbf{125} (1953), 325--334.
+\end{thebibliography}
+
+\end{document}

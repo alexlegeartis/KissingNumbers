@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you refer to this bound or use this package, please cite it."
+title: "A kissing configuration of 200540 points in R^27"
+abstract: >-
+  A verification package for the lower bound K(27) >= 200540, improving the
+  previous record of 200044 by 496.  The configuration reuses the Leech minimal
+  vectors, the twelve cap directions, the twelve axis points and four of the
+  five direction classes of the published dimension-27 configuration, changing
+  only which classes sit on which cap directions.  The package verifies the
+  configuration in exact arithmetic over Z[sqrt2, sqrt3, sqrt6], twice, by
+  independent routes and with no floating-point tolerance in any decision.
+authors:
+  - family-names: Kravatskiy
+    given-names: Alexey
+    email: kravatskii.a@miriai.org
+    affiliation: >-
+      MIRIAI (Moscow Independent Research Institute of Artificial
+      Intelligence), Moscow, Russia
+version: "1.0.0"
+date-released: "2026-08-19"
+license: MIT
+keywords:
+  - kissing number
+  - sphere packing
+  - Leech lattice
+  - Golay code
+  - exact verification

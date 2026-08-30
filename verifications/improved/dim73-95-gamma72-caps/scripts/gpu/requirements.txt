@@ -1,0 +1,4 @@
+# Everything this package needs.  No Colab, no CUDA-specific packages: torch picks the device.
+numpy>=1.24
+torch>=2.1          # torch._int_mm (int8 tensor cores) needs 2.1; the float16 path works on 2.0
+# triton is optional and only ever used if it both compiles AND measures faster (see fused.py)

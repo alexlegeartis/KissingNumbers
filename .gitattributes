@@ -1,0 +1,37 @@
+# Every file under verifications/improved/dim27-triple-partition/ is covered by a SHA-256
+# manifest, and all seventeen must verify on every platform:
+#
+#     cd verifications/improved/dim27-triple-partition && python scripts/verify_manifest.py
+#
+# (run_all.py runs that too, so a broken manifest fails the suite rather than going
+# unnoticed, which is what happened once.)
+#
+# Line-ending conversion on checkout would change those hashes and make the verification
+# unreproducible on Windows. The simplest safe rule is to disable end-of-line conversion for
+# everything, everywhere.
+* -text
+
+# Binary, so nobody is tempted to diff or convert them
+*.npy binary
+*.npz binary
+*.pdf binary
+*.gz binary
+
+# NOTE: this tree contains BOTH line endings -- 147 text files use LF and 51 use CRLF,
+# an artefact of two write paths used while the repository was assembled.  No SOURCE OR
+# DOCUMENTATION file mixes them within itself.  Both statements are about the ten extensions
+# audit.py check 5k opens -- .py .md .txt .cff .json .tex .bib .yml .cfg .out -- and that is
+# the scope of the guarantee, written down here on 2026-08-30 because it had not been.  One
+# file in the tree does mix and is deliberately outside that scope:
+# verifications/closed/dim32-44-ers-audit/data/cohn_kissing.html, a downloaded copy of Cohn's
+# page.  Normalising an archived artefact would change the thing that was archived, and
+# `* -text` preserves its bytes either way.  An earlier revision of this note claimed the mix
+# had been normalised; it had not, and the claim was never measured.  audit.py measures it.
+#
+# NOTHING RESTS ON UNIFORMITY.  `* -text` is what carries the guarantee: git stores and
+# checks out exactly the bytes that are here, on every platform, whatever each file uses.
+# The dimension-27 package -- the one under the SHA-256 manifest -- is entirely LF, and
+# its hashes hold because the bytes are preserved, not because the tree is uniform.
+#
+# So DO NOT remove `* -text` as redundant.  Without it, 52 files would be rewritten on
+# checkout on Windows.  scripts/verify_manifest.py in that package is what would catch it.

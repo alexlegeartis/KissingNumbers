@@ -1,0 +1,1865 @@
+<html>
+<head>
+<title> index.html </title>
+</head>
+
+<BODY BACKGROUND="/Backgrounds/paper/land2.gif">
+
+<center><h1>Table of Nonlinear Binary Codes</h1></center><p>
+<IMG SRC="RedPinLeft.gif">
+<b>Keywords</b>:
+A(n,d),
+binary codes,
+bounds,
+clique-finding,
+nonlinear codes,
+perfect codes
+<p>
+<IMG SRC="BluePinLeft.gif">
+<b>A(n,d)</B> is the size of the largest binary
+code of length n and minimal distance d (the most
+fundamental quantity in coding theory).<br>
+This file contains a table of <b>lower bounds</b>
+(and in some cases the <b>exact values</b>)
+of A(n,d).<br>
+We are also planning to include explicit codes for
+as many of these entries as we can locate.
+<p>
+Last updated November 24, 1999.<p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+<IMG SRC="GreenPinLeft.gif">
+Maintained by
+<p>
+Simon Litsyn, Tel-Aviv University<br>
+Department of Electrical Engineering-Systems, Ramat-Aviv 69978, Tel-Aviv, Israel<br>
+Email address: <a href="mailto:litsyn@eng.tau.ac.il">litsyn@eng.tau.ac.il</a>;
+<a href="http://www.eng.tau.ac.il/~litsyn/">Home page</a>
+<p>
+E. M. Rains, AT&T Labs-Research<br>
+Room C290, 180 Park Ave., PO Box 971, Florham Park NJ 07932-0971 USA  <br>
+Email address: <a href="mailto:rains@research.att.com">rains@research.att.com</a>;
+<a href="http://www.research.att.com/info/rains"> Home page </a>
+<p>
+and
+<p>
+N. J. A. Sloane, AT&T Labs-Research<br>
+Room C233, 180 Park Ave., PO Box 971, Florham Park NJ 07932-0971 USA  <br>
+Email address: <a href="mailto:njas@research.att.com">njas@research.att.com</a>;
+<a href="http://www.research.att.com/~njas/"> Home page </a>
+<p>
+
+<IMG SRC="BluePinLeft.gif">
+<h2>Notes</h2>
+<ol>
+<li>Contributions of new records, explicit codes
+or upper bounds are welcomed.
+All contributions will be acknowledged.
+<p>
+<li><h3>Format of Table</h3>
+Format of table is<p>
+<center>
+n &nbsp; &nbsp; &nbsp; d &nbsp; &nbsp; &nbsp; k &nbsp; &nbsp; &nbsp; N &nbsp; &nbsp; &nbsp; Type &nbsp; &nbsp; &nbsp; Reference
+</center>
+meaning that<p>
+<center>
+               A(n,d) &gt;= N*2^k.
+</center>
+
+If n is missing, let the next entry be<p>
+<center>
+n0 &nbsp; &nbsp; &nbsp; d &nbsp; &nbsp; &nbsp; k &nbsp; &nbsp; &nbsp; N &nbsp; &nbsp; &nbsp; Type &nbsp; &nbsp; &nbsp; Reference
+</center>
+then<p>
+<center>
+               A(n,d) &gt;= N*2^(k-(n0-n)).
+</center>
+<p>
+
+<li> The table covers the range minimal distance d &lt;= 29
+and length n &lt;= 512.
+<p>
+
+<li>The primary source for this table is Simon Litsyn's
+chapter "Tables of Best Known Binary Codes"
+which will soon be published in the <b>Handbook of Coding Theory</b>
+(edited V. Pless et al., North-Holland, 1998, to appear).
+That table was in turn based on earlier tables 
+of F. J. MacWilliams and N. J. A. Sloane
+(see for example Appendix A of <b>The Theory
+of Error-Correcting Codes</b>, North-Holland, 1977).
+<p>
+
+<li>In the earlier tables the codes were described by giving the
+<b>redundancy r</b>, rather than the number of codewords M = N*2^k.
+These quantities are related by 
+<p><center>
+r &nbsp; = &nbsp; n &nbsp; - &nbsp; log_2(M) &nbsp; = &nbsp; n &nbsp; - &nbsp; k &nbsp; - &nbsp; log_2(N).
+</center><p>
+At the end of this page we give a 
+<a href="index.html#red">table</a> to assist in converting between the values of 
+r and M.
+<p>
+
+<li>The table only considers odd values of d, since
+(if d is odd) A(n, d) = A(n+1, d+1).
+<p>
+
+<li>There is a
+<a href="http://www.research.att.com/~njas/codes/Andw"><b>
+companion table of A(n,d,w)</b></a>,
+the size of the largest binary code of length n,
+minimal distance d and constant weight w.<p>
+
+<li>See also our home pages:
+<a href="http://www.eng.tau.ac.il/~litsyn/"> SL </a> |
+<a href="http://www.research.att.com/info/rains"> EMR </a> |
+<a href="http://www.research.att.com/~njas/"> NJAS </a> 
+<p>
+
+</ol>
+<p>
+<IMG SRC="RedPinLeft.gif">
+<h2><font color="red">Memo to algorithms specialists:</font></h2>
+This file contains a large number of
+<font color="red">clique-finding problems</font>.
+Construct the graph whose vertices represent
+binary strings of length n.
+Join two vertices by an edge if
+and only if the Hamming distance bewteen the strings is at least d.
+Then what we are interested in
+is the quantity A(n,d), the size of the largest clique in this graph.
+<p>
+This file contains a large number of lower bounds on this clique size.
+If you can improve any of these entries or establish the optimality
+of any entries that we don't already
+know are optimal (these are indicated by a period after the number)
+please let us know (send us the clique too!).
+<p>
+<hr>
+
+<p>
+<p>
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p>
+<hr>
+<hr>
+<p>
+<center><h1>Start of Tables</h1></center> <p> <hr>
+
+
+<p> <IMG SRC="BluePinLeft.gif">
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="dist3">TABLE d=3</a>
+Lower bounds on A(n,3)
+</center> </caption>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+
+<tr><td>7</td><td>3</td><td>4</td><td>1</td><td>HG</td><td>[hamm50]</td>
+<tr><td>9</td><td>3</td><td>3</td><td>5</td><td>SW</td><td>[best80]</td>
+<tr><td>11</td><td>3</td><td>4</td><td>9</td><td>SW</td><td>[juli65]</td>
+<tr><td>15</td><td>3</td><td>11</td><td>1</td><td>HG</td><td>[hamm50]</td>
+<tr><td>16</td><td>3</td><td>5</td><td>85</td><td>SW</td><td>[roma83]</td>
+<tr><td>17</td><td>3</td><td>6</td><td>83</td><td>SW</td><td>[etzi00]</td>
+<tr><td>18</td><td>3</td><td>8</td><td>41</td><td>MT</td><td>[hama88,kaba88]</td>
+<tr><td>19</td><td>3</td><td>12</td><td>5</td><td>UV</td><td>[best80]</td>
+<tr><td>23</td><td>3</td><td>15</td><td>9</td><td>UV</td><td>[sloa70a]</td>
+<tr><td>31</td><td>3</td><td>26</td><td>1</td><td>HG</td><td>[hamm50]</td>
+<tr><td>33</td><td>3</td><td>21</td><td>85</td><td>UV</td><td>[roma83]</td>
+<tr><td>35</td><td>3</td><td>23</td><td>83</td><td>UV</td><td>[etzi00]</td>
+<tr><td>37</td><td>3</td><td>26</td><td>41</td><td>UV</td><td>[hama88,kaba88]</td>
+<tr><td>39</td><td>3</td><td>31</td><td>5</td><td>UV</td><td>[best80]</td>
+<tr><td>47</td><td>3</td><td>38</td><td>9</td><td>UV</td><td>[sloa70a]</td>
+<tr><td>63</td><td>3</td><td>57</td><td>1</td><td>HG</td><td>[hamm50]</td>
+<tr><td>70</td><td>3</td><td>43</td><td>1657009</td><td>MT</td><td>[kaba88]</td>
+<tr><td>71</td><td>3</td><td>63</td><td>3</td><td>MT</td><td>[oste96]</td>
+<tr><td>75</td><td>3</td><td>63</td><td>41</td><td>UV</td><td>[hama88,kaba88]</td>
+<tr><td>79</td><td>3</td><td>70</td><td>5</td><td>UV</td><td>[best80]</td>
+<tr><td>95</td><td>3</td><td>85</td><td>9</td><td>UV</td><td>[sloa70a]</td>
+<tr><td>127</td><td>3</td><td>120</td><td>1</td><td>HG</td><td>[hamm50]</td>
+<tr><td>141</td><td>3</td><td>113</td><td>1657009</td><td>UV</td><td>[kaba88]</td>
+<tr><td>143</td><td>3</td><td>134</td><td>3</td><td>UV</td><td>[oste96]</td>
+<tr><td>151</td><td>3</td><td>138</td><td>41</td><td>UV</td><td>[hama88,kaba88]</td>
+<tr><td>159</td><td>3</td><td>149</td><td>5</td><td>UV</td><td>[best80]</td>
+<tr><td>163</td><td>3</td><td>151</td><td>19</td><td>MT</td><td>[oste96]</td>
+<tr><td>191</td><td>3</td><td>180</td><td>9</td><td>UV</td><td>[sloa70a]</td>
+<tr><td>255</td><td>3</td><td>247</td><td>1</td><td>HG</td><td>[hamm50]</td>
+<tr><td>270</td><td>3</td><td>202</td><td>1021273028302258913</td><td>MT</td><td>[kaba88]</td>
+<tr><td>283</td><td>3</td><td>254</td><td>1657009</td><td>UV</td><td>[kaba88]</td>
+<tr><td>287</td><td>3</td><td>277</td><td>3</td><td>UV</td><td>[oste96]</td>
+<tr><td>300</td><td>3</td><td>220</td><td>3348824985082075276195</td><td>MT</td><td>[kaba88]</td>
+<tr><td>303</td><td>3</td><td>289</td><td>41</td><td>UV</td><td>[hama88,kaba88]</td>
+<tr><td>319</td><td>3</td><td>308</td><td>5</td><td>UV</td><td>[best80]</td>
+<tr><td>327</td><td>3</td><td>314</td><td>19</td><td>UV</td><td>[oste96]</td>
+<tr><td>383</td><td>3</td><td>371</td><td>9</td><td>UV</td><td>[sloa70a]</td>
+<tr><td>511</td><td>3</td><td>502</td><td>1</td><td>HG</td><td>[hamm50]</td>
+<tr><td>512</td><td>3</td><td>443</td><td>1021273028302258913</td><td>MT</td><td>[kaba88]</td>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+</table><p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p> <IMG SRC="BluePinLeft.gif">
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="dist5">TABLE d=5</a>
+Lower bounds on A(n,5)
+</center> </caption>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+
+<tr><td>8</td><td>5</td><td>2</td><td>1</td><td>LI</td><td>[cord67]</td>
+<tr><td>11</td><td>5</td><td>3</td><td>3</td><td>HD</td><td>[plot60]</td>
+<tr><td>15</td><td>5</td><td>8</td><td>1</td><td>PR</td><td>[nord67]</td>
+<tr><td>19</td><td>5</td><td>11</td><td>1</td><td>XP</td><td>[sema73,sloa72a]</td>
+<tr><td>20</td><td>5</td><td>9</td><td>5</td><td>XP</td><td>[sloa72a]</td>
+<tr><td>23</td><td>5</td><td>14</td><td>1</td><td>LI</td><td>[wagn66]</td>
+<tr><td>33</td><td>5</td><td>23</td><td>1</td><td>LI</td><td>[chen91]</td>
+<tr><td>35</td><td>5</td><td>22</td><td>5</td><td>YP</td><td>[krac83a]</td>
+<tr><td>36</td><td>5</td><td>20</td><td>33</td><td>YG</td><td>[zino85]</td>
+<tr><td>37</td><td>5</td><td>19</td><td>129</td><td>YG</td><td>[zino85]</td>
+<tr><td>63</td><td>5</td><td>52</td><td>1</td><td>PR</td><td>[prep68]</td>
+<tr><td>70</td><td>5</td><td>58</td><td>1</td><td>XP</td><td>[sema73,sloa72a]</td>
+<tr><td>81</td><td>5</td><td>68</td><td>1</td><td>LI</td><td>[shea]</td>
+<tr><td>128</td><td>5</td><td>114</td><td>1</td><td>B</td><td>[sloa72a]</td>
+<tr><td>135</td><td>5</td><td>117</td><td>9</td><td>YP</td><td>[krac83a]</td>
+<tr><td>136</td><td>5</td><td>114</td><td>133</td><td>YG</td><td>[zino85]</td>
+<tr><td>137</td><td>5</td><td>112</td><td>1057</td><td>YG</td><td>[zino85]</td>
+<tr><td>138</td><td>5</td><td>114</td><td>525</td><td>YG</td><td>[zino85]</td>
+<tr><td>139</td><td>5</td><td>114</td><td>1043</td><td>YG</td><td>[zino85]</td>
+<tr><td>140</td><td>5</td><td>117</td><td>259</td><td>YG</td><td>[zino85]</td>
+<tr><td>141</td><td>5</td><td>116</td><td>1029</td><td>YG</td><td>[zino85]</td>
+<tr><td>255</td><td>5</td><td>240</td><td>1</td><td>PR</td><td>[prep68]</td>
+<tr><td>271</td><td>5</td><td>255</td><td>1</td><td>XP</td><td>[sema73,sloa72a]</td>
+<tr><td>278</td><td>5</td><td>261</td><td>1</td><td>GB</td><td>[chie75]</td>
+<tr><td>512</td><td>5</td><td>494</td><td>1</td><td>B</td><td>[sloa72a]</td>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+</table><p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p> <IMG SRC="BluePinLeft.gif">
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="dist7">TABLE d=7</a>
+Lower bounds on A(n,7)
+</center> </caption>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+
+<tr><td>11</td><td>7</td><td>2</td><td>1</td><td>LI</td><td>[cord67]</td>
+<tr><td>15</td><td>7</td><td>5</td><td>1</td><td>RM</td><td>[mull54]</td>
+<tr><td>16</td><td>7</td><td>2</td><td>9</td><td>CM</td><td>[sloa70a]</td>
+<tr><td>23</td><td>7</td><td>12</td><td>1</td><td>GO</td><td>[gola49]</td>
+<tr><td>24</td><td>7</td><td>12</td><td>1</td><td>-</td><td>-</td>
+<tr><td>27</td><td>7</td><td>14</td><td>1</td><td>DC</td><td>[karl69]</td>
+<tr><td>31</td><td>7</td><td>17</td><td>1</td><td>CS</td><td>[chen89]</td>
+<tr><td>37</td><td>7</td><td>22</td><td>1</td><td>LI</td><td>[shea]</td>
+<tr><td>39</td><td>7</td><td>21</td><td>5</td><td>YG</td><td>[krac83a]</td>
+<tr><td>63</td><td>7</td><td>47</td><td>1</td><td>IM</td><td>[goet74]</td>
+<tr><td>69</td><td>7</td><td>52</td><td>1</td><td>XG</td><td>[krac83b]</td>
+<tr><td>70</td><td>7</td><td>49</td><td>11</td><td>XG</td><td>[zino82]</td>
+<tr><td>75</td><td>7</td><td>57</td><td>1</td><td>XH</td><td>[krac83b]</td>
+<tr><td>76</td><td>7</td><td>54</td><td>11</td><td>XH</td><td>[zino82]</td>
+<tr><td>88</td><td>7</td><td>69</td><td>1</td><td>LI</td><td>[shea]</td>
+<tr><td>95</td><td>7</td><td>75</td><td>1</td><td>LI</td><td>[shea]</td>
+<tr><td>128</td><td>7</td><td>107</td><td>1</td><td>GP</td><td>[gopp70]</td>
+<tr><td>143</td><td>7</td><td>118</td><td>9</td><td>YG</td><td>[krac83a]</td>
+<tr><td>255</td><td>7</td><td>233</td><td>1</td><td>IM</td><td>[goet74]</td>
+<tr><td>264</td><td>7</td><td>241</td><td>1</td><td>XG</td><td>[kats87]</td>
+<tr><td>273</td><td>7</td><td>249</td><td>1</td><td>XH</td><td>[kats87]</td>
+<tr><td>274</td><td>7</td><td>249</td><td>1</td><td>-</td><td>-</td>
+<tr><td>311</td><td>7</td><td>285</td><td>1</td><td>SV</td><td>[helg72]</td>
+<tr><td>512</td><td>7</td><td>485</td><td>1</td><td>GP</td><td>[gopp70]</td>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+</table><p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p> <IMG SRC="BluePinLeft.gif">
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="dist9">TABLE d=9</a>
+Lower bounds on A(n,9)
+</center> </caption>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+
+<tr><td>14</td><td>9</td><td>2</td><td>1</td><td>LI</td><td>[cord67]</td>
+<tr><td>15</td><td>9</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>16</td><td>9</td><td>1</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>19</td><td>9</td><td>3</td><td>5</td><td>HD</td><td>[leve61]</td>
+<tr><td>20</td><td>9</td><td>1</td><td>21</td><td>NL</td><td>[kaik89]</td>
+<tr><td>21</td><td>9</td><td>1</td><td>25</td><td>NL</td><td>[leve61]</td>
+<tr><td>22</td><td>9</td><td>2</td><td>19</td><td>NL</td><td>[kaik97]</td>
+<tr><td>23</td><td>9</td><td>7</td><td>1</td><td>LI</td><td>[hash76]</td>
+<tr><td>24</td><td>9</td><td>4</td><td>11</td><td>NL</td><td>[kaik97]</td>
+<tr><td>25</td><td>9</td><td>1</td><td>135</td><td>NL</td><td>[kaik97]</td>
+<tr><td>27</td><td>9</td><td>10</td><td>1</td><td>CY</td><td>[pire80]</td>
+<tr><td>28</td><td>9</td><td>2</td><td>365</td><td>NL</td><td>[kaik97]</td>
+<tr><td>31</td><td>9</td><td>13</td><td>1</td><td>LI</td><td>[shea]</td>
+<tr><td>35</td><td>9</td><td>15</td><td>3</td><td>YC</td><td>[sloa72a]</td>
+<tr><td>36</td><td>9</td><td>15</td><td>3</td><td>-</td><td>-</td>
+<tr><td>37</td><td>9</td><td>14</td><td>11</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>38</td><td>9</td><td>16</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>39</td><td>9</td><td>16</td><td>9</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>41</td><td>9</td><td>21</td><td>1</td><td>QR</td><td>[berl68]</td>
+<tr><td>42</td><td>9</td><td>20</td><td>3</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>43</td><td>9</td><td>20</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>45</td><td>9</td><td>24</td><td>1</td><td>QR</td><td>[karl69]</td>
+<tr><td>46</td><td>9</td><td>21</td><td>9</td><td>Y1</td><td>[lits98]</td>
+<tr><td>47</td><td>9</td><td>21</td><td>17</td><td>Y1</td><td>[lits98]</td>
+<tr><td>48</td><td>9</td><td>26</td><td>1</td><td>LI</td><td>[shea]</td>
+<tr><td>49</td><td>9</td><td>23</td><td>15</td><td>YC</td><td>[sloa72a]</td>
+<tr><td>50</td><td>9</td><td>25</td><td>7</td><td>Y1</td><td>[lits98]</td>
+<tr><td>51</td><td>9</td><td>25</td><td>13</td><td>Y1</td><td>[lits98]</td>
+<tr><td>52</td><td>9</td><td>28</td><td>3</td><td>Y1</td><td>[lits98]</td>
+<tr><td>53</td><td>9</td><td>27</td><td>11</td><td>Y1</td><td>[lits98]</td>
+<tr><td>54</td><td>9</td><td>29</td><td>5</td><td>Y1</td><td>[lits98]</td>
+<tr><td>55</td><td>9</td><td>29</td><td>9</td><td>Y1</td><td>[lits98]</td>
+<tr><td>56</td><td>9</td><td>33</td><td>1</td><td>Y1</td><td>[lits98]</td>
+<tr><td>57</td><td>9</td><td>31</td><td>7</td><td>Y1</td><td>[lits98]</td>
+<tr><td>58</td><td>9</td><td>33</td><td>3</td><td>Y1</td><td>[lits98]</td>
+<tr><td>59</td><td>9</td><td>33</td><td>5</td><td>Y1</td><td>[lits98]</td>
+<tr><td>64</td><td>9</td><td>40</td><td>1</td><td>GP</td><td>[macw77]</td>
+<tr><td>71</td><td>9</td><td>46</td><td>1</td><td>XB</td><td>[bier97]</td>
+<tr><td>76</td><td>9</td><td>50</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>77</td><td>9</td><td>47</td><td>9</td><td>XQ</td><td>[zino84b]</td>
+<tr><td>91</td><td>9</td><td>64</td><td>1</td><td>AL</td><td>[helg74]</td>
+<tr><td>128</td><td>9</td><td>100</td><td>1</td><td>B</td><td>[sloa72a]</td>
+<tr><td>135</td><td>9</td><td>106</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>136</td><td>9</td><td>100</td><td>93</td><td>XB</td><td>[zino82]</td>
+<tr><td>142</td><td>9</td><td>112</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>143</td><td>9</td><td>109</td><td>9</td><td>XQ</td><td>[zino84b]</td>
+<tr><td>167</td><td>9</td><td>136</td><td>1</td><td>AL</td><td>[helg74]</td>
+<tr><td>256</td><td>9</td><td>224</td><td>1</td><td>B</td><td>[sloa72a]</td>
+<tr><td>265</td><td>9</td><td>232</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>275</td><td>9</td><td>241</td><td>1</td><td>XB</td><td>[zino82]</td>
+<tr><td>315</td><td>9</td><td>280</td><td>1</td><td>YB</td><td>[cace91,rodi]</td>
+<tr><td>512</td><td>9</td><td>476</td><td>1</td><td>B</td><td>[sloa72a]</td>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+</table><p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p> <IMG SRC="BluePinLeft.gif">
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="dist11">TABLE d=11</a>
+Lower bounds on A(n,11)
+</center> </caption>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+
+<tr><td>17</td><td>11</td><td>2</td><td>1</td><td>LI</td><td>[cord67]</td>
+<tr><td>18</td><td>11</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>19</td><td>11</td><td>1</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>20</td><td>11</td><td>3</td><td>1</td><td>B</td><td>[gold68]</td>
+<tr><td>23</td><td>11</td><td>4</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>24</td><td>11</td><td>2</td><td>13</td><td>CM</td><td>[sloa70b]</td>
+<tr><td>26</td><td>11</td><td>7</td><td>1</td><td>HS</td><td>[helg73a]</td>
+<tr><td>27</td><td>11</td><td>1</td><td>89</td><td>NL</td><td>[kaik97]</td>
+<tr><td>31</td><td>11</td><td>11</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>33</td><td>11</td><td>12</td><td>1</td><td>LI</td><td>[shea]</td>
+<tr><td>36</td><td>11</td><td>14</td><td>1</td><td>LI</td><td>[mori93]</td>
+<tr><td>47</td><td>11</td><td>24</td><td>1</td><td>QR</td><td>[karl69]</td>
+<tr><td>49</td><td>11</td><td>24</td><td>1</td><td>-</td><td>-</td>
+<tr><td>63</td><td>11</td><td>37</td><td>1</td><td>Z4</td><td>[cald94,cald96]</td>
+<tr><td>64</td><td>11</td><td>37</td><td>1</td><td>-</td><td>-</td>
+<tr><td>67</td><td>11</td><td>39</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>68</td><td>11</td><td>39</td><td>1</td><td>-</td><td>-</td>
+<tr><td>69</td><td>11</td><td>38</td><td>3</td><td>XB</td><td>[zino82]</td>
+<tr><td>71</td><td>11</td><td>41</td><td>1</td><td>ZV</td><td>[zino76]</td>
+<tr><td>74</td><td>11</td><td>43</td><td>1</td><td>XB</td><td>[tolh86]</td>
+<tr><td>75</td><td>11</td><td>42</td><td>3</td><td>XB</td><td>[zino82]</td>
+<tr><td>78</td><td>11</td><td>46</td><td>1</td><td>XB</td><td>[zino82]</td>
+<tr><td>89</td><td>11</td><td>56</td><td>1</td><td>CY</td><td>[prom78]</td>
+<tr><td>99</td><td>11</td><td>65</td><td>1</td><td>GP</td><td>[roel82]</td>
+<tr><td>128</td><td>11</td><td>93</td><td>1</td><td>GP</td><td>[gopp70]</td>
+<tr><td>135</td><td>11</td><td>99</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>136</td><td>11</td><td>96</td><td>9</td><td>XB</td><td>[zino82]</td>
+<tr><td>142</td><td>11</td><td>105</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>143</td><td>11</td><td>99</td><td>93</td><td>XQ</td><td>[zino84b]</td>
+<tr><td>149</td><td>11</td><td>111</td><td>1</td><td>GP</td><td>[kasa75]</td>
+<tr><td>150</td><td>11</td><td>108</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>191</td><td>11</td><td>152</td><td>1</td><td>YB</td><td>[helg73b]</td>
+<tr><td>256</td><td>11</td><td>216</td><td>1</td><td>GP</td><td>[gopp70]</td>
+<tr><td>264</td><td>11</td><td>223</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>265</td><td>11</td><td>216</td><td>151</td><td>XB</td><td>[zino82]</td>
+<tr><td>272</td><td>11</td><td>230</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>273</td><td>11</td><td>223</td><td>151</td><td>XQ</td><td>[zino84b]</td>
+<tr><td>280</td><td>11</td><td>237</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>281</td><td>11</td><td>230</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>311</td><td>11</td><td>267</td><td>1</td><td>SV</td><td>[helg72]</td>
+<tr><td>512</td><td>11</td><td>467</td><td>1</td><td>GP</td><td>[gopp70]</td>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+</table><p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p> <IMG SRC="BluePinLeft.gif">
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="dist13">TABLE d=13</a>
+Lower bounds on A(n,13)
+</center> </caption>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+
+<tr><td>20</td><td>13</td><td>2</td><td>1</td><td>LI</td><td>[cord67]</td>
+<tr><td>21</td><td>13</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>22</td><td>13</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>23</td><td>13</td><td>1</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>24</td><td>13</td><td>3</td><td>1</td><td>HD</td><td>[leve61]</td>
+<tr><td>27</td><td>13</td><td>3</td><td>7</td><td>HD</td><td>[plot60]</td>
+<tr><td>28</td><td>13</td><td>2</td><td>15</td><td>CM</td><td>[sloa70b]</td>
+<tr><td>29</td><td>13</td><td>6</td><td>1</td><td>RM</td><td>[mull54]</td>
+<tr><td>32</td><td>13</td><td>8</td><td>1</td><td>LI</td><td>[hell89]</td>
+<tr><td>34</td><td>13</td><td>9</td><td>1</td><td>CY</td><td>[pire74]</td>
+<tr><td>38</td><td>13</td><td>12</td><td>1</td><td>LI</td><td>[bier95]</td>
+<tr><td>39</td><td>13</td><td>12</td><td>1</td><td>-</td><td>-</td>
+<tr><td>43</td><td>13</td><td>15</td><td>1</td><td>CY</td><td>[berl68]</td>
+<tr><td>45</td><td>13</td><td>16</td><td>1</td><td>XC</td><td>[doug91]</td>
+<tr><td>47</td><td>13</td><td>17</td><td>1</td><td>CY</td><td>[jens85]</td>
+<tr><td>63</td><td>13</td><td>32</td><td>1</td><td>Z4</td><td>[ples95,cald96]</td>
+<tr><td>64</td><td>13</td><td>32</td><td>1</td><td>-</td><td>-</td>
+<tr><td>65</td><td>13</td><td>32</td><td>1</td><td>-</td><td>-</td>
+<tr><td>66</td><td>13</td><td>30</td><td>7</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>67</td><td>13</td><td>32</td><td>3</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>68</td><td>13</td><td>32</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>70</td><td>13</td><td>36</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>73</td><td>13</td><td>38</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>74</td><td>13</td><td>38</td><td>1</td><td>-</td><td>-</td>
+<tr><td>75</td><td>13</td><td>37</td><td>3</td><td>XQ</td><td>[zino84b]</td>
+<tr><td>77</td><td>13</td><td>40</td><td>1</td><td>QR</td><td>[karl69]</td>
+<tr><td>79</td><td>13</td><td>41</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>81</td><td>13</td><td>41</td><td>3</td><td>XZ</td><td>[zino84b]</td>
+<tr><td>90</td><td>13</td><td>51</td><td>1</td><td>CY</td><td>[prom78]</td>
+<tr><td>94</td><td>13</td><td>54</td><td>1</td><td>LI</td><td>[brou93]</td>
+<tr><td>101</td><td>13</td><td>60</td><td>1</td><td>GP</td><td>[roel82]</td>
+<tr><td>128</td><td>13</td><td>86</td><td>1</td><td>GP</td><td>[gopp70]</td>
+<tr><td>135</td><td>13</td><td>92</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>136</td><td>13</td><td>89</td><td>9</td><td>XB</td><td>[zino82]</td>
+<tr><td>142</td><td>13</td><td>98</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>143</td><td>13</td><td>95</td><td>9</td><td>XQ</td><td>[zino84b]</td>
+<tr><td>149</td><td>13</td><td>104</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>150</td><td>13</td><td>101</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>156</td><td>13</td><td>110</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>157</td><td>13</td><td>107</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>191</td><td>13</td><td>144</td><td>1</td><td>YB</td><td>[helg73b]</td>
+<tr><td>256</td><td>13</td><td>208</td><td>1</td><td>B</td><td>[sloa72a]</td>
+<tr><td>264</td><td>13</td><td>215</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>265</td><td>13</td><td>208</td><td>151</td><td>XB</td><td>[zino82]</td>
+<tr><td>272</td><td>13</td><td>222</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>273</td><td>13</td><td>215</td><td>151</td><td>XQ</td><td>[zino84b]</td>
+<tr><td>280</td><td>13</td><td>229</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>281</td><td>13</td><td>222</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>288</td><td>13</td><td>236</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>289</td><td>13</td><td>229</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>327</td><td>13</td><td>274</td><td>1</td><td>YB</td><td>[helg73b]</td>
+<tr><td>512</td><td>13</td><td>458</td><td>1</td><td>B</td><td>[dels75]</td>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+</table><p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p> <IMG SRC="BluePinLeft.gif">
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="dist15">TABLE d=15</a>
+Lower bounds on A(n,15)
+</center> </caption>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+
+<tr><td>23</td><td>15</td><td>2</td><td>1</td><td>LI</td><td>[cord67]</td>
+<tr><td>25</td><td>15</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>26</td><td>15</td><td>1</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>27</td><td>15</td><td>3</td><td>1</td><td>HD</td><td>[leve61]</td>
+<tr><td>28</td><td>15</td><td>1</td><td>5</td><td>HD</td><td>[leve61]</td>
+<tr><td>31</td><td>15</td><td>6</td><td>1</td><td>RM</td><td>[mull54]</td>
+<tr><td>32</td><td>15</td><td>6</td><td>1</td><td>-</td><td>-</td>
+<tr><td>33</td><td>15</td><td>3</td><td>9</td><td>HD</td><td>[leve61]</td>
+<tr><td>35</td><td>15</td><td>8</td><td>1</td><td>LI</td><td>[dodu87]</td>
+<tr><td>37</td><td>15</td><td>9</td><td>1</td><td>LI</td><td>[fark94]</td>
+<tr><td>39</td><td>15</td><td>10</td><td>1</td><td>ZV</td><td>[sugi76,zino76]</td>
+<tr><td>40</td><td>15</td><td>8</td><td>5</td><td>XB</td><td>[zino82]</td>
+<tr><td>44</td><td>15</td><td>14</td><td>1</td><td>LI</td><td>[bouk95]</td>
+<tr><td>45</td><td>15</td><td>14</td><td>1</td><td>-</td><td>-</td>
+<tr><td>48</td><td>15</td><td>16</td><td>1</td><td>LI</td><td>[fark94]</td>
+<tr><td>50</td><td>15</td><td>17</td><td>1</td><td>CY</td><td>[berl68]</td>
+<tr><td>55</td><td>15</td><td>21</td><td>1</td><td>CY</td><td>[berl68]</td>
+<tr><td>63</td><td>15</td><td>28</td><td>1</td><td>CY</td><td>[kasa69]</td>
+<tr><td>72</td><td>15</td><td>36</td><td>1</td><td>CY</td><td>[prom78]</td>
+<tr><td>73</td><td>15</td><td>36</td><td>1</td><td>-</td><td>-</td>
+<tr><td>74</td><td>15</td><td>36</td><td>1</td><td>-</td><td>-</td>
+<tr><td>79</td><td>15</td><td>40</td><td>1</td><td>QR</td><td>[karl69]</td>
+<tr><td>80</td><td>15</td><td>40</td><td>1</td><td>-</td><td>-</td>
+<tr><td>81</td><td>15</td><td>37</td><td>9</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>82</td><td>15</td><td>41</td><td>1</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>83</td><td>15</td><td>39</td><td>7</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>84</td><td>15</td><td>41</td><td>3</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>85</td><td>15</td><td>41</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>87</td><td>15</td><td>45</td><td>1</td><td>QR</td><td>[karl69]</td>
+<tr><td>88</td><td>15</td><td>45</td><td>1</td><td>-</td><td>-</td>
+<tr><td>89</td><td>15</td><td>45</td><td>1</td><td>-</td><td>-</td>
+<tr><td>90</td><td>15</td><td>45</td><td>1</td><td>-</td><td>-</td>
+<tr><td>91</td><td>15</td><td>42</td><td>11</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>92</td><td>15</td><td>44</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>93</td><td>15</td><td>44</td><td>9</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>94</td><td>15</td><td>48</td><td>1</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>95</td><td>15</td><td>40</td><td>497</td><td>YB</td><td>[zino85]</td>
+<tr><td>96</td><td>15</td><td>48</td><td>3</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>97</td><td>15</td><td>48</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>99</td><td>15</td><td>52</td><td>1</td><td>QR</td><td>[karl69]</td>
+<tr><td>100</td><td>15</td><td>44</td><td>379</td><td>Y2</td><td>[zino84a]</td>
+<tr><td>101</td><td>15</td><td>50</td><td>11</td><td>Y2</td><td>[zino84a]</td>
+<tr><td>102</td><td>15</td><td>47</td><td>163</td><td>Y2</td><td>[zino84a]</td>
+<tr><td>103</td><td>15</td><td>47</td><td>301</td><td>Y2</td><td>[zino84a]</td>
+<tr><td>104</td><td>15</td><td>48</td><td>277</td><td>Y2</td><td>[zino84a]</td>
+<tr><td>105</td><td>15</td><td>57</td><td>1</td><td>GP</td><td>[roel82]</td>
+<tr><td>106</td><td>15</td><td>53</td><td>29</td><td>Y2</td><td>[zino84a]</td>
+<tr><td>107</td><td>15</td><td>51</td><td>211</td><td>Y2</td><td>[zino84a]</td>
+<tr><td>108</td><td>15</td><td>52</td><td>191</td><td>Y2</td><td>[zino84a]</td>
+<tr><td>109</td><td>15</td><td>55</td><td>43</td><td>Y2</td><td>[zino84a]</td>
+<tr><td>110</td><td>15</td><td>55</td><td>77</td><td>Y2</td><td>[zino84a]</td>
+<tr><td>111</td><td>15</td><td>55</td><td>137</td><td>Y2</td><td>[zino84a]</td>
+<tr><td>128</td><td>15</td><td>79</td><td>1</td><td>GP</td><td>[gopp70]</td>
+<tr><td>135</td><td>15</td><td>85</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>136</td><td>15</td><td>82</td><td>9</td><td>XB</td><td>[zino82]</td>
+<tr><td>142</td><td>15</td><td>91</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>143</td><td>15</td><td>88</td><td>9</td><td>XQ</td><td>[zino84b]</td>
+<tr><td>149</td><td>15</td><td>97</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>150</td><td>15</td><td>94</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>156</td><td>15</td><td>103</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>157</td><td>15</td><td>100</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>163</td><td>15</td><td>109</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>164</td><td>15</td><td>106</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>191</td><td>15</td><td>136</td><td>1</td><td>YB</td><td>[helg73b]</td>
+<tr><td>256</td><td>15</td><td>200</td><td>1</td><td>GP</td><td>[gopp70]</td>
+<tr><td>264</td><td>15</td><td>207</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>265</td><td>15</td><td>200</td><td>151</td><td>XB</td><td>[zino82]</td>
+<tr><td>272</td><td>15</td><td>214</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>273</td><td>15</td><td>207</td><td>151</td><td>XQ</td><td>[zino84b]</td>
+<tr><td>280</td><td>15</td><td>221</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>281</td><td>15</td><td>214</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>288</td><td>15</td><td>228</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>289</td><td>15</td><td>221</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>296</td><td>15</td><td>235</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>297</td><td>15</td><td>228</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>327</td><td>15</td><td>265</td><td>1</td><td>YB</td><td>[helg73b]</td>
+<tr><td>512</td><td>15</td><td>449</td><td>1</td><td>GP</td><td>[gopp70]</td>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+</table><p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p> <IMG SRC="BluePinLeft.gif">
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="dist17">TABLE d=17</a>
+Lower bounds on A(n,17)
+</center> </caption>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+
+<tr><td>26</td><td>17</td><td>2</td><td>1</td><td>LI</td><td>[cord67]</td>
+<tr><td>27</td><td>17</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>28</td><td>17</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>29</td><td>17</td><td>1</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>30</td><td>17</td><td>1</td><td>3</td><td>-</td><td>-</td>
+<tr><td>31</td><td>17</td><td>3</td><td>1</td><td>HD</td><td>[leve61]</td>
+<tr><td>32</td><td>17</td><td>2</td><td>3</td><td>-</td><td>-</td>
+<tr><td>35</td><td>17</td><td>3</td><td>9</td><td>HD</td><td>[plot60]</td>
+<tr><td>36</td><td>17</td><td>2</td><td>19</td><td>CM</td><td>[sloa70b]</td>
+<tr><td>37</td><td>17</td><td>4</td><td>5</td><td>HD</td><td>[leve61]</td>
+<tr><td>38</td><td>17</td><td>2</td><td>21</td><td>CM</td><td>[sloa70b]</td>
+<tr><td>39</td><td>17</td><td>7</td><td>1</td><td>LI</td><td>[tilb81]</td>
+<tr><td>41</td><td>17</td><td>8</td><td>1</td><td>GP</td><td>[allt77]</td>
+<tr><td>44</td><td>17</td><td>10</td><td>1</td><td>CY</td><td>[gull94]</td>
+<tr><td>46</td><td>17</td><td>11</td><td>1</td><td>YQ</td><td>[gron94]</td>
+<tr><td>50</td><td>17</td><td>12</td><td>5</td><td>YQ</td><td>[lits98]</td>
+<tr><td>51</td><td>17</td><td>12</td><td>5</td><td>-</td><td>-</td>
+<tr><td>53</td><td>17</td><td>16</td><td>1</td><td>GP</td><td>[loel84]</td>
+<tr><td>54</td><td>17</td><td>16</td><td>1</td><td>-</td><td>-</td>
+<tr><td>56</td><td>17</td><td>17</td><td>1</td><td>LI</td><td>[mori94]</td>
+<tr><td>60</td><td>17</td><td>20</td><td>1</td><td>CY</td><td>[weij97]</td>
+<tr><td>65</td><td>17</td><td>24</td><td>1</td><td>LI</td><td>[gron92]</td>
+<tr><td>66</td><td>17</td><td>24</td><td>1</td><td>-</td><td>-</td>
+<tr><td>67</td><td>17</td><td>23</td><td>3</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>68</td><td>17</td><td>23</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>71</td><td>17</td><td>28</td><td>1</td><td>YC</td><td>[sloa72a]</td>
+<tr><td>89</td><td>17</td><td>45</td><td>1</td><td>QR</td><td>[karl69]</td>
+<tr><td>90</td><td>17</td><td>45</td><td>1</td><td>-</td><td>-</td>
+<tr><td>91</td><td>17</td><td>45</td><td>1</td><td>-</td><td>-</td>
+<tr><td>92</td><td>17</td><td>45</td><td>1</td><td>-</td><td>-</td>
+<tr><td>93</td><td>17</td><td>42</td><td>11</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>94</td><td>17</td><td>44</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>95</td><td>17</td><td>44</td><td>9</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>96</td><td>17</td><td>48</td><td>1</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>97</td><td>17</td><td>46</td><td>7</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>98</td><td>17</td><td>48</td><td>3</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>99</td><td>17</td><td>48</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>101</td><td>17</td><td>52</td><td>1</td><td>QR</td><td>[karl69]</td>
+<tr><td>102</td><td>17</td><td>52</td><td>1</td><td>-</td><td>-</td>
+<tr><td>103</td><td>17</td><td>50</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>105</td><td>17</td><td>54</td><td>1</td><td>DC</td><td>[karl69]</td>
+<tr><td>106</td><td>17</td><td>51</td><td>11</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>107</td><td>17</td><td>51</td><td>21</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>108</td><td>17</td><td>54</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>109</td><td>17</td><td>53</td><td>19</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>110</td><td>17</td><td>55</td><td>9</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>111</td><td>17</td><td>55</td><td>17</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>112</td><td>17</td><td>60</td><td>1</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>113</td><td>17</td><td>57</td><td>15</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>114</td><td>17</td><td>59</td><td>7</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>115</td><td>17</td><td>59</td><td>13</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>116</td><td>17</td><td>62</td><td>3</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>117</td><td>17</td><td>61</td><td>11</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>118</td><td>17</td><td>63</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>119</td><td>17</td><td>63</td><td>9</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>120</td><td>17</td><td>67</td><td>1</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>121</td><td>17</td><td>65</td><td>7</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>122</td><td>17</td><td>67</td><td>3</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>123</td><td>17</td><td>67</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>125</td><td>17</td><td>71</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>126</td><td>17</td><td>71</td><td>1</td><td>-</td><td>-</td>
+<tr><td>128</td><td>17</td><td>72</td><td>1</td><td>B</td><td>[sloa72a]</td>
+<tr><td>135</td><td>17</td><td>78</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>136</td><td>17</td><td>75</td><td>9</td><td>XB</td><td>[zino82]</td>
+<tr><td>142</td><td>17</td><td>84</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>143</td><td>17</td><td>81</td><td>9</td><td>XQ</td><td>[zino84b]</td>
+<tr><td>149</td><td>17</td><td>90</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>150</td><td>17</td><td>87</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>156</td><td>17</td><td>96</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>157</td><td>17</td><td>93</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>163</td><td>17</td><td>102</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>164</td><td>17</td><td>99</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>170</td><td>17</td><td>108</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>171</td><td>17</td><td>105</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>191</td><td>17</td><td>128</td><td>1</td><td>YB</td><td>[helg73b]</td>
+<tr><td>256</td><td>17</td><td>192</td><td>1</td><td>B</td><td>[sloa72a]</td>
+<tr><td>264</td><td>17</td><td>199</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>265</td><td>17</td><td>192</td><td>151</td><td>XB</td><td>[zino82]</td>
+<tr><td>272</td><td>17</td><td>206</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>273</td><td>17</td><td>199</td><td>151</td><td>XQ</td><td>[zino84b]</td>
+<tr><td>280</td><td>17</td><td>213</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>281</td><td>17</td><td>206</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>288</td><td>17</td><td>220</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>289</td><td>17</td><td>213</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>296</td><td>17</td><td>227</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>297</td><td>17</td><td>220</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>304</td><td>17</td><td>234</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>305</td><td>17</td><td>227</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>331</td><td>17</td><td>260</td><td>1</td><td>YB</td><td>[helg73b]</td>
+<tr><td>512</td><td>17</td><td>440</td><td>1</td><td>B</td><td>[sloa72a]</td>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+</table><p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p> <IMG SRC="BluePinLeft.gif">
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="dist19">TABLE d=19</a>
+Lower bounds on A(n,19)
+</center> </caption>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+
+<tr><td>29</td><td>19</td><td>2</td><td>1</td><td>LI</td><td>[cord67]</td>
+<tr><td>32</td><td>19</td><td>3</td><td>1</td><td>-</td><td>-</td>
+<tr><td>33</td><td>19</td><td>1</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>34</td><td>19</td><td>3</td><td>1</td><td>CY</td><td>[chen70]</td>
+<tr><td>35</td><td>19</td><td>1</td><td>5</td><td>HD</td><td>[leve61]</td>
+<tr><td>36</td><td>19</td><td>2</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>39</td><td>19</td><td>4</td><td>5</td><td>HD</td><td>[plot60]</td>
+<tr><td>40</td><td>19</td><td>2</td><td>21</td><td>CM</td><td>[sloa70b]</td>
+<tr><td>41</td><td>19</td><td>3</td><td>11</td><td>HD</td><td>[leve61]</td>
+<tr><td>42</td><td>19</td><td>7</td><td>1</td><td>LI</td><td>[tilb81]</td>
+<tr><td>44</td><td>19</td><td>8</td><td>1</td><td>AX</td><td>[allt77]</td>
+<tr><td>47</td><td>19</td><td>10</td><td>1</td><td>CY</td><td>[gull97]</td>
+<tr><td>49</td><td>19</td><td>11</td><td>1</td><td>YQ</td><td>[gron94]</td>
+<tr><td>55</td><td>19</td><td>16</td><td>1</td><td>GP</td><td>[loel84]</td>
+<tr><td>56</td><td>19</td><td>16</td><td>1</td><td>-</td><td>-</td>
+<tr><td>57</td><td>19</td><td>16</td><td>1</td><td>-</td><td>-</td>
+<tr><td>59</td><td>19</td><td>17</td><td>1</td><td>DG</td><td>[dels75]</td>
+<tr><td>61</td><td>19</td><td>18</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>65</td><td>19</td><td>21</td><td>1</td><td>LI</td><td>[zhi93]</td>
+<tr><td>72</td><td>19</td><td>27</td><td>1</td><td>CY</td><td>[prom78]</td>
+<tr><td>73</td><td>19</td><td>27</td><td>1</td><td>-</td><td>-</td>
+<tr><td>75</td><td>19</td><td>28</td><td>1</td><td>LI</td><td>[brou93a]</td>
+<tr><td>76</td><td>19</td><td>28</td><td>1</td><td>-</td><td>-</td>
+<tr><td>80</td><td>19</td><td>31</td><td>1</td><td>YQ</td><td>[gron94]</td>
+<tr><td>86</td><td>19</td><td>36</td><td>1</td><td>YQ</td><td>[gron94]</td>
+<tr><td>103</td><td>19</td><td>52</td><td>1</td><td>QR</td><td>[karl69]</td>
+<tr><td>104</td><td>19</td><td>52</td><td>1</td><td>-</td><td>-</td>
+<tr><td>107</td><td>19</td><td>54</td><td>1</td><td>QR</td><td>[karl69]</td>
+<tr><td>108</td><td>19</td><td>54</td><td>1</td><td>-</td><td>-</td>
+<tr><td>109</td><td>19</td><td>54</td><td>1</td><td>-</td><td>-</td>
+<tr><td>127</td><td>19</td><td>71</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>128</td><td>19</td><td>71</td><td>1</td><td>-</td><td>-</td>
+<tr><td>129</td><td>19</td><td>71</td><td>1</td><td>-</td><td>-</td>
+<tr><td>131</td><td>19</td><td>72</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>135</td><td>19</td><td>75</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>137</td><td>19</td><td>74</td><td>5</td><td>XB</td><td>[zino82]</td>
+<tr><td>138</td><td>19</td><td>74</td><td>9</td><td>XB</td><td>[zino82]</td>
+<tr><td>139</td><td>19</td><td>78</td><td>1</td><td>XC</td><td>[sloa72a]</td>
+<tr><td>140</td><td>19</td><td>78</td><td>1</td><td>-</td><td>-</td>
+<tr><td>141</td><td>19</td><td>72</td><td>69</td><td>XB</td><td>[kats87]</td>
+<tr><td>142</td><td>19</td><td>79</td><td>1</td><td>XB</td><td>[bier97]</td>
+<tr><td>144</td><td>19</td><td>80</td><td>1</td><td>XB</td><td>[bier97]</td>
+<tr><td>145</td><td>19</td><td>77</td><td>9</td><td>XB</td><td>[zino82]</td>
+<tr><td>147</td><td>19</td><td>82</td><td>1</td><td>NL</td><td>[sugi76]</td>
+<tr><td>148</td><td>19</td><td>80</td><td>5</td><td>XB</td><td>[zino82]</td>
+<tr><td>159</td><td>19</td><td>93</td><td>1</td><td>XB</td><td>[zino84a]</td>
+<tr><td>191</td><td>19</td><td>124</td><td>1</td><td>YB</td><td>[helg73b]</td>
+<tr><td>255</td><td>19</td><td>187</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>260</td><td>19</td><td>191</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>261</td><td>19</td><td>191</td><td>1</td><td>-</td><td>-</td>
+<tr><td>262</td><td>19</td><td>190</td><td>3</td><td>XB</td><td>[zino82]</td>
+<tr><td>263</td><td>19</td><td>192</td><td>1</td><td>XB</td><td>[zino82]</td>
+<tr><td>264</td><td>19</td><td>189</td><td>11</td><td>XB</td><td>[kats87]</td>
+<tr><td>267</td><td>19</td><td>192</td><td>9</td><td>XB</td><td>[zino82]</td>
+<tr><td>271</td><td>19</td><td>199</td><td>1</td><td>XB</td><td>[zino82]</td>
+<tr><td>273</td><td>19</td><td>199</td><td>1</td><td>-</td><td>-</td>
+<tr><td>280</td><td>19</td><td>205</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>281</td><td>19</td><td>198</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>288</td><td>19</td><td>212</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>289</td><td>19</td><td>205</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>296</td><td>19</td><td>219</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>297</td><td>19</td><td>212</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>304</td><td>19</td><td>226</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>305</td><td>19</td><td>219</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>319</td><td>19</td><td>240</td><td>1</td><td>GP</td><td>[zino84a]</td>
+<tr><td>383</td><td>19</td><td>303</td><td>1</td><td>GP</td><td>[zino84a]</td>
+<tr><td>512</td><td>19</td><td>431</td><td>1</td><td>GP</td><td>[gopp70]</td>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+</table><p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p> <IMG SRC="BluePinLeft.gif">
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="dist21">TABLE d=21</a>
+Lower bounds on A(n,21)
+</center> </caption>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+
+<tr><td>32</td><td>21</td><td>2</td><td>1</td><td>LI</td><td>[cord67]</td>
+<tr><td>35</td><td>21</td><td>3</td><td>1</td><td>-</td><td>-</td>
+<tr><td>36</td><td>21</td><td>1</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>37</td><td>21</td><td>1</td><td>3</td><td>-</td><td>-</td>
+<tr><td>38</td><td>21</td><td>3</td><td>1</td><td>HD</td><td>[leve61]</td>
+<tr><td>39</td><td>21</td><td>1</td><td>5</td><td>HD</td><td>[leve61]</td>
+<tr><td>40</td><td>21</td><td>1</td><td>7</td><td>HD</td><td>[leve61]</td>
+<tr><td>43</td><td>21</td><td>3</td><td>11</td><td>HD</td><td>[plot60]</td>
+<tr><td>44</td><td>21</td><td>3</td><td>11</td><td>-</td><td>-</td>
+<tr><td>45</td><td>21</td><td>5</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>47</td><td>21</td><td>8</td><td>1</td><td>GP</td><td>[allt76]</td>
+<tr><td>48</td><td>21</td><td>8</td><td>1</td><td>-</td><td>-</td>
+<tr><td>49</td><td>21</td><td>8</td><td>1</td><td>-</td><td>-</td>
+<tr><td>50</td><td>21</td><td>5</td><td>13</td><td>YD</td><td>[zino85]</td>
+<tr><td>51</td><td>21</td><td>8</td><td>3</td><td>YD</td><td>[zino85]</td>
+<tr><td>52</td><td>21</td><td>7</td><td>11</td><td>YD</td><td>[zino85]</td>
+<tr><td>53</td><td>21</td><td>9</td><td>5</td><td>YD</td><td>[zino85]</td>
+<tr><td>54</td><td>21</td><td>9</td><td>9</td><td>YD</td><td>[zino85]</td>
+<tr><td>55</td><td>21</td><td>13</td><td>1</td><td>YD</td><td>[zino85]</td>
+<tr><td>56</td><td>21</td><td>10</td><td>11</td><td>YD</td><td>[zino85]</td>
+<tr><td>57</td><td>21</td><td>9</td><td>43</td><td>YD</td><td>[zino85]</td>
+<tr><td>58</td><td>21</td><td>13</td><td>3</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>59</td><td>21</td><td>13</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>61</td><td>21</td><td>17</td><td>1</td><td>YD</td><td>[dels75]</td>
+<tr><td>63</td><td>21</td><td>18</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>64</td><td>21</td><td>18</td><td>1</td><td>-</td><td>-</td>
+<tr><td>65</td><td>21</td><td>18</td><td>1</td><td>-</td><td>-</td>
+<tr><td>66</td><td>21</td><td>18</td><td>1</td><td>-</td><td>-</td>
+<tr><td>68</td><td>21</td><td>19</td><td>1</td><td>ZV</td><td>[wise83]</td>
+<tr><td>71</td><td>21</td><td>21</td><td>1</td><td>ZV</td><td>[wise83]</td>
+<tr><td>74</td><td>21</td><td>23</td><td>1</td><td>ZV</td><td>[wise83]</td>
+<tr><td>77</td><td>21</td><td>25</td><td>1</td><td>ZV</td><td>[wise83]</td>
+<tr><td>80</td><td>21</td><td>27</td><td>1</td><td>ZV</td><td>[wise83]</td>
+<tr><td>83</td><td>21</td><td>29</td><td>1</td><td>CY</td><td>[jens85]</td>
+<tr><td>86</td><td>21</td><td>31</td><td>1</td><td>B</td><td>[hart73]</td>
+<tr><td>87</td><td>21</td><td>31</td><td>1</td><td>-</td><td>-</td>
+<tr><td>88</td><td>21</td><td>31</td><td>1</td><td>-</td><td>-</td>
+<tr><td>90</td><td>21</td><td>32</td><td>1</td><td>LI</td><td>[kupp95]</td>
+<tr><td>92</td><td>21</td><td>33</td><td>1</td><td>CY</td><td>[prom78]</td>
+<tr><td>95</td><td>21</td><td>35</td><td>1</td><td>ZV</td><td>[zino76]</td>
+<tr><td>100</td><td>21</td><td>39</td><td>1</td><td>XZ</td><td>[chen87]</td>
+<tr><td>101</td><td>21</td><td>36</td><td>11</td><td>ZV</td><td>[zino76]</td>
+<tr><td>105</td><td>21</td><td>43</td><td>1</td><td>YB</td><td>[helg73b]</td>
+<tr><td>127</td><td>21</td><td>64</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>135</td><td>21</td><td>71</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>136</td><td>21</td><td>71</td><td>1</td><td>-</td><td>-</td>
+<tr><td>137</td><td>21</td><td>65</td><td>69</td><td>XB</td><td>[zino82]</td>
+<tr><td>138</td><td>21</td><td>67</td><td>23</td><td>XB</td><td>[zino82]</td>
+<tr><td>139</td><td>21</td><td>72</td><td>1</td><td>XB</td><td>[zino82]</td>
+<tr><td>142</td><td>21</td><td>74</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>144</td><td>21</td><td>73</td><td>5</td><td>XB</td><td>[zino82]</td>
+<tr><td>145</td><td>21</td><td>73</td><td>9</td><td>XB</td><td>[zino82]</td>
+<tr><td>146</td><td>21</td><td>73</td><td>9</td><td>-</td><td>-</td>
+<tr><td>148</td><td>21</td><td>73</td><td>19</td><td>XB</td><td>[zino82]</td>
+<tr><td>149</td><td>21</td><td>78</td><td>1</td><td>XB</td><td>[zino82]</td>
+<tr><td>150</td><td>21</td><td>78</td><td>1</td><td>-</td><td>-</td>
+<tr><td>151</td><td>21</td><td>76</td><td>5</td><td>GP</td><td>[zino84b]</td>
+<tr><td>152</td><td>21</td><td>76</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>154</td><td>21</td><td>81</td><td>1</td><td>NL</td><td>[sugi76]</td>
+<tr><td>155</td><td>21</td><td>79</td><td>5</td><td>GP</td><td>[zino84b]</td>
+<tr><td>158</td><td>21</td><td>84</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>191</td><td>21</td><td>116</td><td>1</td><td>YB</td><td>[helg73b]</td>
+<tr><td>255</td><td>21</td><td>179</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>264</td><td>21</td><td>187</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>265</td><td>21</td><td>180</td><td>151</td><td>XB</td><td>[zino82]</td>
+<tr><td>268</td><td>21</td><td>190</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>269</td><td>21</td><td>190</td><td>1</td><td>-</td><td>-</td>
+<tr><td>270</td><td>21</td><td>189</td><td>3</td><td>GP</td><td>[zino84b]</td>
+<tr><td>271</td><td>21</td><td>191</td><td>1</td><td>XQ</td><td>[krac83b]</td>
+<tr><td>272</td><td>21</td><td>188</td><td>11</td><td>XB</td><td>[kats87]</td>
+<tr><td>275</td><td>21</td><td>191</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>279</td><td>21</td><td>198</td><td>1</td><td>GP</td><td>[zino84b]</td>
+<tr><td>280</td><td>21</td><td>198</td><td>1</td><td>-</td><td>-</td>
+<tr><td>281</td><td>21</td><td>198</td><td>1</td><td>-</td><td>-</td>
+<tr><td>288</td><td>21</td><td>204</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>289</td><td>21</td><td>197</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>296</td><td>21</td><td>211</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>297</td><td>21</td><td>204</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>304</td><td>21</td><td>218</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>305</td><td>21</td><td>211</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>312</td><td>21</td><td>225</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>313</td><td>21</td><td>218</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>320</td><td>21</td><td>232</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>321</td><td>21</td><td>225</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>383</td><td>21</td><td>294</td><td>1</td><td>GP</td><td>[zino84a]</td>
+<tr><td>512</td><td>21</td><td>422</td><td>1</td><td>B</td><td>[sloa72a]</td>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+</table><p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p> <IMG SRC="BluePinLeft.gif">
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="dist23">TABLE d=23</a>
+Lower bounds on A(n,23)
+</center> </caption>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+
+<tr><td>35</td><td>23</td><td>2</td><td>1</td><td>LI</td><td>[cord67]</td>
+<tr><td>36</td><td>23</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>37</td><td>23</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>38</td><td>23</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>39</td><td>23</td><td>1</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>40</td><td>23</td><td>1</td><td>3</td><td>-</td><td>-</td>
+<tr><td>41</td><td>23</td><td>3</td><td>1</td><td>HD</td><td>[leve61]</td>
+<tr><td>42</td><td>23</td><td>3</td><td>1</td><td>-</td><td>-</td>
+<tr><td>43</td><td>23</td><td>2</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>44</td><td>23</td><td>4</td><td>1</td><td>CY</td><td>[chen70]</td>
+<tr><td>47</td><td>23</td><td>5</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>48</td><td>23</td><td>2</td><td>25</td><td>CM</td><td>[sloa70b]</td>
+<tr><td>50</td><td>23</td><td>8</td><td>1</td><td>CY</td><td>[chen70]</td>
+<tr><td>51</td><td>23</td><td>8</td><td>1</td><td>-</td><td>-</td>
+<tr><td>52</td><td>23</td><td>8</td><td>1</td><td>-</td><td>-</td>
+<tr><td>54</td><td>23</td><td>8</td><td>3</td><td>YD</td><td>[zino85]</td>
+<tr><td>55</td><td>23</td><td>10</td><td>1</td><td>ZV</td><td>[zino76]</td>
+<tr><td>57</td><td>23</td><td>9</td><td>7</td><td>YD</td><td>[zino85]</td>
+<tr><td>63</td><td>23</td><td>17</td><td>1</td><td>DG</td><td>[dels75]</td>
+<tr><td>64</td><td>23</td><td>17</td><td>1</td><td>-</td><td>-</td>
+<tr><td>66</td><td>23</td><td>18</td><td>1</td><td>XQ</td><td>[sloa72b]</td>
+<tr><td>69</td><td>23</td><td>19</td><td>1</td><td>-</td><td>-</td>
+<tr><td>71</td><td>23</td><td>19</td><td>1</td><td>ZV</td><td>[wise83]</td>
+<tr><td>74</td><td>23</td><td>21</td><td>1</td><td>ZV</td><td>[wise83]</td>
+<tr><td>77</td><td>23</td><td>23</td><td>1</td><td>ZV</td><td>[wise83]</td>
+<tr><td>80</td><td>23</td><td>25</td><td>1</td><td>ZV</td><td>[wise83]</td>
+<tr><td>83</td><td>23</td><td>27</td><td>1</td><td>ZV</td><td>[wise83]</td>
+<tr><td>87</td><td>23</td><td>30</td><td>1</td><td>LI</td><td>[karl69]</td>
+<tr><td>89</td><td>23</td><td>31</td><td>1</td><td>ZV</td><td>[wise83]</td>
+<tr><td>90</td><td>23</td><td>31</td><td>1</td><td>-</td><td>-</td>
+<tr><td>91</td><td>23</td><td>31</td><td>1</td><td>-</td><td>-</td>
+<tr><td>92</td><td>23</td><td>31</td><td>1</td><td>-</td><td>-</td>
+<tr><td>95</td><td>23</td><td>33</td><td>1</td><td>ZV</td><td>[zino76]</td>
+<tr><td>98</td><td>23</td><td>35</td><td>1</td><td>ZV</td><td>[tolh86]</td>
+<tr><td>101</td><td>23</td><td>37</td><td>1</td><td>LI</td><td>[brou93]</td>
+<tr><td>104</td><td>23</td><td>39</td><td>1</td><td>ZV</td><td>[brou97]</td>
+<tr><td>107</td><td>23</td><td>41</td><td>1</td><td>ZV</td><td>[chen87]</td>
+<tr><td>116</td><td>23</td><td>49</td><td>1</td><td>CY</td><td>[scho92]</td>
+<tr><td>117</td><td>23</td><td>49</td><td>1</td><td>-</td><td>-</td>
+<tr><td>119</td><td>23</td><td>50</td><td>1</td><td>ZV</td><td>[chen87]</td>
+<tr><td>127</td><td>23</td><td>57</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>135</td><td>23</td><td>64</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>136</td><td>23</td><td>61</td><td>9</td><td>XB</td><td>[zino82]</td>
+<tr><td>142</td><td>23</td><td>70</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>143</td><td>23</td><td>70</td><td>1</td><td>-</td><td>-</td>
+<tr><td>144</td><td>23</td><td>64</td><td>69</td><td>GP</td><td>[zino84b]</td>
+<tr><td>145</td><td>23</td><td>67</td><td>15</td><td>XB</td><td>[zino82]</td>
+<tr><td>146</td><td>23</td><td>71</td><td>1</td><td>XB</td><td>[zino82]</td>
+<tr><td>149</td><td>23</td><td>73</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>151</td><td>23</td><td>72</td><td>5</td><td>GP</td><td>[zino84b]</td>
+<tr><td>152</td><td>23</td><td>72</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>153</td><td>23</td><td>76</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>154</td><td>23</td><td>76</td><td>1</td><td>-</td><td>-</td>
+<tr><td>155</td><td>23</td><td>72</td><td>19</td><td>GP</td><td>[zino84b]</td>
+<tr><td>156</td><td>23</td><td>72</td><td>19</td><td>-</td><td>-</td>
+<tr><td>161</td><td>23</td><td>81</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>162</td><td>23</td><td>77</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>167</td><td>23</td><td>86</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>168</td><td>23</td><td>82</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>173</td><td>23</td><td>91</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>174</td><td>23</td><td>87</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>207</td><td>23</td><td>124</td><td>1</td><td>YB</td><td>[helg73b]</td>
+<tr><td>255</td><td>23</td><td>171</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>264</td><td>23</td><td>179</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>265</td><td>23</td><td>172</td><td>151</td><td>XB</td><td>[zino82]</td>
+<tr><td>272</td><td>23</td><td>186</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>273</td><td>23</td><td>179</td><td>151</td><td>XZ</td><td>[zino84b]</td>
+<tr><td>276</td><td>23</td><td>189</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>277</td><td>23</td><td>189</td><td>1</td><td>-</td><td>-</td>
+<tr><td>278</td><td>23</td><td>188</td><td>3</td><td>GP</td><td>[zino84b]</td>
+<tr><td>279</td><td>23</td><td>190</td><td>1</td><td>GP</td><td>[zino84b]</td>
+<tr><td>280</td><td>23</td><td>187</td><td>11</td><td>XB</td><td>[kats87]</td>
+<tr><td>283</td><td>23</td><td>190</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>287</td><td>23</td><td>197</td><td>1</td><td>GP</td><td>[zino84b]</td>
+<tr><td>288</td><td>23</td><td>197</td><td>1</td><td>-</td><td>-</td>
+<tr><td>289</td><td>23</td><td>197</td><td>1</td><td>-</td><td>-</td>
+<tr><td>296</td><td>23</td><td>203</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>297</td><td>23</td><td>196</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>304</td><td>23</td><td>210</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>305</td><td>23</td><td>203</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>312</td><td>23</td><td>217</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>313</td><td>23</td><td>210</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>320</td><td>23</td><td>224</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>321</td><td>23</td><td>217</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>328</td><td>23</td><td>231</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>329</td><td>23</td><td>224</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>383</td><td>23</td><td>285</td><td>1</td><td>YB</td><td>[zino84a]</td>
+<tr><td>512</td><td>23</td><td>413</td><td>1</td><td>GP</td><td>[gopp70]</td>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+</table><p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p> <IMG SRC="BluePinLeft.gif">
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="dist25">TABLE d=25</a>
+Lower bounds on A(n,25)
+</center> </caption>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+
+<tr><td>38</td><td>25</td><td>2</td><td>1</td><td>LI</td><td>[cord67]</td>
+<tr><td>39</td><td>25</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>40</td><td>25</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>41</td><td>25</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>42</td><td>25</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>43</td><td>25</td><td>1</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>44</td><td>25</td><td>1</td><td>3</td><td>-</td><td>-</td>
+<tr><td>45</td><td>25</td><td>3</td><td>1</td><td>HD</td><td>[leve61]</td>
+<tr><td>46</td><td>25</td><td>1</td><td>5</td><td>HD</td><td>[leve61]</td>
+<tr><td>47</td><td>25</td><td>2</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>48</td><td>25</td><td>4</td><td>1</td><td>HD</td><td>[leve61]</td>
+<tr><td>51</td><td>25</td><td>3</td><td>13</td><td>HD</td><td>[plot60]</td>
+<tr><td>52</td><td>25</td><td>2</td><td>27</td><td>CM</td><td>[sloa70b]</td>
+<tr><td>53</td><td>25</td><td>4</td><td>7</td><td>HD</td><td>[leve61]</td>
+<tr><td>55</td><td>25</td><td>8</td><td>1</td><td>YK</td><td>[zino85]</td>
+<tr><td>56</td><td>25</td><td>3</td><td>47</td><td>YK</td><td>[zino85]</td>
+<tr><td>57</td><td>25</td><td>2</td><td>187</td><td>YK</td><td>[zino85]</td>
+<tr><td>58</td><td>25</td><td>8</td><td>3</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>59</td><td>25</td><td>8</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>61</td><td>25</td><td>12</td><td>1</td><td>DG</td><td>[dels75]</td>
+<tr><td>63</td><td>25</td><td>12</td><td>1</td><td>-</td><td>-</td>
+<tr><td>65</td><td>25</td><td>13</td><td>1</td><td>CY</td><td>[chen70]</td>
+<tr><td>67</td><td>25</td><td>12</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>69</td><td>25</td><td>16</td><td>1</td><td>YD</td><td>[zino82]</td>
+<tr><td>70</td><td>25</td><td>14</td><td>5</td><td>YD</td><td>[zino82]</td>
+<tr><td>71</td><td>25</td><td>17</td><td>1</td><td>DG</td><td>[dels75]</td>
+<tr><td>72</td><td>25</td><td>17</td><td>1</td><td>-</td><td>-</td>
+<tr><td>74</td><td>25</td><td>18</td><td>1</td><td>XQ</td><td>[allt84]</td>
+<tr><td>75</td><td>25</td><td>18</td><td>1</td><td>-</td><td>-</td>
+<tr><td>76</td><td>25</td><td>18</td><td>1</td><td>-</td><td>-</td>
+<tr><td>77</td><td>25</td><td>18</td><td>1</td><td>-</td><td>-</td>
+<tr><td>80</td><td>25</td><td>20</td><td>1</td><td>CY</td><td>[chen94]</td>
+<tr><td>82</td><td>25</td><td>21</td><td>1</td><td>CY</td><td>[chen94]</td>
+<tr><td>84</td><td>25</td><td>22</td><td>1</td><td>LI</td><td>[gron92]</td>
+<tr><td>86</td><td>25</td><td>23</td><td>1</td><td>YB</td><td>[helg73b]</td>
+<tr><td>87</td><td>25</td><td>23</td><td>1</td><td>-</td><td>-</td>
+<tr><td>89</td><td>25</td><td>24</td><td>1</td><td>LI</td><td>[mori94]</td>
+<tr><td>91</td><td>25</td><td>25</td><td>1</td><td>LI</td><td>[gron92]</td>
+<tr><td>92</td><td>25</td><td>25</td><td>1</td><td>-</td><td>-</td>
+<tr><td>95</td><td>25</td><td>27</td><td>1</td><td>XZ</td><td>[barg87]</td>
+<tr><td>98</td><td>25</td><td>29</td><td>1</td><td>LI</td><td>[gron92]</td>
+<tr><td>99</td><td>25</td><td>29</td><td>1</td><td>-</td><td>-</td>
+<tr><td>102</td><td>25</td><td>31</td><td>1</td><td>LI</td><td>[gron92]</td>
+<tr><td>111</td><td>25</td><td>39</td><td>1</td><td>YB</td><td>[zino85]</td>
+<tr><td>112</td><td>25</td><td>39</td><td>1</td><td>-</td><td>-</td>
+<tr><td>113</td><td>25</td><td>36</td><td>15</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>114</td><td>25</td><td>38</td><td>7</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>115</td><td>25</td><td>38</td><td>13</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>116</td><td>25</td><td>41</td><td>3</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>117</td><td>25</td><td>40</td><td>11</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>118</td><td>25</td><td>42</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>119</td><td>25</td><td>42</td><td>9</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>120</td><td>25</td><td>46</td><td>1</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>121</td><td>25</td><td>44</td><td>7</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>122</td><td>25</td><td>46</td><td>3</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>123</td><td>25</td><td>46</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>125</td><td>25</td><td>50</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>126</td><td>25</td><td>50</td><td>1</td><td>-</td><td>-</td>
+<tr><td>127</td><td>25</td><td>50</td><td>1</td><td>-</td><td>-</td>
+<tr><td>129</td><td>25</td><td>1</td><td>2047781292273887</td><td>XZ</td><td>[barg87]</td>
+<tr><td>135</td><td>25</td><td>57</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>136</td><td>25</td><td>54</td><td>9</td><td>XB</td><td>[zino82]</td>
+<tr><td>142</td><td>25</td><td>63</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>149</td><td>25</td><td>69</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>150</td><td>25</td><td>69</td><td>1</td><td>-</td><td>-</td>
+<tr><td>151</td><td>25</td><td>63</td><td>69</td><td>GP</td><td>[zino84b]</td>
+<tr><td>152</td><td>25</td><td>66</td><td>15</td><td>GP</td><td>[zino84b]</td>
+<tr><td>153</td><td>25</td><td>70</td><td>1</td><td>GP</td><td>[krac83b]</td>
+<tr><td>156</td><td>25</td><td>72</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>158</td><td>25</td><td>71</td><td>5</td><td>GP</td><td>[zino84b]</td>
+<tr><td>159</td><td>25</td><td>71</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>161</td><td>25</td><td>76</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>162</td><td>25</td><td>72</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>167</td><td>25</td><td>81</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>168</td><td>25</td><td>77</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>173</td><td>25</td><td>86</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>174</td><td>25</td><td>82</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>179</td><td>25</td><td>91</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>180</td><td>25</td><td>87</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>185</td><td>25</td><td>96</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>186</td><td>25</td><td>92</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>191</td><td>25</td><td>101</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>192</td><td>25</td><td>97</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>207</td><td>25</td><td>116</td><td>1</td><td>YB</td><td>[helg73b]</td>
+<tr><td>255</td><td>25</td><td>163</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>264</td><td>25</td><td>171</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>265</td><td>25</td><td>164</td><td>151</td><td>XB</td><td>[zino82]</td>
+<tr><td>272</td><td>25</td><td>178</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>273</td><td>25</td><td>171</td><td>151</td><td>XQ</td><td>[zino84b]</td>
+<tr><td>280</td><td>25</td><td>185</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>281</td><td>25</td><td>178</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>284</td><td>25</td><td>188</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>285</td><td>25</td><td>188</td><td>1</td><td>-</td><td>-</td>
+<tr><td>286</td><td>25</td><td>187</td><td>3</td><td>GP</td><td>[zino84b]</td>
+<tr><td>287</td><td>25</td><td>189</td><td>1</td><td>GP</td><td>[zino84b]</td>
+<tr><td>288</td><td>25</td><td>186</td><td>11</td><td>XB</td><td>[kats87]</td>
+<tr><td>291</td><td>25</td><td>189</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>295</td><td>25</td><td>196</td><td>1</td><td>GP</td><td>[zino84b]</td>
+<tr><td>297</td><td>25</td><td>196</td><td>1</td><td>-</td><td>-</td>
+<tr><td>304</td><td>25</td><td>202</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>305</td><td>25</td><td>195</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>312</td><td>25</td><td>209</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>313</td><td>25</td><td>202</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>320</td><td>25</td><td>216</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>321</td><td>25</td><td>209</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>328</td><td>25</td><td>223</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>329</td><td>25</td><td>216</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>336</td><td>25</td><td>230</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>337</td><td>25</td><td>223</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>383</td><td>25</td><td>276</td><td>1</td><td>YB</td><td>[zino84a]</td>
+<tr><td>512</td><td>25</td><td>404</td><td>1</td><td>B</td><td>[sloa72a]</td>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+</table><p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p> <IMG SRC="BluePinLeft.gif">
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="dist27">TABLE d=27</a>
+Lower bounds on A(n,27)
+</center> </caption>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+
+<tr><td>41</td><td>27</td><td>2</td><td>1</td><td>LI</td><td>[cord67]</td>
+<tr><td>42</td><td>27</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>43</td><td>27</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>44</td><td>27</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>45</td><td>27</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>46</td><td>27</td><td>1</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>47</td><td>27</td><td>1</td><td>3</td><td>-</td><td>-</td>
+<tr><td>48</td><td>27</td><td>3</td><td>1</td><td>CY</td><td>[chen70]</td>
+<tr><td>49</td><td>27</td><td>3</td><td>1</td><td>-</td><td>-</td>
+<tr><td>50</td><td>27</td><td>1</td><td>5</td><td>HD</td><td>[leve61]</td>
+<tr><td>51</td><td>27</td><td>1</td><td>7</td><td>HD</td><td>[leve61]</td>
+<tr><td>52</td><td>27</td><td>1</td><td>9</td><td>HD</td><td>[leve61]</td>
+<tr><td>55</td><td>27</td><td>4</td><td>7</td><td>HD</td><td>[plot60]</td>
+<tr><td>56</td><td>27</td><td>4</td><td>7</td><td>-</td><td>-</td>
+<tr><td>57</td><td>27</td><td>2</td><td>31</td><td>YK</td><td>[zino85]</td>
+<tr><td>63</td><td>27</td><td>12</td><td>1</td><td>DG</td><td>[dels75]</td>
+<tr><td>64</td><td>27</td><td>12</td><td>1</td><td>-</td><td>-</td>
+<tr><td>65</td><td>27</td><td>12</td><td>1</td><td>-</td><td>-</td>
+<tr><td>67</td><td>27</td><td>13</td><td>1</td><td>XD</td><td>[zino82]</td>
+<tr><td>71</td><td>27</td><td>16</td><td>1</td><td>XD</td><td>[zino82]</td>
+<tr><td>72</td><td>27</td><td>14</td><td>5</td><td>XD</td><td>[zino82]</td>
+<tr><td>73</td><td>27</td><td>17</td><td>1</td><td>DG</td><td>[macw77]</td>
+<tr><td>74</td><td>27</td><td>17</td><td>1</td><td>-</td><td>-</td>
+<tr><td>75</td><td>27</td><td>17</td><td>1</td><td>-</td><td>-</td>
+<tr><td>76</td><td>27</td><td>17</td><td>1</td><td>-</td><td>-</td>
+<tr><td>78</td><td>27</td><td>18</td><td>1</td><td>XQ</td><td>[allt84]</td>
+<tr><td>79</td><td>27</td><td>18</td><td>1</td><td>-</td><td>-</td>
+<tr><td>80</td><td>27</td><td>18</td><td>1</td><td>-</td><td>-</td>
+<tr><td>84</td><td>27</td><td>21</td><td>1</td><td>CY</td><td>[weij97]</td>
+<tr><td>85</td><td>27</td><td>21</td><td>1</td><td>-</td><td>-</td>
+<tr><td>88</td><td>27</td><td>23</td><td>1</td><td>B</td><td>[helg73b]</td>
+<tr><td>89</td><td>27</td><td>23</td><td>1</td><td>-</td><td>-</td>
+<tr><td>91</td><td>27</td><td>24</td><td>1</td><td>Z4</td><td>[aydi99]</td>
+<tr><td>92</td><td>27</td><td>24</td><td>1</td><td>-</td><td>-</td>
+<tr><td>93</td><td>27</td><td>24</td><td>1</td><td>-</td><td>-</td>
+<tr><td>95</td><td>27</td><td>25</td><td>1</td><td>LI</td><td>[gron92]</td>
+<tr><td>96</td><td>27</td><td>25</td><td>1</td><td>-</td><td>-</td>
+<tr><td>98</td><td>27</td><td>26</td><td>1</td><td>LI</td><td>[gron92]</td>
+<tr><td>99</td><td>27</td><td>20</td><td>77</td><td>Y2</td><td>[lits98]</td>
+<tr><td>100</td><td>27</td><td>20</td><td>137</td><td>Y2</td><td>[lits98]</td>
+<tr><td>101</td><td>27</td><td>21</td><td>121</td><td>Y2</td><td>[lits98]</td>
+<tr><td>102</td><td>27</td><td>23</td><td>53</td><td>Y2</td><td>[lits98]</td>
+<tr><td>103</td><td>27</td><td>25</td><td>23</td><td>Y2</td><td>[lits98]</td>
+<tr><td>104</td><td>27</td><td>24</td><td>79</td><td>Y2</td><td>[lits98]</td>
+<tr><td>107</td><td>27</td><td>28</td><td>37</td><td>YC</td><td>[lits98]</td>
+<tr><td>108</td><td>27</td><td>28</td><td>37</td><td>-</td><td>-</td>
+<tr><td>109</td><td>27</td><td>29</td><td>29</td><td>Y2</td><td>[lits98]</td>
+<tr><td>110</td><td>27</td><td>31</td><td>11</td><td>Y2</td><td>[lits98]</td>
+<tr><td>112</td><td>27</td><td>36</td><td>1</td><td>CY</td><td>[scho92]</td>
+<tr><td>127</td><td>27</td><td>50</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>128</td><td>27</td><td>50</td><td>1</td><td>-</td><td>-</td>
+<tr><td>129</td><td>27</td><td>50</td><td>1</td><td>-</td><td>-</td>
+<tr><td>131</td><td>27</td><td>51</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>135</td><td>27</td><td>54</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>137</td><td>27</td><td>53</td><td>5</td><td>XB</td><td>[zino82]</td>
+<tr><td>138</td><td>27</td><td>53</td><td>9</td><td>XB</td><td>[zino82]</td>
+<tr><td>139</td><td>27</td><td>57</td><td>1</td><td>XC</td><td>[sloa72a]</td>
+<tr><td>140</td><td>27</td><td>57</td><td>1</td><td>-</td><td>-</td>
+<tr><td>141</td><td>27</td><td>51</td><td>69</td><td>XB</td><td>[kats87]</td>
+<tr><td>142</td><td>27</td><td>58</td><td>1</td><td>XB</td><td>[bier97]</td>
+<tr><td>144</td><td>27</td><td>59</td><td>1</td><td>XB</td><td>[bier97]</td>
+<tr><td>147</td><td>27</td><td>61</td><td>1</td><td>NL</td><td>[sugi76]</td>
+<tr><td>148</td><td>27</td><td>59</td><td>5</td><td>XB</td><td>[zino82]</td>
+<tr><td>151</td><td>27</td><td>64</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>156</td><td>27</td><td>68</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>157</td><td>27</td><td>68</td><td>1</td><td>-</td><td>-</td>
+<tr><td>158</td><td>27</td><td>62</td><td>69</td><td>GP</td><td>[zino84b]</td>
+<tr><td>159</td><td>27</td><td>69</td><td>1</td><td>XZ</td><td>[barg87]</td>
+<tr><td>167</td><td>27</td><td>76</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>168</td><td>27</td><td>72</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>173</td><td>27</td><td>81</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>174</td><td>27</td><td>77</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>179</td><td>27</td><td>86</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>180</td><td>27</td><td>82</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>185</td><td>27</td><td>91</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>186</td><td>27</td><td>87</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>191</td><td>27</td><td>96</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>192</td><td>27</td><td>92</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>197</td><td>27</td><td>101</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>198</td><td>27</td><td>97</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>199</td><td>27</td><td>100</td><td>3</td><td>XZ</td><td>[zino82]</td>
+<tr><td>200</td><td>27</td><td>102</td><td>1</td><td>XZ</td><td>[zino82]</td>
+<tr><td>201</td><td>27</td><td>97</td><td>45</td><td>XZ</td><td>[kats87]</td>
+<tr><td>204</td><td>27</td><td>102</td><td>9</td><td>XZ</td><td>[zino82]</td>
+<tr><td>207</td><td>27</td><td>108</td><td>1</td><td>YB</td><td>[helg73b]</td>
+<tr><td>255</td><td>27</td><td>155</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>264</td><td>27</td><td>163</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>265</td><td>27</td><td>156</td><td>151</td><td>XB</td><td>[zino82]</td>
+<tr><td>272</td><td>27</td><td>170</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>273</td><td>27</td><td>163</td><td>151</td><td>XQ</td><td>[zino84b]</td>
+<tr><td>280</td><td>27</td><td>177</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>281</td><td>27</td><td>170</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>288</td><td>27</td><td>184</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>289</td><td>27</td><td>177</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>292</td><td>27</td><td>187</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>293</td><td>27</td><td>187</td><td>1</td><td>-</td><td>-</td>
+<tr><td>294</td><td>27</td><td>186</td><td>3</td><td>GP</td><td>[zino84b]</td>
+<tr><td>295</td><td>27</td><td>188</td><td>1</td><td>GP</td><td>[zino84b]</td>
+<tr><td>296</td><td>27</td><td>185</td><td>11</td><td>XB</td><td>[kats87]</td>
+<tr><td>299</td><td>27</td><td>188</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>303</td><td>27</td><td>195</td><td>1</td><td>GP</td><td>[zino84b]</td>
+<tr><td>304</td><td>27</td><td>195</td><td>1</td><td>-</td><td>-</td>
+<tr><td>305</td><td>27</td><td>195</td><td>1</td><td>-</td><td>-</td>
+<tr><td>312</td><td>27</td><td>201</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>313</td><td>27</td><td>194</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>320</td><td>27</td><td>208</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>321</td><td>27</td><td>201</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>328</td><td>27</td><td>215</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>329</td><td>27</td><td>208</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>336</td><td>27</td><td>222</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>337</td><td>27</td><td>215</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>344</td><td>27</td><td>229</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>345</td><td>27</td><td>222</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>383</td><td>27</td><td>267</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>512</td><td>27</td><td>395</td><td>1</td><td>GP</td><td>[gopp70]</td>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+</table><p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p> <IMG SRC="BluePinLeft.gif">
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="dist29">TABLE d=29</a>
+Lower bounds on A(n,29)
+</center> </caption>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+
+<tr><td>44</td><td>29</td><td>2</td><td>1</td><td>LI</td><td>[cord67]</td>
+<tr><td>45</td><td>29</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>46</td><td>29</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>47</td><td>29</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>48</td><td>29</td><td>2</td><td>1</td><td>-</td><td>-</td>
+<tr><td>49</td><td>29</td><td>1</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>50</td><td>29</td><td>1</td><td>3</td><td>-</td><td>-</td>
+<tr><td>51</td><td>29</td><td>1</td><td>3</td><td>-</td><td>-</td>
+<tr><td>52</td><td>29</td><td>3</td><td>1</td><td>HD</td><td>[leve61]</td>
+<tr><td>53</td><td>29</td><td>1</td><td>5</td><td>HD</td><td>[leve61]</td>
+<tr><td>54</td><td>29</td><td>2</td><td>3</td><td>HD</td><td>[leve61]</td>
+<tr><td>55</td><td>29</td><td>1</td><td>7</td><td>HD</td><td>[leve61]</td>
+<tr><td>56</td><td>29</td><td>2</td><td>5</td><td>HD</td><td>[leve61]</td>
+<tr><td>59</td><td>29</td><td>3</td><td>15</td><td>HD</td><td>[plot60]</td>
+<tr><td>60</td><td>29</td><td>2</td><td>31</td><td>CM</td><td>[sloa70b]</td>
+<tr><td>61</td><td>29</td><td>7</td><td>1</td><td>RM</td><td>[mull54]</td>
+<tr><td>62</td><td>29</td><td>7</td><td>1</td><td>-</td><td>-</td>
+<tr><td>63</td><td>29</td><td>3</td><td>17</td><td>HD</td><td>[leve61]</td>
+<tr><td>64</td><td>29</td><td>8</td><td>1</td><td>LI</td><td>[dodu87]</td>
+<tr><td>69</td><td>29</td><td>12</td><td>1</td><td>XD</td><td>[macw77]</td>
+<tr><td>70</td><td>29</td><td>12</td><td>1</td><td>-</td><td>-</td>
+<tr><td>71</td><td>29</td><td>12</td><td>1</td><td>-</td><td>-</td>
+<tr><td>73</td><td>29</td><td>13</td><td>1</td><td>XD</td><td>[zino82]</td>
+<tr><td>74</td><td>29</td><td>13</td><td>1</td><td>-</td><td>-</td>
+<tr><td>75</td><td>29</td><td>11</td><td>5</td><td>YZ</td><td>[zino85]</td>
+<tr><td>78</td><td>29</td><td>16</td><td>1</td><td>LI</td><td>[gron92]</td>
+<tr><td>80</td><td>29</td><td>17</td><td>1</td><td>XD</td><td>[zino82]</td>
+<tr><td>81</td><td>29</td><td>17</td><td>1</td><td>-</td><td>-</td>
+<tr><td>82</td><td>29</td><td>17</td><td>1</td><td>-</td><td>-</td>
+<tr><td>83</td><td>29</td><td>17</td><td>1</td><td>-</td><td>-</td>
+<tr><td>85</td><td>29</td><td>18</td><td>1</td><td>XB</td><td>[zino82]</td>
+<tr><td>86</td><td>29</td><td>18</td><td>1</td><td>-</td><td>-</td>
+<tr><td>87</td><td>29</td><td>18</td><td>1</td><td>-</td><td>-</td>
+<tr><td>93</td><td>29</td><td>23</td><td>1</td><td>LI</td><td>[gron94]</td>
+<tr><td>94</td><td>29</td><td>23</td><td>1</td><td>-</td><td>-</td>
+<tr><td>95</td><td>29</td><td>23</td><td>1</td><td>-</td><td>-</td>
+<tr><td>96</td><td>29</td><td>23</td><td>1</td><td>-</td><td>-</td>
+<tr><td>98</td><td>29</td><td>24</td><td>1</td><td>LI</td><td>[gron94]</td>
+<tr><td>100</td><td>29</td><td>25</td><td>1</td><td>CY</td><td>[weij97]</td>
+<tr><td>107</td><td>29</td><td>28</td><td>9</td><td>YC</td><td>[lits98]</td>
+<tr><td>108</td><td>29</td><td>28</td><td>9</td><td>-</td><td>-</td>
+<tr><td>109</td><td>29</td><td>32</td><td>1</td><td>Y1</td><td>[lits98]</td>
+<tr><td>110</td><td>29</td><td>30</td><td>7</td><td>Y1</td><td>[lits98]</td>
+<tr><td>111</td><td>29</td><td>32</td><td>3</td><td>Y1</td><td>[lits98]</td>
+<tr><td>112</td><td>29</td><td>32</td><td>5</td><td>Y1</td><td>[lits98]</td>
+<tr><td>114</td><td>29</td><td>36</td><td>1</td><td>CY</td><td>[scho92]</td>
+<tr><td>115</td><td>29</td><td>36</td><td>1</td><td>-</td><td>-</td>
+<tr><td>117</td><td>29</td><td>37</td><td>1</td><td>CY</td><td>[scho92]</td>
+<tr><td>118</td><td>29</td><td>35</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>119</td><td>29</td><td>35</td><td>9</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>120</td><td>29</td><td>39</td><td>1</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>121</td><td>29</td><td>37</td><td>7</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>122</td><td>29</td><td>39</td><td>3</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>123</td><td>29</td><td>39</td><td>5</td><td>Y1</td><td>[zino84a]</td>
+<tr><td>125</td><td>29</td><td>43</td><td>1</td><td>B</td><td>[kasa69]</td>
+<tr><td>126</td><td>29</td><td>43</td><td>1</td><td>-</td><td>-</td>
+<tr><td>127</td><td>29</td><td>43</td><td>1</td><td>-</td><td>-</td>
+<tr><td>135</td><td>29</td><td>50</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>136</td><td>29</td><td>50</td><td>1</td><td>-</td><td>-</td>
+<tr><td>137</td><td>29</td><td>44</td><td>69</td><td>XB</td><td>[zino82]</td>
+<tr><td>138</td><td>29</td><td>46</td><td>23</td><td>XB</td><td>[zino82]</td>
+<tr><td>139</td><td>29</td><td>51</td><td>1</td><td>XB</td><td>[zino82]</td>
+<tr><td>142</td><td>29</td><td>53</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>144</td><td>29</td><td>52</td><td>5</td><td>XQ</td><td>[zino82]</td>
+<tr><td>145</td><td>29</td><td>52</td><td>9</td><td>XQ</td><td>[zino82]</td>
+<tr><td>146</td><td>29</td><td>56</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>147</td><td>29</td><td>56</td><td>1</td><td>-</td><td>-</td>
+<tr><td>148</td><td>29</td><td>52</td><td>19</td><td>XB</td><td>[zino82]</td>
+<tr><td>149</td><td>29</td><td>57</td><td>1</td><td>XB</td><td>[zino82]</td>
+<tr><td>154</td><td>29</td><td>61</td><td>1</td><td>XZ</td><td>[barg87]</td>
+<tr><td>155</td><td>29</td><td>57</td><td>17</td><td>XZ</td><td>[barg87]</td>
+<tr><td>159</td><td>29</td><td>65</td><td>1</td><td>XZ</td><td>[barg87]</td>
+<tr><td>160</td><td>29</td><td>61</td><td>17</td><td>XZ</td><td>[barg87]</td>
+<tr><td>164</td><td>29</td><td>69</td><td>1</td><td>XZ</td><td>[barg87]</td>
+<tr><td>165</td><td>29</td><td>65</td><td>17</td><td>XZ</td><td>[barg87]</td>
+<tr><td>166</td><td>29</td><td>68</td><td>3</td><td>XZ</td><td>[barg87]</td>
+<tr><td>167</td><td>29</td><td>70</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>168</td><td>29</td><td>67</td><td>11</td><td>XZ</td><td>[kats87]</td>
+<tr><td>170</td><td>29</td><td>67</td><td>33</td><td>XZ</td><td>[barg87]</td>
+<tr><td>179</td><td>29</td><td>81</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>180</td><td>29</td><td>77</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>185</td><td>29</td><td>86</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>186</td><td>29</td><td>82</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>191</td><td>29</td><td>91</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>192</td><td>29</td><td>87</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>197</td><td>29</td><td>96</td><td>1</td><td>ZV</td><td>[kasa76]</td>
+<tr><td>198</td><td>29</td><td>92</td><td>17</td><td>XZ</td><td>[zino82]</td>
+<tr><td>199</td><td>29</td><td>92</td><td>29</td><td>XZ</td><td>[zino84b]</td>
+<tr><td>200</td><td>29</td><td>90</td><td>155</td><td>Y1</td><td>[shek89]</td>
+<tr><td>201</td><td>29</td><td>86</td><td>4589</td><td>Y1</td><td>[shek89]</td>
+<tr><td>202</td><td>29</td><td>87</td><td>4237</td><td>Y1</td><td>[shek89]</td>
+<tr><td>203</td><td>29</td><td>87</td><td>7807</td><td>Y1</td><td>[shek89]</td>
+<tr><td>204</td><td>29</td><td>91</td><td>897</td><td>Y1</td><td>[shek89]</td>
+<tr><td>205</td><td>29</td><td>91</td><td>1645</td><td>Y1</td><td>[shek89]</td>
+<tr><td>206</td><td>29</td><td>91</td><td>3009</td><td>Y1</td><td>[shek89]</td>
+<tr><td>207</td><td>29</td><td>91</td><td>5489</td><td>Y1</td><td>[shek89]</td>
+<tr><td>208</td><td>29</td><td>99</td><td>39</td><td>Y1</td><td>[shek89]</td>
+<tr><td>209</td><td>29</td><td>94</td><td>2263</td><td>Y1</td><td>[shek89]</td>
+<tr><td>210</td><td>29</td><td>95</td><td>2045</td><td>Y1</td><td>[shek89]</td>
+<tr><td>211</td><td>29</td><td>95</td><td>3683</td><td>Y1</td><td>[shek89]</td>
+<tr><td>212</td><td>29</td><td>99</td><td>413</td><td>Y1</td><td>[shek89]</td>
+<tr><td>213</td><td>29</td><td>100</td><td>369</td><td>Y1</td><td>[shek89]</td>
+<tr><td>214</td><td>29</td><td>99</td><td>1313</td><td>Y1</td><td>[shek89]</td>
+<tr><td>215</td><td>29</td><td>99</td><td>2325</td><td>Y1</td><td>[shek89]</td>
+<tr><td>216</td><td>29</td><td>111</td><td>1</td><td>Y1</td><td>[shek89]</td>
+<tr><td>217</td><td>29</td><td>102</td><td>897</td><td>Y1</td><td>[shek89]</td>
+<tr><td>218</td><td>29</td><td>103</td><td>781</td><td>Y1</td><td>[shek89]</td>
+<tr><td>219</td><td>29</td><td>103</td><td>1351</td><td>Y1</td><td>[shek89]</td>
+<tr><td>220</td><td>29</td><td>107</td><td>145</td><td>Y1</td><td>[shek89]</td>
+<tr><td>221</td><td>29</td><td>107</td><td>247</td><td>Y1</td><td>[shek89]</td>
+<tr><td>222</td><td>29</td><td>107</td><td>417</td><td>Y1</td><td>[shek89]</td>
+<tr><td>223</td><td>29</td><td>107</td><td>697</td><td>Y1</td><td>[shek89]</td>
+<tr><td>224</td><td>29</td><td>114</td><td>9</td><td>Y1</td><td>[shek89]</td>
+<tr><td>225</td><td>29</td><td>110</td><td>235</td><td>Y1</td><td>[shek89]</td>
+<tr><td>226</td><td>29</td><td>111</td><td>189</td><td>Y1</td><td>[shek89]</td>
+<tr><td>227</td><td>29</td><td>111</td><td>299</td><td>Y1</td><td>[shek89]</td>
+<tr><td>255</td><td>29</td><td>147</td><td>1</td><td>B</td><td>[bose60,hoqu59]</td>
+<tr><td>264</td><td>29</td><td>155</td><td>1</td><td>XB</td><td>[sloa72b]</td>
+<tr><td>265</td><td>29</td><td>148</td><td>151</td><td>XB</td><td>[zino82]</td>
+<tr><td>272</td><td>29</td><td>162</td><td>1</td><td>XQ</td><td>[kasa75]</td>
+<tr><td>273</td><td>29</td><td>155</td><td>151</td><td>XQ</td><td>[zino84b]</td>
+<tr><td>280</td><td>29</td><td>169</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>281</td><td>29</td><td>162</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>288</td><td>29</td><td>176</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>289</td><td>29</td><td>169</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>296</td><td>29</td><td>183</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>297</td><td>29</td><td>176</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>300</td><td>29</td><td>186</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>301</td><td>29</td><td>186</td><td>1</td><td>-</td><td>-</td>
+<tr><td>302</td><td>29</td><td>185</td><td>3</td><td>GP</td><td>[zino84b]</td>
+<tr><td>303</td><td>29</td><td>187</td><td>1</td><td>GP</td><td>[zino84b]</td>
+<tr><td>304</td><td>29</td><td>184</td><td>11</td><td>XB</td><td>[kats87]</td>
+<tr><td>307</td><td>29</td><td>187</td><td>9</td><td>GP</td><td>[zino84b]</td>
+<tr><td>311</td><td>29</td><td>194</td><td>1</td><td>GP</td><td>[zino84b]</td>
+<tr><td>313</td><td>29</td><td>194</td><td>1</td><td>-</td><td>-</td>
+<tr><td>320</td><td>29</td><td>200</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>321</td><td>29</td><td>193</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>328</td><td>29</td><td>207</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>329</td><td>29</td><td>200</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>336</td><td>29</td><td>214</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>337</td><td>29</td><td>207</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>344</td><td>29</td><td>221</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>345</td><td>29</td><td>214</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>352</td><td>29</td><td>228</td><td>1</td><td>GP</td><td>[sugi76]</td>
+<tr><td>353</td><td>29</td><td>221</td><td>151</td><td>GP</td><td>[zino84b]</td>
+<tr><td>383</td><td>29</td><td>258</td><td>1</td><td>GP</td><td>[zino84a]</td>
+<tr><td>512</td><td>29</td><td>386</td><td>1</td><td>B</td><td>[sloa72a]</td>
+<tr><th>n</th><th>d</th><th>k</th><th>N</th><th>Type</th><th>Reference</th>
+</table><p>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<hr>
+<p>
+<center><h1>End of Tables</h1></center>
+<p>
+<hr>
+
+<h2><a NAME="key">KEY</a></h2><p>
+AL   =   alternant code (linear)<br>
+AX   =   the (a+x, b+x, a+b+x) construction<br>
+B    =   BCH code<br>
+BV   =   Belov et al.'s linear codes meeting the Griesmer bound<br>
+CM   =   conference-matrix code<br>
+CS   =   code from a group<br>
+CY   =   cyclic or quasicyclic code<br>
+DC   =   double circulant code<br>
+DG   =   Delsarte-Goethals code<br>
+GB   =   generalized BCH code<br>
+GO   =   Golay code<br>
+GP   =   Goppa or lengthened Goppa code<br>
+HD   =   Hadamard matrix code<br>
+HG   =   Hamming code<br>
+HS   =   Helgert and Stinaff construction A (Griesmer shortening)<br>
+IM   =   Goethals nonlinear code I(M)<br>
+KS   =   Kasahara et al. generalized concatenated codes (linear or nonlinear)<br>
+LI   =   linear code (a generating or parity-check matrix is explicitly found)<br>
+MT   =   matrix construction<br>
+NL   =   nonlinear code (the list of codewords is explicitly given)<br>
+PR   =   Preparata code<br>
+PT   =   Piret's construction<br>
+QR   =   quadratic residue code<br>
+RM   =   Reed-Muller code<br>
+SV   =   Srivastava code<br>
+SW   =   nonlinear single error-correcting code<br>
+UV    =   the ({\bf u},{\bf u}+{\bf v})-construction<br>
+X    =   lengthening construction X<br>
+XB   =   lengthening of BCH codes<br>
+XC   =   lengthening of a cyclic code<br>
+XD   =   lengthening of Delsarte-Goethals codes<br>
+XG   =   lengthening of Preparata-Goethals codes<br>
+XH   =   lengthening of Hamming-Preparata-Goethals codes<br>
+XP   =   lengthening of Hamming-Preparata codes<br>
+XQ   =   two-dimensional lengthening of BCH codes<br>
+XZ   =   lengthening of generalized concatenated codes<br>
+X3   =   construction X3<br>
+X4   =   construction X4<br>
+Y1   =   shortening of codes with j=1<br>
+Y2   =   shortening of codes with j=2<br>
+YB   =   shortening of BCH codes<br>
+YC   =   shortening of cyclic or quadratic residue codes<br>
+YD   =   shortening of Delsarte-Goethals codes<br>
+YG   =   shortening of Goethals codes<br>
+YK   =   shortening of Kerdock codes<br>
+YP   =   shortening of Preparata codes<br>
+YQ   =   shortening of Goppa codes<br>
+YZ   =   shortening of generalized concatenated codes<br>
+ZV   =   generalized concatenated codes<br>
+Z4   =   codes derived from Z_4 cyclic codes.<br>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<p> <IMG SRC="BluePinLeft.gif">
+<h3><a NAME="red">Table of size, rate, redundancy.</a></h3>
+For the values of N occuring in the main tables,
+the following table gives the contribution to the rate, i.e. log_2(N), 
+and the corresponding fractional part of the redundancy, 
+i.e. red = ceiling(log_2(N)) - log_2(N).
+<p>
+To illustrate  the use of this table, consider
+the second line in the <a href="index.html#dist3">d=3 table</a>,
+which describes a code of length n = 9, minimal distance d = 3,
+with k = 3, N = 5, hence has M = 2^3 * 5 = 40 codewords.
+Referring to the third line (N=5) of the table below,
+we find that this code has
+<p><center>
+rate =  log_2(M) = k + log_2(N) = 3 + 2.32193 = 5.32193,
+</center><p>
+
+and
+<p><center>
+redundancy =  n - log_2(M) = 9 - 6 + 0.67807 = 3.67807.
+</center><p>
+<p>
+<table border="1" width="50%">
+<caption> <center>
+<a NAME="red"><b>Table of size, rate, redundancy:</b></a>
+</center> </caption>
+<tr><th>N</th><th>log_2(N)</th><th>red</th>
+<tr><td>1</td><td>     0.00000</td><td>  1.00000</td>
+<tr><td>3</td><td>     1.58496</td><td>  0.41504</td>
+<tr><td>5</td><td>     2.32193</td><td>  0.67807</td>
+<tr><td>7</td><td>     2.80735</td><td>  0.19265</td>
+<tr><td>9</td><td>     3.16993</td><td>  0.83007</td>
+<tr><td>11</td><td>     3.45943</td><td>  0.54057</td>
+<tr><td>13</td><td>     3.70044</td><td>  0.29956</td>
+<tr><td>15</td><td>     3.90689</td><td>  0.09311</td>
+<tr><td>17</td><td>     4.08746</td><td>  0.91254</td>
+<tr><td>19</td><td>     4.24793</td><td>  0.75207</td>
+<tr><td>21</td><td>     4.39232</td><td>  0.60768</td>
+<tr><td>23</td><td>     4.52356</td><td>  0.47644</td>
+<tr><td>25</td><td>     4.64386</td><td>  0.35614</td>
+<tr><td>27</td><td>     4.75489</td><td>  0.24511</td>
+<tr><td>29</td><td>     4.85798</td><td>  0.14202</td>
+<tr><td>31</td><td>     4.95420</td><td>  0.04580</td>
+<tr><td>33</td><td>     5.04439</td><td>  0.95561</td>
+<tr><td>35</td><td>     5.12928</td><td>  0.87072</td>
+<tr><td>37</td><td>     5.20945</td><td>  0.79055</td>
+<tr><td>39</td><td>     5.28540</td><td>  0.71460</td>
+<tr><td>41</td><td>     5.35755</td><td>  0.64245</td>
+<tr><td>43</td><td>     5.42626</td><td>  0.57374</td>
+<tr><td>45</td><td>     5.49185</td><td>  0.50815</td>
+<tr><td>47</td><td>     5.55459</td><td>  0.44541</td>
+<tr><td>49</td><td>     5.61471</td><td>  0.38529</td>
+<tr><td>51</td><td>     5.67243</td><td>  0.32757</td>
+<tr><td>53</td><td>     5.72792</td><td>  0.27208</td>
+<tr><td>55</td><td>     5.78136</td><td>  0.21864</td>
+<tr><td>57</td><td>     5.83289</td><td>  0.16711</td>
+<tr><td>59</td><td>     5.88264</td><td>  0.11736</td>
+<tr><td>63</td><td>     5.97728</td><td>  0.02272</td>
+<tr><td>65</td><td>     6.02237</td><td>  0.97763</td>
+<tr><td>67</td><td>     6.06609</td><td>  0.93391</td>
+<tr><td>69</td><td>     6.10852</td><td>  0.89148</td>
+<tr><td>71</td><td>     6.14975</td><td>  0.85025</td>
+<tr><td>73</td><td>     6.18982</td><td>  0.81018</td>
+<tr><td>75</td><td>     6.22882</td><td>  0.77118</td>
+<tr><td>77</td><td>     6.26679</td><td>  0.73321</td>
+<tr><td>79</td><td>     6.30378</td><td>  0.69622</td>
+<tr><td>81</td><td>     6.33985</td><td>  0.66015</td>
+<tr><td>83</td><td>     6.37504</td><td>  0.62496</td>
+<tr><td>85</td><td>     6.40939</td><td>  0.59061</td>
+<tr><td>87</td><td>     6.44294</td><td>  0.55706</td>
+<tr><td>89</td><td>     6.47573</td><td>  0.52427</td>
+<tr><td>91</td><td>     6.50779</td><td>  0.49221</td>
+<tr><td>93</td><td>     6.53916</td><td>  0.46084</td>
+<tr><td>95</td><td>     6.56986</td><td>  0.43014</td>
+<tr><td>97</td><td>     6.59991</td><td>  0.40009</td>
+<tr><td>99</td><td>     6.62936</td><td>  0.37064</td>
+<tr><td>101</td><td>     6.65821</td><td>  0.34179</td>
+<tr><td>103</td><td>     6.68650</td><td>  0.31350</td>
+<tr><td>105</td><td>     6.71425</td><td>  0.28575</td>
+<tr><td>107</td><td>     6.74147</td><td>  0.25853</td>
+<tr><td>109</td><td>     6.76818</td><td>  0.23182</td>
+<tr><td>111</td><td>     6.79442</td><td>  0.20558</td>
+<tr><td>113</td><td>     6.82018</td><td>  0.17982</td>
+<tr><td>115</td><td>     6.84549</td><td>  0.15451</td>
+<tr><td>117</td><td>     6.87036</td><td>  0.12964</td>
+<tr><td>119</td><td>     6.89482</td><td>  0.10518</td>
+<tr><td>121</td><td>     6.91886</td><td>  0.08114</td>
+<tr><td>123</td><td>     6.94251</td><td>  0.05749</td>
+<tr><td>125</td><td>     6.96578</td><td>  0.03422</td>
+<tr><td>127</td><td>     6.98868</td><td>  0.01132</td>
+<tr><td>129</td><td>     7.01123</td><td>  0.98877</td>
+<tr><td>133</td><td>     7.05528</td><td>  0.94472</td>
+<tr><td>135</td><td>     7.07682</td><td>  0.92318</td>
+<tr><td>137</td><td>     7.09803</td><td>  0.90197</td>
+<tr><td>145</td><td>     7.17991</td><td>  0.82009</td>
+<tr><td>151</td><td>     7.23840</td><td>  0.76160</td>
+<tr><td>155</td><td>     7.27612</td><td>  0.72388</td>
+<tr><td>163</td><td>     7.34873</td><td>  0.65127</td>
+<tr><td>187</td><td>     7.54689</td><td>  0.45311</td>
+<tr><td>189</td><td>     7.56224</td><td>  0.43776</td>
+<tr><td>191</td><td>     7.57743</td><td>  0.42257</td>
+<tr><td>211</td><td>     7.72110</td><td>  0.27890</td>
+<tr><td>235</td><td>     7.87652</td><td>  0.12348</td>
+<tr><td>247</td><td>     7.94837</td><td>  0.05163</td>
+<tr><td>259</td><td>     8.01681</td><td>  0.98319</td>
+<tr><td>277</td><td>     8.11374</td><td>  0.88626</td>
+<tr><td>299</td><td>     8.22400</td><td>  0.77600</td>
+<tr><td>301</td><td>     8.23362</td><td>  0.76638</td>
+<tr><td>365</td><td>     8.51175</td><td>  0.48825</td>
+<tr><td>369</td><td>     8.52748</td><td>  0.47252</td>
+<tr><td>379</td><td>     8.56605</td><td>  0.43395</td>
+<tr><td>413</td><td>     8.69000</td><td>  0.31000</td>
+<tr><td>417</td><td>     8.70390</td><td>  0.29610</td>
+<tr><td>497</td><td>     8.95710</td><td>  0.04290</td>
+<tr><td>525</td><td>     9.03617</td><td>  0.96383</td>
+<tr><td>697</td><td>     9.44501</td><td>  0.55499</td>
+<tr><td>781</td><td>     9.60918</td><td>  0.39082</td>
+<tr><td>897</td><td>     9.80896</td><td>  0.19104</td>
+<tr><td>1029</td><td>    10.00703</td><td>  0.99297</td>
+<tr><td>1043</td><td>    10.02652</td><td>  0.97348</td>
+<tr><td>1057</td><td>    10.04576</td><td>  0.95424</td>
+<tr><td>1313</td><td>    10.35865</td><td>  0.64135</td>
+<tr><td>1351</td><td>    10.39981</td><td>  0.60019</td>
+<tr><td>1645</td><td>    10.68387</td><td>  0.31613</td>
+<tr><td>2045</td><td>    10.99789</td><td>  0.00211</td>
+<tr><td>2263</td><td>    11.14402</td><td>  0.85598</td>
+<tr><td>2325</td><td>    11.18302</td><td>  0.81698</td>
+<tr><td>3009</td><td>    11.55507</td><td>  0.44493</td>
+<tr><td>3683</td><td>    11.84667</td><td>  0.15333</td>
+<tr><td>4237</td><td>    12.04883</td><td>  0.95117</td>
+<tr><td>4589</td><td>    12.16396</td><td>  0.83604</td>
+<tr><td>5489</td><td>    12.42233</td><td>  0.57767</td>
+<tr><td>7807</td><td>    12.93055</td><td>  0.06945</td>
+<tr><td>1657009</td><td>    20.66015</td><td>  0.33985</td>
+<tr><td>2047781292273887</td><td>    51.86298</td><td>  0.13702</td>
+<tr><td>1021273028302258913</td><td>    59.82507</td><td>  0.17493</td>
+<tr><td>3348824985082075276195</td><td>    71.50414</td><td>  0.49586</td>
+</table>
+
+<hr><center> <strong>[ Go to: distance
+<a href="index.html#dist3">3</a>,
+<a href="index.html#dist5">5</a>,
+<a href="index.html#dist7">7</a>,
+<a href="index.html#dist9">9</a>,
+<a href="index.html#dist11">11</a>,
+<a href="index.html#dist13">13</a>,
+<a href="index.html#dist15">15</a>,
+<a href="index.html#dist17">17</a>,
+<a href="index.html#dist19">19</a>,
+<a href="index.html#dist21">21</a>,
+<a href="index.html#dist23">23</a>,
+<a href="index.html#dist25">25</a>,
+<a href="index.html#dist27">27</a>,
+<a href="index.html#dist29">29</a>;
+<a href="index.html#key">KEY</a>;
+<a href="refs.html">References</a>
+]</strong></center><hr>
+
+<br clear=all>
+<hr>
+<center> [ See also our home pages:
+<a href="http://www.eng.tau.ac.il/~litsyn/"> SL </a> |
+<a href="http://www.research.att.com/info/rains"> EMR </a> |
+<a href="http://www.research.att.com/~njas/"> NJAS </a> 
+]
+</center>
+<hr>
+</body>
+</html>

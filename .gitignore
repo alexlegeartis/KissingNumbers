@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# regenerable caches (built on first use by common/leech.py)
+common/data/leech196560.npy
+
+# scratch the dimension-27 self-test creates and removes
+selftest-tmp/
+
+# caches written by extract.py when it parses Cohn's coordinate file
+verifications/closed/dim09-19-record-maximality/c[0-9]*.npy
+verifications/closed/dim17-layered-family/scripts/c[0-9]*.npy
+
+# LaTeX build products of the standalone dimension-27 paper (its .pdf is tracked)
+verifications/improved/dim27-triple-partition/paper/*.aux
+verifications/improved/dim27-triple-partition/paper/*.bbl
+verifications/improved/dim27-triple-partition/paper/*.blg
+verifications/improved/dim27-triple-partition/paper/*.log
+verifications/improved/dim27-triple-partition/paper/*.out
+verifications/improved/dim27-triple-partition/paper/*.toc
+verifications/improved/dim27-triple-partition/paper/*.synctex.gz
+
+# artefacts of in-place patching, never part of a release
+*.oldcert
+*.bak
+*.orig

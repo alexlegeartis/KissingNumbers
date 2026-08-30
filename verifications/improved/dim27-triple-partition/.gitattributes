@@ -1,0 +1,5 @@
+# Every file here is covered by data/SHA256SUMS.txt, so no file may have its
+# line endings rewritten on checkout -- that would change the hashes and make
+# the verification unreproducible on Windows.  -text disables all end-of-line
+# conversion, on every platform.
+* -text

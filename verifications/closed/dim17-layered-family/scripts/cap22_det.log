@@ -1,0 +1,24 @@
+alpha with every fibre capped at 22 -- the only regime where 193 could live.
+
+The heavy model (61440 vertex 4-clique cuts) spends its budget building rather than searching.
+The fibre cuts dominate them anyway: for any 4 MUTUALLY ADJACENT fibres the exact independence
+number is 32, and Q has 120 such 4-cliques, so 120 constraints replace 61440.  With
+vertex-transitivity (x_0 = 1) and maximality that is the whole model.
+
+Progress is printed as it comes so the bracket on alpha is visible while it runs.
+
+    tau(17) = 5346 + 2*alpha ; alpha = 192 closes dimension 17, alpha >= 193 is a record.
+
+    python tierB_lean.py [seconds]
+
+graph 1024 vertices, 60-regular ; quotient 32 fibres with 120 4-cliques
+   solution 1: |S| = 81   bound 256   (4s)
+   solution 2: |S| = 125   bound 238   (9s)
+   solution 3: |S| = 127   bound 238   (439s)
+   solution 4: |S| = 128   bound 238   (519s)
+   solution 5: |S| = 133   bound 238   (552s)
+   solution 6: |S| = 134   bound 238   (622s)
+   solution 7: |S| = 135   bound 238   (1189s)
+
+alpha = 135, proven upper bound 238, status FEASIBLE
+tau(17): achieved 5616, ceiling 5822   (record 5730)

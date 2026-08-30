@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<title>Kissing numbers &#8211; Henry Cohn</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="Henry Cohn &raquo; Feed" href="https://cohn.mit.edu/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Henry Cohn &raquo; Comments Feed" href="https://cohn.mit.edu/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://cohn.mit.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcohn.mit.edu%2Fkissing-numbers%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://cohn.mit.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcohn.mit.edu%2Fkissing-numbers%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: white;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--color-bg-alt: #ececea;--wp--preset--color--header-main-bg-color: #ffffff;--wp--preset--color--header-secondary-bg-color: #a31f34;--wp--preset--color--footer-main-bg-color: #000000;--wp--preset--color--color-bg: #ffffff;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13.78px;--wp--preset--font-size--medium: 21.2px;--wp--preset--font-size--large: 38.16px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--larger: 50.88px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-color-bg-alt-color{color: var(--wp--preset--color--color-bg-alt) !important;}.has-header-main-bg-color-color{color: var(--wp--preset--color--header-main-bg-color) !important;}.has-header-secondary-bg-color-color{color: var(--wp--preset--color--header-secondary-bg-color) !important;}.has-footer-main-bg-color-color{color: var(--wp--preset--color--footer-main-bg-color) !important;}.has-color-bg-color{color: var(--wp--preset--color--color-bg) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-color-bg-alt-background-color{background-color: var(--wp--preset--color--color-bg-alt) !important;}.has-header-main-bg-color-background-color{background-color: var(--wp--preset--color--header-main-bg-color) !important;}.has-header-secondary-bg-color-background-color{background-color: var(--wp--preset--color--header-secondary-bg-color) !important;}.has-footer-main-bg-color-background-color{background-color: var(--wp--preset--color--footer-main-bg-color) !important;}.has-color-bg-background-color{background-color: var(--wp--preset--color--color-bg) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-color-bg-alt-border-color{border-color: var(--wp--preset--color--color-bg-alt) !important;}.has-header-main-bg-color-border-color{border-color: var(--wp--preset--color--header-main-bg-color) !important;}.has-header-secondary-bg-color-border-color{border-color: var(--wp--preset--color--header-secondary-bg-color) !important;}.has-footer-main-bg-color-border-color{border-color: var(--wp--preset--color--footer-main-bg-color) !important;}.has-color-bg-border-color{border-color: var(--wp--preset--color--color-bg) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-larger-font-size{font-size: var(--wp--preset--font-size--larger) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='cpschool-styles-css' href='https://cohn.mit.edu/wp-content/themes/cpschool/css/theme.min.css?ver=1.1772529760' media='all' />
+<link rel='stylesheet' id='aos-css' href='https://cohn.mit.edu/wp-content/themes/cpschool/css/aos.css?ver=1.1582726405' media='all' />
+<link rel='stylesheet' id='cpsc-styles-css' href='https://cohn.mit.edu/wp-content/themes/mit-flex/css/theme.min.css?ver=1729080718' media='all' />
+<script id="jquery-core-js-extra">
+var msreader_featured_posts = {"saving":"Saving...","post_featured":"This post is featured","feature":"Feature","unfeature":"Unfeature"};
+//# sourceURL=jquery-core-js-extra
+</script>
+<script id="jquery-core-js" src="https://cohn.mit.edu/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://cohn.mit.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="jquery-js-after">
+var ajaxurl = 'https://cohn.mit.edu/wp-admin/admin-ajax.php';
+//# sourceURL=jquery-js-after
+</script>
+<link rel="https://api.w.org/" href="https://cohn.mit.edu/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://cohn.mit.edu/wp-json/wp/v2/pages/314" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://cohn.mit.edu/xmlrpc.php?rsd" />
+<meta name="generator" content="Henry Cohn 7.0.4 - https://cohn.mit.edu" />
+<link rel="canonical" href="https://cohn.mit.edu/kissing-numbers/" />
+<link rel='shortlink' href='https://cohn.mit.edu/?p=314' />
+	<style>
+		@media screen and (max-width: 782px) {
+			#wpadminbar li#wp-admin-bar-log-in,
+			#wpadminbar li#wp-admin-bar-register {
+				display: block;
+			}
+
+			#wpadminbar li#wp-admin-bar-log-in a,
+			#wpadminbar li#wp-admin-bar-register a {
+				padding: 0 8px;
+			}
+		}
+	</style>
+
+        <script type="text/javascript">
+            var jQueryMigrateHelperHasSentDowngrade = false;
+
+			window.onerror = function( msg, url, line, col, error ) {
+				// Break out early, do not processing if a downgrade reqeust was already sent.
+				if ( jQueryMigrateHelperHasSentDowngrade ) {
+					return true;
+                }
+
+				var xhr = new XMLHttpRequest();
+				var nonce = 'a63ca5c97b';
+				var jQueryFunctions = [
+					'andSelf',
+					'browser',
+					'live',
+					'boxModel',
+					'support.boxModel',
+					'size',
+					'swap',
+					'clean',
+					'sub',
+                ];
+				var match_pattern = /\)\.(.+?) is not a function/;
+                var erroredFunction = msg.match( match_pattern );
+
+                // If there was no matching functions, do not try to downgrade.
+                if ( null === erroredFunction || typeof erroredFunction !== 'object' || typeof erroredFunction[1] === "undefined" || -1 === jQueryFunctions.indexOf( erroredFunction[1] ) ) {
+                    return true;
+                }
+
+                // Set that we've now attempted a downgrade request.
+                jQueryMigrateHelperHasSentDowngrade = true;
+
+				xhr.open( 'POST', 'https://cohn.mit.edu/wp-admin/admin-ajax.php' );
+				xhr.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded' );
+				xhr.onload = function () {
+					var response,
+                        reload = false;
+
+					if ( 200 === xhr.status ) {
+                        try {
+                        	response = JSON.parse( xhr.response );
+
+                        	reload = response.data.reload;
+                        } catch ( e ) {
+                        	reload = false;
+                        }
+                    }
+
+					// Automatically reload the page if a deprecation caused an automatic downgrade, ensure visitors get the best possible experience.
+					if ( reload ) {
+						location.reload();
+                    }
+				};
+
+				xhr.send( encodeURI( 'action=jquery-migrate-downgrade-version&_wpnonce=' + nonce ) );
+
+				// Suppress error alerts in older browsers
+				return true;
+			}
+        </script>
+
+		<style type="text/css" id="branda-admin-bar">
+#wpadminbar 			.ub_admin_bar_image{
+				max-width: 100%;
+				max-height: 28px;
+				padding: 2px 0;
+			}
+			#wpadminbar .ub-menu-item.dashicons {
+				font-family: dashicons;
+				top: 2px;
+			}
+</style><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Henry Cohn - ">
+					<!-- Google Analytics tracking code output by Beehive Analytics Pro -->
+						<script async src="https://www.googletagmanager.com/gtag/js?id=G-230LN9FWEQ&l=beehiveDataLayer"></script>
+		<script>
+						window.beehiveDataLayer = window.beehiveDataLayer || [];
+			function gaplusu() {beehiveDataLayer.push(arguments);}
+			gaplusu('js', new Date())
+						gaplusu('config', 'G-230LN9FWEQ', {
+				'anonymize_ip': false,
+				'allow_google_signals': false,
+			})
+					</script>
+		<style type="text/css">
+/* <![CDATA[ */
+img.latex { vertical-align: middle; border: none; }
+/* ]]> */
+</style>
+<style id="kirki-inline-styles">.logo-font{font-family:inherit;}.container{max-width:1140px;}:root{--site-width:1140px;--content-width:1140px;--body-font-size:106;--roundness:10px;--shadows:0px;--color-bg:#ffffff;--color-bg-alt:#ececea;--color-bg-contrast:#000000;--color-bg-accent:#a31f34;--color-bg-accent-a:rgba(163,31,52,0.5);--color-bg-accent-contrast:#ffffff;--color-bg-accent-hl:#1e669e;--color-bg-accent-hl-a:rgba(30,102,158,0.5);--color-bg-accent-hl-contrast:#ffffff;--color-bg-alt-contrast:#000000;--color-bg-alt-accent:#a31f34;--color-bg-alt-accent-a:rgba(163,31,52,0.5);--color-bg-alt-accent-contrast:#ffffff;--color-bg-alt-accent-hl:#1a5b8e;--color-bg-alt-accent-hl-a:rgba(26,91,142,0.5);--color-bg-alt-accent-hl-contrast:#ffffff;--header-main-height:127.312px;--header-main-gap-height:0px;--header-main-padding-v:100;--header-main-bg-color:#ffffff;--header-main-bg-color-contrast:#000000;--header-main-bg-color-accent:#a31f34;--header-main-bg-color-accent-a:rgba(163,31,52,0.5);--header-main-bg-color-accent-contrast:#ffffff;--header-main-bg-color-accent-hl:#1e669e;--header-main-bg-color-accent-hl-a:rgba(30,102,158,0.5);--header-main-bg-color-accent-hl-contrast:#ffffff;--header-main-logo-font-size:100;--header-main-font-size:100;--header-secondary-bg-color:#a31f34;--header-secondary-bg-color-contrast:#ffffff;--header-secondary-bg-color-accent:#f8e2e6;--header-secondary-bg-color-accent-a:rgba(248,226,230,0.5);--header-secondary-bg-color-accent-contrast:#000000;--header-secondary-bg-color-accent-hl:#d9e9f6;--header-secondary-bg-color-accent-hl-a:rgba(217,233,246,0.5);--header-secondary-bg-color-accent-hl-contrast:#000000;--header-secondary-font-size:106;--header-secondary-padding-v:0;--headers-font-size:100;--footer-main-bg-color:#000000;--footer-main-bg-color-contrast:#ffffff;--footer-main-bg-color-accent:#e15f75;--footer-main-bg-color-accent-a:rgba(225,95,117,0.5);--footer-main-bg-color-accent-contrast:#000000;--footer-main-bg-color-accent-hl:#2c90dc;--footer-main-bg-color-accent-hl-a:rgba(44,144,220,0.5);--footer-main-bg-color-accent-hl-contrast:#000000;}body{font-family:inter;}#navbar-main .nav{font-family:inherit;}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:inherit;}</style></head>
+
+<body class="wp-singular page-template-default page page-id-314 wp-embed-responsive wp-theme-cpschool wp-child-theme-mit-flex shadows-disabled animations-enabled h-style-separator-bottom sidebars-check-sticky singular navbar-secondary-under-main">
+
+<div class="site" id="page">
+	<a class="skip-link sr-only sr-only-focusable" href="#content">Skip to content</a>
+
+	
+	<div class="mit-header">
+	<div class="mit-header__container">
+		<a href="https://www.mit.edu/">
+			<img src="https://cohn.mit.edu/wp-content/themes/mit-flex/img/mit_logo_std_rgb_white.png?ver=2" alt="MIT Logo" width="80">
+		</a>
+	</div>
+</div>
+
+	
+		<div id="wrapper-navbar-main-top" ></div>
+	<div id="wrapper-navbar-main" class="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
+		<nav id="navbar-main" class="navbar navbar-expand-md nav-styling-underline has-background has-header-main-bg-color-background-color" aria-label="main">
+			<div class="navbar-container container">
+				
+				<!-- Your site title as branding in the menu -->
+															<div class="navbar-brand-holder">
+												
+							<a class="navbar-brand logo-font custom-bg-disabled"  rel="home" href="https://cohn.mit.edu/" title="Henry Cohn" itemprop="url">
+								<span class="navbar-brand-text">Henry Cohn</span>
+
+															</a>
+
+							
+																		</div>
+									<!-- end custom logo -->
+
+				
+				<div class="navbar-navs-container">
+					<div id="navbar-main-nav-desktop" class="navbar-nav-container"><ul id="menu-main-desktop" class="nav navbar-nav"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-menu-main-desktop-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-83 nav-item"><a class="nav-link" title="Home" href="https://cohn.mit.edu/"><span class="menu-item-text">Home</span></a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-menu-main-desktop-88" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88 nav-item"><a class="nav-link" title="Publications" href="https://cohn.mit.edu/publications/"><span class="menu-item-text">Publications</span></a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-menu-main-desktop-184" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-184 nav-item"><a class="nav-link" title="Data" href="https://cohn.mit.edu/data/"><span class="menu-item-text">Data</span></a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-menu-main-desktop-162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-162 nav-item"><a class="nav-link" title="Teaching" href="https://cohn.mit.edu/teaching/"><span class="menu-item-text">Teaching</span></a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-menu-main-desktop-165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-165 nav-item"><a class="nav-link" title="Miscellaneous" href="https://cohn.mit.edu/miscellaneous/"><span class="menu-item-text">Miscellaneous</span></a></li>
+</ul></div>
+					<div id="navbar-main-nav-buttons">
+						<ul class="nav navbar-nav navbar-button-nav-right">
+							
+														<li id="navbar-main-btn-slide-in-menu" class="btn-modal-slide-in-menu-holder has-mobile">
+								<button type="button" class="btn btn-secondary nav-link has-styling" data-toggle="modal" data-target="#modal-slide-in-menu">
+									<i aria-hidden="true" class="cps-icon cps-icon-menu"></i>
+									<span aria-hidden="true" class="d-none">Menu</span>
+									<span class="sr-only">Toggle extended navigation</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+							</div><!-- #navbar-container -->
+		</nav>
+	</div><!-- #wrapper-navbar end -->
+
+	
+	
+<div class="main-wrapper wrapper" id="page-wrapper">
+	<div class="container" id="content">
+		<div class="row">
+			<!-- Do the left sidebar check -->
+			
+
+<div class="col-md-12 col-xl-12 content-area" id="primary">
+
+			<main class="site-main" id="main">
+									
+<article class="post-314 page type-page status-publish hentry" id="post-314">
+			<header class="page-header">
+										<h1 class="page-title entry-title">Kissing numbers</h1>
+			
+					</header><!-- .page-header -->
+
+		
+	<div class="entry-content">
+		
+		<p><meta name="format-detection" content="telephone=no"></p>
+<style type="text/css">#data tr:nth-child(even){background-color: whitesmoke;}
+#data td{text-align: center;}
+#data table, tr, th, td { border-collapse:collapse; }
+#data th{text-align: center; background-color: white; color: black;}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<p>The kissing problem asks how many spheres can be arranged tangent to a given sphere, if they all have the same size and their interiors cannot overlap. The maximum such number in <i>n</i> dimensions is called the <i>n</i>-dimensional kissing number. Equivalently, we can ask how many points can be arranged on the surface of a sphere such that no two distinct points form an angle of less than 60 degrees with the center of the sphere. See [<a title="J. H. Conway and N. J. A. Sloane, Sphere packings, lattices and groups, third edition, Grundlehren der Mathematischen Wissenschaften 290, Springer-Verlag, New York, 1999." href="#5">5</a>] for more information about the kissing problem.</p>
+<p>This table shows the best upper and lower bounds known for the kissing numbers in dimensions up to 48 as well as 72. It was originally based on a table of lower bounds that was part of the Nebe-Sloane <a href="http://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/index.html">Catalogue of Lattices</a>, and before that Tables I.2(a) and I.2(b) in [<a title="J. H. Conway and N. J. A. Sloane, Sphere packings, lattices and groups, third edition, Grundlehren der Mathematischen Wissenschaften 290, Springer-Verlag, New York, 1999." href="#5">5</a>]. Please let me know of any improvements that should be incorporated.</p>
+<p>A plot of the data is available <a href="https://cohn.mit.edu/kissingplot/">here</a>, and the data is archived <a href="https://hdl.handle.net/1721.1/153312">here</a>, along with more information about many of the configurations.</p>
+<div style="overflow-x:auto;">
+<table class="center" id="data" style="width:90%;">
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Lower bound</th>
+<th>Upper bound</th>
+<th>Ratio</th>
+<th>References</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td colspan="2">2</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td colspan="2">6</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td colspan="2">12</td>
+<td>1</td>
+<td>[<a title="K. Sch&uuml;tte and B. L. van der Waerden, Das Problem der dreizehn Kugeln, Math. Ann. 125 (1953), 325–334." href="#22">22</a>]</td>
+</tr>
+<tr>
+<td>4</td>
+<td colspan="2">24</td>
+<td>1</td>
+<td>[<a title="L. Schl&auml;fli, Theorie der vielfachen Kontinuit&auml;t [1852], Denkschriften der Schweizerischen naturforschenden Gesellschaft, vol. 38, J. H. Graf, Bern, 1901." href="#21">21</a>, <a title="O. R. Musin, The kissing number in four dimensions, Ann. of Math. (2) 168 (2008), 1–32." href="#18">18</a>]</td>
+</tr>
+<tr>
+<td>5</td>
+<td>40</td>
+<td>44</td>
+<td>1.100</td>
+<td>[<a title="A. Korkine and G. Zolotareff, Sur les formes quadratiques, Math. Ann. 6 (1873), 366–389." href="#9">9</a>, <a title="H. D. Mittelmann and F. Vallentin, High-accuracy semidefinite programming bounds for kissing numbers, Experiment. Math. 19 (2010), 175–179." href="#17">17</a>]</td>
+</tr>
+<tr>
+<td>6</td>
+<td>72</td>
+<td>77</td>
+<td>1.070</td>
+<td>[<a title="A. Korkine and G. Zolotareff, Sur les formes quadratiques, Math. Ann. 6 (1873), 366–389." href="#9">9</a>, <a title="D. de Laat, N. Leijenhorst, and W. H. H. de Muinck Keizer, Optimality and uniqueness of the D_4 root system, preprint, 2024." href="#11">11</a>]</td>
+</tr>
+<tr>
+<td>7</td>
+<td>126</td>
+<td>134</td>
+<td>1.064</td>
+<td>[<a title="A. Korkine and G. Zolotareff, Sur les formes quadratiques, Math. Ann. 6 (1873), 366–389." href="#9">9</a>, <a title="H. D. Mittelmann and F. Vallentin, High-accuracy semidefinite programming bounds for kissing numbers, Experiment. Math. 19 (2010), 175–179." href="#17">17</a>]</td>
+</tr>
+<tr>
+<td>8</td>
+<td colspan="2">240</td>
+<td>1</td>
+<td>[<a title="A. Korkine and G. Zolotareff, Sur les formes quadratiques, Math. Ann. 6 (1873), 366–389." href="#9">9</a>, <a title="V. I. Leven&scaron;te&#301;n, On bounds for packings in n-dimensional Euclidean space (Russian), Dokl. Akad. Nauk SSSR 245 (1979), 1299–1303; English translation in Soviet Math. Dokl. 20 (1979), 417–421." href="#14">14</a>, <a title="A. M. Odlyzko and N. J. A. Sloane, New bounds on the number of unit spheres that can touch a unit sphere in n dimensions, J. Combin. Theory Ser. A 26 (1979), 210–214." href="#20">20</a>]</td>
+</tr>
+<tr>
+<td>9</td>
+<td>306</td>
+<td>363</td>
+<td>1.187</td>
+<td>[<a title="J. Leech and N. J. A. Sloane, Sphere packings and error-correcting codes, Canadian J. Math. 23 (1971), 718–745." href="#13">13</a>, <a title="F. C. Machado and F. M. de Oliveira Filho, Improving the semidefinite programming bound for the kissing number by exploiting polynomial symmetry, Exp. Math. 27 (2018), 362–369." href="#16">16</a>]</td>
+</tr>
+<tr>
+<td>10</td>
+<td>510</td>
+<td>553</td>
+<td>1.085</td>
+<td>[<a title="M. Ganzhinov, Highly symmetric lines, Linear Algebra Appl. 722 (2025), 12–37." href="#7">7</a>, <a title="F. C. Machado and F. M. de Oliveira Filho, Improving the semidefinite programming bound for the kissing number by exploiting polynomial symmetry, Exp. Math. 27 (2018), 362–369." href="#16">16</a>]</td>
+</tr>
+<tr>
+<td>11</td>
+<td>604</td>
+<td>868</td>
+<td>1.438</td>
+<td>[<a title="F. Bianchi, Y. Kwon, A. Pappu, and J. Zou, Harnessing the collective intelligence of AI agents in the wild for new discoveries, preprint, 2026." href="#2">2</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>12</td>
+<td>841</td>
+<td>1355</td>
+<td>1.612</td>
+<td>[<a title="R. Takhanov, Z. Assylbekov, and S. Yun, Structure of kissing arrangements in R^12 and a place for the 841st sphere, preprint, 2026, arXiv:2606.18984." href="#24">24</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>13</td>
+<td>1154</td>
+<td>2064</td>
+<td>1.789</td>
+<td>[<a title="V. A. Zinoviev and T. Ericson, New lower bounds for contact numbers in small dimensions (Russian), Problemy Peredachi Informatsii 35 (1999), 3–11; English translation in Problems Inform. Transmission 35 (1999), 287–294." href="#25">25</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>14</td>
+<td>1932</td>
+<td>3174</td>
+<td>1.643</td>
+<td>[<a title="M. Ganzhinov, Highly symmetric lines, Linear Algebra Appl. 722 (2025), 12–37." href="#7">7</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>15</td>
+<td>2564</td>
+<td>4853</td>
+<td>1.893</td>
+<td>[<a title="J. Leech and N. J. A. Sloane, Sphere packings and error-correcting codes, Canadian J. Math. 23 (1971), 718–745." href="#13">13</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>16</td>
+<td>4320</td>
+<td>7320</td>
+<td>1.695</td>
+<td>[<a title="E. S. Barnes and G. E. Wall, Some extreme forms defined in terms of Abelian groups, J. Austral. Math. Soc. 1 (1959), 47–63." href="#1">1</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>17</td>
+<td>5730</td>
+<td>10978</td>
+<td>1.916</td>
+<td>[<a title="H. Cohn and A. Li, Improved kissing numbers in seventeen through twenty-one dimensions, preprint, 2024." href="#4">4</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>18</td>
+<td>7654</td>
+<td>16406</td>
+<td>2.144</td>
+<td>[<a title="H. Cohn and A. Li, Improved kissing numbers in seventeen through twenty-one dimensions, preprint, 2024." href="#4">4</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>19</td>
+<td>11948</td>
+<td>24417</td>
+<td>2.044</td>
+<td>[<a title="B. S. Ho, A new lower bound for the kissing number in 19 dimensions, preprint, 2026." href="#8">8</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>20</td>
+<td>19448</td>
+<td>36195</td>
+<td>1.862</td>
+<td>[<a title="H. Cohn and A. Li, Improved kissing numbers in seventeen through twenty-one dimensions, preprint, 2024." href="#4">4</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>21</td>
+<td>29768</td>
+<td>53524</td>
+<td>1.799</td>
+<td>[<a title="H. Cohn and A. Li, Improved kissing numbers in seventeen through twenty-one dimensions, preprint, 2024." href="#4">4</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>22</td>
+<td>49896</td>
+<td>80810</td>
+<td>1.620</td>
+<td>[<a title="J. Leech, Notes on sphere packings, Canadian J. Math. 19 (1967), 251–267." href="#12">12</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>23</td>
+<td>93150</td>
+<td>122351</td>
+<td>1.314</td>
+<td>[<a title="J. Leech, Notes on sphere packings, Canadian J. Math. 19 (1967), 251–267." href="#12">12</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>24</td>
+<td colspan="2">196560</td>
+<td>1</td>
+<td>[<a title="J. Leech, Notes on sphere packings, Canadian J. Math. 19 (1967), 251–267." href="#12">12</a>, <a title="V. I. Leven&scaron;te&#301;n, On bounds for packings in n-dimensional Euclidean space (Russian), Dokl. Akad. Nauk SSSR 245 (1979), 1299–1303; English translation in Soviet Math. Dokl. 20 (1979), 417–421." href="#14">14</a>, <a title="A. M. Odlyzko and N. J. A. Sloane, New bounds on the number of unit spheres that can touch a unit sphere in n dimensions, J. Combin. Theory Ser. A 26 (1979), 210–214." href="#20">20</a>]</td>
+</tr>
+<tr>
+<td>25</td>
+<td>197056</td>
+<td>265006</td>
+<td>1.345</td>
+<td>[<a title="C. Ma, T. Tao Z., P. Li, M. Liu, H. Chen, Z. Mao, Y. Cheng, Y. Qi, and Y. Yang, Finding kissing numbers with game-theoretic reinforcement learning, preprint, 2025, arXiv:2511.13391." href="#15">15</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>26</td>
+<td>198550</td>
+<td>367775</td>
+<td>1.853</td>
+<td>[<a title="C. Ma, T. Tao Z., P. Li, M. Liu, H. Chen, Z. Mao, Y. Cheng, Y. Qi, and Y. Yang, Finding kissing numbers with game-theoretic reinforcement learning, preprint, 2025, arXiv:2511.13391." href="#15">15</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>27</td>
+<td>200044</td>
+<td>522212</td>
+<td>2.611</td>
+<td>[<a title="C. Ma, T. Tao Z., P. Li, M. Liu, H. Chen, Z. Mao, Y. Cheng, Y. Qi, and Y. Yang, Finding kissing numbers with game-theoretic reinforcement learning, preprint, 2025, arXiv:2511.13391." href="#15">15</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>28</td>
+<td>204520</td>
+<td>752292</td>
+<td>3.679</td>
+<td>[<a title="C. Ma, T. Tao Z., P. Li, M. Liu, H. Chen, Z. Mao, Y. Cheng, Y. Qi, and Y. Yang, Finding kissing numbers with game-theoretic reinforcement learning, preprint, 2025, arXiv:2511.13391." href="#15">15</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>29</td>
+<td>209496</td>
+<td>1075991</td>
+<td>5.137</td>
+<td>[<a title="C. Ma, T. Tao Z., P. Li, M. Liu, H. Chen, Z. Mao, Y. Cheng, Y. Qi, and Y. Yang, Finding kissing numbers with game-theoretic reinforcement learning, preprint, 2025, arXiv:2511.13391." href="#15">15</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>30</td>
+<td>220440</td>
+<td>1537707</td>
+<td>6.976</td>
+<td>[<a title="C. Ma, T. Tao Z., P. Li, M. Liu, H. Chen, Z. Mao, Y. Cheng, Y. Qi, and Y. Yang, Finding kissing numbers with game-theoretic reinforcement learning, preprint, 2025, arXiv:2511.13391." href="#15">15</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>31</td>
+<td>238350</td>
+<td>2213487</td>
+<td>9.287</td>
+<td>[<a title="C. Ma, T. Tao Z., P. Li, M. Liu, H. Chen, Z. Mao, Y. Cheng, Y. Qi, and Y. Yang, Finding kissing numbers with game-theoretic reinforcement learning, preprint, 2025, arXiv:2511.13391." href="#15">15</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>32</td>
+<td>345408</td>
+<td>3162316</td>
+<td>9.156</td>
+<td>[<a title="A. E. Brouwer, Bounds for binary constant weight codes." href="#3">3</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>33</td>
+<td>360640</td>
+<td>4494570</td>
+<td>12.47</td>
+<td>[<a title="A. E. Brouwer, Bounds for binary constant weight codes." href="#3">3</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>34</td>
+<td>380868</td>
+<td>6422593</td>
+<td>16.87</td>
+<td>[<a title="A. E. Brouwer, Bounds for binary constant weight codes." href="#3">3</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>35</td>
+<td>409548</td>
+<td>9162403</td>
+<td>22.38</td>
+<td>[<a title="A. E. Brouwer, Bounds for binary constant weight codes." href="#3">3</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>36</td>
+<td>484568</td>
+<td>13017098</td>
+<td>26.87</td>
+<td>[<a title="A. E. Brouwer, Bounds for binary constant weight codes." href="#3">3</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>37</td>
+<td>494312</td>
+<td>18498316</td>
+<td>37.43</td>
+<td>[<a title="A. E. Brouwer, Bounds for binary constant weight codes." href="#3">3</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>38</td>
+<td>566652</td>
+<td>26496684</td>
+<td>46.77</td>
+<td>[<a title="A. E. Brouwer, Bounds for binary constant weight codes." href="#3">3</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>39</td>
+<td>755988</td>
+<td>37826766</td>
+<td>50.04</td>
+<td>[<a title="A. E. Brouwer, Bounds for binary constant weight codes." href="#3">3</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>40</td>
+<td>1064368</td>
+<td>53589200</td>
+<td>50.35</td>
+<td>[<a title="A. E. Brouwer, Bounds for binary constant weight codes." href="#3">3</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>41</td>
+<td>1170384</td>
+<td>76287040</td>
+<td>65.19</td>
+<td>[<a title="A. E. Brouwer, Bounds for binary constant weight codes." href="#3">3</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>42</td>
+<td>1250676</td>
+<td>108404055</td>
+<td>86.68</td>
+<td>[<a title="A. E. Brouwer, Bounds for binary constant weight codes." href="#3">3</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>43</td>
+<td>2060399</td>
+<td>153813582</td>
+<td>74.66</td>
+<td>[<a title="X. Sun and C. Wang, Sphere packing in dimensions 39 and 43 from the antipode construction, preprint, 2026, arXiv:2607.20359" href="#23">23</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>44</td>
+<td>2948552</td>
+<td>220788272</td>
+<td>74.89</td>
+<td>[<a title="Y. Edel, E. M. Rains, and N. J. A. Sloane, On kissing numbers in dimensions 32 to 128, Electron. J. Combin. 5 (1998), Research Paper 22, 5 pp." href="#6">6</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>45</td>
+<td>3047160</td>
+<td>316735249</td>
+<td>104.0</td>
+<td>[<a title="A. E. Brouwer, Bounds for binary constant weight codes." href="#3">3</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>46</td>
+<td>5318060</td>
+<td>441900184</td>
+<td>83.10</td>
+<td>[<a title="A. E. Brouwer, Bounds for binary constant weight codes." href="#3">3</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>47</td>
+<td>9741412</td>
+<td>621658419</td>
+<td>63.82</td>
+<td>[<a title="A. E. Brouwer, Bounds for binary constant weight codes." href="#3">3</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>48</td>
+<td>52416000</td>
+<td>867897072</td>
+<td>16.56</td>
+<td>[<a title="J. Leech and N. J. A. Sloane, Sphere packings and error-correcting codes, Canadian J. Math. 23 (1971), 718–745." href="#13">13</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+<tr>
+<td>72</td>
+<td>6218175600</td>
+<td>2545617287927</td>
+<td>409.4</td>
+<td>[<a title="G. Nebe, An even unimodular 72-dimensional lattice of minimum 8, J. Reine Angew. Math. 673 (2012), 237–247." href="#19">19</a>, <a title="D. de Laat and N. Leijenhorst, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534." href="#10">10</a>]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>References</h3>
+<ol>
+<li id="1">E. S. Barnes and G. E. Wall, <em>Some extreme forms defined in terms of Abelian groups</em>, J. Austral. Math. Soc. <b>1</b> (1959), 47–63, doi:<a href="https://doi.org/10.1017/S1446788700025064">10.1017/S1446788700025064</a>.</li>
+<li id="2">F. Bianchi, Y. Kwon, A. Pappu, and J. Zou, <em>Harnessing the collective intelligence of AI agents in the wild for new discoveries</em>, preprint, 2026, arXiv:<a href="https://www.arxiv.org/abs/2606.10402">2606.10402</a>.</li>
+<li id="3">A. E. Brouwer, <em>Bounds for binary constant weight codes</em>, <a href="https://www.win.tue.nl/~aeb/codes/Andw.html">https://www.win.tue.nl/~aeb/codes/Andw.html</a>.</li>
+<li id="4">H. Cohn and A. Li, <em>Improved kissing numbers in seventeen through twenty-one dimensions</em>, preprint, 2024, arXiv:<a href="https://www.arxiv.org/abs/2411.04916">2411.04916</a>.</li>
+<li id="5">J. H. Conway and N. J. A. Sloane, <em>Sphere packings, lattices and groups</em>, third edition, Grundlehren der Mathematischen Wissenschaften <b>290</b>, Springer-Verlag, New York, 1999, doi:<a href="https://doi.org/10.1007/978-1-4757-6568-7">10.1007/978-1-4757-6568-7</a>.</li>
+<li id="6">Y. Edel, E. M. Rains, and N. J. A. Sloane, <em>On kissing numbers in dimensions 32 to 128</em>, Electron. J. Combin. <b>5</b> (1998), Research Paper 22, 5 pp., doi:<a href="https://doi.org/10.37236/1360">10.37236/1360</a>, arXiv:<a href="https://www.arxiv.org/abs/math/0207291">math/0207291</a>.</li>
+<li id="7">M. Ganzhinov, <em>Highly symmetric lines</em>, Linear Algebra Appl. <b>722</b> (2025), 12–37, doi:<a href="https://doi.org/10.1016/j.laa.2025.05.002">10.1016/j.laa.2025.05.002</a>.</li>
+<li id="8">B. S. Ho, <em>A new lower bound for the kissing number in 19 dimensions</em>, preprint, 2026, arXiv:<a href="https://www.arxiv.org/abs/2603.10425">2603.10425</a>.</li>
+<li id="9">A. Korkine and G. Zolotareff, <em>Sur les formes quadratiques</em>, Math. Ann. <b>6</b> (1873), 366–389, doi:<a href="https://doi.org/10.1007/BF01442795">10.1007/BF01442795</a>.</li>
+<li id="10">D. de Laat and N. Leijenhorst, <em>Solving clustered low-rank semidefinite programs arising from polynomial optimization</em>, Math. Program. Comput. <b>16</b> (2024), no. 3, 503–534, doi:<a href="https://doi.org/10.1007/s12532-024-00264-w">10.1007/s12532-024-00264-w</a>.</li>
+<li id="11">D. de Laat, N. Leijenhorst, and W. H. H. de Muinck Keizer, <em>Optimality and uniqueness of the D<sub>4</sub> root system</em>, preprint, 2024, arXiv:<a href="https://www.arxiv.org/abs/2404.18794">2404.18794</a>.</li>
+<li id="12">J. Leech, <em>Notes on sphere packings</em>, Canadian J. Math. <b>19</b> (1967), 251–267, doi:<a href="https://doi.org/10.4153/CJM-1967-017-0">10.4153/CJM-1967-017-0</a>.</li>
+<li id="13">J. Leech and N. J. A. Sloane, <em>Sphere packings and error-correcting codes</em>, Canadian J. Math. <b>23</b> (1971), 718–745, doi:<a href="https://doi.org/10.4153/CJM-1971-081-3">10.4153/CJM-1971-081-3</a>.</li>
+<li id="14">V. I. Leven&scaron;te&#301;n, <em>On bounds for packings in <em>n</em>-dimensional Euclidean space</em> (Russian), Dokl. Akad. Nauk SSSR <b>245</b> (1979), 1299–1303; English translation in Soviet Math. Dokl. 20 (1979), 417–421.</li>
+<li id="15">C. Ma, T. Tao Z., P. Li, M. Liu, H. Chen, Z. Mao, Y. Cheng, Y. Qi, and Y. Yang, <em>Finding kissing numbers with game-theoretic reinforcement learning</em>, preprint, 2025, arXiv:<a href="https://www.arxiv.org/abs/2511.13391">2511.13391</a>.</li>
+<li id="16">F. C. Machado and F. M. de Oliveira Filho, <em>Improving the semidefinite programming bound for the kissing number by exploiting polynomial symmetry</em>, Exp. Math. <b>27</b> (2018), 362–369, doi:<a href="https://doi.org/10.1080/10586458.2017.1286273">10.1080/10586458.2017.1286273</a>, arXiv:<a href="https://www.arxiv.org/abs/1609.05167">1609.05167</a>.</li>
+<li id="17">H. D. Mittelmann and F. Vallentin, <em>High-accuracy semidefinite programming bounds for kissing numbers</em>, Experiment. Math. <b>19</b> (2010), 175–179, doi:<a href="https://doi.org/10.1080/10586458.2010.10129070">10.1080/10586458.2010.10129070</a>, arXiv:<a href="https://www.arxiv.org/abs/0902.1105">0902.1105</a>.</li>
+<li id="18">O. R. Musin, <em>The kissing number in four dimensions</em>, Ann. of Math. (2) <b>168</b> (2008), 1–32, doi:<a href="https://doi.org/10.4007/annals.2008.168.1">10.4007/annals.2008.168.1</a>, arXiv:<a href="https://www.arxiv.org/abs/math/0309430">math/0309430</a>.</li>
+<li id="19">G. Nebe, <em>An even unimodular 72-dimensional lattice of minimum 8</em>, J. Reine Angew. Math. <b>673</b> (2012), 237–247, doi:<a href="https://doi.org/10.1515/crelle.2011.175">10.1515/crelle.2011.175</a>, arXiv:<a href="https://www.arxiv.org/abs/1008.2862">1008.2862</a>.</li>
+<li id="20">A. M. Odlyzko and N. J. A. Sloane, <em>New bounds on the number of unit spheres that can touch a unit sphere in n dimensions</em>, J. Combin. Theory Ser. A <b>26</b> (1979), 210–214, doi:<a href="https://doi.org/10.1016/0097-3165(79)90074-8">10.1016/0097-3165(79)90074-8</a>.</li>
+<li id="21">L. Schl&auml;fli, <em>Theorie der vielfachen Kontinuit&auml;t</em> [1852], Denkschriften der Schweizerischen naturforschenden Gesellschaft, vol. 38, J. H. Graf, Bern, 1901.</li>
+<li id="22">K. Sch&uuml;tte and B. L. van der Waerden, <em>Das Problem der dreizehn Kugeln</em>, Math. Ann. <b>125</b> (1953), 325–334, doi:<a href="https://doi.org/10.1007/BF01343127">10.1007/BF01343127</a>.</li>
+<li id="23">X. Sun and C. Wang, <em>Sphere packing in dimensions 39 and 43 from the antipode construction</em>, preprint, 2026, arXiv:<a href="https://www.arxiv.org/abs/2607.20359">2607.20359</a>.</li>
+<li id="24">R. Takhanov, Z. Assylbekov, and S. Yun, <em>Structure of kissing arrangements in &Ropf;<sup>12</sup> and a place for the 841st sphere</em>, preprint, 2026, arXiv:<a href="https://www.arxiv.org/abs/2606.18984">2606.18984</a>.</li>
+<li id="25">V. A. Zinoviev and T. Ericson, <em>New lower bounds for contact numbers in small dimensions</em> (Russian), Problemy Peredachi Informatsii <b>35</b> (1999), 3–11; English translation in Problems Inform. Transmission 35 (1999), 287–294.</li>
+</ol>
+
+		
+			</div><!-- .entry-content -->
+
+	</article><!-- #post-## -->
+
+												</main><!-- #main -->
+
+			<!-- Do the right sidebar check -->
+			
+</div><!-- #closing the primary container from /templates/global-templates/left-sidebar-check.php -->
+
+		</div><!-- .row -->
+	</div><!-- #content -->
+</div><!-- #page-wrapper -->
+
+
+
+
+<footer class="wrapper has-background has-footer-main-bg-color-background-color" id="wrapper-footer">
+	<div id="footer-content">
+		
+
+		
+		<div class="mit-footer">
+			<a class="mit-footer__logo" href="https://www.mit.edu/">
+    <img src="https://cohn.mit.edu/wp-content/themes/mit-flex/img/mit_logo_std_rgb_white.png?ver=2" alt="MIT Logo" width="100">
+</a>
+
+<p><strong>Massachusetts Institute of Technology</strong><br/>77 Massachusetts Avenue, Cambridge, MA, USA</p>
+<p class="mit-footer__links">
+    <a href="https://accessibility.mit.edu/">Accessibility</a>
+</p>		</div>
+	</div>
+
+	<div id="footer-image-holder">
+			</div>
+</footer><!-- wrapper end -->
+
+</div><!-- #page we need this extra closing tag here -->
+
+
+<div id="modal-slide-in-menu" class="modal fade modal-slide-in-right modal-full-height nav-styling-underline" tabindex="-1" role="dialog" aria-label="slide-in menu" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content has-background has-header-main-bg-color-background-color">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<i aria-hidden="true" class="cps-icon cps-icon-close"></i>
+					<span class="sr-only">close menu</span>
+				</button>
+			</div>
+			<div class="modal-body">
+									<nav class="menu-mobile" aria-label="Mobile" role="navigation">
+						<div class="menu-main-menu-container"><ul id="menu-main-mobile" class="nav flex-column"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-83 nav-item"><a class="nav-link" title="Home" href="https://cohn.mit.edu/"><span class="menu-item-text">Home</span></a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88 nav-item"><a class="nav-link" title="Publications" href="https://cohn.mit.edu/publications/"><span class="menu-item-text">Publications</span></a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-184 nav-item"><a class="nav-link" title="Data" href="https://cohn.mit.edu/data/"><span class="menu-item-text">Data</span></a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-162 nav-item"><a class="nav-link" title="Teaching" href="https://cohn.mit.edu/teaching/"><span class="menu-item-text">Teaching</span></a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-165 nav-item"><a class="nav-link" title="Miscellaneous" href="https://cohn.mit.edu/miscellaneous/"><span class="menu-item-text">Miscellaneous</span></a></li>
+</ul></div>
+					</nav>
+								</div>
+		</div>
+	</div>
+</div><!-- #modal-slide-in-menu -->
+<div id="modal-search" class="modal fade modal-slide-in-top modal-close-inline modal-site-width modal-padding-lg" tabindex="-1" role="dialog" aria-label="search" aria-hidden="true">
+	<div class="modal-dialog site-width-max" role="document">
+		<div class="modal-content has-background has-header-main-bg-color-background-color">
+			<div class="modal-header pb-0">
+				<button type="button" class="close" data-dismiss="modal">
+					<i aria-hidden="true" class="cps-icon cps-icon-close"></i>
+					<span class="sr-only">close search</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				
+<form method="get" id="searchform" action="https://cohn.mit.edu/" role="search">
+	<label class="sr-only" for="searchform-s">Search</label>
+	<div class="input-group">
+		<input class="field form-control form-control-lg" id="searchform-s" name="s" type="text" placeholder="Search..." value="">
+		<span class="input-group-append">
+			<button class="submit btn btn-primary btn-lg" id="searchform-submit" type="submit">
+				<i aria-hidden="true" class="cps-icon cps-icon-search"></i>
+				<span class="sr-only">Search Site</span>
+			</button>
+		</span>
+	</div>
+</form>
+			</div>
+		</div>
+	</div>
+</div><!-- #modal-search -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/files/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/mit-flex/*","/wp-content/themes/cpschool/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="blog_templates_front-js-extra">
+var blog_templates_params = {"type":"screenshot_plus"};
+//# sourceURL=blog_templates_front-js-extra
+</script>
+<script id="blog_templates_front-js" src="https://cohn.mit.edu/wp-content/plugins/blogtemplates//blogtemplatesfiles/assets/js/front.js?ver=2.6.8.2"></script>
+<script id="coblocks-animation-js" src="https://cohn.mit.edu/wp-content/plugins/coblocks/dist/js/coblocks-animation.js?ver=3.1.17.1"></script>
+<script id="aos-js" src="https://cohn.mit.edu/wp-content/themes/cpschool/js/aos.js?ver=1.1582726405"></script>
+<script id="cpschool-scripts-js-extra">
+var cpSchoolData = {"parallaxHeader":"","animations":"1"};
+//# sourceURL=cpschool-scripts-js-extra
+</script>
+<script id="cpschool-scripts-js" src="https://cohn.mit.edu/wp-content/themes/cpschool/js/theme.min.js?ver=1.1772529760"></script>
+<script id="cpsc-scripts-js-extra">
+var cpsc = {"ajax_url":"https://cohn.mit.edu/wp-admin/admin-ajax.php"};
+//# sourceURL=cpsc-scripts-js-extra
+</script>
+<script id="cpsc-scripts-js" src="https://cohn.mit.edu/wp-content/themes/mit-flex/js/theme.min.js?ver=1729080718"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://cohn.mit.edu/wp-includes/js/wp-emoji-release.min.js?ver=7.0.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://cohn.mit.edu/wp-includes/js/wp-emoji-loader.min.js
+</script>
+
+</body>
+
+</html>

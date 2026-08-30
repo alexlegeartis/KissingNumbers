@@ -1,0 +1,46 @@
+Exact verification of the cap-direction configurations and their partitions, k = 9..23.
+
+For dimension 72 + k the cap layer needs a kissing configuration W of R^k partitioned into
+parts that are internally at cosine <= -1/2.  A part has at most 3 elements (n unit vectors
+pairwise at cos <= -1/2 satisfy n <= 1 + 1/(1/2) = 3) and a 3-element part is a ZERO-SUM
+TRIPLE.  The gain is 2 * sum_i |C_i| * (|Z_i| - 1), so a triple is worth 4 per class line and
+a pair 2.
+
+Everything below is integer arithmetic; no tolerance is used anywhere.  Two storage
+conventions appear:
+
+  lam<k>_W.npy          integer coordinates, the plain dot product is the true one
+  rec_<k>_W.npy + _c    integer coordinates with integer inner-product coefficients c,
+                        so <x,y> = sum_i c_i x_i y_i   (Cohn's dimensions1-24.txt convention)
+  kap<k>_W.npy + _c     the same convention, for the Kappa sections K_12 and K_13 that
+                        scripts/kappa_caps.py derives -- 756 and 918 vectors against
+                        Lambda_12's 648 and Lambda_13's 906, so 252 and 306 triples
+                        against 216 and 302
+
+CHECKS, for every k:
+  * every vector distinct, and the configuration spans exactly k dimensions;
+  * 60-degree code: for every pair, 4<x,y>^2 <= |x|^2 |y|^2 whenever <x,y> > 0;
+  * every triple sums to zero and has all three inner products equal to -|x|^2/2;
+  * every pair part has <x,y> < 0 and 4<x,y>^2 >= |x|^2 |y|^2, i.e. cos <= -1/2;
+  * the parts are disjoint and 3T + 2P + S = |W|.
+
+    python verify_parts.py
+
+   k   source    |W|    span  triples  pairs  singles   units   3T+2P+S = |W|
+   9   record      306     9     102      0      0      204   True
+  10   record      510    10     170      0      0      340   True
+  11   lattice     438    11     146      0      0      292   True
+  12   kappa       756    12     252      0      0      504   True
+  13   kappa       918    13     306      0      0      612   True
+  14   record     1932    14     644      0      0     1288   True
+  15   lattice    2340    15     780      0      0     1560   True
+  16   lattice    4320    16    1440      0      0     2880   True
+  17   lattice    5346    17    1782      0      0     3564   True
+  18   lattice    7398    18    2466      0      0     4932   True
+  19   lattice   10668    19    3556      0      0     7112   True
+  20   lattice   17400    20    5800      0      0    11600   True
+  21   lattice   27720    21    9240      0      0    18480   True
+  22   lattice   49896    22   16632      0      0    33264   True
+  23   lattice   93150    23   31050      0      0    62100   True
+
+ALL 15 CONFIGURATIONS AND PARTITIONS VERIFIED EXACTLY

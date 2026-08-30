@@ -1,0 +1,152 @@
+[
+ {
+  "dim": 49,
+  "k": 1,
+  "lam": 1,
+  "S": 7069,
+  "gain": 14140,
+  "value": 52430140,
+  "previous": 52416002,
+  "family": "class_sizes_p48.npy"
+ },
+ {
+  "dim": 50,
+  "k": 2,
+  "lam": 3,
+  "S": 21206,
+  "gain": 42418,
+  "value": 52458418,
+  "previous": 52416006,
+  "family": "class_sizes_p48.npy"
+ },
+ {
+  "dim": 51,
+  "k": 3,
+  "lam": 6,
+  "S": 42402,
+  "gain": 84816,
+  "value": 52500816,
+  "previous": 52416012,
+  "family": "class_sizes_p48.npy"
+ },
+ {
+  "dim": 52,
+  "k": 4,
+  "lam": 12,
+  "S": 84746,
+  "gain": 169516,
+  "value": 52585516,
+  "previous": 52416024,
+  "family": "class_sizes_p48.npy"
+ },
+ {
+  "dim": 53,
+  "k": 5,
+  "lam": 20,
+  "S": 141091,
+  "gain": 282222,
+  "value": 52698222,
+  "previous": 52416040,
+  "family": "class_sizes_p48.npy"
+ },
+ {
+  "dim": 54,
+  "k": 6,
+  "lam": 36,
+  "S": 253417,
+  "gain": 506906,
+  "value": 52922906,
+  "previous": 52416072,
+  "family": "class_sizes_p48.npy"
+ },
+ {
+  "dim": 55,
+  "k": 7,
+  "lam": 63,
+  "S": 441802,
+  "gain": 883730,
+  "value": 53299730,
+  "previous": 52416126,
+  "family": "class_sizes_p48.npy"
+ },
+ {
+  "dim": 56,
+  "k": 8,
+  "lam": 120,
+  "S": 834576,
+  "gain": 1669392,
+  "value": 54085392,
+  "previous": 52416240,
+  "family": "class_sizes_p48.npy"
+ },
+ {
+  "dim": 57,
+  "k": 9,
+  "lam": 153,
+  "S": 1058935,
+  "gain": 2118176,
+  "value": 54534176,
+  "previous": 52416306,
+  "family": "class_sizes_p48.npy"
+ },
+ {
+  "dim": 58,
+  "k": 10,
+  "lam": 255,
+  "S": 1738456,
+  "gain": 3477422,
+  "value": 55893422,
+  "previous": 52416510,
+  "family": "class_sizes_p48.npy"
+ },
+ {
+  "dim": 59,
+  "k": 11,
+  "lam": 302,
+  "S": 2044532,
+  "gain": 4089668,
+  "value": 56505668,
+  "previous": 52416604,
+  "family": "class_sizes_p48.npy"
+ },
+ {
+  "dim": 60,
+  "k": 12,
+  "lam": 378,
+  "S": 2530141,
+  "gain": 5061123,
+  "value": 57477123,
+  "previous": 52416841,
+  "family": "class_sizes_p48.npy"
+ },
+ {
+  "dim": 61,
+  "k": 13,
+  "lam": 577,
+  "S": 3740770,
+  "gain": 7482694,
+  "value": 59898694,
+  "previous": 52417154,
+  "family": "class_sizes_p48.npy"
+ },
+ {
+  "dim": 62,
+  "k": 14,
+  "lam": 966,
+  "S": 5899945,
+  "gain": 11801822,
+  "value": 64217822,
+  "previous": 52417932,
+  "family": "class_sizes_p48.npy"
+ },
+ {
+  "dim": 63,
+  "k": 15,
+  "lam": 1282,
+  "S": 7473594,
+  "gain": 14949752,
+  "value": 67365752,
+  "previous": 52418564,
+  "family": "class_sizes_p48.npy"
+ }
+]

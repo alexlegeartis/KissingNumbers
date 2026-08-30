@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# scratch directory the self-test creates and removes
+selftest-tmp/
+
+# LaTeX build products (paper/kissing27.pdf itself is tracked)
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk

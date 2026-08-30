@@ -1,0 +1,23 @@
+alpha(G_0) exactly -- the number that decides dimension 19.
+
+maxbip(G_0) <= 2*alpha(G_0), and Ho's record is maxbip(G_0) = 320.  So alpha(G_0) = 160 closes
+dimension 19 at tau(19) = 11948, while alpha(G_0) >= 161 is the only door left open.
+alpha(G_1) = 80 was proven optimal on the 256-vertex quotient, giving alpha(G_0) >= 160; the
+lift cannot do better because |A|, |B| <= alpha(G_1) caps that family at 2*160 = 320 exactly.
+
+Three strengthenings make the 512-vertex model tractable where the plain one stalls:
+
+  * vertex-transitivity: fix vertex 0 in the set;
+  * maximality: every maximum independent set is maximal, so each vertex is in the set or has
+    a neighbour in it;
+  * girth 5: G_0 is triangle-free with no 4-cycles, so every 5-cycle carries at most two
+    chosen vertices -- a large family of genuinely tight cuts that edge constraints miss.
+
+    python alpha512.py [seconds] [max5cycles]
+
+G_0: 512 vertices, 20-regular
+5-cycle cuts added: 40000
+
+alpha(G_0): best 160, proven upper bound 160, status OPTIMAL
+=> maxbip(G_0) <= 2*160 = 320   (Ho's record is 320)
+*** DIMENSION 19 IS CLOSED: tau(19) = 11948 is the ceiling of this construction ***
