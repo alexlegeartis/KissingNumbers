@@ -1,7 +1,7 @@
 # `paper/` — the write-up, and the three checkers that hold it to the repository
 
 [`kissing46.tex`](kissing46.tex) — *New lower bounds for kissing numbers in dimensions 25
-through 96*. 35 pages, `amsart`, no packages beyond `amssymb`, `amsmath`, `booktabs`,
+through 96*. 37 pages, `amsart`, no packages beyond `amssymb`, `amsmath`, `booktabs`,
 `longtable` and `hyperref`. References are [`kissing46.bib`](kissing46.bib), formatted with
 `amsplain`, so a full build is
 
@@ -13,7 +13,7 @@ pdflatex kissing46 && bibtex kissing46 && pdflatex kissing46 && pdflatex kissing
 build without `bibtex` reads, and without it one `pdflatex` pass prints `[?]` for all
 forty-five citations. [`kissing46.pdf`](kissing46.pdf) is a build of the `.tex` beside it, kept for convenience.
 Nothing here checks a PDF against its source — rebuild with the command above if you want
-to confirm it; the build is 35 pages with no warnings.
+to confirm it; the build is 37 pages with no warnings.
 
 ## The checkers
 
@@ -27,7 +27,7 @@ python formulas.py       # every formula in the paper, re-derived with sympy
 python style_scan.py -v  # the prose faults listed in the writing guidelines
 ```
 
-`factcheck.py` (660 checks) does not parse the repository's conclusions, it **re-derives**
+`factcheck.py` (665 checks) does not parse the repository's conclusions, it **re-derives**
 them: the moment identities, the count of the layered construction, Caro–Wei, the
 Edel–Rains–Sloane totals, the bound on independent sets, and every entry of Tables 1, 3 and 4.
 `formulas.py` (257 checks) checks the *algebra* rather than the numbers — the moment identity

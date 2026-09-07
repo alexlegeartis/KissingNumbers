@@ -25,7 +25,7 @@ C_i, and every head is deleted from the equator, so
           = 196560 + 2*sum |C_i| * (|Z_i| - 1) + #poles.
 
 THE CLASS is the real one: the 248 lines (496 vectors) of the published dimension-27
-configuration, read from ../../dim27-triple-partition/data/construction.json.  Distinct
+configuration, read from ../../../superseded/dim27-triple-partition/data/construction.json.  Distinct
 parts get distinct classes; five 496-vector classes are available there, so k <= 5 uses
 five genuinely different classes and k = 6, 7 reuses them cyclically -- which is legitimate
 only if the reused copies are disjoint, and they are not, so for k >= 6 the script checks
@@ -46,7 +46,8 @@ the two cases where an explicit pole set is to hand:
 For k >= 2 the pole count tau(k) is taken from the published record -- it is not a
 claim of this project, it is what Cohn's data set already contains -- and the coordinate
 build simply omits them.  The full 200540-point dimension-27 configuration, poles included,
-is verified pair by pair in ../../dim27-triple-partition/.
+is verified pair by pair in ../../../superseded/dim27-triple-partition/ (superseded in its own
+dimension by dim26-27-iota-triangles on 2026-09-08; the calibration reads the old configuration).
 
     python calibrate.py            # ~3 min, needs numpy
 
@@ -66,7 +67,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from triples import roots, triple_partition            # noqa: E402
 
-CLASSJSON = os.path.join(HERE, '..', '..', 'dim27-triple-partition', 'data',
+CLASSJSON = os.path.join(HERE, '..', '..', '..', 'superseded', 'dim27-triple-partition', 'data',
                          'construction.json')
 GOLAY = os.path.join(HERE, '..', '..', '..', '..', 'common', 'data', 'golay_basis.txt')
 

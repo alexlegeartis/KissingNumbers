@@ -2,7 +2,7 @@
 """The best known lower bound on tau(n) for every n from 48 to 96, with its source.
 
 Cohn's table has 48 and 72 and NOTHING in between or after.  This fills the gap from the
-three places the answer actually lives: this repository's 47 claims, the direct-sum /
+three places the answer actually lives: this repository's 48 claims, the direct-sum /
 monotonicity floors of common/published.py where nothing is claimed, and -- at n = 96 --
 Edel-Rains-Sloane, which takes over there.
 

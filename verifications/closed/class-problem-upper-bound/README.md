@@ -13,7 +13,7 @@ line gives +2, +8, +16, +32, +52, +96, +168 points in dimensions 25…31 respect
 (Per extra *vector* the figures are half of those, +1, +4, +8, +16, +26, +48, +84; a line is
 an antipodal pair, so mind which unit is meant.) See
 [`../../improved/dim25-cap-level/`](../../improved/dim25-cap-level/) and
-[`../../improved/dim27-triple-partition/`](../../improved/dim27-triple-partition/), both of
+[`../../superseded/dim27-triple-partition/`](../../superseded/dim27-triple-partition/), both of
 which are +2 and +496 on *whatever* the best class turns out to be.
 
 **Two questions were attacked — beat 248, or beat 425. Neither moved.** But both are now

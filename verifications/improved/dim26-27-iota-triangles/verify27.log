@@ -1,0 +1,8 @@
+  heads 2216 = 2210 class + 6 free; owners distinct
+  side-pair thresholds (Cohn units): [[48, 96, 96, 96], [96, 48, 96, 96], [96, 96, 48, 96], [96, 96, 96, 48]]
+  all 2454220 head pairs admissible; 247125 at the bound
+  head-axis maximum inner product sqrt(3)*(sqrt(2) + 2)/3 = 1.971197 (bound 2)
+  12 axis points of norm 4, pairwise inner product <= 2
+  count = 196560 - 2210 + 3 * 2216 + 12 = 201010
+ALL CHECKS PASS   K(27) >= 201010
+exit 0

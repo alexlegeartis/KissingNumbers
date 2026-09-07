@@ -13,13 +13,13 @@ verifications/closed/dim09-19-record-maximality/c[0-9]*.npy
 verifications/closed/dim17-layered-family/scripts/c[0-9]*.npy
 
 # LaTeX build products of the standalone dimension-27 paper (its .pdf is tracked)
-verifications/improved/dim27-triple-partition/paper/*.aux
-verifications/improved/dim27-triple-partition/paper/*.bbl
-verifications/improved/dim27-triple-partition/paper/*.blg
-verifications/improved/dim27-triple-partition/paper/*.log
-verifications/improved/dim27-triple-partition/paper/*.out
-verifications/improved/dim27-triple-partition/paper/*.toc
-verifications/improved/dim27-triple-partition/paper/*.synctex.gz
+verifications/superseded/dim27-triple-partition/paper/*.aux
+verifications/superseded/dim27-triple-partition/paper/*.bbl
+verifications/superseded/dim27-triple-partition/paper/*.blg
+verifications/superseded/dim27-triple-partition/paper/*.log
+verifications/superseded/dim27-triple-partition/paper/*.out
+verifications/superseded/dim27-triple-partition/paper/*.toc
+verifications/superseded/dim27-triple-partition/paper/*.synctex.gz
 
 # LaTeX build products of the manuscript.  Its .pdf and its .bbl are BOTH tracked: the .bbl
 # is generated, but it is what a reviewer's build reads when bibtex is not installed, and

@@ -5,7 +5,7 @@ according to what is currently true about it. The distinction is the point of th
 a repository that only shows its wins is much less useful to the next person than one that
 shows where the doors are shut.
 
-## [`improved/`](improved/) — 46 dimensions, currently the best known
+## [`improved/`](improved/) — 47 dimensions, currently the best known
 
 Nine packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
@@ -14,7 +14,7 @@ file, and the history of the lower bound in its dimensions.
 | package | dims | status |
 |---|---|---|
 | [`dim25-lens-heads`](improved/dim25-lens-heads/) | 25 | apparently new — joint work in progress with H. Cohn and B. Lindow; 1006 lens heads, one non-lattice equator point |
-| [`dim27-triple-partition`](improved/dim27-triple-partition/) | 27 | apparently new |
+| [`dim26-27-iota-triangles`](improved/dim26-27-iota-triangles/) | 26, 27 | apparently new — joint work in progress with H. Cohn and B. Lindow; the coset triangle on every triangle of directions, the side chosen per head |
 | [`dim38-leech-large-codimension`](improved/dim38-leech-large-codimension/) | 38 | apparently new |
 | [`dim39-ers-constant-weight`](improved/dim39-ers-constant-weight/) | 39 | apparently new — but check Sun–Wang's latest revision |
 | [`dim49-63-p48-caps`](improved/dim49-63-p48-caps/) | 49–63 | apparently new — 62 and 63 are reached here too, but claimed from the chain below |
@@ -74,14 +74,15 @@ standing is Edel–Rains–Sloane's rather than this project's.
 
 1. [`../README.md`](../README.md) and [`../RESULTS.md`](../RESULTS.md) — what is claimed.
 2. `python ../audit.py` — that the claims are mutually consistent.
-3. [`improved/dim27-triple-partition/`](improved/dim27-triple-partition/) — the smallest
+3. [`superseded/dim27-triple-partition/`](superseded/dim27-triple-partition/) — the smallest
    complete package, verifiable from a coordinate file alone with no third-party packages.
-   It is the model the others aim at.
+   It is the model the others aim at, and since 2026-09-08 it is superseded in its own
+   dimension by [`improved/dim26-27-iota-triangles/`](improved/dim26-27-iota-triangles/).
 4. [`../common/PROOF-kpoint.md`](../common/PROOF-kpoint.md) — the mathematics behind the four
    cross-section claims, dimensions 68 to 71, and behind the recovered 46 and 47.
 5. `closed/` — before starting anything, to find out whether it is already known to be dead.
 6. [`closed/dim17-layered-family/`](closed/dim17-layered-family/) — the best worked example of
    the repository's most useful habit: when a search will not converge, stop searching and ask
    what structure the object has. The answer was "it is a group".
-7. [`../KNOWLEDGE.md`](../KNOWLEDGE.md) — 124 sections of working notes, most of
+7. [`../KNOWLEDGE.md`](../KNOWLEDGE.md) — 125 sections of working notes, most of
    them about things that did not work.

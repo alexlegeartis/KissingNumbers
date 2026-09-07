@@ -281,7 +281,7 @@ is already in Cohn's table, with the real 248-line class:
 Five exact reproductions, and the two dimensions where it differs are **precisely the two
 records this project already holds by independent, fully verified routes**
 ([`../dim25-cap-level/`](../dim25-cap-level/) and
-[`../dim27-triple-partition/`](../dim27-triple-partition/)). The script also builds the
+[`../../superseded/dim27-triple-partition/`](../../superseded/dim27-triple-partition/)). The script also builds the
 equator and caps in real coordinates at every k and confirms the largest pairwise inner
 product is exactly 1/2.
 

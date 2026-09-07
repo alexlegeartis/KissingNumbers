@@ -32,7 +32,7 @@ own, which used to be reported as a skip inside a run that reported 0 FAILED.
 
 MEMORY.  Two of the `--full` jobs are memory-hungry and are better run on their own:
 
-    verifications/improved/dim27-triple-partition/scripts/verify_exhaustive.py    (all
+    verifications/superseded/dim27-triple-partition/scripts/verify_exhaustive.py    (all
         20 108 045 530 pairs, blocked, but the blocks are large)
     verifications/improved/dim49-63-p48-caps/scripts/regenerate.py                (~4 GB)
 
@@ -65,7 +65,7 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
-    ("audit: all 47 claims, mutual and external consistency",
+    ("audit: all 48 claims, mutual and external consistency",
      HERE, ['audit.py'], 0.1, True),
     ("common: extremal theta series and one-point distributions",
      os.path.join(HERE, 'common'), ['theta.py'], 0.1, True),
@@ -95,21 +95,13 @@ JOBS = [
      os.path.join(V, 'improved', 'dim25-lens-heads'), ['verify.py'], 4.0, True),
     ("dim 25: the same, as an independent floating-point net over all 197569 points",
      os.path.join(V, 'improved', 'dim25-lens-heads'), ['fullcheck.py'], 2.0, True),
-    ("dim 27: the SHA-256 manifest of the whole package",
-     os.path.join(V, 'improved', 'dim27-triple-partition'),
-     ['scripts/verify_manifest.py'], 0.1, True),
-    ("dim 27: the 200540-point configuration, exactly",
-     os.path.join(V, 'improved', 'dim27-triple-partition'),
+    ("dim 26: the 199632-point two-triangle configuration, exactly",
+     os.path.join(V, 'improved', 'dim26-27-iota-triangles'), ['verify26.py'], 1.0, True),
+    ("dim 27: the 201010-point two-triangle configuration, exactly",
+     os.path.join(V, 'improved', 'dim26-27-iota-triangles'), ['verify27.py'], 2.0, True),
+    ("superseded 27: the 200540-point triple-partition configuration, from its coordinate file",
+     os.path.join(V, 'superseded', 'dim27-triple-partition'),
      ['scripts/verify_configuration.py'], 0.2, True),
-    ("dim 27: the paper's finite claims",
-     os.path.join(V, 'improved', 'dim27-triple-partition'),
-     ['scripts/verify_paper_claims.py'], 0.2, True),
-    ("dim 27: all 20 108 045 530 pairs",
-     os.path.join(V, 'improved', 'dim27-triple-partition'),
-     ['scripts/verify_exhaustive.py'], 7.0, False),
-    ("dim 27: fifteen negative controls",
-     os.path.join(V, 'improved', 'dim27-triple-partition'),
-     ['scripts/selftest.py'], 4.0, False),
     ("dim 38: the Leech cap construction at codimension 14",
      os.path.join(V, 'improved', 'dim38-leech-large-codimension'),
      ['scripts/verify.py'], 0.2, True),

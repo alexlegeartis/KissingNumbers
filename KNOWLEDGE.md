@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **124 sections, about 8087 lines**, written as the
+The full working record of the project: **125 sections, about 8180 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -17,9 +17,9 @@ The authoritative current statements are [`RESULTS.md`](RESULTS.md), which is ge
 
 ### Reading it
 
-The headings are numbered 1 to 125 with **no section 87** — a number was skipped, not a
+The headings are numbered 1 to 126 with **no section 87** — a number was skipped, not a
 section removed, and nothing in the repository refers to it. That is why the count above is
-124 and the last heading reads 125.
+125 and the last heading reads 126.
 
 It is roughly chronological, so later sections supersede earlier ones. Where they conflict,
 **the later section wins** — and where a section is superseded, it usually says so. Some
@@ -33,7 +33,7 @@ specific warnings:
   the project.
 - **Sections written before 2026-08-22 count dimensions 46 and 47 among the results.
   They are not claims, and removing them took that era's count from 46 to 44. The
-  current count is 47 claims -- dimensions 62, 63, 68, 69 and 96 came later -- so no
+  current count is 48 claims -- dimensions 62, 63, 68, 69, 96 and then 26 came later -- so no
   count in a dated section is comparable with today's. `RESULTS.md` is the authority.**
   Dimensions 46 and 47 were dropped on 2026-08-22: 23 766 960 is Boyvalenkov-
   Cherkashin, *Results in Mathematics* **80** (2025), Paper No. 3, equation (3) of
@@ -2118,8 +2118,8 @@ four of the values I first used were stale:
 Cohn-Li (arXiv:2411.04916), dimension 19 is Ho (arXiv:2603.10425), dimension 12 is
 Takhanov-Assylbekov-Yun (arXiv:2606.18984).
 
-**Running total: 47 dimensions improved** -- 25, 27, 38, 39, 45, 46, 47, 49-63, 70, 71,
-73-95.
+**Running total: 48 dimensions improved** -- 25-27, 38, 39, 49-63, 68-71, 73-96 (the count
+as of 2026-09-08; when this section was written it read 47 with 45, 46, 47 in and 26, 62, 63, 68, 69, 96 out).
 
 ## 48. Dimension 12: the record is **841**, and the whole two-block family is closed at 840
 
@@ -5475,7 +5475,7 @@ rather than keeping a second copy of the code tables -- a duplicated table is wh
 in three other places. Every chain input is a construction, so the floor is a LOWER bound on
 ERS: a claim below it is definitely not an improvement, a claim above it is not thereby safe,
 and the failure message says so. Level 0 survives only as a cross-check, since it is a term of
-the chain and `best_chain` must never come out below it. Coverage is all 47 claims, and four
+the chain and `best_chain` must never come out below it. Coverage is all 48 claims, and four
 of them -- 39, 62, 63 and 96 -- ARE the chain, so they EQUAL the floor rather than exceed it;
 4b has an equality branch for exactly that.
 
@@ -5642,7 +5642,7 @@ with the parts as triples.py tabulates them:
 
 Five exact reproductions of Cohn's table, and the two differences are this project's own two
 claims.  The parts cover the direction set exactly in every row (3T + 2P = |W|).  This is the
-arithmetic behind 39 of the 47 claims, and it is right.
+arithmetic behind 39 of the 48 claims, and it is right.
 
 ### Two new checks in the suite
 
@@ -8085,3 +8085,95 @@ bound **265006** (de Laat-Leijenhorst 2024 SDP, per Cohn's table), replacing the
   package now contains joint-project material; whether and when the repository is made
   public is the collaboration's call, and this section is the record that the question
   exists.
+
+## 126. Dimensions 26 and 27 released: tau(26) >= 199632 and tau(27) >= 201010 (2026-09-08)
+
+The day after section 125.  Asked to brainstorm dimension 26 from Cohn's and Lindow's
+letters and the dimension-25 work, the reduction turned out to be exact, and the objects
+already existed.  The package is `verifications/improved/dim26-27-iota-triangles/`; the old
+`dim27-triple-partition` (200540) moved to `verifications/superseded/`; `RESULTS.md` rows 26
+and 27 read **199632** and **201010** against the published 198550 and 200044 (Cohn's table;
+Ma et al. 2025).  Cohn's unpublished construction gives 198708 / 200640 and his search
+198774 / 200736.  The full account is section 8 of the note *Kissing configurations in
+dimensions 25, 26 and 27* in the working tree (`research/collab2531/paper25/`), whose
+`factcheck.py` (131 checks) and `formulas.py` (83) re-derive every figure and formula.
+
+### 126.1 The reduction
+
+Norm-4 units, points `(x, y)` with `y` in `R^k`.  With the axis points `(0, a)`, `|a| = 2`,
+a cap point needs `|y| <= sec(theta)` for the axis's covering radius `theta`: the hexagon
+(30 degrees) forces `|x|^2 >= 8/3`, with equality forcing `y` onto the six edge midpoints;
+a head at `|x|^2 = 8/3` carries a triangle of directions; and two caps `(x,y)`, `(x',y')`
+there are compatible iff `<x,x'> <= 2 - (4/3) cos(y,y')`: `2/3` on the same direction,
+`4/3` at 60 degrees, free at 120 and 180.  So dimension 26 is two head sets `X_A`, `X_B` at
+cosine `<= 1/4` (the dimension-25 condition at rho = 8/3) cross-constrained at cosine
+`<= 1/2`, and
+
+    tau(26) >= 196560 + 6 + 2 * (class heads) + 3 * (free heads),
+
+removals never shared (a level-9 head `y = 3u + v = 2u + w` removes `u` alone, and two on
+one owner have `<y,y'> >= 16 > 12`).  Cohn's construction is one coset class per side (1071
+heads); his search's 198774 is 198708 + 2 * 33, the 33 collisions recovered.
+
+### 126.2 The construction
+
+A zero-sum triangle of norm-6 vectors `v_1 + v_2 + v_3 = 0`, pairwise `-3`, carries 1656
+class heads `u + v_i/3`; on ONE side its exact optimum is 762 (section 12 of the working
+tree).  With the side a decision variable in the maximum-independent-set model (each head
+chooses triangle A, B or neither; pairs above 12 forbidden outright, pairs in (6, 12]
+forbidden on a common side), the optimum puts the SAME triangle on both sides: two disjoint
+762-sets, and the second is the image of the first under the involution
+`iota(u) = -v_i - u` on each block (761 of 762 owners; replacing it by `iota(S)` outright is
+admissible).  The reason is one line:
+
+    <3u + v, 3 iota(u') + v> = 15 - 9 <u,u'>   <= 12   iff   <u,u'> >= 1,
+
+so `S u iota(S)` works exactly when `S` is a two-distance set (inner products 1 and 2 only)
+inside each block; the solver's `S` is one, the section-12 set is not (it fails on cross-block
+pairs).  Over the 24-cell of leans (the 24 norm-6 vectors of the sublattice spanned by two such
+triangles, Gram 3 D_4, Lindow's object) the same programme keeps 2 * 762 and finds a sixth free
+head: 199632, verified.  Dimension 27: the cuboctahedron's twelve directions are four zero-sum
+triangles pairwise at 60 degrees; the axis is the cuboctahedron rotated 45 degrees about a
+coordinate axis (largest cosine to a direction `(2 + sqrt2)/4`, head-axis inner product
+`(2 + sqrt2)/sqrt3 = 1.9712 < 2`, Cohn's "wiggle room" as a number); two triangles with cross
+Gram the circulant of `(3, 0, -3)` on four sides give 2210 class + 6 free heads, the solver's
+bound 4448 against 4438 attained: 201010, verified.
+
+### 126.3 Measured and closed the same day
+
+* same-side lean PAIRS are worth 552 for every `<v,v'>`: the triangle is a three-body effect;
+* interior heads (the section-27 cost programme, two-sided) cost >= 11 on 80 owners, and 45
+  and up on the best-ranked ones, against 1-3 in dimension 25 -- every head sees both sides;
+* rotating the triangles buys nothing: cross inner products between triangles with
+  `C in {0, +-3}` are multiples of 3, so every offset short of 60 degrees gives the conflict
+  graph of 0 degrees;
+* the single-side maximum over the whole 24-cell stays at 762 (three solves), so the
+  dimension-26 class layer ends at 1524 on that pool;
+* in dimension 27 the deep holes of the rotated axis admit heads at `|x|^2 = 2` with up to six
+  caps each -- and no minimal vector, removed or not, is compatible with even one hole
+  direction against the 2216 heads;
+* the 12-lean family (four pairwise-compatible triangles, 128 of them in the 24-cell), hinted
+  with the 201010 solution and run for an hour, leaves the two extra triangles unused.
+* a guess recorded because it was wrong: the tightness of the depth bound at alpha = 3/2
+  suggested the rho = 8/3 lens was the finite set of 47104 class heads per owner; Frank-Wolfe
+  on |y| over the owner's polytope converges to the owner itself, so the lens is a full
+  23-dimensional body.
+
+Ceilings: a side is a code at cosine <= 1/4 in R^24, <= 1228.49, with free heads <= 280, so
+the template stops below 202038 (26) and 207516 (27).
+
+### 126.4 Verification and the write-up
+
+`verify26.py` / `verify27.py` (shared `lib/layered.py`): heads stored as integer vectors
+`y = 3x` of norm 192 (Cohn units) with the index of their triangle; the Leech minimal vectors
+rebuilt from the Golay code; removals, owner distinctness and every head-head pair are
+integer comparisons against thresholds `144 - 96 c` computed symbolically from the direction
+geometry; the axis and the directions are sympy vectors in Q(sqrt2, sqrt3).  Both reject a
+head moved to another triangle, a head duplicated on two triangles, and a head displaced by
+a minimal vector.  Two defects the checks caught in the tooling: owner INDICES stored against
+one ordering of the lattice and read in another (now vectors), and a heredoc that halved the
+backslashes of a patch script so that its old branch ran and put new checks after the summary
+block, where a failure could not set the exit code.  Lessons, in one line each: let the side
+be a variable before believing a pool is exhausted; a code's inner-product quantisation
+decides whether a continuous parameter is a parameter at all; and an involution on a coset
+block is worth a whole second class.

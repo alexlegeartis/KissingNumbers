@@ -303,7 +303,8 @@ for k in range(9, 24):
 
 # --- quoted, each verified by the named script
 add(25, 197569, 'dim25-lens-heads', 'verify.py (exact arithmetic; fullcheck.py is the independent net)')
-add(27, 200540, 'dim27-triple-partition', 'scripts/verify_configuration.py')
+add(26, 199632, 'dim26-27-iota-triangles', 'verify26.py (exact: integers, and sympy for the hexagon)')
+add(27, 201010, 'dim26-27-iota-triangles', 'verify27.py (exact: integers, and sympy for the rotated cuboctahedron)')
 add(38, 591612, 'dim38-leech-large-codimension', 'scripts/verify.py')
 add(39, 756116, 'dim39-ers-constant-weight', 'scripts/verify.py')
 # The Edel-Rains-Sloane chain (n, 15, 2).  Level 0 is a single sign code: [62,26,16] and
@@ -410,7 +411,8 @@ print("   monotone across all %d claims; every claim respects every record above
 
 print()
 print("4. no claim in a dimension that is attained, withdrawn, or short of its floor")
-ATTAINED = {26, 28, 29, 30, 31}       # the cap model reproduces these exactly
+ATTAINED = {28, 29, 30, 31}           # the cap model reproduces these exactly (26 was here
+                                      # until dim26-27-iota-triangles beat it, 2026-09-08)
 WITHDRAWN = {44, 45}                  # beaten by Sun-Wang, arXiv:2607.20359v3
 SHORT = set()                         # 69 was here until its Gram was exhibited (see the
                                       # dim68-69 package); nothing is short of its floor now
@@ -1658,7 +1660,7 @@ if '--write-results' in sys.argv and not fail:
 
     PKGDOC = {
         'dim25-lens-heads': '1006 heads in the lens of a minimal vector, no removal shared, plus one non-lattice equator point',
-        'dim27-triple-partition': 'four zero-sum triples of cap directions, not five groups',
+        'dim26-27-iota-triangles': 'the coset triangle of three norm-6 vectors on every triangle of directions, the side chosen per head; in 26 the second side is the involution image of the first',
         'dim38-leech-large-codimension': 'the Leech cap construction at codimension 14',
         'dim39-ers-constant-weight': 'Edel-Rains-Sloane with the 2026 constant-weight codes',
         'dim49-63-p48-caps': 'the cap construction over P_48, with explicit classes',
@@ -1747,9 +1749,10 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("| dim(s) | why |")
     out.append("|---|---|")
-    out.append("| 26, 28, 29, 30, 31 | the cap model reproduces Cohn's table *exactly* "
+    out.append("| 28, 29, 30, 31 | the cap model reproduces Cohn's table *exactly* "
                "there; no slack. See `verifications/improved/dim73-95-gamma72-caps/scripts/"
-               "calibrate.py`. |")
+               "calibrate.py`. (Dimension 26 was here until 2026-09-08, when the two-triangle "
+               "configuration beat the table by 1082.) |")
     out.append("| 32-37, 40-43 | exactly at the Edel-Rains-Sloane value. "
                "`verifications/closed/dim32-44-ers-audit/` |")
     out.append("| 44, 45 | withdrawn: beaten by Sun-Wang, arXiv:2607.20359v3. "

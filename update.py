@@ -41,7 +41,7 @@ HOW TO IMPROVE A BOUND.  RESULTS.md's status column says what would have to chan
                dimension.  Today both stand at d = 15, one short.  Dimension 96 rests on
                A(96,24) >= 2^33 from [96,33,24], two thirds of its total, and on the grid
                maps [24,9,12]_4 and RS[6,4,3]_16; only the last is built here.
-    exhausted  dimensions 25, 27, 38.  The idea is finished; only a different construction
+    exhausted  dimensions 25, 26, 27, 38.  The idea is finished; only a different construction
                (in 25: a plateau traverse of the lens-head search moves H by one sphere at a time)
                will move these.
     lp-exact   dimensions 68-71.  NOT "a Gram the search has not reached" -- the Gram is

@@ -190,8 +190,8 @@ results = {}
 for m in re.finditer(r'^\| (\d+) \| ([\d\u202f ]+) \| \*\*([\d\u202f ]+)\*\* \|', RES, re.M):
     results[int(m.group(1))] = (num(m.group(2)), num(m.group(3)))
 
-chk('Table 4 row count == 47', len(tab4) == 47, 'got %d' % len(tab4))
-chk('RESULTS.md row count == 47', len(results) == 47, 'got %d' % len(results))
+chk('Table 4 row count == 48', len(tab4) == 48, 'got %d' % len(tab4))
+chk('RESULTS.md row count == 48', len(results) == 48, 'got %d' % len(results))
 chk('dimensions 46 and 47 are not counted', not ({46, 47} & set(tab4)),
     'still present: %s' % sorted({46, 47} & set(tab4)))
 chk('but the paper still records them', '23\\,766\\,960' in TEX
@@ -228,10 +228,10 @@ for d in range(2, 97):
 print('== Table 1 (summary) ==')
 t1 = TEX[TEX.index('\\label{tab:summary}'):
          TEX.index('\\end{tabular}', TEX.index('\\label{tab:summary}'))]
-cap = TEX[TEX.index('\\caption{The forty-seven improvements'):TEX.index('\\label{tab:summary}')]
+cap = TEX[TEX.index('\\caption{The forty-eight improvements'):TEX.index('\\label{tab:summary}')]
 GROUPS = [
     ('$\\Gsz$ cross-sections', [68, 69, 70, 71]),
-    ('layers over $\\Leech$', [25, 27, 38]),
+    ('layers over $\\Leech$', [25, 26, 27, 38]),
     ('layers over $\\Pff$', list(range(49, 62))),
     ('the \\textsc{ers} chain', [62, 63]),
     # Dimension 96 is the same construction at a different chain, (96,24,6,1) rather
@@ -245,7 +245,7 @@ GROUPS = [
 allg = sorted(sum((d for _, d in GROUPS), []))
 chk('Table 1 groups partition Table 4', allg == sorted(tab4),
     'groups %d dims, table4 %d' % (len(allg), len(tab4)))
-chk('Table 1 total row says 47', 'total & & $47$' in t1)
+chk('Table 1 total row says 48', 'total & & $48$' in t1)
 smallest = []
 for name, dims in GROUPS:
     row = [l for l in t1.split('\n') if l.startswith(name + ' &')]
@@ -1101,7 +1101,7 @@ chk('the paper lists the k at which the layer reaches K(k), and the list is righ
 
 # ------------------------------------------------------------- prose numbers vs table
 print('== Prose numbers against the tables ==')
-for d, v in [(25, 197569), (27, 200540), (38, 591612), (39, 756116),
+for d, v in [(25, 197569), (26, 199632), (27, 201010), (38, 591612), (39, 756116),
              (70, 1249778250), (71, 2603658750), (96, 12886999232)]:
     chk('prose dim %d = table' % d, tab4[d][1] == v, '%d vs %d' % (tab4[d][1], v))
 # Theorem 6.3 and the abstract both state dimension 96.  FLAT collapses whitespace but
@@ -1127,7 +1127,7 @@ chk('abstract count matches Table 4',
     '$%d$ dimensions between $25$ and $96$' % len(tab4) in TEX,
     'the abstract does not say %d' % len(tab4))
 chk('title states the range, not a tally',
-    'in dimensions 25 through 96' in FLAT and '47 dimensions' not in FLAT)
+    'in dimensions 25 through 96' in FLAT and '48 dimensions' not in FLAT)
 # 'no published table has an entry' is the claim; d >= 49 is only a proxy for it, and the
 # proxy dies quietly the day a published table gains an entry above 49.  Test the claim
 # itself against published.py -- which has no imports of its own, so this costs nothing --
@@ -1141,10 +1141,10 @@ except Exception as _e:
 if _pub is not None:
     _untab = sorted(d for d in tab4 if d not in _pub.COHN)
     _proxy = sorted(d for d in tab4 if d >= 49)
-    chk('43 of the 47 have no entry in the published table',
+    chk('43 of the 48 have no entry in the published table',
         len(_untab) == 43, str(len(_untab)))
-    chk('the four that do are 25, 27, 38 and 39',
-        sorted(set(tab4) - set(_untab)) == [25, 27, 38, 39],
+    chk('the five that do are 25, 26, 27, 38 and 39',
+        sorted(set(tab4) - set(_untab)) == [25, 26, 27, 38, 39],
         str(sorted(set(tab4) - set(_untab))))
     chk('the d >= 49 proxy still agrees with the published table', _untab == _proxy,
         'they differ at %s' % sorted(set(_untab) ^ set(_proxy)))
@@ -1333,7 +1333,7 @@ if _ers_ranked is not None:
 # so derive it: read the twelve directions, compute the cosines exactly, and require the paper
 # to call them what they are.  The icosahedron is kept in the test as the rival it excludes;
 # a check that can only confirm the answer already written is not a check.
-_D27 = os.path.join(KV, 'verifications', 'improved', 'dim27-triple-partition',
+_D27 = os.path.join(KV, 'verifications', 'superseded', 'dim27-triple-partition',
                     'data', 'construction.json')
 
 
@@ -1543,11 +1543,11 @@ chk('and those are the constant-weight and chain dimensions',
 # added below 49.  The lattice count is the abstract's "All but four", checked above.
 _above = sorted(d for d in tab4 if d >= 49)
 chk('the manuscript spells the above-48 count the same way',
-    '%s of the forty-seven' % _NUMWORD.get(len(_above), '?') in FLAT.lower(),
+    '%s of the forty-eight' % _NUMWORD.get(len(_above), '?') in FLAT.lower(),
     'derived %d of %d above dimension 48' % (len(_above), len(tab4)))
 chk('and the phrase is used for that count in both places',
-    FLAT.lower().count('forty-three of the forty-seven') == 2,
-    '%d occurrences' % FLAT.lower().count('forty-three of the forty-seven'))
+    FLAT.lower().count('forty-three of the forty-eight') == 2,
+    '%d occurrences' % FLAT.lower().count('forty-three of the forty-eight'))
 chk('the two partitions of Table 4 are still distinct sets',
     set(_above) != set(tab4) - set(_other),
     'they coincide, so neither count can be told from the other')

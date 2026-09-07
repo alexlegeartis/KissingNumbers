@@ -1,3 +1,19 @@
+# SUPERSEDED — dimension 27 by the two-triangle configuration
+
+**τ(27) ≥ 200 540**, against the published 200 044 — a +496 improvement, held from 2026-08
+until 2026-09-08.
+
+**Superseded by this project's own
+[`../../improved/dim26-27-iota-triangles/`](../../improved/dim26-27-iota-triangles/), which gives
+201 010** — the same template (Leech equator, cap heads on the twelve cuboctahedral directions,
+a rotated cuboctahedron on the axis) with the heads rebuilt: the coset classes of two zero-sum
+triangles of norm-6 vectors, 2210 heads at squared length 8/3, each removing exactly its
+owner, distributed over the four triangles of directions with the side chosen per head.
+Better by +470. The partition argument below is still true and is still what fixes the
+twelve directions; it is no longer what carries the dimension-27 claim.
+
+---
+
 # A new lower bound for the kissing number in 27 dimensions
 
 This repository is a self-contained verification package for

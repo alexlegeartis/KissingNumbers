@@ -2,12 +2,12 @@
 
 The kissing number τ(n) is the largest number of unit spheres that can touch a central unit
 sphere in ℝⁿ; equivalently, the largest set of unit vectors with pairwise inner products at
-most 1/2. This repository holds new lower bounds in **47 dimensions**, each with a package
+most 1/2. This repository holds new lower bounds in **48 dimensions**, each with a package
 that verifies it, together with the negative results that say where the remaining doors are
 shut.
 
 ```bash
-python audit.py            # start here: all 47 claims, checked against the published table
+python audit.py            # start here: all 48 claims, checked against the published table
 ```
 
 `update.py` is the maintainer's entry point rather than the reviewer's: it runs every package
@@ -35,11 +35,12 @@ them exceeds a known record in a higher dimension. It takes a few seconds.
 | 63  | 52 418 564           | **138 419 844**   | **2.64** | the tables stop at 48 and resume at 64                           |
 | 62  | 52 417 932           | **71 310 732**    | 1.36     | the same                                                         |
 | 38  | 566 652              | **591 612**       | 1.04     | the Leech cap construction had never been run at codimension 14  |
-| 27  | 200 044              | **200 540**       | 1.00     | the published configuration uses five classes where four suffice |
+| 27  | 200 044              | **201 010**       | 1.00     | the coset triangle of three norm-6 vectors, on all four triangles of directions with the side chosen per head |
+| 26  | 198 550              | **199 632**       | 1.01     | the same triangle on both triangles of the hexagon, the second side the involution image of the first |
 | 25  | 197 056              | **197 569**       | 1.00     | 1006 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point |
 
 
-The full table of all 47 is `[RESULTS.md](RESULTS.md)`. The write-up, *New lower bounds
+The full table of all 48 is `[RESULTS.md](RESULTS.md)`. The write-up, *New lower bounds
 for kissing numbers in dimensions 25 through 96*, is maintained **outside this repository**,
 because it cites this repository; see [The write-up](#the-write-up) below.
 
@@ -61,7 +62,7 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               46 of the 47 claims, nine packages, one per construction
+  improved/               47 of the 48 claims, nine packages, one per construction
                           idea; dimension 96 is the exception and sits in closed/
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
@@ -76,7 +77,7 @@ KNOWLEDGE.md              the full working record, 75 sections, including everyt
 
 ### `verifications/improved/` — nine ideas, 46 dimensions
 
-Forty-six, not forty-seven: dimension 96 is the forty-seventh claim and its package is
+Forty-seven, not forty-eight: dimension 96 is the forty-eighth claim and its package is
 `closed/dim96-ers-takeover/`, because what it establishes is that the cap construction
 cannot reach 96 — the claim there is Edel–Rains–Sloane’s.
 
@@ -84,7 +85,7 @@ cannot reach 96 — the claim there is Edel–Rains–Sloane’s.
 | package                                                                                      | dims   | the idea                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `[dim25-lens-heads](verifications/improved/dim25-lens-heads/)`                               | 25     | cap heads of squared length 3 in the lens of a minimal vector remove exactly their owner and never share a removal, so τ = 196560 + H + 2 + \|E\| with H = 1006 and one non-lattice equator point |
-| `[dim27-triple-partition](verifications/improved/dim27-triple-partition/)`                   | 27     | a class of cap heads may be shared by a **zero-sum triple** of directions; the twelve cuboctahedral directions partition into four triples, so four classes suffice where the record uses five |
+| `[dim26-27-iota-triangles](verifications/improved/dim26-27-iota-triangles/)`                 | 26, 27 | the axis forces the heads onto squared length 8/3 and onto fixed triangles of directions, so the layer is two or four head sets at cosine ≤ 1/4 cross-constrained at cosine 1/2; the coset triangle of three norm-6 vectors summing to zero is one such set, and the involution ι(u) = −v − u on each class puts S and ι(S) on two triangles at once |
 | `[dim38-leech-large-codimension](verifications/improved/dim38-leech-large-codimension/)`     | 38     | the same construction at codimension 14, where the binding constraint flips and the whole Leech shell partitions into 644 classes                                                            |
 | `[dim39-ers-constant-weight](verifications/improved/dim39-ers-constant-weight/)`             | 39     | Edel–Rains–Sloane with the 2026 constant-weight codes, at n₀ = n rather than n₀ = 32                                                                                                         |
 | `[dim49-63-p48-caps](verifications/improved/dim49-63-p48-caps/)`                             | 49–61  | the cap construction over P₄₈, with explicit classes of 7069 lines where Caro–Wei guarantees 712                                                                                             |
@@ -120,7 +121,7 @@ equation (3) of the preprint [arXiv:2312.05121](https://arxiv.org/abs/2312.05121
 [arXiv:2607.20359v3](https://arxiv.org/abs/2607.20359) (18 August 2026), and its ingredients
 were in Ozeki's 2016 Siegel theta tables a decade earlier, though not stated as a kissing
 number. Both were obtained here independently, and both are **recovered rather than
-claimed**: they are not in `RESULTS.md`, not counted among the 47, and not presented as
+claimed**: they are not in `RESULTS.md`, not counted among the 48, and not presented as
 results in the paper. They are kept, in
 `[verifications/recovered/](verifications/recovered/)`, because reproducing a published
 count from a method built without reference to it is the strongest validation available.
@@ -324,7 +325,7 @@ fixes the class.
 
 ```bash
 python run_all.py          # 55 scripts, about 32 minutes, one verdict
-python run_all.py --full   # 72 scripts, budget about 9 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 70 scripts, budget about 9 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 ```
@@ -334,13 +335,13 @@ Or individually, each from its own directory:
 
 | script                                                                        | what it establishes                                            | time   |
 | ----------------------------------------------------------------------------- | -------------------------------------------------------------- | ------ |
-| `audit.py`                                                                    | all 47 claims, mutual and external consistency                 | 1 s    |
+| `audit.py`                                                                    | all 48 claims, mutual and external consistency                 | 1 s    |
 | `common/theta.py`                                                             | E₇ = 126, Λ₂₃ = 93 150, dim 47, dim 71                         | 1 s    |
 | `common/kpoint_lp.py`                                                         | the LP, validated on the Leech and P₄₈                         | 10 s   |
 | `…/dim25-lens-heads/verify.py`                                                | τ(25) ≥ 197 569, every pair in exact arithmetic               | 4 min  |
-| `…/dim27-triple-partition/scripts/verify_configuration.py`                    | τ(27) ≥ 200 540, from the coordinate file alone                | 18 s   |
-| `…/dim27-triple-partition/scripts/verify_exhaustive.py`                       | the same, by comparing all 20 108 045 530 pairs                | 7 min  |
-| `…/dim27-triple-partition/scripts/selftest.py`                                | fifteen negative controls                                      | 4 min  |
+| `…/dim26-27-iota-triangles/verify26.py`                                      | τ(26) ≥ 199 632, every pair in exact arithmetic               | 1 min  |
+| `…/dim26-27-iota-triangles/verify27.py`                                      | τ(27) ≥ 201 010, every pair in exact arithmetic               | 2 min  |
+| `…/superseded/dim27-triple-partition/scripts/verify_configuration.py`         | τ(27) ≥ 200 540, the superseded claim, from its coordinate file | 18 s   |
 | `…/dim38-leech-large-codimension/scripts/verify.py`                           | τ(38) ≥ 591 612                                                | 10 s   |
 | `…/dim39-ers-constant-weight/scripts/verify.py`                               | τ(39) ≥ 756 116 (and τ(38) ≥ 570 236)                          | 10 s   |
 | `…/dim46-47-p48-cross-sections/derive.py`                                     | recovers 12 309 600 and 23 766 960, claiming neither           | 6 s    |
@@ -386,7 +387,7 @@ dimensions 49–63 reproduces the shipped size vector exactly, and asserts pairw
 disjointness while doing it.
 - **H. Cohn's coordinate data sets.** `dimensions1-24.txt` and `dimensions25-31.txt`, 120 MB,
 from [https://hdl.handle.net/1721.1/153312](https://hdl.handle.net/1721.1/153312). Only two scripts use them and both take the
-path as an argument: `dim27-triple-partition/scripts/rebuild_from_published.py`, which
+path as an argument: `superseded/dim27-triple-partition/scripts/rebuild_from_published.py`, which
 regenerates the dimension-27 coordinate file bit-for-bit from the published block, and
 `closed/dim09-19-record-maximality/sweep.py`. Everything else verifies from what is here.
 - **The dead ends that produced nothing citable** — for instance the 249 MB of dimension-37
@@ -434,10 +435,10 @@ same answer. A missing-moments bug hid behind that for a day.
 
 ## The write-up
 
-*New lower bounds for kissing numbers in dimensions 25 through 96* is a 35-page account of
+*New lower bounds for kissing numbers in dimensions 25 through 96* is a 37-page account of
 the two mechanisms, with the results as numbered theorems: the cross-section method in §4
 (dimensions 68, 69, 70 and 71, and dimensions 46 and 47 recovered) and the cap
-construction in §5 (dimensions 25, 27, 38, 49–61, 73–95), with the code-theoretic
+construction in §5 (dimensions 25, 26, 27, 38, 49–61, 73–95), with the code-theoretic
 dimensions 39, 62, 63 and 96 in §6.
 
 **It is in this repository, at [`paper/`](paper/)** — source, bibliography, `.bbl`, PDF and

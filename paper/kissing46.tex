@@ -38,7 +38,7 @@ spherical design, Leech lattice, linear programming bound, exact verification}
 \begin{abstract}
 The kissing number $K(n)$ is the largest number of unit vectors in $\R^n$ with
 pairwise inner products at most $\tfrac12$. We improve the best known lower
-bound in $47$ dimensions between $25$ and $96$. All but four of these bounds
+bound in $48$ dimensions between $25$ and $96$. All but four of these bounds
 come from the extremal even unimodular lattices $\Leech$, $\Pff$ and $\Gsz$, by
 two constructions: cross-sections of the minimal shell and layered
 configurations built on it.
@@ -110,7 +110,7 @@ of Edel--Rains--Sloane \cite{edel-rains-sloane1998}. In dimensions $73$--$96$ th
 same construction over $\Gsz$ gives $6\,218\,175\,600+K(n-72)$, which at $n=96$ is
 $6\,218\,175\,600+196\,560$, the second summand being the Leech lattice; here
 $K(n-72)$ is again Cohn's entry, its argument running from $1$ to $24$. Forty-three of
-the forty-seven improvements below lie in these ranges.
+the forty-eight improvements below lie in these ranges.
 
 One dimension inside those three ranges is tabulated: at $n=80$ Nebe--Sloane record
 $\Gsz\perp E_8$, whose kissing number $6\,218\,175\,600+240$ is the direct sum
@@ -160,7 +160,7 @@ Table~\ref{tab:summary} groups the improvements by construction.
 Table~\ref{tab:all} in \S\ref{sec:results} gives one row per dimension.
 
 \begin{table}[ht]
-\caption{The forty-seven improvements, grouped by construction; $\#$ is the number
+\caption{The forty-eight improvements, grouped by construction; $\#$ is the number
 of dimensions in a row. The gain is $K_{\mathrm{here}}-K_{\mathrm{prev}}$ and the
 factor their ratio, computed dimension by dimension, with both extremes
 attained at an end of the dimension range, to the two decimals shown. ``Previously'' is \cite{cohn-table}
@@ -174,14 +174,14 @@ Table~\ref{tab:all}, which gives every dimension.}
 construction & dimensions & \# & largest gain & factor & where\\
 \midrule
 $\Gsz$ cross-sections & $68$--$71$ & $4$ & $+2\,271\,920\,766$ & $1.09$--$7.85$ & \S\ref{ss:g72}\\
-layers over $\Leech$ & $25$, $27$, $38$ & $3$ & $+24\,960$ & $1.00$--$1.04$ & \S\ref{ss:d25}--\ref{ss:d38}\\
+layers over $\Leech$ & $25$--$27$, $38$ & $4$ & $+24\,960$ & $1.00$--$1.04$ & \S\ref{ss:d25}--\ref{ss:d38}\\
 layers over $\Pff$ & $49$--$61$ & $13$ & $+7\,481\,540$ & $1.00$--$1.14$ & \S\ref{ss:big}\\
 the \textsc{ers} chain & $62$, $63$ & $2$ & $+86\,001\,280$ & $1.36$--$2.64$ & \S\ref{ss:d6263}\\
 the \textsc{ers} chain at $96$ & $96$ & $1$ & $+6\,668\,627\,072$ & $2.07$--$2.07$ & \S\ref{ss:d96}\\
 layers over $\Gsz$ & $73$--$95$ & $23$ & $+254\,796\,296$ & $1.00$--$1.04$ & \S\ref{ss:big}\\
 constant-weight codes & $39$ & $1$ & $+128$ & $1.00$--$1.00$ & \S\ref{ss:d39}\\
 \midrule
-total & & $47$ & & &\\
+total & & $48$ & & &\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -191,7 +191,7 @@ entry at all. Three rows exceed $2$, and in none of them is the gain a new
 construction: the cross-sections count a classical configuration, and dimensions
 $62$, $63$ and $96$ evaluate a construction of $1998$ against the code tables of
 $2026$. The rows
-with factors near $1$ span the most dimensions, $40$ of the $47$, though the two
+with factors near $1$ span the most dimensions, $41$ of the $48$, though the two
 largest absolute gains lie in rows whose factor exceeds $2$.
 
 \subsection{Attribution}\label{ss:new}
@@ -210,8 +210,8 @@ claim neither. Cohn's table \cite{cohn-table} records
 $5\,318\,060$ in dimension $46$ and $9\,741\,412$ in dimension $47$.
 \end{sloppypar}
 
-\emph{The forty-seven listed below.} We have found no earlier claim in dimensions
-$25$, $27$, $38$, $39$, $49$--$63$, $68$--$71$ or $73$--$96$. The one-point
+\emph{The forty-eight listed below.} We have found no earlier claim in dimensions
+$25$--$27$, $38$, $39$, $49$--$63$, $68$--$71$ or $73$--$96$. The one-point
 distribution of the minimal shell of $\Gsz$ follows from Venkov's theorem in a
 few lines; the bounds in dimensions $70$ and $71$ may therefore already be known
 to specialists, though we have found no record of them. Dimensions $62$, $63$ and $96$
@@ -348,7 +348,7 @@ $1.98\times10^5$ and $6.4\times10^9$ points. A lattice together with a few integ
 parameters specifies each of them. They lie beyond the reach of a
 coordinate search. We obtain them from the structure of three extremal lattices.
 
-Forty-three of the forty-seven dimensions below lie in ranges in which the published
+Forty-three of the forty-eight dimensions below lie in ranges in which the published
 tables have one entry between them, at $n=80$ (\S\ref{ss:tables}). The improvements there measure the extent
 to which those ranges have not previously been examined.
 
@@ -1197,6 +1197,62 @@ is $2\sum_i|C_i|(|Z_i|-1)$ with $|Z_i|\le3$ and $\sum_i|Z_i|\le|Z|=12$, so
 $\sum_i(|Z_i|-1)$ is at most $\lfloor 2\cdot12/3\rfloor=8$, which four triples
 attain.
 
+\emph{Superseded, 2026-09-08.} The dimension-$27$ entry of the repository no
+longer rests on Theorem~\ref{thm:27}; see \S\ref{ss:d2627}. The theorem and
+the partition argument remain the template's own bound, and the twelve
+directions they fix are the ones the new configuration uses.
+
+\subsection{Dimensions 26 and 27: the coset triangle on every triangle of
+directions}\label{ss:d2627}
+
+\begin{theorem}\label{thm:2627}
+$K(26)\ge199\,632$ and $K(27)\ge201\,010$.
+\end{theorem}
+
+Both are joint work in progress with H.~Cohn and B.~Lindow, and the account is
+the separate note of \S\ref{ss:d25}; we record the shape and the verification.
+Write a point of $\R^{24+k}$ as $(x,y)$ with $y\in\R^{k}$, normalise every point
+to squared length $4$ so that compatibility is $\ip{P}{Q}\le2$, and put the
+$K(k)$ axis points $(0,a)$, $|a|=2$, on a hexagon ($k=2$) or a cuboctahedron
+($k=3$). A cap point $(x,y)$ then has $|y|\le\sec\theta$ for the covering radius
+$\theta$ of the axis set; for the hexagon $\theta=30^{\circ}$ forces $|x|^{2}\ge8/3$
+with equality forcing $y$ onto the six edge midpoints, a head at $|x|^{2}=8/3$
+carries a zero-sum triangle of directions, and two cap points there are
+compatible iff $\ip{x}{x'}\le2-\tfrac43\cos\angle(y,y')$: $\tfrac23$ on a common
+direction, $\tfrac43$ at $60^{\circ}$, no condition at $120^{\circ}$ or $180^{\circ}$.
+So the layer is one head set per triangle of directions --- two for the hexagon,
+four for the cuboctahedron, whose twelve vertices are four zero-sum triangles
+every two of which have a pair at $60^{\circ}$ --- each a code of cosine at most
+$\tfrac14$ on the sphere $|x|^{2}=8/3$, cross-constrained at cosine $\tfrac12$, and
+the count is $196\,560+K(k)+2(P-F)+3F$ for $P$ heads of which $F$ remove nothing.
+
+Every head is $y/3$ with $y=3u+v$ integral, $u$ a minimal vector (the owner,
+which the head removes) and $v$ a Leech vector of norm $6$ with $\ip{u}{v}=-3$,
+or a free head $y=\pm2v$; a head removes exactly its owner, and two heads on one
+owner have $\ip{y}{y'}\ge16$, above every threshold, so removals are not shared.
+Three such $v$ with $v_{1}+v_{2}+v_{3}=0$ carry $1656$ heads over three
+disjoint blocks $\Sigma(v_{i})=\{u:\ip{u}{v_{i}}=-3\}$ of $552$, and on one side
+the exact optimum is $762$ of them, against $552$ for a single $v$, which is
+Cohn's construction. In dimension $26$ the same triangle serves both sides: with
+$\iota(u)=-v_{i}-u$, a fixed-point-free involution of each block,
+$\ip{3u+v_{i}}{3\iota(u')+v_{i}}=15-9\ip{u}{u'}$, which respects the cross
+threshold $12$ exactly when $\ip{u}{u'}\ge1$; so a side $S$ and its image
+$\iota(S)$ fit on the two triangles of the hexagon whenever the owners of $S$ are
+pairwise at inner product $1$ or $2$ inside each block, and an optimal $S$ with
+that property exists. The shipped configuration has $1524$ class heads and $6$
+free heads: $196\,560+6+2\cdot1524+18=199\,632$. In dimension $27$ the axis is
+the cuboctahedron rotated by $45^{\circ}$ about a coordinate axis, whose largest
+cosine to a direction is $(2+\sqrt2)/4$ and whose inner product with a cap point
+is at most $(2+\sqrt2)/\sqrt3<2$; two triangles of leans with cross Gram matrix
+the circulant of $(3,0,-3)$ carry $2210$ class heads over the four sides and
+$6$ free heads: $196\,560+12+2\cdot2210+18=201\,010$. The package
+\texttt{dim26-27-iota-triangles} stores the heads as integer vectors with the
+index of their triangle, rebuilds the Leech vectors from the Golay code, decides
+every head--equator and head--head pair by integer comparison against the
+thresholds $144-96c$ ($c$ the exact largest cosine between two triangles of
+directions, in the scaling with minimum $32$) and the axis inequalities in
+$\mathbb{Q}(\sqrt2,\sqrt3)$, and rejects a head moved, duplicated or displaced.
+
 \subsection{Dimension 38: large codimension}\label{ss:d38}
 
 For $k\le7$ the number of parts of $Z$ binds in \eqref{eq:count}, and a part is
@@ -1627,7 +1683,7 @@ thirds of the total, and the quaternary code $[24,9,12]_4$ are taken from \cite{
 \section{The results}\label{sec:results}
 
 \begin{longtable}{rrrl}
-\caption{All forty-seven improvements. ``Previously'' is \cite{cohn-table} where
+\caption{All forty-eight improvements. ``Previously'' is \cite{cohn-table} where
 that table has an entry and otherwise the direct sum or inherited value of
 \S\ref{ss:tables}. Dimensions $44$ to $47$ are absent:
 \cite{sun-wang2026} gives larger values in dimensions $44$ and $45$;
@@ -1643,7 +1699,8 @@ $n$ & previously & this work & construction\\
 \bottomrule
 \endfoot
 $25$ & $197\,056$ & $197\,569$ & layers over $\Leech$, lens heads (\S\ref{ss:d25})\\
-$27$ & $200\,044$ & $200\,540$ & layers over $\Leech$, four triples\\
+$26$ & $198\,550$ & $199\,632$ & layers over $\Leech$, one triangle (\S\ref{ss:d2627})\\
+$27$ & $200\,044$ & $201\,010$ & layers over $\Leech$, two coset triangles\\
 $38$ & $566\,652$ & $591\,612$ & layers over $\Leech$, $k=14$\\
 $39$ & $755\,988$ & $756\,116$ & constant-weight codes\\
 $49$ & $52\,416\,002$ & $52\,430\,140$ & layers over $\Pff$\\
@@ -1909,7 +1966,9 @@ following standards.
 \item \emph{Configurations small enough to write down are checked in
       coordinates.} The dimension-$27$ configuration is verified by two
       deliberately different arguments, one of which compares all
-      $\binom{200540}{2}=20\,108\,045\,530$ pairs.
+      $\binom{200540}{2}=20\,108\,045\,530$ pairs; that configuration is now
+      superseded (\S\ref{ss:d2627}), and the two that replace it are verified in
+      exact arithmetic, the head--axis inequalities in $\mathbb{Q}(\sqrt2,\sqrt3)$.
 \item \emph{The cross-section method is validated against every independently
       known value} (Table~\ref{tab:validate}). The inequalities and the counting
       formula of the layered construction are re-derived from first principles

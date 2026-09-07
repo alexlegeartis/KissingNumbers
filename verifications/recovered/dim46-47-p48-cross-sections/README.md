@@ -1,7 +1,7 @@
 # RECOVERED — dimensions 46 and 47, cross-sections of the extremal 48-dimensional lattice
 
 **Nothing here is claimed.** Both values were in the literature before this project reached
-them, and neither is counted among the 47 in [`../../../RESULTS.md`](../../../RESULTS.md)
+them, and neither is counted among the 48 in [`../../../RESULTS.md`](../../../RESULTS.md)
 or presented as a result in the paper.
 
 | dim | Cohn's table | value | who has it |

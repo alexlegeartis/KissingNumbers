@@ -145,9 +145,17 @@ REASON = {
                     'and only the head count H moves; H = 1006 against a Delsarte ceiling of '
                     '5763, and every route beyond the template needs a code in R^24 with '
                     '~93000 points at 62 degrees (KNOWLEDGE 125, dim25-lens-heads/README)',
-    'exhausted-27': 'four classes suffice where the published configuration used five, and the '
-                    'configuration is verified over all 20 108 045 530 pairs '
-                    '(scripts/verify_exhaustive.py)',
+    'exhausted-26': 'the hexagon forces every head onto |x|^2 = 8/3 and onto the six edge midpoints, so the '
+                    'layer is two head sets at cosine <= 1/4 cross-constrained at cosine 1/2; a zero-sum '
+                    'triangle of norm-6 vectors gives 762 heads per side, its exact optimum, and the whole '
+                    '24-cell of leans gives no more on a side in three solves, so 2 * 762 is where class '
+                    'heads stop; interior heads cost >= 11 there (verify26.py; the note, section 8)',
+    'exhausted-27': 'the cuboctahedron pins the twelve directions, four zero-sum triangles pairwise at '
+                    '60 degrees, so the layer is four head sets at cosine <= 1/4 cross-constrained at '
+                    'cosine 1/2; two coset triangles of norm-6 vectors give 2210 heads, within five '
+                    'of the solver bound for that pool, and a third and fourth triangle add nothing '
+                    'in an hour; the rho = 2 layer at the axis holes is empty (verify27.py; the note, '
+                    'section 8)',
     'exhausted-38': 'BOTH layers are at their ceilings: the cap layer at 3 x 196 560 = '
                     '589 680 with the equator empty, and the axis layer at a full tau(14) = '
                     '1932, so the total 591 612 IS 3 tau(24) + tau(14) and this mechanism has '
@@ -215,6 +223,7 @@ REASON = {
 
 STATUS = {}
 for _d, _s, _r in ((25, 'exhausted', 'exhausted-25'),
+                   (26, 'exhausted', 'exhausted-26'),
                    (27, 'exhausted', 'exhausted-27'),
                    (38, 'exhausted', 'exhausted-38'),
                    (39, 'external', 'external-39')):

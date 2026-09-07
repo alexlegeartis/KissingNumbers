@@ -1,0 +1,8 @@
+  heads 1530 = 1524 class + 6 free; owners distinct
+  side-pair thresholds (Cohn units): [[48, 96], [96, 48]]
+  all 1169685 head pairs admissible; 214157 at the bound
+  head-axis maximum inner product 2 = 2.000000 (bound 2)
+  6 axis points of norm 4, pairwise inner product <= 2
+  count = 196560 - 1524 + 3 * 1530 + 6 = 199632
+ALL CHECKS PASS   K(26) >= 199632
+exit 0
