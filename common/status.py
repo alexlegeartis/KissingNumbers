@@ -141,9 +141,10 @@ _AX = _axis_facts()
 _G72_BEST = (_B, _B / float(_CW_G72), 100.0 * (_CW_LEECH * _CW_G72 / float(_B) - 1.0))
 
 REASON = {
-    'exhausted-25': 'cap level cannot exceed 3/4: attainable cosines are 0, +-1/4, +-1/2, +-1, '
-                    'so nothing lies between 1/4 and 1/3, and the pole layer is already at '
-                    'tau(k) (dim25-cap-level/README)',
+    'exhausted-25': 'no removal is ever shared (a theorem), so the count is 196560 + H + 2 + |E| '
+                    'and only the head count H moves; H = 1006 against a Delsarte ceiling of '
+                    '5763, and every route beyond the template needs a code in R^24 with '
+                    '~93000 points at 62 degrees (KNOWLEDGE 125, dim25-lens-heads/README)',
     'exhausted-27': 'four classes suffice where the published configuration used five, and the '
                     'configuration is verified over all 20 108 045 530 pairs '
                     '(scripts/verify_exhaustive.py)',

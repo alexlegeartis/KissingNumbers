@@ -48,6 +48,21 @@ import time
 HERE = os.path.dirname(os.path.abspath(__file__))
 V = os.path.join(HERE, 'verifications')
 
+
+def _paper():
+    """the paper's directory, inside this package or beside it -- whichever holds it
+
+    It shipped INSIDE from 2026-08-30 so that its three checkers run in a clone instead of
+    skipping; before that it was a sibling, and a checkout may still be arranged that way.
+    Both are accepted, and a layout with neither leaves the three jobs to skip as they did."""
+    for c in (os.path.join(HERE, 'paper'), os.path.join(HERE, os.pardir, 'paper')):
+        if os.path.exists(os.path.join(c, 'kissing46.tex')):
+            return c
+    return os.path.join(HERE, 'paper')
+
+
+PAPER = _paper()
+
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
     ("audit: all 47 claims, mutual and external consistency",
@@ -63,18 +78,23 @@ JOBS = [
     ("common: the cap construction's algebra and count, exactly",
      os.path.join(HERE, 'common'), ['capalgebra.py'], 0.1, True),
 
-    # The paper lives outside this repository, because the paper cites the repository.
-    # These three jobs are skipped when it is not checked out beside it -- verified by running
-    # this file from a copy of the package with no paper/ next to it, where all three SKIP.
+    # The paper ships in this repository, at paper/, so these three run for everybody.  They
+    # were skipped in every clone until 2026-08-30, because the paper was kept outside on the
+    # grounds that it cites the repository -- which is true and was not a reason to withhold
+    # the 900-odd checks that tie the manuscript to the computations.  They still SKIP, rather
+    # than fail, in a checkout that has no paper: verified by running this file from a copy of
+    # the package with paper/ removed.
     ("paper: every figure in kissing46.tex, recomputed",
-     os.path.join(HERE, os.pardir, 'paper'), ['factcheck.py'], 0.1, True),
+     PAPER, ['factcheck.py'], 0.1, True),
     ("paper: no figure in kissing46.tex is unsupported by the repository",
-     os.path.join(HERE, os.pardir, 'paper'), ['unsupported.py'], 0.1, True),
+     PAPER, ['unsupported.py'], 0.1, True),
     ("paper: every formula in kissing46.tex, re-derived",
-     os.path.join(HERE, os.pardir, 'paper'), ['formulas.py'], 0.2, True),
+     PAPER, ['formulas.py'], 0.2, True),
 
-    ("dim 25: the cap level t = 3/4",
-     os.path.join(V, 'improved', 'dim25-cap-level'), ['verify.py'], 0.1, True),
+    ("dim 25: the 197569-point lens-head configuration, exactly",
+     os.path.join(V, 'improved', 'dim25-lens-heads'), ['verify.py'], 4.0, True),
+    ("dim 25: the same, as an independent floating-point net over all 197569 points",
+     os.path.join(V, 'improved', 'dim25-lens-heads'), ['fullcheck.py'], 2.0, True),
     ("dim 27: the SHA-256 manifest of the whole package",
      os.path.join(V, 'improved', 'dim27-triple-partition'),
      ['scripts/verify_manifest.py'], 0.1, True),

@@ -1,4 +1,16 @@
-# Dimension 25: the cap level is a free parameter
+# SUPERSEDED — dimension 25 by the lens-head configuration
+
+**τ(25) ≥ 197 058**, against the published 197 056 — a +2 improvement, held from 2026-08 until
+2026-09-07.
+
+**Superseded by this project's own
+[`../../improved/dim25-lens-heads/`](../../improved/dim25-lens-heads/), which gives
+197 569** — the same template (Leech equator, mirrored caps, two poles) with the caps
+rebuilt: 1006 heads of squared length 3 in the lens of a minimal vector, each removing
+exactly its owner, plus one non-lattice equator point. Better by +511. The level argument
+below is still true; it is just no longer what carries the dimension-25 claim.
+
+## What it was
 
 **τ(25) ≥ 197058**, against the published 197056. An improvement of **+2**.
 

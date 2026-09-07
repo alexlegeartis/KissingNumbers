@@ -1,0 +1,26 @@
+configuration: [('equator', 195554), ('extra', 1), ('cap+', 1006), ('cap-', 1006), ('poles', 2)]  total 197569
+all squared lengths = 4: True  (max error 1.78e-15)
+all points distinct: True
+
+block by block (each must be <= 2):
+  equator  x equator   the Leech minimal shell, known
+  equator  x extra     max 1.632993161855  OK
+  equator  x cap+      max 2.000000000000  OK
+  equator  x cap-      max 2.000000000000  OK
+  equator  x poles     max 0.000000000000  OK
+  extra    x extra     max -9.000000000000  OK
+  extra    x cap+      max 1.414213562373  OK
+  extra    x cap-      max 1.414213562373  OK
+  extra    x poles     max 0.000000000000  OK
+  cap+     x cap+      max 2.000000000000  OK
+  cap+     x cap-      max 2.000000000000  OK
+  cap+     x poles     max 2.000000000000  OK
+  cap-     x cap-      max 2.000000000000  OK
+  cap-     x poles     max 2.000000000000  OK
+  poles    x poles     max -4.000000000000  OK
+
+random sample of 20000000 pairs from the whole configuration:
+  max over the sample 2.000000000000, violations 0
+
+FULL CHECK PASSES   tau(25) >= 197569
+exit 0

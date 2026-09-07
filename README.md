@@ -36,7 +36,7 @@ them exceeds a known record in a higher dimension. It takes a few seconds.
 | 62  | 52 417 932           | **71 310 732**    | 1.36     | the same                                                         |
 | 38  | 566 652              | **591 612**       | 1.04     | the Leech cap construction had never been run at codimension 14  |
 | 27  | 200 044              | **200 540**       | 1.00     | the published configuration uses five classes where four suffice |
-| 25  | 197 056              | **197 058**       | 1.00     | the cap level is not forced to 2/3 when k = 1                    |
+| 25  | 197 056              | **197 569**       | 1.00     | 1006 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point |
 
 
 The full table of all 47 is `[RESULTS.md](RESULTS.md)`. The write-up, *New lower bounds
@@ -83,7 +83,7 @@ cannot reach 96 — the claim there is Edel–Rains–Sloane’s.
 
 | package                                                                                      | dims   | the idea                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `[dim25-cap-level](verifications/improved/dim25-cap-level/)`                                 | 25     | the cap level *t* is a free parameter, and at k = 1 it can be raised to 3/4, which admits two poles                                                                                          |
+| `[dim25-lens-heads](verifications/improved/dim25-lens-heads/)`                               | 25     | cap heads of squared length 3 in the lens of a minimal vector remove exactly their owner and never share a removal, so τ = 196560 + H + 2 + \|E\| with H = 1006 and one non-lattice equator point |
 | `[dim27-triple-partition](verifications/improved/dim27-triple-partition/)`                   | 27     | a class of cap heads may be shared by a **zero-sum triple** of directions; the twelve cuboctahedral directions partition into four triples, so four classes suffice where the record uses five |
 | `[dim38-leech-large-codimension](verifications/improved/dim38-leech-large-codimension/)`     | 38     | the same construction at codimension 14, where the binding constraint flips and the whole Leech shell partitions into 644 classes                                                            |
 | `[dim39-ers-constant-weight](verifications/improved/dim39-ers-constant-weight/)`             | 39     | Edel–Rains–Sloane with the 2026 constant-weight codes, at n₀ = n rather than n₀ = 32                                                                                                         |
@@ -323,8 +323,8 @@ fixes the class.
 ## Reproducing everything
 
 ```bash
-python run_all.py          # 54 scripts, 26 minutes measured, one verdict
-python run_all.py --full   # 71 scripts, budget about 9 hours: adds the all-pairs sweep, the
+python run_all.py          # 55 scripts, about 32 minutes, one verdict
+python run_all.py --full   # 72 scripts, budget about 9 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 ```
@@ -337,7 +337,7 @@ Or individually, each from its own directory:
 | `audit.py`                                                                    | all 47 claims, mutual and external consistency                 | 1 s    |
 | `common/theta.py`                                                             | E₇ = 126, Λ₂₃ = 93 150, dim 47, dim 71                         | 1 s    |
 | `common/kpoint_lp.py`                                                         | the LP, validated on the Leech and P₄₈                         | 10 s   |
-| `…/dim25-cap-level/verify.py`                                                 | τ(25) ≥ 197 058                                                | 3 s    |
+| `…/dim25-lens-heads/verify.py`                                                | τ(25) ≥ 197 569, every pair in exact arithmetic               | 4 min  |
 | `…/dim27-triple-partition/scripts/verify_configuration.py`                    | τ(27) ≥ 200 540, from the coordinate file alone                | 18 s   |
 | `…/dim27-triple-partition/scripts/verify_exhaustive.py`                       | the same, by comparing all 20 108 045 530 pairs                | 7 min  |
 | `…/dim27-triple-partition/scripts/selftest.py`                                | fifteen negative controls                                      | 4 min  |
@@ -365,7 +365,7 @@ Or individually, each from its own directory:
 | `…/closed/dim96-ers-takeover/above96.py`                                     | why the table stops at 96, and not somewhere arbitrary          | 4 s    |
 
 
-**Requirements.** Python 3.8+, numpy, scipy, and sympy for `../paper/formulas.py`, which
+**Requirements.** Python 3.8+, numpy, scipy, and sympy for `paper/formulas.py`, which
 re-derives the manuscript's algebra symbolically. The dimension-27 package needs neither
 numpy nor scipy for its main checker. OR-Tools is needed only by `alpha512.py` in
 `closed/dim17-23-cohn-li-mechanism/`, which re-proves α(G₀) = 160 optimal; its output is
@@ -440,23 +440,29 @@ the two mechanisms, with the results as numbered theorems: the cross-section met
 construction in §5 (dimensions 25, 27, 38, 49–61, 73–95), with the code-theoretic
 dimensions 39, 62, 63 and 96 in §6.
 
-**It is not in this repository.** It cites this repository, so it is kept alongside rather
-than inside, in a sibling `paper/` directory of the working tree. Two checkers live with it
-and read this repository:
+**It is in this repository, at [`paper/`](paper/)** — source, bibliography, `.bbl`, PDF and
+three checkers that read this repository and exit non-zero on a mismatch:
 
 ```bash
-python ../paper/factcheck.py      # every figure in the write-up, recomputed from here
-python ../paper/unsupported.py    # no figure in the write-up lacks a home here
+cd paper
+python factcheck.py      # 658 checks: every figure in the write-up, recomputed from here
+python unsupported.py    # no figure in the write-up lacks a home here
+python formulas.py       # 257 checks: every formula re-derived with sympy
 ```
 
-`run_all.py` runs both when the paper is checked out beside this repository and reports them
-as skipped when it is not. It is
-deliberately narrower than this repository — the obstruction results get one page rather
-than eight packages — and it is not a substitute for the verification code. Every number
-in it is cross-checked against `[RESULTS.md](RESULTS.md)`.
+`run_all.py` runs all three. Until 2026-08-30 the write-up was kept in a sibling directory of
+the working tree, on the grounds that it cites the repository — which is true, is the ordinary
+arrangement for a paper with a verification package, and meant that those nine hundred checks
+**skipped in every clone**, so no reader could run the part that ties the manuscript to the
+computations. They still skip rather than fail in a checkout with no `paper/`.
 
-It compiles with `pdflatex` twice, needs no bibliography tool, and carries a short list of
-things to check before submission; see `paper/README.md` in the working tree.
+The write-up is deliberately narrower than this repository — the obstruction results get one
+page rather than eight packages — and it is not a substitute for the verification code. Every
+number in it is cross-checked against [`RESULTS.md`](RESULTS.md).
+
+It compiles with `pdflatex` twice; `kissing46.bbl` is tracked so that a build without `bibtex`
+still resolves all forty-five citations. Its session-by-session work-log is **not** here: it
+is a first-person record of what went wrong, and it stays with the author's private notes.
 
 ## Licence, citation, and how this was made
 

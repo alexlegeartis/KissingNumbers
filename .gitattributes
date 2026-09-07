@@ -17,11 +17,12 @@
 *.pdf binary
 *.gz binary
 
-# NOTE: this tree contains BOTH line endings -- 147 text files use LF and 51 use CRLF,
+# NOTE: this tree contains BOTH line endings -- 161 text files use LF and 50 use CRLF,
 # an artefact of two write paths used while the repository was assembled.  No SOURCE OR
 # DOCUMENTATION file mixes them within itself.  Both statements are about the ten extensions
 # audit.py check 5k opens -- .py .md .txt .cff .json .tex .bib .yml .cfg .out -- and that is
-# the scope of the guarantee, written down here on 2026-08-30 because it had not been.  One
+# the scope of the guarantee, written down here on 2026-08-30 because it had not been, and re-measured on 2026-09-07
+# after the dimension-25 package was added (the files edited that day were normalised to LF).  One
 # file in the tree does mix and is deliberately outside that scope:
 # verifications/closed/dim32-44-ers-audit/data/cohn_kissing.html, a downloaded copy of Cohn's
 # page.  Normalising an archived artefact would change the thing that was archived, and

@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **107 sections, about 6700 lines**, written as the
+The full working record of the project: **124 sections, about 8087 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -17,9 +17,9 @@ The authoritative current statements are [`RESULTS.md`](RESULTS.md), which is ge
 
 ### Reading it
 
-The headings are numbered 1 to 108 with **no section 87** — a number was skipped, not a
+The headings are numbered 1 to 125 with **no section 87** — a number was skipped, not a
 section removed, and nothing in the repository refers to it. That is why the count above is
-107 and the last heading reads 108.
+124 and the last heading reads 125.
 
 It is roughly chronological, so later sections supersede earlier ones. Where they conflict,
 **the later section wins** — and where a section is superseded, it usually says so. Some
@@ -6687,9 +6687,1401 @@ Russian journal title is quoted legitimately in section 33 of this file.  This i
 101's lesson again -- a name wrong while every number is right -- at the level of the
 character rather than the word.
 
+**The manuscript moved INTO the repository, and the reason was in the clone's own output.**
+It had been kept in a sibling directory of the working tree on the grounds that it cites the
+repository -- true, and the ordinary arrangement for a paper with a verification package.
+What that cost was visible only from outside: of the four jobs a clone reported as skipped,
+THREE were the paper's own checkers, `factcheck.py`, `unsupported.py` and `formulas.py` --
+about nine hundred checks, and the ones that tie the manuscript to the computations.  No
+reader could run any of them.  The paper now ships at `paper/`, a clone runs 53 of 54 jobs,
+and the remaining skip is Cohn's coordinate data set, which is genuinely not ours to
+redistribute.
+
+Two things made it cheap and one made it instructive.  `factcheck.py` already resolved the
+repository by looking at the parent of its own directory and accepting either that parent
+being the package or containing it, so all three checkers ran from the new location
+unchanged -- they had been written for both layouts.  `run_all.py` and `audit.py` had not,
+and now find the paper in either place rather than assuming one, which is the same repair
+the clone crash above needed.  And the instructive part: bringing the paper inside brought
+its own guards into `audit.py`'s scope, so check 5f immediately fired on a COMMENT in
+`factcheck.py` that says "Equation (3)" without naming which document numbers it, which is
+arXiv:2312.05121 -- a
+sentence that had been true and unchecked all along, in the file whose job is to check
+exactly that.  A file's scope changing is a re-measurement, not a formality.
+
+The work-log did not move with it.  `paper/README.md` was 1121 lines of first-person session
+record, and it is now `notes/PAPER-WORKLOG.md`, beside the other private working notes.
+Three checks here read it and were repointed; `paper/` has a short factual README instead,
+and the two check counts it states are the ones `factcheck.py` and `formulas.py` require of
+it -- which they enforced on the new file within a minute of its existing.
+
 **The lesson.**  Guards get built where the errors were, and the errors were in the claims, so
 the claims are guarded to the digit.  Nothing was built to guard the sentences that say how
 big the thing is, how long it takes, or which object a table row is about -- and those are
 what a reader meets first and what a reviewer quotes back.  The rule that generalises: **a
 number describing the artefact needs a guard exactly as much as a number describing the
 mathematics, and it is more likely to go stale, because nothing downstream depends on it.**
+
+## 109. A Delsarte LP must be calibrated before it is believed, and section 14 gets a certificate (2026-09-03)
+
+### The bug, and why nothing downstream moved
+
+A Gegenbauer routine written this session used the recurrence with denominator
+`(k+n-1)` where it must be `(k+n-2)`:
+
+    (k+n-2) G_{k+1}(t) = (2k+n-2) t G_k(t) - k G_{k-1}(t),   G_k(1) = 1.
+
+It is a one-character error and every LP built on it returned a plausible number.  The
+number it returned for a 60-degree code in `R^24` was **172284** -- *below* the true
+196560, so the "bound" was invalid, and four quoted values were void.  Nothing caught it
+until the routine was run against known answers.  The corrected code reproduces the
+published Odlyzko-Sloane LP values exactly -- **13.158 / 25.558 / 240 / 196560** in
+dimensions 3 / 4 / 8 / 24 -- and **9360/11 = 850.909** for the class problem of section 2,
+which is the published Cohn-Jiao-Kumar-Torquato value.  Those four are now the standing
+calibration for any spherical LP written here.
+
+**The shipped code was never affected.**  All three Gegenbauer implementations inside
+`kissing_verifications/` use `(k+n-2)`:
+`verifications/closed/class-problem-upper-bound/certificate.py` (exact, in `Fraction`),
+`verifications/closed/dim22-23-maximal-cross-sections/lpbounds.py`,
+`verifications/improved/dim49-63-p48-caps/scripts/settle_4963.py`, and so do the eleven
+copies in `research/`.  A grep over the whole tree on 2026-09-03 found no other
+occurrence of the wrong denominator.
+
+**The lesson.**  An LP bound is the one kind of computation that cannot be sanity-checked
+by looking at it: it produces a number of the right magnitude whatever the polynomials
+are, and a *too small* bound reads exactly like a *good* bound.  Every LP here already
+carries an exact rational dual certificate, which proves the number is a valid bound
+*for the polynomials as implemented* -- and that is precisely what a wrong recurrence
+leaves intact.  A certificate guards the arithmetic, not the basis.  **The only thing
+that catches a wrong basis is running it on an answer you already know.**
+
+### Section 14 upgraded: 58 -> 77, and a certified ceiling of 280
+
+Section 14 rules out norm-6 (second-shell) cap heads.  Its structural half is now
+cleaner: a head `x` is deletion-free **iff `max_{z in Lambda_min} <x,z> <= 2`**, i.e. iff
+`x` lies in the polar body of `(1/2)conv(Lambda_min)`; that body's radius in a norm-6
+direction is exactly `sqrt(8/3)` (checked exactly: `max_z <(2/3)v, z> = 2`), whereas a
+Leech-scaled head at `|x|^2 = rho` has `max_z <x,z> = 2 sqrt(rho)` and is free only for
+`rho <= 1`.  So the free heads at the working radius are precisely `x = (2/3)v`,
+`|v|^2 = 6`, and two of them are compatible iff `<v,v'> <= 1`.
+
+The quantity section 14 needs is therefore the largest norm-6 code at `<v,v'> <= 1`:
+
+* **upper bound 280**, Delsarte LP over the norm-6 inner-product spectrum
+  `{-1,-2/3,-1/2,-1/3,-1/6,0,1/6}` -- the shell has **no** inner product 5, so no
+  `+-5/6` -- stable for `K = 20...80`, with an exact rational dual certificate;
+* **lower bound 77**, greedy plus local search over a 3-million-vector sample
+  (section 14 recorded 58).
+
+That closes the route by certificate rather than by search record wherever a free head
+is worth 3 caps: `3 x 280 = 840 < 992 = 2 x 496`, for **every** dimension 26-31.  In
+dimension 25 a free head is worth 2 and a class head 1, so the certificate gives
+`2 x 280 = 560` against 496, and the route is closed there only by the search (77 gives
+154), with a window of about 250 free heads that nobody knows how to fill.  State it that
+way; it is not the same status in the two cases.
+
+### Two lemmas that bound the whole cap layer
+
+Write a cap as `(x,y)` with `|x|^2 = rho`, `|y|^2 = 4 - rho`, and call `a = |y|` the
+*height*.  A head at height `a` carries `A(k, 1 - 2/a^2)` caps -- 3 at `a^2 = 4/3`,
+`2k` at `a^2 = 2`, `tau_k` at `a = 2`, 1 at `a = 0`.  Then:
+
+1. **Every head has `rho <= 3`.**  Two caps on one head need `-(4-rho) <= 2-rho`.  A head
+   carrying one cap must be deletion-free, hence `rho <= 8/3 < 3`.
+2. **Each deleted equator point is shared by at most 24 heads.**  If `z` is deleted by
+   `x` and `x'` then `<x,zhat><x',zhat> > 1`, while `<x,x'> <= 2 - a a' <= 1`; so the
+   components perpendicular to `z` have strictly negative inner product, and at most 24
+   vectors in `R^23` do that.
+
+And a correction to section 1's "the cap level is forced": the *height* is free on a
+plateau.  For Leech-scaled heads the deletion count is 1 for every `rho in (1,4)` (Leech
+inner products jump from 2 to 4) and the `cos <= 1/4` class survives exactly when
+`rho >= 8/3`, so **every `rho in [8/3, 3]`, i.e. `a^2 in [1, 4/3]`, gives the same 496
+heads at one deletion each**.  `a^2 = 4/3` is chosen only because it is the largest
+height admitting three directions.  Nothing to exploit, but the statement "no freedom
+here" was stronger than the truth.
+
+### One sentence in section 14 needs its scope written down
+
+Section 14 says "the covering radius of the Leech minimal-vector spherical code is
+`cos = 0.614863` (52.06 degrees) against the free-head threshold
+`sqrt(3/8) = 0.612372` -- so no off-lattice free head exists".  **0.614863 cannot be the
+covering radius over all directions**: a norm-6 direction achieves
+`max_z cos = 3/(2 sqrt6) = 0.612372` *exactly* (proved in section 14 itself, and checked
+exactly here as `max_z <(2/3)v, z> = 2`), so the covering radius is at most 0.612372 and
+0.614863 is above it.  The right statement is the one the free-head memory already
+carries: **the covering radius is exactly `arccos sqrt(3/8) = 52.2388 degrees`, attained
+at the norm-6 directions**, which is why they are the deepest and why nothing beats norm
+6.  The conclusion of section 14 survives unchanged -- it is strengthened, since the
+norm-6 directions are now the optima rather than merely below a bound -- but the number
+0.614863 should be removed or its provenance recorded before the next release.  Two
+numbers in section 14 are also below the current record: it says the largest free-head
+set found is 58, the free-head memory says 64, and this session reaches **77**.
+
+### Dimensions 25 and 27 are on hold
+
+Both entries are now inside a joint project with H. Cohn and B. Lindow, and both of this
+repository's numbers (`tau(25) >= 197058`, `tau(27) >= 200540`) are **superseded by
+unpublished joint work**.  Do not re-derive them, do not submit them, and do not treat
+`RESULTS.md` rows 25 and 27 as current.  The working material is private, in
+`research/collab2531/` (`FINDINGS.md` is the record) and it stays out of this package
+until the collaboration publishes.
+
+## 110. The cap layer of a 24+1 construction is a BALL, and its whole payoff is one identity (2026-09-03)
+
+Section 109 left dimensions 25 and 27 on hold inside the joint project.  This section
+records the part of that work that is **ours and general** -- it is about the template
+`equator + caps + axis` itself, not about any collaborator's construction, and it applies
+in every dimension 24+k.  The specific constructions stay in `research/collab2531/`.
+
+### The cap layer is a ball, and compatibility inside it is free
+
+Work in norm-4 units: the Leech minimal vectors have `|z|^2 = 4` and two of them are
+compatible iff `<z,z'> <= 2`.  Put the equator in a hyperplane of R^25 and a cap head at
+`(x, +-a)` with `|x|^2 = rho` and `a^2 = 4 - rho`.  Then
+
+  * the head and its own mirror force `rho <= 3`;
+  * two heads are compatible iff `|x - x'|^2 + (a - a')^2 >= 4`;
+  * a head deletes exactly the equator points `z` with `<x,z> > 2`.
+
+The middle line is the whole point.  If the heads are taken from a **common coset**
+`Lambda + c`, then `|x - x'| = |lambda - mu| >= 2` already, so *every* pair is compatible
+whatever the two radii are.  The head set is therefore not a sphere but a ball,
+
+    X = Lambda ^ B(y, sqrt3),      y = -c,
+
+with all of its shells at once.  Earlier work in this repository (section 4, section 14)
+looked only at single spheres of heads and so could not see this.
+
+### The identity
+
+Writing `r_lambda = |lambda - y|`, a head `lambda` deletes `lambda - p` for exactly those
+`p in X` with `|lambda - p| = 2` and `r_p < r_lambda`.  Hence
+
+    N(24+1) = 196560 - |D| + 2|X|,
+    D = { lambda - p : lambda, p in X, |lambda - p| = 2, r_p < r_lambda }.
+
+**Pairs at equal radius cost nothing.**  That single sentence is the design rule: a good
+centre is one whose lattice points are as nearly equidistant as possible.  Two corollaries:
+
+  * a *free* head is a point of `X` with no strictly closer contact.  With `F` free heads
+    and all differences distinct, `|D| = |X| - F`, so
+
+        gain = 2|X| - |D| <= |X| + F.
+
+  * `y` may be moved by any lattice vector and negated without changing the gain, so the
+    search may be restricted to `y` in the Voronoi cell, `|y|^2 <= 2`.
+
+### The shell law
+
+Two heads at radii `rho, rho' <= 3` obey `<x,x'> <= 2 - sqrt((4-rho)(4-rho'))`, so after
+normalising,
+
+    cos(x, x')  <=  (2 - sqrt((4-rho)(4-rho'))) / sqrt(rho rho')  <=  1/3,
+
+with equality only at `rho = rho' = 3`.  **The head directions always form a spherical code
+of minimum angle arccos(1/3) in R^24**, and a single shell at radius `rho` obeys the
+sharper `cos <= 1 - 2/rho`: `1/4` at `rho = 8/3`, `1/3` at `rho = 3`, `0` at `rho = 2`
+(at most 48 heads), `-1` at `rho = 1` (at most 2).  Shorter heads are freer -- they delete
+less -- but they are far worse packers, because `a = sqrt(4-rho)` grows and eats the budget.
+That tension, not the deletion count alone, is what caps the construction.
+
+Certified ceilings for the template, from the calibrated LP of section 109 with an exact
+rational dual whose non-positivity is verified on the **whole** interval by exact real-root
+counting (not on a grid):
+
+    A(24, 1/3) <= 5763.44     all heads, any shells
+    A(24, 1/4) <= 1228.49     one shell at rho = 8/3
+    calibration: A(3,1/2) <= 13.171, A(4,1/2) <= 25.583, A(8,1/2) <= 240.24,
+                 A(24,1/2) <= 196953   (published 13.158 / 25.558 / 240 / 196560)
+
+### Deletion sharing is not the route -- a covering-radius argument
+
+`|D|` can fall below the number of contacts only if one difference `mu` is shared, i.e. if
+`X` contains several disjoint pairs `(p, p + mu)`.  Let `A` be the set of closer members.
+Then `A` is inside both `B(y, sqrt3)` and `B(y - mu, sqrt3)`, and the parallelogram law
+gives `2 |p - (y - mu/2)|^2 <= 3 + 3 - |mu|^2 = 4`, so
+
+    A  subset of  B(y - mu/2, sqrt2),
+
+a ball of radius exactly the **covering radius of the Leech lattice**.  A closed ball of
+that radius holds at most the vertex set of a deep hole, `24 + k <= 48` points.  So a shared
+difference buys at most `4 * 48 - 1 = 191`, and sharing cannot be the mechanism behind a
+large gain.  (An earlier and much weaker version of this argument in section 109 gave
+"<= 24 heads per deleted point" from perpendicular components; the covering-radius form is
+the right one and it is what closes the route.)
+
+### Why the good centres are arithmetic accidents
+
+For a head at radius `r` a contact is closer iff `cos(mu, x) <= -(1 + r^2)/(4r)`.  At
+`r = 1.5` that is `cos <= -0.542`, and roughly 550 of the 196560 minimal vectors satisfy it
+-- so a *generic* centre has hundreds of deletions per head.  Measured: a random unit centre
+gives `|X| ~ 1050` and `|D| ~ 56000`, a gain of about **-54000**.  The centres that work are
+the ones where the achievable inner products are quantised so hard that the count drops from
+hundreds to one.  A worked example of the phenomenon, in the shape
+`x = (w + 2u)/3` with `w, u` minimal and `<w,u> = 1`: a head deletes `z` iff
+`<w,z> + 2<u,z> >= 7`, both brackets lie in `{0,+-1,+-2,+-4}`, and the attainable values of
+the sum jump from **6 straight to 9** -- 7 and 8 are unreachable, and 9 occurs only at
+`z = u`.  One deletion instead of five hundred, purely from an integrality gap.
+
+The consequence for searching: sweep **rational centres** `y = w/d` with `w in Lambda` and
+small `d`, not directions or random points.  `research/collab2531/basis.py` builds an exact
+integer Leech basis from the minimal vectors (Hermite normal form; `det = 8^12` in Cohn
+coordinates) and enumerates `Lambda ^ B(y, sqrt3)` exactly by Fincke-Pohst, so every gain in
+this line is an exact integer, not a float.
+
+### What this does and does not settle
+
+It gives the first rigorous ceiling for the whole `24+1` template (`gain <= |X| + F` with
+`|X| <= 5763` and `F` bounded by section 14's certificate), it rules out deletion sharing,
+and it converts the search from a continuous optimisation into a finite arithmetic sweep.
+It does **not** yet close the gap between the ceiling and the best construction.  Dimensions
+25 and 27 remain on hold under section 109.
+
+## 111. A second cap layer is a local class problem in a rank-5 Conway group scheme (2026-09-03)
+
+Section 110 showed that a single coset ball is governed by the *top multiplicity* of the
+Leech spherical code, and that it is bounded by 552.  This section records what the next
+layer is, in general, and three exact answers about it.  Numbers specific to dimensions 25
+and 27 stay in `research/collab2531/` under the hold of section 109.
+
+### The outer shell of a coset ball is optimal, and provably so
+
+Translate the unique interior lattice point of `X = Lambda ^ B(y, sqrt3)` to the origin.
+The minimal vectors on the outer sphere are exactly the **maximisers of `<lambda, y-hat>`**
+over `Lambda_min`; call their number `T`.  Projecting them onto `y-hat^perp` gives vectors
+of norm `4 - c0^2` with pairwise
+
+    cos <= (2 - c0^2) / (4 - c0^2),      c0 = 2 max cos >= 2 sqrt(3/8),
+
+the last inequality being the covering radius of the minimal-vector spherical code.  The
+bound is *decreasing* in `c0`, so it is loosest exactly at the norm-6 directions, where
+`c0^2 = 3/2` and the bound is `cos <= 1/5`.  Hence
+
+    T <= A(23, 1/5) <= 552.551   ->   T <= 552,
+
+by an exact rational certificate verified on all of `[-1, 1/5]` by real-root counting
+(calibration: `A(23, 0) <= 46.045`, and 46 = 2*23 is the known optimum).  552 is attained,
+so **`A(23,1/5) = 552` exactly** and the 552 projected vectors are an optimal spherical code
+in `R^23` at `arccos(1/5) = 78.46` degrees.  One step off the norm-6 directions the bound
+collapses: `c0^2 = 8/5` gives `A(23,1/6) <= 315`.  Measured top multiplicities agree
+exactly -- max cos `0.6124` (norm-6) gives `T = 552`, `0.6708` (norm-20) gives `T = 100`
+matching `A(23,1/11)`, `0.7071` (norm-8) gives `T = 46`.  **552 is the maximum over all
+directions, attained only at norm-6 ones.**
+
+### The second layer, and its exact ceiling
+
+Heads at the maximum radius `rho = 3` along a minimal direction, `x = (sqrt3/2) u`, delete
+exactly `{u}` and are worth `+1` each.  Alongside a norm-6 coset ball they need
+`3<u,w> - 2<u,v> <= 2` for every `w` in the shell, which makes `<u,v> = 2` **unconditionally
+admissible** and everything else prohibitively expensive (`<u,v> = 1` costs 23 shell heads
+to buy one).  So the second layer is
+
+    U  subset of  S = { u in Lambda_min : <u,v> = 2 },   no two with <u,u'> = 2,
+
+with `|S| = 11178 = |Co_3| / |HS|`: the shell is the coset space of the Higman-Sims group in
+the stabiliser of a norm-6 vector.  The conflict graph is 1100-regular and is a **rank-5
+association scheme**:
+
+    valencies       1     1100    5600    4125     352
+    eigenvalues  1100      440     134      20     -10
+    multiplicities  1       23     275    2024    8855
+
+so the Hoffman ratio bound is `11178 * 10 / 1110 = 3726/37 = 100.7027`.  The Gegenbauer LP
+on the projected spectrum `{1/10, -1/5, -1/2, -4/5}` in `R^23` gives **the same number**, and
+so does Delsarte's LP inside the scheme itself using its own eigenmatrix.  Three independent
+routes to one value, so `|U| <= 100`.  (`A(23,1/10) >= 100` is attained by the Higman-Sims
+graph's least-eigenvalue embedding, 100 unit vectors in `R^22` with `cos` in `{1/11,-4/11}`,
+so the LP is essentially sharp -- but that configuration is not the lattice one.)
+
+### The conflict criterion is linear mod 2Lambda
+
+`u, u'` conflict iff `u - u'` is minimal, which forces `class(u) + class(u')` to be a type-2
+class of `Lambda/2Lambda`.  **The converse holds on the shell**: measured on several base
+points, "conflict" and "class sum is type 2" are the *same* 1100 neighbours.  The class map
+is injective on `S` (two minimal vectors in one class are equal or antipodal, and `S` holds
+no antipodal pair), and `class(S)` sits inside the type-2 classes.  So the second layer is a
+purely `F_2`-linear question:
+
+> a maximum subset of the 11178 type-2 classes at level `<u,v> = 2` whose pairwise sums
+> avoid all 98280 type-2 classes.
+
+That is the class problem of section 5, restricted to one shell.
+
+### Two routes that are now closed
+
+**Linear.** Any sublattice `Lambda' <= Lambda` of minimum `>= 6` makes an entire coset
+independent for free, since `|u-u'|^2 >= 6` is exactly `<u,u'> <= 1`.  Such a `Lambda'` is the
+preimage of a subspace `V <= Lambda/2Lambda` with no type-2 class (`2Lambda` has minimum 16;
+type 3 gives 6 and type 4 gives 8, both harmless).  A greedy search on the bitmask
+`Bad = T2 + V`, updated by `Bad'[i] = Bad[i] | Bad[i ^ x]`, terminates at **`dim V = 11`**,
+index 8192, and the largest coset of the shell then holds only **6** heads.  *The second
+layer cannot be linear.*  (Watch the obvious trap: every element of `V` itself passes the
+`x not in Bad` test, so a greedy that forgets to exclude `V` reports unbounded dimension.)
+
+**Group-invariant.** Build the Leech lattice in *cyclic* coordinates -- the extended Golay
+code from the cyclic `[23,12,7]` generator `x^11+x^10+x^6+x^5+x^4+x^2+1` with the parity bit
+at position 23 -- and `v = (1^23, 5)` has `|v|^2 = 6` and is fixed by both the 23-cycle on
+positions 0..22 and the multiplier `i -> 2i mod 23` (order 11, since 2 is a quadratic residue
+mod 23).  `research/collab2531/cyclic.py` builds all 196560 minimal vectors from the three
+shapes and checks the count, norms and inner-product spectrum.  Then, by exhaustive maximum
+clique on the orbit-compatibility graph:
+
+    order 23: 486 orbits, 221 internally independent, mean degree 2.29  ->  max |U| = 46
+    order 11: 1016 orbits + 2 fixed points, 526 independent            ->  max |U| = 57
+
+Both are *exact maxima within the symmetry class*, and both are far below 100.  So a
+100-element layer, if it exists, has almost no symmetry of this kind -- which is the useful
+negative result, because it says orbit methods are the wrong tool here.
+
+### What is settled
+
+The `24+1` template is now pinned between an optimal first layer (552, certified) and a
+second layer bounded by 100 (three independent proofs).  The remaining gap is entirely in
+constructing the second layer, and it is a finite, exactly stated problem about type-2
+classes of `Lambda/2Lambda`.  Dimensions 25 and 27 remain on hold under section 109.
+
+### Addendum: the mixture regimes, and a correction
+
+The first version of this section said the template ceiling was `554 + 100`.  That is the
+ceiling of *one* mixture -- keeping layer A whole.  The template does not require it, and the
+two pure regimes are quite different:
+
+  * **coset only** (drop the second layer): gain 556.
+  * **second layer only** (drop the coset ball; every head at `rho = 3` along a minimal
+    direction): each head deletes its own `u`, so `gain = 2|U| - |U| = |U|`.  This is exactly
+    the **class problem** of section 5 -- record 496, LP bound 850.909.
+
+So a class of size 557 would beat the coset construction outright, and the honest ceiling for
+the whole `rho = 3` family is the class bound, not 654.  The record class being 496 is why
+the coset regime wins in practice.  Level-restricted LP bounds in `R^23`, projecting the
+level-`k` shell onto `v^perp` (`|u_perp|^2 = 4 - k^2/6`, `cos <= (1 - k^2/6)/(4 - k^2/6)`):
+
+    k = 3 -> cos <= -1/5  ->    6        k = 1 -> cos <=  5/23 ->  687
+    k = 2 -> cos <=  1/10 ->  100        k = 0 -> cos <=  1/4  -> 1047
+
+The room is at levels 1 and 0, which are exactly the blocked ones.
+
+**Two moment identities close levels 0 and -2 outright.**  With `sum_{w in W(v)} w = 276 v`
+and `sum_w <u,w>^2 = 60<u,u> + 128<u,v>^2` (from `sum_w w (x) w = 60 I + 128 v v^T`, fixed by
+the trace and by `sum_w <w,v>^2 = 552*9`):
+
+  * `<u,v> = 0` needs every `<u,w> <= 0`, and `sum_w <u,w> = 0` then forces all of them to be
+    zero, contradicting `sum_w <u,w>^2 = 240`.
+  * `<u,v> = -2` needs every `<u,w> <= -1`, and `sum_w <u,w> = -552` forces all `= -1`, giving
+    `sum_w <u,w>^2 = 552`, not 752.
+
+So the measured blocker counts (114 at level 0, 23 at level `+-1`) are not accidents.
+
+**The mixed regime is dead, and the earlier reason for it was wrong.**  Dropping `T` from
+layer A costs `|T|` and unblocks `{u : B(u) subset of T}`.  An earlier note closed this route
+by observing that all 48600 blocker sets at level 1 are *distinct* -- which proves nothing,
+since distinct sets can still overlap heavily.  The right measurement is the overlap
+distribution, and it is brutal: `|B(u)| = 23` for every candidate, each `w` blocks exactly
+2025 of them, and
+
+    max |B(u) ^ B(u')| = 6,   with most pairs at 0 or 2.
+
+The sets are in near-general position, so the cost never amortises: a greedily grown `T` of
+size 200 unblocks 22 candidates, and the net `(552 - |T|) + unblocked` falls monotonically
+(551, 547, ..., 374 at `|T| = 200`).  Level 1 is therefore not worth buying.
+
+**The rational-centre sweep is complete for `d <= 5`.**  Every norm class of `w` with
+`|w|^2 <= 16 d^2` (Cohn units), many representatives each, `d = 2..5`: **nothing exceeds 556**,
+and `d = 2` is exhaustive up to `Co_0` since norms 4, 6, 8 are all three nonzero classes of
+`Lambda/2Lambda`.  Norm-6 with `d = 4` gives 554 -- the ball loses the interior norm-6 point,
+exactly as the shell arithmetic predicts.
+
+For the record, the calibrated Delsarte bound for the dimension itself is far above all of
+this: the template's 197214 is about 67% of `A(25,1/2)`, so nothing here is close to closing
+dimension 25 from above.
+
+## 112. Three coset classes on a norm-6 triangle, and a correction to 110 and 111 (2026-09-03)
+
+Sections 110 and 111 concluded that a coset ball caps at 556 and that "all remaining room is
+in a second layer at `rho = 3`".  **That was wrong, and wrong in an instructive way.**  The
+ball framework of section 110 assumes the heads lie in ONE coset `Lambda + c`, which is what
+makes compatibility automatic.  Three cosets are not a ball -- but their heads can still be
+mutually compatible, and there are far more of them.  Specific totals for dimension 25 stay
+in `research/collab2531/` under the hold of section 109.
+
+### The triangle
+
+Take any two norm-6 vectors with `<v, v'> = -3`.  Then `|v + v'|^2 = 6 + 6 - 6 = 6`, so
+`v'' = -v - v'` is norm-6 as well, and
+
+    v + v' + v'' = 0,   <v_i, v_j> = -3  for all i /= j.
+
+**This is maximal**: `k` norm-6 vectors with pairwise `-3` have Gram `9I - 3J`, whose smallest
+eigenvalue `9 - 3k` is non-negative only for `k <= 3`.  So the zero-sum triple is forced, not
+chosen -- there is no tetrahedron at `-3`.  More generally `k` norm-6 vectors pairwise at `t`
+and summing to zero need `6k + k(k-1)t = 0`, i.e. `t = -6/(k-1)`: `k = 3` at `-3`, `k = 4` at
+`-2`, `k = 7` at `-1`, and `t = 0` with no sum rule.
+
+Each `v_i` carries a class `A(v_i) = {u minimal : <u, v_i> = -3}` of 552 owners, and each
+owner a head `x = u + v_i/3` at `rho = 8/3` deleting exactly `{u}` (section 110's integrality
+gap).  The three classes are **owner-disjoint**: `<u, v_i> = <u, v_j> = -3` forces
+`<u, v_i + v_j> = -6`, but `|v_i + v_j| = sqrt6` and `|u| = 2` cap it at `2 sqrt 6 = 4.9`.
+
+### The cross condition, and why it is loose
+
+Within a class every pair is compatible (section 110).  Across classes, `x = u + v_i/3` and
+`x' = u' + v_j/3` are compatible iff `<x,x'> <= 2 - 4/3 = 2/3`, i.e.
+
+    9<u,u'> + 3(<u,v_j> + <u',v_i>) + <v_i,v_j> <= 6,
+
+and at `t = -3` this is `3<u,u'> + a + b <= 3` with `a = <u,v_j>`, `b = <u',v_i>`.  The two
+cross terms are **confined to `{0,1,2,3}`**, because `<u, v_k> = 3 - a` for the third vector of
+the triangle and minimal-against-norm-6 inner products lie in `[-3,3]`.  Hence
+
+  * `<u,u'> <= -1`  ->  always compatible;
+  * `<u,u'> = 0`    ->  compatible iff `a + b <= 3`;
+  * `<u,u'> = 1`    ->  compatible iff `a = b = 0`;
+  * `<u,u'> = 2`    ->  never.
+
+Measured on 1656 heads: the conflict graph is **purely cross-class, density 0.025, mean
+degree 41, max degree 85**.  That is a completely different regime from the `rho = 3` second
+layer of section 111 (1100-regular on 11178, mean degree 1100).  An incremental min-degree
+greedy on it does very well immediately.
+
+**All three free heads survive.**  `-2 v_i / 3` is at `rho = 8/3`, deletes nothing
+(`<-2v/3, z> > 2` needs `<v,z> < -3`), and against any class head the condition collapses to
+`<u', v_i> >= 0`, which the triangle's `a in {0,1,2,3}` guarantees.  Pairwise among
+themselves, `<-2v_i/3, -2v_j/3> + 4/3 = (4/9)(-3) + 4/3 = 0`.  So they contribute `+2` each
+rather than the single `+2` of one class.
+
+### Where this puts the ceiling
+
+Every head here sits on one sphere, `rho = 8/3`, so the head directions form a `cos <= 1/4`
+code in `R^24` and the *whole* construction is bounded by
+
+    (heads) + (free heads) <= A(24, 1/4) <= 1228   (certified, section 110),
+
+so gain `<= 1228 + F` with `F` the free-head count, itself `<= 280` by section 14.  The old
+"554 + 100" of section 111 was never a ceiling on the template -- it was the ceiling of one
+mixture.
+
+### The lesson
+
+A framework that makes a constraint disappear ("one coset, so compatibility is free") will
+quietly fix the very parameter that mattered.  The ball identity was correct and the
+top-multiplicity bound of 552 was correct; what was wrong was reading "552 is the maximal
+shell" as "552 is the maximal head set".  It bounds one class.  Also: an earlier note recorded
+that "a cross-class conflict IS a deletion-set collision"; that holds for the `+3`
+configuration it was measured on, but **not** at `t = -3`, where the classes are owner-disjoint
+and cross-conflicts are plentiful.  Scope a measured claim to the configuration it was
+measured on.
+
+### Addendum: why a class is conflict-free -- it is a class mod 3Lambda
+
+Write the head as `y/3` with `y in Lambda`.  `rho = 8/3` means `|y|^2 = 24`, and the
+compatibility condition `<x,x'> <= 2/3` is `<y,y'> <= 6`, i.e. `|y - y'|^2 >= 36`.  But
+
+    3 Lambda has minimum 9 * 4 = 36,
+
+**exactly** the separation required.  So **any two heads congruent mod `3 Lambda` are
+automatically compatible**, and that -- not the coset-ball argument of section 110 -- is the
+real reason a coset class is conflict-free.  It also says exactly how big a class can be.
+
+`|c + 3 lambda|^2 = 24` gives `2<c,lambda> + 3|lambda|^2 = (24 - |c|^2)/3`, so a class can
+contain norm-24 vectors only if `|c|^2 = 0 mod 3`; being even, `|c|^2 in {6, 12, 18, 24}`.
+And `|lambda| <= |c|/3 + sqrt(8/3)` bounds which shells of `lambda` can occur, which makes the
+enumeration finite and complete.  For `|c|^2 = 6` only `|lambda|^2 in {4,6}` are possible:
+
+    <c,lambda> = -3, |lambda|^2 = 4  ->  552 heads   (the class A(c))
+    lambda = -c,     |lambda|^2 = 6  ->  y = -2c, the FREE head
+
+so the class of a norm-6 vector contains **exactly 553** norm-24 vectors, and that is Cohn's
+layer A, complete, with its free head explained as the one `lambda = -c` solution.  Measured
+counts for the other admissible norms (representatives sampled, enumeration complete for
+`|c|^2 <= 12`):
+
+    |c|^2 =  6 :  553 norm-24 vectors,  ALL valid heads (552 delete one, 1 free)
+    |c|^2 = 12 :  782 norm-24 vectors,  NONE valid -- every one deletes >= 2
+    |c|^2 = 18 :  725 norm-24 vectors,  none valid
+    |c|^2 = 24 :  551 norm-24 vectors,  all valid
+
+The `|c|^2 = 12` class is the tantalising one: 782 mutually compatible heads, 40% more than
+553, all rejected only by the deletion count.  Whether their deletions overlap enough to pay
+is a coverage question, not a packing one.
+
+### A second family of rho = 8/3 heads
+
+Heads need not be `(2u+w)/3`.  Taking `x = y/6` with `|y|^2 = 96`, the extreme case
+`<y,z> = 19` forces `y = 5z + r` with `|r|^2 = 6` and `<z,r> = -1`, and the deletion check
+closes by the same kind of arithmetic: a rival `z'` with `<z,z'> = 2` would need
+`<r,z'> = 3`, making `r - z'` minimal with `<z, r-z'> = -3`, which is not an inner product
+between minimal vectors.  So
+
+    x = (5z + r)/6,    |x|^2 = 96/36 = 8/3,   deletes exactly {z},
+
+verified on 120 samples.  These are genuinely new: `u + v/3` would need `(r-z)/2` to be a
+norm-6 lattice vector, but `|r-z|^2 = 12`.  None of 400 samples fits alongside a full
+triangle, so the triangle is locally saturated -- but the candidate space for the head problem
+is much larger than one shell of one coset.
+
+### The hexagon is not better
+
+`v_1 + v_2 + v_3 = 0` with pairwise `-3` means the Gram of `(v_1, v_2)` is `[[6,-3],[-3,6]]`:
+the triangle spans a **hexagonal `A_2` plane of minimum 6** inside `Lambda`, and
+`{+-v_1, +-v_2, +-v_3}` are its six shortest vectors -- equivalently the `Z_6` orbit
+`{+- omega^j v}` of the Eisenstein structure, since `<x, omega x> = -|x|^2/2`.  Using all six
+directions gives 3312 candidates (3114 distinct owners), density 0.043, mean degree 141, and
+CP-SAT proves the optimum is again **762** -- but with *no* surviving free head, so it is
+strictly worse.  Its optimum sits almost entirely in the antipodal triangle
+`{-v_1,-v_2,-v_3}`, which is itself a triangle: the two triangles do not combine.
+Random extra directions do not help either (K = 6 with three random additions: still 762).
+
+### Addendum: the mod-n Lambda principle in general, and what it does not give
+
+The coincidence at `n = 3` is not a coincidence.  For heads `y/n` with `|y|^2 = rho n^2`, the
+compatibility requirement is `<y,y'> <= n^2 (rho - 2)`, while `y = y' mod n Lambda` gives
+`|y - y'|^2 >= 4 n^2`, i.e. `<y,y'> <= rho n^2 - 2 n^2`.  **The same inequality, for every
+`n`.**  So a whole class of `Lambda / n Lambda` on any admissible shell is automatically a
+compatible head set, and the second head family of the previous addendum is simply the case
+`n = 6`: `y = 5z + r = (r - z) + 6z`, with `c = r - z` of norm 12 and `<c,z> = -5`.
+
+Measured, at `rho = 8/3`:
+
+    n = 3, |c|^2 =  6 : 553 heads, all valid          -> gain 554   (Cohn's layer A, exactly)
+    n = 3, |c|^2 = 12 : 782 heads, NONE valid
+    n = 3, |c|^2 = 18 : 725 heads, none valid
+    n = 3, |c|^2 = 24 : 551 heads, all valid          -> gain 552
+    n = 6, |c|^2 = 12 :  24 heads, all valid          -> gain  24
+    n = 6, |c|^2 = 24 : 552 heads, all valid          -> gain 552
+    n = 6, |c|^2 = 36, 48 : hundreds of heads, deletion cost swamps them (gain < 0)
+
+So no single class beats one norm-6 class, and the whole advance comes from combining three of
+them on a triangle.
+
+### Everything else that was tried and did not help
+
+  * **Hexagon** (all six `+-v_i`): 3312 candidates, 3114 distinct owners, density 0.043, and
+    CP-SAT proves the optimum is again 762 -- but *no free head survives*, so gain 762 < 768.
+    Its optimum lies almost entirely in the antipodal triangle, which is itself a triangle.
+  * **Orthogonal hexagonal planes** (`t = 0` families): k = 3 gives 570, k = 4 gives 526,
+    k = 6 gives 499, k = 8 gives 563, k = 12 gives 527.  All far below 768.  Counter-intuitively
+    the looser-looking condition (`a, b` free in `[-3,3]` instead of `{0,1,2,3}`) yields a
+    *denser* conflict graph: 0.040 at k = 3 against the triangle's 0.025.
+  * **Random extra directions**: triangle plus three random norm-6 vectors, 3312 candidates,
+    422407 edges -- still 762.
+  * **rho = 3 heads** `(sqrt3/2)u` alongside the optimal triangle: **zero** candidates survive
+    `3<u,u_0> + <u,v_i> <= 2`.  The triangle saturates that shell.
+  * **Second-family heads** `(5z+r)/6` alongside the triangle: 0 of 400 samples compatible.
+  * **"Free riders"** -- further heads whose whole deletion set is already deleted, worth `+2`
+    for nothing.  Shape `y = 2z + q`, `|q|^2 = 8`, `<z,q> = 0`: 0 found in 11160 tests.
+
+The triangle configuration is saturated, and 768 is the optimum of its own family by CP-SAT.
+The gap to the certified ceiling (1168 for the triangle inner-product spectrum, 1227 for an
+arbitrary `cos <= 1/4` code) is therefore not reachable by any of these moves, and closing it
+needs candidate positions outside a union of three classes.
+
+## 113. Every useful cap head is a PAIR of minimal vectors, and three negatives were vacuous (2026-09-03)
+
+Section 112 built a construction and then listed six things that failed to extend it.  Auditing
+both halves turned the construction into a theorem and turned two of the six negatives into
+nothing at all.  Specific totals for dimension 25 stay in `research/collab2531/` under the
+hold of section 109; everything below is general Leech geometry.
+
+### The level of a deletion, and the classification
+
+A `rho = 8/3` head is `y/3` with `y` in `Lambda` and `|y|^2 = 24`; it deletes the equator
+points `D(y) = {z in Lambda_min : <y,z> >= 7}`.  Since
+
+    |y - 2z|^2 = 24 + 16 - 4<y,z> = 40 - 4<y,z>,
+
+the *level* `t = <y,z>` of a deletion is 7, 8 or 9 exactly as `|y - 2z|^2` is 12, 8 or 4.
+Cauchy-Schwarz caps `t` at `sqrt(24*4) = 9.79`, so those three are all there is.
+
+**Level 9 is the pair form.**  `t = 9` makes `y - 2z` minimal, so `y = 2z + w` with `z, w`
+minimal and `<z,w> = 1` forced by `|y|^2 = 24`.  Then for any *other* minimal `z2`,
+
+    <y,z2> = 2<z,z2> + <w,z2>,
+
+and reaching 7 requires `<z,z2> = 4`, i.e. `z2 = z`: the case `<z,z2> = 2` needs
+`<w,z2> >= 3`, hence `z2 = w`, hence `<z,z2> = <z,w> = 1`, a contradiction, and `<z,z2> <= 1`
+leaves `<w,z2> >= 5`, impossible.  **So a level-9 head deletes exactly one equator point.**
+This was previously a measurement (`del/head min 1 max 1` over a chosen set); it is a
+theorem, and it holds for every one of the pairs.
+
+**Owners cannot collide.**  Two level-9 heads sharing an owner would have
+`<2z + w, 2z + w2> = 20 + <w,w2> >= 16`, far above the threshold 6.  So a set of level-9
+heads *automatically* has distinct owners and `|D| = |S|`.  An assertion that cannot fail is
+not a check.
+
+**Free heads are the norm-6 doubles.**  `y = 2v` with `|v|^2 = 6` deletes nothing, because
+`<2v,z> >= 7` forces `<v,z> >= 4`, i.e. `|v - z|^2 <= 2`, and `Lambda` has no norm-2 vector.
+
+**Both kinds live in norm-6 classes mod `3Lambda`.**  `2z + w = w - z` and `2v = -v` mod
+`3Lambda`, and `|w - z|^2 = 6`.  A norm-6 class holds exactly one norm-6 vector, since
+`|v + 3l|^2 = 6` forces `l = 0`.  So the classes correspond one-to-one with the 16773120
+norm-6 vectors, each carrying its 552 level-9 heads and its single free head -- and the whole
+candidate space is the 9.26e9 ordered pairs of minimal vectors at inner product 1, plus those
+16773120 free heads.
+
+### Only norm-6 classes can pay, by complete enumeration
+
+A class mod `3Lambda` is `Lambda ^ S(-y/3, sqrt(8/3))`, a sphere of radius 1.633 -- small
+enough for Fincke-Pohst, so a class can be enumerated **completely** instead of searched.  The
+class norm is an invariant mod 6, because `|c + 3mu|^2 - |c|^2 = 9|mu|^2 + 6<c,mu>` and Leech
+norms are even; so only minima 6, 12, 18, 24 can contain a norm-24 vector at all:
+
+    class minimum    |X|    deletions per head        gain = 2|X| - |D|
+         6           553    {0:1, 1:552}                    +554
+        12           891    {3:891}                         -891
+        18           783    {17:759, 23:24}               -11613
+        18 (other)   729    {24:729}                      -16038
+
+Every head outside a norm-6 class carries at least three deletions, and the gain collapses.
+There is nothing to look for there -- which is the content of the classification above, seen
+from the other side.
+
+### The sharing lemma, and why two of section 112's negatives were vacuous
+
+Can two heads share a deleted point?  Project both along `z`:
+`y = (t/4) z + y_perp` with `|y_perp|^2 = 24 - t^2/4`, so
+
+    <y,y2>  >=  t*t2/4 - sqrt((24 - t^2/4)(24 - t2^2/4)).
+
+Against the threshold 6 the level pairs give 0.5, 4.30, 9.11, 8, 12.52, 16.50 for
+`(7,7), (7,8), (7,9), (8,8), (8,9), (9,9)`.  **Only `(7,7)` and `(7,8)` can share**, and three
+heads on one point are impossible for every level triple, since the Gram of the perpendicular
+components then has negative total mass.  So at most two heads share a deleted point, and only
+through level 7.
+
+Two consequences, both corrections:
+
+* Section 112's last bullet -- "free riders, shape `y = 2z + q`, `|q|^2 = 8`, `<z,q> = 0`:
+  0 found in 11160 tests" -- is level 8, which the lemma forbids outright.  **The search space
+  was empty before the search started.**  The reported zero was not evidence about the
+  geometry; it was evidence about the shape that had been chosen.  The docstring named a second
+  shape, at level 7, that was never coded.
+* Coding it finds sharing pairs immediately -- 1500 of 1500 attempts, for both `(7,7)` and
+  `(7,8)`.  But a level-7 head carries 17 to 24 deletions, so sharing is never profitable.
+  The conclusion `|D| = |S|` survives; the reason for it is entirely different.
+
+The same lemma also explains why nothing can be layered onto the construction of section 112:
+its heads delete at level 9 (`<3u + v, u> = 12 - 3 = 9`), and a level-9 deletion can never be
+shared by anything.
+
+### The objective had weights and the solver was not told
+
+A level-9 head is worth `+1` (one sphere gained, one equator point lost, twice over) and a
+free head is worth `+2`.  So the quantity to maximise is
+
+    gain = |S| + 2|W|,
+
+and the CP-SAT run of section 112 maximised an **unweighted** count over the owner-carrying
+candidates, with the free heads added by hand afterwards.  The answer happened to be right,
+for a reason worth recording: the three free heads are compatible with *every* candidate of
+the three classes -- against a different class the condition collapses to `<u2, v_i> >= 0`,
+which the triangle guarantees, and against its own class it is exactly the threshold.  So they
+cost nothing and the unweighted optimum plus three is the weighted optimum.  Re-solving with
+the weights, over all vertices at once, confirms it and proves optimality.
+
+That is luck, not method.  And the free pool is 16773120, not three: pricing a 564243-vector
+sample of it against the construction, the **cheapest** free head outside the three kills 26
+candidates for a benefit of 2, and **no** other free head is free.  A weighted problem solved
+unweighted is not solved.
+
+### The maximality is elementary
+
+For a fourth norm-6 class, `t_i = <v_4, v_i>` satisfies
+`t_1 + t_2 + t_3 = <v_4, v_1 + v_2 + v_3> = 0`.  Two of them equal to `-3` forces the third to
+be `+6`, i.e. `v_4 = v_3`.  **That is the whole proof that three is the maximum** -- the
+positive-semidefiniteness argument through `9I - 3J` is not needed, and this version says why:
+the three inner products must sum to zero, so a fourth class always pays a positive one
+somewhere, and `t = -3` is the loosest pairing that exists.  Enumerating all thirteen
+`t`-patterns that occur in the norm-6 shell and solving each exactly gives the same optimum
+every time.
+
+### A finite spectrum makes the Delsarte LP exact
+
+Section 109 insisted a Delsarte bound be calibrated and carry an exact dual certificate,
+verified on a whole interval by real-root isolation.  For a **lattice** configuration there is
+a much better move.  The heads are norm-24 lattice vectors, so `<y,y2>` is an *integer*, and
+
+    |y - y2|^2 = 48 - 2k  and  |y + y2|^2 = 48 + 2k  must be 0 or a Lambda norm,
+
+which leaves `k` in `{-24} u {-22,...,6}` -- thirty values, `cos = k/24`.  The polynomial only
+has to be non-positive on those thirty points, so the LP is **finite**: it can be solved in
+exact rational simplex and the certificate verified point by point, with no grid and no root
+counting.  Written in the origin-feasible primal form
+
+    max 1 + sum_i a_i   s.t.  a_i >= 0,  sum_i a_i G_k(t_i) >= -1   (k = 1..K)
+
+plain simplex suffices, and strong duality hands back the certificate.
+
+Calibration, on the two Leech shells whose answers are known: the routine returns **exactly
+196560** on the minimal-vector spectrum `cos = k/4` and **exactly 16773120** on the norm-6
+shell `cos = k/6`.  Not "close to" -- the integer.  A finite spectrum is where Delsarte is
+sharp.
+
+It also improves the interval bound: an arbitrary `cos <= 1/4` code in `R^24` was bounded by
+1227 on the interval, and by `232713/191 = 1218.39` on the true integer spectrum.  And the two
+ceilings section 112 recorded are **confirmed**, now with exact rational certificates:
+`13405743/14959 = 896.17` for a single class and `138996/119 = 1168.03` for a union of
+classes.
+
+The first attempt at this failed loudly and usefully: writing the calibration spectrum by hand
+I dropped `cos = 1/2`, and the LP returned 850 for a configuration of 196560 points -- a bound
+*below* the truth, which is the signature of section 109's failure mode reached through the
+spectrum instead of through the basis.  A calibration that can only pass is not a calibration.
+
+### The lesson
+
+Three of them, and the middle one is the transferable one.
+
+1. A gap between a construction and a certificate is not automatically room.  Here every route
+   into it is closed from the construction side -- more classes, free heads, other levels,
+   sharing -- so the gap is a weakness of a one-point bound applied to what is really a set of
+   *pairs* `(head, owner)`.  Closing it needs a two-point bound, not another search.
+2. **A negative result has a domain, and it can be empty.**  "0 found in 11160 tests" reads
+   like evidence about the geometry and was evidence about the shape searched -- a shape a
+   two-line projection argument forbids.  Before reporting that a search found nothing, prove
+   the search space was not empty.  Nothing downstream can catch this: the count is real, the
+   code is correct, and the conclusion it suggests happened to be true here for a completely
+   different reason.
+3. An optimum computed for the wrong objective is not an optimum.  If the terms of the
+   objective have different values -- and here one head is worth twice another -- the solver
+   has to be told.
+
+## 114. Enumerating extreme points is not searching the feasible set (2026-09-04)
+
+In a 24+1 cap construction a head is a point `x` with `|x|^2 = rho` that must clear the
+equator, `<x,z> <= 2` for every minimal `z` except the one it deletes.  Call that region the
+*lens* of the owner `u`.  Its extreme points are the "class heads" `u + t v`, and a search
+over classes enumerates exactly those.  For a long time every scan we ran did so, and a
+constraint solver reported OPTIMAL each time.
+
+**That is optimal for the model, not for the problem.**  The lens is a convex body cut by a
+sphere, and the *other* heads already placed impose further linear constraints `<x,x'> <= c`.
+Those can remove every extreme point while leaving the interior feasible.  Re-posing head
+finding as continuous feasibility -- seed at the radial point `(sqrt(rho)/2) u`, which always
+clears the equator since `<x,z> <= sqrt(rho) < 2`, and descend on total violation -- produced
+heads immediately that are provably not extreme points (their distance to the owner is a
+quarter of the extreme value).
+
+**How to apply.**  When a combinatorial search over a parametrised family plateaus, ask what
+the family is the extreme-point set OF, and whether the true feasible region is that family or
+its convex hull under later constraints.  If the latter, the subproblem is usually a small
+convex program -- 24 variables here, solved exactly with cutting planes on the (mostly
+inactive) equator constraints.  A solver reporting OPTIMAL certifies the model it was given
+and never the modelling choice.
+
+### 114.1  The cap constant is a polytope circumradius
+
+Write the head as `x = u + d`.  The norm condition is `2<u,d> + |d|^2 = rho - 4`, and the
+equator condition against a touching `z` (`<u,z> = 2`) is simply
+
+    <x,z> = 2 + <d,z> <= 2   <=>   <d,z> <= 0.
+
+So **the lens is a sphere intersected with the polar cone of the touching neighbours** --
+nothing more.  Splitting off the `u`-component (`<d,u> = -(1+D)/2`, `D = |d|^2`, at `rho = 3`)
+gives `<d_perp, z_perp> <= (1+D)/4` with `|d_perp|^2 = D - (1+D)^2/16`.  Hence
+
+> the maximum `|d|` -- the cap constant, and with it the whole class structure -- is the
+> **circumradius of the polytope `P = { w : <w, z_perp> <= 1 }`**.
+
+This is the right way to compute it.  Maximising `|w|` over `P` is maximising a convex
+function, so use successive linearisation from many restarts, not a descent seeded from the
+family you are trying to test: such a seed can only ever confirm it.  Sixty restarts returned
+the class value exactly, which is far stronger evidence than the single seeded descent that
+had produced the same number earlier.
+
+### 114.2  The accounting: `2|H| - |D|`, and when sharing could pay
+
+The gain of a cap construction is
+
+    gain = 2|H| - |D(H)|,     D(H) = union of the deleted equator points,
+
+because a mirrored head contributes two points and its deletions cost one each.  Putting each
+head in a *1-lens* forces `|D| = |H|` and collapses this to `gain = |H|`.  That bijection, not
+the search, is what caps the construction -- and it is worth checking rather than assuming.
+
+Breaking it needs heads that SHARE deletions, hence heads deleting more than one point, which
+live in bigger regions: for a clique `K` of mutually touching minimal vectors,
+
+    L_K = { x : |x|^2 = rho, <x,u> > 2 for u in K, <x,z> <= 2 otherwise },
+
+and `m` points in `L_K` pairwise at distance `>= 2` are worth `2m - k` against the `k` that
+`k` separate 1-lenses give.  So the whole question is whether any `k`-lens holds more than `k`
+points.  In the Leech case it does not: the 2-lens centre `(u+u')/2` deletes exactly two
+points (its inner product with any common neighbour is exactly 2, on the boundary), but its
+diameter measures below 2, so it holds one; and the centroid of a triangle deletes hundreds.
+The accounting is worth writing down anyway -- it says exactly which measurement decides the
+question, and in another lattice the answer could differ.
+
+### 114.3  Two traps in the convex reformulation
+
+1. **A linear objective over a ball lands inside it.**  Maximising `<x,u>` over
+   `{|x| <= r} ∩ {linear}` puts the optimum strictly inside whenever the linear constraints
+   bind, and such a point is not a head.  Existence of a head is the question *does the
+   feasible set reach the sphere*, i.e. `max |x|` over it -- maximising a convex function, so
+   non-convex, and successive linearisation is the tool.  I twice read an interior optimum as
+   evidence and once as a refutation, and both readings were empty.
+2. **Do not rescale the solution back onto the sphere.**  Scaling `x` up raises every inner
+   product; it broke a head-head constraint that had held.  A solution with `|x| < r` is not
+   invalid -- it is a head at a *higher* layer height `h = sqrt(4 - |x|^2)`, which tightens the
+   very constraint it must satisfy.  Solve for the height, do not impose it.
+
+Also: keep the cutting-plane set honest.  Restricting it to the touching neighbours is valid
+only while `|d|` stays inside the cap bound; outside that, vectors at `<u,z> = 1` bind too.
+And match tolerances -- a loop accepting at `2 + 1e-7` against a verifier demanding `2 + 1e-9`
+discards valid solutions silently, which reads exactly like an obstruction.
+
+## 115. One projection identity governs every "how many touch the maximum" count (2026-09-04)
+
+Working in norm-4 units (Leech minimal vectors have `|z|^2 = 4`, pairwise `<z,z'> <= 2`),
+the same two-line computation answers a whole family of questions that had been
+attacked separately.
+
+### 115.1  The identity
+
+Let `g` be any lattice vector, `n = |g|^2`, and `M(g) = max over minimal z of <g,z>`.
+The minimal vectors attaining the maximum project onto `ghat` with squared component
+`M^2/n`, so their perpendicular parts have norm `4 - M^2/n`, and `<z,z'> <= 2` becomes
+
+        cos(perp, perp')  <=  (2 - M^2/n) / (4 - M^2/n).
+
+So the multiplicity of the maximum is at most `A(23, that value)`.  The bound is a
+**decreasing** function of `M^2/n`, so the shallower the vector the weaker it is.  Three
+instances, all tight:
+
+    M^2/n = 3/2   (n=6,  M=3)   cos <= 1/5    A(23,1/5) = 552   observed 552
+    M^2/n = 2     (n=8,  M=4)   cos <= 0      2 x 23    =  46   observed  46
+    M^2/n = 25/12 (n=12, M=5)   cos <= -1/23  1 + 23    =  24   observed  24
+
+The last two are the orthoplex and simplex bounds; the attaining sets really are a
+cross and a regular simplex in the 23-space.  Anything of the form "how many minimal
+vectors sit at the top inner product with this vector" should be answered this way
+before it is searched.
+
+### 115.2  A cap head with a common displacement: complete classification
+
+In the equator-plus-caps template a cap point is `x = u + d` with `|x|^2 = rho`, and the
+case where every head of a family shares ONE displacement `d` is the "class".  The norm
+condition forces `<u,d> = -(rho - 4 + |d|^2)/2`, so the owners are the minimal vectors
+on a single hyperplane.  More than 24 of them span, so `d` is parallel to a lattice
+vector `g`, and then
+
+    d = lambda g,  lambda = (m - sqrt(m^2-n))/n,  m = -<u,g>,
+    the lens condition <g,z> <= 0 for every neighbour z of an owner  <=>  M(g) <= m,
+
+and the third line is automatic, because `z - u` is minimal whenever `<u,z> = 2`, giving
+`<g,z> <= M(g) - m`.  Since `m` is attained, `m <= M(g)`, so **`m = M(g)` exactly** -- the
+family is determined by `g` alone.  At `rho = 3` the lens circumradius `|d|^2 <= 2-sqrt3`
+becomes `2 M^2 >= 3 n`, i.e. `M^2/n >= 3/2`, and 115.1 then caps every such family at
+**552 for every `g`**, with equality only when `2M^2 = 3n`.  Previous work had checked
+this for norm-6 `g` only; it holds over all of `Lambda`.
+
+### 115.3  Two cap points cannot share an owner unless both are shallow
+
+If `x` and `x'` both delete the same equator point `u`, project along `u`: with
+`a = <x,u>/2`, `b = <x',u>/2` and `|x|^2 = |x'|^2 = 3`,
+
+        <x,x'>  >=  a b - sqrt(3-a^2) sqrt(3-b^2),
+
+so `<x,x'> <= 1` forces `<x,u> <= 2 sqrt2` when the two depths are equal, and the number
+of cap points that can share one owner at depth `s` is at most
+
+        N(s) = 1 + (12 - s^2)/(s^2 - 4).
+
+A structure in which every head deletes `k` points and every owner carries `d` of them
+gains `|U| (2d/k - 1)` instead of `|U|`, so sharing pays only if some cap point has `k`
+deletions all at depth `<= s_k`, where `N(s_k) = k+1`:
+
+        s_k = sqrt((12 + 4k)/(k + 1)).
+
+**The tail closes by an exact coincidence.**  `s_15 = sqrt(72/16) = sqrt(4.5)`, and
+`sqrt(4.5)` is exactly the covering-radius floor: every point of norm `sqrt3` has some
+minimal `z` with `<x,z> >= 2 sqrt(3/8) * sqrt3 = sqrt(4.5)`.  Since `s_k` decreases,
+`s_k <= sqrt4.5` for every `k >= 15`, with equality at `k = 15` only for a norm-6
+direction -- which has 552 deletions, not 15.  So the inequality is strict and **every
+`k >= 15` is closed at once**, by a genuine lower bound rather than a search.
+
+### 115.4  Method: which side of the bound a descent gives you
+
+Penalty descent onto a feasible point reports an **upper** bound on a minimum.  A claim
+of the form "the minimum is above the threshold, so the route is closed" needs a LOWER
+bound and cannot be settled that way -- the same one-sided trap recorded in section 114.
+Here only the covering radius supplies a lower bound; everything else is evidence.
+
+The useful search shape for evidence is a **frontier trace**: descend under
+`max_z <x,z> + lam * sum_z (<x,z> - 2)_+` for many `lam` and many starts, and record,
+for every value of `D = #{z : <x,z> > 2}` seen along every trajectory, the smallest
+depth at which it was seen.  Every iterate is a data point, so one descent contributes
+hundreds, and nothing about the deletion set has to be assumed -- in particular it need
+not be a clique, which a fixed-owner-set search silently assumes.  Calibrate it on the
+global minimum: the trace must reach `sqrt4.5 = 2.12132`.
+
+## 116. Ask for the COST, not for feasibility (2026-09-04)
+
+In the equator-plus-caps template a cap head must sit in the "lens" of one equator
+point -- it may exceed the threshold against that point and no other.  Searching for one
+more head is then a feasibility question, and the natural tool is a penalty descent onto
+the sphere.  That is the wrong question, and it produced two wrong conclusions in this
+project.
+
+### 116.1  A descent answers a different question than the one asked
+
+A descent returns a feasible point when it finds one and nothing when it does not.  Its
+silence is not evidence.  Worse, when the objective mixes a hard geometric constraint
+with a soft combinatorial one, the weights decide the answer: a lens penalty three orders
+of magnitude above the head penalty makes the descent return a near-radial point and
+report ITS conflicts, which is not the minimum of anything.  On that basis I recorded
+"every candidate is blocked by at least nine heads, so there is nothing to trade".
+
+The right quantity is exact and enumerable.  For each candidate owner `u`, the extreme
+points of its lens are the finitely many `u + t- v` with `v` of norm 6 and `<u,v> = -3`
+(47104 of them in the Leech case), so
+
+        cost(u) = min over v of #{ heads x_j : <u + t- v, x_j> > 1 }
+
+is one matrix product per owner -- no tolerance, no basin, no weights.  Enumerated, the
+same configuration had candidates of cost 1, and hundreds of cost 2.  The negative was a
+property of the probe, not of the geometry.
+
+### 116.2  With costs in hand, improvement is an integer program
+
+Once every candidate carries a cost and an explicit blocker set, the improvement question
+has no geometry left in it:
+
+        choose B (heads to drop) and A (candidates to add)
+        subject to  blockers(u) subset of B for each u in A,  and A pairwise compatible
+        maximise    |A| - |B|
+
+A positive optimum is a strict improvement, and it is verified afterwards against the
+whole equator.  This is the exact form of the (1,2)-swap that escapes a jammed
+independent set, and it found improvements where six descent-based searches had been
+pinned on the same value for hours.
+
+### 116.3  A family where no probe is needed at all
+
+The RADIAL cap point `x = (sqrt3/2) u` is a valid one-deletion head for **every** owner
+unconditionally: `<x,z> = (sqrt3/2)<u,z> <= sqrt3 < 2` for every minimal `z != u`, and
+`<x,u> = 2 sqrt3 > 2`.  So for that family the whole analysis is linear -- availability
+is `<u, x_j> <= 2/sqrt3` for every head, and radial-radial compatibility is
+`<u,u'> <= 1`.  One matrix product over the entire shell answers in a second what a
+per-owner descent spends hours on.  Compute the linear family first; it also gives an
+exact blocker histogram, which is the input to 116.2.
+
+### 116.4  Keep one canonical artefact, and guard it with a check that can fail
+
+Nineteen scripts here defaulted to the tag of what used to be the best configuration.
+A stale default is well typed and silent: the script runs, verifies, and reports a
+correct result about a superseded object.  The fix is not discipline but a check --
+a canonical name for the current best, plus a guard that scans every artefact on disk,
+verifies each one **from the artefact alone**, and asserts that the canonical one is the
+largest that passes.  Test the guard by feeding it corruptions (points off the sphere,
+two entries made equal, a duplicated owner, an object attached to the wrong owner); if
+none of them makes it fail, it is not checking what you think.
+
+## 117. A norm-equality feasibility question is an LP in disguise (2026-09-04)
+
+The question "does the set S = {x : |x| = r, A x <= b} contain a point?" looks
+non-convex, and for months we answered it by enumerating the extreme points of
+the polyhedral part. That misses everything in the interior.
+
+**If every b_i > 0, the question is exactly "does max |y| over P = {y : Ay <= b}
+reach r?"** One direction is trivial. The other is the useful one: given y* in P
+with |y*| >= r, set x = r y*/|y*| and c = r/|y*| <= 1; then |x| = r and
+A x = c A y* <= c b <= b, because b > 0. So x is feasible.
+
+Maximising the convex function |y| over a polytope is then a Frank-Wolfe style
+LP iteration, d <- y*/|y*|, each step a plain linear program. It converges to a
+local maximum, which is enough: any iterate reaching r settles the question
+affirmatively, and the resulting point is re-verified against the full
+constraint list afterwards.
+
+Three consequences we actually used:
+
+* **Interior solutions become reachable.** The points found this way were not
+  vertices of the polyhedral part, so no enumeration of the natural discrete
+  family could have produced them. That is precisely why the discrete search had
+  plateaued.
+* **A cheap necessary condition orders the work.** If x must satisfy
+  <x,u> >= alpha and |x_perp| <= beta, then for any constraint vector h,
+  <x,h> >= (alpha/|u|^2) <h,u> - beta sqrt(|h|^2 - <h,u>^2/|u|^2); when that
+  lower bound already exceeds b_h, the instance is infeasible without solving
+  anything. Ours cut the candidate list by a factor of 2.6 and, more usefully,
+  *ranked* it, so every success appeared in the first few dozen tries.
+* **The successes cluster at one value of the ranking statistic.** All of ours
+  had the screening quantity equal to a single algebraic number, and nothing
+  above it worked -- so the ranking is not merely a heuristic ordering, it
+  locates a threshold.
+
+## 118. Read the structure of your own incumbent before searching harder (2026-09-04)
+
+A long-running search had plateaued. Instead of improving the search, we
+measured the incumbent: each of its elements is built from a parameter drawn
+from a set of 47104, and the incumbent used only **seven distinct values**, in a
+few large blocks.
+
+That single measurement collapsed the candidate universe from (elements x
+parameters) to the union of a handful of parameter classes -- four orders of
+magnitude -- and the reduced problem was solved to *proved optimality* in
+minutes, beating the plateau immediately.
+
+Two structural facts came with it, both worth looking for in any such problem:
+
+* **Feasibility can be an identity rather than a test.** With the parameters
+  normalised so that the two coefficients sum to 1, every candidate satisfied its
+  own admissibility constraint automatically, by a two-line argument. Nothing
+  had to be checked per candidate.
+* **Members sharing a parameter never conflict.** For a shared parameter the
+  pairwise quantity reduced to (base quantity) - 1, always admissible. So the
+  conflict graph is k-partite with independent parts: at k = 2 it is bipartite
+  and the maximum independent set is exactly (n - maximum matching) by Koenig,
+  which makes an exhaustive scan over the whole parameter family affordable.
+
+The lesson is not "use a solver". It is that the incumbent is data about the
+problem, and measuring it can change what the problem *is*.
+
+## 119. Price a trade by its exchange rate, then check whether the costs overlap (2026-09-04)
+
+A move that is worth 2 units but blocks 3 existing ones looks like a loss of 1.
+It is not necessarily: if many such moves block the *same* few, the objective is
+
+    gain = 2 |F| - |union of blocked| - (fixed cost),
+
+and a family with heavily overlapping blocker sets can be strongly positive
+while every member is individually negative. So the number to measure is not
+the per-move cost but **the number of distinct blockers over the whole
+candidate family**.
+
+We measured it: 156 candidates with at most 5 blockers each had 273 *distinct*
+blockers -- essentially no sharing -- and the exact optimisation then returned
+|F| = 0. The route is closed, and closed for a reason that a per-move cost
+would have mis-stated in both directions.
+
+## 120. Take the net-zero move: a saturation certificate describes a point, not a plateau (2026-09-05)
+
+A long search had produced an impressive stack of negative results: the reduced
+problem solved to *proved optimality*; an exhaustive scan of 11178 parameter
+values offering nothing; an exact large-neighbourhood move (polynomial, by
+Koenig) over 116 parameters finding no improvement; a decidable feasibility test
+run over 1660 candidates returning zero. Every one of them was correct.
+
+Every one of them was also a statement about **a single point**. The landscape
+was flat there, and a search that accepts only strict improvements cannot leave a
+flat region -- so it re-derives, at ever greater expense, that this point is
+locally optimal.
+
+What broke it: measure the **cost** of each candidate, not just whether it fits.
+Eight candidates had cost exactly 1 -- each blocked by a single incumbent -- and
+they were pairwise compatible with **eight distinct blockers**. Swapping all eight
+in and their eight blockers out is exactly net zero: a legal traverse of the
+plateau that changes nothing about the objective and everything about the
+configuration. Re-solving all the costs in the new basin immediately produced a
+cost-0 candidate -- a free unit of objective.
+
+Two practical points:
+
+* **Cost is often an LP even when feasibility looked combinatorial.** Minimise
+  sum(xi_h) subject to the hard constraints, `<y,h> <= 1 + xi_h`, `xi >= 0`, and a
+  linear constraint forcing the norm to be large enough. Enumerating the natural
+  discrete family gave a minimum cost of 7; the LP over the continuum reached 1.
+* **Record the net-zero moves you reject.** They are the only edges of the plateau
+  graph, and the plateau is where the search actually lives once the easy gains
+  are gone.
+
+## 121. Verify the object on disk, not the idealised object it is classified as (2026-09-05)
+
+An exactness checker classified an element as belonging to a nice algebraic family
+when it was within 1e-6 of one, and then verified it **in exact arithmetic from the
+rounded parameters** -- i.e. it verified the ideal member, not the vector actually
+stored. For elements genuinely built that way the gap is 1e-16 and nothing is
+wrong. But a later stage began storing solver output, and eight elements sat 8e-12
+from their ideal values: the artefact violated a constraint by 6e-12 while the
+certificate, truthfully, said the configuration was exact.
+
+Both statements were true about different objects. The report said "exact"; the
+file on disk was not the thing that was exact.
+
+The fix has three parts, and all three are needed:
+
+1. **Snap.** Replace each classified element by its exact value, and re-measure --
+   the violation went from 6.4e-12 to 4.4e-16, i.e. to float rounding.
+2. **Tighten.** The guard's tolerance was 1e-9, three orders of magnitude looser
+   than the defect. A tolerance chosen for "numerical noise" must be justified
+   against the noise you actually have (1e-16), not against a round number.
+3. **Check the identity, not the classification.** The guard now recomputes the
+   ideal element from the integers and requires the stored vector to match it to
+   1e-12 -- and it was falsifiability-tested against a 1e-10 drift, the real 8e-12
+   drift, and a sign flip.
+
+The general shape: whenever a checker *classifies* before it *verifies*, the
+classification tolerance becomes a hole exactly the size of the difference between
+the stored object and its ideal. Close it by verifying the difference.
+
+## 122. A spherical design certifies a covering radius, and that turns a search into a theorem (2026-09-05)
+
+A recurring shape in this project: a construction needs to know how *deep* a point
+must be, and the question comes out as
+
+    max |q|  subject to  |<q, a_i>| <= b   for a finite symmetric set {a_i},
+
+solved by Frank-Wolfe from random restarts.  Frank-Wolfe maximises a CONVEX
+function over a polytope, so it returns a *feasible* point: a LOWER bound on the
+maximum.  For "no deeper point exists" that is the wrong side, and no number of
+restarts fixes it.  The upper bound needs
+
+    m  =  min over unit e  of  max_i <e, a_i> ,
+
+the covering constant of the system, and that is where designs earn their keep.
+
+### The mechanism
+
+If the `a_i`, normalised, form a spherical `t`-design in `S^{n-1}`, then for every
+unit `e` the numbers `t_i = <e, a_i>/|a|` have the moments of the uniform measure
+up to degree `t`.  Suppose `t_i^2 <= tau^2` for every `i`.  Then
+
+    m_6  =  mean t^6  <=  tau^2 * mean t^4  =  tau^2 m_4 ,
+
+so `tau^2 >= m_6/m_4`, and any polynomial of degree at most `t` gives a bound of
+the same kind (the monomial ratio is the simplest one).  In `S^{n-1}`,
+
+    m_2 = 1/n,   m_4 = 3/(n(n+2)),   m_6 = 15/(n(n+2)(n+4)),
+    so  m_6/m_4  =  5/(n+4) ,
+
+which needs only a **6-design**.  The chain `m_4/m_2 = 3/(n+2)` needs a 4-design and
+is weaker; `m_8/m_6` needs an 8-design and is stronger.  Three moments were enough
+here, and the eighth would have overshot the truth -- which is the check that the
+set was NOT an 8-design.
+
+### Certifying the design exactly
+
+A code `C` on a sphere is a `t`-design iff `sum_{z,z' in C} G_k(<z,z'>) = 0` for
+`1 <= k <= t`.  When the inner products are quantised -- as they always are inside a
+lattice shell -- that is a sum over a handful of values with integer multiplicities,
+so it is an EXACT rational computation over the inner-product distribution, not a
+numerical one.  Check the distribution is the same at every `z` first; then one row
+suffices.
+
+Worked instance, and one worth keeping: fix a minimal vector `p` of the Leech
+lattice (norm 4) and let `L = { z minimal : <z,p> = 2 }`, `|L| = 4600`.  Project to
+`p^perp`: `pi(z) = z - p/2`, `|pi|^2 = 3`, and the set is antipodal because
+`z -> p - z` preserves `L` and negates the projection.  The distribution of
+`<pi,pi'>` is the same at every `z`,
+
+    3 once,   1 for 891,   0 for 2816,   -1 for 891,   -3 once,
+
+and with `n = 23` the Gegenbauer sums vanish exactly for `k = 1..7` and first fail
+at `k = 8`, where the sum is `3410/1053`.  So the 4600 projections are a spherical
+**7-design in S^22**, and
+
+    max_z <e, pi(z)>^2  >=  3 * m_6/m_4  =  3 * 5/27  =  5/9      for every unit e.
+
+The true covering constant is `sqrt(3/5) = 0.7746` against the certified
+`sqrt(5/9) = 0.7454`; the extremal direction is `w - p/4` for any minimal `w` with
+`<p,w> = 1`, where `<e,pi(z)> = (<w,z> - 1/2)/sqrt(15/4) <= (3/2)/sqrt(15/4)`
+because `<w,z> <= 2` for `z` in `L` and `w` is not in `L`.  A 15% loss on the
+constant, and it was still enough to decide the question it was raised for.
+
+### The lesson, twice over
+
+**A descent bounds a maximum from below.**  That is section 107's lesson in the
+other direction, and it recurs because a descent always *looks* conclusive: twelve
+restarts converging to the same value feels like a proof and is not one.  Section
+19.6 recorded the same trap ("attained values, hence UPPER bounds on `M(r)`, so this
+is evidence and not proof").
+
+**When the ground set is a lattice shell, ask whether it is a design before
+optimising over it.**  A level set of a shell is usually a design of some strength,
+its inner-product distribution is a table of integers, and three moments of that
+table can replace an entire search.  The strength is worth measuring first: it costs
+one exact sum per `k`, and it tells you how many moments you are allowed.  Related:
+[[kissing-delsarte-when-ground-set-is-group]], and section 18's finite-spectrum
+Delsarte.
+
+## 123. Two silent failures in exact-arithmetic packaging (2026-09-05)
+
+Both were found by running a newly written verifier on a configuration that was
+already known to be correct, which is the only reason they were found at all.
+
+**numpy int64 overflows without a word.**  Rationalising a numerical point onto an
+exact sphere produced denominators of about 50 bits.  Reducing them with
+`np.gcd` and forming `8 * q_a * q_b` in numpy silently wrapped, and the verifier
+reported violations on a configuration that is exactly valid.
+The rule: **once a quantity leaves the range of the input data, take it out of
+numpy.**  Keep exact numerators and denominators as Python ints; use `math.gcd`;
+reserve numpy for the float screen.  This is the same failure family as
+[[object-dtype-breaks-tobytes]] -- numpy's types are silent about their limits.
+
+**A shell heredoc halves backslashes.**  Editing a LaTeX source through
+`python - <<'EOF'` turned the Python literal `\\alpha` into `\alpha`, which Python
+read as a BEL character, and `\tfrac` into a tab.  The document still compiled --
+`^^G` is a LaTeX error but not a fatal one -- and five errors were buried in the log.
+The repair script then hit the same trap, and a `\r` inside `\ref` became a newline
+under universal-newline reading, so the text read `Lemma~` followed by `ef{...}`.
+The rule, which [[patch-files-by-structure]] already states and which is worth
+sharpening: **never route content containing backslashes through a shell.** Use the
+file-editing tools, or write the patch script to a file first and run it by name.
+And scan for control characters after any programmatic edit: `ord(c) < 32` and not
+`\n` is a one-line check that would have caught both.
+
+## 124. The ground set of a search is an assumption, and it is the one nobody states (2026-09-05)
+
+Every construction in this repository that puts a lattice shell on a hyperplane
+and lifts part of it has described its equator the same way: "the minimal vectors,
+minus the ones the lifted points are too close to".  Sections 13, 76, 110 and 111
+all say it, and none of them says *why* the equator has to consist of lattice
+vectors.  It does not.  The condition on a point of the flat layer is only
+
+    |p|^2 = mu   and   <p,q> <= mu/2 for every other point of the configuration,
+
+and a point satisfying it need not lie in the lattice at all.  Deleting points
+from the shell to make room for the lifted layer leaves a hole, and the hole can
+be worth something.
+
+**The general shape.**  Let `L` be a lattice shell of norm `mu` on the equator and
+let `D` be the deleted set.  A non-lattice equator point is a `p` with `|p|^2 = mu`
+whose conflict set `{z in L : <p,z> > mu/2}` lies inside `D`.  Two facts make such
+points findable:
+
+* the conflict set is a LEVEL SET when `p` is parallel to a lattice vector `v`:
+  with `p = (sqrt(mu)/|v|) v` one has `<p,z> > mu/2` exactly when
+  `<v,z> > |v| sqrt(mu)/2`, and since `<v,z>` is an integer the threshold rounds,
+  so the conflict set is `{ z : <v,z> >= ceil }` and nothing more;
+* the whole question is therefore whether an integer threshold falls strictly
+  between two attainable values.  When it does, the conflict set is exactly the
+  extremal level set of `v`, and if the construction has already deleted that
+  level set the point is free.
+
+**Worked instance.**  In the Leech lattice with `mu = 4`, take `v` of norm 6.  Then
+`|<v,z>| <= 3` for minimal `z`, and `p = -(2/sqrt6) v` has `|p|^2 = 4` with
+
+    <p,z> > 2   <=>   <v,z> < -sqrt6 = -2.4494...   <=>   <v,z> = -3 ,
+
+because `2 < sqrt6 < 3`.  So `p` conflicts with the 552 minimal vectors of the
+extremal level set and with nothing else in the shell.  Any construction that has
+deleted that whole level set may adjoin `p` for free.  The check against the
+lifted layer is a separate condition and has to be verified; where the lifted
+points are themselves built from `v` it comes out at `sqrt2` against a bound of 2,
+with room to spare.
+
+**Why it went unnoticed.**  The equator was never a variable.  It was defined once,
+as a set of lattice vectors, and every subsequent search optimised over the lifted
+layer with the equator held fixed as "the shell minus what we must delete".  The
+deletions were counted as a COST and never as an OPENING.  The lesson generalises
+past this template: when a search has a ground set that was fixed in the first
+sentence of the problem statement and never revisited, that sentence is a
+hypothesis, and it is worth asking what the actual constraints are.  Compare
+[[enumerate-extreme-points-misses-interior]], where the assumption was that the
+answer is at a vertex, and [[a-free-reduction-can-impose-symmetry]], where a
+reduction quietly added a hypothesis.
+
+**A method note that travels with it.**  Testing the general version -- maximise
+`|y|` over `{ y : <y,z> <= mu/2 for z outside D, <y,q> <= mu/2 for the lifted
+points }` and rescale, which is exact because every right-hand side is positive
+([[norm-equality-is-an-lp]]) -- found nothing from 300 random starting directions,
+because the admissible cone is narrow.  Seeded from the structure instead (the
+`v`s of the construction, the deleted points, and their mates) it found the point
+on the eleventh seed.  **A local method on a narrow cone is a statement about the
+seeds, not about the geometry.**
+
+## 125. Dimension 25 released: tau(25) >= 197569, and the measured reach of everything beyond it (2026-09-07)
+
+Section 109 put dimensions 25 and 27 on hold inside the joint project with H. Cohn and
+B. Lindow. On 2026-09-07 the author lifted the hold for dimension 25 so that the result can
+be reported to the collaborators: the configuration and its exact verifier now ship as
+`verifications/improved/dim25-lens-heads/`, the old `dim25-cap-level` moved to
+`verifications/superseded/`, and `RESULTS.md` row 25 reads **197569** against the published
+197056 (Ma et al. 2025, arXiv:2511.13391, reinforcement learning inside the
+Cohn-Jiao-Kumar-Torquato template). Dimension 27 stays as it was (200540 shipped; Cohn's
+unpublished 200640 and 200736 are better and are his). The full account is the note
+*A kissing configuration of 197569 points in dimension 25* in the working tree
+(`research/collab2531/paper25/`), whose `factcheck.py` and `formulas.py` re-derive every
+figure and formula in it; sections 110-124 above are the general lessons of that work.
+
+### 125.1 The result, in one table
+
+    195554   Leech minimal vectors on the equator (196560 minus the 1006 owners)
+         1   an extra equator point  p = -(2/sqrt6) v,  NOT a lattice vector
+    2 x 1006 heads x with |x|^2 = 3 at heights +-1, one over each owner
+         2   poles (0, +-2)
+    197569
+
+Norm-4 units. A head removes an equator point z iff <x,z> > 2. Three facts carry it:
+
+* **Depth.** A head with |x|^2 = 3 removing exactly one owner p has <x,p> >= (18+sqrt30)/7,
+  proved from the 7-design formed by the 4600 minimal vectors at 60 degrees to p.
+* **No sharing.** Two compatible heads with a common removal both have <x,p> <= 10/3, and
+  10/3 < (18+sqrt30)/7. So |D| = H and the count is 196560 + H + 2 + |E|; only H moves.
+* **Heads.** 971 are class heads u + t- v over four leans (norm-6 vectors v with <u,v> = -3,
+  t- = (3-sqrt3)/6, blocks 552/285/133/1), pairwise compatible within a lean; 35 are exact
+  rationals found by an LP over the admissible region of an owner. The first block is a
+  whole Sigma(v) = {z : <z,v> = -3}, and that is what admits the extra point: <p,z> > 2
+  exactly on Sigma(v), because <v,z> is an integer in [-3,3] and 2 < sqrt6 < 3.
+
+`verify.py` rebuilds the Leech vectors from the Golay code and checks every pair in exact
+arithmetic (integers in Z[sqrt3] for the 971, Fractions for the 35); `fullcheck.py` shares
+no code with it and checks all 197569 points in floating point. Both pass; run_all.py runs
+both.
+
+### 125.2 What was asked next, and the answer: no significant gain exists today
+
+Asked for a *significant* improvement -- thousands of spheres, a new construction -- the
+answer is no, and it was measured rather than argued (working tree
+`research/collab2531/`, FINDINGS section 32). The map:
+
+**With a Leech equator: at most 203552.** 196560 + A(24,1/3) + A(24,1/4) + 1, the two LP
+values certified with exact rational duals (5763.44 and 1228.49). That is +3.0% over the
+record, and inside the template only H moves, at one or two spheres per 18 core-hours of
+plateau traversal (section 120).
+
+**Without one: a dimension-24 question, now with numbers.** The cheapest design with no
+Leech section is two layers at heights +-h, internal cos <= s(h) = (2-h^2)/(4-h^2), holding
+at most 2 A(24,s(h)) + 2 A(24,1/3) + 2, so a layer needs ~93000 points at arccos s(h). The
+Delsarte bound allows that only up to h = 0.45 (61.75 degrees, bound 95620): the layer would
+have to be LP-tight to within 3%, and the certificate's contact points there are six
+irrational inner products (-0.634, -0.507, -0.284, -0.038, 0.215, 0.473) where at 60 degrees
+they are exactly the Leech spectrum. Then two measurements of what the Leech shell supplies:
+
+* *Boosted caps* (`boostcap.py`). Section 19.4 of the working tree said "Leech subsets give
+  851 above 60 degrees"; that is for subsets in their ORIGINAL positions. The Moebius boost
+  x -> (x - t w)/|x - t w| of S^23 applied to a level set {z : <z,w> >= l} gives explicit,
+  pair-checked codes: **65390 points at 61.0 degrees** (levels >= 1 of a norm-8 direction,
+  t = 0.2) and **51705 at 62.09** (the set {<z,w> >= 1} of a minimal vector, t = 0.2). Sixty
+  to seventy-seven times the fixed-position figure, still 1.4-1.8 times short of 93000; and
+  two such caps lifted to +-h are a rotated Leech minus a level (103410 points, and not even
+  valid: cross inner products 2.714 > 2).
+* *Rigidity* (`rigidhinge.py`, `rigidfinite.py`). A random subset of n minimal vectors:
+  first-order flexible up to ~3000 and RIGID from 4000 (a non-negative stress, i.e. a Farkas
+  certificate, residual < 1e-6), exactly where Maxwell counting puts it (induced degree ~ 4 x
+  23). Finite motions computed on all pairs still move a rigid 4000-subset -- to 63.8 degrees
+  -- and the reachable angle falls 69.8 / 66.7 / 65.0 / 63.8 for 1000 / 2000 / 3000 / 4000
+  points; a 4000-point cap reaches 66.9. A random subset would reach 61.8 degrees at roughly
+  10^4 points, a tenth of a layer. **First-order rigidity is not the truth** -- run the
+  finite test before calling anything rigid.
+
+**Three other routes, priced** (`shapeheads.py`, `holes23.py`): integer-shape heads in the
+manner of Cohn-Li's 17-21 sign modifications delete 24-286 equator points each at heights 2
+and 3 (Cohn units), and at height 4 are deletion-free for half of all sign patterns but
+bounded by 48 per side (cos <= 0) -- which is Lambda_25's 196656 exactly; a two-dimensional
+axis R^23 + R^2 with a third copy of the half-level reduces to a deletion-free point at
+radius^2 15/4, i.e. 58.9 degrees from every minimal vector against a covering radius of
+52.24 -- impossible, search agrees; Construction A over length-25 codes, orbit codes of
+groups with 25-dimensional representations and sections of the 32-dimensional
+Edel-Rains-Sloane configuration are an order of magnitude below 10^5 by counting.
+
+**Verdict.** The only object that would change dimension 25 by a large amount is an LP-tight
+spherical code in R^24 at about 62 degrees, of the same rarity as the Leech configuration
+itself. Literature check the same day: published lower bound 197056 (Ma et al. 2025), upper
+bound **265006** (de Laat-Leijenhorst 2024 SDP, per Cohn's table), replacing the Delsarte
+278370 quoted in sections 109-124; our 197569 is 513 above the literature.
+
+### 125.3 Lessons
+
+* A "cliff" quoted for codes above 60 degrees must say whether the points were allowed to
+  move. The fixed-position 851 and the boosted 65390 answer different questions, and only
+  the second is the one a split-equator design asks.
+* An LP feasibility test that times out proves nothing; the convex squared hinge gives the
+  same answer as the LP where both run, its minimiser is a Farkas certificate when positive,
+  and it runs at any size. And even that certificate is first-order only.
+* The hold of section 109 was lifted by the author's decision, not by a publication. The
+  package now contains joint-project material; whether and when the repository is made
+  public is the collaboration's call, and this section is the record that the question
+  exists.

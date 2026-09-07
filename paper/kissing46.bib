@@ -1,0 +1,572 @@
+% ---------------------------------------------------------------------------
+% Bibliography for "New lower bounds for kissing numbers in dimensions 25 through 96".
+%
+% Every entry that reports a result was checked against a primary source rather than
+% recalled, and the source used is recorded in the "checked" comment above it.  Three
+% exceptions carry a comment of their own instead: delsarte1973, which is a monograph
+% cited only for the method; zinoviev-litsyn1984, whose attribution is Brouwer's and whose
+% article was not consulted; and the table, data and software entries at the end, which
+% record an access date in the entry itself where one exists.
+%
+%   [arXiv]     the arXiv abstract page for that identifier
+%   [PDF]       the full text of the paper
+%   [Cohn]      the bibliography of H. Cohn, Table of kissing number bounds,
+%               fetched 2026-08-20 and archived in the repository at
+%               verifications/closed/dim32-44-ers-audit/data/cohn_kissing.html
+%   [BC]        the bibliography of Boyvalenkov-Cherkashin, arXiv:2312.05121,
+%               archived in the working tree
+%   [journal]   the publisher's or Project Euclid listing for the article
+%
+% Five entries were found to be wrong on an earlier pass and are marked CORRECTED:
+% boyvalenkov-cherkashin (title and venue), kallal-kan-wang (title and venue),
+% leijenhorst-delaat (author order), delaat-leijenhorst-demuinckkeizer (middle
+% initial) and kravatskiy-khrulkov-oseledets (venue).
+% ---------------------------------------------------------------------------
+
+% ======================================================= exact values, classical
+
+% checked [Cohn]
+@article{schutte-vanderwaerden1953,
+  author  = {Sch{\"u}tte, Kurt and van der Waerden, Bartel L.},
+  title   = {Das {P}roblem der dreizehn {K}ugeln},
+  journal = {Math. Ann.},
+  volume  = {125},
+  year    = {1953},
+  pages   = {325--334},
+  doi     = {10.1007/BF01343127},
+}
+
+% checked [Cohn]
+@article{musin2008,
+  author  = {Musin, Oleg R.},
+  title   = {The kissing number in four dimensions},
+  journal = {Ann. of Math. (2)},
+  volume  = {168},
+  year    = {2008},
+  pages   = {1--32},
+  doi     = {10.4007/annals.2008.168.1},
+  eprint  = {math/0309430},
+  note    = {\texttt{arXiv:math/0309430}},
+}
+
+% ======================================================= upper bounds
+
+% Not checked against a copy: the monograph is cited in section 2.1 for the method, not
+% for a value, and the bibliographic data is the standard one.
+@book{delsarte1973,
+  author    = {Delsarte, Philippe},
+  title     = {An algebraic approach to the association schemes of coding theory},
+  series    = {Philips Res. Rep. Suppl.},
+  number    = {10},
+  publisher = {Philips Research Laboratories},
+  year      = {1973},
+}
+
+% checked [BC]
+@article{delsarte-goethals-seidel1977,
+  author  = {Delsarte, Philippe and Goethals, Jean-Marie and Seidel, Johan J.},
+  title   = {Spherical codes and designs},
+  journal = {Geom. Dedicata},
+  volume  = {6},
+  number  = {3},
+  year    = {1977},
+  pages   = {363--388},
+}
+
+% checked [Cohn]
+@article{odlyzko-sloane1979,
+  author  = {Odlyzko, Andrew M. and Sloane, Neil J. A.},
+  title   = {New bounds on the number of unit spheres that can touch a unit
+             sphere in $n$ dimensions},
+  journal = {J. Combin. Theory Ser. A},
+  volume  = {26},
+  year    = {1979},
+  pages   = {210--214},
+  doi     = {10.1016/0097-3165(79)90074-8},
+}
+
+% checked [Cohn].  Russian original: Dokl. Akad. Nauk SSSR 245 (1979), 1299--1303.
+@article{levenshtein1979,
+  author  = {Levenshtein, Vladimir I.},
+  title   = {On bounds for packings in $n$-dimensional {E}uclidean space},
+  journal = {Soviet Math. Dokl.},
+  volume  = {20},
+  year    = {1979},
+  pages   = {417--421},
+}
+
+% checked [journal]
+@article{bachoc-vallentin2008,
+  author  = {Bachoc, Christine and Vallentin, Frank},
+  title   = {New upper bounds for kissing numbers from semidefinite programming},
+  journal = {J. Amer. Math. Soc.},
+  volume  = {21},
+  year    = {2008},
+  pages   = {909--924},
+  eprint  = {math/0608426},
+  note    = {\texttt{arXiv:math/0608426}},
+}
+
+% checked [Cohn]
+@article{mittelmann-vallentin2010,
+  author  = {Mittelmann, Hans D. and Vallentin, Frank},
+  title   = {High-accuracy semidefinite programming bounds for kissing numbers},
+  journal = {Exp. Math.},
+  volume  = {19},
+  year    = {2010},
+  pages   = {175--179},
+  doi     = {10.1080/10586458.2010.10129070},
+  eprint  = {0902.1105},
+  note    = {\texttt{arXiv:0902.1105}},
+}
+
+% checked [Cohn]
+@article{machado-oliveira2018,
+  author  = {Machado, Fabr{\'\i}cio C. and de Oliveira Filho, Fernando M.},
+  title   = {Improving the semidefinite programming bound for the kissing
+             number by exploiting polynomial symmetry},
+  journal = {Exp. Math.},
+  volume  = {27},
+  year    = {2018},
+  pages   = {362--369},
+  doi     = {10.1080/10586458.2017.1286273},
+  eprint  = {1609.05167},
+  note    = {\texttt{arXiv:1609.05167}},
+}
+
+% checked [journal] and [arXiv].
+% CORRECTED: an earlier version of this bibliography reversed the authors.
+% Leijenhorst is the first author, on both the arXiv record and the Crossref
+% record for doi:10.1007/s12532-024-00264-w.
+@article{leijenhorst-delaat2024,
+  author  = {Leijenhorst, Nando and de Laat, David},
+  title   = {Solving clustered low-rank semidefinite programs arising from
+             polynomial optimization},
+  journal = {Math. Program. Comput.},
+  volume  = {16},
+  number  = {3},
+  year    = {2024},
+  pages   = {503--534},
+  doi     = {10.1007/s12532-024-00264-w},
+  eprint  = {2202.12077},
+  note    = {\texttt{arXiv:2202.12077}},
+}
+
+% checked [Cohn]
+% CORRECTED: an earlier version of this bibliography omitted the middle initial of
+% Leijenhorst, which the arXiv record for 2404.18794 gives as "Nando M.".
+@misc{delaat-leijenhorst-demuinckkeizer2024,
+  author = {de Laat, David and Leijenhorst, Nando M. and
+            de Muinck Keizer, Willem H. H.},
+  title  = {Optimality and uniqueness of the {$D_4$} root system},
+  year   = {2024},
+  eprint = {2404.18794},
+  note   = {preprint, \texttt{arXiv:2404.18794}},
+}
+
+% ======================================================= sphere packing
+
+% checked [journal]
+@article{cohn-elkies2003,
+  author  = {Cohn, Henry and Elkies, Noam},
+  title   = {New upper bounds on sphere packings {I}},
+  journal = {Ann. of Math. (2)},
+  volume  = {157},
+  number  = {2},
+  year    = {2003},
+  pages   = {689--714},
+  eprint  = {math/0110009},
+  note    = {\texttt{arXiv:math/0110009}},
+}
+
+% checked [journal]
+@article{viazovska2017,
+  author  = {Viazovska, Maryna S.},
+  title   = {The sphere packing problem in dimension $8$},
+  journal = {Ann. of Math. (2)},
+  volume  = {185},
+  number  = {3},
+  year    = {2017},
+  pages   = {991--1015},
+  doi     = {10.4007/annals.2017.185.3.7},
+  eprint  = {1603.04246},
+  note    = {\texttt{arXiv:1603.04246}},
+}
+
+% checked [journal]
+@article{cohn-kumar-miller-radchenko-viazovska2017,
+  author  = {Cohn, Henry and Kumar, Abhinav and Miller, Stephen D. and
+             Radchenko, Danylo and Viazovska, Maryna},
+  title   = {The sphere packing problem in dimension $24$},
+  journal = {Ann. of Math. (2)},
+  volume  = {185},
+  number  = {3},
+  year    = {2017},
+  pages   = {1017--1033},
+  doi     = {10.4007/annals.2017.185.3.8},
+  eprint  = {1603.06518},
+  note    = {\texttt{arXiv:1603.06518}},
+}
+
+% checked [journal]
+@article{cohn-kumar-miller-radchenko-viazovska2022,
+  author  = {Cohn, Henry and Kumar, Abhinav and Miller, Stephen D. and
+             Radchenko, Danylo and Viazovska, Maryna},
+  title   = {Universal optimality of the {$E_8$} and {L}eech lattices and
+             interpolation formulas},
+  journal = {Ann. of Math. (2)},
+  volume  = {196},
+  number  = {3},
+  year    = {2022},
+  pages   = {983--1082},
+  doi     = {10.4007/annals.2022.196.3.3},
+  eprint  = {1902.05438},
+  note    = {\texttt{arXiv:1902.05438}},
+}
+
+% ======================================================= lattices
+
+% checked [Cohn]
+@book{conway-sloane1999,
+  author    = {Conway, John H. and Sloane, Neil J. A.},
+  title     = {Sphere Packings, Lattices and Groups},
+  edition   = {3},
+  series    = {Grundlehren der mathematischen Wissenschaften},
+  volume    = {290},
+  publisher = {Springer},
+  address   = {New York},
+  year      = {1999},
+  doi       = {10.1007/978-1-4757-6568-7},
+}
+
+% checked [BC].  Russian original; the English translation appears in
+% Proc. Steklov Inst. Math. 165 (1985).
+@article{venkov1984,
+  author  = {Venkov, Boris B.},
+  title   = {Even unimodular extremal lattices},
+  journal = {Trudy Mat. Inst. Steklov.},
+  volume  = {165},
+  year    = {1984},
+  pages   = {43--48},
+}
+
+% checked [Cohn]
+@article{nebe2012,
+  author  = {Nebe, Gabriele},
+  title   = {An even unimodular $72$-dimensional lattice of minimum $8$},
+  journal = {J. Reine Angew. Math.},
+  volume  = {673},
+  year    = {2012},
+  pages   = {237--247},
+  doi     = {10.1515/crelle.2011.175},
+  eprint  = {1008.2862},
+  note    = {\texttt{arXiv:1008.2862}},
+}
+
+% checked [journal]
+@article{nebe2014,
+  author  = {Nebe, Gabriele},
+  title   = {A fourth extremal even unimodular lattice of dimension $48$},
+  journal = {Discrete Math.},
+  volume  = {331},
+  year    = {2014},
+  pages   = {133--136},
+  eprint  = {1312.3780},
+  note    = {\texttt{arXiv:1312.3780}},
+}
+
+% checked [PDF]: the article itself, archived in the working tree
+@article{ozeki2016,
+  author  = {Ozeki, Michio},
+  title   = {A numerical study of {S}iegel theta series of various degrees for
+             the $48$-dimensional even unimodular extremal lattices},
+  journal = {Tsukuba J. Math.},
+  volume  = {40},
+  year    = {2016},
+  pages   = {139--186},
+}
+
+% checked [PDF]: the article itself, archived in the working tree.
+% checked [journal]: Crossref record for doi:10.1007/s00025-024-02322-0.
+% CORRECTED twice: an earlier version of this bibliography gave the title as
+% "On the kissing number in 48 dimensions", which is not the title; and it listed
+% the paper as a preprint, but it appeared in Results in Mathematics in 2025.
+% The arXiv record has not been updated with the journal reference.
+@article{boyvalenkov-cherkashin2025,
+  author  = {Boyvalenkov, Peter and Cherkashin, Danila},
+  title   = {The kissing number in $48$ dimensions for codes with certain
+             forbidden distances is $52\,416\,000$},
+  journal = {Results Math.},
+  volume  = {80},
+  number  = {1},
+  year    = {2025},
+  pages   = {Paper No. 3},
+  doi     = {10.1007/s00025-024-02322-0},
+  eprint  = {2312.05121},
+  note    = {\texttt{arXiv:2312.05121}},
+}
+
+% ======================================================= constructions from codes
+
+% checked [Cohn]
+@article{edel-rains-sloane1998,
+  author  = {Edel, Yves and Rains, Eric M. and Sloane, Neil J. A.},
+  title   = {On kissing numbers in dimensions $32$ to $128$},
+  journal = {Electron. J. Combin.},
+  volume  = {5},
+  year    = {1998},
+  pages   = {Research Paper 22, 5 pp.},
+  doi     = {10.37236/1360},
+  eprint  = {math/0207291},
+  note    = {\texttt{arXiv:math/0207291}},
+}
+
+% checked [Cohn].  Russian original: Problemy Peredachi Informatsii 35 (1999), 3--11.
+@article{zinoviev-ericson1999,
+  author  = {Zinoviev, Victor A. and Ericson, Thomas},
+  title   = {New lower bounds for contact numbers in small dimensions},
+  journal = {Problems Inform. Transmission},
+  volume  = {35},
+  year    = {1999},
+  pages   = {287--294},
+}
+
+% Not checked against the article, and section 6.1 says so.  The attribution is Brouwer's:
+% his table credits $A(39,10)\ge327680$ to this paper under the key [zino84a], and that is
+% where the value and the credit both come from.  It is not in the bibliography of [Cohn].
+% Russian original: Problemy Peredachi Informatsii 20:1 (1984), 3--11.
+@article{zinoviev-litsyn1984,
+  author  = {Zinov'ev, Victor A. and Litsyn, Simon N.},
+  title   = {On shortening of codes},
+  journal = {Problems Inform. Transmission},
+  volume  = {20},
+  number  = {1},
+  year    = {1984},
+  pages   = {1--7},
+}
+
+% checked [arXiv]
+@misc{echols2026,
+  author = {Echols, William},
+  title  = {New lower bounds for constant-weight codes via seeded bit-swap
+            tabu search},
+  year   = {2026},
+  eprint = {2608.13906},
+  note   = {preprint, \texttt{arXiv:2608.13906}},
+}
+
+% checked [arXiv]; version v3 of 18 August 2026 is the one consulted
+@misc{sun-wang2026,
+  author = {Sun, Xiaoming and Wang, Chengu},
+  title  = {Sphere packings and kissing numbers in dimensions $39$, $43$, and
+            $45$ from the antipode construction},
+  year   = {2026},
+  eprint = {2607.20359},
+  note   = {preprint, version 3, \texttt{arXiv:2607.20359}},
+}
+
+% ======================================================= algebraic and structural
+
+% checked [Cohn] and [arXiv]
+@article{ganzhinov2025,
+  author  = {Ganzhinov, Mikhail},
+  title   = {Highly symmetric lines},
+  journal = {Linear Algebra Appl.},
+  volume  = {722},
+  year    = {2025},
+  pages   = {12--37},
+  doi     = {10.1016/j.laa.2025.05.002},
+  eprint  = {2207.08266},
+  note    = {\texttt{arXiv:2207.08266}},
+}
+
+% checked [Cohn]
+@misc{cohn-li2024,
+  author = {Cohn, Henry and Li, Anqi},
+  title  = {Improved kissing numbers in seventeen through twenty-one dimensions},
+  year   = {2024},
+  eprint = {2411.04916},
+  note   = {preprint, \texttt{arXiv:2411.04916}},
+}
+
+% checked [arXiv]
+@misc{ho2026,
+  author = {Ho, Boon Suan},
+  title  = {A new lower bound for the kissing number in $19$ dimensions},
+  year   = {2026},
+  eprint = {2603.10425},
+  note   = {preprint, \texttt{arXiv:2603.10425}},
+}
+
+% checked [journal]: the arXiv record carries the journal reference
+% "SIAM J. Discrete Math., 31(3), 1895-1908".
+% CORRECTED twice: an earlier version of this bibliography gave a reconstructed
+% title, and a later one listed the paper as a 2016 preprint.
+@article{kallal-kan-wang2017,
+  author  = {Kallal, Kenz and Kan, Tomoka and Wang, Eric},
+  title   = {Improved lower bounds for kissing numbers in dimensions $25$
+             through $31$},
+  journal = {SIAM J. Discrete Math.},
+  volume  = {31},
+  number  = {3},
+  year    = {2017},
+  pages   = {1895--1908},
+  doi     = {10.1137/16M1095810},
+  eprint  = {1608.07270},
+  note    = {\texttt{arXiv:1608.07270}},
+}
+
+% checked [journal] and [arXiv]
+@article{cohn-jiao-kumar-torquato2011,
+  author  = {Cohn, Henry and Jiao, Yang and Kumar, Abhinav and Torquato, Salvatore},
+  title   = {Rigidity of spherical codes},
+  journal = {Geom. Topol.},
+  volume  = {15},
+  number  = {4},
+  year    = {2011},
+  pages   = {2235--2273},
+  eprint  = {1102.5060},
+  note    = {\texttt{arXiv:1102.5060}},
+}
+
+% ======================================================= numerical and machine-assisted
+
+% checked [arXiv]: 10 authors, listed in full
+@misc{ma-etal2025,
+  author = {Ma, Chengdong and Zhaowei, Th{\'e}o Tao and Li, Pengyu and
+            Liu, Minghao and Chen, Haojun and Mao, Zihao and Li, Bo and
+            Cheng, Yuan and Qi, Yuan and Yang, Yaodong},
+  title  = {Finding kissing numbers with game-theoretic reinforcement learning},
+  year   = {2025},
+  eprint = {2511.13391},
+  note   = {preprint, \texttt{arXiv:2511.13391}},
+}
+
+% checked [arXiv]
+@misc{takhanov-assylbekov-yun2026,
+  author = {Takhanov, Rustem and Assylbekov, Zhenisbek and Yun, Stanislav},
+  title  = {Structure of kissing arrangements in $\mathbb{R}^{12}$ and a place
+            for the $841$st sphere},
+  year   = {2026},
+  eprint = {2606.18984},
+  note   = {preprint, \texttt{arXiv:2606.18984}},
+}
+
+% checked [arXiv]: 18 authors; the first five are given
+@misc{novikov-etal2025,
+  author = {Novikov, Alexander and V{\~u}, Ng{\^a}n and Eisenberger, Marvin and
+            Dupont, Emilien and Huang, Po-Sen and others},
+  title  = {{AlphaEvolve}: a coding agent for scientific and algorithmic
+            discovery},
+  year   = {2025},
+  eprint = {2506.13131},
+  note   = {preprint, \texttt{arXiv:2506.13131}},
+}
+
+% checked [PDF]: kissing numbers are Problem 6.8, Table 2, dimensions 1 to 11
+@misc{georgiev-gomezserrano-tao-wagner2025,
+  author = {Georgiev, Bogdan and G{\'o}mez-Serrano, Javier and Tao, Terence and
+            Wagner, Adam Zsolt},
+  title  = {Mathematical exploration and discovery at scale},
+  year   = {2025},
+  eprint = {2511.02864},
+  note   = {preprint, \texttt{arXiv:2511.02864}},
+}
+
+% checked [PDF]: kissing numbers are section 4.2
+@misc{khrulkov-etal2025,
+  author = {Khrulkov, Valentin and Galichin, Andrey and Bashkirov, Denis and
+            Vinichenko, Dmitry and Travkin, Oleg and Alferov, Roman and
+            Kuznetsov, Andrey and Oseledets, Ivan},
+  title  = {{GigaEvo}: an open source optimization framework powered by {LLM}s
+            and evolution algorithms},
+  year   = {2025},
+  eprint = {2511.17592},
+  note   = {preprint, \texttt{arXiv:2511.17592}},
+}
+
+% checked [arXiv] and [OpenReview].  The arXiv comment field reads
+% "40 pages, 14 figures, AI for Math Workshop at ICML 2026"; the OpenReview
+% record nE1q0gRDNr gives the venue as "ICML 2026 AI4Math Workshop Poster".
+% CORRECTED: an earlier version of this bibliography listed it as a preprint
+% with no venue.
+@inproceedings{kravatskiy-khrulkov-oseledets2026,
+  author    = {Kravatskiy, Alexey and Khrulkov, Valentin and Oseledets, Ivan},
+  title     = {{ImprovEvolve}: basin-hopping meets {LLM}-guided evolutionary
+               search},
+  booktitle = {AI for Math Workshop at the 43rd International Conference on
+               Machine Learning ({ICML} 2026)},
+  year      = {2026},
+  eprint    = {2602.10233},
+  url       = {https://openreview.net/forum?id=nE1q0gRDNr},
+  note      = {\url{https://openreview.net/forum?id=nE1q0gRDNr},
+               \texttt{arXiv:2602.10233}},
+}
+
+% checked [arXiv]
+@misc{bianchi-kwon-pappu-zou2026,
+  author = {Bianchi, Federico and Kwon, Yongchan and Pappu, Aneesh and Zou, James},
+  title  = {Harnessing the collective intelligence of {AI} agents in the wild
+            for new discoveries},
+  year   = {2026},
+  eprint = {2606.10402},
+  note   = {preprint, \texttt{arXiv:2606.10402}},
+}
+
+% ======================================================= tables and data
+
+@misc{codetables,
+  author       = {Grassl, Markus},
+  title        = {Bounds on the minimum distance of linear codes and quantum codes},
+  howpublished = {\url{https://codetables.de}},
+  note         = {accessed 2026-08-23; the codes $[62,26,16]$, $[63,27,16]$,
+                  $[64,28,16]$, $[96,33,24]$ and $[24,9,12]_4$},
+}
+
+@misc{cohn-table,
+  author       = {Cohn, Henry},
+  title        = {Table of kissing number bounds},
+  howpublished = {\url{https://cohn.mit.edu/kissing-numbers/}},
+  note         = {accessed 2026-08-20},
+}
+
+@misc{cohn-data,
+  author       = {Cohn, Henry},
+  title        = {Table of kissing number bounds},
+  howpublished = {data set, DSpace@MIT, \url{https://hdl.handle.net/1721.1/153312}},
+  note         = {accessed 2026-08-20; the archived data set behind the web table},
+}
+
+@misc{cohn-spherical,
+  author       = {Cohn, Henry},
+  title        = {Spherical codes},
+  howpublished = {\url{https://cohn.mit.edu/spherical-codes/}},
+  note         = {online catalogue of the best known spherical codes},
+}
+
+% The table itself was last revised in February 2011.  The page at the address below now
+% carries no table and points to \cite{cohn-table} instead, so the coverage section 1.1
+% states is that of the archived 2011 version, not of what the address serves today.
+@misc{nebe-sloane,
+  author       = {Nebe, Gabriele and Sloane, Neil J. A.},
+  title        = {Table of the highest kissing numbers presently known},
+  howpublished = {\url{http://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/kiss.html}},
+  note         = {last revised February 2011; the page now points to \cite{cohn-table}},
+}
+
+@misc{brouwer,
+  author       = {Brouwer, Andries E.},
+  title        = {Bounds for binary constant weight codes},
+  howpublished = {\url{https://aeb.win.tue.nl/codes/Andw.html}},
+  note         = {accessed 2026-08-26; $A(39,8,8)=3324$ is credited there to Echols.
+                  The former address \texttt{www.win.tue.nl/\textasciitilde aeb/} now
+                  redirects here permanently},
+}
+
+@misc{repo,
+  author       = {Kravatskiy, Alexey},
+  title        = {Kissing numbers: verification packages for new lower bounds in
+                  dimensions $25$ through $96$},
+  year         = {2026},
+  howpublished = {software and data, \url{https://github.com/alexlegeartis/KissingNumbers}},
+}

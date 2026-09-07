@@ -1,0 +1,230 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{10}
+
+\bibitem{bachoc-vallentin2008}
+Christine Bachoc and Frank Vallentin, \emph{New upper bounds for kissing
+  numbers from semidefinite programming}, J. Amer. Math. Soc. \textbf{21}
+  (2008), 909--924, \texttt{arXiv:math/0608426}.
+
+\bibitem{bianchi-kwon-pappu-zou2026}
+Federico Bianchi, Yongchan Kwon, Aneesh Pappu, and James Zou, \emph{Harnessing
+  the collective intelligence of {AI} agents in the wild for new discoveries},
+  2026, preprint, \texttt{arXiv:2606.10402}.
+
+\bibitem{boyvalenkov-cherkashin2025}
+Peter Boyvalenkov and Danila Cherkashin, \emph{The kissing number in $48$
+  dimensions for codes with certain forbidden distances is $52\,416\,000$},
+  Results Math. \textbf{80} (2025), no.~1, Paper No. 3,
+  \texttt{arXiv:2312.05121}.
+
+\bibitem{brouwer}
+Andries~E. Brouwer, \emph{Bounds for binary constant weight codes},
+  \url{https://aeb.win.tue.nl/codes/Andw.html}, accessed 2026-08-26;
+  $A(39,8,8)=3324$ is credited there to Echols. The former address
+  \texttt{www.win.tue.nl/\textasciitilde aeb/} now redirects here permanently.
+
+\bibitem{cohn-spherical}
+Henry Cohn, \emph{Spherical codes},
+  \url{https://cohn.mit.edu/spherical-codes/}, online catalogue of the best
+  known spherical codes.
+
+\bibitem{cohn-table}
+\bysame, \emph{Table of kissing number bounds},
+  \url{https://cohn.mit.edu/kissing-numbers/}, accessed 2026-08-20.
+
+\bibitem{cohn-data}
+\bysame, \emph{Table of kissing number bounds}, data set, DSpace@MIT,
+  \url{https://hdl.handle.net/1721.1/153312}, accessed 2026-08-20; the archived
+  data set behind the web table.
+
+\bibitem{cohn-elkies2003}
+Henry Cohn and Noam Elkies, \emph{New upper bounds on sphere packings {I}},
+  Ann. of Math. (2) \textbf{157} (2003), no.~2, 689--714,
+  \texttt{arXiv:math/0110009}.
+
+\bibitem{cohn-jiao-kumar-torquato2011}
+Henry Cohn, Yang Jiao, Abhinav Kumar, and Salvatore Torquato, \emph{Rigidity of
+  spherical codes}, Geom. Topol. \textbf{15} (2011), no.~4, 2235--2273,
+  \texttt{arXiv:1102.5060}.
+
+\bibitem{cohn-kumar-miller-radchenko-viazovska2017}
+Henry Cohn, Abhinav Kumar, Stephen~D. Miller, Danylo Radchenko, and Maryna
+  Viazovska, \emph{The sphere packing problem in dimension $24$}, Ann. of Math.
+  (2) \textbf{185} (2017), no.~3, 1017--1033, \texttt{arXiv:1603.06518}.
+
+\bibitem{cohn-kumar-miller-radchenko-viazovska2022}
+\bysame, \emph{Universal optimality of the {$E_8$} and {L}eech lattices and
+  interpolation formulas}, Ann. of Math. (2) \textbf{196} (2022), no.~3,
+  983--1082, \texttt{arXiv:1902.05438}.
+
+\bibitem{cohn-li2024}
+Henry Cohn and Anqi Li, \emph{Improved kissing numbers in seventeen through
+  twenty-one dimensions}, 2024, preprint, \texttt{arXiv:2411.04916}.
+
+\bibitem{conway-sloane1999}
+John~H. Conway and Neil J.~A. Sloane, \emph{Sphere packings, lattices and
+  groups}, 3 ed., Grundlehren der mathematischen Wissenschaften, vol. 290,
+  Springer, New York, 1999.
+
+\bibitem{delaat-leijenhorst-demuinckkeizer2024}
+David de~Laat, Nando~M. Leijenhorst, and Willem H.~H. de~Muinck~Keizer,
+  \emph{Optimality and uniqueness of the {$D_4$} root system}, 2024, preprint,
+  \texttt{arXiv:2404.18794}.
+
+\bibitem{delsarte1973}
+Philippe Delsarte, \emph{An algebraic approach to the association schemes of
+  coding theory}, Philips Res. Rep. Suppl., no.~10, Philips Research
+  Laboratories, 1973.
+
+\bibitem{delsarte-goethals-seidel1977}
+Philippe Delsarte, Jean-Marie Goethals, and Johan~J. Seidel, \emph{Spherical
+  codes and designs}, Geom. Dedicata \textbf{6} (1977), no.~3, 363--388.
+
+\bibitem{echols2026}
+William Echols, \emph{New lower bounds for constant-weight codes via seeded
+  bit-swap tabu search}, 2026, preprint, \texttt{arXiv:2608.13906}.
+
+\bibitem{edel-rains-sloane1998}
+Yves Edel, Eric~M. Rains, and Neil J.~A. Sloane, \emph{On kissing numbers in
+  dimensions $32$ to $128$}, Electron. J. Combin. \textbf{5} (1998), Research
+  Paper 22, 5 pp., \texttt{arXiv:math/0207291}.
+
+\bibitem{ganzhinov2025}
+Mikhail Ganzhinov, \emph{Highly symmetric lines}, Linear Algebra Appl.
+  \textbf{722} (2025), 12--37, \texttt{arXiv:2207.08266}.
+
+\bibitem{georgiev-gomezserrano-tao-wagner2025}
+Bogdan Georgiev, Javier G{\'o}mez-Serrano, Terence Tao, and Adam~Zsolt Wagner,
+  \emph{Mathematical exploration and discovery at scale}, 2025, preprint,
+  \texttt{arXiv:2511.02864}.
+
+\bibitem{codetables}
+Markus Grassl, \emph{Bounds on the minimum distance of linear codes and quantum
+  codes}, \url{https://codetables.de}, accessed 2026-08-23; the codes
+  $[62,26,16]$, $[63,27,16]$, $[64,28,16]$, $[96,33,24]$ and $[24,9,12]_4$.
+
+\bibitem{ho2026}
+Boon~Suan Ho, \emph{A new lower bound for the kissing number in $19$
+  dimensions}, 2026, preprint, \texttt{arXiv:2603.10425}.
+
+\bibitem{kallal-kan-wang2017}
+Kenz Kallal, Tomoka Kan, and Eric Wang, \emph{Improved lower bounds for kissing
+  numbers in dimensions $25$ through $31$}, SIAM J. Discrete Math. \textbf{31}
+  (2017), no.~3, 1895--1908, \texttt{arXiv:1608.07270}.
+
+\bibitem{khrulkov-etal2025}
+Valentin Khrulkov, Andrey Galichin, Denis Bashkirov, Dmitry Vinichenko, Oleg
+  Travkin, Roman Alferov, Andrey Kuznetsov, and Ivan Oseledets,
+  \emph{{GigaEvo}: an open source optimization framework powered by {LLM}s and
+  evolution algorithms}, 2025, preprint, \texttt{arXiv:2511.17592}.
+
+\bibitem{repo}
+Alexey Kravatskiy, \emph{Kissing numbers: verification packages for new lower
+  bounds in dimensions $25$ through $96$}, software and data,
+  \url{https://github.com/alexlegeartis/KissingNumbers}, 2026.
+
+\bibitem{kravatskiy-khrulkov-oseledets2026}
+Alexey Kravatskiy, Valentin Khrulkov, and Ivan Oseledets, \emph{{ImprovEvolve}:
+  basin-hopping meets {LLM}-guided evolutionary search}, AI for Math Workshop
+  at the 43rd International Conference on Machine Learning ({ICML} 2026), 2026,
+  \url{https://openreview.net/forum?id=nE1q0gRDNr}, \texttt{arXiv:2602.10233}.
+
+\bibitem{leijenhorst-delaat2024}
+Nando Leijenhorst and David de~Laat, \emph{Solving clustered low-rank
+  semidefinite programs arising from polynomial optimization}, Math. Program.
+  Comput. \textbf{16} (2024), no.~3, 503--534, \texttt{arXiv:2202.12077}.
+
+\bibitem{levenshtein1979}
+Vladimir~I. Levenshtein, \emph{On bounds for packings in $n$-dimensional
+  {E}uclidean space}, Soviet Math. Dokl. \textbf{20} (1979), 417--421.
+
+\bibitem{ma-etal2025}
+Chengdong Ma, Th{\'e}o~Tao Zhaowei, Pengyu Li, Minghao Liu, Haojun Chen, Zihao
+  Mao, Bo~Li, Yuan Cheng, Yuan Qi, and Yaodong Yang, \emph{Finding kissing
+  numbers with game-theoretic reinforcement learning}, 2025, preprint,
+  \texttt{arXiv:2511.13391}.
+
+\bibitem{machado-oliveira2018}
+Fabr{\'\i}cio~C. Machado and Fernando~M. de~Oliveira~Filho, \emph{Improving the
+  semidefinite programming bound for the kissing number by exploiting
+  polynomial symmetry}, Exp. Math. \textbf{27} (2018), 362--369,
+  \texttt{arXiv:1609.05167}.
+
+\bibitem{mittelmann-vallentin2010}
+Hans~D. Mittelmann and Frank Vallentin, \emph{High-accuracy semidefinite
+  programming bounds for kissing numbers}, Exp. Math. \textbf{19} (2010),
+  175--179, \texttt{arXiv:0902.1105}.
+
+\bibitem{musin2008}
+Oleg~R. Musin, \emph{The kissing number in four dimensions}, Ann. of Math. (2)
+  \textbf{168} (2008), 1--32, \texttt{arXiv:math/0309430}.
+
+\bibitem{nebe2012}
+Gabriele Nebe, \emph{An even unimodular $72$-dimensional lattice of minimum
+  $8$}, J. Reine Angew. Math. \textbf{673} (2012), 237--247,
+  \texttt{arXiv:1008.2862}.
+
+\bibitem{nebe2014}
+\bysame, \emph{A fourth extremal even unimodular lattice of dimension $48$},
+  Discrete Math. \textbf{331} (2014), 133--136, \texttt{arXiv:1312.3780}.
+
+\bibitem{nebe-sloane}
+Gabriele Nebe and Neil J.~A. Sloane, \emph{Table of the highest kissing numbers
+  presently known},
+  \url{http://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/kiss.html}, last
+  revised February 2011; the page now points to \cite{cohn-table}.
+
+\bibitem{novikov-etal2025}
+Alexander Novikov, Ng{\^a}n V{\~u}, Marvin Eisenberger, Emilien Dupont, Po-Sen
+  Huang, et~al., \emph{{AlphaEvolve}: a coding agent for scientific and
+  algorithmic discovery}, 2025, preprint, \texttt{arXiv:2506.13131}.
+
+\bibitem{odlyzko-sloane1979}
+Andrew~M. Odlyzko and Neil J.~A. Sloane, \emph{New bounds on the number of unit
+  spheres that can touch a unit sphere in $n$ dimensions}, J. Combin. Theory
+  Ser. A \textbf{26} (1979), 210--214.
+
+\bibitem{ozeki2016}
+Michio Ozeki, \emph{A numerical study of {S}iegel theta series of various
+  degrees for the $48$-dimensional even unimodular extremal lattices}, Tsukuba
+  J. Math. \textbf{40} (2016), 139--186.
+
+\bibitem{schutte-vanderwaerden1953}
+Kurt Sch{\"u}tte and Bartel~L. van~der Waerden, \emph{Das {P}roblem der
+  dreizehn {K}ugeln}, Math. Ann. \textbf{125} (1953), 325--334.
+
+\bibitem{sun-wang2026}
+Xiaoming Sun and Chengu Wang, \emph{Sphere packings and kissing numbers in
+  dimensions $39$, $43$, and $45$ from the antipode construction}, 2026,
+  preprint, version 3, \texttt{arXiv:2607.20359}.
+
+\bibitem{takhanov-assylbekov-yun2026}
+Rustem Takhanov, Zhenisbek Assylbekov, and Stanislav Yun, \emph{Structure of
+  kissing arrangements in $\mathbb{R}^{12}$ and a place for the $841$st
+  sphere}, 2026, preprint, \texttt{arXiv:2606.18984}.
+
+\bibitem{venkov1984}
+Boris~B. Venkov, \emph{Even unimodular extremal lattices}, Trudy Mat. Inst.
+  Steklov. \textbf{165} (1984), 43--48.
+
+\bibitem{viazovska2017}
+Maryna~S. Viazovska, \emph{The sphere packing problem in dimension $8$}, Ann.
+  of Math. (2) \textbf{185} (2017), no.~3, 991--1015,
+  \texttt{arXiv:1603.04246}.
+
+\bibitem{zinoviev-litsyn1984}
+Victor~A. Zinov'ev and Simon~N. Litsyn, \emph{On shortening of codes}, Problems
+  Inform. Transmission \textbf{20} (1984), no.~1, 1--7.
+
+\bibitem{zinoviev-ericson1999}
+Victor~A. Zinoviev and Thomas Ericson, \emph{New lower bounds for contact
+  numbers in small dimensions}, Problems Inform. Transmission \textbf{35}
+  (1999), 287--294.
+
+\end{thebibliography}

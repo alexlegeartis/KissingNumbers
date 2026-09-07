@@ -1,0 +1,48 @@
+verify25.py --- exact verification of K(25) >= 197567
+
+1. the Leech minimal vectors, rebuilt from the Golay code
+  196560 vectors, all of norm 32, all distinct               ok
+
+2. the artefact
+  1006 heads, 1006 owners                                    ok
+  every owner is a Leech minimal vector                      ok
+  owners are distinct                                        ok
+  every head has |x|^2 = 3 to 1e-12                          ok   1.78e-15
+  971 heads classified as class heads, 35 rational           ok
+  each class head is stored exactly (max drift < 1e-11)      ok   4.44e-16
+  w = u + v is minimal and <u,w> = 1                         ok
+
+3. class heads against the whole equator, in exact integer arithmetic
+  every class head exceeds 2 at its owner and nowhere else   ok   violations 0, owner failures 0
+
+4. class head against class head, in exact integer arithmetic
+  all 470935 class-head pairs compatible                     ok   0 bad
+
+5. the 35 rational heads, in exact rational arithmetic
+  the pickle carries the same 35 heads                       ok
+  each rational head has |X|^2 = 24 exactly                  ok
+  each rational head is within 1e-6 of the stored head       ok
+  rational heads against the whole equator                   ok   violations 0, owner failures 0
+  all 595 rational-rational pairs compatible                 ok   0 bad
+  all 33985 rational-class pairs compatible                  ok   0 bad
+
+6. the extra equator points
+  each extra point is -(2/sqrt6) v for a lean v of the configuration ok
+  that lean has all 552 members of its block removed         ok
+  |p|^2 = 4                                                  ok   8.88e-16
+  no extra point is a minimal vector                         ok
+    conflicts of p are exactly the block, all removed        ok   552 conflicts
+  every head clears every extra point (exact for the class heads) ok   0 bad
+  the extra points are pairwise compatible                   ok
+  the poles have inner product 0 with every extra point      ok
+
+7. the configuration in R^25
+  head against its own mirror: |X|^2 - c^2 = 24 - 8 = 16 <= 16 ok
+  head against a head of the other cap: <X,X'> - 8 <= 8 + 8  ok
+  pole against head: 2 c^2 = 16 <= 16                        ok
+  pole against pole: -4 c^2 = -32 <= 16                      ok
+  pole against equator: 0 <= 16                              ok
+  equator 195554 + extra 1 + 2*1006 + 2 = 197569             ok   197569
+
+ALL CHECKS PASS      K(25) >= 197569
+exit 0

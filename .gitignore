@@ -21,6 +21,19 @@ verifications/improved/dim27-triple-partition/paper/*.out
 verifications/improved/dim27-triple-partition/paper/*.toc
 verifications/improved/dim27-triple-partition/paper/*.synctex.gz
 
+# LaTeX build products of the manuscript.  Its .pdf and its .bbl are BOTH tracked: the .bbl
+# is generated, but it is what a reviewer's build reads when bibtex is not installed, and
+# without it one pdflatex pass prints [?] for all forty-five citations.  paper/*.log also
+# covers build.log, and *.fdb_latexmk and *.fls carry absolute MiKTeX paths.
+paper/*.aux
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.synctex.gz
+paper/*.fdb_latexmk
+paper/*.fls
+
 # artefacts of in-place patching, never part of a release
 *.oldcert
 *.bak

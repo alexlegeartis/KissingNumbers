@@ -302,7 +302,7 @@ for k in range(9, 24):
         'recomputed from the %s partition at k = %d and class_sizes_32000.npy' % (src, k))
 
 # --- quoted, each verified by the named script
-add(25, 197058, 'dim25-cap-level', 'verify.py')
+add(25, 197569, 'dim25-lens-heads', 'verify.py (exact arithmetic; fullcheck.py is the independent net)')
 add(27, 200540, 'dim27-triple-partition', 'scripts/verify_configuration.py')
 add(38, 591612, 'dim38-leech-large-codimension', 'scripts/verify.py')
 add(39, 756116, 'dim39-ers-constant-weight', 'scripts/verify.py')
@@ -732,8 +732,21 @@ else:
 # Files outside this directory that state the claim count, named one at a time.  Not the
 # whole repository root: research/ and notes/ are deliberately historical and the root
 # README says as much, so sweeping them would fail on text that is correct as history.
-_ALSO = [os.path.join(HERE, os.pardir, 'README.md'),
-         os.path.join(HERE, os.pardir, 'paper', 'kissing46.tex')]
+def _paper_dir():
+    """the paper's directory, inside this package or beside it -- whichever holds it
+
+    It shipped INSIDE on 2026-08-30 so that its checkers run in a clone; before that it was
+    a sibling.  Assuming one layout is how this file broke a clone twice, so both are tried
+    and neither is required."""
+    for _c in (os.path.join(HERE, 'paper'), os.path.join(HERE, os.pardir, 'paper')):
+        if os.path.exists(os.path.join(_c, 'kissing46.tex')):
+            return _c
+    return None
+
+
+_PAPERDIR = _paper_dir()
+_ALSO = [os.path.join(HERE, os.pardir, 'README.md')] + (
+    [os.path.join(_PAPERDIR, 'kissing46.tex')] if _PAPERDIR else [])
 _walked = [(os.path.dirname(_q), [], [os.path.basename(_q)])
            for _q in _ALSO if os.path.exists(_q)]
 
@@ -743,8 +756,7 @@ _walked = [(os.path.dirname(_q), [], [os.path.basename(_q)])
 # unrelated files: a scratch script holding a set literal named TAU crashed 5n outright, on
 # the first command the README gives.  Scan this package, and the paper beside it only when
 # that paper is THIS one.  Checks 5f and 6 above already had it right.
-_PAPER = os.path.join(HERE, os.pardir, 'paper')
-_ROOTS = [HERE] + ([_PAPER] if os.path.exists(os.path.join(_PAPER, 'kissing46.tex')) else [])
+_ROOTS = [HERE] if _PAPERDIR is None or _PAPERDIR.startswith(HERE) else [HERE, _PAPERDIR]
 
 
 def _sweep():
@@ -1315,7 +1327,7 @@ def _spanlist(_xs):
 
 _want = _spanlist(sorted(_ceil))
 _seen, _here = 0, 0
-for _rel in ('../paper/README.md', '../notes/SUBMISSION-all-dimensions.md'):
+for _rel in ('../notes/PAPER-WORKLOG.md', '../notes/SUBMISSION-all-dimensions.md'):
     _fp = os.path.join(HERE, _rel)
     if not os.path.exists(_fp):
         continue
@@ -1366,7 +1378,7 @@ if not _dg:
 else:
     _lo, _hi = min(_dg.values()), max(_dg.values())
     _said = []
-    for _rel in ('../paper/README.md',
+    for _rel in ('../notes/PAPER-WORKLOG.md',
                  'verifications/improved/dim73-95-gamma72-caps/README.md'):
         _fp = os.path.join(HERE, _rel)
         if not os.path.exists(_fp):
@@ -1419,7 +1431,7 @@ else:
     _quotes = []
     for _rel, _pat in (('README.md',
                         r'became the search space, and cost ([0-9\u202f ]+) spheres'),
-                       ('../paper/README.md',
+                       ('../notes/PAPER-WORKLOG.md',
                         r'\*\*\+([0-9\u202f ]+) spheres across \w+ dimensions\*\*'),
                        ('../notes/SUBMISSION-all-dimensions.md',
                         r'are worth ([0-9\u202f ]+) spheres across')):
@@ -1645,7 +1657,7 @@ if '--write-results' in sys.argv and not fail:
         return "{:,}".format(x).replace(",", "\u202f")
 
     PKGDOC = {
-        'dim25-cap-level': 'the cap level t is a free parameter',
+        'dim25-lens-heads': '1006 heads in the lens of a minimal vector, no removal shared, plus one non-lattice equator point',
         'dim27-triple-partition': 'four zero-sum triples of cap directions, not five groups',
         'dim38-leech-large-codimension': 'the Leech cap construction at codimension 14',
         'dim39-ers-constant-weight': 'Edel-Rains-Sloane with the 2026 constant-weight codes',

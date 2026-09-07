@@ -12,7 +12,9 @@ abstract: >-
   P_48 and over Nebe's Gamma_72, where the class threshold decides the shape:
   gamma = 1/4 for the Leech lattice and for Gamma_72 lets a cap head be shared
   by a zero-sum triple of directions, while gamma = 1/3 for P_48 admits only an
-  antipodal pair, which is worth half as much.  (3) Explicit large classes found
+  antipodal pair, which is worth half as much; in dimension 25 the caps are
+  rebuilt as 1006 heads in the lens of a minimal vector, each removing exactly
+  its owner (no removal is ever shared, a theorem), which gives 197569.  (3) Explicit large classes found
   by search, about ten times what Caro-Wei guarantees in every lattice tried.
   (4) The Edel-Rains-Sloane chain evaluated where its authors did not: at n_0 = n
   in dimension 39 with the 2026 constant-weight code tables, as the chain

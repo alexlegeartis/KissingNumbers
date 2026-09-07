@@ -13,7 +13,7 @@ file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
-| [`dim25-cap-level`](improved/dim25-cap-level/) | 25 | apparently new |
+| [`dim25-lens-heads`](improved/dim25-lens-heads/) | 25 | apparently new — joint work in progress with H. Cohn and B. Lindow; 1006 lens heads, one non-lattice equator point |
 | [`dim27-triple-partition`](improved/dim27-triple-partition/) | 27 | apparently new |
 | [`dim38-leech-large-codimension`](improved/dim38-leech-large-codimension/) | 38 | apparently new |
 | [`dim39-ers-constant-weight`](improved/dim39-ers-constant-weight/) | 39 | apparently new — but check Sun–Wang's latest revision |
@@ -39,13 +39,14 @@ about the table, not a result of this project, and it is not counted as one.
 
 ## [`superseded/`](superseded/) — was a record, is not any more
 
-Two packages. Neither is wrong; both were simply beaten, one by other people and one by this
+Three packages. None is wrong; all were simply beaten, one by other people and two by this
 project's own later work.
 
 | package | dims | beaten by |
 |---|---|---|
 | [`dim44-45-p48-cross-sections`](superseded/dim44-45-p48-cross-sections/) | 44, 45 | Sun–Wang, arXiv:2607.20359v3 — **and their values land inside this project's LP brackets**, which is the sharpest available cross-check on machinery four surviving claims depend on |
 | [`dim38-ers-constant-weight`](superseded/dim38-ers-constant-weight/) | 38 | this project's own Leech cap construction, by +21 376 |
+| [`dim25-cap-level`](superseded/dim25-cap-level/) | 25 | this project's own lens-head configuration, by +511 |
 
 ## [`closed/`](closed/) — mechanisms at their exact ceiling
 
@@ -82,5 +83,5 @@ standing is Edel–Rains–Sloane's rather than this project's.
 6. [`closed/dim17-layered-family/`](closed/dim17-layered-family/) — the best worked example of
    the repository's most useful habit: when a search will not converge, stop searching and ask
    what structure the object has. The answer was "it is a group".
-7. [`../KNOWLEDGE.md`](../KNOWLEDGE.md) — 107 sections of working notes, most of
+7. [`../KNOWLEDGE.md`](../KNOWLEDGE.md) — 124 sections of working notes, most of
    them about things that did not work.
