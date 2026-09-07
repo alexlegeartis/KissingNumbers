@@ -1,7 +1,7 @@
 # `paper/` — the write-up, and the three checkers that hold it to the repository
 
 [`kissing46.tex`](kissing46.tex) — *New lower bounds for kissing numbers in dimensions 25
-through 96*. 38 pages, `amsart`, no packages beyond `amssymb`, `amsmath`, `booktabs`,
+through 96*. 37 pages, `amsart`, no packages beyond `amssymb`, `amsmath`, `booktabs`,
 `longtable` and `hyperref`. References are [`kissing46.bib`](kissing46.bib), formatted with
 `amsplain`, so a full build is
 
