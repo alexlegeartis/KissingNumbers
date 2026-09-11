@@ -1430,7 +1430,8 @@ if _ers_ranked is not None:
 # ---- section 1.4's enumeration of the claimed dimensions --------------------------------
 # The same shape that had gone stale in CITATION.cff and in the repository README: a prose
 # list of the results, which nothing compared with the results.  Read the ranges back.
-_i14 = TEX.find('no earlier claim in dimensions')
+_m14 = re.search(r'no earlier (?:published )?claim in dimensions', TEX)
+_i14 = _m14.start() if _m14 else -1
 _sent = TEX[_i14:TEX.find('.', TEX.find('$73$', _i14))] if _i14 >= 0 else ''
 _listed = set()
 for _a, _b, _c in re.findall(r'\$(\d+)\$\s*-{2,3}\s*\$(\d+)\$|\$(\d+)\$', _sent):

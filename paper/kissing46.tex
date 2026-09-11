@@ -26,7 +26,7 @@
 \address{MIRIAI (Moscow Independent Research Institute\newline
 of Artificial Intelligence), Moscow, Russia}
 \email{kravatskii.a@miriai.org}
-\date{8 September 2026}
+\date{11 September 2026}
 \subjclass[2020]{Primary 52C17; Secondary 11H31, 11H71, 05B40, 94B25}
 \keywords{Kissing number, spherical code, extremal even unimodular lattice,
 spherical design, Leech lattice, linear programming bound, exact verification}
@@ -212,7 +212,7 @@ claim neither. Cohn's table \cite{cohn-table} records
 $5\,318\,060$ in dimension $46$ and $9\,741\,412$ in dimension $47$.
 \end{sloppypar}
 
-\emph{The forty-eight listed below.} We have found no earlier claim in dimensions
+\emph{The forty-eight listed below.} We have found no earlier published claim in dimensions
 $25$--$27$, $38$, $39$, $49$--$63$, $68$--$71$ or $73$--$96$. The one-point
 distribution of the minimal shell of $\Gsz$ follows from Venkov's theorem in a
 few lines; the bounds in dimensions $70$ and $71$ may therefore already be known
@@ -315,8 +315,10 @@ A separate line of work obtains configurations by numerical optimisation, and
 several of the values improved on below come from it.
 
 Ma et al.\ \cite{ma-etal2025} apply game-theoretic reinforcement learning and hold
-dimensions $25$ through $31$. Their configurations are the input to \S\ref{ss:d25}
-and \S\ref{ss:d27}, which construct no new spherical code. Takhanov, Assylbekov and Yun
+dimensions $25$ through $31$ in the published table. Their configurations are the
+input to the template theorems of \S\ref{ss:d25} and \S\ref{ss:d27}, which
+construct no new spherical code; the bounds of this paper in dimensions $25$ to
+$27$ come from the head configurations of \S\ref{ss:d25} and \S\ref{ss:d2627}. Takhanov, Assylbekov and Yun
 \cite{takhanov-assylbekov-yun2026} obtain $K(12)\ge841$ by energy minimisation initialised from
 an analysis of the structure common to the known $840$-point arrangements.
 
@@ -346,8 +348,9 @@ was not asked there.
 Numerical search has been effective where a configuration is small enough to be
 stored as a list of coordinates and refined numerically; recent work of this kind
 has concentrated on dimension $11$. The configurations treated here contain between
-$1.98\times10^5$ and $6.4\times10^9$ points. A lattice together with a few integer
-parameters specifies each of them. They lie beyond the reach of a
+$1.98\times10^5$ and $1.29\times10^{10}$ points. A lattice together with a few
+integer parameters specifies each of them, apart from the four code-theoretic
+ones, which a chain of codes specifies. They lie beyond the reach of a
 coordinate search. We obtain them from the structure of three extremal lattices.
 
 Forty-three of the forty-eight dimensions below lie in ranges in which the published
@@ -1141,7 +1144,9 @@ admissible, and the poles require $t\ge\tfrac34$. The argument does not repeat f
 $k\ge2$: triples exist there and contribute twice as much as pairs, which makes
 $t=\tfrac23$ optimal; the poles already attain $K(k)$ at that level.
 
-The gain is $+2$ over any independent set used in its place.
+The gain is $+2$ over any independent set used in its place. The level argument
+uses the $248$-line independent set of \cite{ma-etal2025} unchanged; one of
+$249$ lines would give $197\,060$ by the same argument.
 
 \emph{Superseded, 2026-09-07.} The dimension-$25$ entry of the repository
 no longer rests on this level argument. In joint work in progress with H.~Cohn
@@ -1153,9 +1158,6 @@ further equator point $-\tfrac{2}{\sqrt6}v$ that is not a lattice vector. That
 gives $K(25)\ge197\,569$, verified in exact arithmetic by the package
 \texttt{dim25-lens-heads}; the account is a separate note. The level argument
 above remains the template's own bound and is kept as such.
-The construction
-uses the $248$-line independent set of \cite{ma-etal2025} unchanged; one of
-$249$ lines would give $197\,060$ by the same argument.
 
 \subsection{Dimension 27: partitioning the directions}\label{ss:d27}
 
@@ -1195,6 +1197,8 @@ the Leech vectors, the twelve directions, the twelve poles and four of the five
 independent sets are those of the published configuration; only the
 assignment of independent sets to directions differs. A script in \cite{repo}
 regenerates the configuration from the dimension-$27$ block of \cite{cohn-data}.
+B.~Lindow found the same construction independently (private communication
+through H.~Cohn, September 2026).
 
 The family admits nothing further in this dimension. By \eqref{eq:count} the gain
 is $2\sum_i|C_i|(|Z_i|-1)$ with $|Z_i|\le3$ and $\sum_i|Z_i|\le|Z|=12$, so
@@ -1243,8 +1247,11 @@ $\ip{3u+v_{i}}{3\iota(u')+v_{i}}=15-9\ip{u}{u'}$, which respects the cross
 threshold $12$ exactly when $\ip{u}{u'}\ge1$; so a side $S$ and its image
 $\iota(S)$ fit on the two triangles of the hexagon whenever the owners of $S$ are
 pairwise at inner product $1$ or $2$ inside each block, and an optimal $S$ with
-that property exists. The shipped configuration has $1524$ class heads and $6$
-free heads: $196\,560+6+2\cdot1524+18=199\,632$. In dimension $27$ the axis is
+that property exists. The shipped configuration, found by a solve in which each
+head chooses its side, has $1524$ class heads, of which $1491$ lie over the
+triangle $v_1,v_2,v_3$ and $33$ over its negative $-v_1,-v_2,-v_3$, the other
+triangle of the same hexagon of leans, and $6$ free heads:
+$196\,560+6+2\cdot1524+18=199\,632$. In dimension $27$ the axis is
 the cuboctahedron rotated by $45^{\circ}$ about a coordinate axis, whose largest
 cosine to a direction is $(2+\sqrt2)/4$ and whose inner product with a cap point
 is at most $(2+\sqrt2)/\sqrt3<2$; two triangles of leans with cross Gram matrix
@@ -1703,8 +1710,8 @@ $n$ & previously & this work & construction\\
 \bottomrule
 \endfoot
 $25$ & $197\,056$ & $197\,569$ & layers over $\Leech$, lens heads (\S\ref{ss:d25})\\
-$26$ & $198\,550$ & $199\,632$ & layers over $\Leech$, one triangle (\S\ref{ss:d2627})\\
-$27$ & $200\,044$ & $201\,010$ & layers over $\Leech$, two coset triangles\\
+$26$ & $198\,550$ & $199\,632$ & layers over $\Leech$, one hexagon of leans (\S\ref{ss:d2627})\\
+$27$ & $200\,044$ & $201\,010$ & layers over $\Leech$, two coset triangles (\S\ref{ss:d2627})\\
 $38$ & $566\,652$ & $591\,612$ & layers over $\Leech$, $k=14$\\
 $39$ & $755\,988$ & $756\,116$ & constant-weight codes\\
 $49$ & $52\,416\,002$ & $52\,430\,140$ & layers over $\Pff$\\
@@ -1884,7 +1891,11 @@ $|\ip{u}{u'}|\in\{0,1,2\}$ all give $4680/11$, so no two-point relaxation
 improves it. The three-point semidefinite bound of Bachoc and
 Vallentin \cite{bachoc-vallentin2008} does not improve it at any truncation
 computed, the positivity constraints never being active. Closing the gap requires a four-point relaxation
-or an argument using the lattice structure.
+or an argument using the lattice structure. B.~Lindow has since obtained $418$
+for lines of minimal vectors of $\Leech$, by a three-point bound over the
+Terwilliger algebra of the automorphism group of $\Leech$ with an exact rational
+dual (private communication, September 2026); for an arbitrary line system in
+$\R^{24}$ at $|\cos|\le\tfrac14$ the bound $425$ stands.
 
 \subsection{Dimension 17}\label{ss:d17}
 
@@ -1971,8 +1982,9 @@ following standards.
       coordinates.} The dimension-$27$ configuration is verified by two
       deliberately different arguments, one of which compares all
       $\binom{200540}{2}=20\,108\,045\,530$ pairs; that configuration is now
-      superseded (\S\ref{ss:d2627}), and the two that replace it are verified in
-      exact arithmetic, the head--axis inequalities in $\mathbb{Q}(\sqrt2,\sqrt3)$.
+      superseded (\S\ref{ss:d2627}), and the two configurations of \S\ref{ss:d2627},
+      in dimensions $26$ and $27$, are verified in exact arithmetic, the
+      head--axis inequalities in $\mathbb{Q}(\sqrt2,\sqrt3)$.
 \item \emph{The cross-section method is validated against every independently
       known value} (Table~\ref{tab:validate}). The inequalities and the counting
       formula of the layered construction are re-derived from first principles

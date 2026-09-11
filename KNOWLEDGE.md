@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **125 sections, about 8180 lines**, written as the
+The full working record of the project: **127 sections, about 8290 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -17,9 +17,9 @@ The authoritative current statements are [`RESULTS.md`](RESULTS.md), which is ge
 
 ### Reading it
 
-The headings are numbered 1 to 126 with **no section 87** — a number was skipped, not a
+The headings are numbered 1 to 128 with **no section 87** — a number was skipped, not a
 section removed, and nothing in the repository refers to it. That is why the count above is
-125 and the last heading reads 126.
+127 and the last heading reads 128.
 
 It is roughly chronological, so later sections supersede earlier ones. Where they conflict,
 **the later section wins** — and where a section is superseded, it usually says so. Some
@@ -8177,3 +8177,110 @@ block, where a failure could not set the exit code.  Lessons, in one line each: 
 be a variable before believing a pool is exhausted; a code's inner-product quantisation
 decides whether a continuous parameter is a parameter at all; and an involution on a coset
 block is worth a whole second class.
+
+## 127. Below 24: the records in 14, 15 and 16 are exact optima of one lattice family (2026-09-11)
+
+Campaign for records below 24.  None found; what was found is a single framework that
+explains three records at once and says what any improvement must avoid.  Working files:
+`research/lowdim/` (`NOTES.md` is the full account).
+
+**The framework.**  A kissing configuration with integer inner products (norm 4, ips <= 2)
+spans an integral lattice `L` and lies in its norm-4 shell `S4(L)`.  Two shell vectors
+violate the kissing condition iff their inner product is 3 iff their difference is a root of
+`L`.  So every integral kissing configuration inside `S4(L)` is an independent set of the
+**root-difference graph** on `S4(L)`, and the best one is a maximum independent set.  For an
+orthogonal sum `L1 + L2` the shell is `S4(L1) u S4(L2) u (R1 x R2)`, the three parts never
+conflict with each other, and the pair part is a rook problem: for each root `r` of `L1`
+its partners in `R2` must be pairwise at ip <= 0, so the part is at most
+`min(|R1| f(L2), |R2| f(L1))` with `f` the largest 60-degree-free root set
+(`f(E8) = 16, f(E7) = 14, f(E6) = 9, f(D_n) = 2n`, all CP-SAT OPTIMAL).  Norm-4 glue vectors
+form a third kind of part.
+
+**Dimension 14.**  Ganzhinov's 1932 has ips in `{0, +-1/4, +-1/2, +-1}` and spans (scaled)
+`E7 + E7`.  It is `126 * 14 + 84 + 84`: the rook part at its bound, plus one kissing
+configuration inside each E7 second shell (756 vectors, 32-regular root-difference graph).
+The Hoffman bound for that graph is `756 * 4 / 36 = 84.00` (`lambda_min = -4`), so the E7
+part is exactly 84 and **1932 is the maximum of every kissing configuration in
+`S4(E7 + E7)`**.
+
+**Dimension 15.**  The 2564 spans the even det-2 lattice with roots `D14 + A1`, i.e.
+`(D14 + A1)^+` (a root's orthogonal complement in `D16^+`).  Along the A1 root it is a
+scheme-C layering `1484 + 2*512 + 2*28`: `28 + 16 * A(14,4,4)` on the D14 shell (the exact
+maximum by the triple-counting argument of section 65(b)), two disjoint distance-4 codes of
+length 14 as glue vectors (`2 * A(14,4) = 1024`), and a 60-degree-free root set on each
+side.  **2564 is the maximum inside `S4((D14 + A1)^+)`.**  The only other even det-2 lattice
+in dimension 15, `E7 + E8`, gives `126*16 + 240 + 84 = 2340 = tau(Lambda_15)`.
+
+**Dimension 16.**  `E8 + E8` (`240*16 + 2*240`) and `D16^+` (`32 + 16*140 + 2048`) both give
+exactly 4320.  **Dimensions 12 and 13.**  `D6 + D6` gives `60*12 + 2*60 = 840` -- the two-block
+family of section 48, with its cap now explained (`f(D6) = 12`); `E6 + E7 <= 72*14 + 54 + 84
+= 1146 < 1154`.  The records 841 and 1154 (and 604) are not integral and lie outside every
+lattice shell.  A_n second shells give 108, 170, 217, 307, 374, 492 for `n = 8..13`.
+
+**Tiers over the records.**  Deep holes were enumerated from the dual lattice of each
+record's span (all dual vectors up to standard norm 6) and the largest tier code solved at
+each scheme height (`holes.py`).  Control: over `Lambda_15` the scheme-C tier is exactly 960,
+reproducing `BW16 = 2340 + 2*960 + 2*30`.  Over the 1932: 256 deepest holes, scheme-C tier
+128, scheme-A tier 203 -- best total `1932 + 2*203 + 2 = 2340`, again `Lambda_15`.  Over the
+2564: 1024 deepest holes, scheme-C tier exactly 512, total `2564 + 1024 + 60 = 3648 < 4320`.
+Both records have `m(C) = sqrt(2/7)` for a structural reason: they ARE scheme-C objects (the
+1932 is the equator of the 2340 in `E7 + E8`), and their deepest holes are already the
+middle-tier directions of that layering.  Nothing is left over.
+
+**What this closes.**  Every route below 24 that this project can run is now measured:
+lattice shells (this section), layering over a record equator (section 68), tiers over the
+records (above), maximality and surgery (sections 64, 67), the Cohn-Li lever (55, 72, 97).
+To beat 14, 15 or 16 one needs a configuration outside every lattice shell and outside the
+tier construction -- not a better code.
+
+## 128. The direction set is an ansatz: fractional room in dimension 28, none on the root systems, and the dimension-27 triangle theorem (2026-09-11)
+
+Working files: `research/collab2531/FINDINGS.md` sections 38-41 and the scripts named there.
+
+**The relaxation.**  For caps `(sqrt(2/3) u, (2/sqrt3) z)` compatibility is
+`(2/3)<u,u'> + (4/3)<z,z'> <= 2`, so only 60-degree owner pairs constrain the directions
+(ip 1 needs `cos <= 3/4`, ip <= 0 nothing).  A configuration with every owner on a zero-sum
+triangle is an owner set `H` plus a homomorphism of its 60-degree graph into the graph `G_d`
+of triangles with edges between *separated* pairs (all nine cross cosines `<= 1/2`), and
+`gain = 2|H| <= 2 * 496 * chi_f(G_d)`; the classical template maps into a clique and is
+bounded by `omega(G_d)`.  Measured, all CP-SAT OPTIMAL: D4 / 24-cell `omega = chi_f = 8`;
+**600-cell: 400 triangles, vertex-transitive, alpha = 40, chi_f = 10** (dimension 28: 9920
+against the classical 7936, i.e. `K(28) <= 206480` in the template, with no axis points);
+D5 `13.33` against 12 (exactly the dimension-29 "+330" of section 19a, so it is the same
+framework); E6 `24 = 24`; E7 `42 = 42`.  Dimensions 30 and 31 have no slack on the root
+systems.  All five published 496-classes are perfectly saturated (every other minimal vector
+has a 60-degree partner in each), so the classical solution is locally maximal and any gain
+rebuilds the classes as ~12-vector pieces, one per triangle, with every tetrahedral cell of
+the 600-cell carrying a full class.  The decisive test is an equivariant CP-SAT under `2I`
+(1638 orbits of minimal vectors, 400 triangles = right cosets of the ten order-3 subgroups);
+it needs the icosian coordinates of the Leech lattice, not yet in this repository.
+
+**Dimension 27.**  In R^3 two zero-sum triangles always have a cross cosine `>= 1/2`, with
+equality iff one contains a vertex `z` and the other `-z` (the nine cross cosines are
+`((1+c)/2) cos(A+120k) + ((1-c)/2) cos(B+120m)` over `Z_3^2`).  Hence `omega(G_3) = 4`, the
+cuboctahedron's four sides at threshold 12 are forced, and `chi_f(G_3) <= 4.975`.  The
+cross threshold `18 - 12c` on class heads quantises at `c = 1/4, 1/2, 3/4` into 15, 12, 9, 6;
+five or six triangles fit in R^3 at threshold 9 (max cross cosine 0.678 / 0.726), which is
+the one unpriced alternative to the four sides at 12.  Coset heads are dead for `d >= 4`: at
+most three triangles sit pairwise at cross cosine `<= 1/4` in R^4, and every arrangement
+(three loose sides, two orthogonal hexagons, the 24-cell) stays below the classical 7936.
+
+**Dimension 32.**  The ERS level-8 layer is the signed code `B(32,8,4)` (weight-8 vectors in
+`{0,+-1}^32`, pairwise inner product `<= 4`); ERS's `128 A(32,8,8) >= 213376` is the product
+ansatz, forced by any lattice realisation.  Johnson chain: `B(32,8,4) <= 459856` against the
+product ceiling 453120, so the signed freedom is constructive, not a ceiling change.
+
+**Upper bounds.**  Cohn's 28-32 entries are de Laat-Leijenhorst three-point values, 5-10%
+below the calibrated Delsarte LP (790710, 1130875, 1653915, 2438561, 3522531 here); nothing
+runnable in this repository lowers them (multiprecision SDP at higher degree, days per
+dimension, or four-point bounds that exist only in single-digit dimensions).
+
+**Corrections made the same day.**  The shipped dimension-26 configuration has 33 heads, not
+35, over the negated leans `-v_i` (package README and the collaboration note corrected; the
+manuscript now says "one hexagon of leans"); the manuscript's point-count range, the
+placement of the 249-line sentence, the scope of the related-work sentence on Ma et al.,
+"no earlier *published* claim", and the attribution of the 200540 construction (found
+independently by B. Lindow) and of his 418-line bound were fixed; `factcheck.py` no longer
+keys on the literal phrase it used to find section 1.4.  `update.py --check` once reported
+the dimension-68 verifier FAILED at 256 s while CP-SAT jobs ran alongside; alone it passes
+(322-351 s) -- the HiGHS budget in `common/kpoint_lp.py` is wall-clock.  Run the guards alone.

@@ -36,7 +36,9 @@ Henry Cohn, \emph{Spherical codes},
 
 \bibitem{cohn-table}
 \bysame, \emph{Table of kissing number bounds},
-  \url{https://cohn.mit.edu/kissing-numbers/}, accessed 2026-08-20.
+  \url{https://cohn.mit.edu/kissing-numbers/}, accessed 2026-08-20 and again
+  2026-09-11; the entries for dimensions $25$ to $31$ were unchanged between
+  the two.
 
 \bibitem{cohn-data}
 \bysame, \emph{Table of kissing number bounds}, data set, DSpace@MIT,

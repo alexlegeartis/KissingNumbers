@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # the fast set: 54 scripts, 26 minutes measured
+    python run_all.py              # the fast set: 55 scripts, 26 minutes measured
     python run_all.py --full       # also the slow ones: 71 scripts, budget about 9 hours
     python run_all.py --list       # just list what would run
 

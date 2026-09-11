@@ -55,8 +55,8 @@ when `⟨u, u'⟩ ≥ 1`. So a side `S` and its image `ι(S)` fit on the two tri
 whenever the owners of `S` are pairwise at inner product 1 or 2 inside each block — a
 two-distance set — and such an optimal `S` exists (762 heads, split 243 / 243 / 276). The
 shipped configuration was found by a maximum-independent-set solve in which each head chooses
-its side; it keeps 2 × 762 class heads, 35 of them substituted from other leans of the 24-cell
-spanned by two such triangles, and six free heads.
+its side; it keeps 2 × 762 class heads, 33 of them (on one side) over the negatives `−vᵢ` of
+the triangle's leans, the other triangle of the same hexagon, and six free heads.
 
 **Dimension 27.** The twelve cuboctahedral directions are four zero-sum triangles, every two
 with a pair at 60°, so all four sides are cross-constrained at 4/3. The axis is the
