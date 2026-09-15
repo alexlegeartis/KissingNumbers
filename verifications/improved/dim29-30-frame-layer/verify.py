@@ -149,10 +149,24 @@ if FULL:
     # float32 is exact here: coordinates are at most 4 and a dot product at most 32
     prof = np.zeros(5, np.int64)
     L32 = LN.astype(np.float32)
-    for i in range(0, 98280, 4096):
-        B = np.abs(L32[i:i+4096] @ L32.T)
-        for t in range(5):
-            prof[t] += int((B == 8*t).sum())
+    # 4096 rows is a 1.5 GiB block.  The answer does not depend on the block size, so a
+    # machine that cannot spare that should take longer, not fail -- it used to raise
+    # numpy's _ArrayMemoryError and stop.  Halve and retry, down to one row at a time.
+    blk = 4096
+    while True:
+        try:
+            prof[:] = 0
+            for i in range(0, 98280, blk):
+                B = np.abs(L32[i:i+blk] @ L32.T)
+                for t in range(5):
+                    prof[t] += int((B == 8*t).sum())
+            break
+        except MemoryError:
+            if blk == 1:
+                raise
+            blk //= 2
+            print("      not enough memory for that block; retrying at %d rows"
+                  % blk, flush=True)
     req(prof.sum() == 98280*98280,
         "every inner product is 0, 8, 16, 24 or 32 -- i.e. 0, 1, 2, 3 or 4 in norm-4 units")
     prof[4] -= 98280                                          # each line against itself
