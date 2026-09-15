@@ -1035,6 +1035,22 @@ else:
     print("   all %d printed headings are in the docstring" % len(_printed))
 
 print()
+# Both 5k and 5s walk the tree, and both want only the files git actually stores: a
+# pdflatex run leaves paper/kissing46.out, which is ignored and whose extension 5k opens, so
+# without this the line-ending census answered differently here and in a clone of the commit.
+_IGNPATS = [_l.split('#')[0].strip().rstrip('/')
+            for _l in io.open(os.path.join(HERE, '.gitignore'), encoding='utf-8')
+            if _l.split('#')[0].strip()]
+
+
+def _ignored(path):
+    """Does .gitignore exclude this path?  `path` is absolute, inside HERE."""
+    _rel = os.path.relpath(path, HERE).replace(chr(92), '/')
+    _f = os.path.basename(path)
+    return any(fnmatch.fnmatch(_rel, _pt) or fnmatch.fnmatch(_rel, '*/' + _pt)
+               or fnmatch.fnmatch(_f, _pt) for _pt in _IGNPATS)
+
+
 print("5k. .gitattributes states the line-ending mix it actually has")
 # It claimed the tree was uniformly LF and that an earlier mix had been normalised.  It had
 # not been.  Nothing rests on uniformity -- `* -text` preserves bytes, which is what the
@@ -1047,7 +1063,7 @@ _mix = []
 for _dp, _dn, _fn in os.walk(HERE):
     _dn[:] = [_d for _d in _dn if _d not in ('__pycache__', '.git')]
     for _f in _fn:
-        if not _f.endswith(_TEXT):
+        if not _f.endswith(_TEXT) or _ignored(os.path.join(_dp, _f)):
             continue
         try:
             _t = io.open(os.path.join(_dp, _f), encoding='utf-8', newline='').read()
@@ -1579,17 +1595,12 @@ if _JOBS is not None:
             print("   README.md gives %d fast and %d in all, which is the table"
                   % (_fast, len(_JOBS)))
     # the tree's own size, after its own .gitignore -- the number the root README quotes
-    _pats = [_l.split('#')[0].strip().rstrip('/')
-             for _l in io.open(os.path.join(HERE, '.gitignore'), encoding='utf-8')
-             if _l.split('#')[0].strip()]
     _n = _b = 0
     for _dp, _dn, _fn in os.walk(HERE):
         _dn[:] = [_d for _d in _dn if _d not in ('__pycache__', '.git', 'selftest-tmp')]
         for _f in _fn:
             _p = os.path.join(_dp, _f)
-            _rel = os.path.relpath(_p, HERE).replace(chr(92), '/')
-            if any(fnmatch.fnmatch(_rel, _pt) or fnmatch.fnmatch(_rel, '*/' + _pt)
-                   or fnmatch.fnmatch(_f, _pt) for _pt in _pats):
+            if _ignored(_p):
                 continue
             _n += 1
             _b += os.path.getsize(_p)
