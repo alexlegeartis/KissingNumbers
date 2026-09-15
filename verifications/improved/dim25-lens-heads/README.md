@@ -69,6 +69,26 @@ six orders of magnitude wider than the arithmetic error. The extra point is chec
 way. `fullcheck.py` shares no code with it: it assembles all 197 569 points of ℝ²⁵ and checks
 every block of pairs, then 2 × 10⁷ random pairs from the whole.
 
+## Files
+
+```
+verify.py            the claim, exact in every decision; prints ALL CHECKS PASS
+verify.log           its output
+fullcheck.py         an independent end-to-end net: builds all 197 569 points in R^25 and
+                     checks pairs blockwise, sharing no code with verify.py
+fullcheck.log        its output
+data/heads_X.npy     1006 x 24 float64: the heads in norm-4 units
+data/heads_U.npy     1006 x 24 int64:   the owner of each head, a Leech minimal vector in
+                     Cohn units (norm 32)
+data/heads_exact.pkl the exact arithmetic, as a pickle because Fraction does not survive
+                     .npy: 'rat' is the 35 interior heads as exact rationals and is the only
+                     key verify.py reads; 'cls' (the 971 class heads), 'U' and 'V' are the
+                     producer's record of the same configuration
+data/extra_P.npy     1 x 24: the non-lattice equator point p = -(2/sqrt6) v
+lib/golay.py         the Golay code in the coordinates of Cohn's file
+lib/leech.py         the 196560 minimal vectors from it
+```
+
 ## Provenance
 
 This is joint work in progress with H. Cohn and B. Lindow (dimensions 25–31). The template

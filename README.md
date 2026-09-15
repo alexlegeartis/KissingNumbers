@@ -2,12 +2,12 @@
 
 The kissing number τ(n) is the largest number of unit spheres that can touch a central unit
 sphere in ℝⁿ; equivalently, the largest set of unit vectors with pairwise inner products at
-most 1/2. This repository holds new lower bounds in **48 dimensions**, each with a package
+most 1/2. This repository holds new lower bounds in **52 dimensions**, each with a package
 that verifies it, together with the negative results that say where the remaining doors are
 shut.
 
 ```bash
-python audit.py            # start here: all 48 claims, checked against the published table
+python audit.py            # start here: all 52 claims, checked against the published table
 ```
 
 `update.py` is the maintainer's entry point rather than the reviewer's: it runs every package
@@ -35,12 +35,16 @@ them exceeds a known record in a higher dimension. It takes a few seconds.
 | 63  | 52 418 564           | **138 419 844**   | **2.64** | the tables stop at 48 and resume at 64                           |
 | 62  | 52 417 932           | **71 310 732**    | 1.36     | the same                                                         |
 | 38  | 566 652              | **591 612**       | 1.04     | the Leech cap construction had never been run at codimension 14  |
+| 31  | 238 350              | **238 354**       | 1.00     | the covering radius of E7 is exactly the height-√3 axis threshold, so a deep-hole layer over a minimal non-owner is free of the classes; +4, proved optimal for Cohn's axis rotation |
+| 30  | 220 440              | **220 948**       | 1.00     | the dimension-28 norm-8 frame layer is not about dimension 28: at height √2 a whole Leech frame of heads carries the whole cross-polytope of ℝᵏ, 96k points, deleting nothing |
+| 29  | 209 496              | **209 968**       | 1.00     | the same frame layer one dimension up, on the whole cross-polytope of ℝ⁵ — 480 points, deleting nothing |
+| 28  | 204 520              | **204 896**       | 1.00     | the head of a deletion-free layer need not have norm 6: at height √2 a norm-8 head clears the cap threshold, and 48 of them are a whole Leech frame |
 | 27  | 200 044              | **201 010**       | 1.00     | the coset triangle of three norm-6 vectors, on all four triangles of directions with the side chosen per head |
 | 26  | 198 550              | **199 632**       | 1.01     | the same triangle on both triangles of the hexagon, the second side the involution image of the first |
 | 25  | 197 056              | **197 569**       | 1.00     | 1006 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point |
 
 
-The full table of all 48 is `[RESULTS.md](RESULTS.md)`. The write-up, *New lower bounds
+The full table of all 52 is `[RESULTS.md](RESULTS.md)`. The write-up, *New lower bounds
 for kissing numbers in dimensions 25 through 96*, is maintained **outside this repository**,
 because it cites this repository; see [The write-up](#the-write-up) below.
 
@@ -62,22 +66,22 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               47 of the 48 claims, nine packages, one per construction
+  improved/               51 of the 52 claims, twelve packages, one per construction
                           idea; dimension 96 is the exception and sits in closed/
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
   closed/                 mechanisms pushed to their exact ceiling: what NOT to retry
 
-KNOWLEDGE.md              the full working record, 75 sections, including everything
+KNOWLEDGE.md              the full working record, 137 sections, including everything
                           that failed -- with a preamble on how to read it, which
                           sections supersede which, and where each script now lives
 ```
 
 
 
-### `verifications/improved/` — nine ideas, 46 dimensions
+### `verifications/improved/` — twelve ideas, 51 dimensions
 
-Forty-seven, not forty-eight: dimension 96 is the forty-eighth claim and its package is
+Every claim but one is in this tier. The exception is dimension 96, whose package is
 `closed/dim96-ers-takeover/`, because what it establishes is that the cap construction
 cannot reach 96 — the claim there is Edel–Rains–Sloane’s.
 
@@ -86,6 +90,9 @@ cannot reach 96 — the claim there is Edel–Rains–Sloane’s.
 | -------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `[dim25-lens-heads](verifications/improved/dim25-lens-heads/)`                               | 25     | cap heads of squared length 3 in the lens of a minimal vector remove exactly their owner and never share a removal, so τ = 196560 + H + 2 + \|E\| with H = 1006 and one non-lattice equator point |
 | `[dim26-27-iota-triangles](verifications/improved/dim26-27-iota-triangles/)`                 | 26, 27 | the axis forces the heads onto squared length 8/3 and onto fixed triangles of directions, so the layer is two or four head sets at cosine ≤ 1/4 cross-constrained at cosine 1/2; the coset triangle of three norm-6 vectors summing to zero is one such set, and the involution ι(u) = −v − u on each class puts S and ι(S) on two triangles at once |
+| `[dim28-norm8-frame-layer](verifications/improved/dim28-norm8-frame-layer/)`                 | 28     | the head of a deletion-free layer need not have norm 6: at height √2 a NORM-8 head clears the cap threshold where a norm-6 head does not, and the 24 vectors 8eᵢ are a Leech frame, each carrying all eight directions ±e_k of ℝ⁴ — 384 points for 8 axis points |
+| `[dim29-30-frame-layer](verifications/improved/dim29-30-frame-layer/)`                           | 29, 30 | the dimension-28 norm-8 frame layer is not about dimension 28: at height `√2` with `x = v/2`, `|v|² = 8`, the layer deletes nothing, one head carries the whole cross-polytope of `ℝᵏ` and all 48 vectors of a Leech frame carry every direction, so it is `96k` points in every dimension. The price is that all `⌊τ(k)/3⌋` owner classes must be type B for one frame — and in the coordinates where the frame is `8eᵢ` the type-B lines are the octad vectors of the Golay code, which the monomial group `2¹²:M₂₄` permutes, so the filter disappears and what is left is a packing solved by coordinate descent on the Golay sign words |
+| `[dim31-sqrt3-layer](verifications/improved/dim31-sqrt3-layer/)`                             | 31     | at height √3 the axis threshold is `1/√3`, exactly the covering radius of the E7 root system, so a deep hole `w` of the cap E7 carries the points `(±u₀/2, √3 w)` for any minimal non-owner `u₀` with no interaction with the classes at all; two hole lines cost four axis points and give eight, and +4 is proved optimal **for Cohn's axis rotation** -- a different rotation of the axis E7 would change the blocking costs, and that search is open |
 | `[dim38-leech-large-codimension](verifications/improved/dim38-leech-large-codimension/)`     | 38     | the same construction at codimension 14, where the binding constraint flips and the whole Leech shell partitions into 644 classes                                                            |
 | `[dim39-ers-constant-weight](verifications/improved/dim39-ers-constant-weight/)`             | 39     | Edel–Rains–Sloane with the 2026 constant-weight codes, at n₀ = n rather than n₀ = 32                                                                                                         |
 | `[dim49-63-p48-caps](verifications/improved/dim49-63-p48-caps/)`                             | 49–61  | the cap construction over P₄₈, with explicit classes of 7069 lines where Caro–Wei guarantees 712                                                                                             |
@@ -121,7 +128,7 @@ equation (3) of the preprint [arXiv:2312.05121](https://arxiv.org/abs/2312.05121
 [arXiv:2607.20359v3](https://arxiv.org/abs/2607.20359) (18 August 2026), and its ingredients
 were in Ozeki's 2016 Siegel theta tables a decade earlier, though not stated as a kissing
 number. Both were obtained here independently, and both are **recovered rather than
-claimed**: they are not in `RESULTS.md`, not counted among the 48, and not presented as
+claimed**: they are not in `RESULTS.md`, not counted among the 52, and not presented as
 results in the paper. They are kept, in
 `[verifications/recovered/](verifications/recovered/)`, because reproducing a published
 count from a method built without reference to it is the strongest validation available.
@@ -137,7 +144,7 @@ machinery — see
 the construction's exact ceiling is proven here to be exactly Ho's number. Dimension 12's
 record likewise landed elsewhere while this work was in progress.
 
-**Apparently new.** Everything else — dimensions 25, 27, 38, 39, 49–63, 68–71, 73–95. No
+**Apparently new.** Everything else — dimensions 25–31, 38, 39, 49–63, 68–71, 73–95. No
 prior claim in any of them is known to us. The claim we would most like checked by someone
 who knows the area is **dimensions 70 and 71**: the one-point distribution of Γ₇₂'s minimal
 shell may well be folklore — it is a five-minute calculation once you know Venkov's theorem —
@@ -156,7 +163,7 @@ reproduces every cross-section whose answer is known: E₇ = 126, Λ₂₃ = 93 
 E₆ = 72, 43 164, 44 550, 49 896, 27 720. Mathematics in
 `[common/PROOF-kpoint.md](common/PROOF-kpoint.md)`.
 
-**The cap construction (25, 27, 38, 49–63, 73–95).** In ℝⁿ ⊕ ℝᵏ, put a lattice shell on the
+**The cap construction (25–27, 29–31, 38, 49–63, 73–95).** In ℝⁿ ⊕ ℝᵏ, put a lattice shell on the
 equator, delete a few lines, and put "caps" above the deleted directions. The optimum uses
 **zero-sum triples** of cap directions rather than antipodal pairs, which needs class
 threshold γ ≤ 1/4 and cap level t = 2/3; three is the maximum possible, because *n* points
@@ -219,6 +226,20 @@ every two-point method, the three-point SDP and the subconstituent split at 4680
 ## Errata found during this work
 
 Recorded because they are the kind of thing that survives a careful reading:
+
+- **The dimension-40, -41 and -42 verdicts went stale**, and the failure mode is the one this
+project keeps meeting: `verifications/closed/dim32-44-ers-audit/` concluded in August 2026 that
+dimensions 32–44 sit *exactly* at the Edel–Rains–Sloane value and improve none. On 2026-09-14 a
+re-read of the literature found I. Dorofeev, X. Sun and C. Wang, *Optimal Extensions of
+Cross-Sections: Sphere Packings in Dimensions 38 to 43*, arXiv:2607.20359v4 (29 Aug 2026),
+which beats it in three of them with **lattice** cross-sections of an extremal 48-dimensional
+lattice — 1 092 000 / 1 324 472 / 1 792 386 in dimensions 40, 41, 42 — and raises dimension 45
+to 7 379 838. Nothing here was claimed in those dimensions, so no claim is withdrawn, but the
+package's stated verdict was wrong and now carries a correction banner. **Dimensions 32–37 are
+unaffected, and now for a measured reason**: calibrating their own mechanism on their own three
+results (it reproduces dimension 40 to 3 %) and applying their determinant floor caps
+dimension 32 at about 205 000 — a factor 1.69 below its record. The lesson is the standing one:
+a table is a function of the literature, and the literature moves. See `KNOWLEDGE.md` §131.
 
 - **The k-point LP was missing its mixed moments** for a day — it imposed only exponent
 vectors with every entry even, 56 equations at k = 3 instead of 161. The symptom was
@@ -324,8 +345,8 @@ fixes the class.
 ## Reproducing everything
 
 ```bash
-python run_all.py          # 55 scripts, about 32 minutes, one verdict
-python run_all.py --full   # 70 scripts, budget about 9 hours: adds the all-pairs sweep, the
+python run_all.py          # 59 scripts, about 40 minutes measured, one verdict
+python run_all.py --full   # 74 scripts, budget about 9 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 ```
@@ -335,13 +356,17 @@ Or individually, each from its own directory:
 
 | script                                                                        | what it establishes                                            | time   |
 | ----------------------------------------------------------------------------- | -------------------------------------------------------------- | ------ |
-| `audit.py`                                                                    | all 48 claims, mutual and external consistency                 | 1 s    |
+| `audit.py`                                                                    | all 52 claims, mutual and external consistency                 | 30 s   |
 | `common/theta.py`                                                             | E₇ = 126, Λ₂₃ = 93 150, dim 47, dim 71                         | 1 s    |
 | `common/kpoint_lp.py`                                                         | the LP, validated on the Leech and P₄₈                         | 10 s   |
 | `…/dim25-lens-heads/verify.py`                                                | τ(25) ≥ 197 569, every pair in exact arithmetic               | 4 min  |
 | `…/dim26-27-iota-triangles/verify26.py`                                      | τ(26) ≥ 199 632, every pair in exact arithmetic               | 1 min  |
 | `…/dim26-27-iota-triangles/verify27.py`                                      | τ(27) ≥ 201 010, every pair in exact arithmetic               | 2 min  |
 | `…/superseded/dim27-triple-partition/scripts/verify_configuration.py`         | τ(27) ≥ 200 540, the superseded claim, from its coordinate file | 18 s   |
+| `…/dim28-norm8-frame-layer/verify28.py`                                      | τ(28) ≥ 204 896, the norm-8 frame layer                       | 2 s    |
+| `…/dim29-30-frame-layer/verify.py 29`                                        | τ(29) ≥ 209 968, the same layer at k = 5                      | 2 min  |
+| `…/dim29-30-frame-layer/verify.py 30`                                        | τ(30) ≥ 220 948, and at k = 6                                 | 2 min  |
+| `…/dim31-sqrt3-layer/verify31.py`                                            | τ(31) ≥ 238 354, the height-√3 layer                          | 4 min  |
 | `…/dim38-leech-large-codimension/scripts/verify.py`                           | τ(38) ≥ 591 612                                                | 10 s   |
 | `…/dim39-ers-constant-weight/scripts/verify.py`                               | τ(39) ≥ 756 116 (and τ(38) ≥ 570 236)                          | 10 s   |
 | `…/dim46-47-p48-cross-sections/derive.py`                                     | recovers 12 309 600 and 23 766 960, claiming neither           | 6 s    |
@@ -355,7 +380,7 @@ Or individually, each from its own directory:
 | `…/dim68-69-gamma72-cross-sections/scripts/presentation_invariance.py`         | the bound does not depend on which basis presents the Gram      | 80 s   |
 | `…/dim68-69-gamma72-cross-sections/scripts/k4_gram_min_det.py`                 | no four-tuple of Γ₇₂ minimal lines beats D₄                        | 2 min  |
 | `…/dim70-71-gamma72-cross-sections/derive.py`                                 | τ(70) ≥ 1 249 778 250, τ(71) ≥ 2 603 658 750                   | 11 s   |
-| `…/dim73-95-gamma72-caps/scripts/calibrate.py`                                | **the calibration**: reproduces Cohn's table in dims 26, 28–31 | 3 min  |
+| `…/dim73-95-gamma72-caps/scripts/calibrate.py`                                | **the calibration**: reproduces Cohn's table in dims 26, 28–31 | 2 min  |
 | `…/dim73-95-gamma72-caps/scripts/verify_classes.py data/disjoint_classes.npz` | the 120 Γ₇₂ classes, exactly                                   | 46 s   |
 | `…/superseded/dim44-45-p48-cross-sections/brackets.py`                        | the withdrawn claims, and Sun–Wang inside the brackets         | 40 min |
 | `…/closed/dim22-23-maximal-cross-sections/verify.py`                          | Λ₂₁, Λ₂₂, Λ₂₃ are maximal                                      | 6 s    |
@@ -435,18 +460,18 @@ same answer. A missing-moments bug hid behind that for a day.
 
 ## The write-up
 
-*New lower bounds for kissing numbers in dimensions 25 through 96* is a 37-page account of
+*New lower bounds for kissing numbers in dimensions 25 through 96* is a 42-page account of
 the two mechanisms, with the results as numbered theorems: the cross-section method in §4
 (dimensions 68, 69, 70 and 71, and dimensions 46 and 47 recovered) and the cap
-construction in §5 (dimensions 25, 26, 27, 38, 49–61, 73–95), with the code-theoretic
-dimensions 39, 62, 63 and 96 in §6.
+construction in §5 (dimensions 25, 26, 27, 28, 29, 30, 31, 38, 49–61, 73–95), with the
+code-theoretic dimensions 39, 62, 63 and 96 in §6.
 
 **It is in this repository, at [`paper/`](paper/)** — source, bibliography, `.bbl`, PDF and
 three checkers that read this repository and exit non-zero on a mismatch:
 
 ```bash
 cd paper
-python factcheck.py      # 658 checks: every figure in the write-up, recomputed from here
+python factcheck.py      # 686 checks: every figure in the write-up, recomputed from here
 python unsupported.py    # no figure in the write-up lacks a home here
 python formulas.py       # 257 checks: every formula re-derived with sympy
 ```
@@ -474,7 +499,7 @@ The constructions, the verification code and the write-ups in this repository we
 by the author working with **Claude Code** (Anthropic). The repository is deliberately
 structured so that someone else can pick it up the same way: every package states its idea in
 prose before its code, every negative result says what was tried and why it failed, and
-`KNOWLEDGE.md` is the full working record — 75 sections, most of them about things that
+`KNOWLEDGE.md` is the full working record — 137 sections, most of them about things that
 did not work.
 
 Alexey Kravatskiy, MIRIAI (Moscow Independent Research Institute of Artificial Intelligence),

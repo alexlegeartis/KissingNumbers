@@ -23,8 +23,18 @@ diverged, and step 3 would paper over it.
 
 HOW TO IMPROVE A BOUND.  RESULTS.md's status column says what would have to change:
 
-    classes    36 of the 47, dimensions 49-61 and 73-95.  Find a better family of
-               pairwise-disjoint classes and they all improve together.  P_48:
+    classes    40 of the 52, dimensions 28, 29, 30, 31, 49-61 and 73-95.  Find a better family
+               of pairwise-disjoint classes and they all improve together (49-61, 73-95);
+               dimensions 28, 29 and 30 carry the norm-8 FRAME layer, which is at its own
+               ceiling at 96k points -- every vector of a Leech frame on every direction of a
+               cross-polytope -- so only a larger Leech class moves them, at +32, +52 and +96
+               per line.  Dimension 30 also still has its PACKING: its 24 type-B classes hold
+               5 941 of the 5 952 lines that 24 full classes would give, and closing the last
+               11 repeats is worth +44
+               (research/collab2531/frame/packT8.py).  Dimension 31 keeps the height-sqrt3
+               layer, +4, proved optimal for that rotation of the axis; the frame layer would
+               be +652 there but needs 42 type-B classes holding 10 254 lines and the descent
+               reaches 10 183.  P_48:
                dim49-63-p48-caps/scripts/regenerate.py, whose family is automorphism images of
                one base class -- more classes, or images chosen to overlap less.  Gamma_72:
                the GPU builder, which certifies a family by a seed.  Its scripts are

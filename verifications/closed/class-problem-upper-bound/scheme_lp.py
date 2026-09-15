@@ -59,7 +59,7 @@ Pm = np.zeros((4,4))
 for c in range(4):
     v = V[:, c]; v = v / v[0]
     for i in range(4):
-        Pm[c, i] = (B[i] @ v)[0] / v[0] if False else (B[i] @ v)[0]
+        Pm[c, i] = (B[i] @ v)[0]          # v is normalised to v[0] = 1 just above
     # eigenvalue of A_i on this eigenspace = (B_i v)_0 / v_0 with v normalised v_0=1
 Pm = np.round(Pm, 6)
 print("P (rows = eigenspaces, cols = relations):\n", Pm)

@@ -5,9 +5,9 @@ according to what is currently true about it. The distinction is the point of th
 a repository that only shows its wins is much less useful to the next person than one that
 shows where the doors are shut.
 
-## [`improved/`](improved/) — 47 dimensions, currently the best known
+## [`improved/`](improved/) — 51 of the 52 claims, currently the best known
 
-Nine packages, one per **construction idea** rather than one per dimension, because several
+Twelve packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -15,6 +15,9 @@ file, and the history of the lower bound in its dimensions.
 |---|---|---|
 | [`dim25-lens-heads`](improved/dim25-lens-heads/) | 25 | apparently new — joint work in progress with H. Cohn and B. Lindow; 1006 lens heads, one non-lattice equator point |
 | [`dim26-27-iota-triangles`](improved/dim26-27-iota-triangles/) | 26, 27 | apparently new — joint work in progress with H. Cohn and B. Lindow; the coset triangle on every triangle of directions, the side chosen per head |
+| [`dim28-norm8-frame-layer`](improved/dim28-norm8-frame-layer/) | 28 | apparently new — joint work in progress with H. Cohn and B. Lindow; the head of a deletion-free layer may have norm 8 rather than 6, and at height √2 that is what clears the cap threshold: the 24 vectors 8eᵢ form a Leech frame, each carries all eight directions ±e_k of ℝ⁴, and the axis drops to the 16 half-vectors of the dual 24-cell |
+| [`dim29-30-frame-layer`](improved/dim29-30-frame-layer/) | 29, 30 | apparently new — joint work in progress with H. Cohn and B. Lindow; the dimension-28 norm-8 frame layer at height √2 carried to ℝ²⁴⁺ᵏ, where it is 48 frame vectors on the whole cross-polytope of ℝᵏ — 96k points, 480 and 576 — deleting no equator point. It needs every owner to be type B for the frame, and in the coordinates where the frame is 8eᵢ the type-B lines are exactly the 48 576 octad vectors of the Golay code, which the whole monomial group 2¹²:M₂₄ permutes, so every monomial image of a class is again a clean class |
+| [`dim31-sqrt3-layer`](improved/dim31-sqrt3-layer/) | 31 | apparently new — joint work in progress with H. Cohn and B. Lindow; a deletion-free layer at height √3 on two deep-hole lines of the cap E7, independent of the classes; +4 is optimal for Cohn's axis rotation |
 | [`dim38-leech-large-codimension`](improved/dim38-leech-large-codimension/) | 38 | apparently new |
 | [`dim39-ers-constant-weight`](improved/dim39-ers-constant-weight/) | 39 | apparently new — but check Sun–Wang's latest revision |
 | [`dim49-63-p48-caps`](improved/dim49-63-p48-caps/) | 49–63 | apparently new — 62 and 63 are reached here too, but claimed from the chain below |
@@ -22,6 +25,13 @@ file, and the history of the lower bound in its dimensions.
 | [`dim68-69-gamma72-cross-sections`](improved/dim68-69-gamma72-cross-sections/) | 68, 69 | apparently new — the k-point LP with the Gram exhibited |
 | [`dim70-71-gamma72-cross-sections`](improved/dim70-71-gamma72-cross-sections/) | 70, 71 | apparently new — **the claim most in need of a literature check** |
 | [`dim73-95-gamma72-caps`](improved/dim73-95-gamma72-caps/) | 73–95 | apparently new |
+
+**The heading counts this tier, not the dimensions in which the project is ahead**, and three
+things sit outside it. The 52nd claim is **dimension 96**, filed in [`closed/`](closed/) because
+it settles that dimension *against* the cap construction — the value it leaves standing is
+Edel–Rains–Sloane's, not this project's. **Dimensions 46 and 47** are in
+[`recovered/`](recovered/): ahead of Cohn's table, but published by other people and claimed
+here by nobody.
 
 ## [`recovered/`](recovered/) — already published, re-derived here
 
@@ -39,7 +49,7 @@ about the table, not a result of this project, and it is not counted as one.
 
 ## [`superseded/`](superseded/) — was a record, is not any more
 
-Three packages. None is wrong; all were simply beaten, one by other people and two by this
+Six packages. None is wrong; all were simply beaten, one by other people and five by this
 project's own later work.
 
 | package | dims | beaten by |
@@ -47,6 +57,9 @@ project's own later work.
 | [`dim44-45-p48-cross-sections`](superseded/dim44-45-p48-cross-sections/) | 44, 45 | Sun–Wang, arXiv:2607.20359v3 — **and their values land inside this project's LP brackets**, which is the sharpest available cross-check on machinery four surviving claims depend on |
 | [`dim38-ers-constant-weight`](superseded/dim38-ers-constant-weight/) | 38 | this project's own Leech cap construction, by +21 376 |
 | [`dim25-cap-level`](superseded/dim25-cap-level/) | 25 | this project's own lens-head configuration, by +511 |
+| [`dim27-triple-partition`](superseded/dim27-triple-partition/) | 27 | this project's own two-triangle configuration, by +470 |
+| [`dim29-sqrt52-layer`](superseded/dim29-sqrt52-layer/) | 29 | this project's own norm-8 frame layer, by +374 |
+| [`dim30-sqrt2-layer`](superseded/dim30-sqrt2-layer/) | 30 | this project's own norm-8 frame layer, by +454 |
 
 ## [`closed/`](closed/) — mechanisms at their exact ceiling
 
@@ -84,5 +97,5 @@ standing is Edel–Rains–Sloane's rather than this project's.
 6. [`closed/dim17-layered-family/`](closed/dim17-layered-family/) — the best worked example of
    the repository's most useful habit: when a search will not converge, stop searching and ask
    what structure the object has. The answer was "it is a group".
-7. [`../KNOWLEDGE.md`](../KNOWLEDGE.md) — 127 sections of working notes, most of
+7. [`../KNOWLEDGE.md`](../KNOWLEDGE.md) — 137 sections of working notes, most of
    them about things that did not work.

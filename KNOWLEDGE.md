@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **127 sections, about 8290 lines**, written as the
+The full working record of the project: **137 sections, about 9300 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -17,9 +17,9 @@ The authoritative current statements are [`RESULTS.md`](RESULTS.md), which is ge
 
 ### Reading it
 
-The headings are numbered 1 to 128 with **no section 87** — a number was skipped, not a
+The headings are numbered 1 to 129 with **no section 87** — a number was skipped, not a
 section removed, and nothing in the repository refers to it. That is why the count above is
-127 and the last heading reads 128.
+128 and the last heading reads 129.
 
 It is roughly chronological, so later sections supersede earlier ones. Where they conflict,
 **the later section wins** — and where a section is superseded, it usually says so. Some
@@ -2118,8 +2118,9 @@ four of the values I first used were stale:
 Cohn-Li (arXiv:2411.04916), dimension 19 is Ho (arXiv:2603.10425), dimension 12 is
 Takhanov-Assylbekov-Yun (arXiv:2606.18984).
 
-**Running total: 48 dimensions improved** -- 25-27, 38, 39, 49-63, 68-71, 73-96 (the count
-as of 2026-09-08; when this section was written it read 47 with 45, 46, 47 in and 26, 62, 63, 68, 69, 96 out).
+**Running total: 52 dimensions improved** -- 25-31, 38, 39, 49-63, 68-71, 73-96 (the count as of
+2026-09-15, when dimensions 29 and then 28 joined and the whole range 25-31 became claimed; when
+this section was written it read 47 with 45, 46, 47 in and 26, 28, 29, 62, 63, 68, 69, 96 out).
 
 ## 48. Dimension 12: the record is **841**, and the whole two-block family is closed at 840
 
@@ -5475,7 +5476,7 @@ rather than keeping a second copy of the code tables -- a duplicated table is wh
 in three other places. Every chain input is a construction, so the floor is a LOWER bound on
 ERS: a claim below it is definitely not an improvement, a claim above it is not thereby safe,
 and the failure message says so. Level 0 survives only as a cross-check, since it is a term of
-the chain and `best_chain` must never come out below it. Coverage is all 48 claims, and four
+the chain and `best_chain` must never come out below it. Coverage is all 52 claims, and four
 of them -- 39, 62, 63 and 96 -- ARE the chain, so they EQUAL the floor rather than exceed it;
 4b has an equality branch for exactly that.
 
@@ -5642,7 +5643,7 @@ with the parts as triples.py tabulates them:
 
 Five exact reproductions of Cohn's table, and the two differences are this project's own two
 claims.  The parts cover the direction set exactly in every row (3T + 2P = |W|).  This is the
-arithmetic behind 39 of the 48 claims, and it is right.
+arithmetic behind 39 of the 52 claims, and it is right.
 
 ### Two new checks in the suite
 
@@ -8284,3 +8285,1030 @@ independently by B. Lindow) and of his 418-line bound were fixed; `factcheck.py`
 keys on the literal phrase it used to find section 1.4.  `update.py --check` once reported
 the dimension-68 verifier FAILED at 256 s while CP-SAT jobs ran alongside; alone it passes
 (322-351 s) -- the HiGHS budget in `common/kpoint_lp.py` is wall-clock.  Run the guards alone.
+
+## 129. Dimensions 30 and 31: two deletion-free layers, and the ceilings of both (2026-09-13)
+
+Working files: `research/collab2531/BRAINSTORM_30.md`, `BRAINSTORM_31.md`,
+`FINDINGS.md` sections 46-47, `research/collab2531/dim30/`, `dim31/`.
+Both were packaged claims (`verifications/improved/dim30-sqrt2-layer/` and `dim31-sqrt3-layer/`, exact verifiers, 2026-09-14); the dimension-30 one moved to `verifications/superseded/` on 2026-09-15, beaten by the norm-8 frame layer of section 138.
+
+**K(30) >= 220494** (Cohn's table 220440; 220450 on 2026-09-13, 220452 on 2026-09-14, 9 head lines on 2026-09-15).  New points `(f/sqrt3, +-sqrt2 w)` with `f` a norm-6
+Leech vector and `w` an E6* direction (the 52.24-degree deep holes of the 72 cap roots).  The
+equator is free, the axis touches exactly, owners at `<f,u'> = 2` are free at `cos 0.612` against
+a threshold `0.647`, and the ONLY conflicts are owners of `A(f) = {<f,u'> = 3}` (552 vectors)
+inside the 16 of 24 triangles that `w` dirties.  So a head LINE is `+6` with no deletion once the 16 dirty
+classes are repositioned off `A(f)`: both signs of `f` ride all three directions of one zero-sum
+triple of deep holes, and the 54 holes fall into 9 groups of 6 whose dirty sets coincide, so a
+triple costs one avoidance.  Each triangle lies in 6 of those 9 dirty sets, so N head lines burden
+every class with `2N/3` avoidances and the layer is `9b` points at pool depth `b` (9 lines, 54
+points, b = 6 shipped).  What binds is not the pool but the PACKING of 24 pairwise disjoint class
+images: a shared owner is given up in one of its two classes for 2 points, and the shipped family
+gives up 2, so the layer nets **+50** (exact package verifier).
+
+**K(31) >= 238354** (Cohn's table 238350), and it is a different and better-behaved mechanism.
+A norm-4 point `(x,y)` with `|y| = h` needs `<y/h, a> <= 1/h` against every axis point; at
+`h = sqrt3` that threshold is `1/sqrt3`, and **the covering radius of the E7 root system on S^6
+is exactly `arccos(1/sqrt3) = 54.7356` degrees**, attained at the 56 minimal directions of E7*.
+Dimension 31 is the only one of 25-31 where the two meet -- E6 holes sit at `cos 0.6124`, D5 at
+`0.6316`, the 24-cell at `0.7071`, all above the `0.5918` cap threshold below.  Take
+
+    (+- u0/2, sqrt3 z),   u0 a Leech minimal vector that is NOT an owner, z a deep hole.
+
+`|x| = 1` makes the equator condition Cauchy-Schwarz (`<u0,v>/2 <= 2`, equality only at
+`v = u0`: **no deletion**), and `u0` being a non-owner gives `<u0,u'> <= 2` for *every* owner, so
+the cap condition collapses to `<z,z''> <= (2 - sqrt(2/3))/2 = 0.5917517`, which a deep hole meets
+at `0.5773503`.  The margin is exact: `sqrt6 + 2 sqrt3 < 6` iff `sqrt3 < 7/4`.  **This is the
+only layer in the whole 25-31 programme that is independent of the class problem** -- it works
+with Cohn's classes exactly as published.  Verified by the full 238354 x 238354 Gram: max inner
+product exactly 2, 0 violations, largest inner product strictly below 2 is `1.971197119`.
+
+**Both layers are at their ceilings.**  For dimension 31, four independent arguments:
+
+* *Shared-root lemma.*  For two distinct deep-hole lines of an E7, `w_i -+ w_j` (at the dual
+  scale, norm 3/2) has norm 2 and lies in the root lattice, i.e. **is a root** -- all 1528 pairs
+  checked.  If two were deep holes of the *axis* E7 as well, that root would be shared with the
+  cap system and give `cos = 1 > sqrt3/2`.  So a full 126-point axis hosts at most one free line.
+* CP-SAT over every deletion subset: OPTIMAL at gain 4 (blocking counts 2/14/22/34 axis points
+  per hole, mean 16.9 = the Poisson value for two 54.74-degree caps).
+* 3 781 286 `SO(7)` axis rotations by simulated annealing: never beats 4.  **Scope, added
+  2026-09-14:** that search rejects every infeasible step (`dim31/rot31.py`, `if r is None:
+  continue`) and Cohn's axis has only 0.0125 of slack in the 30-degree condition
+  (its largest cap-axis cosine is `(2+sqrt2)/4 = 0.853553` against `sqrt3/2 = 0.866025`), so
+  the walk never left Cohn's feasible island.  The shared-root lemma bounds the *free* lines
+  at one, but nothing here bounds the number of **cost-1** lines, and gain `= 2|Z| - |blocked|`
+  would reach `+2m` from `m` of them.  A global multi-start over the feasible set is open.
+* Letting the direction drift inside its 3-degree blob: minimum costs 1, 1, 7, 7, ..., 17 axis
+  lines.  Dropping the axis loses outright (`4 x 28 = 112 < 126`).
+
+Two points per direction is unconditional: two layer points on one direction need
+`<x,x'> <= -1` with both `|x| = 1`, and `h <= sqrt3` is forced by `(2-h^2)/(4-h^2) >= -1`.
+
+**Three new negatives, all from dimension 31 and all general.**
+
+* **The 496-class is 4-saturated.**  Over all 196064 non-members, `#{u in S : <u,v> = +2}` has
+  minimum **4** (mean 23.3) and `#{u in S : |<u,v>| = 2}` has minimum **8**; the class is fully
+  antipodal (internal inner products `{0, +-1, -4}`, no `-2` pair), so the one-sided relaxation
+  of section 43 buys nothing.  **To insert one vector you must delete at least four**, so no
+  swap, LNS or repair-against-a-forbidden-set can work -- a class has to be *constructed* inside
+  the region, not moved into it.  This is the root cause of the `N <= 5` head ceiling on every
+  height-sqrt2 layer, and it is why denser direction families cannot be realised (sub-60-degree
+  direction pairs force joint 60-freeness, and a saturated class has no room to share).
+* **Head shells are exhausted at norm 6.**  A head of norm `2k` needs `<f,v> <= sqrt2 |f|`
+  against the equator and has conflict block `{u : <f,u> > 0.91554 |f|}`.  Census with exact
+  integer inner products: shells 4, 10, 12, 14, 16, 20 are equator-inadmissible; the admissible
+  ones are **6 (block 552)**, 8 (2094), 18 (3678).  The dimension-25 ladder `552/46/2/2/1` of
+  section 28 has no analogue, because it lives at `|x|^2 = 3` and these layers at `|x|^2 = 2`.
+* **Placement, not geometry, is what kills the transfer.**  The dimension-30 mechanism carries to
+  dimension 31 with *better* constants (axis blocks of only 2/6/10 points; `+w` and `-w` dirty
+  the same 27 triangles, leaving 15 free against dimension 30's 8 of 24) and still fails,
+  because it needs **27** pairwise-disjoint forbidden-set-avoiding class images where dimension
+  30 needed **16**.  Monomial images overlap exactly as Poisson with mean `248^2/98280 = 0.626`
+  lines, so the overlap graph is `G(n, 0.465)` with `alpha ~ 2 ln n / 0.6256`, and local search
+  returns a reliable ~70 % of it: 3333 candidates gave 18.  Reaching 27 needs `alpha ~ 38`, i.e.
+  about 150 000 candidates and a dense 150k-vertex MIS, for a gain of +4.  **Price the placement
+  before porting the geometry.**
+
+**Where dimension 31 leaves the programme.**  `196560 + |axis| + 2 * owners` with the equator at
+`tau(24)`, `|axis| = K(7) = 126`, and the direction weight `84 = floor(2 K(7)/3)` tight both
+classically and fractionally (`omega = chi_f = 42` for E7, section 128).  Note also
+`chi_f <= (#directions)/3`, which E7 attains exactly at `126/3 = 42`.  The class is the only
+large lever left and dimension 31 is where it pays best: **+84 per extra class vector, +168 per
+extra line** -- twice the direction weight, the largest multiplier in 25-31 (dimension 30 gives
++96 per line, 29 gives +52, 28 gives +32) -- against 496 realised and 850.909 by LP.
+
+
+## 130. Dimension 32 is exactly two coding numbers, and everything else is closed (2026-09-14)
+
+The best known value is **346 432**, not Cohn's 345 408 (the table was re-read 2026-09-14 and
+has not moved; the live value rests on Echols' `A(32,8,8) >= 1667`, arXiv:2608.13906, already
+recorded in section 60). Written out,
+
+    tau_32  =  A(32,8)  +  128 * A(32,8,8)  +  4 * C(32,2)
+            =  131072   +  213376           +  1984.
+
+Geometrically that is three layers: the **cube** `(+-1)^32/sqrt32` on a binary code of minimum
+distance 8; a **flat layer** `(+-1/sqrt8)^8` on each octad of an `A(32,8,8)` family; and **all**
+`4*C(32,2) = 1984` two-sparse vectors `(+-e_i +- e_j)/sqrt2`.
+
+### The three layers do not constrain each other at all
+
+Every cross-condition is satisfied automatically, and most of them with equality:
+
+| pair | inner product | slack |
+|---|---|---|
+| cube / octad | `8/(sqrt32 sqrt8) = 1/2` exactly | none |
+| octad / 2-sparse | `2/(sqrt8 sqrt2) = 1/2` exactly | none |
+| cube / 2-sparse | `2/(sqrt32 sqrt2) = 1/4` | 1/4 |
+
+So the record is a **free product of three separately-maximal combinatorial objects**, and that
+is exactly why it beats every lattice: a lattice would have to derive the cube layer from the
+same object as the octad layer, and the best 32-dimensional lattice kissing number, 208 320, is
+already below the octad layer alone.
+
+### Why nothing else fits (the rigidity, four steps)
+
+1. **Any unit vector supported on at most 8 coordinates is at 60 degrees from every cube
+   vertex**, by Cauchy-Schwarz: `<u/sqrt32, y> <= |y|_1/sqrt32 <= sqrt8/sqrt32 = 1/2`. And 8 is
+   the largest support size for which that holds. So the configuration is forced into the shape
+   "one fully-spread layer plus 8-sparse layers", with no intermediate sparsity available.
+2. **The 2-sparse layer forces flatness.** It gives `|y_i| + |y_j| <= 1/sqrt2` for every other
+   vector and every pair `i != j`. With at most 8 nonzero coordinates and `|y| = 1`, writing
+   `a = |y|_(1)`, we need `a^2 + 7(1/sqrt2 - a)^2 >= 1`, which fails for every `a > 1/sqrt8`.
+   So `max_i |y_i| <= 1/sqrt8`, and 8 coordinates each carrying at most `1/8` of the norm forces
+   all of them equal: the 8-sparse layer is flat, hence `A(32,8,8) * A(8,2)`.
+3. **Overlaps of 5 or more are impossible.** A 128-word sign code of length 8 with `d >= 2`
+   projects *onto* every 5-subset (its shortening to the complementary 3 coordinates has
+   dimension at most 1), so any partner support meeting it in 5 is blocked outright. The trade
+   "64 signs per support, overlaps of 5 allowed" also fails: it needs an `[8,6,2]` code whose
+   projection to every overlap 5-set has size 16, which forces the even-weight code of every
+   3-subset into it, i.e. dimension 7 > 6.
+4. **Rotating a layer is catastrophic, not merely useless.** The maximum 60-degree code inside
+   one 8-dimensional coordinate subspace is `tau(8) = 240`, which looks like a factor 1.9 over
+   128 -- but the coordinate-aligned `E_8` *is* 128 flat vectors plus the 112 two-sparse ones
+   that the global layer already owns, so it is this construction itself. Measured
+   (`scratchpad/decay2.py`): one octad facing all 70 of its overlap-4 partners carries exactly
+   **128** when the partners are flat and **0** when any partner is rotated. An earlier run
+   showing +25 per octad used partners with few mutual constraints and did not survive the real
+   density -- each 4-subset of `[32]` lies in about `1667*70/C(32,4) = 3.2` family octads, so
+   essentially all 70 do occur.
+
+### How big the prize is (bounds computed here, because none are published)
+
+Brouwer tabulates **no** upper bound for `A(n,8,8)`, so both ceilings were computed. The
+Delsarte LP in the Johnson scheme `J(32,8)` calibrates exactly -- `A(16,8,8) = 30` and
+`A(24,8,8) = 759` come back to the integer -- and the iterated Johnson bound is tighter at
+rank 32:
+
+| quantity | best known | ceiling |
+|---|---|---|
+| `A(32,8,8)` | 1667 (Edel) | **3540** (Johnson, correctly nested; the Delsarte LP in `J(32,8)` returns 3596, which is exactly the counting bound `C(32,5)/C(8,5)` and so adds nothing) |
+| `A(32,8)` | 131072 | **351908** (Delsarte LP in `H(32,2)`, calibrated on Golay and Nordstrom-Robinson) |
+
+| tau_32 | value | factor |
+|---|---|---|
+| now | 346 432 | -- |
+| `A(32,8,8)` at its cap | **586 176** | 1.69 |
+| both at their caps | **807 012** | 2.33 |
+| Cohn's SDP ceiling | 3 162 316 | 9.1 |
+
+(An erratum from within this session, kept because the failure mode is general: the first
+run of the Johnson recursion applied its floors in the wrong order -- starting from
+`floor(32/8) = 4` and multiplying outward instead of recursing inward to the base case
+`A(m,8,4) = floor(m/4)` -- and returned a plausible **3451**. The correct nesting returns
+`A(24,8,8) = 759` exactly, which is the calibration that caught it. A ceiling that is too
+small understates the prize.)
+
+So **every remaining unit of dimension 32 is one of two classical coding numbers**, and
+`A(32,8,8)` is the one with leverage: +128 each, with a factor 2.12 of headroom.
+
+### Do not seed an A(32,8,8) search with the affine 3-flats
+
+The 620 affine 3-flats of `AG(5,2)` -- the minimum-weight words of `RM(2,5)` -- are a
+**maximal** packing. Verified twice: greedy completion over all 10 518 300 octads leaves
+**zero** candidates, and in 200 000 random 8-subsets not one met every 3-flat in at most 4
+points. They cover `620 * C(8,5) = 34 720` of the 201 376 five-subsets, each exactly once --
+**17 % of capacity** -- and still cannot be extended by a single block, where the Johnson
+ceiling 3540 corresponds to about 98 % coverage. Edel's 1667 is therefore structurally
+unrelated to `RM(2,5)`; the orbit method over `AGammaL(1,32)` and `PSL(2,31)` returns nothing
+but that same 620-orbit, because large orbits are almost never internally compatible. Plain
+random greedy reaches 678 (lexmin is documented at 1068). The route to 1668 is Edel's own:
+orbit skeletons over many medium-order groups, then long polishing.
+
+
+### How hard 1667 is: four certificates (2026-09-14)
+
+Edel's code was downloaded (`aeb.win.tue.nl/codes/cwc/d8/a32.8.8.1667H`) and verified --
+1667 blocks, all of weight 8, maximum pairwise intersection 4 -- so it reproduces
+`tau_32 = 346432` exactly. Brouwer's page was re-fetched the same day: `A(32,8,8) = 1667` and
+`tau_32 = 346432` are current. (`A(29,8,8)` and `A(30,8,8)` *had* moved since the repository's
+2026-08-21 fetch, 1057 -> 1060 and 1162 -> 1163. Neither touches dimensions >= 32, because the
+Edel-Rains-Sloane chain needs `n_0 >= 32`. The table moves; re-read it.)
+
+Write `S(x)` for the set of code blocks a non-member octad `x` conflicts with. `x` can be added
+only after all of `S(x)` is dropped, so a set `X` of pairwise-compatible octads improves the
+code exactly when `|X| > |union S(x)|`. One full pass over all 10 518 300 octads (489 s) gives
+the frontier:
+
+| `|S(x)|` | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|
+| non-member octads | 158 | 636 | 1562 | 3695 | 7769 |
+
+*(A trap worth recording: a block conflicts with **itself**, so all 1667 members first showed
+up with `|S| = 1` and swamped the 158 genuine ones. The surplus search found nothing until
+they were stripped.)*
+
+1. **Maximal.** No octad has `|S(x)| = 0`.
+2. **4-optimal.** Indexing the frontier by its `S`-sets -- the available octads for a drop-set
+   `D` are the union of `by_set[s]` over the at most 15 subsets `s` of `D`, not a scan --
+   all **397 303** drop-sets with `|D| <= 4` were checked exactly in 26 s. **No surplus.**
+   So no move that removes four or fewer blocks can improve 1667.
+3. **Link-optimal where it looks weakest.** For a point `p`, freeze the blocks avoiding `p` and
+   re-solve the link: a neighbourhood that drops up to `deg(p)` blocks at once. The three
+   lightest points (degrees 351, 358, 366) have 2784, 2658 and 2916 admissible octads through
+   them, and seeded local search rebuilt **exactly** 351, 358, 366.
+4. **Shortening is exhausted.** The best deletion of `n-32` points from every published
+   `A(n,8,8)`, `n = 33..40`, gives at most **1638** (from n = 33, one point); greedy completion
+   of that seed reaches **1649**. So the published table holds no free record.
+
+### Its degree structure, and why regularity is the wrong idea
+
+Point degrees run **351 .. 437** (mean 416.75), sharply bimodal: eight points at 351-399 and
+twenty-four at 420-437. The eight light points **are themselves a block**, and only **279** of
+the 1667 blocks lie inside the complementary 24-set, against `A(24,8,8) = 759`.
+
+The tempting inference -- that a *regular* code would do better, since a single link can hold
+`A(31,8,7) = 475` and `32 * 437/8 = 1748` -- is **wrong, and was measured to be wrong**. A code
+invariant under the translation group `T = F_2^5` (regular on the 32 points) is automatically
+point-regular, and `|C| = 4 deg`; note `1667` is not divisible by 4, so Edel's code cannot be
+transitive. Of all 10 518 300 octads, **60.7 %** have an internally-compatible `T`-orbit
+(199 640 orbits, all of full size 32), and a greedy over whole orbits reaches only **672**.
+Adding 32 blocks at a time kills far too much. **The degree spread is not waste; regularity is
+an expensive constraint**, and `4 * max-degree` is an observation about a hypothetical regular
+code, not a target an irregular one is failing to hit.
+
+### Where a large gain would have to come from
+
+`A(n,8,8)` against the Johnson ceiling: 759/759 = 1.000 at n = 24 (the Steiner system
+`S(5,8,24)` is perfect), 0.587 at 28, **0.471 at 32**, 0.415 at 36, 0.316 at 40 -- so n = 32 is
+already the best of its neighbours relative to the bound, which is the quantitative reason 1667
+is hard to move.
+
+The perfect object does not exist at 32: a Steiner system `S(5,8,32)` needs `C(29,2)/C(5,2) =
+40.6` to be an integer. The obvious next thought -- a **5-(32,8,5) design**, which does clear
+every divisibility condition (`lambda_3 = 203`, `b = 5 * 3596 = 17980`), split into five
+packings of 3596 each -- is **impossible**, and by the ceiling computed above: `3596 > 3540`.
+Nor does a coarser split help by itself. In such a design every 5-subset lies in 5 blocks, so a
+block conflicts with at most `56 * 4 = 224` others through its 5-subsets; greedy colouring of
+that conflict graph needs up to ~225 classes, and pigeonhole then guarantees a class of only
+`17980/225 = 80` blocks. **Design theory gives the ceiling here, not the construction.**
+
+What is actually open is the construction side, and it is a coding-theory problem of long
+standing: 1667 is Edel's group code plus polishing, the modern tool that moved several
+`A(n,8,w)` entries in 2026 is automated search (Rosin, arXiv:2603.00174, which Brouwer then
+polished), and nothing local will do it -- see the four certificates above.
+
+Files: `scratchpad/frontier.py`, `surplus.py` (the 4-optimality certificate), `relink.py`
+(link rebuilds), `transitive.py` (the `T`-invariant family), `polish.py`, `seeds.py`.
+
+### Everything outside the family, with numbers
+
+* **Leech equator + caps** at codimension 8: ceiling `196560 + 4*(80 triples * 425 LP-max
+  lines) + tau(8) = 332800 < 346432`. `tau(8) = 240` caps the triples at 80, so the
+  construction falls short even with every class at its LP maximum.
+* **Cross-sections of an extremal 48-dimensional lattice** -- see section 131. Short by 1.69.
+* **The best 32-dimensional lattice**, 208 320, is below the octad layer alone.
+* **Two 8-sparse layers in mutually unbiased bases.** The cross-condition is exactly
+  `||Q[S,T]||_{inf->1} <= 4` for every pair of octads. For `Q = H/sqrt32` (Sylvester) the value
+  is **20 <= 22.63** precisely when `S` and `T` are affine 3-flats `a+U`, `b+V` with
+  `U cap V^perp = 0`, and **32** otherwise; over 3000 random octad pairs, **0** are admissible.
+  So a second basis can only carry 3-flats, and `4*(155+155) = 1240 < 1667` octads. Elegant,
+  and short.
+* **Other sparsity levels.** 4-sparse needs 4-sets meeting every octad in at most 2; 12-sparse
+  needs at most 4; 16-sparse needs at most 5 and is additionally blocked by the cube code, whose
+  projection to any 16 coordinates has dimension at least 12 and therefore covers every radius-2
+  ball. All are killed by the octad layer's density, and every trade -- shrink the family to
+  free a support -- prices out at worse than 1:10.
+
+Files: `scratchpad/lp32.py` (finite-spectrum sphere LP), `johnson_lp.py`, `hamming_lp.py` (the
+two ceilings), `e8pair.py`, `decay.py`, `decay2.py` (the rotation measurements), `mub.py` (the
+Hadamard test), `a3288.py`, `a3288b.py` (the searches).
+
+## 131. Cross-sections reach dimension 38, and beat Edel-Rains-Sloane at 40, 41 and 42 (2026-09-14)
+
+**This makes section 60 and the `32-37, 40-43` row of `RESULTS.md` stale.** Dorofeev, Sun and
+Wang, *Optimal Extensions of Cross-Sections: Sphere Packings in Dimensions 38 to 43*,
+arXiv:2607.20359v4 (29 Aug 2026; fetched 2026-09-14) improve every dimension from 38 to 43 and
+publish kissing numbers:
+
+| dim | previously tabulated | theirs | lattice? |
+|---|---|---|---|
+| 40 | 1 064 368 (binary codes, i.e. Edel-Rains-Sloane) | **1 092 000** | yes |
+| 41 | 1 170 384 (Edel-Rains-Sloane) | **1 324 472** | yes |
+| 42 | 1 541 292 (cross-section) | **1 792 386** | yes |
+| 45 | 6 702 080 | **7 379 838** | no, an antipode of s = 4 translates |
+
+The mechanism: `Lambda` an extremal even unimodular 48-dimensional lattice (`mu = 6`,
+`det = 1`); `K` a saturated cross-section of rank `k`; then `L = Lambda cap span(K)^perp` has
+rank `48-k`, `det L = det K` and minimum at least 6, and the kissing number of the **bare
+cross-section packing** is simply `#{ w in Lambda : |w|^2 = 6, w perp K }` (their Proposition 5
+at `s = 1`). Their chain is `sqrt3 E6 subset sqrt3 E7 subset sqrt3 E8 subset K_9 subset K_10`,
+the first three cut from `Fix(sigma) = sqrt3(E8 perp E8)` for an order-three automorphism of
+`P_48p` (Nebe).
+
+**Why it stops, and why dimension 32 is out of reach.** The kissing number tracks
+`R * vol(B_n(sqrt6)) / sqrt(det K)` with `R = 6.92`, calibrated on their own three published
+values (ratios 6.71 / 6.97 / 7.09; it reproduces dimension 40 to 3 %). Their Proposition 7
+floors `det K >= (6/gamma_k)^k`. At `k = 16` that floor is 168 151, giving at most **~205 000**
+-- short of 346 432 by a factor **1.69** -- and the rank-16 section that actually exists,
+`sqrt3(E8 perp E8)` with `det 3^16`, gives only **~12 800**. The crossover is at `k` about 8 to
+10, which is exactly where their chain stops. `scratchpad/xsec.py`.
+
+**Standing correction.** Section 60 says dimensions 32-44 are "exactly at the Edel-Rains-Sloane
+value and improve none". That is still true for 32-37; it is now **false for 40, 41 and 42**,
+and dimension 45 is superseded at 7 379 838. Dimensions 32-37 are unaffected, because the
+cross-section mechanism does not reach them.
+
+## 132. Dimension 32 is a maximal spherical code, and A(32,8) is the second lever (2026-09-14)
+
+Section 130 showed that dimension 32 reduces to two coding numbers, but it argued inside the
+Edel-Rains-Sloane ansatz: it ruled out further *sparsity levels*. This section closes the
+geometry completely -- over every unit vector of `R^32`, not just the sparse ones -- and then
+shows that the second of the two numbers has never actually been attacked.
+
+### Scale by sqrt(32) and it is the Leech's own framework
+
+Multiply every ERS-32 point by `sqrt(32)` and all three layers become **integer** vectors of
+norm exactly 32:
+
+| layer | integer shape | count |
+|---|---|---|
+| cube | `(+-1)^32` on a `[32,17,8]` code | 131072 |
+| octads | `(+-2)^8 0^24` on the 1667 family | 213376 |
+| pairs | `(+-4,+-4) 0^30` | 1984 |
+
+and the kissing condition becomes `<y,y'> <= 16`. That is exactly the Leech's framework --
+`(4^2 0^22) / (2^8 0^16) / (3 1^23)`, norm 32, inner product `<= 16` -- so the two
+constructions are directly comparable, and the comparison is informative. **The Leech's big
+layer is 24 cubes of size `2^12` (one per position of the `3`), 98304 in all, where ERS-32 has
+one flat cube.** The `3` is the shape ERS has no analogue of, and its cross terms are held down
+by *sign-code correlation*, not by the crude `l_1` bound that ERS relies on.
+
+### The addable region, exactly
+
+A unit vector `z` may be added to ERS-32 iff `<z,y> <= sqrt(32)/2` for every `y` above. Because
+each octad carries all 128 even sign patterns and each pair all 4, those maxima are `l_1` norms
+and the conditions collapse to
+
+```
+pairs :  |z_i| + |z_j| <= 1/sqrt2            (all 496)
+octads:  sum_{i in O} |z_i| <= sqrt2         (all O in F)
+cube  :  max_{c in C0} <(-1)^c, z> <= sqrt32/2
+```
+
+The first two are a **polytope** `P` in `|z|`. Solving it (`scratchpad/region.py`):
+
+* `max |z|_1 over P = sqrt(32)`, attained at the flat vector -- the Cauchy-Schwarz ceiling for
+  a unit vector, so the `l_1` direction has **zero** slack;
+* `max ||z||_2 over P = 1.000000`, by vertex ascent from 250 random objectives. 244 of the 250
+  land on the flat vector; every other local maximum has norm `< 1`.
+
+A unit vector must have `||z||_2 = 1`, so **the only candidates are the norm-maximisers of `P`,
+and those are the flat vectors.** An independent check agrees: projected-gradient minimisation
+of the total violation over the unit sphere, 300 random starts (`scratchpad/sphere.py`),
+returns feasibility only at the flat profile `|z_i| = 1/sqrt32` and never anywhere else.
+
+Then the cube layer closes it. The `[32,17,8]` code (generator matrix from codetables.de,
+verified here: 131072 words, minimum weight 8, 908 words of weight 8, contains the all-ones
+vector so the layer is antipodal) has
+
+```
+COVERING RADIUS = 6
+```
+
+so no word of `F_2^32` is at distance `>= 8` from it, and no flat vector is addable either.
+
+> **Nothing can be added to ERS-32. It is a maximal spherical code** -- not merely maximal
+> among sparse or integral configurations. (The polytope statement is a numerical certificate
+> from two independent methods, not a proof; the covering radius and everything below is
+> exact.)
+
+### The contact identity
+
+Summing the octad constraints gives `sum_i deg(i)|z_i| <= |F| sqrt2`, and the flat vector
+attains `8|F|/sqrt32 = |F| sqrt2` **exactly**. This uses only `sum_i deg(i) = 8|F|`, so it
+holds for *any* octad family, not just Edel's: the octad layer and the cube layer are always in
+perfect contact. It is structural, not a coincidence of the 1667.
+
+### What each layer is worth as an obstruction
+
+Re-solving `max ||z||_2` with layers deleted prices them (`scratchpad/region2.py`):
+
+| deleted | cost in points | `max ||z||_2` |
+|---|---|---|
+| nothing | -- | 1.000 |
+| layer 2 (pairs) | 1984 | **1.000** |
+| layer 1 (octads) | 213376 | 2.000 |
+
+**Layer 2 is not binding at all.** Deleting all 1984 two-sparse points opens exactly zero room;
+the octads alone pin the region. So layer 2 is pure profit sitting in slack -- and conversely
+there is no trade to be had by dropping it. A worked check: after dropping it the 64 vectors
+`+-e_i` become admissible, for a net of `-1920`.
+
+### Every other shape loses to the flat cube
+
+Compatibility with layers 1 and 2 forces `|y_i| + |y_j| <= 4` and `sum_{i in O}|y_i| <= 8`, so
+the only norm-32 integer shapes available are `(2^a, 1^{32-4a}, 0^{3a})` and `(3,1^23,0^8)`.
+For the first the octad condition reduces to a clean combinatorial statement -- writing `P` for
+the `a` twos and `Z` for the `3a` zeros,
+
+```
+|O n P| <= |O n Z|    for every octad O in F
+```
+
+-- and the sign code of each family is a weighted-distance code, `4 f_P + f_1 >= 8`. Sizes:
+
+| `a` | shape | sign-code size per family | note |
+|---|---|---|---|
+| 0 | `(1^32)` | `A(32,8) = 131072` | the flat cube |
+| 2 | `(2^2,1^24,0^6)` | `4 x A(24,8) = 16384` | would need >= 9 mutually compatible families |
+| 3 | `(2^3,1^20,0^9)` | `8 x A(20,8) = 2048` | |
+| 4 | `(2^4,1^16,0^12)` | `16 x A(16,8) = 512` | |
+| 1 | `(2,1^28,0^3)` | -- | impossible: 3 zeros cannot meet all ~417 octads through the 2 |
+| -- | `(3,1^23,0^8)` | `2 x A(23,8) = 4096` | |
+
+The `3`-shape is the Leech's own shape, and it fails here for a reason worth recording: two
+families at positions `p != p'` need `p' in Z_p` and `p in Z_{p'}` to kill the `3 x 3` cross
+term, so every `Z_p` contains all the other 3-positions and `|A| - 1 <= 8`. **At most 9
+positions, hence at most `9 x 4096 = 36864`** against the cube's 131072. The Leech escapes this
+because `9 + 23 = 32` leaves it *no zeros to choose*; dimension 32 has eight.
+
+So the flat cube is the best occupant of its slot among all shapes, and mixed shapes cannot
+coexist with it either -- each blocks roughly `0.3%` of the cube, and a family's worth of them
+blocks all of it.
+
+### A(32,8): the lever nobody has pulled
+
+`tau_32 = A(32,8) + 128 A(32,8,8) + 1984`, and the two coding numbers are **independent** --
+the cube/octad cross-condition holds automatically -- so a gain in either is a gain in `tau`.
+Every published effort has gone into `A(32,8,8)`; `A(32,8) = 2^17` is a 1998 table lookup that
+contributes **1 : 1**, and its gap is `[131072, 351908]`, a factor of 2.7. It is not on
+Brouwer's small-code page, which stops at `n = 28` (`A(28,8) in [16384, 32151]`).
+
+Four certificates, all computed here, say the lookup is nonetheless hard to beat:
+
+1. **Linear is exhausted.** codetables.de: `[32,17]` has `d = 8` with both bounds equal, and
+   `[32,18]` has `d <= 7`. So `2^17` is the linear ceiling and any gain must be nonlinear.
+2. **Covering radius 6.** No word, and hence no coset, is at distance `>= 8` from the code.
+3. **35-optimal.** `|S(x)|`, the number of codewords within distance 7 of a word `x`, is
+   constant on each coset and equals the number of weight-`<= 7` words in that coset. Over all
+   32767 non-zero cosets the minimum is **36** (maximum 240). So *no move that deletes fewer
+   than 36 codewords can improve the cube layer* -- a far deeper certificate than the
+   4-optimality proved for the octads in section 130.
+4. **No single-coset trade, ever.** Words of a coset `C + t` are pairwise at distance `>= 8`,
+   and if `y_0` is a low-weight word of that coset then `x -> x + y_0` maps them **injectively**
+   into `C`. Hence `|union S(x)| >= |X|` for any `X` inside one coset, and the surplus is never
+   positive. An improvement must mix cosets.
+
+### Where this leaves dimension 32
+
+Both levers are now certified locally immovable -- `A(32,8,8) = 1667` is 4-optimal,
+link-optimal and shortening-exhausted (section 130); `A(32,8) = 2^17` is 35-optimal with
+covering radius 6 -- and the geometry between and around them is closed over all of `R^32`.
+`tau(32) = 346432` stands. The remaining room is the LP/SDP gap (`807012` from the two
+ceilings, `3162316` from Cohn's SDP), and reaching any of it needs a nonlinear binary code at
+length 32, not a geometric idea.
+
+Files: `scratchpad/region.py` (the polytope), `region2.py` (pricing the layers), `sphere.py`
+(the independent sphere search), `cover.py` with `g3217.txt` (the `[32,17,8]` code, its
+covering radius and its surplus frontier).
+
+## 133. The A(32,8) problem: three reformulations, and where each one stands (2026-09-14)
+
+Section 132 showed the geometry of dimension 32 is closed and the only two levers are `A(32,8)`
+and `A(32,8,8)`. This section attacks the neglected one. The target is sharp: **a binary code
+of length 32 and minimum distance 8 with more than `2^17 = 131072` words.** Linear is
+exhausted (codetables.de: `[32,17]` has `d = 8`, `[32,18]` has `d <= 7`), so any gain is
+nonlinear, and each extra word is `+1` on `tau(32)`.
+
+### First, the two levers are genuinely different objects
+
+The `[32,17,8]` record code has weight distribution
+
+```
+0:1  8:908  10:3328  12:14784  14:27392  16:38246  18:27392  20:14784  22:3328  24:908  32:1
+```
+
+-- self-complementary, as the cube layer needs. Its **908 weight-8 words** are a valid
+`A(32,8,8)` packing (a `d = 8` code's octad shell always is), but `A(32,8,8) = 1667`. The
+size-optimal code carries only **54%** of the maximal octad shell. So no single code optimises
+both terms, which is precisely why the ERS free product takes two different objects.
+
+### Reformulation A: cosets of RM(1,5), i.e. Boolean-function nonlinearity
+
+Write the code as a union of cosets of `RM(1,5) = [32,5,16]`. Two cosets are compatible iff
+the difference coset has minimum weight `>= 8`, and the minimum weight of a coset of `RM(1,5)`
+**is exactly the nonlinearity of the corresponding Boolean function on 5 variables**. So
+
+```
+A(32,8) >= 64 * |T|,   T a set of 5-variable Boolean functions with nl(f + g) >= 8 pairwise
+```
+
+and this framing is **exact at the record**: the `[32,17,8]` was verified here to contain a
+first-order Reed-Muller code (a 5-dimensional subspace whose 31 nonzero words all have weight
+16, plus the all-ones word), so it *is* a union of `2^17/64 = 2048` cosets.
+
+That 2048 is a **subgroup** -- an 11-dimensional space of Boolean functions mod affine, every
+nonzero member at nonlinearity `>= 8`. The quadratics give only dimension 10, which is
+`RM(2,5) = [32,16,8]`; the record's extra dimension must therefore use cubic-or-higher
+functions. And dimension 12 is impossible, because it would be exactly a `[32,18,8]`.
+
+> **So improving `A(32,8)` by this route means a non-subgroup clique of 2049 or more, and
+> `tau(32)` then moves in quanta of 64.**
+
+The graph is explicit and measured: `2^26` vertices, and sampling 300000 random Boolean
+functions gives `P(nl >= 8) = 0.9328`, so edge density 93.3%. A *random* graph of that density
+on `2^26` vertices has maximum clique about `2 ln N / ln(1/p) = 518`. The true clique is at
+least 2048. **Algebra is buying a factor of 4 over randomness here**, which is the argument
+that this lever is structural and not something a search will stumble into. Berlekamp and
+Welch's classification of the 48 affine-equivalence classes of 5-variable Boolean functions
+(IEEE-IT 1972) is the natural handle on it.
+
+### Reformulation B: generalized concatenation, and one entry in a 2001 table
+
+Split 32 into 8 blocks of 4 and take the chain `F_2^4 > even > {0000,1111} > 0`, distances
+1, 2, 4. Zinoviev's construction needs outer codes of length 8 over alphabets 2, 4, 2 with
+distances `D_1 >= 8`, `D_2 >= 4`, `D_3 >= 2`, giving `2 * A_4(8,4) * 128`:
+
+```
+A(32,8) >= 256 * A_4(8,4)
+```
+
+Bogdanova, Brouwer, Kapralov and Ostergard (*Error-Correcting Codes over an Alphabet of Four
+Elements*, DCC 23 (2001) 333-342) give **`A_4(8,4) in [352, 611]`**, and that interval
+straddles the value that matters:
+
+| `A_4(8,4)` | `A(32,8)` | verdict |
+|---|---|---|
+| 256 (linear `[8,4,4]_4`) | 65536 | this is exactly `RM(2,5)` |
+| 352 (published lower bound) | 90112 | still behind the record |
+| **512** | **131072** | ties the record |
+| **513** | **131328** | **`tau(32) >= 346688`, a new record** |
+| 611 (published upper bound) | 156416 | `tau(32) >= 371776`, +7.3% |
+
+So the kissing number of dimension 32 hangs off a single table entry about codes on **eight**
+coordinates. That is the smallest object anywhere in this problem, and the cleanest target.
+
+A caution recorded honestly: my own search on this is **not competitive**. Greedy over the
+65536-vertex Cayley graph (block-weight metric, connection set 97.3% dense) returns 256 across
+60 restarts, and a large-neighbourhood search returned 247 -- both below the published 352. I
+have nothing to add to that entry; what is new here is only the *link* to dimension 32.
+
+### Reformulation C: Z4-linearity
+
+The Gray map is an isometry from the Lee metric on `Z_4^16` to the Hamming metric on `F_2^32`,
+so a `Z_4` code of length 16 with Lee distance 8 and more than `2^17` words would do it. This
+is the mechanism by which Kerdock and Preparata codes beat the linear bounds -- but those live
+at binary length `2^{m+1}` with `m` **odd**, and binary length 32 needs `m = 4`. *That is
+exactly why length 32 has no Kerdock code.* The route is not excluded, it simply has no
+classical family sitting on it.
+
+### Calibration: is the gap unusual?
+
+The Delsarte LP used here is sound but a few percent loose: it returns **4096 exactly** at
+`A(24,8)` (the Golay code, where the LP is tight) and **32206** against Brouwer's 32151 at
+`A(28,8)`, which uses the extra Best-et-al. inequalities. At `n = 32` it gives **351908**.
+
+The ratio of best-known lower bound to upper bound is `16384/32151 = 0.51` at `n = 28` and
+`131072/351908 = 0.37` at `n = 32`. **The gap at 32 is ordinary for this family** -- it is not
+evidence of a construction that everyone has missed, and nobody should read the factor of 2.7
+as free room.
+
+### Summary of the state
+
+| route | status |
+|---|---|
+| linear codes | **closed**: `[32,18]` has `d <= 7` |
+| adjoin a word or a coset | **closed**: covering radius 6 < 8 |
+| delete-and-replace inside the code | **closed below 36**: every outside word has `>= 36` codewords within distance 7, and single-coset trades inject |
+| non-subgroup clique of RM(1,5)-cosets | **open**, needs 2049, quanta of 64 |
+| generalized concatenation | **open**, needs `A_4(8,4) >= 513` against a published `[352, 611]` |
+| `Z_4`-linear of length 16, Lee distance 8 | **open**, no classical family at this length |
+| prescribed automorphisms (e.g. `AGL(1,32)`, order 992) | **open**, ~4.3M orbits; the modern tool, and a real search |
+
+Files: `scratchpad/q4.py` (quaternary LP), `a484.py` and `lns484.py` (the `A_4(8,4)` searches,
+both short of the published bound), `cal.py` (binary LP calibration), `codestruct.py` (weight
+distribution, nonlinearity density, the RM(1,5) containment test), `g3217.txt`.
+
+## 134. The exchange law: why the octad layer's product structure is optimal (2026-09-14)
+
+Sections 132 and 133 left dimension 32 as two coding numbers and pushed on `A(32,8)` by
+search. This section removes the most natural *non*-search route by proving it cannot work.
+
+### The middle term is not really `128 x A(32,8,8)`
+
+In the `sqrt(32)` scaling the octad layer is the set of vectors that are `+-2` on an 8-set and
+zero elsewhere. Halving, define
+
+```
+L = max number of weight-8 (+-1)-vectors in Z^32 with pairwise inner product <= 4
+```
+
+so that `tau(32) >= A(32,8) + L + 1984`. The cross-conditions do **not** constrain `L` at all:
+for any signed octad `y`, a cube vector gives `<u,y> = 2 sum_{i in O} u_i eps_i <= 16` and a
+pair vector gives `<(4,4,0..),y> <= 8 + 8 = 16`, both automatically. **`L` is free to be
+whatever it wants.** Edel-Rains-Sloane assume it is a product -- a packing of octads times one
+sign code, `128 x A(32,8,8) = 213376` -- but that is an assumption of the chain, not of the
+geometry.
+
+Write `T = O n O'` and `t = |T|`. Then `<y,y'> = t - 2 d_T(eps, eps') <= 4`, i.e.
+
+```
+d_T >= ceil((t-4)/2):   free for t <= 4;   differ once for t = 5, 6;   differ twice for t = 7
+```
+
+So **overlaps of 5, 6 and 7 are not forbidden -- they are paid for in signs.** That is the one
+door the ERS ansatz never opens, and it is the obvious place to look for a non-product gain.
+
+### The exchange law
+
+Fix a core `T` and octads `O_1, ..., O_m` in the family that pairwise meet *exactly* in `T`,
+with sign codes `S_{O_i}`. Two bounds:
+
+* **Fibres.** Two patterns of `S_O` with the same restriction to `T` differ only on the
+  `8-t` coordinates of `O \ T`, and there at distance `>= 2`. So each fibre has at most
+  `A(8-t, 2) = 2^{7-t}` elements, giving `|S_O| <= 2^{7-t} |proj_T(S_O)|`.
+* **Projections.** For `t = 5, 6` the condition `d_T >= 1` says no pattern of `S_{O_i}` agrees
+  on `T` with any pattern of `S_{O_j}`; for `t = 7` the condition `d_T >= 2` is stronger still.
+  Either way the projections are pairwise **disjoint**, so `sum_i |proj_T(S_{O_i})| <= 2^t`.
+
+Multiply:
+
+```
+sum_i |S_{O_i}|  <=  2^{7-t} * 2^t  =  2^7  =  128      for t = 5, 6 and 7 alike
+```
+
+> **A whole sunflower of overlapping octads carries exactly what one octad carries.**
+> `A(8,2) = 128`. Spreading the layer over more octads by allowing bigger intersections is,
+> at best, break-even -- and it is never a gain.
+
+The uniformity is not a coincidence: it is the identity `A(8-t,2) * 2^t = 2^{7-t} * 2^t =
+2^{s-1} = A(8,2)`, i.e. the bottleneck capacity of a core is independent of its size. The
+pairwise case `m = 2` reads `n_O + n_{O'} <= 128` whenever `|O n O'| >= 5`, against
+`n_O + n_{O'} <= 256` when `|O n O'| <= 4`.
+
+Checked against search (`scratchpad/exch.py`): build the graph on `2 x 256` signed patterns of
+two octads meeting in `t` points and look for the largest compatible set.
+
+| `t` | best found by randomised greedy | proved bound |
+|---|---|---|
+| 3 | 220 | 256 |
+| 4 | 220 | 256 |
+| 5 | 118 | **128** |
+| 6 | 121 | **128** |
+| 7 | 102 | **128** |
+
+The greedy is weak (it does not reach 256 at `t <= 4`, where both octads can be full), but it
+never exceeds the bound -- the check can fail and does not.
+
+### Why this is the right statement, and what it does not say
+
+The same computation explains the ERS formula itself. At a level with support size `s` and
+scale `c` (`c^2 s = 32`), two vectors on the same support need `c^2(s - 2d) <= 16`, i.e.
+`d >= s/4`, so the sign code is `A(s, ceil(s/4))`; and two supports need `t <= s/2`, so the
+support family is `A(n, s, s)`. **That is exactly the ERS summand `A(n,n_v,n_v) A(n_v,
+ceil(n_v/4))`** -- and the exchange law says the product is optimal at `s = 8`, because
+`2^{s-1}` factorises through every core.
+
+Honest scope: this is proved for **sunflowers** -- families whose octads pairwise meet in one
+common core -- and, as the `m = 2` case, for every conflicting pair. It does **not** prove
+`L = 128 A(32,8,8)` outright, because a family could mix overlaps without a common core. What
+it does prove is that the natural non-product idea -- relax the packing condition, pay in
+signs -- is closed, and it closes it by structure with no search at all.
+
+### The routes that remain
+
+Removing this one, the live list from section 133 is shorter:
+
+| route | status |
+|---|---|
+| relax the octad packing, pay in signs | **closed by the exchange law** |
+| non-subgroup clique of 2049 RM(1,5)-cosets | open, quanta of 64 |
+| `A_4(8,4) >= 513` in generalized concatenation | open, published `[352, 611]` |
+| `Z_4`-linear, length 16, Lee distance 8 | open, no classical family at this length |
+
+Files: `scratchpad/exch.py`.
+
+## 135. Why dimension 32 is the LAST rigid dimension, and where the room actually starts (2026-09-15)
+
+Section 134 proved an exchange law for the octad layer of dimension 32 and found the bound came
+out at exactly `128 = A(8,2)`. That exactness is the whole story, and generalising it says
+where to stop working and where to start.
+
+### The level quantity, in general
+
+For an ERS level with support size `s` and scale `c` (`c^2 s = N`), two vectors on the same
+support need `c^2(s - 2d) <= N/2`, i.e. `d >= s/4`, so the sign code is `A(s, ceil(s/4))`; two
+supports need overlap `t <= s/2`, so the support family is `A(n,s,s)`. That is exactly the ERS
+summand. But the honest quantity is
+
+```
+L(n,s) = max (+-1)-on-an-s-set vectors in Z^n with pairwise inner product <= s/2
+```
+
+and ERS merely *assumes* `L = A(n,s,s) * A(s, ceil(s/4))`. The cross-level conditions hold
+automatically (section 134), so each level may be optimised independently and `L` is free to be
+non-product.
+
+### The counting bound, and the ratio that decides everything
+
+Count **signed `a`-sets** with `a = floor(s/2) + 1`. Two vectors sharing one agree on `a`
+coordinates, so their correlation is at least `2a - t`; needing `<= s/2` forces
+`t >= 2a - s/2`, and within one support at most `A(s-a, ceil(s/4))` vectors share a given
+signed `a`-set. Hence
+
+```
+L(n,s)  <=  A(s-a, ceil(s/4)) * 2^a * C(n,a) / C(s,a)
+```
+
+which is the **same order in `n`** as the product ceiling `A(n,s,s) A(s,ceil(s/4))` -- so the
+room is a bounded factor, never an order. Dividing, the factor is
+
+```
+ratio(s) = A(s - floor(s/2) - 1, ceil(s/4)) * 2^{floor(s/2)+1} / A(s, ceil(s/4))
+```
+
+| `s` | 4 | 5 | 6 | 7 | **8** | 9 | 10 | 11 | 12 | 16 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| `ceil(s/4)` | 1 | 2 | 2 | 2 | **2** | 3 | 3 | 3 | 3 | 4 |
+| ratio | 1 | 1 | 1 | 1 | **1** | 1.60 | 1.78 | 1.78 | 2.00 | 2.00 |
+
+At `s = 8, n = 32` it returns `460288`, reproducing the ceiling derived independently in
+section 132 from the Johnson bound (`128 x 3540 = 453120`).
+
+> **The ERS product form is forced exactly when the level's sign-code distance is `<= 2`,
+> i.e. `s <= 8`.** The reason is arithmetic, not geometric: `A(m,1) = 2^m` and
+> `A(m,2) = 2^{m-1}` are *perfect*, so the bound collapses onto the product exactly. From
+> `s = 9` the distance is 3, `A(m,3)` stops being a clean power of two, and **the slack in the
+> sign code is precisely the room the bound opens.**
+
+### Where that puts each dimension
+
+The chain is `n_0 = n`, `n_{v+1} = floor(n_v / 4)`. Level 0 is a single support
+(`A(n,n,n) = 1`) so it is exempt; the levels that can have slack are `v >= 1`.
+
+| `n` | chain | levels with `s >= 9` |
+|---|---|---|
+| 32, 33, 34, 35 | `[n, 8, 2]` | **none -- fully forced** |
+| 36 - 39 | `[n, 9, 2]` | 9 |
+| 40, 41 | `[n, 10, 2]` | 10 |
+| 48 | `[48, 12, 3]` | 12 |
+| 62, 63 | `[n, 15, 3]` | 15 |
+| 96 | `[96, 24, 6]` | 24 |
+
+> **Dimension 32 is the last dimension whose ERS level structure is completely forced.** That
+> is the structural reason every route tried in sections 130-134 closed: the geometry is
+> maximal (132), the cube code is 35-optimal with covering radius 6 (133), and the octad layer
+> cannot be restructured (134). There was never any room to find.
+
+### What to do instead
+
+The first dimensions with slack at which ERS is still the record are **36 and 37** (38-43 were
+taken by Dorofeev-Sun-Wang cross-sections, section 131). There the level-1 term is
+`A(36,9,9) * A(9,3) = A(36,9,9) * 40`, and the Johnson chain
+`6 -> 33 -> 160 -> 700 -> 2800` caps `A(36,9,9) <= 2800`, so level 1 is at most `112000` and
+the ratio 1.6 is an upper bound on what restructuring it could ever buy. The repository's own
+ERS-chain claims at **62, 63 and 96** carry slack at level 1 as well (`s = 15, 15, 24`, ratio
+about 2).
+
+Honest scope: `ratio(s) > 1` says the *bound* opens, not that a construction exists -- a
+sunflower is a local structure and clusters points, while the product form spreads supports
+over `C(n, s/2+1)` choices. What the dichotomy delivers is a place to look and, more usefully,
+a proof that dimensions 32 to 35 are not that place.
+
+Files: `scratchpad/level.py` (level search; note the `popc` in-place bug recorded below),
+`exch.py`.
+
+*A trap worth recording: the first version of `level.py` used
+`np.asarray(a, dtype=np.int64)` inside `popc` and then `a >>= 1`. `asarray` does not copy an
+array that already has the right dtype, so `popc` destroyed its own argument; the second call
+in `popc(ov) - 2*popc(ov & ...)` silently saw zeros and the test degenerated to
+`|O n O'| <= s/2`. It returned exactly the support-packing numbers -- 14 for `A(8,4,4)`, 1 for
+`A(11,10,10)` -- which look like plausible answers rather than a bug.*
+
+
+## 136. Dimension 29: the head HEIGHT is a free parameter, and sqrt(5/2) is a triple coincidence for D5 (2026-09-15)
+
+Working files: `research/collab2531/dim29/`, `FINDINGS.md` section 56.  Packaged the same day as
+`verifications/superseded/dim29-sqrt52-layer/` (exact verifier `verify29.py`, ~3 min; moved there on 2026-09-15, beaten by the norm-8 frame layer of section 138; the axis
+ceiling in `axbound29.py`, seconds).
+
+**K(29) >= 209594** against the published **209496** -- Ma et al. 2025, arXiv:2511.13391, the
+PackingStar configurations, which hold dimensions 25-31 and are reference [15] of Cohn's table;
+the coordinates are read from Cohn's data set `dimensions25-31.txt`.  (Not to be confused with
+*Cohn's construction*, the unpublished one this collaboration also works over, which is what that
+phrase means throughout `research/collab2531/`.)
+`189616 + 19840 + 10 + 128`, a gain of **+98** -- the
+largest layer gain in 25-31, against +50 in dimension 30 and +4 in dimension 31.
+
+**What was wrong with the earlier framing.**  Every layer in sections 128-129 fixed the head at
+`x = f/sqrt3` (height sqrt2) or `x = u/2` (height sqrt3), and section 49's criterion was written as
+if it were a statement about the direction system's covering cosine.  It is a statement about the
+PAIR (height, covering cosine).  A head at height `h` has `|x|^2 = 4 - h^2`, and four thresholds
+all move with `h`:
+
+| quantity | threshold |
+|---|---|
+| deletion-free | `max <x,u> <= 2` |
+| an axis point survives | `cos(a,w) <= 1/h` |
+| directions per head | `cos(w,w') <= 1 - 2/h^2` |
+| heads per direction | `cos <= (2-h^2)/(4-h^2)`, so `k <= 2/(2-|x|^2)` |
+
+At `h^2 = 5/2` three of them coincide for D5 at once: `|x|^2 = 3/2` is exactly the norm-6 scale
+(so `x = v/2` and `<v/2,u> <= 3/2 < 2`: **nothing is deleted**); `1/h = 2/sqrt10` is exactly D5's
+covering cosine on `S^4`, attained at its 32 deep holes `(+-1,...,+-1)/sqrt5`; and
+`1 - 2/h^2 = 1/5` is exactly the cosine of two sign patterns at **Hamming distance 2**, so a head
+carries `A(5,2) = 16` directions instead of 4.  Heads are what cost (552 forbidden owners each);
+directions are free.  That is the whole +98.
+
+`|x|^2 = 3/2` is a knife edge on both sides.  `k <= 2/(2-|x|^2)` is an integer exactly there, and
+`1 - 2/(4-|x|^2) >= 1/5` makes it the smallest `|x|^2` at which distance-2 codes are legal:
+
+    |x|^2     1.4    1.5     1.5+eps   1.6
+    k          3      4         4       5
+    dirs/head 16     16         4       4
+    points    96    128        128     160
+    heads      6      8         32      40   <- 552 forbidden owners per head
+
+At 1.6 a class avoids the forbidden set with probability `6.3e-25` against `1.8e-5` at eight heads.
+
+**The construction.**  Four Golay **dodecads** covering each of the 24 coordinates exactly twice,
+opposite signs on the 4 coordinates each pair shares: `v_1..v_4` of norm 48 (Cohn units), Gram
+`48`/`-16`, **summing to zero** -- which is the simplex bound `k <= 4` attained and tight.  Then
+`v_i` on the 16 even sign patterns and `-v_i` on the 16 odd ones, `4 x 32 = 128` points.  Three
+different families of pairs sit at exactly 2 (same head at distance 2; two heads on one direction;
+`v_i` against `-v_j` at distance 1), so there is no slack anywhere in the layer.
+
+**Both ceilings are proved, not measured.**  `32 x 4 = 128` is the layer maximum at this height.
+For the axis: against all 32 deep holes at once the admissible region is exactly `||p||_1 <= sqrt2`
+-- the 32 sign patterns are the extreme points of the `l_inf` ball, so "cosine at most `2/sqrt10`
+with all of them" is literally an `l_1` bound -- and with the cap condition
+`|p_i| + |p_j| <= sqrt(3/2)`, `1 = sum p_i^2 <= m^2 + (sqrt(3/2)-m)(sqrt2-m)` gives
+`2m^2 - (sqrt(3/2)+sqrt2) m + (sqrt3-1) >= 0`; the smaller root is `0.39662 < 1/sqrt5`, so
+`m = max |p_i| >= 0.92285735`, i.e. every admissible point is within **22.65 degrees** of a
+coordinate axis and two in one blob would be at `2m^2 - 1 = 0.7033 > 1/2`.  **10 is maximal**, and
+`+-E_i` attain it with nothing blocked, against the 8 of the published 40 that survive.  A sampled
+minimum of 0.945 preceded this; the quadratic is exact and the right number is 0.9229.
+Also closed: a second layer at another height on the same directions would need `<v_i,w> <= -3`
+for all four heads, and `sum v_i = 0` forbids it; free heads die for section 49's reason; and
+Cohn's CAP height `c^2 = 2/3` is forced too, being the smallest value that keeps the 496-class and
+hence the one with the most directions per head.
+
+**Why 29 and not 31: owner density, again.**  14 classes are `6944 = 3.53%` of the Leech shell, so
+a clean image is disjoint from the other 13 at `e^-16`; 12 185 clean images out of 17 million gave
+14 pairwise disjoint ones **on the first seed**, `S = 0`, no owner surrendered.  Dimension 31
+places 42 classes at `10.60%`: `e^-52.5`, and greedy assembly stalls at `S ~ 386`.  The dimension
+with the best layer geometry has the worst room for it.
+
+**What is left.**  Only the class, at `+52` per extra LINE (weight 26).  The cap side realises
+`26 * 496 = 12896` against its fractional ceiling `2 * 496 * chi_f(G_5) = 2 * 496 * 40/3 =
+13226.67` -- D5's triangle graph is vertex-transitive with `n = 80, alpha = 6` -- so it is 330
+short, which is the `13.33 against 13` gap of sections 45-47 and a Leech question, not a
+dimension-29 one.
+
+*A trap worth recording: `quad29.npy` was written by BOTH `quad29.py` (an earlier search) and
+`quad29b.py` (the dodecad quadruple that is shipped), and the earlier script ran last, so the file
+on disk was not the quadruple the verified configuration uses -- `verify29.py` reads its heads out
+of `setup29.npz` and never touched the stale file.  It surfaced only when the export script
+recomputed `max |<v_i, owner>|` from `quad29.npy` and got 24 where the design requires 16.  Two
+scripts must not share an output name, and the export is the place where that gets caught: it is
+the only step that re-derives a quantity from the files rather than from the pipeline's memory.*
+
+
+## 137. Dimension 28: the head's NORM is the second free parameter (2026-09-15)
+
+Found by another session the same day as section 136; packaged as
+`verifications/improved/dim28-norm8-frame-layer/`, working note FINDINGS section 58.  This
+section records what the verification needed, since that is where the work went.
+
+**K(28) >= 204896** (published 204520, Ma et al. 2025 arXiv:2511.13391), a gain of **+376** --
+the largest of the four layer gains, and with it every dimension 25-31 is claimed.
+`192592 + 3*3968 + 16 + 384 = 204896`.
+
+**The mechanism, in the language of section 136.**  Height `h = sqrt2`, so `|x|^2 = 2` -- the same
+height as dimension 30.  What differs is the HEAD's norm: dimension 30 uses `f/sqrt3` with
+`|f|^2 = 6`, dimension 28 uses `v/2` with `|v|^2 = 8`.  The general lattice fact is one line: for
+`g` in the Leech of squared length `2r` and `v` minimal, `g - v` has squared length
+`2r + 4 - 2<g,v>`, which is `0` or at least `4` and never `2`, so `<g,v> <= r - 1` -- at most 3 at
+norm 6, at most 4 at norm 8.  At norm 8 that gives `<v/2, u> <= 2` exactly: the layer TOUCHES the
+equator and deletes nothing.
+
+**Why the norm is what decides dimension 28.**  The layer directions are the eight `+-e_k` of
+`R^4` and the cap directions are the 24-cell, at `<w,z> = 1/sqrt2 = 1/h` -- exactly the axis
+threshold, so section 136's collapse applies and the cap condition is `<x,u> <= sqrt6 - sqrt2`.
+A norm-8 head needs `<v,u> <= 2`; a norm-6 head would need `<f,u> <= sqrt3(sqrt6-sqrt2) = 1.79`,
+i.e. `<f,u> <= 1`, which forbids **11730** minimal lines to each head against **2094** for the
+norm-8 head (both counted here).  That is the whole difference.
+
+**Why the layer is so large.**  At `|x|^2 = 2` the constraint on two heads sharing a direction is
+`<v,v'> <= 0`, and the 48 vectors `+-f_1..+-f_24` of a frame with their negatives satisfy it
+throughout; 48 pairwise non-acute vectors in `R^24` ARE a frame, so 24 head lines is the maximum
+and the layer is `48 x 8 = 384` points.  A head carries every direction with `<w,w'> <= 0`, so all
+eight.  The published axis is the DUAL 24-cell = eight `+-e_k` plus sixteen half-vectors; the
+layer takes the first eight as its own directions, which deletes exactly those eight axis points
+and leaves 16.  Net `384 - 8 = +376`.
+
+**What the verification needed (the part worth recording).**  The shipped verifier decided each
+pair TYPE by a worst case rather than scanning pairs, which is legitimate but only as good as the
+case list, and three things were wrong with it:
+
+* `req(all(r.tobytes() in KEY or True for r in HD), "heads are lattice vectors")` -- `X or True`
+  is a check that **cannot fail**, and it could not have passed either, since `KEY` holds minimal
+  vectors and a head has twice the norm.  Replaced by the Conway-Sloane criterion against the
+  package's own Golay code; it rejects 3 of 7 probes.
+* two facts the case list used were never checked: `max <u,v>` over the WHOLE shell (it is 32,
+  so the layer is deletion-free) and the cap-vs-axis cosine (it is `1/sqrt2`).
+* `class k is 60-degree free` named the wrong condition -- the cap-cap bound needs
+  `|<u,u'>| <= 8`, i.e. at least `arccos(1/4) = 75.52` degrees.  The check was right, the name
+  was not.
+
+All four facts are TRUE -- an independent rebuild of all 204896 points from the package's own data
+and Golay code, every pair but equator-against-equator, gives max inner product exactly 2 with no
+violation -- so nothing about the bound moved.  But a worst-case verifier must check the facts its
+cases quantify over, and the one check that could not fail is the kind of defect no amount of
+re-running finds.
+
+*A trap worth recording: this package's `lib/golay.py` is the QR construction, while the shared
+`lib/golay.py` of dimensions 29-31 is the generator recovered from Cohn's coordinate file.  They
+are equivalent codes in DIFFERENT coordinates, and the two Leech lattices they build share only
+576 of 98280 minimal lines.  A membership test run against the wrong one is well-typed and
+silent.  It happened to be harmless here only because the 24 heads are `8e_i`, which lie in both;
+the probe was re-run against the package's own code before anything was concluded.*
+
+
+## 138. The norm-8 FRAME layer is not about dimension 28: K(29) >= 209968, K(30) >= 220948 (2026-09-15)
+
+Section 137 recorded the dimension-28 layer -- a norm-8 head at height `sqrt2`, a whole Leech
+frame of them, `48 x 8 = 384` points.  **That layer is dimension-independent.**  Three of its
+four constraints hold in `R^{24+k}` for every `k`:
+
+* it **deletes no equator point**: a norm-8 lattice vector meets a minimal one at `<v,u> <= 4`,
+  so `<v/2,u> <= 2` exactly;
+* `|x|^2 = 2` makes the third line of the height table read `<w,w'> <= 0`, so one head carries a
+  whole **cross-polytope**, `2k` directions;
+* the fourth reads `<x,x'> <= 0`, so two heads share a direction as soon as their lattice vectors
+  are non-acute -- and 48 vectors of `R^24` pairwise at non-positive inner product ARE a frame,
+  so 24 head lines is the maximum and every one of the 48 carries every direction.
+
+So the layer is **96k points** -- 384, 480, 576, 672 in dimensions 28 to 31 -- and the only
+question is the cap constraint.  With every owner **type B** for the frame (`|<u,f_i>| = 2` for
+all 24 heads) the threshold on the directions is `<z,w> <= sqrt(3/2) - 1/2 = 0.724744871`, and
+**D4, D5, E6 and E7 each have an orthonormal frame in which every root has largest coordinate
+`1/sqrt2 = 0.707106781`** (for E7, rotate the pair `(e_6,e_7)` by 45 degrees, since two roots are
+otherwise aligned with a frame vector).  The whole margin is one inequality:
+
+        1/sqrt2 <= sqrt(3/2) - 1/2   <=>   1 + 1/sqrt2 <= sqrt3   <=>   sqrt2 < 3/2 ,
+
+the same one dimension 28 turns on.  **The layer costs nothing geometrically and everything in
+the classes**: every one of them must be type B for one common frame -- 8 in dimension 28, 24 in dimension 30 and 42 in dimension 31, all `tau(k)/3`, but **14** in dimension 29, not `floor(tau(5)/3) = 13`, since `tau(5) = 40` is not a multiple of 3 and the partition is 12 triangles plus 2 antipodal pairs.
+
+### The observation that makes the class packing cheap
+
+**Choose the coordinates so that the frame is `8e_1 .. 8e_24`.**  Then the type-B lines are
+exactly the `759 x 64 = 48576` octad vectors `(+-2^8, 0^16)` of the standard Golay code, and the
+whole monomial group `2^12:M24` -- order 1.0e12 -- permutes them.  **Every monomial image of a
+type-B class is again a type-B class.**  The dimension-28 search ran in a sextet frame where only
+2.2e-3 of monomials gave a clean image; in frame coordinates that filter disappears entirely.
+
+The moves are cheap too.  A type-B line is an **octad plus a position in `F_2^6`**, and a Golay
+sign word acts by translating that position inside its octad -- so all 4096 sign images of a
+class under one permutation are a single gather, and the sign word of a class is an **exactly
+solvable coordinate**.  Coordinate descent over the sign words, re-drawing a batch of
+permutations at each visit, gives 14 disjoint 248-line classes in dimension 29 in 14 seconds.
+And a subset of a class is again a class, so a family with repeats is not wasted: the objective
+is `248*T - (excess coverings)`.
+
+### The numbers
+
+| k | dim | classes | owner lines | axis kept | layer | total | published | previous |
+|---|---|---|---|---|---|---|---|---|
+| 5 | 29 | 14 | 3472, exact | 32 of 40 | 480 | **209968** | 209496 | 209594 |
+| 6 | 30 | 24 | 5941 of 5952 | 48 of 72 | 576 | **220948** | 220440 | 220494 |
+| 7 | 31 | 42 | 10254 needed, 10183 reached | 110 of 126 | 672 | -- | 238350 | 238354 |
+
+Dimension 29 uses 12 zero-sum triangles and 2 antipodal pairs: `tau(5) = 40` is not a multiple of
+3, and the 40 directions of a maximum 60-degree code in `R^5` sum to zero, so 13 disjoint
+triangles cannot be carved out of one.  The direction weight is 26 either way.
+
+**Dimension 31 does not reach.**  It needs 98.4 per cent of the 10416 lines that 42 full classes
+would give and the descent stalls at 97.8 per cent -- a gap of 71 lines, 284 points.  Nothing
+structural stands in the way: 42 classes need 21.4 per cent of the 48576-line pool.
+
+### A structure worth keeping
+
+An element of `M24` of order 7, 8, 11 or 14 carries the record class round an orbit with **no**
+repeated line at all (order 12 and 15 leave 1, order 21 leaves 32 of 5208).  So a cyclic orbit of
+order 14 is a perfect dimension-29 family on its own.  What does NOT work is tiling with several
+orbits: two orbits collide with each other at the ordinary rate, and orbit-block descent reached
+only 9962 lines in dimension 31 against 10183 for the per-class descent.  **The orbit is a good
+block and a bad tiling.**
+
+### Closed: nothing stacks on it
+
+Because the frame layer's direction runs over the WHOLE cross-polytope, a second layer
+`(x, h w')` above it needs `sqrt2 h / sqrt(k) <= 2 - max <v,x>/2`.  The height-`sqrt3` layer of
+dimension 31 -- the only other one that ever cleared everything else -- fails that at `k = 4`
+(1.2247 against 1.0) and `k = 5` (1.0954 against 1.0), clears it with nothing to spare at
+`k = 6`, and there fails against the caps instead: it needs a direction at
+`<z,w'> <= (2 - 2/sqrt6)/2 = 0.5918` and E6's covering cosine is `sqrt6/4 = 0.6124`.  Only E7
+clears both, at `1/sqrt3 = 0.5774` -- and `k = 7` is exactly where the frame layer does not pay.
+The height-`sqrt(5/2)` layer of section 136 fails the first condition in every dimension, wider.
+So **no dimension carries two layers** (`research/collab2531/frame/secondlayer.py`).
+
+### What this corrects
+
+FRAMEWORK_2531's advice -- "stop optimising layers and axes: they are the small terms" -- was
+right about the *norm-6* layers, which paid between 4 and 128 points.  A norm-8 frame layer pays
+`96k`, which in dimension 30 is worth more than five extra lines of the 248-line record class.
+The shipped package is `verifications/improved/dim29-30-frame-layer/`; it supersedes
+`dim29-sqrt52-layer` and `dim30-sqrt2-layer`, both of which were correct and are now the smaller
+layer.  Working note: research/collab2531/FINDINGS.md section 59.

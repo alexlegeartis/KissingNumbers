@@ -172,8 +172,6 @@ if __name__ == '__main__':
         good = (mu, N) == (mu_e, N_e)
         ok = ok and good
         print("   n = %-3d  minimum %d, kissing number %-12d  expected (%d, %d)  %s"
-              % (n, mu, N, mu_e, N_e, mu_e, N_e, ) if False else
-              "   n = %-3d  minimum %d, kissing number %-12d  expected (%d, %d)  %s"
               % (n, mu, N, mu_e, N_e, "MATCH" if good else "*** MISMATCH ***"))
 
     print()

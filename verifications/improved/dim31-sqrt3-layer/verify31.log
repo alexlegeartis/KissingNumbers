@@ -1,0 +1,10 @@
+  data: 42 classes of 496, u0, 42 triangles, 126 axis directions, 4 layer directions
+  directions: 42 zero-sum unit triangles (E7), 126 unit axis directions, 4 unit layer directions with mutual cosines [['1', '1/3', '-1/3', '-1'], ['1/3', '1', '-1', '-1/3'], ['-1/3', '-1', '1', '1/3'], ['-1', '-1/3', '1/3', '1']]
+  classes: 20832 distinct minimal vectors, inner product at most 8 inside a class (max inside 8), i.e. at least arccos(1/4) = 75.52 deg; u0 is a minimal non-owner
+  cap-cap: all class pairs and direction pairs admissible (thresholds {0: 24, 1/2: 16, -1/2: 32, 1: 8, -1: 40})
+  axis: 4 blocked points dropped (indices [53, 54, 71, 72]); the remaining 122 are pairwise admissible and admissible against every cap (max sqrt(3)*(sqrt(2) + 2)/3 = 1.971197)
+  equator-cap: max <u,u_owner> = 16 over non-owners (inner product 16/sqrt96 = 1.6330)
+  layer-cap: max <u0,u_owner> = 16, worst inner product sqrt(6)/3 + 2*sqrt(3)/3 = 1.971197 (bound 2; exact margin sqrt6 + 2 sqrt3 < 6)
+  layer: 8 points (+-u0/(2 sqrt8), sqrt3 w), admissible against the equator (touching at u0), every cap, the surviving axis, and each other
+  count = 196560 - 20832 + 3 * 20832 + (126 - 4) + 8 = 238354   (850 s)
+ALL CHECKS PASS   K(31) >= 238354

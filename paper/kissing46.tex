@@ -38,7 +38,7 @@ spherical design, Leech lattice, linear programming bound, exact verification}
 \begin{abstract}
 The kissing number $K(n)$ is the largest number of unit vectors in $\R^n$ with
 pairwise inner products at most $\tfrac12$. We improve the best known lower
-bound in $48$ dimensions between $25$ and $96$. All but four of these bounds
+bound in $52$ dimensions between $25$ and $96$. All but four of these bounds
 come from the extremal even unimodular lattices $\Leech$, $\Pff$ and $\Gsz$, by
 two constructions: cross-sections of the minimal shell and layered
 configurations built on it.
@@ -67,7 +67,15 @@ $73\le n\le 95$; over $\Leech$ it reproduces the published values in dimensions
 $25$ to $31$ to within $496$, and rebuilding its caps --- as heads in the lens of
 a minimal vector, and as coset classes over norm-$6$ vectors on every triangle of
 directions --- gives $K(25)\ge197\,569$, $K(26)\ge199\,632$ and
-$K(27)\ge201\,010$.
+$K(27)\ge201\,010$. The level is forced only for a layer that carries a whole set
+of lines; one carrying a few points above each direction may sit at any height,
+and there are heights at which such a layer deletes nothing at all and its
+directions still clear the axis. The norm of its head is free as well, and at
+height $\sqrt2$ a norm-$8$ head --- rather than the norm-$6$ one every earlier
+layer used --- lets a whole frame of $\Leech$ carry the whole cross-polytope of
+$\R^{k}$, which is $96k$ points in every dimension and deletes nothing. This
+gives $K(28)\ge204\,896$, $K(29)\ge209\,968$, $K(30)\ge220\,948$ and
+$K(31)\ge238\,354$, so that every dimension from $25$ to $31$ is improved.
 
 The four remaining bounds are code-theoretic. Evaluated against the current code
 tables, the chain of Edel--Rains--Sloane gives $K(39)\ge 756\,116$,
@@ -112,7 +120,7 @@ of Edel--Rains--Sloane \cite{edel-rains-sloane1998}. In dimensions $73$--$96$ th
 same construction over $\Gsz$ gives $6\,218\,175\,600+K(n-72)$, which at $n=96$ is
 $6\,218\,175\,600+196\,560$, the second summand being the Leech lattice; here
 $K(n-72)$ is again Cohn's entry, its argument running from $1$ to $24$. Forty-three of
-the forty-eight improvements below lie in these ranges.
+the fifty-two improvements below lie in these ranges.
 
 One dimension inside those three ranges is tabulated: at $n=80$ Nebe--Sloane record
 $\Gsz\perp E_8$, whose kissing number $6\,218\,175\,600+240$ is the direct sum
@@ -162,10 +170,11 @@ Table~\ref{tab:summary} groups the improvements by construction.
 Table~\ref{tab:all} in \S\ref{sec:results} gives one row per dimension.
 
 \begin{table}[ht]
-\caption{The forty-eight improvements, grouped by construction; $\#$ is the number
+\caption{The fifty-two improvements, grouped by construction; $\#$ is the number
 of dimensions in a row. The gain is $K_{\mathrm{here}}-K_{\mathrm{prev}}$ and the
-factor their ratio, computed dimension by dimension, with both extremes
-attained at an end of the dimension range, to the two decimals shown. ``Previously'' is \cite{cohn-table}
+factor their ratio, computed dimension by dimension, with the factor
+attaining both its extremes at an end of the dimension range, to the two decimals
+shown; the largest gain need not, and in the $28$--$31$ row it is dimension $30$. ``Previously'' is \cite{cohn-table}
 where that table has an entry and otherwise the value of \S\ref{ss:tables}.
 Dimensions $44$ to $47$ are absent, for the reasons given with
 Table~\ref{tab:all}, which gives every dimension.}
@@ -177,13 +186,14 @@ construction & dimensions & \# & largest gain & factor & where\\
 \midrule
 $\Gsz$ cross-sections & $68$--$71$ & $4$ & $+2\,271\,920\,766$ & $1.09$--$7.85$ & \S\ref{ss:g72}\\
 layers over $\Leech$ & $25$--$27$, $38$ & $4$ & $+24\,960$ & $1.00$--$1.04$ & \S\ref{ss:d25}--\ref{ss:d38}\\
+second layers over $\Leech$ & $28$--$31$ & $4$ & $+508$ & $1.00$--$1.00$ & \S\ref{ss:d293031}\\
 layers over $\Pff$ & $49$--$61$ & $13$ & $+7\,481\,540$ & $1.00$--$1.14$ & \S\ref{ss:big}\\
 the \textsc{ers} chain & $62$, $63$ & $2$ & $+86\,001\,280$ & $1.36$--$2.64$ & \S\ref{ss:d6263}\\
 the \textsc{ers} chain at $96$ & $96$ & $1$ & $+6\,668\,627\,072$ & $2.07$--$2.07$ & \S\ref{ss:d96}\\
 layers over $\Gsz$ & $73$--$95$ & $23$ & $+254\,796\,296$ & $1.00$--$1.04$ & \S\ref{ss:big}\\
 constant-weight codes & $39$ & $1$ & $+128$ & $1.00$--$1.00$ & \S\ref{ss:d39}\\
 \midrule
-total & & $48$ & & &\\
+total & & $52$ & & &\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -193,7 +203,7 @@ entry at all. Three rows exceed $2$, and in none of them is the gain a new
 construction: the cross-sections count a classical configuration, and dimensions
 $62$, $63$ and $96$ evaluate a construction of $1998$ against the code tables of
 $2026$. The rows
-with factors near $1$ span the most dimensions, $41$ of the $48$, though the two
+with factors near $1$ span the most dimensions, $45$ of the $52$, though the two
 largest absolute gains lie in rows whose factor exceeds $2$.
 
 \subsection{Attribution}\label{ss:new}
@@ -212,8 +222,8 @@ claim neither. Cohn's table \cite{cohn-table} records
 $5\,318\,060$ in dimension $46$ and $9\,741\,412$ in dimension $47$.
 \end{sloppypar}
 
-\emph{The forty-eight listed below.} We have found no earlier published claim in dimensions
-$25$--$27$, $38$, $39$, $49$--$63$, $68$--$71$ or $73$--$96$. The one-point
+\emph{The fifty-two listed below.} We have found no earlier published claim in dimensions
+$25$--$31$, $38$, $39$, $49$--$63$, $68$--$71$ or $73$--$96$. The one-point
 distribution of the minimal shell of $\Gsz$ follows from Venkov's theorem in a
 few lines; the bounds in dimensions $70$ and $71$ may therefore already be known
 to specialists, though we have found no record of them. Dimensions $62$, $63$ and $96$
@@ -353,7 +363,7 @@ integer parameters specifies each of them, apart from the four code-theoretic
 ones, which a chain of codes specifies. They lie beyond the reach of a
 coordinate search. We obtain them from the structure of three extremal lattices.
 
-Forty-three of the forty-eight dimensions below lie in ranges in which the published
+Forty-three of the fifty-two dimensions below lie in ranges in which the published
 tables have one entry between them, at $n=80$ (\S\ref{ss:tables}). The improvements there measure the extent
 to which those ranges have not previously been examined.
 
@@ -1107,7 +1117,10 @@ The formula reproduces five independently obtained record configurations exactly
 The columns $k=1$ and $k=3$ exceed the published value; \S\ref{ss:d25} and
 \S\ref{ss:d27} show that the additional points are available. The column $k=2$
 has no slack in this family; \S\ref{ss:d2627} leaves the family, and dimension
-$26$ moves with it.
+$26$ moves with it. Nor have the columns $k=4$ to $k=7$ any slack;
+\S\ref{ss:d293031} adds a fourth family at a different height, and dimensions
+$28$ through $31$ move with that. Every column of the table is therefore beaten,
+though four of them only by leaving the family the table describes.
 
 \subsection{Dimension 25: the choice of level}\label{ss:d25}
 
@@ -1264,12 +1277,244 @@ thresholds $144-96c$ ($c$ the exact largest cosine between two triangles of
 directions, in the scaling with minimum $32$) and the axis inequalities in
 $\mathbb{Q}(\sqrt2,\sqrt3)$, and rejects a head moved, duplicated or displaced.
 
+\subsection{Dimensions 28 to 31: a second layer, at a free
+height}\label{ss:d293031}
+
+\begin{theorem}\label{thm:293031}
+$K(28)\ge204\,896$, $K(29)\ge209\,968$, $K(30)\ge220\,948$ and
+$K(31)\ge238\,354$.
+\end{theorem}
+
+These are joint work in progress with H.~Cohn and B.~Lindow, and the account is
+the separate note of \S\ref{ss:d25}; as in \S\ref{ss:d2627} we record the shape
+and the verification. Table~\ref{tab:calib} is exact in the columns $k=4$
+through $k=7$, so the template of \S\ref{ss:calib} has no slack in any of them:
+every point beyond the published value has to come from outside
+\eqref{eq:families}.
+
+Normalise every point of $\R^{24+k}$ to squared length $4$, so that
+compatibility reads $\ip{P}{Q}\le2$, and write it as $(x,y)$ with $y\in\R^{k}$.
+In these units the three families of \eqref{eq:families} are the equator
+$(u,0)$, the caps $(\sqrt{2/3}\,u,(2/\sqrt3)z)$ and the axis $(0,2a)$, where $u$
+runs over the minimal vectors of $\Leech$, now of squared length $4$.
+
+Proposition~\ref{prop:cap} holds every lifted point at one level, and it is
+\eqref{eq:c3} --- two caps on distinct lines of one $C_i$ at a common direction
+--- that forces $t\ge1/(2(1-\gamma))=\tfrac23$. That constraint exists because a
+whole independent set rides each direction. A family that places only a
+\emph{few} points above each direction does not meet it, and for such a family
+the level is free. Write its points as $(x,hw)$ with $|w|=1$ and
+$|x|^{2}+h^{2}=4$, and call $h$ the \emph{height} and $x$ the \emph{head}. Four
+thresholds move with $h$:
+\begin{equation}\label{eq:heights}
+\begin{array}{ll}
+  \text{no equator point is deleted} & \ip{x}{v}\le2 \text{ for every minimal } v,\\[2pt]
+  \text{an axis point survives}      & \ip{w}{a}\le1/h,\\[2pt]
+  \text{two directions of one head}  & \ip{w}{w'}\le1-2/h^{2},\\[2pt]
+  \text{two heads on one direction}  & \ip{x}{x'}\le2-h^{2},
+\end{array}
+\end{equation}
+and against a cap the condition is
+\begin{equation}\label{eq:layercap}
+  \sqrt{2/3}\;\ip{x}{u}\;+\;\frac{2h}{\sqrt3}\,\ip{w}{z}\;\le\;2 ,
+\end{equation}
+with $u$ an owner and $z$ a direction of the part carrying it. The last line of
+\eqref{eq:heights} holds the number of heads on one direction to
+$2/(2-|x|^{2})$ when $|x|^{2}<2$: the unit vectors $x/|x|$ are then pairwise at
+cosine at most $-c$ with $c=(2-|x|^{2})/|x|^{2}$, and unit vectors so placed
+number at most $1+1/c$. The first line is what makes such a layer cheap: it
+costs no equator point, so the construction pays for it only in axis points and
+in the classes.
+
+Lattice facts supply the heads. If $g\in\Leech$ has $|g|^{2}=2r$ and $v$ is
+minimal, then $g-v$ has squared length $2r+4-2\ip{g}{v}$, an even integer that
+is $0$ or at least $4$; it is $0$ only for $g=v$, and the value
+$\ip{g}{v}=r+1$ would make it $2$, which no lattice vector has. Hence
+$\ip{g}{v}\le r$: at most $3$ for a head of squared length $6$ and at most $4$
+for one of squared length $8$. If $|x|^{2}=1$, so that $x=u_{0}/2$ for a minimal
+$u_{0}$, Cauchy--Schwarz gives $\ip{x}{v}\le2$ with equality only at
+$v=u_{0}$. So $x=v/2$ with $|v|^{2}=6$, $x=f/\sqrt3$ with $|f|^{2}=6$,
+$x=v/2$ with $|v|^{2}=8$ and $x=u_{0}/2$ all satisfy the first line of
+\eqref{eq:heights}, at heights $h^{2}=\tfrac52$, $2$, $2$ and $3$; these are the
+four that occur. The norm of the head is a second free parameter, and the two
+entries at $h^{2}=2$ differ only in it. One consequence of \eqref{eq:layercap} is worth
+recording before the cases, because it does not depend on the height: if the
+direction sits exactly at the axis threshold, $\ip{w}{z}=1/h$, the second term
+is $2/\sqrt3$ whatever $h$ is, and the condition collapses to
+\begin{equation}\label{eq:capthr}
+  \ip{x}{u}\;\le\;\sqrt6-\sqrt2\;=\;1.0352\ldots
+\end{equation}
+
+\begin{table}[ht]
+\caption{The four layers of Theorem~\ref{thm:293031}, in the normalisation
+$|P|^{2}=4$. The head $x$ is the $\R^{24}$ part of a layer point and $w$ its
+direction; $z$ is a cap direction. The first three columns are one layer, the
+norm-$8$ frame at height $\sqrt2$: the head runs over all $48$ vectors of a
+Leech frame and the direction over the whole cross-polytope of $\R^{k}$, which
+is $96k$ points. Dimension $31$ is the one place it does not pay, and keeps the
+height-$\sqrt3$ layer. The axis is the axis of \cite{ma-etal2025} that
+Table~\ref{tab:calib} reproduces, carried into the frame's coordinates. No layer
+point deletes an equator point, and the last three lines are the whole price.}
+\label{tab:layers}
+\small\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lcccc}
+\toprule
+$k$ & $4$ & $5$ & $6$ & $7$\\
+dimension & $28$ & $29$ & $30$ & $31$\\
+\midrule
+height $h$ & $\sqrt2$ & $\sqrt2$ & $\sqrt2$ & $\sqrt3$\\
+$|x|^{2}=4-h^{2}$ & $2$ & $2$ & $2$ & $1$\\
+$|$head$|^{2}$ & $8$ & $8$ & $8$ & $4$\\
+head $x$ & $v/2$ & $v/2$ & $v/2$ & $u_{0}/2$\\
+directions $w$ & $\pm e_{1..4}$ & $\pm e_{1..5}$ & $\pm e_{1..6}$ & $56$ holes of $E_{7}$\\
+axis threshold $1/h$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt3$\\
+largest $\ip{w}{z}$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt3$\\
+directions per head & $8$ & $10$ & $12$ & $4$\\
+heads per direction & $48$ & $48$ & $48$ & $2$\\
+layer points & $384$ & $480$ & $576$ & $8$\\
+\midrule
+axis points kept & $16$ of $24$ & $32$ of $40$ & $48$ of $72$ & $122$ of $126$\\
+owner lines & $8\cdot248$ & $14\cdot248$ & $5\,941$ & $42\cdot248$\\
+net gain & $+376$ & $+472$ & $+508$ & $+4$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\emph{Dimensions 28, 29 and 30: one layer.} Take $h=\sqrt2$ and the head from
+a lattice vector of squared length $8$: $x=v/2$, so that $\ip{x}{u}\le2$ with
+equality and the layer deletes nothing. Three of its four constraints are then
+free \emph{in every dimension}. The third line of \eqref{eq:heights} reads
+$\ip{w}{w'}\le0$, so one head carries a whole cross-polytope, $2k$ directions.
+The fourth reads $\ip{x}{x'}\le0$, so two heads share a direction as soon as
+their lattice vectors are non-acute --- and the $48$ vectors
+$\pm f_{1},\dots,\pm f_{24}$ of a frame satisfy that throughout, while $48$
+vectors of $\R^{24}$ pairwise at non-positive inner product \emph{are} a frame,
+so $24$ head lines is the most there is. The layer is
+\begin{equation}\label{eq:framelayer}
+  48\times2k \;=\; 96k \quad\text{points},
+\end{equation}
+$384$, $480$, $576$ in dimensions $28$, $29$, $30$.
+
+What is left is \eqref{eq:layercap}, and it is the whole content. If
+every owner is \emph{type $B$} for the frame --- $|\ip{u}{f_{i}}|=2$ for all
+$24$ heads, never $3$ or $4$ --- the threshold on the directions is
+\begin{equation}\label{eq:framethr}
+  \ip{z}{w}\;\le\;\sqrt{3/2}-\tfrac12\;=\;0.7247448\ldots,
+\end{equation}
+and the $\tau(k)$ cap directions are a root system: $D_{4}$, $D_{5}$, $E_{6}$,
+$E_{7}$ each have an orthonormal frame in which \emph{every} root has largest
+coordinate $1/\sqrt2=0.7071067\ldots$ For $E_{7}$ one has to rotate a pair of
+basis vectors by $45^{\circ}$, since two of its roots are otherwise aligned with
+a frame vector. So the margin is a single inequality, and it is the one the
+norm of the head buys:
+\begin{equation}\label{eq:sqrt2}
+  1/\sqrt2\le\sqrt{3/2}-\tfrac12
+  \quad\Longleftrightarrow\quad 1+1/\sqrt2\le\sqrt3
+  \quad\Longleftrightarrow\quad \sqrt2<\tfrac32 .
+\end{equation}
+A norm-$6$ head at the same height would need $\ip{f}{u}\le1$ instead, which
+forbids $11\,730$ minimal lines to each head where the norm-$8$ head forbids the
+$2\,094$ at $|\ip{v}{u}|\ge3$.
+
+So the layer costs nothing geometrically and everything in the classes: every
+one of them must be type $B$ for one common frame --- $8$ classes in dimension
+$28$, $24$ in dimension $30$, and $14$ in dimension $29$, which carries twelve
+zero-sum triangles and two antipodal pairs because $\tau(5)=40$ is not a
+multiple of $3$. That is cheap for one reason. Choose the coordinates so that the frame is $8e_{1},\dots,8e_{24}$;
+then the type-$B$ lines are exactly the $759\times64=48\,576$ octad vectors
+$(\pm2^{8},0^{16})$ of the Golay code, and the whole monomial group
+$2^{12}{:}M_{24}$ permutes them. \emph{Every monomial image of a type-$B$ class
+is again a type-$B$ class}, so nothing has to be filtered and what is left is a
+packing. It is a packing with cheap moves as well: a type-$B$ line is an octad
+together with a position in $\mathbb{F}_{2}^{6}$, a Golay sign word acts on it by
+translating that position inside its octad, and the sign word of a class is
+therefore an exactly solvable coordinate. Coordinate descent over the sign
+words, with a fresh batch of permutations at each visit to a class, gives $14$
+pairwise disjoint $248$-line classes in dimension $29$ --- the full
+$14\cdot248$, with nothing given up --- and $5\,941$ of the $5\,952$ owner
+lines in dimension $30$. A subset of a class is again a class, so
+the repeats are simply dropped.
+
+What the layer costs in axis points is second order. The condition is
+$|\ip{a}{w}|\le1/\sqrt2$, and what fails it is exactly an axis point lying along
+a frame direction: $16$ of $24$ survive in dimension $28$, $32$ of $40$ in
+dimension $29$, $48$ of $72$ in dimension $30$. Hence
+\[
+  192\,592+3\cdot3\,968+16+384=204\,896,
+\]
+\[
+  189\,616+19\,840+32+480=209\,968,\quad
+  184\,678+35\,646+48+576=220\,948 ,
+\]
+the middle count having $12$ zero-sum triangles and $2$ antipodal pairs, since
+$\tau(5)=40$ is not a multiple of $3$ and the $40$ directions of a maximum
+$60^{\circ}$ code in $\R^{5}$ sum to zero, so $13$ disjoint triangles cannot be
+carved out of one.
+
+\emph{Dimension 31.} Here $96k=672$ would need $42$ type-$B$ classes holding at
+least $10\,254$ of the $10\,416$ lines that $42$ full classes give, and the
+descent reaches $10\,183$; the layer of \eqref{eq:framelayer} does not pay
+there, and dimension $31$ keeps a different one. Take $h=\sqrt3$ and
+$x=u_{0}/2$ for a minimal vector $u_{0}$ that is not an owner. The axis
+threshold is $1/\sqrt3$, and the covering radius of the $E_{7}$ root system on
+$S^{6}$ is exactly $\arccos(1/\sqrt3)$, attained at the $56$ minimal directions
+of $E_{7}^{*}$; take $w$ to be one of them. A deep hole meets the cap directions
+at $0$ or $\pm1/\sqrt3$, so \eqref{eq:capthr} applies, and
+$\ip{x}{u}=\ip{u_{0}}{u}/2\le1$ because $u_{0}$ is not an owner: the layer meets
+no cap, whatever the classes are. Alone among the four it does not touch the
+class problem, and the classes of \cite{ma-etal2025} are used unchanged. The
+worst value in \eqref{eq:layercap} is $\sqrt{2/3}+2/\sqrt3=1.9712\ldots$, with
+exact margin $\sqrt6+2\sqrt3<6$. The third line of \eqref{eq:heights} reads
+$\ip{w}{w'}\le\tfrac13$, which two antipodal pairs of deep holes at mutual
+cosine $\pm\tfrac13$ satisfy, and the fourth reads $\ip{x}{x'}\le-1$, which
+admits the two signs $\pm u_{0}/2$ and no more: $2\times4=8$ points. Each
+deep-hole line deletes the axis points within $\arccos(1/\sqrt3)$ of it, and two
+lines chosen as above delete four between them, so
+\[
+  175\,728+3\cdot20\,832+(126-4)+8=238\,354 .
+\]
+
+How far each can go is known to different depths. In dimensions $28$, $29$ and
+$30$ the layer is at the ceiling \eqref{eq:framelayer} --- every vector of a
+frame on every direction of a cross-polytope, and $24$ head lines is the most
+$\R^{24}$ holds --- and the direction weight $\sum_{i}(|Z_{i}|-1)$ is at the
+$60^{\circ}$-code bound in $\R^{k}$. What is left is the class problem of
+\S\ref{ss:class}, at $+32$, $+52$ and $+96$ for every extra line of the
+$248$-line independent set, against the Delsarte ceiling of $425.45$ lines; and
+in dimension $30$ also the packing, where $11$ repeated lines are worth $+44$.
+In dimension $31$ the height-$\sqrt3$ layer is at a ceiling for that rotation of
+the axis: for two distinct deep-hole lines $w_{i}\mp w_{j}$ is a root of the cap
+$E_{7}$, so a full $126$-point axis hosts at most one line that deletes nothing,
+and a search over every subset of that axis which may be deleted returns $4$ as
+the optimum. A different rotation would change which axis points a hole blocks,
+and that search is open --- as is the $71$-line gap that would hand dimension
+$31$ the frame layer as well.
+
+\begin{sloppypar}
+Three packages verify the four --- \texttt{dim28-norm8-frame-layer},
+\texttt{dim29-30-frame-layer} and \texttt{dim31-sqrt3-layer}. Each rebuilds the
+$196\,560$ minimal vectors from the Golay code and checks the inner-product
+signature of the $98\,280$ lines before trusting them, carries every direction
+and axis point as an exact algebraic number --- an integer quadruple
+$(a+b\sqrt2+c\sqrt3+d\sqrt6)/24$ for the frame layer --- and decides every pair
+exactly: integer inner products in $\R^{24}$, and $\Q(\sqrt2,\sqrt3)$ in
+$\R^{k}$. Each
+checks that the classes are disjoint sets of minimal vectors with pairwise inner
+products at most $1$, that the heads are lattice vectors of the stated squared
+length, that no equator point is deleted, and that the four families have
+pairwise distinct $(|x|^{2},|y|^{2})$, so that the count adds no point twice.
+\end{sloppypar}
+
 \subsection{Dimension 38: large codimension}\label{ss:d38}
 
 For $k\le7$ the number of parts of $Z$ binds in \eqref{eq:count}, and a part is
-worth most when it is a triple: the number of triples available,
-$\lfloor K(k)/3\rfloor$, is $0,2,4,8,13,24,42$, so at most $42\times248$ lines
-carry caps; one therefore takes the independent sets as large as possible. At larger
+worth most when it is a triple: the number of triples is at most
+$\lfloor K(k)/3\rfloor$, which is $0,2,4,8,13,24,42$, so at most $42\times248$
+lines carry caps; one therefore takes the independent sets as large as possible.
+At $k=5$ the bound $13$ is not attained --- the $40$ directions of a maximum
+$60^{\circ}$ code in $\R^{5}$ sum to zero, so thirteen disjoint zero-sum triples
+would leave a fortieth direction summing to zero on its own --- but the weight
+$\sum_{i}(|Z_{i}|-1)=26$ is, by twelve triples and two antipodal pairs. At larger
 $k$ the parts of $Z$ outnumber the disjoint maximum independent sets available,
 and the binding question becomes how much of the shell admits a partition into
 independent sets, a colouring question.
@@ -1694,7 +1939,7 @@ thirds of the total, and the quaternary code $[24,9,12]_4$ are taken from \cite{
 \section{The results}\label{sec:results}
 
 \begin{longtable}{rrrl}
-\caption{All forty-eight improvements. ``Previously'' is \cite{cohn-table} where
+\caption{All fifty-two improvements. ``Previously'' is \cite{cohn-table} where
 that table has an entry and otherwise the direct sum or inherited value of
 \S\ref{ss:tables}. Dimensions $44$ to $47$ are absent:
 \cite{sun-wang2026} gives larger values in dimensions $44$ and $45$;
@@ -1712,6 +1957,10 @@ $n$ & previously & this work & construction\\
 $25$ & $197\,056$ & $197\,569$ & layers over $\Leech$, lens heads (\S\ref{ss:d25})\\
 $26$ & $198\,550$ & $199\,632$ & layers over $\Leech$, one hexagon of leans (\S\ref{ss:d2627})\\
 $27$ & $200\,044$ & $201\,010$ & layers over $\Leech$, two coset triangles (\S\ref{ss:d2627})\\
+$28$ & $204\,520$ & $204\,896$ & second layer over $\Leech$, norm-$8$ head (\S\ref{ss:d293031})\\
+$29$ & $209\,496$ & $209\,968$ & second layer over $\Leech$, norm-$8$ frame (\S\ref{ss:d293031})\\
+$30$ & $220\,440$ & $220\,948$ & second layer over $\Leech$, norm-$8$ frame (\S\ref{ss:d293031})\\
+$31$ & $238\,350$ & $238\,354$ & second layer over $\Leech$, height $\sqrt3$ (\S\ref{ss:d293031})\\
 $38$ & $566\,652$ & $591\,612$ & layers over $\Leech$, $k=14$\\
 $39$ & $755\,988$ & $756\,116$ & constant-weight codes\\
 $49$ & $52\,416\,002$ & $52\,430\,140$ & layers over $\Pff$\\
@@ -1984,7 +2233,12 @@ following standards.
       $\binom{200540}{2}=20\,108\,045\,530$ pairs; that configuration is now
       superseded (\S\ref{ss:d2627}), and the two configurations of \S\ref{ss:d2627},
       in dimensions $26$ and $27$, are verified in exact arithmetic, the
-      head--axis inequalities in $\mathbb{Q}(\sqrt2,\sqrt3)$.
+      head--axis inequalities in $\mathbb{Q}(\sqrt2,\sqrt3)$. The four of
+      \S\ref{ss:d293031} are verified the same way, in
+      $\mathbb{Q}(\sqrt2,\sqrt3)$, and each of those checks includes that
+      the four families of points have pairwise distinct
+      $(|x|^{2},|y|^{2})$ --- a statement about the point set rather than about
+      any angle, and the one the count rests on.
 \item \emph{The cross-section method is validated against every independently
       known value} (Table~\ref{tab:validate}). The inequalities and the counting
       formula of the layered construction are re-derived from first principles
@@ -2004,7 +2258,8 @@ at the fortieth prompt; most of the thirty-nine earlier prompts were some form o
 The remaining constructions, the package \cite{repo} and this exposition were then
 developed by the author with Claude Code (Anthropic), a coding agent built on the
 same model; those of \S\ref{ss:d25} and \S\ref{ss:d2627} with Claude Fable~5.1
-in the same way, inside the joint work with H.~Cohn and B.~Lindow. The agent proposed constructions, implemented and ran the verification
+in the same way, and those of \S\ref{ss:d293031} with Claude Code again, all
+three inside the joint work with H.~Cohn and B.~Lindow. The agent proposed constructions, implemented and ran the verification
 code, and drafted the exposition. The author set the direction, selected the lines
 to pursue and reviewed the text and the certificates.
 

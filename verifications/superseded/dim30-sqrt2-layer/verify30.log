@@ -1,0 +1,13 @@
+  data: 24 classes, 11898 owners in all (6 of the 24 x 496 slots are empty), 11 head lines (both signs used), 33 layer directions, 66 layer points
+  directions: 24 zero-sum unit triangles, cosines in {0, +-1/2, +-1}; 72 unit axis directions; 33 unit layer directions; on one head the cosines are ['-1/2']
+  classes: 11898 distinct minimal vectors; inside a class the largest inner product between distinct vectors is 8 (bound 8: the owners of a class share all three cap directions, so 60-degree-freeness is not enough)
+  heads: 11 Leech vectors of norm 48; largest |<f,f'>| between distinct head lines is 32
+  cap-cap: all class pairs and direction pairs admissible (thresholds {0: 24, 1/2: 16, -1/2: 32, 1: 8, -1: 40}); 1656 tight cases
+  cap-axis: maximum inner product 2 = 2.000000 (bound 2)
+  axis-axis: 72 points of norm 4, pairwise inner product <= 2
+  equator: max <u,u_owner> = 16 (cap inner product 16/sqrt96 = 1.6330), max |<u,f>| = 24 (layer inner product 24/sqrt192 = 1.7321)
+  cap-layer: cos(z,w_j) in ['-sqrt(6)/4', '0', 'sqrt(6)/4']; 24 of the 24 triangles are dirty for some head; over every (dirty class, head) pair max |<u,f>| = 16 (a conflict would be 24); worst inner product 1.942809 (bound 2)
+  axis-layer: maximum inner product 2 = 2.000000 (bound 2)
+  layer-layer: all 66 layer points pairwise admissible (largest |<f,f'>| between head lines 32)
+  count = 196560 - 11898 + 3 * 11898 + 72 + 66 = 220494   (54 s)
+ALL CHECKS PASS   K(30) >= 220494

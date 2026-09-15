@@ -1,5 +1,43 @@
 # CLOSED — dimensions 32 to 44 are exactly at the Edel–Rains–Sloane value
 
+> **Correction, 2026-09-14 — this package's verdict is stale in dimensions 40, 41, 42 and 45.**
+> I. Dorofeev, X. Sun and C. Wang, *Optimal Extensions of Cross-Sections: Sphere Packings in
+> Dimensions 38 to 43*, arXiv:2607.20359v4 (29 Aug 2026), beat the Edel–Rains–Sloane values
+> with **lattice cross-sections** of an extremal even unimodular 48-dimensional lattice:
+> **1 092 000** in dimension 40 (this package said 1 064 368), **1 324 472** in 41,
+> **1 792 386** in 42, and **7 379 838** in 45. Their mechanism takes a saturated rank-$k$
+> cross-section $K\subset\Lambda$ and counts $\#\{w\in\Lambda: |w|^2=6,\ w\perp K\}$.
+>
+> **Strengthened, 2026-09-14 — dimension 32 is now known to be a *maximal* spherical
+> code.** Scaled by $\sqrt{32}$ the three layers are integer vectors of norm 32 with pairwise
+> inner product $\le 16$, the same framework as the Leech. The pair and octad layers cut out a
+> polytope whose maximum Euclidean norm is exactly 1, attained only at the flat vector, so every
+> addable unit vector must be a flat $\pm 1/\sqrt{32}$ one; and the $[32,17,8]$ cube code has
+> **covering radius 6**, so no flat vector is addable either. Nothing at all can be added.
+> The two coding numbers are independent levers, and the neglected one is $A(32,8)=2^{17}$,
+> which is 35-optimal (every outside word has $\ge 36$ codewords within distance 7) and linearly
+> exhausted ($[32,18]$ has $d\le 7$). See KNOWLEDGE.md section 132.
+>
+> **Dimensions 32–37 are unaffected**, and now for a measured reason rather than an untested
+> one: the kissing number of a bare cross-section tracks
+> $R\cdot\mathrm{vol}(B_n(\sqrt6))/\sqrt{\det K}$ with $R=6.92$ — calibrated on their own three
+> results, reproducing dimension 40 to 3 % — while their Proposition 7 floors
+> $\det K\ge(6/\gamma_k)^k$. At $k=16$ that floor is 168 151, capping dimension 32 at about
+> **205 000**, short of its record 346 432 by a factor **1.69**; the rank-16 section that
+> actually exists, $\sqrt3(E_8\perp E_8)$ with $\det 3^{16}$, gives only about **12 800**. The
+> crossover sits at $k\approx8$–$10$, exactly where their chain stops.
+>
+> **Dimension 32 is also now known to be rigid.** Its record is a *free product* of three
+> separately-maximal objects — the cube $(\pm1)^{32}/\sqrt{32}$ on an $A(32,8)$ code, a flat
+> layer on each octad of an $A(32,8,8)$ family, and all $4\binom{32}{2}$ two-sparse vectors —
+> whose cross-conditions are satisfied automatically, two of the three with equality. No fourth
+> layer exists. Neither coding number has a published upper bound, so both were computed here:
+> $A(32,8,8)\le 3540$ (Johnson, correctly nested -- it returns $A(24,8,8)=759$ exactly; the
+> Delsarte LP in $J(32,8)$ gives 3596, which is just the counting bound) and $A(32,8)\le 351\,908$. Hence
+> $\tau_{32}\le 586\,176$ with $A(32,8,8)$ at its cap and $807\,012$ with both — against Cohn's
+> SDP ceiling of 3 162 316. Full account: `KNOWLEDGE.md` §130–131.
+
+
 **Nothing is claimed here**, but this is the most immediately *useful* package in the
 `closed/` tree, because it identifies four dimensions where **Cohn's table is stale** and
 says exactly where any future code improvement will pay off.

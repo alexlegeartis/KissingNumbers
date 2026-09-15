@@ -1,0 +1,6 @@
+  region: ||a||_1 <= sqrt2 = 1.414213562   and   |a_i| + |a_j| <= sqrt(3/2) = 1.224744871
+  step 1: 2m^2 - (sqrt(3/2)+sqrt2) m + (sqrt3 - 1) >= 0 with m >= 1/sqrt5 = 0.447214
+          smaller root 0.396621865 < 1/sqrt5, so max |a_i| >= m0 = 0.922857352  (22.653 degrees off axis)
+  step 2: two admissible points in one +-E_i blob are at inner product >= 2 m0^2 - 1 = 0.703331386 > 1/2, which the axis constraint forbids  ->  at most 1 per blob, at most 10 in all
+  step 3: the 10 points +-E_i are admissible and pairwise at inner product 0 or -1
+EXACT: the axis of this configuration has at most 10 points, and +-E_i attain it.

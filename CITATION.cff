@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use these bounds or this verification code, please cite it."
 title: "Kissing numbers: new lower bounds in dimensions 25 through 96, with verification packages"
 abstract: >-
-  Verification packages for new lower bounds on the kissing number in 48
-  dimensions: 25-27, 38, 39, 49-63, 68-71 and 73-96.  Four ideas carry them.
+  Verification packages for new lower bounds on the kissing number in 52
+  dimensions: 25-31, 38, 39, 49-63, 68-71 and 73-96.  Four ideas carry them.
   (1) Cross-sections of extremal even unimodular lattices, bounded
   by a k-point linear program on the moments that Venkov's theorem supplies,
   with exact rational dual certificates and with translation and lattice-range
@@ -19,7 +19,11 @@ abstract: >-
   onto fixed triangles of directions, the coset triangle of three norm-6
   vectors summing to zero is placed on every triangle of directions with the
   side chosen per head, and an involution on each class gives 199632 and
-  201010.  (3) Explicit large classes found
+  201010; and in dimensions 28 to 31 a SECOND layer sits above the caps, a
+  norm-8 lattice vector at height sqrt2 whose head runs over all 48 vectors of
+  a Leech frame and whose direction runs over the whole cross-polytope of
+  R^k -- 96k points that delete nothing, on the single inequality
+  1/sqrt2 <= sqrt(3/2) - 1/2, which is sqrt2 < 3/2.  (3) Explicit large classes found
   by search, about ten times what Caro-Wei guarantees in every lattice tried.
   (4) The Edel-Rains-Sloane chain evaluated where its authors did not: at n_0 = n
   in dimension 39 with the 2026 constant-weight code tables, as the chain

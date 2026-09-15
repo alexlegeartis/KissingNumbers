@@ -156,6 +156,65 @@ REASON = {
                     'of the solver bound for that pool, and a third and fourth triangle add nothing '
                     'in an hour; the rho = 2 layer at the axis holes is empty (verify27.py; the note, '
                     'section 8)',
+    'classes-28': 'the published configuration is Ma et al. 2025, arXiv:2511.13391 (PackingStar); '
+                  'over it, the equator (196 560) and the direction weight (16 = 8 zero-sum '
+                  'triples partitioning the 24 directions of the 24-cell, which is K(4)) are at '
+                  'their ceilings, and so is the LAYER.  Its head is a norm-8 Leech vector, not '
+                  'the norm-6 of every other layer in 25-31: at height sqrt2 the cap condition '
+                  'needs <v/2,u> <= sqrt6 - sqrt2, which a norm-8 head meets at <u,v> <= 2 and a '
+                  'norm-6 head cannot meet at all against D4\'s covering cosine 1/sqrt2.  A head '
+                  'carries every direction w with <w,w> <= 0, so the eight +-e_k of R^4; two heads '
+                  'share a direction iff <v,v> <= 0, so a frame and its negatives share all eight; '
+                  'and 48 pairwise non-positive vectors in R^24 ARE a frame, so H <= 24 head lines '
+                  'and 16H = 384 points is the maximum.  The axis falls from 24 to the 16 '
+                  'half-vectors of the dual 24-cell, so the layer nets 16H - 8 = +376.  What is '
+                  'left is only the class: +32 per extra LINE (weight 16, two points per weight '
+                  'unit per line) against 248 realised and 425 by the Delsarte LP, and here the '
+                  'class must additionally consist of type-B lines of shape (2^8, 0^16) in the '
+                  'frame coordinates, which is what makes every owner meet every head at |<u,v>| '
+                  '<= 2.  Such classes exist: the six tetrads of a sextet carry 24 mutually '
+                  'orthogonal sign-lines forming one Leech frame, and in it the record 248-line '
+                  'class is all type-B (verifications/improved/dim28-norm8-frame-layer/README.md)',
+    'classes-29': 'the published configuration is Ma et al. 2025, arXiv:2511.13391 (PackingStar).  '
+                  'Over it the equator (196 560), the direction weight (26 = 12 zero-sum triangles '
+                  'plus 2 antipodal pairs, the maximum-weight partition of a 40-point 60-degree code '
+                  'in R^5 -- 13 triangles is impossible because the 40 directions of a maximum code '
+                  'sum to zero) and the LAYER are at their ceilings.  The layer is 480 = 48 frame '
+                  'vectors x 10 cross-polytope directions, which is every head line of a Leech frame '
+                  'on every direction a head can carry; nothing at height sqrt2 can be larger.  The '
+                  'packing is exact: 14 pairwise disjoint classes of the full 248 lines.  Two things '
+                  'move it.  (a) The class: +52 per extra LINE (weight 26, two points per weight unit '
+                  'per line), against 248 realised and 425.45 by the Delsarte LP on the Leech line '
+                  'scheme -- a Leech question, shared with dimensions 28, 30, 31, 49-61 and 73-95.  '
+                  '(b) The axis: 32 of the published 40 survive |<a,w>| <= 1/sqrt2.  The 8 that die '
+                  'are at |<a,w>| = 1 EXACTLY -- they lie along a frame direction -- so the slack in '
+                  'the cap bound (1/sqrt2 = 0.70711 against sqrt(3/2) - 1/2 = 0.72474) does not '
+                  'recover any of them: measured over the whole published axis, the profile is 16 at '
+                  '0.5, 16 at 0.70711 and 8 at 1.  A different maximum 40-point 60-degree code, not a '
+                  'rotation of this one, is the only way the axis moves '
+                  '(research/collab2531/FINDINGS.md section 59; dim29-30-frame-layer/README.md)',
+    'classes-30': 'the equator (196 560), the direction weight (48 = floor(2 x 72 / 3), also '
+                  'fractionally: chi_f = 24 for E6) and the LAYER are at their ceilings.  The layer is '
+                  '576 = 48 frame vectors x 12 cross-polytope directions, every head line of a Leech '
+                  'frame on every direction.  Three things move it.  (a) The class: +96 per extra LINE, '
+                  'against 248 realised and 425.45 by the Delsarte LP -- the same Leech question as in '
+                  'dimensions 28, 29, 31, 49-61 and 73-95.  (b) The PACKING: the 24 classes carry 5 941 '
+                  'of the 5 952 lines that 24 full classes would have, so closing the last 11 repeats '
+                  'is worth +44; coordinate descent on the Golay sign words, annealed, stuck there over 32 sweeps.  '
+                  '(c) The axis: 48 of the published 72 survive the layer.  Carried into the frame '
+                  'coordinates the profile of max |<a,w>| is 32 points at 1/sqrt6 = 0.6124, 16 at '
+                  '1/sqrt2 = 0.70711 and 24 at sqrt(2/3) = 0.8165, so the 24 that die need a 15 per '
+                  'cent reduction while the cap bound gives the frame 2.5 per cent of room (1/sqrt2 '
+                  'against sqrt(3/2) - 1/2).  Not impossible a priori, unlike dimension 29 where the '
+                  'lost points sit at exactly 1, but not searched '
+                  '(research/collab2531/FINDINGS.md section 59; dim29-30-frame-layer/README.md)',
+    'classes-31': 'the equator, the axis (126 = tau(7)) and the direction weight (84 = floor(2 x 126 / 3), '
+                  'chi_f = 42 for E7) are at their ceilings, the 42 classes are the 248-line class at its '
+                  'realised maximum, and the height-sqrt3 layer is at its PROVED ceiling of +4 (shared-root '
+                  'lemma: a full 126-point axis hosts at most one free deep-hole line; CP-SAT over all '
+                  'deletion subsets optimal at 4; 3.8M axis rotations and direction drift never beat it).  '
+                  'Only the class moves it: +168 per extra LINE against 248 realised and 425 by the LP '
+                  '(research/collab2531/BRAINSTORM_31.md; KNOWLEDGE 129)',
     'exhausted-38': 'BOTH layers are at their ceilings: the cap layer at 3 x 196 560 = '
                     '589 680 with the equator empty, and the axis layer at a full tau(14) = '
                     '1932, so the total 591 612 IS 3 tau(24) + tau(14) and this mechanism has '
@@ -225,6 +284,10 @@ STATUS = {}
 for _d, _s, _r in ((25, 'exhausted', 'exhausted-25'),
                    (26, 'exhausted', 'exhausted-26'),
                    (27, 'exhausted', 'exhausted-27'),
+                   (28, 'classes', 'classes-28'),
+                   (29, 'classes', 'classes-29'),
+                   (30, 'classes', 'classes-30'),
+                   (31, 'classes', 'classes-31'),
                    (38, 'exhausted', 'exhausted-38'),
                    (39, 'external', 'external-39')):
     STATUS[_d] = (_s, REASON[_r])

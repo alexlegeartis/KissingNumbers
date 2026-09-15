@@ -1,0 +1,52 @@
+== the Leech shell, from lib/golay.py ==
+  ok    Golay code: 4096 words, 759 octads
+  ok    196560 vectors built (196560)
+  ok    every vector has norm 32 (= 4 in norm-4 units)
+  ok    no coordinate exceeds 4, so <u, 8e_i>/8 <= 4 for every head
+  ok    98280 distinct lines (98280)
+   inner-product signature of the 98280 lines ...
+  ok    every inner product is 0, 8, 16, 24 or 32 -- i.e. 0, 1, 2, 3 or 4 in norm-4 units
+  ok    the profile covers every ordered pair of lines
+  ok    signature 46575 / 47104 / 4600 / 0 / 0 per line at |<u,u'>| = 0, 1, 2, 3, 4 (got [np.int64(46575), np.int64(47104), np.int64(4600), np.int64(0), np.int64(0)])
+   -> distinct minimal lines meet at |<u,u'>| <= 2, which settles equator x equator
+  ok    the 24 heads 8e_i are orthogonal of norm 64 (= 8)
+  ok    the heads are Leech vectors (Conway-Sloane criterion)
+  ok    sampled lines pass the same criterion
+  ok       (negative control: the criterion rejects a perturbed vector)
+
+== owner classes ==
+  ok    every owner line is a Leech minimal line
+  ok    the classes are pairwise disjoint
+  ok    every owner is TYPE B for this frame: |<u, 8e_i>|/8 = 2, never 3 or 4
+  ok    every class is a 75.52-degree code: |<u,u'>| <= 1 in norm-4 units (max 1)
+   24 classes, sizes 245..248, 5941 owner lines in total
+
+== directions, axis and layer, exactly ==
+  ok    k = 6
+  ok    one direction group per class (24)
+  ok    classes and groups are both stored largest first, so the pairing is the best one
+  ok    the groups use 72 distinct directions of 72
+  ok    cap directions are unit vectors
+  ok    axis points are unit vectors
+  ok    the layer frame is orthonormal
+  ok    inside a group the directions are at cosine <= -1/2 (so a cap carries them all)
+  ok    across groups the directions are at cosine <= 1/2
+  ok    cap x layer: |<z,w>| <= sqrt(3/2) - 1/2 for every direction and frame vector (max 0.707106781 vs 0.724744871)
+  ok    axis x axis: the axis is a 60-degree code
+  ok    axis x caps: <a,z> <= sqrt3/2
+  ok    axis x layer: |<a,w>| <= 1/sqrt2
+  ok    cap x layer binds at (sqrt6 + 2 sqrt3)/3 < 2, i.e. sqrt2 < 3/2
+
+== the count ==
+   equator 184678 + caps  35646 + axis  48 + layer 576 = 220948
+  ok    the count agrees with the shipped total (220948)
+
+== independent sweep of every pair except equator x equator ==
+  ok    the assembled point set has 220948 points
+  ok    every point has squared length 4
+  ok    all points are distinct
+   worst inner product found: 2.000000000000
+  ok    every pair outside equator x equator is at inner product <= 2
+
+*** ALL CHECKS PASS ***   K(30) >= 220948      (174 s)
+exit=0

@@ -1,4 +1,4 @@
-verify25.py --- exact verification of K(25) >= 197567
+verify.py --- exact verification of K(25) >= 197569
 
 1. the Leech minimal vectors, rebuilt from the Golay code
   196560 vectors, all of norm 32, all distinct               ok

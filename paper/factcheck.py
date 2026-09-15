@@ -190,8 +190,17 @@ results = {}
 for m in re.finditer(r'^\| (\d+) \| ([\d\u202f ]+) \| \*\*([\d\u202f ]+)\*\* \|', RES, re.M):
     results[int(m.group(1))] = (num(m.group(2)), num(m.group(3)))
 
-chk('Table 4 row count == 48', len(tab4) == 48, 'got %d' % len(tab4))
-chk('RESULTS.md row count == 48', len(results) == 48, 'got %d' % len(results))
+# Dimensions 29, 30 and 31 were claimed on 2026-09-14/15, after the manuscript was frozen, and
+# were excluded here until the manuscript caught up on 2026-09-15; they are now Sections 5.8 and
+# rows of Table 4, so the set is empty.  It is kept, and kept REQUIRED to be exactly the excess of
+# RESULTS.md over Table 4, so that the next claim made between two drafts cannot slip in unnamed:
+# this guard did its job twice, first on dimension 29 and then on the three together.
+POSTDATE = set()
+chk('Table 4 row count == 52', len(tab4) == 52, 'got %d' % len(tab4))
+chk('RESULTS.md row count == 52 + the postdating claims', len(results) == 52 + len(POSTDATE), 'got %d' % len(results))
+chk('the claims that postdate the manuscript are exactly %s' % sorted(POSTDATE), set(results) - set(tab4) == POSTDATE,
+    'RESULTS.md has beyond Table 4: %s' % sorted(set(results) - set(tab4)))
+results = {d: v for d, v in results.items() if d not in POSTDATE}
 chk('dimensions 46 and 47 are not counted', not ({46, 47} & set(tab4)),
     'still present: %s' % sorted({46, 47} & set(tab4)))
 chk('but the paper still records them', '23\\,766\\,960' in TEX
@@ -228,10 +237,14 @@ for d in range(2, 97):
 print('== Table 1 (summary) ==')
 t1 = TEX[TEX.index('\\label{tab:summary}'):
          TEX.index('\\end{tabular}', TEX.index('\\label{tab:summary}'))]
-cap = TEX[TEX.index('\\caption{The forty-eight improvements'):TEX.index('\\label{tab:summary}')]
+cap = TEX[TEX.index('\\caption{The fifty-two improvements'):TEX.index('\\label{tab:summary}')]
 GROUPS = [
     ('$\\Gsz$ cross-sections', [68, 69, 70, 71]),
     ('layers over $\\Leech$', [25, 26, 27, 38]),
+    # The three of Section 5.8 are a different family at a different height over the same
+    # lattice, so they get their own row rather than joining the one above: merged, the row
+    # would claim a construction for seven dimensions that four of them do not use.
+    ('second layers over $\\Leech$', [28, 29, 30, 31]),
     ('layers over $\\Pff$', list(range(49, 62))),
     ('the \\textsc{ers} chain', [62, 63]),
     # Dimension 96 is the same construction at a different chain, (96,24,6,1) rather
@@ -245,7 +258,7 @@ GROUPS = [
 allg = sorted(sum((d for _, d in GROUPS), []))
 chk('Table 1 groups partition Table 4', allg == sorted(tab4),
     'groups %d dims, table4 %d' % (len(allg), len(tab4)))
-chk('Table 1 total row says 48', 'total & & $48$' in t1)
+chk('Table 1 total row says 52', 'total & & $52$' in t1)
 smallest = []
 for name, dims in GROUPS:
     row = [l for l in t1.split('\n') if l.startswith(name + ' &')]
@@ -275,10 +288,16 @@ for name, dims in GROUPS:
         # factor rounds to the same value as an end of the range is not a counterexample
         # (dimensions 25 and 27 both show 1.00 since 2026-09-07)
         _r = lambda d: round(results[d][1] / results[d][0], 2)
-        chk('%s extremes at the ends of the range' % name,
-            gmax in ends and _r(fmin) == min(_r(dims[0]), _r(dims[-1]))
+        # The caption claims this of the FACTOR only: the largest gain sat at an end in
+        # every row until the norm-8 frame layer put it in the middle of 28-31, and the
+        # caption now names that row's maximum instead of asserting it is at an end.
+        chk('%s factor extremes at the ends of the range' % name,
+            _r(fmin) == min(_r(dims[0]), _r(dims[-1]))
             and _r(fmax) == max(_r(dims[0]), _r(dims[-1])),
-            'gmax %d fmin %d fmax %d' % (gmax, fmin, fmax))
+            'fmin %d fmax %d' % (fmin, fmax))
+        chk('%s the caption names the row whose gain is largest, if it is not at an end' % name,
+            gmax in ends or ('row it is dimension $%d$' % gmax) in cap,
+            'largest gain is at dimension %d, which is not an end and is not named' % gmax)
 chk('the caption carries no figures of its own',
     not re.findall(r'\$\+[\d\\,]+\$', cap), 'a numeral crept back into the caption')
 # The prose under Table 1 counts the rows whose factor exceeds 2.  It said "Two" until
@@ -308,10 +327,93 @@ chk('the prose counts the rows with factor above 2',
     'there are %d such rows (%s), and the paper does not say so'
     % (len(_over2), ', '.join(_over2)))
 
-chk('the caption states where the extremes fall',
-    'both extremes attained at an end of the dimension range' in FLAT)
+chk('the caption states where the factor extremes fall',
+    'attaining both its extremes at an end of the dimension range' in FLAT)
 
 # ------------------------------------------------------- one-point distributions
+print('== Table 2 (the four layers) ==')
+# Nothing read this table until 2026-09-15.  Its rows are the whole arithmetic of Section 5.8 --
+# how large each layer is, what it costs in axis points, how many owner lines the classes hold --
+# and a wrong digit in any of them changed no other figure in the manuscript.  Everything below
+# is derived: from RESULTS.md, or from another row of the table, or from the prose beside it.
+t2 = TEX[TEX.index(r'\label{tab:layers}'):
+         TEX.index(r'\end{tabular}', TEX.index(r'\label{tab:layers}'))]
+
+
+def _cells(name):
+    hit = [l for l in t2.split('\n') if l.startswith(name + ' &')]
+    chk('Table 2 has a %r row' % name, len(hit) == 1, '%d rows start with it' % len(hit))
+    return [c.replace(r'\,', '').strip().strip('$')
+            for c in hit[0].rstrip('\\').split('&')[1:]]
+
+
+def _row(name):
+    return [int(re.sub(r'[^0-9+-]', '', c)) for c in _cells(name)]
+
+
+_k = _row('$k$')
+_dim = _row('dimension')
+chk('Table 2 is the four dimensions of Theorem 5.8', _dim == [28, 29, 30, 31], str(_dim))
+chk('and k is the codimension', _k == [d - 24 for d in _dim], str(_k))
+
+_per_head = _row('directions per head')
+_per_dir = _row('heads per direction')
+_layer = _row('layer points')
+_gain = _row('net gain')
+
+# The owner-line cells read "8\cdot248" where the classes are full and a bare count where they
+# are not; in the second case the full count is the one the prose pairs it with.
+_lines, _full = [], []
+for _c in _cells('owner lines'):
+    if r'\cdot' in _c:
+        _a, _b = _c.split(r'\cdot')
+        _lines.append(int(_a) * int(_b))
+        _full.append(int(_a) * int(_b))
+    else:
+        _n = int(_c)
+        _m = re.search(r'\$%s\$ of the \$([0-9\\,]+)\$ owner'
+                       % format(_n, ',').replace(',', r'\\,'), TEX)
+        chk('the prose pairs %d owner lines with a full count' % _n, _m is not None,
+            'no "N of the M owner lines" sentence for %d' % _n)
+        _lines.append(_n)
+        _full.append(int(re.sub(r'[^0-9]', '', _m.group(1))) if _m else _n)
+
+_kept, _axis = [], []
+for _c in _cells('axis points kept'):
+    _a, _b = re.findall(r'[0-9]+', _c)
+    _kept.append(int(_a))
+    _axis.append(int(_b))
+
+for _i, _d in enumerate(_dim):
+    chk('Table 2, dimension %d: the layer is directions x heads' % _d,
+        _layer[_i] == _per_head[_i] * _per_dir[_i],
+        '%d vs %d x %d' % (_layer[_i], _per_head[_i], _per_dir[_i]))
+    chk('Table 2, dimension %d: the net gain is what RESULTS.md gains' % _d,
+        _gain[_i] == results[_d][1] - results[_d][0],
+        '%+d vs %+d' % (_gain[_i], results[_d][1] - results[_d][0]))
+    chk('Table 2, dimension %d: the axis keeps no more than it has' % _d,
+        0 < _kept[_i] <= _axis[_i], '%d of %d' % (_kept[_i], _axis[_i]))
+    # The count identity.  An owner line carries 2*d_c cap points and gives up the 2 equator
+    # points of its own line, so with d_c = 3 a line short of a full class costs 4; the layer
+    # pays, and the axis points the layer blocks are charged.
+    _short = _full[_i] - _lines[_i]
+    chk('Table 2, dimension %d: gain = layer - axis lost - 4 x lines short' % _d,
+        _gain[_i] == _layer[_i] - (_axis[_i] - _kept[_i]) - 4 * _short,
+        '%+d vs %d - %d - 4*%d' % (_gain[_i], _layer[_i], _axis[_i] - _kept[_i], _short))
+
+# 96k is the frame layer's ceiling, and the caption scopes it to the three dimensions that use
+# it; dimension 31 keeps the height-sqrt3 layer, and is the one column that must NOT be 96k.
+_frame = [_i for _i, _d in enumerate(_dim) if _d != 31]
+chk('the frame layer is 96k in dimensions 28, 29 and 30',
+    all(_layer[_i] == 96 * _k[_i] for _i in _frame),
+    str([(_dim[_i], _layer[_i], 96 * _k[_i]) for _i in _frame]))
+chk('and dimension 31 is not, which is why the caption says so',
+    _layer[_dim.index(31)] != 96 * _k[_dim.index(31)]
+    and 'the one place it does not pay' in FLAT)
+chk('the text states the same three layer sizes',
+    ('$%d$, $%d$, $%d$ in dimensions' % tuple(_layer[_i] for _i in _frame)) in FLAT,
+    'derived %s' % [_layer[_i] for _i in _frame])
+
 print('== Proposition 4.8 (one-point distributions) ==')
 ONE = {
     'E_8':    (8, 2, 240, [126, 56]),
@@ -393,9 +495,9 @@ for gamma, tmin, cmax, mmax in [(F(1, 4), F(2, 3), F(-1, 2), 3), (F(1, 3), F(3, 
         '%s vs %s' % (F(1, 2) / (1 - gamma), tmin))
     got = (F(1, 2) - tmin) / (1 - tmin)
     chk('cos bound at gamma=%s' % gamma, got == cmax, '%s vs %s' % (got, cmax))
-    chk('paper formula gamma/(2gamma-1) at gamma=%s' % gamma,
-        gamma / (2 * gamma - 1) == cmax and 'gamma/(2\\gamma-1)'.replace('gamma','\\gamma')
-        or True, '')
+    # A third check sat here of the form `(A and B) or True`, which cannot fail; the two
+    # below are what it was reaching for -- that the tex carries the formula, and that the
+    # formula is the right one -- so it was deleted rather than rewritten (2026-09-15).
     chk('tex carries gamma/(2gamma-1) at gamma=%s' % gamma,
         TEX.count(r'\gamma/(2\gamma-1)') == 2, 'count %d' % TEX.count(r'\gamma/(2\gamma-1)'))
     chk('correct formula gamma/(2gamma-1) at gamma=%s' % gamma,
@@ -1123,6 +1225,43 @@ chk('the paper confronts the range in the ERS abstract',
     'span of those seven' in FLAT and 'tabulates no value by dimension' in FLAT,
     'the abstract of [ERS] is not addressed')
 chk('abstract range 25..96', min(tab4) == 25 and max(tab4) == 96)
+
+# Every K(n) >= V the ABSTRACT states, against RESULTS.md.  Nothing read these: the abstract
+# said K(30) >= 220490 while the claim was 220494, and had done since the claim was registered.
+# Table 1, Table 4 and the prose beneath them were all guarded; the abstract was not.
+_abs = TEX[TEX.index('begin{abstract}'):TEX.index('end{abstract}')]
+# LaTeX separates thousands with a backslash-comma, so the digits run "204\\,896":
+# a non-greedy match that stops at a comma reads that as 204.
+_KPAT = re.compile(r'K\((\d+)\)\s*\\ge\s*((?:[0-9]|\\,)+)')
+
+# Every K(n) >= V ANYWHERE in the manuscript must be the registered claim.  The abstract carried
+# K(30) >= 220490 against a claim of 220494 for as long as that claim existed, and a value
+# perturbed inside Theorem 5.8 passed every other check in this file: Table 1, Table 4 and
+# the prose beneath them were guarded and the statements themselves were not.  These five
+# say something else ON PURPOSE, and each has to be read to be allowed:
+_KOK = {
+    (12, 841):        'Takhanov-Assylbekov-Yun 2026, quoted as related work',
+    (46, 12309600):   'recovered, not claimed: Sun-Wang, reproduced here',
+    (47, 23766960):   'recovered, not claimed: Boyvalenkov-Cherkashin, reproduced here',
+    (25, 197058):     'what the template of 5.3 itself gives, before the lens heads',
+    (27, 200540):     'what the template of 5.3 itself gives, before the coset triangles',
+}
+_kstate = _KPAT.findall(TEX)
+chk('the manuscript states at least thirty bounds', len(_kstate) >= 30, '%d found' % len(_kstate))
+_kbad = 0
+for _d, _v in _kstate:
+    _d = int(_d); _v = int(re.sub(r'[^0-9]', '', _v))
+    if (_d, _v) in _KOK or (_d in results and _v == results[_d][1]):
+        continue
+    _kbad += 1
+    chk('K(%d) >= %d is the registered claim' % (_d, _v), False,
+        'claim is %s; add to _KOK with a reason if it is deliberate'
+        % (results.get(_d, ('', 'none'))[1]))
+chk('every K(n) >= V in the manuscript is the claim or an allowed exception', _kbad == 0)
+# and the abstract must actually state the seven that carry the headline
+_abs_dims = {int(_d) for _d, _v in _KPAT.findall(_abs)}
+chk('the abstract states the 25-31 bounds', set(range(25, 32)) <= _abs_dims,
+    'missing %s' % sorted(set(range(25, 32)) - _abs_dims))
 chk('abstract count matches Table 4',
     '$%d$ dimensions between $25$ and $96$' % len(tab4) in TEX,
     'the abstract does not say %d' % len(tab4))
@@ -1141,10 +1280,10 @@ except Exception as _e:
 if _pub is not None:
     _untab = sorted(d for d in tab4 if d not in _pub.COHN)
     _proxy = sorted(d for d in tab4 if d >= 49)
-    chk('43 of the 48 have no entry in the published table',
+    chk('43 of the %d have no entry in the published table' % len(tab4),
         len(_untab) == 43, str(len(_untab)))
-    chk('the five that do are 25, 26, 27, 38 and 39',
-        sorted(set(tab4) - set(_untab)) == [25, 26, 27, 38, 39],
+    chk('the nine that do are 25-31, 38 and 39',
+        sorted(set(tab4) - set(_untab)) == [25, 26, 27, 28, 29, 30, 31, 38, 39],
         str(sorted(set(tab4) - set(_untab))))
     chk('the d >= 49 proxy still agrees with the published table', _untab == _proxy,
         'they differ at %s' % sorted(set(_untab) ^ set(_proxy)))
@@ -1453,6 +1592,7 @@ chk('section 1.4 lists exactly the dimensions Table 4 claims',
 # must be stated as bounds.
 _EXACT = {
     (6, 2): 'A(n,2) = 2^(n-1)',
+    (5, 2): 'A(n,2) = 2^(n-1)',
     (1, 1): 'A(n,1) = 2^n',
     (15, 4): 'single value in the cached Brouwer table, not a bracket',
     (96, 1, 1): 'the weight-one words themselves',
@@ -1528,7 +1668,8 @@ _other = sorted(set(tab4) - set(_lat))
 # sentence, and a second binding of the same name is a trap even when the
 # uses happen not to overlap.
 _NUMWORD = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six',
-            7: 'seven', 43: 'forty-three'}
+            7: 'seven', 43: 'forty-three', 48: 'forty-eight', 51: 'fifty-one',
+            52: 'fifty-two'}
 _abstract = TEX[TEX.index(chr(92) + 'begin{abstract}'):TEX.index(chr(92) + 'end{abstract}')]
 chk('the abstract excludes exactly the bounds no lattice gives',
     ('All but %s' % _NUMWORD.get(len(_other), '?')) in _abstract,
@@ -1537,18 +1678,20 @@ chk('the abstract excludes exactly the bounds no lattice gives',
 chk('and those are the constant-weight and chain dimensions',
     _other == [39, 62, 63, 96], str(_other))
 
-# "forty-three of the forty-seven" appears twice -- sections 1.2 and 1.5 -- and both
-# times counts the dimensions ABOVE 48, which is not the lattice-based set: the two
-# partitions of Table 4 happen to have the same size, 43 either way, and reading the
-# count off the wrong one passes today and misfires the day a code-theoretic claim is
-# added below 49.  The lattice count is the abstract's "All but four", checked above.
+# "Forty-three of the fifty-two" appears twice -- sections 1.2 and 1.5 -- and both times
+# counts the dimensions ABOVE 48, which is not the lattice-based set, so reading the count
+# off the wrong one would misfire the day a code-theoretic claim is added below 49.  The
+# lattice count is the abstract's "All but four", checked above.  BOTH halves of the phrase
+# are derived: the second was the literal 'forty-eight' until Table 4 grew past forty-eight
+# rows, at which point this check was the only thing that noticed.
 _above = sorted(d for d in tab4 if d >= 49)
+_phrase = '%s of the %s' % (_NUMWORD.get(len(_above), '?'), _NUMWORD.get(len(tab4), '?'))
 chk('the manuscript spells the above-48 count the same way',
-    '%s of the forty-eight' % _NUMWORD.get(len(_above), '?') in FLAT.lower(),
-    'derived %d of %d above dimension 48' % (len(_above), len(tab4)))
+    _phrase in FLAT.lower(),
+    'derived %d of %d above dimension 48, i.e. %r' % (len(_above), len(tab4), _phrase))
 chk('and the phrase is used for that count in both places',
-    FLAT.lower().count('forty-three of the forty-eight') == 2,
-    '%d occurrences' % FLAT.lower().count('forty-three of the forty-eight'))
+    FLAT.lower().count(_phrase) == 2,
+    '%d occurrences of %r' % (FLAT.lower().count(_phrase), _phrase))
 chk('the two partitions of Table 4 are still distinct sets',
     set(_above) != set(tab4) - set(_other),
     'they coincide, so neither count can be told from the other')

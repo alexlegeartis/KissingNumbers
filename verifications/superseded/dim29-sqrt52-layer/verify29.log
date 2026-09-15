@@ -1,0 +1,14 @@
+  data: 14 classes of 496 (6944 owners), 4 heads of norm 48, 14 direction groups of sizes [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2], 10 axis directions, 32 deep holes, 128 layer points
+  directions: 14 groups (12 zero-sum triangles, 2 antipodal pairs) covering 40 unit cap directions with cosines in {0,+-1/2,+-1} (a D5 root system); 10 unit axis directions; 32 deep holes at cosine exactly 2/sqrt10 = 0.632455532 from every cap direction (D5 covering radius)
+  classes: 6944 distinct minimal vectors, pairwise disjoint; inside a class the largest inner product between distinct vectors is 8 (bound 8: the owners of a class share every direction of their group, so 60-degree-freeness is not enough)
+  heads: 4 Leech vectors of norm 48, Gram 48 on the diagonal and -16 off it, summing to zero -- the simplex bound k <= 2/(2 - |x|^2) = 4 at |x|^2 = 3/2, attained and tight
+  cap-cap: all class pairs and direction pairs admissible (thresholds {0: 24, 1/2: 16, -1/2: 32, 1: 8, -1: 40}); 592 tight cases
+  cap-axis: maximum inner product 2*sqrt(6)/3 = 1.632993 (bound 2).  axis-axis: 10 points of norm 4, pairwise inner product <= 2
+  equator: max <u,u_owner> = 16 over non-owners (cap inner product 16/sqrt96 = 1.6330); max |<u,v_i>| = 24 over the WHOLE shell (layer inner product 24/16 = 1.5000) -- the layer deletes no equator point at all
+  cap-layer: max |<v_i,u>| over all 6944 owners and all 4 heads is 16 -- 24 would be a conflict (the forbidden set U = {u : |<v_i,u>| = 24}, |U| = 4320, which every class avoids); all 14 groups are dirty for some deep hole; worst inner product sqrt(6)/3 + 2*sqrt(3)/3 = 1.971197119 (bound 2, headroom 0.0288)
+  axis-layer: maximum inner product sqrt(2) = 1.414214 (bound 2; the threshold is cos <= 2/sqrt10, exactly D5's covering cosine) -- none of the 10 axis points is blocked
+  layer-layer: all 128 layer points pairwise admissible over 11 distinct (inner product, cosine) cases; 3584 ordered pairs touch at exactly 2
+     the touching families: <v,v'> = -16 at cos 1; <v,v'> = +16 at cos 3/5; <v,v'> = +48 at cos 1/5
+  disjointness: the four families have distinct (|x|^2, |y|^2) = [('0', '4'), ('3/2', '5/2'), ('4', '0'), ('8/3', '4/3')], so the count adds no point twice
+  count = 196560 - 6944 + 19840 + 10 + 128 = 209594   (83 s)
+ALL CHECKS PASS   K(29) >= 209594   (published 209496 -- Ma et al. 2025, arXiv:2511.13391 -- gain +98)

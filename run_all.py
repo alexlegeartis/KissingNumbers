@@ -1,18 +1,27 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # the fast set: 55 scripts, 26 minutes measured
-    python run_all.py --full       # also the slow ones: 71 scripts, budget about 9 hours
+    python run_all.py              # 59 scripts, about 40 minutes measured
+    python run_all.py --full       # 74 scripts, budget about 9 hours
     python run_all.py --list       # just list what would run
 
 The minutes in the table below are BUDGETS, deliberately generous, so their sum overstates
-the total -- the fast set is quoted from a measured run instead (1557 s on one laptop,
-2026-08-30, the release).  One of them was not generous but wrong: scripts/verify_poles.py was
-budgeted at 0.5 minutes, which was right when the axis layers were the lattice-shell ones
-(248 points at k = 23) and 19x low once they became rotated copies (93 074).  It is still the longest job
-in the fast set, at 517 s measured against a budget of 18 minutes -- and it has been over its
-own budget twice, at 9.4 and again at 10.5, each time because the layers under it grew.  A
-budget that is only ever written once is a budget that describes the day it was written.
+the total -- the fast set is quoted from a measured run instead (2327 s over 59 scripts,
+2026-09-16, with the machine to itself; 4495 s over the same 59 the afternoon before, and
+1557 s over 55 on one laptop at the 2026-08-30 release).  RUN IT ALONE: the same 59
+scripts took 10844 s on that afternoon while another job held a few gigabytes,
+and dim29-30-frame-layer/verify.py 30 alone went from 174 s to 8518 s -- 49 times -- because
+its blocked matmuls start swapping.  Nothing failed, but a wall-clock budget elsewhere in
+the suite can, so a contended run is not a verdict on anything except the machine.
+
+Two budgets were not generous but wrong.  scripts/verify_poles.py was budgeted at 0.5
+minutes, which was right when the axis layers were the lattice-shell ones (248 points at
+k = 23) and 19x low once they became rotated copies (93 074).  It is still the longest job
+in the fast set, at 517 s measured against a budget of 18 minutes -- and it has been over
+its own budget twice, at 9.4 and again at 10.5, each time because the layers under it grew.
+dim31-sqrt3-layer/verify31.py was shipped at 3.0 and measured at 205 s alone and 282 s in
+the suite, so it was over its budget on the day it was written; it is 8.0 now.  A budget
+that is only ever written once is a budget that describes the day it was written.
 
 Nor is the TOTAL comparable across days: the machine moves under it, and so does the suite.
 Compare the per-job times, not the sum.
@@ -65,8 +74,8 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
-    ("audit: all 48 claims, mutual and external consistency",
-     HERE, ['audit.py'], 0.1, True),
+    ("audit: all 52 claims, mutual and external consistency",
+     HERE, ['audit.py'], 0.5, True),
     ("common: extremal theta series and one-point distributions",
      os.path.join(HERE, 'common'), ['theta.py'], 0.1, True),
     ("common: the EXACT vertex, against three COUNTED Leech cross-sections",
@@ -99,6 +108,14 @@ JOBS = [
      os.path.join(V, 'improved', 'dim26-27-iota-triangles'), ['verify26.py'], 1.0, True),
     ("dim 27: the 201010-point two-triangle configuration, exactly",
      os.path.join(V, 'improved', 'dim26-27-iota-triangles'), ['verify27.py'], 2.0, True),
+    ("dim 28: the 204896-point configuration with the norm-8 frame layer, exactly",
+     os.path.join(V, 'improved', 'dim28-norm8-frame-layer'), ['verify28.py'], 1.0, True),
+    ("dim 29: the 209968-point configuration with the norm-8 frame layer, exactly",
+     os.path.join(V, 'improved', 'dim29-30-frame-layer'), ['verify.py', '29'], 4.5, True),
+    ("dim 30: the 220948-point configuration with the norm-8 frame layer, exactly",
+     os.path.join(V, 'improved', 'dim29-30-frame-layer'), ['verify.py', '30'], 4.5, True),
+    ("dim 31: the 238354-point configuration with the height-sqrt3 deep-hole layer, exactly",
+     os.path.join(V, 'improved', 'dim31-sqrt3-layer'), ['verify31.py'], 8.0, True),
     ("superseded 27: the 200540-point triple-partition configuration, from its coordinate file",
      os.path.join(V, 'superseded', 'dim27-triple-partition'),
      ['scripts/verify_configuration.py'], 0.2, True),
@@ -130,7 +147,7 @@ JOBS = [
     ("dims 70, 71: cross-sections of Gamma_72",
      os.path.join(V, 'improved', 'dim70-71-gamma72-cross-sections'), ['derive.py'], 0.2, True),
     ("dims 73-95: CALIBRATION against Cohn's table, dims 25-31",
-     os.path.join(V, 'improved', 'dim73-95-gamma72-caps'), ['scripts/calibrate.py'], 1.0, True),
+     os.path.join(V, 'improved', 'dim73-95-gamma72-caps'), ['scripts/calibrate.py'], 2.0, True),
     ("dims 73-95: zero-sum triple partitions of A_1 ... E_8",
      os.path.join(V, 'improved', 'dim73-95-gamma72-caps'), ['scripts/triples.py'], 0.3, True),
     ("k-point LP: TIGHT on the Leech through k = 4, against counted embeddings",
@@ -242,7 +259,7 @@ JOBS = [
      os.path.join(V, 'closed', 'dim96-ers-takeover'), ['above96.py'], 0.2, True),
     ("closed 19: the Cayley graph structure",
      os.path.join(V, 'closed', 'dim17-23-cohn-li-mechanism'),
-     ['scripts/verify19.py'], 1.0, False),
+     ['scripts/verify19.py'], 0.1, False),
     ("closed 17: alpha = 192 exactly, by a six-number Delsarte dual",
      os.path.join(V, 'closed', 'dim17-layered-family'),
      ['scripts/theta17.py'], 0.4, True),

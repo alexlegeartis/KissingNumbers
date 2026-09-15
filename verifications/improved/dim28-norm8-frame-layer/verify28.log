@@ -1,0 +1,61 @@
+[1] the Leech lattice
+   [OK ] 98 280 minimal lines rebuilt from the Golay code
+   [OK ] every line has norm 32
+   [OK ] inner-product distribution 46575 / 47104 / 4600 / 1 (the Leech signature)
+
+[2] the 8 owner classes
+   [OK ] 8 classes of 248 lines
+   [OK ] class 0 lies in the Leech shell
+   [OK ] class 0 has |<u,u'>| <= 8 throughout, i.e. at least arccos(1/4) = 75.52 deg -- 60-degree freeness is not enough, since the owners of one class share all three of its cap directions
+   [OK ] class 1 lies in the Leech shell
+   [OK ] class 1 has |<u,u'>| <= 8 throughout, i.e. at least arccos(1/4) = 75.52 deg -- 60-degree freeness is not enough, since the owners of one class share all three of its cap directions
+   [OK ] class 2 lies in the Leech shell
+   [OK ] class 2 has |<u,u'>| <= 8 throughout, i.e. at least arccos(1/4) = 75.52 deg -- 60-degree freeness is not enough, since the owners of one class share all three of its cap directions
+   [OK ] class 3 lies in the Leech shell
+   [OK ] class 3 has |<u,u'>| <= 8 throughout, i.e. at least arccos(1/4) = 75.52 deg -- 60-degree freeness is not enough, since the owners of one class share all three of its cap directions
+   [OK ] class 4 lies in the Leech shell
+   [OK ] class 4 has |<u,u'>| <= 8 throughout, i.e. at least arccos(1/4) = 75.52 deg -- 60-degree freeness is not enough, since the owners of one class share all three of its cap directions
+   [OK ] class 5 lies in the Leech shell
+   [OK ] class 5 has |<u,u'>| <= 8 throughout, i.e. at least arccos(1/4) = 75.52 deg -- 60-degree freeness is not enough, since the owners of one class share all three of its cap directions
+   [OK ] class 6 lies in the Leech shell
+   [OK ] class 6 has |<u,u'>| <= 8 throughout, i.e. at least arccos(1/4) = 75.52 deg -- 60-degree freeness is not enough, since the owners of one class share all three of its cap directions
+   [OK ] class 7 lies in the Leech shell
+   [OK ] class 7 has |<u,u'>| <= 8 throughout, i.e. at least arccos(1/4) = 75.52 deg -- 60-degree freeness is not enough, since the owners of one class share all three of its cap directions
+   [OK ] the 8 classes are pairwise disjoint
+
+[3] the heads
+   [OK ] 24 heads, each a norm-8 Leech vector (norm 64 at this scaling)
+   [OK ] every head is a Leech vector (Conway-Sloane criterion, against this Golay code)
+   [OK ] the 24 heads are mutually orthogonal: a frame
+   [OK ] every owner has |<u,v>| <= 2 against every head (8*|<u,v>| = 16 <= 16)
+   [OK ] over the WHOLE shell max |<u,v>| = 32 <= 32, so <v/2,u> <= 2 and the layer deletes no equator point (the case list below assumed this)
+
+[4] the R^4 directions
+   [OK ] the 24-cell has 32 zero-sum triangles and 8 of them partition its 24 directions
+   [OK ] distinct chosen triangles are separated (cos <= 1/2)
+   [OK ] each triangle is zero-sum (cos = -1/2)
+   [OK ] the 16 axis directions are a kissing set (cos <= 1/2)
+   [OK ] the 8 layer directions are pairwise obtuse (cos <= 0)
+   [OK ] layer vs axis directions: |cos| <= 1/2, and the layer needs <= 1/sqrt2
+   [OK ] cap vs layer directions: cos in {0, +-1/sqrt2}
+   [OK ] cap vs axis directions: |cos| <= 1/sqrt2 (the case list below assumed this)
+
+[5] every cross-type worst case, decided exactly
+   [OK ] equator x equator, <u,u'> = 2                  = 2
+   [OK ] equator x axis,    identically 0               = 0
+   [OK ] equator x cap,     sqrt(2/3)*2                 = 2*sqrt(6)/3
+   [OK ] cap x cap, same owner, <z,z'> = -1/2           = 2
+   [OK ] cap x cap, same class <u,u'>=1, z = z'         = 2
+   [OK ] cap x cap, other class <u,u'>=2, <z,z'>=1/2    = 2
+   [OK ] axis x axis, <z,z'> = 1/2                      = 2
+   [OK ] cap x axis,  <z,z'> = 1/sqrt2                  = 2*sqrt(6)/3
+   [OK ] layer x equator, <v,u> = 4                     = 2
+   [OK ] layer x layer, one head, <w,w'> = 0            = 2
+   [OK ] layer x layer, two heads, same w               = 2
+   [OK ] layer x axis, <w,z> = 1/2                      = sqrt(2)
+   [OK ] layer x cap,  m = 2, <z,w> = 1/sqrt2           = sqrt(4*sqrt(2)/3 + 2)
+   [OK ] the binding case is strict: (sqrt6+2sqrt3)^2 = 18 + 12 sqrt2 < 36, i.e. sqrt2 < 3/2
+
+TOTAL = 196560 - 3968 + 11904 + 16 + 384 = 204896
+
+*** VERIFIED: tau(28) >= 204896   (published 204520, gain +376) ***

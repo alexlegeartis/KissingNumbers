@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 """Exact verification of  K(25) >= 197569.
 
-    python verify25.py
+    python verify.py
 
-Reads only data/heads_X.npy, data/heads_U.npy and data/heads_exact.pkl, and
-rebuilds the Leech minimal vectors from the Golay code, so nothing here depends
-on the code that produced the configuration.  Exits non-zero on any failure.
+Reads only data/heads_X.npy, data/heads_U.npy, data/heads_exact.pkl and
+data/extra_P.npy, and rebuilds the Leech minimal vectors from the Golay code, so
+nothing here depends on the code that produced the configuration.  Exits
+non-zero on any failure.
 
 Coordinates.  Throughout we work in COHN units, in which the Leech minimal
 vectors are integer vectors of norm 32.  A point of the configuration has norm
@@ -88,7 +89,7 @@ def le_sqrt3_int(P, Q):
 
 
 def main():
-    print('verify25.py --- exact verification of K(25) >= 197567\n')
+    print('verify.py --- exact verification of K(25) >= 197569\n')
 
     # ---------------------------------------------------------------- Leech
     print('1. the Leech minimal vectors, rebuilt from the Golay code')

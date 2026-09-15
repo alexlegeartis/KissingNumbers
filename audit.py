@@ -91,6 +91,8 @@ CHECKS
      copy of Cohn's page does mix, deliberately, and .gitattributes says so.  The mix is harmless --
      `* -text` preserves bytes, which is what the SHA-256 manifest needs -- but a
      maintainer who thought the tree uniform might remove `* -text` as redundant;
+  5t. the root README's dimension table quotes the registered value of every claim it
+     names -- it carried a superseded dimension-30 number while every check passed;
   6. every claim says what would have to change for it to improve, and the claim COUNT
      agrees everywhere it is stated.
 
@@ -305,6 +307,17 @@ for k in range(9, 24):
 add(25, 197569, 'dim25-lens-heads', 'verify.py (exact arithmetic; fullcheck.py is the independent net)')
 add(26, 199632, 'dim26-27-iota-triangles', 'verify26.py (exact: integers, and sympy for the hexagon)')
 add(27, 201010, 'dim26-27-iota-triangles', 'verify27.py (exact: integers, and sympy for the rotated cuboctahedron)')
+add(28, 204896, 'dim28-norm8-frame-layer', 'verify28.py (exact: integers, and sympy in Q(sqrt2, '
+                                           'sqrt3) for the 24-cell, its half-vector axis and the '
+                                           'four coordinate directions)')
+add(29, 209968, 'dim29-30-frame-layer', 'verify.py 29 (exact: integers on the Leech side, and '
+                                        'integer quadruples (a + b sqrt2 + c sqrt3 + d sqrt6)/24 '
+                                        'with sympy deciding every sign on the R^5 side)')
+add(30, 220948, 'dim29-30-frame-layer', 'verify.py 30 (exact: integers on the Leech side, and '
+                                        'integer quadruples (a + b sqrt2 + c sqrt3 + d sqrt6)/24 '
+                                        'with sympy deciding every sign on the R^6 side)')
+add(31, 238354, 'dim31-sqrt3-layer', 'verify31.py (exact: integers, and sympy in Q(sqrt2, sqrt3) '
+                                     'for the E7, its axis copy and the two deep-hole lines)')
 add(38, 591612, 'dim38-leech-large-codimension', 'scripts/verify.py')
 add(39, 756116, 'dim39-ers-constant-weight', 'scripts/verify.py')
 # The Edel-Rains-Sloane chain (n, 15, 2).  Level 0 is a single sign code: [62,26,16] and
@@ -411,8 +424,12 @@ print("   monotone across all %d claims; every claim respects every record above
 
 print()
 print("4. no claim in a dimension that is attained, withdrawn, or short of its floor")
-ATTAINED = {28, 29, 30, 31}           # the cap model reproduces these exactly (26 was here
-                                      # until dim26-27-iota-triangles beat it, 2026-09-08)
+ATTAINED = set()                      # dimensions the cap model reproduces exactly and this
+                                      # project does not beat.  Emptied on 2026-09-15: 26 went
+                                      # on 2026-09-08 to dim26-27-iota-triangles, 30 and 31 on
+                                      # 2026-09-14, 29 and finally 28 on 2026-09-15, the last
+                                      # by the norm-8 frame layer of dim28-norm8-frame-layer.
+                                      # Every one of 25-31 is now claimed.
 WITHDRAWN = {44, 45}                  # beaten by Sun-Wang, arXiv:2607.20359v3
 SHORT = set()                         # 69 was here until its Gram was exhibited (see the
                                       # dim68-69 package); nothing is short of its floor now
@@ -632,7 +649,9 @@ print("5d. verifications/README.md counts the tiers and packages it actually has
 # for dim62-63-ers-chain or dim68-69-gamma72-cross-sections at all.  Each of those numbers
 # counts something, so each can be read back and compared.
 _WORDS = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7,
-          'eight': 8, 'nine': 9, 'ten': 10, 'eleven': 11, 'twelve': 12}
+          'eight': 8, 'nine': 9, 'ten': 10, 'eleven': 11, 'twelve': 12,
+          'thirteen': 13, 'fourteen': 14, 'fifteen': 15, 'sixteen': 16,
+          'seventeen': 17, 'eighteen': 18, 'nineteen': 19, 'twenty': 20}
 _vr = os.path.join(_VDIR, 'README.md')
 if not os.path.exists(_vr):
     bad("verifications/README.md is missing")
@@ -654,7 +673,11 @@ else:
             (r'\(improved/\)[^|]*?\n?.{0,80}?([A-Za-z]+|\d+) packages',
              len(os.listdir(os.path.join(_VDIR, 'improved'))), 'packages in improved/'),
             (r'\(closed/\)[^|]*?\n?.{0,120}?([A-Za-z]+|\d+) packages',
-             len(os.listdir(os.path.join(_VDIR, 'closed'))), 'packages in closed/')):
+             len(os.listdir(os.path.join(_VDIR, 'closed'))), 'packages in closed/'),
+            # superseded/ said "Three packages" while it held six, and recovered/ was never
+            # counted at all.  Both are tiers like the other two and both go stale the same way.
+            (r'\(superseded/\)[^|]*?\n?.{0,120}?([A-Za-z]+|\d+) packages',
+             len(os.listdir(os.path.join(_VDIR, 'superseded'))), 'packages in superseded/')):
         _said = _stated(_pat)
         if _said is None:
             _vrbad += 1
@@ -662,6 +685,39 @@ else:
         elif _said != _have:
             _vrbad += 1
             bad("verifications/README.md says %d %s; there are %d" % (_said, _what, _have))
+
+    # The ROOT README states the same two counts in its improved/ heading, and went stale
+    # there on 2026-09-15 while this check was watching verifications/README.md only: it read
+    # "eleven ideas, 48 dimensions" against twelve and 50.  Both are counted, so both are read
+    # back.  The sentence under the heading used to spell out two more counts; it no longer
+    # names any, which is why nothing below looks for them.
+    _rmt = io.open(os.path.join(HERE, 'README.md'), encoding='utf-8', errors='replace').read()
+    _impath = os.path.join(_VDIR, 'improved')
+    _idirs = [_d for _d in os.listdir(_impath) if os.path.isdir(os.path.join(_impath, _d))]
+    # An EMPTY directory is not a package: git does not track one, a clone will not have it,
+    # and on Windows a directory some process holds open cannot be removed.  Skip it, but name
+    # it, so that a package whose contents went missing is not quietly uncounted.
+    _husks = [_d for _d in _idirs if not os.listdir(os.path.join(_impath, _d))]
+    for _d in _husks:
+        print("   (improved/%s is an empty directory, not a package -- not counted)" % _d)
+    _im = len(_idirs) - len(_husks)
+    _imd = len(set(_d for _d, _v, _p, _h in claims
+                   if os.path.isdir(os.path.join(_VDIR, 'improved', _p))))
+    _mh = re.search(r'`verifications/improved/`\s*[—-]\s*([A-Za-z]+|\d+) ideas,\s*'
+                    r'([A-Za-z]+|\d+) dimensions', ' '.join(_rmt.split()))
+    if not _mh:
+        _vrbad += 1
+        bad("README.md no longer states 'N ideas, M dimensions' for verifications/improved/")
+    else:
+        _si, _sd = [int(_x) if _x.isdigit() else _WORDS.get(_x.lower())
+                    for _x in (_mh.group(1), _mh.group(2))]
+        if _si != _im or _sd != _imd:
+            _vrbad += 1
+            bad("README.md's improved/ heading says %s ideas, %s dimensions; there are %d and %d"
+                % (_mh.group(1), _mh.group(2), _im, _imd))
+        else:
+            print("   README.md's improved/ heading is the %d packages and %d dimensions on disk"
+                  % (_im, _imd))
 
     # every package directory must have a row in that file
     _norow = []
@@ -684,6 +740,20 @@ else:
             _vrbad += 1
             bad("verifications/README.md says KNOWLEDGE.md has %s sections; it has %d"
                 % (_ksaid.group(1), _khave))
+    # The ROOT README.md quotes the same number twice and nothing was checking it either:
+    # it stood at "75 sections" while the file held 137, for as long as the file had been
+    # growing.  A count is stale in every file that repeats it, not only in the two that were
+    # guarded.
+    _rootp = os.path.join(HERE, 'README.md')
+    if os.path.exists(_kp) and os.path.exists(_rootp):
+        _khave = len(re.findall(r'^## ', io.open(_kp, encoding='utf-8',
+                                                 errors='replace').read(), re.M))
+        for _m in re.finditer(r'KNOWLEDGE\.md.{0,40}?(\d+) sections',
+                              io.open(_rootp, encoding='utf-8', errors='replace').read()):
+            if int(_m.group(1)) != _khave:
+                _vrbad += 1
+                bad("README.md says KNOWLEDGE.md has %s sections; it has %d"
+                    % (_m.group(1), _khave))
     # KNOWLEDGE.md's OWN first paragraph counts itself, and nothing was checking that one:
     # it said 75 sections and about 4200 lines while the file stood at 96 and 5799.  A number
     # in a file's own opening sentence is the kind no other file has a reason to look at.
@@ -837,6 +907,27 @@ else:
                sorted(_claimed - _named) or 'nothing'))
     else:
         print("   its dimension lists partition the %d claims" % len(_claimed))
+
+print()
+print("5g2. the README's 'Apparently new' list is the claims minus dimension 96")
+# A second hand-written dimension list, three paragraphs above the one 5g checks, and it went
+# stale in the same way (it read "25-27, 30, 31, ..." after 29 was claimed).  Every claim here
+# is apparently new EXCEPT 96, where the value that stands is Edel-Rains-Sloane's, so the list
+# is determined and can be read back instead of trusted.
+_an = re.search(u'\*\*Apparently new\.\*\* Everything else [—-] dimensions ([^.]+)\.', _wr)
+if not _an:
+    bad("README.md no longer states an 'Apparently new' dimension list")
+else:
+    _seen = []
+    for _a, _b, _c in re.findall(u'(\d+)\s*[-–]\s*(\d+)|(\d+)', _an.group(1)):
+        _seen.extend([int(_c)] if _c else list(range(int(_a), int(_b) + 1)))
+    _want = set(d for d, v, pkg, how in claims) - {96}
+    if set(_seen) != _want:
+        bad("README.md's 'Apparently new' list names %s and omits %s"
+            % (sorted(set(_seen) - _want) or 'nothing extra', sorted(_want - set(_seen)) or 'nothing'))
+    else:
+        print("   it is the %d claims minus dimension 96, whose value is Edel-Rains-Sloane's"
+              % len(claims))
 
 print()
 print("5h. the root README names every script that reads Cohn's coordinate files")
@@ -1470,15 +1561,19 @@ if _JOBS is not None:
     _fast = sum(1 for _j in _JOBS if _j[4])
     _rmp = os.path.join(HERE, 'README.md')
     _rm = io.open(_rmp, encoding='utf-8').read()
-    _q = re.findall(r'python run_all\.py\s*(--full)?\s*#\s*(\d+) scripts', _rm)
-    if len(_q) != 2:
-        bad("README.md no longer states the script counts of both run_all.py modes")
+    # README.md states it and so does run_all.py's own header, in the same phrasing, so one
+    # regex covers both.  The header was the one that went stale unnoticed: it read
+    # "55 scripts ... 71 scripts" against 59 and 74 on 2026-09-15.
+    _rdoc = io.open(os.path.join(HERE, 'run_all.py'), encoding='utf-8').read()[:1500]
+    _q = re.findall(r'python run_all\.py\s*(--full)?\s*#.*?(\d+) scripts', _rm + _rdoc)
+    if len(_q) != 4:
+        bad("README.md and run_all.py's header no longer state the script counts of both modes")
     else:
         _want = {'': _fast, '--full': len(_JOBS)}
         _off = [(f or 'fast', int(v)) for f, v in _q if int(v) != _want[f]]
         if _off:
             for _f, _v in _off:
-                bad("README.md says the %s set is %d scripts; run_all.py has %d"
+                bad("README.md or run_all.py's header says the %s set is %d scripts; run_all.py has %d"
                     % (_f, _v, _want['' if _f == 'fast' else '--full']))
         else:
             print("   README.md gives %d fast and %d in all, which is the table"
@@ -1518,6 +1613,29 @@ if _JOBS is not None:
                       "within 5%%" % (_sf, _sm, _n, _mb))
 
 print()
+# ---- 5t. the root README's headline table against the registered values ----------------
+print()
+print("5t. the root README's dimension table quotes the registered values")
+# The root README carried 220 450 for dimension 30 after the claim had moved twice: a number
+# in prose that nothing downstream reads goes stale silently.  Parse every row of the form
+# `| dim | ... | **value** |` and compare with the claim for that dimension.
+if _rr is None:
+    print("   the outer working folder is not here, so there is no root README to check")
+else:
+    _vals = dict((_d, _v) for _d, _v, _p, _h in claims)
+    _rows = re.findall(r"^\|\s*(\d+)\s*\|[^|]*\|\s*\*\*([0-9   ]+)\*\*\s*\|", _rr, re.M)
+    if not _rows:
+        bad("the root README no longer has a dimension table with bolded values")
+    else:
+        _nbad = 0
+        for _ds, _vs in _rows:
+            _d = int(_ds); _v = int(re.sub(r"[^0-9]", "", _vs))
+            if _d in _vals and _v != _vals[_d]:
+                bad("the root README says tau(%d) >= %d; the claim is %d" % (_d, _v, _vals[_d]))
+                _nbad += 1
+        if not _nbad:
+            print("   %d bolded rows, every one of them a registered value" % len(_rows))
+
 print("6. every claim says what would have to change for it to improve")
 _unclassified = [d for d, v, pkg, how in claims if status_for(d)[0] is None]
 if _unclassified:
@@ -1581,7 +1699,10 @@ _COUNT_RE = re.compile(
     r'(?:all|the|among the|of the)\s+(\d{2})\s+claims\b'
     r'|(?<![-\u2013\u2014\d.])(\d{2})\s+claims,'
     r'|counted among the\s+(\d{2})\b'
-    r'|(?<![-\u2013\u2014\d.])(\d{2})\s+(?:improvements|dimensions improved)\b',
+    r'|(?<![-\u2013\u2014\d.])(\d{2})\s+(?:improvements|dimensions improved)\b'
+    # "the full table of all 50 is RESULTS.md" has no noun after the number and stood
+    # at 50 while the count was 52, because every alternative above needed one.
+    r'|(?:table|list) of all\s+(\d{2})\b',
     re.I)
 _COUNT_OK = {
     # dated entries in the knowledge base, describing the state at the time of writing
@@ -1661,6 +1782,27 @@ if '--write-results' in sys.argv and not fail:
     PKGDOC = {
         'dim25-lens-heads': '1006 heads in the lens of a minimal vector, no removal shared, plus one non-lattice equator point',
         'dim26-27-iota-triangles': 'the coset triangle of three norm-6 vectors on every triangle of directions, the side chosen per head; in 26 the second side is the involution image of the first',
+        'dim28-norm8-frame-layer': 'a deletion-free layer at height sqrt2 on a NORM-8 head: the 24 '
+                                   'vectors 8e_i are a Leech frame, each carries the eight '
+                                   'directions +-e_k of R^4, and both signs give 48 x 8 = 384 '
+                                   'points; a norm-8 head at this height clears the cap threshold '
+                                   'where a norm-6 head does not, and the 8 classes are chosen so '
+                                   'that every owner meets every head at |<u,v>| <= 2.  The axis '
+                                   'drops from 24 to the 16 half-vectors, so the layer nets +376',
+        'dim29-30-frame-layer': 'the dimension-28 norm-8 FRAME layer at height sqrt2, carried to '
+                                'R^{24+k}: all 48 vectors of a Leech frame on the whole '
+                                'cross-polytope of R^k, 96k points, deleting no equator point.  It '
+                                'needs every owner to be TYPE B for the frame, and in the '
+                                'coordinates where the frame is 8e_i the type-B lines are exactly '
+                                'the 48576 octad vectors of the Golay code, which the whole '
+                                'monomial group 2^12:M24 permutes -- so every monomial image of a '
+                                'class is again a clean class, and what is left is a packing '
+                                'solved by coordinate descent on the Golay sign words.  14 classes '
+                                'in dimension 29 and 24 in dimension 30; the published axis keeps '
+                                '32 of 40 and 48 of 72',
+        'dim31-sqrt3-layer': 'a deletion-free layer at height sqrt3 on two deep-hole lines of the '
+                             'cap E7: eight points over a minimal non-owner, four blocked axis '
+                             'points removed; the classes are untouched',
         'dim38-leech-large-codimension': 'the Leech cap construction at codimension 14',
         'dim39-ers-constant-weight': 'Edel-Rains-Sloane with the 2026 constant-weight codes',
         'dim49-63-p48-caps': 'the cap construction over P_48, with explicit classes',
@@ -1749,10 +1891,9 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("| dim(s) | why |")
     out.append("|---|---|")
-    out.append("| 28, 29, 30, 31 | the cap model reproduces Cohn's table *exactly* "
-               "there; no slack. See `verifications/improved/dim73-95-gamma72-caps/scripts/"
-               "calibrate.py`. (Dimension 26 was here until 2026-09-08, when the two-triangle "
-               "configuration beat the table by 1082.) |")
+    # 25-31 used to have rows here; the last, dimension 28, left on 2026-09-15.  Nothing
+    # replaces them: this table may name no dimension that is claimed, which the check below
+    # enforces, so the calibration fact they carried is a sentence under the table instead.
     out.append("| 32-37, 40-43 | exactly at the Edel-Rains-Sloane value. "
                "`verifications/closed/dim32-44-ers-audit/` |")
     out.append("| 44, 45 | withdrawn: beaten by Sun-Wang, arXiv:2607.20359v3. "
@@ -1792,6 +1933,13 @@ if '--write-results' in sys.argv and not fail:
                "`verifications/closed/dim22-23-maximal-cross-sections/` |")
     out.append("| 24 | 196560 is the Leech lattice, and it is optimal (Odlyzko-Sloane, "
                "Levenshtein). |")
+    out.append("")
+    out.append("Dimensions 25 to 31 left this table on 2026-09-15, when dimension 28 became "
+               "the last of them to be claimed. The cap model still reproduces Cohn's table "
+               "*exactly* in 26, 28, 29, 30 and 31 --- that is what "
+               "`verifications/improved/dim73-95-gamma72-caps/scripts/calibrate.py` checks --- "
+               "and in each of those five a layer now beats the template that calibration "
+               "validates.")
     out.append("")
     out.append(_EXPOSURE_NOTE)
     out.append("")
