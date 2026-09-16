@@ -147,8 +147,25 @@ ok(int((be <= 12).sum()) == 0, "   and NONE of them does over the EVEN shell -- 
 
 # The two deep-hole sets are the same code, and naming it is checkable rather than asserted.
 CODE = set(tuple(((1 - s) // 2).tolist()) for s in goodo)          # minus-sign indicators
-closed = all(tuple(np.bitwise_xor(np.array(a), np.array(b)).tolist()) in CODE
-             for a in list(CODE)[:40] for b in list(CODE)[:40])
+# LINEARITY, completely: reduce to an F_2 basis, generate its whole span, compare the sets.
+# (A sample of pairs would be a check that cannot fail on this data.)
+rows = [list(c) for c in CODE]
+piv, r = [], 0
+for col in range(16):
+    p = next((i for i in range(r, len(rows)) if rows[i][col]), None)
+    if p is None:
+        continue
+    rows[r], rows[p] = rows[p], rows[r]
+    for i in range(len(rows)):
+        if i != r and rows[i][col]:
+            rows[i] = [(a ^ b) for a, b in zip(rows[i], rows[r])]
+    piv.append(col)
+    r += 1
+basis = [rows[i] for i in range(r)]
+span = {(0,) * 16}
+for b in basis:
+    span |= set(tuple(x ^ y for x, y in zip(w, b)) for w in span)
+closed = (span == CODE) and r == 11
 wd = {}
 for c in CODE:
     wd[sum(c)] = wd.get(sum(c), 0) + 1

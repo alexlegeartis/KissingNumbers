@@ -188,8 +188,12 @@ Every component above is pinned except one: **the tier size**.
   with a drop-one calibration that recovers exactly the removed vector).
 * The 30-class orbital association scheme of the 28 672-vertex conflict graph gives
   **T ≤ 154112/289 = 533.26** with an exact rational certificate, so `T ≤ 533`.
-* `T ≥ 513` would improve **every one** of dimensions 17 through 23 at once, by `N₂(L_k)` =
-  2, 6, 12, 24, 40, 72, 126 respectively.
+* one extra point per tier is worth `N₂(L_k)` = 2, 6, 12, 24, 40, 72, 126 in dimensions 17
+  through 23. **In 22 and 23 that is the whole story** — there is no flat layer, so `T = 513`
+  would give 49 968 and 93 276 outright. **In 17 through 21 it is not**: those records are
+  τ(Λ) *plus a flat layer*, and an enlarged tier would have to stay compatible with the flats,
+  which nobody has checked. So `T ≥ 513` improves 22 and 23 directly and 17–21 only if the
+  flat layer survives it.
 
 **But dimension 24 says a free tier of 513 cannot exist.** The k = 8 instance of the identity
 is 196 560, which is *proved optimal* (Odlyzko–Sloane, Levenshtein). If some tier in the full

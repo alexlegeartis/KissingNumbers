@@ -9438,8 +9438,11 @@ points to admit more six-sets cannot help, which closes the most promising remai
 
 Every component is pinned except the TIER SIZE, which is in [512, 533]: 512 attained two
 structurally different ways, both maximal, against theta' = 154112/289 = 533.26 from the
-30-class orbital scheme of the 28672-vertex conflict graph. T >= 513 would improve dimensions
-17 through 23 at once, by N_2(L_k) = 2, 6, 12, 24, 40, 72, 126.
+30-class orbital scheme of the 28672-vertex conflict graph. One extra point per tier is worth N_2(L_k) =
+2, 6, 12, 24, 40, 72, 126 in dimensions 17-23 -- but that is the WHOLE story only in 22 and 23,
+which have no flat layer (T = 513 would give 49968 and 93276 outright). In 17-21 the record is
+tau(Lambda) PLUS a flat layer, and an enlarged tier would have to stay compatible with the
+flats, which nobody has checked.
 
 **But dimension 24 forbids a free one.** The k = 8 instance of the identity is 196560, which is
 PROVED optimal (Odlyzko-Sloane, Levenshtein). A tier holding 513 points while staying
