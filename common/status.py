@@ -141,6 +141,11 @@ _AX = _axis_facts()
 _G72_BEST = (_B, _B / float(_CW_G72), 100.0 * (_CW_LEECH * _CW_G72 / float(_B) - 1.0))
 
 REASON = {
+    'exhausted-18': 'the bent-coset hexagon over odd BW16 is exactly at its ceiling: tier B <= 6*M6 '
+                    'and M6 = 160 (the 512-word slot graph is isomorphic to the girth-5 graph whose '
+                    'independence number 160 is CP-SAT-certified), so 8358 is the scheme maximum; poles, '
+                    'family size and vector shapes are all pinned (verifications/improved/dim18-bent-hexagon/README.md)',
+
     'exhausted-25': 'no removal is ever shared (a theorem), so the count is 196560 + H + 2 + |E| '
                     'and only the head count H moves; H = 1006 against a Delsarte ceiling of '
                     '5763, and every route beyond the template needs a code in R^24 with '
@@ -281,7 +286,8 @@ REASON = {
 }
 
 STATUS = {}
-for _d, _s, _r in ((25, 'exhausted', 'exhausted-25'),
+for _d, _s, _r in ((18, 'exhausted', 'exhausted-18'),
+                   (25, 'exhausted', 'exhausted-25'),
                    (26, 'exhausted', 'exhausted-26'),
                    (27, 'exhausted', 'exhausted-27'),
                    (28, 'classes', 'classes-28'),

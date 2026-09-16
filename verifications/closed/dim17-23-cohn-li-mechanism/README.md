@@ -1,3 +1,14 @@
+> **CORRECTION 2026-09-16 — dimension 18 is NOT closed.** The verdicts below are about the
+> Golay-based section-2 family (base 4·C(n,2) + 128|C| plus a sign-vector code) and they stand
+> for that family. But Cohn–Li's actual 7654 in dimension 18 is a *different* construction —
+> odd BW₁₆ in ℝ¹⁶ plus a **hexagon** of tiers in the complementary ℝ² — and that one has a free
+> combinatorial parameter nobody had varied: which coset of RM(1,4) the six-set families live
+> in. Choosing three bent cosets with pairwise-bent sums that do not sum to zero lifts the
+> flat "tier B" from 256 to 960 words and gives **K(18) ≥ 8358**, verified exactly
+> (`research/dim18/`, and the improved package `dim18-bent-hexagon`). Dimensions 20 and 21
+> remain closed for *both* routes (the ℝ¹⁶ ⊕ ℝᵏ version is capped by the 2048 distinct words
+> of RM(2,4): ≤ 18 680 and ≤ 26 888).
+
 # CLOSED — the Cohn–Li mechanism, dimensions 17 through 23
 
 **Nothing is claimed here.** This package records that a whole family of constructions has
@@ -63,7 +74,8 @@ their 2048. Neither can be improved by this route at all.
 ambient is the 6-punctured Golay (4096 words) with |S| = 51, one component; the
 ambient-restricted Delsarte/theta bound is exactly **768.0000**, and greedy plus (1,2)-swap
 local search over 150 restarts **attains 768**. So α = 768 exactly, and 6500 + 768 = 7268
-against the record 7654 — a factor 1.5 short, unbridgeable. (The unrestricted bound
+against Cohn–Li's 7654 — a factor 1.5 short in the code size (1155 needed, 768 attained),
+unbridgeable, and further still from the 8358 that now holds the dimension. (The unrestricted bound
 A(18,5) ≤ 1289.5 was far too weak to decide this; the ambient restriction is what kills it.)
 
 **Dimension 17** uses a different construction (the odd 16-dimensional configuration) and is

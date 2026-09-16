@@ -1,13 +1,13 @@
-# Kissing numbers: new lower bounds in dimensions 25 through 96, with verification packages
+# Kissing numbers: new lower bounds in dimensions 18 through 96, with verification packages
 
 The kissing number τ(n) is the largest number of unit spheres that can touch a central unit
 sphere in ℝⁿ; equivalently, the largest set of unit vectors with pairwise inner products at
-most 1/2. This repository holds new lower bounds in **52 dimensions**, each with a package
+most 1/2. This repository holds new lower bounds in **53 dimensions**, each with a package
 that verifies it, together with the negative results that say where the remaining doors are
 shut.
 
 ```bash
-python audit.py            # start here: all 52 claims, checked against the published table
+python audit.py            # start here: all 53 claims, checked against the published table
 ```
 
 `update.py` is the maintainer's entry point rather than the reviewer's: it runs every package
@@ -44,7 +44,7 @@ them exceeds a known record in a higher dimension. It takes a few seconds.
 | 25  | 197 056              | **197 569**       | 1.00     | 1006 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point |
 
 
-The full table of all 52 is `[RESULTS.md](RESULTS.md)`. The write-up, *New lower bounds
+The full table of all 53 is `[RESULTS.md](RESULTS.md)`. The write-up, *New lower bounds
 for kissing numbers in dimensions 25 through 96*, is maintained **outside this repository**,
 because it cites this repository; see [The write-up](#the-write-up) below.
 
@@ -66,20 +66,20 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               51 of the 52 claims, twelve packages, one per construction
+  improved/               52 of the 53 claims, thirteen packages, one per construction
                           idea; dimension 96 is the exception and sits in closed/
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
   closed/                 mechanisms pushed to their exact ceiling: what NOT to retry
 
-KNOWLEDGE.md              the full working record, 137 sections, including everything
+KNOWLEDGE.md              the full working record, 139 sections, including everything
                           that failed -- with a preamble on how to read it, which
                           sections supersede which, and where each script now lives
 ```
 
 
 
-### `verifications/improved/` — twelve ideas, 51 dimensions
+### `verifications/improved/` — thirteen ideas, 52 dimensions
 
 Every claim but one is in this tier. The exception is dimension 96, whose package is
 `closed/dim96-ers-takeover/`, because what it establishes is that the cap construction
@@ -128,7 +128,7 @@ equation (3) of the preprint [arXiv:2312.05121](https://arxiv.org/abs/2312.05121
 [arXiv:2607.20359v3](https://arxiv.org/abs/2607.20359) (18 August 2026), and its ingredients
 were in Ozeki's 2016 Siegel theta tables a decade earlier, though not stated as a kissing
 number. Both were obtained here independently, and both are **recovered rather than
-claimed**: they are not in `RESULTS.md`, not counted among the 52, and not presented as
+claimed**: they are not in `RESULTS.md`, not counted among the 53, and not presented as
 results in the paper. They are kept, in
 `[verifications/recovered/](verifications/recovered/)`, because reproducing a published
 count from a method built without reference to it is the strongest validation available.
@@ -144,7 +144,7 @@ machinery — see
 the construction's exact ceiling is proven here to be exactly Ho's number. Dimension 12's
 record likewise landed elsewhere while this work was in progress.
 
-**Apparently new.** Everything else — dimensions 25–31, 38, 39, 49–63, 68–71, 73–95. No
+**Apparently new.** Everything else — dimensions 18, 25–31, 38, 39, 49–63, 68–71, 73–95. No
 prior claim in any of them is known to us. The claim we would most like checked by someone
 who knows the area is **dimensions 70 and 71**: the one-point distribution of Γ₇₂'s minimal
 shell may well be folklore — it is a five-minute calculation once you know Venkov's theorem —
@@ -216,8 +216,10 @@ moves**, and two entries (dimensions 12 and 19) changed while this work was in p
 
 Negative results are recorded as carefully as positive ones, in
 `[verifications/closed/](verifications/closed/)`, because they are what stops the next
-attempt from wasting time. Among them: the Cohn–Li mechanism is provably exhausted in
-dimensions 18, 20 and 21 and closed at exactly Ho's value in 19; Λ₂₁, Λ₂₂ and Λ₂₃ are maximal
+attempt from wasting time. Among them: dimensions 17–24 are a single construction, the layer
+identity τ(Λ₁₆₊ₖ) = 4320 + 513·N₂(Lₖ) + 32·N₄(Lₖ), verified as a structure inside the Leech
+lattice and with every component at a stated ceiling but one; the Cohn–Li mechanism is
+provably exhausted in dimensions 20 and 21 and closed at exactly Ho's value in 19; Λ₂₁, Λ₂₂ and Λ₂₃ are maximal
 spherical codes with exact min-max cosines √(8/29), √(3/11), √(4/15); every published record
 in dimensions 9–19 is maximal; the antipode construction is a max-weight clique problem whose
 arms lie in a 30° cap, which caps it structurally; and the maximum-class problem survives
@@ -345,8 +347,8 @@ fixes the class.
 ## Reproducing everything
 
 ```bash
-python run_all.py          # 59 scripts, about 40 minutes measured, one verdict
-python run_all.py --full   # 74 scripts, budget about 9 hours: adds the all-pairs sweep, the
+python run_all.py          # 63 scripts, about 40 minutes measured, one verdict
+python run_all.py --full   # 78 scripts, budget about 9 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 ```
@@ -356,7 +358,7 @@ Or individually, each from its own directory:
 
 | script                                                                        | what it establishes                                            | time   |
 | ----------------------------------------------------------------------------- | -------------------------------------------------------------- | ------ |
-| `audit.py`                                                                    | all 52 claims, mutual and external consistency                 | 30 s   |
+| `audit.py`                                                                    | all 53 claims, mutual and external consistency                 | 30 s   |
 | `common/theta.py`                                                             | E₇ = 126, Λ₂₃ = 93 150, dim 47, dim 71                         | 1 s    |
 | `common/kpoint_lp.py`                                                         | the LP, validated on the Leech and P₄₈                         | 10 s   |
 | `…/dim25-lens-heads/verify.py`                                                | τ(25) ≥ 197 569, every pair in exact arithmetic               | 4 min  |
@@ -386,6 +388,9 @@ Or individually, each from its own directory:
 | `…/closed/dim22-23-maximal-cross-sections/verify.py`                          | Λ₂₁, Λ₂₂, Λ₂₃ are maximal                                      | 6 s    |
 | `…/closed/dim32-44-ers-audit/PIPELINE.py`                                     | dimensions 32–44 are exactly at the ERS value                  | 1 s    |
 | `…/closed/dim17-23-cohn-li-mechanism/scripts/verify19.py`                     | the dimension-19 Cayley graph structure                        | 3 s    |
+| `…/closed/dim17-24-layer-identity/layers.py`                                  | the layer identity, as a structure inside the Leech lattice     | 30 s   |
+| `…/closed/dim17-24-layer-identity/flats.py`                                   | the flat layer exactly; dims 20 and 21 rebuilt from the Golay code | 80 s |
+| `…/closed/dim17-24-layer-identity/equator.py`                                 | the deep-hole radius rule, and A(16,8,6) = 16                   | 20 s   |
 | `…/closed/dim96-ers-takeover/ers96.py`                                        | dimension 96 belongs to Edel–Rains–Sloane, at 12 886 999 232    | 20 s   |
 | `…/closed/dim96-ers-takeover/ers_sweep.py`                                    | **the level-0 floor in every claimed dimension** — read this    | 1 s    |
 | `…/closed/dim96-ers-takeover/above96.py`                                     | why the table stops at 96, and not somewhere arbitrary          | 4 s    |
@@ -464,7 +469,8 @@ same answer. A missing-moments bug hid behind that for a day.
 the two mechanisms, with the results as numbered theorems: the cross-section method in §4
 (dimensions 68, 69, 70 and 71, and dimensions 46 and 47 recovered) and the cap
 construction in §5 (dimensions 25, 26, 27, 28, 29, 30, 31, 38, 49–61, 73–95), with the
-code-theoretic dimensions 39, 62, 63 and 96 in §6.
+code-theoretic dimensions 39, 62, 63 and 96 in §6; dimension 18, the bent-coset hexagon,
+postdates the write-up and is documented in its package only.
 
 **It is in this repository, at [`paper/`](paper/)** — source, bibliography, `.bbl`, PDF and
 three checkers that read this repository and exit non-zero on a mismatch:
@@ -499,7 +505,7 @@ The constructions, the verification code and the write-ups in this repository we
 by the author working with **Claude Code** (Anthropic). The repository is deliberately
 structured so that someone else can pick it up the same way: every package states its idea in
 prose before its code, every negative result says what was tried and why it failed, and
-`KNOWLEDGE.md` is the full working record — 137 sections, most of them about things that
+`KNOWLEDGE.md` is the full working record — 139 sections, most of them about things that
 did not work.
 
 Alexey Kravatskiy, MIRIAI (Moscow Independent Research Institute of Artificial Intelligence),

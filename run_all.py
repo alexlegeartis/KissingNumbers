@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 59 scripts, about 40 minutes measured
-    python run_all.py --full       # 74 scripts, budget about 9 hours
+    python run_all.py              # 63 scripts, about 40 minutes measured
+    python run_all.py --full       # 78 scripts, budget about 9 hours
     python run_all.py --list       # just list what would run
 
 The minutes in the table below are BUDGETS, deliberately generous, so their sum overstates
@@ -74,7 +74,7 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
-    ("audit: all 52 claims, mutual and external consistency",
+    ("audit: all 53 claims, mutual and external consistency",
      HERE, ['audit.py'], 0.5, True),
     ("common: extremal theta series and one-point distributions",
      os.path.join(HERE, 'common'), ['theta.py'], 0.1, True),
@@ -102,6 +102,8 @@ JOBS = [
 
     ("dim 25: the 197569-point lens-head configuration, exactly",
      os.path.join(V, 'improved', 'dim25-lens-heads'), ['verify.py'], 4.0, True),
+    ("dim 18: the 8358-point bent-coset hexagon over the odd Barnes-Wall lattice, exactly",
+     os.path.join(V, 'improved', 'dim18-bent-hexagon'), ['verify18.py'], 0.5, True),
     ("dim 25: the same, as an independent floating-point net over all 197569 points",
      os.path.join(V, 'improved', 'dim25-lens-heads'), ['fullcheck.py'], 2.0, True),
     ("dim 26: the 199632-point two-triangle configuration, exactly",
@@ -243,6 +245,12 @@ JOBS = [
      os.path.join(V, 'closed', 'dim09-19-record-maximality'), ['sweep.py'], 1.5, True),
     ("closed 22, 23: Lambda_21/22/23 are maximal",
      os.path.join(V, 'closed', 'dim22-23-maximal-cross-sections'), ['verify.py'], 0.1, True),
+    ("closed 17-24: the layer identity, as a structure inside the Leech lattice",
+     os.path.join(V, 'closed', 'dim17-24-layer-identity'), ['layers.py'], 0.6, True),
+    ("closed 17-24: the flat layer exactly, and dims 20 and 21 rebuilt from the Golay code",
+     os.path.join(V, 'closed', 'dim17-24-layer-identity'), ['flats.py'], 1.8, True),
+    ("closed 17-24: the deep-hole radius rule, and A(16,8,6) = 16",
+     os.path.join(V, 'closed', 'dim17-24-layer-identity'), ['equator.py'], 0.4, True),
     ("closed: the class problem, 425 bound exactly, by two routes",
      os.path.join(V, 'closed', 'class-problem-upper-bound'), ['certificate.py'], 0.1, True),
     ("closed 32-44: the Edel-Rains-Sloane audit",

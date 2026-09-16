@@ -27,6 +27,10 @@ sys.path.insert(0, os.path.join(HERE, '..', '..', '..', 'common'))
 from extract import blocks, SRC            # noqa: E402
 from maximal841 import minmax              # noqa: E402
 
+# The sizes of the configurations in Cohn's data file, which is what this script sweeps.
+# Dimension 18's 7654 is Cohn-Li's and is the size of the configuration IN THAT FILE; the
+# record there is now this project's 8358 (verifications/improved/dim18-bent-hexagon/), which
+# is a different configuration and is swept separately.  Do not "update" this entry.
 REC = {9: 306, 10: 510, 11: 604, 12: 841, 13: 1154, 14: 1932, 15: 2564, 16: 4320,
        17: 5730, 18: 7654, 19: 11948, 20: 19448, 21: 29768, 22: 49896, 23: 93150,
        24: 196560}

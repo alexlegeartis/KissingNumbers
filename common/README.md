@@ -16,7 +16,7 @@ python capalgebra.py    # the cap construction's algebra and count, exactly     
 ```
 
 The last two are the ones to run if you doubt the mathematics rather than the bookkeeping.
-Between them they attack the two things every one of the 52 claims rests on.
+Between them they attack the two things every one of the 53 claims rests on.
 
 ## The modules
 

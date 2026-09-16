@@ -304,6 +304,8 @@ for k in range(9, 24):
         'recomputed from the %s partition at k = %d and class_sizes_32000.npy' % (src, k))
 
 # --- quoted, each verified by the named script
+add(18, 8358, 'dim18-bent-hexagon', 'verify18.py (exact: integers on the R^16 side, a + b sqrt3 '
+                                     'on the R^2 side, every sign decided by squaring)')
 add(25, 197569, 'dim25-lens-heads', 'verify.py (exact arithmetic; fullcheck.py is the independent net)')
 add(26, 199632, 'dim26-27-iota-triangles', 'verify26.py (exact: integers, and sympy for the hexagon)')
 add(27, 201010, 'dim26-27-iota-triangles', 'verify27.py (exact: integers, and sympy for the rotated cuboctahedron)')
@@ -1791,6 +1793,7 @@ if '--write-results' in sys.argv and not fail:
         return "{:,}".format(x).replace(",", "\u202f")
 
     PKGDOC = {
+        'dim18-bent-hexagon': 'odd BW16 in R^16 plus a hexagon of tiers in R^2 whose three six-set families are bent cosets of RM(1,4) with pairwise-bent sums not summing to zero; tier B rises from 256 to 960',
         'dim25-lens-heads': '1006 heads in the lens of a minimal vector, no removal shared, plus one non-lattice equator point',
         'dim26-27-iota-triangles': 'the coset triangle of three norm-6 vectors on every triangle of directions, the side chosen per head; in 26 the second side is the involution image of the first',
         'dim28-norm8-frame-layer': 'a deletion-free layer at height sqrt2 on a NORM-8 head: the 24 '
@@ -1925,12 +1928,22 @@ if '--write-results' in sys.argv and not fail:
                "dimension 96's 12 886 999 232, and nothing in this repository claims "
                "anything there. The Edel-Rains-Sloane chain is the thing to evaluate, as it "
                "was at 96. |")
-    out.append("| 9-19 | every published record is checked MAXIMAL -- no sphere can be "
+    out.append("| 9-17, 19 | every published record is checked MAXIMAL -- no sphere can be "
                "added to any of them, and the margin of each is recorded. "
                "`verifications/closed/dim09-19-record-maximality/` |")
-    out.append("| 17-21 | the Cohn-Li mechanism is at its exact ceiling: provably exhausted "
-               "in 18, 20, 21, and dimension 19 closed at exactly Ho's 11948. "
+    out.append("| 17, 19-21 | the Cohn-Li mechanism is at its exact ceiling: provably exhausted "
+               "in 20 and 21, dimension 19 closed at exactly Ho's 11948, and dimension 17 at its two-slot "
+               "value; the middle dimension of that range left this table for the improved tier (the bent-coset hexagon). "
                "`verifications/closed/dim17-23-cohn-li-mechanism/` |")
+    out.append("| 17, 19-24 | one construction, not eight: every Leech minimal vector's part in "
+               "the 8 coordinates of an octad has norm^2 0, 8, 16 or 32, the multiplicity is "
+               "CONSTANT on each of those four position shells (4320, 512, 32, 1), and hence "
+               "tau(Lambda_{16+k}) = 4320 + 513*N_2(L_k) + 32*N_4(L_k) for L = A1, A2, A3, D4, "
+               "D5, E6, E7, E8.  The records add a flat layer, which is EXACTLY 2048 in 20 and "
+               "21 (Koenig on a regular bipartite Cayley graph) -- both are rebuilt there from "
+               "the Golay code and checked pair by pair.  The one component not at a proved "
+               "ceiling is the tier size, in [512, 533]. "
+               "`verifications/closed/dim17-24-layer-identity/` |")
     _EXPOSURE_NOTE = (
         "**An exposure, at dimensions 93-95.** These three ARE claimed, above; this is "
         "about how much room they have. Every Edel-Rains-Sloane input is a construction, "

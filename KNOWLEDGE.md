@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **137 sections, about 9300 lines**, written as the
+The full working record of the project: **139 sections, about 9450 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -2118,7 +2118,7 @@ four of the values I first used were stale:
 Cohn-Li (arXiv:2411.04916), dimension 19 is Ho (arXiv:2603.10425), dimension 12 is
 Takhanov-Assylbekov-Yun (arXiv:2606.18984).
 
-**Running total: 52 dimensions improved** -- 25-31, 38, 39, 49-63, 68-71, 73-96 (the count as of
+**Running total: 53 dimensions improved** -- 18, 25-31, 38, 39, 49-63, 68-71, 73-96 (the count as of
 2026-09-15, when dimensions 29 and then 28 joined and the whole range 25-31 became claimed; when
 this section was written it read 47 with 45, 46, 47 in and 26, 28, 29, 62, 63, 68, 69, 96 out).
 
@@ -5476,7 +5476,7 @@ rather than keeping a second copy of the code tables -- a duplicated table is wh
 in three other places. Every chain input is a construction, so the floor is a LOWER bound on
 ERS: a claim below it is definitely not an improvement, a claim above it is not thereby safe,
 and the failure message says so. Level 0 survives only as a cross-check, since it is a term of
-the chain and `best_chain` must never come out below it. Coverage is all 52 claims, and four
+the chain and `best_chain` must never come out below it. Coverage is all 53 claims, and four
 of them -- 39, 62, 63 and 96 -- ARE the chain, so they EQUAL the floor rather than exceed it;
 4b has an equality branch for exactly that.
 
@@ -5643,7 +5643,7 @@ with the parts as triples.py tabulates them:
 
 Five exact reproductions of Cohn's table, and the two differences are this project's own two
 claims.  The parts cover the direction set exactly in every row (3T + 2P = |W|).  This is the
-arithmetic behind 39 of the 52 claims, and it is right.
+arithmetic behind 39 of the 53 claims, and it is right.
 
 ### Two new checks in the suite
 
@@ -9312,3 +9312,146 @@ right about the *norm-6* layers, which paid between 4 and 128 points.  A norm-8 
 The shipped package is `verifications/improved/dim29-30-frame-layer/`; it supersedes
 `dim29-sqrt52-layer` and `dim30-sqrt2-layer`, both of which were correct and are now the smaller
 layer.  Working note: research/collab2531/FINDINGS.md section 59.
+
+## 139. Dimension 18: K(18) >= 8358, the bent-coset hexagon over odd BW16 (2026-09-16)
+
+Cohn-Li's 7654 is R^16 (+) R^2: odd BW16 (4320), six 512-point norm-6 tiers on a hexagon at
+radius sqrt2, six poles at radius sqrt8, and 256 flat tier-B vectors (2/3)(+-1)^16 at radius
+sqrt(8/9) on the x-axis. A tier-B word c must lie in RM(2,4), be even on every six-set of every
+tier within 90 degrees, and keep distance >= 6 from words at the same or a nearer angle. For
+c in RM(2,4) the parity on a six-set depends only on the RM(1,4)-coset of its indicator, so a
+family inside one coset costs a single linear condition; those cosets are the 28 bent cosets,
+whose sixteen weight-6 words form a biplane and are a maximal family. On RM(2,4)/RM(1,4) the
+pairing is symplectic, bent is the O+(6,2) quadric, and B(q,z)=1 iff q+z bent iff the two tiers
+may be 60 degrees apart. Cohn-Li used one bent coset and two half-mixtures, so every angle saw
+the same 256 words: a hard cap. Three bent cosets with pairwise-bent sums not summing to zero
+give three different 512-word spaces at the six 30-degree-offset angles, each an affine 4-space
+of cosets over an elliptic quadric whose bent-difference graph is the Clebsch complement
+(clique 5): 160 per angle, 960 in all, 4320 + 6 + 3072 + 960 = 8358. Verified exactly by
+three independent checkers. Scheme ceiling: tier B <= 6 M6 and M6 = 160 exactly (the slot
+graph is isomorphic to the girth-5 graph G_0 whose alpha = 160 is CP-SAT-certified, research/dim18/m6iso.py),
+so the record is the scheme maximum; poles, family size and shapes are pinned. The same design gives exactly 11756
+in R^16 (+) R^3 (cuboctahedron; 192 short of Ho) and is capped by the 2048 words of RM(2,4)
+at 18680 and 26888 in dimensions 20 and 21. Package: verifications/improved/dim18-bent-hexagon;
+working notes: research/dim18/NOTES.md and research/notes/KNOWLEDGE.md section 92.
+
+## 140. THE LAYER IDENTITY: dimensions 17 to 24 are one construction (2026-09-16)
+
+Section 139 improved dimension 18 by putting three bent six-set families on the hexagon of
+tiers. Pushing that lens through the whole range turns 17-24 into a single formula. The first
+version of this was an arithmetic fit -- three coefficients against eight published kissing
+numbers -- which is not evidence. It is now a verified STRUCTURE, and the structure is what
+matters. Package: `verifications/closed/dim17-24-layer-identity/`.
+
+### 140a. The identity, and why it is not a fit
+
+Fix an octad O of the Golay code and split the 24 Leech coordinates as R^16 (+) R^8, the R^8
+being O's. Write p(x) for the R^8 part of a Leech minimal vector (norm^2 = 32 throughout).
+Exhaustively, in integer arithmetic (`layers.py`):
+
+| \|p(x)\|^2 | the positions it takes | how many | vectors per position |
+|---|---|---|---|
+| 0 | the origin | 1 | 4320 |
+| 8 | the roots of 2E_8 | 240 | 512 |
+| 16 | the norm-16 shell of 2E_8 | 2160 | 32 |
+| 32 | the DOUBLED roots -- 240 of the 17520 vectors of that norm | 240 | 1 |
+
+and no other value occurs, 24 included. The content is the last column: the multiplicity is
+CONSTANT on each shell. That makes the kissing number of a coordinate section additive over
+positions, so for EVERY subspace W of that R^8,
+
+    tau( Leech ^ (R^16 (+) W) )  =  4320 + 512 a(W) + 32 b(W) + c(W),
+
+a, b, c counting the roots, norm-16 vectors and doubled roots of 2E_8 inside W. For W spanned
+by roots, with L = E8 ^ W the root lattice, c = a = N_2(L) and b = N_4(L), giving
+
+    tau(Lambda_{16+k}) = 4320 + 513 N_2(L_k) + 32 N_4(L_k),   L = A1 A2 A3 D4 D5 E6 E7 E8.
+
+Evaluated on the nested Bourbaki chain BOTH by the formula and by counting the section
+directly: 5346, 7398, 10668, 17400, 27720, 49896, 93150, 196560, all eight, both ways.
+
+**The 513 is an accident of counting.** It is 512 + 1, a tier at a root and a pole at TWICE
+that root -- different positions, different radii, grouped only because both sets are indexed
+by the roots. Written as one coefficient the identity looks like a two-parameter fit. It is a
+four-term decomposition with constant multiplicities, and the script prints a, b, c apart.
+
+### 140b. The flat layer is exactly determined, and the two families are not the same
+
+Cohn-Li's second family is 4C(n,2) vectors (+-2,+-2,0^{n-2}), 128|C| block vectors with an ODD
+minus count, and flats sqrt(8/n)(+-1)^n. A flat must be even on every block, i.e. lie in the
+dual of the block span = the (24-n)-PUNCTURED Golay code (4096 words, checked by rank), and
+pairwise at distance >= n/4. So the layer is alpha(Cay(F_2^12, S)), S = the punctured code's
+nonzero words of weight < ceil(n/4), and the graph settles it:
+
+* n = 20: S = five independent weight-4 words -> 128 disjoint 5-cubes, 5-regular bipartite;
+* n = 21: S = 21 weight-5 words -> four components of 1024, 21-regular bipartite;
+  a regular bipartite graph has a perfect matching, so by Koenig alpha = |V|/2 = **2048** in
+  both -- Cohn-Li's value, exactly. Both configurations are REBUILT from the Golay code and
+  checked pair by pair in integer arithmetic: 17400 + 2048 = 19448, 27720 + 2048 = 29768.
+* n = 19: not bipartite (S has weight 3 AND 4); 4 x 320 = 1280, certified in
+  `closed/dim17-23-cohn-li-mechanism/` (Ho's 11948).
+* n = 22, 23: S is EMPTY, so the whole 4096-word ambient is a flat layer -- and it still loses:
+  43164 + 4096 = 47260 < 49896 and 65780 + 4096 = 69876 < 93150.
+
+**This is the correction worth keeping.** That base equals tau(Lambda_n) holds ONLY for
+n = 19, 20, 21. In 17 and 18 the base is smaller (4384 or 3744, and 6500 or 6372) and the
+record there belongs to the OTHER Cohn-Li family, R^16 (+) R^k over the odd Barnes-Wall
+lattice; in 22 and 23 it is far smaller. So "the record is the lattice plus a flat layer" is
+verified in 19, 20, 21 and is arithmetic only in 17. And for n <= 18 even |C| depends on WHICH
+coordinates are deleted (25 or 30, 45 or 46), because the octads are only a 5-design; for
+n >= 19 it does not: 78, 130, 210.
+
+### 140c. The deep hole fixes the radii, and the equator is free
+
+A layer at radius r carries vectors (v, w) with |w|^2 = r^2 and |v|^2 = 8 - r^2, so it needs a
+direction at most 4/sqrt(8(8-r^2)) from every equator point:
+
+    r^2  >=  8 - 2/m(E)^2,     m(E) = min_z max_e <z, e/|e|>.
+
+Both certificates are exact integer conditions (`equator.py`): over the EVEN Barnes-Wall shell
+z = v/(2 sqrt2) with v a +-1 vector on a six-set and <v,e> <= 8, giving |z|^2 = 3/4,
+m <= 1/sqrt3 and r^2 >= 2 -- the TIER radius, and |v|^2 = 6 is a tier's v-part exactly; over
+the ODD shell z = s sqrt2/6 with s in {+-1}^16 and <s,e> <= 12, giving |z|^2 = 8/9,
+m <= 3 sqrt2/8 and r^2 >= 8/9 -- the FLAT radius, v-part (2/3)(+-1)^16. The counts are
+structural, and the script NAMES the code rather than asserting it: the 2048 minus-sign
+indicators that work over the odd shell are checked to be linear, [16, 11], with weight
+distribution 1/140/448/870/448/140/1, hence d = 4, hence the extended Hamming code of length
+16, which is unique -- RM(2,4); the 28672 = 448 x 64 six-set directions that work over the even
+shell have exactly that code's 448 weight-6 words as their supports (and 28672 is the
+dimension-18 tier ground set); and NO all-+-1 direction works over the even shell. Cohn-Li's sign flip is exactly "deepen
+the equator's holes by 8.2%", and it buys precisely the one layer that opens.
+
+NOT proved: that these m(E) are minimal, i.e. that no layer sits closer in. That is a minimax,
+measured by LP ascent at 0.577350269 and 0.530330086. Method warning: a smoothed log-sum-exp
+minimax returns 0.5807 on the even shell where the truth is 1/sqrt3 = 0.57735; only the LP
+ascent reproduces sqrt3/2 on that control, and recomputing with it moved the dimension-20 and
+dimension-21 values (0.539361 -> 0.534522, 0.524167 -> 0.523810).
+
+**A(16,8,6) = 16.** With b blocks of size 6 pairwise meeting in <= 2 and r_p the number through
+p: sum_p r_p = 6b, and sum_{p in X} r_p - 6 = sum_{Y != X} |X ^ Y| <= 2(b-1), so
+sum_{p in X} r_p <= 2b+4; summing over blocks, sum_p r_p^2 <= b(2b+4) while Cauchy-Schwarz
+gives sum_p r_p^2 >= 9b^2/4, whence b <= 16. Attained by the weight-6 words of a bent coset of
+RM(1,4), the 2-(16,6,2) biplane. So a tier is 512 with or WITHOUT an equator: deleting equator
+points to admit more six-sets cannot help, which closes the most promising remaining lever.
+
+### 140d. What is left, and what dimension 24 says about it
+
+Every component is pinned except the TIER SIZE, which is in [512, 533]: 512 attained two
+structurally different ways, both maximal, against theta' = 154112/289 = 533.26 from the
+30-class orbital scheme of the 28672-vertex conflict graph. T >= 513 would improve dimensions
+17 through 23 at once, by N_2(L_k) = 2, 6, 12, 24, 40, 72, 126.
+
+**But dimension 24 forbids a free one.** The k = 8 instance of the identity is 196560, which is
+PROVED optimal (Odlyzko-Sloane, Levenshtein). A tier holding 513 points while staying
+compatible with the other 239 tiers, the 2160 half-tiers and the 240 poles would give a
+196561-point kissing configuration in R^24. So any 513-point tier MUST be incompatible with the
+rest of the E8 arrangement. That does not close 18-23, where far fewer positions have to be
+satisfied at once, but it says the tier cannot be enlarged locally and for free -- and it is
+the calibration any future tier search should be run against.
+
+Two cautions on 533 (research/dim18/TIER.md): it bounds the natural DISCRETE model -- each flat
+has slack 0.326 and carries an open neighbourhood of admissible non-uniform profiles, so only
+the continuous spherical LP bound 672 covers everything -- and it is computed over the ODD
+equator, while dimensions 22 and 23 use the EVEN one, where the only bound is the continuous
+A(16,1/3) <= 751 and 2281 LNS iterations over the 61440-vertex ground set found nothing above
+512.

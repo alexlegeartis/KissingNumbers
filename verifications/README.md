@@ -5,14 +5,15 @@ according to what is currently true about it. The distinction is the point of th
 a repository that only shows its wins is much less useful to the next person than one that
 shows where the doors are shut.
 
-## [`improved/`](improved/) — 51 of the 52 claims, currently the best known
+## [`improved/`](improved/) — 52 of the 53 claims, currently the best known
 
-Twelve packages, one per **construction idea** rather than one per dimension, because several
+Thirteen packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
+| [`dim18-bent-hexagon`](improved/dim18-bent-hexagon/) | 18 | apparently new — Cohn–Li's own ℝ¹⁶ ⊕ ℝ² hexagon over the odd Barnes–Wall lattice, with the three 6-set families taken from bent cosets of RM(1,4) whose pairwise sums are bent but which do not sum to zero; tier B rises from 256 to 960 |
 | [`dim25-lens-heads`](improved/dim25-lens-heads/) | 25 | apparently new — joint work in progress with H. Cohn and B. Lindow; 1006 lens heads, one non-lattice equator point |
 | [`dim26-27-iota-triangles`](improved/dim26-27-iota-triangles/) | 26, 27 | apparently new — joint work in progress with H. Cohn and B. Lindow; the coset triangle on every triangle of directions, the side chosen per head |
 | [`dim28-norm8-frame-layer`](improved/dim28-norm8-frame-layer/) | 28 | apparently new — joint work in progress with H. Cohn and B. Lindow; the head of a deletion-free layer may have norm 8 rather than 6, and at height √2 that is what clears the cap threshold: the 24 vectors 8eᵢ form a Leech frame, each carries all eight directions ±e_k of ℝ⁴, and the axis drops to the 16 half-vectors of the dual 24-cell |
@@ -27,7 +28,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim73-95-gamma72-caps`](improved/dim73-95-gamma72-caps/) | 73–95 | apparently new |
 
 **The heading counts this tier, not the dimensions in which the project is ahead**, and three
-things sit outside it. The 52nd claim is **dimension 96**, filed in [`closed/`](closed/) because
+things sit outside it. The 53rd claim is **dimension 96**, filed in [`closed/`](closed/) because
 it settles that dimension *against* the cap construction — the value it leaves standing is
 Edel–Rains–Sloane's, not this project's. **Dimensions 46 and 47** are in
 [`recovered/`](recovered/): ahead of Cohn's table, but published by other people and claimed
@@ -63,15 +64,16 @@ project's own later work.
 
 ## [`closed/`](closed/) — mechanisms at their exact ceiling
 
-Ten packages. Nine carry no claim: they are the negative results, kept because they are what
+Eleven packages. Ten carry no claim: they are the negative results, kept because they are what
 stops the next attempt from wasting time, and several are *proofs of optimality for a
-mechanism* rather than failed searches. The tenth is the exception and is marked as such
+mechanism* rather than failed searches. The eleventh is the exception and is marked as such
 below — it settles dimension 96 **against** the cap construction, and the claim it leaves
 standing is Edel–Rains–Sloane's rather than this project's.
 
 | package | what it settles |
 |---|---|
-| [`dim17-23-cohn-li-mechanism`](closed/dim17-23-cohn-li-mechanism/) | the Cohn–Li construction reduces to a Cayley-graph independence number; **provably exhausted in 18, 20, 21**, and **dimension 19 closed at exactly Ho's 11 948** |
+| [`dim17-24-layer-identity`](closed/dim17-24-layer-identity/) | **dimensions 17–24 are one construction**: τ(Λ₁₆₊ₖ) = 4320 + 513·N₂(Lₖ) + 32·N₄(Lₖ), verified as a *structure* (constant multiplicities 4320/512/32/1 over the four position shells of 2E₈), not fitted to a table; the flat layer is exactly 2048 in dimensions 20 and 21 by König, and dimensions 20 and 21 are rebuilt from the Golay code and checked pair by pair; the deep hole of the equator fixes every layer radius; A(16,8,6) = 16, so the equator is free. One integer is left open: the tier size, in [512, 533] |
+| [`dim17-23-cohn-li-mechanism`](closed/dim17-23-cohn-li-mechanism/) | the Cohn–Li construction reduces to a Cayley-graph independence number; **provably exhausted in 20 and 21**, and **dimension 19 closed at exactly Ho's 11 948** — dimension 18 left this package for `improved/dim18-bent-hexagon/` |
 | [`dim22-23-maximal-cross-sections`](closed/dim22-23-maximal-cross-sections/) | Λ₂₁, Λ₂₂, Λ₂₃ are **maximal spherical codes** with exact min-max cosines √(8/29), √(3/11), √(4/15); Leech level sets cap at exactly 93 150 by a Hall/König argument |
 | [`dim09-19-record-maximality`](closed/dim09-19-record-maximality/) | **every published record in dimensions 9–19 is maximal**, with exact margins; and layering over a record equator is measured and shown to be always a mistake |
 | [`dim32-44-ers-audit`](closed/dim32-44-ers-audit/) | dimensions 32–44 are **exactly at** the Edel–Rains–Sloane value; **Cohn's table is stale in 32, 33, 34, 37**; and exactly where a code improvement would pay |
@@ -97,5 +99,5 @@ standing is Edel–Rains–Sloane's rather than this project's.
 6. [`closed/dim17-layered-family/`](closed/dim17-layered-family/) — the best worked example of
    the repository's most useful habit: when a search will not converge, stop searching and ask
    what structure the object has. The answer was "it is a group".
-7. [`../KNOWLEDGE.md`](../KNOWLEDGE.md) — 137 sections of working notes, most of
+7. [`../KNOWLEDGE.md`](../KNOWLEDGE.md) — 139 sections of working notes, most of
    them about things that did not work.

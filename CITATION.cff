@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use these bounds or this verification code, please cite it."
-title: "Kissing numbers: new lower bounds in dimensions 25 through 96, with verification packages"
+title: "Kissing numbers: new lower bounds in dimensions 18 through 96, with verification packages"
 abstract: >-
-  Verification packages for new lower bounds on the kissing number in 52
-  dimensions: 25-31, 38, 39, 49-63, 68-71 and 73-96.  Four ideas carry them.
+  Verification packages for new lower bounds on the kissing number in 53
+  dimensions: 18, 25-31, 38, 39, 49-63, 68-71 and 73-96.  Five ideas carry them.
   (1) Cross-sections of extremal even unimodular lattices, bounded
   by a k-point linear program on the moments that Venkov's theorem supplies,
   with exact rational dual certificates and with translation and lattice-range

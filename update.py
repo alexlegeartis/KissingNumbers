@@ -23,7 +23,7 @@ diverged, and step 3 would paper over it.
 
 HOW TO IMPROVE A BOUND.  RESULTS.md's status column says what would have to change:
 
-    classes    40 of the 52, dimensions 28, 29, 30, 31, 49-61 and 73-95.  Find a better family
+    classes    40 of the 53, dimensions 28, 29, 30, 31, 49-61 and 73-95.  Find a better family
                of pairwise-disjoint classes and they all improve together (49-61, 73-95);
                dimensions 28, 29 and 30 carry the norm-8 FRAME layer, which is at its own
                ceiling at 96k points -- every vector of a Leech frame on every direction of a
@@ -51,7 +51,7 @@ HOW TO IMPROVE A BOUND.  RESULTS.md's status column says what would have to chan
                dimension.  Today both stand at d = 15, one short.  Dimension 96 rests on
                A(96,24) >= 2^33 from [96,33,24], two thirds of its total, and on the grid
                maps [24,9,12]_4 and RS[6,4,3]_16; only the last is built here.
-    exhausted  dimensions 25, 26, 27, 38.  The idea is finished; only a different construction
+    exhausted  dimensions 18, 25, 26, 27, 38.  The idea is finished; only a different construction
                (in 25: a plateau traverse of the lens-head search moves H by one sphere at a time)
                will move these.
     lp-exact   dimensions 68-71.  NOT "a Gram the search has not reached" -- the Gram is

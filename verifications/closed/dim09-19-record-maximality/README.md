@@ -45,11 +45,35 @@ coordinates. Dimensions 11, 17, 18 and 19 are covered by separate runs, noted be
 | **15** | **2564** | Leech–Sloane **1971** | 0.534522484 | **√(2/7)** | **6.9%** | `sweep.py` |
 | 16 | 4320 | Barnes–Wall **1959** | 0.577350269 | **1/√3** | 15.5% | `sweep.py` |
 | 17 | 5730 | Cohn–Li 2024 | 0.522232968 | | 4.4% | separately — KNOWLEDGE §67a |
-| 18 | 7654 | Cohn–Li 2024 | 0.530330086 | | 6.1% | separately — KNOWLEDGE §67a |
+| 18 | ~~7654~~ **8358** | ~~Cohn–Li 2024~~ **this project** | 0.519615242 | **3√3/10** | 3.9% | separately — KNOWLEDGE §139 |
 | 19 | 11948 | Ho 2026 | 0.521948010 | | 4.4% | separately — KNOWLEDGE §67a |
 
 All of them have maximum inner product exactly 0.5, so they are valid 60° codes, and **none
 admits a free point**.
+
+**The dimension-18 row moved on 2026-09-16.** Cohn–Li's 7654 (m(C) = 0.530330086, 6.1%) was
+this repository's baseline when the sweep was written; the record there is now this project's
+own 8358, `improved/dim18-bent-hexagon/`, and it is maximal too — at m(C) = 0.519615242 it is
+the **tightest configuration in the whole range**, 3.9% short of admitting a sphere.
+
+**Four dimensions beyond 19 were swept the same way afterwards**, for the layer-identity work:
+
+| dim | record | m(C) | margin over 1/2 |
+|---|---|---|---|
+| 16 (even BW₁₆) | 4320 | 0.577350269 = 1/√3 | 15.5% |
+| 16 (odd BW₁₆) | 4320 | 0.530330086 = 3√2/8 | 6.1% |
+| 20 | 19448 | 0.534522484 | 6.9% |
+| 21 | 29768 | 0.523809524 | 4.8% |
+| 22 | 49896 | 0.522232968 | 4.4% |
+| 23 | 93150 | 0.516397779 | 3.3% |
+
+All maximal. Those six were computed by `research/dim20-21/maximal2.py`, not by `sweep.py`,
+and the two dimension-16 rows are the deep-hole values that fix the layer radii in
+`closed/dim17-24-layer-identity/`. **A method warning belongs with them**: a smoothed
+log-sum-exp minimax returns 0.5807 on the even Barnes–Wall shell, where the truth is
+1/√3 = 0.57735 and is attained by the six-set directions. Only the LP ascent reproduces
+√3/2 = 0.866025 on that control; every value above was recomputed with it, which moved
+dimension 20 from 0.539361 and dimension 21 from 0.524167.
 
 **Dimension 11 is skipped by `sweep.py`** — it reports `parsed 502 of 604 -- SKIP`, because
 the dimension-11 block of Cohn's file uses coordinate tokens the parser in `extract.py` does
