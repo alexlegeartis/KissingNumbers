@@ -69,7 +69,9 @@ search that can only draw candidates reaches `n·p^k = 1`, i.e. `k = 1 + 12 ln10
         Σ_{i<j} |S_i ∩ S_j|  =  Σ_O C(n_O, 2) ,      Σ_O n_O = 42 × 44 = 1848
 
 over the 759 octads, so the flattest coverage gives 1419 and `s = 1.65`, which at the measured `p(s)`
-is `p ≈ 0.53` and a reach of 44.  The 10 296-line family reached by scanning 10¹¹ images sits at **1898**, with 34
+is `p ≈ 0.53` and a reach of 44.  (1419 ignores that a class's 44 octads must lie in its trio's
+84-octad arena; water-filling against the arenas this family actually uses gives **1437**, which
+is the real floor for it.)  The 10 296-line family reached by scanning 10¹¹ images sits at **1898**, with 34
 octads unused and seven carrying six supports; its own `p` is 0.4984, just below the threshold,
 and no amount of further scanning was going to move it.
 
@@ -89,7 +91,7 @@ reachable, and carries **10 328**.
 
 | | 10 296-line family | this package |
 |---|---|---|
-| `Σ_O C(n_O,2)`, floor 1419 | 1898 | **1670** |
+| `Σ_O C(n_O,2)`, floor 1437 for these trios | 1898 | **1670** |
 | octad coverage | 34 unused, 7 at six | 8 unused, 12 at five |
 | `p` | 0.4984 | **0.5467** |
 | greedy reach `1 + 12 ln10 / ln(1/p)` | 40.7 | **46.8** |
@@ -119,7 +121,7 @@ All of it is stored as integer quadruples `(a,b,c,d)` meaning `(a + b√2 + c√
 | axis | 118 | **exhaustive**: no unit vector at all can be added |
 | equator | 196 560 − 2L | forced |
 | class | 248 lines | **open** — the only lever, at +168 a line |
-| packing | 10 328 of 10 416 | **open** — 88 repeats, up to +352 |
+| packing | 10 328 of 10 416 | **open** — 88 repeats, up to +352; the sign side and the re-slot neighbourhood are both closed (below) |
 
 **The direction weight.**  Two owner classes sharing a direction would meet at `⟨u,u'⟩ ≤ 1`
 everywhere and so would be one class; inside a group the directions are pairwise at `≤ −1/2`, so
@@ -139,6 +141,37 @@ a **vertex**.  All 1 120 vertices of `P` were enumerated and the largest has `|a
 The control is that dropping any one of the 118 recovers a unit vector — and always exactly one,
 the point removed, so no one-for-one swap opens it either.  The scope is this axis code against
 this frame and these directions; a different rotation is a different polytope.
+
+**The packing.**  The 88 missing lines are 79 pairs — 70 losing one line and 9 losing two —
+spread over 82 distinct octads, with 40 of the 42 classes carrying some of it, so no one class
+is the culprit.  Three things are now known about them, and none of the three closes the gap.
+
+*The sign side is finished.*  The overlap of two images depends on their sign words only through
+`c_i ⊕ c_j`, so the packing is the 𝔽₂ problem `min Σ_{i<j} F_ij[c_i ⊕ c_j]` on 861 exact tables.
+Every one of the 861 reaches 0 somewhere, so no pair is individually obstructed — but simulated
+annealing, six restarts with two schedules each, reaches only 232–246 from random labellings and
+cannot leave 88 from this one.
+
+*The re-slot neighbourhood is finished exhaustively.*  One trio admits exactly **2016** supports
+and its stabiliser has order 64 512, so each support is realised by `64512 × 8 / 2016 = 256`
+images — and those 256 differ in which 4-slot is taken inside each light coset, which no sign
+word can reach, because a sign word *translates* a slot.  Replacing every class by each of its
+256 same-support images, each scored over all 4096 sign words, is 44 million placements and
+**zero improvements** ([`research/collab2531/dim31/reslot31.py`](../../../../research/collab2531/dim31/reslot31.py)).
+So this family is optimal over a whole neighbourhood, not merely at the point a search stopped.
+
+*And the collisions are completely named.*  Every slot lies in a coset of one of the 30 extended
+Hamming codes of its octad; a sign word moves the coset and never the code, which the
+permutation fixes; and the code is a function of the class's **trio** — indeed it *is* one of the
+15 trios through that octad (`kappa31.py` in the same directory: 318 780 cells, no exception).
+So two classes meeting at an octad collide with probability 1/8 when their trios induce the same
+trio there and exactly 1/2 when they do not, and the 120 code pairs that meet in dimension 0 —
+where no sign word could ever separate them — never occur, so no two classes are ever
+unseparable.  What that does *not* buy is the 88 lines: 42 mutually agreeing trios do not exist
+(the agreement graph on the 3795 trios is exactly 56-regular, with greedy cliques of 5), and on every
+aggregate the search screens on — octad coverage, the bit budget, the pair probability, the code
+agreement — five fresh builds match this family and still lose twice as many lines.  The gap is
+search depth.  `KNOWLEDGE.md` §149.
 
 ## History
 

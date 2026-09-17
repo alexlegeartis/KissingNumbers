@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **147 sections, about 10020 lines**, written as the
+The full working record of the project: **148 sections, about 10144 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -17,7 +17,7 @@ The authoritative current statements are [`RESULTS.md`](RESULTS.md), which is ge
 
 ### Reading it
 
-The headings are numbered 1 to 148 with **no section 87** — a number was skipped, not a
+The headings are numbered 1 to 149 with **no section 87** — a number was skipped, not a
 section removed, and nothing in the repository refers to it. That is why the count above is
 147 and the last heading reads 148.
 
@@ -10028,3 +10028,117 @@ them, and one was resting on six million samples when the question was a polytop
 vertices.  Before writing "at its ceiling", say which: PROVED, PROVED GIVEN a published constant,
 EXHAUSTIVE over a finite set, or MEASURED -- and if it is the last, ask what finite object the
 question really is.
+
+## 149. The code at an octad is a TRIO, and that names every collision in the dimension-31 packing (2026-09-17)
+
+Dimension 31 is the only one of 28-31 whose packing is short. The shipped family carries
+**10 328** owner lines of the `42 x 248 = 10 416` that 42 full classes would give, so 88 lines
+and `+352` points are open; 28, 29 and 30 all carry `8 x 248`, `14 x 248` and `24 x 248` exactly
+(checked on the shipped `owners*.npy`, not on the prose). Section 145 got the pair probability
+from 0.4319 to 0.5467 by flattening the octad coverage. This section is about what the
+collisions ARE, which turns out to be a completely describable object.
+
+**A slot lies in a code, and a sign word can only move the coset.** Inside an octad the 64
+type-B lines are `F_2^6` and a slot is a clique of the "popcount of the difference is 3 or 4"
+graph: 240 of size 8, which are the cosets of the 30 extended Hamming codes, and 15 120 of size
+4. Measured here:
+
+* every one of the 15 120 four-slots lies inside a coset of at least one code -- 13 440 inside
+  exactly one and **1680 inside two**, and those 1680 are exactly the affine planes;
+* the 26 light slots of a 248-line class are always of that second kind, all 26 of them.
+
+A Golay sign word shifts the position inside octad `O` by `TC[c,O]`, which is LINEAR in `c`, so
+it TRANSLATES the slot. It moves the coset and can never change the code. The code is fixed by
+the permutation.
+
+**The code is a function of the trio -- and it IS a trio.** For a class on trio
+`T = {B1,B2,B3}` and an arena octad `O` (meeting two of them in four points and one in none),
+the code depends only on `(T,O)`:
+
+* 118 000 images of the base class, filling **all** `3795 x 84 = 318 780` arena cells, **zero
+  conflicts** (a light slot lies inside kappa's coset and inside exactly one other code, so two
+  light observations pin kappa by intersection -- much faster than waiting for a heavy slot to
+  land on a given cell);
+* all eight base classes, heavy and light: 57 600 heavy slots on the predicted code and 83 200
+  light slots inside its coset, **zero exceptions**.
+
+And the code has a name. If `B3` is the trio octad disjoint from `O`, then `O` lies in the
+16-set `B1 u B2`, whose complement of `O` there is again an octad, so `{O, (B1 u B2) \ O, B3}`
+is a trio THROUGH `O` -- and kappa is constant on the fibres of that map, on all 318 780 cells
+with no exception. Exactly **15 of the 30 codes occur at an octad, at every octad, each used by
+exactly 28 of the 420 arena trios**, and 15 is the number of trios through an octad
+(`3795 x 3 / 759`). The codes at an octad ARE its trios.
+
+**So the collision structure is closed-form.** Two classes meeting at an octad `O`:
+
+| | probability they collide there |
+|---|---|
+| their trios induce the same trio through `O` | the cosets must coincide: **1/8** |
+| they do not | the two codes ALWAYS meet in dimension 1, so `|U+V| = 32`: **exactly 1/2** |
+
+The second line is a measurement over all `759 x C(15,2) = 79 695` co-occurring code pairs. Of
+the 435 pairs of codes, **120 meet in dimension 0** -- two heavy slots on those could never be
+disjoint, at any sign word -- and none of the 120 ever occurs. **No two classes are ever
+unseparable at an octad.**
+
+**What the structure is worth, measured -- and it is not the answer.** Cheap agreement is
+scarce, and the way it is scarce is itself rigid. Two distinct trios share either no octad or
+exactly one (sharing two would force the third), and that decides everything. The 7 119 420
+pairs sharing none have exactly **9** shared arena octads and agree at **0, 1 or 3** of them --
+5 100 480 / 1 912 680 / 106 260, never 2 and never more than 3. The 79 695 pairs sharing one
+have **34** shared and agree at exactly **26**, every single one. Those two cases are all
+`C(3795,2) = 7 199 115` pairs. (On a kappa table that
+was 99.9 per cent filled this read 0/1/2/3/4 and 22/24/26/27; the strays were the unmeasured
+cells, which is worth knowing before quoting a distribution.) The "agree at 3" graph is
+exactly 56-regular on the 3795 trios -- every trio has exactly 56 partners -- and greedy
+cliques stop at 5, so **42 mutually agreeing trios do
+not exist.** Over 42 pairwise octad-disjoint trios the best total agreement found is 503, against
+about 267 for a random set and **397** for the shipped family -- whose 42 trios are all distinct
+but NOT pairwise octad-disjoint: five pairs share an octad, which is why its arenas meet in
+`856 x 9 + 5 x 34 = 7874` rather than the `861 x 9 = 7749` a fully disjoint set would give. And
+of the 1670 octads its classes actually share, only **160** realise an agreement. A code-aware
+screen, measured against the plain one at an identical candidate budget over three builds each,
+gave mean `L` 10 238.3 against 10 232.7: real, and worth about ten lines, not eighty-eight.
+
+**The aggregate statistics do not predict the excess.** This is the finding that matters for
+anyone continuing. Five fresh builds sit at `Phi = 871..913` bits of disjointness constraint
+against the 42 x 12 = 504 bits of sign freedom -- the shipped family sits at 885, squarely
+among them -- and at `sum_O C(n_O,2) = 1633..1680` against its 1670, and at code agreement
+6.9..9.6 per cent against its 9.6. On every statistic the search screens on, they are the same
+family. They lose **166 to 188** lines where it loses 88. What separates them is the
+ruin-and-recreate with exact costs that produced it, and nothing else.
+
+**The sign side is exhausted, under a stronger solver than the one that first said so.**
+Simulated annealing on the 861 exact pair tables, six restarts from random labellings with two
+schedules each, reaches 232-246; from the shipped labelling it cannot leave 88, and the
+per-pair floor is 0 for every one of the 861 pairs. The 88 are 79 pairs in all: 70 lose one line and 9
+lose two, over 82 distinct octads -- diffuse, so no single class is the culprit: 40 of the 42
+carry some of it.
+
+**And a whole neighbourhood is closed exhaustively, not by a search stopping.** The octad
+coverage depends only on WHICH 44 octads a class uses, and a trio admits exactly **2016**
+supports -- measured, and the trio stabiliser has order 64 512, so each support is realised by
+`64512 x 8 / 2016 = 256` images.  Those 256 differ in which 4-slot is taken inside each light
+coset, which no sign word can reach, and a uniform scan lands in that neighbourhood with
+probability 1/2016 per candidate.  Replacing every class by each of its 256 same-support
+images, each scored over all 4096 sign words by the exact Walsh cost vector -- 44 million
+placements -- gives **zero improvements** (`research/collab2531/dim31/reslot31.py`).  So the
+shipped family is optimal over the whole re-slot neighbourhood.  The first run of that script
+said the same thing while enumerating nothing: six generators drawn as the lexicographically
+smallest elements closed to a subgroup of ORDER 21, and "0 re-slotted" is exactly what a real
+answer looks like.  The script now asserts the order is 64 512 before believing itself.
+
+**And the coverage floor is 1437, not 1419.** The naive floor takes 1848 incidences over 759
+octads and spreads them flat. But a class's 44 octads must lie in its trio's 84-octad arena,
+and for any 42 trios that pairwise share no octad the arenas already satisfy
+`sum_O C(m_O,2) = 861 x 9 = 7749`, which fixes `sum m_O^2`; where `m_O` is small, `n_O <= m_O`
+binds. Water-filling against the shipped family's own arenas gives **1437**. So the coverage
+lever is 1670 -> 1437, not 1670 -> 1419.
+
+**How to apply.** When a search is stuck, measure whether the statistic you are screening on
+separates the good answers from the bad ones BEFORE building a better screen for it. Here four
+of them -- octad coverage, `Phi`, pair probability, code agreement -- are each within noise
+between a family that loses 88 lines and five that lose 166 to 188, and two sessions of screen design
+would have been spent on quantities that do not discriminate. The structural work was still
+worth doing: it says what the collisions are, it rules out the free construction (42 agreeing
+trios), and it is what proves no pair is ever unseparable. But the 88 lines are search depth.

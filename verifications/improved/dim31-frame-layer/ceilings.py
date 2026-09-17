@@ -197,9 +197,21 @@ print("   the CLASS.  The template class has %d lines (%s); one more line in the
       % (L0, shape, 2*w, DIM))
 if int(SIZES.sum()) < len(GRP)*L0:
     print("   the PACKING.  %d owner lines against the %d that %d full classes would give: "
-          "%d repeats, worth up to +%d." % (int(SIZES.sum()), len(GRP)*L0, len(GRP),
-                                            len(GRP)*L0 - int(SIZES.sum()),
-                                            4*(len(GRP)*L0 - int(SIZES.sum()))))
+          "%d repeats, worth up to +%d.  Two neighbourhoods around this family are CLOSED "
+          "exhaustively, rather than by a search stopping.  (a) The SIGN WORDS: the overlap of "
+          "two images depends on them only through c_i xor c_j, every one of the 861 exact pair "
+          "tables reaches 0 somewhere, and annealing still cannot leave %d.  (b) The RE-SLOTTING: "
+          "one trio admits exactly 2016 supports and its stabiliser has order 64512, so 256 "
+          "images realise each support and they differ in the 4-slot taken inside each light "
+          "coset -- which no sign word can reach, since a sign word TRANSLATES a slot.  All "
+          "42 x 256 of them over all 4096 sign words is 44 million placements and zero "
+          "improvements (research/collab2531/dim31/reslot31.py).  What is open is search DEPTH: "
+          "on octad coverage, on the bit budget against the 42 x 12 = 504 bits of sign freedom, "
+          "on the pair probability and on the code agreement alike, five fresh builds match this "
+          "family and lose twice as many lines (KNOWLEDGE.md section 149)."
+          % (int(SIZES.sum()), len(GRP)*L0, len(GRP),
+             len(GRP)*L0 - int(SIZES.sum()), 4*(len(GRP)*L0 - int(SIZES.sum())),
+             len(GRP)*L0 - int(SIZES.sum())))
 else:
     print("   the PACKING is closed: %d x %d = %d owner lines, every class full and disjoint."
           % (len(GRP), L0, int(SIZES.sum())))
