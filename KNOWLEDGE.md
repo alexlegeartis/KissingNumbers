@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **149 sections, about 10236 lines**, written as the
+The full working record of the project: **149 sections, about 10244 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -10225,6 +10225,14 @@ over six classes:
 with the incumbents at 3.8. So the code-aware screen is worth rather more than twice the
 candidate quality, for less sampling -- but at 16 384 images it still does not beat the
 incumbents, which is why the 86 are still there.
+
+**How deep that optimum is, quantified.** Take one class out and search for its replacement
+with the code-aware bound, in tiers. For a class whose incumbent costs 4: **16 384** images give
+best cost 9, **65 536** give 4, **262 144** give 4, and **786 432** give 4. It reaches the
+incumbent's own cost at the second tier and never once goes below it, over a forty-eight-fold
+increase in budget. That is what the 86 look like from the inside -- not a screen looking in the
+wrong place, but a local optimum a CPU-scale search ties and cannot beat. The sharper screen is
+worth carrying to the GPU; the depth is not something to buy on a laptop.
 
 **How to apply.** When a search has been running on one ansatz for a long time, ask what the
 problem actually requires before buying more compute for it: here the requirement is 42 disjoint
