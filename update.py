@@ -11,6 +11,7 @@ WHAT IT DOES, IN ORDER
   2. audit.py, which recomputes each claim from those tables and cross-checks RESULTS.md
   3. audit.py --write-results, which regenerates RESULTS.md (including the status column)
   4. each package's make_readme_table.py, so the README tables come from the drivers
+  4b. paper/mkvalues.py, so every bound the manuscript prints comes from RESULTS.md
   5. gpu/propagate.py, which installs a finished GPU class family into the package
      (skipped when ../gpu/ is absent, as it is in a clone of this repository)
   6. run_all.py, which re-runs every verification -- including the paper's checkers,
@@ -75,6 +76,7 @@ import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
+PAPER_DIR = os.path.join(HERE, 'paper')
 V = os.path.join(HERE, 'verifications', 'improved')
 FULL = '--full' in sys.argv
 CHECK = '--check' in sys.argv
@@ -134,9 +136,16 @@ if not CHECK:
         run(os.path.basename(cwd), cwd, [os.path.join('scripts', 'make_readme_table.py')])
 
     print()
-    print("5. install a finished GPU run, if one is waiting")
-    # NOT 'the paper': the paper's tables have no generator, and its checkers run in
-    # step 6 with the rest of run_all.py.  This step installs a GPU class family.
+    print("5. the paper's bounds: paper/values.tex from RESULTS.md")
+    # Every claimed bound appears in kissing46.tex as \Kh{d}, defined once in values.tex.
+    # The paper's PROSE and the addends of its count identities still have no generator, and
+    # its checkers run in step 6 with the rest of run_all.py; only the bounds are regenerated
+    # here.  Rebuild the PDF by hand afterwards if a bound moved -- see paper/README.md.
+    run('mkvalues.py', PAPER_DIR, ['mkvalues.py'], optional=True)
+
+    print()
+    print("6. install a finished GPU run, if one is waiting")
+    # This step installs a GPU class family.
     run('propagate.py', os.path.join(ROOT, 'gpu'), ['propagate.py'], optional=True)
 else:
     print()

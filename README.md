@@ -470,7 +470,7 @@ same answer. A missing-moments bug hid behind that for a day.
 
 ## The write-up
 
-*New lower bounds for kissing numbers in dimensions 25 through 96* is a 42-page account of
+*New lower bounds for kissing numbers in dimensions 25 through 96* is a 43-page account of
 the two mechanisms, with the results as numbered theorems: the cross-section method in §4
 (dimensions 68, 69, 70 and 71, and dimensions 46 and 47 recovered) and the cap
 construction in §5 (dimensions 25, 26, 27, 28, 29, 30, 31, 38, 49–61, 73–95), with the

@@ -30,6 +30,24 @@ from published import COHN, TAU, floor_for
 
 TEX = io.open(os.path.join(HERE, 'kissing46.tex'), encoding='utf-8').read()
 
+# ---- expand paper/values.tex -------------------------------------------------------------
+# Every claimed bound is written ONCE, in values.tex, generated from RESULTS.md by
+# mkvalues.py; the manuscript says \Kh{31}.  Expand those before parsing, so the checks below
+# see the numbers a reader sees rather than the macro names -- and so that macroising the
+# manuscript cannot quietly turn a check into a no-op.
+_VT = os.path.join(HERE, 'values.tex')
+_MACROS = {}
+if os.path.exists(_VT):
+    for _m in re.finditer(r'\\csname Kiss(Here|Prev|Gain|Fac)(\d+)\\endcsname\{([^}]*)\}',
+                          io.open(_VT, encoding='utf-8').read()):
+        _MACROS[({'Here': 'Kh', 'Prev': 'Kp', 'Gain': 'Kgain', 'Fac': 'Kfac'}[_m.group(1)],
+                 _m.group(2))] = _m.group(3)
+_before = TEX
+TEX = re.sub(r'\\(Kh|Kp|Kgain|Kfac)\{(\d+)\}',
+             lambda m: _MACROS.get((m.group(1), m.group(2)), m.group(0)), TEX)
+_unexpanded = re.findall(r'\\(?:Kh|Kp|Kgain|Kfac)\{\d+\}', TEX)
+
+
 def _npy_rows(path):
     """Rows of a .npy, from its header alone -- factcheck.py has no numpy."""
     import ast
@@ -205,6 +223,15 @@ for m in re.finditer(r'^\| (\d+) \| ([\d\u202f ]+) \| \*\*([\d\u202f ]+)\*\* \|'
 # when the manuscript actually covers it; until then this line is what says, in code, that the
 # omission is deliberate rather than an oversight.
 POSTDATE = {18}
+chk('values.tex is the manuscript\'s only copy of each bound',
+    bool(_MACROS) and not _unexpanded,
+    'values.tex missing' if not _MACROS
+    else 'unexpanded macros left: %s' % sorted(set(_unexpanded))[:5])
+import subprocess as _sp
+chk('and it agrees with RESULTS.md',
+    _sp.call([sys.executable, os.path.join(HERE, 'mkvalues.py'), '--check'],
+             stdout=_sp.DEVNULL, stderr=_sp.DEVNULL) == 0,
+    'run: python paper/mkvalues.py')
 chk('Table 4 row count == 52', len(tab4) == 52, 'got %d' % len(tab4))
 chk('RESULTS.md row count == 52 + the postdating claims', len(results) == 52 + len(POSTDATE), 'got %d' % len(results))
 chk('the claims that postdate the manuscript are exactly %s' % sorted(POSTDATE), set(results) - set(tab4) == POSTDATE,

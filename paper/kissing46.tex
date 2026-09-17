@@ -33,6 +33,8 @@ spherical design, Leech lattice, linear programming bound, exact verification}
 
 \raggedbottom
 
+% values.tex is GENERATED from RESULTS.md by mkvalues.py: every claimed bound, once.
+\input{values}
 \begin{document}
 
 \begin{abstract}
@@ -51,8 +53,8 @@ together with two consequences of the lattice structure, bound the number of
 minimal vectors orthogonal to all of them. Each bound carries an exact rational
 dual certificate. Which Gram matrix to fix is settled by Hermite's inequality,
 and the matrices attaining its bound are exhibited in $\Gsz$: we obtain
-$K(71)\ge 2\,603\,658\,750$, $K(70)\ge 1\,249\,778\,250$,
-$K(69)\ge 627\,822\,180$ and $K(68)\ge 361\,275\,480$. In dimensions $46$ and
+$K(71)\ge\Kh{71}$, $K(70)\ge\Kh{70}$,
+$K(69)\ge\Kh{69}$ and $K(68)\ge\Kh{68}$. In dimensions $46$ and
 $47$ the same programme returns the published values $12\,309\,600$ and
 $23\,766\,960$, both of them exactly, which validates the method.
 
@@ -62,25 +64,25 @@ bounded below by $1/(2(1-\gamma))$, where $\gamma$ is the largest inner product
 allowed between two minimal lines lifted above one direction: for $\Leech$ and
 $\Gsz$ the level may be $\tfrac23$, where one set of lines serves a zero-sum
 triple of directions, while $\Pff$ admits only an antipodal pair. This gives
-$K(38)\ge 591\,612$ and improvements throughout $49\le n\le 61$ and
+$K(38)\ge\Kh{38}$ and improvements throughout $49\le n\le 61$ and
 $73\le n\le 95$; over $\Leech$ it reproduces the published values in dimensions
 $25$ to $31$ to within $496$, and rebuilding its caps --- as heads in the lens of
 a minimal vector, and as coset classes over norm-$6$ vectors on every triangle of
-directions --- gives $K(25)\ge197\,569$, $K(26)\ge199\,632$ and
-$K(27)\ge201\,010$. The level is forced only for a layer that carries a whole set
+directions --- gives $K(25)\ge\Kh{25}$, $K(26)\ge\Kh{26}$ and
+$K(27)\ge\Kh{27}$. The level is forced only for a layer that carries a whole set
 of lines; one carrying a few points above each direction may sit at any height,
 and there are heights at which such a layer deletes nothing at all and its
 directions still clear the axis. The norm of its head is free as well, and at
 height $\sqrt2$ a norm-$8$ head --- rather than the norm-$6$ one every earlier
 layer used --- lets a whole frame of $\Leech$ carry the whole cross-polytope of
 $\R^{k}$, which is $96k$ points in every dimension and deletes nothing. This
-gives $K(28)\ge204\,896$, $K(29)\ge209\,968$, $K(30)\ge221\,012$ and
-$K(31)\ge238\,662$, so that every dimension from $25$ to $31$ is improved.
+gives $K(28)\ge\Kh{28}$, $K(29)\ge\Kh{29}$, $K(30)\ge\Kh{30}$ and
+$K(31)\ge\Kh{31}$, so that every dimension from $25$ to $31$ is improved.
 
 The four remaining bounds are code-theoretic. Evaluated against the current code
-tables, the chain of Edel--Rains--Sloane gives $K(39)\ge 756\,116$,
-$K(62)\ge 71\,310\,732$ and $K(63)\ge 138\,419\,844$; at $n=96$ it overtakes
-$\Gsz$, giving $K(96)\ge 12\,886\,999\,232$.
+tables, the chain of Edel--Rains--Sloane gives $K(39)\ge\Kh{39}$,
+$K(62)\ge\Kh{62}$ and $K(63)\ge\Kh{63}$; at $n=96$ it overtakes
+$\Gsz$, giving $K(96)\ge\Kh{96}$.
 
 Every bound is certified in exact arithmetic by a public verification package;
 no floating-point computation decides any of them.
@@ -184,14 +186,14 @@ Table~\ref{tab:all}, which gives every dimension.}
 \toprule
 construction & dimensions & \# & largest gain & factor & where\\
 \midrule
-$\Gsz$ cross-sections & $68$--$71$ & $4$ & $+2\,271\,920\,766$ & $1.09$--$7.85$ & \S\ref{ss:g72}\\
-layers over $\Leech$ & $25$--$27$, $38$ & $4$ & $+24\,960$ & $1.00$--$1.04$ & \S\ref{ss:d25}--\ref{ss:d38}\\
-second layers over $\Leech$ & $28$--$31$ & $4$ & $+572$ & $1.00$--$1.00$ & \S\ref{ss:d293031}\\
-layers over $\Pff$ & $49$--$61$ & $13$ & $+7\,481\,540$ & $1.00$--$1.14$ & \S\ref{ss:big}\\
-the \textsc{ers} chain & $62$, $63$ & $2$ & $+86\,001\,280$ & $1.36$--$2.64$ & \S\ref{ss:d6263}\\
-the \textsc{ers} chain at $96$ & $96$ & $1$ & $+6\,668\,627\,072$ & $2.07$--$2.07$ & \S\ref{ss:d96}\\
-layers over $\Gsz$ & $73$--$95$ & $23$ & $+254\,796\,296$ & $1.00$--$1.04$ & \S\ref{ss:big}\\
-constant-weight codes & $39$ & $1$ & $+128$ & $1.00$--$1.00$ & \S\ref{ss:d39}\\
+$\Gsz$ cross-sections & $68$--$71$ & $4$ & $\Kgain{71}$ & $1.09$--$7.85$ & \S\ref{ss:g72}\\
+layers over $\Leech$ & $25$--$27$, $38$ & $4$ & $\Kgain{38}$ & $1.00$--$1.04$ & \S\ref{ss:d25}--\ref{ss:d38}\\
+second layers over $\Leech$ & $28$--$31$ & $4$ & $\Kgain{30}$ & $1.00$--$1.00$ & \S\ref{ss:d293031}\\
+layers over $\Pff$ & $49$--$61$ & $13$ & $\Kgain{61}$ & $1.00$--$1.14$ & \S\ref{ss:big}\\
+the \textsc{ers} chain & $62$, $63$ & $2$ & $\Kgain{63}$ & $1.36$--$2.64$ & \S\ref{ss:d6263}\\
+the \textsc{ers} chain at $96$ & $96$ & $1$ & $\Kgain{96}$ & $2.07$--$2.07$ & \S\ref{ss:d96}\\
+layers over $\Gsz$ & $73$--$95$ & $23$ & $\Kgain{95}$ & $1.00$--$1.04$ & \S\ref{ss:big}\\
+constant-weight codes & $39$ & $1$ & $\Kgain{39}$ & $1.00$--$1.00$ & \S\ref{ss:d39}\\
 \midrule
 total & & $52$ & & &\\
 \bottomrule
@@ -748,7 +750,7 @@ direct enumeration.
 \subsection{Dimensions 68 to 71}\label{ss:g72}
 
 \begin{theorem}\label{thm:71}
-$K(71)\ge 2\,603\,658\,750$ and $K(70)\ge 1\,249\,778\,250$. The first is the
+$K(71)\ge\Kh{71}$ and $K(70)\ge\Kh{70}$. The first is the
 exact size of that cross-section of $\Gsz$.
 \end{theorem}
 
@@ -781,7 +783,7 @@ certificate is valid for the Gram matrix it is computed from, and that matrix is
 exhibited.
 
 \begin{theorem}\label{thm:6869}
-$K(69)\ge 627\,822\,180$ and $K(68)\ge 361\,275\,480$.
+$K(69)\ge\Kh{69}$ and $K(68)\ge\Kh{68}$.
 \end{theorem}
 
 \begin{proof}[Proof sketch]
@@ -1168,7 +1170,7 @@ and B.~Lindow the caps are rebuilt: $1006$ heads $x$ of squared length $3$
 owner from the equator, and it is a theorem that two compatible heads never
 share a removal, so the count is $196\,560+H+2+|E|$ with $H=1006$ and one
 further equator point $-\tfrac{2}{\sqrt6}v$ that is not a lattice vector. That
-gives $K(25)\ge197\,569$, verified in exact arithmetic by the package
+gives $K(25)\ge\Kh{25}$, verified in exact arithmetic by the package
 \texttt{dim25-lens-heads}; the account is a separate note. The level argument
 above remains the template's own bound and is kept as such.
 
@@ -1227,7 +1229,7 @@ directions they fix are the ones the new configuration uses.
 directions}\label{ss:d2627}
 
 \begin{theorem}\label{thm:2627}
-$K(26)\ge199\,632$ and $K(27)\ge201\,010$.
+$K(26)\ge\Kh{26}$ and $K(27)\ge\Kh{27}$.
 \end{theorem}
 
 Both are joint work in progress with H.~Cohn and B.~Lindow, and the account is
@@ -1264,12 +1266,12 @@ that property exists. The shipped configuration, found by a solve in which each
 head chooses its side, has $1524$ class heads, of which $1491$ lie over the
 triangle $v_1,v_2,v_3$ and $33$ over its negative $-v_1,-v_2,-v_3$, the other
 triangle of the same hexagon of leans, and $6$ free heads:
-$196\,560+6+2\cdot1524+18=199\,632$. In dimension $27$ the axis is
+$196\,560+6+2\cdot1524+18=\Kh{26}$. In dimension $27$ the axis is
 the cuboctahedron rotated by $45^{\circ}$ about a coordinate axis, whose largest
 cosine to a direction is $(2+\sqrt2)/4$ and whose inner product with a cap point
 is at most $(2+\sqrt2)/\sqrt3<2$; two triangles of leans with cross Gram matrix
 the circulant of $(3,0,-3)$ carry $2210$ class heads over the four sides and
-$6$ free heads: $196\,560+12+2\cdot2210+18=201\,010$. The package
+$6$ free heads: $196\,560+12+2\cdot2210+18=\Kh{27}$. The package
 \texttt{dim26-27-iota-triangles} stores the heads as integer vectors with the
 index of their triangle, rebuilds the Leech vectors from the Golay code, decides
 every head--equator and head--head pair by integer comparison against the
@@ -1281,8 +1283,8 @@ $\mathbb{Q}(\sqrt2,\sqrt3)$, and rejects a head moved, duplicated or displaced.
 height}\label{ss:d293031}
 
 \begin{theorem}\label{thm:293031}
-$K(28)\ge204\,896$, $K(29)\ge209\,968$, $K(30)\ge221\,012$ and
-$K(31)\ge238\,662$.
+$K(28)\ge\Kh{28}$, $K(29)\ge\Kh{29}$, $K(30)\ge\Kh{30}$ and
+$K(31)\ge\Kh{31}$.
 \end{theorem}
 
 These are joint work in progress with H.~Cohn and B.~Lindow, and the account is
@@ -1377,7 +1379,7 @@ layer points & $384$ & $480$ & $576$ & $672$\\
 \midrule
 axis points kept & $16$ of $24$ & $32$ of $40$ & $68$ of $72$ & $118$ of $126$\\
 owner lines & $8\cdot248$ & $14\cdot248$ & $24\cdot248$ & $10\,328$\\
-net gain & $+376$ & $+472$ & $+572$ & $+312$\\
+net gain & $\Kgain{28}$ & $\Kgain{29}$ & $\Kgain{30}$ & $\Kgain{31}$\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1451,11 +1453,11 @@ $90^{\circ}$ in three coordinate planes, which keeps every coordinate an integer
 quadruple $(a+b\sqrt2+c\sqrt3+d\sqrt6)/24$ --- and $68$ of $72$ and $118$ of
 $126$ survive, against $48$ and $110$ unrotated. Hence
 \[
-  192\,592+3\cdot3\,968+16+384=204\,896,
+  192\,592+3\cdot3\,968+16+384=\Kh{28},
 \]
 \[
-  189\,616+19\,840+32+480=209\,968,\quad
-  184\,656+35\,712+68+576=221\,012 ,
+  189\,616+19\,840+32+480=\Kh{29},\quad
+  184\,656+35\,712+68+576=\Kh{30} ,
 \]
 the middle count having $12$ zero-sum triangles and $2$ antipodal pairs, since
 $\tau(5)=40$ is not a multiple of $3$ and the $40$ directions of a maximum
@@ -1487,7 +1489,7 @@ free slots their octads still have, rather than on what they cost now, gives a
 family at $1\,670$ with $p=0.5467$ and $10\,328$ of the $10\,416$ owner lines,
 and
 \[
-  175\,904+61\,968+118+672=238\,662 .
+  175\,904+61\,968+118+672=\Kh{31} .
 \]
 
 How far this can go is known to different depths. In all four dimensions the
@@ -1545,7 +1547,7 @@ and the binding question becomes how much of the shell admits a partition into
 independent sets, a colouring question.
 
 \begin{theorem}\label{thm:38}
-$K(38)\ge591\,612$.
+$K(38)\ge\Kh{38}$.
 \end{theorem}
 
 \begin{proof}[Proof sketch]
@@ -1560,7 +1562,7 @@ The pole set is non-empty even though $Z$ already occupies every direction of th
 $1\,932$-point code. By \eqref{eq:c6} a pole needs $30^\circ$ of separation from
 the directions; the covering radius of that code is $54.7^\circ$. There is a
 rotated copy of the code no point of which lies within $30^\circ$ of $Z$, so all
-$1\,932$ of them are poles and the total is $589\,680+1\,932=591\,612$, which is
+$1\,932$ of them are poles and the total is $589\,680+1\,932=\Kh{38}$, which is
 exactly the family's ceiling $3K(24)+K(14)$.
 
 Such a rotation is not found by sampling. A $30^\circ$ cap has relative measure
@@ -1806,7 +1808,7 @@ levels, $(n,8,2)$, and reads
 \]
 
 \begin{theorem}\label{thm:39}
-$K(39)\ge756\,116$.
+$K(39)\ge\Kh{39}$.
 \end{theorem}
 
 \begin{proof}
@@ -1814,7 +1816,7 @@ Echols \cite{echols2026} improves $A(39,8,8)$ from $3\,323$ to $3\,324$;
 Brouwer's table \cite{brouwer} carries the new value. With
 $A(39,10)\ge327\,680$ \cite{zinoviev-litsyn1984},
 \[
-  327\,680+128\cdot3\,324+4\cdot741 \;=\; 327\,680+425\,472+2\,964 \;=\; 756\,116 . \qedhere
+  327\,680+128\cdot3\,324+4\cdot741 \;=\; 327\,680+425\,472+2\,964 \;=\; \Kh{39} . \qedhere
 \]
 \end{proof}
 
@@ -1867,7 +1869,7 @@ is $n_1=15$, and $15\cdot4=60\le62$, so the chain is $(n,15,2)$ and
 \]
 
 \begin{theorem}\label{thm:6263}
-$K(62)\ge71\,310\,732$ and $K(63)\ge138\,419\,844$.
+$K(62)\ge\Kh{62}$ and $K(63)\ge\Kh{63}$.
 \end{theorem}
 
 \begin{proof}
@@ -1929,7 +1931,7 @@ $\mathbb F_{16}$ with the Reed--Solomon code $[6,4,3]_{16}$ gives
 $A(96,6,6)\ge16^4$.
 
 \begin{theorem}\label{thm:96}
-$K(96)\ge12\,886\,999\,232$.
+$K(96)\ge\Kh{96}$.
 \end{theorem}
 
 \begin{proof}
@@ -1979,58 +1981,58 @@ $n$ & previously & this work & construction\\
 \endhead
 \bottomrule
 \endfoot
-$25$ & $197\,056$ & $197\,569$ & layers over $\Leech$, lens heads (\S\ref{ss:d25})\\
-$26$ & $198\,550$ & $199\,632$ & layers over $\Leech$, one hexagon of leans (\S\ref{ss:d2627})\\
-$27$ & $200\,044$ & $201\,010$ & layers over $\Leech$, two coset triangles (\S\ref{ss:d2627})\\
-$28$ & $204\,520$ & $204\,896$ & second layer over $\Leech$, norm-$8$ head (\S\ref{ss:d293031})\\
-$29$ & $209\,496$ & $209\,968$ & second layer over $\Leech$, norm-$8$ frame (\S\ref{ss:d293031})\\
-$30$ & $220\,440$ & $221\,012$ & second layer over $\Leech$, norm-$8$ frame (\S\ref{ss:d293031})\\
-$31$ & $238\,350$ & $238\,662$ & second layer over $\Leech$, norm-$8$ frame (\S\ref{ss:d293031})\\
-$38$ & $566\,652$ & $591\,612$ & layers over $\Leech$, $k=14$\\
-$39$ & $755\,988$ & $756\,116$ & constant-weight codes\\
-$49$ & $52\,416\,002$ & $52\,430\,140$ & layers over $\Pff$\\
-$50$ & $52\,416\,006$ & $52\,458\,418$ & layers over $\Pff$\\
-$51$ & $52\,416\,012$ & $52\,500\,816$ & layers over $\Pff$\\
-$52$ & $52\,416\,024$ & $52\,585\,516$ & layers over $\Pff$\\
-$53$ & $52\,416\,040$ & $52\,698\,222$ & layers over $\Pff$\\
-$54$ & $52\,416\,072$ & $52\,922\,906$ & layers over $\Pff$\\
-$55$ & $52\,416\,126$ & $53\,299\,730$ & layers over $\Pff$\\
-$56$ & $52\,416\,240$ & $54\,085\,392$ & layers over $\Pff$\\
-$57$ & $52\,416\,306$ & $54\,534\,176$ & layers over $\Pff$\\
-$58$ & $52\,416\,510$ & $55\,893\,422$ & layers over $\Pff$\\
-$59$ & $52\,416\,604$ & $56\,505\,668$ & layers over $\Pff$\\
-$60$ & $52\,416\,841$ & $57\,477\,123$ & layers over $\Pff$\\
-$61$ & $52\,417\,154$ & $59\,898\,694$ & layers over $\Pff$\\
-$62$ & $52\,417\,932$ & $71\,310\,732$ & \textsc{ers} chain $(62,15,2)$\\
-$63$ & $52\,418\,564$ & $138\,419\,844$ & \textsc{ers} chain $(63,15,2)$\\
-$68$ & $331\,737\,984$ & $361\,275\,480$ & cross-section of $\Gsz$, $k=4$\\
-$69$ & $331\,737\,984$ & $627\,822\,180$ & cross-section of $\Gsz$, $k=3$\\
-$70$ & $331\,737\,984$ & $1\,249\,778\,250$ & cross-section of $\Gsz$, $k=2$\\
-$71$ & $331\,737\,984$ & $2\,603\,658\,750$ & cross-section of $\Gsz$, $k=1$\\
-$73$ & $6\,218\,175\,602$ & $6\,218\,179\,814$ & layers over $\Gsz$\\
-$74$ & $6\,218\,175\,606$ & $6\,218\,192\,454$ & layers over $\Gsz$\\
-$75$ & $6\,218\,175\,612$ & $6\,218\,209\,308$ & layers over $\Gsz$\\
-$76$ & $6\,218\,175\,624$ & $6\,218\,243\,016$ & layers over $\Gsz$\\
-$77$ & $6\,218\,175\,640$ & $6\,218\,285\,152$ & layers over $\Gsz$\\
-$78$ & $6\,218\,175\,672$ & $6\,218\,377\,840$ & layers over $\Gsz$\\
-$79$ & $6\,218\,175\,726$ & $6\,218\,529\,454$ & layers over $\Gsz$\\
-$80$ & $6\,218\,175\,840$ & $6\,218\,849\,228$ & layers over $\Gsz$\\
-$81$ & $6\,218\,175\,906$ & $6\,219\,034\,270$ & layers over $\Gsz$\\
-$82$ & $6\,218\,176\,110$ & $6\,219\,605\,578$ & layers over $\Gsz$\\
-$83$ & $6\,218\,176\,204$ & $6\,219\,621\,690$ & layers over $\Gsz$\\
-$84$ & $6\,218\,176\,441$ & $6\,220\,293\,304$ & layers over $\Gsz$\\
-$85$ & $6\,218\,176\,754$ & $6\,220\,745\,414$ & layers over $\Gsz$\\
-$86$ & $6\,218\,177\,532$ & $6\,223\,567\,844$ & layers over $\Gsz$\\
-$87$ & $6\,218\,178\,164$ & $6\,224\,703\,598$ & layers over $\Gsz$\\
-$88$ & $6\,218\,179\,920$ & $6\,230\,206\,492$ & layers over $\Gsz$\\
-$89$ & $6\,218\,181\,330$ & $6\,233\,054\,848$ & layers over $\Gsz$\\
-$90$ & $6\,218\,183\,254$ & $6\,238\,744\,788$ & layers over $\Gsz$\\
-$91$ & $6\,218\,187\,548$ & $6\,247\,801\,034$ & layers over $\Gsz$\\
-$92$ & $6\,218\,195\,048$ & $6\,266\,405\,667$ & layers over $\Gsz$\\
-$93$ & $6\,218\,205\,368$ & $6\,294\,850\,360$ & layers over $\Gsz$\\
-$94$ & $6\,218\,225\,496$ & $6\,355\,739\,600$ & layers over $\Gsz$\\
-$95$ & $6\,218\,268\,750$ & $6\,473\,065\,046$ & layers over $\Gsz$\\
-$96$ & $6\,218\,372\,160$ & $12\,886\,999\,232$ & \textsc{ers} chain $(96,24,6,1)$\\
+$25$ & $\Kp{25}$ & $\Kh{25}$ & layers over $\Leech$, lens heads (\S\ref{ss:d25})\\
+$26$ & $\Kp{26}$ & $\Kh{26}$ & layers over $\Leech$, one hexagon of leans (\S\ref{ss:d2627})\\
+$27$ & $\Kp{27}$ & $\Kh{27}$ & layers over $\Leech$, two coset triangles (\S\ref{ss:d2627})\\
+$28$ & $\Kp{28}$ & $\Kh{28}$ & second layer over $\Leech$, norm-$8$ head (\S\ref{ss:d293031})\\
+$29$ & $\Kp{29}$ & $\Kh{29}$ & second layer over $\Leech$, norm-$8$ frame (\S\ref{ss:d293031})\\
+$30$ & $\Kp{30}$ & $\Kh{30}$ & second layer over $\Leech$, norm-$8$ frame (\S\ref{ss:d293031})\\
+$31$ & $\Kp{31}$ & $\Kh{31}$ & second layer over $\Leech$, norm-$8$ frame (\S\ref{ss:d293031})\\
+$38$ & $\Kp{38}$ & $\Kh{38}$ & layers over $\Leech$, $k=14$\\
+$39$ & $\Kp{39}$ & $\Kh{39}$ & constant-weight codes\\
+$49$ & $\Kp{49}$ & $\Kh{49}$ & layers over $\Pff$\\
+$50$ & $\Kp{50}$ & $\Kh{50}$ & layers over $\Pff$\\
+$51$ & $\Kp{51}$ & $\Kh{51}$ & layers over $\Pff$\\
+$52$ & $\Kp{52}$ & $\Kh{52}$ & layers over $\Pff$\\
+$53$ & $\Kp{53}$ & $\Kh{53}$ & layers over $\Pff$\\
+$54$ & $\Kp{54}$ & $\Kh{54}$ & layers over $\Pff$\\
+$55$ & $\Kp{55}$ & $\Kh{55}$ & layers over $\Pff$\\
+$56$ & $\Kp{56}$ & $\Kh{56}$ & layers over $\Pff$\\
+$57$ & $\Kp{57}$ & $\Kh{57}$ & layers over $\Pff$\\
+$58$ & $\Kp{58}$ & $\Kh{58}$ & layers over $\Pff$\\
+$59$ & $\Kp{59}$ & $\Kh{59}$ & layers over $\Pff$\\
+$60$ & $\Kp{60}$ & $\Kh{60}$ & layers over $\Pff$\\
+$61$ & $\Kp{61}$ & $\Kh{61}$ & layers over $\Pff$\\
+$62$ & $\Kp{62}$ & $\Kh{62}$ & \textsc{ers} chain $(62,15,2)$\\
+$63$ & $\Kp{63}$ & $\Kh{63}$ & \textsc{ers} chain $(63,15,2)$\\
+$68$ & $\Kp{68}$ & $\Kh{68}$ & cross-section of $\Gsz$, $k=4$\\
+$69$ & $\Kp{69}$ & $\Kh{69}$ & cross-section of $\Gsz$, $k=3$\\
+$70$ & $\Kp{70}$ & $\Kh{70}$ & cross-section of $\Gsz$, $k=2$\\
+$71$ & $\Kp{71}$ & $\Kh{71}$ & cross-section of $\Gsz$, $k=1$\\
+$73$ & $\Kp{73}$ & $\Kh{73}$ & layers over $\Gsz$\\
+$74$ & $\Kp{74}$ & $\Kh{74}$ & layers over $\Gsz$\\
+$75$ & $\Kp{75}$ & $\Kh{75}$ & layers over $\Gsz$\\
+$76$ & $\Kp{76}$ & $\Kh{76}$ & layers over $\Gsz$\\
+$77$ & $\Kp{77}$ & $\Kh{77}$ & layers over $\Gsz$\\
+$78$ & $\Kp{78}$ & $\Kh{78}$ & layers over $\Gsz$\\
+$79$ & $\Kp{79}$ & $\Kh{79}$ & layers over $\Gsz$\\
+$80$ & $\Kp{80}$ & $\Kh{80}$ & layers over $\Gsz$\\
+$81$ & $\Kp{81}$ & $\Kh{81}$ & layers over $\Gsz$\\
+$82$ & $\Kp{82}$ & $\Kh{82}$ & layers over $\Gsz$\\
+$83$ & $\Kp{83}$ & $\Kh{83}$ & layers over $\Gsz$\\
+$84$ & $\Kp{84}$ & $\Kh{84}$ & layers over $\Gsz$\\
+$85$ & $\Kp{85}$ & $\Kh{85}$ & layers over $\Gsz$\\
+$86$ & $\Kp{86}$ & $\Kh{86}$ & layers over $\Gsz$\\
+$87$ & $\Kp{87}$ & $\Kh{87}$ & layers over $\Gsz$\\
+$88$ & $\Kp{88}$ & $\Kh{88}$ & layers over $\Gsz$\\
+$89$ & $\Kp{89}$ & $\Kh{89}$ & layers over $\Gsz$\\
+$90$ & $\Kp{90}$ & $\Kh{90}$ & layers over $\Gsz$\\
+$91$ & $\Kp{91}$ & $\Kh{91}$ & layers over $\Gsz$\\
+$92$ & $\Kp{92}$ & $\Kh{92}$ & layers over $\Gsz$\\
+$93$ & $\Kp{93}$ & $\Kh{93}$ & layers over $\Gsz$\\
+$94$ & $\Kp{94}$ & $\Kh{94}$ & layers over $\Gsz$\\
+$95$ & $\Kp{95}$ & $\Kh{95}$ & layers over $\Gsz$\\
+$96$ & $\Kp{96}$ & $\Kh{96}$ & \textsc{ers} chain $(96,24,6,1)$\\
 \end{longtable}
 
 \section{Remarks}\label{sec:remarks}
