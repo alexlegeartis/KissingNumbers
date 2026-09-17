@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **139 sections, about 9450 lines**, written as the
+The full working record of the project: **147 sections, about 10020 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -17,9 +17,9 @@ The authoritative current statements are [`RESULTS.md`](RESULTS.md), which is ge
 
 ### Reading it
 
-The headings are numbered 1 to 129 with **no section 87** — a number was skipped, not a
+The headings are numbered 1 to 148 with **no section 87** — a number was skipped, not a
 section removed, and nothing in the repository refers to it. That is why the count above is
-128 and the last heading reads 129.
+147 and the last heading reads 148.
 
 It is roughly chronological, so later sections supersede earlier ones. Where they conflict,
 **the later section wins** — and where a section is superseded, it usually says so. Some
@@ -33,7 +33,7 @@ specific warnings:
   the project.
 - **Sections written before 2026-08-22 count dimensions 46 and 47 among the results.
   They are not claims, and removing them took that era's count from 46 to 44. The
-  current count is 48 claims -- dimensions 62, 63, 68, 69, 96 and then 26 came later -- so no
+  current count is 53 claims -- dimensions 62, 63, 68, 69, 96 and then 26 came later -- so no
   count in a dated section is comparable with today's. `RESULTS.md` is the authority.**
   Dimensions 46 and 47 were dropped on 2026-08-22: 23 766 960 is Boyvalenkov-
   Cherkashin, *Results in Mathematics* **80** (2025), Paper No. 3, equation (3) of
@@ -9227,6 +9227,8 @@ the probe was re-run against the package's own code before anything was conclude
 
 ## 138. The norm-8 FRAME layer is not about dimension 28: K(29) >= 209968, K(30) >= 220948 (2026-09-15)
 
+> Superseded in dimension 30 by section 141: the packing is now exact and K(30) >= 220992.
+
 Section 137 recorded the dimension-28 layer -- a norm-8 head at height `sqrt2`, a whole Leech
 frame of them, `48 x 8 = 384` points.  **That layer is dimension-independent.**  Three of its
 four constraints hold in `R^{24+k}` for every `k`:
@@ -9272,16 +9274,18 @@ is `248*T - (excess coverings)`.
 | k | dim | classes | owner lines | axis kept | layer | total | published | previous |
 |---|---|---|---|---|---|---|---|---|
 | 5 | 29 | 14 | 3472, exact | 32 of 40 | 480 | **209968** | 209496 | 209594 |
-| 6 | 30 | 24 | 5941 of 5952 | 48 of 72 | 576 | **220948** | 220440 | 220494 |
-| 7 | 31 | 42 | 10254 needed, 10183 reached | 110 of 126 | 672 | -- | 238350 | 238354 |
+| 6 | 30 | 24 | **5952 = 24 x 248, exact** (see 141) | **68 of 72** (see 142) | 576 | **221012** | 220440 | 220494 |
+| 7 | 31 | 42 | **10328 of 10416** (see 145) | **118 of 126**, maximal (see 142, 144) | 672 | **238662** | 238350 | 238354 |
 
 Dimension 29 uses 12 zero-sum triangles and 2 antipodal pairs: `tau(5) = 40` is not a multiple of
 3, and the 40 directions of a maximum 60-degree code in `R^5` sum to zero, so 13 disjoint
 triangles cannot be carved out of one.  The direction weight is 26 either way.
 
-**Dimension 31 does not reach.**  It needs 98.4 per cent of the 10416 lines that 42 full classes
-would give and the descent stalls at 97.8 per cent -- a gap of 71 lines, 284 points.  Nothing
-structural stands in the way: 42 classes need 21.4 per cent of the 48576-line pool.
+**Dimension 31 does not reach** -- as of this section.  It needs 98.4 per cent of the 10416
+lines that 42 full classes would give and the descent stalls at 97.8 per cent, a gap of 71 lines
+and 284 points.  Nothing structural stands in the way: 42 classes need 21.4 per cent of the
+48576-line pool.  **Superseded by 143 and 145**, which reach 10296 and then 10328 lines and claim
+`K(31) >= 238662`; the table above is the current one.
 
 ### A structure worth keeping
 
@@ -9458,3 +9462,569 @@ the continuous spherical LP bound 672 covers everything -- and it is computed ov
 equator, while dimensions 22 and 23 use the EVEN one, where the only bound is the continuous
 A(16,1/3) <= 751 and 2281 LNS iterations over the 61440-vertex ground set found nothing above
 512.
+
+## 141. The dimension-30 packing is CLOSED: K(30) >= 220992, and how (2026-09-17)
+
+Section 138 left dimension 30 at 5941 of the 5952 owner lines that 24 pairwise disjoint 248-line
+type-B classes would give -- 11 repeated lines, worth +44.  Coordinate descent over the Golay
+sign words (`frame/packT8.py`, `packT9.py`) and class-level LNS (`classgpu/descent.py`) both
+stalled there.  It is now exact: **24 pairwise disjoint classes of the full 248 lines**, and
+`K(30) = 196560 + 4 x 5952 + 48 + 576 = 220992`, verified by the package's own exact verifier.
+
+**Why the old searches stalled, and what replaces them.**  Two random monomial images of the
+record class are disjoint with probability **0.4155** (measured over 2.1e6 images), so a family
+of `T` pairwise disjoint classes is a clique in a Cayley-type graph of that density on the ~1e12
+images, and the random-graph clique number is `2 ln(1e12)/ln(1/0.4155) = 63`: both `T = 24` and
+`T = 42` are far below the existence threshold, so this was never a structural obstruction.  But
+a purely sequential search pays `0.4155^k` per candidate at depth `k` and therefore stalls near
+21 whatever the move set.  The fix is to pay that factor ONCE:
+
+1. freeze a **core** of `K = 12` pairwise disjoint classes;
+2. spend the sampling budget building a **pool** of images each disjoint from the WHOLE core
+   (0.4155^-12, about 23 per second with the Walsh cost vector below) -- a pool of ~9000;
+3. solve **max clique on the pool explicitly**.  The pool graph has compatibility density 0.4155
+   again, so a pool of 9000 has cliques of about 20, and a randomized greedy with restarts finds
+   12 within minutes.  `12 + 12 = 24`, and all four independent runs reached it.
+
+**The cost vector that makes it affordable.**  A type-B line is (octad, position in `F_2^6`) and a
+Golay sign word `c` translates the position inside octad `O` by `TC[c,O]`, which is LINEAR in `c`.
+So `w_O(t)`, the number of already-covered lines when a candidate's position set `A^O` is shifted
+by `t`, is the XOR-CONVOLUTION of `1_{A^O}` with the coverage count `cnt_O` -- a pointwise product
+of 64-point Walsh transforms -- and `cost(c) = sum_O w_O(TC[c,O])` therefore has a Walsh transform
+that is just those 64-point transforms scattered into the 4096-point dual by `y -> L_O^T y`.  A
+whole 4096-sign-word scan is 44 products of length 64 plus one 4096-point Walsh transform: **911
+candidate permutations per second against packT9's 16**, checked against brute force.
+
+**Dimension 31 is unchanged.**  It needs 10254 of 10416 owner lines from 42 classes to beat the
++4 of the height-sqrt3 layer.  The same machinery took the soft objective (maximise distinct
+lines over 42 images) from the published 10183 to 10224, still 30 short; and exact disjointness
+cannot substitute, because a greedy clique on a pool of `n` reaches only `ln n / ln(1/0.4155)`,
+so the core-and-pool route caps near 30 perfect classes = 7440 lines, well under 10224.
+
+Scripts: `research/collab2531/BRAINSTORM_2831.md` and the scratch tools it names.
+
+## 142. The AXIS is a free rotation, and it is worth +20 in dimension 30 (2026-09-17)
+
+The frame layer's axis is `(0, 2a)` with `|a| = 1` in `R^k`, and its constraints are
+
+        axis x axis   <a,a'> <= 1/2            a 60-degree code, so at most tau(k) points
+        axis x cap    |<a,z>| <= sqrt3/2       z one of the tau(k) cap directions
+        axis x layer  |<a,w>| <= 1/sqrt2       w one of the 2k frame vectors
+
+Every package so far CARRIED THE PUBLISHED AXIS OVER and kept whatever survived: 16 of 24, 32 of
+40, 48 of 72, 110 of 126.  But a maximum 60-degree code is a *rotated copy of the same root
+system*, and the rotation is free.  Scanning rotations that are products of coordinate-plane
+rotations by multiples of 15 degrees -- so that every coordinate stays in `Q(sqrt2, sqrt3)`, the
+field the packages already store -- gives
+
+| k | dim | shipped axis | best exact rotation | spec |
+|---|---|---|---|---|
+| 4 | 28 | 16 of 24 | 16 | unchanged over 3- and 4-plane rotations |
+| 5 | 29 | 32 of 40 | 32 | unchanged over 3- and 4-plane rotations |
+| 6 | 30 | 48 of 72 | **68** | 45, 45, 90 degrees in planes (0,1), (2,3), (3,5) |
+| 7 | 31 | 110 of 126 | **118** | 45, 45, 90 degrees in planes (0,3), (2,4), (5,6) |
+
+So `K(30) = 196560 + 4 x 5952 + 68 + 576 = 221012`, verified exactly by the package's own
+verifier, and dimension 31's threshold for the frame layer drops from 10254 to 10252 owner lines.
+
+**The 68 is maximal for this configuration** (not merely unbeaten): 6e6 samples of the admissible
+region -- the unit vectors at least 30 degrees from every cap direction and at least 45 degrees
+from every frame vector -- contain no point at 60 degrees from all 68, the closest miss being
+cosine 0.6235 against the 0.5 required.  The last 4 points would need a different axis code, not
+a different rotation of this one.
+
+**Two exact families that do NOT do better, so do not retry them.**  E6 carries a fixed-point-free
+order-3 automorphism `g`, so `J = (2g + I)/sqrt3` is a complex structure and `Q = (2I + g)/sqrt3`
+is multiplication by `exp(i pi/6)`: it puts the whole rotated root system at cosine EXACTLY
+`sqrt3/2` from the caps, the threshold.  That is the shipped axis -- with the standard frame it
+keeps exactly 48 -- and enumerating all **51840** Weyl images of it (the complete set of exact
+choices of `g`) gives 48 every time.  And all **46080** signed permutations of the coordinates
+fail outright: each leaves at least `C(4,2) = 6` of the 40 roots of shape `(+-1,+-1,0^4)` inside
+the first five coordinates, so the rotated system always shares a root line with the original and
+the cap cosine is 1.  A COMPLEX-ADAPTED frame is also dead: the minimum over unitary bases of
+`C^3` of the largest `|x_j|^2` over the E6 roots is 0.7068, and the layer needs 0.5.
+
+## 143. Dimension 31 takes the frame layer: K(31) >= 238534 (2026-09-17)
+
+*Superseded by section 145, which reaches 238662; the diagnosis below of why a group does
+not help still stands, the conclusion that throughput was the lever does not.*
+
+Section 138 left dimension 31 as the one place where the norm-8 frame layer does not pay.  It
+pays now.  `K(31) = 196560 + 4L + |axis| + 96k`, and with `k = 7`, layer 672 and the axis raised
+to 118 (section 142) the layer beats the height-sqrt3 `+4` as soon as the 42 classes carry
+`L >= 10252` of the `42 x 248 = 10416` owner lines that 42 full classes would give.  The
+published attempt reached 10183; this one carries **10296**, so
+
+        K(31) = 196560 + 4 x 10296 + 118 + 672 = 238534,
+
+verified exactly, and `verifications/improved/dim31-sqrt3-layer/` moves to `superseded/`.
+
+**The measurement that reframed it.**  Two random monomial images of the record 248-line type-B
+class are disjoint with probability **0.4155** (measured over 2.1e6 images).  A family of 42
+pairwise disjoint classes is therefore a clique in a graph of that density on the ~1e12 images,
+and the random-graph clique number is `2 ln(1e12)/ln(1/0.4155) = 63`.  **42 was never near an
+existence bound** -- everything that stalled was algorithmic.
+
+**The shortcut that does not exist.**  If a group `H` acts on the 48576 type-B lines and the
+class meets every `H`-orbit at most once, the `|H|` images are pairwise disjoint for free and no
+pair ever has to be searched.  Closed, with numbers:
+
+* **no monomial element acts on the lines with order >= 42.**  For `pi` of order 21 or 23 the
+  only `pi`-invariant Golay words are `0` and `Omega`, and `Omega` acts trivially on LINES, so
+  the cyclic route caps at effective order 21, 23, 28 or 30.  A pure sign subgroup caps at 8: a
+  transversal needs `image_O(E) ^ V_O = 0` for every used octad and `dim V_O = 3` on the
+  eighteen 8-line octads.
+* **the order-42 group exists and its orbits are wrong.**  `C_M24(7A) = C_7 x S_3` (found by a
+  batched random walk testing `p o g == g o p`; element orders 1, 2, 3, 7, 14, 21 with
+  multiplicities 1, 3, 2, 6, 18, 12) has orbits `1 x 3 + 169 x 21 + 1072 x 42`, so only
+  **45024 of 48576 lines** lie in a free orbit.  A 248-line class avoids the short orbits with
+  probability `0.927^248 = 7e-9` and is then a transversal with probability `e^{-27.9}`.
+  Measured: **0 of 53248 images** had all 248 lines free.
+* **the exponent is invariant.**  A smaller `H` makes the transversal easy and the between-block
+  disjointness hard in exactly compensating measure: at `|H| = 7` a transversal is 2.3 per cent
+  of images but two blocks are orbit-disjoint only with probability `e^{-8.9}`.  Every group
+  route pays the same `p^42`.
+
+**What actually closed it was DIVERSITY in the move, not a new idea.**  A candidate class costs
+one Walsh-domain evaluation of all 4096 sign words at once, so a single move can scan ~1e8 FRESH
+random monomial images.  `pack5.py` scored candidates from a fixed pool of a few thousand
+permutations refreshed every couple of sweeps; `deeplns.py` generates every candidate fresh.
+Starting from 24 pairwise disjoint classes (core-and-pool, section 141) and appending the rest
+by that deep scan reproduced the published 10183 in **73 seconds**, and cycling the same move
+over the finished family -- remove the class whose lines are most covered by others, rescan,
+re-insert -- took it from 10240 to 10267 in about an hour on twelve cores, and on to 10277
+in a further day.  Two cheap things
+mattered: `OMP_NUM_THREADS=1` per chain raised the aggregate from ~400 to ~5600 candidate
+permutations a second, and consolidating all chains onto the best family every few minutes.
+
+**What is left.**  120 of the 10416 lines, worth up to +480 more, and then the class problem at
++168 per extra LINE -- the largest per-line value of any dimension.  Everything else in the
+template -- the axis, the layer, the head height -- is measured maximal in section 144.
+
+## 144. Dimensions 28-31: the axis, the layer and the head height are all maximal, and the class is one-sided (2026-09-17)
+
+Sections 138-143 built the norm-8 frame layer into all four dimensions.  This section prices
+**every remaining term of the template except the class**, and closes each of them.  The
+template is
+
+        K(24+k) = 196560 + 2N + |axis| + 96k ,
+
+with `N` the number of owner VECTORS.  Working notes and scripts:
+`research/collab2531/BRAINSTORM_2831.md` sections 11-15, `research/collab2531/frame/`.
+
+### The class condition is ONE-SIDED, and the relaxation is worthless
+
+The class problem is always stated for LINES -- Leech minimal lines pairwise at `|<u,v>| <= 1`,
+record 248, Delsarte 425.45.  That is not what the construction needs.  An owner `u` pays the
+single equator point `(u,0)`, not the line: `<sqrt(2/3)u, -u> = -3.27 <= 2` leaves `-u` in the
+equator.  The binding constraint between two owners of one group carrying the same direction is
+`(2/3)<u,u'> + 4/3 <= 2`, i.e. `<u,u'> <= 1` **one-sided** -- only `+2` is forbidden, `-2` is
+allowed.  Equivalently the owner set is a set of minimal vectors whose pairwise DIFFERENCES
+avoid the minimal shell: a 75.52-degree spherical code inside the shell, Delsarte ceiling
+**850.9 vectors** against `2 x 248 = 496` attained.  One extra owner vector is worth 2 points in
+every dimension 28-31, so 42 of them would be `+84` in dimension 31.
+
+It gives nothing.  In the record's codimension-4 subspace (section 140) the one-sided graph on
+`2 x 6120 = 12240` vectors has degrees **312 and 504, identical to the line graph's** -- it is
+the signed double cover, and each conflicting line contributes exactly one of its two signs.
+An unseeded force-insert LNS reaches **480 = 2 x 240**, the same searcher's own figure on the
+line graph to the vertex; seeded at 496 it does not move in half an hour.  The obstruction is
+one histogram: **no line outside the class conflicts with fewer than 4 of it** (40 at 4, 320 at
+6, 64 at 7, 264 at 8, ...).  Admitting an outside line as a single vector needs all `t` of its
+conflicts DE-DOUBLED -- kept with one sign, the right one -- costing `t` and gaining 1, so it
+pays only if several outside lines share one conflict set; the 40 lines at `t = 4` fall into
+**20 conflict sets of two**.  Best net over every combination: **-2**.
+
+### The layer is exactly 96k
+
+A head is a norm-8 Leech vector `v` at `(v/2, sqrt2 w)`.  It deletes no equator point
+(`|u-v|^2 >= 4` forces `<u,v> <= 4`, exactly the threshold) and carries `2k` directions
+(`<w,w'> <= 0` on one head).  Two heads sharing a direction need `<v,v'> <= 0`, and at most
+`2n = 48` vectors of `R^24` have pairwise non-positive inner products, so one frame is the
+maximum and 48 is attained.  A 25th head line with a ROTATED cross-polytope is priced by three
+facts: `<w,w'> <= 1 - <v,v'>/8` and two orthonormal bases of `R^7` always meet at
+`cos >= 1/sqrt7 = 0.378`, so `|<v,f>| <= 4` for all 48 frame vectors; every owner needs
+`|<u,v>| <= 2`, because an owner at 3 would force its cap direction to `cos <= 0.4746` from all
+126 E7 roots when the deepest hole of the root lines is `cos 0.854`; and a head line is worth
+`2 x 2k = 28` against an owner line's 4, so it must kill fewer than 7 owner lines.  Measured
+over 3000 admissible heads: it kills **163 to 269, median 218**.  Closed by a factor of 23.
+
+### The head height is forced, and there is no second head family
+
+At `|p|^2 = a` a head admits a direction code at `cos <= (2-a)/(4-a)` and owners at
+`<u,u'> <= 4 - 2/a`.  `a = 8/3` is the UNIQUE value giving both three directions and the
+`<u,u'> <= 1` class: below it the class collapses to 24 orthogonal lines (`a = 2` gives
+`<u,u'> <= 0`), above it the directions collapse to an antipodal pair (`a = 3` gives
+`cos <= -1`).  A second family at `|p|^2 = 1` -- heads `u/2` on minimal `u`, which would delete
+nothing and carry `A(k,1/3)` directions -- dies on the caps: it needs `cos <= 0.5917` from all
+126 E7 roots.
+
+### The axis is maximal in all four dimensions
+
+The axis is a 60-degree LINE system with `|a_i| <= 1/sqrt2` (layer) and `|<a,z>| <= sqrt3/2`
+(caps).  Shipped 16, 32, 68, 118 points = **8, 16, 34, 59 lines**.
+
+In dimension 28 there is a proof of the ceiling.  Twelve lines at 60 degrees in `R^4` force the
+24-cell, which is a spherical 5-design, so `sum_v sum_i v_i^4 = 12` for EVERY rotation (checked
+numerically: 12.000000).  Since `||v||_inf^2 >= sum_i v_i^4`, a rotated 24-cell always has
+`max_v ||v||_inf >= 1/sqrt2`, **with equality only if every vertex has exactly two nonzero
+coordinates `+-1/sqrt2`** -- only if it IS the standard `D4` root system, which is the
+direction system, at `cos 1` from a direction.  So a 12-line axis is impossible and the ceiling
+is 11.  Projected gradient from 60 random starts finds 8 lines in 50 of them and **none at 9,
+10, 11 or 12** (residuals 1.19e-2, 3.10e-2, 7.93e-2, 1.03e-1).
+
+For `k = 5, 6, 7` random starts cannot rebuild even the shipped system, so the test is basin
+hopping started at it with one extra line: 17 lines in `R^5` plateaus at residual 1.4972e-4
+after 773 hops, 35 in `R^6` at 4.9755e-2, 60 in `R^7` at 1.2730e-2.  The deepest hole of each
+shipped axis against itself is `cos 0.677 / 0.649 / 0.611` against the 0.5 needed, so no line
+can be added -- the whole system would have to be rebuilt, and rebuilding does not find one.
+
+### What that leaves
+
+| dim | equator + owners | axis | layer | total | ceiling at `496 w` |
+|---|---|---|---|---|---|
+| 28 | `196560 + 496 x 16` | 16 | 384 | **204896** | **204896** |
+| 29 | `196560 + 496 x 26` | 32 | 480 | **209968** | **209968** |
+| 30 | `196560 + 496 x 48` | 68 | 576 | **221012** | **221012** |
+| 31 | `196560 + 4 x 10328` | 118 | 672 | 238662 | **239014** |
+
+`w = floor(2 tau(k)/3)` is the direction weight (section 138).  **Dimensions 28, 29 and 30 sit
+exactly on the ceiling of this template**, and only the class moves them.  Dimension 31 is
+short by 120 owner lines, worth 480, and nothing else.
+
+### And dimension 31's packing is a CSP at its entropy limit
+
+A Golay sign word translates the position inside each octad linearly, so every pairwise overlap
+depends only on `c_i XOR c_j` and the excess is `sum_{i<j} w_ij(c_i XOR c_j)`.  On the shipped
+42 permutations `sum_{i<j} min_d w_ij(d) = 0` over all 861 pairs -- **every pair can be made
+disjoint on its own**, and the octad anatomy shows 0 transverse 8x8 pairs, the only kind no
+sign word can fix.  So a perfect family is exactly the group-labelling CSP `c_i XOR c_j in
+Z_ij`, with `|Z_ij|/4096 = 0.4958` on average.  The first moment then says it is unsolvable for
+a fixed permutation set: `4096^41 x 0.4958^861 = 10^-114`, with expected best about **110
+violated pairs** against the shipped **123 violated pairs and 139 overlapping lines**.  That is
+why the exact sign sweep moves 0 of 42 classes and why WalkSAT on the CSP finds nothing: only
+new PERMUTATIONS can help.  Over permutations the first moment is the other way -- `10^125`
+perfect 42-families exist -- but the number of images disjoint from `k` fixed classes,
+`1e12 x 0.4155^k`, falls below 1 at `k = 31.5`, so every greedy and every LNS built on one dies
+at about 31 classes.  The hidden-clique regime, not geometry, is what the last 139 lines cost.
+
+## 145. The dimension-31 packing is a clique-DENSITY problem, and the density is a design choice: K(31) >= 238662 (2026-09-17)
+
+Section 143 closed dimension 31 by throughput -- 1e11 fresh monomial images, `10183 -> 10296`
+owner lines -- and recorded that the remaining 120 lines were "worth up to +480".  That framing
+was wrong in a way worth writing down, because the fix is a lever the construction controls.
+
+**A fresh class cannot compete with a co-evolved one.**  Remove the worst class of the shipped
+10296 family and score fresh random images EXACTLY.  The best overlap found is 16 after 1e4
+candidates, 12 after 1e5, 11 after 1.7e5; the distribution behind it is `P(overlap <= 20) = 0.010`,
+halving for each unit below.  The class that was there had overlap **9** and the family averages
+**5.7**.  So the 1e11 images of section 143 bought 29 lines because almost all of that work was
+re-drawing from a distribution whose useful tail sits at 1e-9: **more scanning cannot replace a
+class by anything as good as what a long co-evolution already put there.**
+
+**The right model is a clique in a graph whose density is ours to set.**  Two random images are
+disjoint with probability `p`; the family is a 42-clique on `n ~ 1e12` vertices; a search that
+can only sample reaches the greedy limit `n p^k = 1`, i.e.
+
+        k = 1 + 12 ln10 / ln(1/p) ,   so 42 needs   p >= 10^(-12/41) = 0.5097 .
+
+Conditioning on the number `s` of support octads two images share (4000 pairs each):
+
+| s | 0 | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|---|
+| P(disjoint) | 1.000 | 0.627 | 0.453 | 0.319 | 0.249 | 0.212 |
+
+which is monotone and `exp(-0.35 s)` to about fifteen per cent.  A random pair has `s = 2.55`,
+and `p` is the AVERAGE of `p(s)` over that distribution -- **0.4319**, not the `p(2.55) = 0.41`
+the fit gives, the gap being Jensen's inequality on a convex `p(s)`.  So `k = 34`:
+**42 was out of reach of ANY uniform scan, at any throughput.**  But
+
+        sum_{i<j} |S_i n S_j| = sum_O C(n_O, 2) ,   sum_O n_O = 42 x 44 = 1848
+
+over the 759 octads, so the flattest coverage -- 429 octads carrying two supports, 330 carrying
+three -- gives 1419, `s = 1.65`, `p ~ 0.53`, reach 44.  The shipped family sits at **1898** with
+34 octads unused and seven carrying six; its own `p` is **0.4984**, just under the threshold, and
+that is the whole reason it stopped.
+
+**The support is a TRIO object** (`packgpu/slotcat.py`, `research/collab2531/frame/`).  Every
+248-line type-B class has 18 octads carrying 8 lines and 26 carrying 4, and those 44 octads are
+44 of the 84 that meet two octads of one distinguished trio in four points each: the 18 heavy
+octads fall into **nine disjoint pairs**, five of which complete to a trio through one octad
+`Omega1` and two through each of the others, and the class lives entirely on that trio's
+transverse octads.  Inside an octad `packcore` indexes the 64 lines by an element of `F_2^6`
+whose popcount, rounded up to even, is the weight of the minus-set, so two lines of one octad are
+compatible exactly when `popcount(p ^ q)` is 3 or 4.  An 8-slot is one of the **240** cosets of
+the 30 extended Hamming codes and a 4-slot one of **15120** affine planes -- and the number of
+those still FREE at an octad is what a candidate must be screened on: at 21 per cent occupancy
+the free 8-slots are already down to an eighth, while the occupancy itself has barely moved.
+
+**The engine** (`packgpu/deep31.py`).  Score every candidate by
+`-sum_heavy log(free8[O]/240) - sum_light log(free4[O]/15120)` plus `lambda` times a convex
+penalty in the octad loads -- what it costs now, plus what it costs the classes still to come.
+That needs only where the 44 support octads GO, and each sampling-pool element is stored once as
+its permutation of the 759 octads, so a candidate's support is three gathers of 44: **800
+operations against the 52000** of the exact Walsh evaluation of all 4096 sign words.  A move
+screens half a million and pays the exact cost for the best thousand -- **9e6 candidates a
+second on a T4 against 37000**.  Two smaller repairs: `rand_perms(steps=20)`, the old sampler,
+has two-point marginal `chi^2/df = 32` (1.4 at 40 steps), so every candidate is now a product of
+three 60-step pool elements; and the sign words can be optimised JOINTLY on the exact tables
+`F_ij[d] = |C_i n (C_j + d)|`, `d = c_i ^ c_j` (`pairtab.py`, 861 tables in 140 ms), which the
+one-at-a-time move could not do.
+
+**Result.**  A balanced build ALONE -- 42 greedy insertions, 84 seconds -- gives 10287 lines at
+`sum_O C(n,2) = 1606`, against the 10183 of the published construction and the 10296 that a day
+of the old engine reached.  Its `p` is 0.55, over the threshold, and the search then runs for the
+first time in the regime where 42 is reachable:
+
+| | section 143 | here |
+|---|---|---|
+| owner lines | 10296 | **10328** |
+| excess over 42 x 248 | 120 | **88** |
+| `sum_O C(n_O,2)` (floor 1419) | 1898 | **1670** |
+| `p` | 0.4984 | **0.5467** |
+| greedy reach `1 + 12 ln10 / ln(1/p)` | 40.7 | **46.8** |
+| `K(31)` | 238534 | **238662** |
+
+**A correction to sections 141 and 143.**  Both quote the pairwise disjointness probability as
+**0.4155**.  That was measured with `rand_perms(steps=20)`, a 20-step walk on four generators of
+`M24` whose two-point marginal has `chi^2/df = 32`; with a uniform sampler (a product of three
+60-step pool elements) 5000 random pairs give **0.4319 +- 0.0030**.  Nothing in those sections
+turns on the third digit -- the random-graph clique number is `2 ln(1e12)/ln(1/p)`, 63
+at 0.4155 and **66** at 0.4319, and 42 is far below both -- but the sampler was the search's own
+source of candidates, so the bias was not confined to the statistic.  Section 144's `k = 31.5`,
+where `1e12 x p^k` falls below 1, is 32.9 at the corrected density.  Re-measured a third time on
+2026-09-17, from scratch and over 40 000 uniform images rather than 5 000 pairs: **0.4305 +-
+0.0025**, mean `s = 2.553`, and `p(s) = 1.0000 / 0.6194 / 0.4617 / 0.3183 / 0.2489 / 0.1990`.
+
+**How to apply.**  When a search stalls, ask whether the density of the graph it is searching is
+a free parameter.  Here every term of `p` was in the construction's own hands and none of it was
+in the move; three orders of magnitude of extra throughput bought 29 lines, and one convex
+penalty on the octad loads bought 32.  The joint sign optimisation returns the record families'
+own answer (120 for the old one, 88 for this one), and that was written up as "the sign side is
+exhausted".  The scope, added 2026-09-17: the sign problem has `4096^42` states and is not
+exhausted, but **1-opt and 2-opt are** -- the excess 88 survives every one of the `42 x 4096`
+single sign changes AND every one of the `861 x 4096^2` joint changes to a PAIR, both enumerated
+in full (139 s; the pair minimum is
+`min_d ( F_ij[d] + min_x ( A_i[x] + A_j[x^d] ) )` with `A` the partial sums).  So the remaining
+88 lines are a statement about the permutations.  The same run confirms the pipeline end to end:
+the shipped `owners31.npy` is exactly this family with the 88 repeats dropped, the same 10328
+lines, `sum_O C(n_O,2) = 1670` on both.
+
+## 146. The 248-line class, attacked six ways: it is MAXIMAL, locally rigid, and on a trio the ceiling is 373 (2026-09-17)
+
+Section 145 left the class record `alpha = 248` as the one lever shared by dimensions 28-31 --
+worth `+32/+52/+96/+168` per extra LINE -- and the first-moment contrast left it diagnosed as
+a DESIGN problem.  This section reports six independent attacks on it, all of which fall short,
+and two facts that are new.
+
+**The model, calibrated first.**  Section 145's octad/slot model makes the class problem finite:
+one slot per octad (a subset of `F_2^6` with all pairwise differences of popcount 3 or 4, so one
+of 45344 catalogued slots), with the images in `F_2^Q/<1_Q>` pairwise DISJOINT at every tetrad `Q`.
+All eight record classes are valid states of it with exactly 248 lines and **zero** tetrad-image
+collisions, and adding one line anywhere produces 7 collisions -- so the check can fail.
+
+**Fact 1: the record is MAXIMAL, not just locally optimal.**  Of the 48576 type-B lines, the
+number compatible with the whole 248-class is **0**, for every one of the eight known classes.
+Nothing can be added anywhere; any advance has to remove lines first.  And it does not move under
+plateau moves either: seeded with the record, 850 000 ruin-and-recreate steps on the trio's
+conflict graph returned 248 every time.
+
+**Fact 2: on a single trio the ceiling is 373, not 425.**  Every 248-line class is supported on
+the 84 octads transverse to one trio (section 145), and the conflict graph on those `84 x 64 =
+5376` lines is exactly **268-regular** with `lambda_max = 268` and `lambda_min = -20` -- the same
+`-20` as the full 98280-line graph.  Hoffman's ratio bound is therefore
+
+        alpha  <=  5376 x 20 / (268 + 20)  =  373.33 ,
+
+against 425.4545 on the full graph.  **Scope:** this bounds classes supported on ONE trio's
+transverse octads, which is where every known class lives; it is not a bound on all classes.
+
+**The six attacks, all below 248.**
+
+| attack | what it asks | best |
+|---|---|---|
+| spread | at most one line per octad -- 759 variables, 64 values, 280-regular constraint graph | ~150 |
+| all-8 | how many octads can carry a FULL 8-slot at once | **232** (29 octads) |
+| exact best response | the largest slot the tetrad images still allow at each octad, under ruin-and-recreate | 131 |
+| heavy core | force `H` octads to an 8-slot, fill the rest, sweep `H` | 146, best at `H = 18` |
+| equivariant | the exact best subgroup-INVARIANT class, by CP-SAT on the orbit quotient | 200 |
+| CP-SAT | maximum independent set on the 5376-line trio graph, 900 s, hinted with the record | 248, bound 428 |
+
+Two of these are informative rather than merely negative.  The **all-8** number says the record's
+MIX is not a corner: 29 octads can each carry a full 8-slot, where the record uses 18, and the
+record still wins 248 to 232 by trading ten heavy octads for twenty-six light ones.  And the
+**exact best response** -- take the largest slot the images allow, which is one masked comparison
+against 45344 uint64s -- drifts to singletons and reaches 131, worse than the 112 of the earlier
+greedy; the objective "total lines now" has a spread trap in it, and the good basin has to be
+entered by restricting the slot sizes, not by searching harder.
+
+**How to apply.**  Stop searching for a bigger class with general-purpose search.  It is maximal,
+it is rigid, six formulations fail, and the gap to the ceiling is now 248 against 373 on the trio
+rather than 248 against 425.  What is left is genuinely structural: either a class NOT supported
+on a single trio (none is known, and the spread and all-8 searches over all 759 octads reach only
+232), or the centre search -- heads off a single lattice sphere, where the per-triangle value
+ceiling is about 1700 against the classical 992 (measured 2026-09-03, `research/collab2531/`).
+
+**A pointer for whoever reads the brainstorm instead.**  `BRAINSTORM_2831.md` does not mention
+the coset (lean-head) route at `k = 4..7` and reads as if it were untried there.  It is not: a
+2026-09-03 measurement -- in `research/collab2531/`, and never carried into either file -- puts the
+cumulative coset union against the classical `496T` at `+56, +79, +75, +49, +4, -58,
+-137, -231` for `T = 1..8`, so coset classes lose from `T = 6` on, and dimensions 28/29/30/31 need
+`T = 8/13/24/42`.  At dimension 28 the lean route is 231 owner vectors behind, i.e. 462 points.
+
+## 147. The cap template, closed on three more sides: omega(G) <= tau(k)/3 is a THEOREM, and free heads are LP-dead (2026-09-17)
+
+`K(24+k) = 196560 + 2H + |axis| + 96k` with `H = 496 T` and `T = 8/13/24/42`.  Sections 144-146
+closed the axis, the layer, the head height and the class.  This one closes the two factors of
+`496 T` that were still being argued case by case, and kills a head type that had never been
+priced.
+
+**1.  The direction system: `omega(G) <= tau(k)/3`, for EVERY direction system.**
+
+A head at `|x|^2 = 8/3` carries a zero-sum TRIANGLE of directions (three unit vectors pairwise at
+`-1/2`), and the only cross constraint is `(2/3)<u,u'> + (4/3)<z,z'> <= 2`, so two owners at 60
+degrees need their triangles at all nine cross-cosines `<= 1/2`.  Let `G` be the graph on
+zero-sum triangles with that adjacency.  Giving every triangle a FULL 496-class needs a clique of
+`G`, and
+
+> **Theorem.**  `omega(G) <= tau(k)/3` for any set of unit vectors in `R^k`.
+>
+> *Proof.*  Two triangles sharing a direction `z` have cross-cosine `<z,z> = 1 > 1/2`, so they are
+> non-adjacent: a clique's triangles are pairwise DISJOINT.  Inside a triangle the cosines are
+> `-1/2 <= 1/2`, and across adjacent triangles all nine are `<= 1/2`.  So the union of a clique's
+> triangles is `3|K|` unit vectors pairwise at cosine `<= 1/2` -- a 60-degree code -- whence
+> `3|K| <= tau(k)`.  []
+
+That is one line, and it is what the four measured coincidences were: `D4 8 = 8`, `D5 13.33 vs
+12`, `E6 24 = 24`, `E7 42 = 42`.  It also predicts the 600-cell, which has **400** triangles and
+looked like the way out: `omega = 8` all the same.  Checked (`research/collab2531/frame/omega.py`):
+120 vertices, cosine spectrum `0, +-0.309, +-0.5, +-0.809, +-1`, 400 zero-sum triangles, `G`
+132-regular, **max clique 8**.
+
+So `H <= 496 tau(k)/3` for any INTEGRAL assignment, and dimensions 28, 30 and 31 sit exactly on
+it (`tau(k)/3 = 8, 24, 42`); dimension 29 loses the floor, `13` against `40/3`.  The only room
+left in the direction system is FRACTIONAL: the LP `max sum_t w_t` subject to
+`sum_{t in S} w_t <= 1` for every independent set `S` of `G` has value `chi_f(G)`, which is 10 for
+the 600-cell against `omega = 8`.  But attaining it needs `|H_t| = 496/alpha(G)` owners on EVERY
+triangle -- 12.4 for the 600-cell -- so **no triangle may carry a maximum class**, and the
+maximal classes are perfectly saturated.  A fractional gain is not a search, it is a new design.
+
+**2.  Free heads are LP-dead: 280 against the 331 that would be needed.**
+
+A head that deletes no equator point is worth **+3** where a class head is worth +2 -- three cap
+points and no deletion -- so it is 1.5 times as valuable, and nobody had priced a triangle made
+of them.  At `rho = 8/3` the deletion-free heads are exactly `2v/3` for `v` of norm 6, and two of
+them are compatible iff `<v,v'> <= 1`.  The inner-product spectrum of the norm-6 shell against a
+fixed norm-6 vector is `{0, +-1, +-2, +-3, +-4, +-6}` (measured; no `+-5`), so the Delsarte LP is
+FINITE and exact.  Calibrated -- it returns 196560.00 for the minimal shell at `cos <= 1/2` and
+850.91 for the class -- it gives
+
+        free heads per triangle  <=  280 ,     worth  3 x 280 = 840 ,
+
+against the classical `2 x 496 = 992`.  **Free heads would have to beat 331 to pay, and they
+cannot reach 280.**
+
+**3.  And they cannot be added to a class either.**  A free head `2v/3` is compatible with a
+classical head `sqrt(2/3)u` iff `<u,v> <= 1`, and a class contains `+-u`, so `v` must satisfy
+`|<u,v>| <= 1` for all 248 owner LINES.  Measured: **0 of 2 371 673** sampled norm-6 vectors do,
+and the distribution of `max_u |<u,v>|` over the owners is `{2: 54174, 3: 340993}` -- never even
+1.  The obstruction is not the trace bound: the 496 owners are NOT a tight frame, their
+`sum_u u u^T` having eigenvalues 72 to 96 against the tight 82.67, so `sum_u <u,v>^2` runs from
+432 to 576 and the budget 496 is genuinely available.  It is the discreteness that kills it.
+
+**How to apply.**  Of the five factors in `196560 + 2 x 496 x T + |axis| + 96k`, four are now
+closed by proof or by a calibrated LP -- the axis (144), the layer (144), the height (144), the
+triangle count `T` (this section) -- and the fifth, the class 496, is maximal and rigid (146)
+against an LP ceiling of 850.9.  Nothing inside this template is a search any more.  The two
+openings are a fractional direction design with `496/alpha(G)` owners per triangle, which is a
+design problem at least as hard as the class, and the centre search -- heads off a single lattice
+sphere.
+
+## 148. The exhaustion audit of dimensions 28-31: what is PROVED, what is EXHAUSTIVE, and what was only sampled (2026-09-17)
+
+Sections 144-147 closed the cap template factor by factor, and the word used each time was
+"ceiling".  This section is the audit of that word.  Every factor of
+
+        K(24 + k)  =  196560  +  2 w L  +  |axis|  +  96k
+
+was re-derived and asked what KIND of statement it is, and two of them came back different from
+what the package said: one ceiling was stronger than claimed and one was weaker.  Both are now
+checked by `verifications/improved/*/ceilings.py`, which run in seconds and print their own
+evidence class.
+
+**The direction weight is `floor(2 tau(k)/3)`, and that is a theorem -- but tau(k) is not.**
+Section 147 proved `omega(G) <= tau(k)/3` for triangles.  The weight is the right object, because
+a group of two directions is worth 1 where a triangle is worth 2, and the same argument covers
+both: two owner classes sharing a direction `z` would meet at `<u,u'> <= 1` everywhere (the cap
+constraint `(2/3)<u,u'> + (4/3)<z,z> <= 2`) and so would be ONE class, so the groups are
+DISJOINT; inside a group the directions are pairwise at `<= -1/2`, and `|sum z|^2 >= 0` caps a
+group at THREE; across groups they are at `<= 1/2`.  The union is therefore a 60-degree code, so
+`3t + 2q <= tau(k)`, and maximising `w = 2t + q` over the integers gives exactly
+
+        w  <=  floor(2 tau(k) / 3) ,        attained in all four dimensions: 16, 26, 48, 84.
+
+What the package did not say is that **three of those four are conditional on an unproved
+kissing number.**  `tau(4) = 24` is a theorem (Musin), so dimension 28 is at an unconditional
+ceiling.  `tau(5), tau(6), tau(7) = 40, 72, 126` are best KNOWN values; the best proved upper
+bounds are 44, 77 and 134 (`common/published.py`, `COHN_UPPER`), so the unconditional ceilings
+are 29, 51 and 89 -- three, three and five above what is realised, worth **1488, 1488 and 2480
+points**.  That is not a lever anyone here can pull, but it is the honest statement, and it is
+the first time a 5-, 6- or 7-dimensional kissing number has been priced in this project.
+
+**The axis is maximal -- exhaustively, where dimension 30's claim had been a sample.**  The
+`classes-30` reason read "that 68 is MAXIMAL for this configuration: 6e6 samples of the
+admissible region contain no point at 60 degrees from all of it".  A sample cannot say maximal.
+It does not have to, because the question is a polytope question:
+
+> A further axis point is a UNIT vector `a` of `R^k` with `<a,a_i> <= 1/2`, `<a,z> <= sqrt3/2`
+> and `|<a,w>| <= 1/sqrt2`.  Every right-hand side is POSITIVE, so `P = {a : Ca <= b}` is a
+> polytope with the origin in its interior; `|a|` is convex, so `max_P |a|` is attained at a
+> VERTEX of `P`.  Enumerate the vertices: if the largest is below 1, `P` contains no unit vector
+> at all.
+
+| dim | k | axis | half-spaces | vertices | largest vertex norm | margin |
+|---|---|---|---|---|---|---|
+| 28 | 4 | 16 | 48 | 48 | 0.7654 | 23.5 % |
+| 29 | 5 | 32 | 82 | 114 | 0.7929 | 20.7 % |
+| 30 | 6 | 68 | 152 | 202 | 0.8165 | 18.4 % |
+| 31 | 7 | 118 | 258 | 1120 | 0.8660 | 13.4 % |
+
+So **no unit vector can be added to any of the four axes**, over the continuum rather than over a
+sample, and the margins are far too wide for the floating-point enumeration to be near a
+decision (it is repeated with the right-hand sides moved by `1e-4` and cross-checked against a
+200000-direction scan that needs no enumeration, since a ray leaves `P` at
+`t(d) = 1/max_j (c_j.d/b_j)`).  **The control** is the part that matters: drop one axis point and
+the enumeration finds a unit vector again -- and finds exactly ONE, the point removed, at every
+one of the 16 + 32 + 68 + 118 removals.  So the axes are maximal and rigid under a one-for-one
+swap as well.  The SCOPE is unchanged: this is maximality for these axis codes against this frame
+and these directions, and a different 60-degree code of `R^k` is a different polytope.
+
+**Three numbers were wrong and are fixed.**  (a) `dim31-frame-layer/README.md` shipped the count
+table of the PREVIOUS family -- equator 175968 and caps 61776, which are `196560 - 2L` and `6L`
+for `L = 10296` -- under a total of 238662, so the table did not add up to its own bottom row; it
+is 175904 and 61968.  (b) The random-graph clique number was quoted as 63 and as 64 in different
+files; at `p = 0.4319` it is `2 ln(1e12)/ln(1/0.4319) = 66`, and the claim in 145 that it "is 63
+either way" was itself the stale value.  (c) "a random pair has `s = 2.55`, so `p = 0.4319`" is a
+non-sequitur: `p` is the AVERAGE of `p(s)`, and `p(2.55)` is 0.41 -- the gap is Jensen on a convex
+`p(s)`, and the exponential fit `exp(-0.35 s)` is good to fifteen per cent, not the three that was
+written.  The density was re-measured from scratch over 40000 uniform images: **0.4305 +- 0.0025**
+against the shipped 0.4319 +- 0.0030, mean `s = 2.553`, `p(s) = 1.0000 / 0.6194 / 0.4617 / 0.3183
+/ 0.2489 / 0.1990`.
+
+**Where dimensions 28-31 actually stand.**
+
+| factor | 28 | 29 | 30 | 31 | evidence |
+|---|---|---|---|---|---|
+| equator | forced | forced | forced | forced | `196560 - 2L` |
+| layer | 384 | 480 | 576 | 672 | proved: `96k`, every frame vector on every cross-polytope direction |
+| direction weight | 16 | 26 | 48 | 84 | theorem, `floor(2 tau(k)/3)`; unconditional only at k = 4 |
+| axis | 16 | 32 | 68 | 118 | **exhaustive**: no unit vector fits |
+| packing | full | full | full | 10328 / 10416 | search; only 31 is open, worth up to +352 |
+| class | 248 | 248 | 248 | 248 | **open**: maximal and rigid, LP 425.45, trio bound 373.33 |
+
+**How to apply.**  A ceiling claim has an evidence class, and the word "maximal" does not carry
+it.  Two of the four factors here were being argued case by case when one line covered all of
+them, and one was resting on six million samples when the question was a polytope with 202
+vertices.  Before writing "at its ceiling", say which: PROVED, PROVED GIVEN a published constant,
+EXHAUSTIVE over a finite set, or MEASURED -- and if it is the last, ask what finite object the
+question really is.

@@ -410,17 +410,18 @@ for _i, _d in enumerate(_dim):
         _gain[_i] == _layer[_i] - (_axis[_i] - _kept[_i]) - 4 * _short,
         '%+d vs %d - %d - 4*%d' % (_gain[_i], _layer[_i], _axis[_i] - _kept[_i], _short))
 
-# 96k is the frame layer's ceiling, and the caption scopes it to the three dimensions that use
-# it; dimension 31 keeps the height-sqrt3 layer, and is the one column that must NOT be 96k.
-_frame = [_i for _i, _d in enumerate(_dim) if _d != 31]
-chk('the frame layer is 96k in dimensions 28, 29 and 30',
+# 96k is the frame layer's ceiling.  Until 2026-09-17 dimension 31 was the one column that had
+# to be something else -- the height-sqrt3 layer, 8 points -- and this checked that it was.  The
+# packing reached 10328 lines and dimension 31 took the frame layer too, so the guard now asserts
+# the stronger thing: ALL FOUR columns are 96k, and the caption says one layer rather than three.
+_frame = list(range(len(_dim)))
+chk('the frame layer is 96k in every one of dimensions 28 to 31',
     all(_layer[_i] == 96 * _k[_i] for _i in _frame),
     str([(_dim[_i], _layer[_i], 96 * _k[_i]) for _i in _frame]))
-chk('and dimension 31 is not, which is why the caption says so',
-    _layer[_dim.index(31)] != 96 * _k[_dim.index(31)]
-    and 'the one place it does not pay' in FLAT)
-chk('the text states the same three layer sizes',
-    ('$%d$, $%d$, $%d$ in dimensions' % tuple(_layer[_i] for _i in _frame)) in FLAT,
+chk('and the caption says all four columns are that one layer',
+    'All four columns are one layer' in FLAT)
+chk('the text states the same four layer sizes',
+    ('$%d$, $%d$, $%d$, $%d$ in dimensions' % tuple(_layer[_i] for _i in _frame)) in FLAT,
     'derived %s' % [_layer[_i] for _i in _frame])
 
 print('== Proposition 4.8 (one-point distributions) ==')

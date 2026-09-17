@@ -74,8 +74,8 @@ directions still clear the axis. The norm of its head is free as well, and at
 height $\sqrt2$ a norm-$8$ head --- rather than the norm-$6$ one every earlier
 layer used --- lets a whole frame of $\Leech$ carry the whole cross-polytope of
 $\R^{k}$, which is $96k$ points in every dimension and deletes nothing. This
-gives $K(28)\ge204\,896$, $K(29)\ge209\,968$, $K(30)\ge220\,948$ and
-$K(31)\ge238\,354$, so that every dimension from $25$ to $31$ is improved.
+gives $K(28)\ge204\,896$, $K(29)\ge209\,968$, $K(30)\ge221\,012$ and
+$K(31)\ge238\,662$, so that every dimension from $25$ to $31$ is improved.
 
 The four remaining bounds are code-theoretic. Evaluated against the current code
 tables, the chain of Edel--Rains--Sloane gives $K(39)\ge 756\,116$,
@@ -186,7 +186,7 @@ construction & dimensions & \# & largest gain & factor & where\\
 \midrule
 $\Gsz$ cross-sections & $68$--$71$ & $4$ & $+2\,271\,920\,766$ & $1.09$--$7.85$ & \S\ref{ss:g72}\\
 layers over $\Leech$ & $25$--$27$, $38$ & $4$ & $+24\,960$ & $1.00$--$1.04$ & \S\ref{ss:d25}--\ref{ss:d38}\\
-second layers over $\Leech$ & $28$--$31$ & $4$ & $+508$ & $1.00$--$1.00$ & \S\ref{ss:d293031}\\
+second layers over $\Leech$ & $28$--$31$ & $4$ & $+572$ & $1.00$--$1.00$ & \S\ref{ss:d293031}\\
 layers over $\Pff$ & $49$--$61$ & $13$ & $+7\,481\,540$ & $1.00$--$1.14$ & \S\ref{ss:big}\\
 the \textsc{ers} chain & $62$, $63$ & $2$ & $+86\,001\,280$ & $1.36$--$2.64$ & \S\ref{ss:d6263}\\
 the \textsc{ers} chain at $96$ & $96$ & $1$ & $+6\,668\,627\,072$ & $2.07$--$2.07$ & \S\ref{ss:d96}\\
@@ -1281,8 +1281,8 @@ $\mathbb{Q}(\sqrt2,\sqrt3)$, and rejects a head moved, duplicated or displaced.
 height}\label{ss:d293031}
 
 \begin{theorem}\label{thm:293031}
-$K(28)\ge204\,896$, $K(29)\ge209\,968$, $K(30)\ge220\,948$ and
-$K(31)\ge238\,354$.
+$K(28)\ge204\,896$, $K(29)\ge209\,968$, $K(30)\ge221\,012$ and
+$K(31)\ge238\,662$.
 \end{theorem}
 
 These are joint work in progress with H.~Cohn and B.~Lindow, and the account is
@@ -1336,8 +1336,9 @@ $u_{0}$, Cauchy--Schwarz gives $\ip{x}{v}\le2$ with equality only at
 $v=u_{0}$. So $x=v/2$ with $|v|^{2}=6$, $x=f/\sqrt3$ with $|f|^{2}=6$,
 $x=v/2$ with $|v|^{2}=8$ and $x=u_{0}/2$ all satisfy the first line of
 \eqref{eq:heights}, at heights $h^{2}=\tfrac52$, $2$, $2$ and $3$; these are the
-four that occur. The norm of the head is a second free parameter, and the two
-entries at $h^{2}=2$ differ only in it. One consequence of \eqref{eq:layercap} is worth
+four that occur. The norm of the head is a second free parameter, the two
+entries at $h^{2}=2$ differ only in it, and it is the norm-$8$ one at $h=\sqrt2$
+that carries all four dimensions below. One consequence of \eqref{eq:layercap} is worth
 recording before the cases, because it does not depend on the height: if the
 direction sits exactly at the axis threshold, $\ip{w}{z}=1/h$, the second term
 is $2/\sqrt3$ whatever $h$ is, and the condition collapses to
@@ -1346,15 +1347,16 @@ is $2/\sqrt3$ whatever $h$ is, and the condition collapses to
 \end{equation}
 
 \begin{table}[ht]
-\caption{The four layers of Theorem~\ref{thm:293031}, in the normalisation
+\caption{The layer of Theorem~\ref{thm:293031}, in the normalisation
 $|P|^{2}=4$. The head $x$ is the $\R^{24}$ part of a layer point and $w$ its
-direction; $z$ is a cap direction. The first three columns are one layer, the
-norm-$8$ frame at height $\sqrt2$: the head runs over all $48$ vectors of a
-Leech frame and the direction over the whole cross-polytope of $\R^{k}$, which
-is $96k$ points. Dimension $31$ is the one place it does not pay, and keeps the
-height-$\sqrt3$ layer. The axis is the axis of \cite{ma-etal2025} that
-Table~\ref{tab:calib} reproduces, carried into the frame's coordinates. No layer
-point deletes an equator point, and the last three lines are the whole price.}
+direction; $z$ is a cap direction. All four columns are one layer, the norm-$8$
+frame at height $\sqrt2$: the head runs over all $48$ vectors of a Leech frame
+and the direction over the whole cross-polytope of $\R^{k}$, which is $96k$
+points. The axis is the maximum $60^{\circ}$ code of \cite{ma-etal2025} that
+Table~\ref{tab:calib} reproduces, carried into the frame's coordinates --- and in
+dimensions $30$ and $31$ rotated first, which is free and costs the layer
+nothing. No layer point deletes an equator point, and the last three lines are
+the whole price.}
 \label{tab:layers}
 \small\setlength{\tabcolsep}{5pt}
 \begin{tabular}{lcccc}
@@ -1362,20 +1364,20 @@ point deletes an equator point, and the last three lines are the whole price.}
 $k$ & $4$ & $5$ & $6$ & $7$\\
 dimension & $28$ & $29$ & $30$ & $31$\\
 \midrule
-height $h$ & $\sqrt2$ & $\sqrt2$ & $\sqrt2$ & $\sqrt3$\\
-$|x|^{2}=4-h^{2}$ & $2$ & $2$ & $2$ & $1$\\
-$|$head$|^{2}$ & $8$ & $8$ & $8$ & $4$\\
-head $x$ & $v/2$ & $v/2$ & $v/2$ & $u_{0}/2$\\
-directions $w$ & $\pm e_{1..4}$ & $\pm e_{1..5}$ & $\pm e_{1..6}$ & $56$ holes of $E_{7}$\\
-axis threshold $1/h$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt3$\\
-largest $\ip{w}{z}$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt3$\\
-directions per head & $8$ & $10$ & $12$ & $4$\\
-heads per direction & $48$ & $48$ & $48$ & $2$\\
-layer points & $384$ & $480$ & $576$ & $8$\\
+height $h$ & $\sqrt2$ & $\sqrt2$ & $\sqrt2$ & $\sqrt2$\\
+$|x|^{2}=4-h^{2}$ & $2$ & $2$ & $2$ & $2$\\
+$|$head$|^{2}$ & $8$ & $8$ & $8$ & $8$\\
+head $x$ & $v/2$ & $v/2$ & $v/2$ & $v/2$\\
+directions $w$ & $\pm e_{1..4}$ & $\pm e_{1..5}$ & $\pm e_{1..6}$ & $\pm e_{1..7}$\\
+axis threshold $1/h$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$\\
+largest $\ip{w}{z}$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$\\
+directions per head & $8$ & $10$ & $12$ & $14$\\
+heads per direction & $48$ & $48$ & $48$ & $48$\\
+layer points & $384$ & $480$ & $576$ & $672$\\
 \midrule
-axis points kept & $16$ of $24$ & $32$ of $40$ & $48$ of $72$ & $122$ of $126$\\
-owner lines & $8\cdot248$ & $14\cdot248$ & $5\,941$ & $42\cdot248$\\
-net gain & $+376$ & $+472$ & $+508$ & $+4$\\
+axis points kept & $16$ of $24$ & $32$ of $40$ & $68$ of $72$ & $118$ of $126$\\
+owner lines & $8\cdot248$ & $14\cdot248$ & $24\cdot248$ & $10\,328$\\
+net gain & $+376$ & $+472$ & $+572$ & $+312$\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1393,7 +1395,7 @@ so $24$ head lines is the most there is. The layer is
 \begin{equation}\label{eq:framelayer}
   48\times2k \;=\; 96k \quad\text{points},
 \end{equation}
-$384$, $480$, $576$ in dimensions $28$, $29$, $30$.
+$384$, $480$, $576$, $672$ in dimensions $28$, $29$, $30$, $31$.
 
 What is left is \eqref{eq:layercap}, and it is the whole content. If
 every owner is \emph{type $B$} for the frame --- $|\ip{u}{f_{i}}|=2$ for all
@@ -1418,9 +1420,9 @@ $2\,094$ at $|\ip{v}{u}|\ge3$.
 
 So the layer costs nothing geometrically and everything in the classes: every
 one of them must be type $B$ for one common frame --- $8$ classes in dimension
-$28$, $24$ in dimension $30$, and $14$ in dimension $29$, which carries twelve
-zero-sum triangles and two antipodal pairs because $\tau(5)=40$ is not a
-multiple of $3$. That is cheap for one reason. Choose the coordinates so that the frame is $8e_{1},\dots,8e_{24}$;
+$28$, $24$ in dimension $30$, $42$ in dimension $31$, and $14$ in dimension
+$29$, which carries twelve zero-sum triangles and two antipodal pairs because
+$\tau(5)=40$ is not a multiple of $3$. That is cheap for one reason. Choose the coordinates so that the frame is $8e_{1},\dots,8e_{24}$;
 then the type-$B$ lines are exactly the $759\times64=48\,576$ octad vectors
 $(\pm2^{8},0^{16})$ of the Golay code, and the whole monomial group
 $2^{12}{:}M_{24}$ permutes them. \emph{Every monomial image of a type-$B$ class
@@ -1431,68 +1433,91 @@ translating that position inside its octad, and the sign word of a class is
 therefore an exactly solvable coordinate. Coordinate descent over the sign
 words, with a fresh batch of permutations at each visit to a class, gives $14$
 pairwise disjoint $248$-line classes in dimension $29$ --- the full
-$14\cdot248$, with nothing given up --- and $5\,941$ of the $5\,952$ owner
-lines in dimension $30$. A subset of a class is again a class, so
-the repeats are simply dropped.
+$14\cdot248$, with nothing given up. Dimension $30$ is exact as well, at
+$24\cdot248=5\,952$, once the descent is replaced by freezing a core of twelve
+disjoint classes, pooling the monomial images disjoint from all of it and
+solving maximum clique on that pool. A subset of a class is again a class, so
+where a family is not exact the repeats are simply dropped.
 
-What the layer costs in axis points is second order. The condition is
-$|\ip{a}{w}|\le1/\sqrt2$, and what fails it is exactly an axis point lying along
-a frame direction: $16$ of $24$ survive in dimension $28$, $32$ of $40$ in
-dimension $29$, $48$ of $72$ in dimension $30$. Hence
+What the layer costs in axis points is second order, and a rotation recovers
+part of it. The condition is $|\ip{a}{w}|\le1/\sqrt2$, and what fails it is an
+axis point lying along a frame direction: of the axis of \cite{ma-etal2025},
+carried into the frame's coordinates, $16$ of $24$ survive in dimension $28$ and
+$32$ of $40$ in dimension $29$, where the eight that die sit at
+$|\ip{a}{w}|=1$ exactly. A maximum $60^{\circ}$ code is a rotated copy of the
+root system and the rotation is free, so in dimensions $30$ and $31$ the axis is
+turned before it is carried across --- by $45^{\circ}$, $45^{\circ}$ and
+$90^{\circ}$ in three coordinate planes, which keeps every coordinate an integer
+quadruple $(a+b\sqrt2+c\sqrt3+d\sqrt6)/24$ --- and $68$ of $72$ and $118$ of
+$126$ survive, against $48$ and $110$ unrotated. Hence
 \[
   192\,592+3\cdot3\,968+16+384=204\,896,
 \]
 \[
   189\,616+19\,840+32+480=209\,968,\quad
-  184\,678+35\,646+48+576=220\,948 ,
+  184\,656+35\,712+68+576=221\,012 ,
 \]
 the middle count having $12$ zero-sum triangles and $2$ antipodal pairs, since
 $\tau(5)=40$ is not a multiple of $3$ and the $40$ directions of a maximum
 $60^{\circ}$ code in $\R^{5}$ sum to zero, so $13$ disjoint triangles cannot be
 carved out of one.
 
-\emph{Dimension 31.} Here $96k=672$ would need $42$ type-$B$ classes holding at
-least $10\,254$ of the $10\,416$ lines that $42$ full classes give, and the
-descent reaches $10\,183$; the layer of \eqref{eq:framelayer} does not pay
-there, and dimension $31$ keeps a different one. Take $h=\sqrt3$ and
-$x=u_{0}/2$ for a minimal vector $u_{0}$ that is not an owner. The axis
-threshold is $1/\sqrt3$, and the covering radius of the $E_{7}$ root system on
-$S^{6}$ is exactly $\arccos(1/\sqrt3)$, attained at the $56$ minimal directions
-of $E_{7}^{*}$; take $w$ to be one of them. A deep hole meets the cap directions
-at $0$ or $\pm1/\sqrt3$, so \eqref{eq:capthr} applies, and
-$\ip{x}{u}=\ip{u_{0}}{u}/2\le1$ because $u_{0}$ is not an owner: the layer meets
-no cap, whatever the classes are. Alone among the four it does not touch the
-class problem, and the classes of \cite{ma-etal2025} are used unchanged. The
-worst value in \eqref{eq:layercap} is $\sqrt{2/3}+2/\sqrt3=1.9712\ldots$, with
-exact margin $\sqrt6+2\sqrt3<6$. The third line of \eqref{eq:heights} reads
-$\ip{w}{w'}\le\tfrac13$, which two antipodal pairs of deep holes at mutual
-cosine $\pm\tfrac13$ satisfy, and the fourth reads $\ip{x}{x'}\le-1$, which
-admits the two signs $\pm u_{0}/2$ and no more: $2\times4=8$ points. Each
-deep-hole line deletes the axis points within $\arccos(1/\sqrt3)$ of it, and two
-lines chosen as above delete four between them, so
+\emph{Dimension 31: the same layer, and a density.} Here $96k=672$, and the
+layer pays as soon as the $42$ type-$B$ classes hold at least $10\,252$ of the
+$10\,416$ lines that $42$ full classes give --- $98.4$ per cent. The descent
+above reaches $10\,183$, and for a while that looked like the end of it. It is
+not an existence question: two uniform monomial images of the $248$-line class
+are disjoint with probability $p=0.4319$, so a family of $42$ is a clique in a
+graph of that density on the $\sim\!10^{12}$ images, where the random-graph
+clique number $2\ln(10^{12})/\ln(1/p)$ is about $66$. It is a question about
+what a search that can only \emph{sample} can reach: it places the $k$-th class
+while $np^{k-1}\ge1$ and therefore stops at $k=1+12\ln10/\ln(1/p)$, which is
+$34$ at $p=0.4319$, so forty-two needs $p\ge10^{-12/41}=0.5097$. The density is
+a design choice. Writing $S_{i}$ for the set of $44$ octads supporting class
+$i$, the probability that two images are disjoint falls with $|S_{i}\cap S_{j}|$,
+and
 \[
-  175\,728+3\cdot20\,832+(126-4)+8=238\,354 .
+  \sum_{i<j}|S_{i}\cap S_{j}|=\sum_{O}\binom{n_{O}}{2},\qquad
+  \sum_{O}n_{O}=42\cdot44=1\,848
+\]
+over the $759$ octads, so a flat octad coverage is worth more than any amount of
+further sampling: the sum is $1\,898$ for the family the uniform scan produced
+and at least $1\,419$ for any $42$ supports at all. Screening candidates on the
+free slots their octads still have, rather than on what they cost now, gives a
+family at $1\,670$ with $p=0.5467$ and $10\,328$ of the $10\,416$ owner lines,
+and
+\[
+  175\,904+61\,968+118+672=238\,662 .
 \]
 
-How far each can go is known to different depths. In dimensions $28$, $29$ and
-$30$ the layer is at the ceiling \eqref{eq:framelayer} --- every vector of a
-frame on every direction of a cross-polytope, and $24$ head lines is the most
-$\R^{24}$ holds --- and the direction weight $\sum_{i}(|Z_{i}|-1)$ is at the
-$60^{\circ}$-code bound in $\R^{k}$. What is left is the class problem of
-\S\ref{ss:class}, at $+32$, $+52$ and $+96$ for every extra line of the
-$248$-line independent set, against the Delsarte ceiling of $425.45$ lines; and
-in dimension $30$ also the packing, where $11$ repeated lines are worth $+44$.
-In dimension $31$ the height-$\sqrt3$ layer is at a ceiling for that rotation of
-the axis: for two distinct deep-hole lines $w_{i}\mp w_{j}$ is a root of the cap
-$E_{7}$, so a full $126$-point axis hosts at most one line that deletes nothing,
-and a search over every subset of that axis which may be deleted returns $4$ as
-the optimum. A different rotation would change which axis points a hole blocks,
-and that search is open --- as is the $71$-line gap that would hand dimension
-$31$ the frame layer as well.
+How far this can go is known to different depths. In all four dimensions the
+layer is at the ceiling \eqref{eq:framelayer} --- every vector of a frame on
+every direction of a cross-polytope, and $24$ head lines is the most $\R^{24}$
+holds. So is the axis, and exhaustively: a further axis point would be a
+\emph{unit} vector of $\{a:\ip{a}{a_{i}}\le\tfrac12,\ \ip{a}{z}\le\sqrt3/2,\
+|\ip{a}{w}|\le1/\sqrt2\}$, whose right-hand sides are all positive, so that set
+is a polytope with the origin interior and the convex $|a|$ attains its maximum
+at a vertex; enumerating the vertices of all four gives $0.7654$, $0.7929$,
+$0.8165$ and $0.8660$, and none of the four axes admits another point at all.
+The direction weight $w=\sum_{i}(|Z_{i}|-1)$ is at $\lfloor2\tau(k)/3\rfloor$,
+which is a theorem: two classes sharing a direction would meet at
+$\ip{u}{u'}\le1$ throughout and so be one class, so the parts are disjoint; a
+part is pairwise at $\le-\tfrac12$ and $|\sum z|^{2}\ge0$ holds it to three;
+across parts the cosines are $\le\tfrac12$; hence $\bigcup Z_{i}$ is a
+$60^{\circ}$ code, $3t+2q\le\tau(k)$, and the maximum of $2t+q$ over that is
+$\lfloor2\tau(k)/3\rfloor$, attained here as $16$, $26$, $48$ and $84$. Only
+$\tau(4)=24$ is proved, so only dimension $28$ sits at an unconditional ceiling:
+against the proved $\tau(5)\le44$, $\tau(6)\le77$ and $\tau(7)\le134$ the
+unconditional weights are $29$, $51$ and $89$, worth $1\,488$, $1\,488$ and
+$2\,480$ points to anyone who improves a low-dimensional kissing number. What is
+otherwise left is the class problem of \S\ref{ss:class}, at $+32$, $+52$, $+96$
+and $+168$ for every extra line of the $248$-line independent set, against the
+Delsarte ceiling of $425.45$ lines; and in dimension $31$ also the packing,
+where $88$ repeated lines are worth up to $+352$.
 
 \begin{sloppypar}
 Three packages verify the four --- \texttt{dim28-norm8-frame-layer},
-\texttt{dim29-30-frame-layer} and \texttt{dim31-sqrt3-layer}. Each rebuilds the
+\texttt{dim29-30-frame-layer} and \texttt{dim31-frame-layer}. Each rebuilds the
 $196\,560$ minimal vectors from the Golay code and checks the inner-product
 signature of the $98\,280$ lines before trusting them, carries every direction
 and axis point as an exact algebraic number --- an integer quadruple
@@ -1959,8 +1984,8 @@ $26$ & $198\,550$ & $199\,632$ & layers over $\Leech$, one hexagon of leans (\S\
 $27$ & $200\,044$ & $201\,010$ & layers over $\Leech$, two coset triangles (\S\ref{ss:d2627})\\
 $28$ & $204\,520$ & $204\,896$ & second layer over $\Leech$, norm-$8$ head (\S\ref{ss:d293031})\\
 $29$ & $209\,496$ & $209\,968$ & second layer over $\Leech$, norm-$8$ frame (\S\ref{ss:d293031})\\
-$30$ & $220\,440$ & $220\,948$ & second layer over $\Leech$, norm-$8$ frame (\S\ref{ss:d293031})\\
-$31$ & $238\,350$ & $238\,354$ & second layer over $\Leech$, height $\sqrt3$ (\S\ref{ss:d293031})\\
+$30$ & $220\,440$ & $221\,012$ & second layer over $\Leech$, norm-$8$ frame (\S\ref{ss:d293031})\\
+$31$ & $238\,350$ & $238\,662$ & second layer over $\Leech$, norm-$8$ frame (\S\ref{ss:d293031})\\
 $38$ & $566\,652$ & $591\,612$ & layers over $\Leech$, $k=14$\\
 $39$ & $755\,988$ & $756\,116$ & constant-weight codes\\
 $49$ & $52\,416\,002$ & $52\,430\,140$ & layers over $\Pff$\\

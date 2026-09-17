@@ -18,7 +18,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim26-27-iota-triangles`](improved/dim26-27-iota-triangles/) | 26, 27 | apparently new — joint work in progress with H. Cohn and B. Lindow; the coset triangle on every triangle of directions, the side chosen per head |
 | [`dim28-norm8-frame-layer`](improved/dim28-norm8-frame-layer/) | 28 | apparently new — joint work in progress with H. Cohn and B. Lindow; the head of a deletion-free layer may have norm 8 rather than 6, and at height √2 that is what clears the cap threshold: the 24 vectors 8eᵢ form a Leech frame, each carries all eight directions ±e_k of ℝ⁴, and the axis drops to the 16 half-vectors of the dual 24-cell |
 | [`dim29-30-frame-layer`](improved/dim29-30-frame-layer/) | 29, 30 | apparently new — joint work in progress with H. Cohn and B. Lindow; the dimension-28 norm-8 frame layer at height √2 carried to ℝ²⁴⁺ᵏ, where it is 48 frame vectors on the whole cross-polytope of ℝᵏ — 96k points, 480 and 576 — deleting no equator point. It needs every owner to be type B for the frame, and in the coordinates where the frame is 8eᵢ the type-B lines are exactly the 48 576 octad vectors of the Golay code, which the whole monomial group 2¹²:M₂₄ permutes, so every monomial image of a class is again a clean class |
-| [`dim31-sqrt3-layer`](improved/dim31-sqrt3-layer/) | 31 | apparently new — joint work in progress with H. Cohn and B. Lindow; a deletion-free layer at height √3 on two deep-hole lines of the cap E7, independent of the classes; +4 is optimal for Cohn's axis rotation |
+| [`dim31-frame-layer`](improved/dim31-frame-layer/) | 31 | apparently new — joint work in progress with H. Cohn and B. Lindow; the norm-8 frame layer at height √2, 672 points deleting no equator point, carried by 42 pairwise disjoint type-B classes holding 10 328 of 10 416 owner lines, with an axis of 118 of 126.  Supersedes the height-√3 layer |
 | [`dim38-leech-large-codimension`](improved/dim38-leech-large-codimension/) | 38 | apparently new |
 | [`dim39-ers-constant-weight`](improved/dim39-ers-constant-weight/) | 39 | apparently new — but check Sun–Wang's latest revision |
 | [`dim49-63-p48-caps`](improved/dim49-63-p48-caps/) | 49–63 | apparently new — 62 and 63 are reached here too, but claimed from the chain below |
@@ -50,7 +50,7 @@ about the table, not a result of this project, and it is not counted as one.
 
 ## [`superseded/`](superseded/) — was a record, is not any more
 
-Six packages. None is wrong; all were simply beaten, one by other people and five by this
+Seven packages. None is wrong; all were simply beaten, one by other people and six by this
 project's own later work.
 
 | package | dims | beaten by |
@@ -60,7 +60,8 @@ project's own later work.
 | [`dim25-cap-level`](superseded/dim25-cap-level/) | 25 | this project's own lens-head configuration, by +511 |
 | [`dim27-triple-partition`](superseded/dim27-triple-partition/) | 27 | this project's own two-triangle configuration, by +470 |
 | [`dim29-sqrt52-layer`](superseded/dim29-sqrt52-layer/) | 29 | this project's own norm-8 frame layer, by +374 |
-| [`dim30-sqrt2-layer`](superseded/dim30-sqrt2-layer/) | 30 | this project's own norm-8 frame layer, by +454 |
+| [`dim30-sqrt2-layer`](superseded/dim30-sqrt2-layer/) | 30 | this project's own norm-8 frame layer, by +518 |
+| [`dim31-sqrt3-layer`](superseded/dim31-sqrt3-layer/) | 31 | this project's own norm-8 frame layer, by +308 |
 
 ## [`closed/`](closed/) — mechanisms at their exact ceiling
 
@@ -99,5 +100,5 @@ standing is Edel–Rains–Sloane's rather than this project's.
 6. [`closed/dim17-layered-family/`](closed/dim17-layered-family/) — the best worked example of
    the repository's most useful habit: when a search will not converge, stop searching and ask
    what structure the object has. The answer was "it is a group".
-7. [`../KNOWLEDGE.md`](../KNOWLEDGE.md) — 139 sections of working notes, most of
+7. [`../KNOWLEDGE.md`](../KNOWLEDGE.md) — 147 sections of working notes, most of
    them about things that did not work.

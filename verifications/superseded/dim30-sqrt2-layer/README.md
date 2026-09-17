@@ -5,7 +5,7 @@
 
 **Superseded by this project's own
 [`../../improved/dim29-30-frame-layer/`](../../improved/dim29-30-frame-layer/), which gives
-220 948.** The same height √2, but the head is taken from a lattice vector of squared length 8
+221 012.** The same height √2, but the head is taken from a lattice vector of squared length 8
 instead of 6, which raises the cap threshold from `⟨f,u⟩ ≤ 2.12` to `⟨v,u⟩ ≤ 2` *with equality*
 and lets a whole Leech frame carry the whole cross-polytope of ℝ⁶: 48 × 12 = 576 points against
 54. Better by +454. Everything below is still true; the E₆* deep-hole geometry is real, and the

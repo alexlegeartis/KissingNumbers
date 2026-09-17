@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""verify.py --- exact verification of K(29) >= 209968 and K(30) >= 221012
+"""verify.py --- exact verification of K(31) >= 238662
 
-    python verify.py 29        python verify.py 30        (add --fast to skip the two sweeps)
+    python verify.py 31        (add --fast to skip the two sweeps)
+
+This is the same verifier as ../dim29-30-frame-layer/verify.py, which carries k = 5 and k = 6;
+only the dimension it will accept differs, so that each package stands alone.  ceilings.py is
+the companion report on which factors of the configuration are at a ceiling.
 
 Reads only `data/` and `lib/golay.py`.  The Leech shell is rebuilt from the Golay code and its
 inner-product signature is checked before anything is trusted, so nothing depends on the code
@@ -49,9 +53,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, 'lib'))
 from golay import golay24
 
-DIM = int(sys.argv[1]) if len(sys.argv) > 1 else 29
-if DIM not in (29, 30):
-    sys.exit("usage: python verify.py 29|30 [--fast]")
+DIM = int(sys.argv[1]) if len(sys.argv) > 1 else 31
+if DIM != 31:
+    sys.exit("usage: python verify.py 31 [--fast]")
 FULL = '--fast' not in sys.argv
 
 FAILS = []

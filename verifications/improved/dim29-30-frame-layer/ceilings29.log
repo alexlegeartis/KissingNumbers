@@ -1,0 +1,27 @@
+== dimension 29: k = 5, 14 classes, 32 axis points, 40 cap directions of 40 ==
+
+[1] the direction weight
+  ok    the direction groups are pairwise disjoint (40 directions)
+  ok    no group has more than three directions -- and cannot, since they are pairwise at cosine <= -1/2
+  ok    inside a group the directions are at cosine <= -1/2
+  ok    across groups they are at cosine <= 1/2, so the union of the groups is a 60-degree code in R^5
+  ok    weight w = 2t + q = 26  (t = 12 triples, q = 2 pairs)
+  ok    the groups use 40 directions, within tau(5) = 40
+  ok    w = 26 IS the ceiling floor(2 tau(5)/3) = 26 for the best KNOWN tau(5) = 40
+   CONDITIONAL: tau(5) is only known to lie in [40, 44], so the UNCONDITIONAL ceiling is floor(2 x 44/3) = 29, which is 3 above the 26 realised -- worth 1488 points at 248 lines a class.  It needs a better 5-dimensional kissing number.
+
+[2] the axis, exhaustively
+  ok    every constraint has a positive right-hand side, so the origin is interior and the polytope is the right object
+   114 vertices;  max |a| over the admissible polytope = 0.792893219
+  ok    no unit vector fits: the axis is MAXIMAL (margin 20.7 per cent)
+  ok    and still maximal with the right-hand sides moved by +-1e-6 and +1e-4 (0.792892, 0.792894, 0.792973), so this is not a floating-point decision
+  ok    an independent 200000-direction scan of the same maximum, needing no enumeration, reaches 0.783337778 and never exceeds it
+  ok    CONTROL: removing any one axis point makes a unit vector fit again, so the test can fail (recovered 1..1)
+  ok    and the recovered vector is ALWAYS the point removed -- 0 others over all 32 removals, so no one-for-one swap opens the axis either
+
+[3] what is NOT at a ceiling
+   the CLASS.  The template class has 248 lines (all 14 of them at 248); one more line in the template is worth +52 in dimension 29.  248 is maximal over all 48576 type-B lines and rigid, but the Delsarte LP on the Leech line scheme allows 425.45 lines, and on the 84 octads transverse to one trio -- where every KNOWN class lives, though no proof says every class must -- the Hoffman ratio bound allows 373.33.  So this is open.
+   the PACKING is closed: 14 x 248 = 3472 owner lines, every class full and disjoint.
+   tau(5) itself, which is not proved (see [1]).
+
+*** ALL CHECKS PASS ***

@@ -62,7 +62,8 @@ sextet union to an octad, so every `(f_i − f_j)/2` is minimal), and in that fr
 | `data/classes.npy` | the 8 owner classes, 8 × 248 × 24 integer vectors at norm 32 |
 | `data/heads.npy` | the 24 frame heads, norm 64 |
 | `lib/golay.py` | the extended binary Golay code |
-| `verify28.log` | a recorded run |
+| `ceilings.py` | the companion report: which factors are at a ceiling, and on what evidence |
+| `verify28.log`, `ceilings.log` | recorded runs |
 
 The construction scripts live in `research/collab2531/dim28/`; the working note is FINDINGS
 section 58.
@@ -86,6 +87,35 @@ The pair type `equator x axis` (identically 0) was also missing from the case li
 an independent rebuild of all 204 896 points — from this package's own data and Golay code, every
 pair checked except equator-against-equator, which the shell signature settles — gives a maximum
 inner product of exactly 2 with no violation.
+
+## What is at a ceiling, and on what evidence
+
+`python ceilings.py` (seconds, log in `ceilings.log`) prints this and checks it. **Dimension 28
+is the only member of the family 28–31 where every factor but the class is closed
+unconditionally**, and the reason is that τ(4) = 24 is a theorem where τ(5), τ(6) and τ(7) are
+only best-known values.
+
+| factor | value | status |
+|---|---|---|
+| layer | 384 = 96k | **proved**: 48 pairwise non-positive vectors of ℝ²⁴ are a frame, and one head carries a whole cross-polytope |
+| direction weight | 16 = ⌊2 τ(4)/3⌋ | **proved, unconditionally** — τ(4) = 24 is settled |
+| axis | 16 | **exhaustive**: no unit vector at all can be added |
+| packing | 8 × 248 | closed: eight disjoint full classes |
+| class | 248 lines | **open** — the only lever, at +32 a line |
+
+**The direction weight.** Two owner classes sharing a direction would meet at `⟨u,u'⟩ ≤ 1`
+everywhere and so would be one class, so the direction groups are disjoint; inside a group the
+directions are pairwise at `≤ −1/2`, and `|Σz|² ≥ 0` caps a group at three; across groups they
+are at `≤ 1/2`. So the groups' union is a 60° code in ℝᵏ, `3t + 2q ≤ τ(k)`, and maximising the
+weight `w = 2t + q` over that gives `w ≤ ⌊2τ(k)/3⌋` = 16 here, attained by the eight zero-sum
+triangles of the 24-cell.
+
+**The axis.** A 17th axis point is a *unit* `a ∈ ℝ⁴` with `⟨a,aᵢ⟩ ≤ 1/2`, `⟨a,z⟩ ≤ √3/2` and
+`|⟨a,w⟩| ≤ 1/√2`. Every right-hand side is positive, so those 48 half-spaces cut out a polytope
+`P` with the origin in its interior, and `|a|` is convex, so `max_P |a|` is attained at a
+**vertex**. All 48 vertices were enumerated and the largest has `|a| = 0.765`: `P` holds no unit
+vector at all. The control is that dropping any one of the 16 recovers a unit vector — always
+exactly the one removed, so no one-for-one swap opens the axis either.
 
 ## History of the bound in dimension 28
 

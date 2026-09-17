@@ -38,3 +38,6 @@ paper/*.fls
 *.oldcert
 *.bak
 *.orig
+
+# the --changed cache of run_all.py: local timing and digests, not part of the deliverable
+.run_all_cache.json

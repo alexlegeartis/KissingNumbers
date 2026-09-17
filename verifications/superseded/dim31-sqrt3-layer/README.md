@@ -1,5 +1,11 @@
 # Dimension 31: a deletion-free layer at height √3 in the deep holes of E7
 
+> **SUPERSEDED on 2026-09-17** by `../../improved/dim31-frame-layer/`, which reaches
+> **τ(31) ≥ 238 662** with the norm-8 frame layer at height √2. Nothing below is wrong; the
+> height-√3 layer is simply the smaller one (+4 over the published 238 350, against +312), and
+> it was the record while
+> the frame layer's 42 disjoint type-B classes could not be packed densely enough.
+
 **τ(31) ≥ 238 354**, against the published 238 350 (Cohn's table; Ma et al. 2025,
 arXiv:2511.13391, the PackingStar configurations). An improvement of **+4**, and — unlike
 every other layer of the 25–31 programme — one that does not touch the class problem at all:

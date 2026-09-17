@@ -1,0 +1,25 @@
+  ok    the 24-cell has 24 directions
+  ok    the axis is the 16 half-vectors of the dual 24-cell
+== dimension 28: k = 4, 8 classes of 248, 16 axis points, 24 cap directions ==
+
+[1] the direction weight
+  ok    the 24 directions partition into 8 zero-sum triangles
+  ok    inside a group the directions are at cosine <= -1/2
+  ok    across groups they are at cosine <= 1/2, so the union of the groups is a 60-degree code
+  ok    weight w = 2t + q = 16 IS the ceiling floor(2 tau(4)/3) = 16
+  ok    tau(4) = 24 is PROVED, so dimension 28's direction weight is at an UNCONDITIONAL ceiling -- unlike dimensions 29, 30 and 31, whose tau(k) is only the best known
+
+[2] the axis, exhaustively
+  ok    every constraint has a positive right-hand side, so the origin is interior and the polytope is the right object
+   48 vertices;  max |a| over the admissible polytope = 0.765366865
+  ok    no unit vector fits: the axis is MAXIMAL (margin 23.5 per cent)
+  ok    and still maximal with the right-hand sides moved by +-1e-6 and +1e-4 (0.765366, 0.765368, 0.765443), so this is not a floating-point decision
+  ok    an independent 200000-direction scan of the same maximum, needing no enumeration, reaches 0.762680372 and never exceeds it
+  ok    CONTROL: removing any one axis point makes a unit vector fit again, so the test can fail (recovered 1..1)
+  ok    and the recovered vector is ALWAYS the point removed -- 0 others over all 16 removals, so no one-for-one swap opens the axis either
+
+[3] what is NOT at a ceiling
+   the CLASS, and nothing else.  Every class here has 248 lines; one more line in the template is worth +32 in dimension 28.  248 is maximal over all 48576 type-B lines and rigid under 850000 plateau moves, but the Delsarte LP on the Leech line scheme allows 425.45 lines, and on the 84 octads transverse to one trio -- where every KNOWN class lives, though no proof says every class must -- the Hoffman ratio bound allows 373.33.  So it is open.
+   The packing is closed (8 disjoint full classes), the layer is 96k = 384 by the frame argument, the axis is maximal above, and tau(4) = 24 is proved.
+
+*** ALL CHECKS PASS ***

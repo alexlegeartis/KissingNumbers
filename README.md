@@ -35,8 +35,8 @@ them exceeds a known record in a higher dimension. It takes a few seconds.
 | 63  | 52 418 564           | **138 419 844**   | **2.64** | the tables stop at 48 and resume at 64                           |
 | 62  | 52 417 932           | **71 310 732**    | 1.36     | the same                                                         |
 | 38  | 566 652              | **591 612**       | 1.04     | the Leech cap construction had never been run at codimension 14  |
-| 31  | 238 350              | **238 354**       | 1.00     | the covering radius of E7 is exactly the height-√3 axis threshold, so a deep-hole layer over a minimal non-owner is free of the classes; +4, proved optimal for Cohn's axis rotation |
-| 30  | 220 440              | **220 948**       | 1.00     | the dimension-28 norm-8 frame layer is not about dimension 28: at height √2 a whole Leech frame of heads carries the whole cross-polytope of ℝᵏ, 96k points, deleting nothing |
+| 31  | 238 350              | **238 662**       | 1.00     | the norm-8 frame layer at height √2, 672 points deleting no equator point, carried by 42 pairwise disjoint type-B classes holding 10 328 of 10 416 owner lines, with an axis of 118 of 126 |
+| 30  | 220 440              | **221 012**       | 1.00     | the dimension-28 norm-8 frame layer is not about dimension 28: at height √2 a whole Leech frame of heads carries the whole cross-polytope of ℝᵏ, 96k points, deleting nothing |
 | 29  | 209 496              | **209 968**       | 1.00     | the same frame layer one dimension up, on the whole cross-polytope of ℝ⁵ — 480 points, deleting nothing |
 | 28  | 204 520              | **204 896**       | 1.00     | the head of a deletion-free layer need not have norm 6: at height √2 a norm-8 head clears the cap threshold, and 48 of them are a whole Leech frame |
 | 27  | 200 044              | **201 010**       | 1.00     | the coset triangle of three norm-6 vectors, on all four triangles of directions with the side chosen per head |
@@ -72,7 +72,7 @@ verifications/
   superseded/             claims this project made and then lost, and why
   closed/                 mechanisms pushed to their exact ceiling: what NOT to retry
 
-KNOWLEDGE.md              the full working record, 139 sections, including everything
+KNOWLEDGE.md              the full working record, 147 sections, including everything
                           that failed -- with a preamble on how to read it, which
                           sections supersede which, and where each script now lives
 ```
@@ -92,7 +92,7 @@ cannot reach 96 — the claim there is Edel–Rains–Sloane’s.
 | `[dim26-27-iota-triangles](verifications/improved/dim26-27-iota-triangles/)`                 | 26, 27 | the axis forces the heads onto squared length 8/3 and onto fixed triangles of directions, so the layer is two or four head sets at cosine ≤ 1/4 cross-constrained at cosine 1/2; the coset triangle of three norm-6 vectors summing to zero is one such set, and the involution ι(u) = −v − u on each class puts S and ι(S) on two triangles at once |
 | `[dim28-norm8-frame-layer](verifications/improved/dim28-norm8-frame-layer/)`                 | 28     | the head of a deletion-free layer need not have norm 6: at height √2 a NORM-8 head clears the cap threshold where a norm-6 head does not, and the 24 vectors 8eᵢ are a Leech frame, each carrying all eight directions ±e_k of ℝ⁴ — 384 points for 8 axis points |
 | `[dim29-30-frame-layer](verifications/improved/dim29-30-frame-layer/)`                           | 29, 30 | the dimension-28 norm-8 frame layer is not about dimension 28: at height `√2` with `x = v/2`, `|v|² = 8`, the layer deletes nothing, one head carries the whole cross-polytope of `ℝᵏ` and all 48 vectors of a Leech frame carry every direction, so it is `96k` points in every dimension. The price is that all `⌊τ(k)/3⌋` owner classes must be type B for one frame — and in the coordinates where the frame is `8eᵢ` the type-B lines are the octad vectors of the Golay code, which the monomial group `2¹²:M₂₄` permutes, so the filter disappears and what is left is a packing solved by coordinate descent on the Golay sign words |
-| `[dim31-sqrt3-layer](verifications/improved/dim31-sqrt3-layer/)`                             | 31     | at height √3 the axis threshold is `1/√3`, exactly the covering radius of the E7 root system, so a deep hole `w` of the cap E7 carries the points `(±u₀/2, √3 w)` for any minimal non-owner `u₀` with no interaction with the classes at all; two hole lines cost four axis points and give eight, and +4 is proved optimal **for Cohn's axis rotation** -- a different rotation of the axis E7 would change the blocking costs, and that search is open |
+| `[dim31-frame-layer](verifications/improved/dim31-frame-layer/)`                             | 31     | the norm-8 frame layer at height √2 carried to k = 7: all 48 vectors of a Leech frame on the whole cross-polytope of ℝ⁷, 672 points, deleting no equator point.  It needs 42 pairwise disjoint type-B classes holding at least 10 252 of the 10 416 lines 42 full classes would give; the published attempt reached 10 183 and this one carries 10 328, found by screening candidates on the free slots their octads still have rather than by scanning uniformly — a sampled clique search needs pair density p ≥ 0.5097 to reach 42 at all, and flattening the octad coverage takes p from 0.4984 to 0.5467.  The axis is E7 rotated by 45°, 45°, 90° in the coordinate planes (0,3), (2,4), (5,6), keeping 118 of 126 against the 110 the published axis kept |
 | `[dim38-leech-large-codimension](verifications/improved/dim38-leech-large-codimension/)`     | 38     | the same construction at codimension 14, where the binding constraint flips and the whole Leech shell partitions into 644 classes                                                            |
 | `[dim39-ers-constant-weight](verifications/improved/dim39-ers-constant-weight/)`             | 39     | Edel–Rains–Sloane with the 2026 constant-weight codes, at n₀ = n rather than n₀ = 32                                                                                                         |
 | `[dim49-63-p48-caps](verifications/improved/dim49-63-p48-caps/)`                             | 49–61  | the cap construction over P₄₈, with explicit classes of 7069 lines where Caro–Wei guarantees 712                                                                                             |
@@ -347,8 +347,10 @@ fixes the class.
 ## Reproducing everything
 
 ```bash
-python run_all.py          # 63 scripts, about 40 minutes measured, one verdict
-python run_all.py --full   # 78 scripts, budget about 9 hours: adds the all-pairs sweep, the
+python run_all.py          # 67 scripts, about 40 minutes measured, one verdict
+python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
+python run_all.py --only dim31 # just the jobs whose label or command matches
+python run_all.py --full   # 82 scripts, budget about 9 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 ```
@@ -367,8 +369,11 @@ Or individually, each from its own directory:
 | `…/superseded/dim27-triple-partition/scripts/verify_configuration.py`         | τ(27) ≥ 200 540, the superseded claim, from its coordinate file | 18 s   |
 | `…/dim28-norm8-frame-layer/verify28.py`                                      | τ(28) ≥ 204 896, the norm-8 frame layer                       | 2 s    |
 | `…/dim29-30-frame-layer/verify.py 29`                                        | τ(29) ≥ 209 968, the same layer at k = 5                      | 2 min  |
-| `…/dim29-30-frame-layer/verify.py 30`                                        | τ(30) ≥ 220 948, and at k = 6                                 | 2 min  |
-| `…/dim31-sqrt3-layer/verify31.py`                                            | τ(31) ≥ 238 354, the height-√3 layer                          | 4 min  |
+| `…/dim29-30-frame-layer/verify.py 30`                                        | τ(30) ≥ 221 012, and at k = 6                                 | 2 min  |
+| `…/dim31-frame-layer/verify.py 31`                                           | τ(31) ≥ 238 662, the norm-8 frame layer at k = 7              | 7 min  |
+| `…/dim28-norm8-frame-layer/ceilings.py`                                      | dim 28: the direction weight and the axis are at their ceilings | 3 s  |
+| `…/dim29-30-frame-layer/ceilings.py 29` and ` 30`                            | the same report at k = 5 and k = 6                            | 5 s    |
+| `…/dim31-frame-layer/ceilings.py 31`                                         | the same report at k = 7, 1120 vertices enumerated            | 20 s   |
 | `…/dim38-leech-large-codimension/scripts/verify.py`                           | τ(38) ≥ 591 612                                                | 10 s   |
 | `…/dim39-ers-constant-weight/scripts/verify.py`                               | τ(39) ≥ 756 116 (and τ(38) ≥ 570 236)                          | 10 s   |
 | `…/dim46-47-p48-cross-sections/derive.py`                                     | recovers 12 309 600 and 23 766 960, claiming neither           | 6 s    |
@@ -505,7 +510,7 @@ The constructions, the verification code and the write-ups in this repository we
 by the author working with **Claude Code** (Anthropic). The repository is deliberately
 structured so that someone else can pick it up the same way: every package states its idea in
 prose before its code, every negative result says what was tried and why it failed, and
-`KNOWLEDGE.md` is the full working record — 139 sections, most of them about things that
+`KNOWLEDGE.md` is the full working record — 147 sections, most of them about things that
 did not work.
 
 Alexey Kravatskiy, MIRIAI (Moscow Independent Research Institute of Artificial Intelligence),

@@ -1,0 +1,27 @@
+== dimension 31: k = 7, 42 classes, 118 axis points, 126 cap directions of 126 ==
+
+[1] the direction weight
+  ok    the direction groups are pairwise disjoint (126 directions)
+  ok    no group has more than three directions -- and cannot, since they are pairwise at cosine <= -1/2
+  ok    inside a group the directions are at cosine <= -1/2
+  ok    across groups they are at cosine <= 1/2, so the union of the groups is a 60-degree code in R^7
+  ok    weight w = 2t + q = 84  (t = 42 triples, q = 0 pairs)
+  ok    the groups use 126 directions, within tau(7) = 126
+  ok    w = 84 IS the ceiling floor(2 tau(7)/3) = 84 for the best KNOWN tau(7) = 126
+   CONDITIONAL: tau(7) is only known to lie in [126, 134], so the UNCONDITIONAL ceiling is floor(2 x 134/3) = 89, which is 5 above the 84 realised -- worth 2480 points at 248 lines a class.  It needs a better 7-dimensional kissing number.
+
+[2] the axis, exhaustively
+  ok    every constraint has a positive right-hand side, so the origin is interior and the polytope is the right object
+   1120 vertices;  max |a| over the admissible polytope = 0.866025404
+  ok    no unit vector fits: the axis is MAXIMAL (margin 13.4 per cent)
+  ok    and still maximal with the right-hand sides moved by +-1e-6 and +1e-4 (0.866025, 0.866026, 0.866112), so this is not a floating-point decision
+  ok    an independent 200000-direction scan of the same maximum, needing no enumeration, reaches 0.804744982 and never exceeds it
+  ok    CONTROL: removing any one axis point makes a unit vector fit again, so the test can fail (recovered 1..1)
+  ok    and the recovered vector is ALWAYS the point removed -- 0 others over all 118 removals, so no one-for-one swap opens the axis either
+
+[3] what is NOT at a ceiling
+   the CLASS.  The template class has 248 lines (the 42 here run 240..248, the repeated lines having been dropped -- a subset of a class is again a class); one more line in the template is worth +168 in dimension 31.  248 is maximal over all 48576 type-B lines and rigid, but the Delsarte LP on the Leech line scheme allows 425.45 lines, and on the 84 octads transverse to one trio -- where every KNOWN class lives, though no proof says every class must -- the Hoffman ratio bound allows 373.33.  So this is open.
+   the PACKING.  10328 owner lines against the 10416 that 42 full classes would give: 88 repeats, worth up to +352.
+   tau(7) itself, which is not proved (see [1]).
+
+*** ALL CHECKS PASS ***

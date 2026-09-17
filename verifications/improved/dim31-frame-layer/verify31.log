@@ -19,13 +19,13 @@
   ok    the classes are pairwise disjoint
   ok    every owner is TYPE B for this frame: |<u, 8e_i>|/8 is 0 or 2, never 3 or 4 -- which with norm 32 forces the shape (+-2^8, 0^16)
   ok    every class is a 75.52-degree code: |<u,u'>| <= 1 in norm-4 units (max 1)
-   14 classes, sizes 248..248, 3472 owner lines in total
+   42 classes, sizes 240..248, 10328 owner lines in total
 
 == directions, axis and layer, exactly ==
-  ok    k = 5
-  ok    one direction group per class (14)
+  ok    k = 7
+  ok    one direction group per class (42)
   ok    classes and groups are both stored largest first, so the pairing is the best one
-  ok    the groups use 40 distinct directions of 40
+  ok    the groups use 126 distinct directions of 126
   ok    cap directions are unit vectors
   ok    axis points are unit vectors
   ok    the layer frame is orthonormal
@@ -38,14 +38,14 @@
   ok    cap x layer binds at (sqrt6 + 2 sqrt3)/3 < 2, i.e. sqrt2 < 3/2
 
 == the count ==
-   equator 189616 + caps  19840 + axis  32 + layer 480 = 209968
-  ok    the count agrees with the shipped total (209968)
+   equator 175904 + caps  61968 + axis 118 + layer 672 = 238662
+  ok    the count agrees with the shipped total (238662)
 
 == independent sweep of every pair except equator x equator ==
-  ok    the assembled point set has 209968 points
+  ok    the assembled point set has 238662 points
   ok    every point has squared length 4
   ok    all points are distinct
    worst inner product found: 2.000000000000
   ok    every pair outside equator x equator is at inner product <= 2
 
-*** ALL CHECKS PASS ***   K(29) >= 209968      (121 s)
+*** ALL CHECKS PASS ***   K(31) >= 238662      (159 s)

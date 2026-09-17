@@ -1,8 +1,8 @@
 # Dimensions 29 and 30: a full frame of norm-8 heads at height √2
 
-**τ(29) ≥ 209 968** and **τ(30) ≥ 220 948**, against the published **209 496** and **220 440**
+**τ(29) ≥ 209 968** and **τ(30) ≥ 221 012**, against the published **209 496** and **220 440**
 (Ma et al. 2025, arXiv:2511.13391, the PackingStar configurations; the values in Cohn's table).
-Gains of **+472** and **+508**.
+Gains of **+472** and **+572**.
 
 ```
 python verify.py 29        # ~9 min, exact in every decision; exits non-zero on failure
@@ -24,11 +24,11 @@ iff their inner product is at most 2.
 
 | | k = 5 (dim 29) | k = 6 (dim 30) |
 |---|---|---|
-| equator `(u, 0)`, `u` minimal and not an owner | 189 616 | 184 678 |
-| cap `(√(2/3) u, (2/√3) z)`, `u` an owner, `z` a direction of its group | 19 840 | 35 646 |
-| axis `(0, 2a)` | 32 | 48 |
+| equator `(u, 0)`, `u` minimal and not an owner | 189 616 | 184 656 |
+| cap `(√(2/3) u, (2/√3) z)`, `u` an owner, `z` a direction of its group | 19 840 | 35 712 |
+| axis `(0, 2a)` | 32 | 68 |
 | **layer `(v/2, √2 w)`, `v` one of the 48 vectors of a Leech frame, `w` one of the 2k directions of a cross-polytope** | **480** | **576** |
-| | **209 968** | **220 948** |
+| | **209 968** | **221 012** |
 
 ## The mechanism
 
@@ -76,8 +76,10 @@ that collides least. Coordinate descent over the sign words, with a batch of fre
 whenever a class is visited, reaches 14 disjoint 248-line classes in seconds.
 
 Finally, **any subset of a class is again a class**, so a family with a few repeated lines is not
-wasted: dropping the repeats gives the honest count. In dimension 30 the descent leaves 24
-classes of 244–248 lines, 5 941 owner lines against the ceiling of `24 × 248 = 5 952`.
+wasted: dropping the repeats gives the honest count. In dimension 30 the family is EXACT: 24 pairwise
+disjoint classes of the full 248 lines, `24 × 248 = 5 952` owner lines, found by freezing a core
+of 12 disjoint classes, building a pool of images disjoint from the whole core, and solving
+max-clique on that pool (`research/collab2531/BRAINSTORM_2831.md`).
 
 ## The identity
 
@@ -93,22 +95,32 @@ so 13 disjoint zero-sum triangles cannot be carved out of one).
 
 ## The axis
 
-The layer constrains the axis by `|⟨a,w⟩| ≤ 1/√2`. Carried into the frame coordinates, the
-published 40-point axis of dimension 29 keeps **32** of its points and the published 72-point
-axis of dimension 30 keeps **48**; the classical cap bound `⟨a,z⟩ ≤ √3/2` is untouched. What dies
-is measured, not guessed. The profile of `maxᵢ|⟨a,wᵢ⟩|` over the published axis is
+The layer constrains the axis by `|⟨a,w⟩| ≤ 1/√2`, on top of the classical cap bound
+`⟨a,z⟩ ≤ √3/2`. Carried into the frame coordinates, the *published* 40-point axis of dimension 29
+keeps **32** of its points and the published 72-point axis of dimension 30 keeps only **48**. The
+profile of `maxᵢ|⟨a,wᵢ⟩|` over the published axis says why:
 
 | | 1/2 | 1/√6 | 1/√2 | √(2/3) | 1 |
 |---|---|---|---|---|---|
 | dimension 29, 40 points | 16 | | 16 | | **8** |
 | dimension 30, 72 points | | 32 | 16 | **24** | |
 
-with the bolded entries the ones that die. In dimension 29 they sit at exactly `1`, so they *are*
-frame directions and no rotation of the frame recovers them; a different maximum 60° code would
-be needed. In dimension 30 they need a 15% reduction where the cap bound gives the frame 2.5% of
-room (`1/√2 = 0.70711` against `√(3/2) − 1/2 = 0.72474`) — not impossible a priori, but not
-searched. Since the layer is worth 480 and 576, this is a second-order
-term — the configuration would still beat the published value with no axis at all.
+with the bolded entries the ones that die. In dimension 29 they sit at exactly `1` — they *are*
+frame directions — so no rotation of the frame recovers them. In dimension 30 they need only a
+15% reduction, and **a rotation of the axis finds it**: a maximum 60° code in ℝ⁶ is a rotated
+copy of E₆ and the rotation is free, so turning it by 45°, 45° and 90° in the coordinate planes
+(0,1), (2,3), (3,5) — which keeps every coordinate inside the `(a + b√2 + c√3 + d√6)/24` field the
+package already stores — keeps **68 of 72**.
+
+**Both axes are now maximal, exhaustively.** A further axis point is a *unit* `a ∈ ℝᵏ` with
+`⟨a,aᵢ⟩ ≤ 1/2`, `⟨a,z⟩ ≤ √3/2` and `|⟨a,w⟩| ≤ 1/√2`. Every right-hand side is positive, so those
+half-spaces cut out a polytope `P` with the origin in its interior; `|a|` is convex, so
+`max_P |a|` is attained at a **vertex** of `P`. Enumerating all of them (114 vertices at k = 5,
+202 at k = 6) gives `0.7929` and `0.8165` — `P` contains no unit vector at all, so nothing can be
+added, over the continuum and not over a sample. The control is that dropping any one axis point
+recovers a unit vector, and always exactly one: the point removed. So no one-for-one swap opens
+either axis. `python ceilings.py 29` or `30` runs this; the scope is these axis codes against
+this frame and these directions, and a different code is a different polytope.
 
 ## Files
 
@@ -119,7 +131,8 @@ term — the configuration would still beat the published value with no axis at 
 | `data/bounds29.npy`, `data/bounds30.npy` | where each class starts and ends in that array |
 | `data/geom29.json`, `data/geom30.json` | cap directions, their partition into groups, the layer frame and the axis — all as integer quadruples `(a + b√2 + c√3 + d√6)/24` |
 | `lib/golay.py` | the extended binary Golay code, via the cyclic QR construction |
-| `verify29.log`, `verify30.log` | recorded runs |
+| `ceilings.py` | the companion report: which factors are at a ceiling, and on what evidence, `python ceilings.py 29` or `30` |
+| `verify29.log`, `verify30.log`, `ceilings29.log`, `ceilings30.log` | recorded runs |
 
 The construction scripts live in `research/collab2531/frame/`; the working note is FINDINGS
 section 59.
@@ -129,22 +142,28 @@ section 59.
 Two things. The first is the class problem. The owner term is `4 × (lines)` and the ceiling on a
 single class is 248 lines realised, 425 by the Delsarte bound on the Leech line scheme — one extra class line is
 worth `+52` in dimension 29 (direction weight 26) and `+96` in dimension 30 (weight 48). The layer, the axis and the directions
-are all at their own ceilings: 96k is every frame vector on every cross-polytope direction, and
-`⌊τ(k)/3⌋` groups is the 60°-code bound in ℝᵏ. Nor can a *second* layer sit on this one. Because
+are all at their own ceilings: 96k is every frame vector on every cross-polytope direction, the
+axis is maximal by the vertex enumeration above, and the direction weight `w = ⌊2τ(k)/3⌋` — 26
+here and 48 in dimension 30 — is a theorem, since two classes sharing a direction would be one
+class, a group of directions pairwise at `≤ −1/2` has at most three members, and the groups'
+union is therefore a 60° code in ℝᵏ. **That last ceiling is conditional on τ(k)**: 40 and 72 are
+the best *known* kissing numbers in ℝ⁵ and ℝ⁶, not proved ones, and against the proved bounds
+τ(5) ≤ 44 and τ(6) ≤ 77 the unconditional ceilings are 29 and 51 — three higher each, worth 1 488
+points apiece. Dimension 28 is the only member of the family where τ(k) is settled. Nor can a *second* layer sit on this one. Because
 the frame layer's direction runs over the whole cross-polytope, any layer `(x, h w′)` above it
-needs `√2·h/√k ≤ 2 − max⟨v,x⟩/2`, which the height-√3 layer of `../dim31-sqrt3-layer/` fails
+needs `√2·h/√k ≤ 2 − max⟨v,x⟩/2`, which the height-√3 layer of `../../superseded/dim31-sqrt3-layer/` fails
 outright at k = 4 and 5 and clears with nothing to spare at k = 6 — where it then fails against
 the caps, since it would need a direction at `⟨z,w′⟩ ≤ (2 − 2/√6)/2 = 0.5918` and E₆'s covering
 cosine is `√6/4 = 0.6124`. Only E₇ clears both, at `1/√3 = 0.5774`, and dimension 31 is the one
-place with no frame layer to sit on (`research/collab2531/frame/secondlayer.py`). The second is the packing, in dimension 30 only:
-5 941 of 5 952 lines, so closing the last 11 repeats is worth +44.
+place with no frame layer to sit on (`research/collab2531/frame/secondlayer.py`). The packing,
+which in dimension 30 was 5 941 of 5 952 lines and worth +44, is now closed: the family is exact.
 
-**Dimension 31 does not reach.** The same layer is 672 points there and the geometry fits exactly
-as it does here, but 42 classes need `4 × 10 254 = 41 016` owner points to beat the +4 already
-claimed by `../dim31-sqrt3-layer/`, i.e. 98.4% of the 10 416 lines that 42 full classes would
-give. The descent stalls at 10 183, 97.8%. The gap is 71 lines, 284 points. Nothing about
-it is structural — the type-B pool holds 48 576 lines and 42 classes need 21.4% of them — it is
-a search that has not been won.
+**Dimension 31 reaches too, and is in its own package.** The same layer is 672 points there and
+the geometry fits exactly as it does here; the price is 42 pairwise disjoint classes holding at
+least 10 252 of the 10 416 lines 42 full classes would give. That was the open search when this
+package was written — the descent stalled at 10 183 — and it was won on 2026-09-17 at 10 328
+lines, by screening candidates on the octad coverage instead of scanning uniformly. See
+[`../dim31-frame-layer/`](../dim31-frame-layer/).
 
 ## History
 
@@ -152,4 +171,6 @@ a search that has not been won.
 |---|---|---|---|
 | 2025 | 209 496 | 220 440 | Ma et al., arXiv:2511.13391 (PackingStar), the values in Cohn's table |
 | 2026-09-15 | 209 594 | 220 494 | this project: a layer at height √(5/2) in the D₅ deep holes (dim 29) and at height √2 in the E₆* directions (dim 30) — both now superseded, in `verifications/superseded/` |
-| 2026-09-15 | **209 968** | **220 948** | this package |
+| 2026-09-15 | **209 968** | 220 948 | this package, with 5 941 of 5 952 owner lines |
+| 2026-09-17 | **209 968** | 220 992 | this package, with the packing closed at 24 × 248 = 5 952 |
+| 2026-09-17 | **209 968** | **221 012** | and with the axis raised from 48 to 68 of 72 |

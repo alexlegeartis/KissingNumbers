@@ -1,9 +1,27 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 63 scripts, about 40 minutes measured
-    python run_all.py --full       # 78 scripts, budget about 9 hours
+    python run_all.py              # 67 scripts, about 40 minutes measured
+    python run_all.py --full       # 82 scripts, budget about 9 hours
     python run_all.py --list       # just list what would run
+    python run_all.py --changed    # do not re-run a job whose inputs have not moved
+    python run_all.py --only dim31 # just the jobs whose label or command matches
+
+--changed.  A verification that re-runs unchanged work is mostly a waste of an hour, so each
+job records what it read and the digest of every one of those files, in .run_all_cache.json,
+and is not re-run while all of them and its own package tree are unchanged and the interpreter
+and library versions are the same.  WHAT A JOB READS IS MEASURED, NOT DECLARED: these scripts
+reach across package boundaries -- dim68-69 reads dim73-95's Gram, dim32-44-ers-audit reads
+RESULTS.md, dim49-63 reads a coordinate file from outside the repository altogether -- so a
+hand-written list would be wrong the first time anyone added a read.  Every child therefore runs
+with an audit hook (sys.addaudithook, the "open" event) that logs each file it opens, and an
+import is charged to the SOURCE its .pyc came from.  A job whose entry has no measured set --
+because it passed before this existed -- is skipped only when NOTHING in the tree has changed.
+Uncertainty means run.
+
+The verdict says how many were not re-run and when they last passed; a run that skipped
+anything never claims more than it checked.  --changed is opt-in, and it is not what a release
+does: for that, and for anyone reproducing the repository, run the whole thing.
 
 The minutes in the table below are BUDGETS, deliberately generous, so their sum overstates
 the total -- the fast set is quoted from a measured run instead (2327 s over 59 scripts,
@@ -20,7 +38,9 @@ k = 23) and 19x low once they became rotated copies (93 074).  It is still the l
 in the fast set, at 517 s measured against a budget of 18 minutes -- and it has been over
 its own budget twice, at 9.4 and again at 10.5, each time because the layers under it grew.
 dim31-sqrt3-layer/verify31.py was shipped at 3.0 and measured at 205 s alone and 282 s in
-the suite, so it was over its budget on the day it was written; it is 8.0 now.  A budget
+the suite, so it was over its budget on the day it was written; it went to 8.0, and on
+2026-09-17 the package was superseded by dim31-frame-layer/verify.py 31, budgeted at 7.0
+against 409 s measured alone.  A budget
 that is only ever written once is a budget that describes the day it was written.
 
 Nor is the TOTAL comparable across days: the machine moves under it, and so does the suite.
@@ -49,9 +69,12 @@ On a machine with little free memory, `--full` can lose the whole run to the fir
 those.  Run them individually if that happens; each is self-contained and exits non-zero on
 failure like everything else here.
 """
+import hashlib
+import json
 import os, re
 import subprocess
 import sys
+import tempfile
 import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -112,12 +135,20 @@ JOBS = [
      os.path.join(V, 'improved', 'dim26-27-iota-triangles'), ['verify27.py'], 2.0, True),
     ("dim 28: the 204896-point configuration with the norm-8 frame layer, exactly",
      os.path.join(V, 'improved', 'dim28-norm8-frame-layer'), ['verify28.py'], 1.0, True),
+    ("dim 28: the direction weight and the axis are at their ceilings, exhaustively",
+     os.path.join(V, 'improved', 'dim28-norm8-frame-layer'), ['ceilings.py'], 0.3, True),
     ("dim 29: the 209968-point configuration with the norm-8 frame layer, exactly",
      os.path.join(V, 'improved', 'dim29-30-frame-layer'), ['verify.py', '29'], 4.5, True),
-    ("dim 30: the 220948-point configuration with the norm-8 frame layer, exactly",
+    ("dim 30: the 221012-point configuration with the norm-8 frame layer, exactly",
      os.path.join(V, 'improved', 'dim29-30-frame-layer'), ['verify.py', '30'], 4.5, True),
-    ("dim 31: the 238354-point configuration with the height-sqrt3 deep-hole layer, exactly",
-     os.path.join(V, 'improved', 'dim31-sqrt3-layer'), ['verify31.py'], 8.0, True),
+    ("dims 29, 30: the direction weight and the axis are at their ceilings, exhaustively",
+     os.path.join(V, 'improved', 'dim29-30-frame-layer'), ['ceilings.py', '29'], 0.3, True),
+    ("dim 30 again: the same report at k = 6",
+     os.path.join(V, 'improved', 'dim29-30-frame-layer'), ['ceilings.py', '30'], 0.3, True),
+    ("dim 31: the 238662-point configuration with the norm-8 frame layer, exactly",
+     os.path.join(V, 'improved', 'dim31-frame-layer'), ['verify.py', '31'], 7.0, True),
+    ("dim 31: the direction weight and the axis are at their ceilings, exhaustively",
+     os.path.join(V, 'improved', 'dim31-frame-layer'), ['ceilings.py', '31'], 0.5, True),
     ("superseded 27: the 200540-point triple-partition configuration, from its coordinate file",
      os.path.join(V, 'superseded', 'dim27-triple-partition'),
      ['scripts/verify_configuration.py'], 0.2, True),
@@ -300,9 +331,199 @@ def _absent_optional(out):
     return None
 
 
+
+# ============================================================================================
+# --changed: do not re-run a job whose inputs have not moved since it last passed
+# ============================================================================================
+# WHAT A JOB DEPENDS ON IS MEASURED, NOT DECLARED.  These scripts read across package
+# boundaries -- dim68-69 reads dim73-95's Gram matrix, dim32-44-ers-audit reads RESULTS.md,
+# dim49-63 reads a coordinate file from OUTSIDE the repository -- so a hand-written dependency
+# list would be wrong the first time someone added a read.  Instead every child is run with
+# PYTHONPATH pointing at a sitecustomize that installs sys.addaudithook and logs the path of
+# every file the job opens.  That measured set, plus a digest of the job's own package tree
+# (which catches files ADDED to it, not only files changed), is the key.
+#
+# A job with no measured set yet -- because it last passed before this mode existed -- may be
+# skipped only when the digest of the WHOLE tree is unchanged.  Uncertainty always means run.
+
+CACHE = os.path.join(HERE, '.run_all_cache.json')
+_HOOK = r"""
+import os, sys
+_log = os.environ.get('RUNALL_OPENLOG')
+if _log:
+    try:
+        _f = open(_log, 'a', buffering=1, encoding='utf-8', errors='replace')
+
+        def _runall_hook(event, args):
+            if event == 'open' and args and isinstance(args[0], str):
+                try:
+                    _f.write(os.path.abspath(args[0]) + '\n')
+                except Exception:
+                    pass
+        sys.addaudithook(_runall_hook)
+    except Exception:
+        pass
+"""
+_SKIPDIR = ('__pycache__', '.git')
+
+
+def _sha(path):
+    h = hashlib.sha256()
+    try:
+        with open(path, 'rb') as fh:
+            for blk in iter(lambda: fh.read(1 << 20), b''):
+                h.update(blk)
+    except OSError:
+        return None
+    return h.hexdigest()
+
+
+def _tree_digest(root):
+    """one digest over every file under root, names included, caches excluded"""
+    h = hashlib.sha256()
+    for dp, dn, fn in os.walk(root):
+        dn[:] = sorted(d for d in dn if d not in _SKIPDIR)
+        for f in sorted(fn):
+            if f.endswith('.pyc') or f == os.path.basename(CACHE):
+                continue
+            p = os.path.join(dp, f)
+            h.update(os.path.relpath(p, root).replace(os.sep, '/').encode('utf-8'))
+            h.update((_sha(p) or 'gone').encode('ascii'))
+    return h.hexdigest()
+
+
+def _env_fingerprint():
+    out = ['py%d.%d.%d' % sys.version_info[:3]]
+    for m in ('numpy', 'scipy', 'sympy', 'ortools'):
+        try:
+            out.append('%s%s' % (m, __import__(m).__version__))
+        except Exception:                                          # noqa: BLE001
+            out.append('%s-' % m)
+    return ' '.join(out)
+
+
+def _load_cache():
+    try:
+        with open(CACHE, encoding='utf-8') as fh:
+            c = json.load(fh)
+        return c if isinstance(c, dict) else {}
+    except Exception:                                              # noqa: BLE001
+        return {}
+
+
+def _save_cache(c):
+    try:
+        with open(CACHE, 'w', encoding='utf-8') as fh:
+            json.dump(c, fh, indent=1, sort_keys=True)
+    except OSError:
+        pass
+
+
+def _key(d, argv):
+    return '%s | %s' % (os.path.relpath(d, HERE).replace(os.sep, '/'), ' '.join(argv))
+
+
+def _unchanged(ent, d, envfp, gdig, selfcache):
+    """(True, note) if this job's inputs have not moved since it passed"""
+    if not ent or ent.get('status') != 'PASS':
+        return False, ''
+    if ent.get('env') != envfp:
+        return False, ''
+    deps = ent.get('deps')
+    if deps is None:
+        return (ent.get('tree') == gdig), 'tree'
+    if d not in selfcache:
+        selfcache[d] = _tree_digest(d)
+    if ent.get('self') != selfcache[d]:
+        return False, ''
+    for rel, dig in deps.items():
+        p = rel if os.path.isabs(rel) else os.path.join(HERE, rel)
+        if _sha(p) != dig:
+            return False, ''
+    return True, '%d inputs' % len(deps)
+
+
+def _hookdir():
+    d = tempfile.mkdtemp(prefix='runall-hook-')
+    with open(os.path.join(d, 'sitecustomize.py'), 'w', encoding='utf-8') as fh:
+        fh.write(_HOOK)
+    return d
+
+
+def _traced_env(hookdir, logfile):
+    e = dict(os.environ)
+    e['RUNALL_OPENLOG'] = logfile
+    pp = e.get('PYTHONPATH')
+    e['PYTHONPATH'] = hookdir + (os.pathsep + pp if pp else '')
+    return e
+
+
+_PREFIXES = tuple(os.path.normcase(os.path.abspath(p))
+                  for p in (sys.prefix, sys.base_prefix) if p)
+
+
+def _source_of(p):
+    """map <dir>/__pycache__/<mod>.cpython-39.pyc back to <dir>/<mod>.py, else p"""
+    d, f = os.path.split(p)
+    if os.path.basename(d) != '__pycache__' or not f.endswith('.pyc'):
+        return p
+    src = os.path.join(os.path.dirname(d), f.split('.')[0] + '.py')
+    return src if os.path.isfile(src) else None
+
+
+def _read_opens(logfile, limit=6000):
+    """{path relative to HERE (or absolute if outside): digest}, or None if too many
+
+    An import is recorded as the .pyc it actually read; that is mapped back to the source, so
+    editing a module a job imports from ANOTHER package invalidates the entry.  Files under the
+    interpreter and site-packages are dropped -- the environment fingerprint covers those, and
+    they would swamp the list.
+    """
+    try:
+        with open(logfile, encoding='utf-8', errors='replace') as fh:
+            raw = {ln.strip() for ln in fh if ln.strip()}
+    except OSError:
+        return None
+    out = {}
+    for p in raw:
+        p = _source_of(p)
+        if not p or not os.path.isfile(p):
+            continue
+        ap = os.path.abspath(p)
+        nc = os.path.normcase(ap)
+        if nc.startswith(_PREFIXES) or 'site-packages' in nc or '__pycache__' in nc:
+            continue
+        if ap == CACHE or ap == os.path.abspath(logfile):
+            continue
+        try:
+            rel = os.path.relpath(ap, HERE)
+        except ValueError:
+            rel = ap
+        rel = ap if rel.startswith('..') else rel.replace(os.sep, '/')
+        dg = _sha(ap)
+        if dg:
+            out[rel] = dg
+        if len(out) > limit:
+            return None
+    return out
+
+
 def main():
     full = '--full' in sys.argv
+    changed_only = '--changed' in sys.argv
+    only = None
+    if '--only' in sys.argv:
+        i = sys.argv.index('--only')
+        if i + 1 >= len(sys.argv):
+            print("--only needs a substring to match against the label or the command")
+            return 2
+        only = sys.argv[i + 1].lower()
     jobs = [j for j in JOBS if j[4] or full]
+    if only:
+        jobs = [j for j in jobs if only in j[0].lower() or only in ' '.join(j[2]).lower()]
+        if not jobs:
+            print("--only %r matches no job; --list shows them all" % only)
+            return 2
     if '--list' in sys.argv:
         for lab, d, argv, mins, fast in jobs:
             print("  %-58s ~%4.1f min   %s" % (lab, mins, ' '.join(argv)))
@@ -310,11 +531,19 @@ def main():
         print("  %d scripts, about %.0f minutes" % (len(jobs), sum(j[3] for j in jobs)))
         return 0
 
-    print("running %d scripts, roughly %.0f minutes%s"
-          % (len(jobs), sum(j[3] for j in jobs), "" if full else "  (--full adds more)"))
+    print("running %d scripts, roughly %.0f minutes%s%s"
+          % (len(jobs), sum(j[3] for j in jobs), "" if full else "  (--full adds more)",
+             "  [--changed: unchanged jobs are not re-run]" if changed_only else ""))
     print("=" * 92)
     results = []
     skipnote = {}
+    cache = _load_cache()
+    envfp = _env_fingerprint()
+    selfcache = {}
+    gdig = _tree_digest(HERE) if changed_only else None
+    hookdir = _hookdir()
+    logfile = os.path.join(hookdir, 'opens.log')
+    same = []
     for lab, d, argv, mins, fast in jobs:
         t0 = time.time()
         sys.stdout.write("  %-62s " % lab[:62])
@@ -323,9 +552,22 @@ def main():
             print("%-5s %5s" % ("SKIP", "-"))
             results.append(("SKIP", lab, "directory not present: %s" % d))
             continue
+        k = _key(d, argv)
+        if changed_only:
+            ok, note = _unchanged(cache.get(k), d, envfp, gdig, selfcache)
+            if ok:
+                print("%-5s %5s" % ("SAME", "-"))
+                same.append((lab, cache[k].get('when', '?'), note))
+                results.append(("SAME", lab, ""))
+                continue
+        try:
+            if os.path.exists(logfile):
+                os.remove(logfile)
+        except OSError:
+            pass
         try:
             p = subprocess.run([sys.executable] + argv, cwd=d, stdout=subprocess.PIPE,
-                               stderr=subprocess.STDOUT)
+                               stderr=subprocess.STDOUT, env=_traced_env(hookdir, logfile))
             out = p.stdout.decode('utf-8', 'replace')
             rc = p.returncode
         except Exception as e:                                    # noqa: BLE001
@@ -343,8 +585,20 @@ def main():
             verdict = "FAIL"
         print("%-5s %5.0fs" % (verdict, el))
         results.append((verdict, lab, out))
+        if verdict == 'PASS':
+            if d not in selfcache:
+                selfcache[d] = _tree_digest(d)
+            cache[k] = {'status': 'PASS', 'when': time.strftime('%Y-%m-%d %H:%M'),
+                        'env': envfp, 'self': selfcache[d], 'deps': _read_opens(logfile),
+                        'tree': None, 'seconds': round(el, 1)}
+        else:
+            cache.pop(k, None)
+        # after EVERY job, not at the end: these runs get interrupted, and a run that banks
+        # nothing when it is stopped at job 60 of 67 is the thing --changed exists to avoid
+        _save_cache(cache)
 
     print("=" * 92)
+    _save_cache(cache)
     bad = [r for r in results if r[0] == 'FAIL']
     skipped = [r for r in results if r[0] == 'SKIP']
     for v, lab, out in bad:
@@ -354,9 +608,19 @@ def main():
     for v, lab, out in skipped:
         print("skipped: %s%s"
               % (lab, "  -- %s" % skipnote[lab] if lab in skipnote else ""))
+    if same:
+        print("")
+        print("NOT RE-RUN -- inputs unchanged since the run that passed them (--changed):")
+        for lab, when, note in same:
+            print("   %-62s  passed %s%s"
+                  % (lab[:62], when, "  (%s)" % note if note else ""))
     print("")
-    print("%d passed, %d skipped, %d FAILED"
-          % (len(results) - len(bad) - len(skipped), len(skipped), len(bad)))
+    print("%d passed, %d unchanged, %d skipped, %d FAILED"
+          % (len(results) - len(bad) - len(skipped) - len(same), len(same),
+             len(skipped), len(bad)))
+    if same and not bad:
+        print("   -- that verdict covers %d of %d jobs; the other %d passed earlier and "
+              "nothing they read has moved" % (len(results) - len(same), len(results), len(same)))
     return 1 if bad else 0
 
 

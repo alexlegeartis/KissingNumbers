@@ -17,9 +17,9 @@
 == owner classes ==
   ok    every owner line is a Leech minimal line
   ok    the classes are pairwise disjoint
-  ok    every owner is TYPE B for this frame: |<u, 8e_i>|/8 = 2, never 3 or 4
+  ok    every owner is TYPE B for this frame: |<u, 8e_i>|/8 is 0 or 2, never 3 or 4 -- which with norm 32 forces the shape (+-2^8, 0^16)
   ok    every class is a 75.52-degree code: |<u,u'>| <= 1 in norm-4 units (max 1)
-   24 classes, sizes 245..248, 5941 owner lines in total
+   24 classes, sizes 248..248, 5952 owner lines in total
 
 == directions, axis and layer, exactly ==
   ok    k = 6
@@ -38,15 +38,14 @@
   ok    cap x layer binds at (sqrt6 + 2 sqrt3)/3 < 2, i.e. sqrt2 < 3/2
 
 == the count ==
-   equator 184678 + caps  35646 + axis  48 + layer 576 = 220948
-  ok    the count agrees with the shipped total (220948)
+   equator 184656 + caps  35712 + axis  68 + layer 576 = 221012
+  ok    the count agrees with the shipped total (221012)
 
 == independent sweep of every pair except equator x equator ==
-  ok    the assembled point set has 220948 points
+  ok    the assembled point set has 221012 points
   ok    every point has squared length 4
   ok    all points are distinct
    worst inner product found: 2.000000000000
   ok    every pair outside equator x equator is at inner product <= 2
 
-*** ALL CHECKS PASS ***   K(30) >= 220948      (174 s)
-exit=0
+*** ALL CHECKS PASS ***   K(30) >= 221012      (131 s)

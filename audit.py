@@ -315,11 +315,12 @@ add(28, 204896, 'dim28-norm8-frame-layer', 'verify28.py (exact: integers, and sy
 add(29, 209968, 'dim29-30-frame-layer', 'verify.py 29 (exact: integers on the Leech side, and '
                                         'integer quadruples (a + b sqrt2 + c sqrt3 + d sqrt6)/24 '
                                         'with sympy deciding every sign on the R^5 side)')
-add(30, 220948, 'dim29-30-frame-layer', 'verify.py 30 (exact: integers on the Leech side, and '
+add(30, 221012, 'dim29-30-frame-layer', 'verify.py 30 (exact: integers on the Leech side, and '
                                         'integer quadruples (a + b sqrt2 + c sqrt3 + d sqrt6)/24 '
                                         'with sympy deciding every sign on the R^6 side)')
-add(31, 238354, 'dim31-sqrt3-layer', 'verify31.py (exact: integers, and sympy in Q(sqrt2, sqrt3) '
-                                     'for the E7, its axis copy and the two deep-hole lines)')
+add(31, 238662, 'dim31-frame-layer', 'verify.py 31 (exact: integers on the Leech side, and '
+                                     'integer quadruples (a + b sqrt2 + c sqrt3 + d sqrt6)/24 '
+                                     'with sympy deciding every sign on the R^7 side)')
 add(38, 591612, 'dim38-leech-large-codimension', 'scripts/verify.py')
 add(39, 756116, 'dim39-ers-constant-weight', 'scripts/verify.py')
 # The Edel-Rains-Sloane chain (n, 15, 2).  Level 0 is a single sign code: [62,26,16] and
@@ -1810,13 +1811,32 @@ if '--write-results' in sys.argv and not fail:
                                 'coordinates where the frame is 8e_i the type-B lines are exactly '
                                 'the 48576 octad vectors of the Golay code, which the whole '
                                 'monomial group 2^12:M24 permutes -- so every monomial image of a '
-                                'class is again a clean class, and what is left is a packing '
-                                'solved by coordinate descent on the Golay sign words.  14 classes '
-                                'in dimension 29 and 24 in dimension 30; the published axis keeps '
-                                '32 of 40 and 48 of 72',
-        'dim31-sqrt3-layer': 'a deletion-free layer at height sqrt3 on two deep-hole lines of the '
-                             'cap E7: eight points over a minimal non-owner, four blocked axis '
-                             'points removed; the classes are untouched',
+                                'class is again a clean class, and what is left is a packing.  Both '
+                                'families are EXACT -- 14 x 248 owner lines in dimension 29 and '
+                                '24 x 248 in dimension 30, the second by freezing a core of 12 '
+                                'disjoint classes, pooling the images disjoint from all of it, and '
+                                'solving max-clique on that pool.  The axis is 32 of 40 in '
+                                'dimension 29 and, after a free rotation of the E6 it is a copy of, '
+                                '68 of 72 in dimension 30 where the published axis kept 48; both '
+                                'are MAXIMAL exhaustively -- the admissible set is a polytope with '
+                                'the origin interior, so max |a| sits at a VERTEX, and every vertex '
+                                'is below 1 (ceilings.py)',
+        'dim31-frame-layer': 'the norm-8 FRAME layer at height sqrt2 in dimension 31: all 48 vectors '
+                             'of a Leech frame on the whole cross-polytope of R^7, 672 points, deleting '
+                             'no equator point.  It needs 42 pairwise disjoint type-B classes carrying at '
+                             'least 10 252 of the 10 416 lines that 42 full classes would give, which is '
+                             'what the earlier sign-word descent of this project, at 10 183, could not '
+                             'reach; this one carries 10 328.  A family of 42 is a clique in a graph of density p on the ~1e12 '
+                             'monomial images and a sampled search reaches k = 1 + 12 ln10 / ln(1/p), so 42 '
+                             'needs p >= 0.5097 where a uniform scan gives 0.4319; since p is set by the '
+                             'octad-support overlap, candidates are screened on the FREE SLOTS their octads '
+                             'still have and on a convex penalty in the octad loads (packgpu/deep31.py).  The axis is E7 rotated by 45, 45 and 90 '
+                             'degrees in the coordinate planes (0,3), (2,4), (5,6), which keeps 118 of '
+                             '126 against the 110 the published axis kept, and those 118 are MAXIMAL '
+                             'exhaustively: the admissible set is a polytope with the origin interior, '
+                             'so max |a| sits at a VERTEX, and all 1120 vertices are below 1 '
+                             '(ceilings.py 31).  Supersedes the height-sqrt3 '
+                             'layer, now in verifications/superseded/dim31-sqrt3-layer/',
         'dim38-leech-large-codimension': 'the Leech cap construction at codimension 14',
         'dim39-ers-constant-weight': 'Edel-Rains-Sloane with the 2026 constant-weight codes',
         'dim49-63-p48-caps': 'the cap construction over P_48, with explicit classes',
