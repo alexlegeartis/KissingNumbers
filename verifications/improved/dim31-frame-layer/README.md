@@ -121,7 +121,7 @@ All of it is stored as integer quadruples `(a,b,c,d)` meaning `(a + b√2 + c√
 | axis | 118 | **exhaustive**: no unit vector at all can be added |
 | equator | 196 560 − 2L | forced |
 | class | 248 lines | **open** — the only lever, at +168 a line |
-| packing | 10 328 of 10 416 | **open** — 88 repeats, up to +352; the sign side and the re-slot neighbourhood are both closed (below) |
+| packing | 10 328 of 10 416 | **open** — 88 repeats, up to +352, of which **2 are certified unavoidable** for this support set; the sign side and the re-slot neighbourhood are closed (below) |
 
 **The direction weight.**  Two owner classes sharing a direction would meet at `⟨u,u'⟩ ≤ 1`
 everywhere and so would be one class; inside a group the directions are pairwise at `≤ −1/2`, so
@@ -172,6 +172,28 @@ unseparable.  What that does *not* buy is the 88 lines: 42 mutually agreeing tri
 aggregate the search screens on — octad coverage, the bit budget, the pair probability, the code
 agreement — five fresh builds match this family and still lose twice as many lines.  The gap is
 search depth.  `KNOWLEDGE.md` §149.
+
+*And two of the 88 are certified unavoidable.*  At an octad the 15 codes carry exactly 35
+distinct hyperplanes `U+V`, each shared by three of the 105 pairs — 15 points with 35 such
+triples is a **PG(3,2)** — and each of the 35 is the parity of a 4-subset, so a line of that
+geometry *is* one of the `C(8,4)/2 = 35` splits of the octad into two 4-sets.  Two heavy classes
+with different codes are disjoint at `O` exactly when `φ_{UV}(x+y) = 1`, so for one split the
+heavy classes it links must be **2-colourable**; an odd cycle cannot be, and a triangle — three
+heavy classes whose codes are a line — makes the three conditions sum to `0 = 1`.  Such a
+collision costs `|U ∩ V| = 2` lines, whatever the sign words and whatever the images.  This
+family has exactly one, a triangle at **octad 458 over classes 20, 22 and 28** — and octad 458 is
+one of the octads that loses two lines.  So **2 of the 88 cannot exist and 86 are search**
+([`research/collab2531/dim31/pg32.py`](../../../../research/collab2531/dim31/pg32.py)).
+
+*Two things that do not help, measured.*  The template asks only for 42 pairwise disjoint sets
+of compatible type-B lines, not for monomial images — but a shortened class cannot take a
+different line back: a 248-line class is recovered from **any 216** of its lines (drop `k` at
+random for `k` up to 32 and the closure returns exactly the `k` dropped, nothing else), so every
+short class here is a subset of a unique full one, and 0 free lines are addable to any of the 42.
+And optimising the octad coverage exactly — a trio admits exactly 2016 supports, so the universe
+is `3795 × 2016 = 7 650 720` and the best support against the other 41 is one matrix product —
+reaches `Σ_O C(n_O,2) = 1547` against this family's 1670, and realises **10 249**, seventy-nine
+lines *worse*.  Driving the aggregate to its optimum makes the answer worse.
 
 ## History
 

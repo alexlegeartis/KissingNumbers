@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **148 sections, about 10144 lines**, written as the
+The full working record of the project: **149 sections, about 10236 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -17,7 +17,7 @@ The authoritative current statements are [`RESULTS.md`](RESULTS.md), which is ge
 
 ### Reading it
 
-The headings are numbered 1 to 149 with **no section 87** — a number was skipped, not a
+The headings are numbered 1 to 150 with **no section 87** — a number was skipped, not a
 section removed, and nothing in the repository refers to it. That is why the count above is
 147 and the last heading reads 148.
 
@@ -10142,3 +10142,95 @@ between a family that loses 88 lines and five that lose 166 to 188, and two sess
 would have been spent on quantities that do not discriminate. The structural work was still
 worth doing: it says what the collisions are, it rules out the free construction (42 agreeing
 trios), and it is what proves no pair is ever unseparable. But the 88 lines are search depth.
+
+## 150. The codes at an octad are a PG(3,2), and an odd cycle in one of its lines FORCES a collision (2026-09-18)
+
+Section 149 named every collision in the dimension-31 packing and closed two neighbourhoods
+around the shipped family, and ended by saying the last 88 lines were search depth. Two of them
+are not. This section is the first statement about those 88 that is not a search report.
+
+**First, what is NOT available.** The whole search -- every candidate it has ever scored -- has
+been monomial images of the record 248-line class. The template asks for less: 42 pairwise
+disjoint sets of type-B lines, each set pairwise compatible. So a class that lost a line to an
+overlap is a 247-set, and a 247-set need not be saturated even though the 248 it came from is.
+Measured: **it is.** Over the 42 shipped classes, of sizes 240 to 248, the number of free lines
+compatible with every member is **0**, for all of them. And the reason is a rigidity worth
+recording on its own:
+
+> Drop `k` lines at random from a full 248-line class and ask which lines are compatible with
+> all the rest. For `k = 1, 2, 4, 8, 16, 32` the answer is exactly the `k` that were dropped,
+> over twelve drops at each `k` -- nothing else. **A 248-line class is recovered from any 216 of
+> its lines.** Only at `k = 64` does the closure of the surviving 184 grow, and then by 2.
+
+So the 88 are not holes to patch: every short class is a subset of a unique full class, and the
+lines it is missing are exactly the ones another class took.
+
+**The geometry at an octad.** By section 149 a heavy slot at octad `O` is a coset `x + U` of the
+code `kappa(T,O)` fixed by the class's trio, and the codes that co-occur always meet in dimension
+1 -- so `U + V` is a HYPERPLANE and two heavy classes are disjoint there exactly when
+
+        phi_UV(x + y) = 1 ,      phi_UV = the one nonzero functional killing U + V .
+
+Three measurements (`research/collab2531/dim31/pg32.py`, every check able to fail):
+
+* at **every** one of the 759 octads the 15 codes carry exactly **35 distinct hyperplanes**,
+  each shared by three of the 105 pairs -- so 35 triples have all three hyperplanes equal, and
+  15 points with 35 such triples is a **PG(3,2)**;
+* a functional on the even minus-sets modulo complement is an even subset `A` of the octad
+  modulo complement -- 28 of size 2 and 35 of size 4 -- and all 35 that occur have `|A| = 4`.
+  **A line of the geometry IS a split of the octad into two 4-sets**, and `C(8,4)/2 = 35`;
+* hence for each octad and each split, the heavy classes that split links must take different
+  values of one functional: their graph must be **BIPARTITE**.
+
+**And that is an obstruction.** An odd cycle cannot be 2-coloured, so one of its pairs must
+collide -- at `|U n V| = 2` lines, whatever the sign words, whatever the images. The smallest
+odd cycle is a triangle, and a triangle is exactly three heavy classes whose codes are a LINE of
+the PG(3,2): the three conditions then sum to `0 = 1`.
+
+**Certified, on the shipped family.** It has 23 octads carrying three or more heavy classes, and
+exactly **one** odd cycle: a triangle at **octad 458 over classes 20, 22 and 28**. Octad 458 is
+one of the octads that loses two lines. So of the 88,
+
+> **2 are unavoidable for that support set and 86 are search.**
+
+That is a small number, and it is the right kind of small: it is the first certified floor on
+the excess, it is checkable in a minute, and it tells the search a rule it did not have -- a
+support set whose heavy graphs are all bipartite has no forced collision of this kind. The
+coverage-optimal support set built below has one too; a third family has none.
+
+**The support universe, and what optimising the coverage is worth.** A trio admits exactly 2016
+supports, so `(trio, support)` ranges over `3795 x 2016 = 7 650 720` objects and the octad
+coverage can be optimised EXACTLY over all of them -- one matrix product per move, nothing
+sampled. Doing that reaches `sum_O C(n_O,2) = 1547`, against the shipped family's **1670** (whose own
+arena-aware floor is 1437 -- the floor belongs to the trios chosen, not to 759 octads in the abstract). Realising it -- 256 images per support, every one scored over all 4096 sign words
+-- gives `L = 10 249`. **The coverage-optimal support set realises 79 lines WORSE than the
+shipped one.** Section 149 said the aggregates do not discriminate between families at a similar
+coverage; this says it again from outside that range, and more sharply: driving the aggregate to
+its optimum makes the answer worse.
+
+**What DOES transfer is the screen.** The engine ranks a candidate by the free slots at its
+octads, `free8[O]/240` and `free4[O]/15120`, over all 240 eight-slots and 15120 four-slots. But a
+class at octad `O` can only use a slot inside a coset of `kappa(trio, O)` -- so the honest figures
+are `free8[O,kappa]/8` and `free4[O,kappa]/112`, **thirty times sharper**, and the minimum
+occupancy over those slots is a genuine LOWER BOUND on what the support can cost. The bound is a
+hard filter: only about **7 per cent** of the 7.65 million supports can host a zero-overlap class
+at all. Measured against the engine's screen at an identical exact-check budget of 16 384 images,
+over six classes:
+
+| | engine's screen, 400 000 sampled | code-aware, 64 supports |
+|---|---|---|
+| mean best replacement cost | **12.8** | **5.8** |
+| wins | 0 | **6** |
+
+with the incumbents at 3.8. So the code-aware screen is worth rather more than twice the
+candidate quality, for less sampling -- but at 16 384 images it still does not beat the
+incumbents, which is why the 86 are still there.
+
+**How to apply.** When a search has been running on one ansatz for a long time, ask what the
+problem actually requires before buying more compute for it: here the requirement is 42 disjoint
+independent sets and the ansatz is 42 monomial images of one class, and the gap between those
+two was worth checking (it turned out to be closed, by rigidity, but only a measurement could
+say so). And when a structure is found, push it until it either certifies something or is shown
+not to: `kappa` alone was descriptive, `kappa` plus the hyperplane it induces is a PG(3,2) whose
+lines forbid configurations, and that is what turns "the search stopped here" into "2 of these 88
+lines cannot exist".

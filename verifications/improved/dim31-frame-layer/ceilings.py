@@ -205,13 +205,20 @@ if int(SIZES.sum()) < len(GRP)*L0:
           "images realise each support and they differ in the 4-slot taken inside each light "
           "coset -- which no sign word can reach, since a sign word TRANSLATES a slot.  All "
           "42 x 256 of them over all 4096 sign words is 44 million placements and zero "
-          "improvements (research/collab2531/dim31/reslot31.py).  What is open is search DEPTH: "
+          "improvements (research/collab2531/dim31/reslot31.py).  And 2 of the %d are CERTIFIED "
+          "unavoidable for this support set: at an octad the 15 codes are the points of a "
+          "PG(3,2) whose 35 lines are the 35 splits of the octad into two 4-sets, two heavy "
+          "classes with different codes are disjoint there only when their cosets differ on "
+          "that split's parity, so the heavy classes one split links must be 2-colourable -- "
+          "and this family has a triangle at octad 458 over classes 20, 22 and 28, which cannot "
+          "be, at a cost of |U n V| = 2 lines whatever the sign words "
+          "(research/collab2531/dim31/pg32.py).  What is open is search DEPTH: "
           "on octad coverage, on the bit budget against the 42 x 12 = 504 bits of sign freedom, "
           "on the pair probability and on the code agreement alike, five fresh builds match this "
           "family and lose twice as many lines (KNOWLEDGE.md section 149)."
           % (int(SIZES.sum()), len(GRP)*L0, len(GRP),
              len(GRP)*L0 - int(SIZES.sum()), 4*(len(GRP)*L0 - int(SIZES.sum())),
-             len(GRP)*L0 - int(SIZES.sum())))
+             len(GRP)*L0 - int(SIZES.sum()), len(GRP)*L0 - int(SIZES.sum())))
 else:
     print("   the PACKING is closed: %d x %d = %d owner lines, every class full and disjoint."
           % (len(GRP), L0, int(SIZES.sum())))
