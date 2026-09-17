@@ -191,11 +191,20 @@ for m in re.finditer(r'^\| (\d+) \| ([\d\u202f ]+) \| \*\*([\d\u202f ]+)\*\* \|'
     results[int(m.group(1))] = (num(m.group(2)), num(m.group(3)))
 
 # Dimensions 29, 30 and 31 were claimed on 2026-09-14/15, after the manuscript was frozen, and
-# were excluded here until the manuscript caught up on 2026-09-15; they are now Sections 5.8 and
-# rows of Table 4, so the set is empty.  It is kept, and kept REQUIRED to be exactly the excess of
-# RESULTS.md over Table 4, so that the next claim made between two drafts cannot slip in unnamed:
-# this guard did its job twice, first on dimension 29 and then on the three together.
-POSTDATE = set()
+# were excluded here until the manuscript caught up on 2026-09-15; they became Sections 5.8 and
+# rows of Table 4, which emptied the set again.  It is kept, and kept REQUIRED to be exactly the
+# excess of RESULTS.md over Table 4, so that the next claim made between two drafts cannot slip in
+# unnamed: this guard has now done its job three times -- dimension 29, then the three together,
+# and on 2026-09-16 dimension 18.
+#
+# DIMENSION 18 (K(18) >= 8358, the bent-coset hexagon over the odd Barnes-Wall lattice) is the
+# current entry.  It is a claim of this repository and a row of RESULTS.md, but the manuscript --
+# "New lower bounds for kissing numbers in dimensions 25 through 96" -- does not reach dimension
+# 18 at all, neither in Table 4 nor in its title.  It is documented in its own package,
+# verifications/improved/dim18-bent-hexagon/, and in KNOWLEDGE 139.  Remove it from this set only
+# when the manuscript actually covers it; until then this line is what says, in code, that the
+# omission is deliberate rather than an oversight.
+POSTDATE = {18}
 chk('Table 4 row count == 52', len(tab4) == 52, 'got %d' % len(tab4))
 chk('RESULTS.md row count == 52 + the postdating claims', len(results) == 52 + len(POSTDATE), 'got %d' % len(results))
 chk('the claims that postdate the manuscript are exactly %s' % sorted(POSTDATE), set(results) - set(tab4) == POSTDATE,
