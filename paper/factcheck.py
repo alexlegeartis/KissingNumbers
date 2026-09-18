@@ -215,14 +215,14 @@ for m in re.finditer(r'^\| (\d+) \| ([\d\u202f ]+) \| \*\*([\d\u202f ]+)\*\* \|'
 # unnamed: this guard has now done its job three times -- dimension 29, then the three together,
 # and on 2026-09-16 dimension 18.
 #
-# DIMENSION 18 (K(18) >= 8358, the bent-coset hexagon over the odd Barnes-Wall lattice) is the
-# current entry.  It is a claim of this repository and a row of RESULTS.md, but the manuscript --
-# "New lower bounds for kissing numbers in dimensions 25 through 96" -- does not reach dimension
-# 18 at all, neither in Table 4 nor in its title.  It is documented in its own package,
-# verifications/improved/dim18-bent-hexagon/, and in KNOWLEDGE 139.  Remove it from this set only
-# when the manuscript actually covers it; until then this line is what says, in code, that the
-# omission is deliberate rather than an oversight.
-POSTDATE = {18}
+# The set is EMPTY again as of 2026-09-18: dimension 18 (K(18) >= 8358, the bent-coset hexagon
+# over the odd Barnes-Wall lattice) held it for two days and the manuscript has now caught up.
+# It is Section 7 and a row of Table 4, the title reads "dimensions 18 through 96", and the
+# abstract counts it -- so the excess of RESULTS.md over Table 4 is nothing, which is what an
+# empty set here asserts.  Every check below that used to subtract it now derives its count
+# from Table 4 instead.  Put a dimension back only while the manuscript genuinely lags: this
+# line is what says, in code, whether an omission is deliberate or an oversight.
+POSTDATE = set()
 chk('values.tex is the manuscript\'s only copy of each bound',
     bool(_MACROS) and not _unexpanded,
     'values.tex missing' if not _MACROS
@@ -232,8 +232,8 @@ chk('and it agrees with RESULTS.md',
     _sp.call([sys.executable, os.path.join(HERE, 'mkvalues.py'), '--check'],
              stdout=_sp.DEVNULL, stderr=_sp.DEVNULL) == 0,
     'run: python paper/mkvalues.py')
-chk('Table 4 row count == 52', len(tab4) == 52, 'got %d' % len(tab4))
-chk('RESULTS.md row count == 52 + the postdating claims', len(results) == 52 + len(POSTDATE), 'got %d' % len(results))
+chk('Table 4 row count == 53', len(tab4) == 53, 'got %d' % len(tab4))
+chk('RESULTS.md row count == 53 + the postdating claims', len(results) == 53 + len(POSTDATE), 'got %d' % len(results))
 chk('the claims that postdate the manuscript are exactly %s' % sorted(POSTDATE), set(results) - set(tab4) == POSTDATE,
     'RESULTS.md has beyond Table 4: %s' % sorted(set(results) - set(tab4)))
 results = {d: v for d, v in results.items() if d not in POSTDATE}
@@ -273,7 +273,7 @@ for d in range(2, 97):
 print('== Table 1 (summary) ==')
 t1 = TEX[TEX.index('\\label{tab:summary}'):
          TEX.index('\\end{tabular}', TEX.index('\\label{tab:summary}'))]
-cap = TEX[TEX.index('\\caption{The fifty-two improvements'):TEX.index('\\label{tab:summary}')]
+cap = TEX[TEX.index('\\caption{The fifty-three improvements'):TEX.index('\\label{tab:summary}')]
 GROUPS = [
     ('$\\Gsz$ cross-sections', [68, 69, 70, 71]),
     ('layers over $\\Leech$', [25, 26, 27, 38]),
@@ -290,11 +290,14 @@ GROUPS = [
     ('the \\textsc{ers} chain at $96$', [96]),
     ('layers over $\\Gsz$', list(range(73, 96))),
     ('constant-weight codes', [39]),
+    # Dimension 18 is over the odd Barnes-Wall lattice, not over Leech, P48 or Gamma72,
+    # so it gets its own row AND lands in the abstract's "All but five" set below.
+    ('the bent-coset hexagon', [18]),
 ]
 allg = sorted(sum((d for _, d in GROUPS), []))
 chk('Table 1 groups partition Table 4', allg == sorted(tab4),
     'groups %d dims, table4 %d' % (len(allg), len(tab4)))
-chk('Table 1 total row says 52', 'total & & $52$' in t1)
+chk('Table 1 total row says 53', 'total & & $53$' in t1)
 smallest = []
 for name, dims in GROUPS:
     row = [l for l in t1.split('\n') if l.startswith(name + ' &')]
@@ -1261,7 +1264,7 @@ chk('the paper records the Sun-Wang 42-47 range',
 chk('the paper confronts the range in the ERS abstract',
     'span of those seven' in FLAT and 'tabulates no value by dimension' in FLAT,
     'the abstract of [ERS] is not addressed')
-chk('abstract range 25..96', min(tab4) == 25 and max(tab4) == 96)
+chk('abstract range 18..96', min(tab4) == 18 and max(tab4) == 96)
 
 # Every K(n) >= V the ABSTRACT states, against RESULTS.md.  Nothing read these: the abstract
 # said K(30) >= 220490 while the claim was 220494, and had done since the claim was registered.
@@ -1300,10 +1303,11 @@ _abs_dims = {int(_d) for _d, _v in _KPAT.findall(_abs)}
 chk('the abstract states the 25-31 bounds', set(range(25, 32)) <= _abs_dims,
     'missing %s' % sorted(set(range(25, 32)) - _abs_dims))
 chk('abstract count matches Table 4',
-    '$%d$ dimensions between $25$ and $96$' % len(tab4) in TEX,
-    'the abstract does not say %d' % len(tab4))
+    '$%d$ dimensions between $%d$ and $%d$' % (len(tab4), min(tab4), max(tab4)) in TEX,
+    'the abstract does not say %d between %d and %d' % (len(tab4), min(tab4), max(tab4)))
 chk('title states the range, not a tally',
-    'in dimensions 25 through 96' in FLAT and '48 dimensions' not in FLAT)
+    ('in dimensions %d through %d' % (min(tab4), max(tab4))) in FLAT
+    and '48 dimensions' not in FLAT)
 # 'no published table has an entry' is the claim; d >= 49 is only a proxy for it, and the
 # proxy dies quietly the day a published table gains an entry above 49.  Test the claim
 # itself against published.py -- which has no imports of its own, so this costs nothing --
@@ -1319,8 +1323,8 @@ if _pub is not None:
     _proxy = sorted(d for d in tab4 if d >= 49)
     chk('43 of the %d have no entry in the published table' % len(tab4),
         len(_untab) == 43, str(len(_untab)))
-    chk('the nine that do are 25-31, 38 and 39',
-        sorted(set(tab4) - set(_untab)) == [25, 26, 27, 28, 29, 30, 31, 38, 39],
+    chk('the ten that do are 18, 25-31, 38 and 39',
+        sorted(set(tab4) - set(_untab)) == [18, 25, 26, 27, 28, 29, 30, 31, 38, 39],
         str(sorted(set(tab4) - set(_untab))))
     chk('the d >= 49 proxy still agrees with the published table', _untab == _proxy,
         'they differ at %s' % sorted(set(_untab) ^ set(_proxy)))
@@ -1344,7 +1348,7 @@ if _pub is not None:
         'no published table has an entry' not in FLAT
         and 'no table has an entry' not in FLAT, 'the old wording survives')
     # Section 1.2 has to say where the two summands come from and that the tabular
-    # floor is not the only one; a referee meets it long before section 8.2.
+    # floor is not the only one; a referee meets it long before section 9.2.
     for _s in ("where $K(n-48)$ is Cohn's entry", "$K(n-72)$ is again Cohn's entry",
                'A table entry is not the only thing a bound above dimension $48$',
                'is the tabular floor defined here'):
@@ -1437,8 +1441,8 @@ if _a96 is not None:
         bool(_r96) and int(_r96.group(1)) == _a96_top,
         'paper %s, above96.py %d' % (_r96.group(1) if _r96 else None, _a96_top))
 
-# ---- section 8.2: the exposure subsection, against ers_exposure.py's own ranking -----------
-# Everything section 8.2 says is downstream of a claim, and none of it was checked before:
+# ---- section 9.2: the exposure subsection, against ers_exposure.py's own ranking -----------
+# Everything section 9.2 says is downstream of a claim, and none of it was checked before:
 # 1.47, 8.9 and 4.06 are not integers >= 1000 so unsupported.py never sees them, 45235 passes
 # only because a copy sits in common/published.py, and the dimension NAMED is prose.  If a
 # claim moves far enough that another dimension becomes the most exposed, the subsection
@@ -1448,7 +1452,7 @@ sys.path.insert(0, os.path.join(KV, 'verifications', 'closed', 'dim96-ers-takeov
 try:
     from ers_exposure import ranked as _ers_ranked
 except Exception as _e:
-    chk('section 8.2 exposure guard can import the ranking', False, repr(_e))
+    chk('section 9.2 exposure guard can import the ranking', False, repr(_e))
     _ers_ranked = None
 
 if _ers_ranked is not None:
@@ -1469,21 +1473,21 @@ if _ers_ranked is not None:
                       _after)
     _fac = re.search(r'a factor \$([\d.]+)\$', _after)
 
-    chk('section 8.2 names the most exposed dimension', _i >= 0 and bool(_dims)
+    chk('section 9.2 names the most exposed dimension', _i >= 0 and bool(_dims)
         and int(_dims[-1]) == _top[0],
         'paper %s, ers_exposure %s' % (_dims[-1] if _dims else None, _top[0]))
-    chk('section 8.2 exposure factor', bool(_fac) and abs(float(_fac.group(1)) - _top[7]) < 0.005,
+    chk('section 9.2 exposure factor', bool(_fac) and abs(float(_fac.group(1)) - _top[7]) < 0.005,
         'paper %s, ers_exposure %.2f' % (_fac.group(1) if _fac else None, _top[7]))
-    chk('section 8.2 level-one threshold', bool(_thr) and int(_thr.group(1)) == _top[6],
+    chk('section 9.2 level-one threshold', bool(_thr) and int(_thr.group(1)) == _top[6],
         'paper %s, ers_exposure %s' % (_thr.group(1) if _thr else None, _top[6]))
-    chk('section 8.2 names the code actually in hand at that weight',
+    chk('section 9.2 names the code actually in hand at that weight',
         bool(_have) and int(_have.group(1)) == _top[5],
         'paper %s, ers_exposure %s' % (_have.group(1) if _have else None, _top[5]))
-    chk('section 8.2 margin over the chain', bool(_mar)
+    chk('section 9.2 margin over the chain', bool(_mar)
         and abs(float(_mar.group(1)) / 100 + 1 - _top[1] / float(_top[2])) < 0.0005,
         'paper %s%%, ers_exposure %.4f' % (_mar.group(1) if _mar else None,
                                            _top[1] / float(_top[2])))
-    chk('section 8.2 runner-up dimension and factor', bool(_nxt)
+    chk('section 9.2 runner-up dimension and factor', bool(_nxt)
         and int(_nxt.group(2)) == _next[0] and abs(float(_nxt.group(1)) - _next[7]) < 0.005,
         'paper %s at %s, ers_exposure %s at %.2f'
         % (_nxt.group(2) if _nxt else None, _nxt.group(1) if _nxt else None,
@@ -1494,7 +1498,7 @@ if _ers_ranked is not None:
     # third data point.
     _rest = re.search(r'every other\s+dimension exceeds \$(\d+)\$', _after)
     _worst = min(_r[7] for _r in _order[2:]) if len(_order) > 2 else None
-    chk('section 8.2: every dimension past the runner-up clears the stated floor',
+    chk('section 9.2: every dimension past the runner-up clears the stated floor',
         bool(_rest) and _worst is not None and _worst > float(_rest.group(1)),
         'paper says > %s, the tightest of the remaining %d is %.3f (dimension %s)'
         % (_rest.group(1) if _rest else None, len(_order) - 2,
@@ -1706,14 +1710,14 @@ _other = sorted(set(tab4) - set(_lat))
 # uses happen not to overlap.
 _NUMWORD = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six',
             7: 'seven', 43: 'forty-three', 48: 'forty-eight', 51: 'fifty-one',
-            52: 'fifty-two'}
+            52: 'fifty-two', 53: 'fifty-three', 5: 'five'}
 _abstract = TEX[TEX.index(chr(92) + 'begin{abstract}'):TEX.index(chr(92) + 'end{abstract}')]
 chk('the abstract excludes exactly the bounds no lattice gives',
     ('All but %s' % _NUMWORD.get(len(_other), '?')) in _abstract,
     'derived %d (%s); the abstract does not say "All but %s"'
     % (len(_other), ', '.join(str(d) for d in _other), _NUMWORD.get(len(_other), '?')))
-chk('and those are the constant-weight and chain dimensions',
-    _other == [39, 62, 63, 96], str(_other))
+chk('and those are the hexagon, the constant-weight and the chain dimensions',
+    _other == [18, 39, 62, 63, 96], str(_other))
 
 # "Forty-three of the fifty-two" appears twice -- sections 1.2 and 1.5 -- and both times
 # counts the dimensions ABOVE 48, which is not the lattice-based set, so reading the count
@@ -1750,11 +1754,18 @@ chk('and no chain dimension is among them',
 # are code-theoretic" -- and said "Three" until now, one section away from
 # an abstract that had already been corrected.  Same derived number, so
 # check it in the same place.
+# _other is "not from the three lattices", which since dimension 18 joined Table 4 is one
+# more than "code-theoretic": the hexagon is over the odd Barnes-Wall lattice and uses no
+# code chain.  Derive the code-theoretic set from Table 4's own construction column instead.
+_code = sorted(d for d in tab4
+               if 'textsc{ers}' in tab4[d][2] or 'constant-weight' in tab4[d][2])
+chk('the code-theoretic dimensions are 39, 62, 63 and 96', _code == [39, 62, 63, 96],
+    str(_code))
 _sec6 = re.search(r'(\w+) improvements are code-theoretic', TEX)
 chk('section 6 counts the code-theoretic improvements the same way',
-    bool(_sec6) and _sec6.group(1).lower() == _NUMWORD.get(len(_other), '?'),
+    bool(_sec6) and _sec6.group(1).lower() == _NUMWORD.get(len(_code), '?'),
     'section 6 says %r; derived %s'
-    % (_sec6.group(1) if _sec6 else None, _NUMWORD.get(len(_other), '?')))
+    % (_sec6.group(1) if _sec6 else None, _NUMWORD.get(len(_code), '?')))
 
 
 # ---- the reference layer -------------------------------------------------------------

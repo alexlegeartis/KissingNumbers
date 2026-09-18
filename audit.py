@@ -41,7 +41,7 @@ CHECKS
      now falls back to that table, which also admits NONLINEAR codes, and best_chain returns
      1.255, 1.104, 1.073 and 1.000 at those four dimensions: at or above published ERS,
      which is what an evaluator with better tables must give.  Nothing in 49..96 moved, so
-     the paper's section 8.2 margins are unaffected.  closed/dim32-44-ers-audit/ remains the
+     the paper's section 9.2 margins are unaffected.  closed/dim32-44-ers-audit/ remains the
      dedicated low-range evaluator, with Brouwer's tables including Echols arXiv:2608.13906;
      it is what shows the chain reaching 570 236 at dimension 38 against a claim of 591 612,
      and 756 116 at dimension 39, which IS the claim there;

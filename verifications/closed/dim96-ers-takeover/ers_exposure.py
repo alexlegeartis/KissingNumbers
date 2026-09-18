@@ -72,7 +72,7 @@ def sign0(m):
 
     This can only RAISE the rival.  Measured before changing it: nothing in 49..96 moves,
     because in every claimed dimension there a better chain top is already available -- the
-    paper's section 8.2 figures (dimension 68 at 1.47, dimension 95 at 4.06) are unchanged.
+    paper's section 9.2 figures (dimension 68 at 1.47, dimension 95 at 4.06) are unchanged.
     Below 48 it is the whole difference, and best_chain now meets or exceeds all six of the
     published ERS totals it can reach (1.255, 1.104, 1.073, 1.000 at 32, 36, 40, 44; 1.000
     at 64 and 80), which is what a faithful evaluator with better tables must do.
@@ -139,7 +139,7 @@ def gridmap(n, w):
     Without this, acw fell back on published.Acw below weight 10 and returned 41664 for
     A(96,6,6) where the grid map gives 16^4 = 65536 -- the 763904 by which best_chain(96)
     disagreed with ers96.py, which had this map hardcoded.  An understated rival makes
-    every margin in the paper's section 8.2 look wider than it is, so the error ran in
+    every margin in the paper's section 9.2 look wider than it is, so the error ran in
     the flattering direction and had to be removed."""
     best, why = 0, ''
     d = -((-w) // 2)                       # the distance the overlap condition needs

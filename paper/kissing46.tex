@@ -1,7 +1,7 @@
 \documentclass[11pt]{amsart}
 \usepackage{amssymb,amsmath,booktabs,longtable}
 \usepackage[hidelinks,
-  pdftitle={New lower bounds for kissing numbers in dimensions 25 through 96},
+  pdftitle={New lower bounds for kissing numbers in dimensions 18 through 96},
   pdfauthor={Alexey Kravatskiy}]{hyperref}
 
 \newtheorem{theorem}{Theorem}[section]
@@ -20,13 +20,13 @@
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Q}{\mathbb{Q}}
 
-\title[Kissing numbers in dimensions 25 to 96]
-      {New lower bounds for kissing numbers\\in dimensions 25 through 96}
+\title[Kissing numbers in dimensions 18 to 96]
+      {New lower bounds for kissing numbers\\in dimensions 18 through 96}
 \author{Alexey Kravatskiy}
 \address{MIRIAI (Moscow Independent Research Institute\newline
 of Artificial Intelligence), Moscow, Russia}
 \email{kravatskii.a@miriai.org}
-\date{11 September 2026}
+\date{18 September 2026}
 \subjclass[2020]{Primary 52C17; Secondary 11H31, 11H71, 05B40, 94B25}
 \keywords{Kissing number, spherical code, extremal even unimodular lattice,
 spherical design, Leech lattice, linear programming bound, exact verification}
@@ -39,53 +39,35 @@ spherical design, Leech lattice, linear programming bound, exact verification}
 
 \begin{abstract}
 The kissing number $K(n)$ is the largest number of unit vectors in $\R^n$ with
-pairwise inner products at most $\tfrac12$. We improve the best known lower
-bound in $52$ dimensions between $25$ and $96$. All but four of these bounds
-come from the extremal even unimodular lattices $\Leech$, $\Pff$ and $\Gsz$, by
-two constructions: cross-sections of the minimal shell and layered
-configurations built on it.
+pairwise inner products at most $\tfrac12$. We improve the best known lower bound
+in $53$ dimensions between $18$ and $96$.
 
-For cross-sections we apply Venkov's theorem, that the minimal shell of an
-extremal even unimodular lattice of dimension divisible by $24$ is a spherical
-$11$-design, to monomials in the inner products with several fixed minimal
-vectors. The resulting linear constraints on the $k$-point distribution,
-together with two consequences of the lattice structure, bound the number of
-minimal vectors orthogonal to all of them. Each bound carries an exact rational
-dual certificate. Which Gram matrix to fix is settled by Hermite's inequality,
-and the matrices attaining its bound are exhibited in $\Gsz$: we obtain
-$K(71)\ge\Kh{71}$, $K(70)\ge\Kh{70}$,
-$K(69)\ge\Kh{69}$ and $K(68)\ge\Kh{68}$. In dimensions $46$ and
-$47$ the same programme returns the published values $12\,309\,600$ and
-$23\,766\,960$, both of them exactly, which validates the method.
+All but five come from the extremal even unimodular lattices $\Leech$, $\Pff$ and
+$\Gsz$, by two constructions. For cross-sections we apply Venkov's theorem --- the
+minimal shell of such a lattice is a spherical $11$-design --- to monomials in the
+inner products with several fixed minimal vectors, which bounds the number of
+minimal vectors orthogonal to all of them; each bound carries an exact rational
+dual certificate, and in dimensions $46$ and $47$ the same programme returns the
+published values exactly, which validates it. The layered construction puts the
+minimal shell on an equator of $\R^{n}\oplus\R^{k}$ and adjoins lifted copies of
+part of it. Its level, and the height and norm of its head, are all free
+parameters: at height $\sqrt2$ a norm-$8$ head lets a whole frame of $\Leech$
+carry the whole cross-polytope of $\R^{k}$, which is $96k$ points that delete
+nothing. Every dimension from $25$ to $31$ is improved --- $K(25)\ge\Kh{25}$,
+$K(26)\ge\Kh{26}$, $K(27)\ge\Kh{27}$, $K(28)\ge\Kh{28}$, $K(29)\ge\Kh{29}$,
+$K(30)\ge\Kh{30}$, $K(31)\ge\Kh{31}$ --- as are $K(38)\ge\Kh{38}$ and the
+dimensions $49$--$61$, $68$--$71$ and $73$--$95$.
 
-The layered construction places the minimal shell on an equator of
-$\R^{n}\oplus\R^{k}$ and adjoins lifted copies of part of it. Its level $t$ is
-bounded below by $1/(2(1-\gamma))$, where $\gamma$ is the largest inner product
-allowed between two minimal lines lifted above one direction: for $\Leech$ and
-$\Gsz$ the level may be $\tfrac23$, where one set of lines serves a zero-sum
-triple of directions, while $\Pff$ admits only an antipodal pair. This gives
-$K(38)\ge\Kh{38}$ and improvements throughout $49\le n\le 61$ and
-$73\le n\le 95$; over $\Leech$ it reproduces the published values in dimensions
-$25$ to $31$ to within $496$, and rebuilding its caps --- as heads in the lens of
-a minimal vector, and as coset classes over norm-$6$ vectors on every triangle of
-directions --- gives $K(25)\ge\Kh{25}$, $K(26)\ge\Kh{26}$ and
-$K(27)\ge\Kh{27}$. The level is forced only for a layer that carries a whole set
-of lines; one carrying a few points above each direction may sit at any height,
-and there are heights at which such a layer deletes nothing at all and its
-directions still clear the axis. The norm of its head is free as well, and at
-height $\sqrt2$ a norm-$8$ head --- rather than the norm-$6$ one every earlier
-layer used --- lets a whole frame of $\Leech$ carry the whole cross-polytope of
-$\R^{k}$, which is $96k$ points in every dimension and deletes nothing. This
-gives $K(28)\ge\Kh{28}$, $K(29)\ge\Kh{29}$, $K(30)\ge\Kh{30}$ and
-$K(31)\ge\Kh{31}$, so that every dimension from $25$ to $31$ is improved.
+Of the other five, four are the chain of Edel--Rains--Sloane evaluated against
+the current code tables: $K(39)\ge\Kh{39}$, $K(62)\ge\Kh{62}$,
+$K(63)\ge\Kh{63}$ and, overtaking $\Gsz$ at $n=96$, $K(96)\ge\Kh{96}$. The
+fifth is dimension $18$, where a hexagon of tiers
+over the odd Barnes--Wall lattice has three six-set families that may be chosen as
+bent cosets of $\mathrm{RM}(1,4)$; this raises its outer tier from $256$ vectors
+to $960$ and gives $K(18)\ge\Kh{18}$, against $\Kp{18}$.
 
-The four remaining bounds are code-theoretic. Evaluated against the current code
-tables, the chain of Edel--Rains--Sloane gives $K(39)\ge\Kh{39}$,
-$K(62)\ge\Kh{62}$ and $K(63)\ge\Kh{63}$; at $n=96$ it overtakes
-$\Gsz$, giving $K(96)\ge\Kh{96}$.
-
-Every bound is certified in exact arithmetic by a public verification package;
-no floating-point computation decides any of them.
+Every bound is certified in exact arithmetic by a public verification package; no
+floating-point computation decides any of them.
 \end{abstract}
 
 \maketitle
@@ -122,7 +104,7 @@ of Edel--Rains--Sloane \cite{edel-rains-sloane1998}. In dimensions $73$--$96$ th
 same construction over $\Gsz$ gives $6\,218\,175\,600+K(n-72)$, which at $n=96$ is
 $6\,218\,175\,600+196\,560$, the second summand being the Leech lattice; here
 $K(n-72)$ is again Cohn's entry, its argument running from $1$ to $24$. Forty-three of
-the fifty-two improvements below lie in these ranges.
+the fifty-three improvements below lie in these ranges.
 
 One dimension inside those three ranges is tabulated: at $n=80$ Nebe--Sloane record
 $\Gsz\perp E_8$, whose kissing number $6\,218\,175\,600+240$ is the direct sum
@@ -172,7 +154,7 @@ Table~\ref{tab:summary} groups the improvements by construction.
 Table~\ref{tab:all} in \S\ref{sec:results} gives one row per dimension.
 
 \begin{table}[ht]
-\caption{The fifty-two improvements, grouped by construction; $\#$ is the number
+\caption{The fifty-three improvements, grouped by construction; $\#$ is the number
 of dimensions in a row. The gain is $K_{\mathrm{here}}-K_{\mathrm{prev}}$ and the
 factor their ratio, computed dimension by dimension, with the factor
 attaining both its extremes at an end of the dimension range, to the two decimals
@@ -194,8 +176,9 @@ the \textsc{ers} chain & $62$, $63$ & $2$ & $\Kgain{63}$ & $1.36$--$2.64$ & \S\r
 the \textsc{ers} chain at $96$ & $96$ & $1$ & $\Kgain{96}$ & $2.07$--$2.07$ & \S\ref{ss:d96}\\
 layers over $\Gsz$ & $73$--$95$ & $23$ & $\Kgain{95}$ & $1.00$--$1.04$ & \S\ref{ss:big}\\
 constant-weight codes & $39$ & $1$ & $\Kgain{39}$ & $1.00$--$1.00$ & \S\ref{ss:d39}\\
+the bent-coset hexagon & $18$ & $1$ & $\Kgain{18}$ & $\Kfac{18}$--$\Kfac{18}$ & \S\ref{sec:d18}\\
 \midrule
-total & & $52$ & & &\\
+total & & $53$ & & &\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -205,7 +188,7 @@ entry at all. Three rows exceed $2$, and in none of them is the gain a new
 construction: the cross-sections count a classical configuration, and dimensions
 $62$, $63$ and $96$ evaluate a construction of $1998$ against the code tables of
 $2026$. The rows
-with factors near $1$ span the most dimensions, $45$ of the $52$, though the two
+with factors near $1$ span the most dimensions, $46$ of the $53$, though the two
 largest absolute gains lie in rows whose factor exceeds $2$.
 
 \subsection{Attribution}\label{ss:new}
@@ -224,8 +207,8 @@ claim neither. Cohn's table \cite{cohn-table} records
 $5\,318\,060$ in dimension $46$ and $9\,741\,412$ in dimension $47$.
 \end{sloppypar}
 
-\emph{The fifty-two listed below.} We have found no earlier published claim in dimensions
-$25$--$31$, $38$, $39$, $49$--$63$, $68$--$71$ or $73$--$96$. The one-point
+\emph{The fifty-three listed below.} We have found no earlier published claim in dimensions
+$18$, $25$--$31$, $38$, $39$, $49$--$63$, $68$--$71$ or $73$--$96$. The one-point
 distribution of the minimal shell of $\Gsz$ follows from Venkov's theorem in a
 few lines; the bounds in dimensions $70$ and $71$ may therefore already be known
 to specialists, though we have found no record of them. Dimensions $62$, $63$ and $96$
@@ -245,7 +228,8 @@ notation and states the two classical inputs. \S\ref{sec:cross} develops the
 cross-section method and proves the bounds in dimensions $68$ through $71$.
 \S\ref{sec:cap} analyses the layered construction and proves the remaining
 bounds, apart from dimensions $39$, $62$, $63$ and $96$, which are code-theoretic and
-are treated in \S\ref{sec:ers}. \S\ref{sec:results} collects the full table.
+are treated in \S\ref{sec:ers}, and dimension $18$, which uses neither lattice and
+is treated in \S\ref{sec:d18}. \S\ref{sec:results} collects the full table.
 \S\ref{sec:remarks} records the constructions we find to be exhausted, the margin
 of the bounds above dimension $48$, one open question and the verification.
 
@@ -365,15 +349,19 @@ integer parameters specifies each of them, apart from the four code-theoretic
 ones, which a chain of codes specifies. They lie beyond the reach of a
 coordinate search. We obtain them from the structure of three extremal lattices.
 
-Forty-three of the fifty-two dimensions below lie in ranges in which the published
+Forty-three of the fifty-three dimensions below lie in ranges in which the published
 tables have one entry between them, at $n=80$ (\S\ref{ss:tables}). The improvements there measure the extent
 to which those ranges have not previously been examined.
 
-The methods of this paper yield nothing in dimensions $9$ through $23$. Every
-published record in dimensions $9$ through $19$ is maximal, in the sense that no
-further point may be added to it, as are the cross-sections $\Lambda_{21}$,
-$\Lambda_{22}$ and $\Lambda_{23}$; and the Cohn--Li construction is at its exact
-ceiling in dimensions $18$ through $21$ (\S\ref{ss:obstructions}).
+Below dimension $25$ the methods of this paper yield only dimension $18$
+(\S\ref{sec:d18}). Every published record in dimensions $9$ through $19$ is
+maximal, in the sense that no further point may be added to it, as are the
+cross-sections $\Lambda_{21}$, $\Lambda_{22}$ and $\Lambda_{23}$; maximality
+forbids extending a configuration, not replacing it, and dimension $18$ is
+replaced. The constant-weight-code construction of \cite{cohn-li2024} is at its
+exact ceiling in dimensions $18$, $20$ and $21$, and dimension $19$ is closed at
+the value of Ho (\S\ref{ss:obstructions}) --- but in dimension $18$ that is not the
+construction holding the record, and the one that does is improved here.
 
 
 \section{Preliminaries}\label{sec:prelim}
@@ -1963,10 +1951,100 @@ built here: \cite{repo} constructs $[6,4,3]_{16}$ and establishes its minimum di
 by evaluating all $16^4$ polynomials. The sign code $[96,33,24]$, which carries two
 thirds of the total, and the quaternary code $[24,9,12]_4$ are taken from \cite{codetables}.
 
+\section{Dimension 18: a hexagon of bent cosets}\label{sec:d18}
+
+The one improvement below dimension $25$ uses none of the three extremal lattices
+above, and no code chain either.
+Write a point of $\R^{18}=\R^{16}\oplus\R^{2}$ as $(v,p)$ in units where the norm
+is $8$, so that two points are compatible exactly when $\ip{(v,p)}{(v',p')}\le4$.
+The configuration is a hexagon:
+
+\begin{table}[ht]
+\caption{The dimension-$18$ configuration. The first three rows are the layout of
+\cite{cohn-li2024}; the whole improvement is in the fourth.}
+\label{tab:d18}
+\small
+\begin{tabular}{llll r}
+\toprule
+ & $|p|^{2}$ & angles of $p$ & $v$ & points\\
+\midrule
+equator & $0$ & --- & odd $\mathrm{BW}_{16}$ & $480+30\cdot128=4\,320$\\
+tiers & $2$ & $0^\circ,60^\circ,\dots,300^\circ$ & $\pm1$ on a $6$-set of that angle's family & $6\cdot16\cdot32=3\,072$\\
+poles & $8$ & $0^\circ,60^\circ,\dots,300^\circ$ & $0$ & $6$\\
+tier B & $8/9$ & $30^\circ,90^\circ,\dots,330^\circ$ & $(2/3)(-1)^{c}$, $c$ a sign word & $6\cdot160=960$\\
+\midrule
+total & & & & $\Kh{18}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Here odd $\mathrm{BW}_{16}$ means the $480$ vectors $(\pm2,\pm2,0^{14})$ together
+with the vectors supported on an octad of $\mathrm{RM}(1,4)$ with entries $\pm1$
+and an odd number of minus signs. Decoding the $\Kp{18}$ of \cite{cohn-li2024}
+exhibits exactly this hexagon, with their outer tier occupying the two angles
+$0^\circ$ and $180^\circ$ and carrying $256$ vectors. The gain of $\Kgain{18}$ is
+entirely in that outer tier, and it comes from choosing the three six-set
+families differently.
+
+\subsection{What the outer tier costs}
+
+Let $c\in\mathbb F_2^{16}$ be the sign word of a tier-B vector. Against the odd
+octad vectors $c$ must be even on every octad, that is $c\in\mathrm{RM}(2,4)$;
+against a tier at angular distance less than $90^\circ$ it must be even on every
+six-set of that tier's family; at $90^\circ$ or more there is no constraint at
+all, which is why the six angles $30^\circ+60^\circ k$ are better than the two
+that \cite{cohn-li2024} use. For $c\in\mathrm{RM}(2,4)$ the parity
+$\ip{c}{\mathbf 1_X}$ depends only on the coset of $\mathrm{RM}(1,4)$ containing
+$\mathbf 1_X$. A family whose sixteen six-sets all lie in \emph{one} coset
+$z+\mathrm{RM}(1,4)$ therefore costs tier B a single linear condition
+$\ip{c}{z}=0$, whereas a family spread over two cosets costs two.
+
+The cosets of $\mathrm{RM}(1,4)$ inside $\mathrm{RM}(2,4)$ that contain weight-$6$
+words are exactly the $28$ \emph{bent} cosets, of weights $6$ and $10$, sixteen
+words each. The sixteen weight-$6$ words of a bent coset form a symmetric
+$2$-$(16,6,2)$ design, so they pairwise meet in two cells; that is a valid tier,
+and a maximal one --- sixteen is the largest family of admissible six-sets
+\cite{repo}.
+
+\subsection{Which hexagons are open}
+
+On $\mathrm{RM}(2,4)/\mathrm{RM}(1,4)\cong\mathbb F_2^{6}$ the pairing
+$B(q,z)=\ip{q}{z}$ is a nondegenerate symplectic form, and ``bent'' is the
+quadric $O^{+}(6,2)$ of $28$ nonsingular points. For bent $q$ and $z$ one has
+$B(q,z)=1$ if and only if $q+z$ is bent --- and that is also exactly the condition
+for two tiers $60^\circ$ apart to be compatible, their six-sets meeting in at
+most three cells. A hexagon of tiers is therefore a triangle $z_0,z_1,z_2$ in the
+bent-sum graph, and there are two kinds.
+
+If $z_2=z_0+z_1$, the triangle is \emph{closed}: all twelve possible tier-B
+angles see the same $512$-word space, and since a word may be used at only one
+angle the outer tier is capped at $512$.
+
+If $z_0+z_1+z_2\notin\mathrm{RM}(1,4)$ --- \emph{open}, which $280$ of the $336$
+triangles are --- the six angles $30^\circ+60^\circ k$ see three \emph{different}
+$512$-word spaces, pairwise meeting in a $256$-word one. Each is an affine
+$4$-space of $\mathrm{RM}(1,4)$-cosets over an elliptic quadric, and full cosets
+pairwise at bent difference form a distance-$6$ code: the bent-difference graph on
+those sixteen cosets is the complement of the Clebsch graph, whose clique number
+is $5$, so each angle carries $5\cdot32=160$ words. The six sets of $160$ are
+pairwise disjoint, since distinct words of $\mathrm{RM}(2,4)$ are automatically at
+distance at least $4$, which is all that angles $60^\circ$ or more apart require.
+This gives $6\cdot160=960$ and
+\[
+  K(18)\;\ge\;4\,320+3\,072+6+960\;=\;\Kh{18}.
+\]
+
+The first family of \cite{cohn-li2024} is one of these $28$ bent cosets; their
+other two are each half of one bent coset and half of another. That costs an extra
+linear condition apiece and makes every angle see the same $256$ words, so $256$
+was indeed a ceiling --- for their base, with the code varying, rather than for the
+construction. Dimension $18$ is discussed again in \S\ref{ss:obstructions}, where
+the ceiling that does hold is the one for the \emph{other} Cohn--Li shape.
+
 \section{The results}\label{sec:results}
 
 \begin{longtable}{rrrl}
-\caption{All fifty-two improvements. ``Previously'' is \cite{cohn-table} where
+\caption{All fifty-three improvements. ``Previously'' is \cite{cohn-table} where
 that table has an entry and otherwise the direct sum or inherited value of
 \S\ref{ss:tables}. Dimensions $44$ to $47$ are absent:
 \cite{sun-wang2026} gives larger values in dimensions $44$ and $45$;
@@ -1981,6 +2059,7 @@ $n$ & previously & this work & construction\\
 \endhead
 \bottomrule
 \endfoot
+$18$ & $\Kp{18}$ & $\Kh{18}$ & bent-coset hexagon over odd $\mathrm{BW}_{16}$ (\S\ref{sec:d18})\\
 $25$ & $\Kp{25}$ & $\Kh{25}$ & layers over $\Leech$, lens heads (\S\ref{ss:d25})\\
 $26$ & $\Kp{26}$ & $\Kh{26}$ & layers over $\Leech$, one hexagon of leans (\S\ref{ss:d2627})\\
 $27$ & $\Kp{27}$ & $\Kh{27}$ & layers over $\Leech$, two coset triangles (\S\ref{ss:d2627})\\
@@ -2055,8 +2134,12 @@ In dimension $20$ the set $\Sigma$ has five elements and they are linearly
 independent, so each of the $128$ components of the graph is the $5$-cube,
 bipartite with independence number $16$, whence $128\times16=2\,048$. In dimension
 $18$ the number is $768$ and is attained, but the construction then totals
-$6\,500+768=7\,268$, short of the $7\,654$ that \cite{cohn-li2024} prove in that
-dimension by a configuration of a different shape.
+$6\,500+768=7\,268$, short of the $\Kp{18}$ that \cite{cohn-li2024} prove in that
+dimension by a configuration of a different shape. That other shape is the hexagon
+of \S\ref{sec:d18}, and it is \emph{not} at a ceiling: its outer tier rises from
+$256$ to $960$, which is the whole of the improvement recorded there. A ceiling
+established for one shape says nothing about the dimension while another shape
+holds its record.
 
 \emph{Dimension $19$ is closed at the value of Ho.} Here the graph has four
 components. Each is the Cayley graph on $\mathbb F_2^{10}$ with a connection set
