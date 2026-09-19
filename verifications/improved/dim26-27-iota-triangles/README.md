@@ -1,9 +1,9 @@
 # Dimensions 26 and 27: the coset triangle on every triangle of directions
 
-**τ(26) ≥ 199 770** and **τ(27) ≥ 201 503**, against the published 198 550 and 200 044
+**τ(26) ≥ 199 770** and **τ(27) ≥ 201 508**, against the published 198 550 and 200 044
 (Cohn's table; Ma et al. 2025) and this repository's earlier 200 540 in dimension 27 (now in
 [`../../superseded/dim27-triple-partition/`](../../superseded/dim27-triple-partition/)).
-Improvements of **+1 220** and **+1 459** over the table.
+Improvements of **+1 220** and **+1 464** over the table.
 
 ```
 python verify26.py          # ~1 min, exact arithmetic in every decision; exits non-zero on failure
@@ -31,11 +31,11 @@ cross-constrained at cosine ≤ 1/2, and
 
 | | dimension 26 | dimension 27 |
 |---|---|---|
-| equator `(z, 0)`, `z` a minimal vector that is not an owner | 195 102 | 194 149 |
+| equator `(z, 0)`, `z` a minimal vector that is not an owner | 195 102 | 194 144 |
 | caps, three per head | 3 × 1554 | 3 × 2262 |
-| caps, two per second-layer head (dimension 27 only) | — | 2 × 278 |
+| caps, two per second-layer head (dimension 27 only) | — | 2 × 283 |
 | axis | 6 | 12 |
-| **total** | **199 770** | **201 503** |
+| **total** | **199 770** | **201 508** |
 
 Every head is `y/3` with `y = 3u + v` an integer vector: `u` a minimal vector (the *owner*,
 which the head removes from the equator) and `v` a Leech vector of norm 6 (a *lean*) with
@@ -98,7 +98,7 @@ hexagon, the widest gap is 30°, and measured against the shipped layer **not on
 196 560 minimal vectors qualifies. In dimension 27 they are the cuboctahedron's twelve
 vertices, whose covering radius is 45°, attained exactly at the six square-face centres
 `±e₁, ±e₂, ±e₃` — three antipodal lines. That single extra quantum takes the admissible
-owners from 0 to **3009**, and 278 of them fit (94 + 96 + 88). Everything reduces to two
+owners from 0 to **3009**, and 283 of them fit (99 + 95 + 89). Everything reduces to two
 integer comparisons,
 
     ⟨Y, u⟩ ≤ 32   because  (√3/48)·32 + 2/√6 = (2+√2)/√3 = 1.9712 < 2

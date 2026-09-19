@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Exact verification of  K(27) >= 201503   (python verify27.py)
+"""Exact verification of  K(27) >= 201508   (python verify27.py)
 
 TWO cap layers.
 

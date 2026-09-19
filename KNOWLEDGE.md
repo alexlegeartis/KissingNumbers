@@ -10659,14 +10659,15 @@ the obvious question -- *how large can ONE line be?* -- was never asked.
 eligible owners carry one condition, `<u,u'> <= 8` on a line, and *nothing at all* across lines,
 so the three lines are three independent sets of the same graph and the layer is at most three
 times its independence number.  A phased local search (add / one-conflict-swap / perturb, with
-the conflict counts maintained incrementally) finds independent sets of **95** where the shipped
-layer's largest line had 90, so the real ceiling is **285**, not 1078.  The same engine run on
-the three-colouring itself reaches **278**:
+the conflict counts maintained incrementally) finds independent sets of **99** where the shipped
+layer's largest line had 90, so the real ceiling is **297**, not 1078.  The same engine run on
+the three-colouring itself plateaus at 279, and taking the lines SEQUENTIALLY -- a maximum independent set, remove it, repeat -- reaches **283**:
 
-    196560 - 2133 - 278 + 3*2262 + 2*278 + 12 = 201503        (+11; +1459 over Cohn's 200044)
+    196560 - 2133 - 283 + 3*2262 + 2*283 + 12 = 201508        (+16; +1464 over Cohn's 200044)
 
 verified from `data/` alone by `verify27.py`, whose count line is computed, not typed.  Scripts:
-`layer27alpha.py` (the one-line maximum) and `layer27col.py` (the colouring).
+`layer27alpha.py` and `alpha1.py` (the one-line maximum), `layer27col.py` (the simultaneous
+colouring), `seqlayer.py` (sequential extraction) and `rotlayer.py` (rotating re-extraction).
 
 **What the lever is.**  Nothing about the geometry changed; 267 was where a solver stopped.  The
 general lesson is the one this repository keeps relearning: *a CP-SAT bound is not a ceiling, it
