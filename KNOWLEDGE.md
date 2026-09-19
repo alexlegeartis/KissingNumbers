@@ -10571,6 +10571,39 @@ norm-6 lean clears the equator at every one of those radii, so the value per hea
   heads must be 70.53 degrees apart, giving `f` of order ten. `K(27) >= 199780`. The lumpiness
   that makes the holes deep is the same lumpiness that makes them few.
 
+### The cap layer is maximal in a model strictly LARGER than the one that built it
+
+The shipped model gives every head a whole zero-sum TRIPLE of directions and sees two
+thresholds, 48 inside a side and 96 across. That is a restriction. A cap point is a pair
+(head, direction), and between two cap points the threshold is `144 - 96 cos(d,d')`, which on
+the cuboctahedron takes FOUR values:
+
+    same direction (1 of 12)      <= 48
+    60 degrees     (4)            <= 96
+    90 degrees     (2)            <= 144
+    120 or 180     (5)            no constraint, since |Y|^2 = 192
+
+so two cap points 120 degrees apart are completely unconstrained and the 144 band is never
+used by the shipped model at all. A head may also take ANY direction set pairwise at cosine
+`<= -1/2`: a zero-sum triple (3 points, and 3 pairwise at -1/2 forces `|sum y|^2 = 0`, so
+triples are the only size-3 sets), an ANTIPODAL pair `{d,-d}` (2 points, and NOT a subset of
+any triple), a 120-degree pair, or one direction. The shipped model is all-or-nothing on a
+triple and uses only 4 of the 8 triples.
+
+Scoring per cap point, `value = (cap points) - (class heads used)`: a triple is +2, a pair +1,
+a single 0; free heads are +3, +2, +1. The ceiling is `12 x 762 = 9144` cap points over at
+least 3048 heads, i.e. **6096** against the shipped 4653.
+
+MEASURED on the shipped configuration in this relaxed model (`percap2.py`, `percap3.py`):
+
+> **0 cap points can be added with no conflict**, and of the 202 blocked by exactly ONE placed
+> cap point, spread over 95 distinct blockers, **not one (1,2)-swap exists** -- no two of them
+> share a blocker, avoid each other, and land on heads already paid for.
+
+So the layer is maximal in a model that is strictly larger than the one that produced it,
+which is a much stronger statement than being maximal in its own. The gap to 6096 is real and
+is not reachable by local moves.
+
 ### Two more shapes of the whole layer, both priced
 
 *The norm-8 FRAME layer, which gives dimensions 28-31 their jumps.* Heads `x = w/2` over the 48
