@@ -10517,6 +10517,23 @@ relying on -- and `(3/32)*8 + 1 = 7/4 < 2`.
   further. Measured over 2500 random leans: **0** clearing heads. The scaled owner is the right
   shape here precisely because it is the least tilted one.
 
+**And the layer itself is capped, by a packing-density argument.** Its threshold is set by the
+covering radius `theta` of the first-layer directions, through
+`(sqrt3/48)<Y,u> + (2/sqrt3) cos(theta) <= 2`; the tiers are `theta >= 45.00` for `<Y,u> <= 32`
+(pool 3009), `61.24` for 40 (pool 13656), `70.53` for 48 (pool 194427). Twelve directions
+pairwise at 60 degrees are twelve DISJOINT spherical caps of radius 30, and a hole of radius
+`r` at `n` -- for a head carrying `+-y`, at BOTH poles -- confines those caps to the band
+`r - 30 <= angle <= 180 - (r - 30)`:
+
+    hole 45.00 deg   band area 12.138, caps need 10.101   density  83.2%   ATTAINED
+    hole 61.24 deg   band area 10.744, caps need 10.101   density  94.0%
+    hole 70.53 deg   band area  9.551, caps need 10.101   density 105.8%
+
+94.0% is above the planar Thue bound 90.69%, which spherical caps of this radius cannot exceed,
+and 105.8% is impossible outright. So the cuboctahedron's 45 degrees is what a valid direction
+system can offer, the second layer lives on the `<Y,u> <= 32` tier, and 267 of its 3009
+candidates is the whole of it.
+
 **Why.** Section 151 measured the one-layer template to its ceiling and dimension 26 sat on it;
 the way past a ceiling is a parameter the ceiling did not contain, and the head HEIGHT was one
 -- known to be free since section 136 in dimensions 29-31, never tried in 26/27. The reason it
