@@ -165,7 +165,7 @@ REASON = {
                     'four-side one.  What was NOT exhausted is the SECOND layer -- a maximum '
                     '3-colourable induced subgraph on 3009 owners, one condition on a line and none '
                     'across lines, so at most three times an independence number measured at 99: '
-                    'ceiling 297, not the 1078 CP-SAT reported, and 283 of it is now taken (was 267). '
+                    'ceiling 297, not the 1078 CP-SAT reported, and 284 of it is now taken (was 267). '
                     'A fourteenth direction line +-(2/sqrt3)e3 clears the axis at 1.6330 < 2 and is '
                     'empty, and the rho = 2 layer at the axis holes is empty (verify27.py; the note, '
                     'section 8)',

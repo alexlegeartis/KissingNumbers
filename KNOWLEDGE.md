@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **152 sections, about 10729 lines**, written as the
+The full working record of the project: **152 sections, about 10747 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -10661,9 +10661,9 @@ so the three lines are three independent sets of the same graph and the layer is
 times its independence number.  A phased local search (add / one-conflict-swap / perturb, with
 the conflict counts maintained incrementally) finds independent sets of **99** where the shipped
 layer's largest line had 90, so the real ceiling is **297**, not 1078.  The same engine run on
-the three-colouring itself plateaus at 279, and taking the lines SEQUENTIALLY -- a maximum independent set, remove it, repeat -- reaches **283**:
+the three-colouring itself plateaus at 279, and taking the lines SEQUENTIALLY -- a maximum independent set, remove it, repeat -- reaches **284**:
 
-    196560 - 2133 - 283 + 3*2262 + 2*283 + 12 = 201508        (+16; +1464 over Cohn's 200044)
+    196560 - 2133 - 284 + 3*2262 + 2*284 + 12 = 201509        (+17; +1465 over Cohn's 200044)
 
 verified from `data/` alone by `verify27.py`, whose count line is computed, not typed.  Scripts:
 `layer27alpha.py` and `alpha1.py` (the one-line maximum), `layer27col.py` (the simultaneous
@@ -10728,3 +10728,20 @@ nothing and is worth +1 on its own.  It must clear the record's heads at `<x,x'>
 0.8453`, and **0** norm-6 vectors do.  (Section 152 recorded the same wall at a different
 scaling.)  Separately, 443 896 iterations of a remove-k / regrow search over a 12-lean,
 6659-head pool never left **1006** -- the CP-SAT bound of 1115 is loose, not a target.
+
+**(g) Orthogonal lean triangles are the wrong structure.**  With `a = <u,u'>`, `b = <u,v'>`,
+`c = <u',v>` and `t = <v,v'>`, two heads sit on one side iff `3a + b + c <= (6-t)/3` and on
+different sides iff `<= (12-t)/3`.  The shipped pair of triangles has `t` running over
+`3, 0, -3`, and `t = 3` makes the CROSS-side condition `<= 3`, as tight as a side -- so making
+the four triangles pairwise ORTHOGONAL, every cross pair at `t = 0` and the cross-side condition
+`<= 4`, looks like the obvious repair.  Built exactly (lean Gram block-diagonal with
+circulant `(6,-3,-3)`, 6624 heads), it gives **1334** class heads against 2133 shipped and 2214
+grown over the 24-cell.  Loosening `t` destroys the correlation between `a`, `b` and `c` that
+the shipped system relies on; the four-side layer wants leans that are RELATED, not independent.
+Script `orthotri.py`.
+
+**Where the room actually is.**  The class layer is 2214 of a four-sides-at-762 ceiling of 3048,
+and nothing moved it: not the 24-lean pool, not a large-kick local search, not four disjoint
+triangles from the 24-cell (1867), not four orthogonal ones (1334).  That 834-head gap is worth
+`+1668` and is the only place in this template where a four-figure gain is still arithmetically
+available.
