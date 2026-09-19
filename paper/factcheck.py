@@ -1243,7 +1243,7 @@ chk('the paper lists the k at which the layer reaches K(k), and the list is righ
 
 # ------------------------------------------------------------- prose numbers vs table
 print('== Prose numbers against the tables ==')
-for d, v in [(25, 197569), (26, 199770), (27, 201485), (38, 591612), (39, 756116),
+for d, v in [(25, 197569), (26, 199770), (27, 201492), (38, 591612), (39, 756116),
              (70, 1249778250), (71, 2603658750), (96, 12886999232)]:
     chk('prose dim %d = table' % d, tab4[d][1] == v, '%d vs %d' % (tab4[d][1], v))
 # Theorem 6.3 and the abstract both state dimension 96.  FLAT collapses whitespace but

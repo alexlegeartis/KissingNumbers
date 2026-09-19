@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **150 sections, about 10371 lines**, written as the
+The full working record of the project: **151 sections, about 10531 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -10450,3 +10450,82 @@ something small depends on it, price the small thing first: the axis is 12 point
 count it fixes is worth thousands, which is why six sides looked obvious and still lost.
 Scripts in `research/collab2531/henry2/`: `nsides.py`, `maxtri.py`, `colour.py`, `sixsides.py`,
 `layer3b.py`, `lp16.py`, `sidelp2.py`, `freemax.py`, `frontier.py`, `thirdside.py`.
+
+## 152. Dimension 27 takes a SECOND cap layer: K(27) >= 201492 (2026-09-19)
+
+Section 151 closed the first cap layer: a side is worth about 1600, dimension 26 attains
+`196560 + 2*1602 + 6 = 199770` exactly, and every alternative lean system, side count and free
+layer loses. That is the ceiling of a ONE-layer template. Dimension 27 is not one-layer.
+
+**The layer.** A cap `(x, y)` with `|y| = 1` has `|x|^2 = 3`. Three facts make it work:
+
+* it satisfies the axis condition `<y,a> <= 2` whatever direction it points, because
+  `|y||a| = 1*2 = 2` -- unlike the first layer, whose `|y| = 2/sqrt3` forces its directions 30
+  degrees off every axis point;
+* it carries the antipodal PAIR `+-y` and no more, since three directions at `|y| = 1` would
+  need pairwise cosine `<= -1`. Two cap points;
+* nothing in `{x : <x,z> <= 2 for all minimal z}` has norm above `8/3` (the covering radius of
+  the minimal-vector code is `arccos sqrt(3/8)`), so a head at `|x|^2 = 3` always deletes. The
+  scaled owner `x = (sqrt3/2) u` deletes EXACTLY `u`: `<x,z> > 2` needs `<u,z> > 4/sqrt3 = 2.31`,
+  i.e. `<u,z> = 4`, i.e. `z = u`.
+
+Two cap points for one deletion: **+1 each**, where a first-layer class head is +2 and a free
+head +3.
+
+**Why dimension 26 cannot have it and dimension 27 can.** The second-layer direction has to
+clear the twelve first-layer directions, and compatibility works out to
+
+    (sqrt3/48) <Y,u> + (2/sqrt3) cos(theta)  <=  2
+
+with `theta` the angle from `y'` to the nearest first-layer direction. So everything turns on
+the COVERING RADIUS of the first-layer direction system:
+
+    dimension 26   hexagon, six edge midpoints     covering radius 30 deg, cos 0.8660
+                   -> <Y,u> <= 27.7, i.e. <= 24 as products are multiples of 8
+                   -> MEASURED: **0** of the 196560 minimal vectors qualify
+    dimension 27   cuboctahedron, twelve vertices  covering radius 45 deg at the six
+                   SQUARE-FACE centres +-e_1, +-e_2, +-e_3, cos 0.7071
+                   -> <Y,u> <= 32.8, i.e. <= 32
+                   -> MEASURED: **3009** qualify
+
+One quantum of threshold, 0 against 3009. The whole result is that the cuboctahedron covers
+worse than the hexagon, and the gap sits exactly at three antipodal lines.
+
+**The count.** Within the 3009 the only condition is `<u,u'> <= 8` on the same LINE (across
+lines `(3/32)*16 = 3/2 < 2` is automatic), so the layer is a maximum 3-colourable subset of a
+graph of density 0.056. Local search gives 256, CP-SAT with that as a hint gives **267**
+(87 + 90 + 90):
+
+    196560 - 2133 - 267 + 3*2262 + 2*267 + 12 = 201492        (+267; +1448 over Cohn's 200044)
+
+`verify27.py` in the package checks both layers from `data/` alone, with the inequalities in
+sympy: `(sqrt3/48)*32 + 2/sqrt6 = (2+sqrt2)/sqrt3 = 1.9712 < 2` -- the same algebraic number as
+the head-axis constant of the first layer, which is a coincidence worth noticing rather than
+relying on -- and `(3/32)*8 + 1 = 7/4 < 2`.
+
+**Two things that do not extend it.**
+
+* *The next tier.* 10647 minimal vectors sit at `<Y,u> = 40`, one quantum out. Each has about
+  25 first-layer blockers and the blocking is diffuse -- dropping the 200 most-blocking heads
+  removes only 16.5% of the incidences -- so unlocking one costs about 50 against its +1.
+* *Richer head shapes.* Dimension 25's package uses `x = u + t_ v` at the same radius, with
+  `t_ = (3-sqrt3)/6`, `v` a norm-6 lean at `<u,v> = -3`; over one lean a whole block of 552 is
+  pairwise compatible (`<x,x'> = <u,u'> - 1 <= 1`) against the scaled owners' ~87, which is
+  where 971 of dimension 25's 1006 heads come from. It is USELESS here: the condition becomes
+  `a + t_ b <= (48 - 8 sqrt6)/8 = 3.5505` with `<Y,u> = 8a`, `<Y,v> = 8b`, which at `b = 0` is
+  `<Y,u> <= 24` -- stricter than the scaled owner's 32, because the tilted head reaches
+  further. Measured over 2500 random leans: **0** clearing heads. The scaled owner is the right
+  shape here precisely because it is the least tilted one.
+
+**Why.** Section 151 measured the one-layer template to its ceiling and dimension 26 sat on it;
+the way past a ceiling is a parameter the ceiling did not contain, and the head HEIGHT was one
+-- known to be free since section 136 in dimensions 29-31, never tried in 26/27. The reason it
+had not been tried is that an earlier note priced a second layer at `|x|^2 = 3` as "-5 a head",
+but that was the lattice family `w/sqrt2`, which deletes a whole block of 552.
+
+**How to apply.** When a layered construction is exhausted, look at the COVERING RADIUS of its
+direction system: it is what decides whether another layer fits, and it differs between
+dimensions even when everything else looks the same. Here 30 degrees against 45 is the entire
+difference between 0 and 267 points. Scripts in `research/collab2531/henry2/`: `layer27.py`
+(the measurement), `layer27opt.py` (the 3-colouring), `lens27.py` (the negative on tilted
+heads), `verify27two.py` (a standalone check outside the package).
