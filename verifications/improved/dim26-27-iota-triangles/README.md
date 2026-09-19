@@ -1,9 +1,9 @@
 # Dimensions 26 and 27: the coset triangle on every triangle of directions
 
-**τ(26) ≥ 199 632** and **τ(27) ≥ 201 010**, against the published 198 550 and 200 044
+**τ(26) ≥ 199 770** and **τ(27) ≥ 201 225**, against the published 198 550 and 200 044
 (Cohn's table; Ma et al. 2025) and this repository's earlier 200 540 in dimension 27 (now in
 [`../../superseded/dim27-triple-partition/`](../../superseded/dim27-triple-partition/)).
-Improvements of **+1 082** and **+966** over the table.
+Improvements of **+1 220** and **+1 181** over the table.
 
 ```
 python verify26.py          # ~1 min, exact arithmetic in every decision; exits non-zero on failure
@@ -31,10 +31,10 @@ cross-constrained at cosine ≤ 1/2, and
 
 | | dimension 26 | dimension 27 |
 |---|---|---|
-| equator `(z, 0)`, `z` a minimal vector that is not an owner | 195 036 | 194 350 |
-| caps, three per head | 3 × 1530 | 3 × 2216 |
+| equator `(z, 0)`, `z` a minimal vector that is not an owner | 195 102 | 194 427 |
+| caps, three per head | 3 × 1554 | 3 × 2262 |
 | axis | 6 | 12 |
-| **total** | **199 632** | **201 010** |
+| **total** | **199 770** | **201 225** |
 
 Every head is `y/3` with `y = 3u + v` an integer vector: `u` a minimal vector (the *owner*,
 which the head removes from the equator) and `v` a Leech vector of norm 6 (a *lean*) with
@@ -42,7 +42,7 @@ which the head removes from the equator) and `v` a Leech vector of norm 6 (a *le
 owner (`y = 2u + w` with `w = u + v` minimal and `⟨u, w⟩ = 1`, so `⟨y, z⟩ ≥ 7` forces
 `z = u`), and two heads on one owner have `⟨y, y'⟩ ≥ 16`, above every threshold — so removals
 are never shared and the count is `196 560 + τ(k) + 2·(class heads) + 3·(free heads)`:
-`1524 + 6` heads in dimension 26, `2210 + 6` in dimension 27.
+`1458 + 96` heads in dimension 26, `2133 + 129` in dimension 27.
 
 **The triangle.** Three norm-6 vectors with `v₁ + v₂ + v₃ = 0`, pairwise at `−3`, carry
 1656 class heads over three disjoint blocks `Σ(vᵢ) = {u : ⟨u, vᵢ⟩ = −3}` of 552; on one side
@@ -65,6 +65,24 @@ cuboctahedron rotated by 45° about a coordinate axis: its largest cosine agains
 triangles of leans with cross Gram matrix the circulant of `(3, 0, −3)` carry 2210 class heads
 over the four sides (625 + 459 on one triangle, 665 + 461 on the other) and six free heads.
 
+**The free heads are the whole margin, and their cost is shared.** A free head `y = ±2v`
+sits on the same sphere, removes nothing, and is therefore worth `+3` where a class head is
+worth `3 − 1 = +2`. The earlier configuration carried only the six free heads that the
+triangle's own leans supply, because a free head conflicts with class heads already placed and
+each such class head has to go. What makes the trade pay is that the conflicts *concentrate*:
+across the whole norm-6 shell only about 72 class heads ever appear as blockers, and hundreds
+of candidate free heads are blocked by the same one, so a single deletion is paid once and
+unlocks many. Choosing the free heads and the class heads to drop is then one problem —
+
+    maximise  3·|new free heads| − Σ cost(dropped head),   cost 2 for a class head, 3 for a free one,
+
+over sets of free heads that are pairwise admissible (`⟨S, S′⟩ ≤ 8` on one side, `≤ 24`
+across) — and it is the joint solve, not the per-head one, that matters: 489 of the dimension-26
+candidates are blocked by the *same* head, so pricing them one at a time makes every one of
+them look unaffordable. Solving them together gives 96 free heads for 66 class heads and the
+six old free ones in dimension 26 (`3·96 − 3·6 − 2·66 = +138`) and 129 for 77 in dimension 27
+(`3·129 − 3·6 − 2·77 = +215`).
+
 ## What the verifiers check
 
 `lib/layered.py` takes the heads as integer vectors `y` (Cohn units, norm 192) with the index
@@ -83,8 +101,8 @@ triangles, and a head displaced by a minimal vector are each rejected.
     verify26.log verify27.log       their output
     lib/golay.py  lib/leech.py      the Leech minimal vectors from the Golay code
     lib/layered.py                  the exact checks, shared by both
-    data/heads26_Y.npy  data/heads26_side.npy    the 1530 heads (int64, Cohn units) and their triangle (0 or 1)
-    data/heads27_Y.npy  data/heads27_side.npy    the 2216 heads and their triangle (0 to 3)
+    data/heads26_Y.npy  data/heads26_side.npy    the 1554 heads (int64, Cohn units) and their triangle (0 or 1)
+    data/heads27_Y.npy  data/heads27_side.npy    the 2262 heads and their triangle (0 to 3)
 
 ## Provenance
 

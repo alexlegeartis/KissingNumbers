@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Exact verification of  K(27) >= 201010   (python verify27.py)
+"""Exact verification of  K(27) >= 201225   (python verify27.py)
 
 Reads data/heads27_Y.npy (integer heads, Cohn units, norm 192) and data/heads27_side.npy
 (index of the direction triangle, 0..3, of the cuboctahedron split into four zero-sum

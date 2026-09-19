@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **149 sections, about 10244 lines**, written as the
+The full working record of the project: **150 sections, about 10371 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -10242,3 +10242,134 @@ say so). And when a structure is found, push it until it either certifies someth
 not to: `kappa` alone was descriptive, `kappa` plus the hyperplane it induces is a PG(3,2) whose
 lines forbid configurations, and that is what turns "the search stopped here" into "2 of these 88
 lines cannot exist".
+
+## 151. The dimension-26/27 cap template has a CEILING, and it is +1.1% and +3.1% (2026-09-19)
+
+Two things happened here. The layer improved -- **K(26) >= 199770** and **K(27) >= 201225**,
+both packaged and re-derived by the shipped verifiers from `data/` alone -- and then the
+template that produced them was closed from four sides at once, which is the more useful
+result. Cohn's letter asks whether his construction "just supersedes these calculations
+completely" and guesses that "the whole structure isn't near optimal". The answer measured
+here is the opposite of the guess and sharper than the question: the structure is within a few
+per cent of everything it can ever give, so a large gain has to change the EQUATOR, not the
+decorations.
+
+### The improvement: free heads, priced jointly
+
+A free head `y = +-2v` (`v` a norm-6 Leech vector) sits on the cap sphere, removes no equator
+point, and is therefore worth `+3` where a class head `y = 3u + v` is worth `3 - 1 = +2`. The
+shipped configurations carried six of them -- the ones the triangle's own leans supply --
+because a free head conflicts with class heads already placed and each of those has to go.
+What makes the trade pay is that the conflicts CONCENTRATE: over the whole norm-6 shell only
+about 72 class heads ever appear as blockers, and hundreds of candidate free heads are blocked
+by the same one. Pricing a candidate on its own makes every one look unaffordable -- 489 of
+the dimension-26 candidates are blocked by a single head -- so the solve has to be joint:
+
+        maximise  3|new free| - sum cost(dropped),   cost 2 for a class head, 3 for a free one.
+
+That gives 96 free heads for 66 class heads in dimension 26 (`3*96 - 3*6 - 2*66 = +138`) and
+129 for 77 in dimension 27 (`+215`). Against Cohn's own table the margins are now **+1220**
+and **+1181**.
+
+An earlier session had declared dimension 26 saturated from a per-candidate histogram. That
+argument is invalid for groups, and the invalidity is the whole gain. See
+[[measure-your-own-incumbent]] and section 120's plateau.
+
+### The ceiling, assembled
+
+Five facts, each measured or proved here, and together they bound the template:
+
+* **a head carries at most 3 caps.** `m` directions with `|y|^2 = 4 - r` need pairwise cosine
+  `<= (2-r)/(4-r)`, so `m <= 1 + (4-r)/(r-2)`, which is 3 at `r = 8/3`. Three at 120 degrees
+  in turn force `r <= 8/3`, and the axis forces `r >= 8/3`: the cap sphere is not a choice.
+* **deletion sets of distinct heads are DISJOINT.** Two heads deleting the same `u` are within
+  46.6 degrees of each other by the depth theorem (`<x,u> >= 3`), while a side needs 75.5 and a
+  cross-side pair 60. So `value = 3H - D <= 3*(free) + 2*(class)`, and nothing beats a class
+  head except a free one.
+* **a side holds at most 1218 heads**, by Delsarte on the finite spectrum `k/24` -- the same LP
+  returns exactly 196560 on Leech's own spectrum, which is the calibration.
+* **at most 280 of them are free.** Two free heads need `<v,v'> <= 3/2`, hence `<= 1` because
+  the product is an integer: cosine 1/6, not the 1/4 the geometry allows. That quantisation
+  loss is the whole cap, and Delsarte on the finite spectrum `{-4/6,...,1/6}` gives **280**
+  exactly. (Antipodally closed sets are worse still: the relative bound gives 70 lines.)
+* **sides are at most `tau(k)/3`.** Threshold 96 needs directions 60 degrees apart, and 12 of
+  those is all `R^3` holds -- the cuboctahedron -- so four sides, and two in `R^2`.
+
+    dim 26:  2 x (3*280 + 2*938) + 6  = 201998      now 199770     room +2228   (1.1%)
+    dim 27:  4 x (3*280 + 2*938) + 12 = 207436      now 201225     room +6211   (3.1%)
+
+**And all of that room is one number**: a side is 762 today and the LP allows 1218. The 762 is
+`729 + 33`, and `729 = 3^6` is the extended ternary Golay code sitting in Leech's Eisenstein
+structure -- its measured spectrum is the three values `{-1/2, -1/8, 1/4}`, whose own Delsarte
+bound is 896. So the open question of the entire template is: **how large is a set of cap
+heads at cosine 1/4 on `|x|^2 = 8/3`, each deleting one minimal vector?** Known 762, bounded
+1218.
+
+### Four things that look like levers and are not
+
+**More sides.** The number of direction-triples was `tau(k)/3` in every version of this
+construction, including Cohn's, for one reason only: the axis, worth 6 and 12 points, needs 30
+degrees of clearance from every direction. Give it up and the triple count is bounded only by
+the threshold `144 - 96 cos D` one accepts. Six zero-sum triples fit in `R^3` at 42.08 degrees
+(`maxtri.py`), past the 41.41 that threshold 72 needs -- 50% more sides for a threshold that
+the shipped configuration violates on only 1.6% of its cross pairs. It still loses, badly:
+**six sides at threshold 72 give 711 heads against four sides at 96 giving 2210.** The 53343
+pairs sitting at exactly 96 are not a rounding detail, they are the layer -- forbidding them
+leaves a conflict graph of mean degree 34 whose independent sets are a few hundred. Four sides
+is final for a second and stronger reason than `tau(3) = 12`.
+
+**A second cap layer.** A cap with `|y| = 1` may point ANYWHERE, including straight at an axis
+point, and then `|x|^2 = 3` and it carries the antipodal pair `+-y`: two caps, one deletion,
+`+1` -- exactly the dimension-25 head family, of which 1006 are known. It has never been
+stacked on the triple layer. Measured (`layer3b.py`): of the 196560 minimal vectors, **zero**
+satisfy `<Y,u> <= 24` against all 1554 dimension-26 heads, which is what the two layers being
+30 degrees apart requires. An earlier note dismissed this layer as "-5 a head"; that was the
+lattice family `w/sqrt2`, which deletes a whole block of 552. The verdict was right, the
+reason was not, and the real reason is that a full first layer leaves no room at all.
+
+**Free heads at a smaller radius.** The deletion-free set is `P n S`, `P = {x : <x,z> <= 2}`.
+Its maximum norm is exactly `8/3`: for any unit `d`, `max_z <d,z> >= 2 sqrt(3/8)` with equality
+only at norm-6 directions, so `|x|^2 <= 8/3` with equality only at `x = 2v/3`. **The free heads
+ARE the norm-6 shell, a finite set -- there is no continuum**, which corrects what section 12.5
+of the second brainstorm hoped for. Dropping below `8/3` does open caps around each norm-6
+direction, but they are 0.57 degrees wide at `r = 2.6` while the side condition tightens from
+cosine 1/4 to `(r-2)/r`; the smearing is 0.02 against a spectrum gap of 1/6, so it cannot
+bridge a single step. `r = 8/3` is optimal and 280 stands.
+
+**A bigger third side.** Dimension 26 puts 1602 on each of two sides; dimension 27 gets 1163 on
+each of four, so its third and fourth sides look like a search failure. They are not. Against
+the full dimension-26 layer, of 66240 class heads over 120 random leans only **1255 (1.9%)**
+clear it at 96, and the best side among those is **110**. Two full sides plus two of 110 is
+3644; the shipped four-way balance is 4653. The four sides genuinely interfere, and trading
+fullness for count is the right trade.
+
+### What this says about a 10% gain
+
+It cannot come from here. Section 3's wall stands and is now sharper at its base: a two-layer
+design in dimension 25 needs a 24-dimensional code of more than **98785** points at about 61
+degrees, and
+
+> **no subset of Leech and no single lattice shell can be one.** An independent set in Leech's
+> 60-degree graph is a code with products in `{-4,-2,-1,0,1}` -- product 2 is the only one below
+> 61 degrees -- and Delsarte on that finite spectrum gives **851**, short by a factor of 116.
+> (851 is the same number an earlier session got as a FAILED calibration, by dropping cosine 1/2
+> from Leech's own spectrum. It is not the same statement: there the configuration had 60-degree
+> pairs and the bound was below the truth; here the configuration has none by hypothesis, and
+> Cohn's 496-vector class, which is such a set, sits under it.) The norm-6 shell at cosine 0.485 is
+> forced to `<v,v'> <= 2`, i.e. 70.5 degrees, bound 5752; the norm-8 shell to 68.0 degrees,
+> bound 11566. Quantisation pushes every shell past 67 degrees, and 61 is unreachable.
+
+So the object that would move dimensions 25-27 by 10% is not a decoration of Leech, not a
+subset of it, and not a shell of any lattice whose products quantise -- it is a second
+exceptional code in `R^24`, and finding it is a 24-dimensional problem. What to tell Cohn: the
+non-convergence he saw is a plateau, not distance from optimality; the distance from optimality
+inside this structure is 1.1% and 3.1%, and the whole of it is the one side number, 762 against
+1218.
+
+**How to apply.** Before widening a search in this family, ask what the LP on the FINITE
+spectrum says -- it was the decisive tool five times here (280, 851, 896, 1168, 1218) and it is
+exact, cheap and self-calibrating on Leech. And when a parameter has never been varied because
+something small depends on it, price the small thing first: the axis is 12 points and the side
+count it fixes is worth thousands, which is why six sides looked obvious and still lost.
+Scripts in `research/collab2531/henry2/`: `nsides.py`, `maxtri.py`, `colour.py`, `sixsides.py`,
+`layer3b.py`, `lp16.py`, `sidelp2.py`, `freemax.py`, `frontier.py`, `thirdside.py`.

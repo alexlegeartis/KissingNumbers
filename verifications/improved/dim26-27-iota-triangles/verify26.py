@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Exact verification of  K(26) >= 199632   (python verify26.py)
+"""Exact verification of  K(26) >= 199770   (python verify26.py)
 
 Reads data/heads26_Y.npy (integer heads, Cohn units, norm 192) and data/heads26_side.npy
 (0 = directions 30/150/270 degrees, 1 = directions 90/210/330), rebuilds the Leech minimal
