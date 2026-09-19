@@ -1251,15 +1251,20 @@ threshold $12$ exactly when $\ip{u}{u'}\ge1$; so a side $S$ and its image
 $\iota(S)$ fit on the two triangles of the hexagon whenever the owners of $S$ are
 pairwise at inner product $1$ or $2$ inside each block, and an optimal $S$ with
 that property exists. The shipped configuration, found by a solve in which each
-head chooses its side, has $1524$ class heads, of which $1491$ lie over the
-triangle $v_1,v_2,v_3$ and $33$ over its negative $-v_1,-v_2,-v_3$, the other
-triangle of the same hexagon of leans, and $6$ free heads:
-$196\,560+6+2\cdot1524+18=\Kh{26}$. In dimension $27$ the axis is
+head chooses its side, has $1458$ class heads, $486$ over each lean of the
+triangle $v_1,v_2,v_3$, and $96$ free heads:
+$196\,560+6+2\cdot1458+3\cdot96=\Kh{26}$.  A free head is worth $3$ against a
+class head's $2$ and removes nothing, so the free layer is bought by deleting the
+class heads that conflict with it; what makes that pay is that the conflicts
+concentrate, about $72$ class heads being the blockers for the whole norm-$6$
+shell and $489$ candidates sharing one of them, so the two choices have to be made
+together, as $\max 3\lvert F\rvert-\sum_{h}\mathrm{cost}(h)$ over the deleted
+heads $h$.  Priced one candidate at a time every free head looks unaffordable. In dimension $27$ the axis is
 the cuboctahedron rotated by $45^{\circ}$ about a coordinate axis, whose largest
 cosine to a direction is $(2+\sqrt2)/4$ and whose inner product with a cap point
 is at most $(2+\sqrt2)/\sqrt3<2$; two triangles of leans with cross Gram matrix
-the circulant of $(3,0,-3)$ carry $2210$ class heads over the four sides and
-$6$ free heads: $196\,560+12+2\cdot2210+18=\Kh{27}$. The package
+the circulant of $(3,0,-3)$ carry $2133$ class heads over the four sides and
+$129$ free heads: $196\,560+12+2\cdot2133+3\cdot129=\Kh{27}$. The package
 \texttt{dim26-27-iota-triangles} stores the heads as integer vectors with the
 index of their triangle, rebuilds the Leech vectors from the Golay code, decides
 every head--equator and head--head pair by integer comparison against the

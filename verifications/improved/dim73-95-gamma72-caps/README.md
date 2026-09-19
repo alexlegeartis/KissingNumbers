@@ -598,7 +598,10 @@ Where a layer is short of τ(k) it is short for one of two reasons, and both are
 than argued. For k = 12 and 13 the ceiling τ(k) is larger than the cap direction set itself,
 and a rotated copy cannot exceed the set it is a copy of — which is why the poles at k = 15,
 17, 18, 19, 20 and 21 are a rotated copy of the RECORD configuration of R^k instead, and reach
-within a few dozen of τ(k).
+within a few dozen of τ(k). For k = 15, 17, 18, 19, 20, 21, 22 and 23 the rotation additionally
+loses a handful of points to the caps; dimension 38 shows that descent on SO(k) closes exactly
+this gap, and it is affordable at the small k and not at k = 23, where one gradient step costs
+8.7×10⁹ inner products.
 
 **That leaves k = 12 and 13 as the two places the same move is not available, and the reason
 is not the one above.** The bound "a rotated copy cannot exceed the set it is a copy of" is a
