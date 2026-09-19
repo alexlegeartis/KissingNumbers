@@ -39,7 +39,7 @@ them exceeds a known record in a higher dimension. It takes a few seconds.
 | 30  | 220 440              | **221 012**       | 1.00     | the dimension-28 norm-8 frame layer is not about dimension 28: at height √2 a whole Leech frame of heads carries the whole cross-polytope of ℝᵏ, 96k points, deleting nothing |
 | 29  | 209 496              | **209 968**       | 1.00     | the same frame layer one dimension up, on the whole cross-polytope of ℝ⁵ — 480 points, deleting nothing |
 | 28  | 204 520              | **204 896**       | 1.00     | the head of a deletion-free layer need not have norm 6: at height √2 a norm-8 head clears the cap threshold, and 48 of them are a whole Leech frame |
-| 27  | 200 044              | **201 492**       | 1.01     | the coset triangle of three norm-6 vectors, on all four triangles of directions with the side chosen per head, plus a jointly-solved layer of free heads that remove nothing |
+| 27  | 200 044              | **201 503**       | 1.01     | the coset triangle of three norm-6 vectors, on all four triangles of directions with the side chosen per head, plus a jointly-solved layer of free heads that remove nothing |
 | 26  | 198 550              | **199 770**       | 1.01     | the same triangle on both triangles of the hexagon, the second side the involution image of the first, plus a jointly-solved layer of free heads that remove nothing |
 | 25  | 197 056              | **197 569**       | 1.00     | 1006 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point |
 
@@ -72,7 +72,7 @@ verifications/
   superseded/             claims this project made and then lost, and why
   closed/                 mechanisms pushed to their exact ceiling: what NOT to retry
 
-KNOWLEDGE.md              the full working record, 151 sections, including everything
+KNOWLEDGE.md              the full working record, 152 sections, including everything
                           that failed -- with a preamble on how to read it, which
                           sections supersede which, and where each script now lives
 ```
@@ -365,7 +365,7 @@ Or individually, each from its own directory:
 | `common/kpoint_lp.py`                                                         | the LP, validated on the Leech and P₄₈                         | 10 s   |
 | `…/dim25-lens-heads/verify.py`                                                | τ(25) ≥ 197 569, every pair in exact arithmetic               | 4 min  |
 | `…/dim26-27-iota-triangles/verify26.py`                                      | τ(26) ≥ 199 770, every pair in exact arithmetic               | 1 min  |
-| `…/dim26-27-iota-triangles/verify27.py`                                      | τ(27) ≥ 201 492, every pair in exact arithmetic               | 2 min  |
+| `…/dim26-27-iota-triangles/verify27.py`                                      | τ(27) ≥ 201 503, every pair in exact arithmetic               | 2 min  |
 | `…/superseded/dim27-triple-partition/scripts/verify_configuration.py`         | τ(27) ≥ 200 540, the superseded claim, from its coordinate file | 18 s   |
 | `…/dim28-norm8-frame-layer/verify28.py`                                      | τ(28) ≥ 204 896, the norm-8 frame layer                       | 2 s    |
 | `…/dim29-30-frame-layer/verify.py 29`                                        | τ(29) ≥ 209 968, the same layer at k = 5                      | 2 min  |
@@ -510,7 +510,7 @@ The constructions, the verification code and the write-ups in this repository we
 by the author working with **Claude Code** (Anthropic). The repository is deliberately
 structured so that someone else can pick it up the same way: every package states its idea in
 prose before its code, every negative result says what was tried and why it failed, and
-`KNOWLEDGE.md` is the full working record — 151 sections, most of them about things that
+`KNOWLEDGE.md` is the full working record — 152 sections, most of them about things that
 did not work.
 
 Alexey Kravatskiy, MIRIAI (Moscow Independent Research Institute of Artificial Intelligence),

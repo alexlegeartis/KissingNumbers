@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **151 sections, about 10649 lines**, written as the
+The full working record of the project: **152 sections, about 10729 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -10647,3 +10647,83 @@ dimensions even when everything else looks the same. Here 30 degrees against 45 
 difference between 0 and 267 points. Scripts in `research/collab2531/henry2/`: `layer27.py`
 (the measurement), `layer27opt.py` (the 3-colouring), `lens27.py` (the negative on tilted
 heads), `verify27two.py` (a standalone check outside the package).
+
+## 153. The dimension-27 second layer was never solved, and six levers that are (2026-09-19)
+
+Section 152 built the second cap layer and stopped at **267** heads because CP-SAT, hinted with
+a local search's 260, returned FEASIBLE 267 and nothing better.  Its bound was 1078.  A bound of
+1078 on a quantity whose true value is under 300 says only that the solver never converged, and
+the obvious question -- *how large can ONE line be?* -- was never asked.
+
+**The layer is a maximum 3-colourable induced subgraph, and its ceiling is 3 alpha.**  The 3009
+eligible owners carry one condition, `<u,u'> <= 8` on a line, and *nothing at all* across lines,
+so the three lines are three independent sets of the same graph and the layer is at most three
+times its independence number.  A phased local search (add / one-conflict-swap / perturb, with
+the conflict counts maintained incrementally) finds independent sets of **95** where the shipped
+layer's largest line had 90, so the real ceiling is **285**, not 1078.  The same engine run on
+the three-colouring itself reaches **278**:
+
+    196560 - 2133 - 278 + 3*2262 + 2*278 + 12 = 201503        (+11; +1459 over Cohn's 200044)
+
+verified from `data/` alone by `verify27.py`, whose count line is computed, not typed.  Scripts:
+`layer27alpha.py` (the one-line maximum) and `layer27col.py` (the colouring).
+
+**What the lever is.**  Nothing about the geometry changed; 267 was where a solver stopped.  The
+general lesson is the one this repository keeps relearning: *a CP-SAT bound is not a ceiling, it
+is a receipt for how long the solver ran.*  Ask the structural question instead -- here, three
+lines, three independent sets, so measure alpha -- and the honest ceiling appears at once.
+
+### The six levers measured alongside it, all negative
+
+**(a) The free heads are not the margin they look like.**  A side is worth `2c + 3f`, so f looked
+like the lever: the shipped `f = 48` against a finite-spectrum Delsarte bound of 280 (the LP,
+calibrated, returns exactly 196560 on the Leech spectrum and 1218 for a side's class part).  Over
+the WHOLE norm-6 shell a free code of **75** exists -- but it leaves 131 of the 1656 class-pool
+heads alive and the side collapses from 1602 to **356**.  The pool that matters is the one
+compatible with the class heads a side actually uses, and against the shipped 729 that pool is
+**6012 vectors in which the shipped 48 is maximal**: no vector at all is compatible with all 48.
+Exactly: `kill <= 0` gives 441 candidates and `f = 6`; `kill <= 1` gives 623 and `f = 36`;
+`kill <= 2` gives 1556, `f = 37` with a bound of 43 -- every one below the shipped 1602.  In
+dimension 27 the shipped free set is maximal outright: **0** of the 16 773 120 norm-6 vectors
+clears every shipped head on any side.
+
+**(b) The free-head pool is exactly `{2v/3}`.**  A free head is a norm-8/3 point of
+`P = {x : <x,z> <= 2}`, i.e. a vertex of P of maximal norm.  Sampling P's vertices by linear
+programming over random objectives, 14 of 30 objectives land on norm 8/3 and every one of those
+vertices is `2v/3` with v of norm 6 (integral and even in Cohn units).  `2v/3` is a very
+degenerate vertex: 552 constraints are tight at it.  So widening the free pool is not available.
+
+**(c) The eight zero-sum triples collapse to four -- a proof, not a search.**  Section 152 found
+the cap layer locally maximal in the per-cap-point model, where a head may take any of the
+cuboctahedron's EIGHT triples rather than the four of a partition.  The reason is structural: two
+triples are threshold-48 to each other exactly when they share a direction, each direction lies
+in exactly two triples, so "shares a direction" is a 3-regular graph on 8 vertices -- the cube
+Q3.  An assignment to eight triples is a homomorphism into the complement of Q3, which is two
+K4's joined by a perfect matching and therefore 4-chromatic; composing gives a homomorphism into
+K4, i.e. an ordinary four-side assignment with the same heads.  **The eight-triple model is the
+four-triple model.**
+
+**(d) A fourteenth direction.**  The twelve directions are a cuboctahedron because four disjoint
+zero-sum TRIPLES need a 60-degree code.  A LINE needs no triple: a head on `+-(2/sqrt3) e3`, e3 a
+square-face centre, carries two cap points, and the axis clears it --
+`(2/sqrt3)(2) cos 45 = 1.6330 < 2`.  Its threshold against the first layer is
+`2 - (4/3) cos 45 = 1.0572`, i.e. `<Y,Y'> <= 72`, and its own pairwise condition is a SIDE's 48,
+so the ceiling would be a side's, not ninety.  Only `+-e3` is available (the axis is the
+directions rotated by 45 degrees about e3, which puts `+-e1, +-e2` ON axis vertices), and it is
+empty: **0** of 16 620 candidate heads over 30 leans, and **0** of the whole norm-6 shell, clears
+`<v,Y'> <= 32`.  The first layer is too dense for a second use of its own radius.
+
+**(e) The second layer cannot use the dimension-25 head family.**  A second-layer head need only
+be a point of `|x|^2 = 3` removing exactly one minimal vector -- which is the dimension-25 lens
+family `x = (u + t w)/sqrt8`, thousands of them, not just the scaled owner `(sqrt3/2) u`.  But
+`<x,x1> = (<u,Y> + t <w,Y>)/24` against the scaled owner's `0.866 <u,Y>/24`, so a lens head is
+strictly worse unless `<w,Y>` is very negative, and it never is: of 13 248 lens heads over 24
+leans plus all 196 560 scaled owners, exactly **3009** clear the first layer -- the same 3009.
+
+**(f) Dimension 25 cannot buy a far cap with an axis point.**  The two axis points `(0,+-2)`
+together force `|y| <= 1`, hence `|x|^2 >= 3 > 8/3`, which is why every dimension-25 head deletes.
+Drop `(0,-2)` for one sphere and a cap at `y = -2/sqrt3` has `|x|^2 = 8/3`, lies in P, deletes
+nothing and is worth +1 on its own.  It must clear the record's heads at `<x,x'> <= 2 - 2/sqrt3 =
+0.8453`, and **0** norm-6 vectors do.  (Section 152 recorded the same wall at a different
+scaling.)  Separately, 443 896 iterations of a remove-k / regrow search over a 12-lean,
+6659-head pool never left **1006** -- the CP-SAT bound of 1115 is loose, not a target.
