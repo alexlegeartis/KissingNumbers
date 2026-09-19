@@ -10396,6 +10396,53 @@ non-convergence he saw is a plateau, not distance from optimality; the distance 
 inside this structure is 1.1% and 3.1%, and the whole of it is the one side number, 762 against
 1218.
 
+### The ceiling, corrected: a side is worth 1600, not 2716, and dimension 26 attains it
+
+The ceiling above split a side's Delsarte cap of 1218 as 280 free + 938 class. The class half
+is wrong, and the whole of it was attacked directly afterwards.
+
+**The class part of a side is exactly 762.** CP-SAT returns OPTIMAL with bound 762 on the
+1656-head pool over a zero-sum triangle of leans. And it does not grow in a wider pool: built
+properly, the lean system is the 24-cell `3*D4` (24 norm-6 vectors whose off-diagonal Gram is
+96 pairs at -3, 96 at +3, 72 at 0, 12 at -6; **32 zero-sum triangles**, 3800 families of four
+disjoint ones). A greedy set of 24 vectors with products in `{0, +-3, +-6}` is NOT that lattice
+-- it came out with 33 pairs at -3 and only 6 triangles -- and the difference matters, so build
+D4 from its Dynkin diagram, `<c,a> = <c,b> = <c,d> = -3` with `a, b, d` orthogonal. Over the
+real 3*D4 pool, eight times the triangle's, the 762 admits **0 additions and 0 (1,2)-swaps**.
+
+Why no wider lean system helps is now visible rather than empirical. With `a = <u,u'>`,
+`b = <u,v'>`, `c = <u',v>`, `t = <v,v'>` the side condition is `3a + b + c <= (6-t)/3`, so a
+lean PAIR is worth `floor((6-t)/3)`: 4 at `t = -6`, **3 at `t = -3, -4`**, 2 at `t = -2, -1, 0`,
+1 at `t = 1, 2, 3`. And `|sum v_i|^2 >= 0` forces `t >= -6/(m-1)`, so **three leans is the most
+that can sit at the triangle's looseness** -- four need `t >= -2`, thirteen need `t >= 0`. The
+triangle is not a lucky find, it is the extreme point of that inequality. Orthogonal lean
+systems, which trade one unit of looseness for unlimited blocks, lose outright: measured, two
+orthogonal blocks hold 564 and sixteen hold 567, against one block's 552.
+
+**The free part decouples, and the side is worth exactly `1458 + 3f`.** Against the exact
+762-head side, the norm-6 shell splits as 441 vectors evicting nothing, 182 evicting one, 933
+two, 4455 three, then a gap to 12. The union of ALL kill sets over the 6006 candidates of cost
+at most 6 covers only **33** of the 762 class heads -- so evict those 33 once, for 66, and the
+entire pool becomes admissible. What is left is one max-clique at `<v,v'> <= 8`:
+
+    f =   6, c = 762 -> 1542   CP-SAT OPTIMAL: the 441 zero-cost free heads have conflict
+                               density 0.77 and only six are pairwise compatible
+    f =  44, c = 729 -> 1590   max-clique search on the decoupled pool
+    f =  48, c = 729 -> 1602   SHIPPED
+    f = 280, c = 762 -> 2364   the Delsarte ceiling -- and unreachable, since c and f cannot
+                               both be large
+
+So a side is worth about **1600**, and
+
+    dimension 26:  196560 + 2 x 1602 + 6 = 199770        which is exactly the shipped value.
+
+**Dimension 26 is at the ceiling of this template.** Dimension 27 is not -- its four sides
+share two lean triangles and average 1163 -- but giving each side its own triangle is worse,
+not better: over the 3*D4, four disjoint triangles each solved to its exact 762 and the
+cross-side violations above 96 removed exactly (CP-SAT OPTIMAL) keep at most **1886** class
+heads, 3772, against the shipped 2133 class + 129 free = 4653. Every alternative lean system
+tried -- orthogonal, four-triangle, greedy-wide -- loses to the shipped two-triangle design.
+
 **How to apply.** Before widening a search in this family, ask what the LP on the FINITE
 spectrum says -- it was the decisive tool five times here (280, 851, 896, 1168, 1218) and it is
 exact, cheap and self-calibrating on Leech. And when a parameter has never been varied because
