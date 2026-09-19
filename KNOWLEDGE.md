@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **152 sections, about 10747 lines**, written as the
+The full working record of the project: **152 sections, about 10759 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -10740,8 +10740,20 @@ grown over the 24-cell.  Loosening `t` destroys the correlation between `a`, `b`
 the shipped system relies on; the four-side layer wants leans that are RELATED, not independent.
 Script `orthotri.py`.
 
-**Where the room actually is.**  The class layer is 2214 of a four-sides-at-762 ceiling of 3048,
-and nothing moved it: not the 24-lean pool, not a large-kick local search, not four disjoint
-triangles from the 24-cell (1867), not four orthogonal ones (1334).  That 834-head gap is worth
-`+1668` and is the only place in this template where a four-figure gain is still arithmetically
-available.
+**(h) The 3048 ceiling is not room -- the four sides COMPETE.**  `4 x 762` is the four sides at
+their free-standing optima and it ignores the cross-side threshold entirely.  Every attempt to
+realise it lands BELOW the balanced 2214:
+
+    four disjoint triangles from the 24-cell                     1867   (four3.py)
+    four mutually orthogonal triangles                           1334   (orthotri.py)
+    sequential extraction, side 0 exactly optimal at 762          1829   (seqfour.py: 762+392+467+208)
+    two sides seeded at 762 and 758, the rest grown               1964   (iota4.py: +186+178)
+    the balanced solve                                           2214   (grow27.py: 625+459+669+461)
+
+Maximising ANY subset of the sides poisons the rest, and the shipped balanced split is the shape
+that wins.  Note the exact contrast with the second layer, where sequential extraction was the
+thing that WORKED (279 -> 283 -> 284): there the three lines carry no condition across at all,
+so a maximal first line is free; here the sides are cross-constrained at 96, so it is not.  That
+single difference decides which move helps.  It also means the honest statement about the class
+layer is not "834 heads are available" but "2214 is what the coupling allows, and 3048 is a
+bound that forgets the coupling".
