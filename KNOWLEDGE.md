@@ -10363,25 +10363,31 @@ So the object that would move dimensions 25-27 by 10% is not a decoration of Lee
 subset of it, and not a shell of any lattice whose products quantise -- it is a second
 exceptional code in `R^24`, and finding it is a 24-dimensional problem.
 
-**And the wall is lower than this project has been stating it.** "98785 points at 61 degrees"
-fixes a count and an angle independently when the two are linked: with layers at `+-h` a layer
-is a code at `c- = (1/2-h^2)/(1-h^2)` while the union is one at `c+ = (1/2+h^2)/(1-h^2)`, so
-the union's size forces `c+`, hence `h`, hence `c-`. What is actually being asked for is a
-FRACTION of the Delsarte bound at the angle that comes out (`wall25.py`, `wall25b.py`):
+**And the wall is best stated as a FRACTION, with two constraints.** "98785 points at 61
+degrees" fixes a count and an angle independently when the design links them: with layers at
+`+-h` a layer is a code at `c- = (1/2-h^2)/(1-h^2)` while their UNION is one at
+`c+ = (1/2+h^2)/(1-h^2)`, so there are two requirements and they pull against each other in `h`
+(`wall25.py`, `wall25c.py`, `wall25e.py`; the LP returns 196560 at 60 degrees):
 
-    target K(25)      layer angle     layer size    A_LP(24,c-)     fraction needed
-      197 570          60.006 deg        98 784       196 013           50.4%
-      205 000          60.047 deg       102 499       192 154           53.3%
-      217 326  (+10%)  60.111 deg       108 662       186 452           58.3%
-      230 000          60.171 deg       114 999       181 352           63.4%
+    h       layer angle   a LAYER must reach   the UNION must reach   worse of the two
+    0.013    60.006 deg    50.4% of 196010      100.0% of 197575           100.0%
+    0.100    60.334 deg    58.5% of 168796       73.1% of 270247            73.1%
+    0.120    60.482 deg    62.3% of 158623       63.1% of 313105            63.1%
+    0.140    60.659 deg    66.8% of 147854       52.8% of 374273            66.8%
+    0.180    61.102 deg    78.5% of 125823       31.1% of 634726            78.5%
 
-and what is attained: Leech 100% at 60.0, the Moebius-boosted Leech level set **50.2% at 61.0
-and 59.5% at 62.0**. So a 10% gain needs 58.3% at 60.11 degrees, which sits BETWEEN two
-fractions we have already measured. The obstruction is not the size of the object, it is that
-the attained fraction falls as the angle approaches 60 -- 59.5, then 50.2 -- and 60.006 degrees
-extrapolates below the 50.4 that break-even needs. That is a narrow, quantitative target:
-**hold a non-Leech construction at 58% of its Delsarte bound at 60.1 degrees**, rather than
-"find a second Leech lattice". What to tell Cohn: the
+Small `h` makes a layer easy and the union impossible -- it would have to be LP-optimal, as
+rigid as Leech. Large `h` frees the union and breaks the layer. At the balance, `h = 0.12`:
+
+    break-even 197 570 -> 63.1% of the Delsarte bound at 60.48 degrees
+    +10%       217 326 -> 69.4%,      +16% 230 000 -> 73.5%, same angle
+
+against Leech's 100% at exactly 60 and this repository's Moebius-boosted level sets at **50.2%
+of the bound at 61.0 degrees and 59.5% at 62.0**. So the obstruction is not the size of the
+object: the required fraction is a few points above one we already attain, one and a half
+degrees further out, and the attained fraction FALLS as the angle approaches 60 (59.5, then
+50.2). That is a narrow, quantitative target -- **hold a non-Leech construction at 63% of its
+Delsarte bound at 60.5 degrees** -- rather than "find a second Leech lattice". What to tell Cohn: the
 non-convergence he saw is a plateau, not distance from optimality; the distance from optimality
 inside this structure is 1.1% and 3.1%, and the whole of it is the one side number, 762 against
 1218.
