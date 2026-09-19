@@ -10540,6 +10540,47 @@ the way past a ceiling is a parameter the ceiling did not contain, and the head 
 had not been tried is that an earlier note priced a second layer at `|x|^2 = 3` as "-5 a head",
 but that was the lattice family `w/sqrt2`, which deletes a whole block of 552.
 
+### The rest of the height ladder, and the 26 + 1 build
+
+Having found one new layer by varying the head HEIGHT, the obvious move is to keep going. A
+head at `|x|^2 = r` carries `m` directions with `|y|^2 = 4 - r` pairwise at cosine
+`<= (2-r)/(4-r)`, so `m` is a function of `r`: 3 at `r = 8/3`, 4 at `5/2` (a tetrahedron), 6 at
+`r = 2` (an octahedron, but only in `R^3` or more). And a free head `x = sqrt(r/6) v` over a
+norm-6 lean clears the equator at every one of those radii, so the value per head reads
+`+3, +4, +6`. It looks like the whole construction is at the wrong height. It is not:
+
+* **`r = 5/2`, the tetrahedral layer.** Its class head is forced to `x = u + v/2` and MEASURED
+  it deletes exactly TWO -- it is the midpoint of `u` and `u+v` and kills both -- so it is
+  worth `4 - 2 = +2`, the same as the shipped `r = 8/3` class head, while its side condition
+  tightens from cosine 1/4 to 1/5. Its FREE head is worth +4, but the free part of a side is
+  capped at 280 either way (the condition is `<v,v'> <= 6(r-2)/r`, which is `<= 1` for every
+  `r >= 12/5`), and the free code is the bottleneck at 72-77 known. So `r = 5/2` loses.
+* **`r = 5/2` as a THIRD layer** on top of the two: MEASURED **0** of the 16773120 norm-6
+  vectors clear the first layer at the required `<Y,u> <= 24`. The cube of directions it would
+  need sits 35.26 degrees from the cuboctahedron, and the threshold needs 49.2 -- past the
+  45-degree covering radius again.
+* **A second layer in dimension 25.** Its cap layer is already the `r = 3` one (the 1006
+  heads); a layer at `r = 8/3` would pay the two poles for `+2` a head. MEASURED: **0** of the
+  norm-6 shell clears the 1006 at the required `<v,x> <= 1.2679`; the nearest is 1.468.
+* **Dimension 27 as 26 + 1.** Every version of this construction puts LEECH on the equator,
+  but 27 is also 26 + 1, and our own 199770-point configuration could be the equator, with
+  free heads at `|x|^2 = 3` worth +2 each: `K(27) >= 199770 + 2f + 2`, so `f >= 861` would
+  beat 201492. And the geometry is encouraging at first -- the dimension-26 configuration is
+  far LUMPIER than Leech, and its deepest hole reaches `|x|^2 = 3.45` against Leech's 8/3, so
+  free heads there do exist. But the region is tiny: 5 of 399 descents reach it, and the free
+  heads must be 70.53 degrees apart, giving `f` of order ten. `K(27) >= 199780`. The lumpiness
+  that makes the holes deep is the same lumpiness that makes them few.
+
+Dimension 25 was also re-attacked directly. Its head set is a max-clique: `K(25) = 196560 + H
++ 3`, `H = 1006`, Delsarte 5752. Recovered from the shipped package, the 971 lens heads use
+FOUR leans with block sizes 552 + 285 + 133 + 1 and off-diagonal Gram `{-4, -3, -1, 0, 2}`. The
+`-4` is the point: at `|x|^2 = 3` the pair looseness ranks `t = -4` ABOVE `t = -3`, where at
+`|x|^2 = 8/3` they tie and the triangle wins on being able to hold three leans. A lean TRIANGLE
+here gives only **795** (CP-SAT, OPTIMAL). Over eight leans the lens part reaches 973, but with
+the 35 rational heads in the same solve CP-SAT returns exactly **1006**, the record, with an
+upper bound of 1115. So dimension 25 has about +109 of slack by that bound and no way found
+into it.
+
 **How to apply.** When a layered construction is exhausted, look at the COVERING RADIUS of its
 direction system: it is what decides whether another layer fits, and it differs between
 dimensions even when everything else looks the same. Here 30 degrees against 45 is the entire
