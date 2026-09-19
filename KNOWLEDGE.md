@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **152 sections, about 10759 lines**, written as the
+The full working record of the project: **153 sections, about 10818 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -10757,3 +10757,62 @@ so a maximal first line is free; here the sides are cross-constrained at 96, so 
 single difference decides which move helps.  It also means the honest statement about the class
 layer is not "834 heads are available" but "2214 is what the coupling allows, and 3048 is a
 bound that forgets the coupling".
+
+## 154. Dimension 26 takes a second cap layer after all: K(26) >= 199806 (2026-09-20)
+
+Section 152 built dimension 27's second cap layer and said dimension 26 cannot have one:
+"measured against the shipped layer **not one** of the 196 560 minimal vectors qualifies".  That
+measurement is right and the conclusion drawn from it was wrong.
+
+The bar is set by the covering radius of the first layer's directions, 30 degrees for the
+hexagon against 45 for the cuboctahedron, so a second-layer owner needs `<Y,u> <= 24` here
+against `<= 32` there.  But **what blocks it is not the geometry, it is the FREE heads.**  A free
+head is `Y = 2v`, so `<Y,u> = 2<v,u>` is a multiple of 16 and is 32 the moment `<v,u> = 16` --
+above 24 whatever the direction system does.  Measured: of the 11 995 owners at `max<Y,u> = 32`,
+**648 have only eight blockers each, and the blockers are exactly 96 heads: the free ones.**
+Over the 1458 CLASS heads alone the census is `{24: 1188, 32: 16038, 40: 16038, ...}` -- **1188
+owners qualify**, and the three vertex lines of the hexagon carry **324** of them:
+
+    196560 - 1458 - 324 + 3*1458 + 2*324 + 6 = 199806        (+36; +1256 over Cohn's 198550)
+
+A free head is worth 3 and a second-layer head 1, so the trade is 96 free heads (288) for 324:
+**+36**.  It is all-or-nothing in both directions -- of the 16 773 120 norm-6 vectors, **none**
+clears the whole layer, so no free head can be put back, and the partial drops are all negative
+(dropping the 40 best blockers unlocks 33 owners, worth 27, against a cost of 120).
+
+`verify26.py` now checks both layers from `data/` alone, with the inequalities in sympy:
+`(sqrt3/48)*24 + 1 = 1 + sqrt3/2 = 1.8660 < 2`, `(3/32)*8 + 1 = 7/4 < 2`, and across lines
+`(3/32)*16 + 1/2 = 2` exactly.
+
+**What made this findable** was asking a question the earlier measurement never asked: not "does
+any owner qualify?" but "**how far do they miss, and who blocks them?**".  One quantum, and 96
+heads out of 1554.  The same question in dimension 27 is negative and says so cleanly: dropping
+its 129 free heads (387) takes the eligible pool from 3009 to 4634 and the layer only from 284
+to 315, because the layer is limited by the INDEPENDENCE NUMBER (about 3 x 105), not by the pool.
+
+### Four more levers measured, all negative
+
+**(a) The class heads cannot be dropped to widen it.**  The 16 038 owners one quantum above the
+bar over the class heads have **exactly 126 blockers each** -- perfectly diffuse, like dimension
+27's tier 40.  There is nothing to concentrate on.
+
+**(b) The 762-head side is maximal over the WHOLE head family.**  A class head is `Y = 2u + w`
+with `u, w` minimal at `<u,w> = 8`, so the family is the 196560 x 47104 = 9.26e9 ordered pairs,
+not the 552-head block of a lean.  Every search had fixed a small lean set first and got 762
+against an LP bound of 1218.  Sampling the family itself: **34 005 100 heads, and the minimum of
+`max<Y,S*>` is 64 where 48 is needed** -- not one extends the side.  The 762-1218 gap belongs to
+the family, not to the search.
+
+**(c) The norm-8 frame layer of dimensions 28-31 misses dimension 27 by one quantum.**  A head
+`v/2` at `|x|^2 = 2` carries every direction with `<w,w'> <= 0`, which for k = 3 is the whole
+OCTAHEDRON, and removes nothing: **+6 a head**, up to +288 for a frame, and the axis would cost
+only 4 of its 12 points.  The condition against the first layer is `<V,Y> <= 40`.  Sampled over
+3 033 361 norm-8 vectors the minimum of `max<V,Y>` is **48** -- one quantum out, with 718
+attaining it.  (Per line it is also a wash: 48 heads x 2 cap points = 96 against the second
+layer's ~95.)
+
+**(d) Dimension 25 cannot swap record heads for scaled owners.**  The scaled owner `(sqrt3/2)u`
+is a dimension-25 head too -- 196 560 of them, never in the pool -- and 199 of them miss the
+record by a single step (`1.18301` against 1).  The blockers do concentrate: dropping 400 of the
+1006 record heads unlocks 771 candidates.  But the unlocked ones cluster around the hole they
+came from and conflict with each other: only **22** of the 771 survive, H = 628 against 1006.

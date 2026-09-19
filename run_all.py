@@ -129,7 +129,7 @@ JOBS = [
      os.path.join(V, 'improved', 'dim18-bent-hexagon'), ['verify18.py'], 0.5, True),
     ("dim 25: the same, as an independent floating-point net over all 197569 points",
      os.path.join(V, 'improved', 'dim25-lens-heads'), ['fullcheck.py'], 2.0, True),
-    ("dim 26: the 199770-point two-triangle configuration, exactly",
+    ("dim 26: the 199806-point two-LAYER configuration, exactly",
      os.path.join(V, 'improved', 'dim26-27-iota-triangles'), ['verify26.py'], 1.0, True),
     ("dim 27: the 201509-point two-LAYER configuration, exactly",
      os.path.join(V, 'improved', 'dim26-27-iota-triangles'), ['verify27.py'], 2.0, True),

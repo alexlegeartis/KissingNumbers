@@ -1,8 +1,27 @@
-  heads 1554 = 1458 class + 96 free; owners distinct
+  heads 1458 = 1458 class + 0 free; owners distinct
   side-pair thresholds (Cohn units): [[48, 96], [96, 48]]
-  all 1206681 head pairs admissible; 224538 at the bound
+  all 1062153 head pairs admissible; 201204 at the bound
   head-axis maximum inner product 2 = 2.000000 (bound 2)
   6 axis points of norm 4, pairwise inner product <= 2
-  count = 196560 - 1458 + 3 * 1554 + 6 = 199770
-ALL CHECKS PASS   K(26) >= 199770
-exit 0
+  count = 196560 - 1458 + 3 * 1458 + 6 = 199482
+  second layer: 324 heads at |x|^2 = 3 on 3 axis lines
+  second-layer owners are Leech minimal vectors              PASS 
+  second-layer owners are distinct                           PASS 
+  the two layers delete disjoint sets (1458 and 324)         PASS 
+  a second-layer head deletes exactly its owner              PASS 
+  <Y,u> <= 24 for every first-layer head and second-layer owner PASS max 24
+  <u,u'> <= 8 on one line                                    PASS max 8
+  <u,u'> <= 16 across lines                                  PASS max 16
+  (sqrt3/48)*24 + 1 < 2                                      PASS = 1 + sqrt3/2 = 1.866025
+  it is exactly 1 + sqrt3/2                                  PASS 
+  (3/32)*8 + 1 < 2                                           PASS 
+  (3/32)*16 + 1/2 <= 2 and (3/32)*16 - 1 < 2                 PASS 
+  (sqrt3/2)*2 < 2                                            PASS 
+  a second-layer cap has norm 4                              PASS 
+  its two cap points meet at 3 - 1 <= 2                      PASS 
+  the three second-layer lines are unit vectors              PASS 
+  the widest gap from a first-layer direction is 30 degrees  PASS max cos = sqrt3/2
+  every axis point meets every second-layer direction at <= 2 PASS 
+  count = 196560 - 1458 - 324 + 3 * 1458 + 2 * 324 + 6 = 199806
+  the first layer alone gives 199482                         PASS 199482
+ALL CHECKS PASS   K(26) >= 199806

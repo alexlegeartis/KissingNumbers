@@ -1,9 +1,9 @@
 # Dimensions 26 and 27: the coset triangle on every triangle of directions
 
-**τ(26) ≥ 199 770** and **τ(27) ≥ 201 509**, against the published 198 550 and 200 044
+**τ(26) ≥ 199 806** and **τ(27) ≥ 201 509**, against the published 198 550 and 200 044
 (Cohn's table; Ma et al. 2025) and this repository's earlier 200 540 in dimension 27 (now in
 [`../../superseded/dim27-triple-partition/`](../../superseded/dim27-triple-partition/)).
-Improvements of **+1 220** and **+1 465** over the table.
+Improvements of **+1 256** and **+1 465** over the table.
 
 ```
 python verify26.py          # ~1 min, exact arithmetic in every decision; exits non-zero on failure
@@ -31,11 +31,11 @@ cross-constrained at cosine ≤ 1/2, and
 
 | | dimension 26 | dimension 27 |
 |---|---|---|
-| equator `(z, 0)`, `z` a minimal vector that is not an owner | 195 102 | 194 143 |
-| caps, three per head | 3 × 1554 | 3 × 2262 |
-| caps, two per second-layer head (dimension 27 only) | — | 2 × 284 |
+| equator `(z, 0)`, `z` a minimal vector that is not an owner | 194 778 | 194 143 |
+| caps, three per head | 3 × 1458 | 3 × 2262 |
+| caps, two per second-layer head | 2 × 324 | 2 × 284 |
 | axis | 6 | 12 |
-| **total** | **199 770** | **201 509** |
+| **total** | **199 806** | **201 509** |
 
 Every head is `y/3` with `y = 3u + v` an integer vector: `u` a minimal vector (the *owner*,
 which the head removes from the equator) and `v` a Leech vector of norm 6 (a *lean*) with
@@ -43,7 +43,7 @@ which the head removes from the equator) and `v` a Leech vector of norm 6 (a *le
 owner (`y = 2u + w` with `w = u + v` minimal and `⟨u, w⟩ = 1`, so `⟨y, z⟩ ≥ 7` forces
 `z = u`), and two heads on one owner have `⟨y, y'⟩ ≥ 16`, above every threshold — so removals
 are never shared and the count is `196 560 + τ(k) + 2·(class heads) + 3·(free heads)`:
-`1458 + 96` heads in dimension 26, `2133 + 129` in dimension 27.
+`1458 + 0` heads in dimension 26 (its free heads are given up for the second layer, below) and `2133 + 129` in dimension 27.
 
 **The triangle.** Three norm-6 vectors with `v₁ + v₂ + v₃ = 0`, pairwise at `−3`, carry
 1656 class heads over three disjoint blocks `Σ(vᵢ) = {u : ⟨u, vᵢ⟩ = −3}` of 552; on one side
@@ -80,7 +80,7 @@ unlocks many. Choosing the free heads and the class heads to drop is then one pr
 over sets of free heads that are pairwise admissible (`⟨S, S′⟩ ≤ 8` on one side, `≤ 24`
 across) — and it is the joint solve, not the per-head one, that matters: 489 of the dimension-26
 candidates are blocked by the *same* head, so pricing them one at a time makes every one of
-them look unaffordable. Solving them together gives 96 free heads for 66 class heads and the
+them look unaffordable. Solving them together gave 96 free heads for 66 class heads and the
 six old free ones in dimension 26 (`3·96 − 3·6 − 2·66 = +138`) and 129 for 77 in dimension 27
 (`3·129 − 3·6 − 2·77 = +215`).
 
