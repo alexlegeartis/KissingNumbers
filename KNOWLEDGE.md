@@ -8089,6 +8089,10 @@ bound **265006** (de Laat-Leijenhorst 2024 SDP, per Cohn's table), replacing the
 
 ## 126. Dimensions 26 and 27 released: tau(26) >= 199632 and tau(27) >= 201010 (2026-09-08)
 
+> **SUPERSEDED by section 151 (2026-09-19): the claims are 199770 and 201225**, by a
+> jointly-solved layer of free heads. Everything below about the template is unchanged
+> and section 151 also gives the template's ceiling, 201998 and 207436.
+
 The day after section 125.  Asked to brainstorm dimension 26 from Cohn's and Lindow's
 letters and the dimension-25 work, the reduction turned out to be exact, and the objects
 already existed.  The package is `verifications/improved/dim26-27-iota-triangles/`; the old
