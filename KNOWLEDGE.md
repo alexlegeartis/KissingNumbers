@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **153 sections, about 10818 lines**, written as the
+The full working record of the project: **153 sections, about 10845 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -10816,3 +10816,30 @@ is a dimension-25 head too -- 196 560 of them, never in the pool -- and 199 of t
 record by a single step (`1.18301` against 1).  The blockers do concentrate: dropping 400 of the
 1006 record heads unlocks 771 candidates.  But the unlocked ones cluster around the hole they
 came from and conflict with each other: only **22** of the 771 survive, H = 628 against 1006.
+
+### 199806 is the exact optimum of the trade, on every axis measured
+
+**The class part goes back to 762 a side, and that is WORSE.**  The shipped 1458 is 2 x 729, and
+729 = 762 - 33: thirty-three per side were evicted to pay for the free heads.  With the free
+heads gone the evictions have nothing left to buy, and both sides do return to 762 immediately --
+but 1524 class heads leave only **20** owners eligible against 1188, and `2c + L` falls from 3240
+to 3068.  Sweeping the whole path (drop class heads in the order that unlocks the most owners):
+
+    c = 1524   eligible    20   L =  20   2c + L = 3068   K = 199634
+    c = 1499   eligible   234   L = 101            3099       199665
+    c = 1474   eligible   722   L = 245            3193       199759
+    c = 1458   eligible  1188   L = 324            3240       199806   <- the shipped point
+    c = 1424   eligible  1188   L = 324            3172       199738
+    c = 1374   eligible  1188   L = 306            3054       199620
+
+The eligible pool **saturates at 1188**: past that point dropping class heads unlocks nothing,
+because the 32 076 owners one step further out have six blockers each and the six are different
+for each.  So the optimum sits exactly where the packaged configuration sits, and the curve is
+single-peaked around it.
+
+**The layer cannot use the lens family either.**  A second-layer head need only be an `|x|^2 = 3`
+point removing exactly one minimal vector, which is the dimension-25 lens family
+`x = u + t w`; its condition is `<U,Y> + t <W,Y> <= 24` against the scaled owner's
+`<U,Y> <= 24`, so a negative `<W,Y>` should reach further.  Of 13 248 lens heads over 24 leans
+plus all 196 560 scaled owners, exactly **1188** clear the first layer -- the same 1188.  The
+scaled owner is the least tilted head at that radius, in dimension 26 as in dimension 27.
