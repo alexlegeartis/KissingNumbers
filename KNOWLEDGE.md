@@ -10571,6 +10571,33 @@ norm-6 lean clears the equator at every one of those radii, so the value per hea
   heads must be 70.53 degrees apart, giving `f` of order ten. `K(27) >= 199780`. The lumpiness
   that makes the holes deep is the same lumpiness that makes them few.
 
+### Two more shapes of the whole layer, both priced
+
+*The norm-8 FRAME layer, which gives dimensions 28-31 their jumps.* Heads `x = w/2` over the 48
+vectors of a Leech frame (`|w|^2 = 8`) at `|x|^2 = 2`, `|y| = sqrt2`, carrying the WHOLE
+cross-polytope of `R^k` -- `2k` directions, since `<y_i,y_j> <= 2 - |x|^2 = 0` -- for `96k`
+points DELETING NOTHING (`<w/2,z> <= 2` is `|w-z|^2 >= 4`, and two heads on a direction need
+`<w,w'> <= 0`, which is what a frame is). For `k = 3` that is **288**, more than the 267 of the
+second layer, and free. It does not fit, for a reason worth recording: against the first layer
+it needs `<w,Y> <= 40`, and our heads `Y = 3u + v` have coordinates up to **11** where the
+condition on the standard frame is `|Y_i| <= 5`. **Every one of the 24 coordinates fails.**
+Cohn's scaled-owner heads `sqrt(2/3) u` are proportional to MINIMAL vectors, whose coordinates
+are at most 4, which is exactly why the frame layer fits on top of his construction in
+dimensions 28-31 and not on top of ours. Our lean layer is worth +1181 over his and the frame
+layer 288, so the trade is not close -- but it is the first case where our better layer is what
+blocks another one.
+
+*An `r = 3` layer on MANY lines instead of an `r = 8/3` layer on four triples.* An `r = 3` head
+carries `+-y` for ANY line, not a zero-sum triple, so the line count is not `tau(k)/3`; and the
+axis survives because `|y||a| = 2`. Better still, two heads on lines at angle `phi` need
+`<x,x'> <= 2 - |cos phi|` against `<= 1` on one line, so the cross condition is LOOSER than the
+same-line one at every angle -- the reverse of the `r = 8/3` layer, where extra triples cost
+threshold. Six lines fit in `R^3` at 63.43 degrees (the icosahedral ones), cross threshold
+1.5528. Since `K(27) = 196560 + H + 12` with distinct owners, beating 201492 needs `H > 4920`.
+MEASURED over the 24-lean pool: **2468** heads (423, 482, 439, 383, 349, 392), K(27) = 199040.
+The lines do work -- one line gives about 800 -- but an `r = 3` head is worth +1 where an
+`r = 8/3` class head is worth +2, so the layer needs twice as many heads and gets nowhere near.
+
 Dimension 25 was also re-attacked directly. Its head set is a max-clique: `K(25) = 196560 + H
 + 3`, `H = 1006`, Delsarte 5752. Recovered from the shipped package, the 971 lens heads use
 FOUR leans with block sizes 552 + 285 + 133 + 1 and off-diagonal Gram `{-4, -3, -1, 0, 2}`. The
