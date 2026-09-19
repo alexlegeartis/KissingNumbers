@@ -1,9 +1,9 @@
 # Dimensions 26 and 27: the coset triangle on every triangle of directions
 
-**τ(26) ≥ 199 770** and **τ(27) ≥ 201 225**, against the published 198 550 and 200 044
+**τ(26) ≥ 199 770** and **τ(27) ≥ 201 485**, against the published 198 550 and 200 044
 (Cohn's table; Ma et al. 2025) and this repository's earlier 200 540 in dimension 27 (now in
 [`../../superseded/dim27-triple-partition/`](../../superseded/dim27-triple-partition/)).
-Improvements of **+1 220** and **+1 181** over the table.
+Improvements of **+1 220** and **+1 441** over the table.
 
 ```
 python verify26.py          # ~1 min, exact arithmetic in every decision; exits non-zero on failure
@@ -31,10 +31,11 @@ cross-constrained at cosine ≤ 1/2, and
 
 | | dimension 26 | dimension 27 |
 |---|---|---|
-| equator `(z, 0)`, `z` a minimal vector that is not an owner | 195 102 | 194 427 |
+| equator `(z, 0)`, `z` a minimal vector that is not an owner | 195 102 | 194 167 |
 | caps, three per head | 3 × 1554 | 3 × 2262 |
+| caps, two per second-layer head (dimension 27 only) | — | 2 × 260 |
 | axis | 6 | 12 |
-| **total** | **199 770** | **201 225** |
+| **total** | **199 770** | **201 485** |
 
 Every head is `y/3` with `y = 3u + v` an integer vector: `u` a minimal vector (the *owner*,
 which the head removes from the equator) and `v` a Leech vector of norm 6 (a *lean*) with
@@ -83,6 +84,32 @@ them look unaffordable. Solving them together gives 96 free heads for 66 class h
 six old free ones in dimension 26 (`3·96 − 3·6 − 2·66 = +138`) and 129 for 77 in dimension 27
 (`3·129 − 3·6 − 2·77 = +215`).
 
+**Dimension 27 carries a second cap layer, and dimension 26 cannot.** A cap with `|y| = 1`
+has `|x|² = 3`; it satisfies the axis condition `⟨y, a⟩ ≤ 2` whatever direction it points,
+because `|y||a| = 2`, and it carries the antipodal pair `±y` and no more, since three
+directions would need pairwise cosine `≤ −1`. Nothing in `{x : ⟨x, z⟩ ≤ 2}` has norm above
+`8/3`, so such a head always deletes; the scaled owner `x = (√3/2)u` deletes *exactly* `u`,
+because `⟨x, z⟩ > 2` needs `⟨u, z⟩ > 4/√3 = 2.31`, i.e. `⟨u, z⟩ = 4`, i.e. `z = u`. Two cap
+points for one deletion: **+1 each**.
+
+Its direction has to clear the twelve first-layer directions, and that is the whole
+difference between the two dimensions. In dimension 26 those are the six edge midpoints of a
+hexagon, the widest gap is 30°, and measured against the shipped layer **not one** of the
+196 560 minimal vectors qualifies. In dimension 27 they are the cuboctahedron's twelve
+vertices, whose covering radius is 45°, attained exactly at the six square-face centres
+`±e₁, ±e₂, ±e₃` — three antipodal lines. That single extra quantum takes the admissible
+owners from 0 to **3009**, and 260 of them fit (86 + 87 + 87). Everything reduces to two
+integer comparisons,
+
+    ⟨Y, u⟩ ≤ 32   because  (√3/48)·32 + 2/√6 = (2+√2)/√3 = 1.9712 < 2
+    ⟨u, u′⟩ ≤ 8   on one line, because  (3/32)·8 + 1 = 7/4 < 2
+
+with everything else automatic: against the equator `(√3/2)·2 < 2`; across lines
+`(3/32)·16 = 3/2 < 2`; on one line with opposite signs `(3/32)·16 − 1 < 2`; against the axis
+`⟨y, a⟩ ≤ |y||a| = 2`. The next tier of candidates (10 647 at `⟨Y, u⟩ = 40`) is out of reach:
+each has about 25 first-layer blockers and a dropped class head costs 2 against a
+second-layer head's 1.
+
 ## What the verifiers check
 
 `lib/layered.py` takes the heads as integer vectors `y` (Cohn units, norm 192) with the index
@@ -102,7 +129,7 @@ triangles, and a head displaced by a minimal vector are each rejected.
     lib/golay.py  lib/leech.py      the Leech minimal vectors from the Golay code
     lib/layered.py                  the exact checks, shared by both
     data/heads26_Y.npy  data/heads26_side.npy    the 1554 heads (int64, Cohn units) and their triangle (0 or 1)
-    data/heads27_Y.npy  data/heads27_side.npy    the 2262 heads and their triangle (0 to 3)
+    data/heads27_Y.npy  data/heads27_side.npy    the 2262 first-layer heads and their triangle (0 to 3)
 
 ## Provenance
 

@@ -131,7 +131,7 @@ JOBS = [
      os.path.join(V, 'improved', 'dim25-lens-heads'), ['fullcheck.py'], 2.0, True),
     ("dim 26: the 199770-point two-triangle configuration, exactly",
      os.path.join(V, 'improved', 'dim26-27-iota-triangles'), ['verify26.py'], 1.0, True),
-    ("dim 27: the 201225-point two-triangle configuration, exactly",
+    ("dim 27: the 201485-point two-LAYER configuration, exactly",
      os.path.join(V, 'improved', 'dim26-27-iota-triangles'), ['verify27.py'], 2.0, True),
     ("dim 28: the 204896-point configuration with the norm-8 frame layer, exactly",
      os.path.join(V, 'improved', 'dim28-norm8-frame-layer'), ['verify28.py'], 1.0, True),

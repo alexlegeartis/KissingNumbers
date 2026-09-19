@@ -1264,7 +1264,22 @@ the cuboctahedron rotated by $45^{\circ}$ about a coordinate axis, whose largest
 cosine to a direction is $(2+\sqrt2)/4$ and whose inner product with a cap point
 is at most $(2+\sqrt2)/\sqrt3<2$; two triangles of leans with cross Gram matrix
 the circulant of $(3,0,-3)$ carry $2133$ class heads over the four sides and
-$129$ free heads: $196\,560+12+2\cdot2133+3\cdot129=\Kh{27}$. The package
+$129$ free heads.  Dimension $27$ also carries a SECOND cap layer, at $|x|^{2}=3$ with
+$|y|=1$, which dimension $26$ has no room for.  Such a cap satisfies $\ip{y}{a}\le2$
+whatever direction it points, since $|y||a|=2$; it carries the antipodal pair $\pm y$ and
+no more, three directions needing pairwise cosine $\le-1$; and the scaled owner
+$x=\tfrac{\sqrt3}{2}u$ deletes exactly $u$, because $\ip{x}{z}>2$ forces
+$\ip{u}{z}>4/\sqrt3$, that is $\ip{u}{z}=4$.  Two cap points for one deletion: $+1$ each.
+Its direction must clear the twelve first-layer directions, and that is where the two
+dimensions part: the hexagon's six edge midpoints leave a gap of $30^{\circ}$, at which
+not one of the $196\,560$ minimal vectors qualifies, while the cuboctahedron's covering
+radius is $45^{\circ}$, attained at its six square-face centres $\pm e_{1},\pm e_{2},
+\pm e_{3}$ -- three antipodal lines.  One quantum, and the admissible owners go from $0$
+to $3009$; $260$ of them fit, $86+87+87$.  Everything reduces to
+$\ip{Y}{u}\le32$ and $\ip{u}{u'}\le8$ on a line, since
+$\tfrac{\sqrt3}{48}\cdot32+\tfrac{2}{\sqrt6}=(2+\sqrt2)/\sqrt3<2$ and
+$\tfrac{3}{32}\cdot8+1=\tfrac74<2$:
+$196\,560+12+2\cdot2133+3\cdot129+260=\Kh{27}$. The package
 \texttt{dim26-27-iota-triangles} stores the heads as integer vectors with the
 index of their triangle, rebuilds the Leech vectors from the Golay code, decides
 every head--equator and head--head pair by integer comparison against the

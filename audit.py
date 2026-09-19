@@ -308,7 +308,7 @@ add(18, 8358, 'dim18-bent-hexagon', 'verify18.py (exact: integers on the R^16 si
                                      'on the R^2 side, every sign decided by squaring)')
 add(25, 197569, 'dim25-lens-heads', 'verify.py (exact arithmetic; fullcheck.py is the independent net)')
 add(26, 199770, 'dim26-27-iota-triangles', 'verify26.py (exact: integers, and sympy for the hexagon)')
-add(27, 201225, 'dim26-27-iota-triangles', 'verify27.py (exact: integers, and sympy for the rotated cuboctahedron)')
+add(27, 201485, 'dim26-27-iota-triangles', 'verify27.py (exact: integers, and sympy for the rotated cuboctahedron and the second layer)')
 add(28, 204896, 'dim28-norm8-frame-layer', 'verify28.py (exact: integers, and sympy in Q(sqrt2, '
                                            'sqrt3) for the 24-cell, its half-vector axis and the '
                                            'four coordinate directions)')
@@ -1796,7 +1796,7 @@ if '--write-results' in sys.argv and not fail:
     PKGDOC = {
         'dim18-bent-hexagon': 'odd BW16 in R^16 plus a hexagon of tiers in R^2 whose three six-set families are bent cosets of RM(1,4) with pairwise-bent sums not summing to zero; tier B rises from 256 to 960',
         'dim25-lens-heads': '1006 heads in the lens of a minimal vector, no removal shared, plus one non-lattice equator point',
-        'dim26-27-iota-triangles': 'the coset triangle of three norm-6 vectors on every triangle of directions, the side chosen per head; in 26 the second side is the involution image of the first.  On top of it a layer of FREE heads y = +-2v, which remove no equator point and are therefore worth 3 where a class head is worth 2: their conflicts with the class layer concentrate onto about 72 heads, so the deletions are shared and the trade is solved jointly -- 96 free heads for 66 class heads in dimension 26 and 129 for 77 in dimension 27',
+        'dim26-27-iota-triangles': 'the coset triangle of three norm-6 vectors on every triangle of directions, the side chosen per head; in 26 the second side is the involution image of the first.  On top of it a layer of FREE heads y = +-2v, which remove no equator point and are therefore worth 3 where a class head is worth 2: their conflicts with the class layer concentrate onto about 72 heads, so the deletions are shared and the trade is solved jointly -- 96 free heads for 66 class heads in dimension 26 and 129 for 77 in dimension 27.  Dimension 27 carries a SECOND cap layer at |x|^2 = 3 with |y| = 1, which the hexagon of dimension 26 has no room for: such a cap points anywhere (|y||a| = 2), carries the antipodal pair +-y, and the scaled owner sqrt(3)/2 u deletes exactly u, so it is +1 each.  Its direction must clear the twelve first-layer directions, and the cuboctahedron covers at 45 degrees where the hexagon covers at 30 -- one quantum, which turns 0 admissible owners into 3009 and puts 260 heads on the three square-face lines',
         'dim28-norm8-frame-layer': 'a deletion-free layer at height sqrt2 on a NORM-8 head: the 24 '
                                    'vectors 8e_i are a Leech frame, each carries the eight '
                                    'directions +-e_k of R^4, and both signs give 48 x 8 = 384 '
