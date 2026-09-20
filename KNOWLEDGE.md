@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **153 sections, about 10845 lines**, written as the
+The full working record of the project: **154 sections, about 10983 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
