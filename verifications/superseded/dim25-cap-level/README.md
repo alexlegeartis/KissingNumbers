@@ -5,7 +5,7 @@
 
 **Superseded by this project's own
 [`../../improved/dim25-lens-heads/`](../../improved/dim25-lens-heads/), which gives
-197 569** — the same template (Leech equator, mirrored caps, two poles) with the caps
+197 579** — the same template (Leech equator, mirrored caps, two poles) with the caps
 rebuilt: 1006 heads of squared length 3 in the lens of a minimal vector, each removing
 exactly its owner, plus one non-lattice equator point. Better by +511. The level argument
 below is still true; it is just no longer what carries the dimension-25 claim.

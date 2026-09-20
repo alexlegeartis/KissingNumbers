@@ -41,7 +41,7 @@ them exceeds a known record in a higher dimension. It takes a few seconds.
 | 28  | 204 520              | **204 896**       | 1.00     | the head of a deletion-free layer need not have norm 6: at height √2 a norm-8 head clears the cap threshold, and 48 of them are a whole Leech frame |
 | 27  | 200 044              | **201 509**       | 1.01     | the coset triangle of three norm-6 vectors, on all four triangles of directions with the side chosen per head, plus a jointly-solved layer of free heads that remove nothing |
 | 26  | 198 550              | **199 806**       | 1.01     | the same triangle on both triangles of the hexagon, the second side the involution image of the first, plus a jointly-solved layer of free heads that remove nothing |
-| 25  | 197 056              | **197 569**       | 1.00     | 1006 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point |
+| 25  | 197 056              | **197 579**       | 1.00     | 1016 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point |
 
 
 The full table of all 53 is `[RESULTS.md](RESULTS.md)`. The write-up, *New lower bounds
@@ -72,7 +72,7 @@ verifications/
   superseded/             claims this project made and then lost, and why
   closed/                 mechanisms pushed to their exact ceiling: what NOT to retry
 
-KNOWLEDGE.md              the full working record, 154 sections, including everything
+KNOWLEDGE.md              the full working record, 156 sections, including everything
                           that failed -- with a preamble on how to read it, which
                           sections supersede which, and where each script now lives
 ```
@@ -363,7 +363,7 @@ Or individually, each from its own directory:
 | `audit.py`                                                                    | all 53 claims, mutual and external consistency                 | 30 s   |
 | `common/theta.py`                                                             | E₇ = 126, Λ₂₃ = 93 150, dim 47, dim 71                         | 1 s    |
 | `common/kpoint_lp.py`                                                         | the LP, validated on the Leech and P₄₈                         | 10 s   |
-| `…/dim25-lens-heads/verify.py`                                                | τ(25) ≥ 197 569, every pair in exact arithmetic               | 4 min  |
+| `…/dim25-lens-heads/verify.py`                                                | τ(25) ≥ 197 579, every pair in exact arithmetic               | 4 min  |
 | `…/dim26-27-iota-triangles/verify26.py`                                      | τ(26) ≥ 199 806, every pair in exact arithmetic               | 1 min  |
 | `…/dim26-27-iota-triangles/verify27.py`                                      | τ(27) ≥ 201 509, every pair in exact arithmetic               | 2 min  |
 | `…/superseded/dim27-triple-partition/scripts/verify_configuration.py`         | τ(27) ≥ 200 540, the superseded claim, from its coordinate file | 18 s   |
@@ -510,7 +510,7 @@ The constructions, the verification code and the write-ups in this repository we
 by the author working with **Claude Code** (Anthropic). The repository is deliberately
 structured so that someone else can pick it up the same way: every package states its idea in
 prose before its code, every negative result says what was tried and why it failed, and
-`KNOWLEDGE.md` is the full working record — 154 sections, most of them about things that
+`KNOWLEDGE.md` is the full working record — 156 sections, most of them about things that
 did not work.
 
 Alexey Kravatskiy, MIRIAI (Moscow Independent Research Institute of Artificial Intelligence),

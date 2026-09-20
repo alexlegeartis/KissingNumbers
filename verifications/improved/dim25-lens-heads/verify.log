@@ -4,11 +4,11 @@ verify.py --- exact verification of K(25) >= 197569
   196560 vectors, all of norm 32, all distinct               ok
 
 2. the artefact
-  1006 heads, 1006 owners                                    ok
+  1016 heads, 1016 owners                                    ok
   every owner is a Leech minimal vector                      ok
   owners are distinct                                        ok
   every head has |x|^2 = 3 to 1e-12                          ok   1.78e-15
-  971 heads classified as class heads, 35 rational           ok
+  972 class heads, 44 rational                               ok
   each class head is stored exactly (max drift < 1e-11)      ok   4.44e-16
   w = u + v is minimal and <u,w> = 1                         ok
 
@@ -16,15 +16,15 @@ verify.py --- exact verification of K(25) >= 197569
   every class head exceeds 2 at its owner and nowhere else   ok   violations 0, owner failures 0
 
 4. class head against class head, in exact integer arithmetic
-  all 470935 class-head pairs compatible                     ok   0 bad
+  all 471906 class-head pairs compatible                     ok   0 bad
 
-5. the 35 rational heads, in exact rational arithmetic
-  the pickle carries the same 35 heads                       ok
+5. the 44 rational heads, in exact rational arithmetic
+  the pickle carries the same 44 heads                       ok
   each rational head has |X|^2 = 24 exactly                  ok
   each rational head is within 1e-6 of the stored head       ok
   rational heads against the whole equator                   ok   violations 0, owner failures 0
-  all 595 rational-rational pairs compatible                 ok   0 bad
-  all 33985 rational-class pairs compatible                  ok   0 bad
+  all 946 rational-rational pairs compatible                 ok   0 bad
+  all 42768 rational-class pairs compatible                  ok   0 bad
 
 6. the extra equator points
   each extra point is -(2/sqrt6) v for a lean v of the configuration ok
@@ -42,7 +42,7 @@ verify.py --- exact verification of K(25) >= 197569
   pole against head: 2 c^2 = 16 <= 16                        ok
   pole against pole: -4 c^2 = -32 <= 16                      ok
   pole against equator: 0 <= 16                              ok
-  equator 195554 + extra 1 + 2*1006 + 2 = 197569             ok   197569
+  equator 195544 + extra 1 + 2*1016 + 2 = 197579             ok   197579
 
-ALL CHECKS PASS      K(25) >= 197569
+ALL CHECKS PASS      K(25) >= 197579
 exit 0

@@ -255,7 +255,7 @@ chk('a triple is worth 4 per class line and a pair 2',
 # one extra line in every class is worth 2 sum (|Z_i| - 1)
 PARTS = {25: (0, 1), 26: (2, 0), 27: (4, 0), 28: (8, 0), 29: (12, 2), 30: (24, 0), 31: (42, 0)}
 TAU = {25: 2, 26: 6, 27: 12, 28: 24, 29: 40, 30: 72, 31: 126}
-CAL = {25: 197058, 26: 198550, 27: 200540, 28: 204520, 29: 209496, 30: 220440, 31: 238350}   # 25: the level-3/4 construction; the claim is 197569 (lens heads)
+CAL = {25: 197058, 26: 198550, 27: 200540, 28: 204520, 29: 209496, 30: 220440, 31: 238350}   # 25: the level-3/4 construction; the claim is 197579 (lens heads)
 GAIN = {25: 2, 26: 8, 27: 16, 28: 32, 29: 52, 30: 96, 31: 168}
 for d, (nt, npr) in PARTS.items():
     chk('dim %d: parts total tau(%d)' % (d, d - 24), 3 * nt + 2 * npr == TAU[d])

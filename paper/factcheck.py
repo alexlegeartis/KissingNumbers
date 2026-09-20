@@ -485,8 +485,8 @@ for L, (n, mu, N, row) in ONE.items():
 # ------------------------------------------------------------------ cap arithmetic
 print('== Cap construction arithmetic ==')
 chk('dim 25 level-3/4 count', 196560 + 2 * 248 * (2 - 1) + 2 == 197058)
-chk('dim 25 claim is the lens-head configuration', 196560 - 1006 + 1 + 2 * 1006 + 2 == 197569)
-chk('paper says 197,569', '197\\,569' in TEX)
+chk('dim 25 claim is the lens-head configuration', 196560 - 1016 + 1 + 2 * 1016 + 2 == 197579)
+chk('paper says 197,579', '197\\,579' in TEX)
 chk('dim 25 with a 249-line class', 196560 + 2 * 249 * (2 - 1) + 2 == 197060)
 chk('paper says 197060', '197\\,060' in TEX)
 chk('dim 27 count', 196560 + 2 * 4 * 248 * (3 - 1) + 12 == 200540)
@@ -1243,7 +1243,7 @@ chk('the paper lists the k at which the layer reaches K(k), and the list is righ
 
 # ------------------------------------------------------------- prose numbers vs table
 print('== Prose numbers against the tables ==')
-for d, v in [(25, 197569), (26, 199806), (27, 201509), (38, 591612), (39, 756116),
+for d, v in [(25, 197579), (26, 199806), (27, 201509), (38, 591612), (39, 756116),
              (70, 1249778250), (71, 2603658750), (96, 12886999232)]:
     chk('prose dim %d = table' % d, tab4[d][1] == v, '%d vs %d' % (tab4[d][1], v))
 # Theorem 6.3 and the abstract both state dimension 96.  FLAT collapses whitespace but

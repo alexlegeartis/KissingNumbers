@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **154 sections, about 10983 lines**, written as the
+The full working record of the project: **156 sections, about 11195 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -10981,3 +10981,215 @@ layer is worth at most 72 more points, and 129 is not where a search stopped -- 
 ceiling of the full shell.  Combined with 155.2 (`2c` is structural), 155.3 (four triangles is
 forced by the pool) and section 154 (the dim-26 sweep is single-peaked at the shipped point),
 every term of `K(27) = 196560 + 2c + 3f + L + 12` is now bounded by measurement.
+
+## 156. The non-Leech equator: size is no longer the wall, separation is (2026-09-20)
+
+Section 125.2 priced the split-equator design and left it as the only route capable of changing
+dimension 25 by a large amount.  Rebuilt from scratch on 2026-09-20 (scripts in
+`research/collab2531/nonleech/`).  **No record was beaten.**  The two objects built, both
+exactly all-pairs checked, are 103 412 points in R^25 with no equator at all, and 196 562
+points in R^25 whose equator is the 93 150-point Lambda_23 shell rather than the Leech shell --
+**1007 short** of 197 569, because the record buys its margin with 1006 heads for 1006
+deletions.  What changed is everything around that.
+
+### 156.1 Two corrections to section 125.2
+
+* **The requirement was priced at its worst height.**  Each mirror layer needs `N = 93032`, and
+  that number does **not** depend on `h`; only the angle does.  "93000 at 61.75 degrees, LP-tight
+  to within 3%" is the statement at `h = 0.45` alone.  At `h = 0.05` the same 93 032 is needed
+  at barely over 60 degrees, where it is **47.8%** of the Delsarte bound, not 97%.
+* **"Not even valid: cross inner products 2.714 > 2" was the profile, not the configuration.**
+  With the forced level profile the lifted pair IS valid: `max <p,p'> = 2.000000000` exactly over
+  all 103 412^2/2 pairs (`build25.py`).  The criterion checks from the other side too -- the
+  case predicted invalid (norm 8, levels {1,2}, 126 594 points) fails at 2.124983717.
+
+### 156.2 The lever that was missing: a high-norm Leech direction
+
+The Moebius boost of `boostcap.py` is exactly "Leech points inside a ball of radius r < 2 about
+a nearby centre, radially normalised", and **composing two boosts gives nothing** (the Moebius
+group of S^23 is rotations times one boost per direction).  The real generalisation is a *level
+profile*: move each level set `{z : <z,w> = l}` rigidly to a new height.  For a direction `v` of
+standard norm `M`, the heaviest cap is `(196560 - n0(v))/2` where `n0(v)` is the kissing number
+of the 23-dimensional section `Lambda ^ v^perp`, and **n0 falls with M**: 93150 (M=4), 65780 (8),
+38478 (24), 20422 (82), 9008 (412).  That gives a curve where the repository had two points:
+
+    60.02 deg  93776      60.25 deg  81857  (repo had 66674)      61.00 deg  65390
+    60.10 deg  88069      60.50 deg  75036                        63.00 deg  23777 (repo 18286)
+
+The two heaviest were re-checked here, independently of the script that built them, over every
+pair: **93 776 distinct unit vectors, max inner product 0.499696642, min angle 60.02007 degrees**
+(4 396 922 200 pairs) and **88 069 at 60.10109 degrees** (3 878 030 346 pairs).  Since
+93 776 >= 93 032, **the size requirement of the split-equator design is met**.
+
+The matching ceiling is new and tight: the minimal vectors are a spherical 11-design, so for any
+`g` of degree <= 11 with `g >= 1` on the cap and `g >= 0` off it, `#cap <= 196560 g_0` -- an LP,
+exactly tight at the lattice thresholds (1, 4601, 51705, 144855).  We reach 69-86% of it.
+
+### 156.3 What binds instead, and it is an identity
+
+Because `s(h) + b(h) = 4/(4-h^2)` for every `h`, a level's within-layer constraint and its
+constraint against its own mirror are the **same equation**.  Both must then be exactly tight,
+which forces `l_i = l_j`: two distinct levels coexist only when `l_i - l_j` or `l_i + l_j` is a
+level **not realised** by a minimal vector.  For a minimal-vector direction the realised levels
+are `{0, +-1, +-2, +-4}` -- **level 3 is missing** -- which is exactly what lets `{1,2,4}`
+coexist.  Screening 3605 Leech directions of norm 4 to 300, the maximum split-equator mass is
+exactly `2 x 51705 = 103410`, at norm 4, falling monotonically with the norm.  The single-layer
+size grows with the direction's norm while mirror compatibility collapses with it, and the
+product peaks at norm 4.  Concretely: the verified 93 776-point layer sits at `h = 0.04927`, so
+its mirror needs every inner product `>= -0.500911`; the code's minimum is **-0.5492**.  It
+misses by **0.0483**.
+
+### 156.4 Niemeier closed by counting, and what is left open
+
+`theta_L = E_4^3 + (N_2 - 720) Delta` for every even unimodular 24-dimensional lattice, so
+`N_4 = 196560 - 24 N_2`, verified from the q-expansions of all 24 root systems: every rooted
+Niemeier norm-4 shell is strictly smaller than the Leech's, and is not even a 60-degree code
+(pairs at inner product 3 differ by a root, 41.4 degrees).  Leech shells of norm <= 32 rescaled
+die by counting as well; norm >= 40 was not explored.
+
+Still open, and not closed by counting: in dimensions 26 and 27 the same design with 3 and 4
+layers needs only 66 602 and 50 378 per layer, which we now hold.  The cross bars there are
+`cos <= 0.51515` (58.99 deg) and `cos <= 0.52532` (58.31 deg), and since every pair of the layer
+system satisfies the cross bar, the whole layer mass is one spherical code at that bar --
+`A(24, 0.51515) = 270235` and `A(24, 0.52532) = 336727` against 199 806 and 201 509 needed
+(`crossbar.py`, calibrated at 196560 on `cos <= 1/2`).  So counting does not close it.  What is
+missing is a construction: the layers must be mutually separated and disjoint, and the only
+family we can build at those internal angles is a **cap**, which is concentrated and cannot
+supply three or four disjoint mutually separated copies.
+
+### 156.5 Dimensions 26 and 27: the rotated equator buys room in 4 dimensions, and needs 24
+
+The multi-layer design of 156.4 was built (`req2627.py`, `types26.py`, `colour26.py`,
+`build26.py`, `build27.py`, `headroom.py`, `heads26.py`, `final26.py`).  Best objects, all pairs
+checked at `max <p,p'> = 2.000000000`: **196 572** in dimension 26 and **196 572** in dimension
+27, short by 3234 and 4937.  It dies on a *dimension* count, not on counting and not on the
+cross bar.
+
+**The per-layer requirement was the wrong question.**  Every code we can build above 60 degrees
+is a subset of one deformed Leech shell, and a partition of one shell into `m` parts has total
+mass 196560 whatever `m` is.  So the design's budget is exactly the record's own:
+
+    dim 25: 197569 = 196560 +  2 axis + 1007 caps   -> it must find 1008
+    dim 26: 199806 = 196560 +  6 axis + 3240 caps   -> it must find 3241
+    dim 27: 201509 = 196560 + 12 axis + 4937 caps   -> it must find 4938
+
+(each line checked against the shipped counts).  It wins only if the ROTATED equator admits
+more heads than the flat one.  Three *independent* codes are excluded with a measured zero:
+separation needs `2 rho + arccos(b) <= arccos(-1/(m-1))`, i.e. `rho <= 30.50` degrees in
+dimension 26 and `25.58` in dimension 27, and the 93776-, 88069- and 83628-point codes have
+**0** points within that radius of their centre -- their first non-empty radius is about 55
+degrees, and they fill a cap of radius 90.
+
+**The rotation is an isometry on each part, so the whole design is a finite table.**  With
+`w_1 + w_2 + w_3 = 0` a zero-sum triple of minimal vectors and `yhat_i` a triangle in R^k with
+the SAME Gram, rotating each part's `w_i`-component into `yhat_i` by a common angle `t` gives
+`<p,p'> = <z,z'> + (cos t - 1) B` with `B = a_i b_i + a_j b_j - 2 g a_i b_j`; `B = 0` when
+`i = j`, so within-layer pairs are automatically legal and only cross pairs move.  The
+coefficient `a` takes values `{+-2, +-1, +-1/2, 0}` summing to zero -- exactly **25 types** --
+so the criterion is a 25x25 table over all 196560^2 pairs.  972 colourings have no fatal pair;
+the naive argmax partition has 6, and they are exactly the six antipodal pairs `{T,-T}`.  The
+best colouring moves the maximum possible mass, `3 x 48888 = 146664`, off R^24; the remaining
+**49 896 are the Lambda_22 shell, orthogonal to all three `w_i`, and can never move**.  For
+dimension 27 the four-layer tetrahedral system exists, not over minimal vectors (that would
+need `<z_i,z_j> = -4/3`) but over four norm-6 vectors with pairwise inner product -2.
+
+**The rotation does create head room, and a calibration was needed to see it.**  Random
+sampling reports 0 admissible heads even for the FLAT equator, where the record has 3240,
+because the flat admissible set is measure zero: a head needs `|x| <= 2/(2 sqrt6/4) = 1.6330`,
+i.e. `|y| >= 2/sqrt3` exactly, attained only at a deep hole -- which is section 155.2's
+statement that free heads ARE the deep holes, re-derived from the other side.  A clearance
+descent at fixed `|y|` instead:
+
+    |y|       t = 0       t = 15      t = 30
+    1.0000    2.24959     2.21633     1.76423
+    1.1000    2.20894     2.09723     1.90526
+    1.1547    2.18271     2.03572     2.00001
+
+At `|y| = 1.00` and `1.10` the flat equator provably admits no head, and at `t = 30` degrees
+heads exist constructively -- 381 of them.  But 99.2-99.9% of each head's `|Y|` lies inside
+`span(w_1, w_2)`, and a head with a real R^22 component still has to clear the 49 896 untouched
+Lambda_22 points; greedy packing of the 381 gives **6**.
+
+**Why the margin never moves.**  The design needs `Gram(w) = Gram(yhat)`, which is what
+collapses the cross term independently of `t`, and the `yhat_i` live in R^k -- so the `w_i` span
+at most `k` dimensions and the rotation perturbs the equator only inside `span(w) (+) R^k`, of
+dimension at most `2k`.  The extra mass is therefore capped by a low-dimensional kissing number:
+
+    dim 26: 196560 + tau(4) = 196584  against 199807 needed  -> short by 3223
+    dim 27: 196560 + tau(6) = 196632  against 201510 needed  -> short by 4878
+
+**The record's 3240 heads use all 24 dimensions; the rotation buys room in 4.**  That is why
+the margin barely moves with the number of layers, with `t`, or with the colouring, and it
+answers the asymmetric-design question too: different heights change only the pairwise bars,
+which the table already leaves unconstrained, not the dimension of the perturbed subspace.
+Scope: the `2k` bound and the matched-Gram family are this analysis's own, and the step "heads
+avoid the untouched R^(24-k) directions" is MEASURED (99.2%+), not proved; a mismatched-Gram
+design makes `B` depend on `t` in a way the table does not cover and was not explored.
+
+## 157. Dimension 25: K(25) >= 197579, and a guard that pinned its own answer (2026-09-20)
+
+`verifications/improved/dim25-lens-heads/` now carries **1016 heads** instead of 1006, so
+`K(25) = 196560 - 1016 + 1 + 2 x 1016 + 2 = 197579`, **+10** over the previous claim and **+523**
+over the published 197056.  The class-head core is untouched; the gain is entirely in the
+supplementary heads, 44 instead of 35.
+
+### 157.1 The mechanism: the supplement was being built greedily
+
+The 35 interior heads of the earlier package were added **one at a time, in a fixed order**
+(`research/collab2531/interior2.py`, `interior3.py`), each against the heads already placed.
+Replacing that with a pool and a maximum independent set:
+
+1. for every candidate owner, solve `max |x|` over `P(u) = {<x,z> <= 2 for minimal z != u,
+   <x,h> <= 1 for every head h of the class core}` by Frank-Wolfe, **against the core only** --
+   1188 of the candidate owners admit a head;
+2. take a maximum independent set of that 1188-head pool under `<x,x'> <= 1`.  Two heads over
+   one owner always conflict (section 155.2), so owners stay distinct automatically.
+
+Greedy on that pool gives 29-37 -- the shipped 35 is simply the greedy answer.  Iterated local
+search gives 43-44 and CP-SAT gives **44**.  The pool graph has density 0.1538 and CP-SAT bounds
+its independence number at 92-112, so 44 is again the factor-two barrier and **a stronger
+maximum-independent-set solver on this pool is the cheapest remaining lever in dimension 25**:
+every extra pool head is +1 sphere.
+
+### 157.2 The verifier had written the answer into itself
+
+`verify.py` pinned `n == 1006`, `ncls == 971 and n - ncls == 35`, `equator == 195554` and
+`total == 197569` as literals, so it could not accept a better configuration -- it FAILED on the
+1016-head artefact while every mathematical check inside it passed, and printed the correct
+total 197579 in the failure message.  The dimension-26 and -27 verifiers derive their counts;
+this one did not.  It now does, and that is the fix: a verifier states the geometry and
+computes the count.  This is [[guards-that-pin-a-literal-block-corrections]] costing a real
+result, not a hypothetical one.
+
+### 157.3 Why the new heads are still exactly verifiable
+
+A rational head has products `(rational)` with the equator in Cohn units and can never be
+tight, so rationalisation needs slack.  Measured: the 44 new non-class heads have minimum slack
+**7.1e-2** against the equator and **3.6e-2** head-to-head, where the 35 the repository already
+rationalised successfully had **1.3e-2** and **2.5e-3**.  The new supplement is an order of
+magnitude LESS delicate than the one already shipped.  Rationalised on the sphere `|X|^2 = 24`
+in Cohn units from `x0 = (2,2,2,2,2,2,0,...)` with denominator `10^9`, the drift is 6.5e-10, and
+both `verify.py` (exact: integers for the 972 class heads, `Fraction` for the 44 rational ones,
+`Q(sqrt3)` for the mixed pairs) and `fullcheck.py` (an independent net over all 197579 points)
+pass.
+
+### 157.4 The symmetric-orbit ansatz itself: a measured negative
+
+The repository's Golay code being the extended cyclic QR code means its coordinates ARE
+PG(1,23), so the whole of **PSL(2,23)** (order 6072) acts on the Leech lattice in our own
+coordinates by Mobius maps, not merely the shift `sigma` and the multiplier `mu` of section
+155.1.  Class heads descend cleanly: for a `g`-fixed lean, `<g^j u, v> = <u,v>`, so only
+`A = <u, g^j u'>` moves and compatibility is increasing in `A` -- two orbits are compatible iff
+`compat(max_j <u, g^j u'>, B, C)`, an exact integer test.  Best invariant class-head layers:
+
+    order 23 (2 fixed leans)     736     orbit graph density 0.95 -- the wrong group
+    order 11 (12 fixed leans)    971     CP-SAT OPTIMAL, bound = objective
+    order 3  (240 fixed leans)   849
+    order 2  (2048 fixed leans)  968
+
+**Order 11 returns exactly 971 over all twelve of its fixed leans, over a 9-lean subset, and
+over the record's own 4 leans -- four independent systems, all 971**, with a different block
+split 530/297/144 against the record's 552/285/133/1.  That is strong evidence 971 is the
+ceiling of the class-head family.  But the symmetric core is WORSE for the supplement: the
+order-11 971 extends to 993-1000 against the record core's 1016.  **Which 971 you pick matters
+more than the 971 itself**, and that is why the gain came from the supplement, not the core.

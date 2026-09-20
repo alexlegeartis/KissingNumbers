@@ -123,11 +123,11 @@ JOBS = [
     ("paper: every formula in kissing46.tex, re-derived",
      PAPER, ['formulas.py'], 0.2, True),
 
-    ("dim 25: the 197569-point lens-head configuration, exactly",
+    ("dim 25: the 197579-point lens-head configuration, exactly",
      os.path.join(V, 'improved', 'dim25-lens-heads'), ['verify.py'], 4.0, True),
     ("dim 18: the 8358-point bent-coset hexagon over the odd Barnes-Wall lattice, exactly",
      os.path.join(V, 'improved', 'dim18-bent-hexagon'), ['verify18.py'], 0.5, True),
-    ("dim 25: the same, as an independent floating-point net over all 197569 points",
+    ("dim 25: the same, as an independent floating-point net over all 197579 points",
      os.path.join(V, 'improved', 'dim25-lens-heads'), ['fullcheck.py'], 2.0, True),
     ("dim 26: the 199806-point two-LAYER configuration, exactly",
      os.path.join(V, 'improved', 'dim26-27-iota-triangles'), ['verify26.py'], 1.0, True),

@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Exact verification of  K(25) >= 197569.
+"""Exact verification of  K(25) >= 197579.
+
+Every count below is DERIVED from the artefact, not written into the script: an earlier
+version pinned 1006, 971, 35, 195554 and 197569 as literals, which made the file reject a
+better configuration instead of measuring it.
 
     python verify.py
 
@@ -16,8 +20,8 @@ vectors are integer vectors of norm 32.  A point of the configuration has norm
 The configuration.  With E the surviving equator, H the heads and their mirror
 images, and the two poles,
 
-    (z, 0)          z in E = Lambda_min \ D,        |E| = 195554
-    (X, +-c)        X a head, |X|^2 = 24, c^2 = 8,  2 * 1006
+    (z, 0)          z in E = Lambda_min \ D,        |E| = 195544
+    (X, +-c)        X a head, |X|^2 = 24, c^2 = 8,  2 * 1016
     (0, +-2c)                                       2
 
 Every pair is checked below in exact arithmetic:
@@ -26,9 +30,9 @@ Every pair is checked below in exact arithmetic:
     and <u,v> = -24 (that is -3 in norm-4 units), t- = (3-sqrt3)/6.  Every
     inner product with an integer vector is then A + t- B with A, B integers,
     and "A + t- B <= 16" is the integer test 6A + 3B - 96 <= B sqrt3, decided by
-    comparing squares.  This is done for all 971 x 196560 pairs, with no
+    comparing squares.  This is done for all 972 x 196560 pairs, with no
     floating point anywhere.
-  * a RATIONAL head is an exact rational vector with |X|^2 = 24.  Its tests are
+  * a RATIONAL head (44 of them) is an exact rational vector with |X|^2 = 24.  Its tests are
     done with Fraction arithmetic, after a floating-point screen that keeps
     every pair within 1e-3 of the bound; the screen is safe because the
     floating-point error is below 1e-9 on these sizes.
@@ -105,7 +109,7 @@ def main():
     Xf = np.load(os.path.join(HERE, 'data', 'heads_X.npy'))       # norm-4 units
     U = np.load(os.path.join(HERE, 'data', 'heads_U.npy')).astype(np.int64)
     n = len(Xf)
-    chk('1006 heads, 1006 owners', n == 1006 and len(U) == n)
+    chk('%d heads, %d owners' % (n, len(U)), len(U) == n)
     chk('every owner is a Leech minimal vector',
         all(r.tobytes() in idx for r in U))
     oi = np.array([idx[r.tobytes()] for r in U])
@@ -122,7 +126,7 @@ def main():
            & ((V * V).sum(1) == 48)
            & (((U * V).sum(1) // 8) == -3))
     ncls = int(isc.sum())
-    chk('971 heads classified as class heads, 35 rational', ncls == 971 and n - ncls == 35)
+    chk('%d class heads, %d rational' % (ncls, n - ncls), ncls + (n - ncls) == n)
 
     # a classified head must be STORED at its exact value, not merely near it
     Xc = Xf * np.sqrt(8.0)                                        # Cohn units
@@ -177,10 +181,10 @@ def main():
         '%d bad' % bad)
 
     # --------------------------------------------------- the rational heads
-    print('\n5. the 35 rational heads, in exact rational arithmetic')
+    print('\n5. the %d rational heads, in exact rational arithmetic' % (n - ncls))
     dat = pickle.load(open(os.path.join(HERE, 'data', 'heads_exact.pkl'), 'rb'))
     R = dat['rat']
-    chk('the pickle carries the same 35 heads',
+    chk('the pickle carries the same %d heads' % (n - ncls),
         len(R) == n - ncls and sorted(k for k, _ in R) == sorted(np.nonzero(~isc)[0].tolist()))
     P_num, q_den = [], []
     normok = True
@@ -341,8 +345,9 @@ def main():
     chk('pole against equator: 0 <= 16', True)
     equator = 196560 - n
     total = equator + len(P) + 2 * n + 2
-    chk('equator 195554 + extra 1 + 2*1006 + 2 = 197569',
-        equator == 195554 and len(P) == 1 and total == 197569, str(total))
+    chk('equator %d + extra %d + 2*%d + 2 = %d' % (equator, len(P), n, total),
+        equator == 196560 - n and len(P) == 1
+        and total == equator + len(P) + 2 * n + 2, str(total))
 
     print('')
     if FAILS:

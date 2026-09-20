@@ -4,7 +4,7 @@
 
 Reads only data/; nothing here shares code with verify25.py.
 
-Builds the 197569 points explicitly in R^25 and checks pairs.  The equator
+Builds the 197579 points explicitly in R^25 and checks pairs.  The equator
 against itself is the Leech shell and is known; every other block of pairs is
 checked exhaustively, and on top of that a random sample of pairs is drawn from
 the whole configuration so that nothing is checked only by the argument that
