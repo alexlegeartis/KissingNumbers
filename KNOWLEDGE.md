@@ -10843,3 +10843,141 @@ point removing exactly one minimal vector, which is the dimension-25 lens family
 `<U,Y> <= 24`, so a negative `<W,Y>` should reach further.  Of 13 248 lens heads over 24 leans
 plus all 196 560 scaled owners, exactly **1188** clear the first layer -- the same 1188.  The
 scaled owner is the least tilted head at that radius, in dimension 26 as in dimension 27.
+
+## 155. Four closures on the head layer, and the head family we had never searched (2026-09-20)
+
+Every head this project has ever searched was an **integer** vector of norm 192 in Cohn units.
+That was never a requirement, only a habit of the generators, and dropping it exposes one clean
+new family and closes three questions that had been left as assumptions.
+
+### 155.1 The scaled-owner head: the four sides do not have to couple
+
+Take `Y = sqrt6 * u` with `u` a Leech minimal vector (`|Y|^2 = 6*32 = 192`, irrational, so
+outside every pool we have built).  It is a legitimate first-layer head:
+
+    head-equator   <Y,z> = sqrt6 <u,z>  passes 48 only at <u,z> = 32   -> deletes EXACTLY its owner
+    same side      <Y,Y'> = 6<u,u'> <= 48   <=>  <u,u'> <=  8          -> avoid 60 degrees
+    cross side     <Y,Y'> = 6<u,u'> <= 96   <=>  <u,u'> <= 16          -> everything but u' = u
+
+so it is worth +2, exactly like a class head `Y = 3u + v`, and the cross-side rule is
+**automatic**.  That is the whole point: the four sides stop coupling and only have to be
+disjoint.  The entire first layer collapses to
+
+    K(24+k) = 196560 + 2 * sum_i |U_i| + axis,   U_i disjoint 60-degree-free sets of minimal vectors
+
+with `tau(k)/3` sides (4 in dimension 27, 2 in dimension 26, 8/12/24/42 in 28/29/30/31 --
+`triples.py` packs the cuboctahedron into 4, D4 into 8, D5 into 12 of a possible 13, E6 into 24).
+The coupling is what held `c` at 2133 against a nominal 3048, so this looked like the lever.
+
+**It is exactly priced, and it loses.**  One side is an independent set of the graph
+`<u,u'> = 16` on the 196560 minimal vectors.  That graph is 4600-regular, and the minimal
+vectors are a 6-class association scheme (Co_2 orbits 1, 1, 4600, 4600, 47104, 47104, 93150), so
+its spectrum is exact -- the 7x7 intersection matrix gives
+
+    {4600, 2300, 1000, 350, 76, -10, -20}
+
+and Hoffman gives `alpha <= 196560*20/4620 = 850.91`.  The spherical Delsarte LP over the
+spectrum `{1/4, 0, -1/4, -1/2, -1}` returns **the same 850.91**, stable from degree 40 to 120,
+calibrated at 196560 on the Leech spectrum (`alpha60.py`, `lpalpha.py`, `lpside.py`).  The LP
+optimum is antipodal with `|<u,u'>|` in `{0, 8}` only -- a two-angle line system of 425 lines in
+R^24, against the absolute bound 324 for two angles -- so `alpha <= 648`, not 850.
+
+Reachable is another matter: plain plateau search gets **331**, the mod-3 sublattice cosets give
+270, and an order-23 orbit search gets 299.  Break-even is 618 per side in dimension 27 and about
+500 in 28-31.  The gap 331 -> 648 is the ordinary factor-two barrier for independent sets in a
+random-like regular graph, and the orbit reduction hits the same wall at a different scale
+(6274 orbit-vertices at density 0.449, greedy 13 of an expected 29).  Integer class heads reach
+762 on one side because their pool is 9.26e9 ordered pairs, not 196560 vectors; they buy a bigger
+side and pay for it in coupling, and that trade is the better one.
+
+A by-product worth keeping: **the repository's Golay code is the cyclic [23,12,7] QR code with
+the parity bit at coordinate 23**, so `i -> i+1 (mod 23)`, fixing 23, is an automorphism of the
+Golay code and hence of the Leech lattice -- an order-23 element of Co_0 available for free in our
+own coordinates, with 8546 orbits of size 23 and 2 fixed vectors.  `i -> 2i` gives order 11.
+
+### 155.2 Two heads can never share one deleted equator point
+
+`verify26.py` and `verify27.py` assert that the owners are distinct, and every count reads
+`K = 196560 + 2c + ...` because of it.  That is a theorem, not an assumption, and here is the
+statement.  Write `t = <Y,u>` and `Y = (t/32) u + W`; then for two heads on the same owner
+
+    <Y,Y'> = t t'/32 + <W,W'>  >=  t^2/32 - (192 - t^2/32),
+
+so the cross-side bound `<Y,Y'> <= 96` needs `t <= sqrt(4608) = 67.88`.  Our class heads sit at
+`t = 72` -- just past it.  Two independent closures:
+
+* **Integer heads.**  `<Y,z>` is a multiple of 8, so only `t = 56` and `t = 64` are in the
+  window, and both pin the shape.  `t = 64` forces `Y = 2u + w` with `|w|^2 = 64` and `w _|_ u`,
+  and the head condition becomes `<w,z> <= 16` on the 4600 minimal vectors at `<u,z> = 16`.
+  Over 3 008 903 sampled `w` that maximum takes exactly **two values, 24 and 32** -- it misses by
+  one quantum, in the same way the norm-8 frame layer misses dimension 27 (`share3.py`).
+* **Any head.**  Walking `t` down from a shipped head by continuation, restoring feasibility by
+  subgradient steps at each `t`, the head is **rigid at 72**: one step to `t = 71` already forces
+  `max_{z != u} <Y,z> = 49.71` against the 48 required, identically at three unrelated owners
+  (`share2.py`).
+
+So `+2` a class head is structural.  This also explains Lindow's covering lemma from the other
+side: a free head is `Y = 2v` with `max_z <v,z> = 24`, i.e. cosine `sqrt6/4` -- free heads are
+exactly the deep holes of the Leech spherical code, and any direction that is not a deep hole
+deletes something.
+
+### 155.3 Four cap-direction triangles is optimal, for a measurable reason
+
+Cohn, Lindow and this repository all take the twelve cuboctahedron directions.  The directions
+never had to be a kissing configuration: two heads on triangles `T, T'` obey
+`<Y,Y'> <= 144 - 96 maxcos(T,T')`, so more triangles simply lower the bar.  Optimising zero-sum
+triangles in R^3 (`dirsys.py`) gives
+
+    4 triangles maxcos 0.500 bar 96     6 triangles maxcos 0.725 bar 72
+    5 triangles maxcos 0.678 bar 72     8 triangles maxcos 0.786 bar 64
+
+and the Delsarte ceiling on the TOTAL head count at each bar (`lpbar.py`, calibrated at 196560,
+and returning 1218 at bar 48 against Lindow's certified `A(24,1/4) <= 1227`) is
+
+    bar 96: unbounded    bar 80: 28086    bar 72: 11442    bar 64: 5697    bar 56: 2467
+
+-- all far above the 2262 we ship.  It still fails, twice over:
+
+* A **uniform** lower bar collapses the pool.  Over the 24-lean 13 248-head pool the hard-conflict
+  fraction rises from 0.069% at bar 96 to 1.29% at bar 72, and six sides at bar 72 reach **832**
+  class heads against the four-side 2133 (`moreside.py`).  The 98.3% figure measured on the
+  shipped heads is biased -- they are already a mutually compatible selection.
+* A **fifth triangle added to the shipped four**, which would be pure gain since the first four
+  keep bar 96 among themselves, is impossible for a sharper reason: over the whole pool the
+  minimum of `max <Y_new, Y_shipped>` is **exactly 96**, with nothing at 88 or below
+  (`fifthside.py`).  So a fifth side needs bar 96, i.e. 15 directions pairwise at 60 degrees in
+  R^3, and `tau(3) = 12`.  The `tau(k)/3` cap on triangles is not just a theorem about the
+  direction system; the head pool enforces it independently.
+
+### 155.4 A correction to section 147 (dimension 28), from Lindow
+
+Section 147 says no norm-6 vector satisfies `|<u,v>| <= 1` against all 248 owner lines of a
+dimension-28 class.  Lindow scanned the whole shell exactly: the conclusion holds but the reason
+does not.  The best class reaches **235 of 248** compatible lines, a shortfall of 13, identically
+for all eight classes, and the inner-product spectrum of any norm-6 vector against the minimal
+shell is `{0: 75900, +-8: 48600, +-16: 11178, +-24: 552}`, so 88% of the minimal lines are
+compatible with any given `v`.  The pool is large; what closes the route is the exchange rate, a
+line being worth 32 points and a free head 3.  This is the "explain only after measuring" failure
+again: the measurement was right and the mechanism written next to it was wrong.
+
+### 155.5 The free-head layer, over the whole norm-6 shell, is within 24 of optimal
+
+Lindow's covering lemma has a consequence he does not draw: the inner-product spectrum of any
+norm-6 vector against the minimal shell is `{0: 75900, +-8: 48600, +-16: 11178, +-24: 552}`, so
+`max_z <v,z> = 24` for **every** norm-6 vector and `Y = 2v` is always a valid free head.  The
+free-head pool is therefore the entire 16 773 120-vector shell, and what limits free heads is
+only compatibility.  Streaming the whole shell against the shipped dimension-27 layer
+(`freetrade2.py`, `freetrade3.py`, 175 s):
+
+    vs class head    same side 2<v,Y> <= 48,  cross side <= 96   -> 3448 normals
+    vs second layer  2<v,u>  <= 32  for the 284 layer-2 owners   -> 1809 normals, 1844 slots
+    vs free head     same side <v,v'> <= 8,  cross side <= 24
+
+All 129 shipped free heads are recovered in that pool, which confirms the eligibility rule.  The
+layer is then one max independent set on 1844 `(normal, side)` slots, density 0.0678: a cold
+greedy gives 93, the shipped 129 is far above it, the eigenvalue ratio bound is 313, and CP-SAT
+with a 1843-clique cover returns **FEASIBLE 129 with bound 153** in nine minutes.  So the free
+layer is worth at most 72 more points, and 129 is not where a search stopped -- it is near the
+ceiling of the full shell.  Combined with 155.2 (`2c` is structural), 155.3 (four triangles is
+forced by the pool) and section 154 (the dim-26 sweep is single-peaked at the shipped point),
+every term of `K(27) = 196560 + 2c + 3f + L + 12` is now bounded by measurement.
