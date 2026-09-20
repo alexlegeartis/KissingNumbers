@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **156 sections, about 11195 lines**, written as the
+The full working record of the project: **156 sections, about 11238 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -11193,3 +11193,46 @@ split 530/297/144 against the record's 552/285/133/1.  That is strong evidence 9
 ceiling of the class-head family.  But the symmetric core is WORSE for the supplement: the
 order-11 971 extends to 993-1000 against the record core's 1016.  **Which 971 you pick matters
 more than the 971 itself**, and that is why the gain came from the supplement, not the core.
+
+### 157.5 The whole dimension-25 construction has a ceiling, and it is 197623
+
+Stripped of every ornament, dimension 25 is one sentence and one number:
+
+> Pick a norm-6 vector `v`; take its 552 top-level minimal vectors `{z : <z,v> = -3}`; push each
+> one toward `v` by `t_- = (3-sqrt3)/6`.  Then `K(25) = 196560 + H + 3`.
+
+Two facts make it rigid.  Every within-block pair lands at `<x,x'> = 1` **exactly** -- a block is
+a tight packing, which is why a relaxation started from the scaled owners `x = (sqrt3/2)u`
+cannot find it (the configuration is measure zero, `relax25.py` stalls at a pairwise energy of
+57 with the polytope walls never binding).  And **552 is proven optimal for a block**, since a
+block projects to a `cos <= 1/5` code in R^23 and `A(23,1/5) <= 552`.
+
+**So the only freedom is the lean set**, which turns a 10^5-head packing into a search over
+small Gram matrices.  Over the whole 16 773 120-vector norm-6 shell (`leanfull25.py`):
+
+    2 leans  H = 904   Gram off-diagonal (-4)          -- and <v,v'> = -4 iff v+v' is minimal
+    3 leans  H = 971   Gram off-diagonals (-4, 0, -3)
+    4-6      no gain in 700 s
+
+Random 4-lean sets reach 904 and greedy growth from random leans 805: the good sets are
+CONSTRUCTIBLE, not sampled.  **971 is the ceiling of the block family**, reached with THREE
+leans where the shipped package uses four (its fourth contributes exactly 1 head), and section
+157.4's four independent order-11-invariant systems return the same 971.
+
+**The supplement pool is COMPLETE at 1188.**  The screen `max_h <u,h> <= 1.9352351` leaves
+77 350 candidate owners, and it is only a NECESSARY condition: four shards run over the entire
+candidate list (`pool25shard.py`, 1867 s, no time limit hit) return 297 heads each and **exactly
+the same 1188 owners** as the pool the record was built on.  The other 76 162 candidates
+provably admit nothing.  An earlier reading of this as "the supplement was optimised over 1.9%
+of its domain" was WRONG -- there was no truncation, and the 1464-owner pre-screen was lossless.
+
+So the entire construction reduces to the independence number of ONE 1188-vertex graph of
+density 0.1538, and CP-SAT with a 1188-clique cover gives **45 realised against a bound of 89**:
+
+    K(25) = 196560 + 971 + (supplement) + 3,   supplement <= 89
+    CEILING OF THE WHOLE CONSTRUCTION: 197623;  shipped 197579
+
+**At most +44 remains in this scheme, ever**, and it is the ordinary factor-two independent-set
+gap on one small graph (a random graph of that size and density has independence number about
+85).  Anything beyond 197623 in dimension 25 needs a head outside the block-plus-supplement
+family, not a better search inside it.
