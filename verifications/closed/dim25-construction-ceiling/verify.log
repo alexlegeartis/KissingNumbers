@@ -1,0 +1,81 @@
+verify.py --- the ceiling of the dimension-25 lens-head construction
+
+1. the Leech minimal vectors, rebuilt from the Golay code by common/leech.py
+  196560 vectors, all of norm 32, all distinct                   ok
+
+2. the block-family core
+  971 core heads, 971 owner indices                              ok
+  every owner index names a minimal vector                       ok
+  the 971 owners are distinct                                    ok
+  every core head has |x|^2 = 3                                  ok   1.78e-15
+  every core head is a CLASS head (u + t- v)/sqrt8, v integral   ok   3.11e-15
+  every lean has |v|^2 = 48 (norm 6) and <u,v> = -24 (that is -3) ok
+  u + v is again a minimal vector, at <u,u+v> = 8 (that is 1)    ok
+   4 distinct leans carry the 971 heads, in blocks 552 + 285 + 133 + 1
+   the lean Gram, in norm-4 units (diagonal 6 = norm 6):
+        6  -4  -3   0
+       -4   6   0  -1
+       -3   0   6   2
+        0  -1   2   6
+  the blocks account for every head and none twice               ok
+  no block exceeds 552 = A(23,1/5), the proved size of a whole block ok   largest block 552
+
+3. (a) the core is a legal head set: <x,x> <= 1 on every pair, exactly
+  all 470935 core pairs meet at <x,x> <= 1                       ok   0 violations
+   106099 of them meet at exactly 1 (the within-block value)
+
+4. (b) every core head removes exactly its own owner, exactly
+  each head removes exactly one equator point, and it is its owner ok   removal counts seen: [1]
+  no two heads share a removal, so the deletions total 971       ok
+  equator under the core alone = 196560 - 971 = 195589           ok
+  every head reaches its owner at more than 10/3 = 3.333333, so no two heads ok   min 3.366025403784
+   can ever share a removal (the 7-design floor for a removal is
+   (18 + sqrt30)/7 = 3.353889367865, and the data sits at 3.366025403784)
+
+5. (c) the supplement pool: the complete set of heads admissible against it
+  1188 pool heads, 1188 owner indices                            ok
+  the 1188 pool owners are distinct                              ok
+  no pool owner is a core owner                                  ok   0 shared
+  every pool head has |x|^2 = 3                                  ok   2.66e-15
+  each pool head too removes exactly one equator point, its own owner ok   removal counts seen: [1]
+  a pool head too reaches its owner above 10/3, so it shares no removal ok   min 3.366025403784
+   the largest value a pool head reaches anywhere but its own owner is
+   2.000000000000, over the bound 2 by 6.66e-15
+   1 of the 1188 pool heads has exact CLASS form; the rest came out of a numerical
+   search and are stored as plain floats, so their checks above are floating point
+  every pool head is compatible with the WHOLE core, <x,x> <= 1  ok   max 1.000000000000005
+   the candidate-owner screen of THIS core holds 77350 minimal vectors,
+   and 1188 of the 1188 pool owners lie in it
+  every pool owner is a candidate owner of this core             ok
+
+6. (d) the pool conflict graph, and its independence number from above
+  the conflict relation is symmetric and loop-free               ok
+   1188 vertices, 108519 edges, density 0.1538
+   model: 1188 clique constraints covering the graph, 69972 residual pairs
+   CP-SAT FEASIBLE in 900 s of a 900 s budget
+   independent set realised 43, upper bound 88.0000 -> alpha <= 88
+  the bound is an upper bound on the set the same solve realised ok
+   the solve did NOT close; 88 is the best bound it proved, which is what
+   the ceiling below is built from -- it is an upper bound, not alpha
+   (the bound this package records is 89; this run proved 88)
+
+7. (e) the ceiling, and the shipped configuration against it
+  the shipped package carries 1016 heads and 1016 owners         ok
+  the shipped owners are distinct and all minimal                ok
+  the shipped configuration contains this whole core             ok
+  the rest of it, 45 heads, comes from this very pool            ok   971 + 45 = 1016
+  so the shipped supplement is an independent set in the graph above, of size 45 ok   45 <= 88
+   two accountings of the same 1016 heads: 971 core + 45 pool here, and
+   972 class + 44 other in the shipped package, because 1 of the 45 supplementary
+   heads turns out to have exact class form over a further lean
+  shipped: equator 195544 + 2 x 1016 heads + 2 poles + 1 extra = 197579 ok   197579
+  ceiling: H <= 971 + 88 = 1059, so the total is 196560 + 1059 + 3 = 197622 ok   197622
+  the shipped configuration does not exceed the ceiling          ok   197579 <= 197622
+   the shipped 197579 is 43 below the ceiling 197622
+   what is left in this construction: 43 heads, worth 43 points
+
+   ran in 958 s
+
+ALL CHECKS PASS
+   the construction stops at 196560 + 971 + 88 + 3 = 197622
+   the shipped configuration is 197579, within 43 of it

@@ -14,7 +14,7 @@ file, and the history of the lower bound in its dimensions.
 | package | dims | status |
 |---|---|---|
 | [`dim18-bent-hexagon`](improved/dim18-bent-hexagon/) | 18 | apparently new — Cohn–Li's own ℝ¹⁶ ⊕ ℝ² hexagon over the odd Barnes–Wall lattice, with the three 6-set families taken from bent cosets of RM(1,4) whose pairwise sums are bent but which do not sum to zero; tier B rises from 256 to 960 |
-| [`dim25-lens-heads`](improved/dim25-lens-heads/) | 25 | apparently new — joint work in progress with H. Cohn and B. Lindow; 1006 lens heads, one non-lattice equator point |
+| [`dim25-lens-heads`](improved/dim25-lens-heads/) | 25 | apparently new — joint work in progress with H. Cohn and B. Lindow; 1016 lens heads (971 from the block family, plus a 45-head maximum independent set over the complete pool), one non-lattice equator point |
 | [`dim26-27-iota-triangles`](improved/dim26-27-iota-triangles/) | 26, 27 | apparently new — joint work in progress with H. Cohn and B. Lindow; the coset triangle on every triangle of directions, the side chosen per head |
 | [`dim28-norm8-frame-layer`](improved/dim28-norm8-frame-layer/) | 28 | apparently new — joint work in progress with H. Cohn and B. Lindow; the head of a deletion-free layer may have norm 8 rather than 6, and at height √2 that is what clears the cap threshold: the 24 vectors 8eᵢ form a Leech frame, each carries all eight directions ±e_k of ℝ⁴, and the axis drops to the 16 half-vectors of the dual 24-cell |
 | [`dim29-30-frame-layer`](improved/dim29-30-frame-layer/) | 29, 30 | apparently new — joint work in progress with H. Cohn and B. Lindow; the dimension-28 norm-8 frame layer at height √2 carried to ℝ²⁴⁺ᵏ, where it is 48 frame vectors on the whole cross-polytope of ℝᵏ — 96k points, 480 and 576 — deleting no equator point. It needs every owner to be type B for the frame, and in the coordinates where the frame is 8eᵢ the type-B lines are exactly the 48 576 octad vectors of the Golay code, which the whole monomial group 2¹²:M₂₄ permutes, so every monomial image of a class is again a clean class |
@@ -65,9 +65,9 @@ project's own later work.
 
 ## [`closed/`](closed/) — mechanisms at their exact ceiling
 
-Eleven packages. Ten carry no claim: they are the negative results, kept because they are what
+Twelve packages. Eleven carry no claim: they are the negative results, kept because they are what
 stops the next attempt from wasting time, and several are *proofs of optimality for a
-mechanism* rather than failed searches. The eleventh is the exception and is marked as such
+mechanism* rather than failed searches. The twelfth is the exception and is marked as such
 below — it settles dimension 96 **against** the cap construction, and the claim it leaves
 standing is Edel–Rains–Sloane's rather than this project's.
 
@@ -81,6 +81,7 @@ standing is Edel–Rains–Sloane's rather than this project's.
 | [`dim37-cap-shortfall`](closed/dim37-cap-shortfall/) | the cap construction at k = 13 falls 4% short, measured end to end; it needs a better *class*, not a better cover |
 | [`dim69-gamma72-three-point`](closed/dim69-gamma72-three-point/) | dimension 69 does not reach its floor; **one large tempting number discarded for want of a realizability proof**; also dims 53–55 and a recorded partial win in 65–68 |
 | [`class-problem-upper-bound`](closed/class-problem-upper-bound/) | the central open computational question: 248 lines against a 425.45 bound that survives every two-point method, the three-point SDP and the subconstituent split |
+| [`dim25-construction-ceiling`](closed/dim25-construction-ceiling/) | the dimension-25 lens-head construction has a **ceiling of 197 623** = 196 560 + 971 + 89 + 3: the block family caps at 971 over the whole norm-6 shell, the supplement is the independence number of one explicit 1188-vertex graph and CP-SAT bounds that by 89 (a receipt, not a constant — reruns gave 88 and 91). The shipped 197 579 is within **44**, and only a head outside the block-plus-supplement family can do better |
 | [`antipode-construction-ceiling`](closed/antipode-construction-ceiling/) | the antipode construction **is** a max-weight clique problem, whose arms lie in a 30° cap — a structural reason it cannot give low-dimensional records |
 | [`dim96-ers-takeover`](closed/dim96-ers-takeover/) | **the one claim in this tier.** At 96 the chain (96, 24, 6, 1) reaches 12 886 999 232 against the 6 480 558 568 the layered construction manages, so the cap route loses outright; also the exposure measurement for 93–95 |
 | [`dim17-layered-family`](closed/dim17-layered-family/) | τ(17) = 5346 + 2α with **α = 192 exactly**, so τ(17) = 5730 and there is no dimension-17 record in this family. This was the repository's one live lead until `K'` was noticed to be closed under XOR: `Cay(K', W_4)` is then a translation scheme, Delsarte's LP gives 192 on the nose, and its dual is six rational numbers verified in integer arithmetic — replacing a CP-SAT bound that ranged over 192, 193, 195 and 238 across runs |
@@ -100,5 +101,5 @@ standing is Edel–Rains–Sloane's rather than this project's.
 6. [`closed/dim17-layered-family/`](closed/dim17-layered-family/) — the best worked example of
    the repository's most useful habit: when a search will not converge, stop searching and ask
    what structure the object has. The answer was "it is a group".
-7. [`../KNOWLEDGE.md`](../KNOWLEDGE.md) — 156 sections of working notes, most of
+7. [`../KNOWLEDGE.md`](../KNOWLEDGE.md) — 157 sections of working notes, most of
    them about things that did not work.

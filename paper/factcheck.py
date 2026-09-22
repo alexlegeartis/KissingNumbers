@@ -488,6 +488,71 @@ chk('dim 25 level-3/4 count', 196560 + 2 * 248 * (2 - 1) + 2 == 197058)
 chk('dim 25 claim is the lens-head configuration', 196560 - 1016 + 1 + 2 * 1016 + 2 == 197579)
 chk('paper says 197,579', '197\\,579' in TEX)
 chk('dim 25 with a 249-line class', 196560 + 2 * 249 * (2 - 1) + 2 == 197060)
+# The head count H and the ceiling of the lens-head scheme live only in the PROSE of
+# section 4.6 and 6.3.  The identity above was checked with H = 1016 while the manuscript
+# said 1006 for a fortnight: an arithmetic check on a number the TeX never states cannot
+# catch that.  Read the TeX.
+_H25, _CEIL25 = 1016, 197623
+chk('paper states the dimension-25 head count', '$H=%s$' % _grp(_H25) in FLAT,
+    'expected $H=%s$ in the TeX' % _grp(_H25))
+chk('the stale head count 1006 is gone from the TeX',
+    _grp(1006) not in TEX and '$1006$' not in TEX)
+chk('the head count the TeX states gives the claim',
+    196560 + _H25 + 3 == 197579)
+chk('paper writes the dimension-25 count identity',
+    '$%s-H+1+2H+2=%s+H+3$' % (_grp(196560), _grp(196560)) in FLAT)
+chk('paper states the core cap, the pool and the supplement',
+    'reaches $971$ heads' in FLAT and 'capped at $971$ heads' in FLAT
+    and ('complete at $%s$ heads over $%s$ distinct owners' % (_grp(1188), _grp(1188))) in FLAT
+    and 'takes $45$ of them' in FLAT,
+    'core 971, pool 1188 over 1188 owners, supplement 45')
+chk('core plus supplement is the head count', 971 + 45 == _H25)
+chk('paper states the norm-6 shell it searched', _grp(16773120) in FLAT)
+chk('dim 25 ceiling arithmetic', 196560 + 971 + 89 + 3 == _CEIL25)
+chk('paper states the dimension-25 ceiling', _grp(_CEIL25) in TEX)
+chk('paper writes the ceiling out as a sum',
+    '%s+971+89+3=%s' % (_grp(196560), _grp(_CEIL25)) in FLAT)
+chk('paper states how far the shipped configuration is below it',
+    _CEIL25 - 197579 == 44 and 'is within $44$ of that' in FLAT,
+    'gap %d' % (_CEIL25 - 197579))
+# What makes 196560 + H + 3 exact is that no removal is shared: a head meets the equator
+# point it removes at (18+sqrt30)/7, above the 10/3 that two heads on one point would both
+# need.  Both numbers are in the paper's norm-4 units; an earlier draft quoted a pair from
+# a different normalisation, which no arithmetic check could have caught.
+_SHARE = (18 + sqrt(30)) / 7
+chk('dim 25 no-sharing threshold is above the sharing bound', _SHARE > 10.0 / 3,
+    '%.6f vs %.6f' % (_SHARE, 10.0 / 3))
+chk('paper states the no-sharing threshold to five places',
+    '%.5f' % _SHARE == '3.35389' and '3.35389' in TEX, '%.7f' % _SHARE)
+chk('paper states the bound a shared removal would need',
+    (BS + 'tfrac{10}{3}') in TEX)
+chk('the measured minimum clears the threshold', 3.36603 > _SHARE and '3.36603' in TEX)
+chk('the wrong-normalisation sharing numbers are gone',
+    '67.88' not in TEX and (BS + 'sqrt{4' + BS + ',608}') not in TEX)
+
+# Section 6.3 also records WHY the second-layer trade pays in dimensions 26 and 27 and not in
+# 25.  The deciding quantity is incidences per blocker, so pin both measurements: a paragraph
+# that quoted the exchange rate alone would read as an explanation and be the wrong one.
+_INC, _BLK = 269423, 2133
+chk('dim 27 trade: the concentration the paper quotes', round(_INC / float(_BLK)) == 126)
+chk('paper states the dim 27 incidences and blockers',
+    _grp(_INC) in TEX and _grp(_BLK) in TEX and 'some $126$ candidates apiece' in FLAT)
+chk('paper says dim 27 fails DESPITE the sharing, on coverage',
+    'fails although the sharing is high' in FLAT
+    and 'unlocks $241$ candidates' in FLAT and _grp(4266) in TEX)
+chk('paper states the dim 25 free-head layer is worth nothing',
+    'the $654$ blocked by at most ten lens heads are blocked by $630$' in FLAT
+    and 'is optimal at $0$' in FLAT)
+chk('dim 25 free heads: 654 directions do not share 630 blockers', 654 / 630.0 < 1.1)
+chk('paper does not claim sharing alone decides the trade',
+    'ratio of incidences to blockers, not the exchange rate' not in FLAT)
+chk('paper states the free-head height and norm',
+    '$y=2/' + BS + 'sqrt3$' in TEX and '$|x|^{2}=8/3$' in TEX)
+chk('the free-head layer removes nothing because 3 is attained',
+    (BS + 'ip{v}{z}' + BS + 'le3') in TEX and 'attains exactly $3$' in FLAT)
+chk('paper says the 89 is a solve receipt, and names the lower bound seen',
+    'The instance does not close' in FLAT and 'as low as' in FLAT and '$88$' in TEX)
+
 chk('paper says 197060', '197\\,060' in TEX)
 chk('dim 27 count', 196560 + 2 * 4 * 248 * (3 - 1) + 12 == 200540)
 chk('dim 27 arithmetic pieces', 2 * 4 * 248 * 2 == 3968 and 196560 + 3968 + 12 == 200540)
@@ -1021,10 +1086,18 @@ def _src_size(k):
 _num3 = r'[0-9' + re.escape(BS) + r', ]+'
 _mlay = re.search(r'The layers\s+go from \$(' + _num3 + r')\$, \$(' + _num3 + r')\$ and \$('
                   + _num3 + r')\$ to \$(' + _num3 + r')\$, \$(' + _num3 + r')\$ and \$('
-                  + _num3 + r')\$ poles, against \$K\(k\)\$ = \$(' + _num3 + r')\$, \$('
+                  + _num3 + r')\$ poles, against the published records \$(' + _num3 + r')\$, \$('
                   + _num3 + r')\$ and \$(' + _num3 + r')\$\.', FLAT)
 chk('the paper states the three published-source layers, before and after, with their ceilings',
     _mlay is not None, 'the sentence has changed shape')
+# Dimension 90's poles are drawn from the PUBLISHED dimension-18 record, which section 8 of
+# this paper itself beats with 8358.  The gap is real and unexploited; say so, and keep
+# saying so -- a later edit that quietly drops the admission would otherwise pass.
+chk('the paper flags that dimension 90 does not use its own dimension-18 configuration',
+    'not the best this paper knows' in FLAT
+    and 'whether they can be is open' in FLAT
+    and _grp(8358) in TEX)
+chk('the dimension-18 pole gap is the one claimed', 8358 - 7624 == 734)
 if _mlay:
     for _i, _k in enumerate(_COHN_KS):
         chk('dimension %d states the layer it started from' % (72 + _k),

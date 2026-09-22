@@ -147,9 +147,18 @@ REASON = {
                     'family size and vector shapes are all pinned (verifications/improved/dim18-bent-hexagon/README.md)',
 
     'exhausted-25': 'no removal is ever shared (a theorem), so the count is 196560 + H + 2 + |E| '
-                    'and only the head count H moves; H = 1006 against a Delsarte ceiling of '
-                    '5763, and every route beyond the template needs a code in R^24 with '
-                    '~93000 points at 62 degrees (KNOWLEDGE 125, dim25-lens-heads/README)',
+                    'and only the head count H moves -- and H now has a computed CEILING.  A block is '
+                    'exactly 552 heads, A(23,1/5), because it projects to a code at cosine 1/5 in R^23; '
+                    'the block family caps at 971 over the WHOLE norm-6 shell of 16 773 120 leans, '
+                    'attained by a four-lean block system with blocks 552 + 285 + 133 + 1; and the supplement '
+                    'is the independence number of ONE explicit graph, on the 1188 heads admissible against '
+                    'that core -- a COMPLETED enumeration over all 77 350 candidate owners, conflict '
+                    'density 0.1538 -- which CP-SAT bounds by 89 (a receipt, not a constant: the '
+                    'instance does not close and reruns gave 88 and 91).  With 2 poles and the non-lattice '
+                    'equator point the whole construction stops at 196560 + 971 + 89 + 3 = 197623, and '
+                    'the shipped H = 971 + 45 = 1016, giving 197579, is within 44 of that; more needs a '
+                    'head outside the block-plus-supplement family (closed/dim25-construction-ceiling, '
+                    'dim25-lens-heads/README)',
     'exhausted-26': 'the hexagon forces every head onto |x|^2 = 8/3 and onto the six edge midpoints, so the '
                     'layer is two head sets at cosine <= 1/4 cross-constrained at cosine 1/2; a zero-sum '
                     'triangle of norm-6 vectors gives 762 heads per side, its exact optimum, and the whole '

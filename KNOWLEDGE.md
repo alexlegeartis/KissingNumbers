@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **156 sections, about 11238 lines**, written as the
+The full working record of the project: **157 sections, about 11320 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -11189,7 +11189,11 @@ coordinates by Mobius maps, not merely the shift `sigma` and the multiplier `mu`
 
 **Order 11 returns exactly 971 over all twelve of its fixed leans, over a 9-lean subset, and
 over the record's own 4 leans -- four independent systems, all 971**, with a different block
-split 530/297/144 against the record's 552/285/133/1.  That is strong evidence 971 is the
+split 530/297/144 against the record's 552/285/133/1.  (That split is the 1006-era core, whose
+four leans carry 971 class heads; the 1016 artefact shipped below splits 552/286/133/1 = 972
+class heads over its four leans, plus 44 supplementary, and 552 + 286 + 133 = 971 over the
+first three.  Both splits are correct, for different cores -- measured from
+`data/heads_X.npy` in each case.)  That is strong evidence 971 is the
 ceiling of the class-head family.  But the symmetric core is WORSE for the supplement: the
 order-11 971 extends to 993-1000 against the record core's 1016.  **Which 971 you pick matters
 more than the 971 itself**, and that is why the gain came from the supplement, not the core.
@@ -11236,3 +11240,90 @@ density 0.1538, and CP-SAT with a 1188-clique cover gives **45 realised against 
 gap on one small graph (a random graph of that size and density has independence number about
 85).  Anything beyond 197623 in dimension 25 needs a head outside the block-plus-supplement
 family, not a better search inside it.
+
+## 158. Four attempts on 25-27, and the statistic that decides every one of them (2026-09-21)
+
+No gain in any of 25, 26, 27.  All four attempts are recorded here with the number that killed
+them, because three of the four look plausible on paper and would otherwise be retried.
+
+### 158.1 Dimension 27's second layer is NOT a greedy artefact
+
+The layer is 284 heads on three antipodal direction lines, split `99 + 96 + 89`, and the split
+looks like sequential peeling.  It is not the defect it appears to be.  The conditions are
+
+    admissible owner     <Y,u> <= 32 against every first-layer head   (LINE-INDEPENDENT)
+    same line            <u,u'> <= 8, i.e. forbid <u,u'> = 16         (the 60-degree graph)
+    across lines         nothing but distinctness of owners
+
+so the layer is a maximum 3-COLOURABLE INDUCED SUBGRAPH of the 60-degree graph on 3009
+admissible owners.  Solved jointly (CP-SAT, 30 min, warm-started at the shipped 284): **284**,
+split `99 + 95 + 90`.  A single line realises 99, which is exactly the shipped best line.  The
+greedy order was not costing anything.
+
+### 158.2 The tier-40 trade in dimension 27 is dead, and the reason is coverage
+
+The next candidate tier is 10 647 owners at `max<Y,u> = 40`, needing deletions to unlock.  A
+class head is worth +2 and a second-layer head +1, so dropping `d` to unlock `g` pays iff
+`g > 2d`.  The package dismissed this on an average ("about 25 blockers each").  Measured
+properly it is worse than the average suggests, because unlocking needs ALL of a candidate's
+blockers gone:
+
+        drop d heads    0   400   800  1200  2000  2133
+        unlocked g      0     1    15   241  5784  10647
+
+and the 2133 heads that block anything are EXACTLY the class layer -- the other 129 first-layer
+heads are the free heads, which block nothing.  The trade only completes by demolishing the
+class layer, at 4266 points, to unlock candidates worth a few hundred.
+
+### 158.3 Dimension 26's symmetric second layer beats local search
+
+324 heads, split `108 + 108 + 108` -- a symmetric construction.  Randomized greedy with
+(1,2)-swaps reaches 78 on one line and 221 over three, well BELOW the shipped 324.  The
+symmetry is doing real work here and a generic search does not find it.
+
+**A trap worth recording.**  Dimension 26's bar is `<Y,u> <= 24`, not dimension 27's 32: the
+cuboctahedron's covering radius is 45 degrees and the hexagon's only 30.  Carrying the 32 over
+gives 17 226 "candidates" instead of 1188 and a spurious 467-head layer, i.e. a phantom +143 on
+K(26).  Read `verify26.py`, not `verify27.py`.
+
+### 158.4 Dimension 25 admits a free-head layer geometrically, and it is worth nothing
+
+In norm-4 units the lens heads sit at `y = 1`, `|x|^2 = 3`, and that height is FORCED: the
+poles give `y <= 1` and mirroring gives `y >= 1`.  Give up the poles and a second layer becomes
+available at `y = 2/sqrt3`, `|x|^2 = 8/3`, `x = (2/3)v` with `v` of norm 6.  There
+`<x,z> <= 2` reads `<v,z> <= 3`, and **every** norm-6 vector attains exactly 3 -- so such a head
+removes NOTHING and is worth +2 where a lens head is worth +1.  The trade is
+
+        +2 per free head,   -1 per lens head dropped,   -2 for the two poles
+
+which runs the OPPOSITE way to dimensions 26 and 27, where a class head costs 2 and a second-
+layer head gains 1.  It still fails, and on one statistic.  Sampling 1.3M of the 16 773 120
+norm-6 vectors against the shipped 1016 lens heads at the bar `<v,x> <= 1.267949`:
+
+    654 directions have <= 10 blockers (some have 3)
+    those 654 are blocked by 630 DISTINCT lens heads
+
+Essentially one private blocker per direction.  CP-SAT on `max 2|F| - |D| - 2` returns
+**OPTIMAL at 0**: take no free heads at all.
+
+**The lesson, stated so that my own data does not refute it.**  A candidate is admitted only
+when EVERY blocker of it is deleted, so the trade is a COVERING question, not an averaging one.
+The two dimensions fail at opposite ends of that structure:
+
+    dim 27 tier-40   ~25 blockers per candidate, 126 candidates per blocker
+                     -- sharing is HIGH and it still fails, because all 25 must go at once
+    dim 25 free      3-10 blockers per candidate, 654 candidates on 630 blockers
+                     -- blockers are CHEAP and it still fails, because they are private
+
+So "measure incidences per blocker" is NOT the rule -- dimension 27 has plenty of that and is
+dead.  The quantity to measure is whether a SET of candidates exists whose blocker sets
+coincide: few blockers each AND the same ones.  Note also that the 269 423/2133 figures belong
+to the tier-40 second-layer candidates, which are dead; the free-head trade of section 126,
+which did pay, was a different bipartite structure and is not measured here.
+
+### 158.5 The dimension-25 supplement is still 45
+
+90 minutes of CP-SAT, fixed seed, warm-started at the shipped 45, on the complete 1188-head
+pool: realised **45**, no improvement.  (The bound came back 89, reproducing the recorded
+value under a fixed seed, where unseeded reruns had given 88, 90 and 91.)
+

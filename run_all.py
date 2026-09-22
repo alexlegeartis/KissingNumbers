@@ -2,7 +2,7 @@
 """Run every verification in this repository and report a single verdict.
 
     python run_all.py              # 67 scripts, about 40 minutes measured
-    python run_all.py --full       # 82 scripts, budget about 9 hours
+    python run_all.py --full       # 83 scripts, budget about 9 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -284,6 +284,8 @@ JOBS = [
      os.path.join(V, 'closed', 'dim17-24-layer-identity'), ['equator.py'], 0.4, True),
     ("closed: the class problem, 425 bound exactly, by two routes",
      os.path.join(V, 'closed', 'class-problem-upper-bound'), ['certificate.py'], 0.1, True),
+    ("closed 25: the ceiling of the lens-head construction, 196560 + 971 + alpha + 3",
+     os.path.join(V, 'closed', 'dim25-construction-ceiling'), ['verify.py'], 17.0, False),
     ("closed 32-44: the Edel-Rains-Sloane audit",
      os.path.join(V, 'closed', 'dim32-44-ers-audit'), ['PIPELINE.py'], 0.1, True),
     ("closed 96: the cap construction at k = 24, and its Leech triples exactly",
