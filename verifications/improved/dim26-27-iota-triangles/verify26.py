@@ -116,7 +116,10 @@ chk('every axis point meets every second-layer direction at <= 2',
 count = 196560 - len(own1) - len(own2) + 3 * len(Y) + 2 * len(U) + tau
 print('  count = 196560 - %d - %d + 3 * %d + 2 * %d + %d = %d'
       % (len(own1), len(own2), len(Y), len(U), tau, count))
-chk('the first layer alone gives 199482', first == 199482, '%d' % first)
+chk('the first layer alone, both ways', first == 196560 - len(own1) + 3 * len(Y) + tau,
+    '%d vs %d' % (first, 196560 - len(own1) + 3 * len(Y) + tau))
+chk('the second layer adds exactly one point per head',
+    count == first + len(U), '%d vs %d' % (count, first + len(U)))
 if bad:
     print('FAILED: %s' % ', '.join(bad))
     sys.exit(1)

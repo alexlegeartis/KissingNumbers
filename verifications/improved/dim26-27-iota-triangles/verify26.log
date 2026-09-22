@@ -23,5 +23,6 @@
   the widest gap from a first-layer direction is 30 degrees  PASS max cos = sqrt3/2
   every axis point meets every second-layer direction at <= 2 PASS 
   count = 196560 - 1458 - 324 + 3 * 1458 + 2 * 324 + 6 = 199806
-  the first layer alone gives 199482                         PASS 199482
+  the first layer alone, both ways                           PASS 199482 vs 199482
+  the second layer adds exactly one point per head           PASS 199806 vs 199806
 ALL CHECKS PASS   K(26) >= 199806

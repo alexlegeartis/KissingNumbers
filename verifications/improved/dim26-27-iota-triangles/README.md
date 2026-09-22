@@ -1,6 +1,6 @@
 # Dimensions 26 and 27: the coset triangle on every triangle of directions
 
-**τ(26) ≥ 199 806** and **τ(27) ≥ 201 509**, against the published 198 550 and 200 044
+**τ(26) ≥ 199 806** and **τ(27) ≥ 201 553**, against the published 198 550 and 200 044
 (Cohn's table; Ma et al. 2025) and this repository's earlier 200 540 in dimension 27 (now in
 [`../../superseded/dim27-triple-partition/`](../../superseded/dim27-triple-partition/)).
 Improvements of **+1 256** and **+1 465** over the table.
@@ -32,10 +32,10 @@ cross-constrained at cosine ≤ 1/2, and
 | | dimension 26 | dimension 27 |
 |---|---|---|
 | equator `(z, 0)`, `z` a minimal vector that is not an owner | 194 778 | 194 143 |
-| caps, three per head | 3 × 1458 | 3 × 2262 |
-| caps, two per second-layer head | 2 × 324 | 2 × 284 |
+| caps, three per head | 3 × 1458 | 3 × 2259 |
+| caps, two per second-layer head | 2 × 324 | 2 × 299 |
 | axis | 6 | 12 |
-| **total** | **199 806** | **201 509** |
+| **total** | **199 806** | **201 553** |
 
 Every head is `y/3` with `y = 3u + v` an integer vector: `u` a minimal vector (the *owner*,
 which the head removes from the equator) and `v` a Leech vector of norm 6 (a *lean*) with
@@ -43,7 +43,7 @@ which the head removes from the equator) and `v` a Leech vector of norm 6 (a *le
 owner (`y = 2u + w` with `w = u + v` minimal and `⟨u, w⟩ = 1`, so `⟨y, z⟩ ≥ 7` forces
 `z = u`), and two heads on one owner have `⟨y, y'⟩ ≥ 16`, above every threshold — so removals
 are never shared and the count is `196 560 + τ(k) + 2·(class heads) + 3·(free heads)`:
-`1458 + 0` heads in dimension 26 (its free heads are given up for the second layer, below) and `2133 + 129` in dimension 27.
+`1458 + 0` heads in dimension 26 (its free heads are given up for the second layer, below) and `2095 + 164` in dimension 27, the three item types having been optimised together rather than in sequence (B. Lindow); choosing them one after another gives `2133 + 129`.
 
 **The triangle.** Three norm-6 vectors with `v₁ + v₂ + v₃ = 0`, pairwise at `−3`, carry
 1656 class heads over three disjoint blocks `Σ(vᵢ) = {u : ⟨u, vᵢ⟩ = −3}` of 552; on one side
@@ -98,7 +98,7 @@ hexagon, the widest gap is 30°, and measured against the shipped layer **not on
 196 560 minimal vectors qualifies. In dimension 27 they are the cuboctahedron's twelve
 vertices, whose covering radius is 45°, attained exactly at the six square-face centres
 `±e₁, ±e₂, ±e₃` — three antipodal lines. That single extra quantum takes the admissible
-owners from 0 to **3009**, and 284 of them fit (99 + 96 + 89). Everything reduces to two
+owners from 0 to **3110**, and 299 of them fit (103 + 98 + 98). Everything reduces to two
 integer comparisons,
 
     ⟨Y, u⟩ ≤ 32   because  (√3/48)·32 + 2/√6 = (2+√2)/√3 = 1.9712 < 2
@@ -129,7 +129,7 @@ triangles, and a head displaced by a minimal vector are each rejected.
     lib/golay.py  lib/leech.py      the Leech minimal vectors from the Golay code
     lib/layered.py                  the exact checks, shared by both
     data/heads26_Y.npy  data/heads26_side.npy    the 1554 heads (int64, Cohn units) and their triangle (0 or 1)
-    data/heads27_Y.npy  data/heads27_side.npy    the 2262 first-layer heads and their triangle (0 to 3)
+    data/heads27_Y.npy  data/heads27_side.npy    the 2259 first-layer heads and their triangle (0 to 3)
 
 ## Provenance
 

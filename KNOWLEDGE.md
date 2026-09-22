@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **157 sections, about 11320 lines**, written as the
+The full working record of the project: **158 sections, about 11398 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -11326,4 +11326,73 @@ which did pay, was a different bipartite structure and is not measured here.
 90 minutes of CP-SAT, fixed seed, warm-started at the shipped 45, on the complete 1188-head
 pool: realised **45**, no improvement.  (The bound came back 89, reproducing the recorded
 value under a fixed seed, where unseeded reruns had given 88, 90 and 91.)
+
+## 159. K(27) >= 201553: optimise the item types TOGETHER, and never pin your own total (2026-09-22)
+
+**+44.**  B. Lindow sent 201545 on 21 September; this is his first layer with a larger second
+layer, and both are verified by two independent implementations.
+
+### 159.1 The result
+
+    equator      196560 - 2095 - 299
+    first layer  3 x 2259  =  2095 class heads + 164 axial normals   (Lindow)
+    second layer 2 x 299   =  103 + 98 + 98 over 3110 admissible owners   (here)
+    axis         12
+    -----------------------------------------------------------------
+                 196560 + 12 + 2*2095 + 3*164 + 299  =  201553
+
+Our `verify27.py` and Lindow's independent verifier -- which shares no code, rebuilds the
+Leech shell from its own Golay code and recovers every owner by search -- both return
+`ALL CHECKS PASS` on it.  The same pair agree on 199806 and on the old 201509.
+
+### 159.2 What he did that we did not
+
+The three item types have different prices: a class head is worth `+2` (three caps, one
+removal), an axial normal `+3` (three caps, no removal), a second-layer head `+1` (two caps,
+one removal).  We chose them in SEQUENCE -- class heads, then the free-head trade, then the
+second layer.  He chose them TOGETHER.  That alone is `+36`:
+
+    class heads   2133 -> 2095   (-38, worth -76)
+    axial normals  129 ->  164   (+35, worth +105)
+    second layer   284 ->  291   ( +7, worth   +7)
+
+Giving up class heads to buy axial normals is a trade this project had already priced -- in
+isolation, which is why it stopped at 129.  Section 158 is a page of sequential searches that
+found nothing; the lesson it missed is that the levers were never independent.
+
+### 159.3 The remaining +8 was ours, and it was a guard that hid it
+
+Over HIS first layer the second-layer candidate set is 3110 owners (ours was 3009), and the
+layer is a maximum 3-colourable induced subgraph of the 60-degree graph on it.  CP-SAT takes
+**299** where he took 291.
+
+That gain was invisible because `verify27.py` ended with
+
+    chk('the first layer alone gives 201225', first == 201225, ...)
+
+His configuration passes EVERY geometric check in it -- all 2550411 head pairs -- and makes
+the script print 201545, then exit 1 on that line, because his first layer gives 201254.  The
+same literal sat in `verify26.py`.  It is the defect `fcff234` removed from dimension 25's
+verifier three commits earlier, still in place next door: **a verifier that pins its own total
+rejects every improvement, including the ones you would have found yourself.**  Both now check
+the relation instead -- the library's first-layer total against the count formula, and that the
+second layer adds exactly one point per head.
+
+### 159.4 And two ceilings that were never ceilings
+
+`status.py` said the second layer was "at most three times an independence number measured at
+99: ceiling 297", and `audit.py` said "a phased local search puts at 95: the ceiling is 285".
+A REALISED independent set bounds alpha from BELOW.  Neither was ever an upper bound, and 299
+refutes both.  Recorded here because the shape recurs: three times a number you achieved is
+not three times the number you cannot beat.
+
+### 159.5 A statistic belongs to its base
+
+The tier-40 obstruction figures were measured against the 2133-head layer and all move with it:
+
+    candidates 10647 -> 10030,  incidences 269423 -> 252582,  blockers 2133 -> 2095,
+    per blocker 126 -> 121,  dropping 1200 unlocks 241 -> 253,  whole layer costs 4266 -> 4190
+
+The conclusion survives -- the trade still completes only by demolishing the class layer -- but
+every number in the paper's paragraph had to be recomputed, not re-typed.
 

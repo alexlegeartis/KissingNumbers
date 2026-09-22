@@ -1294,8 +1294,11 @@ heads $h$.  Priced one candidate at a time every free head looks unaffordable. I
 the cuboctahedron rotated by $45^{\circ}$ about a coordinate axis, whose largest
 cosine to a direction is $(2+\sqrt2)/4$ and whose inner product with a cap point
 is at most $(2+\sqrt2)/\sqrt3<2$; two triangles of leans with cross Gram matrix
-the circulant of $(3,0,-3)$ carry $2133$ class heads over the four sides and
-$129$ free heads.  Both dimensions carry a second cap layer, at $|x|^{2}=3$ with $|y|=1$;
+the circulant of $(3,0,-3)$ carry the class heads over the four sides, alongside
+free heads that remove nothing. Optimising the class heads, the free heads and the second
+cap layer \emph{together} rather than one after another --- which is B.~Lindow's
+contribution --- gives $2095$ class heads and $164$ free heads, against $2133$ and $129$
+for the same three chosen in sequence.  Both dimensions carry a second cap layer, at $|x|^{2}=3$ with $|y|=1$;
 what separates them is not whether it exists but what it costs.  Such a cap satisfies
 $\ip{y}{a}\le2$ whatever direction it points, since $|y||a|=2$; it carries the antipodal
 pair $\pm y$ and no more, three directions needing pairwise cosine $\le-1$; and the scaled
@@ -1306,7 +1309,7 @@ $30^{\circ}$ for the hexagon, $45^{\circ}$ for the cuboctahedron --- so a first-
 may meet a second-layer owner at $\ip{Y}{u}\le24$ in dimension $26$ and at
 $\ip{Y}{u}\le32$ in dimension $27$.  A free head $y=\pm2v$ has $\ip{Y}{u}=2\ip{v}{u}$, a
 multiple of $16$: it clears the bar $32$ and can never clear the bar $24$.  Dimension $27$
-therefore keeps its free heads and its second layer at once, $284$ heads over $3\,009$
+therefore keeps its free heads and its second layer at once, $299$ heads over $3\,110$
 admissible owners, while dimension $26$ can open the layer only by surrendering every free
 head --- which is what the count above does, $96$ free heads at $3$ apiece against $324$
 second-layer heads at $1$, a net $+36$.  That layer is optimal and not merely the best found:
@@ -1320,11 +1323,11 @@ dimensions part: the hexagon's six edge midpoints leave a gap of $30^{\circ}$, a
 not one of the $196\,560$ minimal vectors qualifies, while the cuboctahedron's covering
 radius is $45^{\circ}$, attained at its six square-face centres $\pm e_{1},\pm e_{2},
 \pm e_{3}$ -- three antipodal lines.  One quantum, and the admissible owners go from $0$
-to $3009$; $284$ of them fit, $99+96+89$.  Everything reduces to
+to $3110$; $299$ of them fit, $103+98+98$.  Everything reduces to
 $\ip{Y}{u}\le32$ and $\ip{u}{u'}\le8$ on a line, since
 $\tfrac{\sqrt3}{48}\cdot32+\tfrac{2}{\sqrt6}=(2+\sqrt2)/\sqrt3<2$ and
 $\tfrac{3}{32}\cdot8+1=\tfrac74<2$:
-$196\,560+12+2\cdot2133+3\cdot129+284=\Kh{27}$. The package
+$196\,560+12+2\cdot2095+3\cdot164+299=\Kh{27}$. The package
 \texttt{dim26-27-iota-triangles} stores the heads as integer vectors with the
 index of their triangle, rebuilds the Leech vectors from the Golay code, decides
 every head--equator and head--head pair by integer comparison against the
@@ -2249,11 +2252,11 @@ candidate is admitted only when \emph{every} first-layer head blocking it is
 deleted, so what governs the trade is not how often blockers are shared on
 average but whether candidates with few blockers share those blockers with each
 other. Dimension $27$ fails although the sharing is high. Its next admissible
-tier has $10\,647$ candidates carrying $269\,423$ incidences on $2\,133$ blocking
-heads, some $126$ candidates apiece, yet each candidate carries about $25$
+tier has $10\,030$ candidates carrying $252\,582$ incidences on $2\,095$ blocking
+heads, some $121$ candidates apiece, yet each candidate carries about $25$
 blockers and needs all of them at once: deleting the $1\,200$ heads that block
-the most unlocks $241$ candidates, and the trade closes only when the whole class
-layer is gone, at a cost of $4\,266$.
+the most unlocks $253$ candidates, and the trade closes only when the whole class
+layer is gone, at a cost of $4\,190$.
 
 Dimension $25$ inverts the exchange rate and still gains nothing. Its lens heads
 are forced to height $1$, since the poles require $y\le1$ and a mirror pair

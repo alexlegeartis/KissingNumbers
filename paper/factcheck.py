@@ -533,13 +533,13 @@ chk('the wrong-normalisation sharing numbers are gone',
 # Section 6.3 also records WHY the second-layer trade pays in dimensions 26 and 27 and not in
 # 25.  The deciding quantity is incidences per blocker, so pin both measurements: a paragraph
 # that quoted the exchange rate alone would read as an explanation and be the wrong one.
-_INC, _BLK = 269423, 2133
-chk('dim 27 trade: the concentration the paper quotes', round(_INC / float(_BLK)) == 126)
+_INC, _BLK = 252582, 2095
+chk('dim 27 trade: the concentration the paper quotes', round(_INC / float(_BLK)) == 121)
 chk('paper states the dim 27 incidences and blockers',
-    _grp(_INC) in TEX and _grp(_BLK) in TEX and 'some $126$ candidates apiece' in FLAT)
+    _grp(_INC) in TEX and _grp(_BLK) in TEX and 'some $121$ candidates apiece' in FLAT)
 chk('paper says dim 27 fails DESPITE the sharing, on coverage',
     'fails although the sharing is high' in FLAT
-    and 'unlocks $241$ candidates' in FLAT and _grp(4266) in TEX)
+    and 'unlocks $253$ candidates' in FLAT and _grp(4190) in TEX)
 chk('paper states the dim 25 free-head layer is worth nothing',
     'the $654$ blocked by at most ten lens heads are blocked by $630$' in FLAT
     and 'is optimal at $0$' in FLAT)
@@ -1316,7 +1316,7 @@ chk('the paper lists the k at which the layer reaches K(k), and the list is righ
 
 # ------------------------------------------------------------- prose numbers vs table
 print('== Prose numbers against the tables ==')
-for d, v in [(25, 197579), (26, 199806), (27, 201509), (38, 591612), (39, 756116),
+for d, v in [(25, 197579), (26, 199806), (27, 201553), (38, 591612), (39, 756116),
              (70, 1249778250), (71, 2603658750), (96, 12886999232)]:
     chk('prose dim %d = table' % d, tab4[d][1] == v, '%d vs %d' % (tab4[d][1], v))
 # Theorem 6.3 and the abstract both state dimension 96.  FLAT collapses whitespace but
