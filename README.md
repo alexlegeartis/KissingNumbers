@@ -39,7 +39,7 @@ them exceeds a known record in a higher dimension. It takes a few seconds.
 | 30  | 220 440              | **221 012**       | 1.00     | the dimension-28 norm-8 frame layer is not about dimension 28: at height √2 a whole Leech frame of heads carries the whole cross-polytope of ℝᵏ, 96k points, deleting nothing |
 | 29  | 209 496              | **209 968**       | 1.00     | the same frame layer one dimension up, on the whole cross-polytope of ℝ⁵ — 480 points, deleting nothing |
 | 28  | 204 520              | **204 896**       | 1.00     | the head of a deletion-free layer need not have norm 6: at height √2 a norm-8 head clears the cap threshold, and 48 of them are a whole Leech frame |
-| 27  | 200 044              | **201 553**       | 1.01     | the coset triangle of three norm-6 vectors on all four triangles of directions, with the class heads, the axial normals that remove nothing and the second cap layer all solved together rather than in sequence (first layer B. Lindow, second layer here) |
+| 27  | 200 044              | **201 557**       | 1.01     | the coset triangle of three norm-6 vectors on all four triangles of directions, with the class heads, the axial normals that remove nothing and the second cap layer all solved together rather than in sequence (first layer B. Lindow, second layer here) |
 | 26  | 198 550              | **199 806**       | 1.01     | the same triangle on both triangles of the hexagon, the second side the involution image of the first, plus a jointly-solved layer of free heads that remove nothing |
 | 25  | 197 056              | **197 579**       | 1.00     | 1016 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point |
 

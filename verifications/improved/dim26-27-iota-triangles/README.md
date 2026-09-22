@@ -1,6 +1,6 @@
 # Dimensions 26 and 27: the coset triangle on every triangle of directions
 
-**τ(26) ≥ 199 806** and **τ(27) ≥ 201 553**, against the published 198 550 and 200 044
+**τ(26) ≥ 199 806** and **τ(27) ≥ 201 557**, against the published 198 550 and 200 044
 (Cohn's table; Ma et al. 2025) and this repository's earlier 200 540 in dimension 27 (now in
 [`../../superseded/dim27-triple-partition/`](../../superseded/dim27-triple-partition/)).
 Improvements of **+1 256** and **+1 465** over the table.
@@ -33,9 +33,9 @@ cross-constrained at cosine ≤ 1/2, and
 |---|---|---|
 | equator `(z, 0)`, `z` a minimal vector that is not an owner | 194 778 | 194 143 |
 | caps, three per head | 3 × 1458 | 3 × 2259 |
-| caps, two per second-layer head | 2 × 324 | 2 × 299 |
+| caps, two per second-layer head | 2 × 324 | 2 × 303 |
 | axis | 6 | 12 |
-| **total** | **199 806** | **201 553** |
+| **total** | **199 806** | **201 557** |
 
 Every head is `y/3` with `y = 3u + v` an integer vector: `u` a minimal vector (the *owner*,
 which the head removes from the equator) and `v` a Leech vector of norm 6 (a *lean*) with
@@ -98,7 +98,7 @@ hexagon, the widest gap is 30°, and measured against the shipped layer **not on
 196 560 minimal vectors qualifies. In dimension 27 they are the cuboctahedron's twelve
 vertices, whose covering radius is 45°, attained exactly at the six square-face centres
 `±e₁, ±e₂, ±e₃` — three antipodal lines. That single extra quantum takes the admissible
-owners from 0 to **3110**, and 299 of them fit (103 + 98 + 98). Everything reduces to two
+owners from 0 to **3110**, and 303 of them fit (104 + 99 + 100). Everything reduces to two
 integer comparisons,
 
     ⟨Y, u⟩ ≤ 32   because  (√3/48)·32 + 2/√6 = (2+√2)/√3 = 1.9712 < 2

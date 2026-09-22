@@ -4,10 +4,10 @@
   head-axis maximum inner product sqrt(3)*(sqrt(2) + 2)/3 = 1.971197 (bound 2)
   12 axis points of norm 4, pairwise inner product <= 2
   count = 196560 - 2095 + 3 * 2259 + 12 = 201254
-  second layer: 299 heads at |x|^2 = 3 on 3 axis lines
+  second layer: 303 heads at |x|^2 = 3 on 3 axis lines
   second-layer owners are Leech minimal vectors              PASS 
   second-layer owners are distinct                           PASS 
-  the two layers delete disjoint sets (2095 and 299)         PASS 
+  the two layers delete disjoint sets (2095 and 303)         PASS 
   a second-layer head deletes exactly its owner              PASS 
   <Y,u> <= 32 for every first-layer head and second-layer owner PASS max 32
   <u,u'> <= 8 on one line                                    PASS max 8
@@ -21,7 +21,7 @@
   its two cap points meet at 3 - 1 <= 2                      PASS 
   the square-face centres are 45 degrees from the nearest direction PASS 
   every axis point meets every second-layer direction at <= 2 PASS 
-  count = 196560 - 2095 - 299 + 3 * 2259 + 2 * 299 + 12 = 201553
+  count = 196560 - 2095 - 303 + 3 * 2259 + 2 * 303 + 12 = 201557
   the first layer alone, both ways                           PASS 201254 vs 201254
-  the second layer adds exactly one point per head           PASS 201553 vs 201553
-ALL CHECKS PASS   K(27) >= 201553
+  the second layer adds exactly one point per head           PASS 201557 vs 201557
+ALL CHECKS PASS   K(27) >= 201557

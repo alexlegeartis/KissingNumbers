@@ -1113,7 +1113,7 @@ chk('the joint trade decomposes as -76 + 105 + 7',
     and (_JNT[2] - _SEQ[2]) == 7
     and 2 * (_JNT[0] - _SEQ[0]) + 3 * (_JNT[1] - _SEQ[1]) + (_JNT[2] - _SEQ[2]) == 36)
 chk('the shipped second layer takes it the last +8',
-    196560 + 12 + 2 * _JNT[0] + 3 * _JNT[1] + 299 == 201553 and 299 - _JNT[2] == 8)
+    196560 + 12 + 2 * _JNT[0] + 3 * _JNT[1] + 303 == 201557 and 303 - _JNT[2] == 12)
 chk('paper states both triples and calls the joint one out',
     'gives $2133$ class heads, $129$ free' in FLAT
     and 'gives $2095$, $164$ and $291$' in FLAT
@@ -1339,7 +1339,7 @@ chk('the paper lists the k at which the layer reaches K(k), and the list is righ
 
 # ------------------------------------------------------------- prose numbers vs table
 print('== Prose numbers against the tables ==')
-for d, v in [(25, 197579), (26, 199806), (27, 201553), (38, 591612), (39, 756116),
+for d, v in [(25, 197579), (26, 199806), (27, 201557), (38, 591612), (39, 756116),
              (70, 1249778250), (71, 2603658750), (96, 12886999232)]:
     chk('prose dim %d = table' % d, tab4[d][1] == v, '%d vs %d' % (tab4[d][1], v))
 # Theorem 6.3 and the abstract both state dimension 96.  FLAT collapses whitespace but

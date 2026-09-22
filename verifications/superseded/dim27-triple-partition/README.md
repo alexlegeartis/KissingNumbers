@@ -5,7 +5,7 @@ until 2026-09-08.
 
 **Superseded by this project's own
 [`../../improved/dim26-27-iota-triangles/`](../../improved/dim26-27-iota-triangles/), which gives
-201 553** — the same template (Leech equator, cap heads on the twelve cuboctahedral directions,
+201 557** — the same template (Leech equator, cap heads on the twelve cuboctahedral directions,
 a rotated cuboctahedron on the axis) with the heads rebuilt and a second cap layer added on
 top. The first layer is the coset classes of two zero-sum triangles of norm-6 vectors at
 squared length 8/3, distributed over the four triangles of directions with the side chosen per
@@ -15,7 +15,7 @@ exists only in dimension 27: its direction must clear the twelve first-layer dir
 the cuboctahedron's covering radius of 45° is attained exactly at the six square-face
 centres, which is the one extra quantum the hexagon of dimension 26 does not have. Each of its
 284 heads comes as an antipodal pair costing a single deletion, so `+1` each.
-Better by +1013. The partition argument below is still true and is still what fixes the
+Better by +1017. The partition argument below is still true and is still what fixes the
 twelve directions; it is no longer what carries the dimension-27 claim.
 
 ---

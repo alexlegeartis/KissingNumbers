@@ -19,7 +19,7 @@ abstract: >-
   onto fixed triangles of directions, the coset triangle of three norm-6
   vectors summing to zero is placed on every triangle of directions with the
   side chosen per head, and an involution on each class gives 199806 and
-  201553; and in dimensions 28 to 31 a SECOND layer sits above the caps, a
+  201557; and in dimensions 28 to 31 a SECOND layer sits above the caps, a
   norm-8 lattice vector at height sqrt2 whose head runs over all 48 vectors of
   a Leech frame and whose direction runs over the whole cross-polytope of
   R^k -- 96k points that delete nothing, on the single inequality

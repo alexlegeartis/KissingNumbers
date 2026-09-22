@@ -308,7 +308,7 @@ add(18, 8358, 'dim18-bent-hexagon', 'verify18.py (exact: integers on the R^16 si
                                      'on the R^2 side, every sign decided by squaring)')
 add(25, 197579, 'dim25-lens-heads', 'verify.py (exact arithmetic; fullcheck.py is the independent net)')
 add(26, 199806, 'dim26-27-iota-triangles', 'verify26.py (exact: integers, and sympy for the hexagon)')
-add(27, 201553, 'dim26-27-iota-triangles', 'verify27.py (exact: integers, and sympy for the rotated cuboctahedron and the second layer)')
+add(27, 201557, 'dim26-27-iota-triangles', 'verify27.py (exact: integers, and sympy for the rotated cuboctahedron and the second layer)')
 add(28, 204896, 'dim28-norm8-frame-layer', 'verify28.py (exact: integers, and sympy in Q(sqrt2, '
                                            'sqrt3) for the 24-cell, its half-vector axis and the '
                                            'four coordinate directions)')
