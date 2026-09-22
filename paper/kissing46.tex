@@ -1295,10 +1295,15 @@ the cuboctahedron rotated by $45^{\circ}$ about a coordinate axis, whose largest
 cosine to a direction is $(2+\sqrt2)/4$ and whose inner product with a cap point
 is at most $(2+\sqrt2)/\sqrt3<2$; two triangles of leans with cross Gram matrix
 the circulant of $(3,0,-3)$ carry the class heads over the four sides, alongside
-free heads that remove nothing. Optimising the class heads, the free heads and the second
-cap layer \emph{together} rather than one after another --- which is B.~Lindow's
-contribution --- gives $2095$ class heads and $164$ free heads, against $2133$ and $129$
-for the same three chosen in sequence.  Both dimensions carry a second cap layer, at $|x|^{2}=3$ with $|y|=1$;
+free heads that remove nothing. The three kinds of point are priced differently --- a class head is worth
+$+2$, a free head $+3$, a second-layer head $+1$ --- and they compete for the same
+owners, so they have to be chosen \emph{together}. Choosing them in sequence, as
+the first version of this construction did, gives $2133$ class heads, $129$ free
+heads and $284$ second-layer heads. Choosing all three at once, which is
+B.~Lindow's contribution, gives $2095$, $164$ and $291$: $38$ class heads
+are surrendered, at $-76$, to buy $35$ free heads at $+105$ and $7$
+second-layer heads at $+7$, a net $+36$. The trade that pays is one the sequential
+search had already priced and declined, because in isolation it loses.  Both dimensions carry a second cap layer, at $|x|^{2}=3$ with $|y|=1$;
 what separates them is not whether it exists but what it costs.  Such a cap satisfies
 $\ip{y}{a}\le2$ whatever direction it points, since $|y||a|=2$; it carries the antipodal
 pair $\pm y$ and no more, three directions needing pairwise cosine $\le-1$; and the scaled
@@ -1323,7 +1328,9 @@ dimensions part: the hexagon's six edge midpoints leave a gap of $30^{\circ}$, a
 not one of the $196\,560$ minimal vectors qualifies, while the cuboctahedron's covering
 radius is $45^{\circ}$, attained at its six square-face centres $\pm e_{1},\pm e_{2},
 \pm e_{3}$ -- three antipodal lines.  One quantum, and the admissible owners go from $0$
-to $3110$; $299$ of them fit, $103+98+98$.  Everything reduces to
+to $3110$. Over that first layer the second layer is again an
+independent-set problem, and $299$ of them fit, $103+98+98$, against the $291$ of
+the joint optimisation that produced the layer; that is the last $+8$.  Everything reduces to
 $\ip{Y}{u}\le32$ and $\ip{u}{u'}\le8$ on a line, since
 $\tfrac{\sqrt3}{48}\cdot32+\tfrac{2}{\sqrt6}=(2+\sqrt2)/\sqrt3<2$ and
 $\tfrac{3}{32}\cdot8+1=\tfrac74<2$:
@@ -2251,7 +2258,10 @@ of directions and are worth $+1$ apiece against a first-layer head's $+2$. A
 candidate is admitted only when \emph{every} first-layer head blocking it is
 deleted, so what governs the trade is not how often blockers are shared on
 average but whether candidates with few blockers share those blockers with each
-other. Dimension $27$ fails although the sharing is high. Its next admissible
+other. Neither is it enough to price one trade at a time: the class heads, the
+free heads and the second layer compete for the same owners, and a trade that
+loses in isolation can pay once the other two are allowed to move with it, which
+is how the configuration of \S\ref{ss:d2627} was found. Dimension $27$ fails although the sharing is high. Its next admissible
 tier has $10\,030$ candidates carrying $252\,582$ incidences on $2\,095$ blocking
 heads, some $121$ candidates apiece, yet each candidate carries about $25$
 blockers and needs all of them at once: deleting the $1\,200$ heads that block

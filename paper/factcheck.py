@@ -1098,6 +1098,29 @@ chk('the paper flags that dimension 90 does not use its own dimension-18 configu
     and 'whether they can be is open' in FLAT
     and _grp(8358) in TEX)
 chk('the dimension-18 pole gap is the one claimed', 8358 - 7624 == 734)
+
+# Dimension 27 is 201553 because the three kinds of point were chosen TOGETHER.  Pin the
+# decomposition as arithmetic AND pin that the paper states it: the numbers alone would still
+# read as true if the explanation were dropped, and the explanation is the result.
+_SEQ = (2133, 129, 284)          # class heads, free heads, second layer, chosen in sequence
+_JNT = (2095, 164, 291)          # the same three chosen at once (Lindow)
+chk('the sequential triple gives the old dimension-27 total',
+    196560 + 12 + 2 * _SEQ[0] + 3 * _SEQ[1] + _SEQ[2] == 201509)
+chk('the joint triple gives Lindow\'s total',
+    196560 + 12 + 2 * _JNT[0] + 3 * _JNT[1] + _JNT[2] == 201545)
+chk('the joint trade decomposes as -76 + 105 + 7',
+    2 * (_JNT[0] - _SEQ[0]) == -76 and 3 * (_JNT[1] - _SEQ[1]) == 105
+    and (_JNT[2] - _SEQ[2]) == 7
+    and 2 * (_JNT[0] - _SEQ[0]) + 3 * (_JNT[1] - _SEQ[1]) + (_JNT[2] - _SEQ[2]) == 36)
+chk('the shipped second layer takes it the last +8',
+    196560 + 12 + 2 * _JNT[0] + 3 * _JNT[1] + 299 == 201553 and 299 - _JNT[2] == 8)
+chk('paper states both triples and calls the joint one out',
+    'gives $2133$ class heads, $129$ free' in FLAT
+    and 'gives $2095$, $164$ and $291$' in FLAT
+    and 'have to be chosen \\emph{together}' in FLAT.replace(BS + BS, BS))
+chk('paper says a trade can lose in isolation and pay jointly',
+    'loses in isolation' in FLAT and 'can pay once the other two are allowed to move' in FLAT)
+
 if _mlay:
     for _i, _k in enumerate(_COHN_KS):
         chk('dimension %d states the layer it started from' % (72 + _k),

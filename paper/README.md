@@ -55,7 +55,7 @@ python formulas.py       # every formula in the paper, re-derived with sympy
 python style_scan.py -v  # the prose faults listed in the writing guidelines
 ```
 
-`factcheck.py` (764 checks) does not parse the repository's conclusions, it **re-derives**
+`factcheck.py` (770 checks) does not parse the repository's conclusions, it **re-derives**
 them: the moment identities, the count of the layered construction, Caro–Wei, the
 Edel–Rains–Sloane totals, the bound on independent sets, and every entry of Tables 1, 3 and 4.
 `formulas.py` (257 checks) checks the *algebra* rather than the numbers — the moment identity
