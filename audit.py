@@ -1649,6 +1649,32 @@ else:
                 _nbad += 1
         if not _nbad:
             print("   %d bolded rows, every one of them a registered value" % len(_rows))
+        # ... and the VALUES being guarded is why the MEMBERSHIP drifted: dimension 18 is the
+        # first dimension of the paper's own title and has its own row in its Table 1, and it
+        # was missing from this README altogether -- from the table AND from the sentence that
+        # accounts for the rest -- because nothing compared the enumeration.  Same scoped-claim
+        # trap as CITATION.cff below.  The README states its own accounting, so check it: the
+        # table plus the "plus dimensions ..." sentence must cover every claim exactly once.
+        _shown = set(int(_d) for _d, _v in _rows)
+        _plus = re.search(u'plus dimensions([^.]*)\.', _rr)
+        _listed = set()
+        if _plus:
+            for _a, _b, _c in re.findall(u'(\d+)\s*[-–]\s*(\d+)|(\d+)', _plus.group(1)):
+                _listed |= {int(_c)} if _c else set(range(int(_a), int(_b) + 1))
+        _acct = _shown | _listed
+        _claimed = set(_vals)
+        if _plus is None:
+            bad("the root README has no 'plus dimensions ...' sentence accounting for the rest")
+        elif _shown & _listed:
+            bad("the root README both tabulates and lists dimension(s) %s"
+                % sorted(_shown & _listed))
+        elif _acct != _claimed:
+            bad("the root README accounts for %s and omits %s"
+                % (sorted(_acct - _claimed) or 'nothing extra',
+                   sorted(_claimed - _acct) or 'nothing'))
+        else:
+            print("   %d tabulated + %d listed = the %d claims, each exactly once"
+                  % (len(_shown), len(_listed), len(_claimed)))
 
 print("6. every claim says what would have to change for it to improve")
 _unclassified = [d for d, v, pkg, how in claims if status_for(d)[0] is None]

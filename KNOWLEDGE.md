@@ -9467,6 +9467,35 @@ equator, while dimensions 22 and 23 use the EVEN one, where the only bound is th
 A(16,1/3) <= 751 and 2281 LNS iterations over the 61440-vertex ground set found nothing above
 512.
 
+**Correction and update (2026-09-22/23, research/dim18/NOTES.md section 9).** The discrete ground set
+above was INCOMPLETE: the dual-type vectors (3/2 at one cell q, 1/2 elsewhere) had been dismissed as
+"never compatible with the odd equator" because their sign words were taken to be e_q + RM(2,4) (the
+lattice case). Over the odd equator the 15 octads through q force the word to be EVEN on each, and
+that solution set is RM(2,4) itself: all 16 x 2048 = 32768 dual-type vectors have max inner product
+exactly 4 against the 4320 equator vectors (dualtier.py). The tier ground set is therefore
+28672 six-set + 32768 dual + 2048 flat vertices (degrees six->six 1146, six->dual 1472, dual->six
+1288, dual->dual 1555). Consequences: (i) a dual position carries <= 32 words but the same word at
+two positions has inner product 5 and two cosets of RM(1,4) with singular difference carry <= 32
+together, so there is NO 512 dual tier over the odd equator (the Leech dual tier needs the flipped
+sign at q); (ii) theta' of the two-fibre coherent configuration (120 orbitals, regular
+representation, dualtheta.py + dualsdp2.py; it reproduces 533.2595 on the six-set fibre) is
+**559.2** for six-set + dual, so the spectral bound RISES and T is in [512, 559] on the enlarged
+discrete model; (iii) every search stays at 512: LNS from both 512 tiers (freeing up to 200
+vertices exposes no candidate in 40000 steps), unions of orbits of random and of sign subgroups,
+CP-SAT on a biplane plus a Kerdock set of dual cosets, and RM(1,4)-invariant mixed tiers are
+provably below 512 by hand; (iv) the first caution above is now largely answered: for BOTH 512
+tiers the polytope {<u,v> <= 4 (equator), <t,v> <= 2 (tier)} has maximum vertex norm 4
+(tierholes.py, 600 LPs each), so no 513th vector of ANY shape exists for either -- they are
+maximal in the continuous sense, not only against the listed candidates. The deep holes of the odd
+equator are exactly: flats (norm 64/9), the two norm-6 types, then 16/3, 5, ... (holes.py); the even
+equator's deepest holes are the two norm-6 types (no flats at all), which is why E-type root
+positions (72 roots for k = 6) can never carry a tier B. Finally, Cohn-Li's and Ho's bases in 17-21
+are EXACTLY this odd family on the D_k roots including the half-tiers (32 at each norm-16 vector of
+either shape: e.g. 17400 = 4320 + 24*512 + 24*32 + 24 in dimension 20), their flats attain the 2048
+distinct-word cap in 20 and 21 and the 8 x 160 triangle-slot cap in 19, and in dimension 18 every
+60-degree arc of slot angles lies in one 512-word space, so tier B <= 6 x 160 for ANY slot angles or
+radii. All five dimensions are pinned to their records unless a MIXED tier beats 512.
+
 ## 141. The dimension-30 packing is CLOSED: K(30) >= 220992, and how (2026-09-17)
 
 Section 138 left dimension 30 at 5941 of the 5952 owner lines that 24 pairwise disjoint 248-line

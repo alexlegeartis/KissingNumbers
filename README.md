@@ -42,6 +42,7 @@ them exceeds a known record in a higher dimension. It takes a few seconds.
 | 27  | 200 044              | **201 557**       | 1.01     | the coset triangle of three norm-6 vectors on all four triangles of directions, with the class heads, the axial normals that remove nothing and the second cap layer all solved together rather than in sequence (first layer B. Lindow, second layer here) |
 | 26  | 198 550              | **199 806**       | 1.01     | the same triangle on both triangles of the hexagon, the second side the involution image of the first, plus a jointly-solved layer of free heads that remove nothing |
 | 25  | 197 056              | **197 579**       | 1.00     | 1016 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point |
+| 18  | 7 654                | **8 358**         | 1.09     | the base of Cohn–Li's hexagon had a free combinatorial parameter nobody had varied: which coset of RM(1,4) the three six-set families lie in.  Three bent cosets with pairwise-bent sums that do not sum to zero give the twelve tier-B slots three different 512-word spaces instead of one, and tier B rises from 256 to 960 |
 
 
 The full table of all 53 is `[RESULTS.md](RESULTS.md)`. The write-up, *New lower bounds

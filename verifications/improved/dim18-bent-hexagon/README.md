@@ -85,6 +85,13 @@ tier. In ℝ¹⁶ ⊕ ℝ⁴ and ℝ¹⁶ ⊕ ℝ⁵ the same design is capped b
 RM(2,4) at 18 680 and 26 888, below the records 19 448 and 29 768. Dimension 17 has no
 angles (two slots, 192 each, Cohn–Li's value).
 
+*Update 2026-09-23.* The norm-6 layer also admits the dual-type vectors (3/2 at one cell, 1/2
+elsewhere, sign word in RM(2,4)), which an earlier note wrongly excluded; they do not form 512-tiers
+of their own, both 512 tiers used here are maximal even in the continuous sense, and the joint
+spectral bound on a mixed tier is 559 (`research/dim18/NOTES.md` §9). With the 32-point half-tiers
+at the norm-16 positions the same family reproduces the 19 448 and 29 768 records exactly, so
+the R^16 ⊕ R^k design is pinned in 17-21 unless a mixed tier beats 512.
+
 ## Files
 
 | file | what |
