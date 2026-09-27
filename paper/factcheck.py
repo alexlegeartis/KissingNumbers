@@ -136,6 +136,29 @@ def _shipped_poles(k):
     return max(got)
 
 
+
+
+def _shipped_d27():
+    """The dimension-27 triple (class heads, free heads, second layer), read from data/.
+
+    This block used to pin 2095/164/291 as literals, and when the contributed joint
+    re-optimisation raised the claim the guard blocked the correction instead of checking it.
+    A free head is y = +-2v with v of norm 6, so it owns no minimal vector; a class head owns
+    exactly one.  The split is decided the way the package decides it: by the owner test."""
+    import numpy as np
+    d = os.path.join(KV, 'verifications', 'improved', 'dim26-27-iota-triangles')
+    Y = np.load(os.path.join(d, 'data', 'heads27_Y.npy'))
+    L2 = np.load(os.path.join(d, 'data', 'heads27_layer2_u.npy'))
+    sys.path.insert(0, d)
+    import lib.leech as _lee
+    M = np.asarray(_lee.build())
+    free = 0
+    for a in range(0, len(Y), 400):
+        for r in Y[a:a + 400] @ M.T:
+            if not (r > 48).any():
+                free += 1
+    return (len(Y) - free, free, len(L2))
+
 _BS = chr(92) + chr(92)          # a literal backslash, for the LaTeX-macro regexes
 FLAT = re.sub(r'\s+', ' ', TEX)
 RES = io.open(os.path.join(KV, 'RESULTS.md'), encoding='utf-8').read()
@@ -1103,20 +1126,20 @@ chk('the dimension-18 pole gap is the one claimed', 8358 - 7624 == 734)
 # decomposition as arithmetic AND pin that the paper states it: the numbers alone would still
 # read as true if the explanation were dropped, and the explanation is the result.
 _SEQ = (2133, 129, 284)          # class heads, free heads, second layer, chosen in sequence
-_JNT = (2095, 164, 291)          # the same three chosen at once (Lindow)
+_JNT = _shipped_d27()            # the same three chosen at once, READ from data/ (Lindow)
 chk('the sequential triple gives the old dimension-27 total',
     196560 + 12 + 2 * _SEQ[0] + 3 * _SEQ[1] + _SEQ[2] == 201509)
-chk('the joint triple gives Lindow\'s total',
-    196560 + 12 + 2 * _JNT[0] + 3 * _JNT[1] + _JNT[2] == 201545)
-chk('the joint trade decomposes as -76 + 105 + 7',
-    2 * (_JNT[0] - _SEQ[0]) == -76 and 3 * (_JNT[1] - _SEQ[1]) == 105
-    and (_JNT[2] - _SEQ[2]) == 7
-    and 2 * (_JNT[0] - _SEQ[0]) + 3 * (_JNT[1] - _SEQ[1]) + (_JNT[2] - _SEQ[2]) == 36)
-chk('the shipped second layer takes it the last +8',
-    196560 + 12 + 2 * _JNT[0] + 3 * _JNT[1] + 303 == 201557 and 303 - _JNT[2] == 12)
+chk('the joint triple gives the claimed dimension-27 total',
+    196560 + 12 + 2 * _JNT[0] + 3 * _JNT[1] + _JNT[2] == tab4[27][1],
+    '%d vs %d' % (196560 + 12 + 2 * _JNT[0] + 3 * _JNT[1] + _JNT[2], tab4[27][1]))
+chk('the joint trade is priced 2 / 3 / 1 and nets the gain over the sequential version',
+    2 * (_JNT[0] - _SEQ[0]) + 3 * (_JNT[1] - _SEQ[1]) + (_JNT[2] - _SEQ[2])
+    == tab4[27][1] - 201509,
+    'priced %+d, gain %+d' % (2 * (_JNT[0] - _SEQ[0]) + 3 * (_JNT[1] - _SEQ[1])
+                              + (_JNT[2] - _SEQ[2]), tab4[27][1] - 201509))
 chk('paper states both triples and calls the joint one out',
     'gives $2133$ class heads, $129$ free' in FLAT
-    and 'gives $2095$, $164$ and $291$' in FLAT
+    and 'gives $%d$, $%d$ and $%d$' % _JNT in FLAT
     and 'have to be chosen \\emph{together}' in FLAT.replace(BS + BS, BS))
 chk('paper says a trade can lose in isolation and pay jointly',
     'loses in isolation' in FLAT and 'can pay once the other two are allowed to move' in FLAT)
@@ -1339,7 +1362,7 @@ chk('the paper lists the k at which the layer reaches K(k), and the list is righ
 
 # ------------------------------------------------------------- prose numbers vs table
 print('== Prose numbers against the tables ==')
-for d, v in [(25, 197579), (26, 199806), (27, 201557), (38, 591612), (39, 756116),
+for d, v in [(25, 197579), (26, 199806), (27, 201566), (38, 591612), (39, 756116),
              (70, 1249778250), (71, 2603658750), (96, 12886999232)]:
     chk('prose dim %d = table' % d, tab4[d][1] == v, '%d vs %d' % (tab4[d][1], v))
 # Theorem 6.3 and the abstract both state dimension 96.  FLAT collapses whitespace but

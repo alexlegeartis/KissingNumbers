@@ -1,6 +1,6 @@
 # Dimensions 26 and 27: the coset triangle on every triangle of directions
 
-**τ(26) ≥ 199 806** and **τ(27) ≥ 201 557**, against the published 198 550 and 200 044
+**τ(26) ≥ 199 806** and **τ(27) ≥ 201 566**, against the published 198 550 and 200 044
 (Cohn's table; Ma et al. 2025) and this repository's earlier 200 540 in dimension 27 (now in
 [`../../superseded/dim27-triple-partition/`](../../superseded/dim27-triple-partition/)).
 Improvements of **+1 256** and **+1 465** over the table.
@@ -31,11 +31,11 @@ cross-constrained at cosine ≤ 1/2, and
 
 | | dimension 26 | dimension 27 |
 |---|---|---|
-| equator `(z, 0)`, `z` a minimal vector that is not an owner | 194 778 | 194 143 |
-| caps, three per head | 3 × 1458 | 3 × 2259 |
-| caps, two per second-layer head | 2 × 324 | 2 × 303 |
+| equator `(z, 0)`, `z` a minimal vector that is not an owner | 194 778 | 194 160 |
+| caps, three per head | 3 × 1458 | 3 × 2258 |
+| caps, two per second-layer head | 2 × 324 | 2 × 310 |
 | axis | 6 | 12 |
-| **total** | **199 806** | **201 557** |
+| **total** | **199 806** | **201 566** |
 
 Every head is `y/3` with `y = 3u + v` an integer vector: `u` a minimal vector (the *owner*,
 which the head removes from the equator) and `v` a Leech vector of norm 6 (a *lean*) with
@@ -43,7 +43,7 @@ which the head removes from the equator) and `v` a Leech vector of norm 6 (a *le
 owner (`y = 2u + w` with `w = u + v` minimal and `⟨u, w⟩ = 1`, so `⟨y, z⟩ ≥ 7` forces
 `z = u`), and two heads on one owner have `⟨y, y'⟩ ≥ 16`, above every threshold — so removals
 are never shared and the count is `196 560 + τ(k) + 2·(class heads) + 3·(free heads)`:
-`1458 + 0` heads in dimension 26 (its free heads are given up for the second layer, below) and `2095 + 164` in dimension 27, the three item types having been optimised together rather than in sequence (B. Lindow); choosing them one after another gives `2133 + 129`.
+`1458 + 0` heads in dimension 26 (its free heads are given up for the second layer, below) and `2090 + 168` in dimension 27, the three item types having been optimised together rather than in sequence (B. Lindow); choosing them one after another gives `2133 + 129`.
 
 **The triangle.** Three norm-6 vectors with `v₁ + v₂ + v₃ = 0`, pairwise at `−3`, carry
 1656 class heads over three disjoint blocks `Σ(vᵢ) = {u : ⟨u, vᵢ⟩ = −3}` of 552; on one side
@@ -137,7 +137,13 @@ Joint work in progress with H. Cohn and B. Lindow (dimensions 25–31). The temp
 equator, caps on triangles of directions, an axis polytope — and the idea of lifting the block
 `Σ(v)` above a norm-6 direction are Cohn's; the 24-cell of leans is Lindow's; the exact
 reduction to sides, the involution, the side-as-a-variable search and the rotated axis are new
-here. The full account is section 8 of the note *Kissing configurations in dimensions 25, 26
+here. **The dimension-27 configuration shipped in `data/` is B. Lindow's**, contributed
+2026-09-21 and adopted here on 2026-09-27: 2090 class heads, 168 free heads and a 310-head
+second layer, found by letting all three item types move together in one exact 0-1 programme
+with weights 2, 3 and 1 instead of in sequence. It raised 201 557 to 201 566. The artefact as
+sent, with its own verifier and a second, independently written one, is kept at
+[`contributed/dim27-joint-optimised-two-layer`](../../../contributed/dim27-joint-optimised-two-layer/);
+`verify27.py` here is unmodified and verifies it. The full account is section 8 of the note *Kissing configurations in dimensions 25, 26
 and 27* (internal to the collaboration), whose `factcheck.py` and `formulas.py` re-derive every
 figure and formula in it. What the analysis forbids: a side is a code at cosine ≤ 1/4 in ℝ²⁴,
 so at most 1228 heads, and its free heads at most 280, which caps this template at 202 038

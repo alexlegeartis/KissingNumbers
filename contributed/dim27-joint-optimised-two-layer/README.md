@@ -1,8 +1,14 @@
 # Dimension 27: the two-layer configuration, jointly re-optimised
 
 **τ(27) ≥ 201 566**, against the **201 509** of [`verifications/improved/dim26-27-iota-triangles`](../../verifications/improved/dim26-27-iota-triangles/)
-at commit `c349d56`. An improvement of **+57**, by optimisation alone: the construction, and every
-mechanism in it, is that package's.
+at commit `c349d56`, the commit this was branched from. An improvement of **+57** over that
+commit, by optimisation alone: the construction, and every mechanism in it, is that package's.
+
+> **Adopted 2026-09-27.** The package had already moved to **201 557** before this arrived
+> (`bfc2854`, the second layer re-solved to 303), so the gain over the record it actually
+> superseded is **+9**, not +57. This directory is kept as sent, as the provenance of the
+> artefact; its four data files have been copied into `dim26-27-iota-triangles/data/`, and the
+> claim there is now 201 566, verified by that package's own unmodified `verify27.py`.
 
 ```
 pip install -r requirements.txt
