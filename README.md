@@ -36,8 +36,10 @@ The comparison column records the value used when each result was obtained.
 **Our gain** compares this work with the recorded comparison. **Later gain** compares
 a superseding SOTA with our retained result. Gains below 2x are shown as percentage
 increases; gains of 2x or more are shown as multipliers. Small percentages retain
-enough digits to show improvements of only a few points. Short method links lead
-to the verification packages; the full construction notes are expandable below.
+enough digits to show improvements of only a few points. **Our method** links to
+our verification package. **Superseding method** names the method behind the displayed
+larger SOTA and links to its repository or article. Full construction notes are
+expandable below.
 The **SOTA value** column gives the larger current result
 where ours has been surpassed, and **SOTA** where our value remains best in the
 reviewed sources (including ties). A larger SOTA value marks a superseded result;
@@ -49,67 +51,67 @@ The status notes use [Cohn's live leaderboard](https://cohn.mit.edu/kissing-numb
 retrieved **23 October 2026**. Its 41–46D entries agree with the October comparison
 values below; its 18D entry is our 8 358-point result, credited to this repository.
 
-| dim | recorded comparison | **this work** | SOTA value | our gain | later gain | SOTA period | method |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 18 | 7 654 | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) |
-| 25 | 197 056 | **197 579** | 197 583 | +0.27% | +0.002% | 2026-08-30 to 2026-09-28 | [Leech heads](verifications/improved/dim25-lens-heads/) |
-| 26 | 198 550 | **199 806** | 199 868 | +0.63% | +0.031% | 2026-09-08 to 2026-10-05 | [Coset triangles](verifications/improved/dim26-27-iota-triangles/) |
-| 27 | 200 044 | **201 566** | 201 589 | +0.76% | +0.011% | 2026-08-30 to 2026-09-28 | [Coset triangles](verifications/improved/dim26-27-iota-triangles/) |
-| 28 | 204 520 | **204 896** | 205 172 | +0.18% | +0.13% | 2026-09-16 to 2026-10-10 | [Frame layer](verifications/improved/dim28-norm8-frame-layer/) |
-| 29 | 209 496 | **209 968** | 210 495 | +0.23% | +0.25% | 2026-09-16 to 2026-10-05 | [Frame layer](verifications/improved/dim29-30-frame-layer/) |
-| 30 | 220 440 | **221 012** | 222 073 | +0.26% | +0.48% | 2026-09-16 to 2026-10-10 | [Frame layer](verifications/improved/dim29-30-frame-layer/) |
-| 31 | 238 350 | **238 662** | 241 079 | +0.13% | +1% | 2026-09-16 to 2026-10-05 | [Frame layer](verifications/improved/dim31-frame-layer/) |
-| 38 | 566 652 | **591 612** | 605 322 | +4.4% | +2.3% | 2026-08-30 to 2026-09-28 | [Leech caps](verifications/improved/dim38-leech-large-codimension/) |
-| 39 | 755 988 | **756 116** | 768 916 | +0.017% | +1.7% | 2026-08-30 to 2026-09-28 | [ERS](verifications/improved/dim39-ers-constant-weight/) |
-| 41 | 1 324 472 | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) |
-| 42 | 1 792 386 | **1 991 445** | **SOTA** | +11% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) |
-| 43 | 2 553 792 | **2 911 990*** | **SOTA*** | +14% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) |
-| 44 | 4 153 600 | **4 939 281** | **SOTA** | +19% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) |
-| 45 | 7 380 090 | **7 650 601** | **SOTA** | +3.7% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) |
-| 46 | 12 309 600 | **13 387 797** | **SOTA** | +8.8% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) |
-| 49 | 52 416 002 | **52 430 140** | 52 430 156 | +0.027% | +0.000031% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) |
-| 50 | 52 416 006 | **52 458 418** | 52 458 468 | +0.081% | +0.000095% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) |
-| 51 | 52 416 012 | **52 500 816** | 52 500 930 | +0.16% | +0.00022% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) |
-| 52 | 52 416 024 | **52 585 516** | 52 585 772 | +0.32% | +0.00049% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) |
-| 53 | 52 416 040 | **52 698 222** | 52 698 696 | +0.54% | +0.0009% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) |
-| 54 | 52 416 072 | **52 922 906** | 52 923 774 | +0.97% | +0.0016% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) |
-| 55 | 52 416 126 | **53 299 730** | 53 301 140 | +1.7% | +0.0026% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) |
-| 56 | 52 416 240 | **54 085 392** | **SOTA** | +3.2% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) |
-| 57 | 52 416 306 | **54 534 176** | **SOTA** | +4% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) |
-| 58 | 52 416 510 | **55 893 422** | **SOTA** | +6.6% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) |
-| 59 | 52 416 604 | **56 505 668** | **SOTA** | +7.8% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) |
-| 60 | 52 416 841 | **57 477 123** | **SOTA** | +9.7% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) |
-| 61 | 52 417 154 | **59 898 694** | **SOTA** | +14% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) |
-| 62 | 52 417 932 | **71 310 732** | **SOTA** | +36% | — | since 2026-08-30 | [ERS](verifications/improved/dim62-63-ers-chain/) |
-| 63 | 52 418 564 | **138 419 844** | **SOTA** | 2.64x | — | since 2026-08-30 | [ERS](verifications/improved/dim62-63-ers-chain/) |
-| 68 | 331 737 984 | **361 275 480** | **SOTA** | +8.9% | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim68-69-gamma72-cross-sections/) |
-| 69 | 331 737 984 | **627 822 180** | **SOTA** | +89% | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim68-69-gamma72-cross-sections/) |
-| 70 | 331 737 984 | **1 249 778 250** | **SOTA** | 3.77x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) |
-| 71 | 331 737 984 | **2 603 658 750** | **SOTA** | 7.85x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) |
-| 73 | 6 218 175 602 | **6 218 179 814** | **SOTA** | +0.000068% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 74 | 6 218 175 606 | **6 218 192 454** | **SOTA** | +0.00027% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 75 | 6 218 175 612 | **6 218 209 308** | **SOTA** | +0.00054% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 76 | 6 218 175 624 | **6 218 243 016** | **SOTA** | +0.0011% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 77 | 6 218 175 640 | **6 218 285 152** | **SOTA** | +0.0018% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 78 | 6 218 175 672 | **6 218 377 840** | **SOTA** | +0.0033% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 79 | 6 218 175 726 | **6 218 529 454** | **SOTA** | +0.0057% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 80 | 6 218 175 840 | **6 218 849 228** | **SOTA** | +0.011% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 81 | 6 218 175 906 | **6 219 034 270** | **SOTA** | +0.014% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 82 | 6 218 176 110 | **6 219 605 578** | **SOTA** | +0.023% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 83 | 6 218 176 204 | **6 219 621 690** | **SOTA** | +0.023% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 84 | 6 218 176 441 | **6 220 293 304** | **SOTA** | +0.034% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 85 | 6 218 176 754 | **6 220 745 414** | **SOTA** | +0.041% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 86 | 6 218 177 532 | **6 223 567 844** | **SOTA** | +0.087% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 87 | 6 218 178 164 | **6 224 703 598** | **SOTA** | +0.1% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 88 | 6 218 179 920 | **6 230 206 492** | **SOTA** | +0.19% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 89 | 6 218 181 330 | **6 233 054 848** | **SOTA** | +0.24% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 90 | 6 218 183 254 | **6 238 744 788** | **SOTA** | +0.33% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 91 | 6 218 187 548 | **6 247 801 034** | **SOTA** | +0.48% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 92 | 6 218 195 048 | **6 266 405 667** | **SOTA** | +0.78% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 93 | 6 218 205 368 | **6 294 850 360** | **SOTA** | +1.2% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 94 | 6 218 225 496 | **6 355 739 600** | **SOTA** | +2.2% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 95 | 6 218 268 750 | **6 473 065 046** | **SOTA** | +4.1% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) |
-| 96 | 6 218 372 160 | **12 886 999 232** | **SOTA** | 2.07x | — | since 2026-08-30 | [ERS](verifications/closed/dim96-ers-takeover/) |
+| dim | recorded comparison | **this work** | SOTA value | our gain | later gain | SOTA period | our method | superseding method |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 18 | 7 654 | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
+| 25 | 197 056 | **197 579** | 197 583 | +0.27% | +0.002% | 2026-08-30 to 2026-09-28 | [Leech heads](verifications/improved/dim25-lens-heads/) | [Heads + motion](https://github.com/k-nic/kissing_d25-31) |
+| 26 | 198 550 | **199 806** | 199 868 | +0.63% | +0.031% | 2026-09-08 to 2026-10-05 | [Coset triangles](verifications/improved/dim26-27-iota-triangles/) | [Caps + free heads](https://github.com/k-nic/kissing_d25-31) |
+| 27 | 200 044 | **201 566** | 201 589 | +0.76% | +0.011% | 2026-08-30 to 2026-09-28 | [Coset triangles](verifications/improved/dim26-27-iota-triangles/) | [Cap colouring](https://github.com/k-nic/kissing_d25-31) |
+| 28 | 204 520 | **204 896** | 205 172 | +0.18% | +0.13% | 2026-09-16 to 2026-10-10 | [Frame layer](verifications/improved/dim28-norm8-frame-layer/) | [Leech lift](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
+| 29 | 209 496 | **209 968** | 210 495 | +0.23% | +0.25% | 2026-09-16 to 2026-10-05 | [Frame layer](verifications/improved/dim29-30-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
+| 30 | 220 440 | **221 012** | 222 073 | +0.26% | +0.48% | 2026-09-16 to 2026-10-10 | [Frame layer](verifications/improved/dim29-30-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
+| 31 | 238 350 | **238 662** | 241 079 | +0.13% | +1% | 2026-09-16 to 2026-10-05 | [Frame layer](verifications/improved/dim31-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
+| 38 | 566 652 | **591 612** | 605 322 | +4.4% | +2.3% | 2026-08-30 to 2026-09-28 | [Leech caps](verifications/improved/dim38-leech-large-codimension/) | [Equator extension](https://github.com/QH-Lin/kissing-numbers-33-39) |
+| 39 | 755 988 | **756 116** | 768 916 | +0.017% | +1.7% | 2026-08-30 to 2026-09-28 | [ERS](verifications/improved/dim39-ers-constant-weight/) | [ERS + supports](https://github.com/QH-Lin/kissing-numbers-33-39) |
+| 41 | 1 324 472 | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 42 | 1 792 386 | **1 991 445** | **SOTA** | +11% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 43 | 2 553 792 | **2 911 990*** | **SOTA*** | +14% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 44 | 4 153 600 | **4 939 281** | **SOTA** | +19% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 45 | 7 380 090 | **7 650 601** | **SOTA** | +3.7% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 46 | 12 309 600 | **13 387 797** | **SOTA** | +8.8% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 49 | 52 416 002 | **52 430 140** | 52 430 156 | +0.027% | +0.000031% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | [7077-line lift](https://arxiv.org/html/2609.35051v1#S8.SS5) |
+| 50 | 52 416 006 | **52 458 418** | 52 458 468 | +0.081% | +0.000095% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | [7077-line lift](https://arxiv.org/html/2609.35051v1#S8.SS5) |
+| 51 | 52 416 012 | **52 500 816** | 52 500 930 | +0.16% | +0.00022% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | [7077-line lift](https://arxiv.org/html/2609.35051v1#S8.SS5) |
+| 52 | 52 416 024 | **52 585 516** | 52 585 772 | +0.32% | +0.00049% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | [7077-line lift](https://arxiv.org/html/2609.35051v1#S8.SS5) |
+| 53 | 52 416 040 | **52 698 222** | 52 698 696 | +0.54% | +0.0009% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | [7077-line lift](https://arxiv.org/html/2609.35051v1#S8.SS5) |
+| 54 | 52 416 072 | **52 922 906** | 52 923 774 | +0.97% | +0.0016% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | [7077-line lift](https://arxiv.org/html/2609.35051v1#S8.SS5) |
+| 55 | 52 416 126 | **53 299 730** | 53 301 140 | +1.7% | +0.0026% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | [7077-line lift](https://arxiv.org/html/2609.35051v1#S8.SS5) |
+| 56 | 52 416 240 | **54 085 392** | **SOTA** | +3.2% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | — |
+| 57 | 52 416 306 | **54 534 176** | **SOTA** | +4% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | — |
+| 58 | 52 416 510 | **55 893 422** | **SOTA** | +6.6% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | — |
+| 59 | 52 416 604 | **56 505 668** | **SOTA** | +7.8% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | — |
+| 60 | 52 416 841 | **57 477 123** | **SOTA** | +9.7% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | — |
+| 61 | 52 417 154 | **59 898 694** | **SOTA** | +14% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | — |
+| 62 | 52 417 932 | **71 310 732** | **SOTA** | +36% | — | since 2026-08-30 | [ERS](verifications/improved/dim62-63-ers-chain/) | — |
+| 63 | 52 418 564 | **138 419 844** | **SOTA** | 2.64x | — | since 2026-08-30 | [ERS](verifications/improved/dim62-63-ers-chain/) | — |
+| 68 | 331 737 984 | **361 275 480** | **SOTA** | +8.9% | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim68-69-gamma72-cross-sections/) | — |
+| 69 | 331 737 984 | **627 822 180** | **SOTA** | +89% | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim68-69-gamma72-cross-sections/) | — |
+| 70 | 331 737 984 | **1 249 778 250** | **SOTA** | 3.77x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
+| 71 | 331 737 984 | **2 603 658 750** | **SOTA** | 7.85x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
+| 73 | 6 218 175 602 | **6 218 179 814** | **SOTA** | +0.000068% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 74 | 6 218 175 606 | **6 218 192 454** | **SOTA** | +0.00027% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 75 | 6 218 175 612 | **6 218 209 308** | **SOTA** | +0.00054% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 76 | 6 218 175 624 | **6 218 243 016** | **SOTA** | +0.0011% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 77 | 6 218 175 640 | **6 218 285 152** | **SOTA** | +0.0018% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 78 | 6 218 175 672 | **6 218 377 840** | **SOTA** | +0.0033% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 79 | 6 218 175 726 | **6 218 529 454** | **SOTA** | +0.0057% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 80 | 6 218 175 840 | **6 218 849 228** | **SOTA** | +0.011% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 81 | 6 218 175 906 | **6 219 034 270** | **SOTA** | +0.014% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 82 | 6 218 176 110 | **6 219 605 578** | **SOTA** | +0.023% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 83 | 6 218 176 204 | **6 219 621 690** | **SOTA** | +0.023% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 84 | 6 218 176 441 | **6 220 293 304** | **SOTA** | +0.034% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 85 | 6 218 176 754 | **6 220 745 414** | **SOTA** | +0.041% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 86 | 6 218 177 532 | **6 223 567 844** | **SOTA** | +0.087% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 87 | 6 218 178 164 | **6 224 703 598** | **SOTA** | +0.1% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 88 | 6 218 179 920 | **6 230 206 492** | **SOTA** | +0.19% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 89 | 6 218 181 330 | **6 233 054 848** | **SOTA** | +0.24% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 90 | 6 218 183 254 | **6 238 744 788** | **SOTA** | +0.33% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 91 | 6 218 187 548 | **6 247 801 034** | **SOTA** | +0.48% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 92 | 6 218 195 048 | **6 266 405 667** | **SOTA** | +0.78% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 93 | 6 218 205 368 | **6 294 850 360** | **SOTA** | +1.2% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 94 | 6 218 225 496 | **6 355 739 600** | **SOTA** | +2.2% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 95 | 6 218 268 750 | **6 473 065 046** | **SOTA** | +4.1% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 96 | 6 218 372 160 | **12 886 999 232** | **SOTA** | 2.07x | — | since 2026-08-30 | [ERS](verifications/closed/dim96-ers-takeover/) | — |
 
 
 The historical SOTA period covers this project's run of published records in each
@@ -284,22 +286,32 @@ comparison is given separately by its source.
 
 | dim | our retained result | later result | source |
 |---|---:|---:|---|
-| 25 | 197 579 | 197 583 | Cohn, 23 October |
-| 26 | 199 806 | 199 868 | Cohn, 23 October |
-| 27 | 201 566 | 201 589 | Cohn, 23 October |
-| 28 | 204 896 | 205 172 | Cohn, 23 October |
-| 29 | 209 968 | 210 495 | Cohn, 23 October |
-| 30 | 221 012 | 222 073 | Cohn, 23 October |
-| 31 | 238 662 | 241 079 | Cohn, 23 October |
-| 38 | 591 612 | 605 322 | Cohn, 23 October |
-| 39 | 756 116 | 768 916 | Cohn, 23 October |
-| 49 | 52 430 140 | 52 430 156 | Yang et al., Table 1 |
-| 50 | 52 458 418 | 52 458 468 | Yang et al., Table 1 |
-| 51 | 52 500 816 | 52 500 930 | Yang et al., Table 1 |
-| 52 | 52 585 516 | 52 585 772 | Yang et al., Table 1 |
-| 53 | 52 698 222 | 52 698 696 | Yang et al., Table 1 |
-| 54 | 52 922 906 | 52 923 774 | Yang et al., Table 1 |
-| 55 | 53 299 730 | 53 301 140 | Yang et al., Table 1 |
+| 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) |
+| 26 | 199 806 | 199 868 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) |
+| 27 | 201 566 | 201 589 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) |
+| 28 | 204 896 | 205 172 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
+| 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
+| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
+| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
+| 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) |
+| 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) |
+| 49 | 52 430 140 | 52 430 156 | [Yang et al., §8.5](https://arxiv.org/html/2609.35051v1#S8.SS5) |
+| 50 | 52 458 418 | 52 458 468 | [Yang et al., §8.5](https://arxiv.org/html/2609.35051v1#S8.SS5) |
+| 51 | 52 500 816 | 52 500 930 | [Yang et al., §8.5](https://arxiv.org/html/2609.35051v1#S8.SS5) |
+| 52 | 52 585 516 | 52 585 772 | [Yang et al., §8.5](https://arxiv.org/html/2609.35051v1#S8.SS5) |
+| 53 | 52 698 222 | 52 698 696 | [Yang et al., §8.5](https://arxiv.org/html/2609.35051v1#S8.SS5) |
+| 54 | 52 922 906 | 52 923 774 | [Yang et al., §8.5](https://arxiv.org/html/2609.35051v1#S8.SS5) |
+| 55 | 53 299 730 | 53 301 140 | [Yang et al., §8.5](https://arxiv.org/html/2609.35051v1#S8.SS5) |
+
+The linked sources give the construction behind each displayed later result:
+Takhanov–Yun use new heads with coordinated bulk motion in 25D, a deformed second
+cap layer with free heads in 26D, and graph colouring for a larger second cap layer
+in 27D. K. Li uses lifted 528-vector Leech blocks with auxiliary layer points in
+28–31D. Q. Lin adds 6855 equatorial lines to our 38D base and uses a larger
+weight-eight support code in the 39D ERS construction. Yang et al. enlarge the
+P48 mother class from 7069 to 7077 lines and select its isometric images for
+49–55D. These are the methods for the latest values above; the earlier historical
+periods end at the first superseding publication.
 
 These dated sources determine the supersession notes; a new global record count
 is not inferred from the repository's older comparison cache.
