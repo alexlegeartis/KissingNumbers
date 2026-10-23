@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 67 scripts, about 40 minutes measured
-    python run_all.py --full       # 83 scripts, budget about 9 hours
+    python run_all.py              # 68 scripts, about 40 minutes plus the new head replay
+    python run_all.py --full       # 86 scripts, budget about 9 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
+    python run_all.py --skip-paper --repository-only # leave the manuscript snapshot alone
 
 --changed.  A verification that re-runs unchanged work is mostly a waste of an hour, so each
 job records what it read and the digest of every one of those files, in .run_all_cache.json,
@@ -51,7 +52,8 @@ Nothing here re-proves anything that the individual scripts do not -- it is a co
 and the place to look when something breaks after an edit.
 
 Requirements: Python 3.8+, numpy and scipy for the verifications, and sympy for the
-paper's formula check.  Nothing else: OR-Tools is imported only by CP-SAT models that are not
+paper's formula check. The optional older population replay additionally needs
+python-flint and a C++17 g++ compiler. OR-Tools is imported only by CP-SAT models that are not
 run from here -- the retired ones kept for the record, and
 verifications/improved/dim73-95-gamma72-caps/scripts/k11_optimal.py, which settles dimension
 83's partition as exactly optimal rather than merely best-found.  A job that cannot import one of
@@ -97,7 +99,7 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
-    ("audit: all 53 claims, mutual and external consistency",
+    ("audit: all 58 claims, mutual and external consistency",
      HERE, ['audit.py'], 0.5, True),
     ("common: extremal theta series and one-point distributions",
      os.path.join(HERE, 'common'), ['theta.py'], 0.1, True),
@@ -161,6 +163,14 @@ JOBS = [
     ("dims 38, 39: the Edel-Rains-Sloane chain and its codes",
      os.path.join(V, 'improved', 'dim39-ers-constant-weight'),
      ['scripts/verify.py'], 0.2, True),
+    ("p48-heads: dims 41, 42, 44-46, exact consistency with inherited populations",
+     os.path.join(V, 'improved', 'dim41-46-p48-heads'), ['verify.py'], 0.5, True),
+    ("p48-heads: older 41/42/44 population certificate, fresh replay in a temporary copy",
+     os.path.join(V, 'improved', 'dim41-46-p48-heads'),
+     ['verify.py', '--replay-populations'], 20.0, False),
+    ("p48-heads: recovered 43D seed, fresh populations and exact angles (2878155 points)",
+     os.path.join(V, 'improved', 'dim41-46-p48-heads'),
+     ['certify43.py'], 20.0, False),
     ("dims 46, 47: cross-sections of P_48, recovered not claimed",
      os.path.join(V, 'recovered', 'dim46-47-p48-cross-sections'), ['derive.py'], 0.1, True),
     ("dims 49-63: the P_48 lattice, class and arithmetic",
@@ -316,12 +326,13 @@ JOBS = [
 # repository owns: rename ers_exposure.py, leave an importer behind, and the job reported
 # SKIP inside a run that reported 0 FAILED.  Name the module and check it against a list.
 #
-# sympy is the whole list, because it is the only one any registered job imports -- paper/
-# formulas.py, in the fast set.  The repository does use ortools, cvxpy, torch and triton,
+# sympy is used by paper/formulas.py in the fast set. python-flint is needed only
+# by the optional original population replay in the full set. The repository also
+# uses ortools, cvxpy, torch and triton,
 # but only in scripts nothing here runs: the retired CP-SAT models and the GPU builders.
 # Adding a name that no job can raise would read as coverage without being it, so a name
 # belongs here when a job that needs it is registered, and not before.
-OPTIONAL = ('sympy',)
+OPTIONAL = ('sympy', 'flint')
 
 
 def _absent_optional(out):
@@ -521,6 +532,11 @@ def main():
             return 2
         only = sys.argv[i + 1].lower()
     jobs = [j for j in JOBS if j[4] or full]
+    if '--skip-paper' in sys.argv:
+        jobs = [j for j in jobs if not j[0].startswith('paper:')]
+    if '--repository-only' in sys.argv:
+        jobs = [(lab, directory, argv + ['--repository-only'] if argv == ['audit.py'] else argv,
+                 minutes, fast) for lab, directory, argv, minutes, fast in jobs]
     if only:
         jobs = [j for j in jobs if only in j[0].lower() or only in ' '.join(j[2]).lower()]
         if not jobs:

@@ -4,6 +4,7 @@
     python update.py            # the fast path, about 20 minutes
     python update.py --full     # also the slow verifications, about two hours
     python update.py --check    # change nothing; just report whether it is all consistent
+    python update.py --skip-paper --repository-only # maintain constructions without the paper
 
 WHAT IT DOES, IN ORDER
 
@@ -24,7 +25,11 @@ diverged, and step 3 would paper over it.
 
 HOW TO IMPROVE A BOUND.  RESULTS.md's status column says what would have to change:
 
-    classes    40 of the 53, dimensions 28, 29, 30, 31, 49-61 and 73-95.  Find a better family
+    heads      dimensions 41, 42, 44, 45 and 46. Joint family/head searches and partial
+               families remain open. The latest consistency checks inherit body populations;
+               43D's larger writeup total is excluded until its certificate is recovered.
+               See verifications/improved/dim41-46-p48-heads/README.md.
+    classes    40 of the 58, dimensions 28, 29, 30, 31, 49-61 and 73-95.  Find a better family
                of pairwise-disjoint classes and they all improve together (49-61, 73-95);
                dimensions 28, 29 and 30 carry the norm-8 FRAME layer, which is at its own
                ceiling at 96k points -- every vector of a Leech frame on every direction of a
@@ -80,8 +85,11 @@ PAPER_DIR = os.path.join(HERE, 'paper')
 V = os.path.join(HERE, 'verifications', 'improved')
 FULL = '--full' in sys.argv
 CHECK = '--check' in sys.argv
+SKIP_PAPER = '--skip-paper' in sys.argv
+AUDIT_ARGS = ['--repository-only'] if '--repository-only' in sys.argv else []
 
 DRIVERS = [
+    ('dims 41, 42, 44-46', os.path.join(V, 'dim41-46-p48-heads'), 'final.py'),
     ('dims 49-63', os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
     ('dims 73-80', os.path.join(V, 'dim73-95-gamma72-caps'), 'final73-80.py'),
     ('dims 81-95', os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py'),
@@ -119,16 +127,16 @@ for label, cwd, script in DRIVERS:
 
 print()
 print("2. audit: recompute every claim and cross-check RESULTS.md")
-r = run('audit.py', HERE, ['audit.py'])
+r = run('audit.py', HERE, ['audit.py'] + AUDIT_ARGS)
 if r is not None and r.returncode == 0:
     for l in r.stdout.split('\n'):
-        if 'dims ' in l and any(s in l for s in ('classes', 'exhausted', 'external', 'lp-exact')):
+        if 'dims ' in l and any(s in l for s in ('classes', 'exhausted', 'external', 'lp-exact', 'heads')):
             print("     %s" % l.strip())
 
 if not CHECK:
     print()
     print("3. regenerate RESULTS.md")
-    run('audit.py --write-results', HERE, ['audit.py', '--write-results'])
+    run('audit.py --write-results', HERE, ['audit.py', '--write-results'] + AUDIT_ARGS)
 
     print()
     print("4. package README tables")
@@ -141,19 +149,27 @@ if not CHECK:
     # The paper's PROSE and the addends of its count identities still have no generator, and
     # its checkers run in step 6 with the rest of run_all.py; only the bounds are regenerated
     # here.  Rebuild the PDF by hand afterwards if a bound moved -- see paper/README.md.
-    run('mkvalues.py', PAPER_DIR, ['mkvalues.py'], optional=True)
+    if SKIP_PAPER:
+        print('  skipped (--skip-paper): the manuscript remains its earlier snapshot')
+    else:
+        run('mkvalues.py', PAPER_DIR, ['mkvalues.py'], optional=True)
 
     print()
     print("6. install a finished GPU run, if one is waiting")
-    # This step installs a GPU class family.
-    run('propagate.py', os.path.join(ROOT, 'gpu'), ['propagate.py'], optional=True)
+    # The workspace helper also rewrites manuscript tables, so skipping only
+    # mkvalues.py would not keep the paper unchanged.
+    if SKIP_PAPER:
+        print('  skipped (--skip-paper): propagate.py also rewrites manuscript tables')
+    else:
+        run('propagate.py', os.path.join(ROOT, 'gpu'), ['propagate.py'], optional=True)
 else:
     print()
     print("3-5 skipped (--check)")
 
 print()
 print("6. verifications%s" % (" (--full)" if FULL else ""))
-run('run_all.py', HERE, ['run_all.py'] + (['--full'] if FULL else []))
+run('run_all.py', HERE, ['run_all.py'] + (['--full'] if FULL else []) + AUDIT_ARGS +
+    (['--skip-paper'] if SKIP_PAPER else []))
 
 print()
 print("=" * 92)

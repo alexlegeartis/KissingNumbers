@@ -1,7 +1,11 @@
 # RECOVERED — dimensions 46 and 47, cross-sections of the extremal 48-dimensional lattice
 
+The values in this package remain historical recovered cross-sections. The
+October 2026 [family/head package](../../improved/dim41-46-p48-heads/) supplies a
+larger 13,387,797-point construction in 46D. The 47D value is unchanged.
+
 **Nothing here is claimed.** Both values were in the literature before this project reached
-them, and neither is counted among the 53 in [`../../../RESULTS.md`](../../../RESULTS.md)
+them, and neither is counted among the 58 in [`../../../RESULTS.md`](../../../RESULTS.md)
 or presented as a result in the paper.
 
 | dim | Cohn's table | value | who has it |

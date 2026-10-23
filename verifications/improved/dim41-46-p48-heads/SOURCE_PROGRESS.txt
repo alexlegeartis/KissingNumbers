@@ -1,0 +1,242 @@
+KISSING NUMBERS 41–48 — FIFTH RESEARCH PASS, 2026-10-23
+
+TWO NEW EXTENSIONS
+
+45D: 7,650,585 + 16 = 7,650,601.
+46D: 13,387,770 + 27 = 13,387,797.
+
+These improve our retained working constructions. No existing point is deleted
+or moved. The additional points have zero body coordinates and lie entirely
+in the existing five- or six-dimensional head space.
+
+The new angles pass integer checks, including exact head rank. The inherited
+body populations and all sufficient family-angle inequalities also replay
+successfully. This is not a new ambient enumeration of the body shells, and
+it is not a claim that all literature has been independently audited. Full
+verification and repository integration remain deferred as requested.
+
+CURRENT LEDGER
+
+ dimension     retained total       change this pass
+    41          1,460,036                  0
+    42          1,991,445                  0
+    43          2,911,990 *                0
+    44          4,939,281                  0
+    45          7,650,601                +16
+    46         13,387,797                +27
+    47         23,766,960                  0
+    48         52,416,000                  0
+
+* The larger 43D total remains supported by the earlier writeup; its later
+certificate is missing. The recovered older exact certificate is 2,878,155.
+47D and 48D still match the published constructions. No new gain is claimed
+there, or in 41–44D, from this pass.
+
+A CLEAN DESCRIPTION OF THE NEW POINTS
+
+Let a retained family have body squared norm r/3, head z/(D sqrt(3)), and
+population w. Its normalized head contribution is z/sqrt(r D^2 + ||z||^2).
+For each integer vector a in pure_directions, insert the point with zero body
+coordinates and normalized head a/||a||. Its cross-angle condition is exactly
+
+  2 a.z <= sqrt(||a||^2 (r D^2 + ||z||^2)).
+
+When the left side is positive, the verifier squares this inequality using
+integers. It handles pure/pure angles the same way. The eight-coordinate head
+vectors lie in the original head span, so they do not increase the dimension.
+
+The preferred 45D extension has 16 directions, all of squared length 80.
+Their distinct normalized inner products are -3/5 and 1/5. The maximum
+positive squared inner product with the retained configuration is 8/45.
+
+The preferred 46D extension has 27 directions, all of squared length 48.
+Their distinct normalized inner products are -1/2 and 1/4. The maximum
+positive squared inner product with the retained configuration is 1/6.
+
+Both cross bounds are strictly below 1/4. These extensions have comfortable
+angular clearance; they are not floating-point near-misses.
+
+Preferred files:
+  research5/candidate_45_pure_heads_canonical.npz
+  research5/candidate_46_pure_heads_canonical.npz
+  research5/check_pure_extensions.py
+  research5/canonical_pure_heads.py
+
+Small standalone download:
+  pure_head_extensions_45_46_2026-10-23.zip
+
+Unpack it and run python verify.py. Dependencies are NumPy and python-flint;
+no optimizer is needed. It includes the retained families, new directions,
+inherited discriminant/population tables, and verification output.
+
+HOW THE PURE EXTENSIONS WERE FOUND
+
+pure_heads.py searches normalized rational directions in the existing head
+space. The sampled feasible pools contain 176 directions in 45D and 891 in
+46D. Finite packing solves attain 16 and 27 points. canonical_pure_heads.py
+then selects the deepest feasible directions and produces the simpler codes
+above. The finite optima are not continuous or global upper bounds.
+
+A separate LP-vertex sampler explores nonlattice directions and checks a
+rational projection back into the exact head span. It returned the same counts.
+Trading some complete tiny families for additional pure points also returned
+net gains of 16 and 27, with no further increase. With the larger retained
+44D layers fixed, that sampled pure-direction pool was empty.
+
+THE OUTERMOST FAMILIES REALLY WERE RELEASED
+
+Earlier passes fixed the roughly 116,000-point outer families. This pass made
+those families variables, generated new candidates compatible with the
+remaining core, and solved coupled deletion/replacement neighborhoods.
+The central 1,084,590-point family remained fixed in these runs.
+
+The recorded runs are summarized below. None improved the previous body total.
+  44D: 2,760 recorded solves; up to 6 outer families released;
+       up to 1,247,943 points in a released neighborhood; 2,759 Optimal.
+  45D: 2,742 recorded solves; up to 6 outer families released;
+       up to 1,257,918 points in a released neighborhood; 2,742 Optimal.
+  46D: 3,976 recorded solves; up to 5 outer families released;
+       up to 1,180,518 points in a released neighborhood; 3,976 Optimal.
+
+One 44D solve hit its time limit. Finite solver statuses are not exact rational
+MILP certificates. The 44D/45D pool admits new smaller families whose original
+outer conflict set has size at most three; unions of two neighborhoods can
+release six outers. The 46D high-layer run admits outer/9180-point candidates
+with up to six original outer conflicts, but its smaller-family choices are
+the retained ones. These are substantial new neighborhoods, not exhaustive
+searches over all simultaneous changes.
+
+Files: outer_pool.py, outer_lns.py, their pools and result tables.
+The 46D b66 filename denotes the reduced high-layer pool described above;
+it is not a claim that 66 outer families were released.
+
+PARTIAL FAMILIES: ACTUAL POINT EXCHANGES
+
+The next departure was to split tiny families into individual points.
+For a candidate tiny point x, the known 30,240 shortest dual-body vectors
+identify whether a sharp short difference to a retained larger family actually
+exists. If it does not, the relevant doubled-inner-product bound improves by
+six integer units. Contacts against retained tiny families are calculated
+from their actual coordinates, not the classwise gluing bound.
+
+A refined independent head grid produced these pools of points compatible
+with every retained family of body-radius index r3 >= 12:
+  44D: 50,433 points, including retained tiny points.
+  45D: 157,161 points, including retained tiny points.
+  46D: 438,942 points, including retained tiny points.
+
+None can be added individually while all retained tiny points stay fixed.
+That fact alone does not exclude exchanges. Actual point-conflict searches
+therefore released and reoptimized neighborhoods:
+  44D: 9,463 local solves; net gain 0.
+  45D: 17,518 local solves; net gain 0.
+
+The refined 46D point pool has been built and screened for free additions,
+but its full joint exchange problem has not been optimized. The 45D search
+was time-limited to part of its available neighborhood list. The earlier
+bipartite matching screen is not a global upper bound when mutually
+conflicting new points outnumber old points; the later local solves explicitly
+include new/new conflicts. A small matching deficiency is never reported as
+a construction on its own.
+
+Files: tiny_point_additions.py, tiny_point_exchange.py, tiny_point_lns.py,
+point pools and results. These go beyond the earlier whole-family searches.
+
+NEW 41D BODY MODEL
+
+K41 is the complement of sqrt(3) E7. Its discriminant has 4374 classes.
+A finite convolution of the inherited K40 populations gives every body shell
+through squared norm six. An independent regrouping of the parent minimal
+shell checks the first populations.
+
+There are 126 empty short shells: the gluing estimate 17/6 improves to an
+actual squared body minimum of 29/6. This is a stronger construction metric,
+not itself a kissing-number improvement.
+
+Unions of independently normalized shells, with no additional head, were
+optimized for all 729 norm-six centres. The best reconstructs 1,460,036 in
+41D. The one-head 42D experiments reached 1,989,960, below our retained bound.
+The strongest sampled pool was closed by clique-compressed optimization.
+Pentagonal, square and triangular two-head experiments in 43D were also tried;
+they did not improve the retained 43D figure. Some larger planar pools were
+skipped rather than treated as solved.
+
+Files: body41_geometry.py, body41_spherical.py, body41_line.py,
+body41_line_opt.py, body41_planar.py and their data/results.
+
+NEW 45D BODY MODEL FOR 47–48D
+
+K45 is the complement of sqrt(3) A3. It has 108 discriminant classes. All body
+populations through squared norm six were obtained by enumerating a sufficient
+finite E8 lift ball, then convolving with the K40 table. The ball contains
+2,131,921 vectors; it is reproducible from e8_ball.cpp and is omitted from the
+archive. No empty first shells occur in this model.
+
+For 47D, four-largest-family rhombi and independent placements of the other
+families were explored. Eleven sampled structural models were solved. The
+best body arrangement, followed by a pure-head completion, reconstructs
+23,766,960. It does not improve that number.
+
+The full table also exposes second-shell families: there are 18 possible
+largest-radius classes, rather than just the eight visible in the parent
+minimal shell. However, the necessary pairwise compatibility graph has maximum
+clique size eight, with two maximizing class sets. Thus simply counting all
+18 as simultaneous families is invalid. This check is a necessary obstruction,
+not a full optimization of the new body model.
+
+Files: body45_geometry.py, body45_planar.py, repair_planar_pure.py,
+body45_large_cliques.py and their tables/candidates.
+
+A GLOBAL CEILING FOR ONE OLD 48D SEARCH MODEL
+
+The old K46-plus-two-head complete-family model cannot beat 52,416,000 under
+its squared-norm-at-most-six and gluing-distance rules. This is broader than
+the earlier tests which kept particular largest families fixed.
+
+For any repeated body shell of squared radius R > 3, each normalized copy
+has projection at least sqrt(R/6) on the direction of a fixed body point.
+The pair-angle inequality and the squared norm of the sum give
+
+  multiplicity <= floor(6 / (2R - 6)).
+
+The three available norm-six body shells can contribute at most one family:
+heads must vanish and different centre classes conflict under the model's
+body-distance rule. The largest centre population is 12,309,600. Applying the
+multiplicity bound to all remaining body classes and adding at most six pure
+head points gives exactly 52,416,000, attained by the parent construction.
+
+This is NOT an upper bound on the 48D kissing number. It does not cover partial
+families, different body lattices, larger norms with independently checked
+internal contacts, or arbitrary point configurations. Its practical value is
+to avoid spending more search time on an already bounded model.
+
+File: a2_capacity_ceiling.py / a2_capacity_ceiling.json.
+
+WHAT REMAINS OPEN AND WHERE TO PUSH NEXT
+
+The new +16 and +27 extensions show that the previous searches had not even
+exhausted useful additions to the retained 45D/46D configurations. They are
+modest improvements, not the large jump we are seeking.
+
+The most concrete next structural attack is to split the 9180-point and
+roughly 116,000-point bodies by one extra body coordinate, then allow those
+pieces to move separately. This changes which points must be sacrificed in a
+trade, rather than repeatedly paying for a complete large family. The current
+actual-point machinery implements this only for the tiny bodies.
+
+For 47D/48D, useful further departures include other parent lattices or normal
+embeddings, and cross-shell clusters with actual shared deletion costs. Such
+candidates must be constructed explicitly; neither a class-capacity gap nor a
+matching deficiency is evidence of a larger kissing configuration.
+
+REPLAY AND PACKAGING
+
+Set OPENBLAS_NUM_THREADS=1 for the search programs. They use Python, NumPy,
+SciPy 1.17 (or compatible HiGHS bindings), python-flint and g++.
+The new verify.py download needs only NumPy and python-flint.
+
+The full archive preserves the previous four passes and adds research5.
+Large reproducible conflict caches, temporary clique files, compiler outputs
+and the finite E8 lift-ball binary are omitted. Search inputs, candidate
+coordinates, result tables, logs, source programs and population tables remain.
+No external repository was modified.

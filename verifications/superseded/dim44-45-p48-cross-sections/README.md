@@ -1,5 +1,10 @@
 # WITHDRAWN — dimensions 44 and 45
 
+This package records the earlier withdrawn lattice cross-sections. The
+October 2026 [family/head package](../../improved/dim41-46-p48-heads/) contains
+different constructions with working totals 4,939,281 in 44D and 7,650,601 in
+45D, with their verification scope stated explicitly.
+
 | dim | Gram | this project certified | Sun–Wang | verdict |
 |---|---|---|---|---|
 | 45 | 3A₃ = 3D₃ | 6 687 320 | **6 702 080** (3D₃), and an antipode packing at **7 379 838** | theirs is better |

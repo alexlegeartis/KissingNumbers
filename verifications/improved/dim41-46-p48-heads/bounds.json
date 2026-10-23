@@ -1,0 +1,14 @@
+{
+  "checkpoint_date": "2026-10-23",
+  "population_scope": "inherited tables; no fresh enumeration of the latest body shells",
+  "constructions": [
+    {"dimension": 41, "total": 1460036, "body_points": 1460034, "pure_points": 2, "status": "candidate_supplied", "candidate": "data/candidate_41.npz"},
+    {"dimension": 42, "total": 1991445, "body_points": 1991439, "pure_points": 6, "status": "candidate_supplied", "candidate": "data/candidate_42.npz"},
+    {"dimension": 43, "total": 2911990, "status": "latest_certificate_missing", "older_seed": "data/old43_seed.npz", "older_seed_total": 2878155},
+    {"dimension": 44, "total": 4939281, "body_points": 4939281, "pure_points": 0, "status": "candidate_supplied", "candidate": "data/candidate_44.npz"},
+    {"dimension": 45, "total": 7650601, "body_points": 7650585, "pure_points": 16, "status": "candidate_supplied", "candidate": "data/candidate_45.npz"},
+    {"dimension": 46, "total": 13387797, "body_points": 13387770, "pure_points": 27, "status": "candidate_supplied", "candidate": "data/candidate_46.npz"},
+    {"dimension": 47, "total": 23766960, "status": "published_comparison_only"},
+    {"dimension": 48, "total": 52416000, "status": "published_comparison_only"}
+  ]
+}

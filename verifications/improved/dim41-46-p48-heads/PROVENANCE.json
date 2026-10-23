@@ -1,0 +1,486 @@
+{
+  "checkpoint": "kissing41_48_research_2026-10-22",
+  "report_date": "2026-10-23",
+  "inputs": [
+    {
+      "file": "kissing41_48_progress_2026-10-22.txt",
+      "bytes": 12133,
+      "sha256": "0b617a88beff1c6a036fdaf3859f27e8a00aadf284ed24c6e5cca284fe410708"
+    },
+    {
+      "file": "kissing41_48_research_part1.zip",
+      "bytes": 31207526,
+      "sha256": "02287557b188de4685415fc4c48d73d8dde4f452cdd64f17eb96304da4e51c3b"
+    },
+    {
+      "file": "kissing41_48_research_part2.zip",
+      "bytes": 31208342,
+      "sha256": "5ef6e6f85c299f4bb6e4fd1632cffd660ab596a51efd4829eeb16ba523b3a406"
+    }
+  ],
+  "source_manifest_entries": 819,
+  "source_manifest_entries_matched": 819,
+  "copies": [
+    {
+      "source": "certificate/README.txt",
+      "installed": "population_replay/README.txt",
+      "sha256": "4498f43b1a51ca8387015c2a7521db43d6cf89dca1a21788defb0370bb9fa07a"
+    },
+    {
+      "source": "certificate/certificate_41.npz",
+      "installed": "population_replay/certificate_41.npz",
+      "sha256": "4f5292d3553fae4daa45bf213689c34fadd89cc5f303c8a92b267d208c1862f7"
+    },
+    {
+      "source": "certificate/certificate_42.npz",
+      "installed": "population_replay/certificate_42.npz",
+      "sha256": "f44c2718ee9dbc245be93dcab3a8c7640479abe2555910f4df427322383e1569"
+    },
+    {
+      "source": "certificate/certificate_44.npz",
+      "installed": "data/candidate_44.npz",
+      "sha256": "0e8493c4077d8a1887fa1fa32be5299bc261994943af56f17fff7f35ed1bec32"
+    },
+    {
+      "source": "certificate/certificate_44.npz",
+      "installed": "population_replay/certificate_44.npz",
+      "sha256": "0e8493c4077d8a1887fa1fa32be5299bc261994943af56f17fff7f35ed1bec32"
+    },
+    {
+      "source": "certificate/data/ambient_basis.json",
+      "installed": "population_replay/data/ambient_basis.json",
+      "sha256": "5881f02bf48c859dc2b54f5df76756b84d9546c3892be9be3d9cc9cee5803d06"
+    },
+    {
+      "source": "certificate/data/core_counts.json",
+      "installed": "population_replay/data/core_counts.json",
+      "sha256": "882f945ce8aec46a473da022d792579d1fdb2d50a1baf33a15be31e4b1c80860"
+    },
+    {
+      "source": "certificate/data/dual40_min.npz",
+      "installed": "population_replay/data/dual40_min.npz",
+      "sha256": "443252c18f6fbd6ea82a37aec74f15e6147d7900a115dd9efe54e8b94866bbe2"
+    },
+    {
+      "source": "certificate/data/e8_complement_reduced.npz",
+      "installed": "population_replay/data/e8_complement_reduced.npz",
+      "sha256": "6b50a641abb5bcfcb767266511c4f0cc8e9611cec1521cedeaa57a301ee58849"
+    },
+    {
+      "source": "certificate/data/head_fibres.npz",
+      "installed": "population_replay/data/head_fibres.npz",
+      "sha256": "35594321aa416755bb47b30e414d3b7370f171a2a3482b54942dd0dc81c17b07"
+    },
+    {
+      "source": "certificate/data/norm6_orbits.npz",
+      "installed": "population_replay/data/norm6_orbits.npz",
+      "sha256": "7ed1be4a5eb89fd92c5c4e236e065335e0578dd0d71c9b3433b3f75525a96e2f"
+    },
+    {
+      "source": "certificate/data/norm6_simple_certificate.json",
+      "installed": "population_replay/data/norm6_simple_certificate.json",
+      "sha256": "133850b4b4e336a8559b44e9b671b6db453e063a1422ac16bb8b2558d8b74571"
+    },
+    {
+      "source": "certificate/data/prep_e8.npz",
+      "installed": "population_replay/data/prep_e8.npz",
+      "sha256": "56336f1fa6d38ef64492493c0041e55359a8f25956552a486e39a2761318026f"
+    },
+    {
+      "source": "certificate/exact_count.cpp",
+      "installed": "population_replay/exact_count.cpp",
+      "sha256": "e1ece9e7c94b22c97f181ee19ba9e80f78d414e07eaa9f8af79e67dd31d386b7"
+    },
+    {
+      "source": "certificate/geometry.py",
+      "installed": "population_replay/geometry.py",
+      "sha256": "ba7c922b4c73b563e72f5db930b656464a14a133f8a38795eaa77351391a2e5b"
+    },
+    {
+      "source": "certificate/old_e8_first_shells.py",
+      "installed": "population_replay/old_e8_first_shells.py",
+      "sha256": "44b30fc326bc50be9653206e2e1592c6c6f6bc15a35133f10a1ee5d5fd6529de"
+    },
+    {
+      "source": "certificate/reports/count_1319.json",
+      "installed": "population_replay/reports/count_1319.json",
+      "sha256": "6b519bcb061248b1bc3d030735831fa343b4abb0a611aead714706d3f30231b0"
+    },
+    {
+      "source": "certificate/reports/count_1448.json",
+      "installed": "population_replay/reports/count_1448.json",
+      "sha256": "5794de4b7cff051104413a3e7d1fd8da39641167a78545de288ef61546c1a718"
+    },
+    {
+      "source": "certificate/reports/count_1657.json",
+      "installed": "population_replay/reports/count_1657.json",
+      "sha256": "6b3a47f462493fa0de5a1dfefbbe3912aa412d19c88331e2e4c87bcfcdef2ef9"
+    },
+    {
+      "source": "certificate/reports/count_1761.json",
+      "installed": "population_replay/reports/count_1761.json",
+      "sha256": "175328df82cd562c841ddbcc1c53f95f487462dc94f82dc5f262f88ae7df8d9a"
+    },
+    {
+      "source": "certificate/reports/count_1875.json",
+      "installed": "population_replay/reports/count_1875.json",
+      "sha256": "c5423a6d3b7ad318dea3e319ff6780ec58482c996ce7994023700db9467bfc67"
+    },
+    {
+      "source": "certificate/reports/count_199.json",
+      "installed": "population_replay/reports/count_199.json",
+      "sha256": "2342d81625adccaa789cc745337d66b8fb21b8f574463cc9bc362856532d8f93"
+    },
+    {
+      "source": "certificate/reports/count_2386.json",
+      "installed": "population_replay/reports/count_2386.json",
+      "sha256": "cacb6624a4d3903bc4c1ef4796d1cdb1a70064a5f92b419129d685035c350ce1"
+    },
+    {
+      "source": "certificate/reports/count_2556.json",
+      "installed": "population_replay/reports/count_2556.json",
+      "sha256": "4dfbcbbc533a1b5bb5b933187f6da849690d69353a6189e66ff9a9329750b6a7"
+    },
+    {
+      "source": "certificate/reports/count_2702.json",
+      "installed": "population_replay/reports/count_2702.json",
+      "sha256": "42b59375abc635d88575f39f0ec8df088897641879c73c8ee1953698ff6f0cc0"
+    },
+    {
+      "source": "certificate/reports/count_307.json",
+      "installed": "population_replay/reports/count_307.json",
+      "sha256": "8321a208948f19296f22790ec94cbafc198fd1f702430a0e05540aa71f93db78"
+    },
+    {
+      "source": "certificate/reports/count_3115.json",
+      "installed": "population_replay/reports/count_3115.json",
+      "sha256": "126cb9ea47868c4962767c3a93b59c911529a13709194b56e24776e1f004f06d"
+    },
+    {
+      "source": "certificate/reports/count_3232.json",
+      "installed": "population_replay/reports/count_3232.json",
+      "sha256": "64801ae8405e56a1253233adba53e62d6eed9964e5c9bf94ff62be2e63f3f384"
+    },
+    {
+      "source": "certificate/reports/count_3506.json",
+      "installed": "population_replay/reports/count_3506.json",
+      "sha256": "6280b92a7d17f4daf47c6a47f69bea8d0cda593f944a04eeb578683ac3c8b82a"
+    },
+    {
+      "source": "certificate/reports/count_3635.json",
+      "installed": "population_replay/reports/count_3635.json",
+      "sha256": "8073825b9c3352900a387bf746d4e924bdf0357fe41ab33808e2c0fe2b83003b"
+    },
+    {
+      "source": "certificate/reports/count_3654.json",
+      "installed": "population_replay/reports/count_3654.json",
+      "sha256": "e70235468121ee7835f4984cdcb63cee23823cebf233154f4fb03560d03b820d"
+    },
+    {
+      "source": "certificate/reports/count_4014.json",
+      "installed": "population_replay/reports/count_4014.json",
+      "sha256": "998f00fa4ee85a5e0c2bdbbd3bd2b71e0f64560d56b233172e3317372a481ea1"
+    },
+    {
+      "source": "certificate/reports/count_4235.json",
+      "installed": "population_replay/reports/count_4235.json",
+      "sha256": "5bdb2e553992fd3e0e1ad113333767bffe61d77e2c0700b0116ed69bed661457"
+    },
+    {
+      "source": "certificate/reports/count_4364.json",
+      "installed": "population_replay/reports/count_4364.json",
+      "sha256": "4c858ff343ef88968f1403768d862bc65a8497b93c2c77b659af921418351bd6"
+    },
+    {
+      "source": "certificate/reports/count_4573.json",
+      "installed": "population_replay/reports/count_4573.json",
+      "sha256": "73297e027530537d61590a139cabc6ae5ab318ad31e8ab9b10f12a285ce20956"
+    },
+    {
+      "source": "certificate/reports/count_4743.json",
+      "installed": "population_replay/reports/count_4743.json",
+      "sha256": "bfe5380071d8d34aa26e090a6af6dd139fe0c622f940310806228354d451a459"
+    },
+    {
+      "source": "certificate/reports/count_4889.json",
+      "installed": "population_replay/reports/count_4889.json",
+      "sha256": "33ec9bdc764561ea3fd56d6bcc9536a64e61e495abe72ba418b43d03b3c01673"
+    },
+    {
+      "source": "certificate/reports/count_5249.json",
+      "installed": "population_replay/reports/count_5249.json",
+      "sha256": "12bd1efe19d0bc8c7395908be5a9155f43b7d56db401511fe0d0b72fc461e2cd"
+    },
+    {
+      "source": "certificate/reports/count_5406.json",
+      "installed": "population_replay/reports/count_5406.json",
+      "sha256": "9371cb3a0dbc9945ca7fb2b104ef78bc8c2f3341cc91c09b2c012ba274a3adf3"
+    },
+    {
+      "source": "certificate/reports/count_5520.json",
+      "installed": "population_replay/reports/count_5520.json",
+      "sha256": "d8176d5124e5509cfa567abeb59515a71f2500fa066598dfc85f40792cc62f1c"
+    },
+    {
+      "source": "certificate/reports/count_5618.json",
+      "installed": "population_replay/reports/count_5618.json",
+      "sha256": "28fc5934470123f7461e434c559fa1928d6d4247dd1f39666f3de0c1d678bbf8"
+    },
+    {
+      "source": "certificate/reports/count_577.json",
+      "installed": "population_replay/reports/count_577.json",
+      "sha256": "1acb6bef224d1d147018a09a653a60fbeaca8ead8a1186bf8229c5f7bc91fbaf"
+    },
+    {
+      "source": "certificate/reports/count_6031.json",
+      "installed": "population_replay/reports/count_6031.json",
+      "sha256": "8b5b99479fe492af9023f99cd61a7debae40c2aaf0b1798861706509ebefb95b"
+    },
+    {
+      "source": "certificate/reports/count_6135.json",
+      "installed": "population_replay/reports/count_6135.json",
+      "sha256": "331bff49d9d8b36ddeef611e972ec2bc4c6a9392fc18913deffe19385838f8d2"
+    },
+    {
+      "source": "certificate/reports/count_6249.json",
+      "installed": "population_replay/reports/count_6249.json",
+      "sha256": "e2e46c54b6f58b3635ae8449e95b45f5d04f38bb183bb5dc1a71716685ed2ab2"
+    },
+    {
+      "source": "certificate/reports/count_6400.json",
+      "installed": "population_replay/reports/count_6400.json",
+      "sha256": "e6b4196989153f0a9426f6a5a1432addf0f458e3e256471e3b4f843723a1f26b"
+    },
+    {
+      "source": "certificate/reports/count_928.json",
+      "installed": "population_replay/reports/count_928.json",
+      "sha256": "e4c717c917938e61ad6ad84a9f8c8e0adfcfd2be608ebb4d2cb28260c63a1457"
+    },
+    {
+      "source": "certificate/reports/count_inputs/1319.input",
+      "installed": "population_replay/reports/count_inputs/1319.input",
+      "sha256": "66e2b9c4a4cedd668615437133e37cb12096b6a0ef9c377e1a070b8430df79f8"
+    },
+    {
+      "source": "certificate/reports/count_inputs/1448.input",
+      "installed": "population_replay/reports/count_inputs/1448.input",
+      "sha256": "bc31672f8e3728e1bf145e870a9c9d47663b32303873f77885a3194787ff19e0"
+    },
+    {
+      "source": "certificate/reports/count_inputs/1657.input",
+      "installed": "population_replay/reports/count_inputs/1657.input",
+      "sha256": "9401aa266465b05e3003fde6413da0dce59ff308f660de103b6c5134be3bfd30"
+    },
+    {
+      "source": "certificate/reports/count_inputs/1761.input",
+      "installed": "population_replay/reports/count_inputs/1761.input",
+      "sha256": "eef0ea13b7d2d82fdae92aa0318098c3e6d51a004dad5874e116cc2dd662f9bb"
+    },
+    {
+      "source": "certificate/reports/count_inputs/1875.input",
+      "installed": "population_replay/reports/count_inputs/1875.input",
+      "sha256": "5b36e3c32c3ddabb07cc8b80b4ecd3d09baa3bd92262da7dcf38c06659a731c9"
+    },
+    {
+      "source": "certificate/reports/count_inputs/199.input",
+      "installed": "population_replay/reports/count_inputs/199.input",
+      "sha256": "7620a1909297dfb2294acb3fb1f708a492842080ab65b6e74cbee163ad96ac03"
+    },
+    {
+      "source": "certificate/reports/count_inputs/2386.input",
+      "installed": "population_replay/reports/count_inputs/2386.input",
+      "sha256": "dff61d5cf96c59f071089d8ab5c2acd57fa0d451f8891d8a2473eea2abc1a487"
+    },
+    {
+      "source": "certificate/reports/count_inputs/2556.input",
+      "installed": "population_replay/reports/count_inputs/2556.input",
+      "sha256": "e30669586921600a43247466bb20bb96b0deb1e2d0076b49627887ebd6a000f9"
+    },
+    {
+      "source": "certificate/reports/count_inputs/2702.input",
+      "installed": "population_replay/reports/count_inputs/2702.input",
+      "sha256": "a4412430467f7f13a5b17143cac1857fb7a74f5cc7b235bdd5d342b1a501659e"
+    },
+    {
+      "source": "certificate/reports/count_inputs/3115.input",
+      "installed": "population_replay/reports/count_inputs/3115.input",
+      "sha256": "b993a605c26117c327eedb8fcc596cd97776f232691bb8aac90eca95190b9eb8"
+    },
+    {
+      "source": "certificate/reports/count_inputs/3506.input",
+      "installed": "population_replay/reports/count_inputs/3506.input",
+      "sha256": "634fd46f05473659fa34026d7a93298589202b8d33756a0a03b7c0d302731c8c"
+    },
+    {
+      "source": "certificate/reports/count_inputs/3635.input",
+      "installed": "population_replay/reports/count_inputs/3635.input",
+      "sha256": "6d90ad0569962a012c4b293c2198c3119f24fc6b405557890bc3fa5c30164a8d"
+    },
+    {
+      "source": "certificate/reports/count_inputs/4014.input",
+      "installed": "population_replay/reports/count_inputs/4014.input",
+      "sha256": "c6c9e69e7d7d35b5524769e572b20b5963a2dd047e54d13b32773201f7cdd264"
+    },
+    {
+      "source": "certificate/reports/count_inputs/4235.input",
+      "installed": "population_replay/reports/count_inputs/4235.input",
+      "sha256": "a23eaa725d44a04d69e741b59f0a954bc8faaab3f08fcd0ada2eb4f490094760"
+    },
+    {
+      "source": "certificate/reports/count_inputs/4364.input",
+      "installed": "population_replay/reports/count_inputs/4364.input",
+      "sha256": "a395c55914b5e7f6fed3330dcc293dca4dbb28b28a998acfb43c6c4da8a24e73"
+    },
+    {
+      "source": "certificate/reports/count_inputs/4573.input",
+      "installed": "population_replay/reports/count_inputs/4573.input",
+      "sha256": "f736f6366450691e8af4018ff7a7010ef935d650381374e2f5936e0af65c717f"
+    },
+    {
+      "source": "certificate/reports/count_inputs/4743.input",
+      "installed": "population_replay/reports/count_inputs/4743.input",
+      "sha256": "3fc619a7af69f4359f70119894fb52233a6098e861496a7789664058a67b64cf"
+    },
+    {
+      "source": "certificate/reports/count_inputs/4889.input",
+      "installed": "population_replay/reports/count_inputs/4889.input",
+      "sha256": "33ba80a93c11b3988b52b27e8eb33073b62516721307852f1758a20aeff57956"
+    },
+    {
+      "source": "certificate/reports/count_inputs/5406.input",
+      "installed": "population_replay/reports/count_inputs/5406.input",
+      "sha256": "7c636c991942e54f12e9fd4501ec375ce620834d04e0f551d7038782e7f800b6"
+    },
+    {
+      "source": "certificate/reports/count_inputs/5520.input",
+      "installed": "population_replay/reports/count_inputs/5520.input",
+      "sha256": "55e1bacc18589ee1b13803b1ea8d9cf790b471811b947e92f63b9c5ebfb185c1"
+    },
+    {
+      "source": "certificate/reports/count_inputs/5618.input",
+      "installed": "population_replay/reports/count_inputs/5618.input",
+      "sha256": "8f797cf588a84e303d9b41c662dee4f1a025253f581362c3b3e200a4a7dad714"
+    },
+    {
+      "source": "certificate/reports/count_inputs/6031.input",
+      "installed": "population_replay/reports/count_inputs/6031.input",
+      "sha256": "f2e04b7377809e9bf98fdf3eebd168c26a5a9e89e108e16e968a1d95f0a4e17f"
+    },
+    {
+      "source": "certificate/reports/count_inputs/6135.input",
+      "installed": "population_replay/reports/count_inputs/6135.input",
+      "sha256": "ef03f1933530f11f5a1f3b532620cccb3db6163534ae224cc32f4fa1d225297a"
+    },
+    {
+      "source": "certificate/reports/count_inputs/6249.input",
+      "installed": "population_replay/reports/count_inputs/6249.input",
+      "sha256": "69a56a63c957f2c5c01c5c51ba50bb7ca1b4e5277c573bd09ede3a0934a92160"
+    },
+    {
+      "source": "certificate/reports/count_inputs/928.input",
+      "installed": "population_replay/reports/count_inputs/928.input",
+      "sha256": "68e87e00037736727d0024be9da0f771baa8b96a99b6dba2aa1aec56612cc8a4"
+    },
+    {
+      "source": "certificate/reports/e8_uniform_mass_certificate.json",
+      "installed": "population_replay/reports/e8_uniform_mass_certificate.json",
+      "sha256": "978066581e9b8566fafd2f89954d812b36a91c6569903aeb2ad98ce3b21065cd"
+    },
+    {
+      "source": "certificate/reports/mass_replay.log",
+      "installed": "population_replay/reports/mass_replay.log",
+      "sha256": "978066581e9b8566fafd2f89954d812b36a91c6569903aeb2ad98ce3b21065cd"
+    },
+    {
+      "source": "certificate/reports/results.json",
+      "installed": "population_replay/reports/results.json",
+      "sha256": "7183e81c53d50290ed202afc8e82c7156fa1d1f5777399acaf2576b9aae7114a"
+    },
+    {
+      "source": "certificate/requirements.txt",
+      "installed": "population_replay/requirements.txt",
+      "sha256": "6467934ef0870d83959b06d58feef3869f14f76ea73c59c52e1835bf14704cd1"
+    },
+    {
+      "source": "certificate/run_verify.py",
+      "installed": "population_replay/run_verify.py",
+      "sha256": "8081936b19fb50f3d3e98473d29b10fa8d6e2594a1d9997cc4722d30d131cc09"
+    },
+    {
+      "source": "certificate/verify_masses.py",
+      "installed": "population_replay/verify_masses.py",
+      "sha256": "68c076507ca8a659adbadf58de3838526eb28c6242fe2525f4e78f5666c948c3"
+    },
+    {
+      "source": "progress.txt",
+      "installed": "SOURCE_PROGRESS.txt",
+      "sha256": "0b617a88beff1c6a036fdaf3859f27e8a00aadf284ed24c6e5cca284fe410708"
+    },
+    {
+      "source": "pure_head_extensions/pure_directions.json",
+      "installed": "data/pure_directions.json",
+      "sha256": "95ab9619d7ba473dc3b13e78543b8d4d463c5837704bf1483cf71dd5488cfd52"
+    },
+    {
+      "source": "research/e8_geometry.npz",
+      "installed": "data/e8_geometry.npz",
+      "sha256": "52344b145c5a5a5f5c64784a63011f1981d9ee2b7080fb625e1d7bc5863239e7"
+    },
+    {
+      "source": "research2/data/old43_seed.npz",
+      "installed": "data/old43_seed.npz",
+      "sha256": "b380bc01ce3e5ec363105cdd74c074050fcaf08f2ac32b5b1509443a97544532"
+    },
+    {
+      "source": "research2/modular_population_note.txt",
+      "installed": "POPULATIONS.txt",
+      "sha256": "14439876a70aa6627271e157e124fdeb79e0a16f59a7896fea8ffda6ba5bed6f"
+    },
+    {
+      "source": "research2/population_table.npz",
+      "installed": "data/population_table.npz",
+      "sha256": "d5800f72f2f6cceab7918b8c88c7af434d1287ff98f56d12cd21bba5ac4612ed"
+    },
+    {
+      "source": "research3/candidate_41_with_pure_heads.npz",
+      "installed": "data/candidate_41.npz",
+      "sha256": "dfeba8442bd59735d1cbddc1c7308e3d8002032ee693361cdccd47c3e698cfd6"
+    },
+    {
+      "source": "research3/candidate_42_with_pure_heads.npz",
+      "installed": "data/candidate_42.npz",
+      "sha256": "2e1b9f4842514926e3215e6d4f65cf914756c42224caae7f000fd0c4c3bdf800"
+    },
+    {
+      "source": "research5/candidate_45_pure_heads_canonical.npz",
+      "installed": "data/candidate_45.npz",
+      "sha256": "08472dad4364e5641fbeea3ca9b08ff9e410faeaa30191b4bc383e112b99189d"
+    },
+    {
+      "source": "research5/candidate_46_pure_heads_canonical.npz",
+      "installed": "data/candidate_46.npz",
+      "sha256": "fba5677633a010da392a07bb1fcea7730936613b3e2b0ada79e3f8b586a89928"
+    }
+  ],
+  "scope": "Curated construction inputs and population replay; exploratory optimizer pools, caches and logs remain in the source archives. No missing 43D certificate is reconstructed.",
+  "additional_inputs": [
+    {
+      "file": "kissing41-46_writeup.tex",
+      "bytes": 31896,
+      "sha256": "649f82b611c68909b63f422994312d27ea96cccc4fbc799702021ee7dd0990f1",
+      "scope": "Writeup identifies the missing 43D coordinate archives; not a coordinate certificate"
+    }
+  ],
+  "generated": [
+    {
+      "file": "certification/recovered43.json",
+      "command": "python certify43.py --jobs 6 --output NEW_DIRECTORY",
+      "scope": "Fresh 2878155-point seed proof; not the larger 2911990-point claim"
+    },
+    {
+      "file": "certification/checkpoint_replay.json",
+      "command": "python verify.py --replay-populations --jobs 6",
+      "scope": "Original older 41D/42D/44D certificates; not every latest family"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "status": "PASS",
+  "dimension": 43,
+  "points": 2878155,
+  "families": 113,
+  "head_rank": 3,
+  "angle_arithmetic": "arbitrary-size integers",
+  "family_pairs": 6441,
+  "large_shells": "fresh exhaustive integer enumeration",
+  "counts": [
+    {
+      "class_id": 139,
+      "body_norm_numerator": 16,
+      "body_norm_denominator": 3,
+      "count": 115755,
+      "nodes": 425981638,
+      "leaves": 115767,
+      "seconds": 29.1929,
+      "compact_class": 2556
+    },
+    {
+      "class_id": 244,
+      "body_norm_numerator": 16,
+      "body_norm_denominator": 3,
+      "count": 115755,
+      "nodes": 425959954,
+      "leaves": 115767,
+      "seconds": 29.0417,
+      "compact_class": 4014
+    },
+    {
+      "class_id": 1573,
+      "body_norm_numerator": 16,
+      "body_norm_denominator": 3,
+      "count": 115515,
+      "nodes": 425969969,
+      "leaves": 115533,
+      "seconds": 28.9253,
+      "compact_class": 4743
+    },
+    {
+      "class_id": 2268,
+      "body_norm_numerator": 18,
+      "body_norm_denominator": 3,
+      "count": 1084590,
+      "nodes": 1682169705,
+      "leaves": 1085085,
+      "seconds": 115.669,
+      "compact_class": 199
+    },
+    {
+      "class_id": 2463,
+      "body_norm_numerator": 16,
+      "body_norm_denominator": 3,
+      "count": 115755,
+      "nodes": 425951909,
+      "leaves": 115767,
+      "seconds": 28.9915,
+      "compact_class": 1657
+    },
+    {
+      "class_id": 2892,
+      "body_norm_numerator": 16,
+      "body_norm_denominator": 3,
+      "count": 115635,
+      "nodes": 426021470,
+      "leaves": 115650,
+      "seconds": 29.0897,
+      "compact_class": 928
+    },
+    {
+      "class_id": 3030,
+      "body_norm_numerator": 16,
+      "body_norm_denominator": 3,
+      "count": 115755,
+      "nodes": 425940602,
+      "leaves": 115767,
+      "seconds": 29.8935,
+      "compact_class": 4573
+    },
+    {
+      "class_id": 3216,
+      "body_norm_numerator": 16,
+      "body_norm_denominator": 3,
+      "count": 115515,
+      "nodes": 425956036,
+      "leaves": 115533,
+      "seconds": 29.8981,
+      "compact_class": 6031
+    },
+    {
+      "class_id": 3783,
+      "body_norm_numerator": 16,
+      "body_norm_denominator": 3,
+      "count": 115635,
+      "nodes": 425977441,
+      "leaves": 115650,
+      "seconds": 29.9027,
+      "compact_class": 2386
+    },
+    {
+      "class_id": 4326,
+      "body_norm_numerator": 16,
+      "body_norm_denominator": 3,
+      "count": 115755,
+      "nodes": 425977327,
+      "leaves": 115767,
+      "seconds": 29.8625,
+      "compact_class": 3115
+    },
+    {
+      "class_id": 4490,
+      "body_norm_numerator": 16,
+      "body_norm_denominator": 3,
+      "count": 115515,
+      "nodes": 425977218,
+      "leaves": 115533,
+      "seconds": 29.9332,
+      "compact_class": 4889
+    },
+    {
+      "class_id": 5024,
+      "body_norm_numerator": 16,
+      "body_norm_denominator": 3,
+      "count": 115515,
+      "nodes": 425958381,
+      "leaves": 115533,
+      "seconds": 28.086,
+      "compact_class": 5618
+    },
+    {
+      "class_id": 5243,
+      "body_norm_numerator": 16,
+      "body_norm_denominator": 3,
+      "count": 115875,
+      "nodes": 425947648,
+      "leaves": 115884,
+      "seconds": 28.0861,
+      "compact_class": 2702
+    }
+  ],
+  "smaller_shells": "exact 11-design identities: 41 families of 9180 and 59 of 495",
+  "inherited_modular_population_lemma_required": false,
+  "published_inputs": [
+    "P48n minimum squared norm 6",
+    "52416000 minimal vectors",
+    "minimal shell is an 11-design"
+  ],
+  "larger_working_total": 2911990,
+  "larger_certificate": "MISSING; NOT CERTIFIED",
+  "inputs_sha256": {
+    "bounds.json": "c9bbdd67139c760ecfce3794a3d1452c7b4c41697d71b6b027a57b21fc84b2be",
+    "certify43.py": "8b3795c9981acd3485d80306c149564e7c509681eb59198466bfb11626fcc6fd",
+    "data/e8_geometry.npz": "52344b145c5a5a5f5c64784a63011f1981d9ee2b7080fb625e1d7bc5863239e7",
+    "data/old43_seed.npz": "b380bc01ce3e5ec363105cdd74c074050fcaf08f2ac32b5b1509443a97544532",
+    "data/population_table.npz": "d5800f72f2f6cceab7918b8c88c7af434d1287ff98f56d12cd21bba5ac4612ed",
+    "final.py": "bfca718db92dbd00f24319f78a05dbf585ae5809633ae8f03fbdf740b182638a",
+    "population_replay/data/ambient_basis.json": "5881f02bf48c859dc2b54f5df76756b84d9546c3892be9be3d9cc9cee5803d06",
+    "population_replay/data/core_counts.json": "882f945ce8aec46a473da022d792579d1fdb2d50a1baf33a15be31e4b1c80860",
+    "population_replay/data/dual40_min.npz": "443252c18f6fbd6ea82a37aec74f15e6147d7900a115dd9efe54e8b94866bbe2",
+    "population_replay/data/e8_complement_reduced.npz": "6b50a641abb5bcfcb767266511c4f0cc8e9611cec1521cedeaa57a301ee58849",
+    "population_replay/data/head_fibres.npz": "35594321aa416755bb47b30e414d3b7370f171a2a3482b54942dd0dc81c17b07",
+    "population_replay/data/norm6_orbits.npz": "7ed1be4a5eb89fd92c5c4e236e065335e0578dd0d71c9b3433b3f75525a96e2f",
+    "population_replay/data/norm6_simple_certificate.json": "133850b4b4e336a8559b44e9b671b6db453e063a1422ac16bb8b2558d8b74571",
+    "population_replay/data/prep_e8.npz": "56336f1fa6d38ef64492493c0041e55359a8f25956552a486e39a2761318026f",
+    "population_replay/exact_count.cpp": "e1ece9e7c94b22c97f181ee19ba9e80f78d414e07eaa9f8af79e67dd31d386b7",
+    "population_replay/geometry.py": "ba7c922b4c73b563e72f5db930b656464a14a133f8a38795eaa77351391a2e5b",
+    "population_replay/old_e8_first_shells.py": "44b30fc326bc50be9653206e2e1592c6c6f6bc15a35133f10a1ee5d5fd6529de",
+    "population_replay/verify_masses.py": "68c076507ca8a659adbadf58de3838526eb28c6242fe2525f4e78f5666c948c3",
+    "verify.py": "367276795cbeb6829ca3a58dc39728db4f0ee3b1a072ecf756c550a6e9b02432"
+  }
+}

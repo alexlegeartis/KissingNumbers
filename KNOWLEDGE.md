@@ -5476,7 +5476,7 @@ rather than keeping a second copy of the code tables -- a duplicated table is wh
 in three other places. Every chain input is a construction, so the floor is a LOWER bound on
 ERS: a claim below it is definitely not an improvement, a claim above it is not thereby safe,
 and the failure message says so. Level 0 survives only as a cross-check, since it is a term of
-the chain and `best_chain` must never come out below it. Coverage is all 53 claims, and four
+the chain and `best_chain` must never come out below it. Coverage is all 58 claims, and four
 of them -- 39, 62, 63 and 96 -- ARE the chain, so they EQUAL the floor rather than exceed it;
 4b has an equality branch for exactly that.
 
@@ -5643,7 +5643,7 @@ with the parts as triples.py tabulates them:
 
 Five exact reproductions of Cohn's table, and the two differences are this project's own two
 claims.  The parts cover the direction set exactly in every row (3T + 2P = |W|).  This is the
-arithmetic behind 39 of the 53 claims, and it is right.
+arithmetic behind 39 of the 58 claims, and it is right.
 
 ### Two new checks in the suite
 

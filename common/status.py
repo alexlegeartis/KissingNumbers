@@ -8,7 +8,11 @@ says anything about tau(n) itself.  No matching upper bound is known in any dime
 repository touches, so no claim here is known to be optimal -- "exhausted" means the idea is
 finished, not the dimension.
 
-The point of the column is that 47 dimensions collapse into four actions:
+The point of the column is that 58 dimensions collapse into five actions:
+
+  heads       Joint changes to body families and heads remain open. The current
+              consistency replay inherits body populations; finite sampled
+              searches do not establish a construction ceiling.
 
   exhausted   The mechanism provably cannot give more here.  Do not retry the idea; a
               different construction is needed.
@@ -38,6 +42,7 @@ import os
 from published import TAU
 
 LEGEND = {
+    'heads': 'joint body-family and head searches remain open; no construction ceiling is claimed',
     'exhausted': 'the mechanism cannot give more; a different construction is needed',
     'external': 'a function of a published table -- recheck when the table moves',
     'classes': 'only a better class family helps; these all improve together',
@@ -396,6 +401,15 @@ for _d in (68, 69, 70, 71):
 for _d in range(73, 96):
     STATUS[_d] = ('classes', REASON['classes-g72'])
 STATUS[96] = ('external', REASON['external-96'])
+for _d in (41, 42, 44, 45, 46):
+    STATUS[_d] = ('heads',
+                  'independently normalized P48n body families with rational heads and pure '
+                  'head points; the latest angles and exact ranks replay, while populations '
+                  'inherit the supplied tables and modular-form derivation. Larger coupled '
+                  'family changes, partial families and new body models remain open; finite '
+                  'search optima are not global ceilings. The larger 43D writeup total is '
+                  'excluded because its certificate is missing '
+                  '(dim41-46-p48-heads/README.md, verify.py, POPULATIONS.txt)')
 
 
 def runs(ds):

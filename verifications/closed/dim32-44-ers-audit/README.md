@@ -1,5 +1,10 @@
 # CLOSED — dimensions 32 to 44 are exactly at the Edel–Rains–Sloane value
 
+The comparisons below describe the earlier ERS search and its historical
+inputs. The October 2026 [family/head package](../../improved/dim41-46-p48-heads/)
+now registers larger constructions in 41D, 42D and 44D. Its 43D working total
+remains outside the registry because the latest certificate is missing.
+
 > **Correction, 2026-09-14 — this package's verdict is stale in dimensions 40, 41, 42 and 45.**
 > I. Dorofeev, X. Sun and C. Wang, *Optimal Extensions of Cross-Sections: Sphere Packings in
 > Dimensions 38 to 43*, arXiv:2607.20359v4 (29 Aug 2026), beat the Edel–Rains–Sloane values

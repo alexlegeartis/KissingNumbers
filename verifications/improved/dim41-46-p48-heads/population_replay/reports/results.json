@@ -1,0 +1,92 @@
+[
+  {
+    "dimension": 41,
+    "points": 1460034,
+    "families": 151,
+    "pairs": 11476,
+    "equalities": 5,
+    "status": "PASS",
+    "types": {
+      "10": {
+        "families": 72,
+        "points": 1134
+      },
+      "12": {
+        "families": 64,
+        "points": 31680
+      },
+      "14": {
+        "families": 12,
+        "points": 110160
+      },
+      "16": {
+        "families": 2,
+        "points": 232470
+      },
+      "18": {
+        "families": 1,
+        "points": 1084590
+      }
+    }
+  },
+  {
+    "dimension": 42,
+    "points": 1989954,
+    "families": 181,
+    "pairs": 16471,
+    "equalities": 34,
+    "status": "PASS",
+    "types": {
+      "10": {
+        "families": 72,
+        "points": 1134
+      },
+      "12": {
+        "families": 84,
+        "points": 41580
+      },
+      "14": {
+        "families": 18,
+        "points": 165240
+      },
+      "16": {
+        "families": 6,
+        "points": 697410
+      },
+      "18": {
+        "families": 1,
+        "points": 1084590
+      }
+    }
+  },
+  {
+    "dimension": 44,
+    "points": 4939281,
+    "families": 1034,
+    "pairs": 535095,
+    "equalities": 59929,
+    "status": "PASS",
+    "types": {
+      "10": {
+        "families": 528,
+        "points": 8316
+      },
+      "12": {
+        "families": 385,
+        "points": 190575
+      },
+      "14": {
+        "families": 96,
+        "points": 881280
+      },
+      "16": {
+        "families": 24,
+        "points": 2774520
+      },
+      "18": {
+        "families": 1,
+        "points": 1084590
+      }
+    }
+  }
+]

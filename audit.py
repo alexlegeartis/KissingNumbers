@@ -2,6 +2,7 @@
 """Consistency audit of every claim in this repository.
 
     python audit.py
+    python audit.py --repository-only   # omit checks of the surrounding workspace
 
 This does NOT re-prove anything -- each package's own script does that. What it does is
 check that the claims are mutually consistent, agree with the published state of the art,
@@ -21,8 +22,9 @@ CHECKS
   2. every claim in a dimension Cohn's table covers cites exactly Cohn's figure;
   3. the claims are monotone in the dimension, and no claim exceeds the best value known in
      ANY higher dimension -- including this repository's own claims;
-  4. no claim is made in a dimension that is attained by the published construction, withdrawn,
-     short of its floor, or already in the literature.  The four sets are ATTAINED, WITHDRAWN,
+  4. no claim merely reproduces a published or withdrawn construction, or falls
+     short of its floor. A larger new construction in the same dimension is allowed.
+     The historical records are ATTAINED, WITHDRAWN,
      SHORT and RECOVERED below, and the run prints their contents rather than this docstring
      repeating them -- which is how "69" stayed here after 69 left SHORT and became a claim;
   4b. every claim exceeds what the FULL Edel-Rains-Sloane chain reaches from published codes,
@@ -100,6 +102,7 @@ Nothing here needs anything outside this directory.  Where a check is about the 
 working folder -- the root README, the paper's PDF -- it says so and stands down in a clone.
 """
 import fnmatch
+import importlib.util
 import io
 import hashlib, os
 import re
@@ -108,6 +111,7 @@ import sys
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+REPOSITORY_ONLY = '--repository-only' in sys.argv
 sys.path.insert(0, os.path.join(HERE, 'common'))
 from published import (COHN, floor_for, upper_for,       # noqa: E402
                        ERS_PUBLISHED)
@@ -323,6 +327,18 @@ add(31, 238662, 'dim31-frame-layer', 'verify.py 31 (exact: integers on the Leech
                                      'with sympy deciding every sign on the R^7 side)')
 add(38, 591612, 'dim38-leech-large-codimension', 'scripts/verify.py')
 add(39, 756116, 'dim39-ers-constant-weight', 'scripts/verify.py')
+
+# The current construction checkpoint postdates the manuscript. Recompute its
+# supplied totals; the 43D writeup figure and 47D/48D comparisons are not claims.
+HEAD_PACKAGE = 'dim41-46-p48-heads'
+_head_spec = importlib.util.spec_from_file_location(
+    'p48_heads_final', os.path.join(IMP, HEAD_PACKAGE, 'final.py'))
+_head_driver = importlib.util.module_from_spec(_head_spec)
+_head_spec.loader.exec_module(_head_driver)
+for _record in _head_driver.results():
+    add(_record['dimension'], _record['total'], HEAD_PACKAGE,
+        'verify.py (integer angles and exact ranks; inherited population tables, '
+        'not a fresh body enumeration)')
 # The Edel-Rains-Sloane chain (n, 15, 2).  Level 0 is a single sign code: [62,26,16] and
 # [63,27,16] (codetables.de, read 2026-08-23) have d = 16 = ceil(62/4) = ceil(63/4), so their
 # 2^26 and 2^27 sign vectors are kissing configurations outright.  Levels 1 and 2 are the rest
@@ -356,6 +372,9 @@ add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover'
     'ers96.py (chain (96,24,6,1): 2^33 + 4^9*16384 + 16^4*32 + 96*2)')
 
 claims.sort()
+# The manuscript remains the earlier snapshot until it is separately updated.
+# Its documented partition and claim counts must be checked against that scope.
+paper_claims = [claim for claim in claims if claim[2] != HEAD_PACKAGE]
 print(__doc__)
 print("=" * 92)
 print("%d claims, dimensions %d..%d" % (len(claims), claims[0][0], claims[-1][0]))
@@ -416,8 +435,9 @@ OTHER = {64: 331737984,
          96: 12886999232,      # Edel-Rains-Sloane, closed/dim96-ers-takeover/
          128: 218044170240}
 best_above = {}
-for kd in sorted(set(list(COHN) + list(OTHER) + list(mine))):
-    best_above[kd] = max(COHN.get(kd, 0), OTHER.get(kd, 0), mine.get(kd, 0))
+for kd in sorted(set(list(COHN) + list(OTHER) + list(mine) + list(RECOVERED))):
+    best_above[kd] = max(COHN.get(kd, 0), OTHER.get(kd, 0), mine.get(kd, 0),
+                         RECOVERED.get(kd, 0))
 for d, v, pkg, how in claims:
     for kd, kv in best_above.items():
         if kd > d and kv and v > kv:
@@ -426,31 +446,34 @@ print("   monotone across all %d claims; every claim respects every record above
       % len(claims))
 
 print()
-print("4. no claim in a dimension that is attained, withdrawn, or short of its floor")
+print("4. no claim merely repeats an attained, withdrawn or recovered value, or falls short")
 ATTAINED = set()                      # dimensions the cap model reproduces exactly and this
                                       # project does not beat.  Emptied on 2026-09-15: 26 went
                                       # on 2026-09-08 to dim26-27-iota-triangles, 30 and 31 on
                                       # 2026-09-14, 29 and finally 28 on 2026-09-15, the last
                                       # by the norm-8 frame layer of dim28-norm8-frame-layer.
                                       # Every one of 25-31 is now claimed.
-WITHDRAWN = {44, 45}                  # beaten by Sun-Wang, arXiv:2607.20359v3
+WITHDRAWN = {44, 45}                  # the old cross-sections, beaten by Sun-Wang;
+                                      # larger family/head constructions are separate
 SHORT = set()                         # 69 was here until its Gram was exhibited (see the
                                       # dim68-69 package); nothing is short of its floor now
 for d, v, pkg, how in claims:
     if d in ATTAINED:
         bad("dim %d is already attained by the published construction" % d)
-    if d in WITHDRAWN:
+    if d in WITHDRAWN and pkg == 'dim44-45-p48-cross-sections':
         bad("dim %d was withdrawn; see verifications/superseded/" % d)
     if d in SHORT:
         bad("dim %d does not reach its floor; see verifications/closed/" % d)
-    if d in RECOVERED:
+    if d in RECOVERED and v <= RECOVERED[d]:
         bad("dim %d was already in the literature; see verifications/recovered/" % d)
 # Printed from the sets above, not typed out beside them: the hand-written form of this
 # line is exactly where "69" survived in the docstring after 69 stopped being short.
 print("   %s absent (attained); %s absent (withdrawn)"
-      % (runs(sorted(ATTAINED)), runs(sorted(WITHDRAWN))))
+      % (runs(sorted(ATTAINED)), runs(sorted(WITHDRAWN - set(mine)))))
 print("   %s absent (already in the literature -- recovered, not claimed)"
-      % runs(sorted(RECOVERED)))
+      % runs(sorted(set(RECOVERED) - set(mine))))
+print('   legacy 44D/45D cross-sections remain withdrawn; the larger new head '
+      'constructions are separate. Recovered 46D = %d remains historical.' % RECOVERED[46])
 if SHORT:
     print("   %s absent (short of the floor)" % runs(sorted(SHORT)))
 
@@ -633,8 +656,9 @@ print("5c. the working directory's README accounts for every path beside it")
 # and were missing from .gitignore too.  Skipped when this package travels on its own.
 _root = os.path.normpath(os.path.join(HERE, os.pardir))
 _rootmd = os.path.join(_root, 'README.md')
-if not os.path.exists(_rootmd):
-    print("   (no working directory beside this package; nothing to check)")
+if REPOSITORY_ONLY or not os.path.exists(_rootmd):
+    print("   (surrounding workspace omitted by --repository-only)" if REPOSITORY_ONLY else
+          "   (no working directory beside this package; nothing to check)")
 else:
     _rtext = io.open(_rootmd, encoding='utf-8', errors='replace').read()
     _unnamed = [_e for _e in sorted(os.listdir(_root))
@@ -820,7 +844,7 @@ def _paper_dir():
 
 
 _PAPERDIR = _paper_dir()
-_ALSO = [os.path.join(HERE, os.pardir, 'README.md')] + (
+_ALSO = ([] if REPOSITORY_ONLY else [os.path.join(HERE, os.pardir, 'README.md')]) + (
     [os.path.join(_PAPERDIR, 'kissing46.tex')] if _PAPERDIR else [])
 _walked = [(os.path.dirname(_q), [], [os.path.basename(_q)])
            for _q in _ALSO if os.path.exists(_q)]
@@ -882,7 +906,7 @@ else:
     print("   every numbered pointer into an outside work names its document")
 
 print()
-print("5g. the README's description of the paper still partitions the claims")
+print("5g. the README's description of the paper partitions its earlier snapshot")
 # Three stale facts in one sentence -- a page count, and two method-to-dimension lists that
 # had not followed 62, 63, 68 and 69 when they moved.  Each was true when written.
 # The page count in the same sentence is checked by paper/factcheck.py, over both READMEs
@@ -901,7 +925,7 @@ else:
         _seen.extend([int(_c)] if _c else list(range(int(_a), int(_b) + 1)))
     _dupe = sorted(set(d for d in _seen if _seen.count(d) > 1))
     _named = set(_seen) - {46, 47}
-    _claimed = set(d for d, v, pkg, how in claims)
+    _claimed = set(d for d, v, pkg, how in paper_claims)
     if _dupe:
         bad("README.md's description lists %s under more than one method" % _dupe)
     elif _named != _claimed:
@@ -909,7 +933,8 @@ else:
             % (sorted(_named - _claimed) or 'nothing extra',
                sorted(_claimed - _named) or 'nothing'))
     else:
-        print("   its dimension lists partition the %d claims" % len(_claimed))
+        print("   its dimension lists partition the %d manuscript-snapshot claims; "
+              "%s postdates that snapshot" % (len(_claimed), HEAD_PACKAGE))
 
 print()
 print("5g2. the README's 'Apparently new' list is the claims minus dimension 96")
@@ -959,12 +984,14 @@ for _dp, _dn, _fn in os.walk(HERE):
             _rel = os.path.relpath(_q, os.path.join(HERE, 'verifications'))
             _readers.add(_rel.replace(chr(92), '/').split('/')[1])
 _rrp = os.path.join(_ROOT, 'README.md')
-if not os.path.exists(_rrp):
+if REPOSITORY_ONLY or not os.path.exists(_rrp):
     # A clone of this directory alone: the outer working folder is not part of the
     # deliverable, so there is no root README to check against.  Say so rather than
     # crash, which is what this did -- and audit.py is the FIRST job of run_all.py, so
     # the crash was the first thing a reviewer of a clean checkout would have seen.
-    print("   the outer working folder is not here, so there is no root README to check; "
+    print("   surrounding workspace omitted by --repository-only; %d reader(s) found"
+          % len(_readers) if REPOSITORY_ONLY else
+          "   the outer working folder is not here, so there is no root README to check; "
           "%d reader(s) found" % len(_readers))
     _rr, _readers = None, set()
 else:
@@ -1746,6 +1773,7 @@ _COUNT_RE = re.compile(
     re.I)
 _COUNT_OK = {
     # dated entries in the knowledge base, describing the state at the time of writing
+    ('KNOWLEDGE.md', '**Running total: 53 dimensions improved**'),  # explicitly dated 2026-09-15
     ('KNOWLEDGE.md', '**`kissing_verifications` brought in line.**  46 claims'),
     ('KNOWLEDGE.md', '`recheck_all.py` recomputes all 46'),
 }
@@ -1760,7 +1788,10 @@ for _dp, _dn, _fn in list(os.walk(HERE)) + _walked:
         for _i, _line in enumerate(io.open(_p, encoding='utf-8', errors='replace'), 1):
             for _m in _COUNT_RE.finditer(_line):
                 _n = next(g for g in _m.groups() if g)
-                if int(_n) == len(claims):
+                _in_paper = (_PAPERDIR is not None and
+                             os.path.commonpath([os.path.abspath(_p), _PAPERDIR]) == _PAPERDIR)
+                _expected_count = len(paper_claims) if _in_paper else len(claims)
+                if int(_n) == _expected_count:
                     continue
                 if any(_k in _line for _fk, _k in _COUNT_OK if _fk == _f):
                     continue
@@ -1769,7 +1800,8 @@ if _count_bad:
     for _rel, _i, _line in _count_bad:
         bad("%s:%d says a claim count that is not %d -- %s" % (_rel, _i, len(claims), _line))
 else:
-    print("   no file states a claim count other than %d" % len(claims))
+    print("   claim counts agree with their scope: repository %d, manuscript snapshot %d"
+          % (len(claims), len(paper_claims)))
 
 byp = {}
 for d, v, pkg, how in claims:
@@ -1865,6 +1897,9 @@ if '--write-results' in sys.argv and not fail:
                              'layer, now in verifications/superseded/dim31-sqrt3-layer/',
         'dim38-leech-large-codimension': 'the Leech cap construction at codimension 14',
         'dim39-ers-constant-weight': 'Edel-Rains-Sloane with the 2026 constant-weight codes',
+        'dim41-46-p48-heads': 'independently normalized P48n body families with rational '
+                            'heads and pure-head extensions; latest 43D certificate missing; '
+                            'angles and exact ranks replay using inherited body populations',
         'dim49-63-p48-caps': 'the cap construction over P_48, with explicit classes',
         'dim62-63-ers-chain': 'the Edel-Rains-Sloane chain (n, 15, 2), levels 1-2 built here',
         'dim68-69-gamma72-cross-sections': 'k-point moment LP with the Gram exhibited in Gamma_72',
@@ -1883,6 +1918,16 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("%d dimensions, all of them lower bounds on the kissing number tau(n) that improve\non the best previously published value."
                % len(claims))
+    out.append("")
+    out.append("The 23 October 2026 checkpoint adds supplied constructions in dimensions "
+               "41, 42, 44, 45 and 46. Their integer angles and exact ranks replay; their "
+               "body populations inherit the supplied tables and population derivation, "
+               "and have not all been freshly enumerated. The 43D working total "
+               "2 911 990 is excluded because its latest certificate is missing. "
+               "The comparison column uses common/published.py's pinned published data; "
+               "this integration is not a new comprehensive literature audit. The paper "
+               "remains the earlier snapshot. See "
+               "[verification scope](verifications/improved/dim41-46-p48-heads/README.md).")
     out.append("")
     out.append("| dim | previously published | **this work** | factor | status | construction |")
     out.append("|---|---|---|---|---|---|")
@@ -1954,15 +1999,16 @@ if '--write-results' in sys.argv and not fail:
     # 25-31 used to have rows here; the last, dimension 28, left on 2026-09-15.  Nothing
     # replaces them: this table may name no dimension that is claimed, which the check below
     # enforces, so the calibration fact they carried is a sentence under the table instead.
-    out.append("| 32-37, 40-43 | exactly at the Edel-Rains-Sloane value. "
+    out.append("| 32-37, 40 | older ERS/cross-section audit; no new construction registered here. "
                "`verifications/closed/dim32-44-ers-audit/` |")
-    out.append("| 44, 45 | withdrawn: beaten by Sun-Wang, arXiv:2607.20359v3. "
-               "`verifications/superseded/dim44-45-p48-cross-sections/` |")
-    out.append("| 46, 47 | already in the literature. %s is Boyvalenkov-Cherkashin, "
+    out.append("| 43 | working total 2 911 990 retained from the writeup, but its latest "
+               "certificate is missing. The supplied older seed has 2 878 155 points. "
+               "Neither is silently substituted for the latest construction. "
+               "`verifications/improved/dim41-46-p48-heads/` |")
+    out.append("| 47 | already in the literature. %s is Boyvalenkov-Cherkashin, "
                "Results Math. 80 (2025), Paper No. 3, equation (3) of the preprint "
-               "arXiv:2312.05121; %s is "
-               "Sun-Wang, arXiv:2607.20359, Table 3. Both are recovered here by a "
-               "different route and neither is claimed. "
+               "arXiv:2312.05121. The historical 46D value %s is "
+               "Sun-Wang, arXiv:2607.20359, Table 3; the new 46D construction is larger. "
                "`verifications/recovered/dim46-47-p48-cross-sections/` |"
                % (gr(23766960), gr(12309600)))
     out.append("| 48 | 52 416 000 is P_48 itself. |")

@@ -2,12 +2,12 @@
 
 The kissing number τ(n) is the largest number of unit spheres that can touch a central unit
 sphere in ℝⁿ; equivalently, the largest set of unit vectors with pairwise inner products at
-most 1/2. This repository holds new lower bounds in **53 dimensions**, each with a package
-that verifies it, together with the negative results that say where the remaining doors are
+most 1/2. This repository holds new lower bounds in **58 dimensions**, each with a package
+that states its verification scope, together with the negative results that say where the remaining doors are
 shut.
 
 ```bash
-python audit.py            # start here: all 53 claims, checked against the published table
+python audit.py --repository-only  # all 58 claims; check this repository without its surrounding workspace
 ```
 
 `update.py` is the maintainer's entry point rather than the reviewer's: it runs every package
@@ -21,6 +21,31 @@ a driver already produced.
 theorem, dimensions 49–95 from the shipped class-size tables — and checks that every claim
 beats the published value in its dimension, that the claims are monotone, and that none of
 them exceeds a known record in a higher dimension. It takes a few seconds.
+
+## October 2026 construction checkpoint
+
+The new [P48n family/head package](verifications/improved/dim41-46-p48-heads/)
+registers five supplied constructions and keeps one unresolved working total:
+
+| dim | latest working total | verification scope |
+|---|---:|---|
+| 41 | **1 460 036** | integer angles and exact rank; inherited body populations |
+| 42 | **1 991 445** | integer angles and exact rank; inherited body populations |
+| 43 | 2 911 990 | latest certificate missing; older seed 2 878 155 included; excluded from RESULTS.md |
+| 44 | **4 939 281** | integer angles and exact rank; original standalone population replay also supplied |
+| 45 | **7 650 601** | retained bodies plus 16 pure-head points; inherited populations |
+| 46 | **13 387 797** | retained bodies plus 27 pure-head points; inherited populations |
+
+The latest progress TXT supersedes older totals inside the archives. The default
+replay does not freshly enumerate the body shells. No new improvement is
+claimed in 47D or 48D. The comparison column in RESULTS.md uses the pinned
+published data in `common/published.py`; this integration is not a new audit of
+the literature. The paper remains its earlier snapshot.
+
+```bash
+python run_all.py --only p48-heads
+python update.py --skip-paper --repository-only  # maintain the repository while leaving the paper alone
+```
 
 ## The headline improvements
 
@@ -45,12 +70,13 @@ them exceeds a known record in a higher dimension. It takes a few seconds.
 | 18  | 7 654                | **8 358**         | 1.09     | the base of Cohn–Li's hexagon had a free combinatorial parameter nobody had varied: which coset of RM(1,4) the three six-set families lie in.  Three bent cosets with pairwise-bent sums that do not sum to zero give the twelve tier-B slots three different 512-word spaces instead of one, and tier B rises from 256 to 960 |
 
 
-The full table of all 53 is `[RESULTS.md](RESULTS.md)`. The write-up, *New lower bounds
+The full table of all 58 is `[RESULTS.md](RESULTS.md)`. The write-up, *New lower bounds
 for kissing numbers in dimensions 18 through 96*, is maintained **outside this repository**,
 because it cites this repository; see [The write-up](#the-write-up) below.
 
-Dimensions 46 and 47 used to head this table and no longer do. Both values were already in
-the literature; they are recovered here, not claimed. See *What is genuinely new* below.
+The historical 46D and 47D cross-section values remain recovered, not claimed.
+The new 13,387,797-point 46D head construction is larger and is registered above.
+See *What is genuinely new* below.
 
 ## Layout
 
@@ -67,7 +93,7 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               52 of the 53 claims, thirteen packages, one per construction
+  improved/               57 of the 58 claims, fourteen packages, one per construction
                           idea; dimension 96 is the exception and sits in closed/
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
@@ -80,7 +106,7 @@ KNOWLEDGE.md              the full working record, 158 sections, including every
 
 
 
-### `verifications/improved/` — thirteen ideas, 52 dimensions
+### `verifications/improved/` — fourteen ideas, 57 dimensions
 
 Every claim but one is in this tier. The exception is dimension 96, whose package is
 `closed/dim96-ers-takeover/`, because what it establishes is that the cap construction
@@ -96,6 +122,7 @@ cannot reach 96 — the claim there is Edel–Rains–Sloane’s.
 | `[dim31-frame-layer](verifications/improved/dim31-frame-layer/)`                             | 31     | the norm-8 frame layer at height √2 carried to k = 7: all 48 vectors of a Leech frame on the whole cross-polytope of ℝ⁷, 672 points, deleting no equator point.  It needs 42 pairwise disjoint type-B classes holding at least 10 252 of the 10 416 lines 42 full classes would give; the published attempt reached 10 183 and this one carries 10 328, found by screening candidates on the free slots their octads still have rather than by scanning uniformly — a sampled clique search needs pair density p ≥ 0.5097 to reach 42 at all, and flattening the octad coverage takes p from 0.4984 to 0.5467.  The axis is E7 rotated by 45°, 45°, 90° in the coordinate planes (0,3), (2,4), (5,6), keeping 118 of 126 against the 110 the published axis kept |
 | `[dim38-leech-large-codimension](verifications/improved/dim38-leech-large-codimension/)`     | 38     | the same construction at codimension 14, where the binding constraint flips and the whole Leech shell partitions into 644 classes                                                            |
 | `[dim39-ers-constant-weight](verifications/improved/dim39-ers-constant-weight/)`             | 39     | Edel–Rains–Sloane with the 2026 constant-weight codes, at n₀ = n rather than n₀ = 32                                                                                                         |
+| [`dim41-46-p48-heads`](verifications/improved/dim41-46-p48-heads/) | 41, 42, 44–46 | independently normalized P48n body families with rational heads and pure-head extensions; inherited populations; latest 43D certificate missing |
 | `[dim49-63-p48-caps](verifications/improved/dim49-63-p48-caps/)`                             | 49–61  | the cap construction over P₄₈, with explicit classes of 7069 lines where Caro–Wei guarantees 712                                                                                             |
 | `[dim62-63-ers-chain](verifications/improved/dim62-63-ers-chain/)`                         | 62, 63 | the Edel–Rains–Sloane chain (n, 15, 2), levels 1–2 built here. Its level-0 term alone already beats the cap construction's **ceiling** in these two dimensions, so no class family could have reached them |
 | `[dim68-69-gamma72-cross-sections](verifications/improved/dim68-69-gamma72-cross-sections/)` | 68, 69 | realizability of a k-point Gram settled by **exhibiting** the k-tuple in Γ₇₂ rather than through the LP's own witness lemma, which unlocks k = 3 and k = 4 |
@@ -120,7 +147,7 @@ the lower bound in its dimensions** — who held it, when, and by what construct
 
 This matters more than the size of the table, so it is stated first and plainly.
 
-**Not ours: dimensions 46 and 47.** τ(47) ≥ 23 766 960 is due to
+**Historical recovered cross-sections in dimensions 46 and 47.** τ(47) ≥ 23 766 960 is due to
 Boyvalenkov–Cherkashin, *Results in Mathematics* **80** (2025), Paper No. 3, and is
 equation (3) of the preprint [arXiv:2312.05121](https://arxiv.org/abs/2312.05121)
 (December 2023), which observes *in the same paragraph* that those A₀ vectors form a
@@ -129,14 +156,16 @@ equation (3) of the preprint [arXiv:2312.05121](https://arxiv.org/abs/2312.05121
 [arXiv:2607.20359v3](https://arxiv.org/abs/2607.20359) (18 August 2026), and its ingredients
 were in Ozeki's 2016 Siegel theta tables a decade earlier, though not stated as a kissing
 number. Both were obtained here independently, and both are **recovered rather than
-claimed**: they are not in `RESULTS.md`, not counted among the 53, and not presented as
+claimed**: they are not in `RESULTS.md`, not counted among the 58, and not presented as
 results in the paper. They are kept, in
 `[verifications/recovered/](verifications/recovered/)`, because reproducing a published
 count from a method built without reference to it is the strongest validation available.
 What is still true, and is a fact about the table rather than about this project, is that
 **Cohn's table has absorbed neither**, recording 9 741 412 and 5 318 060.
 
-**Withdrawn.** τ(45) and τ(44) were claimed here and are beaten by Sun–Wang. Both of this
+**Withdrawn earlier constructions.** The old lattice cross-section values in
+dimensions 45 and 44 were beaten by Sun–Wang. The new family/head constructions
+are separate, larger results. Both of this
 project's values lie inside the LP brackets it computed, which is a sharp cross-check on the
 machinery — see
 `[verifications/superseded/dim44-45-p48-cross-sections/](verifications/superseded/dim44-45-p48-cross-sections/)`.
@@ -145,7 +174,7 @@ machinery — see
 the construction's exact ceiling is proven here to be exactly Ho's number. Dimension 12's
 record likewise landed elsewhere while this work was in progress.
 
-**Apparently new.** Everything else — dimensions 18, 25–31, 38, 39, 49–63, 68–71, 73–95. No
+**Apparently new.** Everything else — dimensions 18, 25–31, 38, 39, 41–42, 44–46, 49–63, 68–71, 73–95. No
 prior claim in any of them is known to us. The claim we would most like checked by someone
 who knows the area is **dimensions 70 and 71**: the one-point distribution of Γ₇₂'s minimal
 shell may well be folklore — it is a five-minute calculation once you know Venkov's theorem —
@@ -348,10 +377,10 @@ fixes the class.
 ## Reproducing everything
 
 ```bash
-python run_all.py          # 67 scripts, about 40 minutes measured, one verdict
+python run_all.py          # 68 scripts, about 40 minutes measured, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 83 scripts, budget about 9 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 86 scripts, budget about 9 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 ```
@@ -361,7 +390,7 @@ Or individually, each from its own directory:
 
 | script                                                                        | what it establishes                                            | time   |
 | ----------------------------------------------------------------------------- | -------------------------------------------------------------- | ------ |
-| `audit.py`                                                                    | all 53 claims, mutual and external consistency                 | 30 s   |
+| `audit.py`                                                                    | all 58 claims, mutual and external consistency                 | 30 s   |
 | `common/theta.py`                                                             | E₇ = 126, Λ₂₃ = 93 150, dim 47, dim 71                         | 1 s    |
 | `common/kpoint_lp.py`                                                         | the LP, validated on the Leech and P₄₈                         | 10 s   |
 | `…/dim25-lens-heads/verify.py`                                                | τ(25) ≥ 197 579, every pair in exact arithmetic               | 4 min  |
@@ -377,6 +406,7 @@ Or individually, each from its own directory:
 | `…/dim31-frame-layer/ceilings.py 31`                                         | the same report at k = 7, 1120 vertices enumerated            | 20 s   |
 | `…/dim38-leech-large-codimension/scripts/verify.py`                           | τ(38) ≥ 591 612                                                | 10 s   |
 | `…/dim39-ers-constant-weight/scripts/verify.py`                               | τ(39) ≥ 756 116 (and τ(38) ≥ 570 236)                          | 10 s   |
+| `.../dim41-46-p48-heads/verify.py` | current 41, 42, 44-46 totals and the older 43D seed; inherited populations | 5 s |
 | `…/dim46-47-p48-cross-sections/derive.py`                                     | recovers 12 309 600 and 23 766 960, claiming neither           | 6 s    |
 | `…/dim49-63-p48-caps/verify.py` + `final.py`                                  |  the P₄₈ lattice, class, and fifteen numbers                    | 3 s    |
 | `…/dim49-63-p48-caps/scripts/regenerate.py`                                   | rebuilds and re-verifies all 1400 disjoint classes             | 15 min |
@@ -478,6 +508,10 @@ construction in §5 (dimensions 25, 26, 27, 28, 29, 30, 31, 38, 49–61, 73–95
 code-theoretic dimensions 39, 62, 63 and 96 in §6; dimension 18, the bent-coset hexagon,
 postdates the write-up and is documented in its package only.
 
+The October 2026 family/head constructions postdate this manuscript snapshot.
+They are documented in their verification package; the manuscript files have
+not been updated. Use `--skip-paper` to keep them unchanged during maintenance.
+
 **It is in this repository, at [`paper/`](paper/)** — source, bibliography, `.bbl`, PDF and
 three checkers that read this repository and exit non-zero on a mismatch:
 
@@ -488,7 +522,7 @@ python unsupported.py    # no figure in the write-up lacks a home here
 python formulas.py       # 257 checks: every formula re-derived with sympy
 ```
 
-`run_all.py` runs all three. Until 2026-08-30 the write-up was kept in a sibling directory of
+`run_all.py` runs all three unless `--skip-paper` is supplied. Until 2026-08-30 the write-up was kept in a sibling directory of
 the working tree, on the grounds that it cites the repository — which is true, is the ordinary
 arrangement for a paper with a verification package, and meant that those nine hundred checks
 **skipped in every clone**, so no reader could run the part that ties the manuscript to the

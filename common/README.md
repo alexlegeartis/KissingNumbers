@@ -16,7 +16,9 @@ python capalgebra.py    # the cap construction's algebra and count, exactly     
 ```
 
 The last two are the ones to run if you doubt the mathematics rather than the bookkeeping.
-Between them they attack the two things every one of the 53 claims rests on.
+They check the shared moment-LP and cap algebra. The October 2026 family/head
+constructions additionally use the population derivation and integer-angle
+replay in [dim41-46-p48-heads](../verifications/improved/dim41-46-p48-heads/).
 
 ## The modules
 

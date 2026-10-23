@@ -2,8 +2,13 @@ cff-version: 1.2.0
 message: "If you use these bounds or this verification code, please cite it."
 title: "Kissing numbers: new lower bounds in dimensions 18 through 96, with verification packages"
 abstract: >-
-  Verification packages for new lower bounds on the kissing number in 53
-  dimensions: 18, 25-31, 38, 39, 49-63, 68-71 and 73-96.  Five ideas carry them.
+  Verification packages for new lower bounds on the kissing number in 58
+  dimensions: 18, 25-31, 38, 39, 41-42, 44-46, 49-63, 68-71 and 73-96. The
+  October 2026 constructions in dimensions 41, 42, 44, 45 and 46 replay exact
+  head ranks and integer angles using inherited body populations. Their full
+  verification scope is documented in dim41-46-p48-heads; the larger 43D
+  writeup total is not registered because its certificate is missing. The
+  manuscript remains an earlier snapshot. The preceding constructions include:
   (1) Cross-sections of extremal even unimodular lattices, bounded
   by a k-point linear program on the moments that Venkov's theorem supplies,
   with exact rational dual certificates and with translation and lattice-range
@@ -34,8 +39,9 @@ abstract: >-
   reproduces tau(8) = 240 and tau(16) = 4320 exactly.  The
   repository also records, as carefully as the positive results, the mechanisms
   that were pushed to their exact ceiling and should not be retried, and the
-  two claims that were withdrawn when better values appeared.  Dimensions 46 and
-  47 are recovered rather than claimed: 23766960 is Boyvalenkov-Cherkashin,
+  two older cross-section values that were withdrawn when better values appeared.
+  The historical 46D and 47D cross-sections are recovered rather than claimed:
+  23766960 is Boyvalenkov-Cherkashin,
   Results Math. 80 (2025), Paper No. 3, and 12309600 is Sun-Wang,
   arXiv:2607.20359.  Both were obtained here independently and are kept because
   reproducing a published count validates the method.  No floating-point

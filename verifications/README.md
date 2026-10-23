@@ -5,9 +5,9 @@ according to what is currently true about it. The distinction is the point of th
 a repository that only shows its wins is much less useful to the next person than one that
 shows where the doors are shut.
 
-## [`improved/`](improved/) — 52 of the 53 claims, currently the best known
+## [`improved/`](improved/) — 57 of the 58 claims, currently the best known
 
-Thirteen packages, one per **construction idea** rather than one per dimension, because several
+Fourteen packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -21,6 +21,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim31-frame-layer`](improved/dim31-frame-layer/) | 31 | apparently new — joint work in progress with H. Cohn and B. Lindow; the norm-8 frame layer at height √2, 672 points deleting no equator point, carried by 42 pairwise disjoint type-B classes holding 10 328 of 10 416 owner lines, with an axis of 118 of 126.  Supersedes the height-√3 layer |
 | [`dim38-leech-large-codimension`](improved/dim38-leech-large-codimension/) | 38 | apparently new |
 | [`dim39-ers-constant-weight`](improved/dim39-ers-constant-weight/) | 39 | apparently new — but check Sun–Wang's latest revision |
+| [`dim41-46-p48-heads`](improved/dim41-46-p48-heads/) | 41, 42, 44–46 | current supplied candidates; integer angles and exact ranks replay with inherited populations; latest 43D certificate missing, older seed retained |
 | [`dim49-63-p48-caps`](improved/dim49-63-p48-caps/) | 49–63 | apparently new — 62 and 63 are reached here too, but claimed from the chain below |
 | [`dim62-63-ers-chain`](improved/dim62-63-ers-chain/) | 62, 63 | apparently new — the Edel–Rains–Sloane chain, which beats the caps in both |
 | [`dim68-69-gamma72-cross-sections`](improved/dim68-69-gamma72-cross-sections/) | 68, 69 | apparently new — the k-point LP with the Gram exhibited |
@@ -28,11 +29,14 @@ file, and the history of the lower bound in its dimensions.
 | [`dim73-95-gamma72-caps`](improved/dim73-95-gamma72-caps/) | 73–95 | apparently new |
 
 **The heading counts this tier, not the dimensions in which the project is ahead**, and three
-things sit outside it. The 53rd claim is **dimension 96**, filed in [`closed/`](closed/) because
+things sit outside it. The remaining claim is **dimension 96**, filed in [`closed/`](closed/) because
 it settles that dimension *against* the cap construction — the value it leaves standing is
-Edel–Rains–Sloane's, not this project's. **Dimensions 46 and 47** are in
-[`recovered/`](recovered/): ahead of Cohn's table, but published by other people and claimed
-here by nobody.
+Edel–Rains–Sloane's, not this project's. The older **46D and 47D cross-section values** are in
+[`recovered/`](recovered/): published by other people and not claimed from that
+package. The new 46D family/head configuration is larger and is registered in
+`improved/`. The 43D working total 2,911,990 is not registered while its latest
+certificate is missing; the older 2,878,155-point seed is included for replay.
+No 47D/48D improvement is claimed. The paper remains its earlier snapshot.
 
 ## [`recovered/`](recovered/) — already published, re-derived here
 
