@@ -937,21 +937,22 @@ else:
               "%s postdates that snapshot" % (len(_claimed), HEAD_PACKAGE))
 
 print()
-print("5g2. the README's 'Apparently new' list is the claims minus dimension 96")
+print("5g2. the README's original comparison scope is the claims minus dimension 96")
 # A second hand-written dimension list, three paragraphs above the one 5g checks, and it went
 # stale in the same way (it read "25-27, 30, 31, ..." after 29 was claimed).  Every claim here
-# is apparently new EXCEPT 96, where the value that stands is Edel-Rains-Sloane's, so the list
-# is determined and can be read back instead of trusted.
-_an = re.search(u'\*\*Apparently new\.\*\* Everything else [—-] dimensions ([^.]+)\.', _wr)
+# was compared against a recorded baseline EXCEPT 96, whose value is the evaluated
+# Edel-Rains-Sloane chain. Later supersession does not remove the construction.
+# Check the same complete dimension set under its historical, explicitly dated scope.
+_an = re.search(u'\*\*Original comparison scope\.\*\* Dimensions ([^.]+)\.', _wr)
 if not _an:
-    bad("README.md no longer states an 'Apparently new' dimension list")
+    bad("README.md no longer states its original comparison dimension list")
 else:
     _seen = []
     for _a, _b, _c in re.findall(u'(\d+)\s*[-–]\s*(\d+)|(\d+)', _an.group(1)):
         _seen.extend([int(_c)] if _c else list(range(int(_a), int(_b) + 1)))
     _want = set(d for d, v, pkg, how in claims) - {96}
     if set(_seen) != _want:
-        bad("README.md's 'Apparently new' list names %s and omits %s"
+        bad("README.md's original comparison scope names %s and omits %s"
             % (sorted(set(_seen) - _want) or 'nothing extra', sorted(_want - set(_seen)) or 'nothing'))
     else:
         print("   it is the %d claims minus dimension 96, whose value is Edel-Rains-Sloane's"

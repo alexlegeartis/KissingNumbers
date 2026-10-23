@@ -1,10 +1,17 @@
-# Kissing numbers: new lower bounds in dimensions 18 through 96, with verification packages
+# Kissing numbers: constructions and verification in dimensions 18 through 96
 
 The kissing number τ(n) is the largest number of unit spheres that can touch a central unit
 sphere in ℝⁿ; equivalently, the largest set of unit vectors with pairwise inner products at
-most 1/2. This repository holds new lower bounds in **58 dimensions**, each with a package
-that states its verification scope, together with the negative results that say where the remaining doors are
-shut.
+most 1/2. This repository documents constructions in **58 dimensions**, each with a package
+that states its verification scope, together with the negative results that guide further
+searches. Some of our earlier records have since been superseded. Their constructions,
+values and verification packages remain here as part of the research record.
+
+> [!IMPORTANT]
+> **October 2026 — new SOTAs in dimensions 41–46.** The October constructions
+> join our earlier results in the table below. The reported 43D total of
+> **2 911 990** awaits its certificate; the recovered **2 878 155**-point seed
+> has passed fresh population and exact angle verification.
 
 ```bash
 python audit.py --repository-only  # all 58 claims; check this repository without its surrounding workspace
@@ -18,39 +25,22 @@ report without rewriting anything). Nothing in it decides a value; steps 1-5 onl
 a driver already produced.
 
 `audit.py` recomputes what is cheap to recompute — dimensions 47 and 71 from Venkov's
-theorem, dimensions 49–95 from the shipped class-size tables — and checks that every claim
-beats the published value in its dimension, that the claims are monotone, and that none of
-them exceeds a known record in a higher dimension. It takes a few seconds.
+theorem, dimensions 49–95 from the shipped class-size tables — and checks them against
+the pinned comparison data in `common/published.py`, for monotonicity and against records
+in higher dimensions. These are checks against a recorded snapshot; they do not establish
+that every packaged value remains the best known today. It takes a few seconds.
 
-## October 2026 construction checkpoint
+## Results and construction history
 
-The new [P48n family/head package](verifications/improved/dim41-46-p48-heads/)
-registers five supplied constructions and keeps one unresolved working total:
+The comparison column records the value used when each result was obtained. Factors
+refer to that comparison. **Superseded** marks results subsequently improved by others;
+our original values and construction descriptions are retained. See
+[record status](#record-status-and-retained-results) for the later values and sources.
+The status notes use [Cohn's live leaderboard](https://cohn.mit.edu/kissing-numbers/),
+retrieved **23 October 2026**. Its 41–46D entries agree with the October comparison
+values below; its 18D entry is our 8 358-point result, credited to this repository.
 
-| dim | latest working total | verification scope |
-|---|---:|---|
-| 41 | **1 460 036** | integer angles and exact rank; inherited body populations |
-| 42 | **1 991 445** | integer angles and exact rank; inherited body populations |
-| 43 | 2 911 990 | latest certificate missing; older seed 2 878 155 included; excluded from RESULTS.md |
-| 44 | **4 939 281** | integer angles and exact rank; original standalone population replay also supplied |
-| 45 | **7 650 601** | retained bodies plus 16 pure-head points; inherited populations |
-| 46 | **13 387 797** | retained bodies plus 27 pure-head points; inherited populations |
-
-The latest progress TXT supersedes older totals inside the archives. The default
-replay does not freshly enumerate the body shells. No new improvement is
-claimed in 47D or 48D. The comparison column in RESULTS.md uses the pinned
-published data in `common/published.py`; this integration is not a new audit of
-the literature. The paper remains its earlier snapshot.
-
-```bash
-python run_all.py --only p48-heads
-python update.py --skip-paper --repository-only  # maintain the repository while leaving the paper alone
-```
-
-## The headline improvements
-
-
-| dim | previously published | **this work**     | factor   | why it was available                                             |
+| dim | recorded comparison | **this work**     | factor   | construction and record status |
 | --- | -------------------- | ----------------- | -------- | ---------------------------------------------------------------- |
 | 96  | 6 218 372 160        | **12 886 999 232**| **2.07** | no table reaches it, and Edel–Rains–Sloane was never evaluated there |
 | 71  | 331 737 984          | **2 603 658 750** | **7.85** | the tables have no entry between 65 and 71                       |
@@ -59,24 +49,36 @@ python update.py --skip-paper --repository-only  # maintain the repository while
 | 68  | 331 737 984          | **361 275 480**   | 1.09     | the same, at k = 4                                               |
 | 63  | 52 418 564           | **138 419 844**   | **2.64** | the tables stop at 48 and resume at 64                           |
 | 62  | 52 417 932           | **71 310 732**    | 1.36     | the same                                                         |
-| 38  | 566 652              | **591 612**       | 1.04     | the Leech cap construction had never been run at codimension 14  |
-| 31  | 238 350              | **238 662**       | 1.00     | the norm-8 frame layer at height √2, 672 points deleting no equator point, carried by 42 pairwise disjoint type-B classes holding 10 328 of 10 416 owner lines, with an axis of 118 of 126 |
-| 30  | 220 440              | **221 012**       | 1.00     | the dimension-28 norm-8 frame layer is not about dimension 28: at height √2 a whole Leech frame of heads carries the whole cross-polytope of ℝᵏ, 96k points, deleting nothing |
-| 29  | 209 496              | **209 968**       | 1.00     | the same frame layer one dimension up, on the whole cross-polytope of ℝ⁵ — 480 points, deleting nothing |
-| 28  | 204 520              | **204 896**       | 1.00     | the head of a deletion-free layer need not have norm 6: at height √2 a norm-8 head clears the cap threshold, and 48 of them are a whole Leech frame |
-| 27  | 200 044              | **201 566**       | 1.01     | the coset triangle of three norm-6 vectors on all four triangles of directions, with the class heads, the axial normals that remove nothing and the second cap layer all solved together rather than in sequence (first layer B. Lindow, second layer here) |
-| 26  | 198 550              | **199 806**       | 1.01     | the same triangle on both triangles of the hexagon, the second side the involution image of the first, plus a jointly-solved layer of free heads that remove nothing |
-| 25  | 197 056              | **197 579**       | 1.00     | 1016 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point |
+| 46 | 12 309 600 | **13 387 797** | 1.09 | October: independently normalized P48n families with six-dimensional heads, plus 27 pure-head points |
+| 45 | 7 380 090 | **7 650 601** | 1.04 | October: joint rearrangement of body families and five-dimensional heads, plus 16 pure-head points |
+| 44 | 4 153 600 | **4 939 281** | 1.19 | October: 1 034 complete body families with rational four-dimensional heads |
+| 43 | 2 553 792 | **2 911 990*** | 1.14 | October reported total: a switched triangular face, repacked auxiliary families and seven added points; certificate pending |
+| 42 | 1 792 386 | **1 991 445** | 1.11 | October: jointly replaced auxiliary layers with two-dimensional heads, plus a pure-head hexagon |
+| 41 | 1 324 472 | **1 460 036** | 1.10 | October: body families with one-dimensional heads, plus two pure-head poles |
+| 38  | 566 652              | **591 612**       | 1.04     | **Superseded.** The Leech cap construction at codimension 14 |
+| 31  | 238 350              | **238 662**       | 1.00     | **Superseded.** The norm-8 frame layer at height √2, 672 points deleting no equator point, carried by 42 pairwise disjoint type-B classes holding 10 328 of 10 416 owner lines, with an axis of 118 of 126 |
+| 30  | 220 440              | **221 012**       | 1.00     | **Superseded.** The dimension-28 norm-8 frame layer at height √2: a whole Leech frame of heads carries the whole cross-polytope of ℝᵏ, 96k points, deleting nothing |
+| 29  | 209 496              | **209 968**       | 1.00     | **Superseded.** The same frame layer one dimension up, on the whole cross-polytope of ℝ⁵ — 480 points, deleting nothing |
+| 28  | 204 520              | **204 896**       | 1.00     | **Superseded.** The head of a deletion-free layer need not have norm 6: at height √2 a norm-8 head clears the cap threshold, and 48 of them are a whole Leech frame |
+| 27  | 200 044              | **201 566**       | 1.01     | **Superseded.** The coset triangle of three norm-6 vectors on all four triangles of directions, with the class heads, the axial normals that remove nothing and the second cap layer all solved together rather than in sequence (first layer B. Lindow, second layer here) |
+| 26  | 198 550              | **199 806**       | 1.01     | **Superseded.** The same triangle on both triangles of the hexagon, the second side the involution image of the first, plus a jointly-solved layer of free heads that remove nothing |
+| 25  | 197 056              | **197 579**       | 1.00     | **Superseded.** 1016 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point |
 | 18  | 7 654                | **8 358**         | 1.09     | the base of Cohn–Li's hexagon had a free combinatorial parameter nobody had varied: which coset of RM(1,4) the three six-set families lie in.  Three bent cosets with pairwise-bent sums that do not sum to zero give the twelve tier-B slots three different 512-word spaces instead of one, and tier B rises from 256 to 960 |
 
 
-The full table of all 58 is `[RESULTS.md](RESULTS.md)`. The write-up, *New lower bounds
-for kissing numbers in dimensions 18 through 96*, is maintained **outside this repository**,
-because it cites this repository; see [The write-up](#the-write-up) below.
+The full table of all 58 registered constructions is [RESULTS.md](RESULTS.md).
+Its comparisons use the repository's pinned data and include results that have since
+been superseded. The earlier manuscript is in [paper/](paper/); it remains its earlier
+snapshot. See [The write-up](#the-write-up).
 
-The historical 46D and 47D cross-section values remain recovered, not claimed.
-The new 13,387,797-point 46D head construction is larger and is registered above.
-See *What is genuinely new* below.
+The [P48n family/head package](verifications/improved/dim41-46-p48-heads/) supplies
+the October constructions. The five registered totals in 41D, 42D and 44–46D pass
+integer angle and exact rank checks using inherited body populations. A fresh replay
+also passed for the older standalone 41D/42D/44D population certificates.
+**\*43D:** 2 911 990 is a reported working total, excluded from the registry until
+its certificate is supplied; the older 2 878 155-point seed is fully certified under
+the stated P48n assumptions. The latest progress report supersedes older archive
+totals. No October improvement is claimed in 47D or 48D.
 
 ## Layout
 
@@ -88,7 +90,7 @@ RESULTS.md                the full table (generated by audit.py --write-results)
 common/                   shared modules and the two proofs
   kpoint_lp.py            the k-point moment LP with exact rational dual certificates
   theta.py                extremal theta series; the Venkov one-point distribution
-  published.py            the published state of the art, with provenance
+  published.py            pinned published comparison data, with provenance
   leech.py golay.py m24.py
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
@@ -111,6 +113,9 @@ KNOWLEDGE.md              the full working record, 158 sections, including every
 Every claim but one is in this tier. The exception is dimension 96, whose package is
 `closed/dim96-ers-takeover/`, because what it establishes is that the cap construction
 cannot reach 96 — the claim there is Edel–Rains–Sloane’s.
+
+These directory names preserve the classification at packaging time. A construction
+in `improved/` may now be superseded by a later publication; its package is retained.
 
 
 | package                                                                                      | dims   | the idea                                                                                                                                                                                     |
@@ -143,9 +148,39 @@ the lower bound in its dimensions** — who held it, when, and by what construct
 
 
 
-## What is genuinely new, and what is not
+## Record status and retained results
 
-This matters more than the size of the table, so it is stated first and plainly.
+**Later improvements.** Our earlier values remain valid lower bounds and stay in
+this repository. The later values below are from
+[Cohn's leaderboard](https://cohn.mit.edu/kissing-numbers/) as retrieved on
+**23 October 2026**, and, for 49–55D, from Yang et al.,
+[*Large-Scale Autonomous Discovery of Kissing Number Constructions*, Table 1](https://arxiv.org/html/2609.35051v1#S1.T1)
+(28 September 2026). Cohn's table covers dimensions through 48; the higher-dimensional
+comparison is given separately by its source.
+
+| dim | our retained result | later result | source |
+|---|---:|---:|---|
+| 25 | 197 579 | 197 583 | Cohn, 23 October |
+| 26 | 199 806 | 199 868 | Cohn, 23 October |
+| 27 | 201 566 | 201 589 | Cohn, 23 October |
+| 28 | 204 896 | 205 172 | Cohn, 23 October |
+| 29 | 209 968 | 210 495 | Cohn, 23 October |
+| 30 | 221 012 | 222 073 | Cohn, 23 October |
+| 31 | 238 662 | 241 079 | Cohn, 23 October |
+| 38 | 591 612 | 605 322 | Cohn, 23 October |
+| 39 | 756 116 | 768 916 | Cohn, 23 October |
+| 49 | 52 430 140 | 52 430 156 | Yang et al., Table 1 |
+| 50 | 52 458 418 | 52 458 468 | Yang et al., Table 1 |
+| 51 | 52 500 816 | 52 500 930 | Yang et al., Table 1 |
+| 52 | 52 585 516 | 52 585 772 | Yang et al., Table 1 |
+| 53 | 52 698 222 | 52 698 696 | Yang et al., Table 1 |
+| 54 | 52 922 906 | 52 923 774 | Yang et al., Table 1 |
+| 55 | 53 299 730 | 53 301 140 | Yang et al., Table 1 |
+
+These dated sources determine the supersession notes; a new global record count
+is not inferred from the repository's older comparison cache.
+The October 41–46D constructions are presented alongside the earlier results above,
+with the outstanding 43D certificate obligation stated explicitly.
 
 **Historical recovered cross-sections in dimensions 46 and 47.** τ(47) ≥ 23 766 960 is due to
 Boyvalenkov–Cherkashin, *Results in Mathematics* **80** (2025), Paper No. 3, and is
@@ -160,8 +195,8 @@ claimed**: they are not in `RESULTS.md`, not counted among the 58, and not prese
 results in the paper. They are kept, in
 `[verifications/recovered/](verifications/recovered/)`, because reproducing a published
 count from a method built without reference to it is the strongest validation available.
-What is still true, and is a fact about the table rather than about this project, is that
-**Cohn's table has absorbed neither**, recording 9 741 412 and 5 318 060.
+Cohn's live table now includes both recovered values. The pinned August comparison
+cache still records the older 9 741 412 and 5 318 060 entries.
 
 **Withdrawn earlier constructions.** The old lattice cross-section values in
 dimensions 45 and 44 were beaten by Sun–Wang. The new family/head constructions
@@ -170,17 +205,29 @@ project's values lie inside the LP brackets it computed, which is a sharp cross-
 machinery — see
 `[verifications/superseded/dim44-45-p48-cross-sections/](verifications/superseded/dim44-45-p48-cross-sections/)`.
 
-**Not claimed.** τ(19) = 11 948 was closed during this project *at somebody else's value*:
-the construction's exact ceiling is proven here to be exactly Ho's number. Dimension 12's
-record likewise landed elsewhere while this work was in progress.
+**Historical calibration.** The 19D construction studied here has exact ceiling
+11 948, matching Ho's record at that time. Cohn's live table now lists 12 460;
+the ceiling remains a result about that construction family. Dimension 12's record
+likewise landed elsewhere while this work was in progress.
 
-**Apparently new.** Everything else — dimensions 18, 25–31, 38, 39, 41–42, 44–46, 49–63, 68–71, 73–95. No
-prior claim in any of them is known to us. The claim we would most like checked by someone
-who knows the area is **dimensions 70 and 71**: the one-point distribution of Γ₇₂'s minimal
-shell may well be folklore — it is a five-minute calculation once you know Venkov's theorem —
-but the consequence for τ(71) does not appear to have been recorded.
+**Original comparison scope.** Dimensions 18, 25–31, 38, 39, 41–42, 44–46, 49–63, 68–71, 73–95.
+These are the registered construction results compared with their recorded baselines;
+dimension 96 is the evaluated Edel–Rains–Sloane chain. The list includes the superseded
+results above. An earlier improvement remains a constructive result after a larger
+configuration is found. The literature status of the 70D and 71D consequences of the
+one-point distribution of Γ₇₂'s minimal shell still merits specialist review.
 
-## The four ideas
+## The construction ideas
+
+**Independently normalized body families and heads (41–46).** The October constructions
+use a rank-40 complement of sqrt(3) E8 in P48n, with heads in one to six dimensions.
+Each family is normalized separately, so families can have different original lengths.
+Joint class replacements and head motions admit additional complete or partial families;
+zero-body points in the existing head span give the latest 41D, 42D, 45D and 46D
+extensions. The 43D working construction additionally uses seven nonzero-body points
+and awaits its coordinate certificate. Exact checks, population assumptions and fresh
+replay reports are documented in the
+[verification package](verifications/improved/dim41-46-p48-heads/).
 
 **Cross-sections of extremal lattices (46, 47, 68–71).** For an extremal even unimodular
 lattice, Venkov's theorem makes the minimal shell a spherical 11-design, so every polynomial
@@ -241,8 +288,10 @@ never an invalid one. Every Gram matrix used is proved realizable — a bound fo
 does not occur is worth nothing, and dimension 69 was withdrawn once on exactly this ground
 before the triple was exhibited in coordinates. Every construction is verified in explicit coordinates
 where the configuration is small enough to write down, and by exact integer arithmetic on the
-Gram where it is not. Published values are re-fetched before being cited: **Cohn's table
-moves**, and two entries (dimensions 12 and 19) changed while this work was in progress.
+Gram where it is not, with outstanding certificate gaps identified explicitly.
+Published comparisons are dated: **Cohn's table moves**, and two entries (dimensions
+12 and 19) changed while this work was in progress. The supersession table above records
+the later September publication separately from the pinned computational baselines.
 
 Negative results are recorded as carefully as positive ones, in
 `[verifications/closed/](verifications/closed/)`, because they are what stops the next
@@ -285,10 +334,11 @@ Gram whose realizability is unproved. It is now in `closed/`.
 returned as subsets of the E₈ roots, so they live in ℝ⁸) and used small greedily-found
 classes rather than the real 248-line one. Rewritten; it now reproduces five table entries
 exactly.
-- **Cohn's table is stale in four dimensions** — 32, 33, 34 and 37 — from Echols'
-2026 constant-weight improvements, which Brouwer's page already carries. Dimension 37's
-live record is **496 232**, not 494 312. This is not a claim of this project, but it is
-worth passing on.
+- **The August comparison table lagged four dimensions** — 32, 33, 34 and 37 — after
+Echols' 2026 constant-weight improvements appeared on Brouwer's page. In particular,
+496 232 improved the table's 494 312 in dimension 37. Yang et al.'s September
+Table 1 subsequently reports 498 024, and Cohn's live table now lists 500 008.
+These are comparison updates, not constructions claimed here.
 
 - **The Edel–Rains–Sloane floor was taken at level 0 only**, twice over. First, dimensions
 62 and 63 were claimed from the cap construction over P₄₈ at 64 217 822 and 67 365 752 while a
@@ -383,6 +433,8 @@ python run_all.py --only dim31 # just the jobs whose label or command matches
 python run_all.py --full   # 86 scripts, budget about 9 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
+python run_all.py --only p48-heads  # October constructions: exact consistency replay
+python update.py --skip-paper --repository-only  # maintain constructions without changing the manuscript
 ```
 
 Or individually, each from its own directory:
