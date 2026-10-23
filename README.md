@@ -36,7 +36,16 @@ that every packaged value remains the best known today. It takes a few seconds.
 
 ## Results and construction history
 
-The comparison column records the value used when each result was obtained.
+The **recorded comparison** is the historical baseline used when each result was
+obtained. **Comparison method / source** names its construction and links to the
+paper or certificate supporting that baseline. Entries marked *derived* are
+comparison floors computed by direct sum or embedding. In a direct sum, the
+parent configuration and the indicated tail occupy orthogonal subspaces, so their
+kissing counts add. The paper links document the parent constructions; the tail
+links point to the [pinned configuration counts and references](common/published.py)
+used in the calculation. The 80D direct sum is also a historical Nebe–Sloane table
+entry, as recorded there.
+
 **Our gain** compares this work with the recorded comparison. **Later gain** compares
 a superseding SOTA with our retained result. Gains below 2x are shown as percentage
 increases; gains of 2x or more are shown as multipliers. Small percentages retain
@@ -44,86 +53,89 @@ enough digits to show improvements of only a few points. **Our method** links to
 our verification package. **Superseding method** names the method behind the displayed
 larger SOTA and links to its repository or article. Full construction notes are
 expandable below.
+
 The **SOTA value** column gives the larger current result
 where ours has been surpassed, and **SOTA** where our value remains best in the
-reviewed sources (including ties). A larger SOTA value marks a superseded result;
+reviewed sources. A larger SOTA value marks a superseded result;
 our original values and construction descriptions are retained. All registered
 construction results are listed below in increasing dimension order, including small
 improvements. See
 [record status](#record-status-and-retained-results) for the later values and sources.
+
 The status notes use [Cohn's live leaderboard](https://cohn.mit.edu/kissing-numbers/),
 retrieved **24 October 2026**. All **48** lower/upper-bound rows were captured in
 [the dated comparison](common/cohn_20261024.json). Across the **18** registered
 dimensions it covers, our eight new results in 36–37D and 41–46D exceed the
-listed bounds, 18D ties, and nine earlier results are superseded as shown below.
+listed bounds, our 18D result is already listed, and nine earlier results are
+superseded as shown below.
 The fetched table contains dimensions 1–48; higher-dimensional status uses
 the separate sources below. Its 18D entry credits this repository.
 
-| dim | recorded comparison | **this work** | SOTA value | our gain | later gain | SOTA period | our method | superseding method |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18 | 7 654 | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
-| 25 | 197 056 | **197 579** | 197 583 | +0.27% | +0.002% | 2026-08-30 to 2026-09-28 | [Leech heads](verifications/improved/dim25-lens-heads/) | [Heads + motion](https://github.com/k-nic/kissing_d25-31) |
-| 26 | 198 550 | **199 806** | 199 868 | +0.63% | +0.031% | 2026-09-08 to 2026-10-05 | [Coset triangles](verifications/improved/dim26-27-iota-triangles/) | [Caps + free heads](https://github.com/k-nic/kissing_d25-31) |
-| 27 | 200 044 | **201 566** | 201 589 | +0.76% | +0.011% | 2026-08-30 to 2026-09-28 | [Coset triangles](verifications/improved/dim26-27-iota-triangles/) | [Cap colouring](https://github.com/k-nic/kissing_d25-31) |
-| 28 | 204 520 | **204 896** | 205 172 | +0.18% | +0.13% | 2026-09-16 to 2026-10-10 | [Frame layer](verifications/improved/dim28-norm8-frame-layer/) | [Leech lift](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
-| 29 | 209 496 | **209 968** | 210 495 | +0.23% | +0.25% | 2026-09-16 to 2026-10-05 | [Frame layer](verifications/improved/dim29-30-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
-| 30 | 220 440 | **221 012** | 222 073 | +0.26% | +0.48% | 2026-09-16 to 2026-10-10 | [Frame layer](verifications/improved/dim29-30-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
-| 31 | 238 350 | **238 662** | 241 079 | +0.13% | +1% | 2026-09-16 to 2026-10-05 | [Frame layer](verifications/improved/dim31-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
-| 36 | 484 760 | **501 633** | **SOTA** | +3.5% | — | since 2026-10-24 | [Coxeter–Todd cosets](verifications/improved/dim36-37-coxeter-todd/) | — |
-| 37 | 500 008 | **505 359** | **SOTA** | +1.1% | — | since 2026-10-24 | [Phase code + latitudes](verifications/improved/dim36-37-coxeter-todd/) | — |
-| 38 | 566 652 | **591 612** | 605 322 | +4.4% | +2.3% | 2026-08-30 to 2026-09-28 | [Leech caps](verifications/improved/dim38-leech-large-codimension/) | [Equator extension](https://github.com/QH-Lin/kissing-numbers-33-39) |
-| 39 | 755 988 | **756 116** | 768 916 | +0.017% | +1.7% | 2026-08-30 to 2026-09-28 | [ERS](verifications/improved/dim39-ers-constant-weight/) | [ERS + supports](https://github.com/QH-Lin/kissing-numbers-33-39) |
-| 41 | 1 324 472 | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 42 | 1 792 386 | **1 991 445** | **SOTA** | +11% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 43 | 2 553 792 | **2 919 743** | **SOTA** | +14% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 44 | 4 153 600 | **4 939 281** | **SOTA** | +19% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 45 | 7 380 090 | **7 655 056** | **SOTA** | +3.7% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 46 | 12 309 600 | **13 387 797** | **SOTA** | +8.8% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 49 | 52 416 002 | **52 430 776** | **SOTA** | +0.0282% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 50 | 52 416 006 | **52 460 322** | **SOTA** | +0.0845% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 51 | 52 416 012 | **52 504 618** | **SOTA** | +0.169% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 52 | 52 416 024 | **52 593 106** | **SOTA** | +0.338% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 53 | 52 416 040 | **52 710 864** | **SOTA** | +0.562% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 54 | 52 416 072 | **52 945 570** | **SOTA** | +1.01% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 55 | 52 416 126 | **53 339 086** | **SOTA** | +1.76% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 56 | 52 416 240 | **54 159 098** | **SOTA** | +3.33% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 57 | 52 416 306 | **54 627 038** | **SOTA** | +4.22% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 58 | 52 416 510 | **56 043 152** | **SOTA** | +6.92% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 59 | 52 416 604 | **56 680 448** | **SOTA** | +8.13% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 60 | 52 416 841 | **57 690 671** | **SOTA** | +10.1% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 61 | 52 417 154 | **71 310 488** | **SOTA** | +36% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 62 | 52 417 932 | **100 371 468** | **SOTA** | +91.5% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 63 | 52 418 564 | **182 407 428** | **SOTA** | 3.48x | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 66 | 331 737 990 | **338 292 100** | **SOTA** | +1.98% | — | since 2026-10-24 | [Code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 67 | 331 737 996 | **351 400 326** | **SOTA** | +5.93% | — | since 2026-10-24 | [Code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 68 | 331 737 984 | **371 521 432** | **SOTA** | +12% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 69 | 331 737 984 | **627 822 180** | **SOTA** | +89% | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim68-69-gamma72-cross-sections/) | — |
-| 70 | 331 737 984 | **1 249 778 250** | **SOTA** | 3.77x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
-| 71 | 331 737 984 | **2 603 658 750** | **SOTA** | 7.85x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
-| 73 | 6 218 175 602 | **6 218 187 616** | **SOTA** | +0.000193% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 74 | 6 218 175 606 | **6 218 211 606** | **SOTA** | +0.000579% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 75 | 6 218 175 612 | **6 218 246 060** | **SOTA** | +0.00113% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 76 | 6 218 175 624 | **6 218 315 280** | **SOTA** | +0.00225% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 77 | 6 218 175 640 | **6 218 407 344** | **SOTA** | +0.00373% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 78 | 6 218 175 672 | **6 218 518 360** | **SOTA** | +0.00551% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 79 | 6 218 175 726 | **6 218 584 924** | **SOTA** | +0.00658% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 80 | 6 218 175 840 | **6 219 474 100** | **SOTA** | +0.0209% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 81 | 6 218 175 906 | **6 219 649 244** | **SOTA** | +0.0237% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 82 | 6 218 176 110 | **6 220 001 152** | **SOTA** | +0.0294% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 83 | 6 218 176 204 | **6 220 533 856** | **SOTA** | +0.0379% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 84 | 6 218 176 441 | **6 221 555 280** | **SOTA** | +0.0543% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 85 | 6 218 176 754 | **6 222 003 336** | **SOTA** | +0.0615% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 86 | 6 218 177 532 | **6 225 153 600** | **SOTA** | +0.112% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 87 | 6 218 178 164 | **6 225 433 068** | **SOTA** | +0.117% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 88 | 6 218 179 920 | **6 231 205 108** | **SOTA** | +0.209% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 89 | 6 218 181 330 | **6 233 054 848** | **SOTA** | +0.24% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 90 | 6 218 183 254 | **6 238 744 788** | **SOTA** | +0.33% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 91 | 6 218 187 548 | **6 247 801 034** | **SOTA** | +0.48% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 92 | 6 218 195 048 | **6 266 405 667** | **SOTA** | +0.78% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 93 | 6 218 205 368 | **6 294 850 360** | **SOTA** | +1.2% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 94 | 6 218 225 496 | **6 355 739 600** | **SOTA** | +2.2% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 95 | 6 218 268 750 | **7 077 231 372** | **SOTA** | +13.8% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 96 | 6 218 372 160 | **13 264 027 840** | **SOTA** | 2.13x | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| dim | recorded comparison | comparison method / source | **this work** | SOTA value | our gain | later gain | SOTA period | our method | superseding method |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 18 | 7 654 | [Cohn–Li, BW16 + hexagons](https://arxiv.org/abs/2411.04916v3) | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
+| 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 579** | 197 583 | +0.27% | +0.002% | 2026-08-30 to 2026-09-28 | [Leech heads](verifications/improved/dim25-lens-heads/) | [Heads + motion](https://github.com/k-nic/kissing_d25-31) |
+| 26 | 198 550 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **199 806** | 199 868 | +0.63% | +0.031% | 2026-09-08 to 2026-10-05 | [Coset triangles](verifications/improved/dim26-27-iota-triangles/) | [Caps + free heads](https://github.com/k-nic/kissing_d25-31) |
+| 27 | 200 044 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **201 566** | 201 589 | +0.76% | +0.011% | 2026-08-30 to 2026-09-28 | [Coset triangles](verifications/improved/dim26-27-iota-triangles/) | [Cap colouring](https://github.com/k-nic/kissing_d25-31) |
+| 28 | 204 520 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **204 896** | 205 172 | +0.18% | +0.13% | 2026-09-16 to 2026-10-10 | [Frame layer](verifications/improved/dim28-norm8-frame-layer/) | [Leech lift](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
+| 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **209 968** | 210 495 | +0.23% | +0.25% | 2026-09-16 to 2026-10-05 | [Frame layer](verifications/improved/dim29-30-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
+| 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **221 012** | 222 073 | +0.26% | +0.48% | 2026-09-16 to 2026-10-10 | [Frame layer](verifications/improved/dim29-30-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
+| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **238 662** | 241 079 | +0.13% | +1% | 2026-09-16 to 2026-10-05 | [Frame layer](verifications/improved/dim31-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
+| 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **501 633** | **SOTA** | +3.5% | — | since 2026-10-24 | [Coxeter–Todd cosets](verifications/improved/dim36-37-coxeter-todd/) | — |
+| 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **505 359** | **SOTA** | +1.1% | — | since 2026-10-24 | [Phase code + latitudes](verifications/improved/dim36-37-coxeter-todd/) | — |
+| 38 | 566 652 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **591 612** | 605 322 | +4.4% | +2.3% | 2026-08-30 to 2026-09-28 | [Leech caps](verifications/improved/dim38-leech-large-codimension/) | [Equator extension](https://github.com/QH-Lin/kissing-numbers-33-39) |
+| 39 | 755 988 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **756 116** | 768 916 | +0.017% | +1.7% | 2026-08-30 to 2026-09-28 | [ERS](verifications/improved/dim39-ers-constant-weight/) | [ERS + supports](https://github.com/QH-Lin/kissing-numbers-33-39) |
+| 41 | 1 324 472 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 42 | 1 792 386 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 991 445** | **SOTA** | +11% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 43 | 2 553 792 | [Yang et al., P48n section](https://arxiv.org/abs/2609.35051v1) | **2 919 743** | **SOTA** | +14% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 44 | 4 153 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **4 939 281** | **SOTA** | +19% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 45 | 7 380 090 | [Yang et al., QR neighbour projection](https://arxiv.org/abs/2609.35051v1) | **7 655 056** | **SOTA** | +3.7% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 46 | 12 309 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **13 387 797** | **SOTA** | +8.8% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 49 | 52 416 002 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [1D tail](common/published.py) *(derived)* | **52 430 776** | **SOTA** | +0.0282% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 50 | 52 416 006 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [2D tail](common/published.py) *(derived)* | **52 460 322** | **SOTA** | +0.0845% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 51 | 52 416 012 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [3D tail](common/published.py) *(derived)* | **52 504 618** | **SOTA** | +0.169% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 52 | 52 416 024 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [4D tail](common/published.py) *(derived)* | **52 593 106** | **SOTA** | +0.338% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 53 | 52 416 040 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [5D tail](common/published.py) *(derived)* | **52 710 864** | **SOTA** | +0.562% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 54 | 52 416 072 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [6D tail](common/published.py) *(derived)* | **52 945 570** | **SOTA** | +1.01% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 55 | 52 416 126 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [7D tail](common/published.py) *(derived)* | **53 339 086** | **SOTA** | +1.76% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 56 | 52 416 240 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [8D tail](common/published.py) *(derived)* | **54 159 098** | **SOTA** | +3.33% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 57 | 52 416 306 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [9D tail](common/published.py) *(derived)* | **54 627 038** | **SOTA** | +4.22% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 58 | 52 416 510 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [10D tail](common/published.py) *(derived)* | **56 043 152** | **SOTA** | +6.92% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 59 | 52 416 604 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail](common/published.py) *(derived)* | **56 680 448** | **SOTA** | +8.13% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **57 690 671** | **SOTA** | +10.1% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **71 310 488** | **SOTA** | +36% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **100 371 468** | **SOTA** | +91.5% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **182 407 428** | **SOTA** | 3.48x | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 66 | 331 737 990 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **338 292 100** | **SOTA** | +1.98% | — | since 2026-10-24 | [Code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 67 | 331 737 996 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **351 400 326** | **SOTA** | +5.93% | — | since 2026-10-24 | [Code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **371 521 432** | **SOTA** | +12% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **627 822 180** | **SOTA** | +89% | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim68-69-gamma72-cross-sections/) | — |
+| 70 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **1 249 778 250** | **SOTA** | 3.77x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
+| 71 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **2 603 658 750** | **SOTA** | 7.85x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
+| 73 | 6 218 175 602 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [1D tail](common/published.py) *(derived)* | **6 218 187 616** | **SOTA** | +0.000193% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 74 | 6 218 175 606 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [2D tail](common/published.py) *(derived)* | **6 218 211 606** | **SOTA** | +0.000579% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 75 | 6 218 175 612 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [3D tail](common/published.py) *(derived)* | **6 218 246 060** | **SOTA** | +0.00113% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 76 | 6 218 175 624 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [4D tail](common/published.py) *(derived)* | **6 218 315 280** | **SOTA** | +0.00225% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 77 | 6 218 175 640 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [5D tail](common/published.py) *(derived)* | **6 218 407 344** | **SOTA** | +0.00373% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 78 | 6 218 175 672 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [6D tail](common/published.py) *(derived)* | **6 218 518 360** | **SOTA** | +0.00551% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 79 | 6 218 175 726 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [7D tail](common/published.py) *(derived)* | **6 218 584 924** | **SOTA** | +0.00658% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 80 | 6 218 175 840 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ E8 (tabulated direct sum) | **6 219 474 100** | **SOTA** | +0.0209% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 81 | 6 218 175 906 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [9D tail](common/published.py) *(derived)* | **6 219 649 244** | **SOTA** | +0.0237% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 82 | 6 218 176 110 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [10D tail](common/published.py) *(derived)* | **6 220 001 152** | **SOTA** | +0.0294% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 83 | 6 218 176 204 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [11D tail](common/published.py) *(derived)* | **6 220 533 856** | **SOTA** | +0.0379% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 84 | 6 218 176 441 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [12D tail](common/published.py) *(derived)* | **6 221 555 280** | **SOTA** | +0.0543% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 85 | 6 218 176 754 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [13D tail](common/published.py) *(derived)* | **6 222 003 336** | **SOTA** | +0.0615% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 86 | 6 218 177 532 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [14D tail](common/published.py) *(derived)* | **6 225 153 600** | **SOTA** | +0.112% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 87 | 6 218 178 164 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [15D tail](common/published.py) *(derived)* | **6 225 433 068** | **SOTA** | +0.117% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 88 | 6 218 179 920 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [16D tail](common/published.py) *(derived)* | **6 231 205 108** | **SOTA** | +0.209% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **6 233 054 848** | **SOTA** | +0.24% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 90 | 6 218 183 254 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [18D tail](common/published.py) *(derived)* | **6 238 744 788** | **SOTA** | +0.33% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **6 247 801 034** | **SOTA** | +0.48% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 92 | 6 218 195 048 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [20D tail](common/published.py) *(derived)* | **6 266 405 667** | **SOTA** | +0.78% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 93 | 6 218 205 368 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [21D tail](common/published.py) *(derived)* | **6 294 850 360** | **SOTA** | +1.2% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 94 | 6 218 225 496 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [22D tail](common/published.py) *(derived)* | **6 355 739 600** | **SOTA** | +2.2% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 95 | 6 218 268 750 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [23D tail](common/published.py) *(derived)* | **7 077 231 372** | **SOTA** | +13.8% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 96 | 6 218 372 160 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [Leech](https://doi.org/10.4153/CJM-1967-017-0) *(derived)* | **13 264 027 840** | **SOTA** | 2.13x | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
 
 
 The historical SOTA period covers this project's run of published records in each
