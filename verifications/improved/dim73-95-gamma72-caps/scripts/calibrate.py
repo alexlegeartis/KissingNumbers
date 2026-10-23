@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """CALIBRATION: build the cap construction in explicit coordinates over the LEECH lattice,
-where the answer is already in Cohn's table, and check it point by point.
+against the recorded August 2026 comparison table, and check it point by point.
 
 This is the strongest single check on the whole cap family.  The model used for dimensions
 73-95 over Gamma_72 is exercised here on the one lattice where every answer is published:
 
-    dim 26, 28, 29, 30, 31   must reproduce Cohn's table EXACTLY
+    dim 26, 28, 29, 30, 31   must reproduce the August 2026 table EXACTLY
     dim 25                   must give 197058, the table's 197056 plus the two poles
     dim 27                   must give 200540, the table's 200044 plus one class
 
@@ -75,7 +75,7 @@ SYS = {1: "A_1", 2: "A_2", 3: "A_3", 4: "D_4", 5: "D_5", 6: "E_6", 7: "E_7"}
 # Cohn's table, dimensions 25-31, verified 2026-08-20
 PUB = {25: 197056, 26: 198550, 27: 200044, 28: 204520, 29: 209496, 30: 220440,
        31: 238350}
-# what this construction gives; 25 and 27 are the two records this project holds
+# what this historical construction gives; 25 and 27 improved the August 2026 baseline
 MINE = {25: 197058, 26: 198550, 27: 200540, 28: 204520, 29: 209496, 30: 220440,
         31: 238350}
 
@@ -258,9 +258,9 @@ def main():
 
     print()
     print("=" * 92)
-    print("Dimensions 26, 28, 29, 30 and 31 reproduce Cohn's table EXACTLY; 25 and 27 are")
-    print("the two records this project holds, by +2 and +496.  Nothing else in the range")
-    print("has any slack, which is why this repository claims nothing there.")
+    print("Dimensions 26, 28, 29, 30 and 31 reproduce the August 2026 table exactly;")
+    print("25 and 27 improve that historical baseline by +2 and +496. Later constructions")
+    print("are listed in RESULTS.md; this replay calibrates the earlier construction.")
     print("=" * 92)
     print("ALL CHECKS PASSED" if ok else "*** FAILURES ***")
     return 0 if ok else 1

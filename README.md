@@ -44,7 +44,7 @@ values below; its 18D entry is our 8 358-point result, credited to this reposito
 
 | dim | recorded comparison | **this work** | factor | Historical SOTA period | construction and record status |
 | --- | --- | --- | --- | --- | --- |
-| 18 | 7 654 | **8 358** | 1.09 | — | the base of Cohn–Li's hexagon had a free combinatorial parameter nobody had varied: which coset of RM(1,4) the three six-set families lie in.  Three bent cosets with pairwise-bent sums that do not sum to zero give the twelve tier-B slots three different 512-word spaces instead of one, and tier B rises from 256 to 960 |
+| 18 | 7 654 | **8 358** | 1.09 | 2026-09-17 | the base of Cohn–Li's hexagon had a free combinatorial parameter nobody had varied: which coset of RM(1,4) the three six-set families lie in.  Three bent cosets with pairwise-bent sums that do not sum to zero give the twelve tier-B slots three different 512-word spaces instead of one, and tier B rises from 256 to 960 |
 | 25 | 197 056 | **197 579** | 1.00 | 2026-08-30 to 2026-09-28 | **Superseded.** 1016 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point |
 | 26 | 198 550 | **199 806** | 1.01 | 2026-09-08 to 2026-10-05 | **Superseded.** The same triangle on both triangles of the hexagon, the second side the involution image of the first, plus a jointly-solved layer of free heads that remove nothing |
 | 27 | 200 044 | **201 566** | 1.01 | 2026-08-30 to 2026-09-28 | **Superseded.** The coset triangle of three norm-6 vectors on all four triangles of directions, with the class heads, the axial normals that remove nothing and the second cap layer all solved together rather than in sequence (first layer B. Lindow, second layer here) |
@@ -54,12 +54,12 @@ values below; its 18D entry is our 8 358-point result, credited to this reposito
 | 31 | 238 350 | **238 662** | 1.00 | 2026-09-16 to 2026-10-05 | **Superseded.** The norm-8 frame layer at height √2, 672 points deleting no equator point, carried by 42 pairwise disjoint type-B classes holding 10 328 of 10 416 owner lines, with an axis of 118 of 126 |
 | 38 | 566 652 | **591 612** | 1.04 | 2026-08-30 to 2026-09-28 | **Superseded.** The Leech cap construction at codimension 14 |
 | 39 | 755 988 | **756 116** | 1.00 | 2026-08-30 to 2026-09-28 | **Superseded.** [Edel–Rains–Sloane with the updated constant-weight codes](verifications/improved/dim39-ers-constant-weight/) |
-| 41 | 1 324 472 | **1 460 036** | 1.10 | — | October: body families with one-dimensional heads, plus two pure-head poles |
-| 42 | 1 792 386 | **1 991 445** | 1.11 | — | October: jointly replaced auxiliary layers with two-dimensional heads, plus a pure-head hexagon |
-| 43 | 2 553 792 | **2 911 990*** | 1.14 | — | October: our best 43D result, using a switched triangular face, repacked auxiliary families and seven added points; certificate pending |
-| 44 | 4 153 600 | **4 939 281** | 1.19 | — | October: 1 034 complete body families with rational four-dimensional heads |
-| 45 | 7 380 090 | **7 650 601** | 1.04 | — | October: joint rearrangement of body families and five-dimensional heads, plus 16 pure-head points |
-| 46 | 12 309 600 | **13 387 797** | 1.09 | — | October: independently normalized P48n families with six-dimensional heads, plus 27 pure-head points |
+| 41 | 1 324 472 | **1 460 036** | 1.10 | 2026-10-23 | October: body families with one-dimensional heads, plus two pure-head poles |
+| 42 | 1 792 386 | **1 991 445** | 1.11 | 2026-10-23 | October: jointly replaced auxiliary layers with two-dimensional heads, plus a pure-head hexagon |
+| 43 | 2 553 792 | **2 911 990*** | 1.14 | 2026-10-23 | October: our best 43D result, using a switched triangular face, repacked auxiliary families and seven added points; certificate pending |
+| 44 | 4 153 600 | **4 939 281** | 1.19 | 2026-10-23 | October: 1 034 complete body families with rational four-dimensional heads |
+| 45 | 7 380 090 | **7 650 601** | 1.04 | 2026-10-23 | October: joint rearrangement of body families and five-dimensional heads, plus 16 pure-head points |
+| 46 | 12 309 600 | **13 387 797** | 1.09 | 2026-10-23 | October: independently normalized P48n families with six-dimensional heads, plus 27 pure-head points |
 | 49 | 52 416 002 | **52 430 140** | 1.00 | 2026-08-30 to 2026-09-28 | **Superseded.** [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
 | 50 | 52 416 006 | **52 458 418** | 1.00 | 2026-08-30 to 2026-09-28 | **Superseded.** [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
 | 51 | 52 416 012 | **52 500 816** | 1.00 | 2026-08-30 to 2026-09-28 | **Superseded.** [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
@@ -67,57 +67,61 @@ values below; its 18D entry is our 8 358-point result, credited to this reposito
 | 53 | 52 416 040 | **52 698 222** | 1.01 | 2026-08-30 to 2026-09-28 | **Superseded.** [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
 | 54 | 52 416 072 | **52 922 906** | 1.01 | 2026-08-30 to 2026-09-28 | **Superseded.** [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
 | 55 | 52 416 126 | **53 299 730** | 1.02 | 2026-08-30 to 2026-09-28 | **Superseded.** [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
-| 56 | 52 416 240 | **54 085 392** | 1.03 | — | [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
-| 57 | 52 416 306 | **54 534 176** | 1.04 | — | [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
-| 58 | 52 416 510 | **55 893 422** | 1.07 | — | [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
-| 59 | 52 416 604 | **56 505 668** | 1.08 | — | [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
-| 60 | 52 416 841 | **57 477 123** | 1.10 | — | [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
-| 61 | 52 417 154 | **59 898 694** | 1.14 | — | [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
-| 62 | 52 417 932 | **71 310 732** | 1.36 | — | Edel–Rains–Sloane chain (62,15,2); the recorded tables stop at 48 and resume at 64 |
-| 63 | 52 418 564 | **138 419 844** | **2.64** | — | Edel–Rains–Sloane chain (63,15,2); the recorded tables stop at 48 and resume at 64 |
-| 68 | 331 737 984 | **361 275 480** | 1.09 | — | Gamma72 four-point cross-section programme at its exact optimum, with a D4 Gram matrix |
-| 69 | 331 737 984 | **627 822 180** | **1.89** | — | Gamma72 three-point cross-section programme at its exact optimum, with the Gram determinant forced by Hermite |
-| 70 | 331 737 984 | **1 249 778 250** | **3.77** | — | Gamma72 two-point cross-section count; the recorded tables have no entry between 65 and 71 |
-| 71 | 331 737 984 | **2 603 658 750** | **7.85** | — | Gamma72 one-point cross-section count; the recorded tables have no entry between 65 and 71 |
-| 73 | 6 218 175 602 | **6 218 179 814** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 74 | 6 218 175 606 | **6 218 192 454** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 75 | 6 218 175 612 | **6 218 209 308** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 76 | 6 218 175 624 | **6 218 243 016** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 77 | 6 218 175 640 | **6 218 285 152** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 78 | 6 218 175 672 | **6 218 377 840** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 79 | 6 218 175 726 | **6 218 529 454** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 80 | 6 218 175 840 | **6 218 849 228** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 81 | 6 218 175 906 | **6 219 034 270** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 82 | 6 218 176 110 | **6 219 605 578** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 83 | 6 218 176 204 | **6 219 621 690** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 84 | 6 218 176 441 | **6 220 293 304** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 85 | 6 218 176 754 | **6 220 745 414** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 86 | 6 218 177 532 | **6 223 567 844** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 87 | 6 218 178 164 | **6 224 703 598** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 88 | 6 218 179 920 | **6 230 206 492** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 89 | 6 218 181 330 | **6 233 054 848** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 90 | 6 218 183 254 | **6 238 744 788** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 91 | 6 218 187 548 | **6 247 801 034** | 1.00 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 92 | 6 218 195 048 | **6 266 405 667** | 1.01 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 93 | 6 218 205 368 | **6 294 850 360** | 1.01 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 94 | 6 218 225 496 | **6 355 739 600** | 1.02 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 95 | 6 218 268 750 | **6 473 065 046** | 1.04 | — | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
-| 96 | 6 218 372 160 | **12 886 999 232** | **2.07** | — | no table reaches it, and Edel–Rains–Sloane was never evaluated there |
+| 56 | 52 416 240 | **54 085 392** | 1.03 | 2026-08-30 | [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
+| 57 | 52 416 306 | **54 534 176** | 1.04 | 2026-08-30 | [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
+| 58 | 52 416 510 | **55 893 422** | 1.07 | 2026-08-30 | [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
+| 59 | 52 416 604 | **56 505 668** | 1.08 | 2026-08-30 | [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
+| 60 | 52 416 841 | **57 477 123** | 1.10 | 2026-08-30 | [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
+| 61 | 52 417 154 | **59 898 694** | 1.14 | 2026-08-30 | [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/) |
+| 62 | 52 417 932 | **71 310 732** | 1.36 | 2026-08-30 | Edel–Rains–Sloane chain (62,15,2); the recorded tables stop at 48 and resume at 64 |
+| 63 | 52 418 564 | **138 419 844** | **2.64** | 2026-08-30 | Edel–Rains–Sloane chain (63,15,2); the recorded tables stop at 48 and resume at 64 |
+| 68 | 331 737 984 | **361 275 480** | 1.09 | 2026-08-30 | Gamma72 four-point cross-section programme at its exact optimum, with a D4 Gram matrix |
+| 69 | 331 737 984 | **627 822 180** | **1.89** | 2026-08-30 | Gamma72 three-point cross-section programme at its exact optimum, with the Gram determinant forced by Hermite |
+| 70 | 331 737 984 | **1 249 778 250** | **3.77** | 2026-08-30 | Gamma72 two-point cross-section count; the recorded tables have no entry between 65 and 71 |
+| 71 | 331 737 984 | **2 603 658 750** | **7.85** | 2026-08-30 | Gamma72 one-point cross-section count; the recorded tables have no entry between 65 and 71 |
+| 73 | 6 218 175 602 | **6 218 179 814** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 74 | 6 218 175 606 | **6 218 192 454** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 75 | 6 218 175 612 | **6 218 209 308** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 76 | 6 218 175 624 | **6 218 243 016** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 77 | 6 218 175 640 | **6 218 285 152** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 78 | 6 218 175 672 | **6 218 377 840** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 79 | 6 218 175 726 | **6 218 529 454** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 80 | 6 218 175 840 | **6 218 849 228** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 81 | 6 218 175 906 | **6 219 034 270** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 82 | 6 218 176 110 | **6 219 605 578** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 83 | 6 218 176 204 | **6 219 621 690** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 84 | 6 218 176 441 | **6 220 293 304** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 85 | 6 218 176 754 | **6 220 745 414** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 86 | 6 218 177 532 | **6 223 567 844** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 87 | 6 218 178 164 | **6 224 703 598** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 88 | 6 218 179 920 | **6 230 206 492** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 89 | 6 218 181 330 | **6 233 054 848** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 90 | 6 218 183 254 | **6 238 744 788** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 91 | 6 218 187 548 | **6 247 801 034** | 1.00 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 92 | 6 218 195 048 | **6 266 405 667** | 1.01 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 93 | 6 218 205 368 | **6 294 850 360** | 1.01 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 94 | 6 218 225 496 | **6 355 739 600** | 1.02 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 95 | 6 218 268 750 | **6 473 065 046** | 1.04 | 2026-08-30 | [Gamma72 cap construction with explicit disjoint classes and rotated axis points](verifications/improved/dim73-95-gamma72-caps/) |
+| 96 | 6 218 372 160 | **12 886 999 232** | **2.07** | 2026-08-30 | no table reaches it, and Edel–Rains–Sloane was never evaluated there |
 
 
-For superseded rows, the historical SOTA period covers this project's run of
-published records in that dimension, including our successive improvements before
-the displayed value. It starts at the first repository release and ends at the first
-dated larger construction identified in the sources below. Dates use UTC; they record
-publication history rather than private discovery dates. The start dates follow the
+The historical SOTA period covers this project's run of published records in each
+dimension, including our successive improvements before the displayed value. A single
+start date marks a current record in the reviewed sources; superseded records also
+have an end date, taken from the first dated larger construction identified below.
+The 43D claim retains its pending-certificate qualification. Dates use Moscow time
+and describe repository publication history rather than private discovery dates.
+The start dates follow the
 [first release, 30 August](https://github.com/alexlegeartis/KissingNumbers/commit/75a4047),
 [26D update, 8 September](https://github.com/alexlegeartis/KissingNumbers/commit/3e2f0fc),
-and [28-31D update, 16 September](https://github.com/alexlegeartis/KissingNumbers/commit/457c4d3).
+[28-31D update, 16 September](https://github.com/alexlegeartis/KissingNumbers/commit/457c4d3),
+[18D release, 17 September](https://github.com/alexlegeartis/KissingNumbers/commit/32c4e2a),
+and [41-46D integration, 23 October](https://github.com/alexlegeartis/KissingNumbers/commit/5bed851).
 The end dates are [Yang et al., v1, 28 September](https://arxiv.org/abs/2609.35051v1)
 for 25D, 27D, 38D, 39D and 49–55D;
 [Takhanov–Yun, 5 October](https://github.com/k-nic/kissing_d25-31/commit/b3768310ba566da5c8947546266c103fbcdce181)
 for 26D, 29D and 31D; and
-[K. Li, 10 October UTC](https://github.com/Felpix-Studios/kissing-number/commit/365a76854e70eecc07dfefce7fb17df1617f2b9a)
+[K. Li, 10 October](https://github.com/Felpix-Studios/kissing-number/commit/365a76854e70eecc07dfefce7fb17df1617f2b9a)
 for 28D and 30D. The later-result table below gives the latest retrieved values,
 which can be larger than the first result that superseded ours.
 
@@ -362,126 +366,6 @@ in dimensions 9–19 is maximal; the antipode construction is a max-weight cliqu
 arms lie in a 30° cap, which caps it structurally; and the maximum-class problem survives
 every two-point method, the three-point SDP and the subconstituent split at 4680/11 = 425.45.
 
-## Errata found during this work
-
-Recorded because they are the kind of thing that survives a careful reading:
-
-- **The dimension-40, -41 and -42 verdicts went stale**, and the failure mode is the one this
-project keeps meeting: `verifications/closed/dim32-44-ers-audit/` concluded in August 2026 that
-dimensions 32–44 sit *exactly* at the Edel–Rains–Sloane value and improve none. On 2026-09-14 a
-re-read of the literature found I. Dorofeev, X. Sun and C. Wang, *Optimal Extensions of
-Cross-Sections: Sphere Packings in Dimensions 38 to 43*, arXiv:2607.20359v4 (29 Aug 2026),
-which beats it in three of them with **lattice** cross-sections of an extremal 48-dimensional
-lattice — 1 092 000 / 1 324 472 / 1 792 386 in dimensions 40, 41, 42 — and raises dimension 45
-to 7 379 838. Nothing here was claimed in those dimensions, so no claim is withdrawn, but the
-package's stated verdict was wrong and now carries a correction banner. **Dimensions 32–37 are
-unaffected, and now for a measured reason**: calibrating their own mechanism on their own three
-results (it reproduces dimension 40 to 3 %) and applying their determinant floor caps
-dimension 32 at about 205 000 — a factor 1.69 below its record. The lesson is the standing one:
-a table is a function of the literature, and the literature moves. See `KNOWLEDGE.md` §131.
-
-- **The k-point LP was missing its mixed moments** for a day — it imposed only exponent
-vectors with every entry even, 56 equations at k = 3 instead of 161. The symptom was
-visible in the output and unnoticed: two *equivalent* Gram matrices gave different answers.
-Dimensions 46, 47 and 71 were unaffected (k = 1 has no mixed moments, and 46 was already
-exact); dimensions 44, 45 and **70** all moved. Cheap decisive test: run the LP on a pair
-of equivalent Grams.
-- **Dimension 69's row was stale** in an earlier results table, quoting an LP value for a
-Gram whose realizability is unproved. It is now in `closed/`.
-- **The calibration script never calibrated anything**: it crashed at k = 6 (E₆ and E₇ are
-returned as subsets of the E₈ roots, so they live in ℝ⁸) and used small greedily-found
-classes rather than the real 248-line one. Rewritten; it now reproduces five table entries
-exactly.
-- **The August comparison table lagged four dimensions** — 32, 33, 34 and 37 — after
-Echols' 2026 constant-weight improvements appeared on Brouwer's page. In particular,
-496 232 improved the table's 494 312 in dimension 37. Yang et al.'s September
-Table 1 subsequently reports 498 024, and Cohn's live table now lists 500 008.
-These are comparison updates, not constructions claimed here.
-
-- **The Edel–Rains–Sloane floor was taken at level 0 only**, twice over. First, dimensions
-62 and 63 were claimed from the cap construction over P₄₈ at 64 217 822 and 67 365 752 while a
-*single sign code* gives 2²⁶ and 2²⁷; `audit.py` did not catch it because it read its floors
-from the same stale table, and it now checks the level-0 floor as its own step 4b. Then the
-same mistake one level up: level 0 is not the whole construction, and the full chain
-`(n, 15, 2)` gives **71 310 732** and **138 419 844**, so those two dimensions moved again.
-The full chain is now evaluated in *every* claimed dimension by
-`closed/dim96-ers-takeover/ers_exposure.py`, which also ranks each claim by how far the best
-published constant-weight code would have to be beaten to overturn it — dimension 68 is the
-most exposed, at a factor 1.47.
-- **The GPU class certificate is not reproducible across software stacks.** `run.py` claimed
-to be “bit-identical on any machine”; measured, the 31 000-class certificate made under one
-Colab image did not regenerate under a later one, while two builds inside one process agreed
-bit for bit. Every random *decision* is numpy's, but the pool is *assembled* by torch
-primitives whose tie-breaking is unspecified, and the pool's row order is what the greedy
-window is drawn from. This was not merely untidy: everything downstream is indexed by pool
-POSITION, so a `--resume` against a different pool would silently reuse lines, and the
-invariant `|alive| + Σsizes = |pool|` counts rows and would not notice. A resume done that
-way had to be discarded and the family rebuilt in one session. `gamma72.pool_digest` now
-fingerprints the pool, the state carries it, and a resume without a match is refused.
-
-- **A plausible mechanism ended an investigation, and cost 24 spheres in dimension 38.**
-The axis layer needs a 60° code of ℝ¹⁴ lying 30° from every cap direction; a rotated copy of
-the cap directions kept 1908 of 1932, and the README explained the missing 24 away: the caps
-cover 1.24% of S¹³, so “a random rotation loses about 24 points and best-of-N would recover
-only a handful”. The first half is a measurement and is right — 200 random rotations lose 56
-on average, sd 11. The second half was not measured and was false: SO(14) has 91 dimensions
-and the softened objective is differentiable, so **descent** walks 1908 → 1932 in two hundred
-steps. Dimension 38 is now 591 612, exactly its family ceiling 3K(24) + K(14). Nothing in a
-repository can distinguish a measured statement from a plausible one when both are prose;
-`scripts/axis_rotation.py` now carries the search so the claim can be re-derived rather than
-argued.
-
-- **A sufficient condition became the search space, and cost 221 025 spheres.** A pole in the
-Γ₇₂ cap construction must be a 60° code and lie 30° from every cap direction. The rule used
-looked for one **inside the same lattice**, where a shell argument makes the 30° condition
-automatic — for a of norm M and w of norm m in one lattice, |a−w|² and |a+w|² are lattice
-norms, so |⟨a,w⟩| ≤ M/2, and M ≤ 3m settles it. Correct, exact and beautiful, and it answered
-“is this pole legal?” so cleanly that “which poles are there?” stopped being asked: at k = 23
-it found 248 poles against τ(23) = 93 150. Nothing forces a pole into the lattice. A rotated
-copy of the cap directions is a 60° code for free, a single 30° cap covers 2.3×10⁻⁸ of S²²
-so all 93 150 together cover at most 2.1×10⁻³, and the rotation shipped loses 76 of the
-93 150 — so the layer is 93 074. Twenty
-dimensions carry a layer above the shell rule — 75 and 77–95 —
-and four of them have since gone further still (KNOWLEDGE.md §105).  §106 then went past the layers entirely: the cap DIRECTIONS at k = 12 and 13 were not the largest available either, and replacing them with the Kappa sections K₁₂ and K₁₃ — plus two partitions made perfect by an order-3 isometry — moved six dimensions by 549 638, against §105's 1040.  `verifications/improved/dim73-95-gamma72-caps/scripts/axis_rotate.py`
-derives the rotations and `scripts/verify_poles.py` checks every pair in exact integers.
-
-- **A guard pinned the wrong number in place.** `factcheck.py` tested that the paper contained
-the literal `2.3\times10^{-3}`. It did, and the check passed for a day while that number named
-the wrong quantity — a single 30° cap on S²² covers 2.284×10⁻⁸, and 2.1×10⁻³ is the union of
-93 150 of them. Worse, the guard made the error load-bearing: correcting the paper would have
-failed the build. A check that tests for a literal cannot distinguish a right number from a
-wrong one, and it converts the first into a requirement. The replacement derives the cap
-measure from ∫sin²¹, derives the union bound and the expected loss from that, reads the
-shipped layer from its own `.npz`, and checks the paper against all three — and was
-perturbation-tested one figure at a time.
-
-- **Seven axis layers had the poles in the wrong space, and every check passed.** The
-construction puts the cap directions and the poles in one ℝ^k; the rotation must therefore be
-an isometry of ℝ^k. The one built was an isometry of the coordinates the direction set is
-*written* in, and Λ₂₁'s cross-section is 27 720 vectors written in Λ₂₄'s 24 coordinates
-spanning 21. So the poles left the axis space, and dimensions 85, 87, 89, 90, 93, 94 and 95
-needed up to ℝ⁹⁶ instead of ℝ^(72+k). Every inner product was correct, which is why nothing
-saw it: the exact cap test, the isometry NᵀCN = D²C, the pole–pole inheritance and the
-independent `Fraction` check are all statements about the Gram matrix, and a rotation of the
-ambient coordinates preserves every entry of it. **A verification can be exhaustive over the
-objects it compares and silent about what those objects are.** Rank is cheap, and no
-inner-product check of any depth could have substituted for it.
-`scripts/axis_block.py` derives the replacements from a generator built out of the direction
-set, which fixes the orthogonal complement pointwise; `scripts/verify_poles.py` and audit
-check 5o both check the space now.
-
-
-- **Two files stated τ(20) two ways.** `axis_rotate.py` and `verify_poles.py` each carried a
-private `TAU = {...}` with τ(20) = 17400 and τ(21) = 27720, the Λ₂₀ and Λ₂₁ values, both 2048
-below the best known — the best configurations in 20 and 21 are not lattices. Nothing computed
-used them; they set a printed column, so nothing failed and nothing could. Both now import
-`common/published.py`, and audit check **5n** evaluates every integer-valued τ table anywhere
-in the tree against it. Retyping the two numbers would have fixed the instance; the import
-fixes the class.
-
-
-
-
 ## Reproducing everything
 
 ```bash
@@ -541,6 +425,11 @@ Or individually, each from its own directory:
 | `…/closed/dim96-ers-takeover/ers_sweep.py`                                    | **the level-0 floor in every claimed dimension** — read this    | 1 s    |
 | `…/closed/dim96-ers-takeover/above96.py`                                     | why the table stops at 96, and not somewhere arbitrary          | 4 s    |
 
+
+GPU class searches depend on the software stack used to assemble the pool. A
+resumed search must match the saved pool fingerprint; the code rejects a mismatched
+or missing fingerprint. See the [GPU reproduction instructions](verifications/improved/dim73-95-gamma72-caps/scripts/gpu/README.md)
+for the supported workflow.
 
 **Requirements.** Python 3.8+, numpy, scipy, and sympy for `paper/formulas.py`, which
 re-derives the manuscript's algebra symbolically. The dimension-27 package needs neither

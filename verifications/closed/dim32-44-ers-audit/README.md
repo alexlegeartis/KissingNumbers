@@ -1,7 +1,9 @@
-# CLOSED — dimensions 32 to 44 are exactly at the Edel–Rains–Sloane value
+# CLOSED — ERS chain search with pinned August 2026 code tables
 
 The comparisons below describe the earlier ERS search and its historical
-inputs. The October 2026 [family/head package](../../improved/dim41-46-p48-heads/)
+inputs, with code tables fetched on 21 August 2026. `PIPELINE.py` replays that
+search and reads newer registered constructions from `RESULTS.md` as reference
+floors. These dated comparisons do not state the current leaderboard. The October 2026 [family/head package](../../improved/dim41-46-p48-heads/)
 now registers larger constructions in 41D, 42D and 44D. Its 43D working total
 remains outside the registry because the latest certificate is missing.
 
@@ -43,9 +45,9 @@ remains outside the registry because the latest certificate is missing.
 > SDP ceiling of 3 162 316. Full account: `KNOWLEDGE.md` §130–131.
 
 
-**Nothing is claimed here**, but this is the most immediately *useful* package in the
-`closed/` tree, because it identifies four dimensions where **Cohn's table is stale** and
-says exactly where any future code improvement will pay off.
+**Nothing is claimed here.** The package records the optimized chains, their
+geometric checks, and which code parameters could improve the historical reference
+floors. Later records are tracked in the repository's main README.
 
 ```
 python PIPELINE.py          # ~1 min, pure integer arithmetic, no third-party packages
@@ -67,9 +69,9 @@ ERS totals to the digit (n = 64 and n = 80), it reproduces every entry of Cohn's
 dimensions 32–44 where the code tables have not moved, and its geometry is re-derived from
 scratch as exact inequalities.
 
-## The result
+## Historical comparison results
 
-| n | best chain | N(n) | Cohn's table | best known | verdict |
+| n | best chain | N(n) | August Cohn snapshot | historical reference | comparison |
 |---|---|---|---|---|---|
 | 32 | (32,8,2) | **346 432** | 345 408 | 346 432 | at the value — **table stale** |
 | 33 | (32,8,2) | **362 048** | 360 640 | 362 048 | at the value — **table stale** |
@@ -84,10 +86,10 @@ scratch as exact inequalities.
 
 ## Three things worth keeping
 
-**Cohn's table is stale in four of these dimensions** — 32, 33, 34 and 37 — from Echols'
-2026 constant-weight improvements (arXiv:2608.13906), which Brouwer's page already carries.
-In particular **dimension 37's live record is 496 232, not 494 312.** None of this is a claim
-of this project; it is a correction to the table, and it is worth passing on.
+**The August Cohn snapshot lagged the code tables in four dimensions** — 32, 33,
+34 and 37 — after Echols' 2026 constant-weight improvements (arXiv:2608.13906).
+In particular, the ERS replay gives **496 232** in dimension 37 against the snapshot's
+494 312. These are historical comparison updates, not constructions claimed here.
 
 **The chain choice is non-obvious.** Dimensions 41 and 42 optimise at n₀ = 40, *not* n₀ = n,
 because A(41,11) = 2¹⁸ and A(42,11) = 2¹⁹ both sit **below** A(40,10) = 589 824. Anyone
@@ -95,7 +97,8 @@ evaluating this construction should enumerate the chains rather than assume n₀
 same observation, applied at n₀ = n, is what gives dimensions 38 and 39 — see
 [`../../improved/dim39-ers-constant-weight/`](../../improved/dim39-ers-constant-weight/).
 
-**Where the leverage is.** Every dimension except 38, 43 and 44 sits *exactly* at the ERS
+**Sensitivity against the historical references.** Every dimension except 38, 43 and 44
+in the table above sits *exactly* at the ERS
 value, so **any** code improvement is immediately a record:
 
 - +1 in A(n,8,8) gives **+128** in τ_n;

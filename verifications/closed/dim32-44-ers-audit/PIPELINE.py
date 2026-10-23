@@ -2,7 +2,11 @@
 # -*- coding: utf-8 -*-
 r"""
 PIPELINE.py -- dimensions 32..44 via the Edel-Rains-Sloane construction,
-               fed with the best CURRENTLY PUBLISHED code tables.
+               fed with the pinned August 2026 code tables.
+
+This is a replay of a dated ERS search. Its reference floors include newer
+registered constructions read from RESULTS.md; it does not audit the current
+literature or establish that an ERS value remains a world record.
 
 Run:  python PIPELINE.py            (pure integer arithmetic, no third-party packages)
 
@@ -459,7 +463,8 @@ def best_chain(n):
 def main():
     vol7 = sum(comb(36, i) for i in range(8))
     print("=" * 88)
-    print("DIMENSIONS 32-44 VIA EDEL-RAINS-SLOANE, WITH THE CURRENT CODE TABLES")
+    print("DIMENSIONS 32-44 VIA EDEL-RAINS-SLOANE, PINNED AUGUST 2026 CODE TABLES")
+    print("Historical comparisons with registered updates; not a current literature audit.")
     print("=" * 88)
 
     # ---------------------------------------------------------------- sanity checks
@@ -494,35 +499,33 @@ def main():
     PROJECT = dict(RECORD)                                    # this project's own floors
     PROJECT.update({32: 346432, 33: 362048, 34: 381124, 37: 496232,
                     38: 591612, 39: 756116})
-    # Two of those are this repository's own claims, and a hand-copied claim goes stale the
-    # first time the claim moves -- dimension 38 did, on 2026-08-27.  Read RESULTS.md and
-    # insist they still agree.
+    # These floors start with the historical comparison snapshot. Read newer registered
+    # constructions from RESULTS.md, so an improvement does not break an archived ERS replay.
+    # This includes the October 41D/42D/44D results. The uncertified 43D total is not registered.
     _res = os.path.join(HERE, "..", "..", "..", "RESULTS.md")
     if os.path.exists(_res):
         for _line in open(_res, encoding="utf-8"):
             _m = re.match(r"\| (\d+) \| [^|]+ \| \*\*([\d\s  ]+)\*\* \|", _line)
             if _m and int(_m.group(1)) in PROJECT:
                 _d, _v = int(_m.group(1)), int(re.sub(r"\D", "", _m.group(2)))
-                if PROJECT[_d] != _v:
-                    raise SystemExit("PIPELINE.py has %d for dimension %d; RESULTS.md says "
-                                     "%d -- update the PROJECT dict" % (PROJECT[_d], _d, _v))
+                PROJECT[_d] = max(PROJECT[_d], _v)
     print()
     print("      %3s  %-12s %12s %12s %9s %12s %-12s" %
-          ("n", "best chain", "N(n)", "Cohn table", "vs Cohn", "best known", "verdict"))
+          ("n", "best chain", "N(n)", "Cohn Aug26", "vs Aug26", "ref. floor", "comparison"))
     print("      " + "-" * 88)
     results = {}
     for n in range(32, 45):
         v, ch = best_chain(n)
         results[n] = (v, ch)
-        verdict = ("NEW RECORD +%d" % (v - PROJECT[n])) if v > PROJECT[n] else "no gain"
+        verdict = ("ABOVE REF +%d" % (v - PROJECT[n])) if v > PROJECT[n] else "no gain"
         print("      %3d  %-12s %12d %12d %+9d %12d %-12s" %
               (n, "(" + ",".join(map(str, ch)) + ")", v, RECORD[n],
                v - RECORD[n], PROJECT[n], verdict))
     print("      " + "-" * 88)
-    print("      'vs Cohn' > 0 in dims 32,33,34,37 is Echols' already-published gain")
+    print("      'vs Aug26' > 0 in dims 32,33,34,37 is Echols' already-published gain")
     print("      (arXiv:2608.13906), and in dims 38,39 this project's own earlier gain;")
-    print("      none of it is new here.  'best known' is the max of Cohn's column and")
-    print("      the values this project already holds.")
+    print("      none of it is new here. The reference floor combines the historical")
+    print("      snapshot with newer registered results; it is not today's leaderboard.")
 
     print("\n[5] Re-derivation of each optimum, term by term (exact):")
     for n in range(32, 45):
@@ -601,9 +604,9 @@ def main():
 
     # ---------------------------------------------------------------- sensitivity
     print("\n[7] Sensitivity: what would have to improve, and by how much,")
-    print("    for each dimension to yield a new record.")
+    print("    for each dimension to exceed its recorded reference floor.")
     print("      %3s %28s %14s %14s %10s" %
-          ("n", "binding parameter", "current", "needed", "shortfall"))
+          ("n", "binding parameter", "pinned", "needed", "shortfall"))
     for n in range(32, 45):
         v, ch = results[n]
         need = PROJECT[n] + 1 - v
@@ -620,17 +623,12 @@ def main():
               (n, "A(%d,%d)  [n_0=%d]" % (n0, sign_dist(n0), n0), t,
                t + max(0, need), max(0, need)))
 
-    print("\n[8] Consistency with the published record column:")
+    print("\n[8] Consistency with the recorded reference floors:")
     for n in range(32, 45):
         v, ch = results[n]
-        if n in (38, 43):
-            check(v < PROJECT[n],
-                  "n=%d: ERS gives %d, below the best known %d (held by a different "
-                  "construction)" % (n, v, PROJECT[n]))
-        else:
-            check(v == PROJECT[n],
-                  "n=%d: ERS with current tables gives exactly the best known %d"
-                  % (n, v))
+        check(v <= PROJECT[n],
+              "n=%d: ERS gives %d, reference floor %d (%s)"
+              % (n, v, PROJECT[n], "below" if v < PROJECT[n] else "equal"))
 
     # ------------------------------------------------------ the one structural lead
     print("")
@@ -665,10 +663,9 @@ def main():
             print("   " + f)
         return 1
     print("ALL CHECKS PASSED.")
-    print("CONCLUSION: with every currently published lower bound on A(n,d,w) and")
-    print("A(m,d), the Edel-Rains-Sloane construction maximised over ALL admissible")
-    print("chains reproduces the best known kissing number in every dimension 32-44")
-    print("and improves none of them.")
+    print("CONCLUSION: with the pinned August 2026 code bounds, the ERS construction")
+    print("maximised over all admissible chains improves none of the recorded reference")
+    print("floors. Later constructions may exceed both these floors and the ERS values.")
     print("=" * 88)
     return 0
 
