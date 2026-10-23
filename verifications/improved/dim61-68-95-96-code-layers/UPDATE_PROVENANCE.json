@@ -1,0 +1,125 @@
+{
+  "checkpoint_date": "2026-10-24",
+  "copies": [
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim49plus/binary_62_code.py",
+      "source": "research/dim49plus/binary_62_code.py",
+      "sha256": "86e5d0787c39691d04bc7215040657589c7d6c01d5f019f2d1facb22f1f341b9"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim49plus/latitude_compression.json",
+      "source": "research/dim49plus/latitude_compression.json",
+      "sha256": "d9a3bf067c904e3f431d806b195868c3caba6d4d8e19ae1a9ca0b6fb4426abd2"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim49plus/latitude_compression.py",
+      "source": "research/dim49plus/latitude_compression.py",
+      "sha256": "b1d57f4d5da3c035be2f07970c887950634b2dbb5bce9cfa83aafbac37d9f77d"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/code64_supports.npz",
+      "source": "research/dim61_96/code64_supports.npz",
+      "sha256": "cdbd5e5a7bbda9ddb84ee86052e2d4d00ccc331f0188de958a69ed83b0c529f6"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/cyclic73.generator.txt",
+      "source": "research/dim61_96/cyclic73.generator.txt",
+      "sha256": "3a4322b2e42bce2349f282a04523746f493a51b1a821ef7fd9694f49c742928d"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/cyclic73.json",
+      "source": "research/dim61_96/cyclic73.json",
+      "sha256": "5a5b25e7c0d018814147bf43b395eccbb15c2225ffa180c2c3751ad0bc3168de"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/cyclic73.weight16.bin",
+      "source": "research/dim61_96/cyclic73.weight16.bin",
+      "sha256": "5d240938e26a7a477de62bc255439e743cb33120bb13b986a70c6b1fea0b5239"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/dual_sections.json",
+      "source": "research/dim61_96/dual_sections.json",
+      "sha256": "103a23cba2184d242811c2df79569178f2718c422674d9a9d48cf3948c52ddb0"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/dual_sections.npz",
+      "source": "research/dim61_96/dual_sections.npz",
+      "sha256": "6344c4ce9f5c20168b9264526a6d4c25978ba2b45b43f4fc47113ca618631dba"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/dual_sections.py",
+      "source": "research/dim61_96/dual_sections.py",
+      "sha256": "e2f1d738f44e9135c43201157ded6e2cb18a61899ae9172444f7352efa3f2321"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/enumerate_binary.cpp",
+      "source": "research/dim61_96/enumerate_binary.cpp",
+      "sha256": "ca23b2fac4a61714255aede03e529a76b3cd9f4c0f3f7080dc5306bc0643ae82"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/expanded_support_layers.json",
+      "source": "research/dim61_96/expanded_support_layers.json",
+      "sha256": "7e866485a37399d84e0f8987092852d7928840aa96d8a776c39c060dfdeb2a85"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/expanded_support_layers.py",
+      "source": "research/dim61_96/expanded_support_layers.py",
+      "sha256": "d48893b38e4ea6cadcd3fb87ab5c4a5718cb25d2eb315a48c2d464f8ebdc8913"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/section95_search.json",
+      "source": "research/dim61_96/section95_search.json",
+      "sha256": "fd1427d17f019b38bfefd2da6e7bda6e4514dd8ae7767b71b33c8f195eb33dbd"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/section95_search.npz",
+      "source": "research/dim61_96/section95_search.npz",
+      "sha256": "c499ba3b2b2231f750ab72baeadd9e2181597f5a3f46bc5c0a83611f97c263b2"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/section95_search.py",
+      "source": "research/dim61_96/section95_search.py",
+      "sha256": "6f1f883896aee977f7554304dd38b2efe6cdccadf9f7f0e4bdac618bb4e99642"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/shortening_support_search.json",
+      "source": "research/dim61_96/shortening_support_search.json",
+      "sha256": "5422ed8f2b3be75267a57ea6fccc88f403a80e5bbe60dc64adc8edda51b61d88"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/source_sign23.json",
+      "source": "research/dim61_96/source_sign23.json",
+      "sha256": "ec9a26fb481a309dd3c8a238d69d94256c53c92348613cab6fa2aedaa0d43581"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/support_doubling.json",
+      "source": "research/dim61_96/support_doubling.json",
+      "sha256": "dc7bd18c6bfa90e58fdf0a56bad83670885054fd8454a9303fbb876c3d225d9a"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/support_doubling.npz",
+      "source": "research/dim61_96/support_doubling.npz",
+      "sha256": "79a043a8c07e730032f7fc73f32d163ee6475ea9d356cd990bff093e471fa588"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/support_doubling.py",
+      "source": "research/dim61_96/support_doubling.py",
+      "sha256": "5c266c63522f8ddd1b3e8ecb5708fb442c54c484a1b619b74f1e4e0b7e1bdf09"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/weighted_layers.json",
+      "source": "research/dim61_96/weighted_layers.json",
+      "sha256": "56d09352b0d035cf6548666c695294af98c4d445392e204cc730191c1f970809"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/weighted_layers.npz",
+      "source": "research/dim61_96/weighted_layers.npz",
+      "sha256": "f86ea3e8fb615299826de7b388286d27c7658fb77939c29ef3fcab39474d7c78"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/weighted_layers.py",
+      "source": "research/dim61_96/weighted_layers.py",
+      "sha256": "ce42f9aa13f1fe265eab9b53f8699e69aeaedaa0b5d59254769fb9deadf1a275"
+    }
+  ]
+}

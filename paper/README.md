@@ -16,6 +16,19 @@ Nothing here checks a PDF against its source — rebuild with the command above 
 to confirm it; the build is 47 pages, with no LaTeX warnings and no undefined
 citation or reference (9 over/underfull boxes, which is typography, not content).
 
+## Manuscript snapshot
+
+The manuscript retains its September scope. The October constructions in
+dimensions 36–37, 41–46 and 66–67 are documented in the repository and their
+verification packages. `factcheck.py` checks that these ten dimensions are
+exactly the registry additions absent from Table 4. The
+manuscript comparison and monotonicity checks retain the pinned August
+table; the repository audit checks the new constructions against their
+recorded October comparisons.
+
+Regenerating `values.tex` also defines macros for the new dimensions; the
+manuscript does not reference them. All macros it uses keep their values.
+
 ## One bound, one place: [`values.tex`](values.tex)
 
 Every claimed bound used to be typed into `kissing46.tex` four times — the introduction, the
@@ -30,16 +43,17 @@ $\Kgain{31}$                % +312
 ```
 
 and [`values.tex`](values.tex) defines all of them, **generated** by
-[`mkvalues.py`](mkvalues.py) from [`../RESULTS.md`](../RESULTS.md), which `audit.py` in turn
-generates from the packages. So updating a bound is: re-run `audit.py`, run `python
-mkvalues.py`, rebuild — no prose is touched unless the *mechanism* changed. 93 sites in the
+[`mkvalues.py`](mkvalues.py) from [`registry_snapshot.json`](registry_snapshot.json)
+for the manuscript’s 53 dimensions, and from [`../RESULTS.md`](../RESULTS.md) for
+new dimensions. Updating the manuscript also requires updating its snapshot
+and derivations. 93 sites in the
 manuscript now come from that one file (32 `K(d)≥` statements, 52 rows of Table 4, the net-gain
 row of Table 2 and the largest-gain cell of every row of Table 1), and `python mkvalues.py
---check` exits non-zero if it has drifted from `RESULTS.md`.
+--check` exits non-zero if it has drifted from those inputs.
 
 `factcheck.py` **expands** these macros before it parses, so all of its checks still see the
 numbers a reader sees — macroising the manuscript cannot quietly turn a check into a no-op — and
-it fails if any `\Kh{...}` is left unexpanded or if `values.tex` disagrees with `RESULTS.md`.
+it fails if any `\Kh{...}` is left unexpanded or if `values.tex` disagrees with the frozen snapshot and current registry.
 The addends of a count identity (`175\,904+61\,968+118+672`) stay literal: those are a
 derivation, not a bound.
 
@@ -55,7 +69,7 @@ python formulas.py       # every formula in the paper, re-derived with sympy
 python style_scan.py -v  # the prose faults listed in the writing guidelines
 ```
 
-`factcheck.py` (769 checks) does not parse the repository's conclusions, it **re-derives**
+`factcheck.py` (770 checks) does not parse the repository's conclusions, it **re-derives**
 them: the moment identities, the count of the layered construction, Caro–Wei, the
 Edel–Rains–Sloane totals, the bound on independent sets, and every entry of Tables 1, 3 and 4.
 `formulas.py` (257 checks) checks the *algebra* rather than the numbers — the moment identity
@@ -81,3 +95,8 @@ verification package. It lived in a sibling directory of the author's working tr
 2026-08-30, which meant these checkers skipped in every clone; moving it here is what lets a
 reader run them. `../audit.py` reads `kissing46.tex` too, for two of its documentation
 checks.
+
+`registry_snapshot.json` pins the manuscript's 53 numerical results. The October
+code and coset updates are maintained in the current registry. `mkvalues.py`,
+`factcheck.py` and `unsupported.py` check the frozen numbers and require the
+current registry to retain or improve every manuscript result.

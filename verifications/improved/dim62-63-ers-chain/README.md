@@ -1,5 +1,11 @@
 # Dimensions 62 and 63 — the Edel–Rains–Sloane chain
 
+**Retained construction and history.** The October registry takes the strongest
+construction in each dimension. See the [current registry](../../../RESULTS.md),
+[code-layer updates](../dim61-68-95-96-code-layers/) and
+[nearest-coset updates](../dim73-88-gamma72-cosets/). Older counts below remain
+results about the original construction.
+
 | dim | previously | this work | gain | factor | chain | verified |
 |---|---|---|---|---|---|---|
 | 62 | 52 417 932 | **71 310 732** | +18 892 800 | 1.36 | (62, 15, 2) | levels 1–2 built here, level-0 code cited |

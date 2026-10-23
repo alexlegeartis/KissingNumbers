@@ -1,5 +1,11 @@
 # Dimensions 68 and 69 — cross-sections of Γ₇₂, with the Grams exhibited
 
+**Retained construction and history.** The October registry takes the strongest
+construction in each dimension. See the [current registry](../../../RESULTS.md),
+[code-layer updates](../dim61-68-95-96-code-layers/) and
+[nearest-coset updates](../dim73-88-gamma72-cosets/). Older counts below remain
+results about the original construction.
+
 | dim | k | Gram of the k-tuple | det | Hermite floor | certified | floor | factor |
 |---|---|---|---|---|---|---|---|
 | 69 | 3 | `A₃`: diagonal 8, two edges −4 | 256 | 256 ✓ | **627 822 180** | 331 737 984 | 1.89 |

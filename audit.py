@@ -117,6 +117,7 @@ from published import (COHN, floor_for, upper_for,       # noqa: E402
                        ERS_PUBLISHED)
 from status import STATUS, LEGEND, status_for, runs             # noqa: E402
 from published import TAU as PUBTAU
+from published import OCTOBER_2026
 from theta import onepoint                                # noqa: E402
 
 IMP = os.path.join(HERE, 'verifications', 'improved')
@@ -199,6 +200,9 @@ ROOTPARTS = {1: (0, 1), 2: (2, 0), 3: (4, 0), 4: (8, 0), 5: (12, 2), 6: (24, 0),
 S48 = np.sort(np.load(os.path.join(
     IMP, 'dim49-63-p48-caps', 'data', 'class_sizes_p48.npy')).ravel())[::-1].astype(np.int64)
 c48 = np.concatenate([[0], np.cumsum(S48)])
+with np.load(os.path.join(IMP, 'dim49-63-p48-caps', 'october', 'family_55_61.npz')) as _z48:
+    _new48 = np.sort(_z48['sizes'])[::-1]
+_newc48 = np.concatenate([[0], np.cumsum(_new48)])
 for k in range(1, 16):
     lam = LAMBDA[k]
     if lam > len(S48):
@@ -206,7 +210,11 @@ for k in range(1, 16):
         continue
     Sk = int(c48[lam])
     add(48 + k, 52416000 + 2 * Sk + TAU[k], 'dim49-63-p48-caps',
-        'lambda(%d) = %d, S = %d from class_sizes_p48.npy' % (k, lam, Sk))
+        'historical 1400-class family, lambda(%d) = %d, S = %d' % (k, lam, Sk))
+    if lam <= len(_new48):
+        _newsum = int(_newc48[lam])
+        add(48 + k, 52416000 + 2 * _newsum + TAU[k], 'dim49-63-p48-caps',
+            '577 explicit isometric images of a 7387-line class; lambda(%d) = %d, S = %d; verify_october.py' % (k, lam, _newsum))
 
 Z = np.load(os.path.join(IMP, 'dim73-95-gamma72-caps', 'data', 'disjoint_classes.npz'))
 S72 = np.sort(np.array([len(Z[k]) for k in Z.files], dtype=np.int64))[::-1]
@@ -329,7 +337,17 @@ add(38, 591612, 'dim38-leech-large-codimension', 'scripts/verify.py')
 add(39, 756116, 'dim39-ers-constant-weight', 'scripts/verify.py')
 
 # The current construction checkpoint postdates the manuscript. Recompute its
-# supplied totals; the 43D writeup figure and 47D/48D comparisons are not claims.
+# supplied totals; historical missing writeup data and 47D/48D comparisons are not claims.
+COS_PACKAGE = 'dim36-37-coxeter-todd'
+_cos_spec = importlib.util.spec_from_file_location(
+    'coxeter_todd_final', os.path.join(IMP, COS_PACKAGE, 'final.py'))
+_cos_driver = importlib.util.module_from_spec(_cos_spec)
+_cos_spec.loader.exec_module(_cos_driver)
+for _record in _cos_driver.results():
+    add(_record['dimension'], _record['total'], COS_PACKAGE,
+        'verify.py (exact short-shell enumeration and phase-orbit angles; '
+        '37D adds two latitude layers to the 36D equator)')
+
 HEAD_PACKAGE = 'dim41-46-p48-heads'
 _head_spec = importlib.util.spec_from_file_location(
     'p48_heads_final', os.path.join(IMP, HEAD_PACKAGE, 'final.py'))
@@ -371,10 +389,24 @@ add(68, 361275480, 'dim68-69-gamma72-cross-sections',
 add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover',
     'ers96.py (chain (96,24,6,1): 2^33 + 4^9*16384 + 16^4*32 + 96*2)')
 
+# October code and nearest-coset constructions supersede earlier packages;
+# add() preserves every displaced claim in SUPERSEDED for the history audit.
+for _package in ('dim61-68-95-96-code-layers', 'dim73-88-gamma72-cosets'):
+    _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
+        os.path.join(IMP, _package, 'final.py'))
+    _driver = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(_driver)
+    for _row in _driver.results():
+        add(_row['dimension'], _row['total'], _package,
+            'verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
-paper_claims = [claim for claim in claims if claim[2] != HEAD_PACKAGE]
+import json
+with io.open(os.path.join(HERE, 'paper', 'registry_snapshot.json'), encoding='utf-8') as _snapshot:
+    _paper_dims = {r['dimension'] for r in json.load(_snapshot)['rows']}
+paper_claims = [claim for claim in claims if claim[0] in _paper_dims]
 print(__doc__)
 print("=" * 92)
 print("%d claims, dimensions %d..%d" % (len(claims), claims[0][0], claims[-1][0]))
@@ -416,9 +448,9 @@ print("   every floor clears it; the tightest is %.3f of its floor" % _ers_worst
 print("2. where Cohn's table has an entry, the cited previous value is exactly Cohn's")
 n = sum(1 for d, v, p, h in claims if d in COHN)
 for d, v, pkg, how in claims:
-    if d in COHN and floor_for(d)[0] != COHN[d]:
+    if d in COHN and floor_for(d)[0] != OCTOBER_2026.get(d, COHN[d]):
         bad("dim %d: floor_for gives %d, Cohn's table says %d"
-            % (d, floor_for(d)[0], COHN[d]))
+            % (d, floor_for(d)[0], OCTOBER_2026.get(d, COHN[d])))
 print("   %d of %d claims fall inside Cohn's table (%s), all consistent"
       % (n, len(claims), runs(sorted(COHN))))
 
@@ -550,7 +582,7 @@ if best_chain is not None:
                   % (runs(at_floor), ', '.join(sorted({p for d, _v, p, _h in claims
                                                        if d in at_floor}))))
         print("   this is a LOWER bound on ERS, so clearing it is necessary, not sufficient;")
-        print("   ers_exposure.py reports how much room each claim has (least: dimension 68)")
+        print("   ers_exposure.py reports the current exposure ranking")
 
 print()
 print("5. every package exists and is documented")
@@ -730,7 +762,7 @@ else:
     _im = len(_idirs) - len(_husks)
     _imd = len(set(_d for _d, _v, _p, _h in claims
                    if os.path.isdir(os.path.join(_VDIR, 'improved', _p))))
-    _mh = re.search(r'`verifications/improved/`\s*[—-]\s*([A-Za-z]+|\d+) ideas,\s*'
+    _mh = re.search(r'`verifications/improved/`\s*[—-]\s*([A-Za-z]+|\d+) (?:ideas|packages),\s*'
                     r'([A-Za-z]+|\d+) dimensions', ' '.join(_rmt.split()))
     if not _mh:
         _vrbad += 1
@@ -937,26 +969,24 @@ else:
               "%s postdates that snapshot" % (len(_claimed), HEAD_PACKAGE))
 
 print()
-print("5g2. the README's original comparison scope is the claims minus dimension 96")
+print("5g2. the README's comparison scope names every registered dimension")
 # A second hand-written dimension list, three paragraphs above the one 5g checks, and it went
-# stale in the same way (it read "25-27, 30, 31, ..." after 29 was claimed).  Every claim here
-# was compared against a recorded baseline EXCEPT 96, whose value is the evaluated
-# Edel-Rains-Sloane chain. Later supersession does not remove the construction.
-# Check the same complete dimension set under its historical, explicitly dated scope.
-_an = re.search(u'\*\*Original comparison scope\.\*\* Dimensions ([^.]+)\.', _wr)
+# stale in the same way (it read "25-27, 30, 31, ..." after 29 was claimed).  Every current claim is compared against its recorded baseline, including the new
+# doubled-support construction at 96. Later supersession retains the construction.
+# Require the prose list to match the complete current registry.
+_an = re.search(u'\*\*Registered comparison scope\.\*\* Dimensions ([^.]+)\.', _wr)
 if not _an:
     bad("README.md no longer states its original comparison dimension list")
 else:
     _seen = []
     for _a, _b, _c in re.findall(u'(\d+)\s*[-–]\s*(\d+)|(\d+)', _an.group(1)):
         _seen.extend([int(_c)] if _c else list(range(int(_a), int(_b) + 1)))
-    _want = set(d for d, v, pkg, how in claims) - {96}
+    _want = set(d for d, v, pkg, how in claims)
     if set(_seen) != _want:
         bad("README.md's original comparison scope names %s and omits %s"
             % (sorted(set(_seen) - _want) or 'nothing extra', sorted(_want - set(_seen)) or 'nothing'))
     else:
-        print("   it is the %d claims minus dimension 96, whose value is Edel-Rains-Sloane's"
-              % len(claims))
+        print("   it names all %d registered dimensions" % len(claims))
 
 print()
 print("5h. the root README names every script that reads Cohn's coordinate files")
@@ -1224,6 +1254,15 @@ else:
                 if _canon[_d] in _vals:
                     continue
                 for _v in _vals:
+                    # A displaced construction remains valid history in its own
+                    # package. Permit only exact values registered by add(),
+                    # and only where the document explicitly labels the history.
+                    _history = any(_d == hd and _v == hv and
+                        os.path.normcase(os.path.join('verifications', 'improved', hp)) in
+                        os.path.normcase(os.path.relpath(_p, HERE))
+                        for hd, hv, hp, nv, npkg in SUPERSEDED)
+                    if _history and any('retained construction' in l.lower() for l in _lines):
+                        continue
                     if _canon[_d] * 0.97 <= _v <= _canon[_d] * 1.03:
                         _stale.append('%s:%d quotes %d for dimension %d; the claim is %d'
                                       % (os.path.relpath(_p, os.path.dirname(HERE)), _i,
@@ -1777,6 +1816,9 @@ _COUNT_OK = {
     ('KNOWLEDGE.md', '**Running total: 53 dimensions improved**'),  # explicitly dated 2026-09-15
     ('KNOWLEDGE.md', '**`kissing_verifications` brought in line.**  46 claims'),
     ('KNOWLEDGE.md', '`recheck_all.py` recomputes all 46'),
+    # Research-log entries retain the registry scope before this integration.
+    ('KNOWLEDGE.md', 'Coverage is all 58 claims'),
+    ('KNOWLEDGE.md', 'arithmetic behind 39 of the 58 claims'),
 }
 _count_bad = []
 for _dp, _dn, _fn in list(os.walk(HERE)) + _walked:
@@ -1896,10 +1938,15 @@ if '--write-results' in sys.argv and not fail:
                              'so max |a| sits at a VERTEX, and all 1120 vertices are below 1 '
                              '(ceilings.py 31).  Supersedes the height-sqrt3 '
                              'layer, now in verifications/superseded/dim31-sqrt3-layer/',
+        'dim36-37-coxeter-todd': 'three Coxeter-Todd quotient codes with exact shell '
+                                  'enumeration and phase-orbit angles checked; '
+                                  '37D adds two latitude layers',
+        'dim61-68-95-96-code-layers': 'explicit binary compression, central sections and enlarged support layers; exact code and geometry replay',
+        'dim73-88-gamma72-cosets': 'certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products',
         'dim38-leech-large-codimension': 'the Leech cap construction at codimension 14',
         'dim39-ers-constant-weight': 'Edel-Rains-Sloane with the 2026 constant-weight codes',
         'dim41-46-p48-heads': 'independently normalized P48n body families with rational '
-                            'heads and pure-head extensions; latest 43D certificate missing; '
+                            'heads, partial-family 43D points and coordinated 45D motion; '
                             'angles and exact ranks replay using inherited body populations',
         'dim49-63-p48-caps': 'the cap construction over P_48, with explicit classes',
         'dim62-63-ers-chain': 'the Edel-Rains-Sloane chain (n, 15, 2), levels 1-2 built here',
@@ -1917,14 +1964,16 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("**Generated by `audit.py --write-results`. Do not edit by hand.**")
     out.append("")
-    out.append("%d dimensions, all of them lower bounds on the kissing number tau(n) that improve\non the best previously published value."
+    out.append("%d registered lower bounds on the kissing number tau(n), compared with their\nrecorded published baselines. Later superseding records are listed in README.md."
                % len(claims))
     out.append("")
-    out.append("The 23 October 2026 checkpoint adds supplied constructions in dimensions "
-               "41, 42, 44, 45 and 46. Their integer angles and exact ranks replay; their "
-               "body populations inherit the supplied tables and population derivation, "
-               "and have not all been freshly enumerated. The 43D working total "
-               "2 911 990 is excluded because its latest certificate is missing. "
+    out.append("The 24 October 2026 checkpoint adds exact Coxeter-Todd constructions "
+               "in dimensions 36 and 37, registers the supplied 2 919 743-point partial-family "
+               "43D certificate, and raises 45D to 7 655 056. All 41-46D integer angles "
+               "and head dimensions replay; complete-family body populations inherit the "
+               "documented identities and have not all been freshly enumerated. "
+               "The checkpoint also includes the 7 387-line P48 class family, code "
+               "constructions in 61-63D, 66-68D and 95-96D, and Gamma72 nearest-coset lifts. "
                "The comparison column uses common/published.py's pinned published data; "
                "this integration is not a new comprehensive literature audit. The paper "
                "remains the earlier snapshot. See "
@@ -1981,14 +2030,16 @@ if '--write-results' in sys.argv and not fail:
     out.append("## Where the previously published figures come from")
     out.append("")
     out.append("Every figure in the second column is produced by `common/published.py`, never")
-    out.append("typed by hand. Three regimes:")
+    out.append("typed by hand. Sources:")
     out.append("")
     out.append("| range | source |")
     out.append("|---|---|")
-    out.append("| 25-39 | Cohn's table directly |")
+    out.append("| 18, 25-39 | Cohn's pinned table; 36-37 use the comparison recorded 23 October 2026 |")
+    out.append("| 41-46 | Cohn's comparison entries recorded 23 October 2026 |")
     out.append("| 49-63 | 52 416 000 + tau(k): the direct sum P_48 (+) best k-dimensional "
                "lattice. Cohn's table has no entry between 48 and 72. |")
-    out.append("| 70-71 | 331 737 984, inherited by monotonicity from dimension 64 "
+    out.append("| 66-67 | direct sum of ERS64 and the 2D/3D lattice: 331 737 984 + 6/12 |")
+    out.append("| 68-71 | 331 737 984, inherited by monotonicity from dimension 64 "
                "(Edel-Rains-Sloane 1998). No table has any entry for 65-71. |")
     out.append("| 73-95 | 6 218 175 600 + tau(k): the direct sum Gamma_72 (+) best "
                "k-dimensional lattice. |")
@@ -2000,12 +2051,8 @@ if '--write-results' in sys.argv and not fail:
     # 25-31 used to have rows here; the last, dimension 28, left on 2026-09-15.  Nothing
     # replaces them: this table may name no dimension that is claimed, which the check below
     # enforces, so the calibration fact they carried is a sentence under the table instead.
-    out.append("| 32-37, 40 | older ERS/cross-section audit; no new construction registered here. "
+    out.append("| 32-35, 40 | older ERS/cross-section audit; no new construction registered here. "
                "`verifications/closed/dim32-44-ers-audit/` |")
-    out.append("| 43 | working total 2 911 990 retained from the writeup, but its latest "
-               "certificate is missing. The supplied older seed has 2 878 155 points. "
-               "Neither is silently substituted for the latest construction. "
-               "`verifications/improved/dim41-46-p48-heads/` |")
     out.append("| 47 | already in the literature. %s is Boyvalenkov-Cherkashin, "
                "Results Math. 80 (2025), Paper No. 3, equation (3) of the preprint "
                "arXiv:2312.05121. The historical 46D value %s is "
@@ -2013,7 +2060,7 @@ if '--write-results' in sys.argv and not fail:
                "`verifications/recovered/dim46-47-p48-cross-sections/` |"
                % (gr(23766960), gr(12309600)))
     out.append("| 48 | 52 416 000 is P_48 itself. |")
-    out.append("| 64-67 | the Gamma_72 cross-sections fall below the dimension-64 floor by "
+    out.append("| 64-65 | the Gamma_72 cross-sections fall below the dimension-64 floor by "
                "k = 3. `verifications/closed/dim69-gamma72-three-point/`  (68 and 69 ARE "
                "claimed, by the k-point LP with the Gram exhibited, not by that bound.) |")
     out.append("| 72 | 6 218 175 600 is Gamma_72 itself. |")
@@ -2080,8 +2127,9 @@ if '--write-results' in sys.argv and not fail:
             % runs(_clash))
     else:
         print("   'Not claimed' lists no dimension that is claimed")
-    io.open(os.path.join(HERE, 'RESULTS.md'), 'w',
-            encoding='utf-8', newline='\n').write("\n".join(out) + "\n")
-    print("wrote RESULTS.md")
+    if not fail:
+        io.open(os.path.join(HERE, 'RESULTS.md'), 'w',
+                encoding='utf-8', newline='\n').write("\n".join(out) + "\n")
+        print("wrote RESULTS.md")
 
 sys.exit(1 if fail else 0)

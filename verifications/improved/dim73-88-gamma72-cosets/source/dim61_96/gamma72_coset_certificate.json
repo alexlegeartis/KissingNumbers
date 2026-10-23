@@ -1,0 +1,206 @@
+{
+  "status": "Constructive lower bounds; completed interval enumeration plus independent direct checks",
+  "base_lattice": "Gamma72, minimum squared norm 8",
+  "base_shell_size": 6218175600,
+  "head_sets": {
+    "12625758": {
+      "nearest_subset_size": 6008,
+      "representative_norm_squared": 22,
+      "head_norm_squared": "11/2",
+      "largest_distinct_representative_inner_product": 6
+    },
+    "4915087": {
+      "nearest_subset_size": 6000,
+      "representative_norm_squared": 22,
+      "head_norm_squared": "11/2",
+      "largest_distinct_representative_inner_product": 6
+    },
+    "6896114": {
+      "nearest_subset_size": 5998,
+      "representative_norm_squared": 22,
+      "head_norm_squared": "11/2",
+      "largest_distinct_representative_inner_product": 6
+    }
+  },
+  "shorter_vector_certificates": {
+    "0": {
+      "checked_pair_products": 219780,
+      "shorter_triple_counts": {
+        "4915087": 0,
+        "6896114": 0,
+        "12625758": 0
+      }
+    },
+    "1": {
+      "checked_pair_products": 219780,
+      "shorter_triple_counts": {
+        "4776747": 0
+      }
+    },
+    "2": {
+      "checked_pair_products": 234624,
+      "shorter_triple_counts": {
+        "13363844": 0,
+        "16272329": 0
+      }
+    },
+    "3": {
+      "checked_pair_products": 227296,
+      "shorter_triple_counts": {
+        "203746": 0
+      }
+    },
+    "4": {
+      "checked_pair_products": 227296,
+      "shorter_triple_counts": {
+        "2240775": 0,
+        "2317598": 0,
+        "9483513": 0
+      }
+    },
+    "5": {
+      "checked_pair_products": 219968,
+      "shorter_triple_counts": {
+        "11781194": 0
+      }
+    },
+    "6": {
+      "checked_pair_products": 227296,
+      "shorter_triple_counts": {
+        "408052": 0,
+        "13148636": 0
+      }
+    }
+  },
+  "tail_codes": {
+    "74": {
+      "coset_count": 3,
+      "tail_coherence": "1/2",
+      "coset_distance_squared_at_least": "11/2",
+      "pure_tail_points": 6
+    },
+    "75": {
+      "coset_count": 4,
+      "tail_coherence": "1/3",
+      "coset_distance_squared_at_least": 5,
+      "pure_tail_points": 12
+    },
+    "76": {
+      "coset_count": 6,
+      "tail_coherence": "1/3",
+      "coset_distance_squared_at_least": 5,
+      "pure_tail_points": 24
+    },
+    "77": {
+      "coset_count": 10,
+      "tail_coherence": "1/3",
+      "coset_distance_squared_at_least": 5,
+      "pure_tail_points": 0
+    }
+  },
+  "dimensions": {
+    "73": {
+      "bound": 6218187616,
+      "repository_baseline": 6218179814,
+      "gain": 7802,
+      "head_subset_size": 6008,
+      "cosets": 1,
+      "pure_tail_points": 0,
+      "h": 12625758
+    },
+    "74": {
+      "bound": 6218211606,
+      "repository_baseline": 6218192454,
+      "gain": 19152,
+      "head_subset_size": 6000,
+      "cosets": 3,
+      "pure_tail_points": 6,
+      "h": 4915087
+    },
+    "75": {
+      "bound": 6218223676,
+      "repository_baseline": 6218209308,
+      "gain": 14368,
+      "head_subset_size": 6008,
+      "cosets": 4,
+      "pure_tail_points": 12,
+      "h": 12625758
+    },
+    "76": {
+      "bound": 6218247720,
+      "repository_baseline": 6218243016,
+      "gain": 4704,
+      "head_subset_size": 6008,
+      "cosets": 6,
+      "pure_tail_points": 24,
+      "h": 12625758
+    },
+    "77": {
+      "bound": 6218295560,
+      "repository_baseline": 6218285152,
+      "gain": 10408,
+      "head_subset_size": 5998,
+      "cosets": 10,
+      "pure_tail_points": 0,
+      "h": 6896114
+    }
+  },
+  "seconds": 6.604754686355591,
+  "sha256": {
+    "gamma72_leech_0_1_0.input.txt": "fcf4da4efc92ff1f63c49c4ecdc4dc1a39d68f354d40b973ca6d743265f2733a",
+    "gamma72_leech_0_1_0_r5_cert.bin": "4ebac3fbb16a71a39ac116d37e6245cd89e9ce50c5bb0c1c46e30012b5a6afa5",
+    "gamma72_leech_0_1_1.input.txt": "d1162f220bbdb6476454cd830f0baaf2da7fb14525ff736eb0f39cc61c1d771a",
+    "gamma72_leech_0_1_1_r5_cert.bin": "2cc461af1dcc564cc52073e7e4368ec82a07b6d0cdfc8a60f7557ffe2cea0c86",
+    "gamma72_leech_0_1_2.input.txt": "3ee0b30cad351736a2c876b71ce543a0611a6dd8ba691e6a26986be635069117",
+    "gamma72_leech_0_1_2_r5_cert.bin": "74bbf3c16e4f284d8bd293e97b98475f9b70f74d15ffbc307efbdfd1ec4901c1",
+    "gamma72_leech_0_1_d1_0.input.txt": "e7fc34865519a6fd8fcf92f0f068fad3b7a63d81491fed288a0e2640bce2b13a",
+    "gamma72_leech_0_1_d1_0_r5_cert.bin": "b92dbee49dcba3c2cb96c4b2b7b210f23aa85cc0364d832d28786381c613b1b9",
+    "gamma72_leech_0_1_d1_1.input.txt": "197ffcf152298d0f073de2b93c5e3148a616c6eec763ec57dc7531725edae690",
+    "gamma72_leech_0_1_d1_1_r5_cert.bin": "d39b83e223aef4baae3d6c123e6bd127f964682bcacd0a606aeba6782b24fdb4",
+    "gamma72_leech_0_1_d1_2.input.txt": "96dde7b3fba283afea15442b8890b2fa73f6c50ffd5cb1b41f426a9eea6c82c2",
+    "gamma72_leech_0_1_d1_2_r5_cert.bin": "f38590b646e694d2df0e8db1440be83b88a96beb74e12c7c9ef0eee6a772fc69",
+    "gamma72_leech_0_1_d2_0.input.txt": "80f154c48255b7abe5524d0d32c0b94429e8a7228c7339ce6afd11d0b275aeb1",
+    "gamma72_leech_0_1_d2_0_r5_cert.bin": "e89f620b903d3a321efa8c61ca5ad37066513e1a163ae5857554490041e2b572",
+    "gamma72_leech_0_1_d2_1.input.txt": "4dae5d8dc89661e6d31984e6d225ab8ab8316cba953243d8def12b586438d675",
+    "gamma72_leech_0_1_d2_1_r5_cert.bin": "ed9357e3d0c571aa8b1857947e57831b3ed8043a972b5875731237575366b890",
+    "gamma72_leech_0_1_d2_2.input.txt": "e1bde5af391bdf3be0de6d07f1be824572a48dd38825c53cb6c72ae8f950b422",
+    "gamma72_leech_0_1_d2_2_r5_cert.bin": "253cda028796c7c138ca4489798119d14d69edb67134460d2c0e1123955eb15f",
+    "gamma72_leech_0_1_d3_0.input.txt": "a334cd567b65ee34cb9483cbf4943da5866d4884261232898b531ac2bd98dc8d",
+    "gamma72_leech_0_1_d3_0_r5_cert.bin": "75f24e9373cff7bb41e17fdae436968d53418b49be79913cced42a4859b47e4c",
+    "gamma72_leech_0_1_d3_1.input.txt": "457d18db7cd7e897a0df1279addcfcba719a7e70e58e9ac7ac001b6f24780acb",
+    "gamma72_leech_0_1_d3_1_r5_cert.bin": "59b7a8bd9507f1e5848a0af037662b641f2a454a35ccd6383159d64ede5ac245",
+    "gamma72_leech_0_1_d3_2.input.txt": "fe7a8529d6186d30eee4a073211656bd1f39f4934c0966f33b814ec36f535f91",
+    "gamma72_leech_0_1_d3_2_r5_cert.bin": "902bd6b478c19b80e0d98257f29d81a07f191a207d971f399c7f0e5a5626ab82",
+    "gamma72_leech_0_1_d4_0.input.txt": "fa08f3316321439fd6146de9d3cf060ac09a2fdfdcab6adaf38934ea6775c6f7",
+    "gamma72_leech_0_1_d4_0_r5_cert.bin": "fc6294dfe5a47be6f1a5f5b59761a77b3253c4b5a739d19d9aa84c0c722c57e9",
+    "gamma72_leech_0_1_d4_1.input.txt": "ef7c14b06f64da4bcd3af249beff3db8f7678d60c277eaadcd76ec6fc457a7ee",
+    "gamma72_leech_0_1_d4_1_r5_cert.bin": "fad082d86c60b6e49d95aff5b2ba03745761195801ac1373c63c3e607092f01d",
+    "gamma72_leech_0_1_d4_2.input.txt": "f0562025a2ad364047e447fb3ef3bc28bda680bc8d6e30a34a1a82b19fef497f",
+    "gamma72_leech_0_1_d4_2_r5_cert.bin": "5e20029f1a55f91356feb61ae158400529dd2ff8010e4cc6935910df06b255cb",
+    "gamma72_leech_0_1_d5_0.input.txt": "37510a6fea1f73e10270d60c1be4b44c3f618778941debf0f55365cff75e5c3a",
+    "gamma72_leech_0_1_d5_0_r5_cert.bin": "7777af1202853ae4418cf192a25fd71b2ea9bcafc404dee4839dffb6e43bd1ed",
+    "gamma72_leech_0_1_d5_1.input.txt": "ca1f968bdb7e2fa3ad23a39dabf06973d53edda2d4dad8b2b1f2e5138710edfd",
+    "gamma72_leech_0_1_d5_1_r5_cert.bin": "31f471a4c3863222d75ad4541180f0a8d62dfb021640b36a73814f92bc7d306f",
+    "gamma72_leech_0_1_d5_2.input.txt": "39b4baa98445dc27d8aea78a7853cab07c8a29193c8813ebc2e466774d81a1ca",
+    "gamma72_leech_0_1_d5_2_r5_cert.bin": "5c66cd025f533d0af54c45b5e235ec7d7fd170056cb3038ed4fffd73ff0a285c",
+    "gamma72_leech_0_1_d6_0.input.txt": "d76983be7eeb901c35276323f770ee5155768be57ba652f0c569821ec980ee2f",
+    "gamma72_leech_0_1_d6_0_r5_cert.bin": "834df77ce42b9eb20b0de7a5471d23f5e1f26ea4e8a0c6362ee42d7cce586fe7",
+    "gamma72_leech_0_1_d6_1.input.txt": "0db7212b1ba9f3927ead4189f925da0c97b0fba62daae7102a9a0b9e47eccab7",
+    "gamma72_leech_0_1_d6_1_r5_cert.bin": "5864e150c0466e91abd555c8b87058ffa24cbd961c25c43a094bd78d5fb4ba45",
+    "gamma72_leech_0_1_d6_2.input.txt": "ca74c4c7dcfdaa41f7e827c5f33b044b9f9f737dd155ec5834ebaa6ddf57d834",
+    "gamma72_leech_0_1_d6_2_r5_cert.bin": "8c8afbb433fbc5732ed444fd3b336080806baf18d1374a1e0ba14b49d270af37",
+    "gamma72_export_block0.selected.bin": "1497164e1ddc639b0e71132244ece8df579d0425f872d557031747049d5457da",
+    "gamma72_export_block1.selected.bin": "822f89bff7902b5fbe3bdcdd7625b47d105d300f1a3a6bcdf9087e340ef579ec",
+    "gamma72_export_block2.selected.bin": "82a02ef51be7779439b47b7ba0ebe89f8df07cb89f044b2a9ae7e830223ec306",
+    "gamma72_coset_heads.npz": "07d264f96ae908ae1a6c82971e2191046b3b9aef66a2e53dbcd6ea8c43b70439",
+    "gamma72_leech_ldl.txt": "e117a9b3d46d12ff8dad7e0ed6fc155b4f279f5f680b38bf28e2a8d2c2f3d716",
+    "gamma72_leech_structure.npz": "3253520e074ea6866bb39c22bf05b595945b6183b48d9ae145758c65db79752e",
+    "gamma72_coset_certificate.py": "bf9e70c406bf75320db5d3861a134427c51679cde783056af169a86c8ce179a0",
+    "gamma72_leech_enum.cpp": "2bf18685a4c6610f238e52c8b946510b26aec6322f8588cd79ef4e57084e9b8d",
+    "gamma72_coset_screen.cpp": "814acf5f6ff459295ca4edf44d6f7d0d3102655194c089a9d7f4aa170fe3f41d",
+    "gamma72_coset_count.cpp": "7557d3a57cacd6131295ec011f5c8498745014873cda0177442ac9380c940692",
+    "gamma72_coset_extract.cpp": "438e5f08e0943121552009864d7d6e86f7c71af40a143343bb486db02e0775a9"
+  },
+  "scope": "Comparison is against the pinned repository benchmarks; no global priority claim.",
+  "remaining": "The present certificates do not improve dimensions 78--94."
+}

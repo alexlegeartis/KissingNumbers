@@ -1,0 +1,20 @@
+{
+  "checkpoint_date": "2026-10-24",
+  "copies": [
+    {
+      "installed": "verifications/improved/dim49-63-p48-caps/october/family_55_61.json",
+      "source": "research/dim49plus/family_55_61.json",
+      "sha256": "5f8f11fc55d542095fbd1bbedbe2f604f1e9b7001d0e31a06efa32e2f79970d2"
+    },
+    {
+      "installed": "verifications/improved/dim49-63-p48-caps/october/family_55_61.npz",
+      "source": "research/dim49plus/family_55_61.npz",
+      "sha256": "8cd78593124ffd3b072aa0116c58b1cbe0c17960d98ec319090554258e51c777"
+    },
+    {
+      "installed": "verifications/improved/dim49-63-p48-caps/october/family_55_61.verified.json",
+      "source": "research/dim49plus/family_55_61.verified.json",
+      "sha256": "dea8d042835307af8ec7d7594780efa0a91d97f8692a346d0eb744711db61258"
+    }
+  ]
+}

@@ -3,131 +3,131 @@
   "dim": 49,
   "k": 1,
   "lam": 1,
-  "S": 7069,
-  "gain": 14140,
-  "value": 52430140,
+  "S": 7387,
+  "gain": 14776,
+  "value": 52430776,
   "previous": 52416002,
-  "family": "class_sizes_p48.npy"
+  "family": "october/family_55_61.npz"
  },
  {
   "dim": 50,
   "k": 2,
   "lam": 3,
-  "S": 21206,
-  "gain": 42418,
-  "value": 52458418,
+  "S": 22158,
+  "gain": 44322,
+  "value": 52460322,
   "previous": 52416006,
-  "family": "class_sizes_p48.npy"
+  "family": "october/family_55_61.npz"
  },
  {
   "dim": 51,
   "k": 3,
   "lam": 6,
-  "S": 42402,
-  "gain": 84816,
-  "value": 52500816,
+  "S": 44303,
+  "gain": 88618,
+  "value": 52504618,
   "previous": 52416012,
-  "family": "class_sizes_p48.npy"
+  "family": "october/family_55_61.npz"
  },
  {
   "dim": 52,
   "k": 4,
   "lam": 12,
-  "S": 84746,
-  "gain": 169516,
-  "value": 52585516,
+  "S": 88541,
+  "gain": 177106,
+  "value": 52593106,
   "previous": 52416024,
-  "family": "class_sizes_p48.npy"
+  "family": "october/family_55_61.npz"
  },
  {
   "dim": 53,
   "k": 5,
   "lam": 20,
-  "S": 141091,
-  "gain": 282222,
-  "value": 52698222,
+  "S": 147412,
+  "gain": 294864,
+  "value": 52710864,
   "previous": 52416040,
-  "family": "class_sizes_p48.npy"
+  "family": "october/family_55_61.npz"
  },
  {
   "dim": 54,
   "k": 6,
   "lam": 36,
-  "S": 253417,
-  "gain": 506906,
-  "value": 52922906,
+  "S": 264749,
+  "gain": 529570,
+  "value": 52945570,
   "previous": 52416072,
-  "family": "class_sizes_p48.npy"
+  "family": "october/family_55_61.npz"
  },
  {
   "dim": 55,
   "k": 7,
   "lam": 63,
-  "S": 441802,
-  "gain": 883730,
-  "value": 53299730,
+  "S": 461480,
+  "gain": 923086,
+  "value": 53339086,
   "previous": 52416126,
-  "family": "class_sizes_p48.npy"
+  "family": "october/family_55_61.npz"
  },
  {
   "dim": 56,
   "k": 8,
   "lam": 120,
-  "S": 834576,
-  "gain": 1669392,
-  "value": 54085392,
+  "S": 871429,
+  "gain": 1743098,
+  "value": 54159098,
   "previous": 52416240,
-  "family": "class_sizes_p48.npy"
+  "family": "october/family_55_61.npz"
  },
  {
   "dim": 57,
   "k": 9,
   "lam": 153,
-  "S": 1058935,
-  "gain": 2118176,
-  "value": 54534176,
+  "S": 1105366,
+  "gain": 2211038,
+  "value": 54627038,
   "previous": 52416306,
-  "family": "class_sizes_p48.npy"
+  "family": "october/family_55_61.npz"
  },
  {
   "dim": 58,
   "k": 10,
   "lam": 255,
-  "S": 1738456,
-  "gain": 3477422,
-  "value": 55893422,
+  "S": 1813321,
+  "gain": 3627152,
+  "value": 56043152,
   "previous": 52416510,
-  "family": "class_sizes_p48.npy"
+  "family": "october/family_55_61.npz"
  },
  {
   "dim": 59,
   "k": 11,
   "lam": 302,
-  "S": 2044532,
-  "gain": 4089668,
-  "value": 56505668,
+  "S": 2131922,
+  "gain": 4264448,
+  "value": 56680448,
   "previous": 52416604,
-  "family": "class_sizes_p48.npy"
+  "family": "october/family_55_61.npz"
  },
  {
   "dim": 60,
   "k": 12,
   "lam": 378,
-  "S": 2530141,
-  "gain": 5061123,
-  "value": 57477123,
+  "S": 2636915,
+  "gain": 5274671,
+  "value": 57690671,
   "previous": 52416841,
-  "family": "class_sizes_p48.npy"
+  "family": "october/family_55_61.npz"
  },
  {
   "dim": 61,
   "k": 13,
   "lam": 577,
-  "S": 3740770,
-  "gain": 7482694,
-  "value": 59898694,
+  "S": 3901694,
+  "gain": 7804542,
+  "value": 60220542,
   "previous": 52417154,
-  "family": "class_sizes_p48.npy"
+  "family": "october/family_55_61.npz"
  },
  {
   "dim": 62,

@@ -6,7 +6,7 @@ glued across a comma-separated list such as "n = 1,2,3,4,8,24".
 
     python unsupported.py      # a second, no third-party packages
 """
-import os, re, io
+import os, re, io, json
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -65,14 +65,9 @@ for v in sorted(nums):
 # differences of two columns of RESULTS.md, and the value a 249-line class would give
 # in dimension 25, which is a hypothetical, not a claim.
 def _results_values():
-    """{dimension: claimed value} from RESULTS.md, the file every claim is written from"""
-    txt = io.open(os.path.join(ROOT, 'RESULTS.md'), encoding='utf-8').read()
-    out = {}
-    for m in re.finditer(r'^\| (\d+) \| ([0-9\u202f ]+) \| \*\*([0-9\u202f ]+)\*\*',
-                         txt, re.M):
-        out[int(m.group(1))] = (int(re.sub(r'[^0-9]', '', m.group(3))),
-                                int(re.sub(r'[^0-9]', '', m.group(2))))
-    return out
+    """{dimension: (claim, comparison)} for the frozen manuscript."""
+    snapshot = json.load(io.open(os.path.join(HERE, 'registry_snapshot.json'), encoding='utf-8'))
+    return {r['dimension']: (r['total'], r['previous']) for r in snapshot['rows']}
 
 
 _PAIRS = _results_values()

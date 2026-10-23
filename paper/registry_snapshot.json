@@ -1,0 +1,270 @@
+{
+  "scope": "September manuscript snapshot; October updates are checked separately in the current registry.",
+  "rows": [
+    {
+      "dimension": 18,
+      "previous": 7654,
+      "total": 8358
+    },
+    {
+      "dimension": 25,
+      "previous": 197056,
+      "total": 197579
+    },
+    {
+      "dimension": 26,
+      "previous": 198550,
+      "total": 199806
+    },
+    {
+      "dimension": 27,
+      "previous": 200044,
+      "total": 201566
+    },
+    {
+      "dimension": 28,
+      "previous": 204520,
+      "total": 204896
+    },
+    {
+      "dimension": 29,
+      "previous": 209496,
+      "total": 209968
+    },
+    {
+      "dimension": 30,
+      "previous": 220440,
+      "total": 221012
+    },
+    {
+      "dimension": 31,
+      "previous": 238350,
+      "total": 238662
+    },
+    {
+      "dimension": 38,
+      "previous": 566652,
+      "total": 591612
+    },
+    {
+      "dimension": 39,
+      "previous": 755988,
+      "total": 756116
+    },
+    {
+      "dimension": 49,
+      "previous": 52416002,
+      "total": 52430140
+    },
+    {
+      "dimension": 50,
+      "previous": 52416006,
+      "total": 52458418
+    },
+    {
+      "dimension": 51,
+      "previous": 52416012,
+      "total": 52500816
+    },
+    {
+      "dimension": 52,
+      "previous": 52416024,
+      "total": 52585516
+    },
+    {
+      "dimension": 53,
+      "previous": 52416040,
+      "total": 52698222
+    },
+    {
+      "dimension": 54,
+      "previous": 52416072,
+      "total": 52922906
+    },
+    {
+      "dimension": 55,
+      "previous": 52416126,
+      "total": 53299730
+    },
+    {
+      "dimension": 56,
+      "previous": 52416240,
+      "total": 54085392
+    },
+    {
+      "dimension": 57,
+      "previous": 52416306,
+      "total": 54534176
+    },
+    {
+      "dimension": 58,
+      "previous": 52416510,
+      "total": 55893422
+    },
+    {
+      "dimension": 59,
+      "previous": 52416604,
+      "total": 56505668
+    },
+    {
+      "dimension": 60,
+      "previous": 52416841,
+      "total": 57477123
+    },
+    {
+      "dimension": 61,
+      "previous": 52417154,
+      "total": 59898694
+    },
+    {
+      "dimension": 62,
+      "previous": 52417932,
+      "total": 71310732
+    },
+    {
+      "dimension": 63,
+      "previous": 52418564,
+      "total": 138419844
+    },
+    {
+      "dimension": 68,
+      "previous": 331737984,
+      "total": 361275480
+    },
+    {
+      "dimension": 69,
+      "previous": 331737984,
+      "total": 627822180
+    },
+    {
+      "dimension": 70,
+      "previous": 331737984,
+      "total": 1249778250
+    },
+    {
+      "dimension": 71,
+      "previous": 331737984,
+      "total": 2603658750
+    },
+    {
+      "dimension": 73,
+      "previous": 6218175602,
+      "total": 6218179814
+    },
+    {
+      "dimension": 74,
+      "previous": 6218175606,
+      "total": 6218192454
+    },
+    {
+      "dimension": 75,
+      "previous": 6218175612,
+      "total": 6218209308
+    },
+    {
+      "dimension": 76,
+      "previous": 6218175624,
+      "total": 6218243016
+    },
+    {
+      "dimension": 77,
+      "previous": 6218175640,
+      "total": 6218285152
+    },
+    {
+      "dimension": 78,
+      "previous": 6218175672,
+      "total": 6218377840
+    },
+    {
+      "dimension": 79,
+      "previous": 6218175726,
+      "total": 6218529454
+    },
+    {
+      "dimension": 80,
+      "previous": 6218175840,
+      "total": 6218849228
+    },
+    {
+      "dimension": 81,
+      "previous": 6218175906,
+      "total": 6219034270
+    },
+    {
+      "dimension": 82,
+      "previous": 6218176110,
+      "total": 6219605578
+    },
+    {
+      "dimension": 83,
+      "previous": 6218176204,
+      "total": 6219621690
+    },
+    {
+      "dimension": 84,
+      "previous": 6218176441,
+      "total": 6220293304
+    },
+    {
+      "dimension": 85,
+      "previous": 6218176754,
+      "total": 6220745414
+    },
+    {
+      "dimension": 86,
+      "previous": 6218177532,
+      "total": 6223567844
+    },
+    {
+      "dimension": 87,
+      "previous": 6218178164,
+      "total": 6224703598
+    },
+    {
+      "dimension": 88,
+      "previous": 6218179920,
+      "total": 6230206492
+    },
+    {
+      "dimension": 89,
+      "previous": 6218181330,
+      "total": 6233054848
+    },
+    {
+      "dimension": 90,
+      "previous": 6218183254,
+      "total": 6238744788
+    },
+    {
+      "dimension": 91,
+      "previous": 6218187548,
+      "total": 6247801034
+    },
+    {
+      "dimension": 92,
+      "previous": 6218195048,
+      "total": 6266405667
+    },
+    {
+      "dimension": 93,
+      "previous": 6218205368,
+      "total": 6294850360
+    },
+    {
+      "dimension": 94,
+      "previous": 6218225496,
+      "total": 6355739600
+    },
+    {
+      "dimension": 95,
+      "previous": 6218268750,
+      "total": 6473065046
+    },
+    {
+      "dimension": 96,
+      "previous": 6218372160,
+      "total": 12886999232
+    }
+  ]
+}

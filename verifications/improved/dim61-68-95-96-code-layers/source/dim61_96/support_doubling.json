@@ -1,0 +1,57 @@
+{
+  "status": "Explicit QR48 enumeration and exact support-composition proof",
+  "mechanism": "Transversals plus doubled supports occupying at most twelve rows",
+  "qr48_weight_histogram": {
+    "0": 1,
+    "12": 17296,
+    "16": 535095,
+    "20": 3995376,
+    "24": 7681680,
+    "28": 3995376,
+    "32": 535095,
+    "36": 17296,
+    "48": 1
+  },
+  "qr48_weight12_supports": 17296,
+  "qr48_no_double_pair_supports": 2858,
+  "total_added_supports": 23012,
+  "section95": {
+    "equation": "x_0=x_4 before an orthogonal identification with R^95",
+    "new_support_classification": {
+      "none": 12842,
+      "one": 8854,
+      "both": 1316
+    },
+    "terms": {
+      "dense_section": 4294967296,
+      "transversal24_section": 2550136832,
+      "new_support24_section": 221184000,
+      "support6_section": 1847296,
+      "ordinary_poles": 188
+    },
+    "total": 7068135612,
+    "repository_baseline": 6473065046,
+    "gain": 595070566
+  },
+  "dimension96": {
+    "terms": {
+      "dense": 8589934592,
+      "transversal24": 4294967296,
+      "new_support24": 377028608,
+      "support6": 2097152,
+      "poles": 192
+    },
+    "total": 13264027840,
+    "repository_baseline": 12886999232,
+    "gain": 377028608
+  },
+  "checks": {
+    "QR48_distance12": true,
+    "doubling_preserves_intersection_bound": "2*|A intersect B| <= 2*6=12",
+    "transversal_cross_bound": "at most one per occupied row, at most twelve rows",
+    "different_partition_cross_bound": "one cell per pair-pair intersection; at most twelve source cells",
+    "sparse6_cross_bound": "2*4*6=48",
+    "geometry_inheritance": "All 95D points are in a hyperplane section of the 96D configuration"
+  },
+  "seconds": 1.3199303
+}

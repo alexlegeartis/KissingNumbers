@@ -25,48 +25,20 @@ diverged, and step 3 would paper over it.
 
 HOW TO IMPROVE A BOUND.  RESULTS.md's status column says what would have to change:
 
-    heads      dimensions 41, 42, 44, 45 and 46. Joint family/head searches and partial
-               families remain open. The latest consistency checks inherit body populations;
-               43D's larger writeup total is excluded until its certificate is recovered.
-               See verifications/improved/dim41-46-p48-heads/README.md.
-    classes    40 of the 58, dimensions 28, 29, 30, 31, 49-61 and 73-95.  Find a better family
-               of pairwise-disjoint classes and they all improve together (49-61, 73-95);
-               dimensions 28, 29 and 30 carry the norm-8 FRAME layer, which is at its own
-               ceiling at 96k points -- every vector of a Leech frame on every direction of a
-               cross-polytope -- so only a larger Leech class moves them, at +32, +52 and +96
-               per line.  Dimension 30 also still has its PACKING: its 24 type-B classes hold
-               5 941 of the 5 952 lines that 24 full classes would give, and closing the last
-               11 repeats is worth +44
-               (research/collab2531/frame/packT8.py).  Dimension 31 keeps the height-sqrt3
-               layer, +4, proved optimal for that rotation of the axis; the frame layer would
-               be +652 there but needs 42 type-B classes holding 10 254 lines and the descent
-               reaches 10 183.  P_48:
-               dim49-63-p48-caps/scripts/regenerate.py, whose family is automorphism images of
-               one base class -- more classes, or images chosen to overlap less.  Gamma_72:
-               the GPU builder, which certifies a family by a seed.  Its scripts are
-               shipped at verifications/improved/dim73-95-gamma72-caps/scripts/gpu/; the
-               working tree that RUNS them, and the integrate.py that installs a
-               finished run, sit in ../gpu/ beside this package and are not
-               part of it.  Before spending compute, read
-               dim49-63-p48-caps/scripts/ceiling.py: the construction has an ABSOLUTE ceiling
-               per dimension, and in 62 and 63 that ceiling is already below what a single
-               sign code gives, which is why those two are not in this group.
-    external   dimensions 39, 62, 63 and 96.  Each is a function of a PUBLISHED TABLE and needs
-               no new mathematics: recheck Brouwer's constant-weight tables for 39, and
-               codetables.de for [62,27,16] or [63,28,16], either of which would double its
-               dimension.  Today both stand at d = 15, one short.  Dimension 96 rests on
-               A(96,24) >= 2^33 from [96,33,24], two thirds of its total, and on the grid
-               maps [24,9,12]_4 and RS[6,4,3]_16; only the last is built here.
-    exhausted  dimensions 18, 25, 26, 27, 38.  The idea is finished; only a different construction
-               (in 25: a plateau traverse of the lens-head search moves H by one sphere at a time)
-               will move these.
-    lp-exact   dimensions 68-71.  NOT "a Gram the search has not reached" -- the Gram is
-               forced.  A rank-k sublattice of Gamma_72 has det >= (8/gamma_k)^k by Hermite,
-               the bound falls as the determinant rises, and k = 1..4 all sit at the floor
-               (A_2, A_3, D_4), each exhibited.  What is left is (a) the BASIS, which changes
-               the numeric dual and so the certificate by up to 0.7% -- scan_k3.py and
-               scan_k4.py sweep the attaining Grams -- and (b) a larger k, which needs the
-               construction rewritten in array form and extrapolates below the floor at k = 5.
+    cosets     dimensions 36-37 and 73-88. Larger phase codes, nearest subsets,
+               or compatible tail assignments remain open; no construction ceiling is claimed.
+    heads      dimensions 41-46. Joint family/head searches and partial families
+               remain open. Complete-family populations retain their documented assumptions.
+    codes      dimensions 61-63, 66-68 and 95-96. Improve the explicit input codes,
+               sparse support layers, compression maps or central sections.
+    classes    dimensions 28-31, 49-60 and 89-94. Better pairwise-disjoint class
+               families improve the corresponding cap constructions. The October P48
+               family is certified by dim49-63-p48-caps/verify_october.py.
+    external   dimension 39. Recheck the published constant-weight code tables.
+    exhausted  dimensions 18, 25-27 and 38. These construction templates have
+               their documented ceilings; other construction ideas remain possible.
+    lp-exact   dimensions 69-71. The existing k-point programs are solved exactly;
+               a different section or a larger k is needed to improve their bounds.
 
 Nothing here knows about tau(n) itself: no matching upper bound is known in any of these
 dimensions, so no claim is known to be optimal.  What IS known is when a claim cannot be
@@ -89,13 +61,16 @@ SKIP_PAPER = '--skip-paper' in sys.argv
 AUDIT_ARGS = ['--repository-only'] if '--repository-only' in sys.argv else []
 
 DRIVERS = [
-    ('dims 41, 42, 44-46', os.path.join(V, 'dim41-46-p48-heads'), 'final.py'),
+    ('dims 36, 37', os.path.join(V, 'dim36-37-coxeter-todd'), 'final.py'),
+    ('dims 41-46', os.path.join(V, 'dim41-46-p48-heads'), 'final.py'),
     ('dims 49-63', os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
     ('dims 73-80', os.path.join(V, 'dim73-95-gamma72-caps'), 'final73-80.py'),
     ('dims 81-95', os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py'),
     ('dims 46, 47', os.path.join(V, '..', 'recovered', 'dim46-47-p48-cross-sections'),
      'derive.py'),
 ]
+DRIVERS += [(_name, os.path.join(V, _name), 'final.py') for _name in
+            ('dim61-68-95-96-code-layers', 'dim73-88-gamma72-cosets')]
 TABLES = [(os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
           (os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py')]
 

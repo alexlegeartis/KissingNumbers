@@ -226,7 +226,7 @@ def claims():
     return out
 
 
-def ranking():
+def ranking(claim_rows=None):
     """every claimed dimension, as (dim, claim, reaches, chain, w1, have, need, factor, why,
     is_ers).
 
@@ -238,7 +238,7 @@ def ranking():
 
     main() prints from this and paper/factcheck.py checks the paper against it, so the ranking
     has ONE implementation and the guard cannot disagree with the thing it guards."""
-    CLAIM = claims()
+    CLAIM = claims() if claim_rows is None else claim_rows
     out = []
     for n in sorted(d for d in CLAIM if d >= 49):
         v, ch = best_chain(n)
@@ -251,10 +251,9 @@ def ranking():
             ratio = need / float(have) if have else float('inf')
         else:
             need, ratio = None, float('inf')
-        # 62, 63 and 96 ARE the chain, so 'how much room does it have over the chain'
-        # is not a question about them -- their ratio is 1.00 by construction and would
-        # otherwise rank them as the most exposed claims in the repository.
-        out.append((n, c, v, ch, w1, have, need, ratio, why, n in (62, 63, 96)))
+        # A claim equal to the evaluated chain has no improvement margin to rank.
+        # Which dimensions satisfy this can change when a stronger certificate arrives.
+        out.append((n, c, v, ch, w1, have, need, ratio, why, c == v))
     return out
 
 
@@ -321,7 +320,7 @@ def main():
         print("*** ERS ALREADY REACHES OR BEATS THE CLAIM IN DIMENSIONS %s ***" % fail)
         raise SystemExit(1)
     print("No claim is below what the Edel-Rains-Sloane construction reaches from published codes;")
-    print("dimensions 62, 63 and 96 EQUAL it, being that construction.  ALL CHECKS PASSED")
+    print("Claims equal to the chain are excluded from the exposure ranking. ALL CHECKS PASSED")
 
 
 if __name__ == '__main__':

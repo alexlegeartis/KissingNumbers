@@ -323,6 +323,24 @@ h = next(i for i, l in enumerate(lines) if l.startswith('That is **'))
 e = next(i for i in range(h + 1, len(lines)) if not lines[i].strip())
 lines[h:e] = wrap(para4)
 
+# Preserve cap-construction history while displaying the current registry beside it.
+registry = {}
+with open(os.path.join(PKG, '..', '..', '..', 'RESULTS.md'), encoding='utf-8') as source:
+    for line in source:
+        match = re.match(r'\| (\d+) \| [^|]* \| \*\*([\d\s]+)\*\* \|', line)
+        if match:
+            registry[int(match.group(1))] = int(re.sub(r'\D', '', match.group(2)))
+h = next(i for i, line in enumerate(lines) if line.startswith('| dim | k | W | scheme |'))
+lines[h] = '| dim | k | W | scheme | gain | **this cap construction** | previously | 24 October registry |'
+lines[h+1] = '|---|---|---|---|---|---|---|---|'
+for i in range(h+2, len(lines)):
+    if not lines[i].startswith('|'):
+        break
+    cells = [part.strip() for part in lines[i].split('|')[1:-1]][:7]
+    dimension = int(cells[0].replace('**',''))
+    cells.append(fmt(registry[dimension]))
+    lines[i] = '| ' + ' | '.join(cells) + ' |'
+
 out = EOL.join(lines)
 open(readme, 'w', encoding='utf-8', newline='').write(out)
 print("README.md rows 81-95 regenerated from rows81-95.json (%d rows)" % len(rows))

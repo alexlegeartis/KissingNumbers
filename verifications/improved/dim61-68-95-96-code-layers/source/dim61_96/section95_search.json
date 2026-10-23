@@ -1,0 +1,107 @@
+{
+  "status": "Exact projection and sign counts in a 96D configuration",
+  "coordinate_equality": {
+    "coordinates": [
+      84,
+      93
+    ],
+    "equation": "x_a=x_b",
+    "terms": {
+      "dense_section": 4294967296,
+      "transversal24_section": 2550136832,
+      "new_support24_section": 222937088,
+      "support6_section": 1847296,
+      "ordinary_poles": 188
+    },
+    "total": 7069888700
+  },
+  "dual8_section": {
+    "coordinates": [
+      4,
+      5,
+      6,
+      7,
+      92,
+      93,
+      94,
+      95
+    ],
+    "equation": "sum of these eight coordinates is zero",
+    "terms": {
+      "dense_section": 4697620480,
+      "transversal24_section": 2147483648,
+      "new_support24_section": 230810624,
+      "support6_section": 1316444,
+      "ordinary_poles": 176
+    },
+    "total": 7077231372,
+    "new_support_intersection_histogram": [
+      6690,
+      0,
+      10506,
+      0,
+      5068,
+      0,
+      704,
+      0,
+      44
+    ],
+    "retained_signs_per_intersection": [
+      16384,
+      0,
+      8192,
+      0,
+      6144,
+      0,
+      5120,
+      0,
+      8960
+    ],
+    "sign24_dual8_support": [
+      2,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      15
+    ],
+    "rs6_section": {
+      "points": 1316444,
+      "selected_cell_counts_per_GF16_row": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "intersection_histogram": [
+        38756,
+        21428,
+        4745,
+        580,
+        26,
+        0,
+        1
+      ],
+      "retained_signs_per_intersection": [
+        32,
+        0,
+        16,
+        0,
+        12,
+        0,
+        20
+      ],
+      "selected_symbols": "0,...,count-1 in each row; permute these eight cells to the section coordinates"
+    }
+  },
+  "best_method": "dual8_section",
+  "dimension95_total": 7077231372,
+  "repository_baseline": 6473065046,
+  "gain": 604166326,
+  "seconds": 0.7705028,
+  "geometry_proof": "Central sections and orthogonal identifications preserve the verified 96D distances"
+}

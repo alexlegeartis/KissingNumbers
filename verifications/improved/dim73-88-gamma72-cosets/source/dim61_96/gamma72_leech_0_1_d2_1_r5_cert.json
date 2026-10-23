@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "certified_intervals": true,
+  "radius_squared_leech": 5,
+  "nodes": 29223377,
+  "seconds": 34.0722,
+  "histogram": {"2": 48, "3": 4096, "4": 97152, "5": 1130496}
+}

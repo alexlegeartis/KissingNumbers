@@ -1,0 +1,43 @@
+{
+  "status": "Verified: exact group actions, tail ranks, and independently regenerated cross-head products",
+  "dimensions": {
+    "88": {
+      "bound": 6231205108,
+      "previous_working_bound": 6230206492,
+      "gain": 998616,
+      "cosets": 1456,
+      "initial_head_lines": 4373005,
+      "conflict_edges": 1920123,
+      "removed_head_lines": 1115628,
+      "retained_head_lines": 3257377,
+      "retention_fraction": 0.7448829809250161,
+      "tail_squared_norm": 8,
+      "tail_rank_expected": 16
+    }
+  },
+  "seed_count": 16,
+  "cyclic_order": 91,
+  "seconds": 608.6971490383148,
+  "source_sha256": {
+    "gamma72_coset_heads.npz": "07d264f96ae908ae1a6c82971e2191046b3b9aef66a2e53dbcd6ea8c43b70439",
+    "gamma72_order91.npz": "dff4aff617b945e050d7d9fc595a45df9fa199f7c6358e5bfa511bfffda3b99e",
+    "gamma72_scaled_seeds_16.npz": "ab934f7503cf3ee767708aea6827c609b1a37a05b69e88d4144e226aede67fd9"
+  },
+  "scope": "Comparison against repository working bounds; no global priority claim.",
+  "verification": {
+    "independent_pair_families": 11640,
+    "distinct_coset_pairs": 1059240,
+    "exact_representative_products": 105000212525,
+    "tail_ranks": {
+      "88": 16
+    },
+    "seconds": 2021.1455285549164,
+    "nearestness": "inherited certified nearest sets, preserved by checked integral isometries",
+    "internal_compatibility": "minimum Gamma72 squared norm 8; antipodal tails squared distance 10",
+    "construction_sha256": "d9a803b92414dc64d9918ba14fd78786c9da4ca6bfa6b14d3312734a6efd2c65",
+    "seed_certificate_sha256": "4f6eb647a29761ff21e2d023b5c4f5ad7d47bc0ab5cc65f0a7723ee2b9d614b7",
+    "verifier_file": "gamma72_scaled_verify_fast.py",
+    "verifier_sha256": "9562d917f6746a4a0ed0318c7e92087e0567f8353d07bf7f2abc01ff02d698bd",
+    "gram_sha256": "a23260883976630d482fcac7c4497779b1ee3a55d24e5083a44c5954496bbd06"
+  }
+}

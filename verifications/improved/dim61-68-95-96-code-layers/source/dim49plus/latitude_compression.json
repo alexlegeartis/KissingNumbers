@@ -1,0 +1,467 @@
+{
+  "dimension": 61,
+  "status": "Explicit construction; exact geometry and exhaustive binary-code verification",
+  "map": {
+    "j0": "(s/8, (-1)^i/4)",
+    "j1": "(sqrt(17)*s/32, (-1)^i/16)",
+    "head_coordinates": 60
+  },
+  "binary_code_input": {
+    "parameters": [
+      62,
+      26,
+      16
+    ],
+    "status": "built and exhaustively verified",
+    "words_enumerated": 67108864,
+    "weight_histogram": {
+      "0": 1,
+      "16": 17249,
+      "20": 529760,
+      "24": 5660200,
+      "28": 20326880,
+      "32": 26267571,
+      "36": 12196128,
+      "40": 2002840,
+      "44": 106400,
+      "48": 1835
+    },
+    "source_chain": "https://www.codetables.de/BKLC/BKLC.php?q=2&n=62&k=26"
+  },
+  "dense_geometry": {
+    "valid": true,
+    "ordered_distance_checks": 736,
+    "worst_cases": [
+      {
+        "first": [
+          0,
+          0
+        ],
+        "second": [
+          0,
+          0
+        ],
+        "removed_distance": 0,
+        "head_distance_min": 16,
+        "worst_ip": {
+          "rational": "1/2",
+          "sqrt17": "0"
+        },
+        "worst_ip_decimal": 0.5,
+        "valid": true
+      },
+      {
+        "first": [
+          0,
+          0
+        ],
+        "second": [
+          0,
+          1
+        ],
+        "removed_distance": 1,
+        "head_distance_min": 15,
+        "worst_ip": {
+          "rational": "1/64",
+          "sqrt17": "15/128"
+        },
+        "worst_ip_decimal": 0.4988014405020696,
+        "valid": true
+      },
+      {
+        "first": [
+          0,
+          0
+        ],
+        "second": [
+          1,
+          0
+        ],
+        "removed_distance": 1,
+        "head_distance_min": 15,
+        "worst_ip": {
+          "rational": "13/32",
+          "sqrt17": "0"
+        },
+        "worst_ip_decimal": 0.40625,
+        "valid": true
+      },
+      {
+        "first": [
+          0,
+          0
+        ],
+        "second": [
+          1,
+          1
+        ],
+        "removed_distance": 2,
+        "head_distance_min": 14,
+        "worst_ip": {
+          "rational": "-1/64",
+          "sqrt17": "1/8"
+        },
+        "worst_ip_decimal": 0.4997632032022076,
+        "valid": true
+      },
+      {
+        "first": [
+          0,
+          1
+        ],
+        "second": [
+          0,
+          0
+        ],
+        "removed_distance": 1,
+        "head_distance_min": 15,
+        "worst_ip": {
+          "rational": "1/64",
+          "sqrt17": "15/128"
+        },
+        "worst_ip_decimal": 0.4988014405020696,
+        "valid": true
+      },
+      {
+        "first": [
+          0,
+          1
+        ],
+        "second": [
+          0,
+          1
+        ],
+        "removed_distance": 0,
+        "head_distance_min": 16,
+        "worst_ip": {
+          "rational": "15/32",
+          "sqrt17": "0"
+        },
+        "worst_ip_decimal": 0.46875,
+        "valid": true
+      },
+      {
+        "first": [
+          0,
+          1
+        ],
+        "second": [
+          1,
+          0
+        ],
+        "removed_distance": 2,
+        "head_distance_min": 14,
+        "worst_ip": {
+          "rational": "-1/64",
+          "sqrt17": "1/8"
+        },
+        "worst_ip_decimal": 0.4997632032022076,
+        "valid": true
+      },
+      {
+        "first": [
+          0,
+          1
+        ],
+        "second": [
+          1,
+          1
+        ],
+        "removed_distance": 1,
+        "head_distance_min": 15,
+        "worst_ip": {
+          "rational": "253/512",
+          "sqrt17": "0"
+        },
+        "worst_ip_decimal": 0.494140625,
+        "valid": true
+      },
+      {
+        "first": [
+          1,
+          0
+        ],
+        "second": [
+          0,
+          0
+        ],
+        "removed_distance": 1,
+        "head_distance_min": 15,
+        "worst_ip": {
+          "rational": "13/32",
+          "sqrt17": "0"
+        },
+        "worst_ip_decimal": 0.40625,
+        "valid": true
+      },
+      {
+        "first": [
+          1,
+          0
+        ],
+        "second": [
+          0,
+          1
+        ],
+        "removed_distance": 2,
+        "head_distance_min": 14,
+        "worst_ip": {
+          "rational": "-1/64",
+          "sqrt17": "1/8"
+        },
+        "worst_ip_decimal": 0.4997632032022076,
+        "valid": true
+      },
+      {
+        "first": [
+          1,
+          0
+        ],
+        "second": [
+          1,
+          0
+        ],
+        "removed_distance": 0,
+        "head_distance_min": 16,
+        "worst_ip": {
+          "rational": "1/2",
+          "sqrt17": "0"
+        },
+        "worst_ip_decimal": 0.5,
+        "valid": true
+      },
+      {
+        "first": [
+          1,
+          0
+        ],
+        "second": [
+          1,
+          1
+        ],
+        "removed_distance": 1,
+        "head_distance_min": 15,
+        "worst_ip": {
+          "rational": "1/64",
+          "sqrt17": "15/128"
+        },
+        "worst_ip_decimal": 0.4988014405020696,
+        "valid": true
+      },
+      {
+        "first": [
+          1,
+          1
+        ],
+        "second": [
+          0,
+          0
+        ],
+        "removed_distance": 2,
+        "head_distance_min": 14,
+        "worst_ip": {
+          "rational": "-1/64",
+          "sqrt17": "1/8"
+        },
+        "worst_ip_decimal": 0.4997632032022076,
+        "valid": true
+      },
+      {
+        "first": [
+          1,
+          1
+        ],
+        "second": [
+          0,
+          1
+        ],
+        "removed_distance": 1,
+        "head_distance_min": 15,
+        "worst_ip": {
+          "rational": "253/512",
+          "sqrt17": "0"
+        },
+        "worst_ip_decimal": 0.494140625,
+        "valid": true
+      },
+      {
+        "first": [
+          1,
+          1
+        ],
+        "second": [
+          1,
+          0
+        ],
+        "removed_distance": 1,
+        "head_distance_min": 15,
+        "worst_ip": {
+          "rational": "1/64",
+          "sqrt17": "15/128"
+        },
+        "worst_ip_decimal": 0.4988014405020696,
+        "valid": true
+      },
+      {
+        "first": [
+          1,
+          1
+        ],
+        "second": [
+          1,
+          1
+        ],
+        "removed_distance": 0,
+        "head_distance_min": 16,
+        "worst_ip": {
+          "rational": "15/32",
+          "sqrt17": "0"
+        },
+        "worst_ip_decimal": 0.46875,
+        "valid": true
+      }
+    ],
+    "violations": []
+  },
+  "negative_control_distance15": {
+    "rejected": true,
+    "violations": 14
+  },
+  "support_code": {
+    "q": 4,
+    "n": 15,
+    "k": 6,
+    "distance": 8,
+    "weight_histogram": {
+      "0": 1,
+      "8": 405,
+      "10": 1260,
+      "12": 1890,
+      "14": 540
+    },
+    "generator_polynomial_low_to_high": [
+      1,
+      2,
+      2,
+      0,
+      3,
+      1,
+      0,
+      1,
+      3,
+      1
+    ],
+    "supports": 4096,
+    "ambient_coordinates": 60,
+    "maximum_overlap": 7,
+    "pairs_checked": 8386560
+  },
+  "sign_code": {
+    "q": 2,
+    "n": 15,
+    "k": 10,
+    "distance": 4,
+    "words": 1024,
+    "weight_histogram": {
+      "0": 1,
+      "4": 105,
+      "6": 280,
+      "8": 435,
+      "10": 168,
+      "12": 35
+    }
+  },
+  "sparse_geometry": {
+    "weight15_same_support": true,
+    "weight15_distinct_supports": true,
+    "weight2_same_support": true,
+    "weight2_distinct_supports": true,
+    "weight15_vs_weight2_squared": true,
+    "dense_j0_vs_weight15_squared": true,
+    "dense_j1_vs_weight15_squared": true,
+    "dense_j0_vs_weight2_two_head_squared": true,
+    "dense_j1_vs_weight2_two_head_squared": true,
+    "dense_j0_vs_weight2_head_tail_squared": true,
+    "dense_j1_vs_weight2_head_tail_squared": true
+  },
+  "counts": {
+    "dense": 67108864,
+    "weight15": 4194304,
+    "weight2": 7320,
+    "total": 71310488,
+    "previous_research_bound": 60220542,
+    "gain": 11089946,
+    "relative_gain": 0.18415553284126873
+  },
+  "arithmetic": "integers and fractions; exact quadratic-radical comparisons",
+  "general_family": {
+    "theorem": "K(4d-3) >= A_binary(4d-2,d) for every integer d>=4",
+    "proof": "See GENERAL FAMILY in the module docstring; all inequalities follow from the displayed nonnegative rational identity.",
+    "parameter_checks": [
+      {
+        "distance": 4,
+        "binary_length": 14,
+        "spherical_dimension": 13,
+        "t": "2/7",
+        "squared_ratio_gap": "0",
+        "valid": true
+      },
+      {
+        "distance": 5,
+        "binary_length": 18,
+        "spherical_dimension": 17,
+        "t": "5/18",
+        "squared_ratio_gap": "5/1296",
+        "valid": true
+      },
+      {
+        "distance": 8,
+        "binary_length": 30,
+        "spherical_dimension": 29,
+        "t": "4/15",
+        "squared_ratio_gap": "8/1575",
+        "valid": true
+      },
+      {
+        "distance": 16,
+        "binary_length": 62,
+        "spherical_dimension": 61,
+        "t": "8/31",
+        "squared_ratio_gap": "16/4805",
+        "valid": true
+      },
+      {
+        "distance": 32,
+        "binary_length": 126,
+        "spherical_dimension": 125,
+        "t": "16/63",
+        "squared_ratio_gap": "32/17577",
+        "valid": true
+      },
+      {
+        "distance": 64,
+        "binary_length": 254,
+        "spherical_dimension": 253,
+        "t": "32/127",
+        "squared_ratio_gap": "320/338709",
+        "valid": true
+      },
+      {
+        "distance": 128,
+        "binary_length": 510,
+        "spherical_dimension": 509,
+        "t": "64/255",
+        "squared_ratio_gap": "3968/8258175",
+        "valid": true
+      }
+    ]
+  },
+  "nearby_obstruction": {
+    "excluded": "universal four-fibre compression 4d-1 -> 4d-2",
+    "scope": "positive scalar head coefficient and one tail coordinate per label",
+    "reason": "distance-two products >=1/(4d) and same-sign distance-one products <=1/(4d) force equality, contradicting the norms",
+    "does_not_exclude": "code-specific maps, additional fibres or tail coordinates"
+  },
+  "injectivity": "different j have different nonzero head magnitudes; different i have opposite nonzero last coordinate; different s have different head sign vectors",
+  "novelty": "not established by this verifier"
+}

@@ -26,20 +26,17 @@ def sp(n):
     return '{:,}'.format(int(n)).replace(',', NB)
 
 
-# Dimensions 62 and 63 are computed but no longer claimed from this construction: a single
-# Edel-Rains-Sloane sign code beats even its CEILING there (scripts/ceiling.py), so they moved
-# to ../dim62-63-ers-chain/.  Dimension 61 is now the last row this package claims, so it is
-# the one emphasised, and the two superseded rows say so in place of a bold value.
+# Read the current registry so stronger constructions are marked explicitly.
 SUPERSEDED = {}
 for _line in io.open(os.path.join(DELIV, 'RESULTS.md'), encoding='utf-8'):
-    _m = re.match(r'\| (62|63) \| [^|]* \| \*\*([\d\s  ]+)\*\* \|', _line)
+    _m = re.match(r'\| (61|62|63) \| [^|]* \| \*\*([\d\s\u202f\u00a0]+)\*\* \|', _line)
     if _m:
         SUPERSEDED[int(_m.group(1))] = int(re.sub(r'\D', '', _m.group(2)))
-assert set(SUPERSEDED) == {62, 63}, 'RESULTS.md has no claim in dimension 62 or 63'
+assert set(SUPERSEDED) == {61, 62, 63}, 'RESULTS.md lacks dimensions 61–63'
 out = []
 for r in rows:
     d = r['dim']
-    b = (lambda x: '**%s**' % x) if d == 61 else (lambda x: x)
+    b = (lambda x: '**%s**' % x) if d == 60 else (lambda x: x)
     if d in SUPERSEDED:
         val = '%s &nbsp;*(superseded by %s)*' % (sp(r['value']), sp(SUPERSEDED[d]))
     else:

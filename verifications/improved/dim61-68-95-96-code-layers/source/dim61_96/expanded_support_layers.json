@@ -1,0 +1,86 @@
+{
+  "status": "Exact retained support counts, code membership and Steiner packing verified",
+  "dimensions": {
+    "66": {
+      "terms": {
+        "dense64": 268435456,
+        "weight16": 69689344,
+        "weight4": 167168,
+        "poles": 132
+      },
+      "total": 338292100,
+      "support16_count": 34028,
+      "deleted_mother_coordinates": [
+        21,
+        37,
+        38,
+        49,
+        57,
+        63,
+        67
+      ],
+      "support4_count": 10448,
+      "reference_bound": 331737990,
+      "reference_type": "ERS64 plus orthogonal tail",
+      "gain": 6554110
+    },
+    "67": {
+      "terms": {
+        "dense64": 268435456,
+        "weight16": 82796544,
+        "weight4": 168192,
+        "poles": 134
+      },
+      "total": 351400326,
+      "support16_count": 40428,
+      "deleted_mother_coordinates": [
+        21,
+        37,
+        38,
+        49,
+        57,
+        63
+      ],
+      "support4_count": 10512,
+      "reference_bound": 331737996,
+      "reference_type": "ERS64 plus orthogonal tail",
+      "gain": 19662330
+    },
+    "68": {
+      "terms": {
+        "dense64": 268435456,
+        "weight16": 102916096,
+        "weight4": 169744,
+        "poles": 136
+      },
+      "total": 371521432,
+      "support16_count": 50252,
+      "deleted_mother_coordinates": [
+        21,
+        37,
+        38,
+        49,
+        57
+      ],
+      "support4_count": 10609,
+      "reference_bound": 361275480,
+      "reference_type": "repository benchmark",
+      "gain": 10245952
+    }
+  },
+  "cyclic_template_ceiling_69_71": {
+    "69": 625660714,
+    "70": 625670108,
+    "71": 625679758
+  },
+  "ceiling_scope": "This weight-16 shell, this dense body and the chain (64,16,4,1), even allowing the entire shell in each dimension",
+  "geometry_proof": {
+    "norm_squared": 64,
+    "inner_product_limit": 32,
+    "dense_sparse_max": 32,
+    "weight16_weight4_max": 32,
+    "weight4_pair_max": 32,
+    "pole_weight4_max": 32
+  },
+  "mother_code_words_enumerated": 68719476736
+}

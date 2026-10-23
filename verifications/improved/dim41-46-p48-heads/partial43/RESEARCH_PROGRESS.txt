@@ -1,0 +1,82 @@
+PARTIAL-FAMILY SEARCH -- 23 OCTOBER 2026
+
+New retained 43D construction: 2,919,743, improving 2,919,686 by 57.
+The gain is modest; this pass does not achieve the proposed 3-million target.
+
+The construction keeps all 118 complete families with r3 >= 12 and all five
+pure heads. It replaces the 3,351-point tiny layer by 3,408 explicit points.
+The first free-insertion screen supplied 15 points; continuous point-head
+search raised this to 18. Small shared-deletion searches found 96 exact
+profitable trades. Selecting compatible trades and retaining compatible free
+insertions gives the final gain of 57. A separate finite packing of the
+union of the successful trade points gives the same total.
+
+Exact replay: results_43/verify.py checks 6,232,333 angles with integer
+arithmetic. It reconstructs the parent embedding, rank-40 complement, gluing
+map, and all 30,240 shortest body vectors. The verifier independently derives
+21,825 sharpened body bounds using absent shortest differences. Complete
+large-family populations retain the previous modular/population proof and
+published parent minimum/design assumptions; they were not freshly enumerated.
+
+This is a constructive lower bound, not an optimality claim or a fresh audit
+of every external publication. Preferred local package directory: results_43.
+
+OTHER COMPLETED EXPERIMENTS
+
+43D tiny insertion pool: 1,835 shared head positions plus class-specific
+positions, 30,065 class/head choices, 316,677 point/head choices after the
+large-family screen. Longer heads than the whole-family radius restriction
+were allowed; the retained gain does not depend on a claimed successful
+long-head insertion.
+
+43D continuous tiny heads: 10,080 distinct constraint signatures, 145,497 LP
+calls, 21 feasible point/head samples. The lifted-polytope search samples
+vertices and is not an exhaustive feasibility proof.
+
+43D joint motion of small blocks of individual tiny points: 150 attempts,
+no further insertion. No rigidity conclusion follows.
+
+Norm-four body recovery: 1,095,312 explicit vectors obtained from differences
+of shortest bodies. Exactly 488 discriminant classes reach their full
+495-point population; 1,752 classes remain incomplete in this recovered pool.
+All sixty retained 43D medium classes were separately enumerated completely.
+Replacing their conservative bounds by actual maxima sharpens 3,408 entries
+of the tiny-point bound matrix. Another 18,270 LP calls over the affected
+signatures found no further free insertion in the sampled search.
+
+43D partial-medium screen: 620,739 point/head choices survive the large
+families; 275,289 also survive the old tiny layer. None is a free insertion
+against the retained medium layer. Small exchanges from 191,352 candidates
+with at most three old-medium blockers found no profitable sampled trade.
+
+42D: completed medium and tiny layers for 67 alternative hexagon cores whose
+saved large-layer incumbents have eighteen large families. The best result
+reproduces 1,991,445. This tests those fixed large-layer choices and finite
+head pools; it is not a global obstruction for 42D.
+
+45D: 3,108 shared head positions were screened, giving 58,968 point/head
+choices after the big-layer check and no free additions. A continuous
+eight-minute screen visited 3,358 of 10,080 constraint signatures with
+44,774 LP calls and found no insertion. A small-trade screen of 24,477
+candidates with at most three blockers also found no profitable trade.
+
+Discriminant reflection audit: reflections outside the E8 Weyl group can
+preserve the 43D outer core, but none of these single reflections preserves
+all retained large-family inequalities. A finite auxiliary screen for one
+such core supplied no improvement. Coalescing cores by their pair-distance
+matrix is only a search heuristic, not a proof of equivalence of their full
+auxiliary extension problems.
+
+Current retained project ledger:
+  41     1,460,036
+  42     1,991,445
+  43     2,919,743  (+57 this pass)
+  44     4,939,281
+  45     7,653,571
+  46    13,387,797
+  47    23,766,960
+  48    52,416,000
+
+Useful next work: larger shared-deletion neighborhoods, partial large-body
+families, and adaptive promotion of body coordinates followed by coordinated
+motion of refined groups. The latter remains unimplemented in this pass.

@@ -5,9 +5,9 @@ according to what is currently true about it. The distinction is the point of th
 a repository that only shows its wins is much less useful to the next person than one that
 shows where the doors are shut.
 
-## [`improved/`](improved/) — 57 of the 58 claims, currently the best known
+## [`improved/`](improved/) — all 63 claims, including retained historical records
 
-Fourteen packages, one per **construction idea** rather than one per dimension, because several
+Seventeen packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -19,24 +19,28 @@ file, and the history of the lower bound in its dimensions.
 | [`dim28-norm8-frame-layer`](improved/dim28-norm8-frame-layer/) | 28 | apparently new — joint work in progress with H. Cohn and B. Lindow; the head of a deletion-free layer may have norm 8 rather than 6, and at height √2 that is what clears the cap threshold: the 24 vectors 8eᵢ form a Leech frame, each carries all eight directions ±e_k of ℝ⁴, and the axis drops to the 16 half-vectors of the dual 24-cell |
 | [`dim29-30-frame-layer`](improved/dim29-30-frame-layer/) | 29, 30 | apparently new — joint work in progress with H. Cohn and B. Lindow; the dimension-28 norm-8 frame layer at height √2 carried to ℝ²⁴⁺ᵏ, where it is 48 frame vectors on the whole cross-polytope of ℝᵏ — 96k points, 480 and 576 — deleting no equator point. It needs every owner to be type B for the frame, and in the coordinates where the frame is 8eᵢ the type-B lines are exactly the 48 576 octad vectors of the Golay code, which the whole monomial group 2¹²:M₂₄ permutes, so every monomial image of a class is again a clean class |
 | [`dim31-frame-layer`](improved/dim31-frame-layer/) | 31 | apparently new — joint work in progress with H. Cohn and B. Lindow; the norm-8 frame layer at height √2, 672 points deleting no equator point, carried by 42 pairwise disjoint type-B classes holding 10 328 of 10 416 owner lines, with an axis of 118 of 126.  Supersedes the height-√3 layer |
+| [`dim36-37-coxeter-todd`](improved/dim36-37-coxeter-todd/) | 36, 37 | exact short shells and phase-orbit angles; 37D adds two latitude layers |
 | [`dim38-leech-large-codimension`](improved/dim38-leech-large-codimension/) | 38 | apparently new |
 | [`dim39-ers-constant-weight`](improved/dim39-ers-constant-weight/) | 39 | apparently new — but check Sun–Wang's latest revision |
-| [`dim41-46-p48-heads`](improved/dim41-46-p48-heads/) | 41, 42, 44–46 | current supplied candidates; integer angles and exact ranks replay with inherited populations; latest 43D certificate missing, older seed retained |
-| [`dim49-63-p48-caps`](improved/dim49-63-p48-caps/) | 49–63 | apparently new — 62 and 63 are reached here too, but claimed from the chain below |
-| [`dim62-63-ers-chain`](improved/dim62-63-ers-chain/) | 62, 63 | apparently new — the Edel–Rains–Sloane chain, which beats the caps in both |
-| [`dim68-69-gamma72-cross-sections`](improved/dim68-69-gamma72-cross-sections/) | 68, 69 | apparently new — the k-point LP with the Gram exhibited |
+| [`dim41-46-p48-heads`](improved/dim41-46-p48-heads/) | 41–46 | current supplied certificates, including partial-family 43D and coordinated-motion 45D; integer angles and exact head dimensions replay with inherited complete-family populations |
+| [`dim49-63-p48-caps`](improved/dim49-63-p48-caps/) | 49–63 | current in 49–60D; retained cap counts in 61–63D are superseded by October code constructions |
+| [`dim62-63-ers-chain`](improved/dim62-63-ers-chain/) | 62, 63 | retained chain, superseded by the October central sections |
+| [`dim68-69-gamma72-cross-sections`](improved/dim68-69-gamma72-cross-sections/) | 68, 69 | current in 69D; the retained 68D section is superseded by October code layers |
 | [`dim70-71-gamma72-cross-sections`](improved/dim70-71-gamma72-cross-sections/) | 70, 71 | apparently new — **the claim most in need of a literature check** |
-| [`dim73-95-gamma72-caps`](improved/dim73-95-gamma72-caps/) | 73–95 | apparently new |
+| [`dim73-95-gamma72-caps`](improved/dim73-95-gamma72-caps/) | 73–95 | current in 89–94D; other cap counts are retained history |
+| [`dim61-68-95-96-code-layers`](improved/dim61-68-95-96-code-layers/) | 61–63, 66–68, 95–96 | exact code compression, layers and central sections |
+| [`dim73-88-gamma72-cosets`](improved/dim73-88-gamma72-cosets/) | 73–88 | certified nearest subsets and repaired group images |
 
-**The heading counts this tier, not the dimensions in which the project is ahead**, and three
-things sit outside it. The remaining claim is **dimension 96**, filed in [`closed/`](closed/) because
-it settles that dimension *against* the cap construction — the value it leaves standing is
-Edel–Rains–Sloane's, not this project's. The older **46D and 47D cross-section values** are in
+**All current claims are in this tier.** The older 96D ERS evaluation remains
+in [`closed/`](closed/) as a retained construction; the October doubled-support
+construction now improves it. The older **46D and 47D cross-section values** are in
 [`recovered/`](recovered/): published by other people and not claimed from that
 package. The new 46D family/head configuration is larger and is registered in
-`improved/`. The 43D working total 2,911,990 is not registered while its latest
-certificate is missing; the older 2,878,155-point seed is included for replay.
+`improved/`. The supplied 43D construction now registers 2,919,743 points; the older
+2,878,155-point seed is retained for replay. The missing writeup target
+2,911,990 is historical and is not used by the current certificate.
 No 47D/48D improvement is claimed. The paper remains its earlier snapshot.
+
 
 ## [`recovered/`](recovered/) — already published, re-derived here
 
@@ -49,8 +53,10 @@ count from an independent route is the sharpest check the cross-section machiner
 |---|---|---|
 | [`dim46-47-p48-cross-sections`](recovered/dim46-47-p48-cross-sections/) | 46, 47 | **47**: Boyvalenkov–Cherkashin, *Results in Mathematics* **80** (2025), Paper No. 3; equation (3) of [arXiv:2312.05121](https://arxiv.org/abs/2312.05121). **46**: Sun–Wang, [arXiv:2607.20359](https://arxiv.org/abs/2607.20359), Table 3; the ingredients were in Ozeki's 2016 Siegel theta tables |
 
-Cohn's table has absorbed neither, still recording 9 741 412 and 5 318 060. That is a fact
-about the table, not a result of this project, and it is not counted as one.
+Cohn's table, fetched on 24 October 2026, records 23 766 960 in 47D and
+12 309 600 in 46D. These recovered values remain historical cross-checks; the
+new 46D head construction gives 13 387 797. See the dated comparison in
+[`common/cohn_20261024.json`](../common/cohn_20261024.json).
 
 ## [`superseded/`](superseded/) — was a record, is not any more
 
@@ -69,11 +75,10 @@ project's own later work.
 
 ## [`closed/`](closed/) — mechanisms at their exact ceiling
 
-Twelve packages. Eleven carry no claim: they are the negative results, kept because they are what
-stops the next attempt from wasting time, and several are *proofs of optimality for a
-mechanism* rather than failed searches. The twelfth is the exception and is marked as such
-below — it settles dimension 96 **against** the cap construction, and the claim it leaves
-standing is Edel–Rains–Sloane's rather than this project's.
+Twelve packages. These retain negative results, proofs of optimality for
+particular mechanisms, and the historical ERS evaluation at 96D. That evaluation
+beats the old cap construction and is now superseded by the October doubled-support
+construction. Every current registered claim is in `improved/`.
 
 | package | what it settles |
 |---|---|

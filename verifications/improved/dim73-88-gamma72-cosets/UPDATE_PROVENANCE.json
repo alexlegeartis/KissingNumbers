@@ -1,0 +1,526 @@
+{
+  "checkpoint_date": "2026-10-24",
+  "copies": [
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_coset_certificate.json",
+      "source": "research/dim61_96/gamma72_coset_certificate.json",
+      "sha256": "4f6eb647a29761ff21e2d023b5c4f5ad7d47bc0ab5cc65f0a7723ee2b9d614b7"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_coset_certificate.py",
+      "source": "research/dim61_96/gamma72_coset_certificate.py",
+      "sha256": "bf9e70c406bf75320db5d3861a134427c51679cde783056af169a86c8ce179a0"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_coset_count.cpp",
+      "source": "research/dim61_96/gamma72_coset_count.cpp",
+      "sha256": "7557d3a57cacd6131295ec011f5c8498745014873cda0177442ac9380c940692"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_coset_extract.cpp",
+      "source": "research/dim61_96/gamma72_coset_extract.cpp",
+      "sha256": "438e5f08e0943121552009864d7d6e86f7c71af40a143343bb486db02e0775a9"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_coset_heads.npz",
+      "source": "research/dim61_96/gamma72_coset_heads.npz",
+      "sha256": "07d264f96ae908ae1a6c82971e2191046b3b9aef66a2e53dbcd6ea8c43b70439"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_coset_screen.cpp",
+      "source": "research/dim61_96/gamma72_coset_screen.cpp",
+      "sha256": "814acf5f6ff459295ca4edf44d6f7d0d3102655194c089a9d7f4aa170fe3f41d"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_cosets.py",
+      "source": "research/dim61_96/gamma72_cosets.py",
+      "sha256": "e52df70c7940aa5eda5047834dd4a21485a6b39ada91275e49aa7607bd7cf102"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_export_block0.bin",
+      "source": "research/dim61_96/gamma72_export_block0.bin",
+      "sha256": "4ebac3fbb16a71a39ac116d37e6245cd89e9ce50c5bb0c1c46e30012b5a6afa5"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_export_block0.selected.bin",
+      "source": "research/dim61_96/gamma72_export_block0.selected.bin",
+      "sha256": "1497164e1ddc639b0e71132244ece8df579d0425f872d557031747049d5457da"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_export_block1.bin",
+      "source": "research/dim61_96/gamma72_export_block1.bin",
+      "sha256": "2cc461af1dcc564cc52073e7e4368ec82a07b6d0cdfc8a60f7557ffe2cea0c86"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_export_block1.selected.bin",
+      "source": "research/dim61_96/gamma72_export_block1.selected.bin",
+      "sha256": "822f89bff7902b5fbe3bdcdd7625b47d105d300f1a3a6bcdf9087e340ef579ec"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_export_block2.bin",
+      "source": "research/dim61_96/gamma72_export_block2.bin",
+      "sha256": "74bbf3c16e4f284d8bd293e97b98475f9b70f74d15ffbc307efbdfd1ec4901c1"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_export_block2.selected.bin",
+      "source": "research/dim61_96/gamma72_export_block2.selected.bin",
+      "sha256": "82a02ef51be7779439b47b7ba0ebe89f8df07cb89f044b2a9ae7e830223ec306"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_head_12625758.triples.bin",
+      "source": "research/dim61_96/gamma72_head_12625758.triples.bin",
+      "sha256": "b175424bfbb0e966016955838f8d721d1301c6e9862629a69eb4d26a88baa082"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_head_4915087.triples.bin",
+      "source": "research/dim61_96/gamma72_head_4915087.triples.bin",
+      "sha256": "a0781c99b9960cde4b833caf7bc73f61eb2f09978f5ad5dc0f0587b879bb58fe"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_head_6896114.triples.bin",
+      "source": "research/dim61_96/gamma72_head_6896114.triples.bin",
+      "sha256": "9e52338453e5e4760cbe8494c69f65a507cd3fbca51216717b497d1d89c03fde"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_0.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_0.input.txt",
+      "sha256": "fcf4da4efc92ff1f63c49c4ecdc4dc1a39d68f354d40b973ca6d743265f2733a"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_0_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_0_r5_cert.bin",
+      "sha256": "4ebac3fbb16a71a39ac116d37e6245cd89e9ce50c5bb0c1c46e30012b5a6afa5"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_0_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_0_r5_cert.json",
+      "sha256": "90b9273785643d2102b32de745fcf4df2d941cd82b5f3cfd4aaa019cf25c9aa4"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_1.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_1.input.txt",
+      "sha256": "d1162f220bbdb6476454cd830f0baaf2da7fb14525ff736eb0f39cc61c1d771a"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_1_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_1_r5_cert.bin",
+      "sha256": "2cc461af1dcc564cc52073e7e4368ec82a07b6d0cdfc8a60f7557ffe2cea0c86"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_1_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_1_r5_cert.json",
+      "sha256": "fe7fa05e7f8dd81a11359a3d8e2d3744ac61c02defcd7a58f1f2d4de4fce69b8"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_2.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_2.input.txt",
+      "sha256": "3ee0b30cad351736a2c876b71ce543a0611a6dd8ba691e6a26986be635069117"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_2_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_2_r5_cert.bin",
+      "sha256": "74bbf3c16e4f284d8bd293e97b98475f9b70f74d15ffbc307efbdfd1ec4901c1"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_2_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_2_r5_cert.json",
+      "sha256": "c88a537c8c220b1b5a343e8434d8367d6edde3d5a56d1e57e3484858bc3295f7"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d1_0.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d1_0.input.txt",
+      "sha256": "e7fc34865519a6fd8fcf92f0f068fad3b7a63d81491fed288a0e2640bce2b13a"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d1_0_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d1_0_r5_cert.bin",
+      "sha256": "b92dbee49dcba3c2cb96c4b2b7b210f23aa85cc0364d832d28786381c613b1b9"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d1_0_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d1_0_r5_cert.json",
+      "sha256": "54e088b5ae2095bd7365312de8bdd671bcd08310a074f1db1163ef7b9a5f8991"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d1_1.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d1_1.input.txt",
+      "sha256": "197ffcf152298d0f073de2b93c5e3148a616c6eec763ec57dc7531725edae690"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d1_1_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d1_1_r5_cert.bin",
+      "sha256": "d39b83e223aef4baae3d6c123e6bd127f964682bcacd0a606aeba6782b24fdb4"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d1_1_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d1_1_r5_cert.json",
+      "sha256": "2faa2e5de16fce4fd1799d946301a36ceb232a9af38113a65003d8c24794f891"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d1_2.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d1_2.input.txt",
+      "sha256": "96dde7b3fba283afea15442b8890b2fa73f6c50ffd5cb1b41f426a9eea6c82c2"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d1_2_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d1_2_r5_cert.bin",
+      "sha256": "f38590b646e694d2df0e8db1440be83b88a96beb74e12c7c9ef0eee6a772fc69"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d1_2_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d1_2_r5_cert.json",
+      "sha256": "28c1cce96fab71917c905c56be7ef15fe31d90915d430176a2cd8aead7f0560d"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d2_0.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d2_0.input.txt",
+      "sha256": "80f154c48255b7abe5524d0d32c0b94429e8a7228c7339ce6afd11d0b275aeb1"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d2_0_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d2_0_r5_cert.bin",
+      "sha256": "e89f620b903d3a321efa8c61ca5ad37066513e1a163ae5857554490041e2b572"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d2_0_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d2_0_r5_cert.json",
+      "sha256": "c3f08d569616a1ed31fca06ff69c8757b5f4c99469e6568de1b32be196c247c0"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d2_1.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d2_1.input.txt",
+      "sha256": "4dae5d8dc89661e6d31984e6d225ab8ab8316cba953243d8def12b586438d675"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d2_1_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d2_1_r5_cert.bin",
+      "sha256": "ed9357e3d0c571aa8b1857947e57831b3ed8043a972b5875731237575366b890"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d2_1_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d2_1_r5_cert.json",
+      "sha256": "018398170a94792f8e01a654a13f26b96fe837f969a869a6b7ab3aaa3afd3247"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d2_2.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d2_2.input.txt",
+      "sha256": "e1bde5af391bdf3be0de6d07f1be824572a48dd38825c53cb6c72ae8f950b422"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d2_2_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d2_2_r5_cert.bin",
+      "sha256": "253cda028796c7c138ca4489798119d14d69edb67134460d2c0e1123955eb15f"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d2_2_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d2_2_r5_cert.json",
+      "sha256": "ac008e7e47f38da8dc83df89ba2aa3c15f8af8772794f94e0b7350698c48de68"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d3_0.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d3_0.input.txt",
+      "sha256": "a334cd567b65ee34cb9483cbf4943da5866d4884261232898b531ac2bd98dc8d"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d3_0_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d3_0_r5_cert.bin",
+      "sha256": "75f24e9373cff7bb41e17fdae436968d53418b49be79913cced42a4859b47e4c"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d3_0_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d3_0_r5_cert.json",
+      "sha256": "aeced8b79dc3c3e1b9c0be803026e7a9367af2b1a66da065c6c151bb7ee58f8f"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d3_1.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d3_1.input.txt",
+      "sha256": "457d18db7cd7e897a0df1279addcfcba719a7e70e58e9ac7ac001b6f24780acb"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d3_1_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d3_1_r5_cert.bin",
+      "sha256": "59b7a8bd9507f1e5848a0af037662b641f2a454a35ccd6383159d64ede5ac245"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d3_1_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d3_1_r5_cert.json",
+      "sha256": "160a8996ffa7476667bedcb1167625a0e1bde7065b9b8c3d319308633331809c"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d3_2.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d3_2.input.txt",
+      "sha256": "fe7a8529d6186d30eee4a073211656bd1f39f4934c0966f33b814ec36f535f91"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d3_2_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d3_2_r5_cert.bin",
+      "sha256": "902bd6b478c19b80e0d98257f29d81a07f191a207d971f399c7f0e5a5626ab82"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d3_2_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d3_2_r5_cert.json",
+      "sha256": "f838f5b6b1b7fc237d0121a5b2cf5bf62ff40182f418bb374c50a2c6980a0171"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d4_0.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d4_0.input.txt",
+      "sha256": "fa08f3316321439fd6146de9d3cf060ac09a2fdfdcab6adaf38934ea6775c6f7"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d4_0_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d4_0_r5_cert.bin",
+      "sha256": "fc6294dfe5a47be6f1a5f5b59761a77b3253c4b5a739d19d9aa84c0c722c57e9"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d4_0_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d4_0_r5_cert.json",
+      "sha256": "34caf096c57a51e38973cbec7b236fd2b8fd9df40cf8f54cad42b3cdaf78c92d"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d4_1.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d4_1.input.txt",
+      "sha256": "ef7c14b06f64da4bcd3af249beff3db8f7678d60c277eaadcd76ec6fc457a7ee"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d4_1_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d4_1_r5_cert.bin",
+      "sha256": "fad082d86c60b6e49d95aff5b2ba03745761195801ac1373c63c3e607092f01d"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d4_1_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d4_1_r5_cert.json",
+      "sha256": "e68b06b779eb26ae82d4b21b8967811cfb1e592e674f44f423a23f2f1ed8dde1"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d4_2.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d4_2.input.txt",
+      "sha256": "f0562025a2ad364047e447fb3ef3bc28bda680bc8d6e30a34a1a82b19fef497f"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d4_2_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d4_2_r5_cert.bin",
+      "sha256": "5e20029f1a55f91356feb61ae158400529dd2ff8010e4cc6935910df06b255cb"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d4_2_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d4_2_r5_cert.json",
+      "sha256": "f25b97962953207236130eb86137d5b0edf4c6d54acfa960d3c5c06d79b4a59d"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d5_0.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d5_0.input.txt",
+      "sha256": "37510a6fea1f73e10270d60c1be4b44c3f618778941debf0f55365cff75e5c3a"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d5_0_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d5_0_r5_cert.bin",
+      "sha256": "7777af1202853ae4418cf192a25fd71b2ea9bcafc404dee4839dffb6e43bd1ed"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d5_0_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d5_0_r5_cert.json",
+      "sha256": "5e3f20917995938bd2d6b39c65fcc47492032635263db72cc55797798f1711dd"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d5_1.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d5_1.input.txt",
+      "sha256": "ca1f968bdb7e2fa3ad23a39dabf06973d53edda2d4dad8b2b1f2e5138710edfd"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d5_1_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d5_1_r5_cert.bin",
+      "sha256": "31f471a4c3863222d75ad4541180f0a8d62dfb021640b36a73814f92bc7d306f"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d5_1_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d5_1_r5_cert.json",
+      "sha256": "50f549bedec434de6c00cf8a5809d1f030bb5ed6895d7272cf7fd119091d62d5"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d5_2.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d5_2.input.txt",
+      "sha256": "39b4baa98445dc27d8aea78a7853cab07c8a29193c8813ebc2e466774d81a1ca"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d5_2_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d5_2_r5_cert.bin",
+      "sha256": "5c66cd025f533d0af54c45b5e235ec7d7fd170056cb3038ed4fffd73ff0a285c"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d5_2_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d5_2_r5_cert.json",
+      "sha256": "30a1e152d42127a44d25e49dfb86f2adf292223585331f99659a3ec475258353"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d6_0.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d6_0.input.txt",
+      "sha256": "d76983be7eeb901c35276323f770ee5155768be57ba652f0c569821ec980ee2f"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d6_0_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d6_0_r5_cert.bin",
+      "sha256": "834df77ce42b9eb20b0de7a5471d23f5e1f26ea4e8a0c6362ee42d7cce586fe7"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d6_0_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d6_0_r5_cert.json",
+      "sha256": "441db0bbbb947c91834c0bcd2874893e39a0595f3166fa51436c777dd4202e69"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d6_1.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d6_1.input.txt",
+      "sha256": "0db7212b1ba9f3927ead4189f925da0c97b0fba62daae7102a9a0b9e47eccab7"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d6_1_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d6_1_r5_cert.bin",
+      "sha256": "5864e150c0466e91abd555c8b87058ffa24cbd961c25c43a094bd78d5fb4ba45"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d6_1_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d6_1_r5_cert.json",
+      "sha256": "6f3519bf3c807cb8580f1ebe4b5abf95c80e9ae0ca117c2503ece3c3dbe42818"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d6_2.input.txt",
+      "source": "research/dim61_96/gamma72_leech_0_1_d6_2.input.txt",
+      "sha256": "ca74c4c7dcfdaa41f7e827c5f33b044b9f9f737dd155ec5834ebaa6ddf57d834"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d6_2_r5_cert.bin",
+      "source": "research/dim61_96/gamma72_leech_0_1_d6_2_r5_cert.bin",
+      "sha256": "8c8afbb433fbc5732ed444fd3b336080806baf18d1374a1e0ba14b49d270af37"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_0_1_d6_2_r5_cert.json",
+      "source": "research/dim61_96/gamma72_leech_0_1_d6_2_r5_cert.json",
+      "sha256": "6f4edc537a398a51dc7833da0d8362b5305fa921a2f04ac40414e7a44116356c"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_enum.cpp",
+      "source": "research/dim61_96/gamma72_leech_enum.cpp",
+      "sha256": "2bf18685a4c6610f238e52c8b946510b26aec6322f8588cd79ef4e57084e9b8d"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_ldl.txt",
+      "source": "research/dim61_96/gamma72_leech_ldl.txt",
+      "sha256": "e117a9b3d46d12ff8dad7e0ed6fc155b4f279f5f680b38bf28e2a8d2c2f3d716"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_leech_structure.npz",
+      "source": "research/dim61_96/gamma72_leech_structure.npz",
+      "sha256": "3253520e074ea6866bb39c22bf05b595945b6183b48d9ae145758c65db79752e"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_order91.npz",
+      "source": "research/dim61_96/gamma72_order91.npz",
+      "sha256": "dff4aff617b945e050d7d9fc595a45df9fa199f7c6358e5bfa511bfffda3b99e"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_repaired_lifts.json",
+      "source": "research/dim61_96/gamma72_repaired_lifts.json",
+      "sha256": "5c0d18578c016e3f4607215d901d5eb72278859e0d291293fb989975604b1241"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_repaired_lifts.npz",
+      "source": "research/dim61_96/gamma72_repaired_lifts.npz",
+      "sha256": "440189afafdefab1e96f47af4dfe066fd061d54b725cddfe1cd33abc2eae210e"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_repaired_verify.py",
+      "source": "research/dim61_96/gamma72_repaired_verify.py",
+      "sha256": "e6e8e010cb0557667ff26871779f9dc29ee32552d96df5dc60ac37ac5dc08b79"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_4.json",
+      "source": "research/dim61_96/gamma72_scaled_4.json",
+      "sha256": "0798381385726b66db2993531b3b369f975ba2f78edc689646920197a1a80700"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_4.npz",
+      "source": "research/dim61_96/gamma72_scaled_4.npz",
+      "sha256": "b22a10c401f51335cbc67bdb297ba00a4a7de0fdbe42c89d98d44dbf38afa59b"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_8.json",
+      "source": "research/dim61_96/gamma72_scaled_8.json",
+      "sha256": "dd40a03555272b1fea1a71af52a2cc9ab9de20bf0b7692d598479e620cc06e21"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_8.npz",
+      "source": "research/dim61_96/gamma72_scaled_8.npz",
+      "sha256": "39ffce8afe9a8114ec2023b176253f6af7e6b97516b0ac1c0964a40cadfeac1e"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_seeds_4.npz",
+      "source": "research/dim61_96/gamma72_scaled_seeds_4.npz",
+      "sha256": "7a7986dddf8f6557ff95b3d8fc89e46cfc1c7008b3e29378ba8aec7c6af54d3a"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_seeds_8.npz",
+      "source": "research/dim61_96/gamma72_scaled_seeds_8.npz",
+      "sha256": "5d25f55e2f12d68e93689b6d16ca7eda99c3de108f94e2f0ecb4464f3b80dac9"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_verify.py",
+      "source": "research/dim61_96/gamma72_scaled_verify.py",
+      "sha256": "65b7362844c09f240aafaa3024c4dba7ac51744e0a7aad1410629b754733739b"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_verify_fast.py",
+      "source": "research/dim61_96/gamma72_scaled_verify_fast.py",
+      "sha256": "9562d917f6746a4a0ed0318c7e92087e0567f8353d07bf7f2abc01ff02d698bd"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim73-80/gamma72_gens.npy",
+      "source": "research/dim73-80/gamma72_gens.npy",
+      "sha256": "1abaeb1148c138c54b2ac9e9916278bfc497d44af20a730296d7f205829e4876"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim73-80/gamma72_gram.npy",
+      "source": "research/dim73-80/gamma72_gram.npy",
+      "sha256": "a23260883976630d482fcac7c4497779b1ee3a55d24e5083a44c5954496bbd06"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_16.npz",
+      "source": "research/dim61_96/gamma72_scaled_16.npz",
+      "sha256": "d9a803b92414dc64d9918ba14fd78786c9da4ca6bfa6b14d3312734a6efd2c65"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_seeds_16.npz",
+      "source": "research/dim61_96/gamma72_scaled_seeds_16.npz",
+      "sha256": "ab934f7503cf3ee767708aea6827c609b1a37a05b69e88d4144e226aede67fd9"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_16.pending.json",
+      "source": "research/dim61_96/gamma72_scaled_16.json",
+      "sha256": "c6bfb6e3fadd64d0b02628ce76c8ccacd3af576b19b4967d9218e9f18a92227a"
+    }
+  ],
+  "generated_reports": [
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_16.json",
+      "sha256": "87420903adcc0474426eef30cebcdb21bdb3d6b6bb888e8eae614a34fd38d528",
+      "verification_date": "2026-10-24",
+      "input_report": "source/dim61_96/gamma72_scaled_16.pending.json",
+      "command": "python gamma72_scaled_verify_fast.py --seeds 16",
+      "method": "Independent replay in an isolated copy; all replay input hashes match the installed artifacts.",
+      "verification": {
+        "independent_pair_families": 11640,
+        "distinct_coset_pairs": 1059240,
+        "exact_representative_products": 105000212525,
+        "tail_ranks": {
+          "88": 16
+        },
+        "seconds": 2021.1455285549164,
+        "nearestness": "inherited certified nearest sets, preserved by checked integral isometries",
+        "internal_compatibility": "minimum Gamma72 squared norm 8; antipodal tails squared distance 10",
+        "construction_sha256": "d9a803b92414dc64d9918ba14fd78786c9da4ca6bfa6b14d3312734a6efd2c65",
+        "seed_certificate_sha256": "4f6eb647a29761ff21e2d023b5c4f5ad7d47bc0ab5cc65f0a7723ee2b9d614b7",
+        "verifier_file": "gamma72_scaled_verify_fast.py",
+        "verifier_sha256": "9562d917f6746a4a0ed0318c7e92087e0567f8353d07bf7f2abc01ff02d698bd",
+        "gram_sha256": "a23260883976630d482fcac7c4497779b1ee3a55d24e5083a44c5954496bbd06"
+      }
+    }
+  ]
+}

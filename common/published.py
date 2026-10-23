@@ -19,8 +19,12 @@ COHN
     THE TABLE MOVES: two entries (dimensions 12 and 19) changed while this project was in
     progress.  Re-check before claiming anything.
 
-    The table covers dimensions 1-48 and 72, AND NOTHING ELSE.  This matters enormously
+    This August snapshot covers 1-48 and 72; the 24 October live page covers 1-48
+    only (see cohn_20261024.json). Snapshot comparisons remain historical. This matters enormously
     above dimension 48 and is the single fact most often got wrong.
+
+The older 7,069-line cap estimates below refer to that fixed base, not a
+proved maximum independent set. The October 7,387-line class is larger.
 
 FLOOR
     Above dimension 48 there is no table, so "the value to beat" is what monotonicity of
@@ -42,8 +46,8 @@ FLOOR
                                      there.  That was found on 2026-08-23 and the two claims
                                      moved to verifications/improved/dim62-63-ers-chain/.
                                      They could not be rescued: the cap construction's
-                                     absolute ceiling, every one of its lambda(k) classes at
-                                     the maximum size 7069, is 66075240 and 70543480, both
+                                     fixed-base ceiling, every lambda(k) class having at
+                                     most 7069 lines, was 66075240 and 70543480, both
                                      short (dim49-63-p48-caps/scripts/ceiling.py).
 
                                      Then the SAME mistake one level up.  The sign code is
@@ -52,7 +56,7 @@ FLOOR
                                      what carries their own dimension-64 total from 2^28 =
                                      268435456 to 331737984.  Evaluated at 62 and 63 with the
                                      chain (n, 15, 2) it gives 71310732 and 138419844, and
-                                     those are what is claimed now.  Levels 1 and 2 are BUILT
+                                     those were the August claims, retained as history.  Levels 1 and 2 are BUILT
                                      in that package, not cited.  Found 2026-08-25 by
                                      verifications/closed/dim96-ers-takeover/ers_exposure.py,
                                      which evaluates the full chain in EVERY claimed dimension
@@ -116,6 +120,19 @@ COHN = {
     41: 1170384, 42: 1250676, 43: 2060399, 44: 2948552, 45: 3047160, 46: 5318060,
     47: 9741412, 48: 52416000, 72: 6218175600,
 }
+
+# Comparison entries recorded from Cohn's table on 2026-10-23 in the supplied
+# October research and the repository README. Keep the August snapshot above
+# for the manuscript and older construction history. A direct HTTPS fetch on
+# 2026-10-24 confirmed every entry below. All 48 current rows and the comparison
+# with the 18 covered repository claims are saved in cohn_20261024.json.
+# The current page has dimensions 1-48 only (unlike the older snapshot).
+OCTOBER_2026 = {
+    36: 484760, 37: 500008,
+    41: 1324472, 42: 1792386, 43: 2553792,
+    44: 4153600, 45: 7380090, 46: 12309600,
+}
+OCTOBER_2026_SOURCE = 'https://cohn.mit.edu/kissing-numbers/'
 
 # The Nebe-Sloane "Table of the highest kissing numbers presently known" that Cohn's
 # table replaced.  Kept as data and not only as prose because ONE of these dimensions,
@@ -262,12 +279,16 @@ def floor_for(d):
     not appear because the thing it improved on WAS it.  Beware that shape generally -- a
     baseline set to your own new result silently converts a claim into a non-result.
     """
+    if d in OCTOBER_2026:
+        return OCTOBER_2026[d], "Cohn's table, comparison recorded 2026-10-23"
     if d in COHN:
         return COHN[d], "Cohn's table: %s" % COHN_SOURCE.get(d, "see the table")
     if 49 <= d <= 63:
         return (COHN[48] + TAU[d - 48],
                 "direct sum P_48 (+) best %d-dimensional lattice = 52416000 + tau(%d)"
                 % (d - 48, d - 48))
+    if d in (66, 67):
+        return OTHER[64] + TAU[d-64], 'direct sum of the ERS64 construction and a %d-dimensional tail' % (d-64)
     if 64 <= d <= 71:
         return (OTHER[64],
                 "inherited by monotonicity from dimension 64 (Edel-Rains-Sloane 1998); "

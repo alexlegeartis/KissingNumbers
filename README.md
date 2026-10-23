@@ -2,19 +2,23 @@
 
 The kissing number τ(n) is the largest number of unit spheres that can touch a central unit
 sphere in ℝⁿ; equivalently, the largest set of unit vectors with pairwise inner products at
-most 1/2. This repository registers constructions in **58 dimensions**, each with a package
+most 1/2. This repository registers constructions in **63 dimensions**, each with a package
 that states its verification scope, together with the negative results that guide further
 searches. Some of our earlier records have since been superseded. Their constructions,
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
-> **October 2026 — new SOTAs in dimensions 41–46.** The October constructions
-> join our earlier results in the table below. Our best 43D construction reaches
-> **2 911 990** points, with its certificate pending. The recovered
-> **2 878 155**-point seed has passed fresh population and exact angle verification.
+> **24 October 2026 — new SOTAs in dimensions 36–37 and 41–46.**
+> The new Coxeter–Todd phase code gives **501 633** in 36D and **505 359**
+> in 37D. The supplied 43D certificate now reaches **2 919 743**, and
+> coordinated head movement raises 45D to **7 655 056**. All have passed
+> exact replay; complete-family P48n populations retain their documented assumptions.
+> The update also includes the 7 387-line P48 family, code improvements in
+> 61–63D, 66–68D and 95–96D, and Gamma72 nearest-coset constructions in 73–88D.
+> In particular, 95D reaches **7 077 231 372** and 96D **13 264 027 840**.
 
 ```bash
-python audit.py --repository-only  # all 58 claims; check this repository without its surrounding workspace
+python audit.py --repository-only  # all 63 claims; check this repository without its surrounding workspace
 ```
 
 `update.py` is the maintainer's entry point rather than the reviewer's: it runs every package
@@ -25,7 +29,7 @@ report without rewriting anything). Nothing in it decides a value; steps 1-5 onl
 a driver already produced.
 
 `audit.py` recomputes what is cheap to recompute — dimensions 47 and 71 from Venkov's
-theorem, dimensions 49–95 from the shipped class-size tables — and checks them against
+theorem, and registered counts from the shipped class, code, head and coset certificates — and checks them against
 the pinned comparison data in `common/published.py`, for monotonicity and against records
 in higher dimensions. These are checks against a recorded snapshot; they do not establish
 that every packaged value remains the best known today. It takes a few seconds.
@@ -48,8 +52,12 @@ construction results are listed below in increasing dimension order, including s
 improvements. See
 [record status](#record-status-and-retained-results) for the later values and sources.
 The status notes use [Cohn's live leaderboard](https://cohn.mit.edu/kissing-numbers/),
-retrieved **23 October 2026**. Its 41–46D entries agree with the October comparison
-values below; its 18D entry is our 8 358-point result, credited to this repository.
+retrieved **24 October 2026**. All **48** lower/upper-bound rows were captured in
+[the dated comparison](common/cohn_20261024.json). Across the **18** registered
+dimensions it covers, our eight new results in 36–37D and 41–46D exceed the
+listed bounds, 18D ties, and nine earlier results are superseded as shown below.
+The fetched table contains dimensions 1–48; higher-dimensional status uses
+the separate sources below. Its 18D entry credits this repository.
 
 | dim | recorded comparison | **this work** | SOTA value | our gain | later gain | SOTA period | our method | superseding method |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -61,65 +69,69 @@ values below; its 18D entry is our 8 358-point result, credited to this reposito
 | 29 | 209 496 | **209 968** | 210 495 | +0.23% | +0.25% | 2026-09-16 to 2026-10-05 | [Frame layer](verifications/improved/dim29-30-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
 | 30 | 220 440 | **221 012** | 222 073 | +0.26% | +0.48% | 2026-09-16 to 2026-10-10 | [Frame layer](verifications/improved/dim29-30-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
 | 31 | 238 350 | **238 662** | 241 079 | +0.13% | +1% | 2026-09-16 to 2026-10-05 | [Frame layer](verifications/improved/dim31-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
+| 36 | 484 760 | **501 633** | **SOTA** | +3.5% | — | since 2026-10-24 | [Coxeter–Todd cosets](verifications/improved/dim36-37-coxeter-todd/) | — |
+| 37 | 500 008 | **505 359** | **SOTA** | +1.1% | — | since 2026-10-24 | [Phase code + latitudes](verifications/improved/dim36-37-coxeter-todd/) | — |
 | 38 | 566 652 | **591 612** | 605 322 | +4.4% | +2.3% | 2026-08-30 to 2026-09-28 | [Leech caps](verifications/improved/dim38-leech-large-codimension/) | [Equator extension](https://github.com/QH-Lin/kissing-numbers-33-39) |
 | 39 | 755 988 | **756 116** | 768 916 | +0.017% | +1.7% | 2026-08-30 to 2026-09-28 | [ERS](verifications/improved/dim39-ers-constant-weight/) | [ERS + supports](https://github.com/QH-Lin/kissing-numbers-33-39) |
 | 41 | 1 324 472 | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 42 | 1 792 386 | **1 991 445** | **SOTA** | +11% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 43 | 2 553 792 | **2 911 990*** | **SOTA*** | +14% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 43 | 2 553 792 | **2 919 743** | **SOTA** | +14% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 44 | 4 153 600 | **4 939 281** | **SOTA** | +19% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 45 | 7 380 090 | **7 650 601** | **SOTA** | +3.7% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 45 | 7 380 090 | **7 655 056** | **SOTA** | +3.7% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 46 | 12 309 600 | **13 387 797** | **SOTA** | +8.8% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 49 | 52 416 002 | **52 430 140** | 52 430 156 | +0.027% | +0.000031% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | [7077-line lift](https://arxiv.org/html/2609.35051v1#S8.SS5) |
-| 50 | 52 416 006 | **52 458 418** | 52 458 468 | +0.081% | +0.000095% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | [7077-line lift](https://arxiv.org/html/2609.35051v1#S8.SS5) |
-| 51 | 52 416 012 | **52 500 816** | 52 500 930 | +0.16% | +0.00022% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | [7077-line lift](https://arxiv.org/html/2609.35051v1#S8.SS5) |
-| 52 | 52 416 024 | **52 585 516** | 52 585 772 | +0.32% | +0.00049% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | [7077-line lift](https://arxiv.org/html/2609.35051v1#S8.SS5) |
-| 53 | 52 416 040 | **52 698 222** | 52 698 696 | +0.54% | +0.0009% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | [7077-line lift](https://arxiv.org/html/2609.35051v1#S8.SS5) |
-| 54 | 52 416 072 | **52 922 906** | 52 923 774 | +0.97% | +0.0016% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | [7077-line lift](https://arxiv.org/html/2609.35051v1#S8.SS5) |
-| 55 | 52 416 126 | **53 299 730** | 53 301 140 | +1.7% | +0.0026% | 2026-08-30 to 2026-09-28 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | [7077-line lift](https://arxiv.org/html/2609.35051v1#S8.SS5) |
-| 56 | 52 416 240 | **54 085 392** | **SOTA** | +3.2% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | — |
-| 57 | 52 416 306 | **54 534 176** | **SOTA** | +4% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | — |
-| 58 | 52 416 510 | **55 893 422** | **SOTA** | +6.6% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | — |
-| 59 | 52 416 604 | **56 505 668** | **SOTA** | +7.8% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | — |
-| 60 | 52 416 841 | **57 477 123** | **SOTA** | +9.7% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | — |
-| 61 | 52 417 154 | **59 898 694** | **SOTA** | +14% | — | since 2026-08-30 | [P48 caps](verifications/improved/dim49-63-p48-caps/) | — |
-| 62 | 52 417 932 | **71 310 732** | **SOTA** | +36% | — | since 2026-08-30 | [ERS](verifications/improved/dim62-63-ers-chain/) | — |
-| 63 | 52 418 564 | **138 419 844** | **SOTA** | 2.64x | — | since 2026-08-30 | [ERS](verifications/improved/dim62-63-ers-chain/) | — |
-| 68 | 331 737 984 | **361 275 480** | **SOTA** | +8.9% | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim68-69-gamma72-cross-sections/) | — |
+| 49 | 52 416 002 | **52 430 776** | **SOTA** | +0.0282% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 50 | 52 416 006 | **52 460 322** | **SOTA** | +0.0845% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 51 | 52 416 012 | **52 504 618** | **SOTA** | +0.169% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 52 | 52 416 024 | **52 593 106** | **SOTA** | +0.338% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 53 | 52 416 040 | **52 710 864** | **SOTA** | +0.562% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 54 | 52 416 072 | **52 945 570** | **SOTA** | +1.01% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 55 | 52 416 126 | **53 339 086** | **SOTA** | +1.76% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 56 | 52 416 240 | **54 159 098** | **SOTA** | +3.33% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 57 | 52 416 306 | **54 627 038** | **SOTA** | +4.22% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 58 | 52 416 510 | **56 043 152** | **SOTA** | +6.92% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 59 | 52 416 604 | **56 680 448** | **SOTA** | +8.13% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 60 | 52 416 841 | **57 690 671** | **SOTA** | +10.1% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 61 | 52 417 154 | **71 310 488** | **SOTA** | +36% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 62 | 52 417 932 | **100 371 468** | **SOTA** | +91.5% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 63 | 52 418 564 | **182 407 428** | **SOTA** | 3.48x | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 66 | 331 737 990 | **338 292 100** | **SOTA** | +1.98% | — | since 2026-10-24 | [Code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 67 | 331 737 996 | **351 400 326** | **SOTA** | +5.93% | — | since 2026-10-24 | [Code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 68 | 331 737 984 | **371 521 432** | **SOTA** | +12% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 69 | 331 737 984 | **627 822 180** | **SOTA** | +89% | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim68-69-gamma72-cross-sections/) | — |
 | 70 | 331 737 984 | **1 249 778 250** | **SOTA** | 3.77x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
 | 71 | 331 737 984 | **2 603 658 750** | **SOTA** | 7.85x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
-| 73 | 6 218 175 602 | **6 218 179 814** | **SOTA** | +0.000068% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 74 | 6 218 175 606 | **6 218 192 454** | **SOTA** | +0.00027% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 75 | 6 218 175 612 | **6 218 209 308** | **SOTA** | +0.00054% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 76 | 6 218 175 624 | **6 218 243 016** | **SOTA** | +0.0011% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 77 | 6 218 175 640 | **6 218 285 152** | **SOTA** | +0.0018% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 78 | 6 218 175 672 | **6 218 377 840** | **SOTA** | +0.0033% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 79 | 6 218 175 726 | **6 218 529 454** | **SOTA** | +0.0057% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 80 | 6 218 175 840 | **6 218 849 228** | **SOTA** | +0.011% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 81 | 6 218 175 906 | **6 219 034 270** | **SOTA** | +0.014% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 82 | 6 218 176 110 | **6 219 605 578** | **SOTA** | +0.023% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 83 | 6 218 176 204 | **6 219 621 690** | **SOTA** | +0.023% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 84 | 6 218 176 441 | **6 220 293 304** | **SOTA** | +0.034% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 85 | 6 218 176 754 | **6 220 745 414** | **SOTA** | +0.041% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 86 | 6 218 177 532 | **6 223 567 844** | **SOTA** | +0.087% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 87 | 6 218 178 164 | **6 224 703 598** | **SOTA** | +0.1% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 88 | 6 218 179 920 | **6 230 206 492** | **SOTA** | +0.19% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 73 | 6 218 175 602 | **6 218 187 616** | **SOTA** | +0.000193% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 74 | 6 218 175 606 | **6 218 211 606** | **SOTA** | +0.000579% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 75 | 6 218 175 612 | **6 218 246 060** | **SOTA** | +0.00113% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 76 | 6 218 175 624 | **6 218 315 280** | **SOTA** | +0.00225% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 77 | 6 218 175 640 | **6 218 407 344** | **SOTA** | +0.00373% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 78 | 6 218 175 672 | **6 218 518 360** | **SOTA** | +0.00551% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 79 | 6 218 175 726 | **6 218 584 924** | **SOTA** | +0.00658% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 80 | 6 218 175 840 | **6 219 474 100** | **SOTA** | +0.0209% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 81 | 6 218 175 906 | **6 219 649 244** | **SOTA** | +0.0237% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 82 | 6 218 176 110 | **6 220 001 152** | **SOTA** | +0.0294% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 83 | 6 218 176 204 | **6 220 533 856** | **SOTA** | +0.0379% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 84 | 6 218 176 441 | **6 221 555 280** | **SOTA** | +0.0543% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 85 | 6 218 176 754 | **6 222 003 336** | **SOTA** | +0.0615% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 86 | 6 218 177 532 | **6 225 153 600** | **SOTA** | +0.112% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 87 | 6 218 178 164 | **6 225 433 068** | **SOTA** | +0.117% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 88 | 6 218 179 920 | **6 231 205 108** | **SOTA** | +0.209% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 89 | 6 218 181 330 | **6 233 054 848** | **SOTA** | +0.24% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
 | 90 | 6 218 183 254 | **6 238 744 788** | **SOTA** | +0.33% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
 | 91 | 6 218 187 548 | **6 247 801 034** | **SOTA** | +0.48% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
 | 92 | 6 218 195 048 | **6 266 405 667** | **SOTA** | +0.78% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
 | 93 | 6 218 205 368 | **6 294 850 360** | **SOTA** | +1.2% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
 | 94 | 6 218 225 496 | **6 355 739 600** | **SOTA** | +2.2% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 95 | 6 218 268 750 | **6 473 065 046** | **SOTA** | +4.1% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 96 | 6 218 372 160 | **12 886 999 232** | **SOTA** | 2.07x | — | since 2026-08-30 | [ERS](verifications/closed/dim96-ers-takeover/) | — |
+| 95 | 6 218 268 750 | **7 077 231 372** | **SOTA** | +13.8% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 96 | 6 218 372 160 | **13 264 027 840** | **SOTA** | 2.13x | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
 
 
 The historical SOTA period covers this project's run of published records in each
 dimension, including our successive improvements before the displayed value. A
 “since” date marks a current record in the reviewed sources; superseded records also
 have an end date, taken from the first dated larger construction identified below.
-The 43D claim retains its pending-certificate qualification. Dates use Moscow time
-and describe repository publication history rather than private discovery dates.
+Dates use Moscow time. The 24 October entries mark this integration; the earlier
+dates describe repository publication history rather than private discovery dates.
 The start dates follow the
 [first release, 30 August](https://github.com/alexlegeartis/KissingNumbers/commit/75a4047),
 [26D update, 8 September](https://github.com/alexlegeartis/KissingNumbers/commit/3e2f0fc),
@@ -134,22 +146,24 @@ for 26D, 29D and 31D; and
 for 28D and 30D. The later-result table below gives the latest retrieved values,
 which can be larger than the first result that superseded ours.
 
-The table above includes all 58 registered constructions, plus our best 43D result
-with its certificate pending. [RESULTS.md](RESULTS.md) gives the generated registry
+The table above includes all 63 registered constructions. The October update adds
+36D, 37D, 66D and 67D, raises 43D and 45D, installs the stronger P48 class family,
+and registers code and coset improvements through 96D. [RESULTS.md](RESULTS.md) gives the generated registry
 and the detailed construction descriptions.
 Its comparisons use the repository's pinned data and include results that have since
 been superseded. The earlier manuscript is in [paper/](paper/); it remains its earlier
 snapshot. See [The write-up](#the-write-up).
 
-The [P48n family/head package](verifications/improved/dim41-46-p48-heads/) supplies
-the October constructions. The five registered totals in 41D, 42D and 44–46D pass
-integer angle and exact rank checks using inherited body populations. A fresh replay
-also passed for the older standalone 41D/42D/44D population certificates.
-**\*43D:** We reached **2 911 990** points, our best result in dimension 43.
-Its certificate has not yet been supplied, so this result awaits independent verification
-and is not yet included in the verification registry. The older 2 878 155-point seed
-is fully certified under the stated P48n assumptions. The latest progress report supersedes older archive
-totals. No October improvement is claimed in 47D or 48D.
+The [Coxeter–Todd package](verifications/improved/dim36-37-coxeter-todd/)
+proves 501 633 points in 36D by exact short-shell enumeration and phase-orbit
+angle checks, then reaches 505 359 in 37D with two latitude layers. The
+[P48n family/head package](verifications/improved/dim41-46-p48-heads/) now supplies
+all six 41–46D constructions. The 43D partial-family certificate checks 3 408 explicit
+tiny points; the latest 45D certificate retains 2 187 complete families and 16 pure
+heads. Their integer angles and exact head dimensions replay, with complete-family
+populations inherited from the documented identities. The older missing 43D writeup
+certificate is historical and is not needed for the current construction. No October
+improvement is claimed in 47D or 48D.
 
 <details>
 <summary>Detailed construction notes</summary>
@@ -170,6 +184,10 @@ totals. No October improvement is claimed in 47D or 48D.
 
 - **31D:** The norm-8 frame layer at height √2, 672 points deleting no equator point, carried by 42 pairwise disjoint type-B classes holding 10 328 of 10 416 owner lines, with an axis of 118 of 126
 
+- **36D:** Three Coxeter–Todd lattices with 32 643 explicit three-point phase orbits over a fixed 403 704-point base; exact shells and angles give 501 633 points
+
+- **37D:** The 36D construction as an equator, plus two latitude layers of 1 863 points each
+
 - **38D:** The Leech cap construction at codimension 14
 
 - **39D:** [Edel–Rains–Sloane with the updated constant-weight codes](verifications/improved/dim39-ers-constant-weight/)
@@ -178,11 +196,11 @@ totals. No October improvement is claimed in 47D or 48D.
 
 - **42D:** October: jointly replaced auxiliary layers with two-dimensional heads, plus a pure-head hexagon
 
-- **43D:** October: our best 43D result, using a switched triangular face, repacked auxiliary families and seven added points; certificate pending
+- **43D:** October: 118 complete body families, 3 408 explicit tiny points selected by shared-deletion trades, and five pure heads; 2 919 743 points with a supplied exact certificate
 
 - **44D:** October: 1 034 complete body families with rational four-dimensional heads
 
-- **45D:** October: joint rearrangement of body families and five-dimensional heads, plus 16 pure-head points
+- **45D:** October: coordinated movement of large, medium and small heads retains 2 187 complete families plus 16 pure heads; 7 655 056 points
 
 - **46D:** October: independently normalized P48n families with six-dimensional heads, plus 27 pure-head points
 
@@ -221,8 +239,8 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               57 of the 58 claims, fourteen packages, one per construction
-                          idea; dimension 96 is the exception and sits in closed/
+  improved/               all 63 claims, seventeen packages; earlier constructions remain
+                          available with their original proof data
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
   closed/                 mechanisms pushed to their exact ceiling: what NOT to retry
@@ -232,13 +250,18 @@ KNOWLEDGE.md              the full working record, 158 sections, including every
                           sections supersede which, and where each script now lives
 ```
 
+Dimension-five upper-bound research is maintained separately in
+[KissingUpperBounds](https://github.com/alexlegeartis/KissingUpperBounds).
+The former `dim5upper/` snapshot was transferred to that repository's
+`legacy/dim5upper-public-snapshot-20261023/` package, with its original files
+and SHA-256 inventory, before being removed here. The unrestricted bound remains
+`40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — fourteen ideas, 57 dimensions
+### `verifications/improved/` — seventeen packages, 63 dimensions
 
-Every claim but one is in this tier. The exception is dimension 96, whose package is
-`closed/dim96-ers-takeover/`, because what it establishes is that the cap construction
-cannot reach 96 — the claim there is Edel–Rains–Sloane’s.
+Every current claim is in this tier. The historical 96D ERS evaluation remains
+in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
 
 These directory names preserve the classification at packaging time. A construction
 in `improved/` may now be superseded by a later publication; its package is retained.
@@ -246,6 +269,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 
 | package                                                                                      | dims   | the idea                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`dim18-bent-hexagon`](verifications/improved/dim18-bent-hexagon/) | 18 | bent-coset hexagon over odd Barnes–Wall; matches Cohn’s current table |
 | `[dim25-lens-heads](verifications/improved/dim25-lens-heads/)`                               | 25     | cap heads of squared length 3 in the lens of a minimal vector remove exactly their owner and never share a removal, so τ = 196560 + H + 2 + \|E\| with H = 1016 and one non-lattice equator point |
 | `[dim26-27-iota-triangles](verifications/improved/dim26-27-iota-triangles/)`                 | 26, 27 | the axis forces the heads onto squared length 8/3 and onto fixed triangles of directions, so the layer is two or four head sets at cosine ≤ 1/4 cross-constrained at cosine 1/2; the coset triangle of three norm-6 vectors summing to zero is one such set, and the involution ι(u) = −v − u on each class puts S and ι(S) on two triangles at once |
 | `[dim28-norm8-frame-layer](verifications/improved/dim28-norm8-frame-layer/)`                 | 28     | the head of a deletion-free layer need not have norm 6: at height √2 a NORM-8 head clears the cap threshold where a norm-6 head does not, and the 24 vectors 8eᵢ are a Leech frame, each carrying all eight directions ±e_k of ℝ⁴ — 384 points for 8 axis points |
@@ -253,12 +277,15 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | `[dim31-frame-layer](verifications/improved/dim31-frame-layer/)`                             | 31     | the norm-8 frame layer at height √2 carried to k = 7: all 48 vectors of a Leech frame on the whole cross-polytope of ℝ⁷, 672 points, deleting no equator point.  It needs 42 pairwise disjoint type-B classes holding at least 10 252 of the 10 416 lines 42 full classes would give; the published attempt reached 10 183 and this one carries 10 328, found by screening candidates on the free slots their octads still have rather than by scanning uniformly — a sampled clique search needs pair density p ≥ 0.5097 to reach 42 at all, and flattening the octad coverage takes p from 0.4984 to 0.5467.  The axis is E7 rotated by 45°, 45°, 90° in the coordinate planes (0,3), (2,4), (5,6), keeping 118 of 126 against the 110 the published axis kept |
 | `[dim38-leech-large-codimension](verifications/improved/dim38-leech-large-codimension/)`     | 38     | the same construction at codimension 14, where the binding constraint flips and the whole Leech shell partitions into 644 classes                                                            |
 | `[dim39-ers-constant-weight](verifications/improved/dim39-ers-constant-weight/)`             | 39     | Edel–Rains–Sloane with the 2026 constant-weight codes, at n₀ = n rather than n₀ = 32                                                                                                         |
-| [`dim41-46-p48-heads`](verifications/improved/dim41-46-p48-heads/) | 41, 42, 44–46 | independently normalized P48n body families with rational heads and pure-head extensions; inherited populations; latest 43D certificate missing |
-| `[dim49-63-p48-caps](verifications/improved/dim49-63-p48-caps/)`                             | 49–61  | the cap construction over P₄₈, with explicit classes of 7069 lines where Caro–Wei guarantees 712                                                                                             |
-| `[dim62-63-ers-chain](verifications/improved/dim62-63-ers-chain/)`                         | 62, 63 | the Edel–Rains–Sloane chain (n, 15, 2), levels 1–2 built here. Its level-0 term alone already beats the cap construction's **ceiling** in these two dimensions, so no class family could have reached them |
+| [`dim36-37-coxeter-todd`](verifications/improved/dim36-37-coxeter-todd/) | 36, 37 | Coxeter–Todd phase orbits; exact short-shell and angle replay; two latitude layers |
+| [`dim41-46-p48-heads`](verifications/improved/dim41-46-p48-heads/) | 41–46 | rational heads, explicit partial 43D families and coordinated 45D movement; inherited complete-family populations |
+| `[dim49-63-p48-caps](verifications/improved/dim49-63-p48-caps/)`                             | 49–60  | the cap construction over P₄₈, with the 7 387-line class and 577 explicit disjoint images                                                                                             |
+| `[dim62-63-ers-chain](verifications/improved/dim62-63-ers-chain/)`                         | 62, 63 | retained Edel–Rains–Sloane chain (n, 15, 2); it beats the caps restricted to the shipped bases and is superseded by the October central sections |
 | `[dim68-69-gamma72-cross-sections](verifications/improved/dim68-69-gamma72-cross-sections/)` | 68, 69 | realizability of a k-point Gram settled by **exhibiting** the k-tuple in Γ₇₂ rather than through the LP's own witness lemma, which unlocks k = 3 and k = 4 |
 | `[dim70-71-gamma72-cross-sections](verifications/improved/dim70-71-gamma72-cross-sections/)` | 70, 71 | the same k-point method on Nebe's Γ₇₂                                                                                                                                                        |
 | `[dim73-95-gamma72-caps](verifications/improved/dim73-95-gamma72-caps/)`                     | 73–95  | the cap construction over Γ₇₂, whose class threshold γ = 1/4 is exactly what permits zero-sum triples                                                                                        |
+| [`dim61-68-95-96-code-layers`](verifications/improved/dim61-68-95-96-code-layers/) | 61–63, 66–68, 95–96 | binary compression, central sections and enlarged support codes |
+| [`dim73-88-gamma72-cosets`](verifications/improved/dim73-88-gamma72-cosets/) | 73–88 | certified nearest subsets, repaired and scaled group images |
 
 
 Each package has a README with the idea, a description of every file, and **the history of
@@ -272,14 +299,17 @@ the lower bound in its dimensions** — who held it, when, and by what construct
 | `[dim46-47-p48-cross-sections](verifications/recovered/dim46-47-p48-cross-sections/)` | 46, 47 | Venkov's theorem applied to **products** of inner products with several fixed minimal vectors. Both values were already published; re-deriving them from a method that knows nothing of either is the sharpest check the cross-section machinery has, which is why the package is kept |
 
 
-
-
 ## Record status and retained results
+
+The October 7 387-line class family regains 49–55D after their September
+supersession by the 7 077-line lift. The two separate record periods are
+shown above; earlier constructions and their values remain in the package history.
+
 
 **Later improvements.** Our earlier values remain valid lower bounds and stay in
 this repository. The later values below are from
 [Cohn's leaderboard](https://cohn.mit.edu/kissing-numbers/) as retrieved on
-**23 October 2026**, and, for 49–55D, from Yang et al.,
+**24 October 2026**, and, for the earlier 49–55D supersessions, from Yang et al.,
 [*Large-Scale Autonomous Discovery of Kissing Number Constructions*, Table 1](https://arxiv.org/html/2609.35051v1#S1.T1)
 (28 September 2026). Cohn's table covers dimensions through 48; the higher-dimensional
 comparison is given separately by its source.
@@ -295,13 +325,6 @@ comparison is given separately by its source.
 | 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) |
-| 49 | 52 430 140 | 52 430 156 | [Yang et al., §8.5](https://arxiv.org/html/2609.35051v1#S8.SS5) |
-| 50 | 52 458 418 | 52 458 468 | [Yang et al., §8.5](https://arxiv.org/html/2609.35051v1#S8.SS5) |
-| 51 | 52 500 816 | 52 500 930 | [Yang et al., §8.5](https://arxiv.org/html/2609.35051v1#S8.SS5) |
-| 52 | 52 585 516 | 52 585 772 | [Yang et al., §8.5](https://arxiv.org/html/2609.35051v1#S8.SS5) |
-| 53 | 52 698 222 | 52 698 696 | [Yang et al., §8.5](https://arxiv.org/html/2609.35051v1#S8.SS5) |
-| 54 | 52 922 906 | 52 923 774 | [Yang et al., §8.5](https://arxiv.org/html/2609.35051v1#S8.SS5) |
-| 55 | 53 299 730 | 53 301 140 | [Yang et al., §8.5](https://arxiv.org/html/2609.35051v1#S8.SS5) |
 
 The linked sources give the construction behind each displayed later result:
 Takhanov–Yun use new heads with coordinated bulk motion in 25D, a deformed second
@@ -316,7 +339,7 @@ periods end at the first superseding publication.
 These dated sources determine the supersession notes; a new global record count
 is not inferred from the repository's older comparison cache.
 The October 41–46D constructions are presented alongside the earlier results above,
-with the outstanding 43D certificate obligation stated explicitly.
+with the supplied partial-family 43D and coordinated-motion 45D certificates.
 
 **Historical recovered cross-sections in dimensions 46 and 47.** τ(47) ≥ 23 766 960 is due to
 Boyvalenkov–Cherkashin, *Results in Mathematics* **80** (2025), Paper No. 3, and is
@@ -327,7 +350,7 @@ equation (3) of the preprint [arXiv:2312.05121](https://arxiv.org/abs/2312.05121
 [arXiv:2607.20359v3](https://arxiv.org/abs/2607.20359) (18 August 2026), and its ingredients
 were in Ozeki's 2016 Siegel theta tables a decade earlier, though not stated as a kissing
 number. Both were obtained here independently, and both are **recovered rather than
-claimed**: they are not in `RESULTS.md`, not counted among the 58, and not presented as
+claimed**: they are not in `RESULTS.md`, not counted among the 63, and not presented as
 results in the paper. They are kept, in
 `[verifications/recovered/](verifications/recovered/)`, because reproducing a published
 count from a method built without reference to it is the strongest validation available.
@@ -346,22 +369,29 @@ machinery — see
 the ceiling remains a result about that construction family. Dimension 12's record
 likewise landed elsewhere while this work was in progress.
 
-**Original comparison scope.** Dimensions 18, 25–31, 38, 39, 41–42, 44–46, 49–63, 68–71, 73–95.
+**Registered comparison scope.** Dimensions 18, 25–31, 36–39, 41–46, 49–63, 66–71, 73–96.
 These are the registered construction results compared with their recorded baselines;
-dimension 96 is the evaluated Edel–Rains–Sloane chain. The list includes the superseded
+the October doubled-support construction raises 96D above the retained ERS value. The list includes the superseded
 results above. An earlier improvement remains a constructive result after a larger
 configuration is found. The literature status of the 70D and 71D consequences of the
 one-point distribution of Γ₇₂'s minimal shell still merits specialist review.
 
 ## The construction ideas
 
+**Coxeter–Todd phase codes (36–37).** Three rank-12 blocks carry a fixed
+403 704-point base and 32 643 selected three-point phase orbits. Exact shell
+enumeration and integer angles prove squared distance at least 12. Two latitude
+layers add 3 726 points in 37D. The earlier full-cell construction is retained
+in the package history.
+
 **Independently normalized body families and heads (41–46).** The October constructions
 use a rank-40 complement of sqrt(3) E8 in P48n, with heads in one to six dimensions.
 Each family is normalized separately, so families can have different original lengths.
 Joint class replacements and head motions admit additional complete or partial families;
 zero-body points in the existing head span give the latest 41D, 42D, 45D and 46D
-extensions. The 43D working construction additionally uses seven nonzero-body points
-and awaits its coordinate certificate. Exact checks, population assumptions and fresh
+extensions. The supplied 43D construction replaces its tiny layer with 3 408 explicit
+body/head pairs, while coordinated 45D motion admits further complete families.
+Exact checks, population assumptions and fresh
 replay reports are documented in the
 [verification package](verifications/improved/dim41-46-p48-heads/).
 
@@ -387,7 +417,7 @@ reproduces Cohn's table in dimensions 26, 28, 29, 30, 31 **exactly** and beats i
 
 **Explicit classes.** The gain is proportional to the size of a *class* — a set of lines with
 pairwise |⟨u,u′⟩| ≤ μ/4. Caro–Wei bounds it with no coordinates at all, but real search does
-about ten times better in every lattice tried: 221 → **2118** for Γ₇₂, 712 → **7069** for
+about ten times better in every lattice tried: 221 → **2118** for Γ₇₂, 712 → **7387** for
 P₄₈, and 32 000 pairwise-disjoint classes totalling 47 150 230 lines.
 
 **The Edel–Rains–Sloane chain, evaluated where its authors did not (39, 62, 63).** Their count
@@ -440,13 +470,18 @@ in dimensions 9–19 is maximal; the antipode construction is a max-weight cliqu
 arms lie in a 30° cap, which caps it structurally; and the maximum-class problem survives
 every two-point method, the three-point SDP and the subconstituent split at 4680/11 = 425.45.
 
+`common/checkpoint.py` checks complete integrity manifests and runs the new
+source verifiers in temporary copies. The [code-layer package](verifications/improved/dim61-68-95-96-code-layers/)
+and [nearest-coset package](verifications/improved/dim73-88-gamma72-cosets/) state their
+exact replay scope and inherited inputs.
+
 ## Reproducing everything
 
 ```bash
-python run_all.py          # 68 scripts, about 40 minutes measured, one verdict
+python run_all.py          # 72 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 86 scripts, budget about 9 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 91 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay
@@ -458,7 +493,7 @@ Or individually, each from its own directory:
 
 | script                                                                        | what it establishes                                            | time   |
 | ----------------------------------------------------------------------------- | -------------------------------------------------------------- | ------ |
-| `audit.py`                                                                    | all 58 claims, mutual and external consistency                 | 30 s   |
+| `audit.py`                                                                    | all 63 claims, mutual and external consistency                 | 30 s   |
 | `common/theta.py`                                                             | E₇ = 126, Λ₂₃ = 93 150, dim 47, dim 71                         | 1 s    |
 | `common/kpoint_lp.py`                                                         | the LP, validated on the Leech and P₄₈                         | 10 s   |
 | `…/dim25-lens-heads/verify.py`                                                | τ(25) ≥ 197 579, every pair in exact arithmetic               | 4 min  |
@@ -474,11 +509,12 @@ Or individually, each from its own directory:
 | `…/dim31-frame-layer/ceilings.py 31`                                         | the same report at k = 7, 1120 vertices enumerated            | 20 s   |
 | `…/dim38-leech-large-codimension/scripts/verify.py`                           | τ(38) ≥ 591 612                                                | 10 s   |
 | `…/dim39-ers-constant-weight/scripts/verify.py`                               | τ(39) ≥ 756 116 (and τ(38) ≥ 570 236)                          | 10 s   |
-| `.../dim41-46-p48-heads/verify.py` | current 41, 42, 44-46 totals and the older 43D seed; inherited populations | 5 s |
+| `.../dim36-37-coxeter-todd/verify.py` | exact 501 633-point 36D construction and 505 359-point 37D extension | ~15 s |
+| `.../dim41-46-p48-heads/verify.py` | current 41–46D totals, partial 43D points and coordinated 45D; inherited populations | ~30 s |
 | `…/dim46-47-p48-cross-sections/derive.py`                                     | recovers 12 309 600 and 23 766 960, claiming neither           | 6 s    |
 | `…/dim49-63-p48-caps/verify.py` + `final.py`                                  |  the P₄₈ lattice, class, and fifteen numbers                    | 3 s    |
 | `…/dim49-63-p48-caps/scripts/regenerate.py`                                   | rebuilds and re-verifies all 1400 disjoint classes             | 15 min |
-| `…/dim49-63-p48-caps/scripts/ceiling.py`                                      | the construction's **absolute** ceiling, against level 0        | 1 s    |
+| `…/dim49-63-p48-caps/scripts/ceiling.py`                                      | ceilings restricted to the shipped base classes, against level 0        | 1 s    |
 | `…/dim62-63-ers-chain/scripts/verify.py`                                     | τ(62) ≥ 67 108 864, τ(63) ≥ 134 217 728, mechanism verified      | 1 s    |
 | `…/dim62-63-ers-chain/scripts/verify_chain.py`                               | τ(62) ≥ 71 310 732, τ(63) ≥ 138 419 844, levels 1–2 built here | 20 s   |
 | `…/dim68-69-gamma72-cross-sections/scripts/leech_truth.py`                     | the k-point LP is **exact** on the Leech through k = 4          | 2 s    |
@@ -534,7 +570,6 @@ cover searches. Their *conclusions* are in `verifications/closed/`, with the mea
 that support them; the intermediate data is not.
 
 
-
 ## If you are picking this up
 
 The repository is meant to be continued, not just read. A suggested route:
@@ -571,7 +606,6 @@ all — is the easiest place to be wrong about what "previously known" means.
 same answer. A missing-moments bug hid behind that for a day.
 
 
-
 ## The write-up
 
 *New lower bounds for kissing numbers in dimensions 18 through 96* is a 47-page account of
@@ -581,16 +615,17 @@ construction in §5 (dimensions 25, 26, 27, 28, 29, 30, 31, 38, 49–61, 73–95
 code-theoretic dimensions 39, 62, 63 and 96 in §6; dimension 18, the bent-coset hexagon,
 postdates the write-up and is documented in its package only.
 
-The October 2026 family/head constructions postdate this manuscript snapshot.
-They are documented in their verification package; the manuscript files have
-not been updated. Use `--skip-paper` to keep them unchanged during maintenance.
+The October 2026 class, code, coset and head constructions postdate this
+manuscript snapshot. Their verification packages and the current registry
+document the updates. `paper/registry_snapshot.json` preserves the manuscript’s
+53 results; its checkers also require the current registry to retain or improve them.
 
 **It is in this repository, at [`paper/`](paper/)** — source, bibliography, `.bbl`, PDF and
 three checkers that read this repository and exit non-zero on a mismatch:
 
 ```bash
 cd paper
-python factcheck.py      # 686 checks: every figure in the write-up, recomputed from here
+python factcheck.py      # 770 checks: every figure in the write-up, recomputed from here
 python unsupported.py    # no figure in the write-up lacks a home here
 python formulas.py       # 257 checks: every formula re-derived with sympy
 ```

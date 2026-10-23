@@ -1,0 +1,109 @@
+A MODULAR-FORM IDENTITY FOR THE 40-DIMENSIONAL BODY POPULATIONS
+Research derivation — 22 October 2026
+
+This note concerns the pinned even rank-40 complement K of sqrt(3) E8
+inside the extremal unimodular lattice P48n. Its discriminant group is
+D = K*/K, an eight-dimensional nondegenerate quadratic space over F3.
+Write q_D(c) = ||x||^2/2 mod 1 for x in class c, and
+
+  theta_c(tau) = sum_{x in K+c} q^(||x||^2/2),  q = exp(2 pi i tau).
+
+The theta vector Theta=(theta_c) has weight 20 for the finite-image Weil
+representation of D (using the theta-series convention for that representation).
+
+LEMMA
+
+For any isometry g of the discriminant quadratic form,
+
+  theta_c - theta_{g(c)} = (t_c - t_{g(c)}) eta(tau)^40,
+
+where t_c counts the vectors of squared norm 10/3 in class c.
+The statement does NOT assume that g lifts to an automorphism of K or P48n.
+
+PROOF
+
+1. Every nonzero vector of K* has squared norm at least 10/3.
+   In every discriminant class the normal lattice has a gluing representative
+   of squared norm at most 8/3. The exact E8 enumeration in geometry.py
+   supplies these representatives. A shorter nonzero body, glued to its
+   corresponding normal representative, would contradict the parent minimum 6.
+
+2. An isometry of D permutes components and commutes with the Weil action:
+   the matrices of T depend only on q_D, and those of S only on its associated
+   bilinear form. Consequently F=Theta-gTheta is again a weight-20 vector
+   modular form. Its constant term cancels, since g fixes the zero class.
+   Step 1 gives F=O(q^(5/3)) at infinity.
+
+3. eta^40 is holomorphic and nonvanishing on the upper half-plane. It has
+   weight 20, a finite-order character, and expansion
+
+     eta^40 = q^(5/3) (1 - 40 q + O(q^2)).
+
+   Thus F/eta^40 is holomorphic there and bounded at infinity. Its weight-zero
+   transformation law has finite image: both the Weil representation and
+   the eta character have finite image. Passing to their common finite-index
+   kernel makes every component an ordinary weight-zero modular function.
+   The transformation law and boundedness at infinity imply boundedness at
+   every cusp of this subgroup. Each component therefore extends to a
+   holomorphic function on the compactified modular curve and is constant.
+   Its constant is the coefficient of q^(5/3) in F, namely t_c-t_{g(c)}.
+   This proves the identity.
+
+CONSEQUENCES
+
+The orthogonal group of a nondegenerate quadratic space over F3 is transitive
+on the nonzero vectors of each fixed quadratic value (Witt's extension
+lemma). The zero class is its own orbit. Comparing coefficients with the
+already counted representative classes gives:
+
+ body squared norm     class condition              exact population
+ 10/3                  q_D(c)=2/3                    t_c
+ 16/3                  q_D(c)=2/3                    116235 - 40 t_c
+ 14/3                  q_D(c)=1/3                    9180
+ 4                     nonzero q_D(c)=0              495
+ 6                     nonzero q_D(c)=0              1084590
+
+For the 16/3 reference, a class with shortest normal squared norm 2/3 has
+no body below 16/3, hence t_c=0. Its population 116235 is established by the
+exact parent-shell moment identities. The 14/3 and 4 reference populations
+are established by the same identities. The radius-six reference 1084590
+is independently enumerated in the supplied standalone verifier.
+The zero-class norm-six population is separately 1092000.
+
+The formula at 16/3 explains why using 116235 for every affine outer core
+family was incorrect. The correction depends on the actual short-body count.
+All 73 independently enumerated research core classes agree with the formula.
+This agreement is a check, not the proof of the lemma.
+
+COMPLETENESS OF THE t_c TABLE
+
+The explicit pool consists of 30240 distinct verified norm-10/3 bodies.
+They occupy 1920 discriminant classes; each such class has nine shortest
+normal representatives of squared norm 8/3. Other minimal-vector fibres are
+counted by the exact moment identities. Together, the verified vectors give
+
+  1092000 + 240*116235 + 2160*9180 + 6720*495
+          + 9*30240 + 240 = 52416000.
+
+The final 240 are the pure normal roots of sqrt(3) E8. These disjoint fibres
+already exhaust the published size of the parent's minimal shell. An omitted
+norm-10/3 body would glue to further minimal vectors and contradict this total.
+Hence the explicit pool is complete, and population_table.npz gives the full
+coefficient table, not merely a lower bound.
+
+USE AND LIMITS
+
+This identity makes arbitrary discriminant relabellings inexpensive to score.
+It does not preserve the available short normal representatives or certify
+angles automatically. Those conditions still have to be checked separately.
+The new 41D/42D certificate does not depend on this analytical shortcut: its
+outer classes have the directly proved uniform 116235 population, and its
+central class is re-enumerated exactly.
+
+Reference for the theta/Weil transformation facts:
+N. R. Scheithauer, The Weil representation of SL2(Z) and some applications,
+International Mathematics Research Notices (2009), 1488–1545.
+https://www.mathematik.tu-darmstadt.de/media/algebra/homepages/scheithauer/publications/Weil_representation.pdf
+
+The eta-quotient argument and its application to this pinned K are the
+research derivation in this checkpoint, not a claim quoted from that paper.

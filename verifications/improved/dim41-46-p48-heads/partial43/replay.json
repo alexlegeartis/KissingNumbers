@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "dimension": 43,
+  "points": 2919743,
+  "complete_families": 118,
+  "explicit_tiny_points": 3408,
+  "pure_points": 5,
+  "exact_angle_checks": 6232333,
+  "refined_body_bounds": 21825,
+  "population_scope": "Inherited population identities for complete families; explicit tiny vectors and every angle checked.",
+  "seconds": 6.422000000020489
+}

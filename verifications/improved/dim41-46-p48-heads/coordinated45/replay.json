@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "dimension": 45,
+  "points": 7655056,
+  "families": 2187,
+  "pure_points": 16,
+  "head_span_dimension": 5,
+  "exact_angle_checks": 2427690,
+  "equalities": 39981,
+  "seconds": 3.625,
+  "layers": {
+    "10": {
+      "families": 1200,
+      "points": 18900
+    },
+    "12": {
+      "families": 778,
+      "points": 385110
+    },
+    "14": {
+      "families": 168,
+      "points": 1542240
+    },
+    "16": {
+      "families": 40,
+      "points": 4624200
+    },
+    "18": {
+      "families": 1,
+      "points": 1084590
+    }
+  },
+  "populations": "Inherited K40 population identities; no new full enumeration.",
+  "source": "research/joint_large_medium_20261023/candidate_sparse_medium778.npz",
+  "baseline": "research/joint_large_medium_20261023/configuration_45_7654561_exact.npz",
+  "repair_history": [
+    {
+      "step": 0,
+      "bad": 3,
+      "previously_failed_pairs": 3,
+      "margin_constraints": 124,
+      "max_gap": -1.0000004380117389e-08,
+      "loss": 0.0,
+      "nit": 4,
+      "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+    }
+  ],
+  "margin": 1e-08,
+  "all_clearance": true,
+  "freeze_tolerance": 1e-06,
+  "mobile_families": 750,
+  "sha256": "bb4bddd2edba731a06934715dbe62c78ab15fb56b75b0e1bb08aacf799b268b5"
+}

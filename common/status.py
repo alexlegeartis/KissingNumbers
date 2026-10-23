@@ -8,7 +8,10 @@ says anything about tau(n) itself.  No matching upper bound is known in any dime
 repository touches, so no claim here is known to be optimal -- "exhausted" means the idea is
 finished, not the dimension.
 
-The point of the column is that 58 dimensions collapse into five actions:
+The point of the column is that 63 dimensions collapse into seven actions:
+
+  cosets      Larger compatible quotient codes or new gluing constructions can improve
+              the Coxeter-Todd result; no construction ceiling is claimed.
 
   heads       Joint changes to body families and heads remain open. The current
               consistency replay inherits body populations; finite sampled
@@ -42,6 +45,8 @@ import os
 from published import TAU
 
 LEGEND = {
+    'codes': 'larger input codes or different layer and section geometry can improve these explicit constructions',
+    'cosets': 'larger phase codes, nearest subsets or improved compatible tail assignments remain open',
     'heads': 'joint body-family and head searches remain open; no construction ceiling is claimed',
     'exhausted': 'the mechanism cannot give more; a different construction is needed',
     'external': 'a function of a published table -- recheck when the table moves',
@@ -401,14 +406,18 @@ for _d in (68, 69, 70, 71):
 for _d in range(73, 96):
     STATUS[_d] = ('classes', REASON['classes-g72'])
 STATUS[96] = ('external', REASON['external-96'])
-for _d in (41, 42, 44, 45, 46):
+for _d in (36, 37):
+    STATUS[_d] = ('cosets', 'exact Coxeter-Todd short shells and phase-orbit angles '
+                  'replay; 37D adds two latitude layers. Larger phase codes remain open '
+                  '(dim36-37-coxeter-todd/verify.py, phase/proof.txt)')
+for _d in range(41, 47):
     STATUS[_d] = ('heads',
                   'independently normalized P48n body families with rational heads and pure '
                   'head points; the latest angles and exact ranks replay, while populations '
                   'inherit the supplied tables and modular-form derivation. Larger coupled '
                   'family changes, partial families and new body models remain open; finite '
-                  'search optima are not global ceilings. The larger 43D writeup total is '
-                  'excluded because its certificate is missing '
+                  'search optima are not global ceilings. The partial-family 43D and '
+                  'coordinated-motion 45D certificates are installed '
                   '(dim41-46-p48-heads/README.md, verify.py, POPULATIONS.txt)')
 
 
@@ -429,6 +438,23 @@ def runs(ds):
 def status_for(d):
     """(status, reason) for a dimension, or (None, None) if it has not been classified"""
     return STATUS.get(d, (None, None))
+
+
+# The October code and nearest-coset constructions replace earlier mechanisms.
+for _d in (61, 62, 63, 66, 67, 68, 95, 96):
+    STATUS[_d] = ('codes', 'explicit binary compression, central sections and enlarged support layers; '
+                  'no unrestricted optimality or construction ceiling is claimed '
+                  '(dim61-68-95-96-code-layers/verify.py)')
+for _d in range(73, 89):
+    STATUS[_d] = ('cosets', 'nearest Gamma72 subsets and repaired group images; exact geometry and '
+                  'the inherited nearestness certificates are replayed '
+                  '(dim73-88-gamma72-cosets/verify.py)')
+
+
+for _d in range(49, 61):
+    STATUS[_d] = ('classes', 'the strongest prefix of the old 1400-class family or the October '
+                  '577-image family over a 7387-line base; larger base classes and different '
+                  'disjoint families remain open (dim49-63-p48-caps/verify_october.py)')
 
 
 if __name__ == '__main__':

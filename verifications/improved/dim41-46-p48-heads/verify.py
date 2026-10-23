@@ -157,9 +157,9 @@ def verify_current(record, geometry, tiny):
 
 
 def verify_older_43(geometry, tiny):
-    """Check the older seed, without substituting it for the missing latest one."""
+    """Retain the independent check of the historical recovered seed."""
     entry = next(row for row in ledger()['constructions'] if row['dimension'] == 43)
-    assert entry['status'] == 'latest_certificate_missing' and 'candidate' not in entry
+    assert entry['status'] == 'candidate_supplied'
     with np.load(ROOT / entry['older_seed'], allow_pickle=False) as source:
         seed = dict(source)
     classes = geometry['old_to_new'][seed['body_classes']]
@@ -176,8 +176,39 @@ def verify_older_43(geometry, tiny):
     assert not np.any((products > 0) & (products * products > norms[:, None] * norms))
     assert sum(map(int, weights)) == entry['older_seed_total']
     return dict(dimension=43, older_seed_points=entry['older_seed_total'],
-                latest_working_total=entry['total'], latest_certificate='MISSING',
+                latest_working_total=entry['total'], latest_certificate='partial43/verify.py',
                 older_seed_angles='PASS', fresh_body_enumeration=False)
+
+
+def verify_portable(record):
+    """Replay the supplied arbitrary-size integer certificates in isolation.
+
+    The upstream 43D script writes replay.json. Run in a temporary copy so
+    verification preserves every installed source and pinned report.
+    """
+    source = ROOT / record['portable_replay']
+    if record['dimension'] == 43:
+        with np.load(ROOT / record['explicit_points'], allow_pickle=False) as points:
+            indices, heads = points['body_indices'], points['head_numerators']
+            assert indices.dtype.kind in 'iu' and heads.dtype.kind in 'iu'
+            with np.load(ROOT / record['candidate'], allow_pickle=False) as model:
+                width = model['head_numerators'].shape[1]
+            assert heads.shape == (len(indices), width)
+            assert len(np.unique(np.c_[indices, heads], axis=0)) == len(indices)
+    else:
+        with np.load(ROOT / record['candidate'], allow_pickle=False) as model:
+            medium = set(map(int, model['classes'][model['r3'] == 12]))
+            assert {77, 202, 239} <= medium
+    with tempfile.TemporaryDirectory(prefix='kissing_p48_portable_') as directory:
+        target = Path(directory) / source.name
+        shutil.copytree(source, target, ignore=shutil.ignore_patterns('__pycache__'))
+        replay = subprocess.run([sys.executable, '-B', str(target / 'verify.py')],
+                                cwd=target, check=True, capture_output=True, text=True)
+        report = json.loads(replay.stdout)
+    assert report['status'] == 'PASS'
+    assert report['dimension'] == record['dimension'] and report['points'] == record['total']
+    report['fresh_body_enumeration'] = False
+    return report
 
 
 def replay_populations(jobs):
@@ -206,12 +237,15 @@ def main():
     assert geometry['digits'].shape == (6561, 8) and tiny.shape == (6561,)
     assert sum(map(int, tiny)) == 30240
     for record in results():
-        print(json.dumps(verify_current(record, geometry, tiny)), flush=True)
+        report = (verify_portable(record) if 'portable_replay' in record
+                  else verify_current(record, geometry, tiny))
+        print(json.dumps(report), flush=True)
     print(json.dumps(verify_older_43(geometry, tiny)), flush=True)
     if args.replay_populations:
         replay_populations(args.jobs)
-    print('PASS: consistency with inherited geometry/populations; '
-          'no verification of the missing latest 43D certificate or new 47D/48D claim.')
+    print('PASS: current 41D-46D constructions, including partial 43D and coordinated '
+          '45D; complete-family populations inherit the documented identities. '
+          'No new 47D/48D claim.')
 
 
 if __name__ == '__main__':

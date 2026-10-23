@@ -1,0 +1,12 @@
+{
+  "points_36": 501633,
+  "points_37": 505359,
+  "all_norms_exactly_12": true,
+  "all_coordinates_distinct": true,
+  "coefficient_range": [
+    -4,
+    4
+  ],
+  "certificate_sha256": "ddd4966f6a3f6748e80e7dbb7e1684de3efcf3a626ced7e79201c5c44866cbb4",
+  "coordinate_convention": "integer row coefficients; squared norm x @ gram @ x.T"
+}

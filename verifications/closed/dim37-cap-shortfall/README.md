@@ -51,12 +51,16 @@ table still lists 494 312.
 **Cohn's table is stale in four dimensions for this reason** — 32, 33, 34 and 37 — all from
 Echols' 2026 constant-weight improvements, which Brouwer's page already carries:
 
-| dim | Cohn's table | Brouwer / correct | who |
-|---|---|---|---|
-| 32 | 345 408 | **346 432** | Echols 2026 |
-| 33 | 360 640 | **362 048** | Echols 2026 |
-| 34 | 380 868 | **381 124** | Echols 2026 |
-| 37 | 494 312 | **496 232** | Echols 2026 |
+| dim | Cohn's table | Brouwer / correct | who | 24 October repo result |
+|---|---|---|---| --- |
+| 32 | 345 408 | **346 432** | Echols 2026 | — |
+| 33 | 360 640 | **362 048** | Echols 2026 | — |
+| 34 | 380 868 | **381 124** | Echols 2026 | — |
+| 37 | 494 312 | **496 232** | Echols 2026 | **505 359** |
+
+The comparison and ERS counts above are historical. The 24 October 2026
+Coxeter–Todd construction now gives **505,359** in dimension 37; see
+[its certificate](../../improved/dim36-37-coxeter-todd/).
 
 None of these is a claim of this project; they are corrections to the table, and they are
 worth passing on. See [`../dim32-44-ers-audit/`](../dim32-44-ers-audit/) for the full audit.

@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Dimensions 49-63: the cap construction over P_48 with EXPLICIT classes.
+"""Dimensions 49-63: P48 cap counts from the strongest shipped class family.
+
+October 2026 adds a 7,387-line base with 577 explicit disjoint images.
+Each prefix uses one complete family, whichever gives the larger count.
+The original 1,400-class family and its verification remain below as history.
+verify_october.py checks the new family; verify.py checks the older base.
 
 The first version of this package used Caro-Wei's class bound of 712, obtained with no
 coordinates at all.  P_48 is available explicitly (Catalogue of Lattices, entries P48p and
@@ -36,6 +41,7 @@ record -- on the exhibited Lambda_12 it would still read 56 789 413 against 52 4
 """
 import os
 import numpy as np
+from october_family import best_prefix
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 N = 52416000
@@ -79,8 +85,7 @@ for k in range(1, 16):
     lam = LAMBDA[k]
     assert lam <= len(sizes), (
         "k = %d needs %d classes and the family has only %d" % (k, lam, len(sizes)))
-    s = int(cum[lam])
-    fam = 'class_sizes_p48.npy'
+    s, fam = best_prefix(lam)
     gain = 2 * s + TAU[k]
     new = N + gain
     old = N + TAU[k]

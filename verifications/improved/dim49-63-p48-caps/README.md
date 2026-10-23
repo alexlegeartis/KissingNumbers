@@ -1,18 +1,26 @@
 # Dimensions 49–63: the cap construction over P₄₈
 
-> **Dimensions 62 and 63 are no longer claimed from this construction.** They are claimed
-> from the Edel-Rains-Sloane chain, at **71 310 732** and **138 419 844**, in
-> [`../dim62-63-ers-chain/`](../dim62-63-ers-chain/). This construction cannot reach those
-> figures with *any* class family, and the point is sharper than the totals: even the chain's
-> level-0 term alone, 2²⁶ = 67 108 864 and 2²⁷ = 134 217 728, is above its absolute ceiling.
-> With every one of the λ(k) classes at the maximum size 7069 the ceiling is 66 075 240 and
-> 70 543 480 — short of level 0 by 1 033 624 and 63 674 248.
-> [`scripts/ceiling.py`](scripts/ceiling.py) computes the ceiling in all fifteen dimensions and
-> checks it against the sign code. Dimensions **49 to 61** are what this package claims, and
-> there it wins by a factor 1.7 or more over level 0. The values it reaches in 62 and 63 are
-> still computed and shown below, as the weaker bound they are.
+**Retained construction and history.** The October registry takes the strongest
+construction in each dimension. See the [current registry](../../../RESULTS.md),
+[code-layer updates](../dim61-68-95-96-code-layers/) and
+[nearest-coset updates](../dim73-88-gamma72-cosets/). Older counts below remain
+results about the original construction.
 
-Fifteen dimensions, gains from **+14 138** to **+13 847 064**.
+The 24 October family has a **7,387-line base**, **577** explicit isometric
+images and **3,901,694** distinct mother lines. `verify_october.py` checks
+all base pairs, isometries and disjointness; `october_family.py` selects
+the best prefix of either family, without mixing them. The three
+`october/family_55_61.*` files preserve the certificate and source reports.
+`UPDATE_PROVENANCE.json` records source hashes; `data/SHA256SUMS.txt`
+covers this package. The generated table below now uses the stronger family.
+
+**Current scope.** This package supplies the registered bounds in 49–60D.
+Its cap counts in 61–63D remain valid constructions and are now superseded by
+the [October code constructions](../dim61-68-95-96-code-layers/). The older
+[ERS chain](../dim62-63-ers-chain/) also beats its caps in 62–63D.
+`scripts/ceiling.py` bounds families of images of the shipped bases, whose
+largest class has 7,387 lines. Larger base classes remain open; no absolute
+ceiling for this cap construction is proved.
 
 ```
 python verify.py                 # ~1 min: the lattice, the class, the arithmetic
@@ -22,31 +30,27 @@ python scripts/regenerate.py     # ~15 min: rebuilds and re-verifies all 1400 cl
 
 | dim | k | λ(k) | Σ|C_i| | gain | **this work** | previously |
 |---|---|---|---|---|---|---|
-| 49 | 1 | 1 | 7 069 | +14 140 | **52 430 140** | 52 416 002 |
-| 50 | 2 | 3 | 21 206 | +42 418 | **52 458 418** | 52 416 006 |
-| 51 | 3 | 6 | 42 402 | +84 816 | **52 500 816** | 52 416 012 |
-| 52 | 4 | 12 | 84 746 | +169 516 | **52 585 516** | 52 416 024 |
-| 53 | 5 | 20 | 141 091 | +282 222 | **52 698 222** | 52 416 040 |
-| 54 | 6 | 36 | 253 417 | +506 906 | **52 922 906** | 52 416 072 |
-| 55 | 7 | 63 | 441 802 | +883 730 | **53 299 730** | 52 416 126 |
-| 56 | 8 | 120 | 834 576 | +1 669 392 | **54 085 392** | 52 416 240 |
-| 57 | 9 | 153 | 1 058 935 | +2 118 176 | **54 534 176** | 52 416 306 |
-| 58 | 10 | 255 | 1 738 456 | +3 477 422 | **55 893 422** | 52 416 510 |
-| 59 | 11 | 302 | 2 044 532 | +4 089 668 | **56 505 668** | 52 416 604 |
-| 60 | 12 | 378 | 2 530 141 | +5 061 123 | **57 477 123** | 52 416 841 |
-| **61** | **13** | **577** | **3 740 770** | **+7 482 694** | **59 898 694** | 52 417 154 |
-| 62 | 14 | 966 | 5 899 945 | +11 801 822 | 64 217 822 &nbsp;*(superseded by 71 310 732)* | 52 417 932 |
-| 63 | 15 | 1 282 | 7 473 594 | +14 949 752 | 67 365 752 &nbsp;*(superseded by 138 419 844)* | 52 418 564 |
+| 49 | 1 | 1 | 7 387 | +14 776 | **52 430 776** | 52 416 002 |
+| 50 | 2 | 3 | 22 158 | +44 322 | **52 460 322** | 52 416 006 |
+| 51 | 3 | 6 | 44 303 | +88 618 | **52 504 618** | 52 416 012 |
+| 52 | 4 | 12 | 88 541 | +177 106 | **52 593 106** | 52 416 024 |
+| 53 | 5 | 20 | 147 412 | +294 864 | **52 710 864** | 52 416 040 |
+| 54 | 6 | 36 | 264 749 | +529 570 | **52 945 570** | 52 416 072 |
+| 55 | 7 | 63 | 461 480 | +923 086 | **53 339 086** | 52 416 126 |
+| 56 | 8 | 120 | 871 429 | +1 743 098 | **54 159 098** | 52 416 240 |
+| 57 | 9 | 153 | 1 105 366 | +2 211 038 | **54 627 038** | 52 416 306 |
+| 58 | 10 | 255 | 1 813 321 | +3 627 152 | **56 043 152** | 52 416 510 |
+| 59 | 11 | 302 | 2 131 922 | +4 264 448 | **56 680 448** | 52 416 604 |
+| **60** | **12** | **378** | **2 636 915** | **+5 274 671** | **57 690 671** | 52 416 841 |
+| 61 | 13 | 577 | 3 901 694 | +7 804 542 | 60 220 542 &nbsp;*(superseded by 71 310 488)* | 52 417 154 |
+| 62 | 14 | 966 | 5 899 945 | +11 801 822 | 64 217 822 &nbsp;*(superseded by 100 371 468)* | 52 417 932 |
+| 63 | 15 | 1 282 | 7 473 594 | +14 949 752 | 67 365 752 &nbsp;*(superseded by 182 407 428)* | 52 418 564 |
 
-so 49–61 clear it by a factor 1.5 or more and 62–63 do not clear it at all, with no class
-family that could. The evaluation is
-[`../../closed/dim96-ers-takeover/ers_exposure.py`](../../closed/dim96-ers-takeover/ers_exposure.py),
-which runs the full chain in every claimed dimension; the two dimensions it displaces are
-claimed from that chain instead, in
-[`../dim62-63-ers-chain/`](../dim62-63-ers-chain/). The authors themselves say that at
-dimension 48 their construction "gives less than half" of 52 416 000, which is what keeps
-49–59 safe; what changes at 60 is that A(60,15) ≥ 2²⁵ becomes available, and at 62 that the
-level-1 term stops being negligible.
+The retained caps in 49–61D clear the evaluated ERS chain, whereas the
+62–63D caps do not. The comparison is computed by
+[`ers_exposure.py`](../../closed/dim96-ers-takeover/ers_exposure.py).
+The current code certificates are stronger still in 61–63D. These comparisons
+do not exclude a larger cap base or a different construction.
 
 Every value above stays below the dimension-64 record 331 737 984, as monotonicity of τ
 requires — `final.py` checks this.
@@ -111,16 +115,18 @@ class gives +13 847 064, a factor **8.58**.
 
 ### What a better family could still be worth, and why it is capped
 
-`scripts/ceiling.py` measures the distance from the shipped family to the ceiling — every one
-of the λ(k) classes at the maximum 7 069 — and finds that 94–105% of it is the overlap two
-random automorphism images have BY CHANCE. That argument closes the *images* route, and it is
+The original 7 069-line family was compared with a ceiling restricted to
+images of that base. The historical calculation found that 94–105% of the
+remaining deficit was the overlap two random images have by chance. This is a diagnostic for the original fixed base, and it is
 the reason for the `classes` status. It does **not** close a family built by greedy on the
 whole line set, which is not limited by image overlap at all: P₄₈ has only 26 208 000 minimal
 lines, all of which fit in a GPU, so the Γ₇₂ treatment of
 [`../dim73-95-gamma72-caps/scripts/gpu/`](../dim73-95-gamma72-caps/scripts/gpu/) transfers
 directly and would give a nearly flat family instead of one decaying from 7 069 to 6 483.
 
-**It is worth at most 1.1%.** The ceiling is what caps it, and the ceiling is exact:
+**For the old fixed base, the remaining gain is at most 1.1%.**
+This conditional ceiling uses 7 069 lines per class. It is not an upper
+bound on larger classes; the October 7 387-line base exceeds that input:
 
 | dim | λ(k) | Σ\|C_i\| now | at 7 069 each | best possible gain | on the claim |
 |---|---|---|---|---|---|
@@ -129,7 +135,7 @@ directly and would give a nearly flat family instead of one decaying from 7 069 
 | 60 | 378 | 2 530 141 | 2 672 082 | +141 941 | +283 882 (+0.49%) |
 | 61 | 577 | 3 740 770 | 4 078 813 | +338 043 | +676 086 (+1.13%) |
 
-so no family whatsoever moves dimension 61 past 60 574 780, and the dimensions below 56 are
+so no family restricted to the older 7 069-line base moves dimension 61 past 60 574 780, and the dimensions below 56 are
 capped under a tenth of a per cent. The quantity that would really move this range is the
 BASE CLASS: 7 069 lines is a factor 9.93 over Caro–Wei, against the Leech's 11.6, and a class
 of 8 250 would carry every one of these thirteen dimensions up by 17%. That is the class
@@ -146,7 +152,9 @@ not a matter of more compute on the family.
 | — | 52 416 000 + τ(k) | the direct-sum floor, never written down anywhere as a kissing number because the table stops at 48 |
 | this work | **52 430 140 … 67 365 752** | the cap construction with explicit P₄₈ classes |
 
-**No prior claim in any of these fifteen dimensions is known to us.** The range has simply
+**Historical literature note from the original release.** No earlier evaluated
+claim in these dimensions was known at that time. Later 7 077-line constructions
+superseded 49–55D before the October update regained them. The range has simply
 not been looked at, because the table stops at 48 and resumes at 64. If someone has
 evaluated a construction here, we have not found it.
 
@@ -177,7 +185,7 @@ scripts/verify_extension.py   [superseded] the 130-class extension of a 1170-cla
 scripts/capdirs.py            the cap-direction line systems for dimensions 57-63
 scripts/verify_capdirs.py     those line systems, verified exactly: antipodal, and every
                               pair of distinct lines at 60 degrees or more
-scripts/ceiling.py            the ceiling of this construction, dimension by dimension --
+scripts/ceiling.py            ceilings restricted to the shipped base classes --
                               what it would give if S reached lambda * alpha exactly
 scripts/settle_4963.py        which of the three ingredients are provably at their
                               ceilings, and what that leaves open

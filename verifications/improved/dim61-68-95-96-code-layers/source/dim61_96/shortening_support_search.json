@@ -1,0 +1,61 @@
+{
+  "status": "Verified retained supports; finite coordinate search",
+  "seed": 49,
+  "dimensions": {
+    "65": {
+      "deleted_coordinates": [
+        21,
+        37,
+        38,
+        49,
+        57,
+        63,
+        67,
+        70
+      ],
+      "support_count": 30828,
+      "local_search_starts": 16,
+      "proof": "Subsets of the exhaustively verified distance-16 cyclic code"
+    },
+    "66": {
+      "deleted_coordinates": [
+        21,
+        37,
+        38,
+        49,
+        57,
+        63,
+        67
+      ],
+      "support_count": 34028,
+      "local_search_starts": 19,
+      "proof": "Subsets of the exhaustively verified distance-16 cyclic code"
+    },
+    "67": {
+      "deleted_coordinates": [
+        21,
+        37,
+        38,
+        49,
+        57,
+        63
+      ],
+      "support_count": 40428,
+      "local_search_starts": 23,
+      "proof": "Subsets of the exhaustively verified distance-16 cyclic code"
+    },
+    "68": {
+      "deleted_coordinates": [
+        21,
+        37,
+        38,
+        49,
+        57
+      ],
+      "support_count": 50252,
+      "local_search_starts": 40,
+      "proof": "Subsets of the exhaustively verified distance-16 cyclic code"
+    }
+  },
+  "seconds": 20.5785179
+}

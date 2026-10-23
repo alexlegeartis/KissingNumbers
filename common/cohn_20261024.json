@@ -1,0 +1,378 @@
+{
+  "source": "https://cohn.mit.edu/kissing-numbers/",
+  "retrieved_date": "2026-10-24",
+  "retrieval_method": "direct HTTPS GET via curl",
+  "retrieved_html_sha256": "e6f4d76bc978cbca385409b457fe6e79dc8b49f49dfbbe991272e05e933f4883",
+  "scope": "All 48 lower- and upper-bound rows on the fetched page, dimensions 1-48. No row for 72 or other dimensions above 48 was present.",
+  "note": "Historical baselines in published.py remain unchanged. This comparison records the registry at retrieval, not external acceptance of its newer constructions.",
+  "bounds": [
+    {
+      "dimension": 1,
+      "lower_bound": 2,
+      "upper_bound": 2
+    },
+    {
+      "dimension": 2,
+      "lower_bound": 6,
+      "upper_bound": 6
+    },
+    {
+      "dimension": 3,
+      "lower_bound": 12,
+      "upper_bound": 12
+    },
+    {
+      "dimension": 4,
+      "lower_bound": 24,
+      "upper_bound": 24
+    },
+    {
+      "dimension": 5,
+      "lower_bound": 40,
+      "upper_bound": 44
+    },
+    {
+      "dimension": 6,
+      "lower_bound": 72,
+      "upper_bound": 77
+    },
+    {
+      "dimension": 7,
+      "lower_bound": 126,
+      "upper_bound": 134
+    },
+    {
+      "dimension": 8,
+      "lower_bound": 240,
+      "upper_bound": 240
+    },
+    {
+      "dimension": 9,
+      "lower_bound": 306,
+      "upper_bound": 363
+    },
+    {
+      "dimension": 10,
+      "lower_bound": 510,
+      "upper_bound": 553
+    },
+    {
+      "dimension": 11,
+      "lower_bound": 604,
+      "upper_bound": 868
+    },
+    {
+      "dimension": 12,
+      "lower_bound": 841,
+      "upper_bound": 1355
+    },
+    {
+      "dimension": 13,
+      "lower_bound": 1154,
+      "upper_bound": 2064
+    },
+    {
+      "dimension": 14,
+      "lower_bound": 1932,
+      "upper_bound": 3174
+    },
+    {
+      "dimension": 15,
+      "lower_bound": 2564,
+      "upper_bound": 4853
+    },
+    {
+      "dimension": 16,
+      "lower_bound": 4320,
+      "upper_bound": 7320
+    },
+    {
+      "dimension": 17,
+      "lower_bound": 5730,
+      "upper_bound": 10978
+    },
+    {
+      "dimension": 18,
+      "lower_bound": 8358,
+      "upper_bound": 16406
+    },
+    {
+      "dimension": 19,
+      "lower_bound": 12460,
+      "upper_bound": 24417
+    },
+    {
+      "dimension": 20,
+      "lower_bound": 19448,
+      "upper_bound": 36195
+    },
+    {
+      "dimension": 21,
+      "lower_bound": 31560,
+      "upper_bound": 53524
+    },
+    {
+      "dimension": 22,
+      "lower_bound": 49896,
+      "upper_bound": 80810
+    },
+    {
+      "dimension": 23,
+      "lower_bound": 93150,
+      "upper_bound": 122351
+    },
+    {
+      "dimension": 24,
+      "lower_bound": 196560,
+      "upper_bound": 196560
+    },
+    {
+      "dimension": 25,
+      "lower_bound": 197583,
+      "upper_bound": 265006
+    },
+    {
+      "dimension": 26,
+      "lower_bound": 199868,
+      "upper_bound": 367775
+    },
+    {
+      "dimension": 27,
+      "lower_bound": 201589,
+      "upper_bound": 522212
+    },
+    {
+      "dimension": 28,
+      "lower_bound": 205172,
+      "upper_bound": 752292
+    },
+    {
+      "dimension": 29,
+      "lower_bound": 210495,
+      "upper_bound": 1075991
+    },
+    {
+      "dimension": 30,
+      "lower_bound": 222073,
+      "upper_bound": 1537707
+    },
+    {
+      "dimension": 31,
+      "lower_bound": 241079,
+      "upper_bound": 2213487
+    },
+    {
+      "dimension": 32,
+      "lower_bound": 352320,
+      "upper_bound": 3162316
+    },
+    {
+      "dimension": 33,
+      "lower_bound": 370240,
+      "upper_bound": 4494570
+    },
+    {
+      "dimension": 34,
+      "lower_bound": 390980,
+      "upper_bound": 6422593
+    },
+    {
+      "dimension": 35,
+      "lower_bound": 415308,
+      "upper_bound": 9162403
+    },
+    {
+      "dimension": 36,
+      "lower_bound": 484760,
+      "upper_bound": 13017098
+    },
+    {
+      "dimension": 37,
+      "lower_bound": 500008,
+      "upper_bound": 18498316
+    },
+    {
+      "dimension": 38,
+      "lower_bound": 605322,
+      "upper_bound": 26496684
+    },
+    {
+      "dimension": 39,
+      "lower_bound": 768916,
+      "upper_bound": 37826766
+    },
+    {
+      "dimension": 40,
+      "lower_bound": 1092000,
+      "upper_bound": 53589200
+    },
+    {
+      "dimension": 41,
+      "lower_bound": 1324472,
+      "upper_bound": 76287040
+    },
+    {
+      "dimension": 42,
+      "lower_bound": 1792386,
+      "upper_bound": 108404055
+    },
+    {
+      "dimension": 43,
+      "lower_bound": 2553792,
+      "upper_bound": 153813582
+    },
+    {
+      "dimension": 44,
+      "lower_bound": 4153600,
+      "upper_bound": 220788272
+    },
+    {
+      "dimension": 45,
+      "lower_bound": 7380090,
+      "upper_bound": 316735249
+    },
+    {
+      "dimension": 46,
+      "lower_bound": 12309600,
+      "upper_bound": 441900184
+    },
+    {
+      "dimension": 47,
+      "lower_bound": 23766960,
+      "upper_bound": 621658419
+    },
+    {
+      "dimension": 48,
+      "lower_bound": 52416000,
+      "upper_bound": 867897072
+    }
+  ],
+  "repository_comparisons": [
+    {
+      "dimension": 18,
+      "repository_points": 8358,
+      "cohn_lower_bound": 8358,
+      "difference": 0,
+      "comparison": "tied"
+    },
+    {
+      "dimension": 25,
+      "repository_points": 197579,
+      "cohn_lower_bound": 197583,
+      "difference": -4,
+      "comparison": "below"
+    },
+    {
+      "dimension": 26,
+      "repository_points": 199806,
+      "cohn_lower_bound": 199868,
+      "difference": -62,
+      "comparison": "below"
+    },
+    {
+      "dimension": 27,
+      "repository_points": 201566,
+      "cohn_lower_bound": 201589,
+      "difference": -23,
+      "comparison": "below"
+    },
+    {
+      "dimension": 28,
+      "repository_points": 204896,
+      "cohn_lower_bound": 205172,
+      "difference": -276,
+      "comparison": "below"
+    },
+    {
+      "dimension": 29,
+      "repository_points": 209968,
+      "cohn_lower_bound": 210495,
+      "difference": -527,
+      "comparison": "below"
+    },
+    {
+      "dimension": 30,
+      "repository_points": 221012,
+      "cohn_lower_bound": 222073,
+      "difference": -1061,
+      "comparison": "below"
+    },
+    {
+      "dimension": 31,
+      "repository_points": 238662,
+      "cohn_lower_bound": 241079,
+      "difference": -2417,
+      "comparison": "below"
+    },
+    {
+      "dimension": 36,
+      "repository_points": 501633,
+      "cohn_lower_bound": 484760,
+      "difference": 16873,
+      "comparison": "above"
+    },
+    {
+      "dimension": 37,
+      "repository_points": 505359,
+      "cohn_lower_bound": 500008,
+      "difference": 5351,
+      "comparison": "above"
+    },
+    {
+      "dimension": 38,
+      "repository_points": 591612,
+      "cohn_lower_bound": 605322,
+      "difference": -13710,
+      "comparison": "below"
+    },
+    {
+      "dimension": 39,
+      "repository_points": 756116,
+      "cohn_lower_bound": 768916,
+      "difference": -12800,
+      "comparison": "below"
+    },
+    {
+      "dimension": 41,
+      "repository_points": 1460036,
+      "cohn_lower_bound": 1324472,
+      "difference": 135564,
+      "comparison": "above"
+    },
+    {
+      "dimension": 42,
+      "repository_points": 1991445,
+      "cohn_lower_bound": 1792386,
+      "difference": 199059,
+      "comparison": "above"
+    },
+    {
+      "dimension": 43,
+      "repository_points": 2919743,
+      "cohn_lower_bound": 2553792,
+      "difference": 365951,
+      "comparison": "above"
+    },
+    {
+      "dimension": 44,
+      "repository_points": 4939281,
+      "cohn_lower_bound": 4153600,
+      "difference": 785681,
+      "comparison": "above"
+    },
+    {
+      "dimension": 45,
+      "repository_points": 7655056,
+      "cohn_lower_bound": 7380090,
+      "difference": 274966,
+      "comparison": "above"
+    },
+    {
+      "dimension": 46,
+      "repository_points": 13387797,
+      "cohn_lower_bound": 12309600,
+      "difference": 1078197,
+      "comparison": "above"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "status": "Exact binary projection counts and exact hyperplane sections",
+  "dimensions": {
+    "63": {
+      "hyperplane_supports": [
+        [
+          4,
+          12,
+          18,
+          21,
+          24,
+          26,
+          45,
+          59
+        ]
+      ],
+      "projection_rank": 7,
+      "terms": {
+        "dense_section": 146800640,
+        "weight16_section": 35503776,
+        "weight4_section": 102900,
+        "ordinary_poles": 112
+      },
+      "total": 182407428,
+      "repository_baseline": 138419844,
+      "gain": 43987584,
+      "weight16_intersection_shapes": {
+        "(0,)": 5117,
+        "(2,)": 20608,
+        "(4,)": 5096,
+        "(8,)": 7
+      },
+      "retained_signs_per_shape": {
+        "(0,)": 2048,
+        "(2,)": 1024,
+        "(4,)": 768,
+        "(8,)": 1120
+      },
+      "weight4_intersection_shapes": {
+        "(0,)": 6034,
+        "(1,)": 3584,
+        "(2,)": 784,
+        "(4,)": 14
+      },
+      "sign_order": "Put larger intersection first, then the smaller intersection, then the rest"
+    },
+    "62": {
+      "hyperplane_supports": [
+        [
+          4,
+          12,
+          18,
+          21,
+          24,
+          26,
+          45,
+          59
+        ],
+        [
+          5,
+          13,
+          19,
+          22,
+          25,
+          27,
+          46,
+          60
+        ]
+      ],
+      "projection_rank": 14,
+      "terms": {
+        "dense_section": 80281600,
+        "weight16_section": 20025604,
+        "weight4_section": 64168,
+        "ordinary_poles": 96
+      },
+      "total": 100371468,
+      "repository_baseline": 71310732,
+      "gain": 29060736,
+      "weight16_intersection_shapes": {
+        "(0, 0)": 855,
+        "(2, 0)": 5376,
+        "(2, 2)": 15232,
+        "(4, 0)": 3136,
+        "(4, 2)": 5376,
+        "(4, 4)": 840,
+        "(8, 0)": 12,
+        "(8, 8)": 1
+      },
+      "retained_signs_per_shape": {
+        "(0, 0)": 2048,
+        "(2, 0)": 1024,
+        "(2, 2)": 512,
+        "(4, 0)": 768,
+        "(4, 2)": 384,
+        "(4, 4)": 576,
+        "(8, 0)": 1120,
+        "(8, 8)": 644
+      },
+      "weight4_intersection_shapes": {
+        "(0, 0)": 3300,
+        "(0, 1)": 2048,
+        "(0, 2)": 672,
+        "(0, 4)": 14,
+        "(1, 0)": 2048,
+        "(1, 1)": 1536,
+        "(2, 0)": 672,
+        "(2, 2)": 112,
+        "(4, 0)": 14
+      },
+      "sign_order": "Put larger intersection first, then the smaller intersection, then the rest"
+    }
+  },
+  "seconds": 0.12144840000000001,
+  "geometry_proof": "Take central sections of a norm-64 ERS configuration; orthogonal identification preserves all norms and inner products."
+}

@@ -59,18 +59,20 @@ def bad(msg):
     print("   FAIL: " + msg)
 
 
-def floor():
+def floor(claim_rows=None):
     """{n: the best value implied in dimension n}, up to TOP.
 
     Published where a table has an entry, this repository's own claim where it does not,
     made non-decreasing, and above 96 the best direct sum of two of those.  RESULTS.md is
     the source of the claims -- imported through ers_exposure.claims(), never retyped, so
-    a claim that moves moves this floor with it."""
+    a claim that moves moves this floor with it. Pass claim_rows to check a dated
+    manuscript snapshot with the same calculation."""
     import ers_exposure as E
     from published import COHN
     sys.path.insert(0, DELIV)
     best = dict(COHN)                                  # 1..48 and 72, published
-    for d, v in E.claims().items():                    # {dim: value}, read from RESULTS.md
+    claims = E.claims() if claim_rows is None else claim_rows
+    for d, v in claims.items():                       # current registry or manuscript snapshot
         best[d] = max(best.get(d, 0), v)
     for d in range(1, TOP + 1):
         best.setdefault(d, 0)
@@ -84,14 +86,14 @@ def floor():
     return best
 
 
-def worst_excess():
+def worst_excess(claim_rows=None):
     """(fraction, n): the most the chain beats the implied floor by, anywhere in 97..TOP.
 
     paper/factcheck.py imports this rather than parsing the table below, so the figure in
     the paper and the figure printed here have one implementation between them."""
     import ers_exposure as E
-    best = floor()
-    out = (0.0, None)
+    best = floor(claim_rows)
+    out = (float("-inf"), None)
     for n in range(97, TOP + 1):
         exc = E.best_chain(n)[0] / float(best[n]) - 1.0
         if exc > out[0]:
@@ -103,13 +105,13 @@ def main():
     import ers_exposure as E
 
     best = floor()
-    if best[96] != 12886999232:
-        bad("dimension 96 is %d here, not the claimed 12886999232" % best[96])
+    if best[96] < 12886999232:
+        bad("dimension 96 is %d here, below the historical ERS value" % best[96])
 
     print("The implied floor above 96, against the Edel-Rains-Sloane chain")
     print()
     print("    n     implied floor        ERS chain      excess     the split that implies it")
-    worst = (0.0, None)
+    worst = (float("-inf"), None)
     for n in range(97, TOP + 1):
         # name the split, so the floor is readable rather than a number out of a loop
         split = max(((best[a] + best[n - a], a) for a in range(1, n // 2 + 1)))

@@ -5,6 +5,9 @@
 #
 # (run_all.py runs that too, so a broken manifest fails the suite rather than going
 # unnoticed, which is what happened once.)
+# The old dim5upper/ public snapshot was transferred on 2026-10-23 to the separate
+# KissingUpperBounds repository under legacy/dim5upper-public-snapshot-20261023/.
+# Its original line endings are preserved there; snapshot counts below are historical.
 #
 # Line-ending conversion on checkout would change those hashes and make the verification
 # unreproducible on Windows. The simplest safe rule is to disable end-of-line conversion for
@@ -17,7 +20,8 @@
 *.pdf binary
 *.gz binary
 
-# NOTE: this tree contains BOTH line endings -- 267 text files use LF and 60 use CRLF,
+# Census refreshed 2026-10-24 after installing the new certificate bundles.
+# NOTE: this tree contains BOTH line endings -- 312 text files use LF and 141 use CRLF,
 # an artefact of two write paths used while the repository was assembled.  No SOURCE OR
 # DOCUMENTATION file mixes them within itself.  Both statements are about the ten extensions
 # audit.py check 5k opens -- .py .md .txt .cff .json .tex .bib .yml .cfg .out -- and that is
@@ -26,7 +30,11 @@
 # again on 2026-09-15 after the dimension-29 package, and again on 2026-09-19 with the
 # dimension-26/27 free-head layer (two files had changed class in the dimension-18 paper commit).  Re-measured once more on
 # 2026-09-20 after verifications/closed/dim25-construction-ceiling/ was added: its README.md and
-# verify.py are the two LF files that took the count from 200 to 202.  One
+# verify.py are the two LF files that took the count from 200 to 202.
+# Re-measured on 2026-09-29 after dim5upper/ was added: 583 LF and 206 CRLF files are its own,
+# with the endings they had in the working copy, except two that mixed them there and were
+# normalised to their majority ending (verify/split/agents/t1res/engine.py to CRLF,
+# verify/split/agents/pinned/q3b.txt to LF).  One
 # file in the tree does mix and is deliberately outside that scope:
 # verifications/closed/dim32-44-ers-audit/data/cohn_kissing.html, a downloaded copy of Cohn's
 # page.  Normalising an archived artefact would change the thing that was archived, and
@@ -38,5 +46,5 @@
 # The dimension-27 package -- the one under the SHA-256 manifest -- is entirely LF, and
 # its hashes hold because the bytes are preserved, not because the tree is uniform.
 #
-# So DO NOT remove `* -text` as redundant.  Without it, 52 files would be rewritten on
-# checkout on Windows.  scripts/verify_manifest.py in that package is what would catch it.
+# So DO NOT remove `* -text` as redundant.  Without it, files would be rewritten on checkout
+# on Windows.  scripts/verify_manifest.py in that package is what would catch it.

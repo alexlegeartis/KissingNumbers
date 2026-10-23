@@ -1,0 +1,65 @@
+{
+  "all_checks_pass": true,
+  "base_points": 403704,
+  "full_code_points": 501633,
+  "second_moment_coefficient": 134568,
+  "fourth_moment_global_coefficient": 95256,
+  "fourth_moment_block_coefficient": 87480,
+  "symmetric_fourth_moment_entries_checked": 1365,
+  "mixed_moment_checks": [
+    {
+      "blocks": [
+        0,
+        1
+      ],
+      "cells": 476,
+      "integer_matrix_entries_checked": 20736
+    },
+    {
+      "blocks": [
+        1,
+        2
+      ],
+      "cells": 476,
+      "integer_matrix_entries_checked": 20736
+    },
+    {
+      "blocks": [
+        2,
+        0
+      ],
+      "cells": 476,
+      "integer_matrix_entries_checked": 20736
+    }
+  ],
+  "section_upper_bounds": [
+    {
+      "dimension": 35,
+      "codimension": 1,
+      "base_points_forced_outside_at_least": 99097,
+      "cauchy_schwarz_ratio": "4657548/47",
+      "section_points_at_most": 402536,
+      "cohn_snapshot_lower_bound": 415308
+    },
+    {
+      "dimension": 34,
+      "codimension": 2,
+      "base_points_forced_outside_at_least": 148646,
+      "cauchy_schwarz_ratio": "6986322/47",
+      "section_points_at_most": 352987,
+      "cohn_snapshot_lower_bound": 390980
+    },
+    {
+      "dimension": 33,
+      "codimension": 3,
+      "base_points_forced_outside_at_least": 178375,
+      "cauchy_schwarz_ratio": "41917932/235",
+      "section_points_at_most": 323258,
+      "cohn_snapshot_lower_bound": 370240
+    }
+  ],
+  "affine_section_not_through_origin_points_at_most": 299781,
+  "scope": "sections of this particular 36D configuration; not universal kissing-number upper bounds. Noncentral affine sections obey the antipodal-base bound.",
+  "arithmetic": "exact rational inverse; NumPy int64 moment sums, with magnitudes below 2^63",
+  "elapsed_seconds": 4.092999999993481
+}

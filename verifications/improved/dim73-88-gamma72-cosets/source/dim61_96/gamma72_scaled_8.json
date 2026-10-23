@@ -1,0 +1,57 @@
+{
+  "status": "Verified: exact group actions, tail ranks, and independently regenerated cross-head products",
+  "dimensions": {
+    "86": {
+      "bound": 6225153600,
+      "previous_working_bound": 6223567844,
+      "gain": 1585756,
+      "cosets": 711,
+      "initial_head_lines": 2135049,
+      "conflict_edges": 571548,
+      "removed_head_lines": 390549,
+      "retained_head_lines": 1744500,
+      "retention_fraction": 0.8170772661423695,
+      "tail_squared_norm": 8,
+      "tail_rank_expected": 14
+    },
+    "87": {
+      "bound": 6225433068,
+      "previous_working_bound": 6224703598,
+      "gain": 729470,
+      "cosets": 728,
+      "initial_head_lines": 2186093,
+      "conflict_edges": 529646,
+      "removed_head_lines": 371726,
+      "retained_head_lines": 1814367,
+      "retention_fraction": 0.8299587437496941,
+      "tail_squared_norm": 8,
+      "tail_rank_expected": 15
+    }
+  },
+  "seed_count": 8,
+  "cyclic_order": 91,
+  "seconds": 427.17216753959656,
+  "source_sha256": {
+    "gamma72_coset_heads.npz": "07d264f96ae908ae1a6c82971e2191046b3b9aef66a2e53dbcd6ea8c43b70439",
+    "gamma72_order91.npz": "dff4aff617b945e050d7d9fc595a45df9fa199f7c6358e5bfa511bfffda3b99e",
+    "gamma72_scaled_seeds_8.npz": "5d25f55e2f12d68e93689b6d16ca7eda99c3de108f94e2f0ecb4464f3b80dac9"
+  },
+  "scope": "Comparison against repository working bounds; no global priority claim.",
+  "verification": {
+    "independent_pair_families": 2908,
+    "distinct_coset_pairs": 517033,
+    "exact_representative_products": 26222187021,
+    "tail_ranks": {
+      "86": 14,
+      "87": 15
+    },
+    "seconds": 405.6896057128906,
+    "nearestness": "inherited certified nearest sets, preserved by checked integral isometries",
+    "internal_compatibility": "minimum Gamma72 squared norm 8; antipodal tails squared distance 10",
+    "construction_sha256": "39ffce8afe9a8114ec2023b176253f6af7e6b97516b0ac1c0964a40cadfeac1e",
+    "seed_certificate_sha256": "4f6eb647a29761ff21e2d023b5c4f5ad7d47bc0ab5cc65f0a7723ee2b9d614b7",
+    "verifier_file": "gamma72_scaled_verify_fast.py",
+    "verifier_sha256": "9562d917f6746a4a0ed0318c7e92087e0567f8353d07bf7f2abc01ff02d698bd",
+    "gram_sha256": "a23260883976630d482fcac7c4497779b1ee3a55d24e5083a44c5954496bbd06"
+  }
+}

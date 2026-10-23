@@ -1,0 +1,11 @@
+{
+  "points": 501147,
+  "unique_vectors": 501147,
+  "squared_norms": [
+    12
+  ],
+  "coefficient_dtype": "int8",
+  "ambient_dimension": 36,
+  "note": "Pair separation is certified by verify.py; this check validates the auxiliary coefficient export.",
+  "sha256": "2372525fd2d8b6c26ea6e1c2ed4c85bc26c9eb58585e99f33ae74ffd70d4c0ae"
+}

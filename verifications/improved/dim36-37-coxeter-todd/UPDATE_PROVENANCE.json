@@ -1,0 +1,60 @@
+{
+  "checkpoint_date": "2026-10-24",
+  "copies": [
+    {
+      "source": "research/dim33_39_20261024/result/certificate.json",
+      "installed": "verifications/improved/dim36-37-coxeter-todd/phase/certificate.json",
+      "sha256": "ddd4966f6a3f6748e80e7dbb7e1684de3efcf3a626ced7e79201c5c44866cbb4"
+    },
+    {
+      "source": "research/dim33_39_20261024/result/coordinates_check.json",
+      "installed": "verifications/improved/dim36-37-coxeter-todd/phase/coordinates_check.json",
+      "sha256": "57b6a333187eb98bd131a4ed1ef2faaef778bd8ad47a8b1984b971983dc67a98"
+    },
+    {
+      "source": "research/dim33_39_20261024/result/exact_lattice.py",
+      "installed": "verifications/improved/dim36-37-coxeter-todd/phase/exact_lattice.py",
+      "sha256": "5efd39c031287f0f2e3508a4336a715817d7b3786debabd8ea339c95dd5df2d1"
+    },
+    {
+      "source": "research/dim33_39_20261024/result/proof.txt",
+      "installed": "verifications/improved/dim36-37-coxeter-todd/phase/proof.txt",
+      "sha256": "e8b023768ecde7bdc42ad90e9f7d959d04845b50af6f8f2942271caedd7421ae"
+    },
+    {
+      "source": "research/dim33_39_20261024/result/README.txt",
+      "installed": "verifications/improved/dim36-37-coxeter-todd/phase/README.txt",
+      "sha256": "0254dad24deb7281766b808a1b13aad671bf9a9eead76b8873a4cc1b428c23c7"
+    },
+    {
+      "source": "research/dim33_39_20261024/result/section_obstruction.json",
+      "installed": "verifications/improved/dim36-37-coxeter-todd/phase/section_obstruction.json",
+      "sha256": "cbf2fc1bfbd3a10228d877f4104eb2e29854346173e308395e60caadfe84a3f7"
+    },
+    {
+      "source": "research/dim33_39_20261024/result/vectors36.npz",
+      "installed": "verifications/improved/dim36-37-coxeter-todd/phase/vectors36.npz",
+      "sha256": "985301690848f54b9e73a9733b7d843a784d8709d5e7b487475b9f961277fe4f"
+    },
+    {
+      "source": "research/dim33_39_20261024/result/vectors37.npz",
+      "installed": "verifications/improved/dim36-37-coxeter-todd/phase/vectors37.npz",
+      "sha256": "363a238744452785d82520778bddc35f4376f994fe97241825b4565318f4ba9d"
+    },
+    {
+      "source": "research/dim33_39_20261024/result/verification.json",
+      "installed": "verifications/improved/dim36-37-coxeter-todd/phase/verification.json",
+      "sha256": "501dba57847f752b5e4e29bcca91172b3c046eb42f216de971a6a53cbc1f170f"
+    },
+    {
+      "source": "research/dim33_39_20261024/result/verify.py",
+      "installed": "verifications/improved/dim36-37-coxeter-todd/phase/verify.py",
+      "sha256": "8972dcb3cb1b9e26faa64c084f2763c10855ec6334a954db05fa3c8af45d7cec"
+    },
+    {
+      "source": "research/dim33_39_20261024/result/verify_sections.py",
+      "installed": "verifications/improved/dim36-37-coxeter-todd/phase/verify_sections.py",
+      "sha256": "7d0fef58e0a50e1718d7ce18e6555bc50a8d0d12a4a3f80400879adc85bc2e79"
+    }
+  ]
+}

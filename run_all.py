@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 68 scripts, about 40 minutes plus the new head replay
-    python run_all.py --full       # 86 scripts, budget about 9 hours
+    python run_all.py              # 72 scripts, including large exact certificate replays
+    python run_all.py --full       # 91 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -51,8 +51,8 @@ Each script exits non-zero if any of its own checks fails; this collects the res
 Nothing here re-proves anything that the individual scripts do not -- it is a convenience,
 and the place to look when something breaks after an edit.
 
-Requirements: Python 3.8+, numpy and scipy for the verifications, and sympy for the
-paper's formula check. The optional older population replay additionally needs
+Requirements: Python 3.9+, numpy and scipy for the verifications, and sympy for the
+paper's formula check. The October coset replay also uses threadpoolctl. The optional older population replay additionally needs
 python-flint and a C++17 g++ compiler. OR-Tools is imported only by CP-SAT models that are not
 run from here -- the retired ones kept for the record, and
 verifications/improved/dim73-95-gamma72-caps/scripts/k11_optimal.py, which settles dimension
@@ -99,7 +99,7 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
-    ("audit: all 58 claims, mutual and external consistency",
+    ("audit: all 63 claims, mutual and external consistency",
      HERE, ['audit.py'], 0.5, True),
     ("common: extremal theta series and one-point distributions",
      os.path.join(HERE, 'common'), ['theta.py'], 0.1, True),
@@ -163,8 +163,10 @@ JOBS = [
     ("dims 38, 39: the Edel-Rains-Sloane chain and its codes",
      os.path.join(V, 'improved', 'dim39-ers-constant-weight'),
      ['scripts/verify.py'], 0.2, True),
-    ("p48-heads: dims 41, 42, 44-46, exact consistency with inherited populations",
-     os.path.join(V, 'improved', 'dim41-46-p48-heads'), ['verify.py'], 0.5, True),
+    ("coxeter-todd: dims 36, 37, exact phase orbits and two latitude layers",
+     os.path.join(V, 'improved', 'dim36-37-coxeter-todd'), ['verify.py'], 3.0, True),
+    ("p48-heads: dims 41-46, partial 43D and coordinated 45D, inherited populations",
+     os.path.join(V, 'improved', 'dim41-46-p48-heads'), ['verify.py'], 3.0, True),
     ("p48-heads: older 41/42/44 population certificate, fresh replay in a temporary copy",
      os.path.join(V, 'improved', 'dim41-46-p48-heads'),
      ['verify.py', '--replay-populations'], 20.0, False),
@@ -173,6 +175,14 @@ JOBS = [
      ['certify43.py'], 20.0, False),
     ("dims 46, 47: cross-sections of P_48, recovered not claimed",
      os.path.join(V, 'recovered', 'dim46-47-p48-cross-sections'), ['derive.py'], 0.1, True),
+    ("october-p48: 7387-line class and all 577 explicit disjoint images",
+     os.path.join(V, 'improved', 'dim49-63-p48-caps'), ['verify_october.py'], 1.0, True),
+    ("october-codes: compression, support layers and central sections",
+     os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py'], 5.0, True),
+    ("october-codes-full: all 2^36 words of the 73-coordinate binary code",
+     os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py', '--full-codes'], 7.0, False),
+    ("october-cosets: Gamma72 nearest subsets and all repaired/scaled cross products",
+     os.path.join(V, 'improved', 'dim73-88-gamma72-cosets'), ['verify.py'], 60.0, True),
     ("dims 49-63: the P_48 lattice, class and arithmetic",
      os.path.join(V, 'improved', 'dim49-63-p48-caps'), ['verify.py'], 0.1, True),
     ("dims 49-63: the result table",

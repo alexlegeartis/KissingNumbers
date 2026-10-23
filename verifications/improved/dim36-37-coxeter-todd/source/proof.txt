@@ -1,0 +1,197 @@
+A 501,147-point kissing configuration in dimension 36
+24 October 2026 (Moscow time; investigation started 23 October)
+
+Statement
+---------
+The finite certificate in certificate.json defines 501,147 vectors in R^36,
+each of squared norm 12, with distinct-pair squared distances at least 12.
+Consequently their normalized inner products are at most 1/2, and
+
+                         tau(36) >= 501147.
+
+This exceeds the 484,760 entry retrieved from Henry Cohn's table on
+23 October 2026 by 16,387 points, approximately 3.38 percent. It is a locally
+verified construction; this package makes no claim of external publication
+or independent third-party review.
+
+The construction uses three Coxeter--Todd lattices and a nonlinear code in
+their ternary quotient groups. It does not use the signed weight-eight
+supports or the binary [32,17,8] component of the previous search.
+
+1. Lattice and quotient
+----------------------
+Let K be the rank-12 lattice with Gram matrix G in certificate.json.
+It is the Coxeter--Todd Gram matrix from the Nebe--Sloane catalogue:
+https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/K12.html
+Coordinates below are row vectors in this Gram basis: |x|^2 = x G x^T.
+
+Let M be the integer matrix in the certificate and L = Z^12 M in K.
+The verifier checks
+
+                  M G M^T = 3G,       |det M| = 3^6.
+
+It proves G positive definite by rational LDL decomposition and enumerates
+ALL vectors of squared norm at most 8, using exact rational branch bounds.
+The nonzero shell populations are
+
+                  squared norm       population
+                        4                 756
+                        6                4032
+                        8               20412.
+
+In particular, min(K)=4. The displayed similarity proves min(L)=12 and
+that L has 756 minimal vectors. These facts are checked from the supplied
+matrix, rather than assumed from the catalogue.
+
+Define rho: Z^12 -> F_3^6 by
+
+ rho(x) = (x_0+x_3, x_1+x_4, x_2+x_5,
+           x_6+x_9, x_7+x_10, x_8+x_11) mod 3.
+
+This map is onto. Every row of M lies in its kernel. Both its kernel and L
+have index 3^6, so ker(rho)=L. We encode a label (h_0,...,h_5) as the integer
+sum_i h_i*3^i, with h_i in {0,1,2}.
+
+For a label h, let w(h) be its coset's minimum squared norm, and let m(h)
+be the number of vectors of this minimum norm. For h=0 these conventions
+include the zero vector, so w(0)=0 and m(0)=1. Exact enumeration gives
+
+             w(h)    m(h)    number of labels
+               0       1             1
+               4       3           252
+               6      18           224
+               8      81           252.
+
+Every nonzero label occurs in the enumeration, so it proves every entry
+and every minimum in this table. No coset lower bound is extrapolated
+from sampled vectors.
+
+2. General gluing lemma
+----------------------
+Let C be a set of distinct triples of labels, containing (0,0,0), such that
+
+  (a) w(a)+w(b)+w(c)=12 for every nonzero (a,b,c) in C;
+  (b) w(a-a')+w(b-b')+w(c-c') >= 12 for distinct triples in C.
+
+All differences here are componentwise in F_3^6.
+
+For each nonzero triple, include every vector (x,y,z) in K^3 for which
+rho(x)=a, rho(y)=b, rho(z)=c and each component has its coset's minimum norm.
+Also include the 3*756 minimal vectors of L^3, of squared norm 12.
+
+Every included point has squared norm 12. Points from different cosets
+have squared distance at least the sum in (b). Distinct points from the
+same coset differ by a nonzero vector of L^3, whose minimum norm is 12.
+Thus all distinct-pair squared distances are at least 12.
+
+The resulting point count is exactly
+
+             3*756 + sum_{(a,b,c) in C, (a,b,c)!=0} m(a)m(b)m(c).
+
+Finally |v-v'|^2 = 24-2<v,v'> gives <v,v'> <= 6. Dividing all vectors by
+sqrt(12) gives a unit spherical code with inner products at most 1/2.
+This proves the kissing-number claim in ordinary Euclidean dimension 36:
+G is positive definite and the ambient Gram matrix is diag(G,G,G).
+
+3. The explicit outer code and count
+-----------------------------------
+certificate.json supplies all 5,038 triples in C, including the zero triple.
+The standalone verifier checks (a), every one of the 12,688,203 distinct
+coset pairs in (b), all coset multiplicities, and the final count.
+
+The population separates as follows:
+
+       type                          cells    points/cell       points
+       minimal vectors of L^3          --          --             2268
+       cyclic (0,6,6) types           672          324          217728
+       cyclic (0,4,8) types           756          243          183708
+       (4,4,4) types                 3609           27           97443
+                                                                ------
+                                                                501147
+
+Here the type records component squared norms, and the cyclic locations
+are included in the actual list. The proof depends only on the explicit
+code and the verified gluing lemma, not on how the code was discovered.
+
+4. How the code was found
+------------------------
+This section explains the structure; it is not an extra assumption in
+the verification.
+
+The quotient has a quadratic form q(h)=|x|^2/2 mod 3 for rho(x)=h.
+Its values 2, 0, and 1 correspond to nonzero coset weights 4, 6, and 8.
+An explicit linear map A, recorded in discovery.json, satisfies
+
+          A Q A^T = -Q,       A^2 = -I       over F_3,
+
+where Q represents q in row-vector convention. Thus A exchanges coset
+weights 4 and 8 and preserves nonzero weight 6. Pairing a coset h with
+hA gives the familiar 196,560-point 24D Leech-shell count:
+
+          2*756 + 224*18^2 + 2*252*3*81 = 196560.
+
+Take these pairs in each of the three coordinate planes of K^3. Keep
+all balanced (6,6) cells and one cyclic orientation of the (8,4) cells.
+Together with the L^3 minima, these give 403,704 compatible points.
+
+For a triple of weight-four labels (a,b,c), compatibility with this fixed
+part is equivalent to
+
+              w(a-bA)=w(b-cA)=w(c-aA)=8.
+
+There are 729,000 such triples. An unstructured search found only 2,643
+mutually compatible ones, yielding 475,065 points.
+
+The useful change was imposing the algebraic relation
+
+                        a + bA + c = 0.
+
+There are 8,100 admissible triples in this slice. If two triples share a
+or c, the other two differences are related by A, so their weights sum
+to 12. Only pairs sharing b can conflict. For each fixed b, select a
+subset of possible a-values whose distinct differences have weight at
+least 6. The problem therefore separates into 252 small graphs.
+
+The selected independent-set sizes are
+
+                 90*10 + 90*18 + 72*14 = 3528.
+
+These choices give the structured 498,960-point configuration. A greedy
+extension in the full pool adds 81 further cosets, each worth 27 points,
+giving 501,147. The 81 additional triples are also listed in discovery.json.
+
+5. Reproduction and coordinate conventions
+------------------------------------------
+Run
+
+                         python verify.py
+
+with Python 3.9 or newer. No third-party libraries, web access, search,
+optimization solver, or randomness are required. verification.json is
+the machine-readable output and includes a SHA-256 of certificate.json.
+
+vectors.npz is an optional explicit coefficient list, with 501,147 rows
+and 36 columns, and its exact 36-by-36 Gram matrix. It is provided for
+inspection and further work; verify.py reconstructs the certificate's
+meaning without trusting this auxiliary file. These integer coefficients
+are in a Gram basis, not orthonormal Cartesian coordinates. If G36=L L^T
+is a Cholesky factorization, the corresponding ordinary unit vectors are
+
+                         coefficients @ L / sqrt(12).
+
+6. Immediate consequence in dimension 37
+----------------------------------------
+Embed the unit configuration in the equator of S^36 and add the two poles.
+The poles have inner product zero with every equatorial point and inner
+product -1 with each other. Therefore
+
+                          tau(37) >= 501149.
+
+The retrieved Cohn table lists 500,008 in 37D, so this also exceeds that
+snapshot by 1,141. The construction itself is the 36D result above.
+
+Comparison sources
+------------------
+https://cohn.mit.edu/kissing-numbers/ (retrieved 23 October 2026)
+https://arxiv.org/html/2609.35051v1 (published 484,760 construction)
+https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/K12.html (Gram matrix)

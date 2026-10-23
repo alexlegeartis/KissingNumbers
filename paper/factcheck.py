@@ -245,7 +245,11 @@ for m in re.finditer(r'^\| (\d+) \| ([\d\u202f ]+) \| \*\*([\d\u202f ]+)\*\* \|'
 # empty set here asserts.  Every check below that used to subtract it now derives its count
 # from Table 4 instead.  Put a dimension back only while the manuscript genuinely lags: this
 # line is what says, in code, whether an omission is deliberate or an oversight.
-POSTDATE = set()
+# The October 2026 registry adds two Coxeter-Todd dimensions and six
+# P48n family/head dimensions, plus two code-layer dimensions. Their packages are
+# checked by audit.py and run_all.py; the manuscript remains its September
+# snapshot. Keep the excess explicit so another addition cannot slip in.
+POSTDATE = {36, 37, 41, 42, 43, 44, 45, 46, 66, 67}
 chk('values.tex is the manuscript\'s only copy of each bound',
     bool(_MACROS) and not _unexpanded,
     'values.tex missing' if not _MACROS
@@ -259,7 +263,11 @@ chk('Table 4 row count == 53', len(tab4) == 53, 'got %d' % len(tab4))
 chk('RESULTS.md row count == 53 + the postdating claims', len(results) == 53 + len(POSTDATE), 'got %d' % len(results))
 chk('the claims that postdate the manuscript are exactly %s' % sorted(POSTDATE), set(results) - set(tab4) == POSTDATE,
     'RESULTS.md has beyond Table 4: %s' % sorted(set(results) - set(tab4)))
-results = {d: v for d, v in results.items() if d not in POSTDATE}
+current_results = {d: v for d, v in results.items() if d not in POSTDATE}
+_snapshot = json.load(io.open(os.path.join(HERE, 'registry_snapshot.json'), encoding='utf-8'))
+results = {r['dimension']: (r['previous'], r['total']) for r in _snapshot['rows']}
+chk('current registry retains or improves every manuscript result',
+    set(current_results) == set(results) and all(current_results[d][1] >= v[1] for d,v in results.items()))
 chk('dimensions 46 and 47 are not counted', not ({46, 47} & set(tab4)),
     'still present: %s' % sorted({46, 47} & set(tab4)))
 chk('but the paper still records them', '23\\,766\\,960' in TEX
@@ -282,7 +290,9 @@ for d in sorted(set(tab4) & set(results)):
 best = {}
 for d in range(1, 97):                     # 97, not 96: dimension 96 is now a claim
     try:
-        best[d] = floor_for(d)[0]
+        # The manuscript uses the pinned August comparison snapshot. The
+        # October comparisons belong to the separately checked new packages.
+        best[d] = COHN[d] if d in COHN else floor_for(d)[0]
     except ValueError:
         pass
 for d, (_, v, _) in tab4.items():
@@ -1541,7 +1551,7 @@ except Exception as _e:                                                # noqa: B
     _a96 = None
 
 if _a96 is not None:
-    _exc, _at = _a96()
+    _exc, _at = _a96({d: row[1] for d, row in results.items()})
     _i96 = TEX.find('And the table stops there')
     # strip the LaTeX out of the window so the patterns need no escaping at all
     _w96 = ' '.join(TEX[_i96:_i96 + 1400].split()).replace(chr(92), '').replace('$', '')
@@ -1554,7 +1564,7 @@ if _a96 is not None:
             'paper %s%%, above96.py %.4f%%' % (_m96.group(1), 100 * _exc))
         chk('the above-96 excess is quoted at the dimension where it occurs',
             int(_m96.group(2)) == _at,
-            'paper n = %s, above96.py n = %d' % (_m96.group(2), _at))
+            'paper n = %s, above96.py n = %s' % (_m96.group(2), _at))
     _r96 = re.search('evaluated through n=([0-9]+)', _w96)
     chk('the paper states the range above96.py actually sweeps',
         bool(_r96) and int(_r96.group(1)) == _a96_top,
@@ -1569,13 +1579,13 @@ if _a96 is not None:
 # never parsed: a parser is a second reading and can disagree with what it guards.
 sys.path.insert(0, os.path.join(KV, 'verifications', 'closed', 'dim96-ers-takeover'))
 try:
-    from ers_exposure import ranked as _ers_ranked
+    from ers_exposure import ranked as _ers_ranked, ranking as _ers_ranking
 except Exception as _e:
     chk('section 9.2 exposure guard can import the ranking', False, repr(_e))
     _ers_ranked = None
 
 if _ers_ranked is not None:
-    _order = _ers_ranked()
+    _order = _ers_ranked(_ers_ranking({d: row[1] for d, row in results.items()}))
     _top, _next = _order[0], _order[1]
     _flat = TEX.replace(chr(92) + ',', '')           # strip LaTeX thin spaces: no backslashes
     _i = _flat.find('most exposed bound in this paper')

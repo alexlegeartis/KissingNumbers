@@ -1,0 +1,112 @@
+{
+  "status": "Verified: exact group actions, tail ranks, and independently regenerated cross-head products",
+  "dimensions": {
+    "80": {
+      "bound": 6219474100,
+      "previous_working_bound": 6218849228,
+      "gain": 624872,
+      "cosets": 120,
+      "initial_head_lines": 360195,
+      "conflict_edges": 43584,
+      "removed_head_lines": 35570,
+      "retained_head_lines": 324625,
+      "retention_fraction": 0.9012479351462402,
+      "tail_squared_norm": 8,
+      "tail_rank_expected": 8
+    },
+    "81": {
+      "bound": 6219649244,
+      "previous_working_bound": 6219034270,
+      "gain": 614974,
+      "cosets": 136,
+      "initial_head_lines": 408223,
+      "conflict_edges": 48959,
+      "removed_head_lines": 39812,
+      "retained_head_lines": 368411,
+      "retention_fraction": 0.9024748728023654,
+      "tail_squared_norm": 8,
+      "tail_rank_expected": 9
+    },
+    "82": {
+      "bound": 6220001152,
+      "previous_working_bound": 6219605578,
+      "gain": 395574,
+      "cosets": 168,
+      "initial_head_lines": 504277,
+      "conflict_edges": 58683,
+      "removed_head_lines": 47889,
+      "retained_head_lines": 456388,
+      "retention_fraction": 0.9050343362873976,
+      "tail_squared_norm": 8,
+      "tail_rank_expected": 10
+    },
+    "83": {
+      "bound": 6220533856,
+      "previous_working_bound": 6219621690,
+      "gain": 912166,
+      "cosets": 219,
+      "initial_head_lines": 657398,
+      "conflict_edges": 84169,
+      "removed_head_lines": 67834,
+      "retained_head_lines": 589564,
+      "retention_fraction": 0.8968144107526947,
+      "tail_squared_norm": 8,
+      "tail_rank_expected": 11
+    },
+    "84": {
+      "bound": 6221555280,
+      "previous_working_bound": 6220293304,
+      "gain": 1261976,
+      "cosets": 324,
+      "initial_head_lines": 972574,
+      "conflict_edges": 167909,
+      "removed_head_lines": 127654,
+      "retained_head_lines": 844920,
+      "retention_fraction": 0.8687462342197098,
+      "tail_squared_norm": 8,
+      "tail_rank_expected": 12
+    },
+    "85": {
+      "bound": 6222003336,
+      "previous_working_bound": 6220745414,
+      "gain": 1257922,
+      "cosets": 364,
+      "initial_head_lines": 1092637,
+      "conflict_edges": 175929,
+      "removed_head_lines": 135703,
+      "retained_head_lines": 956934,
+      "retention_fraction": 0.8758023021369402,
+      "tail_squared_norm": 8,
+      "tail_rank_expected": 13
+    }
+  },
+  "seed_count": 4,
+  "cyclic_order": 91,
+  "seconds": 158.85335636138916,
+  "source_sha256": {
+    "gamma72_coset_heads.npz": "07d264f96ae908ae1a6c82971e2191046b3b9aef66a2e53dbcd6ea8c43b70439",
+    "gamma72_order91.npz": "dff4aff617b945e050d7d9fc595a45df9fa199f7c6358e5bfa511bfffda3b99e",
+    "gamma72_scaled_seeds_4.npz": "7a7986dddf8f6557ff95b3d8fc89e46cfc1c7008b3e29378ba8aec7c6af54d3a"
+  },
+  "scope": "Comparison against repository working bounds; no global priority claim.",
+  "verification": {
+    "independent_pair_families": 726,
+    "distinct_coset_pairs": 172611,
+    "exact_representative_products": 6541625213,
+    "tail_ranks": {
+      "80": 8,
+      "81": 9,
+      "82": 10,
+      "83": 11,
+      "84": 12,
+      "85": 13
+    },
+    "seconds": 166.81424260139465,
+    "nearestness": "inherited certified nearest sets, preserved by checked integral isometries",
+    "internal_compatibility": "minimum Gamma72 squared norm 8; antipodal tails squared distance 10",
+    "construction_sha256": "b22a10c401f51335cbc67bdb297ba00a4a7de0fdbe42c89d98d44dbf38afa59b",
+    "seed_certificate_sha256": "4f6eb647a29761ff21e2d023b5c4f5ad7d47bc0ab5cc65f0a7723ee2b9d614b7",
+    "verifier_sha256": "65b7362844c09f240aafaa3024c4dba7ac51744e0a7aad1410629b754733739b",
+    "gram_sha256": "a23260883976630d482fcac7c4497779b1ee3a55d24e5083a44c5954496bbd06"
+  }
+}

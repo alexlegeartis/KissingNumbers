@@ -1,0 +1,166 @@
+{
+  "status": "Explicit input codes and exact layer geometry verified",
+  "construction": "One weighted dense coordinate; weight-D sparse layer avoids it",
+  "dimensions": {
+    "62": {
+      "total": 93553676,
+      "terms": {
+        "dense": 67108864,
+        "weight16": 26298368,
+        "weight4": 146320,
+        "poles": 124
+      },
+      "repository_baseline": 71310732,
+      "gain": 22242944,
+      "norm_squared": 64,
+      "heavy_coordinate_squared": 3,
+      "support_count_weight16": 12841,
+      "checks": {
+        "dense_norm_squared": true,
+        "dense_pair_ip": true,
+        "dense_sparse_ip": true,
+        "weightD_different_support_ip": true,
+        "weightD_same_support_ip": true,
+        "sparse_two_levels_ip": true,
+        "pole_dense_ip_squared": true,
+        "pole_weightD_ip_squared": true,
+        "pole_lower_ip_squared": true,
+        "dense_lower_ip": true,
+        "lower_different_support_ip": true,
+        "lower_same_support_ip": true
+      }
+    },
+    "63": {
+      "total": 169700046,
+      "terms": {
+        "dense": 134217728,
+        "weight16": 35325952,
+        "weight4": 156240,
+        "poles": 126
+      },
+      "repository_baseline": 138419844,
+      "gain": 31280202,
+      "norm_squared": 64,
+      "heavy_coordinate_squared": 2,
+      "support_count_weight16": 17249,
+      "checks": {
+        "dense_norm_squared": true,
+        "dense_pair_ip": true,
+        "dense_sparse_ip": true,
+        "weightD_different_support_ip": true,
+        "weightD_same_support_ip": true,
+        "sparse_two_levels_ip": true,
+        "pole_dense_ip_squared": true,
+        "pole_weightD_ip_squared": true,
+        "pole_lower_ip_squared": true,
+        "dense_lower_ip": true,
+        "lower_different_support_ip": true,
+        "lower_same_support_ip": true
+      }
+    },
+    "95": {
+      "total": 6712852670,
+      "terms": {
+        "dense": 4294967296,
+        "weight24": 2415919104,
+        "weight6": 1966080,
+        "poles": 190
+      },
+      "repository_baseline": 6473065046,
+      "gain": 239787624,
+      "norm_squared": 96,
+      "heavy_coordinate_squared": 2,
+      "checks": {
+        "dense_norm_squared": true,
+        "dense_pair_ip": true,
+        "dense_sparse_ip": true,
+        "weightD_different_support_ip": true,
+        "weightD_same_support_ip": true,
+        "sparse_two_levels_ip": true,
+        "pole_dense_ip_squared": true,
+        "pole_weightD_ip_squared": true,
+        "pole_lower_ip_squared": true,
+        "dense_lower_ip": true,
+        "lower_different_support_ip": true,
+        "lower_same_support_ip": true
+      }
+    }
+  },
+  "binary64_weight_histogram": {
+    "0": 1,
+    "16": 30828,
+    "20": 1128960,
+    "24": 14629440,
+    "28": 65046016,
+    "32": 106764966,
+    "36": 65046016,
+    "40": 14629440,
+    "44": 1128960,
+    "48": 30828,
+    "64": 1
+  },
+  "binary62_weight_histogram": {
+    "0": 1,
+    "16": 17249,
+    "20": 529760,
+    "24": 5660200,
+    "28": 20326880,
+    "32": 26267571,
+    "36": 12196128,
+    "40": 2002840,
+    "44": 106400,
+    "48": 1835
+  },
+  "extra_shortening_coordinate_for_support61": 20,
+  "support61_count": 12841,
+  "quaternary24": {
+    "generator_polynomial_GF4_low_first": [
+      1,
+      2,
+      0,
+      2,
+      3,
+      1,
+      3,
+      2,
+      3,
+      1,
+      3,
+      2,
+      0,
+      2,
+      1
+    ],
+    "weight_histogram": {
+      "0": 1,
+      "12": 3708,
+      "14": 15552,
+      "16": 60813,
+      "18": 96192,
+      "20": 69228,
+      "22": 16128,
+      "24": 522
+    },
+    "excluded_zero_cells_rows": [
+      0,
+      1
+    ],
+    "retained_supports_on_94_cells": 147456
+  },
+  "binary_sign24_weight_histogram": {
+    "0": 1,
+    "6": 336,
+    "8": 1335,
+    "10": 3888,
+    "12": 5264,
+    "14": 3888,
+    "16": 1335,
+    "18": 336,
+    "24": 1
+  },
+  "distance95_proof": "Nested inner distances 4,2,1 times outer distances 6,12,24; shorten one coordinate",
+  "code_source": "https://www.codetables.de/BKLC/BKLC.php?q=2&n=95&k=32",
+  "generator95_sha256": "1e3d2440f4e1cf5633c653f825745be761bbf801a246c8d4f168abfc18068f94",
+  "artifact_sha256": "f86ea3e8fb615299826de7b388286d27c7658fb77939c29ef3fcab39474d7c78",
+  "seconds": 15.3286465
+}
