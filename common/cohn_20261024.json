@@ -278,10 +278,10 @@
     },
     {
       "dimension": 28,
-      "repository_points": 204896,
+      "repository_points": 205232,
       "cohn_lower_bound": 205172,
-      "difference": -276,
-      "comparison": "below"
+      "difference": 60,
+      "comparison": "above"
     },
     {
       "dimension": 29,
@@ -373,6 +373,52 @@
       "cohn_lower_bound": 12309600,
       "difference": 1078197,
       "comparison": "above"
+    }
+  ],
+  "rechecks": [
+    {
+      "retrieved_at_utc": "2026-10-24T01:14:38.479727+00:00",
+      "retrieved_html_sha256": "2fe56dd8eb8e5c554570f7a3b79d5ee6eb50844a3f0b6c6635dff3263d15901c",
+      "all_48_lower_and_upper_bounds_unchanged": true,
+      "source_repositories": [
+        {
+          "repository": "Felpix-Studios/kissing-number",
+          "revision": "b823640f4e98134b9d55b27288132ee954a8affa",
+          "lower_bounds": {
+            "18": 8358,
+            "19": 12460,
+            "21": 31560,
+            "28": 205172,
+            "29": 210495,
+            "30": 222073,
+            "31": 241079
+          }
+        },
+        {
+          "repository": "k-nic/kissing_d25-31",
+          "revision": "b3768310ba566da5c8947546266c103fbcdce181",
+          "lower_bounds": {
+            "25": 197583,
+            "26": 199868,
+            "27": 201589,
+            "29": 209970,
+            "31": 238666
+          }
+        },
+        {
+          "repository": "QH-Lin/kissing-numbers-33-39",
+          "revision": "0c4e2bd486061b3fd55e128ac3497bfb12b73f07",
+          "lower_bounds": {
+            "33": 370240,
+            "34": 390980,
+            "35": 415308,
+            "37": 499816,
+            "38": 605322,
+            "39": 768916
+          }
+        }
+      ],
+      "note": "No new external lower-bound update was found beyond the values already recorded in README.md. Li also supplies an 8358-point 18D construction. The new local 28D certificate exceeds the live 205172-point bound by 60."
     }
   ]
 }

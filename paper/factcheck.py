@@ -246,10 +246,10 @@ for m in re.finditer(r'^\| (\d+) \| ([\d\u202f ]+) \| \*\*([\d\u202f ]+)\*\* \|'
 # from Table 4 instead.  Put a dimension back only while the manuscript genuinely lags: this
 # line is what says, in code, whether an omission is deliberate or an oversight.
 # The October 2026 registry adds two Coxeter-Todd dimensions and six
-# P48n family/head dimensions, plus two code-layer dimensions. Their packages are
+# P48n family/head dimensions, plus four code-layer dimensions. Their packages are
 # checked by audit.py and run_all.py; the manuscript remains its September
 # snapshot. Keep the excess explicit so another addition cannot slip in.
-POSTDATE = {36, 37, 41, 42, 43, 44, 45, 46, 66, 67}
+POSTDATE = {36, 37, 41, 42, 43, 44, 45, 46, 64, 65, 66, 67}
 chk('values.tex is the manuscript\'s only copy of each bound',
     bool(_MACROS) and not _unexpanded,
     'values.tex missing' if not _MACROS
@@ -280,7 +280,7 @@ for d in sorted(set(tab4) & set(results)):
         '%d vs %d' % (tab4[d][0], results[d][0]))
     chk('dim %d claim matches RESULTS.md' % d, tab4[d][1] == results[d][1],
         '%d vs %d' % (tab4[d][1], results[d][1]))
-    fv, _ = floor_for(d)
+    fv = COHN[d] if d in COHN else floor_for(d)[0]  # manuscript comparison snapshot
     chk('dim %d prev matches published.py' % d, tab4[d][0] == fv,
         'tex %d vs floor_for %d' % (tab4[d][0], fv))
     chk('dim %d claim beats prev' % d, tab4[d][1] > tab4[d][0],

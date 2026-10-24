@@ -1,5 +1,8 @@
 # Dimension 28: a full frame of norm-8 heads at height √2
 
+**Retained construction.** The October [joint Leech layers](../dim28-joint-leech-layers/)
+reach 205,232 points. This package preserves the earlier frame-layer construction.
+
 **τ(28) ≥ 204 896**, against the published **204 520** (Cohn's table; Ma et al. 2025,
 arXiv:2511.13391, the PackingStar configurations). An improvement of **+376**. Dimension 28 was the
 one dimension of 25–31 that this programme had not moved.

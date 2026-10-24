@@ -2,23 +2,26 @@
 
 The kissing number τ(n) is the largest number of unit spheres that can touch a central unit
 sphere in ℝⁿ; equivalently, the largest set of unit vectors with pairwise inner products at
-most 1/2. This repository registers constructions in **63 dimensions**, each with a package
+most 1/2. This repository registers constructions in **65 dimensions**, each with a package
 that states its verification scope, together with the negative results that guide further
 searches. Some of our earlier records have since been superseded. Their constructions,
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
-> **24 October 2026 — new SOTAs in dimensions 36–37 and 41–46.**
+> **24 October 2026 — new SOTAs in dimensions 28, 36–37 and 41–46.**
+> Joint Leech layers give **205 232** in 28D, improving K. Li's 205 172 by 60.
 > The new Coxeter–Todd phase code gives **501 633** in 36D and **505 359**
 > in 37D. The supplied 43D certificate now reaches **2 919 743**, and
 > coordinated head movement raises 45D to **7 655 056**. All have passed
 > exact replay; complete-family P48n populations retain their documented assumptions.
 > The update also includes the 7 387-line P48 family, code improvements in
-> 61–63D, 66–68D and 95–96D, and Gamma72 nearest-coset constructions in 73–88D.
+> 61-68D and 95-96D, and Gamma72 nearest-coset constructions in 73-88D.
+> The signed-support construction gives **332 170 112** in 64D and
+> **332 238 338** in 65D; 72D is the remaining gap in 49-96D.
 > In particular, 95D reaches **7 077 231 372** and 96D **13 264 027 840**.
 
 ```bash
-python audit.py --repository-only  # all 63 claims; check this repository without its surrounding workspace
+python audit.py --repository-only  # all 65 claims; check this repository without its surrounding workspace
 ```
 
 `update.py` is the maintainer's entry point rather than the reviewer's: it runs every package
@@ -65,11 +68,13 @@ improvements. See
 The status notes use [Cohn's live leaderboard](https://cohn.mit.edu/kissing-numbers/),
 retrieved **24 October 2026**. All **48** lower/upper-bound rows were captured in
 [the dated comparison](common/cohn_20261024.json). Across the **18** registered
-dimensions it covers, our eight new results in 36–37D and 41–46D exceed the
-listed bounds, our 18D result is already listed, and nine earlier results are
+dimensions it covers, our nine results in 28D, 36–37D and 41–46D exceed the
+listed bounds, our 18D result is already listed, and eight earlier results are
 superseded as shown below.
 The fetched table contains dimensions 1–48; higher-dimensional status uses
-the separate sources below. Its 18D entry credits this repository.
+the separate sources below. Its 18D entry credits this repository. All 48
+lower/upper bounds were rechecked without a numerical change at **01:14 UTC**.
+The dated comparison records the fresh retrieval hash and the reviewed source revisions.
 
 | dim | recorded comparison | comparison method / source | **this work** | SOTA value | our gain | later gain | SOTA period | our method | superseding method |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -77,7 +82,7 @@ the separate sources below. Its 18D entry credits this repository.
 | 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 579** | 197 583 | +0.27% | +0.002% | 2026-08-30 to 2026-09-28 | [Leech heads](verifications/improved/dim25-lens-heads/) | [Heads + motion](https://github.com/k-nic/kissing_d25-31) |
 | 26 | 198 550 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **199 806** | 199 868 | +0.63% | +0.031% | 2026-09-08 to 2026-10-05 | [Coset triangles](verifications/improved/dim26-27-iota-triangles/) | [Caps + free heads](https://github.com/k-nic/kissing_d25-31) |
 | 27 | 200 044 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **201 566** | 201 589 | +0.76% | +0.011% | 2026-08-30 to 2026-09-28 | [Coset triangles](verifications/improved/dim26-27-iota-triangles/) | [Cap colouring](https://github.com/k-nic/kissing_d25-31) |
-| 28 | 204 520 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **204 896** | 205 172 | +0.18% | +0.13% | 2026-09-16 to 2026-10-10 | [Frame layer](verifications/improved/dim28-norm8-frame-layer/) | [Leech lift](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
+| 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **205 232** | **SOTA** | +0.0292% | — | 2026-09-16 to 2026-10-10; since 2026-10-24 | [Joint Leech layers](verifications/improved/dim28-joint-leech-layers/) | — |
 | 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **209 968** | 210 495 | +0.23% | +0.25% | 2026-09-16 to 2026-10-05 | [Frame layer](verifications/improved/dim29-30-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
 | 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **221 012** | 222 073 | +0.26% | +0.48% | 2026-09-16 to 2026-10-10 | [Frame layer](verifications/improved/dim29-30-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
 | 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **238 662** | 241 079 | +0.13% | +1% | 2026-09-16 to 2026-10-05 | [Frame layer](verifications/improved/dim31-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
@@ -106,6 +111,8 @@ the separate sources below. Its 18D entry credits this repository.
 | 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **71 310 488** | **SOTA** | +36% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **100 371 468** | **SOTA** | +91.5% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **182 407 428** | **SOTA** | 3.48x | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 64 | 331 737 984 | [Edel-Rains-Sloane](https://arxiv.org/abs/math/0207291) | **332 170 112** | **SOTA** | +0.130% | — | since 2026-10-24 | [Signed support augmentation](verifications/improved/dim64-65-signed-parity/) | — |
+| 65 | 331 737 986 | [ERS64](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **332 238 338** | **SOTA** | +0.151% | — | since 2026-10-24 | [Signed supports and BCH owner caps](verifications/improved/dim64-65-signed-parity/) | — |
 | 66 | 331 737 990 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **338 292 100** | **SOTA** | +1.98% | — | since 2026-10-24 | [Code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 67 | 331 737 996 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **351 400 326** | **SOTA** | +5.93% | — | since 2026-10-24 | [Code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **371 521 432** | **SOTA** | +12% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
@@ -158,8 +165,8 @@ for 26D, 29D and 31D; and
 for 28D and 30D. The later-result table below gives the latest retrieved values,
 which can be larger than the first result that superseded ours.
 
-The table above includes all 63 registered constructions. The October update adds
-36D, 37D, 66D and 67D, raises 43D and 45D, installs the stronger P48 class family,
+The table above includes all 65 registered constructions. The October update adds
+36D, 37D, 64D, 65D, 66D and 67D, raises 28D, 43D and 45D, installs the stronger P48 class family,
 and registers code and coset improvements through 96D. [RESULTS.md](RESULTS.md) gives the generated registry
 and the detailed construction descriptions.
 Its comparisons use the repository's pinned data and include results that have since
@@ -188,7 +195,7 @@ improvement is claimed in 47D or 48D.
 
 - **27D:** The coset triangle of three norm-6 vectors on all four triangles of directions, with the class heads, the axial normals that remove nothing and the second cap layer all solved together rather than in sequence (first layer B. Lindow, second layer here)
 
-- **28D:** The head of a deletion-free layer need not have norm 6: at height √2 a norm-8 head clears the cap threshold, and 48 of them are a whole Leech frame
+- **28D:** Jointly select even heads over Li's eight odd Leech blocks and a larger auxiliary layer: 192 352 equator points, 12 624 caps and 256 auxiliary points give 205 232. The earlier norm-8 frame layer is retained.
 
 - **29D:** The same frame layer one dimension up, on the whole cross-polytope of ℝ⁵ — 480 points, deleting nothing
 
@@ -251,7 +258,7 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               all 63 claims, seventeen packages; earlier constructions remain
+  improved/               all 65 claims, nineteen packages; earlier constructions remain
                           available with their original proof data
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
@@ -270,7 +277,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — seventeen packages, 63 dimensions
+### `verifications/improved/` — nineteen packages, 65 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -284,7 +291,8 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | [`dim18-bent-hexagon`](verifications/improved/dim18-bent-hexagon/) | 18 | bent-coset hexagon over odd Barnes–Wall; matches Cohn’s current table |
 | `[dim25-lens-heads](verifications/improved/dim25-lens-heads/)`                               | 25     | cap heads of squared length 3 in the lens of a minimal vector remove exactly their owner and never share a removal, so τ = 196560 + H + 2 + \|E\| with H = 1016 and one non-lattice equator point |
 | `[dim26-27-iota-triangles](verifications/improved/dim26-27-iota-triangles/)`                 | 26, 27 | the axis forces the heads onto squared length 8/3 and onto fixed triangles of directions, so the layer is two or four head sets at cosine ≤ 1/4 cross-constrained at cosine 1/2; the coset triangle of three norm-6 vectors summing to zero is one such set, and the involution ι(u) = −v − u on each class puts S and ι(S) on two triangles at once |
-| `[dim28-norm8-frame-layer](verifications/improved/dim28-norm8-frame-layer/)`                 | 28     | the head of a deletion-free layer need not have norm 6: at height √2 a NORM-8 head clears the cap threshold where a norm-6 head does not, and the 24 vectors 8eᵢ are a Leech frame, each carrying all eight directions ±e_k of ℝ⁴ — 384 points for 8 axis points |
+| `[dim28-norm8-frame-layer](verifications/improved/dim28-norm8-frame-layer/)`                 | 28     | retained construction: the head of a deletion-free layer need not have norm 6: at height √2 a NORM-8 head clears the cap threshold where a norm-6 head does not, and the 24 vectors 8eᵢ are a Leech frame, each carrying all eight directions ±e_k of ℝ⁴ — 384 points for 8 axis points |
+| [`dim28-joint-leech-layers`](verifications/improved/dim28-joint-leech-layers/) | 28 | joint selection of even heads and auxiliary layers over Li's odd Leech blocks |
 | `[dim29-30-frame-layer](verifications/improved/dim29-30-frame-layer/)`                           | 29, 30 | the dimension-28 norm-8 frame layer is not about dimension 28: at height `√2` with `x = v/2`, `|v|² = 8`, the layer deletes nothing, one head carries the whole cross-polytope of `ℝᵏ` and all 48 vectors of a Leech frame carry every direction, so it is `96k` points in every dimension. The price is that all `⌊τ(k)/3⌋` owner classes must be type B for one frame — and in the coordinates where the frame is `8eᵢ` the type-B lines are the octad vectors of the Golay code, which the monomial group `2¹²:M₂₄` permutes, so the filter disappears and what is left is a packing solved by coordinate descent on the Golay sign words |
 | `[dim31-frame-layer](verifications/improved/dim31-frame-layer/)`                             | 31     | the norm-8 frame layer at height √2 carried to k = 7: all 48 vectors of a Leech frame on the whole cross-polytope of ℝ⁷, 672 points, deleting no equator point.  It needs 42 pairwise disjoint type-B classes holding at least 10 252 of the 10 416 lines 42 full classes would give; the published attempt reached 10 183 and this one carries 10 328, found by screening candidates on the free slots their octads still have rather than by scanning uniformly — a sampled clique search needs pair density p ≥ 0.5097 to reach 42 at all, and flattening the octad coverage takes p from 0.4984 to 0.5467.  The axis is E7 rotated by 45°, 45°, 90° in the coordinate planes (0,3), (2,4), (5,6), keeping 118 of 126 against the 110 the published axis kept |
 | `[dim38-leech-large-codimension](verifications/improved/dim38-leech-large-codimension/)`     | 38     | the same construction at codimension 14, where the binding constraint flips and the whole Leech shell partitions into 644 classes                                                            |
@@ -297,6 +305,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | `[dim70-71-gamma72-cross-sections](verifications/improved/dim70-71-gamma72-cross-sections/)` | 70, 71 | the same k-point method on Nebe's Γ₇₂                                                                                                                                                        |
 | `[dim73-95-gamma72-caps](verifications/improved/dim73-95-gamma72-caps/)`                     | 73–95  | the cap construction over Γ₇₂, whose class threshold γ = 1/4 is exactly what permits zero-sum triples                                                                                        |
 | [`dim61-68-95-96-code-layers`](verifications/improved/dim61-68-95-96-code-layers/) | 61–63, 66–68, 95–96 | binary compression, central sections and enlarged support codes |
+| [`dim64-65-signed-parity`](verifications/improved/dim64-65-signed-parity/) | 64-65 | 211 added Hamming sign blocks, exact parity repairs and BCH owner caps |
 | [`dim73-88-gamma72-cosets`](verifications/improved/dim73-88-gamma72-cosets/) | 73–88 | certified nearest subsets, repaired and scaled group images |
 
 
@@ -313,10 +322,16 @@ the lower bound in its dimensions** — who held it, when, and by what construct
 
 ## Record status and retained results
 
+The October joint Leech construction regains 28D with 205 232 points,
+after K. Li's 205 172 superseded our 204 896 on 10 October.
 The October 7 387-line class family regains 49–55D after their September
 supersession by the 7 077-line lift. The two separate record periods are
 shown above; earlier constructions and their values remain in the package history.
 
+
+**Matching 18D construction.** [K. Li's hyperplane-section paper](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/hyperplane-section-d18/paper.pdf)
+also reaches 8 358. Cohn's existing 18D table entry credits this repository;
+Li's later construction is a separately documented match.
 
 **Later improvements.** Our earlier values remain valid lower bounds and stay in
 this repository. The later values below are from
@@ -331,7 +346,6 @@ comparison is given separately by its source.
 | 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) |
 | 26 | 199 806 | 199 868 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) |
 | 27 | 201 566 | 201 589 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) |
-| 28 | 204 896 | 205 172 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
 | 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
 | 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
 | 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
@@ -362,7 +376,7 @@ equation (3) of the preprint [arXiv:2312.05121](https://arxiv.org/abs/2312.05121
 [arXiv:2607.20359v3](https://arxiv.org/abs/2607.20359) (18 August 2026), and its ingredients
 were in Ozeki's 2016 Siegel theta tables a decade earlier, though not stated as a kissing
 number. Both were obtained here independently, and both are **recovered rather than
-claimed**: they are not in `RESULTS.md`, not counted among the 63, and not presented as
+claimed**: they are not in `RESULTS.md`, not counted among the 65, and not presented as
 results in the paper. They are kept, in
 `[verifications/recovered/](verifications/recovered/)`, because reproducing a published
 count from a method built without reference to it is the strongest validation available.
@@ -381,7 +395,7 @@ machinery — see
 the ceiling remains a result about that construction family. Dimension 12's record
 likewise landed elsewhere while this work was in progress.
 
-**Registered comparison scope.** Dimensions 18, 25–31, 36–39, 41–46, 49–63, 66–71, 73–96.
+**Registered comparison scope.** Dimensions 18, 25–31, 36–39, 41–46, 49–71, 73–96.
 These are the registered construction results compared with their recorded baselines;
 the October doubled-support construction raises 96D above the retained ERS value. The list includes the superseded
 results above. An earlier improvement remains a constructive result after a larger
@@ -490,10 +504,10 @@ exact replay scope and inherited inputs.
 ## Reproducing everything
 
 ```bash
-python run_all.py          # 72 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 74 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 91 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 93 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay
@@ -505,7 +519,7 @@ Or individually, each from its own directory:
 
 | script                                                                        | what it establishes                                            | time   |
 | ----------------------------------------------------------------------------- | -------------------------------------------------------------- | ------ |
-| `audit.py`                                                                    | all 63 claims, mutual and external consistency                 | 30 s   |
+| `audit.py`                                                                    | all 65 claims, mutual and external consistency                 | 30 s   |
 | `common/theta.py`                                                             | E₇ = 126, Λ₂₃ = 93 150, dim 47, dim 71                         | 1 s    |
 | `common/kpoint_lp.py`                                                         | the LP, validated on the Leech and P₄₈                         | 10 s   |
 | `…/dim25-lens-heads/verify.py`                                                | τ(25) ≥ 197 579, every pair in exact arithmetic               | 4 min  |

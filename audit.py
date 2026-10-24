@@ -391,7 +391,7 @@ add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover'
 
 # October code and nearest-coset constructions supersede earlier packages;
 # add() preserves every displaced claim in SUPERSEDED for the history audit.
-for _package in ('dim61-68-95-96-code-layers', 'dim73-88-gamma72-cosets'):
+for _package in ('dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -1942,6 +1942,8 @@ if '--write-results' in sys.argv and not fail:
                                   'enumeration and phase-orbit angles checked; '
                                   '37D adds two latitude layers',
         'dim61-68-95-96-code-layers': 'explicit binary compression, central sections and enlarged support layers; exact code and geometry replay',
+        'dim28-joint-leech-layers': 'joint selection of even Leech heads and auxiliary layers over Li\'s odd blocks; exact arithmetic replay',
+        'dim64-65-signed-parity': '211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners',
         'dim73-88-gamma72-cosets': 'certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products',
         'dim38-leech-large-codimension': 'the Leech cap construction at codimension 14',
         'dim39-ers-constant-weight': 'Edel-Rains-Sloane with the 2026 constant-weight codes',
@@ -1972,8 +1974,8 @@ if '--write-results' in sys.argv and not fail:
                "43D certificate, and raises 45D to 7 655 056. All 41-46D integer angles "
                "and head dimensions replay; complete-family body populations inherit the "
                "documented identities and have not all been freshly enumerated. "
-               "The checkpoint also includes the 7 387-line P48 class family, code "
-               "constructions in 61-63D, 66-68D and 95-96D, and Gamma72 nearest-coset lifts. "
+               "The checkpoint also includes the 205,232-point joint Leech lift in 28D, the 7 387-line P48 class family, code "
+               "constructions in 61-68D and 95-96D, including the new signed-support 64-65D constructions, and Gamma72 nearest-coset lifts. "
                "The comparison column uses common/published.py's pinned published data; "
                "this integration is not a new comprehensive literature audit. The paper "
                "remains the earlier snapshot. See "
@@ -2024,7 +2026,7 @@ if '--write-results' in sys.argv and not fail:
             continue
         seen.append(key)
         ds = sorted(x[0] for x in claims if x[2] == pkg and x[3] == how)
-        rng = ("%d-%d" % (ds[0], ds[-1])) if len(ds) > 2 else ", ".join(map(str, ds))
+        rng = runs(ds)
         out.append("| %s | `%s` | %s |" % (rng, pkg, how))
     out.append("")
     out.append("## Where the previously published figures come from")
@@ -2034,11 +2036,12 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("| range | source |")
     out.append("|---|---|")
-    out.append("| 18, 25-39 | Cohn's pinned table; 36-37 use the comparison recorded 23 October 2026 |")
+    out.append("| 18, 25-39 | Cohn's pinned table; 28 and 36-37 use the October 2026 comparisons |")
     out.append("| 41-46 | Cohn's comparison entries recorded 23 October 2026 |")
     out.append("| 49-63 | 52 416 000 + tau(k): the direct sum P_48 (+) best k-dimensional "
                "lattice. Cohn's table has no entry between 48 and 72. |")
-    out.append("| 66-67 | direct sum of ERS64 and the 2D/3D lattice: 331 737 984 + 6/12 |")
+    out.append("| 64 | Edel-Rains-Sloane 1998: 331 737 984 |")
+    out.append("| 65-67 | direct sum of ERS64 and the 1D/2D/3D lattice: 331 737 984 + 2/6/12 |")
     out.append("| 68-71 | 331 737 984, inherited by monotonicity from dimension 64 "
                "(Edel-Rains-Sloane 1998). No table has any entry for 65-71. |")
     out.append("| 73-95 | 6 218 175 600 + tau(k): the direct sum Gamma_72 (+) best "
@@ -2060,14 +2063,11 @@ if '--write-results' in sys.argv and not fail:
                "`verifications/recovered/dim46-47-p48-cross-sections/` |"
                % (gr(23766960), gr(12309600)))
     out.append("| 48 | 52 416 000 is P_48 itself. |")
-    out.append("| 64-65 | the Gamma_72 cross-sections fall below the dimension-64 floor by "
-               "k = 3. `verifications/closed/dim69-gamma72-three-point/`  (68 and 69 ARE "
-               "claimed, by the k-point LP with the Gram exhibited, not by that bound.) |")
     out.append("| 72 | 6 218 175 600 is Gamma_72 itself. |")
     out.append("| 97 and above | **not evaluated here.** Monotonicity gives at least "
-               "dimension 96's 12 886 999 232, and nothing in this repository claims "
+               "dimension 96's %s, and nothing in this repository claims "
                "anything there. The Edel-Rains-Sloane chain is the thing to evaluate, as it "
-               "was at 96. |")
+               "was at 96. |" % gr(dict((d, v) for d, v, _, _ in claims)[96]))
     out.append("| 9-17, 19 | every published record is checked MAXIMAL -- no sphere can be "
                "added to any of them, and the margin of each is recorded. "
                "`verifications/closed/dim09-19-record-maximality/` |")

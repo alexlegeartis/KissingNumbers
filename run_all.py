@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 72 scripts, including large exact certificate replays
-    python run_all.py --full       # 91 scripts, budget about 10 hours
+    python run_all.py              # 74 scripts, including large exact certificate replays
+    python run_all.py --full       # 93 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -99,7 +99,7 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
-    ("audit: all 63 claims, mutual and external consistency",
+    ("audit: all 65 claims, mutual and external consistency",
      HERE, ['audit.py'], 0.5, True),
     ("common: extremal theta series and one-point distributions",
      os.path.join(HERE, 'common'), ['theta.py'], 0.1, True),
@@ -179,6 +179,10 @@ JOBS = [
      os.path.join(V, 'improved', 'dim49-63-p48-caps'), ['verify_october.py'], 1.0, True),
     ("october-codes: compression, support layers and central sections",
      os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py'], 5.0, True),
+    ("dim 28: joint Leech layers, exact independent replay",
+     os.path.join(V, 'improved', 'dim28-joint-leech-layers'), ['verify.py'], 1.0, True),
+    ("dims 64, 65: signed support augmentation and BCH owner caps",
+     os.path.join(V, 'improved', 'dim64-65-signed-parity'), ['verify.py'], 1.0, True),
     ("october-codes-full: all 2^36 words of the 73-coordinate binary code",
      os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py', '--full-codes'], 7.0, False),
     ("october-cosets: Gamma72 nearest subsets and all repaired/scaled cross products",

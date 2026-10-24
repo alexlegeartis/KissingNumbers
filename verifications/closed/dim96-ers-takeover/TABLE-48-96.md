@@ -16,8 +16,8 @@
 | 61 | 71 310 488 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
 | 62 | 100 371 468 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
 | 63 | 182 407 428 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 64 | 331 737 984 | inherited by monotonicity from dimension 64 (Edel-Rains-Sloane 1998); no table has an entry for dimensions 65-71 |
-| 65 | 331 737 984 | inherited by monotonicity from dimension 64 (Edel-Rains-Sloane 1998); no table has an entry for dimensions 65-71 |
+| 64 | 332 170 112 | **this work** -- 211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners |
+| 65 | 332 238 338 | **this work** -- 211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners |
 | 66 | 338 292 100 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
 | 67 | 351 400 326 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
 | 68 | 371 521 432 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |

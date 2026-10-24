@@ -1,0 +1,21 @@
+{
+  "status": "EXACT VERIFICATION PASSED",
+  "dimension": 28,
+  "points": 205232,
+  "auxiliary": 256,
+  "head_sizes": [
+    524,
+    524,
+    528,
+    524,
+    528,
+    528,
+    524,
+    528
+  ],
+  "explicit_interactions_covered": 52506496,
+  "arithmetic": "unbounded integers in Q(sqrt(2),sqrt(3)); no tolerance",
+  "mathematical_input": "standard kissing property of the generated Golay Leech minimal shell",
+  "sha256": "2917691898d76a26231a6a6bfa39fcf765429a76bc3625e0a312a19cd81491c2",
+  "elapsed_seconds": 12.264
+}

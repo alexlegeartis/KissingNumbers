@@ -128,7 +128,7 @@ COHN = {
 # with the 18 covered repository claims are saved in cohn_20261024.json.
 # The current page has dimensions 1-48 only (unlike the older snapshot).
 OCTOBER_2026 = {
-    36: 484760, 37: 500008,
+    28: 205172, 36: 484760, 37: 500008,
     41: 1324472, 42: 1792386, 43: 2553792,
     44: 4153600, 45: 7380090, 46: 12309600,
 }
@@ -287,7 +287,7 @@ def floor_for(d):
         return (COHN[48] + TAU[d - 48],
                 "direct sum P_48 (+) best %d-dimensional lattice = 52416000 + tau(%d)"
                 % (d - 48, d - 48))
-    if d in (66, 67):
+    if d in (65, 66, 67):
         return OTHER[64] + TAU[d-64], 'direct sum of the ERS64 construction and a %d-dimensional tail' % (d-64)
     if 64 <= d <= 71:
         return (OTHER[64],

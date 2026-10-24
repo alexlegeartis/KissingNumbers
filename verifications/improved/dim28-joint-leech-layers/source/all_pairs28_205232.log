@@ -1,0 +1,11 @@
+file: research/push25_31_20261024/result/D28-205232.txt
+format: Z[sqrt2,sqrt3]
+rows with all-rational coordinates: 193400, other rows: 11832, rows with a coefficient above 1000: 0
+dimension: 28
+points: 205232
+pairs checked: 21059984296 of 21059984296
+max cosine (float, information only): 0.500000000000
+violations: 0 (same-direction pairs among them: 0)
+threads: 6
+time: 320.1 s
+result: PASS

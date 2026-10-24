@@ -5,9 +5,9 @@ according to what is currently true about it. The distinction is the point of th
 a repository that only shows its wins is much less useful to the next person than one that
 shows where the doors are shut.
 
-## [`improved/`](improved/) — all 63 claims, including retained historical records
+## [`improved/`](improved/) — all 65 claims, including retained historical records
 
-Seventeen packages, one per **construction idea** rather than one per dimension, because several
+Nineteen packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -16,7 +16,8 @@ file, and the history of the lower bound in its dimensions.
 | [`dim18-bent-hexagon`](improved/dim18-bent-hexagon/) | 18 | apparently new — Cohn–Li's own ℝ¹⁶ ⊕ ℝ² hexagon over the odd Barnes–Wall lattice, with the three 6-set families taken from bent cosets of RM(1,4) whose pairwise sums are bent but which do not sum to zero; tier B rises from 256 to 960 |
 | [`dim25-lens-heads`](improved/dim25-lens-heads/) | 25 | apparently new — joint work in progress with H. Cohn and B. Lindow; 1016 lens heads (971 from the block family, plus a 45-head maximum independent set over the complete pool), one non-lattice equator point |
 | [`dim26-27-iota-triangles`](improved/dim26-27-iota-triangles/) | 26, 27 | apparently new — joint work in progress with H. Cohn and B. Lindow; the coset triangle on every triangle of directions, the side chosen per head; in dimension 27 the class heads, the free heads and the second cap layer are optimised together rather than in sequence, which is B. Lindow’s contribution and is worth +48 |
-| [`dim28-norm8-frame-layer`](improved/dim28-norm8-frame-layer/) | 28 | apparently new — joint work in progress with H. Cohn and B. Lindow; the head of a deletion-free layer may have norm 8 rather than 6, and at height √2 that is what clears the cap threshold: the 24 vectors 8eᵢ form a Leech frame, each carries all eight directions ±e_k of ℝ⁴, and the axis drops to the 16 half-vectors of the dual 24-cell |
+| [`dim28-joint-leech-layers`](improved/dim28-joint-leech-layers/) | 28 | 205,232 points: joint even-head and auxiliary-layer selection over Li's odd Leech blocks |
+| [`dim28-norm8-frame-layer`](improved/dim28-norm8-frame-layer/) | 28 | retained construction — joint work in progress with H. Cohn and B. Lindow; the head of a deletion-free layer may have norm 8 rather than 6, and at height √2 that is what clears the cap threshold: the 24 vectors 8eᵢ form a Leech frame, each carries all eight directions ±e_k of ℝ⁴, and the axis drops to the 16 half-vectors of the dual 24-cell |
 | [`dim29-30-frame-layer`](improved/dim29-30-frame-layer/) | 29, 30 | apparently new — joint work in progress with H. Cohn and B. Lindow; the dimension-28 norm-8 frame layer at height √2 carried to ℝ²⁴⁺ᵏ, where it is 48 frame vectors on the whole cross-polytope of ℝᵏ — 96k points, 480 and 576 — deleting no equator point. It needs every owner to be type B for the frame, and in the coordinates where the frame is 8eᵢ the type-B lines are exactly the 48 576 octad vectors of the Golay code, which the whole monomial group 2¹²:M₂₄ permutes, so every monomial image of a class is again a clean class |
 | [`dim31-frame-layer`](improved/dim31-frame-layer/) | 31 | apparently new — joint work in progress with H. Cohn and B. Lindow; the norm-8 frame layer at height √2, 672 points deleting no equator point, carried by 42 pairwise disjoint type-B classes holding 10 328 of 10 416 owner lines, with an axis of 118 of 126.  Supersedes the height-√3 layer |
 | [`dim36-37-coxeter-todd`](improved/dim36-37-coxeter-todd/) | 36, 37 | exact short shells and phase-orbit angles; 37D adds two latitude layers |
@@ -29,6 +30,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim70-71-gamma72-cross-sections`](improved/dim70-71-gamma72-cross-sections/) | 70, 71 | apparently new — **the claim most in need of a literature check** |
 | [`dim73-95-gamma72-caps`](improved/dim73-95-gamma72-caps/) | 73–95 | current in 89–94D; other cap counts are retained history |
 | [`dim61-68-95-96-code-layers`](improved/dim61-68-95-96-code-layers/) | 61–63, 66–68, 95–96 | exact code compression, layers and central sections |
+| [`dim64-65-signed-parity`](improved/dim64-65-signed-parity/) | 64-65 | signed support augmentation and BCH owner caps |
 | [`dim73-88-gamma72-cosets`](improved/dim73-88-gamma72-cosets/) | 73–88 | certified nearest subsets and repaired group images |
 
 **All current claims are in this tier.** The older 96D ERS evaluation remains

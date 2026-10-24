@@ -440,11 +440,18 @@ def status_for(d):
     return STATUS.get(d, (None, None))
 
 
-# The October code and nearest-coset constructions replace earlier mechanisms.
+# The October constructions replace earlier mechanisms.
+STATUS[28] = ('heads', 'joint even-head and auxiliary-layer selection over Li\'s odd Leech blocks; '
+              'larger compatible pools and different joint selections remain open '
+              '(dim28-joint-leech-layers/verify.py)')
 for _d in (61, 62, 63, 66, 67, 68, 95, 96):
     STATUS[_d] = ('codes', 'explicit binary compression, central sections and enlarged support layers; '
                   'no unrestricted optimality or construction ceiling is claimed '
                   '(dim61-68-95-96-code-layers/verify.py)')
+for _d in (64, 65):
+    STATUS[_d] = ('codes', 'signed support augmentation with exact shared-check parity certificates; '
+                  'larger compatible support families and larger owner classes remain open '
+                  '(dim64-65-signed-parity/verify.py)')
 for _d in range(73, 89):
     STATUS[_d] = ('cosets', 'nearest Gamma72 subsets and repaired group images; exact geometry and '
                   'the inherited nearestness certificates are replayed '
