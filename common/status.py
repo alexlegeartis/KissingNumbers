@@ -8,7 +8,7 @@ says anything about tau(n) itself.  No matching upper bound is known in any dime
 repository touches, so no claim here is known to be optimal -- "exhausted" means the idea is
 finished, not the dimension.
 
-The point of the column is that 63 dimensions collapse into seven actions:
+The point of the column is that 65 dimensions collapse into seven actions:
 
   cosets      Larger compatible quotient codes or new gluing constructions can improve
               the Coxeter-Todd result; no construction ceiling is claimed.
@@ -67,7 +67,7 @@ def _g72_best():
     best = 0
     d = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'verifications',
                      'improved', 'dim73-95-gamma72-caps', 'data')
-    for fn in ('class_sizes_32000.npy', 'class_sizes_gpu.npy'):
+    for fn in ('class_sizes_32000.npy', 'class_sizes_gpu.npy', 'class_sizes_symmetry.npy'):
         f = os.path.join(d, fn)
         if not os.path.exists(f):
             continue
@@ -452,7 +452,7 @@ for _d in (64, 65):
     STATUS[_d] = ('codes', 'signed support augmentation with exact shared-check parity certificates; '
                   'larger compatible support families and larger owner classes remain open '
                   '(dim64-65-signed-parity/verify.py)')
-for _d in range(73, 89):
+for _d in range(73, 87):
     STATUS[_d] = ('cosets', 'nearest Gamma72 subsets and repaired group images; exact geometry and '
                   'the inherited nearestness certificates are replayed '
                   '(dim73-88-gamma72-cosets/verify.py)')
@@ -462,6 +462,12 @@ for _d in range(49, 61):
     STATUS[_d] = ('classes', 'the strongest prefix of the old 1400-class family or the October '
                   '577-image family over a 7387-line base; larger base classes and different '
                   'disjoint families remain open (dim49-63-p48-caps/verify_october.py)')
+
+
+for _d in (26, 27):
+    STATUS[_d] = ('heads', 'shared midpoint replacements with exact coordinate certificates; '
+                  'larger compatible groups and different tail assignments remain open '
+                  '(dim26-27-midpoint-replacements/verify.py)')
 
 
 if __name__ == '__main__':

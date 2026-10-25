@@ -2,7 +2,7 @@
 \usepackage{amssymb,amsmath,booktabs,longtable}
 \usepackage[hidelinks,
   pdftitle={New lower bounds for kissing numbers in dimensions 18 through 96},
-  pdfauthor={Alexey Kravatskiy}]{hyperref}
+  pdfauthor={Henry Cohn, Alexey Kravatskiy, Ben Lindow}]{hyperref}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
@@ -22,52 +22,60 @@
 
 \title[Kissing numbers in dimensions 18 to 96]
       {New lower bounds for kissing numbers\\in dimensions 18 through 96}
+\author{Henry Cohn}
+\address{Department of Mathematics, Massachusetts Institute of Technology,
+Cambridge, Massachusetts, USA}
+\email{cohn@mit.edu}
 \author{Alexey Kravatskiy}
 \address{MIRIAI (Moscow Independent Research Institute\newline
 of Artificial Intelligence), Moscow, Russia}
 \email{kravatskii.a@miriai.org}
-\date{18 September 2026}
+\author{Ben Lindow}
+\address{Toyota}
+\email{benlindow@gmail.com}
+\date{25 October 2026}
 \subjclass[2020]{Primary 52C17; Secondary 11H31, 11H71, 05B40, 94B25}
 \keywords{Kissing number, spherical code, extremal even unimodular lattice,
 spherical design, Leech lattice, linear programming bound, exact verification}
 
 \raggedbottom
 
-% values.tex is GENERATED from RESULTS.md by mkvalues.py: every claimed bound, once.
+% values.tex is generated from the numerical sources: every claimed bound, once.
 \input{values}
+% current_values.tex is generated from the current numerical record.
+\input{current_values}
 \begin{document}
 
 \begin{abstract}
 The kissing number $K(n)$ is the largest number of unit vectors in $\R^n$ with
-pairwise inner products at most $\tfrac12$. We improve the best known lower bound
-in $53$ dimensions between $18$ and $96$.
+pairwise inner products at most $\tfrac12$. Specialized search systems recently
+improved the eleven-dimensional records established by Ganzhinov and AlphaEvolve
+on EinsteinArena. We therefore asked
+whether commonly available language models and agentic coding tools, including
+Claude Code and OpenAI Codex, could contribute mathematical advances. Surprisingly,
+a single Claude Opus~5 session, after some motivational prompting, produced a new
+dimension-$27$ construction. Scaling the workflow with Claude Code and Codex led to $65$ certified lower-bound
+constructions in dimensions $18$--$96$, with $59$ still state of the art in our
+review. Several exceed records reported by specialized search systems, including
+the Qiushi Engine. On the broader leaderboard, Li reports GPT-6 Astra-assisted
+records in dimensions $19$ and $21$ and later lifted-block records in dimensions
+$28$--$31$. Where our earlier entries have since been superseded, Takhanov--Yun's
+AI-generated constructions improve dimensions $25$--$27$, $29$ and $31$, while
+Lin's AI-assisted code and equator searches supply later records in dimensions
+$32$--$35$ and $37$--$39$.
 
-All but five come from the extremal even unimodular lattices $\Leech$, $\Pff$ and
-$\Gsz$, by two constructions. For cross-sections we apply Venkov's theorem --- the
-minimal shell of such a lattice is a spherical $11$-design --- to monomials in the
-inner products with several fixed minimal vectors, which bounds the number of
-minimal vectors orthogonal to all of them; each bound carries an exact rational
-dual certificate, and in dimensions $46$ and $47$ the same programme returns the
-published values exactly, which validates it. The layered construction puts the
-minimal shell on an equator of $\R^{n}\oplus\R^{k}$ and adjoins lifted copies of
-part of it. Its level, and the height and norm of its head, are all free
-parameters: at height $\sqrt2$ a norm-$8$ head lets a whole frame of $\Leech$
-carry the whole cross-polytope of $\R^{k}$, which is $96k$ points that delete
-nothing. Every dimension from $25$ to $31$ is improved --- $K(25)\ge\Kh{25}$,
-$K(26)\ge\Kh{26}$, $K(27)\ge\Kh{27}$, $K(28)\ge\Kh{28}$, $K(29)\ge\Kh{29}$,
-$K(30)\ge\Kh{30}$, $K(31)\ge\Kh{31}$ --- as are $K(38)\ge\Kh{38}$ and the
-dimensions $49$--$61$, $68$--$71$ and $73$--$95$.
-
-Of the other five, four are the chain of Edel--Rains--Sloane evaluated against
-the current code tables: $K(39)\ge\Kh{39}$, $K(62)\ge\Kh{62}$,
-$K(63)\ge\Kh{63}$ and, overtaking $\Gsz$ at $n=96$, $K(96)\ge\Kh{96}$. The
-fifth is dimension $18$, where a hexagon of tiers
-over the odd Barnes--Wall lattice has three six-set families that may be chosen as
-bent cosets of $\mathrm{RM}(1,4)$; this raises its outer tier from $256$ vectors
-to $960$ and gives $K(18)\ge\Kh{18}$, against $\Kp{18}$.
-
-Every bound is certified in exact arithmetic by a public verification package; no
-floating-point computation decides any of them.
+Most constructions come from the extremal even unimodular lattices
+$\Leech$, $\Pff$ and $\Gsz$, through lattice cross-sections, lifted layers and
+code constructions; the remaining entries include a bent-coset construction and
+evaluations of the Edel--Rains--Sloane chain. Every bound is certified in exact
+arithmetic. The continuing gains suggest that these lower bounds are far from
+saturated, especially in higher dimensions, where we expect substantially more
+progress with additional compute and more extensive prompting of Codex.
+Their open-ended geometry makes
+kissing-number lower bounds a useful training and evaluation benchmark for LLMs
+and agents: every candidate must pass an exact geometric test, while higher
+dimensions provide fresh instances beyond any finite list of memorized
+configurations.
 \end{abstract}
 
 \maketitle
@@ -86,6 +94,32 @@ Exact values are known only for $n=1,2,3,4,8,24$. The cases $n=3$
 dimension the known bounds leave an interval whose two ends move independently.
 This paper concerns the lower end.
 
+\subsection{Motivation and workflow}
+
+Specialized search systems have recently improved the eleven-dimensional records
+established by Ganzhinov and AlphaEvolve on the EinsteinArena platform
+\cite{ganzhinov2025,novikov-etal2025,bianchi-kwon-pappu-zou2026}. This prompted us to
+test commonly available language models and agentic coding tools on the same
+problem. Surprisingly, a single Claude Opus~5 session, after some motivational prompting,
+produced the dimension-$27$ construction described in Appendix~\ref{ss:d27}. We
+then scaled the work with
+Claude Code and OpenAI Codex, using them for exploration, implementation and
+verification while retaining human selection of the mathematical questions and
+exact certification of every stated bound. The resulting constructions improve
+records in several dimensions where specialized systems had recently reported
+advances, including values associated with the Qiushi Engine \cite{yang-etal2026}.
+Independent recent work by Li, using GPT-6 Astra among other tools,
+reports further improvements in dimensions $19$, $21$ and $28$--$31$
+\cite{kli19-21-2026,kli28-31-2026}.
+The lower-bound problem is productive without appearing saturated: an agent can
+find a better construction, while higher dimensions and alternative geometries
+keep creating new targets. We expect substantially more progress in those
+dimensions as compute budgets grow and Codex is prompted more extensively. This
+makes kissing-number lower bounds a useful
+training and evaluation setting for LLMs and agents. Each proposed configuration
+must pass an exact geometric test, and the unbounded range of dimensions makes it
+hard to reduce the task to a finite list of memorized examples.
+
 \subsection{The published tables}\label{ss:tables}
 
 The state of the art is Cohn's \emph{Table of kissing number bounds}
@@ -103,10 +137,10 @@ $331\,737\,984$, inherited by monotonicity of $K$ from the dimension-$64$ entry
 of Edel--Rains--Sloane \cite{edel-rains-sloane1998}. In dimensions $73$--$96$ the
 same construction over $\Gsz$ gives $6\,218\,175\,600+K(n-72)$, which at $n=96$ is
 $6\,218\,175\,600+196\,560$, the second summand being the Leech lattice; here
-$K(n-72)$ is again Cohn's entry, its argument running from $1$ to $24$. Forty-three of
-the fifty-three improvements below lie in these ranges.
+$K(n-72)$ is again Cohn's entry in the historical comparison snapshot, its
+argument running from $1$ to $24$. Many current entries lie in these ranges.
 
-One dimension inside those three ranges is tabulated: at $n=80$ Nebe--Sloane record
+The only dimension inside those three ranges that is tabulated is $n=80$, where the Nebe--Sloane record
 $\Gsz\perp E_8$, whose kissing number $6\,218\,175\,600+240$ is the direct sum
 above. The rule and the table agree there, and that is the only place they meet.
 
@@ -116,7 +150,8 @@ itself it can exceed the value inherited from a smaller one: in dimensions $65$-
 it does, by a little, giving $331\,771\,800$ at $n=68$ (Remark~\ref{rem:ers}). The
 ``previously'' column of Table~\ref{tab:all} is the tabular floor defined here;
 \S\ref{ss:exposure} measures every bound of this paper against the constructive one,
-which is the stronger test and the one on which the dimension-$68$ bound is tightest.
+which is the stronger test; within the cross-section programme, the
+dimension-$68$ calculation is the tightest comparison.
 
 \subsection{Cross-sections and layers}
 
@@ -141,8 +176,8 @@ theorem provides the constraints (\S\ref{sec:cross}).
 
 The second construction places the shell on an equator of $\R^{n}\oplus\R^{k}$
 and adjoins copies of part of it, lifted out of the equatorial subspace above a
-small set of directions in $\R^{k}$ (\S\ref{sec:cap}). Every published record in
-dimensions $25$ through $31$ belongs to this family.
+small set of directions in $\R^{k}$ (\S\ref{sec:cap}). Recent constructions in
+dimensions $25$ through $31$ develop this lattice-layer approach.
 
 A cross-section loses points and gives a bound below dimension $n$; the layered
 construction gains points and gives one above it. The same quantity limits both:
@@ -150,46 +185,24 @@ how many minimal lines of $L$ can be pairwise at small inner product.
 
 \subsection{Results}
 
-Table~\ref{tab:summary} groups the improvements by construction.
-Table~\ref{tab:all} in \S\ref{sec:results} gives one row per dimension.
+Table~\ref{tab:all} gives one row for each of the $59$ bounds that
+remain state of the art in the reviewed sources. It reports the recorded
+comparison, the current value, and the construction family; the appendix gives
+the construction data and proofs, while Section~\ref{ss:verif} describes the
+exact certification. Six
+superseded claims are retained for reproducibility; their descriptions and the
+September manuscript table appear in Appendix~\ref{app:historical}.
 
-\begin{table}[ht]
-\caption{The fifty-three improvements, grouped by construction; $\#$ is the number
-of dimensions in a row. The gain is $K_{\mathrm{here}}-K_{\mathrm{prev}}$ and the
-factor their ratio, computed dimension by dimension, with the factor
-attaining both its extremes at an end of the dimension range, to the two decimals
-shown; the largest gain need not, and in the $28$--$31$ row it is dimension $30$. ``Previously'' is \cite{cohn-table}
-where that table has an entry and otherwise the value of \S\ref{ss:tables}.
-Dimensions $44$ to $47$ are absent, for the reasons given with
-Table~\ref{tab:all}, which gives every dimension.}
-\label{tab:summary}
-\small\setlength{\tabcolsep}{4.5pt}
-\begin{tabular}{llrrrl}
-\toprule
-construction & dimensions & \# & largest gain & factor & where\\
-\midrule
-$\Gsz$ cross-sections & $68$--$71$ & $4$ & $\Kgain{71}$ & $1.09$--$7.85$ & \S\ref{ss:g72}\\
-layers over $\Leech$ & $25$--$27$, $38$ & $4$ & $\Kgain{38}$ & $1.00$--$1.04$ & \S\ref{ss:d25}--\ref{ss:d38}\\
-second layers over $\Leech$ & $28$--$31$ & $4$ & $\Kgain{30}$ & $1.00$--$1.00$ & \S\ref{ss:d293031}\\
-layers over $\Pff$ & $49$--$61$ & $13$ & $\Kgain{61}$ & $1.00$--$1.14$ & \S\ref{ss:big}\\
-the \textsc{ers} chain & $62$, $63$ & $2$ & $\Kgain{63}$ & $1.36$--$2.64$ & \S\ref{ss:d6263}\\
-the \textsc{ers} chain at $96$ & $96$ & $1$ & $\Kgain{96}$ & $2.07$--$2.07$ & \S\ref{ss:d96}\\
-layers over $\Gsz$ & $73$--$95$ & $23$ & $\Kgain{95}$ & $1.00$--$1.04$ & \S\ref{ss:big}\\
-constant-weight codes & $39$ & $1$ & $\Kgain{39}$ & $1.00$--$1.00$ & \S\ref{ss:d39}\\
-the bent-coset hexagon & $18$ & $1$ & $\Kgain{18}$ & $\Kfac{18}$--$\Kfac{18}$ & \S\ref{sec:d18}\\
-\midrule
-total & & $53$ & & &\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-In Table~\ref{tab:summary} the factor is largest where the published table has no
-entry at all. Three rows exceed $2$, and in none of them is the gain a new
-construction: the cross-sections count a classical configuration, and dimensions
-$62$, $63$ and $96$ evaluate a construction of $1998$ against the code tables of
-$2026$. The rows
-with factors near $1$ span the most dimensions, $46$ of the $53$, though the two
-largest absolute gains lie in rows whose factor exceeds $2$.
+Shared midpoint replacements give $\Kcur{26}$ and $\Kcur{27}$ in dimensions
+$26$ and $27$, regaining both records after Takhanov--Yun.
+The current additions are concise by design. The Coxeter--Todd construction gives
+$501\,633$ and $505\,359$ in dimensions $36$ and $37$; the $P_{48n}$ construction
+supplies dimensions $41$--$46$; the code-layer constructions give
+$71\,310\,488$, $100\,371\,468$, $182\,407\,428$, $332\,170\,112$,
+$332\,238\,338$, $338\,292\,100$, $351\,400\,326$ and $371\,521\,432$
+in dimensions $61$--$68$, and $\Kcur{95}$ and $\Kcur{96}$ in dimensions $95$ and $96$;
+the nearest-coset construction supplies dimensions $73$--$86$, and the compact
+cap certificates supply dimensions $87$--$94$.
 
 \subsection{Attribution}\label{ss:new}
 
@@ -207,31 +220,26 @@ claim neither. Cohn's table \cite{cohn-table} records
 $5\,318\,060$ in dimension $46$ and $9\,741\,412$ in dimension $47$.
 \end{sloppypar}
 
-\emph{The fifty-three listed below.} We have found no earlier published claim in dimensions
-$18$, $25$--$31$, $38$, $39$, $49$--$63$, $68$--$71$ or $73$--$96$. The one-point
-distribution of the minimal shell of $\Gsz$ follows from Venkov's theorem in a
-few lines; the bound in dimension $71$, which is that distribution's $n[0]$, may therefore
-already be known to specialists, though we have found no record of it. Dimensions $62$, $63$ and $96$
-carry no new mathematics either. They evaluate the construction of
-\cite{edel-rains-sloane1998} at three lengths where we find no record of its having
-been evaluated: its seven worked examples are dimensions $32$, $36$, $40$, $44$,
-$64$, $80$ and $128$. All three improve whenever the code tables do. The range
-``$32$ to $128$'' of that paper's abstract is the span of those seven examples; it
-tabulates no value by dimension, and dimension $96$ does not appear in it. Its own
-totals depend on the code tables in the same way, and it says in closing that it
-does not expect them to stand as those tables improve.
+\emph{Attribution and status.} The table records the current numerical status,
+while the appendix preserves the earlier constructions and their dates. The
+one-point distribution of the minimal shell of $\Gsz$ follows from Venkov's
+theorem, while dimensions $62$, $63$ and $96$ evaluate the Edel--Rains--Sloane
+construction against current code tables. Its seven worked examples are
+dimensions $32$, $36$, $40$, $44$, $64$, $80$ and $128$; the range ``$32$ to
+$128$'' in that paper's abstract is the span of those examples, and it tabulates
+no value by dimension.
 
 \subsection{Organisation}
 
 \S\ref{sec:related} places this work in the literature. \S\ref{sec:prelim} fixes
-notation and states the two classical inputs. \S\ref{sec:cross} develops the
-cross-section method and proves the bounds in dimensions $68$ through $71$.
-\S\ref{sec:cap} analyses the layered construction and proves the remaining
-bounds, apart from dimensions $39$, $62$, $63$ and $96$, which are code-theoretic and
-are treated in \S\ref{sec:ers}, and dimension $18$, which uses neither lattice and
-is treated in \S\ref{sec:d18}. \S\ref{sec:results} collects the full table.
-\S\ref{sec:remarks} records the constructions we find to be exhausted, the margin
-of the bounds above dimension $48$, one open question and the verification.
+notation and states the two classical inputs. Appendix~\ref{sec:cross} develops
+the cross-section method and proves the $\Gamma_{72}$ bounds; Appendix~\ref{sec:cap}
+gives the common layered construction and the current $P_{48}$ and $\Gamma_{72}$
+families. Appendix~\ref{sec:ers} treats the code-theoretic entries and
+Appendix~\ref{sec:d18} treats dimension $18$. \S\ref{sec:results} collects the
+current state-of-the-art table, while Appendix~\ref{app:historical} retains the
+detailed superseded constructions and the frozen September table. \S\ref{sec:remarks}
+records comparisons, remaining questions and verification.
 
 A public software package \cite{repo} verifies every bound below, to the
 standards set out in \S\ref{ss:verif}; no floating-point computation decides any
@@ -272,55 +280,56 @@ in the dimensions considered here.
 
 \subsection{Constructions from codes}\label{ss:rw-codes}
 
-The entries of \cite{cohn-table} for $32\le n\le47$ come from the
-Edel--Rains--Sloane construction \cite{edel-rains-sloane1998}, with the single
-exception of dimension $43$. That construction assembles a $60^\circ$ code from a
-chain of binary constant-weight codes and is therefore only as strong as the
-code tables it is evaluated with \cite{brouwer}. Write $A(n,d)$ for the largest
-size of a binary code of length $n$ with minimum Hamming distance $d$, and
-$A(n,d,w)$ for the largest size of such a code all of whose words have weight
-$w$. Lower down, Zinoviev and Ericson
-\cite{zinoviev-ericson1999} improved a range of small dimensions by an extension scheme
-built on Steiner systems. Of their values only dimension $13$ still stands; the work
-of \S\ref{ss:rw-algebra} and \S\ref{ss:rw-search} has overtaken the rest.
-Improvements to the underlying code tables propagate directly. Echols
-\cite{echols2026} reports $124$ new constant-weight codes together with the kissing
-numbers they give in dimensions $32$, $33$, $34$ and $37$; \S\ref{ss:d39} is a
-further instance. Sun and Wang \cite{sun-wang2026} obtain dimensions $39$, $43$ and $45$ by an
-antipode construction applied to cross-sections of $\Pff$. The same work
-recomputes the kissing numbers of twelve Conway--Sloane cross-sections, including
-the two recorded in \S\ref{ss:new}.
+The Edel--Rains--Sloane construction \cite{edel-rains-sloane1998} assembles a
+$60^\circ$ code from a chain of binary constant-weight codes. Write $A(n,d)$ for
+the largest size of a binary code of length $n$ and minimum distance $d$, and
+$A(n,d,w)$ for the corresponding constant-weight quantity. Improved code tables
+therefore give improved kissing configurations without changing the construction.
+Echols \cite{echols2026} supplies $124$ new constant-weight codes. Lin
+\cite{lin32-2026,lin33-2026} gives explicit certificates for $352\,320$ points
+in dimension $32$, and $370\,240$, $390\,980$, $415\,308$, $499\,816$,
+$605\,322$ and $768\,916$ in dimensions $33$, $34$, $35$, $37$, $38$ and
+$39$. Olivier \cite{olivier2026} subsequently raises the dimension-$37$ value
+to $500\,008$. Sun and Wang \cite{sun-wang2026}, and Dorofeev, Sun and Wang
+\cite{dorofeev-sun-wang2026}, develop cross-section and antipode constructions
+that provide the comparison values in dimensions $40$--$46$. Yang et al.
+\cite{yang-etal2026} report a broad autonomous-search programme covering
+$25$, $27$, $32$--$39$, $43$, $45$ and $49$--$55$.
 
 \subsection{Algebraic constructions}\label{ss:rw-algebra}
 
-Ganzhinov \cite{ganzhinov2025} constructs highly symmetric line systems from twisted
-spherical functions of finite groups and obtains kissing configurations of
-$510$, $592$ and $1932$ points in dimensions $10$, $11$ and $14$. The
-dimension-$14$ configuration provides the directions used in \S\ref{ss:d38}. Cohn
-and Li \cite{cohn-li2024} improve dimensions $17$ through $21$ by reversing the
-parity of the sign count in a Steiner-system construction, which admits further
-vectors indexed by a subcode of a punctured Golay code. Ho \cite{ho2026} improves
-their dimension-$19$ value to $11\,948$ by exhibiting a nonlinear subcode of that
-kind. \S\ref{ss:obstructions} analyses both. In dimensions $25$ through $31$ the
-predecessor is Kallal, Kan and Wang \cite{kallal-kan-wang2017}, whose configurations
-belong to the family of \S\ref{sec:cap} and were superseded by those of Ma et
-al.\ (\S\ref{ss:rw-search}).
+Ganzhinov \cite{ganzhinov2025} constructs highly symmetric line systems from
+twisted spherical functions of finite groups and obtains $510$, $592$ and $1932$
+points in dimensions $10$, $11$ and $14$. The dimension-$14$ configuration
+provides the directions used in Appendix~\ref{ss:d38}. Cohn and Li
+\cite{cohn-li2024} improve dimensions $17$ through $21$ using odd-sign
+configurations and punctured Golay codes. Ho \cite{ho2026} raises the
+dimension-$19$ value to $11\,948$, and Li \cite{kli19-21-2026} subsequently
+raises the public lower bounds to $12\,460$ in dimension $19$ and $31\,560$ in
+dimension $21$. The former uses a hyperplane section and reshaped projected
+sign vectors; the latter uses Golay sign vectors with unequal coordinate
+magnitudes.
+Zinoviev and Ericson \cite{zinoviev-ericson1999} give an earlier small-dimension
+construction based on designs. For dimensions $25$--$31$, Kallal, Kan and Wang
+\cite{kallal-kan-wang2017} and Ma et al. \cite{ma-etal2025} provide earlier
+Leech-layer constructions.
+Takhanov and Yun \cite{takhanov-yun2026} later improve $25$--$27$, $29$ and
+$31$, while Li \cite{kli28-31-2026} gives the larger lifted-block records in
+$28$--$31$.
 
 \subsection{Numerical and machine-assisted search}\label{ss:rw-search}
 
 A separate line of work obtains configurations by numerical optimisation, and
 several of the values improved on below come from it.
 
-Ma et al.\ \cite{ma-etal2025} apply game-theoretic reinforcement learning and hold
-dimensions $25$ through $31$ in the published table. Their configurations are the
-input to the template theorems of \S\ref{ss:d25} and \S\ref{ss:d27}, which
-construct no new spherical code; the bounds of this paper in dimensions $25$ to
-$27$ come from the head configurations of \S\ref{ss:d25} and \S\ref{ss:d2627}. Takhanov, Assylbekov and Yun
-\cite{takhanov-assylbekov-yun2026} obtain $K(12)\ge841$ by energy minimisation initialised from
-an analysis of the structure common to the known $840$-point arrangements.
+Ma et al.\ \cite{ma-etal2025} supply important predecessor configurations in
+dimensions $25$--$31$. Certificate-driven improvements by Takhanov and Yun
+and by Li are described above. Takhanov, Assylbekov and Yun
+\cite{takhanov-assylbekov-yun2026} obtain $K(12)\ge841$ by energy minimisation
+initialised from an analysis of the known $840$-point arrangements.
 
-Evolutionary search over programs driven by large language models has improved a
-single dimension. AlphaEvolve \cite{novikov-etal2025} raised $K(11)$ from $592$ to
+Early evolutionary search over programs driven by large language models
+improved dimension $11$. AlphaEvolve \cite{novikov-etal2025} raised $K(11)$ from $592$ to
 $593$; agents on the EinsteinArena platform \cite{bianchi-kwon-pappu-zou2026} later
 raised it to $604$. Georgiev, G\'omez-Serrano, Tao and Wagner
 \cite{georgiev-gomezserrano-tao-wagner2025} applied AlphaEvolve to $67$ problems
@@ -331,7 +340,7 @@ further improvement; dimension $12$ was not attempted. GigaEvo
 lower bound $840$ and reached $840$.
 
 The same means have been applied to a related problem. In
-\cite{kravatskiy-khrulkov-oseledets2026}, by the present author with Khrulkov and
+\cite{kravatskiy-khrulkov-oseledets2026}, by Kravatskiy with Khrulkov and
 Oseledets, the object of study is the spherical code, or Tammes, problem: for fixed
 $N$ and $d$, arrange $N$ points on $S^{d-1}$ so as to minimise the maximum pairwise
 inner product. That work samples $90$ configurations at random from the catalogue of best known
@@ -340,31 +349,33 @@ through $16$. It lowers the maximum inner product for the majority of them, by u
 to $2.4\%$ in relative terms, and reports no kissing number result; the question
 was not asked there.
 
+Yang et al.\ \cite{yang-etal2026} use the Qiushi Engine research system for
+coordinated shell motion, support-code changes, signed-vector replacements,
+second-shell equators, lattice lifts and moment certificates. Their $36$-, $43$-
+and $45$-dimensional values supply comparisons for our current constructions.
+
+The recent sources also disclose AI assistance. Li \cite{kli19-21-2026} lists
+GPT-6 Astra Pro in ChatGPT, Claude Opus~5.5 and Claude Fable~5.1; Takhanov and
+Yun \cite{takhanov-yun2026} state that all their new constructions were generated
+with Claude Code using Claude Opus~5.5 and GPT-6 Astra. They describe using these
+systems to rotate additional coordinates and fit more points in dimensions $29$
+and $31$, and to improve the existing records in dimensions $25$--$27$. Lin's
+AI-assisted code and equator searches supply the later records in dimensions
+$32$--$35$ and $37$--$39$; the public archives give the exact search and
+certificate details but do not identify a model. Olivier
+\cite{olivier2026} reports using Claude Opus~5.5 in Claude Code for search,
+computations and review. These are the authors' reported workflows; results are
+attributed to their human authors.
+
 \subsection{Scope of the present work}\label{ss:rw-position}
 
-Numerical search has been effective where a configuration is small enough to be
-stored as a list of coordinates and refined numerically; recent work of this kind
-has concentrated on dimension $11$. The configurations treated here contain between
-$1.98\times10^5$ and $1.29\times10^{10}$ points, apart from dimension $18$'s $8\,358$. A lattice together with a few
-integer parameters specifies each of them, apart from the four code-theoretic
-ones, which a chain of codes specifies. They lie beyond the reach of a
-coordinate search. We obtain them from the structure of three extremal lattices,
-apart from dimension $18$ (\S\ref{sec:d18}), which uses the odd Barnes--Wall lattice.
-
-Forty-three of the fifty-three dimensions below lie in ranges in which the published
-tables have one entry between them, at $n=80$ (\S\ref{ss:tables}). The improvements there measure the extent
-to which those ranges have not previously been examined.
-
-Below dimension $25$ the methods of this paper yield only dimension $18$
-(\S\ref{sec:d18}). Every published record in dimensions $9$ through $19$ is
-maximal, in the sense that no further point may be added to it, as are the
-cross-sections $\Lambda_{21}$, $\Lambda_{22}$ and $\Lambda_{23}$; maximality
-forbids extending a configuration, not replacing it, and dimension $18$ is
-replaced. The constant-weight-code construction of \cite{cohn-li2024} is at its
-exact ceiling in dimensions $18$, $20$ and $21$, and dimension $19$ is closed at
-the value of Ho (\S\ref{ss:obstructions}) --- but in dimension $18$ that is not the
-construction holding the record, and the one that does is improved here.
-
+This paper reports explicit lower bounds from lattice sections, lifted layers, code
+constructions and nearest cosets. The main table uses the current results and the
+dated comparison sources above; the appendix retains earlier constructions with
+their historical status. The new configurations range from $8\,358$ points in
+dimension $18$ to more than thirteen billion in dimension $96$. Their algebraic
+and combinatorial descriptions permit exact verification without storing every
+pair of points.
 
 \section{Preliminaries}\label{sec:prelim}
 
@@ -441,6 +452,226 @@ and $|v\mp w|^2=0$ exactly when $w=\pm v$, which gives $\ip{v}{w}=\pm\mu$.
 
 Thus for $\Pff$ the inner products lie in $\{0,\pm1,\pm2,\pm3\}\cup\{\pm6\}$, and
 for $\Gsz$ in $\{0,\pm1,\pm2,\pm3,\pm4\}\cup\{\pm8\}$.
+
+\section{Current results}
+
+Table~\ref{tab:all} gives the results dimension by dimension. The ``recorded
+comparison'' is the baseline available when the corresponding construction was
+recorded: we use Cohn's table when it contains that dimension, and otherwise the
+dated comparison floor defined in Section~\ref{ss:tables}, obtained from a
+published configuration by an orthogonal direct sum or monotonicity. The
+``construction'' column identifies the mathematical recipe that produces the
+entry in the ``this work'' column (for example, a lattice layer, a code layer or
+a cross-section) and points to its full definition and proof in the appendix.
+The related-work discussion records later improvements to those baselines.
+
+\section{The results}\label{sec:results}
+
+The table below is the current state-of-the-art summary. It records the current
+value by dimension and names the construction family; full construction
+descriptions and proofs are in the appendix.
+
+\input{current_table}
+% The table is generated in current_table.tex; this marker lets the source-only
+% checkers resolve the label without duplicating the generated rows.
+% \label{tab:all}
+
+The eight claims that have since been superseded remain useful as a
+record of the search and are documented in Appendix~\ref{app:historical}.
+
+\section{Remarks}\label{sec:remarks}
+
+\subsection{The margin above dimension 48}\label{ss:exposure}
+
+Among the dimensions at issue the tables have a single entry, at $n=80$, where it
+agrees with the direct sum of \S\ref{ss:tables}. Everywhere else above dimension
+$48$ the value a bound has to exceed is not a tabulated one but the largest a known
+construction gives. That construction
+is Edel--Rains--Sloane, evaluated in the dimension itself rather than inherited
+from a smaller one (Remark~\ref{rem:ers}). We therefore ran the chain of
+\S\ref{sec:ers} in every dimension of Table~\ref{tab:all} above $48$, with the
+best published code at each level, and asked of each bound how large the
+level-one constant-weight code $A(n,n_1,n_1)$ would have to be for the chain to
+overtake it. Divided by the best code available at those parameters, that is the
+factor by which the published constructions would have to be beaten.
+
+No bound of Table~\ref{tab:all} falls below the chain, and the factors are far
+from uniform. \emph{Dimension $68$ is the
+most exposed bound in this paper}: its margin over the chain is $8.9\%$, its
+level-one weight is $16$, and $16$ is the one weight at which Edel--Rains--Sloane
+built a strong code of their own, giving $A(64,16,16)\ge30\,828$. A code with
+$A(68,16,16)\ge45\,235$ would overturn Theorem~\ref{thm:6869} in that dimension,
+a factor $1.47$; for calibration, $30\,828$ beats the grid map of
+\S\ref{ss:d6263} at the same parameters by $1.88$. No $A(68,16,16)$ has been
+published, so the exposure is to a better code and not to the literature as it
+stands. The next smallest factor is $4.06$, in dimension $95$; every other
+dimension exceeds $5$. Dimensions $62$, $63$ and $96$ are the chain, so the question
+does not arise there.
+
+\subsection{The maximum independent set in \texorpdfstring{$\Gamma_\gamma(\Leech)$}{Gamma(Leech)}}\label{ss:class}
+
+Section~\ref{sec:cap} depends on the largest number of minimal lines of $\Leech$
+that are pairwise at $|\cos|\le\tfrac14$. The record is $248$ lines
+\cite{ma-etal2025}, after $240$ \cite{cohn-jiao-kumar-torquato2011} and $244$
+\cite{kallal-kan-wang2017}; the best upper bound is $\lfloor 4680/11\rfloor=425$
+\cite[\S7]{cohn-jiao-kumar-torquato2011}. By \eqref{eq:count} one further line in
+every independent set contributes $2\sum_i(|Z_i|-1)$, so raising the record by a
+single line gives $+2$, $+8$, $+16$, $+32$, $+52$, $+96$ and $+168$ in dimensions
+$25,\dots,31$ respectively.
+
+The Delsarte linear programme, the Lov\'asz theta function and the Hoffman ratio
+bound on the association scheme whose relations on the $98\,280$ lines are
+$|\ip{u}{u'}|\in\{0,1,2\}$ all give $4680/11$, so no two-point relaxation
+improves it. The three-point semidefinite bound of Bachoc and
+Vallentin \cite{bachoc-vallentin2008} does not improve it at any truncation
+computed, the positivity constraints never being active. Closing the gap requires a four-point relaxation
+or an argument using the lattice structure. B.~Lindow has since obtained $418$
+for lines of minimal vectors of $\Leech$, by a three-point bound over the
+Terwilliger algebra of the automorphism group of $\Leech$ with an exact rational
+dual (private communication, September 2026); for an arbitrary line system in
+$\R^{24}$ at $|\cos|\le\tfrac14$ the bound $425$ stands.
+
+\subsection{Verification}\label{ss:verif}
+
+The package \cite{repo} produces and checks every number above. It applies the
+following standards.
+
+\begin{itemize}
+\item \emph{No floating-point arithmetic decides any bound of
+      Table~\ref{tab:all}.} Every linear programming bound carries an exact
+      rational dual certificate (Lemma~\ref{lem:dual}); the solver is used only
+      to propose a dual vector. What decides the remaining bounds is an integer
+      comparison. Two scans are too large to run in arbitrary-precision
+      integers --- the axis layer of dimension $95$ compares $93\,150^2$ inner
+      products --- and are run in floating point on integer operands bounded so
+      that every product and every partial sum is exactly representable. The
+      bound is asserted before the scan; where it does not hold, the operand is
+      split into two limbs at bit $31$ and recombined exactly.
+\item \emph{Every Gram matrix is proved realizable before use}, by
+      Lemma~\ref{lem:realize} or by exhibiting a $k$-tuple that carries it. The
+      ones neither licensed nor exhibited are recorded and discarded.
+\item \emph{Configurations small enough to write down are checked in
+      coordinates.} The dimension-$27$ configuration is verified by two
+      deliberately different arguments, one of which compares all
+      $\binom{200540}{2}=20\,108\,045\,530$ pairs; that configuration is now
+      superseded (\S\ref{ss:d2627}), and the two configurations of \S\ref{ss:d2627},
+      in dimensions $26$ and $27$, are verified in exact arithmetic, the
+      head--axis inequalities in $\mathbb{Q}(\sqrt2,\sqrt3)$. The four of
+      \S\ref{ss:d293031} are verified the same way, in
+      $\mathbb{Q}(\sqrt2,\sqrt3)$, and each of those checks includes that
+      the four families of points have pairwise distinct
+      $(|x|^{2},|y|^{2})$ --- a statement about the point set rather than about
+      any angle, and the one the count rests on.
+\item \emph{The cross-section method is validated against every independently
+      known value} (Table~\ref{tab:validate}). The inequalities and the counting
+      formula of the layered construction are re-derived from first principles
+      in exact rational arithmetic, independently of the code that applies them.
+\item \emph{Large intermediate data is regenerated by deterministic scripts}
+      that re-verify every property the claims depend on.
+\end{itemize}
+
+\appendix
+% Full construction descriptions and proofs follow in the appendix.
+\section{Current construction descriptions}\label{app:current}
+
+The following sections give the construction descriptions and proofs behind the
+summary table. They are separated from the main results so that the main text can
+be read as a dimension-by-dimension account of the current bounds.
+
+\subsection{Coxeter--Todd and $P_{48n}$ entries}\label{ss:d3637}
+
+The dimension-$36$ and $37$ constructions use three Coxeter--Todd quotient
+codes. Exact short-shell enumeration and phase-orbit angle checks certify
+$501\,633$ and $505\,359$, with two latitude layers in dimension $37$.
+
+\subsection{$P_{48n}$ heads}\label{ss:p48current}
+
+The dimensions $41$--$46$ use independently normalized $P_{48n}$ body families
+with rational heads. The package replays all integer angles and exact head ranks;
+the complete-family populations are inherited from the documented identities.
+
+\subsection{Code layers and nearest cosets}\label{ss:codecurrent}\label{ss:cosetscurrent}
+
+The code-layer packages give the current entries in dimensions $61$--$68$ and
+$95$--$96$; dimensions $64$ and $65$ use the signed-support parity
+augmentation. The nearest-coset and cap packages give the entries in dimensions
+$73$--$94$ by exact group actions, repaired nearest subsets and integer checks.
+
+In dimensions $95$ and $96$, the current support certificate has
+$24\,561$ subsets of size $24$ in a $24\times4$ coordinate array. Each occupies
+at most twelve rows, and every distinct pair meets in at most twelve cells,
+as checked directly for all $301\,609\,080$ pairs. The search allows different
+pairings in different rows, extending the uniform doubled-QR construction.
+Place a binary $[24,14,6]$ sign code, scaled by two, on each support.
+These points have squared norm $96$ and mutual inner products at most $48$.
+They are compatible with the existing dense layer and with the transversal
+layer, since a transversal takes only one cell from each row. The lower sparse
+layer has six entries of magnitude four, giving cross products at most
+$6\cdot4\cdot2=48$. On the central section
+$x_0+\cdots+x_7=0$, reorder signs separately on each support.
+Intersection sizes $j=0,2,4,6,8$ retain respectively
+$16384$, $8192$, $6144$, $5120$ and $8960$ sign words; the last case uses a weight-eight
+dual word. These exact populations give $K(95)\ge\Kcur{95}$ and
+$K(96)\ge\Kcur{96}$. The independent certificate replay is
+\texttt{mixed\_pair\_certificate.py}.
+
+In dimension $73$, complete the half-coset to $6\,272$ representatives
+of squared norm $22$, giving a lattice with $6\,218\,188\,144$ contacts.
+Retain its two layers $(x/2,\pm\sqrt{5/2})$. Select a class $C$ of 1731
+minimal lines $u$ with $|\ip{u}{v}|\le2$ inside $C$ and
+$|\ip{u}{x}|\le4$ against every coset representative. Replace each equatorial
+pair $\pm u$ by the four points $(\pm\sqrt{3}u/2,\pm\sqrt{2})$.
+Their squared norms are eight. Within a direction the largest product is
+four, between distinct directions it is at most $7/2$, and against the
+coset layers it is at most $\sqrt{3}+\sqrt{5}<4$. Retained equator products
+are at most $2\sqrt{3}<4$. This adds $2|C|$ contacts and proves
+$K(73)\ge\Kcur{73}$. Integer coordinates and all mixed products are checked
+by the package's \texttt{verify73.py}. The construction is non-lattice:
+two retained equatorial vectors sum to a removed $u$, and two caps sum to
+$\sqrt{3}u$, which cannot both belong to a discrete lattice.
+
+\subsection{Shared midpoint replacements in dimensions 26 and 27}\label{ss:d2627current}
+
+Scale the Leech minimal shell to squared norm $32$, so the kissing threshold
+is $16$. If $u,v$ are minimal vectors with $\ip{u}{v}=16$, their midpoint
+$h=(u+v)/2$ has squared norm $24$. Adjoin a tail $t$ of squared norm $8$.
+For every retained equatorial point $z$ distinct from both endpoints,
+\[
+  \ip{h}{z}=\tfrac12(\ip{u}{z}+\ip{v}{z})\le16.
+\]
+Thus several midpoint heads can share the deletion of their endpoints.
+
+For a local replacement, take mutually orthogonal $r,p,q$ of squared norm
+$16$, with $r\pm p,r\pm q$ in the Leech shell, and orthogonal tail vectors
+$a,b$ of squared norm $8$. Delete those four endpoints and insert
+\[
+ \bigl(r\pm(p+q)/2,\ \pm a\bigr),\qquad
+ \bigl(r\pm(p-q)/2,\ \pm b\bigr),
+\]
+with independent signs. These eight points form a translated cross-polytope
+and meet the threshold, gaining four points from four deletions. Compatible
+groups of these replacements give $8704$ inserted points after $4352$
+deletions in dimension $26$, and $16128$ after $8064$ deletions in dimension
+$27$. Add a pure-tail hexagon or cuboctahedron, respectively. Each pure tail
+has squared norm $32$, so Cauchy--Schwarz bounds its product with an inserted
+tail by $\sqrt{32\cdot8}=16$. Consequently
+\[
+ K(26)\ge\Kcur{26}=196560-4352+8704+6,\qquad
+ K(27)\ge\Kcur{27}=196560-8064+16128+12.
+\]
+These exceed the $199868$ and $201589$ benchmarks of Takhanov--Yun
+\cite{takhanov-yun2026} by $1050$ and $3047$. The portable package
+\texttt{dim26-27-midpoint-replacements} rebuilds the Golay Leech shell,
+verifies deleted-coordinate membership and every midpoint identity, and
+checks all inserted/inserted products with integer arithmetic. It uses no
+search caches. Retained equator pairs use the standard Leech kissing property;
+the convexity and pure-tail bounds above cover the remaining pairs.
+No optimum for this construction family is asserted.
+
+\subsection{The current 28-dimensional lift}\label{ss:d28current}
+
+The joint Leech-layer package selects even heads and auxiliary layers over the
+odd Leech blocks and certifies $K(28)\ge\Kcur{28}$ in exact arithmetic.
 
 \section{Cross-sections of extremal lattices}\label{sec:cross}
 
@@ -638,7 +869,7 @@ at the cell $c$ is therefore at least the minimum, hence positive. Take $u_k=v$.
 Lemma~\ref{lem:realize} is the weaker of the two routes to realizability. A sweep
 over all Gram matrices produces larger apparent bounds whose bordering cells have
 minimum $0$, about which the lemma says nothing; among three-point Gram matrices
-in dimension $69$ it licenses only the pairwise orthogonal one, worth
+in dimension $69$ it licenses only the pairwise orthogonal one, yielding
 $149\,415\,783$, below the value $331\,737\,984$ of \S\ref{ss:tables}.
 Realizability is, however, a property of the lattice and not of the programme.
 Where the lattice is available in coordinates a $k$-tuple with a prescribed Gram
@@ -649,7 +880,7 @@ Which Gram matrix to exhibit is then guided by a measurement. Across the
 Gram matrices tried here the bound falls as $\det G$ rises --- at $k=3$ from
 $627\,822\,180$ at $\det G=256$ through $527\,597\,644$ at $352$ to
 $149\,415\,783$ at $512$. At a fixed determinant the
-presentation costs nothing: at $k=3$ the sixteen realizable Gram matrices of determinant
+presentation makes no difference: at $k=3$ the sixteen realizable Gram matrices of determinant
 $256$ are sixteen bases of one scaled $A_3$, and all sixteen certify $627\,822\,180$. Taking the
 determinant as low as it will go, $u_1,\dots,u_k$ generate a sublattice $M$ of rank $k$ with
 $\min M\ge\mu$ and $\det M=\det G$, so Hermite's inequality gives
@@ -784,6 +1015,11 @@ exhibited.
 $K(69)\ge\Kh{69}$ and $K(68)\ge\Kh{68}$.
 \end{theorem}
 
+The $68$-dimensional value in this theorem is retained as a cross-section
+validation. The current state-of-the-art entry is the code-layer value
+$K(68)\ge\Kcur{68}$ in Table~\ref{tab:all}; the proof below concerns the
+cross-section programme and its independently checked lower value.
+
 \begin{proof}[Proof sketch]
 For $k=3$ take the Gram matrix with diagonal $8$ and off-diagonal entries
 $-4,-4,0$, that of $A_3$ scaled by $4$, of determinant $256$. For $k=4$ take that
@@ -813,8 +1049,8 @@ The chain ends at $k=4$. The certified values fall by factors $0.480$, $0.502$
 and $0.575$ as $k$ runs from $1$ to $4$; reaching $331\,737\,984$ at $k=5$ would
 need a factor $0.92$, and the Hermite floor there is $4096$. We have not computed
 $k=5$, where the cell enumeration is $11^k$; the trend is evidence that it would
-fall short, not a proof. Dimensions $65$ through $67$ keep their inherited values
-here, and we claim nothing in them.
+fall short, not a proof. Dimensions $65$ through $67$ are left to the current
+code-layer packages; this cross-section calculation makes no claim in them.
 
 \begin{remark}[the Edel--Rains--Sloane value]\label{rem:ers}
 No table has an entry in dimensions $65$--$71$, so the value to improve on is
@@ -1124,541 +1360,6 @@ $26$ moves with it. Nor have the columns $k=4$ to $k=7$ any slack;
 $28$ through $31$ move with that. Every column of the table is therefore beaten,
 though four of them only by leaving the family the table describes.
 
-\subsection{Dimension 25: the choice of level}\label{ss:d25}
-
-\begin{theorem}\label{thm:25}
-$K(25)\ge197\,058$.
-\end{theorem}
-
-\begin{proof}
-Take $L=\Leech$, $k=1$, one independent set $C$ of $248$ lines, and
-$Z=W=\{+1,-1\}\subset S^{0}$. The published configurations use $t=\tfrac23$, at
-which $b=1/\sqrt3=0.577\ldots>\tfrac12$; then \eqref{eq:c6} fails for the two
-poles, which are discarded.
-
-The level $t=\tfrac23$ is not forced here. Constraint \eqref{eq:tmin} bounds it
-from below and \eqref{eq:c4} from above: for two antipodal directions the latter
-requires $-1\le(\tfrac12-t)/(1-t)$, that is $t\le\tfrac34$. At $k=1$
-the sphere $S^0$ has two points and admits no triple; the whole range
-$\tfrac23\le t\le\tfrac34$ is therefore admissible.
-
-At $t=\tfrac34$ constraint \eqref{eq:c3} becomes $\tfrac34\gamma+\tfrac14
-\le\tfrac12$, i.e.\ $\gamma\le\tfrac13$; and for $\Leech$ the thresholds
-$\gamma=\tfrac14$ and $\gamma=\tfrac13$ define the same condition, since
-Lemma~\ref{lem:ips} allows only $\ip{u}{u'}/\mu\in\{0,\pm\tfrac14,\pm\tfrac12\}$
-and no admissible value lies strictly between $\tfrac14$ and $\tfrac13$. The
-independent set is therefore unchanged at $248$ lines. At $t=\tfrac34$ we have
-$b=\tfrac12$, so \eqref{eq:c6} holds and both poles are admissible. Finally
-\eqref{eq:count} gives
-$196\,560+2\cdot248\cdot(2-1)+2=197\,058$.
-\end{proof}
-
-Three constraints meet at $t=\tfrac34$. The bound $t\ge\tfrac23$ keeps the
-independent set at $248$ lines, the bound $t\le\tfrac34$ keeps the antipodal pair
-admissible, and the poles require $t\ge\tfrac34$. The argument does not repeat for
-$k\ge2$: triples exist there and contribute twice as much as pairs, which makes
-$t=\tfrac23$ optimal; the poles already attain $K(k)$ at that level.
-
-The gain is $+2$ over any independent set used in its place. The level argument
-uses the $248$-line independent set of \cite{ma-etal2025} unchanged; one of
-$249$ lines would give $197\,060$ by the same argument.
-
-\emph{Superseded, 2026-09-07.} The dimension-$25$ entry of the repository
-no longer rests on this level argument. In joint work in progress with H.~Cohn
-and B.~Lindow the caps are rebuilt from \emph{heads}: points $x$ of squared
-length $3$ (norm-$4$ units) lying in the lens of a minimal vector, each removing
-exactly its owner from the equator. Two compatible heads never share a removal,
-so the count is exact: the equator loses its $H$ owners and gains the $2H$ points
-$\pm x$, the two poles are admissible, and one further equator point
-$-\tfrac{2}{\sqrt6}v$ that is not a lattice vector is added, giving
-$196\,560-H+1+2H+2=196\,560+H+3$.
-
-The heads come in blocks. Fix a vector $v\in\Leech$ of norm $6$, take the $552$
-minimal vectors $z$ with $\ip{z}{v}=-3$, and push each of them towards $v$ by
-$t_-=(3-\sqrt3)/6$. Every pair of heads within one block then meets the bound
-$\ip{x}{x'}=1$ exactly, so a block is a tight packing. Its size is optimal: a
-block projects to a code of pairwise cosine $\tfrac15$ in $\R^{23}$, and the
-largest such code has $552$ points. Searched over the whole norm-$6$
-shell of $16\,773\,120$ vectors, a union of blocks reaches $971$ heads --- three
-vectors $v$ with pairwise inner products $-4$, $0$ and $-3$ --- and a fourth
-vector contributes exactly one head more. Every remaining minimal vector that
-can own a head over that core contributes one candidate, the point of largest
-norm in its own polytope. That pool is complete at $1\,188$ heads over
-$1\,188$ distinct owners. The supplement is an independent set in the conflict
-graph the pool carries, found by maximising over that graph rather than by
-growing the set head by head. The shipped configuration takes $45$ of them, so
-$H=1\,016$ and
-$K(25)\ge\Kh{25}$, verified in exact arithmetic by the package
-\texttt{dim25-lens-heads}; its ceiling is in \S\ref{ss:obstructions}. The level
-argument above remains the template's own bound and is kept as such.
-
-\subsection{Dimension 27: partitioning the directions}\label{ss:d27}
-
-\begin{theorem}\label{thm:27}
-$K(27)\ge200\,540$.
-\end{theorem}
-
-\begin{proof}
-Take $L=\Leech$, $k=3$ and $t=\tfrac23$. Take $Z$ to be the $A_3$ root system
-normalised to the sphere, the $12$ vertices of a cuboctahedron and a kissing
-configuration of $\R^3$, and take $W$ to be a rotated copy of it satisfying the
-$30^\circ$ separation of \eqref{eq:c6}, so that $|W|=K(3)=12$. By
-Corollary~\ref{cor:pairs} each independent set may carry a zero-sum triple. The
-$12$ vertices admit a partition into four zero-sum triples; four independent sets
-therefore suffice, and \eqref{eq:count} gives
-\[
-  196\,560+2\cdot 4\cdot 248\cdot(3-1)+12
-  \;=\;196\,560+3\,968+12\;=\;200\,540 . \qedhere
-\]
-\end{proof}
-
-The choice of direction set is constrained, and not merely convenient. The
-$12$-point kissing configuration of $\R^3$ is not unique; two of them are classical,
-the cuboctahedron and the icosahedron. Icosahedral vertices meet at
-$\ip{z}{z'}\in\{\pm1,\pm1/\sqrt5\}$, so
-no two of them that are not antipodal reach the $-\tfrac12$ that
-Corollary~\ref{cor:pairs} demands: the icosahedron admits no zero-sum triple at
-all, and over it the construction would be reduced to six antipodal pairs and
-$199\,548$ points. The cuboctahedron has $24$ pairs at $-\tfrac12$ and admits
-exactly two partitions into four triples.
-
-The published configuration \cite{ma-etal2025} groups its twelve directions into
-parts of sizes $3,3,2,2,2$. That partition uses five independent sets and deletes
-$5\times496=2\,480$ vectors from the equator; four triples use four and delete
-$1\,984$, returning $496$ vectors. The construction adds no new spherical code:
-the Leech vectors, the twelve directions, the twelve poles and four of the five
-independent sets are those of the published configuration; only the
-assignment of independent sets to directions differs. A script in \cite{repo}
-regenerates the configuration from the dimension-$27$ block of \cite{cohn-data}.
-B.~Lindow found the same construction independently (private communication
-through H.~Cohn, September 2026).
-
-The family admits nothing further in this dimension. By \eqref{eq:count} the gain
-is $2\sum_i|C_i|(|Z_i|-1)$ with $|Z_i|\le3$ and $\sum_i|Z_i|\le|Z|=12$, so
-$\sum_i(|Z_i|-1)$ is at most $\lfloor 2\cdot12/3\rfloor=8$, which four triples
-attain.
-
-\emph{Superseded, 2026-09-08.} The dimension-$27$ entry of the repository no
-longer rests on Theorem~\ref{thm:27}; see \S\ref{ss:d2627}. The theorem and
-the partition argument remain the template's own bound, and the twelve
-directions they fix are the ones the new configuration uses.
-
-\subsection{Dimensions 26 and 27: the coset triangle on every triangle of
-directions}\label{ss:d2627}
-
-\begin{theorem}\label{thm:2627}
-$K(26)\ge\Kh{26}$ and $K(27)\ge\Kh{27}$.
-\end{theorem}
-
-Both are joint work in progress with H.~Cohn and B.~Lindow, and the account is
-the separate note of \S\ref{ss:d25}; we record the shape and the verification.
-Write a point of $\R^{24+k}$ as $(x,y)$ with $y\in\R^{k}$, normalise every point
-to squared length $4$ so that compatibility is $\ip{P}{Q}\le2$, and put the
-$K(k)$ axis points $(0,a)$, $|a|=2$, on a hexagon ($k=2$) or a cuboctahedron
-($k=3$). A cap point $(x,y)$ then has $|y|\le\sec\theta$ for the covering radius
-$\theta$ of the axis set; for the hexagon $\theta=30^{\circ}$ forces $|x|^{2}\ge8/3$
-with equality forcing $y$ onto the six edge midpoints, a head at $|x|^{2}=8/3$
-carries a zero-sum triangle of directions, and two cap points there are
-compatible iff $\ip{x}{x'}\le2-\tfrac43\cos\angle(y,y')$: $\tfrac23$ on a common
-direction, $\tfrac43$ at $60^{\circ}$, no condition at $120^{\circ}$ or $180^{\circ}$.
-So the layer is one head set per triangle of directions --- two for the hexagon,
-four for the cuboctahedron, whose twelve vertices are four zero-sum triangles
-every two of which have a pair at $60^{\circ}$ --- each a code of cosine at most
-$\tfrac14$ on the sphere $|x|^{2}=8/3$, cross-constrained at cosine $\tfrac12$, and
-the count is $196\,560+K(k)+2(P-F)+3F$ for $P$ heads of which $F$ remove nothing.
-
-Every head is $y/3$ with $y=3u+v$ integral, $u$ a minimal vector (the owner,
-which the head removes) and $v$ a Leech vector of norm $6$ with $\ip{u}{v}=-3$,
-or a free head $y=\pm2v$; a head removes exactly its owner, and two heads on one
-owner have $\ip{y}{y'}\ge16$, above every threshold, so removals are not shared.
-Three such $v$ with $v_{1}+v_{2}+v_{3}=0$ carry $1656$ heads over three
-disjoint blocks $\Sigma(v_{i})=\{u:\ip{u}{v_{i}}=-3\}$ of $552$, and on one side
-the exact optimum is $762$ of them, against $552$ for a single $v$, which is
-Cohn's construction. In dimension $26$ the same triangle serves both sides: with
-$\iota(u)=-v_{i}-u$, a fixed-point-free involution of each block,
-$\ip{3u+v_{i}}{3\iota(u')+v_{i}}=15-9\ip{u}{u'}$, which respects the cross
-threshold $12$ exactly when $\ip{u}{u'}\ge1$; so a side $S$ and its image
-$\iota(S)$ fit on the two triangles of the hexagon whenever the owners of $S$ are
-pairwise at inner product $1$ or $2$ inside each block, and an optimal $S$ with
-that property exists. The shipped configuration, found by a solve in which each
-head chooses its side, has $1458$ class heads, $486$ over each lean of the
-triangle $v_1,v_2,v_3$; its $96$ free heads are given up for the second cap layer described
-below, which they alone were blocking, and
-$196\,560+6+2\cdot1458+324=\Kh{26}$.  A free head is worth $3$ against a
-class head's $2$ and removes nothing, so the free layer is bought by deleting the
-class heads that conflict with it; what makes that pay is that the conflicts
-concentrate, about $72$ class heads being the blockers for the whole norm-$6$
-shell and $489$ candidates sharing one of them, so the two choices have to be made
-together, as $\max 3\lvert F\rvert-\sum_{h}\mathrm{cost}(h)$ over the deleted
-heads $h$.  Priced one candidate at a time every free head looks unaffordable. In dimension $27$ the axis is
-the cuboctahedron rotated by $45^{\circ}$ about a coordinate axis, whose largest
-cosine to a direction is $(2+\sqrt2)/4$ and whose inner product with a cap point
-is at most $(2+\sqrt2)/\sqrt3<2$; two triangles of leans with cross Gram matrix
-the circulant of $(3,0,-3)$ carry the class heads over the four sides, alongside
-free heads that remove nothing. The three kinds of point are priced differently --- a class head is worth
-$+2$, a free head $+3$, a second-layer head $+1$ --- and they compete for the same
-owners, so they have to be chosen \emph{together}. Choosing them in sequence, as
-the first version of this construction did, gives $2133$ class heads, $129$ free
-heads and $284$ second-layer heads. Choosing all three at once, which is
-B.~Lindow's contribution, gives $2090$, $168$ and $310$: $43$ class heads
-are surrendered, at $-86$, to buy $39$ free heads at $+117$ and $26$
-second-layer heads at $+26$, a net $+57$. The trade that pays is one the sequential
-search had already priced and declined, because in isolation it loses.  Both dimensions carry a second cap layer, at $|x|^{2}=3$ with $|y|=1$;
-what separates them is not whether it exists but what it costs.  Such a cap satisfies
-$\ip{y}{a}\le2$ whatever direction it points, since $|y||a|=2$; it carries the antipodal
-pair $\pm y$ and no more, three directions needing pairwise cosine $\le-1$; and the scaled
-owner $x=\tfrac{\sqrt3}{2}u$ deletes exactly $u$, because $\ip{x}{z}>2$ forces
-$\ip{u}{z}>4/\sqrt3$, that is $\ip{u}{z}=4$.  Two cap points for one deletion: $+1$ each.
-Its direction must clear the first-layer directions, whose covering radii differ ---
-$30^{\circ}$ for the hexagon, $45^{\circ}$ for the cuboctahedron --- so a first-layer head
-may meet a second-layer owner at $\ip{Y}{u}\le24$ in dimension $26$ and at
-$\ip{Y}{u}\le32$ in dimension $27$.  A free head $y=\pm2v$ has $\ip{Y}{u}=2\ip{v}{u}$, a
-multiple of $16$: it clears the bar $32$ and can never clear the bar $24$.  Dimension $27$
-therefore keeps its free heads and its second layer at once, $310$ heads over $3\,110$
-admissible owners, while dimension $26$ can open the layer only by surrendering every free
-head --- which is what the count above does, $96$ free heads at $3$ apiece against $324$
-second-layer heads at $1$, a net $+36$.  That layer is optimal and not merely the best found:
-its $1\,188$ admissible owners carry a graph under $\ip{u}{u'}=16$ that is exactly
-$64$-regular, constraint programming closes its independence number at $108$, and the three
-lines take three disjoint such sets, so $324$ is the maximum.  Surrendering dimension $27$'s free heads in the same
-way enlarges its admissible set from $3\,009$ to $4\,634$ and comes nowhere near repaying
-the $387$ it costs.
-Its direction must clear the twelve first-layer directions, and that is where the two
-dimensions part: the hexagon's six edge midpoints leave a gap of $30^{\circ}$, at which
-not one of the $196\,560$ minimal vectors qualifies, while the cuboctahedron's covering
-radius is $45^{\circ}$, attained at its six square-face centres $\pm e_{1},\pm e_{2},
-\pm e_{3}$ -- three antipodal lines.  One quantum, and the admissible owners go from $0$
-to $3110$. Over that first layer the second layer is again an
-independent-set problem, and $310$ of them fit, $105+104+101$, jointly with the first
-layer rather than over a first layer already fixed --- which is what the joint optimisation
-buys, since on a first layer optimised alone only $105$ of them still fit.  Everything reduces to
-$\ip{Y}{u}\le32$ and $\ip{u}{u'}\le8$ on a line, since
-$\tfrac{\sqrt3}{48}\cdot32+\tfrac{2}{\sqrt6}=(2+\sqrt2)/\sqrt3<2$ and
-$\tfrac{3}{32}\cdot8+1=\tfrac74<2$:
-$196\,560+12+2\cdot2090+3\cdot168+310=\Kh{27}$. The package
-\texttt{dim26-27-iota-triangles} stores the heads as integer vectors with the
-index of their triangle, rebuilds the Leech vectors from the Golay code, decides
-every head--equator and head--head pair by integer comparison against the
-thresholds $144-96c$ ($c$ the exact largest cosine between two triangles of
-directions, in the scaling with minimum $32$) and the axis inequalities in
-$\mathbb{Q}(\sqrt2,\sqrt3)$, and rejects a head moved, duplicated or displaced.
-
-\subsection{Dimensions 28 to 31: a second layer, at a free
-height}\label{ss:d293031}
-
-\begin{theorem}\label{thm:293031}
-$K(28)\ge\Kh{28}$, $K(29)\ge\Kh{29}$, $K(30)\ge\Kh{30}$ and
-$K(31)\ge\Kh{31}$.
-\end{theorem}
-
-These are joint work in progress with H.~Cohn and B.~Lindow, and the account is
-the separate note of \S\ref{ss:d25}; as in \S\ref{ss:d2627} we record the shape
-and the verification. Table~\ref{tab:calib} is exact in the columns $k=4$
-through $k=7$, so the template of \S\ref{ss:calib} has no slack in any of them:
-every point beyond the published value has to come from outside
-\eqref{eq:families}.
-
-Normalise every point of $\R^{24+k}$ to squared length $4$, so that
-compatibility reads $\ip{P}{Q}\le2$, and write it as $(x,y)$ with $y\in\R^{k}$.
-In these units the three families of \eqref{eq:families} are the equator
-$(u,0)$, the caps $(\sqrt{2/3}\,u,(2/\sqrt3)z)$ and the axis $(0,2a)$, where $u$
-runs over the minimal vectors of $\Leech$, now of squared length $4$.
-
-Proposition~\ref{prop:cap} holds every lifted point at one level, and it is
-\eqref{eq:c3} --- two caps on distinct lines of one $C_i$ at a common direction
---- that forces $t\ge1/(2(1-\gamma))=\tfrac23$. That constraint exists because a
-whole independent set rides each direction. A family that places only a
-\emph{few} points above each direction does not meet it, and for such a family
-the level is free. Write its points as $(x,hw)$ with $|w|=1$ and
-$|x|^{2}+h^{2}=4$, and call $h$ the \emph{height} and $x$ the \emph{head}. Four
-thresholds move with $h$:
-\begin{equation}\label{eq:heights}
-\begin{array}{ll}
-  \text{no equator point is deleted} & \ip{x}{v}\le2 \text{ for every minimal } v,\\[2pt]
-  \text{an axis point survives}      & \ip{w}{a}\le1/h,\\[2pt]
-  \text{two directions of one head}  & \ip{w}{w'}\le1-2/h^{2},\\[2pt]
-  \text{two heads on one direction}  & \ip{x}{x'}\le2-h^{2},
-\end{array}
-\end{equation}
-and against a cap the condition is
-\begin{equation}\label{eq:layercap}
-  \sqrt{2/3}\;\ip{x}{u}\;+\;\frac{2h}{\sqrt3}\,\ip{w}{z}\;\le\;2 ,
-\end{equation}
-with $u$ an owner and $z$ a direction of the part carrying it. The last line of
-\eqref{eq:heights} holds the number of heads on one direction to
-$2/(2-|x|^{2})$ when $|x|^{2}<2$: the unit vectors $x/|x|$ are then pairwise at
-cosine at most $-c$ with $c=(2-|x|^{2})/|x|^{2}$, and unit vectors so placed
-number at most $1+1/c$. The first line is what makes such a layer cheap: it
-costs no equator point, so the construction pays for it only in axis points and
-in the classes.
-
-Lattice facts supply the heads. If $g\in\Leech$ has $|g|^{2}=2r$ and $v$ is
-minimal, then $g-v$ has squared length $2r+4-2\ip{g}{v}$, an even integer that
-is $0$ or at least $4$; it is $0$ only for $g=v$, and the value
-$\ip{g}{v}=r+1$ would make it $2$, which no lattice vector has. Hence
-$\ip{g}{v}\le r$: at most $3$ for a head of squared length $6$ and at most $4$
-for one of squared length $8$. If $|x|^{2}=1$, so that $x=u_{0}/2$ for a minimal
-$u_{0}$, Cauchy--Schwarz gives $\ip{x}{v}\le2$ with equality only at
-$v=u_{0}$. So $x=v/2$ with $|v|^{2}=6$, $x=f/\sqrt3$ with $|f|^{2}=6$,
-$x=v/2$ with $|v|^{2}=8$ and $x=u_{0}/2$ all satisfy the first line of
-\eqref{eq:heights}, at heights $h^{2}=\tfrac52$, $2$, $2$ and $3$; these are the
-four that occur. The norm of the head is a second free parameter, the two
-entries at $h^{2}=2$ differ only in it, and it is the norm-$8$ one at $h=\sqrt2$
-that carries all four dimensions below. One consequence of \eqref{eq:layercap} is worth
-recording before the cases, because it does not depend on the height: if the
-direction sits exactly at the axis threshold, $\ip{w}{z}=1/h$, the second term
-is $2/\sqrt3$ whatever $h$ is, and the condition collapses to
-\begin{equation}\label{eq:capthr}
-  \ip{x}{u}\;\le\;\sqrt6-\sqrt2\;=\;1.0352\ldots
-\end{equation}
-
-\begin{table}[ht]
-\caption{The layer of Theorem~\ref{thm:293031}, in the normalisation
-$|P|^{2}=4$. The head $x$ is the $\R^{24}$ part of a layer point and $w$ its
-direction; $z$ is a cap direction. All four columns are one layer, the norm-$8$
-frame at height $\sqrt2$: the head runs over all $48$ vectors of a Leech frame
-and the direction over the whole cross-polytope of $\R^{k}$, which is $96k$
-points. The axis is the maximum $60^{\circ}$ code of \cite{ma-etal2025} that
-Table~\ref{tab:calib} reproduces, carried into the frame's coordinates --- and in
-dimensions $30$ and $31$ rotated first, which is free and costs the layer
-nothing. No layer point deletes an equator point, and the last three lines are
-the whole price.}
-\label{tab:layers}
-\small\setlength{\tabcolsep}{5pt}
-\begin{tabular}{lcccc}
-\toprule
-$k$ & $4$ & $5$ & $6$ & $7$\\
-dimension & $28$ & $29$ & $30$ & $31$\\
-\midrule
-height $h$ & $\sqrt2$ & $\sqrt2$ & $\sqrt2$ & $\sqrt2$\\
-$|x|^{2}=4-h^{2}$ & $2$ & $2$ & $2$ & $2$\\
-$|$head$|^{2}$ & $8$ & $8$ & $8$ & $8$\\
-head $x$ & $v/2$ & $v/2$ & $v/2$ & $v/2$\\
-directions $w$ & $\pm e_{1..4}$ & $\pm e_{1..5}$ & $\pm e_{1..6}$ & $\pm e_{1..7}$\\
-axis threshold $1/h$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$\\
-largest $\ip{w}{z}$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$\\
-directions per head & $8$ & $10$ & $12$ & $14$\\
-heads per direction & $48$ & $48$ & $48$ & $48$\\
-layer points & $384$ & $480$ & $576$ & $672$\\
-\midrule
-axis points kept & $16$ of $24$ & $32$ of $40$ & $68$ of $72$ & $118$ of $126$\\
-owner lines & $8\cdot248$ & $14\cdot248$ & $24\cdot248$ & $10\,328$\\
-net gain & $\Kgain{28}$ & $\Kgain{29}$ & $\Kgain{30}$ & $\Kgain{31}$\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\emph{Dimensions 28, 29 and 30: one layer.} Take $h=\sqrt2$ and the head from
-a lattice vector of squared length $8$: $x=v/2$, so that $\ip{x}{u}\le2$ with
-equality and the layer deletes nothing. Three of its four constraints are then
-free \emph{in every dimension}. The third line of \eqref{eq:heights} reads
-$\ip{w}{w'}\le0$, so one head carries a whole cross-polytope, $2k$ directions.
-The fourth reads $\ip{x}{x'}\le0$, so two heads share a direction as soon as
-their lattice vectors are non-acute --- and the $48$ vectors
-$\pm f_{1},\dots,\pm f_{24}$ of a frame satisfy that throughout, while $48$
-vectors of $\R^{24}$ pairwise at non-positive inner product \emph{are} a frame,
-so $24$ head lines is the most there is. The layer is
-\begin{equation}\label{eq:framelayer}
-  48\times2k \;=\; 96k \quad\text{points},
-\end{equation}
-$384$, $480$, $576$, $672$ in dimensions $28$, $29$, $30$, $31$.
-
-What is left is \eqref{eq:layercap}, and it is the whole content. If
-every owner is \emph{type $B$} for the frame --- $|\ip{u}{f_{i}}|=2$ for all
-$24$ heads, never $3$ or $4$ --- the threshold on the directions is
-\begin{equation}\label{eq:framethr}
-  \ip{z}{w}\;\le\;\sqrt{3/2}-\tfrac12\;=\;0.7247448\ldots,
-\end{equation}
-and the $\tau(k)$ cap directions are a root system: $D_{4}$, $D_{5}$, $E_{6}$,
-$E_{7}$ each have an orthonormal frame in which \emph{every} root has largest
-coordinate $1/\sqrt2=0.7071067\ldots$ For $E_{7}$ one has to rotate a pair of
-basis vectors by $45^{\circ}$, since two of its roots are otherwise aligned with
-a frame vector. So the margin is a single inequality, and it is the one the
-norm of the head buys:
-\begin{equation}\label{eq:sqrt2}
-  1/\sqrt2\le\sqrt{3/2}-\tfrac12
-  \quad\Longleftrightarrow\quad 1+1/\sqrt2\le\sqrt3
-  \quad\Longleftrightarrow\quad \sqrt2<\tfrac32 .
-\end{equation}
-A norm-$6$ head at the same height would need $\ip{f}{u}\le1$ instead, which
-forbids $11\,730$ minimal lines to each head where the norm-$8$ head forbids the
-$2\,094$ at $|\ip{v}{u}|\ge3$.
-
-So the layer costs nothing geometrically and everything in the classes: every
-one of them must be type $B$ for one common frame --- $8$ classes in dimension
-$28$, $24$ in dimension $30$, $42$ in dimension $31$, and $14$ in dimension
-$29$, which carries twelve zero-sum triangles and two antipodal pairs because
-$\tau(5)=40$ is not a multiple of $3$. That is cheap for one reason. Choose the coordinates so that the frame is $8e_{1},\dots,8e_{24}$;
-then the type-$B$ lines are exactly the $759\times64=48\,576$ octad vectors
-$(\pm2^{8},0^{16})$ of the Golay code, and the whole monomial group
-$2^{12}{:}M_{24}$ permutes them. \emph{Every monomial image of a type-$B$ class
-is again a type-$B$ class}, so nothing has to be filtered and what is left is a
-packing. It is a packing with cheap moves as well: a type-$B$ line is an octad
-together with a position in $\mathbb{F}_{2}^{6}$, a Golay sign word acts on it by
-translating that position inside its octad, and the sign word of a class is
-therefore an exactly solvable coordinate. Coordinate descent over the sign
-words, with a fresh batch of permutations at each visit to a class, gives $14$
-pairwise disjoint $248$-line classes in dimension $29$ --- the full
-$14\cdot248$, with nothing given up. Dimension $30$ is exact as well, at
-$24\cdot248=5\,952$, once the descent is replaced by freezing a core of twelve
-disjoint classes, pooling the monomial images disjoint from all of it and
-solving maximum clique on that pool. A subset of a class is again a class, so
-where a family is not exact the repeats are simply dropped.
-
-What the layer costs in axis points is second order, and a rotation recovers
-part of it. The condition is $|\ip{a}{w}|\le1/\sqrt2$, and what fails it is an
-axis point lying along a frame direction: of the axis of \cite{ma-etal2025},
-carried into the frame's coordinates, $16$ of $24$ survive in dimension $28$ and
-$32$ of $40$ in dimension $29$, where the eight that die sit at
-$|\ip{a}{w}|=1$ exactly. A maximum $60^{\circ}$ code is a rotated copy of the
-root system and the rotation is free, so in dimensions $30$ and $31$ the axis is
-turned before it is carried across --- by $45^{\circ}$, $45^{\circ}$ and
-$90^{\circ}$ in three coordinate planes, which keeps every coordinate an integer
-quadruple $(a+b\sqrt2+c\sqrt3+d\sqrt6)/24$ --- and $68$ of $72$ and $118$ of
-$126$ survive, against $48$ and $110$ unrotated. Hence
-\[
-  192\,592+3\cdot3\,968+16+384=\Kh{28},
-\]
-\[
-  189\,616+19\,840+32+480=\Kh{29},\quad
-  184\,656+35\,712+68+576=\Kh{30} ,
-\]
-the middle count having $12$ zero-sum triangles and $2$ antipodal pairs, since
-$\tau(5)=40$ is not a multiple of $3$ and the $40$ directions of a maximum
-$60^{\circ}$ code in $\R^{5}$ sum to zero, so $13$ disjoint triangles cannot be
-carved out of one.
-
-\emph{Dimension 31: the same layer, and a density.} Here $96k=672$, and the
-layer pays as soon as the $42$ type-$B$ classes hold at least $10\,251$ of the
-$10\,416$ lines that $42$ full classes give --- $98.4$ per cent. The descent
-above reaches $10\,183$, and for a while that looked like the end of it. It is
-not an existence question: two uniform monomial images of the $248$-line class
-are disjoint with probability $p=0.4319$, so a family of $42$ is a clique in a
-graph of that density on the $\sim\!10^{12}$ images, where the random-graph
-clique number $2\ln(10^{12})/\ln(1/p)$ is about $66$. It is a question about
-what a search that can only \emph{sample} can reach: it places the $k$-th class
-while $np^{k-1}\ge1$ and therefore stops at $k=1+12\ln10/\ln(1/p)$, which is
-$34$ at $p=0.4319$, so forty-two needs $p\ge10^{-12/41}=0.5097$. The density is
-a design choice. Writing $S_{i}$ for the set of $44$ octads supporting class
-$i$, the probability that two images are disjoint falls with $|S_{i}\cap S_{j}|$,
-and
-\[
-  \sum_{i<j}|S_{i}\cap S_{j}|=\sum_{O}\binom{n_{O}}{2},\qquad
-  \sum_{O}n_{O}=42\cdot44=1\,848
-\]
-over the $759$ octads, so a flat octad coverage is worth more than any amount of
-further sampling: the sum is $1\,898$ for the family the uniform scan produced
-and at least $1\,419$ for any $42$ supports at all. Screening candidates on the
-free slots their octads still have, rather than on what they cost now, gives a
-family at $1\,670$ with $p=0.5467$ and $10\,328$ of the $10\,416$ owner lines,
-and
-\[
-  175\,904+61\,968+118+672=\Kh{31} .
-\]
-
-How far this can go is known to different depths. In all four dimensions the
-layer is at the ceiling \eqref{eq:framelayer} --- every vector of a frame on
-every direction of a cross-polytope, and $24$ head lines is the most $\R^{24}$
-holds. So is the axis, and exhaustively: a further axis point would be a
-\emph{unit} vector of $\{a:\ip{a}{a_{i}}\le\tfrac12,\ \ip{a}{z}\le\sqrt3/2,\
-|\ip{a}{w}|\le1/\sqrt2\}$, whose right-hand sides are all positive, so that set
-is a polytope with the origin interior and the convex $|a|$ attains its maximum
-at a vertex; enumerating the vertices of all four gives $0.7654$, $0.7929$,
-$0.8165$ and $0.8660$, and none of the four axes admits another point at all.
-The direction weight $w=\sum_{i}(|Z_{i}|-1)$ is at $\lfloor2\tau(k)/3\rfloor$,
-which is a theorem: two classes sharing a direction would meet at
-$\ip{u}{u'}\le1$ throughout and so be one class, so the parts are disjoint; a
-part is pairwise at $\le-\tfrac12$ and $|\sum z|^{2}\ge0$ holds it to three;
-across parts the cosines are $\le\tfrac12$; hence $\bigcup Z_{i}$ is a
-$60^{\circ}$ code, $3t+2q\le\tau(k)$, and the maximum of $2t+q$ over that is
-$\lfloor2\tau(k)/3\rfloor$, attained here as $16$, $26$, $48$ and $84$. Only
-$\tau(4)=24$ is proved, so only dimension $28$ sits at an unconditional ceiling:
-against the proved $\tau(5)\le44$, $\tau(6)\le77$ and $\tau(7)\le134$ the
-unconditional weights are $29$, $51$ and $89$, worth $1\,488$, $1\,488$ and
-$2\,480$ points to anyone who improves a low-dimensional kissing number. What is
-otherwise left is the class problem of \S\ref{ss:class}, at $+32$, $+52$, $+96$
-and $+168$ for every extra line of the $248$-line independent set, against the
-Delsarte ceiling of $425.45$ lines; and in dimension $31$ also the packing,
-where $88$ repeated lines are worth up to $+352$.
-
-\begin{sloppypar}
-Three packages verify the four --- \texttt{dim28-norm8-frame-layer},
-\texttt{dim29-30-frame-layer} and \texttt{dim31-frame-layer}. Each rebuilds the
-$196\,560$ minimal vectors from the Golay code and checks the inner-product
-signature of the $98\,280$ lines before trusting them, carries every direction
-and axis point as an exact algebraic number --- an integer quadruple
-$(a+b\sqrt2+c\sqrt3+d\sqrt6)/24$ for the frame layer --- and decides every pair
-exactly: integer inner products in $\R^{24}$, and $\Q(\sqrt2,\sqrt3)$ in
-$\R^{k}$. Each
-checks that the classes are disjoint sets of minimal vectors with pairwise inner
-products at most $1$, that the heads are lattice vectors of the stated squared
-length, that no equator point is deleted, and that the four families have
-pairwise distinct $(|x|^{2},|y|^{2})$, so that the count adds no point twice.
-\end{sloppypar}
-
-\subsection{Dimension 38: large codimension}\label{ss:d38}
-
-For $k\le7$ the number of parts of $Z$ binds in \eqref{eq:count}, and a part is
-worth most when it is a triple: the number of triples is at most
-$\lfloor K(k)/3\rfloor$, which is $0,2,4,8,13,24,42$, so at most $42\times248$
-lines carry caps; one therefore takes the independent sets as large as possible.
-At $k=5$ the bound $13$ is not attained --- the $40$ directions of a maximum
-$60^{\circ}$ code in $\R^{5}$ sum to zero, so thirteen disjoint zero-sum triples
-would leave a fortieth direction summing to zero on its own --- but the weight
-$\sum_{i}(|Z_{i}|-1)=26$ is, by twelve triples and two antipodal pairs. At larger
-$k$ the parts of $Z$ outnumber the disjoint maximum independent sets available,
-and the binding question becomes how much of the shell admits a partition into
-independent sets, a colouring question.
-
-\begin{theorem}\label{thm:38}
-$K(38)\ge\Kh{38}$.
-\end{theorem}
-
-\begin{proof}[Proof sketch]
-Take $L=\Leech$, $k=14$ and $t=\tfrac23$. For $Z$ take the $1\,932$-point kissing
-configuration of $\R^{14}$, which admits a partition into $644$ zero-sum triples.
-The $98\,280$ minimal lines of $\Leech$ admit a partition into $644$ pairwise
-disjoint independent sets, so every line carries caps and the equator is empty:
-\eqref{eq:count} gives $196\,560-2\cdot98\,280+2\cdot98\,280\cdot3
-=6\cdot98\,280=589\,680$, the ceiling $3K(24)$ of the family.
-
-The pole set is non-empty even though $Z$ already occupies every direction of the
-$1\,932$-point code. By \eqref{eq:c6} a pole needs $30^\circ$ of separation from
-the directions; the covering radius of that code is $54.7^\circ$. There is a
-rotated copy of the code no point of which lies within $30^\circ$ of $Z$, so all
-$1\,932$ of them are poles and the total is $589\,680+1\,932=\Kh{38}$, which is
-exactly the family's ceiling $3K(24)+K(14)$.
-
-Such a rotation is not found by sampling. A $30^\circ$ cap has relative measure
-$1.50\times10^{-5}$ on $S^{13}$, so the $1\,932$ caps cover at most $2.89\%$ of
-it; a random rotation accordingly loses $56$ points on average, with standard
-deviation $11$, and an independent-points model gives $e^{-56}$ for a clean one.
-It is found instead by descending on $\mathrm{SO}(14)$. Scale the $w_i$ to
-$|w_i|^2=8$, so that the separation asks for $\ip{Qw_i}{w_j}\le4\sqrt3$; the
-objective
-$f(Q)=\sum_i\operatorname{softplus}\bigl(\operatorname{smax}_j\ip{Qw_i}{w_j}
--4\sqrt3\bigr)$ is then differentiable, $\operatorname{smax}$ being a smooth
-maximum, and the geodesic step
-$Q\mapsto\exp(-\eta\,\operatorname{skew}(\nabla f\,Q^{\mathsf T}))Q$ keeps the
-iterate on the group. The real solution is
-then made rational by the Cayley transform, $(I-S)(I+S)^{-1}$ being rational and
-orthogonal for every rational skew-symmetric $S$, so the verification stays
-exact: $Q=N/D$ with $N$ integral, $NN^{\mathsf T}=D^2I$ and
-$|\ip{Nw_i}{w_j}|\le\operatorname{isqrt}(48D^2)$ for all $1\,932^2$ pairs.
-\end{proof}
-
-The partition into independent sets is the substantial step. Let
-$b(x,y)=\ip{x}{y}\bmod2$. Since $L$ is even, $b$ descends to an alternating
-bilinear form on the $\mathbb F_2$-space $L/2L$. For a totally isotropic subspace
-$R\subset L/2L$ of dimension $4$ put
-\[
-  X_R=\{\,\pm u \;:\; u\in\Lambda,\ b(u,x)=0 \text{ for every } x\in R\,\},
-\]
-which for the subspaces used here contains $6\,120$ of the $98\,280$ lines. Every
-known maximum independent set of $\Gamma_\gamma(\Leech)$ lies inside such a set. Local search restricted to one
-$X_R$ returns independent sets of $230$ to $244$ lines, whereas the same search
-on the whole graph returns $152$. The explicit partition is in \cite{repo}.
-
 \subsection{Dimensions 49--61 and 73--95}\label{ss:big}
 
 Above dimension $48$ the same construction runs over $\Pff$ and $\Gsz$. Two
@@ -1742,7 +1443,7 @@ $k=20$ the isometry condition alone leaves the first level of the search $664$ w
 wide and a second invariant is needed: $S$ carries zero-sum triples to zero-sum triples,
 so it preserves the number of them through a vector, and filtering the candidate images by
 that degree narrows the level to eight. At $k=22$ that degree is constant and the filter
-buys nothing; the isometry condition settles it there on its own, in twelve complete
+gives no further reduction; the isometry condition settles it there on its own, in twelve complete
 assignments. The six dimensions this moves are $84$, $85$, $88$, $90$, $92$ and $94$, by
 $549\,638$ spheres in total.
 
@@ -1819,7 +1520,7 @@ clear.
 \end{proof}
 
 Every dimension from $81$ to $95$ now carries its own construction: dimension $81$
-exceeds dimension $80$ by $185\,042$, so no entry of Table~\ref{tab:all} in this
+exceeds dimension $80$ by $175\,276$, so no entry of Table~\ref{tab:all} in this
 range rests on monotonicity of $K$. The construction also runs in dimensions $62$
 and $63$, where it reaches $64\,217\,822$ and $67\,365\,752$ and is beaten;
 \S\ref{ss:d6263} treats those two.
@@ -1863,47 +1564,6 @@ chain $n\ge n_0\ge4n_1\ge16n_2\ge\cdots$ of support sizes, giving
 The construction is defined for every $n$, but its authors evaluate it only at
 $n=32,36,40,44,64,80,128$. Elsewhere its value is a question about the current
 code tables rather than about the construction.
-
-\subsection{Dimension 39}\label{ss:d39}
-
-In dimensions $38$ and $39$ the chain that maximises the total has three
-levels, $(n,8,2)$, and reads
-\[
-  K(n)\;\ge\;A\bigl(n,\lceil n/4\rceil\bigr)+128\,A(n,8,8)+4\binom{n}{2}.
-\]
-
-\begin{theorem}\label{thm:39}
-$K(39)\ge\Kh{39}$.
-\end{theorem}
-
-\begin{proof}
-Echols \cite{echols2026} improves $A(39,8,8)$ from $3\,323$ to $3\,324$;
-Brouwer's table \cite{brouwer} carries the new value. With
-$A(39,10)\ge327\,680$ \cite{zinoviev-litsyn1984},
-\[
-  327\,680+128\cdot3\,324+4\cdot741 \;=\; 327\,680+425\,472+2\,964 \;=\; \Kh{39} . \qedhere
-\]
-\end{proof}
-
-The gain is $128\,(3324-3323)=128$. Echols \cite{echols2026} computes kissing
-numbers from the fixed level-one length $n_0=32$, which in dimension $39$ falls
-below the record; that paper therefore reports no value there. The chain
-optimises at $n_0=n$ in dimensions $38$, $39$, $40$, $43$ and $44$; among these, $38$ and $39$
-are the two whose totals exceed the published entry; \S\ref{ss:d38} supersedes
-dimension $38$. That entry is $755\,988$, which
-\cite{cohn-table} attributes to the Edel--Rains--Sloane construction; of the three
-dimensions named in \cite{sun-wang2026} it is dimension $43$, not dimension $39$, whose
-entry that table credits to the antipode construction. That paper also reconstructs the
-twelve cross-section packings of $1982$ in dimensions $38$--$47$ and computes their
-kissing numbers, reporting that they exceed the best previously tabulated lower bounds
-in dimensions $42$--$47$. Dimensions $38$ and $39$ are the only two this paper claims
-inside that span of $38$--$47$, and neither lies in $42$--$47$.
-
-The verification in \cite{repo} checks the constant-weight code over all
-$\binom{3324}{2}$ pairs and the ten geometric conditions of the chain as exact
-rational inequalities, three of them tight. The value $A(39,10)\ge327\,680$ is
-taken from \cite{zinoviev-litsyn1984} and is not verified here; the existing
-record $755\,988$ rests on the same value.
 
 \subsection{Dimensions 62 and 63}\label{ss:d6263}
 
@@ -2080,8 +1740,7 @@ The cosets of $\mathrm{RM}(1,4)$ inside $\mathrm{RM}(2,4)$ that contain weight-$
 words are exactly the $28$ \emph{bent} cosets, of weights $6$ and $10$, sixteen
 words each. The sixteen weight-$6$ words of a bent coset form a symmetric
 $2$-$(16,6,2)$ design, so they pairwise meet in two cells; that is a valid tier,
-and a maximal one --- sixteen is the largest family of admissible six-sets
-\cite{repo}.
+with sixteen members.
 
 \subsection{Which hexagons are open}
 
@@ -2115,17 +1774,733 @@ The first family of \cite{cohn-li2024} is one of these $28$ bent cosets; their
 other two are each half of one bent coset and half of another. That costs an extra
 linear condition apiece and makes every angle see the same $256$ words, so $256$
 was indeed a ceiling --- for their base, with the code varying, rather than for the
-construction. Dimension $18$ is discussed again in \S\ref{ss:obstructions}, where
-the ceiling that does hold is the one for the \emph{other} Cohn--Li shape.
+construction.
 
-\section{The results}\label{sec:results}
+
+\section{Historical constructions and the frozen September table}\label{app:historical}
+
+The following material records the eight earlier constructions that are no
+longer state of the art in the reviewed sources. It is retained for
+reproducibility and attribution; the main text reports the current table only.
+In that historical split, forty-three of the fifty-three entries lay above
+dimension $48$.
+
+\subsection{Superseded construction descriptions}
+
+The following detailed accounts are retained as historical documentation.
+
+\subsection{Dimension 25: the choice of level}\label{ss:d25}
+
+\begin{theorem}\label{thm:25}
+$K(25)\ge197\,058$.
+\end{theorem}
+
+\begin{proof}
+Take $L=\Leech$, $k=1$, one independent set $C$ of $248$ lines, and
+$Z=W=\{+1,-1\}\subset S^{0}$. The published configurations use $t=\tfrac23$, at
+which $b=1/\sqrt3=0.577\ldots>\tfrac12$; then \eqref{eq:c6} fails for the two
+poles, which are discarded.
+
+The level $t=\tfrac23$ is not forced here. Constraint \eqref{eq:tmin} bounds it
+from below and \eqref{eq:c4} from above: for two antipodal directions the latter
+requires $-1\le(\tfrac12-t)/(1-t)$, that is $t\le\tfrac34$. At $k=1$
+the sphere $S^0$ has two points and admits no triple; the whole range
+$\tfrac23\le t\le\tfrac34$ is therefore admissible.
+
+At $t=\tfrac34$ constraint \eqref{eq:c3} becomes $\tfrac34\gamma+\tfrac14
+\le\tfrac12$, i.e.\ $\gamma\le\tfrac13$; and for $\Leech$ the thresholds
+$\gamma=\tfrac14$ and $\gamma=\tfrac13$ define the same condition, since
+Lemma~\ref{lem:ips} allows only $\ip{u}{u'}/\mu\in\{0,\pm\tfrac14,\pm\tfrac12\}$
+and no admissible value lies strictly between $\tfrac14$ and $\tfrac13$. The
+independent set is therefore unchanged at $248$ lines. At $t=\tfrac34$ we have
+$b=\tfrac12$, so \eqref{eq:c6} holds and both poles are admissible. Finally
+\eqref{eq:count} gives
+$196\,560+2\cdot248\cdot(2-1)+2=197\,058$.
+\end{proof}
+
+Three constraints meet at $t=\tfrac34$. The bound $t\ge\tfrac23$ keeps the
+independent set at $248$ lines, the bound $t\le\tfrac34$ keeps the antipodal pair
+admissible, and the poles require $t\ge\tfrac34$. The argument does not repeat for
+$k\ge2$: triples exist there and contribute twice as much as pairs, which makes
+$t=\tfrac23$ optimal; the poles already attain $K(k)$ at that level.
+
+The gain is $+2$ over any independent set used in its place. The level argument
+uses the $248$-line independent set of \cite{ma-etal2025} unchanged; one of
+$249$ lines would give $197\,060$ by the same argument.
+
+\emph{Superseded, 2026-09-07.} The current dimension-$25$ entry
+no longer rests on this level argument. In joint work in progress with H.~Cohn
+and B.~Lindow the caps are rebuilt from \emph{heads}: points $x$ of squared
+length $3$ (norm-$4$ units) lying in the lens of a minimal vector, each removing
+exactly its owner from the equator. Two compatible heads never share a removal,
+so the count is exact: the equator loses its $H$ owners and gains the $2H$ points
+$\pm x$, the two poles are admissible, and one further equator point
+$-\tfrac{2}{\sqrt6}v$ that is not a lattice vector is added, giving
+$196\,560-H+1+2H+2=196\,560+H+3$.
+
+The heads come in blocks. Fix a vector $v\in\Leech$ of norm $6$, take the $552$
+minimal vectors $z$ with $\ip{z}{v}=-3$, and push each of them towards $v$ by
+$t_-=(3-\sqrt3)/6$. Every pair of heads within one block then meets the bound
+$\ip{x}{x'}=1$ exactly, so a block is a tight packing. Its size is optimal: a
+block projects to a code of pairwise cosine $\tfrac15$ in $\R^{23}$, and the
+largest such code has $552$ points. Searched over the whole norm-$6$
+shell of $16\,773\,120$ vectors, a union of blocks reaches $971$ heads --- three
+vectors $v$ with pairwise inner products $-4$, $0$ and $-3$ --- and a fourth
+vector contributes exactly one head more. Every remaining minimal vector that
+can own a head over that core contributes one candidate, the point of largest
+norm in its own polytope. That pool is complete at $1\,188$ heads over
+$1\,188$ distinct owners. The supplement is an independent set in the conflict
+graph the pool carries, found by maximising over that graph rather than by
+growing the set head by head. The shipped configuration takes $45$ of them, so
+$H=1\,016$ and
+$K(25)\ge\Kh{25}$, verified in exact arithmetic by the package
+\texttt{dim25-lens-heads}. The level
+argument above remains the template's own bound and is kept as such.
+
+\subsection{Dimension 27: partitioning the directions}\label{ss:d27}
+
+\begin{theorem}\label{thm:27}
+$K(27)\ge200\,540$.
+\end{theorem}
+
+\begin{proof}
+Take $L=\Leech$, $k=3$ and $t=\tfrac23$. Take $Z$ to be the $A_3$ root system
+normalised to the sphere, the $12$ vertices of a cuboctahedron and a kissing
+configuration of $\R^3$, and take $W$ to be a rotated copy of it satisfying the
+$30^\circ$ separation of \eqref{eq:c6}, so that $|W|=K(3)=12$. By
+Corollary~\ref{cor:pairs} each independent set may carry a zero-sum triple. The
+$12$ vertices admit a partition into four zero-sum triples; four independent sets
+therefore suffice, and \eqref{eq:count} gives
+\[
+  196\,560+2\cdot 4\cdot 248\cdot(3-1)+12
+  \;=\;196\,560+3\,968+12\;=\;200\,540 . \qedhere
+\]
+\end{proof}
+
+The choice of direction set is constrained, and not merely convenient. The
+$12$-point kissing configuration of $\R^3$ is not unique; two of them are classical,
+the cuboctahedron and the icosahedron. Icosahedral vertices meet at
+$\ip{z}{z'}\in\{\pm1,\pm1/\sqrt5\}$, so
+no two of them that are not antipodal reach the $-\tfrac12$ that
+Corollary~\ref{cor:pairs} demands: the icosahedron admits no zero-sum triple at
+all, and over it the construction would be reduced to six antipodal pairs and
+$199\,548$ points. The cuboctahedron has $24$ pairs at $-\tfrac12$ and admits
+exactly two partitions into four triples.
+
+The published configuration \cite{ma-etal2025} groups its twelve directions into
+parts of sizes $3,3,2,2,2$. That partition uses five independent sets and deletes
+$5\times496=2\,480$ vectors from the equator; four triples use four and delete
+$1\,984$, returning $496$ vectors. The construction adds no new spherical code:
+the Leech vectors, the twelve directions, the twelve poles and four of the five
+independent sets are those of the published configuration; only the
+assignment of independent sets to directions differs. A script in \cite{repo}
+regenerates the configuration from the dimension-$27$ block of \cite{cohn-data}.
+B.~Lindow found the same construction independently (private communication
+through H.~Cohn, September 2026).
+
+The family admits nothing further in this dimension. By \eqref{eq:count} the gain
+is $2\sum_i|C_i|(|Z_i|-1)$ with $|Z_i|\le3$ and $\sum_i|Z_i|\le|Z|=12$, so
+$\sum_i(|Z_i|-1)$ is at most $\lfloor 2\cdot12/3\rfloor=8$, which four triples
+attain.
+
+\emph{Superseded, 2026-09-08.} The current dimension-$27$ entry no
+longer rests on Theorem~\ref{thm:27}; see \S\ref{ss:d2627}. The theorem and
+the partition argument remain the template's own bound, and the twelve
+directions they fix are the ones the new configuration uses.
+
+\subsection{Dimensions 26 and 27: the coset triangle on every triangle of
+directions}\label{ss:d2627}
+
+\begin{theorem}\label{thm:2627}
+$K(26)\ge\Kh{26}$ and $K(27)\ge\Kh{27}$.
+\end{theorem}
+
+Both are joint work in progress with H.~Cohn and B.~Lindow, and the account is
+the separate note of \S\ref{ss:d25}; we record the shape and the verification.
+Write a point of $\R^{24+k}$ as $(x,y)$ with $y\in\R^{k}$, normalise every point
+to squared length $4$ so that compatibility is $\ip{P}{Q}\le2$, and put the
+$K(k)$ axis points $(0,a)$, $|a|=2$, on a hexagon ($k=2$) or a cuboctahedron
+($k=3$). A cap point $(x,y)$ then has $|y|\le\sec\theta$ for the covering radius
+$\theta$ of the axis set; for the hexagon $\theta=30^{\circ}$ forces $|x|^{2}\ge8/3$
+with equality forcing $y$ onto the six edge midpoints, a head at $|x|^{2}=8/3$
+carries a zero-sum triangle of directions, and two cap points there are
+compatible iff $\ip{x}{x'}\le2-\tfrac43\cos\angle(y,y')$: $\tfrac23$ on a common
+direction, $\tfrac43$ at $60^{\circ}$, no condition at $120^{\circ}$ or $180^{\circ}$.
+So the layer is one head set per triangle of directions --- two for the hexagon,
+four for the cuboctahedron, whose twelve vertices are four zero-sum triangles
+every two of which have a pair at $60^{\circ}$ --- each a code of cosine at most
+$\tfrac14$ on the sphere $|x|^{2}=8/3$, cross-constrained at cosine $\tfrac12$, and
+the count is $196\,560+K(k)+2(P-F)+3F$ for $P$ heads of which $F$ remove nothing.
+
+Every head is $y/3$ with $y=3u+v$ integral, $u$ a minimal vector (the owner,
+which the head removes) and $v$ a Leech vector of norm $6$ with $\ip{u}{v}=-3$,
+or a free head $y=\pm2v$; a head removes exactly its owner, and two heads on one
+owner have $\ip{y}{y'}\ge16$, above every threshold, so removals are not shared.
+Three such $v$ with $v_{1}+v_{2}+v_{3}=0$ carry $1656$ heads over three
+disjoint blocks $\Sigma(v_{i})=\{u:\ip{u}{v_{i}}=-3\}$ of $552$, and on one side
+the exact optimum is $762$ of them, against $552$ for a single $v$, which is
+Cohn's construction. In dimension $26$ the same triangle serves both sides: with
+$\iota(u)=-v_{i}-u$, a fixed-point-free involution of each block,
+$\ip{3u+v_{i}}{3\iota(u')+v_{i}}=15-9\ip{u}{u'}$, which respects the cross
+threshold $12$ exactly when $\ip{u}{u'}\ge1$; so a side $S$ and its image
+$\iota(S)$ fit on the two triangles of the hexagon whenever the owners of $S$ are
+pairwise at inner product $1$ or $2$ inside each block, and an optimal $S$ with
+that property exists. The shipped configuration, found by a solve in which each
+head chooses its side, has $1458$ class heads, $486$ over each lean of the
+triangle $v_1,v_2,v_3$; its $96$ free heads are given up for the second cap layer described
+below, which they alone were blocking, and
+$196\,560+6+2\cdot1458+324=\Kh{26}$.  A free head contributes $3$ compared with $2$ for a class head and removes nothing,
+so admitting the free layer requires deleting class heads that conflict with it.
+The conflicts concentrate: about $72$ class heads block the whole norm-$6$ shell,
+and $489$ candidates share one of them. The two choices therefore have to be made
+together, by maximizing $3\lvert F\rvert-\sum_{h}\mathrm{cost}(h)$ over the
+deleted heads $h$. Evaluating one candidate at a time makes every free head appear
+unaffordable. In dimension $27$ the axis is
+the cuboctahedron rotated by $45^{\circ}$ about a coordinate axis, whose largest
+cosine to a direction is $(2+\sqrt2)/4$ and whose inner product with a cap point
+is at most $(2+\sqrt2)/\sqrt3<2$; two triangles of leans with cross Gram matrix
+the circulant of $(3,0,-3)$ carry the class heads over the four sides, alongside
+free heads that remove nothing. The three kinds of point contribute differently:
+a class head contributes $+2$, a free head $+3$, and a second-layer head $+1$;
+they compete for the same
+owners, so they have to be chosen \emph{together}. Choosing them in sequence, as
+the first version of this construction did, gives $2133$ class heads, $129$ free
+heads and $284$ second-layer heads. Choosing all three at once, which is
+B.~Lindow's contribution, gives $2090$, $168$ and $310$: $43$ class heads
+are removed, at $-86$, to admit $39$ free heads at $+117$ and $26$
+second-layer heads at $+26$, for a net $+57$. The sequential search had already
+discarded this joint modification because each isolated change decreases the count.
+Both dimensions carry a second cap layer, at $|x|^{2}=3$ with $|y|=1$;
+what separates them is the number of admissible points.  Such a cap satisfies
+$\ip{y}{a}\le2$ whatever direction it points, since $|y||a|=2$; it carries the antipodal
+pair $\pm y$ and no more, three directions needing pairwise cosine $\le-1$; and the scaled
+owner $x=\tfrac{\sqrt3}{2}u$ deletes exactly $u$, because $\ip{x}{z}>2$ forces
+$\ip{u}{z}>4/\sqrt3$, that is $\ip{u}{z}=4$.  Two cap points for one deletion: $+1$ each.
+Its direction must clear the first-layer directions, whose covering radii differ ---
+$30^{\circ}$ for the hexagon, $45^{\circ}$ for the cuboctahedron --- so a first-layer head
+may meet a second-layer owner at $\ip{Y}{u}\le24$ in dimension $26$ and at
+$\ip{Y}{u}\le32$ in dimension $27$.  A free head $y=\pm2v$ has $\ip{Y}{u}=2\ip{v}{u}$, a
+multiple of $16$: it clears the bar $32$ and can never clear the bar $24$.  Dimension $27$
+therefore keeps its free heads and its second layer at once, $310$ heads over $3\,110$
+admissible owners, while dimension $26$ can open the layer only by removing every free
+head. The count above loses $96\cdot3$ points and adds $324$ second-layer points,
+for a net $+36$.  That layer is optimal and not merely the best found:
+its $1\,188$ admissible owners carry a graph under $\ip{u}{u'}=16$ that is exactly
+$64$-regular, constraint programming closes its independence number at $108$, and the three
+lines take three disjoint such sets, so $324$ is the maximum.  Surrendering dimension $27$'s free heads in the same
+way enlarges its admissible set from $3\,009$ to $4\,634$ and does not recover the loss of $387$ points.
+Its direction must clear the twelve first-layer directions, and that is where the two
+dimensions part: the hexagon's six edge midpoints leave a gap of $30^{\circ}$, at which
+not one of the $196\,560$ minimal vectors qualifies, while the cuboctahedron's covering
+radius is $45^{\circ}$, attained at its six square-face centres $\pm e_{1},\pm e_{2},
+\pm e_{3}$ -- three antipodal lines.  One quantum, and the admissible owners go from $0$
+to $3110$. Over that first layer the second layer is again an
+independent-set problem, and $310$ of them fit, $105+104+101$, jointly with the first
+layer rather than over a first layer already fixed --- which is what the joint optimisation
+admits, since on a first layer optimised alone only $105$ of them still fit.  Everything reduces to
+$\ip{Y}{u}\le32$ and $\ip{u}{u'}\le8$ on a line, since
+$\tfrac{\sqrt3}{48}\cdot32+\tfrac{2}{\sqrt6}=(2+\sqrt2)/\sqrt3<2$ and
+$\tfrac{3}{32}\cdot8+1=\tfrac74<2$:
+$196\,560+12+2\cdot2090+3\cdot168+310=\Kh{27}$. The package
+\texttt{dim26-27-iota-triangles} stores the heads as integer vectors with the
+index of their triangle, rebuilds the Leech vectors from the Golay code, decides
+every head--equator and head--head pair by integer comparison against the
+thresholds $144-96c$ ($c$ the exact largest cosine between two triangles of
+directions, in the scaling with minimum $32$) and the axis inequalities in
+$\mathbb{Q}(\sqrt2,\sqrt3)$, and rejects a head moved, duplicated or displaced.
+
+\subsection{Dimensions 28 to 31: a second layer, at a free
+height}\label{ss:d293031}
+
+\begin{theorem}\label{thm:293031}
+$K(28)\ge\Kh{28}$, $K(29)\ge\Kh{29}$, $K(30)\ge\Kh{30}$ and
+$K(31)\ge\Kh{31}$.
+\end{theorem}
+
+These are joint work in progress with H.~Cohn and B.~Lindow, and the account is
+the separate note of \S\ref{ss:d25}; as in \S\ref{ss:d2627} we record the shape
+and the verification. Table~\ref{tab:calib} is exact in the columns $k=4$
+through $k=7$, so the template of \S\ref{ss:calib} has no slack in any of them:
+every point beyond the published value has to come from outside
+\eqref{eq:families}.
+
+Normalise every point of $\R^{24+k}$ to squared length $4$, so that
+compatibility reads $\ip{P}{Q}\le2$, and write it as $(x,y)$ with $y\in\R^{k}$.
+In these units the three families of \eqref{eq:families} are the equator
+$(u,0)$, the caps $(\sqrt{2/3}\,u,(2/\sqrt3)z)$ and the axis $(0,2a)$, where $u$
+runs over the minimal vectors of $\Leech$, now of squared length $4$.
+
+Proposition~\ref{prop:cap} holds every lifted point at one level, and it is
+\eqref{eq:c3} --- two caps on distinct lines of one $C_i$ at a common direction
+--- that forces $t\ge1/(2(1-\gamma))=\tfrac23$. That constraint exists because a
+whole independent set rides each direction. A family that places only a
+\emph{few} points above each direction does not meet it, and for such a family
+the level is free. Write its points as $(x,hw)$ with $|w|=1$ and
+$|x|^{2}+h^{2}=4$, and call $h$ the \emph{height} and $x$ the \emph{head}. Four
+thresholds move with $h$:
+\begin{equation}\label{eq:heights}
+\begin{array}{ll}
+  \text{no equator point is deleted} & \ip{x}{v}\le2 \text{ for every minimal } v,\\[2pt]
+  \text{an axis point survives}      & \ip{w}{a}\le1/h,\\[2pt]
+  \text{two directions of one head}  & \ip{w}{w'}\le1-2/h^{2},\\[2pt]
+  \text{two heads on one direction}  & \ip{x}{x'}\le2-h^{2},
+\end{array}
+\end{equation}
+and against a cap the condition is
+\begin{equation}\label{eq:layercap}
+  \sqrt{2/3}\;\ip{x}{u}\;+\;\frac{2h}{\sqrt3}\,\ip{w}{z}\;\le\;2 ,
+\end{equation}
+with $u$ an owner and $z$ a direction of the part carrying it. The last line of
+\eqref{eq:heights} holds the number of heads on one direction to
+$2/(2-|x|^{2})$ when $|x|^{2}<2$: the unit vectors $x/|x|$ are then pairwise at
+cosine at most $-c$ with $c=(2-|x|^{2})/|x|^{2}$, and unit vectors so placed
+number at most $1+1/c$. The first line is the key property of such a layer is that it it
+does not remove an equator point; its additions are therefore limited to axis points and classes.
+
+Lattice facts supply the heads. If $g\in\Leech$ has $|g|^{2}=2r$ and $v$ is
+minimal, then $g-v$ has squared length $2r+4-2\ip{g}{v}$, an even integer that
+is $0$ or at least $4$; it is $0$ only for $g=v$, and the value
+$\ip{g}{v}=r+1$ would make it $2$, which no lattice vector has. Hence
+$\ip{g}{v}\le r$: at most $3$ for a head of squared length $6$ and at most $4$
+for one of squared length $8$. If $|x|^{2}=1$, so that $x=u_{0}/2$ for a minimal
+$u_{0}$, Cauchy--Schwarz gives $\ip{x}{v}\le2$ with equality only at
+$v=u_{0}$. So $x=v/2$ with $|v|^{2}=6$, $x=f/\sqrt3$ with $|f|^{2}=6$,
+$x=v/2$ with $|v|^{2}=8$ and $x=u_{0}/2$ all satisfy the first line of
+\eqref{eq:heights}, at heights $h^{2}=\tfrac52$, $2$, $2$ and $3$; these are the
+four that occur. The norm of the head is a second free parameter, the two
+entries at $h^{2}=2$ differ only in it, and it is the norm-$8$ one at $h=\sqrt2$
+that carries all four dimensions below. One consequence of \eqref{eq:layercap} is useful to record before the cases, because it does not depend on the height: if the
+direction equals the axis threshold, $\ip{w}{z}=1/h$, the second term
+is $2/\sqrt3$ whatever $h$ is, and the condition collapses to
+\begin{equation}\label{eq:capthr}
+  \ip{x}{u}\;\le\;\sqrt6-\sqrt2\;=\;1.0352\ldots
+\end{equation}
+
+\begin{table}[ht]
+\caption{The layer of Theorem~\ref{thm:293031}, in the normalisation
+$|P|^{2}=4$. The head $x$ is the $\R^{24}$ part of a layer point and $w$ its
+direction; $z$ is a cap direction. All four columns are one layer, the norm-$8$
+frame at height $\sqrt2$: the head runs over all $48$ vectors of a Leech frame
+and the direction over the whole cross-polytope of $\R^{k}$, which is $96k$
+points. The axis is the maximum $60^{\circ}$ code of \cite{ma-etal2025} that
+Table~\ref{tab:calib} reproduces, carried into the frame's coordinates --- and in
+dimensions $30$ and $31$ rotated first, which is free and leaves the layer unchanged. No layer point deletes an equator point, and the last three lines give the full count.}
+\label{tab:layers}
+\small\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lcccc}
+\toprule
+$k$ & $4$ & $5$ & $6$ & $7$\\
+dimension & $28$ & $29$ & $30$ & $31$\\
+\midrule
+height $h$ & $\sqrt2$ & $\sqrt2$ & $\sqrt2$ & $\sqrt2$\\
+$|x|^{2}=4-h^{2}$ & $2$ & $2$ & $2$ & $2$\\
+$|$head$|^{2}$ & $8$ & $8$ & $8$ & $8$\\
+head $x$ & $v/2$ & $v/2$ & $v/2$ & $v/2$\\
+directions $w$ & $\pm e_{1..4}$ & $\pm e_{1..5}$ & $\pm e_{1..6}$ & $\pm e_{1..7}$\\
+axis threshold $1/h$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$\\
+largest $\ip{w}{z}$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$ & $1/\sqrt2$\\
+directions per head & $8$ & $10$ & $12$ & $14$\\
+heads per direction & $48$ & $48$ & $48$ & $48$\\
+layer points & $384$ & $480$ & $576$ & $672$\\
+\midrule
+axis points kept & $16$ of $24$ & $32$ of $40$ & $68$ of $72$ & $118$ of $126$\\
+owner lines & $8\cdot248$ & $14\cdot248$ & $24\cdot248$ & $10\,328$\\
+net gain & $\Kgain{28}$ & $\Kgain{29}$ & $\Kgain{30}$ & $\Kgain{31}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\emph{Dimensions 28, 29 and 30: one layer.} Take $h=\sqrt2$ and the head from
+a lattice vector of squared length $8$: $x=v/2$, so that $\ip{x}{u}\le2$ with
+equality and the layer deletes nothing. Three of its four constraints are then
+free \emph{in every dimension}. The third line of \eqref{eq:heights} reads
+$\ip{w}{w'}\le0$, so one head carries a whole cross-polytope, $2k$ directions.
+The fourth reads $\ip{x}{x'}\le0$, so two heads share a direction as soon as
+their lattice vectors are non-acute --- and the $48$ vectors
+$\pm f_{1},\dots,\pm f_{24}$ of a frame satisfy that throughout, while $48$
+vectors of $\R^{24}$ pairwise at non-positive inner product \emph{are} a frame,
+so $24$ head lines is the most there is. The layer is
+\begin{equation}\label{eq:framelayer}
+  48\times2k \;=\; 96k \quad\text{points},
+\end{equation}
+$384$, $480$, $576$, $672$ in dimensions $28$, $29$, $30$, $31$.
+
+What is left is \eqref{eq:layercap}, and it is the whole content. If
+every owner is \emph{type $B$} for the frame --- $|\ip{u}{f_{i}}|=2$ for all
+$24$ heads, never $3$ or $4$ --- the threshold on the directions is
+\begin{equation}\label{eq:framethr}
+  \ip{z}{w}\;\le\;\sqrt{3/2}-\tfrac12\;=\;0.7247448\ldots,
+\end{equation}
+and the $\tau(k)$ cap directions are a root system: $D_{4}$, $D_{5}$, $E_{6}$,
+$E_{7}$ each have an orthonormal frame in which \emph{every} root has largest
+coordinate $1/\sqrt2=0.7071067\ldots$ For $E_{7}$ one has to rotate a pair of
+basis vectors by $45^{\circ}$, since two of its roots are otherwise aligned with
+a frame vector. So the margin is a single inequality, and it is the one the
+norm of the head permits:
+\begin{equation}\label{eq:sqrt2}
+  1/\sqrt2\le\sqrt{3/2}-\tfrac12
+  \quad\Longleftrightarrow\quad 1+1/\sqrt2\le\sqrt3
+  \quad\Longleftrightarrow\quad \sqrt2<\tfrac32 .
+\end{equation}
+A norm-$6$ head at the same height would need $\ip{f}{u}\le1$ instead, which
+forbids $11\,730$ minimal lines to each head where the norm-$8$ head forbids the
+$2\,094$ at $|\ip{v}{u}|\ge3$.
+
+So the layer costs nothing geometrically and everything in the classes: every
+one of them must be type $B$ for one common frame --- $8$ classes in dimension
+$28$, $24$ in dimension $30$, $42$ in dimension $31$, and $14$ in dimension
+$29$, which carries twelve zero-sum triangles and two antipodal pairs because
+$\tau(5)=40$ is not a multiple of $3$. This follows from the following coordinate choice. Choose the coordinates so that the frame is $8e_{1},\dots,8e_{24}$;
+then the type-$B$ lines are exactly the $759\times64=48\,576$ octad vectors
+$(\pm2^{8},0^{16})$ of the Golay code, and the whole monomial group
+$2^{12}{:}M_{24}$ permutes them. \emph{Every monomial image of a type-$B$ class
+is again a type-$B$ class}, so nothing has to be filtered and what is left is a
+packing. The remaining moves are explicit as well: a type-$B$ line is an octad
+together with a position in $\mathbb{F}_{2}^{6}$, a Golay sign word acts on it by
+translating that position inside its octad, and the sign word of a class is
+therefore an exactly solvable coordinate. Coordinate descent over the sign
+words, with a fresh batch of permutations at each visit to a class, gives $14$
+pairwise disjoint $248$-line classes in dimension $29$ --- the full
+$14\cdot248$, with nothing given up. Dimension $30$ is exact as well, at
+$24\cdot248=5\,952$, once the descent is replaced by freezing a core of twelve
+disjoint classes, pooling the monomial images disjoint from all of it and
+solving maximum clique on that pool. A subset of a class is again a class, so
+where a family is not exact the repeats are simply dropped.
+
+What the layer costs in axis points is second order, and a rotation recovers
+part of it. The condition is $|\ip{a}{w}|\le1/\sqrt2$, and what fails it is an
+axis point lying along a frame direction: of the axis of \cite{ma-etal2025},
+carried into the frame's coordinates, $16$ of $24$ survive in dimension $28$ and
+$32$ of $40$ in dimension $29$, where the eight omitted lines are at
+$|\ip{a}{w}|=1$ exactly. A maximum $60^{\circ}$ code is a rotated copy of the
+root system and the rotation is free, so in dimensions $30$ and $31$ the axis is
+turned before it is carried across --- by $45^{\circ}$, $45^{\circ}$ and
+$90^{\circ}$ in three coordinate planes, which keeps every coordinate an integer
+quadruple $(a+b\sqrt2+c\sqrt3+d\sqrt6)/24$ --- and $68$ of $72$ and $118$ of
+$126$ survive, against $48$ and $110$ unrotated. Hence
+\[
+  192\,592+3\cdot3\,968+16+384=\Kh{28},
+\]
+\[
+  189\,616+19\,840+32+480=\Kh{29},\quad
+  184\,656+35\,712+68+576=\Kh{30} ,
+\]
+the middle count having $12$ zero-sum triangles and $2$ antipodal pairs, since
+$\tau(5)=40$ is not a multiple of $3$ and the $40$ directions of a maximum
+$60^{\circ}$ code in $\R^{5}$ sum to zero, so $13$ disjoint triangles cannot be
+carved out of one.
+
+\emph{Dimension 31: the same layer, and a density.} Here $96k=672$, and the
+layer is available once the $42$ type-$B$ classes hold at least $10\,251$ of the
+$10\,416$ lines that $42$ full classes give --- $98.4$ per cent. The descent
+above reaches $10\,183$, and for a while that looked like the end of it. It is
+not an existence question: two uniform monomial images of the $248$-line class
+are disjoint with probability $p=0.4319$, so a family of $42$ is a clique in a
+graph of that density on the $\sim\!10^{12}$ images, where the random-graph
+clique number $2\ln(10^{12})/\ln(1/p)$ is about $66$. It is a question about
+what a search that can only \emph{sample} can reach: it places the $k$-th class
+while $np^{k-1}\ge1$ and therefore stops at $k=1+12\ln10/\ln(1/p)$, which is
+$34$ at $p=0.4319$, so forty-two needs $p\ge10^{-12/41}=0.5097$. The density is
+a design choice. Writing $S_{i}$ for the set of $44$ octads supporting class
+$i$, the probability that two images are disjoint falls with $|S_{i}\cap S_{j}|$,
+and
+\[
+  \sum_{i<j}|S_{i}\cap S_{j}|=\sum_{O}\binom{n_{O}}{2},\qquad
+  \sum_{O}n_{O}=42\cdot44=1\,848
+\]
+over the $759$ octads, so a flat octad coverage gives a stronger guarantee than additional
+further sampling: the sum is $1\,898$ for the family the uniform scan produced
+and at least $1\,419$ for any $42$ supports at all. Screening candidates on the
+free slots their octads still have, rather than on what they cost now, gives a
+family at $1\,670$ with $p=0.5467$ and $10\,328$ of the $10\,416$ owner lines,
+and
+\[
+  175\,904+61\,968+118+672=\Kh{31} .
+\]
+
+How far this can go is known to different depths. In all four dimensions the
+layer is at the ceiling \eqref{eq:framelayer} --- every vector of a frame on
+every direction of a cross-polytope, and $24$ head lines is the most $\R^{24}$
+holds. So is the axis, and exhaustively: a further axis point would be a
+\emph{unit} vector of $\{a:\ip{a}{a_{i}}\le\tfrac12,\ \ip{a}{z}\le\sqrt3/2,\
+|\ip{a}{w}|\le1/\sqrt2\}$, whose right-hand sides are all positive, so that set
+is a polytope with the origin interior and the convex $|a|$ attains its maximum
+at a vertex; enumerating the vertices of all four gives $0.7654$, $0.7929$,
+$0.8165$ and $0.8660$, and none of the four axes admits another point at all.
+The direction weight $w=\sum_{i}(|Z_{i}|-1)$ is at $\lfloor2\tau(k)/3\rfloor$,
+which is a theorem: two classes sharing a direction would meet at
+$\ip{u}{u'}\le1$ throughout and so be one class, so the parts are disjoint; a
+part is pairwise at $\le-\tfrac12$ and $|\sum z|^{2}\ge0$ holds it to three;
+across parts the cosines are $\le\tfrac12$; hence $\bigcup Z_{i}$ is a
+$60^{\circ}$ code, $3t+2q\le\tau(k)$, and the maximum of $2t+q$ over that is
+$\lfloor2\tau(k)/3\rfloor$, attained here as $16$, $26$, $48$ and $84$. Only
+$\tau(4)=24$ is proved, so only dimension $28$ reaches an unconditional ceiling:
+against the proved $\tau(5)\le44$, $\tau(6)\le77$ and $\tau(7)\le134$ the
+unconditional weights are $29$, $51$ and $89$, contributing $1\,488$, $1\,488$ and
+$2\,480$ points to anyone who improves a low-dimensional kissing number. What is
+otherwise left is the class problem of \S\ref{ss:class}, at $+32$, $+52$, $+96$
+and $+168$ for every extra line of the $248$-line independent set, against the
+Delsarte ceiling of $425.45$ lines; and in dimension $31$ also the packing,
+where $88$ repeated lines can contribute up to $+352$.
+
+\begin{sloppypar}
+Three packages verify the four --- \texttt{dim28-norm8-frame-layer},
+\texttt{dim29-30-frame-layer} and \texttt{dim31-frame-layer}. Each rebuilds the
+$196\,560$ minimal vectors from the Golay code and checks the inner-product
+signature of the $98\,280$ lines before trusting them, carries every direction
+and axis point as an exact algebraic number --- an integer quadruple
+$(a+b\sqrt2+c\sqrt3+d\sqrt6)/24$ for the frame layer --- and decides every pair
+exactly: integer inner products in $\R^{24}$, and $\Q(\sqrt2,\sqrt3)$ in
+$\R^{k}$. Each
+checks that the classes are disjoint sets of minimal vectors with pairwise inner
+products at most $1$, that the heads are lattice vectors of the stated squared
+length, that no equator point is deleted, and that the four families have
+pairwise distinct $(|x|^{2},|y|^{2})$, so that the count adds no point twice.
+\end{sloppypar}
+
+
+\subsection{Dimension 38: large codimension}\label{ss:d38}
+
+For $k\le7$ the number of parts of $Z$ binds in \eqref{eq:count}, and a part has
+maximum contribution when it is a triple: the number of triples is at most
+$\lfloor K(k)/3\rfloor$, which is $0,2,4,8,13,24,42$, so at most $42\times248$
+lines carry caps; one therefore takes the independent sets as large as possible.
+At $k=5$ the bound $13$ is not attained --- the $40$ directions of a maximum
+$60^{\circ}$ code in $\R^{5}$ sum to zero, so thirteen disjoint zero-sum triples
+would leave a fortieth direction summing to zero on its own --- but the weight
+$\sum_{i}(|Z_{i}|-1)=26$ is, by twelve triples and two antipodal pairs. At larger
+$k$ the parts of $Z$ outnumber the disjoint maximum independent sets available,
+and the binding question becomes how much of the shell admits a partition into
+independent sets, a colouring question.
+
+\begin{theorem}\label{thm:38}
+$K(38)\ge\Kh{38}$.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+Take $L=\Leech$, $k=14$ and $t=\tfrac23$. For $Z$ take the $1\,932$-point kissing
+configuration of $\R^{14}$, which admits a partition into $644$ zero-sum triples.
+The $98\,280$ minimal lines of $\Leech$ admit a partition into $644$ pairwise
+disjoint independent sets, so every line carries caps and the equator is empty:
+\eqref{eq:count} gives $196\,560-2\cdot98\,280+2\cdot98\,280\cdot3
+=6\cdot98\,280=589\,680$, the ceiling $3K(24)$ of the family.
+
+The pole set is non-empty even though $Z$ already occupies every direction of the
+$1\,932$-point code. By \eqref{eq:c6} a pole needs $30^\circ$ of separation from
+the directions; the covering radius of that code is $54.7^\circ$. There is a
+rotated copy of the code no point of which lies within $30^\circ$ of $Z$, so all
+$1\,932$ of them are poles and the total is $589\,680+1\,932=\Kh{38}$, which is
+exactly the family's ceiling $3K(24)+K(14)$.
+
+Such a rotation is not found by sampling. A $30^\circ$ cap has relative measure
+$1.50\times10^{-5}$ on $S^{13}$, so the $1\,932$ caps cover at most $2.89\%$ of
+it; a random rotation accordingly loses $56$ points on average, with standard
+deviation $11$, and an independent-points model gives $e^{-56}$ for a clean one.
+It is found instead by descending on $\mathrm{SO}(14)$. Scale the $w_i$ to
+$|w_i|^2=8$, so that the separation asks for $\ip{Qw_i}{w_j}\le4\sqrt3$; the
+objective
+$f(Q)=\sum_i\operatorname{softplus}\bigl(\operatorname{smax}_j\ip{Qw_i}{w_j}
+-4\sqrt3\bigr)$ is then differentiable, $\operatorname{smax}$ being a smooth
+maximum, and the geodesic step
+$Q\mapsto\exp(-\eta\,\operatorname{skew}(\nabla f\,Q^{\mathsf T}))Q$ keeps the
+iterate on the group. The real solution is
+then made rational by the Cayley transform, $(I-S)(I+S)^{-1}$ being rational and
+orthogonal for every rational skew-symmetric $S$, so the verification stays
+exact: $Q=N/D$ with $N$ integral, $NN^{\mathsf T}=D^2I$ and
+$|\ip{Nw_i}{w_j}|\le\operatorname{isqrt}(48D^2)$ for all $1\,932^2$ pairs.
+\end{proof}
+
+The partition into independent sets is the substantial step. Let
+$b(x,y)=\ip{x}{y}\bmod2$. Since $L$ is even, $b$ descends to an alternating
+bilinear form on the $\mathbb F_2$-space $L/2L$. For a totally isotropic subspace
+$R\subset L/2L$ of dimension $4$ put
+\[
+  X_R=\{\,\pm u \;:\; u\in\Lambda,\ b(u,x)=0 \text{ for every } x\in R\,\},
+\]
+which for the subspaces used here contains $6\,120$ of the $98\,280$ lines. Every
+known maximum independent set of $\Gamma_\gamma(\Leech)$ lies inside such a set. Local search restricted to one
+$X_R$ returns independent sets of $230$ to $244$ lines, whereas the same search
+on the whole graph returns $152$. The explicit partition is in \cite{repo}.
+
+
+\subsection{Dimension 39}\label{ss:d39}
+
+In dimensions $38$ and $39$ the chain that maximises the total has three
+levels, $(n,8,2)$, and reads
+\[
+  K(n)\;\ge\;A\bigl(n,\lceil n/4\rceil\bigr)+128\,A(n,8,8)+4\binom{n}{2}.
+\]
+
+\begin{theorem}\label{thm:39}
+$K(39)\ge\Kh{39}$.
+\end{theorem}
+
+\begin{proof}
+Echols \cite{echols2026} improves $A(39,8,8)$ from $3\,323$ to $3\,324$;
+Brouwer's table \cite{brouwer} carries the new value. With
+$A(39,10)\ge327\,680$ \cite{zinoviev-litsyn1984},
+\[
+  327\,680+128\cdot3\,324+4\cdot741 \;=\; 327\,680+425\,472+2\,964 \;=\; \Kh{39} . \qedhere
+\]
+\end{proof}
+
+The gain is $128\,(3324-3323)=128$. Echols \cite{echols2026} computes kissing
+numbers from the fixed level-one length $n_0=32$, which in dimension $39$ falls
+below the record; that paper therefore reports no value there. The chain
+optimises at $n_0=n$ in dimensions $38$, $39$, $40$, $43$ and $44$; among these, $38$ and $39$
+are the two whose totals exceed the published entry; \S\ref{ss:d38} supersedes
+dimension $38$. That entry is $755\,988$, which
+\cite{cohn-table} attributes to the Edel--Rains--Sloane construction; of the three
+dimensions named in \cite{sun-wang2026} it is dimension $43$, not dimension $39$, whose
+entry that table credits to the antipode construction. That paper also reconstructs the
+twelve cross-section packings of $1982$ in dimensions $38$--$47$ and computes their
+kissing numbers, reporting that they exceed the best previously tabulated lower bounds
+in dimensions $42$--$47$. Dimensions $38$ and $39$ are the only two this paper claims
+inside that span of $38$--$47$, and neither lies in $42$--$47$.
+
+The verification in \cite{repo} checks the constant-weight code over all
+$\binom{3324}{2}$ pairs and the ten geometric conditions of the chain as exact
+rational inequalities, three of them tight. The value $A(39,10)\ge327\,680$ is
+taken from \cite{zinoviev-litsyn1984} and is not verified here; the existing
+record $755\,988$ rests on the same value.
+
+
+\subsection{September attribution}
+
+The frozen manuscript described its original 53-entry scope as follows.
+
+\emph{The fifty-three listed below.} We have found no earlier published claim in dimensions
+$18$, $25$--$31$, $38$, $39$, $49$--$63$, $68$--$71$ or $73$--$96$. The one-point
+distribution of the minimal shell of $\Gsz$ follows from Venkov's theorem in a
+few lines; the bound in dimension $71$, which is that distribution's $n[0]$, may therefore
+already be known to specialists, though we have found no record of it. Dimensions $62$, $63$ and $96$
+carry no new mathematics either. They evaluate the construction of
+\cite{edel-rains-sloane1998} at three lengths where we find no record of its having
+been evaluated: its seven worked examples are dimensions $32$, $36$, $40$, $44$,
+$64$, $80$ and $128$. All three improve whenever the code tables do. The range
+``$32$ to $128$'' of that paper's abstract is the span of those seven examples; it
+tabulates no value by dimension, and dimension $96$ does not appear in it. Its own
+totals depend on the code tables in the same way, and it says in closing that it
+does not expect them to stand as those tables improve.
+
+
+\subsection{Historical obstruction notes}
+
+These notes concern the superseded dimension-$25$--$27$ constructions.
+
+\emph{The dimension-$25$ lens-head construction is bounded by $197\,623$.}
+Its equator is fixed, and every head removes exactly one equator point. Two
+heads can never share a removal: a head $x$ that removes the equator point $p$
+has $\ip{x}{p}\ge(18+\sqrt{30})/7=3.35389\ldots$, which one spherical $7$-design
+proves, whereas two compatible heads sharing a removal would both need
+$\ip{x}{p}\le\tfrac{10}{3}$; over the class heads of the shipped configuration
+the smallest such inner product is $3.36603$. The count $196\,560+H+3$ of \S\ref{ss:d25} is
+therefore exact, and only $H$ is at issue. The
+class-head core is a union of blocks, and over the entire norm-$6$ shell of
+$16\,773\,120$ vectors it is capped at $971$ heads. The supplement is an
+independent set in one explicit graph, on the complete pool of $1\,188$
+candidate heads over $1\,188$ distinct owners, whose density is $0.1538$;
+constraint programming bounds its independence number by $89$. With the two
+poles and the one non-lattice equator point contributing $3$, the construction
+cannot exceed $196\,560+971+89+3=197\,623$. The shipped configuration is within
+$44$ of that, so a further gain in dimension $25$ requires a head outside the
+block-plus-supplement family altogether. The instance does not close, so $89$ is
+what a particular solve proves rather than the independence number itself; a fixed
+seed reproduces it, and other runs of the same model have proved bounds as low as
+$88$. Every such bound is valid, so the figure is a ceiling on the construction in
+any case.
+
+\emph{The second-layer choices in dimensions $25$ to $27$ fail at opposite ends
+of one structure.} Dimensions $26$ and $27$ carry a second cap layer above the
+first, whose heads have $|x|^{2}=3$, lie at height $1$, carry one antipodal pair
+of directions and contribute $+1$ apiece compared with $+2$ for a first-layer head. A
+candidate is admitted only when \emph{every} first-layer head blocking it is
+deleted, so what governs the choice is not how often blockers are shared on
+average but whether candidates with few blockers share those blockers with each
+other. Neither is it enough to evaluate one candidate at a time: the class heads, the
+free heads and the second layer compete for the same owners, and a change that
+loses in isolation can improve the total once the other two are allowed to move with it, which
+is how the configuration of \S\ref{ss:d2627} was found. Dimension $27$ fails although the sharing is high. Its next admissible
+tier has $10\,030$ candidates carrying $252\,582$ incidences on $2\,095$ blocking
+heads, some $121$ candidates apiece, yet each candidate carries about $25$
+blockers and needs all of them at once: deleting the $1\,200$ heads that block
+the most unlocks $253$ candidates, and the choice becomes unfavorable only when the whole class
+layer is gone, with a loss of $4\,190$.
+
+Dimension $25$ has the opposite relative contribution and still gains nothing. Its lens heads
+are forced to height $1$, since the poles require $y\le1$ and a mirror pair
+$y\ge1$ ; removing the two poles opens a second layer at $y=2/\sqrt3$,
+$|x|^{2}=8/3$, $x=\tfrac23v$ with $v\in\Leech$ of norm $6$. For such a head the
+condition $\ip{x}{z}\le2$ against the equator reads $\ip{v}{z}\le3$, and every
+norm-$6$ vector attains exactly $3$, so the head removes nothing at all: it contributes $+2$ where a lens head contributes $+1$ because it removes an
+equator point. Deleting a lens head loses $1$ and admitting a free head adds
+$2$, the opposite of the ratio in dimensions $26$ and $27$. The joint improvement is
+nevertheless empty. Of $1.3$ million norm-$6$ directions sampled against the
+shipped layer, the $654$ blocked by at most ten lens heads are blocked by $630$
+distinct heads between them, barely one apiece. Here the blockers are
+few but private, and maximising $2|F|-|D|-2$ over that instance is optimal at
+$0$. Neither the relative contribution nor the average sharing settles the question;
+what matters is whether a set of candidates can be found whose blockers coincide.
+
+Nor does dimension $25$ admit the other kind of second layer, the one that carries
+dimensions $26$ and $27$: class heads at $|x|^{2}=8/3$, of the form $x=u+v/3$ with
+$u$ minimal and $|v|^{2}=6$, $\ip{u}{v}=-3$. At $k=1$ such a head carries both
+directions $\pm1$, since two directions of one head need
+$\ip{w}{w'}\le1-2/h^{2}=-\tfrac12$ and $\R^{1}$ offers only $-1$; it therefore
+gives two cap points for the one equator point it removes, contributing $+1$, exactly as
+a lens head does, and it removes the two poles. Three of them would already improve on
+$\Kh{25}$. None exists. Such a head must meet every lens head at
+$\ip{x}{x'}\le2-2/\sqrt3$, a cosine of $0.2989$, and over $5.1$ million of them,
+drawn from the blocks of as many norm-$6$ vectors, the smallest cosine attained
+against the shipped layer is $0.4034$.
+
+\begin{table}[ht]
+\caption{The fifty-three improvements, grouped by construction; $\#$ is the number
+of dimensions in a row. The gain is $K_{\mathrm{here}}-K_{\mathrm{prev}}$ and the
+factor their ratio, computed dimension by dimension, with the factor
+attaining both its extremes at an end of the dimension range, to the two decimals
+shown; the largest gain need not, and in the $28$--$31$ row it is dimension $30$. ``Previously'' is \cite{cohn-table}
+where that table has an entry and otherwise the value of \S\ref{ss:tables}.
+Dimensions $44$ to $47$ are absent, for the reasons given with
+Table~\ref{tab:all}, which gives every dimension.}
+\label{tab:summary}
+\small\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{llrrrl}
+\toprule
+construction & dimensions & \# & largest gain & factor & where\\
+\midrule
+$\Gsz$ cross-sections & $68$--$71$ & $4$ & $\Kgain{71}$ & $1.09$--$7.85$ & \S\ref{ss:g72}\\
+layers over $\Leech$ & $25$--$27$, $38$ & $4$ & $\Kgain{38}$ & $1.00$--$1.04$ & \S\ref{ss:d25}--\ref{ss:d38}\\
+second layers over $\Leech$ & $28$--$31$ & $4$ & $\Kgain{30}$ & $1.00$--$1.00$ & \S\ref{ss:d293031}\\
+layers over $\Pff$ & $49$--$61$ & $13$ & $\Kgain{61}$ & $1.00$--$1.14$ & \S\ref{ss:big}\\
+the \textsc{ers} chain & $62$, $63$ & $2$ & $\Kgain{63}$ & $1.36$--$2.64$ & \S\ref{ss:d6263}\\
+the \textsc{ers} chain at $96$ & $96$ & $1$ & $\Kgain{96}$ & $2.07$--$2.07$ & \S\ref{ss:d96}\\
+layers over $\Gsz$ & $73$--$95$ & $23$ & $\Kgain{95}$ & $1.00$--$1.04$ & \S\ref{ss:big}\\
+constant-weight codes & $39$ & $1$ & $\Kgain{39}$ & $1.00$--$1.00$ & \S\ref{ss:d39}\\
+the bent-coset hexagon & $18$ & $1$ & $\Kgain{18}$ & $\Kfac{18}$--$\Kfac{18}$ & \S\ref{sec:d18}\\
+\midrule
+total & & $53$ & & &\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In Table~\ref{tab:summary} the factor is largest where the published table has no
+entry at all. Three rows exceed $2$, and in none of them is the gain a new
+construction: the cross-sections count a classical configuration, and dimensions
+$62$, $63$ and $96$ evaluate a construction of $1998$ against the code tables of
+$2026$. The rows
+with factors near $1$ span the most dimensions, $46$ of the $53$, though the two
+largest absolute gains lie in rows whose factor exceeds $2$.
+
+
+\section{The historical results table}\label{sec:historical-results}
 
 \begin{longtable}{rrrl}
 \caption{All fifty-three improvements. ``Previously'' is \cite{cohn-table} where
 that table has an entry and otherwise the direct sum or inherited value of
 \S\ref{ss:tables}. Dimensions $44$ to $47$ are absent:
 \cite{sun-wang2026} gives larger values in dimensions $44$ and $45$;
-dimensions $46$ and $47$ are already in the literature (\S\ref{ss:new}).}\label{tab:all}\\
+dimensions $46$ and $47$ are already in the literature (\S\ref{ss:new}).}\label{tab:historical}\\
 \toprule
 $n$ & previously & this work & construction\\
 \midrule
@@ -2191,331 +2566,29 @@ $95$ & $\Kp{95}$ & $\Kh{95}$ & layers over $\Gsz$\\
 $96$ & $\Kp{96}$ & $\Kh{96}$ & \textsc{ers} chain $(96,24,6,1)$\\
 \end{longtable}
 
-\section{Remarks}\label{sec:remarks}
-
-\subsection{Obstructions}\label{ss:obstructions}
-
-Several constructions reach their exact ceiling. Details and certificates are in
-\cite{repo}.
-
-\emph{The Cohn--Li construction is exhausted in dimensions $18$, $20$ and $21$.}
-It adjoins to a base configuration a set of vectors indexed by words orthogonal
-to a constant-weight code, two such vectors being compatible exactly when their
-Hamming distance is at least $n/4$ \cite{cohn-li2024}. The words in question form
-a punctured Golay code of $4\,096$ elements. The number adjoined is therefore the
-independence number of a Cayley graph on $\mathbb F_2^{12}$, whose connection set
-$\Sigma$ consists of the non-zero words of weight less than $n/4$. For an
-abelian Cayley graph the Delsarte bound equals the Lov\'asz theta function. In
-dimensions $20$ and $21$ both equal $2\,048$, which \cite{cohn-li2024} attains.
-In dimension $20$ the set $\Sigma$ has five elements and they are linearly
-independent, so each of the $128$ components of the graph is the $5$-cube,
-bipartite with independence number $16$, whence $128\times16=2\,048$. In dimension
-$18$ the number is $768$ and is attained, but the construction then totals
-$6\,500+768=7\,268$, short of the $\Kp{18}$ that \cite{cohn-li2024} prove in that
-dimension by a configuration of a different shape. That other shape is the hexagon
-of \S\ref{sec:d18}, and it is \emph{not} at a ceiling: its outer tier rises from
-$256$ to $960$, which is the whole of the improvement recorded there. A ceiling
-established for one shape says nothing about the dimension while another shape
-holds its record.
-
-\emph{Dimension $19$ is closed at the value of Ho.} Here the graph has four
-components. Each is the Cayley graph on $\mathbb F_2^{10}$ with a connection set
-$\Sigma$ of $21$ elements; the construction produces $10\,668+4\alpha$
-points, where $\alpha$ is the independence number of one component. Exactly one
-element $t$ of $\Sigma$ has odd weight. Writing $H$ for the even-weight
-hyperplane, the two halves $H$ and $H+t$ induce the same
-$512$-vertex graph $G_0$, and the edges between them form the perfect matching
-$x\mapsto x+t$; hence $\alpha\le2\alpha(G_0)$. Constraint programming, with the
-inequality that an independent set meets a $5$-cycle of $G_0$ in at most two
-vertices, proves $\alpha(G_0)=160$ optimal. Hence $\alpha\le320$, which
-\cite{ho2026} attains; $11\,948$ is the exact ceiling of the construction.
-
-\emph{The dimension-$25$ lens-head construction is bounded by $197\,623$.}
-Its equator is fixed, and every head removes exactly one equator point. Two
-heads can never share a removal: a head $x$ that removes the equator point $p$
-has $\ip{x}{p}\ge(18+\sqrt{30})/7=3.35389\ldots$, which one spherical $7$-design
-proves, whereas two compatible heads sharing a removal would both need
-$\ip{x}{p}\le\tfrac{10}{3}$; over the class heads of the shipped configuration
-the smallest such inner product is $3.36603$. The count $196\,560+H+3$ of \S\ref{ss:d25} is
-therefore exact, and only $H$ is at issue. The
-class-head core is a union of blocks, and over the entire norm-$6$ shell of
-$16\,773\,120$ vectors it is capped at $971$ heads. The supplement is an
-independent set in one explicit graph, on the complete pool of $1\,188$
-candidate heads over $1\,188$ distinct owners, whose density is $0.1538$;
-constraint programming bounds its independence number by $89$. With the two
-poles and the one non-lattice equator point contributing $3$, the construction
-cannot exceed $196\,560+971+89+3=197\,623$. The shipped configuration is within
-$44$ of that, so a further gain in dimension $25$ requires a head outside the
-block-plus-supplement family altogether. The instance does not close, so $89$ is
-what a particular solve proves rather than the independence number itself; a fixed
-seed reproduces it, and other runs of the same model have proved bounds as low as
-$88$. Every such bound is valid, so the figure is a ceiling on the construction in
-any case.
-
-\emph{The second-layer trades in dimensions $25$ to $27$ fail at opposite ends
-of one structure.} Dimensions $26$ and $27$ carry a second cap layer above the
-first, whose heads have $|x|^{2}=3$, sit at height $1$, carry one antipodal pair
-of directions and are worth $+1$ apiece against a first-layer head's $+2$. A
-candidate is admitted only when \emph{every} first-layer head blocking it is
-deleted, so what governs the trade is not how often blockers are shared on
-average but whether candidates with few blockers share those blockers with each
-other. Neither is it enough to price one trade at a time: the class heads, the
-free heads and the second layer compete for the same owners, and a trade that
-loses in isolation can pay once the other two are allowed to move with it, which
-is how the configuration of \S\ref{ss:d2627} was found. Dimension $27$ fails although the sharing is high. Its next admissible
-tier has $10\,030$ candidates carrying $252\,582$ incidences on $2\,095$ blocking
-heads, some $121$ candidates apiece, yet each candidate carries about $25$
-blockers and needs all of them at once: deleting the $1\,200$ heads that block
-the most unlocks $253$ candidates, and the trade closes only when the whole class
-layer is gone, at a cost of $4\,190$.
-
-Dimension $25$ inverts the exchange rate and still gains nothing. Its lens heads
-are forced to height $1$, since the poles require $y\le1$ and a mirror pair
-$y\ge1$; surrendering the two poles opens a second layer at $y=2/\sqrt3$,
-$|x|^{2}=8/3$, $x=\tfrac23v$ with $v\in\Leech$ of norm $6$. For such a head the
-condition $\ip{x}{z}\le2$ against the equator reads $\ip{v}{z}\le3$, and every
-norm-$6$ vector attains exactly $3$, so the head removes nothing at all: it is
-worth $+2$ where a lens head, which pays for itself with a removal, is worth
-$+1$. Deleting a lens head therefore costs $1$ and admitting a free head gains
-$2$, the opposite of the ratio in dimensions $26$ and $27$. The trade is
-nevertheless empty. Of $1.3$ million norm-$6$ directions sampled against the
-shipped layer, the $654$ blocked by at most ten lens heads are blocked by $630$
-distinct heads between them, barely one apiece. Here the blockers are
-cheap but private, and maximising $2|F|-|D|-2$ over that instance is optimal at
-$0$. Neither the exchange rate nor the average sharing settles such a trade; what
-settles it is whether a set of candidates can be found whose blockers coincide.
-
-Nor does dimension $25$ admit the other kind of second layer, the one that carries
-dimensions $26$ and $27$: class heads at $|x|^{2}=8/3$, of the form $x=u+v/3$ with
-$u$ minimal and $|v|^{2}=6$, $\ip{u}{v}=-3$. At $k=1$ such a head carries both
-directions $\pm1$, since two directions of one head need
-$\ip{w}{w'}\le1-2/h^{2}=-\tfrac12$ and $\R^{1}$ offers only $-1$; it therefore
-gives two cap points for the one equator point it removes, worth $+1$, exactly as
-a lens head is, and it costs the two poles. Three of them would already improve on
-$\Kh{25}$. None exists. Such a head must meet every lens head at
-$\ip{x}{x'}\le2-2/\sqrt3$, a cosine of $0.2989$, and over $5.1$ million of them,
-drawn from the blocks of as many norm-$6$ vectors, the smallest cosine attained
-against the shipped layer is $0.4034$.
-
-For a kissing configuration $X\subset S^{d-1}$ put
-\[
-  m(X)=\min_{z\in S^{d-1}}\ \max_{x\in X}\ \ip{z}{x}.
-\]
-A further point may be added to $X$ exactly when $m(X)\le\tfrac12$, so $X$ is
-maximal exactly when $m(X)>\tfrac12$; we call $2m(X)-1$ the \emph{margin} of
-$X$. The values of $m$ below are obtained by numerical maximisation of $|z|$ over
-the polytope $\{z:\ip{z}{x}\le\tfrac12 \text{ for all } x\in X\}$, whose maximum
-is $1/(2m(X))$; where an exact algebraic value is quoted, it is confirmed in
-rational arithmetic.
-
-\emph{$\Lambda_{21}$, $\Lambda_{22}$ and $\Lambda_{23}$ are maximal spherical
-codes,} with $m=\sqrt{8/29}$, $\sqrt{3/11}$ and $\sqrt{4/15}$, so no point may be
-added to any of them; the level argument of \S\ref{ss:d25} has no analogue
-there. The remaining cells of \S\ref{ss:onepoint} add nothing either. Fix
-$u\in\Lambda$ and project the shell of $\Leech$ onto $u^\perp$. The cell $n[0]$
-already lies in $u^\perp$ and is the minimal shell of $\Lambda_{23}$. Two
-projected vectors taken from opposite signs of the cell $n[1]$, or of the cell
-$n[2]$, can have inner product above $\tfrac12$; call such a pair a conflict. At
-most one sign of each cell is therefore available. On the union of $n[0]$ with
-one sign of each of the other two, conflicts occur only between $n[0]$ and the
-rest: each vector of $n[0]$ conflicts with $1\,024$ of the $47\,104$ and with
-$44$ of the $4\,600$, while these conflict with $2\,025$ and $891$ vectors of
-$n[0]$ respectively. Weighting each edge by
-$1/2025$ or by $1/891$ accordingly gives a fractional matching under which every
-vector of $n[0]$ carries load $1024/2025+44/891<1$. The bipartite matching
-polytope is integral, so a matching saturates the $51\,704$ vectors outside
-$n[0]$. By K\"onig's theorem the largest kissing configuration obtainable this
-way has exactly $93\,150$ points.
-
-\emph{Every published record in dimensions $9$--$19$ is maximal,} its largest cosine
-$m$ exceeding $\tfrac12$ by between $4.4\%$ (dimensions $17$ and $19$) and $34.2\%$
-(dimension $10$). Dimensions $14$ and $15$ have the same value $m=\sqrt{2/7}$.
-
-\emph{The antipode construction is bounded by a spherical cap.} Fix linearly
-independent $u_1,\dots,u_k\in\Lambda$, let $\pi$ denote the orthogonal projection
-of $\R^n$ onto their span, and for $p\in\pi(L)$ put
-$f(p)=\#\{w\in\Lambda:\pi(w)=p\}$, so that $f(0)=|S|$ in the notation of
-Lemma~\ref{lem:cross}. The construction of \cite{sun-wang2026} chooses a finite
-$T\subset\pi(L)$ whose largest squared pairwise distance $\delta$ is less than
-$\mu$ and returns the maximum over $p\in T$ of $\sum f(q-p)$, the sum running
-over the $q\in T$ with $|q-p|^2=\delta$. Over all such $T$ this maximum equals
-the largest weight of a clique, taken over all $\delta\in(0,\mu)$, in the graph
-on $\{v\in\pi(L):|v|^2=\delta,\ f(v)>0\}$ in which $v$ carries weight $f(v)$ and
-$v,v'$ are adjacent when $\ip{v}{v'}\ge\delta/2$. Adjacency
-means an angle of at most $60^\circ$, so a clique lies in a spherical cap of that
-angular radius about any of its members, and the construction cannot exceed the
-total weight of the heaviest such cap. Two members lie within $30^\circ$ of their
-bisector, but the radius does not stay there: three members pairwise at exactly
-$60^\circ$ need $\arccos\sqrt{2/3}=35.26^\circ$. The cap bound improves on $f(0)$
-alone only when $f(0)$ is already within about $10\%$ of the value it has to
-exceed, as in dimensions $44$ through $47$.
-
-\subsection{The margin above dimension 48}\label{ss:exposure}
-
-Among the dimensions at issue the tables have a single entry, at $n=80$, where it
-agrees with the direct sum of \S\ref{ss:tables}. Everywhere else above dimension
-$48$ the value a bound has to exceed is not a tabulated one but the largest a known
-construction gives. That construction
-is Edel--Rains--Sloane, evaluated in the dimension itself rather than inherited
-from a smaller one (Remark~\ref{rem:ers}). We therefore ran the chain of
-\S\ref{sec:ers} in every dimension of Table~\ref{tab:all} above $48$, with the
-best published code at each level, and asked of each bound how large the
-level-one constant-weight code $A(n,n_1,n_1)$ would have to be for the chain to
-overtake it. Divided by the best code available at those parameters, that is the
-factor by which the published constructions would have to be beaten.
-
-No bound of Table~\ref{tab:all} falls below the chain, and the factors are far
-from uniform. \emph{Dimension $68$ is the
-most exposed bound in this paper}: its margin over the chain is $8.9\%$, its
-level-one weight is $16$, and $16$ is the one weight at which Edel--Rains--Sloane
-built a strong code of their own, giving $A(64,16,16)\ge30\,828$. A code with
-$A(68,16,16)\ge45\,235$ would overturn Theorem~\ref{thm:6869} in that dimension,
-a factor $1.47$; for calibration, $30\,828$ beats the grid map of
-\S\ref{ss:d6263} at the same parameters by $1.88$. No $A(68,16,16)$ has been
-published, so the exposure is to a better code and not to the literature as it
-stands. The next smallest factor is $4.06$, in dimension $95$; every other
-dimension exceeds $5$. Dimensions $62$, $63$ and $96$ are the chain, so the question
-does not arise there.
-
-\subsection{The maximum independent set in \texorpdfstring{$\Gamma_\gamma(\Leech)$}{Gamma(Leech)}}\label{ss:class}
-
-Section~\ref{sec:cap} depends on the largest number of minimal lines of $\Leech$
-that are pairwise at $|\cos|\le\tfrac14$. The record is $248$ lines
-\cite{ma-etal2025}, after $240$ \cite{cohn-jiao-kumar-torquato2011} and $244$
-\cite{kallal-kan-wang2017}; the best upper bound is $\lfloor 4680/11\rfloor=425$
-\cite[\S7]{cohn-jiao-kumar-torquato2011}. By \eqref{eq:count} one further line in
-every independent set contributes $2\sum_i(|Z_i|-1)$, so raising the record by a
-single line gives $+2$, $+8$, $+16$, $+32$, $+52$, $+96$ and $+168$ in dimensions
-$25,\dots,31$ respectively.
-
-The Delsarte linear programme, the Lov\'asz theta function and the Hoffman ratio
-bound on the association scheme whose relations on the $98\,280$ lines are
-$|\ip{u}{u'}|\in\{0,1,2\}$ all give $4680/11$, so no two-point relaxation
-improves it. The three-point semidefinite bound of Bachoc and
-Vallentin \cite{bachoc-vallentin2008} does not improve it at any truncation
-computed, the positivity constraints never being active. Closing the gap requires a four-point relaxation
-or an argument using the lattice structure. B.~Lindow has since obtained $418$
-for lines of minimal vectors of $\Leech$, by a three-point bound over the
-Terwilliger algebra of the automorphism group of $\Leech$ with an exact rational
-dual (private communication, September 2026); for an arbitrary line system in
-$\R^{24}$ at $|\cos|\le\tfrac14$ the bound $425$ stands.
-
-\subsection{Dimension 17}\label{ss:d17}
-
-The layered family over a $\Lambda_{16}$ equator reduces in dimension $17$ to a
-single integer: its largest member has $5\,346+2\alpha$ points, where $5\,346$ is
-the kissing number of $\Lambda_{17}$ and $\alpha$ is again an independence number
-in a Cayley graph. A Parseval argument excludes the support sizes $7$ and $8$,
-leaving the supports of \cite{cohn-li2024}; the remainder of the configuration is
-exactly $512$ vectors up to sign.
-
-The value $\alpha=192$ is attained by \cite{cohn-li2024}, and it is optimal. The
-vertex set is not an arbitrary $1\,024$-element set: it is
-$K'=\{b\in\mathrm{RM}(2,4):|b\cap S_0|\text{ even}\}$, a binary linear code, hence
-an elementary abelian group $\mathbb{F}_2^{10}$, and $W_4\subseteq K'$ is symmetric.
-The graph is therefore a translation scheme, Delsarte's linear programming bound
-applies, and for a Cayley graph on an abelian group that bound is exactly
-$\vartheta'$. Its value is $192$.
-
-\begin{proposition}\label{prop:d17}
-$\alpha=192$, so the layered family of dimension $17$ contains no configuration
-with more than $5\,730$ points.
-\end{proposition}
-
-\begin{proof}
-Let $C\subseteq K'$ have no two elements differing by a member of $W_4$. For any
-$g\colon K'\to\Q$ with $\widehat{g}\ge0$,
-\[
-  0\;\le\;\tfrac{1}{1024}\sum_{y}\widehat{g}(y)\Bigl|\sum_{c\in C}\chi_y(c)\Bigr|^{2}
-   \;=\;\sum_{c,c'\in C}g(c-c')\;\le\;|C|\,g(0)-|C|\bigl(|C|-1\bigr)
-\]
-whenever $g\le-1$ off $W_4\cup\{0\}$, so $|C|\le 1+g(0)$. Take $g$ whose
-normalised Fourier coefficients $b_y=\widehat{g}(y)/1024$ depend only on the
-eigenvalue $\lambda(y)=\sum_{w\in W_4}\chi_y(w)$ and on whether $y$ is trivial on
-the fibre subgroup. With $b_y=0$ on the remaining $118$ characters:
-\setlength{\arraycolsep}{4pt}
-\[
-\begin{array}{c|cccccc}
-(\lambda,\ y|_H\text{ trivial}) & (30,\text{no}) & (12,\text{yes}) & (12,\text{no})
-  & (6,\text{no}) & (-4,\text{no}) & (-2,\text{no})\\ \hline
-\#\{y\} & 16 & 10 & 120 & 160 & 360 & 240\\
-b_y & 65/80 & 40/80 & 30/80 & 28/80 & 10/80 & 9/80\\
-\text{mass} & 13 & 5 & 45 & 56 & 45 & 27
-\end{array}
-\]
-\setlength{\arraycolsep}{5pt}
-Then $b\ge0$ and $g(0)=\sum_y b_y=191$, while $g\le-1$ at all
-$963$ points outside $W_4\cup\{0\}$: exactly $-1$ at $887$ of them, $-\tfrac{21}{5}$
-at $60$ and $-9$ at $16$. Scaled by $80$ every quantity is an integer, so the
-verification is one Walsh--Hadamard transform in exact arithmetic. This gives
-$\alpha\le192$; the configuration of \cite{cohn-li2024} is an independent set of
-size $192$ --- six pairwise non-adjacent fibres --- so $\alpha=192$.
-\end{proof}
-
-Two coarser relaxations both stop at $256$, and for the same reason. The spectrum
-of the graph is $60^{1}30^{16}12^{130}6^{160}(-2)^{240}(-4)^{375}(-10)^{96}
-(-20)^{6}$, so the ratio bound is $1024\cdot20/80=256$; and the quotient on the
-$32$ fibres has clique number $4$, forcing a cover by eight $4$-cliques of exact
-local bound $32$. Both are satisfied by the uniform fractional point $1/4$ on the
-fibres, as is every clique, block-pair and odd-hole cut, so no relaxation phrased
-on the quotient can beat $256$. The linear programme over the group does not
-factor through the quotient. As above, the conclusion applies to the family
-alone.
-
-\subsection{Verification}\label{ss:verif}
-
-The package \cite{repo} produces and checks every number above. It applies the
-following standards.
-
-\begin{itemize}
-\item \emph{No floating-point arithmetic decides any bound of
-      Table~\ref{tab:all}.} Every linear programming bound carries an exact
-      rational dual certificate (Lemma~\ref{lem:dual}); the solver is used only
-      to propose a dual vector. What decides the remaining bounds is an integer
-      comparison. Two scans are too large to run in arbitrary-precision
-      integers --- the axis layer of dimension $95$ compares $93\,150^2$ inner
-      products --- and are run in floating point on integer operands bounded so
-      that every product and every partial sum is exactly representable. The
-      bound is asserted before the scan; where it does not hold, the operand is
-      split into two limbs at bit $31$ and recombined exactly.
-\item \emph{Every Gram matrix is proved realizable before use}, by
-      Lemma~\ref{lem:realize} or by exhibiting a $k$-tuple that carries it. The
-      ones neither licensed nor exhibited are recorded and discarded.
-\item \emph{Configurations small enough to write down are checked in
-      coordinates.} The dimension-$27$ configuration is verified by two
-      deliberately different arguments, one of which compares all
-      $\binom{200540}{2}=20\,108\,045\,530$ pairs; that configuration is now
-      superseded (\S\ref{ss:d2627}), and the two configurations of \S\ref{ss:d2627},
-      in dimensions $26$ and $27$, are verified in exact arithmetic, the
-      head--axis inequalities in $\mathbb{Q}(\sqrt2,\sqrt3)$. The four of
-      \S\ref{ss:d293031} are verified the same way, in
-      $\mathbb{Q}(\sqrt2,\sqrt3)$, and each of those checks includes that
-      the four families of points have pairwise distinct
-      $(|x|^{2},|y|^{2})$ --- a statement about the point set rather than about
-      any angle, and the one the count rests on.
-\item \emph{The cross-section method is validated against every independently
-      known value} (Table~\ref{tab:validate}). The inequalities and the counting
-      formula of the layered construction are re-derived from first principles
-      in exact rational arithmetic, independently of the code that applies them.
-\item \emph{Large intermediate data is regenerated by deterministic scripts}
-      that re-verify every property the claims depend on.
-\end{itemize}
 
 \section*{Use of AI assistance}
 
 The construction of \S\ref{ss:d27} was found by Claude Opus~5 (Anthropic, maximum
-reasoning effort) in a chat session in which the author provided the problem,
+reasoning effort) in a chat session in which Alexey Kravatskiy provided the problem,
 Cohn's table \cite{cohn-table} and Cohn's data set \cite{cohn-data}. It appeared
 at the fortieth prompt; most of the thirty-nine earlier prompts were some form of
 ``try harder''.
 
 The remaining constructions, the package \cite{repo} and this exposition were then
-developed by the author with Claude Code (Anthropic), a coding agent built on the
-same model; those of \S\ref{ss:d25} and \S\ref{ss:d2627} with Claude Fable~5.1
-in the same way, and those of \S\ref{ss:d293031} with Claude Code again, all
-three inside the joint work with H.~Cohn and B.~Lindow. The agent proposed constructions, implemented and ran the verification
-code, and drafted the exposition. The author set the direction, selected the lines
-to pursue and reviewed the text and the certificates.
+developed by Kravatskiy with Claude Code (Anthropic), a coding agent built on the
+same model; those of the historical dimensions $25$--$27$ with Claude Fable~5.1
+in the same way, and those of the historical frame layer with Claude Code again,
+all three inside the joint work with H.~Cohn and B.~Lindow. GPT-6 Astra and GPT-6
+Sol were used inside ChatGPT and in OpenAI Codex. Astra was used by H.~Cohn to
+prepare the long internal summary of the dimensions $25$--$27$ included in the
+correspondence; Codex was used in that collaboration for computational
+exploration and exact certification, including the four-triangle repartition and
+the later construction choices recorded in the correspondence. These tools also
+assisted with editorial review, code review, arithmetic cross-checks,
+implementation, verification runs and exposition;
+the authors set the mathematical direction, selected the lines to pursue, and
+reviewed every text, certificate and stated limitation.
 
 In neither setting did the model predict success, and it said so in plain terms:
 ``I have not produced a new SOTA \dots\ continuing would be me generating

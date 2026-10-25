@@ -36,6 +36,8 @@ def main():
         replay(source, 'dim61_96/expanded_support_layers.py')
         replay(source, 'dim61_96/support_doubling.py')
         replay(source, 'dim61_96/section95_search.py')
+        replay(source, 'dim61_96/support_pairing_certificate.py')
+        replay(source, 'dim61_96/mixed_pair_certificate.py')
         fresh = {}
         report = json.loads((source/'dim49plus/latitude_compression.json').read_text())
         fresh[61] = report['counts']['total']
@@ -44,6 +46,13 @@ def main():
             fresh.update({int(d):r['total'] for d,r in report['dimensions'].items()})
         fresh[95] = json.loads((source/'dim61_96/section95_search.json').read_text())['dimension95_total']
         fresh[96] = json.loads((source/'dim61_96/support_doubling.json').read_text())['dimension96']['total']
+        pairing = json.loads((source/'dim61_96/support_pairing_certificate.json').read_text())
+        for dim, row in pairing['dimensions'].items():
+            assert row['bound'] == sum(row['terms'].values())
+            fresh[int(dim)] = max(fresh[int(dim)], row['bound'])
+        mixed = json.loads((source/'dim61_96/mixed_pair_certificate.json').read_text())
+        for dim, row in mixed['dimensions'].items():
+            fresh[int(dim)] = max(fresh[int(dim)], row['bound'])
         assert fresh == {r['dimension']:r['total'] for r in results()}
     print(json.dumps(dict(status='PASS', results=results(), full_codes='--full-codes' in sys.argv)))
 

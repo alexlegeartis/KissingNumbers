@@ -8,7 +8,9 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
-> **24 October 2026 — new SOTAs in dimensions 28, 36–37 and 41–46.**
+> **25 October 2026 — new SOTAs in dimensions 26–27 and further high-dimensional gains.**
+> Shared midpoint replacements give **200 918** in 26D and **204 636** in 27D,
+> exceeding Takhanov–Yun by **1 050** and **3 047** points.
 > Joint Leech layers give **205 232** in 28D, improving K. Li's 205 172 by 60.
 > The new Coxeter–Todd phase code gives **501 633** in 36D and **505 359**
 > in 37D. The supplied 43D certificate now reaches **2 919 743**, and
@@ -18,7 +20,17 @@ values and verification packages remain here as part of the research record.
 > 61-68D and 95-96D, and Gamma72 nearest-coset constructions in 73-88D.
 > The signed-support construction gives **332 170 112** in 64D and
 > **332 238 338** in 65D; 72D is the remaining gap in 49-96D.
-> In particular, 95D reaches **7 077 231 372** and 96D **13 264 027 840**.
+> In particular, 95D reaches **7 091 452 684** and 96D **13 289 406 656**.
+> A compact symmetry certificate now also improves **87–94D**. Its complete
+> class geometry and disjointness check takes **under 10 seconds on CPU**.
+
+> The **25 October CPU continuation** strengthens the coset constructions in
+> 76D, 78–86D and the cap constructions throughout 87–94D. Direct optimization
+> of the 95D section also raises its bound to **7 091 452 684**, with a stronger 96D parent.
+
+> The **73D non-lattice continuation** reaches **6 218 191 606**,
+> exceeding the completed 73D lattice by **3 462**.
+> `dim73-88-gamma72-cosets/verify73.py` independently checks its certificate.
 
 ```bash
 python audit.py --repository-only  # all 65 claims; check this repository without its surrounding workspace
@@ -66,22 +78,23 @@ improvements. See
 [record status](#record-status-and-retained-results) for the later values and sources.
 
 The status notes use [Cohn's live leaderboard](https://cohn.mit.edu/kissing-numbers/),
-retrieved **24 October 2026**. All **48** lower/upper-bound rows were captured in
-[the dated comparison](common/cohn_20261024.json). Across the **18** registered
-dimensions it covers, our nine results in 28D, 36–37D and 41–46D exceed the
-listed bounds, our 18D result is already listed, and eight earlier results are
+rechecked **25 October 2026**. All **48** lower/upper-bound rows were captured in
+[the dated comparison](common/cohn_20261025.json). Across the **18** registered
+dimensions it covers, our new results in 26–27D exceed the listed bounds, ten of our constructions
+are already listed, and six earlier results are
 superseded as shown below.
 The fetched table contains dimensions 1–48; higher-dimensional status uses
-the separate sources below. Its 18D entry credits this repository. All 48
-lower/upper bounds were rechecked without a numerical change at **01:14 UTC**.
-The dated comparison records the fresh retrieval hash and the reviewed source revisions.
+the separate sources below. Its 18D entry and the nine recent entries in 28D, 36–37D and 41–46D
+credit this repository. All 48 lower/upper bounds were rechecked on **25 October 2026**;
+those nine lower bounds increased and every upper bound stayed unchanged.
+The dated comparison records the fresh retrieval hash and every changed lower bound.
 
 | dim | recorded comparison | comparison method / source | **this work** | SOTA value | our gain | later gain | SOTA period | our method | superseding method |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 18 | 7 654 | [Cohn–Li, BW16 + hexagons](https://arxiv.org/abs/2411.04916v3) | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
 | 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 579** | 197 583 | +0.27% | +0.002% | 2026-08-30 to 2026-09-28 | [Leech heads](verifications/improved/dim25-lens-heads/) | [Heads + motion](https://github.com/k-nic/kissing_d25-31) |
-| 26 | 198 550 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **199 806** | 199 868 | +0.63% | +0.031% | 2026-09-08 to 2026-10-05 | [Coset triangles](verifications/improved/dim26-27-iota-triangles/) | [Caps + free heads](https://github.com/k-nic/kissing_d25-31) |
-| 27 | 200 044 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **201 566** | 201 589 | +0.76% | +0.011% | 2026-08-30 to 2026-09-28 | [Coset triangles](verifications/improved/dim26-27-iota-triangles/) | [Cap colouring](https://github.com/k-nic/kissing_d25-31) |
+| 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **200 918** | **SOTA** | +0.525% | — | 2026-09-08 to 2026-10-05; since 2026-10-25 | [Shared midpoint replacements](verifications/improved/dim26-27-midpoint-replacements/) | — |
+| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **204 636** | **SOTA** | +1.51% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Shared midpoint replacements](verifications/improved/dim26-27-midpoint-replacements/) | — |
 | 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **205 232** | **SOTA** | +0.0292% | — | 2026-09-16 to 2026-10-10; since 2026-10-24 | [Joint Leech layers](verifications/improved/dim28-joint-leech-layers/) | — |
 | 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **209 968** | 210 495 | +0.23% | +0.25% | 2026-09-16 to 2026-10-05 | [Frame layer](verifications/improved/dim29-30-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
 | 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **221 012** | 222 073 | +0.26% | +0.48% | 2026-09-16 to 2026-10-10 | [Frame layer](verifications/improved/dim29-30-frame-layer/) | [Lift + points](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
@@ -119,30 +132,30 @@ The dated comparison records the fresh retrieval hash and the reviewed source re
 | 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **627 822 180** | **SOTA** | +89% | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim68-69-gamma72-cross-sections/) | — |
 | 70 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **1 249 778 250** | **SOTA** | 3.77x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
 | 71 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **2 603 658 750** | **SOTA** | 7.85x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
-| 73 | 6 218 175 602 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [1D tail](common/published.py) *(derived)* | **6 218 187 616** | **SOTA** | +0.000193% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 73 | 6 218 175 602 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [1D tail](common/published.py) *(derived)* | **6 218 191 606** | **SOTA** | +0.000257% | — | since 2026-08-30 | [Gamma72 cosets plus caps](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 74 | 6 218 175 606 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [2D tail](common/published.py) *(derived)* | **6 218 211 606** | **SOTA** | +0.000579% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 75 | 6 218 175 612 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [3D tail](common/published.py) *(derived)* | **6 218 246 060** | **SOTA** | +0.00113% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 76 | 6 218 175 624 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [4D tail](common/published.py) *(derived)* | **6 218 315 280** | **SOTA** | +0.00225% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 76 | 6 218 175 624 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [4D tail](common/published.py) *(derived)* | **6 218 315 288** | **SOTA** | +0.00225% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 77 | 6 218 175 640 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [5D tail](common/published.py) *(derived)* | **6 218 407 344** | **SOTA** | +0.00373% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 78 | 6 218 175 672 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [6D tail](common/published.py) *(derived)* | **6 218 518 360** | **SOTA** | +0.00551% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 79 | 6 218 175 726 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [7D tail](common/published.py) *(derived)* | **6 218 584 924** | **SOTA** | +0.00658% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 80 | 6 218 175 840 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ E8 (tabulated direct sum) | **6 219 474 100** | **SOTA** | +0.0209% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 81 | 6 218 175 906 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [9D tail](common/published.py) *(derived)* | **6 219 649 244** | **SOTA** | +0.0237% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 82 | 6 218 176 110 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [10D tail](common/published.py) *(derived)* | **6 220 001 152** | **SOTA** | +0.0294% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 83 | 6 218 176 204 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [11D tail](common/published.py) *(derived)* | **6 220 533 856** | **SOTA** | +0.0379% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 84 | 6 218 176 441 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [12D tail](common/published.py) *(derived)* | **6 221 555 280** | **SOTA** | +0.0543% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 85 | 6 218 176 754 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [13D tail](common/published.py) *(derived)* | **6 222 003 336** | **SOTA** | +0.0615% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 86 | 6 218 177 532 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [14D tail](common/published.py) *(derived)* | **6 225 153 600** | **SOTA** | +0.112% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 87 | 6 218 178 164 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [15D tail](common/published.py) *(derived)* | **6 225 433 068** | **SOTA** | +0.117% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 88 | 6 218 179 920 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [16D tail](common/published.py) *(derived)* | **6 231 205 108** | **SOTA** | +0.209% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **6 233 054 848** | **SOTA** | +0.24% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 90 | 6 218 183 254 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [18D tail](common/published.py) *(derived)* | **6 238 744 788** | **SOTA** | +0.33% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **6 247 801 034** | **SOTA** | +0.48% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 92 | 6 218 195 048 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [20D tail](common/published.py) *(derived)* | **6 266 405 667** | **SOTA** | +0.78% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 93 | 6 218 205 368 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [21D tail](common/published.py) *(derived)* | **6 294 850 360** | **SOTA** | +1.2% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 94 | 6 218 225 496 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [22D tail](common/published.py) *(derived)* | **6 355 739 600** | **SOTA** | +2.2% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 95 | 6 218 268 750 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [23D tail](common/published.py) *(derived)* | **7 077 231 372** | **SOTA** | +13.8% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 96 | 6 218 372 160 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [Leech](https://doi.org/10.4153/CJM-1967-017-0) *(derived)* | **13 264 027 840** | **SOTA** | 2.13x | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 78 | 6 218 175 672 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [6D tail](common/published.py) *(derived)* | **6 218 518 372** | **SOTA** | +0.00551% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 79 | 6 218 175 726 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [7D tail](common/published.py) *(derived)* | **6 218 584 940** | **SOTA** | +0.00658% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 80 | 6 218 175 840 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ E8 (tabulated direct sum) | **6 219 474 300** | **SOTA** | +0.0209% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 81 | 6 218 175 906 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [9D tail](common/published.py) *(derived)* | **6 219 649 576** | **SOTA** | +0.0237% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 82 | 6 218 176 110 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [10D tail](common/published.py) *(derived)* | **6 220 001 536** | **SOTA** | +0.0294% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 83 | 6 218 176 204 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [11D tail](common/published.py) *(derived)* | **6 220 534 360** | **SOTA** | +0.0379% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 84 | 6 218 176 441 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [12D tail](common/published.py) *(derived)* | **6 221 557 196** | **SOTA** | +0.0544% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 85 | 6 218 176 754 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [13D tail](common/published.py) *(derived)* | **6 222 004 840** | **SOTA** | +0.0616% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 86 | 6 218 177 532 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [14D tail](common/published.py) *(derived)* | **6 225 165 512** | **SOTA** | +0.112% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 87 | 6 218 178 164 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [15D tail](common/published.py) *(derived)* | **6 225 838 030** | **SOTA** | +0.123% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 88 | 6 218 179 920 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [16D tail](common/published.py) *(derived)* | **6 232 239 528** | **SOTA** | +0.226% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **6 235 525 036** | **SOTA** | +0.279% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 90 | 6 218 183 254 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [18D tail](common/published.py) *(derived)* | **6 242 027 140** | **SOTA** | +0.383% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **6 252 202 550** | **SOTA** | +0.547% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 92 | 6 218 195 048 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [20D tail](common/published.py) *(derived)* | **6 272 431 575** | **SOTA** | +0.872% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 93 | 6 218 205 368 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [21D tail](common/published.py) *(derived)* | **6 301 636 084** | **SOTA** | +1.34% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 94 | 6 218 225 496 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [22D tail](common/published.py) *(derived)* | **6 357 657 396** | **SOTA** | +2.24% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
+| 95 | 6 218 268 750 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [23D tail](common/published.py) *(derived)* | **7 091 452 684** | **SOTA** | +14.0% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 96 | 6 218 372 160 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [Leech](https://doi.org/10.4153/CJM-1967-017-0) *(derived)* | **13 289 406 656** | **SOTA** | +114% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
 
 
 The historical SOTA period covers this project's run of published records in each
@@ -191,9 +204,9 @@ improvement is claimed in 47D or 48D.
 
 - **25D:** 1016 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point
 
-- **26D:** The same triangle on both triangles of the hexagon, the second side the involution image of the first, plus a jointly-solved layer of free heads that remove nothing
+- **26D:** Shared midpoint replacements delete 4 352 Leech points and insert 8 704 points on two orthogonal tail directions. Six pure hexagon points give 200 918. The earlier coset triangles and free-head construction remain in their package.
 
-- **27D:** The coset triangle of three norm-6 vectors on all four triangles of directions, with the class heads, the axial normals that remove nothing and the second cap layer all solved together rather than in sequence (first layer B. Lindow, second layer here)
+- **27D:** Shared midpoint replacements in three tail planes delete 8 064 Leech points and insert 16 128 points. Twelve cuboctahedron points give 204 636. Exact midpoint identities and every inserted-pair product replay from the coordinate certificate; the earlier joint coset construction is retained.
 
 - **28D:** Jointly select even heads over Li's eight odd Leech blocks and a larger auxiliary layer: 192 352 equator points, 12 624 caps and 256 auxiliary points give 205 232. The earlier norm-8 frame layer is retained.
 
@@ -258,7 +271,7 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               all 65 claims, nineteen packages; earlier constructions remain
+  improved/               all 65 claims, twenty packages; earlier constructions remain
                           available with their original proof data
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
@@ -277,7 +290,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — nineteen packages, 65 dimensions
+### `verifications/improved/` — twenty packages, 65 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -290,7 +303,8 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | -------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [`dim18-bent-hexagon`](verifications/improved/dim18-bent-hexagon/) | 18 | bent-coset hexagon over odd Barnes–Wall; matches Cohn’s current table |
 | `[dim25-lens-heads](verifications/improved/dim25-lens-heads/)`                               | 25     | cap heads of squared length 3 in the lens of a minimal vector remove exactly their owner and never share a removal, so τ = 196560 + H + 2 + \|E\| with H = 1016 and one non-lattice equator point |
-| `[dim26-27-iota-triangles](verifications/improved/dim26-27-iota-triangles/)`                 | 26, 27 | the axis forces the heads onto squared length 8/3 and onto fixed triangles of directions, so the layer is two or four head sets at cosine ≤ 1/4 cross-constrained at cosine 1/2; the coset triangle of three norm-6 vectors summing to zero is one such set, and the involution ι(u) = −v − u on each class puts S and ι(S) on two triangles at once |
+| `[dim26-27-iota-triangles](verifications/improved/dim26-27-iota-triangles/)`                 | 26, 27 | retained construction: the axis forces the heads onto squared length 8/3 and onto fixed triangles of directions, so the layer is two or four head sets at cosine ≤ 1/4 cross-constrained at cosine 1/2; the coset triangle of three norm-6 vectors summing to zero is one such set, and the involution ι(u) = −v − u on each class puts S and ι(S) on two triangles at once |
+| [`dim26-27-midpoint-replacements`](verifications/improved/dim26-27-midpoint-replacements/) | 26–27 | shared deletions for midpoint matchings on orthogonal tail directions |
 | `[dim28-norm8-frame-layer](verifications/improved/dim28-norm8-frame-layer/)`                 | 28     | retained construction: the head of a deletion-free layer need not have norm 6: at height √2 a NORM-8 head clears the cap threshold where a norm-6 head does not, and the 24 vectors 8eᵢ are a Leech frame, each carrying all eight directions ±e_k of ℝ⁴ — 384 points for 8 axis points |
 | [`dim28-joint-leech-layers`](verifications/improved/dim28-joint-leech-layers/) | 28 | joint selection of even heads and auxiliary layers over Li's odd Leech blocks |
 | `[dim29-30-frame-layer](verifications/improved/dim29-30-frame-layer/)`                           | 29, 30 | the dimension-28 norm-8 frame layer is not about dimension 28: at height `√2` with `x = v/2`, `|v|² = 8`, the layer deletes nothing, one head carries the whole cross-polytope of `ℝᵏ` and all 48 vectors of a Leech frame carry every direction, so it is `96k` points in every dimension. The price is that all `⌊τ(k)/3⌋` owner classes must be type B for one frame — and in the coordinates where the frame is `8eᵢ` the type-B lines are the octad vectors of the Golay code, which the monomial group `2¹²:M₂₄` permutes, so the filter disappears and what is left is a packing solved by coordinate descent on the Golay sign words |
@@ -322,6 +336,10 @@ the lower bound in its dimensions** — who held it, when, and by what construct
 
 ## Record status and retained results
 
+The 25 October midpoint constructions regain 26D and 27D with **200 918** and
+**204 636**, following Takhanov–Yun's 199 868 and 201 589. Their paper is linked
+in the comparison-source field; our earlier coset-triangle packages remain available.
+
 The October joint Leech construction regains 28D with 205 232 points,
 after K. Li's 205 172 superseded our 204 896 on 10 October.
 The October 7 387-line class family regains 49–55D after their September
@@ -344,8 +362,6 @@ comparison is given separately by its source.
 | dim | our retained result | later result | source |
 |---|---:|---:|---|
 | 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) |
-| 26 | 199 806 | 199 868 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) |
-| 27 | 201 566 | 201 589 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) |
 | 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
 | 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
 | 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) |
@@ -390,10 +406,11 @@ project's values lie inside the LP brackets it computed, which is a sharp cross-
 machinery — see
 `[verifications/superseded/dim44-45-p48-cross-sections/](verifications/superseded/dim44-45-p48-cross-sections/)`.
 
-**Historical calibration.** The 19D construction studied here has exact ceiling
-11 948, matching Ho's record at that time. Cohn's live table now lists 12 460;
-the ceiling remains a result about that construction family. Dimension 12's record
-likewise landed elsewhere while this work was in progress.
+**Historical calibration.** The 19D construction studied here was bounded by
+11 948, matching Ho's record at that time. K. Li's later construction now gives
+12 460 in dimension 19 (and 31 560 in dimension 21); the earlier ceiling concerns
+only the old construction family. Dimension 12's record likewise landed elsewhere
+while this work was in progress.
 
 **Registered comparison scope.** Dimensions 18, 25–31, 36–39, 41–46, 49–71, 73–96.
 These are the registered construction results compared with their recorded baselines;
@@ -489,10 +506,9 @@ Negative results are recorded as carefully as positive ones, in
 `[verifications/closed/](verifications/closed/)`, because they are what stops the next
 attempt from wasting time. Among them: dimensions 17–24 are a single construction, the layer
 identity τ(Λ₁₆₊ₖ) = 4320 + 513·N₂(Lₖ) + 32·N₄(Lₖ), verified as a structure inside the Leech
-lattice and with every component at a stated ceiling but one; the Cohn–Li mechanism is
-provably exhausted in dimensions 20 and 21 and closed at exactly Ho's value in 19; Λ₂₁, Λ₂₂ and Λ₂₃ are maximal
-spherical codes with exact min-max cosines √(8/29), √(3/11), √(4/15); every published record
-in dimensions 9–19 is maximal; the antipode construction is a max-weight clique problem whose
+lattice and with every component at a stated ceiling but one; the Cohn–Li mechanism has
+method-specific ceilings in dimensions 19–21; Λ₂₁, Λ₂₂ and Λ₂₃ have exact min-max cosines
+√(8/29), √(3/11), √(4/15); the antipode construction is a max-weight clique problem whose
 arms lie in a 30° cap, which caps it structurally; and the maximum-class problem survives
 every two-point method, the three-point SDP and the subconstituent split at 4680/11 = 425.45.
 
@@ -504,15 +520,25 @@ exact replay scope and inherited inputs.
 ## Reproducing everything
 
 ```bash
-python run_all.py          # 74 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 77 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 93 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 96 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay
+python run_all.py --sota --quick  # short replays for current SOTA-labelled constructions, with coverage gaps
+python run_all.py --sota         # also run the slow coset and binary-code replays
 python update.py --skip-paper --repository-only  # maintain constructions without changing the manuscript
 ```
+
+[SOTA verification coverage](SOTA_VERIFY.md) maps every SOTA-labelled result to
+its replay and inherited inputs. The quick profile reports deferred coset/code
+work explicitly. Dimensions 87–94 use the shipped compact class certificate,
+checked completely by `scripts/verify_symmetry.py` in under 10 CPU seconds.
+Its `--complete` option also checks cap directions, partitions, poles and counts;
+the SOTA profile runs that option. `--changed` reuses earlier passing checks
+after hashing their inputs and environment.
 
 Or individually, each from its own directory:
 
@@ -551,7 +577,7 @@ Or individually, each from its own directory:
 | `…/dim73-95-gamma72-caps/scripts/calibrate.py`                                | **the calibration**: reproduces Cohn's table in dims 26, 28–31 | 2 min  |
 | `…/dim73-95-gamma72-caps/scripts/verify_classes.py data/disjoint_classes.npz` | the 120 Γ₇₂ classes, exactly                                   | 46 s   |
 | `…/superseded/dim44-45-p48-cross-sections/brackets.py`                        | the withdrawn claims, and Sun–Wang inside the brackets         | 40 min |
-| `…/closed/dim22-23-maximal-cross-sections/verify.py`                          | Λ₂₁, Λ₂₂, Λ₂₃ are maximal                                      | 6 s    |
+| `…/closed/dim22-23-maximal-cross-sections/verify.py`                          | fixed cross-section checks for Λ₂₁, Λ₂₂, Λ₂₃                  | 6 s    |
 | `…/closed/dim32-44-ers-audit/PIPELINE.py`                                     | dimensions 32–44 are exactly at the ERS value                  | 1 s    |
 | `…/closed/dim17-23-cohn-li-mechanism/scripts/verify19.py`                     | the dimension-19 Cayley graph structure                        | 3 s    |
 | `…/closed/dim17-24-layer-identity/layers.py`                                  | the layer identity, as a structure inside the Leech lattice     | 30 s   |
@@ -590,7 +616,8 @@ disjointness while doing it.
 from [https://hdl.handle.net/1721.1/153312](https://hdl.handle.net/1721.1/153312). Only two scripts use them and both take the
 path as an argument: `superseded/dim27-triple-partition/scripts/rebuild_from_published.py`, which
 regenerates the dimension-27 coordinate file bit-for-bit from the published block, and
-`closed/dim09-19-record-maximality/sweep.py`. Everything else verifies from what is here.
+`closed/dim09-19-record-maximality/sweep.py`, which checks only the historical fixed-record
+question. Everything else verifies from what is here.
 - **The dead ends that produced nothing citable** — for instance the 249 MB of dimension-37
 cover searches. Their *conclusions* are in `verifications/closed/`, with the measurements
 that support them; the intermediate data is not.
@@ -634,24 +661,21 @@ same answer. A missing-moments bug hid behind that for a day.
 
 ## The write-up
 
-*New lower bounds for kissing numbers in dimensions 18 through 96* is a 47-page account of
-the two mechanisms, with the results as numbered theorems: the cross-section method in §4
-(dimensions 68, 69, 70 and 71, and dimensions 46 and 47 recovered) and the cap
-construction in §5 (dimensions 25, 26, 27, 28, 29, 30, 31, 38, 49–61, 73–95), with the
-code-theoretic dimensions 39, 62, 63 and 96 in §6; dimension 18, the bent-coset hexagon,
-postdates the write-up and is documented in its package only.
-
-The October 2026 class, code, coset and head constructions postdate this
-manuscript snapshot. Their verification packages and the current registry
-document the updates. `paper/registry_snapshot.json` preserves the manuscript’s
-53 results; its checkers also require the current registry to retain or improve them.
+*New lower bounds for kissing numbers in dimensions 18 through 96* is a 50-page
+account with a current state-of-the-art table in §5 and a historical appendix. The
+main table reports 59 of the 65 registered claims that remain current in the reviewed
+sources, including the October 2026 code, coset, head and signed-support additions.
+The six superseded constructions and the frozen September table remain in the
+appendix for reproducibility. `paper/registry_snapshot.json` preserves the historical
+53-row arithmetic used by the detailed checkers; `paper/current_table.tex` and the
+current registry drive the main summary.
 
 **It is in this repository, at [`paper/`](paper/)** — source, bibliography, `.bbl`, PDF and
 three checkers that read this repository and exit non-zero on a mismatch:
 
 ```bash
 cd paper
-python factcheck.py      # 770 checks: every figure in the write-up, recomputed from here
+python factcheck.py      # 774 checks: every figure in the write-up, recomputed from here
 python unsupported.py    # no figure in the write-up lacks a home here
 python formulas.py       # 257 checks: every formula re-derived with sympy
 ```

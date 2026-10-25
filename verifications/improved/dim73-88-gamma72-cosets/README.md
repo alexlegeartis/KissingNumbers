@@ -1,6 +1,10 @@
 # Gamma72 nearest-coset subsets and repaired lifts
 
-Checkpoint: **24 October 2026**. The supplied verified constructions improve
+**Retained construction and history for dimensions 87–88.** The compact symmetry
+family in [the cap package](../dim73-95-gamma72-caps/) now gives stronger bounds
+there. This package still supplies the registered constructions in 73–86D.
+
+Checkpoint: **25 October 2026**. The supplied verified constructions improve
 dimensions **73–88**. The 88D construction independently passed all
 11,640 pair families and has **6,231,205,108** points.
 
@@ -13,6 +17,8 @@ current table covers dimensions 1–48 and cannot establish priority here.
 
 ```bash
 python final.py
+python verify73.py          # current 73D construction, a few seconds
+python verify73.py --rebuild # also rebuild the short-vector enumerations
 python verify.py
 ```
 
@@ -86,3 +92,53 @@ The original 88D construction report is preserved as
 records the completed independent replay. Its construction, seed, Gram and
 verifier hashes match the installed files; `UPDATE_PROVENANCE.json` records
 the replay and preserves the original report’s provenance.
+
+## CPU conflict-cover continuation, 25 October 2026
+
+The retained heads now use exact minimum vertex covers of the fixed search
+conflict graphs. Maximum matching solves every bipartite component; CP-SAT
+solves the components containing odd cycles. The 86D graph has 885,586 active
+vertices, but only 777 lie in non-bipartite components. This reduces its cover
+from 390,549 to 387,571 deletions and adds 11,912 points.
+
+This pass improves 76D, 78D, 79D and every dimension from 80D through 86D.
+The same search also improves the retained coset construction in 87D, where
+the separate cap package remains stronger. All changed constructions passed
+the original independent coordinate verifiers: 621,414,139 products for the
+repaired lifts, 6,541,625,213 for the four-seed lifts and 26,222,187,021 for
+the eight-seed lifts. The optimality statement concerns only these fixed
+conflict graphs; other head sets and tail assignments remain open.
+
+## Non-lattice improvement in dimension 73, 25 October 2026
+
+The current bound is **6,218,191,606**, exceeding the completed lattice's
+6,218,188,144 by **3,462**. The explicit lattice has determinant 5/2
+and supplies 6,272 norm-22 representatives, whose two layers add 12,544
+contacts to Gamma72. Its self-contained data and verifier are in
+`source/dim73_surgery/lattice/`; `lattice/verify.py` checks the lattice,
+and its README states all source facts and enumeration details.
+
+The non-lattice construction retains those contacts. Its class contains
+1,731 minimal lines u with |u.G.v| <= 2 within the class and
+|u.G.x| <= 4 against all 6,272 representatives x. Remove each equatorial
+pair +/-u and insert the four points
+
+    (+/-sqrt(3)/2 * u, +/-sqrt(2)).
+
+Each point has squared norm eight. Distinct class directions give products
+at most 7/2; opposite tails above the same direction give four. Products
+with retained equatorial vectors are at most 2 sqrt(3) < 4. Products with
+the old coset contacts are at most sqrt(3)+sqrt(5) < 4. Thus each replaced
+line gains two contacts, giving 6,218,188,144 + 2(1,731).
+
+`source/dim73_surgery/verify_surgery.py` checks all class and mixed products
+using int64 arithmetic. `surgery_class.npy` contains the class;
+`surgery_search.json` records the CPU search and `surgery_verification.json`
+its independent replay. `nonlattice_witness.npy` proves the configuration
+cannot lie in a lattice: two retained equatorial vectors sum to a removed
+u, while two caps sum to sqrt(3) u. These generate a dense subgroup on a line.
+`verify73.py` checks the manifest and replays these checks in a temporary copy;
+its `--rebuild` option also reruns `lattice/verify.py --rebuild`.
+
+The new comparison is with the local certified lattice result, not a claim
+that a comprehensive current literature table exists in dimension 73.

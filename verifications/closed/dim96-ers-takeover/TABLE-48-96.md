@@ -25,30 +25,30 @@
 | 70 | 1 249 778 250 | **this work** -- k-point moment LP on cross-sections of Gamma_72 |
 | 71 | 2 603 658 750 | **this work** -- k-point moment LP on cross-sections of Gamma_72 |
 | 72 | 6 218 175 600 | Cohn's table: Nebe 2012, J. Reine Angew. Math. 673, 237-247 (Gamma_72) |
-| 73 | 6 218 187 616 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
+| 73 | 6 218 191 606 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
 | 74 | 6 218 211 606 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
 | 75 | 6 218 246 060 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
-| 76 | 6 218 315 280 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
+| 76 | 6 218 315 288 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
 | 77 | 6 218 407 344 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
-| 78 | 6 218 518 360 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
-| 79 | 6 218 584 924 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
-| 80 | 6 219 474 100 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
-| 81 | 6 219 649 244 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
-| 82 | 6 220 001 152 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
-| 83 | 6 220 533 856 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
-| 84 | 6 221 555 280 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
-| 85 | 6 222 003 336 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
-| 86 | 6 225 153 600 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
-| 87 | 6 225 433 068 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
-| 88 | 6 231 205 108 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
-| 89 | 6 233 054 848 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 90 | 6 238 744 788 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 91 | 6 247 801 034 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 92 | 6 266 405 667 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 93 | 6 294 850 360 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 94 | 6 355 739 600 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 95 | 7 077 231 372 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 96 | 13 264 027 840 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 78 | 6 218 518 372 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
+| 79 | 6 218 584 940 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
+| 80 | 6 219 474 300 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
+| 81 | 6 219 649 576 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
+| 82 | 6 220 001 536 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
+| 83 | 6 220 534 360 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
+| 84 | 6 221 557 196 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
+| 85 | 6 222 004 840 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
+| 86 | 6 225 165 512 | **this work** -- certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products |
+| 87 | 6 225 838 030 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
+| 88 | 6 232 239 528 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
+| 89 | 6 235 525 036 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
+| 90 | 6 242 027 140 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
+| 91 | 6 252 202 550 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
+| 92 | 6 272 431 575 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
+| 93 | 6 301 636 084 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
+| 94 | 6 357 657 396 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
+| 95 | 7 091 452 684 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 96 | 13 289 406 656 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
 
 ## Retained dimension-96 comparisons
 

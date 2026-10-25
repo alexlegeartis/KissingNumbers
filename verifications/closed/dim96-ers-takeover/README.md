@@ -108,13 +108,15 @@ construction, so everything it computes is a *lower* bound on ERS. That settles 
 — a lower bound on ERS standing above Γ₇₂ proves ERS wins — and it does **not** settle
 93–95, where a lower bound sitting below Γ₇₂ proves nothing at all. Saying “ERS is far below
 Γ₇₂ at 93–95, so those claims are unaffected” would be arguing in the wrong direction.
-What can honestly be said is the threshold, which `ers96.py` prints:
+The following claim and threshold columns preserve the earlier cap checkpoint;
+the final column gives the current registry. These thresholds concern those
+earlier counts. `ers96.py` evaluates the chains:
 
-| n | claim | ERS level 0 | A(n,23,23) needed to overturn it | grid map gives | Johnson allows |
-|---|---|---|---|---|---|
-| 93 | 6 294 850 360 | 2³¹ | 506 210 | 65 536 | 2.7e8 |
-| 94 | 6 355 739 600 | 2³¹ | 513 638 | 65 536 | 3.0e8 |
-| **95** | **6 473 065 046** | **2³²** | **265 816** | **65 536** | 4.0e8 |
+| n | then claim | ERS level 0 | A(n,23,23) needed to overturn it | grid map gives | Johnson allows | current registry |
+|---|---|---|---|---|---|---|
+| 93 | 6 294 850 360 | 2³¹ | 506 210 | 65 536 | 2.7e8 | 6 301 636 084 |
+| 94 | 6 355 739 600 | 2³¹ | 513 638 | 65 536 | 3.0e8 | 6 357 657 396 |
+| **95** | **6 473 065 046** | **2³²** | **265 816** | **65 536** | 4.0e8 | 7 091 452 684 |
 
 So **dimension 95 is exposed**: a level-1 constant-weight code only 4.06× better than the
 grid map would overturn it, and for calibration ERS's own `A(64,16,16) = 30 828` beats the
@@ -162,14 +164,14 @@ The column marked *then claimed* is what the repository claimed at the time; dim
 62 and 63 subsequently reached 71 310 732 and 138 419 844 through the
 chain, before the larger October central sections. The last column is current.
 
-| dim | then claimed | level 0 alone | from | verdict | 24 October registry |
+| dim | then claimed | level 0 alone | from | verdict | current registry |
 |---|---|---|---|---|---|
 | 62 | 64 217 822 | **67 108 864** = 2²⁶ | [62,26,16] | **beaten** | 100 371 468 |
 | 63 | 67 365 752 | **134 217 728** = 2²⁷ | [63,27,16] | **beaten, by a factor 1.99** | 182 407 428 |
 | 60 | 57 477 123 | 33 554 432 = 2²⁵ | [60,25,15] | ×1.71 of margin | 57 690 671 |
 | 61 | 59 898 694 | 33 554 432 = 2²⁵ | [60,25,15] | ×1.79 | 71 310 488 |
 | 68 | 361 275 480 | 268 435 456 = 2²⁸ | [64,28,16] | ×1.35 | 371 521 432 |
-| 95 | 6 473 065 046 | 4 294 967 296 = 2³² | [95,32,24] | ×1.51 | 7 077 231 372 |
+| 95 | 6 473 065 046 | 4 294 967 296 = 2³² | [95,32,24] | ×1.51 | 7 091 452 684 |
 
 ⌈62/4⌉ = ⌈63/4⌉ = 16, and both codes are in the table, so **the sign vectors of [62,26,16]
 and [63,27,16] are kissing configurations in dimensions 62 and 63 already**. By the standard

@@ -28,6 +28,7 @@ CHECKS, for every k:
     python verify_parts.py
 """
 import numpy as np, os, sys
+from exact_products import remember_direction_proof
 HERE = os.path.dirname(os.path.abspath(__file__))
 D = os.path.join(HERE, '..', 'data')
 
@@ -108,14 +109,20 @@ def check(k, src):
             seen.add(x)
     S = n - 3 * len(T) - 2 * len(PR)
     assert S >= 0 and len(seen) == 3 * len(T) + 2 * len(PR)
+    if uniform:
+        remember_direction_proof(X, c, int(d[0]) // 2)
     return n, len(T), len(PR), S, int(d[0]), sorted(set(d.tolist()))
 
 
 if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--k', nargs='+', type=int, choices=range(9, 24))
+    selected = parser.parse_args().k or range(9, 24)
     print(__doc__)
     print("   k   source    |W|    span  triples  pairs  singles   units   3T+2P+S = |W|")
     tot = 0
-    for k in range(9, 24):
+    for k in selected:
         best = None
         for src in ('lattice', 'record', 'kappa'):
             f = os.path.join(D, {'lattice': 'parts_%d.npz' % k,

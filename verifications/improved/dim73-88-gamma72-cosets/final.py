@@ -24,6 +24,12 @@ def results():
                 total = 6218175600 + 2*row['head_subset_size']*row['cosets'] + row['pure_tail_points']
             assert total == row['bound']
             rows[int(dim)] = max(rows.get(int(dim), 0), total)
+    import numpy as np
+    surgery = ROOT / 'source/dim73_surgery'
+    with np.load(surgery / 'lattice/certificate.npz') as certificate:
+        nearest_count = len(certificate['heads'])
+    class_count = len(np.load(surgery / 'surgery_class.npy'))
+    rows[73] = max(rows.get(73, 0), 6218175600 + 2*nearest_count + 2*class_count)
     return [dict(dimension=dim, total=total) for dim,total in sorted(rows.items())]
 
 

@@ -61,6 +61,11 @@ import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import capsha                                                      # noqa: E402
+from exact_products import abs_product_bound, integer_matmul, direction_proof
+import argparse
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--k', nargs='+', type=int, choices=range(3, 24))
+selected = parser.parse_args().k
 
 HERE = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 DATA = os.path.join(HERE, 'data')
@@ -74,7 +79,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
 from published import TAU                                # noqa: E402
 
 
-def span_basis(W):
+def span_basis(W, expected_rank=None):
     """indices of rows of W spanning its row space, by fraction-free elimination
 
     The gcd step is not cosmetic: without it the entries double at every round and the
@@ -97,8 +102,22 @@ def span_basis(W):
         piv.append(p)
         rows_.append(r)
         idx.append(i)
-        if len(idx) == A:
+        if len(idx) == (A if expected_rank is None else expected_rank):
             break
+    if expected_rank is not None:
+        assert len(idx) == expected_rank, 'the direction span is too small'
+        if expected_rank < A:
+            # A basis is cheap to find; reducing every remaining row against it
+            # in Python is not. Its exact annihilator checks all rows at once.
+            from sympy import Matrix, ilcm
+            for vector in Matrix(W[idx].tolist()).nullspace():
+                denominator = 1
+                for value in vector:
+                    denominator = int(ilcm(denominator, int(value.q)))
+                kernel = [int(value * denominator) for value in vector]
+                assert max(map(abs, kernel)) < 2**63
+                kernel = np.asarray(kernel, dtype=np.int64)[:, None]
+                assert not integer_matmul(W, kernel).any(), 'the direction span is too large'
     return idx
 
 
@@ -137,7 +156,7 @@ def _solve_rows(B, xs):
     return True
 
 
-def poles_stay_in_the_axis_space(W, N):
+def poles_stay_in_the_axis_space(W, N, expected_rank=None):
     """Does the rotation N map the span of W into itself?
 
     The claim for dimension 72+k puts the cap directions AND the poles in one R^k.  Several
@@ -146,7 +165,7 @@ def poles_stay_in_the_axis_space(W, N):
     need not preserve the span.  That is what went wrong on 2026-08-27 at k = 13, 15, 17, 18,
     21, 22 and 23: every inner product was right and the configuration needed R^96 rather
     than R^93.  Q is linear, so checking a basis of the span settles it."""
-    idx = span_basis(W)
+    idx = span_basis(W, expected_rank)
     B = [[int(v) for v in W[i]] for i in idx]
     xs = [[int(v) for v in (W[i].astype(object) @ N.T)] for i in idx]     # D * Q w_i
     return _solve_rows(B, xs) is True, len(idx)
@@ -181,6 +200,8 @@ tot = 0
 print("   k   |W|   poles  kind     cap condition                    pole-pole      tau(k)")
 SUPERSEDED = []
 for k in range(9, 24):
+    if selected is not None and k not in selected:
+        continue
     # The layer file follows the CAP SET, not the dimension: see KAPPA above.
     if ROWS[k]['W'] == 'kappa':
         rot = os.path.join(DATA, 'poles_kap_%d.npz' % k)
@@ -205,22 +226,25 @@ for k in range(9, 24):
     # W itself must be a 60-degree code, or the rotated copy inherits nothing.  Blocked --
     # the whole Gram is 18.5 GiB at k = 22 -- and computed in FLOAT, which is exact here and
     # only here: every entry of <w, w'> is a sum of at most 24 products of integers bounded
-    # by 4 and 3, so it is an integer well under 2^53 and float64 represents each partial sum
-    # exactly.  The bound is asserted rather than assumed, and the result is checked to be
-    # integral.  numpy has no BLAS for int64, so this is the difference between seconds and
-    # half an hour at k = 23; the CAP condition below cannot use it, because there the
-    # products run to 10^18, and stays in int64.
+    # by 4 and 3. The asserted bound puts every integer partial sum below 2^24,
+    # where binary32 is exact. The cap test below uses a coarse integer bound
+    # and exact remainder checks because its full products can reach 10^18.
     _bnd = int(np.abs(W).max()) ** 2 * int(np.abs(c).max()) * W.shape[1]
-    assert _bnd < 2 ** 50, 'k=%d: the direction Gram is too large for exact float64' % k
-    Wf, CZf = W.astype(np.float64), CZ.astype(np.float64)
+    assert _bnd < 2 ** 24, 'k=%d: the direction Gram is too large for exact float32' % k
+    Wf, CZf = W.astype(np.float32), CZ.astype(np.float32)
     _BS = max(1, int(8e6 // max(1, len(W))))
-    _mx = -float(m)
-    for _s in range(0, len(W), _BS):
-        _B = Wf[_s:_s + _BS] @ CZf
-        assert (_B == np.rint(_B)).all(), 'the float Gram is not integral'
-        for _t in range(len(_B)):
-            _B[_t, _s + _t] = -m
-        _mx = max(_mx, float(_B.max()))
+    _mx = direction_proof(W, c)
+    if _mx is None:
+        _mx = -float(m)
+        for _s in range(0, len(W), _BS):
+            _B = Wf[_s:_s + _BS] @ CZf
+            if _s == 0:
+                assert np.array_equal(_B[:8], W[:8] @ CZ), 'the float Gram is not exact'
+            for _t in range(len(_B)):
+                _B[_t, _s + _t] = -m
+            _mx = max(_mx, float(_B.max()))
+    else:
+        print('   k=%d: direction angle proof already checked on these identical arrays' % k)
     _mx = int(_mx)
     assert 2 * _mx <= m, 'k=%d: the cap directions are not a 60-degree code' % k
 
@@ -241,38 +265,11 @@ for k in range(9, 24):
         assert lim * lim < 3 * m * m * D * D < (lim + 1) ** 2, \
             'k=%d: 3 m^2 D^2 is a perfect square, so the integer test is not equivalent' % k
         assert 2 * m * D < 2 ** 62, 'k=%d: 2mD would overflow int64' % k
-        # X = (N w_i)^T C w_j runs to 10^18, so this one cannot be done in float directly.
-        # It CAN be done in two float passes, which matters: numpy has no BLAS for int64, and
-        # the straight integer product is 2.1e11 operations at k = 23 -- half an hour against
-        # a minute.  Split each entry of U = W[kp] N^T at bit 31, U = 2^31 A + R, and note
-        #
-        #   |A_ij| <= max|U| / 2^31,   |R_ij| < 2^31,   |C w_j| <= cmax * wmax  per coordinate,
-        #
-        # so every entry of A@CZ and of R@CZ is an integer bounded by 2^31 * cmax * wmax * k,
-        # which the assert below pins under 2^50: float64 holds those exactly, and each
-        # partial sum on the way is an integer of the same size, so the products are exact.
-        # They are then recombined in int64, with |A@CZ| asserted small enough that the shift
-        # cannot overflow.  Both asserts are checks, not assumptions -- if either failed the
-        # script would stop rather than return a wrong answer.
-        A = W[kp] @ N.T                       # D * (rotated pole directions)
-        SH = 31
-        Ahi, Alo = A >> SH, A - ((A >> SH) << SH)
-        _cw = int(np.abs(CZ).max())
-        _bd = (int(np.abs(Ahi).max()) + 2 ** SH) * _cw * W.shape[1]
-        assert _bd < 2 ** 50, 'k=%d: the limb product is too large for exact float64' % k
-        Hf, Lf, CZf2 = (Ahi.astype(np.float64), Alo.astype(np.float64),
-                        CZ.astype(np.float64))
-        worst = 0
-        _B = max(1, int(8e6 // max(1, len(W))))
-        for s in range(0, len(kp), _B):
-            XH = Hf[s:s + _B] @ CZf2
-            XL = Lf[s:s + _B] @ CZf2
-            assert (XH == np.rint(XH)).all() and (XL == np.rint(XL)).all(), 'not integral'
-            XHi = XH.astype(np.int64)
-            assert int(np.abs(XHi).max()) < 2 ** 31, 'k=%d: the shift would overflow' % k
-            X = (XHi << SH) + XL.astype(np.int64)
-            worst = max(worst, int(np.abs(X).max()))
-        cap_ok = 2 * worst <= lim
+        # Prove the cap inequality with a short exact product plus a rigorous
+        # remainder bound; evaluate only undecided entries in Python integers.
+        A = integer_matmul(W[kp], N.T)         # D * (rotated pole directions)
+        capbad, fallbacks = abs_product_bound(A, CZ, lim // 2)
+        cap_ok = capbad == 0
         # Pole-pole needs no scan of its own.  <Qw, Qw'> = <w, w'> because Q is an isometry
         # of the form, and the kept poles are indexed by a SUBSET of W, whose whole Gram was
         # just bounded above by m/2.  A second pass over the kept poles would re-derive that
@@ -286,13 +283,13 @@ for k in range(9, 24):
         # Lambda_21's is 27720 vectors in Lambda_24's 24 coordinates spanning 21 -- and a
         # rotation of the AMBIENT coordinates is not an isometry of R^k.  Every inner
         # product was correct and the configuration needed R^96 instead of R^93.
-        _span_ok, _nb = poles_stay_in_the_axis_space(W, N)
+        _span_ok, _nb = poles_stay_in_the_axis_space(W, N, k)
         if not _span_ok:
             ok = False
             print('   k=%d: the rotation does not preserve the span of the directions, so '
                   'the poles are NOT in R^%d' % (k, k))
         npol, kind = len(kp), 'rotated'
-        left = '2*%d <= %d' % (worst, lim)
+        left = '%d violations; %d exact fallbacks' % (capbad, fallbacks)
         right = '2*%d <= %d' % (_pm, m)
     else:
         P = np.load(shell).astype(np.int64)
@@ -375,6 +372,8 @@ def root_system(k):
 
 _any = False
 for k in range(3, 9):
+    if selected is not None and k not in selected:
+        continue
     rf = os.path.join(DATA, 'poles_rot_k%d.npz' % k)
     if not os.path.exists(rf):
         continue
@@ -394,7 +393,7 @@ for k in range(3, 9):
     # A root system has full rank in its own root coordinates, so this cannot fail here --
     # which is the point of asking: the same question at k = 13, 15, 17, 18, 21, 22 and 23,
     # where the coordinates outnumber the span, is what caught seven bad layers.
-    assert poles_stay_in_the_axis_space(R, No)[0], 'k=%d: the poles are not in R^%d' % (k, k)
+    assert poles_stay_in_the_axis_space(R, No, k)[0], 'k=%d: the poles are not in R^%d' % (k, k)
     m = 2
     lim = isqrt(3 * m * m * D * D)
     assert lim * lim < 3 * m * m * D * D < (lim + 1) ** 2, k

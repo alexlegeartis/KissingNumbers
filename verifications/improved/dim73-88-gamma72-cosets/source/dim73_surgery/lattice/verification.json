@@ -1,0 +1,25 @@
+{
+  "status": "verified",
+  "dimension": 73,
+  "minimum_squared_norm": 8,
+  "determinant": "5/2",
+  "certified_coset_vectors": 6272,
+  "kissing_number_lower_bound": 6218188144,
+  "previous_repository_bound": 6218187616,
+  "gain": 528,
+  "block_patterns": {
+    "(2, 2, 7)": 24,
+    "(2, 3, 6)": 240,
+    "(2, 4, 5)": 848,
+    "(3, 3, 5)": 1704,
+    "(3, 4, 4)": 3456
+  },
+  "minimum_check": {
+    "shorter_triples": 0,
+    "nearest_with_all_block_costs_at_most_5": 6008,
+    "checked_pairs": 58608516
+  },
+  "enumerations_rebuilt": false,
+  "seconds": 1.3145806789398193,
+  "scope": "Nebe parent minimum and shell count are literature inputs; no global priority assertion."
+}

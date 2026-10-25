@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-25",
+  "device": "local CPU",
+  "method": "Strengthen the seed on the independent 3,387,346-line CPU pool; choose images by maximum marginal coverage from 40,000 isometry candidates.",
+  "seed_search": {
+    "status": "EXACT SEED VERIFIED",
+    "source": "D:\\GitHubD\\KissingNumber27\\kissing_verifications\\verifications\\improved\\dim73-95-gamma72-caps\\data\\symmetry_classes.npz",
+    "pool": "D:\\GitHubD\\KissingNumber27\\research\\dim73-80\\gamma72_pool.npy",
+    "old_size": 2454,
+    "new_size": 2465,
+    "neighborhood": 4433,
+    "edges": 16832,
+    "histogram": [
+      8,
+      1303,
+      352,
+      1526,
+      5901,
+      17658,
+      43158,
+      89302,
+      156230,
+      240110,
+      323484,
+      387179,
+      417026,
+      405927,
+      361226
+    ],
+    "seconds": 195.9071603
+  },
+  "family_search": {
+    "status": "CONSTRUCTED; independent verification pending",
+    "source": "D:\\GitHubD\\KissingNumber27\\kissing_verifications\\verifications\\improved\\dim73-95-gamma72-caps\\data\\symmetry_classes.npz",
+    "classes": 16632,
+    "base_lines": 2465,
+    "old_total": 34392805,
+    "new_total": 34857986,
+    "seconds": 65.7816497,
+    "dimensions": {
+      "87": {
+        "classes": 780,
+        "old_lines": 1898630,
+        "new_lines": 1914967,
+        "point_gain": 65348
+      },
+      "88": {
+        "classes": 1440,
+        "old_lines": 3480435,
+        "new_lines": 3514902,
+        "point_gain": 137868
+      },
+      "89": {
+        "classes": 1782,
+        "old_lines": 4291082,
+        "new_lines": 4335933,
+        "point_gain": 179404
+      },
+      "90": {
+        "classes": 2466,
+        "old_lines": 5894561,
+        "new_lines": 5960979,
+        "point_gain": 265672
+      },
+      "91": {
+        "classes": 3556,
+        "old_lines": 8401623,
+        "new_lines": 8503754,
+        "point_gain": 408524
+      },
+      "92": {
+        "classes": 5800,
+        "old_lines": 13381573,
+        "new_lines": 13559140,
+        "point_gain": 710268
+      },
+      "93": {
+        "classes": 9240,
+        "old_lines": 20571078,
+        "new_lines": 20857693,
+        "point_gain": 1146460
+      },
+      "94": {
+        "classes": 16632,
+        "old_lines": 34392805,
+        "new_lines": 34857986,
+        "point_gain": 1860724
+      }
+    }
+  },
+  "verification": {
+    "status": "PASS",
+    "n_classes": 16632,
+    "base_lines": 2465,
+    "total_lines": 34857986,
+    "sizes_min": 1751,
+    "sizes_max": 2465,
+    "geometry_seconds": 5.9982365,
+    "seconds": 6.6424836,
+    "certificate_bytes": 24422340,
+    "certificate_sha256": "173506659603e4a0e2bb9116ac918c2e1ecee513f62ff2571f8d7e366f643e2b",
+    "scope": "exact seed norms and every angle; every integral isometry; global retained-line disjointness",
+    "numpy": "2.0.2",
+    "largest_class_sums": {
+      "1782": 4335933,
+      "2466": 5960979,
+      "3556": 8503754,
+      "5800": 13559140,
+      "9240": 20857693,
+      "16632": 34857986
+    }
+  }
+}

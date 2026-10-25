@@ -1,5 +1,8 @@
 # Dimensions 26 and 27: the coset triangle on every triangle of directions
 
+**Retained construction.** The 25 October [shared midpoint replacements](../dim26-27-midpoint-replacements/)
+reach 200,918 in 26D and 204,636 in 27D. This package preserves the earlier coset-triangle constructions.
+
 **τ(26) ≥ 199 806** and **τ(27) ≥ 201 566**, against the published 198 550 and 200 044
 (Cohn's table; Ma et al. 2025) and this repository's earlier 200 540 in dimension 27 (now in
 [`../../superseded/dim27-triple-partition/`](../../superseded/dim27-triple-partition/)).

@@ -25,17 +25,17 @@ diverged, and step 3 would paper over it.
 
 HOW TO IMPROVE A BOUND.  RESULTS.md's status column says what would have to change:
 
-    cosets     dimensions 36-37 and 73-88. Larger phase codes, nearest subsets,
+    cosets     dimensions 36-37 and 73-86. Larger phase codes, nearest subsets,
                or compatible tail assignments remain open; no construction ceiling is claimed.
-    heads      dimensions 28 and 41-46. Joint layer and family/head searches and partial families
+    heads      dimensions 26-28 and 41-46. Joint layer and family/head searches and partial families
                remain open. Complete-family populations retain their documented assumptions.
     codes      dimensions 61-68 and 95-96. Improve the explicit input codes,
                sparse support layers, compression maps or central sections.
-    classes    dimensions 29-31, 49-60 and 89-94. Better pairwise-disjoint class
+    classes    dimensions 29-31, 49-60 and 87-94. Better pairwise-disjoint class
                families improve the corresponding cap constructions. The October P48
                family is certified by dim49-63-p48-caps/verify_october.py.
     external   dimension 39. Recheck the published constant-weight code tables.
-    exhausted  dimensions 18, 25-27 and 38. These construction templates have
+    exhausted  dimensions 18, 25 and 38. These construction templates have
                their documented ceilings; other construction ideas remain possible.
     lp-exact   dimensions 69-71. The existing k-point programs are solved exactly;
                a different section or a larger k is needed to improve their bounds.
@@ -70,7 +70,7 @@ DRIVERS = [
      'derive.py'),
 ]
 DRIVERS += [(_name, os.path.join(V, _name), 'final.py') for _name in
-            ('dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets')]
+            ('dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets')]
 TABLES = [(os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
           (os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py')]
 

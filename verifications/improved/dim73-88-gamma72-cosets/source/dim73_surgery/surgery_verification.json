@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "dimension": 73,
+  "equator_parent": 6218175600,
+  "completed_coset_vectors": 6272,
+  "deleted_equator_points": 3462,
+  "replacement_caps": 6924,
+  "class_size": 1731,
+  "maximum_class_absolute_product": 2,
+  "maximum_head_class_absolute_product": 4,
+  "exact_mixed_products": 10856832,
+  "lattice_comparison": 6218188144,
+  "bound": 6218191606,
+  "gain_over_lattice": 3462,
+  "nonlattice_witness_checked": true,
+  "seconds": 2.1238951683044434
+}

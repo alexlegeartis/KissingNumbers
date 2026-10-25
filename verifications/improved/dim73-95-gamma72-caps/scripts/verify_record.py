@@ -65,6 +65,7 @@ from axis_record import (census, dual_code, halved, caps, octads_shortened,   # 
                          odd_base, pair_vectors, vectors_of)
 import axis_cohn                                                              # noqa: E402
 from published import TAU                                                     # noqa: E402
+from exact_products import abs_product_bound, integer_matmul
 
 PKG = os.path.join(HERE, '..')
 DATA = os.path.join(PKG, 'data')
@@ -85,7 +86,7 @@ def squarefree(n):
     return out * n
 
 
-def discriminant(W):
+def discriminant(W, known_rank=None):
     """the determinant of a Gram of the span, modulo rational squares"""
     rows, piv, basis = [], [], []
     for r in W:
@@ -100,6 +101,8 @@ def discriminant(W):
         basis.append([int(x) for x in r])
         rows.append([x / v[c] for x in v])
         piv.append(c)
+        if known_rank is not None and len(basis) == known_rank:
+            break
     B = np.array(basis, dtype=object)
     G = (B @ B.T).tolist()
     n = len(G)
@@ -137,7 +140,7 @@ def in_span(W, M):
             continue
         rows.append([x / v[c] for x in v])
         piv.append(c)
-        if len(piv) == W.shape[1]:
+        if len(piv) == M.shape[1]:
             break
     for col in range(M.shape[1]):
         v = [F(int(M[i][col])) for i in range(M.shape[0])]
@@ -217,22 +220,23 @@ def is_code(T, cs=None):
     """the 60-degree condition on the source, one-sided, exact, blocked
 
     Every entry of <t,t'> is a sum of at most 24 products of integers bounded by 2 -- or by
-    the source's metric weights, where it has one -- so it is an integer far below 2^53 and
-    float64 represents it and every partial sum exactly.  The bound is asserted and the
-    result checked to be integral, as elsewhere in this package.
+    the source's metric weights, where it has one. Binary32 represents every
+    integer partial sum exactly after the bounds below have been checked.
     """
     c = np.ones(T.shape[1], dtype=np.int64) if cs is None else cs.astype(np.int64)
     _bnd = int(np.abs(T).max()) ** 2 * T.shape[1] * int(c.max())
-    assert _bnd < 2 ** 50, 'the source Gram is too large for exact float64'
+    assert _bnd < 2 ** 24, 'the source Gram is too large for exact float32'
     norms = ((T * c) * T).sum(1)
-    Tf = (T * c).astype(np.float64)
-    Uf = T.astype(np.float64)
+    assert 4 * int(norms.max())**2 < 2**24, 'squared angle comparison is too large'
+    Tf = (T * c).astype(np.float32)
+    Uf = T.astype(np.float32)
     B = max(1, int(8e6 // max(1, len(T))))
     worst, bad = -10 ** 9, 0
     for s in range(0, len(T), B):
         X = Tf[s:s + B] @ Uf.T
-        assert (X == np.rint(X)).all(), 'the float Gram is not integral'
-        Xi = X.astype(np.int64)
+        if s == 0:
+            assert np.array_equal(X[:8], ((T[:8] * c) @ T.T))
+        Xi = X
         for t in range(Xi.shape[0]):
             Xi[t, s + t] = -10 ** 9                 # a pole against itself is not a pair
         worst = max(worst, int(Xi.max()))
@@ -284,7 +288,9 @@ def check(k):
     # with every inner product in the layer correct.
     _ok, _w = in_span(W, M)
     assert _ok, 'column %d of the frame is not in the span of the cap directions' % _w
-    sf, rank = discriminant(W)
+    # The projection identity above puts every W in image(M); in_span puts
+    # all independent columns of M in span(W). Thus this rank is already exact.
+    sf, rank = discriminant(W, M.shape[1])
     assert rank == M.shape[1], 'the frame has %d columns for a span of %d' % (M.shape[1], rank)
     _dc = 1
     for _v in np.diag(Cs):
@@ -326,7 +332,7 @@ def check(k):
     # the cap condition on the kept poles, exactly.  X = (N t)^T (M^T w) is an integer and
     # the test is 4 X^2 <= 3 (mu m) |t|^2 D^2; 3 (mu m) |t|^2 D^2 is not a perfect square, so
     # it is 2|X| <= isqrt(...) with one big-integer root per norm and int64 after.
-    A = T[kp] @ N.T
+    A = integer_matmul(T[kp], N.T)
     norms = ((T * np.diag(Cs)) * T).sum(1)[kp]
     lim = {}
     for na in sorted(set(int(v) for v in norms)):
@@ -334,36 +340,16 @@ def check(k):
         r = isqrt(L)
         assert r * r < L < (r + 1) ** 2, 'k=%d: 3 mu m |t|^2 D^2 is a perfect square' % k
         lim[na] = r
-    SH = 31
-    Ahi, Alo = A >> SH, A - ((A >> SH) << SH)
-    _bd = (int(np.abs(Ahi).max()) + 2 ** SH) * int(np.abs(Zk).max()) * len(N)
-    assert _bd < 2 ** 50, 'k=%d: the limb product is too large for exact float64' % k
-    Hf, Lf, Zf = Ahi.astype(np.float64), Alo.astype(np.float64), Zk.astype(np.float64)
     lo = np.array([lim[int(v)] for v in norms], dtype=np.int64)
-    B = max(1, int(8e6 // max(1, len(Zk))))
-    capbad, mx = 0, 0
-    for s in range(0, len(kp), B):
-        XH = Hf[s:s + B] @ Zf.T
-        XL = Lf[s:s + B] @ Zf.T
-        assert (XH == np.rint(XH)).all() and (XL == np.rint(XL)).all(), 'not integral'
-        XHi = XH.astype(np.int64)
-        assert int(np.abs(XHi).max()) < 2 ** 31, 'k=%d: the shift would overflow' % k
-        X = (XHi << SH) + XL.astype(np.int64)
-        w = np.abs(X).max(1)
-        mx = max(mx, int(w.max()))
-        # the comparison DOUBLES w, and w is already a recombined two-limb product; assert
-        # the headroom rather than trust it, since an overflow here would silently turn a
-        # pole inside a cap into a pole that passes.
-        assert 2 * int(w.max()) < 2 ** 63 - 1, 'the doubled inner product would overflow'
-        capbad += int((2 * w > lo[s:s + B]).sum())
+    capbad, fallbacks = abs_product_bound(A, Zk.T, lo // 2)
     if capbad:
         ok = False
-        print('   k=%d: %d kept poles are inside a cap' % (k, capbad))
+        print('   k=%d: %d pole/cap pairs violate the bound' % (k, capbad))
     npol = len(kp)
     print('  %2d  %3d %7d %7d %7d %7d  %3d  %s'
           % (k, 72 + k, len(W), len(T), npol, TAU[k] - npol, mu, D))
-    print('           cap condition, every kept pole against every cap:  2*%d <= %d%s'
-          % (mx, int(lo.min()), '   AT THE CEILING' if npol == TAU[k] else ''))
+    print('           cap condition: every pair checked, %d exact remainder checks%s'
+          % (fallbacks, '   AT THE CEILING' if npol == TAU[k] else ''))
     if ROWS[k]['poles'] != npol:
         ok = False
         print('      *** k=%d: rows81-95.json says %d poles, this layer has %d ***'
@@ -372,10 +358,14 @@ def check(k):
 
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--k', nargs='+', type=int, choices=range(9, 24))
+    selected = parser.parse_args().k or range(9, 24)
     print(__doc__)
     print('   k  dim     |Z|  source   poles   short   mu  denominator')
     ok, tot, seen = True, 0, 0
-    for k in range(9, 24):
+    for k in selected:
         got = check(k)
         if got is None:
             continue

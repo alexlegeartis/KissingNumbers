@@ -43,7 +43,7 @@ CHECKS
      now falls back to that table, which also admits NONLINEAR codes, and best_chain returns
      1.255, 1.104, 1.073 and 1.000 at those four dimensions: at or above published ERS,
      which is what an evaluator with better tables must give.  Nothing in 49..96 moved, so
-     the paper's section 9.2 margins are unaffected.  closed/dim32-44-ers-audit/ remains the
+     the paper's section 6.1 margins are unaffected.  closed/dim32-44-ers-audit/ remains the
      dedicated low-range evaluator, with Brouwer's tables including Echols arXiv:2608.13906;
      it is what shows the chain reaching 570 236 at dimension 38 against a claim of 591 612,
      and 756 116 at dimension 39, which IS the claim there;
@@ -240,7 +240,7 @@ for k in range(1, 9):
 # the right values, and audit.py is what writes RESULTS.md.
 DATA = os.path.join(IMP, 'dim73-95-gamma72-caps', 'data')
 FAMS = []
-for _fn in ('class_sizes_32000.npy', 'class_sizes_gpu.npy'):
+for _fn in ('class_sizes_32000.npy', 'class_sizes_gpu.npy', 'class_sizes_symmetry.npy'):
     _fp = os.path.join(DATA, _fn)
     if os.path.exists(_fp):
         _s = np.sort(np.load(_fp).ravel())[::-1].astype(np.int64)
@@ -279,6 +279,8 @@ for k in range(9, 24):
         bad('no class family has %d classes, needed for k = %d' % (T + P, k))
         continue
     gain = max(cands)
+    _class_family = max((4 * int(_c[T]) + 2 * int(_c[T + P] - _c[T]), _nm)
+                        for _nm, _s, _c in FAMS if len(_s) >= T + P)[1]
     # The axis layer, in whichever form the package ships for this k.  FOUR are possible and
     # the largest is the one used, which is how final81-95.py chooses:
     #
@@ -313,7 +315,7 @@ for k in range(9, 24):
     val = max(6218175600 + gain, run)
     run = val
     add(72 + k, val, 'dim73-95-gamma72-caps',
-        'recomputed from the %s partition at k = %d and class_sizes_32000.npy' % (src, k))
+        'recomputed from the %s partition at k = %d and %s' % (src, k, _class_family))
 
 # --- quoted, each verified by the named script
 add(18, 8358, 'dim18-bent-hexagon', 'verify18.py (exact: integers on the R^16 side, a + b sqrt3 '
@@ -391,7 +393,7 @@ add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover'
 
 # October code and nearest-coset constructions supersede earlier packages;
 # add() preserves every displaced claim in SUPERSEDED for the history audit.
-for _package in ('dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets'):
+for _package in ('dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -947,7 +949,17 @@ print("5g. the README's description of the paper partitions its earlier snapshot
 _rm = os.path.join(HERE, 'README.md')
 _wr = io.open(_rm, encoding='utf-8').read()
 _m = re.search(r'is a (\d+)-page account of(.{0,600}?)\n\n', _wr, re.S)
-if not _m:
+_current_paper = re.search(r'The\s+main table reports (\d+) of the (\d+) registered claims', _wr)
+if _current_paper:
+    _sota_rows = sum('**SOTA**' in line for line in _wr.splitlines() if line.startswith('|'))
+    if tuple(map(int, _current_paper.groups())) != (_sota_rows, len(claims)):
+        bad("README.md's current manuscript scope disagrees with its SOTA table and registry")
+    elif not re.search(r'%d-row arithmetic' % len(paper_claims), _wr):
+        bad("README.md's historical manuscript snapshot count disagrees with registry_snapshot.json")
+    else:
+        print('   current scope %d/%d and historical snapshot %d agree with the registries'
+              % (_sota_rows, len(claims), len(paper_claims)))
+elif not _m:
     bad("README.md has no 'is a N-page account of' sentence to check")
 else:
     # every dimension the sentence names, once each, minus the two it calls recovered
@@ -1942,6 +1954,7 @@ if '--write-results' in sys.argv and not fail:
                                   'enumeration and phase-orbit angles checked; '
                                   '37D adds two latitude layers',
         'dim61-68-95-96-code-layers': 'explicit binary compression, central sections and enlarged support layers; exact code and geometry replay',
+        'dim26-27-midpoint-replacements': 'shared midpoint replacements on orthogonal tail directions; exact Leech membership, midpoint identities and all inserted-pair products',
         'dim28-joint-leech-layers': 'joint selection of even Leech heads and auxiliary layers over Li\'s odd blocks; exact arithmetic replay',
         'dim64-65-signed-parity': '211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners',
         'dim73-88-gamma72-cosets': 'certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products',
@@ -1974,11 +1987,11 @@ if '--write-results' in sys.argv and not fail:
                "43D certificate, and raises 45D to 7 655 056. All 41-46D integer angles "
                "and head dimensions replay; complete-family body populations inherit the "
                "documented identities and have not all been freshly enumerated. "
-               "The checkpoint also includes the 205,232-point joint Leech lift in 28D, the 7 387-line P48 class family, code "
+               "The 25 October continuation adds shared midpoint replacements with 200,918 points in 26D and 204,636 in 27D, and strengthens 73D, 76D and 78-96D. The checkpoint also includes the 205,232-point joint Leech lift in 28D, the 7 387-line P48 class family, code "
                "constructions in 61-68D and 95-96D, including the new signed-support 64-65D constructions, and Gamma72 nearest-coset lifts. "
                "The comparison column uses common/published.py's pinned published data; "
                "this integration is not a new comprehensive literature audit. The paper "
-               "remains the earlier snapshot. See "
+               "now reports the current records in its main table and preserves the earlier snapshot in its historical appendix. See "
                "[verification scope](verifications/improved/dim41-46-p48-heads/README.md).")
     out.append("")
     out.append("| dim | previously published | **this work** | factor | status | construction |")

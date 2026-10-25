@@ -4,14 +4,15 @@ title: "Kissing numbers: new lower bounds in dimensions 18 through 96, with veri
 abstract: >-
   Verification packages for new lower bounds on the kissing number in 65
   dimensions: 18, 25-31, 36-39, 41-46, 49-71 and 73-96. The
-  October 2026 joint Leech lift gives 205232 in dimension 28, building on
+  October 2026 shared midpoint replacements give 200918 and 204636 in
+  dimensions 26 and 27. The joint Leech lift gives 205232 in dimension 28, building on
   Kevin Li's construction. The constructions in dimensions 36 and 37 use exact Coxeter-Todd
   shell enumeration and explicit phase orbits with two latitude layers in 37D. Dimensions 41-46 replay
   exact head dimensions and integer angles using inherited complete-family
   body populations, including 2919743 in 43D and 7655056 in 45D. The October
   update also includes a 7387-line P48 class family, binary compression
   and support layers in 61-68, 95 and 96, and certified Gamma72
-  nearest-coset subsets in 73-88. The new 96D total is 13264027840. Each construction’s full
+  nearest-coset subsets in 73-88. The new 96D total is 13289406656. Each construction’s full
   verification scope is documented in its package README. The
   manuscript remains an earlier snapshot. The preceding constructions include:
   (1) Cross-sections of extremal even unimodular lattices, bounded

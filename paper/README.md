@@ -1,7 +1,7 @@
 # `paper/` — the write-up, and the three checkers that hold it to the repository
 
 [`kissing46.tex`](kissing46.tex) — *New lower bounds for kissing numbers in dimensions 18
-through 96*. 47 pages, `amsart`, no packages beyond `amssymb`, `amsmath`, `booktabs`,
+through 96*. 50 pages, `amsart`, no packages beyond `amssymb`, `amsmath`, `booktabs`,
 `longtable` and `hyperref`. References are [`kissing46.bib`](kissing46.bib), formatted with
 `amsplain`, so a full build is
 
@@ -13,21 +13,26 @@ pdflatex kissing46 && bibtex kissing46 && pdflatex kissing46 && pdflatex kissing
 build without `bibtex` reads, and without it one `pdflatex` pass prints `[?]` for all
 forty-five citations. [`kissing46.pdf`](kissing46.pdf) is a build of the `.tex` beside it, kept for convenience.
 Nothing here checks a PDF against its source — rebuild with the command above if you want
-to confirm it; the build is 47 pages, with no LaTeX warnings and no undefined
-citation or reference (9 over/underfull boxes, which is typography, not content).
+to confirm it; the build is 50 pages, with no undefined citation or reference.
+The generated current-results table and the historical appendix produce a few
+typographic over/underfull-box warnings; they do not affect the mathematical
+content.
 
-## Manuscript snapshot
+## Current results and historical appendix
 
-The manuscript retains its September scope. The October constructions in
-dimensions 36–37, 41–46 and 66–67 are documented in the repository and their
-verification packages. `factcheck.py` checks that these ten dimensions are
-exactly the registry additions absent from Table 4. The
-manuscript comparison and monotonicity checks retain the pinned August
-table; the repository audit checks the new constructions against their
-recorded October comparisons.
+The main paper now reports the 59 registered entries that remain state of the
+art in the reviewed sources. `current_table.tex` is generated from the current
+65-row `RESULTS.md` registry and includes the October advances in dimensions
+26--27 and 64--68, along with the 28D, 36--37D and 41--46D updates. The 25 October
+73D construction combines the completed half-coset with a verified non-lattice
+cap replacement, reaching 6,218,191,606. The six superseded
+entries remain in the paper's historical appendix with their construction details
+and the frozen September table.
 
-Regenerating `values.tex` also defines macros for the new dimensions; the
-manuscript does not reference them. All macros it uses keep their values.
+`values.tex` continues to pin the September numerical snapshot because the
+historical derivations and their checks depend on it. `current_values.tex` and
+`current_table.tex` are generated from `RESULTS.md` by `mkcurrentvalues.py` and
+`mkcurrenttable.py`; run both scripts with `--check` to detect drift.
 
 ## One bound, one place: [`values.tex`](values.tex)
 
@@ -69,7 +74,7 @@ python formulas.py       # every formula in the paper, re-derived with sympy
 python style_scan.py -v  # the prose faults listed in the writing guidelines
 ```
 
-`factcheck.py` (770 checks) does not parse the repository's conclusions, it **re-derives**
+`factcheck.py` (774 checks) does not parse the repository's conclusions, it **re-derives**
 them: the moment identities, the count of the layered construction, Caro–Wei, the
 Edel–Rains–Sloane totals, the bound on independent sets, and every entry of Tables 1, 3 and 4.
 `formulas.py` (257 checks) checks the *algebra* rather than the numbers — the moment identity
@@ -96,7 +101,8 @@ verification package. It lived in a sibling directory of the author's working tr
 reader run them. `../audit.py` reads `kissing46.tex` too, for two of its documentation
 checks.
 
-`registry_snapshot.json` pins the manuscript's 53 numerical results. The October
-code and coset updates are maintained in the current registry. `mkvalues.py`,
-`factcheck.py` and `unsupported.py` check the frozen numbers and require the
-current registry to retain or improve every manuscript result.
+`registry_snapshot.json` pins the historical manuscript's 53 numerical results.
+The current registry is authoritative for the main table. `mkvalues.py`,
+`mkcurrentvalues.py`, `mkcurrenttable.py`, `factcheck.py` and `unsupported.py`
+check the two layers and require the current registry to retain or improve every
+historical result.

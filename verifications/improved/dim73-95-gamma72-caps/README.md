@@ -6,7 +6,7 @@ construction in each dimension. See the [current registry](../../../RESULTS.md),
 [nearest-coset updates](../dim73-88-gamma72-cosets/). Older counts below remain
 results about the original construction.
 
-Twenty-three dimensions, gains from **+4 214** to **+184 807 648**.
+Twenty-three dimensions, with the cap totals below computed from the shipped class families.
 
 ```
 python scripts/calibrate.py      # ~3 min  THE KEY CHECK: reproduces Cohn's table, dims 26-31
@@ -16,31 +16,31 @@ python final81-95.py             # dimensions 81-95, from the 32000-class size t
 python scripts/verify_classes.py data/disjoint_classes.npz     # exact check of the 120
 ```
 
-| dim | k | W | scheme | gain | **this cap construction** | previously | 24 October registry |
+| dim | k | W | scheme | gain | **this cap construction** | previously | current registry |
 |---|---|---|---|---|---|---|---|
-| 73 | 1 | A₁ | 1 pair + 2 poles, t=3/4 | +4 214 | **6 218 179 814** | 6 218 175 602 | 6 218 187 616 |
+| 73 | 1 | A₁ | 1 pair + 2 poles, t=3/4 | +4 214 | **6 218 179 814** | 6 218 175 602 | 6 218 191 606 |
 | 74 | 2 | A₂ | 2 triples + 6 poles, t=2/3 | +16 854 | **6 218 192 454** | 6 218 175 606 | 6 218 211 606 |
 | 75 | 3 | A₃ | 4 triples + 12 poles, t=2/3 | +33 708 | **6 218 209 308** | 6 218 175 612 | 6 218 246 060 |
-| 76 | 4 | D₄ | 8 triples + 24 poles, t=2/3 | +67 416 | **6 218 243 016** | 6 218 175 624 | 6 218 315 280 |
+| 76 | 4 | D₄ | 8 triples + 24 poles, t=2/3 | +67 416 | **6 218 243 016** | 6 218 175 624 | 6 218 315 288 |
 | 77 | 5 | D₅ | 12 triples + 2 pairs + 40 poles, t=2/3 | +109 552 | **6 218 285 152** | 6 218 175 640 | 6 218 407 344 |
-| 78 | 6 | E₆ | 24 triples + 72 poles, t=2/3 | +202 240 | **6 218 377 840** | 6 218 175 672 | 6 218 518 360 |
-| 79 | 7 | E₇ | 42 triples + 126 poles, t=2/3 | +353 854 | **6 218 529 454** | 6 218 175 726 | 6 218 584 924 |
-| 80 | 8 | E₈ | 80 triples + 240 poles, t=2/3 | **+673 628** | **6 218 849 228** | 6 218 175 840 | 6 219 474 100 |
-| 81 | 9 | record | 102 T +  0 P +306 poles | +858 670 | 6 219 034 270 | 6 218 175 906 | 6 219 649 244 |
-| 82 | 10 | record | 170 T +  0 P +510 poles | +1 429 978 | 6 219 605 578 | 6 218 176 110 | 6 220 001 152 |
-| 83 | 11 | Z[sqrt2] | 84 T + 176 P +604 poles | +1 446 090 | 6 219 621 690 | 6 218 176 204 | 6 220 533 856 |
-| 84 | 12 | K_k | 252 T +  0 P +756 poles | +2 117 704 | 6 220 293 304 | 6 218 176 441 | 6 221 555 280 |
-| 85 | 13 | K_k | 306 T +  0 P +918 poles | +2 569 814 | 6 220 745 414 | 6 218 176 754 | 6 222 003 336 |
-| 86 | 14 | record | 644 T +  0 P +1932 poles | +5 392 244 | 6 223 567 844 | 6 218 177 532 | 6 225 153 600 |
-| 87 | 15 | Lambda_k | 780 T +  0 P +2562 poles | +6 527 998 | 6 224 703 598 | 6 218 178 164 | 6 225 433 068 |
-| 88 | 16 | Lambda_k | 1440 T +  0 P +4320 poles | +12 030 892 | 6 230 206 492 | 6 218 179 920 | 6 231 205 108 |
-| 89 | 17 | Lambda_k | 1782 T +  0 P +5704 poles | +14 879 248 | 6 233 054 848 | 6 218 181 330 | 6 233 054 848 |
-| 90 | 18 | Lambda_k | 2466 T +  0 P +7624 poles | +20 569 188 | 6 238 744 788 | 6 218 183 254 | 6 238 744 788 |
-| 91 | 19 | Lambda_k | 3556 T +  0 P +11934 poles | +29 625 434 | 6 247 801 034 | 6 218 187 548 | 6 247 801 034 |
-| 92 | 20 | Lambda_k | 5800 T +  0 P +19415 poles | +48 230 067 | 6 266 405 667 | 6 218 195 048 | 6 266 405 667 |
-| 93 | 21 | Lambda_k | 9240 T +  0 P +29712 poles | +76 674 760 | 6 294 850 360 | 6 218 205 368 | 6 294 850 360 |
-| 94 | 22 | Lambda_k | 16632 T +  0 P +49852 poles | +137 564 000 | 6 355 739 600 | 6 218 225 496 | 6 355 739 600 |
-| **95** | 23 | Lambda_k | 31050 T +  0 P +93074 poles | +254 889 446 | **6 473 065 046** | 6 218 268 750 | 7 077 231 372 |
+| 78 | 6 | E₆ | 24 triples + 72 poles, t=2/3 | +202 240 | **6 218 377 840** | 6 218 175 672 | 6 218 518 372 |
+| 79 | 7 | E₇ | 42 triples + 126 poles, t=2/3 | +353 854 | **6 218 529 454** | 6 218 175 726 | 6 218 584 940 |
+| 80 | 8 | E₈ | 80 triples + 240 poles, t=2/3 | **+673 628** | **6 218 849 228** | 6 218 175 840 | 6 219 474 300 |
+| 81 | 9 | record | 102 T +  0 P +306 poles | +1 006 026 | 6 219 181 626 | 6 218 175 906 | 6 219 649 576 |
+| 82 | 10 | record | 170 T +  0 P +510 poles | +1 676 602 | 6 219 852 202 | 6 218 176 110 | 6 220 001 536 |
+| 83 | 11 | Z[sqrt2] | 84 T + 176 P +604 poles | +1 696 024 | 6 219 871 624 | 6 218 176 204 | 6 220 534 360 |
+| 84 | 12 | K_k | 252 T +  0 P +756 poles | +2 484 604 | 6 220 660 204 | 6 218 176 441 | 6 221 557 196 |
+| 85 | 13 | K_k | 306 T +  0 P +918 poles | +3 016 186 | 6 221 191 786 | 6 218 176 754 | 6 222 004 840 |
+| 86 | 14 | record | 644 T +  0 P +1932 poles | +6 333 068 | 6 224 508 668 | 6 218 177 532 | 6 225 165 512 |
+| 87 | 15 | Lambda_k | 780 T +  0 P +2562 poles | +7 662 430 | 6 225 838 030 | 6 218 178 164 | 6 225 838 030 |
+| 88 | 16 | Lambda_k | 1440 T +  0 P +4320 poles | +14 063 928 | 6 232 239 528 | 6 218 179 920 | 6 232 239 528 |
+| 89 | 17 | Lambda_k | 1782 T +  0 P +5704 poles | +17 349 436 | 6 235 525 036 | 6 218 181 330 | 6 235 525 036 |
+| 90 | 18 | Lambda_k | 2466 T +  0 P +7624 poles | +23 851 540 | 6 242 027 140 | 6 218 183 254 | 6 242 027 140 |
+| 91 | 19 | Lambda_k | 3556 T +  0 P +11934 poles | +34 026 950 | 6 252 202 550 | 6 218 187 548 | 6 252 202 550 |
+| 92 | 20 | Lambda_k | 5800 T +  0 P +19415 poles | +54 255 975 | 6 272 431 575 | 6 218 195 048 | 6 272 431 575 |
+| 93 | 21 | Lambda_k | 9240 T +  0 P +29712 poles | +83 460 484 | 6 301 636 084 | 6 218 205 368 | 6 301 636 084 |
+| 94 | 22 | Lambda_k | 16632 T +  0 P +49852 poles | +139 481 796 | 6 357 657 396 | 6 218 225 496 | 6 357 657 396 |
+| **95** | 23 | Lambda_k | 31050 T +  0 P +93074 poles | +254 889 446 | **6 473 065 046** | 6 218 268 750 | 7 091 452 684 |
 
 Every dimension 81-95 now has a construction of its own: dimension 81 clears dimension 80 by
 **184 904**, so no row here is carried by monotonicity from the row below it. The cap directions are the better,
@@ -61,15 +61,16 @@ by [`scripts/verify11.py`](scripts/verify11.py), is the one exception, and prova
 triples is its exact maximum, and 84 T + 176 P its exact optimum on 2T + P, both settled by
 CP-SAT in [`scripts/k11_optimal.py`](scripts/k11_optimal.py).
 
-## The two class families
+## The class families
 
 Dimension 72+k reads the `T+P` largest classes of ONE family of pairwise-disjoint Γ₇₂ classes,
-and two are shipped. They have opposite shapes, which is why both are kept:
+and three are shipped. The driver chooses one complete family per dimension:
 
 | family | classes | sizes | total lines | how |
 |---|---|---|---|---|
 | `class_sizes_32000.npy` | 32 000 | 867–2106 | 47 150 230 | automorphism images of one greedy 2106-line class |
 | `class_sizes_gpu.npy` | 32 000 | 1932–2118 | 65 570 602 | greedy on a 80 000 000-line pool of conflict density 0.004827 (`scripts/gpu/`) |
+| `class_sizes_symmetry.npy` | 16 632 | 1751–2465 | 34 857 986 | shipped seed, integral isometries and survivor masks; CPU verification in seconds |
 
 The image family's first few thousand classes are excellent and only its tail collapses; the
 fresh family is nearly flat. So which one wins depends on how deep the dimension reads, and the
@@ -93,7 +94,7 @@ crossover is at **dimension 86**:
 | 94 | 16 632 | 28 881 727 | 34 378 537 | +19.0% |
 | 95 | 31 050 | 46 221 022 | 63 699 093 | +37.8% |
 
-`final81-95.py` takes the better of the two per dimension, by the rule stated there. They are
+`final81-95.py` takes the largest verified contribution per dimension. The families are
 never mixed, since disjointness ACROSS families is not claimed. Declining the GPU family
 entirely costs no RECORD: on the image family alone, which is regenerable on a CPU, every
 dimension 81–95 still clears its published value, the smallest margin being 858 364 at
@@ -116,6 +117,43 @@ each vector of norm 8, each off-diagonal `|⟨u,v⟩| ≤ 2` — and the worst v
 31 000 of them was 2. That is why the lines themselves never had to be kept.
 
 ## The cap directions: what is shipped, and where it comes from
+
+### Compact class certificate strengthened on 25 October 2026
+
+`data/symmetry_classes.npz` contains a 2,465-line seed, 16,632 integral lattice
+isometries and survivor masks. The retained classes contain 34,857,986 distinct
+lines, with sizes 1,751–2,465. This CPU continuation improves every bound in
+87–94D relative to the 24 October checkpoint. In 94D the gain is 1,860,724 points.
+The certificate is 24,422,340 bytes (SHA-256
+`173506659603e4a0e2bb9116ac918c2e1ecee513f62ff2571f8d7e366f643e2b`).
+Its independent NumPy checker passed in 6.64 seconds on local CPU:
+
+```bash
+python scripts/verify_symmetry.py
+python scripts/verify_symmetry.py --complete
+```
+
+The seed increased from 2,454 to 2,465 lines on the older independent CPU pool.
+The image search then chose the class with the largest uncovered marginal
+from 40,000 candidates, assigning every repeated line to its first selected
+image. This avoids charging later selected classes for collisions with omitted
+images. The complete search and verification metadata is in
+`data/symmetry_search_20261025.json`; the checker needs only the certificate.
+
+The verifier checks every seed norm and angle, proves every matrix preserves the
+Gram, and checks disjointness of all retained images through exact factored
+integer hashes. Equal or antipodal vectors always have equal keys, so distinct
+keys prove distinct lines; a hash collision causes rejection. Binary32 and
+binary64 products are used only after explicit integer partial-sum bounds put
+every operation inside their exact range. The Gamma72 minimum and shell size
+remain published parent inputs. The checker does not need the search pool.
+
+`data/class_sizes_symmetry.npy` is the size table read by the driver;
+`scripts/verify_symmetry.py` binds it to the complete certificate.
+`scripts/gpu/cpu_certificate.py` is the independent NumPy-only checker.
+`scripts/exact_products.py` supplies rigorous coarse integer bounds and exact
+remainder checks for the auxiliary pole verifiers. Their span checks use an
+exact small basis and annihilator instead of eliminating every direction.
 
 For each *k* the construction needs a 60° code of ℝᵏ split into parts. Three families were
 tried and the better is taken per *k*; all are re-checked exactly by

@@ -26,6 +26,20 @@ def results():
     row = read('dim61_96/support_doubling.json')['dimension96']
     assert row['total'] == sum(row['terms'].values())
     rows.append(dict(dimension=96, total=row['total']))
+    pairing = read('dim61_96/support_pairing_certificate.json')
+    assert pairing['status'].startswith('Verified:')
+    for dim, row in pairing['dimensions'].items():
+        assert row['bound'] == sum(row['terms'].values())
+        for registered in rows:
+            if registered['dimension'] == int(dim):
+                registered['total'] = max(registered['total'], row['bound'])
+    mixed = read('dim61_96/mixed_pair_certificate.json')
+    assert mixed['status'].startswith('Verified:')
+    for dim, row in mixed['dimensions'].items():
+        assert row['bound'] == sum(row['terms'].values())
+        for registered in rows:
+            if registered['dimension'] == int(dim):
+                registered['total'] = max(registered['total'], row['bound'])
     return sorted(rows, key=lambda row: row['dimension'])
 
 

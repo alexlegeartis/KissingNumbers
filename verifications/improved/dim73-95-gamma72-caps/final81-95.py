@@ -1,25 +1,12 @@
 #!/usr/bin/env python3
 """Dimensions 81-95: the cap construction over Gamma_72 with explicit classes.
 
-Two inputs, both produced and verified in this directory:
+Read the shipped class-size families, cap partitions and axis layers. A triple
+part contributes four points per class line, and a pair contributes two. Take
+the largest family contribution for each dimension without mixing families.
+The package README states the independent verification route for each input.
 
-  * 32 000 pairwise-disjoint classes of Gamma_72 minimal lines (47 150 230 lines), built as
-    automorphism images of a 2106-line class and verified in exact integer arithmetic --
-    every vector of norm 8, every class with maximum |off-diagonal inner product| <= 2, all
-    lines distinct.  Caro-Wei could only guarantee 221 lines per class.
-  * zero-sum triple partitions of kissing configurations of R^k (lamtriples.py).
-
-The gain is  2 * sum_i |C_i| * (|Z_i| - 1), so a triple part is worth 4 per line and a pair
-part 2 (KNOWLEDGE.md section 50).  Per k we take whichever is better:
-
-  k = 19..23: triple partitions of the A_j cross-sections of the Leech, which are smaller
-              than Lambda_k but whose triples still beat pairs on the full Lambda_k
-              (factor 61756 against 46575 at k = 23);
-  k =  9..18: antipodal pairs on Lambda_k, since there the A_j cross-section has shrunk too
-              far -- the honest fallback until triple partitions of the true Lambda_k are
-              computed (section 53).
-
-    python final.py
+    python final81-95.py
 """
 import os
 import sys
@@ -107,7 +94,8 @@ for _k in range(9, 24):
 # families are never mixed, since disjointness ACROSS families is not claimed.
 FAMILIES = []
 for _nm, _fn in (('images(Aut Gamma_72)', 'class_sizes_32000.npy'),
-                 ('greedy(spread pool)', 'class_sizes_gpu.npy')):
+                 ('greedy(spread pool)', 'class_sizes_gpu.npy'),
+                 ('compact symmetry', 'class_sizes_symmetry.npy')):
     _fp = os.path.join(os.path.join(HERE, 'data'), _fn)
     if os.path.exists(_fp):
         _s = np.sort(np.asarray(np.load(_fp)).ravel())[::-1].astype(np.int64)

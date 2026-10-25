@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-25",
+  "dimension": 73,
+  "minimum_squared_norm": 8,
+  "gram_determinant": "5/2",
+  "parent_minimal_vectors": 6218175600,
+  "nearest_coset_vectors": 6272,
+  "added_lattice_minimal_vectors": 12544,
+  "kissing_number_lower_bound": 6218188144,
+  "previous_repository_bound": 6218187616,
+  "gain": 528,
+  "previous_direct_sum_lattice_bound": 6218175602,
+  "gain_over_direct_sum": 12542,
+  "parent_source": "https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/neb72.html",
+  "parent_theorem": "https://arxiv.org/abs/1008.2862",
+  "claim_scope": "Explicit lattice; improvement over the pinned repository bound. No assertion of global priority.",
+  "fresh_enumerations": [
+    {
+      "complete": true,
+      "certified_intervals": true,
+      "radius_squared_leech": 5,
+      "nodes": 29235360,
+      "seconds": 21.0957,
+      "histogram": {
+        "2": 48,
+        "3": 4096,
+        "4": 97152,
+        "5": 1130496
+      }
+    },
+    {
+      "complete": true,
+      "certified_intervals": true,
+      "radius_squared_leech": 5,
+      "nodes": 27830442,
+      "seconds": 19.1296,
+      "histogram": {
+        "2": 48,
+        "3": 4096,
+        "4": 97152,
+        "5": 1130496
+      }
+    },
+    {
+      "complete": true,
+      "certified_intervals": true,
+      "radius_squared_leech": 5,
+      "nodes": 28396127,
+      "seconds": 22.1298,
+      "histogram": {
+        "2": 48,
+        "3": 4096,
+        "4": 97152,
+        "5": 1130496
+      }
+    }
+  ],
+  "completion": {
+    "h": 12625758,
+    "old": 6008,
+    "new": 264,
+    "total": 6272,
+    "dimension": 73,
+    "kissing_lower_bound": 6218188144
+  }
+}

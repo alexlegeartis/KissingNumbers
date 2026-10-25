@@ -36,9 +36,9 @@ Henry Cohn, \emph{Spherical codes},
 
 \bibitem{cohn-table}
 \bysame, \emph{Table of kissing number bounds},
-  \url{https://cohn.mit.edu/kissing-numbers/}, accessed 2026-08-20 and again
-  2026-09-11; the entries for dimensions $25$ to $31$ were unchanged between
-  the two.
+  \url{https://cohn.mit.edu/kissing-numbers/}, current records checked
+  2026-10-24; historical comparisons also use the archived August and September
+  2026 snapshots.
 
 \bibitem{cohn-data}
 \bysame, \emph{Table of kissing number bounds}, data set, DSpace@MIT,
@@ -87,6 +87,11 @@ Philippe Delsarte, \emph{An algebraic approach to the association schemes of
 \bibitem{delsarte-goethals-seidel1977}
 Philippe Delsarte, Jean-Marie Goethals, and Johan~J. Seidel, \emph{Spherical
   codes and designs}, Geom. Dedicata \textbf{6} (1977), no.~3, 363--388.
+
+\bibitem{dorofeev-sun-wang2026}
+Ivan Dorofeev, Xiaoming Sun, and Chengu Wang, \emph{Optimal extensions of
+  cross-sections: sphere packings in dimensions $38$ to $43$}, 2026, preprint,
+  version 4, \texttt{arXiv:2607.20359}.
 
 \bibitem{echols2026}
 William Echols, \emph{New lower bounds for constant-weight codes via seeded
@@ -146,6 +151,26 @@ Nando Leijenhorst and David de~Laat, \emph{Solving clustered low-rank
 Vladimir~I. Levenshtein, \emph{On bounds for packings in $n$-dimensional
   {E}uclidean space}, Soviet Math. Dokl. \textbf{20} (1979), 417--421.
 
+\bibitem{kli19-21-2026}
+Kevin Li, \emph{Improved kissing numbers in nineteen and twenty-one
+  dimensions}, \url{https://hexagonmath.org/2610.00248v1}, 2026, preprint,
+  \texttt{hexagon:2610.00248v1}.
+
+\bibitem{kli28-31-2026}
+\bysame, \emph{Improved kissing numbers in twenty-eight through thirty-one
+  dimensions},
+  \url{https://github.com/Felpix-Studios/kissing-number/tree/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31},
+  2026, preprint and exact certificates; accessed 2026-10-24.
+
+\bibitem{lin32-2026}
+Qihong Lin, \emph{A kissing configuration of $352320$ points in
+  $\mathbb{R}^{32}$ and $a(32,8,8)\ge1713$: explicit certificates}, 2026, data
+  set, version 1.1.0.
+
+\bibitem{lin33-2026}
+\bysame, \emph{New lower bounds for kissing numbers in dimensions $33$ to $39$:
+  explicit certificates}, 2026, data set, version 1.0.0.
+
 \bibitem{ma-etal2025}
 Chengdong Ma, Th{\'e}o~Tao Zhaowei, Pengyu Li, Minghao Liu, Haojun Chen, Zihao
   Mao, Bo~Li, Yuan Cheng, Yuan Qi, and Yaodong Yang, \emph{Finding kissing
@@ -192,6 +217,10 @@ Andrew~M. Odlyzko and Neil J.~A. Sloane, \emph{New bounds on the number of unit
   spheres that can touch a unit sphere in $n$ dimensions}, J. Combin. Theory
   Ser. A \textbf{26} (1979), 210--214.
 
+\bibitem{olivier2026}
+Antoine Olivier, \emph{Kissing number in dimension $37$: $\tau_{37}\ge500008$,
+  built on the code of {Qihong Lin}}, 2026, data set.
+
 \bibitem{ozeki2016}
 Michio Ozeki, \emph{A numerical study of {S}iegel theta series of various
   degrees for the $48$-dimensional even unimodular extremal lattices}, Tsukuba
@@ -211,6 +240,12 @@ Rustem Takhanov, Zhenisbek Assylbekov, and Stanislav Yun, \emph{Structure of
   kissing arrangements in $\mathbb{R}^{12}$ and a place for the $841$st
   sphere}, 2026, preprint, \texttt{arXiv:2606.18984}.
 
+\bibitem{takhanov-yun2026}
+Rustem Takhanov and Stanislav Yun, \emph{New lower bounds for kissing numbers
+  in dimensions $25$, $26$, $27$, $29$ and $31$},
+  \url{https://github.com/k-nic/kissing_d25-31}, 2026, preprint,
+  \texttt{arXiv:2609.21591}; exact certificates accessed 2026-10-24.
+
 \bibitem{venkov1984}
 Boris~B. Venkov, \emph{Even unimodular extremal lattices}, Trudy Mat. Inst.
   Steklov. \textbf{165} (1984), 43--48.
@@ -219,6 +254,13 @@ Boris~B. Venkov, \emph{Even unimodular extremal lattices}, Trudy Mat. Inst.
 Maryna~S. Viazovska, \emph{The sphere packing problem in dimension $8$}, Ann.
   of Math. (2) \textbf{185} (2017), no.~3, 991--1015,
   \texttt{arXiv:1603.04246}.
+
+\bibitem{yang-etal2026}
+Shuxing Yang, Rui Zhao, Junyao Wu, Yize Wang, Fujia Chen, Kaihao Zhu, Wenhao
+  Li, Zichen Li, Yaqi Li, Shenzhan Hong, Yuang Pan, Junjie Yang, Taowen Deng,
+  Jincheng Mi, Hongsheng Chen, and Yihao Yang, \emph{Large-scale autonomous
+  discovery of kissing number constructions}, 2026, preprint, version 1,
+  \texttt{arXiv:2609.35051}.
 
 \bibitem{zinoviev-litsyn1984}
 Victor~A. Zinov'ev and Simon~N. Litsyn, \emph{On shortening of codes}, Problems

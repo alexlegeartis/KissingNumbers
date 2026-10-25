@@ -1,12 +1,19 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 74 scripts, including large exact certificate replays
-    python run_all.py --full       # 93 scripts, budget about 10 hours
+    python run_all.py              # 77 scripts, including large exact certificate replays
+    python run_all.py --full       # 96 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
     python run_all.py --skip-paper --repository-only # leave the manuscript snapshot alone
+
+    python run_all.py --sota --quick # short replays for the results labelled SOTA in README.md
+    python run_all.py --sota         # also replay the slow coset and binary-code checks
+
+The SOTA profile omits historical constructions, searches and manuscript checks. Its
+coverage report distinguishes a fresh replay, reuse of earlier checks, deferred work,
+and inherited inputs. See SOTA_VERIFY.md for the remaining population and GPU-family gaps.
 
 --changed.  A verification that re-runs unchanged work is mostly a waste of an hour, so each
 job records what it read and the digest of every one of those files, in .run_all_cache.json,
@@ -179,12 +186,16 @@ JOBS = [
      os.path.join(V, 'improved', 'dim49-63-p48-caps'), ['verify_october.py'], 1.0, True),
     ("october-codes: compression, support layers and central sections",
      os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py'], 5.0, True),
+    ("dims 26, 27: shared midpoint replacements, exact independent replay",
+     os.path.join(V, 'improved', 'dim26-27-midpoint-replacements'), ['verify.py'], 1.0, True),
     ("dim 28: joint Leech layers, exact independent replay",
      os.path.join(V, 'improved', 'dim28-joint-leech-layers'), ['verify.py'], 1.0, True),
     ("dims 64, 65: signed support augmentation and BCH owner caps",
      os.path.join(V, 'improved', 'dim64-65-signed-parity'), ['verify.py'], 1.0, True),
     ("october-codes-full: all 2^36 words of the 73-coordinate binary code",
      os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py', '--full-codes'], 7.0, False),
+    ("dim 73: completed lattice plus non-lattice cap surgery",
+     os.path.join(V, 'improved', 'dim73-88-gamma72-cosets'), ['verify73.py'], 0.1, True),
     ("october-cosets: Gamma72 nearest subsets and all repaired/scaled cross products",
      os.path.join(V, 'improved', 'dim73-88-gamma72-cosets'), ['verify.py'], 60.0, True),
     ("dims 49-63: the P_48 lattice, class and arithmetic",
@@ -288,6 +299,9 @@ JOBS = [
     ("dims 86-94: the GPU class family's certificate, without a GPU",
      os.path.join(V, 'improved', 'dim73-95-gamma72-caps'),
      ['scripts/gpu/check_cert.py'], 0.1, True),
+    ("dims 87-94: compact symmetry classes, cap directions, poles and counts, on CPU",
+     os.path.join(V, 'improved', 'dim73-95-gamma72-caps'),
+     ['scripts/verify_symmetry.py', '--complete'], 2.0, True),
     ("dims 73-80: the result table",
      os.path.join(V, 'improved', 'dim73-95-gamma72-caps'), ['final73-80.py'], 0.5, True),
     ("dims 81-95: the result table",
@@ -332,6 +346,148 @@ JOBS = [
      os.path.join(V, 'closed', 'dim17-layered-family'),
      ['scripts/frame17.py'], 1.5, False),
 ]
+
+
+# Jobs needed for the current README records, without rediscovering constructions or
+# replaying their superseded versions. Do not infer geometric verification from a count
+# driver, a manifest, or the GPU run's receipt.
+def _sota_jobs(quick=False):
+    wanted = {
+        ('common', ('capalgebra.py',)),
+        ('dim18-bent-hexagon', ('verify18.py',)),
+        ('dim26-27-midpoint-replacements', ('verify.py',)),
+        ('dim28-joint-leech-layers', ('verify.py',)),
+        ('dim36-37-coxeter-todd', ('verify.py',)),
+        ('dim41-46-p48-heads', ('verify.py',)),
+        ('dim49-63-p48-caps', ('verify_october.py',)),
+        ('dim49-63-p48-caps', ('final.py',)),
+        ('dim49-63-p48-caps', ('scripts/verify_capdirs.py',)),
+        ('dim61-68-95-96-code-layers', ('verify.py',)),
+        ('dim64-65-signed-parity', ('verify.py',)),
+        ('dim68-69-gamma72-cross-sections', ('scripts/verify69.py',)),
+        ('dim68-69-gamma72-cross-sections', ('scripts/recheck_cert.py',)),
+        ('dim70-71-gamma72-cross-sections', ('derive.py',)),
+        ('dim73-88-gamma72-cosets', ('verify73.py',)),
+        ('dim73-95-gamma72-caps', ('scripts/verify_symmetry.py', '--complete')),
+        ('dim73-95-gamma72-caps', ('final73-80.py',)),
+        ('dim73-95-gamma72-caps', ('final81-95.py',)),
+    }
+    if not quick:
+        wanted.remove(('dim61-68-95-96-code-layers', ('verify.py',)))
+        wanted.add(('dim61-68-95-96-code-layers', ('verify.py', '--full-codes')))
+        wanted.add(('dim73-88-gamma72-cosets', ('verify.py',)))
+    jobs = []
+    found = set()
+    for lab, directory, argv, minutes, fast in JOBS:
+        selector = (os.path.basename(directory), tuple(argv))
+        if selector in wanted:
+            found.add(selector)
+            jobs.append((lab, directory, argv, minutes, fast))
+    if found != wanted:
+        raise ValueError('SOTA profile has no job for %r' % sorted(wanted - found))
+    return [(JOBS[0][0], HERE, ['audit.py', '--repository-only'], 0.5, True)] + jobs
+
+
+def _sota_records():
+    """The current README labels are the scope; validate their values and packages.
+
+    This deliberately does not assert that a literature search proves global priority.
+    Adding a new labelled record without a verification route fails closed.
+    """
+    with open(os.path.join(HERE, 'RESULTS.md'), encoding='utf-8') as fh:
+        registry = {}
+        for line in fh:
+            cells = line.split('|')
+            if len(cells) < 7 or not cells[1].strip().isdigit():
+                continue
+            dimension = int(cells[1])
+            value = int(''.join(c for c in cells[3] if c.isdigit()))
+            package = re.search(r'\(verifications/improved/([^/)]+)/?\)', line)
+            if not package or dimension in registry:
+                raise ValueError('ambiguous registry row: %s' % line.strip())
+            registry[dimension] = (value, package.group(1))
+    records = {}
+    with open(os.path.join(HERE, 'README.md'), encoding='utf-8') as fh:
+        for line in fh:
+            cells = line.split('|')
+            if len(cells) < 11 or not cells[1].strip().isdigit() or cells[5].strip() != '**SOTA**':
+                continue
+            dimension = int(cells[1])
+            value = int(''.join(c for c in cells[4] if c.isdigit()))
+            if dimension in records or registry[dimension][0] != value:
+                raise ValueError('SOTA/registry mismatch in dimension %d' % dimension)
+            records[dimension] = registry[dimension]
+    if not records:
+        raise ValueError('README.md contains no recognised SOTA rows')
+    return records
+
+
+def _sota_coverage(jobs, results=None):
+    """Report scope per dimension, including steps absent from the selected profile."""
+    groups = [
+        ('dim18-bent-hexagon', [18], [('verify18.py',)], ''),
+        ('dim26-27-midpoint-replacements', [26, 27], [('verify.py',)], ''),
+        ('dim28-joint-leech-layers', [28], [('verify.py',)], ''),
+        ('dim36-37-coxeter-todd', [36, 37], [('verify.py',)], ''),
+        ('dim41-46-p48-heads', list(range(41, 47)), [('verify.py',)],
+         'inherited body populations; the latest large shells are not all freshly enumerated'),
+        ('dim49-63-p48-caps', list(range(49, 61)),
+         [('verify_october.py',), ('scripts/verify_capdirs.py',)], ''),
+        ('dim61-68-95-96-code-layers', [61, 62, 63, 95, 96], [('verify.py',)], ''),
+        ('dim64-65-signed-parity', [64, 65], [('verify.py',)], ''),
+        ('dim61-68-95-96-code-layers', [66, 67, 68], [('verify.py',)],
+         'the default replay reads the saved [73,36,16] distance report; --sota also enumerates all words'),
+        ('dim68-69-gamma72-cross-sections', [69],
+         [('scripts/verify69.py',), ('scripts/recheck_cert.py',)],
+         'geometry replay plus an independent LP-certificate replay; recheck_cert also covers dimensions 68 and 70'),
+        ('dim70-71-gamma72-cross-sections', [70, 71], [('derive.py',)], ''),
+        ('dim73-88-gamma72-cosets', [73], [('verify73.py',)],
+         'completed half-coset minimum, all class/head products and non-lattice witness; published Gamma72 parent facts'),
+        ('dim73-88-gamma72-cosets', list(range(74, 87)), [('verify.py',)],
+         'seed nearestness inherits 21 completed block-enumeration lists and their completion metadata'),
+        ('dim73-95-gamma72-caps', list(range(87, 95)),
+         [('scripts/verify_symmetry.py', '--complete')],
+         'all retained class geometry and disjointness, directions, partitions, poles and counts; CPU replay'),
+    ]
+    records = _sota_records()
+    mapped = {}
+    for package, dimensions, commands, scope in groups:
+        for dimension in dimensions:
+            if dimension in mapped:
+                raise ValueError('two verification routes for dimension %d' % dimension)
+            mapped[dimension] = package
+    if set(records) != set(mapped):
+        raise ValueError('SOTA coverage differs from README: missing %r, extra %r' % (
+            sorted(set(records) - set(mapped)), sorted(set(mapped) - set(records))))
+    if any(package != mapped[d] for d, (_, package) in records.items()):
+        raise ValueError('SOTA package differs from its verification route')
+    selected = {(os.path.basename(d), tuple(argv)): lab for lab, d, argv, _, _ in jobs}
+    if results is not None:
+        verdicts = {lab: verdict for verdict, lab, _ in results}
+        audit_label = JOBS[0][0]
+        common_label = JOBS[5][0]
+    print('\nVerification scope for %d results labelled SOTA in README.md:' % len(records))
+    for package, dimensions, commands, scope in groups:
+        states = []
+        for command in commands:
+            lab = selected.get((package, command))
+            if lab is None and command == ('verify.py',):
+                lab = selected.get((package, ('verify.py', '--full-codes')))
+            states.append('DEFERRED' if lab is None else
+                          ('SELECTED' if results is None else verdicts.get(lab, 'DEFERRED')))
+        if results is not None:
+            states += [verdicts.get(audit_label, 'DEFERRED')]
+            if package == 'dim49-63-p48-caps':
+                states += [verdicts.get(common_label, 'DEFERRED')]
+        state = next((s for s in ('FAIL', 'SKIP', 'DEFERRED', 'SAME') if s in states),
+                     'SELECTED' if results is None else 'PASS')
+        ds = ','.join(map(str, dimensions))
+        print('  %-24s %-8s %s' % (ds, state, package))
+        if scope:
+            print('      %s' % scope)
+    print('PASS covers the replay described above, with published parent lattice/code facts as inputs.')
+    print('SAME reuses earlier checks after input hashing. DEFERRED and GAP are not fresh verification.')
+    print('This profile does not check whether a later publication has surpassed a README record.')
 
 
 # Third-party packages a run is allowed to be without.  A job that cannot import one of
@@ -537,6 +693,11 @@ def _read_opens(logfile, limit=6000):
 
 def main():
     full = '--full' in sys.argv
+    sota = '--sota' in sys.argv
+    quick = '--quick' in sys.argv
+    if quick and not sota:
+        print('--quick requires --sota; the ordinary suite is unchanged')
+        return 2
     changed_only = '--changed' in sys.argv
     only = None
     if '--only' in sys.argv:
@@ -545,7 +706,7 @@ def main():
             print("--only needs a substring to match against the label or the command")
             return 2
         only = sys.argv[i + 1].lower()
-    jobs = [j for j in JOBS if j[4] or full]
+    jobs = _sota_jobs(quick) if sota else [j for j in JOBS if j[4] or full]
     if '--skip-paper' in sys.argv:
         jobs = [j for j in jobs if not j[0].startswith('paper:')]
     if '--repository-only' in sys.argv:
@@ -561,7 +722,12 @@ def main():
             print("  %-58s ~%4.1f min   %s" % (lab, mins, ' '.join(argv)))
         print("")
         print("  %d scripts, about %.0f minutes" % (len(jobs), sum(j[3] for j in jobs)))
+        if sota:
+            _sota_coverage(jobs)
         return 0
+
+    if sota:
+        _sota_coverage(jobs)
 
     print("running %d scripts, roughly %.0f minutes%s%s"
           % (len(jobs), sum(j[3] for j in jobs), "" if full else "  (--full adds more)",
@@ -653,6 +819,8 @@ def main():
     if same and not bad:
         print("   -- that verdict covers %d of %d jobs; the other %d passed earlier and "
               "nothing they read has moved" % (len(results) - len(same), len(results), len(same)))
+    if sota:
+        _sota_coverage(jobs, results)
     return 1 if bad else 0
 
 

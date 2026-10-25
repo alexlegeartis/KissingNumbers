@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-25",
+  "method": "Portable verify.py: regenerated Leech shell, exact midpoint identities, exact integer new/new products, convexity for new/bulk, Cauchy-Schwarz for pure tail points",
+  "results": [
+    {
+      "dimension": 26,
+      "points": 200918,
+      "retained_leech": 192208,
+      "removed_leech": 4352,
+      "new_points": 8704,
+      "pure_points": 6,
+      "maximum_new_new_inner_product": 16,
+      "new_new_contacts": 1698816,
+      "certificate_sha256": "6a1fcba8c37657cd6111bb2954c354e5a2fc3668ade9c6551c5c13db3156ca43",
+      "status": "PASS"
+    },
+    {
+      "dimension": 27,
+      "points": 204636,
+      "retained_leech": 188496,
+      "removed_leech": 8064,
+      "new_points": 16128,
+      "pure_points": 12,
+      "maximum_new_new_inner_product": 16,
+      "new_new_contacts": 2953728,
+      "certificate_sha256": "592ba5d22deebeb43f15ab3600d8ab75335c3b0591ab5ebbd7a098a0fa1e54ad",
+      "status": "PASS"
+    }
+  ]
+}

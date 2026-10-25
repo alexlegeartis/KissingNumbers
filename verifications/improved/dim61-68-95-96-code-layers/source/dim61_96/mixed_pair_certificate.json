@@ -1,0 +1,81 @@
+{
+  "status": "Verified: every physical support pair and exact sign/section counts",
+  "supports": 24561,
+  "previous_supports": 23288,
+  "additional_supports": 1273,
+  "support_pairs_checked": 301609080,
+  "maximum_distinct_support_intersection": 12,
+  "maximum_occupied_rows": 12,
+  "section_coordinates": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "section_intersection_histogram": [
+    6978,
+    0,
+    11363,
+    0,
+    5472,
+    0,
+    704,
+    0,
+    44
+  ],
+  "retained_sign_counts": [
+    16384,
+    0,
+    8192,
+    0,
+    6144,
+    0,
+    5120,
+    0,
+    8960
+  ],
+  "dimensions": {
+    "95": {
+      "bound": 7091452684,
+      "previous_bound": 7080016652,
+      "gain": 11436032,
+      "terms": {
+        "dense_section": 4697620480,
+        "transversal24_section": 2147483648,
+        "new_support24_section": 245031936,
+        "support6_section": 1316444,
+        "ordinary_poles": 176
+      }
+    },
+    "96": {
+      "bound": 13289406656,
+      "previous_bound": 13268549824,
+      "gain": 20856832,
+      "terms": {
+        "dense": 8589934592,
+        "transversal24": 4294967296,
+        "new_support24": 402407424,
+        "support6": 2097152,
+        "poles": 192
+      }
+    }
+  },
+  "certificate_sha256": "9771a5155fac1b05625f3249ed894860c4e3d837ccc274e2e81b0e642d9f48ff",
+  "seconds": 1.1037397,
+  "geometry": {
+    "norm_squared": 96,
+    "dense_min_distance": "min(4*6, 2*12, 24)=24 gives inner product at most 48",
+    "same_sparse_support": "4*(24-2*6)=48",
+    "different_sparse_supports": "4*12=48, every support pair checked directly",
+    "dense_sparse": "2*24=48",
+    "transversal_sparse": "one cell per occupied row, at most twelve rows",
+    "support6_sparse": "4*2*6=48",
+    "poles_sparse": "2*sqrt(96)<48",
+    "section95": "Orthogonal identification of the central hyperplane sum(x_0,...,x_7)=0 with R^95"
+  },
+  "scope": "Constructive lower bounds; no unrestricted optimum or literature-priority claim."
+}

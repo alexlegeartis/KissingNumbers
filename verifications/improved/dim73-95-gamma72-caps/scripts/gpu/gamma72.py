@@ -104,6 +104,11 @@ def canon(V):
 # ---------------------------------------------------------------- exact GEMM back ends
 
 def _mm_int8(A, B):
+    # CUDA 13 cuBLAS on a T4 rejects tall int8 GEMMs at 65,536 rows.
+    # Row tiles preserve the exact integer product and keep that backend usable.
+    if len(A) > 32768:
+        return torch.cat([torch._int_mm(A[i:i + 32768].contiguous(), B)
+                          for i in range(0, len(A), 32768)], dim=0)
     return torch._int_mm(A, B)
 
 
@@ -429,10 +434,15 @@ def spread_pool(target, seed=0, orbit=2_100_000, walk=30, nu=512, sample=2_000_0
                   % (n - mid, n, target, time.time() - t0), flush=True)
         stall = stall + 1 if n == before else 0
     X = Xout[:n]
-    Gi = torch.tensor(G, dtype=torch.float64, device=dev)
-    for a in range(0, n, 2_000_000):                    # exact re-check of every norm
-        B = X[a:a + 2_000_000].to(torch.float64)
-        assert bool((((B @ Gi) * B).sum(1) == 8).all()), "pool row of norm != 8"
+    Gi = torch.tensor(G, dtype=torch.float32, device=dev)
+    # Every integer partial sum is bounded by 72*24*8 < 2**24. TF32 is off.
+    # Small tiles avoid several gigabytes of temporary double-precision arrays.
+    for a in range(0, n, 250_000):
+        B = X[a:a + 250_000].to(torch.float32)
+        assert int(B.abs().max()) <= MAXC
+        BG = B @ Gi
+        assert int(BG.abs().max()) <= MAXG
+        assert bool(((BG * B).sum(1) == 8).all()), "pool row of norm != 8"
     return X
 
 
@@ -588,7 +598,9 @@ def build_classes(X, nclasses, seed=0, thr=2, scan=20_000_000, block=256, pchunk
         with np.load(state, allow_pickle=True) as z:
             keep = np.unpackbits(z['alive'])[:len(X)].astype(bool)
             sizes = [int(v) for v in z['sizes']]
-            digests = [bytes(d) for d in z['digests']]
+            # NumPy's fixed-width byte scalars drop trailing NULs on conversion.
+            # A SHA-256 digest can end in NUL, so restore all 32 bytes on resume.
+            digests = [bytes(d).ljust(32, b'\0') for d in z['digests']]
             worst = int(z['worst'])
             rngstate = str(z['rng'])
             saved = str(z['pool_digest']) if 'pool_digest' in z.files else None

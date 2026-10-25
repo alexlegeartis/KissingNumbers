@@ -1,5 +1,5 @@
 {
-  "checkpoint_date": "2026-10-24",
+  "checkpoint_date": "2026-10-25",
   "copies": [
     {
       "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_coset_certificate.json",
@@ -418,13 +418,13 @@
     },
     {
       "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_repaired_lifts.json",
-      "source": "research/dim61_96/gamma72_repaired_lifts.json",
-      "sha256": "5c0d18578c016e3f4607215d901d5eb72278859e0d291293fb989975604b1241"
+      "source": "research/highdims_20261025/coset_source/gamma72_repaired_lifts.json",
+      "sha256": "187fda590165ab2358480500a7a2581f23cc904ba9706128829df44fd8857409"
     },
     {
       "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_repaired_lifts.npz",
-      "source": "research/dim61_96/gamma72_repaired_lifts.npz",
-      "sha256": "440189afafdefab1e96f47af4dfe066fd061d54b725cddfe1cd33abc2eae210e"
+      "source": "research/highdims_20261025/coset_source/gamma72_repaired_lifts.npz",
+      "sha256": "0893a7d07a2cd61ac7d1503bac2dadecb2688ff919e9fad27cf0a56c8b931f4a"
     },
     {
       "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_repaired_verify.py",
@@ -433,23 +433,23 @@
     },
     {
       "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_4.json",
-      "source": "research/dim61_96/gamma72_scaled_4.json",
-      "sha256": "0798381385726b66db2993531b3b369f975ba2f78edc689646920197a1a80700"
+      "source": "research/highdims_20261025/coset_source/gamma72_scaled_4.json",
+      "sha256": "822a05a349abb1d7f8c802bd9de9ef8f8d5c15467e526651184c4d5a123f7eec"
     },
     {
       "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_4.npz",
-      "source": "research/dim61_96/gamma72_scaled_4.npz",
-      "sha256": "b22a10c401f51335cbc67bdb297ba00a4a7de0fdbe42c89d98d44dbf38afa59b"
+      "source": "research/highdims_20261025/coset_source/gamma72_scaled_4.npz",
+      "sha256": "e28a0837205acaaa09373e75e5e1e215fb5580b17b6a7d169e87244d6d0541d7"
     },
     {
       "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_8.json",
-      "source": "research/dim61_96/gamma72_scaled_8.json",
-      "sha256": "dd40a03555272b1fea1a71af52a2cc9ab9de20bf0b7692d598479e620cc06e21"
+      "source": "research/highdims_20261025/coset_source/gamma72_scaled_8.json",
+      "sha256": "776edbbb97573af37967924d9ff8a32046ee6ea2895bce45b24b044625997823"
     },
     {
       "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_8.npz",
-      "source": "research/dim61_96/gamma72_scaled_8.npz",
-      "sha256": "39ffce8afe9a8114ec2023b176253f6af7e6b97516b0ac1c0964a40cadfeac1e"
+      "source": "research/highdims_20261025/coset_source/gamma72_scaled_8.npz",
+      "sha256": "7e987c70e5e7e97c2dc19c4c6a553c1d6f41a821c083cdc6cd7c14d9447536e7"
     },
     {
       "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_seeds_4.npz",
@@ -522,5 +522,17 @@
         "gram_sha256": "a23260883976630d482fcac7c4497779b1ee3a55d24e5083a44c5954496bbd06"
       }
     }
-  ]
+  ],
+  "cpu_continuation_20261025": {
+    "method": "Maximum matching on bipartite components and exact CP-SAT on odd components of the fixed conflict graphs.",
+    "verification": "Original independent verifiers regenerated every cross-head product; seed nearestness remains the documented inherited input."
+  },
+  "nonlattice73_20261025": {
+    "research_directory": "research/nonlattice73_20261025",
+    "lattice_source": "research/lattice73_20261025/result",
+    "bound": 6218191606,
+    "class_size": 1731,
+    "method": "Four caps replace each safe equatorial line; int64 independent verification.",
+    "class_sha256": "ef5e1488a4f06e36e949b2d71f49b57ad39f968e2a25634bfbfb03d71e3e01bc"
+  }
 }

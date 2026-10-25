@@ -59,7 +59,8 @@ import numpy as np
 DATA = os.path.join(PKG, 'data')
 FAM = [('class_sizes_32000.npy', 'automorphism images of one greedy 2106-line class'),
        ('class_sizes_gpu.npy', 'greedy on a 80 000 000-line pool of conflict density '
-        '0.004827 (`scripts/gpu/`)')]
+        '0.004827 (`scripts/gpu/`)'),
+       ('class_sizes_symmetry.npy', 'shipped seed, integral isometries and survivor masks; CPU verification in seconds')]
 sizes, cum, famrows = {}, {}, []
 for fn, how in FAM:
     a = np.sort(np.asarray(np.load(os.path.join(DATA, fn))).ravel())[::-1].astype(np.int64)
@@ -70,7 +71,8 @@ for fn, how in FAM:
 lines = out.split(EOL)
 h = next(i for i, l in enumerate(lines)
          if l.startswith('| family | classes | sizes | total lines |'))
-lines[h + 2:h + 2 + len(famrows)] = famrows
+e = next(i for i in range(h + 2, len(lines)) if not lines[i].startswith('|'))
+lines[h + 2:e] = famrows
 
 IMG, GPU = FAM[0][0], FAM[1][0]
 
@@ -101,7 +103,7 @@ for r in rows:
     run = max(run, N + img_gain(r))
     margins.append((run - r['previous'], r['dim']))
 worst = min(margins)
-h = next(i for i, l in enumerate(lines) if l.startswith('`final81-95.py` takes the better'))
+h = next(i for i, l in enumerate(lines) if l.startswith('`final81-95.py` takes '))
 import textwrap
 _para = ('never mixed, since disjointness ACROSS families is not claimed. Declining the GPU '
          'family entirely costs no RECORD: on the image family alone, which is regenerable '
@@ -331,7 +333,7 @@ with open(os.path.join(PKG, '..', '..', '..', 'RESULTS.md'), encoding='utf-8') a
         if match:
             registry[int(match.group(1))] = int(re.sub(r'\D', '', match.group(2)))
 h = next(i for i, line in enumerate(lines) if line.startswith('| dim | k | W | scheme |'))
-lines[h] = '| dim | k | W | scheme | gain | **this cap construction** | previously | 24 October registry |'
+lines[h] = '| dim | k | W | scheme | gain | **this cap construction** | previously | current registry |'
 lines[h+1] = '|---|---|---|---|---|---|---|---|'
 for i in range(h+2, len(lines)):
     if not lines[i].startswith('|'):

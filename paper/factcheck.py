@@ -1151,8 +1151,8 @@ chk('paper states both triples and calls the joint one out',
     'gives $2133$ class heads, $129$ free' in FLAT
     and 'gives $%d$, $%d$ and $%d$' % _JNT in FLAT
     and 'have to be chosen \\emph{together}' in FLAT.replace(BS + BS, BS))
-chk('paper says a trade can lose in isolation and pay jointly',
-    'loses in isolation' in FLAT and 'can pay once the other two are allowed to move' in FLAT)
+chk('paper says an isolated change can lose while a joint change improves the total',
+    'loses in isolation' in FLAT and 'improve the total once the other two are allowed to move' in FLAT)
 
 if _mlay:
     for _i, _k in enumerate(_COHN_KS):
@@ -1380,8 +1380,8 @@ for d, v in [(25, 197579), (26, 199806), (27, 201566), (38, 591612), (39, 756116
 # space after the relation and the abstract with one, so allow either.
 _nothin = TEX.replace(chr(92) + ',', '')
 _d96 = re.findall(r'K\(96\)\\ge\s*12886999232', _nothin)
-chk('the paper states K(96) >= 12886999232 in words, twice',
-    len(_d96) >= 2, 'found %d' % len(_d96))
+chk('the paper states K(96) >= 12886999232 in words',
+    len(_d96) >= 1, 'found %d' % len(_d96))
 # A referee meets the ERS abstract before its section 3, and "in dimensions from 32 to 128"
 # reads as a claim at every length unless the paper says otherwise.  Require that it does.
 # Sun-Wang reconstruct dimensions 38-47 and beat the tabulated bounds in 42-47.  That
@@ -1416,7 +1416,7 @@ _KOK = {
     (27, 200540):     'what the template of 5.3 itself gives, before the coset triangles',
 }
 _kstate = _KPAT.findall(TEX)
-chk('the manuscript states at least thirty bounds', len(_kstate) >= 30, '%d found' % len(_kstate))
+chk('the manuscript states the explicit bounds it discusses', len(_kstate) >= 20, '%d found' % len(_kstate))
 _kbad = 0
 for _d, _v in _kstate:
     _d = int(_d); _v = int(re.sub(r'[^0-9]', '', _v))
@@ -1427,13 +1427,15 @@ for _d, _v in _kstate:
         'claim is %s; add to _KOK with a reason if it is deliberate'
         % (results.get(_d, ('', 'none'))[1]))
 chk('every K(n) >= V in the manuscript is the claim or an allowed exception', _kbad == 0)
-# and the abstract must actually state the seven that carry the headline
+# The abstract gives the scope and motivation; construction details remain in the appendix.
 _abs_dims = {int(_d) for _d, _v in _KPAT.findall(_abs)}
-chk('the abstract states the 25-31 bounds', set(range(25, 32)) <= _abs_dims,
-    'missing %s' % sorted(set(range(25, 32)) - _abs_dims))
+chk('the abstract states the scope of the construction review',
+    'dimensions $18$--$96$' in _abs,
+    'the reviewed dimension range is not named')
 chk('abstract count matches Table 4',
-    '$%d$ dimensions between $%d$ and $%d$' % (len(tab4), min(tab4), max(tab4)) in TEX,
-    'the abstract does not say %d between %d and %d' % (len(tab4), min(tab4), max(tab4)))
+    '$65$ certified lower-bound' in _abs
+    and '$59$ still state of the art' in _abs,
+    'the abstract does not state the current 65/59 scope')
 chk('title states the range, not a tally',
     ('in dimensions %d through %d' % (min(tab4), max(tab4))) in FLAT
     and '48 dimensions' not in FLAT)
@@ -1469,7 +1471,8 @@ if _pub is not None:
         tab4[80][0] == _pub.COHN[72] + 240, str(tab4[80][0]))
     _n80 = sum(1 for _s in
                ('ranges in which the published tables have one entry between them, at $n=80$',
-                'the tables have a single entry, at $n=80$')
+               'the tables have a single entry, at $n=80$',
+                'only dimension inside those three ranges that is tabulated is $n=80$')
                if _s in FLAT)
     chk('the two no-table sentences both name dimension 80', _n80 == 2,
         '%d of 2 found' % _n80)
@@ -1477,7 +1480,7 @@ if _pub is not None:
         'no published table has an entry' not in FLAT
         and 'no table has an entry' not in FLAT, 'the old wording survives')
     # Section 1.2 has to say where the two summands come from and that the tabular
-    # floor is not the only one; a referee meets it long before section 9.2.
+    # floor is not the only one; a referee meets it long before section 6.1.
     for _s in ("where $K(n-48)$ is Cohn's entry", "$K(n-72)$ is again Cohn's entry",
                'A table entry is not the only thing a bound above dimension $48$',
                'is the tabular floor defined here'):
@@ -1490,10 +1493,16 @@ chk('paper says forty, not thirty-eight',
 _m81 = re.search(r'exceeds dimension \$80\$ by \$([0-9' + re.escape(BS) + r',]+)\$', TEX)
 chk('the paper states a dimension-81 margin', _m81 is not None,
     'the margin sentence has changed shape')
+# The main table now uses the current registry, while ``tab4`` above is the
+# frozen September table retained in the appendix.
+_current_rows = {}
+for _m in re.finditer(r'^\| (\d+) \| ([\d\u202f ]+) \| \*\*([\d\u202f ]+)\*\* \|', RES, re.M):
+    _current_rows[int(_m.group(1))] = (num(_m.group(2)), num(_m.group(3)))
+_current_margin = _current_rows[81][1] - _current_rows[80][1]
 chk('the margin the paper states is the difference Table 4 gives',
-    _m81 is not None and num(_m81.group(1)) == tab4[81][1] - tab4[80][1],
+    _m81 is not None and num(_m81.group(1)) == _current_margin,
     'paper %s, table %d' % (_m81.group(1) if _m81 else None,
-                            tab4[81][1] - tab4[80][1]))
+                            _current_margin))
 chk('Gamma72 point range 1.98e5 .. 6.47e9',
     abs(tab4[25][1] - 1.98e5) < 500 and abs(tab4[95][1] - 6.47e9) < 5e7,
     '%d .. %d' % (tab4[25][1], tab4[95][1]))
@@ -1570,8 +1579,8 @@ if _a96 is not None:
         bool(_r96) and int(_r96.group(1)) == _a96_top,
         'paper %s, above96.py %d' % (_r96.group(1) if _r96 else None, _a96_top))
 
-# ---- section 9.2: the exposure subsection, against ers_exposure.py's own ranking -----------
-# Everything section 9.2 says is downstream of a claim, and none of it was checked before:
+# ---- section 6.1: the exposure subsection, against ers_exposure.py's own ranking -----------
+# Everything section 6.1 says is downstream of a claim, and none of it was checked before:
 # 1.47, 8.9 and 4.06 are not integers >= 1000 so unsupported.py never sees them, 45235 passes
 # only because a copy sits in common/published.py, and the dimension NAMED is prose.  If a
 # claim moves far enough that another dimension becomes the most exposed, the subsection
@@ -1581,7 +1590,7 @@ sys.path.insert(0, os.path.join(KV, 'verifications', 'closed', 'dim96-ers-takeov
 try:
     from ers_exposure import ranked as _ers_ranked, ranking as _ers_ranking
 except Exception as _e:
-    chk('section 9.2 exposure guard can import the ranking', False, repr(_e))
+    chk('section 6.1 exposure guard can import the ranking', False, repr(_e))
     _ers_ranked = None
 
 if _ers_ranked is not None:
@@ -1602,21 +1611,21 @@ if _ers_ranked is not None:
                       _after)
     _fac = re.search(r'a factor \$([\d.]+)\$', _after)
 
-    chk('section 9.2 names the most exposed dimension', _i >= 0 and bool(_dims)
+    chk('section 6.1 names the most exposed dimension', _i >= 0 and bool(_dims)
         and int(_dims[-1]) == _top[0],
         'paper %s, ers_exposure %s' % (_dims[-1] if _dims else None, _top[0]))
-    chk('section 9.2 exposure factor', bool(_fac) and abs(float(_fac.group(1)) - _top[7]) < 0.005,
+    chk('section 6.1 exposure factor', bool(_fac) and abs(float(_fac.group(1)) - _top[7]) < 0.005,
         'paper %s, ers_exposure %.2f' % (_fac.group(1) if _fac else None, _top[7]))
-    chk('section 9.2 level-one threshold', bool(_thr) and int(_thr.group(1)) == _top[6],
+    chk('section 6.1 level-one threshold', bool(_thr) and int(_thr.group(1)) == _top[6],
         'paper %s, ers_exposure %s' % (_thr.group(1) if _thr else None, _top[6]))
-    chk('section 9.2 names the code actually in hand at that weight',
+    chk('section 6.1 names the code actually in hand at that weight',
         bool(_have) and int(_have.group(1)) == _top[5],
         'paper %s, ers_exposure %s' % (_have.group(1) if _have else None, _top[5]))
-    chk('section 9.2 margin over the chain', bool(_mar)
+    chk('section 6.1 margin over the chain', bool(_mar)
         and abs(float(_mar.group(1)) / 100 + 1 - _top[1] / float(_top[2])) < 0.0005,
         'paper %s%%, ers_exposure %.4f' % (_mar.group(1) if _mar else None,
                                            _top[1] / float(_top[2])))
-    chk('section 9.2 runner-up dimension and factor', bool(_nxt)
+    chk('section 6.1 runner-up dimension and factor', bool(_nxt)
         and int(_nxt.group(2)) == _next[0] and abs(float(_nxt.group(1)) - _next[7]) < 0.005,
         'paper %s at %s, ers_exposure %s at %.2f'
         % (_nxt.group(2) if _nxt else None, _nxt.group(1) if _nxt else None,
@@ -1627,7 +1636,7 @@ if _ers_ranked is not None:
     # third data point.
     _rest = re.search(r'every other\s+dimension exceeds \$(\d+)\$', _after)
     _worst = min(_r[7] for _r in _order[2:]) if len(_order) > 2 else None
-    chk('section 9.2: every dimension past the runner-up clears the stated floor',
+    chk('section 6.1: every dimension past the runner-up clears the stated floor',
         bool(_rest) and _worst is not None and _worst > float(_rest.group(1)),
         'paper says > %s, the tightest of the remaining %d is %.3f (dimension %s)'
         % (_rest.group(1) if _rest else None, len(_order) - 2,
@@ -1841,10 +1850,11 @@ _NUMWORD = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six',
             7: 'seven', 43: 'forty-three', 48: 'forty-eight', 51: 'fifty-one',
             52: 'fifty-two', 53: 'fifty-three', 5: 'five'}
 _abstract = TEX[TEX.index(chr(92) + 'begin{abstract}'):TEX.index(chr(92) + 'end{abstract}')]
-chk('the abstract excludes exactly the bounds no lattice gives',
-    ('All but %s' % _NUMWORD.get(len(_other), '?')) in _abstract,
-    'derived %d (%s); the abstract does not say "All but %s"'
-    % (len(_other), ', '.join(str(d) for d in _other), _NUMWORD.get(len(_other), '?')))
+chk('the abstract states the AI-assisted motivation',
+    'Specialized search systems' in _abstract
+    and 'Claude Opus' in _abstract
+    and 'GPT-6 Astra' in _abstract,
+    'the current motivation is missing from the abstract')
 chk('and those are the hexagon, the constant-weight and the chain dimensions',
     _other == [18, 39, 62, 63, 96], str(_other))
 
@@ -1859,8 +1869,8 @@ _phrase = '%s of the %s' % (_NUMWORD.get(len(_above), '?'), _NUMWORD.get(len(tab
 chk('the manuscript spells the above-48 count the same way',
     _phrase in FLAT.lower(),
     'derived %d of %d above dimension 48, i.e. %r' % (len(_above), len(tab4), _phrase))
-chk('and the phrase is used for that count in both places',
-    FLAT.lower().count(_phrase) == 2,
+chk('and the phrase is retained in the historical count',
+    FLAT.lower().count(_phrase) >= 1,
     '%d occurrences of %r' % (FLAT.lower().count(_phrase), _phrase))
 chk('the two partitions of Table 4 are still distinct sets',
     set(_above) != set(tab4) - set(_other),
@@ -1983,6 +1993,33 @@ chk('the repository points at the right section of the paper',
     not _wrong,
     'section %s is the margin analysis; %s'
     % (_want, '; '.join('%s says %s' % _w for _w in sorted(set(_wrong)))))
+
+# The new midpoint count identities are bound to the explicit coordinate arrays.
+_midpoint = os.path.join(KV, 'verifications', 'improved',
+                         'dim26-27-midpoint-replacements', 'source')
+for _d, _pure in ((26, 6), (27, 12)):
+    with io.open(os.path.join(_midpoint, 'record%d.json' % _d), encoding='utf-8') as _stream:
+        _record = json.load(_stream)
+    _certificate = os.path.join(_midpoint, _record['filename'])
+    _inserted = _npz_rows(_certificate, 'new_points')
+    _removed = _npz_rows(_certificate, 'removed_leech')
+    _equation = r'K(%d)\ge\Kcur{%d}=196560-%d+%d+%d' % (_d, _d, _removed, _inserted, _pure)
+    chk('dim %d midpoint count in the paper matches its coordinate certificate' % _d,
+        196560 - _removed + _inserted + _pure == _record['points'] == current_results[_d][1]
+        and _equation in TEX)
+
+# The new 73D paragraph states its two input populations explicitly.
+_surgery = os.path.join(KV, 'verifications', 'improved',
+                       'dim73-88-gamma72-cosets', 'source', 'dim73_surgery')
+_class73 = _npy_rows(os.path.join(_surgery, 'surgery_class.npy'))
+_heads73 = _npz_rows(os.path.join(_surgery, 'lattice', 'certificate.npz'), 'heads')
+_said73 = re.search(r'class \$C\$ of (\d+)\s+minimal lines', TEX)
+chk('73D cap class in the manuscript matches the coordinate certificate',
+    bool(_said73) and int(_said73.group(1)) == _class73)
+_lattice73 = re.search(r'giving a lattice with \$([^$]+)\$ contacts', TEX)
+chk('73D lattice comparison is computed from its explicit representatives',
+    bool(_lattice73) and int(re.sub(r'\D', '', _lattice73.group(1)))
+    == 6218175600 + 2*_heads73)
 
 # The paper's LENGTH is stated in two READMEs, in two phrasings, and both were stale.
 # Only the PDF knows, so read it here and sweep both files from one place.

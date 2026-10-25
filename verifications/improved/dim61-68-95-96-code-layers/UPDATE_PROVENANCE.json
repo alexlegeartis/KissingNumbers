@@ -1,5 +1,5 @@
 {
-  "checkpoint_date": "2026-10-24",
+  "checkpoint_date": "2026-10-25",
   "copies": [
     {
       "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim49plus/binary_62_code.py",
@@ -120,6 +120,111 @@
       "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/weighted_layers.py",
       "source": "research/dim61_96/weighted_layers.py",
       "sha256": "ce42f9aa13f1fe265eab9b53f8699e69aeaedaa0b5d59254769fb9deadf1a275"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/support_pairing_certificate.py",
+      "source": "research/highdims_20261025/pairing_source/dim61_96/support_pairing_certificate.py",
+      "sha256": "1c7997014018613a7495492081bd02f60b1a50b8f900a9b63d096fcb789ae6d7"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/support_pairing_best.txt",
+      "source": "research/highdims_20261025/pairing_source/dim61_96/support_pairing_best.txt",
+      "sha256": "9b269bc11d867b5009469c9599f9d78d084e69b86785d0461c5d81184400447c"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/support_pairing_certificate.json",
+      "source": "research/highdims_20261025/pairing_source/dim61_96/support_pairing_certificate.json",
+      "sha256": "215378adb392da3cf18e411aa1c71cbbb0e65e4f18386b66b8944b7db83e0f68"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/support_pairing_certificate.npz",
+      "source": "research/highdims_20261025/pairing_source/dim61_96/support_pairing_certificate.npz",
+      "sha256": "de2b5cc89a095fde96be16d44f063cba244b3092dc6358801a2a1f9b6f15d45e"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/mixed_pair_certificate.py",
+      "source": "research/highdims_structural_20261025/mixed_pair_certificate.py",
+      "sha256": "a2eda62b6eae6e9aa1195e023201be2cfa3e8a8c0094f99e36ec4744ef029c8b"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/mixed_pair_certificate.npz",
+      "source": "research/highdims_structural_20261025/mixed_pair_certificate.npz",
+      "sha256": "9771a5155fac1b05625f3249ed894860c4e3d837ccc274e2e81b0e642d9f48ff"
+    },
+    {
+      "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/mixed_pair_certificate.json",
+      "source": "research/highdims_structural_20261025/mixed_pair_certificate.json",
+      "sha256": "0c62e3b531f95bfa9f17036057af3667cd00f3f86b206e4d0df9e1c36d6d1695"
     }
-  ]
+  ],
+  "cpu_continuation_20261025": {
+    "method": "Anneal the actual 95D section support count, with support-dependent sign multiplicities, rather than the unweighted number of no-double supports.",
+    "verification": "Exhaustive enumeration of all 2^24 QR48 words and exact support, sign, dense-projection and section counts.",
+    "dimensions": {
+      "95": {
+        "bound": 7080016652,
+        "previous_bound": 7077231372,
+        "gain": 2785280,
+        "terms": {
+          "dense_section": 4697620480,
+          "transversal24_section": 2147483648,
+          "new_support24_section": 233595904,
+          "support6_section": 1316444,
+          "ordinary_poles": 176
+        },
+        "section_coordinates": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "support_intersection_histogram": [
+          6772,
+          0,
+          10628,
+          0,
+          5140,
+          0,
+          704,
+          0,
+          44
+        ],
+        "retained_sign_counts": [
+          16384,
+          0,
+          8192,
+          0,
+          6144,
+          0,
+          5120,
+          0,
+          8960
+        ]
+      },
+      "96": {
+        "bound": 13268549824,
+        "previous_bound": 13264027840,
+        "gain": 4521984,
+        "terms": {
+          "dense": 8589934592,
+          "transversal24": 4294967296,
+          "new_support24": 381550592,
+          "support6": 2097152,
+          "poles": 192
+        }
+      }
+    }
+  },
+  "mixed_pair_continuation": {
+    "supports": 24561,
+    "dimensions": {
+      "95": 7091452684,
+      "96": 13289406656
+    },
+    "source": "research/highdims_structural_20261025/REPORT.md"
+  }
 }
