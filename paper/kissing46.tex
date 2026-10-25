@@ -55,7 +55,7 @@ whether commonly available language models and agentic coding tools, including
 Claude Code and OpenAI Codex, could contribute mathematical advances. Surprisingly,
 a single Claude Opus~5 session, after some motivational prompting, produced a new
 dimension-$27$ construction. Scaling the workflow with Claude Code and Codex led to $65$ certified lower-bound
-constructions in dimensions $18$--$96$, with $59$ still state of the art in our
+constructions in dimensions $18$--$96$, with $63$ still state of the art in our
 review. Several exceed records reported by specialized search systems, including
 the Qiushi Engine. On the broader leaderboard, Li reports GPT-6 Astra-assisted
 records in dimensions $19$ and $21$ and later lifted-block records in dimensions
@@ -185,16 +185,21 @@ how many minimal lines of $L$ can be pairwise at small inner product.
 
 \subsection{Results}
 
-Table~\ref{tab:all} gives one row for each of the $59$ bounds that
+Table~\ref{tab:all} gives one row for each of the $63$ bounds that
 remain state of the art in the reviewed sources. It reports the recorded
 comparison, the current value, and the construction family; the appendix gives
 the construction data and proofs, while Section~\ref{ss:verif} describes the
-exact certification. Six
-superseded claims are retained for reproducibility; their descriptions and the
+exact certification. Two
+superseded current claims are retained for reproducibility; their descriptions and the
 September manuscript table appear in Appendix~\ref{app:historical}.
 
 Shared midpoint replacements give $\Kcur{26}$ and $\Kcur{27}$ in dimensions
-$26$ and $27$, regaining both records after Takhanov--Yun.
+$26$ and $27$, regaining both records after Takhanov--Yun. The same midpoint mechanism
+gives $\Kcur{29}$ and $\Kcur{30}$ in dimensions $29$ and $30$, surpassing
+Li's $210\,495$ and $222\,073$. A new latitude and rational axis rotation
+give $\Kcur{38}$ in dimension $38$; neutral support changes and root
+replacements give $\Kcur{39}$ in dimension $39$, surpassing Lin's
+$605\,322$ and $768\,916$ respectively.
 The current additions are concise by design. The Coxeter--Todd construction gives
 $501\,633$ and $505\,359$ in dimensions $36$ and $37$; the $P_{48n}$ construction
 supplies dimensions $41$--$46$; the code-layer constructions give
@@ -476,8 +481,8 @@ descriptions and proofs are in the appendix.
 % checkers resolve the label without duplicating the generated rows.
 % \label{tab:all}
 
-The eight claims that have since been superseded remain useful as a
-record of the search and are documented in Appendix~\ref{app:historical}.
+The earlier constructions, including those since surpassed by our new
+certificates, remain useful as a record of the search and are documented in Appendix~\ref{app:historical}.
 
 \section{Remarks}\label{sec:remarks}
 
@@ -624,11 +629,48 @@ pair $\pm u$ by the four points $(\pm\sqrt{3}u/2,\pm\sqrt{2})$.
 Their squared norms are eight. Within a direction the largest product is
 four, between distinct directions it is at most $7/2$, and against the
 coset layers it is at most $\sqrt{3}+\sqrt{5}<4$. Retained equator products
-are at most $2\sqrt{3}<4$. This adds $2|C|$ contacts and proves
-$K(73)\ge\Kcur{73}$. Integer coordinates and all mixed products are checked
+are at most $2\sqrt{3}<4$. This adds $2|C|$ contacts. Now take $6\,235$
+oriented norm-ten vectors $y$ with $-6\le\ip{y}{y'}\le3$ for distinct
+rows, $|\ip{y}{x}|\le5$ against the coset heads, and
+$|\ip{y}{u}|\le3$ against the cap lines. Adjoin
+$\pm(4y/5,\sqrt{8/5})$. Minimum eight gives
+$|\ip{y}{v}|\le5$ for every minimal equatorial $v$. The new points
+are mutually compatible and their mixed bounds are $4$ against cosets
+and $(6\sqrt{3}+4\sqrt{5})/5<4$ against caps. These $12\,470$ points
+give $K(73)\ge\Kcur{73}$. Integer coordinates and all mixed products are checked
 by the package's \texttt{verify73.py}. The construction is non-lattice:
 two retained equatorial vectors sum to a removed $u$, and two caps sum to
 $\sqrt{3}u$, which cannot both belong to a discrete lattice.
+
+The same norm-ten shell gives a different proof in dimensions $77$--$79$.
+All shells of an extremal even unimodular lattice in dimension $72$ are
+spherical $11$-designs \cite{venkov1984}. The extremal theta series gives
+$N_{10}=15\,281\,788\,354\,560$. The design moments and the bijection
+$x\mapsto y-x$ between norm-ten vectors with $\ip{x}{y}=6$ and minimal
+vectors with $\ip{y-x}{y}=4$ determine the absolute-product populations
+$a_4=24\,994\,840\,000$, $a_5=500\,966\,912$ and $a_6=2\,112\,250$.
+For a tail $z$ of squared norm $q$, take antipodal pairs
+\[
+ \pm\left(\sqrt{s}\,y,\sqrt{(8-10s)/q}\,z\right).
+\]
+At $4/7\le s\le16/25$, only head products of absolute value $4$, $5$ or $6$
+can cause conflicts between distinct head lines. Define
+$b_j(z)=|\{w:(8-10s)\ip{z}{w}>(4-js)q\}|$ in an antipodal tail set $T$.
+The conflict graph has closed degree
+$b_{10}(z)+\tfrac12\sum_{j=4}^6 a_jb_j(z)$.
+Caro--Wei therefore guarantees at least
+\[
+ \left\lceil\frac{N_{10}}2\sum_{z\in T}
+ \frac{1}{b_{10}(z)+\frac12\sum_{j=4}^6a_jb_j(z)}\right\rceil
+\]
+antipodal pairs. Rank-five and rank-six tails of squared norm $40$, with
+$s=16/25$, give respectively $144\,688$ and $255\,104$ pairs. Rank-seven
+tails of squared norm $32$, with $s=12/19$, give $368\,155$ pairs. Adding
+the full equator and respectively $40$, $72$ and $126$ pure-tail roots
+proves $K(77)\ge\Kcur{77}$, $K(78)\ge\Kcur{78}$ and $K(79)\ge\Kcur{79}$.
+These are finite-graph existence proofs; the selected norm-ten heads are
+not enumerated. The replay \texttt{norm10\_bound\_certificate.py} derives
+the theta coefficients and moments and checks every tail product exactly.
 
 \subsection{Shared midpoint replacements in dimensions 26 and 27}\label{ss:d2627current}
 
@@ -667,6 +709,75 @@ checks all inserted/inserted products with integer arithmetic. It uses no
 search caches. Retained equator pairs use the standard Leech kissing property;
 the convexity and pure-tail bounds above cover the remaining pairs.
 No optimum for this construction family is asserted.
+
+\subsection{Midpoint replacements in dimensions 29 and 30}\label{ss:d2930current}
+
+The same four-endpoint, eight-point trade uses a five- or six-dimensional
+tail. The certificate selects $156$ uniform pieces in dimension $29$ and
+$216$ in dimension $30$, each applying the trade to $32$ residuals and
+gaining $128$ points. Inserted tail directions are roots of $D_5$ and $D_6$,
+respectively. Append pure-tail configurations of $40$ roots of $D_5$ or
+$72$ roots of $E_6$. The inserted tails and pure tails need not use the
+same root system: their squared norms $8$ and $32$ give the uniform
+mixed-product bound $16$. Thus
+\[
+ K(29)\ge\Kcur{29}=196560-19968+39936+40,\qquad
+ K(30)\ge\Kcur{30}=196560-27648+55296+72.
+\]
+These exceed Li's lifted-block records \cite{kli28-31-2026} by $6073$
+and $2207$. The portable \texttt{dim29-30-midpoint-replacements} package
+regenerates the Leech shell, checks all deleted endpoint memberships and
+midpoint identities, and checks every inserted/inserted product. Its BLAS
+operations are exact small integer calculations: weighted Cauchy--Schwarz
+bounds every absolute partial sum by $32$. There is no numerical tolerance;
+an integer-matrix option is also supplied. Explicit expanded coordinates
+are included, and optimality of the selected pieces is not asserted.
+
+\subsection{New latitude and root replacements in dimensions 38 and 39}\label{ss:d3839current}
+
+In dimension $38$, retain the $589680$ caps of the original construction
+and Lin's $13710$ equatorial points \cite{lin33-2026}. Choose six distinct
+Leech body lines $u_i$ of squared norm $32$ and head vectors $z_i$ of
+squared norm $24$. Insert the four independent sign choices
+\[
+  (\pm u_i,\pm2z_i)/\sqrt{128}.
+\]
+The supplied heads obey $|\ip{z_i}{z_j}|\le12$ for $i\ne j$ and
+$|\ip{z_i}{w}|\le8$ against every old head $w$. Against the three heads
+assigned to $u_i$, the sharper bound is $2$. The new-cap inequalities are
+$16+16\sqrt2\le16\sqrt6$ for different bodies and
+$32+4\sqrt2\le16\sqrt6$ for the same body; exact squaring proves both.
+The new body's squared norm fraction $1/4$ clears the equator by
+Cauchy--Schwarz. An explicit rational orthogonal matrix $Q$ fixes all
+$z_i$ and retains all $1932$ old axis points $(0,Qw)/\sqrt8$.
+The package \texttt{dim38-latitude-extension} proves exact orthogonality,
+the fixed-head identities, and every axis-cap inequality using integer
+intervals with checked overflow bounds. It also rebuilds the Leech shell
+from Golay congruences and checks every retained equatorial line. Therefore
+\[
+ K(38)\ge\Kcur{38}=589680+13710+1932+24,
+\]
+an increase of $24$ over Lin's certificate.
+
+In dimension $39$, retain Lin's dense binary-code layer of $327680$
+points and $3424$ weight-eight supports, each carrying $128$ even-sign
+vectors. Four support substitutions preserve cardinality and pairwise
+intersection at most four. For a centre $a$ and four leaves $B$, insert
+the sixteen vectors
+\[
+ \pm4e_a+2\sum_{b\in B}s_be_b,
+ \qquad s_b\in\{-1,1\},\quad\prod_{b\in B}s_b=1.
+\]
+Delete the four roots on each centre-leaf pair. Four compatible stars
+share two of these pairs, so $64$ new vectors replace $56$ roots.
+The package \texttt{dim39-root-replacements} enumerates all dense-code
+differences, checks the updated supports and every affected angle type
+with integers, including cross-layer normalization bounds. Hence
+\[
+ K(39)\ge\Kcur{39}=327680+438272+(2964-56)+64,
+\]
+an increase of $8$ over Lin's result. Both packages include the parent
+data, source attribution, exact certificates and standalone verifiers.
 
 \subsection{The current 28-dimensional lift}\label{ss:d28current}
 

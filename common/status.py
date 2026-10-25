@@ -470,6 +470,21 @@ for _d in (26, 27):
                   '(dim26-27-midpoint-replacements/verify.py)')
 
 
+for _d in (29, 30):
+    STATUS[_d] = ('heads', 'shared midpoint replacements with D5/D6 inserted tails and pure D5/E6 roots; '
+                  'larger compatible groups and nonuniform choices remain open '
+                  '(dim29-30-midpoint-replacements/verify.py)')
+STATUS[38] = ('heads', 'new latitude points and a compatible rational axis rotation; '
+              'the earlier cap/axis ceilings do not close this enlarged family '
+              '(dim38-latitude-extension/verify.py)')
+STATUS[39] = ('codes', 'neutral support substitutions and shared root replacements; '
+              'larger compatible patches and support codes remain open '
+              '(dim39-root-replacements/verify.py)')
+for _d in (77, 78, 79):
+    STATUS[_d] = ('cosets', 'exact norm-ten shell moment distributions and finite-graph existence bounds; '
+                  'different tail sets and stronger independence bounds remain open '
+                  '(dim73-88-gamma72-cosets/verify_norm10.py)')
+
 if __name__ == '__main__':
     print(__doc__)
     by = {}

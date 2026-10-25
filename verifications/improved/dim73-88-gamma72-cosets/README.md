@@ -1,4 +1,4 @@
-# Gamma72 nearest-coset subsets and repaired lifts
+# Gamma72 norm-ten layers, cosets and repaired lifts
 
 **Retained construction and history for dimensions 87–88.** The compact symmetry
 family in [the cap package](../dim73-95-gamma72-caps/) now gives stronger bounds
@@ -111,7 +111,7 @@ conflict graphs; other head sets and tail assignments remain open.
 
 ## Non-lattice improvement in dimension 73, 25 October 2026
 
-The current bound is **6,218,191,606**, exceeding the completed lattice's
+The preceding cap checkpoint was **6,218,191,606**, exceeding the completed lattice's
 6,218,188,144 by **3,462**. The explicit lattice has determinant 5/2
 and supplies 6,272 norm-22 representatives, whose two layers add 12,544
 contacts to Gamma72. Its self-contained data and verifier are in
@@ -142,3 +142,23 @@ its `--rebuild` option also reruns `lattice/verify.py --rebuild`.
 
 The new comparison is with the local certified lattice result, not a claim
 that a comprehensive current literature table exists in dimension 73.
+
+## Norm-ten continuation in 73D and 77--79D
+
+The new current totals are **6,218,204,076** in 73D, **6,218,465,016** in 77D,
+**6,218,685,880** in 78D and **6,218,912,036** in 79D. Their gains over the
+preceding checkpoint are 12,470, 57,672, 167,508 and 327,096 points.
+
+The 73D result adds an explicit norm-ten layer to the preceding surgery.
+The 77--79D results use exact theta coefficients, spherical-design moments
+and Caro--Wei to prove independent sets in the full norm-ten conflict graph.
+These are finite-graph existence proofs; the selected head sets are not
+enumerated. All tail sets and exact arithmetic are supplied.
+
+Run `python verify_norm10.py` for the complete changed certificates, or
+`python verify73.py` for the explicit 73D configuration alone. The ordinary
+`verify.py` includes both checks. The proof and literature inputs are in
+[source/norm10/README.md](source/norm10/README.md). The new source files are
+`verify_shell10.py`, `shell10_selected.npy`, `shell10_verification.json`,
+`norm10_bound_certificate.py`, `norm10_tails.npz` and
+`norm10_bound_certificate.json` in that directory.

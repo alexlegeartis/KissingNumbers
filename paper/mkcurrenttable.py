@@ -9,13 +9,17 @@ from mkcurrentvalues import read_rows, tex_number  # noqa: E402
 
 OUT = os.path.join(HERE, "current_table.tex")
 
-# The README's 24 October status review identifies these six registered claims
-# as superseded: their full descriptions remain in the historical appendix.
+# The 25 October review leaves 25D and 31D superseded. Earlier mechanisms
+# remain in the historical appendix, including dimensions regained this month.
 CONSTRUCTIONS = {
     18: r"bent-coset hexagon over odd $\mathrm{BW}_{16}$ (\S\ref{sec:d18})",
     26: r"shared midpoint replacements (\S\ref{ss:d2627current})",
     27: r"shared midpoint replacements (\S\ref{ss:d2627current})",
     28: r"joint Leech layers (\S\ref{ss:d28current})",
+    29: r"shared midpoint replacements (\S\ref{ss:d2930current})",
+    30: r"shared midpoint replacements (\S\ref{ss:d2930current})",
+    38: r"rational latitude extension (\S\ref{ss:d3839current})",
+    39: r"support and root replacements (\S\ref{ss:d3839current})",
     36: r"Coxeter--Todd phase code (\S\ref{ss:d3637})",
     37: r"Coxeter--Todd phase code with latitude layers (\S\ref{ss:d3637})",
     41: r"$P_{48n}$ heads (\S\ref{ss:p48current})",
@@ -38,7 +42,10 @@ CONSTRUCTIONS.update({d: r"nearest $\Gamma_{72}$ cosets (\S\ref{ss:cosetscurrent
 CONSTRUCTIONS.update({d: r"$\Gamma_{72}$ cap layers (\S\ref{ss:big})"
                       for d in range(87, 95)})
 
-CONSTRUCTIONS[73] = r"$\Gamma_{72}$ cosets and caps (\S\ref{ss:cosetscurrent})"
+CONSTRUCTIONS[73] = r"$\Gamma_{72}$ norm-ten addition (\S\ref{ss:cosetscurrent})"
+
+CONSTRUCTIONS.update({d: r"$\Gamma_{72}$ norm-ten existence bound (\S\ref{ss:cosetscurrent})"
+                      for d in (77, 78, 79)})
 
 SOTA = sorted(CONSTRUCTIONS)
 
@@ -58,7 +65,7 @@ def render():
         r"\begin{longtable}{rrrp{0.30\textwidth}}",
         r"\caption{Current SOTA lower bounds in the reviewed sources.  The",
         r"reviewed set contains 65 certified claims; the superseded claims in",
-        r"dimensions $25$, $29$--$31$, $38$ and $39$ are retained in",
+        r"dimensions $25$ and $31$ are retained in",
         r"Appendix~\ref{app:historical}.}\label{tab:all}\\",
         r"\toprule",
         r"$n$ & recorded comparison & this work & construction\\",

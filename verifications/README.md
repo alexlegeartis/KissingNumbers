@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 65 claims, including retained historical records
 
-Twenty packages, one per **construction idea** rather than one per dimension, because several
+23 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -19,9 +19,12 @@ file, and the history of the lower bound in its dimensions.
 | [`dim26-27-iota-triangles`](improved/dim26-27-iota-triangles/) | 26, 27 | retained construction — joint work in progress with H. Cohn and B. Lindow; the coset triangle on every triangle of directions, the side chosen per head; in dimension 27 the class heads, the free heads and the second cap layer are optimised together rather than in sequence, which is B. Lindow’s contribution and is worth +48 |
 | [`dim28-joint-leech-layers`](improved/dim28-joint-leech-layers/) | 28 | 205,232 points: joint even-head and auxiliary-layer selection over Li's odd Leech blocks |
 | [`dim28-norm8-frame-layer`](improved/dim28-norm8-frame-layer/) | 28 | retained construction — joint work in progress with H. Cohn and B. Lindow; the head of a deletion-free layer may have norm 8 rather than 6, and at height √2 that is what clears the cap threshold: the 24 vectors 8eᵢ form a Leech frame, each carries all eight directions ±e_k of ℝ⁴, and the axis drops to the 16 half-vectors of the dual 24-cell |
+| [`dim29-30-midpoint-replacements`](improved/dim29-30-midpoint-replacements/) | 29–30 | 216,568 and 224,280 points; exact midpoint coordinate replay |
 | [`dim29-30-frame-layer`](improved/dim29-30-frame-layer/) | 29, 30 | apparently new — joint work in progress with H. Cohn and B. Lindow; the dimension-28 norm-8 frame layer at height √2 carried to ℝ²⁴⁺ᵏ, where it is 48 frame vectors on the whole cross-polytope of ℝᵏ — 96k points, 480 and 576 — deleting no equator point. It needs every owner to be type B for the frame, and in the coordinates where the frame is 8eᵢ the type-B lines are exactly the 48 576 octad vectors of the Golay code, which the whole monomial group 2¹²:M₂₄ permutes, so every monomial image of a class is again a clean class |
 | [`dim31-frame-layer`](improved/dim31-frame-layer/) | 31 | apparently new — joint work in progress with H. Cohn and B. Lindow; the norm-8 frame layer at height √2, 672 points deleting no equator point, carried by 42 pairwise disjoint type-B classes holding 10 328 of 10 416 owner lines, with an axis of 118 of 126.  Supersedes the height-√3 layer |
 | [`dim36-37-coxeter-todd`](improved/dim36-37-coxeter-todd/) | 36, 37 | exact short shells and phase-orbit angles; 37D adds two latitude layers |
+| [`dim38-latitude-extension`](improved/dim38-latitude-extension/) | 38 | 605,346 points; 24-point latitude extension and exact rational axis rotation |
+| [`dim39-root-replacements`](improved/dim39-root-replacements/) | 39 | 768,924 points; neutral support changes and shared root deletions |
 | [`dim38-leech-large-codimension`](improved/dim38-leech-large-codimension/) | 38 | apparently new |
 | [`dim39-ers-constant-weight`](improved/dim39-ers-constant-weight/) | 39 | apparently new — but check Sun–Wang's latest revision |
 | [`dim41-46-p48-heads`](improved/dim41-46-p48-heads/) | 41–46 | current supplied certificates, including partial-family 43D and coordinated-motion 45D; integer angles and exact head dimensions replay with inherited complete-family populations |
@@ -42,7 +45,7 @@ package. The new 46D family/head configuration is larger and is registered in
 `improved/`. The supplied 43D construction now registers 2,919,743 points; the older
 2,878,155-point seed is retained for replay. The missing writeup target
 2,911,990 is historical and is not used by the current certificate.
-No 47D/48D improvement is claimed. The paper remains its earlier snapshot.
+No 47D/48D improvement is claimed. The paper reports current results and retains its earlier snapshot in the historical appendix.
 
 
 ## [`recovered/`](recovered/) — already published, re-derived here

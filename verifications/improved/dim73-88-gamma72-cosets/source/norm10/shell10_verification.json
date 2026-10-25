@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "dimension": 73,
+  "oriented_heads": 6235,
+  "added_points": 12470,
+  "previous_bound": 6218191606,
+  "bound": 6218204076,
+  "minimum_distinct_head_product": -6,
+  "maximum_distinct_head_product": 3,
+  "maximum_coset_product": 5,
+  "maximum_cap_product": 3,
+  "integer_pair_products": 88773930,
+  "certificate_sha256": "42e4bd1297618616a9c44aea7b312f7e7c94f40fc1d795d3b45bab9298caed63",
+  "seconds": 3.9572652999999995,
+  "inherited_inputs": "Previously verified 73D non-lattice certificate and published Gamma72 minimum/shell size."
+}

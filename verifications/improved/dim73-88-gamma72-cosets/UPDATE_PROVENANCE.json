@@ -495,6 +495,36 @@
       "installed": "verifications/improved/dim73-88-gamma72-cosets/source/dim61_96/gamma72_scaled_16.pending.json",
       "source": "research/dim61_96/gamma72_scaled_16.json",
       "sha256": "c6bfb6e3fadd64d0b02628ce76c8ccacd3af576b19b4967d9218e9f18a92227a"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/norm10/verify_shell10.py",
+      "source": "research/shell_lifts73_80_20261025/verify_shell10.py",
+      "sha256": "5ad615f68b8c29bd381a8c58a094c65df8714b37e2a66704efa60bfc2b2ea3e5"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/norm10/shell10_selected.npy",
+      "source": "research/shell_lifts73_80_20261025/shell10_selected.npy",
+      "sha256": "42e4bd1297618616a9c44aea7b312f7e7c94f40fc1d795d3b45bab9298caed63"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/norm10/shell10_verification.json",
+      "source": "research/shell_lifts73_80_20261025/shell10_verification.json",
+      "sha256": "6bd091d5ceedfcdc7e3b0ccf156e121ecd03253af4a10b22bac615cf0c33e2e1"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/norm10/norm10_bound_certificate.py",
+      "source": "research/shell_lifts73_80_20261025/norm10_bound_certificate.py",
+      "sha256": "544a226a8e2ecbb62dcdff3957427a9c8ba4e687853309a289365e86bd628d86"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/norm10/norm10_bound_certificate.json",
+      "source": "research/shell_lifts73_80_20261025/norm10_bound_certificate.json",
+      "sha256": "d9910e8ef74a0f09c256c483a675616e7c7b127d43e1267b8a28d996363f123a"
+    },
+    {
+      "installed": "verifications/improved/dim73-88-gamma72-cosets/source/norm10/norm10_tails.npz",
+      "source": "research/shell_lifts73_80_20261025/norm10_tails.npz",
+      "sha256": "48fd7fe54876017351488fbf47e7e889ccea4dd1064775500c2f8f6a3d208d40"
     }
   ],
   "generated_reports": [
@@ -534,5 +564,20 @@
     "class_size": 1731,
     "method": "Four caps replace each safe equatorial line; int64 independent verification.",
     "class_sha256": "ef5e1488a4f06e36e949b2d71f49b57ad39f968e2a25634bfbfb03d71e3e01bc"
+  },
+  "norm10_continuation": {
+    "dimensions": {
+      "73": 6218204076,
+      "77": 6218465016,
+      "78": 6218685880,
+      "79": 6218912036
+    },
+    "explicit_head_count": 6235,
+    "whole_shell_dimensions": [
+      77,
+      78,
+      79
+    ],
+    "proof_type": "Explicit 73D addition; exact finite-graph existence in 77--79D"
   }
 }

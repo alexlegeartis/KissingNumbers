@@ -1434,8 +1434,8 @@ chk('the abstract states the scope of the construction review',
     'the reviewed dimension range is not named')
 chk('abstract count matches Table 4',
     '$65$ certified lower-bound' in _abs
-    and '$59$ still state of the art' in _abs,
-    'the abstract does not state the current 65/59 scope')
+    and '$63$ still state of the art' in _abs,
+    'the abstract does not state the current 65/63 scope')
 chk('title states the range, not a tally',
     ('in dimensions %d through %d' % (min(tab4), max(tab4))) in FLAT
     and '48 dimensions' not in FLAT)

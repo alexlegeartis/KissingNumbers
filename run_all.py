@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 77 scripts, including large exact certificate replays
-    python run_all.py --full       # 96 scripts, budget about 10 hours
+    python run_all.py              # 81 scripts, including large exact certificate replays
+    python run_all.py --full       # 100 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -188,6 +188,14 @@ JOBS = [
      os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py'], 5.0, True),
     ("dims 26, 27: shared midpoint replacements, exact independent replay",
      os.path.join(V, 'improved', 'dim26-27-midpoint-replacements'), ['verify.py'], 1.0, True),
+    ("dims 29, 30: midpoint replacements, exact independent replay",
+     os.path.join(V, 'improved', 'dim29-30-midpoint-replacements'), ['verify.py'], 2.0, True),
+    ("dim 38: latitude extension and exact rational axis rotation",
+     os.path.join(V, 'improved', 'dim38-latitude-extension'), ['verify.py'], 0.2, True),
+    ("dim 39: neutral support changes and exact root replacements",
+     os.path.join(V, 'improved', 'dim39-root-replacements'), ['verify.py'], 0.2, True),
+    ("dims 73, 77-79: norm-ten addition and exact existence proofs",
+     os.path.join(V, 'improved', 'dim73-88-gamma72-cosets'), ['verify_norm10.py'], 0.3, True),
     ("dim 28: joint Leech layers, exact independent replay",
      os.path.join(V, 'improved', 'dim28-joint-leech-layers'), ['verify.py'], 1.0, True),
     ("dims 64, 65: signed support augmentation and BCH owner caps",
@@ -357,6 +365,10 @@ def _sota_jobs(quick=False):
         ('dim18-bent-hexagon', ('verify18.py',)),
         ('dim26-27-midpoint-replacements', ('verify.py',)),
         ('dim28-joint-leech-layers', ('verify.py',)),
+        ('dim29-30-midpoint-replacements', ('verify.py',)),
+        ('dim38-latitude-extension', ('verify.py',)),
+        ('dim39-root-replacements', ('verify.py',)),
+        ('dim73-88-gamma72-cosets', ('verify_norm10.py',)),
         ('dim36-37-coxeter-todd', ('verify.py',)),
         ('dim41-46-p48-heads', ('verify.py',)),
         ('dim49-63-p48-caps', ('verify_october.py',)),
@@ -428,7 +440,10 @@ def _sota_coverage(jobs, results=None):
         ('dim18-bent-hexagon', [18], [('verify18.py',)], ''),
         ('dim26-27-midpoint-replacements', [26, 27], [('verify.py',)], ''),
         ('dim28-joint-leech-layers', [28], [('verify.py',)], ''),
+        ('dim29-30-midpoint-replacements', [29, 30], [('verify.py',)], ''),
         ('dim36-37-coxeter-todd', [36, 37], [('verify.py',)], ''),
+        ('dim38-latitude-extension', [38], [('verify.py',)], ''),
+        ('dim39-root-replacements', [39], [('verify.py',)], ''),
         ('dim41-46-p48-heads', list(range(41, 47)), [('verify.py',)],
          'inherited body populations; the latest large shells are not all freshly enumerated'),
         ('dim49-63-p48-caps', list(range(49, 61)),
@@ -442,8 +457,10 @@ def _sota_coverage(jobs, results=None):
          'geometry replay plus an independent LP-certificate replay; recheck_cert also covers dimensions 68 and 70'),
         ('dim70-71-gamma72-cross-sections', [70, 71], [('derive.py',)], ''),
         ('dim73-88-gamma72-cosets', [73], [('verify73.py',)],
-         'completed half-coset minimum, all class/head products and non-lattice witness; published Gamma72 parent facts'),
-        ('dim73-88-gamma72-cosets', list(range(74, 87)), [('verify.py',)],
+         'completed half-coset minimum, cap surgery, all 6235 norm-ten heads and non-lattice witness; published Gamma72 parent facts'),
+        ('dim73-88-gamma72-cosets', [77, 78, 79], [('verify_norm10.py',)],
+         'exact finite-graph existence proofs; published Gamma72 minimum and all-shell design theorem; no full selected head list'),
+        ('dim73-88-gamma72-cosets', [74, 75, 76, 80, 81, 82, 83, 84, 85, 86], [('verify.py',)],
          'seed nearestness inherits 21 completed block-enumeration lists and their completion metadata'),
         ('dim73-95-gamma72-caps', list(range(87, 95)),
          [('scripts/verify_symmetry.py', '--complete')],

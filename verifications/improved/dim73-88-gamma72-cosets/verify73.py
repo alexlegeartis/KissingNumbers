@@ -16,6 +16,7 @@ if __name__=='__main__':
         if '--rebuild' in sys.argv:
             replay(source,'dim73_surgery/lattice/verify.py','--rebuild')
         replay(source,'dim73_surgery/verify_surgery.py')
-        report=json.loads((source/'dim73_surgery/surgery_verification.json').read_text())
+        replay(source,'norm10/verify_shell10.py')
+        report=json.loads((source/'norm10/shell10_verification.json').read_text())
         assert next(r['total'] for r in results() if r['dimension']==73)==report['bound']
     print(json.dumps(dict(status='PASS',dimension=73,bound=report['bound'])))

@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "certificate_type": "Exact finite-graph existence proof; no full head list",
+  "theta_coefficients": [
+    1,
+    0,
+    0,
+    0,
+    6218175600,
+    15281788354560
+  ],
+  "modular_form_coefficients": [
+    -2160,
+    965520,
+    -27302400
+  ],
+  "minimal_shell_absolute_products_against_norm10": {
+    "0": 2328777990,
+    "1": 3017784000,
+    "2": 793638000,
+    "3": 75852000,
+    "4": 2112250,
+    "5": 11360
+  },
+  "norm10_absolute_product_distribution": {
+    "0": 5118989848896,
+    "1": 7238164864000,
+    "2": 2503639594500,
+    "3": 395496128000,
+    "4": 24994840000,
+    "5": 500966912,
+    "6": 2112250,
+    "10": 2
+  },
+  "dimensions": {
+    "77": {
+      "bound": 6218465016,
+      "equator": 6218175600,
+      "head_scale_squared": "16/25",
+      "tail_squared_norm": 40,
+      "tail_vectors": 560,
+      "guaranteed_antipodal_pairs": 144688,
+      "pure_tail_points": 40,
+      "caro_wei_numerator": "128084037922077917537894400",
+      "caro_wei_denominator": "885248792475396733063",
+      "profiles": [
+        [
+          560,
+          1,
+          67,
+          211,
+          480
+        ],
+        [
+          560,
+          1,
+          69,
+          213,
+          80
+        ]
+      ]
+    },
+    "78": {
+      "bound": 6218685880,
+      "equator": 6218175600,
+      "head_scale_squared": "16/25",
+      "tail_squared_norm": 40,
+      "tail_vectors": 2160,
+      "guaranteed_antipodal_pairs": 255104,
+      "pure_tail_points": 72,
+      "caro_wei_numerator": "3300866284584960",
+      "caro_wei_denominator": "12939342253",
+      "profiles": [
+        [
+          2160,
+          1,
+          205,
+          805,
+          2160
+        ]
+      ]
+    },
+    "79": {
+      "bound": 6218912036,
+      "equator": 6218175600,
+      "head_scale_squared": "12/19",
+      "tail_squared_norm": 32,
+      "tail_vectors": 4158,
+      "guaranteed_antipodal_pairs": 368155,
+      "pure_tail_points": 126,
+      "caro_wei_numerator": "51526185626690921043394560",
+      "caro_wei_denominator": "139958233506185809129",
+      "profiles": [
+        [
+          4158,
+          1,
+          193,
+          1569,
+          126
+        ],
+        [
+          4158,
+          1,
+          293,
+          1371,
+          4032
+        ]
+      ]
+    }
+  },
+  "tails_sha256": "48fd7fe54876017351488fbf47e7e889ccea4dd1064775500c2f8f6a3d208d40",
+  "literature_inputs": [
+    "Gamma72 even unimodular, minimum 8 (Nebe 2010)",
+    "All shells are spherical 11-designs (Venkov; Nebe survey Theorem 4.1)",
+    "Classical modular-form description of even unimodular theta series"
+  ]
+}

@@ -1,6 +1,6 @@
 # Verification of the retained SOTA results
 
-The README labels 59 results SOTA against its dated sources. Every labelled result
+The README labels 63 results SOTA against its dated sources. Every labelled result
 has a verification route, but a short run does not freshly establish all of them.
 The commands below check constructions; they do not perform a literature search.
 
@@ -13,7 +13,7 @@ python run_all.py --sota --list           # show the longer replays and coverage
 python run_all.py --sota                  # also replay cosets, code enumeration and cap geometry
 ```
 
-On the current checkout, the quick profile completed in about 3.5 minutes;
+Before the 29–30D, 38–39D and norm-ten additions, the quick profile completed in about 3.5 minutes;
 the unchanged-input `--changed` repeat completed in under 3 seconds. These are
 local timings, and the long coset/code work is intentionally outside that short
 profile.
@@ -30,6 +30,9 @@ not a new mathematical verification. All commands require assertions enabled.
 | 18 | Reconstruct all 8,358 points and check every pair exactly | None beyond the stated mathematical construction |
 | 26–27 | Regenerate the Leech shell, check deleted endpoints and midpoint identities, and check every inserted/inserted pair exactly | Standard Leech shell kissing property; midpoint convexity and pure-tail Cauchy–Schwarz bounds |
 | 28 | Exact Leech partition, head angles and auxiliary layers | Standard kissing property of the generated Leech shell |
+| 29–30 | Regenerate the Leech shell, check all endpoint/midpoint identities and every inserted pair exactly | Standard Leech shell kissing property; exact small integer BLAS with no tolerance; pure-tail Cauchy–Schwarz bound |
+| 38 | Rebuild all cap classes and equatorial lines; check the 24 new points and rational axis rotation with integer intervals | Golay lattice congruences and weight enumerator prove the parent minimum |
+| 39 | Enumerate dense-code differences; check updated supports, retained roots and every new pair type | Python integers only |
 | 36–37 | Exact short shells, phase orbits and latitude extension | Parent lattice facts stated in the package |
 | 41–46 | Exact head ranks and angles; explicit tiny bodies and added medium classes | Complete-family population identities and tables are inherited; the latest large shells have not all been freshly enumerated |
 | 49–60 | All 7,387 base lines, 577 integral isometries, 3,901,694 distinct lines and cap directions | Published parent lattice minimum/shell size; the 12D Coxeter–Todd direction count is a literature input |
@@ -37,8 +40,9 @@ not a new mathematical verification. All commands require assertions enabled.
 | 64–65 | Fresh sign-code enumeration, support intersections and parity repairs | Parent code inputs stated in the package |
 | 66–68 | Layer geometry and counts in quick mode | `--sota` also enumerates all 68,719,476,736 words of the [73,36,16] code; quick mode reads its recorded distance certificate |
 | 69–71 | Exact moment/LP certificates and exhibited section Grams | Published Gamma72 minimum and design theorem |
-| 73 | Completed lattice certificate, int64 cap surgery and non-lattice witness (`verify73.py`) | Published Gamma72 parent facts; `verify73.py --rebuild` regenerates the block enumerations |
-| 74–86 | Nearest-subset checks, integral isometries, tail ranks and all retained cross-head inequalities | Deferred in quick mode; about an hour for the full replay. The 21 completed block lists and completion metadata are inputs; the original enumerations are not rerun |
+| 73 | Completed lattice certificate, int64 cap surgery, 6235 norm-ten additions and non-lattice witness (`verify73.py`) | Published Gamma72 parent facts; `verify73.py --rebuild` regenerates the block enumerations |
+| 77–79 | Exact theta coefficients, shell moments, finite tail ranks/products and rational Caro–Wei bound (`verify_norm10.py`) | Published Gamma72 minimum and Venkov all-shell 11-design theorem; existence proof without a full selected head list |
+| 74–76, 80–86 | Nearest-subset checks, integral isometries, tail ranks and all retained cross-head inequalities | Deferred in quick mode; about an hour for the full replay. The 21 completed block lists and completion metadata are inputs; the original enumerations are not rerun |
 | 87–94 | Complete CPU replay of the compact class certificate, direction partitions, axis geometry and counts | Published Gamma72 minimum and shell size |
 
 The SOTA profile is validated against both README.md and RESULTS.md. A new SOTA
@@ -102,3 +106,12 @@ The code-layer package now checks all 301,609,080 pairs of its 24,561
 physical supports. `python verifications/improved/dim61-68-95-96-code-layers/verify95_96.py`
 replays this certificate in isolation, including sign distances and the
 95D central section. The default package verifier includes the same check.
+
+## Norm-ten continuation in 73D and 77--79D
+
+`python verifications/improved/dim73-88-gamma72-cosets/verify_norm10.py`
+checks the explicit 73D addition and the exact whole-shell existence bounds
+in 77--79D. The latter derive the theta coefficients and design moments,
+check all finite tail products, and evaluate Caro--Wei over rational numbers.
+They do not enumerate the selected full-shell head sets. The 73D parent
+certificates are replayed as part of this command.

@@ -1,0 +1,13 @@
+{
+  "status": "PASS EXACT",
+  "dimension": 30,
+  "points": 224280,
+  "removed": 27648,
+  "inserted": 55296,
+  "pure": 72,
+  "maximum_inserted_product": 16,
+  "inserted_contacts": 12313088,
+  "certificate_sha256": "60261bc68ad9123636005a8a8c99493c31e63d9393ff1a59973b77f92fd6ec30",
+  "arithmetic": "exact small integer operations in float64 BLAS; no tolerance",
+  "seconds": 43.39056324958801
+}

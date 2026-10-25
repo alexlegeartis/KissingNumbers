@@ -1,5 +1,8 @@
 # Dimensions 29 and 30: a full frame of norm-8 heads at height √2
 
+This is a **retained construction**. The current stronger certificate is in
+[`../dim29-30-midpoint-replacements/`](../dim29-30-midpoint-replacements/).
+
 **τ(29) ≥ 209 968** and **τ(30) ≥ 221 012**, against the published **209 496** and **220 440**
 (Ma et al. 2025, arXiv:2511.13391, the PackingStar configurations; the values in Cohn's table).
 Gains of **+472** and **+572**.

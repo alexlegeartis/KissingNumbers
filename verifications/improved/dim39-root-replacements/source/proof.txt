@@ -1,0 +1,116 @@
+A KISSING CONFIGURATION OF 768924 POINTS IN DIMENSION 39
+25 October 2026
+
+THE RESULT
+
+The supplied data and exact verifier establish
+
+                         tau_39 >= 768924.
+
+This improves Qihong Lin's 768916-point configuration by eight points.
+The mechanism is a root replacement: four neutral support changes allow
+64 new vectors to replace 56 roots. No enlargement of the binary dense
+code or of the constant-weight support family is required.
+
+THE RETAINED LAYERS
+
+The dense layer has 327680 vectors of shape (+/-1)^39, obtained from the
+ten cosets of the supplied [39,15,12] binary kernel. The verifier enumerates
+the kernel and all coset differences and establishes minimum distance 10.
+Thus distinct dense vectors have inner product at most 39-2*10=19<39/2.
+Normalize this layer by sqrt(39).
+
+The middle layer consists of 128 vectors on each of 3424 eight-coordinate
+supports: coordinates +/-2, an even number of minus signs, and zeros
+elsewhere. Normalize by sqrt(32). Begin with Lin's support family, making
+these four changes (all coordinate and support indices are zero-based):
+
+ index   old support                         new support
+    4    0,2,14,15,26,29,33,34               0,14,15,26,29,33,34,35
+  769    4,10,14,21,26,31,34,35              0,4,10,21,26,31,34,35
+ 1898    14,15,18,21,31,32,35,38             14,15,18,21,25,31,32,35
+ 2155    1,2,16,18,25,28,31,38               1,2,16,18,25,28,31,35
+
+The updated supports still intersect pairwise in at most four coordinates.
+The verifier proves this by checking that no five-subset occurs twice.
+Within one support, even sign parity gives Hamming distance at least two.
+Both facts yield middle-middle inner products at most 16.
+
+Initially the root layer consists of all +/-4 e_i +/-4 e_j, i<j, also
+of squared norm 32, for 2964 roots. Root-root and root-middle products
+are at most 16. Against the dense layer, absolute products are at most
+8 for roots and 16 for middle points. Both are below sqrt(32*39)/2.
+
+THE NEW VECTORS
+
+For a center a and a four-element leaf set B not containing a, define
+H(a,B) to contain the sixteen vectors
+
+                 +/-4 e_a + 2 sum_(b in B) s_b e_b,
+
+where s_b is +/-1 and the number of negative leaf signs is even. The
+center sign is independent. These vectors have squared norm 32.
+Use the following four stars:
+
+                center a       leaves B
+                    0           2,16,26,29
+                    2           0,6,20,36
+                   31           10,14,21,38
+                   38           1,9,18,31.
+
+Delete all four roots on each center-leaf coordinate pair. There are
+four times four incidences but only fourteen distinct pairs: (0,2) and
+(31,38) are each counted twice. Thus 56 roots are deleted, and the four
+stars add 64 vectors, for a net gain of eight.
+
+THE ANGLE CHECKS
+
+Within one star, points with equal center sign and different leaf signs
+differ in at least two leaves. Their product is at most 16+4*(4-4)=16.
+Opposite center signs give product at most -16+16=0.
+
+For different stars (a,B) and (c,F), an upper bound valid for all signs is
+
+             8 [a in F] + 8 [c in B] + 4 |B intersect F|.
+
+For all six pairs of listed stars this is at most 16. The verifier also
+checks every pair of the actual 64 new vectors directly.
+
+A new vector can conflict with a root only on a center-leaf pair; all
+those roots have been deleted. For each updated middle support S,
+the certificate checks that either a is absent from S or |B intersect S|
+is at most two. This gives maximum absolute product at most 16. The
+independent verifier directly maximizes over all even sign patterns for
+every new-vector/support pair, so this check is not an assumed property
+of the support search.
+
+Finally a new vector has l1 norm 12. Its absolute product with every
+dense +/-1 vector is therefore at most 12, and
+
+                           4*12^2 <= 32*39.
+
+Thus the differently normalized layers are also compatible.
+
+COUNT AND DISTINCTNESS
+
+The dense layer has full support. Middle vectors have eight coordinates
+of magnitude 2, roots have two coordinates of magnitude 4, and new
+vectors have one coordinate of magnitude 4 and four of magnitude 2.
+These shapes distinguish the four families. Within-family distinctness
+is verified. The final count is
+
+               327680 + 438272 + (2964-56) + 64 = 768924.
+
+REPRODUCTION
+
+Run python verify.py from this directory, or pass its full path.
+Only Python's standard library is required. All mathematical checks use
+integer arithmetic. The program checks source hashes, enumerates the
+dense code differences, verifies the updated support family, constructs
+the 64 new vectors, and checks every affected pair type. It requires no
+solver, saved numerical distance table, or floating-point tolerance.
+
+The support and dense data are copied from Lin's public certificate.
+Attribution and licenses are in source/THIRD_PARTY.txt. The new contribution
+is the compatible support changes and root replacements. This is a local
+exact certificate; external submission or acceptance is not claimed.

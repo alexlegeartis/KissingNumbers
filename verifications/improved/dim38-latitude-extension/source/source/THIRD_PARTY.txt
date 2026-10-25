@@ -1,0 +1,43 @@
+SOURCE DATA AND ATTRIBUTION
+
+equator_lines_6855.txt:
+Qihong Lin, New lower bounds for kissing numbers in dimensions 33-39,
+22 October 2026. CC BY 4.0, https://creativecommons.org/licenses/by/4.0/ .
+https://github.com/QH-Lin/kissing-numbers-33-39
+https://doi.org/10.5281/zenodo.23554808
+The file is copied unchanged; its SHA-256 is pinned in certificate.json.
+
+golay_basis.txt, dim14_directions.txt, triples.txt, class_labels.txt:
+Alexey Kravatskiy's 38D cap construction, from the shared workspace's
+research/dim38-leech/data. The base construction is also distributed at
+https://github.com/alexlegeartis/KissingNumbers
+and is credited by Lin's certificate and by Yang et al.,
+https://arxiv.org/abs/2609.35051 . The four files are copied unchanged and
+their hashes are pinned. The 14D direction configuration is the existing
+1932-point configuration; it is not a new 14D bound claimed here.
+
+The idea of adding norm-48 Leech vectors to the empty equator is due to
+Yang et al. Lin supplied the 6855-line equator used here. The new work
+changes the axis rotation and adds 24 points at a different latitude.
+
+MIT License
+
+Copyright (c) 2026 Alexey Kravatskiy
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

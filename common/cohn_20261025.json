@@ -1,12 +1,12 @@
 {
   "source": "https://cohn.mit.edu/kissing-numbers/",
   "retrieved_date": "2026-10-25",
-  "retrieved_at_utc": "2026-10-25T11:11:58.067442+00:00",
+  "retrieved_at_utc": "2026-10-25T20:15:06.499790+00:00",
   "retrieval_method": "Fresh HTTPS retrieval; all 48 lower and upper bounds parsed and compared.",
-  "retrieved_html_sha256": "c94fdad53f16c568880f31603d4516b9bc2b85b0f92ddef3831a49d3ee6b0d35",
+  "retrieved_html_sha256": "fe5477fdba7ae088d679b07980ff60cdcdcc43af95a869075d7e25289f4c1b70",
   "scope": "Cohn live table, dimensions 1 through 48.",
   "previous_snapshot": "cohn_20261024.json",
-  "note": "Cohn now lists this repository's recent 28D, 36-37D and 41-46D results. Our new 26D/27D certificates exceed the still-listed 199868 and 201589. Equal entries already credited to this repository do not indicate a separate tied construction.",
+  "note": "Cohn lists this repository's 18D, 28D, 36-37D and 41-46D results. The new 26D/27D, 29D/30D and 38D/39D certificates exceed the still-listed bounds. Only 25D and 31D are below the reviewed current records. Equal entries credited to this repository do not indicate a separate tied construction.",
   "all_48_upper_bounds_unchanged": true,
   "changed_lower_bounds": [
     {
@@ -335,17 +335,17 @@
     },
     {
       "dimension": 29,
-      "repository_points": 209968,
+      "repository_points": 216568,
       "cohn_lower_bound": 210495,
-      "difference": -527,
-      "comparison": "below"
+      "difference": 6073,
+      "comparison": "above"
     },
     {
       "dimension": 30,
-      "repository_points": 221012,
+      "repository_points": 224280,
       "cohn_lower_bound": 222073,
-      "difference": -1061,
-      "comparison": "below"
+      "difference": 2207,
+      "comparison": "above"
     },
     {
       "dimension": 31,
@@ -370,17 +370,17 @@
     },
     {
       "dimension": 38,
-      "repository_points": 591612,
+      "repository_points": 605346,
       "cohn_lower_bound": 605322,
-      "difference": -13710,
-      "comparison": "below"
+      "difference": 24,
+      "comparison": "above"
     },
     {
       "dimension": 39,
-      "repository_points": 756116,
+      "repository_points": 768924,
       "cohn_lower_bound": 768916,
-      "difference": -12800,
-      "comparison": "below"
+      "difference": 8,
+      "comparison": "above"
     },
     {
       "dimension": 41,

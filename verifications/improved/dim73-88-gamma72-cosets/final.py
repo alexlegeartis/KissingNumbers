@@ -30,6 +30,15 @@ def results():
         nearest_count = len(certificate['heads'])
     class_count = len(np.load(surgery / 'surgery_class.npy'))
     rows[73] = max(rows.get(73, 0), 6218175600 + 2*nearest_count + 2*class_count)
+    norm10 = ROOT / 'source/norm10'
+    selected = len(np.load(norm10/'shell10_selected.npy'))
+    rows[73] = max(rows[73], 6218175600 + 2*nearest_count + 2*class_count + 2*selected)
+    report = json.loads((norm10/'norm10_bound_certificate.json').read_text())
+    assert report['status'] == 'PASS'
+    for dim, row in report['dimensions'].items():
+        total = row['equator'] + 2*row['guaranteed_antipodal_pairs'] + row['pure_tail_points']
+        assert total == row['bound']
+        rows[int(dim)] = max(rows.get(int(dim), 0), total)
     return [dict(dimension=dim, total=total) for dim,total in sorted(rows.items())]
 
 

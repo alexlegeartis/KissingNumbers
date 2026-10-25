@@ -1,0 +1,18 @@
+{
+  "all_checks_passed": true,
+  "dimension": 38,
+  "lower_bound": 605346,
+  "caps": 589680,
+  "equator_points": 13710,
+  "axis_points": 1932,
+  "new_points": 24,
+  "new_head_lines": 6,
+  "max_within_class_inner_product": 8,
+  "max_equator_absolute_inner_product": 24,
+  "axis_interval_upper_numerator": 115984315,
+  "axis_interval_denominator": 16777216,
+  "rotation_denominator_digits": 65,
+  "arithmetic": "Integer arithmetic and exact rational interval bounds only",
+  "certificate_sha256": "091c590ca109bb2d4d02e9eb64a84e186271290c68e419d353e9f769adead555",
+  "elapsed_seconds": 2.437999999965541
+}

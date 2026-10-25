@@ -393,7 +393,7 @@ add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover'
 
 # October code and nearest-coset constructions supersede earlier packages;
 # add() preserves every displaced claim in SUPERSEDED for the history audit.
-for _package in ('dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets'):
+for _package in ('dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -1955,9 +1955,12 @@ if '--write-results' in sys.argv and not fail:
                                   '37D adds two latitude layers',
         'dim61-68-95-96-code-layers': 'explicit binary compression, central sections and enlarged support layers; exact code and geometry replay',
         'dim26-27-midpoint-replacements': 'shared midpoint replacements on orthogonal tail directions; exact Leech membership, midpoint identities and all inserted-pair products',
+        'dim29-30-midpoint-replacements': 'shared Leech midpoint replacements with D5/D6 inserted tails and pure D5/E6 roots; exact coordinate replay',
+        'dim38-latitude-extension': '24 additional latitude points and an exact rational axis rotation over the Leech caps and Lin equator',
+        'dim39-root-replacements': 'four neutral support substitutions and 64-for-56 root replacements over the ERS layers',
         'dim28-joint-leech-layers': 'joint selection of even Leech heads and auxiliary layers over Li\'s odd blocks; exact arithmetic replay',
         'dim64-65-signed-parity': '211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners',
-        'dim73-88-gamma72-cosets': 'certified nearest coset subsets of Gamma72, repaired and scaled with exact group actions and cross-head products',
+        'dim73-88-gamma72-cosets': 'Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D',
         'dim38-leech-large-codimension': 'the Leech cap construction at codimension 14',
         'dim39-ers-constant-weight': 'Edel-Rains-Sloane with the 2026 constant-weight codes',
         'dim41-46-p48-heads': 'independently normalized P48n body families with rational '
@@ -1987,7 +1990,7 @@ if '--write-results' in sys.argv and not fail:
                "43D certificate, and raises 45D to 7 655 056. All 41-46D integer angles "
                "and head dimensions replay; complete-family body populations inherit the "
                "documented identities and have not all been freshly enumerated. "
-               "The 25 October continuation adds shared midpoint replacements with 200,918 points in 26D and 204,636 in 27D, and strengthens 73D, 76D and 78-96D. The checkpoint also includes the 205,232-point joint Leech lift in 28D, the 7 387-line P48 class family, code "
+               "The 25 October continuation adds shared midpoint replacements with 200,918 points in 26D and 204,636 in 27D, adds 216,568 points in 29D and 224,280 in 30D, regains 38D with 605,346 and 39D with 768,924, and strengthens 73D and 76-96D. The norm-ten continuation gives 6,218,204,076 in 73D and exact finite-graph existence bounds in 77-79D. The checkpoint also includes the 205,232-point joint Leech lift in 28D, the 7 387-line P48 class family, code "
                "constructions in 61-68D and 95-96D, including the new signed-support 64-65D constructions, and Gamma72 nearest-coset lifts. "
                "The comparison column uses common/published.py's pinned published data; "
                "this integration is not a new comprehensive literature audit. The paper "

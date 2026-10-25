@@ -1,5 +1,8 @@
 # A large new lower bound for the kissing number in dimension 38
 
+This is a **retained construction**. The current stronger certificate is in
+[`../dim38-latitude-extension/`](../dim38-latitude-extension/).
+
 $$\tau_{38} \;\ge\; 591612$$
 
 against the published record **566652** (H. Cohn, *Table of kissing number bounds*) — an
