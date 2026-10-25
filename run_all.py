@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 81 scripts, including large exact certificate replays
-    python run_all.py --full       # 100 scripts, budget about 10 hours
+    python run_all.py              # 86 scripts, including large exact certificate replays
+    python run_all.py --full       # 105 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -106,7 +106,7 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
-    ("audit: all 65 claims, mutual and external consistency",
+    ("audit: all 66 claims, mutual and external consistency",
      HERE, ['audit.py'], 0.5, True),
     ("common: extremal theta series and one-point distributions",
      os.path.join(HERE, 'common'), ['theta.py'], 0.1, True),
@@ -188,6 +188,11 @@ JOBS = [
      os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py'], 5.0, True),
     ("dims 26, 27: shared midpoint replacements, exact independent replay",
      os.path.join(V, 'improved', 'dim26-27-midpoint-replacements'), ['verify.py'], 1.0, True),
+    ('dim25-collective-deformation: independent exact replay', os.path.join(V, 'improved', 'dim25-collective-deformation'), ['verify.py'], 1.0, True),
+    ('dim31-dual-centres: independent exact replay', os.path.join(V, 'improved', 'dim31-dual-centres'), ['verify.py'], 5.0, True),
+    ('dim38-joint-latitudes: independent exact replay', os.path.join(V, 'improved', 'dim38-joint-latitudes'), ['verify.py'], 1.0, True),
+    ('dim39-deformed-orbits: independent exact replay', os.path.join(V, 'improved', 'dim39-deformed-orbits'), ['verify.py'], 1.0, True),
+    ('dim40-affine-shells: independent exact replay', os.path.join(V, 'improved', 'dim40-affine-shells'), ['verify.py'], 5.0, True),
     ("dims 29, 30: midpoint replacements, exact independent replay",
      os.path.join(V, 'improved', 'dim29-30-midpoint-replacements'), ['verify.py'], 2.0, True),
     ("dim 38: latitude extension and exact rational axis rotation",
@@ -363,11 +368,15 @@ def _sota_jobs(quick=False):
     wanted = {
         ('common', ('capalgebra.py',)),
         ('dim18-bent-hexagon', ('verify18.py',)),
+        ('dim25-collective-deformation', ('verify.py',)),
+        ('dim31-dual-centres', ('verify.py',)),
+        ('dim40-affine-shells', ('verify.py',)),
+
         ('dim26-27-midpoint-replacements', ('verify.py',)),
         ('dim28-joint-leech-layers', ('verify.py',)),
         ('dim29-30-midpoint-replacements', ('verify.py',)),
-        ('dim38-latitude-extension', ('verify.py',)),
-        ('dim39-root-replacements', ('verify.py',)),
+        ('dim38-joint-latitudes', ('verify.py',)),
+        ('dim39-deformed-orbits', ('verify.py',)),
         ('dim73-88-gamma72-cosets', ('verify_norm10.py',)),
         ('dim36-37-coxeter-todd', ('verify.py',)),
         ('dim41-46-p48-heads', ('verify.py',)),
@@ -438,12 +447,16 @@ def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
         ('dim18-bent-hexagon', [18], [('verify18.py',)], ''),
+        ('dim25-collective-deformation', [25], [('verify.py',)], ''),
+        ('dim31-dual-centres', [31], [('verify.py',)], ''),
+        ('dim40-affine-shells', [40], [('verify.py',)], ''),
+
         ('dim26-27-midpoint-replacements', [26, 27], [('verify.py',)], ''),
         ('dim28-joint-leech-layers', [28], [('verify.py',)], ''),
         ('dim29-30-midpoint-replacements', [29, 30], [('verify.py',)], ''),
         ('dim36-37-coxeter-todd', [36, 37], [('verify.py',)], ''),
-        ('dim38-latitude-extension', [38], [('verify.py',)], ''),
-        ('dim39-root-replacements', [39], [('verify.py',)], ''),
+        ('dim38-joint-latitudes', [38], [('verify.py',)], ''),
+        ('dim39-deformed-orbits', [39], [('verify.py',)], ''),
         ('dim41-46-p48-heads', list(range(41, 47)), [('verify.py',)],
          'inherited body populations; the latest large shells are not all freshly enumerated'),
         ('dim49-63-p48-caps', list(range(49, 61)),

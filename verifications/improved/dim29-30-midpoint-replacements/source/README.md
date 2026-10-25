@@ -5,11 +5,11 @@ numbers or upper bounds. The comparison targets were checked against the
 [Felpix-Studios table](https://github.com/Felpix-Studios/kissing-number), including
 its current 241,079 entry in dimension 31.
 
-| Dimension | Published comparison | New verified construction | Improvement | Retained repo bound |
+| Dimension | Published comparison | New verified construction | Improvement | Current repo bound (26 October) |
 |---|---:|---:|---:|---:|
 | 29 | 210,495 | **216,568** | **6,073** | — |
 | 30 | 222,073 | **224,280** | **2,207** | — |
-| 31 | 241,079 | No improvement in this investigation | — | 238,662 |
+| 31 | 241,079 | No improvement in this investigation | — | 241,742 |
 
 The final certificates are `certificate29_216568.npz` and
 `certificate30_224280.npz` in `certificates/`. Earlier successful certificates

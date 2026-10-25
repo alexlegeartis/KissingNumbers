@@ -1,3 +1,5 @@
+> Retained construction: superseded locally on 26 October 2026 by [Midpoints + dual centres](../dim31-dual-centres/), with **241 742** points.
+
 # Dimension 31: the norm-8 frame layer at height √2
 
 **τ(31) ≥ 238 662**, against the published **238 350** (Ma et al. 2025, arXiv:2511.13391, the

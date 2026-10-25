@@ -393,7 +393,7 @@ add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover'
 
 # October code and nearest-coset constructions supersede earlier packages;
 # add() preserves every displaced claim in SUPERSEDED for the history audit.
-for _package in ('dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets'):
+for _package in ('dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -949,10 +949,10 @@ print("5g. the README's description of the paper partitions its earlier snapshot
 _rm = os.path.join(HERE, 'README.md')
 _wr = io.open(_rm, encoding='utf-8').read()
 _m = re.search(r'is a (\d+)-page account of(.{0,600}?)\n\n', _wr, re.S)
-_current_paper = re.search(r'The\s+main table reports (\d+) of the (\d+) registered claims', _wr)
+_current_paper = re.search(r'The\s+main table reports (?:all )?(\d+)(?: of the (\d+))? registered claims', _wr)
 if _current_paper:
     _sota_rows = sum('**SOTA**' in line for line in _wr.splitlines() if line.startswith('|'))
-    if tuple(map(int, _current_paper.groups())) != (_sota_rows, len(claims)):
+    if tuple(int(x) if x is not None else int(_current_paper.group(1)) for x in _current_paper.groups()) != (_sota_rows, len(claims)):
         bad("README.md's current manuscript scope disagrees with its SOTA table and registry")
     elif not re.search(r'%d-row arithmetic' % len(paper_claims), _wr):
         bad("README.md's historical manuscript snapshot count disagrees with registry_snapshot.json")
@@ -1956,6 +1956,11 @@ if '--write-results' in sys.argv and not fail:
         'dim61-68-95-96-code-layers': 'explicit binary compression, central sections and enlarged support layers; exact code and geometry replay',
         'dim26-27-midpoint-replacements': 'shared midpoint replacements on orthogonal tail directions; exact Leech membership, midpoint identities and all inserted-pair products',
         'dim29-30-midpoint-replacements': 'shared Leech midpoint replacements with D5/D6 inserted tails and pure D5/E6 roots; exact coordinate replay',
+        'dim25-collective-deformation': 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons',
+        'dim31-dual-centres': 'shared midpoint replacements and dual E7 centres; exact coordinate replay',
+        'dim38-joint-latitudes': '1352 joint latitude families, signed axis rotation and coordinate axes; exact integer replay',
+        'dim39-deformed-orbits': 'rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration',
+        'dim40-affine-shells': 'three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products',
         'dim38-latitude-extension': '24 additional latitude points and an exact rational axis rotation over the Leech caps and Lin equator',
         'dim39-root-replacements': 'four neutral support substitutions and 64-for-56 root replacements over the ERS layers',
         'dim28-joint-leech-layers': 'joint selection of even Leech heads and auxiliary layers over Li\'s odd blocks; exact arithmetic replay',
@@ -1985,7 +1990,7 @@ if '--write-results' in sys.argv and not fail:
     out.append("%d registered lower bounds on the kissing number tau(n), compared with their\nrecorded published baselines. Later superseding records are listed in README.md."
                % len(claims))
     out.append("")
-    out.append("The 24 October 2026 checkpoint adds exact Coxeter-Todd constructions "
+    out.append("The 26 October continuation gives 197584 in 25D, 241742 in 31D, 610394 in 38D, 769180 in 39D and 1126314 in the newly registered dimension 40. All five independent exact replays passed. Fresh primary-source comparisons and the unavailable Cohn retrieval are documented in common/source_review_20261026.json. The 24 October 2026 checkpoint adds exact Coxeter-Todd constructions "
                "in dimensions 36 and 37, registers the supplied 2 919 743-point partial-family "
                "43D certificate, and raises 45D to 7 655 056. All 41-46D integer angles "
                "and head dimensions replay; complete-family body populations inherit the "
@@ -2070,7 +2075,7 @@ if '--write-results' in sys.argv and not fail:
     # 25-31 used to have rows here; the last, dimension 28, left on 2026-09-15.  Nothing
     # replaces them: this table may name no dimension that is claimed, which the check below
     # enforces, so the calibration fact they carried is a sentence under the table instead.
-    out.append("| 32-35, 40 | older ERS/cross-section audit; no new construction registered here. "
+    out.append("| 32-35 | older ERS/cross-section audit; no new construction registered here. "
                "`verifications/closed/dim32-44-ers-audit/` |")
     out.append("| 47 | already in the literature. %s is Boyvalenkov-Cherkashin, "
                "Results Math. 80 (2025), Paper No. 3, equation (3) of the preprint "

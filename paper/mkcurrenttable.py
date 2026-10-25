@@ -9,17 +9,20 @@ from mkcurrentvalues import read_rows, tex_number  # noqa: E402
 
 OUT = os.path.join(HERE, "current_table.tex")
 
-# The 25 October review leaves 25D and 31D superseded. Earlier mechanisms
+# All 66 current claims exceed their reviewed comparison. Earlier mechanisms
 # remain in the historical appendix, including dimensions regained this month.
 CONSTRUCTIONS = {
+    40: r"three affine lattice shells (\S\ref{ss:d40current})",
+    31: r"midpoints and dual E7 centres (\S\ref{ss:d31current})",
+    25: r"collective rational deformation (\S\ref{ss:d25current})",
     18: r"bent-coset hexagon over odd $\mathrm{BW}_{16}$ (\S\ref{sec:d18})",
     26: r"shared midpoint replacements (\S\ref{ss:d2627current})",
     27: r"shared midpoint replacements (\S\ref{ss:d2627current})",
     28: r"joint Leech layers (\S\ref{ss:d28current})",
     29: r"shared midpoint replacements (\S\ref{ss:d2930current})",
     30: r"shared midpoint replacements (\S\ref{ss:d2930current})",
-    38: r"rational latitude extension (\S\ref{ss:d3839current})",
-    39: r"support and root replacements (\S\ref{ss:d3839current})",
+    38: r"joint latitude families (\S\ref{ss:d3839current})",
+    39: r"deformed sign orbits (\S\ref{ss:d3839current})",
     36: r"Coxeter--Todd phase code (\S\ref{ss:d3637})",
     37: r"Coxeter--Todd phase code with latitude layers (\S\ref{ss:d3637})",
     41: r"$P_{48n}$ heads (\S\ref{ss:p48current})",
@@ -64,8 +67,7 @@ def render():
         r"\scriptsize",
         r"\begin{longtable}{rrrp{0.30\textwidth}}",
         r"\caption{Current SOTA lower bounds in the reviewed sources.  The",
-        r"reviewed set contains 65 certified claims; the superseded claims in",
-        r"dimensions $25$ and $31$ are retained in",
+        r"reviewed set contains 66 certified claims; earlier constructions are retained in",
         r"Appendix~\ref{app:historical}.}\label{tab:all}\\",
         r"\toprule",
         r"$n$ & recorded comparison & this work & construction\\",

@@ -1,7 +1,7 @@
 # `paper/` — the write-up, and the three checkers that hold it to the repository
 
 [`kissing46.tex`](kissing46.tex) — *New lower bounds for kissing numbers in dimensions 18
-through 96*. 52 pages, `amsart`, no packages beyond `amssymb`, `amsmath`, `booktabs`,
+through 96*. 54 pages, `amsart`, no packages beyond `amssymb`, `amsmath`, `booktabs`,
 `longtable` and `hyperref`. References are [`kissing46.bib`](kissing46.bib), formatted with
 `amsplain`, so a full build is
 
@@ -13,24 +13,25 @@ pdflatex kissing46 && bibtex kissing46 && pdflatex kissing46 && pdflatex kissing
 build without `bibtex` reads, and without it one `pdflatex` pass prints `[?]` for all
 forty-five citations. [`kissing46.pdf`](kissing46.pdf) is a build of the `.tex` beside it, kept for convenience.
 Nothing here checks a PDF against its source — rebuild with the command above if you want
-to confirm it; the build is 52 pages, with no undefined citation or reference.
+to confirm it; the build is 54 pages, with no undefined citation or reference.
 The generated current-results table and the historical appendix produce a few
 typographic over/underfull-box warnings; they do not affect the mathematical
 content.
 
 ## Current results and historical appendix
 
-The main paper now reports the 63 registered entries that remain state of the
+The main paper now reports all 66 registered entries that remain state of the
 art in the reviewed sources. `current_table.tex` is generated from the current
-65-row `RESULTS.md` registry and includes the October advances in dimensions
+66-row `RESULTS.md` registry and includes the October advances in dimensions
 26--30, 38--39 and 64--68, along with the 28D, 36--37D and 41--46D updates. The 25 October
 73D construction combines the completed half-coset with a verified non-lattice
 cap replacement and a norm-ten addition, reaching 6,218,204,076. Exact
-whole-shell norm-ten existence proofs also improve dimensions 77--79. The two superseded current
-entries remain in the paper's historical appendix with their construction details
+whole-shell norm-ten existence proofs also improve dimensions 77--79. Earlier construction descriptions remain in the paper's historical appendix with their construction details
 and the frozen September table. The new midpoint certificates reach
-216,568 in 29D and 224,280 in 30D; the latitude/root replacements reach
-605,346 in 38D and 768,924 in 39D. Their proofs and verification scope
+216,568 in 29D and 224,280 in 30D; the joint-latitude and deformed-orbit constructions reach
+610,394 in 38D and 769,180 in 39D. Collective deformation reaches
+197,584 in 25D, dual E7 centres reach 241,742 in 31D, and affine lattice
+shells give 1,126,314 in the newly registered dimension 40. Their proofs and verification scope
 are included in the current construction appendix.
 
 `values.tex` continues to pin the September numerical snapshot because the
@@ -78,7 +79,7 @@ python formulas.py       # every formula in the paper, re-derived with sympy
 python style_scan.py -v  # the prose faults listed in the writing guidelines
 ```
 
-`factcheck.py` (774 checks) does not parse the repository's conclusions, it **re-derives**
+`factcheck.py` (779 checks) does not parse the repository's conclusions, it **re-derives**
 them: the moment identities, the count of the layered construction, Caro–Wei, the
 Edel–Rains–Sloane totals, the bound on independent sets, and every entry of Tables 1, 3 and 4.
 `formulas.py` (257 checks) checks the *algebra* rather than the numbers — the moment identity

@@ -1,6 +1,6 @@
 # Verification of the retained SOTA results
 
-The README labels 63 results SOTA against its dated sources. Every labelled result
+The README labels 66 results SOTA against its dated sources. Every labelled result
 has a verification route, but a short run does not freshly establish all of them.
 The commands below check constructions; they do not perform a literature search.
 
@@ -28,11 +28,14 @@ not a new mathematical verification. All commands require assertions enabled.
 | Dimensions | Available verification | Remaining inputs or longer work |
 |---|---|---|
 | 18 | Reconstruct all 8,358 points and check every pair exactly | None beyond the stated mathematical construction |
+| 25 | Independent Leech rebuild, all 971 circles and 102 moved points; exact biquadratic comparisons | Standard Leech shell kissing property |
+| 31 | Independent Leech rebuild, all midpoint/centre/pure-tail pairs and expanded-coordinate comparison | Standard Leech shell kissing property; signed exact radical bounds |
+| 40 | Independent lattice minimum enumeration and all auxiliary/core pair types | NumPy and C++17 g++ with __int128; exact bounded integer BLAS |
 | 26–27 | Regenerate the Leech shell, check deleted endpoints and midpoint identities, and check every inserted/inserted pair exactly | Standard Leech shell kissing property; midpoint convexity and pure-tail Cauchy–Schwarz bounds |
 | 28 | Exact Leech partition, head angles and auxiliary layers | Standard kissing property of the generated Leech shell |
 | 29–30 | Regenerate the Leech shell, check all endpoint/midpoint identities and every inserted pair exactly | Standard Leech shell kissing property; exact small integer BLAS with no tolerance; pure-tail Cauchy–Schwarz bound |
-| 38 | Rebuild all cap classes and equatorial lines; check the 24 new points and rational axis rotation with integer intervals | Golay lattice congruences and weight enumerator prove the parent minimum |
-| 39 | Enumerate dense-code differences; check updated supports, retained roots and every new pair type | Python integers only |
+| 38 | Rebuild all cap classes and equatorial lines; check all 1,352 joint latitude families and retained/coordinate axes with integers | Golay lattice congruences and weight enumerator prove the parent minimum |
+| 39 | Replay sparse supports and root replacements; check every relative pair of 1,281 dense sign orbits | Bounded integer arithmetic and complete Walsh enumeration |
 | 36–37 | Exact short shells, phase orbits and latitude extension | Parent lattice facts stated in the package |
 | 41–46 | Exact head ranks and angles; explicit tiny bodies and added medium classes | Complete-family population identities and tables are inherited; the latest large shells have not all been freshly enumerated |
 | 49–60 | All 7,387 base lines, 577 integral isometries, 3,901,694 distinct lines and cap directions | Published parent lattice minimum/shell size; the 12D Coxeter–Todd direction count is a literature input |

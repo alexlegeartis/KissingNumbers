@@ -5,14 +5,19 @@ according to what is currently true about it. The distinction is the point of th
 a repository that only shows its wins is much less useful to the next person than one that
 shows where the doors are shut.
 
-## [`improved/`](improved/) — all 65 claims, including retained historical records
+## [`improved/`](improved/) — all 66 claims, including retained historical records
 
-23 packages, one per **construction idea** rather than one per dimension, because several
+28 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
+| [`dim25-collective-deformation`](improved/dim25-collective-deformation/) | 25 | collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons |
+| [`dim31-dual-centres`](improved/dim31-dual-centres/) | 31 | shared midpoint replacements and dual E7 centres; exact coordinate replay |
+| [`dim38-joint-latitudes`](improved/dim38-joint-latitudes/) | 38 | 1352 joint latitude families, signed axis rotation and coordinate axes; exact integer replay |
+| [`dim39-deformed-orbits`](improved/dim39-deformed-orbits/) | 39 | rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration |
+| [`dim40-affine-shells`](improved/dim40-affine-shells/) | 40 | three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products |
 | [`dim18-bent-hexagon`](improved/dim18-bent-hexagon/) | 18 | apparently new — Cohn–Li's own ℝ¹⁶ ⊕ ℝ² hexagon over the odd Barnes–Wall lattice, with the three 6-set families taken from bent cosets of RM(1,4) whose pairwise sums are bent but which do not sum to zero; tier B rises from 256 to 960 |
 | [`dim25-lens-heads`](improved/dim25-lens-heads/) | 25 | apparently new — joint work in progress with H. Cohn and B. Lindow; 1016 lens heads (971 from the block family, plus a 45-head maximum independent set over the complete pool), one non-lattice equator point |
 | [`dim26-27-midpoint-replacements`](improved/dim26-27-midpoint-replacements/) | 26–27 | 200,918 and 204,636 points from shared midpoint replacements; exact portable replay |

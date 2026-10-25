@@ -54,8 +54,8 @@ on EinsteinArena. We therefore asked
 whether commonly available language models and agentic coding tools, including
 Claude Code and OpenAI Codex, could contribute mathematical advances. Surprisingly,
 a single Claude Opus~5 session, after some motivational prompting, produced a new
-dimension-$27$ construction. Scaling the workflow with Claude Code and Codex led to $65$ certified lower-bound
-constructions in dimensions $18$--$96$, with $63$ still state of the art in our
+dimension-$27$ construction. Scaling the workflow with Claude Code and Codex led to $66$ certified lower-bound
+constructions in dimensions $18$--$96$, with $66$ still state of the art in our
 review. Several exceed records reported by specialized search systems, including
 the Qiushi Engine. On the broader leaderboard, Li reports GPT-6 Astra-assisted
 records in dimensions $19$ and $21$ and later lifted-block records in dimensions
@@ -185,21 +185,24 @@ how many minimal lines of $L$ can be pairwise at small inner product.
 
 \subsection{Results}
 
-Table~\ref{tab:all} gives one row for each of the $63$ bounds that
+Table~\ref{tab:all} gives one row for each of the $66$ bounds that
 remain state of the art in the reviewed sources. It reports the recorded
 comparison, the current value, and the construction family; the appendix gives
 the construction data and proofs, while Section~\ref{ss:verif} describes the
-exact certification. Two
-superseded current claims are retained for reproducibility; their descriptions and the
+exact certification. Earlier construction descriptions and the frozen
 September manuscript table appear in Appendix~\ref{app:historical}.
 
 Shared midpoint replacements give $\Kcur{26}$ and $\Kcur{27}$ in dimensions
 $26$ and $27$, regaining both records after Takhanov--Yun. The same midpoint mechanism
 gives $\Kcur{29}$ and $\Kcur{30}$ in dimensions $29$ and $30$, surpassing
-Li's $210\,495$ and $222\,073$. A new latitude and rational axis rotation
-give $\Kcur{38}$ in dimension $38$; neutral support changes and root
-replacements give $\Kcur{39}$ in dimension $39$, surpassing Lin's
-$605\,322$ and $768\,916$ respectively.
+Li's $210\,495$ and $222\,073$. Collective rational deformation gives
+$\Kcur{25}$ in dimension $25$, exceeding Takhanov--Yun's $197\,583$ by one.
+Dual E7 centres give $\Kcur{31}$ in dimension $31$, exceeding Li's $241\,079$.
+Joint latitude families give $\Kcur{38}$ in dimension $38$; deformed sign
+orbits give $\Kcur{39}$ in dimension $39$, surpassing Lin's
+$605\,322$ and $768\,916$ respectively. Three affine lattice shells give
+$\Kcur{40}$ in dimension $40$, exceeding the $1\,092\,000$ points in
+\cite[Table~2]{dorofeev-sun-wang2026} by $34\,314$.
 The current additions are concise by design. The Coxeter--Todd construction gives
 $501\,633$ and $505\,359$ in dimensions $36$ and $37$; the $P_{48n}$ construction
 supplies dimensions $41$--$46$; the code-layer constructions give
@@ -733,51 +736,123 @@ bounds every absolute partial sum by $32$. There is no numerical tolerance;
 an integer-matrix option is also supplied. Explicit expanded coordinates
 are included, and optimality of the selected pieces is not asserted.
 
-\subsection{New latitude and root replacements in dimensions 38 and 39}\label{ss:d3839current}
+\subsection{Joint latitudes and deformed orbits in dimensions 38 and 39}\label{ss:d3839current}
 
-In dimension $38$, retain the $589680$ caps of the original construction
-and Lin's $13710$ equatorial points \cite{lin33-2026}. Choose six distinct
-Leech body lines $u_i$ of squared norm $32$ and head vectors $z_i$ of
-squared norm $24$. Insert the four independent sign choices
+In dimension $38$, retain the $589680$ caps and Lin's $13710$ equatorial
+points \cite{lin33-2026}. Choose $1352$ pairs of Leech body lines $u_i$
+of squared norm $32$ and head vectors $z_i$ of squared norm $24$, and insert
+the four independent sign choices $(\pm u_i,\pm2z_i)/\sqrt{128}$.
+Bodies may repeat. The exact joint condition
 \[
-  (\pm u_i,\pm2z_i)/\sqrt{128}.
+ |\ip{u_i}{u_j}|+4|\ip{z_i}{z_j}|\le64\qquad(i\ne j)
 \]
-The supplied heads obey $|\ip{z_i}{z_j}|\le12$ for $i\ne j$ and
-$|\ip{z_i}{w}|\le8$ against every old head $w$. Against the three heads
-assigned to $u_i$, the sharper bound is $2$. The new-cap inequalities are
-$16+16\sqrt2\le16\sqrt6$ for different bodies and
-$32+4\sqrt2\le16\sqrt6$ for the same body; exact squaring proves both.
-The new body's squared norm fraction $1/4$ clears the equator by
-Cauchy--Schwarz. An explicit rational orthogonal matrix $Q$ fixes all
-$z_i$ and retains all $1932$ old axis points $(0,Qw)/\sqrt8$.
-The package \texttt{dim38-latitude-extension} proves exact orthogonality,
-the fixed-head identities, and every axis-cap inequality using integer
-intervals with checked overflow bounds. It also rebuilds the Leech shell
-from Golay congruences and checks every retained equatorial line. Therefore
+checks every new family pair. Products against every old head are at most
+$8$ in absolute value, and against the three heads assigned to the same
+body the bound is $2$. The corresponding cap inequalities are
+$16+16\sqrt2\le16\sqrt6$ and $32+4\sqrt2\le16\sqrt6$.
+The new body fraction $1/4$ clears the equator by Cauchy--Schwarz.
+A signed diagonal orthogonal transformation retains $1568$ flat axis
+points; adding the $28$ coordinate axis points is certified by coordinate
+square bounds. The independent integer verifier rebuilds all Leech lines,
+checks every inherited family and every new angle type. Consequently
 \[
- K(38)\ge\Kcur{38}=589680+13710+1932+24,
+ K(38)\ge\Kcur{38}=589680+13710+1568+28+4\cdot1352.
 \]
-an increase of $24$ over Lin's certificate.
+The earlier $605346$-point rational rotation remains a retained certificate.
 
-In dimension $39$, retain Lin's dense binary-code layer of $327680$
-points and $3424$ weight-eight supports, each carrying $128$ even-sign
-vectors. Four support substitutions preserve cardinality and pairwise
-intersection at most four. For a centre $a$ and four leaves $B$, insert
-the sixteen vectors
+In dimension $39$, the sparse part consists of $438272$ even-sign
+weight-eight vectors, $2964-56$ retained roots and $64$ heavy-star vectors.
+The support substitutions and shared root deletions are checked by a full
+replay of the earlier sparse-layer certificate. The dense part now uses
+$1281$ rationally deformed representatives under a sign group of order
+$256$. Integer representative coordinates have norms between
+$99996$ and $100004$ and are normalized individually. Complete Walsh enumeration
+checks $210205695$ relative orbit products, including every distinct pair
+within an orbit. The maximum integer product is $4997124511$, below
+$99996^2/2=4999600008$. Top-eight, top-two and weighted-star support
+inequalities check compatibility with every sparse point. All transforms
+and sparse bounds use proved bounded integer arithmetic. Thus
 \[
- \pm4e_a+2\sum_{b\in B}s_be_b,
- \qquad s_b\in\{-1,1\},\quad\prod_{b\in B}s_b=1.
+ K(39)\ge\Kcur{39}=438272+(2964-56)+64+1281\cdot256.
 \]
-Delete the four roots on each centre-leaf pair. Four compatible stars
-share two of these pairs, so $64$ new vectors replace $56$ roots.
-The package \texttt{dim39-root-replacements} enumerates all dense-code
-differences, checks the updated supports and every affected angle type
-with integers, including cross-layer normalization bounds. Hence
+The packages \texttt{dim38-joint-latitudes} and
+\texttt{dim39-deformed-orbits} include all parent data, attribution,
+certificates, proofs and independent verifiers. The gain over Lin is
+$5072$ in dimension $38$ and $264$ in dimension $39$.
+
+\subsection{Collective deformation in dimension 25}\label{ss:d25current}
+
+Starting from the $196560$-point Leech minimal shell, the supplied
+certificate deletes $1991$ distinct owners, inserts $2913$ vertices on
+$971$ circles and adds $102$ rational moved points. Hence
 \[
- K(39)\ge\Kcur{39}=327680+438272+(2964-56)+64,
+ K(25)\ge\Kcur{25}=196560-1991+2913+102,
 \]
-an increase of $8$ over Lin's result. Both packages include the parent
-data, source attribution, exact certificates and standalone verifiers.
+one point above Takhanov--Yun \cite{takhanov-yun2026}. This continues
+their circle construction. All coordinates and rotations are supplied;
+no predecessor certificate or cached shell is needed for replay.
+Circle coordinates lie in $\mathbb Q(\sqrt2,\sqrt3)$; rational half-angle
+rotations preserve squared norm $32$. Circle feet lie on deleted endpoint
+segments, proving products at most $16$ against retained shell points by
+convexity. Distinct circles in one class have centre product at most $4$
+and radius $\sqrt{12}$, proving the same bound for every pair of phases.
+Every remaining exceptional pair is screened by outward integer intervals
+with $75$-digit square-root enclosures. All inconclusive cases are decided
+exactly in the biquadratic field by signed integer squaring. Rational
+moved points are also checked against every retained shell point.
+The portable \texttt{dim25-collective-deformation} package independently
+rebuilds the Golay Leech shell and verifies the complete configuration.
+
+\subsection{Midpoints and dual centres in dimension 31}\label{ss:d31current}
+
+The shared midpoint construction extends to $338$ blocks with E7 root
+tails. Its $86528$ midpoint points share $43264$ deleted endpoints.
+For another $28$ blocks choose compatible dual E7 directions of squared
+norm $6$, scaled by $\sqrt{8/3}$. Their $1792$ centre points have head
+$(u+v)/2$ for orthogonal Leech minimal vectors $u,v$, so head norm is $16$
+and every centre clears the full Leech shell by convexity, including its
+two witnesses. The supplied choices are orthogonal to the midpoint tails
+in the same residual group; every cross-group radical inequality is
+checked by signed integer squaring. Adding all $126$ pure E7 root tails
+gives
+\[
+ K(31)\ge\Kcur{31}=196560-43264+86528+1792+126.
+\]
+The \texttt{dim31-dual-centres} package independently regenerates the
+Leech shell, checks endpoint and witness membership, every norm and every
+inserted pair. Small integer products are represented exactly in binary64
+with no tolerance. It also rematerializes and compares all expanded
+coordinates in $\mathbb Q(\sqrt2,\sqrt3)$.
+
+\subsection{Affine lattice shells in dimension 40}\label{ss:d40current}
+
+Let $Q$ be the supplied positive definite even integral rank-$40$ Gram
+matrix, of determinant $6561$. Three explicit coefficient families have
+squared norms $54$, $36$ and $30$, and respective sizes $1084590$,
+$40590$ and $1134$. Normalize each family to the unit sphere. The core
+lies in one affine class modulo $3$. An independent lattice minimum proof
+rules out every nonzero integer vector of squared norm at most $4$;
+evenness then gives minimum at least $6$. For distinct core rows $a,b$,
+$(a-b)/3$ is nonzero integral, so
+\[
+ (a-b)Q(a-b)^T\ge54,\qquad aQb^T\le27.
+\]
+All other pair types are explicitly checked. Their maximum integer
+products, for the $36/36$, $30/30$, $36/30$, $54/30$ and $54/36$ pairs,
+are respectively $18$, $12$, $15$, $18$ and $21$. Each satisfies
+$4p^2\le nm$ for the relevant squared norms $n,m$. Thus
+\[
+ K(40)\ge\Kcur{40}=1084590+40590+1134.
+\]
+The minimum proof checks an exact rational triangular enclosure, then
+enumerates its integer ellipsoid using bounded C++ \texttt{\_\_int128}
+arithmetic. It assumes no minimum theorem for the parent $P_{48n}$ lattice.
+Cross-family dot products use integers represented exactly in binary32:
+the verifier proves each absolute accumulation bound is below $2^{24}$
+before multiplication. An optional slower mode uses int64 throughout.
+The \texttt{dim40-affine-shells} package includes every coefficient row,
+the Gram matrix, enclosure, C++ source, full proof and standalone verifier.
+The preceding published bound is $1092000$ \cite[Table~2]{dorofeev-sun-wang2026}.
 
 \subsection{The current 28-dimensional lift}\label{ss:d28current}
 

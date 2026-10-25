@@ -246,10 +246,10 @@ for m in re.finditer(r'^\| (\d+) \| ([\d\u202f ]+) \| \*\*([\d\u202f ]+)\*\* \|'
 # from Table 4 instead.  Put a dimension back only while the manuscript genuinely lags: this
 # line is what says, in code, whether an omission is deliberate or an oversight.
 # The October 2026 registry adds two Coxeter-Todd dimensions and six
-# P48n family/head dimensions, plus four code-layer dimensions. Their packages are
-# checked by audit.py and run_all.py; the manuscript remains its September
-# snapshot. Keep the excess explicit so another addition cannot slip in.
-POSTDATE = {36, 37, 41, 42, 43, 44, 45, 46, 64, 65, 66, 67}
+# P48n family/head dimensions, four code-layer dimensions and the new 40D
+# affine shells. These are current in the main table; the detailed historical
+# appendix remains its September snapshot. Keep the excess explicit so another addition cannot slip in.
+POSTDATE = {36, 37, 40, 41, 42, 43, 44, 45, 46, 64, 65, 66, 67}
 chk('values.tex is the manuscript\'s only copy of each bound',
     bool(_MACROS) and not _unexpanded,
     'values.tex missing' if not _MACROS
@@ -1433,9 +1433,9 @@ chk('the abstract states the scope of the construction review',
     'dimensions $18$--$96$' in _abs,
     'the reviewed dimension range is not named')
 chk('abstract count matches Table 4',
-    '$65$ certified lower-bound' in _abs
-    and '$63$ still state of the art' in _abs,
-    'the abstract does not state the current 65/63 scope')
+    '$66$ certified lower-bound' in _abs
+    and '$66$ still state of the art' in _abs,
+    'the abstract does not state the current 66/66 scope')
 chk('title states the range, not a tally',
     ('in dimensions %d through %d' % (min(tab4), max(tab4))) in FLAT
     and '48 dimensions' not in FLAT)
@@ -2020,6 +2020,49 @@ _lattice73 = re.search(r'giving a lattice with \$([^$]+)\$ contacts', TEX)
 chk('73D lattice comparison is computed from its explicit representatives',
     bool(_lattice73) and int(re.sub(r'\D', '', _lattice73.group(1)))
     == 6218175600 + 2*_heads73)
+
+# Bind each newly printed count identity to the supplied certificate populations.
+from mkcurrentvalues import read_rows as _current_rows
+_new_registry = _current_rows()
+_imp = os.path.join(KV, 'verifications', 'improved')
+def _certificate_json(package, name):
+    with io.open(os.path.join(_imp, package, 'source', name), encoding='utf-8') as stream:
+        return json.load(stream)
+_c25 = _certificate_json('dim25-collective-deformation', 'collective_record25_certificate.json')
+_removed25 = set()
+for _cls in _c25['classes']:
+    for _u in _cls['owners']:
+        _removed25.add(tuple(_u))
+        _removed25.add(tuple(a+b for a,b in zip(_u, _cls['shift'])))
+_removed25.update(map(tuple, _c25['local_owners']+_c25['new_owners']))
+_circles25 = sum(len(c['owners']) for c in _c25['classes'])
+chk('25D collective count matches the certificate and printed identity',
+    len(_removed25)==1991 and 3*_circles25==2913 and len(_c25['small'])==102
+    and 196560-len(_removed25)+3*_circles25+len(_c25['small'])==_new_registry[25][1]
+    and r'K(25)\ge\Kcur{25}=196560-1991+2913+102' in TEX)
+_p31 = os.path.join(_imp, 'dim31-dual-centres', 'source', 'certificate31_241742.npz')
+_counts31 = [_npz_rows(_p31,k) for k in ('removed_leech','midpoints','centres','pure_tails')]
+chk('31D dual-centre count matches the certificate and printed identity',
+    _counts31==[43264,86528,1792,126]
+    and 196560-_counts31[0]+sum(_counts31[1:])==_new_registry[31][1]
+    and r'K(31)\ge\Kcur{31}=196560-43264+86528+1792+126' in TEX)
+_c38 = _certificate_json('dim38-joint-latitudes','certificate.json')
+chk('38D joint-latitude count matches the certificate and printed identity',
+    len(_c38['axis_keep'])==1568 and len(_c38['additional_coordinate_axes'])==14
+    and len(_c38['doubled_head_lines'])==1352
+    and 589680+13710+1568+28+4*1352==_new_registry[38][1]
+    and r'K(38)\ge\Kcur{38}=589680+13710+1568+28+4\cdot1352' in TEX)
+_c39 = _certificate_json('dim39-deformed-orbits','orbit_certificate.json')
+chk('39D deformed-orbit count matches the certificate and printed identity',
+    len(_c39['representatives'])==1281 and len(_c39['group_words'])==256
+    and 438272+(2964-56)+64+1281*256==_new_registry[39][1]
+    and r'K(39)\ge\Kcur{39}=438272+(2964-56)+64+1281\cdot256' in TEX)
+_s40 = os.path.join(_imp,'dim40-affine-shells','source')
+_counts40 = [_npz_rows(os.path.join(_s40,f),k) for f,k in
+             [('core.npz','coefficients'),('auxiliary.npz','norm36'),('auxiliary.npz','norm30')]]
+chk('40D affine-shell count matches the certificate and printed identity',
+    _counts40==[1084590,40590,1134] and sum(_counts40)==_new_registry[40][1]
+    and r'K(40)\ge\Kcur{40}=1084590+40590+1134' in TEX)
 
 # The paper's LENGTH is stated in two READMEs, in two phrasings, and both were stale.
 # Only the PDF knows, so read it here and sweep both files from one place.

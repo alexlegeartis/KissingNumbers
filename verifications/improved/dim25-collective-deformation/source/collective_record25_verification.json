@@ -1,0 +1,13 @@
+{
+  "status": "EXACT VERIFICATION PASSED",
+  "points": 197584,
+  "bulk": 194569,
+  "circle_vertices": 2913,
+  "other_points": 102,
+  "exceptional_pairs_checked": 2729124,
+  "exact_exceptional_fallbacks": 1487,
+  "exact_bulk_fallbacks": 81,
+  "certificate_sha256": "ad3b3e67e948936f7a85f3d58108f30ab3bb41f4e93f0a29d573fdb8464c8a12",
+  "seconds": 4.07089900970459,
+  "scope": "Exact norm and product checks for the stated configuration. Standard Leech-shell kissing property assumed."
+}

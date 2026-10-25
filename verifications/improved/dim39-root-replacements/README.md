@@ -1,10 +1,12 @@
+> Retained construction: superseded locally on 26 October 2026 by [Deformed sign orbits](../dim39-deformed-orbits/), with **769 180** points.
+
 # Support changes and root replacements in dimension 39
 
 Checkpoint: **25 October 2026**.
 
-| Dimension | Previous benchmark | This construction | Gain |
-|---|---:|---:|---:|
-| 39 | 768,916 | **768,924** | 8 |
+| Dimension | Previous benchmark | This construction | Gain | Current repo bound |
+|---|---:|---:|---:|---:|
+| 39 | 768,916 | **768,924** | 8 | 769,180 |
 
 The previous method is Qihong Lin's [ERS layers with an enlarged support code](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07).
 

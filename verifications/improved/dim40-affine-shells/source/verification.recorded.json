@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "dimension": 40,
+  "points": 1126314,
+  "previous_local_construction": 1092072,
+  "improvement_over_previous": 34242,
+  "published_benchmark": 1092000,
+  "improvement_over_published": 34314,
+  "group_sizes": [
+    1084590,
+    40590,
+    1134
+  ],
+  "coefficient_squared_norms": [
+    54,
+    36,
+    30
+  ],
+  "core_pair_dot_bound": 27,
+  "pair_checks": [
+    {
+      "groups": [
+        1,
+        1
+      ],
+      "maximum_integer_dot": 18,
+      "absolute_accumulation_bound": 33120
+    },
+    {
+      "groups": [
+        2,
+        2
+      ],
+      "maximum_integer_dot": 12,
+      "absolute_accumulation_bound": 15480
+    },
+    {
+      "groups": [
+        1,
+        2
+      ],
+      "maximum_integer_dot": 15,
+      "absolute_accumulation_bound": 24840
+    },
+    {
+      "groups": [
+        0,
+        2
+      ],
+      "maximum_integer_dot": 18,
+      "absolute_accumulation_bound": 32400
+    },
+    {
+      "groups": [
+        0,
+        1
+      ],
+      "maximum_integer_dot": 21,
+      "absolute_accumulation_bound": 43200
+    }
+  ],
+  "minimum_enumeration": {
+    "nonzero_vectors_of_norm_at_most_4": 0,
+    "nodes": 19410905,
+    "leaves": 1,
+    "seconds": 3.8592
+  },
+  "pair_arithmetic": "exact bounded integers in IEEE binary32",
+  "seconds": 193.375,
+  "sha256": {
+    "gram.json": "3787fe3cc1d4485e34513b6d7b5da07b9667a5797de5021a296454018947e5d8",
+    "enclosure.npz": "06fe630f1de0959525f2c9bc1fdda4fd16c648d79757e243397ff0913bcfc044",
+    "core.npz": "954fde3d808238c2a268f9f91d7b85a75cfa1ecc35221f268defdeafa2b6bf68",
+    "auxiliary.npz": "e9330b63619c5e8999ab4f3960ea104b253ab01093557731ec721088626aad76",
+    "exact_minimum.cpp": "17aa8941bf860c72033d211c06107bc74edd374f09b3c3bd68e210cd093f1795",
+    "verify.py": "ddc8dab336402e22ba94d511e7ff1147fe988693e769db2ac88bc60dc895d9da"
+  }
+}

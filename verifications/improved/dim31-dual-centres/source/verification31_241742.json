@@ -1,0 +1,17 @@
+{
+  "status": "PASS EXACT",
+  "dimension": 31,
+  "points": 241742,
+  "removed": 43264,
+  "inserted_midpoints": 86528,
+  "inserted_centres": 1792,
+  "pure": 126,
+  "maximum_midpoint_product": 16,
+  "centre_scale_squared": [
+    8,
+    3
+  ],
+  "arithmetic": "Exact small-integer BLAS and signed integer squaring for quadratic radicals; no tolerance.",
+  "certificate_sha256": "7d25dd17b1677c17945bc67412ce7e2a2fd5836bf65177bbf4936b7e44db80d6",
+  "seconds": 52.80617928504944
+}

@@ -1,0 +1,133 @@
+A 1,126,314-POINT KISSING CONFIGURATION IN R^40
+26 October 2026
+
+1. Exact coordinate specification
+
+Let Q be the supplied integral symmetric 40 by 40 matrix. Exact rational
+LDL factorization verifies positive definiteness and determinant 6561.
+Thus <x,y>_Q=x Q y^T defines a 40-dimensional Euclidean space.
+
+Let A, B, C be the coefficient sets in core.npz, auxiliary.npz:norm36,
+and auxiliary.npz:norm30, respectively. Direct exact checks give
+
+    |A|=1,084,590,    a Q a^T=54 for a in A;
+    |B|=40,590,      b Q b^T=36 for b in B;
+    |C|=1,134,       c Q c^T=30 for c in C.
+
+Each set is checked for repetitions. The claimed unit-vector set is
+
+    S = (A/sqrt(54)) union (B/6) union (C/sqrt(30)).
+
+2. Core/core bound
+
+The diagonal of Q is even. Therefore every norm z Q z^T with z integral
+is an even integer. The exact exhaustive computation in Section 5 shows
+that no nonzero integer vector has Q-norm <=4. The lattice minimum is
+consequently at least 6.
+
+All rows of A have the same residue modulo 3, as checked individually.
+For distinct a,a' in A, the vector (a-a')/3 is nonzero and integral. Hence
+
+    (a-a') Q (a-a')^T >= 9*6 = 54,
+    108 - 2 a Q a'^T >= 54,
+    a Q a'^T <= 27.
+
+Normalized core/core inner products are therefore at most 27/54=1/2.
+
+3. All other pair bounds
+
+The verifier computes every pair product in the following table. Diagonal
+entries are excluded for equal-set pairs. The exact maxima are
+
+    pair       maximum integer product     normalized bound
+    A,B                  21                 21/sqrt(54*36)
+    A,C                  18                 18/sqrt(54*30)
+    B,B                  18                 18/36 = 1/2
+    B,C                  15                 15/sqrt(36*30)
+    C,C                  12                 12/30 = 2/5
+
+For each row, 4 times the squared maximum is at most the product of the
+two squared norms: respectively 1764<=1944, 1296<=1620, 1296=1296,
+900<=1080, and 576<=900. Every normalized inner product is thus <=1/2.
+
+Each cross-set bound is strictly less than 1, so normalization creates
+no overlap between A, B and C. Within a set, all original norms are equal,
+so normalization preserves distinctness. Therefore
+
+    |S| = 1,084,590 + 40,590 + 1,134 = 1,126,314.
+
+4. Kissing configuration
+
+Distinct unit vectors u,v in S satisfy
+
+    ||u-v||^2 = 2-2<u,v> >= 1.
+
+Place unit spheres at centers 2u, u in S, and another unit sphere at the
+origin. Every outer sphere touches the central sphere, and distinct outer
+spheres have disjoint interiors. This proves tau(40)>=1,126,314.
+
+5. Exhaustive proof of the lattice minimum
+
+The enclosure file supplies a positive integer P, a lower triangular
+integer matrix M with diagonal P, a positive diagonal vector D, and J.
+The verifier checks QJ=3I exactly, so Q^-1=J/3 and tr(Q^-1)=1418.
+
+Define H=M diag(D) M^T, E=P^3 Q-H, and
+
+    eta = max_i sum_j |E_ij|.
+
+All these quantities are computed with unbounded integers. Symmetry gives
+|x E x^T|<=eta ||x||_2^2. Positive definiteness gives
+||x||_2^2<=tr(Q^-1) x Q x^T. Hence every vector of Q-norm <=4 belongs to
+
+    x H x^T <= R = ceil(4[P^3+eta tr(Q^-1)]).
+
+The values are eta=22537879078204125 and R=19017300781610154651784.
+The program enumerates every integer vector in this ellipsoid, assigning
+coordinates from 39 down to 0. At stage k, the already fixed coordinates
+give offset=sum_{j>k} M[j,k]x[j]. With remaining budget r, the allowed
+integers x[k] satisfy
+
+    |P*x[k]+offset| <= floor(sqrt(floor(r/D[k]))).
+
+An integer binary square-root search and exact signed floor/ceiling
+division give both endpoints. Each allowed value is visited, its exact
+nonnegative contribution is subtracted, and the next coordinate is processed.
+Induction proves completeness. Every leaf receives a fresh exact Q-norm
+calculation.
+
+The replay visits 19,410,905 nodes and one leaf, the zero vector. Thus no
+nonzero lattice vector has norm <=4. The verifier recompiles and reruns
+this enumeration rather than trusting recorded counts.
+
+6. Arithmetic guarantees
+
+Positive definiteness and the enclosing quadratic form use exact rational
+and unbounded integer arithmetic. Enumeration uses signed 128-bit integers;
+input and runtime checks bound every multiplication and offset within the
+type. Its square root and all branch decisions are integer-only.
+
+Norm and preliminary matrix products use int64. Since all coordinates have
+absolute value <=128 and |Q_ij|<2^20, the absolute sum of bilinear terms is
+less than 40^2*128^2*2^20 < 2^45, so these products cannot overflow int64.
+
+For the exhaustive pair checks, first compute T=Q Y^T in int64. Before
+computing X T, the program checks
+
+    40 * max(|X_ij|) * max(|T_ij|) < 2^24.
+
+IEEE binary32 represents every integer of absolute value <=2^24 exactly.
+Every operand, multiplication result, and partial dot-product sum is an
+integer bounded by this absolute-accumulation bound. Consequently ordinary
+binary32 dot-product multiplication/addition, including fused operations
+or changes in summation order, is exact for these data. The fast matrix
+products evaluate integers without rounding error. The final inequalities
+are checked using Python integers, with no tolerance.
+
+The --integer-pairs option performs the same exhaustive pair calculations
+in int64. It is provided for replay without the binary32 acceleration.
+The mathematical construction and acceptance inequalities are identical.
+
+The proof uses explicit vectors and directly checked cardinalities. It
+does not require completeness of any norm shell, a parent lattice theorem,
+the original search heuristic, or the discovery-family metadata.

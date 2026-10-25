@@ -1,3 +1,5 @@
+> Retained construction: superseded locally on 26 October 2026 by [Collective deformation](../dim25-collective-deformation/), with **197 584** points.
+
 # Dimension 25: heads in the lens of a minimal vector
 
 **τ(25) ≥ 197 579**, against the published 197 056 (Cohn's table; Ma et al. 2025) and this

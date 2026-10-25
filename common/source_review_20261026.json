@@ -1,0 +1,54 @@
+{
+  "review_date": "2026-10-26",
+  "cohn": {
+    "url": "https://cohn.mit.edu/kissing-numbers/",
+    "retrieval": "unavailable: TLS handshake failure and HTTP 502",
+    "retained_snapshot": "cohn_20261025.json"
+  },
+  "primary_sources": [
+    {
+      "url": "https://github.com/k-nic/kissing_d25-31/blob/main/README.md",
+      "last_modified": "2026-10-05T12:11:55Z",
+      "bounds": {
+        "25": 197583,
+        "26": 199868,
+        "27": 201589,
+        "29": 209970,
+        "31": 238666
+      }
+    },
+    {
+      "url": "https://github.com/Felpix-Studios/kissing-number/blob/main/README.md",
+      "last_modified": "2026-10-18T01:41:36Z",
+      "bounds": {
+        "28": 205172,
+        "29": 210495,
+        "30": 222073,
+        "31": 241079
+      }
+    },
+    {
+      "url": "https://github.com/QH-Lin/kissing-numbers-33-39/blob/main/README.md",
+      "last_modified": "2026-10-22T06:09:45Z",
+      "bounds": {
+        "38": 605322,
+        "39": 768916
+      }
+    },
+    {
+      "url": "https://arxiv.org/html/2607.20359v4",
+      "location": "Table 2",
+      "bounds": {
+        "40": 1092000
+      }
+    }
+  ],
+  "new_results": {
+    "25": 197584,
+    "31": 241742,
+    "38": 610394,
+    "39": 769180,
+    "40": 1126314
+  },
+  "scope": "Fresh primary-source comparison for these dimensions; does not claim a fresh complete Cohn-table retrieval."
+}

@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "groups": [
+        0,
+        1
+      ],
+      "maximum": 21
+    },
+    {
+      "groups": [
+        0,
+        2
+      ],
+      "maximum": 18
+    },
+    {
+      "groups": [
+        1,
+        2
+      ],
+      "maximum": 15
+    }
+  ],
+  "seconds": 166.468
+}

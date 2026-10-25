@@ -1,0 +1,129 @@
+Verified 31-dimensional kissing configuration: 241,742 points
+Date: 2026-10-26
+============================================================
+
+The explicit configuration proves K(31) >= 241,742, an improvement of
+663 over the 241,079-point published comparison checked on this date:
+https://github.com/Felpix-Studios/kissing-number
+https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31
+
+This is a lower bound, not the exact kissing number or an optimality claim.
+The certificate, complete coordinates, and verifier are local artifacts;
+nothing has been published externally.
+
+The count
+---------
+Retain the standard Leech shell except for 43,264 explicitly listed points.
+Insert 86,528 midpoint points and 1,792 fibre-centre points, and append
+126 pure E7 tail points. Thus
+
+  196560 - 43264 + 86528 + 1792 + 126 = 241742.
+
+Equivalently, there are 338 uniform midpoint blocks, each gaining 128,
+and 28 dual-centre blocks, each adding 64 without deleting Leech points.
+
+Geometric normalization and midpoint blocks
+-------------------------------------------
+Every vector has squared norm 32; every distinct pair has inner product at
+most 16. Divide all coordinates by sqrt(32) for a unit-sphere code.
+
+Choose an octad normal space of dimension 8 and its orthogonal 16-dimensional
+residual space. There are 4320 residual fibres of 16 Leech points. Their
+owners are r +/- p_i, where ||r||^2=||p_i||^2=16 and the eight p_i are
+orthogonal. The residuals form 135 groups of 32. Within a group they form
+an orthogonal cross-polytope; between groups their maximum products are 4 or 8.
+
+For two normal axes p,q and orthogonal tail roots a,b of squared norm 8,
+delete r +/- p and r +/- q and insert
+
+  (r +/- (p+q)/2, +/- a),
+  (r +/- (p-q)/2, +/- b).
+
+The signs in each line are independent. This gains four per fibre, or 128
+for all 32 fibres in a uniform block. Each inserted head is the midpoint of
+two deleted Leech points, so it clears every retained Leech point by convexity.
+All interactions between inserted midpoint points are checked explicitly.
+
+The new ingredient: E7-dual centre directions
+---------------------------------------------
+Write E7 roots e with squared norm 8 and E7-dual line representatives d with
+squared norm 6, in the same Euclidean space. They satisfy
+
+  <d,e> in {-4,0,4},
+  |<d,d'>| = 2 for distinct dual lines.
+
+For a group g, choose a dual line d orthogonal to every midpoint tail used
+in that group. At every residual r in the group add
+
+  (r, +/- sqrt(8/3) d).
+
+There are 64 such points per group. Their squared head and tail norms are
+both 16. Use at most one dual line per group and at most one group per dual
+line; the selection is a bipartite matching.
+
+These centres clear the entire Leech shell. An explicit witness gives
+r=(u+v)/2 for orthogonal Leech vectors u,v. The witnesses themselves have
+product 16 with r; all other Leech points clear by convexity. The witnesses
+need not be deleted.
+
+For a midpoint in the same group the tail product is zero and the residual
+product is at most 16. For a midpoint in another group the product is at most
+
+  8 + sqrt(8/3)*4 = 8 + 8*sqrt(6)/3 < 16.
+
+For centres with different matched groups and lines it is at most
+8 + (8/3)*2 = 40/3 < 16. Within one centre block it is at most 16.
+
+All 126 pure E7 points (0,2e) remain. They clear midpoint points by the
+tail-norm Cauchy bound sqrt(32*8)=16. Their maximum product with a centre is
+2*sqrt(8/3)*4 = 16*sqrt(6)/3 < 16.
+
+Independent verification
+------------------------
+The standalone verifier uses Python and NumPy, without search code or
+geometry caches. It regenerates the Leech shell from the binary Golay code
+and checks shell membership, deleted-point uniqueness, endpoint witnesses,
+inserted-point uniqueness, and all norms. It directly checks every pair of
+inserted midpoint points, every midpoint-centre pair, every centre-centre
+pair, and every interaction with the explicit pure tail set. Bulk clearance
+uses the standard Leech-shell bound and the exact convexity arguments above.
+
+All dot products computed by BLAS are small integers with bounded absolute
+partial sums, so float64 arithmetic is exact. No tolerance is used. Radical
+comparisons A+sqrt(8/3)*B <= 16 use signed integer squaring. The receipt says
+PASS EXACT.
+
+From the extracted bundle run:
+
+  python verify31.py certificate31_241742.npz --output verification31_241742.json
+  python materialize31.py certificate31_241742.npz points31_241742.npz
+
+The full coordinate file is already included. It contains integer arrays
+a,b,c,d and denominator=3. The real vectors are exactly
+
+  (a + b*sqrt(2) + c*sqrt(3) + d*sqrt(6))/3.
+
+The compact certificate encodes midpoint rows with physical last coordinate
+sqrt(2)*x[30]. Centre rows use the same seven-dimensional tail metric followed
+by multiplication by sqrt(8/3); their first 24 coordinates are unchanged.
+Pure tail rows use the midpoint tail metric. The endpoint arrays supply the
+convexity witnesses. The selection JSON records the search choices but is
+not used by the verifier.
+
+Certificate SHA-256:
+7d25dd17b1677c17945bc67412ce7e2a2fd5836bf65177bbf4936b7e44db80d6
+
+Research outcome
+----------------
+The successful change was choosing the correct centre directions and
+optimizing their assignments together with midpoint replacements. Fixed
+root-centre directions had many cross-group conflicts; E7-dual directions
+clear all other groups automatically.
+
+The proposed edge-trisection pool was also completed as a finite test.
+An exact matching maps all 2290 candidate insertions to distinct conflicting
+old caps, proving net gain at most zero for every subset of that pool, even
+with shared deletions. That scoped negative result is recorded separately
+in shared_triangle_matching.json; it is not a claim about all trisection
+heads or all tail choices. No unsuccessful model is used to justify this
+new lower bound: the explicit certificate is the evidence.

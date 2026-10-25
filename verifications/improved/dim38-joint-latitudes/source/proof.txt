@@ -1,0 +1,168 @@
+A KISSING CONFIGURATION OF 610394 POINTS IN DIMENSION 38
+25 October 2026
+
+THE RESULT
+
+The accompanying explicit data establish tau_38 >= 610394. This is
+5072 more than Qihong Lin's public 605322-point benchmark (22 October
+2026), and 5048 more than our preceding 605346-point certificate.
+
+The new idea is to assign Leech body lines jointly with head directions.
+When two heads have a large inner product, orthogonal bodies can compensate.
+This permits far more new points than a construction that independently
+bounds all body products by 16 and all doubled-head products by 12.
+
+The final data use 1352 different head lines and 215 distinct Leech body
+lines of the form 4e_a +/- 4e_b. Body lines can be reused. The proof below
+does not assume their special form: the verifier checks the joint products.
+
+THE EXISTING CAP AND EQUATOR DATA
+
+Use the integer model of the Leech lattice with minimum squared norm 32.
+Its 196560 minimal vectors give 98280 antipodal lines. Choose each line's
+representative u with first nonzero coordinate positive, and order these
+representatives lexicographically.
+
+The supplied class_labels partition these lines into 644 classes. Within
+each class, distinct representatives obey |u.u'| <= 8. The supplied set W
+contains 1932 distinct vectors in R^14 of squared norm 8 and pairwise inner
+product at most 4. It is partitioned into 644 triples of sum zero, so the
+three vectors in each triple have pairwise inner product -4.
+
+For each body line u in class c and each w in the corresponding triple,
+include
+
+                   (+/-u, sqrt(2) w) / sqrt(48).
+
+There are 6*98280=589680 such caps. Distinct body lines have absolute
+inner product at most 16. In the same class the stronger bound 8 applies.
+These bounds and the head bounds prove cap-cap inner products <=1/2:
+different classes give at most 16+2*4=24 before division by 48;
+the same class gives at most 8+2*8=24. The same body and different heads
+give 32+2*(-4)=24. Opposite body signs are also compatible.
+
+Lin's 6855 equatorial line representatives q have squared norm 48,
+belong to the same Leech lattice, and obey |q.q'|<=24. Include both signs
+of (q,0)/sqrt(48), for 13710 equatorial points. For a minimal vector u,
+q +/- u are nonzero lattice vectors, hence have squared norm at least 32.
+Consequently |q.u|<=24, proving equator-cap compatibility.
+
+THE NEW LATITUDE FAMILIES
+
+The certificate supplies 1352 pairs (u_i,z_i), where u_i is a canonical
+Leech minimal vector, indexed in the lexicographic ordering above, and
+z_i is an integer vector in R^14. The following finite conditions are
+verified exactly:
+
+  |u_i|^2 = 32,  |z_i|^2 = 24;
+  |u_i.u_j| + 4|z_i.z_j| <= 64 for every i != j;
+  |z_i.w| <= 8 for every w in W;
+  |z_i.w| <= 2 for the three w in u_i's assigned cap class.
+
+For each pair include four points, with independent signs:
+
+                    (+/-u_i, +/-2z_i)/sqrt(128).
+
+Their norms are one, since 32+4*24=128. Distinct families have product
+at most 64/128=1/2 by the joint condition. Within each family the three
+possible products between distinct points are 64/128, -64/128, and -1.
+
+For an old cap with a different body line, the unnormalized numerator
+is at most 16+16sqrt(2). For the same body line, the stronger class
+condition gives at most 32+4sqrt(2). The common denominator is
+sqrt(128*48)=32sqrt(6), and
+
+             16+16sqrt(2) <= 16sqrt(6),
+              32+4sqrt(2) <= 16sqrt(6).
+
+The verifier proves these inequalities by squaring nonnegative integer
+expressions. This covers every old cap, including both body signs.
+
+The new body's squared norm fraction is 1/4. Its product with any unit
+equatorial vector is therefore at most 1/2 by Cauchy-Schwarz. This
+establishes compatibility with all 13710 retained equatorial points.
+
+WHY JOINT ASSIGNMENT HELPS
+
+Here z_i=2y_i, where y_i has six coordinates equal to +/-1 and the rest
+zero. If |y_i.y_j|=4, the joint condition asks for u_i.u_j=0. If that
+head product is 3, any distinct Leech body lines suffice, since their
+absolute product is at most 16. If the head product is at most 2,
+even reusing the same body line is permitted. These exact rules allow
+1352 head/body pairs to coexist, instead of restricting the heads alone
+to |y_i.y_j|<=3.
+
+THE AXIS CONFIGURATION
+
+Set Q=diag(-1,-1,-1,1,...,1) in dimension 14. This is exactly orthogonal.
+Retain the 1568 vectors w in W whose eight nonzero entries are +/-1,
+and include (0,Qw)/sqrt(8). The other 364 axis points are omitted.
+
+The verifier checks, by integer multiplication,
+
+       |w'.Qw| <= 6 for every w' in W and every retained w,
+       |z_i.Qw| <= 8 for every i and every retained w.
+
+The first inequality implies axis-cap compatibility: their product is
+w'.Qw/sqrt(192), and 6^2<=48=192/4. The second implies new-axis
+compatibility: their product is +/-z_i.Qw/16, at most 1/2.
+Axis-axis compatibility follows from orthogonality of Q and the
+verified pair bounds for W. Axis-equator products are zero.
+
+Add another 28 axis points, namely (0,+/-e_j) for j=1,...,14. These are
+mutually compatible and orthogonal to the equator. Against caps their
+products have magnitude |w_j|/sqrt(24), at most 1/2 since w_j^2<=6.
+Against retained flat axes the products are |(Qw)_j|/sqrt(8), at most
+1/2 since (Qw)_j^2<=2. Against new latitude points they are
+|z_ij|/sqrt(32), at most 1/2 since z_ij^2<=8. All three coordinate-square
+bounds are checked directly. There are 1596 axis points in total.
+
+COUNT AND DISTINCTNESS
+
+The four families have different body squared norm fractions:
+caps 2/3, equator 1, axis 0, and new points 1/4. Hence they are disjoint.
+Distinctness within the original families is verified. Within the new
+families it follows from the norms and the checked joint products:
+coinciding points from different families would have product 1.
+
+             589680 + 13710 + 1596 + 4*1352 = 610394.
+
+Equivalently, the change from 605322 is to replace 364 axis points
+with 5408 points at the new latitude and 28 coordinate-axis points,
+for a net gain of 5072.
+
+THE LEECH MINIMUM USED IN THE PROOF
+
+The verifier reconstructs the binary Golay code C from the supplied
+basis. Its weight enumerator is 1+759t^8+2576t^12+759t^16+t^24.
+The integer lattice consists of vectors x with common coordinate parity
+e, with ((x-e)/2) mod 2 in C and sum(x) congruent to 4e modulo 8.
+These conditions are closed under addition, since C is linear and
+contains the all-one word.
+
+If e=0 and the Golay residue is nonzero, at least eight coordinates have
+magnitude at least 2, giving squared norm >=32. If that residue is zero,
+coordinates are multiples of 4; the sum condition forbids a single
+coordinate +/-4, again giving minimum >=32. If e=1, all coordinates
+are odd. Norm below 32 would force all magnitudes to be one, but then
+the Golay weight is divisible by four and sum(x) is 0 modulo 8,
+contradicting sum(x)=4 modulo 8. Hence every nonzero vector has norm >=32.
+
+REPRODUCTION AND SCOPE
+
+Run python verify.py. Python and NumPy are required. The program
+reconstructs the Golay code and Leech minimal lines; checks all source
+hashes, cap classes, head triples, equator pairs, and axis products;
+then checks every pair of new families and all cross-family conditions.
+Every mathematical check uses integers, with no floating-point tolerance.
+Norm bounds keep all NumPy integer calculations well inside int64 range.
+The elapsed time is the only floating-point value in verification.json.
+
+This is an explicit lower-bound certificate. It makes no claim about
+optimality, external review, publication, or record-table acceptance.
+
+The original cap construction is due to Alexey Kravatskiy. The norm-48
+equatorial extension idea is due to Yang et al.; the 6855-line equator
+used here is due to Qihong Lin. Source attribution and licenses are in
+source/THIRD_PARTY.txt. The new contribution is the joint head/body
+latitude construction together with the compatible axis replacement.

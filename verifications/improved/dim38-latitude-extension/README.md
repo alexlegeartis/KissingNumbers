@@ -1,10 +1,12 @@
+> Retained construction: superseded locally on 26 October 2026 by [Joint latitude families](../dim38-joint-latitudes/), with **610 394** points.
+
 # Rational latitude extension in dimension 38
 
 Checkpoint: **25 October 2026**.
 
-| Dimension | Previous benchmark | This construction | Gain |
-|---|---:|---:|---:|
-| 38 | 605,322 | **605,346** | 24 |
+| Dimension | Previous benchmark | This construction | Gain | Current repo bound |
+|---|---:|---:|---:|---:|
+| 38 | 605,322 | **605,346** | 24 | 610,394 |
 
 The previous method is Qihong Lin's [Leech caps with an equatorial extension](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07).
 

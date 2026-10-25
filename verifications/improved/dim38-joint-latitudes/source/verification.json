@@ -1,0 +1,23 @@
+{
+  "all_checks_passed": true,
+  "dimension": 38,
+  "lower_bound": 610394,
+  "public_benchmark": 605322,
+  "gain_over_public": 5072,
+  "caps": 589680,
+  "equator_points": 13710,
+  "axis_points": 1596,
+  "retained_flat_axis_points": 1568,
+  "additional_coordinate_axis_points": 28,
+  "new_points": 5408,
+  "new_families": 1352,
+  "distinct_new_body_lines": 215,
+  "max_within_class_inner_product": 8,
+  "max_equator_absolute_inner_product": 24,
+  "max_axis_cap_head_product": 6,
+  "max_new_family_product": 64,
+  "max_doubled_head_axis_product": 8,
+  "arithmetic": "Integer arithmetic only; no numerical tolerances",
+  "certificate_sha256": "aa0f2e39018639a7ef20e0a6c3f2d8f4fa4bf1f9ec6f32e5f433a78332ecf8f4",
+  "elapsed_seconds": 2.60999999998603
+}

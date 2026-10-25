@@ -1,0 +1,171 @@
+A KISSING CONFIGURATION OF 769180 POINTS IN DIMENSION 39
+26 October 2026
+
+RESULT AND STATUS
+
+The explicit data and exact verifier in this directory establish
+
+                            tau_39 >= 769180.
+
+The count is 264 above Qihong Lin's public bound 768916, and
+248 above our preceding local bound 768932. This is a computationally
+certified construction; external review or acceptance is not asserted.
+All geometric comparisons in the verifier are integer inequalities.
+Floating-point optimization was used only to discover the coordinates.
+
+CONSTRUCTION
+
+Take the following sparse vectors, each divided by sqrt(32):
+
+1. On each of 3424 eight-coordinate supports, take all 128 vectors with
+   coordinates +/-2 and an even number of negative signs: 438272 points.
+   The supplied source/supports_3424.txt lists the initial supports.
+   Apply the four replacements in base_certificate.json.
+2. Take +/-4 e_i +/-4 e_j on every coordinate pair except the fourteen
+   center-leaf pairs excluded in base_certificate.json: 2908 points.
+3. For each of the four heavy stars (a,B) in base_certificate.json, take
+   +/-4 e_a + 2 sum_(b in B) s_b e_b with even negative leaf parity:
+   64 points, with the center sign independent.
+
+There are 441244 sparse points altogether. The retained sparse layer is
+the one from our previous 768924-point construction. Its separate proof
+is in base_proof.txt, and verify_base.py checks it from the source data.
+The old binary dense layer is completely replaced in the present result.
+
+Let G be the explicitly listed group_words in orbit_certificate.json.
+Addition in G is bitwise XOR; bit j specifies coordinate j, starting at 0.
+The verifier proves that G is a binary linear group of order 256.
+For each of the 1281 integer rows V in representatives and every g in G,
+include the exact unit vector
+
+                  x(V,g)_j = (-1)^g_j V_j / sqrt(sum_k V_k^2).
+
+Thus the new dense layer has 1281 * 256 = 327936 points, once distinctness
+is established below. These normalized integer vectors are the exact
+construction, not decimal approximations to unit vectors.
+
+SPARSE-SPARSE PAIRS
+
+Every sparse vector has squared norm 32. The verifier checks that distinct
+eight-supports intersect in at most four places, by ruling out repeated
+five-subsets. This gives products at most 16 between different supports.
+Even sign parity gives the same bound within one support. Root-root and
+root-middle products are at most 16 directly from their shapes.
+The 64 heavy vectors are generated explicitly and checked against each
+other, every retained root pair and every middle support. For a middle
+support, the maximum over its 128 even sign patterns is evaluated exactly.
+All these products are at most 16. Dividing by 32 proves the angle bound.
+Their different support and magnitude patterns also prove distinctness.
+
+DENSE-SPARSE PAIRS
+
+For every supplied row V the verifier proves the integer norm bounds
+
+                   99996^2 <= sum_j V_j^2 <= 100004^2.
+
+Write L=99996. For each actual middle support S, it verifies
+
+                       (sum_(j in S) |V_j|)^2 <= 2 L^2.
+
+The absolute unnormalized product with any signed middle vector is at
+most 2 sum_(j in S)|V_j|. After division by sqrt(32)||V||, it is at most
+1/2. Coordinate sign changes from G do not affect this bound.
+
+For the sum R of the two largest coordinate magnitudes, it checks
+2 R^2 <= L^2. This similarly proves compatibility with all signed roots,
+using unnormalized product bound 4R and root norm sqrt(32).
+
+For each actual heavy star (a,B), it checks
+
+                 (2|V_a| + sum_(j in B)|V_j|)^2 <= 2 L^2.
+
+The unnormalized product bound is twice the expression in parentheses,
+so every heavy vector is also compatible with every dense vector.
+For certificates using the stronger top-eight-coordinate bound, that
+bound implies every actual-support inequality above.
+
+DENSE-DENSE PAIRS: COMPLETE GROUP ENUMERATION
+
+For two representatives V,W and group elements g,h, the unnormalized
+product of their signed versions equals
+
+                       sum_j (-1)^(g_j+h_j) V_j W_j.
+
+Since g+h ranges over G, it suffices to test every relative element
+t in G for each pair of representatives V,W. When V=W only t=0 is
+excluded, as that denotes the same indexed point. All other cases are
+checked, including possible duplicate or stabilized orbit points.
+
+The verifier obtains a binary basis b_0,...,b_(m-1) of G and enumerates
+the entire span. This is checked against the supplied group, so no
+closure or group-size claim is assumed. At coordinate j define the
+character c_j whose k-th bit is (b_k)_j. Form the integer array
+
+                       F[c] = sum_(j: c_j=c) V_j W_j.
+
+Its Walsh transform at index u is
+
+                 sum_c (-1)^<u,c> F[c]
+                    = sum_j (-1)^<u,c_j> V_j W_j,
+
+which is exactly the desired product for t=sum_k u_k b_k. The transform
+is computed by the elementary butterfly (a,b) -> (a+b,a-b), stage by
+stage. This formula follows by splitting the sum according to each bit
+of c. Selected pairs are also checked by direct dot products against all
+group elements, independently of the transform implementation.
+
+The program evaluates all 210205695
+required relative products. The largest is
+
+                            4997124511.
+
+It satisfies the exact inequality
+
+                     2 * 4997124511 <= 99996^2.
+
+Every normalized product is consequently at most 1/2: positive raw
+products are divided by ||V|| ||W|| >= L^2, while nonpositive products
+already satisfy the requirement. There is no distance cutoff or
+perturbation estimate in this complete verification.
+
+Each coefficient has absolute value at most 100000. Norm sums and every
+partial Walsh sum have magnitude at most 39*100000^2. Sparse sums before
+squaring are at most 8*100000. The explicit safety inequalities checked
+by the program place all these operations within signed 64-bit range.
+Thus NumPy integer arithmetic is exact for every mathematical check.
+
+DISTINCTNESS, COUNT, AND KISSING SPHERES
+
+Any repeated indexed dense point would have product 1 with itself under
+two distinct indices, contradicting the checked upper bound 1/2.
+The dense-sparse inequalities likewise exclude equality of those points.
+Therefore all counted points are distinct, and the total is
+
+                       441244 + 1281*256 = 769180.
+
+For unit vectors x,y with x.y <= 1/2, ||x-y|| >= 1. Placing unit spheres
+at centers 2x makes their interiors disjoint and makes every one tangent
+to the unit sphere centered at the origin. This proves the kissing bound.
+
+REPRODUCTION AND PROVENANCE
+
+Run python verify.py from this directory, or pass its full path.
+Python and NumPy are required. No optimizer, GPU, saved distance table,
+network access or floating-point tolerance is used by the verifier.
+Run without Python's -O option, because the inherited sparse verifier
+uses assertions. The top-level verifier explicitly rejects -O.
+
+orbit_certificate.json SHA-256:
+5785ddfc86c4875e1665eb19bdb93303755f1cc5a302cb8155e0ec3164539637
+
+The check reconstructs the sparse layer and checks source hashes before
+enumerating the dense orbit products. JSON reports and elapsed time are
+outputs, not evidence assumed by verification.
+
+The support family and binary-code data are credited to Qihong Lin and
+Yang et al. in source/THIRD_PARTY.txt. Lin's public benchmark was checked
+on 26 October 2026 at:
+https://github.com/QH-Lin/kissing-numbers-33-39/blob/main/README.md
+The new contribution here is the simultaneous replacement of the dense
+layer by nonbinary group orbits, adding 256 points to our 768924-point
+base, together with its complete exact orbit certificate.

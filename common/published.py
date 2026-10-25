@@ -129,6 +129,7 @@ COHN = {
 # The current page has dimensions 1-48 only (unlike the older snapshot).
 OCTOBER_2026 = {
     26: 199868, 27: 201589, 28: 205172, 36: 484760, 37: 500008,
+    40: 1092000,  # Dorofeev-Sun-Wang, arXiv:2607.20359v4, Table 2
     41: 1324472, 42: 1792386, 43: 2553792,
     44: 4153600, 45: 7380090, 46: 12309600,
 }
