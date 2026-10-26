@@ -1,0 +1,22 @@
+[
+  {
+    "dimension": 35,
+    "points": 415314,
+    "dense_points": 131072,
+    "middle_points": 281856,
+    "root_points": 2374,
+    "head_points": 12,
+    "head_squared_norms": [
+      51
+    ],
+    "dense_min_distance": 8,
+    "maximum_absolute_dots": {
+      "dense": 20,
+      "middle": 20,
+      "roots": 16,
+      "heads": 17
+    },
+    "seconds": 2.547,
+    "verified": true
+  }
+]

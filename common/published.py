@@ -127,8 +127,13 @@ COHN = {
 # 2026-10-24 confirmed every entry below. All 48 current rows and the comparison
 # with the 18 covered repository claims are saved in cohn_20261024.json.
 # The current page has dimensions 1-48 only (unlike the older snapshot).
+# The 32-35D entries were added on 2026-10-26 from Lin's explicit support
+# witnesses in Brouwer's table, checked again that day. Cohn was unavailable;
+# see source_review_20261026.json for the source and retrieval scope.
 OCTOBER_2026 = {
-    26: 199868, 27: 201589, 28: 205172, 36: 484760, 37: 500008,
+    26: 199868, 27: 201589, 28: 205172,
+    32: 352320, 33: 370240, 34: 390980, 35: 415308,  # Lin support witnesses, Brouwer table, 2026-10-26
+    36: 484760, 37: 500008,
     40: 1092000,  # Dorofeev-Sun-Wang, arXiv:2607.20359v4, Table 2
     41: 1324472, 42: 1792386, 43: 2553792,
     44: 4153600, 45: 7380090, 46: 12309600,

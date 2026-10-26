@@ -1,0 +1,15 @@
+[
+  {
+    "dimension": 35,
+    "points": 415314,
+    "verified": true,
+    "explicit_head_base_dot_products": 4983624,
+    "maximum_dots": {
+      "dense": 20,
+      "middle": 20,
+      "roots": 16,
+      "heads": 17
+    },
+    "seconds": 3.391
+  }
+]

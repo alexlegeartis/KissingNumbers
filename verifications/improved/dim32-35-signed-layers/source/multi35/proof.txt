@@ -1,0 +1,99 @@
+# A parity-coordinated twelve-head construction in dimension 35
+
+All coordinate indices below start at zero. Coordinates 0, 1, and 2 are the
+extra coordinates; the binary dense code occupies coordinates 3 through 34.
+
+## Starting layers
+
+Use the 2,202 weight-eight supports of Qihong Lin's October 2026 code from
+[Brouwer's code table](https://aeb.win.tue.nl/codes/Andw.html), supplied in
+[`a35.8.8.2202H`](https://aeb.win.tue.nl/codes/cwc/d8/a35.8.8.2202H).
+Every two distinct supports intersect in at most four coordinates.
+
+For each support S, take all 128 vectors with entries ±2 on S and zero
+elsewhere, prescribing the parity p(S) of the number of negative entries.
+This parity may be chosen separately for each support. Every such vector has
+squared norm 32. Same-support vectors differ in at least two signs and have
+dot product at most 16. Different-support vectors have dot product at most
+16 from their support intersection bound.
+
+Take the 131,072 sign vectors from the supplied binary [32,17,8] linear code
+C, shifted by r = 1,605,954 and embedded in coordinates 3 through 34. Exact
+enumeration verifies that C has minimum nonzero weight eight and C+r has
+weights from six through 26. These dense vectors have squared norm 32 and
+mutual dot products at most 16. Their dot products with the middle layer are
+at most 16, independently of the chosen middle parities.
+
+The root layer initially consists of all 4(±e_i ± e_j), i < j, with squared
+norm 32. Root/root and root/middle dot products are at most 16; root/dense
+dot products are at most eight.
+
+## Coordinating the parities
+
+Associate the following binary codewords with pairs of extra coordinates:
+
+| Pair | Body codeword, as a 32-bit mask | Weight |
+|---|---:|---:|
+| (0,1) | 0 | 0 |
+| (0,2) | 2,939,611,009 | 18 |
+| (1,2) | 2,529,791,442 | 16 |
+
+All three words belong to C. Write c_ab for the word belonging to pair (a,b).
+If S contains a pair (a,b) of extra coordinates, set
+
+`p(S) = popcount((S >> 3) & c_ab) mod 2`.
+
+If S contains fewer than two extra coordinates, set p(S)=0. There are 13
+supports containing all three extra coordinates. On each of their core
+five-subsets, the inner product with both nonzero body codewords is zero.
+Thus all applicable pair definitions agree. Exactly 59 support parities are
+odd; the other 2,143 are even.
+
+The constructor finds these codewords by solving the 13 binary orthogonality
+equations inside C. The solution space has dimension four.
+
+## The twelve heads and six deleted roots
+
+For each pair (a,b), and each δ in {−1,+1}, form q_ab,δ as follows:
+
+- In dense coordinate j+3, use (−1) raised to bit j of c_ab.
+- At a and b, use 3δ and −3δ, respectively.
+- At the remaining extra coordinate, use +1.
+
+Include both signs of each of these six vectors: twelve heads in total.
+Each has squared norm 32+9+9+1=51. Delete the six roots
+±4(e_a−e_b), one antipodal pair for each of the three extra-coordinate pairs.
+
+Every head has absolute dot product at most 20 with every dense vector:
+adding c_ab to C+r leaves that coset unchanged, and its weights range from
+six to 26.
+
+For a middle support containing both heavy coordinates, the prescribed
+parity differs from the parity of the head's negative coordinates on that
+support. Consequently at least one sign must disagree when maximizing the
+dot product. The unsigned sum of head magnitudes on the support is 12;
+the parity condition lowers it to at most 10. Multiplying by the middle
+coordinate magnitude two gives 20. Supports containing one or zero heavy
+coordinates give bounds 20 and 16 directly.
+
+Every retained root has absolute dot product at most 16 with every head.
+The only roots with larger products are precisely the six deleted roots.
+For two distinct non-antipodal heads, direct integer calculation gives
+absolute dot product at most 17.
+
+After normalization, all these products are at most one half:
+
+```text
+4 * 20^2 = 1600 <= 32 * 51 = 1632
+4 * 16^2 = 1024 <= 32 * 51
+4 * 17^2 = 1156 <= 51 * 51 = 2601
+```
+
+The number of points is therefore
+
+```text
+131072 + 2202*128 + (2*35*34 - 6) + 12 = 415314.
+```
+
+The certificate and both verifiers establish this lower bound using exact
+integer comparisons. They do not establish optimality of the construction.

@@ -2,12 +2,20 @@
 
 The kissing number τ(n) is the largest number of unit spheres that can touch a central unit
 sphere in ℝⁿ; equivalently, the largest set of unit vectors with pairwise inner products at
-most 1/2. This repository registers constructions in **66 dimensions**, each with a package
+most 1/2. This repository registers constructions in **70 dimensions**, each with a package
 that states its verification scope, together with the negative results that guide further
 searches. Some of our earlier records have since been superseded. Their constructions,
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
+> **26 October 2026 — four more SOTAs in dimensions 32–35.**
+> Signed octad replacements give **352 800** in 32D and **370 368** in 33D.
+> Dense-code coset heads give **390 982** in 34D; parity-coordinated twelve-head
+> replacement gives **415 314** in 35D. These exceed the reviewed public Lin
+> constructions by **480**, **128**, **2** and **6** points, respectively.
+> Both independent exact verifiers passed. The repository now covers **70 dimensions**.
+> The paper remains at its preceding 66-result checkpoint; its update is deferred.
+>
 > **26 October 2026 — new verified bounds in 25D, 31D, 38D, 39D and 40D.**
 > Collective deformation gives **197 584** in 25D, one above Takhanov–Yun.
 > Midpoints and dual E7 centres give **241 742** in 31D, exceeding Li by 663.
@@ -48,7 +56,7 @@ values and verification packages remain here as part of the research record.
 > existence proofs checked by `verify_norm10.py`.
 
 ```bash
-python audit.py --repository-only  # all 66 claims; check this repository without its surrounding workspace
+python audit.py --repository-only  # all 70 claims; check this repository without its surrounding workspace
 ```
 
 `update.py` is the maintainer's entry point rather than the reviewer's: it runs every package
@@ -109,7 +117,7 @@ last retrieved **25 October 2026**, with all 48 rows captured in
 failed, so this update retains that snapshot. Fresh checks of the relevant
 authors' repositories and the dimension-40 paper are recorded in
 [the 26 October source review](common/source_review_20261026.json).
-All 66 constructions exceed their recorded comparisons and remain best in
+All 70 constructions exceed their recorded comparisons and remain best in
 the reviewed sources. Higher-dimensional status uses the separate sources below.
 
 
@@ -123,6 +131,10 @@ the reviewed sources. Higher-dimensional status uses the separate sources below.
 | 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **216 568** | **SOTA** | +3.38% | — | 2026-09-16 to 2026-10-05; since 2026-10-25 | [Midpoint replacements](verifications/improved/dim29-30-midpoint-replacements/) | — |
 | 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **224 280** | **SOTA** | +1.74% | — | 2026-09-16 to 2026-10-10; since 2026-10-25 | [Midpoint replacements](verifications/improved/dim29-30-midpoint-replacements/) | — |
 | 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **241 742** | **SOTA** | +1.42% | — |2026-09-16 to 2026-10-05; since 2026-10-26 | [Midpoints + dual centres](verifications/improved/dim31-dual-centres/) | — |
+| 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32) | **352 800** | **SOTA** | +0.13624% | — | since 2026-10-26 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
+| 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 368** | **SOTA** | +0.0345722% | — | since 2026-10-26 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
+| 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 982** | **SOTA** | +0.000511535% | — | since 2026-10-26 | [Dense-coset heads](verifications/improved/dim32-35-signed-layers/) | — |
+| 35 | 415 308 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 314** | **SOTA** | +0.00144471% | — | since 2026-10-26 | [Parity-coordinated heads](verifications/improved/dim32-35-signed-layers/) | — |
 | 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **501 633** | **SOTA** | +3.5% | — | since 2026-10-24 | [Coxeter–Todd cosets](verifications/improved/dim36-37-coxeter-todd/) | — |
 | 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **505 359** | **SOTA** | +1.1% | — | since 2026-10-24 | [Phase code + latitudes](verifications/improved/dim36-37-coxeter-todd/) | — |
 | 38 | 566 652 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **610 394** | **SOTA** | +7.72% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Joint latitude families](verifications/improved/dim38-joint-latitudes/) | — |
@@ -203,7 +215,7 @@ for 26D, 29D and 31D; and
 for 28D and 30D. The later-result table below gives the latest retrieved values,
 which can be larger than the first result that superseded ours.
 
-The table above includes all 66 registered constructions. The October update adds
+The table above includes all 70 registered constructions. The October update adds
 36D, 37D, 64D, 65D, 66D and 67D, raises 28D, 43D and 45D, installs the stronger P48 class family,
 and registers code and coset improvements through 96D. [RESULTS.md](RESULTS.md) gives the generated registry
 and the detailed construction descriptions.
@@ -296,7 +308,7 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               all 66 claims, 28 packages; earlier constructions remain
+  improved/               all 70 claims, 29 packages; earlier constructions remain
                           available with their original proof data
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
@@ -315,7 +327,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 28 packages, 66 dimensions
+### `verifications/improved/` — 29 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -341,6 +353,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | `[dim31-frame-layer](verifications/improved/dim31-frame-layer/)`                             | 31     | the norm-8 frame layer at height √2 carried to k = 7: all 48 vectors of a Leech frame on the whole cross-polytope of ℝ⁷, 672 points, deleting no equator point.  It needs 42 pairwise disjoint type-B classes holding at least 10 252 of the 10 416 lines 42 full classes would give; the published attempt reached 10 183 and this one carries 10 328, found by screening candidates on the free slots their octads still have rather than by scanning uniformly — a sampled clique search needs pair density p ≥ 0.5097 to reach 42 at all, and flattening the octad coverage takes p from 0.4984 to 0.5467.  The axis is E7 rotated by 45°, 45°, 90° in the coordinate planes (0,3), (2,4), (5,6), keeping 118 of 126 against the 110 the published axis kept |
 | `[dim38-leech-large-codimension](verifications/improved/dim38-leech-large-codimension/)`     | 38     | the same construction at codimension 14, where the binding constraint flips and the whole Leech shell partitions into 644 classes                                                            |
 | `[dim39-ers-constant-weight](verifications/improved/dim39-ers-constant-weight/)`             | 39     | Edel–Rains–Sloane with the 2026 constant-weight codes, at n₀ = n rather than n₀ = 32                                                                                                         |
+| [`dim32-35-signed-layers`](verifications/improved/dim32-35-signed-layers/) | 32–35 | signed octad replacements, dense-code coset heads and parity-coordinated root replacements; two independent exact checkers |
 | [`dim36-37-coxeter-todd`](verifications/improved/dim36-37-coxeter-todd/) | 36, 37 | Coxeter–Todd phase orbits; exact short-shell and angle replay; two latitude layers |
 | [`dim41-46-p48-heads`](verifications/improved/dim41-46-p48-heads/) | 41–46 | rational heads, explicit partial 43D families and coordinated 45D movement; inherited complete-family populations |
 | `[dim49-63-p48-caps](verifications/improved/dim49-63-p48-caps/)`                             | 49–60  | the cap construction over P₄₈, with the 7 387-line class and 577 explicit disjoint images                                                                                             |
@@ -426,7 +439,7 @@ equation (3) of the preprint [arXiv:2312.05121](https://arxiv.org/abs/2312.05121
 [arXiv:2607.20359v3](https://arxiv.org/abs/2607.20359) (18 August 2026), and its ingredients
 were in Ozeki's 2016 Siegel theta tables a decade earlier, though not stated as a kissing
 number. Both were obtained here independently, and both are **recovered rather than
-claimed**: they are not in `RESULTS.md`, not counted among the 66, and not presented as
+claimed**: they are not in `RESULTS.md`, not counted among the 70, and not presented as
 results in the paper. They are kept, in
 `[verifications/recovered/](verifications/recovered/)`, because reproducing a published
 count from a method built without reference to it is the strongest validation available.
@@ -446,7 +459,7 @@ machinery — see
 only the old construction family. Dimension 12's record likewise landed elsewhere
 while this work was in progress.
 
-**Registered comparison scope.** Dimensions 18, 25–31, 36–46, 49–71, 73–96.
+**Registered comparison scope.** Dimensions 18, 25–46, 49–71, 73–96.
 These are the registered construction results compared with their recorded baselines;
 the October doubled-support construction raises 96D above the retained ERS value. The list includes the superseded
 results above. An earlier improvement remains a constructive result after a larger
@@ -553,11 +566,16 @@ exact replay scope and inherited inputs.
 
 ## Reproducing everything
 
+For this repository update, use `python run_all.py --skip-paper` or
+`python update.py --skip-paper --repository-only`. The manuscript checks
+remain tied to its earlier registry scope until the deferred paper update.
+`python run_all.py --sota` verifies the current repository constructions.
+
 ```bash
-python run_all.py          # 86 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 87 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 105 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 106 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay
@@ -579,7 +597,7 @@ Or individually, each from its own directory:
 
 | script                                                                        | what it establishes                                            | time   |
 | ----------------------------------------------------------------------------- | -------------------------------------------------------------- | ------ |
-| `audit.py`                                                                    | all 66 claims, mutual and external consistency                 | 30 s   |
+| `audit.py`                                                                    | all 70 claims, mutual and external consistency                 | 30 s   |
 | `common/theta.py`                                                             | E₇ = 126, Λ₂₃ = 93 150, dim 47, dim 71                         | 1 s    |
 | `common/kpoint_lp.py`                                                         | the LP, validated on the Leech and P₄₈                         | 10 s   |
 | `…/dim25-lens-heads/verify.py`                                                | τ(25) ≥ 197 579, every pair in exact arithmetic               | 4 min  |
@@ -696,16 +714,17 @@ same answer. A missing-moments bug hid behind that for a day.
 ## The write-up
 
 *New lower bounds for kissing numbers in dimensions 18 through 96* is a 54-page
-account with a current state-of-the-art table in §5 and a historical appendix. The
-main table reports all 66 registered claims, current in the reviewed
-sources, including the October 2026 code, coset, head and signed-support additions.
-Earlier construction descriptions and the frozen September table remain in the
-appendix for reproducibility. `paper/registry_snapshot.json` preserves the historical
-53-row arithmetic used by the detailed checkers; `paper/current_table.tex` and the
-current registry drive the main summary.
+account with a state-of-the-art table in §5 and a historical appendix. The
+main table reports 66 of the 70 registered claims. Dimensions 32–35 await the
+next manuscript update, as requested. Every file under `paper/` remains
+unchanged; [the manuscript checkpoint](common/manuscript_scope.json) records
+its published bounds and file hashes. The repository audit checks that state
+and the four pending dimensions. `paper/registry_snapshot.json` separately
+preserves the 53-row arithmetic of the historical September appendix.
 
 **It is in this repository, at [`paper/`](paper/)** — source, bibliography, `.bbl`, PDF and
-three checkers that read this repository and exit non-zero on a mismatch:
+three checkers tied to its existing registry scope. Their synchronization is
+part of the deferred paper update:
 
 ```bash
 cd paper

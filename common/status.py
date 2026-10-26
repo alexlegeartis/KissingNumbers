@@ -493,6 +493,11 @@ STATUS[38] = ('heads', '1352 joint latitude families, signed axis rotation and c
 STATUS[39] = ('codes', 'rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration; larger compatible families remain open (dim39-deformed-orbits/verify.py)')
 STATUS[40] = ('heads', 'three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products; larger compatible families remain open (dim40-affine-shells/verify.py)')
 
+for _d in (32, 33):
+    STATUS[_d] = ('codes', 'signed octad replacements over the dense [32,17,8] code; larger signed support families remain open (dim32-35-signed-layers/verify.py)')
+for _d in (34, 35):
+    STATUS[_d] = ('heads', 'dense-code coset shifts with coordinated full-support heads and root deletions; larger compatible head families and different parities remain open (dim32-35-signed-layers/verify.py)')
+
 if __name__ == '__main__':
     print(__doc__)
     by = {}

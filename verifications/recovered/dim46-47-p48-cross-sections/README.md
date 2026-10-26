@@ -5,7 +5,7 @@ October 2026 [family/head package](../../improved/dim41-46-p48-heads/) supplies 
 larger 13,387,797-point construction in 46D. The 47D value is unchanged.
 
 **Nothing here is claimed.** Both values were in the literature before this project reached
-them, and neither is counted among the 66 in [`../../../RESULTS.md`](../../../RESULTS.md)
+them, and neither is counted among the 70 in [`../../../RESULTS.md`](../../../RESULTS.md)
 or presented as a result in the paper.
 
 | dim | Cohn's table | value | who has it |

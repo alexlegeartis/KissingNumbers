@@ -5,9 +5,9 @@ according to what is currently true about it. The distinction is the point of th
 a repository that only shows its wins is much less useful to the next person than one that
 shows where the doors are shut.
 
-## [`improved/`](improved/) — all 66 claims, including retained historical records
+## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-28 packages, one per **construction idea** rather than one per dimension, because several
+29 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -27,6 +27,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim29-30-midpoint-replacements`](improved/dim29-30-midpoint-replacements/) | 29–30 | 216,568 and 224,280 points; exact midpoint coordinate replay |
 | [`dim29-30-frame-layer`](improved/dim29-30-frame-layer/) | 29, 30 | apparently new — joint work in progress with H. Cohn and B. Lindow; the dimension-28 norm-8 frame layer at height √2 carried to ℝ²⁴⁺ᵏ, where it is 48 frame vectors on the whole cross-polytope of ℝᵏ — 96k points, 480 and 576 — deleting no equator point. It needs every owner to be type B for the frame, and in the coordinates where the frame is 8eᵢ the type-B lines are exactly the 48 576 octad vectors of the Golay code, which the whole monomial group 2¹²:M₂₄ permutes, so every monomial image of a class is again a clean class |
 | [`dim31-frame-layer`](improved/dim31-frame-layer/) | 31 | apparently new — joint work in progress with H. Cohn and B. Lindow; the norm-8 frame layer at height √2, 672 points deleting no equator point, carried by 42 pairwise disjoint type-B classes holding 10 328 of 10 416 owner lines, with an axis of 118 of 126.  Supersedes the height-√3 layer |
+| [`dim32-35-signed-layers`](improved/dim32-35-signed-layers/) | 32–35 | signed octad replacements and coordinated heads; two independent exact checkers |
 | [`dim36-37-coxeter-todd`](improved/dim36-37-coxeter-todd/) | 36, 37 | exact short shells and phase-orbit angles; 37D adds two latitude layers |
 | [`dim38-latitude-extension`](improved/dim38-latitude-extension/) | 38 | 605,346 points; 24-point latitude extension and exact rational axis rotation |
 | [`dim39-root-replacements`](improved/dim39-root-replacements/) | 39 | 768,924 points; neutral support changes and shared root deletions |
@@ -50,7 +51,7 @@ package. The new 46D family/head configuration is larger and is registered in
 `improved/`. The supplied 43D construction now registers 2,919,743 points; the older
 2,878,155-point seed is retained for replay. The missing writeup target
 2,911,990 is historical and is not used by the current certificate.
-No 47D/48D improvement is claimed. The paper reports current results and retains its earlier snapshot in the historical appendix.
+No 47D/48D improvement is claimed. The paper retains its 66-result checkpoint; 32–35D will be added later.
 
 
 ## [`recovered/`](recovered/) — already published, re-derived here

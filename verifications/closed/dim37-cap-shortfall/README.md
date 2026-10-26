@@ -42,20 +42,20 @@ The profile decays: the first 40 classes average 238, the first 120 average 227,
 > by search.** It would need a better *class*, not a better cover — see
 > [`../class-problem-upper-bound/`](../class-problem-upper-bound/).
 
-## The record in dimension 37 is 496 232, not Cohn's 494 312
+## Historical comparison in dimension 37: 496 232 versus 494 312
 
 Worth flagging on its own. Brouwer's constant-weight table carries A(37,8,8) ≥ 2832 from
 Echols (arXiv:2608.13906, 2026), which through Edel–Rains–Sloane gives **496 232**. Cohn's
-table still lists 494 312.
+table listed 494 312 at that checkpoint.
 
 **Cohn's table is stale in four dimensions for this reason** — 32, 33, 34 and 37 — all from
 Echols' 2026 constant-weight improvements, which Brouwer's page already carries:
 
-| dim | Cohn's table | Brouwer / correct | who | 24 October repo result |
+| dim | Cohn's table | Brouwer / correct | who | 26 October repo result |
 |---|---|---|---| --- |
-| 32 | 345 408 | **346 432** | Echols 2026 | — |
-| 33 | 360 640 | **362 048** | Echols 2026 | — |
-| 34 | 380 868 | **381 124** | Echols 2026 | — |
+| 32 | 345 408 | **346 432** | Echols 2026 | **352 800 |
+| 33 | 360 640 | **362 048** | Echols 2026 | **370 368 |
+| 34 | 380 868 | **381 124** | Echols 2026 | **390 982 |
 | 37 | 494 312 | **496 232** | Echols 2026 | **505 359** |
 
 The comparison and ERS counts above are historical. The 24 October 2026

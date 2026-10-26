@@ -73,9 +73,9 @@ scratch as exact inequalities.
 
 | n | best chain | N(n) | August Cohn snapshot | historical reference | comparison | 26 October repo result |
 |---|---|---|---|---|---| --- |
-| 32 | (32,8,2) | **346 432** | 345 408 | 346 432 | at the value — **table stale** | — |
-| 33 | (32,8,2) | **362 048** | 360 640 | 362 048 | at the value — **table stale** | — |
-| 34 | (32,8,2) | **381 124** | 380 868 | 381 124 | at the value — **table stale** | — |
+| 32 | (32,8,2) | **346 432** | 345 408 | 346 432 | at the value — **table stale** | **352 800 |
+| 33 | (32,8,2) | **362 048** | 360 640 | 362 048 | at the value — **table stale** | **370 368 |
+| 34 | (32,8,2) | **381 124** | 380 868 | 381 124 | at the value — **table stale** | **390 982 |
 | 35, 36, 40 | (32/40,8,2) | = table | = | = | at the value | — |
 | 37 | (32,8,2) | **496 232** | 494 312 | 496 232 | at the value — **table stale** | **505 359** |
 | 38 | (38,8,2) | 570 236 | 566 652 | **591 612** (this project) | below | **610 394** |

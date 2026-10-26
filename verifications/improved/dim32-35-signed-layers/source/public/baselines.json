@@ -1,0 +1,34 @@
+[
+  {
+    "dimension": 32,
+    "supports": 1713,
+    "kissing_points": 352320,
+    "source": "https://aeb.win.tue.nl/codes/cwc/d8/a32.8.8.1713H",
+    "sha256": "3b31ea944dc99966111572c5288a56ffd9533be468b4a53602e705067838b84d",
+    "attribution": "Qihong Lin, October 2026; Brouwer table fetched 2026-10-26"
+  },
+  {
+    "dimension": 33,
+    "supports": 1852,
+    "kissing_points": 370240,
+    "source": "https://aeb.win.tue.nl/codes/cwc/d8/a33.8.8.1852H",
+    "sha256": "13b4d4e39cb0e17e247a0bc7d752dab8b39d2b3fd416c739e635b55740b39d67",
+    "attribution": "Qihong Lin, October 2026; Brouwer table fetched 2026-10-26"
+  },
+  {
+    "dimension": 34,
+    "supports": 2013,
+    "kissing_points": 390980,
+    "source": "https://aeb.win.tue.nl/codes/cwc/d8/a34.8.8.2013H",
+    "sha256": "c47f45843a38aef7bb822eff7c48958c08f80a0a6d088e360c147d3259b645e1",
+    "attribution": "Qihong Lin, October 2026; Brouwer table fetched 2026-10-26"
+  },
+  {
+    "dimension": 35,
+    "supports": 2202,
+    "kissing_points": 415308,
+    "source": "https://aeb.win.tue.nl/codes/cwc/d8/a35.8.8.2202H",
+    "sha256": "48cb00a1d8c61ce66f82ef1de518e746dce8034db7dce94d53b46d2fce6be5ee",
+    "attribution": "Qihong Lin, October 2026; Brouwer table fetched 2026-10-26"
+  }
+]

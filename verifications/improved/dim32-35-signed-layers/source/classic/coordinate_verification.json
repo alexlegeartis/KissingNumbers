@@ -1,0 +1,60 @@
+[
+  {
+    "dimension": 32,
+    "verified_points": 352800,
+    "expanded_middle_points": 219744,
+    "expanded_roots": 1984,
+    "expanded_dense_points": 131072,
+    "expanded_heads": 0,
+    "exceptional_cross_dot_products": 108544,
+    "mixed_norm_checks": null,
+    "all_checks_pass": true
+  },
+  {
+    "dimension": 33,
+    "verified_points": 370368,
+    "expanded_middle_points": 237184,
+    "expanded_roots": 2112,
+    "expanded_dense_points": 131072,
+    "expanded_heads": 0,
+    "exceptional_cross_dot_products": 33776,
+    "mixed_norm_checks": null,
+    "all_checks_pass": true
+  },
+  {
+    "dimension": 34,
+    "verified_points": 390982,
+    "expanded_middle_points": 257664,
+    "expanded_roots": 2242,
+    "expanded_dense_points": 131072,
+    "expanded_heads": 4,
+    "exceptional_cross_dot_products": 0,
+    "mixed_norm_checks": {
+      "maximum_integer_dots": {
+        "middle": 20,
+        "roots": 16,
+        "dense": 20
+      },
+      "head_head": 14
+    },
+    "all_checks_pass": true
+  },
+  {
+    "dimension": 35,
+    "verified_points": 415310,
+    "expanded_middle_points": 281856,
+    "expanded_roots": 2378,
+    "expanded_dense_points": 131072,
+    "expanded_heads": 4,
+    "exceptional_cross_dot_products": 0,
+    "mixed_norm_checks": {
+      "maximum_integer_dots": {
+        "middle": 20,
+        "roots": 16,
+        "dense": 20
+      },
+      "head_head": 15
+    },
+    "all_checks_pass": true
+  }
+]

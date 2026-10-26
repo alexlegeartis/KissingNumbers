@@ -41,6 +41,23 @@
       "bounds": {
         "40": 1092000
       }
+    },
+    {
+      "url": "https://aeb.win.tue.nl/codes/Andw.html",
+      "location": "Lower bounds for A(n,8,8) and kissing numbers",
+      "bounds": {
+        "32": 352320,
+        "33": 370240,
+        "34": 390980,
+        "35": 415308
+      },
+      "support_counts": [
+        1713,
+        1852,
+        2013,
+        2202
+      ],
+      "retrieval": "Fresh web retrieval on 2026-10-26; Lin attribution and linked witnesses match the supplied hashes."
     }
   ],
   "new_results": {
@@ -48,7 +65,11 @@
     "31": 241742,
     "38": 610394,
     "39": 769180,
-    "40": 1126314
+    "40": 1126314,
+    "32": 352800,
+    "33": 370368,
+    "34": 390982,
+    "35": 415314
   },
-  "scope": "Fresh primary-source comparison for these dimensions; does not claim a fresh complete Cohn-table retrieval."
+  "scope": "Fresh primary-source comparisons for the listed dimensions, including Brouwer and Lin for 32-35D; Cohn remained unavailable. This is not a fresh complete Cohn-table retrieval."
 }

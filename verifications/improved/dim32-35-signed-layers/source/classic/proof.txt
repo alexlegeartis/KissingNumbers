@@ -1,0 +1,100 @@
+# Construction and exact verification
+
+Write `pc(m)` for the number of set bits of a nonnegative integer. Bit `j`
+denotes coordinate `j`, counted from zero. Normalize each vector by its own
+Euclidean length. All base vectors have squared length 32.
+
+## Base layers
+
+The 17 generator masks in each certificate generate a binary linear code
+`C` in 32 coordinates. Enumeration verifies `|C| = 131072` and minimum
+nonzero weight 8. For a specified shift `r` (zero when omitted), include
+
+`((-1)^(c_0+r_0), ..., (-1)^(c_31+r_31), 0, ..., 0)`, for `c in C`.
+
+Distinct dense vectors have inner product at most `32 - 2*8 = 16`.
+Translation by `r` preserves all these inner products.
+
+For each mask in `full_even_supports`, include all 128 vectors with entries
+`+2` or `-2` on its eight coordinates, zero elsewhere, and an even number
+of minus signs. The verifier checks that every two supports meet in at most
+four coordinates. On one support, distinct patterns differ in at least two
+signs. Thus all distinct inner products within these full layers are at
+most 16.
+
+For an exceptional pair `(m,s)`, put `-2` on the coordinates in `s`, `+2` on
+the remaining coordinates of `m`, and zero elsewhere; include its negative
+as well. The least coordinate in `m` has positive sign, fixing one
+representative of each antipodal line. For two representatives the inner
+product is
+
+`4 * (pc(m & k) - 2*pc((s ^ t) & m & k))`.
+
+The absolute value is checked to be at most 16. Exceptional supports are
+disjoint from the full-support list and meet each full support in at most
+four coordinates.
+
+Finally include the `2*n*(n-1)` roots `4*(±e_i ±e_j)`, `i<j`, subject to the
+two specified deletions below. Distinct root inner products are at most 16.
+The other base-layer bounds are immediate from the coordinate shapes:
+dense/middle at most `8*2 = 16`, dense/root at most `2*4 = 8`, and
+middle/root at most `2*2*4 = 16`. Different layers have different support
+sizes, so their vectors cannot coincide.
+
+The counts for the signed-replacement certificates are
+
+| Dimension | Dense | Full middle | Exceptional middle | Roots | Total |
+|---|---:|---:|---:|---:|---:|
+| 32 | 131072 | 1704*128 = 218112 | 816*2 = 1632 | 1984 | **352800** |
+| 33 | 131072 | 1848*128 = 236544 | 320*2 = 640 | 2112 | **370368** |
+
+## Four-head replacement in dimensions 34 and 35
+
+Here all the middle supports remain the published ones. Use the dense-code
+shift `r = 1605954 = 0x188142`. Exhaustive enumeration verifies that every
+word of `C+r` has weight between 6 and 26. Consequently its sign vector
+has coordinate sum between -20 and 20.
+
+Let `a=n-2`, `b=n-1`; both lie outside the first 32 coordinates. Delete the
+two roots `±4*(e_a-e_b)`. For each independent choice `epsilon,delta in
+{-1,+1}`, add the unit vector `q/sqrt(n+16)`, where
+
+`q_j = epsilon` for `j` outside `{a,b}`, and `q_a=3*delta`, `q_b=-3*delta`.
+
+There are four distinct heads, each with `q.q = (n-2)+9+9 = n+16`.
+They have full support, so cannot coincide with a base vector. Their largest
+distinct mutual integer inner product is `n-20`, which is at most `(n+16)/2`
+for both dimensions.
+
+Their integer inner product with a dense vector is at most 20, by the
+coset weight check. With a retained root it is at most 16. The only roots
+attaining 24 are exactly the deleted antipodal pair.
+
+Consider a full even-sign octad. If it contains no heavy coordinate, its
+inner product with a head is at most 16. If it contains one, the bound is
+`2*(7+3)=20`. If it contains both, the head's signs on the octad have odd
+parity: there are six equal small signs and two opposite heavy signs.
+An even-sign octad cannot match all eight signs. Its maximum dot product
+is therefore `2*(6+3+3-2)=20`, since the cheapest sign disagreement costs 2
+before the middle-layer scaling by 2.
+
+For a base vector `v` of squared norm 32, the normalized condition is
+
+`(q.v)/(sqrt(n+16)*sqrt(32)) <= 1/2`.
+
+For a nonnegative integer dot product this is equivalent to
+`4*(q.v)^2 <= 32*(n+16)`. The bound 20 suffices because
+`4*20^2 = 1600 <= 32*50` in 34D and `1600 < 32*51` in 35D. Negative dot
+products automatically satisfy the kissing condition. This checks all
+mixed norms without rounding a square root.
+
+We deleted two points and added four, giving
+
+| Dimension | Dense | Middle | Retained roots | Heads | Total |
+|---|---:|---:|---:|---:|---:|
+| 34 | 131072 | 2013*128 = 257664 | 2242 | 4 | **390982** |
+| 35 | 131072 | 2202*128 = 281856 | 2378 | 4 | **415310** |
+
+The two verification programs check the same complete constructions through
+different representations: masks and sign formulas in `verify.py`, explicit
+integer coordinates and matrix products in `verify_coordinates.py`.

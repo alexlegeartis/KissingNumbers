@@ -1,0 +1,295 @@
+{
+  "status": "deferred",
+  "source_commit": "46da0092797b4da38af280c96bf8bb181c895984",
+  "reason": "User requested repository SOTA and verification updates; the paper will be updated later.",
+  "registered_rows": [
+    {
+      "dimension": 18,
+      "total": 8358
+    },
+    {
+      "dimension": 25,
+      "total": 197584
+    },
+    {
+      "dimension": 26,
+      "total": 200918
+    },
+    {
+      "dimension": 27,
+      "total": 204636
+    },
+    {
+      "dimension": 28,
+      "total": 205232
+    },
+    {
+      "dimension": 29,
+      "total": 216568
+    },
+    {
+      "dimension": 30,
+      "total": 224280
+    },
+    {
+      "dimension": 31,
+      "total": 241742
+    },
+    {
+      "dimension": 36,
+      "total": 501633
+    },
+    {
+      "dimension": 37,
+      "total": 505359
+    },
+    {
+      "dimension": 38,
+      "total": 610394
+    },
+    {
+      "dimension": 39,
+      "total": 769180
+    },
+    {
+      "dimension": 40,
+      "total": 1126314
+    },
+    {
+      "dimension": 41,
+      "total": 1460036
+    },
+    {
+      "dimension": 42,
+      "total": 1991445
+    },
+    {
+      "dimension": 43,
+      "total": 2919743
+    },
+    {
+      "dimension": 44,
+      "total": 4939281
+    },
+    {
+      "dimension": 45,
+      "total": 7655056
+    },
+    {
+      "dimension": 46,
+      "total": 13387797
+    },
+    {
+      "dimension": 49,
+      "total": 52430776
+    },
+    {
+      "dimension": 50,
+      "total": 52460322
+    },
+    {
+      "dimension": 51,
+      "total": 52504618
+    },
+    {
+      "dimension": 52,
+      "total": 52593106
+    },
+    {
+      "dimension": 53,
+      "total": 52710864
+    },
+    {
+      "dimension": 54,
+      "total": 52945570
+    },
+    {
+      "dimension": 55,
+      "total": 53339086
+    },
+    {
+      "dimension": 56,
+      "total": 54159098
+    },
+    {
+      "dimension": 57,
+      "total": 54627038
+    },
+    {
+      "dimension": 58,
+      "total": 56043152
+    },
+    {
+      "dimension": 59,
+      "total": 56680448
+    },
+    {
+      "dimension": 60,
+      "total": 57690671
+    },
+    {
+      "dimension": 61,
+      "total": 71310488
+    },
+    {
+      "dimension": 62,
+      "total": 100371468
+    },
+    {
+      "dimension": 63,
+      "total": 182407428
+    },
+    {
+      "dimension": 64,
+      "total": 332170112
+    },
+    {
+      "dimension": 65,
+      "total": 332238338
+    },
+    {
+      "dimension": 66,
+      "total": 338292100
+    },
+    {
+      "dimension": 67,
+      "total": 351400326
+    },
+    {
+      "dimension": 68,
+      "total": 371521432
+    },
+    {
+      "dimension": 69,
+      "total": 627822180
+    },
+    {
+      "dimension": 70,
+      "total": 1249778250
+    },
+    {
+      "dimension": 71,
+      "total": 2603658750
+    },
+    {
+      "dimension": 73,
+      "total": 6218204076
+    },
+    {
+      "dimension": 74,
+      "total": 6218211606
+    },
+    {
+      "dimension": 75,
+      "total": 6218246060
+    },
+    {
+      "dimension": 76,
+      "total": 6218315288
+    },
+    {
+      "dimension": 77,
+      "total": 6218465016
+    },
+    {
+      "dimension": 78,
+      "total": 6218685880
+    },
+    {
+      "dimension": 79,
+      "total": 6218912036
+    },
+    {
+      "dimension": 80,
+      "total": 6219474300
+    },
+    {
+      "dimension": 81,
+      "total": 6219649576
+    },
+    {
+      "dimension": 82,
+      "total": 6220001536
+    },
+    {
+      "dimension": 83,
+      "total": 6220534360
+    },
+    {
+      "dimension": 84,
+      "total": 6221557196
+    },
+    {
+      "dimension": 85,
+      "total": 6222004840
+    },
+    {
+      "dimension": 86,
+      "total": 6225165512
+    },
+    {
+      "dimension": 87,
+      "total": 6225838030
+    },
+    {
+      "dimension": 88,
+      "total": 6232239528
+    },
+    {
+      "dimension": 89,
+      "total": 6235525036
+    },
+    {
+      "dimension": 90,
+      "total": 6242027140
+    },
+    {
+      "dimension": 91,
+      "total": 6252202550
+    },
+    {
+      "dimension": 92,
+      "total": 6272431575
+    },
+    {
+      "dimension": 93,
+      "total": 6301636084
+    },
+    {
+      "dimension": 94,
+      "total": 6357657396
+    },
+    {
+      "dimension": 95,
+      "total": 7091452684
+    },
+    {
+      "dimension": 96,
+      "total": 13289406656
+    }
+  ],
+  "pending_dimensions": [
+    32,
+    33,
+    34,
+    35
+  ],
+  "files": {
+    "paper/README.md": "5cb7752559a22e297d728ee58315b5194ce59d547e83c83c1fd2e4ee0618b3b2",
+    "paper/current_table.tex": "dde4c0fbcd44f0b9ac8dc85bc63fce623d56f80c42db4d3d3e131d863d2cdde6",
+    "paper/current_values.tex": "b917665a576bd7303f5c8a642b638873c21c5d3db5f76fbdf0e6d998d4565583",
+    "paper/factcheck.py": "6b8e60caaebbecd10e0ba278f5ca55d7828a4bbd4670360bbf83830ff7c42c15",
+    "paper/formulas.py": "b4175a919550f7fef630aa058bf761f4a93598df7021334a2cdf7703aa55de02",
+    "paper/kissing46.bbl": "3c335068c12d2378e16dd0fb944e9fa2f04392bf87bf3bd1b33df60f6a929d9c",
+    "paper/kissing46.bib": "e44b9b0a46f44c569f51fd8eef0116c94e7e3a9d8cd4c5a2b2e793c9bc23d5d4",
+    "paper/kissing46.pdf": "395d7cc7bfd68033c6b9b549ed4eccf0ba63a0aeaf3b4aa8ee8dd67a2da15876",
+    "paper/kissing46.tex": "6c057df41ddda5319650dbd703615e67f71dd1019cbb7f5e4368e68fd40d37d0",
+    "paper/mkcurrenttable.py": "6eb4fef93f676cc386e4eec526f5bc7e185eb22456c80558137d0ac5c26d6838",
+    "paper/mkcurrentvalues.py": "d443a3eef1ebecadccdf00eb36e6a6d8103f10cc2386b1ac019d9ef1a3ca23c8",
+    "paper/mkvalues.py": "25543e549d93e7b8f6c34adcf35de98f302ac2ac15c8d688bcda938e54f0b5be",
+    "paper/registry_snapshot.json": "7b4019e93b0aaa66c92e84adccc2b9ed01d97ecd4e0579099e85bfa2d74b67d9",
+    "paper/style_scan.py": "dcfe2d787b160c031692a10351117abf75058c1c74a8dae9df80698938709c95",
+    "paper/unsupported.py": "c5d74418151bad68e61d800b8b7a4c9881a35be1726a35211e59ecff2fe99826",
+    "paper/values.tex": "c8ef059b90fd4b2191084eb2c71f1661ebe314fa00d7b4872a376e5d90d0708a"
+  }
+}

@@ -1,6 +1,6 @@
 # Verification of the retained SOTA results
 
-The README labels 66 results SOTA against its dated sources. Every labelled result
+The README labels 70 results SOTA against its dated sources. Every labelled result
 has a verification route, but a short run does not freshly establish all of them.
 The commands below check constructions; they do not perform a literature search.
 
@@ -36,6 +36,7 @@ not a new mathematical verification. All commands require assertions enabled.
 | 29–30 | Regenerate the Leech shell, check all endpoint/midpoint identities and every inserted pair exactly | Standard Leech shell kissing property; exact small integer BLAS with no tolerance; pure-tail Cauchy–Schwarz bound |
 | 38 | Rebuild all cap classes and equatorial lines; check all 1,352 joint latitude families and retained/coordinate axes with integers | Golay lattice congruences and weight enumerator prove the parent minimum |
 | 39 | Replay sparse supports and root replacements; check every relative pair of 1,281 dense sign orbits | Bounded integer arithmetic and complete Walsh enumeration |
+| 32–35 | Two independent exact representations: full dense-code enumeration, signed-support checks, normalized head products and explicit coordinate checks | Python 3.9+ and NumPy; no search or unverified population input |
 | 36–37 | Exact short shells, phase orbits and latitude extension | Parent lattice facts stated in the package |
 | 41–46 | Exact head ranks and angles; explicit tiny bodies and added medium classes | Complete-family population identities and tables are inherited; the latest large shells have not all been freshly enumerated |
 | 49–60 | All 7,387 base lines, 577 integral isometries, 3,901,694 distinct lines and cap directions | Published parent lattice minimum/shell size; the 12D Coxeter–Todd direction count is a literature input |

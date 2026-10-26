@@ -27,9 +27,9 @@ HOW TO IMPROVE A BOUND.  RESULTS.md's status column says what would have to chan
 
     cosets     dimensions 36-37 and 73-86. Larger phase codes, nearest subsets,
                or compatible tail assignments remain open; no construction ceiling is claimed.
-    heads      dimensions 25-31, 38 and 40-46. Joint layer and family/head searches and partial families
+    heads      dimensions 25-31, 34-35, 38 and 40-46. Joint layer and family/head searches and partial families
                remain open. Complete-family populations retain their documented assumptions.
-    codes      dimensions 39, 61-68 and 95-96. Improve the explicit input codes,
+    codes      dimensions 32-33, 39, 61-68 and 95-96. Improve the explicit input codes,
                sparse support layers, compression maps or central sections.
     classes    dimensions 49-60 and 87-94. Better pairwise-disjoint class
                families improve the corresponding cap constructions. The October P48
@@ -69,7 +69,7 @@ DRIVERS = [
      'derive.py'),
 ]
 DRIVERS += [(_name, os.path.join(V, _name), 'final.py') for _name in
-            ('dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets')]
+            ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets')]
 TABLES = [(os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
           (os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py')]
 
