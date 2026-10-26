@@ -17,10 +17,12 @@ abstract: >-
   body populations, including 2919743 in 43D and 7655056 in 45D. The October
   update also includes a 7387-line P48 class family, binary compression
   and support layers in 61-68, 95 and 96, and certified Gamma72
-  nearest-coset subsets in 73-88. The new 96D total is 13289406656. Each construction’s full
-  verification scope is documented in its package README. The
+  nearest-coset subsets in 73-88. The current totals are 7092007692 in 95D
+  and 13290258624 in 96D. Each construction’s full verification scope is
+  documented in its package README. The
   manuscript retains its 66-result checkpoint; the four new 32-35D entries
-  await its later update. The historical appendix is retained. The preceding constructions include:
+  and the improved 95-96D values await its later update. The historical appendix
+  is retained. The preceding constructions include:
   (1) Cross-sections of extremal even unimodular lattices, bounded
   by a k-point linear program on the moments that Venkov's theorem supplies,
   with exact rational dual certificates and with translation and lattice-range

@@ -1,5 +1,5 @@
 {
-  "checkpoint_date": "2026-10-25",
+  "checkpoint_date": "2026-10-27",
   "copies": [
     {
       "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim49plus/binary_62_code.py",
@@ -144,17 +144,21 @@
     {
       "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/mixed_pair_certificate.py",
       "source": "research/highdims_structural_20261025/mixed_pair_certificate.py",
-      "sha256": "a2eda62b6eae6e9aa1195e023201be2cfa3e8a8c0094f99e36ec4744ef029c8b"
+      "sha256": "eab2b36ef4786497a7b4b23dc1c80e3d88e18bc330eaf58637860f3537392a22",
+      "source_sha256": "a2eda62b6eae6e9aa1195e023201be2cfa3e8a8c0094f99e36ec4744ef029c8b",
+      "transformation": "Comparison fields rebased to the immediately preceding repository certificate; support geometry unchanged."
     },
     {
       "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/mixed_pair_certificate.npz",
-      "source": "research/highdims_structural_20261025/mixed_pair_certificate.npz",
-      "sha256": "9771a5155fac1b05625f3249ed894860c4e3d837ccc274e2e81b0e642d9f48ff"
+      "source": "research/dim96_factor15_20261026/mixed_pair_certificate.npz",
+      "sha256": "5f44dbe7a1364e9682a4092a38ddae07ff6c8bae57206b397de9fe971bad0554"
     },
     {
       "installed": "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/mixed_pair_certificate.json",
-      "source": "research/highdims_structural_20261025/mixed_pair_certificate.json",
-      "sha256": "0c62e3b531f95bfa9f17036057af3667cd00f3f86b206e4d0df9e1c36d6d1695"
+      "source": "research/dim96_factor15_20261026/mixed_pair_certificate.json",
+      "sha256": "38c590fe6779f4c884ad8751fa4e4568d7c9cb8c00283794362487055eff06b5",
+      "source_sha256": "642ac63640bcd3e22b6109b859d5b988785e4725824d19b23d4606d8aaa9d669",
+      "transformation": "Fresh replay; comparison rebased to immediately preceding registered bounds in commit 377dfa6."
     }
   ],
   "cpu_continuation_20261025": {
@@ -226,5 +230,45 @@
       "96": 13289406656
     },
     "source": "research/highdims_structural_20261025/REPORT.md"
+  },
+  "continuation_20261027": {
+    "source": "research/dim96_factor15_20261026/REPORT.md",
+    "previous_commit": "377dfa6f4d9d921c57d740803da53c1d81f648c9",
+    "previous_certificate_sha256": "9771a5155fac1b05625f3249ed894860c4e3d837ccc274e2e81b0e642d9f48ff",
+    "certificate_sha256": "5f44dbe7a1364e9682a4092a38ddae07ff6c8bae57206b397de9fe971bad0554",
+    "supports": 24613,
+    "previous_supports": 24561,
+    "support_pairs_checked_by_each_replay": 302887578,
+    "dimensions": {
+      "95": {
+        "bound": 7092007692,
+        "previous_bound": 7091452684,
+        "gain": 555008,
+        "terms": {
+          "dense_section": 4697620480,
+          "transversal24_section": 2147483648,
+          "new_support24_section": 245586944,
+          "support6_section": 1316444,
+          "ordinary_poles": 176
+        }
+      },
+      "96": {
+        "bound": 13290258624,
+        "previous_bound": 13289406656,
+        "gain": 851968,
+        "terms": {
+          "dense": 8589934592,
+          "transversal24": 4294967296,
+          "new_support24": 403259392,
+          "support6": 2097152,
+          "poles": 192
+        }
+      }
+    },
+    "verification": [
+      "source/dim61_96/mixed_pair_certificate.py",
+      "source/dim61_96/verify_support_bits.py"
+    ],
+    "scope": "Replace the earlier mixed support family; no unrestricted optimum claimed. Manuscript and PDF deferred."
   }
 }

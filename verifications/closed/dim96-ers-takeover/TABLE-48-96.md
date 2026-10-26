@@ -47,8 +47,8 @@
 | 92 | 6 272 431 575 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
 | 93 | 6 301 636 084 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
 | 94 | 6 357 657 396 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 95 | 7 091 452 684 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 96 | 13 289 406 656 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 95 | 7 092 007 692 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 96 | 13 290 258 624 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
 
 ## Retained dimension-96 comparisons
 

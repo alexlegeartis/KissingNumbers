@@ -1,0 +1,27 @@
+{
+  "review_date": "2026-10-27",
+  "scope": "Review of the unchanged code inputs used by the new 95-96D certificate. This is not a complete kissing-number literature survey.",
+  "primary_sources": [
+    {
+      "url": "https://www.codetables.de/BKLC/BKLC.php?q=2&n=96&k=33",
+      "input": "Explicit nested concatenation recipe for a binary [96,33,24] code; Y. Cheng, IEEE Trans. Inform. Theory 33 (1987), 719-721.",
+      "observation": "Lower bound on minimum distance remains 24; replay rebuilds the generator and verifies the parent codes."
+    },
+    {
+      "url": "https://aeb.win.tue.nl/codes/binary-1.html",
+      "input": "A(24,6)",
+      "lower_bound": 16384,
+      "upper_bound": 24106,
+      "observation": "Only the explicit 16384-word code is used; its distance is freshly enumerated."
+    }
+  ],
+  "previous_repository_commit": "377dfa6f4d9d921c57d740803da53c1d81f648c9",
+  "new_results": {
+    "95": 7092007692,
+    "96": 13290258624
+  },
+  "gains_over_previous_repository": {
+    "95": 555008,
+    "96": 851968
+  }
+}

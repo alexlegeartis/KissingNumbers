@@ -1,8 +1,7 @@
 # Explicit code layers and central sections
 
-Checkpoint: **25 October 2026**. These constructions replace the earlier
-repository values in six dimensions and add dimensions 66 and 67,
-registering eight constructions in total.
+Checkpoint: **27 October 2026** (95–96D continuation). This package registers
+eight constructions. The latest update improves its 95D and 96D certificates.
 
 | Dimension | This construction | Mechanism |
 |---|---:|---|
@@ -12,10 +11,10 @@ registering eight constructions in total.
 | 66 | **338,292,100** | shortened weight-16 support code and lower layers |
 | 67 | **351,400,326** | the same construction |
 | 68 | **371,521,432** | the same construction |
-| 95 | **7,091,452,684** | optimized central section of the enlarged 96D construction |
-| 96 | **13,289,406,656** | transversal supports plus a mixed-pair support code |
+| 95 | **7,092,007,692** | optimized central section of the enlarged 96D construction |
+| 96 | **13,290,258,624** | transversal supports plus a mixed-pair support code |
 
-These are constructive lower bounds. Cohn's current table stops at dimension
+These are constructive lower bounds. Cohn's reviewed October table stops at dimension
 48, so it provides no comparison in this range. Historical comparisons remain
 in [RESULTS.md](../../../RESULTS.md) and the supplied source reports. No
 unrestricted optimum is asserted.
@@ -50,7 +49,7 @@ shortenings of the [73,36,16] weight-16 shell, extended Hamming signs and
 affine weight-four support packings. Code distances bound all cross-support
 angles; sparse/dense cross bounds are checked exactly.
 
-In 96D, the current certificate supplies 24,561 additional weight-24 supports.
+In 96D, the current certificate supplies 24,613 additional weight-24 supports.
 It starts from doubled QR48 supports and permits different pairings in
 different four-cell rows, followed by neutral switches and additions. Each occupies at most twelve rows
 of the existing 24-by-4 transversal layout, proving the cross-intersection
@@ -61,8 +60,8 @@ give the count identities and geometric inequalities.
 ## Files
 
 `final.py` derives the eight totals; `verify.py` replays their proofs.
-`UPDATE_PROVENANCE.json` records byte-preserving copies from the research
-workspace. `data/SHA256SUMS.txt` covers the complete package except itself.
+`UPDATE_PROVENANCE.json` records research copies and documented changes to the
+comparison fields. `data/SHA256SUMS.txt` covers the complete package except itself.
 
 Under `source/dim49plus/`:
 
@@ -106,14 +105,51 @@ not use an optimization score as a certificate.
 ## Mixed pairings in individual rows
 
 The continuation replaces the uniform-partition restriction by an explicit
-constant-weight support code. It has **24,561** supports, each of weight 24
-and occupying at most twelve rows. The verifier checks all **301,609,080**
+constant-weight support code. It has **24,613** supports, each of weight 24
+and occupying at most twelve rows. The verifier checks all **302,887,578**
 distinct support pairs directly, with maximum intersection 12. It does not
 trust a search graph or an optimization score. The improvement over the
-preceding checkpoint is **11,436,032** points in 95D and **20,856,832** in 96D.
+preceding registered certificate (commit `377dfa6`) is **555,008** points in
+95D and **851,968** in 96D. The previous bounds were **7,091,452,684** and
+**13,289,406,656**, respectively. The support family replaces the earlier one;
+its coordinates must not simply be appended to it.
 
 For a short isolated replay, run `python verify95_96.py`. The ordinary
 `verify.py` also includes this replay. `source/dim61_96/mixed_pair_certificate.py`,
 its NPZ and JSON contain the complete support certificate and count proof.
 The binary32 matrix products in this check are exact sums of at most 96
 zeros and ones; no approximate angle comparison is used.
+
+## Independent packed integer replay
+
+`source/dim61_96/verify_support_bits.py` checks the same complete support
+family using unsigned integer intersections and population counts, independently
+of the coordinate matrix products. It checks all 302,887,578 unordered pairs,
+weight 24, distinctness, at most twelve occupied rows and the exact section
+histogram `[6990,0,11418,0,5457,0,704,0,44]`. No approximate arithmetic is used.
+Its pinned receipt is `source/dim61_96/support_bits_verification.json`.
+Both `verify95_96.py` and `verify.py` replay both representations in a temporary
+copy and match the complete receipts (apart from elapsed time).
+
+The new support family has 17,296 ordinary doubled QR48 supports and 7,317
+compatible nonordinary supports. It contributes 403,259,392 points in 96D:
+
+```text
+8,589,934,592 + 4,294,967,296 + 403,259,392 + 2,097,152 + 192
+    = 13,290,258,624.
+```
+
+The central-section terms are
+`4,697,620,480 + 2,147,483,648 + 245,586,944 + 1,316,444 + 176
+= 7,092,007,692`. These are constructive lower bounds, without an optimality
+claim. `UPDATE_PROVENANCE.json` records the research source, exact certificate
+hash and immediately preceding repository comparison.
+
+The dense [96,33,24] code uses the nested concatenation described by
+[Cheng's construction and its explicit code-table recipe](https://www.codetables.de/BKLC/BKLC.php?q=2&n=96&k=33).
+The [binary code table](https://aeb.win.tue.nl/codes/binary-1.html) records the
+16,384-word length-24 distance-six sign code; the replay enumerates that code
+and the quaternary parent directly. Both source pages were reviewed on
+27 October 2026. These code inputs are distinct from the new support family.
+The manuscript and PDF retain their earlier bounds until the requested later
+paper update.

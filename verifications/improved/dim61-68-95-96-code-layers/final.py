@@ -35,8 +35,15 @@ def results():
                 registered['total'] = max(registered['total'], row['bound'])
     mixed = read('dim61_96/mixed_pair_certificate.json')
     assert mixed['status'].startswith('Verified:')
+    assert mixed['support_pairs_checked'] == mixed['supports']*(mixed['supports']-1)//2
+    assert sum(mixed['section_intersection_histogram']) == mixed['supports']
+    assert mixed['dimensions']['96']['terms']['new_support24'] == mixed['supports']*16384
+    assert mixed['dimensions']['95']['terms']['new_support24_section'] == sum(
+        count*signs for count, signs in zip(mixed['section_intersection_histogram'],
+                                          mixed['retained_sign_counts']))
     for dim, row in mixed['dimensions'].items():
         assert row['bound'] == sum(row['terms'].values())
+        assert row['gain'] == row['bound']-row['previous_bound']
         for registered in rows:
             if registered['dimension'] == int(dim):
                 registered['total'] = max(registered['total'], row['bound'])

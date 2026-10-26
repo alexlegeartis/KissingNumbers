@@ -106,10 +106,14 @@ successful replay when the measured inputs and environment are unchanged.
 
 ## Mixed-pair support continuation in 95--96D
 
-The code-layer package now checks all 301,609,080 pairs of its 24,561
+The code-layer package now checks all 302,887,578 pairs of its 24,613
 physical supports. `python verifications/improved/dim61-68-95-96-code-layers/verify95_96.py`
 replays this certificate in isolation, including sign distances and the
-95D central section. The default package verifier includes the same check.
+95D central section. It also checks every pair independently using packed
+integer masks and matches both fresh receipts to the pinned certificate.
+The current bounds are 13,290,258,624 in 96D (+851,968 over the preceding
+repository value) and 7,092,007,692 in 95D (+555,008). The default package
+verifier includes both replays.
 
 ## Norm-ten continuation in 73D and 77--79D
 

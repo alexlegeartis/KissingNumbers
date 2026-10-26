@@ -1,0 +1,19 @@
+{
+  "status": "PASS: complete packed integer support replay",
+  "supports": 24613,
+  "support_pairs_checked": 302887578,
+  "maximum_distinct_support_intersection": 12,
+  "maximum_occupied_rows": 12,
+  "section_intersection_histogram": [
+    6990,
+    0,
+    11418,
+    0,
+    5457,
+    0,
+    704,
+    0,
+    44
+  ],
+  "certificate_sha256": "5f44dbe7a1364e9682a4092a38ddae07ff6c8bae57206b397de9fe971bad0554"
+}

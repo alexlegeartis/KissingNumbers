@@ -51,7 +51,7 @@ package. The new 46D family/head configuration is larger and is registered in
 `improved/`. The supplied 43D construction now registers 2,919,743 points; the older
 2,878,155-point seed is retained for replay. The missing writeup target
 2,911,990 is historical and is not used by the current certificate.
-No 47D/48D improvement is claimed. The paper retains its 66-result checkpoint; 32–35D will be added later.
+No 47D/48D improvement is claimed. The paper retains its 66-result checkpoint; 32–35D and the improved 95–96D values will be added later.
 
 
 ## [`recovered/`](recovered/) — already published, re-derived here

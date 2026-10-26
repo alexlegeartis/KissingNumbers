@@ -958,6 +958,9 @@ if os.path.exists(_paper_scope_file):
     _paper_rows = {r['dimension']: r['total'] for r in _paper_scope['registered_rows']}
     _registry_rows = {d: v for d, v, pkg, how in claims}
     _pending = sorted(set(_registry_rows) - set(_paper_rows))
+    _pending_improvements = [dict(dimension=d, manuscript_total=v, repository_total=_registry_rows[d])
+                             for d, v in sorted(_paper_rows.items())
+                             if _registry_rows.get(d, 0) > v]
     _table_source = io.open(os.path.join(HERE, 'paper', 'current_table.tex'), encoding='utf-8').read()
     _table_dims = list(map(int, re.findall(r'^\$(\d+)\$ &', _table_source, re.M)))
     _values_source = io.open(os.path.join(HERE, 'paper', 'current_values.tex'), encoding='utf-8').read()
@@ -969,6 +972,7 @@ if os.path.exists(_paper_scope_file):
                 or _scope_hashlib.sha256(open(_scope_path, 'rb').read()).hexdigest() != _scope_digest):
             bad('deferred manuscript file changed: %s' % _scope_name)
     if (_paper_scope['status'] != 'deferred' or _pending != _paper_scope['pending_dimensions']
+            or _pending_improvements != _paper_scope.get('pending_improvements', [])
             or len(_table_dims) != len(_paper_rows) or set(_table_dims) != set(_paper_rows)
             or any(_table_values.get(d) != v or _registry_rows.get(d, 0) < v for d, v in _paper_rows.items())):
         bad('deferred manuscript scope disagrees with its source tables or repository registry')
@@ -976,8 +980,8 @@ if os.path.exists(_paper_scope_file):
           or not re.search(r'%d-row arithmetic' % len(paper_claims), _wr)):
         bad('README.md does not state the deferred manuscript and historical scopes correctly')
     else:
-        print('   deferred manuscript: %d results; pending dimensions %s; every paper file unchanged'
-              % (len(_paper_rows), _pending))
+        print('   deferred manuscript: %d results; pending dimensions %s; improved values %s; every paper file unchanged'
+              % (len(_paper_rows), _pending, [r['dimension'] for r in _pending_improvements]))
 elif _current_paper:
     _sota_rows = sum('**SOTA**' in line for line in _wr.splitlines() if line.startswith('|'))
     if tuple(int(x) if x is not None else int(_current_paper.group(1)) for x in _current_paper.groups()) != (_sota_rows, len(claims)):
@@ -2019,7 +2023,7 @@ if '--write-results' in sys.argv and not fail:
     out.append("%d registered lower bounds on the kissing number tau(n), compared with their\nrecorded published baselines. Later superseding records are listed in README.md."
                % len(claims))
     out.append("")
-    out.append("The later 26 October update adds 352800 in 32D, 370368 in 33D, 390982 in 34D and 415314 in 35D, each with two independent exact proof representations. The paper update is deferred; common/manuscript_scope.json records its 66-result state and hashes. The 26 October continuation gives 197584 in 25D, 241742 in 31D, 610394 in 38D, 769180 in 39D and 1126314 in the newly registered dimension 40. All five independent exact replays passed. Fresh primary-source comparisons and the unavailable Cohn retrieval are documented in common/source_review_20261026.json. The 24 October 2026 checkpoint adds exact Coxeter-Todd constructions "
+    out.append("The 27 October support continuation gives 13290258624 in 96D (+851968 over the preceding registered bound) and 7092007692 in 95D (+555008), with all 302887578 support pairs checked in two independent representations. The paper retains its earlier values. The later 26 October update adds 352800 in 32D, 370368 in 33D, 390982 in 34D and 415314 in 35D, each with two independent exact proof representations. The paper update is deferred; common/manuscript_scope.json records its 66-result state and hashes. The 26 October continuation gives 197584 in 25D, 241742 in 31D, 610394 in 38D, 769180 in 39D and 1126314 in the newly registered dimension 40. All five independent exact replays passed. Fresh primary-source comparisons and the unavailable Cohn retrieval are documented in common/source_review_20261026.json. The 24 October 2026 checkpoint adds exact Coxeter-Todd constructions "
                "in dimensions 36 and 37, registers the supplied 2 919 743-point partial-family "
                "43D certificate, and raises 45D to 7 655 056. All 41-46D integer angles "
                "and head dimensions replay; complete-family body populations inherit the "

@@ -8,6 +8,15 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
+> **27 October 2026 — stronger bounds in 95D and 96D.**
+> The new 24,613-support certificate gives **13 290 258 624** in 96D,
+> improving the preceding repository bound by **851 968** points.
+> Its central section gives **7 092 007 692** in 95D, an increase of **555 008**.
+> Coordinate and packed integer replays each check all **302 887 578** support pairs.
+> [Code-input sources](common/source_review_20261027.json) were reviewed on 27 October.
+> These gains compare with our preceding certificate; the table below retains
+> its historical comparison baselines. The paper update remains deferred.
+>
 > **26 October 2026 — four more SOTAs in dimensions 32–35.**
 > Signed octad replacements give **352 800** in 32D and **370 368** in 33D.
 > Dense-code coset heads give **390 982** in 34D; parity-coordinated twelve-head
@@ -191,8 +200,8 @@ the reviewed sources. Higher-dimensional status uses the separate sources below.
 | 92 | 6 218 195 048 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [20D tail](common/published.py) *(derived)* | **6 272 431 575** | **SOTA** | +0.872% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
 | 93 | 6 218 205 368 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [21D tail](common/published.py) *(derived)* | **6 301 636 084** | **SOTA** | +1.34% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
 | 94 | 6 218 225 496 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [22D tail](common/published.py) *(derived)* | **6 357 657 396** | **SOTA** | +2.24% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 95 | 6 218 268 750 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [23D tail](common/published.py) *(derived)* | **7 091 452 684** | **SOTA** | +14.0% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 96 | 6 218 372 160 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [Leech](https://doi.org/10.4153/CJM-1967-017-0) *(derived)* | **13 289 406 656** | **SOTA** | +114% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 95 | 6 218 268 750 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [23D tail](common/published.py) *(derived)* | **7 092 007 692** | **SOTA** | +14.0% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 96 | 6 218 372 160 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [Leech](https://doi.org/10.4153/CJM-1967-017-0) *(derived)* | **13 290 258 624** | **SOTA** | +114% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
 
 
 The historical SOTA period covers this project's run of published records in each
@@ -560,7 +569,9 @@ arms lie in a 30° cap, which caps it structurally; and the maximum-class proble
 every two-point method, the three-point SDP and the subconstituent split at 4680/11 = 425.45.
 
 `common/checkpoint.py` checks complete integrity manifests and runs the new
-source verifiers in temporary copies. The [code-layer package](verifications/improved/dim61-68-95-96-code-layers/)
+source verifiers in temporary copies. `source/dim61_96/verify_support_bits.py`
+in the code-layer package independently checks every support pair using packed integers.
+The [code-layer package](verifications/improved/dim61-68-95-96-code-layers/)
 and [nearest-coset package](verifications/improved/dim73-88-gamma72-cosets/) state their
 exact replay scope and inherited inputs.
 
@@ -716,11 +727,12 @@ same answer. A missing-moments bug hid behind that for a day.
 *New lower bounds for kissing numbers in dimensions 18 through 96* is a 54-page
 account with a state-of-the-art table in §5 and a historical appendix. The
 main table reports 66 of the 70 registered claims. Dimensions 32–35 await the
-next manuscript update, as requested. Every file under `paper/` remains
-unchanged; [the manuscript checkpoint](common/manuscript_scope.json) records
-its published bounds and file hashes. The repository audit checks that state
-and the four pending dimensions. `paper/registry_snapshot.json` separately
-preserves the 53-row arithmetic of the historical September appendix.
+next manuscript update, as do the improved values in 95D and 96D. Every file
+under `paper/` remains unchanged; [the manuscript checkpoint](common/manuscript_scope.json)
+records its published bounds and file hashes. The repository audit checks that
+state and the four pending dimensions, plus the two improved values.
+`paper/registry_snapshot.json` separately preserves the 53-row arithmetic of
+the historical September appendix.
 
 **It is in this repository, at [`paper/`](paper/)** — source, bibliography, `.bbl`, PDF and
 three checkers tied to its existing registry scope. Their synchronization is

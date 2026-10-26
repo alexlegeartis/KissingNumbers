@@ -1,9 +1,10 @@
 {
   "status": "Verified: every physical support pair and exact sign/section counts",
-  "supports": 24561,
-  "previous_supports": 23288,
-  "additional_supports": 1273,
-  "support_pairs_checked": 301609080,
+  "supports": 24613,
+  "previous_supports": 24561,
+  "additional_supports": 52,
+  "comparison": "Immediately preceding registered repository bounds (commit 377dfa6)",
+  "support_pairs_checked": 302887578,
   "maximum_distinct_support_intersection": 12,
   "maximum_occupied_rows": 12,
   "section_coordinates": [
@@ -17,11 +18,11 @@
     7
   ],
   "section_intersection_histogram": [
-    6978,
+    6990,
     0,
-    11363,
+    11418,
     0,
-    5472,
+    5457,
     0,
     704,
     0,
@@ -40,32 +41,32 @@
   ],
   "dimensions": {
     "95": {
-      "bound": 7091452684,
-      "previous_bound": 7080016652,
-      "gain": 11436032,
+      "bound": 7092007692,
+      "previous_bound": 7091452684,
+      "gain": 555008,
       "terms": {
         "dense_section": 4697620480,
         "transversal24_section": 2147483648,
-        "new_support24_section": 245031936,
+        "new_support24_section": 245586944,
         "support6_section": 1316444,
         "ordinary_poles": 176
       }
     },
     "96": {
-      "bound": 13289406656,
-      "previous_bound": 13268549824,
-      "gain": 20856832,
+      "bound": 13290258624,
+      "previous_bound": 13289406656,
+      "gain": 851968,
       "terms": {
         "dense": 8589934592,
         "transversal24": 4294967296,
-        "new_support24": 402407424,
+        "new_support24": 403259392,
         "support6": 2097152,
         "poles": 192
       }
     }
   },
-  "certificate_sha256": "9771a5155fac1b05625f3249ed894860c4e3d837ccc274e2e81b0e642d9f48ff",
-  "seconds": 1.1037397,
+  "certificate_sha256": "5f44dbe7a1364e9682a4092a38ddae07ff6c8bae57206b397de9fe971bad0554",
+  "seconds": 0.9906997000000001,
   "geometry": {
     "norm_squared": 96,
     "dense_min_distance": "min(4*6, 2*12, 24)=24 gives inner product at most 48",

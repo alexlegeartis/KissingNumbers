@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT.parents[2] / 'common'))
 from checkpoint import check_manifest, replay, temporary_source
 from final import results
+from verify95_96 import validate_report
 
 
 def main():
@@ -38,6 +39,7 @@ def main():
         replay(source, 'dim61_96/section95_search.py')
         replay(source, 'dim61_96/support_pairing_certificate.py')
         replay(source, 'dim61_96/mixed_pair_certificate.py')
+        replay(source, 'dim61_96/verify_support_bits.py')
         fresh = {}
         report = json.loads((source/'dim49plus/latitude_compression.json').read_text())
         fresh[61] = report['counts']['total']
@@ -50,7 +52,7 @@ def main():
         for dim, row in pairing['dimensions'].items():
             assert row['bound'] == sum(row['terms'].values())
             fresh[int(dim)] = max(fresh[int(dim)], row['bound'])
-        mixed = json.loads((source/'dim61_96/mixed_pair_certificate.json').read_text())
+        mixed = validate_report(source)
         for dim, row in mixed['dimensions'].items():
             fresh[int(dim)] = max(fresh[int(dim)], row['bound'])
         assert fresh == {r['dimension']:r['total'] for r in results()}

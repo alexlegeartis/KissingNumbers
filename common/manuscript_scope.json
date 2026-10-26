@@ -291,5 +291,17 @@
     "paper/style_scan.py": "dcfe2d787b160c031692a10351117abf75058c1c74a8dae9df80698938709c95",
     "paper/unsupported.py": "c5d74418151bad68e61d800b8b7a4c9881a35be1726a35211e59ecff2fe99826",
     "paper/values.tex": "c8ef059b90fd4b2191084eb2c71f1661ebe314fa00d7b4872a376e5d90d0708a"
-  }
+  },
+  "pending_improvements": [
+    {
+      "dimension": 95,
+      "manuscript_total": 7091452684,
+      "repository_total": 7092007692
+    },
+    {
+      "dimension": 96,
+      "manuscript_total": 13289406656,
+      "repository_total": 13290258624
+    }
+  ]
 }
