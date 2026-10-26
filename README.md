@@ -76,11 +76,22 @@ links point to the [pinned configuration counts and references](common/published
 used in the calculation. The 80D direct sum is also a historical Nebe–Sloane table
 entry, as recorded there.
 
-**Our gain** compares this work with the recorded comparison. **Later gain** compares
-a superseding SOTA with our retained result. Gains below 2x are shown as percentage
-increases; gains of 2x or more are shown as multipliers. Small percentages retain
-enough digits to show improvements of only a few points. **Our method** links to
-our verification package. **Superseding method** names the method behind the displayed
+**Gain over recorded comparison** measures the increase over the historical
+baseline in the same row: `(this work / recorded comparison - 1) * 100%`,
+or the ratio `this work / recorded comparison` when it is at least 2.
+That baseline can precede an intervening record by another author. For example,
+the 25D row compares 197,584 with Ma et al.'s historical 197,056, a gain of
+528 points (+0.268%). The advance over Takhanov-Yun's subsequent 197,583-point
+record is **one point**. In 31D the historical gain is 3,392 points, while
+the advance over Li's 241,079-point record is **663 points**. The
+[25D](verifications/improved/dim25-collective-deformation/) and
+[31D](verifications/improved/dim31-dual-centres/) packages name and link these
+preceding methods.
+
+**Later gain** compares a superseding SOTA with our retained result, using the
+same percentage/ratio convention. Small percentages retain enough digits to
+show improvements of only a few points. **Our method** links to our verification
+package. **Superseding method** names the method behind the displayed
 larger SOTA and links to its repository or article. Full construction notes are
 expandable below.
 
@@ -102,7 +113,7 @@ All 66 constructions exceed their recorded comparisons and remain best in
 the reviewed sources. Higher-dimensional status uses the separate sources below.
 
 
-| dim | recorded comparison | comparison method / source | **this work** | SOTA value | our gain | later gain | SOTA period | our method | superseding method |
+| dim | recorded comparison | comparison method / source | **this work** | SOTA value | gain over recorded comparison | later gain | SOTA period | our method | superseding method |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 18 | 7 654 | [Cohn–Li, BW16 + hexagons](https://arxiv.org/abs/2411.04916v3) | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
 | 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 584** | **SOTA** | +0.268% | — |2026-08-30 to 2026-09-28; since 2026-10-26 | [Collective deformation](verifications/improved/dim25-collective-deformation/) | — |
