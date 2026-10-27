@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+The 27 October [26–31D residual completion package](verifications/improved/dim26-31-residual-completions/) supersedes the earlier 26–31D packages. Its default replay checks all current coordinates independently, including a self-contained shell lemma, and uses exact quadratic-field arithmetic for the final 30D/31D pure tails. Historical packages remain reproducible. No new worldwide record survey is asserted.
+
 The README labels 70 results SOTA against its dated sources. Every labelled result
 has a verification route, but a short run does not freshly establish all of them.
 The commands below check constructions; they do not perform a literature search.
@@ -123,3 +125,4 @@ in 77--79D. The latter derive the theta coefficients and design moments,
 check all finite tail products, and evaluate Caro--Wei over rational numbers.
 They do not enumerate the selected full-shell head sets. The 73D parent
 certificates are replayed as part of this command.
+

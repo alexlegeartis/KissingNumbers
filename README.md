@@ -1,5 +1,7 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
+**27 October 2026 verified checkpoint:** lower bounds in dimensions 26–31 are **201,108; 209,532; 216,680; 226,520; 238,808; 246,638**. [Coordinates, proofs and independent exact replays](verifications/improved/dim26-31-residual-completions/). These improve the previous repository values by 190; 4,896; 11,448; 9,952; 14,528; 4,896 respectively. Historical SOTA labels and comparison sources below are inherited from the repository’s pinned review; this checkpoint is not a fresh worldwide literature survey or an optimality claim. The manuscript remains its previous snapshot.
+
 The kissing number τ(n) is the largest number of unit spheres that can touch a central unit
 sphere in ℝⁿ; equivalently, the largest set of unit vectors with pairwise inner products at
 most 1/2. This repository registers constructions in **70 dimensions**, each with a package
@@ -134,12 +136,12 @@ the reviewed sources. Higher-dimensional status uses the separate sources below.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 18 | 7 654 | [Cohn–Li, BW16 + hexagons](https://arxiv.org/abs/2411.04916v3) | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
 | 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 584** | **SOTA** | +0.268% | — |2026-08-30 to 2026-09-28; since 2026-10-26 | [Collective deformation](verifications/improved/dim25-collective-deformation/) | — |
-| 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **200 918** | **SOTA** | +0.525% | — | 2026-09-08 to 2026-10-05; since 2026-10-25 | [Shared midpoint replacements](verifications/improved/dim26-27-midpoint-replacements/) | — |
-| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **204 636** | **SOTA** | +1.51% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Shared midpoint replacements](verifications/improved/dim26-27-midpoint-replacements/) | — |
-| 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **205 232** | **SOTA** | +0.0292% | — | 2026-09-16 to 2026-10-10; since 2026-10-24 | [Joint Leech layers](verifications/improved/dim28-joint-leech-layers/) | — |
-| 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **216 568** | **SOTA** | +3.38% | — | 2026-09-16 to 2026-10-05; since 2026-10-25 | [Midpoint replacements](verifications/improved/dim29-30-midpoint-replacements/) | — |
-| 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **224 280** | **SOTA** | +1.74% | — | 2026-09-16 to 2026-10-10; since 2026-10-25 | [Midpoint replacements](verifications/improved/dim29-30-midpoint-replacements/) | — |
-| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **241 742** | **SOTA** | +1.42% | — |2026-09-16 to 2026-10-05; since 2026-10-26 | [Midpoints + dual centres](verifications/improved/dim31-dual-centres/) | — |
+| 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 108** | **SOTA** | +0.620% | — | 2026-09-08 to 2026-10-05; since 2026-10-25 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
+| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 532** | **SOTA** | +3.940% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
+| 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **216 680** | **SOTA** | +5.609% | — | 2026-09-16 to 2026-10-10; since 2026-10-24 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
+| 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **226 520** | **SOTA** | +8.126% | — | 2026-09-16 to 2026-10-05; since 2026-10-25 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
+| 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **238 808** | **SOTA** | +8.332% | — | 2026-09-16 to 2026-10-10; since 2026-10-25 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
+| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **246 638** | **SOTA** | +3.424% | — |2026-09-16 to 2026-10-05; since 2026-10-26 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
 | 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32) | **352 800** | **SOTA** | +0.13624% | — | since 2026-10-26 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
 | 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 368** | **SOTA** | +0.0345722% | — | since 2026-10-26 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 982** | **SOTA** | +0.000511535% | — | since 2026-10-26 | [Dense-coset heads](verifications/improved/dim32-35-signed-layers/) | — |
@@ -414,9 +416,9 @@ comparison is given separately by its source.
 | dim | earlier result | intervening result | source | current result |
 |---|---:|---:|---|---:|
 | 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) | 197 584 |
-| 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 216 568 |
-| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 224 280 |
-| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 241 742 |
+| 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 226 520 |
+| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 238 808 |
+| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 246 638 |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 610 394 |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 180 |
 
@@ -773,3 +775,4 @@ did not work.
 
 Alexey Kravatskiy, MIRIAI (Moscow Independent Research Institute of Artificial Intelligence),
 Moscow, Russia. [kravatskii.a@miriai.org](mailto:kravatskii.a@miriai.org)
+

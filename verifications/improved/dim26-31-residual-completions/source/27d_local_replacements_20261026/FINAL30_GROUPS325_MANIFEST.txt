@@ -1,0 +1,23 @@
+Frozen candidate; independent verification pending.
+Selection: global30_costed_exact2_from323_stream_v1_groups325_total238808_candidate.npz
+SHA256: 808b87dfe04f3c3553321b5ad2cbcc8efbf46b753fe27fc0447ab91a2780b50b
+Base: base30_groups325.npz
+SHA256: a0bc0ef49d0a163e84c7515d9b6787e28bec7675d1ca2af295c1cab92090138d
+Extension: extension30_groups325.npz
+SHA256: 4c48503313b62b3aa5213afdfdc1bc3ac0fc5ad3522c5bd6e37468a0e5e0cb8d
+41600 deleted shell owners; 83200 inserted points; 576 free points.
+Ordinary D6 count238796 uses60 pure tails. Replace these with72 exact
+E6 tails from pure_tail30_exceptional.npz, SHA256
+14f522d79042b2672b1e445ada58573ed8390d51b3f395368e2a1bf3ccccbd4a.
+Final candidate count196560-41600+83200+576+72=238808 in Q(sqrt(3)).
+Completion frames [19,5,2,5,7,2]; axis4 changes11 to7 versus verified323.
+Independent difference review must include these relocated free points.
+
+2026-10-27 04:53 UTC: independent final238808 VERIFIED directly against
+the fully replayed320 baseline (not dependent on intermediate323 replay).
+Exact differences:80000 common/3200 added/1920 deleted insertions;
+1216 newly deleted/576 restored shell points;64 added/64 deleted free.
+All current owners/relevant pairs and exact72-tail replacement PASS.
+Final independent report SHA256
+fe687a4824268e9ea332ae79b429c827843d5cd96c0298157e499cfe5b7381e1.
+Opening pending status is superseded by this independent verification.

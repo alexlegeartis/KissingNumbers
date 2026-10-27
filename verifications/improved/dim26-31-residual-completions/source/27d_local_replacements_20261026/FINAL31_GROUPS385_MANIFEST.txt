@@ -1,0 +1,30 @@
+Final discovery candidate, frozen; independent verification pending.
+Selection: global31_costed_exact3_from384_stream_v1_groups385_total246638_candidate.npz
+SHA256: 3972f6f977393b1c5edc425c473306330149e0a2a2bc9d2f389287a0e033f852
+Base: base31_groups385.npz
+SHA256: 3da34aa68f3cb3ce99601b766fc0a170757b83651b025d81527452464c4e9a9f
+Extension: extension31_groups385.npz
+SHA256: ee86eaaa21092d4e686f4969bc4366eb01dcda79d81684255e53763017894c59
+49280 deleted shell owners;98560 inserted integer points;672 free points.
+Ordinary D7 count246596 includes84 pure tails. Replace those with126
+exact E7 tails from pure_tail31_exceptional.npz, SHA256
+3a6760930e99381a2ece36fea83f78011d5b5ee43b4c5f587cfc5a32f9489f61.
+Final exact Q(sqrt(2)) candidate count:
+196560-49280+98560+672+126=246638.
+Completion frames [22,24,6,1,7,2,0]; axis4 changes5 to7 versus384.
+Independent replay must include relocated free points and restored shell
+owners, not merely the four newly inserted groups.
+Discovery: one3-old-to4-new move from384. Pool complete3333960labels;
+sparse search stopped after30456 of89805 relevant deletion triples upon
+the first compatible quadruple with full+128 gain. NOT an exhaustive
+negative or local-optimality claim for385. No further discovery planned.
+
+2026-10-27 05:31 UTC: final246638 independently VERIFIED directly against
+the pinned fully replayed383 baseline, including changed free points.
+Exact differences:96896 common/1664 added/1152 deleted insertions;
+448 restored/704 newly removed shell points;64 added/64 deleted free.
+Integer verification31_246596.json SHA256
+6a5859e8c061d2f642f925a4bb666d036179896e6992c615b885183ba79c1e53.
+Exact upgrade verification31_246638_exceptional.json SHA256
+8303c0b0afb44b57634f2777f6b11e0256869581e413b2216647a3fe611c1b71.
+Opening pending status is superseded by these independent PASS reports.

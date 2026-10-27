@@ -1,0 +1,10 @@
+# Exact cube-bounded pure-tail replacements
+Independent generator and all-pairs verifier: verify_exceptional_tails.py. Coordinates are integer pairs(A,B) representingA+B√d; all signs and comparisons use integer squares, not floating-point arithmetic. The generated sets exactly equal the hash-pinned creator NPZ sets.
+
+In6coordinates take40 vectors with two±4 among the first5 coordinates, plus32 vectors(2s1,...,2s5,2√3 product(s)), s_i∈{−1,1}. Norms are32. Among the latter, ifk signs differ, the dot product is20−8k+12(−1)^k, which is at most16 for1≤k≤5. Root/mixed products are at most16; distinct root products at most16. Every coordinate has absolute value≤4. Count72.
+
+In7coordinates take60 roots with two±4 among the first6, two poles±4√2e7, and64 vectors(2s1,...,2s6,2√2t) with product(s)=1,t=±1. Norms are32. For two mixed vectors the product is24−8k+8tt′, wherek is even; distinct cases give at most16. Root/mixed and pole/mixed products are at most16. Rotatecoordinates1,7 by(x1+x7,x7−x1)/√2. Products/norms are preserved. Root coordinates become at most2√2, poles become±4, and mixed rotated coordinates have form±2±√2, all within[−4,4]. Count126. The exact verifier checks every pair as well.
+
+For any existing insertion tail having two±2 coordinates, a new cube-bounded pure tail has product≤2·4+2·4=16. For any free tail having one±4 coordinate, product≤16. Equator products vanish. Thus replacing the old pureD_m tails by either exact tail code preserves all crossbounds; the rest of the existing configuration must already be independently verified. Tail-only points cannot duplicate nonpure points with nonzero head; the frozen verified base and free heads have positive head norm.
+
+For the already verified30D277-group construction, all70912 insertion-tail patterns and576 free-tail patterns are checked explicitly in the script. Removing60 old puretails and adding72 proves232664 points. The126-point7-tail set alone does not certify a new31D nonpure base; that requires separate replay and pattern verification.

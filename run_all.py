@@ -186,6 +186,8 @@ JOBS = [
      os.path.join(V, 'improved', 'dim49-63-p48-caps'), ['verify_october.py'], 1.0, True),
     ("october-codes: compression, support layers and central sections",
      os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py'], 5.0, True),
+    ("dims 26-31: residual completions, full independent exact replay",
+     os.path.join(V, 'improved', 'dim26-31-residual-completions'), ['verify.py'], 30.0, True),
     ("dims 26, 27: shared midpoint replacements, exact independent replay",
      os.path.join(V, 'improved', 'dim26-27-midpoint-replacements'), ['verify.py'], 1.0, True),
     ('dims 32-35: signed layers and coordinated heads, two independent exact proofs',
@@ -375,6 +377,7 @@ def _sota_jobs(quick=False):
         ('dim31-dual-centres', ('verify.py',)),
         ('dim40-affine-shells', ('verify.py',)),
 
+        ('dim26-31-residual-completions', ('verify.py',)),
         ('dim26-27-midpoint-replacements', ('verify.py',)),
         ('dim28-joint-leech-layers', ('verify.py',)),
         ('dim29-30-midpoint-replacements', ('verify.py',)),
@@ -455,6 +458,7 @@ def _sota_coverage(jobs, results=None):
         ('dim31-dual-centres', [31], [('verify.py',)], ''),
         ('dim40-affine-shells', [40], [('verify.py',)], ''),
 
+        ('dim26-31-residual-completions', [26,27,28,29,30,31], [('verify.py',)], 'full independent coordinate replays and self-contained shell lemma; exact quadratic fields in 30D/31D'),
         ('dim26-27-midpoint-replacements', [26, 27], [('verify.py',)], ''),
         ('dim28-joint-leech-layers', [28], [('verify.py',)], ''),
         ('dim29-30-midpoint-replacements', [29, 30], [('verify.py',)], ''),
@@ -860,3 +864,4 @@ def main():
 
 if __name__ == '__main__':
     raise SystemExit(main())
+

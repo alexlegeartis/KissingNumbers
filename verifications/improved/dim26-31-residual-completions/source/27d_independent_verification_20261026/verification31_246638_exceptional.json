@@ -1,0 +1,20 @@
+{
+  "status": "PASS_EXACT_UPGRADE",
+  "dimension": 31,
+  "verified_integer_base_count": 246596,
+  "replacement_total": 246638,
+  "old_pure_count": 84,
+  "new_pure_count": 126,
+  "base_sha256": "3da34aa68f3cb3ce99601b766fc0a170757b83651b025d81527452464c4e9a9f",
+  "extension_sha256": "ee86eaaa21092d4e686f4969bc4366eb01dcda79d81684255e53763017894c59",
+  "pure_tail_sha256": "3a6760930e99381a2ece36fea83f78011d5b5ee43b4c5f587cfc5a32f9489f61",
+  "integer_verification_report_sha256": "6a5859e8c061d2f642f925a4bb666d036179896e6992c615b885183ba79c1e53",
+  "old_tail_pattern": "exactly two\u00b12",
+  "free_tail_pattern": "exactly one\u00b14",
+  "nonpure_head_norms_squared": [
+    24,
+    16
+  ],
+  "proof": "cube bound4 implies all new/old and new/free products\u226416; equator products0; exact pure pairs/norms checked; nonzero heads exclude duplicates",
+  "scope": "Depends on exact incremental nonpure verification report chained to pinned full baseline report and matching frozen inputs, not compressed group compatibility."
+}

@@ -1,0 +1,8 @@
+{
+  "base_certificate_git_blob_sha": "ec5b66d9ff67136322a0a856f40f7fbdf8da3981",
+  "url": "https://github.com/alexlegeartis/KissingNumbers/blob/main/verifications/improved/dim26-27-midpoint-replacements/source/certificate26_200918.npz",
+  "remote_bytes_sha256": "6a1fcba8c37657cd6111bb2954c354e5a2fc3668ade9c6551c5c13db3156ca43",
+  "remote_byte_match_verified": true,
+  "comparison_source": "Current authenticated defaultbranch README in primary_provenance.json explicitly lists200918 in26D.",
+  "scope": "Old irrational six-point purehexagon is removed; this verification covers all retained vectors and the new integer replacements, not that discarded hexagon."
+}

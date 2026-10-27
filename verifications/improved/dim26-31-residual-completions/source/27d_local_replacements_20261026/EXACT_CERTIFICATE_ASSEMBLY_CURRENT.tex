@@ -1,0 +1,55 @@
+\section*{Exact assembly of the final coordinate certificates}
+All vectors have squared norm32 and distinct-pair inner product at most16.
+Dividing every coordinate by $\sqrt{32}$ gives a unit spherical code with
+inner products at most $1/2$, hence a kissing configuration.
+
+Let $S$ be the196560-point integer Leech shell generated independently by
+the supplied verifier from binary Golay polynomial \texttt{0xC75}.
+For dimension $d$, pad its rows with $d-24$ zero coordinates, remove the
+rows named \texttt{removed\_leech} in the base NPZ, and form the disjoint union
+with \texttt{new\_points}, \texttt{free\_heads} from the extension NPZ, and
+the pure-tail set described below. The arrays of midpoint-owner indices
+are certificates, not extra points. No historical certificate is added
+to this union: predecessor files are used only by incremental verifiers.
+
+\begin{center}\begin{tabular}{c|l|l|r}
+$d$&base file&extension file&verified count at05:31 UTC\\\hline
+26&certificate26\_200918.npz&extension26\_201108.npz&201108\\
+27&base27\_groups99.npz&extension27\_groups99.npz&209532\\
+28&base28\_groups154.npz&extension28\_groups154.npz&216680\\
+29&base29\_groups230.npz&extension29\_groups230.npz&226520\\
+30&base30\_groups325.npz&extension30\_groups325.npz&238808\\
+31&base31\_groups385.npz&extension31\_groups385.npz&246638
+\end{tabular}\end{center}
+
+In dimension26 use the four square tails stored as
+\texttt{pure\_tail\_points} in its extension, not the old six hexagon tails.
+In dimensions27,28,29 use respectively the12,24,40 vectors with two
+entries $\pm4$ and all other tail entries zero; prepend24 zeros.
+
+In dimension30 use the72 tails represented exactly by integer arrays
+$A,B$ in \texttt{pure\_tail30\_exceptional.npz} as $A+B\sqrt3$.
+In dimension31 use the126 tails in
+\texttt{pure\_tail31\_exceptional.npz} as $A+B\sqrt2$.
+Prepend24 zeros. These \emph{replace}, rather than supplement, the ordinary
+60 and84 pure $D_6,D_7$ tails. The metadata for the integer predecessor
+therefore differs from the final count by12 or42.
+
+For325 groups in dimension30 the final count is
+$196560-41600+83200+576+72=238808$.
+For384 groups in dimension31 it is
+$196560-49152+98304+672+126=246510$.
+The stronger verified385-group dimension31 construction uses
+\texttt{base31\_groups385.npz} and \texttt{extension31\_groups385.npz},
+with count $196560-49280+98560+672+126=246638$.
+Its independent replay and exact E7 upgrade both passed at05:31 UTC.
+The final31D package therefore uses385. The corresponding FINAL manifest
+records all input and verification-report hashes; the384 formula above
+is retained only to distinguish that verified predecessor.
+
+Python plus NumPy and the standard library suffice for the independent
+verifiers. \texttt{SHELL\_PROOF.md} supplies the self-contained shell
+pair proof; \texttt{EXCEPTIONAL\_TAIL\_PROOF.md} supplies the algebraic
+pure-tail proof. An incremental verifier additionally needs its explicitly
+pinned predecessor certificate and verification report, as listed in its
+dependency manifest. Those dependencies cannot be silently omitted.

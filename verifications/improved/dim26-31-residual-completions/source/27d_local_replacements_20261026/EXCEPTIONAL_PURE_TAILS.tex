@@ -1,0 +1,52 @@
+\section*{Larger pure-tail sets in dimensions30 and31}
+These replacements do not change any Leech-shell deletion, inserted
+midpoint group, or free head. Every inserted group's tail has squared
+norm8, so its inner product with any pure tail of squared norm32 is at
+most16 by Cauchy--Schwarz. Every free point has tail $\pm4e_i$, so a
+pure tail with all coordinate absolute values at most4 also clears all
+free points. Its inner product with every retained shell point is zero.
+Thus it suffices to construct a norm32 kissing configuration inside
+$[-4,4]^m$ in the tail space.
+
+\paragraph{Six tails:72 points instead of60.}
+Take the40 vectors $\pm4e_i\pm4e_j$ on the first five coordinates,
+and the32 vectors
+\[
+ (2s_1,\ldots,2s_5,2\sqrt3\,s_1s_2s_3s_4s_5),\qquad s_i=\pm1.
+\]
+All have squared norm32 and coordinate absolute values at most4.
+Two spinor-type vectors at Hamming distance$d$ have inner product
+$20-8d+12(-1)^d$, at most16 unless identical. Their inner products with
+any of the40 ordinary roots are at most16. The ordinary roots also
+satisfy the usual norm32 pair bound16. Replacing the60 pure $D_6$ roots
+by these72 points therefore gains12.
+
+\paragraph{Seven tails:126 points instead of84.}
+Start with the60 vectors $\pm4e_i\pm4e_j$ on the first six coordinates,
+the two vectors $\pm4\sqrt2e_7$, and the64 vectors
+\[
+ (2s_1,\ldots,2s_6,2\sqrt2t),\qquad \prod_{i=1}^6s_i=1,\quad t=\pm1.
+\]
+Their norms are32. For spinor pairs the first-six Hamming distance$d$
+is even and the inner product is $24-8d+8tt'$, at most16 for distinct
+points. All other cross-family pair bounds follow directly from the
+displayed coordinates. Rotate coordinates1 and7 by
+\[
+ y_1=(x_1+x_7)/\sqrt2,\qquad y_7=(x_7-x_1)/\sqrt2.
+\]
+The formerly long axis becomes $(\pm4,\pm4)$ in these two coordinates;
+ordinary roots acquire coordinates at most$2\sqrt2$ there; spinor
+coordinates become $2t\pm\sqrt2s_1$. Consequently all coordinates
+have absolute value at most4. The rotation preserves norms and pair
+inner products. Replacing84 pure $D_7$ roots by these126 points gains42.
+
+\paragraph{Exact certificates.}
+The frozen files \texttt{pure\_tail30\_exceptional.npz} and
+\texttt{pure\_tail31\_exceptional.npz} store coordinates as $A+B\sqrt d$
+with integer matrices$A,B$, $d=3,2$ respectively. In both cases the
+radical part $AB^T+BA^T$ of the Gram matrix is identically zero, so all
+norm and pair checks use the integer matrix $AA^T+dBB^T$.
+The coordinate bound is certified by
+$dB_{ij}^2\leq(4-|A_{ij}|)^2$ and $|A_{ij}|\leq4$.
+Independent audit status and hashes are recorded separately; this note
+is the construction argument, not a claim of a universal optimal tail code.

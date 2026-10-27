@@ -1,0 +1,13 @@
+{
+  "research/27d_independent_verification_20261026/verify30_238796_full_final.py": "14b383adbefba1a16882902273b3438c38aad78e6d6d56be6d46d82a164e365e",
+  "research/27d_independent_verification_20261026/verify31_246596_full_final.py": "22fe55c01a58563551784ecdb81bf2e33faa6fdd4a844d9aaeb483c3194c3e62",
+  "research/27d_independent_verification_20261026/apply_exact_tail_upgrade_full_final.py": "331daa52320890654c3938d54d8491c75af65331a894622822afcc1254fe3006",
+  "research/27d_independent_verification_20261026/SHELL_PROOF.md": "21d014557fb10dcb5fa16ddfa7374ef98f256e22ee6f18e6379e686ba73937c1",
+  "research/27d_independent_verification_20261026/EXCEPTIONAL_TAIL_PROOF.md": "e4bd3152de4cb15bf8ae0830bd83f3c8b6d5666074dcc5d193c86d185f42cefe",
+  "research/27d_local_replacements_20261026/base30_groups325.npz": "a0bc0ef49d0a163e84c7515d9b6787e28bec7675d1ca2af295c1cab92090138d",
+  "research/27d_local_replacements_20261026/extension30_groups325.npz": "4c48503313b62b3aa5213afdfdc1bc3ac0fc5ad3522c5bd6e37468a0e5e0cb8d",
+  "research/27d_local_replacements_20261026/pure_tail30_exceptional.npz": "14f522d79042b2672b1e445ada58573ed8390d51b3f395368e2a1bf3ccccbd4a",
+  "research/27d_local_replacements_20261026/base31_groups385.npz": "3da34aa68f3cb3ce99601b766fc0a170757b83651b025d81527452464c4e9a9f",
+  "research/27d_local_replacements_20261026/extension31_groups385.npz": "ee86eaaa21092d4e686f4969bc4366eb01dcda79d81684255e53763017894c59",
+  "research/27d_local_replacements_20261026/pure_tail31_exceptional.npz": "3a6760930e99381a2ece36fea83f78011d5b5ee43b4c5f587cfc5a32f9489f61"
+}

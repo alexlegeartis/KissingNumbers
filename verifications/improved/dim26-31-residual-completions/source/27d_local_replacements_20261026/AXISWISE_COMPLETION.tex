@@ -1,0 +1,43 @@
+\section*{Axiswise completion when every normal frame is occupied}
+The free-head completion does not require a common unused frame.
+For each tail coordinate $a$, choose a frame $f_a$ such that every selected
+group on $f_a$ has its $a$th tail coordinate zero.  Let $R_{f_a}$ be the
+32 residual vectors, embedded in the complementary16 coordinates.  They
+have squared norm16 and distinct residual inner products at most0.
+Adjoin the16 signed normal coordinate vectors $\pm4e_i$ on the octad.
+These48 heads are pairwise nonpositive and each has squared norm16.
+For this coordinate insert $(h,\pm4e_a)$ for all48 heads.
+
+Points associated with the same signed tail axis have inner product
+at most16 by the nonpositive head bound.  Opposite signs on that axis
+only reduce inner products.  Points on different tail axes have tail
+inner product zero, and their head inner product is at most16 by
+Cauchy--Schwarz, even if their residual frames differ.
+
+For an inserted group on a frame different from $f_a$, the residual
+inner product is at most8 and the tail inner product at most8.  On
+$f_a$ itself, the residual inner product is at most16 and the chosen
+tail coordinate is zero.  Normal coordinate heads use the existing
+absolute-coordinate bound2.  Thus all these new points clear every
+inserted group.  For the full-shell check, write each residual head as $h=(x+y)/2$
+with orthogonal shell owners $x=h+a$, $y=h-a$, where $h\perp a$
+and $\|h\|^2=\|a\|^2=16$.  Its dot product with either owner
+is exactly16; with every other shell point it is an average of two
+inner products at most16.  A normal coordinate head $4e_i$ similarly
+is the midpoint of the shell points $4e_i+4e_j$ and $4e_i-4e_j$.
+Thus every free head clears the entire shell, including its own owners.  Scaled pure $D_m$ tail roots have squared norm32 and
+coordinate absolute values4, and clear these points and all groups.
+There are therefore $96m$ completion points and $2m(m-1)$ pure tails
+whenever a qualifying frame exists separately for each of the $m$ axes.
+
+The29-dimensional160-group candidate uses all135 normal frames, but
+qualifying frames for the five axes are respectively $(2,1,2,1,0)$.
+Its expanded certificate has20480 distinct deletions,40960 distinct
+insertions,480 free-head points and40 pure-tail points.  Its candidate
+cardinality is
+\[
+196560-20480+40960+480+40=217560.
+\]
+Certification status is supplied separately by the independent complete
+coordinate replay.  The frozen hashes are recorded in
+\texttt{expanded\_dim29\_groups160.json}.

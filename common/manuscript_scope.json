@@ -294,6 +294,36 @@
   },
   "pending_improvements": [
     {
+      "dimension": 26,
+      "manuscript_total": 200918,
+      "repository_total": 201108
+    },
+    {
+      "dimension": 27,
+      "manuscript_total": 204636,
+      "repository_total": 209532
+    },
+    {
+      "dimension": 28,
+      "manuscript_total": 205232,
+      "repository_total": 216680
+    },
+    {
+      "dimension": 29,
+      "manuscript_total": 216568,
+      "repository_total": 226520
+    },
+    {
+      "dimension": 30,
+      "manuscript_total": 224280,
+      "repository_total": 238808
+    },
+    {
+      "dimension": 31,
+      "manuscript_total": 241742,
+      "repository_total": 246638
+    },
+    {
       "dimension": 95,
       "manuscript_total": 7091452684,
       "repository_total": 7092007692
