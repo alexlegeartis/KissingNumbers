@@ -141,7 +141,7 @@ the reviewed sources. Higher-dimensional status uses the separate sources below.
 | 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **216 680** | **SOTA** | +5.609% | — | 2026-09-16 to 2026-10-10; since 2026-10-24 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
 | 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **226 520** | **SOTA** | +8.126% | — | 2026-09-16 to 2026-10-05; since 2026-10-25 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
 | 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **238 808** | **SOTA** | +8.332% | — | 2026-09-16 to 2026-10-10; since 2026-10-25 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
-| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **246 638** | **SOTA** | +3.424% | — |2026-09-16 to 2026-10-05; since 2026-10-26 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
+| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **246 638** | **SOTA** | +3.477% | — |2026-09-16 to 2026-10-05; since 2026-10-26 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
 | 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32) | **352 800** | **SOTA** | +0.13624% | — | since 2026-10-26 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
 | 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 368** | **SOTA** | +0.0345722% | — | since 2026-10-26 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 982** | **SOTA** | +0.000511535% | — | since 2026-10-26 | [Dense-coset heads](verifications/improved/dim32-35-signed-layers/) | — |
@@ -252,17 +252,7 @@ improvement is claimed in 47D or 48D.
 
 - **25D:** 1016 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point
 
-- **26D:** Shared midpoint replacements delete 4 352 Leech points and insert 8 704 points on two orthogonal tail directions. Six pure hexagon points give 200 918. The earlier coset triangles and free-head construction remain in their package.
-
-- **27D:** Shared midpoint replacements in three tail planes delete 8 064 Leech points and insert 16 128 points. Twelve cuboctahedron points give 204 636. Exact midpoint identities and every inserted-pair product replay from the coordinate certificate; the earlier joint coset construction is retained.
-
-- **28D:** Jointly select even heads over Li's eight odd Leech blocks and a larger auxiliary layer: 192 352 equator points, 12 624 caps and 256 auxiliary points give 205 232. The earlier norm-8 frame layer is retained.
-
-- **29D:** The same frame layer one dimension up, on the whole cross-polytope of ℝ⁵ — 480 points, deleting nothing
-
-- **30D:** The dimension-28 norm-8 frame layer at height √2: a whole Leech frame of heads carries the whole cross-polytope of ℝᵏ, 96k points, deleting nothing
-
-- **31D:** The norm-8 frame layer at height √2, 672 points deleting no equator point, carried by 42 pairwise disjoint type-B classes holding 10 328 of 10 416 owner lines, with an axis of 118 of 126
+- **26D–31D (current):** Shared midpoint replacements with axiswise residual-head completion give 201 108, 209 532, 216 680, 226 520, 238 808 and 246 638. The final 30D/31D pure tails are represented exactly over Q(√3)/Q(√2), replacing—not supplementing—the ordinary D6/D7 tails. [Coordinate assembly and independent full replays](verifications/improved/dim26-31-residual-completions/) describe all components. Earlier midpoint, joint-Leech, frame-layer and dual-centre packages remain as historical constructions.
 
 - **36D:** Three Coxeter–Todd lattices with 32 643 explicit three-point phase orbits over a fixed 403 704-point base; exact shells and angles give 501 633 points
 
