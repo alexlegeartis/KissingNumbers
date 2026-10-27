@@ -408,8 +408,8 @@ for _d in range(73, 96):
 STATUS[96] = ('external', REASON['external-96'])
 for _d in (36, 37):
     STATUS[_d] = ('cosets', 'exact Coxeter-Todd short shells and phase-orbit angles '
-                  'replay; 37D adds two latitude layers. Larger phase codes remain open '
-                  '(dim36-37-coxeter-todd/verify.py, phase/proof.txt)')
+                  'replay in two representations; 37D adds partial latitude orbits. Larger refills remain open '
+                  '(dim36-37-coxeter-todd/verify.py, completion/proof.md)')
 for _d in range(41, 47):
     STATUS[_d] = ('heads',
                   'independently normalized P48n body families with rational heads and pure '

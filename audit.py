@@ -345,6 +345,16 @@ _cos_spec = importlib.util.spec_from_file_location(
     'coxeter_todd_final', os.path.join(IMP, COS_PACKAGE, 'final.py'))
 _cos_driver = importlib.util.module_from_spec(_cos_spec)
 _cos_spec.loader.exec_module(_cos_driver)
+# Preserve the preceding exact phase witness as registered history.
+with open(os.path.join(IMP, COS_PACKAGE, 'phase/certificate.json')) as _old_stream:
+    import json as _cos_json
+    _old_phase = _cos_json.load(_old_stream)
+_old36 = 403704 + 3*len(_old_phase['phase_orbits'])
+_old37 = _old36 + 18*len(_old_phase['lift_body_cosets'])
+assert (_old36, _old37) == (_old_phase['points_36'], _old_phase['points_37'])
+for _d, _v in ((36, _old36), (37, _old37)):
+    add(_d, _v, COS_PACKAGE, 'phase/verify.py (retained earlier exact phase witness)')
+
 for _record in _cos_driver.results():
     add(_record['dimension'], _record['total'], COS_PACKAGE,
         'verify.py (exact short-shell enumeration and phase-orbit angles; '
@@ -1983,8 +1993,8 @@ if '--write-results' in sys.argv and not fail:
                              '(ceilings.py 31).  Supersedes the height-sqrt3 '
                              'layer, now in verifications/superseded/dim31-sqrt3-layer/',
         'dim36-37-coxeter-todd': 'three Coxeter-Todd quotient codes with exact shell '
-                                  'enumeration and phase-orbit angles checked; '
-                                  '37D adds two latitude layers',
+                                  'enumeration, phase refill and independent coordinate angles checked; '
+                                  '37D adds partial latitude orbits',
         'dim61-68-95-96-code-layers': 'explicit binary compression, central sections and enlarged support layers; exact code and geometry replay',
         'dim26-31-residual-completions': 'shared midpoint replacements, axiswise residual heads and exact exceptional pure tails; independent full-coordinate proof',
         'dim26-27-midpoint-replacements': 'shared midpoint replacements on orthogonal tail directions; exact Leech membership, midpoint identities and all inserted-pair products',
@@ -2023,6 +2033,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("%d registered lower bounds on the kissing number tau(n), compared with their\nrecorded published baselines. Later superseding records are listed in README.md."
                % len(claims))
+    out.append("")
+    out.append("The 28 October Coxeter-Todd continuation gives 501672 in 36D (+39) and 505488 in 37D (+129), with two independent exact representations and reproducible phase trades.")
     out.append("")
     out.append("The 28 October mixed-tail weighted-priority continuation gives 6,218,490,542 in 77D, 6,218,688,770 in 78D and 6,218,922,650 in 79D, improving the preceding certificates by 25,526, 2,890 and 10,614 points. All 22,848,388 ordered tail products, joint tail/pole ranks and rational expectations are checked exactly. These are existence proofs under the stated Gamma72/design inputs; selected head sets are not enumerated. The manuscript retains its earlier snapshot.")
     out.append("")

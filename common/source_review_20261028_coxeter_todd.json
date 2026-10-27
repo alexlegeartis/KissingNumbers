@@ -1,0 +1,31 @@
+{
+  "reviewed_on": "2026-10-28",
+  "timezone": "Europe/Moscow",
+  "packingstar": {
+    "repository": "https://github.com/CDM1619/PackingStar",
+    "commit": "67be454b83af4287e1a2b61e5bd8c3596a8061d6",
+    "verified_as_of_reported": "2026-10-26",
+    "reported_lower_bounds": {
+      "26": 201134,
+      "27": 209586,
+      "28": 221664,
+      "29": 231636,
+      "30": 247952,
+      "31": 250938
+    },
+    "scope": "Read public README and paper; competing coordinate files were not independently replayed. No PackingStar implementation or coordinate data was copied."
+  },
+  "cohn": {
+    "url": "https://cohn.mit.edu/kissing-numbers/",
+    "retrieval": "HTTP 502; retained dated historical comparison"
+  },
+  "method": "Independent finite-graph correction/refill in Coxeter-Todd phase and latitude orbit pools.",
+  "new_repository_bounds": {
+    "36": 501672,
+    "37": 505488
+  },
+  "previous_repository_bounds": {
+    "36": 501633,
+    "37": 505359
+  }
+}

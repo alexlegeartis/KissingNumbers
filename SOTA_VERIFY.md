@@ -41,7 +41,7 @@ not a new mathematical verification. All commands require assertions enabled.
 | 38 | Rebuild all cap classes and equatorial lines; check all 1,352 joint latitude families and retained/coordinate axes with integers | Golay lattice congruences and weight enumerator prove the parent minimum |
 | 39 | Replay sparse supports and root replacements; check every relative pair of 1,281 dense sign orbits | Bounded integer arithmetic and complete Walsh enumeration |
 | 32–35 | Two independent exact representations: full dense-code enumeration, signed-support checks, normalized head products and explicit coordinate checks | Python 3.9+ and NumPy; no search or unverified population input |
-| 36–37 | Exact short shells, phase orbits and latitude extension | Parent lattice facts stated in the package |
+| 36–37 | Two exact routes: fresh short-shell enumeration, phase refill, partial latitude orbits, 97,968 expanded phase points and 1,908 latitude bodies | Python 3.9+ and NumPy; no unverified parent population |
 | 41–46 | Exact head ranks and angles; explicit tiny bodies and added medium classes | Complete-family population identities and tables are inherited; the latest large shells have not all been freshly enumerated |
 | 49–60 | All 7,387 base lines, 577 integral isometries, 3,901,694 distinct lines and cap directions | Published parent lattice minimum/shell size; the 12D Coxeter–Todd direction count is a literature input |
 | 61–63, 95–96 | Rebuild explicit codes, sparse layers, sections and counts | Published parent code inputs stated by the source proofs |
