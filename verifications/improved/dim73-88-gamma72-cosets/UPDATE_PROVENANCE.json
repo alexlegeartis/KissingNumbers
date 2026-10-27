@@ -579,5 +579,23 @@
       79
     ],
     "proof_type": "Explicit 73D addition; exact finite-graph existence in 77--79D"
+  },
+  "weighted_norm10_continuation_20261028": {
+    "base_commit": "a6ba3387f2b0b54942812790a1ddf19bb4e99431",
+    "dimensions": {
+      "77": 6218490542,
+      "78": 6218688770,
+      "79": 6218922650
+    },
+    "gains_over_preceding_certificate": {
+      "77": 25526,
+      "78": 2890,
+      "79": 10614
+    },
+    "method": "Mixed normalized tail shells and integer-rate exponential priorities; exact finite-graph existence proof.",
+    "verifier": "source/norm10/weighted_norm10_certificate.py",
+    "input_tails_sha256": "48fd7fe54876017351488fbf47e7e889ccea4dd1064775500c2f8f6a3d208d40",
+    "packingstar_reviewed_commit": "67be454b83af4287e1a2b61e5bd8c3596a8061d6",
+    "proof_scope": "Published Gamma72 minimum and all-shell 11-design theorem; no enumerated selected head set."
   }
 }

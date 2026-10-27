@@ -15,6 +15,8 @@ def main():
         replay(source, 'dim73_surgery/verify_surgery.py')
         replay(source, 'norm10/verify_shell10.py')
         replay(source, 'norm10/norm10_bound_certificate.py')
+        replay(source, 'norm10/weighted_norm10_certificate.py')
+        replay(source, 'norm10/verify_weighted_independent.py')
         replay(source, 'dim61_96/gamma72_coset_certificate.py')
         replay(source, 'dim61_96/gamma72_repaired_verify.py')
         for count in [4, 8, 16]:

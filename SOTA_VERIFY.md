@@ -47,7 +47,7 @@ not a new mathematical verification. All commands require assertions enabled.
 | 66–68 | Layer geometry and counts in quick mode | `--sota` also enumerates all 68,719,476,736 words of the [73,36,16] code; quick mode reads its recorded distance certificate |
 | 69–71 | Exact moment/LP certificates and exhibited section Grams | Published Gamma72 minimum and design theorem |
 | 73 | Completed lattice certificate, int64 cap surgery, 6235 norm-ten additions and non-lattice witness (`verify73.py`) | Published Gamma72 parent facts; `verify73.py --rebuild` regenerates the block enumerations |
-| 77–79 | Exact theta coefficients, shell moments, finite tail ranks/products and rational Caro–Wei bound (`verify_norm10.py`) | Published Gamma72 minimum and Venkov all-shell 11-design theorem; existence proof without a full selected head list |
+| 77–79 | Exact theta coefficients, shell moments, mixed-tail ranks/products and rational weighted-priority bound (`verify_norm10.py`, or fast `verify_weighted_norm10.py`) | Published Gamma72 minimum and Venkov all-shell 11-design theorem; existence proof without a full selected head list |
 | 74–76, 80–86 | Nearest-subset checks, integral isometries, tail ranks and all retained cross-head inequalities | Deferred in quick mode; about an hour for the full replay. The 21 completed block lists and completion metadata are inputs; the original enumerations are not rerun |
 | 87–94 | Complete CPU replay of the compact class certificate, direction partitions, axis geometry and counts | Published Gamma72 minimum and shell size |
 
@@ -122,7 +122,11 @@ verifier includes both replays.
 `python verifications/improved/dim73-88-gamma72-cosets/verify_norm10.py`
 checks the explicit 73D addition and the exact whole-shell existence bounds
 in 77--79D. The latter derive the theta coefficients and design moments,
-check all finite tail products, and evaluate Caro--Wei over rational numbers.
+check all finite tail products, and evaluate the weighted-priority refinement
+of Caro--Wei over rational numbers. Mixed shells give 760 tails in 77D and
+2232 in 78D; 79D reweights its existing 4158 tails. The fast command
+`python verifications/improved/dim73-88-gamma72-cosets/verify_weighted_norm10.py`
+replays the new certificates alone, including all 22,848,388 ordered products.
 They do not enumerate the selected full-shell head sets. The 73D parent
 certificates are replayed as part of this command.
 

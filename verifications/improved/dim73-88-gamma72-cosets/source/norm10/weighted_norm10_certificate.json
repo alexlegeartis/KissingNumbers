@@ -1,0 +1,168 @@
+{
+  "status": "PASS",
+  "certificate_type": "Exact weighted-priority finite-graph existence proof; no full head list",
+  "theta_coefficients": [
+    1,
+    0,
+    0,
+    0,
+    6218175600,
+    15281788354560
+  ],
+  "modular_form_coefficients": [
+    -2160,
+    965520,
+    -27302400
+  ],
+  "minimal_shell_absolute_products_against_norm10": {
+    "0": 2328777990,
+    "1": 3017784000,
+    "2": 793638000,
+    "3": 75852000,
+    "4": 2112250,
+    "5": 11360
+  },
+  "norm10_absolute_product_distribution": {
+    "0": 5118989848896,
+    "1": 7238164864000,
+    "2": 2503639594500,
+    "3": 395496128000,
+    "4": 24994840000,
+    "5": 500966912,
+    "6": 2112250,
+    "10": 2
+  },
+  "dimensions": {
+    "77": {
+      "bound": 6218490542,
+      "equator": 6218175600,
+      "head_scale_squared": "16/25",
+      "tail_vectors": 760,
+      "norm_rate_populations": [
+        [
+          32,
+          818,
+          160
+        ],
+        [
+          32,
+          1050,
+          40
+        ],
+        [
+          40,
+          882,
+          80
+        ],
+        [
+          40,
+          1000,
+          480
+        ]
+      ],
+      "guaranteed_antipodal_pairs": 157451,
+      "pure_tail_points": 40,
+      "priority_expectation_numerator": "8741348052756441807309242745108048929966279627522703360",
+      "priority_expectation_denominator": "55518185072219805499063876400628324014066400684487",
+      "weighted_closed_profiles": [
+        [
+          818,
+          35109907637362,
+          160
+        ],
+        [
+          882,
+          35105590211710,
+          80
+        ],
+        [
+          1000,
+          35107996963036,
+          480
+        ],
+        [
+          1050,
+          35102604042306,
+          40
+        ]
+      ],
+      "tail_pair_products_checked": 577600
+    },
+    "78": {
+      "bound": 6218688770,
+      "equator": 6218175600,
+      "head_scale_squared": "16/25",
+      "tail_vectors": 2232,
+      "norm_rate_populations": [
+        [
+          8,
+          1015,
+          72
+        ],
+        [
+          40,
+          1000,
+          2160
+        ]
+      ],
+      "guaranteed_antipodal_pairs": 256549,
+      "pure_tail_points": 72,
+      "priority_expectation_numerator": "840668047577083143137207255040",
+      "priority_expectation_denominator": "3276835816617094917042457",
+      "weighted_closed_profiles": [
+        [
+          1000,
+          66508555299210,
+          2160
+        ],
+        [
+          1015,
+          66513673805295,
+          72
+        ]
+      ],
+      "tail_pair_products_checked": 4981824
+    },
+    "79": {
+      "bound": 6218922650,
+      "equator": 6218175600,
+      "head_scale_squared": "12/19",
+      "tail_vectors": 4158,
+      "norm_rate_populations": [
+        [
+          32,
+          311,
+          4032
+        ],
+        [
+          32,
+          1000,
+          126
+        ]
+      ],
+      "guaranteed_antipodal_pairs": 373462,
+      "pure_tail_points": 126,
+      "priority_expectation_numerator": "318158734995248066539291607040",
+      "priority_expectation_denominator": "851917890444472553031971",
+      "weighted_closed_profiles": [
+        [
+          311,
+          28232241367769,
+          4032
+        ],
+        [
+          1000,
+          28244131773624,
+          126
+        ]
+      ],
+      "tail_pair_products_checked": 17288964
+    }
+  },
+  "tails_sha256": "48fd7fe54876017351488fbf47e7e889ccea4dd1064775500c2f8f6a3d208d40",
+  "literature_inputs": [
+    "Gamma72 even unimodular, minimum 8 (Nebe 2010)",
+    "All shells are spherical 11-designs (Venkov; Nebe survey Theorem 4.1)",
+    "Classical modular-form description of even unimodular theta series"
+  ]
+}

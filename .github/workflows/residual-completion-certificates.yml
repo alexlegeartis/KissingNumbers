@@ -14,4 +14,5 @@ jobs:
           python-version: ${{ matrix.python }}
       - run: python -m pip install numpy scipy sympy threadpoolctl
       - run: python audit.py --repository-only
+      - run: python verifications/improved/dim73-88-gamma72-cosets/verify_weighted_norm10.py
       - run: python verifications/improved/dim26-31-residual-completions/verify.py

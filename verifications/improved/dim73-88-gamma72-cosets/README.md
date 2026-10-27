@@ -145,9 +145,10 @@ that a comprehensive current literature table exists in dimension 73.
 
 ## Norm-ten continuation in 73D and 77--79D
 
-The new current totals are **6,218,204,076** in 73D, **6,218,465,016** in 77D,
-**6,218,685,880** in 78D and **6,218,912,036** in 79D. Their gains over the
-preceding checkpoint are 12,470, 57,672, 167,508 and 327,096 points.
+The first norm-ten continuation gave **6,218,204,076** in 73D,
+**6,218,465,016** in 77D, **6,218,685,880** in 78D and **6,218,912,036** in
+79D. Its gains over the preceding checkpoint were 12,470, 57,672, 167,508
+and 327,096 points. The 28 October continuation below strengthens 77--79D.
 
 The 73D result adds an explicit norm-ten layer to the preceding surgery.
 The 77--79D results use exact theta coefficients, spherical-design moments
@@ -162,3 +163,26 @@ Run `python verify_norm10.py` for the complete changed certificates, or
 `verify_shell10.py`, `shell10_selected.npy`, `shell10_verification.json`,
 `norm10_bound_certificate.py`, `norm10_tails.npz` and
 `norm10_bound_certificate.json` in that directory.
+
+## Mixed tails and weighted priorities, 28 October 2026
+
+The current bounds are **6,218,490,542** in 77D, **6,218,688,770** in 78D
+and **6,218,922,650** in 79D, improving the preceding norm-ten certificates
+by **25,526**, **2,890** and **10,614** points. Rank-five and rank-six
+constructions mix normalized tail shells; all three use integer-weighted
+random priorities to prove larger independent sets. The old reports and
+their inputs are retained.
+
+`python verify_weighted_norm10.py` checks the complete manifest and
+recomputes every new certificate in an isolated copy. `verify_norm10.py`
+also replays the preceding proofs and explicit 73D addition. The new source
+checker uses only integer products, exact rank and rational arithmetic;
+it checks all 22,848,388 ordered tail products. These remain finite-graph
+existence proofs with the documented literature inputs, without enumerated
+selected head sets. See [the proof and PackingStar comparison](source/norm10/README.md#mixed-tails-and-unequal-priorities-28-october-2026).
+
+The new checker and report are `source/norm10/weighted_norm10_certificate.py`
+and `source/norm10/weighted_norm10_certificate.json`.
+`source/norm10/verify_weighted_independent.py` independently reconstructs
+all tails and recomputes every neighborhood with integer square-root
+cutoffs, and checks the priority expectation on all four-vertex graphs.

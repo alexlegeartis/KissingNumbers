@@ -481,7 +481,7 @@ STATUS[39] = ('codes', 'neutral support substitutions and shared root replacemen
               'larger compatible patches and support codes remain open '
               '(dim39-root-replacements/verify.py)')
 for _d in (77, 78, 79):
-    STATUS[_d] = ('cosets', 'exact norm-ten shell moment distributions and finite-graph existence bounds; '
+    STATUS[_d] = ('cosets', 'exact norm-ten moments, mixed tails and weighted-priority existence bounds; '
                   'different tail sets and stronger independence bounds remain open '
                   '(dim73-88-gamma72-cosets/verify_norm10.py)')
 

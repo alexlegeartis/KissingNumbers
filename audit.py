@@ -1999,7 +1999,7 @@ if '--write-results' in sys.argv and not fail:
         'dim39-root-replacements': 'four neutral support substitutions and 64-for-56 root replacements over the ERS layers',
         'dim28-joint-leech-layers': 'joint selection of even Leech heads and auxiliary layers over Li\'s odd blocks; exact arithmetic replay',
         'dim64-65-signed-parity': '211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners',
-        'dim73-88-gamma72-cosets': 'Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D',
+        'dim73-88-gamma72-cosets': 'Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D',
         'dim38-leech-large-codimension': 'the Leech cap construction at codimension 14',
         'dim39-ers-constant-weight': 'Edel-Rains-Sloane with the 2026 constant-weight codes',
         'dim41-46-p48-heads': 'independently normalized P48n body families with rational '
@@ -2023,6 +2023,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("%d registered lower bounds on the kissing number tau(n), compared with their\nrecorded published baselines. Later superseding records are listed in README.md."
                % len(claims))
+    out.append("")
+    out.append("The 28 October mixed-tail weighted-priority continuation gives 6,218,490,542 in 77D, 6,218,688,770 in 78D and 6,218,922,650 in 79D, improving the preceding certificates by 25,526, 2,890 and 10,614 points. All 22,848,388 ordered tail products, joint tail/pole ranks and rational expectations are checked exactly. These are existence proofs under the stated Gamma72/design inputs; selected head sets are not enumerated. The manuscript retains its earlier snapshot.")
     out.append("")
     out.append("The 27 October support continuation gives 13290258624 in 96D (+851968 over the preceding registered bound) and 7092007692 in 95D (+555008), with all 302887578 support pairs checked in two independent representations. The paper retains its earlier values. The later 26 October update adds 352800 in 32D, 370368 in 33D, 390982 in 34D and 415314 in 35D, each with two independent exact proof representations. The paper update is deferred; common/manuscript_scope.json records its 66-result state and hashes. The 26 October continuation gives 197584 in 25D, 241742 in 31D, 610394 in 38D, 769180 in 39D and 1126314 in the newly registered dimension 40. All five independent exact replays passed. Fresh primary-source comparisons and the unavailable Cohn retrieval are documented in common/source_review_20261026.json. The 24 October 2026 checkpoint adds exact Coxeter-Todd constructions "
                "in dimensions 36 and 37, registers the supplied 2 919 743-point partial-family "
