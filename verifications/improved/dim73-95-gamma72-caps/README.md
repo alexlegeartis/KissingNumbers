@@ -40,7 +40,7 @@ python scripts/verify_classes.py data/disjoint_classes.npz     # exact check of 
 | 92 | 20 | Lambda_k | 5800 T +  0 P +19415 poles | +54 255 975 | 6 272 431 575 | 6 218 195 048 | 6 272 431 575 |
 | 93 | 21 | Lambda_k | 9240 T +  0 P +29712 poles | +83 460 484 | 6 301 636 084 | 6 218 205 368 | 6 301 636 084 |
 | 94 | 22 | Lambda_k | 16632 T +  0 P +49852 poles | +139 481 796 | 6 357 657 396 | 6 218 225 496 | 6 357 657 396 |
-| **95** | 23 | Lambda_k | 31050 T +  0 P +93074 poles | +254 889 446 | **6 473 065 046** | 6 218 268 750 | 7 092 007 692 |
+| **95** | 23 | Lambda_k | 31050 T +  0 P +93074 poles | +254 889 446 | **6 473 065 046** | 6 218 268 750 | 7 092 187 916 |
 
 Every dimension 81-95 now has a construction of its own: dimension 81 clears dimension 80 by
 **184 904**, so no row here is carried by monotonicity from the row below it. The cap directions are the better,

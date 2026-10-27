@@ -1,8 +1,10 @@
 # Verification of the retained SOTA results
 
-The 27 October [26–31D residual completion package](verifications/improved/dim26-31-residual-completions/) supersedes the earlier 26–31D packages. Its default replay checks all current coordinates independently, including a self-contained shell lemma, and uses exact quadratic-field arithmetic for the final 30D/31D pure tails. Historical packages remain reproducible. No new worldwide record survey is asserted.
+The 27 October [26–31D residual completion package](verifications/improved/dim26-31-residual-completions/) supersedes the earlier 26–31D packages. Its default replay checks all supplied coordinates independently, including a self-contained shell lemma, and uses exact quadratic-field arithmetic for the final 30D/31D pure tails. Historical packages remain reproducible. No new worldwide record survey is asserted.
 
-The README labels 70 results SOTA against its dated sources. Every labelled result
+The README labels 64 results SOTA against its dated sources. The six retained
+26–31D constructions are surpassed by PackingStar's reported October bounds
+([28 October review](common/source_review_20261028.json)). Every labelled result
 has a verification route, but a short run does not freshly establish all of them.
 The commands below check constructions; they do not perform a literature search.
 
@@ -108,13 +110,13 @@ successful replay when the measured inputs and environment are unchanged.
 
 ## Mixed-pair support continuation in 95--96D
 
-The code-layer package now checks all 302,887,578 pairs of its 24,613
+The code-layer package now checks all 303,330,765 pairs of its 24,631
 physical supports. `python verifications/improved/dim61-68-95-96-code-layers/verify95_96.py`
 replays this certificate in isolation, including sign distances and the
 95D central section. It also checks every pair independently using packed
 integer masks and matches both fresh receipts to the pinned certificate.
-The current bounds are 13,290,258,624 in 96D (+851,968 over the preceding
-repository value) and 7,092,007,692 in 95D (+555,008). The default package
+The current bounds are 13,290,553,536 in 96D (+294,912 over the preceding
+repository value) and 7,092,187,916 in 95D (+180,224). The default package
 verifier includes both replays.
 
 ## Norm-ten continuation in 73D and 77--79D

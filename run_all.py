@@ -403,6 +403,8 @@ def _sota_jobs(quick=False):
         wanted.remove(('dim61-68-95-96-code-layers', ('verify.py',)))
         wanted.add(('dim61-68-95-96-code-layers', ('verify.py', '--full-codes')))
         wanted.add(('dim73-88-gamma72-cosets', ('verify.py',)))
+    current_packages = {package for _, package in _sota_records().values()}
+    wanted = {job for job in wanted if job[0] == 'common' or job[0] in current_packages}
     jobs = []
     found = set()
     for lab, directory, argv, minutes, fast in JOBS:
@@ -488,6 +490,12 @@ def _sota_coverage(jobs, results=None):
          'all retained class geometry and disjointness, directions, partitions, poles and counts; CPU replay'),
     ]
     records = _sota_records()
+    # Retained historical routes may share dimensions with newer packages.
+    # Coverage follows the current README package, and excludes surpassed rows.
+    groups = [(package, [d for d in dimensions
+                         if d in records and records[d][1] == package], commands, scope)
+              for package, dimensions, commands, scope in groups]
+    groups = [group for group in groups if group[1]]
     mapped = {}
     for package, dimensions, commands, scope in groups:
         for dimension in dimensions:

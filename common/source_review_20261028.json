@@ -1,0 +1,47 @@
+{
+  "review_date": "2026-10-28",
+  "timezone": "Europe/Moscow",
+  "scope": "PackingStar mechanism and reported 26\u201331D comparison; new constructive improvements only in 95\u201396D. This is not a comprehensive literature survey.",
+  "repository_base_commit": "a6ba3387f2b0b54942812790a1ddf19bb4e99431",
+  "primary_sources": [
+    {
+      "url": "https://github.com/CDM1619/PackingStar/tree/67be454b83af4287e1a2b61e5bd8c3596a8061d6",
+      "commit": "67be454b83af4287e1a2b61e5bd8c3596a8061d6",
+      "readme_blob_sha": "a659b62dee1ddb01abfde8d8acfa051e659b81fd",
+      "reported_bounds": {
+        "26": 201134,
+        "27": 209586,
+        "28": 221664,
+        "29": 231636,
+        "30": 247952,
+        "31": 250938
+      },
+      "verification_scope": "Source-reported exact verification. Integer-coordinate NPZs are supplied, but their 26\u201331D configurations were not independently reverified by this update.",
+      "observation": "README dated 26 October describes joint removals, midpoint insertions and auxiliary layers. Repository includes verification code and data, but no training implementation."
+    },
+    {
+      "url": "https://arxiv.org/html/2511.13391v4",
+      "version_date": "2026-06-02",
+      "observation": "Filler extends feasible Gram matrices; Corrector selects a retained subset, followed by refilling. AATS shares search statistics by rational quadratic-form invariants. Corrector uses a permutation-equivariant network and PPO. These describe the June method, not a disclosed derivation of every October improvement."
+    }
+  ],
+  "transfer_to_this_repository": "Apply fill/correct and shared-blocker exchanges to the exact finite support-intersection problem. Search scores are never accepted as a certificate; two independent complete support checks establish the construction.",
+  "new_results": {
+    "95": 7092187916,
+    "96": 13290553536
+  },
+  "gains_over_previous_repository": {
+    "95": 180224,
+    "96": 294912
+  },
+  "negative_search": {
+    "dimension": 40,
+    "candidate_family": "Unused members of the supplied 30240 shortest-body pool, at coefficient Q-norm 30.",
+    "observations": [
+      "None of 29106 unused candidates is compatible with all retained norm-36 points.",
+      "Of these, 18846 have at most twelve norm-36 blockers; none survives the fixed affine core."
+    ],
+    "scope": "A finite fixed-core screen, not an upper bound or an obstruction to coordinated motion."
+  },
+  "integrated_upstream_commit": "ed7fcdc496e9c7a7ca1b1e9eca2d9875cb246fe1"
+}

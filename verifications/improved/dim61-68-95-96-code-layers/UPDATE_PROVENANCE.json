@@ -270,5 +270,52 @@
       "source/dim61_96/verify_support_bits.py"
     ],
     "scope": "Replace the earlier mixed support family; no unrestricted optimum claimed. Manuscript and PDF deferred."
+  },
+  "continuation_20261028": {
+    "previous_commit": "a6ba3387f2b0b54942812790a1ddf19bb4e99431",
+    "previous_certificate_sha256": "5f44dbe7a1364e9682a4092a38ddae07ff6c8bae57206b397de9fe971bad0554",
+    "certificate_sha256": "81ed499073d43d74706814c03342bf2a4309a7bb2d46b9bdaa220f0f54b3fe89",
+    "previous_supports": 24613,
+    "supports": 24631,
+    "removed_previous_supports": 2564,
+    "inserted_supports": 2582,
+    "support_pairs_checked_by_each_replay": 303330765,
+    "dimensions": {
+      "95": {
+        "bound": 7092187916,
+        "previous_bound": 7092007692,
+        "gain": 180224,
+        "terms": {
+          "dense_section": 4697620480,
+          "transversal24_section": 2147483648,
+          "new_support24_section": 245767168,
+          "support6_section": 1316444,
+          "ordinary_poles": 176
+        }
+      },
+      "96": {
+        "bound": 13290553536,
+        "previous_bound": 13290258624,
+        "gain": 294912,
+        "terms": {
+          "dense": 8589934592,
+          "transversal24": 4294967296,
+          "new_support24": 403554304,
+          "support6": 2097152,
+          "poles": 192
+        }
+      }
+    },
+    "method": "Finite fill/correct support walk, neutral exchanges and two-for-one shared-blocker trades; no reinforcement-learning claim.",
+    "search_checkpoint": "search/start_supports.npz",
+    "seed": 282029,
+    "trials": 100000000,
+    "neutral_period": 256,
+    "canonical_ordered_support_text_sha256": "75b154b6e7af83d4a065bf9658306723ea9f458f2b65172da3184b009771caa9",
+    "verification": [
+      "source/dim61_96/mixed_pair_certificate.py",
+      "source/dim61_96/verify_support_bits.py"
+    ],
+    "scope": "Replace the earlier mixed support family. Both 95D and 96D increase; no optimum or comprehensive priority claim. Manuscript remains deferred."
   }
 }

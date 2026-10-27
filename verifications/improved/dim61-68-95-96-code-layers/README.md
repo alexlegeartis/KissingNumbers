@@ -1,6 +1,6 @@
 # Explicit code layers and central sections
 
-Checkpoint: **27 October 2026** (95–96D continuation). This package registers
+Checkpoint: **28 October 2026** (95–96D continuation). This package registers
 eight constructions. The latest update improves its 95D and 96D certificates.
 
 | Dimension | This construction | Mechanism |
@@ -11,8 +11,8 @@ eight constructions. The latest update improves its 95D and 96D certificates.
 | 66 | **338,292,100** | shortened weight-16 support code and lower layers |
 | 67 | **351,400,326** | the same construction |
 | 68 | **371,521,432** | the same construction |
-| 95 | **7,092,007,692** | optimized central section of the enlarged 96D construction |
-| 96 | **13,290,258,624** | transversal supports plus a mixed-pair support code |
+| 95 | **7,092,187,916** | optimized central section of the enlarged 96D construction |
+| 96 | **13,290,553,536** | transversal supports plus a mixed-pair support code |
 
 These are constructive lower bounds. Cohn's reviewed October table stops at dimension
 48, so it provides no comparison in this range. Historical comparisons remain
@@ -49,7 +49,7 @@ shortenings of the [73,36,16] weight-16 shell, extended Hamming signs and
 affine weight-four support packings. Code distances bound all cross-support
 angles; sparse/dense cross bounds are checked exactly.
 
-In 96D, the current certificate supplies 24,613 additional weight-24 supports.
+In 96D, the current certificate supplies 24,631 additional weight-24 supports.
 It starts from doubled QR48 supports and permits different pairings in
 different four-cell rows, followed by neutral switches and additions. Each occupies at most twelve rows
 of the existing 24-by-4 transversal layout, proving the cross-intersection
@@ -105,13 +105,13 @@ not use an optimization score as a certificate.
 ## Mixed pairings in individual rows
 
 The continuation replaces the uniform-partition restriction by an explicit
-constant-weight support code. It has **24,613** supports, each of weight 24
-and occupying at most twelve rows. The verifier checks all **302,887,578**
+constant-weight support code. It has **24,631** supports, each of weight 24
+and occupying at most twelve rows. The verifier checks all **303,330,765**
 distinct support pairs directly, with maximum intersection 12. It does not
 trust a search graph or an optimization score. The improvement over the
-preceding registered certificate (commit `377dfa6`) is **555,008** points in
-95D and **851,968** in 96D. The previous bounds were **7,091,452,684** and
-**13,289,406,656**, respectively. The support family replaces the earlier one;
+preceding registered certificate (commit `a6ba338`) is **180,224** points in
+95D and **294,912** in 96D. The previous bounds were **7,092,007,692** and
+**13,290,258,624**, respectively. The support family replaces the earlier one;
 its coordinates must not simply be appended to it.
 
 For a short isolated replay, run `python verify95_96.py`. The ordinary
@@ -124,24 +124,24 @@ zeros and ones; no approximate angle comparison is used.
 
 `source/dim61_96/verify_support_bits.py` checks the same complete support
 family using unsigned integer intersections and population counts, independently
-of the coordinate matrix products. It checks all 302,887,578 unordered pairs,
+of the coordinate matrix products. It checks all 303,330,765 unordered pairs,
 weight 24, distinctness, at most twelve occupied rows and the exact section
-histogram `[6990,0,11418,0,5457,0,704,0,44]`. No approximate arithmetic is used.
+histogram `[6995,0,11427,0,5461,0,704,0,44]`. No approximate arithmetic is used.
 Its pinned receipt is `source/dim61_96/support_bits_verification.json`.
 Both `verify95_96.py` and `verify.py` replay both representations in a temporary
 copy and match the complete receipts (apart from elapsed time).
 
-The new support family has 17,296 ordinary doubled QR48 supports and 7,317
-compatible nonordinary supports. It contributes 403,259,392 points in 96D:
+The new support family has 17,296 ordinary doubled QR48 supports and 7,335
+compatible nonordinary supports. It contributes 403,554,304 points in 96D:
 
 ```text
-8,589,934,592 + 4,294,967,296 + 403,259,392 + 2,097,152 + 192
-    = 13,290,258,624.
+8,589,934,592 + 4,294,967,296 + 403,554,304 + 2,097,152 + 192
+    = 13,290,553,536.
 ```
 
 The central-section terms are
-`4,697,620,480 + 2,147,483,648 + 245,586,944 + 1,316,444 + 176
-= 7,092,007,692`. These are constructive lower bounds, without an optimality
+`4,697,620,480 + 2,147,483,648 + 245,767,168 + 1,316,444 + 176
+= 7,092,187,916`. These are constructive lower bounds, without an optimality
 claim. `UPDATE_PROVENANCE.json` records the research source, exact certificate
 hash and immediately preceding repository comparison.
 
@@ -153,3 +153,45 @@ and the quaternary parent directly. Both source pages were reviewed on
 27 October 2026. These code inputs are distinct from the new support family.
 The manuscript and PDF retain their earlier bounds until the requested later
 paper update.
+
+
+## Fill/correct continuation on 28 October
+
+The new family replaces 2,564 old supports by 2,582 supports, for a net gain
+of 18. The final explicit certificate is the authority; no search bucket,
+score or code-membership assumption is used by either independent verifier.
+
+The finite search changes pairings inside four-cell rows and occasionally
+moves a two-cell row to an empty row. A free candidate is inserted. Candidates
+with exactly one blocker are grouped by that blocker; two mutually compatible
+candidates can replace their shared blocker. Stored candidates are checked
+again against the entire current family before a trade. Occasional one-for-one
+moves explore configurations of the same size. Every accepted operation
+preserves both the support count and the exact 95D section count, or increases
+them. Integer population counts decide all conflicts.
+
+This applies the fill/correct idea described by
+[PackingStar](https://arxiv.org/html/2511.13391v4), whose Corrector removes
+points before the next filling phase. The public repository supplies data
+and verifiers, but no training implementation. This search does not reproduce
+their reinforcement learning or their October 26–31D constructions.
+
+The shipped starting checkpoint already contains two extra supports from
+an earlier walk. From the package directory, reproduce its continuation:
+
+```bash
+python search/fill_correct.py --output /tmp/reproduced-supports.npz
+```
+
+The default seed is 282029, with 100,000,000 trials and neutral-period 256.
+The continuation finds five free additions, eleven two-for-one trades and
+89 one-for-one moves, ending at 24,631 supports. Compare the resulting arrays
+with `source/dim61_96/mixed_pair_certificate.npz`; NPZ compression bytes may
+vary between environments. `search/receipt.json` records an ordered text
+fingerprint and the search parameters. Searching requires C++17 and NumPy;
+verification requires only NumPy. The search is not an exhaustion proof.
+
+`python search/negative_controls.py` first accepts the current certificate,
+then checks that both replays reject a duplicated support, a weight-23
+support, and two supports with intersection 23. The recorded outcomes are
+in `search/negative_controls.json`.

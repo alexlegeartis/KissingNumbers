@@ -16,6 +16,18 @@ values and verification packages remain here as part of the research record.
 > proofs under the stated Gamma72 and design inputs; selected head lists
 > are not enumerated. [Proof, PackingStar comparison and fast replay](verifications/improved/dim73-88-gamma72-cosets/source/norm10/README.md#mixed-tails-and-unequal-priorities-28-october-2026).
 >
+> **28 October 2026 — fill/correct gains in 95D and 96D.**
+> The new 24,631-support certificate gives **7 092 187 916** in 95D and
+> **13 290 553 536** in 96D, increasing the preceding repository bounds by
+> **180 224** and **294 912** points. Coordinate and packed-integer replays
+> independently check all **303 330 765** support pairs. The
+> [search and certificate](verifications/improved/dim61-68-95-96-code-layers/)
+> implement neutral exchanges and shared-blocker trades inspired by PackingStar's
+> fill/correct principle; this is a finite search, with no optimality claim.
+> [Source review](common/source_review_20261028.json) also records PackingStar's
+> larger reported 26–31D bounds. Those six retained constructions are now marked
+> as surpassed below. The manuscript remains its documented earlier snapshot.
+>
 > **27 October 2026 — stronger verified bounds in dimensions 26–31.**
 > Exact residual-head completions give **201 108**, **209 532**, **216 680**,
 > **226 520**, **238 808** and **246 638**, respectively. The increases over
@@ -147,20 +159,21 @@ last retrieved **25 October 2026**, with all 48 rows captured in
 failed, so this update retains that snapshot. Fresh checks of the relevant
 authors' repositories and the dimension-40 paper are recorded in
 [the 26 October source review](common/source_review_20261026.json).
-All 70 constructions exceed their recorded comparisons and remain best in
-the reviewed sources. Higher-dimensional status uses the separate sources below.
+All 70 constructions exceed their recorded comparisons. Of these, 64 remain best in
+the reviewed sources; PackingStar reports larger bounds in dimensions 26–31,
+as recorded in [the 28 October source review](common/source_review_20261028.json). Higher-dimensional status uses the separate sources below.
 
 
 | dim | recorded comparison | comparison method / source | **this work** | SOTA value | gain over recorded comparison | later gain | SOTA period | our method | superseding method |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 18 | 7 654 | [Cohn–Li, BW16 + hexagons](https://arxiv.org/abs/2411.04916v3) | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
 | 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 584** | **SOTA** | +0.268% | — |2026-08-30 to 2026-09-28; since 2026-10-26 | [Collective deformation](verifications/improved/dim25-collective-deformation/) | — |
-| 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 108** | **SOTA** | +0.620% | — | 2026-09-08 to 2026-10-05; since 2026-10-25 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
-| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 532** | **SOTA** | +3.940% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
-| 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **216 680** | **SOTA** | +5.609% | — | 2026-09-16 to 2026-10-10; since 2026-10-24 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
-| 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **226 520** | **SOTA** | +8.126% | — | 2026-09-16 to 2026-10-05; since 2026-10-25 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
-| 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **238 808** | **SOTA** | +8.332% | — | 2026-09-16 to 2026-10-10; since 2026-10-25 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
-| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **246 638** | **SOTA** | +3.477% | — |2026-09-16 to 2026-10-05; since 2026-10-26 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
+| 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 108** | **201 134** | +0.620% | +0.01293% | 2026-09-08 to 2026-10-05; 2026-10-25 to 2026-10-26 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | [PackingStar, joint removals / insertions / auxiliary layers](https://github.com/CDM1619/PackingStar/tree/67be454b83af4287e1a2b61e5bd8c3596a8061d6/25D-31D/new_bounds_20261026) |
+| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 532** | **209 586** | +3.940% | +0.02577% | 2026-08-30 to 2026-09-28; 2026-10-25 to 2026-10-26 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | [PackingStar, joint removals / insertions / auxiliary layers](https://github.com/CDM1619/PackingStar/tree/67be454b83af4287e1a2b61e5bd8c3596a8061d6/25D-31D/new_bounds_20261026) |
+| 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **216 680** | **221 664** | +5.609% | +2.30017% | 2026-09-16 to 2026-10-10; 2026-10-24 to 2026-10-26 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | [PackingStar, joint removals / insertions / auxiliary layers](https://github.com/CDM1619/PackingStar/tree/67be454b83af4287e1a2b61e5bd8c3596a8061d6/25D-31D/new_bounds_20261026) |
+| 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **226 520** | **231 636** | +8.126% | +2.25852% | 2026-09-16 to 2026-10-05; 2026-10-25 to 2026-10-26 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | [PackingStar, joint removals / insertions / auxiliary layers](https://github.com/CDM1619/PackingStar/tree/67be454b83af4287e1a2b61e5bd8c3596a8061d6/25D-31D/new_bounds_20261026) |
+| 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **238 808** | **247 952** | +8.332% | +3.82902% | 2026-09-16 to 2026-10-10; 2026-10-25 to 2026-10-26 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | [PackingStar, joint removals / insertions / auxiliary layers](https://github.com/CDM1619/PackingStar/tree/67be454b83af4287e1a2b61e5bd8c3596a8061d6/25D-31D/new_bounds_20261026) |
+| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **246 638** | **250 938** | +3.477% | +1.74345% |2026-09-16 to 2026-10-05; 2026-10-26 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | [PackingStar, joint removals / insertions / auxiliary layers](https://github.com/CDM1619/PackingStar/tree/67be454b83af4287e1a2b61e5bd8c3596a8061d6/25D-31D/new_bounds_20261026) |
 | 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32) | **352 800** | **SOTA** | +0.13624% | — | since 2026-10-26 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
 | 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 368** | **SOTA** | +0.0345722% | — | since 2026-10-26 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 982** | **SOTA** | +0.000511535% | — | since 2026-10-26 | [Dense-coset heads](verifications/improved/dim32-35-signed-layers/) | — |
@@ -221,8 +234,8 @@ the reviewed sources. Higher-dimensional status uses the separate sources below.
 | 92 | 6 218 195 048 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [20D tail](common/published.py) *(derived)* | **6 272 431 575** | **SOTA** | +0.872% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
 | 93 | 6 218 205 368 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [21D tail](common/published.py) *(derived)* | **6 301 636 084** | **SOTA** | +1.34% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
 | 94 | 6 218 225 496 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [22D tail](common/published.py) *(derived)* | **6 357 657 396** | **SOTA** | +2.24% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 95 | 6 218 268 750 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [23D tail](common/published.py) *(derived)* | **7 092 007 692** | **SOTA** | +14.0% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 96 | 6 218 372 160 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [Leech](https://doi.org/10.4153/CJM-1967-017-0) *(derived)* | **13 290 258 624** | **SOTA** | +114% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 95 | 6 218 268 750 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [23D tail](common/published.py) *(derived)* | **7 092 187 916** | **SOTA** | +14.0% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 96 | 6 218 372 160 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [Leech](https://doi.org/10.4153/CJM-1967-017-0) *(derived)* | **13 290 553 536** | **SOTA** | +114% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
 
 
 The historical SOTA period covers this project's run of published records in each
@@ -250,8 +263,8 @@ The table above includes all 70 registered constructions. The October update add
 and registers code and coset improvements through 96D. [RESULTS.md](RESULTS.md) gives the generated registry
 and the detailed construction descriptions.
 Its comparisons use the repository's pinned data and include results that have since
-been superseded. The manuscript in [paper/](paper/) reports the current results and retains
-its earlier snapshot in the historical appendix. See [The write-up](#the-write-up).
+been superseded. The manuscript in [paper/](paper/) retains its documented earlier snapshot,
+including its historical appendix. See [The write-up](#the-write-up).
 
 The [Coxeter–Todd package](verifications/improved/dim36-37-coxeter-todd/)
 proves 501 633 points in 36D by exact short-shell enumeration and phase-orbit
@@ -399,6 +412,15 @@ the lower bound in its dimensions** — who held it, when, and by what construct
 
 
 ## Record status and retained results
+
+**28 October review.** PackingStar reports 201 134, 209 586, 221 664,
+231 636, 247 952 and 250 938 in dimensions 26–31. All six exceed the
+retained repository constructions, including the 27 October completions.
+Their README describes joint point removals, midpoint insertions and auxiliary
+layers; it supplies integer coordinate files. The external values above are
+source-reported, not independently reverified by this update. The pinned
+[review](common/source_review_20261028.json) separates their October claims
+from the construction and algorithm described in the June paper.
 
 The 25 October midpoint constructions regain 26D and 27D with **200 918** and
 **204 636**, following Takhanov–Yun's 199 868 and 201 589. Their paper is linked
