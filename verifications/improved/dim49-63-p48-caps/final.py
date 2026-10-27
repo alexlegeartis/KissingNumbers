@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Dimensions 49-63: P48 cap counts from the strongest shipped class family.
 
-October 2026 adds a 7,387-line base with 577 explicit disjoint images.
+October 2026 supplies historical and refilled bases with 577 explicit images each.
 Each prefix uses one complete family, whichever gives the larger count.
 The original 1,400-class family and its verification remain below as history.
-verify_october.py checks the new family; verify.py checks the older base.
+verify_october.py checks both explicit families; verify_refilled.py runs two exact
+representations of the refilled family. verify.py checks the original older base.
 
 The first version of this package used Caro-Wei's class bound of 712, obtained with no
 coordinates at all.  P_48 is available explicitly (Catalogue of Lattices, entries P48p and
@@ -108,7 +109,12 @@ print("   dimension 63: gain +%d against the Caro-Wei +%d, a factor %.2f"
 # The README table is GENERATED from this, so it cannot drift from the driver -- it had been
 # left on the superseded lambda = tau_lat(k)/2 and showed dimension 63 as 66 265 628.
 import json
-json.dump(TABLE, open(os.path.join(HERE, 'rows49-63.json'), 'w'), indent=1)
+table_path = os.path.join(HERE, 'rows49-63.json')
+# Preserve the shipped bytes across platforms: the package manifest covers this table.
+with open(table_path, 'rb') as stream:
+    table_eol = b'\r\n' if b'\r\n' in stream.read() else b'\n'
+with open(table_path, 'wb') as stream:
+    stream.write(json.dumps(TABLE, indent=1).encode('utf-8').replace(b'\n', table_eol))
 print()
 print("   wrote rows49-63.json (%d rows); scripts/make_readme_table.py turns it into the"
       % len(TABLE))

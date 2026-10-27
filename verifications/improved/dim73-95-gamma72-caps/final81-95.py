@@ -266,7 +266,7 @@ print("   Dimension 95 is now a factor %.2f on that." % (rows[-1][3] / 20493000)
 
 # The README table is GENERATED from this, so it cannot drift from the driver.
 import json
-json.dump(TABLE, open(os.path.join(HERE, 'rows81-95.json'), 'w'), indent=1)
+json.dump(TABLE, open(os.path.join(HERE, 'rows81-95.json'), 'w', newline='\r\n'), indent=1)
 print()
 print("   wrote rows81-95.json (%d rows); scripts/make_readme_table.py turns it into the "
       "markdown" % len(TABLE))

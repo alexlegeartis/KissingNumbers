@@ -182,7 +182,7 @@ JOBS = [
      ['certify43.py'], 20.0, False),
     ("dims 46, 47: cross-sections of P_48, recovered not claimed",
      os.path.join(V, 'recovered', 'dim46-47-p48-cross-sections'), ['derive.py'], 0.1, True),
-    ("october-p48: 7387-line class and all 577 explicit disjoint images",
+    ("october-p48: historical and refilled classes, all isometries and disjointness",
      os.path.join(V, 'improved', 'dim49-63-p48-caps'), ['verify_october.py'], 1.0, True),
     ("october-codes: compression, support layers and central sections",
      os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py'], 5.0, True),

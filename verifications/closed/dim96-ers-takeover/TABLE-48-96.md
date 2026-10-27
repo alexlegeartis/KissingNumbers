@@ -1,18 +1,18 @@
 | n | tau(n) >= | source |
 |---|---|---|
 | 48 | 52 416 000 | Cohn's table: Leech-Sloane 1971 (P_48) |
-| 49 | 52 430 776 | **this work** -- the cap construction over P_48, with explicit classes |
-| 50 | 52 460 322 | **this work** -- the cap construction over P_48, with explicit classes |
-| 51 | 52 504 618 | **this work** -- the cap construction over P_48, with explicit classes |
-| 52 | 52 593 106 | **this work** -- the cap construction over P_48, with explicit classes |
-| 53 | 52 710 864 | **this work** -- the cap construction over P_48, with explicit classes |
-| 54 | 52 945 570 | **this work** -- the cap construction over P_48, with explicit classes |
-| 55 | 53 339 086 | **this work** -- the cap construction over P_48, with explicit classes |
-| 56 | 54 159 098 | **this work** -- the cap construction over P_48, with explicit classes |
-| 57 | 54 627 038 | **this work** -- the cap construction over P_48, with explicit classes |
-| 58 | 56 043 152 | **this work** -- the cap construction over P_48, with explicit classes |
-| 59 | 56 680 448 | **this work** -- the cap construction over P_48, with explicit classes |
-| 60 | 57 690 671 | **this work** -- the cap construction over P_48, with explicit classes |
+| 49 | 52 431 358 | **this work** -- the cap construction over P_48, with explicit classes |
+| 50 | 52 462 074 | **this work** -- the cap construction over P_48, with explicit classes |
+| 51 | 52 508 136 | **this work** -- the cap construction over P_48, with explicit classes |
+| 52 | 52 600 180 | **this work** -- the cap construction over P_48, with explicit classes |
+| 53 | 52 722 680 | **this work** -- the cap construction over P_48, with explicit classes |
+| 54 | 52 966 854 | **this work** -- the cap construction over P_48, with explicit classes |
+| 55 | 53 376 264 | **this work** -- the cap construction over P_48, with explicit classes |
+| 56 | 54 229 018 | **this work** -- the cap construction over P_48, with explicit classes |
+| 57 | 54 715 554 | **this work** -- the cap construction over P_48, with explicit classes |
+| 58 | 56 186 178 | **this work** -- the cap construction over P_48, with explicit classes |
+| 59 | 56 847 152 | **this work** -- the cap construction over P_48, with explicit classes |
+| 60 | 57 894 253 | **this work** -- the cap construction over P_48, with explicit classes |
 | 61 | 71 310 488 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
 | 62 | 100 371 468 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
 | 63 | 182 407 428 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |

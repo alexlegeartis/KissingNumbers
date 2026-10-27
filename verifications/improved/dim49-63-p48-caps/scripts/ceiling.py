@@ -3,12 +3,13 @@
 
 For a fixed base of C lines, any disjoint family of its automorphism images
 has S(lambda) <= lambda*C. This does not bound larger base classes or other
-constructions. The 7,387-line October class supersedes the old 7,069-line
-base; neither is a proved maximum independent set of the mother graph.
+constructions. The refilled class supersedes the earlier 7,387-line and 7,069-line
+bases; none is a proved maximum independent set of the mother graph.
 """
 import json
 from pathlib import Path
 import sys
+import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -21,7 +22,8 @@ def main():
     rows = json.loads((ROOT / 'rows49-63.json').read_text())
     bases = families()
     maximum = max(int(sizes.max()) for sizes in bases.values())
-    assert maximum == 7387
+    with np.load(ROOT / 'october/family_refilled.npz', allow_pickle=False) as data:
+        assert maximum == len(data['base'])
     print(__doc__)
     print('dim  current cap total  fixed-base ceiling  ERS level 0')
     for row in rows:

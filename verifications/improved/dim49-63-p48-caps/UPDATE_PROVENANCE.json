@@ -1,5 +1,5 @@
 {
-  "checkpoint_date": "2026-10-24",
+  "checkpoint_date": "2026-10-28",
   "copies": [
     {
       "installed": "verifications/improved/dim49-63-p48-caps/october/family_55_61.json",
@@ -16,5 +16,24 @@
       "source": "research/dim49plus/family_55_61.verified.json",
       "sha256": "dea8d042835307af8ec7d7594780efa0a91d97f8692a346d0eb744711db61258"
     }
-  ]
+  ],
+  "previous_checkpoint_date": "2026-10-24",
+  "continuation": {
+    "baseline_commit": "a6ba3387f2b0b54942812790a1ddf19bb4e99431",
+    "certificate": "october/family_refilled.npz",
+    "sha256": "b3fd690866c298978373af3d575774905f92fb5040225a29111e6f2b9cceed63",
+    "base_lines": 7678,
+    "candidate_pool_lines": 12854287,
+    "candidate_images": 2577,
+    "selected_images": 577,
+    "random_seed": 20261028,
+    "random_word_length": 30,
+    "discovery": "Three 90-second local searches on the 3,901,694-line image union reached 7,405 lines; two 90-second searches on the expanded union reached 7,596 and 7,678. Neighborhoods retain candidates with at most three conflicts. Greedy insertion, one-for-two replacements and neutral swaps use the shipped improve_class.py functions.",
+    "discovery_scope": "Timed discovery is not a deterministic base generator. The explicit base is checked directly; scripts/refill_family.py deterministically regenerates every family array from that base.",
+    "verification": "verify_refilled.py: complete int64 Gram/isometry/hash replay plus independent exact binary64 products and full-coordinate disjointness; all 29,472,003 base pairs checked in both representations.",
+    "source_review": "common/source_review_20261028_p48.json",
+    "negative_trial": "96D random supports and row-pattern mutations found no enlargement in this finite run. This is not an impossibility result; no 95D or 96D bound is changed.",
+    "manuscript": "Deferred; retains its previous registry snapshot.",
+    "storage": "Generator words or references to historical transforms, and packed retained-index bitmaps; all expanded arrays checked exactly."
+  }
 }

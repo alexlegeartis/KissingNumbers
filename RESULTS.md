@@ -36,18 +36,18 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 44 | 4 153 600 | **4 939 281** | 1.19 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 45 | 7 380 090 | **7 655 056** | 1.04 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 46 | 12 309 600 | **13 387 797** | 1.09 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
-| 49 | 52 416 002 | **52 430 776** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 50 | 52 416 006 | **52 460 322** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 51 | 52 416 012 | **52 504 618** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 52 | 52 416 024 | **52 593 106** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 53 | 52 416 040 | **52 710 864** | 1.01 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 54 | 52 416 072 | **52 945 570** | 1.01 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 55 | 52 416 126 | **53 339 086** | 1.02 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 56 | 52 416 240 | **54 159 098** | 1.03 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 57 | 52 416 306 | **54 627 038** | 1.04 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 58 | 52 416 510 | **56 043 152** | 1.07 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 59 | 52 416 604 | **56 680 448** | 1.08 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 60 | 52 416 841 | **57 690 671** | 1.10 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 49 | 52 416 002 | **52 431 358** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 50 | 52 416 006 | **52 462 074** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 51 | 52 416 012 | **52 508 136** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 52 | 52 416 024 | **52 600 180** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 53 | 52 416 040 | **52 722 680** | 1.01 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 54 | 52 416 072 | **52 966 854** | 1.01 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 55 | 52 416 126 | **53 376 264** | 1.02 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 56 | 52 416 240 | **54 229 018** | 1.03 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 57 | 52 416 306 | **54 715 554** | 1.04 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 58 | 52 416 510 | **56 186 178** | 1.07 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 59 | 52 416 604 | **56 847 152** | 1.08 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 60 | 52 416 841 | **57 894 253** | 1.10 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
 | 61 | 52 417 154 | **71 310 488** | 1.36 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
 | 62 | 52 417 932 | **100 371 468** | 1.91 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
 | 63 | 52 418 564 | **182 407 428** | 3.48 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
@@ -130,18 +130,18 @@ refreshed table, not more search.
 | 39 | `dim39-deformed-orbits` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 40 | `dim40-affine-shells` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 41-46 | `dim41-46-p48-heads` | verify.py (integer angles and exact ranks; inherited population tables, not a fresh body enumeration) |
-| 49 | `dim49-63-p48-caps` | 577 explicit isometric images of a 7387-line class; lambda(1) = 1, S = 7387; verify_october.py |
-| 50 | `dim49-63-p48-caps` | 577 explicit isometric images of a 7387-line class; lambda(2) = 3, S = 22158; verify_october.py |
-| 51 | `dim49-63-p48-caps` | 577 explicit isometric images of a 7387-line class; lambda(3) = 6, S = 44303; verify_october.py |
-| 52 | `dim49-63-p48-caps` | 577 explicit isometric images of a 7387-line class; lambda(4) = 12, S = 88541; verify_october.py |
-| 53 | `dim49-63-p48-caps` | 577 explicit isometric images of a 7387-line class; lambda(5) = 20, S = 147412; verify_october.py |
-| 54 | `dim49-63-p48-caps` | 577 explicit isometric images of a 7387-line class; lambda(6) = 36, S = 264749; verify_october.py |
-| 55 | `dim49-63-p48-caps` | 577 explicit isometric images of a 7387-line class; lambda(7) = 63, S = 461480; verify_october.py |
-| 56 | `dim49-63-p48-caps` | 577 explicit isometric images of a 7387-line class; lambda(8) = 120, S = 871429; verify_october.py |
-| 57 | `dim49-63-p48-caps` | 577 explicit isometric images of a 7387-line class; lambda(9) = 153, S = 1105366; verify_october.py |
-| 58 | `dim49-63-p48-caps` | 577 explicit isometric images of a 7387-line class; lambda(10) = 255, S = 1813321; verify_october.py |
-| 59 | `dim49-63-p48-caps` | 577 explicit isometric images of a 7387-line class; lambda(11) = 302, S = 2131922; verify_october.py |
-| 60 | `dim49-63-p48-caps` | 577 explicit isometric images of a 7387-line class; lambda(12) = 378, S = 2636915; verify_october.py |
+| 49 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(1) = 1, S = 7678; verify_october.py |
+| 50 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(2) = 3, S = 23034; verify_october.py |
+| 51 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(3) = 6, S = 46062; verify_october.py |
+| 52 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(4) = 12, S = 92078; verify_october.py |
+| 53 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(5) = 20, S = 153320; verify_october.py |
+| 54 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(6) = 36, S = 275391; verify_october.py |
+| 55 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(7) = 63, S = 480069; verify_october.py |
+| 56 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(8) = 120, S = 906389; verify_october.py |
+| 57 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(9) = 153, S = 1149624; verify_october.py |
+| 58 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(10) = 255, S = 1884834; verify_october.py |
+| 59 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(11) = 302, S = 2215274; verify_october.py |
+| 60 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(12) = 378, S = 2738706; verify_october.py |
 | 61-63, 66-68, 95-96 | `dim61-68-95-96-code-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 64-65 | `dim64-65-signed-parity` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 69 | `dim68-69-gamma72-cross-sections` | verify69.py (A_3 at the Hermite floor, det 256, exhibited inside the D_4 four-tuple) |

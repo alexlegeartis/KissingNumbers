@@ -200,9 +200,13 @@ ROOTPARTS = {1: (0, 1), 2: (2, 0), 3: (4, 0), 4: (8, 0), 5: (12, 2), 6: (24, 0),
 S48 = np.sort(np.load(os.path.join(
     IMP, 'dim49-63-p48-caps', 'data', 'class_sizes_p48.npy')).ravel())[::-1].astype(np.int64)
 c48 = np.concatenate([[0], np.cumsum(S48)])
-with np.load(os.path.join(IMP, 'dim49-63-p48-caps', 'october', 'family_55_61.npz')) as _z48:
-    _new48 = np.sort(_z48['sizes'])[::-1]
-_newc48 = np.concatenate([[0], np.cumsum(_new48)])
+_explicit48 = []
+for _name48 in ('family_55_61.npz', 'family_refilled.npz'):
+    with np.load(os.path.join(IMP, 'dim49-63-p48-caps', 'october', _name48),
+                 allow_pickle=False) as _z48:
+        _sizes48 = np.sort(_z48['sizes'])[::-1]
+        _explicit48.append((_name48, len(_z48['base']), _sizes48,
+                            np.concatenate([[0], np.cumsum(_sizes48)])))
 for k in range(1, 16):
     lam = LAMBDA[k]
     if lam > len(S48):
@@ -211,10 +215,12 @@ for k in range(1, 16):
     Sk = int(c48[lam])
     add(48 + k, 52416000 + 2 * Sk + TAU[k], 'dim49-63-p48-caps',
         'historical 1400-class family, lambda(%d) = %d, S = %d' % (k, lam, Sk))
-    if lam <= len(_new48):
-        _newsum = int(_newc48[lam])
-        add(48 + k, 52416000 + 2 * _newsum + TAU[k], 'dim49-63-p48-caps',
-            '577 explicit isometric images of a 7387-line class; lambda(%d) = %d, S = %d; verify_october.py' % (k, lam, _newsum))
+    for _name48, _base48, _sizes48, _prefix48 in _explicit48:
+        if lam <= len(_sizes48):
+            _newsum = int(_prefix48[lam])
+            add(48 + k, 52416000 + 2 * _newsum + TAU[k], 'dim49-63-p48-caps',
+                '%s: %d explicit images of a %d-line class; lambda(%d) = %d, S = %d; verify_october.py' %
+                (_name48, len(_sizes48), _base48, k, lam, _newsum))
 
 Z = np.load(os.path.join(IMP, 'dim73-95-gamma72-caps', 'data', 'disjoint_classes.npz'))
 S72 = np.sort(np.array([len(Z[k]) for k in Z.files], dtype=np.int64))[::-1]

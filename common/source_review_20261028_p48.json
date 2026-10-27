@@ -1,0 +1,29 @@
+{
+  "review_date": "2026-10-28",
+  "timezone": "Europe/Moscow",
+  "own_baseline_commit": "a6ba3387f2b0b54942812790a1ddf19bb4e99431",
+  "packingstar_commit": "67be454b83af4287e1a2b61e5bd8c3596a8061d6",
+  "sources": [
+    "https://github.com/CDM1619/PackingStar/blob/67be454b83af4287e1a2b61e5bd8c3596a8061d6/README.md#update--october-26-2026",
+    "https://arxiv.org/html/2511.13391v4"
+  ],
+  "reported_lower_bounds": {
+    "26": 201134,
+    "27": 209586,
+    "28": 221664,
+    "29": 231636,
+    "30": 247952,
+    "31": 250938
+  },
+  "reported_verification_date": "2026-10-26",
+  "verification_scope": "Source review of the public announcement and published method; the new 26-31D configurations were not independently replayed.",
+  "published_logic": [
+    "Work with discrete pairwise inner products and feasible Gram matrices.",
+    "Alternate a filler that extends a configuration with a corrector that removes obstructing rows and columns.",
+    "Preserve structural diversity using algebraic invariants and recycle discovered subconfigurations."
+  ],
+  "october_announcement": "Joint optimization of point removals, midpoint insertions and auxiliary layers within Leech-based constructions. The announcement does not specify a complete implementation of that new scheme.",
+  "adaptation": "Use the fixed rank-48 lattice realization to satisfy Gram feasibility automatically; search the exact |inner product|=3 conflict graph by filling, one-for-two replacements and neutral swaps. Then jointly choose class images by marginal coverage and restore lines previously removed only because an unselected class owned them.",
+  "implementation_scope": "CPU combinatorial adaptation of the published principle. No reproduction or training of PackingStar reinforcement-learning models is claimed.",
+  "priority_scope": "The new high-dimensional gains compare with the preceding repository certificate; this review is not a comprehensive new global literature survey."
+}

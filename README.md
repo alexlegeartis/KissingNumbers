@@ -8,6 +8,16 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
+> **28 October 2026 — verified improvements throughout 49–60D.**
+> Fill/correct local replacements produce a **7,678-line P48 class**, replacing
+> the 7,387-line base. Joint image selection and refilling give **52 431 358**
+> in 49D (+582) through **57 894 253** in 60D (+203 582). Two complete exact
+> geometric replays check all **29 472 003** base pairs, 577 isometries and
+> **4 047 491** distinct mother lines. [Certificates, proof scope and reproduction](verifications/improved/dim49-63-p48-caps/).
+> Gains compare with the preceding repository constructions. PackingStar's
+> published fill/correct principle informed this CPU search; its larger reported
+> 26–31D values are now recorded below. The manuscript retains its earlier snapshot.
+>
 > **28 October 2026 — verified phase refills in 36D and 37D.**
 > The new certificates give **501 672** and **505 488**, improving the preceding
 > repository bounds by **39** and **129** points. A shared-deletion phase search
@@ -199,18 +209,18 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 44 | 4 153 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **4 939 281** | **SOTA** | +19% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 45 | 7 380 090 | [Yang et al., QR neighbour projection](https://arxiv.org/abs/2609.35051v1) | **7 655 056** | **SOTA** | +3.7% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 46 | 12 309 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **13 387 797** | **SOTA** | +8.8% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 49 | 52 416 002 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [1D tail](common/published.py) *(derived)* | **52 430 776** | **SOTA** | +0.0282% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 50 | 52 416 006 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [2D tail](common/published.py) *(derived)* | **52 460 322** | **SOTA** | +0.0845% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 51 | 52 416 012 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [3D tail](common/published.py) *(derived)* | **52 504 618** | **SOTA** | +0.169% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 52 | 52 416 024 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [4D tail](common/published.py) *(derived)* | **52 593 106** | **SOTA** | +0.338% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 53 | 52 416 040 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [5D tail](common/published.py) *(derived)* | **52 710 864** | **SOTA** | +0.562% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 54 | 52 416 072 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [6D tail](common/published.py) *(derived)* | **52 945 570** | **SOTA** | +1.01% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 55 | 52 416 126 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [7D tail](common/published.py) *(derived)* | **53 339 086** | **SOTA** | +1.76% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 56 | 52 416 240 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [8D tail](common/published.py) *(derived)* | **54 159 098** | **SOTA** | +3.33% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 57 | 52 416 306 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [9D tail](common/published.py) *(derived)* | **54 627 038** | **SOTA** | +4.22% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 58 | 52 416 510 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [10D tail](common/published.py) *(derived)* | **56 043 152** | **SOTA** | +6.92% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 59 | 52 416 604 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail](common/published.py) *(derived)* | **56 680 448** | **SOTA** | +8.13% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **57 690 671** | **SOTA** | +10.1% | — | since 2026-08-30 | [P48 caps, 7 387-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 49 | 52 416 002 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [1D tail](common/published.py) *(derived)* | **52 431 358** | **SOTA** | +0.0293% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 50 | 52 416 006 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [2D tail](common/published.py) *(derived)* | **52 462 074** | **SOTA** | +0.08789% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 51 | 52 416 012 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [3D tail](common/published.py) *(derived)* | **52 508 136** | **SOTA** | +0.1758% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 52 | 52 416 024 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [4D tail](common/published.py) *(derived)* | **52 600 180** | **SOTA** | +0.3513% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 53 | 52 416 040 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [5D tail](common/published.py) *(derived)* | **52 722 680** | **SOTA** | +0.585% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 54 | 52 416 072 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [6D tail](common/published.py) *(derived)* | **52 966 854** | **SOTA** | +1.051% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 55 | 52 416 126 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [7D tail](common/published.py) *(derived)* | **53 376 264** | **SOTA** | +1.832% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 56 | 52 416 240 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [8D tail](common/published.py) *(derived)* | **54 229 018** | **SOTA** | +3.458% | — | since 2026-08-30 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 57 | 52 416 306 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [9D tail](common/published.py) *(derived)* | **54 715 554** | **SOTA** | +4.387% | — | since 2026-08-30 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 58 | 52 416 510 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [10D tail](common/published.py) *(derived)* | **56 186 178** | **SOTA** | +7.192% | — | since 2026-08-30 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 59 | 52 416 604 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail](common/published.py) *(derived)* | **56 847 152** | **SOTA** | +8.453% | — | since 2026-08-30 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **57 894 253** | **SOTA** | +10.45% | — | since 2026-08-30 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
 | 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **71 310 488** | **SOTA** | +36% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **100 371 468** | **SOTA** | +91.5% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **182 407 428** | **SOTA** | 3.48x | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
@@ -566,8 +576,8 @@ rotated and record axis layers (229 743 rather than 8 718 points across the
 gain to add to the current record table; `audit.py` recomputes it from the files.
 
 **Explicit classes.** The gain is proportional to the size of a *class* — a set of lines with
-pairwise |⟨u,u′⟩| ≤ μ/4. Caro–Wei bounds it with no coordinates at all, but real search does
-about ten times better in every lattice tried: 221 → **2118** for Γ₇₂, 712 → **7387** for
+pairwise |⟨u,u′⟩| ≤ μ/4 for Γ₇₂ and ≤ μ/3 for P₄₈. Caro–Wei bounds it with no coordinates at all, but real search does
+about ten times better in every lattice tried: 221 → **2118** for Γ₇₂, 712 → **7678** for
 P₄₈, and 32 000 pairwise-disjoint classes totalling 47 150 230 lines.
 
 **The Edel–Rains–Sloane chain, evaluated where its authors did not (39, 62, 63).** Their count
