@@ -1,7 +1,5 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
-**27 October 2026 verified checkpoint:** lower bounds in dimensions 26–31 are **201,108; 209,532; 216,680; 226,520; 238,808; 246,638**. [Coordinates, proofs and independent exact replays](verifications/improved/dim26-31-residual-completions/). These improve the previous repository values by 190; 4,896; 11,448; 9,952; 14,528; 4,896 respectively. Historical SOTA labels and comparison sources below are inherited from the repository’s pinned review; this checkpoint is not a fresh worldwide literature survey or an optimality claim. The manuscript remains its previous snapshot.
-
 The kissing number τ(n) is the largest number of unit spheres that can touch a central unit
 sphere in ℝⁿ; equivalently, the largest set of unit vectors with pairwise inner products at
 most 1/2. This repository registers constructions in **70 dimensions**, each with a package
@@ -10,6 +8,16 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
+> **27 October 2026 — stronger verified bounds in dimensions 26–31.**
+> Exact residual-head completions give **201 108**, **209 532**, **216 680**,
+> **226 520**, **238 808** and **246 638**, respectively. The increases over
+> the preceding repository constructions are **190**, **4 896**, **11 448**,
+> **9 952**, **14 528** and **4 896** points. Independent full exact replays
+> passed on Python 3.9 and 3.11. [Coordinates, proofs and reproduction](verifications/improved/dim26-31-residual-completions/).
+> The record table retains its named historical comparison baselines; these
+> certificate checks are not a new worldwide literature survey or an optimality claim.
+> The manuscript remains at its previous snapshot.
+>
 > **27 October 2026 — stronger bounds in 95D and 96D.**
 > The new 24,613-support certificate gives **13 290 258 624** in 96D,
 > improving the preceding repository bound by **851 968** points.
@@ -101,11 +109,14 @@ or the ratio `this work / recorded comparison` when it is at least 2.
 That baseline can precede an intervening record by another author. For example,
 the 25D row compares 197,584 with Ma et al.'s historical 197,056, a gain of
 528 points (+0.268%). The advance over Takhanov-Yun's subsequent 197,583-point
-record is **one point**. In 31D the historical gain is 3,392 points, while
-the advance over Li's 241,079-point record is **663 points**. The
-[25D](verifications/improved/dim25-collective-deformation/) and
-[31D](verifications/improved/dim31-dual-centres/) packages name and link these
-preceding methods.
+record is **one point**. In 31D the current 246,638-point construction gains
+**8,288 points** over the table's historical 238,350-point comparison and
+**5,559 points** over Li's 241,079-point record. Its separate gain over the
+preceding repository construction of 241,742 is **4,896 points**. The
+[25D](verifications/improved/dim25-collective-deformation/),
+[historical 31D](verifications/improved/dim31-dual-centres/) and
+[current 26–31D](verifications/improved/dim26-31-residual-completions/) packages
+name these comparisons and the associated constructions.
 
 **Later gain** compares a superseding SOTA with our retained result, using the
 same percentage/ratio convention. Small percentages retain enough digits to
@@ -309,7 +320,7 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               all 70 claims, 29 packages; earlier constructions remain
+  improved/               all 70 claims, 30 packages; earlier constructions remain
                           available with their original proof data
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
@@ -328,7 +339,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 29 packages, 70 dimensions
+### `verifications/improved/` — 30 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -339,6 +350,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 
 | package                                                                                      | dims   | the idea                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`dim26-31-residual-completions`](verifications/improved/dim26-31-residual-completions/) | 26–31 | current residual-head completions and exact exceptional pure tails; independent full replays |
 | [`dim25-collective-deformation`](verifications/improved/dim25-collective-deformation/) | 25 | collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons |
 | [`dim31-dual-centres`](verifications/improved/dim31-dual-centres/) | 31 | shared midpoint replacements and dual E7 centres; exact coordinate replay |
 | [`dim38-joint-latitudes`](verifications/improved/dim38-joint-latitudes/) | 38 | 1352 joint latitude families, signed axis rotation and coordinate axes; exact integer replay |
@@ -506,6 +518,12 @@ reproduces Cohn's table in dimensions 26, 28, 29, 30, 31 **exactly** and beats i
 27 — a strong check on the model, and it is run as such by
 `[verifications/improved/dim73-95-gamma72-caps/scripts/calibrate.py](verifications/improved/dim73-95-gamma72-caps/scripts/calibrate.py)`.
 
+**Axis-layer comparison.** In the retained 73–95D cap construction, the shell rule
+became the search space, and cost 221 025 spheres relative to the shipped
+rotated and record axis layers (229 743 rather than 8 718 points across the
+23 layers). This is a comparison within that construction, not an additional
+gain to add to the current record table; `audit.py` recomputes it from the files.
+
 **Explicit classes.** The gain is proportional to the size of a *class* — a set of lines with
 pairwise |⟨u,u′⟩| ≤ μ/4. Caro–Wei bounds it with no coordinates at all, but real search does
 about ten times better in every lattice tried: 221 → **2118** for Γ₇₂, 712 → **7387** for
@@ -575,10 +593,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 87 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 88 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 106 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 107 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

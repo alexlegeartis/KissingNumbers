@@ -1,11 +1,13 @@
 # Shared midpoint replacements in dimensions 26 and 27
 
+Retained construction: the dated benchmark, construction and gain columns below are historical; the added current-bound column points to the [27 October residual completions](../../dim26-31-residual-completions/).
+
 Exact lower bounds obtained on 2026-10-25:
 
-| Dimension | Previous benchmark | This construction | Improvement |
-|---|---:|---:|---:|
-| 26 | 199,868 | **200,918** | **1,050** |
-| 27 | 201,589 | **204,636** | **3,047** |
+| Dimension | Previous benchmark | This construction | Improvement | Current repository bound (27 October 2026) |
+|---|---:|---:|---:|---:|
+| 26 | 199,868 | **200,918** | **1,050** | 201,108 |
+| 27 | 201,589 | **204,636** | **3,047** | 209,532 |
 
 The comparison benchmarks are those published in the [Takhanov–Yun certificate repository](https://github.com/k-nic/kissing_d25-31). The construction here rebuilds from the standard Leech shell and does not use their lifted configurations.
 

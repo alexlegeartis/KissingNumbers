@@ -13,5 +13,5 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: python -m pip install numpy scipy sympy threadpoolctl
-      - run: python verifications/improved/dim26-31-residual-completions/verify.py
       - run: python audit.py --repository-only
+      - run: python verifications/improved/dim26-31-residual-completions/verify.py

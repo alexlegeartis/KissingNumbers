@@ -11,7 +11,7 @@ Verified research checkpoint, 27 October 2026. These are achieved lower bounds, 
 | 30 | 224,280 | **238,808** | 14,528 |
 | 31 | 241,742 | **246,638** | 4,896 |
 
-Comparison values were rechecked against repository main commit `4838231d173cca75046e55c9c900bcd6f2b53a0f`. Historical packages and manuscript sources are unchanged.
+Comparison values were rechecked against repository main commit `4838231d173cca75046e55c9c900bcd6f2b53a0f`. Historical coordinate certificates and manuscript sources are unchanged; historical package documentation now also identifies the current repository bounds.
 
 ## Exact coordinate assembly
 
@@ -52,3 +52,15 @@ The independent proof regenerates the shell from Golay polynomial 0xC75, verifie
 Original independent reports are retained as historical evidence. The final 30D/31D discovery checks used pinned full-baseline incremental proofs; the packaged default full checkers deliberately remove that dependency and recompute all current insertion pairs. Their `_full_replay.json` outputs are separate from original reports. The source-preparation manifest records that the adapted full checkers had not yet run at preparation time; the branch CI and integration replay provide their actual executed status.
 
 The verification package contains only final coordinate certificates, proofs, small evidence reports/logs and source. It excludes search caches, large runtime states and unrelated private upper-bound research. Exact proofs do not establish optimality, and numerical upper-bound experiments are not part of these lower-bound claims.
+
+## Source-checker inventory
+
+All seven scripts below are in `source/27d_independent_verification_20261026/`:
+
+- `verify26_201108.py`: full 26D integer proof.
+- `verify209532.py`: full 27D integer proof.
+- `verify28_216680.py`: full 28D integer proof.
+- `verify29_226520_bounded.py`: full 29D integer proof with bounded storage.
+- `verify30_238796_full_final.py`: full 30D integer-base proof before the exceptional-tail replacement.
+- `verify31_246596_full_final.py`: full 31D integer-base proof before the exceptional-tail replacement.
+- `apply_exact_tail_upgrade_full_final.py`: exact 30D/31D exceptional-tail replacement after a fresh matching integer-base proof.

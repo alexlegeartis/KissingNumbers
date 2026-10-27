@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 87 scripts, including large exact certificate replays
-    python run_all.py --full       # 106 scripts, budget about 10 hours
+    python run_all.py              # 88 scripts, including large exact certificate replays
+    python run_all.py --full       # 107 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
