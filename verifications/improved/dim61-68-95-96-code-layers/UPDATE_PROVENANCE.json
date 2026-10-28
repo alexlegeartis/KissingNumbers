@@ -375,5 +375,47 @@
     "verification": "Fresh 268435456-word NumPy enumeration; independent C++ Gray-code enumeration; 46778628 exact support intersections; full 2048-sign Gram matrix; exact rational/radical layer bounds and negative controls.",
     "receipt": "source/significant49_72/compressed_layers.json",
     "scope": "Replaces the registered 61D and 62D constructions. Other dimensions retain their preceding certificates. No unrestricted optimum or new worldwide priority survey. Manuscript remains deferred."
+  },
+  "dual_obstruction_20261028": {
+    "previous_commit": "56e078a2ec383117ec3904bb0a7749d80e759d54",
+    "previous_certificate_sha256": "f3c5a100ba1ac8d73e8f1fffd555d72c0d87e75f4bb9532aeab3b10c7f8f9cf5",
+    "certificate_sha256": "d0def7d6587ca3aa1b39c9f3e7ccb844310285a7f1794dc8e9492f0fff9fc65d",
+    "previous_supports": 24645,
+    "supports": 26022,
+    "removed_supports": 696,
+    "inserted_supports": 2073,
+    "net_supports": 1377,
+    "dimensions": {
+      "95": {
+        "bound": 7101541132,
+        "previous_bound": 7092331276,
+        "gain": 9209856,
+        "terms": {
+          "dense_section": 4697620480,
+          "transversal24_section": 2147483648,
+          "new_support24_section": 255120384,
+          "support6_section": 1316444,
+          "ordinary_poles": 176
+        }
+      },
+      "96": {
+        "bound": 13313343680,
+        "previous_bound": 13290782912,
+        "gain": 22560768,
+        "terms": {
+          "dense": 8589934592,
+          "transversal24": 4294967296,
+          "new_support24": 426344448,
+          "support6": 2097152,
+          "poles": 192
+        }
+      }
+    },
+    "verification": [
+      "source/dim61_96/mixed_pair_certificate.py",
+      "source/dim61_96/verify_support_bits.py"
+    ],
+    "scope": "Constructive lower bounds. The family replaces its predecessor; no unrestricted optimum or new claim in 73--94D. Manuscript deferred.",
+    "receipt": "search/dual_obstruction_20261028.json"
   }
 }

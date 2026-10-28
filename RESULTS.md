@@ -9,6 +9,8 @@ The 28 October continuous-head 43D continuation gives 2919782 points (+39 over t
 
 The 28 October Coxeter-Todd continuation gives 501672 in 36D (+39) and 505488 in 37D (+129), with two independent exact representations and reproducible phase trades.
 
+The 28 October dual-obstruction continuation gives 7,101,541,132 in 95D (+9,209,856) and 13,313,343,680 in 96D (+22,560,768). Its 26,022-support certificate checks all 338,559,231 distinct pairs in two exact representations. Disjoint odd GF(4) trace checks prove compatibility for 2,073 supports in thirteen or fourteen rows, extending the former twelve-row restriction. The manuscript remains deferred.
+
 The further 28 October continuation gives 6,218,206,932 in 73D from 7,663 explicit norm-ten heads; signed-tail orbit proofs give 6,220,170,666 in 82D, 6,221,008,658 in 83D, 6,222,025,404 in 84D, 6,223,222,688 in 85D and 6,226,194,610 in 87D. A 24,645-support certificate gives 7,092,331,276 in 95D and 13,290,782,912 in 96D. The new explicit layer checks 120,048,558 products in two exact arithmetics, the signed profiles have an independent polynomial replay, and both support representations check all 303,675,690 pairs. The manuscript remains deferred.
 
 The 28 October mixed-tail weighted-priority continuation gives 6,218,490,542 in 77D, 6,218,688,770 in 78D and 6,218,922,650 in 79D, improving the preceding certificates by 25,526, 2,890 and 10,614 points. All 22,848,388 ordered tail products, joint tail/pole ranks and rational expectations are checked exactly. These are existence proofs under the stated Gamma72/design inputs; selected head sets are not enumerated. The manuscript retains its earlier snapshot.
@@ -85,8 +87,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 92 | 6 218 195 048 | **6 272 431 575** | 1.01 | `classes` | [the cap construction over Gamma_72, with zero-sum triples](verifications/improved/dim73-95-gamma72-caps/) |
 | 93 | 6 218 205 368 | **6 301 636 084** | 1.01 | `classes` | [the cap construction over Gamma_72, with zero-sum triples](verifications/improved/dim73-95-gamma72-caps/) |
 | 94 | 6 218 225 496 | **6 357 657 396** | 1.02 | `classes` | [the cap construction over Gamma_72, with zero-sum triples](verifications/improved/dim73-95-gamma72-caps/) |
-| 95 | 6 218 268 750 | **7 092 331 276** | 1.14 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
-| 96 | 6 218 372 160 | **13 290 782 912** | 2.14 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
+| 95 | 6 218 268 750 | **7 101 541 132** | 1.14 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
+| 96 | 6 218 372 160 | **13 313 343 680** | 2.14 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
 
 ## Status: what would have to change
 
@@ -183,7 +185,7 @@ typed by hand. Sources:
 | 47 | already in the literature. 23 766 960 is Boyvalenkov-Cherkashin, Results Math. 80 (2025), Paper No. 3, equation (3) of the preprint arXiv:2312.05121. The historical 46D value 12 309 600 is Sun-Wang, arXiv:2607.20359, Table 3; the new 46D construction is larger. `verifications/recovered/dim46-47-p48-cross-sections/` |
 | 48 | 52 416 000 is P_48 itself. |
 | 72 | 6 218 175 600 is Gamma_72 itself. |
-| 97 and above | **not evaluated here.** Monotonicity gives at least dimension 96's 13 290 782 912, and nothing in this repository claims anything there. The Edel-Rains-Sloane chain is the thing to evaluate, as it was at 96. |
+| 97 and above | **not evaluated here.** Monotonicity gives at least dimension 96's 13 313 343 680, and nothing in this repository claims anything there. The Edel-Rains-Sloane chain is the thing to evaluate, as it was at 96. |
 | 9-17, 19 | every published record is checked MAXIMAL -- no sphere can be added to any of them, and the margin of each is recorded. `verifications/closed/dim09-19-record-maximality/` |
 | 17, 19-21 | the Cohn-Li mechanism is at its exact ceiling: provably exhausted in 20 and 21, dimension 19 closed at exactly Ho's 11948, and dimension 17 at its two-slot value; the middle dimension of that range left this table for the improved tier (the bent-coset hexagon). `verifications/closed/dim17-23-cohn-li-mechanism/` |
 | 17, 19-24 | one construction, not eight: every Leech minimal vector's part in the 8 coordinates of an octad has norm^2 0, 8, 16 or 32, the multiplicity is CONSTANT on each of those four position shells (4320, 512, 32, 1), and hence tau(Lambda_{16+k}) = 4320 + 513*N_2(L_k) + 32*N_4(L_k) for L = A1, A2, A3, D4, D5, E6, E7, E8.  The records add a flat layer, which is EXACTLY 2048 in 20 and 21 (Koenig on a regular bipartite Cayley graph) -- both are rebuilt there from the Golay code and checked pair by pair.  The one component not at a proved ceiling is the tier size, in [512, 533]. `verifications/closed/dim17-24-layer-identity/` |

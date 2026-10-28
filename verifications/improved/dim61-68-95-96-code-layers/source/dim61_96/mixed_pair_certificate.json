@@ -1,12 +1,12 @@
 {
   "status": "Verified: every physical support pair and exact sign/section counts",
-  "supports": 24645,
-  "previous_supports": 24631,
-  "additional_supports": 14,
-  "comparison": "Immediately preceding registered repository bounds (commit 9d38a38)",
-  "support_pairs_checked": 303675690,
+  "supports": 26022,
+  "previous_supports": 24645,
+  "additional_supports": 1377,
+  "comparison": "Immediately preceding registered repository bounds (commit 56e078a)",
+  "support_pairs_checked": 338559231,
   "maximum_distinct_support_intersection": 12,
-  "maximum_occupied_rows": 12,
+  "maximum_occupied_rows": 14,
   "section_coordinates": [
     0,
     1,
@@ -18,11 +18,11 @@
     7
   ],
   "section_intersection_histogram": [
-    6999,
-    0,
-    11435,
-    0,
-    5463,
+    7248,
+    193,
+    11915,
+    260,
+    5658,
     0,
     704,
     0,
@@ -41,42 +41,62 @@
   ],
   "dimensions": {
     "95": {
-      "bound": 7092331276,
-      "previous_bound": 7092187916,
-      "gain": 143360,
+      "bound": 7101541132,
+      "previous_bound": 7092331276,
+      "gain": 9209856,
       "terms": {
         "dense_section": 4697620480,
         "transversal24_section": 2147483648,
-        "new_support24_section": 245910528,
+        "new_support24_section": 255120384,
         "support6_section": 1316444,
         "ordinary_poles": 176
       }
     },
     "96": {
-      "bound": 13290782912,
-      "previous_bound": 13290553536,
-      "gain": 229376,
+      "bound": 13313343680,
+      "previous_bound": 13290782912,
+      "gain": 22560768,
       "terms": {
         "dense": 8589934592,
         "transversal24": 4294967296,
-        "new_support24": 403783680,
+        "new_support24": 426344448,
         "support6": 2097152,
         "poles": 192
       }
     }
   },
-  "certificate_sha256": "f3c5a100ba1ac8d73e8f1fffd555d72c0d87e75f4bb9532aeab3b10c7f8f9cf5",
-  "seconds": 0.30662314599999263,
+  "certificate_sha256": "d0def7d6587ca3aa1b39c9f3e7ccb844310285a7f1794dc8e9492f0fff9fc65d",
+  "seconds": 0.5014235349999581,
   "geometry": {
     "norm_squared": 96,
     "dense_min_distance": "min(4*6, 2*12, 24)=24 gives inner product at most 48",
     "same_sparse_support": "4*(24-2*6)=48",
     "different_sparse_supports": "4*12=48, every support pair checked directly",
     "dense_sparse": "2*24=48",
-    "transversal_sparse": "one cell per occupied row, at most twelve rows",
+    "transversal_sparse": "one per occupied row; disjoint odd dual trace checks force enough missed rows to leave at most twelve hits",
     "support6_sparse": "4*2*6=48",
     "poles_sparse": "2*sqrt(96)<48",
     "section95": "Orthogonal identification of the central hyperplane sum(x_0,...,x_7)=0 with R^95"
   },
-  "scope": "Constructive lower bounds; no unrestricted optimum or literature-priority claim."
+  "scope": "Constructive lower bounds; no unrestricted optimum or literature-priority claim.",
+  "occupied_row_histogram": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    6,
+    140,
+    1700,
+    6144,
+    6310,
+    9649,
+    42,
+    2031
+  ],
+  "dual_obstruction_supports": 2073,
+  "disjoint_dual_checks": 4104,
+  "maximum_transversal_intersection_bound": 12
 }

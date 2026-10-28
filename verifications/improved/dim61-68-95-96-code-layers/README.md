@@ -11,8 +11,8 @@ The latest update improves 61D by **20.28%** and 62D by **20.09%**.
 | 66 | **338,302,340** | shortened weight-16 support code and lower layers |
 | 67 | **351,420,806** | the same construction |
 | 68 | **371,552,152** | the same construction |
-| 95 | **7,092,331,276** | optimized central section of the enlarged 96D construction |
-| 96 | **13,290,782,912** | transversal supports plus a mixed-pair support code |
+| 95 | **7,101,541,132** | optimized central section of the enlarged 96D construction |
+| 96 | **13,313,343,680** | transversal supports plus a mixed-pair support code |
 
 These are constructive lower bounds. Cohn's reviewed October table stops at dimension
 48, so it provides no comparison in this range. Historical comparisons remain
@@ -94,7 +94,7 @@ shortenings of the [73,36,16] weight-16 shell, extended Hamming signs and
 affine weight-four support packings. Code distances bound all cross-support
 angles; sparse/dense cross bounds are checked exactly.
 
-In 96D, the current certificate supplies 24,645 additional weight-24 supports.
+In 96D, the current certificate supplies 26,022 additional weight-24 supports.
 It starts from doubled QR48 supports and permits different pairings in
 different four-cell rows, followed by neutral switches and additions. Each occupies at most twelve rows
 of the existing 24-by-4 transversal layout, proving the cross-intersection
@@ -169,24 +169,24 @@ zeros and ones; no approximate angle comparison is used.
 
 `source/dim61_96/verify_support_bits.py` checks the same complete support
 family using unsigned integer intersections and population counts, independently
-of the coordinate matrix products. It checks all 303,330,765 unordered pairs,
-weight 24, distinctness, at most twelve occupied rows and the exact section
-histogram `[6999,0,11435,0,5463,0,704,0,44]`. No approximate arithmetic is used.
+of the coordinate matrix products. It now checks all 338,559,231 unordered pairs, weight 24, distinctness,
+the exact section histogram and every dual obstruction for supports in
+thirteen or fourteen occupied rows. No approximate arithmetic is used.
 Its pinned receipt is `source/dim61_96/support_bits_verification.json`.
 Both `verify95_96.py` and `verify.py` replay both representations in a temporary
 copy and match the complete receipts (apart from elapsed time).
 
-The current support family has 17,296 ordinary doubled QR48 supports and 7,349
-compatible nonordinary supports. It contributes 403,783,680 points in 96D:
+The current support family has 17,296 ordinary doubled QR48 supports and 8,726
+compatible nonordinary supports. It contributes 426,344,448 points in 96D:
 
 ```text
-8,589,934,592 + 4,294,967,296 + 403,783,680 + 2,097,152 + 192
-    = 13,290,782,912.
+8,589,934,592 + 4,294,967,296 + 426,344,448 + 2,097,152 + 192
+    = 13,313,343,680.
 ```
 
 The central-section terms are
-`4,697,620,480 + 2,147,483,648 + 245,910,528 + 1,316,444 + 176
-= 7,092,331,276`. These are constructive lower bounds, without an optimality
+`4,697,620,480 + 2,147,483,648 + 255,120,384 + 1,316,444 + 176
+= 7,101,541,132`. These are constructive lower bounds, without an optimality
 claim. `UPDATE_PROVENANCE.json` records the research source, exact certificate
 hash and immediately preceding repository comparison.
 
@@ -245,7 +245,7 @@ in `search/negative_controls.json`.
 
 Continuing the verified 24,631-support family gives **24,645** supports.
 Four free additions and ten two-for-one trades add fourteen supports, with
-147 neutral exchanges. The bounds are **7,092,331,276** in 95D and
+147 neutral exchanges. That checkpoint gave **7,092,331,276** in 95D and
 **13,290,782,912** in 96D, gains of **143,360** and **229,376** over commit
 9d38a38. The 95D section count is optimized without lowering either bound.
 
@@ -257,3 +257,52 @@ section replay also passed. `verify95_96.py` runs both in an isolated copy.
 parameters and result hash. The preceding `search/receipt.json` remains
 historical; reproducing it supplies the starting checkpoint for this pass.
 Search is finite and does not establish an optimum.
+
+
+## Dual trace obstructions: supports beyond twelve rows
+
+The 28 October dual-obstruction continuation raises the bounds to
+**7,101,541,132 in 95D** (+9,209,856) and **13,313,343,680 in 96D**
+(+22,560,768), compared with the preceding main certificate. The replacement
+family has **26,022 supports**, a net gain of 1,377. All **338,559,231** distinct
+pairs are checked in both coordinate and packed-integer representations.
+There are 42 supports in thirteen rows and 2,031 in fourteen rows.
+
+Let Q be the enumerated quaternary [24,9,12] code used for transversals.
+For a dual word d, every q in Q satisfies sum(d_i*q_i)=0 in GF(4), hence
+sum(Tr(d_i*q_i))=0 over GF(2). A support carries allowed cell sets S_i.
+If Tr(d_i*c) is constant on each S_i and these constants sum to one, no
+q can hit every allowed set on the nonzero rows of d. Thus every transversal
+misses at least one occupied row. Two such dual words with disjoint supports
+force two different missed rows. This proves the required intersection bound
+12 for supports occupying thirteen or fourteen rows, respectively.
+
+`source/dim61_96/mixed_pair_certificate.npz` includes two packed GF(4) dual
+witnesses per support and the quaternary generator. Both verifiers check
+orthogonality, constant traces, odd total traces, disjointness and occupied
+rows. `source/dim61_96/verify_support_bits.py` implements field multiplication
+independently using x^2=x+1 and re-enumerates all 262,144 outer words. Missing
+checks, overlapping checks and reversed trace parity were rejected by both
+replays. No floating-point margin is accepted as a proof.
+
+The discovery walk uses the same finite add/correct principle that motivates
+PackingStar: insert free candidates, exchange neutral candidates, and replace
+a common blocker by two compatible candidates. The new candidate geometry,
+rather than a reinforcement-learning model, produced this gain.
+`search/build_dual_candidates.py` regenerates the pools from the code:
+21,296 single duals and 247,800 disjoint dual pairs. The last search stage is
+replayable from `search/dual_obstruction_start.npz` with
+`search/dual_obstruction_search.cpp`; its receipt is
+`search/dual_obstruction_20261028.json`. Search files are optional inputs to
+discovery; verification uses only the complete final certificate.
+
+```sh
+python search/build_dual_candidates.py /tmp/dual-walk
+g++ -O3 -march=native search/dual_obstruction_search.cpp -o /tmp/dual-walk/search
+/tmp/dual-walk/search /tmp/dual-walk/start.txt /tmp/dual-walk/pairs14.txt /tmp/dual-walk/final.txt 100000000 128 /tmp/dual-walk/duals13.txt
+```
+
+Run these commands from this package. The recorded walk used GCC 12.2 on
+Linux; search order can depend on the standard library's shuffle implementation.
+The certificate replays are independent of that order. The manuscript remains
+at its pinned snapshot.

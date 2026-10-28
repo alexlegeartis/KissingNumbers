@@ -17,10 +17,49 @@ except ImportError:
         return nullcontext()
 
 from weighted_layers import (all_binary_words, dense96, kernel, matrix, packed,
-                             popcounts64, quaternary24, rref, sign24)
+                             popcounts64, quaternary24, rref, sign24, M4)
 from section95_search import best_rs_section
 
 HERE = Path(__file__).resolve().parent
+
+
+def row_obstructions(data, outer, incidence):
+    """Each odd trace check forces a miss on its own disjoint row set."""
+    assert np.array_equal(outer, data['quaternary_generator'])
+    witness = data['dual_witnesses']
+    assert witness.dtype == np.uint64 and witness.shape == (len(incidence), 2)
+    assert np.all(witness < 2**48)
+    occupied = np.count_nonzero(incidence.reshape(-1, 24, 4).sum(axis=2), axis=1)
+    assert max(occupied) <= 14
+    bound = checks = 0
+    trace = np.array([0, 0, 1, 1], dtype=np.uint8)
+    for index in range(len(incidence)):
+        used = np.zeros(24, dtype=bool)
+        certified_misses = 0
+        for packed_dual in witness[index]:
+            if not packed_dual:
+                continue
+            dual = ((packed_dual >> (2*np.arange(24, dtype=np.uint64))) & 3).astype(np.uint8)
+            active = dual != 0
+            assert not np.any(used & active), 'misses must occur in disjoint rows'
+            used |= active
+            assert not np.any(np.bitwise_xor.reduce(M4[outer, dual], axis=1))
+            parity = 0
+            for row in np.flatnonzero(active):
+                cells = np.flatnonzero(incidence[index, 4*row:4*row+4])
+                assert len(cells), 'every nonzero dual position must be occupied'
+                values = trace[M4[dual[row], cells]]
+                assert np.all(values == values[0]), 'trace must be constant on allowed cells'
+                parity ^= int(values[0])
+            assert parity == 1
+            certified_misses += 1
+        assert occupied[index]-certified_misses <= 12
+        bound = max(bound, int(occupied[index])-certified_misses)
+        checks += certified_misses
+    return dict(occupied_row_histogram=np.bincount(occupied, minlength=15).tolist(),
+                dual_obstruction_supports=int(np.count_nonzero(occupied > 12)),
+                disjoint_dual_checks=checks,
+                maximum_transversal_intersection_bound=bound)
 
 
 def main():
@@ -35,7 +74,8 @@ def main():
     incidence = np.column_stack([((low >> np.uint64(c)) & np.uint64(1)) for c in range(64)] +
                                 [((high >> np.uint64(c)) & np.uint64(1)) for c in range(32)]).astype(np.float32)
     rows = incidence.reshape(-1, 24, 4).sum(axis=2)
-    assert np.all(np.count_nonzero(rows, axis=1) <= 12)
+    outer, _ = quaternary24()
+    obstruction_report = row_obstructions(data, outer, incidence)
     maximum = 0
     with threadpool_limits(limits=4):
         for offset in range(0, len(low), 512):
@@ -64,7 +104,6 @@ def main():
     intersection_sizes = popcounts64(low & np.uint64(255))
     histogram = np.bincount(intersection_sizes, minlength=9)
     added95 = int(histogram @ retained)
-    outer, _ = quaternary24()  # Exhaustive 4**9-word distance verification.
     dense = dense96(sign, outer)
     assert len(rref(packed(dense), 96)[0]) == 33
     projection = rref([sum(int(row[c]) << c for c in range(8)) for row in dense], 8)[0]
@@ -80,15 +119,15 @@ def main():
                'ordinary_poles': 176}
     terms96 = {'dense': 1 << 33, 'transversal24': 1 << 32,
                'new_support24': len(low)*16384, 'support6': 1 << 21, 'poles': 192}
-    # Registered bounds immediately before the further 28 October support continuation.
-    before = {95: 7092187916, 96: 13290553536}
+    # Registered bounds before the dual-obstruction continuation (56e078a).
+    before = {95: 7092331276, 96: 13290782912}
     dimensions = {str(d): {'bound': sum(terms.values()), 'previous_bound': before[d],
                           'gain': sum(terms.values())-before[d], 'terms': terms}
                   for d, terms in ((95, terms95), (96, terms96))}
     report = {'status': 'Verified: every physical support pair and exact sign/section counts',
-              'supports': len(low), 'previous_supports': 24631,
-              'additional_supports': len(low)-24631,
-              'comparison': 'Immediately preceding registered repository bounds (commit 9d38a38)',
+              'supports': len(low), 'previous_supports': 24645,
+              'additional_supports': len(low)-24645,
+              'comparison': 'Immediately preceding registered repository bounds (commit 56e078a)',
               'support_pairs_checked': len(low)*(len(low)-1)//2,
               'maximum_distinct_support_intersection': maximum,
               'maximum_occupied_rows': int(np.count_nonzero(rows, axis=1).max()),
@@ -102,11 +141,12 @@ def main():
                   'same_sparse_support': '4*(24-2*6)=48',
                   'different_sparse_supports': '4*12=48, every support pair checked directly',
                   'dense_sparse': '2*24=48',
-                  'transversal_sparse': 'one cell per occupied row, at most twelve rows',
+                  'transversal_sparse': 'one per occupied row; disjoint odd dual trace checks force enough missed rows to leave at most twelve hits',
                   'support6_sparse': '4*2*6=48',
                   'poles_sparse': '2*sqrt(96)<48',
                   'section95': 'Orthogonal identification of the central hyperplane sum(x_0,...,x_7)=0 with R^95'},
               'scope': 'Constructive lower bounds; no unrestricted optimum or literature-priority claim.'}
+    report.update(obstruction_report)
     (HERE / 'mixed_pair_certificate.json').write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(report, indent=2), flush=True)
 

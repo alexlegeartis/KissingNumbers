@@ -1,7 +1,7 @@
 # Dimension 96 — where Edel–Rains–Sloane takes over, and the cap construction cannot follow
 
 **Retained historical analysis.** This package records the earlier ERS takeover
-of the cap construction. The October code package now registers **13 264 027 840**
+of the cap construction. The October code package now registers **13 313 343 680**
 in 96D and stronger code and section constructions in 61–63D and 68D. See
 [the current registry](../../../RESULTS.md) and
 [the code package](../../improved/dim61-68-95-96-code-layers/).
@@ -116,7 +116,7 @@ earlier counts. `ers96.py` evaluates the chains:
 |---|---|---|---|---|---|---|
 | 93 | 6 294 850 360 | 2³¹ | 506 210 | 65 536 | 2.7e8 | 6 301 636 084 |
 | 94 | 6 355 739 600 | 2³¹ | 513 638 | 65 536 | 3.0e8 | 6 357 657 396 |
-| **95** | **6 473 065 046** | **2³²** | **265 816** | **65 536** | 4.0e8 | 7 092 331 276 |
+| **95** | **6 473 065 046** | **2³²** | **265 816** | **65 536** | 4.0e8 | 7 101 541 132 |
 
 So **dimension 95 is exposed**: a level-1 constant-weight code only 4.06× better than the
 grid map would overturn it, and for calibration ERS's own `A(64,16,16) = 30 828` beats the
@@ -171,7 +171,7 @@ chain, before the larger October central sections. The last column is current.
 | 60 | 57 477 123 | 33 554 432 = 2²⁵ | [60,25,15] | ×1.71 of margin | 57 968 343 |
 | 61 | 59 898 694 | 33 554 432 = 2²⁵ | [60,25,15] | ×1.79 | 87 056 170 |
 | 68 | 361 275 480 | 268 435 456 = 2²⁸ | [64,28,16] | ×1.35 | 371 552 152 |
-| 95 | 6 473 065 046 | 4 294 967 296 = 2³² | [95,32,24] | ×1.51 | 7 092 331 276 |
+| 95 | 6 473 065 046 | 4 294 967 296 = 2³² | [95,32,24] | ×1.51 | 7 101 541 132 |
 
 ⌈62/4⌉ = ⌈63/4⌉ = 16, and both codes are in the table, so **the sign vectors of [62,26,16]
 and [63,27,16] are kissing configurations in dimensions 62 and 63 already**. By the standard

@@ -43,9 +43,10 @@ values and verification packages remain here as part of the research record.
 > Signed-tail existence proofs give **6 220 170 666**, **6 221 008 658**,
 > **6 222 025 404**, **6 223 222 688** and **6 226 194 610** in 82–85D and
 > 87D, gaining up to **1 217 848** points. [Exact proofs and replays](verifications/improved/dim73-88-gamma72-cosets/source/norm10/README.md#further-progress-in-73d-and-82--87d-28-october-2026).
-> A further 14-support improvement gives **7 092 331 276** in 95D (+143 360)
-> and **13 290 782 912** in 96D (+229 376), with all **303 675 690** support
-> pairs checked in two representations. [Support continuation](verifications/improved/dim61-68-95-96-code-layers/search/continuation_20261028.json).
+> The dual-obstruction continuation gives **7 101 541 132** in 95D (+9 209 856)
+> and **13 313 343 680** in 96D (+22 560 768), with all **338 559 231** support
+> pairs checked in two exact representations. Parity certificates allow supports
+> in thirteen or fourteen rows. [Certificate and search receipt](verifications/improved/dim61-68-95-96-code-layers/search/dual_obstruction_20261028.json).
 > Gains compare with the immediately preceding certificates; no new global
 > priority survey is claimed. The manuscript retains its earlier snapshot.
 >
@@ -295,8 +296,8 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 92 | 6 218 195 048 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [20D tail](common/published.py) *(derived)* | **6 272 431 575** | **SOTA** | +0.872% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
 | 93 | 6 218 205 368 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [21D tail](common/published.py) *(derived)* | **6 301 636 084** | **SOTA** | +1.34% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
 | 94 | 6 218 225 496 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [22D tail](common/published.py) *(derived)* | **6 357 657 396** | **SOTA** | +2.24% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 95 | 6 218 268 750 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [23D tail](common/published.py) *(derived)* | **7 092 331 276** | **SOTA** | +14.056365% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 96 | 6 218 372 160 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [Leech](https://doi.org/10.4153/CJM-1967-017-0) *(derived)* | **13 290 782 912** | **SOTA** | +113.734118% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 95 | 6 218 268 750 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [23D tail](common/published.py) *(derived)* | **7 101 541 132** | **SOTA** | +14.204474% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 96 | 6 218 372 160 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [Leech](https://doi.org/10.4153/CJM-1967-017-0) *(derived)* | **13 313 343 680** | **SOTA** | +114.096927% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
 
 
 The historical SOTA period covers this project's run of published records in each
