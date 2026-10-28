@@ -410,6 +410,8 @@ add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover'
 # October code and nearest-coset constructions supersede earlier packages;
 # add() preserves every displaced claim in SUPERSEDED for the history audit.
 for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions'):
+    if _package == 'dim38-joint-latitudes':
+        add(38, 610394, _package, 'source/verify.py: retained historical joint-latitude certificate')
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -2008,7 +2010,7 @@ if '--write-results' in sys.argv and not fail:
         'dim32-35-signed-layers': 'signed octad replacements in 32-33D, a four-head dense-coset extension in 34D, and parity-coordinated twelve-head root replacement in 35D; two independent exact proofs',
         'dim25-collective-deformation': 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons',
         'dim31-dual-centres': 'shared midpoint replacements and dual E7 centres; exact coordinate replay',
-        'dim38-joint-latitudes': '1352 joint latitude families, signed axis rotation and coordinate axes; exact integer replay',
+        'dim38-joint-latitudes': 'Fano-grid and cube-edge latitudes with shared cap deletions; two independent exact proofs',
         'dim39-deformed-orbits': 'rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration',
         'dim40-affine-shells': 'three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products',
         'dim38-latitude-extension': '24 additional latitude points and an exact rational axis rotation over the Leech caps and Lin equator',
@@ -2039,6 +2041,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("%d registered lower bounds on the kissing number tau(n), compared with their\nrecorded published baselines. Later superseding records are listed in README.md."
                % len(claims))
+    out.append("")
+    out.append("The 28 October Fano-grid and cube-edge construction gives 611522 in 38D (+1128 over the preceding 610394-point repository certificate). It replaces 5408 latitude points with 6656 and removes 120 caps. Two independent exact proofs check all retained layers, and the expanded replay checks all 22147840 distinct latitude pairs. A small recipe reconstructs the certificate without search. The 6656-point latitude population saturates this particular 63-support model; other supports and norm splits remain open. The manuscript remains deferred.")
     out.append("")
     out.append("The 28 October continuous-head 43D continuation gives 2919782 points (+39 over the preceding repository certificate), replacing 46 tiny-layer points with 85. Two independent exact representations each check 6370783 angle conditions. Complete-family population inputs and the deferred manuscript scope are unchanged.")
     out.append("")

@@ -1,5 +1,12 @@
 # Verification of the retained SOTA results
 
+The 28 October 38D continuation gives **611,522** points (+1,128). The
+[small constructive recipe](verifications/improved/dim38-joint-latitudes/refill/README.md)
+replaces the latitude layer and deletes 120 caps. Both exact proof
+representations replay all retained layers; the independent coordinate
+representation checks all 22,147,840 distinct latitude pairs. Reconstruction
+is deterministic and both verifiers reject four certificate corruptions.
+
 The 28 October 43D continuation reaches 2,919,782 (+39) by continuous head placement. Two independent exact representations check the complete tiny layer; the complete-family population inputs remain documented in the [43D continuation](verifications/improved/dim41-46-p48-heads/continuation43/README.md).
 
 The further 28 October continuation strengthens 49–63D and 66–68D. The P48 replay now checks the 7,783-line base. `dim61-68-95-96-code-layers/verify_continuation.py` replays the weight-eight bridge, parity-compatible sections and complete quadruple designs, and the package default replay includes all of them. The 64D parent was also freshly enumerated and checked.
@@ -44,7 +51,7 @@ not a new mathematical verification. All commands require assertions enabled.
 | 26–27 | Regenerate the Leech shell, check deleted endpoints and midpoint identities, and check every inserted/inserted pair exactly | Standard Leech shell kissing property; midpoint convexity and pure-tail Cauchy–Schwarz bounds |
 | 28 | Exact Leech partition, head angles and auxiliary layers | Standard kissing property of the generated Leech shell |
 | 29–30 | Regenerate the Leech shell, check all endpoint/midpoint identities and every inserted pair exactly | Standard Leech shell kissing property; exact small integer BLAS with no tolerance; pure-tail Cauchy–Schwarz bound |
-| 38 | Rebuild all cap classes and equatorial lines; check all 1,352 joint latitude families and retained/coordinate axes with integers | Golay lattice congruences and weight enumerator prove the parent minimum |
+| 38 | Two independent exact proofs rebuild all cap classes, equatorial lines and axes; check 120 cap deletions and all 6,656 expanded latitude points | Golay lattice congruences and weight enumerator prove the parent minimum |
 | 39 | Replay sparse supports and root replacements; check every relative pair of 1,281 dense sign orbits | Bounded integer arithmetic and complete Walsh enumeration |
 | 32–35 | Two independent exact representations: full dense-code enumeration, signed-support checks, normalized head products and explicit coordinate checks | Python 3.9+ and NumPy; no search or unverified population input |
 | 36–37 | Two exact routes: fresh short-shell enumeration, phase refill, partial latitude orbits, 97,968 expanded phase points and 1,908 latitude bodies | Python 3.9+ and NumPy; no unverified parent population |
