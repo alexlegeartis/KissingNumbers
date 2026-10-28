@@ -20,8 +20,10 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('output',type=Path)
     parser.add_argument('--mode',choices=('equator','lifts'),default='equator')
+    parser.add_argument('--preserve-lifts',action='store_true',help='exclude equator orbits conflicting with any supplied latitude orbit')
     parser.add_argument('--certificate',type=Path,default=PACKAGE/'completion/certificate.json')
     args=parser.parse_args()
+    if args.preserve_lifts and args.mode!='equator':parser.error('--preserve-lifts requires equator mode')
     output=args.output.resolve()
     if output==PACKAGE or PACKAGE in output.parents:
         parser.error('use a scratch directory outside the verification package')
@@ -55,6 +57,17 @@ def main():
                 for c in np.flatnonzero(allowed[1][a]&allowed[2][b]):cells.append((a,int(b),int(c)))
         pool=np.array([cell+(p,q) for cell in cells
                        for p,q in itertools.product(range(3),repeat=2)],dtype=np.int32)
+        if args.preserve_lifts:
+            if 'lift_phase_orbits' not in cert:parser.error('--preserve-lifts requires a phase-orbit latitude certificate')
+            forbidden=[np.zeros((253,253,3),dtype=bool) for _ in range(3)]
+            for a,b,c,p,q in cert['lift_phase_orbits']:
+                labels=(a,b,c);angles=(0,p,q);k=labels.index(252)
+                i,j=[t for t in range(3) if t!=k]
+                forbidden[k][labels[i],labels[j],(angles[j]-angles[i])%3]=True
+            conflict=(forbidden[0][pool[:,1],pool[:,2],(pool[:,4]-pool[:,3])%3]
+                      |forbidden[1][pool[:,0],pool[:,2],pool[:,4]]
+                      |forbidden[2][pool[:,0],pool[:,1],pool[:,3]])
+            pool=pool[~conflict]
         selected=cert['phase_orbits']
     else:
         rows=[]
@@ -85,6 +98,7 @@ def main():
     pool.tofile(output/'pool.bin')
     np.array(selected,dtype=np.int32).tofile(output/'selected.bin')
     metadata=dict(mode=args.mode,pool_orbits=len(pool),selected_orbits=len(selected),
+                  preserved_lifts=bool(args.preserve_lifts),
                   baseline_sha256=hashlib.sha256(args.certificate.read_bytes()).hexdigest(),
                   maximum_dot=6 if args.mode=='equator' else 2,
                   binary_format='native little-endian int32 rows of five; int8 T[253][253][3]')

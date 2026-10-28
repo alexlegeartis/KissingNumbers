@@ -1,7 +1,7 @@
 # Phase refill and partial latitude orbits
 
-28 October 2026. The certificates prove **501,672 points in 36D** and
-**505,488 points in 37D**, respectively 39 and 129 above the preceding repository
+28 October 2026. The certificates prove **501,687 points in 36D** and
+**505,503 points in 37D**, respectively 15 and 15 above the preceding main-branch
 certificates. These are improvements over explicit witnesses, without an
 optimality or comprehensive literature-priority claim.
 
@@ -12,9 +12,9 @@ surjective quotient-label map with kernel L. Consequently L has minimum 12.
 The quotient weights and multiplicities are `(0,1)`, `(4,3)`, `(6,18)` and
 `(8,81)`, with populations 1, 252, 224 and 252. All norms below are squared norms.
 
-The unchanged fixed base has 403,704 points. The certificate replaces 120 of
-the preceding three-point phase orbits by 133 others. Its 32,656 orbits supply
-97,968 points, so the new equator has `403704 + 3*32656 = 501672` points.
+The unchanged fixed base has 403,704 points. The certificate replaces 147 of
+the retained original three-point phase orbits by 165 others. Its 32,661 orbits supply
+97,983 points, so the new equator has `403704 + 3*32661 = 501687` points.
 Base/base and phase/base inequalities follow from exact quotient distances.
 Phase pairs with three distinct labels have distance at least `4+4+4=12`.
 Every other phase pair is checked by all three relative phase products, or,
@@ -46,12 +46,12 @@ every such pair. In this witness there are **zero** such pairs. It is not
 necessary to multiply all other lift/equator pairs: their bound is `4+2=6`.
 All lift/lift orbit pairs, including pairs from different zero-block positions,
 are checked; the coordinate checker independently checks all 1,819,278 distinct
-body pairs. The total is `501672 + 2*1908 = 505488`.
+body pairs. The total is `501687 + 2*1908 = 505503`.
 
 The symbolic checker and coordinate checker share the certificate and the
 mathematical lattice-distance argument, but share no enumeration or angle code.
 The latter independently expands all phase points and latitude bodies. Its
-61,654,590 phase pair products include repeated checks of pairs sharing more
+61,667,370 phase pair products include repeated checks of pairs sharing more
 than one label; all pairs not covered by the different-label proof are included.
 No floating-point comparison, optimizer output or inherited shell population
 is used in either route. The historical coefficient NPZ files describe the
@@ -82,3 +82,26 @@ these choices.
 `delta.json` and `reproduce.py` recover the shipped certificate exactly from the
 retained witness. The optional `search/` tools expose the larger search pools.
 Search files and graphs are scratch data; they are not trusted certificates.
+
+## Further refill and broader base choices
+
+Relative to the preceding 501,672 / 505,488 main-branch certificate, the new
+phase trade removes 79 orbits and inserts 84. Freezing the latitude labels and
+relative phases during preparation preserves all 636 lift orbits. Both exact
+proofs and byte-for-byte delta reconstruction pass. `negative_controls.py`
+requires both proofs to reject a duplicate phase orbit and false counts.
+
+The optional `search/base_choices.py` exposes a larger base model. For each
+of the 756 base cells with component norms (0,4,8), let i hold the norm-four
+label a, j the norm-eight label b and k the zero label. Its alternative keeps
+b at j and puts -a at k, leaving i zero. Negation is in F_3^6.
+
+Exact coset distances show that each alternative is compatible with every
+original base cell except its own owner, and that all distinct alternatives
+are mutually compatible. Each replaces 3*81 = 243 points. Thus any subset of
+these 756 replacements preserves the 403,704-point base. The script checks
+every one of these finite distance facts before writing a proposed seed.
+This is a new search freedom; it is not used by the current bound and is not
+a claim of a successful refill. Seed retention removes all phase or lift
+orbits lacking the corresponding base-distance bound. Both complete proofs
+must verify the final result after any search.

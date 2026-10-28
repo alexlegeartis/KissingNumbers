@@ -4,21 +4,21 @@ Checkpoint: **28 October 2026**. Both new bounds pass two exact proof representa
 
 | Dimension | Previous repository bound | This construction | Increase |
 |---|---:|---:|---:|
-| 36 | 501,633 | **501,672** | **39** |
-| 37 | 505,359 | **505,488** | **129** |
+| 36 | 501,672 | **501,687** | **15** |
+| 37 | 505,488 | **505,503** | **15** |
 
-The fixed base has 403,704 points. Replacing 120 old three-point phase orbits
-by 133 new ones gives 32,656 orbits, hence **501,672** equatorial points.
+The fixed base has 403,704 points. Replacing 147 retained original phase orbits
+by 165 new ones gives 32,661 orbits, hence **501,687** equatorial points.
 The 37D certificate selects 636 three-point latitude body orbits over 216 cells.
-Its 1,908 bodies occur at both heights +2 and −2, giving **505,488** points.
+Its 1,908 bodies occur at both heights +2 and −2, giving **505,503** points.
 The 15 added latitude orbits contribute 90 points; the improved equator supplies
-the other 39 points of the 37D gain. All points have squared norm 12 and all
+another 54 points relative to the retained 505,359-point witness. All points have squared norm 12 and all
 distinct pair products are at most six in the stated Gram basis.
 
 These improve explicit repository witnesses. The historical Cohn comparisons
 are 484,760 and 500,008, as preserved in
 [the dated table](../../../common/cohn_20261024.json). The live Cohn retrieval
-failed during this continuation, so no fresh worldwide priority or optimality
+failed during the cited source review, so no fresh worldwide priority or optimality
 claim is made. [The source review](../../../common/source_review_20261028_coxeter_todd.json)
 records these comparisons. The manuscript remains at its documented preceding checkpoint.
 
@@ -45,8 +45,8 @@ Installed certificates and receipts are preserved.
 - `completion/verify.py`: standard-library rational short-shell enumeration,
   quotient-distance proofs, and all required relative-phase integer comparisons.
 - `completion/verify_coordinates.py`: a separate rational enumerator and
-  expanded integer-coordinate proof. It checks 97,968 phase points, 1,908
-  latitude bodies, 61,654,590 phase pair products and all 1,819,278 distinct
+  expanded integer-coordinate proof. It checks 97,983 phase points, 1,908
+  latitude bodies, 61,667,370 phase pair products and all 1,819,278 distinct
   latitude-body pairs. Different-label lattice distances settle the other pairs.
 - `completion/reproduce.py`: reconstructs the certificate byte for byte from
   the retained witness and the explicit accepted trades in `delta.json`.
@@ -68,7 +68,7 @@ stated mathematical lattice-distance argument.
 The fixed lattice base allows 729,000 product cells, containing 6,561,000 phase
 orbits. The previous equator occupied 3,979 cells. Search a larger candidate
 pool, count shared blockers, and coordinate deletions and insertions rather
-than requiring each candidate to fit by itself. The new equator uses 3,982
+than requiring each candidate to fit by itself. The new equator uses 3,975
 cells. For 37D, allow individual three-point orbits in an auxiliary body cell
 instead of insisting on all nine points. This admits 15 additional orbits over
 nine new cells, while retaining every old latitude orbit.
@@ -76,9 +76,9 @@ nine new cells, while retaining every old latitude orbit.
 This is an independent finite-graph implementation of the correction/refill
 idea described in [PackingStar](https://github.com/CDM1619/PackingStar/tree/67be454b83af4287e1a2b61e5bd8c3596a8061d6).
 It does not reproduce or train their RL system. Their reported larger 26–31D
-coordinates were not independently replayed here. Tests of the signed-octad
-families in 32–35D found no accepted improvement in this continuation; this
-finite search does not establish a ceiling for those families.
+coordinates were not independently replayed here. Separate shared root-star
+trades now improve 33–35D. Broader complete-support and signed-region searches
+in this pass found no additional gain; this does not establish a ceiling.
 
 ## Retained history
 
@@ -97,3 +97,16 @@ Rows of all coefficient vectors use the supplied Gram basis. Unit Cartesian
 coordinates are `coefficients @ cholesky(gram) / sqrt(12)`. The exact proofs
 operate directly in the Gram basis. `data/SHA256SUMS.txt` covers the entire
 package except itself, including the optional search sources.
+
+The further refill removes 79 and adds 84 three-point phase orbits relative to
+the preceding main certificate, for fifteen additional equatorial points.
+All 636 latitude orbits are retained. The original phase/ certificate remains
+501,633 / 505,359; the compact delta reproduces the current certificate from it.
+
+`completion/negative_controls.py` tests both exact proof routes on duplicate
+orbits and false counts. `completion/search/base_choices.py` exposes 756
+independent base-cell replacements, verifies all old/new and new/new base
+distances, and writes a search seed after compatible orbit retention. This
+new search freedom has not yet produced a larger registered bound. The current
+certificate uses the preceding fixed base. `completion/search/prepare.py`
+also supports `--preserve-lifts` when preparing an equatorial search.

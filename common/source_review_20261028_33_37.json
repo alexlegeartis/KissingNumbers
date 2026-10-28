@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-28",
+  "comparison_commit": "816e291dbddddd38764047455ea6499ace59f9c3",
+  "previous_bounds": {
+    "32": 352800,
+    "33": 370368,
+    "34": 390982,
+    "35": 415314,
+    "36": 501672,
+    "37": 505488,
+    "38": 611522,
+    "39": 769180
+  },
+  "new_bounds": {
+    "32": 352800,
+    "33": 370376,
+    "34": 390990,
+    "35": 415334,
+    "36": 501687,
+    "37": 505503,
+    "38": 611522,
+    "39": 769180
+  },
+  "scope": "Explicit lower-bound continuation, with no new comprehensive priority survey",
+  "verification": "Two exact representations for each changed bound; deterministic phase delta; duplicate, undeleted-root and false-count rejection controls",
+  "research": {
+    "support_pools": {
+      "32": 33601,
+      "33": 119961,
+      "34": 275061,
+      "35": 458529,
+      "39": 1134568
+    },
+    "signed_regions": "Eighty local signed regions per dimension in 32\u201335D and 39D produced no gain in the recorded heuristic runs.",
+    "base_choices": "All 756 independent Coxeter\u2013Todd base alternatives pass exact old/new and new/new coset-distance checks. Changed-base phase seeds have not improved the registered bound.",
+    "pointwise_stars": "Allowing individual signed star lines and partial middle deletions in the 383-star 39D pool reproduces the existing eight-point root trade; no larger bound is inferred."
+  }
+}

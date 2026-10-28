@@ -39,3 +39,14 @@ To inspect `best.bin`, read it with
 of the corresponding certificate field, update the two counts, and run both
 exact checkers. The finite heuristic does not replace those checks. The compact
 shipped `delta.json` is the reproducible record of the accepted trades.
+
+To retain the current latitude layer during an equator search, pass
+`--preserve-lifts`. This excludes equator orbits with a matching pair of
+nonzero lift labels and relative phase before building the pool.
+
+`base_choices.py --flips 1 --seed 362810 --output /tmp/base-proposal.json`
+verifies the 756 independent base alternatives, selects the requested
+subset deterministically and retains compatible old phase/lift orbits.
+Pass that proposal to `prepare.py --certificate`. This changes the fixed
+base used by the search; no improvement is implied by its larger allowed
+region. Both complete proof representations must check a final certificate.

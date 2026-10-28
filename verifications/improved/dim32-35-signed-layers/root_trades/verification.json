@@ -1,0 +1,62 @@
+[
+  {
+    "dimension": 33,
+    "points": 370376,
+    "baseline_points": 370368,
+    "stars": 4,
+    "new_star_points": 64,
+    "removed_root_points": 56,
+    "maximum_integer_products": {
+      "middle": 16,
+      "exceptional": 16,
+      "roots": 16,
+      "stars": 16,
+      "heads": 0,
+      "dense_bound": 12
+    },
+    "all_checks_pass": true,
+    "certificate_sha256": "1c11d1585922b2e96ba70c05e342e2593bd6defc6ab9e17a7a9a5b38e847bb3b",
+    "arithmetic": "Python integers; exact normalized head comparisons",
+    "elapsed_seconds": 0.745750042000509
+  },
+  {
+    "dimension": 34,
+    "points": 390990,
+    "baseline_points": 390982,
+    "stars": 4,
+    "new_star_points": 64,
+    "removed_root_points": 56,
+    "maximum_integer_products": {
+      "middle": 16,
+      "exceptional": 0,
+      "roots": 16,
+      "stars": 16,
+      "heads": 12,
+      "dense_bound": 12
+    },
+    "all_checks_pass": true,
+    "certificate_sha256": "77a5972ee16f644da83666a4d7503b5f120639fdc6dc850bcd58b65b3c036570",
+    "arithmetic": "Python integers; exact normalized head comparisons",
+    "elapsed_seconds": 0.8963037260000419
+  },
+  {
+    "dimension": 35,
+    "points": 415334,
+    "baseline_points": 415314,
+    "stars": 8,
+    "new_star_points": 128,
+    "removed_root_points": 108,
+    "maximum_integer_products": {
+      "middle": 16,
+      "exceptional": 0,
+      "roots": 16,
+      "stars": 16,
+      "heads": 20,
+      "dense_bound": 10
+    },
+    "all_checks_pass": true,
+    "certificate_sha256": "7d25f8b59a1e72df8982cd7065fc553d5776d236517c924eefe253c6d4e2e47e",
+    "arithmetic": "Python integers; exact normalized head comparisons",
+    "elapsed_seconds": 1.6396271769990562
+  }
+]

@@ -36,7 +36,7 @@ int main(int argc,char**argv){
  auto del=[&](int i){chosen[i]=false;size--;refresh(i);for(int j:adj[i]){count[j]--;refresh(j);}};
  ifstream seed("selected.bin",ios::binary);while(seed.read((char*)v.data(),sizeof(v)))add(lookup.at(key(v)));
  for(int i=0;i<N;i++)refresh(i);
- mt19937 rng(argc>2?stoi(argv[2]):361028);auto start=chrono::steady_clock::now();long long max_steps=stoll(argv[1]);int steps=0;
+ mt19937 rng(argc>2?stoi(argv[2]):361028);auto start=chrono::steady_clock::now();long long max_steps=stoll(argv[1]);long long steps=0;
  auto save=[&](){if(size>(int)best.size()){best.clear();for(int i=0;i<N;i++)if(chosen[i])best.push_back(i);ofstream out("best.bin",ios::binary);for(int i:best)out.write((char*)vs[i].data(),sizeof(O));cerr<<"best "<<size<<" steps "<<steps<<" seconds "<<chrono::duration<double>(chrono::steady_clock::now()-start).count()<<"\n";}};
  while(steps<max_steps){
   while(!zeros.data.empty()){

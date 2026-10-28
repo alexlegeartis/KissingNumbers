@@ -102,6 +102,7 @@ Nothing here needs anything outside this directory.  Where a check is about the 
 working folder -- the root README, the paper's PDF -- it says so and stands down in a clone.
 """
 import fnmatch
+import json
 import importlib.util
 import io
 import hashlib, os
@@ -410,6 +411,12 @@ add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover'
 # October code and nearest-coset constructions supersede earlier packages;
 # add() preserves every displaced claim in SUPERSEDED for the history audit.
 for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions'):
+    if _package == 'dim32-35-signed-layers':
+        for _dimension, _family in ((33, 'classic'), (34, 'classic'), (35, 'multi35')):
+            with io.open(os.path.join(IMP, _package, 'source', _family,
+                                     'certificate%d.json' % _dimension), encoding='utf-8') as _old_stream:
+                _old_total = json.load(_old_stream)['points']
+            add(_dimension, _old_total, _package, 'source/%s/verify.py: retained historical certificate' % _family)
     if _package == 'dim38-joint-latitudes':
         add(38, 610394, _package, 'source/verify.py: retained historical joint-latitude certificate')
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
@@ -2007,7 +2014,7 @@ if '--write-results' in sys.argv and not fail:
         'dim26-31-residual-completions': 'shared midpoint replacements, axiswise residual heads and exact exceptional pure tails; independent full-coordinate proof',
         'dim26-27-midpoint-replacements': 'shared midpoint replacements on orthogonal tail directions; exact Leech membership, midpoint identities and all inserted-pair products',
         'dim29-30-midpoint-replacements': 'shared Leech midpoint replacements with D5/D6 inserted tails and pure D5/E6 roots; exact coordinate replay',
-        'dim32-35-signed-layers': 'signed octad replacements in 32-33D, a four-head dense-coset extension in 34D, and parity-coordinated twelve-head root replacement in 35D; two independent exact proofs',
+        'dim32-35-signed-layers': 'signed octad layers, coordinated heads and shared root-star deletions; two independent exact proofs',
         'dim25-collective-deformation': 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons',
         'dim31-dual-centres': 'shared midpoint replacements and dual E7 centres; exact coordinate replay',
         'dim38-joint-latitudes': 'Fano-grid and cube-edge latitudes with shared cap deletions; two independent exact proofs',
@@ -2041,6 +2048,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("%d registered lower bounds on the kissing number tau(n), compared with their\nrecorded published baselines. Later superseding records are listed in README.md."
                % len(claims))
+    out.append("")
+    out.append("The further 28 October continuation gives 370376 in 33D (+8), 390990 in 34D (+8), 415334 in 35D (+20), 501687 in 36D (+15) and 505503 in 37D (+15), compared with the preceding repository certificates. Shared root-star deletions and a latitude-preserving phase refill have two independent exact proof routes, reconstruction and rejection controls. Broader complete-support, signed-region and base-choice searches have not yielded a larger verified gain in this pass. The 32D, 38D and 39D bounds are unchanged.")
     out.append("")
     out.append("The 28 October Fano-grid and cube-edge construction gives 611522 in 38D (+1128 over the preceding 610394-point repository certificate). It replaces 5408 latitude points with 6656 and removes 120 caps. Two independent exact proofs check all retained layers, and the expanded replay checks all 22147840 distinct latitude pairs. A small recipe reconstructs the certificate without search. The 6656-point latitude population saturates this particular 63-support model; other supports and norm splits remain open. The manuscript remains deferred.")
     out.append("")

@@ -13,6 +13,10 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: python -m pip install numpy scipy sympy threadpoolctl
+      - run: python verifications/improved/dim32-35-signed-layers/verify.py
+      - run: python verifications/improved/dim32-35-signed-layers/root_trades/negative_controls.py
+      - run: python verifications/improved/dim36-37-coxeter-todd/verify.py
+      - run: python verifications/improved/dim36-37-coxeter-todd/completion/negative_controls.py
       - run: python verifications/improved/dim38-joint-latitudes/verify.py
       - run: python verifications/improved/dim38-joint-latitudes/refill/negative_controls.py
       - run: python audit.py --repository-only --write-results

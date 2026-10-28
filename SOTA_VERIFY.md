@@ -1,5 +1,10 @@
 # Verification of the retained SOTA results
 
+The further 28 October 33–37D continuation adds shared root-star deletions in
+33–35D and five phase orbits in 36–37D, preserving every latitude body. Both
+proof representations and deliberate rejection controls pass. These gains
+are 8, 8, 20, 15 and 15 points over the preceding repository certificates.
+
 The 28 October 38D continuation gives **611,522** points (+1,128). The
 [small constructive recipe](verifications/improved/dim38-joint-latitudes/refill/README.md)
 replaces the latitude layer and deletes 120 caps. Both exact proof
@@ -53,8 +58,8 @@ not a new mathematical verification. All commands require assertions enabled.
 | 29–30 | Regenerate the Leech shell, check all endpoint/midpoint identities and every inserted pair exactly | Standard Leech shell kissing property; exact small integer BLAS with no tolerance; pure-tail Cauchy–Schwarz bound |
 | 38 | Two independent exact proofs rebuild all cap classes, equatorial lines and axes; check 120 cap deletions and all 6,656 expanded latitude points | Golay lattice congruences and weight enumerator prove the parent minimum |
 | 39 | Replay sparse supports and root replacements; check every relative pair of 1,281 dense sign orbits | Bounded integer arithmetic and complete Walsh enumeration |
-| 32–35 | Two independent exact representations: full dense-code enumeration, signed-support checks, normalized head products and explicit coordinate checks | Python 3.9+ and NumPy; no search or unverified population input |
-| 36–37 | Two exact routes: fresh short-shell enumeration, phase refill, partial latitude orbits, 97,968 expanded phase points and 1,908 latitude bodies | Python 3.9+ and NumPy; no unverified parent population |
+| 32–35 | Two independent exact representations: full dense-code enumeration, signed-support checks, coordinated heads, shared root deletions and every added-star coordinate product | Python 3.9+ and NumPy; no search or unverified population input |
+| 36–37 | Two exact routes: fresh short-shell enumeration, phase refill, partial latitude orbits, 97,983 expanded phase points and 1,908 latitude bodies | Python 3.9+ and NumPy; no unverified parent population |
 | 41–46 | Exact head ranks and angles; two independent 43D tiny-layer replays; explicit tiny bodies and added medium classes | Complete-family population identities and tables are inherited; the latest large shells have not all been freshly enumerated |
 | 49–60 | All 7,387 base lines, 577 integral isometries, 3,901,694 distinct lines and cap directions | Published parent lattice minimum/shell size; the 12D Coxeter–Todd direction count is a literature input |
 | 61–63, 95–96 | Rebuild explicit codes, sparse layers, sections and counts | Published parent code inputs stated by the source proofs |

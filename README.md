@@ -30,6 +30,16 @@ values and verification packages remain here as part of the research record.
 > Gains compare with commit `452d929`; the other 49–72D bounds retain their
 > existing certificates. The manuscript remains its earlier snapshot.
 >
+> **28 October 2026 — further verified gains in 33–37D.**
+> Shared root-star deletions give **370 376**, **390 990** and **415 334**
+> in 33D, 34D and 35D, gaining **8**, **8** and **20** points. A phase
+> refill preserving every latitude orbit gives **501 687** and **505 503**
+> in 36D and 37D, gaining **15** points each. Both proof representations,
+> reconstruction and deliberate rejection checks pass. These are smaller
+> gains; the broader searches have not yet produced another structural jump.
+> [Signed-layer proofs](verifications/improved/dim32-35-signed-layers/) and
+> [phase proofs and broader base searches](verifications/improved/dim36-37-coxeter-todd/).
+>
 > **28 October 2026 — structural improvement in 38D.**
 > Two Fano planes, a Latin-square assignment and signed cube edges give
 > **611 522 points**, **1 128** above the preceding repository certificate.
@@ -259,11 +269,11 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **238 808** | **247 952** | +8.332% | +3.82902% | 2026-09-16 to 2026-10-10; 2026-10-25 to 2026-10-26 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | [PackingStar, joint removals / insertions / auxiliary layers](https://github.com/CDM1619/PackingStar/tree/67be454b83af4287e1a2b61e5bd8c3596a8061d6/25D-31D/new_bounds_20261026) |
 | 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **246 638** | **250 938** | +3.477% | +1.74345% |2026-09-16 to 2026-10-05; 2026-10-26 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | [PackingStar, joint removals / insertions / auxiliary layers](https://github.com/CDM1619/PackingStar/tree/67be454b83af4287e1a2b61e5bd8c3596a8061d6/25D-31D/new_bounds_20261026) |
 | 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32) | **352 800** | **SOTA** | +0.13624% | — | since 2026-10-26 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
-| 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 368** | **SOTA** | +0.0345722% | — | since 2026-10-26 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
-| 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 982** | **SOTA** | +0.000511535% | — | since 2026-10-26 | [Dense-coset heads](verifications/improved/dim32-35-signed-layers/) | — |
-| 35 | 415 308 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 314** | **SOTA** | +0.00144471% | — | since 2026-10-26 | [Parity-coordinated heads](verifications/improved/dim32-35-signed-layers/) | — |
-| 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **501 672** | **SOTA** | +3.5% | — | since 2026-10-24 | [Coxeter–Todd phase refill](verifications/improved/dim36-37-coxeter-todd/) | — |
-| 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **505 488** | **SOTA** | +1.1% | — | since 2026-10-24 | [Phase code + latitudes](verifications/improved/dim36-37-coxeter-todd/) | — |
+| 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 376** | **SOTA** | +0.036733% | — | since 2026-10-28 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
+| 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 990** | **SOTA** | +0.00255768% | — | since 2026-10-28 | [Dense-coset heads](verifications/improved/dim32-35-signed-layers/) | — |
+| 35 | 415 308 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 334** | **SOTA** | +0.00626041% | — | since 2026-10-28 | [Parity-coordinated heads](verifications/improved/dim32-35-signed-layers/) | — |
+| 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **501 687** | **SOTA** | +3.5% | — | since 2026-10-24 | [Coxeter–Todd phase refill](verifications/improved/dim36-37-coxeter-todd/) | — |
+| 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **505 503** | **SOTA** | +1.1% | — | since 2026-10-24 | [Phase code + latitudes](verifications/improved/dim36-37-coxeter-todd/) | — |
 | 38 | 566 652 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **611 522** | **SOTA** | +7.92% | — | 2026-08-30 to 2026-09-28; since 2026-10-28 | [Fano-grid and cube-edge latitudes](verifications/improved/dim38-joint-latitudes/) | — |
 | 39 | 755 988 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **769 180** | **SOTA** | +1.75% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Deformed sign orbits](verifications/improved/dim39-deformed-orbits/) | — |
 | 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/html/2607.20359v4) | **1 126 314** | **SOTA** | +3.14% | — | since 2026-10-26 | [Affine lattice shells](verifications/improved/dim40-affine-shells/) | — |
@@ -351,8 +361,8 @@ been superseded. The manuscript in [paper/](paper/) retains its documented earli
 including its historical appendix. See [The write-up](#the-write-up).
 
 The [Coxeter–Todd package](verifications/improved/dim36-37-coxeter-todd/)
-proves 501 672 points in 36D by exact short-shell enumeration and phase-orbit
-angle checks, then reaches 505 488 in 37D with two latitude layers. The
+proves 501 687 points in 36D by exact short-shell enumeration and phase-orbit
+angle checks, then reaches 505 503 in 37D with two latitude layers. The
 [P48n family/head package](verifications/improved/dim41-46-p48-heads/) now supplies
 all six 41–46D constructions. The 43D partial-family certificate checks 3 447 explicit
 tiny points; the latest 45D certificate retains 2 187 complete families and 16 pure
@@ -370,7 +380,7 @@ improvement is claimed in 47D or 48D.
 
 - **26D–31D (current):** Shared midpoint replacements with axiswise residual-head completion give 201 108, 209 532, 216 680, 226 520, 238 808 and 246 638. The final 30D/31D pure tails are represented exactly over Q(√3)/Q(√2), replacing—not supplementing—the ordinary D6/D7 tails. [Coordinate assembly and independent full replays](verifications/improved/dim26-31-residual-completions/) describe all components. Earlier midpoint, joint-Leech, frame-layer and dual-centre packages remain as historical constructions.
 
-- **36D:** Three Coxeter–Todd lattices with 32 656 explicit three-point phase orbits over a fixed 403 704-point base; exact shells and angles give 501 672 points
+- **36D:** Three Coxeter–Todd lattices with 32 661 explicit three-point phase orbits over a fixed 403 704-point base; exact shells and angles give 501 687 points
 
 - **37D:** The 36D construction as an equator, plus two latitude layers of 1 908 points each
 
@@ -597,7 +607,7 @@ one-point distribution of Γ₇₂'s minimal shell still merits specialist revie
 ## The construction ideas
 
 **Coxeter–Todd phase codes (36–37).** Three rank-12 blocks carry a fixed
-403 704-point base and 32 656 selected three-point phase orbits. Exact shell
+403 704-point base and 32 661 selected three-point phase orbits. Exact shell
 enumeration and integer angles prove squared distance at least 12. Two latitude
 layers add 3 816 points in 37D. The earlier full-cell and phase constructions are retained
 in the package history; the new latitude layer uses partial three-point orbits.
@@ -749,7 +759,7 @@ Or individually, each from its own directory:
 | `…/dim31-frame-layer/ceilings.py 31`                                         | the same report at k = 7, 1120 vertices enumerated            | 20 s   |
 | `…/dim38-leech-large-codimension/scripts/verify.py`                           | τ(38) ≥ 591 612                                                | 10 s   |
 | `…/dim39-ers-constant-weight/scripts/verify.py`                               | τ(39) ≥ 756 116 (and τ(38) ≥ 570 236)                          | 10 s   |
-| `.../dim36-37-coxeter-todd/verify.py` | exact 501 672-point 36D construction and 505 488-point 37D extension | ~15 s |
+| `.../dim36-37-coxeter-todd/verify.py` | exact 501 687-point 36D construction and 505 503-point 37D extension | ~15 s |
 | `.../dim41-46-p48-heads/verify.py` | current 41–46D totals, partial 43D points and coordinated 45D; inherited populations | ~30 s |
 | `…/dim46-47-p48-cross-sections/derive.py`                                     | recovers 12 309 600 and 23 766 960, claiming neither           | 6 s    |
 | `…/dim49-63-p48-caps/verify.py` + `final.py`                                  |  the P₄₈ lattice, class, and fifteen numbers                    | 3 s    |
