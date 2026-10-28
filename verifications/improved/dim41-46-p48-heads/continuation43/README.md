@@ -89,13 +89,13 @@ The discovery tools additionally require SciPy:
 
 ```bash
 python search.py --body 14496 --delete 152 1348 1690
-python select.py --output /tmp/proposed43-delta.npz
+python select_trades.py --output /tmp/proposed43-delta.npz
 ```
 
 `search.py` explores continuous head placements for one body after specified
 old-point deletions. Every printed head passes exact checks against the
 retained configuration; multiple printed heads still need mutual checks.
-`select.py` rebuilds all old/new and new/new conflicts of the shipped finite
+`select_trades.py` rebuilds all old/new and new/new conflicts of the shipped finite
 proposal pool and optimizes the net count. On the recorded environment it
 recovers the registered 85-insertion, 46-deletion delta. Solver output alone
 is not a proof. Numerical polytope discovery can vary across software versions;
@@ -108,7 +108,7 @@ the supplied rational certificate and its exact assembly are portable.
 - `candidate_pool.npz`: 594 rational proposals from the continuous searches.
 - `reproduce.py`: exact coordinate assembly and comparison.
 - `verify_coordinates.py`: independent coefficient-coordinate proof.
-- `search.py`, `select.py`: optional discovery tools.
+- `search.py`, `select_trades.py`: optional discovery tools.
 - `negative_controls.py`: invalid-certificate rejection checks.
 - `ambient_verification.json`, `coordinate_verification.json`: full exact replay receipts.
 - `reproduction.json`, `negative_controls.json`: assembly and rejection receipts.
