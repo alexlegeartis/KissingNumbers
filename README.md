@@ -8,213 +8,26 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
-> **28 October 2026 — all dimensions 26–31 exceed the checked PackingStar files.**
-> New asymmetric exchanges give **201 136 in 26D**, **221 694 in 28D**,
-> **231 638 in 29D** and **247 960 in 30D**: gains of **2, 30, 2 and 4**.
-> All four complete coordinate certificates pass independent exact checks,
-> including every unpaired point. [Coordinates, rebuilds and verifier](verifications/improved/dim26-30-asymmetric-exchanges/).
-> **31D: 251 110 points.**
-> A coordinated normal-module replacement improves PackingStar's latest checked
-> **251 002** by **108**. The complete integer certificate passes all
-> **7 881 966 235** distinct antipodal-line pair checks, without relying on
-> baseline validity. [Coordinates, provenance and standalone verifier](verifications/improved/dim31-normal-module-exchange/).
-> **27D is also reclaimed: 209 600**, 14 above PackingStar's 209 586.
-> The quadratic certificate passes all 5 491 467 600 line-pair checks.
-> [Coordinates, construction and exact verifier](verifications/improved/dim27-quadratic-normal-module/).
-> PackingStar's current 26D–30D values are 201 134, 209 586, 221 664,
-> 231 636 and 247 956; the six gains in dimensions 26–31 are 2, 14, 30, 2, 4 and 108.
-> The comparison is pinned to their [28 October commit](https://github.com/CDM1619/PackingStar/tree/b67832ad9970895a22ab667bb06d1d43a45c6b18/25D-31D/new_bounds_20261026).
+> **Current repository status — 28 October 2026.** Verified lower bounds in
+> **70 dimensions**; the [results table](#results-and-construction-history)
+> lists every current value, comparison source and verification package.
 >
-> **28 October 2026 — nonlinear-code correction and larger bounds in 88–96D.**
-> New verified constructions range from **6 921 251 584 in 88D** to
-> **142 162 362 560 in 96D**. The nonlinear **(96, 2^37, 24)** parent is
-> published work of **Duursma–Greferath–Litsyn–Schmidt (2001)** that our
-> earlier linear-code comparison missed. Its shortenings now correct the
-> comparison floors in 92–96D; the large dense-code gain is prior work.
-> Two independent proofs verify the parent, all sparse support pairs and the
-> new exact section counts. The 96D construction adds **426 344 448** points
-> beyond the standard full chain evaluated with that published parent.
-> [Construction, credit and complete replays](verifications/improved/dim88-96-z8-golay/).
-> No new 73–87D bound is claimed here. The manuscript remains deferred.
+> - **26–31D:** 201 136, 209 600, 221 694, 231 638, 247 960 and 251 110.
+>   These exceed the [pinned PackingStar files](common/source_review_20261028_sync.json)
+>   by **2, 14, 30, 2, 4 and 108** points, with complete exact coordinate checks.
+> - **33–87D:** further improvements include signed layers, phase refills,
+>   the 38D Fano/cube construction, P48 families and shared parity layers.
+>   [Recent updates](#recent-updates) group the methods and proof scopes by dimension.
+> - **88–96D:** [nonlinear-code constructions and exact sections](verifications/improved/dim88-96-z8-golay/)
+>   give **6 921 251 584 in 88D** through **142 162 362 560 in 96D**.
 >
-> **28 October 2026 — shared parity repairs improve all of 61–68D.**
-> Reusing compatible parity-check spaces raises eight bounds by a total of
-> **21 841 408** points: **88 260 394** in 61D, **121 824 268** in 62D,
-> **184 286 468** in 63D, **335 496 064** in 64D, **335 564 290** in 65D,
-> **341 994 884** in 66D, **355 090 822** in 67D and **375 222 168** in 68D.
-> The 1,835-support global augmentation replaces the earlier 211-support
-> family; the new expanded families add 1,803 and 1,792 supports.
-> [Exact construction, phase systems and reproduction](verifications/improved/dim61-68-95-96-code-layers/source/shared_parity/README.md)
-> include independent intersection representations and a phase-corruption
-> counterexample. Gains compare with commit `816e291`. The manuscript
-> remains its earlier snapshot.
+> **Attribution and gains.** The nonlinear (96, 2^37, 24) parent is published work
+> of [Duursma–Greferath–Litsyn–Schmidt (2001)](https://doi.org/10.1109/18.923742).
+> The new 96D layers add **426 344 448** points beyond the standard full chain
+> using that parent. Table gains use their named historical comparisons;
+> dated updates below identify the preceding certificate when that is the baseline.
 >
-> **28 October 2026 — larger gains in 61D and 62D.**
-> Odd-parity sparse layers give **87 056 170** in 61D, an increase of
-> **14 679 314 (20.28%)**. A hexagonal coordinate compression gives
-> **120 620 044** in 62D, an increase of **20 182 496 (20.09%)**.
-> All **268 435 456** parent codewords and **46 778 628** sparse-support
-> pairs are checked exactly; an independent C++ enumeration agrees.
-> [Construction, proof and reproduction](verifications/improved/dim61-68-95-96-code-layers/source/significant49_72/README.md).
-> Gains compare with commit `452d929`; the other 49–72D bounds retain their
-> existing certificates. The manuscript remains its earlier snapshot.
->
-> **28 October 2026 — further verified gains in 33–37D.**
-> Shared root-star deletions give **370 376**, **390 990** and **415 334**
-> in 33D, 34D and 35D, gaining **8**, **8** and **20** points. A phase
-> refill preserving every latitude orbit gives **501 687** and **505 503**
-> in 36D and 37D, gaining **15** points each. Both proof representations,
-> reconstruction and deliberate rejection checks pass. These are smaller
-> gains; the broader searches have not yet produced another structural jump.
-> [Signed-layer proofs](verifications/improved/dim32-35-signed-layers/) and
-> [phase proofs and broader base searches](verifications/improved/dim36-37-coxeter-todd/).
->
-> **28 October 2026 — structural improvement in 38D.**
-> Two Fano planes, a Latin-square assignment and signed cube edges give
-> **611 522 points**, **1 128** above the preceding repository certificate.
-> The new layer adds 1 248 latitude points while deleting 120 caps.
-> [Explicit recipe, independent exact proofs and reproduction](verifications/improved/dim38-joint-latitudes/refill/)
-> include all **22 147 840** distinct latitude-pair checks. The 6 656-point
-> latitude population saturates this particular 63-support model; larger
-> gains require other supports, norm splits or axis layers. The manuscript
-> update remains deferred.
->
-> **28 October 2026 — further progress in 43D.**
-> Continuous head placements after shared point deletions give **2 919 782**,
-> improving the preceding repository certificate by **39 points**. Replacing
-> 46 tiny-layer points with 85 gives 3 447 explicit tiny points. Two independent
-> exact representations each replay **6 370 783** angle conditions.
-> [Coordinates, method and reproduction](verifications/improved/dim41-46-p48-heads/continuation43/)
-> retain the documented complete-family population inputs. The manuscript
-> remains its earlier snapshot.
->
-> **28 October 2026 — further progress in 49–72D: eighteen stronger bounds.**
-> The **7,783-line P48 class** improves 49–60D again, by 210 to 74,090 points.
-> A new eight-coordinate bridge gives **72 376 856** in 61D (+1 066 368).
-> Parity-compatible sections give **100 437 548** in 62D (+66 080) and
-> **182 537 988** in 63D (+130 560). Complete quadruple packings raise 66D,
-> 67D and 68D by 10 240, 20 480 and 30 720 points. All gains compare with
-> commit `9d38a38`; 64–65D and 69–72D retain their preceding bounds.
-> [Code constructions and exact replay](verifications/improved/dim61-68-95-96-code-layers/source/continuation49_72/README.md)
-> and [P48 certificates](verifications/improved/dim49-63-p48-caps/) state every
-> inherited input and verification scope. The manuscript update remains deferred.
->
-> **28 October 2026 — further verified progress in eight dimensions.**
-> A refilled explicit 73D layer gives **6 218 206 932** (+2 856).
-> Signed-tail existence proofs give **6 220 170 666**, **6 221 008 658**,
-> **6 222 025 404**, **6 223 222 688** and **6 226 194 610** in 82–85D and
-> 87D, gaining up to **1 217 848** points. [Exact proofs and replays](verifications/improved/dim73-88-gamma72-cosets/source/norm10/README.md#further-progress-in-73d-and-82--87d-28-october-2026).
-> The dual-obstruction continuation gives **7 101 541 132** in 95D (+9 209 856)
-> and **13 313 343 680** in 96D (+22 560 768), with all **338 559 231** support
-> pairs checked in two exact representations. Parity certificates allow supports
-> in thirteen or fourteen rows. [Certificate and search receipt](verifications/improved/dim61-68-95-96-code-layers/search/dual_obstruction_20261028.json).
-> Gains compare with the immediately preceding certificates; no new global
-> priority survey is claimed. The manuscript retains its earlier snapshot.
->
-> **28 October 2026 — verified improvements throughout 49–60D.**
-> Fill/correct local replacements produce a **7,678-line P48 class**, replacing
-> the 7,387-line base. Joint image selection and refilling give **52 431 358**
-> in 49D (+582) through **57 894 253** in 60D (+203 582). Two complete exact
-> geometric replays check all **29 472 003** base pairs, 577 isometries and
-> **4 047 491** distinct mother lines. [Certificates, proof scope and reproduction](verifications/improved/dim49-63-p48-caps/).
-> Gains compare with the preceding repository constructions. PackingStar's
-> published fill/correct principle informed this CPU search; its larger reported
-> 26–31D values are now recorded below. The manuscript retains its earlier snapshot.
->
-> **28 October 2026 — verified phase refills in 36D and 37D.**
-> The new certificates give **501 672** and **505 488**, improving the preceding
-> repository bounds by **39** and **129** points. A shared-deletion phase search
-> and finer latitude orbits pass two exact verification routes.
-> [Proof, certificates and reproduction](verifications/improved/dim36-37-coxeter-todd/).
-> PackingStar now reports larger bounds in 26–31D; its correction-and-refill
-> strategy motivated this continuation. Those competing bounds are reported
-> comparisons, not independently replayed here.
->
-> **28 October 2026 — stronger exact existence bounds in 77–79D.**
-> Mixed tail shells and unequal random priorities give **6 218 490 542**,
-> **6 218 688 770** and **6 218 922 650**, gaining **25 526**, **2 890** and
-> **10 614** points over the preceding certificates. Every tail product,
-> rank and rational expectation is replayed exactly. These are existence
-> proofs under the stated Gamma72 and design inputs; selected head lists
-> are not enumerated. [Proof, PackingStar comparison and fast replay](verifications/improved/dim73-88-gamma72-cosets/source/norm10/README.md#mixed-tails-and-unequal-priorities-28-october-2026).
->
-> **28 October 2026 — fill/correct gains in 95D and 96D.**
-> The new 24,631-support certificate gives **7 092 187 916** in 95D and
-> **13 290 553 536** in 96D, increasing the preceding repository bounds by
-> **180 224** and **294 912** points. Coordinate and packed-integer replays
-> independently check all **303 330 765** support pairs. The
-> [search and certificate](verifications/improved/dim61-68-95-96-code-layers/)
-> implement neutral exchanges and shared-blocker trades inspired by PackingStar's
-> fill/correct principle; this is a finite search, with no optimality claim.
-> [Source review](common/source_review_20261028.json) also records PackingStar's
-> larger reported 26–31D bounds. Those six retained constructions are now marked
-> as surpassed below. The manuscript remains its documented earlier snapshot.
->
-> **27 October 2026 — stronger verified bounds in dimensions 26–31.**
-> Exact residual-head completions give **201 108**, **209 532**, **216 680**,
-> **226 520**, **238 808** and **246 638**, respectively. The increases over
-> the preceding repository constructions are **190**, **4 896**, **11 448**,
-> **9 952**, **14 528** and **4 896** points. Independent full exact replays
-> passed on Python 3.9 and 3.11. [Coordinates, proofs and reproduction](verifications/improved/dim26-31-residual-completions/).
-> The record table retains its named historical comparison baselines; these
-> certificate checks are not a new worldwide literature survey or an optimality claim.
-> The manuscript remains at its previous snapshot.
->
-> **27 October 2026 — stronger bounds in 95D and 96D.**
-> The new 24,613-support certificate gives **13 290 258 624** in 96D,
-> improving the preceding repository bound by **851 968** points.
-> Its central section gives **7 092 007 692** in 95D, an increase of **555 008**.
-> Coordinate and packed integer replays each check all **302 887 578** support pairs.
-> [Code-input sources](common/source_review_20261027.json) were reviewed on 27 October.
-> These gains compare with our preceding certificate; the table below retains
-> its historical comparison baselines. The paper update remains deferred.
->
-> **26 October 2026 — four more SOTAs in dimensions 32–35.**
-> Signed octad replacements give **352 800** in 32D and **370 368** in 33D.
-> Dense-code coset heads give **390 982** in 34D; parity-coordinated twelve-head
-> replacement gives **415 314** in 35D. These exceed the reviewed public Lin
-> constructions by **480**, **128**, **2** and **6** points, respectively.
-> Both independent exact verifiers passed. The repository now covers **70 dimensions**.
-> The paper remains at its preceding 66-result checkpoint; its update is deferred.
->
-> **26 October 2026 — new verified bounds in 25D, 31D, 38D, 39D and 40D.**
-> Collective deformation gives **197 584** in 25D, one above Takhanov–Yun.
-> Midpoints and dual E7 centres give **241 742** in 31D, exceeding Li by 663.
-> Joint latitude families give **610 394** in 38D (+5 072 over Lin), and
-> deformed sign orbits give **769 180** in 39D (+264 over Lin).
-> Three affine lattice shells give **1 126 314** in 40D, exceeding
-> Dorofeev–Sun–Wang's 1 092 000 by 34 314. Every new certificate is replayed
-> independently; earlier constructions remain available.
->
-> **25 October 2026 — new SOTAs in dimensions 26–30, 38–39 and further high-dimensional gains.**
-> Shared midpoint replacements give **200 918** in 26D and **204 636** in 27D,
-> exceeding Takhanov–Yun by **1 050** and **3 047** points.
-> Midpoint replacements also give **216 568** in 29D and **224 280** in 30D,
-> exceeding K. Li's records by **6 073** and **2 207** points.
-> The retained 38D latitude extension gives **605 346** (+24 over Lin);
-> the retained 39D root replacement gives **768 924** (+8 over Lin).
-> Joint Leech layers give **205 232** in 28D, improving K. Li's 205 172 by 60.
-> The new Coxeter–Todd phase code gives **501 633** in 36D and **505 359**
-> in 37D. The supplied 43D certificate now reaches **2 919 743**, and
-> coordinated head movement raises 45D to **7 655 056**. All have passed
-> exact replay; complete-family P48n populations retain their documented assumptions.
-> The update also includes the 7 387-line P48 family, code improvements in
-> 61-68D and 95-96D, and Gamma72 nearest-coset constructions in 73-88D.
-> The signed-support construction gives **332 170 112** in 64D and
-> **332 238 338** in 65D; 72D is the remaining gap in 49-96D.
-> In particular, 95D reaches **7 091 452 684** and 96D **13 289 406 656**.
-> A compact symmetry certificate now also improves **87–94D**. Its complete
-> class geometry and disjointness check takes **under 10 seconds on CPU**.
-
-> The **25 October CPU continuation** strengthens the coset constructions in
-> 76D, 78–86D and the cap constructions throughout 87–94D. Direct optimization
-> of the 95D section also raises its bound to **7 091 452 684**, with a stronger 96D parent.
-
-> The **73D non-lattice continuation** reaches **6 218 204 076**,
-> exceeding the completed 73D lattice by **15 932**.
-> `dim73-88-gamma72-cosets/verify73.py` independently checks its certificate.
-> The new norm-ten method also improves **77–79D**, with exact whole-shell
-> existence proofs checked by `verify_norm10.py`.
+> **Paper:** the [manuscript update remains deferred](#the-write-up).
 
 ```bash
 python audit.py --repository-only  # all 70 claims; check this repository without its surrounding workspace
@@ -458,6 +271,150 @@ improvement is claimed in 47D or 48D.
 
 </details>
 
+## Recent updates
+
+<details>
+<summary>25–28 October 2026: constructions, verification and earlier checkpoints</summary>
+
+The latest certificates are grouped below by dimension. Earlier checkpoints are
+retained as construction history; their values and record status refer to that
+checkpoint. The [results table](#results-and-construction-history) gives the
+current values. Unless an external comparison is named, an incremental gain
+compares with the preceding repository certificate. The manuscript remains at
+its [documented earlier snapshot](common/manuscript_scope.json).
+
+### 28 October — latest certificates
+
+- **26–31D: all six exceed the checked PackingStar files.**
+  [Asymmetric exchanges](verifications/improved/dim26-30-asymmetric-exchanges/)
+  give 201 136, 221 694, 231 638 and 247 960 in 26D and 28–30D.
+  A [quadratic normal module](verifications/improved/dim27-quadratic-normal-module/)
+  gives 209 600 in 27D; a [normal-module exchange](verifications/improved/dim31-normal-module-exchange/)
+  gives 251 110 in 31D. Gains are 2, 14, 30, 2, 4 and 108 over
+  PackingStar's [pinned 28 October commit](https://github.com/CDM1619/PackingStar/tree/b67832ad9970895a22ab667bb06d1d43a45c6b18/25D-31D/new_bounds_20261026).
+  Complete coordinate checks include every unpaired point, all 5 491 467 600
+  antipodal-line pairs in 27D and all 7 881 966 235 in 31D.
+- **33–37D: signed layers and phase refills.** Shared root-star deletions give
+  370 376, 390 990 and 415 334 in 33–35D (+8, +8 and +20).
+  Preserving every latitude orbit gives 501 687 and 505 503 in 36–37D
+  (+15 each). Both proof representations, reconstruction and deliberate rejection
+  checks pass. [Signed-layer proofs](verifications/improved/dim32-35-signed-layers/);
+  [phase proofs and searches](verifications/improved/dim36-37-coxeter-todd/).
+- **38D: Fano planes, a Latin square and signed cube edges.** The construction
+  gives **611 522**, adding 1 248 latitude points and deleting 120 caps for a
+  net gain of **1 128**. [Two exact proofs](verifications/improved/dim38-joint-latitudes/refill/)
+  include all 22 147 840 latitude-pair checks. The 6 656-point latitude
+  population saturates this particular 63-support model, without a global optimum claim.
+- **43D: continuous heads with shared deletions.** Replacing 46 tiny points
+  with 85 gives **2 919 782** (+39), including 3 447 explicit tiny points.
+  [Two exact representations](verifications/improved/dim41-46-p48-heads/continuation43/)
+  each replay 6 370 783 angle conditions; complete-family populations retain
+  their documented inherited inputs.
+- **49–60D: a 7 783-line P48 family.** This improves the preceding 7 678-line
+  construction by 210 to 74 090 points, reaching **52 431 568 in 49D** through
+  **57 968 343 in 60D**. [Certificates and proof scope](verifications/improved/dim49-63-p48-caps/).
+- **61–68D: shared parity repairs.** Reusing compatible parity-check spaces
+  improves all eight bounds, from **88 260 394 in 61D** through
+  **375 222 168 in 68D**, by a total of **21 841 408** over commit `816e291`.
+  The 1 835-support global augmentation replaces the 211-support family;
+  expanded families add 1 803 and 1 792 supports.
+  [Construction and independent checks](verifications/improved/dim61-68-95-96-code-layers/source/shared_parity/README.md)
+  include separate intersection representations and a phase-corruption counterexample.
+- **73–87D: explicit refills and exact existence proofs.** The refilled 73D
+  layer gives **6 218 206 932** (+2 856). Mixed tails and unequal random
+  priorities raise 77–79D by 25 526, 2 890 and 10 614 points;
+  signed tails also improve 82–85D and 87D by up to 1 217 848.
+  [Proofs and replays](verifications/improved/dim73-88-gamma72-cosets/source/norm10/README.md)
+  check tail products, ranks and rational expectations exactly. The tail results
+  are existence proofs under the stated Gamma72 and design inputs; selected
+  head lists are not enumerated.
+- **88–96D: nonlinear-code correction and exact sections.** The new bounds
+  range from **6 921 251 584** to **142 162 362 560**.
+  The published Duursma–Greferath–Litsyn–Schmidt parent was missed by the earlier
+  linear-code comparison; its shortenings correct the 92–96D comparison floors.
+  The dense-code gain belongs to that prior work. New sparse layers and sections
+  add **426 344 448** in 96D beyond the standard full chain using that parent.
+  [Credit, construction and two complete replays](verifications/improved/dim88-96-z8-golay/)
+  cover the parent, every sparse support pair and the exact section counts.
+
+### 28 October — earlier checkpoints
+
+- **36–37D:** the first phase refills reached 501 672 and 505 488
+  (+39 and +129), before the later +15 refinements above.
+  [Certificates and search history](verifications/improved/dim36-37-coxeter-todd/).
+- **49–60D:** fill/correct replacements first enlarged the P48 base from
+  7 387 to 7 678 lines, reaching 52 431 358 in 49D through 57 894 253 in 60D.
+  Two exact replays checked 29 472 003 base pairs, 577 isometries and
+  4 047 491 distinct mother lines. PackingStar's published fill/correct principle
+  informed the search. [Retained certificates](verifications/improved/dim49-63-p48-caps/).
+- **61–68D:** an eight-coordinate bridge, parity-compatible sections and
+  complete quadruple packings preceded the shared parity repairs.
+  [The first continuation](verifications/improved/dim61-68-95-96-code-layers/source/continuation49_72/README.md)
+  records gains against `9d38a38`. [The next 61D/62D checkpoint](verifications/improved/dim61-68-95-96-code-layers/source/significant49_72/README.md)
+  reached 87 056 170 and 120 620 044, gaining 14 679 314 (20.28%) and
+  20 182 496 (20.09%) against `452d929`. Exact enumeration checked all
+  268 435 456 parent codewords and 46 778 628 support pairs, with an
+  independent C++ enumeration agreeing.
+- **95–96D:** the 24 631-support fill/correct certificate reached
+  7 092 187 916 and 13 290 553 536 (+180 224 and +294 912), with
+  303 330 765 support pairs checked in two representations. The later
+  [dual-obstruction continuation](verifications/improved/dim61-68-95-96-code-layers/search/dual_obstruction_20261028.json)
+  reached 7 101 541 132 and 13 313 343 680 (+9 209 856 and +22 560 768),
+  checking 338 559 231 pairs and allowing supports in thirteen or fourteen rows.
+  Both checkpoints are superseded by the nonlinear-code construction above;
+  their former record labels used the incomplete linear-code comparison.
+- **External comparisons:** the [earlier source review](common/source_review_20261028.json)
+  recorded PackingStar overtaking the retained 26–31D constructions.
+  The [later synchronization review](common/source_review_20261028_sync.json)
+  pins the newer external files now exceeded by the six certificates above.
+
+### 27 October
+
+- **26–31D:** [residual-head completions](verifications/improved/dim26-31-residual-completions/)
+  gave 201 108, 209 532, 216 680, 226 520, 238 808 and 246 638.
+  Gains were 190, 4 896, 11 448, 9 952, 14 528 and 4 896 over the preceding
+  repository constructions. Independent full exact replays passed on Python
+  3.9 and 3.11. These certificates remain available as historical constructions.
+- **95–96D:** the 24 613-support certificate gave 7 092 007 692 and
+  13 290 258 624 (+555 008 and +851 968); two exact replays checked
+  302 887 578 support pairs. [Code-input review](common/source_review_20261027.json).
+  These values preceded the nonlinear-code comparison correction.
+
+### 26 October
+
+- **32–35D:** [signed octad replacements and dense-code heads](verifications/improved/dim32-35-signed-layers/)
+  gave 352 800, 370 368, 390 982 and 415 314, exceeding the reviewed Lin
+  constructions by 480, 128, 2 and 6. Both independent exact verifiers passed;
+  the registry expanded to 70 dimensions. The 33–35D refinements appear above.
+- **25D, 31D and 38–40D:** collective deformation gave 197 584 in 25D
+  (+1 over Takhanov–Yun); dual centres gave 241 742 in 31D (+663 over Li).
+  Joint latitudes gave 610 394 in 38D (+5 072 over Lin), deformed sign orbits
+  gave 769 180 in 39D (+264 over Lin), and affine shells gave 1 126 314 in 40D
+  (+34 314 over Dorofeev–Sun–Wang). [Source review](common/source_review_20261026.json).
+  All five independent exact replays passed; 31D and 38D were improved again.
+
+### 25 October
+
+- **26–30D and 38–39D:** midpoint replacements reached 200 918 in 26D,
+  204 636 in 27D, 216 568 in 29D and 224 280 in 30D. Joint Leech layers
+  gave 205 232 in 28D. The retained latitude and root replacements reached
+  605 346 in 38D and 768 924 in 39D. Later certificates supersede these values.
+- **36–37D and 41–46D:** the Coxeter–Todd phase code reached 501 633 and
+  505 359; the supplied 43D certificate reached 2 919 743. Coordinated head
+  movement raised 45D to 7 655 056. Exact replays retain the documented
+  complete-family P48n population inputs.
+- **49–96D:** the update installed the 7 387-line P48 family, signed-support
+  layers (332 170 112 in 64D and 332 238 338 in 65D), and Gamma72 nearest-coset
+  constructions. CPU continuations strengthened 76D, 78–86D and 87–94D,
+  with compact symmetry checks for the latter. The then-current 95D/96D
+  values were 7 091 452 684 and 13 289 406 656, before the nonlinear-code correction.
+- **73D and 77–79D:** the non-lattice 73D continuation reached 6 218 204 076
+  (+15 932 over the completed lattice); `dim73-88-gamma72-cosets/verify73.py`
+  independently checked the certificate. `verify_norm10.py` checked the new
+  whole-shell existence proofs in 77–79D. Later refills and tail proofs appear above.
+
+</details>
+
 ## Layout
 
 ```
@@ -549,14 +506,15 @@ the lower bound in its dimensions** — who held it, when, and by what construct
 
 ## Record status and retained results
 
-**28 October review.** PackingStar reports 201 134, 209 586, 221 664,
-231 636, 247 952 and 250 938 in dimensions 26–31. All six exceed the
-retained repository constructions, including the 27 October completions.
+**28 October comparison history.** The [earlier review](common/source_review_20261028.json)
+recorded PackingStar's 201 134, 209 586, 221 664, 231 636, 247 952 and
+250 938 in dimensions 26–31, all above the preceding repository constructions.
 Their README describes joint point removals, midpoint insertions and auxiliary
-layers; it supplies integer coordinate files. The external values above are
-source-reported, not independently reverified by this update. The pinned
-[review](common/source_review_20261028.json) separates their October claims
-from the construction and algorithm described in the June paper.
+layers and supplies integer coordinate files. The [later synchronization review](common/source_review_20261028_sync.json)
+pins their updated 30D/31D values of 247 956 and 251 002. The current
+asymmetric and normal-module certificates exceed all six pinned files.
+The earlier review records source-reported external values and separates their
+October claims from the construction and algorithm described in the June paper.
 
 The 25 October midpoint constructions regain 26D and 27D with **200 918** and
 **204 636**, following Takhanov–Yun's 199 868 and 201 589. Their paper is linked
