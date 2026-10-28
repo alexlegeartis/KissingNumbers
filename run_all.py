@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 88 scripts, including large exact certificate replays
-    python run_all.py --full       # 107 scripts, budget about 10 hours
+    python run_all.py              # 91 scripts, including large exact certificate replays
+    python run_all.py --full       # 110 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -188,6 +188,12 @@ JOBS = [
      os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py'], 5.0, True),
     ("dims 26-31: residual completions, full independent exact replay",
      os.path.join(V, 'improved', 'dim26-31-residual-completions'), ['verify.py'], 30.0, True),
+    ("dims 26, 28, 29, 30: asymmetric exchanges, complete exact replay",
+     os.path.join(V, 'improved', 'dim26-30-asymmetric-exchanges'), ['verify.py'], 10.0, True),
+    ("dim27: quadratic normal module, complete independent all-pairs replay",
+     os.path.join(V, 'improved', 'dim27-quadratic-normal-module'), ['verify.py'], 5.0, True),
+    ("dim31: normal-module exchange, complete independent all-pairs replay",
+     os.path.join(V, 'improved', 'dim31-normal-module-exchange'), ['verify.py'], 5.0, True),
     ("dims 26, 27: shared midpoint replacements, exact independent replay",
      os.path.join(V, 'improved', 'dim26-27-midpoint-replacements'), ['verify.py'], 1.0, True),
     ('dims 32-35: signed layers and coordinated heads, two independent exact proofs',
@@ -375,6 +381,9 @@ def _sota_jobs(quick=False):
         ('dim32-35-signed-layers', ('verify.py',)),
         ('dim25-collective-deformation', ('verify.py',)),
         ('dim31-dual-centres', ('verify.py',)),
+        ('dim26-30-asymmetric-exchanges', ('verify.py',)),
+        ('dim27-quadratic-normal-module', ('verify.py',)),
+        ('dim31-normal-module-exchange', ('verify.py',)),
         ('dim40-affine-shells', ('verify.py',)),
 
         ('dim26-31-residual-completions', ('verify.py',)),
@@ -456,6 +465,9 @@ def _sota_coverage(jobs, results=None):
         ('dim32-35-signed-layers', [32, 33, 34, 35], [('verify.py',)], 'two independent exact representations; full dense-code enumeration and every exceptional pair type'),
         ('dim25-collective-deformation', [25], [('verify.py',)], ''),
         ('dim31-dual-centres', [31], [('verify.py',)], ''),
+        ('dim26-30-asymmetric-exchanges', [26, 28, 29, 30], [('verify.py',)], 'complete explicit integer codes; exact opposite-pair and unpaired-point checks cover every unordered pair'),
+        ('dim27-quadratic-normal-module', [27], [('verify.py',)], 'complete quadratic coordinates; all 5491467600 distinct antipodal-line pairs checked exactly without baseline assumptions'),
+        ('dim31-normal-module-exchange', [31], [('verify.py',)], 'complete explicit integer coordinates; all 7881966235 distinct antipodal-line pairs checked without baseline assumptions'),
         ('dim40-affine-shells', [40], [('verify.py',)], ''),
 
         ('dim26-31-residual-completions', [26,27,28,29,30,31], [('verify.py',)], 'full independent coordinate replays and self-contained shell lemma; exact quadratic fields in 30D/31D'),

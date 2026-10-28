@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-28",
+  "packingstar_commit": "b67832ad9970895a22ab667bb06d1d43a45c6b18",
+  "scope": "Complete exact lower-bound certificates, compared with the pinned PackingStar coordinate files; no unrestricted optimality claim.",
+  "normal_octad": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    10,
+    11,
+    23
+  ],
+  "records": [
+    {
+      "dimension": 26,
+      "total": 201136,
+      "previous_repository": 201108,
+      "packingstar": 201134,
+      "gain": 2,
+      "source_url": "https://github.com/CDM1619/PackingStar/blob/b67832ad9970895a22ab667bb06d1d43a45c6b18/25D-31D/new_bounds_20261026/D26_201134_integer_coordinates.npz",
+      "source_sha256": "0520c1eb53283819896c1bc15b85b7df1c670f57a9aa3efa6a15485074833a74",
+      "certificate": "data/coordinates26_201136.npz",
+      "certificate_sha256": "60893d235fc47954bf15d83254b0f19f82638175a61d20230fa70a8991dba895",
+      "canonical_point_sha256": "08f77bcd4046c6ca8ef7ad535184591546b330c99d24d745e79cb865fc9345bf",
+      "removed": 59,
+      "added": 61,
+      "unpaired_points": 58,
+      "unordered_point_pairs_covered": 20227744680
+    },
+    {
+      "dimension": 28,
+      "total": 221694,
+      "previous_repository": 216680,
+      "packingstar": 221664,
+      "gain": 30,
+      "source_url": "https://github.com/CDM1619/PackingStar/blob/b67832ad9970895a22ab667bb06d1d43a45c6b18/25D-31D/new_bounds_20261026/D28_221664_integer_coordinates.npz",
+      "source_sha256": "fa86515648537f81cf638b0a3ce5a00a1b4128492ba7f7c58e2e2317a76ec0bc",
+      "certificate": "data/coordinates28_221694.npz",
+      "certificate_sha256": "83b3562a269d4e17320d74ddd11cf49c9f86c6985a6cd70880a1c64a9fd77d1e",
+      "canonical_point_sha256": "ffca82b05e6c499c4ff8dd825e69a9e91680aafc90048ba99a8448646b8a76a0",
+      "removed": 130,
+      "added": 160,
+      "unpaired_points": 32,
+      "unordered_point_pairs_covered": 24574003971
+    },
+    {
+      "dimension": 29,
+      "total": 231638,
+      "previous_repository": 226520,
+      "packingstar": 231636,
+      "gain": 2,
+      "source_url": "https://github.com/CDM1619/PackingStar/blob/b67832ad9970895a22ab667bb06d1d43a45c6b18/25D-31D/new_bounds_20261026/D29_231636_integer_coordinates.npz",
+      "source_sha256": "7338e77fd96efc2fa8a5f05fd502731e7a9305d0d3651b3161bbea9837ff413a",
+      "certificate": "data/coordinates29_231638.npz",
+      "certificate_sha256": "06865add4cb7400275f3da2bf7d81582d6ca346f95269011830f590f0aa74d5b",
+      "canonical_point_sha256": "ac4f7cc4aac762211772fbf2e80cbf35fa35ffa7a8e01b5046e8e8b120c06d6b",
+      "removed": 14,
+      "added": 16,
+      "unpaired_points": 22,
+      "unordered_point_pairs_covered": 26827965703
+    },
+    {
+      "dimension": 30,
+      "total": 247960,
+      "previous_repository": 238808,
+      "packingstar": 247956,
+      "gain": 4,
+      "source_url": "https://github.com/CDM1619/PackingStar/blob/b67832ad9970895a22ab667bb06d1d43a45c6b18/25D-31D/new_bounds_20261026/D30_247956_integer_coordinates.npz",
+      "source_sha256": "54b6db1fd99866b1bde8d19e367d022b82374521cb01224710f662c615efe150",
+      "certificate": "data/coordinates30_247960.npz",
+      "certificate_sha256": "c37553830e9828ecd77f80cf9e8381e68ab575368234c40c9608e37b7c6d6605",
+      "canonical_point_sha256": "10e7574cbbaa6e10cc21c1163c339fa867320c58a12238dac1de80ede1cd28fd",
+      "removed": 80,
+      "added": 84,
+      "unpaired_points": 104,
+      "unordered_point_pairs_covered": 30741956820
+    }
+  ]
+}

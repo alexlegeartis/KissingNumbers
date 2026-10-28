@@ -2,14 +2,20 @@
 
 Verified research checkpoint, 27 October 2026. These are achieved lower bounds, not optimality claims or a fresh worldwide record survey.
 
-| Dimension | Previous repository value | Verified construction | Improvement |
-|---|---:|---:|---:|
-| 26 | 200,918 | **201,108** | 190 |
-| 27 | 204,636 | **209,532** | 4,896 |
-| 28 | 205,232 | **216,680** | 11,448 |
-| 29 | 216,568 | **226,520** | 9,952 |
-| 30 | 224,280 | **238,808** | 14,528 |
-| 31 | 241,742 | **246,638** | 4,896 |
+Retained construction: the 27D and 31D values below were superseded on 28 October by
+the [209,600-point quadratic module](../dim27-quadratic-normal-module/) and the
+[251,110-point normal-module exchange](../dim31-normal-module-exchange/).
+The [asymmetric exchanges](../dim26-30-asymmetric-exchanges/) also supersede the 26D and
+28D–30D values. The dated certificates and construction counts here remain unchanged.
+
+| Dimension | Previous repository value | Verified construction | Improvement | Current repository bound (28 October 2026) |
+|---|---:|---:|---:|---:|
+| 26 | 200,918 | **201,108** | 190 | 201,136 |
+| 27 | 204,636 | **209,532** | 4,896 | 209,600 |
+| 28 | 205,232 | **216,680** | 11,448 | 221,694 |
+| 29 | 216,568 | **226,520** | 9,952 | 231,638 |
+| 30 | 224,280 | **238,808** | 14,528 | 247,960 |
+| 31 | 241,742 | **246,638** | 4,896 | 251,110 |
 
 Comparison values were rechecked against repository main commit `4838231d173cca75046e55c9c900bcd6f2b53a0f`. Historical coordinate certificates and manuscript sources are unchanged; historical package documentation now also identifies the current repository bounds.
 

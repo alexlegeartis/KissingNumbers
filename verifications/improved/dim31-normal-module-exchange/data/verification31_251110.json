@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "dimension": 31,
+  "points": 251110,
+  "squared_norm": 32,
+  "inner_product_limit": 16,
+  "antipodal_lines": 125555,
+  "distinct_line_pairs_checked": 7881966235,
+  "max_absolute_inner_product": 16,
+  "contact_line_pairs": 187759638,
+  "coordinate_sha256": "122b92544da7ca06c25370a9627d045de9227fd61f90b6deb4068c16f9e4ab61",
+  "file_sha256": "4ff7e0e4fc1eb625486c6dd162fd6eb281208124151b54ba0abd5d9e1c3eb1b6",
+  "seconds": 110.56514859199524,
+  "arithmetic": "Exact bounded integer products and sums in float64 BLAS; no tolerance.",
+  "scope": "All norms, distinctness, antipodal partners, and all distinct line-pair inequalities; no external baseline assumptions."
+}

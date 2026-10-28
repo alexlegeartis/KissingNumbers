@@ -8,6 +8,23 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
+> **28 October 2026 — all dimensions 26–31 exceed the checked PackingStar files.**
+> New asymmetric exchanges give **201 136 in 26D**, **221 694 in 28D**,
+> **231 638 in 29D** and **247 960 in 30D**: gains of **2, 30, 2 and 4**.
+> All four complete coordinate certificates pass independent exact checks,
+> including every unpaired point. [Coordinates, rebuilds and verifier](verifications/improved/dim26-30-asymmetric-exchanges/).
+> **31D: 251 110 points.**
+> A coordinated normal-module replacement improves PackingStar's latest checked
+> **251 002** by **108**. The complete integer certificate passes all
+> **7 881 966 235** distinct antipodal-line pair checks, without relying on
+> baseline validity. [Coordinates, provenance and standalone verifier](verifications/improved/dim31-normal-module-exchange/).
+> **27D is also reclaimed: 209 600**, 14 above PackingStar's 209 586.
+> The quadratic certificate passes all 5 491 467 600 line-pair checks.
+> [Coordinates, construction and exact verifier](verifications/improved/dim27-quadratic-normal-module/).
+> PackingStar's current 26D–30D values are 201 134, 209 586, 221 664,
+> 231 636 and 247 956; the six gains in dimensions 26–31 are 2, 14, 30, 2, 4 and 108.
+> The comparison is pinned to their [28 October commit](https://github.com/CDM1619/PackingStar/tree/b67832ad9970895a22ab667bb06d1d43a45c6b18/25D-31D/new_bounds_20261026).
+>
 > **27 October 2026 — stronger verified bounds in dimensions 26–31.**
 > Exact residual-head completions give **201 108**, **209 532**, **216 680**,
 > **226 520**, **238 808** and **246 638**, respectively. The increases over
@@ -115,7 +132,7 @@ record is **one point**. In 31D the current 246,638-point construction gains
 preceding repository construction of 241,742 is **4,896 points**. The
 [25D](verifications/improved/dim25-collective-deformation/),
 [historical 31D](verifications/improved/dim31-dual-centres/) and
-[current 26–31D](verifications/improved/dim26-31-residual-completions/) packages
+[26–31D residual-completion](verifications/improved/dim26-31-residual-completions/) packages
 name these comparisons and the associated constructions.
 
 **Later gain** compares a superseding SOTA with our retained result, using the
@@ -147,12 +164,12 @@ the reviewed sources. Higher-dimensional status uses the separate sources below.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 18 | 7 654 | [Cohn–Li, BW16 + hexagons](https://arxiv.org/abs/2411.04916v3) | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
 | 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 584** | **SOTA** | +0.268% | — |2026-08-30 to 2026-09-28; since 2026-10-26 | [Collective deformation](verifications/improved/dim25-collective-deformation/) | — |
-| 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 108** | **SOTA** | +0.620% | — | 2026-09-08 to 2026-10-05; since 2026-10-25 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
-| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 532** | **SOTA** | +3.940% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
-| 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **216 680** | **SOTA** | +5.609% | — | 2026-09-16 to 2026-10-10; since 2026-10-24 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
-| 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **226 520** | **SOTA** | +8.126% | — | 2026-09-16 to 2026-10-05; since 2026-10-25 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
-| 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **238 808** | **SOTA** | +8.332% | — | 2026-09-16 to 2026-10-10; since 2026-10-25 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
-| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **246 638** | **SOTA** | +3.477% | — |2026-09-16 to 2026-10-05; since 2026-10-26 | [Residual-head completions](verifications/improved/dim26-31-residual-completions/) | — |
+| 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 136** | **SOTA** | +0.634% | — | 2026-09-08 to 2026-10-05; reclaimed 2026-10-28 | [Asymmetric exchanges](verifications/improved/dim26-30-asymmetric-exchanges/) | — |
+| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 600** | **SOTA** | +3.974% | — | 2026-08-30 to 2026-09-28; reclaimed 2026-10-28 | [Quadratic normal module](verifications/improved/dim27-quadratic-normal-module/) | — |
+| 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **221 694** | **SOTA** | +8.053% | — | 2026-09-16 to 2026-10-10; reclaimed 2026-10-28 | [Asymmetric exchanges](verifications/improved/dim26-30-asymmetric-exchanges/) | — |
+| 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **231 638** | **SOTA** | +10.569% | — | 2026-09-16 to 2026-10-05; reclaimed 2026-10-28 | [Asymmetric exchanges](verifications/improved/dim26-30-asymmetric-exchanges/) | — |
+| 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **247 960** | **SOTA** | +12.484% | — | 2026-09-16 to 2026-10-10; reclaimed 2026-10-28 | [Asymmetric exchanges](verifications/improved/dim26-30-asymmetric-exchanges/) | — |
+| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **251 110** | **SOTA** | +5.353% | — |2026-09-16 to 2026-10-05; reclaimed 2026-10-28 | [Normal-module exchange](verifications/improved/dim31-normal-module-exchange/) | — |
 | 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32) | **352 800** | **SOTA** | +0.13624% | — | since 2026-10-26 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
 | 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 368** | **SOTA** | +0.0345722% | — | since 2026-10-26 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 982** | **SOTA** | +0.000511535% | — | since 2026-10-26 | [Dense-coset heads](verifications/improved/dim32-35-signed-layers/) | — |
@@ -263,7 +280,10 @@ improvement is claimed in 47D or 48D.
 
 - **25D:** 1016 heads in the lens of a minimal vector, each removing only its owner, plus one non-lattice equator point
 
-- **26D–31D (current):** Shared midpoint replacements with axiswise residual-head completion give 201 108, 209 532, 216 680, 226 520, 238 808 and 246 638. The final 30D/31D pure tails are represented exactly over Q(√3)/Q(√2), replacing—not supplementing—the ordinary D6/D7 tails. [Coordinate assembly and independent full replays](verifications/improved/dim26-31-residual-completions/) describe all components. Earlier midpoint, joint-Leech, frame-layer and dual-centre packages remain as historical constructions.
+- **26D, 28D–30D (current):** Independent signed-point choices and recentered candidate pools give 201 136, 221 694, 231 638 and 247 960. [Complete exact coordinate proofs](verifications/improved/dim26-30-asymmetric-exchanges/) handle the unpaired points explicitly.
+- **27D (current):** A 384-point quadratic normal module replaces PackingStar's 370-point sector, giving **209 600**, a gain of 14. [Full coordinates and exact all-pairs verification](verifications/improved/dim27-quadratic-normal-module/).
+- **31D (current):** A normal-coordinate signed simplex module and exact compatible-union selection give **251 110**, 108 above PackingStar's 28 October 251 002-point file. [Complete coordinates and all-pairs verification](verifications/improved/dim31-normal-module-exchange/) credit and pin the public baseline.
+- **26D–30D and the preceding 31D construction:** Shared midpoint replacements with axiswise residual-head completion give 201 108, 209 532, 216 680, 226 520, 238 808 and 246 638. The final 30D/31D pure tails are represented exactly over Q(√3)/Q(√2), replacing—not supplementing—the ordinary D6/D7 tails. [Coordinate assembly and independent full replays](verifications/improved/dim26-31-residual-completions/) describe all components. Earlier midpoint, joint-Leech, frame-layer and dual-centre packages remain as historical constructions.
 
 - **36D:** Three Coxeter–Todd lattices with 32 643 explicit three-point phase orbits over a fixed 403 704-point base; exact shells and angles give 501 633 points
 
@@ -320,7 +340,7 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               all 70 claims, 30 packages; earlier constructions remain
+  improved/               all 70 claims, 33 packages; earlier constructions remain
                           available with their original proof data
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
@@ -339,7 +359,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 30 packages, 70 dimensions
+### `verifications/improved/` — 33 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -350,7 +370,10 @@ in `improved/` may now be superseded by a later publication; its package is reta
 
 | package                                                                                      | dims   | the idea                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`dim26-31-residual-completions`](verifications/improved/dim26-31-residual-completions/) | 26–31 | current residual-head completions and exact exceptional pure tails; independent full replays |
+| [`dim26-31-residual-completions`](verifications/improved/dim26-31-residual-completions/) | 26–31 | retained residual-head completions and exact exceptional pure tails; independent full replays |
+| [`dim26-30-asymmetric-exchanges`](verifications/improved/dim26-30-asymmetric-exchanges/) | 26, 28–30 | current asymmetric integer configurations; complete independent all-pairs verification |
+| [`dim27-quadratic-normal-module`](verifications/improved/dim27-quadratic-normal-module/) | 27 | current 209 600-point quadratic code; full independent all-pairs verification |
+| [`dim31-normal-module-exchange`](verifications/improved/dim31-normal-module-exchange/) | 31 | current 251 110-point integer code; full independent all-pairs verification |
 | [`dim25-collective-deformation`](verifications/improved/dim25-collective-deformation/) | 25 | collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons |
 | [`dim31-dual-centres`](verifications/improved/dim31-dual-centres/) | 31 | shared midpoint replacements and dual E7 centres; exact coordinate replay |
 | [`dim38-joint-latitudes`](verifications/improved/dim38-joint-latitudes/) | 38 | 1352 joint latitude families, signed axis rotation and coordinate axes; exact integer replay |
@@ -418,9 +441,9 @@ comparison is given separately by its source.
 | dim | earlier result | intervening result | source | current result |
 |---|---:|---:|---|---:|
 | 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) | 197 584 |
-| 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 226 520 |
-| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 238 808 |
-| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 246 638 |
+| 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 231 638 |
+| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 247 960 |
+| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 110 |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 610 394 |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 180 |
 
@@ -593,10 +616,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 88 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 91 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 107 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 110 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

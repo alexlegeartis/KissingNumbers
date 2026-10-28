@@ -393,7 +393,7 @@ add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover'
 
 # October code and nearest-coset constructions supersede earlier packages;
 # add() preserves every displaced claim in SUPERSEDED for the history audit.
-for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions'):
+for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions', 'dim31-normal-module-exchange', 'dim27-quadratic-normal-module', 'dim26-30-asymmetric-exchanges'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -1987,6 +1987,9 @@ if '--write-results' in sys.argv and not fail:
                                   '37D adds two latitude layers',
         'dim61-68-95-96-code-layers': 'explicit binary compression, central sections and enlarged support layers; exact code and geometry replay',
         'dim26-31-residual-completions': 'shared midpoint replacements, axiswise residual heads and exact exceptional pure tails; independent full-coordinate proof',
+        'dim26-30-asymmetric-exchanges': 'signed-point normal-sector exchanges without antipodal constraints; full independent exact all-pairs replay',
+        'dim27-quadratic-normal-module': '384-point quadratic E8/cuboctahedral module replacing a 370-point normal sector; complete independent exact all-pairs verification',
+        'dim31-normal-module-exchange': 'signed simplex module exchanged into PackingStar coordinates by exact bipartite matching; complete independent all-pairs verification',
         'dim26-27-midpoint-replacements': 'shared midpoint replacements on orthogonal tail directions; exact Leech membership, midpoint identities and all inserted-pair products',
         'dim29-30-midpoint-replacements': 'shared Leech midpoint replacements with D5/D6 inserted tails and pure D5/E6 roots; exact coordinate replay',
         'dim32-35-signed-layers': 'signed octad replacements in 32-33D, a four-head dense-coset extension in 34D, and parity-coordinated twelve-head root replacement in 35D; two independent exact proofs',
@@ -2023,6 +2026,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("%d registered lower bounds on the kissing number tau(n), compared with their\nrecorded published baselines. Later superseding records are listed in README.md."
                % len(claims))
+    out.append("")
+    out.append("The 28 October normal-module exchange gives **251110 in 31D**, exceeding PackingStar's checked 251002-point update by 108. All 7881966235 distinct antipodal-line pairs pass an independent exact replay. The quadratic normal-module replacement gives **209600 in 27D**, 14 above PackingStar's checked 209586, with all 5491467600 distinct line pairs verified exactly. The asymmetric exchanges give **201136 in 26D**, **221694 in 28D**, **231638 in 29D** and **247960 in 30D**, exceeding the pinned PackingStar files by 2, 30, 2 and 4. Complete independent exact checks cover every unordered point pair, including unpaired points. All six dimensions 26D-31D exceed the pinned PackingStar comparison; the table's comparison column retains its historical baselines.")
     out.append("")
     out.append("The 27 October support continuation gives 13290258624 in 96D (+851968 over the preceding registered bound) and 7092007692 in 95D (+555008), with all 302887578 support pairs checked in two independent representations. The paper retains its earlier values. The later 26 October update adds 352800 in 32D, 370368 in 33D, 390982 in 34D and 415314 in 35D, each with two independent exact proof representations. The paper update is deferred; common/manuscript_scope.json records its 66-result state and hashes. The 26 October continuation gives 197584 in 25D, 241742 in 31D, 610394 in 38D, 769180 in 39D and 1126314 in the newly registered dimension 40. All five independent exact replays passed. Fresh primary-source comparisons and the unavailable Cohn retrieval are documented in common/source_review_20261026.json. The 24 October 2026 checkpoint adds exact Coxeter-Todd constructions "
                "in dimensions 36 and 37, registers the supplied 2 919 743-point partial-family "

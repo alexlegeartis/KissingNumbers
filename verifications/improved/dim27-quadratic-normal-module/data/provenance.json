@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-28",
+  "dimension": 27,
+  "points": 209600,
+  "previous_repository": 209532,
+  "packingstar_current": 209586,
+  "gain_over_current": 14,
+  "packingstar_commit": "b67832ad9970895a22ab667bb06d1d43a45c6b18",
+  "packingstar_url": "https://github.com/CDM1619/PackingStar/blob/b67832ad9970895a22ab667bb06d1d43a45c6b18/25D-31D/new_bounds_20261026/D27_209586_integer_coordinates.npz",
+  "packingstar_file_sha256": "0c4ba4fe4201153bd09c423b09f82e90d48d99460fea7dcef43f9d9c762e314c",
+  "certificate_sha256": "72622fca5823ec88ca2040fd7821e33e30603afae17b35c2d8362ff889086a74",
+  "canonical_coefficient_sha256": "5c6517da4a2b4adfe2ce3633d7fb02801ee39c938b6b1f759af575d18b5e3caa",
+  "replaced_sector_points": 370,
+  "new_sector_points": 384,
+  "retained_core_points": 209216,
+  "normal_octad": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    10,
+    11,
+    23
+  ],
+  "field": "Q(sqrt(2))",
+  "comparison_scope": "Latest checked PackingStar file at the pinned commit; no optimality claim."
+}

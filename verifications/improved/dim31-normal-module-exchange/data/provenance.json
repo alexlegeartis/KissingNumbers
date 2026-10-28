@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-28",
+  "dimension": 31,
+  "points": 251110,
+  "previous_repository": 246638,
+  "packingstar_current": 251002,
+  "gain_over_current": 108,
+  "packingstar_commit": "b67832ad9970895a22ab667bb06d1d43a45c6b18",
+  "packingstar_git_blob": "3d5a885fe27b4778b7fcc8cc4130fa9f74e1ce6c",
+  "packingstar_url": "https://github.com/CDM1619/PackingStar/blob/b67832ad9970895a22ab667bb06d1d43a45c6b18/25D-31D/new_bounds_20261026/D31_251002_integer_coordinates.npz",
+  "packingstar_coordinate_sha256": "b84d24d53c02f95c0a25267e0e1f6306f2b161547ac7a9a4887053d7dc2118f7",
+  "certificate_sha256": "4ff7e0e4fc1eb625486c6dd162fd6eb281208124151b54ba0abd5d9e1c3eb1b6",
+  "canonical_coordinate_sha256": "35af8e0d8883d2ee7a6f984a7855c2b60ca45c677af22412dd343e5fe63877a7",
+  "removed_points": 1818,
+  "added_points": 1926,
+  "packingstar_current_26_to_31": {
+    "26": 201134,
+    "27": 209586,
+    "28": 221664,
+    "29": 231636,
+    "30": 247956,
+    "31": 251002
+  }
+}

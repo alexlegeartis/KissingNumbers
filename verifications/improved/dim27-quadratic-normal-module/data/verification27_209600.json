@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "dimension": 27,
+  "points": 209600,
+  "radicand": 2,
+  "squared_norm": 32,
+  "inner_product_limit": 16,
+  "antipodal_lines": 104800,
+  "irrational_lines": 72,
+  "distinct_line_pairs_checked": 5491467600,
+  "integer_max_absolute_inner_product": 16,
+  "coefficient_sha256": "21911ab18a5c669845ecda641387e17b4eb703827962a8330a7a6da0513ac645",
+  "file_sha256": "72622fca5823ec88ca2040fd7821e33e30603afae17b35c2d8362ff889086a74",
+  "seconds": 107.81278467178345,
+  "arithmetic": "Exact bounded integer dot products; exact sign-sensitive quadratic comparisons, no tolerance.",
+  "scope": "All norms, distinctness, antipodal partners, and every distinct line-pair inequality; no external baseline assumptions."
+}

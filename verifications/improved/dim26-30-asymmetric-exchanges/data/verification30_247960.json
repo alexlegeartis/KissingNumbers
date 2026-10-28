@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "dimension": 30,
+  "points": 247960,
+  "antipodal_pairs": 123928,
+  "unpaired_points": 104,
+  "quadratic_paired_lines": 0,
+  "distinct_line_pairs_checked": 7679012628,
+  "paired_to_unpaired_checks": 12888512,
+  "unpaired_pairs_checked": 5356,
+  "unordered_point_pairs_covered": 30741956820,
+  "squared_norm": 32,
+  "inner_product_limit": 16,
+  "coefficient_sha256": "78d3dd44d1852cb5d52fd3a722f6b1eba05c64191d2a99c456e05e9c8f98f788",
+  "file_sha256": "c37553830e9828ecd77f80cf9e8381e68ab575368234c40c9608e37b7c6d6605",
+  "seconds": 121.28715634346008,
+  "arithmetic": "Bounded integer dot products exactly represented in float64; sign-sensitive integer comparisons in Q(sqrt(2)), without tolerance.",
+  "scope": "All norms, distinctness and all unordered point-pair inequalities; no external baseline assumption and no antipodality requirement."
+}

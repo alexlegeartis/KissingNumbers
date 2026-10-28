@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "pool_points": 1642,
+  "exact_finite_optimum": 1220,
+  "file_sha256": "ab8adebbfc28fd9d21e7f24c09512041b5538942f63c47e349405457118f74b5",
+  "scope": "Only the supplied finite pool: a matching feasible subset and complete conflict-clique cover. Integer arithmetic; no optimizer needed."
+}
