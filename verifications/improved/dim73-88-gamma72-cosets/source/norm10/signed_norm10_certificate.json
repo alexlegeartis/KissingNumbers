@@ -1,0 +1,447 @@
+{
+  "status": "PASS",
+  "certificate_type": "Exact signed-orbit weighted-priority existence proof; no selected head list",
+  "theta_coefficients": [
+    1,
+    0,
+    0,
+    0,
+    6218175600,
+    15281788354560
+  ],
+  "modular_form_coefficients": [
+    -2160,
+    965520,
+    -27302400
+  ],
+  "norm10_absolute_product_distribution": {
+    "0": 5118989848896,
+    "1": 7238164864000,
+    "2": 2503639594500,
+    "3": 395496128000,
+    "4": 24994840000,
+    "5": 500966912,
+    "6": 2112250,
+    "10": 2
+  },
+  "dimensions": {
+    "82": {
+      "bound": 6220170666,
+      "equator": 6218175600,
+      "tail_rank": 10,
+      "head_scale_squared": "8/13",
+      "tail_support_weights": [
+        1,
+        4
+      ],
+      "tail_squared_norms": [
+        1,
+        4
+      ],
+      "priority_rates": [
+        19871466,
+        10000000
+      ],
+      "orbit_populations": [
+        20,
+        3360
+      ],
+      "tail_vectors": 3380,
+      "positive_conflict_populations_4_5_6": [
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            672
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            49,
+            1197
+          ]
+        ]
+      ],
+      "closed_neighborhood_matrix": [
+        [
+          12748959601,
+          709719360
+        ],
+        [
+          4224520,
+          26035294329
+        ]
+      ],
+      "weighted_closed_degrees": [
+        260437710846645066,
+        260436890695546320
+      ],
+      "priority_expectation_numerator": "958816603165632899292749469479731200",
+      "priority_expectation_denominator": "961275334931490919664013605477",
+      "guaranteed_antipodal_pairs": 997443,
+      "pure_tail_points": 180
+    },
+    "83": {
+      "bound": 6221008658,
+      "equator": 6218175600,
+      "tail_rank": 11,
+      "head_scale_squared": "8/13",
+      "tail_support_weights": [
+        1,
+        4
+      ],
+      "tail_squared_norms": [
+        1,
+        4
+      ],
+      "priority_rates": [
+        21748661,
+        10000000
+      ],
+      "orbit_populations": [
+        22,
+        5280
+      ],
+      "tail_vectors": 5302,
+      "positive_conflict_populations_4_5_6": [
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            960
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            57,
+            1853
+          ]
+        ]
+      ],
+      "closed_neighborhood_matrix": [
+        [
+          12748959603,
+          1013885280
+        ],
+        [
+          4224522,
+          28731981897
+        ]
+      ],
+      "weighted_closed_degrees": [
+        287411653308341583,
+        287411696666865042
+      ],
+      "priority_expectation_numerator": "309534105312812372429319718854270320640",
+      "priority_expectation_denominator": "218532991849680554423575176448787",
+      "guaranteed_antipodal_pairs": 1416419,
+      "pure_tail_points": 220
+    },
+    "84": {
+      "bound": 6222025404,
+      "equator": 6218175600,
+      "tail_rank": 12,
+      "head_scale_squared": "8/13",
+      "tail_support_weights": [
+        1,
+        4
+      ],
+      "tail_squared_norms": [
+        1,
+        4
+      ],
+      "priority_rates": [
+        23745110,
+        10000000
+      ],
+      "orbit_populations": [
+        24,
+        7920
+      ],
+      "tail_vectors": 7944,
+      "positive_conflict_populations_4_5_6": [
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1320
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            65,
+            2725
+          ]
+        ]
+      ],
+      "closed_neighborhood_matrix": [
+        [
+          12748959605,
+          1394092920
+        ],
+        [
+          4224524,
+          31656793185
+        ]
+      ],
+      "weighted_closed_degrees": [
+        316666377406281550,
+        316668243637077640
+      ],
+      "priority_expectation_numerator": "1253326981930503984001319989913321472",
+      "priority_expectation_denominator": "651157049040020415501037799023",
+      "guaranteed_antipodal_pairs": 1924770,
+      "pure_tail_points": 264
+    },
+    "85": {
+      "bound": 6223222688,
+      "equator": 6218175600,
+      "tail_rank": 13,
+      "head_scale_squared": "8/13",
+      "tail_support_weights": [
+        1,
+        4,
+        9
+      ],
+      "tail_squared_norms": [
+        1,
+        4,
+        9
+      ],
+      "priority_rates": [
+        26122963,
+        10000000,
+        3247
+      ],
+      "orbit_populations": [
+        26,
+        11440,
+        366080
+      ],
+      "tail_vectors": 377546,
+      "positive_conflict_populations_4_5_6": [
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1760
+          ],
+          [
+            0,
+            0,
+            126720
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            73,
+            3845
+          ],
+          [
+            0,
+            4032,
+            69312
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            9
+          ],
+          [
+            0,
+            126,
+            2166
+          ],
+          [
+            73,
+            12310,
+            103114
+          ]
+        ]
+      ],
+      "closed_neighborhood_matrix": [
+        [
+          12748959607,
+          1858791440,
+          133832526080
+        ],
+        [
+          4224526,
+          34843524353,
+          1083151796672
+        ],
+        [
+          9505151,
+          33848493646,
+          4104664642690
+        ]
+      ],
+      "weighted_closed_degrees": [
+        352063068714337301,
+        352062594550184522,
+        352061085262696843
+      ],
+      "priority_expectation_numerator": "5005179853410565756989573824747202291243212676487773880320",
+      "priority_expectation_denominator": "1983515953699158151569337176238245183019524912889993",
+      "guaranteed_antipodal_pairs": 2523388,
+      "pure_tail_points": 312
+    },
+    "87": {
+      "bound": 6226194610,
+      "equator": 6218175600,
+      "tail_rank": 15,
+      "head_scale_squared": "8/13",
+      "tail_support_weights": [
+        1,
+        4,
+        9
+      ],
+      "tail_squared_norms": [
+        1,
+        4,
+        9
+      ],
+      "priority_rates": [
+        31936463,
+        10000000,
+        4877
+      ],
+      "orbit_populations": [
+        30,
+        21840,
+        2562560
+      ],
+      "tail_vectors": 2584430,
+      "positive_conflict_populations_4_5_6": [
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            2912
+          ],
+          [
+            0,
+            0,
+            768768
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            89,
+            6957
+          ],
+          [
+            0,
+            14784,
+            445632
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            9
+          ],
+          [
+            0,
+            126,
+            3798
+          ],
+          [
+            109,
+            61978,
+            676270
+          ]
+        ]
+      ],
+      "closed_neighborhood_matrix": [
+        [
+          12748959611,
+          3075457840,
+          811917666560
+        ],
+        [
+          4224530,
+          42137931049,
+          4173793072064
+        ],
+        [
+          9505155,
+          35572100046,
+          17600910632278
+        ]
+      ],
+      "weighted_closed_degrees": [
+        441870977765009013,
+        441869815848493518,
+        441864202644586571
+      ],
+      "priority_expectation_numerator": "1478191471624526017134025477955708555176286657829642240000",
+      "priority_expectation_denominator": "368691202858979632411065835267802782712375252027821",
+      "guaranteed_antipodal_pairs": 4009295,
+      "pure_tail_points": 420
+    }
+  },
+  "literature_inputs": [
+    "Gamma72 even unimodular, minimum 8 (Nebe)",
+    "All shells are spherical 11-designs (Venkov)",
+    "Classical modular-form description of even unimodular theta series"
+  ]
+}

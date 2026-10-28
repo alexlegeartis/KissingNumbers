@@ -394,6 +394,11 @@
       "repository_total": 57894253
     },
     {
+      "dimension": 73,
+      "manuscript_total": 6218204076,
+      "repository_total": 6218206932
+    },
+    {
       "dimension": 77,
       "manuscript_total": 6218465016,
       "repository_total": 6218490542
@@ -409,14 +414,39 @@
       "repository_total": 6218922650
     },
     {
+      "dimension": 82,
+      "manuscript_total": 6220001536,
+      "repository_total": 6220170666
+    },
+    {
+      "dimension": 83,
+      "manuscript_total": 6220534360,
+      "repository_total": 6221008658
+    },
+    {
+      "dimension": 84,
+      "manuscript_total": 6221557196,
+      "repository_total": 6222025404
+    },
+    {
+      "dimension": 85,
+      "manuscript_total": 6222004840,
+      "repository_total": 6223222688
+    },
+    {
+      "dimension": 87,
+      "manuscript_total": 6225838030,
+      "repository_total": 6226194610
+    },
+    {
       "dimension": 95,
       "manuscript_total": 7091452684,
-      "repository_total": 7092187916
+      "repository_total": 7092331276
     },
     {
       "dimension": 96,
       "manuscript_total": 13289406656,
-      "repository_total": 13290553536
+      "repository_total": 13290782912
     }
   ]
 }

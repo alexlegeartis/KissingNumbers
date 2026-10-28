@@ -232,3 +232,83 @@ and only the small tail Gram matrices are enumerated. This is an independent
 exact adaptation of that search principle; it does not reproduce their
 reinforcement-learning system. Improvements are measured against this
 repository's preceding certificates. No new global priority survey is claimed.
+
+## Further progress in 73D and 82--87D, 28 October 2026
+
+`refilled_shell10.npz` replaces the 6,235-head explicit 73D layer with
+**7,663** oriented norm-ten heads. Its 15,326 points give **6,218,206,932**,
+an increase of **2,856**. The equator, half-coset contacts, cap surgery and
+non-lattice witness remain. Integral automorphism images, two-for-one
+replacements and neutral exchanges supplied the candidates; the final
+coordinates alone are trusted. `verify_refilled_shell10.py` checks all
+**120,048,558** head/head and mixed products in int64 and independently
+in binary32 after proving every term and partial sum is an exactly
+represented integer below 2^24. `refilled_shell10_verification.json` and
+`refill_search.json` record the checks and finite search scope.
+
+The signed-tail certificates improve five more dimensions:
+
+| Dimension | Rank k | Support weights | Guaranteed pairs | Pure tails | Current bound | Gain over preceding repository bound |
+|---:|---:|:---:|---:|---:|---:|---:|---:|
+| 82 | 10 | 1, 4 | 997,443 | 180 | **6,220,170,666** | 169,130 |
+| 83 | 11 | 1, 4 | 1,416,419 | 220 | **6,221,008,658** | 474,298 |
+| 84 | 12 | 1, 4 | 1,924,770 | 264 | **6,222,025,404** | 468,208 |
+| 85 | 13 | 1, 4, 9 | 2,523,388 | 312 | **6,223,222,688** | 1,217,848 |
+| 87 | 15 | 1, 4, 9 | 4,009,295 | 420 | **6,226,194,610** | 356,580 |
+
+Let T_w contain all vectors in R^k with exactly w coordinates in {+1,-1}
+and every other coordinate zero. It has 2^w binomial(k,w) vectors of
+squared norm w. Take the indicated union of T_1, T_4 and T_9, and use
+
+    +/-(sqrt(8/13) y, sqrt(24/(13w)) z), y.y=10, z in T_w.
+
+These points have squared norm eight. Equatorial products are at most
+5 sqrt(8/13)<4. Head products of absolute value at most three give at
+most 48/13<4. All choices above one head line conflict, since even the
+smallest positive-body product is 56/13>4. Adjoin all 2k(k-1) pure roots
+`2(+/-e_i +/-e_j)`, i<j. Their norm is eight, distinct products are at
+most four, and products against the new layer are at most sqrt(192/13)<4.
+T_1 spans R^k, and every other tail and pure root lies in that same space.
+
+Against a fixed positive weight-a tail, a weight-b tail overlaps it in r
+positions with l positive signs, giving product d=2l-r and population
+
+    binomial(a,r) binomial(k-a,b-r) binomial(r,l) 2^(b-r).
+
+Sum over valid r,l to obtain H_ab(d). Signed coordinate permutations
+act transitively on T_a, preserve each T_b and its assigned rate, and
+preserve products. Thus this is the exact profile for every tail in T_a.
+For absolute head products j=4,5,6, define the strict conflict populations
+
+    B_j(a,b) = sum_d H_ab(d) [d>0 and 24^2 d^2 > (52-8j)^2 ab],
+    M_ab = |T_b| + sum_(j=4,5,6) (a_j/2) B_j(a,b),
+    D_a = sum_b M_ab rate_b,
+    alpha = (N10/2) sum_a |T_a| rate_a/D_a.
+
+Boundary products are compatible. Negating tails preserves rates, so
+negative head products have the same populations. M_ab includes the full
+same-head closed neighborhood. The preceding exponential-clock argument
+therefore guarantees ceil(alpha) antipodal pairs. Use the integer rates:
+
+| Rank k | T_1 rate | T_4 rate | T_9 rate |
+|---:|---:|---:|---:|
+| 10 | 19,871,466 | 10,000,000 | unused |
+| 11 | 21,748,661 | 10,000,000 | unused |
+| 12 | 23,745,110 | 10,000,000 | unused |
+| 13 | 26,122,963 | 10,000,000 | 3,247 |
+| 15 | 31,936,463 | 10,000,000 | 4,877 |
+
+`signed_norm10_certificate.py` recomputes every combinatorial population,
+neighborhood matrix, weighted degree and rational expectation; the report
+is `signed_norm10_certificate.json`. `verify_signed_profiles.py` instead
+computes H_ab from coefficients of
+
+    (1+t(X+X^-1))^a (1+2t)^(k-a), at t^b X^d,
+
+using integer dynamic programming and integer square-root cutoffs. Direct
+enumeration of every signed orbit in ranks one through five checks this
+polynomial model. The independent checker also verifies every pure-root
+product and exact rank. No large tail list, selected head list, optimizer
+output or floating-point threshold is a proof input. The Gamma72 minimum,
+theta series and all-shell 11-design facts remain the literature inputs.
+Run `python ../../verify_norm10.py` for the complete isolated replay.

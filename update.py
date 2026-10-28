@@ -25,13 +25,13 @@ diverged, and step 3 would paper over it.
 
 HOW TO IMPROVE A BOUND.  RESULTS.md's status column says what would have to change:
 
-    cosets     dimensions 36-37 and 73-86. Larger phase codes, nearest subsets,
+    cosets     dimensions 36-37 and 73-87. Larger phase codes, nearest subsets,
                or compatible tail assignments remain open; no construction ceiling is claimed.
     heads      dimensions 25-31, 34-35, 38 and 40-46. Joint layer and family/head searches and partial families
                remain open. Complete-family populations retain their documented assumptions.
     codes      dimensions 32-33, 39, 61-68 and 95-96. Improve the explicit input codes,
                sparse support layers, compression maps or central sections.
-    classes    dimensions 49-60 and 87-94. Better pairwise-disjoint class
+    classes    dimensions 49-60 and 88-94. Better pairwise-disjoint class
                families improve the corresponding cap constructions. The October P48
                family is certified by dim49-63-p48-caps/verify_october.py.
     exhausted  dimension 18. These construction templates have

@@ -506,3 +506,9 @@ if __name__ == '__main__':
     for s in sorted(by):
         ds = by[s]
         print('  %-10s %2d dimensions  %-16s %s' % (s, len(ds), runs(ds), LEGEND[s]))
+
+# Signed constant-weight tail orbits, independently checked 28 October 2026.
+for _d in (82, 83, 84, 85, 87):
+    STATUS[_d] = ('cosets', 'signed-tail orbit profiles and weighted-priority existence bounds; '
+                  'different tail sets and stronger independence bounds remain open '
+                  '(dim73-88-gamma72-cosets/verify_norm10.py)')

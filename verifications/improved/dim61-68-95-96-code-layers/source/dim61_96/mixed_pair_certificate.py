@@ -80,15 +80,15 @@ def main():
                'ordinary_poles': 176}
     terms96 = {'dense': 1 << 33, 'transversal24': 1 << 32,
                'new_support24': len(low)*16384, 'support6': 1 << 21, 'poles': 192}
-    # Registered bounds immediately before the 28 October fill/correct continuation.
-    before = {95: 7092007692, 96: 13290258624}
+    # Registered bounds immediately before the further 28 October support continuation.
+    before = {95: 7092187916, 96: 13290553536}
     dimensions = {str(d): {'bound': sum(terms.values()), 'previous_bound': before[d],
                           'gain': sum(terms.values())-before[d], 'terms': terms}
                   for d, terms in ((95, terms95), (96, terms96))}
     report = {'status': 'Verified: every physical support pair and exact sign/section counts',
-              'supports': len(low), 'previous_supports': 24613,
-              'additional_supports': len(low)-24613,
-              'comparison': 'Immediately preceding registered repository bounds (commit a6ba338)',
+              'supports': len(low), 'previous_supports': 24631,
+              'additional_supports': len(low)-24631,
+              'comparison': 'Immediately preceding registered repository bounds (commit 9d38a38)',
               'support_pairs_checked': len(low)*(len(low)-1)//2,
               'maximum_distinct_support_intersection': maximum,
               'maximum_occupied_rows': int(np.count_nonzero(rows, axis=1).max()),

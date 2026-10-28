@@ -1,0 +1,26 @@
+{
+  "status": "Two complete exact replays passed",
+  "base_commit": "9d38a38b93fcbbc88d48981f382464569189c3c8",
+  "starting_supports": 24631,
+  "starting_certificate_sha256": "81ed499073d43d74706814c03342bf2a4309a7bb2d46b9bdaa220f0f54b3fe89",
+  "seed": 282132,
+  "trials": 100000000,
+  "neutral_period": 128,
+  "free_additions": 4,
+  "two_for_one_trades": 10,
+  "one_for_one_moves": 147,
+  "final_supports": 24645,
+  "certificate_sha256": "f3c5a100ba1ac8d73e8f1fffd555d72c0d87e75f4bb9532aeab3b10c7f8f9cf5",
+  "canonical_ordered_support_text_sha256": "9453be2f212544c154d0e09fde6cda1c33eea4347d6e883008a898fd3d3ef172",
+  "support_pairs_checked_in_each_representation": 303675690,
+  "bounds": {
+    "95": 7092331276,
+    "96": 13290782912
+  },
+  "gains_over_base_commit": {
+    "95": 143360,
+    "96": 229376
+  },
+  "reproduction": "First reproduce historical search/receipt.json to obtain the 24631-support checkpoint, then run search/fill_correct.py with that input, seed 282132, 100000000 trials and neutral period 128. Search reproduction is not part of the proof replay.",
+  "scope": "Finite heuristic; both all-pair certificate checks and exact sign/section counts passed; no optimum or global priority claim."
+}

@@ -11,8 +11,8 @@ eight constructions. The latest update improves its 95D and 96D certificates.
 | 66 | **338,292,100** | shortened weight-16 support code and lower layers |
 | 67 | **351,400,326** | the same construction |
 | 68 | **371,521,432** | the same construction |
-| 95 | **7,092,187,916** | optimized central section of the enlarged 96D construction |
-| 96 | **13,290,553,536** | transversal supports plus a mixed-pair support code |
+| 95 | **7,092,331,276** | optimized central section of the enlarged 96D construction |
+| 96 | **13,290,782,912** | transversal supports plus a mixed-pair support code |
 
 These are constructive lower bounds. Cohn's reviewed October table stops at dimension
 48, so it provides no comparison in this range. Historical comparisons remain
@@ -49,7 +49,7 @@ shortenings of the [73,36,16] weight-16 shell, extended Hamming signs and
 affine weight-four support packings. Code distances bound all cross-support
 angles; sparse/dense cross bounds are checked exactly.
 
-In 96D, the current certificate supplies 24,631 additional weight-24 supports.
+In 96D, the current certificate supplies 24,645 additional weight-24 supports.
 It starts from doubled QR48 supports and permits different pairings in
 different four-cell rows, followed by neutral switches and additions. Each occupies at most twelve rows
 of the existing 24-by-4 transversal layout, proving the cross-intersection
@@ -105,8 +105,8 @@ not use an optimization score as a certificate.
 ## Mixed pairings in individual rows
 
 The continuation replaces the uniform-partition restriction by an explicit
-constant-weight support code. It has **24,631** supports, each of weight 24
-and occupying at most twelve rows. The verifier checks all **303,330,765**
+constant-weight support code. The first 28 October checkpoint had **24,631** supports, each of weight 24
+and occupying at most twelve rows. Its verifier checked all **303,330,765**
 distinct support pairs directly, with maximum intersection 12. It does not
 trust a search graph or an optimization score. The improvement over the
 preceding registered certificate (commit `a6ba338`) is **180,224** points in
@@ -126,22 +126,22 @@ zeros and ones; no approximate angle comparison is used.
 family using unsigned integer intersections and population counts, independently
 of the coordinate matrix products. It checks all 303,330,765 unordered pairs,
 weight 24, distinctness, at most twelve occupied rows and the exact section
-histogram `[6995,0,11427,0,5461,0,704,0,44]`. No approximate arithmetic is used.
+histogram `[6999,0,11435,0,5463,0,704,0,44]`. No approximate arithmetic is used.
 Its pinned receipt is `source/dim61_96/support_bits_verification.json`.
 Both `verify95_96.py` and `verify.py` replay both representations in a temporary
 copy and match the complete receipts (apart from elapsed time).
 
-The new support family has 17,296 ordinary doubled QR48 supports and 7,335
-compatible nonordinary supports. It contributes 403,554,304 points in 96D:
+The current support family has 17,296 ordinary doubled QR48 supports and 7,349
+compatible nonordinary supports. It contributes 403,783,680 points in 96D:
 
 ```text
-8,589,934,592 + 4,294,967,296 + 403,554,304 + 2,097,152 + 192
-    = 13,290,553,536.
+8,589,934,592 + 4,294,967,296 + 403,783,680 + 2,097,152 + 192
+    = 13,290,782,912.
 ```
 
 The central-section terms are
-`4,697,620,480 + 2,147,483,648 + 245,767,168 + 1,316,444 + 176
-= 7,092,187,916`. These are constructive lower bounds, without an optimality
+`4,697,620,480 + 2,147,483,648 + 245,910,528 + 1,316,444 + 176
+= 7,092,331,276`. These are constructive lower bounds, without an optimality
 claim. `UPDATE_PROVENANCE.json` records the research source, exact certificate
 hash and immediately preceding repository comparison.
 
@@ -185,8 +185,8 @@ python search/fill_correct.py --output /tmp/reproduced-supports.npz
 
 The default seed is 282029, with 100,000,000 trials and neutral-period 256.
 The continuation finds five free additions, eleven two-for-one trades and
-89 one-for-one moves, ending at 24,631 supports. Compare the resulting arrays
-with `source/dim61_96/mixed_pair_certificate.npz`; NPZ compression bytes may
+89 one-for-one moves, ending at 24,631 supports. This produces the preceding checkpoint, which is the input to the further
+continuation below; it is not the current certificate. NPZ compression bytes may
 vary between environments. `search/receipt.json` records an ordered text
 fingerprint and the search parameters. Searching requires C++17 and NumPy;
 verification requires only NumPy. The search is not an exhaustion proof.
@@ -195,3 +195,20 @@ verification requires only NumPy. The search is not an exhaustion proof.
 then checks that both replays reject a duplicated support, a weight-23
 support, and two supports with intersection 23. The recorded outcomes are
 in `search/negative_controls.json`.
+
+## Further support continuation, 28 October 2026
+
+Continuing the verified 24,631-support family gives **24,645** supports.
+Four free additions and ten two-for-one trades add fourteen supports, with
+147 neutral exchanges. The bounds are **7,092,331,276** in 95D and
+**13,290,782,912** in 96D, gains of **143,360** and **229,376** over commit
+9d38a38. The 95D section count is optimized without lowering either bound.
+
+Both complete verifiers checked all **303,675,690** distinct support pairs;
+one uses physical incidence coordinates, the other packed integer
+intersections. The sign-code distance enumeration and exact dense-code
+section replay also passed. `verify95_96.py` runs both in an isolated copy.
+`search/continuation_20261028.json` records the seed, input hash, search
+parameters and result hash. The preceding `search/receipt.json` remains
+historical; reproducing it supplies the starting checkpoint for this pass.
+Search is finite and does not establish an optimum.

@@ -116,7 +116,7 @@ earlier counts. `ers96.py` evaluates the chains:
 |---|---|---|---|---|---|---|
 | 93 | 6 294 850 360 | 2³¹ | 506 210 | 65 536 | 2.7e8 | 6 301 636 084 |
 | 94 | 6 355 739 600 | 2³¹ | 513 638 | 65 536 | 3.0e8 | 6 357 657 396 |
-| **95** | **6 473 065 046** | **2³²** | **265 816** | **65 536** | 4.0e8 | 7 092 187 916 |
+| **95** | **6 473 065 046** | **2³²** | **265 816** | **65 536** | 4.0e8 | 7 092 331 276 |
 
 So **dimension 95 is exposed**: a level-1 constant-weight code only 4.06× better than the
 grid map would overturn it, and for calibration ERS's own `A(64,16,16) = 30 828` beats the
@@ -171,7 +171,7 @@ chain, before the larger October central sections. The last column is current.
 | 60 | 57 477 123 | 33 554 432 = 2²⁵ | [60,25,15] | ×1.71 of margin | 57 894 253 |
 | 61 | 59 898 694 | 33 554 432 = 2²⁵ | [60,25,15] | ×1.79 | 71 310 488 |
 | 68 | 361 275 480 | 268 435 456 = 2²⁸ | [64,28,16] | ×1.35 | 371 521 432 |
-| 95 | 6 473 065 046 | 4 294 967 296 = 2³² | [95,32,24] | ×1.51 | 7 092 187 916 |
+| 95 | 6 473 065 046 | 4 294 967 296 = 2³² | [95,32,24] | ×1.51 | 7 092 331 276 |
 
 ⌈62/4⌉ = ⌈63/4⌉ = 16, and both codes are in the table, so **the sign vectors of [62,26,16]
 and [63,27,16] are kissing configurations in dimensions 62 and 63 already**. By the standard

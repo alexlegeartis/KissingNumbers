@@ -25,21 +25,21 @@
 | 70 | 1 249 778 250 | **this work** -- k-point moment LP on cross-sections of Gamma_72 |
 | 71 | 2 603 658 750 | **this work** -- k-point moment LP on cross-sections of Gamma_72 |
 | 72 | 6 218 175 600 | Cohn's table: Nebe 2012, J. Reine Angew. Math. 673, 237-247 (Gamma_72) |
-| 73 | 6 218 204 076 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D |
-| 74 | 6 218 211 606 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D |
-| 75 | 6 218 246 060 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D |
-| 76 | 6 218 315 288 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D |
-| 77 | 6 218 490 542 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D |
-| 78 | 6 218 688 770 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D |
-| 79 | 6 218 922 650 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D |
-| 80 | 6 219 474 300 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D |
-| 81 | 6 219 649 576 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D |
-| 82 | 6 220 001 536 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D |
-| 83 | 6 220 534 360 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D |
-| 84 | 6 221 557 196 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D |
-| 85 | 6 222 004 840 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D |
-| 86 | 6 225 165 512 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D |
-| 87 | 6 225 838 030 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
+| 73 | 6 218 206 932 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 74 | 6 218 211 606 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 75 | 6 218 246 060 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 76 | 6 218 315 288 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 77 | 6 218 490 542 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 78 | 6 218 688 770 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 79 | 6 218 922 650 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 80 | 6 219 474 300 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 81 | 6 219 649 576 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 82 | 6 220 170 666 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 83 | 6 221 008 658 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 84 | 6 222 025 404 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 85 | 6 223 222 688 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 86 | 6 225 165 512 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 87 | 6 226 194 610 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
 | 88 | 6 232 239 528 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
 | 89 | 6 235 525 036 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
 | 90 | 6 242 027 140 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
@@ -47,8 +47,8 @@
 | 92 | 6 272 431 575 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
 | 93 | 6 301 636 084 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
 | 94 | 6 357 657 396 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 95 | 7 092 187 916 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 96 | 13 290 553 536 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 95 | 7 092 331 276 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 96 | 13 290 782 912 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
 
 ## Retained dimension-96 comparisons
 

@@ -1,10 +1,10 @@
 {
   "status": "Verified: every physical support pair and exact sign/section counts",
-  "supports": 24631,
-  "previous_supports": 24613,
-  "additional_supports": 18,
-  "comparison": "Immediately preceding registered repository bounds (commit a6ba338)",
-  "support_pairs_checked": 303330765,
+  "supports": 24645,
+  "previous_supports": 24631,
+  "additional_supports": 14,
+  "comparison": "Immediately preceding registered repository bounds (commit 9d38a38)",
+  "support_pairs_checked": 303675690,
   "maximum_distinct_support_intersection": 12,
   "maximum_occupied_rows": 12,
   "section_coordinates": [
@@ -18,11 +18,11 @@
     7
   ],
   "section_intersection_histogram": [
-    6995,
+    6999,
     0,
-    11427,
+    11435,
     0,
-    5461,
+    5463,
     0,
     704,
     0,
@@ -41,32 +41,32 @@
   ],
   "dimensions": {
     "95": {
-      "bound": 7092187916,
-      "previous_bound": 7092007692,
-      "gain": 180224,
+      "bound": 7092331276,
+      "previous_bound": 7092187916,
+      "gain": 143360,
       "terms": {
         "dense_section": 4697620480,
         "transversal24_section": 2147483648,
-        "new_support24_section": 245767168,
+        "new_support24_section": 245910528,
         "support6_section": 1316444,
         "ordinary_poles": 176
       }
     },
     "96": {
-      "bound": 13290553536,
-      "previous_bound": 13290258624,
-      "gain": 294912,
+      "bound": 13290782912,
+      "previous_bound": 13290553536,
+      "gain": 229376,
       "terms": {
         "dense": 8589934592,
         "transversal24": 4294967296,
-        "new_support24": 403554304,
+        "new_support24": 403783680,
         "support6": 2097152,
         "poles": 192
       }
     }
   },
-  "certificate_sha256": "81ed499073d43d74706814c03342bf2a4309a7bb2d46b9bdaa220f0f54b3fe89",
-  "seconds": 0.42570007599999826,
+  "certificate_sha256": "f3c5a100ba1ac8d73e8f1fffd555d72c0d87e75f4bb9532aeab3b10c7f8f9cf5",
+  "seconds": 0.30662314599999263,
   "geometry": {
     "norm_squared": 96,
     "dense_min_distance": "min(4*6, 2*12, 24)=24 gives inner product at most 48",

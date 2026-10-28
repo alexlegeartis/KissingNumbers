@@ -1,0 +1,12 @@
+{
+  "status": "All coordinates checked in two exact arithmetics",
+  "base_commit": "9d38a38b93fcbbc88d48981f382464569189c3c8",
+  "method": "Integral Gamma72 automorphism images, exact mixed-layer filtering, two-for-one independent-set replacements and neutral exchanges. Only the final coordinate certificate is trusted by replay.",
+  "previous_oriented_heads": 6235,
+  "oriented_heads": 7663,
+  "bound": 6218206932,
+  "gain": 2856,
+  "certificate_sha256": "5198d258f88701e65d9b405f71a61a894fb1ebad0eb00a423439fcf771afec4d",
+  "products_checked_in_each_arithmetic": 120048558,
+  "scope": "Explicit replacement of the norm-ten layer; original equator, half-coset layers and cap surgery remain. Search pool and optimizer state are not proof inputs."
+}

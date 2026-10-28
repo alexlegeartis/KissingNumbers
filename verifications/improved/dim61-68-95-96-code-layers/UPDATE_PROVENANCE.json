@@ -317,5 +317,18 @@
       "source/dim61_96/verify_support_bits.py"
     ],
     "scope": "Replace the earlier mixed support family. Both 95D and 96D increase; no optimum or comprehensive priority claim. Manuscript remains deferred."
+  },
+  "further_supports_20261028": {
+    "base_commit": "9d38a38b93fcbbc88d48981f382464569189c3c8",
+    "dimensions": {
+      "95": 7092331276,
+      "96": 13290782912
+    },
+    "gains_over_base_commit": {
+      "95": 143360,
+      "96": 229376
+    },
+    "verification": "Complete physical-coordinate and packed-integer support checks, sign-code enumeration and exact dense section",
+    "receipt": "search/continuation_20261028.json"
   }
 }

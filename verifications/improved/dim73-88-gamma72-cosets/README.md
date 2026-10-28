@@ -1,8 +1,8 @@
 # Gamma72 norm-ten layers, cosets and repaired lifts
 
-**Retained construction and history for dimensions 87–88.** The compact symmetry
+**Retained construction and history for dimension 88.** The compact symmetry
 family in [the cap package](../dim73-95-gamma72-caps/) now gives stronger bounds
-there. This package still supplies the registered constructions in 73–86D.
+there. This package supplies the registered constructions in 73–87D.
 
 Checkpoint: **25 October 2026**. The supplied verified constructions improve
 dimensions **73–88**. The 88D construction independently passed all
@@ -186,3 +186,30 @@ and `source/norm10/weighted_norm10_certificate.json`.
 `source/norm10/verify_weighted_independent.py` independently reconstructs
 all tails and recomputes every neighborhood with integer square-root
 cutoffs, and checks the priority expectation on all four-vertex graphs.
+
+## Further 28 October progress: explicit 73D and signed tails
+
+The explicit 73D layer now has 7,663 oriented norm-ten heads and gives
+**6,218,206,932**, improving the preceding bound by **2,856**. Signed
+constant-weight tail orbits with exact combinatorial profiles also give
+**6,220,170,666** in 82D, **6,221,008,658** in 83D, **6,222,025,404** in 84D,
+**6,223,222,688** in 85D and **6,226,194,610** in 87D. Their gains over the
+preceding repository bounds are respectively 169,130, 474,298, 468,208,
+1,217,848 and 356,580. The 87D result supersedes the retained cap construction.
+
+`verify73.py` replays the enlarged explicit layer and its parents.
+`verify_norm10.py` checks all new proofs in an isolated copy. The files are:
+
+- `source/norm10/refilled_shell10.npz`, `source/norm10/refilled_shell10_verification.json`
+  and `source/norm10/refill_search.json`: coordinates, exact replay and search scope.
+- `source/norm10/verify_refilled_shell10.py`: all 120,048,558 head/head and mixed
+  products, checked in both int64 and provably exact binary32.
+- `source/norm10/signed_norm10_certificate.py` and
+  `source/norm10/signed_norm10_certificate.json`: finite-graph existence proofs
+  using complete signed tail orbits and integer priority rates.
+- `source/norm10/verify_signed_profiles.py`: an independent polynomial-profile
+  replay, including exact pure-root products and ranks.
+
+See [the complete geometric and counting proof](source/norm10/README.md#further-progress-in-73d-and-82--87d-28-october-2026).
+The signed-tail bounds retain the documented Gamma72/design inputs and do not
+enumerate selected head sets. No global priority or optimality claim is added.

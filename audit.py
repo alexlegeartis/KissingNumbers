@@ -2015,7 +2015,7 @@ if '--write-results' in sys.argv and not fail:
         'dim39-root-replacements': 'four neutral support substitutions and 64-for-56 root replacements over the ERS layers',
         'dim28-joint-leech-layers': 'joint selection of even Leech heads and auxiliary layers over Li\'s odd blocks; exact arithmetic replay',
         'dim64-65-signed-parity': '211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners',
-        'dim73-88-gamma72-cosets': 'Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed-tail weighted-priority existence bounds in 77-79D',
+        'dim73-88-gamma72-cosets': 'Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D',
         'dim38-leech-large-codimension': 'the Leech cap construction at codimension 14',
         'dim39-ers-constant-weight': 'Edel-Rains-Sloane with the 2026 constant-weight codes',
         'dim41-46-p48-heads': 'independently normalized P48n body families with rational '
@@ -2041,6 +2041,8 @@ if '--write-results' in sys.argv and not fail:
                % len(claims))
     out.append("")
     out.append("The 28 October Coxeter-Todd continuation gives 501672 in 36D (+39) and 505488 in 37D (+129), with two independent exact representations and reproducible phase trades.")
+    out.append("")
+    out.append("The further 28 October continuation gives 6,218,206,932 in 73D from 7,663 explicit norm-ten heads; signed-tail orbit proofs give 6,220,170,666 in 82D, 6,221,008,658 in 83D, 6,222,025,404 in 84D, 6,223,222,688 in 85D and 6,226,194,610 in 87D. A 24,645-support certificate gives 7,092,331,276 in 95D and 13,290,782,912 in 96D. The new explicit layer checks 120,048,558 products in two exact arithmetics, the signed profiles have an independent polynomial replay, and both support representations check all 303,675,690 pairs. The manuscript remains deferred.")
     out.append("")
     out.append("The 28 October mixed-tail weighted-priority continuation gives 6,218,490,542 in 77D, 6,218,688,770 in 78D and 6,218,922,650 in 79D, improving the preceding certificates by 25,526, 2,890 and 10,614 points. All 22,848,388 ordered tail products, joint tail/pole ranks and rational expectations are checked exactly. These are existence proofs under the stated Gamma72/design inputs; selected head sets are not enumerated. The manuscript retains its earlier snapshot.")
     out.append("")

@@ -50,10 +50,10 @@ not a new mathematical verification. All commands require assertions enabled.
 | 64–65 | Fresh sign-code enumeration, support intersections and parity repairs | Parent code inputs stated in the package |
 | 66–68 | Layer geometry and counts in quick mode | `--sota` also enumerates all 68,719,476,736 words of the [73,36,16] code; quick mode reads its recorded distance certificate |
 | 69–71 | Exact moment/LP certificates and exhibited section Grams | Published Gamma72 minimum and design theorem |
-| 73 | Completed lattice certificate, int64 cap surgery, 6235 norm-ten additions and non-lattice witness (`verify73.py`) | Published Gamma72 parent facts; `verify73.py --rebuild` regenerates the block enumerations |
-| 77–79 | Exact theta coefficients, shell moments, mixed-tail ranks/products and rational weighted-priority bound (`verify_norm10.py`, or fast `verify_weighted_norm10.py`) | Published Gamma72 minimum and Venkov all-shell 11-design theorem; existence proof without a full selected head list |
-| 74–76, 80–86 | Nearest-subset checks, integral isometries, tail ranks and all retained cross-head inequalities | Deferred in quick mode; about an hour for the full replay. The 21 completed block lists and completion metadata are inputs; the original enumerations are not rerun |
-| 87–94 | Complete CPU replay of the compact class certificate, direction partitions, axis geometry and counts | Published Gamma72 minimum and shell size |
+| 73 | Completed lattice certificate, int64 cap surgery, 7663 norm-ten heads in two exact arithmetics and non-lattice witness (`verify73.py`) | Published Gamma72 parent facts; `verify73.py --rebuild` regenerates the block enumerations |
+| 77–79, 82–85, 87 | Exact theta coefficients, shell moments, mixed-tail ranks/products and rational weighted-priority bound (`verify_norm10.py`; `verify_weighted_norm10.py` covers only 77–79D) | Published Gamma72 minimum and Venkov all-shell 11-design theorem; existence proof without a full selected head list |
+| 74–76, 80–81, 86 | Nearest-subset checks, integral isometries, tail ranks and all retained cross-head inequalities | Deferred in quick mode; about an hour for the full replay. The 21 completed block lists and completion metadata are inputs; the original enumerations are not rerun |
+| 88–94 | Complete CPU replay of the compact class certificate, direction partitions, axis geometry and counts | Published Gamma72 minimum and shell size |
 
 The SOTA profile is validated against both README.md and RESULTS.md. A new SOTA
 dimension or changed package without a matching verification route causes an
@@ -112,13 +112,13 @@ successful replay when the measured inputs and environment are unchanged.
 
 ## Mixed-pair support continuation in 95--96D
 
-The code-layer package now checks all 303,330,765 pairs of its 24,631
+The code-layer package now checks all 303,675,690 pairs of its 24,645
 physical supports. `python verifications/improved/dim61-68-95-96-code-layers/verify95_96.py`
 replays this certificate in isolation, including sign distances and the
 95D central section. It also checks every pair independently using packed
 integer masks and matches both fresh receipts to the pinned certificate.
-The current bounds are 13,290,553,536 in 96D (+294,912 over the preceding
-repository value) and 7,092,187,916 in 95D (+180,224). The default package
+The current bounds are 13,290,782,912 in 96D (+229,376 over the preceding
+repository value) and 7,092,331,276 in 95D (+143,360). The default package
 verifier includes both replays.
 
 ## Norm-ten continuation in 73D and 77--79D
@@ -134,3 +134,18 @@ replays the new certificates alone, including all 22,848,388 ordered products.
 They do not enumerate the selected full-shell head sets. The 73D parent
 certificates are replayed as part of this command.
 
+
+## Further 28 October 73–96D certificates
+
+`verify_norm10.py` in the Gamma72 coset package now checks the 7,663-head
+explicit 73D layer in int64 and provably exact binary32 (120,048,558
+products per representation), and the signed-orbit existence proofs in
+82–85D and 87D. `signed_norm10_certificate.py` derives complete orbit
+profiles combinatorially; `verify_signed_profiles.py` re-derives them from
+polynomial coefficients and checks all pure-root products and ranks.
+The latter proofs retain the published Gamma72/all-shell design inputs
+and do not enumerate selected norm-ten heads.
+
+`verify95_96.py` checks the new 24,645-support family: all 303,675,690
+support pairs in physical coordinates and again in packed integer form,
+plus the exact sign and section counts.

@@ -39,10 +39,10 @@ file, and the history of the lower bound in its dimensions.
 | [`dim62-63-ers-chain`](improved/dim62-63-ers-chain/) | 62, 63 | retained chain, superseded by the October central sections |
 | [`dim68-69-gamma72-cross-sections`](improved/dim68-69-gamma72-cross-sections/) | 68, 69 | current in 69D; the retained 68D section is superseded by October code layers |
 | [`dim70-71-gamma72-cross-sections`](improved/dim70-71-gamma72-cross-sections/) | 70, 71 | apparently new — **the claim most in need of a literature check** |
-| [`dim73-95-gamma72-caps`](improved/dim73-95-gamma72-caps/) | 73–95 | current in 89–94D; other cap counts are retained history |
+| [`dim73-95-gamma72-caps`](improved/dim73-95-gamma72-caps/) | 73–95 | current in 88–94D; other cap counts are retained history |
 | [`dim61-68-95-96-code-layers`](improved/dim61-68-95-96-code-layers/) | 61–63, 66–68, 95–96 | exact code compression, layers and central sections |
 | [`dim64-65-signed-parity`](improved/dim64-65-signed-parity/) | 64-65 | signed support augmentation and BCH owner caps |
-| [`dim73-88-gamma72-cosets`](improved/dim73-88-gamma72-cosets/) | 73–88 | certified nearest subsets and repaired group images |
+| [`dim73-88-gamma72-cosets`](improved/dim73-88-gamma72-cosets/) | 73–88 | nearest subsets, explicit 73D refills and exact mixed/signed-tail existence proofs |
 
 **All current claims are in this tier.** The older 96D ERS evaluation remains
 in [`closed/`](closed/) as a retained construction; the October doubled-support

@@ -11,14 +11,20 @@ check_manifest(ROOT)
 with temporary_source(ROOT) as source:
     replay(source,'dim73_surgery/verify_surgery.py')
     replay(source,'norm10/verify_shell10.py')
+    replay(source,'norm10/verify_refilled_shell10.py','--check')
     replay(source,'norm10/norm10_bound_certificate.py')
     replay(source,'norm10/weighted_norm10_certificate.py')
     replay(source,'norm10/verify_weighted_independent.py')
-    explicit=json.loads((source/'norm10/shell10_verification.json').read_text())
+    replay(source,'norm10/signed_norm10_certificate.py','--check')
+    replay(source,'norm10/verify_signed_profiles.py')
+    explicit=json.loads((source/'norm10/refilled_shell10_verification.json').read_text())
     whole=json.loads((source/'norm10/norm10_bound_certificate.json').read_text())
     fresh={73:explicit['bound']}|{int(d):r['bound'] for d,r in whole['dimensions'].items()}
     weighted=json.loads((source/'norm10/weighted_norm10_certificate.json').read_text())
     for dim,row in weighted['dimensions'].items():
+        fresh[int(dim)]=max(fresh.get(int(dim),0),row['bound'])
+    signed=json.loads((source/'norm10/signed_norm10_certificate.json').read_text())
+    for dim,row in signed['dimensions'].items():
         fresh[int(dim)]=max(fresh.get(int(dim),0),row['bound'])
     expected={r['dimension']:r['total'] for r in results() if r['dimension'] in fresh}
     assert fresh==expected
