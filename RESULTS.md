@@ -176,7 +176,8 @@ typed by hand. Sources:
 | 64 | Edel-Rains-Sloane 1998: 331 737 984 |
 | 65-67 | direct sum of ERS64 and the 1D/2D/3D lattice: 331 737 984 + 2/6/12 |
 | 68-71 | 331 737 984, inherited by monotonicity from dimension 64 (Edel-Rains-Sloane 1998). No table has any entry for 65-71. |
-| 73-95 | 6 218 175 600 + tau(k): the direct sum Gamma_72 (+) best k-dimensional lattice. |
+| 73-91 | 6 218 175 600 + tau(k): the direct sum Gamma_72 (+) best k-dimensional lattice. |
+| 92-96 | 2^(d-59): shortenings of the nonlinear (96,2^37,24) code of Duursma-Greferath-Litsyn-Schmidt (2001), embedded by binary signs. DOI 10.1109/18.923742. |
 
 ## Not claimed, and why
 
@@ -194,5 +195,5 @@ typed by hand. Sources:
 
 Dimensions 25 to 31 left this table on 2026-09-15, when dimension 28 became the last of them to be claimed. The cap model still reproduces Cohn's table *exactly* in 26, 28, 29, 30 and 31 --- that is what `verifications/improved/dim73-95-gamma72-caps/scripts/calibrate.py` checks --- and in each of those five a layer now beats the template that calibration validates.
 
-**An exposure, at dimensions 93-95.** These three ARE claimed, above; this is about how much room they have. Every Edel-Rains-Sloane input is a construction, so its totals are LOWER bounds: one above Gamma_72 settles a dimension, one below it settles nothing. At 93-95 the chain reaches only 2.68e9, 2.68e9 and 4.83e9, which proves nothing by being small, so the package reports the threshold instead. Dimension 95 stands as long as A(95,23,23) < 342 534, against 65 536 from the best construction in hand, on the chain (95, 23, 4, 1). `verifications/closed/dim96-ers-takeover/`
+**Prior-code comparison in dimensions 92-96.** The published nonlinear parent corrects the earlier linear-code-only comparison. In 96D, the standard Edel-Rains-Sloane chain with that parent and the shipped classical auxiliary codes gives 2^37 + 2^32 + 2^21 + 192 = 141 736 018 112. The current construction exceeds that derived baseline by 426 344 448 points. This is a construction-based LOWER bound, not an upper bound on what other inputs could achieve or a published tabulated kissing number. Provenance and both arithmetic replays are in `verifications/improved/dim88-96-z8-golay/`.
 

@@ -567,26 +567,6 @@ except Exception as _e:                          # pragma: no cover - reported, 
     bad("cannot import ers_exposure.best_chain (%s); the ERS floor is NOT being checked" % _e)
 
 
-def _d95_threshold():
-    """The dimension-95 exposure, DERIVED, for the '96 and above' row of RESULTS.md.
-
-    This used to be three transcribed numbers in the row text, and they went stale twice in
-    one night: once when the class family moved the claim, and once more because ers96.py was
-    deriving its own copy from a hardcoded CLAIMED dict.  The threshold depends on the claim,
-    so anything that moves a claim moves it too.  Note it is a fact about ONE CHAIN through
-    the dimension, not about the dimension -- a bare "A(95,23,23) < N" reads as the latter --
-    so the chain is named in the text.
-    """
-    from ers_exposure import ranked               # noqa: E402
-    row = next((r for r in ranked() if r[0] == 95), None)
-    assert row is not None, "dimension 95 is not in the ERS ranking"
-    _n, _c, _v, ch, w1, have, need, _ratio, _why, _isers = row
-
-    def sp(v):
-        return "{:,}".format(int(v)).replace(",", " ")
-
-    return ("A(%d,%d,%d) < %s" % (_n, w1, w1, sp(need)), sp(have),
-            "(%s)" % ", ".join(str(x) for x in ch))
 if best_chain is not None:
     beaten, at_floor = [], []
     for d, v, pkg, how in claims:
@@ -2141,8 +2121,11 @@ if '--write-results' in sys.argv and not fail:
     out.append("| 65-67 | direct sum of ERS64 and the 1D/2D/3D lattice: 331 737 984 + 2/6/12 |")
     out.append("| 68-71 | 331 737 984, inherited by monotonicity from dimension 64 "
                "(Edel-Rains-Sloane 1998). No table has any entry for 65-71. |")
-    out.append("| 73-95 | 6 218 175 600 + tau(k): the direct sum Gamma_72 (+) best "
+    out.append("| 73-91 | 6 218 175 600 + tau(k): the direct sum Gamma_72 (+) best "
                "k-dimensional lattice. |")
+    out.append("| 92-96 | 2^(d-59): shortenings of the nonlinear (96,2^37,24) code "
+               "of Duursma-Greferath-Litsyn-Schmidt (2001), embedded by binary signs. "
+               "DOI 10.1109/18.923742. |")
     out.append("")
     out.append("## Not claimed, and why")
     out.append("")
@@ -2180,14 +2163,21 @@ if '--write-results' in sys.argv and not fail:
                "the Golay code and checked pair by pair.  The one component not at a proved "
                "ceiling is the tier size, in [512, 533]. "
                "`verifications/closed/dim17-24-layer-identity/` |")
-    _EXPOSURE_NOTE = (
-        "**An exposure, at dimensions 93-95.** These three ARE claimed, above; this is "
-        "about how much room they have. Every Edel-Rains-Sloane input is a construction, "
-        "so its totals are LOWER bounds: one above Gamma_72 settles a dimension, one below "
-        "it settles nothing. At 93-95 the chain reaches only 2.68e9, 2.68e9 and 4.83e9, "
-        "which proves nothing by being small, so the package reports the threshold instead. "
-        "Dimension 95 stands as long as %s, against %s from the best construction in hand, "
-        "on the chain %s. `verifications/closed/dim96-ers-takeover/`" % _d95_threshold())
+    # Derive this comparison from the current claims, never from the RESULTS.md that
+    # this function is about to replace.  The previous exposure note used ranked(),
+    # which read the old file and made regeneration depend on its prior contents.
+    _chain96 = (1 << 37) + (1 << 32) + (1 << 21) + 192
+    _claim96 = dict((d, v) for d, v, _, _ in claims)[96]
+    _COMPARISON_NOTE = (
+        "**Prior-code comparison in dimensions 92-96.** The published nonlinear parent "
+        "corrects the earlier linear-code-only comparison. In 96D, the standard "
+        "Edel-Rains-Sloane chain with that parent and the shipped classical auxiliary "
+        "codes gives 2^37 + 2^32 + 2^21 + 192 = %s. The current construction exceeds "
+        "that derived baseline by %s points. This is a construction-based LOWER bound, "
+        "not an upper bound on what other inputs could achieve or a published tabulated "
+        "kissing number. Provenance and both arithmetic replays are in "
+        "`verifications/improved/dim88-96-z8-golay/`."
+        % (gr(_chain96), gr(_claim96 - _chain96)))
     out.append("| 22, 23 | Lambda_22 and Lambda_23 are maximal spherical codes, and Leech "
                "level sets cap at exactly 93150. "
                "`verifications/closed/dim22-23-maximal-cross-sections/` |")
@@ -2201,7 +2191,7 @@ if '--write-results' in sys.argv and not fail:
                "and in each of those five a layer now beats the template that calibration "
                "validates.")
     out.append("")
-    out.append(_EXPOSURE_NOTE)
+    out.append(_COMPARISON_NOTE)
     out.append("")
     # No dimension in the table above may be one this repository CLAIMS.  It listed 64-69
     # while claiming 68 and 69, and briefly listed 93-95 while claiming all three, because
