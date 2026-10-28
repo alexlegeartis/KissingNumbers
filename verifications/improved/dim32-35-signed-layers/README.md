@@ -1,21 +1,37 @@
 # Signed octad layers and coordinated heads in dimensions 32–35
 
-Checkpoint: **26 October 2026**. All four lower bounds have two independent
+Checkpoint: **28 October 2026**. All four lower bounds have two independent
 exact verification routes.
 
 | Dimension | Previous reviewed bound | This construction | Added points | Previous method |
 |---|---:|---:|---:|---|
 | 32 | 352,320 | **352,800** | **480** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-number-32) |
-| 33 | 370,240 | **370,368** | **128** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
-| 34 | 390,980 | **390,982** | **2** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
-| 35 | 415,308 | **415,314** | **6** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
+| 33 | 370,240 | **370,376** | **136** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
+| 34 | 390,980 | **390,990** | **10** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
+| 35 | 415,308 | **415,334** | **26** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
 
 The preceding constructions use 1,713, 1,852, 2,013 and 2,202 supports from
 [Brouwer's table](https://aeb.win.tue.nl/codes/Andw.html), reviewed on 26 October.
 Their counts are 131,072 + 128 M + 2n(n−1). This is the gain over those public
 witnesses. A complete new retrieval of Cohn's table was unavailable.
 
-## Construction and proof
+## Shared root deletions: 28 October continuation
+
+The current bounds improve the preceding repository certificates by **8, 8
+and 20 points** in 33D, 34D and 35D. Four, four and eight complete root-star
+families add 64, 64 and 128 points while removing 56, 56 and 108 roots.
+All preceding dense, middle and head points are retained. Shared deleted
+root pairs make these trades profitable. The [root-star proof](root_trades/README.md)
+states the exact coordinate rules and both independent verification routes.
+
+`root_trades/verify.py` proves the sign maxima symbolically;
+`root_trades/verify_coordinates.py` independently expands and checks every
+new/base product. `root_trades/negative_controls.py` rejects duplicates,
+undeleted roots and false counts in both routes. `root_trades/search.py`
+and `root_trades/enumerate_stars.cpp` are optional discovery tools; no solver
+is used by the proof. The complete manifest covers every new file.
+
+## Retained 26 October construction and proof
 
 In 32D, 1,704 complete even-sign octad layers and 816 exceptional antipodal
 lines replace a small part of the support packing. In 33D there are 1,848

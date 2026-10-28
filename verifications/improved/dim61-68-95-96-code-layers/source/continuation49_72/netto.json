@@ -1,0 +1,56 @@
+{
+  "status": "Verified: complete PSL(2,67) orbit, every triple and independent coordinate intersections",
+  "design": {
+    "points": 68,
+    "blocks": 12529,
+    "triples": 50116,
+    "seed": [
+      67,
+      0,
+      1,
+      30
+    ]
+  },
+  "dimensions": {
+    "66": {
+      "terms": {
+        "dense64": 268435456,
+        "weight16": 69689344,
+        "weight4": 177408,
+        "poles": 132
+      },
+      "total": 338302340,
+      "previous_bound": 338292100,
+      "gain": 10240,
+      "support4_count": 11088,
+      "fixed_support_size_packing_bound": 11434
+    },
+    "67": {
+      "terms": {
+        "dense64": 268435456,
+        "weight16": 82796544,
+        "weight4": 188672,
+        "poles": 134
+      },
+      "total": 351420806,
+      "previous_bound": 351400326,
+      "gain": 20480,
+      "support4_count": 11792,
+      "fixed_support_size_packing_bound": 11792
+    },
+    "68": {
+      "terms": {
+        "dense64": 268435456,
+        "weight16": 102916096,
+        "weight4": 200464,
+        "poles": 136
+      },
+      "total": 371552152,
+      "previous_bound": 371521432,
+      "gain": 30720,
+      "support4_count": 12529,
+      "fixed_support_size_packing_bound": 12529
+    }
+  },
+  "input_scope": "Dense and weight-16 layers and their code-distance proof are unchanged; all new weight-four supports are constructed and checked here."
+}

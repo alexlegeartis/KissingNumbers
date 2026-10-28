@@ -1,54 +1,54 @@
 | n | tau(n) >= | source |
 |---|---|---|
 | 48 | 52 416 000 | Cohn's table: Leech-Sloane 1971 (P_48) |
-| 49 | 52 430 776 | **this work** -- the cap construction over P_48, with explicit classes |
-| 50 | 52 460 322 | **this work** -- the cap construction over P_48, with explicit classes |
-| 51 | 52 504 618 | **this work** -- the cap construction over P_48, with explicit classes |
-| 52 | 52 593 106 | **this work** -- the cap construction over P_48, with explicit classes |
-| 53 | 52 710 864 | **this work** -- the cap construction over P_48, with explicit classes |
-| 54 | 52 945 570 | **this work** -- the cap construction over P_48, with explicit classes |
-| 55 | 53 339 086 | **this work** -- the cap construction over P_48, with explicit classes |
-| 56 | 54 159 098 | **this work** -- the cap construction over P_48, with explicit classes |
-| 57 | 54 627 038 | **this work** -- the cap construction over P_48, with explicit classes |
-| 58 | 56 043 152 | **this work** -- the cap construction over P_48, with explicit classes |
-| 59 | 56 680 448 | **this work** -- the cap construction over P_48, with explicit classes |
-| 60 | 57 690 671 | **this work** -- the cap construction over P_48, with explicit classes |
-| 61 | 71 310 488 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 62 | 100 371 468 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 63 | 182 407 428 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 64 | 332 170 112 | **this work** -- 211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners |
-| 65 | 332 238 338 | **this work** -- 211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners |
-| 66 | 338 292 100 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 67 | 351 400 326 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 68 | 371 521 432 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 49 | 52 431 568 | **this work** -- the cap construction over P_48, with explicit classes |
+| 50 | 52 462 704 | **this work** -- the cap construction over P_48, with explicit classes |
+| 51 | 52 509 404 | **this work** -- the cap construction over P_48, with explicit classes |
+| 52 | 52 602 708 | **this work** -- the cap construction over P_48, with explicit classes |
+| 53 | 52 726 898 | **this work** -- the cap construction over P_48, with explicit classes |
+| 54 | 52 974 438 | **this work** -- the cap construction over P_48, with explicit classes |
+| 55 | 53 389 476 | **this work** -- the cap construction over P_48, with explicit classes |
+| 56 | 54 253 958 | **this work** -- the cap construction over P_48, with explicit classes |
+| 57 | 54 747 156 | **this work** -- the cap construction over P_48, with explicit classes |
+| 58 | 56 237 690 | **this work** -- the cap construction over P_48, with explicit classes |
+| 59 | 56 907 532 | **this work** -- the cap construction over P_48, with explicit classes |
+| 60 | 57 968 343 | **this work** -- the cap construction over P_48, with explicit classes |
+| 61 | 88 260 394 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
+| 62 | 121 824 268 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
+| 63 | 184 286 468 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
+| 64 | 335 496 064 | **this work** -- 1,835 added Hamming sign blocks with reusable parity-check spaces; 65D caps replace 68,224 BCH and affine-line owners |
+| 65 | 335 564 290 | **this work** -- 1,835 added Hamming sign blocks with reusable parity-check spaces; 65D caps replace 68,224 BCH and affine-line owners |
+| 66 | 341 994 884 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
+| 67 | 355 090 822 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
+| 68 | 375 222 168 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
 | 69 | 627 822 180 | **this work** -- k-point moment LP with the Gram exhibited in Gamma_72 |
 | 70 | 1 249 778 250 | **this work** -- k-point moment LP on cross-sections of Gamma_72 |
 | 71 | 2 603 658 750 | **this work** -- k-point moment LP on cross-sections of Gamma_72 |
 | 72 | 6 218 175 600 | Cohn's table: Nebe 2012, J. Reine Angew. Math. 673, 237-247 (Gamma_72) |
-| 73 | 6 218 204 076 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D |
-| 74 | 6 218 211 606 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D |
-| 75 | 6 218 246 060 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D |
-| 76 | 6 218 315 288 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D |
-| 77 | 6 218 465 016 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D |
-| 78 | 6 218 685 880 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D |
-| 79 | 6 218 912 036 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D |
-| 80 | 6 219 474 300 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D |
-| 81 | 6 219 649 576 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D |
-| 82 | 6 220 001 536 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D |
-| 83 | 6 220 534 360 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D |
-| 84 | 6 221 557 196 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D |
-| 85 | 6 222 004 840 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D |
-| 86 | 6 225 165 512 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D |
-| 87 | 6 225 838 030 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 88 | 6 232 239 528 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 89 | 6 235 525 036 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 90 | 6 242 027 140 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 91 | 6 252 202 550 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 92 | 6 272 431 575 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 93 | 6 301 636 084 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 94 | 6 357 657 396 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 95 | 7 092 007 692 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 96 | 13 290 258 624 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 73 | 6 218 206 932 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 74 | 6 218 211 606 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 75 | 6 218 246 060 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 76 | 6 218 315 288 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 77 | 6 218 490 542 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 78 | 6 218 688 770 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 79 | 6 218 922 650 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 80 | 6 219 474 300 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 81 | 6 219 649 576 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 82 | 6 220 170 666 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 83 | 6 221 008 658 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 84 | 6 222 025 404 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 85 | 6 223 222 688 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 86 | 6 225 165 512 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 87 | 6 226 194 610 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
+| 88 | 6 921 251 584 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 89 | 9 229 354 136 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 90 | 12 306 670 328 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 91 | 16 409 599 116 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 92 | 21 880 490 288 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 93 | 31 040 958 640 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 94 | 47 697 508 076 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 95 | 77 565 848 332 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 96 | 142 162 362 560 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
 
 ## Retained dimension-96 comparisons
 

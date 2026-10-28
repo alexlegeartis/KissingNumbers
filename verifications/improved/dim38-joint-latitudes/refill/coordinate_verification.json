@@ -1,0 +1,12 @@
+{
+  "all_checks_passed": true,
+  "dimension": 38,
+  "lower_bound": 611522,
+  "retained_caps": 589560,
+  "removed_caps": 120,
+  "latitude_points": 6656,
+  "latitude_pairs": 22147840,
+  "max_latitude_inner_product_numerator": 64,
+  "certificate_sha256": "c2e7c0e663bfe0874cb385471ff77ee88cf7c315e115595493d520790f9ed232",
+  "arithmetic": "Exact int32 products, int64 lattice congruences; no tolerances"
+}

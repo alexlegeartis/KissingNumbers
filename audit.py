@@ -102,6 +102,7 @@ Nothing here needs anything outside this directory.  Where a check is about the 
 working folder -- the root README, the paper's PDF -- it says so and stands down in a clone.
 """
 import fnmatch
+import json
 import importlib.util
 import io
 import hashlib, os
@@ -200,9 +201,13 @@ ROOTPARTS = {1: (0, 1), 2: (2, 0), 3: (4, 0), 4: (8, 0), 5: (12, 2), 6: (24, 0),
 S48 = np.sort(np.load(os.path.join(
     IMP, 'dim49-63-p48-caps', 'data', 'class_sizes_p48.npy')).ravel())[::-1].astype(np.int64)
 c48 = np.concatenate([[0], np.cumsum(S48)])
-with np.load(os.path.join(IMP, 'dim49-63-p48-caps', 'october', 'family_55_61.npz')) as _z48:
-    _new48 = np.sort(_z48['sizes'])[::-1]
-_newc48 = np.concatenate([[0], np.cumsum(_new48)])
+_explicit48 = []
+for _name48 in ('family_55_61.npz', 'family_refilled.npz'):
+    with np.load(os.path.join(IMP, 'dim49-63-p48-caps', 'october', _name48),
+                 allow_pickle=False) as _z48:
+        _sizes48 = np.sort(_z48['sizes'])[::-1]
+        _explicit48.append((_name48, len(_z48['base']), _sizes48,
+                            np.concatenate([[0], np.cumsum(_sizes48)])))
 for k in range(1, 16):
     lam = LAMBDA[k]
     if lam > len(S48):
@@ -211,10 +216,12 @@ for k in range(1, 16):
     Sk = int(c48[lam])
     add(48 + k, 52416000 + 2 * Sk + TAU[k], 'dim49-63-p48-caps',
         'historical 1400-class family, lambda(%d) = %d, S = %d' % (k, lam, Sk))
-    if lam <= len(_new48):
-        _newsum = int(_newc48[lam])
-        add(48 + k, 52416000 + 2 * _newsum + TAU[k], 'dim49-63-p48-caps',
-            '577 explicit isometric images of a 7387-line class; lambda(%d) = %d, S = %d; verify_october.py' % (k, lam, _newsum))
+    for _name48, _base48, _sizes48, _prefix48 in _explicit48:
+        if lam <= len(_sizes48):
+            _newsum = int(_prefix48[lam])
+            add(48 + k, 52416000 + 2 * _newsum + TAU[k], 'dim49-63-p48-caps',
+                '%s: %d explicit images of a %d-line class; lambda(%d) = %d, S = %d; verify_october.py' %
+                (_name48, len(_sizes48), _base48, k, lam, _newsum))
 
 Z = np.load(os.path.join(IMP, 'dim73-95-gamma72-caps', 'data', 'disjoint_classes.npz'))
 S72 = np.sort(np.array([len(Z[k]) for k in Z.files], dtype=np.int64))[::-1]
@@ -345,6 +352,16 @@ _cos_spec = importlib.util.spec_from_file_location(
     'coxeter_todd_final', os.path.join(IMP, COS_PACKAGE, 'final.py'))
 _cos_driver = importlib.util.module_from_spec(_cos_spec)
 _cos_spec.loader.exec_module(_cos_driver)
+# Preserve the preceding exact phase witness as registered history.
+with open(os.path.join(IMP, COS_PACKAGE, 'phase/certificate.json')) as _old_stream:
+    import json as _cos_json
+    _old_phase = _cos_json.load(_old_stream)
+_old36 = 403704 + 3*len(_old_phase['phase_orbits'])
+_old37 = _old36 + 18*len(_old_phase['lift_body_cosets'])
+assert (_old36, _old37) == (_old_phase['points_36'], _old_phase['points_37'])
+for _d, _v in ((36, _old36), (37, _old37)):
+    add(_d, _v, COS_PACKAGE, 'phase/verify.py (retained earlier exact phase witness)')
+
 for _record in _cos_driver.results():
     add(_record['dimension'], _record['total'], COS_PACKAGE,
         'verify.py (exact short-shell enumeration and phase-orbit angles; '
@@ -393,7 +410,15 @@ add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover'
 
 # October code and nearest-coset constructions supersede earlier packages;
 # add() preserves every displaced claim in SUPERSEDED for the history audit.
-for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions', 'dim31-normal-module-exchange', 'dim27-quadratic-normal-module', 'dim26-30-asymmetric-exchanges'):
+for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions', 'dim88-96-z8-golay', 'dim26-30-asymmetric-exchanges', 'dim27-quadratic-normal-module', 'dim31-normal-module-exchange'):
+    if _package == 'dim32-35-signed-layers':
+        for _dimension, _family in ((33, 'classic'), (34, 'classic'), (35, 'multi35')):
+            with io.open(os.path.join(IMP, _package, 'source', _family,
+                                     'certificate%d.json' % _dimension), encoding='utf-8') as _old_stream:
+                _old_total = json.load(_old_stream)['points']
+            add(_dimension, _old_total, _package, 'source/%s/verify.py: retained historical certificate' % _family)
+    if _package == 'dim38-joint-latitudes':
+        add(38, 610394, _package, 'source/verify.py: retained historical joint-latitude certificate')
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -542,26 +567,6 @@ except Exception as _e:                          # pragma: no cover - reported, 
     bad("cannot import ers_exposure.best_chain (%s); the ERS floor is NOT being checked" % _e)
 
 
-def _d95_threshold():
-    """The dimension-95 exposure, DERIVED, for the '96 and above' row of RESULTS.md.
-
-    This used to be three transcribed numbers in the row text, and they went stale twice in
-    one night: once when the class family moved the claim, and once more because ers96.py was
-    deriving its own copy from a hardcoded CLAIMED dict.  The threshold depends on the claim,
-    so anything that moves a claim moves it too.  Note it is a fact about ONE CHAIN through
-    the dimension, not about the dimension -- a bare "A(95,23,23) < N" reads as the latter --
-    so the chain is named in the text.
-    """
-    from ers_exposure import ranked               # noqa: E402
-    row = next((r for r in ranked() if r[0] == 95), None)
-    assert row is not None, "dimension 95 is not in the ERS ranking"
-    _n, _c, _v, ch, w1, have, need, _ratio, _why, _isers = row
-
-    def sp(v):
-        return "{:,}".format(int(v)).replace(",", " ")
-
-    return ("A(%d,%d,%d) < %s" % (_n, w1, w1, sp(need)), sp(have),
-            "(%s)" % ", ".join(str(x) for x in ch))
 if best_chain is not None:
     beaten, at_floor = [], []
     for d, v, pkg, how in claims:
@@ -1983,26 +1988,27 @@ if '--write-results' in sys.argv and not fail:
                              '(ceilings.py 31).  Supersedes the height-sqrt3 '
                              'layer, now in verifications/superseded/dim31-sqrt3-layer/',
         'dim36-37-coxeter-todd': 'three Coxeter-Todd quotient codes with exact shell '
-                                  'enumeration and phase-orbit angles checked; '
-                                  '37D adds two latitude layers',
-        'dim61-68-95-96-code-layers': 'explicit binary compression, central sections and enlarged support layers; exact code and geometry replay',
-        'dim26-31-residual-completions': 'shared midpoint replacements, axiswise residual heads and exact exceptional pure tails; independent full-coordinate proof',
+                                  'enumeration, phase refill and independent coordinate angles checked; '
+                                  '37D adds partial latitude orbits',
+        'dim88-96-z8-golay': 'published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays',
+        'dim61-68-95-96-code-layers': 'shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay',
         'dim26-30-asymmetric-exchanges': 'signed-point normal-sector exchanges without antipodal constraints; full independent exact all-pairs replay',
         'dim27-quadratic-normal-module': '384-point quadratic E8/cuboctahedral module replacing a 370-point normal sector; complete independent exact all-pairs verification',
         'dim31-normal-module-exchange': 'signed simplex module exchanged into PackingStar coordinates by exact bipartite matching; complete independent all-pairs verification',
+        'dim26-31-residual-completions': 'shared midpoint replacements, axiswise residual heads and exact exceptional pure tails; independent full-coordinate proof',
         'dim26-27-midpoint-replacements': 'shared midpoint replacements on orthogonal tail directions; exact Leech membership, midpoint identities and all inserted-pair products',
         'dim29-30-midpoint-replacements': 'shared Leech midpoint replacements with D5/D6 inserted tails and pure D5/E6 roots; exact coordinate replay',
-        'dim32-35-signed-layers': 'signed octad replacements in 32-33D, a four-head dense-coset extension in 34D, and parity-coordinated twelve-head root replacement in 35D; two independent exact proofs',
+        'dim32-35-signed-layers': 'signed octad layers, coordinated heads and shared root-star deletions; two independent exact proofs',
         'dim25-collective-deformation': 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons',
         'dim31-dual-centres': 'shared midpoint replacements and dual E7 centres; exact coordinate replay',
-        'dim38-joint-latitudes': '1352 joint latitude families, signed axis rotation and coordinate axes; exact integer replay',
+        'dim38-joint-latitudes': 'Fano-grid and cube-edge latitudes with shared cap deletions; two independent exact proofs',
         'dim39-deformed-orbits': 'rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration',
         'dim40-affine-shells': 'three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products',
         'dim38-latitude-extension': '24 additional latitude points and an exact rational axis rotation over the Leech caps and Lin equator',
         'dim39-root-replacements': 'four neutral support substitutions and 64-for-56 root replacements over the ERS layers',
         'dim28-joint-leech-layers': 'joint selection of even Leech heads and auxiliary layers over Li\'s odd blocks; exact arithmetic replay',
-        'dim64-65-signed-parity': '211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners',
-        'dim73-88-gamma72-cosets': 'Gamma72 nearest cosets, explicit norm-ten 73D additions and exact finite-graph norm-ten existence bounds in 77-79D',
+        'dim64-65-signed-parity': '1,835 added Hamming sign blocks with reusable parity-check spaces; 65D caps replace 68,224 BCH and affine-line owners',
+        'dim73-88-gamma72-cosets': 'Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D',
         'dim38-leech-large-codimension': 'the Leech cap construction at codimension 14',
         'dim39-ers-constant-weight': 'Edel-Rains-Sloane with the 2026 constant-weight codes',
         'dim41-46-p48-heads': 'independently normalized P48n body families with rational '
@@ -2022,14 +2028,30 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append("The synchronized 28 October registry includes 201136, 209600, 221694, 231638, 247960 and 251110 in dimensions 26-31, gains of 2, 14, 30, 2, 4 and 108 over PackingStar commit b67832a. Complete coordinate replays verify the integer and quadratic configurations, including all unpaired points. The concurrent 33-96D improvements and corrected nonlinear-code comparisons are retained; the paper remains deferred.")
+    out.append("")
     out.append("**Generated by `audit.py --write-results`. Do not edit by hand.**")
     out.append("")
     out.append("%d registered lower bounds on the kissing number tau(n), compared with their\nrecorded published baselines. Later superseding records are listed in README.md."
                % len(claims))
     out.append("")
-    out.append("The 28 October normal-module exchange gives **251110 in 31D**, exceeding PackingStar's checked 251002-point update by 108. All 7881966235 distinct antipodal-line pairs pass an independent exact replay. The quadratic normal-module replacement gives **209600 in 27D**, 14 above PackingStar's checked 209586, with all 5491467600 distinct line pairs verified exactly. The asymmetric exchanges give **201136 in 26D**, **221694 in 28D**, **231638 in 29D** and **247960 in 30D**, exceeding the pinned PackingStar files by 2, 30, 2 and 4. Complete independent exact checks cover every unordered point pair, including unpaired points. All six dimensions 26D-31D exceed the pinned PackingStar comparison; the table's comparison column retains its historical baselines.")
+    out.append("The further 28 October continuation gives 370376 in 33D (+8), 390990 in 34D (+8), 415334 in 35D (+20), 501687 in 36D (+15) and 505503 in 37D (+15), compared with the preceding repository certificates. Shared root-star deletions and a latitude-preserving phase refill have two independent exact proof routes, reconstruction and rejection controls. Broader complete-support, signed-region and base-choice searches have not yielded a larger verified gain in this pass. The 32D, 38D and 39D bounds are unchanged.")
     out.append("")
-    out.append("The 27 October support continuation gives 13290258624 in 96D (+851968 over the preceding registered bound) and 7092007692 in 95D (+555008), with all 302887578 support pairs checked in two independent representations. The paper retains its earlier values. The later 26 October update adds 352800 in 32D, 370368 in 33D, 390982 in 34D and 415314 in 35D, each with two independent exact proof representations. The paper update is deferred; common/manuscript_scope.json records its 66-result state and hashes. The 26 October continuation gives 197584 in 25D, 241742 in 31D, 610394 in 38D, 769180 in 39D and 1126314 in the newly registered dimension 40. All five independent exact replays passed. Fresh primary-source comparisons and the unavailable Cohn retrieval are documented in common/source_review_20261026.json. The 24 October 2026 checkpoint adds exact Coxeter-Todd constructions "
+    out.append("The 28 October Fano-grid and cube-edge construction gives 611522 in 38D (+1128 over the preceding 610394-point repository certificate). It replaces 5408 latitude points with 6656 and removes 120 caps. Two independent exact proofs check all retained layers, and the expanded replay checks all 22147840 distinct latitude pairs. A small recipe reconstructs the certificate without search. The 6656-point latitude population saturates this particular 63-support model; other supports and norm splits remain open. The manuscript remains deferred.")
+    out.append("")
+    out.append("The 28 October continuous-head 43D continuation gives 2919782 points (+39 over the preceding repository certificate), replacing 46 tiny-layer points with 85. Two independent exact representations each check 6370783 angle conditions. Complete-family population inputs and the deferred manuscript scope are unchanged.")
+    out.append("")
+    out.append("The 28 October Coxeter-Todd continuation gives 501672 in 36D (+39) and 505488 in 37D (+129), with two independent exact representations and reproducible phase trades.")
+    out.append("")
+    out.append("The 28 October nonlinear-code correction and section construction raises every bound in 88–96D, from 6,921,251,584 in 88D to 142,162,362,560 in 96D. The parent (96,2^37,24) binary code is published work of Duursma–Greferath–Litsyn–Schmidt (2001), previously missed by this repository's linear-code comparison. Its shortenings correct the comparison floors in 92–96D. Two independent finite proofs recheck all 16,777,216 Z4 words, 4,166,151 octad-coset exclusions and 338,559,231 support pairs. The 96D result exceeds the derived standard chain with that parent by 426,344,448 points. The manuscript remains deferred.")
+    out.append("")
+    out.append("The 28 October dual-obstruction continuation gives 7,101,541,132 in 95D (+9,209,856) and 13,313,343,680 in 96D (+22,560,768). Its 26,022-support certificate checks all 338,559,231 distinct pairs in two exact representations. Disjoint odd GF(4) trace checks prove compatibility for 2,073 supports in thirteen or fourteen rows, extending the former twelve-row restriction. The manuscript remains deferred.")
+    out.append("")
+    out.append("The further 28 October continuation gives 6,218,206,932 in 73D from 7,663 explicit norm-ten heads; signed-tail orbit proofs give 6,220,170,666 in 82D, 6,221,008,658 in 83D, 6,222,025,404 in 84D, 6,223,222,688 in 85D and 6,226,194,610 in 87D. A 24,645-support certificate gives 7,092,331,276 in 95D and 13,290,782,912 in 96D. The new explicit layer checks 120,048,558 products in two exact arithmetics, the signed profiles have an independent polynomial replay, and both support representations check all 303,675,690 pairs. The manuscript remains deferred.")
+    out.append("")
+    out.append("The 28 October mixed-tail weighted-priority continuation gives 6,218,490,542 in 77D, 6,218,688,770 in 78D and 6,218,922,650 in 79D, improving the preceding certificates by 25,526, 2,890 and 10,614 points. All 22,848,388 ordered tail products, joint tail/pole ranks and rational expectations are checked exactly. These are existence proofs under the stated Gamma72/design inputs; selected head sets are not enumerated. The manuscript retains its earlier snapshot.")
+    out.append("")
+    out.append("The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over the preceding registered bound) and 7092187916 in 95D (+180224), with all 303330765 support pairs checked in two independent representations. PackingStar reports larger 26–31D bounds; README.md records these supersessions from the pinned 28 October source review. The paper retains its earlier values. The later 26 October update adds 352800 in 32D, 370368 in 33D, 390982 in 34D and 415314 in 35D, each with two independent exact proof representations. The paper update is deferred; common/manuscript_scope.json records its 66-result state and hashes. The 26 October continuation gives 197584 in 25D, 241742 in 31D, 610394 in 38D, 769180 in 39D and 1126314 in the newly registered dimension 40. All five independent exact replays passed. Fresh primary-source comparisons and the unavailable Cohn retrieval are documented in common/source_review_20261026.json. The 24 October 2026 checkpoint adds exact Coxeter-Todd constructions "
                "in dimensions 36 and 37, registers the supplied 2 919 743-point partial-family "
                "43D certificate, and raises 45D to 7 655 056. All 41-46D integer angles "
                "and head dimensions replay; complete-family body populations inherit the "
@@ -2104,8 +2126,11 @@ if '--write-results' in sys.argv and not fail:
     out.append("| 65-67 | direct sum of ERS64 and the 1D/2D/3D lattice: 331 737 984 + 2/6/12 |")
     out.append("| 68-71 | 331 737 984, inherited by monotonicity from dimension 64 "
                "(Edel-Rains-Sloane 1998). No table has any entry for 65-71. |")
-    out.append("| 73-95 | 6 218 175 600 + tau(k): the direct sum Gamma_72 (+) best "
+    out.append("| 73-91 | 6 218 175 600 + tau(k): the direct sum Gamma_72 (+) best "
                "k-dimensional lattice. |")
+    out.append("| 92-96 | 2^(d-59): shortenings of the nonlinear (96,2^37,24) code "
+               "of Duursma-Greferath-Litsyn-Schmidt (2001), embedded by binary signs. "
+               "DOI 10.1109/18.923742. |")
     out.append("")
     out.append("## Not claimed, and why")
     out.append("")
@@ -2143,14 +2168,21 @@ if '--write-results' in sys.argv and not fail:
                "the Golay code and checked pair by pair.  The one component not at a proved "
                "ceiling is the tier size, in [512, 533]. "
                "`verifications/closed/dim17-24-layer-identity/` |")
-    _EXPOSURE_NOTE = (
-        "**An exposure, at dimensions 93-95.** These three ARE claimed, above; this is "
-        "about how much room they have. Every Edel-Rains-Sloane input is a construction, "
-        "so its totals are LOWER bounds: one above Gamma_72 settles a dimension, one below "
-        "it settles nothing. At 93-95 the chain reaches only 2.68e9, 2.68e9 and 4.83e9, "
-        "which proves nothing by being small, so the package reports the threshold instead. "
-        "Dimension 95 stands as long as %s, against %s from the best construction in hand, "
-        "on the chain %s. `verifications/closed/dim96-ers-takeover/`" % _d95_threshold())
+    # Derive this comparison from the current claims, never from the RESULTS.md that
+    # this function is about to replace.  The previous exposure note used ranked(),
+    # which read the old file and made regeneration depend on its prior contents.
+    _chain96 = (1 << 37) + (1 << 32) + (1 << 21) + 192
+    _claim96 = dict((d, v) for d, v, _, _ in claims)[96]
+    _COMPARISON_NOTE = (
+        "**Prior-code comparison in dimensions 92-96.** The published nonlinear parent "
+        "corrects the earlier linear-code-only comparison. In 96D, the standard "
+        "Edel-Rains-Sloane chain with that parent and the shipped classical auxiliary "
+        "codes gives 2^37 + 2^32 + 2^21 + 192 = %s. The current construction exceeds "
+        "that derived baseline by %s points. This is a construction-based LOWER bound, "
+        "not an upper bound on what other inputs could achieve or a published tabulated "
+        "kissing number. Provenance and both arithmetic replays are in "
+        "`verifications/improved/dim88-96-z8-golay/`."
+        % (gr(_chain96), gr(_claim96 - _chain96)))
     out.append("| 22, 23 | Lambda_22 and Lambda_23 are maximal spherical codes, and Leech "
                "level sets cap at exactly 93150. "
                "`verifications/closed/dim22-23-maximal-cross-sections/` |")
@@ -2164,7 +2196,7 @@ if '--write-results' in sys.argv and not fail:
                "and in each of those five a layer now beats the template that calibration "
                "validates.")
     out.append("")
-    out.append(_EXPOSURE_NOTE)
+    out.append(_COMPARISON_NOTE)
     out.append("")
     # No dimension in the table above may be one this repository CLAIMS.  It listed 64-69
     # while claiming 68 and 69, and briefly listed 93-95 while claiming all three, because

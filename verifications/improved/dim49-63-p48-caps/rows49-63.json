@@ -3,131 +3,131 @@
   "dim": 49,
   "k": 1,
   "lam": 1,
-  "S": 7387,
-  "gain": 14776,
-  "value": 52430776,
+  "S": 7783,
+  "gain": 15568,
+  "value": 52431568,
   "previous": 52416002,
-  "family": "october/family_55_61.npz"
+  "family": "october/family_refilled.npz"
  },
  {
   "dim": 50,
   "k": 2,
   "lam": 3,
-  "S": 22158,
-  "gain": 44322,
-  "value": 52460322,
+  "S": 23349,
+  "gain": 46704,
+  "value": 52462704,
   "previous": 52416006,
-  "family": "october/family_55_61.npz"
+  "family": "october/family_refilled.npz"
  },
  {
   "dim": 51,
   "k": 3,
   "lam": 6,
-  "S": 44303,
-  "gain": 88618,
-  "value": 52504618,
+  "S": 46696,
+  "gain": 93404,
+  "value": 52509404,
   "previous": 52416012,
-  "family": "october/family_55_61.npz"
+  "family": "october/family_refilled.npz"
  },
  {
   "dim": 52,
   "k": 4,
   "lam": 12,
-  "S": 88541,
-  "gain": 177106,
-  "value": 52593106,
+  "S": 93342,
+  "gain": 186708,
+  "value": 52602708,
   "previous": 52416024,
-  "family": "october/family_55_61.npz"
+  "family": "october/family_refilled.npz"
  },
  {
   "dim": 53,
   "k": 5,
   "lam": 20,
-  "S": 147412,
-  "gain": 294864,
-  "value": 52710864,
+  "S": 155429,
+  "gain": 310898,
+  "value": 52726898,
   "previous": 52416040,
-  "family": "october/family_55_61.npz"
+  "family": "october/family_refilled.npz"
  },
  {
   "dim": 54,
   "k": 6,
   "lam": 36,
-  "S": 264749,
-  "gain": 529570,
-  "value": 52945570,
+  "S": 279183,
+  "gain": 558438,
+  "value": 52974438,
   "previous": 52416072,
-  "family": "october/family_55_61.npz"
+  "family": "october/family_refilled.npz"
  },
  {
   "dim": 55,
   "k": 7,
   "lam": 63,
-  "S": 461480,
-  "gain": 923086,
-  "value": 53339086,
+  "S": 486675,
+  "gain": 973476,
+  "value": 53389476,
   "previous": 52416126,
-  "family": "october/family_55_61.npz"
+  "family": "october/family_refilled.npz"
  },
  {
   "dim": 56,
   "k": 8,
   "lam": 120,
-  "S": 871429,
-  "gain": 1743098,
-  "value": 54159098,
+  "S": 918859,
+  "gain": 1837958,
+  "value": 54253958,
   "previous": 52416240,
-  "family": "october/family_55_61.npz"
+  "family": "october/family_refilled.npz"
  },
  {
   "dim": 57,
   "k": 9,
   "lam": 153,
-  "S": 1105366,
-  "gain": 2211038,
-  "value": 54627038,
+  "S": 1165425,
+  "gain": 2331156,
+  "value": 54747156,
   "previous": 52416306,
-  "family": "october/family_55_61.npz"
+  "family": "october/family_refilled.npz"
  },
  {
   "dim": 58,
   "k": 10,
   "lam": 255,
-  "S": 1813321,
-  "gain": 3627152,
-  "value": 56043152,
+  "S": 1910590,
+  "gain": 3821690,
+  "value": 56237690,
   "previous": 52416510,
-  "family": "october/family_55_61.npz"
+  "family": "october/family_refilled.npz"
  },
  {
   "dim": 59,
   "k": 11,
   "lam": 302,
-  "S": 2131922,
-  "gain": 4264448,
-  "value": 56680448,
+  "S": 2245464,
+  "gain": 4491532,
+  "value": 56907532,
   "previous": 52416604,
-  "family": "october/family_55_61.npz"
+  "family": "october/family_refilled.npz"
  },
  {
   "dim": 60,
   "k": 12,
   "lam": 378,
-  "S": 2636915,
-  "gain": 5274671,
-  "value": 57690671,
+  "S": 2775751,
+  "gain": 5552343,
+  "value": 57968343,
   "previous": 52416841,
-  "family": "october/family_55_61.npz"
+  "family": "october/family_refilled.npz"
  },
  {
   "dim": 61,
   "k": 13,
   "lam": 577,
-  "S": 3901694,
-  "gain": 7804542,
-  "value": 60220542,
+  "S": 4101234,
+  "gain": 8203622,
+  "value": 60619622,
   "previous": 52417154,
-  "family": "october/family_55_61.npz"
+  "family": "october/family_refilled.npz"
  },
  {
   "dim": 62,

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "dimension": 73,
+  "oriented_heads": 7663,
+  "added_layer_points": 15326,
+  "previous_bound": 6218204076,
+  "bound": 6218206932,
+  "gain_over_previous_bound": 2856,
+  "head_product_interval": [
+    -6,
+    3
+  ],
+  "coset_product_interval": [
+    -5,
+    5
+  ],
+  "cap_product_interval": [
+    -3,
+    3
+  ],
+  "products_checked_in_each_arithmetic": 120048558,
+  "certificate_sha256": "5198d258f88701e65d9b405f71a61a894fb1ebad0eb00a423439fcf771afec4d",
+  "scope": "Explicit layer; parent surgery/lattice certificate and published Gamma72 minimum inherited."
+}

@@ -1,19 +1,30 @@
-# Coxeter–Todd phase codes in dimensions 36 and 37
+# Coxeter–Todd phase refills in dimensions 36 and 37
 
-Checkpoint: **24 October 2026**.
+Checkpoint: **28 October 2026**. Both new bounds pass two exact proof representations.
 
-| Dimension | Cohn table, fetched 24 October | This construction |
-|---|---:|---:|
-| 36 | 484,760 | **501,633** |
-| 37 | 500,008 | **505,359** |
+| Dimension | Previous repository bound | This construction | Increase |
+|---|---:|---:|---:|
+| 36 | 501,672 | **501,687** | **15** |
+| 37 | 505,488 | **505,503** | **15** |
 
-The [dated table comparison](../../../common/cohn_20261024.json) records the
-current numerical bounds. These are constructive lower bounds; no optimality
-is asserted.
+The fixed base has 403,704 points. Replacing 147 retained original phase orbits
+by 165 new ones gives 32,661 orbits, hence **501,687** equatorial points.
+The 37D certificate selects 636 three-point latitude body orbits over 216 cells.
+Its 1,908 bodies occur at both heights +2 and −2, giving **505,503** points.
+The 15 added latitude orbits contribute 90 points; the improved equator supplies
+another 54 points relative to the retained 505,359-point witness. All points have squared norm 12 and all
+distinct pair products are at most six in the stated Gram basis.
 
-## Replay
+These improve explicit repository witnesses. The historical Cohn comparisons
+are 484,760 and 500,008, as preserved in
+[the dated table](../../../common/cohn_20261024.json). The live Cohn retrieval
+failed during the cited source review, so no fresh worldwide priority or optimality
+claim is made. [The source review](../../../common/source_review_20261028_coxeter_todd.json)
+records these comparisons. The manuscript remains at its documented preceding checkpoint.
 
-From this directory, using Python 3.9+ and its standard library:
+## Reproduction
+
+From this directory, with Python 3.9+ and NumPy:
 
 ```bash
 python final.py
@@ -26,68 +37,76 @@ From the repository root:
 python run_all.py --repository-only --only coxeter-todd
 ```
 
-`final.py` counts the fixed base, three-point phase orbits and latitude cells.
-`verify.py` checks the complete SHA-256 manifest and runs `phase/verify.py` in
-a temporary copy, preserving the supplied reports. The exact replay derives
-the populations and checks every required angle; it uses no optimizer.
+`final.py` derives the counts from the certificate populations. `verify.py`
+checks the complete SHA-256 manifest and replays the retained phase witness,
+then both new checkers and exact delta reconstruction in a temporary copy.
+Installed certificates and receipts are preserved.
 
-## Construction and proof scope
+- `completion/verify.py`: standard-library rational short-shell enumeration,
+  quotient-distance proofs, and all required relative-phase integer comparisons.
+- `completion/verify_coordinates.py`: a separate rational enumerator and
+  expanded integer-coordinate proof. It checks 97,983 phase points, 1,908
+  latitude bodies, 61,667,370 phase pair products and all 1,819,278 distinct
+  latitude-body pairs. Different-label lattice distances settle the other pairs.
+- `completion/reproduce.py`: reconstructs the certificate byte for byte from
+  the retained witness and the explicit accepted trades in `delta.json`.
+- `completion/proof.md`: the complete angle argument, certificate convention,
+  search logic and relation to PackingStar's correction/refill strategy.
+- `phase/exact_lattice.py`: retained exact lattice enumerator used by the symbolic route.
+- `phase/verify_sections.py`: optional historical moment and section obstruction.
+- `completion/search/prepare.py`: prepares exact equator or latitude candidate pools.
+- `completion/search/`: optional pool construction and deterministic-step
+  finite-graph search. Search output is never accepted without both checkers.
 
-Take three copies of a rank-12 Coxeter–Todd lattice K with Gram matrix G.
-An integer matrix M satisfies `M G M^T = 3 G` and `|det M| = 729`. Rational
-exhaustive enumeration proves the short-shell populations 756, 4,032 and
-20,412 at squared norms four, six and eight. It proves the minimum of K
-and the minimum 12 of its sublattice L, and determines all minima and
-multiplicities of the 729 quotient cosets.
+Neither proof uses floating-point angle tolerances, an optimizer, a recorded
+shell population or files outside this repository. The two new checkers share
+no enumeration or angle code. Their common input is the certificate and its
+stated mathematical lattice-distance argument.
 
-The fixed part consists of **403,704** norm-12 vectors in 1,429 outer cosets.
-The isometry `Phi = I - M` has order three. The certificate selects **32,643**
-three-point phase orbits over 3,979 product cells, giving
+## Why the search improved
 
-`403704 + 3*32643 = 501633`.
+The fixed lattice base allows 729,000 product cells, containing 6,561,000 phase
+orbits. The previous equator occupied 3,979 cells. Search a larger candidate
+pool, count shared blockers, and coordinate deletions and insertions rather
+than requiring each candidate to fit by itself. The new equator uses 3,975
+cells. For 37D, allow individual three-point orbits in an auxiliary body cell
+instead of insisting on all nine points. This admits 15 additional orbits over
+nine new cells, while retaining every old latitude orbit.
 
-Coset distances handle pairs whose three labels differ; exact integer Gram
-products handle the remaining phase pairs. The verifier checks **1,020,306**
-base pairs, **5,685,991** phase/base coset pairs and **6,563,399** phase-orbit
-pairs. Distinct vectors in the same sublattice coset have squared distance
-at least 12. Every point has squared norm 12, so normalization gives
-inner products at most one half.
+This is an independent finite-graph implementation of the correction/refill
+idea described in [PackingStar](https://github.com/CDM1619/PackingStar/tree/67be454b83af4287e1a2b61e5bd8c3596a8061d6).
+It does not reproduce or train their RL system. Their reported larger 26–31D
+coordinates were not independently replayed here. Separate shared root-star
+trades now improve 33–35D. Broader complete-support and signed-region searches
+in this pass found no additional gain; this does not establish a ceiling.
 
-For 37D, 207 norm-eight body cosets each supply nine vectors. Appending
-heights +2 and -2 gives two latitude layers, each of size 1,863:
+## Retained history
 
-`501633 + 2*207*9 = 505359`.
+`phase/` remains the byte-preserving 24 October witness: **501,633** in 36D
+and **505,359** in 37D, with its original proof and exact replay. Its optional
+`vectors36.npz` and `vectors37.npz` describe that historical witness, not the
+new completion. Its optional moment calculation rules out improving 33–35D
+by taking sections of that particular construction.
 
-The replay checks **21,321** latitude-body coset pairs and **1,119,456**
-latitude/equator coset pairs. Norms and distances prove compatibility
-within and between the layers and with the equator. The
-[source proof](phase/proof.txt) gives the complete argument. No parent
-minimum, shell population or external code table is assumed.
+`source/` preserves the earlier complete-cell construction, **501,147** in
+36D and **501,149** with two poles in 37D. `UPDATE_PROVENANCE.json` records its
+original integration. Every new file is under `completion/`; the old source
+and phase certificates, reports and coordinate exports remain unchanged.
 
-## Artifacts and history
+Rows of all coefficient vectors use the supplied Gram basis. Unit Cartesian
+coordinates are `coefficients @ cholesky(gram) / sqrt(12)`. The exact proofs
+operate directly in the Gram basis. `data/SHA256SUMS.txt` covers the entire
+package except itself, including the optional search sources.
 
-The files in `phase/` are byte-preserving copies of
-`research/dim33_39_20261024/result/`, as recorded in `UPDATE_PROVENANCE.json`:
+The further refill removes 79 and adds 84 three-point phase orbits relative to
+the preceding main certificate, for fifteen additional equatorial points.
+All 636 latitude orbits are retained. The original phase/ certificate remains
+501,633 / 505,359; the compact delta reproduces the current certificate from it.
 
-- `certificate.json`: Gram data, fixed cosets, phase orbits and latitude cosets.
-- `exact_lattice.py`: exhaustive enumeration using rational branch bounds.
-- `verify.py`, `verification.json`: original lower-bound verifier and recorded report.
-- `proof.txt`, `README.txt`: mathematical proof and source instructions.
-- `vectors36.npz`, `vectors37.npz`, `coordinates_check.json`: optional coefficient
-  exports and their norm/distinctness checks.
-- `verify_sections.py`, `section_obstruction.json`: optional NumPy check of
-  moment identities excluding improvements from sections in dimensions 33–35.
-  This additional negative result is not required for either lower bound.
-
-Rows in the optional exports are coefficients in the supplied Gram basis.
-Cartesian unit coordinates are `coefficients @ cholesky(gram) / sqrt(12)`.
-The default replay does not require NumPy or these exports.
-
-The earlier full-cell construction remains in `source/`: **501,147** in 36D,
-and **501,149** after adjoining two poles in 37D. Its `verify.py` independently
-enumerates the short shells and all 12,688,203 outer-coset pairs;
-`certificate.json`, `verification.json`, `proof.txt`, `discovery.json`,
-`README.txt`, `vectors.npz` and `coordinates_check.json` preserve its data
-and reports. These files are retained history, superseded by the phase code.
-
-`data/SHA256SUMS.txt` covers every installed file except itself.
+`completion/negative_controls.py` tests both exact proof routes on duplicate
+orbits and false counts. `completion/search/base_choices.py` exposes 756
+independent base-cell replacements, verifies all old/new and new/new base
+distances, and writes a search seed after compatible orbit retention. This
+new search freedom has not yet produced a larger registered bound. The current
+certificate uses the preceding fixed base. `completion/search/prepare.py`
+also supports `--preserve-lifts` when preparing an equatorial search.

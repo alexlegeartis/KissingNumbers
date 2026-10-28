@@ -49,6 +49,14 @@ def verify_manifest():
     actual = {path.relative_to(ROOT).as_posix() for path in ROOT.rglob('*')
               if path.is_file() and '__pycache__' not in path.parts and path != manifest}
     assert listed == actual, ('manifest coverage', sorted(listed ^ actual))
+    for nested in ROOT.rglob('SHA256SUMS.txt'):
+        if nested == manifest:
+            continue
+        for line in nested.read_text(encoding='utf-8').splitlines():
+            expected, name = line.split('  ', 1)
+            path = (nested.parent / name).resolve()
+            assert ROOT in path.parents and path != nested
+            assert hashlib.sha256(path.read_bytes()).hexdigest() == expected, (nested, name)
     return len(listed)
 
 
@@ -240,6 +248,13 @@ def main():
         report = (verify_portable(record) if 'portable_replay' in record
                   else verify_current(record, geometry, tiny))
         print(json.dumps(report), flush=True)
+    independent = subprocess.run([sys.executable, '-B',
+        str(ROOT/'continuation43/verify_coordinates.py')], cwd=ROOT,
+        check=True, capture_output=True, text=True)
+    report = json.loads(independent.stdout)
+    assert report['status'] == 'PASS'
+    assert report['points'] == next(r['total'] for r in results() if r['dimension'] == 43)
+    print(json.dumps(report), flush=True)
     print(json.dumps(verify_older_43(geometry, tiny)), flush=True)
     if args.replay_populations:
         replay_populations(args.jobs)

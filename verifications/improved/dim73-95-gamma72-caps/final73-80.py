@@ -172,5 +172,5 @@ json.dump({'dim80': int(out[-1][1]),
                       'gain': int(g), 'value': int(new), 'previous': int(old),
                       'poles': int(_p)}
                      for d_, new, old, g, _h, _w, _p in out]},
-          open(os.path.join(HERE, 'rows73-80.json'), 'w'), indent=1)
+          open(os.path.join(HERE, 'rows73-80.json'), 'w', newline='\r\n'), indent=1)
 print("   wrote rows73-80.json (dimension 80 = %d), read by final81-95.py" % out[-1][1])

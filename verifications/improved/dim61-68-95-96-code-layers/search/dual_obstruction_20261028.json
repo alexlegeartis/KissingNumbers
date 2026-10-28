@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-28",
+  "previous_commit": "56e078a2ec383117ec3904bb0a7749d80e759d54",
+  "previous_certificate_sha256": "f3c5a100ba1ac8d73e8f1fffd555d72c0d87e75f4bb9532aeab3b10c7f8f9cf5",
+  "certificate_sha256": "d0def7d6587ca3aa1b39c9f3e7ccb844310285a7f1794dc8e9492f0fff9fc65d",
+  "previous_supports": 24645,
+  "supports": 26022,
+  "removed_supports": 696,
+  "inserted_supports": 2073,
+  "net_supports": 1377,
+  "support_pairs_checked_in_each_representation": 338559231,
+  "occupied_row_histogram": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    6,
+    140,
+    1700,
+    6144,
+    6310,
+    9649,
+    42,
+    2031
+  ],
+  "dual_obstruction_supports": 2073,
+  "disjoint_dual_checks": 4104,
+  "dimensions": {
+    "95": {
+      "bound": 7101541132,
+      "previous_bound": 7092331276,
+      "gain": 9209856,
+      "terms": {
+        "dense_section": 4697620480,
+        "transversal24_section": 2147483648,
+        "new_support24_section": 255120384,
+        "support6_section": 1316444,
+        "ordinary_poles": 176
+      }
+    },
+    "96": {
+      "bound": 13313343680,
+      "previous_bound": 13290782912,
+      "gain": 22560768,
+      "terms": {
+        "dense": 8589934592,
+        "transversal24": 4294967296,
+        "new_support24": 426344448,
+        "support6": 2097152,
+        "poles": 192
+      }
+    }
+  },
+  "last_search_stage": {
+    "start": "search/dual_obstruction_start.npz",
+    "start_nonordinary_supports": 8571,
+    "final_nonordinary_supports": 8726,
+    "seed": 281313,
+    "trials": 100000000,
+    "neutral_period": 128,
+    "free_additions": 100,
+    "two_for_one_trades": 55,
+    "neutral_exchanges": 8,
+    "single_duals": 21296,
+    "disjoint_dual_pairs": 247800,
+    "generated_text_sha256": {
+      "start.txt": "9428f05fd5715e32fc848d9970f5b10f92f976a6b6c5136bea31eb2bf2188014",
+      "duals13.txt": "cd5de95c99c01325d50acc9753a49887d9d8f6a928cbf01efb73f04e6a52eb17",
+      "pairs14.txt": "de25a10bba5215abe6a54d1b0af6a6ad202e0acd5afc58397818cde877f59861"
+    },
+    "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+    "description": "The pinned start already contains earlier dual-obstruction stages. This last stage adds 155 supports; the full improvement over the preceding main certificate is 1377.",
+    "expected_final_text_sha256": "536d9ca65b84c7a2ac91286f851f226b8903920a30c0e0ed9c77c692ae73880b"
+  },
+  "verification": [
+    "source/dim61_96/mixed_pair_certificate.py",
+    "source/dim61_96/verify_support_bits.py"
+  ],
+  "negative_controls": [
+    "missing dual check",
+    "overlapping dual checks",
+    "wrong constant-trace parity"
+  ],
+  "scope": "Constructive lower bounds. The family replaces its predecessor; no unrestricted optimum or new claim in 73--94D. Manuscript deferred."
+}

@@ -270,5 +270,276 @@
       "source/dim61_96/verify_support_bits.py"
     ],
     "scope": "Replace the earlier mixed support family; no unrestricted optimum claimed. Manuscript and PDF deferred."
+  },
+  "continuation_20261028": {
+    "previous_commit": "a6ba3387f2b0b54942812790a1ddf19bb4e99431",
+    "previous_certificate_sha256": "5f44dbe7a1364e9682a4092a38ddae07ff6c8bae57206b397de9fe971bad0554",
+    "certificate_sha256": "81ed499073d43d74706814c03342bf2a4309a7bb2d46b9bdaa220f0f54b3fe89",
+    "previous_supports": 24613,
+    "supports": 24631,
+    "removed_previous_supports": 2564,
+    "inserted_supports": 2582,
+    "support_pairs_checked_by_each_replay": 303330765,
+    "dimensions": {
+      "95": {
+        "bound": 7092187916,
+        "previous_bound": 7092007692,
+        "gain": 180224,
+        "terms": {
+          "dense_section": 4697620480,
+          "transversal24_section": 2147483648,
+          "new_support24_section": 245767168,
+          "support6_section": 1316444,
+          "ordinary_poles": 176
+        }
+      },
+      "96": {
+        "bound": 13290553536,
+        "previous_bound": 13290258624,
+        "gain": 294912,
+        "terms": {
+          "dense": 8589934592,
+          "transversal24": 4294967296,
+          "new_support24": 403554304,
+          "support6": 2097152,
+          "poles": 192
+        }
+      }
+    },
+    "method": "Finite fill/correct support walk, neutral exchanges and two-for-one shared-blocker trades; no reinforcement-learning claim.",
+    "search_checkpoint": "search/start_supports.npz",
+    "seed": 282029,
+    "trials": 100000000,
+    "neutral_period": 256,
+    "canonical_ordered_support_text_sha256": "75b154b6e7af83d4a065bf9658306723ea9f458f2b65172da3184b009771caa9",
+    "verification": [
+      "source/dim61_96/mixed_pair_certificate.py",
+      "source/dim61_96/verify_support_bits.py"
+    ],
+    "scope": "Replace the earlier mixed support family. Both 95D and 96D increase; no optimum or comprehensive priority claim. Manuscript remains deferred."
+  },
+  "further_supports_20261028": {
+    "base_commit": "9d38a38b93fcbbc88d48981f382464569189c3c8",
+    "dimensions": {
+      "95": 7092331276,
+      "96": 13290782912
+    },
+    "gains_over_base_commit": {
+      "95": 143360,
+      "96": 229376
+    },
+    "verification": "Complete physical-coordinate and packed-integer support checks, sign-code enumeration and exact dense section",
+    "receipt": "search/continuation_20261028.json"
+  },
+  "continuation_49_72": {
+    "date": "2026-10-28",
+    "baseline_commit": "9d38a38b93fcbbc88d48981f382464569189c3c8",
+    "input_parent64_sha256": "16b9b7da699d508fa460fd692fdfb0620480c4ed4078dc4f5270c230882d4c83",
+    "parent64_source": "verifications/improved/dim64-65-signed-parity/data/construction.json",
+    "bridge_supports": 8331,
+    "bridge_points": 1066368,
+    "verification": "Every bridge support pair checked in packed and coordinate representations; all new section fibres counted as packed words and expanded integer signs; complete Netto orbit and triple coverage checked independently of all block-coordinate intersections.",
+    "parent64_replay": "Fresh 536870912-word enumeration and all parity repairs passed.",
+    "scope": "New registered values only in 61-63 and 66-68; inherited code distances retain their existing proofs. No unrestricted optimum or fresh worldwide priority claim.",
+    "negative_search": "No better shortening found in the stated finite search; 69-72 unchanged.",
+    "paper": "The manuscript remains its previous snapshot."
+  },
+  "larger_compressed_layers_49_72": {
+    "date": "2026-10-28",
+    "baseline_commit": "452d929d7630044a1624e5da05d79464a5713f30",
+    "dimensions": {
+      "61": {
+        "total": 87056170,
+        "previous_bound": 72376856,
+        "gain": 14679314,
+        "terms": {
+          "dense": 67108864,
+          "weight16": 19810304,
+          "weight4": 136880,
+          "poles": 122
+        }
+      },
+      "62": {
+        "total": 120620044,
+        "previous_bound": 100437548,
+        "gain": 20182496,
+        "terms": {
+          "dense": 100663296,
+          "weight16": 19810304,
+          "weight4": 146320,
+          "poles": 124
+        }
+      }
+    },
+    "method": "Odd-parity extended Hamming signs on shortened self-orthogonal supports in 61D; six-fibre hexagonal coordinate compression in 62D.",
+    "verification": "Fresh 268435456-word NumPy enumeration; independent C++ Gray-code enumeration; 46778628 exact support intersections; full 2048-sign Gram matrix; exact rational/radical layer bounds and negative controls.",
+    "receipt": "source/significant49_72/compressed_layers.json",
+    "scope": "Replaces the registered 61D and 62D constructions. Other dimensions retain their preceding certificates. No unrestricted optimum or new worldwide priority survey. Manuscript remains deferred."
+  },
+  "dual_obstruction_20261028": {
+    "previous_commit": "56e078a2ec383117ec3904bb0a7749d80e759d54",
+    "previous_certificate_sha256": "f3c5a100ba1ac8d73e8f1fffd555d72c0d87e75f4bb9532aeab3b10c7f8f9cf5",
+    "certificate_sha256": "d0def7d6587ca3aa1b39c9f3e7ccb844310285a7f1794dc8e9492f0fff9fc65d",
+    "previous_supports": 24645,
+    "supports": 26022,
+    "removed_supports": 696,
+    "inserted_supports": 2073,
+    "net_supports": 1377,
+    "dimensions": {
+      "95": {
+        "bound": 7101541132,
+        "previous_bound": 7092331276,
+        "gain": 9209856,
+        "terms": {
+          "dense_section": 4697620480,
+          "transversal24_section": 2147483648,
+          "new_support24_section": 255120384,
+          "support6_section": 1316444,
+          "ordinary_poles": 176
+        }
+      },
+      "96": {
+        "bound": 13313343680,
+        "previous_bound": 13290782912,
+        "gain": 22560768,
+        "terms": {
+          "dense": 8589934592,
+          "transversal24": 4294967296,
+          "new_support24": 426344448,
+          "support6": 2097152,
+          "poles": 192
+        }
+      }
+    },
+    "verification": [
+      "source/dim61_96/mixed_pair_certificate.py",
+      "source/dim61_96/verify_support_bits.py"
+    ],
+    "scope": "Constructive lower bounds. The family replaces its predecessor; no unrestricted optimum or new claim in 73--94D. Manuscript deferred.",
+    "receipt": "search/dual_obstruction_20261028.json"
+  },
+  "shared_parity_61_68": {
+    "date": "2026-10-28",
+    "baseline_commit": "816e291dbddddd38764047455ea6499ace59f9c3",
+    "dimensions": {
+      "61": {
+        "total": 88260394,
+        "terms": {
+          "dense": 67108864,
+          "weight16": 21014528,
+          "weight4": 136880,
+          "poles": 122
+        },
+        "previous_bound": 87056170,
+        "gain": 1204224
+      },
+      "62": {
+        "total": 121824268,
+        "terms": {
+          "dense": 100663296,
+          "weight16": 21014528,
+          "weight4": 146320,
+          "poles": 124
+        },
+        "previous_bound": 120620044,
+        "gain": 1204224
+      },
+      "63": {
+        "total": 184286468,
+        "terms": {
+          "dense_section": 146800640,
+          "original_weight16_section": 35503776,
+          "added_weight16_section": 1879040,
+          "weight4_section": 102900,
+          "ordinary_poles": 112
+        },
+        "previous_bound": 182537988,
+        "gain": 1748480
+      },
+      "64": {
+        "total": 335496064,
+        "terms": {
+          "dense": 268435456,
+          "weight16": 66893824,
+          "weight4": 166656,
+          "poles": 128
+        },
+        "previous_bound": 332170112,
+        "gain": 3325952
+      },
+      "65": {
+        "total": 335564290,
+        "terms": {
+          "base64": 335496064,
+          "owner_gain": 68224,
+          "new_poles": 2
+        },
+        "previous_bound": 332238338,
+        "gain": 3325952
+      },
+      "66": {
+        "total": 341994884,
+        "terms": {
+          "dense64": 268435456,
+          "weight16": 73381888,
+          "weight4": 177408,
+          "poles": 132
+        },
+        "previous_bound": 338302340,
+        "gain": 3692544
+      },
+      "67": {
+        "total": 355090822,
+        "terms": {
+          "dense64": 268435456,
+          "weight16": 86466560,
+          "weight4": 188672,
+          "poles": 134
+        },
+        "previous_bound": 351420806,
+        "gain": 3670016
+      },
+      "68": {
+        "total": 375222168,
+        "terms": {
+          "dense64": 268435456,
+          "weight16": 106586112,
+          "weight4": 200464,
+          "poles": 136
+        },
+        "previous_bound": 371552152,
+        "gain": 3670016
+      }
+    },
+    "families": {
+      "global": {
+        "new_supports": 1835,
+        "modified_old_supports": 1792,
+        "old_new_pairs_checked": 56569380,
+        "new_pairs_checked": 1682695,
+        "parity_repairs": 14680,
+        "certificate_sha256": "ce5572b231cd0f197e52520c809eabfee8aa38483b95fd55b46b317a8edbc5ab"
+      },
+      "expanded66": {
+        "new_supports": 1803,
+        "modified_old_supports": 1792,
+        "old_new_pairs_checked": 55582884,
+        "new_pairs_checked": 1624503,
+        "parity_repairs": 14424,
+        "certificate_sha256": "a4a071d28e36dfba7579b2d1737cc64f80727f401bae5d440a102e63a6abc337"
+      },
+      "expanded67_68": {
+        "new_supports": 1792,
+        "modified_old_supports": 1792,
+        "old_new_pairs_checked": 55243776,
+        "new_pairs_checked": 1604736,
+        "parity_repairs": 14336,
+        "certificate_sha256": "288ab6a9574e6163cabba45a0472204ec6a788300649a330edfc8ed9bce3140f"
+      }
+    },
+    "method": "Compatible shared RM(1,4) check spans and affine phase solving; finite fill/correct deletions and refills.",
+    "proof": "source/shared_parity/shared_layers.py",
+    "receipt": "source/shared_parity/shared_layers.json",
+    "scope": "Eight improved constructions, not an unrestricted optimum or a fresh priority survey. Old augmentations are replaced. Manuscript remains deferred."
   }
 }

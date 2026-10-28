@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 91 scripts, including large exact certificate replays
-    python run_all.py --full       # 110 scripts, budget about 10 hours
+    python run_all.py              # 92 scripts, including large exact certificate replays
+    python run_all.py --full       # 111 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -182,8 +182,10 @@ JOBS = [
      ['certify43.py'], 20.0, False),
     ("dims 46, 47: cross-sections of P_48, recovered not claimed",
      os.path.join(V, 'recovered', 'dim46-47-p48-cross-sections'), ['derive.py'], 0.1, True),
-    ("october-p48: 7387-line class and all 577 explicit disjoint images",
+    ("october-p48: historical and refilled classes, all isometries and disjointness",
      os.path.join(V, 'improved', 'dim49-63-p48-caps'), ['verify_october.py'], 1.0, True),
+    ("Z8 Golay: dimensions 88-96, two exact compressed-construction proofs",
+     os.path.join(V, 'improved', 'dim88-96-z8-golay'), ['verify.py'], 5.0, True),
     ("october-codes: compression, support layers and central sections",
      os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py'], 5.0, True),
     ("dims 26-31: residual completions, full independent exact replay",
@@ -209,7 +211,7 @@ JOBS = [
      os.path.join(V, 'improved', 'dim38-latitude-extension'), ['verify.py'], 0.2, True),
     ("dim 39: neutral support changes and exact root replacements",
      os.path.join(V, 'improved', 'dim39-root-replacements'), ['verify.py'], 0.2, True),
-    ("dims 73, 77-79: norm-ten addition and exact existence proofs",
+    ("dims 73, 77-79, 82-85, 87: norm-ten addition and exact existence proofs",
      os.path.join(V, 'improved', 'dim73-88-gamma72-cosets'), ['verify_norm10.py'], 0.3, True),
     ("dim 28: joint Leech layers, exact independent replay",
      os.path.join(V, 'improved', 'dim28-joint-leech-layers'), ['verify.py'], 1.0, True),
@@ -377,13 +379,13 @@ JOBS = [
 def _sota_jobs(quick=False):
     wanted = {
         ('common', ('capalgebra.py',)),
+        ('dim26-30-asymmetric-exchanges', ('verify.py',)),
+        ('dim27-quadratic-normal-module', ('verify.py',)),
+        ('dim31-normal-module-exchange', ('verify.py',)),
         ('dim18-bent-hexagon', ('verify18.py',)),
         ('dim32-35-signed-layers', ('verify.py',)),
         ('dim25-collective-deformation', ('verify.py',)),
         ('dim31-dual-centres', ('verify.py',)),
-        ('dim26-30-asymmetric-exchanges', ('verify.py',)),
-        ('dim27-quadratic-normal-module', ('verify.py',)),
-        ('dim31-normal-module-exchange', ('verify.py',)),
         ('dim40-affine-shells', ('verify.py',)),
 
         ('dim26-31-residual-completions', ('verify.py',)),
@@ -399,6 +401,7 @@ def _sota_jobs(quick=False):
         ('dim49-63-p48-caps', ('final.py',)),
         ('dim49-63-p48-caps', ('scripts/verify_capdirs.py',)),
         ('dim61-68-95-96-code-layers', ('verify.py',)),
+        ('dim88-96-z8-golay', ('verify.py',)),
         ('dim64-65-signed-parity', ('verify.py',)),
         ('dim68-69-gamma72-cross-sections', ('scripts/verify69.py',)),
         ('dim68-69-gamma72-cross-sections', ('scripts/recheck_cert.py',)),
@@ -412,6 +415,8 @@ def _sota_jobs(quick=False):
         wanted.remove(('dim61-68-95-96-code-layers', ('verify.py',)))
         wanted.add(('dim61-68-95-96-code-layers', ('verify.py', '--full-codes')))
         wanted.add(('dim73-88-gamma72-cosets', ('verify.py',)))
+    current_packages = {package for _, package in _sota_records().values()}
+    wanted = {job for job in wanted if job[0] == 'common' or job[0] in current_packages}
     jobs = []
     found = set()
     for lab, directory, argv, minutes, fast in JOBS:
@@ -461,13 +466,13 @@ def _sota_records():
 def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
+        ('dim26-30-asymmetric-exchanges', [26, 28, 29, 30], [('verify.py',)], 'complete explicit integer codes; exact opposite-pair and unpaired-point checks cover every unordered pair'),
+        ('dim27-quadratic-normal-module', [27], [('verify.py',)], 'complete quadratic coordinates; all 5491467600 distinct antipodal-line pairs checked exactly without baseline assumptions'),
+        ('dim31-normal-module-exchange', [31], [('verify.py',)], 'complete explicit integer coordinates; all 7881966235 distinct antipodal-line pairs checked without baseline assumptions'),
         ('dim18-bent-hexagon', [18], [('verify18.py',)], ''),
         ('dim32-35-signed-layers', [32, 33, 34, 35], [('verify.py',)], 'two independent exact representations; full dense-code enumeration and every exceptional pair type'),
         ('dim25-collective-deformation', [25], [('verify.py',)], ''),
         ('dim31-dual-centres', [31], [('verify.py',)], ''),
-        ('dim26-30-asymmetric-exchanges', [26, 28, 29, 30], [('verify.py',)], 'complete explicit integer codes; exact opposite-pair and unpaired-point checks cover every unordered pair'),
-        ('dim27-quadratic-normal-module', [27], [('verify.py',)], 'complete quadratic coordinates; all 5491467600 distinct antipodal-line pairs checked exactly without baseline assumptions'),
-        ('dim31-normal-module-exchange', [31], [('verify.py',)], 'complete explicit integer coordinates; all 7881966235 distinct antipodal-line pairs checked without baseline assumptions'),
         ('dim40-affine-shells', [40], [('verify.py',)], ''),
 
         ('dim26-31-residual-completions', [26,27,28,29,30,31], [('verify.py',)], 'full independent coordinate replays and self-contained shell lemma; exact quadratic fields in 30D/31D'),
@@ -490,16 +495,24 @@ def _sota_coverage(jobs, results=None):
          'geometry replay plus an independent LP-certificate replay; recheck_cert also covers dimensions 68 and 70'),
         ('dim70-71-gamma72-cross-sections', [70, 71], [('derive.py',)], ''),
         ('dim73-88-gamma72-cosets', [73], [('verify73.py',)],
-         'completed half-coset minimum, cap surgery, all 6235 norm-ten heads and non-lattice witness; published Gamma72 parent facts'),
-        ('dim73-88-gamma72-cosets', [77, 78, 79], [('verify_norm10.py',)],
+         'completed half-coset minimum, cap surgery, all refilled norm-ten heads in two exact arithmetics and non-lattice witness; published Gamma72 parent facts'),
+        ('dim73-88-gamma72-cosets', [77, 78, 79, 82, 83, 84, 85, 87], [('verify_norm10.py',)],
          'exact finite-graph existence proofs; published Gamma72 minimum and all-shell design theorem; no full selected head list'),
-        ('dim73-88-gamma72-cosets', [74, 75, 76, 80, 81, 82, 83, 84, 85, 86], [('verify.py',)],
+        ('dim73-88-gamma72-cosets', [74, 75, 76, 80, 81, 86], [('verify.py',)],
          'seed nearestness inherits 21 completed block-enumeration lists and their completion metadata'),
-        ('dim73-95-gamma72-caps', list(range(87, 95)),
+        ('dim88-96-z8-golay', list(range(88, 97)), [('verify.py',)],
+         'published nonlinear parent; complete finite distance proof, both support representations and exact section counts; no full 2^37-word enumeration'),
+        ('dim73-95-gamma72-caps', list(range(88, 95)),
          [('scripts/verify_symmetry.py', '--complete')],
          'all retained class geometry and disjointness, directions, partitions, poles and counts; CPU replay'),
     ]
     records = _sota_records()
+    # Retained historical routes may share dimensions with newer packages.
+    # Coverage follows the current README package, and excludes surpassed rows.
+    groups = [(package, [d for d in dimensions
+                         if d in records and records[d][1] == package], commands, scope)
+              for package, dimensions, commands, scope in groups]
+    groups = [group for group in groups if group[1]]
     mapped = {}
     for package, dimensions, commands, scope in groups:
         for dimension in dimensions:

@@ -579,5 +579,44 @@
       79
     ],
     "proof_type": "Explicit 73D addition; exact finite-graph existence in 77--79D"
+  },
+  "weighted_norm10_continuation_20261028": {
+    "base_commit": "a6ba3387f2b0b54942812790a1ddf19bb4e99431",
+    "dimensions": {
+      "77": 6218490542,
+      "78": 6218688770,
+      "79": 6218922650
+    },
+    "gains_over_preceding_certificate": {
+      "77": 25526,
+      "78": 2890,
+      "79": 10614
+    },
+    "method": "Mixed normalized tail shells and integer-rate exponential priorities; exact finite-graph existence proof.",
+    "verifier": "source/norm10/weighted_norm10_certificate.py",
+    "input_tails_sha256": "48fd7fe54876017351488fbf47e7e889ccea4dd1064775500c2f8f6a3d208d40",
+    "packingstar_reviewed_commit": "67be454b83af4287e1a2b61e5bd8c3596a8061d6",
+    "proof_scope": "Published Gamma72 minimum and all-shell 11-design theorem; no enumerated selected head set."
+  },
+  "further_norm10_20261028": {
+    "base_commit": "9d38a38b93fcbbc88d48981f382464569189c3c8",
+    "dimensions": {
+      "73": 6218206932,
+      "82": 6220170666,
+      "83": 6221008658,
+      "84": 6222025404,
+      "85": 6223222688,
+      "87": 6226194610
+    },
+    "gains_over_base_commit": {
+      "73": 2856,
+      "82": 169130,
+      "83": 474298,
+      "84": 468208,
+      "85": 1217848,
+      "87": 356580
+    },
+    "verification": "Exact explicit-coordinate replay and independent signed-orbit polynomial profiles",
+    "receipt": "source/norm10/refill_search.json"
   }
 }

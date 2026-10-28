@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **158 sections, about 11398 lines**, written as the
+The full working record of the project: **159 sections, about 11444 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -11425,3 +11425,20 @@ The tier-40 obstruction figures were measured against the 2133-head layer and al
 The conclusion survives -- the trade still completes only by demolishing the class layer -- but
 every number in the paper's paragraph had to be recomputed, not re-typed.
 
+
+
+## Correction on 28 October 2026: nonlinear Golay parent in 88–96D
+
+The earlier sections that treated the linear [96,33,24] code as the best
+available binary input were incomplete. Duursma, Greferath, Litsyn and Schmidt
+published a nonlinear (96,2^37,24) code in 2001, DOI 10.1109/18.923742.
+The new [Z8 Golay package](verifications/improved/dim88-96-z8-golay/) reconstructs
+it and proves the distance twice using a complete Z4 enumeration and 759 small
+coset exclusions. It obtains stronger repository bounds throughout 88–96D,
+including 142,162,362,560 in 96D. The dense-code increase recovers published
+prior work; no new binary-code claim is made. The prior-code floors in 92–96D
+are corrected. The standard full-chain evaluation with that parent is
+141,736,018,112; the verified additional support family contributes 426,344,448.
+The source review and comparison scope are pinned in
+`common/source_review_20261028_z8.json`. Earlier linear-only comparisons remain
+historical and must not be reused as current literature conclusions.

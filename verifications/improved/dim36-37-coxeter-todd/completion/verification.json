@@ -1,0 +1,27 @@
+{
+  "points_36": 501687,
+  "points_37": 505503,
+  "base_points": 403704,
+  "phase_orbits": 32661,
+  "phase_cells_used": 3975,
+  "lift_phase_orbits": 636,
+  "lift_cells_used": 216,
+  "base_coset_pairs_checked": 1020306,
+  "phase_base_coset_pairs_checked": 5680275,
+  "phase_orbit_pairs_checked": 6568496,
+  "lift_base_coset_pairs_checked": 308664,
+  "lift_equator_orbit_pairs_checked": 0,
+  "lift_orbit_pairs_checked": 201930,
+  "exact_shell_counts": {
+    "8": 20412,
+    "6": 4032,
+    "4": 756
+  },
+  "squared_norm": 12,
+  "minimum_squared_distance_at_least": 12,
+  "unit_sphere_max_inner_product": "1/2",
+  "all_checks_pass": true,
+  "certificate_sha256": "b37691e110c73f1100112aea1a4dc39e2a911559a7a49c67c88bb303f6cd8760",
+  "arithmetic": "Python integers and fractions.Fraction",
+  "elapsed_seconds": 6.5425908689994685
+}

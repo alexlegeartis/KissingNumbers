@@ -1,0 +1,38 @@
+{
+  "review_date": "2026-10-28",
+  "timezone": "Europe/Moscow",
+  "scope": "Synchronize prepared 26-31D constructions with all remote improvements. This is not a comprehensive new literature survey.",
+  "packingstar_head": "b67832ad9970895a22ab667bb06d1d43a45c6b18",
+  "head_check": "Fresh git ls-remote matched the pinned commit; fresh primary README retrieval confirmed the six comparison values.",
+  "source_url": "https://github.com/CDM1619/PackingStar/tree/b67832ad9970895a22ab667bb06d1d43a45c6b18/25D-31D/new_bounds_20261026",
+  "previous_method": "PackingStar: joint point removals, midpoint insertions and auxiliary layers",
+  "reported_public_bounds": {
+    "26": 201134,
+    "27": 209586,
+    "28": 221664,
+    "29": 231636,
+    "30": 247956,
+    "31": 251002
+  },
+  "new_results": {
+    "26": 201136,
+    "27": 209600,
+    "28": 221694,
+    "29": 231638,
+    "30": 247960,
+    "31": 251110
+  },
+  "gains_over_packingstar": {
+    "26": 2,
+    "27": 14,
+    "28": 30,
+    "29": 2,
+    "30": 4,
+    "31": 108
+  },
+  "local_source_commit": "ebe7169c9d9c7bab37af61a50967da23f2f0464c",
+  "remote_source_commit": "ff96038c852b409197e5ddb6388949a92048e173",
+  "verification": "Complete exact coordinate checks; independent of baseline validity, search logs and optimizer claims.",
+  "integrity_repair": "Updated the nested 43D SHA-256 manifest for its three changed remote artifacts; the package verifier now validates nested manifests too.",
+  "initial_remote_source_commit": "9616dcc4156d63a115b2c77e68bb5d0c2faae983"
+}

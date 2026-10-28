@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "positive_controls": [
+    "mixed_pair_certificate.py",
+    "verify_support_bits.py"
+  ],
+  "rejected_cases": {
+    "duplicate_support": [
+      "mixed_pair_certificate.py",
+      "verify_support_bits.py"
+    ],
+    "intersection_23": [
+      "mixed_pair_certificate.py",
+      "verify_support_bits.py"
+    ],
+    "weight_23": [
+      "mixed_pair_certificate.py",
+      "verify_support_bits.py"
+    ]
+  }
+}

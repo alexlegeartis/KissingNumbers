@@ -6,6 +6,68 @@ construction in each dimension. See the [current registry](../../../RESULTS.md),
 [nearest-coset updates](../dim73-88-gamma72-cosets/). Older counts below remain
 results about the original construction.
 
+The **further 28 October continuation** has a **7,783-line base** and
+**4,101,234 distinct mother lines** in 577 classes. It improves every 49–60D
+bound again, by 210 through 74,090 points over commit `9d38a38`. Its complete
+30,283,653 base pairs and all isometries pass both exact representations.
+The preceding 7,678-line archive and receipt remain as
+`october/family_refilled_7678.npz` and `family_refilled_7678.verified.json`.
+`verify_refilled.py` now compares with that immediately preceding family.
+`scripts/refill_family.py` reproduces the new selection from 5,577 candidate
+images, including 5,000 seeded images in addition to the historical 577.
+All earlier construction descriptions below retain their dated scope.
+
+The **earlier 28 October refilling continuation** improved every registered bound in
+49–60D. Its base contains **7,678 lines** and its 577 classes retain
+**4,047,491 distinct mother lines**. `october/family_refilled_7678.npz` exhibits
+the new base class, 577 exact isometries and every retained base index.
+For compact storage, isometries use generator words or references to the retained
+historical transforms, and index sets use packed bitmaps. `october_family.py`
+expands them with bounded integer products before verification. Its exact counts and gains over commit
+`a6ba3387f2b0b54942812790a1ddf19bb4e99431` are in
+`october/family_refilled_7678.verified.json`. `verify_refilled.py` checks every base
+pair and all isometries twice, and checks disjointness using both canonical
+integer hashes and independent full 48-coordinate comparisons. The binary64
+replay first bounds every product and partial sum within its exact integer range.
+`verify_october.py` runs the historical replay and both new representations.
+
+The new replay and family generator require NumPy and threadpoolctl.
+
+```bash
+python verify_october.py
+python verify_refilled.py
+python scripts/refill_family.py --output /tmp/family_refilled.npz
+```
+
+The last command deterministically regenerates every array of the installed
+family from its exhibited base. The family search considers the original 577
+images plus 2,000 distinct seeded random-word images, chooses by marginal
+coverage, and refills after every selection. The base was discovered by filling,
+one-for-two replacements and neutral swaps in a 12,854,287-line candidate pool.
+The timed discovery search is not required to trust or replay the certificate.
+The P48 minimum six and 52,416,000-point parent shell remain literature inputs.
+The unchanged direction and pole codes retain their earlier verification scope;
+60D uses the published 756-point Coxeter–Todd shell and the 841-point 12D pole code.
+The new result is a verified improvement over the preceding repository
+construction, with no unrestricted optimality or new worldwide priority claim.
+
+The strategy follows the fill/correct principle in
+[PackingStar's published method](https://arxiv.org/abs/2511.13391v4).
+Its newer announcement discusses joint removals, midpoint insertions and
+auxiliary layers, but does not specify a complete implementation of that new
+scheme. Our fixed lattice coordinates enforce Gram feasibility automatically;
+the search operates on the exact conflict graph. This is a CPU combinatorial
+adaptation, with no reinforcement-learning reproduction claim.
+[The pinned source review](../../../common/source_review_20261028_p48.json)
+records that distinction and their larger reported 26–31D values.
+
+Choosing whole image families jointly matters even before enlarging the base:
+reordering the original 577 images and restoring overlaps recovers up to 2,223
+lines in the prefixes used by 50–60D. A line removed because an earlier image
+owned it may be retained when that earlier image is not selected. We rebuild
+disjointness from the raw images rather than append those lines to an already
+selected family. `october_family.py` compares complete families separately.
+
 The 24 October family has a **7,387-line base**, **577** explicit isometric
 images and **3,901,694** distinct mother lines. `verify_october.py` checks
 all base pairs, isometries and disjointness; `october_family.py` selects
@@ -19,7 +81,7 @@ Its cap counts in 61–63D remain valid constructions and are now superseded by
 the [October code constructions](../dim61-68-95-96-code-layers/). The older
 [ERS chain](../dim62-63-ers-chain/) also beats its caps in 62–63D.
 `scripts/ceiling.py` bounds families of images of the shipped bases, whose
-largest class has 7,387 lines. Larger base classes remain open; no absolute
+largest class size is fixed by the chosen shipped certificate. Larger base classes remain open; no absolute
 ceiling for this cap construction is proved.
 
 ```
@@ -30,19 +92,19 @@ python scripts/regenerate.py     # ~15 min: rebuilds and re-verifies all 1400 cl
 
 | dim | k | λ(k) | Σ|C_i| | gain | **this work** | previously |
 |---|---|---|---|---|---|---|
-| 49 | 1 | 1 | 7 387 | +14 776 | **52 430 776** | 52 416 002 |
-| 50 | 2 | 3 | 22 158 | +44 322 | **52 460 322** | 52 416 006 |
-| 51 | 3 | 6 | 44 303 | +88 618 | **52 504 618** | 52 416 012 |
-| 52 | 4 | 12 | 88 541 | +177 106 | **52 593 106** | 52 416 024 |
-| 53 | 5 | 20 | 147 412 | +294 864 | **52 710 864** | 52 416 040 |
-| 54 | 6 | 36 | 264 749 | +529 570 | **52 945 570** | 52 416 072 |
-| 55 | 7 | 63 | 461 480 | +923 086 | **53 339 086** | 52 416 126 |
-| 56 | 8 | 120 | 871 429 | +1 743 098 | **54 159 098** | 52 416 240 |
-| 57 | 9 | 153 | 1 105 366 | +2 211 038 | **54 627 038** | 52 416 306 |
-| 58 | 10 | 255 | 1 813 321 | +3 627 152 | **56 043 152** | 52 416 510 |
-| 59 | 11 | 302 | 2 131 922 | +4 264 448 | **56 680 448** | 52 416 604 |
-| **60** | **12** | **378** | **2 636 915** | **+5 274 671** | **57 690 671** | 52 416 841 |
-| 61 | 13 | 577 | 3 901 694 | +7 804 542 | 60 220 542 &nbsp;*(superseded by 71 310 488)* | 52 417 154 |
+| 49 | 1 | 1 | 7 783 | +15 568 | **52 431 568** | 52 416 002 |
+| 50 | 2 | 3 | 23 349 | +46 704 | **52 462 704** | 52 416 006 |
+| 51 | 3 | 6 | 46 696 | +93 404 | **52 509 404** | 52 416 012 |
+| 52 | 4 | 12 | 93 342 | +186 708 | **52 602 708** | 52 416 024 |
+| 53 | 5 | 20 | 155 429 | +310 898 | **52 726 898** | 52 416 040 |
+| 54 | 6 | 36 | 279 183 | +558 438 | **52 974 438** | 52 416 072 |
+| 55 | 7 | 63 | 486 675 | +973 476 | **53 389 476** | 52 416 126 |
+| 56 | 8 | 120 | 918 859 | +1 837 958 | **54 253 958** | 52 416 240 |
+| 57 | 9 | 153 | 1 165 425 | +2 331 156 | **54 747 156** | 52 416 306 |
+| 58 | 10 | 255 | 1 910 590 | +3 821 690 | **56 237 690** | 52 416 510 |
+| 59 | 11 | 302 | 2 245 464 | +4 491 532 | **56 907 532** | 52 416 604 |
+| **60** | **12** | **378** | **2 775 751** | **+5 552 343** | **57 968 343** | 52 416 841 |
+| 61 | 13 | 577 | 4 101 234 | +8 203 622 | 60 619 622 &nbsp;*(superseded by 71 310 488)* | 52 417 154 |
 | 62 | 14 | 966 | 5 899 945 | +11 801 822 | 64 217 822 &nbsp;*(superseded by 100 371 468)* | 52 417 932 |
 | 63 | 15 | 1 282 | 7 473 594 | +14 949 752 | 67 365 752 &nbsp;*(superseded by 182 407 428)* | 52 418 564 |
 

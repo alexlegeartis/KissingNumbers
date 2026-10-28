@@ -25,11 +25,75 @@ def bit_counts(words):
     return total
 
 
+def check_obstructions(data, masks, occupied):
+    # Independent polynomial-basis GF(4) multiplication (x^2=x+1).
+    def mul(a, b):
+        value = 0
+        while b:
+            if b & 1:
+                value ^= a
+            b >>= 1
+            a <<= 1
+            if a & 4:
+                a ^= 7
+        return value
+    def trace(a):
+        value = a ^ mul(a, a)
+        assert value in (0, 1)
+        return value
+    generator = data['quaternary_generator']
+    assert generator.shape == (9, 24) and generator.dtype == np.uint8
+    assert np.all(generator <= 3)
+    # Enumerate the outer code independently to check size and distance.
+    words = np.zeros((4**9, 24), dtype=np.uint8)
+    for j, row in enumerate(generator):
+        for a in (1, 2, 3):
+            multiple = np.array([mul(a, int(v)) for v in row], dtype=np.uint8)
+            words[a*4**j:(a+1)*4**j] = words[:4**j] ^ multiple
+    weights = np.count_nonzero(words, axis=1)
+    assert np.count_nonzero(weights == 0) == 1 and min(weights[1:]) == 12
+    witness = data['dual_witnesses']
+    assert witness.dtype == np.uint64 and witness.shape == (len(masks), 2)
+    assert np.all(witness < 2**48)
+    total = bound = 0
+    for index, mask in enumerate(masks):
+        used = set()
+        misses = 0
+        for encoded in witness[index]:
+            encoded = int(encoded)
+            if not encoded:
+                continue
+            d = [(encoded >> (2*r)) & 3 for r in range(24)]
+            active = {r for r in range(24) if d[r]}
+            assert not used & active
+            used |= active
+            for row in generator:
+                product = 0
+                for a, b in zip(d, row):
+                    product ^= mul(a, int(b))
+                assert product == 0
+            parity = 0
+            for r in active:
+                bits = {trace(mul(d[r], c)) for c in range(4)
+                        if (mask >> (4*r+c)) & 1}
+                assert len(bits) == 1
+                parity ^= bits.pop()
+            assert parity == 1
+            misses += 1
+        assert occupied[index]-misses <= 12
+        bound = max(bound, occupied[index]-misses)
+        total += misses
+    return dict(occupied_row_histogram=np.bincount(occupied, minlength=15).tolist(),
+                dual_obstruction_supports=sum(v > 12 for v in occupied),
+                disjoint_dual_checks=total, maximum_transversal_intersection_bound=bound)
+
+
 def main():
     if not __debug__:
         raise SystemExit('Run without -O: certificate assertions must be enabled.')
     path = HERE / 'mixed_pair_certificate.npz'
     with np.load(path, allow_pickle=False) as data:
+        data = dict(data)
         low, high = data['supports_low'], data['supports_high']
     assert low.dtype == high.dtype == np.uint64
     assert low.ndim == high.ndim == 1 and low.shape == high.shape and len(low) > 1
@@ -38,7 +102,8 @@ def main():
     masks = [int(lo) | (int(hi) << 64) for lo, hi in zip(low, high)]
     assert len(set(masks)) == len(masks)
     occupied = [sum(bool(mask & (15 << (4*r))) for r in range(24)) for mask in masks]
-    assert max(occupied) <= 12
+    assert max(occupied) <= 14
+    obstruction_report = check_obstructions(data, masks, occupied)
     histogram = [0]*9
     for mask in masks:
         histogram[bin(mask & 255).count('1')] += 1
@@ -63,6 +128,7 @@ def main():
                   maximum_occupied_rows=max(occupied),
                   section_intersection_histogram=histogram,
                   certificate_sha256=hashlib.sha256(path.read_bytes()).hexdigest())
+    report.update(obstruction_report)
     (HERE/'support_bits_verification.json').write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(report, indent=2), flush=True)
 

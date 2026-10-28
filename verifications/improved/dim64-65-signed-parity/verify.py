@@ -1,4 +1,5 @@
 """Fresh enumeration and exact parity/geometry replay, isolated from research."""
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -97,10 +98,18 @@ def main():
     # The owner's coherence and the cap-versus-equator geometry were
     # checked in construction65(), and apply to every new equator point.
     expected = results()
-    assert expected[0]['total']==owner_report['base64_total']+2048*len(added)
+    assert data['dimension64']==owner_report['base64_total']+2048*len(added)
+    shared_package = ROOT.parent/'dim61-68-95-96-code-layers'
+    provenance = json.loads((ROOT/'UPDATE_PROVENANCE.json').read_text())
+    assert hashlib.sha256((shared_package/'source/shared_parity/shared_layers.json').read_bytes()).hexdigest() == provenance['shared_receipt_sha256']
+    assert hashlib.sha256((shared_package/'source/shared_parity/global.npz').read_bytes()).hexdigest() == provenance['shared_certificate_sha256']
+    subprocess.run([sys.executable,'-B',str(shared_package/'verify_shared.py')],check=True)
+    shared = json.loads((shared_package/'source/shared_parity/shared_layers.json').read_text())
+    assert expected[0]['total']==owner_report['base64_total']+2048*shared['families']['global']['new_supports']
     assert expected[1]['total']==expected[0]['total']+68224+2
     print(json.dumps(dict(status='PASS',freshly_enumerated_words=2*(2**28),
-        added_supports=len(added),modified_old_supports=len(used),results=expected)))
+        historical_added_supports=len(added),current_added_supports=shared['families']['global']['new_supports'],
+        modified_old_supports=shared['families']['global']['modified_old_supports'],results=expected)))
 
 
 if __name__ == '__main__':

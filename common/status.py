@@ -408,8 +408,8 @@ for _d in range(73, 96):
 STATUS[96] = ('external', REASON['external-96'])
 for _d in (36, 37):
     STATUS[_d] = ('cosets', 'exact Coxeter-Todd short shells and phase-orbit angles '
-                  'replay; 37D adds two latitude layers. Larger phase codes remain open '
-                  '(dim36-37-coxeter-todd/verify.py, phase/proof.txt)')
+                  'replay in two representations; 37D adds partial latitude orbits. Larger refills remain open '
+                  '(dim36-37-coxeter-todd/verify.py, completion/proof.md)')
 for _d in range(41, 47):
     STATUS[_d] = ('heads',
                   'independently normalized P48n body families with rational heads and pure '
@@ -481,16 +481,15 @@ STATUS[39] = ('codes', 'neutral support substitutions and shared root replacemen
               'larger compatible patches and support codes remain open '
               '(dim39-root-replacements/verify.py)')
 for _d in (77, 78, 79):
-    STATUS[_d] = ('cosets', 'exact norm-ten shell moment distributions and finite-graph existence bounds; '
+    STATUS[_d] = ('cosets', 'exact norm-ten moments, mixed tails and weighted-priority existence bounds; '
                   'different tail sets and stronger independence bounds remain open '
                   '(dim73-88-gamma72-cosets/verify_norm10.py)')
 
 
 # Independently replayed 26 October constructions.
 STATUS[25] = ('heads', 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons; larger compatible families remain open (dim25-collective-deformation/verify.py)')
-STATUS[27] = ('heads', 'quadratic E8/cuboctahedral normal-module replacement over PackingStar coordinates; full exact all-pairs replay; other tail geometries and coordinated core changes remain open (dim27-quadratic-normal-module/verify.py)')
-STATUS[31] = ('heads', 'signed simplex normal-module exchange over PackingStar coordinates; complete exact all-pairs replay; larger modules and coordinated exchanges remain open (dim31-normal-module-exchange/verify.py)')
-STATUS[38] = ('heads', '1352 joint latitude families, signed axis rotation and coordinate axes; exact integer replay; larger compatible families remain open (dim38-joint-latitudes/verify.py)')
+STATUS[31] = ('heads', 'shared midpoint replacements and dual E7 centres; exact coordinate replay; larger compatible families remain open (dim31-dual-centres/verify.py)')
+STATUS[38] = ('heads', '6656 Fano-grid and cube-edge latitude points after 120 cap deletions; this 63-support latitude model is saturated; other supports, norm splits and axis layers remain open (dim38-joint-latitudes/verify.py)')
 STATUS[39] = ('codes', 'rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration; larger compatible families remain open (dim39-deformed-orbits/verify.py)')
 STATUS[40] = ('heads', 'three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products; larger compatible families remain open (dim40-affine-shells/verify.py)')
 
@@ -499,6 +498,14 @@ for _d in (32, 33):
 for _d in (34, 35):
     STATUS[_d] = ('heads', 'dense-code coset shifts with coordinated full-support heads and root deletions; larger compatible head families and different parities remain open (dim32-35-signed-layers/verify.py)')
 
+# Published nonlinear Z8 parent and fully checked sections, 28 October 2026.
+for _d in range(88, 97):
+    STATUS[_d] = ('codes', 'nonlinear Z8 Golay parent, exact central sections and sparse layers; '
+                  'different sections and larger compatible layers remain open '
+                  '(dim88-96-z8-golay/verify.py)')
+
+STATUS[27] = ('heads', 'quadratic E8/cuboctahedral normal-module replacement over PackingStar coordinates; full exact all-pairs replay; other tail geometries and coordinated core changes remain open (dim27-quadratic-normal-module/verify.py)')
+STATUS[31] = ('heads', 'signed simplex normal-module exchange over PackingStar coordinates; complete exact all-pairs replay; larger modules and coordinated exchanges remain open (dim31-normal-module-exchange/verify.py)')
 for _d in (26, 28, 29, 30):
     STATUS[_d] = ('heads', 'asymmetric normal-sector exchange over PackingStar coordinates; complete exact all-pairs replay without antipodality; larger candidate pools and core rerouting remain open (dim26-30-asymmetric-exchanges/verify.py)')
 
@@ -510,3 +517,9 @@ if __name__ == '__main__':
     for s in sorted(by):
         ds = by[s]
         print('  %-10s %2d dimensions  %-16s %s' % (s, len(ds), runs(ds), LEGEND[s]))
+
+# Signed constant-weight tail orbits, independently checked 28 October 2026.
+for _d in (82, 83, 84, 85, 87):
+    STATUS[_d] = ('cosets', 'signed-tail orbit profiles and weighted-priority existence bounds; '
+                  'different tail sets and stronger independence bounds remain open '
+                  '(dim73-88-gamma72-cosets/verify_norm10.py)')

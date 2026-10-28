@@ -1,4 +1,4 @@
-"""Check the 7,387-line base, all 577 isometries and 3,901,694 distinct lines."""
+"""Check the historical October family and both exact refilled-family replays."""
 import json
 from pathlib import Path
 import sys
@@ -67,6 +67,8 @@ def main():
     print(json.dumps(dict(status='PASS', base_lines=len(base),
                           pairs=int(histogram.sum()), classes=len(sizes),
                           distinct_mother_lines=len(hashes))))
+    from verify_refilled import main as verify_refilled
+    verify_refilled()
 
 
 if __name__ == '__main__':

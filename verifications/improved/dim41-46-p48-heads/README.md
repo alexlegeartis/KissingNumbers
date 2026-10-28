@@ -1,12 +1,12 @@
 # P48n body families and rational heads in dimensions 41–46
 
-Checkpoint: **24 October 2026**. Six current constructions are supplied.
+Checkpoint: **28 October 2026**. Six current constructions are supplied.
 
 | Dimension | Total | Current certificate |
 |---|---:|---|
 | 41 | **1,460,036** | 1,460,034 body points and two pure-head poles |
 | 42 | **1,991,445** | 1,991,439 body points and a pure-head hexagon |
-| 43 | **2,919,743** | 118 complete families, 3,408 explicit tiny points and five pure heads |
+| 43 | **2,919,782** | 118 complete families, 3,447 explicit tiny points and five pure heads |
 | 44 | **4,939,281** | 1,034 complete body families |
 | 45 | **7,655,056** | 2,187 complete body families and 16 pure heads |
 | 46 | **13,387,797** | 13,387,770 body points and 27 pure heads |
@@ -42,24 +42,37 @@ runs the portable 43D and 45D verifiers in temporary copies to preserve the
 supplied reports. It needs no optimizer, compiler, network or python-flint.
 Run without `-O`.
 
-Fresh integration replays passed **6,232,333** angle checks in 43D and
+Fresh integration replays passed **6,370,783** angle checks in 43D and
 **2,427,690** in 45D. The portable verifiers reconstruct the parent embedding,
 full rank-40 complement and gluing map, and check all 30,240 explicit shortest
 bodies. Their complete-family populations retain the assumptions below.
 
-## New 43D certificate
+## 43D continuous-head continuation
 
-`partial43/verify.py` checks `configuration_43.npz` together with
-`explicit_points_43.npz`. The 3,408 explicit tiny-body/head pairs replace the
-previous 3,351-point complete tiny layer. They must not be added on top of it.
-Shared-deletion trades and compatible free insertions give the **57-point**
-gain over 2,919,686. Absence of shortest body differences sharpens 21,825
-body bounds; those absences are checked against the complete tiny-body pool.
+The current certificate has **2,919,782** points. Continuous head placement
+after shared tiny-point deletions replaces 46 old points with 85, increasing
+the explicit layer from 3,408 to **3,447** and the total by **39**.
+The 118 complete families and five pure heads retain their previous inputs.
 
-The older writeup target 2,911,990 and its unavailable seven extension points
-are historical. The supplied 2,919,743-point certificate is a different,
-larger construction and does not depend on the missing files. See
-[43D certification history](43_CERTIFICATION.md).
+`partial43/verify.py` checks every angle using ambient 48-coordinate bodies.
+`continuation43/verify_coordinates.py` independently reconstructs rank-40
+coefficient coordinates and uses integer square-root cutoffs. Each checks
+6,370,783 conditions, including 5,939,181 distinct tiny-point pairs and
+22,001 short-difference refinements. `verify.py` runs both representations.
+
+[The continuation notes](continuation43/README.md) give the continuous-polytope
+method, exact coordinate definition and verification scope.
+`continuation43/reproduce.py` rebuilds the final arrays from the retained
+predecessor and rational delta, without a numerical search or optimizer.
+`continuation43/search.py` and `continuation43/select_candidates.py` are optional further
+search tools. `continuation43/negative_controls.py` checks that both verifiers
+reject duplicated points and invalid pure-head angles.
+
+The 24 October 2,919,743-point certificate is retained in
+`continuation43/previous_points.npz`. Its 3,408-point layer had improved the
+preceding complete tiny layer by 57. The older writeup target 2,911,990 and
+its unavailable seven extension points remain historical; no current claim
+depends on those missing files. See [the certification history](43_CERTIFICATION.md).
 
 ## Coordinated 45D movement
 
@@ -126,7 +139,9 @@ large shell in the latest six constructions.
 ## Files and provenance
 
 - `bounds.json`: current ledger; `final.py` and `verify.py`: read-only integration drivers.
-- `partial43/`: complete portable 43D result, including `verify.py`,
+- `continuation43/`: preceding tiny layer, exact delta, independent coefficient verifier,
+  reproduction, optional search tools and pinned receipts.
+- `partial43/`: complete portable current 43D result, including `verify.py`,
   `verify_families.py`, explicit tiny points, geometry, population note and pinned reports.
 - `coordinated45/`: complete portable 45D result, including `verify.py`,
   `verify_inherited.py`, `coordinates.py`, explicit new bodies and pinned reports.

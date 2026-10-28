@@ -1,0 +1,19 @@
+{
+  "points_36": 501687,
+  "points_37": 505503,
+  "base_points": 403704,
+  "expanded_phase_points": 97983,
+  "expanded_lift_bodies": 1908,
+  "phase_coordinate_pair_products": 61667370,
+  "lift_coordinate_pair_products": 1819278,
+  "lift_equator_coordinate_products": 0,
+  "exact_shell_counts": {
+    "8": 20412,
+    "6": 4032,
+    "4": 756
+  },
+  "all_checks_pass": true,
+  "certificate_sha256": "b37691e110c73f1100112aea1a4dc39e2a911559a7a49c67c88bb303f6cd8760",
+  "arithmetic": "Fraction enumeration and int64 coordinate matrix products",
+  "elapsed_seconds": 5.153655611999056
+}

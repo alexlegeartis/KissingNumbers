@@ -1,0 +1,74 @@
+{
+  "status": "Verified: explicit parity-compatible parent and two exact sign-count representations",
+  "dimensions": {
+    "62": {
+      "total": 100437548,
+      "previous_bound": 100371468,
+      "gain": 66080,
+      "terms": {
+        "dense_section": 80281600,
+        "original_weight16_section": 20020996,
+        "added_weight16_section": 70688,
+        "weight4_section": 64168,
+        "ordinary_poles": 96
+      },
+      "section_supports": [
+        [
+          4,
+          12,
+          18,
+          21,
+          24,
+          26,
+          45,
+          59
+        ],
+        [
+          5,
+          13,
+          19,
+          22,
+          25,
+          27,
+          46,
+          60
+        ]
+      ],
+      "projection_rank": 14,
+      "repaired_old_before": 1127396,
+      "repaired_old_after": 1122788
+    },
+    "63": {
+      "total": 182537988,
+      "previous_bound": 182407428,
+      "gain": 130560,
+      "terms": {
+        "dense_section": 146800640,
+        "original_weight16_section": 35503776,
+        "added_weight16_section": 130560,
+        "weight4_section": 102900,
+        "ordinary_poles": 112
+      },
+      "section_supports": [
+        [
+          4,
+          12,
+          18,
+          21,
+          24,
+          26,
+          45,
+          59
+        ]
+      ],
+      "projection_rank": 7,
+      "repaired_old_before": 1936960,
+      "repaired_old_after": 1936960
+    }
+  },
+  "parent_additions": 211,
+  "disjoint_repaired_old_supports": 1688,
+  "parent_certificate_sha256": "16b9b7da699d508fa460fd692fdfb0620480c4ed4078dc4f5270c230882d4c83",
+  "source_scope": "The original [64,28,16] code and distance proof are unchanged. All new supports, parity repairs, coset shifts and section counts are checked here.",
+  "geometry": "Every section is central in a norm64 kissing configuration; orthogonal identification preserves norms and inner products."
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "dimension": 33,
+    "points": 370376,
+    "baseline_points": 370368,
+    "expanded_star_points": 64,
+    "expanded_base_points": 370312,
+    "new_star_base_products": 23699968,
+    "maximum_integer_products": {
+      "dense": 12,
+      "middle": 16,
+      "roots": 16,
+      "stars": 16
+    },
+    "all_checks_pass": true,
+    "certificate_sha256": "1c11d1585922b2e96ba70c05e342e2593bd6defc6ab9e17a7a9a5b38e847bb3b",
+    "arithmetic": "int32 coordinate products; int64 mixed-norm squares",
+    "elapsed_seconds": 2.2006741690001945
+  },
+  {
+    "dimension": 34,
+    "points": 390990,
+    "baseline_points": 390982,
+    "expanded_star_points": 64,
+    "expanded_base_points": 390926,
+    "new_star_base_products": 25019264,
+    "maximum_integer_products": {
+      "dense": 12,
+      "middle": 16,
+      "roots": 16,
+      "stars": 16,
+      "heads": 12
+    },
+    "all_checks_pass": true,
+    "certificate_sha256": "77a5972ee16f644da83666a4d7503b5f120639fdc6dc850bcd58b65b3c036570",
+    "arithmetic": "int32 coordinate products; int64 mixed-norm squares",
+    "elapsed_seconds": 2.540493526001228
+  },
+  {
+    "dimension": 35,
+    "points": 415334,
+    "baseline_points": 415314,
+    "expanded_star_points": 128,
+    "expanded_base_points": 415206,
+    "new_star_base_products": 53146368,
+    "maximum_integer_products": {
+      "dense": 10,
+      "middle": 16,
+      "roots": 16,
+      "stars": 16,
+      "heads": 20
+    },
+    "all_checks_pass": true,
+    "certificate_sha256": "7d25f8b59a1e72df8982cd7065fc553d5776d236517c924eefe253c6d4e2e47e",
+    "arithmetic": "int32 coordinate products; int64 mixed-norm squares",
+    "elapsed_seconds": 1.6052993049997895
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "status": "Completed finite search; certificate independently verified",
+  "starting_checkpoint": "start_supports.npz",
+  "starting_checkpoint_sha256": "f53407bbf8de719a1f82dee702e2155e2325ec32ec4c8906ec499cc53b962ea0",
+  "starting_supports": 24615,
+  "seed": 282029,
+  "trials": 100000000,
+  "neutral_period": 256,
+  "free_additions": 5,
+  "two_for_one_trades": 11,
+  "one_for_one_moves": 89,
+  "final_supports": 24631,
+  "final_section95_support_points": 245767168,
+  "canonical_text_format": "Support count then one decimal unsigned low/high pair per line, space separated, LF, in stored order.",
+  "canonical_ordered_support_text_sha256": "75b154b6e7af83d4a065bf9658306723ea9f458f2b65172da3184b009771caa9",
+  "certificate_sha256": "81ed499073d43d74706814c03342bf2a4309a7bb2d46b9bdaa220f0f54b3fe89",
+  "proof": "Both complete support replays, sign-code distance enumeration and the exact dense-code central projection passed.",
+  "scope": "Finite heuristic, not an optimum; the starting checkpoint includes two earlier insertions.",
+  "reproduction_verified": true,
+  "reproduced_certificate_sha256": "81ed499073d43d74706814c03342bf2a4309a7bb2d46b9bdaa220f0f54b3fe89",
+  "reproduction_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "compiler": "g++ C++17, -O3 -mpopcnt"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "rejected_cases": {
+    "duplicate": [
+      "partial43/verify.py",
+      "continuation43/verify_coordinates.py"
+    ],
+    "pure_angle": [
+      "partial43/verify.py",
+      "continuation43/verify_coordinates.py"
+    ]
+  }
+}

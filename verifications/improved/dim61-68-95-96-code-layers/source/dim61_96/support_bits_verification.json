@@ -1,19 +1,39 @@
 {
   "status": "PASS: complete packed integer support replay",
-  "supports": 24613,
-  "support_pairs_checked": 302887578,
+  "supports": 26022,
+  "support_pairs_checked": 338559231,
   "maximum_distinct_support_intersection": 12,
-  "maximum_occupied_rows": 12,
+  "maximum_occupied_rows": 14,
   "section_intersection_histogram": [
-    6990,
-    0,
-    11418,
-    0,
-    5457,
+    7248,
+    193,
+    11915,
+    260,
+    5658,
     0,
     704,
     0,
     44
   ],
-  "certificate_sha256": "5f44dbe7a1364e9682a4092a38ddae07ff6c8bae57206b397de9fe971bad0554"
+  "certificate_sha256": "d0def7d6587ca3aa1b39c9f3e7ccb844310285a7f1794dc8e9492f0fff9fc65d",
+  "occupied_row_histogram": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    6,
+    140,
+    1700,
+    6144,
+    6310,
+    9649,
+    42,
+    2031
+  ],
+  "dual_obstruction_supports": 2073,
+  "disjoint_dual_checks": 4104,
+  "maximum_transversal_intersection_bound": 12
 }

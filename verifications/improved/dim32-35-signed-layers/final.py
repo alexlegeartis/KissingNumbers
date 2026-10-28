@@ -25,6 +25,13 @@ def results():
                 assert e['removed_root_antipodal_lines']==1 and e['added_head_antipodal_lines']==2
                 total+=2*(e['added_head_antipodal_lines']-e['removed_root_antipodal_lines'])
         assert total==c['points']=={32:352800,33:370368,34:390982,35:415314}[d]
+        if d in (33,34,35):
+            trade=json.loads((ROOT/'root_trades'/('certificate%d.json'%d)).read_text())
+            assert trade['format']=='root_star_trade_v1' and trade['dimension']==d
+            assert trade['baseline']==file.relative_to(ROOT).as_posix()
+            assert hashlib.sha256(file.read_bytes()).hexdigest()==trade['baseline_sha256']
+            total+=16*len(trade['stars'])-2*len(trade['removed_root_lines'])
+            assert total==trade['points']
         out.append(dict(dimension=d,total=total))
     return out
 
