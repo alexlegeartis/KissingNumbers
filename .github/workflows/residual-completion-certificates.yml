@@ -22,6 +22,7 @@ jobs:
       - run: python audit.py --repository-only --write-results
       - run: git diff --exit-code -- RESULTS.md
       - run: python audit.py --repository-only
+      - run: python verifications/improved/dim88-96-z8-golay/verify.py
       - run: python verifications/improved/dim41-46-p48-heads/verify.py
       - run: python verifications/improved/dim41-46-p48-heads/continuation43/negative_controls.py
       - run: python verifications/improved/dim73-88-gamma72-cosets/verify_norm10.py

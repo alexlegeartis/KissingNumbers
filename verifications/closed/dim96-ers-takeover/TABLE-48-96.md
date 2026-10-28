@@ -40,15 +40,15 @@
 | 85 | 6 223 222 688 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
 | 86 | 6 225 165 512 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
 | 87 | 6 226 194 610 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D |
-| 88 | 6 232 239 528 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 89 | 6 235 525 036 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 90 | 6 242 027 140 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 91 | 6 252 202 550 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 92 | 6 272 431 575 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 93 | 6 301 636 084 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 94 | 6 357 657 396 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 95 | 7 101 541 132 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
-| 96 | 13 313 343 680 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
+| 88 | 6 921 251 584 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 89 | 9 229 354 136 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 90 | 12 306 670 328 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 91 | 16 409 599 116 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 92 | 21 880 490 288 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 93 | 31 040 958 640 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 94 | 47 697 508 076 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 95 | 77 565 848 332 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
+| 96 | 142 162 362 560 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays |
 
 ## Retained dimension-96 comparisons
 

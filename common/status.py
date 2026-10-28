@@ -498,6 +498,12 @@ for _d in (32, 33):
 for _d in (34, 35):
     STATUS[_d] = ('heads', 'dense-code coset shifts with coordinated full-support heads and root deletions; larger compatible head families and different parities remain open (dim32-35-signed-layers/verify.py)')
 
+# Published nonlinear Z8 parent and fully checked sections, 28 October 2026.
+for _d in range(88, 97):
+    STATUS[_d] = ('codes', 'nonlinear Z8 Golay parent, exact central sections and sparse layers; '
+                  'different sections and larger compatible layers remain open '
+                  '(dim88-96-z8-golay/verify.py)')
+
 if __name__ == '__main__':
     print(__doc__)
     by = {}

@@ -1,0 +1,122 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "dimension": 88,
+      "total": 6921251584,
+      "previous_repository": 6232239528,
+      "gain": 689012056,
+      "terms": {
+        "dense": 6879707136,
+        "transversal24": 0,
+        "support24": 41334272,
+        "support6": 209952,
+        "pure": 224
+      }
+    },
+    {
+      "dimension": 89,
+      "total": 9229354136,
+      "previous_repository": 6235525036,
+      "gain": 2993829100,
+      "terms": {
+        "dense": 9172942848,
+        "transversal24": 0,
+        "support24": 55942556,
+        "support6": 468512,
+        "pure": 220
+      }
+    },
+    {
+      "dimension": 90,
+      "total": 12306670328,
+      "previous_repository": 6242027140,
+      "gain": 6064643188,
+      "terms": {
+        "dense": 12230590464,
+        "transversal24": 0,
+        "support24": 75611136,
+        "support6": 468512,
+        "pure": 216
+      }
+    },
+    {
+      "dimension": 91,
+      "total": 16409599116,
+      "previous_repository": 6252202550,
+      "gain": 10157396566,
+      "terms": {
+        "dense": 16307453952,
+        "transversal24": 0,
+        "support24": 101676440,
+        "support6": 468512,
+        "pure": 212
+      }
+    },
+    {
+      "dimension": 92,
+      "total": 21880490288,
+      "previous_repository": 6272431575,
+      "gain": 15608058713,
+      "terms": {
+        "dense": 21743271936,
+        "transversal24": 0,
+        "support24": 136304192,
+        "support6": 913952,
+        "pure": 208
+      }
+    },
+    {
+      "dimension": 93,
+      "total": 31040958640,
+      "previous_repository": 6301636084,
+      "gain": 24739322556,
+      "terms": {
+        "dense": 30366760960,
+        "transversal24": 536870912,
+        "support24": 136412608,
+        "support6": 913952,
+        "pure": 208
+      }
+    },
+    {
+      "dimension": 94,
+      "total": 47697508076,
+      "previous_repository": 6357657396,
+      "gain": 41339850680,
+      "terms": {
+        "dense": 46439333888,
+        "transversal24": 1073741824,
+        "support24": 183518208,
+        "support6": 913952,
+        "pure": 204
+      }
+    },
+    {
+      "dimension": 95,
+      "total": 77565848332,
+      "previous_repository": 7101541132,
+      "gain": 70464307200,
+      "terms": {
+        "dense": 75161927680,
+        "transversal24": 2147483648,
+        "support24": 255120384,
+        "support6": 1316444,
+        "pure": 176
+      }
+    },
+    {
+      "dimension": 96,
+      "total": 142162362560,
+      "previous_repository": 13313343680,
+      "gain": 128849018880,
+      "terms": {
+        "dense": 137438953472,
+        "transversal24": 4294967296,
+        "support24": 426344448,
+        "support6": 2097152,
+        "pure": 192
+      }
+    }
+  ]
+}

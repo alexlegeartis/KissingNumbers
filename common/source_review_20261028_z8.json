@@ -1,0 +1,62 @@
+{
+  "review_date": "2026-10-28",
+  "parent_code": {
+    "authors": [
+      "Iwan M. Duursma",
+      "Marcus Greferath",
+      "Simon N. Litsyn",
+      "Stefan E. Schmidt"
+    ],
+    "year": 2001,
+    "title": "A Z8-linear lift of the binary Golay code and a nonlinear binary (96, 2^37, 24)-code",
+    "doi": "10.1109/18.923742",
+    "binary_length": 96,
+    "binary_words": 137438953472,
+    "binary_distance": 24,
+    "source_urls": [
+      "https://doi.org/10.1109/18.923742",
+      "https://research.aalto.fi/en/publications/a-z8-linear-lift-of-the-binary-golay-code-and-a-nonlinear-binary-/",
+      "https://experts.illinois.edu/en/publications/a-zsub8sub-linear-lift-of-the-binary-golay-code-and-a-nonlinear-b/",
+      "https://www.rocq.inria.fr/secret/PUBLICATIONS/THESE_FG/VERSION/these_galand_t.pdf",
+      "https://maths.ucd.ie/~gref/publications.html"
+    ],
+    "scope": "University publication records and the author publication list confirm the published parent. Its distance is proved independently by both shipped replays; the proof does not depend on abstract metadata."
+  },
+  "previous_repository_commit": "2b187e0b3399802b1a095fc5b3ccb0810c1ab0d4",
+  "previous_repository_rows": {
+    "88": 6232239528,
+    "89": 6235525036,
+    "90": 6242027140,
+    "91": 6252202550,
+    "92": 6272431575,
+    "93": 6301636084,
+    "94": 6357657396,
+    "95": 7101541132,
+    "96": 13313343680
+  },
+  "corrected_published_code_floors": {
+    "92": 8589934592,
+    "93": 17179869184,
+    "94": 34359738368,
+    "95": 68719476736,
+    "96": 137438953472
+  },
+  "derived_ers_comparison96": {
+    "terms": {
+      "published_binary": 137438953472,
+      "transversal24": 4294967296,
+      "support6": 2097152,
+      "poles": 192
+    },
+    "total": 141736018112,
+    "additional_support_points": 426344448,
+    "scope": "Evaluation of the standard Edel--Rains--Sloane formula with the published nonlinear parent and the shipped classical auxiliary codes; distinguished from a published tabulated kissing number."
+  },
+  "support_source": {
+    "package": "dim61-68-95-96-code-layers",
+    "certificate_commit": "49ca28448fbfa3a7c59b07e663ef9872ded56b5e",
+    "sha256": "d0def7d6587ca3aa1b39c9f3e7ccb844310285a7f1794dc8e9492f0fff9fc65d",
+    "scope": "Pinned unchanged support family; all geometry reverified by this package."
+  },
+  "novelty_scope": "Stronger repository constructions using a recovered published nonlinear input, new explicit section counts and compatible small layers. No new binary-code or comprehensive global-priority claim; paper deferred."
+}

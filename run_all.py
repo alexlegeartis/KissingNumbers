@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 88 scripts, including large exact certificate replays
-    python run_all.py --full       # 107 scripts, budget about 10 hours
+    python run_all.py              # 89 scripts, including large exact certificate replays
+    python run_all.py --full       # 108 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -184,6 +184,8 @@ JOBS = [
      os.path.join(V, 'recovered', 'dim46-47-p48-cross-sections'), ['derive.py'], 0.1, True),
     ("october-p48: historical and refilled classes, all isometries and disjointness",
      os.path.join(V, 'improved', 'dim49-63-p48-caps'), ['verify_october.py'], 1.0, True),
+    ("Z8 Golay: dimensions 88-96, two exact compressed-construction proofs",
+     os.path.join(V, 'improved', 'dim88-96-z8-golay'), ['verify.py'], 5.0, True),
     ("october-codes: compression, support layers and central sections",
      os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py'], 5.0, True),
     ("dims 26-31: residual completions, full independent exact replay",
@@ -390,6 +392,7 @@ def _sota_jobs(quick=False):
         ('dim49-63-p48-caps', ('final.py',)),
         ('dim49-63-p48-caps', ('scripts/verify_capdirs.py',)),
         ('dim61-68-95-96-code-layers', ('verify.py',)),
+        ('dim88-96-z8-golay', ('verify.py',)),
         ('dim64-65-signed-parity', ('verify.py',)),
         ('dim68-69-gamma72-cross-sections', ('scripts/verify69.py',)),
         ('dim68-69-gamma72-cross-sections', ('scripts/recheck_cert.py',)),
@@ -485,6 +488,8 @@ def _sota_coverage(jobs, results=None):
          'exact finite-graph existence proofs; published Gamma72 minimum and all-shell design theorem; no full selected head list'),
         ('dim73-88-gamma72-cosets', [74, 75, 76, 80, 81, 86], [('verify.py',)],
          'seed nearestness inherits 21 completed block-enumeration lists and their completion metadata'),
+        ('dim88-96-z8-golay', list(range(88, 97)), [('verify.py',)],
+         'published nonlinear parent; complete finite distance proof, both support representations and exact section counts; no full 2^37-word enumeration'),
         ('dim73-95-gamma72-caps', list(range(88, 95)),
          [('scripts/verify_symmetry.py', '--complete')],
          'all retained class geometry and disjointness, directions, partitions, poles and counts; CPU replay'),

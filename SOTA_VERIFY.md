@@ -126,14 +126,14 @@ Checking the displayed counts in `final.py` is fast, but does not replace these
 geometric checks. For repeated local review, `--changed` avoids repeating a
 successful replay when the measured inputs and environment are unchanged.
 
-## Mixed-pair support continuation in 95--96D
+## Retained mixed-pair support continuation in 95--96D
 
 The code-layer package checks all 338,559,231 pairs of its 26,022 physical
 supports. `python verifications/improved/dim61-68-95-96-code-layers/verify95_96.py`
 replays the coordinate and packed-integer certificates, sign distances,
 95D section counts and GF(4) dual trace obstructions. The latter certify
 2,073 supports that occupy thirteen or fourteen rows. Both fresh receipts
-must match the pinned files. The bounds are 13,313,343,680 in 96D
+must match the pinned files. The retained predecessor bounds are 13,313,343,680 in 96D
 (+22,560,768) and 7,101,541,132 in 95D (+9,209,856) over the preceding
 repository certificate. The default package verifier includes both replays.
 
@@ -165,3 +165,15 @@ and do not enumerate selected norm-ten heads.
 `verify95_96.py` checks the new 24,645-support family: all 303,675,690
 support pairs in physical coordinates and again in packed integer form,
 plus the exact sign and section counts.
+
+## Nonlinear Golay parent and sections in 88–96D
+
+`python verifications/improved/dim88-96-z8-golay/verify.py` checks both exact
+compressed-construction proofs and malformed-certificate controls. Each proof
+checks all 16,777,216 Z4 words, 4,166,151 octad-coset exclusions and 338,559,231
+support pairs. It derives every dense projection and sparse section count.
+The (96,2^37,24) parent is published work of Duursma–Greferath–Litsyn–Schmidt
+(2001), previously missed by the linear-code comparison. The 92–96D floors
+now use that code and its shortenings; the standard full-chain evaluation is
+recorded separately as a derived comparison. No 2^37-word enumeration is claimed.
+Both the SOTA profile and CI run this complete package replay.

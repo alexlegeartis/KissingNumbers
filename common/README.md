@@ -197,3 +197,9 @@ The cap construction's own accounting is derived in the READMEs of
 and
 [`../verifications/improved/dim73-95-gamma72-caps/`](../verifications/improved/dim73-95-gamma72-caps/),
 and checked in coordinates against Cohn's table by the latter's `scripts/calibrate.py`.
+
+The 28 October nonlinear-code correction is recorded in
+`source_review_20261028_z8.json`. The published DGLS (96,2^37,24) parent and its
+shortenings replace the obsolete linear-only comparison in 92–96D. The current
+constructions and two independent finite proofs are in
+[dim88-96-z8-golay](../verifications/improved/dim88-96-z8-golay/).

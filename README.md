@@ -8,6 +8,18 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
+> **28 October 2026 — nonlinear-code correction and larger bounds in 88–96D.**
+> New verified constructions range from **6 921 251 584 in 88D** to
+> **142 162 362 560 in 96D**. The nonlinear **(96, 2^37, 24)** parent is
+> published work of **Duursma–Greferath–Litsyn–Schmidt (2001)** that our
+> earlier linear-code comparison missed. Its shortenings now correct the
+> comparison floors in 92–96D; the large dense-code gain is prior work.
+> Two independent proofs verify the parent, all sparse support pairs and the
+> new exact section counts. The 96D construction adds **426 344 448** points
+> beyond the standard full chain evaluated with that published parent.
+> [Construction, credit and complete replays](verifications/improved/dim88-96-z8-golay/).
+> No new 73–87D bound is claimed here. The manuscript remains deferred.
+>
 > **28 October 2026 — shared parity repairs improve all of 61–68D.**
 > Reusing compatible parity-check spaces raises eight bounds by a total of
 > **21 841 408** points: **88 260 394** in 61D, **121 824 268** in 62D,
@@ -321,16 +333,21 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 85 | 6 218 176 754 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [13D tail](common/published.py) *(derived)* | **6 223 222 688** | **SOTA** | +0.081148% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 86 | 6 218 177 532 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [14D tail](common/published.py) *(derived)* | **6 225 165 512** | **SOTA** | +0.112% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 87 | 6 218 178 164 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [15D tail](common/published.py) *(derived)* | **6 226 194 610** | **SOTA** | +0.128920% | — | since 2026-08-30 | [Gamma72 signed-tail existence proof](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 88 | 6 218 179 920 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [16D tail](common/published.py) *(derived)* | **6 232 239 528** | **SOTA** | +0.226% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **6 235 525 036** | **SOTA** | +0.279% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 90 | 6 218 183 254 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [18D tail](common/published.py) *(derived)* | **6 242 027 140** | **SOTA** | +0.383% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **6 252 202 550** | **SOTA** | +0.547% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 92 | 6 218 195 048 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [20D tail](common/published.py) *(derived)* | **6 272 431 575** | **SOTA** | +0.872% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 93 | 6 218 205 368 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [21D tail](common/published.py) *(derived)* | **6 301 636 084** | **SOTA** | +1.34% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 94 | 6 218 225 496 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [22D tail](common/published.py) *(derived)* | **6 357 657 396** | **SOTA** | +2.24% | — | since 2026-08-30 | [Gamma72 caps](verifications/improved/dim73-95-gamma72-caps/) | — |
-| 95 | 6 218 268 750 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [23D tail](common/published.py) *(derived)* | **7 101 541 132** | **SOTA** | +14.204474% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 96 | 6 218 372 160 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [Leech](https://doi.org/10.4153/CJM-1967-017-0) *(derived)* | **13 313 343 680** | **SOTA** | +114.096927% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 88 | 6 218 179 920 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [16D tail](common/published.py) *(derived)* | **6 921 251 584** | **SOTA** | +11.306711% | — | since 2026-10-28 | [Nonlinear Z8 code / sections](verifications/improved/dim88-96-z8-golay/) | — |
+| 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **9 229 354 136** | **SOTA** | +48.425297% | — | since 2026-10-28 | [Nonlinear Z8 code / sections](verifications/improved/dim88-96-z8-golay/) | — |
+| 90 | 6 218 183 254 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [18D tail](common/published.py) *(derived)* | **12 306 670 328** | **SOTA** | +97.914243% | — | since 2026-10-28 | [Nonlinear Z8 code / sections](verifications/improved/dim88-96-z8-golay/) | — |
+| 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **16 409 599 116** | **SOTA** | +163.896819% | — | since 2026-10-28 | [Nonlinear Z8 code / sections](verifications/improved/dim88-96-z8-golay/) | — |
+| 92 | 8 589 934 592 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **21 880 490 288** | **SOTA** | +154.722432% | — | since 2026-10-28 | [Nonlinear Z8 code / sections](verifications/improved/dim88-96-z8-golay/) | — |
+| 93 | 17 179 869 184 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **31 040 958 640** | **SOTA** | +80.682159% | — | since 2026-10-28 | [Nonlinear Z8 code / sections](verifications/improved/dim88-96-z8-golay/) | — |
+| 94 | 34 359 738 368 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **47 697 508 076** | **SOTA** | +38.818019% | — | since 2026-10-28 | [Nonlinear Z8 code / sections](verifications/improved/dim88-96-z8-golay/) | — |
+| 95 | 68 719 476 736 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **77 565 848 332** | **SOTA** | +12.873165% | — | since 2026-10-28 | [Nonlinear Z8 code / sections](verifications/improved/dim88-96-z8-golay/) | — |
+| 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) | **142 162 362 560** | **SOTA** | +3.436732% | — | since 2026-10-28 | [Nonlinear Z8 code / sections](verifications/improved/dim88-96-z8-golay/) | — |
 
+
+The 28 October nonlinear-code review corrects the earlier 92–96D comparisons.
+Those pre-correction values were below the published DGLS code and its
+shortenings, so their earlier record labels do not establish literature priority.
+The new rows use the corrected baselines and the explicit section/layer proofs.
 
 The historical SOTA period covers this project's run of published records in each
 dimension, including our successive improvements before the displayed value. A
@@ -435,13 +452,13 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               all 70 claims, 30 packages; earlier constructions remain
+  improved/               all 70 claims, 31 packages; earlier constructions remain
                           available with their original proof data
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
   closed/                 mechanisms pushed to their exact ceiling: what NOT to retry
 
-KNOWLEDGE.md              the full working record, 158 sections, including everything
+KNOWLEDGE.md              the full working record, 159 sections, including everything
                           that failed -- with a preamble on how to read it, which
                           sections supersede which, and where each script now lives
 ```
@@ -454,7 +471,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 30 packages, 70 dimensions
+### `verifications/improved/` — 31 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -489,6 +506,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | `[dim68-69-gamma72-cross-sections](verifications/improved/dim68-69-gamma72-cross-sections/)` | 68, 69 | realizability of a k-point Gram settled by **exhibiting** the k-tuple in Γ₇₂ rather than through the LP's own witness lemma, which unlocks k = 3 and k = 4 |
 | `[dim70-71-gamma72-cross-sections](verifications/improved/dim70-71-gamma72-cross-sections/)` | 70, 71 | the same k-point method on Nebe's Γ₇₂                                                                                                                                                        |
 | `[dim73-95-gamma72-caps](verifications/improved/dim73-95-gamma72-caps/)`                     | 73–95  | the cap construction over Γ₇₂, whose class threshold γ = 1/4 is exactly what permits zero-sum triples                                                                                        |
+| [`dim88-96-z8-golay`](verifications/improved/dim88-96-z8-golay/) | 88–96 | nonlinear published Golay parent, exact sections and sparse layers; two independent proofs |
 | [`dim61-68-95-96-code-layers`](verifications/improved/dim61-68-95-96-code-layers/) | 61–63, 66–68, 95–96 | binary compression, central sections and enlarged support codes |
 | [`dim64-65-signed-parity`](verifications/improved/dim64-65-signed-parity/) | 64-65 | 211 added Hamming sign blocks, exact parity repairs and BCH owner caps |
 | [`dim73-88-gamma72-cosets`](verifications/improved/dim73-88-gamma72-cosets/) | 73–88 | certified nearest subsets, repaired and scaled group images |
@@ -718,10 +736,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 88 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 89 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 107 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 108 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay
@@ -903,7 +921,7 @@ The constructions, the verification code and the write-ups in this repository we
 by the author working with **Claude Code** (Anthropic). The repository is deliberately
 structured so that someone else can pick it up the same way: every package states its idea in
 prose before its code, every negative result says what was tried and why it failed, and
-`KNOWLEDGE.md` is the full working record — 158 sections, most of them about things that
+`KNOWLEDGE.md` is the full working record — 159 sections, most of them about things that
 did not work.
 
 Alexey Kravatskiy, MIRIAI (Moscow Independent Research Institute of Artificial Intelligence),

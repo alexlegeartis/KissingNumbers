@@ -410,7 +410,7 @@ add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover'
 
 # October code and nearest-coset constructions supersede earlier packages;
 # add() preserves every displaced claim in SUPERSEDED for the history audit.
-for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions'):
+for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions', 'dim88-96-z8-golay'):
     if _package == 'dim32-35-signed-layers':
         for _dimension, _family in ((33, 'classic'), (34, 'classic'), (35, 'multi35')):
             with io.open(os.path.join(IMP, _package, 'source', _family,
@@ -2010,6 +2010,7 @@ if '--write-results' in sys.argv and not fail:
         'dim36-37-coxeter-todd': 'three Coxeter-Todd quotient codes with exact shell '
                                   'enumeration, phase refill and independent coordinate angles checked; '
                                   '37D adds partial latitude orbits',
+        'dim88-96-z8-golay': 'published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays',
         'dim61-68-95-96-code-layers': 'shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay',
         'dim26-31-residual-completions': 'shared midpoint replacements, axiswise residual heads and exact exceptional pure tails; independent full-coordinate proof',
         'dim26-27-midpoint-replacements': 'shared midpoint replacements on orthogonal tail directions; exact Leech membership, midpoint identities and all inserted-pair products',
@@ -2056,6 +2057,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("The 28 October continuous-head 43D continuation gives 2919782 points (+39 over the preceding repository certificate), replacing 46 tiny-layer points with 85. Two independent exact representations each check 6370783 angle conditions. Complete-family population inputs and the deferred manuscript scope are unchanged.")
     out.append("")
     out.append("The 28 October Coxeter-Todd continuation gives 501672 in 36D (+39) and 505488 in 37D (+129), with two independent exact representations and reproducible phase trades.")
+    out.append("")
+    out.append("The 28 October nonlinear-code correction and section construction raises every bound in 88–96D, from 6,921,251,584 in 88D to 142,162,362,560 in 96D. The parent (96,2^37,24) binary code is published work of Duursma–Greferath–Litsyn–Schmidt (2001), previously missed by this repository's linear-code comparison. Its shortenings correct the comparison floors in 92–96D. Two independent finite proofs recheck all 16,777,216 Z4 words, 4,166,151 octad-coset exclusions and 338,559,231 support pairs. The 96D result exceeds the derived standard chain with that parent by 426,344,448 points. The manuscript remains deferred.")
     out.append("")
     out.append("The 28 October dual-obstruction continuation gives 7,101,541,132 in 95D (+9,209,856) and 13,313,343,680 in 96D (+22,560,768). Its 26,022-support certificate checks all 338,559,231 distinct pairs in two exact representations. Disjoint odd GF(4) trace checks prove compatibility for 2,073 supports in thirteen or fourteen rows, extending the former twelve-row restriction. The manuscript remains deferred.")
     out.append("")

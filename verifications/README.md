@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-30 packages, one per **construction idea** rather than one per dimension, because several
+31 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -39,14 +39,16 @@ file, and the history of the lower bound in its dimensions.
 | [`dim62-63-ers-chain`](improved/dim62-63-ers-chain/) | 62, 63 | retained chain, superseded by the October central sections |
 | [`dim68-69-gamma72-cross-sections`](improved/dim68-69-gamma72-cross-sections/) | 68, 69 | current in 69D; the retained 68D section is superseded by October code layers |
 | [`dim70-71-gamma72-cross-sections`](improved/dim70-71-gamma72-cross-sections/) | 70, 71 | apparently new — **the claim most in need of a literature check** |
-| [`dim73-95-gamma72-caps`](improved/dim73-95-gamma72-caps/) | 73–95 | current in 88–94D; other cap counts are retained history |
+| [`dim73-95-gamma72-caps`](improved/dim73-95-gamma72-caps/) | 73–95 | retained cap construction; 88–96D now use nonlinear codes |
+| [`dim88-96-z8-golay`](improved/dim88-96-z8-golay/) | 88–96 | published nonlinear parent, exact sections and compatible sparse layers; two independent proofs |
 | [`dim61-68-95-96-code-layers`](improved/dim61-68-95-96-code-layers/) | 61–63, 66–68, 95–96 | exact code compression, layers and central sections |
 | [`dim64-65-signed-parity`](improved/dim64-65-signed-parity/) | 64-65 | signed support augmentation and BCH owner caps |
 | [`dim73-88-gamma72-cosets`](improved/dim73-88-gamma72-cosets/) | 73–88 | nearest subsets, explicit 73D refills and exact mixed/signed-tail existence proofs |
 
 **All current claims are in this tier.** The older 96D ERS evaluation remains
-in [`closed/`](closed/) as a retained construction; the October doubled-support
-construction now improves it. The older **46D and 47D cross-section values** are in
+in [`closed/`](closed/) as a retained construction. The nonlinear-code review
+corrects the missed DGLS parent; the new sections and sparse layers are checked
+in `dim88-96-z8-golay`. The older **46D and 47D cross-section values** are in
 [`recovered/`](recovered/): published by other people and not claimed from that
 package. The new 46D family/head configuration is larger and is registered in
 `improved/`. The supplied 43D construction now registers 2,919,782 points; the older
@@ -123,5 +125,5 @@ construction. Every current registered claim is in `improved/`.
 6. [`closed/dim17-layered-family/`](closed/dim17-layered-family/) — the best worked example of
    the repository's most useful habit: when a search will not converge, stop searching and ask
    what structure the object has. The answer was "it is a group".
-7. [`../KNOWLEDGE.md`](../KNOWLEDGE.md) — 158 sections of working notes, most of
+7. [`../KNOWLEDGE.md`](../KNOWLEDGE.md) — 159 sections of working notes, most of
    them about things that did not work.

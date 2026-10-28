@@ -13,6 +13,8 @@ The 28 October continuous-head 43D continuation gives 2919782 points (+39 over t
 
 The 28 October Coxeter-Todd continuation gives 501672 in 36D (+39) and 505488 in 37D (+129), with two independent exact representations and reproducible phase trades.
 
+The 28 October nonlinear-code correction and section construction raises every bound in 88–96D, from 6,921,251,584 in 88D to 142,162,362,560 in 96D. The parent (96,2^37,24) binary code is published work of Duursma–Greferath–Litsyn–Schmidt (2001), previously missed by this repository's linear-code comparison. Its shortenings correct the comparison floors in 92–96D. Two independent finite proofs recheck all 16,777,216 Z4 words, 4,166,151 octad-coset exclusions and 338,559,231 support pairs. The 96D result exceeds the derived standard chain with that parent by 426,344,448 points. The manuscript remains deferred.
+
 The 28 October dual-obstruction continuation gives 7,101,541,132 in 95D (+9,209,856) and 13,313,343,680 in 96D (+22,560,768). Its 26,022-support certificate checks all 338,559,231 distinct pairs in two exact representations. Disjoint odd GF(4) trace checks prove compatibility for 2,073 supports in thirteen or fourteen rows, extending the former twelve-row restriction. The manuscript remains deferred.
 
 The further 28 October continuation gives 6,218,206,932 in 73D from 7,663 explicit norm-ten heads; signed-tail orbit proofs give 6,220,170,666 in 82D, 6,221,008,658 in 83D, 6,222,025,404 in 84D, 6,223,222,688 in 85D and 6,226,194,610 in 87D. A 24,645-support certificate gives 7,092,331,276 in 95D and 13,290,782,912 in 96D. The new explicit layer checks 120,048,558 products in two exact arithmetics, the signed profiles have an independent polynomial replay, and both support representations check all 303,675,690 pairs. The manuscript remains deferred.
@@ -84,15 +86,15 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 85 | 6 218 176 754 | **6 223 222 688** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
 | 86 | 6 218 177 532 | **6 225 165 512** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
 | 87 | 6 218 178 164 | **6 226 194 610** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
-| 88 | 6 218 179 920 | **6 232 239 528** | 1.00 | `classes` | [the cap construction over Gamma_72, with zero-sum triples](verifications/improved/dim73-95-gamma72-caps/) |
-| 89 | 6 218 181 330 | **6 235 525 036** | 1.00 | `classes` | [the cap construction over Gamma_72, with zero-sum triples](verifications/improved/dim73-95-gamma72-caps/) |
-| 90 | 6 218 183 254 | **6 242 027 140** | 1.00 | `classes` | [the cap construction over Gamma_72, with zero-sum triples](verifications/improved/dim73-95-gamma72-caps/) |
-| 91 | 6 218 187 548 | **6 252 202 550** | 1.01 | `classes` | [the cap construction over Gamma_72, with zero-sum triples](verifications/improved/dim73-95-gamma72-caps/) |
-| 92 | 6 218 195 048 | **6 272 431 575** | 1.01 | `classes` | [the cap construction over Gamma_72, with zero-sum triples](verifications/improved/dim73-95-gamma72-caps/) |
-| 93 | 6 218 205 368 | **6 301 636 084** | 1.01 | `classes` | [the cap construction over Gamma_72, with zero-sum triples](verifications/improved/dim73-95-gamma72-caps/) |
-| 94 | 6 218 225 496 | **6 357 657 396** | 1.02 | `classes` | [the cap construction over Gamma_72, with zero-sum triples](verifications/improved/dim73-95-gamma72-caps/) |
-| 95 | 6 218 268 750 | **7 101 541 132** | 1.14 | `codes` | [shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
-| 96 | 6 218 372 160 | **13 313 343 680** | 2.14 | `codes` | [shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
+| 88 | 6 218 179 920 | **6 921 251 584** | 1.11 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
+| 89 | 6 218 181 330 | **9 229 354 136** | 1.48 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
+| 90 | 6 218 183 254 | **12 306 670 328** | 1.98 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
+| 91 | 6 218 187 548 | **16 409 599 116** | 2.64 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
+| 92 | 8 589 934 592 | **21 880 490 288** | 2.55 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
+| 93 | 17 179 869 184 | **31 040 958 640** | 1.81 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
+| 94 | 34 359 738 368 | **47 697 508 076** | 1.39 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
+| 95 | 68 719 476 736 | **77 565 848 332** | 1.13 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
+| 96 | 137 438 953 472 | **142 162 362 560** | 1.03 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
 
 ## Status: what would have to change
 
@@ -103,11 +105,11 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | status | dims | what it means | why |
 |---|---|---|---|
 | `classes` | 49-60 (12) | only a better class family helps; these all improve together | the strongest prefix of the old 1400-class family or the October 577-image family over a 7387-line base; larger base classes and different disjoint families remain open (dim49-63-p48-caps/verify_october.py) |
-| `classes` | 88-94 (7) | only a better class family helps; these all improve together | the cap DIRECTIONS are at their ceiling -- the partition into zero-sum triples is perfect where one exists, and three is the most a class line can ever serve.  The class FAMILY is what moves, and it moved twice in one session (KNOWLEDGE 90, 91): the class size 2465 is a factor 11.2 over Caro-Wei against the Leech lattice's 11.3, so matching that would be a further 1% on every one of these 23 dimensions.  The AXIS layer was rebuilt on 2026-08-27 as a ROTATED COPY of the cap directions, which is a 60-degree code for free and only has to clear the 30-degree caps: at k = 23 it gives 93074 poles against the shell rule's 248, and it reaches tau(k) exactly at k = 3, k = 5, k = 6, k = 7, k = 8, k = 9, k = 10, k = 11, k = 14, k = 16.  What is left there is the handful a rotation loses to the caps, and, where the cap set has fewer than tau(k) vectors, the gap between the two -- 602 points in total, against a claim of 6.4e9, and 321 of them are the two the record configuration of R^k cannot be carried into (k = 12 is given in floating point by the data set, k = 13 differs from K_13 in Hasse invariant).  The class family is the only thing that moves this group (scripts/axis_rotate.py, scripts/axis_block.py, scripts/verify_poles.py) |
 | `codes` | 32-33 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | signed octad replacements over the dense [32,17,8] code; larger signed support families remain open (dim32-35-signed-layers/verify.py) |
 | `codes` | 39 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration; larger compatible families remain open (dim39-deformed-orbits/verify.py) |
-| `codes` | 61-63, 66-68, 95-96 (8) | larger input codes or different layer and section geometry can improve these explicit constructions | explicit binary compression, central sections and enlarged support layers; no unrestricted optimality or construction ceiling is claimed (dim61-68-95-96-code-layers/verify.py) |
+| `codes` | 61-63, 66-68 (6) | larger input codes or different layer and section geometry can improve these explicit constructions | explicit binary compression, central sections and enlarged support layers; no unrestricted optimality or construction ceiling is claimed (dim61-68-95-96-code-layers/verify.py) |
 | `codes` | 64-65 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | signed support augmentation with exact shared-check parity certificates; larger compatible support families and larger owner classes remain open (dim64-65-signed-parity/verify.py) |
+| `codes` | 88-96 (9) | larger input codes or different layer and section geometry can improve these explicit constructions | nonlinear Z8 Golay parent, exact central sections and sparse layers; different sections and larger compatible layers remain open (dim88-96-z8-golay/verify.py) |
 | `cosets` | 36-37 (2) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | exact Coxeter-Todd short shells and phase-orbit angles replay in two representations; 37D adds partial latitude orbits. Larger refills remain open (dim36-37-coxeter-todd/verify.py, completion/proof.md) |
 | `cosets` | 73-76, 80-81, 86 (7) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | nearest Gamma72 subsets and repaired group images; exact geometry and the inherited nearestness certificates are replayed (dim73-88-gamma72-cosets/verify.py) |
 | `cosets` | 77-79 (3) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | exact norm-ten moments, mixed tails and weighted-priority existence bounds; different tail sets and stronger independence bounds remain open (dim73-88-gamma72-cosets/verify_norm10.py) |
@@ -124,8 +126,8 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `heads` | 41-46 (6) | joint body-family and head searches remain open; no construction ceiling is claimed | independently normalized P48n body families with rational heads and pure head points; the latest angles and exact ranks replay, while populations inherit the supplied tables and modular-form derivation. Larger coupled family changes, partial families and new body models remain open; finite search optima are not global ceilings. The partial-family 43D and coordinated-motion 45D certificates are installed (dim41-46-p48-heads/README.md, verify.py, POPULATIONS.txt) |
 | `lp-exact` | 69-71 (3) | the programme solved to its EXACT optimum, for a Gram at the Hermite determinant floor; only a larger k helps | the k-point programme solved to its EXACT optimum by common/exact_vertex.py, which substitutes out the identifications and solves the dual vertex in rational arithmetic rather than rounding a float, so the value is the most this programme can certify: no basis, dual or solver setting moves it, and all sixteen determinant-256 presentations agree at k = 3.  The Gram determinant is at the Hermite floor, which is a theorem, and the tuple is exhibited in Gamma_72.  That the lowest determinant gives the best bound is measured across the k = 3 table, not proved.  So only a larger k could help, and k = 5 extrapolates below the floor (scripts/verify68.py, verify69.py, k4_gram_min_det.py, presentation_invariance.py) |
 
-So the 19 `classes` dimensions all improve together when a better family of pairwise-disjoint
-classes is found -- which is where compute pays -- and the other 51 need a new idea or a
+So the 12 `classes` dimensions all improve together when a better family of pairwise-disjoint
+classes is found -- which is where compute pays -- and the other 58 need a new idea or a
 refreshed table, not more search.
 
 ## How each number is established
@@ -153,19 +155,13 @@ refreshed table, not more search.
 | 58 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(10) = 255, S = 1910590; verify_october.py |
 | 59 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(11) = 302, S = 2245464; verify_october.py |
 | 60 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(12) = 378, S = 2775751; verify_october.py |
-| 61-63, 66-68, 95-96 | `dim61-68-95-96-code-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
+| 61-63, 66-68 | `dim61-68-95-96-code-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 64-65 | `dim64-65-signed-parity` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 69 | `dim68-69-gamma72-cross-sections` | verify69.py (A_3 at the Hermite floor, det 256, exhibited inside the D_4 four-tuple) |
 | 70 | `dim70-71-gamma72-cross-sections` | derive.py (exact dual certificate) |
 | 71 | `dim70-71-gamma72-cross-sections` | recomputed by theta.py |
 | 73-87 | `dim73-88-gamma72-cosets` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
-| 88 | `dim73-95-gamma72-caps` | recomputed from the lattice partition at k = 16 and class_sizes_symmetry.npy |
-| 89 | `dim73-95-gamma72-caps` | recomputed from the lattice partition at k = 17 and class_sizes_symmetry.npy |
-| 90 | `dim73-95-gamma72-caps` | recomputed from the lattice partition at k = 18 and class_sizes_symmetry.npy |
-| 91 | `dim73-95-gamma72-caps` | recomputed from the lattice partition at k = 19 and class_sizes_symmetry.npy |
-| 92 | `dim73-95-gamma72-caps` | recomputed from the lattice partition at k = 20 and class_sizes_symmetry.npy |
-| 93 | `dim73-95-gamma72-caps` | recomputed from the lattice partition at k = 21 and class_sizes_symmetry.npy |
-| 94 | `dim73-95-gamma72-caps` | recomputed from the lattice partition at k = 22 and class_sizes_symmetry.npy |
+| 88-96 | `dim88-96-z8-golay` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 
 ## Where the previously published figures come from
 
@@ -189,7 +185,7 @@ typed by hand. Sources:
 | 47 | already in the literature. 23 766 960 is Boyvalenkov-Cherkashin, Results Math. 80 (2025), Paper No. 3, equation (3) of the preprint arXiv:2312.05121. The historical 46D value 12 309 600 is Sun-Wang, arXiv:2607.20359, Table 3; the new 46D construction is larger. `verifications/recovered/dim46-47-p48-cross-sections/` |
 | 48 | 52 416 000 is P_48 itself. |
 | 72 | 6 218 175 600 is Gamma_72 itself. |
-| 97 and above | **not evaluated here.** Monotonicity gives at least dimension 96's 13 313 343 680, and nothing in this repository claims anything there. The Edel-Rains-Sloane chain is the thing to evaluate, as it was at 96. |
+| 97 and above | **not evaluated here.** Monotonicity gives at least dimension 96's 142 162 362 560, and nothing in this repository claims anything there. The Edel-Rains-Sloane chain is the thing to evaluate, as it was at 96. |
 | 9-17, 19 | every published record is checked MAXIMAL -- no sphere can be added to any of them, and the margin of each is recorded. `verifications/closed/dim09-19-record-maximality/` |
 | 17, 19-21 | the Cohn-Li mechanism is at its exact ceiling: provably exhausted in 20 and 21, dimension 19 closed at exactly Ho's 11948, and dimension 17 at its two-slot value; the middle dimension of that range left this table for the improved tier (the bent-coset hexagon). `verifications/closed/dim17-23-cohn-li-mechanism/` |
 | 17, 19-24 | one construction, not eight: every Leech minimal vector's part in the 8 coordinates of an octad has norm^2 0, 8, 16 or 32, the multiplicity is CONSTANT on each of those four position shells (4320, 512, 32, 1), and hence tau(Lambda_{16+k}) = 4320 + 513*N_2(L_k) + 32*N_4(L_k) for L = A1, A2, A3, D4, D5, E6, E7, E8.  The records add a flat layer, which is EXACTLY 2048 in 20 and 21 (Koenig on a regular bipartite Cayley graph) -- both are rebuilt there from the Golay code and checked pair by pair.  The one component not at a proved ceiling is the tier size, in [512, 533]. `verifications/closed/dim17-24-layer-identity/` |

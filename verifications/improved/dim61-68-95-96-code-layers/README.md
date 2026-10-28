@@ -1,5 +1,11 @@
 # Explicit code layers and central sections
 
+**Retained construction in 95–96D.** The nonlinear parent and sections in
+[dim88-96-z8-golay](../dim88-96-z8-golay/) supersede these two totals. The
+published (96,2^37,24) code was missed by the former linear-code comparison.
+This package remains current in 61–63D and 66–68D, and supplies the reverified
+support family used by the new 88–96D package.
+
 Checkpoint: **28 October 2026**. This package registers eight constructions.
 The latest continuation improves all six registered values in 61–63D and 66–68D,
 and the neighbouring 64–65D package uses the same shared parity proof.

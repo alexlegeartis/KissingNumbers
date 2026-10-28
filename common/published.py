@@ -2,6 +2,11 @@
 """The published state of the art, with provenance.  Single source of truth for the
 "previously known" column of every claim in this repository.
 
+Correction 2026-10-28: the nonlinear (96,2^37,24) code of Duursma,
+Greferath, Litsyn and Schmidt (2001) was missed by the earlier linear-code
+comparison. Its shortenings now set the prior-code floors in 92--96D.
+Historical discussion below is subject to this correction.
+
     from published import COHN, FLOOR, floor_for, REFERENCES
 
 COHN
@@ -85,18 +90,10 @@ FLOOR
                                      having published an A(68,16,16), and it would fall to one
                                      of size 45235.  That is the most exposed claim in the
                                      repository and ers_exposure.py ranks it as such.
-      73-95   6218175600 + tau(d-72) direct sum Gamma_72 (+) (best (d-72)-dimensional
-                                     lattice rescaled to minimum 8).  This is exactly the
-                                     kind of entry the old Nebe-Sloane table recorded at
-                                     dimension 80 as "Gamma_72 perp E8".  Edel-Rains-Sloane
-                                     stays far below: its dimension-80 total is 1368532064,
-                                     and codetables.de gives at most A(n_0, n_0/4) = 2^30
-                                     all the way to n_0 = 92, and 2^31, 2^31, 2^32 at
-                                     n_0 = 93, 94, 95.  A(96,24) >= 2^33 ([96,33,24]) is
-                                     where that stops: ERS at n = 96 totals 12886999232,
-                                     a factor 2.07 on Gamma_72, which is why this
-                                     repository ends at 95.  Worked out in
-                                     verifications/closed/dim96-ers-takeover/.
+      73-91   6218175600 + tau(d-72), the recorded Gamma_72 direct sums.
+      92-96   2^(d-59), the published nonlinear Golay parent and shortenings.
+              See source_review_20261028_z8.json. The larger standard-chain
+              evaluation is reported separately as a derived comparison.
 
     The Nebe-Sloane "Table of the highest kissing numbers presently known" that Cohn's
     table replaced (last modified Feb 2011, retrievable from the Wayback Machine) listed
@@ -209,12 +206,9 @@ OTHER = {
                             # value floor_for's 73-95 branch computes as a direct sum.  ERS
                             # also published dimension 80, at 1368532064, and this beats it
                             # by 4.5x -- see ERS_PUBLISHED above.
-    96: 12886999232,        # NOT PUBLISHED, AND NOT A FLOOR.  This is THIS REPOSITORY'S OWN
-                            # CLAIM in dimension 96, the Edel-Rains-Sloane chain (96,24,6,1)
-                            # evaluated with current code tables.  It was floor_for(96) until
-                            # 2026-08-26, which hid the claim by measuring it against itself.
-                            # Kept only for the monotonicity message below.  The floor at 96
-                            # is the direct sum; see floor_for's docstring.
+    96: 137438953472,       # Duursma--Greferath--Litsyn--Schmidt 2001,
+                            # nonlinear (96,2^37,24); sign embedding. The old
+                            # linear-only chain comparison was incomplete.
     128: 218044170240,      # NOT THE BEST KNOWN.  This is MW_128 (Elkies), the best known
                             # LATTICE kissing number at 128.  Edel-Rains-Sloane beat it by
                             # more than 40x in the same 1998 paper, at 8863556495104, which
@@ -262,29 +256,17 @@ def upper_for(d):
 
 
 def floor_for(d):
-    """(value, explanation) for the bound a claim in dimension d must beat.
+    """Recorded prior-code and direct-sum comparisons for each claim.
 
-    Published wherever a published entry exists: Cohn at 1-48 and 72, and the direct sums
-    built on those.  Nothing published has an entry at 96: Cohn stops at 48 and 72, and the
-    Nebe-Sloane table it replaced listed 1-40, 42, 44, 48, 64, 72, 80 and 128.  ERS 1998 is
-    titled "in dimensions 32 to 128", but that is the RANGE OF A CONSTRUCTION, not a table of
-    values: section 3 says "We illustrate the construction by giving new records in dimensions
-    32, 36, 40, 44, 64, 80 and 128", and those seven are its only worked examples (checked
-    against arXiv:math/0207291 on 2026-08-26).  So ERS tabulated neither 96 nor 62 nor 63.
-    Their n = 64 and n = 80 totals, 331737984 and 1368532064, are the two reproduced in
-    closed/dim32-44-ers-audit/ and both match the source to the digit.  Substituting current
-    code tables into their formula is explicitly sanctioned by their Remark (1): any available
-    lower bounds on A(n,d) and A(n,d,w) still give a lower bound on tau_n.
-
-    Dimension 96 is therefore the same situation as 62 and 63 -- the ERS construction
-    evaluated at a length with no record of its having been evaluated -- and is treated the
-    same way: the floor is the direct sum Gamma_72 (+) Leech, and 12886999232 is a CLAIM.
-    Until 2026-08-26 that value was the floor here instead, which removed 96 from the range by
-    definition: "the range ends at 95" and "the floor at 96 is 12886999232" were one decision
-    stated twice, not two facts, and the improvement it would otherwise have measured could
-    not appear because the thing it improved on WAS it.  Beware that shape generally -- a
-    baseline set to your own new result silently converts a claim into a non-result.
+    The 92--96D entries use the published nonlinear (96,2^37,24) code and
+    shortenings. The older linear-only comparison missed this input.
+    Evaluating the standard full chain gives a further derived comparison;
+    that evaluation is distinguished from a published table entry.
     """
+    if 92 <= d <= 96:
+        return (2**(d-59),
+                "Duursma-Greferath-Litsyn-Schmidt 2001 nonlinear Golay code "
+                "(96,2^37,24), shortened to %d bits and embedded as signs" % d)
     if d in OCTOBER_2026:
         return OCTOBER_2026[d], "Cohn's table, comparison recorded 2026-10-23"
     if d in COHN:
@@ -308,12 +290,6 @@ def floor_for(d):
         return (COHN[72] + TAU[d - 72],
                 "direct sum Gamma_72 (+) best %d-dimensional lattice = 6218175600 + tau(%d)%s"
                 % (d - 72, d - 72, note))
-    if d == 96:
-        # COHN[24], not TAU[24]: TAU stops at 23, which is all dimensions 73-95 need.
-        return (COHN[72] + COHN[24],
-                "direct sum Gamma_72 (+) Leech = 6218175600 + 196560.  The ERS chain "
-                "(96,24,6,1) reaches 12886999232 here, which is the CLAIM and not the floor "
-                "-- see this function's docstring.  closed/dim96-ers-takeover/")
     raise ValueError(
         "no floor recorded for dimension %d.  Above 96 the Edel-Rains-Sloane count is the "
         "thing to evaluate and it has not been evaluated here; monotonicity gives at least "
