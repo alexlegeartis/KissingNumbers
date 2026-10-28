@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-28",
+  "baseline_commit": "816e291dbddddd38764047455ea6499ace59f9c3",
+  "dimensions": {
+    "64": {
+      "total": 335496064,
+      "terms": {
+        "dense": 268435456,
+        "weight16": 66893824,
+        "weight4": 166656,
+        "poles": 128
+      },
+      "previous_bound": 332170112,
+      "gain": 3325952
+    },
+    "65": {
+      "total": 335564290,
+      "terms": {
+        "base64": 335496064,
+        "owner_gain": 68224,
+        "new_poles": 2
+      },
+      "previous_bound": 332238338,
+      "gain": 3325952
+    }
+  },
+  "shared_proof": "../dim61-68-95-96-code-layers/source/shared_parity/shared_layers.py",
+  "shared_certificate_sha256": "ce5572b231cd0f197e52520c809eabfee8aa38483b95fd55b46b317a8edbc5ab",
+  "shared_receipt_sha256": "b76e209b05856050ae98488ae81d03088ba36ea23126177ea4c20a0fd806ba42",
+  "owners": "Replayed independently by construction65(); all 68224 owners avoid the weight16 layer.",
+  "scope": "Eight improved constructions, not an unrestricted optimum or a fresh priority survey. Old augmentations are replaced. Manuscript remains deferred."
+}

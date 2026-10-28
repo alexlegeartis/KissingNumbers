@@ -74,6 +74,16 @@ def results():
                 assert replacement['previous_bound'] == row['total']
                 assert replacement['gain'] == replacement['total']-row['total'] > 0
                 row['total'] = replacement['total']
+    shared = read('shared_parity/shared_layers.json')
+    assert shared['status'].startswith('Verified:')
+    assert shared['parent64_words_enumerated'] == 2**28
+    for row in rows:
+        if str(row['dimension']) in shared['dimensions']:
+            replacement = shared['dimensions'][str(row['dimension'])]
+            assert replacement['total'] == sum(replacement['terms'].values())
+            assert replacement['previous_bound'] == row['total']
+            assert replacement['gain'] == replacement['total']-row['total'] > 0
+            row['total'] = replacement['total']
     return sorted(rows, key=lambda row: row['dimension'])
 
 

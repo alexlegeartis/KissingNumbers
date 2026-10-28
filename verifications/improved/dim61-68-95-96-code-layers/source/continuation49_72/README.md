@@ -1,17 +1,20 @@
 # Sparse filling and parity-compatible central sections
 
+This is a retained construction. The stronger current shared-parity bounds
+are given in [the latest continuation](../shared_parity/README.md).
+
 This continuation improves six registered bounds. Comparisons are with commit
 `9d38a38b93fcbbc88d48981f382464569189c3c8`; they are not a new worldwide
 literature survey. The parent codes retain their existing distance proofs.
 
-| Dimension | Bound | Gain over preceding certificate |
-|---|---:|---:|
-| 61 | 72,376,856 | 1,066,368 |
-| 62 | 100,437,548 | 66,080 |
-| 63 | 182,537,988 | 130,560 |
-| 66 | 338,302,340 | 10,240 |
-| 67 | 351,420,806 | 20,480 |
-| 68 | 371,552,152 | 30,720 |
+| Dimension | Bound | Gain over preceding certificate | Current repository bound |
+|---|---:|---:|---:|
+| 61 | 72,376,856 | 1,066,368 | **88,260,394** |
+| 62 | 100,437,548 | 66,080 | **121,824,268** |
+| 63 | 182,537,988 | 130,560 | **184,286,468** |
+| 66 | 338,302,340 | 10,240 | **341,994,884** |
+| 67 | 351,420,806 | 20,480 | **355,090,822** |
+| 68 | 371,552,152 | 30,720 | **375,222,168** |
 
 ## The weight-eight bridge in 61D
 

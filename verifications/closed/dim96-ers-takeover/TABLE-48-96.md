@@ -13,14 +13,14 @@
 | 58 | 56 237 690 | **this work** -- the cap construction over P_48, with explicit classes |
 | 59 | 56 907 532 | **this work** -- the cap construction over P_48, with explicit classes |
 | 60 | 57 968 343 | **this work** -- the cap construction over P_48, with explicit classes |
-| 61 | 87 056 170 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 62 | 120 620 044 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 63 | 182 537 988 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 64 | 332 170 112 | **this work** -- 211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners |
-| 65 | 332 238 338 | **this work** -- 211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners |
-| 66 | 338 302 340 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 67 | 351 420 806 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 68 | 371 552 152 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 61 | 88 260 394 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
+| 62 | 121 824 268 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
+| 63 | 184 286 468 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
+| 64 | 335 496 064 | **this work** -- 1,835 added Hamming sign blocks with reusable parity-check spaces; 65D caps replace 68,224 BCH and affine-line owners |
+| 65 | 335 564 290 | **this work** -- 1,835 added Hamming sign blocks with reusable parity-check spaces; 65D caps replace 68,224 BCH and affine-line owners |
+| 66 | 341 994 884 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
+| 67 | 355 090 822 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
+| 68 | 375 222 168 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
 | 69 | 627 822 180 | **this work** -- k-point moment LP with the Gram exhibited in Gamma_72 |
 | 70 | 1 249 778 250 | **this work** -- k-point moment LP on cross-sections of Gamma_72 |
 | 71 | 2 603 658 750 | **this work** -- k-point moment LP on cross-sections of Gamma_72 |
@@ -47,8 +47,8 @@
 | 92 | 6 272 431 575 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
 | 93 | 6 301 636 084 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
 | 94 | 6 357 657 396 | **this work** -- the cap construction over Gamma_72, with zero-sum triples |
-| 95 | 7 101 541 132 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 96 | 13 313 343 680 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 95 | 7 101 541 132 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
+| 96 | 13 313 343 680 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
 
 ## Retained dimension-96 comparisons
 

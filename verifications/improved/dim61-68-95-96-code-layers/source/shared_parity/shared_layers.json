@@ -1,0 +1,177 @@
+{
+  "status": "Verified: shared parity repairs and exact transfers to 61--68D",
+  "dimensions": {
+    "61": {
+      "total": 88260394,
+      "terms": {
+        "dense": 67108864,
+        "weight16": 21014528,
+        "weight4": 136880,
+        "poles": 122
+      },
+      "previous_bound": 87056170,
+      "gain": 1204224
+    },
+    "62": {
+      "total": 121824268,
+      "terms": {
+        "dense": 100663296,
+        "weight16": 21014528,
+        "weight4": 146320,
+        "poles": 124
+      },
+      "previous_bound": 120620044,
+      "gain": 1204224
+    },
+    "63": {
+      "total": 184286468,
+      "terms": {
+        "dense_section": 146800640,
+        "original_weight16_section": 35503776,
+        "added_weight16_section": 1879040,
+        "weight4_section": 102900,
+        "ordinary_poles": 112
+      },
+      "previous_bound": 182537988,
+      "gain": 1748480
+    },
+    "64": {
+      "total": 335496064,
+      "terms": {
+        "dense": 268435456,
+        "weight16": 66893824,
+        "weight4": 166656,
+        "poles": 128
+      },
+      "previous_bound": 332170112,
+      "gain": 3325952
+    },
+    "65": {
+      "total": 335564290,
+      "terms": {
+        "base64": 335496064,
+        "owner_gain": 68224,
+        "new_poles": 2
+      },
+      "previous_bound": 332238338,
+      "gain": 3325952
+    },
+    "66": {
+      "total": 341994884,
+      "terms": {
+        "dense64": 268435456,
+        "weight16": 73381888,
+        "weight4": 177408,
+        "poles": 132
+      },
+      "previous_bound": 338302340,
+      "gain": 3692544
+    },
+    "67": {
+      "total": 355090822,
+      "terms": {
+        "dense64": 268435456,
+        "weight16": 86466560,
+        "weight4": 188672,
+        "poles": 134
+      },
+      "previous_bound": 351420806,
+      "gain": 3670016
+    },
+    "68": {
+      "total": 375222168,
+      "terms": {
+        "dense64": 268435456,
+        "weight16": 106586112,
+        "weight4": 200464,
+        "poles": 136
+      },
+      "previous_bound": 371552152,
+      "gain": 3670016
+    }
+  },
+  "families": {
+    "global": {
+      "new_supports": 1835,
+      "modified_old_supports": 1792,
+      "old_new_pairs_checked": 56569380,
+      "new_pairs_checked": 1682695,
+      "parity_repairs": 14680,
+      "certificate_sha256": "ce5572b231cd0f197e52520c809eabfee8aa38483b95fd55b46b317a8edbc5ab"
+    },
+    "expanded66": {
+      "new_supports": 1803,
+      "modified_old_supports": 1792,
+      "old_new_pairs_checked": 55582884,
+      "new_pairs_checked": 1624503,
+      "parity_repairs": 14424,
+      "certificate_sha256": "a4a071d28e36dfba7579b2d1737cc64f80727f401bae5d440a102e63a6abc337"
+    },
+    "expanded67_68": {
+      "new_supports": 1792,
+      "modified_old_supports": 1792,
+      "old_new_pairs_checked": 55243776,
+      "new_pairs_checked": 1604736,
+      "parity_repairs": 14336,
+      "certificate_sha256": "288ab6a9574e6163cabba45a0472204ec6a788300649a330edfc8ed9bce3140f"
+    }
+  },
+  "parent64_words_enumerated": 268435456,
+  "parent64_weight_histogram": {
+    "0": 1,
+    "16": 30828,
+    "20": 1128960,
+    "24": 14629440,
+    "28": 65046016,
+    "32": 106764966,
+    "36": 65046016,
+    "40": 14629440,
+    "44": 1128960,
+    "48": 30828,
+    "64": 1
+  },
+  "four_zero_search": {
+    "choices": 635376,
+    "maximum": 10261,
+    "selected_coordinates": [
+      24,
+      42,
+      53,
+      55
+    ]
+  },
+  "retained_weight16_supports": 10261,
+  "odd61": {
+    "supports": 1176,
+    "equations": 2769,
+    "rank": 2381
+  },
+  "section63": {
+    "selected_octad": 1284508757262368,
+    "candidates_checked": 72,
+    "sign_counts_independently_enumerated": true
+  },
+  "expanded_checks": {
+    "66": {
+      "family": "expanded66",
+      "extra_supports": 3200,
+      "mixed_pairs_checked": 5769600
+    },
+    "67": {
+      "family": "expanded67_68",
+      "extra_supports": 9600,
+      "mixed_pairs_checked": 17203200
+    },
+    "68": {
+      "family": "expanded67_68",
+      "extra_supports": 19424,
+      "mixed_pairs_checked": 34807808
+    }
+  },
+  "negative_control": {
+    "rejected_original_matching_system": true,
+    "corrupted_phase_inner_product": 40
+  },
+  "inherited_inputs": "Existing [73,36,16] distance certificate and Netto designs; the separate 64--65D verifier replays all 68,224 owners for 65D.",
+  "geometry": "All shared bodies have norm64 and pair products <=32. 61D and 62D use the exact latitude and hexagonal maps with unit norm."
+}

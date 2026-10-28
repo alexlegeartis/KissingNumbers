@@ -20,9 +20,8 @@ def validate(source):
         else:
             totals.update({int(d): row['total'] for d, row in fresh['dimensions'].items()})
     expected = {row['dimension']:row['total'] for row in results() if row['dimension'] in totals}
-    # These retained constructions are superseded in 61--62D by compressed layers.
-    assert all(totals[d] < expected[d] if d in (61, 62) else totals[d] == expected[d]
-               for d in totals)
+    # These retained constructions are superseded by the shared parity families.
+    assert all(totals[d] < expected[d] for d in totals)
     return totals
 
 

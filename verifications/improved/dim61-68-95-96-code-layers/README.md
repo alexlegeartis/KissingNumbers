@@ -1,16 +1,17 @@
 # Explicit code layers and central sections
 
 Checkpoint: **28 October 2026**. This package registers eight constructions.
-The latest update improves 61D by **20.28%** and 62D by **20.09%**.
+The latest continuation improves all six registered values in 61–63D and 66–68D,
+and the neighbouring 64–65D package uses the same shared parity proof.
 
 | Dimension | This construction | Mechanism |
 |---|---:|---|
-| 61 | **87,056,170** | latitude compression with odd-parity weight-16 signs |
-| 62 | **120,620,044** | hexagonal compression and weight-16 sparse layers |
-| 63 | **182,537,988** | one central section |
-| 66 | **338,302,340** | shortened weight-16 support code and lower layers |
-| 67 | **351,420,806** | the same construction |
-| 68 | **371,552,152** | the same construction |
+| 61 | **88,260,394** | latitude compression with odd-parity weight-16 signs |
+| 62 | **121,824,268** | hexagonal compression and weight-16 sparse layers |
+| 63 | **184,286,468** | one central section |
+| 66 | **341,994,884** | shortened weight-16 support code and lower layers |
+| 67 | **355,090,822** | the same construction |
+| 68 | **375,222,168** | the same construction |
 | 95 | **7,101,541,132** | optimized central section of the enlarged 96D construction |
 | 96 | **13,313,343,680** | transversal supports plus a mixed-pair support code |
 
@@ -20,6 +21,22 @@ in [RESULTS.md](../../../RESULTS.md) and the supplied source reports. No
 unrestricted optimum is asserted.
 
 ## Replay
+
+The current 61–68D continuation uses `source/shared_parity/shared_layers.py`
+and three explicit sign-code archives. `verify_shared.py` replays all shared
+checks, the odd-phase system, every section count and the expanded layers.
+The optional `search/shared_fill.cpp` is the discovery engine; it is not a
+proof input. `source/shared_parity/dual_octads.json` supplies the complete
+72-octad catalogue, validated by membership and MacWilliams' identity.
+[Complete proof, counts and reproduction](source/shared_parity/README.md)
+explain all eight gains and the dependency of the 64–65D package.
+
+```bash
+python verify_shared.py --full-codes
+```
+
+The default `verify.py` includes the new replay and retains the preceding
+constructions below as historical certificates.
 
 The larger 61--62D continuation is supplied by
 `source/significant49_72/compressed_layers.py` and its deterministic JSON
@@ -72,7 +89,7 @@ and isolated replay helpers.
 
 ## Mathematical scope
 
-The current 61D construction shifts the extended Hamming sign code to odd
+The preceding 61D construction shifts the extended Hamming sign code to odd
 parity on 9,673 weight-16 supports in a self-orthogonal binary code. This
 forces a mismatch with every dense head and permits the sparse layer on
 both latitudes. In 62D, six fibres replace four binary coordinates by a

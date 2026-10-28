@@ -23,5 +23,7 @@ jobs:
       - run: python verifications/improved/dim73-88-gamma72-cosets/verify_norm10.py
       - run: python verifications/improved/dim61-68-95-96-code-layers/verify95_96.py
       - run: python verifications/improved/dim61-68-95-96-code-layers/verify_significant.py --cpp
+      - run: python verifications/improved/dim61-68-95-96-code-layers/verify_shared.py --full-codes
+      - run: python verifications/improved/dim64-65-signed-parity/verify.py
       - run: python verifications/improved/dim61-68-95-96-code-layers/search/negative_controls.py
       - run: python verifications/improved/dim26-31-residual-completions/verify.py

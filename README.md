@@ -8,6 +8,18 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
+> **28 October 2026 — shared parity repairs improve all of 61–68D.**
+> Reusing compatible parity-check spaces raises eight bounds by a total of
+> **21 841 408** points: **88 260 394** in 61D, **121 824 268** in 62D,
+> **184 286 468** in 63D, **335 496 064** in 64D, **335 564 290** in 65D,
+> **341 994 884** in 66D, **355 090 822** in 67D and **375 222 168** in 68D.
+> The 1,835-support global augmentation replaces the earlier 211-support
+> family; the new expanded families add 1,803 and 1,792 supports.
+> [Exact construction, phase systems and reproduction](verifications/improved/dim61-68-95-96-code-layers/source/shared_parity/README.md)
+> include independent intersection representations and a phase-corruption
+> counterexample. Gains compare with commit `816e291`. The manuscript
+> remains its earlier snapshot.
+>
 > **28 October 2026 — larger gains in 61D and 62D.**
 > Odd-parity sparse layers give **87 056 170** in 61D, an increase of
 > **14 679 314 (20.28%)**. A hexagonal coordinate compression gives
@@ -273,14 +285,14 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 58 | 52 416 510 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [10D tail](common/published.py) *(derived)* | **56 237 690** | **SOTA** | +7.29% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
 | 59 | 52 416 604 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail](common/published.py) *(derived)* | **56 907 532** | **SOTA** | +8.568% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
 | 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **57 968 343** | **SOTA** | +10.59% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **87 056 170** | **SOTA** | +66.08% | — | since 2026-08-30 | [Compressed code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **120 620 044** | **SOTA** | +130.11% | — | since 2026-08-30 | [Compressed code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **182 537 988** | **SOTA** | +248.2% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 64 | 331 737 984 | [Edel-Rains-Sloane](https://arxiv.org/abs/math/0207291) | **332 170 112** | **SOTA** | +0.130% | — | since 2026-10-24 | [Signed support augmentation](verifications/improved/dim64-65-signed-parity/) | — |
-| 65 | 331 737 986 | [ERS64](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **332 238 338** | **SOTA** | +0.151% | — | since 2026-10-24 | [Signed supports and BCH owner caps](verifications/improved/dim64-65-signed-parity/) | — |
-| 66 | 331 737 990 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **338 302 340** | **SOTA** | +1.979% | — | since 2026-10-24 | [Code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 67 | 331 737 996 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **351 420 806** | **SOTA** | +5.933% | — | since 2026-10-24 | [Code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **371 552 152** | **SOTA** | +12% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **88 260 394** | **SOTA** | +68.38% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **121 824 268** | **SOTA** | +132.41% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **184 286 468** | **SOTA** | +251.57% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 64 | 331 737 984 | [Edel-Rains-Sloane](https://arxiv.org/abs/math/0207291) | **335 496 064** | **SOTA** | +1.13% | — | since 2026-10-24 | [Signed support augmentation](verifications/improved/dim64-65-signed-parity/) | — |
+| 65 | 331 737 986 | [ERS64](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **335 564 290** | **SOTA** | +1.15% | — | since 2026-10-24 | [Signed supports and BCH owner caps](verifications/improved/dim64-65-signed-parity/) | — |
+| 66 | 331 737 990 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **341 994 884** | **SOTA** | +3.09% | — | since 2026-10-24 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 67 | 331 737 996 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **355 090 822** | **SOTA** | +7.04% | — | since 2026-10-24 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **375 222 168** | **SOTA** | +13.11% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **627 822 180** | **SOTA** | +89% | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim68-69-gamma72-cross-sections/) | — |
 | 70 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **1 249 778 250** | **SOTA** | 3.77x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
 | 71 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **2 603 658 750** | **SOTA** | 7.85x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |

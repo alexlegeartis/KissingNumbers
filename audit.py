@@ -2003,7 +2003,7 @@ if '--write-results' in sys.argv and not fail:
         'dim36-37-coxeter-todd': 'three Coxeter-Todd quotient codes with exact shell '
                                   'enumeration, phase refill and independent coordinate angles checked; '
                                   '37D adds partial latitude orbits',
-        'dim61-68-95-96-code-layers': 'explicit binary compression, central sections and enlarged support layers; exact code and geometry replay',
+        'dim61-68-95-96-code-layers': 'shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay',
         'dim26-31-residual-completions': 'shared midpoint replacements, axiswise residual heads and exact exceptional pure tails; independent full-coordinate proof',
         'dim26-27-midpoint-replacements': 'shared midpoint replacements on orthogonal tail directions; exact Leech membership, midpoint identities and all inserted-pair products',
         'dim29-30-midpoint-replacements': 'shared Leech midpoint replacements with D5/D6 inserted tails and pure D5/E6 roots; exact coordinate replay',
@@ -2016,7 +2016,7 @@ if '--write-results' in sys.argv and not fail:
         'dim38-latitude-extension': '24 additional latitude points and an exact rational axis rotation over the Leech caps and Lin equator',
         'dim39-root-replacements': 'four neutral support substitutions and 64-for-56 root replacements over the ERS layers',
         'dim28-joint-leech-layers': 'joint selection of even Leech heads and auxiliary layers over Li\'s odd blocks; exact arithmetic replay',
-        'dim64-65-signed-parity': '211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners',
+        'dim64-65-signed-parity': '1,835 added Hamming sign blocks with reusable parity-check spaces; 65D caps replace 68,224 BCH and affine-line owners',
         'dim73-88-gamma72-cosets': 'Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D',
         'dim38-leech-large-codimension': 'the Leech cap construction at codimension 14',
         'dim39-ers-constant-weight': 'Edel-Rains-Sloane with the 2026 constant-weight codes',

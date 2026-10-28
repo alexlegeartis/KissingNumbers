@@ -1,11 +1,14 @@
 # Larger compressed-code bounds in 61D and 62D
 
+This is a retained construction. The stronger current shared-parity bounds
+are given in [the latest continuation](../shared_parity/README.md).
+
 The 28 October 2026 continuation gives two substantially larger constructions:
 
-| Dimension | Previous repository bound | New bound | Gain |
-|---|---:|---:|---:|
-| 61 | 72,376,856 | **87,056,170** | **14,679,314 (20.28%)** |
-| 62 | 100,437,548 | **120,620,044** | **20,182,496 (20.09%)** |
+| Dimension | Previous repository bound | New bound | Gain | Current repository bound |
+|---|---:|---:|---:|---:|
+| 61 | 72,376,856 | **87,056,170** | **14,679,314 (20.28%)** | **88,260,394** |
+| 62 | 100,437,548 | **120,620,044** | **20,182,496 (20.09%)** | **121,824,268** |
 
 The comparison is with commit `452d929` (the same 61--62D values as `aa1b7c3`).
 These replace the preceding constructions in their dimensions. They do not

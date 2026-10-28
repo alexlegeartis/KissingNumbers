@@ -19,8 +19,8 @@ def validate(source):
     fresh = json.loads((source/path).read_text())
     assert fresh == json.loads((ROOT/'source'/path).read_text())
     totals = {int(d): row['total'] for d, row in fresh['dimensions'].items()}
-    assert totals == {row['dimension']: row['total'] for row in results()
-                      if row['dimension'] in totals}
+    current = {row['dimension']: row['total'] for row in results()}
+    assert all(totals[d] < current[d] for d in totals)
     return totals
 
 
