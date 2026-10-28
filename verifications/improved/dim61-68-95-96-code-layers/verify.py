@@ -11,6 +11,7 @@ from checkpoint import check_manifest, replay, temporary_source
 from final import results
 from verify95_96 import validate_report
 from verify_continuation import validate as validate_continuation
+from verify_significant import validate as validate_significant
 
 
 def main():
@@ -43,6 +44,7 @@ def main():
         replay(source, 'dim61_96/verify_support_bits.py')
         for name in ['bridge61', 'signed_sections', 'netto']:
             replay(source, 'continuation49_72/'+name+'.py')
+        replay(source, 'significant49_72/compressed_layers.py')
         fresh = {}
         report = json.loads((source/'dim49plus/latitude_compression.json').read_text())
         fresh[61] = report['counts']['total']
@@ -59,6 +61,7 @@ def main():
         for dim, row in mixed['dimensions'].items():
             fresh[int(dim)] = max(fresh[int(dim)], row['bound'])
         fresh.update(validate_continuation(source))
+        fresh.update(validate_significant(source))
         assert fresh == {r['dimension']:r['total'] for r in results()}
     print(json.dumps(dict(status='PASS', results=results(), full_codes='--full-codes' in sys.argv)))
 

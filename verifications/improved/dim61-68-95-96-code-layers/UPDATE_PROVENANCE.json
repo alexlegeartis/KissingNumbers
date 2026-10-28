@@ -343,5 +343,37 @@
     "scope": "New registered values only in 61-63 and 66-68; inherited code distances retain their existing proofs. No unrestricted optimum or fresh worldwide priority claim.",
     "negative_search": "No better shortening found in the stated finite search; 69-72 unchanged.",
     "paper": "The manuscript remains its previous snapshot."
+  },
+  "larger_compressed_layers_49_72": {
+    "date": "2026-10-28",
+    "baseline_commit": "452d929d7630044a1624e5da05d79464a5713f30",
+    "dimensions": {
+      "61": {
+        "total": 87056170,
+        "previous_bound": 72376856,
+        "gain": 14679314,
+        "terms": {
+          "dense": 67108864,
+          "weight16": 19810304,
+          "weight4": 136880,
+          "poles": 122
+        }
+      },
+      "62": {
+        "total": 120620044,
+        "previous_bound": 100437548,
+        "gain": 20182496,
+        "terms": {
+          "dense": 100663296,
+          "weight16": 19810304,
+          "weight4": 146320,
+          "poles": 124
+        }
+      }
+    },
+    "method": "Odd-parity extended Hamming signs on shortened self-orthogonal supports in 61D; six-fibre hexagonal coordinate compression in 62D.",
+    "verification": "Fresh 268435456-word NumPy enumeration; independent C++ Gray-code enumeration; 46778628 exact support intersections; full 2048-sign Gram matrix; exact rational/radical layer bounds and negative controls.",
+    "receipt": "source/significant49_72/compressed_layers.json",
+    "scope": "Replaces the registered 61D and 62D constructions. Other dimensions retain their preceding certificates. No unrestricted optimum or new worldwide priority survey. Manuscript remains deferred."
   }
 }

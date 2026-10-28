@@ -62,6 +62,18 @@ def results():
         if row['dimension'] in replacements:
             assert replacements[row['dimension']] > row['total']
             row['total'] = replacements[row['dimension']]
+    compressed = read('significant49_72/compressed_layers.json')
+    assert compressed['status'].startswith('Verified:')
+    assert compressed['parent_words_enumerated'] == 2**28
+    assert compressed['support_pairs_checked'] == compressed['supports']*(compressed['supports']-1)//2
+    for dim, replacement in compressed['dimensions'].items():
+        assert replacement['total'] == sum(replacement['terms'].values())
+        assert replacement['terms']['weight16'] == compressed['supports']*2048
+        for row in rows:
+            if row['dimension'] == int(dim):
+                assert replacement['previous_bound'] == row['total']
+                assert replacement['gain'] == replacement['total']-row['total'] > 0
+                row['total'] = replacement['total']
     return sorted(rows, key=lambda row: row['dimension'])
 
 

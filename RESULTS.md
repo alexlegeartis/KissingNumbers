@@ -52,8 +52,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 58 | 52 416 510 | **56 237 690** | 1.07 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
 | 59 | 52 416 604 | **56 907 532** | 1.09 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
 | 60 | 52 416 841 | **57 968 343** | 1.11 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 61 | 52 417 154 | **72 376 856** | 1.38 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
-| 62 | 52 417 932 | **100 437 548** | 1.92 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
+| 61 | 52 417 154 | **87 056 170** | 1.66 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
+| 62 | 52 417 932 | **120 620 044** | 2.30 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
 | 63 | 52 418 564 | **182 537 988** | 3.48 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
 | 64 | 331 737 984 | **332 170 112** | 1.00 | `codes` | [211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners](verifications/improved/dim64-65-signed-parity/) |
 | 65 | 331 737 986 | **332 238 338** | 1.00 | `codes` | [211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners](verifications/improved/dim64-65-signed-parity/) |

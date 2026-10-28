@@ -8,6 +8,16 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
+> **28 October 2026 — larger gains in 61D and 62D.**
+> Odd-parity sparse layers give **87 056 170** in 61D, an increase of
+> **14 679 314 (20.28%)**. A hexagonal coordinate compression gives
+> **120 620 044** in 62D, an increase of **20 182 496 (20.09%)**.
+> All **268 435 456** parent codewords and **46 778 628** sparse-support
+> pairs are checked exactly; an independent C++ enumeration agrees.
+> [Construction, proof and reproduction](verifications/improved/dim61-68-95-96-code-layers/source/significant49_72/README.md).
+> Gains compare with commit `452d929`; the other 49–72D bounds retain their
+> existing certificates. The manuscript remains its earlier snapshot.
+>
 > **28 October 2026 — further progress in 43D.**
 > Continuous head placements after shared point deletions give **2 919 782**,
 > improving the preceding repository certificate by **39 points**. Replacing
@@ -252,8 +262,8 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 58 | 52 416 510 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [10D tail](common/published.py) *(derived)* | **56 237 690** | **SOTA** | +7.29% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
 | 59 | 52 416 604 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail](common/published.py) *(derived)* | **56 907 532** | **SOTA** | +8.568% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
 | 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **57 968 343** | **SOTA** | +10.59% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **72 376 856** | **SOTA** | +38.08% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **100 437 548** | **SOTA** | +91.61% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **87 056 170** | **SOTA** | +66.08% | — | since 2026-08-30 | [Compressed code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **120 620 044** | **SOTA** | +130.11% | — | since 2026-08-30 | [Compressed code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **182 537 988** | **SOTA** | +248.2% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 64 | 331 737 984 | [Edel-Rains-Sloane](https://arxiv.org/abs/math/0207291) | **332 170 112** | **SOTA** | +0.130% | — | since 2026-10-24 | [Signed support augmentation](verifications/improved/dim64-65-signed-parity/) | — |
 | 65 | 331 737 986 | [ERS64](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **332 238 338** | **SOTA** | +0.151% | — | since 2026-10-24 | [Signed supports and BCH owner caps](verifications/improved/dim64-65-signed-parity/) | — |

@@ -13,8 +13,8 @@
 | 58 | 56 237 690 | **this work** -- the cap construction over P_48, with explicit classes |
 | 59 | 56 907 532 | **this work** -- the cap construction over P_48, with explicit classes |
 | 60 | 57 968 343 | **this work** -- the cap construction over P_48, with explicit classes |
-| 61 | 72 376 856 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 62 | 100 437 548 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 61 | 87 056 170 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 62 | 120 620 044 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
 | 63 | 182 537 988 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
 | 64 | 332 170 112 | **this work** -- 211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners |
 | 65 | 332 238 338 | **this work** -- 211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners |

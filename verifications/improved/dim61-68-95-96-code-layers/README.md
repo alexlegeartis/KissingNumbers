@@ -1,12 +1,12 @@
 # Explicit code layers and central sections
 
-Checkpoint: **28 October 2026** (95–96D continuation). This package registers
-eight constructions. The latest update improves its 95D and 96D certificates.
+Checkpoint: **28 October 2026**. This package registers eight constructions.
+The latest update improves 61D by **20.28%** and 62D by **20.09%**.
 
 | Dimension | This construction | Mechanism |
 |---|---:|---|
-| 61 | **72,376,856** | binary latitude compression and sparse layers |
-| 62 | **100,437,548** | two central sections of the 64D code construction |
+| 61 | **87,056,170** | latitude compression with odd-parity weight-16 signs |
+| 62 | **120,620,044** | hexagonal compression and weight-16 sparse layers |
 | 63 | **182,537,988** | one central section |
 | 66 | **338,302,340** | shortened weight-16 support code and lower layers |
 | 67 | **351,420,806** | the same construction |
@@ -20,6 +20,22 @@ in [RESULTS.md](../../../RESULTS.md) and the supplied source reports. No
 unrestricted optimum is asserted.
 
 ## Replay
+
+The larger 61--62D continuation is supplied by
+`source/significant49_72/compressed_layers.py` and its deterministic JSON
+receipt. It freshly enumerates all **268,435,456** parent codewords, checks
+all **46,778,628** selected support pairs, and proves every layer inequality
+exactly. `verify_significant.py` replays it in isolation; `--cpp` also checks
+the parent code and selected supports by independent scalar enumeration.
+[Coordinate formulas, parity proof and reproduction](source/significant49_72/README.md)
+explain the **14,679,314** and **20,182,496** point gains over commit `452d929`.
+
+```bash
+python verify_significant.py --cpp
+```
+
+The default `verify.py` includes these checks in NumPy. The older 61D bridge
+and 62D section below remain valid historical constructions.
 
 The **28 October 49–72D continuation** adds a verified weight-eight bridge in
 61D, parity-compatible sections of the augmented 64D parent in 62–63D, and
@@ -55,6 +71,16 @@ the installed artifacts. `common/checkpoint.py` supplies the manifest check
 and isolated replay helpers.
 
 ## Mathematical scope
+
+The current 61D construction shifts the extended Hamming sign code to odd
+parity on 9,673 weight-16 supports in a self-orthogonal binary code. This
+forces a mismatch with every dense head and permits the sparse layer on
+both latitudes. In 62D, six fibres replace four binary coordinates by a
+hexagonal tail in two dimensions, retaining **6*2^24** dense words. Both
+constructions add affine four-support signs and axial poles. The complete
+proof is in `source/significant49_72/README.md`.
+
+The retained earlier constructions are as follows.
 
 The 61D map compresses the explicit [62,26,16] code into 61 coordinates with
 two head magnitudes. Exact rational and quadratic-radical comparisons check

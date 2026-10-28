@@ -18,5 +18,6 @@ jobs:
       - run: python verifications/improved/dim41-46-p48-heads/continuation43/negative_controls.py
       - run: python verifications/improved/dim73-88-gamma72-cosets/verify_norm10.py
       - run: python verifications/improved/dim61-68-95-96-code-layers/verify95_96.py
+      - run: python verifications/improved/dim61-68-95-96-code-layers/verify_significant.py --cpp
       - run: python verifications/improved/dim61-68-95-96-code-layers/search/negative_controls.py
       - run: python verifications/improved/dim26-31-residual-completions/verify.py
