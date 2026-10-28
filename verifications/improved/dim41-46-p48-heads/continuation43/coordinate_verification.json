@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "dimension": 43,
+  "points": 2919782,
+  "complete_families": 118,
+  "explicit_tiny_points": 3447,
+  "added_points": 85,
+  "deleted_points": 46,
+  "gain": 39,
+  "tiny_pairs_checked": 5939181,
+  "tiny_family_angles_checked": 406746,
+  "tiny_pure_angles_checked": 17235,
+  "complete_family_and_pure_checks": 7621,
+  "refined_body_bounds": 22001,
+  "arithmetic": "40D coefficient metric, checked int64 products, Python integers and isqrt cutoffs",
+  "population_scope": "Inherited complete-family identities and P48n minimum/design inputs; no fresh large-shell enumeration",
+  "points_sha256": "ff4042cfe8bc6bc79f0b33aa4259df41a08c013e37511e03b6833a18aff321c4"
+}

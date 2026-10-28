@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-28",
+  "base_repository_commit": "aa1b7c3b717c055e440826b10a99f9f35e4c8d18",
+  "previous_points": 3408,
+  "final_points": 3447,
+  "gain": 39,
+  "deleted_points": 46,
+  "inserted_points": 85,
+  "method": "Continuous lifted-polytope head placement after shared point deletions, followed by exact rational screening and finite joint selection.",
+  "initial_big_vertex_pool": 643803,
+  "initial_neighborhood_limit": 6,
+  "successful_trades_by_round": [
+    136,
+    20,
+    2,
+    0
+  ],
+  "tiny_count_gains_by_round": [
+    32,
+    5,
+    2,
+    0
+  ],
+  "rational_proposal_pool": 594,
+  "finite_selection_status": "HiGHS reports optimum 39 in this shipped finite pool; no unrestricted optimum is claimed.",
+  "discovery_software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "qhull_option": "QJ1e-10"
+  },
+  "exact_certificate": {
+    "denominator": 12000000000000,
+    "ambient_angle_checks": 6370783,
+    "coordinate_angle_checks": 6370783,
+    "tiny_pair_checks": 5939181,
+    "short_difference_refinements": 22001
+  },
+  "other_screens": {
+    "40": "All 2240 norm-six centre classes give the same 82 medium families and 1134-point tiny contribution in the fixed affine-shell template.",
+    "41_42": "No free tiny insertion found with the retained complete families fixed.",
+    "44_46": "Expanded rational head grids and sampled small deletion neighborhoods gave no gain; these are finite negative searches."
+  },
+  "sha256": {
+    "previous_points.npz": "9757df16840a146ca14dd7cb872d5b6af78604804c587e3d5a152d92072b5552",
+    "delta.npz": "e8a1f5dca707775a0a56fef21ff88562a4f21b6079161c9fd4998156002fa1f8",
+    "candidate_pool.npz": "33f3611a694e4658d87c2be0997cad4e7930ad815b0e668031bbe4b6300142e1"
+  },
+  "final_points_sha256": "ff4042cfe8bc6bc79f0b33aa4259df41a08c013e37511e03b6833a18aff321c4"
+}

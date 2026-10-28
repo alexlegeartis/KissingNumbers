@@ -1,4 +1,4 @@
-43-dimensional kissing configuration with 2,919,743 points.
+43-dimensional kissing configuration with 2,919,782 points.
 
 Run: python verify.py
 Dependency: NumPy. The replay uses integer arithmetic for every angle.
@@ -26,3 +26,8 @@ The short-difference improvement used by the verifier is exact: absence of
 a norm-10/3 difference implies squared difference norm at least 16/3 in
 that discriminant class. The full 30,240-vector tiny pool is checked by
 verify_families.py and its completeness is explained in population_note.txt.
+
+28 October 2026 continuation: 3,447 explicit tiny points, replacing 46
+old points with 85 and gaining 39. The previous layer, exact delta,
+independent coefficient-coordinate verifier and reproduction are in
+../continuation43/. Complete-family population assumptions are unchanged.

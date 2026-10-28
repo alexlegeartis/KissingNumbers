@@ -240,6 +240,13 @@ def main():
         report = (verify_portable(record) if 'portable_replay' in record
                   else verify_current(record, geometry, tiny))
         print(json.dumps(report), flush=True)
+    independent = subprocess.run([sys.executable, '-B',
+        str(ROOT/'continuation43/verify_coordinates.py')], cwd=ROOT,
+        check=True, capture_output=True, text=True)
+    report = json.loads(independent.stdout)
+    assert report['status'] == 'PASS'
+    assert report['points'] == next(r['total'] for r in results() if r['dimension'] == 43)
+    print(json.dumps(report), flush=True)
     print(json.dumps(verify_older_43(geometry, tiny)), flush=True)
     if args.replay_populations:
         replay_populations(args.jobs)

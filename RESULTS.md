@@ -5,6 +5,8 @@
 70 registered lower bounds on the kissing number tau(n), compared with their
 recorded published baselines. Later superseding records are listed in README.md.
 
+The 28 October continuous-head 43D continuation gives 2919782 points (+39 over the preceding repository certificate), replacing 46 tiny-layer points with 85. Two independent exact representations each check 6370783 angle conditions. Complete-family population inputs and the deferred manuscript scope are unchanged.
+
 The 28 October Coxeter-Todd continuation gives 501672 in 36D (+39) and 505488 in 37D (+129), with two independent exact representations and reproducible phase trades.
 
 The further 28 October continuation gives 6,218,206,932 in 73D from 7,663 explicit norm-ten heads; signed-tail orbit proofs give 6,220,170,666 in 82D, 6,221,008,658 in 83D, 6,222,025,404 in 84D, 6,223,222,688 in 85D and 6,226,194,610 in 87D. A 24,645-support certificate gives 7,092,331,276 in 95D and 13,290,782,912 in 96D. The new explicit layer checks 120,048,558 products in two exact arithmetics, the signed profiles have an independent polynomial replay, and both support representations check all 303,675,690 pairs. The manuscript remains deferred.
@@ -34,7 +36,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 40 | 1 092 000 | **1 126 314** | 1.03 | `heads` | [three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products](verifications/improved/dim40-affine-shells/) |
 | 41 | 1 324 472 | **1 460 036** | 1.10 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 42 | 1 792 386 | **1 991 445** | 1.11 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
-| 43 | 2 553 792 | **2 919 743** | 1.14 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
+| 43 | 2 553 792 | **2 919 782** | 1.14 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 44 | 4 153 600 | **4 939 281** | 1.19 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 45 | 7 380 090 | **7 655 056** | 1.04 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 46 | 12 309 600 | **13 387 797** | 1.09 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |

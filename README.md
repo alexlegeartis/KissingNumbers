@@ -8,6 +8,15 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
+> **28 October 2026 — further progress in 43D.**
+> Continuous head placements after shared point deletions give **2 919 782**,
+> improving the preceding repository certificate by **39 points**. Replacing
+> 46 tiny-layer points with 85 gives 3 447 explicit tiny points. Two independent
+> exact representations each replay **6 370 783** angle conditions.
+> [Coordinates, method and reproduction](verifications/improved/dim41-46-p48-heads/continuation43/)
+> retain the documented complete-family population inputs. The manuscript
+> remains its earlier snapshot.
+>
 > **28 October 2026 — further progress in 49–72D: eighteen stronger bounds.**
 > The **7,783-line P48 class** improves 49–60D again, by 210 to 74,090 points.
 > A new eight-coordinate bridge gives **72 376 856** in 61D (+1 066 368).
@@ -227,7 +236,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/html/2607.20359v4) | **1 126 314** | **SOTA** | +3.14% | — | since 2026-10-26 | [Affine lattice shells](verifications/improved/dim40-affine-shells/) | — |
 | 41 | 1 324 472 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 42 | 1 792 386 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 991 445** | **SOTA** | +11% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 43 | 2 553 792 | [Yang et al., P48n section](https://arxiv.org/abs/2609.35051v1) | **2 919 743** | **SOTA** | +14% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 43 | 2 553 792 | [Yang et al., P48n section](https://arxiv.org/abs/2609.35051v1) | **2 919 782** | **SOTA** | +14% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 44 | 4 153 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **4 939 281** | **SOTA** | +19% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 45 | 7 380 090 | [Yang et al., QR neighbour projection](https://arxiv.org/abs/2609.35051v1) | **7 655 056** | **SOTA** | +3.7% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 46 | 12 309 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **13 387 797** | **SOTA** | +8.8% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
@@ -312,7 +321,7 @@ The [Coxeter–Todd package](verifications/improved/dim36-37-coxeter-todd/)
 proves 501 672 points in 36D by exact short-shell enumeration and phase-orbit
 angle checks, then reaches 505 488 in 37D with two latitude layers. The
 [P48n family/head package](verifications/improved/dim41-46-p48-heads/) now supplies
-all six 41–46D constructions. The 43D partial-family certificate checks 3 408 explicit
+all six 41–46D constructions. The 43D partial-family certificate checks 3 447 explicit
 tiny points; the latest 45D certificate retains 2 187 complete families and 16 pure
 heads. Their integer angles and exact head dimensions replay, with complete-family
 populations inherited from the documented identities. The older missing 43D writeup
@@ -340,7 +349,7 @@ improvement is claimed in 47D or 48D.
 
 - **42D:** October: jointly replaced auxiliary layers with two-dimensional heads, plus a pure-head hexagon
 
-- **43D:** October: 118 complete body families, 3 408 explicit tiny points selected by shared-deletion trades, and five pure heads; 2 919 743 points with a supplied exact certificate
+- **43D:** October: 118 complete body families, 3 447 explicit tiny points selected by continuous head placement and shared-deletion trades, and five pure heads; 2 919 782 points with a supplied exact certificate
 
 - **44D:** October: 1 034 complete body families with rational four-dimensional heads
 
@@ -565,7 +574,7 @@ use a rank-40 complement of sqrt(3) E8 in P48n, with heads in one to six dimensi
 Each family is normalized separately, so families can have different original lengths.
 Joint class replacements and head motions admit additional complete or partial families;
 zero-body points in the existing head span give the latest 41D, 42D, 45D and 46D
-extensions. The supplied 43D construction replaces its tiny layer with 3 408 explicit
+extensions. The supplied 43D construction replaces its tiny layer with 3 447 explicit
 body/head pairs, while coordinated 45D motion admits further complete families.
 Exact checks, population assumptions and fresh
 replay reports are documented in the
@@ -810,7 +819,7 @@ same answer. A missing-moments bug hid behind that for a day.
 *New lower bounds for kissing numbers in dimensions 18 through 96* is a 54-page
 account with a state-of-the-art table in §5 and a historical appendix. The
 main table reports 66 of the 70 registered claims. Dimensions 32–35 await the
-next manuscript update, as do the improved values in 26–31D, 36–37D, 95D and 96D. Every file
+next manuscript update, as do the improved values in 26–31D, 36–37D, 43D, 95D and 96D. Every file
 under `paper/` remains unchanged; [the manuscript checkpoint](common/manuscript_scope.json)
 records its published bounds and file hashes. The repository audit checks that
 state, the four pending dimensions and every improved value.

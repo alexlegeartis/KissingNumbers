@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+The 28 October 43D continuation reaches 2,919,782 (+39) by continuous head placement. Two independent exact representations check the complete tiny layer; the complete-family population inputs remain documented in the [43D continuation](verifications/improved/dim41-46-p48-heads/continuation43/README.md).
+
 The further 28 October continuation strengthens 49–63D and 66–68D. The P48 replay now checks the 7,783-line base. `dim61-68-95-96-code-layers/verify_continuation.py` replays the weight-eight bridge, parity-compatible sections and complete quadruple designs, and the package default replay includes all of them. The 64D parent was also freshly enumerated and checked.
 
 The 28 October P48 refilling certificate improves 49–60D. `verify_october.py` also runs `verify_refilled.py`: full int64 base/isometry checks and an independent exact binary64/full-coordinate replay. `scripts/refill_family.py` reconstructs every family array from the exhibited base.
@@ -46,7 +48,7 @@ not a new mathematical verification. All commands require assertions enabled.
 | 39 | Replay sparse supports and root replacements; check every relative pair of 1,281 dense sign orbits | Bounded integer arithmetic and complete Walsh enumeration |
 | 32–35 | Two independent exact representations: full dense-code enumeration, signed-support checks, normalized head products and explicit coordinate checks | Python 3.9+ and NumPy; no search or unverified population input |
 | 36–37 | Two exact routes: fresh short-shell enumeration, phase refill, partial latitude orbits, 97,968 expanded phase points and 1,908 latitude bodies | Python 3.9+ and NumPy; no unverified parent population |
-| 41–46 | Exact head ranks and angles; explicit tiny bodies and added medium classes | Complete-family population identities and tables are inherited; the latest large shells have not all been freshly enumerated |
+| 41–46 | Exact head ranks and angles; two independent 43D tiny-layer replays; explicit tiny bodies and added medium classes | Complete-family population identities and tables are inherited; the latest large shells have not all been freshly enumerated |
 | 49–60 | All 7,387 base lines, 577 integral isometries, 3,901,694 distinct lines and cap directions | Published parent lattice minimum/shell size; the 12D Coxeter–Todd direction count is a literature input |
 | 61–63, 95–96 | Rebuild explicit codes, sparse layers, sections and counts | Published parent code inputs stated by the source proofs |
 | 64–65 | Fresh sign-code enumeration, support intersections and parity repairs | Parent code inputs stated in the package |

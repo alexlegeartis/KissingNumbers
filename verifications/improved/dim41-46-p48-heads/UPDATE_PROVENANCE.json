@@ -188,5 +188,23 @@
       "installed": "verifications/improved/dim41-46-p48-heads/coordinated45/verify_inherited.py",
       "sha256": "6e8f5cc0dda7c51cda232322abcdf8b27e97335e167e9a7908a5031e579bc20f"
     }
-  ]
+  ],
+  "continuation43_20261028": {
+    "previous_total": 2919743,
+    "total": 2919782,
+    "gain": 39,
+    "complete_families": 118,
+    "previous_tiny_points": 3408,
+    "tiny_points": 3447,
+    "deleted_points": 46,
+    "added_points": 85,
+    "point_certificate_sha256": "ff4042cfe8bc6bc79f0b33aa4259df41a08c013e37511e03b6833a18aff321c4",
+    "previous_points_sha256": "9757df16840a146ca14dd7cb872d5b6af78604804c587e3d5a152d92072b5552",
+    "verification": [
+      "partial43/verify.py",
+      "continuation43/verify_coordinates.py"
+    ],
+    "reproduction": "continuation43/reproduce.py",
+    "population_scope": "Unchanged complete-family population identities and P48n minimum/design inputs; no new large-shell enumeration."
+  }
 }

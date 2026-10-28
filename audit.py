@@ -2040,6 +2040,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("%d registered lower bounds on the kissing number tau(n), compared with their\nrecorded published baselines. Later superseding records are listed in README.md."
                % len(claims))
     out.append("")
+    out.append("The 28 October continuous-head 43D continuation gives 2919782 points (+39 over the preceding repository certificate), replacing 46 tiny-layer points with 85. Two independent exact representations each check 6370783 angle conditions. Complete-family population inputs and the deferred manuscript scope are unchanged.")
+    out.append("")
     out.append("The 28 October Coxeter-Todd continuation gives 501672 in 36D (+39) and 505488 in 37D (+129), with two independent exact representations and reproducible phase trades.")
     out.append("")
     out.append("The further 28 October continuation gives 6,218,206,932 in 73D from 7,663 explicit norm-ten heads; signed-tail orbit proofs give 6,220,170,666 in 82D, 6,221,008,658 in 83D, 6,222,025,404 in 84D, 6,223,222,688 in 85D and 6,226,194,610 in 87D. A 24,645-support certificate gives 7,092,331,276 in 95D and 13,290,782,912 in 96D. The new explicit layer checks 120,048,558 products in two exact arithmetics, the signed profiles have an independent polynomial replay, and both support representations check all 303,675,690 pairs. The manuscript remains deferred.")
