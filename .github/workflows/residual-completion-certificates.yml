@@ -13,6 +13,10 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: python -m pip install numpy scipy sympy threadpoolctl
+      - run: python verifications/improved/dim38-joint-latitudes/verify.py
+      - run: python verifications/improved/dim38-joint-latitudes/refill/negative_controls.py
+      - run: python audit.py --repository-only --write-results
+      - run: git diff --exit-code -- RESULTS.md
       - run: python audit.py --repository-only
       - run: python verifications/improved/dim41-46-p48-heads/verify.py
       - run: python verifications/improved/dim41-46-p48-heads/continuation43/negative_controls.py

@@ -8,6 +8,16 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
+> **28 October 2026 — structural improvement in 38D.**
+> Two Fano planes, a Latin-square assignment and signed cube edges give
+> **611 522 points**, **1 128** above the preceding repository certificate.
+> The new layer adds 1 248 latitude points while deleting 120 caps.
+> [Explicit recipe, independent exact proofs and reproduction](verifications/improved/dim38-joint-latitudes/refill/)
+> include all **22 147 840** distinct latitude-pair checks. The 6 656-point
+> latitude population saturates this particular 63-support model; larger
+> gains require other supports, norm splits or axis layers. The manuscript
+> update remains deferred.
+>
 > **28 October 2026 — further progress in 43D.**
 > Continuous head placements after shared point deletions give **2 919 782**,
 > improving the preceding repository certificate by **39 points**. Replacing
@@ -231,7 +241,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 35 | 415 308 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 314** | **SOTA** | +0.00144471% | — | since 2026-10-26 | [Parity-coordinated heads](verifications/improved/dim32-35-signed-layers/) | — |
 | 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **501 672** | **SOTA** | +3.5% | — | since 2026-10-24 | [Coxeter–Todd phase refill](verifications/improved/dim36-37-coxeter-todd/) | — |
 | 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **505 488** | **SOTA** | +1.1% | — | since 2026-10-24 | [Phase code + latitudes](verifications/improved/dim36-37-coxeter-todd/) | — |
-| 38 | 566 652 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **610 394** | **SOTA** | +7.72% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Joint latitude families](verifications/improved/dim38-joint-latitudes/) | — |
+| 38 | 566 652 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **611 522** | **SOTA** | +7.92% | — | 2026-08-30 to 2026-09-28; since 2026-10-28 | [Fano-grid and cube-edge latitudes](verifications/improved/dim38-joint-latitudes/) | — |
 | 39 | 755 988 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **769 180** | **SOTA** | +1.75% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Deformed sign orbits](verifications/improved/dim39-deformed-orbits/) | — |
 | 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/html/2607.20359v4) | **1 126 314** | **SOTA** | +3.14% | — | since 2026-10-26 | [Affine lattice shells](verifications/improved/dim40-affine-shells/) | — |
 | 41 | 1 324 472 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
@@ -425,7 +435,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | [`dim26-31-residual-completions`](verifications/improved/dim26-31-residual-completions/) | 26–31 | current residual-head completions and exact exceptional pure tails; independent full replays |
 | [`dim25-collective-deformation`](verifications/improved/dim25-collective-deformation/) | 25 | collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons |
 | [`dim31-dual-centres`](verifications/improved/dim31-dual-centres/) | 31 | shared midpoint replacements and dual E7 centres; exact coordinate replay |
-| [`dim38-joint-latitudes`](verifications/improved/dim38-joint-latitudes/) | 38 | 1352 joint latitude families, signed axis rotation and coordinate axes; exact integer replay |
+| [`dim38-joint-latitudes`](verifications/improved/dim38-joint-latitudes/) | 38 | Fano-grid and cube-edge latitudes with shared cap deletions; two independent exact proofs |
 | [`dim39-deformed-orbits`](verifications/improved/dim39-deformed-orbits/) | 39 | rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration |
 | [`dim40-affine-shells`](verifications/improved/dim40-affine-shells/) | 40 | three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products |
 | [`dim18-bent-hexagon`](verifications/improved/dim18-bent-hexagon/) | 18 | bent-coset hexagon over odd Barnes–Wall; matches Cohn’s current table |
@@ -502,7 +512,7 @@ comparison is given separately by its source.
 | 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 226 520 |
 | 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 238 808 |
 | 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 246 638 |
-| 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 610 394 |
+| 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 522 |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 180 |
 
 The retained 29–30D and 38–39D certificates exceed those intervening records;

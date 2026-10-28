@@ -133,7 +133,7 @@ As of 2026-08-19:
 | 33 | 360640 | 362048 | 362048 | Echols 2026 | **370 368 |
 | 34 | 380868 | 381124 | 381124 | Echols 2026 | **390 982 |
 | 37 | 494312 | 496232 | 496232 | Echols 2026 | **505 488** |
-| **38** | 566652 | 566652 | **591612** | this project, but by a different construction — the ERS value here is 570236 | **610 394** |
+| **38** | 566652 | 566652 | **591612** | this project, but by a different construction — the ERS value here is 570236 | **611 522** |
 | **39** | 755988 | 755988 | **756116** | this project | **769 180** |
 
 The comparison and ERS counts above are historical. The 28 October 2026

@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-28",
+  "scope": "38D constructive continuation; no new comprehensive literature survey",
+  "comparison_commit": "452d929d7630044a1624e5da05d79464a5713f30",
+  "dimension": 38,
+  "previous_repository_bound": 610394,
+  "new_repository_bound": 611522,
+  "gain": 1128,
+  "construction": {
+    "fano_grid_points": 6272,
+    "cube_edge_points": 384,
+    "previous_latitude_points": 5408,
+    "new_latitude_points": 6656,
+    "deleted_cap_points": 120,
+    "retained_cap_points": 589560,
+    "equator_points": 13710,
+    "axis_points": 1596
+  },
+  "proof": {
+    "certificate_sha256": "c2e7c0e663bfe0874cb385471ff77ee88cf7c315e115595493d520790f9ed232",
+    "representations": [
+      "compressed joint-family products",
+      "independent full-coordinate replay"
+    ],
+    "distinct_latitude_pairs": 22147840,
+    "reproduction": "refill/construct.py --check",
+    "negative_controls": "duplicate family, incorrect cube body sign, undeleted same-body caps, false count"
+  },
+  "ceiling_scope": "6656 bounds only the specified 63 head supports, tail entries +/-4, and norm-32 bodies. It is not a kissing-number bound or a minimum-deletion theorem.",
+  "competing_source_review": "common/source_review_20261028.json",
+  "search_context": "PackingStar's shared-deletion correction/refill principle motivated replacing a complete auxiliary layer. The final Fano-grid/cube-edge construction is explicit and uses no optimizer.",
+  "other_dimensions": "This commit does not register new values in 32-37D or 39D."
+}

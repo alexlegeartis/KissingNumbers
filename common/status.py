@@ -489,7 +489,7 @@ for _d in (77, 78, 79):
 # Independently replayed 26 October constructions.
 STATUS[25] = ('heads', 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons; larger compatible families remain open (dim25-collective-deformation/verify.py)')
 STATUS[31] = ('heads', 'shared midpoint replacements and dual E7 centres; exact coordinate replay; larger compatible families remain open (dim31-dual-centres/verify.py)')
-STATUS[38] = ('heads', '1352 joint latitude families, signed axis rotation and coordinate axes; exact integer replay; larger compatible families remain open (dim38-joint-latitudes/verify.py)')
+STATUS[38] = ('heads', '6656 Fano-grid and cube-edge latitude points after 120 cap deletions; this 63-support latitude model is saturated; other supports, norm splits and axis layers remain open (dim38-joint-latitudes/verify.py)')
 STATUS[39] = ('codes', 'rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration; larger compatible families remain open (dim39-deformed-orbits/verify.py)')
 STATUS[40] = ('heads', 'three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products; larger compatible families remain open (dim40-affine-shells/verify.py)')
 
