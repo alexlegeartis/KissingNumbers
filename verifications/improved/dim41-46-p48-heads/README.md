@@ -64,7 +64,7 @@ coefficient coordinates and uses integer square-root cutoffs. Each checks
 method, exact coordinate definition and verification scope.
 `continuation43/reproduce.py` rebuilds the final arrays from the retained
 predecessor and rational delta, without a numerical search or optimizer.
-`continuation43/search.py` and `continuation43/select.py` are optional further
+`continuation43/search.py` and `continuation43/select_candidates.py` are optional further
 search tools. `continuation43/negative_controls.py` checks that both verifiers
 reject duplicated points and invalid pure-head angles.
 
