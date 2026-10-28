@@ -1,0 +1,15 @@
+{
+  "status": "Verified: exact packed and coordinate support replays and all cross-layer inequalities",
+  "dimension": 61,
+  "supports": 8331,
+  "signs_per_support": 128,
+  "support_pairs_checked_twice": 34698615,
+  "maximum_intersection": 4,
+  "maximum_occupied_rows": 5,
+  "negative_controls_rejected": 8,
+  "previous_bound": 71310488,
+  "added_points": 1066368,
+  "bound": 72376856,
+  "certificate_sha256": "8155d9c03ffc431495f63fd1e20623828d557bc61424de02cb80f07c6f9ab422",
+  "geometry": "Unit vectors with eight nonzero coordinates +/-1/sqrt(8); even sign parity. The old families have respectively 61, 15 and 2 nonzero coordinates, proving disjointness."
+}

@@ -18,9 +18,9 @@
     }
   ],
   "previous_checkpoint_date": "2026-10-24",
-  "continuation": {
+  "continuation_7678": {
     "baseline_commit": "a6ba3387f2b0b54942812790a1ddf19bb4e99431",
-    "certificate": "october/family_refilled.npz",
+    "certificate": "october/family_refilled_7678.npz",
     "sha256": "b3fd690866c298978373af3d575774905f92fb5040225a29111e6f2b9cceed63",
     "base_lines": 7678,
     "candidate_pool_lines": 12854287,
@@ -35,5 +35,21 @@
     "negative_trial": "96D random supports and row-pattern mutations found no enlargement in this finite run. This is not an impossibility result; no 95D or 96D bound is changed.",
     "manuscript": "Deferred; retains its previous registry snapshot.",
     "storage": "Generator words or references to historical transforms, and packed retained-index bitmaps; all expanded arrays checked exactly."
+  },
+  "continuation": {
+    "baseline_commit": "9d38a38b93fcbbc88d48981f382464569189c3c8",
+    "certificate": "october/family_refilled.npz",
+    "sha256": "d2f6afe15f1ad05b08832e4e9dcbf0a7a1159e232ab63ad30259b98ce60e0396",
+    "base_lines": 7783,
+    "candidate_pool_lines": 12854287,
+    "candidate_images": 5577,
+    "selected_images": 577,
+    "discovery_seed": 2026102802,
+    "family_seed": 20261028,
+    "random_word_length": 30,
+    "discovery": "Four 90-second local searches in the retained candidate pool reached 7728, 7754, 7773 and 7783 lines. Family construction chooses among the original 577 transforms and 5000 distinct seeded images.",
+    "storage": "Exact generator words or historical transform references and packed retained-index bitmaps.",
+    "verification": "Two complete exact geometric replays; every expanded family array can be regenerated independently.",
+    "manuscript": "Deferred."
   }
 }

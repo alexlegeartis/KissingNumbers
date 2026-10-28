@@ -5,12 +5,12 @@ eight constructions. The latest update improves its 95D and 96D certificates.
 
 | Dimension | This construction | Mechanism |
 |---|---:|---|
-| 61 | **71,310,488** | binary latitude compression and sparse layers |
-| 62 | **100,371,468** | two central sections of the 64D code construction |
-| 63 | **182,407,428** | one central section |
-| 66 | **338,292,100** | shortened weight-16 support code and lower layers |
-| 67 | **351,400,326** | the same construction |
-| 68 | **371,521,432** | the same construction |
+| 61 | **72,376,856** | binary latitude compression and sparse layers |
+| 62 | **100,437,548** | two central sections of the 64D code construction |
+| 63 | **182,537,988** | one central section |
+| 66 | **338,302,340** | shortened weight-16 support code and lower layers |
+| 67 | **351,420,806** | the same construction |
+| 68 | **371,552,152** | the same construction |
 | 95 | **7,092,331,276** | optimized central section of the enlarged 96D construction |
 | 96 | **13,290,782,912** | transversal supports plus a mixed-pair support code |
 
@@ -20,6 +20,25 @@ in [RESULTS.md](../../../RESULTS.md) and the supplied source reports. No
 unrestricted optimum is asserted.
 
 ## Replay
+
+The **28 October 49–72D continuation** adds a verified weight-eight bridge in
+61D, parity-compatible sections of the augmented 64D parent in 62–63D, and
+complete quadruple packings in 66–68D. Its gains over the preceding repository
+certificates are 1,066,368, 66,080, 130,560, 10,240, 20,480 and 30,720 points.
+[Full construction and proof scope](source/continuation49_72/README.md) gives the
+coordinate formulas, inherited inputs, exact checks and discovery search.
+
+```bash
+python verify_continuation.py
+```
+
+This replay runs `source/continuation49_72/bridge61.py`, `signed_sections.py`
+and `netto.py` in isolation. `bridge61.npz`, `section_shifts.json` and the
+copied `parent64.json` are explicit proof inputs. Their JSON receipts are
+recomputed, not treated as an optimization score. The optional
+`search/seed.py` and `search/fill_correct.cpp` rebuild the bridge seed and
+continue its search. The default `verify.py` includes all new checks.
+
 
 ```bash
 python final.py

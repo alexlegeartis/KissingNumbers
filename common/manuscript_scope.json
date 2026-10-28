@@ -336,62 +336,92 @@
     {
       "dimension": 49,
       "manuscript_total": 52430776,
-      "repository_total": 52431358
+      "repository_total": 52431568
     },
     {
       "dimension": 50,
       "manuscript_total": 52460322,
-      "repository_total": 52462074
+      "repository_total": 52462704
     },
     {
       "dimension": 51,
       "manuscript_total": 52504618,
-      "repository_total": 52508136
+      "repository_total": 52509404
     },
     {
       "dimension": 52,
       "manuscript_total": 52593106,
-      "repository_total": 52600180
+      "repository_total": 52602708
     },
     {
       "dimension": 53,
       "manuscript_total": 52710864,
-      "repository_total": 52722680
+      "repository_total": 52726898
     },
     {
       "dimension": 54,
       "manuscript_total": 52945570,
-      "repository_total": 52966854
+      "repository_total": 52974438
     },
     {
       "dimension": 55,
       "manuscript_total": 53339086,
-      "repository_total": 53376264
+      "repository_total": 53389476
     },
     {
       "dimension": 56,
       "manuscript_total": 54159098,
-      "repository_total": 54229018
+      "repository_total": 54253958
     },
     {
       "dimension": 57,
       "manuscript_total": 54627038,
-      "repository_total": 54715554
+      "repository_total": 54747156
     },
     {
       "dimension": 58,
       "manuscript_total": 56043152,
-      "repository_total": 56186178
+      "repository_total": 56237690
     },
     {
       "dimension": 59,
       "manuscript_total": 56680448,
-      "repository_total": 56847152
+      "repository_total": 56907532
     },
     {
       "dimension": 60,
       "manuscript_total": 57690671,
-      "repository_total": 57894253
+      "repository_total": 57968343
+    },
+    {
+      "dimension": 61,
+      "manuscript_total": 71310488,
+      "repository_total": 72376856
+    },
+    {
+      "dimension": 62,
+      "manuscript_total": 100371468,
+      "repository_total": 100437548
+    },
+    {
+      "dimension": 63,
+      "manuscript_total": 182407428,
+      "repository_total": 182537988
+    },
+    {
+      "dimension": 66,
+      "manuscript_total": 338292100,
+      "repository_total": 338302340
+    },
+    {
+      "dimension": 67,
+      "manuscript_total": 351400326,
+      "repository_total": 351420806
+    },
+    {
+      "dimension": 68,
+      "manuscript_total": 371521432,
+      "repository_total": 371552152
     },
     {
       "dimension": 73,

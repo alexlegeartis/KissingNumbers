@@ -47,6 +47,21 @@ def results():
         for registered in rows:
             if registered['dimension'] == int(dim):
                 registered['total'] = max(registered['total'], row['bound'])
+    bridge = read('continuation49_72/bridge61.json')
+    assert bridge['status'].startswith('Verified:')
+    assert bridge['previous_bound'] == counts['total']
+    assert bridge['bound'] == bridge['previous_bound'] + bridge['supports']*128
+    replacements = {61:bridge['bound']}
+    for name in ['signed_sections', 'netto']:
+        continuation = read('continuation49_72/'+name+'.json')
+        assert continuation['status'].startswith('Verified:')
+        for dim, row in continuation['dimensions'].items():
+            assert row['total'] == sum(row['terms'].values())
+            replacements[int(dim)] = row['total']
+    for row in rows:
+        if row['dimension'] in replacements:
+            assert replacements[row['dimension']] > row['total']
+            row['total'] = replacements[row['dimension']]
     return sorted(rows, key=lambda row: row['dimension'])
 
 

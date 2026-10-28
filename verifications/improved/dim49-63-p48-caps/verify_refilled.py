@@ -47,7 +47,7 @@ def verify():
     gram = data['gram'].astype(np.int64)
     assert np.array_equal(gram, np.load(ROOT / 'data/p48p_gram.npy'))
     base = data['base'].astype(np.int64)
-    assert base.ndim == 2 and base.shape[1] == 48 and len(base) > 7387
+    assert base.ndim == 2 and base.shape[1] == 48 and len(base) > 7678
     assert len(np.unique(canon(base), axis=0)) == len(base)
     weighted = product(base, gram)
     assert np.all(np.sum(weighted * base, axis=1) == 6)
@@ -102,7 +102,7 @@ def verify():
         keys = np.ascontiguousarray(coordinates).view(np.dtype((np.void, 48))).ravel()
         assert len(np.unique(keys)) == len(keys) == len(hashes)
 
-    old = np.load(ROOT / 'october/family_55_61.npz', allow_pickle=False)['sizes']
+    old = np.load(ROOT / 'october/family_refilled_7678.npz', allow_pickle=False)['sizes']
     old, new = np.sort(old)[::-1], np.sort(sizes)[::-1]
     rows = []
     for k in range(1, 14):

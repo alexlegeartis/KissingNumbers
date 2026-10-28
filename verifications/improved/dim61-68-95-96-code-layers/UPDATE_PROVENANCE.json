@@ -330,5 +330,18 @@
     },
     "verification": "Complete physical-coordinate and packed-integer support checks, sign-code enumeration and exact dense section",
     "receipt": "search/continuation_20261028.json"
+  },
+  "continuation_49_72": {
+    "date": "2026-10-28",
+    "baseline_commit": "9d38a38b93fcbbc88d48981f382464569189c3c8",
+    "input_parent64_sha256": "16b9b7da699d508fa460fd692fdfb0620480c4ed4078dc4f5270c230882d4c83",
+    "parent64_source": "verifications/improved/dim64-65-signed-parity/data/construction.json",
+    "bridge_supports": 8331,
+    "bridge_points": 1066368,
+    "verification": "Every bridge support pair checked in packed and coordinate representations; all new section fibres counted as packed words and expanded integer signs; complete Netto orbit and triple coverage checked independently of all block-coordinate intersections.",
+    "parent64_replay": "Fresh 536870912-word enumeration and all parity repairs passed.",
+    "scope": "New registered values only in 61-63 and 66-68; inherited code distances retain their existing proofs. No unrestricted optimum or fresh worldwide priority claim.",
+    "negative_search": "No better shortening found in the stated finite search; 69-72 unchanged.",
+    "paper": "The manuscript remains its previous snapshot."
   }
 }

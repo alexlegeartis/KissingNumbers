@@ -8,6 +8,17 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
+> **28 October 2026 — further progress in 49–72D: eighteen stronger bounds.**
+> The **7,783-line P48 class** improves 49–60D again, by 210 to 74,090 points.
+> A new eight-coordinate bridge gives **72 376 856** in 61D (+1 066 368).
+> Parity-compatible sections give **100 437 548** in 62D (+66 080) and
+> **182 537 988** in 63D (+130 560). Complete quadruple packings raise 66D,
+> 67D and 68D by 10 240, 20 480 and 30 720 points. All gains compare with
+> commit `9d38a38`; 64–65D and 69–72D retain their preceding bounds.
+> [Code constructions and exact replay](verifications/improved/dim61-68-95-96-code-layers/source/continuation49_72/README.md)
+> and [P48 certificates](verifications/improved/dim49-63-p48-caps/) state every
+> inherited input and verification scope. The manuscript update remains deferred.
+>
 > **28 October 2026 — further verified progress in eight dimensions.**
 > A refilled explicit 73D layer gives **6 218 206 932** (+2 856).
 > Signed-tail existence proofs give **6 220 170 666**, **6 221 008 658**,
@@ -220,26 +231,26 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 44 | 4 153 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **4 939 281** | **SOTA** | +19% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 45 | 7 380 090 | [Yang et al., QR neighbour projection](https://arxiv.org/abs/2609.35051v1) | **7 655 056** | **SOTA** | +3.7% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 46 | 12 309 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **13 387 797** | **SOTA** | +8.8% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 49 | 52 416 002 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [1D tail](common/published.py) *(derived)* | **52 431 358** | **SOTA** | +0.0293% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 50 | 52 416 006 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [2D tail](common/published.py) *(derived)* | **52 462 074** | **SOTA** | +0.08789% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 51 | 52 416 012 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [3D tail](common/published.py) *(derived)* | **52 508 136** | **SOTA** | +0.1758% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 52 | 52 416 024 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [4D tail](common/published.py) *(derived)* | **52 600 180** | **SOTA** | +0.3513% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 53 | 52 416 040 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [5D tail](common/published.py) *(derived)* | **52 722 680** | **SOTA** | +0.585% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 54 | 52 416 072 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [6D tail](common/published.py) *(derived)* | **52 966 854** | **SOTA** | +1.051% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 55 | 52 416 126 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [7D tail](common/published.py) *(derived)* | **53 376 264** | **SOTA** | +1.832% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 56 | 52 416 240 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [8D tail](common/published.py) *(derived)* | **54 229 018** | **SOTA** | +3.458% | — | since 2026-08-30 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 57 | 52 416 306 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [9D tail](common/published.py) *(derived)* | **54 715 554** | **SOTA** | +4.387% | — | since 2026-08-30 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 58 | 52 416 510 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [10D tail](common/published.py) *(derived)* | **56 186 178** | **SOTA** | +7.192% | — | since 2026-08-30 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 59 | 52 416 604 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail](common/published.py) *(derived)* | **56 847 152** | **SOTA** | +8.453% | — | since 2026-08-30 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **57 894 253** | **SOTA** | +10.45% | — | since 2026-08-30 | [P48 caps, 7 678-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **71 310 488** | **SOTA** | +36% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **100 371 468** | **SOTA** | +91.5% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **182 407 428** | **SOTA** | 3.48x | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 49 | 52 416 002 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [1D tail](common/published.py) *(derived)* | **52 431 568** | **SOTA** | +0.0297% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 50 | 52 416 006 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [2D tail](common/published.py) *(derived)* | **52 462 704** | **SOTA** | +0.08909% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 51 | 52 416 012 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [3D tail](common/published.py) *(derived)* | **52 509 404** | **SOTA** | +0.1782% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 52 | 52 416 024 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [4D tail](common/published.py) *(derived)* | **52 602 708** | **SOTA** | +0.3562% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 53 | 52 416 040 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [5D tail](common/published.py) *(derived)* | **52 726 898** | **SOTA** | +0.5931% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 54 | 52 416 072 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [6D tail](common/published.py) *(derived)* | **52 974 438** | **SOTA** | +1.065% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 55 | 52 416 126 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [7D tail](common/published.py) *(derived)* | **53 389 476** | **SOTA** | +1.857% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 56 | 52 416 240 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [8D tail](common/published.py) *(derived)* | **54 253 958** | **SOTA** | +3.506% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 57 | 52 416 306 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [9D tail](common/published.py) *(derived)* | **54 747 156** | **SOTA** | +4.447% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 58 | 52 416 510 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [10D tail](common/published.py) *(derived)* | **56 237 690** | **SOTA** | +7.29% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 59 | 52 416 604 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail](common/published.py) *(derived)* | **56 907 532** | **SOTA** | +8.568% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **57 968 343** | **SOTA** | +10.59% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **72 376 856** | **SOTA** | +38.08% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **100 437 548** | **SOTA** | +91.61% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **182 537 988** | **SOTA** | +248.2% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 64 | 331 737 984 | [Edel-Rains-Sloane](https://arxiv.org/abs/math/0207291) | **332 170 112** | **SOTA** | +0.130% | — | since 2026-10-24 | [Signed support augmentation](verifications/improved/dim64-65-signed-parity/) | — |
 | 65 | 331 737 986 | [ERS64](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **332 238 338** | **SOTA** | +0.151% | — | since 2026-10-24 | [Signed supports and BCH owner caps](verifications/improved/dim64-65-signed-parity/) | — |
-| 66 | 331 737 990 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **338 292 100** | **SOTA** | +1.98% | — | since 2026-10-24 | [Code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 67 | 331 737 996 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **351 400 326** | **SOTA** | +5.93% | — | since 2026-10-24 | [Code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **371 521 432** | **SOTA** | +12% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 66 | 331 737 990 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **338 302 340** | **SOTA** | +1.979% | — | since 2026-10-24 | [Code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 67 | 331 737 996 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **351 420 806** | **SOTA** | +5.933% | — | since 2026-10-24 | [Code layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
+| 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **371 552 152** | **SOTA** | +12% | — | since 2026-08-30 | [Code layers / sections](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **627 822 180** | **SOTA** | +89% | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim68-69-gamma72-cross-sections/) | — |
 | 70 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **1 249 778 250** | **SOTA** | 3.77x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
 | 71 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **2 603 658 750** | **SOTA** | 7.85x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
@@ -588,7 +599,7 @@ gain to add to the current record table; `audit.py` recomputes it from the files
 
 **Explicit classes.** The gain is proportional to the size of a *class* — a set of lines with
 pairwise |⟨u,u′⟩| ≤ μ/4 for Γ₇₂ and ≤ μ/3 for P₄₈. Caro–Wei bounds it with no coordinates at all, but real search does
-about ten times better in every lattice tried: 221 → **2118** for Γ₇₂, 712 → **7678** for
+about ten times better in every lattice tried: 221 → **2118** for Γ₇₂, 712 → **7783** for
 P₄₈, and 32 000 pairwise-disjoint classes totalling 47 150 230 lines.
 
 **The Edel–Rains–Sloane chain, evaluated where its authors did not (39, 62, 63).** Their count

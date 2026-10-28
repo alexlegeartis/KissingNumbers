@@ -38,26 +38,26 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 44 | 4 153 600 | **4 939 281** | 1.19 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 45 | 7 380 090 | **7 655 056** | 1.04 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 46 | 12 309 600 | **13 387 797** | 1.09 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
-| 49 | 52 416 002 | **52 431 358** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 50 | 52 416 006 | **52 462 074** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 51 | 52 416 012 | **52 508 136** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 52 | 52 416 024 | **52 600 180** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 53 | 52 416 040 | **52 722 680** | 1.01 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 54 | 52 416 072 | **52 966 854** | 1.01 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 55 | 52 416 126 | **53 376 264** | 1.02 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 56 | 52 416 240 | **54 229 018** | 1.03 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 57 | 52 416 306 | **54 715 554** | 1.04 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 58 | 52 416 510 | **56 186 178** | 1.07 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 59 | 52 416 604 | **56 847 152** | 1.08 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 60 | 52 416 841 | **57 894 253** | 1.10 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 61 | 52 417 154 | **71 310 488** | 1.36 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
-| 62 | 52 417 932 | **100 371 468** | 1.91 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
-| 63 | 52 418 564 | **182 407 428** | 3.48 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
+| 49 | 52 416 002 | **52 431 568** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 50 | 52 416 006 | **52 462 704** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 51 | 52 416 012 | **52 509 404** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 52 | 52 416 024 | **52 602 708** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 53 | 52 416 040 | **52 726 898** | 1.01 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 54 | 52 416 072 | **52 974 438** | 1.01 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 55 | 52 416 126 | **53 389 476** | 1.02 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 56 | 52 416 240 | **54 253 958** | 1.04 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 57 | 52 416 306 | **54 747 156** | 1.04 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 58 | 52 416 510 | **56 237 690** | 1.07 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 59 | 52 416 604 | **56 907 532** | 1.09 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 60 | 52 416 841 | **57 968 343** | 1.11 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 61 | 52 417 154 | **72 376 856** | 1.38 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
+| 62 | 52 417 932 | **100 437 548** | 1.92 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
+| 63 | 52 418 564 | **182 537 988** | 3.48 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
 | 64 | 331 737 984 | **332 170 112** | 1.00 | `codes` | [211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners](verifications/improved/dim64-65-signed-parity/) |
 | 65 | 331 737 986 | **332 238 338** | 1.00 | `codes` | [211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners](verifications/improved/dim64-65-signed-parity/) |
-| 66 | 331 737 990 | **338 292 100** | 1.02 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
-| 67 | 331 737 996 | **351 400 326** | 1.06 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
-| 68 | 331 737 984 | **371 521 432** | 1.12 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
+| 66 | 331 737 990 | **338 302 340** | 1.02 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
+| 67 | 331 737 996 | **351 420 806** | 1.06 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
+| 68 | 331 737 984 | **371 552 152** | 1.12 | `codes` | [explicit binary compression, central sections and enlarged support layers; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
 | 69 | 331 737 984 | **627 822 180** | 1.89 | `lp-exact` | [k-point moment LP with the Gram exhibited in Gamma_72](verifications/improved/dim68-69-gamma72-cross-sections/) |
 | 70 | 331 737 984 | **1 249 778 250** | 3.77 | `lp-exact` | [k-point moment LP on cross-sections of Gamma_72](verifications/improved/dim70-71-gamma72-cross-sections/) |
 | 71 | 331 737 984 | **2 603 658 750** | 7.85 | `lp-exact` | [k-point moment LP on cross-sections of Gamma_72](verifications/improved/dim70-71-gamma72-cross-sections/) |
@@ -133,18 +133,18 @@ refreshed table, not more search.
 | 39 | `dim39-deformed-orbits` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 40 | `dim40-affine-shells` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 41-46 | `dim41-46-p48-heads` | verify.py (integer angles and exact ranks; inherited population tables, not a fresh body enumeration) |
-| 49 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(1) = 1, S = 7678; verify_october.py |
-| 50 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(2) = 3, S = 23034; verify_october.py |
-| 51 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(3) = 6, S = 46062; verify_october.py |
-| 52 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(4) = 12, S = 92078; verify_october.py |
-| 53 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(5) = 20, S = 153320; verify_october.py |
-| 54 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(6) = 36, S = 275391; verify_october.py |
-| 55 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(7) = 63, S = 480069; verify_october.py |
-| 56 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(8) = 120, S = 906389; verify_october.py |
-| 57 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(9) = 153, S = 1149624; verify_october.py |
-| 58 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(10) = 255, S = 1884834; verify_october.py |
-| 59 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(11) = 302, S = 2215274; verify_october.py |
-| 60 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7678-line class; lambda(12) = 378, S = 2738706; verify_october.py |
+| 49 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(1) = 1, S = 7783; verify_october.py |
+| 50 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(2) = 3, S = 23349; verify_october.py |
+| 51 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(3) = 6, S = 46696; verify_october.py |
+| 52 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(4) = 12, S = 93342; verify_october.py |
+| 53 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(5) = 20, S = 155429; verify_october.py |
+| 54 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(6) = 36, S = 279183; verify_october.py |
+| 55 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(7) = 63, S = 486675; verify_october.py |
+| 56 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(8) = 120, S = 918859; verify_october.py |
+| 57 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(9) = 153, S = 1165425; verify_october.py |
+| 58 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(10) = 255, S = 1910590; verify_october.py |
+| 59 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(11) = 302, S = 2245464; verify_october.py |
+| 60 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(12) = 378, S = 2775751; verify_october.py |
 | 61-63, 66-68, 95-96 | `dim61-68-95-96-code-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 64-65 | `dim64-65-signed-parity` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 69 | `dim68-69-gamma72-cross-sections` | verify69.py (A_3 at the Hermite floor, det 256, exhibited inside the D_4 four-tuple) |
@@ -190,5 +190,5 @@ typed by hand. Sources:
 
 Dimensions 25 to 31 left this table on 2026-09-15, when dimension 28 became the last of them to be claimed. The cap model still reproduces Cohn's table *exactly* in 26, 28, 29, 30 and 31 --- that is what `verifications/improved/dim73-95-gamma72-caps/scripts/calibrate.py` checks --- and in each of those five a layer now beats the template that calibration validates.
 
-**An exposure, at dimensions 93-95.** These three ARE claimed, above; this is about how much room they have. Every Edel-Rains-Sloane input is a construction, so its totals are LOWER bounds: one above Gamma_72 settles a dimension, one below it settles nothing. At 93-95 the chain reaches only 2.68e9, 2.68e9 and 4.83e9, which proves nothing by being small, so the package reports the threshold instead. Dimension 95 stands as long as A(95,23,23) < 341 393, against 65 536 from the best construction in hand, on the chain (95, 23, 4, 1). `verifications/closed/dim96-ers-takeover/`
+**An exposure, at dimensions 93-95.** These three ARE claimed, above; this is about how much room they have. Every Edel-Rains-Sloane input is a construction, so its totals are LOWER bounds: one above Gamma_72 settles a dimension, one below it settles nothing. At 93-95 the chain reaches only 2.68e9, 2.68e9 and 4.83e9, which proves nothing by being small, so the package reports the threshold instead. Dimension 95 stands as long as A(95,23,23) < 341 410, against 65 536 from the best construction in hand, on the chain (95, 23, 4, 1). `verifications/closed/dim96-ers-takeover/`
 

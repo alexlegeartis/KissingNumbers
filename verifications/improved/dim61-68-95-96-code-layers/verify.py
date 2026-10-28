@@ -10,6 +10,7 @@ sys.path.insert(0, str(ROOT.parents[2] / 'common'))
 from checkpoint import check_manifest, replay, temporary_source
 from final import results
 from verify95_96 import validate_report
+from verify_continuation import validate as validate_continuation
 
 
 def main():
@@ -40,6 +41,8 @@ def main():
         replay(source, 'dim61_96/support_pairing_certificate.py')
         replay(source, 'dim61_96/mixed_pair_certificate.py')
         replay(source, 'dim61_96/verify_support_bits.py')
+        for name in ['bridge61', 'signed_sections', 'netto']:
+            replay(source, 'continuation49_72/'+name+'.py')
         fresh = {}
         report = json.loads((source/'dim49plus/latitude_compression.json').read_text())
         fresh[61] = report['counts']['total']
@@ -55,6 +58,7 @@ def main():
         mixed = validate_report(source)
         for dim, row in mixed['dimensions'].items():
             fresh[int(dim)] = max(fresh[int(dim)], row['bound'])
+        fresh.update(validate_continuation(source))
         assert fresh == {r['dimension']:r['total'] for r in results()}
     print(json.dumps(dict(status='PASS', results=results(), full_codes='--full-codes' in sys.argv)))
 

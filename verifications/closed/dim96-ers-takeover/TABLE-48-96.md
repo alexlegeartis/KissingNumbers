@@ -1,26 +1,26 @@
 | n | tau(n) >= | source |
 |---|---|---|
 | 48 | 52 416 000 | Cohn's table: Leech-Sloane 1971 (P_48) |
-| 49 | 52 431 358 | **this work** -- the cap construction over P_48, with explicit classes |
-| 50 | 52 462 074 | **this work** -- the cap construction over P_48, with explicit classes |
-| 51 | 52 508 136 | **this work** -- the cap construction over P_48, with explicit classes |
-| 52 | 52 600 180 | **this work** -- the cap construction over P_48, with explicit classes |
-| 53 | 52 722 680 | **this work** -- the cap construction over P_48, with explicit classes |
-| 54 | 52 966 854 | **this work** -- the cap construction over P_48, with explicit classes |
-| 55 | 53 376 264 | **this work** -- the cap construction over P_48, with explicit classes |
-| 56 | 54 229 018 | **this work** -- the cap construction over P_48, with explicit classes |
-| 57 | 54 715 554 | **this work** -- the cap construction over P_48, with explicit classes |
-| 58 | 56 186 178 | **this work** -- the cap construction over P_48, with explicit classes |
-| 59 | 56 847 152 | **this work** -- the cap construction over P_48, with explicit classes |
-| 60 | 57 894 253 | **this work** -- the cap construction over P_48, with explicit classes |
-| 61 | 71 310 488 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 62 | 100 371 468 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 63 | 182 407 428 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 49 | 52 431 568 | **this work** -- the cap construction over P_48, with explicit classes |
+| 50 | 52 462 704 | **this work** -- the cap construction over P_48, with explicit classes |
+| 51 | 52 509 404 | **this work** -- the cap construction over P_48, with explicit classes |
+| 52 | 52 602 708 | **this work** -- the cap construction over P_48, with explicit classes |
+| 53 | 52 726 898 | **this work** -- the cap construction over P_48, with explicit classes |
+| 54 | 52 974 438 | **this work** -- the cap construction over P_48, with explicit classes |
+| 55 | 53 389 476 | **this work** -- the cap construction over P_48, with explicit classes |
+| 56 | 54 253 958 | **this work** -- the cap construction over P_48, with explicit classes |
+| 57 | 54 747 156 | **this work** -- the cap construction over P_48, with explicit classes |
+| 58 | 56 237 690 | **this work** -- the cap construction over P_48, with explicit classes |
+| 59 | 56 907 532 | **this work** -- the cap construction over P_48, with explicit classes |
+| 60 | 57 968 343 | **this work** -- the cap construction over P_48, with explicit classes |
+| 61 | 72 376 856 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 62 | 100 437 548 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 63 | 182 537 988 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
 | 64 | 332 170 112 | **this work** -- 211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners |
 | 65 | 332 238 338 | **this work** -- 211 additional Hamming sign blocks with shared-check parity repairs; 65D caps replace 68,224 BCH and affine-line owners |
-| 66 | 338 292 100 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 67 | 351 400 326 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
-| 68 | 371 521 432 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 66 | 338 302 340 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 67 | 351 420 806 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
+| 68 | 371 552 152 | **this work** -- explicit binary compression, central sections and enlarged support layers; exact code and geometry replay |
 | 69 | 627 822 180 | **this work** -- k-point moment LP with the Gram exhibited in Gamma_72 |
 | 70 | 1 249 778 250 | **this work** -- k-point moment LP on cross-sections of Gamma_72 |
 | 71 | 2 603 658 750 | **this work** -- k-point moment LP on cross-sections of Gamma_72 |

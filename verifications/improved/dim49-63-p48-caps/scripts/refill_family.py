@@ -25,7 +25,7 @@ def build(base):
     seed = 20261028
     rng = np.random.default_rng(seed)
     seen = {transform.tobytes() for transform in transforms}
-    while len(transforms) < 2577:
+    while len(transforms) < 5577:
         transform = np.eye(48, dtype=np.int64)
         for _ in range(30):
             generator = generators[int(rng.integers(len(generators)))]
