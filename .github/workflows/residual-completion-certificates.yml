@@ -32,6 +32,8 @@ jobs:
       - run: python verifications/improved/dim64-65-signed-parity/verify.py
       - run: python verifications/improved/dim61-68-95-96-code-layers/search/negative_controls.py
       - run: python verifications/improved/dim26-31-residual-completions/verify.py
+      - run: python verifications/improved/dim27-31-joint-refills/verify.py
+      - run: python verifications/improved/dim27-31-joint-refills/negative_controls.py
       - run: python verifications/improved/dim26-30-asymmetric-exchanges/verify.py
       - run: python verifications/improved/dim27-quadratic-normal-module/verify.py
       - run: python verifications/improved/dim31-normal-module-exchange/verify.py

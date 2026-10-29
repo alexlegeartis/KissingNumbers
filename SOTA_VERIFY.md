@@ -1,6 +1,8 @@
 # Verification of the retained SOTA results
 
-The synchronized 28 October 26–31D results use the new
+The 29 October [joint-refill certificates](verifications/improved/dim27-31-joint-refills/) give 209,775, 231,684, 247,972 and 251,180 in 27D and 29–31D. Complete exact all-pairs checks and direct-int64 inserted-point checks pass; both binary32 and binary64 replays are exact under their explicit coefficient bounds. Rebuilds and six rejection controls are supplied. The 28D result remains below PackingStar’s 221,864.
+
+The retained synchronized 28 October 26–31D results use the new
 [asymmetric exchanges](verifications/improved/dim26-30-asymmetric-exchanges/),
 [27D quadratic module](verifications/improved/dim27-quadratic-normal-module/)
 and [31D normal-module exchange](verifications/improved/dim31-normal-module-exchange/).
@@ -28,7 +30,7 @@ The 28 October P48 refilling certificate improves 49–60D. `verify_october.py` 
 
 The 27 October [26–31D residual completion package](verifications/improved/dim26-31-residual-completions/) supersedes the earlier 26–31D packages. Its default replay checks all supplied coordinates independently, including a self-contained shell lemma, and uses exact quadratic-field arithmetic for the final 30D/31D pure tails. Historical packages remain reproducible. No new worldwide record survey is asserted.
 
-The README labels 70 results SOTA against its dated sources. Every labelled result
+The README labels 69 results SOTA against its dated sources. Every labelled result
 has a verification route, but a short run does not freshly establish all of them.
 The commands below check constructions; they do not perform a literature search.
 
@@ -57,10 +59,9 @@ not a new mathematical verification. All commands require assertions enabled.
 |---|---|---|
 | 18 | Reconstruct all 8,358 points and check every pair exactly | None beyond the stated mathematical construction |
 | 25 | Independent Leech rebuild, all 971 circles and 102 moved points; exact biquadratic comparisons | Standard Leech shell kissing property |
-| 31 | Complete integer coordinates: every norm, distinctness, antipodal partner and all 7,881,966,235 line pairs | NumPy; exact bounded integer products in binary64, no baseline validity assumption |
+| 27, 29–31 | Complete integer coordinates, all unordered point pairs and direct-int64 inserted-point checks | NumPy; exact bounded products, no baseline validity assumption |
 | 40 | Independent lattice minimum enumeration and all auxiliary/core pair types | NumPy and C++17 g++ with __int128; exact bounded integer BLAS |
-| 26, 28–30 | Complete asymmetric integer coordinates; exact opposite-pair and unpaired-point checks cover every unordered point pair | NumPy; no baseline validity assumption; exact finite-pool optima supplied separately for 28D/30D |
-| 27 | Full quadratic coordinates and all 5,491,467,600 line pairs | NumPy; exact sign-sensitive quadratic comparisons, no baseline validity assumption |
+| 26 | Complete asymmetric integer coordinates; every unordered point pair | NumPy; retained 28–30D certificates remain available |
 | 38 | Two independent exact proofs rebuild all cap classes, equatorial lines and axes; check 120 cap deletions and all 6,656 expanded latitude points | Golay lattice congruences and weight enumerator prove the parent minimum |
 | 39 | Replay sparse supports and root replacements; check every relative pair of 1,281 dense sign orbits | Bounded integer arithmetic and complete Walsh enumeration |
 | 32–35 | Two independent exact representations: full dense-code enumeration, signed-support checks, coordinated heads, shared root deletions and every added-star coordinate product | Python 3.9+ and NumPy; no search or unverified population input |

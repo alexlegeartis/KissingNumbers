@@ -1,5 +1,7 @@
 # A verified 209,600-point kissing configuration in 27 dimensions
 
+**Retained construction.** The [October 29 continuation](../dim27-31-joint-refills/) updates 27D and 29–31D against PackingStar’s later release; the earlier comparisons and certificates below are historical. The 28D repository result remains surpassed.
+
 28 October 2026. The explicit configuration has **209,600 points**, improving
 PackingStar's latest checked **209,586** by **14**. It uses coordinates in
 Q(sqrt(2)). This is a verified lower bound, not an optimality claim.

@@ -1,13 +1,15 @@
 # Shared midpoint replacements in dimensions 26 and 27
 
+The current-bound column follows the [29 October joint-refill continuation](../dim27-31-joint-refills/).
+
 Retained construction: the dated benchmark, construction and gain columns below are historical; the current-bound column uses the [26D asymmetric exchange](../dim26-30-asymmetric-exchanges/) and [27D quadratic module](../dim27-quadratic-normal-module/).
 
 Checkpoint: **25 October 2026**.
 
-| Dimension | Previous benchmark | This construction | Gain | Current repository bound (28 October 2026) |
+| Dimension | Previous benchmark | This construction | Gain | Current repository bound (29 October 2026) |
 |---|---:|---:|---:|---:|
 | 26 | 199,868 | **200,918** | 1,050 | 201,136 |
-| 27 | 201,589 | **204,636** | 3,047 | 209,600 |
+| 27 | 201,589 | **204,636** | 3,047 | 209,775 |
 
 The comparison benchmarks and their methods are documented by
 [Takhanov and Yun](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf).

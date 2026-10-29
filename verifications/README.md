@@ -7,15 +7,16 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-34 packages, one per **construction idea** rather than one per dimension, because several
+35 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
-| [`dim26-30-asymmetric-exchanges`](improved/dim26-30-asymmetric-exchanges/) | 26, 28–30 | current 201,136; 221,694; 231,638; 247,960; asymmetric integer codes with complete exact all-pairs proofs |
-| [`dim27-quadratic-normal-module`](improved/dim27-quadratic-normal-module/) | 27 | current 209,600-point quadratic construction, +14 over PackingStar; complete independent exact all-pairs replay |
-| [`dim31-normal-module-exchange`](improved/dim31-normal-module-exchange/) | 31 | current 251,110-point integer construction, +108 over PackingStar's 28 October update; complete independent all-pairs replay |
+| [`dim27-31-joint-refills`](improved/dim27-31-joint-refills/) | 27, 29–31 | current 209,775; 231,684; 247,972; 251,180; exact full geometry and direct-integer insertion checks |
+| [`dim26-30-asymmetric-exchanges`](improved/dim26-30-asymmetric-exchanges/) | 26, 28–30 | 201,136 current in 26D; retained 221,694; 231,638; 247,960; asymmetric integer codes with complete exact all-pairs proofs |
+| [`dim27-quadratic-normal-module`](improved/dim27-quadratic-normal-module/) | 27 | retained 209,600-point quadratic construction, +14 over PackingStar; complete independent exact all-pairs replay |
+| [`dim31-normal-module-exchange`](improved/dim31-normal-module-exchange/) | 31 | retained 251,110-point integer construction, +108 over PackingStar's 28 October update; complete independent all-pairs replay |
 | [`dim26-31-residual-completions`](improved/dim26-31-residual-completions/) | 26–31 | retained residual-head completions: 201,108; 209,532; 216,680; 226,520; 238,808; 246,638; independent exact full replays |
 | [`dim25-collective-deformation`](improved/dim25-collective-deformation/) | 25 | collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons |
 | [`dim31-dual-centres`](improved/dim31-dual-centres/) | 31 | shared midpoint replacements and dual E7 centres; exact coordinate replay |

@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-29",
+  "packingstar_commit": "477df34cf2a09bb9476b735a685b538a82da8c55",
+  "normal_octad": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    10,
+    11,
+    23
+  ],
+  "scope": "Exact explicit lower bounds above the pinned October 28 PackingStar release; no unrestricted optimality claim.",
+  "records": [
+    {
+      "dimension": 27,
+      "total": 209775,
+      "packingstar": 209760,
+      "gain": 15,
+      "previous_repository": 209600,
+      "certificate": "data/coordinates27_209775.npz",
+      "delta": "data/exchange27.npz",
+      "verification": "data/verification27_209775.json",
+      "source_url": "https://github.com/CDM1619/PackingStar/blob/477df34cf2a09bb9476b735a685b538a82da8c55/25D-31D/new_bounds_20261028/D27_209760_integer_coordinates.npz",
+      "source_sha256": "811bfaa916cdcb2088e7c9fb6264964bb7bedf07acabc242db68a5e1fb58ee79",
+      "source_canonical_sha256": "e3a75e646c064eae3b9f84a9e51273921bc2d317d0cb0fdc4fbcca49014ca2c7",
+      "canonical_point_sha256": "d27c6826695908b1effce53325661047f3f690b46f3295d3530af8b5efcdc95f",
+      "removed": 104,
+      "added": 119,
+      "direct_integer_replay": {
+        "status": "PASS",
+        "dimension": 27,
+        "removed": 104,
+        "added": 119,
+        "gain": 15,
+        "direct_integer_checks": 24963106,
+        "maximum_inserted_product": 64,
+        "canonical_point_sha256": "d27c6826695908b1effce53325661047f3f690b46f3295d3530af8b5efcdc95f"
+      }
+    },
+    {
+      "dimension": 29,
+      "total": 231684,
+      "packingstar": 231676,
+      "gain": 8,
+      "previous_repository": 231638,
+      "certificate": "data/coordinates29_231684.npz",
+      "delta": "data/exchange29.npz",
+      "verification": "data/verification29_231684.json",
+      "source_url": "https://github.com/CDM1619/PackingStar/blob/477df34cf2a09bb9476b735a685b538a82da8c55/25D-31D/new_bounds_20261028/D29_231676_integer_coordinates.npz",
+      "source_sha256": "f81165260d5a1c50264fb70ba5de72b13f44871a79f5a77070c8b39877f14e54",
+      "source_canonical_sha256": "1597071c424b11fd51d045fd646b026bb94c98dd16f5a617bbd396638ab56546",
+      "canonical_point_sha256": "782a577ae15c3a829d6d7b90a4a571883d9ecf0b03b1b3a9ad6c0b0dd7660575",
+      "removed": 97,
+      "added": 105,
+      "direct_integer_replay": {
+        "status": "PASS",
+        "dimension": 29,
+        "removed": 97,
+        "added": 105,
+        "gain": 8,
+        "direct_integer_checks": 24326715,
+        "maximum_inserted_product": 64,
+        "canonical_point_sha256": "782a577ae15c3a829d6d7b90a4a571883d9ecf0b03b1b3a9ad6c0b0dd7660575"
+      }
+    },
+    {
+      "dimension": 30,
+      "total": 247972,
+      "packingstar": 247967,
+      "gain": 5,
+      "previous_repository": 247960,
+      "certificate": "data/coordinates30_247972.npz",
+      "delta": "data/exchange30.npz",
+      "verification": "data/verification30_247972.json",
+      "source_url": "https://github.com/CDM1619/PackingStar/blob/477df34cf2a09bb9476b735a685b538a82da8c55/25D-31D/new_bounds_20261028/D30_247967_integer_coordinates.npz",
+      "source_sha256": "d436a7fe6400aa0bbd099e78e1bd47e41eacfb747dc11524b6186d935f0d58cf",
+      "source_canonical_sha256": "f16f3bd6e832db9e2f420388fdc3053eaa03d800ab42de4da217992b38f03adb",
+      "canonical_point_sha256": "b552a13eeae0a1a19595ca2eda2c55e2a9929793eb521fff11960724d6eda22b",
+      "removed": 512,
+      "added": 517,
+      "direct_integer_replay": {
+        "status": "PASS",
+        "dimension": 30,
+        "removed": 512,
+        "added": 517,
+        "gain": 5,
+        "direct_integer_checks": 128201007,
+        "maximum_inserted_product": 64,
+        "canonical_point_sha256": "b552a13eeae0a1a19595ca2eda2c55e2a9929793eb521fff11960724d6eda22b"
+      }
+    },
+    {
+      "dimension": 31,
+      "total": 251180,
+      "packingstar": 251169,
+      "gain": 11,
+      "previous_repository": 251110,
+      "certificate": "data/coordinates31_251180.npz",
+      "delta": "data/exchange31.npz",
+      "verification": "data/verification31_251180.json",
+      "source_url": "https://github.com/CDM1619/PackingStar/blob/477df34cf2a09bb9476b735a685b538a82da8c55/25D-31D/new_bounds_20261028/D31_251169_integer_coordinates.npz",
+      "source_sha256": "dabb67c15cd0ed94bf937f2c48cb22b307195af4d72acefbcbcbb3ae622fdb31",
+      "source_canonical_sha256": "fcfdf73d5ac4f04aac1a1149016b5846e512995a63f744eda5a22e614f3993f7",
+      "canonical_point_sha256": "c96c7824df4e624022cc710dee1156e00c5992dd46b40483bd39a858162685b0",
+      "removed": 159,
+      "added": 170,
+      "direct_integer_replay": {
+        "status": "PASS",
+        "dimension": 31,
+        "removed": 159,
+        "added": 170,
+        "gain": 11,
+        "direct_integer_checks": 42700430,
+        "maximum_inserted_product": 64,
+        "canonical_point_sha256": "c96c7824df4e624022cc710dee1156e00c5992dd46b40483bd39a858162685b0"
+      }
+    }
+  ]
+}

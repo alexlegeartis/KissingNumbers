@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 92 scripts, including large exact certificate replays
-    python run_all.py --full       # 111 scripts, budget about 10 hours
+    python run_all.py              # 93 scripts, including large exact certificate replays
+    python run_all.py --full       # 112 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -190,6 +190,8 @@ JOBS = [
      os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py'], 5.0, True),
     ("dims 26-31: residual completions, full independent exact replay",
      os.path.join(V, 'improved', 'dim26-31-residual-completions'), ['verify.py'], 30.0, True),
+    ("dims 27, 29-31: joint refills, complete exact geometry and direct integer checks",
+     os.path.join(V, 'improved', 'dim27-31-joint-refills'), ['verify.py'], 3.0, True),
     ("dims 26, 28, 29, 30: asymmetric exchanges, complete exact replay",
      os.path.join(V, 'improved', 'dim26-30-asymmetric-exchanges'), ['verify.py'], 10.0, True),
     ("dim27: quadratic normal module, complete independent all-pairs replay",
@@ -379,6 +381,7 @@ JOBS = [
 def _sota_jobs(quick=False):
     wanted = {
         ('common', ('capalgebra.py',)),
+        ('dim27-31-joint-refills', ('verify.py',)),
         ('dim26-30-asymmetric-exchanges', ('verify.py',)),
         ('dim27-quadratic-normal-module', ('verify.py',)),
         ('dim31-normal-module-exchange', ('verify.py',)),
@@ -466,6 +469,7 @@ def _sota_records():
 def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
+        ('dim27-31-joint-refills', [27, 29, 30, 31], [('verify.py',)], 'all norms and all unordered point pairs; bounded exact integer BLAS and separate direct-int64 checks of every inserted point'),
         ('dim26-30-asymmetric-exchanges', [26, 28, 29, 30], [('verify.py',)], 'complete explicit integer codes; exact opposite-pair and unpaired-point checks cover every unordered pair'),
         ('dim27-quadratic-normal-module', [27], [('verify.py',)], 'complete quadratic coordinates; all 5491467600 distinct antipodal-line pairs checked exactly without baseline assumptions'),
         ('dim31-normal-module-exchange', [31], [('verify.py',)], 'complete explicit integer coordinates; all 7881966235 distinct antipodal-line pairs checked without baseline assumptions'),

@@ -20,8 +20,8 @@
 *.pdf binary
 *.gz binary
 
-# Census refreshed 2026-10-28 after the further 33-37D continuation.
-# NOTE: this tree contains BOTH line endings -- 579 text files use LF and 226 use CRLF,
+# Census refreshed 2026-10-29 after the 27D and 29-31D joint-refill continuation.
+# NOTE: this tree contains BOTH line endings -- 593 text files use LF and 226 use CRLF,
 # an artefact of two write paths used while the repository was assembled.  No SOURCE OR
 # DOCUMENTATION file mixes them within itself.  Both statements are about the ten extensions
 # audit.py check 5k opens -- .py .md .txt .cff .json .tex .bib .yml .cfg .out -- and that is
