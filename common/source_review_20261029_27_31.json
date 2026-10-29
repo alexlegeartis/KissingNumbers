@@ -13,13 +13,18 @@
   },
   "verified_improvements": {
     "27": {
-      "total": 209775,
-      "gain_over_packingstar": 15,
+      "total": 209807,
+      "gain_over_packingstar": 47,
       "previous_repository": 209600
     },
+    "28": {
+      "total": 221988,
+      "gain_over_packingstar": 124,
+      "previous_repository": 221694
+    },
     "29": {
-      "total": 231684,
-      "gain_over_packingstar": 8,
+      "total": 231697,
+      "gain_over_packingstar": 21,
       "previous_repository": 231638
     },
     "30": {
@@ -28,69 +33,93 @@
       "previous_repository": 247960
     },
     "31": {
-      "total": 251180,
-      "gain_over_packingstar": 11,
+      "total": 251188,
+      "gain_over_packingstar": 19,
       "previous_repository": 251110
     }
-  },
-  "dimension_28": {
-    "repository": 221694,
-    "packingstar_reported": 221864,
-    "status": "PackingStar remains ahead; no higher certificate found"
   },
   "verification": "Complete exact geometry of final coordinates; binary32 and binary64 replays; separate direct-int64 inserted-point checks; reconstruction and deliberate rejection controls.",
   "comparison_scope": "Pinned repository update and supplied coordinates; no new worldwide literature survey.",
   "records": [
     {
       "dimension": 27,
-      "total": 209775,
+      "total": 209807,
       "packingstar": 209760,
-      "gain": 15,
+      "gain": 47,
       "previous_repository": 209600,
-      "certificate": "data/coordinates27_209775.npz",
+      "previous_checkpoint": 209775,
+      "certificate": "data/coordinates27_209807.npz",
       "delta": "data/exchange27.npz",
-      "verification": "data/verification27_209775.json",
+      "verification": "data/verification27_209807.json",
       "source_url": "https://github.com/CDM1619/PackingStar/blob/477df34cf2a09bb9476b735a685b538a82da8c55/25D-31D/new_bounds_20261028/D27_209760_integer_coordinates.npz",
       "source_sha256": "811bfaa916cdcb2088e7c9fb6264964bb7bedf07acabc242db68a5e1fb58ee79",
       "source_canonical_sha256": "e3a75e646c064eae3b9f84a9e51273921bc2d317d0cb0fdc4fbcca49014ca2c7",
-      "canonical_point_sha256": "d27c6826695908b1effce53325661047f3f690b46f3295d3530af8b5efcdc95f",
-      "removed": 104,
-      "added": 119,
+      "canonical_point_sha256": "a225287954015a0ef4f9a321d5fd8a5e9eec56c9f50e12afadfa4ae2f12652c0",
+      "removed": 244,
+      "added": 291,
       "direct_integer_replay": {
         "status": "PASS",
         "dimension": 27,
-        "removed": 104,
-        "added": 119,
-        "gain": 15,
-        "direct_integer_checks": 24963106,
+        "removed": 244,
+        "added": 291,
+        "gain": 47,
+        "direct_integer_checks": 61053546,
         "maximum_inserted_product": 64,
-        "canonical_point_sha256": "d27c6826695908b1effce53325661047f3f690b46f3295d3530af8b5efcdc95f"
+        "canonical_point_sha256": "a225287954015a0ef4f9a321d5fd8a5e9eec56c9f50e12afadfa4ae2f12652c0"
+      }
+    },
+    {
+      "dimension": 28,
+      "total": 221988,
+      "packingstar": 221864,
+      "gain": 124,
+      "previous_repository": 221694,
+      "previous_checkpoint": 221694,
+      "certificate": "data/coordinates28_221988.npz",
+      "delta": "data/exchange28.npz",
+      "verification": "data/verification28_221988.json",
+      "source_url": "https://github.com/CDM1619/PackingStar/blob/477df34cf2a09bb9476b735a685b538a82da8c55/25D-31D/new_bounds_20261028/D28_221864_integer_coordinates.npz",
+      "source_sha256": "7e7fb700e53a1088a75078fabf9b27d527b6fda29eb244f560d34d2ffa9ad0f5",
+      "source_canonical_sha256": "d86f461ab79dca430aca6f7a92451b1a00a01671a15aaca32fbb01c8d077a7f2",
+      "canonical_point_sha256": "ee6bfb5828c418969fe747b0181249a6338cf05eede8acdbc58f82de41b0ce29",
+      "removed": 312,
+      "added": 436,
+      "direct_integer_replay": {
+        "status": "PASS",
+        "dimension": 28,
+        "removed": 312,
+        "added": 436,
+        "gain": 124,
+        "direct_integer_checks": 96786332,
+        "maximum_inserted_product": 64,
+        "canonical_point_sha256": "ee6bfb5828c418969fe747b0181249a6338cf05eede8acdbc58f82de41b0ce29"
       }
     },
     {
       "dimension": 29,
-      "total": 231684,
+      "total": 231697,
       "packingstar": 231676,
-      "gain": 8,
+      "gain": 21,
       "previous_repository": 231638,
-      "certificate": "data/coordinates29_231684.npz",
+      "previous_checkpoint": 231684,
+      "certificate": "data/coordinates29_231697.npz",
       "delta": "data/exchange29.npz",
-      "verification": "data/verification29_231684.json",
+      "verification": "data/verification29_231697.json",
       "source_url": "https://github.com/CDM1619/PackingStar/blob/477df34cf2a09bb9476b735a685b538a82da8c55/25D-31D/new_bounds_20261028/D29_231676_integer_coordinates.npz",
       "source_sha256": "f81165260d5a1c50264fb70ba5de72b13f44871a79f5a77070c8b39877f14e54",
       "source_canonical_sha256": "1597071c424b11fd51d045fd646b026bb94c98dd16f5a617bbd396638ab56546",
-      "canonical_point_sha256": "782a577ae15c3a829d6d7b90a4a571883d9ecf0b03b1b3a9ad6c0b0dd7660575",
-      "removed": 97,
-      "added": 105,
+      "canonical_point_sha256": "c951257993b077f313fe01e7c1a52a04d31f678d44ab19be91e2f40ee41160ba",
+      "removed": 219,
+      "added": 240,
       "direct_integer_replay": {
         "status": "PASS",
         "dimension": 29,
-        "removed": 97,
-        "added": 105,
-        "gain": 8,
-        "direct_integer_checks": 24326715,
+        "removed": 219,
+        "added": 240,
+        "gain": 21,
+        "direct_integer_checks": 55607040,
         "maximum_inserted_product": 64,
-        "canonical_point_sha256": "782a577ae15c3a829d6d7b90a4a571883d9ecf0b03b1b3a9ad6c0b0dd7660575"
+        "canonical_point_sha256": "c951257993b077f313fe01e7c1a52a04d31f678d44ab19be91e2f40ee41160ba"
       }
     },
     {
@@ -121,29 +150,31 @@
     },
     {
       "dimension": 31,
-      "total": 251180,
+      "total": 251188,
       "packingstar": 251169,
-      "gain": 11,
+      "gain": 19,
       "previous_repository": 251110,
-      "certificate": "data/coordinates31_251180.npz",
+      "previous_checkpoint": 251180,
+      "certificate": "data/coordinates31_251188.npz",
       "delta": "data/exchange31.npz",
-      "verification": "data/verification31_251180.json",
+      "verification": "data/verification31_251188.json",
       "source_url": "https://github.com/CDM1619/PackingStar/blob/477df34cf2a09bb9476b735a685b538a82da8c55/25D-31D/new_bounds_20261028/D31_251169_integer_coordinates.npz",
       "source_sha256": "dabb67c15cd0ed94bf937f2c48cb22b307195af4d72acefbcbcbb3ae622fdb31",
       "source_canonical_sha256": "fcfdf73d5ac4f04aac1a1149016b5846e512995a63f744eda5a22e614f3993f7",
-      "canonical_point_sha256": "c96c7824df4e624022cc710dee1156e00c5992dd46b40483bd39a858162685b0",
-      "removed": 159,
-      "added": 170,
+      "canonical_point_sha256": "efeb01751228fe72c1b0bbf2f40c6cac764e96d0f78a0b17e3fe3a5f7241fccb",
+      "removed": 463,
+      "added": 482,
       "direct_integer_replay": {
         "status": "PASS",
         "dimension": 31,
-        "removed": 159,
-        "added": 170,
-        "gain": 11,
-        "direct_integer_checks": 42700430,
+        "removed": 463,
+        "added": 482,
+        "gain": 19,
+        "direct_integer_checks": 121072134,
         "maximum_inserted_product": 64,
-        "canonical_point_sha256": "c96c7824df4e624022cc710dee1156e00c5992dd46b40483bd39a858162685b0"
+        "canonical_point_sha256": "efeb01751228fe72c1b0bbf2f40c6cac764e96d0f78a0b17e3fe3a5f7241fccb"
       }
     }
-  ]
+  ],
+  "continuation": "Corrected sextet involutions and exact bipartite matching reclaim 28D and further improve 27D, 29D and 31D; all five current certificates exceed the pinned source."
 }

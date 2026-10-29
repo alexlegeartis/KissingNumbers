@@ -12,10 +12,10 @@ values and verification packages remain here as part of the research record.
 > **70 dimensions**; the [results table](#results-and-construction-history)
 > lists every current value, comparison source and verification package.
 >
-> - **27D and 29–31D:** **209 775, 231 684, 247 972 and 251 180** exceed
+> - **27–31D:** **209 807, 221 988, 231 697, 247 972, 251 188** exceed
 >   [PackingStar’s October 28 release](common/source_review_20261029_27_31.json)
->   by **15, 8, 5 and 11** points. [Complete exact proofs and explicit replacements](verifications/improved/dim27-31-joint-refills/) accompany these modest gains.
->   **28D remains behind:** our retained 221 694 versus PackingStar’s 221 864.
+>   by **47, 124, 21, 5, 19** points. [Complete exact proofs and explicit replacements](verifications/improved/dim27-31-joint-refills/) accompany these modest gains.
+>   **28D is reclaimed at 221 988**, with a gain of **124** from corrected sextet symmetries.
 >   The 26D certificate remains 201 136, two above its pinned comparison.
 > - **33–87D:** further improvements include signed layers, phase refills,
 >   the 38D Fano/cube construction, P48 families and shared parity layers.
@@ -66,10 +66,10 @@ or the ratio `this work / recorded comparison` when it is at least 2.
 That baseline can precede an intervening record by another author. For example,
 the 25D row compares 197,584 with Ma et al.'s historical 197,056, a gain of
 528 points (+0.268%). The advance over Takhanov-Yun's subsequent 197,583-point
-record is **one point**. In 31D the current 251,180-point construction gains
-**12,830 points** over the historical 238,350-point comparison. Its advance
-over PackingStar's October 28 release of 251,169 is **11 points**, and its
-increase over the preceding repository value 251,110 is **70 points**. The
+record is **one point**. In 31D the current 251,188-point construction gains
+**12,838 points** over the historical 238,350-point comparison. Its advance
+over PackingStar's October 28 release of 251,169 is **19 points**, and its
+increase over the preceding repository value 251,180 is **8 points**. The
 [25D](verifications/improved/dim25-collective-deformation/),
 [historical 31D](verifications/improved/dim31-dual-centres/) and
 [retained 26–31D residual completions](verifications/improved/dim26-31-residual-completions/) packages
@@ -96,9 +96,9 @@ last retrieved **25 October 2026**, with all 48 rows captured in
 failed, so this update retains that snapshot. Fresh checks of the relevant
 authors' repositories and the dimension-40 paper are recorded in
 [the 26 October source review](common/source_review_20261026.json).
-All 70 constructions exceed their recorded comparisons. Of these, 69 remain best in
-the reviewed sources. The new 27D and 29–31D certificates exceed PackingStar’s
-latest pinned release; 28D remains surpassed. See [the October 29 review](common/source_review_20261029_27_31.json).
+All 70 constructions exceed their recorded comparisons. Of these, 70 remain best in
+the reviewed sources. The new 27–31D certificates exceed PackingStar’s
+latest pinned release in all five dimensions. See [the October 29 review](common/source_review_20261029_27_31.json).
 Higher-dimensional status uses the separate sources below.
 The phase continuation separately records its [comparison scope](common/source_review_20261028_coxeter_todd.json).
 
@@ -108,11 +108,11 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 18 | 7 654 | [Cohn–Li, BW16 + hexagons](https://arxiv.org/abs/2411.04916v3) | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
 | 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 584** | **SOTA** | +0.268% | — |2026-08-30 to 2026-09-28; since 2026-10-26 | [Collective deformation](verifications/improved/dim25-collective-deformation/) | — |
 | 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 136** | **SOTA** | +0.634% | — | 2026-09-08 to 2026-10-05; reclaimed 2026-10-28 | [Asymmetric exchanges](verifications/improved/dim26-30-asymmetric-exchanges/) | — |
-| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 775** | **SOTA** | +4.061% | — | reclaimed 2026-10-29 | [Joint refills and reflected unions](verifications/improved/dim27-31-joint-refills/) | — |
-| 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **221 694** | **221 864** | +8.053% | +0.07668% | reclaimed 2026-10-28; surpassed later 2026-10-28 | [Asymmetric exchanges](verifications/improved/dim26-30-asymmetric-exchanges/) | [PackingStar: joint filling](https://github.com/CDM1619/PackingStar/tree/477df34cf2a09bb9476b735a685b538a82da8c55/25D-31D/new_bounds_20261028) |
-| 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **231 684** | **SOTA** | +10.591% | — | reclaimed 2026-10-29 | [Joint refills and reflected unions](verifications/improved/dim27-31-joint-refills/) | — |
+| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 807** | **SOTA** | +4.077% | — | reclaimed 2026-10-29 | [Joint refills and reflected unions](verifications/improved/dim27-31-joint-refills/) | — |
+| 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **221 988** | **SOTA** | +8.196% | — | reclaimed 2026-10-29 | [Joint refills and sextet unions](verifications/improved/dim27-31-joint-refills/) | — |
+| 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **231 697** | **SOTA** | +10.597% | — | reclaimed 2026-10-29 | [Joint refills and reflected unions](verifications/improved/dim27-31-joint-refills/) | — |
 | 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **247 972** | **SOTA** | +12.490% | — | reclaimed 2026-10-29 | [Joint refills and reflected unions](verifications/improved/dim27-31-joint-refills/) | — |
-| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **251 180** | **SOTA** | +5.383% | — | reclaimed 2026-10-29 | [Joint refills and reflected unions](verifications/improved/dim27-31-joint-refills/) | — |
+| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **251 188** | **SOTA** | +5.386% | — | reclaimed 2026-10-29 | [Joint refills and reflected unions](verifications/improved/dim27-31-joint-refills/) | — |
 | 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32) | **352 800** | **SOTA** | +0.13624% | — | since 2026-10-26 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
 | 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 376** | **SOTA** | +0.036733% | — | since 2026-10-28 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 990** | **SOTA** | +0.00255768% | — | since 2026-10-28 | [Dense-coset heads](verifications/improved/dim32-35-signed-layers/) | — |
@@ -224,7 +224,7 @@ improvement is claimed in 47D or 48D.
 <details>
 <summary>Detailed construction notes</summary>
 
-- **27D and 29–31D (current):** Joint core/auxiliary changes and compatible reflected unions give **209 775, 231 684, 247 972 and 251 180**, respectively. Gains over PackingStar’s October 28 release are **15, 8, 5 and 11**. [Full exact coordinate proofs and direct-integer cross-checks](verifications/improved/dim27-31-joint-refills/).
+- **27–31D (current):** Joint core/auxiliary changes and compatible reflected unions give **209 807, 221 988, 231 697, 247 972, 251 188**, respectively. Gains over PackingStar’s October 28 release are **47, 124, 21, 5, 19**. [Full exact coordinate proofs and direct-integer cross-checks](verifications/improved/dim27-31-joint-refills/).
 
 - **18D:** the base of Cohn–Li's hexagon had a free combinatorial parameter nobody had varied: which coset of RM(1,4) the three six-set families lie in.  Three bent cosets with pairwise-bent sums that do not sum to zero give the twelve tier-B slots three different 512-word spaces instead of one, and tier B rises from 256 to 960
 
@@ -287,13 +287,13 @@ current values. Unless an external comparison is named, an incremental gain
 compares with the preceding repository certificate. The manuscript remains at
 its [documented earlier snapshot](common/manuscript_scope.json).
 
-### 29 October — further gains in 27D and 29–31D
+### 29 October — further gains in 27–31D
 
-- Joint replacements give **209 775, 231 684, 247 972 and 251 180** in
-  27D and 29–31D: **15, 8, 5 and 11** above PackingStar's October 28 release.
+- Joint replacements give **209 807, 221 988, 231 697, 247 972, 251 188** in
+  27–31D: **47, 124, 21, 5, 19** above PackingStar's October 28 release.
   [Complete coordinates, exact geometry checks and independent integer cross-checks](verifications/improved/dim27-31-joint-refills/)
-  accompany all four certificates. The 28D search remains open; PackingStar's
-  **221 864** still exceeds our retained construction.
+  accompany all five certificates. Corrected sextet symmetries reclaim 28D and
+  further improve 27D, 29D and 31D; all final coordinates pass complete exact checks.
 
 ### 28 October — preceding certificates
 
@@ -472,7 +472,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 
 | package                                                                                      | dims   | the idea                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`dim27-31-joint-refills`](verifications/improved/dim27-31-joint-refills/) | 27, 29–31 | joint refills and reflected unions above the October 28 PackingStar release; complete exact proofs |
+| [`dim27-31-joint-refills`](verifications/improved/dim27-31-joint-refills/) | 27–31 | joint refills and reflected unions above the October 28 PackingStar release; complete exact proofs |
 | [`dim26-30-asymmetric-exchanges`](verifications/improved/dim26-30-asymmetric-exchanges/) | 26, 28–30 | current asymmetric integer configurations; complete independent all-pairs verification |
 | [`dim27-quadratic-normal-module`](verifications/improved/dim27-quadratic-normal-module/) | 27 | current 209 600-point quadratic code; full independent all-pairs verification |
 | [`dim31-normal-module-exchange`](verifications/improved/dim31-normal-module-exchange/) | 31 | current 251 110-point integer code; full independent all-pairs verification |
@@ -519,7 +519,7 @@ the lower bound in its dimensions** — who held it, when, and by what construct
 
 ## Record status and retained results
 
-**29 October comparison.** PackingStar’s [October 28 release](https://github.com/CDM1619/PackingStar/tree/477df34cf2a09bb9476b735a685b538a82da8c55/25D-31D/new_bounds_20261028) gives 209 760, 221 864, 231 676, 247 967 and 251 169 in 27–31D. The new certificates regain 27D and 29–31D. Our retained 28D construction remains 170 points behind. The [source review](common/source_review_20261029_27_31.json) pins the comparison and verification scope.
+**29 October comparison.** PackingStar’s [October 28 release](https://github.com/CDM1619/PackingStar/tree/477df34cf2a09bb9476b735a685b538a82da8c55/25D-31D/new_bounds_20261028) gives 209 760, 221 864, 231 676, 247 967 and 251 169 in 27–31D. The new certificates regain 27–31D. The 28D certificate is now 124 points above PackingStar. The [source review](common/source_review_20261029_27_31.json) pins the comparison and verification scope.
 
 **28 October comparison history.** The [earlier review](common/source_review_20261028.json)
 recorded PackingStar's 201 134, 209 586, 221 664, 231 636, 247 952 and
@@ -557,15 +557,15 @@ comparison is given separately by its source.
 | dim | earlier result | intervening result | source | current result |
 |---|---:|---:|---|---:|
 | 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) | 197 584 |
-| 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 231 684 |
+| 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 231 697 |
 | 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 247 972 |
-| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 180 |
+| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 188 |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 522 |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 180 |
 
 The retained 29–30D and 38–39D certificates exceed those intervening records.
 PackingStar's October update surpassed the residual-completion values in 26–31D;
-the October 29 continuation exceeds the latest public files in 27D and 29–31D, while 28D remains surpassed.
+the October 29 continuation exceeds the latest public files in 27–31D, including 28D through the sextet continuation.
 The 26 October collective and dual-centre constructions regain 25D and 31D. The table above
 preserves the supersession history.
 
@@ -650,7 +650,7 @@ reproduces every cross-section whose answer is known: E₇ = 126, Λ₂₃ = 93 
 E₆ = 72, 43 164, 44 550, 49 896, 27 720. Mathematics in
 `[common/PROOF-kpoint.md](common/PROOF-kpoint.md)`.
 
-**The cap construction (25–27, 29–31, 38, 49–63, 73–95).** In ℝⁿ ⊕ ℝᵏ, put a lattice shell on the
+**The cap construction (25–27–31, 38, 49–63, 73–95).** In ℝⁿ ⊕ ℝᵏ, put a lattice shell on the
 equator, delete a few lines, and put "caps" above the deleted directions. The optimum uses
 **zero-sum triples** of cap directions rather than antipodal pairs, which needs class
 threshold γ ≤ 1/4 and cap level t = 2/3; three is the maximum possible, because *n* points

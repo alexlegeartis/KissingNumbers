@@ -1,6 +1,6 @@
 # Verified asymmetric exchanges in dimensions 26, 28, 29 and 30
 
-**Retained construction.** The [October 29 continuation](../dim27-31-joint-refills/) updates 27D and 29–31D against PackingStar’s later release; the earlier comparisons and certificates below are historical. The 28D repository result remains surpassed.
+**Retained construction.** The [October 29 continuation](../dim27-31-joint-refills/) updates 27–31D against PackingStar’s later release; the earlier comparisons and certificates below are historical. The 28D sextet continuation now also exceeds the later PackingStar release.
 
 28 October 2026. These four integer configurations exceed the checked
 PackingStar coordinate files. Together with the separate 27D and 31D
@@ -9,8 +9,8 @@ packages, every dimension from 26 through 31 exceeds that pinned comparison.
 | Dimension | PackingStar | This construction | Gain | Removed | Added | Unpaired points | Current repository bound (29 October) |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 26 | 201,134 | **201,136** | 2 | 59 | 61 | 58 | 201,136 |
-| 28 | 221,664 | **221,694** | 30 | 130 | 160 | 32 | 221,694 |
-| 29 | 231,636 | **231,638** | 2 | 14 | 16 | 22 | 231,684 |
+| 28 | 221,664 | **221,694** | 30 | 130 | 160 | 32 | 221,988 |
+| 29 | 231,636 | **231,638** | 2 | 14 | 16 | 22 | 231,697 |
 | 30 | 247,956 | **247,960** | 4 | 80 | 84 | 104 | 247,972 |
 
 PackingStar's retained points are credited as the baseline. The comparison
@@ -62,8 +62,8 @@ pinned public file. The normal-sector counts change as follows:
 | Dimension | Previous sector | New sector |
 |---|---:|---:|
 | 26 | 334 | 336 | 201,136 |
-| 28 | 648 | 678 | 221,694 |
-| 29 | 728 | 730 | 231,684 |
+| 28 | 648 | 678 | 221,988 |
+| 29 | 728 | 730 | 231,697 |
 | 30 | 1,216 | 1,220 | 247,972 |
 
 The finite candidate dictionaries combine E8 heads with tail vectors of

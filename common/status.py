@@ -524,5 +524,5 @@ for _d in (82, 83, 84, 85, 87):
                   'different tail sets and stronger independence bounds remain open '
                   '(dim73-88-gamma72-cosets/verify_norm10.py)')
 
-for _d in (27, 29, 30, 31):
-    STATUS[_d] = ('heads', 'joint core/auxiliary refills and reflected-union selection over the October 28 PackingStar release; full exact replay and direct-int64 insertion checks; broader geometry remains open (dim27-31-joint-refills/verify.py)')
+for _d in (27, 28, 29, 30, 31):
+    STATUS[_d] = ('heads', 'joint core/auxiliary refills, reflected unions and corrected sextet isometries over the October 28 PackingStar release; full exact replay and direct-int64 insertion checks; broader geometry remains open (dim27-31-joint-refills/verify.py)')

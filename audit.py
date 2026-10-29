@@ -1994,7 +1994,7 @@ if '--write-results' in sys.argv and not fail:
         'dim61-68-95-96-code-layers': 'shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay',
         'dim26-30-asymmetric-exchanges': 'signed-point normal-sector exchanges without antipodal constraints; full independent exact all-pairs replay',
         'dim27-quadratic-normal-module': '384-point quadratic E8/cuboctahedral module replacing a 370-point normal sector; complete independent exact all-pairs verification',
-        'dim27-31-joint-refills': 'joint core/auxiliary refills and reflected-union selection over the October 28 PackingStar files; complete exact geometry and direct-int64 insertion checks',
+        'dim27-31-joint-refills': 'joint core/auxiliary refills, reflected unions and corrected sextet symmetries over the October 28 PackingStar files; complete exact geometry and direct-int64 insertion checks',
         'dim31-normal-module-exchange': 'signed simplex module exchanged into PackingStar coordinates by exact bipartite matching; complete independent all-pairs verification',
         'dim26-31-residual-completions': 'shared midpoint replacements, axiswise residual heads and exact exceptional pure tails; independent full-coordinate proof',
         'dim26-27-midpoint-replacements': 'shared midpoint replacements on orthogonal tail directions; exact Leech membership, midpoint identities and all inserted-pair products',
@@ -2029,7 +2029,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
-    out.append("The 29 October continuation gives 209775, 231684, 247972 and 251180 in 27D and 29-31D, exceeding PackingStar commit 477df34 by 15, 8, 5 and 11 points. Complete exact coordinate replays and independent direct-int64 insertion checks pass. The 28D repository construction remains below PackingStar's 221864. The manuscript remains deferred.")
+    out.append("The 29 October continuation gives 209807, 221988, 231697, 247972, 251188 in 27-31D, exceeding PackingStar commit 477df34 by 47, 124, 21, 5, 19 points. Corrected sextet symmetries reclaim 28D and further strengthen 27D, 29D and 31D. Complete exact coordinate replays and independent direct-int64 insertion checks pass. The manuscript remains deferred.")
     out.append("")
     out.append("The historical synchronized 28 October registry included 201136, 209600, 221694, 231638, 247960 and 251110 in dimensions 26-31, gains of 2, 14, 30, 2, 4 and 108 over PackingStar commit b67832a. Complete coordinate replays verify the integer and quadratic configurations, including all unpaired points. The concurrent 33-96D improvements and corrected nonlinear-code comparisons are retained; the paper remains deferred.")
     out.append("")

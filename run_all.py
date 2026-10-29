@@ -190,7 +190,7 @@ JOBS = [
      os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py'], 5.0, True),
     ("dims 26-31: residual completions, full independent exact replay",
      os.path.join(V, 'improved', 'dim26-31-residual-completions'), ['verify.py'], 30.0, True),
-    ("dims 27, 29-31: joint refills, complete exact geometry and direct integer checks",
+    ("dims 27-31: joint refills, complete exact geometry and direct integer checks",
      os.path.join(V, 'improved', 'dim27-31-joint-refills'), ['verify.py'], 3.0, True),
     ("dims 26, 28, 29, 30: asymmetric exchanges, complete exact replay",
      os.path.join(V, 'improved', 'dim26-30-asymmetric-exchanges'), ['verify.py'], 10.0, True),
@@ -469,7 +469,7 @@ def _sota_records():
 def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
-        ('dim27-31-joint-refills', [27, 29, 30, 31], [('verify.py',)], 'all norms and all unordered point pairs; bounded exact integer BLAS and separate direct-int64 checks of every inserted point'),
+        ('dim27-31-joint-refills', [27, 28, 29, 30, 31], [('verify.py',)], 'all norms and all unordered point pairs; bounded exact integer BLAS and separate direct-int64 checks of every inserted point'),
         ('dim26-30-asymmetric-exchanges', [26, 28, 29, 30], [('verify.py',)], 'complete explicit integer codes; exact opposite-pair and unpaired-point checks cover every unordered pair'),
         ('dim27-quadratic-normal-module', [27], [('verify.py',)], 'complete quadratic coordinates; all 5491467600 distinct antipodal-line pairs checked exactly without baseline assumptions'),
         ('dim31-normal-module-exchange', [31], [('verify.py',)], 'complete explicit integer coordinates; all 7881966235 distinct antipodal-line pairs checked without baseline assumptions'),
