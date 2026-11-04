@@ -55,3 +55,36 @@ verified before it yields a 17D lower bound.
 The random seed is fixed. The search samples flat sets near one initial
 configuration; it is not exhaustive and its current runs have not found
 a new record.
+
+## Coupled equator-switch experiment
+
+The `equator_*` programs jointly consider removing groups of odd-Barnes–Wall
+equator points and adding six-support tier orbits at both heights. Unlike the
+fixed-equator pool, the source scans every six-coordinate support, including
+supports outside RM(2,4). The subgroup-orbit seed reconstructs the known
+5,730 points, and `verify_seed.py` independently checks all pair products in
+integer arithmetic. Each shared equator deletion is charged only once.
+
+The shipped frontier contains 1,376 mirrored candidate orbits with a
+single-orbit trade deficit of at most 256 points, after testing individual
+orbit compatibility. This is a deliberately restricted finite pool, not all
+possible changes to the equator, not a proof that the full search is closed,
+and not a new bound. The MILP uses floating-point optimization; any candidate
+must be reconstructed and independently checked exactly before it is claimed.
+Its objective charges deletions of seed equator, tier and flat orbits and
+allows compatible new orbits to share those deletions.
+
+From the repository root, first run the preparation and coupling commands in
+both sections above, then:
+
+    python research/mixed_tier17_20261104/equator_seed.py
+    python research/mixed_tier17_20261104/equator_prepare.py
+    python research/mixed_tier17_20261104/verify_seed.py
+    c++ -O3 -std=c++17 research/mixed_tier17_20261104/equator_scan.cpp -o /tmp/mixed17-eq-scan
+    /tmp/mixed17-eq-scan
+    c++ -O3 -std=c++17 research/mixed_tier17_20261104/equator_graph.cpp -o /tmp/mixed17-eq-graph
+    /tmp/mixed17-eq-graph
+    MIXED17_MILP_SECONDS=900 python research/mixed_tier17_20261104/equator_milp.py
+
+`equator_anneal.cpp` is an optional heuristic on the generated graph. Neither
+a search failure nor a numerical optimization limit proves an upper bound.
