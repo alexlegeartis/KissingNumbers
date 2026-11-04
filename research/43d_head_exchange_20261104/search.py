@@ -1,12 +1,12 @@
 """Deterministic finite 43D one-for-two discovery; exact checks gate output."""
-import argparse,collections,hashlib,itertools,json,os,sys,tempfile,time
+import argparse,base64,collections,hashlib,io,itertools,json,os,sys,tempfile,time
 from pathlib import Path
 import numpy as np
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1];P=ROOT/'verifications/improved/dim41-46-p48-heads/partial43';sys.path.insert(0,str(P));import verify_families as vf
 
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);args=parser.parse_args();base=P/'explicit_points_43.npz';assert hashlib.sha256(base.read_bytes()).hexdigest()=='ff4042cfe8bc6bc79f0b33aa4259df41a08c013e37511e03b6833a18aff321c4';start=time.monotonic();g,res,mu,_=vf.geometry();X=np.load(P/'tiny_bodies.npz')['H'].astype(np.int64);q=np.load(P/'body_complement.npz');tc=vf.mm(vf.mm(X,q['b'].T),vf.inverse(q['q'],3));assert not np.any(tc%288);tc//=288;lookup={row.tobytes():i for i,row in enumerate(res)};labels=np.array([lookup[row.tobytes()] for row in tc%3],np.int32)
- model=dict(np.load(P/'configuration_43.npz'));old=dict(np.load(base));D=int(old['head_denominator']);raw=np.unique(old['head_numerators'],axis=0);heads=raw.astype(float)/D;oldhead=old['head_numerators'].astype(float)/D;oldnorm=10+(oldhead*oldhead).sum(1);Z=model['head_numerators'].astype(float)/int(model['head_denominator']);rad=model['r3'];fn_float=rad+(Z*Z).sum(1);pure=model['pure_directions'].astype(float);digits=g['digits'];powers=g['powers'];classes=model['classes'];beta=np.empty((6561,len(classes)),np.int16)
+ parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);args=parser.parse_args();base=base64.b64decode((HERE/'baseline_2919782.npz.b64').read_bytes());assert hashlib.sha256(base).hexdigest()=='ff4042cfe8bc6bc79f0b33aa4259df41a08c013e37511e03b6833a18aff321c4';start=time.monotonic();g,res,mu,_=vf.geometry();X=np.load(P/'tiny_bodies.npz')['H'].astype(np.int64);q=np.load(P/'body_complement.npz');tc=vf.mm(vf.mm(X,q['b'].T),vf.inverse(q['q'],3));assert not np.any(tc%288);tc//=288;lookup={row.tobytes():i for i,row in enumerate(res)};labels=np.array([lookup[row.tobytes()] for row in tc%3],np.int32)
+ model=dict(np.load(P/'configuration_43.npz'));old=dict(np.load(io.BytesIO(base),allow_pickle=False));D=int(old['head_denominator']);raw=np.unique(old['head_numerators'],axis=0);heads=raw.astype(float)/D;oldhead=old['head_numerators'].astype(float)/D;oldnorm=10+(oldhead*oldhead).sum(1);Z=model['head_numerators'].astype(float)/int(model['head_denominator']);rad=model['r3'];fn_float=rad+(Z*Z).sum(1);pure=model['pure_directions'].astype(float);digits=g['digits'];powers=g['powers'];classes=model['classes'];beta=np.empty((6561,len(classes)),np.int16)
  for i in range(6561):beta[i]=10+rad-18+mu[((digits[classes]-digits[i])%3)@powers]
  existing={(int(b),tuple(map(int,h))) for b,h in zip(old['body_indices'],old['head_numerators'])};groups=collections.defaultdict(list)
  with tempfile.TemporaryDirectory(prefix='k43-search-') as temp:
