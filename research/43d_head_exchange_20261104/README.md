@@ -30,6 +30,7 @@ is against the repository's 2,919,782-point certificate.
 ## Discovery replay
 
     OPENBLAS_NUM_THREADS=1 python research/43d_head_exchange_20261104/search.py --output /tmp/k43-delta.json
+    OPENBLAS_NUM_THREADS=1 python research/43d_head_exchange_20261104/search_second.py --output /tmp/k43-second-delta.json
 
 The first-stage search crosses the 30,240 tiny bodies with the 305 distinct rational
 heads in the incumbent. It screens against the complete families and the
@@ -38,6 +39,8 @@ and looks for two mutually compatible replacements. Integer arithmetic
 checks the proposed pair against all retained tiny points, the complete
 families and the pure heads before emitting it. A floating-point screen is
 used only to generate candidates and may miss feasible exchanges; it is not
-a certificate or an exhaustive optimality claim. On the development run it
-reproduced the first one-for-two step; the second two-for-three step is
-specified by `delta.json`. The independent full checks remain `replay.py`.
+a certificate or an exhaustive optimality claim. The second search begins
+from the archived first-stage exchange, applies the exact short-difference
+refinement to each body, and searches compatible triples sharing two deleted
+points. Both searches reproduced their corresponding steps on the development
+run. The independent full checks remain `replay.py`.
