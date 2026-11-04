@@ -1,0 +1,7 @@
+{
+  "hexagon_stationary": true,
+  "perturbed_hexagon_descent": true,
+  "smooth_max_gradient_error": 2.871658466574445e-11,
+  "algebraic_conflict_equalities_and_violations": true,
+  "split_batch_adam_resume_max_error": 0.0
+}

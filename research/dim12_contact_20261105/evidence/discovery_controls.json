@@ -1,0 +1,16 @@
+{
+  "paper_batch64": {
+    "starts": 64,
+    "full_schedule_steps": 35000,
+    "best_max_cos": 0.5259213132584517,
+    "first_9000_steps": "original PyTorch GPU batch",
+    "remaining_26000_steps": "original PyTorch functions on separate CPU workers, preserved Adam state"
+  },
+  "default_batch512_scaling": {
+    "starts": 8,
+    "full_schedule_steps": 35000,
+    "best_max_cos": 0.5337194311145385
+  },
+  "eligible_for_released_polisher": 0,
+  "save_threshold": 0.501
+}

@@ -1,0 +1,14 @@
+{
+  "dimension": 21,
+  "count": 31561,
+  "fixed_points": 27720,
+  "restarts": 23,
+  "evaluations": 2486,
+  "seconds": 180.00750401522964,
+  "best_energy": 0.0037739812578337696,
+  "max_variable_dot": 0.5048713551252836,
+  "max_dot": 0.5048713551252836,
+  "gradient_error": 4.4846240436491325e-11,
+  "certified": false,
+  "scope": "Numerical candidates only; exact checking is required for any new bound."
+}

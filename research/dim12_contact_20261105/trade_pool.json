@@ -1,0 +1,12 @@
+{
+  "vertices": 3680,
+  "edges": 134000,
+  "distinct_exact_dot_tests": 398,
+  "seed_sizes": [
+    840,
+    840
+  ],
+  "exact_seed_checks": true,
+  "elapsed_seconds": 1.6209507891908288,
+  "source_sha256": "5b64724accf02281978594254a0778885be7f18a902fbdf1e127211f69927e31"
+}

@@ -1,0 +1,17 @@
+{
+  "search_841_riesz.py": {
+    "url": "https://github.com/k-nic/841_in_12D/blob/main/search_841_riesz.py",
+    "github_blob_sha": "2a3e8ce119c20ddc3aedf00f44f8600ad91d8e23",
+    "sha256": "bb89913f99bc9542a46f47fbf4afacf1823bc66fc7bb18e4a7a14871830efb16"
+  },
+  "polish_841.py": {
+    "url": "https://github.com/k-nic/841_in_12D/blob/main/polish_841.py",
+    "github_blob_sha": "a4b42f34b9c8af6fa528ed622fe8570b9a9e965c",
+    "sha256": "5de63da43cdd2cea943bcff3b9635abb0354a004e909d6c16e5a700f9becdef0"
+  },
+  "checking.ipynb": {
+    "github_blob_sha": "673063c8e04b21b64c18534ddc01bd0737e57016",
+    "sha256": "a3520e9f2f9623b71e2d21038b6ff63b26c6c2cb32ebdc3e6b070851652315f0",
+    "url": "https://github.com/k-nic/841_in_12D/blob/main/checking.ipynb"
+  }
+}

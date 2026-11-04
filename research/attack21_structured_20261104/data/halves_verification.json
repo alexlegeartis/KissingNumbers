@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "rational_certificates": 62,
+  "translated_fixed_half_sets": 124,
+  "translated_cosets_in_full_component": 1984,
+  "conditional_hole_lower_bound": 64,
+  "scope": "Any dominating set containing any of the certified fixed 32-hole halves"
+}

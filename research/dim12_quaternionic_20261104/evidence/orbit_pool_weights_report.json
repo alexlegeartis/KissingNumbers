@@ -1,0 +1,5 @@
+{
+  "sha256": "782740a8491b0a2a3632314cd829baf374738bca46b365b1fb2198538f819f04",
+  "weight": "max(1,round(128 * full sign-orbit squared violation)), capped at 255",
+  "zero_pattern_exactly_matches_conflict_graph": true
+}

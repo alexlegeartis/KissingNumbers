@@ -1,0 +1,9 @@
+{
+  "status": "INFEASIBLE",
+  "seconds": 2.751769704,
+  "total_seconds": 3.269491072744131,
+  "best_count": 12460,
+  "branches": 0,
+  "conflicts": 0,
+  "scope": "Conservative graph on sampled rational polar directions and the published auxiliary layer, with the complete base fixed."
+}

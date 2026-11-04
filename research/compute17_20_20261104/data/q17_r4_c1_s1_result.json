@@ -1,0 +1,14 @@
+{
+  "run": "q17_r4_c1_s1",
+  "status": "FEASIBLE",
+  "dimension": 17,
+  "best_count": 5730,
+  "restricted_upper_bound": 9250,
+  "baseline": 5730,
+  "solver_seconds": 619.628420996,
+  "total_seconds": 680.2312161056325,
+  "workers": 16,
+  "conflicts": 0,
+  "branches": 0,
+  "scope": "Only this subgroup-invariant finite candidate pool; not an unrestricted kissing upper bound."
+}

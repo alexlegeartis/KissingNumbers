@@ -1,0 +1,11 @@
+{"restarts": 10, "best_max_dot": 0.5519241210596089, "seconds": 3.9139587646350265}
+{"restarts": 20, "best_max_dot": 0.5519241210596089, "seconds": 6.916083075106144}
+{"restarts": 30, "best_max_dot": 0.5345224838248487, "seconds": 9.939129890874028}
+{"restarts": 40, "best_max_dot": 0.5303300858899113, "seconds": 12.89302818197757}
+{"restarts": 50, "best_max_dot": 0.5303300858899113, "seconds": 16.515569848008454}
+{"restarts": 60, "best_max_dot": 0.5303300858899113, "seconds": 19.538059828802943}
+{"restarts": 70, "best_max_dot": 0.5303300858899113, "seconds": 22.850496920756996}
+{"restarts": 80, "best_max_dot": 0.5303300858899113, "seconds": 25.43057622667402}
+{"restarts": 90, "best_max_dot": 0.5303300858899113, "seconds": 28.345484752207994}
+{"restarts": 100, "best_max_dot": 0.5303300858899113, "seconds": 31.352060138247907}
+{"dimension": 19, "directions": 100, "best_max_dot": 0.5303300858899113, "seconds": 31.352737954817712, "scope": "Numerical search for insertion directions, not a maximality proof."}

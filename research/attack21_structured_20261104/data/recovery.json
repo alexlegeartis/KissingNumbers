@@ -1,0 +1,619 @@
+{
+  "tests": 32,
+  "successes": 32,
+  "provided_published_map": false,
+  "provided_published_labels": false,
+  "assumed_structure": "codimension-four linear kernels",
+  "maximum_seconds": 0.1468991171568632,
+  "total_attempts": 87217,
+  "runs": [
+    {
+      "seed": 0,
+      "attempts": 1759,
+      "rows": [
+        2037,
+        3142,
+        2108,
+        1832
+      ],
+      "recovery_seconds": 0.034574197605252266,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 1,
+      "attempts": 4308,
+      "rows": [
+        3582,
+        2662,
+        3886,
+        3647
+      ],
+      "recovery_seconds": 0.06431019119918346,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 2,
+      "attempts": 5287,
+      "rows": [
+        2090,
+        281,
+        1271,
+        2011
+      ],
+      "recovery_seconds": 0.07879702560603619,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 3,
+      "attempts": 1531,
+      "rows": [
+        231,
+        3938,
+        575,
+        770
+      ],
+      "recovery_seconds": 0.025512966327369213,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 4,
+      "attempts": 2231,
+      "rows": [
+        1149,
+        4044,
+        3222,
+        605
+      ],
+      "recovery_seconds": 0.035545168444514275,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 5,
+      "attempts": 1475,
+      "rows": [
+        1620,
+        276,
+        607,
+        2225
+      ],
+      "recovery_seconds": 0.02480801474303007,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 6,
+      "attempts": 983,
+      "rows": [
+        918,
+        1204,
+        354,
+        3666
+      ],
+      "recovery_seconds": 0.017715007066726685,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 7,
+      "attempts": 2015,
+      "rows": [
+        1658,
+        4001,
+        3514,
+        1226
+      ],
+      "recovery_seconds": 0.03228767402470112,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 8,
+      "attempts": 2101,
+      "rows": [
+        1576,
+        954,
+        3660,
+        2785
+      ],
+      "recovery_seconds": 0.03377894219011068,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 9,
+      "attempts": 9950,
+      "rows": [
+        4033,
+        2142,
+        1931,
+        3303
+      ],
+      "recovery_seconds": 0.1468991171568632,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 10,
+      "attempts": 4681,
+      "rows": [
+        1816,
+        153,
+        1723,
+        2267
+      ],
+      "recovery_seconds": 0.07115645054727793,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 11,
+      "attempts": 513,
+      "rows": [
+        616,
+        2298,
+        1778,
+        1567
+      ],
+      "recovery_seconds": 0.011051344685256481,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 12,
+      "attempts": 2491,
+      "rows": [
+        1832,
+        4016,
+        150,
+        488
+      ],
+      "recovery_seconds": 0.03934359084814787,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 13,
+      "attempts": 19,
+      "rows": [
+        442,
+        3028,
+        3671,
+        1314
+      ],
+      "recovery_seconds": 0.003982018679380417,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 14,
+      "attempts": 104,
+      "rows": [
+        3973,
+        2936,
+        2534,
+        406
+      ],
+      "recovery_seconds": 0.005194957368075848,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 15,
+      "attempts": 4234,
+      "rows": [
+        4053,
+        2782,
+        3949,
+        2557
+      ],
+      "recovery_seconds": 0.06402177084237337,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 16,
+      "attempts": 2288,
+      "rows": [
+        3481,
+        952,
+        474,
+        229
+      ],
+      "recovery_seconds": 0.03634568490087986,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 17,
+      "attempts": 9357,
+      "rows": [
+        1508,
+        1823,
+        3056,
+        3395
+      ],
+      "recovery_seconds": 0.13806782569736242,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 18,
+      "attempts": 2881,
+      "rows": [
+        683,
+        1107,
+        2327,
+        36
+      ],
+      "recovery_seconds": 0.04479411616921425,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 19,
+      "attempts": 3196,
+      "rows": [
+        3813,
+        3025,
+        3196,
+        1698
+      ],
+      "recovery_seconds": 0.04934931267052889,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 20,
+      "attempts": 90,
+      "rows": [
+        2218,
+        3202,
+        3099,
+        2213
+      ],
+      "recovery_seconds": 0.00503890123218298,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 21,
+      "attempts": 419,
+      "rows": [
+        1633,
+        4072,
+        2885,
+        323
+      ],
+      "recovery_seconds": 0.009671739302575588,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 22,
+      "attempts": 7791,
+      "rows": [
+        2928,
+        3855,
+        2856,
+        662
+      ],
+      "recovery_seconds": 0.11649864260107279,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 23,
+      "attempts": 6623,
+      "rows": [
+        3725,
+        2240,
+        3421,
+        201
+      ],
+      "recovery_seconds": 0.09935001470148563,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 24,
+      "attempts": 2359,
+      "rows": [
+        2983,
+        3928,
+        4048,
+        3432
+      ],
+      "recovery_seconds": 0.03790269419550896,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 25,
+      "attempts": 323,
+      "rows": [
+        3108,
+        1831,
+        178,
+        2160
+      ],
+      "recovery_seconds": 0.008343267254531384,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 26,
+      "attempts": 635,
+      "rows": [
+        4053,
+        261,
+        292,
+        835
+      ],
+      "recovery_seconds": 0.012807830236852169,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 27,
+      "attempts": 2094,
+      "rows": [
+        1419,
+        904,
+        556,
+        1156
+      ],
+      "recovery_seconds": 0.033659517765045166,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 28,
+      "attempts": 839,
+      "rows": [
+        2795,
+        3622,
+        1698,
+        53
+      ],
+      "recovery_seconds": 0.01565796136856079,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 29,
+      "attempts": 1767,
+      "rows": [
+        338,
+        1793,
+        2689,
+        4021
+      ],
+      "recovery_seconds": 0.029225116595625877,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 30,
+      "attempts": 1741,
+      "rows": [
+        2765,
+        1066,
+        1472,
+        1693
+      ],
+      "recovery_seconds": 0.028943668119609356,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    },
+    {
+      "seed": 31,
+      "attempts": 1132,
+      "rows": [
+        2182,
+        1192,
+        2132,
+        4009
+      ],
+      "recovery_seconds": 0.019884007051587105,
+      "holes": 64,
+      "selected": 960,
+      "geometry": {
+        "selected": 960,
+        "unordered_pairs": 460320,
+        "maximum_dot": 82,
+        "squared_norm": 164
+      }
+    }
+  ]
+}

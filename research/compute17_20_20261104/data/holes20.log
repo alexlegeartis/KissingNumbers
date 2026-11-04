@@ -1,0 +1,9 @@
+{"restarts": 10, "best_max_dot": 0.5453343112324163, "seconds": 6.499437396414578}
+{"restarts": 20, "best_max_dot": 0.5453343112324154, "seconds": 12.462534527294338}
+{"restarts": 30, "best_max_dot": 0.5345224838248487, "seconds": 17.213650767691433}
+{"restarts": 40, "best_max_dot": 0.5345224838248487, "seconds": 22.34602204989642}
+{"restarts": 50, "best_max_dot": 0.5345224838248487, "seconds": 27.961637114174664}
+{"restarts": 60, "best_max_dot": 0.5345224838248487, "seconds": 32.87041750270873}
+{"restarts": 70, "best_max_dot": 0.5345224838248487, "seconds": 37.491936133243144}
+{"restarts": 80, "best_max_dot": 0.5345224838248487, "seconds": 41.9530772017315}
+{"dimension": 20, "directions": 80, "best_max_dot": 0.5345224838248487, "seconds": 41.95429171808064}

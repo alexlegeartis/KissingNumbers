@@ -1,0 +1,15 @@
+{
+  "run": "labels_cliques_target961",
+  "status": "optimal_inaccurate",
+  "objective": 0.0,
+  "target": 961,
+  "variables": 48,
+  "psd_blocks": 8,
+  "block_size": 21,
+  "clique_rows": 60,
+  "seconds": 3.06145831476897,
+  "solver_seconds": 0.268834959,
+  "numerical_only": true,
+  "maximum_clique_sum": 0.9999999999999364,
+  "minimum_psd_eigenvalue": 0.00036331815146761596
+}

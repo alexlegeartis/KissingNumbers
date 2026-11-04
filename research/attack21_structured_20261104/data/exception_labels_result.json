@@ -1,0 +1,23 @@
+{
+  "run": "exception_labels",
+  "mode": "labels",
+  "cap": 63,
+  "radius": null,
+  "initial": 0,
+  "nonlinear": false,
+  "hint": true,
+  "solver": "cadical195",
+  "workers": 1,
+  "fixed_half": 60,
+  "half_cuts": true,
+  "status": "UNKNOWN",
+  "seconds": 300.0109970951453,
+  "variables": 47584,
+  "clauses": 308590,
+  "stats": {
+    "restarts": 142524,
+    "conflicts": 1788798,
+    "decisions": 8980592,
+    "propagations": 3293528671
+  }
+}

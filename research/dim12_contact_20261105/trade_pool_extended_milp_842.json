@@ -1,0 +1,8 @@
+{
+  "target": 842,
+  "vertices": 9424,
+  "status": "terminated_without_result",
+  "reason": "Solver did not honor the requested 180-second budget during the observed solve; terminated after more than 12 minutes.",
+  "found": false,
+  "infeasibility_proven": false
+}

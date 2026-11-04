@@ -1,0 +1,16 @@
+{
+  "run": "recover_cp",
+  "status": "UNKNOWN",
+  "cap": 64,
+  "independent": true,
+  "radius": null,
+  "initial": 0,
+  "hint": false,
+  "optimize": false,
+  "workers": 16,
+  "seconds": 120.16262312600001,
+  "total_seconds": 120.20496643334627,
+  "branches": 528851,
+  "conflicts": 1964,
+  "response_stats": "CpSolverResponse summary:\nstatus: UNKNOWN\nobjective: 0\nbest_bound: 0\nintegers: 1098\nbooleans: 1003\nconflicts: 1964\nbranches: 528851\npropagations: 883158\ninteger_propagations: 3337107\nrestarts: 0\nlp_iterations: 82923\nwalltime: 120.163\nusertime: 120.163\ndeterministic_time: 2045.71\ngap_integral: 0\n"
+}

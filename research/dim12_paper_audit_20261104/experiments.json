@@ -1,0 +1,253 @@
+{
+  "cube49": {
+    "trials": 1024,
+    "best": {
+      "index": 772,
+      "energy": 0.051467439138420154,
+      "max_cos": 0.5563669563216571,
+      "max_coordinate": 0.5386420660153808,
+      "trace": [
+        0.051467439138426024,
+        0.05146743913842215,
+        0.051467439138420154
+      ],
+      "elapsed_seconds": 0.05027794744819403,
+      "certified61": false
+    },
+    "certified_successes": 0
+  },
+  "riesz": {
+    "trials": 128,
+    "best": {
+      "index": 54,
+      "initial": {
+        "n": 842,
+        "max_cos": 0.5078522757863769,
+        "energy": 0.809616840071639,
+        "violations": 22173,
+        "contacts_1e5": 22182
+      },
+      "best": {
+        "n": 842,
+        "max_cos": 0.5478404182052189,
+        "energy": 0.21271545282994203,
+        "violations": 23656,
+        "contacts_1e5": 23743
+      },
+      "minimax": {
+        "n": 842,
+        "max_cos": 0.5078224486903381,
+        "energy": 0.7731099444493107,
+        "violations": 22281,
+        "contacts_1e5": 22294
+      },
+      "trace": [
+        {
+          "power": 4,
+          "n": 842,
+          "max_cos": 0.5174278135979639,
+          "energy": 0.378488976638164,
+          "violations": 23379,
+          "contacts_1e5": 23403,
+          "nit": 800,
+          "calls": 824,
+          "objective": 0.0039812587411641774
+        },
+        {
+          "power": 8,
+          "n": 842,
+          "max_cos": 0.5110977932312393,
+          "energy": 0.5450185764484465,
+          "violations": 22861,
+          "contacts_1e5": 22880,
+          "nit": 800,
+          "calls": 821,
+          "objective": 0.0004812177865660045
+        },
+        {
+          "power": 16,
+          "n": 842,
+          "max_cos": 0.5091306036697961,
+          "energy": 0.6545195443572034,
+          "violations": 22576,
+          "contacts_1e5": 22593,
+          "nit": 800,
+          "calls": 824,
+          "objective": 0.00016747314949571424
+        },
+        {
+          "power": 32,
+          "n": 842,
+          "max_cos": 0.5083418475047808,
+          "energy": 0.7197537182293328,
+          "violations": 22455,
+          "contacts_1e5": 22465,
+          "nit": 800,
+          "calls": 821,
+          "objective": 9.902792757644188e-05
+        },
+        {
+          "power": 64,
+          "n": 842,
+          "max_cos": 0.5079875627721238,
+          "energy": 0.7552436904928549,
+          "violations": 22335,
+          "contacts_1e5": 22356,
+          "nit": 800,
+          "calls": 826,
+          "objective": 7.620768587233288e-05
+        },
+        {
+          "power": 128,
+          "n": 842,
+          "max_cos": 0.5078224486903381,
+          "energy": 0.7731099444493107,
+          "violations": 22281,
+          "contacts_1e5": 22294,
+          "nit": 800,
+          "calls": 824,
+          "objective": 6.686932616773796e-05
+        }
+      ],
+      "elapsed_seconds": 8.040560591034591,
+      "mode": "rotation",
+      "saved_file": "evidence/candidate_00.npy",
+      "sha256": "cbcbbe9f73b05f86ab75dac8104d8228da32e558151089ee4b3493d61fe6e2ab"
+    },
+    "groups": {
+      "control": {
+        "trials": 32,
+        "best_index": 76,
+        "best": {
+          "n": 842,
+          "max_cos": 0.5108587549645431,
+          "energy": 1.5363637213282646,
+          "violations": 23414,
+          "contacts_1e5": 23421
+        }
+      },
+      "placement": {
+        "trials": 32,
+        "best_index": 69,
+        "best": {
+          "n": 842,
+          "max_cos": 0.5133037988645255,
+          "energy": 2.266686683813469,
+          "violations": 21865,
+          "contacts_1e5": 21873
+        }
+      },
+      "rotation": {
+        "trials": 32,
+        "best_index": 54,
+        "best": {
+          "n": 842,
+          "max_cos": 0.5078224486903381,
+          "energy": 0.7731099444493107,
+          "violations": 22281,
+          "contacts_1e5": 22294
+        }
+      },
+      "archive": {
+        "trials": 32,
+        "best_index": 103,
+        "best": {
+          "n": 842,
+          "max_cos": 0.5123173621311766,
+          "energy": 1.9224432464892671,
+          "violations": 22958,
+          "contacts_1e5": 22969
+        }
+      }
+    }
+  },
+  "bridge_search": {
+    "trials": 294,
+    "best": {
+      "index": 231,
+      "seed": 720842260619215,
+      "alternative_bridges": true,
+      "seed_mode": 2,
+      "frozen": {
+        "n": 842,
+        "max_cos": 0.5502344400925432,
+        "energy": 0.06988775598412099,
+        "violations": 2075,
+        "contacts_1e5": 35195
+      },
+      "best": {
+        "n": 842,
+        "max_cos": 0.5472029329139941,
+        "energy": 0.06432446286464709,
+        "violations": 22747,
+        "contacts_1e5": 22975
+      },
+      "minimax": {
+        "n": 842,
+        "max_cos": 0.5054926828212765,
+        "energy": 0.33105010365055537,
+        "violations": 21653,
+        "contacts_1e5": 21688
+      },
+      "trace": [
+        {
+          "stage": "released",
+          "round": 0,
+          "n": 842,
+          "max_cos": 0.5472024656921058,
+          "energy": 0.06432535111078479,
+          "violations": 22741,
+          "contacts_1e5": 22964,
+          "calls": 275,
+          "nit": 267,
+          "objective": 0.06432535111078323,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "stage": "released",
+          "round": 1,
+          "n": 842,
+          "max_cos": 0.5472029329139941,
+          "energy": 0.06432446286464709,
+          "violations": 22747,
+          "contacts_1e5": 22975,
+          "calls": 367,
+          "nit": 353,
+          "objective": 0.06432446286464566,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        }
+      ],
+      "elapsed_seconds": 5.065326291136444,
+      "saved_file": "evidence/candidate_02.npy",
+      "sha256": "0d1e400620e519cc25e01fa5eb30f8afdb632d4d56c5abdb28abc397ec1977d7"
+    },
+    "groups": {
+      "False": {
+        "trials": 147,
+        "best_index": 16,
+        "best": {
+          "n": 842,
+          "max_cos": 0.5060562220862548,
+          "energy": 0.4175800131579305,
+          "violations": 21796,
+          "contacts_1e5": 21811
+        }
+      },
+      "True": {
+        "trials": 147,
+        "best_index": 231,
+        "best": {
+          "n": 842,
+          "max_cos": 0.5054926828212765,
+          "energy": 0.33105010365055537,
+          "violations": 21653,
+          "contacts_1e5": 21688
+        }
+      }
+    }
+  },
+  "verified_lower_bound": 841,
+  "new_lower_bound_found": false,
+  "paper_record_decimal_certificate": "decimal841_certificate.json",
+  "no_global_impossibility_conclusion": true
+}

@@ -1,0 +1,16 @@
+{
+  "run": "domination63",
+  "status": "UNKNOWN",
+  "cap": 63,
+  "independent": false,
+  "radius": null,
+  "initial": 0,
+  "hint": false,
+  "optimize": false,
+  "workers": 16,
+  "seconds": 300.09768669600004,
+  "total_seconds": 300.1253109453246,
+  "branches": 583582,
+  "conflicts": 676,
+  "response_stats": "CpSolverResponse summary:\nstatus: UNKNOWN\nobjective: 0\nbest_bound: 0\nintegers: 1121\nbooleans: 1024\nconflicts: 676\nbranches: 583582\npropagations: 42351\ninteger_propagations: 1854805\nrestarts: 0\nlp_iterations: 77620\nwalltime: 300.098\nusertime: 300.098\ndeterministic_time: 4731.76\ngap_integral: 0\n"
+}

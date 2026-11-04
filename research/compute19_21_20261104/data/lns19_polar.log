@@ -1,0 +1,6 @@
+{"event":"progress","dimension":19,"best_count":12460,"iterations":1589029,"seconds":30.0007}
+{"event":"progress","dimension":19,"best_count":12460,"iterations":3175113,"seconds":60.001}
+{"event":"progress","dimension":19,"best_count":12460,"iterations":4760325,"seconds":90.0016}
+{"event":"progress","dimension":19,"best_count":12460,"iterations":6349373,"seconds":120.002}
+{"event":"progress","dimension":19,"best_count":12460,"iterations":7937418,"seconds":150.002}
+{"event":"complete","best_count":12460,"iterations":9526156,"seconds":180.001}

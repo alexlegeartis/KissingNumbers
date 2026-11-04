@@ -1,0 +1,14 @@
+{
+  "dimension": 17,
+  "count": 5731,
+  "device": "NVIDIA RTX A4000",
+  "seconds": 180.0012939274311,
+  "seed": 17112026,
+  "restarts": 80,
+  "evaluations": 7534,
+  "best_energy": 0.031687382680127836,
+  "max_dot": 0.547354226185368,
+  "gradient_finite_difference_max_error": 4.1449104565272066e-11,
+  "certified": false,
+  "scope": "Numerical exploration only; exact certification is required for a record."
+}

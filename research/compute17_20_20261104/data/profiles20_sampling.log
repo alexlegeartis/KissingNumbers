@@ -1,0 +1,4 @@
+{"event": "profile_sampling", "trials": 200, "profiles": 87}
+{"event": "profile_sampling", "trials": 400, "profiles": 164}
+{"event": "profile_sampling", "trials": 600, "profiles": 237}
+{"event": "profile_sampling_complete", "trials": 700, "profiles": 267}

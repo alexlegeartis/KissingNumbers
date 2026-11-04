@@ -1,0 +1,33 @@
+{
+  "exact": true,
+  "checked_m1_m2_label_pairs": 2304,
+  "no_pair_has_three_nonzero_quaternionic_scalar_products": true,
+  "parameter_intervals": [
+    [
+      0.25,
+      0.5
+    ],
+    [
+      0.25,
+      0.5
+    ],
+    [
+      0.25,
+      0.5
+    ]
+  ],
+  "balanced_frame_eigenvalues": [
+    66,
+    66,
+    66,
+    66,
+    66,
+    66,
+    66,
+    66,
+    78,
+    78,
+    78,
+    78
+  ]
+}

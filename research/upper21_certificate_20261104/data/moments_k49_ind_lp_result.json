@@ -1,0 +1,12 @@
+{
+  "run": "moments_k49_ind_lp",
+  "status_code": 2,
+  "status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+  "seconds": 0.008937153033912182,
+  "holes": 49,
+  "independent": true,
+  "variables": 42,
+  "equalities": 11,
+  "inequalities": 974,
+  "numerical_only": true
+}

@@ -107,6 +107,7 @@ import importlib.util
 import io
 import hashlib, os
 import re
+import subprocess
 import sys
 
 import numpy as np
@@ -1151,11 +1152,23 @@ print()
 _IGNPATS = [_l.split('#')[0].strip().rstrip('/')
             for _l in io.open(os.path.join(HERE, '.gitignore'), encoding='utf-8')
             if _l.split('#')[0].strip()]
+# Ask Git for both tracked files and new, nonignored candidates. This honors
+# nested .gitignore files, including the research campaigns' large runs/ trees.
+# Source archives have no Git metadata, so retain the root-rule fallback there.
+try:
+    _git_files = subprocess.run(
+        ['git', 'ls-files', '--cached', '--others', '--exclude-standard', '-z', '--', '.'],
+        cwd=HERE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
+    _PUBLISHED_PATHS = set(os.fsdecode(_git_files.stdout).split('\0'))
+except (OSError, subprocess.CalledProcessError):
+    _PUBLISHED_PATHS = None
 
 
 def _ignored(path):
     """Does .gitignore exclude this path?  `path` is absolute, inside HERE."""
     _rel = os.path.relpath(path, HERE).replace(chr(92), '/')
+    if _PUBLISHED_PATHS is not None:
+        return _rel not in _PUBLISHED_PATHS
     _f = os.path.basename(path)
     return any(fnmatch.fnmatch(_rel, _pt) or fnmatch.fnmatch(_rel, '*/' + _pt)
                or fnmatch.fnmatch(_f, _pt) for _pt in _IGNPATS)

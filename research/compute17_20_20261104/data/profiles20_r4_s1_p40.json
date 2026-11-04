@@ -1,0 +1,9 @@
+{
+  "name": "profiles20_r4_s1_p40",
+  "vertices": 10240,
+  "profiles": 40,
+  "directed_edges": 12286208,
+  "fixed_base": 17400,
+  "seed_total": 19448,
+  "group_rank": 4
+}

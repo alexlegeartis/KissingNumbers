@@ -1,0 +1,4 @@
+{"event": "bound", "iteration": 0, "numerical_bound": 976.6153846153844, "cuts": 0, "seconds": 0.014742124825716019}
+{"event": "bound", "iteration": 5, "numerical_bound": 974.5815004677098, "cuts": 108, "seconds": 0.05164592992514372}
+{"event": "bound", "iteration": 10, "numerical_bound": 972.2259772286169, "cuts": 212, "seconds": 0.1179040614515543}
+{"exclude": 972, "numerical_upper_bound": 971.9149020126848, "iterations": 14, "seconds": 0.16311648301780224, "certificate_checked": false}

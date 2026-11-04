@@ -1,0 +1,2 @@
+{"event": "start", "run": "sat_labels63", "variables": 47584, "clauses": 308434, "seconds": 0.42400488909333944}
+{"run": "sat_labels63", "mode": "labels", "cap": 63, "radius": null, "initial": 0, "nonlinear": false, "hint": true, "solver": "cadical195", "workers": 1, "status": "UNKNOWN", "seconds": 300.00226899329573, "variables": 47584, "clauses": 308434, "stats": {"restarts": 166092, "conflicts": 2524444, "decisions": 12384816, "propagations": 2696262005}}

@@ -1,0 +1,18 @@
+/home/legeartis/KissingNumbers/KissingNumbers/research/compute17_20_20261104/continuous.py:51: OptimizeWarning: Unrecognized options detected: {'threads': 1}. These will be passed to HiGHS verbatim.
+  result=linprog(-v,A_ub=X,b_ub=np.full(len(X),.5),bounds=[(-2,2)]*dimension,
+{"event": "hole", "dimension": 20, "seed": 2001, "insertion_max_dot": 0.5453343112324156, "seconds": 5.508113847114146}
+{"event": "deformation", "dimension": 20, "seed": 2001, "energy": 0.35899031673252946, "max_dot": 0.573724195573166, "evaluations": 4, "seconds": 36.65864160936326}
+{"event": "deformation", "dimension": 20, "seed": 2001, "energy": 0.033766967299090976, "max_dot": 0.5663758583085904, "evaluations": 9, "seconds": 68.1640593605116}
+{"event": "deformation", "dimension": 20, "seed": 2001, "energy": 0.01571698635195383, "max_dot": 0.5493961212183112, "evaluations": 15, "seconds": 100.08727810997516}
+{"event": "deformation", "dimension": 20, "seed": 2001, "energy": 0.01498392557078259, "max_dot": 0.549943207210977, "evaluations": 20, "seconds": 135.05925617739558}
+{"event": "deformation", "dimension": 20, "seed": 2001, "energy": 0.014539026844615442, "max_dot": 0.5504949834971866, "evaluations": 24, "seconds": 178.35745431669056}
+{"event": "deformation", "dimension": 20, "seed": 2001, "energy": 0.01443997480376967, "max_dot": 0.5503381412569427, "evaluations": 26, "seconds": 214.99712076038122}
+{"event": "deformation", "dimension": 20, "seed": 2001, "energy": 0.014081363910420135, "max_dot": 0.548603873859502, "evaluations": 33, "seconds": 246.37984826322645}
+{"event": "deformation", "dimension": 20, "seed": 2001, "energy": 0.013564635224789737, "max_dot": 0.5476005264222644, "evaluations": 47, "seconds": 278.2920754570514}
+{"event": "deformation", "dimension": 20, "seed": 2001, "energy": 0.013511976643604312, "max_dot": 0.5475103452052303, "evaluations": 61, "seconds": 308.4197599226609}
+{"event": "deformation", "dimension": 20, "seed": 2001, "energy": 0.013474959052472004, "max_dot": 0.5474846863741847, "evaluations": 74, "seconds": 338.4241467891261}
+{"event": "deformation", "dimension": 20, "seed": 2001, "energy": 0.013463987413493788, "max_dot": 0.547369736385534, "evaluations": 88, "seconds": 368.9888636721298}
+{"event": "deformation", "dimension": 20, "seed": 2001, "energy": 0.013435737736754735, "max_dot": 0.5475937273919042, "evaluations": 101, "seconds": 399.81608839984983}
+{"event": "deformation", "dimension": 20, "seed": 2001, "energy": 0.013414796757747389, "max_dot": 0.5474663014262381, "evaluations": 115, "seconds": 431.9116138452664}
+{"event": "deformation", "dimension": 20, "seed": 2001, "energy": 0.013064237322334384, "max_dot": 0.5471613392966888, "evaluations": 131, "seconds": 463.45919862855226}
+{"dimension": 20, "count": 19449, "seed": 2001, "seconds": 480.2083459664136, "evaluations": 141, "best_energy": 0.012661841101600516, "max_dot": 0.5470786399469189, "status": "TIME_LIMIT", "certified": false, "scope": "Numerical exploration only; any record needs an exact subsequent certificate."}

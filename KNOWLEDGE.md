@@ -1,6 +1,6 @@
 # The knowledge base
 
-The full working record of the project: **159 sections, about 11444 lines**, written as the
+The full working record of the project: **160 sections, about 11523 lines**, written as the
 work happened rather than afterwards. It is not a paper and does not read like one. It is
 here because it is the single most useful file in the repository for anyone continuing the
 work, for one reason:
@@ -11442,3 +11442,82 @@ are corrected. The standard full-chain evaluation with that parent is
 The source review and comparison scope are pinned in
 `common/source_review_20261028_z8.json`. Earlier linear-only comparisons remain
 historical and must not be reused as current literature conclusions.
+
+## 12D follow-up on 4 November 2026: quaternionic deformations, no new bound
+
+[The new campaign](research/dim12_quaternionic_20261104/) used the larger
+128-thread CPU host for 1,568 CPU construction trials, 8,192 antipodal insertion
+searches, and 945,486,336 native local moves on an exact 20,736-orbit graph.
+An RTX A4000 campaign added 256 diameter-annealing trajectories, all polished
+in double precision on the CPU, for 1,824 main construction trials in total.
+**The lower bound remains 841.** No candidate improved the published 842-point
+maximum cosine 0.5009010186022465, and no approximate result was promoted.
+
+Takhanov's later quaternionic explanation, arXiv:2609.09179, was missing from
+the earlier 12D notes. Its 840-point model admits a three-parameter deformation:
+the M2,r weights can be `(1/2,sqrt(a_r),sqrt(3/4-a_r))` for independent
+`1/4 <= a_r <= 1/2`. The campaign proves this exactly in
+[BALANCED_FAMILY.md](research/dim12_quaternionic_20261104/BALANCED_FAMILY.md).
+At the balanced point its frame spectrum is 78 four times and 66 eight times.
+Two simultaneous 25-point-region searches did not produce 842.
+
+An exhaustive exact audit closes the explicitly specified 1,296 whole-cell
+ansatz at 840; it does not cover arbitrary partial cells or continuous
+deformations. Earlier assertions that contact counts alone prove rigidity,
+or that unsuccessful optimizations prove maximality or family ceilings, were
+too strong. Retain those older numerical outcomes as search evidence only.
+The new verifier certifies the supplied 841 binary64 rays with exact integer
+arithmetic and rejects the 842 near-miss with 10,937 violating pairs.
+
+### Direct audit of arXiv:2606.18984v2 on 4 November 2026
+
+[The paper audit](research/dim12_paper_audit_20261104/) checks the original
+printed decimal rays and proves a uniform cosine margin of at least 2^-24
+for all 353220 pairs. The 841 result survives. Its sufficient theorems do not
+classify all 48-systems: seven of 500 archived arrays pass exact constraints,
+and one satisfies both coordinate and pair bounds at 1/2-2^-20. It has no
+contact pairs, whereas every Theorem 1 paired-floor construction has at least
+sixteen, so it is outside that ansatz even up to isometry.
+
+The 4096 inserted sign vectors in the released 841 search collapse to three
+initial isometry classes. This does not restrict numerical output to three
+trajectories: Adam can amplify floating point symmetry breaking rapidly.
+An alternative 720-bridge coupling using all six labeled K6 factorizations is
+verified exactly; its Clebsch 840 completion has a different contact graph.
+Within the fully signed saturated 2+2-support family, a proof and exhaustive
+enumeration give two coupling types, with 4320 and 720 labeled realizations.
+Neither the 422 full 842-point trials nor the 1024 cube-bounded 49-point
+searches in this audit produced a new lower bound. These are model/search
+restrictions, not errors invalidating the published 841 certificate.
+
+### Contact-guided 12D follow-up: exact local exclusion and controls
+
+[The contact campaign](research/dim12_contact_20261105/) completed 688 new
+842-point construction trials and 344 discovery/recovery trials at 841,
+including the full released 35000-step float64 search schedule for 64 starts
+at batch-64 scaling and eight starts at batch-512 scaling. Neither discovery
+control produced a candidate below the released save threshold 0.501. This
+does not disprove the paper or rule out success in its much larger search.
+Five of sixteen perturbed-known-record recovery controls pass exact checking.
+
+Smooth minimax continuation slightly improves the stored published 842 near-miss
+from maximum cosine 0.5009010186022465 to approximately 0.500900474851737.
+Integer arithmetic certifies all pairs at cosine <= 500900475/1000000000,
+but 10452 pairs remain above 1/2. **The lower bound remains 841.**
+
+A genuinely rigorous local obstruction now supplements the earlier heuristic
+rigidity claims. Nonnegative rational near-contact weights and outward integer
+interval arithmetic prove that every valid 842-point configuration must move
+at least one matched point by more than chord distance 0.024484 from the stored
+published realization. The corresponding radius around the improved near-miss
+is 0.024409. The proof includes the stress residual and quadratic remainder;
+it excludes only these explicit neighborhoods, not arbitrary configurations
+or entire contact-graph families. See
+[LOCAL_EXCLUSION.md](research/dim12_contact_20261105/LOCAL_EXCLUSION.md).
+
+Individual-ray bridge/axis trades were tested in exact algebraic pools of
+3680 and 9424 vertices, without requiring full sign orbits or fixed block sizes.
+MILP reports no 841 or 842 in the smaller pool (solver statuses, not exported
+formal certificates); the larger MILP was stopped without a conclusion.
+Native searches made 2489160192 exchanges, reaching six remaining conflicts at
+842, and continuous refinement did not produce a new bound.

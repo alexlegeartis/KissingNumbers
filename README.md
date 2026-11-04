@@ -448,10 +448,14 @@ verifications/
   superseded/             claims this project made and then lost, and why
   closed/                 mechanisms pushed to their exact ceiling: what NOT to retry
 
-KNOWLEDGE.md              the full working record, 159 sections, including everything
+KNOWLEDGE.md              the full working record, 160 sections, including everything
                           that failed -- with a preamble on how to read it, which
                           sections supersede which, and where each script now lives
 ```
+
+[`research/`](research/) preserves the November campaigns in dimensions 12 and
+17–21, including restricted-family certificates and unsuccessful searches.
+Its index lists the results and compact evidence replays.
 
 Dimension-five upper-bound research is maintained separately in
 [KissingUpperBounds](https://github.com/alexlegeartis/KissingUpperBounds).
@@ -919,7 +923,7 @@ The constructions, the verification code and the write-ups in this repository we
 by the author working with **Claude Code** (Anthropic). The repository is deliberately
 structured so that someone else can pick it up the same way: every package states its idea in
 prose before its code, every negative result says what was tried and why it failed, and
-`KNOWLEDGE.md` is the full working record — 159 sections, most of them about things that
+`KNOWLEDGE.md` is the full working record — 160 sections, most of them about things that
 did not work.
 
 Alexey Kravatskiy, MIRIAI (Moscow Independent Research Institute of Artificial Intelligence),

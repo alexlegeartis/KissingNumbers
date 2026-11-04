@@ -1,0 +1,13 @@
+{
+  "name": "insertions842",
+  "trials": 192,
+  "groups": [
+    {
+      "n": 842,
+      "trials": 192,
+      "best_max_cos": 0.501253195283745,
+      "best_index": 147,
+      "exact_successes": 0
+    }
+  ]
+}

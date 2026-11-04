@@ -1,0 +1,2 @@
+{"event": "start", "run": "sat_nonlinear63", "variables": 26080, "clauses": 49362, "seconds": 0.05123218894004822}
+{"run": "sat_nonlinear63", "mode": "independent", "cap": 63, "radius": null, "initial": 0, "nonlinear": true, "hint": true, "solver": "cadical195", "workers": 1, "status": "UNKNOWN", "seconds": 300.00235436856747, "variables": 26080, "clauses": 49362, "stats": {"restarts": 150257, "conflicts": 3577792, "decisions": 25295758, "propagations": 2520645086}}

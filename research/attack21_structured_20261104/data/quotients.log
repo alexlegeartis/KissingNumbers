@@ -1,0 +1,8 @@
+{"event": "progress", "periods": 1, "solutions": 1, "nonlinear_saved": 0, "seconds": 0.004138599149882793}
+{"event": "progress", "periods": 101, "solutions": 323, "nonlinear_saved": 0, "seconds": 0.2641011271625757}
+{"event": "progress", "periods": 201, "solutions": 635, "nonlinear_saved": 0, "seconds": 0.5273618567734957}
+{"event": "progress", "periods": 301, "solutions": 1156, "nonlinear_saved": 0, "seconds": 0.7836693031713367}
+{"event": "progress", "periods": 401, "solutions": 1664, "nonlinear_saved": 0, "seconds": 1.0333045730367303}
+{"event": "progress", "periods": 501, "solutions": 2050, "nonlinear_saved": 0, "seconds": 1.294741622172296}
+{"event": "progress", "periods": 601, "solutions": 2531, "nonlinear_saved": 8, "seconds": 1.5865162760019302}
+{"periods": 651, "quotient_words": 64, "maximum_quotient_holes": 4, "minimum_found_quotient_holes": 4, "lifted_minimum": 64, "solutions_containing_zero": 2758, "nonlinear_solutions": 8, "seconds": 1.7200841577723622}

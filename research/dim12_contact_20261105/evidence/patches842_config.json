@@ -1,0 +1,8 @@
+{
+  "trials": 192,
+  "workers": 32,
+  "steps": 4000,
+  "stress": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_contact_20261105/runs/stress842/stress_1.npz",
+  "stress_sha256": "964a7ed1163700a993c53a2515f2d6a865f1708dcddf2eee92aabd2d9a361bec",
+  "source_sha256": "27dcdfb0b5eedbe64e94347fc2290094550aec2f58ea47f4d38a766512d67a16"
+}

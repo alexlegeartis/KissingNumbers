@@ -1,0 +1,18 @@
+{
+  "name": "q20_r8_s1",
+  "dimension": 20,
+  "vertices": 4376,
+  "directed_edges": 13848896,
+  "dense_orbits": 4096,
+  "dense_connections": 3121,
+  "full_dense_candidates": 1048576,
+  "full_octad_candidates": 33280,
+  "group_rank": 8,
+  "orbit_weights": [
+    64,
+    128,
+    256
+  ],
+  "baseline": 19448,
+  "subgroup_seed": 1
+}

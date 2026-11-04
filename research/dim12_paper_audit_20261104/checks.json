@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "Leech48_exact_positive_control",
+    "duplicate_rejected",
+    "tiny_coordinate_violation_rejected",
+    "strict48_verified",
+    "cube49_gradient_finite_difference",
+    "Riesz_gradient_finite_difference",
+    "bridge_support_intersections_exact",
+    "tolerance_false_positive_demonstrated"
+  ]
+}

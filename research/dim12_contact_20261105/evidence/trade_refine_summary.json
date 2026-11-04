@@ -1,0 +1,20 @@
+{
+  "name": "trade_refine",
+  "trials": 128,
+  "groups": [
+    {
+      "n": 841,
+      "trials": 64,
+      "best_max_cos": 0.5048454414768961,
+      "best_index": 0,
+      "exact_successes": 0
+    },
+    {
+      "n": 842,
+      "trials": 64,
+      "best_max_cos": 0.5054806028169474,
+      "best_index": 53,
+      "exact_successes": 0
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "automorphisms_verified": 6,
+  "word_orbits": 8,
+  "ordered_pair_orbits": 168,
+  "triple_orbits": 42,
+  "fourier_rows": 8,
+  "psd_blocks": 235,
+  "maximum_block": 8,
+  "block_sizes": {
+    "4": 214,
+    "8": 21
+  },
+  "seconds": 0.7610649615526199
+}

@@ -1,0 +1,20 @@
+{
+  "run": "exception_ind",
+  "status": "INFEASIBLE",
+  "cap": 63,
+  "independent": true,
+  "radius": null,
+  "initial": 0,
+  "nonlinear": false,
+  "hint": true,
+  "optimize": false,
+  "workers": 16,
+  "trade_cuts": true,
+  "fixed_half": 60,
+  "half_cuts": true,
+  "seconds": 0.311202172,
+  "total_seconds": 0.5648050019517541,
+  "branches": 880,
+  "conflicts": 0,
+  "response_stats": "CpSolverResponse summary:\nstatus: INFEASIBLE\nobjective: NA\nbest_bound: NA\nintegers: 508\nbooleans: 440\nconflicts: 0\nbranches: 880\npropagations: 8254\ninteger_propagations: 19488\nrestarts: 0\nlp_iterations: 947\nwalltime: 0.311202\nusertime: 0.311202\ndeterministic_time: 2.80671\ngap_integral: 0\n"
+}

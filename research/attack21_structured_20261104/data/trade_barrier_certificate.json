@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "kernels_checked": 40,
+  "removed_holes_excluded": 12,
+  "added_holes_maximum": "one fewer than removed",
+  "scope": "Any smaller dominating hole set; hence all line labelings near these seeds.",
+  "arithmetic": "exhaustive small integer inequalities; no numerical or SAT tolerance",
+  "parameters": {
+    "holes": 64,
+    "private_per_hole": 12,
+    "max_old_neighbors": 3,
+    "max_private_neighbors": 17,
+    "max_private_from_one_hole": 2
+  },
+  "first_unexcluded_tuples": [
+    [
+      2,
+      11,
+      4,
+      8
+    ],
+    [
+      3,
+      10,
+      5,
+      7
+    ],
+    [
+      4,
+      9,
+      6,
+      6
+    ],
+    [
+      5,
+      8,
+      6,
+      6
+    ],
+    [
+      6,
+      7,
+      6,
+      6
+    ],
+    [
+      7,
+      6,
+      6,
+      6
+    ],
+    [
+      8,
+      5,
+      6,
+      6
+    ],
+    [
+      9,
+      4,
+      6,
+      6
+    ],
+    [
+      10,
+      3,
+      7,
+      5
+    ],
+    [
+      11,
+      2,
+      8,
+      4
+    ]
+  ]
+}

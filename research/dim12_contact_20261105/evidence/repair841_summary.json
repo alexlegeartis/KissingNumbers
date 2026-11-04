@@ -1,0 +1,13 @@
+{
+  "name": "repair841",
+  "trials": 16,
+  "groups": [
+    {
+      "n": 841,
+      "trials": 16,
+      "best_max_cos": 0.4999999906077427,
+      "best_index": 7,
+      "exact_successes": 5
+    }
+  ]
+}

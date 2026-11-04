@@ -1,0 +1,3 @@
+{"event": "solve_start", "run": "q20_r7_s1_s99", "variables": 8596, "edges": 18788704, "model_seconds": 2.337110096588731, "workers": 8, "limit": 300.0, "baseline": 19448}
+{"event": "incumbent", "run": "q20_r7_s1_s99", "count": 19448, "seconds": 2.656}
+{"run": "q20_r7_s1_s99", "status": "FEASIBLE", "dimension": 20, "best_count": 19448, "restricted_upper_bound": 21208, "baseline": 19448, "solver_seconds": 302.644952827, "total_seconds": 307.07383721414953, "workers": 8, "conflicts": 0, "branches": 0, "fixed_vertex": 0, "scope": "Only this subgroup-invariant finite candidate pool; not an unrestricted kissing upper bound."}

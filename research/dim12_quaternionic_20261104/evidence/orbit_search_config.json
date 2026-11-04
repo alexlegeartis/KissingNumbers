@@ -1,0 +1,14 @@
+{
+  "trials": 128,
+  "workers": 96,
+  "steps": 1800,
+  "rounds": 4,
+  "out": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/runs/orbit_search",
+  "sources_sha256": {
+    "orbit_search.py": "b22db03298c4bd1e564a3cc8ae4d5a1148dfc45cd73902c02d426ec7adf62603",
+    "search.py": "2886cb320a5353034ba4c9b5a688e5642f5a32139d851381535d836fe28843d4",
+    "continuation.py": "708d69f28e55a78d77a29b119dc86cb53b02b57ceeac423750534d9ad2bc33b9",
+    "kernels.py": "fe73d2ec623adc720fdb7c6a54f85740be13923e48a8a2b0847dcb263f3b4ff8",
+    "quaternion_cells.py": "a87a54392913a08053ce3a85cdbae098b03d86570ec803cc9df42a477ce7c0f9"
+  }
+}

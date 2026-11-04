@@ -1,0 +1,13 @@
+{
+  "name": "sparse_insertions842",
+  "trials": 96,
+  "groups": [
+    {
+      "n": 842,
+      "trials": 96,
+      "best_max_cos": 0.5011961101736462,
+      "best_index": 59,
+      "exact_successes": 0
+    }
+  ]
+}

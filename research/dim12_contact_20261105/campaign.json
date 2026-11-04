@@ -1,0 +1,173 @@
+{
+  "lower_bound": 841,
+  "new_842_configuration": false,
+  "new_near_miss": {
+    "n": 842,
+    "max_cos": 0.500900474851737,
+    "energy": 0.007092912920363502,
+    "violations": 10452,
+    "contacts_1e5": 10466
+  },
+  "exact_upper_cosine": "500900475/1000000000",
+  "published_near_miss_exclusion_radius": "6121/250000",
+  "improved_near_miss_exclusion_radius": "24409/1000000",
+  "batches": [
+    {
+      "name": "patches842",
+      "trials": 192,
+      "groups": [
+        {
+          "n": 842,
+          "trials": 192,
+          "best_max_cos": 0.500941566047482,
+          "best_index": 71,
+          "exact_successes": 0
+        }
+      ]
+    },
+    {
+      "name": "insertions842",
+      "trials": 192,
+      "groups": [
+        {
+          "n": 842,
+          "trials": 192,
+          "best_max_cos": 0.501253195283745,
+          "best_index": 147,
+          "exact_successes": 0
+        }
+      ]
+    },
+    {
+      "name": "break_contacts",
+      "trials": 144,
+      "groups": [
+        {
+          "n": 842,
+          "trials": 144,
+          "best_max_cos": 0.500941105143051,
+          "best_index": 97,
+          "exact_successes": 0
+        }
+      ]
+    },
+    {
+      "name": "sparse_insertions842",
+      "trials": 96,
+      "groups": [
+        {
+          "n": 842,
+          "trials": 96,
+          "best_max_cos": 0.5011961101736462,
+          "best_index": 59,
+          "exact_successes": 0
+        }
+      ]
+    },
+    {
+      "name": "direct841",
+      "trials": 128,
+      "groups": [
+        {
+          "n": 841,
+          "trials": 128,
+          "best_max_cos": 0.5410479629474313,
+          "best_index": 89,
+          "exact_successes": 0
+        }
+      ]
+    },
+    {
+      "name": "projected841",
+      "trials": 64,
+      "groups": [
+        {
+          "n": 841,
+          "trials": 64,
+          "best_max_cos": 0.5089478000238619,
+          "best_index": 11,
+          "exact_successes": 0
+        }
+      ]
+    },
+    {
+      "name": "trade_refine",
+      "trials": 128,
+      "groups": [
+        {
+          "n": 841,
+          "trials": 64,
+          "best_max_cos": 0.5048454414768961,
+          "best_index": 0,
+          "exact_successes": 0
+        },
+        {
+          "n": 842,
+          "trials": 64,
+          "best_max_cos": 0.5054806028169474,
+          "best_index": 53,
+          "exact_successes": 0
+        }
+      ]
+    },
+    {
+      "name": "repair841",
+      "trials": 16,
+      "groups": [
+        {
+          "n": 841,
+          "trials": 16,
+          "best_max_cos": 0.4999999906077427,
+          "best_index": 7,
+          "exact_successes": 5
+        }
+      ]
+    }
+  ],
+  "discovery_controls": {
+    "paper_batch64": {
+      "starts": 64,
+      "full_schedule_steps": 35000,
+      "best_max_cos": 0.5259213132584517,
+      "first_9000_steps": "original PyTorch GPU batch",
+      "remaining_26000_steps": "original PyTorch functions on separate CPU workers, preserved Adam state"
+    },
+    "default_batch512_scaling": {
+      "starts": 8,
+      "full_schedule_steps": 35000,
+      "best_max_cos": 0.5337194311145385
+    },
+    "eligible_for_released_polisher": 0,
+    "save_threshold": 0.501
+  },
+  "native": [
+    {
+      "vertices": 3680,
+      "target": 842,
+      "threads": 48,
+      "seconds_requested": 300,
+      "moves": 2377192448,
+      "best_conflicts": 6,
+      "saved": 84,
+      "solved": false,
+      "seed": 202611050842,
+      "name": "trades842"
+    },
+    {
+      "vertices": 9424,
+      "target": 842,
+      "threads": 16,
+      "seconds_requested": 180,
+      "moves": 111967744,
+      "best_conflicts": 6,
+      "saved": 54,
+      "solved": false,
+      "seed": 202611050842,
+      "name": "trades_extended842"
+    }
+  ],
+  "total_native_moves": 2489160192,
+  "trials_842": 688,
+  "trials_841": 344,
+  "completed": true
+}

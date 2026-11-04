@@ -1,0 +1,7 @@
+{"event": "gpu_start", "dimension": 17, "device": "NVIDIA RTX A4000", "dtype": "float64", "seconds": 180.0, "hole_directions": 80, "gradient_finite_difference_max_error": 4.1449104565272066e-11}
+{"event": "gpu_progress", "dimension": 17, "restarts": 10, "evaluations": 1150, "energy": 0.03168738268012784, "max_dot": 0.547354226185499, "seconds": 30.001228193752468}
+{"event": "gpu_progress", "dimension": 17, "restarts": 23, "evaluations": 2439, "energy": 0.031687382680127836, "max_dot": 0.547354226185368, "seconds": 60.00444913562387}
+{"event": "gpu_progress", "dimension": 17, "restarts": 35, "evaluations": 3723, "energy": 0.031687382680127836, "max_dot": 0.547354226185368, "seconds": 90.01996759139001}
+{"event": "gpu_progress", "dimension": 17, "restarts": 51, "evaluations": 5036, "energy": 0.031687382680127836, "max_dot": 0.547354226185368, "seconds": 120.0222265413031}
+{"event": "gpu_progress", "dimension": 17, "restarts": 66, "evaluations": 6326, "energy": 0.031687382680127836, "max_dot": 0.547354226185368, "seconds": 150.03495274670422}
+{"dimension": 17, "count": 5731, "device": "NVIDIA RTX A4000", "seconds": 180.0012939274311, "seed": 17112026, "restarts": 80, "evaluations": 7534, "best_energy": 0.031687382680127836, "max_dot": 0.547354226185368, "gradient_finite_difference_max_error": 4.1449104565272066e-11, "certified": false, "scope": "Numerical exploration only; exact certification is required for a record."}

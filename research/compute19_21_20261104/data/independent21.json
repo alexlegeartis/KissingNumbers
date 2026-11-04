@@ -1,0 +1,7 @@
+{
+  "count": 31560,
+  "unordered_pairs": 498001020,
+  "violations": 0,
+  "method": "All small integer dot products computed exactly using float64 BLAS, then integer squared comparisons.",
+  "duplicate_control": "PASS"
+}

@@ -1,0 +1,14 @@
+{
+  "run": "moments_k56_ind_lp",
+  "status_code": 0,
+  "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "seconds": 0.009999913163483143,
+  "holes": 56,
+  "independent": true,
+  "variables": 42,
+  "equalities": 11,
+  "inequalities": 974,
+  "numerical_only": true,
+  "equality_error": 3.552713678800501e-15,
+  "minimum_linear_slack": -1.1744077932362984e-15
+}

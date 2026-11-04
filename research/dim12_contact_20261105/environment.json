@@ -1,0 +1,14 @@
+{
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "numba": "0.68.1",
+    "torch": "2.9.1+cu128",
+    "cupy-cuda12x": "14.2.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "reserved_cpu": 127,
+  "gpu": "NVIDIA RTX A4000",
+  "gpu_index": 0,
+  "maximum_configured_cpu_worker_budget": 121
+}

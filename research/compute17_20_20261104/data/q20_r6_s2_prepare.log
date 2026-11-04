@@ -1,0 +1,1 @@
+{"name": "q20_r6_s2", "dimension": 20, "vertices": 17036, "directed_edges": 89376480, "dense_orbits": 16384, "dense_connections": 5195, "full_dense_candidates": 1048576, "full_octad_candidates": 33280, "group_rank": 6, "orbit_weights": [32, 64], "baseline": 19448, "subgroup_seed": 2}

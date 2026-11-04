@@ -1,0 +1,16 @@
+{
+  "exact": true,
+  "threshold_numerator": 524287,
+  "threshold_denominator": 1048576,
+  "threshold": 0.4999990463256836,
+  "margin_below_half": 9.5367431640625e-07,
+  "max_cos_diagnostic": 0.4999964939897944,
+  "max_coordinate_diagnostic": 0.4999976032616206,
+  "interpretation": "Exact dyadic rays, normalized mathematically",
+  "no_contact_at_cosine_half": true,
+  "consequence": "Not isometric to any Theorem 1 paired-floor configuration, which has 16 pairs at cosine 1/2.",
+  "independent_open_perturbation_radius": 2.384185791015625e-07,
+  "local_dimension": 240,
+  "source_archive_member": "saved_48_systems/sol_r0019_s00010000_b003846_cert0.4999975860_dot0.4999964833_coord0.4999975860_pair0.9999901652.npy",
+  "coordinate_sha256": "cc2b8356f2cb815e06b4bb75a89a450f57b961bb8172da8520386068e440c622"
+}

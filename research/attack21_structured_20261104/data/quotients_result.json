@@ -1,0 +1,5871 @@
+{
+  "periods": 651,
+  "quotient_words": 64,
+  "maximum_quotient_holes": 4,
+  "minimum_found_quotient_holes": 4,
+  "lifted_minimum": 64,
+  "solutions_containing_zero": 2758,
+  "nonlinear_solutions": 8,
+  "seconds": 1.7200841577723622,
+  "records": [
+    {
+      "period": 0,
+      "dual": [
+        1,
+        2
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 1,
+      "dual": [
+        1,
+        4
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 2,
+      "dual": [
+        1,
+        6
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 3,
+      "dual": [
+        1,
+        8
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 4,
+      "dual": [
+        1,
+        10
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 5,
+      "dual": [
+        1,
+        12
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 6,
+      "dual": [
+        1,
+        14
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 7,
+      "dual": [
+        1,
+        16
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 8,
+      "dual": [
+        1,
+        18
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 9,
+      "dual": [
+        1,
+        20
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 10,
+      "dual": [
+        1,
+        22
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 11,
+      "dual": [
+        1,
+        24
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 12,
+      "dual": [
+        1,
+        26
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 13,
+      "dual": [
+        1,
+        28
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 14,
+      "dual": [
+        1,
+        30
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 15,
+      "dual": [
+        1,
+        32
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 16,
+      "dual": [
+        1,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 17,
+      "dual": [
+        1,
+        36
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 18,
+      "dual": [
+        1,
+        38
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 19,
+      "dual": [
+        1,
+        40
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 20,
+      "dual": [
+        1,
+        42
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 21,
+      "dual": [
+        1,
+        44
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 22,
+      "dual": [
+        1,
+        46
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 23,
+      "dual": [
+        1,
+        48
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 24,
+      "dual": [
+        1,
+        50
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 25,
+      "dual": [
+        1,
+        52
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 26,
+      "dual": [
+        1,
+        54
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 27,
+      "dual": [
+        1,
+        56
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 28,
+      "dual": [
+        1,
+        58
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 29,
+      "dual": [
+        1,
+        60
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 30,
+      "dual": [
+        1,
+        62
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 31,
+      "dual": [
+        2,
+        4
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 32,
+      "dual": [
+        2,
+        5
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 33,
+      "dual": [
+        2,
+        8
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 34,
+      "dual": [
+        2,
+        9
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 35,
+      "dual": [
+        2,
+        12
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 36,
+      "dual": [
+        2,
+        13
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 37,
+      "dual": [
+        2,
+        16
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 38,
+      "dual": [
+        2,
+        17
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 39,
+      "dual": [
+        2,
+        20
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 40,
+      "dual": [
+        2,
+        21
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 41,
+      "dual": [
+        2,
+        24
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 42,
+      "dual": [
+        2,
+        25
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 43,
+      "dual": [
+        2,
+        28
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 44,
+      "dual": [
+        2,
+        29
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 45,
+      "dual": [
+        2,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 46,
+      "dual": [
+        2,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 47,
+      "dual": [
+        2,
+        36
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 48,
+      "dual": [
+        2,
+        37
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 49,
+      "dual": [
+        2,
+        40
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 50,
+      "dual": [
+        2,
+        41
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 51,
+      "dual": [
+        2,
+        44
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 52,
+      "dual": [
+        2,
+        45
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 53,
+      "dual": [
+        2,
+        48
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 54,
+      "dual": [
+        2,
+        49
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 55,
+      "dual": [
+        2,
+        52
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 56,
+      "dual": [
+        2,
+        53
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 57,
+      "dual": [
+        2,
+        56
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 58,
+      "dual": [
+        2,
+        57
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 59,
+      "dual": [
+        2,
+        60
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 60,
+      "dual": [
+        2,
+        61
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 61,
+      "dual": [
+        3,
+        4
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 62,
+      "dual": [
+        3,
+        5
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 63,
+      "dual": [
+        3,
+        8
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 64,
+      "dual": [
+        3,
+        9
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 65,
+      "dual": [
+        3,
+        12
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 66,
+      "dual": [
+        3,
+        13
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 67,
+      "dual": [
+        3,
+        16
+      ],
+      "solutions_containing_zero": 5,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 68,
+      "dual": [
+        3,
+        17
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 69,
+      "dual": [
+        3,
+        20
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 70,
+      "dual": [
+        3,
+        21
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 71,
+      "dual": [
+        3,
+        24
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 72,
+      "dual": [
+        3,
+        25
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 73,
+      "dual": [
+        3,
+        28
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 74,
+      "dual": [
+        3,
+        29
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 75,
+      "dual": [
+        3,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 76,
+      "dual": [
+        3,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 77,
+      "dual": [
+        3,
+        36
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 78,
+      "dual": [
+        3,
+        37
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 79,
+      "dual": [
+        3,
+        40
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 80,
+      "dual": [
+        3,
+        41
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 81,
+      "dual": [
+        3,
+        44
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 82,
+      "dual": [
+        3,
+        45
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 83,
+      "dual": [
+        3,
+        48
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 84,
+      "dual": [
+        3,
+        49
+      ],
+      "solutions_containing_zero": 5,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 85,
+      "dual": [
+        3,
+        52
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 86,
+      "dual": [
+        3,
+        53
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 87,
+      "dual": [
+        3,
+        56
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 88,
+      "dual": [
+        3,
+        57
+      ],
+      "solutions_containing_zero": 7,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 89,
+      "dual": [
+        3,
+        60
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 90,
+      "dual": [
+        3,
+        61
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 91,
+      "dual": [
+        4,
+        8
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 92,
+      "dual": [
+        4,
+        9
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 93,
+      "dual": [
+        4,
+        10
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 94,
+      "dual": [
+        4,
+        11
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 95,
+      "dual": [
+        4,
+        16
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 96,
+      "dual": [
+        4,
+        17
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 97,
+      "dual": [
+        4,
+        18
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 98,
+      "dual": [
+        4,
+        19
+      ],
+      "solutions_containing_zero": 5,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 99,
+      "dual": [
+        4,
+        24
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 100,
+      "dual": [
+        4,
+        25
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 101,
+      "dual": [
+        4,
+        26
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 102,
+      "dual": [
+        4,
+        27
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 103,
+      "dual": [
+        4,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 104,
+      "dual": [
+        4,
+        33
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 105,
+      "dual": [
+        4,
+        34
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 106,
+      "dual": [
+        4,
+        35
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 107,
+      "dual": [
+        4,
+        40
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 108,
+      "dual": [
+        4,
+        41
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 109,
+      "dual": [
+        4,
+        42
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 110,
+      "dual": [
+        4,
+        43
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 111,
+      "dual": [
+        4,
+        48
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 112,
+      "dual": [
+        4,
+        49
+      ],
+      "solutions_containing_zero": 5,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 113,
+      "dual": [
+        4,
+        50
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 114,
+      "dual": [
+        4,
+        51
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 115,
+      "dual": [
+        4,
+        56
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 116,
+      "dual": [
+        4,
+        57
+      ],
+      "solutions_containing_zero": 7,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 117,
+      "dual": [
+        4,
+        58
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 118,
+      "dual": [
+        4,
+        59
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 119,
+      "dual": [
+        5,
+        8
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 120,
+      "dual": [
+        5,
+        9
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 121,
+      "dual": [
+        5,
+        10
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 122,
+      "dual": [
+        5,
+        11
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 123,
+      "dual": [
+        5,
+        16
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 124,
+      "dual": [
+        5,
+        17
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 125,
+      "dual": [
+        5,
+        18
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 126,
+      "dual": [
+        5,
+        19
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 127,
+      "dual": [
+        5,
+        24
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 128,
+      "dual": [
+        5,
+        25
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 129,
+      "dual": [
+        5,
+        26
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 130,
+      "dual": [
+        5,
+        27
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 131,
+      "dual": [
+        5,
+        32
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 132,
+      "dual": [
+        5,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 133,
+      "dual": [
+        5,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 134,
+      "dual": [
+        5,
+        35
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 135,
+      "dual": [
+        5,
+        40
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 136,
+      "dual": [
+        5,
+        41
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 137,
+      "dual": [
+        5,
+        42
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 138,
+      "dual": [
+        5,
+        43
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 139,
+      "dual": [
+        5,
+        48
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 140,
+      "dual": [
+        5,
+        49
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 141,
+      "dual": [
+        5,
+        50
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 142,
+      "dual": [
+        5,
+        51
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 143,
+      "dual": [
+        5,
+        56
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 144,
+      "dual": [
+        5,
+        57
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 145,
+      "dual": [
+        5,
+        58
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 146,
+      "dual": [
+        5,
+        59
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 147,
+      "dual": [
+        6,
+        8
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 148,
+      "dual": [
+        6,
+        9
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 149,
+      "dual": [
+        6,
+        10
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 150,
+      "dual": [
+        6,
+        11
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 151,
+      "dual": [
+        6,
+        16
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 152,
+      "dual": [
+        6,
+        17
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 153,
+      "dual": [
+        6,
+        18
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 154,
+      "dual": [
+        6,
+        19
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 155,
+      "dual": [
+        6,
+        24
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 156,
+      "dual": [
+        6,
+        25
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 157,
+      "dual": [
+        6,
+        26
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 158,
+      "dual": [
+        6,
+        27
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 159,
+      "dual": [
+        6,
+        32
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 160,
+      "dual": [
+        6,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 161,
+      "dual": [
+        6,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 162,
+      "dual": [
+        6,
+        35
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 163,
+      "dual": [
+        6,
+        40
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 164,
+      "dual": [
+        6,
+        41
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 165,
+      "dual": [
+        6,
+        42
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 166,
+      "dual": [
+        6,
+        43
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 167,
+      "dual": [
+        6,
+        48
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 168,
+      "dual": [
+        6,
+        49
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 169,
+      "dual": [
+        6,
+        50
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 170,
+      "dual": [
+        6,
+        51
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 171,
+      "dual": [
+        6,
+        56
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 172,
+      "dual": [
+        6,
+        57
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 173,
+      "dual": [
+        6,
+        58
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 174,
+      "dual": [
+        6,
+        59
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 175,
+      "dual": [
+        7,
+        8
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 176,
+      "dual": [
+        7,
+        9
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 177,
+      "dual": [
+        7,
+        10
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 178,
+      "dual": [
+        7,
+        11
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 179,
+      "dual": [
+        7,
+        16
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 180,
+      "dual": [
+        7,
+        17
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 181,
+      "dual": [
+        7,
+        18
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 182,
+      "dual": [
+        7,
+        19
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 183,
+      "dual": [
+        7,
+        24
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 184,
+      "dual": [
+        7,
+        25
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 185,
+      "dual": [
+        7,
+        26
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 186,
+      "dual": [
+        7,
+        27
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 187,
+      "dual": [
+        7,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 188,
+      "dual": [
+        7,
+        33
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 189,
+      "dual": [
+        7,
+        34
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 190,
+      "dual": [
+        7,
+        35
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 191,
+      "dual": [
+        7,
+        40
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 192,
+      "dual": [
+        7,
+        41
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 193,
+      "dual": [
+        7,
+        42
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 194,
+      "dual": [
+        7,
+        43
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 195,
+      "dual": [
+        7,
+        48
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 196,
+      "dual": [
+        7,
+        49
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 197,
+      "dual": [
+        7,
+        50
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 198,
+      "dual": [
+        7,
+        51
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 199,
+      "dual": [
+        7,
+        56
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 200,
+      "dual": [
+        7,
+        57
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 201,
+      "dual": [
+        7,
+        58
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 202,
+      "dual": [
+        7,
+        59
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 203,
+      "dual": [
+        8,
+        16
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 204,
+      "dual": [
+        8,
+        17
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 205,
+      "dual": [
+        8,
+        18
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 206,
+      "dual": [
+        8,
+        19
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 207,
+      "dual": [
+        8,
+        20
+      ],
+      "solutions_containing_zero": 12,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 208,
+      "dual": [
+        8,
+        21
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 209,
+      "dual": [
+        8,
+        22
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 210,
+      "dual": [
+        8,
+        23
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 211,
+      "dual": [
+        8,
+        32
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 212,
+      "dual": [
+        8,
+        33
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 213,
+      "dual": [
+        8,
+        34
+      ],
+      "solutions_containing_zero": 9,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 214,
+      "dual": [
+        8,
+        35
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 215,
+      "dual": [
+        8,
+        36
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 216,
+      "dual": [
+        8,
+        37
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 217,
+      "dual": [
+        8,
+        38
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 218,
+      "dual": [
+        8,
+        39
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 219,
+      "dual": [
+        8,
+        48
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 220,
+      "dual": [
+        8,
+        49
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 221,
+      "dual": [
+        8,
+        50
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 222,
+      "dual": [
+        8,
+        51
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 223,
+      "dual": [
+        8,
+        52
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 224,
+      "dual": [
+        8,
+        53
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 225,
+      "dual": [
+        8,
+        54
+      ],
+      "solutions_containing_zero": 9,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 226,
+      "dual": [
+        8,
+        55
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 227,
+      "dual": [
+        9,
+        16
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 228,
+      "dual": [
+        9,
+        17
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 229,
+      "dual": [
+        9,
+        18
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 230,
+      "dual": [
+        9,
+        19
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 231,
+      "dual": [
+        9,
+        20
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 232,
+      "dual": [
+        9,
+        21
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 233,
+      "dual": [
+        9,
+        22
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 234,
+      "dual": [
+        9,
+        23
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 235,
+      "dual": [
+        9,
+        32
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 236,
+      "dual": [
+        9,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 237,
+      "dual": [
+        9,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 238,
+      "dual": [
+        9,
+        35
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 239,
+      "dual": [
+        9,
+        36
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 240,
+      "dual": [
+        9,
+        37
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 241,
+      "dual": [
+        9,
+        38
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 242,
+      "dual": [
+        9,
+        39
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 243,
+      "dual": [
+        9,
+        48
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 244,
+      "dual": [
+        9,
+        49
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 245,
+      "dual": [
+        9,
+        50
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 246,
+      "dual": [
+        9,
+        51
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 247,
+      "dual": [
+        9,
+        52
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 248,
+      "dual": [
+        9,
+        53
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 249,
+      "dual": [
+        9,
+        54
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 250,
+      "dual": [
+        9,
+        55
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 251,
+      "dual": [
+        10,
+        16
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 252,
+      "dual": [
+        10,
+        17
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 253,
+      "dual": [
+        10,
+        18
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 254,
+      "dual": [
+        10,
+        19
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 255,
+      "dual": [
+        10,
+        20
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 256,
+      "dual": [
+        10,
+        21
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 257,
+      "dual": [
+        10,
+        22
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 258,
+      "dual": [
+        10,
+        23
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 259,
+      "dual": [
+        10,
+        32
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 260,
+      "dual": [
+        10,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 261,
+      "dual": [
+        10,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 262,
+      "dual": [
+        10,
+        35
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 263,
+      "dual": [
+        10,
+        36
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 264,
+      "dual": [
+        10,
+        37
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 265,
+      "dual": [
+        10,
+        38
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 266,
+      "dual": [
+        10,
+        39
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 267,
+      "dual": [
+        10,
+        48
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 268,
+      "dual": [
+        10,
+        49
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 269,
+      "dual": [
+        10,
+        50
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 270,
+      "dual": [
+        10,
+        51
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 271,
+      "dual": [
+        10,
+        52
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 272,
+      "dual": [
+        10,
+        53
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 273,
+      "dual": [
+        10,
+        54
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 274,
+      "dual": [
+        10,
+        55
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 275,
+      "dual": [
+        11,
+        16
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 276,
+      "dual": [
+        11,
+        17
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 277,
+      "dual": [
+        11,
+        18
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 278,
+      "dual": [
+        11,
+        19
+      ],
+      "solutions_containing_zero": 28,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 279,
+      "dual": [
+        11,
+        20
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 280,
+      "dual": [
+        11,
+        21
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 281,
+      "dual": [
+        11,
+        22
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 282,
+      "dual": [
+        11,
+        23
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 283,
+      "dual": [
+        11,
+        32
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 284,
+      "dual": [
+        11,
+        33
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 285,
+      "dual": [
+        11,
+        34
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 286,
+      "dual": [
+        11,
+        35
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 287,
+      "dual": [
+        11,
+        36
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 288,
+      "dual": [
+        11,
+        37
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 289,
+      "dual": [
+        11,
+        38
+      ],
+      "solutions_containing_zero": 28,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 290,
+      "dual": [
+        11,
+        39
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 291,
+      "dual": [
+        11,
+        48
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 292,
+      "dual": [
+        11,
+        49
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 293,
+      "dual": [
+        11,
+        50
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 294,
+      "dual": [
+        11,
+        51
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 295,
+      "dual": [
+        11,
+        52
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 296,
+      "dual": [
+        11,
+        53
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 297,
+      "dual": [
+        11,
+        54
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 298,
+      "dual": [
+        11,
+        55
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 299,
+      "dual": [
+        12,
+        16
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 300,
+      "dual": [
+        12,
+        17
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 301,
+      "dual": [
+        12,
+        18
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 302,
+      "dual": [
+        12,
+        19
+      ],
+      "solutions_containing_zero": 28,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 303,
+      "dual": [
+        12,
+        20
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 304,
+      "dual": [
+        12,
+        21
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 305,
+      "dual": [
+        12,
+        22
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 306,
+      "dual": [
+        12,
+        23
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 307,
+      "dual": [
+        12,
+        32
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 308,
+      "dual": [
+        12,
+        33
+      ],
+      "solutions_containing_zero": 28,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 309,
+      "dual": [
+        12,
+        34
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 310,
+      "dual": [
+        12,
+        35
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 311,
+      "dual": [
+        12,
+        36
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 312,
+      "dual": [
+        12,
+        37
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 313,
+      "dual": [
+        12,
+        38
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 314,
+      "dual": [
+        12,
+        39
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 315,
+      "dual": [
+        12,
+        48
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 316,
+      "dual": [
+        12,
+        49
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 317,
+      "dual": [
+        12,
+        50
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 318,
+      "dual": [
+        12,
+        51
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 319,
+      "dual": [
+        12,
+        52
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 320,
+      "dual": [
+        12,
+        53
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 321,
+      "dual": [
+        12,
+        54
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 322,
+      "dual": [
+        12,
+        55
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 323,
+      "dual": [
+        13,
+        16
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 324,
+      "dual": [
+        13,
+        17
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 325,
+      "dual": [
+        13,
+        18
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 326,
+      "dual": [
+        13,
+        19
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 327,
+      "dual": [
+        13,
+        20
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 328,
+      "dual": [
+        13,
+        21
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 329,
+      "dual": [
+        13,
+        22
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 330,
+      "dual": [
+        13,
+        23
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 331,
+      "dual": [
+        13,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 332,
+      "dual": [
+        13,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 333,
+      "dual": [
+        13,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 334,
+      "dual": [
+        13,
+        35
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 335,
+      "dual": [
+        13,
+        36
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 336,
+      "dual": [
+        13,
+        37
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 337,
+      "dual": [
+        13,
+        38
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 338,
+      "dual": [
+        13,
+        39
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 339,
+      "dual": [
+        13,
+        48
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 340,
+      "dual": [
+        13,
+        49
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 341,
+      "dual": [
+        13,
+        50
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 342,
+      "dual": [
+        13,
+        51
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 343,
+      "dual": [
+        13,
+        52
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 344,
+      "dual": [
+        13,
+        53
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 345,
+      "dual": [
+        13,
+        54
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 346,
+      "dual": [
+        13,
+        55
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 347,
+      "dual": [
+        14,
+        16
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 348,
+      "dual": [
+        14,
+        17
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 349,
+      "dual": [
+        14,
+        18
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 350,
+      "dual": [
+        14,
+        19
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 351,
+      "dual": [
+        14,
+        20
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 352,
+      "dual": [
+        14,
+        21
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 353,
+      "dual": [
+        14,
+        22
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 354,
+      "dual": [
+        14,
+        23
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 355,
+      "dual": [
+        14,
+        32
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 356,
+      "dual": [
+        14,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 357,
+      "dual": [
+        14,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 358,
+      "dual": [
+        14,
+        35
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 359,
+      "dual": [
+        14,
+        36
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 360,
+      "dual": [
+        14,
+        37
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 361,
+      "dual": [
+        14,
+        38
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 362,
+      "dual": [
+        14,
+        39
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 363,
+      "dual": [
+        14,
+        48
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 364,
+      "dual": [
+        14,
+        49
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 365,
+      "dual": [
+        14,
+        50
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 366,
+      "dual": [
+        14,
+        51
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 367,
+      "dual": [
+        14,
+        52
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 368,
+      "dual": [
+        14,
+        53
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 369,
+      "dual": [
+        14,
+        54
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 370,
+      "dual": [
+        14,
+        55
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 371,
+      "dual": [
+        15,
+        16
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 372,
+      "dual": [
+        15,
+        17
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 373,
+      "dual": [
+        15,
+        18
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 374,
+      "dual": [
+        15,
+        19
+      ],
+      "solutions_containing_zero": 6,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 375,
+      "dual": [
+        15,
+        20
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 376,
+      "dual": [
+        15,
+        21
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 377,
+      "dual": [
+        15,
+        22
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 378,
+      "dual": [
+        15,
+        23
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 379,
+      "dual": [
+        15,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 380,
+      "dual": [
+        15,
+        33
+      ],
+      "solutions_containing_zero": 28,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 381,
+      "dual": [
+        15,
+        34
+      ],
+      "solutions_containing_zero": 5,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 382,
+      "dual": [
+        15,
+        35
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 383,
+      "dual": [
+        15,
+        36
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 384,
+      "dual": [
+        15,
+        37
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 385,
+      "dual": [
+        15,
+        38
+      ],
+      "solutions_containing_zero": 28,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 386,
+      "dual": [
+        15,
+        39
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 387,
+      "dual": [
+        15,
+        48
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 388,
+      "dual": [
+        15,
+        49
+      ],
+      "solutions_containing_zero": 5,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 389,
+      "dual": [
+        15,
+        50
+      ],
+      "solutions_containing_zero": 5,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 390,
+      "dual": [
+        15,
+        51
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 391,
+      "dual": [
+        15,
+        52
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 392,
+      "dual": [
+        15,
+        53
+      ],
+      "solutions_containing_zero": 5,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 393,
+      "dual": [
+        15,
+        54
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 394,
+      "dual": [
+        15,
+        55
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 395,
+      "dual": [
+        16,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 396,
+      "dual": [
+        16,
+        33
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 397,
+      "dual": [
+        16,
+        34
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 398,
+      "dual": [
+        16,
+        35
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 399,
+      "dual": [
+        16,
+        36
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 400,
+      "dual": [
+        16,
+        37
+      ],
+      "solutions_containing_zero": 7,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 401,
+      "dual": [
+        16,
+        38
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 402,
+      "dual": [
+        16,
+        39
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 403,
+      "dual": [
+        16,
+        40
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 404,
+      "dual": [
+        16,
+        41
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 405,
+      "dual": [
+        16,
+        42
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 406,
+      "dual": [
+        16,
+        43
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 407,
+      "dual": [
+        16,
+        44
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 408,
+      "dual": [
+        16,
+        45
+      ],
+      "solutions_containing_zero": 5,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 409,
+      "dual": [
+        16,
+        46
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 410,
+      "dual": [
+        16,
+        47
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 411,
+      "dual": [
+        17,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 412,
+      "dual": [
+        17,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 413,
+      "dual": [
+        17,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 414,
+      "dual": [
+        17,
+        35
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 415,
+      "dual": [
+        17,
+        36
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 416,
+      "dual": [
+        17,
+        37
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 417,
+      "dual": [
+        17,
+        38
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 418,
+      "dual": [
+        17,
+        39
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 419,
+      "dual": [
+        17,
+        40
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 420,
+      "dual": [
+        17,
+        41
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 421,
+      "dual": [
+        17,
+        42
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 422,
+      "dual": [
+        17,
+        43
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 423,
+      "dual": [
+        17,
+        44
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 424,
+      "dual": [
+        17,
+        45
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 425,
+      "dual": [
+        17,
+        46
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 426,
+      "dual": [
+        17,
+        47
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 427,
+      "dual": [
+        18,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 428,
+      "dual": [
+        18,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 429,
+      "dual": [
+        18,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 430,
+      "dual": [
+        18,
+        35
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 431,
+      "dual": [
+        18,
+        36
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 432,
+      "dual": [
+        18,
+        37
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 433,
+      "dual": [
+        18,
+        38
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 434,
+      "dual": [
+        18,
+        39
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 435,
+      "dual": [
+        18,
+        40
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 436,
+      "dual": [
+        18,
+        41
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 437,
+      "dual": [
+        18,
+        42
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 438,
+      "dual": [
+        18,
+        43
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 439,
+      "dual": [
+        18,
+        44
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 440,
+      "dual": [
+        18,
+        45
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 441,
+      "dual": [
+        18,
+        46
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 442,
+      "dual": [
+        18,
+        47
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 443,
+      "dual": [
+        19,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 444,
+      "dual": [
+        19,
+        33
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 445,
+      "dual": [
+        19,
+        34
+      ],
+      "solutions_containing_zero": 5,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 446,
+      "dual": [
+        19,
+        35
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 447,
+      "dual": [
+        19,
+        36
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 448,
+      "dual": [
+        19,
+        37
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 449,
+      "dual": [
+        19,
+        38
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 450,
+      "dual": [
+        19,
+        39
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 451,
+      "dual": [
+        19,
+        40
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 452,
+      "dual": [
+        19,
+        41
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 453,
+      "dual": [
+        19,
+        42
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 454,
+      "dual": [
+        19,
+        43
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 455,
+      "dual": [
+        19,
+        44
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 456,
+      "dual": [
+        19,
+        45
+      ],
+      "solutions_containing_zero": 5,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 457,
+      "dual": [
+        19,
+        46
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 458,
+      "dual": [
+        19,
+        47
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 459,
+      "dual": [
+        20,
+        32
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 460,
+      "dual": [
+        20,
+        33
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 461,
+      "dual": [
+        20,
+        34
+      ],
+      "solutions_containing_zero": 9,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 462,
+      "dual": [
+        20,
+        35
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 463,
+      "dual": [
+        20,
+        36
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 464,
+      "dual": [
+        20,
+        37
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 465,
+      "dual": [
+        20,
+        38
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 466,
+      "dual": [
+        20,
+        39
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 467,
+      "dual": [
+        20,
+        40
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 468,
+      "dual": [
+        20,
+        41
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 469,
+      "dual": [
+        20,
+        42
+      ],
+      "solutions_containing_zero": 9,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 470,
+      "dual": [
+        20,
+        43
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 471,
+      "dual": [
+        20,
+        44
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 472,
+      "dual": [
+        20,
+        45
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 473,
+      "dual": [
+        20,
+        46
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 474,
+      "dual": [
+        20,
+        47
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 475,
+      "dual": [
+        21,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 476,
+      "dual": [
+        21,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 477,
+      "dual": [
+        21,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 478,
+      "dual": [
+        21,
+        35
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 479,
+      "dual": [
+        21,
+        36
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 480,
+      "dual": [
+        21,
+        37
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 481,
+      "dual": [
+        21,
+        38
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 482,
+      "dual": [
+        21,
+        39
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 483,
+      "dual": [
+        21,
+        40
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 484,
+      "dual": [
+        21,
+        41
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 485,
+      "dual": [
+        21,
+        42
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 486,
+      "dual": [
+        21,
+        43
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 487,
+      "dual": [
+        21,
+        44
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 488,
+      "dual": [
+        21,
+        45
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 489,
+      "dual": [
+        21,
+        46
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 490,
+      "dual": [
+        21,
+        47
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 491,
+      "dual": [
+        22,
+        32
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 492,
+      "dual": [
+        22,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 493,
+      "dual": [
+        22,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 494,
+      "dual": [
+        22,
+        35
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 495,
+      "dual": [
+        22,
+        36
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 496,
+      "dual": [
+        22,
+        37
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 497,
+      "dual": [
+        22,
+        38
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 498,
+      "dual": [
+        22,
+        39
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 499,
+      "dual": [
+        22,
+        40
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 500,
+      "dual": [
+        22,
+        41
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 501,
+      "dual": [
+        22,
+        42
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 502,
+      "dual": [
+        22,
+        43
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 503,
+      "dual": [
+        22,
+        44
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 504,
+      "dual": [
+        22,
+        45
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 505,
+      "dual": [
+        22,
+        46
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 506,
+      "dual": [
+        22,
+        47
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 507,
+      "dual": [
+        23,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 508,
+      "dual": [
+        23,
+        33
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 509,
+      "dual": [
+        23,
+        34
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 510,
+      "dual": [
+        23,
+        35
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 511,
+      "dual": [
+        23,
+        36
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 512,
+      "dual": [
+        23,
+        37
+      ],
+      "solutions_containing_zero": 7,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 513,
+      "dual": [
+        23,
+        38
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 514,
+      "dual": [
+        23,
+        39
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 515,
+      "dual": [
+        23,
+        40
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 516,
+      "dual": [
+        23,
+        41
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 517,
+      "dual": [
+        23,
+        42
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 518,
+      "dual": [
+        23,
+        43
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 519,
+      "dual": [
+        23,
+        44
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 520,
+      "dual": [
+        23,
+        45
+      ],
+      "solutions_containing_zero": 5,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 521,
+      "dual": [
+        23,
+        46
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 522,
+      "dual": [
+        23,
+        47
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 523,
+      "dual": [
+        24,
+        32
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 524,
+      "dual": [
+        24,
+        33
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 525,
+      "dual": [
+        24,
+        34
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 526,
+      "dual": [
+        24,
+        35
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 527,
+      "dual": [
+        24,
+        36
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 528,
+      "dual": [
+        24,
+        37
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 529,
+      "dual": [
+        24,
+        38
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 530,
+      "dual": [
+        24,
+        39
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 531,
+      "dual": [
+        24,
+        40
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 532,
+      "dual": [
+        24,
+        41
+      ],
+      "solutions_containing_zero": 28,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 533,
+      "dual": [
+        24,
+        42
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 534,
+      "dual": [
+        24,
+        43
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 535,
+      "dual": [
+        24,
+        44
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 536,
+      "dual": [
+        24,
+        45
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 537,
+      "dual": [
+        24,
+        46
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 538,
+      "dual": [
+        24,
+        47
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 539,
+      "dual": [
+        25,
+        32
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 540,
+      "dual": [
+        25,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 541,
+      "dual": [
+        25,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 542,
+      "dual": [
+        25,
+        35
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 543,
+      "dual": [
+        25,
+        36
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 544,
+      "dual": [
+        25,
+        37
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 545,
+      "dual": [
+        25,
+        38
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 546,
+      "dual": [
+        25,
+        39
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 547,
+      "dual": [
+        25,
+        40
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 548,
+      "dual": [
+        25,
+        41
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 549,
+      "dual": [
+        25,
+        42
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 550,
+      "dual": [
+        25,
+        43
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 551,
+      "dual": [
+        25,
+        44
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 552,
+      "dual": [
+        25,
+        45
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 553,
+      "dual": [
+        25,
+        46
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 554,
+      "dual": [
+        25,
+        47
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 555,
+      "dual": [
+        26,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 556,
+      "dual": [
+        26,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 557,
+      "dual": [
+        26,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 558,
+      "dual": [
+        26,
+        35
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 559,
+      "dual": [
+        26,
+        36
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 560,
+      "dual": [
+        26,
+        37
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 561,
+      "dual": [
+        26,
+        38
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 562,
+      "dual": [
+        26,
+        39
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 563,
+      "dual": [
+        26,
+        40
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 564,
+      "dual": [
+        26,
+        41
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 565,
+      "dual": [
+        26,
+        42
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 566,
+      "dual": [
+        26,
+        43
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 567,
+      "dual": [
+        26,
+        44
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 568,
+      "dual": [
+        26,
+        45
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 569,
+      "dual": [
+        26,
+        46
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 570,
+      "dual": [
+        26,
+        47
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 571,
+      "dual": [
+        27,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 572,
+      "dual": [
+        27,
+        33
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 573,
+      "dual": [
+        27,
+        34
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 574,
+      "dual": [
+        27,
+        35
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 575,
+      "dual": [
+        27,
+        36
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 576,
+      "dual": [
+        27,
+        37
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 577,
+      "dual": [
+        27,
+        38
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 578,
+      "dual": [
+        27,
+        39
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 579,
+      "dual": [
+        27,
+        40
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 580,
+      "dual": [
+        27,
+        41
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 581,
+      "dual": [
+        27,
+        42
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 582,
+      "dual": [
+        27,
+        43
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 583,
+      "dual": [
+        27,
+        44
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 584,
+      "dual": [
+        27,
+        45
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 585,
+      "dual": [
+        27,
+        46
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 586,
+      "dual": [
+        27,
+        47
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 587,
+      "dual": [
+        28,
+        32
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 588,
+      "dual": [
+        28,
+        33
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 589,
+      "dual": [
+        28,
+        34
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 590,
+      "dual": [
+        28,
+        35
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 591,
+      "dual": [
+        28,
+        36
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 592,
+      "dual": [
+        28,
+        37
+      ],
+      "solutions_containing_zero": 22,
+      "nonlinear_solutions": 8
+    },
+    {
+      "period": 593,
+      "dual": [
+        28,
+        38
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 594,
+      "dual": [
+        28,
+        39
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 595,
+      "dual": [
+        28,
+        40
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 596,
+      "dual": [
+        28,
+        41
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 597,
+      "dual": [
+        28,
+        42
+      ],
+      "solutions_containing_zero": 12,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 598,
+      "dual": [
+        28,
+        43
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 599,
+      "dual": [
+        28,
+        44
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 600,
+      "dual": [
+        28,
+        45
+      ],
+      "solutions_containing_zero": 6,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 601,
+      "dual": [
+        28,
+        46
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 602,
+      "dual": [
+        28,
+        47
+      ],
+      "solutions_containing_zero": 2,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 603,
+      "dual": [
+        29,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 604,
+      "dual": [
+        29,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 605,
+      "dual": [
+        29,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 606,
+      "dual": [
+        29,
+        35
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 607,
+      "dual": [
+        29,
+        36
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 608,
+      "dual": [
+        29,
+        37
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 609,
+      "dual": [
+        29,
+        38
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 610,
+      "dual": [
+        29,
+        39
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 611,
+      "dual": [
+        29,
+        40
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 612,
+      "dual": [
+        29,
+        41
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 613,
+      "dual": [
+        29,
+        42
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 614,
+      "dual": [
+        29,
+        43
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 615,
+      "dual": [
+        29,
+        44
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 616,
+      "dual": [
+        29,
+        45
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 617,
+      "dual": [
+        29,
+        46
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 618,
+      "dual": [
+        29,
+        47
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 619,
+      "dual": [
+        30,
+        32
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 620,
+      "dual": [
+        30,
+        33
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 621,
+      "dual": [
+        30,
+        34
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 622,
+      "dual": [
+        30,
+        35
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 623,
+      "dual": [
+        30,
+        36
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 624,
+      "dual": [
+        30,
+        37
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 625,
+      "dual": [
+        30,
+        38
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 626,
+      "dual": [
+        30,
+        39
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 627,
+      "dual": [
+        30,
+        40
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 628,
+      "dual": [
+        30,
+        41
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 629,
+      "dual": [
+        30,
+        42
+      ],
+      "solutions_containing_zero": 3,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 630,
+      "dual": [
+        30,
+        43
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 631,
+      "dual": [
+        30,
+        44
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 632,
+      "dual": [
+        30,
+        45
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 633,
+      "dual": [
+        30,
+        46
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 634,
+      "dual": [
+        30,
+        47
+      ],
+      "solutions_containing_zero": 1,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 635,
+      "dual": [
+        31,
+        32
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 636,
+      "dual": [
+        31,
+        33
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 637,
+      "dual": [
+        31,
+        34
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 638,
+      "dual": [
+        31,
+        35
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 639,
+      "dual": [
+        31,
+        36
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 640,
+      "dual": [
+        31,
+        37
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 641,
+      "dual": [
+        31,
+        38
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 642,
+      "dual": [
+        31,
+        39
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 643,
+      "dual": [
+        31,
+        40
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 644,
+      "dual": [
+        31,
+        41
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 645,
+      "dual": [
+        31,
+        42
+      ],
+      "solutions_containing_zero": 11,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 646,
+      "dual": [
+        31,
+        43
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 647,
+      "dual": [
+        31,
+        44
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 648,
+      "dual": [
+        31,
+        45
+      ],
+      "solutions_containing_zero": 14,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 649,
+      "dual": [
+        31,
+        46
+      ],
+      "solutions_containing_zero": 28,
+      "nonlinear_solutions": 0
+    },
+    {
+      "period": 650,
+      "dual": [
+        31,
+        47
+      ],
+      "solutions_containing_zero": 4,
+      "nonlinear_solutions": 0
+    }
+  ]
+}

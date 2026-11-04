@@ -1,0 +1,23 @@
+{
+  "checker_tolerance": 1e-07,
+  "false_positive_max_cos": 0.5000000250000005,
+  "exact_false_positive_certificate": {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_paper_audit_20261104/checker_false_positive.npy",
+    "sha256": "78a19e8d0ad4b3fad67d2a86686cec6725e7fe912c8330b2344d1672b2688a12",
+    "n": 20,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 1,
+    "first_violating_pair_0based": [
+      0,
+      1
+    ],
+    "max_cos_extended_precision": "0.50000002500000053463",
+    "integer_scale_power_of_two": 53,
+    "elapsed_seconds": 0.0006259121000766754
+  },
+  "polish_actual_lr_is_printed_lr_divided_by_ten": true,
+  "released_search_hardcodes_N841": true,
+  "note": "These are code limitations, not a refutation of the valid 841-point coordinate file."
+}

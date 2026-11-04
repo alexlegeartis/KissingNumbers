@@ -1,0 +1,31 @@
+[
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/data/record841.npy",
+    "sha256": "a4a075680b57a3333c65c87001d64f25bc6647565495a3b56d1b0e5f0106291a",
+    "n": 841,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": true,
+    "violating_pairs": 0,
+    "first_violating_pair_0based": null,
+    "max_cos_extended_precision": "0.49999993775143229186",
+    "integer_scale_power_of_two": 71,
+    "elapsed_seconds": 6.157570846378803
+  },
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/data/published842.npy",
+    "sha256": "6a02bdca491eca8b33276dab5b87b4278e6fc37f7e681c0ad98aed16059d45a1",
+    "n": 842,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 10937,
+    "first_violating_pair_0based": [
+      4,
+      7
+    ],
+    "max_cos_extended_precision": "0.5009010186022465089",
+    "integer_scale_power_of_two": 69,
+    "elapsed_seconds": 7.2503313748165965
+  }
+]

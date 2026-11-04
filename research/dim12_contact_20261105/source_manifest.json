@@ -1,0 +1,34 @@
+{
+  "sources": {
+    "break_contacts.py": "125434befcbb50dac273af4ff00240f4ae618023db9917e7eb53ad191e5547f6",
+    "certify_results.py": "f8a3e15557c89dc3aa259e01d1b6684a3f18af3e9f7822d9a19c8f59d6a8872b",
+    "common.py": "3d9c86bf7ea0726297d4b020541c3b702961e4865d828dd14625df4b7d5ef166",
+    "control.py": "ae816426d070aeffd107c1847fbdf16b84bf4478de7bec32074e797a22c2a9cd",
+    "control_cpu.py": "ccabf0f53397abad49ae7b5c4bc52f8b3eb4c8a4ac05be8961b77081e753abcc",
+    "direct_control.py": "162971da0ed6cb703598a970fa0e7898ee115a2e673cbdef7168607a2f2db705",
+    "insertions.py": "0894efc04b6b924b2f6d87f5b8a358c2b37266e46c6180d6710698b7f0c46b2e",
+    "local_certificate.py": "d9ed82b7b52c09a3a5334f49a07dd8b097ba2fbcdc215a11228c6b40f98934db",
+    "minimax.py": "85ff54b9e1b4f831bb2a9db3cea8bb88884e22ffa360a1cc1abf5aca7197bdb1",
+    "patches.py": "27dcdfb0b5eedbe64e94347fc2290094550aec2f58ea47f4d38a766512d67a16",
+    "projected_control.py": "f4ade502fbc13b33f8acbe4c549a51292bb64e68ad72c5ae46c7e0283bab26d0",
+    "repair_control.py": "143f679ee29fae0b3daff77078c0097b6ef8d33d7fff55fc5dcc986a85ce336b",
+    "slp.py": "dfd2d47db4a2a364ecd8024c859381d71eee618abf60909cc71e0a0f75893f13",
+    "stress.py": "03fad1752e6433a58e3abda113b87401ac4bd13abe72a2f16b29854f80559c36",
+    "summarize.py": "b842bf72369314e88e0eb49a7bbe0e85840725f3db353e0f0710121c9a888db9",
+    "trade_milp.py": "9231896498ed8aeca5f93dff1761567a147a835a1af907a5acb353db68357cb5",
+    "trade_pool.py": "8be344528673e3f4fdf41a9ea44daef360fb4c9b6c7f5cf6488a2d46db252c42",
+    "trade_refine.py": "6125c7a3367c13fde56f27a4992083d2bf2ad496d203709ed217a5f7ba076d64",
+    "trade_tabu.cpp": "fb42f2bbca09086568d470a74dfcd2b4a71629b83001f5963614213a989b7aaf",
+    "snapshots/control_gpu_initial.py": "50b682ac22d3c95299c5a7e3ab0eb845096dbca74dfcd7b2f184c08b14b4bba8"
+  },
+  "dependencies": {
+    "dim12_quaternionic_20261104/search.py": "2886cb320a5353034ba4c9b5a688e5642f5a32139d851381535d836fe28843d4",
+    "dim12_quaternionic_20261104/kernels.py": "fe73d2ec623adc720fdb7c6a54f85740be13923e48a8a2b0847dcb263f3b4ff8",
+    "dim12_quaternionic_20261104/continuation.py": "708d69f28e55a78d77a29b119dc86cb53b02b57ceeac423750534d9ad2bc33b9",
+    "dim12_quaternionic_20261104/verify.py": "6fc037f48c00e2182cdd2fd71ce2932a0ba1eb45fb1708b619b018959e615e3e",
+    "dim12_paper_audit_20261104/audit.py": "b7ec67484c7f76742cc76b082f087397e9946b85a5d111279d668f6e1de5874c",
+    "dim12_paper_audit_20261104/alternative_bridges.py": "e35cf64e93a2e692c76e167e66d71fe8c23b88a2b30d096cdaf7db66319f6834",
+    "dim12_paper_audit_20261104/riesz_search.py": "f5be36247f682f5622883105b7f12c5ce4be0fbaac12ebe7e680a4dee0f3d15e",
+    "dim12_paper_audit_20261104/inputs/search_841_riesz.py": "bb89913f99bc9542a46f47fbf4afacf1823bc66fc7bb18e4a7a14871830efb16"
+  }
+}

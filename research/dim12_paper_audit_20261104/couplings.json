@@ -1,0 +1,11 @@
+{
+  "exact_enumeration": true,
+  "standard_labeled_couplings": 4320,
+  "alternative_labeled_couplings": 720,
+  "total_labeled_couplings": 5040,
+  "standard_sha256": "b56cad5ead8a6db891e522a676793a4ee751c4319dd731e7b97a9906fc3e2b28",
+  "alternative_sha256": "de484c698725c19b09728f723871256fd86c5178acaf129c30cb60005c4b5d52",
+  "all_120_color_permutations_realized": true,
+  "all_six_factorizations_isomorphic": true,
+  "scope": "45 distinct 2+2 supports, all sixteen signs on each support; see proof in BRIDGES.md"
+}

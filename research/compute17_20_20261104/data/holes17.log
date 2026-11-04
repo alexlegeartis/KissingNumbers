@@ -1,0 +1,9 @@
+{"restarts": 10, "best_max_dot": 0.5222329678670937, "seconds": 0.8136199899017811}
+{"restarts": 20, "best_max_dot": 0.5222329678670937, "seconds": 1.7858507046476007}
+{"restarts": 30, "best_max_dot": 0.5222329678670937, "seconds": 2.7652683462947607}
+{"restarts": 40, "best_max_dot": 0.5222329678670937, "seconds": 3.678853972814977}
+{"restarts": 50, "best_max_dot": 0.5222329678670937, "seconds": 4.503899895586073}
+{"restarts": 60, "best_max_dot": 0.5222329678670936, "seconds": 5.472062582150102}
+{"restarts": 70, "best_max_dot": 0.5222329678670936, "seconds": 6.498350216075778}
+{"restarts": 80, "best_max_dot": 0.5222329678670936, "seconds": 7.697418404743075}
+{"dimension": 17, "directions": 80, "best_max_dot": 0.5222329678670936, "seconds": 7.69788277707994}

@@ -1,0 +1,82 @@
+{
+  "sources": {
+    "quaternionic": "https://github.com/k-nic/quaternionic",
+    "near_misses": "https://github.com/k-nic/841_in_12D/tree/main/beyond841",
+    "paper": "https://arxiv.org/abs/2609.09179"
+  },
+  "files": {
+    "Gram842.txt": {
+      "bytes": 10989544,
+      "sha256": "3ad70d99caa67a6ff2f572224246440b651391c274eb9f426d78f68246cd1f0a"
+    },
+    "Gram844.txt": {
+      "bytes": 9616128,
+      "sha256": "2abc5d6ed2a75b48e5e7a66184f4d6cc55efbe0424d53c57a6629baefad11848"
+    },
+    "alignment_U.txt": {
+      "bytes": 3137,
+      "sha256": "e7c16a2071a266f96390d8260d6f9cfb7e11a64a36cf130ff3a77d989219d5f8"
+    },
+    "alignment_permutation.txt": {
+      "bytes": 3252,
+      "sha256": "1567e1c1036554b5ba641ed38fe50718a7c404381604577031449b9ce20d37db"
+    },
+    "alignment_top24.txt": {
+      "bytes": 1489,
+      "sha256": "4078752a525b9ab82221b298a0da4d827fb3c6a3523b60eb002157642988e237"
+    },
+    "canonical840.txt": {
+      "bytes": 75084,
+      "sha256": "bc681a8cb8eae67a7547dbd0993957f4089b4014d61d8e967a674d2723ce79e6"
+    },
+    "families.txt": {
+      "bytes": 5789,
+      "sha256": "fe9ada1f104324ef4f4a6541e534e4aba679e21006902889b2470cc920f97d67"
+    },
+    "gram841_coordinates.txt": {
+      "bytes": 208996,
+      "sha256": "995264fe8be616cc546f04ef542dbf4ef6effe9ba5dfa4ceec1aa7e069f476a9"
+    }
+  },
+  "baseline": {
+    "canonical840": {
+      "n": 840,
+      "d": 12,
+      "max_cos": 0.5000000000000002,
+      "sum_squared_violation": 3.5735399006511835e-28,
+      "violating_pairs": 22848,
+      "pairs_above_05001": 0,
+      "min_squared_distance": 0.9999999999999996
+    },
+    "record841": {
+      "n": 841,
+      "d": 12,
+      "max_cos": 0.49999993775143226,
+      "sum_squared_violation": 0.0,
+      "violating_pairs": 0,
+      "pairs_above_05001": 0,
+      "min_squared_distance": 1.0000001244971355
+    },
+    "alignment_squared_error": 11.962416549554645,
+    "published842": {
+      "n": 842,
+      "d": 12,
+      "max_cos": 0.5009010186022465,
+      "sum_squared_violation": 0.007805746737110496,
+      "violating_pairs": 10937,
+      "pairs_above_05001": 10731,
+      "min_squared_distance": 0.9981979627955071,
+      "gram_reconstruction_error": 6.54087894957911e-13
+    },
+    "published844": {
+      "n": 844,
+      "d": 12,
+      "max_cos": 0.504404266465414,
+      "sum_squared_violation": 0.20247236813124286,
+      "violating_pairs": 12810,
+      "pairs_above_05001": 12738,
+      "min_squared_distance": 0.9911914670691719,
+      "gram_reconstruction_error": 6.86221357515393e-11
+    }
+  }
+}

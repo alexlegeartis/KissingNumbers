@@ -1,0 +1,28 @@
+{
+  "dimension": 21,
+  "count": 31561,
+  "seconds": 240.16635386832058,
+  "evaluations": 2594,
+  "max_variable_dot": 0.5031234170413986,
+  "max_dot": 0.5031234170413986,
+  "stages": [
+    {
+      "power": 2,
+      "seconds": 80.05172707792372,
+      "max_dot": 0.504829328816205
+    },
+    {
+      "power": 6,
+      "seconds": 80.09758864343166,
+      "max_dot": 0.5031234170413986
+    },
+    {
+      "power": 2,
+      "seconds": 80.0114754345268,
+      "max_dot": 0.5031234170413986
+    }
+  ],
+  "gradient_error": 8.452002986381046e-11,
+  "certified": false,
+  "scope": "Numerical exploration only; an exact subsequent check is required."
+}

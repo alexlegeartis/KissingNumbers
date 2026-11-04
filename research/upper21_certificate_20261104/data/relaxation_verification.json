@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "relaxation_feasible_cardinality": 971,
+  "actual_configuration": false,
+  "exact_psd_blocks": 8,
+  "characters_covered": 1024,
+  "cliques_checked": 21504,
+  "four_cliques_checked": 430080,
+  "minimum_ldl_pivot_approx": 0.0010243293067903317,
+  "arithmetic": "Python Fraction; positive rational LDL pivots",
+  "seconds": 3.515557873994112
+}

@@ -1,0 +1,14 @@
+{
+  "vertices": 126976,
+  "half_vertices": 63488,
+  "fixed_points": 4322,
+  "seed_size": 1408,
+  "seed_total": 5730,
+  "candidate_equator_max_scaled_dot": 144,
+  "seed_max_scaled_dot": 144,
+  "types_per_half": {
+    "six": 28672,
+    "dual": 32768,
+    "flat": 2048
+  }
+}

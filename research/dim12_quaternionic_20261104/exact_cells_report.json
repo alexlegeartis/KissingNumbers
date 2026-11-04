@@ -1,0 +1,64 @@
+{
+  "candidate_cells": 1296,
+  "compatible_pairs": 49248,
+  "exact_scalar_arithmetic": "nonnegative (a+b sqrt(2))/8, integer comparison",
+  "adjacency_sha256": "814ef0c9ec3f5963955f48bbc4b8339322ff182e7fa2d523d354adfdd506ddd5",
+  "exhaustive_seven_clique_search": true,
+  "seven_clique_exists": false,
+  "search_nodes": 81643,
+  "six_clique_witness": [
+    0,
+    446,
+    172,
+    545,
+    344,
+    647
+  ],
+  "six_cells": [
+    [
+      0,
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      3,
+      3,
+      2
+    ],
+    [
+      0,
+      4,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      4,
+      4,
+      1
+    ],
+    [
+      0,
+      5,
+      2,
+      2,
+      0
+    ],
+    [
+      1,
+      2,
+      5,
+      5,
+      3
+    ]
+  ],
+  "conclusion": "This precise union-of-whole-cells ansatz has maximum 840 points including 72 axes.",
+  "scope": "Fixed six frames; xor affine lifts; independent component signs; fixed weight permutations; all 72 axial points.",
+  "elapsed_seconds": 3.660112537443638
+}

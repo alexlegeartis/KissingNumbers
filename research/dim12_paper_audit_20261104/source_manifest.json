@@ -1,0 +1,16 @@
+{
+  "pool61.py": "dbf32f65a7fb9cca94fa5efed9c5ad17ba020dde9acb97ae3b3c03b2981bbe6f",
+  "check.py": "5040a5e45ae74aabba12857f46d28be067b7552b55795b00e0b004bd1714e39f",
+  "audit.py": "b7ec67484c7f76742cc76b082f087397e9946b85a5d111279d668f6e1de5874c",
+  "placements.py": "c6af492650056e38d83ca82085d0d16ed924afb10f1c5144902ef9e3f7d805f3",
+  "couplings.py": "3a3018a3f5e2810310dd94803c833c12ff6b267b0020315e30205edbc06073ee",
+  "strict48.py": "bc1ff499a95cea7d0874c55d94d346149a7657a90711a4bd3cfe58f30cb30b64",
+  "riesz_search.py": "f5be36247f682f5622883105b7f12c5ce4be0fbaac12ebe7e680a4dee0f3d15e",
+  "alternative_bridges.py": "e35cf64e93a2e692c76e167e66d71fe8c23b88a2b30d096cdaf7db66319f6834",
+  "cube49.py": "fc53b33d1bd91f0e370a69e2f3df96d98042bde9a6b1fbdff74f52b80ce411de",
+  "decimal841.py": "ec107a8fb29c39bb196ed5778ba1631a0e32c2f759e16d35fcbd85e6a033b5b8",
+  "fetch_inputs.py": "4e362a876e469b626e2dd74b1403fcc2c416a00083973d4bb5ed31a8c256266b",
+  "summarize.py": "53c5b9191450f74e161a587a865d6bb788129441f1db4ec2a72ef98a29bf4a99",
+  "bridge_search.py": "c3371a4da636e5a8acf43ab987abac989b9ec5dc2a01b6838bfa35633ef3b4c2",
+  "archive_exact.py": "a2058475dc1862e1ab1473814bfdb7dee3cc69abdf21ce62fc7501f85bee9550"
+}

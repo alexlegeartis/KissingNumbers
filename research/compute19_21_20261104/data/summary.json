@@ -1,0 +1,257 @@
+{
+  "date": "2026-11-04",
+  "outcome": "No improved lower bound found.",
+  "pending_runs": [],
+  "best_verified_lower_bounds": {
+    "19": 12460,
+    "21": 31560
+  },
+  "discrete_replacement_attempts": 83326819,
+  "gpu_multistarts": 64,
+  "numerical_candidate_checks": [
+    {
+      "file": "focused19_candidate.npy",
+      "dimension": 19,
+      "count": 12461,
+      "max_dot": 0.5493078150271717,
+      "norm_error": 5.551115123125783e-16,
+      "violating_pairs": 51137,
+      "valid_improvement": false
+    },
+    {
+      "file": "focused21_candidate.npy",
+      "dimension": 21,
+      "count": 31561,
+      "max_dot": 0.5048713551252836,
+      "norm_error": 6.661338147750939e-16,
+      "violating_pairs": 37621,
+      "valid_improvement": false
+    },
+    {
+      "file": "polish21_candidate.npy",
+      "dimension": 21,
+      "count": 31561,
+      "max_dot": 0.5031234170413986,
+      "norm_error": 4.440892098500626e-16,
+      "violating_pairs": 45352,
+      "valid_improvement": false
+    }
+  ],
+  "line_label_checks": [
+    {
+      "file": "cp21_r0_s21_labels.npy",
+      "total_if_replicated": 31560
+    }
+  ],
+  "baseline19": {
+    "dimension": 19,
+    "baseline": 12460,
+    "base": 10668,
+    "axis": 768,
+    "diagonal": 1024,
+    "exact_field": "Z[sqrt(6)]",
+    "checked_matrix_entries": 135348112,
+    "violations": 0,
+    "rational_contacts_counted_with_symmetry": 10568544,
+    "source": "https://hexagonmath.org/pdf/2610.00248v1"
+  },
+  "baseline21": {
+    "count": 31560,
+    "unordered_pairs": 498001020,
+    "violations": 0,
+    "method": "All small integer dot products computed exactly using float64 BLAS, then integer squared comparisons.",
+    "duplicate_control": "PASS"
+  },
+  "completed_runs": [
+    {
+      "file": "cp19_polar19_exact_result.json",
+      "status": "INFEASIBLE",
+      "seconds": 2.6531988120000003,
+      "total_seconds": 3.1325823441147804,
+      "best_count": 12460,
+      "branches": 0,
+      "conflicts": 0,
+      "exact_field_arithmetic": true,
+      "scope": "Sampled rational polar directions and the published auxiliary layer, with the complete base fixed."
+    },
+    {
+      "file": "cp19_polar_result.json",
+      "status": "INFEASIBLE",
+      "seconds": 2.751769704,
+      "total_seconds": 3.269491072744131,
+      "best_count": 12460,
+      "branches": 0,
+      "conflicts": 0,
+      "scope": "Conservative graph on sampled rational polar directions and the published auxiliary layer, with the complete base fixed."
+    },
+    {
+      "file": "cp21_r0_s21_result.json",
+      "run": "cp21_r0_s21",
+      "status": "FEASIBLE",
+      "rank": 0,
+      "workers": 24,
+      "seconds": 600.4557825420001,
+      "total_seconds": 601.2158559616655,
+      "best_component_size": 960,
+      "hole_lower_bound": 49,
+      "branches": 0,
+      "conflicts": 0,
+      "target": "more than 960 points in one component; replicate in all four for a 21D improvement"
+    },
+    {
+      "file": "cp21_r2_s2122_gain_result.json",
+      "run": "cp21_r2_s2122_gain",
+      "status": "INFEASIBLE",
+      "rank": 2,
+      "workers": 8,
+      "seconds": 252.23791428,
+      "total_seconds": 252.42670634947717,
+      "best_component_size": null,
+      "hole_lower_bound": 0,
+      "branches": 1093707,
+      "conflicts": 12329,
+      "target": "more than 960 points in one component; replicate in all four for a 21D improvement"
+    },
+    {
+      "file": "cp21_r3_s2123_gain_result.json",
+      "run": "cp21_r3_s2123_gain",
+      "status": "INFEASIBLE",
+      "rank": 3,
+      "workers": 8,
+      "seconds": 0.062853878,
+      "total_seconds": 0.1515616662800312,
+      "best_component_size": null,
+      "hole_lower_bound": 0,
+      "branches": 1,
+      "conflicts": 0,
+      "target": "more than 960 points in one component; replicate in all four for a 21D improvement"
+    },
+    {
+      "file": "focused19_result.json",
+      "dimension": 19,
+      "count": 12461,
+      "fixed_points": 10668,
+      "restarts": 41,
+      "evaluations": 4132,
+      "seconds": 180.0553486570716,
+      "best_energy": 0.015552498671584722,
+      "max_variable_dot": 0.5493078150271717,
+      "max_dot": 0.5493078150271717,
+      "gradient_error": 4.4846240436491325e-11,
+      "certified": false,
+      "scope": "Numerical candidates only; exact checking is required for any new bound."
+    },
+    {
+      "file": "focused21_result.json",
+      "dimension": 21,
+      "count": 31561,
+      "fixed_points": 27720,
+      "restarts": 23,
+      "evaluations": 2486,
+      "seconds": 180.00750401522964,
+      "best_energy": 0.0037739812578337696,
+      "max_variable_dot": 0.5048713551252836,
+      "max_dot": 0.5048713551252836,
+      "gradient_error": 4.4846240436491325e-11,
+      "certified": false,
+      "scope": "Numerical candidates only; exact checking is required for any new bound."
+    },
+    {
+      "file": "holes19_result.json",
+      "dimension": 19,
+      "directions": 100,
+      "best_max_dot": 0.5303300858899113,
+      "seconds": 31.352737954817712,
+      "scope": "Numerical search for insertion directions, not a maximality proof."
+    },
+    {
+      "file": "holes21_result.json",
+      "dimension": 21,
+      "directions": 100,
+      "best_max_dot": 0.5657546564090723,
+      "seconds": 103.35708934813738,
+      "scope": "Numerical search for insertion directions, not a maximality proof."
+    },
+    {
+      "file": "holes21_structured_result.json",
+      "dimension": 21,
+      "directions": 80,
+      "best_max_dot": 0.5867741315329823,
+      "seconds": 28.08966176956892,
+      "scope": "Numerical search for insertion directions, not a maximality proof."
+    },
+    {
+      "file": "lns19_polar_result.json",
+      "dimension": 19,
+      "baseline": 12460,
+      "best_count": 12460,
+      "iterations": 9526156,
+      "seconds": 180.001,
+      "workers": 24,
+      "seed": 190019
+    },
+    {
+      "file": "lns21_augment_result.json",
+      "dimension": 21,
+      "baseline": 31560,
+      "best_count": 31560,
+      "iterations": 7640717,
+      "seconds": 300.002,
+      "workers": 16,
+      "seed": 219999
+    },
+    {
+      "file": "lns21_full_result.json",
+      "dimension": 21,
+      "baseline": 31560,
+      "best_count": 31560,
+      "iterations": 66159946,
+      "seconds": 600.001,
+      "workers": 24,
+      "seed": 210001
+    },
+    {
+      "file": "polar19_cover_result.json",
+      "success": false,
+      "trials": 400,
+      "seconds": 10.522154061123729,
+      "vertices": 5360,
+      "cliques": null
+    },
+    {
+      "file": "polish21_result.json",
+      "dimension": 21,
+      "count": 31561,
+      "seconds": 240.16635386832058,
+      "evaluations": 2594,
+      "max_variable_dot": 0.5031234170413986,
+      "max_dot": 0.5031234170413986,
+      "stages": [
+        {
+          "power": 2,
+          "seconds": 80.05172707792372,
+          "max_dot": 0.504829328816205
+        },
+        {
+          "power": 6,
+          "seconds": 80.09758864343166,
+          "max_dot": 0.5031234170413986
+        },
+        {
+          "power": 2,
+          "seconds": 80.0114754345268,
+          "max_dot": 0.5031234170413986
+        }
+      ],
+      "gradient_error": 8.452002986381046e-11,
+      "certified": false,
+      "scope": "Numerical exploration only; an exact subsequent check is required."
+    }
+  ],
+  "limitations": [
+    "No unrestricted upper bound is claimed.",
+    "Symmetry-restricted infeasibility says nothing about asymmetric labelings.",
+    "The 19D finite pool samples rational polar vertices; it is not the full continuous admissible region.",
+    "All numerical candidates remain invalid and are not lower-bound certificates."
+  ]
+}

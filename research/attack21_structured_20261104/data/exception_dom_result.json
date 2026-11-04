@@ -1,0 +1,20 @@
+{
+  "run": "exception_dom",
+  "status": "UNKNOWN",
+  "cap": 63,
+  "independent": false,
+  "radius": null,
+  "initial": 0,
+  "nonlinear": false,
+  "hint": true,
+  "optimize": false,
+  "workers": 16,
+  "trade_cuts": true,
+  "fixed_half": 60,
+  "half_cuts": true,
+  "seconds": 300.061576623,
+  "total_seconds": 300.2929012719542,
+  "branches": 2211576,
+  "conflicts": 7963,
+  "response_stats": "CpSolverResponse summary:\nstatus: UNKNOWN\nobjective: 0\nbest_bound: 0\nintegers: 1090\nbooleans: 993\nconflicts: 7963\nbranches: 2211576\npropagations: 248246\ninteger_propagations: 18923630\nrestarts: 0\nlp_iterations: 1792774\nwalltime: 300.062\nusertime: 300.062\ndeterministic_time: 4656.94\ngap_integral: 0\n"
+}

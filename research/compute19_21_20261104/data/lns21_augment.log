@@ -1,0 +1,10 @@
+{"event":"progress","dimension":21,"best_count":31560,"iterations":712212,"seconds":30.0002}
+{"event":"progress","dimension":21,"best_count":31560,"iterations":1395974,"seconds":60.0008}
+{"event":"progress","dimension":21,"best_count":31560,"iterations":2146993,"seconds":90.0015}
+{"event":"progress","dimension":21,"best_count":31560,"iterations":2898535,"seconds":120.002}
+{"event":"progress","dimension":21,"best_count":31560,"iterations":3665206,"seconds":150.003}
+{"event":"progress","dimension":21,"best_count":31560,"iterations":4450117,"seconds":180.003}
+{"event":"progress","dimension":21,"best_count":31560,"iterations":5251239,"seconds":210.004}
+{"event":"progress","dimension":21,"best_count":31560,"iterations":6046651,"seconds":240.004}
+{"event":"progress","dimension":21,"best_count":31560,"iterations":6843520,"seconds":270.004}
+{"event":"complete","best_count":31560,"iterations":7640717,"seconds":300.002}

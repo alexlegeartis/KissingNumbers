@@ -1,0 +1,6 @@
+{
+  "trials": 192,
+  "workers": 32,
+  "steps": 2000,
+  "source_sha256": "68db4b9c21af4c20fe449358f0a96a8e7a9385747fc1da6114b6bc68660ddde2"
+}

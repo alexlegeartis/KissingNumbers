@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "dimension": 21,
+  "count": 31560,
+  "base": 27720,
+  "auxiliary": 3840,
+  "unordered_pairs": 498001020,
+  "violations": 0,
+  "discrete_negative_control": "PASS",
+  "geometric_duplicate_control": "PASS",
+  "arithmetic": "exact small integer dot products via float64 BLAS; integer squared comparisons",
+  "seconds": 9.148748457431793,
+  "coset_representatives": [
+    0,
+    1,
+    1024,
+    1025
+  ],
+  "novelty_claim": false
+}

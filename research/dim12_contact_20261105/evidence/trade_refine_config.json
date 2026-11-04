@@ -1,0 +1,5 @@
+{
+  "trials": 128,
+  "workers": 16,
+  "source_sha256": "6125c7a3367c13fde56f27a4992083d2bf2ad496d203709ed217a5f7ba076d64"
+}

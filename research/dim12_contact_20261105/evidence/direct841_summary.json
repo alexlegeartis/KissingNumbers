@@ -1,0 +1,13 @@
+{
+  "name": "direct841",
+  "trials": 128,
+  "groups": [
+    {
+      "n": 841,
+      "trials": 128,
+      "best_max_cos": 0.5410479629474313,
+      "best_index": 89,
+      "exact_successes": 0
+    }
+  ]
+}

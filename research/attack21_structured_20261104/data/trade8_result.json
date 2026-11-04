@@ -1,0 +1,16 @@
+{
+  "run": "trade8",
+  "status": "INFEASIBLE",
+  "cap": 63,
+  "independent": true,
+  "radius": 8,
+  "initial": 0,
+  "hint": true,
+  "optimize": false,
+  "workers": 16,
+  "seconds": 25.660868239000003,
+  "total_seconds": 25.703670077957213,
+  "branches": 2622,
+  "conflicts": 11,
+  "response_stats": "CpSolverResponse summary:\nstatus: INFEASIBLE\nobjective: NA\nbest_bound: NA\nintegers: 1107\nbooleans: 1015\nconflicts: 11\nbranches: 2622\npropagations: 37887\ninteger_propagations: 76535\nrestarts: 0\nlp_iterations: 21684\nwalltime: 25.6609\nusertime: 25.6609\ndeterministic_time: 473.127\ngap_integral: 0\n"
+}

@@ -1,0 +1,18 @@
+{
+  "run": "moments_k63_dom_sdp",
+  "status": "optimal_inaccurate",
+  "solver_seconds": 1.248671676,
+  "seconds": 1.834902142174542,
+  "holes": 63,
+  "independent": false,
+  "variables": 42,
+  "equalities": 10,
+  "inequalities": 974,
+  "numerical_only": true,
+  "equality_error": 8.080281055367067e-09,
+  "minimum_linear_slack": -6.093903159865022e-12,
+  "minimum_psd_eigenvalues": [
+    1.0590243974451016e-09,
+    0.0
+  ]
+}

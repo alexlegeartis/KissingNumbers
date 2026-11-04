@@ -1,0 +1,4 @@
+data/Gram*.txt
+data/*.npy
+runs/
+__pycache__/

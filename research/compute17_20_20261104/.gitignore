@@ -1,0 +1,10 @@
+/build_graph
+/search
+/clique_cover
+/data/*.bin
+/data/*.graph
+/data/*.cliques
+/data/*.cliques.tmp
+/data/*.search
+/data/continuous*_candidate.npy
+/data/gpu*_candidate.npy

@@ -1,0 +1,13 @@
+{
+  "name": "projected841",
+  "trials": 64,
+  "groups": [
+    {
+      "n": 841,
+      "trials": 64,
+      "best_max_cos": 0.5089478000238619,
+      "best_index": 11,
+      "exact_successes": 0
+    }
+  ]
+}

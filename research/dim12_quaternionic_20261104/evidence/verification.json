@@ -1,0 +1,182 @@
+[
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/data/record841.npy",
+    "sha256": "a4a075680b57a3333c65c87001d64f25bc6647565495a3b56d1b0e5f0106291a",
+    "n": 841,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": true,
+    "violating_pairs": 0,
+    "first_violating_pair_0based": null,
+    "max_cos_extended_precision": "0.49999993775143229186",
+    "integer_scale_power_of_two": 71,
+    "elapsed_seconds": 0.636713114567101
+  },
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/evidence/candidate_00.npy",
+    "sha256": "d07b0d7d1e2c6ddd1e45caa2c6a1b58d2e7994991a8de4b42189c1e653ca8490",
+    "n": 842,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 9681,
+    "first_violating_pair_0based": [
+      0,
+      8
+    ],
+    "max_cos_extended_precision": "0.5068035031225416689",
+    "integer_scale_power_of_two": 73,
+    "elapsed_seconds": 0.6140139382332563,
+    "reused_exact_check_for_same_sha256": true
+  },
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/evidence/candidate_01.npy",
+    "sha256": "acbdb8d8e08caaa1a4993c0adfa7030602ea873b2a10fec0128937c8cabfed77",
+    "n": 842,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 10300,
+    "first_violating_pair_0based": [
+      4,
+      7
+    ],
+    "max_cos_extended_precision": "0.50098171201636005685",
+    "integer_scale_power_of_two": 69,
+    "elapsed_seconds": 0.6307083768770099,
+    "reused_exact_check_for_same_sha256": true
+  },
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/evidence/candidate_02.npy",
+    "sha256": "f62092a385dda40e350e79f1f07c75a332df52e174fd0e546a6534664a089fa1",
+    "n": 842,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 10580,
+    "first_violating_pair_0based": [
+      0,
+      8
+    ],
+    "max_cos_extended_precision": "0.50134001972552103514",
+    "integer_scale_power_of_two": 74,
+    "elapsed_seconds": 0.6122879898175597,
+    "reused_exact_check_for_same_sha256": true
+  },
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/evidence/candidate_03.npy",
+    "sha256": "c03594e292434285ec88c5f11732ee57303d173267153c5428a8d4839b10a10a",
+    "n": 842,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 10826,
+    "first_violating_pair_0based": [
+      2,
+      16
+    ],
+    "max_cos_extended_precision": "0.5017198169732090683",
+    "integer_scale_power_of_two": 72,
+    "elapsed_seconds": 0.6049369536340237,
+    "reused_exact_check_for_same_sha256": true
+  },
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/evidence/candidate_04.npy",
+    "sha256": "f8c02b82a2f822b605bf25a8dee5f8508a7dc7bca62a1e8b4e23b47ca5b42b70",
+    "n": 842,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 10937,
+    "first_violating_pair_0based": [
+      4,
+      7
+    ],
+    "max_cos_extended_precision": "0.5009010186022465089",
+    "integer_scale_power_of_two": 69,
+    "elapsed_seconds": 0.6168973548337817,
+    "reused_exact_check_for_same_sha256": true
+  },
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/evidence/candidate_05.npy",
+    "sha256": "dea70477c2e99a866f46721efdd5c46566f4782804fa4a70a8ef4eac1c826b2d",
+    "n": 842,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 10387,
+    "first_violating_pair_0based": [
+      1,
+      4
+    ],
+    "max_cos_extended_precision": "0.5011101856213900097",
+    "integer_scale_power_of_two": 72,
+    "elapsed_seconds": 0.6235233331099153,
+    "reused_exact_check_for_same_sha256": true
+  },
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/evidence/candidate_06.npy",
+    "sha256": "4cfca146a5784244a2d853c598f3b116e6a2b1b02c4b6adabcb86b2f083d960b",
+    "n": 842,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 10521,
+    "first_violating_pair_0based": [
+      1,
+      4
+    ],
+    "max_cos_extended_precision": "0.5012297518147120696",
+    "integer_scale_power_of_two": 73,
+    "elapsed_seconds": 0.612871260382235,
+    "reused_exact_check_for_same_sha256": true
+  },
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/evidence/candidate_07.npy",
+    "sha256": "484023253cf7e71c5d8b51164c48e2740e5b1275b115b351379072a467822c1d",
+    "n": 842,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 10327,
+    "first_violating_pair_0based": [
+      4,
+      7
+    ],
+    "max_cos_extended_precision": "0.50094029066955743736",
+    "integer_scale_power_of_two": 69,
+    "elapsed_seconds": 0.6031730268150568
+  },
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/evidence/candidate_08.npy",
+    "sha256": "2dc40d4f807f30b1464e9803396334dc0b244b0a678917fe55b0a6523a26adb6",
+    "n": 842,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 10297,
+    "first_violating_pair_0based": [
+      4,
+      7
+    ],
+    "max_cos_extended_precision": "0.50094167532873590796",
+    "integer_scale_power_of_two": 68,
+    "elapsed_seconds": 0.5898355394601822
+  },
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/evidence/candidate_09.npy",
+    "sha256": "753c14c9af8d86b9ac5dacd10c62d99c88f7f35eff65d2acf4195be8c28a75e7",
+    "n": 842,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 10311,
+    "first_violating_pair_0based": [
+      4,
+      7
+    ],
+    "max_cos_extended_precision": "0.500947169372427939",
+    "integer_scale_power_of_two": 72,
+    "elapsed_seconds": 0.5720594078302383
+  }
+]

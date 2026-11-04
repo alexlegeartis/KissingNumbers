@@ -1,0 +1,12 @@
+{
+  "run": "coupled_target971",
+  "target": 971,
+  "status": "optimal_inaccurate",
+  "seconds": 4.7190171126276255,
+  "variables": 90,
+  "equalities": 24,
+  "inequalities": 1420,
+  "numerical_only": true,
+  "equality_error": 2.0831249503139304e-09,
+  "minimum_linear_slack": -1.2590817277668975e-11
+}

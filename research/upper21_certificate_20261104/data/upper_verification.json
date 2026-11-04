@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "excluded_size": 972,
+  "upper_component": 971,
+  "family_total_upper": 31604,
+  "moment_orbits": 48,
+  "inequalities": 42,
+  "equalities": 6,
+  "exact_contradiction": "10710060036218601246681000926260048316204797557775338473473059284269/18601062554535530604433104378115630932512658256839047126543708641243680",
+  "corruption_control": "PASS",
+  "geometry_cases": 451584,
+  "seconds": 0.16019062045961618,
+  "scope": "Full line-profile family; no periodicity or independent-hole restriction"
+}

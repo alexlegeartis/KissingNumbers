@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "n": 841,
+  "dimension": 12,
+  "pairs_checked": 353220,
+  "interpretation": "Exact printed decimal rays, normalized mathematically",
+  "certified_cosine_upper_numerator": 8388607,
+  "certified_cosine_upper_denominator": 16777216,
+  "margin_below_half": "2^-24",
+  "source_sha256": "995264fe8be616cc546f04ef542dbf4ef6effe9ba5dfa4ceec1aa7e069f476a9",
+  "elapsed_seconds": 0.6071137106046081
+}

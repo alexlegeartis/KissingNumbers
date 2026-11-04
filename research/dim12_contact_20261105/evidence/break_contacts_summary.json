@@ -1,0 +1,13 @@
+{
+  "name": "break_contacts",
+  "trials": 144,
+  "groups": [
+    {
+      "n": 842,
+      "trials": 144,
+      "best_max_cos": 0.500941105143051,
+      "best_index": 97,
+      "exact_successes": 0
+    }
+  ]
+}

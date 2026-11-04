@@ -1,0 +1,9 @@
+{
+  "pool": 700,
+  "conflicting_pairs": 19200,
+  "status": 2,
+  "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+  "elapsed_seconds": 0.40500857681035995,
+  "found61": false,
+  "exact_known60_positive_control": true
+}

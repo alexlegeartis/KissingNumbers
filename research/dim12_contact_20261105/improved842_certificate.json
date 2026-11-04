@@ -1,0 +1,13 @@
+{
+  "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_contact_20261105/evidence/improved842.npy",
+  "sha256": "99a72ab1c41692092e1fe090de60a2ae194da030426e03cb07f5533e590b750a",
+  "n": 842,
+  "dimension": 12,
+  "threshold_numerator": 500900475,
+  "threshold_denominator": 1000000000,
+  "passed": true,
+  "violating_pairs": 0,
+  "kissing_violations": 10452,
+  "pairs": 354061,
+  "method": "exact integers on mathematically normalized binary64 rays"
+}

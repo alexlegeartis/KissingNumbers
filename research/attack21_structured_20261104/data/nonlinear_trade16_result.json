@@ -1,0 +1,17 @@
+{
+  "run": "nonlinear_trade16",
+  "status": "UNKNOWN",
+  "cap": 63,
+  "independent": true,
+  "radius": 16,
+  "initial": 0,
+  "nonlinear": true,
+  "hint": true,
+  "optimize": false,
+  "workers": 16,
+  "seconds": 240.17319304100002,
+  "total_seconds": 240.2560058645904,
+  "branches": 4608839,
+  "conflicts": 1264,
+  "response_stats": "CpSolverResponse summary:\nstatus: UNKNOWN\nobjective: 0\nbest_bound: 0\nintegers: 1109\nbooleans: 1013\nconflicts: 1264\nbranches: 4608839\npropagations: 14775761\ninteger_propagations: 40797048\nrestarts: 95\nlp_iterations: 182233\nwalltime: 240.173\nusertime: 240.173\ndeterministic_time: 4897.84\ngap_integral: 0\n"
+}

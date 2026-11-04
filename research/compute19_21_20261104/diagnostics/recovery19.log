@@ -1,0 +1,6 @@
+{"event":"improvement","dimension":19,"count":11374,"worker":0,"seconds":0.000764609}
+{"event":"improvement","dimension":19,"count":11428,"worker":4,"seconds":0.00111141}
+{"event":"improvement","dimension":19,"count":11769,"worker":0,"seconds":0.00128982}
+{"event":"improvement","dimension":19,"count":11777,"worker":4,"seconds":0.00165928}
+{"event":"improvement","dimension":19,"count":12460,"worker":1,"seconds":0.00187156}
+{"event":"complete","best_count":12460,"iterations":16,"seconds":0.00250593}

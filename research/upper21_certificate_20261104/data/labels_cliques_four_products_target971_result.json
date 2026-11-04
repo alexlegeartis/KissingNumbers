@@ -1,0 +1,15 @@
+{
+  "run": "labels_cliques_four_products_target971",
+  "status": "optimal",
+  "objective": 0.0,
+  "target": 971,
+  "variables": 48,
+  "psd_blocks": 8,
+  "block_size": 21,
+  "clique_rows": 60,
+  "seconds": 0.5505026243627071,
+  "solver_seconds": 0.491973793,
+  "numerical_only": true,
+  "maximum_clique_sum": 0.9999999999999875,
+  "minimum_psd_eigenvalue": 5.511685007515118e-05
+}

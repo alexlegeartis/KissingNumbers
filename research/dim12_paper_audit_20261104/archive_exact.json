@@ -1,0 +1,3050 @@
+{
+  "arrays": 500,
+  "exactly_valid_with_signed_axes": 7,
+  "valid": [
+    {
+      "name": "saved_48_systems/sol_r0008_s00009000_b002968_cert0.4999999702_dot0.4999999702_coord0.4999981225_pair0.9999881983.npy",
+      "passed": true,
+      "coordinate_violations": 0,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00009000_b000139_cert0.4999997616_dot0.4999997616_coord0.4999983311_pair0.9999914169.npy",
+      "passed": true,
+      "coordinate_violations": 0,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00010000_b000139_cert0.4999986887_dot0.4999967217_coord0.4999986887_pair0.9999689460.npy",
+      "passed": true,
+      "coordinate_violations": 0,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00010500_b000139_cert0.4999994040_dot0.4999927878_coord0.4999994040_pair0.9999595881.npy",
+      "passed": true,
+      "coordinate_violations": 0,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00010000_b003846_cert0.4999975860_dot0.4999964833_coord0.4999975860_pair0.9999901652.npy",
+      "passed": true,
+      "coordinate_violations": 0,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00007500_b000934_cert0.4999998808_dot0.4999998808_coord0.4999997914_pair0.9999770522.npy",
+      "passed": true,
+      "coordinate_violations": 0,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00008000_b000934_cert0.4999999106_dot0.4999999106_coord0.4999977350_pair0.9999772906.npy",
+      "passed": true,
+      "coordinate_violations": 0,
+      "pair_violations": 0
+    }
+  ],
+  "results": [
+    {
+      "name": "saved_48_systems/sol_r0000_s00006500_b003479_cert0.5000029802_dot0.5000029802_coord0.5000029206_pair0.9999923706.npy",
+      "passed": false,
+      "coordinate_violations": 4,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00007000_b003479_cert0.5000014901_dot0.4999980927_coord0.5000014901_pair0.9999740124.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00007500_b003479_cert0.5000039339_dot0.5000039339_coord0.5000030398_pair0.9999880791.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00008000_b003479_cert0.5000244975_dot0.4999959767_coord0.5000244975_pair0.9999659061.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00008500_b003479_cert0.5000099540_dot0.4999984205_coord0.5000099540_pair0.9999284744.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00009000_b000130_cert0.5000618696_dot0.5000618696_coord0.5000534058_pair0.9999921918.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00009000_b003479_cert0.5000094771_dot0.5000028610_coord0.5000094771_pair0.9999760389.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00009000_b003958_cert0.5000719428_dot0.5000719428_coord0.5000253320_pair0.9999804497.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 18
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00009500_b003180_cert0.5000615120_dot0.5000330806_coord0.5000615120_pair0.9999900460.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00009500_b003479_cert0.5000032187_dot0.5000032187_coord0.5000006557_pair0.9999222755.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00009500_b003958_cert0.5000594258_dot0.5000594258_coord0.5000423789_pair0.9999063015.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00010000_b000034_cert0.5000075102_dot0.5000075102_coord0.5000066161_pair0.9999890327.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00010000_b000130_cert0.5000596046_dot0.5000596046_coord0.5000405908_pair0.9999330044.npy",
+      "passed": false,
+      "coordinate_violations": 12,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00010000_b002052_cert0.5000453591_dot0.5000453591_coord0.5000126362_pair0.9999992847.npy",
+      "passed": false,
+      "coordinate_violations": 9,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00010000_b003180_cert0.5000619888_dot0.5000602603_coord0.5000619888_pair1.0000298023.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00010000_b003479_cert0.5000033975_dot0.5000033975_coord0.5000023842_pair0.9999088049.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00010500_b000034_cert0.5000168681_dot0.5000168681_coord0.5000097752_pair0.9999657273.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00010500_b000130_cert0.5000792742_dot0.5000792742_coord0.5000756979_pair0.9999459982.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00010500_b000281_cert0.5000410676_dot0.5000360012_coord0.5000410676_pair0.9999748468.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 19
+    },
+    {
+      "name": "saved_48_systems/sol_r0000_s00010500_b001934_cert0.5000843406_dot0.5000365973_coord0.5000843406_pair1.0000102520.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 19
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00007500_b000430_cert0.5000018477_dot0.5000017881_coord0.5000018477_pair0.9999924898.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00008000_b000430_cert0.5000071526_dot0.5000008941_coord0.5000071526_pair0.9999852777.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00008500_b000430_cert0.5000069737_dot0.5000069737_coord0.4999993742_pair0.9999731779.npy",
+      "passed": false,
+      "coordinate_violations": 0,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00009000_b000430_cert0.5000323653_dot0.5000323653_coord0.5000028014_pair0.9999995232.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00009000_b003094_cert0.5000532866_dot0.5000532866_coord0.5000337362_pair1.0000029802.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 20
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00009500_b000430_cert0.5000076294_dot0.5000022650_coord0.5000076294_pair0.9999957085.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00009500_b003094_cert0.5000881553_dot0.5000881553_coord0.5000269413_pair0.9999831915.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00010000_b000430_cert0.5000248551_dot0.5000068545_coord0.5000248551_pair0.9999567270.npy",
+      "passed": false,
+      "coordinate_violations": 5,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00010000_b003094_cert0.5000478029_dot0.5000221729_coord0.5000478029_pair0.9999949932.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00010500_b000430_cert0.5000355244_dot0.5000255704_coord0.5000355244_pair0.9999314547.npy",
+      "passed": false,
+      "coordinate_violations": 5,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00010500_b001739_cert0.5000070930_dot0.5000070930_coord0.5000044703_pair0.9999849200.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00010500_b002999_cert0.5000331402_dot0.5000331402_coord0.5000262856_pair0.9999883771.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00011000_b000430_cert0.5000924468_dot0.5000924468_coord0.5000372529_pair0.9998993874.npy",
+      "passed": false,
+      "coordinate_violations": 4,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00011000_b001540_cert0.5000018477_dot0.5000018477_coord0.5000000596_pair0.9999639988.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00011000_b001739_cert0.5000207424_dot0.5000000596_coord0.5000207424_pair0.9999793768.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00011000_b002314_cert0.5000595450_dot0.5000595450_coord0.5000331998_pair0.9999932051.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 20
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00011000_b002999_cert0.5000238419_dot0.5000130534_coord0.5000238419_pair0.9999789000.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00011000_b003094_cert0.5000543594_dot0.5000512004_coord0.5000543594_pair0.9999611378.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00011500_b000430_cert0.5000265241_dot0.5000129342_coord0.5000265241_pair0.9998437166.npy",
+      "passed": false,
+      "coordinate_violations": 5,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0001_s00011500_b001540_cert0.5000132918_dot0.5000132918_coord0.4999963045_pair0.9999743700.npy",
+      "passed": false,
+      "coordinate_violations": 0,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00006500_b001306_cert0.5000461340_dot0.5000461340_coord0.5000154376_pair0.9999874830.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00007000_b001306_cert0.5000311732_dot0.5000311732_coord0.5000311136_pair0.9999819994.npy",
+      "passed": false,
+      "coordinate_violations": 12,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00007500_b001306_cert0.5000439286_dot0.5000439286_coord0.5000272989_pair0.9999620318.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00008000_b001306_cert0.5000888705_dot0.5000888705_coord0.5000326633_pair0.9999907017.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00008500_b001306_cert0.5000347495_dot0.5000347495_coord0.5000336766_pair0.9999674559.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00009000_b000807_cert0.5000724792_dot0.5000656247_coord0.5000724792_pair0.9999662042.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 23
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00009000_b001306_cert0.5000925064_dot0.5000820160_coord0.5000925064_pair0.9999502897.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00009500_b000807_cert0.5000461340_dot0.5000392199_coord0.5000461340_pair0.9999970198.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00009500_b001751_cert0.5000441074_dot0.5000441074_coord0.5000298023_pair0.9999933243.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00009500_b002221_cert0.5000703335_dot0.5000321269_coord0.5000703335_pair0.9999443293.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00010000_b000807_cert0.5000660419_dot0.5000660419_coord0.5000383854_pair0.9999798536.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00010000_b001141_cert0.5000636578_dot0.5000636578_coord0.5000429153_pair1.0000007153.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00010000_b001306_cert0.5000846982_dot0.5000588894_coord0.5000846982_pair0.9999762177.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00010000_b001751_cert0.5000752807_dot0.5000752807_coord0.5000412464_pair0.9999597073.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00010500_b000807_cert0.5000889301_dot0.5000889301_coord0.5000392199_pair0.9999195337.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00010500_b001141_cert0.5000827909_dot0.5000827909_coord0.5000791550_pair0.9999662638.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00010500_b001751_cert0.5000414848_dot0.5000414848_coord0.5000342131_pair0.9999735355.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00010500_b002221_cert0.5000662208_dot0.5000447631_coord0.5000662208_pair0.9999570847.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00010500_b002398_cert0.5000564456_dot0.5000564456_coord0.5000368953_pair1.0000227690.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 65
+    },
+    {
+      "name": "saved_48_systems/sol_r0002_s00010500_b003769_cert0.5000581145_dot0.5000405312_coord0.5000581145_pair0.9999941587.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00007000_b002625_cert0.5000640750_dot0.5000640750_coord0.5000556111_pair0.9999806285.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 34
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00007500_b001779_cert0.5000660419_dot0.5000510812_coord0.5000660419_pair1.0000025034.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00007500_b002625_cert0.5000907183_dot0.5000388622_coord0.5000907183_pair1.0000019073.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 15
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00007500_b003236_cert0.5000877976_dot0.5000877976_coord0.5000703931_pair0.9999590516.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 19
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00008000_b001779_cert0.5000633597_dot0.5000633597_coord0.5000410676_pair0.9999600649.npy",
+      "passed": false,
+      "coordinate_violations": 12,
+      "pair_violations": 17
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00008000_b002625_cert0.5000886321_dot0.5000346899_coord0.5000886321_pair0.9999850392.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00008000_b003236_cert0.5000739098_dot0.5000626445_coord0.5000739098_pair0.9999930859.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00008000_b003436_cert0.5000978112_dot0.5000978112_coord0.5000629425_pair0.9999918938.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00008500_b003436_cert0.5000606775_dot0.5000606775_coord0.5000568032_pair0.9999929667.npy",
+      "passed": false,
+      "coordinate_violations": 24,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00009000_b001779_cert0.5000528097_dot0.5000489950_coord0.5000528097_pair0.9999675751.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00009000_b003236_cert0.5000907779_dot0.5000460148_coord0.5000907779_pair0.9999669194.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00009500_b000841_cert0.5000557303_dot0.5000557303_coord0.5000519753_pair0.9999822378.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 23
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00009500_b001261_cert0.5000545979_dot0.5000545979_coord0.5000379086_pair0.9999852180.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00009500_b001779_cert0.5000998974_dot0.5000998974_coord0.5000494719_pair0.9999505877.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00009500_b003236_cert0.5000936389_dot0.5000936389_coord0.5000761151_pair0.9998903275.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00010000_b000449_cert0.5000471473_dot0.5000471473_coord0.5000452399_pair0.9999704361.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 18
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00010000_b001261_cert0.5000468493_dot0.5000468493_coord0.5000464916_pair0.9999926090.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 15
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00010000_b001767_cert0.5000492334_dot0.5000492334_coord0.5000446439_pair0.9999630451.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 15
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00010000_b001779_cert0.5000793338_dot0.5000731945_coord0.5000793338_pair0.9999660850.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0003_s00010500_b000449_cert0.5000746846_dot0.5000688434_coord0.5000746846_pair0.9999650717.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 15
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00006000_b000005_cert0.5000284314_dot0.5000235438_coord0.5000284314_pair0.9999994040.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00006500_b000005_cert0.5000566840_dot0.5000566840_coord0.5000216961_pair0.9999691844.npy",
+      "passed": false,
+      "coordinate_violations": 6,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00007000_b000005_cert0.5000647902_dot0.5000647902_coord0.5000545979_pair0.9999573231.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00008000_b000005_cert0.5000814199_dot0.5000476837_coord0.5000814199_pair0.9999526739.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00008500_b000005_cert0.5000388622_dot0.5000357032_coord0.5000388622_pair0.9999235868.npy",
+      "passed": false,
+      "coordinate_violations": 10,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00009000_b000179_cert0.5000755787_dot0.5000755787_coord0.5000570416_pair1.0000033379.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 16
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00009000_b001584_cert0.5000057220_dot0.5000035763_coord0.5000057220_pair0.9999971390.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00009000_b002020_cert0.5000615120_dot0.5000566840_coord0.5000615120_pair0.9999961853.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00009500_b000005_cert0.5000882745_dot0.5000882745_coord0.5000388622_pair0.9999623299.npy",
+      "passed": false,
+      "coordinate_violations": 6,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00009500_b000179_cert0.5000671148_dot0.5000406504_coord0.5000671148_pair0.9999854565.npy",
+      "passed": false,
+      "coordinate_violations": 23,
+      "pair_violations": 16
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00009500_b001584_cert0.5000050664_dot0.5000024438_coord0.5000050664_pair0.9999709129.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00009500_b002020_cert0.5000867248_dot0.5000867248_coord0.5000735521_pair0.9999896288.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00010000_b000005_cert0.5000864863_dot0.5000275373_coord0.5000864863_pair0.9999459982.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00010000_b000707_cert0.5000505447_dot0.5000408292_coord0.5000505447_pair0.9999822378.npy",
+      "passed": false,
+      "coordinate_violations": 12,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00010000_b001584_cert0.5000512600_dot0.5000512600_coord0.4999985993_pair0.9999862313.npy",
+      "passed": false,
+      "coordinate_violations": 0,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00010000_b002020_cert0.5000730157_dot0.5000730157_coord0.5000584126_pair0.9999704361.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00010000_b003486_cert0.5000026226_dot0.5000026226_coord0.5000014901_pair0.9999951124.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00010500_b000707_cert0.5000285506_dot0.5000285506_coord0.5000180006_pair0.9999767542.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00010500_b001584_cert0.5000228882_dot0.5000028610_coord0.5000228882_pair0.9999623299.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0004_s00010500_b001630_cert0.5000670552_dot0.5000499487_coord0.5000670552_pair0.9999748468.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00007000_b001874_cert0.5000574589_dot0.5000381470_coord0.5000574589_pair0.9999749660.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 21
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00007500_b001874_cert0.5000553727_dot0.5000553727_coord0.5000429749_pair0.9999617338.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 15
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00007500_b002902_cert0.5000835657_dot0.5000835657_coord0.5000699162_pair0.9999812841.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 17
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00008000_b001874_cert0.5000853539_dot0.5000853539_coord0.5000573993_pair0.9999639988.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00008000_b002902_cert0.5000703335_dot0.5000703335_coord0.5000502467_pair0.9999729395.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00008500_b000742_cert0.5000491738_dot0.5000491738_coord0.5000258088_pair0.9999831915.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00008500_b001874_cert0.5000653863_dot0.5000653863_coord0.5000488758_pair0.9999196529.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00008500_b002902_cert0.5000805259_dot0.5000626445_coord0.5000805259_pair0.9999861121.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00009000_b000742_cert0.5000635982_dot0.5000635982_coord0.5000471473_pair0.9999599457.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00009000_b001874_cert0.5000767708_dot0.5000767708_coord0.5000689626_pair0.9999573231.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00009500_b002902_cert0.5000984073_dot0.5000984073_coord0.5000666976_pair0.9999790192.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00010000_b000742_cert0.5000845790_dot0.5000330210_coord0.5000845790_pair0.9999814034.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00010000_b001364_cert0.5000672340_dot0.5000672340_coord0.5000236034_pair0.9999661446.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00010000_b001874_cert0.5000764728_dot0.5000764728_coord0.5000745058_pair0.9998845458.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00010500_b000742_cert0.5000696182_dot0.5000696182_coord0.5000534058_pair0.9999441504.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00010500_b000900_cert0.5000219941_dot0.5000219941_coord0.5000137091_pair0.9999872446.npy",
+      "passed": false,
+      "coordinate_violations": 5,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00010500_b001364_cert0.5000778437_dot0.5000778437_coord0.5000298023_pair0.9999600649.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00010500_b001394_cert0.5000140667_dot0.5000140667_coord0.5000045300_pair0.9999967813.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00010500_b001932_cert0.5000312924_dot0.5000254512_coord0.5000312924_pair0.9999763966.npy",
+      "passed": false,
+      "coordinate_violations": 24,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0005_s00011000_b000900_cert0.5000870228_dot0.5000870228_coord0.5000337362_pair0.9999853373.npy",
+      "passed": false,
+      "coordinate_violations": 8,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00006500_b001399_cert0.5000683069_dot0.5000455379_coord0.5000683069_pair0.9999772310.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00007000_b001399_cert0.5000683665_dot0.5000683665_coord0.5000654459_pair0.9999763966.npy",
+      "passed": false,
+      "coordinate_violations": 12,
+      "pair_violations": 18
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00007500_b001399_cert0.5000582933_dot0.5000529885_coord0.5000582933_pair0.9999750853.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00008000_b001012_cert0.5000231862_dot0.5000028014_coord0.5000231862_pair0.9999933243.npy",
+      "passed": false,
+      "coordinate_violations": 6,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00008000_b001399_cert0.5000766516_dot0.5000766516_coord0.5000429153_pair0.9999803305.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00008500_b000607_cert0.5000717044_dot0.5000717044_coord0.5000450611_pair0.9999926090.npy",
+      "passed": false,
+      "coordinate_violations": 12,
+      "pair_violations": 15
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00008500_b001012_cert0.5000128150_dot0.5000128150_coord0.5000067353_pair0.9999736547.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00008500_b001399_cert0.5000847578_dot0.5000671148_coord0.5000847578_pair0.9999829531.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00008500_b003041_cert0.5000233650_dot0.5000233650_coord0.5000227094_pair0.9999665618.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00009000_b000607_cert0.5000451207_dot0.5000290275_coord0.5000451207_pair0.9999894500.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00009000_b001012_cert0.5000005364_dot0.4999948740_coord0.5000005364_pair0.9999710321.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00009000_b003041_cert0.5000793338_dot0.5000793338_coord0.5000299811_pair0.9999516010.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 16
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00009500_b000607_cert0.5000804663_dot0.5000625849_coord0.5000804663_pair0.9999868870.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00009500_b001012_cert0.5000180602_dot0.5000061989_coord0.5000180602_pair0.9999889731.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00009500_b001399_cert0.5000739098_dot0.5000594258_coord0.5000739098_pair0.9999223351.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00009500_b001512_cert0.5000562072_dot0.5000562072_coord0.5000455976_pair0.9999932647.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 25
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00009500_b003041_cert0.5000649691_dot0.5000649691_coord0.5000629425_pair0.9999326468.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00010000_b000607_cert0.5000826120_dot0.5000826120_coord0.5000503659_pair0.9999880791.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00010000_b001012_cert0.5000713468_dot0.5000713468_coord0.5000132322_pair0.9999639988.npy",
+      "passed": false,
+      "coordinate_violations": 4,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0006_s00010000_b001512_cert0.5000666976_dot0.5000582933_coord0.5000666976_pair0.9999943972.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00006000_b001441_cert0.5000401139_dot0.5000401139_coord0.5000116825_pair0.9999918342.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00006500_b001441_cert0.5000187755_dot0.5000041127_coord0.5000187755_pair0.9999914169.npy",
+      "passed": false,
+      "coordinate_violations": 7,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00007000_b001166_cert0.5000410080_dot0.5000410080_coord0.5000260472_pair0.9999628067.npy",
+      "passed": false,
+      "coordinate_violations": 8,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00007000_b001441_cert0.5000422001_dot0.5000066757_coord0.5000422001_pair0.9999761581.npy",
+      "passed": false,
+      "coordinate_violations": 4,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00007500_b001166_cert0.5000764728_dot0.5000618100_coord0.5000764728_pair0.9999955893.npy",
+      "passed": false,
+      "coordinate_violations": 12,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00007500_b001441_cert0.5000555515_dot0.5000555515_coord0.5000132322_pair0.9999736547.npy",
+      "passed": false,
+      "coordinate_violations": 7,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00008000_b001166_cert0.5000458360_dot0.5000132918_coord0.5000458360_pair0.9999611378.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00008000_b001441_cert0.5000500679_dot0.5000500679_coord0.5000423789_pair0.9999480247.npy",
+      "passed": false,
+      "coordinate_violations": 4,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00008500_b001166_cert0.5000784993_dot0.5000784993_coord0.5000431538_pair0.9999837875.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00008500_b001441_cert0.5000751019_dot0.5000393987_coord0.5000751019_pair0.9999549389.npy",
+      "passed": false,
+      "coordinate_violations": 12,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00009000_b001166_cert0.5000929236_dot0.5000642538_coord0.5000929236_pair0.9999423623.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00009000_b001379_cert0.5000949502_dot0.5000949502_coord0.5000377893_pair0.9999833107.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 27
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00009000_b001441_cert0.5000364184_dot0.5000364184_coord0.5000279546_pair0.9999096394.npy",
+      "passed": false,
+      "coordinate_violations": 6,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00009000_b002564_cert0.5000035763_dot0.5000014305_coord0.5000035763_pair0.9999944568.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00009500_b000200_cert0.5000753999_dot0.5000753999_coord0.5000463128_pair1.0000128746.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 17
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00009500_b001112_cert0.5000519156_dot0.5000368953_coord0.5000519156_pair0.9999797344.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 28
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00009500_b001166_cert0.5000793338_dot0.5000677705_coord0.5000793338_pair0.9999672174.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00009500_b001379_cert0.5000570416_dot0.5000433922_coord0.5000570416_pair0.9999977350.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00009500_b001441_cert0.5000538230_dot0.5000034571_coord0.5000538230_pair0.9999320507.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0007_s00009500_b002564_cert0.5000221729_dot0.5000004172_coord0.5000221729_pair0.9999880791.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00007000_b002841_cert0.5000413060_dot0.5000321269_coord0.5000413060_pair1.0000083447.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 19
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00007500_b002841_cert0.5000832081_dot0.5000832081_coord0.5000433922_pair0.9999983311.npy",
+      "passed": false,
+      "coordinate_violations": 6,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00008000_b002841_cert0.5000616908_dot0.5000616908_coord0.5000264645_pair0.9999749064.npy",
+      "passed": false,
+      "coordinate_violations": 9,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00008500_b000139_cert0.5000506639_dot0.5000506639_coord0.5000445843_pair0.9999855757.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00008500_b002841_cert0.5000740886_dot0.5000483394_coord0.5000740886_pair0.9999882579.npy",
+      "passed": false,
+      "coordinate_violations": 10,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00009000_b000139_cert0.5000917912_dot0.5000917912_coord0.5000374913_pair0.9999756813.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00009000_b002841_cert0.5000635386_dot0.5000518560_coord0.5000635386_pair0.9999296665.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00009000_b002968_cert0.4999999702_dot0.4999999702_coord0.4999981225_pair0.9999881983.npy",
+      "passed": true,
+      "coordinate_violations": 0,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00009500_b000139_cert0.5000494719_dot0.5000494719_coord0.5000389218_pair0.9999841452.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00009500_b001150_cert0.5000461340_dot0.5000461340_coord0.5000267029_pair0.9999873638.npy",
+      "passed": false,
+      "coordinate_violations": 26,
+      "pair_violations": 43
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00009500_b002841_cert0.5000429153_dot0.5000288486_coord0.5000429153_pair0.9999797940.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00009500_b002968_cert0.5000005364_dot0.5000005364_coord0.5000004768_pair0.9999775887.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00009500_b004035_cert0.5000512600_dot0.5000457168_coord0.5000512600_pair0.9999963045.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 15
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00010000_b000139_cert0.5000628233_dot0.5000614524_coord0.5000628233_pair0.9999160171.npy",
+      "passed": false,
+      "coordinate_violations": 12,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00010000_b000808_cert0.5000102520_dot0.4999999404_coord0.5000102520_pair0.9999876022.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00010000_b001150_cert0.5000682473_dot0.5000366569_coord0.5000682473_pair0.9999669790.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00010000_b002841_cert0.5000911951_dot0.5000911951_coord0.5000836849_pair0.9998942614.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00010000_b002968_cert0.5000009537_dot0.4999999404_coord0.5000009537_pair0.9999883175.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00010000_b003358_cert0.5000566244_dot0.5000379682_coord0.5000566244_pair0.9999846816.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0008_s00010000_b004035_cert0.5000851154_dot0.5000851154_coord0.5000684857_pair0.9999902248.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00005500_b003502_cert0.5000241399_dot0.5000096560_coord0.5000241399_pair0.9999858141.npy",
+      "passed": false,
+      "coordinate_violations": 9,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00006000_b003502_cert0.5000310540_dot0.5000115633_coord0.5000310540_pair0.9999824762.npy",
+      "passed": false,
+      "coordinate_violations": 7,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00006500_b003502_cert0.5000381470_dot0.5000381470_coord0.5000215173_pair1.0000014305.npy",
+      "passed": false,
+      "coordinate_violations": 9,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00007000_b003502_cert0.5000576973_dot0.5000233650_coord0.5000576973_pair0.9999132156.npy",
+      "passed": false,
+      "coordinate_violations": 7,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00007500_b003502_cert0.5000560880_dot0.5000560880_coord0.5000495911_pair0.9999381304.npy",
+      "passed": false,
+      "coordinate_violations": 6,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00008000_b003502_cert0.5000599027_dot0.5000599027_coord0.5000388622_pair0.9999873638.npy",
+      "passed": false,
+      "coordinate_violations": 9,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00008500_b001156_cert0.5000802875_dot0.5000587702_coord0.5000802875_pair1.0000027418.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00009000_b001156_cert0.5000521541_dot0.5000521541_coord0.5000489950_pair0.9999703765.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00009000_b003374_cert0.5000420213_dot0.5000420213_coord0.5000271797_pair0.9999912977.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 21
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00009000_b003502_cert0.5000554323_dot0.5000554323_coord0.5000499487_pair0.9999035597.npy",
+      "passed": false,
+      "coordinate_violations": 7,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00009500_b001156_cert0.5000503659_dot0.5000336170_coord0.5000503659_pair0.9999812245.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00009500_b001598_cert0.5000019670_dot0.5000019670_coord0.4999995232_pair0.9999702573.npy",
+      "passed": false,
+      "coordinate_violations": 0,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00009500_b002806_cert0.5000550151_dot0.5000550151_coord0.5000352859_pair0.9999880791.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00009500_b003374_cert0.5000588894_dot0.5000588894_coord0.5000438094_pair0.9999843836.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00009500_b003502_cert0.5000698566_dot0.5000698566_coord0.5000278950_pair0.9999063611.npy",
+      "passed": false,
+      "coordinate_violations": 6,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00010000_b001156_cert0.5000607967_dot0.5000607967_coord0.5000280738_pair0.9999837875.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00010000_b001598_cert0.5000211596_dot0.5000069141_coord0.5000211596_pair0.9999945164.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00010000_b002431_cert0.5000087619_dot0.5000053644_coord0.5000087619_pair0.9999955297.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00010000_b002806_cert0.5000641346_dot0.5000641346_coord0.5000370145_pair0.9999707937.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0009_s00010000_b003374_cert0.5000585914_dot0.5000504851_coord0.5000585914_pair0.9999347925.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00007500_b002180_cert0.5000592470_dot0.5000592470_coord0.5000368357_pair1.0000041723.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 22
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00008000_b002180_cert0.5000862479_dot0.5000862479_coord0.5000687838_pair0.9999782443.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00008000_b003045_cert0.5000363588_dot0.5000363588_coord0.5000274181_pair0.9999883175.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 18
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00008500_b002180_cert0.5000517964_dot0.5000237226_coord0.5000517964_pair0.9999721050.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00008500_b003045_cert0.5000632405_dot0.5000348687_coord0.5000632405_pair0.9999839664.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00009000_b002180_cert0.5000672340_dot0.5000512600_coord0.5000672340_pair0.9999369979.npy",
+      "passed": false,
+      "coordinate_violations": 12,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00009000_b002523_cert0.5000513196_dot0.5000424981_coord0.5000513196_pair0.9999877214.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 33
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00009000_b002754_cert0.5000509620_dot0.5000484586_coord0.5000509620_pair1.0000066757.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 59
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00009000_b003045_cert0.5000711679_dot0.5000711679_coord0.5000616312_pair0.9999785423.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00009500_b000169_cert0.5000606775_dot0.5000466108_coord0.5000606775_pair1.0000154972.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00009500_b002180_cert0.5000736117_dot0.5000462532_coord0.5000736117_pair0.9999604225.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00009500_b002523_cert0.5000806451_dot0.5000516176_coord0.5000806451_pair0.9999656677.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00009500_b002754_cert0.5000408292_dot0.5000282526_coord0.5000408292_pair0.9999737740.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 18
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00009500_b003045_cert0.5000657439_dot0.5000657439_coord0.5000605583_pair0.9999647141.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 17
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00009500_b003054_cert0.5000303984_dot0.5000303984_coord0.5000195503_pair1.0000009537.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00010000_b000169_cert0.5000829697_dot0.5000829697_coord0.5000739694_pair0.9999976158.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00010000_b002523_cert0.5000770688_dot0.5000770688_coord0.5000603795_pair0.9999566078.npy",
+      "passed": false,
+      "coordinate_violations": 12,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00010000_b002754_cert0.5000599623_dot0.5000412464_coord0.5000599623_pair0.9999851584.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 16
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00010000_b003045_cert0.5000553727_dot0.5000553727_coord0.5000328422_pair0.9999824166.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0010_s00010000_b003054_cert0.5000715256_dot0.5000715256_coord0.5000549555_pair0.9999886751.npy",
+      "passed": false,
+      "coordinate_violations": 9,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00008000_b000548_cert0.5000959039_dot0.5000643134_coord0.5000959039_pair1.0000253916.npy",
+      "passed": false,
+      "coordinate_violations": 23,
+      "pair_violations": 41
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00008500_b000548_cert0.5000355244_dot0.5000271797_coord0.5000355244_pair0.9999924302.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00008500_b001699_cert0.5000681281_dot0.5000681281_coord0.5000402927_pair0.9999860525.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 18
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00009000_b000548_cert0.5000700355_dot0.5000700355_coord0.5000490546_pair0.9999917746.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00009500_b000354_cert0.5000765324_dot0.5000765324_coord0.5000464916_pair0.9999994040.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 15
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00009500_b002403_cert0.5000576377_dot0.5000576377_coord0.5000463128_pair1.0000603199.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 25
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00010000_b000354_cert0.5000791550_dot0.5000791550_coord0.5000721812_pair0.9999668598.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00010000_b000548_cert0.5000768900_dot0.5000768900_coord0.5000411868_pair0.9999711514.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00010000_b001699_cert0.5000579357_dot0.5000513196_coord0.5000579357_pair0.9999666214.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00010000_b003153_cert0.5000768304_dot0.5000768304_coord0.5000470281_pair0.9999969602.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00010500_b000354_cert0.5000740290_dot0.5000445247_coord0.5000740290_pair0.9999722242.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00010500_b000548_cert0.5000972152_dot0.5000972152_coord0.5000559092_pair0.9999591112.npy",
+      "passed": false,
+      "coordinate_violations": 8,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00010500_b000976_cert0.5000541210_dot0.5000457168_coord0.5000541210_pair0.9999838471.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00010500_b002403_cert0.5000672936_dot0.5000318885_coord0.5000672936_pair0.9999894500.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00010500_b003153_cert0.5000749826_dot0.5000530481_coord0.5000749826_pair0.9999771118.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00011000_b000548_cert0.5000839233_dot0.5000832677_coord0.5000839233_pair0.9999915361.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00011000_b000976_cert0.5000576973_dot0.5000090599_coord0.5000576973_pair1.0000019073.npy",
+      "passed": false,
+      "coordinate_violations": 26,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00011000_b002403_cert0.5000864267_dot0.5000701547_coord0.5000864267_pair0.9999547005.npy",
+      "passed": false,
+      "coordinate_violations": 12,
+      "pair_violations": 17
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00011000_b003153_cert0.5000959635_dot0.5000959635_coord0.5000528693_pair0.9999822378.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 15
+    },
+    {
+      "name": "saved_48_systems/sol_r0011_s00011500_b000354_cert0.5000894070_dot0.5000525713_coord0.5000894070_pair0.9999917746.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00007000_b000506_cert0.5000680089_dot0.5000680089_coord0.5000367165_pair0.9999996424.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00007500_b000506_cert0.5000751615_dot0.5000751615_coord0.5000351667_pair0.9999832511.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00007500_b003674_cert0.5000443459_dot0.5000443459_coord0.5000392795_pair0.9999952316.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00008000_b000506_cert0.5000548959_dot0.5000439882_coord0.5000548959_pair0.9999951124.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00008000_b003674_cert0.5000627041_dot0.5000627041_coord0.5000371337_pair0.9999964237.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00008500_b000506_cert0.5000578761_dot0.5000361204_coord0.5000578761_pair0.9999661446.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00009500_b003067_cert0.5000554323_dot0.5000554323_coord0.5000374913_pair1.0000193119.npy",
+      "passed": false,
+      "coordinate_violations": 25,
+      "pair_violations": 32
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00009500_b003674_cert0.5000544786_dot0.5000544786_coord0.5000472665_pair0.9999747276.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00010000_b000506_cert0.5000995398_dot0.5000995398_coord0.5000949502_pair0.9999672174.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00010000_b003067_cert0.5000970960_dot0.5000970960_coord0.5000485182_pair1.0000035763.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00010000_b003674_cert0.5000610352_dot0.5000606179_coord0.5000610352_pair0.9999837279.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00010000_b003844_cert0.5000779629_dot0.5000779629_coord0.5000340343_pair0.9999818802.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 19
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00010500_b000506_cert0.5000679493_dot0.5000666380_coord0.5000679493_pair0.9999955893.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00010500_b001046_cert0.5000687242_dot0.5000507236_coord0.5000687242_pair0.9999631643.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 17
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00010500_b002453_cert0.5000740886_dot0.5000623465_coord0.5000740886_pair0.9999984503.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 31
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00010500_b003067_cert0.5000612140_dot0.5000275373_coord0.5000612140_pair1.0000089407.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00010500_b003844_cert0.5000666976_dot0.5000666976_coord0.5000575185_pair0.9999681711.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00011000_b000506_cert0.5000788569_dot0.5000788569_coord0.5000644922_pair0.9999834299.npy",
+      "passed": false,
+      "coordinate_violations": 12,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00011000_b001046_cert0.5000810623_dot0.5000810623_coord0.5000403523_pair0.9999344349.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0012_s00011000_b002453_cert0.5000942349_dot0.5000942349_coord0.5000715852_pair0.9999931455.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00007000_b002004_cert0.5000038147_dot0.5000032187_coord0.5000038147_pair0.9999827147.npy",
+      "passed": false,
+      "coordinate_violations": 5,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00007000_b003784_cert0.5000398159_dot0.5000182390_coord0.5000398159_pair0.9999638796.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00007500_b002004_cert0.5000265241_dot0.5000076890_coord0.5000265241_pair0.9999849796.npy",
+      "passed": false,
+      "coordinate_violations": 4,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00007500_b003784_cert0.5000526309_dot0.5000519753_coord0.5000526309_pair0.9999574423.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00008000_b002004_cert0.5000231862_dot0.5000117421_coord0.5000231862_pair0.9999917746.npy",
+      "passed": false,
+      "coordinate_violations": 9,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00008000_b003784_cert0.5000538230_dot0.5000538230_coord0.5000467896_pair0.9999483824.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00008500_b001802_cert0.5000025630_dot0.5000025630_coord0.5000010133_pair0.9999698400.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00008500_b002004_cert0.5000764132_dot0.5000764132_coord0.5000263453_pair0.9999663234.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00008500_b003784_cert0.5000786185_dot0.5000786185_coord0.5000578165_pair0.9999179840.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00009000_b001802_cert0.5000060797_dot0.4999976158_coord0.5000060797_pair0.9999930859.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00009000_b002004_cert0.5000197291_dot0.5000197291_coord0.5000190139_pair0.9999637008.npy",
+      "passed": false,
+      "coordinate_violations": 6,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00009500_b000520_cert0.5000295043_dot0.5000054836_coord0.5000295043_pair0.9999920130.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00009500_b001802_cert0.5000042319_dot0.5000042319_coord0.5000018477_pair0.9999713898.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00009500_b001948_cert0.5000810623_dot0.5000810623_coord0.5000352263_pair0.9999717474.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 16
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00009500_b002004_cert0.5000351071_dot0.5000351071_coord0.5000149012_pair0.9999606609.npy",
+      "passed": false,
+      "coordinate_violations": 4,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00010000_b000520_cert0.5000136495_dot0.5000136495_coord0.5000046492_pair0.9999789000.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00010000_b001802_cert0.5000057220_dot0.5000003576_coord0.5000057220_pair0.9999654889.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00010000_b001948_cert0.5000431538_dot0.5000351667_coord0.5000431538_pair0.9999889135.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00010000_b002004_cert0.5000929236_dot0.5000929236_coord0.5000388622_pair0.9999420047.npy",
+      "passed": false,
+      "coordinate_violations": 7,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0013_s00010000_b003403_cert0.5000630617_dot0.5000416636_coord0.5000630617_pair0.9999599457.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00008000_b001426_cert0.5000774860_dot0.5000774860_coord0.5000633597_pair0.9999939799.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 16
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00008500_b000139_cert0.5000086427_dot0.5000086427_coord0.4999996722_pair0.9999939203.npy",
+      "passed": false,
+      "coordinate_violations": 0,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00009000_b000139_cert0.4999997616_dot0.4999997616_coord0.4999983311_pair0.9999914169.npy",
+      "passed": true,
+      "coordinate_violations": 0,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00009500_b000139_cert0.5000109673_dot0.5000109673_coord0.4999980032_pair0.9999676347.npy",
+      "passed": false,
+      "coordinate_violations": 0,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00009500_b000621_cert0.5000787973_dot0.5000787973_coord0.5000525713_pair0.9999732971.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 27
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00009500_b001426_cert0.5000936389_dot0.5000936389_coord0.5000481606_pair0.9999713898.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00009500_b003652_cert0.5000409484_dot0.5000409484_coord0.5000235438_pair0.9999911785.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00010000_b000139_cert0.4999986887_dot0.4999967217_coord0.4999986887_pair0.9999689460.npy",
+      "passed": true,
+      "coordinate_violations": 0,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00010000_b003652_cert0.5000265241_dot0.5000246167_coord0.5000265241_pair0.9999971390.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00010500_b000139_cert0.4999994040_dot0.4999927878_coord0.4999994040_pair0.9999595881.npy",
+      "passed": true,
+      "coordinate_violations": 0,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00010500_b000621_cert0.5000950098_dot0.5000587106_coord0.5000950098_pair0.9998822808.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00010500_b001426_cert0.5000913143_dot0.5000913143_coord0.5000878572_pair0.9999399185.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00010500_b003652_cert0.5000494123_dot0.5000494123_coord0.5000284910_pair0.9999717474.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00011000_b000139_cert0.5000084043_dot0.5000084043_coord0.4999988675_pair0.9999725819.npy",
+      "passed": false,
+      "coordinate_violations": 0,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00011000_b000364_cert0.5000542998_dot0.5000343323_coord0.5000542998_pair1.0000112057.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00011000_b000621_cert0.5000916719_dot0.5000801086_coord0.5000916719_pair0.9998967052.npy",
+      "passed": false,
+      "coordinate_violations": 23,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00011000_b001457_cert0.5000485778_dot0.5000485778_coord0.5000429153_pair0.9999572039.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 18
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00011000_b003652_cert0.5000424385_dot0.5000424385_coord0.5000420213_pair0.9999916553.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00011500_b000139_cert0.5000059605_dot0.5000059605_coord0.5000050664_pair0.9999470711.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0014_s00011500_b000364_cert0.5000526309_dot0.5000526309_coord0.5000484586_pair0.9999748468.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00009500_b001855_cert0.5000610352_dot0.5000610352_coord0.5000515580_pair0.9999876022.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 19
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00009500_b002374_cert0.5000391603_dot0.5000230074_coord0.5000391603_pair0.9999763966.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 18
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00009500_b002819_cert0.5000681281_dot0.5000681281_coord0.5000670552_pair0.9999109507.npy",
+      "passed": false,
+      "coordinate_violations": 9,
+      "pair_violations": 25
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00010000_b001855_cert0.5000911951_dot0.5000460148_coord0.5000911951_pair0.9999855757.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 17
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00010000_b002374_cert0.5000656247_dot0.5000656247_coord0.5000343919_pair0.9999883175.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00010000_b002545_cert0.5000697970_dot0.5000697970_coord0.5000315905_pair0.9999389648.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 15
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00010000_b002819_cert0.5000991225_dot0.5000991225_coord0.5000722408_pair0.9999066591.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00010000_b003753_cert0.5000742078_dot0.5000742078_coord0.5000482202_pair0.9999654293.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 17
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00010500_b001855_cert0.5000653267_dot0.5000653267_coord0.5000470281_pair0.9999824762.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00010500_b002374_cert0.5000771284_dot0.5000771284_coord0.5000501871_pair0.9999718666.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00010500_b002545_cert0.5000560880_dot0.5000409484_coord0.5000560880_pair0.9999754429.npy",
+      "passed": false,
+      "coordinate_violations": 23,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00010500_b003753_cert0.5000586510_dot0.5000586510_coord0.5000434518_pair0.9999203682.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00011000_b000125_cert0.5000539422_dot0.5000495315_coord0.5000539422_pair0.9999142885.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00011000_b001681_cert0.5000687242_dot0.5000687242_coord0.5000467300_pair0.9999821186.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00011000_b002374_cert0.5000823140_dot0.5000823140_coord0.5000579953_pair0.9999399185.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00011000_b002545_cert0.5000548363_dot0.5000548363_coord0.5000361800_pair0.9999817610.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00011000_b002819_cert0.5000863671_dot0.5000731349_coord0.5000863671_pair0.9998968840.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00011000_b003753_cert0.5000854135_dot0.5000820160_coord0.5000854135_pair0.9998715520.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00011500_b000125_cert0.5000604391_dot0.5000119805_coord0.5000604391_pair0.9998713732.npy",
+      "passed": false,
+      "coordinate_violations": 26,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0015_s00011500_b001457_cert0.5000455379_dot0.5000409484_coord0.5000455379_pair0.9999923706.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00007500_b000205_cert0.5000299215_dot0.5000185370_coord0.5000299215_pair0.9999927282.npy",
+      "passed": false,
+      "coordinate_violations": 8,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00008000_b000205_cert0.5000443459_dot0.5000231266_coord0.5000443459_pair1.0000078678.npy",
+      "passed": false,
+      "coordinate_violations": 8,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00008000_b000450_cert0.5000342727_dot0.5000342727_coord0.5000258684_pair0.9999976158.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 15
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00008000_b001461_cert0.5000650883_dot0.5000650883_coord0.5000413656_pair1.0000083447.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 46
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00008000_b001680_cert0.5000793338_dot0.5000793338_coord0.5000394583_pair1.0000241995.npy",
+      "passed": false,
+      "coordinate_violations": 29,
+      "pair_violations": 57
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00008000_b001939_cert0.5000110865_dot0.5000110865_coord0.5000008345_pair0.9999747872.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00008500_b000205_cert0.5000551939_dot0.5000551939_coord0.5000199080_pair0.9999806881.npy",
+      "passed": false,
+      "coordinate_violations": 8,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00008500_b000450_cert0.5000752211_dot0.5000752211_coord0.5000671148_pair0.9999857545.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00008500_b001461_cert0.5000697970_dot0.5000209808_coord0.5000697970_pair0.9999866486.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00008500_b001680_cert0.5000408292_dot0.5000408292_coord0.5000368357_pair1.0000066757.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00008500_b001939_cert0.5000029802_dot0.5000029802_coord0.5000013709_pair0.9999725819.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00009000_b000205_cert0.5000452995_dot0.5000452995_coord0.5000329614_pair0.9999792576.npy",
+      "passed": false,
+      "coordinate_violations": 9,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00009000_b000450_cert0.5000810027_dot0.5000810027_coord0.5000649691_pair0.9999885559.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00009000_b001249_cert0.5000361800_dot0.5000361800_coord0.5000299811_pair0.9999908209.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00009000_b001461_cert0.5000757575_dot0.5000757575_coord0.5000337362_pair0.9999336004.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00009000_b001680_cert0.5000884533_dot0.5000884533_coord0.5000556707_pair0.9999838471.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 17
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00009000_b001939_cert0.5000123978_dot0.5000028610_coord0.5000123978_pair0.9999687672.npy",
+      "passed": false,
+      "coordinate_violations": 4,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00009500_b000205_cert0.5000433922_dot0.5000433922_coord0.5000289679_pair0.9999966621.npy",
+      "passed": false,
+      "coordinate_violations": 9,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00009500_b000450_cert0.5000728965_dot0.5000485182_coord0.5000728965_pair0.9999980927.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0016_s00009500_b001249_cert0.5000680685_dot0.5000680685_coord0.5000381470_pair0.9999799728.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00007000_b003325_cert0.5000146031_dot0.5000025034_coord0.5000146031_pair0.9999901056.npy",
+      "passed": false,
+      "coordinate_violations": 4,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00007500_b003325_cert0.5000340939_dot0.5000144839_coord0.5000340939_pair0.9999905229.npy",
+      "passed": false,
+      "coordinate_violations": 9,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00007500_b003488_cert0.5000876784_dot0.5000876784_coord0.5000648499_pair1.0000364780.npy",
+      "passed": false,
+      "coordinate_violations": 26,
+      "pair_violations": 26
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00008000_b003325_cert0.5000448823_dot0.5000448823_coord0.5000326633_pair0.9999743700.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00008500_b000716_cert0.5000904202_dot0.5000860095_coord0.5000904202_pair0.9999966025.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 24
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00008500_b003325_cert0.5000450015_dot0.5000450015_coord0.5000433922_pair0.9999924898.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00008500_b003488_cert0.5000841022_dot0.5000352263_coord0.5000841022_pair1.0000340939.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00008500_b003685_cert0.5000402331_dot0.5000184178_coord0.5000402331_pair0.9999837875.npy",
+      "passed": false,
+      "coordinate_violations": 10,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00009000_b000716_cert0.5000660419_dot0.5000548363_coord0.5000660419_pair0.9999743700.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00009000_b002081_cert0.5000830293_dot0.5000178814_coord0.5000830293_pair1.0000076294.npy",
+      "passed": false,
+      "coordinate_violations": 24,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00009000_b003325_cert0.5000581741_dot0.5000581741_coord0.5000274777_pair0.9999781251.npy",
+      "passed": false,
+      "coordinate_violations": 7,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00009000_b003488_cert0.5000717044_dot0.5000717044_coord0.5000516772_pair0.9999988079.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00009000_b003685_cert0.5000578761_dot0.5000258684_coord0.5000578761_pair0.9999892712.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00009500_b000810_cert0.5000374317_dot0.5000374317_coord0.5000228882_pair0.9999921322.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00009500_b002081_cert0.5000767708_dot0.5000767708_coord0.5000391603_pair1.0000033379.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00009500_b003488_cert0.5000801086_dot0.5000801086_coord0.5000258088_pair0.9999645352.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00009500_b003685_cert0.5000402331_dot0.5000345111_coord0.5000402331_pair0.9999479651.npy",
+      "passed": false,
+      "coordinate_violations": 9,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00010000_b000810_cert0.5000600219_dot0.5000206232_coord0.5000600219_pair0.9999909401.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00010000_b002081_cert0.5000904799_dot0.5000904799_coord0.5000575185_pair0.9999542236.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0017_s00010000_b003325_cert0.5000540614_dot0.5000423789_coord0.5000540614_pair0.9999847412.npy",
+      "passed": false,
+      "coordinate_violations": 8,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00007500_b001083_cert0.5000527501_dot0.5000527501_coord0.5000318289_pair0.9999749660.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 17
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00008000_b001083_cert0.5000633597_dot0.5000607371_coord0.5000633597_pair0.9999824762.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00008500_b001083_cert0.5000711083_dot0.5000396371_coord0.5000711083_pair0.9999829531.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00008500_b002653_cert0.5000356436_dot0.5000356436_coord0.5000048876_pair0.9999858141.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00009000_b000155_cert0.5000680685_dot0.5000680685_coord0.5000505447_pair1.0000001192.npy",
+      "passed": false,
+      "coordinate_violations": 24,
+      "pair_violations": 15
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00009000_b001083_cert0.5000769496_dot0.5000769496_coord0.5000348687_pair0.9999798536.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00009000_b002653_cert0.5000115633_dot0.4999979734_coord0.5000115633_pair0.9999771714.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00009000_b002921_cert0.5000717044_dot0.5000337362_coord0.5000717044_pair0.9999955297.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 20
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00009500_b000155_cert0.5000690222_dot0.5000523329_coord0.5000690222_pair0.9999946952.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00009500_b001083_cert0.5000773668_dot0.5000773668_coord0.5000499487_pair0.9999624491.npy",
+      "passed": false,
+      "coordinate_violations": 8,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00009500_b002653_cert0.5000439286_dot0.5000439286_coord0.5000061989_pair0.9999687672.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00009500_b002921_cert0.5000987053_dot0.5000987053_coord0.5000383258_pair1.0000009537.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 16
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00010000_b000155_cert0.5000759959_dot0.5000759959_coord0.5000436306_pair1.0000057220.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00010000_b001083_cert0.5000890493_dot0.5000890493_coord0.5000618696_pair0.9999729991.npy",
+      "passed": false,
+      "coordinate_violations": 23,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00010000_b002653_cert0.5000657439_dot0.5000257492_coord0.5000657439_pair0.9999742508.npy",
+      "passed": false,
+      "coordinate_violations": 4,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00010000_b002924_cert0.5000612736_dot0.5000612736_coord0.5000417233_pair0.9999926090.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00010500_b000155_cert0.5000923276_dot0.5000923276_coord0.5000423193_pair0.9999423027.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00010500_b002653_cert0.5000931621_dot0.5000931621_coord0.4999997318_pair0.9999741316.npy",
+      "passed": false,
+      "coordinate_violations": 0,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00010500_b002867_cert0.5000059009_dot0.5000059009_coord0.5000007749_pair0.9999753833.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0018_s00010500_b002924_cert0.5000390410_dot0.5000390410_coord0.5000371337_pair0.9999870062.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00007000_b002054_cert0.5000600815_dot0.5000364184_coord0.5000600815_pair1.0000030994.npy",
+      "passed": false,
+      "coordinate_violations": 24,
+      "pair_violations": 21
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00007500_b002054_cert0.5000638962_dot0.5000638962_coord0.5000587106_pair1.0000150204.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00008000_b001714_cert0.5000281930_dot0.5000242591_coord0.5000281930_pair0.9999936819.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 17
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00008000_b002054_cert0.5000633597_dot0.5000633597_coord0.5000457764_pair0.9999625087.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 17
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00008500_b001714_cert0.5000454783_dot0.5000454783_coord0.5000293255_pair0.9999984503.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00009000_b001714_cert0.5000658631_dot0.5000658631_coord0.5000379682_pair0.9999617338.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00009000_b002143_cert0.5000050664_dot0.5000033975_coord0.5000050664_pair0.9999886751.npy",
+      "passed": false,
+      "coordinate_violations": 5,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00009000_b003079_cert0.5000108480_dot0.5000031590_coord0.5000108480_pair0.9999868870.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00009500_b001714_cert0.5000720620_dot0.5000720620_coord0.5000581145_pair1.0000014305.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00009500_b002054_cert0.5000879765_dot0.5000879765_coord0.5000513196_pair0.9999485016.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00009500_b002143_cert0.5000137687_dot0.5000021458_coord0.5000137687_pair0.9999876022.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00009500_b002303_cert0.5000020862_dot0.5000020862_coord0.4999991953_pair0.9999797940.npy",
+      "passed": false,
+      "coordinate_violations": 0,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00009500_b003079_cert0.5000107884_dot0.5000107884_coord0.5000094771_pair0.9999641180.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00009500_b003846_cert0.5000137687_dot0.5000137687_coord0.5000041723_pair1.0000001192.npy",
+      "passed": false,
+      "coordinate_violations": 4,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00010000_b002143_cert0.5000097156_dot0.5000019073_coord0.5000097156_pair0.9999884367.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00010000_b002303_cert0.5000069737_dot0.5000006557_coord0.5000069737_pair0.9999486208.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00010000_b003079_cert0.5000349283_dot0.5000349283_coord0.5000125766_pair0.9999779463.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00010000_b003846_cert0.4999975860_dot0.4999964833_coord0.4999975860_pair0.9999901652.npy",
+      "passed": true,
+      "coordinate_violations": 0,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00010500_b001714_cert0.5000759959_dot0.5000759959_coord0.5000683665_pair0.9999534488.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0019_s00010500_b002143_cert0.5000323057_dot0.5000323057_coord0.5000318885_pair0.9999824762.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00006500_b000040_cert0.5000414252_dot0.5000414252_coord0.5000299811_pair0.9999867678.npy",
+      "passed": false,
+      "coordinate_violations": 10,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00007000_b000040_cert0.5000526309_dot0.5000526309_coord0.5000354648_pair0.9999905229.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00007500_b000040_cert0.5000740886_dot0.5000740886_coord0.5000652671_pair0.9999609590.npy",
+      "passed": false,
+      "coordinate_violations": 7,
+      "pair_violations": 15
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00008000_b000040_cert0.5000542998_dot0.5000542998_coord0.5000214577_pair0.9999929667.npy",
+      "passed": false,
+      "coordinate_violations": 13,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00008000_b002580_cert0.5000725389_dot0.5000725389_coord0.5000327229_pair1.0000021458.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00008500_b000040_cert0.5000441670_dot0.5000211000_coord0.5000441670_pair0.9999659657.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00008500_b002580_cert0.5000541806_dot0.5000319481_coord0.5000541806_pair0.9999952316.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00009000_b002580_cert0.5000901818_dot0.5000901818_coord0.5000491142_pair0.9999892116.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00009000_b002658_cert0.5000663996_dot0.5000663996_coord0.5000579357_pair0.9999898672.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 16
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00009000_b003653_cert0.5000822544_dot0.5000822544_coord0.5000569820_pair0.9999995232.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 50
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00009500_b000040_cert0.5000612140_dot0.5000612140_coord0.5000467300_pair0.9999353290.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00009500_b001432_cert0.5000357032_dot0.5000357032_coord0.5000114441_pair0.9999879599.npy",
+      "passed": false,
+      "coordinate_violations": 8,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00009500_b002580_cert0.5000776649_dot0.5000776649_coord0.5000532269_pair0.9999744296.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00009500_b002658_cert0.5000428557_dot0.5000352263_coord0.5000428557_pair0.9999803305.npy",
+      "passed": false,
+      "coordinate_violations": 12,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00009500_b003958_cert0.5000666380_dot0.5000290871_coord0.5000666380_pair1.0000025034.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00010000_b001432_cert0.5000470877_dot0.5000470877_coord0.5000169277_pair0.9999898076.npy",
+      "passed": false,
+      "coordinate_violations": 9,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00010000_b002250_cert0.5000824928_dot0.5000257492_coord0.5000824928_pair1.0000150204.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00010000_b002658_cert0.5000785589_dot0.5000602603_coord0.5000785589_pair0.9999321699.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00010000_b003958_cert0.5000976920_dot0.5000976920_coord0.5000504851_pair0.9999706745.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0020_s00010500_b000040_cert0.5000658035_dot0.5000611544_coord0.5000658035_pair0.9999677539.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00006500_b003543_cert0.5000424981_dot0.5000424981_coord0.5000302792_pair1.0000103712.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 17
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00007000_b000934_cert0.5000034571_dot0.4999994040_coord0.5000034571_pair0.9999846220.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00007000_b003543_cert0.5000953078_dot0.5000953078_coord0.5000575185_pair0.9999801517.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00007500_b000934_cert0.4999998808_dot0.4999998808_coord0.4999997914_pair0.9999770522.npy",
+      "passed": true,
+      "coordinate_violations": 0,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00007500_b003543_cert0.5000697970_dot0.5000697970_coord0.5000345111_pair0.9999916553.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00007500_b003888_cert0.5000684857_dot0.5000684857_coord0.5000506639_pair0.9999977946.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 21
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00008000_b000934_cert0.4999999106_dot0.4999999106_coord0.4999977350_pair0.9999772906.npy",
+      "passed": true,
+      "coordinate_violations": 0,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00008000_b003543_cert0.5000687242_dot0.5000326633_coord0.5000687242_pair0.9999933243.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00008000_b003888_cert0.5000526905_dot0.5000526905_coord0.5000526309_pair1.0000039339.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00008500_b000843_cert0.5000898838_dot0.5000898838_coord0.5000439882_pair0.9999859929.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00008500_b000934_cert0.5000067353_dot0.5000067353_coord0.4999977350_pair0.9999772906.npy",
+      "passed": false,
+      "coordinate_violations": 0,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00008500_b003543_cert0.5000532269_dot0.5000532269_coord0.5000365376_pair0.9999756813.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 16
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00008500_b003888_cert0.5000663996_dot0.5000663996_coord0.5000618100_pair0.9999707937.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00009000_b000934_cert0.5000138879_dot0.5000138879_coord0.4999855459_pair0.9999589920.npy",
+      "passed": false,
+      "coordinate_violations": 0,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00009000_b003399_cert0.5000774860_dot0.5000774860_coord0.5000175834_pair0.9999890327.npy",
+      "passed": false,
+      "coordinate_violations": 7,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00009000_b003543_cert0.5000851750_dot0.5000571012_coord0.5000851750_pair0.9999783039.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00009000_b003888_cert0.5000935793_dot0.5000621080_coord0.5000935793_pair0.9999434948.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00009500_b000843_cert0.5000919104_dot0.5000919104_coord0.5000864863_pair0.9999628067.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00009500_b000934_cert0.5000017881_dot0.5000017881_coord0.4999979734_pair0.9999122620.npy",
+      "passed": false,
+      "coordinate_violations": 0,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0021_s00009500_b003399_cert0.5000447631_dot0.5000447631_coord0.5000266433_pair0.9999920130.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00009000_b001470_cert0.5000716448_dot0.5000716448_coord0.5000375509_pair0.9999905825.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00009500_b001470_cert0.5000818372_dot0.5000818372_coord0.5000550151_pair0.9999840260.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00010000_b001470_cert0.5000948906_dot0.5000948906_coord0.5000481009_pair1.0000107288.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00010500_b001470_cert0.5000799298_dot0.5000799298_coord0.5000627041_pair0.9999978542.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00011500_b001470_cert0.5000746846_dot0.5000746846_coord0.5000734925_pair0.9999741316.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00012500_b001470_cert0.5000818372_dot0.5000818372_coord0.5000646114_pair1.0000019073.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00012500_b003513_cert0.5000618100_dot0.5000618100_coord0.5000343919_pair1.0000185966.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 24
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00013000_b001470_cert0.5000885725_dot0.5000782609_coord0.5000885725_pair0.9999978542.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00013000_b003513_cert0.5000575185_dot0.5000575185_coord0.5000413060_pair0.9999665618.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00014000_b001470_cert0.5000888109_dot0.5000888109_coord0.5000841022_pair0.9999724030.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00014000_b002131_cert0.5000494123_dot0.5000398159_coord0.5000494123_pair0.9999911785.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00014000_b003513_cert0.5000792146_dot0.5000792146_coord0.5000731349_pair0.9999496937.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00014500_b001071_cert0.5000561476_dot0.5000561476_coord0.5000547171_pair0.9999853969.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 17
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00014500_b003513_cert0.5000649691_dot0.5000640154_coord0.5000649691_pair0.9999283552.npy",
+      "passed": false,
+      "coordinate_violations": 22,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00015000_b001071_cert0.5000784993_dot0.5000744462_coord0.5000784993_pair0.9999604225.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00015000_b003513_cert0.5000939965_dot0.5000939965_coord0.5000423789_pair0.9999080896.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00015500_b002131_cert0.5000775456_dot0.5000775456_coord0.5000762939_pair0.9999797344.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 7
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00017000_b002131_cert0.5000768304_dot0.5000768304_coord0.5000756383_pair0.9999449849.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00018500_b002154_cert0.5000205040_dot0.5000169277_coord0.5000205040_pair0.9999799728.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0022_s00018500_b003513_cert0.5000742078_dot0.5000584722_coord0.5000742078_pair0.9998564720.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00007500_b002828_cert0.5000082254_dot0.4999996126_coord0.5000082254_pair0.9999867678.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00008000_b002828_cert0.5000309348_dot0.5000309348_coord0.5000012517_pair0.9999406934.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00008500_b000011_cert0.5000097156_dot0.5000027418_coord0.5000097156_pair0.9999945164.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00008500_b000597_cert0.5000172853_dot0.5000073910_coord0.5000172853_pair0.9999991655.npy",
+      "passed": false,
+      "coordinate_violations": 8,
+      "pair_violations": 11
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00008500_b002828_cert0.5000031590_dot0.5000027418_coord0.5000031590_pair0.9999506474.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00009000_b000011_cert0.5000711083_dot0.5000711083_coord0.5000048280_pair0.9999960065.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 1
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00009000_b000597_cert0.5000219345_dot0.5000159144_coord0.5000219345_pair0.9999942780.npy",
+      "passed": false,
+      "coordinate_violations": 14,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00009000_b002828_cert0.5000406504_dot0.4999953508_coord0.5000406504_pair0.9998950958.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00009000_b002871_cert0.5000129938_dot0.5000129938_coord0.4999991059_pair0.9999821186.npy",
+      "passed": false,
+      "coordinate_violations": 0,
+      "pair_violations": 8
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00009500_b000011_cert0.5000199676_dot0.4999966621_coord0.5000199676_pair0.9999775290.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 0
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00009500_b000202_cert0.5000597835_dot0.5000286102_coord0.5000597835_pair1.0000200272.npy",
+      "passed": false,
+      "coordinate_violations": 18,
+      "pair_violations": 27
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00009500_b000597_cert0.5000239015_dot0.5000233650_coord0.5000239015_pair0.9999707937.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00009500_b002828_cert0.5000435710_dot0.5000146031_coord0.5000435710_pair0.9999172688.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00009500_b002871_cert0.5000424981_dot0.5000424981_coord0.5000058413_pair0.9999813437.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00009500_b003027_cert0.5000360608_dot0.5000315309_coord0.5000360608_pair0.9999328852.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 10
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00010000_b000011_cert0.5000466704_dot0.5000039339_coord0.5000466704_pair0.9999653101.npy",
+      "passed": false,
+      "coordinate_violations": 1,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00010000_b000202_cert0.5000306964_dot0.5000262260_coord0.5000306964_pair1.0000183582.npy",
+      "passed": false,
+      "coordinate_violations": 19,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00010000_b000597_cert0.5000476241_dot0.5000476241_coord0.5000299811_pair0.9999818802.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 6
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00010000_b002651_cert0.5000299811_dot0.5000122190_coord0.5000299811_pair0.9999678135.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 16
+    },
+    {
+      "name": "saved_48_systems/sol_r0023_s00010000_b002828_cert0.5000865459_dot0.5000405908_coord0.5000865459_pair0.9998462200.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00006500_b000990_cert0.5000472069_dot0.5000032187_coord0.5000472069_pair0.9999705553.npy",
+      "passed": false,
+      "coordinate_violations": 5,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00007000_b000990_cert0.5000135303_dot0.5000058413_coord0.5000135303_pair0.9999765158.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00007500_b000990_cert0.5000542402_dot0.5000370145_coord0.5000542402_pair0.9999767542.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00008000_b000990_cert0.5000469089_dot0.5000469089_coord0.5000415444_pair0.9999397993.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00008500_b000990_cert0.5000758767_dot0.5000758767_coord0.5000178814_pair0.9999606013.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00009000_b000990_cert0.5000486970_dot0.5000486970_coord0.5000306368_pair0.9999482632.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 5
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00009000_b001390_cert0.5000683665_dot0.5000675917_coord0.5000683665_pair0.9999446869.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00009000_b002484_cert0.5000740290_dot0.5000541210_coord0.5000740290_pair0.9999694824.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00009000_b002897_cert0.5000921488_dot0.5000921488_coord0.5000484586_pair0.9999789596.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 31
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00009500_b000990_cert0.5000411868_dot0.5000371933_coord0.5000411868_pair0.9999309778.npy",
+      "passed": false,
+      "coordinate_violations": 3,
+      "pair_violations": 4
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00009500_b001390_cert0.5000834465_dot0.5000834465_coord0.5000540018_pair0.9999100566.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00009500_b002398_cert0.5000631809_dot0.5000631809_coord0.5000445843_pair0.9999612570.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 14
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00009500_b002897_cert0.5000565648_dot0.5000501871_coord0.5000565648_pair0.9999997020.npy",
+      "passed": false,
+      "coordinate_violations": 15,
+      "pair_violations": 18
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00010000_b000482_cert0.5000709891_dot0.5000709891_coord0.5000553727_pair1.0000524521.npy",
+      "passed": false,
+      "coordinate_violations": 21,
+      "pair_violations": 40
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00010000_b000990_cert0.5000585318_dot0.5000585318_coord0.5000195503_pair0.9999174476.npy",
+      "passed": false,
+      "coordinate_violations": 2,
+      "pair_violations": 3
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00010000_b002398_cert0.5000802875_dot0.5000802875_coord0.5000609159_pair0.9999060035.npy",
+      "passed": false,
+      "coordinate_violations": 17,
+      "pair_violations": 12
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00010000_b002484_cert0.5000680685_dot0.5000680685_coord0.5000481606_pair0.9999612570.npy",
+      "passed": false,
+      "coordinate_violations": 11,
+      "pair_violations": 9
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00010500_b000482_cert0.5000533462_dot0.5000533462_coord0.5000529885_pair0.9999994040.npy",
+      "passed": false,
+      "coordinate_violations": 20,
+      "pair_violations": 13
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00010500_b000990_cert0.5000374317_dot0.5000265241_coord0.5000374317_pair0.9999418259.npy",
+      "passed": false,
+      "coordinate_violations": 5,
+      "pair_violations": 2
+    },
+    {
+      "name": "saved_48_systems/sol_r0024_s00010500_b002101_cert0.5000905395_dot0.5000905395_coord0.5000275970_pair0.9999901056.npy",
+      "passed": false,
+      "coordinate_violations": 16,
+      "pair_violations": 22
+    }
+  ]
+}

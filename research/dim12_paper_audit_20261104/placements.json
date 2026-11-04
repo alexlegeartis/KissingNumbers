@@ -1,0 +1,596 @@
+{
+  "valid_exact_840_placements": 30,
+  "original": {
+    "first": 0,
+    "last": 5,
+    "special_edge_color": 4,
+    "contact_pairs": 34560,
+    "contact_degree_histogram": {
+      "10": 32,
+      "26": 64,
+      "88": 640,
+      "96": 64,
+      "104": 16,
+      "120": 16,
+      "136": 8
+    },
+    "bridge_degree_histogram": {
+      "88": 640,
+      "96": 64,
+      "104": 16
+    }
+  },
+  "alternative": {
+    "first": 0,
+    "last": 1,
+    "special_edge_color": 0,
+    "contact_pairs": 34560,
+    "contact_degree_histogram": {
+      "10": 32,
+      "26": 64,
+      "88": 624,
+      "96": 96,
+      "120": 16,
+      "136": 8
+    },
+    "bridge_degree_histogram": {
+      "88": 624,
+      "96": 96
+    }
+  },
+  "different_degree_histograms_prove_nonisometry": true,
+  "all_placements": [
+    {
+      "first": 0,
+      "last": 1,
+      "special_edge_color": 0,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 0,
+      "last": 2,
+      "special_edge_color": 1,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 0,
+      "last": 3,
+      "special_edge_color": 2,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 0,
+      "last": 4,
+      "special_edge_color": 3,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 0,
+      "last": 5,
+      "special_edge_color": 4,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 640,
+        "96": 64,
+        "104": 16,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 640,
+        "96": 64,
+        "104": 16
+      }
+    },
+    {
+      "first": 1,
+      "last": 0,
+      "special_edge_color": 0,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 1,
+      "last": 2,
+      "special_edge_color": 4,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 640,
+        "96": 64,
+        "104": 16,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 640,
+        "96": 64,
+        "104": 16
+      }
+    },
+    {
+      "first": 1,
+      "last": 3,
+      "special_edge_color": 3,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 1,
+      "last": 4,
+      "special_edge_color": 1,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 1,
+      "last": 5,
+      "special_edge_color": 2,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 2,
+      "last": 0,
+      "special_edge_color": 1,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 2,
+      "last": 1,
+      "special_edge_color": 4,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 640,
+        "96": 64,
+        "104": 16,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 640,
+        "96": 64,
+        "104": 16
+      }
+    },
+    {
+      "first": 2,
+      "last": 3,
+      "special_edge_color": 0,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 2,
+      "last": 4,
+      "special_edge_color": 2,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 2,
+      "last": 5,
+      "special_edge_color": 3,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 3,
+      "last": 0,
+      "special_edge_color": 2,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 3,
+      "last": 1,
+      "special_edge_color": 3,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 3,
+      "last": 2,
+      "special_edge_color": 0,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 3,
+      "last": 4,
+      "special_edge_color": 4,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 640,
+        "96": 64,
+        "104": 16,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 640,
+        "96": 64,
+        "104": 16
+      }
+    },
+    {
+      "first": 3,
+      "last": 5,
+      "special_edge_color": 1,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 4,
+      "last": 0,
+      "special_edge_color": 3,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 4,
+      "last": 1,
+      "special_edge_color": 1,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 4,
+      "last": 2,
+      "special_edge_color": 2,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 4,
+      "last": 3,
+      "special_edge_color": 4,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 640,
+        "96": 64,
+        "104": 16,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 640,
+        "96": 64,
+        "104": 16
+      }
+    },
+    {
+      "first": 4,
+      "last": 5,
+      "special_edge_color": 0,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 5,
+      "last": 0,
+      "special_edge_color": 4,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 640,
+        "96": 64,
+        "104": 16,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 640,
+        "96": 64,
+        "104": 16
+      }
+    },
+    {
+      "first": 5,
+      "last": 1,
+      "special_edge_color": 2,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 5,
+      "last": 2,
+      "special_edge_color": 3,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 5,
+      "last": 3,
+      "special_edge_color": 1,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    },
+    {
+      "first": 5,
+      "last": 4,
+      "special_edge_color": 0,
+      "contact_pairs": 34560,
+      "contact_degree_histogram": {
+        "10": 32,
+        "26": 64,
+        "88": 624,
+        "96": 96,
+        "120": 16,
+        "136": 8
+      },
+      "bridge_degree_histogram": {
+        "88": 624,
+        "96": 96
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_contact_20261105/evidence/recovered841.npy",
+  "sha256": "c84e1dcd8b9dadad166823a953192ad0e49f7f03274097824c42bf41123a11d6",
+  "n": 841,
+  "dimension": 12,
+  "interpretation": "exact binary64 rays, mathematically normalized",
+  "passed": true,
+  "violating_pairs": 0,
+  "first_violating_pair_0based": null,
+  "max_cos_extended_precision": "0.49999999060774264972",
+  "integer_scale_power_of_two": 71,
+  "elapsed_seconds": 0.6950609516352415
+}

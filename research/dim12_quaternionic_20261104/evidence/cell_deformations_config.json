@@ -1,0 +1,13 @@
+{
+  "trials": 128,
+  "workers": 16,
+  "steps": 3000,
+  "rounds": 3,
+  "out": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/runs/cell_deformations",
+  "sources_sha256": {
+    "cell_deformations.py": "fe4fda7150958540ef1fc091dce9c4cda3a4f795e5c97d0fd9a968a2ac2f6d10",
+    "search.py": "2886cb320a5353034ba4c9b5a688e5642f5a32139d851381535d836fe28843d4",
+    "continuation.py": "708d69f28e55a78d77a29b119dc86cb53b02b57ceeac423750534d9ad2bc33b9",
+    "kernels.py": "fe73d2ec623adc720fdb7c6a54f85740be13923e48a8a2b0847dcb263f3b4ff8"
+  }
+}

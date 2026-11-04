@@ -1,0 +1,13 @@
+{
+  "run": "cp21_r3_s2123_gain",
+  "status": "INFEASIBLE",
+  "rank": 3,
+  "workers": 8,
+  "seconds": 0.062853878,
+  "total_seconds": 0.1515616662800312,
+  "best_component_size": null,
+  "hole_lower_bound": 0,
+  "branches": 1,
+  "conflicts": 0,
+  "target": "more than 960 points in one component; replicate in all four for a 21D improvement"
+}

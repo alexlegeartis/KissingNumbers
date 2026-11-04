@@ -1,0 +1,9 @@
+{
+  "trials": 2048,
+  "accepted": 1324,
+  "unique_lp_rays": 1098,
+  "group_order": 16,
+  "candidates": 3568,
+  "seconds": 11.808575011789799,
+  "exact_base_admission": true
+}

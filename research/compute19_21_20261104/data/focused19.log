@@ -1,0 +1,7 @@
+{"event": "focused_start", "dimension": 19, "fixed_points": 10668, "moving_points": 1793, "seconds": 180.0, "gradient_error": 4.4846240436491325e-11}
+{"event": "focused_progress", "dimension": 19, "restarts": 4, "evaluations": 296, "energy": 0.01555249923922501, "max_variable_dot": 0.5493080861020327, "seconds": 30.057225172407925}
+{"event": "focused_progress", "dimension": 19, "restarts": 6, "evaluations": 580, "energy": 0.01555249923922501, "max_variable_dot": 0.5493080861020327, "seconds": 60.06301885470748}
+{"event": "focused_progress", "dimension": 19, "restarts": 17, "evaluations": 1684, "energy": 0.015552499007239633, "max_variable_dot": 0.5493079773547039, "seconds": 90.07058379612863}
+{"event": "focused_progress", "dimension": 19, "restarts": 32, "evaluations": 3188, "energy": 0.015552498671584722, "max_variable_dot": 0.5493078150271717, "seconds": 120.07781787030399}
+{"event": "focused_progress", "dimension": 19, "restarts": 38, "evaluations": 3836, "energy": 0.015552498671584722, "max_variable_dot": 0.5493078150271717, "seconds": 150.08102138061076}
+{"dimension": 19, "count": 12461, "fixed_points": 10668, "restarts": 41, "evaluations": 4132, "seconds": 180.0553486570716, "best_energy": 0.015552498671584722, "max_variable_dot": 0.5493078150271717, "max_dot": 0.5493078150271717, "gradient_error": 4.4846240436491325e-11, "certified": false, "scope": "Numerical candidates only; exact checking is required for any new bound."}

@@ -1,0 +1,13 @@
+{
+  "name": "patches842",
+  "trials": 192,
+  "groups": [
+    {
+      "n": 842,
+      "trials": 192,
+      "best_max_cos": 0.500941566047482,
+      "best_index": 71,
+      "exact_successes": 0
+    }
+  ]
+}

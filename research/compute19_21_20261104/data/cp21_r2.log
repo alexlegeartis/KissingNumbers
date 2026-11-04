@@ -1,0 +1,2 @@
+{"event": "start", "run": "cp21_r2_s2122_gain", "words": 256, "rank": 2, "variables": 5632, "workers": 8, "seconds": 300.0}
+{"run": "cp21_r2_s2122_gain", "status": "INFEASIBLE", "rank": 2, "workers": 8, "seconds": 252.23791428, "total_seconds": 252.42670634947717, "best_component_size": null, "hole_lower_bound": 0, "branches": 1093707, "conflicts": 12329, "target": "more than 960 points in one component; replicate in all four for a 21D improvement"}

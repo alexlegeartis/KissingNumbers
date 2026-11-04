@@ -1,0 +1,17 @@
+{
+  "routes": [
+    "quaternion26",
+    "record26",
+    "prune844",
+    "record_global"
+  ],
+  "trials": 96,
+  "workers": 80,
+  "steps": 3500,
+  "rounds": 5,
+  "seed": 20261104,
+  "out": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_quaternionic_20261104/runs/ensemble_fast",
+  "started_utc": "2026-11-04T09:52:16Z",
+  "source_sha256": "2886cb320a5353034ba4c9b5a688e5642f5a32139d851381535d836fe28843d4",
+  "kernels_sha256": "fe73d2ec623adc720fdb7c6a54f85740be13923e48a8a2b0847dcb263f3b4ff8"
+}

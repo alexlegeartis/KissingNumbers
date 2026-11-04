@@ -1,0 +1,50 @@
+[
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_paper_audit_20261104/evidence/candidate_00.npy",
+    "sha256": "cbcbbe9f73b05f86ab75dac8104d8228da32e558151089ee4b3493d61fe6e2ab",
+    "n": 842,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 22281,
+    "first_violating_pair_0based": [
+      7,
+      16
+    ],
+    "max_cos_extended_precision": "0.50782244869033821185",
+    "integer_scale_power_of_two": 69,
+    "elapsed_seconds": 0.5873650088906288
+  },
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_paper_audit_20261104/evidence/candidate_01.npy",
+    "sha256": "8be89f0cd2c2cc4719937d49347b4ddb6581434f44f300fdc18b09505a9da220",
+    "n": 842,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 21796,
+    "first_violating_pair_0based": [
+      13,
+      24
+    ],
+    "max_cos_extended_precision": "0.50605622208625489515",
+    "integer_scale_power_of_two": 73,
+    "elapsed_seconds": 0.5652891853824258
+  },
+  {
+    "path": "/home/legeartis/KissingNumbers/KissingNumbers/research/dim12_paper_audit_20261104/evidence/candidate_02.npy",
+    "sha256": "0d1e400620e519cc25e01fa5eb30f8afdb632d4d56c5abdb28abc397ec1977d7",
+    "n": 842,
+    "dimension": 12,
+    "interpretation": "exact binary64 rays, mathematically normalized",
+    "passed": false,
+    "violating_pairs": 21653,
+    "first_violating_pair_0based": [
+      13,
+      24
+    ],
+    "max_cos_extended_precision": "0.5054926828212765102",
+    "integer_scale_power_of_two": 75,
+    "elapsed_seconds": 0.560369098559022
+  }
+]

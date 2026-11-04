@@ -1,0 +1,28 @@
+{
+  "run": "global_structured",
+  "status": "FEASIBLE",
+  "cap": 64,
+  "independent": true,
+  "radius": null,
+  "initial": 0,
+  "nonlinear": true,
+  "hint": true,
+  "optimize": true,
+  "workers": 24,
+  "trade_cuts": true,
+  "fixed_half": null,
+  "half_cuts": true,
+  "seconds": 300.21433020800004,
+  "total_seconds": 300.4820078490302,
+  "branches": 56,
+  "conflicts": 0,
+  "response_stats": "CpSolverResponse summary:\nstatus: FEASIBLE\nobjective: 64\nbest_bound: 49\nintegers: 1135\nbooleans: 1003\nconflicts: 0\nbranches: 56\npropagations: 544\ninteger_propagations: 1453\nrestarts: 0\nlp_iterations: 0\nwalltime: 300.214\nusertime: 300.214\ndeterministic_time: 10095.1\ngap_integral: 27407.2\nsolution_fingerprint: 0x9fcce54678207910\n",
+  "holes": 64,
+  "geometry": {
+    "selected": 960,
+    "unordered_pairs": 460320,
+    "maximum_dot": 82,
+    "squared_norm": 164
+  },
+  "hole_lower_bound": 49.0
+}

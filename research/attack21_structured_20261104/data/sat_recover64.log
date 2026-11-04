@@ -1,0 +1,2 @@
+{"event": "start", "run": "sat_recover64", "variables": 32624, "clauses": 59178, "seconds": 0.058922949247062206}
+{"run": "sat_recover64", "mode": "independent", "cap": 64, "radius": null, "initial": 0, "nonlinear": false, "hint": true, "solver": "cadical195", "workers": 1, "status": "SAT", "seconds": 19.444025022909045, "variables": 32624, "clauses": 59178, "stats": {"restarts": 12615, "conflicts": 235100, "decisions": 2305627, "propagations": 152287268}, "holes": 64, "geometry": {"selected": 960, "unordered_pairs": 460320, "maximum_dot": 82, "squared_norm": 164}}

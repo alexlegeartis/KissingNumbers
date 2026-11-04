@@ -1,0 +1,9 @@
+{"event": "polar_sampling", "trials": 256, "unique": 160, "seconds": 1.626012216322124}
+{"event": "polar_sampling", "trials": 512, "unique": 304, "seconds": 3.1071437569335103}
+{"event": "polar_sampling", "trials": 768, "unique": 443, "seconds": 4.518387272953987}
+{"event": "polar_sampling", "trials": 1024, "unique": 587, "seconds": 5.9574992107227445}
+{"event": "polar_sampling", "trials": 1280, "unique": 714, "seconds": 7.3588099693879485}
+{"event": "polar_sampling", "trials": 1536, "unique": 842, "seconds": 8.82933790050447}
+{"event": "polar_sampling", "trials": 1792, "unique": 974, "seconds": 10.286422761157155}
+{"event": "polar_sampling", "trials": 2048, "unique": 1098, "seconds": 11.75645519606769}
+{"trials": 2048, "accepted": 1324, "unique_lp_rays": 1098, "group_order": 16, "candidates": 3568, "seconds": 11.808575011789799, "exact_base_admission": true}

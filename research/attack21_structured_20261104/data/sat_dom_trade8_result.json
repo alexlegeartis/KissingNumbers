@@ -1,0 +1,21 @@
+{
+  "run": "sat_dom_trade8",
+  "mode": "domination",
+  "cap": 63,
+  "radius": 8,
+  "initial": 0,
+  "nonlinear": false,
+  "hint": false,
+  "solver": "glucose42",
+  "workers": 1,
+  "status": "UNKNOWN",
+  "seconds": 120.1796986469999,
+  "variables": 26872,
+  "clauses": 39798,
+  "stats": {
+    "restarts": 3226,
+    "conflicts": 813234,
+    "decisions": 1905165,
+    "propagations": 1210451330
+  }
+}

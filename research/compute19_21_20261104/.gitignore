@@ -1,0 +1,4 @@
+/search21
+/data/*.graph
+/data/*.search
+/data/*_candidate.npy

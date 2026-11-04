@@ -1,0 +1,22 @@
+[
+  {
+    "dimension": 19,
+    "known_optimum_or_incumbent": 1792,
+    "recovered": 1792,
+    "seconds": 0.00250342,
+    "workers": 8,
+    "empty_initial_set": true,
+    "independent_graph_check": "PASS",
+    "candidate_pool_contains_known_configuration": true
+  },
+  {
+    "dimension": 21,
+    "known_optimum_or_incumbent": 960,
+    "recovered": 922,
+    "seconds": 30.001,
+    "workers": 8,
+    "empty_initial_set": true,
+    "independent_graph_check": "PASS",
+    "candidate_pool_contains_known_configuration": true
+  }
+]

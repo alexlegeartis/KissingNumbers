@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-04",
+  "primary_source": "https://hexagonmath.org/pdf/2610.00248v1",
+  "source_sha256": {
+    "baselines.py": "642abf6c0ba77511ab928a7cf24e201f5ec1acc728c7857dc9643e77128500d7",
+    "cover19.py": "130c80922ef51632cc936fcdb3f52bfea5350f197b70b74a8c3c698516d47a54",
+    "gpu_focused.py": "96cfe5435c2fd38a26ce923776c10bed7e0d88ade709ecdf575683d2863f2f6d",
+    "gpu_search.py": "897a0b0b57e0a95a9b08109254ac3b9a1d92211d96ceff6003b4502dd6a3f74e",
+    "holes.py": "f7b2974bcba7e19069642ad490370e36c84e4318283a4e87e12f4a99ff4b5d02",
+    "polar19.py": "6ac745b5325b09e3029925fc8b0ffe615c2637e64eaa55bcbf84fb71cc520500",
+    "polish21.py": "07fb53ae44d50c7f3bdc4b640359f1193fdcbce07af2a28dfb4346a9b82b04b8",
+    "prepare19.py": "dc091d763b6ec0e96034ce58ef6b21b3ea6c715d0447075bfe59cec58f9901c4",
+    "prepare21.py": "0be48ac969b6c9b2c6d500bb3d7abdf17435e7df6f67799317dcf2930944b564",
+    "search21.cpp": "6a15c9a213815c41b7396c3fd77485450ff35a2192cfe107e773d350802a1303",
+    "solve21.py": "f11e2e8a49c39318724dbd72638de34b76bf4f8b70728ecac9b20bbd7921d165",
+    "solve_pool19.py": "51237640a9fcc74979d041fb17f6ca1c29194796a5e023c0af7beeaa94a3336d",
+    "verify21.py": "642218ba44078af8c1fa3fe8cc7938fcd846d23400a828138c9e27d028bcafea",
+    "verify_results.py": "365c3d4a39caa6190c550dd9a2b78a92bc7b9b3e111f4f3c0d5ec6394f1ba857"
+  },
+  "input_sha256": {
+    "baseline19.npz": "7979079145f87e4d68811ccab2fe4ba909d515a870fbbf05f168b8df1b8a1a1a",
+    "baseline21.npz": "1561e48250cef2c5c3e29107baa17dda710b7356c42ee1b51e5fedfa26153055",
+    "polar19_rays.npy": "5a1033dd61585ed3497a2c4be243dfa3c596c1c29525637e2dcaa528e2a1128d"
+  },
+  "summary_sha256": "690b3d053e7dab65fd999c187b17eb3f881a8d4bcaeb69564f7882043f6c02d3"
+}

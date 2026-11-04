@@ -1,0 +1,18 @@
+{
+  "run": "cut_ind_trade16",
+  "status": "UNKNOWN",
+  "cap": 63,
+  "independent": true,
+  "radius": 16,
+  "initial": 0,
+  "nonlinear": false,
+  "hint": true,
+  "optimize": false,
+  "workers": 16,
+  "trade_cuts": true,
+  "seconds": 240.122332856,
+  "total_seconds": 240.1726672295481,
+  "branches": 2605721,
+  "conflicts": 3444,
+  "response_stats": "CpSolverResponse summary:\nstatus: UNKNOWN\nobjective: 0\nbest_bound: 0\nintegers: 1218\nbooleans: 1133\nconflicts: 3444\nbranches: 2605721\npropagations: 64129276\ninteger_propagations: 102321832\nrestarts: 0\nlp_iterations: 145289\nwalltime: 240.122\nusertime: 240.122\ndeterministic_time: 4336.89\ngap_integral: 0\n"
+}

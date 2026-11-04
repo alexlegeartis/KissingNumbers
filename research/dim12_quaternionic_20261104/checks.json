@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    "equality",
+    "tiny_violation",
+    "tiny_slack",
+    "duplicate_rejected",
+    "zero_rejected",
+    "nonfinite_rejected",
+    "wrong_dimension_rejected",
+    "neighbor_bound_dimension_12",
+    "neighbor_bound_dimension_13",
+    "neighbor_bound_dimension_16",
+    "power_and_rank_penalty_gradients",
+    "cyclic_group_and_gradient",
+    "clique_search_vs_brute_force",
+    "balanced_family_exact_support_and_gradient",
+    "family_hole_gradient"
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "paper": "https://arxiv.org/abs/2606.18984v2",
+  "exact_clebsch840_pair_test": true,
+  "tested_sign_vectors": 4096,
+  "inequivalent_initial_841_gram_histograms": 3,
+  "classes": {
+    "0": {
+      "count": 1024,
+      "parity_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "representative": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1
+      ]
+    },
+    "1": {
+      "count": 2048,
+      "parity_pairs": [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "representative": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1
+      ]
+    },
+    "2": {
+      "count": 1024,
+      "parity_pairs": [
+        [
+          -1,
+          -1
+        ]
+      ],
+      "representative": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    }
+  },
+  "adam_roundoff_divergence_after_10_steps": 0.0003934057437975369,
+  "adam_roundoff_trace": [
+    {
+      "step": 1,
+      "coordinate_error": 1.6264767310758543e-14,
+      "gradient_error": 2.710505431213761e-19
+    },
+    {
+      "step": 2,
+      "coordinate_error": 3.9457326295178063e-13,
+      "gradient_error": 1.0950420021817362e-17
+    },
+    {
+      "step": 3,
+      "coordinate_error": 1.04567465797345e-11,
+      "gradient_error": 3.4924836114807286e-16
+    },
+    {
+      "step": 4,
+      "coordinate_error": 1.8781853849958452e-10,
+      "gradient_error": 9.582085957261345e-15
+    },
+    {
+      "step": 5,
+      "coordinate_error": 3.0110285376139245e-09,
+      "gradient_error": 1.7521838305287751e-13
+    },
+    {
+      "step": 6,
+      "coordinate_error": 4.661952257567492e-08,
+      "gradient_error": 2.837738101786978e-12
+    },
+    {
+      "step": 7,
+      "coordinate_error": 6.341217531069532e-07,
+      "gradient_error": 4.419282842867708e-11
+    },
+    {
+      "step": 8,
+      "coordinate_error": 7.1587692901387e-06,
+      "gradient_error": 6.027144859040126e-10
+    },
+    {
+      "step": 9,
+      "coordinate_error": 7.81745842347581e-05,
+      "gradient_error": 6.842798926331409e-09
+    },
+    {
+      "step": 10,
+      "coordinate_error": 0.0003934057437975369,
+      "gradient_error": 7.141613974184811e-08
+    }
+  ],
+  "local_inverse_and_condition4_exact": true,
+  "archive": {
+    "arrays": 500,
+    "trajectory_labels": 160,
+    "satisfying_constraints_to_1e8": 7,
+    "satisfying_constraints_to_1e5": 50,
+    "smallest_violation": 0.0,
+    "largest_violation": 9.990869429643556e-05,
+    "approximate_frame_spectrum_groups": 494,
+    "common_spectra": [
+      {
+        "spectrum": [
+          7.617,
+          7.644,
+          7.66,
+          7.697,
+          8.008,
+          9.374
+        ],
+        "count": 3
+      },
+      {
+        "spectrum": [
+          7.615,
+          7.631,
+          7.67,
+          7.697,
+          8.007,
+          9.38
+        ],
+        "count": 2
+      },
+      {
+        "spectrum": [
+          7.6,
+          7.648,
+          7.689,
+          7.712,
+          8.008,
+          9.343
+        ],
+        "count": 2
+      },
+      {
+        "spectrum": [
+          7.595,
+          7.605,
+          7.632,
+          7.683,
+          8.001,
+          9.484
+        ],
+        "count": 2
+      },
+      {
+        "spectrum": [
+          7.554,
+          7.586,
+          7.609,
+          7.662,
+          8.007,
+          9.582
+        ],
+        "count": 2
+      },
+      {
+        "spectrum": [
+          7.615,
+          7.625,
+          7.658,
+          7.696,
+          8.021,
+          9.384
+        ],
+        "count": 1
+      },
+      {
+        "spectrum": [
+          7.615,
+          7.625,
+          7.658,
+          7.695,
+          8.021,
+          9.385
+        ],
+        "count": 1
+      },
+      {
+        "spectrum": [
+          7.615,
+          7.625,
+          7.658,
+          7.695,
+          8.021,
+          9.386
+        ],
+        "count": 1
+      }
+    ]
+  },
+  "source_files": {
+    "search_841_riesz.py": {
+      "bytes": 9113,
+      "sha256": "bb89913f99bc9542a46f47fbf4afacf1823bc66fc7bb18e4a7a14871830efb16"
+    },
+    "paper.txt": {
+      "bytes": 48354,
+      "sha256": "354c487f60188b75d230bc3e9d55d7ceeafb3481ec93d1b15c934187b06e49d0"
+    },
+    "paper.pdf": {
+      "bytes": 1403713,
+      "sha256": "8ff4c28f1e00e6c83dff98d5c4d0c5052ac30aa8a0395df1eec35945442bd9ae"
+    },
+    "checking.ipynb": {
+      "bytes": 8303,
+      "sha256": "a3520e9f2f9623b71e2d21038b6ff63b26c6c2cb32ebdc3e6b070851652315f0"
+    },
+    "gram841_coordinates.txt": {
+      "bytes": 208996,
+      "sha256": "995264fe8be616cc546f04ef542dbf4ef6effe9ba5dfa4ceec1aa7e069f476a9"
+    },
+    "saved_48_systems.zip": {
+      "bytes": 2269156,
+      "sha256": "822bc1b6dec825bbbc53e4054b45f4ea60528645e183216902c6e025cc9a0200"
+    },
+    "polish_841.py": {
+      "bytes": 4493,
+      "sha256": "5de63da43cdd2cea943bcff3b9635abb0354a004e909d6c16e5a700f9becdef0"
+    }
+  }
+}

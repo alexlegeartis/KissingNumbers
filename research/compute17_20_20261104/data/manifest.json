@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-04",
+  "python": "3.10.13",
+  "baseline": {
+    "17": 5730,
+    "20": 19448
+  },
+  "source_review": {
+    "paper": "https://arxiv.org/html/2411.04916v3",
+    "table": "https://cohn.mit.edu/kissing-numbers/",
+    "table_direct_fetch": "HTTP 502; matching indexed result retrieved"
+  },
+  "inputs": {
+    "pool17.npz": "b86555a1d6a28db0cee5af1bb143bd659536f19b9a50793c3bf6b4d8ea473004",
+    "seed17.txt": "927fce5d7af5493929cdf17a5da71fe99a1ee2f199d358cb95a736e76aaeac3e",
+    "preparation17.json": "bdaa62b329bc64de5dd0af3d4b4ca1117c0fba112f6768f3632d33ca18c119e4",
+    "profiles20.json": "f39478860d474f624b9cd9503538c2db4b292954570caafe8009bbaef79131f8",
+    "profile_ceiling_certificate.json": "a7605a50fcfa49d71b87cb50939fee2f7c5db2cf52816f8d2c081fe5eacff347",
+    "independent_verification.json": "ce9660c7b58cc639751fb5a280efa8a265b5a82320d19488022be214bb27375f"
+  },
+  "final_summary_sha256": "1d958391df72b318a9343c6277e6514b2fee9a9ce5e4310cc25e1b82c04c01fb",
+  "source_sha256": {
+    "build_graph.cpp": "7176a2407d103993f6b223fdab77324d1dcdfdc383427210181431b53c5da4f1",
+    "certify_profiles20.py": "07b5e2a8e6e8b78f9137e0269ce2447004575f0c6c41d1fb8d72eae2d5b593c0",
+    "clique_cover.cpp": "92e94da4c4969e0f814137e0e40d50f975c883720bc1bb380fa6fc7fbf9c53cb",
+    "continuous.py": "6c3c8052201c069f74a8fd3d149c565e7116433001bdada260fb28bfd6af2abf",
+    "export_search.py": "30a36231658f11f81cf6139c89f143b60a4b22ecd4719754e1a93b02b597f076",
+    "gpu_deform.py": "a73519877dd288d15658dc8f48d357967c22375c060fd9e5b2587527b7de9b56",
+    "holes.py": "6cbc0b975c2aa1c23414bb4bdcee17e74ae82418aa523a51a228ad3bfc96e83c",
+    "orbits17.py": "d2403a6398196eb099d7aabbb5f14c72849f17247757cbc19c299895ce10cc36",
+    "prepare17.py": "3186e700cf530857dc04693edf20d32bbb870dce7e711ec4feca766ee370a8ae",
+    "prepare20.py": "f6488f1d3e5d27b9383f7566517b51bbed7db8a8df8043bd4f250d37d03fdf38",
+    "profiles20.py": "44217f47296fba531956b976855263bbf853ca3d38c794321fa8323076c47388",
+    "search.cpp": "02849abdfb4cfb59c7f759320d6b67c718ca22aba5eedaf48a7e42524367e98c",
+    "solve_quotient.py": "b333cd11a0554b2372a0b1289dbe6b9a1d4d0fd07a5cbde20e97a9bbbab5b00a",
+    "summarize.py": "62eaf599e59a1d6a9c49804c475f5028024120c6875ddfa9f6fad3a367bad68e",
+    "verify.py": "1c8b49732bff3a71cd6cb81a2927872e443c71cc4106fb3fbc421d5cae261e70"
+  }
+}

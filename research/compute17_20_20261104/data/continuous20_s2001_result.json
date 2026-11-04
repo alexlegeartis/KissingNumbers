@@ -1,0 +1,12 @@
+{
+  "dimension": 20,
+  "count": 19449,
+  "seed": 2001,
+  "seconds": 480.2083459664136,
+  "evaluations": 141,
+  "best_energy": 0.012661841101600516,
+  "max_dot": 0.5470786399469189,
+  "status": "TIME_LIMIT",
+  "certified": false,
+  "scope": "Numerical exploration only; any record needs an exact subsequent certificate."
+}

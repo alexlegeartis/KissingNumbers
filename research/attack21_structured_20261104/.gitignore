@@ -1,0 +1,6 @@
+__pycache__/
+*.bin
+*.cnf
+*.drat
+*.lrat
+*.exe

@@ -1,0 +1,11 @@
+{
+  "nodes": 20736,
+  "conflicting_pairs": 52171776,
+  "whole_cell_seeds": 1454,
+  "graph_sha256": "19fd9f2cc1babe0797e3630b21eff499bdcd72d932ece4364a1a4c9b1770388f",
+  "arithmetic": "Exact comparison of (a+b sqrt(2))/8 to 1/2",
+  "target_orbits": 97,
+  "target_points": 848,
+  "axial_points": 72,
+  "elapsed_seconds": 2.3481700643897057
+}
