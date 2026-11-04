@@ -13,6 +13,7 @@ import itertools
 import numpy as np
 from scipy.optimize import milp, Bounds, LinearConstraint
 from scipy.sparse import coo_matrix
+from scipy.sparse.csgraph import maximum_bipartite_matching
 
 
 def _dot(a, g, b):
@@ -76,6 +77,22 @@ def search(points, metric, seeds=None, pair_limit=100000, candidate_limit=5000,
              'blocker_limit':blocker_limit,'arithmetic':'bounded int64' if fast else 'Python integers','source_validity':'assumed; independently verify input','metric_positive_definiteness':'assumed; independently verify input'}
     if not m:return {'gain':0,'removed':[],'added':[],'receipt':receipt}
     blocked_ids=sorted({j for bad in blockers for j in bad}); pos={j:k for k,j in enumerate(blocked_ids)}; nb=len(blocked_ids)
+    # A matching saturating every candidate assigns it a distinct mandatory
+    # incumbent deletion. Hence *every* candidate subset costs at least its
+    # size, independently of candidate-candidate conflicts or solver bounds.
+    if nb>=m:
+        mr=[];mc=[]
+        for i,bad in enumerate(blockers):
+            for j in bad:mr.append(i);mc.append(pos[j])
+        incidence=coo_matrix((np.ones(len(mr),dtype=np.int8),(mr,mc)),shape=(m,nb)).tocsr()
+        matching=maximum_bipartite_matching(incidence,perm_type='column')
+        if len(matching)==m and np.all(matching>=0):
+            assigned=[blocked_ids[int(k)] for k in matching]
+            if len(set(assigned))!=m or any(j not in blockers[i] for i,j in enumerate(assigned)):
+                raise ArithmeticError('invalid matching certificate')
+            receipt['combinatorial_bound']='matching saturates all generated candidates'
+            receipt['matching_source_indices']=assigned
+            return {'gain':0,'removed':[],'added':[],'receipt':receipt}
     rows=[];cols=[];values=[];upper=[]
     def edge(a,b,old):
         r=len(upper);rows.extend((r,r));cols.extend((a,b));values.extend((1,-1 if old else 1));upper.append(0 if old else 1)
@@ -117,6 +134,12 @@ class ContactSearch(unittest.TestCase):
   self.assertEqual(set(old),{(2,-1,-1)})
   out=search(X,[[1,0,0],[0,1,0],[0,0,1]])
   self.assertEqual(out['gain'],1);self.assertEqual(len(out['removed']),1);self.assertEqual(len(out['added']),2)
+ def test_matching_certificate_prunes_all_subsets(self):
+  X=[[-1,2,-1],[-2,1,1],[1,-2,-1],[2,1,-1],[1,-1,2],[-1,-2,1],[-1,-1,-2],[1,2,1]]
+  out=search(X,[[1,0,0],[0,1,0],[0,0,1]])
+  self.assertEqual(out['gain'],0)
+  self.assertEqual(out['receipt']['combinatorial_bound'],'matching saturates all generated candidates')
+  self.assertEqual(len(set(out['receipt']['matching_source_indices'])),out['receipt']['candidates_after_filter'])
  def test_python_integer_fallback(self):
   K=10**30;G=[[2*K,-K],[-K,2*K]];X=[[1,0],[0,1],[1,1],[-1,0],[0,-1]]
   out=search(X,G);self.assertEqual(out['gain'],1);self.assertEqual(out['receipt']['arithmetic'],'Python integers')
