@@ -36,3 +36,22 @@ proof certificate is `five_flat_clique_certificate.json`. Both verifiers use
 integer comparisons, reconstruct flat compatibility independently, and check
 each reported clique directly against the 32 sign operations. No numerical
 MILP status is used as a proof.
+
+## Partial-orbit discovery experiment
+
+`rank4_prepare.py` and `rank4_coupling.cpp` split the sign group to an
+index-two subgroup. This gives 3,840 tier and 128 flat orbits of 16 points.
+`rank4_joint_search.py` proposes partially selected flat cosets and solves
+the corresponding one-hemisphere tier refill problem. It is a search, not
+an exact upper-bound certificate. Even an improved one-hemisphere output
+must be combined with a compatible opposite hemisphere and independently
+verified before it yields a 17D lower bound.
+
+    python research/mixed_tier17_20261104/rank4_prepare.py
+    c++ -O3 -std=c++17 research/mixed_tier17_20261104/rank4_coupling.cpp -o /tmp/mixed17-rank4
+    /tmp/mixed17-rank4
+    MIXED17_TRIALS=1500 MIXED17_MILP_SECONDS=3 python research/mixed_tier17_20261104/rank4_joint_search.py
+
+The random seed is fixed. The search samples flat sets near one initial
+configuration; it is not exhaustive and its current runs have not found
+a new record.
