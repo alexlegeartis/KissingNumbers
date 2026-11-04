@@ -1,0 +1,10 @@
+{"n": 7, "blocks": 7, "points": 126, "status": 0, "seconds": 0.020092738000016652, "bound": -7.0}
+{"n": 8, "blocks": 14, "points": 240, "status": 0, "seconds": 0.0029397509999853355, "bound": -14.000000000000014}
+{"n": 9, "blocks": 18, "points": 306, "status": 0, "seconds": 0.4318389260000117, "bound": -17.999999999999982}
+{"n": 10, "blocks": 30, "points": 500, "status": 0, "seconds": 0.22413151700001777, "bound": -29.999999999999986}
+{"n": 11, "blocks": 35, "points": 582, "status": 1, "seconds": 5.002830375000002, "bound": -38.0}
+{"n": 12, "blocks": 45, "points": 744, "status": 1, "seconds": 5.003150595000022, "bound": -54.0}
+{"n": 13, "blocks": 57, "points": 938, "status": 1, "seconds": 5.003979068000007, "bound": -68.0}
+{"n": 14, "blocks": 77, "points": 1260, "status": 1, "seconds": 5.004632289999989, "bound": -90.99999999999865}
+{"n": 15, "blocks": 89, "points": 1454, "status": 1, "seconds": 5.029103046999978, "bound": -110.0}
+{"n": 16, "blocks": 72, "points": 1184, "status": 1, "seconds": 5.05002398100001, "bound": -139.99999999999858}

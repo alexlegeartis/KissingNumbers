@@ -1,0 +1,398 @@
+{
+  "source": "verifications/improved/dim27-31-joint-refills/data/coordinates28_221988.npz",
+  "source_sha256": "509b7894dd8534946a81d8bfd354c9ef947e4fe5c82482796aac76799169f129",
+  "source_fresh_full_verification": {
+    "status": "PASS",
+    "dimension": 28,
+    "points": 221988,
+    "squared_norm": 128,
+    "inner_product_limit": 64,
+    "antipodal_pairs": 110960,
+    "unpaired_points": 68,
+    "distinct_line_pairs_checked": 6156005320,
+    "paired_to_unpaired_checks": 7545280,
+    "unpaired_pairs_checked": 2278,
+    "unordered_point_pairs_covered": 24639225078,
+    "maximum_checked_product": 64,
+    "canonical_point_sha256": "ee6bfb5828c418969fe747b0181249a6338cf05eede8acdbc58f82de41b0ce29",
+    "file_sha256": "509b7894dd8534946a81d8bfd354c9ef947e4fe5c82482796aac76799169f129",
+    "arithmetic": "Exact bounded integer products in binary32; no tolerance",
+    "seconds": 20.5129855160003
+  },
+  "full_sextet_partitions": 1771,
+  "outside_normal_octad_subfamily": 1736,
+  "planned_words": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "attempted_words": 4,
+  "records": [
+    {
+      "common": 153374,
+      "exclusive_source": 68614,
+      "exclusive_candidates": 68614,
+      "blocker_limit": 8,
+      "dot_products": 1693717384,
+      "state": "complete",
+      "restricted_candidates": 19372,
+      "pruned_candidates": 49242,
+      "edges": 77720,
+      "matching_size": 19372,
+      "vertex_cover_size": 19372,
+      "gain": 0,
+      "removed": 0,
+      "added": 0,
+      "total": 221988,
+      "arithmetic": "exact bounded integer binary32 products; no tolerance",
+      "seconds": 13.795591993000016,
+      "scope": "maximum compatible subset of this blocker-restricted two-copy union only",
+      "word": [
+        0
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            7,
+            10,
+            12
+          ],
+          [
+            5,
+            14,
+            17,
+            23
+          ],
+          [
+            6,
+            9,
+            11,
+            22
+          ],
+          [
+            8,
+            15,
+            16,
+            19
+          ],
+          [
+            13,
+            18,
+            20,
+            21
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 152482,
+      "exclusive_source": 69506,
+      "exclusive_candidates": 69506,
+      "blocker_limit": 8,
+      "dot_products": 1703036628,
+      "state": "complete",
+      "restricted_candidates": 20170,
+      "pruned_candidates": 49336,
+      "edges": 80908,
+      "matching_size": 20170,
+      "vertex_cover_size": 20170,
+      "gain": 0,
+      "removed": 0,
+      "added": 0,
+      "total": 221988,
+      "arithmetic": "exact bounded integer binary32 products; no tolerance",
+      "seconds": 12.521687036000003,
+      "scope": "maximum compatible subset of this blocker-restricted two-copy union only",
+      "word": [
+        1
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            4
+          ],
+          [
+            3,
+            7,
+            10,
+            12
+          ],
+          [
+            5,
+            9,
+            18,
+            19
+          ],
+          [
+            6,
+            8,
+            14,
+            20
+          ],
+          [
+            11,
+            15,
+            17,
+            21
+          ],
+          [
+            13,
+            16,
+            22,
+            23
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 152876,
+      "exclusive_source": 69112,
+      "exclusive_candidates": 69112,
+      "blocker_limit": 8,
+      "dot_products": 1660713712,
+      "state": "complete",
+      "restricted_candidates": 19722,
+      "pruned_candidates": 49390,
+      "edges": 79128,
+      "matching_size": 19722,
+      "vertex_cover_size": 19722,
+      "gain": 0,
+      "removed": 0,
+      "added": 0,
+      "total": 221988,
+      "arithmetic": "exact bounded integer binary32 products; no tolerance",
+      "seconds": 12.400802154000303,
+      "scope": "maximum compatible subset of this blocker-restricted two-copy union only",
+      "word": [
+        0,
+        1
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            7,
+            10,
+            12
+          ],
+          [
+            5,
+            14,
+            17,
+            23
+          ],
+          [
+            6,
+            9,
+            11,
+            22
+          ],
+          [
+            8,
+            15,
+            16,
+            19
+          ],
+          [
+            13,
+            18,
+            20,
+            21
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            2,
+            4
+          ],
+          [
+            3,
+            7,
+            10,
+            12
+          ],
+          [
+            5,
+            9,
+            18,
+            19
+          ],
+          [
+            6,
+            8,
+            14,
+            20
+          ],
+          [
+            11,
+            15,
+            17,
+            21
+          ],
+          [
+            13,
+            16,
+            22,
+            23
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 152876,
+      "exclusive_source": 69112,
+      "exclusive_candidates": 69112,
+      "blocker_limit": 8,
+      "dot_products": 1660713712,
+      "state": "complete",
+      "restricted_candidates": 19722,
+      "pruned_candidates": 49390,
+      "edges": 79128,
+      "matching_size": 19722,
+      "vertex_cover_size": 19722,
+      "gain": 0,
+      "removed": 0,
+      "added": 0,
+      "total": 221988,
+      "arithmetic": "exact bounded integer binary32 products; no tolerance",
+      "seconds": 11.998107737000282,
+      "scope": "maximum compatible subset of this blocker-restricted two-copy union only",
+      "word": [
+        1,
+        0
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            4
+          ],
+          [
+            3,
+            7,
+            10,
+            12
+          ],
+          [
+            5,
+            9,
+            18,
+            19
+          ],
+          [
+            6,
+            8,
+            14,
+            20
+          ],
+          [
+            11,
+            15,
+            17,
+            21
+          ],
+          [
+            13,
+            16,
+            22,
+            23
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            7,
+            10,
+            12
+          ],
+          [
+            5,
+            14,
+            17,
+            23
+          ],
+          [
+            6,
+            9,
+            11,
+            22
+          ],
+          [
+            8,
+            15,
+            16,
+            19
+          ],
+          [
+            13,
+            18,
+            20,
+            21
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    }
+  ],
+  "best_cardinality": 221988,
+  "seconds": 51.708908791000795,
+  "limits": {
+    "out": "/tmp/competitive28-outside-completed-20261104",
+    "frames": 2,
+    "blocker_limit": 8,
+    "seconds": 120.0,
+    "max_checks": 4000000000,
+    "max_edges": 1000000,
+    "composites": true
+  },
+  "scope": "bounded restricted two-copy exchanges from the current competitive baseline; no unrestricted nonexistence or global priority claim",
+  "status": "complete_in_declared_restricted_pool"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_FOR_DISJOINT_TRANSLATES_ONLY",
+  "unrestricted_union_status": "unresolved",
+  "scalar_extensions": 16,
+  "repeated_masks": 256,
+  "largest_disjoint_translate_point_upper_bound": 262144,
+  "comparison32": 352800,
+  "scope": "Pairwise-disjoint repeated8bit-mask translate unions only. General unions after point deduplication remain unresolved; distance0 does not establish a positive-distance failure.",
+  "elapsed_seconds": 2.411325422000118,
+  "checker_sha256": "d4c010c572e5d65226e4c9e2075a36e997a7336337d7d8442c18a25630bccc36"
+}

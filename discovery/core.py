@@ -13,6 +13,8 @@ DEFAULT_BUDGET = {
     'max_codewords': 262144, 'max_orbit_points': 10000,
     'max_trials': 200, 'solver_seconds': 30, 'max_dgls_words': 16777216,
     'max_dimension': 256, 'max_nodes': 100,
+    'max_gram_entries': 2000000, 'max_rank_work': 50000000,
+    'max_rational_bits': 4096,
 }
 
 

@@ -118,3 +118,14 @@ indices, budgets, cutoffs, failed reasons, output statuses, and receipt hashes.
 Receipts replay mathematical evidence. Their hashes detect changed contents;
 they do not authenticate authorship, prove novelty, or establish unrestricted
 optimality.
+
+## Typed DAG synthesis
+
+The separate `plan` command now chooses operators, parameters and earlier input
+nodes from a finite catalogue rather than requiring graph slots and edge
+alternatives. It keeps a transactional checkpoint, supports resume, and exposes
+separate enumeration and quality outcomes. Its input contracts support the
+runner's per-position kind alternatives, including integer/Gram gluing. Exact
+coordinate, implicit, Gram and quadratic spherical outputs are eligible for
+independently verified ranking in both search interfaces; mathematical
+preconditions remain runtime checks. See [TYPED_PLANNER.md](TYPED_PLANNER.md).

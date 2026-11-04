@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-04",
+  "dimension": 13,
+  "discovery_outcome": "no_exact_1155_or_larger_witness",
+  "control_provenance": "known-result formula reconstruction; not discovery priority",
+  "verified_controls": {
+    "program": "program_H2.json",
+    "receipt": "program_H2_receipt.json",
+    "cardinality": 1154,
+    "rank_exact": 13,
+    "pairs_checked": 665281
+  },
+  "experiments": [
+    {
+      "result_file": "results.json",
+      "scope": "125874 integer directions; <=5 old blockers; 8 seeds",
+      "runs": 8,
+      "maximum_observed_gain": 0,
+      "proof_strength": "numerical_search_only",
+      "execution_statuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "result_file": "expanded_results.json",
+      "scope": "175442 directions; <=8 old blockers; cheapest3200; 3 seeds;20seconds each",
+      "runs": 3,
+      "maximum_observed_gain": 0,
+      "proof_strength": "numerical_search_only",
+      "execution_statuses": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "result_file": "small_trade_results.json",
+      "scope": "single blocker sets and12000 sampled pairunions; removal size<=12",
+      "runs": 3,
+      "maximum_observed_gain": 0,
+      "proof_strength": "numerical_search_only",
+      "execution_statuses": [
+        "trade_enumeration_completed",
+        "trade_enumeration_completed",
+        "trade_enumeration_completed"
+      ]
+    },
+    {
+      "result_file": "unequal_height_results.json",
+      "scope": "555552 unequal-height points; full blocker profiles;300 cheapest per5families;3seeds",
+      "runs": 3,
+      "maximum_observed_gain": 0,
+      "proof_strength": "numerical_search_only",
+      "execution_statuses": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "negative_result_scope": "bounded numerical conflict models and sampled trades; not exact exclusions or global upper bounds",
+  "source_hashes": {
+    "paper.html": "65a2cecda794e976a9bafb2becaec908d3a8a282cf9bba37a37b7ae39d0ce0bf",
+    "ze99.md": "ee9514bf4680140a8608e12ea803358230b4ffed19cb74eef646ffe8f929c709"
+  },
+  "code_hashes": {
+    "research/coupled13/experiment.py": "a687bc80119f9403779027781b0970c5cfa3e82fd8c10ec3cf46c86d0a274899",
+    "research/coupled13/expanded.py": "1bf13a1553acf1bd6899d387d33d31517c37e5e4f972678660f84762c82bd174",
+    "research/coupled13/small_trades.py": "7d5aa5905616ae4dedabbd7beaaa8a78af1ca73488eaac688586019c9b67fba6",
+    "research/coupled13/unequal_heights.py": "47086a5232b4240be44e9735a1e6b8402f72ce67f65a7c03711667bc678134cd",
+    "discovery/engines/signed_layers.py": "dcea56ad4dbd0154d7a302eff6858174fdd5a6776a7a8ece337d177ad24c2672"
+  },
+  "recorded_control_baseline": 1154
+}

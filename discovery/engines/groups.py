@@ -9,6 +9,7 @@ from __future__ import annotations
 from fractions import Fraction
 from itertools import combinations, product
 from math import isfinite, lcm
+from hashlib import sha256
 
 import numpy as np
 
@@ -221,6 +222,33 @@ def phase_block(vector_orbit, order, offset=0.0):
     return full[np.sort(indices)], phases[:, None] * vector_orbit[0]
 
 
+def _block_fingerprint(full):
+    """Order-independent numerical identity at the same seven-digit screening precision."""
+    quantized = np.rint(np.c_[full.real, full.imag] * 10**7).astype(np.int64)
+    order = np.lexsort(quantized[:, ::-1].T)
+    return (quantized.shape, sha256(quantized[order].astype("<i8", copy=False).tobytes()).hexdigest())
+
+
+def _bounded_phase_block(vector_orbit, order, limit):
+    """Deduplicate while constructing; a raw m*N estimate can greatly overcount."""
+    if len(vector_orbit) > limit:
+        return None
+    if len(vector_orbit) * order <= limit:
+        return phase_block(vector_orbit, order)
+    phases = np.exp(2j * np.pi * np.arange(order) / order)
+    rows, seen = [], set()
+    for phase in phases:
+        for vector in vector_orbit * phase:
+            key = _key(vector)
+            if key in seen:
+                continue
+            if len(rows) == limit:
+                return None
+            seen.add(key)
+            rows.append(vector)
+    return np.asarray(rows), phases[:, None] * vector_orbit[0]
+
+
 def compressed_max_cosine(representatives, full, exclude_identical=False):
     gram = (representatives @ full.conj().T).real
     if exclude_identical:
@@ -307,30 +335,48 @@ def search(inputs, params, context):
     orbits, diagnostics, sampling_limit = _sample_orbits(generators, trials, linecap, seed, max_candidates, max_orbits)
     blocks, representatives, inventory = [], [], []
     materialized, materialization_limit = 0, False
+    block_fingerprints, duplicates_skipped = set(), 0
     for i, lines in enumerate(orbits):
         vectors, status = orbit(lines[0], generators, vectorcap)
-        entry = {"orbit": i, "lines": len(lines), "vectors": len(vectors), "vector_status": status, "accepted_phase_orders": []}
+        entry = {"orbit": i, "lines": len(lines), "vectors": len(vectors), "vector_status": status, "accepted_phase_orders": [],
+                 "admitted_blocks": 0, "duplicate_blocks_skipped": 0, "capacity_blocks_skipped": 0}
         inventory.append(entry)
         if status != "closed_numerically":
             continue
         if compressed_max_cosine(vectors[:1], vectors, True) > 0.5 + 1e-8:
             continue
+        prepared = []
         for order in sorted(set(orders)):
-            if len(vectors) * order > max_points:
+            bounded = _bounded_phase_block(vectors, order, max_points)
+            if bounded is None:
                 materialization_limit = True
                 continue
-            full, reps = phase_block(vectors, order)
+            full, reps = bounded
             if compressed_max_cosine(reps, full, True) > 0.5 + 1e-8:
                 continue
             entry["accepted_phase_orders"].append(order)
-            for step in range(phase_steps):
+            prepared.append((order, full, reps))
+        # Give each phase order its first candidate before filling one order's
+        # entire grid. Antipodal vector orbits often make orders 1/2 or 3/6
+        # identical, and invariant phase shifts also repeat whole blocks.
+        for step in range(phase_steps):
+            for order, full, reps in prepared:
+                phase = np.exp(2j * np.pi * step / (2 * phase_steps))
+                candidate = full * phase
+                fingerprint = _block_fingerprint(candidate)
+                if fingerprint in block_fingerprints:
+                    duplicates_skipped += 1
+                    entry["duplicate_blocks_skipped"] += 1
+                    continue
                 if len(blocks) >= max_blocks or materialized + len(full) > max_points:
                     materialization_limit = True
-                    break
-                phase = np.exp(2j * np.pi * step / (2 * phase_steps))
-                blocks.append((f"o{i}:m{order}:phase{step}/{2 * phase_steps}", full * phase))
+                    entry["capacity_blocks_skipped"] += 1
+                    continue
+                block_fingerprints.add(fingerprint)
+                blocks.append((f"o{i}:m{order}:phase{step}/{2 * phase_steps}", candidate))
                 representatives.append(reps * phase)
                 materialized += len(full)
+                entry["admitted_blocks"] += 1
     selection_params = dict(params)
     seconds = params.get("solver_seconds", 10)
     if isinstance(seconds, bool) or not isinstance(seconds, (int, float)) or not np.isfinite(seconds) or not 0 < seconds <= 3600:
@@ -349,6 +395,10 @@ def search(inputs, params, context):
                        "max_blocks": max_blocks, "max_materialized_points": max_points,
                        "max_output_points": max_output},
             "sampling_limit_reached": sampling_limit, "materialization_limit_reached": materialization_limit,
+            "block_coverage": {"unique_blocks_admitted": len(blocks), "admitted_point_rows": materialized,
+                               "duplicate_blocks_skipped": duplicates_skipped,
+                               "identity_precision_decimal_digits": 7,
+                               "schedule": "phase step then phase order within each closed orbit; orbit discovery order unchanged"},
             "closure_failures": sum(item["status"] != "closed_numerically" for item in diagnostics),
             "cross_checks": "one representative per constituent vector orbit against full other block"}
     within_pairs = count * (count - 1) // 2 <= budget.get("max_pairs", 10000000)

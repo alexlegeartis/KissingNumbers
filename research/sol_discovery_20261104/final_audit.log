@@ -1,0 +1,406 @@
+/workspace/KissingNumbers-sol/audit.py:1026: SyntaxWarning: invalid escape sequence '\*'
+  _an = re.search(u'\*\*Registered comparison scope\.\*\* Dimensions ([^.]+)\.', _wr)
+/workspace/KissingNumbers-sol/audit.py:1031: SyntaxWarning: invalid escape sequence '\d'
+  for _a, _b, _c in re.findall(u'(\d+)\s*[-–]\s*(\d+)|(\d+)', _an.group(1)):
+/workspace/KissingNumbers-sol/audit.py:1775: SyntaxWarning: invalid escape sequence '\.'
+  _plus = re.search(u'plus dimensions([^.]*)\.', _rr)
+/workspace/KissingNumbers-sol/audit.py:1778: SyntaxWarning: invalid escape sequence '\d'
+  for _a, _b, _c in re.findall(u'(\d+)\s*[-–]\s*(\d+)|(\d+)', _plus.group(1)):
+/workspace/KissingNumbers-sol/audit.py:1914: SyntaxWarning: invalid escape sequence '\|'
+  _pat = re.compile(u'^\| (\d+) \| ([0-9  ]+) \| \*\*([0-9  ]+)\*\*', re.M)
+Consistency audit of every claim in this repository.
+
+    python audit.py
+    python audit.py --repository-only   # omit checks of the surrounding workspace
+
+This does NOT re-prove anything -- each package's own script does that. What it does is
+check that the claims are mutually consistent, agree with the published state of the art,
+and respect the elementary facts that tau is non-decreasing and bounded above by the records
+in higher dimensions. A construction can be individually correct and collectively wrong; this
+catches the second kind of error, which is the kind that survives a careful reading.
+
+Where a claim is cheap to recompute, it is recomputed here rather than quoted:
+
+  * dimension 71 comes from theta.py, exactly, in a fraction of a second;
+  * dimensions 49-63, 73-80 and 81-95 are recomputed from the shipped class-size tables;
+  * the rest are quoted, each with the script that establishes it.
+
+CHECKS
+  1. every claim strictly exceeds the best previously published value in its dimension,
+     with that value taken from common/published.py and never typed by hand;
+  2. every claim in a dimension Cohn's table covers cites exactly Cohn's figure;
+  3. the claims are monotone in the dimension, and no claim exceeds the best value known in
+     ANY higher dimension -- including this repository's own claims;
+  4. no claim merely reproduces a published or withdrawn construction, or falls
+     short of its floor. A larger new construction in the same dimension is allowed.
+     The historical records are ATTAINED, WITHDRAWN,
+     SHORT and RECOVERED below, and the run prints their contents rather than this docstring
+     repeating them -- which is how "69" stayed here after 69 left SHORT and became a claim;
+  4b. every claim exceeds what the FULL Edel-Rains-Sloane chain reaches from published codes,
+     via ers_exposure.best_chain, IMPORTED rather than copied.  Level 0 alone is not enough:
+     dimensions 62 and 63 were once claimed AT level 0 while the chain (n,15,2) reached more,
+     and the sweep knew while this audit did not.  Every chain input is a construction, so the
+     floor is a LOWER bound on ERS -- clearing it is necessary, not sufficient, and
+     verifications/closed/dim96-ers-takeover/ers_exposure.py reports the remaining room.
+     Four claims EQUAL the floor rather than exceed it, and do so by being the chain
+     themselves: 39, 62, 63 and 96.
+     THIS CHECK WAS HOLLOW BELOW DIMENSION 48 UNTIL 2026-08-26.  ers_exposure.sign0 read
+     only tables of LINEAR codes covering 48..96 and returned 1 for anything else, which
+     dropped the chain's largest term entirely; best_chain then returned 0.78, 0.81, 0.48
+     and 0.29 of the totals ERS themselves published at 32, 36, 40 and 44.  The repository's
+     binary code table was never the weak part -- sign0 simply was not consulting it.  It
+     now falls back to that table, which also admits NONLINEAR codes, and best_chain returns
+     1.255, 1.104, 1.073 and 1.000 at those four dimensions: at or above published ERS,
+     which is what an evaluator with better tables must give.  Nothing in 49..96 moved, so
+     the paper's section 6.1 margins are unaffected.  closed/dim32-44-ers-audit/ remains the
+     dedicated low-range evaluator, with Brouwer's tables including Echols arXiv:2608.13906;
+     it is what shows the chain reaching 570 236 at dimension 38 against a claim of 591 612,
+     and 756 116 at dimension 39, which IS the claim there;
+  4c. no claim exceeds a PROVEN upper bound.  Steps 1-4b ask whether a claim is an
+     improvement; this asks whether it is possible at all, against the upper-bound column of
+     Cohn's table -- the only place in this repository that column is read;
+  5. every package directory named by a claim exists and contains a README;
+  1b. no floor falls below an Edel-Rains-Sloane total published at or below that dimension.
+     K is monotone, so a published value above our floor would mean the floor is wrong --
+     dimension 80 is the one that bites, and three files here once denied it exists;
+  4a. where two constructions reach the same dimension, the better one is the one claimed.
+     Dimensions 62 and 63 are why: the cap construction reaches them and the ERS chain
+     reaches further, and whichever call came second would otherwise have won;
+
+  Then the documentation, checked the way the claims are.  Prose is where every defect of
+  the last two days lived, and none of it moved a digit:
+
+  5a. every script in every package is named in that package's README;
+  5b. every package that ships a SHA-256 manifest still matches it;
+  5c. the working directory's README accounts for every path beside it;
+  5d. verifications/README.md counts the tiers and packages it actually has;
+  5e. every path a .gitignore rule names still exists;
+  5f. every pointer into an outside document says which document it numbers -- a preprint
+     and its journal version need not number their equations alike;
+  5g. the README's description of the paper still partitions the claims;
+  5h. the root README names every script that reads Cohn's coordinate files;
+  5i. update.py's improvement guide lists the right dimensions per status;
+  5j. this docstring lists every check this script runs;
+  5o. every rotated axis layer lies in the axis space R^k, not in the coordinates
+      the direction set happens to be written in
+  5p. the layer floor in verify_poles.py's own header matches the shipped layers
+  5r. the record axis layers are sealed and match the README table describing them
+  5q. the axis-layer figures that live only in prose -- the denominator digit-range
+      and what the shell rule cost -- match the shipped layers
+  5n. no .py in the tree carries a tau table disagreeing with common/published.py
+  5s. the run instructions quote the number of scripts run_all.py has, and the
+      root README the number of files and the size the published tree has.  Both
+      went stale by a fifth without failing anything: nothing measured them;
+  5m. no markdown table outside KNOWLEDGE.md quotes a superseded value of a claim -- the
+      check is relational, because the separator is sometimes U+202F and a grep for the
+      old digits misses it;
+  5l. no LaTeX escape in a .md or .tex has been halved into a control character -- writing
+      "	au" through a non-raw Python string leaves a TAB, and three files had it;
+  5k. .gitattributes states the line-ending mix the tree actually has, `* -text` is
+     still there, and no source or documentation file mixes endings within itself.  The
+     scan opens ten extensions and that is the scope of the claim -- one archived HTML
+     copy of Cohn's page does mix, deliberately, and .gitattributes says so.  The mix is harmless --
+     `* -text` preserves bytes, which is what the SHA-256 manifest needs -- but a
+     maintainer who thought the tree uniform might remove `* -text` as redundant;
+  5t. the root README's dimension table quotes the registered value of every claim it
+     names -- it carried a superseded dimension-30 number while every check passed;
+  6. every claim says what would have to change for it to improve, and the claim COUNT
+     agrees everywhere it is stated.
+
+Nothing here needs anything outside this directory.  Where a check is about the author's
+working folder -- the root README, the paper's PDF -- it says so and stands down in a clone.
+
+============================================================================================
+70 claims, dimensions 18..96
+============================================================================================
+  dim   previously published        this work            factor   package
+   18   7,654                       8,358                  1.09   dim18-bent-hexagon
+   25   197,056                     197,584                1.00   dim25-collective-deformation
+   26   199,868                     201,136                1.01   dim26-30-asymmetric-exchanges
+   27   201,589                     209,807                1.04   dim27-31-joint-refills
+   28   205,172                     221,988                1.08   dim27-31-joint-refills
+   29   209,496                     231,697                1.11   dim27-31-joint-refills
+   30   220,440                     247,972                1.12   dim27-31-joint-refills
+   31   238,350                     251,188                1.05   dim27-31-joint-refills
+   32   352,320                     352,800                1.00   dim32-35-signed-layers
+   33   370,240                     370,376                1.00   dim32-35-signed-layers
+   34   390,980                     390,990                1.00   dim32-35-signed-layers
+   35   415,308                     415,334                1.00   dim32-35-signed-layers
+   36   484,760                     501,687                1.03   dim36-37-coxeter-todd
+   37   500,008                     505,503                1.01   dim36-37-coxeter-todd
+   38   566,652                     611,522                1.08   dim38-joint-latitudes
+   39   755,988                     769,180                1.02   dim39-deformed-orbits
+   40   1,092,000                   1,126,314              1.03   dim40-affine-shells
+   41   1,324,472                   1,460,036              1.10   dim41-46-p48-heads
+   42   1,792,386                   1,991,445              1.11   dim41-46-p48-heads
+   43   2,553,792                   2,919,782              1.14   dim41-46-p48-heads
+   44   4,153,600                   4,939,281              1.19   dim41-46-p48-heads
+   45   7,380,090                   7,655,056              1.04   dim41-46-p48-heads
+   46   12,309,600                  13,387,797             1.09   dim41-46-p48-heads
+   49   52,416,002                  52,431,568             1.00   dim49-63-p48-caps
+   50   52,416,006                  52,462,704             1.00   dim49-63-p48-caps
+   51   52,416,012                  52,509,404             1.00   dim49-63-p48-caps
+   52   52,416,024                  52,602,708             1.00   dim49-63-p48-caps
+   53   52,416,040                  52,726,898             1.01   dim49-63-p48-caps
+   54   52,416,072                  52,974,438             1.01   dim49-63-p48-caps
+   55   52,416,126                  53,389,476             1.02   dim49-63-p48-caps
+   56   52,416,240                  54,253,958             1.04   dim49-63-p48-caps
+   57   52,416,306                  54,747,156             1.04   dim49-63-p48-caps
+   58   52,416,510                  56,237,690             1.07   dim49-63-p48-caps
+   59   52,416,604                  56,907,532             1.09   dim49-63-p48-caps
+   60   52,416,841                  57,968,343             1.11   dim49-63-p48-caps
+   61   52,417,154                  88,260,394             1.68   dim61-68-95-96-code-layers
+   62   52,417,932                  121,824,268            2.32   dim61-68-95-96-code-layers
+   63   52,418,564                  184,286,468            3.52   dim61-68-95-96-code-layers
+   64   331,737,984                 335,496,064            1.01   dim64-65-signed-parity
+   65   331,737,986                 335,564,290            1.01   dim64-65-signed-parity
+   66   331,737,990                 341,994,884            1.03   dim61-68-95-96-code-layers
+   67   331,737,996                 355,090,822            1.07   dim61-68-95-96-code-layers
+   68   331,737,984                 375,222,168            1.13   dim61-68-95-96-code-layers
+   69   331,737,984                 627,822,180            1.89   dim68-69-gamma72-cross-sections
+   70   331,737,984                 1,249,778,250          3.77   dim70-71-gamma72-cross-sections
+   71   331,737,984                 2,603,658,750          7.85   dim70-71-gamma72-cross-sections
+   73   6,218,175,602               6,218,206,932          1.00   dim73-88-gamma72-cosets
+   74   6,218,175,606               6,218,211,606          1.00   dim73-88-gamma72-cosets
+   75   6,218,175,612               6,218,246,060          1.00   dim73-88-gamma72-cosets
+   76   6,218,175,624               6,218,315,288          1.00   dim73-88-gamma72-cosets
+   77   6,218,175,640               6,218,490,542          1.00   dim73-88-gamma72-cosets
+   78   6,218,175,672               6,218,688,770          1.00   dim73-88-gamma72-cosets
+   79   6,218,175,726               6,218,922,650          1.00   dim73-88-gamma72-cosets
+   80   6,218,175,840               6,219,474,300          1.00   dim73-88-gamma72-cosets
+   81   6,218,175,906               6,219,649,576          1.00   dim73-88-gamma72-cosets
+   82   6,218,176,110               6,220,170,666          1.00   dim73-88-gamma72-cosets
+   83   6,218,176,204               6,221,008,658          1.00   dim73-88-gamma72-cosets
+   84   6,218,176,441               6,222,025,404          1.00   dim73-88-gamma72-cosets
+   85   6,218,176,754               6,223,222,688          1.00   dim73-88-gamma72-cosets
+   86   6,218,177,532               6,225,165,512          1.00   dim73-88-gamma72-cosets
+   87   6,218,178,164               6,226,194,610          1.00   dim73-88-gamma72-cosets
+   88   6,218,179,920               6,921,251,584          1.11   dim88-96-z8-golay
+   89   6,218,181,330               9,229,354,136          1.48   dim88-96-z8-golay
+   90   6,218,183,254               12,306,670,328         1.98   dim88-96-z8-golay
+   91   6,218,187,548               16,409,599,116         2.64   dim88-96-z8-golay
+   92   8,589,934,592               21,880,490,288         2.55   dim88-96-z8-golay
+   93   17,179,869,184              31,040,958,640         1.81   dim88-96-z8-golay
+   94   34,359,738,368              47,697,508,076         1.39   dim88-96-z8-golay
+   95   68,719,476,736              77,565,848,332         1.13   dim88-96-z8-golay
+   96   137,438,953,472             142,162,362,560        1.03   dim88-96-z8-golay
+
+1. every claim strictly exceeds the best previously published value
+   70 claims checked against common/published.py
+
+1b. no floor falls below a published Edel-Rains-Sloane total
+   every floor clears it; the tightest is 1.000 of its floor
+2. where Cohn's table has an entry, the cited previous value is exactly Cohn's
+   23 of 70 claims fall inside Cohn's table (1-48, 72), all consistent
+
+3. monotonicity, and no claim exceeding a known record above it
+   monotone across all 70 claims; every claim respects every record above it
+
+4. no claim merely repeats an attained, withdrawn or recovered value, or falls short
+    absent (attained);  absent (withdrawn)
+   47 absent (already in the literature -- recovered, not claimed)
+   legacy 44D/45D cross-sections remain withdrawn; the larger new head constructions are separate. Recovered 46D = 12309600 remains historical.
+
+4a. where two constructions reach the same dimension, the better one is claimed
+   dim 25: dim25-lens-heads reaches 197579, superseded by dim25-collective-deformation at 197584 (+5)
+   dim 26: dim26-27-iota-triangles reaches 199806, superseded by dim26-27-midpoint-replacements at 200918 (+1112)
+   dim 26: dim26-27-midpoint-replacements reaches 200918, superseded by dim26-31-residual-completions at 201108 (+190)
+   dim 26: dim26-31-residual-completions reaches 201108, superseded by dim26-30-asymmetric-exchanges at 201136 (+28)
+   dim 27: dim26-27-iota-triangles reaches 201566, superseded by dim26-27-midpoint-replacements at 204636 (+3070)
+   dim 27: dim26-27-midpoint-replacements reaches 204636, superseded by dim26-31-residual-completions at 209532 (+4896)
+   dim 27: dim26-31-residual-completions reaches 209532, superseded by dim27-quadratic-normal-module at 209600 (+68)
+   dim 27: dim27-quadratic-normal-module reaches 209600, superseded by dim27-31-joint-refills at 209807 (+207)
+   dim 28: dim28-norm8-frame-layer reaches 204896, superseded by dim28-joint-leech-layers at 205232 (+336)
+   dim 28: dim28-joint-leech-layers reaches 205232, superseded by dim26-31-residual-completions at 216680 (+11448)
+   dim 28: dim26-31-residual-completions reaches 216680, superseded by dim26-30-asymmetric-exchanges at 221694 (+5014)
+   dim 28: dim26-30-asymmetric-exchanges reaches 221694, superseded by dim27-31-joint-refills at 221988 (+294)
+   dim 29: dim29-30-frame-layer reaches 209968, superseded by dim29-30-midpoint-replacements at 216568 (+6600)
+   dim 29: dim29-30-midpoint-replacements reaches 216568, superseded by dim26-31-residual-completions at 226520 (+9952)
+   dim 29: dim26-31-residual-completions reaches 226520, superseded by dim26-30-asymmetric-exchanges at 231638 (+5118)
+   dim 29: dim26-30-asymmetric-exchanges reaches 231638, superseded by dim27-31-joint-refills at 231697 (+59)
+   dim 30: dim29-30-frame-layer reaches 221012, superseded by dim29-30-midpoint-replacements at 224280 (+3268)
+   dim 30: dim29-30-midpoint-replacements reaches 224280, superseded by dim26-31-residual-completions at 238808 (+14528)
+   dim 30: dim26-31-residual-completions reaches 238808, superseded by dim26-30-asymmetric-exchanges at 247960 (+9152)
+   dim 30: dim26-30-asymmetric-exchanges reaches 247960, superseded by dim27-31-joint-refills at 247972 (+12)
+   dim 31: dim31-frame-layer reaches 238662, superseded by dim31-dual-centres at 241742 (+3080)
+   dim 31: dim31-dual-centres reaches 241742, superseded by dim26-31-residual-completions at 246638 (+4896)
+   dim 31: dim26-31-residual-completions reaches 246638, superseded by dim31-normal-module-exchange at 251110 (+4472)
+   dim 31: dim31-normal-module-exchange reaches 251110, superseded by dim27-31-joint-refills at 251188 (+78)
+   dim 33: dim32-35-signed-layers reaches 370368, superseded by dim32-35-signed-layers at 370376 (+8)
+   dim 34: dim32-35-signed-layers reaches 390982, superseded by dim32-35-signed-layers at 390990 (+8)
+   dim 35: dim32-35-signed-layers reaches 415314, superseded by dim32-35-signed-layers at 415334 (+20)
+   dim 36: dim36-37-coxeter-todd reaches 501633, superseded by dim36-37-coxeter-todd at 501687 (+54)
+   dim 37: dim36-37-coxeter-todd reaches 505359, superseded by dim36-37-coxeter-todd at 505503 (+144)
+   dim 38: dim38-leech-large-codimension reaches 591612, superseded by dim38-joint-latitudes at 610394 (+18782)
+   dim 38: dim38-latitude-extension reaches 605346, superseded by dim38-joint-latitudes at 611522 (+6176)
+   dim 38: dim38-joint-latitudes reaches 610394, superseded by dim38-joint-latitudes at 611522 (+1128)
+   dim 39: dim39-ers-constant-weight reaches 756116, superseded by dim39-deformed-orbits at 769180 (+13064)
+   dim 39: dim39-root-replacements reaches 768924, superseded by dim39-deformed-orbits at 769180 (+256)
+   dim 49: dim49-63-p48-caps reaches 52430140, superseded by dim49-63-p48-caps at 52430776 (+636)
+   dim 49: dim49-63-p48-caps reaches 52430776, superseded by dim49-63-p48-caps at 52431568 (+792)
+   dim 50: dim49-63-p48-caps reaches 52458418, superseded by dim49-63-p48-caps at 52460322 (+1904)
+   dim 50: dim49-63-p48-caps reaches 52460322, superseded by dim49-63-p48-caps at 52462704 (+2382)
+   dim 51: dim49-63-p48-caps reaches 52500816, superseded by dim49-63-p48-caps at 52504618 (+3802)
+   dim 51: dim49-63-p48-caps reaches 52504618, superseded by dim49-63-p48-caps at 52509404 (+4786)
+   dim 52: dim49-63-p48-caps reaches 52585516, superseded by dim49-63-p48-caps at 52593106 (+7590)
+   dim 52: dim49-63-p48-caps reaches 52593106, superseded by dim49-63-p48-caps at 52602708 (+9602)
+   dim 53: dim49-63-p48-caps reaches 52698222, superseded by dim49-63-p48-caps at 52710864 (+12642)
+   dim 53: dim49-63-p48-caps reaches 52710864, superseded by dim49-63-p48-caps at 52726898 (+16034)
+   dim 54: dim49-63-p48-caps reaches 52922906, superseded by dim49-63-p48-caps at 52945570 (+22664)
+   dim 54: dim49-63-p48-caps reaches 52945570, superseded by dim49-63-p48-caps at 52974438 (+28868)
+   dim 55: dim49-63-p48-caps reaches 53299730, superseded by dim49-63-p48-caps at 53339086 (+39356)
+   dim 55: dim49-63-p48-caps reaches 53339086, superseded by dim49-63-p48-caps at 53389476 (+50390)
+   dim 56: dim49-63-p48-caps reaches 54085392, superseded by dim49-63-p48-caps at 54159098 (+73706)
+   dim 56: dim49-63-p48-caps reaches 54159098, superseded by dim49-63-p48-caps at 54253958 (+94860)
+   dim 57: dim49-63-p48-caps reaches 54534176, superseded by dim49-63-p48-caps at 54627038 (+92862)
+   dim 57: dim49-63-p48-caps reaches 54627038, superseded by dim49-63-p48-caps at 54747156 (+120118)
+   dim 58: dim49-63-p48-caps reaches 55893422, superseded by dim49-63-p48-caps at 56043152 (+149730)
+   dim 58: dim49-63-p48-caps reaches 56043152, superseded by dim49-63-p48-caps at 56237690 (+194538)
+   dim 59: dim49-63-p48-caps reaches 56505668, superseded by dim49-63-p48-caps at 56680448 (+174780)
+   dim 59: dim49-63-p48-caps reaches 56680448, superseded by dim49-63-p48-caps at 56907532 (+227084)
+   dim 60: dim49-63-p48-caps reaches 57477123, superseded by dim49-63-p48-caps at 57690671 (+213548)
+   dim 60: dim49-63-p48-caps reaches 57690671, superseded by dim49-63-p48-caps at 57968343 (+277672)
+   dim 61: dim49-63-p48-caps reaches 59898694, superseded by dim49-63-p48-caps at 60220542 (+321848)
+   dim 61: dim49-63-p48-caps reaches 60220542, superseded by dim49-63-p48-caps at 60619622 (+399080)
+   dim 61: dim49-63-p48-caps reaches 60619622, superseded by dim61-68-95-96-code-layers at 88260394 (+27640772)
+   dim 62: dim49-63-p48-caps reaches 64217822, superseded by dim62-63-ers-chain at 71310732 (+7092910)
+   dim 62: dim62-63-ers-chain reaches 71310732, superseded by dim61-68-95-96-code-layers at 121824268 (+50513536)
+   dim 63: dim49-63-p48-caps reaches 67365752, superseded by dim62-63-ers-chain at 138419844 (+71054092)
+   dim 63: dim62-63-ers-chain reaches 138419844, superseded by dim61-68-95-96-code-layers at 184286468 (+45866624)
+   dim 68: dim68-69-gamma72-cross-sections reaches 361275480, superseded by dim61-68-95-96-code-layers at 375222168 (+13946688)
+   dim 73: dim73-95-gamma72-caps reaches 6218179814, superseded by dim73-88-gamma72-cosets at 6218206932 (+27118)
+   dim 74: dim73-95-gamma72-caps reaches 6218192454, superseded by dim73-88-gamma72-cosets at 6218211606 (+19152)
+   dim 75: dim73-95-gamma72-caps reaches 6218209308, superseded by dim73-88-gamma72-cosets at 6218246060 (+36752)
+   dim 76: dim73-95-gamma72-caps reaches 6218243016, superseded by dim73-88-gamma72-cosets at 6218315288 (+72272)
+   dim 77: dim73-95-gamma72-caps reaches 6218285152, superseded by dim73-88-gamma72-cosets at 6218490542 (+205390)
+   dim 78: dim73-95-gamma72-caps reaches 6218377840, superseded by dim73-88-gamma72-cosets at 6218688770 (+310930)
+   dim 79: dim73-95-gamma72-caps reaches 6218529454, superseded by dim73-88-gamma72-cosets at 6218922650 (+393196)
+   dim 80: dim73-95-gamma72-caps reaches 6218849228, superseded by dim73-88-gamma72-cosets at 6219474300 (+625072)
+   dim 81: dim73-95-gamma72-caps reaches 6219181626, superseded by dim73-88-gamma72-cosets at 6219649576 (+467950)
+   dim 82: dim73-95-gamma72-caps reaches 6219852202, superseded by dim73-88-gamma72-cosets at 6220170666 (+318464)
+   dim 83: dim73-95-gamma72-caps reaches 6219871624, superseded by dim73-88-gamma72-cosets at 6221008658 (+1137034)
+   dim 84: dim73-95-gamma72-caps reaches 6220660204, superseded by dim73-88-gamma72-cosets at 6222025404 (+1365200)
+   dim 85: dim73-95-gamma72-caps reaches 6221191786, superseded by dim73-88-gamma72-cosets at 6223222688 (+2030902)
+   dim 86: dim73-95-gamma72-caps reaches 6224508668, superseded by dim73-88-gamma72-cosets at 6225165512 (+656844)
+   dim 87: dim73-95-gamma72-caps reaches 6225838030, superseded by dim73-88-gamma72-cosets at 6226194610 (+356580)
+   dim 88: dim73-88-gamma72-cosets reaches 6231205108, superseded by dim73-95-gamma72-caps at 6232239528 (+1034420)
+   dim 88: dim73-95-gamma72-caps reaches 6232239528, superseded by dim88-96-z8-golay at 6921251584 (+689012056)
+   dim 89: dim73-95-gamma72-caps reaches 6235525036, superseded by dim88-96-z8-golay at 9229354136 (+2993829100)
+   dim 90: dim73-95-gamma72-caps reaches 6242027140, superseded by dim88-96-z8-golay at 12306670328 (+6064643188)
+   dim 91: dim73-95-gamma72-caps reaches 6252202550, superseded by dim88-96-z8-golay at 16409599116 (+10157396566)
+   dim 92: dim73-95-gamma72-caps reaches 6272431575, superseded by dim88-96-z8-golay at 21880490288 (+15608058713)
+   dim 93: dim73-95-gamma72-caps reaches 6301636084, superseded by dim88-96-z8-golay at 31040958640 (+24739322556)
+   dim 94: dim73-95-gamma72-caps reaches 6357657396, superseded by dim88-96-z8-golay at 47697508076 (+41339850680)
+   dim 95: dim73-95-gamma72-caps reaches 6473065046, superseded by dim61-68-95-96-code-layers at 7101541132 (+628476086)
+   dim 95: dim61-68-95-96-code-layers reaches 7101541132, superseded by dim88-96-z8-golay at 77565848332 (+70464307200)
+   dim 96: dim96-ers-takeover reaches 12886999232, superseded by dim61-68-95-96-code-layers at 13313343680 (+426344448)
+   dim 96: dim61-68-95-96-code-layers reaches 13313343680, superseded by dim88-96-z8-golay at 142162362560 (+128849018880)
+
+4b. every claim beats what the FULL Edel-Rains-Sloane chain reaches
+   all 70 claims exceed it, or equal it by BEING it
+   this is a LOWER bound on ERS, so clearing it is necessary, not sufficient;
+   ers_exposure.py reports the current exposure ranking
+
+5. every package exists and is documented
+
+5a. every script in every package is named in that package's README
+   every .py in every package, and beside them, is named in a README
+
+5b. every package that ships a SHA-256 manifest still matches it
+   24 manifests, every entry matching
+
+5c. the working directory's README accounts for every path beside it
+   (surrounding workspace omitted by --repository-only)
+
+5d. verifications/README.md counts the tiers and packages it actually has
+   README.md's improved/ heading is the 35 packages and 70 dimensions on disk
+   tiers, package counts, every package row, and KNOWLEDGE.md all agree
+   (KNOWLEDGE.md's own header counts itself correctly too)
+
+5e. every path a .gitignore rule names still exists
+   every rooted rule points at a directory that is there
+
+5f. every pointer into an outside document says which document
+   every numbered pointer into an outside work names its document
+
+5g. the README's description of the paper partitions its earlier snapshot
+   deferred manuscript: 66 results; pending dimensions [32, 33, 34, 35]; improved values [26, 27, 28, 29, 30, 31, 36, 37, 38, 43, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 73, 77, 78, 79, 82, 83, 84, 85, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96]; every paper file unchanged
+
+5g2. the README's comparison scope names every registered dimension
+   it names all 70 registered dimensions
+
+5h. the root README names every script that reads Cohn's coordinate files
+   surrounding workspace omitted by --repository-only; 5 reader(s) found
+
+5i. update.py's improvement guide lists the right dimensions per status
+   all 6 status groups match the claim table
+
+5j. this script's docstring lists every check this script runs
+   all 29 printed headings are in the docstring
+
+5k. .gitattributes states the line-ending mix it actually has
+   1179 LF, 226 CRLF, none of those mixed, over the 10 extensions this scans; `* -text` preserves every byte
+
+5l. no LaTeX escape has been halved, and no Cyrillic look-alike letter
+   every .md and .tex outside research/ is free of both
+
+5m. no markdown table quotes a superseded value of a claim
+   every dimension row outside KNOWLEDGE.md and research/ is current
+
+5n. no script carries a tau table that disagrees with common/published.py
+   every tau table in the tree agrees with the published one, entry for entry
+
+5o. every rotated axis layer lies in the axis space
+   all 12 rotated layers are inside R^k, checked on a basis of the span
+
+5p. the layer percentages in verify_poles.py's header are still the measured ones
+   19 layers, 99.68% at k = 18 up to 100% -- the header agrees
+
+5r. the record axis layers agree with the README table that states them
+   7 layers, 7 described in the README table, tau(k) quoted correctly
+   the outer working folder is not here, so the sentence it states is not checked; the layer is at tau(k) in 74–83, 86, 88
+
+5q. the axis-layer figures quoted only in prose match the shipped layers
+   17 layers, denominators of 1 to 18 digits; 1 document(s) agree
+   the axis layers are worth 221025 over the shell rule; 1 document(s) agree
+
+5s. the READMEs quote the size run_all.py and this tree actually have
+   README.md gives 93 fast and 112 in all, which is the table
+   the outer working folder is not here, so its size line is not checked; the tree is 2013 files, 385 MB
+
+
+5t. the root README's dimension table quotes the registered values
+   the outer working folder is not here, so there is no root README to check
+6. every claim says what would have to change for it to improve
+   classes    12 dims  49-60        only a better class family helps; these all improve together
+   codes      20 dims  32-33, 39, 61-68, 88-96 larger input codes or different layer and section geometry can improve these explicit constructions
+   cosets     17 dims  36-37, 73-87 larger phase codes, nearest subsets or improved compatible tail assignments remain open
+   exhausted   1 dims  18           the mechanism cannot give more; a different construction is needed
+   heads      17 dims  25-31, 34-35, 38, 40-46 joint body-family and head searches remain open; no construction ceiling is claimed
+   lp-exact    3 dims  69-71        the programme solved to its EXACT optimum, for a Gram at the Hermite determinant floor; only a larger k helps
+   CITATION.cff agrees that there are 70
+   CITATION.cff enumerates exactly those 70 dimensions
+   README.md agrees that there are 70
+   claim counts agree with their scope: repository 70, manuscript snapshot 53
+   dim18-bent-hexagon                      1 dims: [18]
+   dim25-collective-deformation            1 dims: [25]
+   dim26-30-asymmetric-exchanges           1 dims: [26]
+   dim27-31-joint-refills                  5 dims: 27-31
+   dim32-35-signed-layers                  4 dims: 32-35
+   dim36-37-coxeter-todd                   2 dims: [36, 37]
+   dim38-joint-latitudes                   1 dims: [38]
+   dim39-deformed-orbits                   1 dims: [39]
+   dim40-affine-shells                     1 dims: [40]
+   dim41-46-p48-heads                      6 dims: 41-46
+   dim49-63-p48-caps                      12 dims: 49-60
+   dim61-68-95-96-code-layers              6 dims: 61-63, 66-68
+   dim64-65-signed-parity                  2 dims: [64, 65]
+   dim68-69-gamma72-cross-sections         1 dims: [69]
+   dim70-71-gamma72-cross-sections         2 dims: [70, 71]
+   dim73-88-gamma72-cosets                15 dims: 73-87
+   dim88-96-z8-golay                       9 dims: 88-96
+   RESULTS.md agrees with every recomputed claim (70 dimensions)
+
+============================================================================================
+TOTAL 70 dimensions improved.  ALL CHECKS PASSED
+============================================================================================

@@ -43,3 +43,6 @@ and maximum unnormalized inner product at most 48.
 
 Receipt hashes detect modification; they do not authenticate historical
 provenance or establish novelty. The work remains uncommitted and unpublished.
+
+
+Later integration evidence is recorded in `research/discovery_campaign_20261104/FINAL_STATUS.md`, `REVIEW.md`, and `discovery/benchmarks/planner_integration_20261104.json`. The earlier measurements above remain historical snapshots.

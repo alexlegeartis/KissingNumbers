@@ -1,0 +1,192 @@
+{
+  "config": {
+    "name": "d11_c11_605",
+    "d": 11,
+    "q": 11,
+    "frequencies": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "periods": [
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11
+    ],
+    "restarts": 6
+  },
+  "wall_budget_seconds": 35.0,
+  "seconds": 2.671394854999562,
+  "evaluations": 2217,
+  "trials": [
+    {
+      "trial": 0,
+      "power": 2,
+      "status": 0,
+      "iterations": 244,
+      "screen": {
+        "points": 605,
+        "dimension": 11,
+        "maximum_cosine": 0.6157500593662989,
+        "violating_pairs_at_1e-10": 13805,
+        "near_duplicate_pairs": 0,
+        "maximum_norm_squared_error": 8.881784197001252e-16,
+        "pairs_checked": 182710,
+        "numerically_admissible": false,
+        "exact_certificate": false
+      }
+    },
+    {
+      "trial": 1,
+      "power": 4,
+      "status": 0,
+      "iterations": 364,
+      "screen": {
+        "points": 605,
+        "dimension": 11,
+        "maximum_cosine": 0.5643454716679525,
+        "violating_pairs_at_1e-10": 12980,
+        "near_duplicate_pairs": 0,
+        "maximum_norm_squared_error": 8.881784197001252e-16,
+        "pairs_checked": 182710,
+        "numerically_admissible": false,
+        "exact_certificate": false
+      }
+    },
+    {
+      "trial": 2,
+      "power": 2,
+      "status": 0,
+      "iterations": 229,
+      "screen": {
+        "points": 605,
+        "dimension": 11,
+        "maximum_cosine": 0.6012247118504053,
+        "violating_pairs_at_1e-10": 13849,
+        "near_duplicate_pairs": 0,
+        "maximum_norm_squared_error": 8.881784197001252e-16,
+        "pairs_checked": 182710,
+        "numerically_admissible": false,
+        "exact_certificate": false
+      }
+    },
+    {
+      "trial": 3,
+      "power": 4,
+      "status": 0,
+      "iterations": 523,
+      "screen": {
+        "points": 605,
+        "dimension": 11,
+        "maximum_cosine": 0.5623349109650888,
+        "violating_pairs_at_1e-10": 12881,
+        "near_duplicate_pairs": 0,
+        "maximum_norm_squared_error": 8.881784197001252e-16,
+        "pairs_checked": 182710,
+        "numerically_admissible": false,
+        "exact_certificate": false
+      }
+    },
+    {
+      "trial": 4,
+      "power": 2,
+      "status": 0,
+      "iterations": 240,
+      "screen": {
+        "points": 605,
+        "dimension": 11,
+        "maximum_cosine": 0.6156908386550352,
+        "violating_pairs_at_1e-10": 13772,
+        "near_duplicate_pairs": 0,
+        "maximum_norm_squared_error": 7.771561172376096e-16,
+        "pairs_checked": 182710,
+        "numerically_admissible": false,
+        "exact_certificate": false
+      }
+    },
+    {
+      "trial": 5,
+      "power": 4,
+      "status": 0,
+      "iterations": 567,
+      "screen": {
+        "points": 605,
+        "dimension": 11,
+        "maximum_cosine": 0.5633713318414435,
+        "violating_pairs_at_1e-10": 12925,
+        "near_duplicate_pairs": 0,
+        "maximum_norm_squared_error": 8.881784197001252e-16,
+        "pairs_checked": 182710,
+        "numerically_admissible": false,
+        "exact_certificate": false
+      }
+    }
+  ],
+  "best_screen": {
+    "points": 605,
+    "dimension": 11,
+    "maximum_cosine": 0.5623349109650888,
+    "violating_pairs_at_1e-10": 12881,
+    "near_duplicate_pairs": 0,
+    "maximum_norm_squared_error": 8.881784197001252e-16,
+    "pairs_checked": 182710,
+    "numerically_admissible": false,
+    "exact_certificate": false
+  },
+  "file": "d11_c11_605.npz",
+  "status": "numerical only; no exact certificate"
+}

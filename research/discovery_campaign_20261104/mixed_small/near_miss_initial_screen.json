@@ -1,0 +1,14 @@
+{
+  "source_decimals": 12,
+  "raw_maximum_off_diagonal": 0.500901018602,
+  "symmetry_residual": 0.0,
+  "source_diagonal_error": 0.0,
+  "largest_omitted_eigenvalue": 1.6285386901715927e-11,
+  "minimum_eigenvalue": -1.6268093803124472e-11,
+  "reconstructed_maximum_cosine": 0.5009010186022461,
+  "normalized_rank12_gram_max_error": 6.533107388406734e-13,
+  "numerical_ambient_dimension": 12,
+  "points": 842,
+  "seconds": 0.1439198320003925,
+  "exact_certificate": false
+}

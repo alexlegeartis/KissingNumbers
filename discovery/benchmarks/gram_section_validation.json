@@ -1,0 +1,88 @@
+{
+  "status": "implemented and independently reviewed; known controls only; no new SOTA",
+  "operators": [
+    "geometry.gram_code",
+    "geometry.section"
+  ],
+  "test_runs": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python -m unittest discovery.tests.test_gram discovery.tests.test_core discovery.tests.test_lattices discovery.tests.test_scheduler -q",
+      "tests": 40,
+      "seconds": 5.242,
+      "result": "passed"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python -O -m unittest discovery.tests.test_gram -q",
+      "tests": 13,
+      "result": "passed"
+    }
+  ],
+  "independent_review": {
+    "rank_cases_compared_with_sympy": 500,
+    "generated_psd_gram_rank_cases": 120,
+    "result": "cleared after full-row rank scaling and section preallocation fixes"
+  },
+  "exact_controls": {
+    "gram5_control": {
+      "dimension": 5,
+      "cardinality": 40,
+      "norm_squared": 2,
+      "max_inner_product": 1,
+      "pairs_checked": 780
+    },
+    "section_e7": {
+      "dimension": 7,
+      "ambient_dimension": 8,
+      "cardinality": 126
+    },
+    "section_e6": {
+      "dimension": 6,
+      "ambient_dimension": 8,
+      "cardinality": 72
+    }
+  },
+  "existing_exact_replays": {
+    "ganzhinov10": {
+      "dimension": 10,
+      "cardinality": 510,
+      "status": "exact"
+    },
+    "ganzhinov14": {
+      "dimension": 14,
+      "cardinality": 1932,
+      "status": "exact"
+    }
+  },
+  "budgets_added": {
+    "max_gram_entries": 2000000,
+    "max_rank_work": 50000000,
+    "max_rational_bits": 4096
+  },
+  "catalogue_policy": "Existing benchmarks/catalog.json deliberately unchanged; missing default 5D CLI baseline is reported honestly; temporary catalogue compare integration tested.",
+  "source_files": [
+    {
+      "path": "discovery/exact_gram.py",
+      "sha256": "448103205e806c2d1c8bd2770e7a22d29c533cae2fcd3ef3f2bf219572f440ba"
+    },
+    {
+      "path": "discovery/engines/geometry.py",
+      "sha256": "fc8fd418b7eb55b8241a08b1deae7711ea799b587f31f5efc454744bff820e37"
+    },
+    {
+      "path": "discovery/tests/test_gram.py",
+      "sha256": "cb97abebe79cfd07b3bc70eb4295bece4efd1280a45ea076645d55526d0cd1ed"
+    },
+    {
+      "path": "discovery/docs/GRAM_SECTIONS.md",
+      "sha256": "e9dc9cf4486908e076147c872d8eae2838d3d6228c53e7000c60367d29f5a4f3"
+    },
+    {
+      "path": "discovery/recipes/gram5_control.json",
+      "sha256": "fc1bbe05c3f0cd042e891399d23bfc67d80354df12b5e9c0a5062c9ada446371"
+    },
+    {
+      "path": "discovery/recipes/section_e8_chain.json",
+      "sha256": "11e3c3ceee7f2aa0ce5eeac4d0e9c2cd59f89f18d07a3226b2766e23a06ab516"
+    }
+  ]
+}

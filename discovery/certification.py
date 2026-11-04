@@ -1,7 +1,6 @@
 """Exact coordinate verification and proof dispatch. No trust in saved status."""
 from pathlib import Path
 import numpy as np
-import sympy as sp
 from .core import Artifact, Verification, RunContext, integer, digest, canonical_json
 
 
@@ -24,6 +23,10 @@ def verify_integer_spherical(data,context=None):
         if any(isinstance(x,bool) or not isinstance(x,int) for x in row):
             raise ValueError('Exact coordinates must be integers, not rounded floats')
     if len(set(map(tuple,rows)))!=n: raise ValueError('Duplicate points')
+    for value in [norm]+weights:
+        context.limit('max_rational_bits',value.bit_length())
+    for row in rows:
+        for value in row:context.limit('max_rational_bits',value.bit_length())
     maxabs=max(abs(x) for row in rows for x in row)
     safe=maxabs*maxabs*sum(weights)<2**62
     dtype=np.int64 if safe else object
@@ -38,11 +41,13 @@ def verify_integer_spherical(data,context=None):
             if len(off):
                 value=int(max(off));maximum=value if maximum is None else max(maximum,value)
                 if 2*value>norm: raise ValueError('Pairwise kissing inequality violated')
-    rank=int(sp.Matrix(rows).rank())
-    facts={'dimension':rank,'ambient_dimension':d,'cardinality':n,'norm_squared':norm,
+    from .exact_gram import exact_integer_rank
+    rank,rank_work=exact_integer_rank(rows,context)
+    facts={'dimension':rank,'rank_exact':rank,'ambient_dimension':d,'cardinality':n,'norm_squared':norm,
            'max_inner_product':maximum,'pairs_checked':n*(n-1)//2}
     return Verification('exact','integer coordinates with positive diagonal quadratic form and exact rank',
-                        {**facts,'facts':facts,'data_sha256':digest(data),'integer_backend':'int64 proven overflow-safe' if safe else 'Python integers'})
+                        {**facts,'facts':facts,'data_sha256':digest(data),'integer_backend':'int64 proven overflow-safe' if safe else 'Python integers',
+                         'rank_scalar_work':rank_work})
 
 
 def compare_facts(claimed,computed):
@@ -65,11 +70,26 @@ def compare_facts(claimed,computed):
 
 def verify_artifact(artifact,context=None):
     context=context or RunContext(Path('.'))
-    if artifact.kind=='syndrome_oracle' or (artifact.kind=='binary_code' and artifact.data.get('backend')=='binary_syndrome_cosets'):
+    if artifact.kind=='quadratic_spherical_code':
+        from .engines.signed_layers import verify_artifact as verify_signed_layers
+        report=verify_signed_layers(artifact,context)
+    elif artifact.kind=='gram_spherical_code' and 'gluing' in artifact.data:
+        from .compatibility import verify_glued_artifact
+        report=verify_glued_artifact(artifact,context)
+    elif artifact.kind=='gram_spherical_code':
+        from .exact_gram import verify_rational_gram
+        report=verify_rational_gram(artifact.data,context)
+    elif artifact.kind=='spherical_code' and 'section' in artifact.data:
+        from .engines.geometry import verify_section
+        report=verify_section(artifact,context)
+    elif artifact.kind=='syndrome_oracle' or (artifact.kind=='binary_code' and artifact.data.get('backend')=='binary_syndrome_cosets'):
         from .engines.cosets import verify_artifact as verify_coset
         report=verify_coset(artifact,context)
     elif artifact.kind=='spherical_code' and 'coordinates' in artifact.data:
         report=verify_integer_spherical(artifact.data,context)
+    elif artifact.kind=='implicit_spherical_code' and artifact.data.get('backend')=='real_stabilizer_sector':
+        from .engines.stabilizers import verify_artifact as verify_stabilizer
+        report=verify_stabilizer(artifact,context)
     elif artifact.kind=='implicit_spherical_code' and artifact.data.get('backend')=='signed_support_layers':
         from .engines.layers import verify_artifact as verify_layers
         report=verify_layers(artifact,context)
@@ -79,6 +99,9 @@ def verify_artifact(artifact,context=None):
     elif artifact.kind in ('binary_code','ring_code','polynomial_pair'):
         from .engines.rings import verify_artifact as verify_ring
         report=verify_ring(artifact,context)
+    elif artifact.kind=='search_result' and artifact.data.get('backend')=='gray_coset_assembly':
+        from .engines.coset_search import verify_artifact as verify_coset_search
+        report=verify_coset_search(artifact,context)
     elif artifact.kind in ('unitary_representation','spherical_code','search_result'):
         from .engines.groups import verify_artifact as verify_group
         report=verify_group(artifact,context)

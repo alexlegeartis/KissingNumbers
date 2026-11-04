@@ -1,0 +1,69 @@
+{
+  "pool_cardinality": 8988,
+  "baseline_cardinality": 1932,
+  "product_cohort_masses": [
+    [
+      7,
+      17,
+      13
+    ],
+    [
+      17,
+      7,
+      13
+    ],
+    [
+      359,
+      439,
+      401
+    ],
+    [
+      439,
+      359,
+      401
+    ]
+  ],
+  "cohort_counts": {
+    "0": 1932,
+    "1": 1764,
+    "2": 1764,
+    "3": 1764,
+    "4": 1764
+  },
+  "pairs_checked": 40387578,
+  "conflict_edges": 278124,
+  "baseline_candidate_edges": 138768,
+  "candidate_candidate_edges": 139356,
+  "blocker_degree_histogram": {
+    "25": 784,
+    "19": 6272
+  },
+  "norm_squared": 217402952,
+  "pool_data_sha256": "14c6af7f587ad2556cf76005fea0d4c5c0036c30022b9dd0a1bf7f0579541af9",
+  "baseline_verification": {
+    "status": "exact",
+    "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+    "details": {
+      "dimension": 14,
+      "rank_exact": 14,
+      "ambient_dimension": 14,
+      "cardinality": 1932,
+      "norm_squared": 8,
+      "max_inner_product": 4,
+      "pairs_checked": 1865346,
+      "facts": {
+        "dimension": 14,
+        "rank_exact": 14,
+        "ambient_dimension": 14,
+        "cardinality": 1932,
+        "norm_squared": 8,
+        "max_inner_product": 4,
+        "pairs_checked": 1865346
+      },
+      "data_sha256": "0050b04391ae419101aefe65c2b4f545bf2cc92a19302070447c35e196de40b5",
+      "integer_backend": "int64 proven overflow-safe",
+      "rank_scalar_work": 380968
+    }
+  },
+  "all_accessory_points_jointly_removable": true
+}

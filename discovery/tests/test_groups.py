@@ -76,6 +76,22 @@ class GroupTests(unittest.TestCase):
             self.assertAlmostEqual(groups.compressed_max_cosine(reps_a, b), groups.max_cosine(a, b), places=10)
             self.assertAlmostEqual(groups.compressed_max_cosine(reps_a, a, True), groups.max_cosine(a), places=10)
 
+    def test_phase_block_duplicates_are_not_charged_against_budget(self):
+        full = np.array([[1 + 0j], [-1 + 0j]])
+        one, _ = groups.phase_block(full, 1)
+        two, _ = groups.phase_block(full, 2)
+        self.assertEqual(groups._block_fingerprint(one), groups._block_fingerprint(two))
+        self.assertEqual(groups._block_fingerprint(one), groups._block_fingerprint(one[::-1]))
+        representation = groups.from_generators([], {"generators_real": [[[-1]]]}, self.context)
+        result = groups.search([representation], {"trials": 0, "phase_orders": [1, 2, 3, 6],
+                               "phase_steps": 1, "max_materialized_points": 8}, self.context)
+        self.assertEqual(result.facts["cardinality"], 6)
+        self.assertEqual(result.verification.status, "numerical")
+        self.assertEqual(result.data["block_coverage"]["unique_blocks_admitted"], 2)
+        self.assertEqual(result.data["block_coverage"]["admitted_point_rows"], 8)
+        self.assertEqual(result.data["block_coverage"]["duplicate_blocks_skipped"], 2)
+        self.assertFalse(result.data["materialization_limit_reached"])
+
     def test_numerical_verifier_never_promotes_and_rejects_forgery(self):
         artifact = Artifact(kind="spherical_code", data={"real_coordinates": [[1., 0.], [-1., 0.]]},
                             facts={"cardinality": 2},

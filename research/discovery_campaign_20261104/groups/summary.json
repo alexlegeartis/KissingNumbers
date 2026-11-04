@@ -1,0 +1,16 @@
+{
+  "outcome": "No new SOTA. Exact known5D40control and exact real-stabilizer-family obstruction;4640bounded continuous starts without improvement.",
+  "total_optimization_starts": 4640,
+  "optimization_wall_seconds": 367.3314817690002,
+  "peak_rss_kib": 66328,
+  "saved_numerical_point_sets": 20,
+  "numerically_admissible_saved_point_sets": [
+    "d5_c5_40_polished_control.npz"
+  ],
+  "exact_control_receipt": "d5_40_exact_receipt.json",
+  "exact_family_report": "results.json",
+  "independent_full_pair_replay": "replay_results.json",
+  "no_external_blockers": true,
+  "remaining_objective": "No improved admissible configuration found; negative continuous searches are not nonexistence results.",
+  "budget_note": "Wall budgets checked between restarts. Final10Djob8starts took70.95s versus55s target because its final individual optimization overran. All jobs completed; no background work remains."
+}

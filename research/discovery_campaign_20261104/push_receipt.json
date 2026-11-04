@@ -1,0 +1,17 @@
+{
+  "branch": "codex/unified-discovery-reviewed-20261104",
+  "commit": "e25c2924f377a1061b6c60429c950d34df7515e9",
+  "url": "https://github.com/alexlegeartis/KissingNumbers/commit/e25c2924f377a1061b6c60429c950d34df7515e9",
+  "remote_head_verified": true,
+  "isolated_checkout": "/workspace/KissingNumbers-discovery-push",
+  "scope": "Original reviewed111-file overlay plus tested finite-program scheduler and snapshot documentation; excludes newer coverage and operator work.",
+  "tests": {
+    "discovery_tests": 65,
+    "seconds": 24.463,
+    "repository_only_audit": "PASS all70 registered dimensions",
+    "github_actions_changed": false,
+    "pull_request_created": false
+  },
+  "working_research_preserved": true,
+  "original_reviewed_zip_sha256": "e06e4e10ca97312e10b514e1fa64b487a6bd91475c0d5b76338034106b46ae16"
+}

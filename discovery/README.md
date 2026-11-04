@@ -5,6 +5,15 @@ configurations. It is separate from the repository's registered record pipeline.
 **The work so far reproduces known constructions and records bounded negative
 searches. It has not found a new SOTA.**
 
+The Sol continuation adds three target-independent operators: support-orbit
+packing, arbitrary integer point-pool selection across any number of cohorts,
+and negative-contact-sum generation with joint selection. There are now 32
+registered operators. The separate 1–24 held-out benchmark matches ten targets
+with formula controls and four through actual support search, including 9D306.
+The 13D/14D/31D record attempts have no improved certified witness. See
+[construction search](docs/CONSTRUCTION_SEARCH.md) and the
+[continuation evidence](../research/sol_discovery_20261104/README.md).
+
 Run from the repository root with the existing Python environment; no installation
 is required. Dependencies are NumPy, SciPy and SymPy. The code makes no network
 calls, installs nothing, and never pushes, publishes, or edits the record registry.
@@ -62,7 +71,7 @@ No unimplemented instrument is registered as a placeholder operator.
 | `engines/rings.py` | Binary factorization, coprime Hensel lifts, cyclic free modules, extensions, Gray isometry, exhaustive small-code distance, two independent DGLS proofs, compatible repeated-mask unions | Half-degree irreducible factors; moduli 4/8/16; small enumeration caps; restricted greedy translate selection |
 | `engines/cosets.py` | Full-rank binary parity checks, exact syndrome leader distances, separate nonzero kernel-distance DP, specified coset unions | At most 16 syndrome bits and bounded transitions; not a generic high-distance 96D code solver |
 | `engines/layers.py` | Native compressed support/sign-layer verification; known 352800-point 32D control; parametrized supported family | Dense binary span must fit enumeration budget; sparse support and exceptional-line pair budgets; no general layer search optimizer |
-| `engines/geometry.py` | Exact integer input, sign embeddings with proof transfer, explicit orthogonal unions | Generic mixed-layer gluing, sections and nonorthogonal unions are not implemented |
+| `engines/geometry.py` | Exact integer and rational Gram input, sign embeddings, orthogonal unions and exact central hyperplane sections | Generic implicit mixed-layer gluing remains incomplete; bounded heterogeneous gluing is being independently reviewed |
 | `certification.py` | Exact weighted integer Gram checks, distinctness, norm and rank; independent backend proof replay | Explicit coordinates need a bounded all-pairs check; large objects require a supported compressed proof |
 | `runner.py`, `__main__.py` | Typed DAG runner, CLI, per-node provenance and timing, hashed receipts, dated comparison | No distributed scheduler, persistent search cache or autonomous theorem invention |
 
@@ -190,16 +199,41 @@ Measured test, benchmark and search outcomes are in [docs/VALIDATION.md](docs/VA
 
 An independent pre-handoff review and its fixes are documented in [docs/FINAL_REVIEW.md](docs/FINAL_REVIEW.md).
 
-## Shared finite-program scheduler
+## Subsequent additive increments
 
-`python -m discovery search discovery/recipes/program_search.json --out-dir /tmp/new-search`
-enumerates explicit operator, parameter and graph alternatives under declared
-resource budgets. Every registered operator is eligible without a dimension-family
-filter. Numerical and unverified outputs are never promoted to exact candidates.
-See [program-search contracts](docs/PROGRAM_SEARCH.md). This is finite configured
-search, not complete coverage of all constructions.
+The reviewed foundation and finite scheduler were pushed separately as
+`e25c2924f377a1061b6c60429c950d34df7515e9`. Newer working-tree increments are
+documented in [root systems](docs/ROOT_SYSTEMS.md),
+[Gram certificates and sections](docs/GRAM_SECTIONS.md), and
+[object/contract schemas](docs/OBJECT_CONTRACTS.md). Their exact coverage is
+reported by `research/discovery_campaign_20261104/coverage_1_24/build_matrix.py`;
+a working recipe is not automatically a blind discovery or a new record.
 
-This branch contains the independently reviewed foundation and tested scheduler.
-The ongoing 1–24 coverage audit and newer Gram, section and root-system operators
-are preserved in the working research environment and are not included in this
-reviewed snapshot. No new SOTA is claimed.
+The full existing96D layered construction, not just its DGLS ingredient, has a
+specialized dual-checker benchmark:
+
+```sh
+python -m discovery.benchmarks.run_full96 --outdir /tmp/new-full96-replay
+```
+
+It replays both existing compressed proofs and requires agreement on all five
+layers and142162362560 points. This is a known-construction benchmark bridge,
+not a generic layer-synthesis operator.
+
+## Typed construction planner
+
+`python -m discovery plan` synthesizes bounded construction DAGs from a finite
+operator/parameter catalogue, choosing operators and their input edges. It
+checkpoints the frontier in SQLite for interruption recovery. `plan-status`
+inspects the ledger and `plan-export` exports a normal receipt for independent
+verification. See [typed planner](docs/TYPED_PLANNER.md) for the interface,
+contracts, resource limits and exact scope.
+
+Current contracts include coordinate, implicit, Gram and quadratic spherical
+outputs and the runner's alternative input kinds, including mixed explicit
+gluing. Missing contracts are visible in `operators` and rejected explicitly.
+Quality targets affect ordering and reporting without filtering dimensions.
+The imported search measurements remain failed quality gates: 8D 128 versus
+240 and numerical 28D 6720 versus 221988. Enumeration and passing tests do not
+establish competitive discovery. See [historical validation](docs/PLANNER_VALIDATION.md)
+and the separate [integration checks](benchmarks/planner_integration_20261104.json).

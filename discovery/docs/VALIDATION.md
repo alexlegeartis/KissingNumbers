@@ -30,3 +30,6 @@ modify a sealed proof package, or change the 70 existing registered values.
 No commit, push, Actions run, software installation or publication was performed.
 
 The independent [final review](FINAL_REVIEW.md) found and verified fixes for three defects.
+
+
+Later integration evidence is recorded in `research/discovery_campaign_20261104/FINAL_STATUS.md`, `REVIEW.md`, and `discovery/benchmarks/planner_integration_20261104.json`. The earlier measurements above remain historical snapshots.

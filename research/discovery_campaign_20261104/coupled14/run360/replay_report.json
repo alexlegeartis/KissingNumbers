@@ -1,0 +1,12 @@
+{
+  "status": "exact",
+  "trials_replayed": 360,
+  "matched_conflicts_verified": 570998,
+  "all_tested_union_optima": 1932,
+  "baseline_pairs_checked": 1865346,
+  "best_pairs_checked": 1865346,
+  "best_cardinality": 1932,
+  "elapsed_seconds": 6.763711106000301,
+  "method": "fresh full baseline and best geometry; exact integer rational isometries, exact overlaps and saturating disjoint conflict pairs",
+  "scope": "Only the enumerated two-copy unions; no global upper bound or novelty claim"
+}

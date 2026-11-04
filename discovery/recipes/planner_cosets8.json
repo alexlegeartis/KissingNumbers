@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "name": "Generated unions of extended-Hamming cosets",
+  "description": "Search all subsets of seven even syndromes, fixing syndrome zero, then synthesize a sign embedding. Known 8D control; target-quality diagnostics expose the missing mixed support-layer operation.",
+  "max_nodes": 3,
+  "strategy": "adaptive",
+  "output_kinds": [
+    "implicit_spherical_code"
+  ],
+  "quality_targets": [
+    {
+      "dimension": 8,
+      "cardinality": 240,
+      "label": "Known E8 control, not a new record",
+      "source": "README.md (E8 root system)"
+    }
+  ],
+  "catalogue": [
+    {
+      "op": "cosets.build",
+      "params": {
+        "parity_check": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "op": "cosets.union",
+      "domains": {
+        "syndrome_labels": {
+          "subsets": {
+            "of": [
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "include": [
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "op": "geometry.sign_embed"
+    }
+  ],
+  "unavailable": [
+    {
+      "name": "geometry.general_compatible_union",
+      "family": "mixed",
+      "reason": "Needed to assemble the implicit 128-point sign layer with the 112-point support-two layer in the same 8D space; orthogonal_union cannot express this."
+    }
+  ]
+}

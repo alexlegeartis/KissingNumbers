@@ -1,0 +1,2386 @@
+{
+  "schema_version": 1,
+  "kind": "typed_planner_integration_validation",
+  "date": "2026-11-04",
+  "patch": {
+    "file": "typed-program-planner-39d0d4d.patch",
+    "sha256": "ecfed73486aa46a516fa18030f4635fe71436492df084ecbf07097871af6ef68",
+    "reviewed_base_commit": "e25c2924f377a1061b6c60429c950d34df7515e9",
+    "integration": "additive files copied; CLI/docs manually merged; existing Gram, alternative input kinds, operators and coverage preserved; .gitattributes not applied; no commit or push"
+  },
+  "source_sha256": {
+    "__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
+    "__main__.py": "b7477b369529118ea14b7e48fc38c9e8c37957a554bebad7b37912406692f15a",
+    "certification.py": "d7c38f8d8ce4caab226ac344fd8d28413a740897228ecac17f2f13a98f97d898",
+    "compatibility.py": "b484a934b4f6d68cd11f69b17eb0a23fd61556bf4fe4978205530cbfe68b5f89",
+    "contracts.py": "8a8c134dcf67751a0b0882536e8886e4d120f1b76d7388e66a60f18eeb786872",
+    "core.py": "69313eb6d933f436d151289f23c40f018365d16057a2b75d455ac0fe157a1024",
+    "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
+    "engines/coset_search.py": "3e808aeee08588665f36d3286172de791dc467fc1a854432a5bec2ae7c9be722",
+    "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
+    "engines/geometry.py": "fc8fd418b7eb55b8241a08b1deae7711ea799b587f31f5efc454744bff820e37",
+    "engines/gluing.py": "94141bac6513dbac7210ed0274871ea27ab8a50d0c3d9b27fd2c8f8a7e868a1d",
+    "engines/groups.py": "6193aed77506366187b5a5163002f23db99cf93c7d9a4f3d3bc477ea19cad836",
+    "engines/lattices.py": "e5a90d85fc180e10da7508672d54843838b3f3182ec8ae5c7fe6a5e0a09958df",
+    "engines/layers.py": "a799fab74c7bbacc93712ad2df2ee201f375cb0c56f0f6617cb9f3d1437045cf",
+    "engines/rings.py": "87d1e00e2da8209f6691a023dc517915623e4713b2b7b87695b8957f056158c2",
+    "engines/selection.py": "401f6073306188cc2dc27126a5898cf55e4bd13bd798d4dd512a8782c8f3e632",
+    "engines/signed_layers.py": "dcea56ad4dbd0154d7a302eff6858174fdd5a6776a7a8ece337d177ad24c2672",
+    "engines/stabilizers.py": "999aa4a478cc5b16a6840b5b8576cef565be83c27ad5ce9ad0ca7592dd64e362",
+    "exact_gram.py": "448103205e806c2d1c8bd2770e7a22d29c533cae2fcd3ef3f2bf219572f440ba",
+    "objects.py": "4e8a922bcd7f57fa0d9be5507a92678a170bb8fa45d4e0ab8b61b1e52cf96bb3",
+    "planner.py": "7567b7ac07e0ef52d74a9126aec34e3b70de9b3498fd1f1edfe11f424ccabb97",
+    "runner.py": "f2cb7066a3a33f266a95b436cd822014041633e1e0ef3b7e095087b965ea6574",
+    "scheduler.py": "34aa720811dce88f75c05a76c23cc5f6b36d62d891cd929c863cb7bca499af75"
+  },
+  "operator_catalogue": {
+    "codes.translate_union": {
+      "op": "codes.translate_union",
+      "input_kinds": [
+        "binary_code"
+      ],
+      "output_kinds": [
+        "binary_code"
+      ],
+      "family": "codes",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "cosets.build": {
+      "op": "cosets.build",
+      "input_kinds": [],
+      "output_kinds": [
+        "syndrome_oracle"
+      ],
+      "family": "cosets",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "cosets.union": {
+      "op": "cosets.union",
+      "input_kinds": [
+        "syndrome_oracle"
+      ],
+      "output_kinds": [
+        "binary_code"
+      ],
+      "family": "cosets",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "geometry.gram_code": {
+      "op": "geometry.gram_code",
+      "input_kinds": [],
+      "output_kinds": [
+        "gram_spherical_code"
+      ],
+      "family": "geometry",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "geometry.integer_code": {
+      "op": "geometry.integer_code",
+      "input_kinds": [],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "geometry",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "geometry.orthogonal_union": {
+      "op": "geometry.orthogonal_union",
+      "input_kinds": [
+        "spherical_code",
+        "spherical_code"
+      ],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "geometry",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "geometry.section": {
+      "op": "geometry.section",
+      "input_kinds": [
+        "spherical_code"
+      ],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "geometry",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "geometry.sign_embed": {
+      "op": "geometry.sign_embed",
+      "input_kinds": [
+        "binary_code"
+      ],
+      "output_kinds": [
+        "implicit_spherical_code"
+      ],
+      "family": "geometry",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "gluing.union": {
+      "op": "gluing.union",
+      "input_kinds": [
+        [
+          "spherical_code",
+          "gram_spherical_code"
+        ],
+        [
+          "spherical_code",
+          "gram_spherical_code"
+        ]
+      ],
+      "output_kinds": [
+        "gram_spherical_code"
+      ],
+      "family": "gluing",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "groups.from_generators": {
+      "op": "groups.from_generators",
+      "input_kinds": [],
+      "output_kinds": [
+        "unitary_representation"
+      ],
+      "family": "groups",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "groups.ganzhinov10": {
+      "op": "groups.ganzhinov10",
+      "input_kinds": [],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "groups",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "groups.ganzhinov14": {
+      "op": "groups.ganzhinov14",
+      "input_kinds": [],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "groups",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "groups.real_stabilizer_sector": {
+      "op": "groups.real_stabilizer_sector",
+      "input_kinds": [],
+      "output_kinds": [
+        "implicit_spherical_code"
+      ],
+      "family": "groups",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "groups.search": {
+      "op": "groups.search",
+      "input_kinds": [
+        "unitary_representation"
+      ],
+      "output_kinds": [
+        "spherical_code",
+        "search_result"
+      ],
+      "family": "groups",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "groups.weil": {
+      "op": "groups.weil",
+      "input_kinds": [],
+      "output_kinds": [
+        "unitary_representation"
+      ],
+      "family": "groups",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "lattice.root_system": {
+      "op": "lattice.root_system",
+      "input_kinds": [],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "lattice",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "layers.known32": {
+      "op": "layers.known32",
+      "input_kinds": [],
+      "output_kinds": [
+        "implicit_spherical_code"
+      ],
+      "family": "layers",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "layers.signed_supports": {
+      "op": "layers.signed_supports",
+      "input_kinds": [],
+      "output_kinds": [
+        "implicit_spherical_code"
+      ],
+      "family": "layers",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "rings.binary_factor": {
+      "op": "rings.binary_factor",
+      "input_kinds": [],
+      "output_kinds": [
+        "polynomial_pair"
+      ],
+      "family": "rings",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "rings.extend": {
+      "op": "rings.extend",
+      "input_kinds": [
+        "polynomial_pair"
+      ],
+      "output_kinds": [
+        "ring_code"
+      ],
+      "family": "rings",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "rings.gray": {
+      "op": "rings.gray",
+      "input_kinds": [
+        "ring_code"
+      ],
+      "output_kinds": [
+        "binary_code"
+      ],
+      "family": "rings",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "rings.hensel": {
+      "op": "rings.hensel",
+      "input_kinds": [
+        "polynomial_pair"
+      ],
+      "output_kinds": [
+        "polynomial_pair"
+      ],
+      "family": "rings",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "rings.verify_dgls": {
+      "op": "rings.verify_dgls",
+      "input_kinds": [
+        "ring_code"
+      ],
+      "output_kinds": [
+        "binary_code"
+      ],
+      "family": "rings",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "search.coset_assembly": {
+      "op": "search.coset_assembly",
+      "input_kinds": [],
+      "output_kinds": [
+        "search_result"
+      ],
+      "family": "search",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "selection.coupled_union": {
+      "op": "selection.coupled_union",
+      "input_kinds": [
+        "spherical_code",
+        "spherical_code"
+      ],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "selection",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "selection.isometric_exchange": {
+      "op": "selection.isometric_exchange",
+      "input_kinds": [
+        "spherical_code"
+      ],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "selection",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "signed_layers.conditional_swap": {
+      "op": "signed_layers.conditional_swap",
+      "input_kinds": [
+        "spherical_code"
+      ],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "signed_layers",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "signed_layers.coupled_lift": {
+      "op": "signed_layers.coupled_lift",
+      "input_kinds": [
+        "spherical_code"
+      ],
+      "output_kinds": [
+        "quadratic_spherical_code"
+      ],
+      "family": "signed_layers",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "signed_layers.free_zone_join": {
+      "op": "signed_layers.free_zone_join",
+      "input_kinds": [
+        "spherical_code",
+        "spherical_code"
+      ],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "signed_layers",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    }
+  },
+  "tests": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python -m unittest discover -s discovery/tests -q",
+      "tests": 168,
+      "seconds": 52.768,
+      "result": "passed",
+      "log_sha256": "00ee24bc4cdb6b01a655d3b5e14c2ba18f605cbfffc49a6524fb682f5ae733d5"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python -O -m unittest discovery.tests.test_planner discovery.tests.test_planner_integration -q",
+      "tests": 28,
+      "seconds": 26.383,
+      "result": "passed",
+      "log_sha256": "ad1874b8797957fc5b881d0ca6d7c87ea408e2470d16c4b60a1a3a897bb76e13"
+    }
+  ],
+  "review_status": "independent final audit passed; no remaining blocking finding",
+  "regressions": [
+    "all registered operators visible; missing/invalid contracts explicit",
+    "per-input kind alternatives bind intersecting producer once; mixed grammar checked against independent enumeration",
+    "Gram and quadratic outputs independently verified before exact ranking; quadratic compare/scheduler integration",
+    "source/contract changes block resume; old ledger remains readable",
+    "source changes during execution and worker manifest mismatches discard results and stop without exact ranking",
+    "subset compiler limits enforced before comb or size enumeration; product/range bits bounded; huge ranges lazy",
+    "dimension-specific quality targets do not change the enumerated scope",
+    "registered coset search actually generates candidates; conditional forecast not ranked as sphere facts",
+    "adaptive constructor starvation fixed by persistent interleaving; max_nodes2/3 five-program progress and exact resumed/full row order",
+    "historical schema1 ledger readable; schema2 resume required for changed implementation"
+  ],
+  "experiments": {
+    "mixed_coordinate_gram": {
+      "specification": {
+        "schema_version": 1,
+        "max_nodes": 3,
+        "output_kinds": [
+          "gram_spherical_code"
+        ],
+        "catalogue": [
+          {
+            "op": "geometry.integer_code",
+            "params": {
+              "coordinates": [
+                [
+                  1
+                ]
+              ],
+              "norm_squared": 1
+            }
+          },
+          {
+            "op": "geometry.gram_code",
+            "params": {
+              "gram": [
+                [
+                  1
+                ]
+              ]
+            }
+          },
+          {
+            "op": "gluing.union",
+            "params": {
+              "cross_gram": [
+                [
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "limits": {},
+      "seconds": 15.694279375000406,
+      "ledger": {
+        "schema_version": 1,
+        "kind": "typed_construction_planner",
+        "spec_sha256": "a37b2cfc082691239091a6d6cae235a3b93b40fcc3386e50fa75c002eeeab800",
+        "status": "incomplete",
+        "enumeration_complete": true,
+        "stop_reason": "frontier_exhausted",
+        "generated_programs": 38,
+        "program_states": {
+          "completed": 29,
+          "failed": 6,
+          "not_target": 3
+        },
+        "explored_programs": 35,
+        "completed_programs": 29,
+        "unresolved_evaluations": 6,
+        "evaluation_attempts": {
+          "completed": 29,
+          "failed": 6
+        },
+        "unresolved_programs": [
+          {
+            "program_id": 21,
+            "state": "failed",
+            "reason": "cross_gram must have one row per first-source point and one column per second-source point"
+          },
+          {
+            "program_id": 22,
+            "state": "failed",
+            "reason": "cross_gram must have one row per first-source point and one column per second-source point"
+          },
+          {
+            "program_id": 23,
+            "state": "failed",
+            "reason": "cross_gram must have one row per first-source point and one column per second-source point"
+          },
+          {
+            "program_id": 36,
+            "state": "failed",
+            "reason": "cross_gram must have one row per first-source point and one column per second-source point"
+          },
+          {
+            "program_id": 37,
+            "state": "failed",
+            "reason": "cross_gram must have one row per first-source point and one column per second-source point"
+          },
+          {
+            "program_id": 38,
+            "state": "failed",
+            "reason": "cross_gram must have one row per first-source point and one column per second-source point"
+          }
+        ],
+        "unsearched": {
+          "generated_pending_evaluations": 0,
+          "unexpanded_prefixes": 0,
+          "known_immediate_extensions": 0,
+          "prefixes_with_uncounted_extensions": 0,
+          "total_remaining_programs": 0,
+          "descendants_of_frontier": "none"
+        },
+        "pruning_by_catalogue_entry": {
+          "0": {
+            "op": "geometry.integer_code",
+            "expanded_prefixes": 9,
+            "typed_extensions": 9,
+            "type_incompatible_extensions": 0,
+            "prefixes_without_compatible_inputs": 0
+          },
+          "1": {
+            "op": "geometry.gram_code",
+            "expanded_prefixes": 9,
+            "typed_extensions": 9,
+            "type_incompatible_extensions": 0,
+            "prefixes_without_compatible_inputs": 0
+          },
+          "2": {
+            "op": "gluing.union",
+            "expanded_prefixes": 9,
+            "typed_extensions": 26,
+            "type_incompatible_extensions": 0,
+            "prefixes_without_compatible_inputs": 1
+          }
+        },
+        "best_exact_by_dimension": {
+          "1": {
+            "dimension": 1,
+            "cardinality": 1,
+            "program_id": 2,
+            "output": "n0"
+          },
+          "2": {
+            "dimension": 2,
+            "cardinality": 2,
+            "program_id": 5,
+            "output": "n1"
+          }
+        },
+        "pruned_non_target_leaves": 6,
+        "strategy": "breadth_first",
+        "heuristic": "adaptive: pending outputs, fresh bounded descent, then alternating oldest suspended prefix and kind/quality order; ordering only; no dimension eligibility filter",
+        "scheduling": {
+          "checkpoint_schema_version": 2,
+          "policy": "persistent alternating queue/heuristic turns",
+          "productive_expansions": 38,
+          "pruned_leaf_variants": "consume steps without advancing the productive-expansion clock"
+        },
+        "best_observed_candidates_by_dimension": {
+          "1": {
+            "dimension": 1,
+            "cardinality": 1,
+            "verification_status": "exact",
+            "program_id": 2
+          },
+          "2": {
+            "dimension": 2,
+            "cardinality": 2,
+            "verification_status": "exact",
+            "program_id": 5
+          }
+        },
+        "operator_search_diagnostics": [],
+        "quality_diagnostics": [],
+        "target_quality_passed": null,
+        "quality_notice": "enumeration completion is not discovery success; target deficits require better candidates or new structural operators; numerical counts do not certify lower bounds",
+        "resource_limits": {
+          "max_evaluations": 100,
+          "max_program_bytes": 2097152,
+          "max_programs": 10000,
+          "max_receipt_bytes": 16777216,
+          "max_steps": 1000,
+          "per_program_seconds": 30.0,
+          "retry_unresolved": false,
+          "time_limit_seconds": 60.0
+        },
+        "declared_scope": {
+          "max_nodes": 3,
+          "output_kinds": [
+            "gram_spherical_code"
+          ],
+          "parameter_domains": [
+            {
+              "op": "geometry.integer_code",
+              "params": {
+                "coordinates": [
+                  [
+                    1
+                  ]
+                ],
+                "norm_squared": 1
+              }
+            },
+            {
+              "op": "geometry.gram_code",
+              "params": {
+                "gram": [
+                  [
+                    1
+                  ]
+                ]
+              }
+            },
+            {
+              "op": "gluing.union",
+              "params": {
+                "cross_gram": [
+                  [
+                    0
+                  ]
+                ]
+              }
+            }
+          ],
+          "registered_but_omitted": [
+            "codes.translate_union",
+            "cosets.build",
+            "cosets.union",
+            "geometry.orthogonal_union",
+            "geometry.section",
+            "geometry.sign_embed",
+            "groups.from_generators",
+            "groups.ganzhinov10",
+            "groups.ganzhinov14",
+            "groups.real_stabilizer_sector",
+            "groups.search",
+            "groups.weil",
+            "lattice.root_system",
+            "layers.known32",
+            "layers.signed_supports",
+            "rings.binary_factor",
+            "rings.extend",
+            "rings.gray",
+            "rings.hensel",
+            "rings.verify_dgls",
+            "search.coset_assembly",
+            "selection.coupled_union",
+            "selection.isometric_exchange",
+            "signed_layers.conditional_swap",
+            "signed_layers.coupled_lift",
+            "signed_layers.free_zone_join"
+          ],
+          "unimplemented_capabilities": [],
+          "beyond_max_nodes": "unsearched",
+          "outside_parameter_domains": "unsearched"
+        },
+        "scope": "finite typed DAGs only; static kind pruning is not a mathematical exclusion; no global optimum or SOTA claim",
+        "mathematical_exclusion_claim": false,
+        "checkpoint_notice": "saved results are receipts, not proof; export and independently verify before use"
+      },
+      "remaining_prefixes": [],
+      "independent_replay": {
+        "status": "exact",
+        "method": "exact heterogeneous Gram gluing: source replay, joint PSD, injective maps, exact overlap quotient and final Gram checks",
+        "details": {
+          "facts": {
+            "dimension": 2,
+            "rank_exact": 2,
+            "ambient_dimension": 2,
+            "dimension_scope": "exact Gram rank; symbolic real realization",
+            "cardinality": 2,
+            "norm_squared": 1,
+            "max_inner_product": 0,
+            "pairs_checked": 1,
+            "input_cardinalities": [
+              1,
+              1
+            ],
+            "duplicates_removed": 0,
+            "global_optimality_claim": false
+          },
+          "dimension": 2,
+          "rank_exact": 2,
+          "ambient_dimension": 2,
+          "dimension_scope": "exact Gram rank; symbolic real realization",
+          "cardinality": 2,
+          "norm_squared": 1,
+          "max_inner_product": 0,
+          "pairs_checked": 1,
+          "rank_scalar_work": 3,
+          "data_sha256": "460d6981e9a0f6199aadae291987b0b24a898d277445895e961b47375da7fdcd",
+          "realization": "A PSD rational Gram matrix has a real realization in its exact rank; no rational coordinates are asserted.",
+          "input_cardinalities": [
+            1,
+            1
+          ],
+          "duplicates_removed": 0,
+          "global_optimality_claim": false,
+          "source_verifications": [
+            {
+              "status": "exact",
+              "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+              "details": {
+                "dimension": 1,
+                "rank_exact": 1,
+                "ambient_dimension": 1,
+                "cardinality": 1,
+                "norm_squared": 1,
+                "max_inner_product": null,
+                "pairs_checked": 0,
+                "facts": {
+                  "dimension": 1,
+                  "rank_exact": 1,
+                  "ambient_dimension": 1,
+                  "cardinality": 1,
+                  "norm_squared": 1,
+                  "max_inner_product": null,
+                  "pairs_checked": 0
+                },
+                "data_sha256": "15ac415154523c3d25fc7d738aeb74af9df740b5d57e2f219db3c6a72fbf76aa",
+                "integer_backend": "int64 proven overflow-safe",
+                "rank_scalar_work": 0
+              }
+            },
+            {
+              "status": "exact",
+              "method": "exact rational symmetric Gram, Schur PSD/rank, common norm and all pair inequalities",
+              "details": {
+                "facts": {
+                  "dimension": 1,
+                  "rank_exact": 1,
+                  "ambient_dimension": 1,
+                  "dimension_scope": "exact Gram rank; symbolic real realization",
+                  "cardinality": 1,
+                  "norm_squared": 1,
+                  "max_inner_product": null,
+                  "pairs_checked": 0
+                },
+                "dimension": 1,
+                "rank_exact": 1,
+                "ambient_dimension": 1,
+                "dimension_scope": "exact Gram rank; symbolic real realization",
+                "cardinality": 1,
+                "norm_squared": 1,
+                "max_inner_product": null,
+                "pairs_checked": 0,
+                "rank_scalar_work": 0,
+                "data_sha256": "4c00a4a8d78cb434785f808886caab5f5baa1e4411bb80a0150412e056f12dad",
+                "realization": "A PSD rational Gram matrix has a real realization in its exact rank; no rational coordinates are asserted."
+              }
+            }
+          ],
+          "joint_base_rank": 2,
+          "joint_base_rank_scalar_work": 3,
+          "mapped_rank_before_dedup": 2,
+          "mapped_rank_scalar_work": 3,
+          "input_ambient_dimensions": [
+            1,
+            1
+          ],
+          "head_width": 0,
+          "cross_frame_scope": "provided unscaled cross inner products validated by the full joint PSD matrix; no relative frame inferred",
+          "source_metadata_scope": "source metadata retained; historical and novelty claims are not established by this geometric replay"
+        }
+      },
+      "representative_receipt": {
+        "artifacts": {
+          "n0": {
+            "data": {
+              "coordinates": [
+                [
+                  1
+                ]
+              ],
+              "norm_squared": 1
+            },
+            "facts": {
+              "ambient_dimension": 1,
+              "cardinality": 1,
+              "dimension": 1,
+              "max_inner_product": null,
+              "norm_squared": 1,
+              "pairs_checked": 0,
+              "rank_exact": 1
+            },
+            "kind": "spherical_code",
+            "verification": {
+              "details": {
+                "ambient_dimension": 1,
+                "cardinality": 1,
+                "data_sha256": "15ac415154523c3d25fc7d738aeb74af9df740b5d57e2f219db3c6a72fbf76aa",
+                "dimension": 1,
+                "facts": {
+                  "ambient_dimension": 1,
+                  "cardinality": 1,
+                  "dimension": 1,
+                  "max_inner_product": null,
+                  "norm_squared": 1,
+                  "pairs_checked": 0,
+                  "rank_exact": 1
+                },
+                "integer_backend": "int64 proven overflow-safe",
+                "max_inner_product": null,
+                "norm_squared": 1,
+                "pairs_checked": 0,
+                "rank_exact": 1,
+                "rank_scalar_work": 0
+              },
+              "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+              "status": "exact"
+            }
+          },
+          "n1": {
+            "data": {
+              "gram": [
+                [
+                  1
+                ]
+              ]
+            },
+            "facts": {
+              "ambient_dimension": 1,
+              "cardinality": 1,
+              "dimension": 1,
+              "dimension_scope": "exact Gram rank; symbolic real realization",
+              "max_inner_product": null,
+              "norm_squared": 1,
+              "pairs_checked": 0,
+              "rank_exact": 1
+            },
+            "kind": "gram_spherical_code",
+            "verification": {
+              "details": {
+                "ambient_dimension": 1,
+                "cardinality": 1,
+                "data_sha256": "4c00a4a8d78cb434785f808886caab5f5baa1e4411bb80a0150412e056f12dad",
+                "dimension": 1,
+                "dimension_scope": "exact Gram rank; symbolic real realization",
+                "facts": {
+                  "ambient_dimension": 1,
+                  "cardinality": 1,
+                  "dimension": 1,
+                  "dimension_scope": "exact Gram rank; symbolic real realization",
+                  "max_inner_product": null,
+                  "norm_squared": 1,
+                  "pairs_checked": 0,
+                  "rank_exact": 1
+                },
+                "max_inner_product": null,
+                "norm_squared": 1,
+                "pairs_checked": 0,
+                "rank_exact": 1,
+                "rank_scalar_work": 0,
+                "realization": "A PSD rational Gram matrix has a real realization in its exact rank; no rational coordinates are asserted."
+              },
+              "method": "exact rational symmetric Gram, Schur PSD/rank, common norm and all pair inequalities",
+              "status": "exact"
+            }
+          },
+          "n2": {
+            "data": {
+              "gluing": {
+                "classes": [
+                  [
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  [
+                    [
+                      1,
+                      0
+                    ]
+                  ]
+                ],
+                "cross_gram": [
+                  [
+                    0
+                  ]
+                ],
+                "heads": [
+                  [],
+                  []
+                ],
+                "scales": [
+                  1,
+                  1
+                ],
+                "source_sha256": [
+                  "e4f1e8efdb5bc90bc94f9f44e89bf8ec10eafa2f4a013481a9d90682f573e604",
+                  "796220e1abdddb61d7aa0b623492a690e77f71198685466f86090056721fde42"
+                ],
+                "sources": [
+                  {
+                    "data": {
+                      "coordinates": [
+                        [
+                          1
+                        ]
+                      ],
+                      "norm_squared": 1
+                    },
+                    "facts": {
+                      "ambient_dimension": 1,
+                      "cardinality": 1,
+                      "dimension": 1,
+                      "max_inner_product": null,
+                      "norm_squared": 1,
+                      "pairs_checked": 0,
+                      "rank_exact": 1
+                    },
+                    "kind": "spherical_code",
+                    "verification": {
+                      "details": {
+                        "ambient_dimension": 1,
+                        "cardinality": 1,
+                        "data_sha256": "15ac415154523c3d25fc7d738aeb74af9df740b5d57e2f219db3c6a72fbf76aa",
+                        "dimension": 1,
+                        "facts": {
+                          "ambient_dimension": 1,
+                          "cardinality": 1,
+                          "dimension": 1,
+                          "max_inner_product": null,
+                          "norm_squared": 1,
+                          "pairs_checked": 0,
+                          "rank_exact": 1
+                        },
+                        "integer_backend": "int64 proven overflow-safe",
+                        "max_inner_product": null,
+                        "norm_squared": 1,
+                        "pairs_checked": 0,
+                        "rank_exact": 1,
+                        "rank_scalar_work": 0
+                      },
+                      "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+                      "status": "exact"
+                    }
+                  },
+                  {
+                    "data": {
+                      "gram": [
+                        [
+                          1
+                        ]
+                      ]
+                    },
+                    "facts": {
+                      "ambient_dimension": 1,
+                      "cardinality": 1,
+                      "dimension": 1,
+                      "dimension_scope": "exact Gram rank; symbolic real realization",
+                      "max_inner_product": null,
+                      "norm_squared": 1,
+                      "pairs_checked": 0,
+                      "rank_exact": 1
+                    },
+                    "kind": "gram_spherical_code",
+                    "verification": {
+                      "details": {
+                        "ambient_dimension": 1,
+                        "cardinality": 1,
+                        "data_sha256": "4c00a4a8d78cb434785f808886caab5f5baa1e4411bb80a0150412e056f12dad",
+                        "dimension": 1,
+                        "dimension_scope": "exact Gram rank; symbolic real realization",
+                        "facts": {
+                          "ambient_dimension": 1,
+                          "cardinality": 1,
+                          "dimension": 1,
+                          "dimension_scope": "exact Gram rank; symbolic real realization",
+                          "max_inner_product": null,
+                          "norm_squared": 1,
+                          "pairs_checked": 0,
+                          "rank_exact": 1
+                        },
+                        "max_inner_product": null,
+                        "norm_squared": 1,
+                        "pairs_checked": 0,
+                        "rank_exact": 1,
+                        "rank_scalar_work": 0,
+                        "realization": "A PSD rational Gram matrix has a real realization in its exact rank; no rational coordinates are asserted."
+                      },
+                      "method": "exact rational symmetric Gram, Schur PSD/rank, common norm and all pair inequalities",
+                      "status": "exact"
+                    }
+                  }
+                ]
+              },
+              "gram": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "norm_squared": 1
+            },
+            "facts": {
+              "ambient_dimension": 2,
+              "cardinality": 2,
+              "dimension": 2,
+              "dimension_scope": "exact Gram rank; symbolic real realization",
+              "duplicates_removed": 0,
+              "global_optimality_claim": false,
+              "input_cardinalities": [
+                1,
+                1
+              ],
+              "max_inner_product": 0,
+              "norm_squared": 1,
+              "pairs_checked": 1,
+              "rank_exact": 2
+            },
+            "kind": "gram_spherical_code",
+            "verification": {
+              "details": {
+                "ambient_dimension": 2,
+                "cardinality": 2,
+                "cross_frame_scope": "provided unscaled cross inner products validated by the full joint PSD matrix; no relative frame inferred",
+                "data_sha256": "460d6981e9a0f6199aadae291987b0b24a898d277445895e961b47375da7fdcd",
+                "dimension": 2,
+                "dimension_scope": "exact Gram rank; symbolic real realization",
+                "duplicates_removed": 0,
+                "facts": {
+                  "ambient_dimension": 2,
+                  "cardinality": 2,
+                  "dimension": 2,
+                  "dimension_scope": "exact Gram rank; symbolic real realization",
+                  "duplicates_removed": 0,
+                  "global_optimality_claim": false,
+                  "input_cardinalities": [
+                    1,
+                    1
+                  ],
+                  "max_inner_product": 0,
+                  "norm_squared": 1,
+                  "pairs_checked": 1,
+                  "rank_exact": 2
+                },
+                "global_optimality_claim": false,
+                "head_width": 0,
+                "input_ambient_dimensions": [
+                  1,
+                  1
+                ],
+                "input_cardinalities": [
+                  1,
+                  1
+                ],
+                "joint_base_rank": 2,
+                "joint_base_rank_scalar_work": 3,
+                "mapped_rank_before_dedup": 2,
+                "mapped_rank_scalar_work": 3,
+                "max_inner_product": 0,
+                "norm_squared": 1,
+                "pairs_checked": 1,
+                "rank_exact": 2,
+                "rank_scalar_work": 3,
+                "realization": "A PSD rational Gram matrix has a real realization in its exact rank; no rational coordinates are asserted.",
+                "source_metadata_scope": "source metadata retained; historical and novelty claims are not established by this geometric replay",
+                "source_verifications": [
+                  {
+                    "details": {
+                      "ambient_dimension": 1,
+                      "cardinality": 1,
+                      "data_sha256": "15ac415154523c3d25fc7d738aeb74af9df740b5d57e2f219db3c6a72fbf76aa",
+                      "dimension": 1,
+                      "facts": {
+                        "ambient_dimension": 1,
+                        "cardinality": 1,
+                        "dimension": 1,
+                        "max_inner_product": null,
+                        "norm_squared": 1,
+                        "pairs_checked": 0,
+                        "rank_exact": 1
+                      },
+                      "integer_backend": "int64 proven overflow-safe",
+                      "max_inner_product": null,
+                      "norm_squared": 1,
+                      "pairs_checked": 0,
+                      "rank_exact": 1,
+                      "rank_scalar_work": 0
+                    },
+                    "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+                    "status": "exact"
+                  },
+                  {
+                    "details": {
+                      "ambient_dimension": 1,
+                      "cardinality": 1,
+                      "data_sha256": "4c00a4a8d78cb434785f808886caab5f5baa1e4411bb80a0150412e056f12dad",
+                      "dimension": 1,
+                      "dimension_scope": "exact Gram rank; symbolic real realization",
+                      "facts": {
+                        "ambient_dimension": 1,
+                        "cardinality": 1,
+                        "dimension": 1,
+                        "dimension_scope": "exact Gram rank; symbolic real realization",
+                        "max_inner_product": null,
+                        "norm_squared": 1,
+                        "pairs_checked": 0,
+                        "rank_exact": 1
+                      },
+                      "max_inner_product": null,
+                      "norm_squared": 1,
+                      "pairs_checked": 0,
+                      "rank_exact": 1,
+                      "rank_scalar_work": 0,
+                      "realization": "A PSD rational Gram matrix has a real realization in its exact rank; no rational coordinates are asserted."
+                    },
+                    "method": "exact rational symmetric Gram, Schur PSD/rank, common norm and all pair inequalities",
+                    "status": "exact"
+                  }
+                ]
+              },
+              "method": "exact heterogeneous Gram gluing: source replay, joint PSD, injective maps, exact overlap quotient and final Gram checks",
+              "status": "exact"
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "n0": "e4f1e8efdb5bc90bc94f9f44e89bf8ec10eafa2f4a013481a9d90682f573e604",
+          "n1": "796220e1abdddb61d7aa0b623492a690e77f71198685466f86090056721fde42",
+          "n2": "f18de9d255d1b1be9034703032c2fbfe774dd817ce622a5d2307f707051b4cb2"
+        },
+        "budget": {
+          "max_codewords": 262144,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_gram_entries": 2000000,
+          "max_materialized_points": 20000,
+          "max_nodes": 100,
+          "max_orbit_points": 10000,
+          "max_pairs": 10000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096,
+          "max_trials": 200,
+          "solver_seconds": 30
+        },
+        "events": [
+          {
+            "artifact_sha256": "e4f1e8efdb5bc90bc94f9f44e89bf8ec10eafa2f4a013481a9d90682f573e604",
+            "kind": "spherical_code",
+            "node": "n0",
+            "op": "geometry.integer_code",
+            "seconds": 0.000275,
+            "state": "completed",
+            "verification_status": "exact"
+          },
+          {
+            "artifact_sha256": "796220e1abdddb61d7aa0b623492a690e77f71198685466f86090056721fde42",
+            "kind": "gram_spherical_code",
+            "node": "n1",
+            "op": "geometry.gram_code",
+            "seconds": 0.000114,
+            "state": "completed",
+            "verification_status": "exact"
+          },
+          {
+            "artifact_sha256": "f18de9d255d1b1be9034703032c2fbfe774dd817ce622a5d2307f707051b4cb2",
+            "kind": "gram_spherical_code",
+            "node": "n2",
+            "op": "gluing.union",
+            "seconds": 0.000536,
+            "state": "completed",
+            "verification_status": "exact"
+          }
+        ],
+        "outputs": [
+          "n2"
+        ],
+        "program": {
+          "nodes": [
+            {
+              "id": "n0",
+              "inputs": [],
+              "op": "geometry.integer_code",
+              "params": {
+                "coordinates": [
+                  [
+                    1
+                  ]
+                ],
+                "norm_squared": 1
+              }
+            },
+            {
+              "id": "n1",
+              "inputs": [],
+              "op": "geometry.gram_code",
+              "params": {
+                "gram": [
+                  [
+                    1
+                  ]
+                ]
+              }
+            },
+            {
+              "id": "n2",
+              "inputs": [
+                "n0",
+                "n1"
+              ],
+              "op": "gluing.union",
+              "params": {
+                "cross_gram": [
+                  [
+                    0
+                  ]
+                ]
+              }
+            }
+          ],
+          "outputs": [
+            "n2"
+          ],
+          "provenance": {
+            "planner_spec_sha256": "a37b2cfc082691239091a6d6cae235a3b93b40fcc3386e50fa75c002eeeab800",
+            "search": "typed DAG synthesis; conditional kinds rechecked at runtime"
+          },
+          "schema_version": 1
+        },
+        "program_sha256": "2aeb0c2ed5959cb224ca3f3a9a4de8c5a1188db5765304fbb349c34166a32c5f",
+        "python": "3.12.14",
+        "schema_version": 1,
+        "scope": "construction experiment; no automatic record registration or worldwide-priority claim",
+        "source_sha256": {
+          "__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
+          "__main__.py": "b7477b369529118ea14b7e48fc38c9e8c37957a554bebad7b37912406692f15a",
+          "certification.py": "d7c38f8d8ce4caab226ac344fd8d28413a740897228ecac17f2f13a98f97d898",
+          "compatibility.py": "b484a934b4f6d68cd11f69b17eb0a23fd61556bf4fe4978205530cbfe68b5f89",
+          "contracts.py": "8a8c134dcf67751a0b0882536e8886e4d120f1b76d7388e66a60f18eeb786872",
+          "core.py": "69313eb6d933f436d151289f23c40f018365d16057a2b75d455ac0fe157a1024",
+          "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
+          "engines/coset_search.py": "3e808aeee08588665f36d3286172de791dc467fc1a854432a5bec2ae7c9be722",
+          "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
+          "engines/geometry.py": "fc8fd418b7eb55b8241a08b1deae7711ea799b587f31f5efc454744bff820e37",
+          "engines/gluing.py": "94141bac6513dbac7210ed0274871ea27ab8a50d0c3d9b27fd2c8f8a7e868a1d",
+          "engines/groups.py": "6193aed77506366187b5a5163002f23db99cf93c7d9a4f3d3bc477ea19cad836",
+          "engines/lattices.py": "e5a90d85fc180e10da7508672d54843838b3f3182ec8ae5c7fe6a5e0a09958df",
+          "engines/layers.py": "a799fab74c7bbacc93712ad2df2ee201f375cb0c56f0f6617cb9f3d1437045cf",
+          "engines/rings.py": "87d1e00e2da8209f6691a023dc517915623e4713b2b7b87695b8957f056158c2",
+          "engines/selection.py": "401f6073306188cc2dc27126a5898cf55e4bd13bd798d4dd512a8782c8f3e632",
+          "engines/signed_layers.py": "dcea56ad4dbd0154d7a302eff6858174fdd5a6776a7a8ece337d177ad24c2672",
+          "engines/stabilizers.py": "999aa4a478cc5b16a6840b5b8576cef565be83c27ad5ce9ad0ca7592dd64e362",
+          "exact_gram.py": "448103205e806c2d1c8bd2770e7a22d29c533cae2fcd3ef3f2bf219572f440ba",
+          "objects.py": "4e8a922bcd7f57fa0d9be5507a92678a170bb8fa45d4e0ab8b61b1e52cf96bb3",
+          "planner.py": "7567b7ac07e0ef52d74a9126aec34e3b70de9b3498fd1f1edfe11f424ccabb97",
+          "runner.py": "f2cb7066a3a33f266a95b436cd822014041633e1e0ef3b7e095087b965ea6574",
+          "scheduler.py": "34aa720811dce88f75c05a76c23cc5f6b36d62d891cd929c863cb7bca499af75"
+        }
+      }
+    },
+    "quadratic_lift": {
+      "specification": {
+        "schema_version": 1,
+        "max_nodes": 2,
+        "output_kinds": [
+          "quadratic_spherical_code"
+        ],
+        "catalogue": [
+          {
+            "op": "geometry.integer_code",
+            "params": {
+              "coordinates": [
+                [
+                  1
+                ],
+                [
+                  -1
+                ]
+              ],
+              "norm_squared": 1
+            }
+          },
+          {
+            "op": "signed_layers.coupled_lift",
+            "params": {
+              "equator_scale": 2,
+              "cap_rational": [],
+              "cap_radical": [],
+              "heights": [
+                -2,
+                2
+              ],
+              "pole_amplitude": 2
+            }
+          }
+        ]
+      },
+      "limits": {},
+      "seconds": 0.5010768409993034,
+      "ledger": {
+        "schema_version": 1,
+        "kind": "typed_construction_planner",
+        "spec_sha256": "4bdfc6a7c83979b007d7df736768bcee9d3defb617d85f50c43e2de5ba461439",
+        "status": "complete_within_declared_scope",
+        "enumeration_complete": true,
+        "stop_reason": "frontier_exhausted",
+        "generated_programs": 2,
+        "program_states": {
+          "completed": 1,
+          "not_target": 1
+        },
+        "explored_programs": 1,
+        "completed_programs": 1,
+        "unresolved_evaluations": 0,
+        "evaluation_attempts": {
+          "completed": 1
+        },
+        "unresolved_programs": [],
+        "unsearched": {
+          "generated_pending_evaluations": 0,
+          "unexpanded_prefixes": 0,
+          "known_immediate_extensions": 0,
+          "prefixes_with_uncounted_extensions": 0,
+          "total_remaining_programs": 0,
+          "descendants_of_frontier": "none"
+        },
+        "pruning_by_catalogue_entry": {
+          "0": {
+            "op": "geometry.integer_code",
+            "expanded_prefixes": 2,
+            "typed_extensions": 2,
+            "type_incompatible_extensions": 0,
+            "prefixes_without_compatible_inputs": 0
+          },
+          "1": {
+            "op": "signed_layers.coupled_lift",
+            "expanded_prefixes": 2,
+            "typed_extensions": 1,
+            "type_incompatible_extensions": 0,
+            "prefixes_without_compatible_inputs": 1
+          }
+        },
+        "best_exact_by_dimension": {
+          "2": {
+            "dimension": 2,
+            "cardinality": 4,
+            "program_id": 2,
+            "output": "n1"
+          }
+        },
+        "pruned_non_target_leaves": 1,
+        "strategy": "breadth_first",
+        "heuristic": "adaptive: pending outputs, fresh bounded descent, then alternating oldest suspended prefix and kind/quality order; ordering only; no dimension eligibility filter",
+        "scheduling": {
+          "checkpoint_schema_version": 2,
+          "policy": "persistent alternating queue/heuristic turns",
+          "productive_expansions": 2,
+          "pruned_leaf_variants": "consume steps without advancing the productive-expansion clock"
+        },
+        "best_observed_candidates_by_dimension": {
+          "2": {
+            "dimension": 2,
+            "cardinality": 4,
+            "verification_status": "exact",
+            "program_id": 2
+          }
+        },
+        "operator_search_diagnostics": [],
+        "quality_diagnostics": [],
+        "target_quality_passed": null,
+        "quality_notice": "enumeration completion is not discovery success; target deficits require better candidates or new structural operators; numerical counts do not certify lower bounds",
+        "resource_limits": {
+          "max_evaluations": 100,
+          "max_program_bytes": 2097152,
+          "max_programs": 10000,
+          "max_receipt_bytes": 16777216,
+          "max_steps": 1000,
+          "per_program_seconds": 30.0,
+          "retry_unresolved": false,
+          "time_limit_seconds": 60.0
+        },
+        "declared_scope": {
+          "max_nodes": 2,
+          "output_kinds": [
+            "quadratic_spherical_code"
+          ],
+          "parameter_domains": [
+            {
+              "op": "geometry.integer_code",
+              "params": {
+                "coordinates": [
+                  [
+                    1
+                  ],
+                  [
+                    -1
+                  ]
+                ],
+                "norm_squared": 1
+              }
+            },
+            {
+              "op": "signed_layers.coupled_lift",
+              "params": {
+                "cap_radical": [],
+                "cap_rational": [],
+                "equator_scale": 2,
+                "heights": [
+                  -2,
+                  2
+                ],
+                "pole_amplitude": 2
+              }
+            }
+          ],
+          "registered_but_omitted": [
+            "codes.translate_union",
+            "cosets.build",
+            "cosets.union",
+            "geometry.gram_code",
+            "geometry.orthogonal_union",
+            "geometry.section",
+            "geometry.sign_embed",
+            "gluing.union",
+            "groups.from_generators",
+            "groups.ganzhinov10",
+            "groups.ganzhinov14",
+            "groups.real_stabilizer_sector",
+            "groups.search",
+            "groups.weil",
+            "lattice.root_system",
+            "layers.known32",
+            "layers.signed_supports",
+            "rings.binary_factor",
+            "rings.extend",
+            "rings.gray",
+            "rings.hensel",
+            "rings.verify_dgls",
+            "search.coset_assembly",
+            "selection.coupled_union",
+            "selection.isometric_exchange",
+            "signed_layers.conditional_swap",
+            "signed_layers.free_zone_join"
+          ],
+          "unimplemented_capabilities": [],
+          "beyond_max_nodes": "unsearched",
+          "outside_parameter_domains": "unsearched"
+        },
+        "scope": "finite typed DAGs only; static kind pruning is not a mathematical exclusion; no global optimum or SOTA claim",
+        "mathematical_exclusion_claim": false,
+        "checkpoint_notice": "saved results are receipts, not proof; export and independently verify before use"
+      },
+      "remaining_prefixes": [],
+      "independent_replay": {
+        "status": "exact",
+        "method": "all normalized pair inequalities in Q(sqrt(3)); positive rational squared norms",
+        "details": {
+          "facts": {
+            "dimension": 2,
+            "ambient_dimension": 2,
+            "cardinality": 4,
+            "max_cosine_upper_bound": [
+              1,
+              2
+            ],
+            "rank_lower_bound": 2,
+            "dimension_scope": "exact; nonzero algebraic minor proved modulo13",
+            "rank_exact": 2,
+            "norm_squared": 4
+          },
+          "pairs_checked": 6,
+          "norm_histogram": {
+            "4": 4
+          },
+          "rank_lower_bound": 2,
+          "data_sha256": "d850308437566087d3a78125f784c0b4b01cfe99f31b1e976b2ad5c6a5757b19",
+          "arithmetic": "integer sign comparisons and exact squaring in Q(sqrt(3))",
+          "antipodality_required": false
+        }
+      },
+      "representative_receipt": {
+        "artifacts": {
+          "n0": {
+            "data": {
+              "coordinates": [
+                [
+                  1
+                ],
+                [
+                  -1
+                ]
+              ],
+              "norm_squared": 1
+            },
+            "facts": {
+              "ambient_dimension": 1,
+              "cardinality": 2,
+              "dimension": 1,
+              "max_inner_product": -1,
+              "norm_squared": 1,
+              "pairs_checked": 1,
+              "rank_exact": 1
+            },
+            "kind": "spherical_code",
+            "verification": {
+              "details": {
+                "ambient_dimension": 1,
+                "cardinality": 2,
+                "data_sha256": "00e7b32d3791dff3927abca015a26610fadbfe4c21deb2faa7dd2ba0beb64073",
+                "dimension": 1,
+                "facts": {
+                  "ambient_dimension": 1,
+                  "cardinality": 2,
+                  "dimension": 1,
+                  "max_inner_product": -1,
+                  "norm_squared": 1,
+                  "pairs_checked": 1,
+                  "rank_exact": 1
+                },
+                "integer_backend": "int64 proven overflow-safe",
+                "max_inner_product": -1,
+                "norm_squared": 1,
+                "pairs_checked": 1,
+                "rank_exact": 1,
+                "rank_scalar_work": 2
+              },
+              "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+              "status": "exact"
+            }
+          },
+          "n1": {
+            "data": {
+              "radical_coordinates": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "radicand": 3,
+              "rational_coordinates": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  -2,
+                  0
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  -2
+                ]
+              ]
+            },
+            "facts": {
+              "ambient_dimension": 2,
+              "cardinality": 4,
+              "dimension": 2,
+              "dimension_scope": "exact; nonzero algebraic minor proved modulo13",
+              "max_cosine_upper_bound": [
+                1,
+                2
+              ],
+              "norm_squared": 4,
+              "rank_exact": 2,
+              "rank_lower_bound": 2
+            },
+            "kind": "quadratic_spherical_code",
+            "verification": {
+              "details": {
+                "antipodality_required": false,
+                "arithmetic": "integer sign comparisons and exact squaring in Q(sqrt(3))",
+                "data_sha256": "d850308437566087d3a78125f784c0b4b01cfe99f31b1e976b2ad5c6a5757b19",
+                "facts": {
+                  "ambient_dimension": 2,
+                  "cardinality": 4,
+                  "dimension": 2,
+                  "dimension_scope": "exact; nonzero algebraic minor proved modulo13",
+                  "max_cosine_upper_bound": [
+                    1,
+                    2
+                  ],
+                  "norm_squared": 4,
+                  "rank_exact": 2,
+                  "rank_lower_bound": 2
+                },
+                "norm_histogram": {
+                  "4": 4
+                },
+                "pairs_checked": 6,
+                "rank_lower_bound": 2
+              },
+              "method": "all normalized pair inequalities in Q(sqrt(3)); positive rational squared norms",
+              "status": "exact"
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "n0": "1e82b1432dd2777fbf1440d0bb8d8700796152e8592671681d91c90d0c70f1a7",
+          "n1": "81251b043a7641f9c8177388783528801e3943596694720459a28e3dbe57bdea"
+        },
+        "budget": {
+          "max_codewords": 262144,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_gram_entries": 2000000,
+          "max_materialized_points": 20000,
+          "max_nodes": 100,
+          "max_orbit_points": 10000,
+          "max_pairs": 10000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096,
+          "max_trials": 200,
+          "solver_seconds": 30
+        },
+        "events": [
+          {
+            "artifact_sha256": "1e82b1432dd2777fbf1440d0bb8d8700796152e8592671681d91c90d0c70f1a7",
+            "kind": "spherical_code",
+            "node": "n0",
+            "op": "geometry.integer_code",
+            "seconds": 0.000378,
+            "state": "completed",
+            "verification_status": "exact"
+          },
+          {
+            "artifact_sha256": "81251b043a7641f9c8177388783528801e3943596694720459a28e3dbe57bdea",
+            "kind": "quadratic_spherical_code",
+            "node": "n1",
+            "op": "signed_layers.coupled_lift",
+            "seconds": 0.000474,
+            "state": "completed",
+            "verification_status": "exact"
+          }
+        ],
+        "outputs": [
+          "n1"
+        ],
+        "program": {
+          "nodes": [
+            {
+              "id": "n0",
+              "inputs": [],
+              "op": "geometry.integer_code",
+              "params": {
+                "coordinates": [
+                  [
+                    1
+                  ],
+                  [
+                    -1
+                  ]
+                ],
+                "norm_squared": 1
+              }
+            },
+            {
+              "id": "n1",
+              "inputs": [
+                "n0"
+              ],
+              "op": "signed_layers.coupled_lift",
+              "params": {
+                "cap_radical": [],
+                "cap_rational": [],
+                "equator_scale": 2,
+                "heights": [
+                  -2,
+                  2
+                ],
+                "pole_amplitude": 2
+              }
+            }
+          ],
+          "outputs": [
+            "n1"
+          ],
+          "provenance": {
+            "planner_spec_sha256": "4bdfc6a7c83979b007d7df736768bcee9d3defb617d85f50c43e2de5ba461439",
+            "search": "typed DAG synthesis; conditional kinds rechecked at runtime"
+          },
+          "schema_version": 1
+        },
+        "program_sha256": "380fe07d7c0ecdc69daa5016141a2472cc14f17975891dc9a2f0f3405caa6135",
+        "python": "3.12.14",
+        "schema_version": 1,
+        "scope": "construction experiment; no automatic record registration or worldwide-priority claim",
+        "source_sha256": {
+          "__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
+          "__main__.py": "b7477b369529118ea14b7e48fc38c9e8c37957a554bebad7b37912406692f15a",
+          "certification.py": "d7c38f8d8ce4caab226ac344fd8d28413a740897228ecac17f2f13a98f97d898",
+          "compatibility.py": "b484a934b4f6d68cd11f69b17eb0a23fd61556bf4fe4978205530cbfe68b5f89",
+          "contracts.py": "8a8c134dcf67751a0b0882536e8886e4d120f1b76d7388e66a60f18eeb786872",
+          "core.py": "69313eb6d933f436d151289f23c40f018365d16057a2b75d455ac0fe157a1024",
+          "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
+          "engines/coset_search.py": "3e808aeee08588665f36d3286172de791dc467fc1a854432a5bec2ae7c9be722",
+          "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
+          "engines/geometry.py": "fc8fd418b7eb55b8241a08b1deae7711ea799b587f31f5efc454744bff820e37",
+          "engines/gluing.py": "94141bac6513dbac7210ed0274871ea27ab8a50d0c3d9b27fd2c8f8a7e868a1d",
+          "engines/groups.py": "6193aed77506366187b5a5163002f23db99cf93c7d9a4f3d3bc477ea19cad836",
+          "engines/lattices.py": "e5a90d85fc180e10da7508672d54843838b3f3182ec8ae5c7fe6a5e0a09958df",
+          "engines/layers.py": "a799fab74c7bbacc93712ad2df2ee201f375cb0c56f0f6617cb9f3d1437045cf",
+          "engines/rings.py": "87d1e00e2da8209f6691a023dc517915623e4713b2b7b87695b8957f056158c2",
+          "engines/selection.py": "401f6073306188cc2dc27126a5898cf55e4bd13bd798d4dd512a8782c8f3e632",
+          "engines/signed_layers.py": "dcea56ad4dbd0154d7a302eff6858174fdd5a6776a7a8ece337d177ad24c2672",
+          "engines/stabilizers.py": "999aa4a478cc5b16a6840b5b8576cef565be83c27ad5ce9ad0ca7592dd64e362",
+          "exact_gram.py": "448103205e806c2d1c8bd2770e7a22d29c533cae2fcd3ef3f2bf219572f440ba",
+          "objects.py": "4e8a922bcd7f57fa0d9be5507a92678a170bb8fa45d4e0ab8b61b1e52cf96bb3",
+          "planner.py": "7567b7ac07e0ef52d74a9126aec34e3b70de9b3498fd1f1edfe11f424ccabb97",
+          "runner.py": "f2cb7066a3a33f266a95b436cd822014041633e1e0ef3b7e095087b965ea6574",
+          "scheduler.py": "34aa720811dce88f75c05a76c23cc5f6b36d62d891cd929c863cb7bca499af75"
+        }
+      }
+    },
+    "adaptive_small_cap": {
+      "specification": {
+        "schema_version": 1,
+        "max_nodes": 2,
+        "strategy": "adaptive",
+        "output_kinds": [
+          "spherical_code"
+        ],
+        "catalogue": [
+          {
+            "op": "groups.weil",
+            "params": {
+              "rank": 1,
+              "parity": -1
+            },
+            "domains": {
+              "p": {
+                "values": [
+                  3,
+                  5,
+                  7,
+                  11,
+                  13,
+                  17,
+                  19,
+                  23,
+                  29,
+                  31
+                ]
+              }
+            }
+          },
+          {
+            "op": "groups.search",
+            "params": {
+              "trials": 0,
+              "phase_orders": [
+                1
+              ],
+              "phase_steps": 1
+            }
+          }
+        ]
+      },
+      "limits": {
+        "max_programs": 5,
+        "per_program_seconds": 5
+      },
+      "seconds": 1.3871713659991656,
+      "ledger": {
+        "schema_version": 1,
+        "kind": "typed_construction_planner",
+        "spec_sha256": "e9160409c11259dad1dcc1d1683148ff55263a336ea201eea099bd6933b0243a",
+        "status": "incomplete",
+        "enumeration_complete": false,
+        "stop_reason": "program_limit_reached",
+        "generated_programs": 5,
+        "program_states": {
+          "completed": 2,
+          "not_target": 3
+        },
+        "explored_programs": 2,
+        "completed_programs": 2,
+        "unresolved_evaluations": 0,
+        "evaluation_attempts": {
+          "completed": 2
+        },
+        "unresolved_programs": [],
+        "unsearched": {
+          "generated_pending_evaluations": 0,
+          "unexpanded_prefixes": 3,
+          "known_immediate_extensions": 8,
+          "prefixes_with_uncounted_extensions": 0,
+          "total_remaining_programs": null,
+          "descendants_of_frontier": "unknown until expanded"
+        },
+        "pruning_by_catalogue_entry": {
+          "0": {
+            "op": "groups.weil",
+            "expanded_prefixes": 4,
+            "typed_extensions": 40,
+            "type_incompatible_extensions": 0,
+            "prefixes_without_compatible_inputs": 0
+          },
+          "1": {
+            "op": "groups.search",
+            "expanded_prefixes": 4,
+            "typed_extensions": 3,
+            "type_incompatible_extensions": 0,
+            "prefixes_without_compatible_inputs": 1
+          }
+        },
+        "best_exact_by_dimension": {},
+        "pruned_non_target_leaves": 30,
+        "strategy": "adaptive",
+        "heuristic": "adaptive: pending outputs, fresh bounded descent, then alternating oldest suspended prefix and kind/quality order; ordering only; no dimension eligibility filter",
+        "scheduling": {
+          "checkpoint_schema_version": 2,
+          "policy": "persistent alternating queue/heuristic turns",
+          "productive_expansions": 5,
+          "pruned_leaf_variants": "consume steps without advancing the productive-expansion clock"
+        },
+        "best_observed_candidates_by_dimension": {
+          "2": {
+            "dimension": 2,
+            "cardinality": 3,
+            "verification_status": "numerical",
+            "program_id": 2
+          },
+          "4": {
+            "dimension": 4,
+            "cardinality": 0,
+            "verification_status": "unverified",
+            "program_id": 4
+          }
+        },
+        "operator_search_diagnostics": [
+          {
+            "program_id": 2,
+            "output": "n1",
+            "diagnostics": {
+              "closure_failures": 0,
+              "limits": {
+                "linecap": 500,
+                "max_blocks": 1000,
+                "max_candidates": 2000,
+                "max_materialized_points": 20000,
+                "max_orbits": 100,
+                "max_output_points": 10000,
+                "trials": 0,
+                "vectorcap": 3000
+              },
+              "materialization_limit_reached": false,
+              "sampling_limit_reached": false,
+              "search_scope": "sampled subgroup eigenlines and finite phase grid only",
+              "solver": {
+                "bound_scope": "materialized candidate conflict graph; numerical screening",
+                "candidate_count": 1,
+                "conflicts": 0,
+                "finite_candidate_upper_bound": 3.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "status": 0
+              }
+            }
+          },
+          {
+            "program_id": 4,
+            "output": "n1",
+            "diagnostics": {
+              "closure_failures": 0,
+              "limits": {
+                "linecap": 500,
+                "max_blocks": 1000,
+                "max_candidates": 2000,
+                "max_materialized_points": 20000,
+                "max_orbits": 100,
+                "max_output_points": 10000,
+                "trials": 0,
+                "vectorcap": 3000
+              },
+              "materialization_limit_reached": false,
+              "output_status": "empty",
+              "sampling_limit_reached": false,
+              "search_scope": "sampled subgroup eigenlines and finite phase grid only",
+              "solver": {
+                "candidate_count": 0,
+                "status": "no_candidates"
+              }
+            }
+          }
+        ],
+        "quality_diagnostics": [],
+        "target_quality_passed": null,
+        "quality_notice": "enumeration completion is not discovery success; target deficits require better candidates or new structural operators; numerical counts do not certify lower bounds",
+        "resource_limits": {
+          "max_evaluations": 100,
+          "max_program_bytes": 2097152,
+          "max_programs": 5,
+          "max_receipt_bytes": 16777216,
+          "max_steps": 1000,
+          "per_program_seconds": 5.0,
+          "retry_unresolved": false,
+          "time_limit_seconds": 60.0
+        },
+        "declared_scope": {
+          "max_nodes": 2,
+          "output_kinds": [
+            "spherical_code"
+          ],
+          "parameter_domains": [
+            {
+              "domains": {
+                "p": {
+                  "values": [
+                    3,
+                    5,
+                    7,
+                    11,
+                    13,
+                    17,
+                    19,
+                    23,
+                    29,
+                    31
+                  ]
+                }
+              },
+              "op": "groups.weil",
+              "params": {
+                "parity": -1,
+                "rank": 1
+              }
+            },
+            {
+              "op": "groups.search",
+              "params": {
+                "phase_orders": [
+                  1
+                ],
+                "phase_steps": 1,
+                "trials": 0
+              }
+            }
+          ],
+          "registered_but_omitted": [
+            "codes.translate_union",
+            "cosets.build",
+            "cosets.union",
+            "geometry.gram_code",
+            "geometry.integer_code",
+            "geometry.orthogonal_union",
+            "geometry.section",
+            "geometry.sign_embed",
+            "gluing.union",
+            "groups.from_generators",
+            "groups.ganzhinov10",
+            "groups.ganzhinov14",
+            "groups.real_stabilizer_sector",
+            "lattice.root_system",
+            "layers.known32",
+            "layers.signed_supports",
+            "rings.binary_factor",
+            "rings.extend",
+            "rings.gray",
+            "rings.hensel",
+            "rings.verify_dgls",
+            "search.coset_assembly",
+            "selection.coupled_union",
+            "selection.isometric_exchange",
+            "signed_layers.conditional_swap",
+            "signed_layers.coupled_lift",
+            "signed_layers.free_zone_join"
+          ],
+          "unimplemented_capabilities": [],
+          "beyond_max_nodes": "unsearched",
+          "outside_parameter_domains": "unsearched"
+        },
+        "scope": "finite typed DAGs only; static kind pruning is not a mathematical exclusion; no global optimum or SOTA claim",
+        "mathematical_exclusion_claim": false,
+        "checkpoint_notice": "saved results are receipts, not proof; export and independently verify before use"
+      },
+      "remaining_prefixes": [
+        {
+          "program_id": 5,
+          "depth": 1,
+          "expansion_cursor": 10,
+          "expansion_turn": 0
+        },
+        {
+          "program_id": 3,
+          "depth": 1,
+          "expansion_cursor": 11,
+          "expansion_turn": 4
+        },
+        {
+          "program_id": 0,
+          "depth": 0,
+          "expansion_cursor": 3,
+          "expansion_turn": 5
+        }
+      ],
+      "independent_replay": {
+        "status": "numerical",
+        "method": "full floating point Gram check",
+        "details": {
+          "cardinality": 3,
+          "dimension": 2,
+          "rank_numerical": 2,
+          "max_cosine": -0.4999999999999996,
+          "tolerance": 1e-08,
+          "certificate": false
+        }
+      },
+      "representative_receipt": {
+        "artifacts": {
+          "n0": {
+            "data": {
+              "family": "weil",
+              "generators_imag": [
+                [
+                  [
+                    -4.710277376051325e-16
+                  ]
+                ],
+                [
+                  [
+                    0.8660254037844386
+                  ]
+                ]
+              ],
+              "generators_real": [
+                [
+                  [
+                    0.9999999999999999
+                  ]
+                ],
+                [
+                  [
+                    -0.4999999999999994
+                  ]
+                ]
+              ],
+              "p": 3,
+              "parity": -1,
+              "rank": 1
+            },
+            "facts": {
+              "complex_dimension": 1,
+              "generator_count": 2
+            },
+            "kind": "unitary_representation",
+            "verification": {
+              "details": {
+                "complex_dimension": 1,
+                "finite_group_proved": false,
+                "generator_count": 2,
+                "max_residual": 6.661338147750939e-16
+              },
+              "method": "unitarity residual",
+              "status": "numerical"
+            }
+          },
+          "n1": {
+            "data": {
+              "block_coverage": {
+                "admitted_point_rows": 3,
+                "duplicate_blocks_skipped": 0,
+                "identity_precision_decimal_digits": 7,
+                "schedule": "phase step then phase order within each closed orbit; orbit discovery order unchanged",
+                "unique_blocks_admitted": 1
+              },
+              "closure_failures": 0,
+              "cross_checks": "one representative per constituent vector orbit against full other block",
+              "inventory": [
+                {
+                  "accepted_phase_orders": [
+                    1
+                  ],
+                  "admitted_blocks": 1,
+                  "capacity_blocks_skipped": 0,
+                  "duplicate_blocks_skipped": 0,
+                  "lines": 1,
+                  "orbit": 0,
+                  "vector_status": "closed_numerically",
+                  "vectors": 3
+                }
+              ],
+              "limits": {
+                "linecap": 500,
+                "max_blocks": 1000,
+                "max_candidates": 2000,
+                "max_materialized_points": 20000,
+                "max_orbits": 100,
+                "max_output_points": 10000,
+                "trials": 0,
+                "vectorcap": 3000
+              },
+              "materialization_limit_reached": false,
+              "real_coordinates": [
+                [
+                  1.0,
+                  0.0
+                ],
+                [
+                  -0.4999999999999996,
+                  0.8660254037844389
+                ],
+                [
+                  -0.5000000000000009,
+                  -0.8660254037844383
+                ]
+              ],
+              "sampling_limit_reached": false,
+              "seed_diagnostics": [
+                {
+                  "lines": 1,
+                  "seed": "coordinate:0",
+                  "status": "closed_numerically"
+                }
+              ],
+              "selected_blocks": [
+                "o0:m1:phase0/2"
+              ],
+              "solver": {
+                "bound_scope": "materialized candidate conflict graph; numerical screening",
+                "candidate_count": 1,
+                "conflicts": 0,
+                "finite_candidate_upper_bound": 3.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "status": 0
+              }
+            },
+            "facts": {
+              "cardinality": 3,
+              "complex_dimension": 1,
+              "dimension": 2,
+              "global_optimality_claim": false,
+              "search_scope": "sampled subgroup eigenlines and finite phase grid only",
+              "seed": 20261104
+            },
+            "kind": "spherical_code",
+            "verification": {
+              "details": {
+                "cardinality": 3,
+                "certificate": false,
+                "dimension": 2,
+                "max_cosine": -0.4999999999999996,
+                "rank_numerical": 2,
+                "tolerance": 1e-08
+              },
+              "method": "full floating point Gram check",
+              "status": "numerical"
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "n0": "0c2f6facdc98852ce8444a216ff476d6015d73cbe829e805f2dc3a41253cc2ab",
+          "n1": "0f7c02274685d20c43ae2b4b2ee21d09bd6276610a4a7d8ad150c9a7ba80261d"
+        },
+        "budget": {
+          "max_codewords": 262144,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_gram_entries": 2000000,
+          "max_materialized_points": 20000,
+          "max_nodes": 100,
+          "max_orbit_points": 10000,
+          "max_pairs": 10000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096,
+          "max_trials": 200,
+          "solver_seconds": 30
+        },
+        "events": [
+          {
+            "artifact_sha256": "0c2f6facdc98852ce8444a216ff476d6015d73cbe829e805f2dc3a41253cc2ab",
+            "kind": "unitary_representation",
+            "node": "n0",
+            "op": "groups.weil",
+            "seconds": 0.000608,
+            "state": "completed",
+            "verification_status": "numerical"
+          },
+          {
+            "artifact_sha256": "0f7c02274685d20c43ae2b4b2ee21d09bd6276610a4a7d8ad150c9a7ba80261d",
+            "kind": "spherical_code",
+            "node": "n1",
+            "op": "groups.search",
+            "seconds": 0.287659,
+            "state": "completed",
+            "verification_status": "numerical"
+          }
+        ],
+        "outputs": [
+          "n1"
+        ],
+        "program": {
+          "nodes": [
+            {
+              "id": "n0",
+              "inputs": [],
+              "op": "groups.weil",
+              "params": {
+                "p": 3,
+                "parity": -1,
+                "rank": 1
+              }
+            },
+            {
+              "id": "n1",
+              "inputs": [
+                "n0"
+              ],
+              "op": "groups.search",
+              "params": {
+                "phase_orders": [
+                  1
+                ],
+                "phase_steps": 1,
+                "trials": 0
+              }
+            }
+          ],
+          "outputs": [
+            "n1"
+          ],
+          "provenance": {
+            "planner_spec_sha256": "e9160409c11259dad1dcc1d1683148ff55263a336ea201eea099bd6933b0243a",
+            "search": "typed DAG synthesis; conditional kinds rechecked at runtime"
+          },
+          "schema_version": 1
+        },
+        "program_sha256": "cb0a1f2fdedbf9d47621b7e52833468b9fcc2d090e735f3ea647d2ebacd892c6",
+        "python": "3.12.14",
+        "schema_version": 1,
+        "scope": "construction experiment; no automatic record registration or worldwide-priority claim",
+        "source_sha256": {
+          "__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
+          "__main__.py": "b7477b369529118ea14b7e48fc38c9e8c37957a554bebad7b37912406692f15a",
+          "certification.py": "d7c38f8d8ce4caab226ac344fd8d28413a740897228ecac17f2f13a98f97d898",
+          "compatibility.py": "b484a934b4f6d68cd11f69b17eb0a23fd61556bf4fe4978205530cbfe68b5f89",
+          "contracts.py": "8a8c134dcf67751a0b0882536e8886e4d120f1b76d7388e66a60f18eeb786872",
+          "core.py": "69313eb6d933f436d151289f23c40f018365d16057a2b75d455ac0fe157a1024",
+          "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
+          "engines/coset_search.py": "3e808aeee08588665f36d3286172de791dc467fc1a854432a5bec2ae7c9be722",
+          "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
+          "engines/geometry.py": "fc8fd418b7eb55b8241a08b1deae7711ea799b587f31f5efc454744bff820e37",
+          "engines/gluing.py": "94141bac6513dbac7210ed0274871ea27ab8a50d0c3d9b27fd2c8f8a7e868a1d",
+          "engines/groups.py": "6193aed77506366187b5a5163002f23db99cf93c7d9a4f3d3bc477ea19cad836",
+          "engines/lattices.py": "e5a90d85fc180e10da7508672d54843838b3f3182ec8ae5c7fe6a5e0a09958df",
+          "engines/layers.py": "a799fab74c7bbacc93712ad2df2ee201f375cb0c56f0f6617cb9f3d1437045cf",
+          "engines/rings.py": "87d1e00e2da8209f6691a023dc517915623e4713b2b7b87695b8957f056158c2",
+          "engines/selection.py": "401f6073306188cc2dc27126a5898cf55e4bd13bd798d4dd512a8782c8f3e632",
+          "engines/signed_layers.py": "dcea56ad4dbd0154d7a302eff6858174fdd5a6776a7a8ece337d177ad24c2672",
+          "engines/stabilizers.py": "999aa4a478cc5b16a6840b5b8576cef565be83c27ad5ce9ad0ca7592dd64e362",
+          "exact_gram.py": "448103205e806c2d1c8bd2770e7a22d29c533cae2fcd3ef3f2bf219572f440ba",
+          "objects.py": "4e8a922bcd7f57fa0d9be5507a92678a170bb8fa45d4e0ab8b61b1e52cf96bb3",
+          "planner.py": "7567b7ac07e0ef52d74a9126aec34e3b70de9b3498fd1f1edfe11f424ccabb97",
+          "runner.py": "f2cb7066a3a33f266a95b436cd822014041633e1e0ef3b7e095087b965ea6574",
+          "scheduler.py": "34aa720811dce88f75c05a76c23cc5f6b36d62d891cd929c863cb7bca499af75"
+        }
+      }
+    }
+  },
+  "probe_sources_unchanged": true,
+  "historical_import": {
+    "report": "planner_synthesis_20261104.json",
+    "sha256": "82e4418db72549929ab42534d06a0c6da9d7feb0594511846ddaa7558b71eef9",
+    "notice": "Imported 81-test report and measurements refer to the earlier patch workspace, not this integrated source snapshot."
+  },
+  "historical_receipt_replay": {
+    "receipt": "receipts/planner_cosets8_best.json",
+    "sha256": "3891efc3223d181797b4ede46fc9be435112d305a3a4f44e223440fbb9ec526d",
+    "command": "OPENBLAS_NUM_THREADS=1 python -m discovery verify discovery/benchmarks/receipts/planner_cosets8_best.json",
+    "report": {
+      "status": "exact",
+      "method": "binary sign embedding from independently reverified distance",
+      "details": {
+        "facts": {
+          "dimension": 8,
+          "ambient_dimension": 8,
+          "cardinality": 128,
+          "norm_squared": 8,
+          "max_inner_product_upper_bound": 4,
+          "dimension_scope": "ambient; exact span rank not computed"
+        },
+        "binary_verification": {
+          "status": "exact",
+          "method": "exact disjoint syndrome coset union",
+          "details": {
+            "facts": {
+              "length": 8,
+              "cardinality": 128,
+              "min_distance": 2
+            },
+            "implicit": true
+          }
+        },
+        "materialized": false
+      }
+    }
+  },
+  "unchanged_competitive_quality_gates": [
+    {
+      "dimension": 8,
+      "best_cardinality": 128,
+      "verification": "exact, ambient dimension only",
+      "target": 240,
+      "target_quality_passed": false
+    },
+    {
+      "dimension": 28,
+      "best_candidate_cardinality": 6720,
+      "verification": "numerical only",
+      "target": 221988,
+      "target_quality_passed": false
+    }
+  ],
+  "scope": "Integration and tiny known controls only; full finite mixed enumeration includes explicit runtime failures, not exclusions. No competitive search success, novelty, global optimum or new SOTA claim.",
+  "limitations": [
+    "bounded finite grammar, step/storage/time caps and heuristic ordering can still stop before useful results; no shortest-program guarantee",
+    "explicit integer/Gram gluing needs supplied cross Gram and cannot accept implicit sign artifacts",
+    "checkpoint/source hashes detect ordinary source edits; no hermetic execution, authenticity or complete environment pin",
+    "coset assembly forecasts remain unverified and require an independent exact distance certificate"
+  ],
+  "adaptive_scheduling_fix": {
+    "original_repro": "ten Weil constructor choices; max_nodes2, max_programs5: five intermediate constructors and zero evaluations",
+    "new_probe": "same scope/storage cap: two completed evaluations, three intermediate prefixes, root cursor3/10, seven unseen constructors retained",
+    "checkpoint_schema_version": 2,
+    "policy": "pending outputs first; fresh prefixes get bounded initial descent; alternate oldest suspended prefix and kind/quality heuristic; productive child+parent cursor+turn commit atomically",
+    "breadth_first": "unchanged program-id order",
+    "regressions": "max_nodes2 and3 under five stored programs; full/resumed row order identical; existing interruption tests; legacy schema1 ledger readable but incompatible resume rejected",
+    "remaining_limitations": "not a shortest-program or arbitrary-budget progress guarantee; pruned leaf variants consume steps without advancing productive-expansion clock"
+  },
+  "compiler_limits": {
+    "MAX_CATALOGUE_ENTRIES": 256,
+    "MAX_PARAMETER_AXES": 256,
+    "MAX_DOMAIN_VALUES": 4096,
+    "MAX_SUBSET_ITEMS": 512,
+    "MAX_SUBSET_COMPILE_WORK": 1000000,
+    "MAX_DOMAIN_COUNT_BITS": 4096
+  },
+  "independent_review": {
+    "status": "passed; no remaining blocking finding",
+    "targeted_tests": 28,
+    "targeted_seconds": 20.139,
+    "findings_resolved": [
+      "alternative input kinds and current output contracts",
+      "live source/contract and worker manifest binding",
+      "subset compilation resource preflight",
+      "adaptive constructor-starvation regression and persistent cursor/turn scheduling",
+      "legacy ledger readability and incompatible resume rejection"
+    ],
+    "reviewer": "independent_final_review",
+    "full_suite_tests": 168,
+    "full_suite_seconds": 46.538,
+    "source_frozen_after_review": true
+  }
+}

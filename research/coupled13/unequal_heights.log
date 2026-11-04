@@ -1,0 +1,18 @@
+0 5 h1_full_2_ones11 98304 20 20
+0 5 h1_sparse_3_2_1_1 190080 23 23
+0 5 h_sqrt3_sparse_3_2 1056 52 56
+0 5 h3_sparse_2_1_1_1 63360 37 37
+0 5 h3_flat_ones7 202752 30 30
+unequal result 0 5 0 0 5.405611753463745
+2 3 h1_full_2_ones11 98304 20 20
+2 3 h1_sparse_3_2_1_1 190080 23 23
+2 3 h_sqrt3_sparse_3_2 1056 52 56
+2 3 h3_sparse_2_1_1_1 63360 37 37
+2 3 h3_flat_ones7 202752 30 30
+unequal result 2 3 0 0 5.772557258605957
+4 5 h1_full_2_ones11 98304 20 20
+4 5 h1_sparse_3_2_1_1 190080 23 23
+4 5 h_sqrt3_sparse_3_2 1056 52 56
+4 5 h3_sparse_2_1_1_1 63360 37 37
+4 5 h3_flat_ones7 202752 30 30
+unequal result 4 5 0 0 4.90826678276062

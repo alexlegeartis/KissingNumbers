@@ -1,0 +1,929 @@
+{
+  "outcome": "No SOTA unless a fully screened admissible result explicitly says so. Failed point sets are saved for replay, not certificates.",
+  "random_seed": 20261104,
+  "gradient_finite_difference_error": 5.6174233752394726e-08,
+  "baselines": {
+    "5": 40,
+    "6": 72,
+    "7": 126,
+    "8": 240
+  },
+  "results": [
+    {
+      "dimension": 5,
+      "group_order": 7,
+      "seed_orbits": 3,
+      "target_cardinality": 42,
+      "frequencies": [
+        1,
+        2
+      ],
+      "trials_completed": 24,
+      "seconds": 0.058094348999929935,
+      "best_loss": 0.06663745538802361,
+      "best_max_cosine": 0.5750985855599966,
+      "admissible_numerically": false,
+      "file": "d5_c7_k3_f1,2.npz",
+      "trials": [
+        {
+          "trial": 0,
+          "loss": 0.0770327893459933,
+          "max_cosine_full": 0.6000581123026647,
+          "iterations": 30,
+          "status": 0
+        },
+        {
+          "trial": 1,
+          "loss": 0.07703278934599228,
+          "max_cosine_full": 0.6000580989638331,
+          "iterations": 23,
+          "status": 0
+        },
+        {
+          "trial": 2,
+          "loss": 0.0770327893459943,
+          "max_cosine_full": 0.6000581177345143,
+          "iterations": 30,
+          "status": 0
+        },
+        {
+          "trial": 3,
+          "loss": 0.07703278934599249,
+          "max_cosine_full": 0.600058092515452,
+          "iterations": 40,
+          "status": 0
+        },
+        {
+          "trial": 4,
+          "loss": 0.07703278934599299,
+          "max_cosine_full": 0.6000581074482859,
+          "iterations": 24,
+          "status": 0
+        },
+        {
+          "trial": 5,
+          "loss": 0.06663745538802422,
+          "max_cosine_full": 0.5750985770043378,
+          "iterations": 25,
+          "status": 0
+        },
+        {
+          "trial": 6,
+          "loss": 0.0666374553880254,
+          "max_cosine_full": 0.5750985808534406,
+          "iterations": 21,
+          "status": 0
+        },
+        {
+          "trial": 7,
+          "loss": 0.06663745538802378,
+          "max_cosine_full": 0.5750985857233857,
+          "iterations": 19,
+          "status": 0
+        },
+        {
+          "trial": 8,
+          "loss": 0.06663745538802374,
+          "max_cosine_full": 0.5750985864089417,
+          "iterations": 24,
+          "status": 0
+        },
+        {
+          "trial": 9,
+          "loss": 0.07703278934599164,
+          "max_cosine_full": 0.6000581000867481,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 10,
+          "loss": 0.06663745538802404,
+          "max_cosine_full": 0.5750985899404152,
+          "iterations": 18,
+          "status": 0
+        },
+        {
+          "trial": 11,
+          "loss": 0.06663745538802392,
+          "max_cosine_full": 0.5750985885058895,
+          "iterations": 21,
+          "status": 0
+        },
+        {
+          "trial": 12,
+          "loss": 0.06663745538802392,
+          "max_cosine_full": 0.5750985866923847,
+          "iterations": 54,
+          "status": 0
+        },
+        {
+          "trial": 13,
+          "loss": 0.06663745538802412,
+          "max_cosine_full": 0.5750985847822515,
+          "iterations": 17,
+          "status": 0
+        },
+        {
+          "trial": 14,
+          "loss": 0.06663745538802361,
+          "max_cosine_full": 0.5750985855599966,
+          "iterations": 24,
+          "status": 0
+        },
+        {
+          "trial": 15,
+          "loss": 0.0775403703502138,
+          "max_cosine_full": 0.6014404004830397,
+          "iterations": 32,
+          "status": 0
+        },
+        {
+          "trial": 16,
+          "loss": 0.06663745538802397,
+          "max_cosine_full": 0.5750985880864103,
+          "iterations": 18,
+          "status": 0
+        },
+        {
+          "trial": 17,
+          "loss": 0.07754037035021348,
+          "max_cosine_full": 0.6014403973588262,
+          "iterations": 40,
+          "status": 0
+        },
+        {
+          "trial": 18,
+          "loss": 0.07703278934599819,
+          "max_cosine_full": 0.6000581126593234,
+          "iterations": 28,
+          "status": 0
+        },
+        {
+          "trial": 19,
+          "loss": 0.06663745538802401,
+          "max_cosine_full": 0.5750985868416781,
+          "iterations": 18,
+          "status": 0
+        },
+        {
+          "trial": 20,
+          "loss": 0.07703278934599193,
+          "max_cosine_full": 0.6000580960870977,
+          "iterations": 51,
+          "status": 0
+        },
+        {
+          "trial": 21,
+          "loss": 0.07703278934599295,
+          "max_cosine_full": 0.6000581030713775,
+          "iterations": 34,
+          "status": 0
+        },
+        {
+          "trial": 22,
+          "loss": 0.06663745538804441,
+          "max_cosine_full": 0.5750985842842061,
+          "iterations": 16,
+          "status": 0
+        },
+        {
+          "trial": 23,
+          "loss": 0.07703278934599159,
+          "max_cosine_full": 0.6000581024279138,
+          "iterations": 30,
+          "status": 0
+        }
+      ],
+      "certificate": "Numerical optimization only. Inadmissible arrays are failed trial point sets, not kissing configurations.",
+      "restart_limit": 24,
+      "restart_wall_budget_seconds": 45,
+      "wall_budget_checked_between_restarts": true,
+      "optimizer_max_iterations": 1800
+    },
+    {
+      "dimension": 5,
+      "group_order": 5,
+      "seed_orbits": 4,
+      "target_cardinality": 40,
+      "frequencies": [
+        1,
+        2
+      ],
+      "trials_completed": 16,
+      "seconds": 0.05608945700032564,
+      "best_loss": 4.1787276160892887e-16,
+      "best_max_cosine": 0.5000000078683635,
+      "admissible_numerically": false,
+      "file": "d5_c5_k4_f1,2.npz",
+      "trials": [
+        {
+          "trial": 0,
+          "loss": 1.314051785935635e-15,
+          "max_cosine_full": 0.5000000159137282,
+          "iterations": 54,
+          "status": 0
+        },
+        {
+          "trial": 1,
+          "loss": 4.1787276160892887e-16,
+          "max_cosine_full": 0.5000000078683635,
+          "iterations": 23,
+          "status": 0
+        },
+        {
+          "trial": 2,
+          "loss": 0.036710785281649574,
+          "max_cosine_full": 0.5583913388919587,
+          "iterations": 33,
+          "status": 0
+        },
+        {
+          "trial": 3,
+          "loss": 2.5512108477815888e-15,
+          "max_cosine_full": 0.5000000165861175,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 4,
+          "loss": 9.29131239574482e-16,
+          "max_cosine_full": 0.500000014823992,
+          "iterations": 24,
+          "status": 0
+        },
+        {
+          "trial": 5,
+          "loss": 3.841061134796341e-15,
+          "max_cosine_full": 0.5000000245855749,
+          "iterations": 33,
+          "status": 0
+        },
+        {
+          "trial": 6,
+          "loss": 8.649532504414899e-16,
+          "max_cosine_full": 0.5000000133827284,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 7,
+          "loss": 1.847242701063569e-15,
+          "max_cosine_full": 0.5000000183318477,
+          "iterations": 23,
+          "status": 0
+        },
+        {
+          "trial": 8,
+          "loss": 2.2962657902238445e-15,
+          "max_cosine_full": 0.5000000198869619,
+          "iterations": 29,
+          "status": 0
+        },
+        {
+          "trial": 9,
+          "loss": 0.03156737402154178,
+          "max_cosine_full": 0.5588477692211201,
+          "iterations": 49,
+          "status": 0
+        },
+        {
+          "trial": 10,
+          "loss": 1.9763996150091307e-15,
+          "max_cosine_full": 0.5000000182324207,
+          "iterations": 23,
+          "status": 0
+        },
+        {
+          "trial": 11,
+          "loss": 1.8459855187709633e-15,
+          "max_cosine_full": 0.500000014036401,
+          "iterations": 38,
+          "status": 0
+        },
+        {
+          "trial": 12,
+          "loss": 3.079452193117321e-15,
+          "max_cosine_full": 0.5000000203747017,
+          "iterations": 60,
+          "status": 0
+        },
+        {
+          "trial": 13,
+          "loss": 1.480193754525469e-15,
+          "max_cosine_full": 0.5000000163513227,
+          "iterations": 22,
+          "status": 0
+        },
+        {
+          "trial": 14,
+          "loss": 0.035568176523801245,
+          "max_cosine_full": 0.5540923455669259,
+          "iterations": 47,
+          "status": 0
+        },
+        {
+          "trial": 15,
+          "loss": 0.06866696788203605,
+          "max_cosine_full": 0.5984241302254233,
+          "iterations": 58,
+          "status": 0
+        }
+      ],
+      "certificate": "Numerical optimization only. Inadmissible arrays are failed trial point sets, not kissing configurations.",
+      "restart_limit": 16,
+      "restart_wall_budget_seconds": 35,
+      "wall_budget_checked_between_restarts": true,
+      "optimizer_max_iterations": 1800
+    },
+    {
+      "dimension": 6,
+      "group_order": 19,
+      "seed_orbits": 2,
+      "target_cardinality": 76,
+      "frequencies": [
+        1,
+        4,
+        7
+      ],
+      "trials_completed": 24,
+      "seconds": 0.06262596999977177,
+      "best_loss": 0.40831926971651844,
+      "best_max_cosine": 0.8401918237570057,
+      "admissible_numerically": false,
+      "file": "d6_c19_k2_f1,4,7.npz",
+      "trials": [
+        {
+          "trial": 0,
+          "loss": 0.4083192697165191,
+          "max_cosine_full": 0.8401918243357198,
+          "iterations": 26,
+          "status": 0
+        },
+        {
+          "trial": 1,
+          "loss": 0.40831926971651916,
+          "max_cosine_full": 0.8401918232785822,
+          "iterations": 16,
+          "status": 0
+        },
+        {
+          "trial": 2,
+          "loss": 0.4083192697165185,
+          "max_cosine_full": 0.8401918234301848,
+          "iterations": 26,
+          "status": 0
+        },
+        {
+          "trial": 3,
+          "loss": 0.4083192697165188,
+          "max_cosine_full": 0.8401918233860398,
+          "iterations": 27,
+          "status": 0
+        },
+        {
+          "trial": 4,
+          "loss": 0.40831926971651905,
+          "max_cosine_full": 0.8401918237929901,
+          "iterations": 15,
+          "status": 0
+        },
+        {
+          "trial": 5,
+          "loss": 0.4083192697165187,
+          "max_cosine_full": 0.8401918244101881,
+          "iterations": 24,
+          "status": 0
+        },
+        {
+          "trial": 6,
+          "loss": 0.40831926971651866,
+          "max_cosine_full": 0.8401918233203659,
+          "iterations": 28,
+          "status": 0
+        },
+        {
+          "trial": 7,
+          "loss": 0.4083192697165185,
+          "max_cosine_full": 0.8401918234870891,
+          "iterations": 17,
+          "status": 0
+        },
+        {
+          "trial": 8,
+          "loss": 0.4083192697165192,
+          "max_cosine_full": 0.8401918234932364,
+          "iterations": 20,
+          "status": 0
+        },
+        {
+          "trial": 9,
+          "loss": 0.40831926971651933,
+          "max_cosine_full": 0.8401918220838318,
+          "iterations": 26,
+          "status": 0
+        },
+        {
+          "trial": 10,
+          "loss": 0.4083192697165256,
+          "max_cosine_full": 0.8401918161160467,
+          "iterations": 17,
+          "status": 0
+        },
+        {
+          "trial": 11,
+          "loss": 0.408319269716519,
+          "max_cosine_full": 0.840191823427843,
+          "iterations": 25,
+          "status": 0
+        },
+        {
+          "trial": 12,
+          "loss": 0.4083192697165192,
+          "max_cosine_full": 0.840191823959937,
+          "iterations": 27,
+          "status": 0
+        },
+        {
+          "trial": 13,
+          "loss": 0.40831926971651905,
+          "max_cosine_full": 0.8401918240370472,
+          "iterations": 16,
+          "status": 0
+        },
+        {
+          "trial": 14,
+          "loss": 0.40831926971651933,
+          "max_cosine_full": 0.8401918234708426,
+          "iterations": 25,
+          "status": 0
+        },
+        {
+          "trial": 15,
+          "loss": 0.40831926971651955,
+          "max_cosine_full": 0.8401918203108106,
+          "iterations": 30,
+          "status": 0
+        },
+        {
+          "trial": 16,
+          "loss": 0.4083192697165192,
+          "max_cosine_full": 0.8401918221732316,
+          "iterations": 19,
+          "status": 0
+        },
+        {
+          "trial": 17,
+          "loss": 0.4083192697165191,
+          "max_cosine_full": 0.8401918237792009,
+          "iterations": 31,
+          "status": 0
+        },
+        {
+          "trial": 18,
+          "loss": 0.4083192697165193,
+          "max_cosine_full": 0.8401918221492481,
+          "iterations": 30,
+          "status": 0
+        },
+        {
+          "trial": 19,
+          "loss": 0.40831926971651916,
+          "max_cosine_full": 0.8401918233503665,
+          "iterations": 16,
+          "status": 0
+        },
+        {
+          "trial": 20,
+          "loss": 0.408319269716521,
+          "max_cosine_full": 0.8401918234227188,
+          "iterations": 29,
+          "status": 0
+        },
+        {
+          "trial": 21,
+          "loss": 0.40831926971651844,
+          "max_cosine_full": 0.8401918237570057,
+          "iterations": 30,
+          "status": 0
+        },
+        {
+          "trial": 22,
+          "loss": 0.4083192697165191,
+          "max_cosine_full": 0.8401918234455306,
+          "iterations": 17,
+          "status": 0
+        },
+        {
+          "trial": 23,
+          "loss": 0.40831926971651933,
+          "max_cosine_full": 0.8401918239033634,
+          "iterations": 25,
+          "status": 0
+        }
+      ],
+      "certificate": "Numerical optimization only. Inadmissible arrays are failed trial point sets, not kissing configurations.",
+      "restart_limit": 24,
+      "restart_wall_budget_seconds": 40,
+      "wall_budget_checked_between_restarts": true,
+      "optimizer_max_iterations": 1800
+    },
+    {
+      "dimension": 6,
+      "group_order": 19,
+      "seed_orbits": 2,
+      "target_cardinality": 76,
+      "frequencies": [
+        1,
+        2,
+        3
+      ],
+      "trials_completed": 24,
+      "seconds": 0.05071799799998189,
+      "best_loss": 0.27268787685010787,
+      "best_max_cosine": 0.8008097832601788,
+      "admissible_numerically": false,
+      "file": "d6_c19_k2_f1,2,3.npz",
+      "trials": [
+        {
+          "trial": 0,
+          "loss": 0.27268787685010837,
+          "max_cosine_full": 0.8008097840026365,
+          "iterations": 27,
+          "status": 0
+        },
+        {
+          "trial": 1,
+          "loss": 0.27268787685010826,
+          "max_cosine_full": 0.8008097835562857,
+          "iterations": 16,
+          "status": 0
+        },
+        {
+          "trial": 2,
+          "loss": 0.27268787685010826,
+          "max_cosine_full": 0.8008097834447908,
+          "iterations": 30,
+          "status": 0
+        },
+        {
+          "trial": 3,
+          "loss": 0.27268787685010853,
+          "max_cosine_full": 0.8008097840274385,
+          "iterations": 21,
+          "status": 0
+        },
+        {
+          "trial": 4,
+          "loss": 0.2726878768501081,
+          "max_cosine_full": 0.8008097837465452,
+          "iterations": 15,
+          "status": 0
+        },
+        {
+          "trial": 5,
+          "loss": 0.2726878768501083,
+          "max_cosine_full": 0.8008097836985539,
+          "iterations": 18,
+          "status": 0
+        },
+        {
+          "trial": 6,
+          "loss": 0.27268787685010826,
+          "max_cosine_full": 0.800809783508213,
+          "iterations": 25,
+          "status": 0
+        },
+        {
+          "trial": 7,
+          "loss": 0.2726878768501083,
+          "max_cosine_full": 0.8008097829130423,
+          "iterations": 15,
+          "status": 0
+        },
+        {
+          "trial": 8,
+          "loss": 0.27268787685010787,
+          "max_cosine_full": 0.8008097832601788,
+          "iterations": 16,
+          "status": 0
+        },
+        {
+          "trial": 9,
+          "loss": 0.27268787685010865,
+          "max_cosine_full": 0.8008097833269038,
+          "iterations": 28,
+          "status": 0
+        },
+        {
+          "trial": 10,
+          "loss": 0.27268787685010826,
+          "max_cosine_full": 0.8008097835585015,
+          "iterations": 15,
+          "status": 0
+        },
+        {
+          "trial": 11,
+          "loss": 0.272687876850108,
+          "max_cosine_full": 0.800809783557231,
+          "iterations": 17,
+          "status": 0
+        },
+        {
+          "trial": 12,
+          "loss": 0.27268787685010853,
+          "max_cosine_full": 0.800809783017253,
+          "iterations": 27,
+          "status": 0
+        },
+        {
+          "trial": 13,
+          "loss": 0.27268787685010837,
+          "max_cosine_full": 0.8008097842250571,
+          "iterations": 15,
+          "status": 0
+        },
+        {
+          "trial": 14,
+          "loss": 0.2726878768501085,
+          "max_cosine_full": 0.8008097830105099,
+          "iterations": 17,
+          "status": 0
+        },
+        {
+          "trial": 15,
+          "loss": 0.2726878768501088,
+          "max_cosine_full": 0.8008097835801067,
+          "iterations": 22,
+          "status": 0
+        },
+        {
+          "trial": 16,
+          "loss": 0.27268787685010876,
+          "max_cosine_full": 0.8008097845329601,
+          "iterations": 15,
+          "status": 0
+        },
+        {
+          "trial": 17,
+          "loss": 0.2726878768501082,
+          "max_cosine_full": 0.8008097830167791,
+          "iterations": 24,
+          "status": 0
+        },
+        {
+          "trial": 18,
+          "loss": 0.27268787685010837,
+          "max_cosine_full": 0.8008097838473068,
+          "iterations": 25,
+          "status": 0
+        },
+        {
+          "trial": 19,
+          "loss": 0.27268787685010853,
+          "max_cosine_full": 0.8008097836841261,
+          "iterations": 14,
+          "status": 0
+        },
+        {
+          "trial": 20,
+          "loss": 0.27268787685010826,
+          "max_cosine_full": 0.8008097835529335,
+          "iterations": 27,
+          "status": 0
+        },
+        {
+          "trial": 21,
+          "loss": 0.2726878768501086,
+          "max_cosine_full": 0.8008097839563705,
+          "iterations": 24,
+          "status": 0
+        },
+        {
+          "trial": 22,
+          "loss": 0.27268787685010853,
+          "max_cosine_full": 0.8008097820866185,
+          "iterations": 14,
+          "status": 0
+        },
+        {
+          "trial": 23,
+          "loss": 0.27268787685010853,
+          "max_cosine_full": 0.8008097839360965,
+          "iterations": 27,
+          "status": 0
+        }
+      ],
+      "certificate": "Numerical optimization only. Inadmissible arrays are failed trial point sets, not kissing configurations.",
+      "restart_limit": 24,
+      "restart_wall_budget_seconds": 40,
+      "wall_budget_checked_between_restarts": true,
+      "optimizer_max_iterations": 1800
+    },
+    {
+      "dimension": 7,
+      "group_order": 8,
+      "seed_orbits": 8,
+      "target_cardinality": 128,
+      "frequencies": [
+        1,
+        2,
+        3
+      ],
+      "trials_completed": 12,
+      "seconds": 0.16335762400012754,
+      "best_loss": 0.2993745224578227,
+      "best_max_cosine": 0.5978907554341742,
+      "admissible_numerically": false,
+      "file": "d7_c8_k8_f1,2,3.npz",
+      "trials": [
+        {
+          "trial": 0,
+          "loss": 0.44794600551299113,
+          "max_cosine_full": 0.6522011247921747,
+          "iterations": 73,
+          "status": 0
+        },
+        {
+          "trial": 1,
+          "loss": 0.4479460055129926,
+          "max_cosine_full": 0.6522011543024742,
+          "iterations": 32,
+          "status": 0
+        },
+        {
+          "trial": 2,
+          "loss": 0.35281735684544563,
+          "max_cosine_full": 0.6716999245684744,
+          "iterations": 74,
+          "status": 0
+        },
+        {
+          "trial": 3,
+          "loss": 0.450806363745998,
+          "max_cosine_full": 0.6036816978232455,
+          "iterations": 103,
+          "status": 0
+        },
+        {
+          "trial": 4,
+          "loss": 0.3528173568454497,
+          "max_cosine_full": 0.6716999197284093,
+          "iterations": 41,
+          "status": 0
+        },
+        {
+          "trial": 5,
+          "loss": 0.4515869544962812,
+          "max_cosine_full": 0.6229856330635878,
+          "iterations": 96,
+          "status": 0
+        },
+        {
+          "trial": 6,
+          "loss": 0.436653449221846,
+          "max_cosine_full": 0.6232613068613047,
+          "iterations": 90,
+          "status": 0
+        },
+        {
+          "trial": 7,
+          "loss": 0.3528173568454458,
+          "max_cosine_full": 0.6716999281106949,
+          "iterations": 40,
+          "status": 0
+        },
+        {
+          "trial": 8,
+          "loss": 0.32630432368631934,
+          "max_cosine_full": 0.5869556474996421,
+          "iterations": 56,
+          "status": 0
+        },
+        {
+          "trial": 9,
+          "loss": 0.2993745224578227,
+          "max_cosine_full": 0.5978907554341742,
+          "iterations": 71,
+          "status": 0
+        },
+        {
+          "trial": 10,
+          "loss": 0.2993745224578265,
+          "max_cosine_full": 0.5978907620355859,
+          "iterations": 32,
+          "status": 0
+        },
+        {
+          "trial": 11,
+          "loss": 0.3523355168289416,
+          "max_cosine_full": 0.6436633718033814,
+          "iterations": 137,
+          "status": 0
+        }
+      ],
+      "certificate": "Numerical optimization only. Inadmissible arrays are failed trial point sets, not kissing configurations.",
+      "restart_limit": 12,
+      "restart_wall_budget_seconds": 60,
+      "wall_budget_checked_between_restarts": true,
+      "optimizer_max_iterations": 1800
+    },
+    {
+      "dimension": 8,
+      "group_order": 11,
+      "seed_orbits": 11,
+      "target_cardinality": 242,
+      "frequencies": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "trials_completed": 10,
+      "seconds": 0.36926896700015277,
+      "best_loss": 1.036340331647403,
+      "best_max_cosine": 0.6252352892787374,
+      "admissible_numerically": false,
+      "file": "d8_c11_k11_f1,2,3,4.npz",
+      "trials": [
+        {
+          "trial": 0,
+          "loss": 1.1069679957512757,
+          "max_cosine_full": 0.6522019163411849,
+          "iterations": 139,
+          "status": 0
+        },
+        {
+          "trial": 1,
+          "loss": 1.106967995751281,
+          "max_cosine_full": 0.6522019158596498,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 2,
+          "loss": 1.0721392832133196,
+          "max_cosine_full": 0.6367798025411339,
+          "iterations": 124,
+          "status": 0
+        },
+        {
+          "trial": 3,
+          "loss": 1.125903293256961,
+          "max_cosine_full": 0.6669938118387241,
+          "iterations": 115,
+          "status": 0
+        },
+        {
+          "trial": 4,
+          "loss": 1.0721392832133114,
+          "max_cosine_full": 0.6367797903425929,
+          "iterations": 49,
+          "status": 0
+        },
+        {
+          "trial": 5,
+          "loss": 1.2275946047372543,
+          "max_cosine_full": 0.6741913651896788,
+          "iterations": 93,
+          "status": 0
+        },
+        {
+          "trial": 6,
+          "loss": 1.1092020110208114,
+          "max_cosine_full": 0.6439760342667418,
+          "iterations": 172,
+          "status": 0
+        },
+        {
+          "trial": 7,
+          "loss": 1.072139283213334,
+          "max_cosine_full": 0.6367798203659404,
+          "iterations": 41,
+          "status": 0
+        },
+        {
+          "trial": 8,
+          "loss": 1.0885403766329138,
+          "max_cosine_full": 0.6311493055772818,
+          "iterations": 103,
+          "status": 0
+        },
+        {
+          "trial": 9,
+          "loss": 1.036340331647403,
+          "max_cosine_full": 0.6252352892787374,
+          "iterations": 128,
+          "status": 0
+        }
+      ],
+      "certificate": "Numerical optimization only. Inadmissible arrays are failed trial point sets, not kissing configurations.",
+      "restart_limit": 10,
+      "restart_wall_budget_seconds": 80,
+      "wall_budget_checked_between_restarts": true,
+      "optimizer_max_iterations": 1800
+    }
+  ],
+  "wall_seconds": 0.7633405700003095,
+  "peak_rss_kib": 60276,
+  "scope": "Continuous asymmetric seed vectors, independent amplitudes and phases in reducible cyclic representations; antipodality is retained. Bounded multi-start search, no nonexistence claim."
+}

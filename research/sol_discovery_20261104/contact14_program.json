@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "nodes": [
+    {
+      "id": "seed",
+      "op": "groups.ganzhinov14"
+    },
+    {
+      "id": "trade",
+      "op": "search.contact_exchange",
+      "inputs": [
+        "seed"
+      ],
+      "params": {
+        "candidate_limit": 3000,
+        "seconds": 20
+      }
+    }
+  ],
+  "outputs": [
+    "trade"
+  ]
+}

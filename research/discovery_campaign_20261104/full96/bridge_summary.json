@@ -1,0 +1,24 @@
+{
+  "status": "known_full_construction_replayed",
+  "dimension": 96,
+  "cardinality": 142162362560,
+  "terms": {
+    "dense": 137438953472,
+    "transversal24": 4294967296,
+    "support24": 426344448,
+    "support6": 2097152,
+    "pure": 192
+  },
+  "per_checker_seconds": {
+    "replay": 8.55313132900028,
+    "verify_independent": 18.898831342999983
+  },
+  "per_checker_time_limit_seconds": 120,
+  "source_sha256": {
+    "verifications/improved/dim88-96-z8-golay/source/replay.py": "627fbd27a34cfe645fcb35e4fdc4499ff845ba3da2b106fc9d571645a0c1acb4",
+    "verifications/improved/dim88-96-z8-golay/source/verify_independent.py": "12feef12dfe265f8154a341d14bfc0449de0b0f3a1b8661e5d383387cedc5ece",
+    "verifications/improved/dim88-96-z8-golay/data/supports.npz": "d0def7d6587ca3aa1b39c9f3e7ccb844310285a7f1794dc8e9492f0fff9fc65d",
+    "verifications/improved/dim88-96-z8-golay/data/z8_generator.json": "903c193dbd00c1e7c692e8de62fc4e42c42806dd53365f83ddd73e673dc0fb73"
+  },
+  "scope": "Two existing compressed full-construction checkers, run afresh. Specialized benchmark bridge, not a new universal proof backend or a new record."
+}

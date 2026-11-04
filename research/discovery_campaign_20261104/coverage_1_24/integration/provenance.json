@@ -1,0 +1,46 @@
+{
+  "patch": "research/discovery_campaign_20261104/coverage_1_24/integration/coverage-benchmarks-20261104.patch",
+  "sha256": "7ac4796cc14c476424e3a09888e499c077844828c9921b7508c8e81e384bd741",
+  "source_commit": "0a6152a9ea6caf8b7865e2f41c2097a838566e2a",
+  "source_author": "Alex Kravatsky <alexlegeartis@gmail.com>",
+  "source_date": "Wed, 4 Nov 2026 13:13:56 +0000",
+  "reviewed_base_commit": "e25c2924f377a1061b6c60429c950d34df7515e9",
+  "catalogue_sha256_before_integration": "c208c228aaf68039ea807ddbcc9bc717d0c3981827288510d1409824fbdf253d",
+  "application": "14 additive files; original patch retained byte-for-byte. Active coverage views reconciled to current recipes and successful Cohn retrieval; no commit or push.",
+  "catalogue_sha256_after_integration": "c208c228aaf68039ea807ddbcc9bc717d0c3981827288510d1409824fbdf253d",
+  "validation": {
+    "full_discovery_tests": 130,
+    "full_discovery_seconds": 33.325,
+    "matrix_tests": 9,
+    "independent_review": "PASS: root controls, matrix, views; no further coverage defect",
+    "exact_target_dimensions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      13,
+      14,
+      16
+    ],
+    "gaps": [
+      9,
+      11,
+      12,
+      15,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "inventory_refresh": "Includes registered research/coupled13/program_H2.json through explicit research allow-list; excludes planner configurations and UNVERIFIED96D forecast. Discovery core and operators unchanged."
+  }
+}

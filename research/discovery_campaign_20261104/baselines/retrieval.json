@@ -1,0 +1,101 @@
+{
+  "cohn": {
+    "url": "https://cohn.mit.edu/kissing-numbers/",
+    "attempt_utc": "2026-11-04T12:36:52.845533+00:00",
+    "status": 200,
+    "sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+    "bytes": 63600,
+    "response_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+    "saved_path": "cohn.html"
+  },
+  "packingstar": {
+    "url": "https://api.github.com/repos/CDM1619/PackingStar/commits?per_page=3",
+    "attempt_utc": "2026-11-04T12:36:52.846513+00:00",
+    "status": 200,
+    "sha256": "4ef062b66269c585587a2b8396b08089b5ef59e065dd6274bea23dc82af2bf0d",
+    "bytes": 12952,
+    "response_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+    "saved_path": "packingstar.txt"
+  },
+  "packingstar_readme": {
+    "url": "https://raw.githubusercontent.com/CDM1619/PackingStar/main/README.md",
+    "attempt_utc": "2026-11-04T12:36:52.847204+00:00",
+    "status": 200,
+    "sha256": "8f2aa7e1985508aaefca2f2853a85970555608fecbd8164b126630dd87798206",
+    "bytes": 9073,
+    "response_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+    "saved_path": "packingstar_readme.txt"
+  },
+  "lin33": {
+    "url": "https://api.github.com/repos/QH-Lin/kissing-numbers-33-39/commits?per_page=3",
+    "attempt_utc": "2026-11-04T12:36:52.847657+00:00",
+    "status": 200,
+    "sha256": "710995a4bccda300f3337a4bf2cc7b497c4c1d2c5484a8c8fb638cc739bef8d0",
+    "bytes": 3459,
+    "response_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+    "saved_path": "lin33.txt"
+  },
+  "lin33_readme": {
+    "url": "https://raw.githubusercontent.com/QH-Lin/kissing-numbers-33-39/main/README.md",
+    "attempt_utc": "2026-11-04T12:36:52.848206+00:00",
+    "status": 200,
+    "sha256": "6afd6c6a4cd6224cf6ae8e7578fa29972cefc99483e5b5e945eb9c99851b72ee",
+    "bytes": 9393,
+    "response_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+    "saved_path": "lin33_readme.txt"
+  },
+  "lin32": {
+    "url": "https://api.github.com/repos/QH-Lin/kissing-number-32/commits?per_page=3",
+    "attempt_utc": "2026-11-04T12:36:52.848892+00:00",
+    "status": 200,
+    "sha256": "1d0f2918a473ed01e0c72d983e2c2d189ac633e7e0cc9cd03ea03f89ab7c2e09",
+    "bytes": 4842,
+    "response_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+    "saved_path": "lin32.txt"
+  },
+  "lin32_readme": {
+    "url": "https://raw.githubusercontent.com/QH-Lin/kissing-number-32/main/README.md",
+    "attempt_utc": "2026-11-04T12:36:52.849415+00:00",
+    "status": 200,
+    "sha256": "f2a1d36b8954772579ace906db8e6f0da00de3495ab0db7a5906061b663b1c71",
+    "bytes": 5929,
+    "response_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+    "saved_path": "lin32_readme.txt"
+  },
+  "knic": {
+    "url": "https://api.github.com/repos/k-nic/kissing_d25-31/commits?per_page=3",
+    "attempt_utc": "2026-11-04T12:36:52.849959+00:00",
+    "status": 200,
+    "sha256": "0576a9aac8d2c5d21e984f6c91eb516529fe1e695044f24ae5e39941154b1d85",
+    "bytes": 12658,
+    "response_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+    "saved_path": "knic.txt"
+  },
+  "knic_readme": {
+    "url": "https://raw.githubusercontent.com/k-nic/kissing_d25-31/main/README.md",
+    "attempt_utc": "2026-11-04T12:36:53.271394+00:00",
+    "status": 200,
+    "sha256": "0f2582126f8e78a6bfbe31b47a77f4995ac0020ee1a34f6cd404e3f319a3123b",
+    "bytes": 14434,
+    "response_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+    "saved_path": "knic_readme.txt"
+  },
+  "li": {
+    "url": "https://api.github.com/repos/Felpix-Studios/kissing-number/commits?per_page=3",
+    "attempt_utc": "2026-11-04T12:36:53.301136+00:00",
+    "status": 200,
+    "sha256": "0cf617d02439e6e4dfe3aeca310eb2f7909c4799d6c3edeaa5d378ffee9636f4",
+    "bytes": 10568,
+    "response_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+    "saved_path": "li.txt"
+  },
+  "brouwer": {
+    "url": "https://aeb.win.tue.nl/codes/Andw.html",
+    "attempt_utc": "2026-11-04T12:36:53.306368+00:00",
+    "status": 200,
+    "sha256": "a23a586086103c37cc6a1a93dc4e3b4809cbccc4bef17fdf742506246d6f881c",
+    "bytes": 127860,
+    "response_date": "Wed, 04 Nov 2026 12:36:54 GMT",
+    "saved_path": "brouwer.txt"
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "operator_count": 29,
+  "catalogue": {
+    "codes.translate_union": {
+      "op": "codes.translate_union",
+      "input_kinds": [
+        "binary_code"
+      ],
+      "output_kinds": [
+        "binary_code"
+      ],
+      "family": "codes",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "cosets.build": {
+      "op": "cosets.build",
+      "input_kinds": [],
+      "output_kinds": [
+        "syndrome_oracle"
+      ],
+      "family": "cosets",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "cosets.union": {
+      "op": "cosets.union",
+      "input_kinds": [
+        "syndrome_oracle"
+      ],
+      "output_kinds": [
+        "binary_code"
+      ],
+      "family": "cosets",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "geometry.gram_code": {
+      "op": "geometry.gram_code",
+      "input_kinds": [],
+      "output_kinds": [
+        "gram_spherical_code"
+      ],
+      "family": "geometry",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "geometry.integer_code": {
+      "op": "geometry.integer_code",
+      "input_kinds": [],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "geometry",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "geometry.orthogonal_union": {
+      "op": "geometry.orthogonal_union",
+      "input_kinds": [
+        "spherical_code",
+        "spherical_code"
+      ],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "geometry",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "geometry.section": {
+      "op": "geometry.section",
+      "input_kinds": [
+        "spherical_code"
+      ],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "geometry",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "geometry.sign_embed": {
+      "op": "geometry.sign_embed",
+      "input_kinds": [
+        "binary_code"
+      ],
+      "output_kinds": [
+        "implicit_spherical_code"
+      ],
+      "family": "geometry",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "gluing.union": {
+      "op": "gluing.union",
+      "input_kinds": [
+        [
+          "spherical_code",
+          "gram_spherical_code"
+        ],
+        [
+          "spherical_code",
+          "gram_spherical_code"
+        ]
+      ],
+      "output_kinds": [
+        "gram_spherical_code"
+      ],
+      "family": "gluing",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "groups.from_generators": {
+      "op": "groups.from_generators",
+      "input_kinds": [],
+      "output_kinds": [
+        "unitary_representation"
+      ],
+      "family": "groups",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "groups.ganzhinov10": {
+      "op": "groups.ganzhinov10",
+      "input_kinds": [],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "groups",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "groups.ganzhinov14": {
+      "op": "groups.ganzhinov14",
+      "input_kinds": [],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "groups",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "groups.real_stabilizer_sector": {
+      "op": "groups.real_stabilizer_sector",
+      "input_kinds": [],
+      "output_kinds": [
+        "implicit_spherical_code"
+      ],
+      "family": "groups",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "groups.search": {
+      "op": "groups.search",
+      "input_kinds": [
+        "unitary_representation"
+      ],
+      "output_kinds": [
+        "spherical_code",
+        "search_result"
+      ],
+      "family": "groups",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "groups.weil": {
+      "op": "groups.weil",
+      "input_kinds": [],
+      "output_kinds": [
+        "unitary_representation"
+      ],
+      "family": "groups",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "lattice.root_system": {
+      "op": "lattice.root_system",
+      "input_kinds": [],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "lattice",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "layers.known32": {
+      "op": "layers.known32",
+      "input_kinds": [],
+      "output_kinds": [
+        "implicit_spherical_code"
+      ],
+      "family": "layers",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "layers.signed_supports": {
+      "op": "layers.signed_supports",
+      "input_kinds": [],
+      "output_kinds": [
+        "implicit_spherical_code"
+      ],
+      "family": "layers",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "rings.binary_factor": {
+      "op": "rings.binary_factor",
+      "input_kinds": [],
+      "output_kinds": [
+        "polynomial_pair"
+      ],
+      "family": "rings",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "rings.extend": {
+      "op": "rings.extend",
+      "input_kinds": [
+        "polynomial_pair"
+      ],
+      "output_kinds": [
+        "ring_code"
+      ],
+      "family": "rings",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "rings.gray": {
+      "op": "rings.gray",
+      "input_kinds": [
+        "ring_code"
+      ],
+      "output_kinds": [
+        "binary_code"
+      ],
+      "family": "rings",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "rings.hensel": {
+      "op": "rings.hensel",
+      "input_kinds": [
+        "polynomial_pair"
+      ],
+      "output_kinds": [
+        "polynomial_pair"
+      ],
+      "family": "rings",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "rings.verify_dgls": {
+      "op": "rings.verify_dgls",
+      "input_kinds": [
+        "ring_code"
+      ],
+      "output_kinds": [
+        "binary_code"
+      ],
+      "family": "rings",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "search.coset_assembly": {
+      "op": "search.coset_assembly",
+      "input_kinds": [],
+      "output_kinds": [
+        "search_result"
+      ],
+      "family": "search",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "selection.coupled_union": {
+      "op": "selection.coupled_union",
+      "input_kinds": [
+        "spherical_code",
+        "spherical_code"
+      ],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "selection",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "selection.isometric_exchange": {
+      "op": "selection.isometric_exchange",
+      "input_kinds": [
+        "spherical_code"
+      ],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "selection",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "signed_layers.conditional_swap": {
+      "op": "signed_layers.conditional_swap",
+      "input_kinds": [
+        "spherical_code"
+      ],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "signed_layers",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "signed_layers.coupled_lift": {
+      "op": "signed_layers.coupled_lift",
+      "input_kinds": [
+        "spherical_code"
+      ],
+      "output_kinds": [
+        "quadratic_spherical_code"
+      ],
+      "family": "signed_layers",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    },
+    "signed_layers.free_zone_join": {
+      "op": "signed_layers.free_zone_join",
+      "input_kinds": [
+        "spherical_code",
+        "spherical_code"
+      ],
+      "output_kinds": [
+        "spherical_code"
+      ],
+      "family": "signed_layers",
+      "implemented": true,
+      "planner_supported": true,
+      "unsupported_contract_reasons": []
+    }
+  }
+}

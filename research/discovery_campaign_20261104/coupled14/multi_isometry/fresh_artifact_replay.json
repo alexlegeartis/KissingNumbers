@@ -1,0 +1,52 @@
+{
+  "greedy_mixture_artifact.json": {
+    "status": "exact",
+    "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+    "details": {
+      "dimension": 14,
+      "rank_exact": 14,
+      "ambient_dimension": 14,
+      "cardinality": 1860,
+      "norm_squared": 5000,
+      "max_inner_product": 2500,
+      "pairs_checked": 1728870,
+      "facts": {
+        "dimension": 14,
+        "rank_exact": 14,
+        "ambient_dimension": 14,
+        "cardinality": 1860,
+        "norm_squared": 5000,
+        "max_inner_product": 2500,
+        "pairs_checked": 1728870
+      },
+      "data_sha256": "f4c1b184898209bcb36ce0b5f5b7bf14565adb00a2fb5fbe73993be66a9f843d",
+      "integer_backend": "int64 proven overflow-safe",
+      "rank_scalar_work": 375648
+    }
+  },
+  "unrestricted_artifact.json": {
+    "status": "exact",
+    "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+    "details": {
+      "dimension": 14,
+      "rank_exact": 14,
+      "ambient_dimension": 14,
+      "cardinality": 1932,
+      "norm_squared": 8,
+      "max_inner_product": 4,
+      "pairs_checked": 1865346,
+      "facts": {
+        "dimension": 14,
+        "rank_exact": 14,
+        "ambient_dimension": 14,
+        "cardinality": 1932,
+        "norm_squared": 8,
+        "max_inner_product": 4,
+        "pairs_checked": 1865346
+      },
+      "data_sha256": "1fa789e7f30d380a2b9dd5b24887f2549a832fb035e5c2d628fae305c7d26770",
+      "integer_backend": "int64 proven overflow-safe",
+      "rank_scalar_work": 380968
+    }
+  }
+}

@@ -1,0 +1,693 @@
+{
+  "artifacts": {
+    "candidate": {
+      "data": {
+        "closure_failures": 0,
+        "cross_checks": "one representative per constituent vector orbit against full other block",
+        "inventory": [
+          {
+            "accepted_phase_orders": [
+              1,
+              2,
+              3
+            ],
+            "lines": 3,
+            "orbit": 0,
+            "vector_status": "closed_numerically",
+            "vectors": 6
+          },
+          {
+            "accepted_phase_orders": [
+              1,
+              2,
+              3
+            ],
+            "lines": 4,
+            "orbit": 1,
+            "vector_status": "closed_numerically",
+            "vectors": 8
+          },
+          {
+            "accepted_phase_orders": [
+              1,
+              2,
+              3
+            ],
+            "lines": 4,
+            "orbit": 2,
+            "vector_status": "closed_numerically",
+            "vectors": 24
+          },
+          {
+            "accepted_phase_orders": [
+              1,
+              2,
+              3
+            ],
+            "lines": 4,
+            "orbit": 3,
+            "vector_status": "closed_numerically",
+            "vectors": 24
+          }
+        ],
+        "limits": {
+          "linecap": 100,
+          "max_blocks": 50,
+          "max_candidates": 50,
+          "max_materialized_points": 20000,
+          "max_orbits": 100,
+          "max_output_points": 10000,
+          "trials": 2,
+          "vectorcap": 600
+        },
+        "materialization_limit_reached": false,
+        "real_coordinates": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.4999999999999998,
+            -0.0,
+            -0.0,
+            0.8660254037844387,
+            0.0,
+            0.0
+          ],
+          [
+            -0.0,
+            -0.0,
+            -0.4999999999999998,
+            0.0,
+            0.0,
+            0.8660254037844387
+          ],
+          [
+            0.4999999999999998,
+            -0.0,
+            -0.0,
+            -0.8660254037844387,
+            0.0,
+            0.0
+          ],
+          [
+            -0.0,
+            -0.4999999999999998,
+            -0.0,
+            0.0,
+            0.8660254037844387,
+            0.0
+          ],
+          [
+            -0.0,
+            -0.0,
+            0.4999999999999998,
+            0.0,
+            0.0,
+            -0.8660254037844387
+          ],
+          [
+            -0.0,
+            0.4999999999999998,
+            -0.0,
+            0.0,
+            -0.8660254037844387,
+            0.0
+          ],
+          [
+            -0.5000000000000004,
+            0.0,
+            0.0,
+            -0.8660254037844384,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -0.5000000000000004,
+            0.0,
+            0.0,
+            -0.8660254037844384
+          ],
+          [
+            0.5000000000000004,
+            0.0,
+            0.0,
+            0.8660254037844384,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5000000000000004,
+            0.0,
+            0.0,
+            -0.8660254037844384,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.5000000000000004,
+            0.0,
+            0.0,
+            0.8660254037844384
+          ],
+          [
+            0.0,
+            0.5000000000000004,
+            0.0,
+            0.0,
+            0.8660254037844384,
+            0.0
+          ],
+          [
+            3.53525079574969e-17,
+            1.3596646956415173e-16,
+            1.4637481042001257e-16,
+            0.5773502691896257,
+            0.5773502691896258,
+            0.5773502691896258
+          ],
+          [
+            -3.53525079574969e-17,
+            1.3596646956415173e-16,
+            1.4637481042001257e-16,
+            -0.5773502691896257,
+            0.5773502691896258,
+            0.5773502691896258
+          ],
+          [
+            1.3596646956415173e-16,
+            1.4637481042001257e-16,
+            -3.53525079574969e-17,
+            0.5773502691896258,
+            0.5773502691896258,
+            -0.5773502691896257
+          ],
+          [
+            1.4637481042001257e-16,
+            -3.53525079574969e-17,
+            1.3596646956415173e-16,
+            0.5773502691896258,
+            -0.5773502691896257,
+            0.5773502691896258
+          ],
+          [
+            -1.3596646956415173e-16,
+            1.4637481042001257e-16,
+            -3.53525079574969e-17,
+            -0.5773502691896258,
+            0.5773502691896258,
+            -0.5773502691896257
+          ],
+          [
+            -1.4637481042001257e-16,
+            -3.53525079574969e-17,
+            1.3596646956415173e-16,
+            -0.5773502691896258,
+            -0.5773502691896257,
+            0.5773502691896258
+          ],
+          [
+            1.4637481042001257e-16,
+            -3.53525079574969e-17,
+            -1.3596646956415173e-16,
+            0.5773502691896258,
+            -0.5773502691896257,
+            -0.5773502691896258
+          ],
+          [
+            -1.4637481042001257e-16,
+            -3.53525079574969e-17,
+            -1.3596646956415173e-16,
+            -0.5773502691896258,
+            -0.5773502691896257,
+            -0.5773502691896258
+          ],
+          [
+            -0.5,
+            -0.5000000000000001,
+            -0.5000000000000001,
+            -0.2886751345948127,
+            -0.28867513459481264,
+            -0.28867513459481264
+          ],
+          [
+            0.5,
+            -0.5000000000000001,
+            -0.5000000000000001,
+            0.2886751345948127,
+            -0.28867513459481264,
+            -0.28867513459481264
+          ],
+          [
+            -0.5000000000000001,
+            -0.5000000000000001,
+            0.5,
+            -0.28867513459481264,
+            -0.28867513459481264,
+            0.2886751345948127
+          ],
+          [
+            -0.5000000000000001,
+            0.5,
+            -0.5000000000000001,
+            -0.28867513459481264,
+            0.2886751345948127,
+            -0.28867513459481264
+          ],
+          [
+            0.5000000000000001,
+            -0.5000000000000001,
+            0.5,
+            0.28867513459481264,
+            -0.28867513459481264,
+            0.2886751345948127
+          ],
+          [
+            0.5000000000000001,
+            0.5,
+            -0.5000000000000001,
+            0.28867513459481264,
+            0.2886751345948127,
+            -0.28867513459481264
+          ],
+          [
+            -0.5000000000000001,
+            0.5,
+            0.5000000000000001,
+            -0.28867513459481264,
+            0.2886751345948127,
+            0.28867513459481264
+          ],
+          [
+            0.5000000000000001,
+            0.5,
+            0.5000000000000001,
+            0.28867513459481264,
+            0.2886751345948127,
+            0.28867513459481264
+          ],
+          [
+            0.49999999999999983,
+            0.49999999999999983,
+            0.49999999999999983,
+            -0.2886751345948132,
+            -0.2886751345948133,
+            -0.2886751345948133
+          ],
+          [
+            -0.49999999999999983,
+            0.49999999999999983,
+            0.49999999999999983,
+            0.2886751345948132,
+            -0.2886751345948133,
+            -0.2886751345948133
+          ],
+          [
+            0.49999999999999983,
+            0.49999999999999983,
+            -0.49999999999999983,
+            -0.2886751345948133,
+            -0.2886751345948133,
+            0.2886751345948132
+          ],
+          [
+            0.49999999999999983,
+            -0.49999999999999983,
+            0.49999999999999983,
+            -0.2886751345948133,
+            0.2886751345948132,
+            -0.2886751345948133
+          ],
+          [
+            -0.49999999999999983,
+            0.49999999999999983,
+            -0.49999999999999983,
+            0.2886751345948133,
+            -0.2886751345948133,
+            0.2886751345948132
+          ],
+          [
+            -0.49999999999999983,
+            -0.49999999999999983,
+            0.49999999999999983,
+            0.2886751345948133,
+            0.2886751345948132,
+            -0.2886751345948133
+          ],
+          [
+            0.49999999999999983,
+            -0.49999999999999983,
+            -0.49999999999999983,
+            -0.2886751345948133,
+            0.2886751345948132,
+            0.2886751345948133
+          ],
+          [
+            -0.49999999999999983,
+            -0.49999999999999983,
+            -0.49999999999999983,
+            0.2886751345948133,
+            0.2886751345948132,
+            0.2886751345948133
+          ]
+        ],
+        "sampling_limit_reached": false,
+        "seed_diagnostics": [
+          {
+            "lines": 3,
+            "seed": "coordinate:0",
+            "status": "closed_numerically"
+          },
+          {
+            "lines": 4,
+            "seed": "cyclic:0:0",
+            "status": "closed_numerically"
+          },
+          {
+            "lines": 4,
+            "seed": "cyclic:0:1",
+            "status": "closed_numerically"
+          },
+          {
+            "lines": 4,
+            "seed": "cyclic:0:2",
+            "status": "closed_numerically"
+          }
+        ],
+        "selected_blocks": [
+          "o0:m3:phase0/4",
+          "o1:m3:phase1/4"
+        ],
+        "solver": {
+          "bound_scope": "materialized candidate conflict graph; numerical screening",
+          "candidate_count": 24,
+          "conflicts": 214,
+          "finite_candidate_upper_bound": 42.0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "status": 0
+        }
+      },
+      "facts": {
+        "cardinality": 42,
+        "complex_dimension": 3,
+        "dimension": 6,
+        "global_optimality_claim": false,
+        "search_scope": "sampled subgroup eigenlines and finite phase grid only",
+        "seed": 20261104
+      },
+      "kind": "spherical_code",
+      "verification": {
+        "details": {
+          "cardinality": 42,
+          "certificate": false,
+          "dimension": 6,
+          "max_cosine": 0.5000000000000006,
+          "rank_numerical": 6,
+          "tolerance": 1e-08
+        },
+        "method": "full floating point Gram check",
+        "status": "numerical"
+      }
+    },
+    "representation": {
+      "data": {
+        "family": "supplied",
+        "generators_imag": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "generators_real": [
+          [
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "label": "Three dimensional signed permutation control"
+      },
+      "facts": {
+        "complex_dimension": 3,
+        "generator_count": 2
+      },
+      "kind": "unitary_representation",
+      "verification": {
+        "details": {
+          "complex_dimension": 3,
+          "finite_group_proved": false,
+          "generator_count": 2,
+          "max_residual": 0.0
+        },
+        "method": "unitarity residual",
+        "status": "numerical"
+      }
+    }
+  },
+  "artifacts_sha256": {
+    "candidate": "19ffa8ab92b95b12f1424ddf69b0bc5a3f7478e5ea89212ed9d69f999c148c55",
+    "representation": "2f310c3687c6a805644d03975bf2b38eb9310859a9ccdb686c34d5453abe0c9f"
+  },
+  "budget": {
+    "max_codewords": 262144,
+    "max_dgls_words": 16777216,
+    "max_dimension": 256,
+    "max_materialized_points": 20000,
+    "max_nodes": 100,
+    "max_orbit_points": 10000,
+    "max_pairs": 10000000,
+    "max_trials": 200,
+    "solver_seconds": 30
+  },
+  "events": [
+    {
+      "artifact_sha256": "2f310c3687c6a805644d03975bf2b38eb9310859a9ccdb686c34d5453abe0c9f",
+      "kind": "unitary_representation",
+      "node": "representation",
+      "op": "groups.from_generators",
+      "seconds": 0.000489,
+      "state": "completed",
+      "verification_status": "numerical"
+    },
+    {
+      "artifact_sha256": "19ffa8ab92b95b12f1424ddf69b0bc5a3f7478e5ea89212ed9d69f999c148c55",
+      "kind": "spherical_code",
+      "node": "candidate",
+      "op": "groups.search",
+      "seconds": 0.32612,
+      "state": "completed",
+      "verification_status": "numerical"
+    }
+  ],
+  "outputs": [
+    "candidate"
+  ],
+  "program": {
+    "name": "Unitary generator and orbit grammar control candidate 6",
+    "nodes": [
+      {
+        "id": "representation",
+        "inputs": [],
+        "op": "groups.from_generators",
+        "params": {
+          "generators_real": [
+            [
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0
+              ]
+            ],
+            [
+              [
+                -1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          ],
+          "label": "Three dimensional signed permutation control"
+        }
+      },
+      {
+        "id": "candidate",
+        "inputs": [
+          "representation"
+        ],
+        "op": "groups.search",
+        "params": {
+          "linecap": 100,
+          "max_blocks": 50,
+          "max_candidates": 50,
+          "phase_orders": [
+            1,
+            2,
+            3
+          ],
+          "phase_steps": 2,
+          "solver_seconds": 2,
+          "trials": 2,
+          "vectorcap": 600
+        }
+      }
+    ],
+    "outputs": [
+      "candidate"
+    ],
+    "provenance": {
+      "candidate_index": 6,
+      "enumeration": "declared list order; sorted grid axes; last slot varies fastest",
+      "grammar_sha256": "705092cb3051d7deb35bd86f38d29a3137b092e7f6fc93f1daf633c8458fe399",
+      "slot_branches": [
+        6,
+        0
+      ]
+    },
+    "schema_version": 1
+  },
+  "program_sha256": "d6c43121f50231915a3d9958e3a716868e3777c6c46666669ee5c4a4d2786087",
+  "python": "3.12.14",
+  "schema_version": 1,
+  "scope": "construction experiment; no automatic record registration or worldwide-priority claim",
+  "source_sha256": {
+    "__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
+    "__main__.py": "7b0b2c84c31d3902d306d15cf5949de52daaf087db33fa615b93db44f6898428",
+    "certification.py": "17ce40de301ae75a4c4411d95852bd98395bdd600bb4dca676257b0652679511",
+    "core.py": "5e08c17e408c97f0d53edd20e97a2776e722ae8b86538fafe01170a5f5c8dc82",
+    "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
+    "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
+    "engines/geometry.py": "ee26b89e81000818bef659886dba716d622a415ef46b7d037d4359354e74fdc7",
+    "engines/groups.py": "67be01b06d385d05fab5feacb40f0ca4d19311e11b73b63226455511a5530245",
+    "engines/layers.py": "a799fab74c7bbacc93712ad2df2ee201f375cb0c56f0f6617cb9f3d1437045cf",
+    "engines/rings.py": "87d1e00e2da8209f6691a023dc517915623e4713b2b7b87695b8957f056158c2",
+    "runner.py": "64f4d7a2d445d078109cc072099a256b81e02c60cda42d5b13804434c6ac7df7",
+    "scheduler.py": "bd670077736c2986dea9c64d71a91295197af9c8090c4736af13fcdc84a5e239"
+  }
+}

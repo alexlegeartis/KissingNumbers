@@ -223,7 +223,7 @@ def search_grammar(grammar, context, output_directory, *, max_programs=100,
             record.update(receipt=filename, receipt_sha256=digest(receipt), outputs=summaries)
             for name, output in summaries.items():
                 facts = output["facts"]
-                if output["verification_status"] != "exact" or output["kind"] not in ("spherical_code", "implicit_spherical_code"):
+                if output["verification_status"] != "exact" or output["kind"] not in ("spherical_code", "implicit_spherical_code", "gram_spherical_code", "quadratic_spherical_code"):
                     continue
                 dimension, count = facts.get("dimension"), facts.get("cardinality")
                 if type(dimension) is not int or type(count) is not int:

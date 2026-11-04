@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scalar": 1,
+  "repeated_local_mask": 15,
+  "repeated_binary_mask_hex": "0f0f0f0f",
+  "parent_words": 4096,
+  "intersection_words": 2560,
+  "union_words": 5632,
+  "minimum_distinct_distance": 8,
+  "distinct_pairs_checked": 15856896,
+  "elapsed_seconds": 4.214272872999572,
+  "implication": "minimum cross distance0 proves overlap, not an invalid union; unrestricted262144 bound retracted"
+}

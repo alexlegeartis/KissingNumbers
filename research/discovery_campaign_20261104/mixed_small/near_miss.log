@@ -1,0 +1,6 @@
+{"trial": 0, "mode": "direct_pressure", "before_maximum_cosine": 0.5009010186022461, "best_maximum_cosine": 0.5009010186022461, "global_best_maximum_cosine": 0.5009010186022461, "seconds": 13.289016313000502}
+{"trial": 1, "mode": "global_anisotropic_homotopy", "before_maximum_cosine": 0.5179253656544733, "best_maximum_cosine": 0.5010119345832998, "global_best_maximum_cosine": 0.5009010186022461, "seconds": 22.611338811000678}
+{"trial": 2, "mode": "low_degree_cluster", "before_maximum_cosine": 0.5597506709079498, "best_maximum_cosine": 0.5010122560568636, "global_best_maximum_cosine": 0.5009010186022461, "seconds": 31.884027468000568}
+{"trial": 3, "mode": "hot_contact_cluster", "before_maximum_cosine": 0.5303975329769162, "best_maximum_cosine": 0.50101150798756, "global_best_maximum_cosine": 0.5009010186022461, "seconds": 41.602862220000134}
+{"trial": 4, "mode": "coupled_opposite_clusters", "before_maximum_cosine": 0.5391089406156327, "best_maximum_cosine": 0.5010125525672028, "global_best_maximum_cosine": 0.5009010186022461, "seconds": 51.052464626000074}
+{"trial": 5, "mode": "global_symmetry_breaking", "before_maximum_cosine": 0.5136289716055797, "best_maximum_cosine": 0.501010694883254, "global_best_maximum_cosine": 0.5009010186022461, "seconds": 60.16246037500059}

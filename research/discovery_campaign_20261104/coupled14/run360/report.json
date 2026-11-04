@@ -1,0 +1,34 @@
+{
+  "seed": 20261104,
+  "planned_trials": 360,
+  "attempted_trials": 360,
+  "finite_list_exhausted": true,
+  "stop_reason": "finite_list_exhausted",
+  "best_cardinality": 1932,
+  "best_trial_index": 0,
+  "baseline_cardinality": 1932,
+  "new_sota_found": false,
+  "family_counts": {
+    "structured_reflection": 54,
+    "rational_plane_rotation": 36,
+    "random_block_reflection": 45,
+    "random_mixed_reflection": 45,
+    "random_dense_reflection": 45,
+    "block_reflection_word": 45,
+    "mixed_reflection_word": 45,
+    "mixed_commutator": 45
+  },
+  "cardinality_histogram": {
+    "1932": 360
+  },
+  "conflict_edges_range": [
+    0,
+    150762
+  ],
+  "maximum_new_image_points": 1912,
+  "elapsed_seconds": 37.42027705000055,
+  "scope": "These finite two-isometric-copy unions only. No global bound or exhaustion of rational maps.",
+  "baseline_proof": "full independent integer norm/distinctness/pair/rank verification",
+  "per_trial_proof": "exact isometry, full cross graph, matching and equal-size vertex cover checked against every edge",
+  "output_proof": "full independent integer verification of the first best and every strict improvement"
+}

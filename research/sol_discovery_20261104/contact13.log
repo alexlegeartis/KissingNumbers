@@ -1,0 +1,11 @@
+{"phase": "generated", "old": 1154, "new": 8552}
+Traceback (most recent call last):
+  File "/workspace/KissingNumbers-sol/research/sol_discovery_20261104/contact_campaign.py", line 223, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/KissingNumbers-sol/research/sol_discovery_20261104/contact_campaign.py", line 210, in main
+    require(len(C)<=5000,'Explicit joint MILP candidate budget')
+  File "/workspace/KissingNumbers-sol/research/sol_discovery_20261104/contact_campaign.py", line 28, in require
+    if not value:raise ValueError(message)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Explicit joint MILP candidate budget

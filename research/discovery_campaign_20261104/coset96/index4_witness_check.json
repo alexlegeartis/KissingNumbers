@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checked_witness_counts": {
+    "index4_full_results.json": 407,
+    "index4_ascent_results.json": 192
+  },
+  "scope": "Actual positive-distance rejection witnesses only; no positive candidate certificate."
+}

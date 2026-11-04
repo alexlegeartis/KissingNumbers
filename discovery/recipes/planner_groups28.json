@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "name": "28D generated orbit-search quality diagnostic",
+  "description": "Bounded seed search for one supplied Weil representation; no claim to cover all representations, subgroup characters or nonorthogonal assemblies. A small valid orbit system fails the target-quality test.",
+  "max_nodes": 2,
+  "strategy": "adaptive",
+  "output_kinds": [
+    "spherical_code",
+    "search_result"
+  ],
+  "quality_targets": [
+    {
+      "dimension": 28,
+      "cardinality": 221988,
+      "label": "Dated repository comparison, 2026-11-04",
+      "source": "discovery/benchmarks/catalog.json"
+    }
+  ],
+  "catalogue": [
+    {
+      "op": "groups.weil",
+      "params": {
+        "p": 3,
+        "rank": 3,
+        "parity": 1
+      }
+    },
+    {
+      "op": "groups.search",
+      "params": {
+        "trials": 12,
+        "linecap": 1600
+      },
+      "domains": {
+        "seed": {
+          "integer_range": {
+            "start": 20261104,
+            "stop": 20261106
+          }
+        }
+      }
+    }
+  ],
+  "unavailable": [
+    {
+      "name": "groups.general_multiplicity_parameters",
+      "family": "groups",
+      "reason": "Current search samples subgroup eigenlines and a finite phase grid rather than all higher-multiplicity character spaces."
+    },
+    {
+      "name": "geometry.general_compatible_union",
+      "family": "mixed",
+      "reason": "Current registry cannot compose nonorthogonal group/code/support components with general cross-compatibility certificates."
+    }
+  ]
+}

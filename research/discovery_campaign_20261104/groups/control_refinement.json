@@ -1,0 +1,10 @@
+{
+  "dimension": 5,
+  "points": 40,
+  "baseline": 40,
+  "maximum_cosine": 0.5000000000000021,
+  "loss": 3.7298329674980964e-29,
+  "function_evaluations": 39,
+  "seconds": 0.03868159200010268,
+  "status": "Numerical reconstruction control only; no exact certificate and no new SOTA."
+}

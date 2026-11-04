@@ -1,0 +1,12 @@
+{
+  "trial_executions": 2360,
+  "distinct_rational_isometry_matrices": 2295,
+  "exact_cross_pairs_checked": 7484054088,
+  "maximum_new_image_points": 1916,
+  "best_cardinality": 1932,
+  "new_sota_found": false,
+  "independent_replay_matched_conflicts": 3873734,
+  "joint_pool_pairs_checked": 58819134,
+  "joint_pool_conflict_edges": 625770,
+  "scope": "Enumerated finite searches only; joint MILP timeouts and numerical bounds are not exact exclusions."
+}

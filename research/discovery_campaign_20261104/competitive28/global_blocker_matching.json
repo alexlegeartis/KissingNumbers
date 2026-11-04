@@ -1,0 +1,9 @@
+{
+  "unique_candidates": 24178,
+  "edges": 97094,
+  "distinct_baseline_blockers": 48444,
+  "matching_size": 24178,
+  "unmatched": 0,
+  "seconds": 0.01068950999979279,
+  "scope": "If unmatched=0, every candidate subset has at least as many blockers as additions, even before candidate-candidate conflicts."
+}

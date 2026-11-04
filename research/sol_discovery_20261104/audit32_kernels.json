@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "source_sha256": "10d625316bb84b12ed1a43fcce46d74cf5ddf86bea6cca014c14925d46a6c275",
+  "cpp_source_sha256": "8a6fc6095a2eb60f5611fc3442b7fb2ecbc8358d4bb64b2333f2324cf2a9c0ad",
+  "weight12_dual_supports": 3584,
+  "kernel_dimensions": 6,
+  "dual_minimum_distance": 8,
+  "unordered_kernel_pairs_checked": 6420736,
+  "kernel_intersection_dimension_histogram": {
+    "0": 3785280,
+    "1": 1956448,
+    "2": 608448,
+    "3": 69360,
+    "4": 1200
+  },
+  "maximum_affine_blocker_intersection": 16,
+  "minimum_union_of_two_64_word_blocker_sets": 112,
+  "distinct_eight_dimensional_pair_spans": 1200,
+  "maximum_kernels_in_any_eight_dimensional_space": 2,
+  "maximum_minimum_blocker_candidates_freed_by_affine_eight_flat": 8,
+  "affine_eight_flat_reason": "Three6D kernels in an8D space would give three4D-intersection pairs with the same8D span, contrary to pair-span uniqueness. Each of at most two kernels has four cosets inside an affine8-flat.",
+  "reason": "K_S intersection K_T is the kernel of the joint projection on S union T; any nonempty affine intersection has the same direction intersection and at most2^4 words.",
+  "scope": "Equal-amplitude norm32 weight12 candidate alphabet over this fixed dense code. Fewer than112 dense deletions can free at most one candidate; candidates with larger blocker sets need at least128. Shared-deletion exchanges of larger size and other alphabets remain open.",
+  "new_sota": false,
+  "seconds": 2.0850132810001014
+}

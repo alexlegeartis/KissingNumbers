@@ -1,0 +1,49 @@
+{
+  "runs": [
+    {
+      "gain": 0,
+      "tested_removal_sets": 8888,
+      "total_proposed_removal_sets": 8888,
+      "nontrivial_sets": 0,
+      "max_unlocked": 5,
+      "search_nodes": 0,
+      "seconds": 0.8951749719999498,
+      "scope": "single candidate blocker sets and bounded sampled pair unions, max12 old removals; exact compatibility but no general exclusion",
+      "left": 0,
+      "right": 5,
+      "eligible": 7147,
+      "candidate_pool": 175442,
+      "antipodality_constraints": false
+    },
+    {
+      "gain": 0,
+      "tested_removal_sets": 8842,
+      "total_proposed_removal_sets": 8842,
+      "nontrivial_sets": 0,
+      "max_unlocked": 5,
+      "search_nodes": 0,
+      "seconds": 0.7438351970004078,
+      "scope": "single candidate blocker sets and bounded sampled pair unions, max12 old removals; exact compatibility but no general exclusion",
+      "left": 2,
+      "right": 3,
+      "eligible": 7147,
+      "candidate_pool": 175442,
+      "antipodality_constraints": false
+    },
+    {
+      "gain": 0,
+      "tested_removal_sets": 8707,
+      "total_proposed_removal_sets": 8707,
+      "nontrivial_sets": 0,
+      "max_unlocked": 5,
+      "search_nodes": 0,
+      "seconds": 0.7460713600003146,
+      "scope": "single candidate blocker sets and bounded sampled pair unions, max12 old removals; exact compatibility but no general exclusion",
+      "left": 4,
+      "right": 5,
+      "eligible": 7147,
+      "candidate_pool": 175442,
+      "antipodality_constraints": false
+    }
+  ]
+}

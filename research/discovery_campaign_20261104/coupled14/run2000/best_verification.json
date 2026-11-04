@@ -1,0 +1,25 @@
+{
+  "status": "exact",
+  "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+  "details": {
+    "dimension": 14,
+    "rank_exact": 14,
+    "ambient_dimension": 14,
+    "cardinality": 1932,
+    "norm_squared": 200,
+    "max_inner_product": 100,
+    "pairs_checked": 1865346,
+    "facts": {
+      "dimension": 14,
+      "rank_exact": 14,
+      "ambient_dimension": 14,
+      "cardinality": 1932,
+      "norm_squared": 200,
+      "max_inner_product": 100,
+      "pairs_checked": 1865346
+    },
+    "data_sha256": "09211c60fa74fbaacae4fc99bbf74de7699631673c1a348108d6dce5c65233e7",
+    "integer_backend": "int64 proven overflow-safe",
+    "rank_scalar_work": 394856
+  }
+}

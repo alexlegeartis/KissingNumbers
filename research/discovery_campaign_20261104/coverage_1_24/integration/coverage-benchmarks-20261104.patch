@@ -1,0 +1,6419 @@
+From 0a6152a9ea6caf8b7865e2f41c2097a838566e2a Mon Sep 17 00:00:00 2001
+From: Alex Kravatsky <alexlegeartis@gmail.com>
+Date: Wed, 4 Nov 2026 13:13:56 +0000
+Subject: [PATCH] Audit 1-24D discovery coverage and add exact root benchmarks
+
+---
+ .../benchmarks/coverage_1_24_20261104.json    |  595 ++++
+ .../coverage_controls_20261104.json           |  110 +
+ discovery/benchmarks/root_controls.py         |  121 +
+ .../benchmarks/root_controls_20261104.json    |  172 ++
+ discovery/docs/COVERAGE_1_24.md               |  159 ++
+ discovery/recipes/roots_a1.json               |   31 +
+ discovery/recipes/roots_a2.json               |   55 +
+ discovery/recipes/roots_d3.json               |   85 +
+ discovery/recipes/roots_d4.json               |  169 ++
+ discovery/recipes/roots_d5.json               |  305 +++
+ discovery/recipes/roots_e6.json               |  745 +++++
+ discovery/recipes/roots_e7.json               | 1285 +++++++++
+ discovery/recipes/roots_e8.json               | 2425 +++++++++++++++++
+ discovery/tests/test_root_controls.py         |   39 +
+ 14 files changed, 6296 insertions(+)
+ create mode 100644 discovery/benchmarks/coverage_1_24_20261104.json
+ create mode 100644 discovery/benchmarks/coverage_controls_20261104.json
+ create mode 100644 discovery/benchmarks/root_controls.py
+ create mode 100644 discovery/benchmarks/root_controls_20261104.json
+ create mode 100644 discovery/docs/COVERAGE_1_24.md
+ create mode 100644 discovery/recipes/roots_a1.json
+ create mode 100644 discovery/recipes/roots_a2.json
+ create mode 100644 discovery/recipes/roots_d3.json
+ create mode 100644 discovery/recipes/roots_d4.json
+ create mode 100644 discovery/recipes/roots_d5.json
+ create mode 100644 discovery/recipes/roots_e6.json
+ create mode 100644 discovery/recipes/roots_e7.json
+ create mode 100644 discovery/recipes/roots_e8.json
+ create mode 100644 discovery/tests/test_root_controls.py
+
+diff --git a/discovery/benchmarks/coverage_1_24_20261104.json b/discovery/benchmarks/coverage_1_24_20261104.json
+new file mode 100644
+index 0000000..bd4db63
+--- /dev/null
++++ b/discovery/benchmarks/coverage_1_24_20261104.json
+@@ -0,0 +1,595 @@
++{
++  "schema_version": 1,
++  "audit_date": "2026-11-04",
++  "reviewed_base_commit": "e25c2924f377a1061b6c60429c950d34df7515e9",
++  "scope": "Record-specific coverage of discovery engine plus added formula-generated root benchmarks. Historical caches are not a fresh worldwide-priority check. No new SOTA claim.",
++  "status_semantics": {
++    "imported": "An actual target configuration has been imported and tested; not merely an available importer.",
++    "formula_generated": "Target reconstructed from formulas by a benchmark generator or dedicated known-result operator; does not imply search.",
++    "search_discovered": "An actual recorded search reached target count; numerical status is stated separately and is not promoted to exact.",
++    "exact_verified": "Target construction has passed independent engine replay. For 10D this refers to the separate known control.",
++    "unsupported": "No target-specific native generation-plus-proof route demonstrated in this snapshot. Does not assert mathematical impossibility or lack of generic lower bounds.",
++    "not_tested": "Target record reproduction not attempted in this audit; not a failed search."
++  },
++  "sources": {
++    "cohn_20261104": {
++      "url": "https://cohn.mit.edu/kissing-numbers/",
++      "recorded_retrieval_date": "2026-11-04",
++      "artifact": "research/group_search_20261104/baselines.json",
++      "artifact_sha256": "b8e736e3d326e077b89679c09ae992a8ee6a72211226ffbf5113e8a511fe28cd",
++      "recorded_html_sha256": "390a3d6a5e8f2cdd3dd73a1c5c3d02fe40a4bb2373489697e697ba05c7f242c9",
++      "availability": "parsed cached rows only; original HTML not included",
++      "current_retrieval": "2026-11-04 web HTTP 502; urllib HTTP 503",
++      "fresh_full_table_verified": false
++    },
++    "cohn_20261025": {
++      "url": "https://cohn.mit.edu/kissing-numbers/",
++      "recorded_retrieval_date": "2026-10-25",
++      "artifact": "common/cohn_20261025.json",
++      "artifact_sha256": "60f72cdeb48a42b1409c7f90d8707ab17fabc56a789f1cedf7ce232c1a8d989e",
++      "recorded_html_sha256": "fe5477fdba7ae088d679b07980ff60cdcdcc43af95a869075d7e25289f4c1b70",
++      "availability": "cached parsed table; used only for dimensions 1-4",
++      "fresh_full_table_verified": false
++    },
++    "cohn_li_v3": {
++      "url": "https://arxiv.org/html/2411.04916v3",
++      "source_date": "2026-09-01",
++      "accessed_date": "2026-11-04",
++      "scope": "Introduction and Table 1.1 construction attribution; historical values for 18/19/21 are superseded in the cached Cohn table"
++    },
++    "ganzhinov": {
++      "url": "https://arxiv.org/html/2207.08266",
++      "source_date": "2022-07-17 (v1); journal publication 2025",
++      "accessed_date": "2026-11-04",
++      "scope": "Sections 5.4-5.5; 510 and 1932 controls"
++    },
++    "bent18": {
++      "url": "https://github.com/alexlegeartis/KissingNumbers/tree/e25c2924f377a1061b6c60429c950d34df7515e9/verifications/improved/dim18-bent-hexagon",
++      "version": "reviewed repository snapshot e25c292; record date 2026-09-16 in repository documentation",
++      "local_evidence": "verifications/improved/dim18-bent-hexagon/README.md",
++      "accessed_date": "2026-11-04",
++      "scope": "Existing separate repository package, not a discovery-engine operator"
++    },
++    "li_odd_sign": {
++      "url": "https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/README.md",
++      "version": "b823640f4e98134b9d55b27288132ee954a8affa",
++      "accessed_date": "2026-11-04",
++      "readme_sha256": "4490f5a2f9a4e52ba0039ed443d1291ee15c52c0fe9c23027aeb231aae8b839e",
++      "scope": "Fresh read of pinned README describes construction; exact 12460/31560 counts from common/cohn_20261024.json cached source audit, not independently replayed here",
++      "cached_count_evidence": "common/cohn_20261024.json",
++      "cached_count_review_date": "2026-10-24"
++    }
++  },
++  "rows": [
++    {
++      "dimension": 1,
++      "cohn_lower_bound": 2,
++      "bound_source": "cohn_20261025",
++      "construction": "A1 roots",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": true,
++        "search_discovered": false,
++        "exact_verified": true,
++        "unsupported": false,
++        "not_tested": false
++      },
++      "recipe": "discovery/recipes/roots_a1.json",
++      "notes": [
++        "Generated from mathematical formulas outside the operator registry; geometry.integer_code consumes the resulting recipe. No autonomous discovery."
++      ],
++      "verification_evidence": "discovery/benchmarks/root_controls_20261104.json"
++    },
++    {
++      "dimension": 2,
++      "cohn_lower_bound": 6,
++      "bound_source": "cohn_20261025",
++      "construction": "A2 roots",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": true,
++        "search_discovered": false,
++        "exact_verified": true,
++        "unsupported": false,
++        "not_tested": false
++      },
++      "recipe": "discovery/recipes/roots_a2.json",
++      "notes": [
++        "Generated from mathematical formulas outside the operator registry; geometry.integer_code consumes the resulting recipe. No autonomous discovery.",
++        "Exact rank is checked; coordinate ambient dimension is 3."
++      ],
++      "verification_evidence": "discovery/benchmarks/root_controls_20261104.json"
++    },
++    {
++      "dimension": 3,
++      "cohn_lower_bound": 12,
++      "bound_source": "cohn_20261025",
++      "construction": "D3 roots (isometric to A3)",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": true,
++        "search_discovered": false,
++        "exact_verified": true,
++        "unsupported": false,
++        "not_tested": false
++      },
++      "recipe": "discovery/recipes/roots_d3.json",
++      "notes": [
++        "Generated from mathematical formulas outside the operator registry; geometry.integer_code consumes the resulting recipe. No autonomous discovery."
++      ],
++      "verification_evidence": "discovery/benchmarks/root_controls_20261104.json"
++    },
++    {
++      "dimension": 4,
++      "cohn_lower_bound": 24,
++      "bound_source": "cohn_20261025",
++      "construction": "D4 roots",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": true,
++        "search_discovered": false,
++        "exact_verified": true,
++        "unsupported": false,
++        "not_tested": false
++      },
++      "recipe": "discovery/recipes/roots_d4.json",
++      "notes": [
++        "Generated from mathematical formulas outside the operator registry; geometry.integer_code consumes the resulting recipe. No autonomous discovery."
++      ],
++      "verification_evidence": "discovery/benchmarks/root_controls_20261104.json"
++    },
++    {
++      "dimension": 5,
++      "cohn_lower_bound": 40,
++      "bound_source": "cohn_20261104",
++      "construction": "D5 roots",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": true,
++        "search_discovered": false,
++        "exact_verified": true,
++        "unsupported": false,
++        "not_tested": false
++      },
++      "recipe": "discovery/recipes/roots_d5.json",
++      "notes": [
++        "Generated from mathematical formulas outside the operator registry; geometry.integer_code consumes the resulting recipe. No autonomous discovery."
++      ],
++      "verification_evidence": "discovery/benchmarks/root_controls_20261104.json"
++    },
++    {
++      "dimension": 6,
++      "cohn_lower_bound": 72,
++      "bound_source": "cohn_20261104",
++      "construction": "E6 roots",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": true,
++        "search_discovered": false,
++        "exact_verified": true,
++        "unsupported": false,
++        "not_tested": false
++      },
++      "recipe": "discovery/recipes/roots_e6.json",
++      "notes": [
++        "Generated from mathematical formulas outside the operator registry; geometry.integer_code consumes the resulting recipe. No autonomous discovery.",
++        "Exact rank is checked; coordinate ambient dimension is 8."
++      ],
++      "verification_evidence": "discovery/benchmarks/root_controls_20261104.json"
++    },
++    {
++      "dimension": 7,
++      "cohn_lower_bound": 126,
++      "bound_source": "cohn_20261104",
++      "construction": "E7 roots",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": true,
++        "search_discovered": false,
++        "exact_verified": true,
++        "unsupported": false,
++        "not_tested": false
++      },
++      "recipe": "discovery/recipes/roots_e7.json",
++      "notes": [
++        "Generated from mathematical formulas outside the operator registry; geometry.integer_code consumes the resulting recipe. No autonomous discovery.",
++        "Exact rank is checked; coordinate ambient dimension is 8."
++      ],
++      "verification_evidence": "discovery/benchmarks/root_controls_20261104.json"
++    },
++    {
++      "dimension": 8,
++      "cohn_lower_bound": 240,
++      "bound_source": "cohn_20261104",
++      "construction": "E8 roots",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": true,
++        "search_discovered": false,
++        "exact_verified": true,
++        "unsupported": false,
++        "not_tested": false
++      },
++      "recipe": "discovery/recipes/roots_e8.json",
++      "notes": [
++        "Generated from mathematical formulas outside the operator registry; geometry.integer_code consumes the resulting recipe. No autonomous discovery."
++      ],
++      "verification_evidence": "discovery/benchmarks/root_controls_20261104.json"
++    },
++    {
++      "dimension": 9,
++      "cohn_lower_bound": 306,
++      "bound_source": "cohn_20261104",
++      "construction": "Leech-Sloane 1971 construction",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": false,
++        "search_discovered": false,
++        "exact_verified": false,
++        "unsupported": true,
++        "not_tested": true
++      },
++      "recipe": null,
++      "notes": [
++        "No record-specific generation recipe and exact engine replay in this reviewed snapshot. A generic coordinate importer does not establish coverage. No record reproduction attempted in this audit."
++      ]
++    },
++    {
++      "dimension": 10,
++      "cohn_lower_bound": 510,
++      "bound_source": "cohn_20261104",
++      "construction": "Ganzhinov highly symmetric line systems",
++      "construction_sources": [
++        "ganzhinov"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": true,
++        "search_discovered": true,
++        "exact_verified": true,
++        "unsupported": false,
++        "not_tested": false
++      },
++      "recipe": "discovery/recipes/ganzhinov10.json",
++      "notes": [
++        "Dedicated known-result reconstruction, independently reverified in this audit.",
++        "A separate groups.weil/groups.search recipe has recorded numerical discovery of 510; not rerun here and not an exact certificate of that numerical output. Exact control uses a separate reconstruction."
++      ],
++      "verification_evidence": "discovery/benchmarks/coverage_controls_20261104.json",
++      "discovery_evidence": "discovery/benchmarks/validation.json#numerical_searches"
++    },
++    {
++      "dimension": 11,
++      "cohn_lower_bound": 604,
++      "bound_source": "cohn_20261104",
++      "construction": "Bianchi-Kwon-Pappu-Zou 2026 construction",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": false,
++        "search_discovered": false,
++        "exact_verified": false,
++        "unsupported": true,
++        "not_tested": true
++      },
++      "recipe": null,
++      "notes": [
++        "No record-specific generation recipe and exact engine replay in this reviewed snapshot. A generic coordinate importer does not establish coverage. No record reproduction attempted in this audit."
++      ]
++    },
++    {
++      "dimension": 12,
++      "cohn_lower_bound": 841,
++      "bound_source": "cohn_20261104",
++      "construction": "Takhanov-Assylbekov-Yun 2026 841-point construction",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": false,
++        "search_discovered": false,
++        "exact_verified": false,
++        "unsupported": true,
++        "not_tested": true
++      },
++      "recipe": null,
++      "notes": [
++        "No record-specific generation recipe and exact engine replay in this reviewed snapshot. A generic coordinate importer does not establish coverage. No record reproduction attempted in this audit."
++      ]
++    },
++    {
++      "dimension": 13,
++      "cohn_lower_bound": 1154,
++      "bound_source": "cohn_20261104",
++      "construction": "Zinoviev-Ericson 1999 construction",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": false,
++        "search_discovered": false,
++        "exact_verified": false,
++        "unsupported": true,
++        "not_tested": true
++      },
++      "recipe": null,
++      "notes": [
++        "No record-specific generation recipe and exact engine replay in this reviewed snapshot. A generic coordinate importer does not establish coverage. No record reproduction attempted in this audit."
++      ]
++    },
++    {
++      "dimension": 14,
++      "cohn_lower_bound": 1932,
++      "bound_source": "cohn_20261104",
++      "construction": "Ganzhinov E7 frame construction",
++      "construction_sources": [
++        "ganzhinov"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": true,
++        "search_discovered": false,
++        "exact_verified": true,
++        "unsupported": false,
++        "not_tested": false
++      },
++      "recipe": "discovery/recipes/ganzhinov14.json",
++      "notes": [
++        "Dedicated known-result reconstruction, independently reverified in this audit."
++      ],
++      "verification_evidence": "discovery/benchmarks/coverage_controls_20261104.json"
++    },
++    {
++      "dimension": 15,
++      "cohn_lower_bound": 2564,
++      "bound_source": "cohn_20261104",
++      "construction": "Leech-Sloane 1971 construction",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": false,
++        "search_discovered": false,
++        "exact_verified": false,
++        "unsupported": true,
++        "not_tested": true
++      },
++      "recipe": null,
++      "notes": [
++        "No record-specific generation recipe and exact engine replay in this reviewed snapshot. A generic coordinate importer does not establish coverage. No record reproduction attempted in this audit."
++      ]
++    },
++    {
++      "dimension": 16,
++      "cohn_lower_bound": 4320,
++      "bound_source": "cohn_20261104",
++      "construction": "Barnes-Wall minimal vectors",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": false,
++        "search_discovered": false,
++        "exact_verified": false,
++        "unsupported": true,
++        "not_tested": true
++      },
++      "recipe": null,
++      "notes": [
++        "No record-specific generation recipe and exact engine replay in this reviewed snapshot. A generic coordinate importer does not establish coverage. No record reproduction attempted in this audit."
++      ],
++      "partial_control": {
++        "recipe": "discovery/recipes/octacode.json",
++        "cardinality": 256,
++        "verification": "exact-verified",
++        "evidence": "discovery/benchmarks/coverage_controls_20261104.json",
++        "scope": "Implicit sign image of Nordstrom-Robinson code; does not reproduce 4320."
++      }
++    },
++    {
++      "dimension": 17,
++      "cohn_lower_bound": 5730,
++      "bound_source": "cohn_20261104",
++      "construction": "Cohn-Li sign-modified construction",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": false,
++        "search_discovered": false,
++        "exact_verified": false,
++        "unsupported": true,
++        "not_tested": true
++      },
++      "recipe": null,
++      "notes": [
++        "No record-specific generation recipe and exact engine replay in this reviewed snapshot. A generic coordinate importer does not establish coverage. No record reproduction attempted in this audit."
++      ]
++    },
++    {
++      "dimension": 18,
++      "cohn_lower_bound": 8358,
++      "bound_source": "cohn_20261104",
++      "construction": "Repository bent-hexagon construction (also tied by K. Li)",
++      "construction_sources": [
++        "bent18"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": false,
++        "search_discovered": false,
++        "exact_verified": false,
++        "unsupported": true,
++        "not_tested": true
++      },
++      "recipe": null,
++      "notes": [
++        "No record-specific generation recipe and exact engine replay in this reviewed snapshot. A generic coordinate importer does not establish coverage. No record reproduction attempted in this audit.",
++        "The existing bent-hexagon package belongs to the separate record pipeline; its existence is not native engine coverage."
++      ]
++    },
++    {
++      "dimension": 19,
++      "cohn_lower_bound": 12460,
++      "bound_source": "cohn_20261104",
++      "construction": "K. Li odd-sign extension",
++      "construction_sources": [
++        "li_odd_sign"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": false,
++        "search_discovered": false,
++        "exact_verified": false,
++        "unsupported": true,
++        "not_tested": true
++      },
++      "recipe": null,
++      "notes": [
++        "No record-specific generation recipe and exact engine replay in this reviewed snapshot. A generic coordinate importer does not establish coverage. No record reproduction attempted in this audit.",
++        "Older common/published.py attribution and the original D19-D21-Kissing README contain superseded bounds; use the pinned source and cached Cohn review above."
++      ]
++    },
++    {
++      "dimension": 20,
++      "cohn_lower_bound": 19448,
++      "bound_source": "cohn_20261104",
++      "construction": "Cohn-Li sign-modified construction",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": false,
++        "search_discovered": false,
++        "exact_verified": false,
++        "unsupported": true,
++        "not_tested": true
++      },
++      "recipe": null,
++      "notes": [
++        "No record-specific generation recipe and exact engine replay in this reviewed snapshot. A generic coordinate importer does not establish coverage. No record reproduction attempted in this audit."
++      ]
++    },
++    {
++      "dimension": 21,
++      "cohn_lower_bound": 31560,
++      "bound_source": "cohn_20261104",
++      "construction": "K. Li odd-sign extension",
++      "construction_sources": [
++        "li_odd_sign"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": false,
++        "search_discovered": false,
++        "exact_verified": false,
++        "unsupported": true,
++        "not_tested": true
++      },
++      "recipe": null,
++      "notes": [
++        "No record-specific generation recipe and exact engine replay in this reviewed snapshot. A generic coordinate importer does not establish coverage. No record reproduction attempted in this audit.",
++        "Older common/published.py attribution and the original D19-D21-Kissing README contain superseded bounds; use the pinned source and cached Cohn review above."
++      ]
++    },
++    {
++      "dimension": 22,
++      "cohn_lower_bound": 49896,
++      "bound_source": "cohn_20261104",
++      "construction": "Leech laminated-lattice section",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": false,
++        "search_discovered": false,
++        "exact_verified": false,
++        "unsupported": true,
++        "not_tested": true
++      },
++      "recipe": null,
++      "notes": [
++        "No record-specific generation recipe and exact engine replay in this reviewed snapshot. A generic coordinate importer does not establish coverage. No record reproduction attempted in this audit."
++      ]
++    },
++    {
++      "dimension": 23,
++      "cohn_lower_bound": 93150,
++      "bound_source": "cohn_20261104",
++      "construction": "Leech laminated-lattice section",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": false,
++        "search_discovered": false,
++        "exact_verified": false,
++        "unsupported": true,
++        "not_tested": true
++      },
++      "recipe": null,
++      "notes": [
++        "No record-specific generation recipe and exact engine replay in this reviewed snapshot. A generic coordinate importer does not establish coverage. No record reproduction attempted in this audit."
++      ]
++    },
++    {
++      "dimension": 24,
++      "cohn_lower_bound": 196560,
++      "bound_source": "cohn_20261104",
++      "construction": "Leech lattice minimal shell",
++      "construction_sources": [
++        "cohn_li_v3"
++      ],
++      "target_status": {
++        "imported": false,
++        "formula_generated": false,
++        "search_discovered": false,
++        "exact_verified": false,
++        "unsupported": true,
++        "not_tested": true
++      },
++      "recipe": null,
++      "notes": [
++        "No record-specific generation recipe and exact engine replay in this reviewed snapshot. A generic coordinate importer does not establish coverage. No record reproduction attempted in this audit.",
++        "No native Leech construction/certifier. An explicit 196560-point shell has 19317818520 pairs, beyond default budgets; a theta-series count alone is not a construction certificate."
++      ]
++    }
++  ]
++}
+diff --git a/discovery/benchmarks/coverage_controls_20261104.json b/discovery/benchmarks/coverage_controls_20261104.json
+new file mode 100644
+index 0000000..989d5ce
+--- /dev/null
++++ b/discovery/benchmarks/coverage_controls_20261104.json
+@@ -0,0 +1,110 @@
++{
++  "scope": "known controls only; runtime observed on this executor, not a performance guarantee",
++  "controls": [
++    {
++      "control": "ganzhinov10",
++      "dimension": 10,
++      "cardinality": 510,
++      "status": "exact",
++      "seconds": 0.904,
++      "cumulative_process_peak_rss_kib_linux": 59820,
++      "kind": "spherical_code",
++      "receipt": "ganzhinov10.json",
++      "new_sota": false,
++      "receipt_sha256": "7f42ff249e07cdfd60e8528cd2beeb9d0a6a493df91ccb6b3d02a4fa179e7d18",
++      "program_sha256": "c32229db3c597c43ee9411028cc3f60a4e54379a901b6a6ba8b5150251f40084",
++      "source_sha256": {
++        "__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
++        "__main__.py": "7b0b2c84c31d3902d306d15cf5949de52daaf087db33fa615b93db44f6898428",
++        "certification.py": "17ce40de301ae75a4c4411d95852bd98395bdd600bb4dca676257b0652679511",
++        "core.py": "5e08c17e408c97f0d53edd20e97a2776e722ae8b86538fafe01170a5f5c8dc82",
++        "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
++        "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
++        "engines/geometry.py": "ee26b89e81000818bef659886dba716d622a415ef46b7d037d4359354e74fdc7",
++        "engines/groups.py": "67be01b06d385d05fab5feacb40f0ca4d19311e11b73b63226455511a5530245",
++        "engines/layers.py": "a799fab74c7bbacc93712ad2df2ee201f375cb0c56f0f6617cb9f3d1437045cf",
++        "engines/rings.py": "87d1e00e2da8209f6691a023dc517915623e4713b2b7b87695b8957f056158c2",
++        "runner.py": "64f4d7a2d445d078109cc072099a256b81e02c60cda42d5b13804434c6ac7df7",
++        "scheduler.py": "bd670077736c2986dea9c64d71a91295197af9c8090c4736af13fcdc84a5e239"
++      },
++      "facts": {
++        "cardinality": 510,
++        "dimension": 10,
++        "role": "known construction control",
++        "global_optimality_claim": false
++      }
++    },
++    {
++      "control": "ganzhinov14",
++      "dimension": 14,
++      "cardinality": 1932,
++      "status": "exact",
++      "seconds": 1.535,
++      "cumulative_process_peak_rss_kib_linux": 64828,
++      "kind": "spherical_code",
++      "receipt": "ganzhinov14.json",
++      "new_sota": false,
++      "receipt_sha256": "c0c7371defe144803e4278551f3a34f3e7f7c48b2138f8b29b4c5a57f19e4c8e",
++      "program_sha256": "fe474f8aa4cba8a4372f1b1c1f3e78d1dbc655d1e25250257484419a53e0f710",
++      "source_sha256": {
++        "__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
++        "__main__.py": "7b0b2c84c31d3902d306d15cf5949de52daaf087db33fa615b93db44f6898428",
++        "certification.py": "17ce40de301ae75a4c4411d95852bd98395bdd600bb4dca676257b0652679511",
++        "core.py": "5e08c17e408c97f0d53edd20e97a2776e722ae8b86538fafe01170a5f5c8dc82",
++        "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
++        "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
++        "engines/geometry.py": "ee26b89e81000818bef659886dba716d622a415ef46b7d037d4359354e74fdc7",
++        "engines/groups.py": "67be01b06d385d05fab5feacb40f0ca4d19311e11b73b63226455511a5530245",
++        "engines/layers.py": "a799fab74c7bbacc93712ad2df2ee201f375cb0c56f0f6617cb9f3d1437045cf",
++        "engines/rings.py": "87d1e00e2da8209f6691a023dc517915623e4713b2b7b87695b8957f056158c2",
++        "runner.py": "64f4d7a2d445d078109cc072099a256b81e02c60cda42d5b13804434c6ac7df7",
++        "scheduler.py": "bd670077736c2986dea9c64d71a91295197af9c8090c4736af13fcdc84a5e239"
++      },
++      "facts": {
++        "cardinality": 1932,
++        "dimension": 14,
++        "role": "known construction control",
++        "global_optimality_claim": false
++      }
++    }
++  ],
++  "partial_control": {
++    "name": "octacode_sign",
++    "facts": {
++      "dimension": 16,
++      "ambient_dimension": 16,
++      "cardinality": 256,
++      "norm_squared": 16,
++      "max_inner_product_upper_bound": 4,
++      "dimension_scope": "ambient; exact span rank not computed"
++    },
++    "status": "exact",
++    "program_sha256": "404c30c95f8a9ebfdecf8cad0a6a064b72e5197a15b242fd2e6c2bacc3a5c917",
++    "source_sha256": {
++      "__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
++      "__main__.py": "7b0b2c84c31d3902d306d15cf5949de52daaf087db33fa615b93db44f6898428",
++      "certification.py": "17ce40de301ae75a4c4411d95852bd98395bdd600bb4dca676257b0652679511",
++      "core.py": "5e08c17e408c97f0d53edd20e97a2776e722ae8b86538fafe01170a5f5c8dc82",
++      "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
++      "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
++      "engines/geometry.py": "ee26b89e81000818bef659886dba716d622a415ef46b7d037d4359354e74fdc7",
++      "engines/groups.py": "67be01b06d385d05fab5feacb40f0ca4d19311e11b73b63226455511a5530245",
++      "engines/layers.py": "a799fab74c7bbacc93712ad2df2ee201f375cb0c56f0f6617cb9f3d1437045cf",
++      "engines/rings.py": "87d1e00e2da8209f6691a023dc517915623e4713b2b7b87695b8957f056158c2",
++      "runner.py": "64f4d7a2d445d078109cc072099a256b81e02c60cda42d5b13804434c6ac7df7",
++      "scheduler.py": "bd670077736c2986dea9c64d71a91295197af9c8090c4736af13fcdc84a5e239"
++    },
++    "scope": "256-point control only; not 4320-point Barnes-Wall reproduction"
++  },
++  "run_date": "2026-11-04",
++  "commands": [
++    "OPENBLAS_NUM_THREADS=1 python -m discovery.benchmarks.run_controls --controls ganzhinov10 ganzhinov14 --outdir /tmp/coverage-existing-controls-20261104",
++    "OPENBLAS_NUM_THREADS=1 python -m discovery run discovery/recipes/octacode.json --out /tmp/coverage-octacode-20261104.json"
++  ],
++  "tests": {
++    "command": "OPENBLAS_NUM_THREADS=1 python -m unittest discover -s discovery/tests -t . -v",
++    "passed": 68,
++    "seconds": 27.007,
++    "log_sha256": "0db0be63085f943b15b431ceb7c8ab2157f48808eabadfdd8e96d9b18a874e49"
++  }
++}
+diff --git a/discovery/benchmarks/root_controls.py b/discovery/benchmarks/root_controls.py
+new file mode 100644
+index 0000000..0e2ae90
+--- /dev/null
++++ b/discovery/benchmarks/root_controls.py
+@@ -0,0 +1,121 @@
++"""Formula-generated root-system controls through the existing integer operator.
++
++This is benchmark recipe generation, not a new production operator or search.
++No record coordinates are read. See docs/COVERAGE_1_24.md for proof and sources.
++"""
++import argparse
++import hashlib
++from itertools import combinations, product
++import json
++from pathlib import Path
++import platform
++import time
++
++from discovery.core import RunContext, digest
++from discovery.runner import output_artifact, run_program
++
++
++ROOT_NAMES = {1: 'a1', 2: 'a2', 3: 'd3', 4: 'd4', 5: 'd5',
++              6: 'e6', 7: 'e7', 8: 'e8'}
++EXPECTED_COUNTS = {1: 2, 2: 6, 3: 12, 4: 24, 5: 40, 6: 72, 7: 126, 8: 240}
++
++
++def root_recipe(dimension):
++    """Return a deterministic v1 recipe with exact integer coordinates.
++
++    E8 is scaled by two: the D8 part has two entries +/-2 and the other
++    part has eight entries +/-1 with an even number of minus signs.
++    E7 and E6 are its intersections with x6+x7=0 and additionally x5+x7=0
++    (zero-based indices). Their ranks are checked, never assumed.
++    """
++    if type(dimension) is not int or dimension not in ROOT_NAMES:
++        raise ValueError('Root benchmark dimension must be an integer from 1 to 8')
++    if dimension == 1:
++        rows, norm = [[-1], [1]], 1
++    elif dimension == 2:
++        rows = []
++        for i, j in combinations(range(3), 2):
++            for sign in (-1, 1):
++                row = [0] * 3
++                row[i], row[j] = sign, -sign
++                rows.append(row)
++        norm = 2
++    else:
++        ambient = dimension if dimension <= 5 else 8
++        scale = 1 if dimension <= 5 else 2
++        rows = []
++        for i, j in combinations(range(ambient), 2):
++            for a, b in product((-scale, scale), repeat=2):
++                row = [0] * ambient
++                row[i], row[j] = a, b
++                rows.append(row)
++        if dimension >= 6:
++            rows.extend(list(signs) for signs in product((-1, 1), repeat=8)
++                        if sum(x < 0 for x in signs) % 2 == 0)
++            if dimension <= 7:
++                rows = [x for x in rows if x[6] + x[7] == 0]
++            if dimension == 6:
++                rows = [x for x in rows if x[5] + x[7] == 0]
++        norm = 2 * scale**2
++    name = ROOT_NAMES[dimension]
++    return {
++        'schema_version': 1,
++        'name': f'roots_{name}',
++        'description': 'Known root-system control generated from formulas; no new SOTA claim.',
++        'provenance': {
++            'method': 'formula-generated benchmark coordinates; no search or coordinate import',
++            'generator': 'discovery/benchmarks/root_controls.py',
++            'construction_reference': 'https://arxiv.org/html/2411.04916v3#S1',
++            'root_system': name.upper(),
++        },
++        'nodes': [{'id': 'roots', 'op': 'geometry.integer_code',
++                   'params': {'coordinates': sorted(rows), 'norm_squared': norm}}],
++        'outputs': ['roots'],
++    }
++
++
++def main():
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.add_argument('--outdir', type=Path, required=True)
++    parser.add_argument('--dimensions', type=int, nargs='+', choices=range(1, 9),
++                        default=list(range(1, 9)))
++    args = parser.parse_args()
++    if len(set(args.dimensions)) != len(args.dimensions):
++        parser.error('Dimensions must be distinct')
++    if args.outdir.exists():
++        parser.error('Use a new output directory; benchmark files are not overwritten')
++    args.outdir.mkdir(parents=True)
++    context = RunContext(args.outdir)
++    controls = []
++    for dimension in args.dimensions:
++        recipe = root_recipe(dimension)
++        name = recipe['name']
++        start = time.monotonic()
++        receipt = run_program(recipe, context)
++        artifact = output_artifact(receipt)
++        if (artifact.verification.status != 'exact'
++                or artifact.facts['dimension'] != dimension
++                or artifact.facts['cardinality'] != EXPECTED_COUNTS[dimension]):
++            raise RuntimeError(f'{name} failed its independently verified benchmark expectation')
++        for suffix, value in (('recipe', recipe), ('receipt', receipt)):
++            (args.outdir / f'{name}.{suffix}.json').write_text(json.dumps(value, indent=2) + '\n')
++        row = {'name': name, 'generation': 'formula-generated',
++               'verification': 'exact-verified', **artifact.facts,
++               'program_sha256': digest(recipe),
++               'seconds': round(time.monotonic() - start, 6),
++               'recipe': f'{name}.recipe.json', 'receipt': f'{name}.receipt.json',
++               'independent_terminal_replay': True, 'new_sota': False}
++        controls.append(row)
++        print(json.dumps(row), flush=True)
++    summary = {
++        'schema_version': 1, 'python': platform.python_version(),
++        'generator_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
++        'source_sha256': receipt['source_sha256'],
++        'budget': context.budget, 'controls': controls,
++        'scope': 'Known formula-generated root controls; measured on this executor; no search or novelty claim.',
++    }
++    (args.outdir / 'summary.json').write_text(json.dumps(summary, indent=2) + '\n')
++
++
++if __name__ == '__main__':
++    main()
+diff --git a/discovery/benchmarks/root_controls_20261104.json b/discovery/benchmarks/root_controls_20261104.json
+new file mode 100644
+index 0000000..7ca6d53
+--- /dev/null
++++ b/discovery/benchmarks/root_controls_20261104.json
+@@ -0,0 +1,172 @@
++{
++  "schema_version": 1,
++  "python": "3.12.14",
++  "generator_sha256": "1db5af06ea5c65ed9e049a509d5a530b3a3f4f5ad0d5d2e8e5d7d729b50bc0b7",
++  "source_sha256": {
++    "__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
++    "__main__.py": "7b0b2c84c31d3902d306d15cf5949de52daaf087db33fa615b93db44f6898428",
++    "certification.py": "17ce40de301ae75a4c4411d95852bd98395bdd600bb4dca676257b0652679511",
++    "core.py": "5e08c17e408c97f0d53edd20e97a2776e722ae8b86538fafe01170a5f5c8dc82",
++    "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
++    "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
++    "engines/geometry.py": "ee26b89e81000818bef659886dba716d622a415ef46b7d037d4359354e74fdc7",
++    "engines/groups.py": "67be01b06d385d05fab5feacb40f0ca4d19311e11b73b63226455511a5530245",
++    "engines/layers.py": "a799fab74c7bbacc93712ad2df2ee201f375cb0c56f0f6617cb9f3d1437045cf",
++    "engines/rings.py": "87d1e00e2da8209f6691a023dc517915623e4713b2b7b87695b8957f056158c2",
++    "runner.py": "64f4d7a2d445d078109cc072099a256b81e02c60cda42d5b13804434c6ac7df7",
++    "scheduler.py": "bd670077736c2986dea9c64d71a91295197af9c8090c4736af13fcdc84a5e239"
++  },
++  "budget": {
++    "max_materialized_points": 20000,
++    "max_pairs": 10000000,
++    "max_codewords": 262144,
++    "max_orbit_points": 10000,
++    "max_trials": 200,
++    "solver_seconds": 30,
++    "max_dgls_words": 16777216,
++    "max_dimension": 256,
++    "max_nodes": 100
++  },
++  "controls": [
++    {
++      "name": "roots_a1",
++      "generation": "formula-generated",
++      "verification": "exact-verified",
++      "dimension": 1,
++      "ambient_dimension": 1,
++      "cardinality": 2,
++      "norm_squared": 1,
++      "max_inner_product": -1,
++      "pairs_checked": 1,
++      "program_sha256": "2c198cb1ef7750467fdba61048ef974bed363f171ed01f74c2d843590da125a1",
++      "seconds": 0.016923,
++      "recipe": "roots_a1.recipe.json",
++      "receipt": "roots_a1.receipt.json",
++      "independent_terminal_replay": true,
++      "new_sota": false
++    },
++    {
++      "name": "roots_a2",
++      "generation": "formula-generated",
++      "verification": "exact-verified",
++      "dimension": 2,
++      "ambient_dimension": 3,
++      "cardinality": 6,
++      "norm_squared": 2,
++      "max_inner_product": 1,
++      "pairs_checked": 15,
++      "program_sha256": "adabcd46023f4d4d978866c01809d376e2c79f7abdaf37f95f85eb2c4a51fd14",
++      "seconds": 0.016336,
++      "recipe": "roots_a2.recipe.json",
++      "receipt": "roots_a2.receipt.json",
++      "independent_terminal_replay": true,
++      "new_sota": false
++    },
++    {
++      "name": "roots_d3",
++      "generation": "formula-generated",
++      "verification": "exact-verified",
++      "dimension": 3,
++      "ambient_dimension": 3,
++      "cardinality": 12,
++      "norm_squared": 2,
++      "max_inner_product": 1,
++      "pairs_checked": 66,
++      "program_sha256": "c75c5eff15c25e49fa5f79bca82bd0bdfdd8275d965ae8426ffd1c0d3049a076",
++      "seconds": 0.003362,
++      "recipe": "roots_d3.recipe.json",
++      "receipt": "roots_d3.receipt.json",
++      "independent_terminal_replay": true,
++      "new_sota": false
++    },
++    {
++      "name": "roots_d4",
++      "generation": "formula-generated",
++      "verification": "exact-verified",
++      "dimension": 4,
++      "ambient_dimension": 4,
++      "cardinality": 24,
++      "norm_squared": 2,
++      "max_inner_product": 1,
++      "pairs_checked": 276,
++      "program_sha256": "2d195209b8d030d7ff36f1ce52984d7ba4abe81e5a60ae27f2494522c16729d0",
++      "seconds": 0.005785,
++      "recipe": "roots_d4.recipe.json",
++      "receipt": "roots_d4.receipt.json",
++      "independent_terminal_replay": true,
++      "new_sota": false
++    },
++    {
++      "name": "roots_d5",
++      "generation": "formula-generated",
++      "verification": "exact-verified",
++      "dimension": 5,
++      "ambient_dimension": 5,
++      "cardinality": 40,
++      "norm_squared": 2,
++      "max_inner_product": 1,
++      "pairs_checked": 780,
++      "program_sha256": "420cf1a94d51985a718da32127587091e8e743252af01882f379b9af6207deb7",
++      "seconds": 0.008067,
++      "recipe": "roots_d5.recipe.json",
++      "receipt": "roots_d5.receipt.json",
++      "independent_terminal_replay": true,
++      "new_sota": false
++    },
++    {
++      "name": "roots_e6",
++      "generation": "formula-generated",
++      "verification": "exact-verified",
++      "dimension": 6,
++      "ambient_dimension": 8,
++      "cardinality": 72,
++      "norm_squared": 8,
++      "max_inner_product": 4,
++      "pairs_checked": 2556,
++      "program_sha256": "16830d010b8069aaf829931190248cb50a602b9d4a6915cb6a46c5285e9b5bd4",
++      "seconds": 0.024153,
++      "recipe": "roots_e6.recipe.json",
++      "receipt": "roots_e6.receipt.json",
++      "independent_terminal_replay": true,
++      "new_sota": false
++    },
++    {
++      "name": "roots_e7",
++      "generation": "formula-generated",
++      "verification": "exact-verified",
++      "dimension": 7,
++      "ambient_dimension": 8,
++      "cardinality": 126,
++      "norm_squared": 8,
++      "max_inner_product": 4,
++      "pairs_checked": 7875,
++      "program_sha256": "21c68f0ca5acbe1c529ce580c724d5f205ac52485dfd98a06128fbaeebcc4e17",
++      "seconds": 0.041908,
++      "recipe": "roots_e7.recipe.json",
++      "receipt": "roots_e7.receipt.json",
++      "independent_terminal_replay": true,
++      "new_sota": false
++    },
++    {
++      "name": "roots_e8",
++      "generation": "formula-generated",
++      "verification": "exact-verified",
++      "dimension": 8,
++      "ambient_dimension": 8,
++      "cardinality": 240,
++      "norm_squared": 8,
++      "max_inner_product": 4,
++      "pairs_checked": 28680,
++      "program_sha256": "575d26e99735f7eddf0efed3422b808050a1c9b4c75fd68922b72f0299012369",
++      "seconds": 0.091658,
++      "recipe": "roots_e8.recipe.json",
++      "receipt": "roots_e8.receipt.json",
++      "independent_terminal_replay": true,
++      "new_sota": false
++    }
++  ],
++  "scope": "Known formula-generated root controls; measured on this executor; no search or novelty claim.",
++  "run_date": "2026-11-04",
++  "command": "OPENBLAS_NUM_THREADS=1 python -m discovery.benchmarks.root_controls --outdir /tmp/root-controls-20261104",
++  "reviewed_base_commit": "e25c2924f377a1061b6c60429c950d34df7515e9"
++}
+diff --git a/discovery/docs/COVERAGE_1_24.md b/discovery/docs/COVERAGE_1_24.md
+new file mode 100644
+index 0000000..44e6bb9
+--- /dev/null
++++ b/discovery/docs/COVERAGE_1_24.md
+@@ -0,0 +1,159 @@
++# Record-construction coverage in dimensions 1–24
++
++Audit date: **2026-11-04**. Base: reviewed branch
++`codex/unified-discovery-reviewed-20261104`, commit
++`e25c2924f377a1061b6c60429c950d34df7515e9`. This audit adds benchmark
++recipes without modifying production operators, certificate dispatch or planner
++interfaces. It reports known reproductions, with no new SOTA claim.
++
++The [machine-readable matrix](../benchmarks/coverage_1_24_20261104.json)
++records source versions, cached-file hashes, per-dimension status flags, evidence
++paths and limitations. Coverage means a demonstrated route to the stated record
++construction. An arbitrary coordinate importer, parameterized dimension limit,
++smaller sign code or numerical candidate does not establish that route.
++
++## Source freshness
++
++The bounds below are **last recorded Cohn values, not a newly retrieved full
++table**. Dimensions 5–24 come from
++[the 2026-11-04 parsed snapshot](../../research/group_search_20261104/baselines.json),
++whose recorded original-HTML SHA256 is
++`390a3d6a5e8f2cdd3dd73a1c5c3d02fe40a4bb2373489697e697ba05c7f242c9`.
++The original HTML is not included, so this audit checks the cached JSON's hash,
++not the provenance of that recorded HTML hash. Dimensions 1–4 use the older
++[2026-10-25 cache](../../common/cohn_20261025.json), since the November snapshot
++starts at dimension 5. A fresh full-page retrieval of
++[Cohn's table](https://cohn.mit.edu/kissing-numbers/) failed on 2026-11-04
++(web HTTP 502; Python urllib HTTP 503). Search-index snippets agreed with some
++entries, but do not qualify as a fresh full-table check.
++
++Construction attribution uses the introduction and references of
++[Cohn–Li v3, dated 2026-09-01](https://arxiv.org/html/2411.04916v3),
++read on 2026-11-04, plus the sources below for superseding records. That paper's
++18D, 19D and 21D bounds are historical and must not replace the newer cached
++Cohn entries. The August `common/published.py` snapshot and some closed-package
++documentation also retain superseded 18D/19D/21D values.
++
++## Matrix
++
++`Formula / exact` means an explicitly generated known control passed the engine's
++independent verifier. `Unsupported / not tested` means no record-specific native
++generation and proof route was demonstrated in this snapshot, and no record
++reproduction was attempted in this audit. It does not mean a failed search or a
++mathematical impossibility. No target in this table was imported from an external
++coordinate file in this audit.
++
++| Dimension | Last recorded Cohn lower bound | Construction | Engine status and evidence |
++|---|---:|---|---|
++| 1 | 2 | A1 | Formula / exact: `roots_a1.json` |
++| 2 | 6 | A2 | Formula / exact: `roots_a2.json`; rank 2 in ambient 3 |
++| 3 | 12 | D3, isometric to A3 | Formula / exact: `roots_d3.json` |
++| 4 | 24 | D4 | Formula / exact: `roots_d4.json` |
++| 5 | 40 | D5 | Formula / exact: `roots_d5.json` |
++| 6 | 72 | E6 | Formula / exact: `roots_e6.json`; rank 6 in ambient 8 |
++| 7 | 126 | E7 | Formula / exact: `roots_e7.json`; rank 7 in ambient 8 |
++| 8 | 240 | E8 | Formula / exact: `roots_e8.json`; 28,680 exact pairs |
++| 9 | 306 | Leech–Sloane (1971) | Unsupported / not tested |
++| 10 | 510 | Ganzhinov line systems | Formula / exact control; separate recorded numerical search discovery |
++| 11 | 604 | Bianchi–Kwon–Pappu–Zou (2026) | Unsupported / not tested |
++| 12 | 841 | Takhanov–Assylbekov–Yun (2026) | Unsupported / not tested |
++| 13 | 1,154 | Zinoviev–Ericson (1999) | Unsupported / not tested |
++| 14 | 1,932 | Ganzhinov E7 frame | Formula / exact control; autonomous discovery not demonstrated |
++| 15 | 2,564 | Leech–Sloane (1971) | Unsupported / not tested |
++| 16 | 4,320 | Barnes–Wall (1959) | Record unsupported / not tested; exact 256-point sign control only |
++| 17 | 5,730 | Cohn–Li sign modification | Unsupported / not tested |
++| 18 | 8,358 | Repository bent hexagon; K. Li tie | Unsupported in engine / not tested; separate repository package exists |
++| 19 | 12,460 | K. Li odd-sign extension | Unsupported / not tested |
++| 20 | 19,448 | Cohn–Li sign modification | Unsupported / not tested |
++| 21 | 31,560 | K. Li odd-sign extension | Unsupported / not tested |
++| 22 | 49,896 | Leech laminated-lattice section | Unsupported / not tested |
++| 23 | 93,150 | Leech laminated-lattice section | Unsupported / not tested |
++| 24 | 196,560 | Leech lattice minimal shell | Unsupported / not tested |
++
++The root recipes are in [recipes](../recipes/). The 10D and 14D recipes are
++`ganzhinov10.json` and `ganzhinov14.json`. Both dedicated exact controls were
++rerun here; the [control summary](../benchmarks/coverage_controls_20261104.json)
++records their source fingerprints and facts. The 10D `discover10.json` result is
++an earlier **numerical** search recorded in
++[validation.json](../benchmarks/validation.json); it was not rerun in this audit.
++Its separate exact known-result control does not retroactively certify that
++numerical output or its discovery process.
++
++The [18D package](../../verifications/improved/dim18-bent-hexagon/) belongs to
++the separate repository record pipeline and has no adapter in this reviewed
++discovery snapshot. For 19D and 21D, the
++[pinned K. Li README](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/README.md)
++was read afresh on 2026-11-04; it describes the odd-sign extensions. The exact
++12,460 and 31,560 counts come from the cached
++[2026-10-24 source review](../../common/cohn_20261024.json), pinned to that same
++revision. This audit does not replay those external certificates. The earlier
++`Felpix-Studios/D19-D21-Kissing` README still lists 12,276 and 30,779, so it is
++not a source for the larger bounds.
++
++The 11D/12D/13D/15D/16D and 22D–24D attribution above follows the bibliographic
++references in Cohn–Li v3, not new implementations of those constructions. For
++10D and 14D, [Ganzhinov, sections 5.4–5.5](https://arxiv.org/html/2207.08266)
++(v1 dated 2022-07-17; journal publication 2025) supplies the construction source.
++Newer work in other children is outside this audit's pinned scope.
++
++## New root controls and their proof
++
++[root_controls.py](../benchmarks/root_controls.py) constructs integer recipes
++from formulas without reading record coordinates. A1 is the antipodal pair;
++A2 consists of the six signed differences of three coordinate vectors. D3–D5
++contain every vector with two nonzero entries, each independently ±1.
++
++The scaled E8 set consists of 112 vectors with two entries ±2 and 128 vectors
++with eight entries ±1 and even sign parity. All norms squared are 8. Distinct
++two-entry vectors have dot product at most 4; their dot product with a sign
++vector is at most 4; distinct even-parity sign vectors differ in at least two
++coordinates, giving dot product at most 4. Thus the kissing inequality holds.
++E7 and E6 are subsets cut by `x[6]+x[7]=0`, and additionally `x[5]+x[7]=0` for
++E6, so they inherit separation. The verifier recomputes their counts (126 and
++72) and exact ranks (7 and 6); it does not assume the section dimensions.
++
++Every recipe uses the existing `geometry.integer_code` operator. Its independent
++checker establishes distinctness, norm, every pairwise inequality and exact rank.
++The shared runner replays verification for exact terminal artifacts. This is a
++formula-generation benchmark through an importer interface, not a newly
++registered root operator or a search-discovered record. Flipping the parity of
++one E8 sign vector preserves its norm and point count but breaks separation;
++the new regression test requires rejection of that corruption.
++
++There is no native Leech construction or compressed Leech checker in this base.
++Explicitly importing 196,560 points would exceed the default 20,000-point cap
++and its **19,317,818,520 pairs** exceed the 10,000,000-pair cap. A theta-series
++count from `common/theta.py` is not proof that the engine constructed and
++certified the Leech shell. Adding a suitable compressed verifier belongs to the
++core-operator work, not this benchmark-only change.
++
++## Reproduction and measured results
++
++From the repository root, using the existing Python environment:
++
++```sh
++OPENBLAS_NUM_THREADS=1 python -m discovery.benchmarks.root_controls --outdir /tmp/fresh-root-controls
++OPENBLAS_NUM_THREADS=1 python -m discovery run discovery/recipes/roots_e8.json --out /tmp/fresh-e8.json
++python -m discovery verify /tmp/fresh-e8.json
++OPENBLAS_NUM_THREADS=1 python -m discovery.benchmarks.run_controls --controls ganzhinov10 ganzhinov14 --outdir /tmp/fresh-known-controls
++OPENBLAS_NUM_THREADS=1 python -m discovery run discovery/recipes/octacode.json --out /tmp/fresh-octacode.json
++OPENBLAS_NUM_THREADS=1 python -m unittest discover -s discovery/tests -t . -v
++```
++
++Use fresh output names; the CLIs refuse to overwrite receipts. The root command
++emits both executable recipes and full replayable receipts, plus a summary with
++source hashes and budgets. The static root recipes committed here are identical
++to those generated in this audit. The
++[root summary](../benchmarks/root_controls_20261104.json) records all eight exact
++controls. E8 took about 0.09 seconds, the 10D control 0.90 seconds and 14D 1.54
++seconds on this executor; these are observations, not performance guarantees.
++
++The complete discovery suite passed: **68 tests in 27.007 seconds**, including
++the new exact-root, parity-corruption and budget tests. The existing 16D
++octacode sign recipe was also rerun and independently verified at 256 points;
++it is not the 4,320-point Barnes–Wall construction. Existing SymPy modular-factor
++sorting emits a deprecation warning but the checks pass.
++
++Freshness of the full Cohn page remains unresolved. No action was denied or
++pending, and no software was installed, remote writes made, Actions changed,
++PRs opened or branches pushed.
+diff --git a/discovery/recipes/roots_a1.json b/discovery/recipes/roots_a1.json
+new file mode 100644
+index 0000000..4e1422a
+--- /dev/null
++++ b/discovery/recipes/roots_a1.json
+@@ -0,0 +1,31 @@
++{
++  "schema_version": 1,
++  "name": "roots_a1",
++  "description": "Known root-system control generated from formulas; no new SOTA claim.",
++  "provenance": {
++    "method": "formula-generated benchmark coordinates; no search or coordinate import",
++    "generator": "discovery/benchmarks/root_controls.py",
++    "construction_reference": "https://arxiv.org/html/2411.04916v3#S1",
++    "root_system": "A1"
++  },
++  "nodes": [
++    {
++      "id": "roots",
++      "op": "geometry.integer_code",
++      "params": {
++        "coordinates": [
++          [
++            -1
++          ],
++          [
++            1
++          ]
++        ],
++        "norm_squared": 1
++      }
++    }
++  ],
++  "outputs": [
++    "roots"
++  ]
++}
+diff --git a/discovery/recipes/roots_a2.json b/discovery/recipes/roots_a2.json
+new file mode 100644
+index 0000000..74fee4c
+--- /dev/null
++++ b/discovery/recipes/roots_a2.json
+@@ -0,0 +1,55 @@
++{
++  "schema_version": 1,
++  "name": "roots_a2",
++  "description": "Known root-system control generated from formulas; no new SOTA claim.",
++  "provenance": {
++    "method": "formula-generated benchmark coordinates; no search or coordinate import",
++    "generator": "discovery/benchmarks/root_controls.py",
++    "construction_reference": "https://arxiv.org/html/2411.04916v3#S1",
++    "root_system": "A2"
++  },
++  "nodes": [
++    {
++      "id": "roots",
++      "op": "geometry.integer_code",
++      "params": {
++        "coordinates": [
++          [
++            -1,
++            0,
++            1
++          ],
++          [
++            -1,
++            1,
++            0
++          ],
++          [
++            0,
++            -1,
++            1
++          ],
++          [
++            0,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            0
++          ],
++          [
++            1,
++            0,
++            -1
++          ]
++        ],
++        "norm_squared": 2
++      }
++    }
++  ],
++  "outputs": [
++    "roots"
++  ]
++}
+diff --git a/discovery/recipes/roots_d3.json b/discovery/recipes/roots_d3.json
+new file mode 100644
+index 0000000..5459071
+--- /dev/null
++++ b/discovery/recipes/roots_d3.json
+@@ -0,0 +1,85 @@
++{
++  "schema_version": 1,
++  "name": "roots_d3",
++  "description": "Known root-system control generated from formulas; no new SOTA claim.",
++  "provenance": {
++    "method": "formula-generated benchmark coordinates; no search or coordinate import",
++    "generator": "discovery/benchmarks/root_controls.py",
++    "construction_reference": "https://arxiv.org/html/2411.04916v3#S1",
++    "root_system": "D3"
++  },
++  "nodes": [
++    {
++      "id": "roots",
++      "op": "geometry.integer_code",
++      "params": {
++        "coordinates": [
++          [
++            -1,
++            -1,
++            0
++          ],
++          [
++            -1,
++            0,
++            -1
++          ],
++          [
++            -1,
++            0,
++            1
++          ],
++          [
++            -1,
++            1,
++            0
++          ],
++          [
++            0,
++            -1,
++            -1
++          ],
++          [
++            0,
++            -1,
++            1
++          ],
++          [
++            0,
++            1,
++            -1
++          ],
++          [
++            0,
++            1,
++            1
++          ],
++          [
++            1,
++            -1,
++            0
++          ],
++          [
++            1,
++            0,
++            -1
++          ],
++          [
++            1,
++            0,
++            1
++          ],
++          [
++            1,
++            1,
++            0
++          ]
++        ],
++        "norm_squared": 2
++      }
++    }
++  ],
++  "outputs": [
++    "roots"
++  ]
++}
+diff --git a/discovery/recipes/roots_d4.json b/discovery/recipes/roots_d4.json
+new file mode 100644
+index 0000000..5644e34
+--- /dev/null
++++ b/discovery/recipes/roots_d4.json
+@@ -0,0 +1,169 @@
++{
++  "schema_version": 1,
++  "name": "roots_d4",
++  "description": "Known root-system control generated from formulas; no new SOTA claim.",
++  "provenance": {
++    "method": "formula-generated benchmark coordinates; no search or coordinate import",
++    "generator": "discovery/benchmarks/root_controls.py",
++    "construction_reference": "https://arxiv.org/html/2411.04916v3#S1",
++    "root_system": "D4"
++  },
++  "nodes": [
++    {
++      "id": "roots",
++      "op": "geometry.integer_code",
++      "params": {
++        "coordinates": [
++          [
++            -1,
++            -1,
++            0,
++            0
++          ],
++          [
++            -1,
++            0,
++            -1,
++            0
++          ],
++          [
++            -1,
++            0,
++            0,
++            -1
++          ],
++          [
++            -1,
++            0,
++            0,
++            1
++          ],
++          [
++            -1,
++            0,
++            1,
++            0
++          ],
++          [
++            -1,
++            1,
++            0,
++            0
++          ],
++          [
++            0,
++            -1,
++            -1,
++            0
++          ],
++          [
++            0,
++            -1,
++            0,
++            -1
++          ],
++          [
++            0,
++            -1,
++            0,
++            1
++          ],
++          [
++            0,
++            -1,
++            1,
++            0
++          ],
++          [
++            0,
++            0,
++            -1,
++            -1
++          ],
++          [
++            0,
++            0,
++            -1,
++            1
++          ],
++          [
++            0,
++            0,
++            1,
++            -1
++          ],
++          [
++            0,
++            0,
++            1,
++            1
++          ],
++          [
++            0,
++            1,
++            -1,
++            0
++          ],
++          [
++            0,
++            1,
++            0,
++            -1
++          ],
++          [
++            0,
++            1,
++            0,
++            1
++          ],
++          [
++            0,
++            1,
++            1,
++            0
++          ],
++          [
++            1,
++            -1,
++            0,
++            0
++          ],
++          [
++            1,
++            0,
++            -1,
++            0
++          ],
++          [
++            1,
++            0,
++            0,
++            -1
++          ],
++          [
++            1,
++            0,
++            0,
++            1
++          ],
++          [
++            1,
++            0,
++            1,
++            0
++          ],
++          [
++            1,
++            1,
++            0,
++            0
++          ]
++        ],
++        "norm_squared": 2
++      }
++    }
++  ],
++  "outputs": [
++    "roots"
++  ]
++}
+diff --git a/discovery/recipes/roots_d5.json b/discovery/recipes/roots_d5.json
+new file mode 100644
+index 0000000..ec09f5f
+--- /dev/null
++++ b/discovery/recipes/roots_d5.json
+@@ -0,0 +1,305 @@
++{
++  "schema_version": 1,
++  "name": "roots_d5",
++  "description": "Known root-system control generated from formulas; no new SOTA claim.",
++  "provenance": {
++    "method": "formula-generated benchmark coordinates; no search or coordinate import",
++    "generator": "discovery/benchmarks/root_controls.py",
++    "construction_reference": "https://arxiv.org/html/2411.04916v3#S1",
++    "root_system": "D5"
++  },
++  "nodes": [
++    {
++      "id": "roots",
++      "op": "geometry.integer_code",
++      "params": {
++        "coordinates": [
++          [
++            -1,
++            -1,
++            0,
++            0,
++            0
++          ],
++          [
++            -1,
++            0,
++            -1,
++            0,
++            0
++          ],
++          [
++            -1,
++            0,
++            0,
++            -1,
++            0
++          ],
++          [
++            -1,
++            0,
++            0,
++            0,
++            -1
++          ],
++          [
++            -1,
++            0,
++            0,
++            0,
++            1
++          ],
++          [
++            -1,
++            0,
++            0,
++            1,
++            0
++          ],
++          [
++            -1,
++            0,
++            1,
++            0,
++            0
++          ],
++          [
++            -1,
++            1,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -1,
++            -1,
++            0,
++            0
++          ],
++          [
++            0,
++            -1,
++            0,
++            -1,
++            0
++          ],
++          [
++            0,
++            -1,
++            0,
++            0,
++            -1
++          ],
++          [
++            0,
++            -1,
++            0,
++            0,
++            1
++          ],
++          [
++            0,
++            -1,
++            0,
++            1,
++            0
++          ],
++          [
++            0,
++            -1,
++            1,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -1,
++            -1,
++            0
++          ],
++          [
++            0,
++            0,
++            -1,
++            0,
++            -1
++          ],
++          [
++            0,
++            0,
++            -1,
++            0,
++            1
++          ],
++          [
++            0,
++            0,
++            -1,
++            1,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            -1,
++            -1
++          ],
++          [
++            0,
++            0,
++            0,
++            -1,
++            1
++          ],
++          [
++            0,
++            0,
++            0,
++            1,
++            -1
++          ],
++          [
++            0,
++            0,
++            0,
++            1,
++            1
++          ],
++          [
++            0,
++            0,
++            1,
++            -1,
++            0
++          ],
++          [
++            0,
++            0,
++            1,
++            0,
++            -1
++          ],
++          [
++            0,
++            0,
++            1,
++            0,
++            1
++          ],
++          [
++            0,
++            0,
++            1,
++            1,
++            0
++          ],
++          [
++            0,
++            1,
++            -1,
++            0,
++            0
++          ],
++          [
++            0,
++            1,
++            0,
++            -1,
++            0
++          ],
++          [
++            0,
++            1,
++            0,
++            0,
++            -1
++          ],
++          [
++            0,
++            1,
++            0,
++            0,
++            1
++          ],
++          [
++            0,
++            1,
++            0,
++            1,
++            0
++          ],
++          [
++            0,
++            1,
++            1,
++            0,
++            0
++          ],
++          [
++            1,
++            -1,
++            0,
++            0,
++            0
++          ],
++          [
++            1,
++            0,
++            -1,
++            0,
++            0
++          ],
++          [
++            1,
++            0,
++            0,
++            -1,
++            0
++          ],
++          [
++            1,
++            0,
++            0,
++            0,
++            -1
++          ],
++          [
++            1,
++            0,
++            0,
++            0,
++            1
++          ],
++          [
++            1,
++            0,
++            0,
++            1,
++            0
++          ],
++          [
++            1,
++            0,
++            1,
++            0,
++            0
++          ],
++          [
++            1,
++            1,
++            0,
++            0,
++            0
++          ]
++        ],
++        "norm_squared": 2
++      }
++    }
++  ],
++  "outputs": [
++    "roots"
++  ]
++}
+diff --git a/discovery/recipes/roots_e6.json b/discovery/recipes/roots_e6.json
+new file mode 100644
+index 0000000..5525ea1
+--- /dev/null
++++ b/discovery/recipes/roots_e6.json
+@@ -0,0 +1,745 @@
++{
++  "schema_version": 1,
++  "name": "roots_e6",
++  "description": "Known root-system control generated from formulas; no new SOTA claim.",
++  "provenance": {
++    "method": "formula-generated benchmark coordinates; no search or coordinate import",
++    "generator": "discovery/benchmarks/root_controls.py",
++    "construction_reference": "https://arxiv.org/html/2411.04916v3#S1",
++    "root_system": "E6"
++  },
++  "nodes": [
++    {
++      "id": "roots",
++      "op": "geometry.integer_code",
++      "params": {
++        "coordinates": [
++          [
++            -2,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            0,
++            -2,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            -2,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            -2,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            2,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            2,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            2,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0
++          ]
++        ],
++        "norm_squared": 8
++      }
++    }
++  ],
++  "outputs": [
++    "roots"
++  ]
++}
+diff --git a/discovery/recipes/roots_e7.json b/discovery/recipes/roots_e7.json
+new file mode 100644
+index 0000000..b756a51
+--- /dev/null
++++ b/discovery/recipes/roots_e7.json
+@@ -0,0 +1,1285 @@
++{
++  "schema_version": 1,
++  "name": "roots_e7",
++  "description": "Known root-system control generated from formulas; no new SOTA claim.",
++  "provenance": {
++    "method": "formula-generated benchmark coordinates; no search or coordinate import",
++    "generator": "discovery/benchmarks/root_controls.py",
++    "construction_reference": "https://arxiv.org/html/2411.04916v3#S1",
++    "root_system": "E7"
++  },
++  "nodes": [
++    {
++      "id": "roots",
++      "op": "geometry.integer_code",
++      "params": {
++        "coordinates": [
++          [
++            -2,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            0,
++            -2,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            0,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            0,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            -2,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            -2,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            -2,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            -2,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            -2,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            -2,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            2
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            0,
++            0,
++            2,
++            -2
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            2,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            2,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            2,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            2,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            2,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            2,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            0,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            0,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            1,
++            1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            2,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0
++          ]
++        ],
++        "norm_squared": 8
++      }
++    }
++  ],
++  "outputs": [
++    "roots"
++  ]
++}
+diff --git a/discovery/recipes/roots_e8.json b/discovery/recipes/roots_e8.json
+new file mode 100644
+index 0000000..eee61cf
+--- /dev/null
++++ b/discovery/recipes/roots_e8.json
+@@ -0,0 +1,2425 @@
++{
++  "schema_version": 1,
++  "name": "roots_e8",
++  "description": "Known root-system control generated from formulas; no new SOTA claim.",
++  "provenance": {
++    "method": "formula-generated benchmark coordinates; no search or coordinate import",
++    "generator": "discovery/benchmarks/root_controls.py",
++    "construction_reference": "https://arxiv.org/html/2411.04916v3#S1",
++    "root_system": "E8"
++  },
++  "nodes": [
++    {
++      "id": "roots",
++      "op": "geometry.integer_code",
++      "params": {
++        "coordinates": [
++          [
++            -2,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0,
++            -2
++          ],
++          [
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0,
++            2
++          ],
++          [
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            2,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -2,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            -1,
++            1,
++            1,
++            1,
++            1,
++            -1,
++            1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            -1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            0,
++            -2,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            -2
++          ],
++          [
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            2
++          ],
++          [
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            2,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            -2,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            0,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            -2,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            -2
++          ],
++          [
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            2
++          ],
++          [
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            2,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            0,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            -2,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            -2,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            -2,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            -2,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            -2
++          ],
++          [
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            2
++          ],
++          [
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            2,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            -2,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            -2,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            -2,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            -2,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            -2
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            2
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            2,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            -2,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            -2,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            -2
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            2
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            2,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            -2
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            2
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            0,
++            0,
++            2,
++            -2
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            0,
++            0,
++            2,
++            2
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            0,
++            2,
++            -2,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            0,
++            2,
++            0,
++            -2
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            0,
++            2,
++            0,
++            2
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            0,
++            2,
++            2,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            2,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            2,
++            0,
++            -2,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0,
++            -2
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0,
++            2
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            2,
++            0,
++            2,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            0,
++            2,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            2,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            2,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            2,
++            0,
++            0,
++            -2,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0,
++            -2
++          ],
++          [
++            0,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0,
++            2
++          ],
++          [
++            0,
++            0,
++            0,
++            2,
++            0,
++            0,
++            2,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            2,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            0,
++            2,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            0,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            0,
++            0,
++            0,
++            -2,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0,
++            -2
++          ],
++          [
++            0,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0,
++            2
++          ],
++          [
++            0,
++            0,
++            2,
++            0,
++            0,
++            0,
++            2,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            0,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            0,
++            2,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            -2
++          ],
++          [
++            0,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            2
++          ],
++          [
++            0,
++            2,
++            0,
++            0,
++            0,
++            0,
++            2,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            0,
++            2,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1,
++            1
++          ],
++          [
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            1,
++            1
++          ],
++          [
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            1,
++            1
++          ],
++          [
++            1,
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            1,
++            1
++          ],
++          [
++            1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            1,
++            1
++          ],
++          [
++            1,
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            1,
++            1
++          ],
++          [
++            1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            1,
++            1
++          ],
++          [
++            1,
++            1,
++            1,
++            1,
++            -1,
++            1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            1,
++            1,
++            -1,
++            1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            1,
++            1,
++            -1,
++            -1,
++            1
++          ],
++          [
++            1,
++            1,
++            1,
++            1,
++            1,
++            -1,
++            1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            -1,
++            -1
++          ],
++          [
++            1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            1,
++            1
++          ],
++          [
++            2,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            -2,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0,
++            -2
++          ],
++          [
++            2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0,
++            2
++          ],
++          [
++            2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            2,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            0,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0
++          ],
++          [
++            2,
++            2,
++            0,
++            0,
++            0,
++            0,
++            0,
++            0
++          ]
++        ],
++        "norm_squared": 8
++      }
++    }
++  ],
++  "outputs": [
++    "roots"
++  ]
++}
+diff --git a/discovery/tests/test_root_controls.py b/discovery/tests/test_root_controls.py
+new file mode 100644
+index 0000000..b99b102
+--- /dev/null
++++ b/discovery/tests/test_root_controls.py
+@@ -0,0 +1,39 @@
++from copy import deepcopy
++from pathlib import Path
++import unittest
++
++from discovery.benchmarks.root_controls import root_recipe
++from discovery.certification import verify_integer_spherical
++from discovery.core import RunContext
++from discovery.runner import output_artifact, run_program
++
++
++class RootControlTests(unittest.TestCase):
++    def test_all_low_dimension_controls_through_runner(self):
++        # Independently known ranks, cardinalities and inner products. These
++        # expectations are not read from the generator's benchmark constants.
++        expected = [(1, 2, -1), (2, 6, 1), (3, 12, 1), (4, 24, 1),
++                    (5, 40, 1), (6, 72, 4), (7, 126, 4), (8, 240, 4)]
++        for dimension, count, maximum in expected:
++            with self.subTest(dimension=dimension):
++                artifact = output_artifact(run_program(root_recipe(dimension), RunContext(Path('.'))))
++                self.assertEqual(artifact.verification.status, 'exact')
++                self.assertEqual(artifact.facts['dimension'], dimension)
++                self.assertEqual(artifact.facts['cardinality'], count)
++                self.assertEqual(artifact.facts['max_inner_product'], maximum)
++                self.assertEqual(artifact.facts['pairs_checked'], count * (count - 1) // 2)
++
++    def test_wrong_e8_sign_parity_fails_exact_separation(self):
++        data = deepcopy(root_recipe(8)['nodes'][0]['params'])
++        row = next(x for x in data['coordinates'] if all(abs(c) == 1 for c in x))
++        row[0] *= -1  # Norm and row count survive; the kissing inequality fails.
++        with self.assertRaisesRegex(ValueError, 'Pairwise kissing inequality violated'):
++            verify_integer_spherical(data)
++
++    def test_e8_respects_pair_budget(self):
++        with self.assertRaisesRegex(ValueError, 'max_pairs budget exceeded'):
++            run_program(root_recipe(8), RunContext(Path('.'), {'max_pairs': 28679}))
++
++
++if __name__ == '__main__':
++    unittest.main()
+-- 
+2.52.0
+

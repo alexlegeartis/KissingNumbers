@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "name": "section_e8_chain",
+  "description": "Generic exact weighted hyperplane sections of freshly generated E8:126points in exactspan7 and72points in exactspan6;8ambient coordinates retained.",
+  "nodes": [
+    {
+      "id": "e8",
+      "op": "lattice.root_system",
+      "params": {
+        "family": "E",
+        "rank": 8
+      }
+    },
+    {
+      "id": "e7",
+      "op": "geometry.section",
+      "inputs": [
+        "e8"
+      ],
+      "params": {
+        "normal": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "e6",
+      "op": "geometry.section",
+      "inputs": [
+        "e7"
+      ],
+      "params": {
+        "normal": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "outputs": [
+    "e7",
+    "e6"
+  ]
+}

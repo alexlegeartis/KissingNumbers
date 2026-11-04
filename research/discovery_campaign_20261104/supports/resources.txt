@@ -1,0 +1,6 @@
+{
+  "seconds": 8.473002594999798,
+  "returncode": 0,
+  "peak_child_kib": 9344,
+  "stderr": ""
+}

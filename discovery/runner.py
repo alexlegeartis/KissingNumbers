@@ -9,7 +9,20 @@ import time
 from .core import Artifact,RunContext,digest,json_value
 from .certification import verify_artifact
 
-MODULES=('groups','rings','geometry','cosets','layers')
+MODULES=('groups','rings','geometry','cosets','layers','lattices','gluing','stabilizers','selection','signed_layers','coset_search','construction_search')
+
+
+def input_kinds_match(inputs,expected):
+    """Legacy exact kind strings or explicit finite alternatives per position."""
+    if len(inputs)!=len(expected):return False
+    for artifact,allowed in zip(inputs,expected):
+        if isinstance(allowed,str):
+            if artifact.kind!=allowed:return False
+        elif isinstance(allowed,(tuple,list)) and allowed and all(isinstance(kind,str) for kind in allowed):
+            if artifact.kind not in allowed:return False
+        else:
+            raise ValueError('Invalid registered input-kind contract')
+    return True
 
 
 def registry():
@@ -72,7 +85,7 @@ def run_program(program,context,on_progress=None):
     for node in nodes:
         inputs=[artifacts[x] for x in node.get('inputs',[])]
         expected=kinds[node['op']]
-        if tuple(a.kind for a in inputs)!=tuple(expected):
+        if not input_kinds_match(inputs,expected):
             raise ValueError(f'{node["op"]} needs {expected}, got {tuple(a.kind for a in inputs)}')
         if on_progress:on_progress({'node':node['id'],'op':node['op'],'state':'started'})
         start=time.monotonic()

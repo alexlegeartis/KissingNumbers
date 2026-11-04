@@ -1,0 +1,2901 @@
+{
+  "schema_version": 2,
+  "audit_date": "2026-11-04",
+  "built_at_utc": "2026-11-04T14:58:14.942402+00:00",
+  "canonical_matrix": "research/discovery_campaign_20261104/coverage_1_24/matrix.json",
+  "canonical_matrix_sha256": "9fe9a5b8bd6d240b15644eda942cf002e6d181155af47a6c99ce3e040642b67a",
+  "incoming_patch": {
+    "patch": "research/discovery_campaign_20261104/coverage_1_24/integration/coverage-benchmarks-20261104.patch",
+    "sha256": "7ac4796cc14c476424e3a09888e499c077844828c9921b7508c8e81e384bd741",
+    "source_commit": "0a6152a9ea6caf8b7865e2f41c2097a838566e2a",
+    "source_author": "Alex Kravatsky <alexlegeartis@gmail.com>",
+    "source_date": "Wed, 4 Nov 2026 13:13:56 +0000",
+    "reviewed_base_commit": "e25c2924f377a1061b6c60429c950d34df7515e9",
+    "catalogue_sha256_before_integration": "c208c228aaf68039ea807ddbcc9bc717d0c3981827288510d1409824fbdf253d",
+    "application": "14 additive files; original patch retained byte-for-byte. Active coverage views reconciled to current recipes and successful Cohn retrieval; no commit or push.",
+    "catalogue_sha256_after_integration": "c208c228aaf68039ea807ddbcc9bc717d0c3981827288510d1409824fbdf253d",
+    "validation": {
+      "full_discovery_tests": 130,
+      "full_discovery_seconds": 33.325,
+      "matrix_tests": 9,
+      "independent_review": "PASS: root controls, matrix, views; no further coverage defect",
+      "exact_target_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        13,
+        14,
+        16
+      ],
+      "gaps": [
+        9,
+        11,
+        12,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "inventory_refresh": "Includes registered research/coupled13/program_H2.json through explicit research allow-list; excludes planner configurations and UNVERIFIED96D forecast. Discovery core and operators unchanged."
+    }
+  },
+  "scope": "Current source-backed construction reproduction, not new records or worldwide novelty. Exactly 24 dimensions.",
+  "status_semantics": {
+    "imported": "At least one exact target route has literal coordinate/Gram source ancestry.",
+    "formula_generated": "An exact target route constructs formulas at runtime, or a fixture has verified equality with the root formula generator.",
+    "search_discovered": "Historical autonomy is not certified by this coverage audit; separate held-out benchmarks record search results.",
+    "search_execution": "A target route executes a registered candidate search rather than only a fixed formula.",
+    "exact_verified": "At least one current target recipe passed independent exact replay.",
+    "unsupported": "No integrated exact target recipe in the audited inventory; generic operators and separate prototypes may exist.",
+    "not_tested": "No integrated target proof replay; this is not a failed search."
+  },
+  "sources": {
+    "cohn_successful_20261104": {
+      "url": "https://cohn.mit.edu/kissing-numbers/",
+      "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+      "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+      "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+      "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+      "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+      "references": [],
+      "reference_labels": ""
+    }
+  },
+  "rows": [
+    {
+      "dimension": 1,
+      "cohn_lower_bound": 2,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [],
+        "reference_labels": ""
+      },
+      "target_kind": "proved exact kissing number",
+      "coverage_status": "exact_target_recipe",
+      "target_status": {
+        "imported": true,
+        "formula_generated": true,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": true,
+        "unsupported": false,
+        "not_tested": false
+      },
+      "recipe": [
+        "discovery/recipes/roots01.json",
+        "discovery/recipes/roots_a1.json"
+      ],
+      "verification_evidence": [
+        {
+          "recipe": "discovery/recipes/roots01.json",
+          "recipe_sha256": "fb5d33751a4e209f9728d046af36d23bb6252c9af87fa25a27282b7b3292336b",
+          "output_id": "roots",
+          "operators": [
+            "lattice.root_system"
+          ],
+          "dimension": 1,
+          "ambient_dimension": 1,
+          "cardinality": 2,
+          "origin": "generated",
+          "provenance": "generated known construction control; no autonomous discovery claim",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots01.json",
+          "receipt_sha256": "c5001ab5c78b2cd576292999dc61f463d3e19909382394832f243955c41241ce",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 2,
+            "pairs_checked": 1
+          },
+          "run_seconds": 0.001839,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        },
+        {
+          "recipe": "discovery/recipes/roots_a1.json",
+          "recipe_sha256": "3f74d00eddc4b9f389671bad960e8818a8a6b51f91ab843b1e7b1efc16c76031",
+          "output_id": "roots",
+          "operators": [
+            "geometry.integer_code"
+          ],
+          "dimension": 1,
+          "ambient_dimension": 1,
+          "cardinality": 2,
+          "origin": "imported",
+          "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_a1.json",
+          "receipt_sha256": "49c6d1c13cbe67bff79295ccdc54bdd248460232bd30a024ff0cd98acb0800ed",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 2,
+            "pairs_checked": 1
+          },
+          "run_seconds": 0.002221,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
+      "formula_regeneration_verified_fixtures": [
+        "discovery/recipes/roots_a1.json"
+      ],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [],
+      "remaining_gap": null,
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 1,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 2,
+      "cohn_lower_bound": 6,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [],
+        "reference_labels": ""
+      },
+      "target_kind": "proved exact kissing number",
+      "coverage_status": "exact_target_recipe",
+      "target_status": {
+        "imported": true,
+        "formula_generated": true,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": true,
+        "unsupported": false,
+        "not_tested": false
+      },
+      "recipe": [
+        "discovery/recipes/roots02.json",
+        "discovery/recipes/roots_a2.json"
+      ],
+      "verification_evidence": [
+        {
+          "recipe": "discovery/recipes/roots02.json",
+          "recipe_sha256": "336cdd7ec6e77b7ec1244c8c28556328ee13aaf57ba7b1deb47481864930aff1",
+          "output_id": "roots",
+          "operators": [
+            "lattice.root_system"
+          ],
+          "dimension": 2,
+          "ambient_dimension": 2,
+          "cardinality": 6,
+          "origin": "generated",
+          "provenance": "generated known construction control; no autonomous discovery claim",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots02.json",
+          "receipt_sha256": "346f0c6d9e70d3e556a3b9c6bf68c5a5fc27856b752f1c92699f6e049f6e80d0",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 32,
+            "pairs_checked": 15
+          },
+          "run_seconds": 0.002268,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        },
+        {
+          "recipe": "discovery/recipes/roots_a2.json",
+          "recipe_sha256": "a9b9d76973235f3baef81dfb26f878f7ad245fde6de33a23a5cc36213a875120",
+          "output_id": "roots",
+          "operators": [
+            "geometry.integer_code"
+          ],
+          "dimension": 2,
+          "ambient_dimension": 3,
+          "cardinality": 6,
+          "origin": "imported",
+          "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_a2.json",
+          "receipt_sha256": "8a6e86ef481d950815518b5d405e738eb091ba3ccfc9bd238b9a785fdbb3ce7b",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 36,
+            "pairs_checked": 15
+          },
+          "run_seconds": 0.001924,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
+      "formula_regeneration_verified_fixtures": [
+        "discovery/recipes/roots_a2.json"
+      ],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [],
+      "remaining_gap": null,
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 15,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 3,
+      "cohn_lower_bound": 12,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "K. Schütte and B. L. van der Waerden, Das Problem der dreizehn Kugeln, Math. Ann. 125 (1953), 325–334.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#20"
+          }
+        ],
+        "reference_labels": "[ 20 ]"
+      },
+      "target_kind": "proved exact kissing number",
+      "coverage_status": "exact_target_recipe",
+      "target_status": {
+        "imported": true,
+        "formula_generated": true,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": true,
+        "unsupported": false,
+        "not_tested": false
+      },
+      "recipe": [
+        "discovery/recipes/roots03.json",
+        "discovery/recipes/roots_d3.json"
+      ],
+      "verification_evidence": [
+        {
+          "recipe": "discovery/recipes/roots03.json",
+          "recipe_sha256": "6369ec45f2ae25abee26398b5165b9eaaa809963276dee1b81c76ed355525fca",
+          "output_id": "roots",
+          "operators": [
+            "lattice.root_system"
+          ],
+          "dimension": 3,
+          "ambient_dimension": 3,
+          "cardinality": 12,
+          "origin": "generated",
+          "provenance": "generated known construction control; no autonomous discovery claim",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots03.json",
+          "receipt_sha256": "517a082bcf182f07d41410fec51c3481d3d1ca9ad52ad5ad5e79efbebbddda32",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 138,
+            "pairs_checked": 66
+          },
+          "run_seconds": 0.002116,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        },
+        {
+          "recipe": "discovery/recipes/roots_d3.json",
+          "recipe_sha256": "5f9215da1bae7442f174cddc2b9e4ff41e43de3a284639c019c53f8f43ac20ec",
+          "output_id": "roots",
+          "operators": [
+            "geometry.integer_code"
+          ],
+          "dimension": 3,
+          "ambient_dimension": 3,
+          "cardinality": 12,
+          "origin": "imported",
+          "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_d3.json",
+          "receipt_sha256": "73ea451dddf51720be77159ecdc75f21b8b2c38bb7ded7fc18c70dc308b287f2",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 126,
+            "pairs_checked": 66
+          },
+          "run_seconds": 0.002286,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
+      "formula_regeneration_verified_fixtures": [
+        "discovery/recipes/roots_d3.json"
+      ],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [],
+      "remaining_gap": null,
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 66,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 4,
+      "cohn_lower_bound": 24,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "L. Schläfli, Theorie der vielfachen Kontinuität [1852], J. H. Graf (ed.), Denkschriften der Schweizerischen naturforschenden Gesellschaft, vol. 38, Zürcher & Furrer, Zürich, 1901.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#19"
+          },
+          {
+            "citation": "O. R. Musin, The kissing number in four dimensions, Ann. of Math. (2) 168 (2008), 1–32.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#17"
+          }
+        ],
+        "reference_labels": "[ 19 , 17 ]"
+      },
+      "target_kind": "proved exact kissing number",
+      "coverage_status": "exact_target_recipe",
+      "target_status": {
+        "imported": true,
+        "formula_generated": true,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": true,
+        "unsupported": false,
+        "not_tested": false
+      },
+      "recipe": [
+        "discovery/recipes/roots04.json",
+        "discovery/recipes/roots_d4.json"
+      ],
+      "verification_evidence": [
+        {
+          "recipe": "discovery/recipes/orthogonal_union.json",
+          "recipe_sha256": "fb3d097df4cb5ccf121e7c2d8cafc017cc11d37e3e38e1959f8f77bf94e48641",
+          "output_id": "union",
+          "operators": [
+            "geometry.integer_code",
+            "geometry.orthogonal_union"
+          ],
+          "dimension": 4,
+          "ambient_dimension": 4,
+          "cardinality": 8,
+          "origin": "imported",
+          "provenance": "supplied exact coordinate/Gram source in reachable ancestry; geometric composition does not change its import provenance",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/orthogonal_union.json",
+          "receipt_sha256": "6c58a1fd571ac91b4663e081052008d7ef26c490d612135ead1e89615b1fda28",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 32,
+            "pairs_checked": 28
+          },
+          "run_seconds": 0.002532,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        },
+        {
+          "recipe": "discovery/recipes/roots04.json",
+          "recipe_sha256": "e22f8d1c52aeac987a99e9b56a52217bcafd3dd89be4c68dc3f4eb6bbc2d402a",
+          "output_id": "roots",
+          "operators": [
+            "lattice.root_system"
+          ],
+          "dimension": 4,
+          "ambient_dimension": 4,
+          "cardinality": 24,
+          "origin": "generated",
+          "provenance": "generated known construction control; no autonomous discovery claim",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots04.json",
+          "receipt_sha256": "c12835ced63f5d2c9de7e1f548cd650d43e54f8a1140d3212f63e97399442d94",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 400,
+            "pairs_checked": 276
+          },
+          "run_seconds": 0.002713,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        },
+        {
+          "recipe": "discovery/recipes/roots_d4.json",
+          "recipe_sha256": "66eeb7f794c9c2e294209586552bb979e277789339db5ef2be428bb4866a6476",
+          "output_id": "roots",
+          "operators": [
+            "geometry.integer_code"
+          ],
+          "dimension": 4,
+          "ambient_dimension": 4,
+          "cardinality": 24,
+          "origin": "imported",
+          "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_d4.json",
+          "receipt_sha256": "e869f9cc66296e0cc10bfc4f5b0e06879ae111d03cd48aca434c491b826880a6",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 448,
+            "pairs_checked": 276
+          },
+          "run_seconds": 0.003237,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
+      "formula_regeneration_verified_fixtures": [
+        "discovery/recipes/roots_d4.json"
+      ],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [],
+      "remaining_gap": null,
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 276,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 5,
+      "cohn_lower_bound": 40,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "A. Korkine and G. Zolotareff, Sur les formes quadratiques, Math. Ann. 6 (1873), 366–389.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#7"
+          },
+          {
+            "citation": "T. S. Tomar, The kissing number in dimension five is at most 43, preprint, 2026.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#22"
+          }
+        ],
+        "reference_labels": "[ 7 , 22 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "exact_target_recipe",
+      "target_status": {
+        "imported": true,
+        "formula_generated": true,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": true,
+        "unsupported": false,
+        "not_tested": false
+      },
+      "recipe": [
+        "discovery/recipes/gram5_control.json",
+        "discovery/recipes/roots05.json",
+        "discovery/recipes/roots_d5.json"
+      ],
+      "verification_evidence": [
+        {
+          "recipe": "discovery/recipes/gram5_control.json",
+          "recipe_sha256": "fc1bbe05c3f0cd042e891399d23bfc67d80354df12b5e9c0a5062c9ada446371",
+          "output_id": "code",
+          "operators": [
+            "geometry.gram_code"
+          ],
+          "dimension": 5,
+          "ambient_dimension": 5,
+          "cardinality": 40,
+          "origin": "imported",
+          "provenance": "exact supplied Gram certificate; source numerical discovery history does not establish autonomous program synthesis",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/gram5_control.json",
+          "receipt_sha256": "e9c02e5888fc87070c556e2806670822c635aaf4b3ea2ac14edccb73968f3def",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "exact rational symmetric Gram, Schur PSD/rank, common norm and all pair inequalities",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "gram_spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 10560,
+            "pairs_checked": 780
+          },
+          "run_seconds": 0.051475,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        },
+        {
+          "recipe": "discovery/recipes/roots05.json",
+          "recipe_sha256": "9ab40e870a4cf88879c2908672294ff26e0307c96286ac1b05ee929200002eec",
+          "output_id": "roots",
+          "operators": [
+            "lattice.root_system"
+          ],
+          "dimension": 5,
+          "ambient_dimension": 5,
+          "cardinality": 40,
+          "origin": "generated",
+          "provenance": "generated known construction control; no autonomous discovery claim",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots05.json",
+          "receipt_sha256": "77dfd8bbdd76948a945e81f84da3f538362d80d3c8cf600642a6937a256957fb",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 850,
+            "pairs_checked": 780
+          },
+          "run_seconds": 0.003332,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        },
+        {
+          "recipe": "discovery/recipes/roots_d5.json",
+          "recipe_sha256": "2107d14b8838da95b6a90f8d8c3b7af6ee9d876d69ce629a789979018b69edc6",
+          "output_id": "roots",
+          "operators": [
+            "geometry.integer_code"
+          ],
+          "dimension": 5,
+          "ambient_dimension": 5,
+          "cardinality": 40,
+          "origin": "imported",
+          "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_d5.json",
+          "receipt_sha256": "6473cfe001e93fe254ac186ffdd105be93567fecddd5fb0f17d9795e6e0e00f7",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 1150,
+            "pairs_checked": 780
+          },
+          "run_seconds": 0.004506,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
+      "formula_regeneration_verified_fixtures": [
+        "discovery/recipes/roots_d5.json"
+      ],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "research/discovery_campaign_20261104/groups/d5_40_exact_gram.json",
+          "sha256": "9896fdca0451108211db7b344bc53dcc0ee63f686f0080816624e8e3709e8b81",
+          "reported_cardinality": 40,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "search-discovered numerical control reconstructed as an exact Gram certificate; prototype unless a registered recipe imports it"
+        },
+        {
+          "path": "research/discovery_campaign_20261104/groups/d5_40_exact_receipt.json",
+          "sha256": "aa6978aa091fde8db811ca2656a593279807e15cc41b4a4ebfd3591ac79b95d8",
+          "reported_cardinality": 40,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "reported independent exact Fraction Gram/rank/pair replay; source evidence only until integrated replay"
+        }
+      ],
+      "remaining_gap": null,
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 780,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 6,
+      "cohn_lower_bound": 72,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "A. Korkine and G. Zolotareff, Sur les formes quadratiques, Math. Ann. 6 (1873), 366–389.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#7"
+          },
+          {
+            "citation": "D. de Laat, N. M. Leijenhorst, and W. H. H. de Muinck Keizer, Optimality and uniqueness of the D_4 root system, preprint, 2024.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#9"
+          }
+        ],
+        "reference_labels": "[ 7 , 9 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "exact_target_recipe",
+      "target_status": {
+        "imported": true,
+        "formula_generated": true,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": true,
+        "unsupported": false,
+        "not_tested": false
+      },
+      "recipe": [
+        "discovery/recipes/roots06.json",
+        "discovery/recipes/roots_e6.json",
+        "discovery/recipes/section_e8_chain.json"
+      ],
+      "verification_evidence": [
+        {
+          "recipe": "discovery/recipes/roots06.json",
+          "recipe_sha256": "144e058615288811ecb579d1e1efc600531a1ac6835564f01cc547ca31aa869a",
+          "output_id": "roots",
+          "operators": [
+            "lattice.root_system"
+          ],
+          "dimension": 6,
+          "ambient_dimension": 6,
+          "cardinality": 72,
+          "origin": "generated",
+          "provenance": "generated known construction control; no autonomous discovery claim",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots06.json",
+          "receipt_sha256": "9b3dbd8ad7ee3005ad6d8ea6dba8dd93dd2d111ed713d3eb89d1458ba7426ffc",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 3120,
+            "pairs_checked": 2556
+          },
+          "run_seconds": 0.005764,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        },
+        {
+          "recipe": "discovery/recipes/roots_e6.json",
+          "recipe_sha256": "9415a0b0db1ec93bfa17229a5b56a43682ec67d6e30eeaf8bd91672f6d0376e1",
+          "output_id": "roots",
+          "operators": [
+            "geometry.integer_code"
+          ],
+          "dimension": 6,
+          "ambient_dimension": 8,
+          "cardinality": 72,
+          "origin": "imported",
+          "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_e6.json",
+          "receipt_sha256": "5c5fa537dfe24da712dd9f56d969a2a58b48388b3139737c8e2b86c09a0ab972",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 4448,
+            "pairs_checked": 2556
+          },
+          "run_seconds": 0.006299,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        },
+        {
+          "recipe": "discovery/recipes/section_e8_chain.json",
+          "recipe_sha256": "11e3c3ceee7f2aa0ce5eeac4d0e9c2cd59f89f18d07a3226b2766e23a06ab516",
+          "output_id": "e6",
+          "operators": [
+            "lattice.root_system",
+            "geometry.section",
+            "geometry.section"
+          ],
+          "dimension": 6,
+          "ambient_dimension": 8,
+          "cardinality": 72,
+          "origin": "generated",
+          "provenance": "generated known construction control; no autonomous discovery claim",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/section_e8_chain.json",
+          "receipt_sha256": "76747cf740e9b98be7ab497fe1b3f5ea4dd5136b11a58c61c4d5ea695becb65c",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "exact rational weighted central hyperplane selection and independent integer geometry",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 4160,
+            "pairs_checked": 2556
+          },
+          "run_seconds": 0.090656,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
+      "formula_regeneration_verified_fixtures": [
+        "discovery/recipes/roots_e6.json"
+      ],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [],
+      "remaining_gap": null,
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 2556,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 7,
+      "cohn_lower_bound": 126,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "A. Korkine and G. Zolotareff, Sur les formes quadratiques, Math. Ann. 6 (1873), 366–389.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#7"
+          },
+          {
+            "citation": "H. D. Mittelmann and F. Vallentin, High-accuracy semidefinite programming bounds for kissing numbers, Experiment. Math. 19 (2010), 175–179.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#16"
+          }
+        ],
+        "reference_labels": "[ 7 , 16 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "exact_target_recipe",
+      "target_status": {
+        "imported": true,
+        "formula_generated": true,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": true,
+        "unsupported": false,
+        "not_tested": false
+      },
+      "recipe": [
+        "discovery/recipes/roots07.json",
+        "discovery/recipes/roots_e7.json",
+        "discovery/recipes/section_e8_chain.json"
+      ],
+      "verification_evidence": [
+        {
+          "recipe": "discovery/recipes/roots07.json",
+          "recipe_sha256": "14e42ced157e69a376c8ac201d4e7d5a39a7a30ab3f28f78c63387ce859c1f16",
+          "output_id": "roots",
+          "operators": [
+            "lattice.root_system"
+          ],
+          "dimension": 7,
+          "ambient_dimension": 7,
+          "cardinality": 126,
+          "origin": "generated",
+          "provenance": "generated known construction control; no autonomous discovery claim",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots07.json",
+          "receipt_sha256": "80c076965dfe9ee9dd559f9bd0cdf23d75dbe558ea9a7fe7814419a5d63953ff",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 7630,
+            "pairs_checked": 7875
+          },
+          "run_seconds": 0.009593,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        },
+        {
+          "recipe": "discovery/recipes/roots_e7.json",
+          "recipe_sha256": "a398f888a43803ca666959d12c2f0b16bbc431496b077c949ecb30632dc6ee35",
+          "output_id": "roots",
+          "operators": [
+            "geometry.integer_code"
+          ],
+          "dimension": 7,
+          "ambient_dimension": 8,
+          "cardinality": 126,
+          "origin": "imported",
+          "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_e7.json",
+          "receipt_sha256": "579ec074726a0545120ca7e230da699241cce8f946ae1a21a8c929e96fca360f",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 9552,
+            "pairs_checked": 7875
+          },
+          "run_seconds": 0.010811,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        },
+        {
+          "recipe": "discovery/recipes/section_e8_chain.json",
+          "recipe_sha256": "11e3c3ceee7f2aa0ce5eeac4d0e9c2cd59f89f18d07a3226b2766e23a06ab516",
+          "output_id": "e7",
+          "operators": [
+            "lattice.root_system",
+            "geometry.section",
+            "geometry.section"
+          ],
+          "dimension": 7,
+          "ambient_dimension": 8,
+          "cardinality": 126,
+          "origin": "generated",
+          "provenance": "generated known construction control; no autonomous discovery claim",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/section_e8_chain.json",
+          "receipt_sha256": "76747cf740e9b98be7ab497fe1b3f5ea4dd5136b11a58c61c4d5ea695becb65c",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "exact rational weighted central hyperplane selection and independent integer geometry",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 8720,
+            "pairs_checked": 7875
+          },
+          "run_seconds": 0.084413,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
+      "formula_regeneration_verified_fixtures": [
+        "discovery/recipes/roots_e7.json"
+      ],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [],
+      "remaining_gap": null,
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 7875,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 8,
+      "cohn_lower_bound": 240,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "A. Korkine and G. Zolotareff, Sur les formes quadratiques, Math. Ann. 6 (1873), 366–389.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#7"
+          },
+          {
+            "citation": "V. I. Levenšteĭn, On bounds for packings in n-dimensional Euclidean space (Russian), Dokl. Akad. Nauk SSSR 245 (1979), 1299–1303; English translation in Soviet Math. Dokl. 20 (1979), 417–421.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#13"
+          },
+          {
+            "citation": "A. M. Odlyzko and N. J. A. Sloane, New bounds on the number of unit spheres that can touch a unit sphere in n dimensions, J. Combin. Theory Ser. A 26 (1979), 210–214.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#18"
+          }
+        ],
+        "reference_labels": "[ 7 , 13 , 18 ]"
+      },
+      "target_kind": "proved exact kissing number",
+      "coverage_status": "exact_target_recipe",
+      "target_status": {
+        "imported": true,
+        "formula_generated": true,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": true,
+        "unsupported": false,
+        "not_tested": false
+      },
+      "recipe": [
+        "discovery/recipes/roots08.json",
+        "discovery/recipes/roots_e8.json"
+      ],
+      "verification_evidence": [
+        {
+          "recipe": "discovery/recipes/roots08.json",
+          "recipe_sha256": "9b4824196afd421ced98745882fe8010c8cda566a05ffbf7cf6d25a238ef5704",
+          "output_id": "roots",
+          "operators": [
+            "lattice.root_system"
+          ],
+          "dimension": 8,
+          "ambient_dimension": 8,
+          "cardinality": 240,
+          "origin": "generated",
+          "provenance": "generated known construction control; no autonomous discovery claim",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots08.json",
+          "receipt_sha256": "b7f2e32f47768fad86005e197bc93427fbdb26c63ff4b6d0fa95ec114dec9c6b",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 19168,
+            "pairs_checked": 28680
+          },
+          "run_seconds": 0.019029,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        },
+        {
+          "recipe": "discovery/recipes/roots_e8.json",
+          "recipe_sha256": "3bf6ff69b0b8fd9c59d9e0ded73d1086089248406597a86f5e8491aa315f3514",
+          "output_id": "roots",
+          "operators": [
+            "geometry.integer_code"
+          ],
+          "dimension": 8,
+          "ambient_dimension": 8,
+          "cardinality": 240,
+          "origin": "imported",
+          "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_e8.json",
+          "receipt_sha256": "df71caa70c186d587f16b8390cebe338d85acc50878afeb9cfee12a7a99e0e9a",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 21888,
+            "pairs_checked": 28680
+          },
+          "run_seconds": 0.022401,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        },
+        {
+          "recipe": "discovery/recipes/syndrome_cosets.json",
+          "recipe_sha256": "79a746feddee5eb4309f1ce95216c8cf107512232372df0fb7bee532c8740dbd",
+          "output_id": "sphere",
+          "operators": [
+            "cosets.build",
+            "cosets.union",
+            "geometry.sign_embed"
+          ],
+          "dimension": 8,
+          "ambient_dimension": 8,
+          "cardinality": 32,
+          "origin": "generated",
+          "provenance": "generated known construction control; no autonomous discovery claim",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/syndrome_cosets.json",
+          "receipt_sha256": "3e75c3e3884f471022f1f84dd2510e6bb34bffe4e7c02501a5a0481b9f8a7ab4",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "binary sign embedding from independently reverified distance",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "implicit_spherical_code",
+          "proof_summary": {},
+          "run_seconds": 0.003962,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
+      "formula_regeneration_verified_fixtures": [
+        "discovery/recipes/roots_e8.json"
+      ],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [],
+      "remaining_gap": null,
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 28680,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 9,
+      "cohn_lower_bound": 306,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "J. Leech and N. J. A. Sloane, Sphere packings and error-correcting codes, Canadian J. Math. 23 (1971), 718–745.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#11"
+          },
+          {
+            "citation": "F. C. Machado and F. M. de Oliveira Filho, Improving the semidefinite programming bound for the kissing number by exploiting polynomial symmetry, Exp. Math. 27 (2018), 362–369.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#15"
+          }
+        ],
+        "reference_labels": "[ 11 , 15 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "exact_target_recipe",
+      "target_status": {
+        "imported": false,
+        "formula_generated": false,
+        "search_execution": true,
+        "search_discovered": false,
+        "exact_verified": true,
+        "unsupported": false,
+        "not_tested": false
+      },
+      "recipe": [
+        "discovery/recipes/support9_search.json"
+      ],
+      "verification_evidence": [
+        {
+          "recipe": "discovery/recipes/support9_search.json",
+          "recipe_sha256": "d457960cadd1d0b156e493a3dac000f2668ab93f5b9bfe50fda95054f622d4b9",
+          "output_id": "sphere",
+          "operators": [
+            "search.support_packing"
+          ],
+          "dimension": 9,
+          "ambient_dimension": 9,
+          "cardinality": 306,
+          "origin": "generated",
+          "provenance": "runtime triple-disjoint support-orbit search, with no target cardinality or record coordinates; separate blind1_24 benchmark records held-out rediscovery; geometry alone does not authenticate history",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/support9_search.json",
+          "receipt_sha256": "64c8c0445aa49c367bdb7dcb3c7361442811d04b9c67fc3f9f2d37252e1097f5",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 20898,
+            "pairs_checked": 46665
+          },
+          "run_seconds": 0.030579,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "verifications/closed/dim09-19-record-maximality/README.md",
+          "sha256": "344b465f3ba3f5ef33de21d9c64138fea517573cdb48f53d049d81f6a956757a",
+          "reported_cardinality": 306,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "record-coordinate maximality study; not an integrated construction recipe"
+        }
+      ],
+      "remaining_gap": null,
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 46665,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 10,
+      "cohn_lower_bound": 510,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "M. Ganzhinov, Highly symmetric lines, Linear Algebra Appl. 722 (2025), 12–37.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#6"
+          },
+          {
+            "citation": "F. C. Machado and F. M. de Oliveira Filho, Improving the semidefinite programming bound for the kissing number by exploiting polynomial symmetry, Exp. Math. 27 (2018), 362–369.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#15"
+          }
+        ],
+        "reference_labels": "[ 6 , 15 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "exact_target_recipe",
+      "target_status": {
+        "imported": false,
+        "formula_generated": true,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": true,
+        "unsupported": false,
+        "not_tested": false
+      },
+      "recipe": [
+        "discovery/recipes/ganzhinov10.json"
+      ],
+      "verification_evidence": [
+        {
+          "recipe": "discovery/recipes/ganzhinov10.json",
+          "recipe_sha256": "9ce9b352269082d99ba849651d2f00775465bad8a20c67fc8cbaa6731b6fcd53",
+          "output_id": "code",
+          "operators": [
+            "groups.ganzhinov10"
+          ],
+          "dimension": 10,
+          "ambient_dimension": 18,
+          "cardinality": 510,
+          "origin": "generated",
+          "provenance": "generated known exact recipe; separate numerical subgroup-character search recovered line systems; exact recipe is reconstruction",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/ganzhinov10.json",
+          "receipt_sha256": "d767e58aa68e495bb0a6b8868592f34b9483ba0d3d6d768578b70ee2c80b6e66",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 119088,
+            "pairs_checked": 129795
+          },
+          "run_seconds": 0.84959,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [
+        {
+          "recipe": "discovery/recipes/discover10.json",
+          "sha256": "86252abf29ebd72fc2e64b797eb9c8a6ac0a8179c61d9a0a7ec88d0ce659a518",
+          "origin": "search-discovered numerical candidate",
+          "independent_verification": "not exact; bounded numerical search recipe not rerun by matrix",
+          "resource_parameters": {
+            "trials": 40,
+            "seed": 20261104,
+            "linecap": 1000
+          }
+        }
+      ],
+      "separate_repository_evidence": [],
+      "remaining_gap": null,
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 129795,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 11,
+      "cohn_lower_bound": 604,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "F. Bianchi, Y. Kwon, A. Pappu, and J. Zou, Harnessing the collective intelligence of AI agents in the wild for new discoveries, preprint, 2026.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#2"
+          },
+          {
+            "citation": "N. Leijenhorst and D. de Laat, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#12"
+          }
+        ],
+        "reference_labels": "[ 2 , 12 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "prototype_only",
+      "target_status": {
+        "imported": false,
+        "formula_generated": false,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": false,
+        "unsupported": true,
+        "not_tested": true
+      },
+      "recipe": null,
+      "verification_evidence": [],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "verifications/closed/dim09-19-record-maximality/README.md",
+          "sha256": "344b465f3ba3f5ef33de21d9c64138fea517573cdb48f53d049d81f6a956757a",
+          "reported_cardinality": 604,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "record-coordinate maximality study; not an integrated construction recipe"
+        }
+      ],
+      "remaining_gap": "current604-point construction and independently replayable proof",
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 182106,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 12,
+      "cohn_lower_bound": 841,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "R. Takhanov, Z. Assylbekov, and S. Yun, Structure of kissing arrangements in R^12 and a place for the 841st sphere, preprint, 2026.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#21"
+          },
+          {
+            "citation": "N. Leijenhorst and D. de Laat, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#12"
+          }
+        ],
+        "reference_labels": "[ 21 , 12 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "partial_recipe_only",
+      "target_status": {
+        "imported": false,
+        "formula_generated": false,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": false,
+        "unsupported": true,
+        "not_tested": true
+      },
+      "recipe": null,
+      "verification_evidence": [
+        {
+          "recipe": "discovery/recipes/support12_search.json",
+          "recipe_sha256": "6042ca06b029267c08692f4f7877e5065fcfbad39e4f933828b94edbabd74310",
+          "output_id": "sphere",
+          "operators": [
+            "search.support_packing"
+          ],
+          "dimension": 12,
+          "ambient_dimension": 12,
+          "cardinality": 840,
+          "origin": "generated",
+          "provenance": "runtime triple-disjoint support-orbit search, with no target cardinality or record coordinates; separate blind1_24 benchmark records held-out rediscovery; geometry alone does not authenticate history",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/support12_search.json",
+          "receipt_sha256": "bf9165d0e79b614450c18e230901ab5a59bf965ac845e77c73061dd9ffa2870a",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 78624,
+            "pairs_checked": 352380
+          },
+          "run_seconds": 0.648477,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "verifications/closed/dim09-19-record-maximality/README.md",
+          "sha256": "344b465f3ba3f5ef33de21d9c64138fea517573cdb48f53d049d81f6a956757a",
+          "reported_cardinality": 841,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "record-coordinate maximality study; not an integrated construction recipe"
+        }
+      ],
+      "remaining_gap": "current841-point construction and independently replayable proof",
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 353220,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 13,
+      "cohn_lower_bound": 1154,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "V. A. Zinoviev and T. Ericson, New lower bounds for contact numbers in small dimensions (Russian), Problemy Peredachi Informatsii 35 (1999), 3–11; English translation in Problems Inform. Transmission 35 (1999), 287–294.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#23"
+          },
+          {
+            "citation": "N. Leijenhorst and D. de Laat, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#12"
+          }
+        ],
+        "reference_labels": "[ 23 , 12 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "exact_target_recipe",
+      "target_status": {
+        "imported": true,
+        "formula_generated": false,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": true,
+        "unsupported": false,
+        "not_tested": false
+      },
+      "recipe": [
+        "research/coupled13/program_H2.json"
+      ],
+      "verification_evidence": [
+        {
+          "recipe": "research/coupled13/program_H2.json",
+          "recipe_sha256": "4da36df39f8bc9028339d33adf1eb9177b6b0ed619c596f02b89b25d65ee7f4b",
+          "output_id": "coupled",
+          "operators": [
+            "geometry.integer_code",
+            "signed_layers.conditional_swap",
+            "signed_layers.free_zone_join",
+            "signed_layers.coupled_lift"
+          ],
+          "dimension": 13,
+          "ambient_dimension": 13,
+          "cardinality": 1154,
+          "origin": "imported",
+          "provenance": "supplied classical equator coordinates and quadratic-field cap coefficients; registered conditional switching/free-zone joining/coupled lift; known1154 construction, no novelty claim",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/program_H2.json",
+          "receipt_sha256": "b227f7255e560167f838a73c142d389ca55d715fb408318c82277a9a8dfa01ec",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "all normalized pair inequalities in Q(sqrt(3)); positive rational squared norms",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "quadratic_spherical_code",
+          "proof_summary": {
+            "pairs_checked": 665281,
+            "rank_lower_bound": 13,
+            "arithmetic": "integer sign comparisons and exact squaring in Q(sqrt(3))"
+          },
+          "run_seconds": 1.29078,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "verifications/closed/dim09-19-record-maximality/README.md",
+          "sha256": "344b465f3ba3f5ef33de21d9c64138fea517573cdb48f53d049d81f6a956757a",
+          "reported_cardinality": 1154,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "record-coordinate maximality study; not an integrated construction recipe"
+        }
+      ],
+      "remaining_gap": null,
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 665281,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 14,
+      "cohn_lower_bound": 1932,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "M. Ganzhinov, Highly symmetric lines, Linear Algebra Appl. 722 (2025), 12–37.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#6"
+          },
+          {
+            "citation": "N. Leijenhorst and D. de Laat, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#12"
+          }
+        ],
+        "reference_labels": "[ 6 , 12 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "exact_target_recipe",
+      "target_status": {
+        "imported": false,
+        "formula_generated": true,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": true,
+        "unsupported": false,
+        "not_tested": false
+      },
+      "recipe": [
+        "discovery/recipes/ganzhinov14.json"
+      ],
+      "verification_evidence": [
+        {
+          "recipe": "discovery/recipes/ganzhinov14.json",
+          "recipe_sha256": "3c6672a0f06653809b252f1824a11096b006770d268d500d536b54538de59709",
+          "output_id": "code",
+          "operators": [
+            "groups.ganzhinov14"
+          ],
+          "dimension": 14,
+          "ambient_dimension": 14,
+          "cardinality": 1932,
+          "origin": "generated",
+          "provenance": "generated known E7-frame recipe; not autonomous U(3,3) subgroup-character discovery",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/ganzhinov14.json",
+          "receipt_sha256": "a761f9b7bbb263c89bb795258f09a86a4cc393f90bc0530fb8ae58e6d3f0a762",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "spherical_code",
+          "proof_summary": {
+            "rank_scalar_work": 380968,
+            "pairs_checked": 1865346
+          },
+          "run_seconds": 0.683398,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [],
+      "remaining_gap": null,
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 1865346,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 15,
+      "cohn_lower_bound": 2564,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "J. Leech and N. J. A. Sloane, Sphere packings and error-correcting codes, Canadian J. Math. 23 (1971), 718–745.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#11"
+          },
+          {
+            "citation": "N. Leijenhorst and D. de Laat, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#12"
+          }
+        ],
+        "reference_labels": "[ 11 , 12 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "prototype_only",
+      "target_status": {
+        "imported": false,
+        "formula_generated": false,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": false,
+        "unsupported": true,
+        "not_tested": true
+      },
+      "recipe": null,
+      "verification_evidence": [],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "verifications/closed/dim09-19-record-maximality/README.md",
+          "sha256": "344b465f3ba3f5ef33de21d9c64138fea517573cdb48f53d049d81f6a956757a",
+          "reported_cardinality": 2564,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "record-coordinate maximality study; not an integrated construction recipe"
+        }
+      ],
+      "remaining_gap": "2564-point laminated construction and independently replayable proof",
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 3285766,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 16,
+      "cohn_lower_bound": 4320,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "E. S. Barnes and G. E. Wall, Some extreme forms defined in terms of Abelian groups, J. Austral. Math. Soc. 1 (1959), 47–63.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#1"
+          },
+          {
+            "citation": "N. Leijenhorst and D. de Laat, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#12"
+          }
+        ],
+        "reference_labels": "[ 1 , 12 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "exact_target_recipe",
+      "target_status": {
+        "imported": false,
+        "formula_generated": true,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": true,
+        "unsupported": false,
+        "not_tested": false
+      },
+      "recipe": [
+        "discovery/recipes/stabilizer16.json"
+      ],
+      "verification_evidence": [
+        {
+          "recipe": "discovery/recipes/octacode.json",
+          "recipe_sha256": "289d41106ca0a427e2de4ee016a9d81d77688cb1ae67fa978176b3f40a294ba9",
+          "output_id": "sphere",
+          "operators": [
+            "rings.binary_factor",
+            "rings.hensel",
+            "rings.extend",
+            "rings.gray",
+            "geometry.sign_embed"
+          ],
+          "dimension": 16,
+          "ambient_dimension": 16,
+          "cardinality": 256,
+          "origin": "generated",
+          "provenance": "generated known construction control; no autonomous discovery claim",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/octacode.json",
+          "receipt_sha256": "96cfd0eea6e551fe643104d9cb766654268559ab727c84000cf2d6ac32ca8f08",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "binary sign embedding from independently reverified distance",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "implicit_spherical_code",
+          "proof_summary": {},
+          "run_seconds": 0.019971,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        },
+        {
+          "recipe": "discovery/recipes/stabilizer16.json",
+          "recipe_sha256": "b6f9aff23df64a06e93c5a42fd8d6dd44d441916be7d1619a574b350685a3cc3",
+          "output_id": "sector",
+          "operators": [
+            "groups.real_stabilizer_sector"
+          ],
+          "dimension": 16,
+          "ambient_dimension": 16,
+          "cardinality": 4320,
+          "origin": "generated",
+          "provenance": "generated implicit affine-flat/quadratic-sign sector; symbolic count and separation replay; no supplied record coordinates or novelty claim",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/stabilizer16.json",
+          "receipt_sha256": "e75378b64e9ab6517b244c1a23658ef2806726b69353857284be2cf1a946dddd",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "affine binary-flat count and quadratic Boolean bias theorem",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "implicit_spherical_code",
+          "proof_summary": {
+            "materialized_spherical_points": 0,
+            "independent_count_method": "q-Pascal recurrence and q-binomial product identity",
+            "proof_scope": "one complete real stabilizer parity sector; no novelty or kissing upper-bound claim",
+            "pair_cases": [
+              "disjoint affine supports",
+              "equal rank distinct supports",
+              "different ranks of equal parity",
+              "same support quadratic difference"
+            ]
+          },
+          "run_seconds": 0.002112,
+          "resource_limits": {
+            "max_materialized_points": 20000,
+            "max_pairs": 10000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "research/discovery_campaign_20261104/groups/results.json",
+          "sha256": "2fca68b05500300de143dce358c8bccfc795113a6782c535223e14470b569cf2",
+          "reported_cardinality": 4320,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "real-stabilizer-family formula/control at16D; independent representative enumeration was32D; not an integrated16D recipe"
+        },
+        {
+          "path": "research/discovery_campaign_20261104/groups/README.md",
+          "sha256": "604c5a866bd2e1df6448970576a0ae1a1ed91d49e1f38daef4d2b55855b3a6dd",
+          "reported_cardinality": 4320,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "family proof scope; not a separate exhaustive16D all-pairs receipt"
+        }
+      ],
+      "remaining_gap": null,
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 9329040,
+        "fits_default_explicit_point_and_pair_caps": true,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 17,
+      "cohn_lower_bound": 5730,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "H. Cohn and A. Li, Improved kissing numbers in seventeen through twenty-one dimensions, preprint, 2024.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#4"
+          },
+          {
+            "citation": "N. Leijenhorst and D. de Laat, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#12"
+          }
+        ],
+        "reference_labels": "[ 4 , 12 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "prototype_only",
+      "target_status": {
+        "imported": false,
+        "formula_generated": false,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": false,
+        "unsupported": true,
+        "not_tested": true
+      },
+      "recipe": null,
+      "verification_evidence": [],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "verifications/closed/dim17-layered-family/README.md",
+          "sha256": "8e4d9bc72973c14f7df27613762f4c29997d79cba338db15783e664b722b7b60",
+          "reported_cardinality": 5730,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "exact ceiling and matching known construction within layered family; not an integrated recipe"
+        }
+      ],
+      "remaining_gap": "Cohn–Li5730 construction as composable program",
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 16413585,
+        "fits_default_explicit_point_and_pair_caps": false,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 18,
+      "cohn_lower_bound": 8358,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "A. Kravatskiy, 2026.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#8"
+          },
+          {
+            "citation": "N. Leijenhorst and D. de Laat, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#12"
+          }
+        ],
+        "reference_labels": "[ 8 , 12 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "prototype_only",
+      "target_status": {
+        "imported": false,
+        "formula_generated": false,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": false,
+        "unsupported": true,
+        "not_tested": true
+      },
+      "recipe": null,
+      "verification_evidence": [],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "verifications/improved/dim18-bent-hexagon/README.md",
+          "sha256": "7ef69bfa35030fc99986f38e51a6a63799f0e9a4f2782256cc22d258e8473088",
+          "reported_cardinality": 8358,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "existing exact reconstruction package; separate from discovery registry"
+        },
+        {
+          "path": "verifications/improved/dim18-bent-hexagon/verify18.py",
+          "sha256": "3b314471140332861917b2dbe8d11a113d4b0753e1d322c69e5bdf346945e009",
+          "reported_cardinality": 8358,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "exact integer plus quadratic-field pair verifier; not rerun by matrix builder"
+        }
+      ],
+      "remaining_gap": "existing8358 construction adapter with exact quadratic-field proof transfer",
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 34923903,
+        "fits_default_explicit_point_and_pair_caps": false,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 19,
+      "cohn_lower_bound": 12460,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "K. Li, Improved kissing numbers in nineteen and twenty-one dimensions, preprint, 2026.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#14"
+          },
+          {
+            "citation": "N. Leijenhorst and D. de Laat, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#12"
+          }
+        ],
+        "reference_labels": "[ 14 , 12 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "prototype_only",
+      "target_status": {
+        "imported": false,
+        "formula_generated": false,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": false,
+        "unsupported": true,
+        "not_tested": true
+      },
+      "recipe": null,
+      "verification_evidence": [],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "verifications/closed/dim17-23-cohn-li-mechanism/README.md",
+          "sha256": "563c50eaac3e3c43269eac96a8331b3a73be69f701971275e4749b8f70fab392",
+          "reported_cardinality": 11948,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "historical11948 prototype/mechanism is below current12460; no current target reproduction"
+        }
+      ],
+      "remaining_gap": "current12460 construction; historical11948 mechanism is insufficient",
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 77619570,
+        "fits_default_explicit_point_and_pair_caps": false,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 20,
+      "cohn_lower_bound": 19448,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "H. Cohn and A. Li, Improved kissing numbers in seventeen through twenty-one dimensions, preprint, 2024.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#4"
+          },
+          {
+            "citation": "N. Leijenhorst and D. de Laat, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#12"
+          }
+        ],
+        "reference_labels": "[ 4 , 12 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "prototype_only",
+      "target_status": {
+        "imported": false,
+        "formula_generated": false,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": false,
+        "unsupported": true,
+        "not_tested": true
+      },
+      "recipe": null,
+      "verification_evidence": [],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "verifications/closed/dim17-24-layer-identity/README.md",
+          "sha256": "45915a427e5357a08110749c5c9eb1d00abb50361a6e9ec81e24ec43e54318f6",
+          "reported_cardinality": 19448,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "separate exact layered reconstruction, not integrated recipe"
+        }
+      ],
+      "remaining_gap": "existing19448 layered constructor adapter with exact cross-layer proofs",
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 189102628,
+        "fits_default_explicit_point_and_pair_caps": false,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 21,
+      "cohn_lower_bound": 31560,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "K. Li, Improved kissing numbers in nineteen and twenty-one dimensions, preprint, 2026.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#14"
+          },
+          {
+            "citation": "N. Leijenhorst and D. de Laat, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#12"
+          }
+        ],
+        "reference_labels": "[ 14 , 12 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "prototype_only",
+      "target_status": {
+        "imported": false,
+        "formula_generated": false,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": false,
+        "unsupported": true,
+        "not_tested": true
+      },
+      "recipe": null,
+      "verification_evidence": [],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "verifications/closed/dim17-24-layer-identity/README.md",
+          "sha256": "45915a427e5357a08110749c5c9eb1d00abb50361a6e9ec81e24ec43e54318f6",
+          "reported_cardinality": 29768,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "historical29768 reconstruction is below current31560; no current target reproduction"
+        }
+      ],
+      "remaining_gap": "current31560 construction; historical29768 recipe is insufficient",
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 498001020,
+        "fits_default_explicit_point_and_pair_caps": false,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 22,
+      "cohn_lower_bound": 49896,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "J. Leech, Notes on sphere packings, Canadian J. Math. 19 (1967), 251–267.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#10"
+          },
+          {
+            "citation": "N. Leijenhorst and D. de Laat, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#12"
+          }
+        ],
+        "reference_labels": "[ 10 , 12 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "prototype_only",
+      "target_status": {
+        "imported": false,
+        "formula_generated": false,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": false,
+        "unsupported": true,
+        "not_tested": true
+      },
+      "recipe": null,
+      "verification_evidence": [],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "verifications/closed/dim22-23-maximal-cross-sections/README.md",
+          "sha256": "5826c7c24f9abad2e609f5edff6c3bc00246d242c6b5f7d3e8280aea54b7432e",
+          "reported_cardinality": 49896,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "Leech section construction/obstruction package; not integrated recipe"
+        }
+      ],
+      "remaining_gap": "Leech section with count49896 and compressed/exact separation proof",
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 1244780460,
+        "fits_default_explicit_point_and_pair_caps": false,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 23,
+      "cohn_lower_bound": 93150,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "J. Leech, Notes on sphere packings, Canadian J. Math. 19 (1967), 251–267.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#10"
+          },
+          {
+            "citation": "N. Leijenhorst and D. de Laat, Solving clustered low-rank semidefinite programs arising from polynomial optimization, Math. Program. Comput. 16 (2024), no. 3, 503–534.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#12"
+          }
+        ],
+        "reference_labels": "[ 10 , 12 ]"
+      },
+      "target_kind": "current sourced lower-bound construction; no optimality claim",
+      "coverage_status": "prototype_only",
+      "target_status": {
+        "imported": false,
+        "formula_generated": false,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": false,
+        "unsupported": true,
+        "not_tested": true
+      },
+      "recipe": null,
+      "verification_evidence": [],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "verifications/closed/dim22-23-maximal-cross-sections/README.md",
+          "sha256": "5826c7c24f9abad2e609f5edff6c3bc00246d242c6b5f7d3e8280aea54b7432e",
+          "reported_cardinality": 93150,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "Leech section construction/obstruction package; not integrated recipe"
+        }
+      ],
+      "remaining_gap": "Leech section with count93150 and compressed/exact separation proof",
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 4338414675,
+        "fits_default_explicit_point_and_pair_caps": false,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    },
+    {
+      "dimension": 24,
+      "cohn_lower_bound": 196560,
+      "bound_source": "cohn_successful_20261104",
+      "source": {
+        "url": "https://cohn.mit.edu/kissing-numbers/",
+        "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+        "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+        "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+        "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+        "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+        "references": [
+          {
+            "citation": "J. Leech, Notes on sphere packings, Canadian J. Math. 19 (1967), 251–267.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#10"
+          },
+          {
+            "citation": "V. I. Levenšteĭn, On bounds for packings in n-dimensional Euclidean space (Russian), Dokl. Akad. Nauk SSSR 245 (1979), 1299–1303; English translation in Soviet Math. Dokl. 20 (1979), 417–421.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#13"
+          },
+          {
+            "citation": "A. M. Odlyzko and N. J. A. Sloane, New bounds on the number of unit spheres that can touch a unit sphere in n dimensions, J. Combin. Theory Ser. A 26 (1979), 210–214.",
+            "href": "https://cohn.mit.edu/kissing-numbers/#18"
+          }
+        ],
+        "reference_labels": "[ 10 , 13 , 18 ]"
+      },
+      "target_kind": "proved exact kissing number",
+      "coverage_status": "prototype_only",
+      "target_status": {
+        "imported": false,
+        "formula_generated": false,
+        "search_execution": false,
+        "search_discovered": false,
+        "exact_verified": false,
+        "unsupported": true,
+        "not_tested": true
+      },
+      "recipe": null,
+      "verification_evidence": [],
+      "formula_regeneration_verified_fixtures": [],
+      "numerical_search_recipes": [],
+      "separate_repository_evidence": [
+        {
+          "path": "common/leech.py",
+          "sha256": "4f9a130ede03d6a9d7378e33b02c8134561988a3bc044e394f8209be6fba8cb6",
+          "reported_cardinality": 196560,
+          "integration": "not credited as integrated coverage",
+          "verification_status": "existing evidence inspected; not rerun by this matrix",
+          "note": "existing integer Golay/Leech generator; no integrated recipe or compressed separation replay in discovery"
+        }
+      ],
+      "remaining_gap": "Golay/Leech196560 constructor plus compressed separation certificate beyond generic pair budget",
+      "resource_limits": {
+        "shared_default": {
+          "max_materialized_points": 20000,
+          "max_pairs": 10000000,
+          "max_codewords": 262144,
+          "max_orbit_points": 10000,
+          "max_trials": 200,
+          "solver_seconds": 30,
+          "max_dgls_words": 16777216,
+          "max_dimension": 256,
+          "max_nodes": 100,
+          "max_gram_entries": 2000000,
+          "max_rank_work": 50000000,
+          "max_rational_bits": 4096
+        },
+        "target_explicit_pair_count": 19317818520,
+        "fits_default_explicit_point_and_pair_caps": false,
+        "note": "A fitting budget does not establish an implemented recipe; compressed proof backends may avoid explicit pair limits."
+      },
+      "new_record": false
+    }
+  ]
+}

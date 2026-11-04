@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "source": "verifications/improved/dim32-35-signed-layers/source/public/dense_code.json",
+  "source_sha256": "10d625316bb84b12ed1a43fcce46d74cf5ddf86bea6cca014c14925d46a6c275",
+  "parent_rank": 17,
+  "parent_distance": 8,
+  "dual_rank": 15,
+  "dual_distance": 8,
+  "dual_weight_histogram": {
+    "0": 1,
+    "8": 124,
+    "10": 1152,
+    "12": 3584,
+    "14": 6016,
+    "16": 11014,
+    "18": 6016,
+    "20": 3584,
+    "22": 1152,
+    "24": 124,
+    "32": 1
+  },
+  "weight12_support_census": {
+    "rank10": 264,
+    "rank11_weight8": 1316832,
+    "rank11_weight10": 266112,
+    "rank11_weight12": 3584,
+    "rank12": 224206048
+  },
+  "explicit_blocker_examples": {
+    "rank10": {
+      "support_mask": 7935,
+      "shortened_dual_nonzero_words": [
+        255,
+        7710,
+        7905
+      ],
+      "projection_size": 1024,
+      "blocker_histogram": {
+        "128": 1024,
+        "512": 3072
+      }
+    },
+    "rank11_weight8": {
+      "support_mask": 4095,
+      "shortened_dual_nonzero_words": [
+        255
+      ],
+      "projection_size": 2048,
+      "blocker_histogram": {
+        "320": 2048,
+        "512": 2048
+      }
+    },
+    "rank11_weight10": {
+      "support_mask": 50529135,
+      "shortened_dual_nonzero_words": [
+        50529129
+      ],
+      "projection_size": 2048,
+      "blocker_histogram": {
+        "192": 2048,
+        "640": 2048
+      }
+    },
+    "rank11_weight12": {
+      "support_mask": 1973799,
+      "shortened_dual_nonzero_words": [
+        1973799
+      ],
+      "projection_size": 2048,
+      "blocker_histogram": {
+        "64": 2048,
+        "768": 2048
+      }
+    },
+    "rank12": {
+      "support_mask": 12159,
+      "shortened_dual_nonzero_words": [],
+      "projection_size": 4096,
+      "blocker_histogram": {
+        "416": 4096
+      }
+    }
+  },
+  "projection_radius_through_size14": "at most1, by dual shortening/Plotkin and nonzero syndrome-column coverage",
+  "minimum_dense_blockers_equal_amplitude_support12": 64,
+  "complete_octad_certificate": "verifications/improved/dim32-35-signed-layers/source/classic/certificate32.json",
+  "complete_octad_certificate_sha256": "3a96dc79d21d07557a221f2cdd6664d2d5270e93d7c98711d7b962a2ba2b41d2",
+  "full_even_octad_supports": 1704,
+  "minimum_full_octad_supports_with_overlap_at_least5": 140,
+  "minimum_even_signed_octad_blockers": 498,
+  "minimum_total_dense_plus_complete_octad_blockers": 562,
+  "minimum_octad_blockers_by_overlap": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 4,
+    "6": 2,
+    "7": 8,
+    "8": 1
+  },
+  "prior_history": "KNOWLEDGE section130 already discusses a16-coordinate radius2 projection obstruction; section132 has exact dense covering radius6,35-optimality and single-coset injection. This refines fixed-layer obstructions, not a new construction.",
+  "scope": "Fixed full dense layer only. Does not exclude shared-deletion exchanges, replacing the dense code or any kissing-number improvement.",
+  "new_sota": false
+}

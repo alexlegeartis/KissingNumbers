@@ -1,0 +1,17 @@
+0 bad_even 15 even False closed False max translates 64
+1 bad_even 16 even True closed True max translates 8
+2 bad_even 16 even True closed True max translates 8
+3 bad_even 14 even False closed False max translates 16
+4 bad_even 16 even False closed True max translates 32
+5 bad_even 16 even True closed True max translates 8
+6 bad_even 16 even False closed True max translates 16
+7 bad_even 16 even True closed True max translates 8
+8 bad_even 16 even False closed True max translates 64
+9 bad_even 16 even True closed True max translates 8
+10 bad_even 16 even True closed True max translates 8
+11 bad_even 16 even True closed True max translates 8
+12 bad_even 16 even False closed True max translates 32
+13 bad_even 16 even True closed True max translates 8
+14 bad_even 16 even False closed True max translates 16
+15 bad_even 16 even True closed True max translates 8
+elapsed 1.477756292999402

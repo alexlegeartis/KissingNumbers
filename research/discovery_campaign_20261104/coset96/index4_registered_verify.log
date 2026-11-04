@@ -1,0 +1,15 @@
+{
+  "status": "unverified",
+  "method": "search schema and rejection witnesses checked; positive distance proof absent",
+  "details": {
+    "facts": {},
+    "candidate_count": 0,
+    "cardinality_forecast_is_not_certified": true,
+    "proof_obligations_remain": [
+      "internal parent/subcode distance",
+      "all inter-coset minimum distances",
+      "coset distinctness",
+      "companion compatibility if used"
+    ]
+  }
+}

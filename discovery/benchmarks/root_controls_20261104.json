@@ -1,0 +1,340 @@
+{
+  "schema_version": 2,
+  "built_at_utc": "2026-11-04T14:58:14.942402+00:00",
+  "canonical_matrix": "research/discovery_campaign_20261104/coverage_1_24/matrix.json",
+  "canonical_matrix_sha256": "9fe9a5b8bd6d240b15644eda942cf002e6d181155af47a6c99ce3e040642b67a",
+  "source": {
+    "url": "https://cohn.mit.edu/kissing-numbers/",
+    "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+    "http_date": "Wed, 04 Nov 2026 12:36:53 GMT",
+    "html_path": "research/discovery_campaign_20261104/baselines/cohn.html",
+    "html_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+    "table_path": "research/discovery_campaign_20261104/baselines/cohn_table.json",
+    "references": [],
+    "reference_labels": ""
+  },
+  "incoming_patch_sha256": "7ac4796cc14c476424e3a09888e499c077844828c9921b7508c8e81e384bd741",
+  "scope": "Current local independent proof replay; original external timings and claims remain in preserved incoming patch; no new record.",
+  "controls": [
+    {
+      "recipe": "discovery/recipes/roots_a1.json",
+      "recipe_sha256": "3f74d00eddc4b9f389671bad960e8818a8a6b51f91ab843b1e7b1efc16c76031",
+      "output_id": "roots",
+      "operators": [
+        "geometry.integer_code"
+      ],
+      "dimension": 1,
+      "ambient_dimension": 1,
+      "cardinality": 2,
+      "origin": "imported",
+      "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+      "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_a1.json",
+      "receipt_sha256": "49c6d1c13cbe67bff79295ccdc54bdd248460232bd30a024ff0cd98acb0800ed",
+      "independent_verification": {
+        "status": "exact_replayed",
+        "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+        "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+      },
+      "artifact_kind": "spherical_code",
+      "proof_summary": {
+        "rank_scalar_work": 2,
+        "pairs_checked": 1
+      },
+      "run_seconds": 0.002221,
+      "resource_limits": {
+        "max_materialized_points": 20000,
+        "max_pairs": 10000000,
+        "max_codewords": 262144,
+        "max_orbit_points": 10000,
+        "max_trials": 200,
+        "solver_seconds": 30,
+        "max_dgls_words": 16777216,
+        "max_dimension": 256,
+        "max_nodes": 100,
+        "max_gram_entries": 2000000,
+        "max_rank_work": 50000000,
+        "max_rational_bits": 4096
+      }
+    },
+    {
+      "recipe": "discovery/recipes/roots_a2.json",
+      "recipe_sha256": "a9b9d76973235f3baef81dfb26f878f7ad245fde6de33a23a5cc36213a875120",
+      "output_id": "roots",
+      "operators": [
+        "geometry.integer_code"
+      ],
+      "dimension": 2,
+      "ambient_dimension": 3,
+      "cardinality": 6,
+      "origin": "imported",
+      "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+      "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_a2.json",
+      "receipt_sha256": "8a6e86ef481d950815518b5d405e738eb091ba3ccfc9bd238b9a785fdbb3ce7b",
+      "independent_verification": {
+        "status": "exact_replayed",
+        "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+        "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+      },
+      "artifact_kind": "spherical_code",
+      "proof_summary": {
+        "rank_scalar_work": 36,
+        "pairs_checked": 15
+      },
+      "run_seconds": 0.001924,
+      "resource_limits": {
+        "max_materialized_points": 20000,
+        "max_pairs": 10000000,
+        "max_codewords": 262144,
+        "max_orbit_points": 10000,
+        "max_trials": 200,
+        "solver_seconds": 30,
+        "max_dgls_words": 16777216,
+        "max_dimension": 256,
+        "max_nodes": 100,
+        "max_gram_entries": 2000000,
+        "max_rank_work": 50000000,
+        "max_rational_bits": 4096
+      }
+    },
+    {
+      "recipe": "discovery/recipes/roots_d3.json",
+      "recipe_sha256": "5f9215da1bae7442f174cddc2b9e4ff41e43de3a284639c019c53f8f43ac20ec",
+      "output_id": "roots",
+      "operators": [
+        "geometry.integer_code"
+      ],
+      "dimension": 3,
+      "ambient_dimension": 3,
+      "cardinality": 12,
+      "origin": "imported",
+      "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+      "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_d3.json",
+      "receipt_sha256": "73ea451dddf51720be77159ecdc75f21b8b2c38bb7ded7fc18c70dc308b287f2",
+      "independent_verification": {
+        "status": "exact_replayed",
+        "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+        "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+      },
+      "artifact_kind": "spherical_code",
+      "proof_summary": {
+        "rank_scalar_work": 126,
+        "pairs_checked": 66
+      },
+      "run_seconds": 0.002286,
+      "resource_limits": {
+        "max_materialized_points": 20000,
+        "max_pairs": 10000000,
+        "max_codewords": 262144,
+        "max_orbit_points": 10000,
+        "max_trials": 200,
+        "solver_seconds": 30,
+        "max_dgls_words": 16777216,
+        "max_dimension": 256,
+        "max_nodes": 100,
+        "max_gram_entries": 2000000,
+        "max_rank_work": 50000000,
+        "max_rational_bits": 4096
+      }
+    },
+    {
+      "recipe": "discovery/recipes/roots_d4.json",
+      "recipe_sha256": "66eeb7f794c9c2e294209586552bb979e277789339db5ef2be428bb4866a6476",
+      "output_id": "roots",
+      "operators": [
+        "geometry.integer_code"
+      ],
+      "dimension": 4,
+      "ambient_dimension": 4,
+      "cardinality": 24,
+      "origin": "imported",
+      "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+      "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_d4.json",
+      "receipt_sha256": "e869f9cc66296e0cc10bfc4f5b0e06879ae111d03cd48aca434c491b826880a6",
+      "independent_verification": {
+        "status": "exact_replayed",
+        "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+        "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+      },
+      "artifact_kind": "spherical_code",
+      "proof_summary": {
+        "rank_scalar_work": 448,
+        "pairs_checked": 276
+      },
+      "run_seconds": 0.003237,
+      "resource_limits": {
+        "max_materialized_points": 20000,
+        "max_pairs": 10000000,
+        "max_codewords": 262144,
+        "max_orbit_points": 10000,
+        "max_trials": 200,
+        "solver_seconds": 30,
+        "max_dgls_words": 16777216,
+        "max_dimension": 256,
+        "max_nodes": 100,
+        "max_gram_entries": 2000000,
+        "max_rank_work": 50000000,
+        "max_rational_bits": 4096
+      }
+    },
+    {
+      "recipe": "discovery/recipes/roots_d5.json",
+      "recipe_sha256": "2107d14b8838da95b6a90f8d8c3b7af6ee9d876d69ce629a789979018b69edc6",
+      "output_id": "roots",
+      "operators": [
+        "geometry.integer_code"
+      ],
+      "dimension": 5,
+      "ambient_dimension": 5,
+      "cardinality": 40,
+      "origin": "imported",
+      "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+      "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_d5.json",
+      "receipt_sha256": "6473cfe001e93fe254ac186ffdd105be93567fecddd5fb0f17d9795e6e0e00f7",
+      "independent_verification": {
+        "status": "exact_replayed",
+        "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+        "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+      },
+      "artifact_kind": "spherical_code",
+      "proof_summary": {
+        "rank_scalar_work": 1150,
+        "pairs_checked": 780
+      },
+      "run_seconds": 0.004506,
+      "resource_limits": {
+        "max_materialized_points": 20000,
+        "max_pairs": 10000000,
+        "max_codewords": 262144,
+        "max_orbit_points": 10000,
+        "max_trials": 200,
+        "solver_seconds": 30,
+        "max_dgls_words": 16777216,
+        "max_dimension": 256,
+        "max_nodes": 100,
+        "max_gram_entries": 2000000,
+        "max_rank_work": 50000000,
+        "max_rational_bits": 4096
+      }
+    },
+    {
+      "recipe": "discovery/recipes/roots_e6.json",
+      "recipe_sha256": "9415a0b0db1ec93bfa17229a5b56a43682ec67d6e30eeaf8bd91672f6d0376e1",
+      "output_id": "roots",
+      "operators": [
+        "geometry.integer_code"
+      ],
+      "dimension": 6,
+      "ambient_dimension": 8,
+      "cardinality": 72,
+      "origin": "imported",
+      "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+      "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_e6.json",
+      "receipt_sha256": "5c5fa537dfe24da712dd9f56d969a2a58b48388b3139737c8e2b86c09a0ab972",
+      "independent_verification": {
+        "status": "exact_replayed",
+        "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+        "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+      },
+      "artifact_kind": "spherical_code",
+      "proof_summary": {
+        "rank_scalar_work": 4448,
+        "pairs_checked": 2556
+      },
+      "run_seconds": 0.006299,
+      "resource_limits": {
+        "max_materialized_points": 20000,
+        "max_pairs": 10000000,
+        "max_codewords": 262144,
+        "max_orbit_points": 10000,
+        "max_trials": 200,
+        "solver_seconds": 30,
+        "max_dgls_words": 16777216,
+        "max_dimension": 256,
+        "max_nodes": 100,
+        "max_gram_entries": 2000000,
+        "max_rank_work": 50000000,
+        "max_rational_bits": 4096
+      }
+    },
+    {
+      "recipe": "discovery/recipes/roots_e7.json",
+      "recipe_sha256": "a398f888a43803ca666959d12c2f0b16bbc431496b077c949ecb30632dc6ee35",
+      "output_id": "roots",
+      "operators": [
+        "geometry.integer_code"
+      ],
+      "dimension": 7,
+      "ambient_dimension": 8,
+      "cardinality": 126,
+      "origin": "imported",
+      "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+      "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_e7.json",
+      "receipt_sha256": "579ec074726a0545120ca7e230da699241cce8f946ae1a21a8c929e96fca360f",
+      "independent_verification": {
+        "status": "exact_replayed",
+        "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+        "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+      },
+      "artifact_kind": "spherical_code",
+      "proof_summary": {
+        "rank_scalar_work": 9552,
+        "pairs_checked": 7875
+      },
+      "run_seconds": 0.010811,
+      "resource_limits": {
+        "max_materialized_points": 20000,
+        "max_pairs": 10000000,
+        "max_codewords": 262144,
+        "max_orbit_points": 10000,
+        "max_trials": 200,
+        "solver_seconds": 30,
+        "max_dgls_words": 16777216,
+        "max_dimension": 256,
+        "max_nodes": 100,
+        "max_gram_entries": 2000000,
+        "max_rank_work": 50000000,
+        "max_rational_bits": 4096
+      }
+    },
+    {
+      "recipe": "discovery/recipes/roots_e8.json",
+      "recipe_sha256": "3bf6ff69b0b8fd9c59d9e0ded73d1086089248406597a86f5e8491aa315f3514",
+      "output_id": "roots",
+      "operators": [
+        "geometry.integer_code"
+      ],
+      "dimension": 8,
+      "ambient_dimension": 8,
+      "cardinality": 240,
+      "origin": "imported",
+      "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
+      "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_e8.json",
+      "receipt_sha256": "df71caa70c186d587f16b8390cebe338d85acc50878afeb9cfee12a7a99e0e9a",
+      "independent_verification": {
+        "status": "exact_replayed",
+        "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+        "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+      },
+      "artifact_kind": "spherical_code",
+      "proof_summary": {
+        "rank_scalar_work": 21888,
+        "pairs_checked": 28680
+      },
+      "run_seconds": 0.022401,
+      "resource_limits": {
+        "max_materialized_points": 20000,
+        "max_pairs": 10000000,
+        "max_codewords": 262144,
+        "max_orbit_points": 10000,
+        "max_trials": 200,
+        "solver_seconds": 30,
+        "max_dgls_words": 16777216,
+        "max_dimension": 256,
+        "max_nodes": 100,
+        "max_gram_entries": 2000000,
+        "max_rank_work": 50000000,
+        "max_rational_bits": 4096
+      }
+    }
+  ]
+}
