@@ -2,7 +2,7 @@
 
 The three operators in `engines/construction_search.py` generate and assemble
 candidate configurations. They use the existing DAG, budgets, typed planner and
-independent exact coordinate verifier. All 40 registered operators have planner
+independent exact coordinate verifier. All 41 registered operators have planner
 input/output signatures. No dimension-to-record dispatch or target-count table
 is used by the new construction operators.
 
@@ -44,6 +44,14 @@ conflicting orbits. All source points can be removed and shared deletion costs
 are charged once. It supports nonfree sign actions by deduplicating stabilizers.
 See [partial orbits](PARTIAL_ORBITS.md) for its exact source-symmetry requirement,
 resource limits and independent geometry checks.
+
+`search.contact_reflections` uses the shared contact/opposite-contact reflection
+generator and both signs. It can replace several source points jointly and
+checks a saturating blocker matching before numerical selection. Its source and
+complete output are independently verified. The exact six-point regression
+stays at six with negative-contact sums and reaches eight with this operator;
+this is a control, not a new kissing bound. See
+[contact reflections](CONTACT_REFLECTIONS.md).
 
 ## Held-out measurement
 

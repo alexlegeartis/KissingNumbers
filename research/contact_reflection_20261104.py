@@ -21,7 +21,8 @@ def _dot(a, g, b):
 
 
 def search(points, metric, seeds=None, pair_limit=100000, candidate_limit=5000,
-           blocker_limit=None, seconds=60):
+           blocker_limit=None, seconds=60, return_pool=False):
+    if type(return_pool) is not bool:raise ValueError('return_pool must be Boolean')
     def as_integer(v):
         if isinstance(v,(bool,np.bool_)) or not isinstance(v,(int,np.integer)):
             raise ValueError('coordinates and metric must be exact integers')
@@ -75,6 +76,9 @@ def search(points, metric, seeds=None, pair_limit=100000, candidate_limit=5000,
     receipt={'source_points':n,'norm':N,'seed_count':len(seeds),'pairs_examined':pairs,
              'contact_pairs':contacts,'candidates_after_filter':m,'truncated':truncated,
              'blocker_limit':blocker_limit,'arithmetic':'bounded int64' if fast else 'Python integers','source_validity':'assumed; independently verify input','metric_positive_definiteness':'assumed; independently verify input'}
+    if return_pool:
+        return {'candidates':[list(v) for v in candidates],
+                'blockers':[list(b) for b in blockers],'receipt':receipt}
     if not m:return {'gain':0,'removed':[],'added':[],'receipt':receipt}
     blocked_ids=sorted({j for bad in blockers for j in bad}); pos={j:k for k,j in enumerate(blocked_ids)}; nb=len(blocked_ids)
     # A matching saturating every candidate assigns it a distinct mandatory
