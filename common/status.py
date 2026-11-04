@@ -526,3 +526,7 @@ for _d in (82, 83, 84, 85, 87):
 
 for _d in (27, 28, 29, 30, 31):
     STATUS[_d] = ('heads', 'joint core/auxiliary refills, reflected unions and corrected sextet isometries over the October 28 PackingStar release; full exact replay and direct-int64 insertion checks; broader geometry remains open (dim27-31-joint-refills/verify.py)')
+
+# Explicit algebraic completions, independently replayed 4 November 2026.
+for _d in (27,31):
+    STATUS[_d] = ('heads', 'partial signed-orbit shared-deletion selection and an orthogonal sign cube; full explicit geometry and independent direct-integer changed pairs (dim27-31-algebraic-completion/verify.py)')

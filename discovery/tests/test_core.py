@@ -51,6 +51,15 @@ class CoreTests(unittest.TestCase):
         data={'coordinates':[[scale,0],[-scale,0],[0,scale]],'norm_squared':scale**2}
         r=verify_integer_spherical(data,self.ctx)
         self.assertEqual(r.details['integer_backend'],'Python integers');self.assertEqual(r.details['dimension'],2)
+    def test_bounded_binary32_and_int64_paths_match_scalar_geometry(self):
+        for scale,backend in [(1,'bounded exact binary32'),(10000,'int64 proven overflow-safe')]:
+            rows=[[3*scale,4*scale],[-5*scale,0],[4*scale,-3*scale]]
+            result=verify_integer_spherical({'coordinates':rows,'norm_squared':25*scale**2},self.ctx)
+            products=[sum(x*y for x,y in zip(a,b)) for i,a in enumerate(rows) for b in rows[i+1:]]
+            self.assertEqual(result.details['integer_backend'],backend)
+            self.assertEqual(result.details['max_inner_product'],max(products))
+        with self.assertRaisesRegex(ValueError,'max_gram_entries'):
+            verify_integer_spherical(square()['params'],RunContext(Path('.'),{'max_gram_entries':15}))
     def test_status_and_facts_cannot_forge_proof(self):
         a=output_artifact(run_program(program(),self.ctx));a.facts['cardinality']=1000
         with self.assertRaises(ValueError):verify_artifact(a,self.ctx)

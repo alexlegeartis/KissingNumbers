@@ -58,6 +58,10 @@ def exact_integer_rank(rows, context):
                 raise ValueError('Exact rank input must contain integers')
             context.limit('max_rational_bits', value.bit_length())
             row.append(value)
+        # A full-width independent minor fixes the rank. Keep validating all
+        # subsequent rows, without repeating elimination in the full space.
+        if len(basis)==width:
+            continue
         for pivot, old in basis.items():
             if not row[pivot]:
                 continue

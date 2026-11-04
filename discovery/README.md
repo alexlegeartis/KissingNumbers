@@ -8,13 +8,19 @@ separate 43D task's discovery. Its full replays retain the documented P48n and
 complete-family population inputs; there is no held-out or worldwide-priority
 claim.
 
+The [algebraic continuation](../research/algebraic_switches_20261104/README.md)
+finds **209,825 points in 27D** (+18) and **251,196 in 31D** (+8). Complete
+explicit geometry and independent direct-integer changed-pair proofs pass.
+A reusable [shared-blocker selector](docs/BLOCKER_EXCHANGE.md) assembles partial
+orbits and charges shared incumbent deletions once.
+
 The Sol continuation adds three target-independent operators: support-orbit
 packing, arbitrary integer point-pool selection across any number of cohorts,
 and negative-contact-sum generation with joint selection. A subsequent extension
 adds exterior-square representations, exact rational orthogonal orbits and
 weighted quadratic-coordinate input. Joint character-coset and sign-orbit
 assembly now replace sparse bases and dense caps together. A finite body/head
-operator finds shared-deletion exchanges. There are now 38
+operator finds shared-deletion exchanges. There are now 39
 registered operators. The separate 1–24 held-out benchmark matches ten targets
 with formula controls and four through actual support search, including 9D306.
 The 13D/14D/31D record attempts have no improved certified witness. See

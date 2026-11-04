@@ -1,0 +1,31 @@
+{
+  "dimension": 30,
+  "source": "/workspace/KissingNumbers-sol/verifications/improved/dim27-31-joint-refills/data/coordinates30_247972.npz",
+  "source_sha256": "d3c8767360bded77dec3cfc9263053c5bcdc65caaef1980954a6fb19217c1730",
+  "baseline": 247972,
+  "supports": 624,
+  "core_weight": 6,
+  "signed_body_shapes": 39936,
+  "core_admitted_bodies": 39936,
+  "tested_bodies": 39936,
+  "body_limit": null,
+  "body_generation_complete": true,
+  "candidate_pool": 2375424,
+  "admitted_candidates": 2114,
+  "blocker_cutoff": 4,
+  "dot_products": 30299389704,
+  "optimization": {
+    "solver_status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "gain": 0,
+    "added": [],
+    "removed": [],
+    "candidate_conflicts": 3936,
+    "exact_binary_ball_clique_cuts": 0,
+    "numerical_gain_upper_bound": -0.0,
+    "scope": "Numerical MILP diagnostics; only full exact output replay can establish an improvement"
+  },
+  "seconds": 223.30899373699867,
+  "new_sota": false,
+  "scope": "Seeded core/tail signed-support grammar with stated weight and body budget; individually selectable points, all incumbent layers mutable. Full final geometry replay is required for a lower bound."
+}

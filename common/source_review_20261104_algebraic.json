@@ -1,0 +1,32 @@
+{
+  "reviewed_at_utc": "2026-11-04T19:21:54Z",
+  "scope": "Bounded current-source comparison for the algebraic completion campaign; no complete worldwide-priority audit.",
+  "packingstar": {
+    "url": "https://github.com/CDM1619/PackingStar",
+    "lookup": "GitHub app fetch_commit on main",
+    "verified_tip": "477df34cf2a09bb9476b735a685b538a82da8c55",
+    "tip_date": "2026-10-28T20:50:24Z",
+    "dimension27": 209760,
+    "dimension29": 231676,
+    "dimension30": 247967,
+    "dimension31": 251169
+  },
+  "cohn": {
+    "url": "https://cohn.mit.edu/kissing-numbers/",
+    "fresh_status": "Failed to fetch: (502) Bad Gateway",
+    "fallback": "research/discovery_campaign_20261104/baselines/cohn.html",
+    "fallback_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+    "fallback_retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
+    "dimension27": 209807,
+    "dimension29": 231697,
+    "dimension30": 247972,
+    "dimension31": 251188,
+    "dimension40": 1126314
+  },
+  "new_verified_counts": {
+    "27": 209825,
+    "31": 251196
+  },
+  "verification": "Complete explicit integer coordinates, every unordered pair, and independent direct-int64 changed pairs. No lattice minimum or unenumerated population assumption.",
+  "manuscript": "Unchanged earlier checkpoint."
+}

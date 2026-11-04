@@ -1,0 +1,7 @@
+{
+  "state": "complete_no_gain_in_two_three_move_pool",
+  "pair_tests": 1,
+  "unique_low_blocker_candidates": 2,
+  "buckets": 1,
+  "scope": "two compatible additions sharing one deletion; three compatible additions with two deletions"
+}

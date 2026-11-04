@@ -83,6 +83,11 @@ class GramTests(unittest.TestCase):
                 rows=matrix.tolist()
                 self.assertEqual(exact_integer_rank(rows,self.ctx)[0],int(sp.Matrix(rows).rank()))
         with self.assertRaises(ValueError):exact_integer_rank([[1,1],[1,-1]],RunContext(Path('.'),{'max_rank_work':1}))
+    def test_full_rank_still_validates_remaining_rows(self):
+        for bad in ([True,0],[1],[2**100,0]):
+            with self.assertRaises(ValueError):
+                exact_integer_rank([[1,0],[0,1],bad],RunContext(Path('.'),{'max_rational_bits':32}))
+        self.assertEqual(exact_integer_rank([[1,0],[0,1]]+[[2,3]]*100,self.ctx)[0],2)
     def test_optimized_python_retains_rejection(self):
         code="from discovery.exact_gram import verify_rational_gram; verify_rational_gram({'gram':[[1,-2],[-2,1]]})"
         result=subprocess.run([sys.executable,'-O','-c',code],cwd=Path(__file__).resolve().parents[2],capture_output=True,text=True)

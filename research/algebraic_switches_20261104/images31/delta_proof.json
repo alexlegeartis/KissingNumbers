@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "direct_integer_pairs": 1004764,
+  "maximum_inserted_product": 64,
+  "norm_squared": 128,
+  "cardinality": 251192,
+  "ambient_dimension": 31,
+  "proof_scope": "full freshly checked source geometry plus every inserted/final integer pair; unchanged pairs inherited"
+}

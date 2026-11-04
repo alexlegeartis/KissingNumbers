@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "audit_date": "2026-11-04",
-  "built_at_utc": "2026-11-04T18:15:04.523035+00:00",
+  "built_at_utc": "2026-11-04T19:22:53.788273+00:00",
   "canonical_matrix": "research/discovery_campaign_20261104/coverage_1_24/matrix.json",
-  "canonical_matrix_sha256": "9915b8bcfc5a2320f352bca8eb21e14bbf323fbe6342ae2c6608d4d896734ea9",
+  "canonical_matrix_sha256": "60c22416d6e83aca5266a6e756b7ae30ed685a6f22147ca51cedef0730a746c9",
   "incoming_patch": {
     "patch": "research/discovery_campaign_20261104/coverage_1_24/integration/coverage-benchmarks-20261104.patch",
     "sha256": "7ac4796cc14c476424e3a09888e499c077844828c9921b7508c8e81e384bd741",

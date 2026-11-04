@@ -2,7 +2,7 @@
 
 The three operators in `engines/construction_search.py` generate and assemble
 candidate configurations. They use the existing DAG, budgets, typed planner and
-independent exact coordinate verifier. All 38 registered operators have planner
+independent exact coordinate verifier. All 39 registered operators have planner
 input/output signatures. No dimension-to-record dispatch or target-count table
 is used by the new construction operators.
 

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "dimension": 31,
+  "points": 251196,
+  "squared_norm": 128,
+  "inner_product_limit": 64,
+  "antipodal_pairs": 125568,
+  "unpaired_points": 60,
+  "distinct_line_pairs_checked": 7883598528,
+  "paired_to_unpaired_checks": 7534080,
+  "unpaired_pairs_checked": 1770,
+  "unordered_point_pairs_covered": 31549589610,
+  "maximum_checked_product": 64,
+  "canonical_point_sha256": "69531af8db6e3c3dd27aa48945a323e926cc8df5d5a96493c7680aa171764f1b",
+  "file_sha256": "02cddb863829f7298a1b80779603f3963f0c0db3eef0ff2a9050abe601e56127",
+  "arithmetic": "Exact bounded integer products in binary32; no tolerance",
+  "seconds": 26.78365447499891
+}

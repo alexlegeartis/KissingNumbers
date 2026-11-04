@@ -410,7 +410,7 @@ add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover'
 
 # October code and nearest-coset constructions supersede earlier packages;
 # add() preserves every displaced claim in SUPERSEDED for the history audit.
-for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions', 'dim88-96-z8-golay', 'dim26-30-asymmetric-exchanges', 'dim27-quadratic-normal-module', 'dim31-normal-module-exchange', 'dim27-31-joint-refills'):
+for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions', 'dim88-96-z8-golay', 'dim26-30-asymmetric-exchanges', 'dim27-quadratic-normal-module', 'dim31-normal-module-exchange', 'dim27-31-joint-refills', 'dim27-31-algebraic-completion'):
     if _package == 'dim32-35-signed-layers':
         for _dimension, _family in ((33, 'classic'), (34, 'classic'), (35, 'multi35')):
             with io.open(os.path.join(IMP, _package, 'source', _family,
@@ -1994,6 +1994,7 @@ if '--write-results' in sys.argv and not fail:
         'dim61-68-95-96-code-layers': 'shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay',
         'dim26-30-asymmetric-exchanges': 'signed-point normal-sector exchanges without antipodal constraints; full independent exact all-pairs replay',
         'dim27-quadratic-normal-module': '384-point quadratic E8/cuboctahedral module replacing a 370-point normal sector; complete independent exact all-pairs verification',
+        'dim27-31-algebraic-completion': 'partial signed-orbit selection with shared deletions in 27D and an eight-point orthogonal sign cube in 31D; full exact geometry and independent direct-integer changed pairs',
         'dim27-31-joint-refills': 'joint core/auxiliary refills, reflected unions and corrected sextet symmetries over the October 28 PackingStar files; complete exact geometry and direct-int64 insertion checks',
         'dim31-normal-module-exchange': 'signed simplex module exchanged into PackingStar coordinates by exact bipartite matching; complete independent all-pairs verification',
         'dim26-31-residual-completions': 'shared midpoint replacements, axiswise residual heads and exact exceptional pure tails; independent full-coordinate proof',
@@ -2041,6 +2042,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("The further 28 October continuation gives 370376 in 33D (+8), 390990 in 34D (+8), 415334 in 35D (+20), 501687 in 36D (+15) and 505503 in 37D (+15), compared with the preceding repository certificates. Shared root-star deletions and a latitude-preserving phase refill have two independent exact proof routes, reconstruction and rejection controls. Broader complete-support, signed-region and base-choice searches have not yielded a larger verified gain in this pass. The 32D, 38D and 39D bounds are unchanged.")
     out.append("")
     out.append("The 28 October Fano-grid and cube-edge construction gives 611522 in 38D (+1128 over the preceding 610394-point repository certificate). It replaces 5408 latitude points with 6656 and removes 120 caps. Two independent exact proofs check all retained layers, and the expanded replay checks all 22147840 distinct latitude pairs. A small recipe reconstructs the certificate without search. The 6656-point latitude population saturates this particular 63-support model; other supports and norm splits remain open. The manuscript remains deferred.")
+    out.append("")
+    out.append("The 4 November algebraic completion gives 209825 in 27D (+18) and 251196 in 31D (+8). Individual signed-support choices share 14 deletions for 32 additions in 27D. An eight-point orthogonal sign cube fills a 31D hole without deletion. Both complete explicit configurations and all changed pairs replay exactly; the registered engine reproduces the selections. The manuscript is unchanged.")
     out.append("")
     out.append("The 4 November finite body/head 43D continuation gives 2919785 points (+3 over the preceding 2919782 certificate), with 3450 explicit tiny points. The generic engine independently generated the same final point set as the separate discovery task. Both ambient and coefficient-coordinate exact replays pass. Complete-family population inputs and the deferred manuscript scope are unchanged.")
     out.append("")

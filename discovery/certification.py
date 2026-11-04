@@ -33,20 +33,27 @@ def verify_integer_spherical(data,context=None):
     C=np.array(rows,dtype=dtype);W=np.array(weights,dtype=dtype)
     norms=np.sum(C*C*W,axis=1)
     if any(int(x)!=norm for x in norms): raise ValueError('Unequal or incorrect norms')
+    context.limit('max_gram_entries',min(128,n)*n)
+    # Every dot-product operand, product and partial sum is an integer whose
+    # absolute value is bounded by maxabs**2*sum(weights). Below 2**24 these
+    # sums are represented exactly in binary32, in any accumulation order.
+    binary32=maxabs*maxabs*sum(weights)<2**24
+    products=C.astype(np.float32) if binary32 else C
+    product_weights=W.astype(np.float32) if binary32 else W
     maximum=None
     for start in range(0,n,128):
-        G=(C[start:start+128]*W)@C.T
+        G=(products[start:start+128]*product_weights)@products.T
         for k,row in enumerate(G):
             off=row[start+k+1:]
             if len(off):
-                value=int(max(off));maximum=value if maximum is None else max(maximum,value)
+                value=int(np.max(off));maximum=value if maximum is None else max(maximum,value)
                 if 2*value>norm: raise ValueError('Pairwise kissing inequality violated')
     from .exact_gram import exact_integer_rank
     rank,rank_work=exact_integer_rank(rows,context)
     facts={'dimension':rank,'rank_exact':rank,'ambient_dimension':d,'cardinality':n,'norm_squared':norm,
            'max_inner_product':maximum,'pairs_checked':n*(n-1)//2}
     return Verification('exact','integer coordinates with positive diagonal quadratic form and exact rank',
-                        {**facts,'facts':facts,'data_sha256':digest(data),'integer_backend':'int64 proven overflow-safe' if safe else 'Python integers',
+                        {**facts,'facts':facts,'data_sha256':digest(data),'integer_backend':'bounded exact binary32' if binary32 else ('int64 proven overflow-safe' if safe else 'Python integers'),
                          'rank_scalar_work':rank_work})
 
 

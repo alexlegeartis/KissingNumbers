@@ -96,12 +96,13 @@ def transform_rows(rows, numerator, denominator, context, image_rows=None):
 def conflict_graph(left, right, weights, norm, context):
     """All cross conflicts using bounded row blocks and exact integer dots."""
     context.limit("max_pairs", len(left) * len(right))
-    if not right:
+    if not left or not right:
         return [[] for _ in left], "int64 proven overflow-safe"
     context.limit("max_gram_entries", min(64, len(left)) * len(right))
     bound = max(abs(x) for row in left for x in row) * max(abs(x) for row in right for x in row) * sum(weights)
     safe = bound < 2 ** 62 and max(weights) < 2 ** 62
-    dtype = np.int64 if safe else object
+    binary32 = bound < 2**24
+    dtype = np.float32 if binary32 else (np.int64 if safe else object)
     second = np.asarray(right, dtype=dtype)
     weight_array = np.asarray(weights, dtype=dtype)
     graph = []
@@ -113,7 +114,7 @@ def conflict_graph(left, right, weights, norm, context):
         edges += sum(map(len, block))
         context.limit("max_gram_entries", edges)
         graph.extend(block)
-    return graph, "int64 proven overflow-safe" if safe else "Python integers"
+    return graph, "bounded exact binary32" if binary32 else ("int64 proven overflow-safe" if safe else "Python integers")
 
 
 def maximum_independent_bipartite(graph, right_count):
@@ -183,7 +184,13 @@ def select_coupled_rows(rows, image_rows, weights, norm, params, context):
     right = [full_right[i] for i in right_indices]
     scaled_norm = norm * denominator ** 2
     context.limit("max_rational_bits", scaled_norm.bit_length())
-    graph, backend = conflict_graph(left, right, weights, scaled_norm, context)
+    # Any common point belongs to both valid sources, so it is compatible
+    # with the entire other copy. Keep its graph row but skip its products.
+    common_points = left_set & set(map(tuple, full_right))
+    exclusive = [i for i,row in enumerate(left) if tuple(row) not in common_points]
+    reduced, backend = conflict_graph([left[i] for i in exclusive], right, weights, scaled_norm, context)
+    graph = [[] for _ in left]
+    for i,row in zip(exclusive,reduced):graph[i]=row
     certificate = maximum_independent_bipartite(graph, len(right))
     chosen = [left[i] for i in certificate["left_indices"]] + [right[i] for i in certificate["right_indices"]]
     # Common gcd reduction changes neither normalized geometry nor matching.
@@ -198,7 +205,10 @@ def select_coupled_rows(rows, image_rows, weights, norm, params, context):
         scaled_norm //= common * common
     receipt = {**certificate, "source_cardinality": count, "image_cardinality": image_count,
                "image_new_points": len(right), "overlap_points": image_count - len(right),
-               "cross_pairs_checked": count * len(right),
+               "cross_pairs_checked": len(exclusive) * len(right),
+               "common_left_points": len(common_points),
+               "cross_pairs_inherited_common": len(common_points) * len(right),
+               "full_cross_pairs_covered": count * len(right),
                "conflict_edges": sum(map(len, graph)), "graph_sha256": digest(graph),
                "integer_backend": backend, "matrix_numerator": numerator,
                "matrix_denominator": denominator, "coordinate_gcd_reduction": common,

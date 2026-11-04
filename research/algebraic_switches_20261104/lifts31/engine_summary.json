@@ -1,0 +1,22 @@
+{
+  "operator": "selection.blocker_exchange",
+  "baseline": 251192,
+  "points": 251196,
+  "facts": {
+    "gain": 4,
+    "selected_candidates": 4,
+    "removed_sources": 0,
+    "new_sota": false
+  },
+  "selected": [
+    88,
+    89,
+    134,
+    135
+  ],
+  "removed": [],
+  "direct_integer_maximum": 64,
+  "changed_pairs": 1004780,
+  "verification_status": "unverified",
+  "scope": "Registered finite-oracle selection plus direct exact changed-pair checks; full geometry replay still required"
+}

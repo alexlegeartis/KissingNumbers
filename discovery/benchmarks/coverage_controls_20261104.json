@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "built_at_utc": "2026-11-04T18:15:04.523035+00:00",
+  "built_at_utc": "2026-11-04T19:22:53.788273+00:00",
   "canonical_matrix": "research/discovery_campaign_20261104/coverage_1_24/matrix.json",
-  "canonical_matrix_sha256": "9915b8bcfc5a2320f352bca8eb21e14bbf323fbe6342ae2c6608d4d896734ea9",
+  "canonical_matrix_sha256": "60c22416d6e83aca5266a6e756b7ae30ed685a6f22147ca51cedef0730a746c9",
   "source": {
     "url": "https://cohn.mit.edu/kissing-numbers/",
     "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",

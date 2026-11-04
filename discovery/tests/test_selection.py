@@ -69,6 +69,16 @@ class SelectionTests(unittest.TestCase):
         self.assertEqual(result.facts["cardinality"], 4)
         self.assertEqual(result.verification.details["isometric_exchange"]["integer_backend"], "Python integers")
 
+    def test_common_points_are_retained_with_complete_cross_pair_accounting(self):
+        source=integer_code([],{'coordinates':[[1,0],[-1,0],[0,1]],'norm_squared':1},self.context)
+        result=selection.isometric_exchange([source],{'matrix':[[1,0],[0,-1]]},self.context)
+        receipt=result.verification.details['isometric_exchange']
+        self.assertEqual(result.facts['cardinality'],4)
+        self.assertEqual(receipt['common_left_points'],2)
+        self.assertEqual(receipt['cross_pairs_checked'],1)
+        self.assertEqual(receipt['cross_pairs_inherited_common'],2)
+        self.assertEqual(receipt['full_cross_pairs_covered'],3)
+
     def test_two_different_codes_and_norm_alignment_are_coupled(self):
         # The second independently valid source is the changed-alphabet image
         # of the first, at a different integer-coordinate scale.

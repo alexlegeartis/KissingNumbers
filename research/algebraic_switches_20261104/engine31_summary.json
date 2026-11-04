@@ -1,0 +1,50 @@
+{
+  "operator": "selection.isometric_exchange",
+  "facts": {
+    "dimension": 31,
+    "rank_exact": 31,
+    "ambient_dimension": 31,
+    "cardinality": 251192,
+    "norm_squared": 32,
+    "max_inner_product": 16,
+    "pairs_checked": 31548584836
+  },
+  "verification_status": "exact",
+  "seconds": 274.62787182100146,
+  "source": "verifications/improved/dim27-31-joint-refills/data/coordinates31_251188.npz",
+  "source_sha256": "bc9cb7f88686a88daff99e951e07daed7665eb0e3f3da6a1a094d93090128998",
+  "budget": {
+    "max_materialized_points": 600000,
+    "max_pairs": 150000000000,
+    "max_codewords": 262144,
+    "max_orbit_points": 10000,
+    "max_trials": 200,
+    "solver_seconds": 30,
+    "max_dgls_words": 16777216,
+    "max_dimension": 256,
+    "max_nodes": 100,
+    "max_gram_entries": 150000000,
+    "max_rank_work": 1000000000,
+    "max_rational_bits": 4096
+  },
+  "isometric_exchange": {
+    "optimal_in_supplied_graph": true,
+    "source_cardinality": 251188,
+    "image_cardinality": 251188,
+    "image_new_points": 116504,
+    "overlap_points": 134684,
+    "cross_pairs_checked": 13573182016,
+    "common_left_points": 134684,
+    "cross_pairs_inherited_common": 15691224736,
+    "full_cross_pairs_covered": 29264406752,
+    "conflict_edges": 3536678,
+    "graph_sha256": "86c311913621db9f9e7e7320394e20289bca51f5ddc975180eebda66fbd68352",
+    "integer_backend": "bounded exact binary32",
+    "matrix_denominator": 1,
+    "coordinate_gcd_reduction": 2,
+    "scope": "maximum cardinality subset of this two-copy union; no global optimality or novelty claim",
+    "source_data_sha256": "059f8e40fc0521701abad230e7e134bc1e0e6c12cc19e94bda0c3c772590cc58"
+  },
+  "new_sota": false,
+  "scope": "Seeded algebraic isometry search. Exact finite-union optimality and full configuration replay; no unrestricted optimum or worldwide-priority assertion."
+}

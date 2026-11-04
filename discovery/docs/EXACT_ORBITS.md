@@ -2,7 +2,7 @@
 
 These additions are dimension-independent instruments. They do not establish
 universal competitiveness, new records, abstract group orders or irreducibility.
-There are38 registered operators, all with planner input/output signatures.
+There are 39 registered operators, all with planner input/output signatures.
 
 ## Exterior-square construction
 

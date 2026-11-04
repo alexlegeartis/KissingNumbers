@@ -9,7 +9,7 @@ from time import monotonic
 
 import numpy as np
 
-from ..core import Artifact, check_params, digest, integer
+from ..core import Artifact, Verification, check_params, digest, integer
 from ..certification import verify_artifact, verify_integer_spherical
 
 
@@ -308,8 +308,89 @@ def contact_exchange(inputs, params, context):
     return result
 
 
+def blocker_exchange(inputs, params, context):
+    """Select individual candidates or weighted families from sparse oracles.
+
+    Geometry and family populations are supplied assumptions. The exact
+    discrete output is an unverified geometric exchange proposal.
+    """
+    from scipy.optimize import milp, Bounds, LinearConstraint
+    from scipy.sparse import coo_matrix
+    check_params(params, ('blockers','candidate_conflicts','candidate_weights',
+                          'removal_costs','cliques','seconds'))
+    if inputs:raise ValueError('blocker_exchange takes explicit oracle data')
+    blockers=params.get('blockers');conflicts=params.get('candidate_conflicts',[])
+    if not isinstance(blockers,list) or not blockers:
+        raise ValueError('Nonempty candidate blocker lists required')
+    n=len(blockers);context.limit('max_codewords',n)
+    for row in blockers:
+        if not isinstance(row,list) or any(type(j) is not int or j<0 for j in row) or len(set(row))!=len(row):
+            raise ValueError('Each blocker list needs distinct nonnegative integer indices')
+    used=sorted({j for row in blockers for j in row});old={j:n+k for k,j in enumerate(used)}
+    context.limit('max_codewords',n+len(used))
+    weights=params.get('candidate_weights',[1]*n);costs=params.get('removal_costs')
+    if not isinstance(weights,list) or len(weights)!=n:raise ValueError('Wrong candidate weight list')
+    if costs is not None and (not isinstance(costs,list) or any(j>=len(costs) for j in used)):
+        raise ValueError('Removal costs must cover every used source index')
+    context.limit('max_materialized_points',n+(0 if costs is None else len(costs)))
+    for x in weights+([] if costs is None else costs):
+        integer(x,'positive candidate weight/removal cost');context.limit('max_rational_bits',x.bit_length())
+    prices=[1 if costs is None else costs[j] for j in used]
+    if max(weights+prices,default=1)>=2**50:raise ValueError('Weights exceed the numerical proposal backend')
+    if not isinstance(conflicts,list) or any(not isinstance(e,list) or len(e)!=2 or
+            any(type(j) is not int or not 0<=j<n for j in e) or e[0]==e[1] for e in conflicts):
+        raise ValueError('Conflicts need two distinct valid candidate indices')
+    conflicts=sorted({tuple(sorted(e)) for e in conflicts})
+    cliques=params.get('cliques',[])
+    if not isinstance(cliques,list) or any(not isinstance(c,list) or len(c)<2 or
+            any(type(j) is not int or not 0<=j<n for j in c) or len(set(c))!=len(c) for c in cliques):
+        raise ValueError('Invalid candidate clique')
+    entries=2*(sum(map(len,blockers))+len(conflicts))+sum(map(len,cliques))
+    context.limit('max_gram_entries',entries)
+    context.limit('max_rank_work',entries+n+len(used))
+    seconds=_seconds(params.get('seconds',1),context)
+    rr=[];cc=[];vv=[];upper=[]
+    for i,row in enumerate(blockers):
+        for j in row:
+            t=len(upper);rr.extend((t,t));cc.extend((i,old[j]));vv.extend((1,-1));upper.append(0)
+    for i,j in conflicts:
+        t=len(upper);rr.extend((t,t));cc.extend((i,j));vv.extend((1,1));upper.append(1)
+    for clique in cliques:
+        t=len(upper);rr.extend([t]*len(clique));cc.extend(clique);vv.extend([1]*len(clique));upper.append(1)
+    matrix=coo_matrix((vv,(rr,cc)),shape=(len(upper),n+len(used))).tocsc()
+    result=milp(np.array([-x for x in weights]+prices,float),integrality=np.ones(n+len(used)),
+                bounds=Bounds(0,1),constraints=LinearConstraint(matrix,-np.inf,upper),
+                options={'time_limit':seconds,'mip_rel_gap':0})
+    binary=_binary_solution(result,n+len(used));added=[];removed=[]
+    if binary is not None:
+        chosen=set(map(int,np.flatnonzero(binary[:n])));deleted={j for j in used if binary[old[j]]}
+        required={j for i in chosen for j in blockers[i]}
+        if not required<=deleted or any(i in chosen and j in chosen for i,j in conflicts) or any(
+                sum(i in chosen for i in clique)>1 for clique in cliques):
+            raise ValueError('Solver proposal violates an exact oracle constraint')
+        # Extra positive-cost deletions are never needed for feasibility.
+        candidate_gain=sum(weights[i] for i in chosen)-sum(1 if costs is None else costs[j] for j in required)
+        if candidate_gain>0:added=sorted(chosen);removed=sorted(required)
+    gain=sum(weights[i] for i in added)-sum(1 if costs is None else costs[j] for j in removed)
+    # Prefer a smaller exchange when a compatible set of free candidates
+    # attains the same objective as a solver solution with neutral changes.
+    free={i for i,row in enumerate(blockers) if not row}
+    if not any(i in free and j in free for i,j in conflicts) and not any(
+            sum(i in free for i in clique)>1 for clique in cliques):
+        free_gain=sum(weights[i] for i in free)
+        if free_gain>gain or (free_gain==gain and removed):
+            added=sorted(free);removed=[];gain=free_gain
+    return Artifact('exchange_proposal',{'backend':'shared_blocker_oracles',
+        'selected_candidate_indices':added,'removed_source_indices':removed,
+        'input_sha256':digest(params),'solver':_diagnostic(result),
+        'scope':'Supplied incompatibility oracles and family weights are assumptions; independent geometric replay is required'},
+        {'gain':gain,'selected_candidates':len(added),'removed_sources':len(removed),'new_sota':False},
+        Verification('unverified','Exact discrete feasibility of a numerical exchange proposal; source geometry and populations not certified'))
+
+
 OPERATORS = {'search.support_packing': support_packing, 'selection.integer_pool': integer_pool,
-             'search.contact_exchange': contact_exchange}
+             'search.contact_exchange': contact_exchange, 'selection.blocker_exchange':blocker_exchange}
 INPUT_KINDS = {'search.support_packing': (), 'selection.integer_pool': (),
-               'search.contact_exchange': ('spherical_code',)}
+               'search.contact_exchange': ('spherical_code',),'selection.blocker_exchange':()}
 OUTPUT_KINDS = {name: ('spherical_code',) for name in OPERATORS}
+OUTPUT_KINDS['selection.blocker_exchange']=('exchange_proposal',)

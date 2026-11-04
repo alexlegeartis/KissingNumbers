@@ -7,13 +7,14 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-35 packages, one per **construction idea** rather than one per dimension, because several
+36 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
-| [`dim27-31-joint-refills`](improved/dim27-31-joint-refills/) | 27–31 | current 209,807, 221,988, 231,697, 247,972, 251,188; exact full geometry and direct-integer insertion checks |
+| [`dim27-31-algebraic-completion`](improved/dim27-31-algebraic-completion/) | 27, 31 | current 209,825 and 251,196; partial signed orbits, shared deletions and an orthogonal sign cube; complete exact geometry and independent direct-integer changes |
+| [`dim27-31-joint-refills`](improved/dim27-31-joint-refills/) | 27–31 | current in 28–30D; retained 209,807 and 251,188 in 27D/31D; exact full geometry and direct-integer insertion checks |
 | [`dim26-30-asymmetric-exchanges`](improved/dim26-30-asymmetric-exchanges/) | 26, 28–30 | 201,136 current in 26D; retained 221,694; 231,638; 247,960; asymmetric integer codes with complete exact all-pairs proofs |
 | [`dim27-quadratic-normal-module`](improved/dim27-quadratic-normal-module/) | 27 | retained 209,600-point quadratic construction, +14 over PackingStar; complete independent exact all-pairs replay |
 | [`dim31-normal-module-exchange`](improved/dim31-normal-module-exchange/) | 31 | retained 251,110-point integer construction, +108 over PackingStar's 28 October update; complete independent all-pairs replay |

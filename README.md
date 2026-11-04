@@ -8,13 +8,13 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
-> **Current repository status — 29 October 2026.** Verified lower bounds in
+> **Current repository status — 4 November 2026.** Verified lower bounds in
 > **70 dimensions**; the [results table](#results-and-construction-history)
 > lists every current value, comparison source and verification package.
 >
-> - **27–31D:** **209 807, 221 988, 231 697, 247 972, 251 188** exceed
+> - **27–31D:** **209 825, 221 988, 231 697, 247 972, 251 196** exceed
 >   [PackingStar’s October 28 release](common/source_review_20261029_27_31.json)
->   by **47, 124, 21, 5, 19** points. [Complete exact proofs and explicit replacements](verifications/improved/dim27-31-joint-refills/) accompany these modest gains.
+>   by **65, 124, 21, 5, 27** points. New [algebraic completions](verifications/improved/dim27-31-algebraic-completion/) add 18 in 27D and eight in 31D, with complete explicit coordinate proofs. The [29 October certificates](verifications/improved/dim27-31-joint-refills/) remain available.
 >   **28D is reclaimed at 221 988**, with a gain of **124** from corrected sextet symmetries.
 >   The 26D certificate remains 201 136, two above its pinned comparison.
 > - **33–87D:** further improvements include signed layers, phase refills,
@@ -66,10 +66,10 @@ or the ratio `this work / recorded comparison` when it is at least 2.
 That baseline can precede an intervening record by another author. For example,
 the 25D row compares 197,584 with Ma et al.'s historical 197,056, a gain of
 528 points (+0.268%). The advance over Takhanov-Yun's subsequent 197,583-point
-record is **one point**. In 31D the current 251,188-point construction gains
-**12,838 points** over the historical 238,350-point comparison. Its advance
-over PackingStar's October 28 release of 251,169 is **19 points**, and its
-increase over the preceding repository value 251,180 is **8 points**. The
+record is **one point**. In 31D the current 251,196-point construction gains
+**12,846 points** over the historical 238,350-point comparison. Its advance
+over PackingStar's October 28 release of 251,169 is **27 points**, and its
+increase over the preceding repository value 251,188 is **8 points**. The
 [25D](verifications/improved/dim25-collective-deformation/),
 [historical 31D](verifications/improved/dim31-dual-centres/) and
 [retained 26–31D residual completions](verifications/improved/dim26-31-residual-completions/) packages
@@ -108,11 +108,11 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 18 | 7 654 | [Cohn–Li, BW16 + hexagons](https://arxiv.org/abs/2411.04916v3) | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
 | 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 584** | **SOTA** | +0.268% | — |2026-08-30 to 2026-09-28; since 2026-10-26 | [Collective deformation](verifications/improved/dim25-collective-deformation/) | — |
 | 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 136** | **SOTA** | +0.634% | — | 2026-09-08 to 2026-10-05; reclaimed 2026-10-28 | [Asymmetric exchanges](verifications/improved/dim26-30-asymmetric-exchanges/) | — |
-| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 807** | **SOTA** | +4.077% | — | reclaimed 2026-10-29 | [Joint refills and reflected unions](verifications/improved/dim27-31-joint-refills/) | — |
+| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 825** | **SOTA** | +4.086% | — | reclaimed 2026-10-29 | [Partial signed-orbit exchanges](verifications/improved/dim27-31-algebraic-completion/) | — |
 | 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **221 988** | **SOTA** | +8.196% | — | reclaimed 2026-10-29 | [Joint refills and sextet unions](verifications/improved/dim27-31-joint-refills/) | — |
 | 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **231 697** | **SOTA** | +10.597% | — | reclaimed 2026-10-29 | [Joint refills and reflected unions](verifications/improved/dim27-31-joint-refills/) | — |
 | 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **247 972** | **SOTA** | +12.490% | — | reclaimed 2026-10-29 | [Joint refills and reflected unions](verifications/improved/dim27-31-joint-refills/) | — |
-| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **251 188** | **SOTA** | +5.386% | — | reclaimed 2026-10-29 | [Joint refills and reflected unions](verifications/improved/dim27-31-joint-refills/) | — |
+| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **251 196** | **SOTA** | +5.390% | — | reclaimed 2026-10-29 | [Orthogonal sign cube](verifications/improved/dim27-31-algebraic-completion/) | — |
 | 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32) | **352 800** | **SOTA** | +0.13624% | — | since 2026-10-26 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
 | 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 376** | **SOTA** | +0.036733% | — | since 2026-10-28 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 990** | **SOTA** | +0.00255768% | — | since 2026-10-28 | [Dense-coset heads](verifications/improved/dim32-35-signed-layers/) | — |
@@ -124,7 +124,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/html/2607.20359v4) | **1 126 314** | **SOTA** | +3.14% | — | since 2026-10-26 | [Affine lattice shells](verifications/improved/dim40-affine-shells/) | — |
 | 41 | 1 324 472 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 42 | 1 792 386 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 991 445** | **SOTA** | +11% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 43 | 2 553 792 | [Yang et al., P48n section](https://arxiv.org/abs/2609.35051v1) | **2 919 782** | **SOTA** | +14% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 43 | 2 553 792 | [Yang et al., P48n section](https://arxiv.org/abs/2609.35051v1) | **2 919 785** | **SOTA** | +14% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 44 | 4 153 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **4 939 281** | **SOTA** | +19% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 45 | 7 380 090 | [Yang et al., QR neighbour projection](https://arxiv.org/abs/2609.35051v1) | **7 655 056** | **SOTA** | +3.7% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 46 | 12 309 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **13 387 797** | **SOTA** | +8.8% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
@@ -214,7 +214,7 @@ The [Coxeter–Todd package](verifications/improved/dim36-37-coxeter-todd/)
 proves 501 687 points in 36D by exact short-shell enumeration and phase-orbit
 angle checks, then reaches 505 503 in 37D with two latitude layers. The
 [P48n family/head package](verifications/improved/dim41-46-p48-heads/) now supplies
-all six 41–46D constructions. The 43D partial-family certificate checks 3 447 explicit
+all six 41–46D constructions. The 43D partial-family certificate checks 3 450 explicit
 tiny points; the latest 45D certificate retains 2 187 complete families and 16 pure
 heads. Their integer angles and exact head dimensions replay, with complete-family
 populations inherited from the documented identities. The older missing 43D writeup
@@ -224,7 +224,7 @@ improvement is claimed in 47D or 48D.
 <details>
 <summary>Detailed construction notes</summary>
 
-- **27–31D (current):** Joint core/auxiliary changes and compatible reflected unions give **209 807, 221 988, 231 697, 247 972, 251 188**, respectively. Gains over PackingStar’s October 28 release are **47, 124, 21, 5, 19**. [Full exact coordinate proofs and direct-integer cross-checks](verifications/improved/dim27-31-joint-refills/).
+- **27–31D (current):** The current values are **209 825, 221 988, 231 697, 247 972, 251 196**, respectively. [Algebraic completion](verifications/improved/dim27-31-algebraic-completion/) adds 18 in 27D through shared-deletion signed-support choices and eight in 31D through an orthogonal sign cube. Complete explicit geometry and independent changed-pair proofs pass. The [29 October joint refills](verifications/improved/dim27-31-joint-refills/) supply the retained 28–30D records and earlier 27D/31D configurations.
 
 - **18D:** the base of Cohn–Li's hexagon had a free combinatorial parameter nobody had varied: which coset of RM(1,4) the three six-set families lie in.  Three bent cosets with pairwise-bent sums that do not sum to zero give the twelve tier-B slots three different 512-word spaces instead of one, and tier B rises from 256 to 960
 
@@ -276,6 +276,8 @@ improvement is claimed in 47D or 48D.
 </details>
 
 ## Recent updates
+
+**4 November 2026:** [Algebraic completion](verifications/improved/dim27-31-algebraic-completion/) gives **209 825 in 27D** (+18) and **251 196 in 31D** (+8). The 31D additions form a three-sign cube with orthogonal block norms 16, 8 and 8. Both full coordinate configurations and all changed pairs replay exactly. The [43D finite body/head continuation](verifications/improved/dim41-46-p48-heads/continuation43/) gives **2 919 785** (+3), retaining its documented P48n/population inputs. Fresh Cohn retrieval failed; the [limited November 4 comparison](common/source_review_20261104_algebraic.json) uses the saved table and author repositories. The manuscript is unchanged.
 
 <details>
 <summary>25–29 October 2026: constructions, verification and earlier checkpoints</summary>
@@ -442,7 +444,7 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               all 70 claims, 35 packages; earlier constructions remain
+  improved/               all 70 claims, 36 packages; earlier constructions remain
                           available with their original proof data
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
@@ -461,7 +463,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 35 packages, 70 dimensions
+### `verifications/improved/` — 36 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -559,7 +561,7 @@ comparison is given separately by its source.
 | 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) | 197 584 |
 | 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 231 697 |
 | 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 247 972 |
-| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 188 |
+| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 196 |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 522 |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 180 |
 
@@ -748,10 +750,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 93 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 94 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 112 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 113 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

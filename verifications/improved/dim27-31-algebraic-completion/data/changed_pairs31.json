@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "dimension": 31,
+  "points": 251196,
+  "removed": 0,
+  "added": 8,
+  "gain": 8,
+  "direct_integer_pairs": 2009560,
+  "maximum_inserted_product": 64,
+  "canonical_point_sha256": "69531af8db6e3c3dd27aa48945a323e926cc8df5d5a96493c7680aa171764f1b"
+}
