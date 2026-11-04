@@ -2,7 +2,7 @@
 
 The three operators in `engines/construction_search.py` generate and assemble
 candidate configurations. They use the existing DAG, budgets, typed planner and
-independent exact coordinate verifier. All 39 registered operators have planner
+independent exact coordinate verifier. All 40 registered operators have planner
 input/output signatures. No dimension-to-record dispatch or target-count table
 is used by the new construction operators.
 
@@ -37,6 +37,13 @@ separate preflights. Large integer pool products fall back to Python integers.
 Numerical optimization can affect cardinality and runtime across installations;
 the exact mathematical validity of a returned coordinate artifact is replayed
 without trusting the optimization receipt.
+
+`search.partial_sign_orbits` retains a group-based signed compatibility kernel,
+but selects individual phases, including proper subsets of internally
+conflicting orbits. All source points can be removed and shared deletion costs
+are charged once. It supports nonfree sign actions by deduplicating stabilizers.
+See [partial orbits](PARTIAL_ORBITS.md) for its exact source-symmetry requirement,
+resource limits and independent geometry checks.
 
 ## Held-out measurement
 

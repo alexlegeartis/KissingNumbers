@@ -317,7 +317,7 @@ def blocker_exchange(inputs, params, context):
     from scipy.optimize import milp, Bounds, LinearConstraint
     from scipy.sparse import coo_matrix
     check_params(params, ('blockers','candidate_conflicts','candidate_weights',
-                          'removal_costs','cliques','seconds'))
+                          'removal_costs','cliques','blocker_cliques','seconds','presolve'))
     if inputs:raise ValueError('blocker_exchange takes explicit oracle data')
     blockers=params.get('blockers');conflicts=params.get('candidate_conflicts',[])
     if not isinstance(blockers,list) or not blockers:
@@ -345,10 +345,23 @@ def blocker_exchange(inputs, params, context):
     if not isinstance(cliques,list) or any(not isinstance(c,list) or len(c)<2 or
             any(type(j) is not int or not 0<=j<n for j in c) or len(set(c))!=len(c) for c in cliques):
         raise ValueError('Invalid candidate clique')
-    entries=2*(sum(map(len,blockers))+len(conflicts))+sum(map(len,cliques))
+    blocker_cliques=params.get('blocker_cliques',[])
+    if not isinstance(blocker_cliques,list) or any(not isinstance(c,list) or len(c)!=2 or
+            type(c[0]) is not int or c[0] not in old or not isinstance(c[1],list) or len(c[1])<2 or
+            any(type(i) is not int or not 0<=i<n or c[0] not in blockers[i] for i in c[1]) or
+            len(set(c[1]))!=len(c[1]) for c in blocker_cliques):
+        raise ValueError('Invalid shared-blocker clique')
+    entries=2*(sum(map(len,blockers))+len(conflicts))+sum(map(len,cliques))+sum(len(c)+1 for _,c in blocker_cliques)
     context.limit('max_gram_entries',entries)
-    context.limit('max_rank_work',entries+n+len(used))
+    context.limit('max_rank_work',entries+n+len(used)+sum(len(c)*(len(c)-1)//2 for _,c in blocker_cliques))
+    if blocker_cliques:
+        conflict_set=set(conflicts)
+        if any(any(tuple(sorted((i,j))) not in conflict_set for i,j in combinations(c,2))
+               for _,c in blocker_cliques):
+            raise ValueError('Shared-blocker clique has an unprovided candidate conflict')
     seconds=_seconds(params.get('seconds',1),context)
+    presolve=params.get('presolve',True)
+    if type(presolve) is not bool:raise ValueError('presolve must be a Boolean')
     rr=[];cc=[];vv=[];upper=[]
     for i,row in enumerate(blockers):
         for j in row:
@@ -357,10 +370,13 @@ def blocker_exchange(inputs, params, context):
         t=len(upper);rr.extend((t,t));cc.extend((i,j));vv.extend((1,1));upper.append(1)
     for clique in cliques:
         t=len(upper);rr.extend([t]*len(clique));cc.extend(clique);vv.extend([1]*len(clique));upper.append(1)
+    for j,clique in blocker_cliques:
+        t=len(upper);rr.extend([t]*(len(clique)+1));cc.extend(clique+[old[j]])
+        vv.extend([1]*len(clique)+[-1]);upper.append(0)
     matrix=coo_matrix((vv,(rr,cc)),shape=(len(upper),n+len(used))).tocsc()
     result=milp(np.array([-x for x in weights]+prices,float),integrality=np.ones(n+len(used)),
                 bounds=Bounds(0,1),constraints=LinearConstraint(matrix,-np.inf,upper),
-                options={'time_limit':seconds,'mip_rel_gap':0})
+                options={'time_limit':seconds,'mip_rel_gap':0,'presolve':presolve})
     binary=_binary_solution(result,n+len(used));added=[];removed=[]
     if binary is not None:
         chosen=set(map(int,np.flatnonzero(binary[:n])));deleted={j for j in used if binary[old[j]]}

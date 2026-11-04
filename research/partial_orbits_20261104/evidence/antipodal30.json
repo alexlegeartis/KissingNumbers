@@ -1,0 +1,21 @@
+{
+  "dimension": 30,
+  "baseline": 247972,
+  "result": 247972,
+  "gain": 0,
+  "source": "verifications/improved/dim27-31-joint-refills/data/coordinates30_247972.npz",
+  "source_sha256": "d3c8767360bded77dec3cfc9263053c5bcdc65caaef1980954a6fb19217c1730",
+  "antipodal_candidates": 480,
+  "screening_pairs": 119026560,
+  "conflicts": 3364,
+  "backend": "bounded exact binary32",
+  "matching_size": 480,
+  "selected_new": 0,
+  "removed_old": 0,
+  "exact_finite_optimality": "Matching and equal-size vertex cover checked against every exact conflict",
+  "changed_pairs": "PASS direct int64; common norm/distinctness verified",
+  "inherited_assumptions": "Source validity inherited for search; fresh full proof required for any gain",
+  "elapsed_seconds": 2.8661305749992607,
+  "new_record": false,
+  "scope": "Maximum cardinality of this source/antipode union only; no global bound"
+}

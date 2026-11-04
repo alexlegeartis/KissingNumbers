@@ -1,0 +1,21 @@
+[
+  {
+    "candidate_limit": 12000,
+    "blocker_limit": 8,
+    "solver_seconds": 90,
+    "presolve": true,
+    "status": "manually terminated after more than five minutes",
+    "result": "no returned optimizer result; no exclusion or gain claimed"
+  },
+  {
+    "candidate_limit": 2048,
+    "blocker_limit": 8,
+    "solver_seconds": 30,
+    "presolve": true,
+    "outer_wall_seconds": 180,
+    "exit_status": 124,
+    "status": "outer timeout",
+    "checkpoint": "interrupted2048_checkpoint.json",
+    "result": "no returned optimizer result; no exclusion or gain claimed"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "dimension": 27,
+  "baseline": 209825,
+  "result": 209825,
+  "gain": 0,
+  "source": "verifications/improved/dim27-31-algebraic-completion/data/coordinates27_209825.npz",
+  "source_sha256": "7a869e349545f96d563a654e307cba9461c3bbecb883299b3a85e05d6fe127d1",
+  "antipodal_candidates": 143,
+  "screening_pairs": 30004975,
+  "conflicts": 596,
+  "backend": "bounded exact binary32",
+  "matching_size": 143,
+  "selected_new": 0,
+  "removed_old": 0,
+  "exact_finite_optimality": "Matching and equal-size vertex cover checked against every exact conflict",
+  "changed_pairs": "PASS direct int64; common norm/distinctness verified",
+  "inherited_assumptions": "Source validity inherited for search; fresh full proof required for any gain",
+  "elapsed_seconds": 1.7525286259988206,
+  "new_record": false,
+  "scope": "Maximum cardinality of this source/antipode union only; no global bound"
+}

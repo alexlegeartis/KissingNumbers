@@ -19,6 +19,11 @@ The source comparisons are dated and limited to the checked sources. Exact
 geometry does not certify worldwide priority. Historical certificates and
 campaigns are retained unchanged.
 
+The later [partial-orbit continuation](partial_orbits_20261104/) adds individual
+sign phases, shared deletion costs and new rational image families. Its finite
+17D, 27D and 29D–31D searches have no further improvement; the large 17D
+optimizations remain unresolved after their time limits.
+
 ## Lower-dimensional campaigns and controls
 
 | Package | Main outcome |

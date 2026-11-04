@@ -20,7 +20,9 @@ and negative-contact-sum generation with joint selection. A subsequent extension
 adds exterior-square representations, exact rational orthogonal orbits and
 weighted quadratic-coordinate input. Joint character-coset and sign-orbit
 assembly now replace sparse bases and dense caps together. A finite body/head
-operator finds shared-deletion exchanges. There are now 39
+operator finds shared-deletion exchanges. A [partial sign-orbit operator](docs/PARTIAL_ORBITS.md)
+uses exact group kernels while selecting individual points and changing all
+incumbent layers jointly. There are now 40
 registered operators. The separate 1–24 held-out benchmark matches ten targets
 with formula controls and four through actual support search, including 9D306.
 The 13D/14D/31D record attempts have no improved certified witness. See

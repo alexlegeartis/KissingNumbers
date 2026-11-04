@@ -31,7 +31,8 @@ class BlockerExchangeTests(unittest.TestCase):
         for change in ({'blockers':[[True]]},{'blockers':[[[]]]},{'blockers':[[0,0]]},
                        {'candidate_weights':[1,2]}, {'candidate_weights':[True,1,1]},
                        {'candidate_conflicts':[[0,0]]},{'candidate_conflicts':[[0,3]]},
-                       {'cliques':[[0,[]]]},{'removal_costs':[]},{'seconds':float('nan')}):
+                       {'cliques':[[0,[]]]},{'removal_costs':[]},{'seconds':float('nan')},
+                       {'presolve':1}):
             p=deepcopy(self.params);p.update(change)
             with self.subTest(change=change),self.assertRaises(ValueError):
                 blocker_exchange([],p,self.context)
@@ -47,5 +48,17 @@ class BlockerExchangeTests(unittest.TestCase):
         program={'schema_version':1,'nodes':[{'id':'exchange','op':'selection.blocker_exchange',
             'params':self.params}],'outputs':['exchange']}
         self.assertEqual(output_artifact(run_program(program,self.context)).facts['gain'],1)
+    def test_no_presolve_backend_retains_exact_feasibility_checks(self):
+        p=deepcopy(self.params);p['presolve']=False
+        self.assertEqual(blocker_exchange([],p,self.context).facts['gain'],1)
+    def test_shared_blocker_cliques_preserve_discrete_feasible_moves(self):
+        p={'blockers':[[0],[0],[0]],'candidate_conflicts':[[0,1]],
+           'blocker_cliques':[[0,[0,1]]],'presolve':False}
+        result=blocker_exchange([],p,self.context)
+        self.assertEqual(result.facts['gain'],1)
+        self.assertEqual(len(result.data['selected_candidate_indices']),2)
+        p['blocker_cliques']=[[0,[0,2]]]
+        with self.assertRaisesRegex(ValueError,'unprovided'):
+            blocker_exchange([],p,self.context)
 
 if __name__=='__main__':unittest.main()

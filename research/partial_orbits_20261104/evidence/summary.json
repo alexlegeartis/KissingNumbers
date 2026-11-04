@@ -1,0 +1,20 @@
+{
+  "new_bound": false,
+  "certified_existing_counts": {
+    "17": 5730,
+    "27": 209825,
+    "29": 231697,
+    "30": 247972,
+    "31": 251196
+  },
+  "partial17_full_pool": 20160,
+  "partial17_full_conflicts": 2979840,
+  "rational_image_trials": 20,
+  "antipodal_union_dimensions": [
+    27,
+    29,
+    30,
+    31
+  ],
+  "scope": "All new searches give no improved incumbent. Large 17D numerical searches remain unresolved; matching results apply only to tested two-copy unions."
+}
