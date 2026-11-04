@@ -1,0 +1,101 @@
+{
+  "representation": "weil_p11_r1_s-1",
+  "random_seed": 20261104,
+  "p": 11,
+  "rank": 1,
+  "parity": -1,
+  "complex_dimension": 5,
+  "trials": 40,
+  "line_limit": 800,
+  "inventory": [
+    {
+      "orbit": 0,
+      "lines": 60,
+      "vectors": 660,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 1,
+      "lines": 55,
+      "vectors": 55,
+      "accepted_phase_orders": [
+        1,
+        2
+      ]
+    },
+    {
+      "orbit": 2,
+      "lines": 132,
+      "vectors": 660,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 3,
+      "lines": 132,
+      "vectors": 660,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 4,
+      "lines": 66,
+      "vectors": 66,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 5,
+      "lines": 110,
+      "vectors": 330,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 6,
+      "lines": 110,
+      "vectors": 660,
+      "accepted_phase_orders": []
+    }
+  ],
+  "seeds": [
+    {
+      "seed": "coordinate",
+      "lines": 60
+    },
+    {
+      "seed": "cyclic:[1, 0, 1, 1, 1, 1]:1",
+      "lines": 55
+    },
+    {
+      "seed": "cyclic:[1, 0, 0, 1, 0]:0",
+      "lines": 132
+    },
+    {
+      "seed": "cyclic:[1, 0, 0, 1, 0]:1",
+      "lines": 132
+    },
+    {
+      "seed": "cyclic:[1, 0, 0, 1, 0]:2",
+      "lines": 66
+    },
+    {
+      "seed": "cyclic:[0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0]:0",
+      "lines": 110
+    },
+    {
+      "seed": "cyclic:[0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0]:2",
+      "lines": 110
+    }
+  ],
+  "result": {
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "edges": 276,
+    "best": 110,
+    "upper_bound": 110.0,
+    "selected": [
+      "o1:m2:phase0/24"
+    ],
+    "maxcos": 0.5000000000000034,
+    "real_rank": 10
+  },
+  "cross_checks": "one representative per transitive vector orbit against the other full orbit; final all-pairs numerical check",
+  "certificate": "numerical screening only; phase grid and sampled subgroups not exhaustive"
+}

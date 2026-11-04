@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "name": "discover10",
+  "description": "No record coordinates supplied. Numerical discovery benchmark only; expected510 under documented defaults.",
+  "nodes": [
+    {
+      "id": "rep",
+      "op": "groups.weil",
+      "params": {
+        "p": 3,
+        "rank": 2,
+        "parity": 1
+      }
+    },
+    {
+      "id": "search",
+      "op": "groups.search",
+      "inputs": [
+        "rep"
+      ],
+      "params": {
+        "trials": 40,
+        "seed": 20261104,
+        "linecap": 1000
+      }
+    }
+  ],
+  "outputs": [
+    "search"
+  ]
+}

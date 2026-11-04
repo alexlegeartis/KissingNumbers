@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "name": "Unitary generator and orbit grammar control",
+  "description": "All seven declared representation choices use the same search operator. One branch deliberately reaches the default matrix-entry resource budget; this is recorded as incomplete evidence, never mathematical infeasibility.",
+  "slots": [
+    {
+      "id": "representation",
+      "choices": [
+        {
+          "op": "groups.weil",
+          "params": {"parity": 1},
+          "parameter_grid": {"p": [3, 5], "rank": [1, 2, 3]}
+        },
+        {
+          "op": "groups.from_generators",
+          "params": {
+            "label": "Three dimensional signed permutation control",
+            "generators_real": [
+              [[0, 1, 0], [0, 0, 1], [1, 0, 0]],
+              [[-1, 0, 0], [0, 1, 0], [0, 0, 1]]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "candidate",
+      "choices": [
+        {
+          "op": "groups.search",
+          "inputs": ["representation"],
+          "params": {
+            "trials": 2,
+            "linecap": 100,
+            "vectorcap": 600,
+            "phase_steps": 2,
+            "phase_orders": [1, 2, 3],
+            "max_candidates": 50,
+            "max_blocks": 50,
+            "solver_seconds": 2
+          }
+        }
+      ]
+    }
+  ],
+  "outputs": ["candidate"]
+}

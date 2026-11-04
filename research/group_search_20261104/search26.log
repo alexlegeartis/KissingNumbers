@@ -1,0 +1,1 @@
+{"p": 3, "rank": 3, "parity": -1, "complex_dimension": 13, "trials": 12, "line_limit": 1600, "inventory": [], "result": {"best": 0}, "cross_checks": "one representative per transitive vector orbit against the other full orbit; final all-pairs numerical check", "certificate": "numerical screening only; phase grid and sampled subgroups not exhaustive"}

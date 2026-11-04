@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "name": "octacode",
+  "description": "Known (16,256,6) code; implicit sign layer, not a kissing record.",
+  "nodes": [
+    {
+      "id": "factor",
+      "op": "rings.binary_factor",
+      "params": {
+        "n": 7,
+        "index": 0
+      }
+    },
+    {
+      "id": "lift",
+      "op": "rings.hensel",
+      "inputs": [
+        "factor"
+      ],
+      "params": {
+        "modulus": 4
+      }
+    },
+    {
+      "id": "ring",
+      "op": "rings.extend",
+      "inputs": [
+        "lift"
+      ],
+      "params": {
+        "extension": -1
+      }
+    },
+    {
+      "id": "binary",
+      "op": "rings.gray",
+      "inputs": [
+        "ring"
+      ]
+    },
+    {
+      "id": "sphere",
+      "op": "geometry.sign_embed",
+      "inputs": [
+        "binary"
+      ]
+    }
+  ],
+  "outputs": [
+    "sphere"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "name": "search26",
+  "description": "Bounded higher-dimensional experiment, not expected to beat record. Use max_pairs30000000 and max_materialized_points100000 for28D full numerical output.",
+  "nodes": [
+    {
+      "id": "rep",
+      "op": "groups.weil",
+      "params": {
+        "p": 3,
+        "rank": 3,
+        "parity": -1
+      }
+    },
+    {
+      "id": "search",
+      "op": "groups.search",
+      "inputs": [
+        "rep"
+      ],
+      "params": {
+        "trials": 12,
+        "seed": 20261104,
+        "linecap": 1600
+      }
+    }
+  ],
+  "outputs": [
+    "search"
+  ]
+}

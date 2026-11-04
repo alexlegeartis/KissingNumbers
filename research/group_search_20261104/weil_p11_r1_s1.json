@@ -1,0 +1,106 @@
+{
+  "representation": "weil_p11_r1_s1",
+  "random_seed": 20261104,
+  "p": 11,
+  "rank": 1,
+  "parity": 1,
+  "complex_dimension": 6,
+  "trials": 40,
+  "line_limit": 800,
+  "inventory": [
+    {
+      "orbit": 0,
+      "lines": 12,
+      "vectors": 24,
+      "accepted_phase_orders": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    {
+      "orbit": 1,
+      "lines": 60,
+      "vectors": 1320,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 2,
+      "lines": 132,
+      "vectors": 1320,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 3,
+      "lines": 132,
+      "vectors": 1320,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 4,
+      "lines": 110,
+      "vectors": 440,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 5,
+      "lines": 110,
+      "vectors": 1320,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 6,
+      "lines": 110,
+      "vectors": 1320,
+      "accepted_phase_orders": []
+    }
+  ],
+  "seeds": [
+    {
+      "seed": "coordinate",
+      "lines": 12
+    },
+    {
+      "seed": "coordinate",
+      "lines": 60
+    },
+    {
+      "seed": "cyclic:[1, 0, 0, 1, 0]:0",
+      "lines": 132
+    },
+    {
+      "seed": "cyclic:[1, 0, 0, 1, 0]:1",
+      "lines": 132
+    },
+    {
+      "seed": "cyclic:[0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0]:0",
+      "lines": 110
+    },
+    {
+      "seed": "cyclic:[0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0]:1",
+      "lines": 110
+    },
+    {
+      "seed": "cyclic:[0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0]:2",
+      "lines": 110
+    }
+  ],
+  "result": {
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "edges": 1650,
+    "best": 72,
+    "upper_bound": 72.0,
+    "selected": [
+      "o0:m1:phase1/24",
+      "o0:m1:phase5/24",
+      "o0:m1:phase9/24"
+    ],
+    "maxcos": 0.5000000000000008,
+    "real_rank": 12
+  },
+  "cross_checks": "one representative per transitive vector orbit against the other full orbit; final all-pairs numerical check",
+  "certificate": "numerical screening only; phase grid and sampled subgroups not exhaustive"
+}

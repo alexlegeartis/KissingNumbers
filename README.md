@@ -679,6 +679,20 @@ through the grid map, and a `[15,10,4]` — and the whole chain is checked in co
 `n = 8` and `n = 16`, where it reproduces τ(8) = 240 (the E₈ root system) and τ(16) = 4320 (the
 Barnes–Wall value, and the record) exactly.
 
+## Experimental discovery workbench
+
+The additive [discovery package](discovery/README.md) runs composable construction
+programs for group representations, finite-ring codes and certified coset unions.
+It includes exact known-result benchmarks, independent proof replay and resource
+limits for higher-dimensional experiments. This initial campaign has found no new
+record and does not change the registered results above. Earlier exploratory
+scripts and receipts are preserved in `research/group_search_20261104/`.
+
+```sh
+python -m discovery operators
+python -m unittest discover -s discovery/tests -t .
+```
+
 ## Standards
 
 **Two suites exist specifically to attack the mathematics rather than the bookkeeping**, and

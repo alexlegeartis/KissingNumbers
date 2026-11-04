@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "name": "orthogonal_union",
+  "description": "Small exact demonstration of a branched construction graph;8 points in4D, not a record.",
+  "nodes": [
+    {
+      "id": "a",
+      "op": "geometry.integer_code",
+      "params": {
+        "coordinates": [
+          [
+            1,
+            0
+          ],
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        "norm_squared": 1
+      }
+    },
+    {
+      "id": "union",
+      "op": "geometry.orthogonal_union",
+      "inputs": [
+        "a",
+        "a"
+      ]
+    }
+  ],
+  "outputs": [
+    "union"
+  ]
+}

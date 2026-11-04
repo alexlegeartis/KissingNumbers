@@ -1,0 +1,205 @@
+# Mathematical discovery workbench
+
+An experimental, composable foundation for searching and checking kissing
+configurations. It is separate from the repository's registered record pipeline.
+**The work so far reproduces known constructions and records bounded negative
+searches. It has not found a new SOTA.**
+
+Run from the repository root with the existing Python environment; no installation
+is required. Dependencies are NumPy, SciPy and SymPy. The code makes no network
+calls, installs nothing, and never pushes, publishes, or edits the record registry.
+
+```sh
+python -m discovery operators
+python -m discovery run discovery/recipes/ganzhinov10.json --out /tmp/known10.json
+python -m discovery verify /tmp/known10.json
+python -m discovery compare /tmp/known10.json
+OPENBLAS_NUM_THREADS=1 python -m unittest discover -s discovery/tests -t . -v
+```
+
+`run` refuses to overwrite an existing receipt. Pick a new output filename for a
+repeat. `verify` exits 0 only for an independently exact-verified result, 2 for a
+numerical/unverified result, and 1 for invalid input. `compare` re-verifies first
+and compares only to a dated baseline; exceeding it is not a worldwide priority
+claim. Library versions and numerical tie-breaking can affect sampled searches.
+
+## Construction programs
+
+A version-1 JSON program is a directed acyclic graph. Each node has an `id`, an
+allow-listed `op`, positional input node ids and operator-specific `params`.
+Forward references are allowed; missing inputs, cycles, type mismatches, unknown
+operators and unknown parameters are rejected. Recipes cannot import or execute
+arbitrary code.
+
+```json
+{
+  "schema_version": 1,
+  "nodes": [
+    {"id": "factor", "op": "rings.binary_factor", "params": {"n": 7, "index": 0}},
+    {"id": "lift", "op": "rings.hensel", "inputs": ["factor"], "params": {"modulus": 4}},
+    {"id": "ring", "op": "rings.extend", "inputs": ["lift"]},
+    {"id": "binary", "op": "rings.gray", "inputs": ["ring"]},
+    {"id": "sphere", "op": "geometry.sign_embed", "inputs": ["binary"]}
+  ],
+  "outputs": ["sphere"]
+}
+```
+
+This reconstructs the known 256-word, length-16, distance-6 code and keeps its
+spherical sign image implicit. It is a control, not a record.
+
+An `Artifact` has a kind, a data recipe, computed facts, and a verification
+receipt. `RunContext` carries resource limits. `OPERATORS` and `INPUT_KINDS` are
+the module extension points. A new backend also needs an independent verifier
+registered in `certification.py`, proof-scope documentation and corruption tests.
+No unimplemented instrument is registered as a placeholder operator.
+
+## Implemented instruments
+
+| Module | Working capabilities | Important restrictions |
+|---|---|---|
+| `engines/groups.py` | Supplied unitary generators and Fourier/parity representations, sampled subgroup-character eigenlines, actual vector orbits, relative phases, compressed cross-orbit screening, finite block MILP; exact Ganzhinov controls | Numerical discovery; finite phase grid; sampled subgroups; orbit and output caps; no automatic certification of approximate output |
+| `engines/rings.py` | Binary factorization, coprime Hensel lifts, cyclic free modules, extensions, Gray isometry, exhaustive small-code distance, two independent DGLS proofs, compatible repeated-mask unions | Half-degree irreducible factors; moduli 4/8/16; small enumeration caps; restricted greedy translate selection |
+| `engines/cosets.py` | Full-rank binary parity checks, exact syndrome leader distances, separate nonzero kernel-distance DP, specified coset unions | At most 16 syndrome bits and bounded transitions; not a generic high-distance 96D code solver |
+| `engines/layers.py` | Native compressed support/sign-layer verification; known 352800-point 32D control; parametrized supported family | Dense binary span must fit enumeration budget; sparse support and exceptional-line pair budgets; no general layer search optimizer |
+| `engines/geometry.py` | Exact integer input, sign embeddings with proof transfer, explicit orthogonal unions | Generic mixed-layer gluing, sections and nonorthogonal unions are not implemented |
+| `certification.py` | Exact weighted integer Gram checks, distinctness, norm and rank; independent backend proof replay | Explicit coordinates need a bounded all-pairs check; large objects require a supported compressed proof |
+| `runner.py`, `__main__.py` | Typed DAG runner, CLI, per-node provenance and timing, hashed receipts, dated comparison | No distributed scheduler, persistent search cache or autonomous theorem invention |
+
+The `groups.ganzhinov14` control replays the E7 frame construction. It does not
+claim autonomous discovery of the U(3,3) subgroup characters. The 10D numerical
+search does recover the required line systems from generators without record
+coordinates. Its separate exact control reconstructs the algebraic result.
+
+## Proof obligations shared by all branches
+
+- Establish distinctness and cardinality. For implicit families, prove injectivity
+  or count disjoint cosets; a sum of component sizes alone is insufficient.
+- Establish norms and a sufficient ambient dimension. Integer certificates also
+  compute exact span rank. Sign images explicitly report ambient dimension;
+  they do not claim a computed full rank.
+- Establish every within-component and cross-component separation condition.
+  Group representative checks use a common unitary action. Code unions use
+  within-code distance and cross-coset bounds. Orthogonal sums use zero cross dots.
+- Preserve exactness through the embedding. Binary length N and distance d give
+  norm N and maximum inner product at most N−2d, requiring 4d≥N for kissing.
+- Keep provenance distinct from mathematical validity and novelty.
+
+Saved `verification.status` values are not proof. `verify` recomputes the relevant
+checks, rejects false geometric facts, and never promotes numerical coordinates
+to exact. Integer accumulation uses a proven overflow bound or Python integers.
+The legacy DGLS routines use assertions, so their adapter refuses optimized
+Python (`-O`) rather than silently disabling those checks.
+
+Receipt hashes detect accidental modification of the program, artifacts and
+events. They are not signatures or authenticated provenance. Source hashes record
+the implementation used; mathematical verification runs with the current code.
+A valid coordinate certificate alone does not establish the historical process
+by which its coordinates were discovered.
+
+## Dimension-independent interfaces and practical scaling
+
+Dimensions are parameters and certificate facts, not a hard-coded 5–16 search
+range. The default dimension budget is 256, which accommodates constructions
+through 96D. This does **not** mean every implemented algorithm is competitive or
+tractable in every dimension.
+
+The group branch compresses a cross-orbit check from |A||B| pairs to one seed
+against B for each constituent transitive orbit. It still enumerates the orbit;
+there is no general double-coset backend yet. A final numerical coordinate output
+is checked in bounded blocks.
+
+The syndrome branch enumerates 2^r quotient states instead of 2^(n−r) kernel
+words. It must separately certify the shortest nonempty zero-syndrome support:
+the empty word's distance zero cannot certify the kernel's minimum distance.
+Its 16-check cap cannot represent every useful high-distance code. Large
+high-distance examples need stronger algebraic proof backends such as DGLS.
+
+The DGLS branch keeps **137438953472** length-96 binary words implicit. It verifies
+the synthesized ring generator using two independent native proofs, each checking
+2^24 lower-ring words and 759 small coset exclusions. No 2^37-word array or giant
+Gram matrix is allocated. This validates compressed composition, not a new
+96D construction. The full existing 96D layered record remains larger.
+
+The `layers.known32` control independently verifies the existing 352800-point 32D
+construction using 131072 dense codewords and 1826076 compressed support/sign
+checks. It allocates no spherical point array. `layers.signed_supports` verifies
+the same explicitly defined layer family with dimension parameters through 96;
+this is a restricted construction grammar, not a generic mixed-layer optimizer.
+
+Run the larger group trial with explicitly sufficient budgets:
+
+```sh
+OPENBLAS_NUM_THREADS=1 python -m discovery run discovery/recipes/search28.json \
+  --budget max_materialized_points=100000 --budget max_pairs=30000000 \
+  --out /tmp/search28.json
+```
+
+Hard algorithm ceilings and user budgets are both enforced. Budget exhaustion is
+recorded or rejected; it is never reported as a mathematical impossibility.
+Large unverified ring recipes remain structural candidates. High-degree group
+representations can have enormous orbits even when their dimension is modest.
+
+## Benchmarks and continued search
+
+Recipes include `ganzhinov10.json`, `ganzhinov14.json`, `discover10.json`,
+`search26.json`, `search28.json`, `octacode.json`, `dgls96.json`, `ring_sign32.json`,
+`syndrome_cosets.json`, `known32.json`, and `orthogonal_union.json`. Known-control cardinalities
+must not be confused with competitive new records: for example the ring32 sign
+layer is only 8192 points, below the recorded 352800 in that dimension.
+
+The dated [catalog](benchmarks/catalog.json) separates benchmark expectations from
+comparison records. [Research evidence](docs/RESEARCH.md) records an additional
+exact negative search: all single-coordinate linear extensions of two fixed Z4
+modules are excluded from meeting the 36D kissing threshold by small witness sets.
+Replay it with `python discovery/benchmarks/replay_extensions.py`.
+
+The earlier exploratory files and execution evidence remain in
+`research/group_search_20261104/`. Production operators do not import those
+prototype files. The engine is additive; `audit.py`, `run_all.py`, and the
+registered construction packages retain their existing behavior.
+
+## Remaining research work
+
+Priorities include richer group catalogues and subgroup projectors; higher
+multiplicity parameter spaces; continuous phase solving; double-coset proof
+compression; generalized concatenation, switching and gluing; character-weighted
+partial weight-enumerator recurrences; and generic section/mixed-layer search.
+The DGLS recurrence is not an unsigned disjoint-support count. These are missing
+instruments, not executable stubs or features already delivered.
+
+New records remain the objective. Neither a successful known-result benchmark,
+a finite MILP optimum, nor a failed bounded search establishes a new SOTA or an
+unrestricted optimum. A candidate must pass exact verification and a fresh
+comparison review before it enters the record pipeline.
+
+## Measured end-to-end controls
+
+`benchmarks/run_controls.py` executes the 10D, 14D, 352800-point 32D and implicit
+DGLS 96D recipes through the shared runner and re-verifies terminal results. It
+saves separate receipts plus timings and cumulative process peak memory:
+
+```sh
+OPENBLAS_NUM_THREADS=1 python -m discovery.benchmarks.run_controls --outdir /tmp/discovery-controls
+```
+
+Choose a fresh directory for every run. `benchmarks/replay_extensions.py` is the
+separate pure-integer replay of the bounded 36D negative search.
+
+Measured test, benchmark and search outcomes are in [docs/VALIDATION.md](docs/VALIDATION.md).
+
+An independent pre-handoff review and its fixes are documented in [docs/FINAL_REVIEW.md](docs/FINAL_REVIEW.md).
+
+## Shared finite-program scheduler
+
+`python -m discovery search discovery/recipes/program_search.json --out-dir /tmp/new-search`
+enumerates explicit operator, parameter and graph alternatives under declared
+resource budgets. Every registered operator is eligible without a dimension-family
+filter. Numerical and unverified outputs are never promoted to exact candidates.
+See [program-search contracts](docs/PROGRAM_SEARCH.md). This is finite configured
+search, not complete coverage of all constructions.
+
+This branch contains the independently reviewed foundation and tested scheduler.
+The ongoing 1–24 coverage audit and newer Gram, section and root-system operators
+are preserved in the working research environment and are not included in this
+reviewed snapshot. No new SOTA is claimed.

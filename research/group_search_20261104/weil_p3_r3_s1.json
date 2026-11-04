@@ -1,0 +1,289 @@
+{
+  "representation": "weil_p3_r3_s1",
+  "random_seed": 20261104,
+  "p": 3,
+  "rank": 3,
+  "parity": 1,
+  "complex_dimension": 14,
+  "trials": 12,
+  "line_limit": 1600,
+  "inventory": [
+    {
+      "orbit": 0,
+      "lines": 1120,
+      "vectors": 2240,
+      "accepted_phase_orders": [
+        1,
+        2,
+        3,
+        6
+      ]
+    }
+  ],
+  "seeds": [
+    {
+      "seed": "coordinate",
+      "lines": 1120
+    },
+    {
+      "seed": "coordinate",
+      "over_limit": true
+    },
+    {
+      "seed": "coordinate",
+      "over_limit": true
+    },
+    {
+      "seed": "coordinate",
+      "over_limit": true
+    },
+    {
+      "seed": "coordinate",
+      "over_limit": true
+    },
+    {
+      "seed": "coordinate",
+      "over_limit": true
+    },
+    {
+      "seed": "coordinate",
+      "over_limit": true
+    },
+    {
+      "seed": "coordinate",
+      "over_limit": true
+    },
+    {
+      "seed": "coordinate",
+      "over_limit": true
+    },
+    {
+      "seed": "coordinate",
+      "over_limit": true
+    },
+    {
+      "seed": "coordinate",
+      "over_limit": true
+    },
+    {
+      "seed": "coordinate",
+      "over_limit": true
+    },
+    {
+      "seed": "coordinate",
+      "over_limit": true
+    },
+    {
+      "seed": "coordinate",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[6, 2, 8, 7, 5, 2, 7, 7, 6, 5, 0, 0, 2, 8]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[6, 2, 8, 7, 5, 2, 7, 7, 6, 5, 0, 0, 2, 8]:8",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 6, 8, 6, 5, 3, 0, 7, 0, 1, 3, 0, 5, 3]:6",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 6, 8, 6, 5, 3, 0, 7, 0, 1, 3, 0, 5, 3]:7",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 6, 8, 6, 5, 3, 0, 7, 0, 1, 3, 0, 5, 3]:8",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 6, 8, 6, 5, 3, 0, 7, 0, 1, 3, 0, 5, 3]:10",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 6, 8, 6, 5, 3, 0, 7, 0, 1, 3, 0, 5, 3]:13",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[8, 1, 6, 8, 4, 8]:5",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[8, 1, 6, 8, 4, 8]:6",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[8, 1, 6, 8, 4, 8]:7",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[8, 1, 6, 8, 4, 8]:8",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[8, 1, 6, 8, 4, 8]:9",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[8, 1, 6, 8, 4, 8]:10",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 5, 2, 4, 8, 0, 5, 3, 5, 0, 6, 0, 2]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 5, 2, 4, 8, 0, 5, 3, 5, 0, 6, 0, 2]:7",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[5, 3, 4, 7, 1]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[5, 3, 4, 7, 1]:6",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 5, 1, 8, 4, 0, 8, 8, 3, 1]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 5, 1, 8, 4, 0, 8, 8, 3, 1]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 5, 1, 8, 4, 0, 8, 8, 3, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 5, 1, 8, 4, 0, 8, 8, 3, 1]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 5, 1, 8, 4, 0, 8, 8, 3, 1]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 5, 1, 8, 4, 0, 8, 8, 3, 1]:5",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 5, 1, 8, 4, 0, 8, 8, 3, 1]:6",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 5, 1, 8, 4, 0, 8, 8, 3, 1]:7",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 5, 1, 8, 4, 0, 8, 8, 3, 1]:8",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 5, 1, 8, 4, 0, 8, 8, 3, 1]:9",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 5, 1, 8, 4, 0, 8, 8, 3, 1]:10",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 5, 1, 8, 4, 0, 8, 8, 3, 1]:11",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 5, 1, 8, 4, 0, 8, 8, 3, 1]:12",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 5, 1, 8, 4, 0, 8, 8, 3, 1]:13",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 3, 0]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 3, 0]:8",
+      "over_limit": true
+    },
+    {
+      "seed": "joint:6:-1j:(-0.8660254-0.5j)",
+      "over_limit": true
+    },
+    {
+      "seed": "joint:6:-1j:1j",
+      "over_limit": true
+    },
+    {
+      "seed": "joint:6:1j:-1j",
+      "over_limit": true
+    },
+    {
+      "seed": "joint:6:1j:(0.8660254+0.5j)",
+      "over_limit": true
+    },
+    {
+      "seed": "joint:6:(1-0j):(-0.5+0.8660254j)",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[8, 4, 6, 1, 1, 5, 2, 3, 2, 8, 6, 8, 3]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[8, 4, 6, 1, 1, 5, 2, 3, 2, 8, 6, 8, 3]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[8, 4, 6, 1, 1, 5, 2, 3, 2, 8, 6, 8, 3]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[8, 4, 6, 1, 1, 5, 2, 3, 2, 8, 6, 8, 3]:8",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[8, 4, 6, 1, 1, 5, 2, 3, 2, 8, 6, 8, 3]:10",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[8, 4, 6, 1, 1, 5, 2, 3, 2, 8, 6, 8, 3]:11",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[5, 7, 3, 5, 0, 8, 3, 5, 4, 0, 1, 1, 2, 6]:6",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[5, 7, 3, 5, 0, 8, 3, 5, 4, 0, 1, 1, 2, 6]:7",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[5, 7, 3, 5, 0, 8, 3, 5, 4, 0, 1, 1, 2, 6]:9",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[5, 7, 3, 5, 0, 8, 3, 5, 4, 0, 1, 1, 2, 6]:11",
+      "over_limit": true
+    }
+  ],
+  "result": {
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "edges": 1080,
+    "best": 6720,
+    "upper_bound": 6720.0,
+    "selected": [
+      "o0:m1:phase2/24",
+      "o0:m1:phase6/24",
+      "o0:m1:phase10/24"
+    ],
+    "maxcos": 0.5000000000000012,
+    "real_rank": 28
+  },
+  "cross_checks": "one representative per transitive vector orbit against the other full orbit; final all-pairs numerical check",
+  "certificate": "numerical screening only; phase grid and sampled subgroups not exhaustive"
+}

@@ -1,0 +1,250 @@
+{
+  "representation": "weil_p3_r2_s-1",
+  "random_seed": 20261104,
+  "p": 3,
+  "rank": 2,
+  "parity": -1,
+  "complex_dimension": 4,
+  "trials": 40,
+  "line_limit": 800,
+  "inventory": [
+    {
+      "orbit": 0,
+      "lines": 40,
+      "vectors": 240,
+      "accepted_phase_orders": [
+        1,
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "orbit": 1,
+      "lines": 540,
+      "vector_orbit_over_limit": true
+    },
+    {
+      "orbit": 2,
+      "lines": 360,
+      "vectors": 2160,
+      "accepted_phase_orders": []
+    }
+  ],
+  "seeds": [
+    {
+      "seed": "coordinate",
+      "lines": 40
+    },
+    {
+      "seed": "cyclic:[3, 1, 4, 4, 2, 1, 4, 4, 3, 3, 0, 0, 1, 4]:1",
+      "lines": 540
+    },
+    {
+      "seed": "cyclic:[3, 1, 4, 4, 2, 1, 4, 4, 3, 3, 0, 0, 1, 4]:3",
+      "lines": 360
+    },
+    {
+      "seed": "cyclic:[4, 0, 3, 4, 2, 4]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 3, 4, 2, 4]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 3, 4, 2, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 3, 4, 2, 4]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 0, 3, 1, 2, 4, 0, 2, 1, 2, 0, 3, 0, 1]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 0, 3, 1, 2, 4, 0, 2, 1, 2, 0, 3, 0, 1]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 0, 3, 1, 2, 4, 0, 2, 1, 2, 0, 3, 0, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 0, 4, 2, 2, 3, 2, 3, 3, 4, 3, 2, 2]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 0, 4, 2, 2, 3, 2, 3, 3, 4, 3, 2, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 0, 4, 2, 2, 3, 2, 3, 3, 4, 3, 2, 2]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 2, 4, 2, 4, 4]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 2, 4, 2, 4, 4]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 2, 4, 2, 4, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 2, 4, 2, 4, 4]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 0, 1, 0, 4, 2, 0, 4, 4, 2, 4, 4, 4, 4, 3]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 0, 1, 0, 4, 2, 0, 4, 4, 2, 4, 4, 4, 4, 3]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 0, 1, 0, 4, 2, 0, 4, 4, 2, 4, 4, 4, 4, 3]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 0, 1, 0, 4, 2, 0, 4, 4, 2, 4, 4, 4, 4, 3]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 3, 0, 1, 0, 3, 4, 0, 3, 2, 0, 2, 4, 3, 2]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 3, 0, 1, 0, 3, 4, 0, 3, 2, 0, 2, 4, 3, 2]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 3, 0, 1, 0, 3, 4, 0, 3, 2, 0, 2, 4, 3, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 3, 0, 1, 0, 3, 4, 0, 3, 2, 0, 2, 4, 3, 2]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 0, 2, 4, 1, 2, 1, 0, 1, 3, 2, 2, 3, 4, 0]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 0, 2, 4, 1, 2, 1, 0, 1, 3, 2, 2, 3, 4, 0]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 0, 2, 4, 1, 2, 1, 0, 1, 3, 2, 2, 3, 4, 0]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 0, 2, 4, 1, 2, 1, 0, 1, 3, 2, 2, 3, 4, 0]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 4, 4, 0, 1, 0, 2, 1, 4, 3, 2, 4, 0, 3]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 4, 4, 0, 1, 0, 2, 1, 4, 3, 2, 4, 0, 3]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 4, 4, 0, 1, 0, 2, 1, 4, 3, 2, 4, 0, 3]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 4, 4, 0, 1, 0, 2, 1, 4, 3, 2, 4, 0, 3]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 1, 3, 2, 1, 4, 1, 0, 3, 1, 1]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 1, 3, 2, 1, 4, 1, 0, 3, 1, 1]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 1, 3, 2, 1, 4, 1, 0, 3, 1, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 1, 3, 2, 1, 4, 1, 0, 3, 1, 1]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 1, 0, 0]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 1, 0, 0]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 1, 0, 0]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 0, 1, 3, 0, 2, 3, 0, 0, 2, 3, 1, 4, 0, 2]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 0, 1, 3, 0, 2, 3, 0, 0, 2, 3, 1, 4, 0, 2]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 0, 1, 3, 0, 2, 3, 0, 0, 2, 3, 1, 4, 0, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 4, 3, 2, 4, 3, 4, 1, 2, 2, 2, 4, 2]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 4, 3, 2, 4, 3, 4, 1, 2, 2, 2, 4, 2]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 4, 3, 2, 4, 3, 4, 1, 2, 2, 2, 4, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 2, 0, 3, 4]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 2, 0, 3, 4]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 2, 0, 3, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 2, 0, 3, 4]:3",
+      "over_limit": true
+    }
+  ],
+  "result": {
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "edges": 1128,
+    "best": 240,
+    "upper_bound": 240.0,
+    "selected": [
+      "o0:m1:phase0/24"
+    ],
+    "maxcos": 0.5000000000000012,
+    "real_rank": 8
+  },
+  "cross_checks": "one representative per transitive vector orbit against the other full orbit; final all-pairs numerical check",
+  "certificate": "numerical screening only; phase grid and sampled subgroups not exhaustive"
+}

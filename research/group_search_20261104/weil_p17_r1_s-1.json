@@ -1,0 +1,101 @@
+{
+  "representation": "weil_p17_r1_s-1",
+  "random_seed": 20261104,
+  "p": 17,
+  "rank": 1,
+  "parity": -1,
+  "complex_dimension": 8,
+  "trials": 40,
+  "line_limit": 800,
+  "inventory": [
+    {
+      "orbit": 0,
+      "lines": 144,
+      "vector_orbit_over_limit": true
+    },
+    {
+      "orbit": 1,
+      "lines": 272,
+      "vector_orbit_over_limit": true
+    },
+    {
+      "orbit": 2,
+      "lines": 272,
+      "vector_orbit_over_limit": true
+    },
+    {
+      "orbit": 3,
+      "lines": 272,
+      "vectors": 1632,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 4,
+      "lines": 272,
+      "vector_orbit_over_limit": true
+    },
+    {
+      "orbit": 5,
+      "lines": 306,
+      "vector_orbit_over_limit": true
+    },
+    {
+      "orbit": 6,
+      "lines": 306,
+      "vector_orbit_over_limit": true
+    },
+    {
+      "orbit": 7,
+      "lines": 306,
+      "vector_orbit_over_limit": true
+    },
+    {
+      "orbit": 8,
+      "lines": 306,
+      "vector_orbit_over_limit": true
+    }
+  ],
+  "seeds": [
+    {
+      "seed": "coordinate",
+      "lines": 144
+    },
+    {
+      "seed": "cyclic:[1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1]:0",
+      "lines": 272
+    },
+    {
+      "seed": "cyclic:[1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1]:2",
+      "lines": 272
+    },
+    {
+      "seed": "cyclic:[1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1]:3",
+      "lines": 272
+    },
+    {
+      "seed": "cyclic:[1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1]:4",
+      "lines": 272
+    },
+    {
+      "seed": "cyclic:[1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0]:0",
+      "lines": 306
+    },
+    {
+      "seed": "cyclic:[1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0]:2",
+      "lines": 306
+    },
+    {
+      "seed": "cyclic:[1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0]:4",
+      "lines": 306
+    },
+    {
+      "seed": "cyclic:[1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0]:6",
+      "lines": 306
+    }
+  ],
+  "result": {
+    "best": 0
+  },
+  "cross_checks": "one representative per transitive vector orbit against the other full orbit; final all-pairs numerical check",
+  "certificate": "numerical screening only; phase grid and sampled subgroups not exhaustive"
+}

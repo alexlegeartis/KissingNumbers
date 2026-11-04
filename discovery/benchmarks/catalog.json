@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-04",
+  "claim_policy": "An exact candidate may exceed_recorded_baseline; this catalogue alone never authorizes a SOTA or optimality claim. Numerical outputs cannot establish certified lower bounds.",
+  "comparisons": [
+    {
+      "dimension": 10,
+      "cardinality": 510,
+      "source": "https://cohn.mit.edu/kissing-numbers/",
+      "as_of": "2026-11-04",
+      "verification_scope": "recorded primary-maintainer table snapshot; snapshot values only, not an optimality or global-priority proof",
+      "local_evidence": "research/group_search_20261104/baselines.json",
+      "source_sha256": "390a3d6a5e8f2cdd3dd73a1c5c3d02fe40a4bb2373489697e697ba05c7f242c9",
+      "fresh_retrieval": "failed 2026-11-04 follow-up: web HTTP 502 and urllib HTTP 503; prior captured snapshot retained"
+    },
+    {
+      "dimension": 14,
+      "cardinality": 1932,
+      "source": "https://cohn.mit.edu/kissing-numbers/",
+      "as_of": "2026-11-04",
+      "verification_scope": "recorded primary-maintainer table snapshot; snapshot values only, not an optimality or global-priority proof",
+      "local_evidence": "research/group_search_20261104/baselines.json",
+      "source_sha256": "390a3d6a5e8f2cdd3dd73a1c5c3d02fe40a4bb2373489697e697ba05c7f242c9",
+      "fresh_retrieval": "failed 2026-11-04 follow-up: web HTTP 502 and urllib HTTP 503; prior captured snapshot retained"
+    },
+    {
+      "dimension": 16,
+      "cardinality": 4320,
+      "source": "https://cohn.mit.edu/kissing-numbers/",
+      "as_of": "2026-11-04",
+      "verification_scope": "recorded primary-maintainer table snapshot; snapshot values only, not an optimality or global-priority proof",
+      "local_evidence": "research/group_search_20261104/baselines.json",
+      "source_sha256": "390a3d6a5e8f2cdd3dd73a1c5c3d02fe40a4bb2373489697e697ba05c7f242c9",
+      "fresh_retrieval": "failed 2026-11-04 follow-up: web HTTP 502 and urllib HTTP 503; prior captured snapshot retained"
+    },
+    {
+      "dimension": 25,
+      "cardinality": 197584,
+      "source": "https://cohn.mit.edu/kissing-numbers/",
+      "as_of": "2026-11-04",
+      "verification_scope": "recorded primary-maintainer table snapshot; snapshot values only, not an optimality or global-priority proof",
+      "local_evidence": "research/group_search_20261104/baselines.json",
+      "source_sha256": "390a3d6a5e8f2cdd3dd73a1c5c3d02fe40a4bb2373489697e697ba05c7f242c9",
+      "fresh_retrieval": "failed 2026-11-04 follow-up: web HTTP 502 and urllib HTTP 503; prior captured snapshot retained"
+    },
+    {
+      "dimension": 26,
+      "cardinality": 201136,
+      "source": "https://cohn.mit.edu/kissing-numbers/",
+      "as_of": "2026-11-04",
+      "verification_scope": "recorded primary-maintainer table snapshot; snapshot values only, not an optimality or global-priority proof",
+      "local_evidence": "research/group_search_20261104/baselines.json",
+      "source_sha256": "390a3d6a5e8f2cdd3dd73a1c5c3d02fe40a4bb2373489697e697ba05c7f242c9",
+      "fresh_retrieval": "failed 2026-11-04 follow-up: web HTTP 502 and urllib HTTP 503; prior captured snapshot retained"
+    },
+    {
+      "dimension": 27,
+      "cardinality": 209807,
+      "source": "https://cohn.mit.edu/kissing-numbers/",
+      "as_of": "2026-11-04",
+      "verification_scope": "recorded primary-maintainer table snapshot; snapshot values only, not an optimality or global-priority proof",
+      "local_evidence": "research/group_search_20261104/baselines.json",
+      "source_sha256": "390a3d6a5e8f2cdd3dd73a1c5c3d02fe40a4bb2373489697e697ba05c7f242c9",
+      "fresh_retrieval": "failed 2026-11-04 follow-up: web HTTP 502 and urllib HTTP 503; prior captured snapshot retained"
+    },
+    {
+      "dimension": 28,
+      "cardinality": 221988,
+      "source": "https://cohn.mit.edu/kissing-numbers/",
+      "as_of": "2026-11-04",
+      "verification_scope": "recorded primary-maintainer table snapshot; snapshot values only, not an optimality or global-priority proof",
+      "local_evidence": "research/group_search_20261104/baselines.json",
+      "source_sha256": "390a3d6a5e8f2cdd3dd73a1c5c3d02fe40a4bb2373489697e697ba05c7f242c9",
+      "fresh_retrieval": "failed 2026-11-04 follow-up: web HTTP 502 and urllib HTTP 503; prior captured snapshot retained"
+    },
+    {
+      "dimension": 29,
+      "cardinality": 231697,
+      "source": "https://cohn.mit.edu/kissing-numbers/",
+      "as_of": "2026-11-04",
+      "verification_scope": "recorded primary-maintainer table snapshot; snapshot values only, not an optimality or global-priority proof",
+      "local_evidence": "research/group_search_20261104/baselines.json",
+      "source_sha256": "390a3d6a5e8f2cdd3dd73a1c5c3d02fe40a4bb2373489697e697ba05c7f242c9",
+      "fresh_retrieval": "failed 2026-11-04 follow-up: web HTTP 502 and urllib HTTP 503; prior captured snapshot retained"
+    },
+    {
+      "dimension": 30,
+      "cardinality": 247972,
+      "source": "https://cohn.mit.edu/kissing-numbers/",
+      "as_of": "2026-11-04",
+      "verification_scope": "recorded primary-maintainer table snapshot; snapshot values only, not an optimality or global-priority proof",
+      "local_evidence": "research/group_search_20261104/baselines.json",
+      "source_sha256": "390a3d6a5e8f2cdd3dd73a1c5c3d02fe40a4bb2373489697e697ba05c7f242c9",
+      "fresh_retrieval": "failed 2026-11-04 follow-up: web HTTP 502 and urllib HTTP 503; prior captured snapshot retained"
+    },
+    {
+      "dimension": 31,
+      "cardinality": 251188,
+      "source": "https://cohn.mit.edu/kissing-numbers/",
+      "as_of": "2026-11-04",
+      "verification_scope": "recorded primary-maintainer table snapshot; snapshot values only, not an optimality or global-priority proof",
+      "local_evidence": "research/group_search_20261104/baselines.json",
+      "source_sha256": "390a3d6a5e8f2cdd3dd73a1c5c3d02fe40a4bb2373489697e697ba05c7f242c9",
+      "fresh_retrieval": "failed 2026-11-04 follow-up: web HTTP 502 and urllib HTTP 503; prior captured snapshot retained"
+    },
+    {
+      "dimension": 32,
+      "cardinality": 352800,
+      "source": "https://cohn.mit.edu/kissing-numbers/",
+      "as_of": "2026-11-04",
+      "verification_scope": "recorded primary-maintainer table snapshot; snapshot values only, not an optimality or global-priority proof",
+      "local_evidence": "research/group_search_20261104/baselines.json",
+      "source_sha256": "390a3d6a5e8f2cdd3dd73a1c5c3d02fe40a4bb2373489697e697ba05c7f242c9",
+      "fresh_retrieval": "failed 2026-11-04 follow-up: web HTTP 502 and urllib HTTP 503; prior captured snapshot retained"
+    },
+    {
+      "dimension": 36,
+      "cardinality": 501687,
+      "source": "https://github.com/alexlegeartis/KissingNumbers/blob/main/verifications/improved/dim36-37-coxeter-todd/completion/verification.json",
+      "as_of": "2026-11-04",
+      "verification_scope": "repository completion; two exact proof representations; historical phase receipt is smaller and must not substitute",
+      "local_evidence": "verifications/improved/dim36-37-coxeter-todd/completion/verification.json",
+      "evidence_sha256": "97043af923e8dd4e87fc0f959586db96b1f3a058dd5b9d4c1b26c47f780053c7",
+      "claim_scope": "recorded repository comparison; no renewed comprehensive literature survey"
+    },
+    {
+      "dimension": 64,
+      "cardinality": 335496064,
+      "source": "https://github.com/alexlegeartis/KissingNumbers/blob/main/verifications/improved/dim64-65-signed-parity/README.md",
+      "as_of": "2026-11-04",
+      "verification_scope": "repository registered signed-support construction; evidence referenced, not rerun by this review",
+      "local_evidence": "verifications/improved/dim64-65-signed-parity/README.md",
+      "evidence_sha256": "75997927e1465efdc50dbb3ac4d6e913098ecbbdd13db944c490e4977da3cc29",
+      "claim_scope": "recorded repository comparison; no renewed comprehensive literature survey"
+    },
+    {
+      "dimension": 96,
+      "cardinality": 142162362560,
+      "source": "https://github.com/alexlegeartis/KissingNumbers/blob/main/verifications/improved/dim88-96-z8-golay/bounds.json",
+      "as_of": "2026-11-04",
+      "verification_scope": "repository exact nonlinear-parent sections plus support-layer construction; parent is published prior work",
+      "local_evidence": "verifications/improved/dim88-96-z8-golay/bounds.json",
+      "evidence_sha256": "6f7dd6045fe923c958dc47424d968eb03b5c8f6c8fc386bfd47556bf757648ac",
+      "claim_scope": "recorded repository comparison; no renewed comprehensive literature survey"
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "weil_10_known_control",
+      "expected": {
+        "dimension": 10,
+        "cardinality": 510,
+        "verification": "exact"
+      },
+      "source": "https://arxiv.org/abs/2207.08266",
+      "as_of": "2026-11-04",
+      "local_evidence": "research/group_search_20261104/exact_verification.json",
+      "provenance": "sampled numerical group/character search followed by algebraic seed reconstruction; known-result rediscovery control"
+    },
+    {
+      "id": "e7_frames_14_known_control",
+      "expected": {
+        "dimension": 14,
+        "cardinality": 1932,
+        "verification": "exact"
+      },
+      "source": "https://arxiv.org/abs/2207.08266",
+      "as_of": "2026-11-04",
+      "local_evidence": "research/group_search_20261104/exact_verification.json",
+      "provenance": "reconstruction of supplied section-5.5 E7 frame recipe; not autonomous subgroup-character discovery"
+    },
+    {
+      "id": "ring7_sign_16_known_control",
+      "expected": {
+        "dimension": 16,
+        "cardinality": 256,
+        "min_distance": 6,
+        "parent_min_distance": 6,
+        "verification": "exact"
+      },
+      "source": "research/group_search_20261104/code_search_results.json",
+      "as_of": "2026-11-04",
+      "local_evidence": "research/group_search_20261104/code_search_results.json",
+      "provenance": "generated small-module control in supplied factor/Hensel/Gray/translate grammar; no novelty claim"
+    },
+    {
+      "id": "ring7_sign_32_known_control",
+      "expected": {
+        "dimension": 32,
+        "cardinality": 8192,
+        "min_distance": 8,
+        "parent_min_distance": 10,
+        "verification": "exact"
+      },
+      "source": "research/group_search_20261104/code_search_results.json",
+      "as_of": "2026-11-04",
+      "local_evidence": "research/group_search_20261104/code_search_results.json",
+      "provenance": "generated small-module control in supplied factor/Hensel/Gray/translate grammar; no novelty claim"
+    },
+    {
+      "id": "ring7_sign_64_known_control",
+      "expected": {
+        "dimension": 64,
+        "cardinality": 524288,
+        "min_distance": 16,
+        "parent_min_distance": 20,
+        "verification": "exact"
+      },
+      "source": "research/group_search_20261104/code_search_results.json",
+      "as_of": "2026-11-04",
+      "local_evidence": "research/group_search_20261104/code_search_results.json",
+      "provenance": "generated small-module control in supplied factor/Hensel/Gray/translate grammar; no novelty claim"
+    },
+    {
+      "id": "dgls96_published_control",
+      "expected": {
+        "length": 96,
+        "dimension": 96,
+        "cardinality": 137438953472,
+        "min_distance": 24,
+        "verification": "exact"
+      },
+      "source": "https://doi.org/10.1109/18.923742",
+      "primary_metadata": "https://experts.illinois.edu/en/publications/a-zsub8sub-linear-lift-of-the-binary-golay-code-and-a-nonlinear-b/",
+      "as_of": "2026-11-04",
+      "local_evidence": [
+        "research/group_search_20261104/code_search_results.json",
+        "verifications/improved/dim88-96-z8-golay/data/replay.json",
+        "verifications/improved/dim88-96-z8-golay/data/independent.json"
+      ],
+      "provenance": "published nonlinear code recovered; exact factor synthesis and coset doubling are computational reconstruction, not discovery of a new code"
+    },
+    {
+      "id": "all_linear_extensions_n17_excluded",
+      "expected": {
+        "base_modules": 2,
+        "linear_extensions_per_module": 262144,
+        "survivors": 0,
+        "target_binary_length": 36,
+        "target_min_distance": 9,
+        "verification": "exact_restricted_family_exclusion"
+      },
+      "source": "discovery/benchmarks/all_linear_extensions_20261104.json",
+      "as_of": "2026-11-04",
+      "local_evidence": "discovery/benchmarks/all_linear_extensions_20261104.json",
+      "replay": "python discovery/benchmarks/replay_extensions.py",
+      "provenance": "new bounded search and independent integer replay; no kissing-number upper bound or novel code claim"
+    },
+    {
+      "id": "signed_layers32_known_control",
+      "expected": {
+        "dimension": 32,
+        "cardinality": 352800,
+        "verification": "exact"
+      },
+      "recipe": "discovery/recipes/known32.json",
+      "scope": "Existing repository construction replayed by native compressed proof; not a new SOTA."
+    }
+  ],
+  "primary_sources_checked": [
+    {
+      "url": "https://arxiv.org/abs/2207.08266",
+      "result": "success; published 510 and 1932 controls confirmed"
+    },
+    {
+      "url": "https://experts.illinois.edu/en/publications/a-zsub8sub-linear-lift-of-the-binary-golay-code-and-a-nonlinear-b/",
+      "result": "success; published (96,2^37,24) code and coset doubling confirmed"
+    },
+    {
+      "url": "https://cohn.mit.edu/kissing-numbers/",
+      "result": "fresh retrieval unavailable (502/503); dated recorded snapshot only"
+    }
+  ]
+}
