@@ -74,8 +74,9 @@ must be reconstructed and independently checked exactly before it is claimed.
 Its objective charges deletions of seed equator, tier and flat orbits and
 allows compatible new orbits to share those deletions.
 
-From the repository root, first run the preparation and coupling commands in
-both sections above, then:
+From the repository root, first run `prepare.py` and `coupling.cpp` as in
+the first section, then `rank4_prepare.py` as in the partial-orbit section.
+The rank-four search and coupling are not prerequisites. Then run:
 
     python research/mixed_tier17_20261104/equator_seed.py
     python research/mixed_tier17_20261104/equator_prepare.py
