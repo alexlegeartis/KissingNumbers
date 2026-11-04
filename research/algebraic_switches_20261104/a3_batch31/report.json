@@ -1,0 +1,282 @@
+{
+  "source": "research/algebraic_switches_20261104/lifts31/engine_candidate.npz",
+  "baseline": 251196,
+  "available_cases": 44,
+  "case_limit": 16,
+  "wall_budget": 240,
+  "records": [
+    {
+      "directory": "a3_batch31/trial00",
+      "core_pair": [
+        6,
+        10
+      ],
+      "core_sign": -1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": 1,
+      "candidates": 119488,
+      "admitted": 412,
+      "gain": 0,
+      "seconds": 13.843522713999846
+    },
+    {
+      "directory": "a3_batch31/trial01",
+      "core_pair": [
+        5,
+        6
+      ],
+      "core_sign": -1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": 1,
+      "candidates": 111308,
+      "admitted": 396,
+      "gain": 0,
+      "seconds": 13.312220570998761
+    },
+    {
+      "directory": "a3_batch31/trial02",
+      "core_pair": [
+        8,
+        10
+      ],
+      "core_sign": -1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": -1,
+      "candidates": 87964,
+      "admitted": 164,
+      "gain": 0,
+      "seconds": 10.464315132001502
+    },
+    {
+      "directory": "a3_batch31/trial03",
+      "core_pair": [
+        0,
+        10
+      ],
+      "core_sign": 1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": 1,
+      "candidates": 140288,
+      "admitted": 188,
+      "gain": 0,
+      "seconds": 15.165729475000262
+    },
+    {
+      "directory": "a3_batch31/trial04",
+      "core_pair": [
+        5,
+        10
+      ],
+      "core_sign": 1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": -1,
+      "candidates": 132216,
+      "admitted": 280,
+      "gain": 0,
+      "seconds": 14.653773097998055
+    },
+    {
+      "directory": "a3_batch31/trial05",
+      "core_pair": [
+        8,
+        20
+      ],
+      "core_sign": -1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": 1,
+      "candidates": 75288,
+      "admitted": 196,
+      "gain": 0,
+      "seconds": 8.912025494002592
+    },
+    {
+      "directory": "a3_batch31/trial06",
+      "core_pair": [
+        0,
+        6
+      ],
+      "core_sign": -1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": -1,
+      "candidates": 135872,
+      "admitted": 256,
+      "gain": 0,
+      "seconds": 14.56719302500278
+    },
+    {
+      "directory": "a3_batch31/trial07",
+      "core_pair": [
+        0,
+        10
+      ],
+      "core_sign": 1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": -1,
+      "candidates": 140280,
+      "admitted": 672,
+      "gain": 0,
+      "seconds": 18.72017826299998
+    },
+    {
+      "directory": "a3_batch31/trial08",
+      "core_pair": [
+        5,
+        10
+      ],
+      "core_sign": 1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": 1,
+      "candidates": 132224,
+      "admitted": 0,
+      "gain": 0,
+      "seconds": 14.086377301999164
+    },
+    {
+      "directory": "a3_batch31/trial09",
+      "core_pair": [
+        5,
+        10
+      ],
+      "core_sign": -1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": -1,
+      "candidates": 120192,
+      "admitted": 760,
+      "gain": 0,
+      "seconds": 18.065247339000052
+    },
+    {
+      "directory": "a3_batch31/trial10",
+      "core_pair": [
+        10,
+        20
+      ],
+      "core_sign": -1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": 1,
+      "candidates": 87964,
+      "admitted": 32,
+      "gain": 0,
+      "seconds": 10.196722874003171
+    },
+    {
+      "directory": "a3_batch31/trial11",
+      "core_pair": [
+        10,
+        20
+      ],
+      "core_sign": 1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": -1,
+      "candidates": 87964,
+      "admitted": 164,
+      "gain": 0,
+      "seconds": 10.516856673002621
+    },
+    {
+      "directory": "a3_batch31/trial12",
+      "core_pair": [
+        5,
+        6
+      ],
+      "core_sign": 1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": 1,
+      "candidates": 116784,
+      "admitted": 284,
+      "gain": 0,
+      "seconds": 13.15238416899956
+    },
+    {
+      "directory": "a3_batch31/trial13",
+      "core_pair": [
+        8,
+        20
+      ],
+      "core_sign": 1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": 1,
+      "candidates": 75284,
+      "admitted": 172,
+      "gain": 0,
+      "seconds": 8.981606477998866
+    },
+    {
+      "directory": "a3_batch31/trial14",
+      "core_pair": [
+        0,
+        20
+      ],
+      "core_sign": 1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": -1,
+      "candidates": 88660,
+      "admitted": 100,
+      "gain": 0,
+      "seconds": 10.948584124998888
+    },
+    {
+      "directory": "a3_batch31/trial15",
+      "core_pair": [
+        0,
+        6
+      ],
+      "core_sign": -1,
+      "tail_pair": [
+        24,
+        25
+      ],
+      "tail_sign": 1,
+      "candidates": 135868,
+      "admitted": 404,
+      "gain": 0,
+      "seconds": 17.337501871999848
+    }
+  ],
+  "scope": "Generated A3 completions with retained orthogonal root pairs; finite point-level four-blocker selection. Independent full proof required for a gain."
+}

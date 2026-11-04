@@ -33,6 +33,8 @@ The three signs vary independently. The orthogonal blocks have squared norms
 16, 8 and 8, so all eight vectors have squared norm 32 and mutual product at
 most 16. The independent verifier checks each against every retained point.
 Stored coordinates are twice these vectors, with squared norm 128.
+Together with the four retained points `±4(e8+e20)` and `±4(e24−e25)`,
+the eight additions complete a scaled **A3 root system** of twelve points.
 
 ## Reproduce and verify
 

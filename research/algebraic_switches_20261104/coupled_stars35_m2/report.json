@@ -1,0 +1,29 @@
+{
+  "dimension": 35,
+  "source": "verifications/improved/dim32-35-signed-layers/source/multi35/certificate35.json",
+  "source_sha256": "36da900f249e51ca3fa2de1d5c422d487ad87f37f0759118f2feec5904f1004d",
+  "base_points": 415314,
+  "current_repository": 415334,
+  "star_families": 6000,
+  "star_conflicts": 1933517,
+  "middle_blocker_limit": 2,
+  "untruncated_star_families": 9082,
+  "star_limit": 6000,
+  "star_catalogue_complete": false,
+  "proposed_total": 415314,
+  "selected_stars": [],
+  "removed_root_lines": [],
+  "removed_middle_support_indices": [],
+  "solver": {
+    "status": 1,
+    "message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+    "numerical_dual_bound": -6496.0,
+    "numerical_gap": null,
+    "scope": "Numerical diagnostics only; no exact finite or global upper bound"
+  },
+  "verification_status": "unverified",
+  "new_sota": false,
+  "seconds": 143.97503311900073,
+  "scope": "Complete-family conservative middle deletions, fixed dense code and heads, both leaf parities; finite numerical search, no upper-bound claim. Fresh independent baseline and expanded changed geometry required for any gain.",
+  "retained_best_total": 415334
+}

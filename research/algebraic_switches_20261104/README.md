@@ -51,6 +51,9 @@ with three independent signs. The orthogonal blocks have squared norms 16,
 no original point is deleted. A different 25-for-29 exchange attains the same
 count, but the registered operator prefers the simpler free insertion when
 the gain ties. `merged31` verifies the final sorted cube construction.
+The four retained points `±4(e8+e20)` and `±4(e24−e25)` complete these eight
+additions to a scaled **A3 root system**. Their membership is checked directly
+by the portable independent verifier.
 
 These are seeded construction discoveries. They do not load a target count
 into the generator and are distinct from the 1–24 held-out benchmark. Golay
@@ -80,6 +83,31 @@ The complete 27D and 31D final proofs cover **53,562,750,010 unordered point
 pairs**. Separate direct-int64 calculations check **8,723,928 changed pairs**.
 No lattice minimum or unenumerated population is assumed. Original baseline
 files and all previous verification packages are preserved.
+
+## Final bounded extensions
+
+`coupled_stars35.py` and `near_star_supports.cpp` release whole middle-support
+families together with roots. Both leaf parities are eligible. The first
+complete one-middle-blocker catalogue has 1,174 star families and reproduces
+415,334 points. The second catalogue has 9,082 admissible families; a stated
+6,000-family subset gives 1,933,517 candidate conflicts. Its 90-second MILP
+times out without an improving incumbent. This model remains unresolved;
+the numerical result is no exclusion. Dense and head layers remain fixed,
+and an offending middle support is conservatively deleted in full.
+
+The A3 interpretation also supplies a new generator in `sparse_lifts.py`:
+`--core-pair` and `--tail-pair` select four retained orthogonal roots, and the
+third root axis runs over every four-coordinate support outside the core
+pair. This includes supports absent from the earlier seed catalogue. The
+first 31D case tests all 7,315 supports, 234,080 signed core bodies before
+pricing, and 75,280 new points; its four-blocker pool has 176 points and no
+gain. `a3_batch31.py` explores a bounded nearby set of pair orientations;
+its report states the case and wall limits and each actual outcome.
+
+```sh
+OPENBLAS_NUM_THREADS=1 python3 research/algebraic_switches_20261104/coupled_stars35.py --middle-limit 2 --out /tmp/new-coupled35
+OPENBLAS_NUM_THREADS=1 python3 research/algebraic_switches_20261104/a3_batch31.py --out /tmp/new-a3-batch31
+```
 
 The engine now evaluates bounded small integer sums exactly in binary32,
 using a proved absolute accumulation bound, while retaining int64/Python
@@ -112,3 +140,9 @@ The pinned November 4 Cohn capture lists 209,807/251,188 and has SHA256
 `94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e`.
 Fresh Cohn retrieval failed. This is a bounded comparison against checked
 sources, not an independent latest-worldwide-priority certificate.
+
+The final nearby A3 batch completes all 16 planned cases with no further gain.
+It generates 1,787,644 candidate incidences across overlapping catalogues;
+this sum is not a distinct-point count. Every admitted pool has complete
+explicit blockers, and each numerical selection returns gain zero. These
+finite results do not exclude other root pairs, alphabets or larger exchanges.

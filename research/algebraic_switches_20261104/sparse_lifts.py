@@ -13,15 +13,27 @@ def main():
  ap=argparse.ArgumentParser();ap.add_argument('dimension',type=int);ap.add_argument('--blockers',type=int,default=2)
  ap.add_argument('--out',type=Path,required=True);ap.add_argument('--seconds',type=float,default=120)
  ap.add_argument('--source',type=Path);ap.add_argument('--core-weight',type=int,choices=(5,6),default=6)
- ap.add_argument('--body-limit',type=int);args=ap.parse_args();start=time.monotonic();weight=args.core_weight
+ ap.add_argument('--body-limit',type=int);ap.add_argument('--core-pair',nargs=2,type=int)
+ ap.add_argument('--tail-pair',nargs=2,type=int);ap.add_argument('--core-pair-sign',type=int,choices=(-1,1),default=1)
+ ap.add_argument('--tail-pair-sign',type=int,choices=(-1,1),default=-1)
+ args=ap.parse_args();start=time.monotonic();weight=args.core_weight
  if args.body_limit is not None and args.body_limit<=0:raise ValueError('Positive body limit')
  args.out.mkdir(parents=True,exist_ok=False)
  source=args.source or next((ROOT/'verifications/improved/dim27-31-joint-refills/data').glob(f'coordinates{args.dimension}_*.npz'))
  X=np.load(source,allow_pickle=False)['points'].astype(np.int16);n,d=X.shape
  if d!=args.dimension or not np.all(np.sum(X.astype(np.int64)**2,axis=1)==128):raise ValueError('Source norms/dimension')
+ if bool(args.core_pair)!=bool(args.tail_pair):raise ValueError('Specify both orthogonal root pairs')
+ if args.core_pair:
+  if weight!=6 or len(set(args.core_pair))!=2 or any(not 0<=j<24 for j in args.core_pair) or len(set(args.tail_pair))!=2 or any(not 24<=j<d for j in args.tail_pair):raise ValueError('Invalid A3 coordinate pairs')
+  root=np.zeros(d,np.int16);root[args.core_pair]=[8,8*args.core_pair_sign]
+  tail_root=np.zeros(d,np.int16);tail_root[args.tail_pair]=[8,8*args.tail_pair_sign]
+  source_set={row.tobytes() for row in X}
+  if any(row.tobytes() not in source_set for row in (root,-root,tail_root,-tail_root)):raise ValueError('Four retained orthogonal roots required')
  shape=np.all((X==0)|(abs(X)==4),axis=1)&((X[:,:24]!=0).sum(axis=1)==6)&((X[:,24:]!=0).sum(axis=1)==2)
  six_supports={tuple(map(int,np.flatnonzero(row[:24]))) for row in X[shape]}
  supports=sorted({part for support in six_supports for part in combinations(support,weight)})
+ if args.core_pair:
+  supports=sorted(tuple(sorted(tuple(args.core_pair)+part)) for part in combinations([j for j in range(24) if j not in args.core_pair],4))
  core_ids=np.flatnonzero(~np.any(X[:,24:],axis=1));aux_ids=np.flatnonzero(np.any(X[:,24:],axis=1))
  core=X[core_ids,:24];octads=np.all((core==0)|(abs(core)==4),axis=1)&((core!=0).sum(axis=1)==8)
  other=core[~octads]
@@ -34,6 +46,7 @@ def main():
   mask=np.uint32(sum(1<<j for j in support));intersection=masks&mask
   ids=np.flatnonzero(np.bitwise_count(intersection)>=5)
   for word in range(1<<weight):
+   if args.core_pair and (((word>>support.index(args.core_pair[0]))^(word>>support.index(args.core_pair[1])))&1)!=(args.core_pair_sign<0):continue
    sign=np.uint32(sum(1<<j for t,j in enumerate(support) if word>>t&1))
    blocked=octad_ids[ids[((signs[ids]^sign)&intersection[ids])==0]]
    if len(blocked)>args.blockers:continue
@@ -44,11 +57,12 @@ def main():
   rng=np.random.default_rng(20261104);order=rng.permutation(len(bodies)).tolist()
   order.sort(key=lambda i:len(body_blockers[i]));order=order[:args.body_limit]
   bodies=[bodies[i] for i in order];body_blockers=[body_blockers[i] for i in order]
- print(json.dumps({'supports':len(supports),'core_weight':weight,'signed_body_shapes':len(supports)*(1<<weight),'core_admitted_bodies':admitted_bodies,'tested_bodies':len(bodies),'core_points':len(core),'auxiliary_points':len(aux_ids)}),flush=True)
+ signed_shapes=len(supports)*(1<<weight)//(2 if args.core_pair else 1)
+ print(json.dumps({'supports':len(supports),'core_weight':weight,'signed_body_shapes':signed_shapes,'core_admitted_bodies':admitted_bodies,'tested_bodies':len(bodies),'core_points':len(core),'auxiliary_points':len(aux_ids)}),flush=True)
  known={row.tobytes() for row in X};candidates=[];blockers=[]
  for body,blocked in zip(bodies,body_blockers):
-  for tail in combinations(range(24,d),8-weight):
-   for tail_signs in product((-4,4),repeat=8-weight):
+  for tail in ([tuple(args.tail_pair)] if args.tail_pair else combinations(range(24,d),8-weight)):
+   for tail_signs in (((-4,-4*args.tail_pair_sign),(4,4*args.tail_pair_sign)) if args.tail_pair else product((-4,4),repeat=8-weight)):
     row=body.copy();row[list(tail)]=tail_signs
     if row.tobytes() in known:continue
     candidates.append(row);blockers.append(blocked[:])
@@ -84,9 +98,12 @@ def main():
    maximum=max(maximum,int(values.max()))
   result['direct_integer_maximum']=maximum
   np.savez_compressed(args.out/'candidate.npz',points=final,squared_norm=128,inner_product_limit=64,coordinate_denominator=2)
- report={'dimension':d,'source':str(source),'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
-  'baseline':n,'supports':len(supports),'core_weight':weight,'signed_body_shapes':len(supports)*(1<<weight),'core_admitted_bodies':admitted_bodies,
+ source_label=str(source.resolve().relative_to(ROOT)) if source.resolve().is_relative_to(ROOT) else str(source)
+ report={'dimension':d,'source':source_label,'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
+  'baseline':n,'supports':len(supports),'core_weight':weight,'signed_body_shapes':signed_shapes,'core_admitted_bodies':admitted_bodies,
   'tested_bodies':len(bodies),'body_limit':args.body_limit,'body_generation_complete':len(bodies)==admitted_bodies,
+  'a3_core_pair':args.core_pair,'a3_tail_pair':args.tail_pair,
+  'a3_core_pair_sign':args.core_pair_sign,'a3_tail_pair_sign':args.tail_pair_sign,
   'candidate_pool':len(Y),'admitted_candidates':len(Z),'blocker_cutoff':args.blockers,'dot_products':checks,
   'optimization':result,'seconds':time.monotonic()-start,'new_sota':False,
   'scope':'Seeded core/tail signed-support grammar with stated weight and body budget; individually selectable points, all incumbent layers mutable. Full final geometry replay is required for a lower bound.'}

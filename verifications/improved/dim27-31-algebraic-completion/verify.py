@@ -42,6 +42,9 @@ def changed_pairs(record):
     require(len(added)-len(removed)==record['gain'],'Gain count')
     if record['dimension']==31:
         require(not len(removed) and aset=={row.tobytes() for row in sign_cube31()},'Exact eight-point sign cube')
+        first=np.zeros(31,np.int16);first[[8,20]]=8
+        second=np.zeros(31,np.int16);second[[24,25]]=[8,-8]
+        require(all(row.tobytes() in oldset for row in (first,-first,second,-second)),'Four retained roots of the A3 completion')
     integers=final.astype(np.int64);lookup={row.tobytes():i for i,row in enumerate(final)};maximum=-128
     for row in added.astype(np.int64):
         dots=np.zeros(len(final),np.int64)
