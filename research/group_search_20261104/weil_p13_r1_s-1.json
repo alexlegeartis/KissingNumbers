@@ -1,0 +1,89 @@
+{
+  "representation": "weil_p13_r1_s-1",
+  "random_seed": 20261104,
+  "p": 13,
+  "rank": 1,
+  "parity": -1,
+  "complex_dimension": 6,
+  "trials": 40,
+  "line_limit": 800,
+  "inventory": [
+    {
+      "orbit": 0,
+      "lines": 84,
+      "vectors": 2184,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 1,
+      "lines": 156,
+      "vectors": 2184,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 2,
+      "lines": 156,
+      "vectors": 2184,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 3,
+      "lines": 156,
+      "vectors": 2184,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 4,
+      "lines": 182,
+      "vectors": 2184,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 5,
+      "lines": 182,
+      "vectors": 728,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 6,
+      "lines": 182,
+      "vectors": 2184,
+      "accepted_phase_orders": []
+    }
+  ],
+  "seeds": [
+    {
+      "seed": "coordinate",
+      "lines": 84
+    },
+    {
+      "seed": "cyclic:[1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1]:0",
+      "lines": 156
+    },
+    {
+      "seed": "cyclic:[1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1]:1",
+      "lines": 156
+    },
+    {
+      "seed": "cyclic:[1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1]:4",
+      "lines": 156
+    },
+    {
+      "seed": "cyclic:[1, 0, 0, 1, 0]:0",
+      "lines": 182
+    },
+    {
+      "seed": "cyclic:[1, 0, 0, 1, 0]:2",
+      "lines": 182
+    },
+    {
+      "seed": "cyclic:[1, 0, 0, 1, 0]:3",
+      "lines": 182
+    }
+  ],
+  "result": {
+    "best": 0
+  },
+  "cross_checks": "one representative per transitive vector orbit against the other full orbit; final all-pairs numerical check",
+  "certificate": "numerical screening only; phase grid and sampled subgroups not exhaustive"
+}

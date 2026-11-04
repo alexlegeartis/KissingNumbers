@@ -1,0 +1,17 @@
+{
+  "points": 40,
+  "exact_rank": 5,
+  "norm_squared": 2,
+  "maximum_distinct_inner_product": 1,
+  "pairs_checked": 780,
+  "basis_leading_principal_minors": [
+    "2",
+    "4",
+    "8",
+    "16",
+    "16"
+  ],
+  "positive_semidefinite": "H=A*B^-1*A^T with B positive definite (exact Fraction arithmetic)",
+  "outcome": "Known 40-point 5D control independently discovered numerically then exactly reconstructed; no new SOTA.",
+  "seconds": 0.01352489200007767
+}

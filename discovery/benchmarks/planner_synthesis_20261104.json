@@ -1,0 +1,646 @@
+{
+  "schema_version": 1,
+  "measured_on": "2026-11-04",
+  "scope": "Generated construction-search controls. Both fail their quality targets. No new record, global optimum or exhaustive group-family claim.",
+  "tests": {
+    "full_discovery_suite": {
+      "tests": 81,
+      "seconds": 38.619,
+      "result": "passed"
+    },
+    "repository_audit": {
+      "command": "python audit.py --repository-only",
+      "result": "all checks passed"
+    }
+  },
+  "runs": [
+    {
+      "name": "cosets8",
+      "ledger": {
+        "schema_version": 1,
+        "kind": "typed_construction_planner",
+        "spec_sha256": "fdef338cc9f642c72dbd157167726fa624819df8e606da81feeb804e695fce8d",
+        "status": "complete_within_declared_scope",
+        "enumeration_complete": true,
+        "stop_reason": "frontier_exhausted",
+        "generated_programs": 258,
+        "program_states": {
+          "completed": 128,
+          "not_target": 130
+        },
+        "explored_programs": 128,
+        "completed_programs": 128,
+        "unresolved_evaluations": 0,
+        "evaluation_attempts": {
+          "completed": 128
+        },
+        "unresolved_programs": [],
+        "unsearched": {
+          "generated_pending_evaluations": 0,
+          "unexpanded_prefixes": 0,
+          "known_immediate_extensions": 0,
+          "prefixes_with_uncounted_extensions": 0,
+          "total_remaining_programs": 0,
+          "descendants_of_frontier": "none"
+        },
+        "pruning_by_catalogue_entry": {
+          "0": {
+            "op": "cosets.build",
+            "expanded_prefixes": 131,
+            "typed_extensions": 131,
+            "type_incompatible_extensions": 0,
+            "prefixes_without_compatible_inputs": 0
+          },
+          "1": {
+            "op": "cosets.union",
+            "expanded_prefixes": 131,
+            "typed_extensions": 16768,
+            "type_incompatible_extensions": 16384,
+            "prefixes_without_compatible_inputs": 1
+          },
+          "2": {
+            "op": "geometry.sign_embed",
+            "expanded_prefixes": 131,
+            "typed_extensions": 128,
+            "type_incompatible_extensions": 131,
+            "prefixes_without_compatible_inputs": 3
+          }
+        },
+        "best_exact_by_dimension": {
+          "8": {
+            "dimension": 8,
+            "cardinality": 128,
+            "program_id": 258,
+            "output": "n2"
+          }
+        },
+        "pruned_non_target_leaves": 16769,
+        "strategy": "adaptive",
+        "heuristic": "adaptive: optimistic kind distance then candidate cardinality feedback; ordering only; no dimension eligibility filter",
+        "best_observed_candidates_by_dimension": {
+          "8": {
+            "dimension": 8,
+            "cardinality": 128,
+            "verification_status": "exact",
+            "program_id": 258
+          }
+        },
+        "operator_search_diagnostics": [],
+        "quality_diagnostics": [
+          {
+            "target": {
+              "cardinality": 240,
+              "dimension": 8,
+              "label": "Known E8 control, not a new record",
+              "source": "README.md (E8 root system)"
+            },
+            "best_exact_cardinality": 128,
+            "best_observed_candidate": {
+              "dimension": 8,
+              "cardinality": 128,
+              "verification_status": "exact",
+              "program_id": 258
+            },
+            "exact_fraction_of_target": 0.5333333333333333,
+            "exact_deficit": 112,
+            "candidate_fraction_of_target": 0.5333333333333333,
+            "candidate_deficit": 112,
+            "target_met_by_exact_result": false
+          }
+        ],
+        "target_quality_passed": false,
+        "quality_notice": "enumeration completion is not discovery success; target deficits require better candidates or new structural operators; numerical counts do not certify lower bounds",
+        "resource_limits": {
+          "max_evaluations": 200,
+          "max_program_bytes": 2097152,
+          "max_programs": 10000,
+          "max_receipt_bytes": 16777216,
+          "max_steps": 25000,
+          "per_program_seconds": 30.0,
+          "retry_unresolved": false,
+          "time_limit_seconds": 120.0
+        },
+        "declared_scope": {
+          "max_nodes": 3,
+          "output_kinds": [
+            "implicit_spherical_code"
+          ],
+          "parameter_domains": [
+            {
+              "op": "cosets.build",
+              "params": {
+                "parity_check": [
+                  [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    1
+                  ]
+                ]
+              }
+            },
+            {
+              "domains": {
+                "syndrome_labels": {
+                  "subsets": {
+                    "include": [
+                      0
+                    ],
+                    "of": [
+                      2,
+                      4,
+                      6,
+                      8,
+                      10,
+                      12,
+                      14
+                    ]
+                  }
+                }
+              },
+              "op": "cosets.union"
+            },
+            {
+              "op": "geometry.sign_embed"
+            }
+          ],
+          "registered_but_omitted": [
+            "codes.translate_union",
+            "geometry.integer_code",
+            "geometry.orthogonal_union",
+            "groups.from_generators",
+            "groups.ganzhinov10",
+            "groups.ganzhinov14",
+            "groups.search",
+            "groups.weil",
+            "layers.known32",
+            "layers.signed_supports",
+            "rings.binary_factor",
+            "rings.extend",
+            "rings.gray",
+            "rings.hensel",
+            "rings.verify_dgls"
+          ],
+          "unimplemented_capabilities": [
+            {
+              "family": "mixed",
+              "name": "geometry.general_compatible_union",
+              "reason": "Needed to assemble the implicit 128-point sign layer with the 112-point support-two layer in the same 8D space; orthogonal_union cannot express this."
+            }
+          ],
+          "beyond_max_nodes": "unsearched",
+          "outside_parameter_domains": "unsearched"
+        },
+        "scope": "finite typed DAGs only; static kind pruning is not a mathematical exclusion; no global optimum or SOTA claim",
+        "mathematical_exclusion_claim": false,
+        "checkpoint_notice": "saved results are receipts, not proof; export and independently verify before use"
+      },
+      "execution_budget": {
+        "max_codewords": 262144,
+        "max_dgls_words": 16777216,
+        "max_dimension": 256,
+        "max_materialized_points": 20000,
+        "max_nodes": 100,
+        "max_orbit_points": 10000,
+        "max_pairs": 10000000,
+        "max_trials": 200,
+        "solver_seconds": 30
+      },
+      "source_sha256": {
+        "__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
+        "__main__.py": "81900c7747de177f03875c617c662cf7e7af5d1a5b476aa9510e3bbedf069e5a",
+        "certification.py": "17ce40de301ae75a4c4411d95852bd98395bdd600bb4dca676257b0652679511",
+        "core.py": "5e08c17e408c97f0d53edd20e97a2776e722ae8b86538fafe01170a5f5c8dc82",
+        "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
+        "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
+        "engines/geometry.py": "ee26b89e81000818bef659886dba716d622a415ef46b7d037d4359354e74fdc7",
+        "engines/groups.py": "67be01b06d385d05fab5feacb40f0ca4d19311e11b73b63226455511a5530245",
+        "engines/layers.py": "a799fab74c7bbacc93712ad2df2ee201f375cb0c56f0f6617cb9f3d1437045cf",
+        "engines/rings.py": "87d1e00e2da8209f6691a023dc517915623e4713b2b7b87695b8957f056158c2",
+        "planner.py": "9ddbfa1376613f2137c1b622686a39d4398a110ada7960a09bf1ebe85034a9ce",
+        "runner.py": "64f4d7a2d445d078109cc072099a256b81e02c60cda42d5b13804434c6ac7df7",
+        "scheduler.py": "bd670077736c2986dea9c64d71a91295197af9c8090c4736af13fcdc84a5e239"
+      },
+      "summed_worker_seconds": 43.731278406000115,
+      "sessions": [
+        {
+          "limits": {
+            "max_evaluations": 200,
+            "max_program_bytes": 2097152,
+            "max_programs": 10000,
+            "max_receipt_bytes": 16777216,
+            "max_steps": 25000,
+            "per_program_seconds": 30.0,
+            "retry_unresolved": false,
+            "time_limit_seconds": 120.0
+          },
+          "stop_reason": "frontier_exhausted"
+        }
+      ],
+      "evaluation_outcomes": null
+    },
+    {
+      "name": "groups28",
+      "ledger": {
+        "schema_version": 1,
+        "kind": "typed_construction_planner",
+        "spec_sha256": "86fc216cefd26ad0732c3682fb836fa4d379b78edbe2aec5b7dad47d2af437fe",
+        "status": "complete_within_declared_scope",
+        "enumeration_complete": true,
+        "stop_reason": "frontier_exhausted",
+        "generated_programs": 3,
+        "program_states": {
+          "completed": 2,
+          "not_target": 1
+        },
+        "explored_programs": 2,
+        "completed_programs": 2,
+        "unresolved_evaluations": 0,
+        "evaluation_attempts": {
+          "completed": 2
+        },
+        "unresolved_programs": [],
+        "unsearched": {
+          "generated_pending_evaluations": 0,
+          "unexpanded_prefixes": 0,
+          "known_immediate_extensions": 0,
+          "prefixes_with_uncounted_extensions": 0,
+          "total_remaining_programs": 0,
+          "descendants_of_frontier": "none"
+        },
+        "pruning_by_catalogue_entry": {
+          "0": {
+            "op": "groups.weil",
+            "expanded_prefixes": 2,
+            "typed_extensions": 2,
+            "type_incompatible_extensions": 0,
+            "prefixes_without_compatible_inputs": 0
+          },
+          "1": {
+            "op": "groups.search",
+            "expanded_prefixes": 2,
+            "typed_extensions": 2,
+            "type_incompatible_extensions": 0,
+            "prefixes_without_compatible_inputs": 1
+          }
+        },
+        "best_exact_by_dimension": {},
+        "pruned_non_target_leaves": 1,
+        "strategy": "adaptive",
+        "heuristic": "adaptive: optimistic kind distance then candidate cardinality feedback; ordering only; no dimension eligibility filter",
+        "best_observed_candidates_by_dimension": {
+          "28": {
+            "dimension": 28,
+            "cardinality": 6720,
+            "verification_status": "numerical",
+            "program_id": 2
+          }
+        },
+        "operator_search_diagnostics": [
+          {
+            "program_id": 2,
+            "output": "n1",
+            "diagnostics": {
+              "closure_failures": 61,
+              "limits": {
+                "linecap": 1600,
+                "max_blocks": 1000,
+                "max_candidates": 2000,
+                "max_materialized_points": 100000,
+                "max_orbits": 100,
+                "max_output_points": 10000,
+                "trials": 12,
+                "vectorcap": 9600
+              },
+              "materialization_limit_reached": true,
+              "sampling_limit_reached": false,
+              "search_scope": "sampled subgroup eigenlines and finite phase grid only",
+              "solver": {
+                "bound_scope": "materialized candidate conflict graph; numerical screening",
+                "candidate_count": 30,
+                "conflicts": 387,
+                "finite_candidate_upper_bound": 6720.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "status": 0
+              }
+            }
+          },
+          {
+            "program_id": 3,
+            "output": "n1",
+            "diagnostics": {
+              "closure_failures": 65,
+              "limits": {
+                "linecap": 1600,
+                "max_blocks": 1000,
+                "max_candidates": 2000,
+                "max_materialized_points": 100000,
+                "max_orbits": 100,
+                "max_output_points": 10000,
+                "trials": 12,
+                "vectorcap": 9600
+              },
+              "materialization_limit_reached": true,
+              "sampling_limit_reached": false,
+              "search_scope": "sampled subgroup eigenlines and finite phase grid only",
+              "solver": {
+                "bound_scope": "materialized candidate conflict graph; numerical screening",
+                "candidate_count": 30,
+                "conflicts": 387,
+                "finite_candidate_upper_bound": 6720.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "status": 0
+              }
+            }
+          }
+        ],
+        "quality_diagnostics": [
+          {
+            "target": {
+              "cardinality": 221988,
+              "dimension": 28,
+              "label": "Dated repository comparison, 2026-11-04",
+              "source": "discovery/benchmarks/catalog.json"
+            },
+            "best_exact_cardinality": null,
+            "best_observed_candidate": {
+              "dimension": 28,
+              "cardinality": 6720,
+              "verification_status": "numerical",
+              "program_id": 2
+            },
+            "exact_fraction_of_target": null,
+            "exact_deficit": null,
+            "candidate_fraction_of_target": 0.030271906589545382,
+            "candidate_deficit": 215268,
+            "target_met_by_exact_result": false
+          }
+        ],
+        "target_quality_passed": false,
+        "quality_notice": "enumeration completion is not discovery success; target deficits require better candidates or new structural operators; numerical counts do not certify lower bounds",
+        "resource_limits": {
+          "max_evaluations": 10,
+          "max_program_bytes": 2097152,
+          "max_programs": 10000,
+          "max_receipt_bytes": 16777216,
+          "max_steps": 100,
+          "per_program_seconds": 50.0,
+          "retry_unresolved": false,
+          "time_limit_seconds": 110.0
+        },
+        "declared_scope": {
+          "max_nodes": 2,
+          "output_kinds": [
+            "spherical_code",
+            "search_result"
+          ],
+          "parameter_domains": [
+            {
+              "op": "groups.weil",
+              "params": {
+                "p": 3,
+                "parity": 1,
+                "rank": 3
+              }
+            },
+            {
+              "domains": {
+                "seed": {
+                  "integer_range": {
+                    "start": 20261104,
+                    "stop": 20261106
+                  }
+                }
+              },
+              "op": "groups.search",
+              "params": {
+                "linecap": 1600,
+                "trials": 12
+              }
+            }
+          ],
+          "registered_but_omitted": [
+            "codes.translate_union",
+            "cosets.build",
+            "cosets.union",
+            "geometry.integer_code",
+            "geometry.orthogonal_union",
+            "geometry.sign_embed",
+            "groups.from_generators",
+            "groups.ganzhinov10",
+            "groups.ganzhinov14",
+            "layers.known32",
+            "layers.signed_supports",
+            "rings.binary_factor",
+            "rings.extend",
+            "rings.gray",
+            "rings.hensel",
+            "rings.verify_dgls"
+          ],
+          "unimplemented_capabilities": [
+            {
+              "family": "groups",
+              "name": "groups.general_multiplicity_parameters",
+              "reason": "Current search samples subgroup eigenlines and a finite phase grid rather than all higher-multiplicity character spaces."
+            },
+            {
+              "family": "mixed",
+              "name": "geometry.general_compatible_union",
+              "reason": "Current registry cannot compose nonorthogonal group/code/support components with general cross-compatibility certificates."
+            }
+          ],
+          "beyond_max_nodes": "unsearched",
+          "outside_parameter_domains": "unsearched"
+        },
+        "scope": "finite typed DAGs only; static kind pruning is not a mathematical exclusion; no global optimum or SOTA claim",
+        "mathematical_exclusion_claim": false,
+        "checkpoint_notice": "saved results are receipts, not proof; export and independently verify before use"
+      },
+      "execution_budget": {
+        "max_codewords": 262144,
+        "max_dgls_words": 16777216,
+        "max_dimension": 256,
+        "max_materialized_points": 100000,
+        "max_nodes": 100,
+        "max_orbit_points": 10000,
+        "max_pairs": 30000000,
+        "max_trials": 200,
+        "solver_seconds": 30
+      },
+      "source_sha256": {
+        "__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
+        "__main__.py": "81900c7747de177f03875c617c662cf7e7af5d1a5b476aa9510e3bbedf069e5a",
+        "certification.py": "17ce40de301ae75a4c4411d95852bd98395bdd600bb4dca676257b0652679511",
+        "core.py": "5e08c17e408c97f0d53edd20e97a2776e722ae8b86538fafe01170a5f5c8dc82",
+        "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
+        "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
+        "engines/geometry.py": "ee26b89e81000818bef659886dba716d622a415ef46b7d037d4359354e74fdc7",
+        "engines/groups.py": "67be01b06d385d05fab5feacb40f0ca4d19311e11b73b63226455511a5530245",
+        "engines/layers.py": "a799fab74c7bbacc93712ad2df2ee201f375cb0c56f0f6617cb9f3d1437045cf",
+        "engines/rings.py": "87d1e00e2da8209f6691a023dc517915623e4713b2b7b87695b8957f056158c2",
+        "planner.py": "9ddbfa1376613f2137c1b622686a39d4398a110ada7960a09bf1ebe85034a9ce",
+        "runner.py": "64f4d7a2d445d078109cc072099a256b81e02c60cda42d5b13804434c6ac7df7",
+        "scheduler.py": "bd670077736c2986dea9c64d71a91295197af9c8090c4736af13fcdc84a5e239"
+      },
+      "summed_worker_seconds": 19.669272733999833,
+      "sessions": [
+        {
+          "limits": {
+            "max_evaluations": 10,
+            "max_program_bytes": 2097152,
+            "max_programs": 10000,
+            "max_receipt_bytes": 16777216,
+            "max_steps": 100,
+            "per_program_seconds": 50.0,
+            "retry_unresolved": false,
+            "time_limit_seconds": 110.0
+          },
+          "stop_reason": "frontier_exhausted"
+        }
+      ],
+      "evaluation_outcomes": [
+        {
+          "program_id": 2,
+          "state": "completed",
+          "seconds": 10.237019364999924,
+          "outputs": {
+            "n1": {
+              "candidate_ambient_dimension": 28,
+              "candidate_facts": {
+                "cardinality": 6720,
+                "complex_dimension": 14,
+                "dimension": 28,
+                "global_optimality_claim": false,
+                "search_scope": "sampled subgroup eigenlines and finite phase grid only",
+                "seed": 20261104
+              },
+              "facts": {
+                "cardinality": 6720,
+                "certificate": false,
+                "dimension": 28,
+                "max_cosine": 0.5000000000000011,
+                "rank_numerical": 28,
+                "tolerance": 1e-08
+              },
+              "kind": "spherical_code",
+              "search_diagnostics": {
+                "closure_failures": 61,
+                "limits": {
+                  "linecap": 1600,
+                  "max_blocks": 1000,
+                  "max_candidates": 2000,
+                  "max_materialized_points": 100000,
+                  "max_orbits": 100,
+                  "max_output_points": 10000,
+                  "trials": 12,
+                  "vectorcap": 9600
+                },
+                "materialization_limit_reached": true,
+                "sampling_limit_reached": false,
+                "search_scope": "sampled subgroup eigenlines and finite phase grid only",
+                "solver": {
+                  "bound_scope": "materialized candidate conflict graph; numerical screening",
+                  "candidate_count": 30,
+                  "conflicts": 387,
+                  "finite_candidate_upper_bound": 6720.0,
+                  "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                  "status": 0
+                }
+              },
+              "verification_status": "numerical"
+            }
+          }
+        },
+        {
+          "program_id": 3,
+          "state": "completed",
+          "seconds": 9.432253368999909,
+          "outputs": {
+            "n1": {
+              "candidate_ambient_dimension": 28,
+              "candidate_facts": {
+                "cardinality": 6720,
+                "complex_dimension": 14,
+                "dimension": 28,
+                "global_optimality_claim": false,
+                "search_scope": "sampled subgroup eigenlines and finite phase grid only",
+                "seed": 20261105
+              },
+              "facts": {
+                "cardinality": 6720,
+                "certificate": false,
+                "dimension": 28,
+                "max_cosine": 0.5000000000000011,
+                "rank_numerical": 28,
+                "tolerance": 1e-08
+              },
+              "kind": "spherical_code",
+              "search_diagnostics": {
+                "closure_failures": 65,
+                "limits": {
+                  "linecap": 1600,
+                  "max_blocks": 1000,
+                  "max_candidates": 2000,
+                  "max_materialized_points": 100000,
+                  "max_orbits": 100,
+                  "max_output_points": 10000,
+                  "trials": 12,
+                  "vectorcap": 9600
+                },
+                "materialization_limit_reached": true,
+                "sampling_limit_reached": false,
+                "search_scope": "sampled subgroup eigenlines and finite phase grid only",
+                "solver": {
+                  "bound_scope": "materialized candidate conflict graph; numerical screening",
+                  "candidate_count": 30,
+                  "conflicts": 387,
+                  "finite_candidate_upper_bound": 6720.0,
+                  "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                  "status": 0
+                }
+              },
+              "verification_status": "numerical"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "cosets8_best_receipt": "discovery/benchmarks/receipts/planner_cosets8_best.json",
+  "cosets8_best_receipt_sha256": "f09820e9dcb622a40564f3defb0a9d50d2ea330e0d1058d57294916ce547bbdb",
+  "group_receipts": "Stored locally in the SQLite checkpoint; reproduce with planner_groups28.json and the recorded budgets. Numerical coordinates are not committed."
+}

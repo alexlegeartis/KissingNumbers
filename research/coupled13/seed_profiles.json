@@ -1,0 +1,119 @@
+[
+  {
+    "left_zone": 0,
+    "right_zone": 2,
+    "equator_points": 816,
+    "equator_distinct_supports": 53,
+    "support_multiplicity_histogram": {
+      "16": 49,
+      "8": 4
+    },
+    "classical_under_signed_coordinate_permutations": false,
+    "full13_antipodal_pairs": 561,
+    "normalized_pair_count": 665281,
+    "full13_isometry_to_other_seeds": "not classified here"
+  },
+  {
+    "left_zone": 0,
+    "right_zone": 3,
+    "equator_points": 816,
+    "equator_distinct_supports": 55,
+    "support_multiplicity_histogram": {
+      "16": 49,
+      "8": 2,
+      "4": 4
+    },
+    "classical_under_signed_coordinate_permutations": false,
+    "full13_antipodal_pairs": 561,
+    "normalized_pair_count": 665281,
+    "full13_isometry_to_other_seeds": "not classified here"
+  },
+  {
+    "left_zone": 0,
+    "right_zone": 4,
+    "equator_points": 816,
+    "equator_distinct_supports": 53,
+    "support_multiplicity_histogram": {
+      "16": 49,
+      "8": 4
+    },
+    "classical_under_signed_coordinate_permutations": false,
+    "full13_antipodal_pairs": 577,
+    "normalized_pair_count": 665281,
+    "full13_isometry_to_other_seeds": "not classified here"
+  },
+  {
+    "left_zone": 0,
+    "right_zone": 5,
+    "equator_points": 816,
+    "equator_distinct_supports": 55,
+    "support_multiplicity_histogram": {
+      "16": 49,
+      "4": 4,
+      "8": 2
+    },
+    "classical_under_signed_coordinate_permutations": false,
+    "full13_antipodal_pairs": 569,
+    "normalized_pair_count": 665281,
+    "full13_isometry_to_other_seeds": "not classified here"
+  },
+  {
+    "left_zone": 2,
+    "right_zone": 2,
+    "equator_points": 816,
+    "equator_distinct_supports": 55,
+    "support_multiplicity_histogram": {
+      "16": 47,
+      "8": 8
+    },
+    "classical_under_signed_coordinate_permutations": false,
+    "full13_antipodal_pairs": 545,
+    "normalized_pair_count": 665281,
+    "full13_isometry_to_other_seeds": "not classified here"
+  },
+  {
+    "left_zone": 2,
+    "right_zone": 3,
+    "equator_points": 816,
+    "equator_distinct_supports": 57,
+    "support_multiplicity_histogram": {
+      "16": 47,
+      "8": 6,
+      "4": 4
+    },
+    "classical_under_signed_coordinate_permutations": false,
+    "full13_antipodal_pairs": 545,
+    "normalized_pair_count": 665281,
+    "full13_isometry_to_other_seeds": "not classified here"
+  },
+  {
+    "left_zone": 3,
+    "right_zone": 4,
+    "equator_points": 816,
+    "equator_distinct_supports": 57,
+    "support_multiplicity_histogram": {
+      "16": 47,
+      "8": 6,
+      "4": 4
+    },
+    "classical_under_signed_coordinate_permutations": false,
+    "full13_antipodal_pairs": 561,
+    "normalized_pair_count": 665281,
+    "full13_isometry_to_other_seeds": "not classified here"
+  },
+  {
+    "left_zone": 4,
+    "right_zone": 5,
+    "equator_points": 816,
+    "equator_distinct_supports": 57,
+    "support_multiplicity_histogram": {
+      "16": 47,
+      "8": 6,
+      "4": 4
+    },
+    "classical_under_signed_coordinate_permutations": false,
+    "full13_antipodal_pairs": 569,
+    "normalized_pair_count": 665281,
+    "full13_isometry_to_other_seeds": "not classified here"
+  }
+]

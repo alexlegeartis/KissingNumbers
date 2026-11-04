@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "facts": {
+    "dimension": 28,
+    "rank_exact": 28,
+    "ambient_dimension": 28,
+    "cardinality": 37800,
+    "norm_squared": 32,
+    "max_inner_product": 16,
+    "finite_group_proved": true
+  },
+  "verification": {
+    "status": "exact",
+    "method": "exact orthogonal action closure, transitivity, seed separation and rational rank",
+    "details": {
+      "facts": {
+        "dimension": 28,
+        "rank_exact": 28,
+        "ambient_dimension": 28,
+        "cardinality": 37800,
+        "norm_squared": 32,
+        "max_inner_product": 16,
+        "finite_group_proved": true
+      },
+      "seed_pairs_checked": 37799,
+      "unordered_pairs_covered": 714401100,
+      "generator_images_checked": 302400,
+      "rank_scalar_work": 40008640,
+      "data_sha256": "7971019455258059a357577056f1d13276cb3f40219a061c351ac7431e6530a3",
+      "proof": "Any pair can be moved to a seed pair by an inverse word in the exactly orthogonal generators. Closure and reachability are checked explicitly.",
+      "finite_group_scope": "The generated matrix group is finite if the orbit spans the whole ambient space; no abstract group order or irreducibility is claimed."
+    }
+  },
+  "seconds": 7.159836198999983,
+  "root_orbit_size": 240,
+  "new_sota": false
+}

@@ -1,0 +1,86 @@
+{
+  "status": "bounded exact witness screen; surviving masks remain uncertified",
+  "seed": 20261104097,
+  "input_candidates": 692,
+  "rejected": 692,
+  "survivors": 0,
+  "history": [
+    {
+      "trial": 0,
+      "remaining": 679,
+      "best_proxy": 26
+    },
+    {
+      "trial": 16,
+      "remaining": 405,
+      "best_proxy": 26
+    },
+    {
+      "trial": 32,
+      "remaining": 233,
+      "best_proxy": 25
+    },
+    {
+      "trial": 48,
+      "remaining": 140,
+      "best_proxy": 25
+    },
+    {
+      "trial": 64,
+      "remaining": 85,
+      "best_proxy": 25
+    },
+    {
+      "trial": 80,
+      "remaining": 51,
+      "best_proxy": 25
+    },
+    {
+      "trial": 96,
+      "remaining": 36,
+      "best_proxy": 24
+    },
+    {
+      "trial": 112,
+      "remaining": 24,
+      "best_proxy": 24
+    },
+    {
+      "trial": 128,
+      "remaining": 8,
+      "best_proxy": 24
+    },
+    {
+      "trial": 144,
+      "remaining": 4,
+      "best_proxy": 24
+    },
+    {
+      "trial": 160,
+      "remaining": 3,
+      "best_proxy": 24
+    },
+    {
+      "trial": 176,
+      "remaining": 1,
+      "best_proxy": 24
+    },
+    {
+      "trial": 190,
+      "remaining": 0,
+      "best_proxy": 23
+    }
+  ],
+  "distance_histogram": {
+    "22": 498,
+    "20": 141,
+    "21": 4,
+    "23": 21,
+    "18": 26,
+    "16": 2
+  },
+  "pair_trials": 21991,
+  "max_trials_per_candidate": 191,
+  "elapsed_seconds": 0.5569073280003067,
+  "source_sha256": "8cbdaf771bc0699dacd200ad654878c4dab237573b188cfa2c956dd38b5c486f"
+}

@@ -1,0 +1,14 @@
+{
+  "previous_total": 2919782,
+  "total": 2919785,
+  "gain": 3,
+  "tiny_points": 3450,
+  "source_branch_tip": "f050d67cb0693d7b0d706b80b71ac91314e5288b",
+  "original_discovery": "Separate finite43D searches; see research/43d_head_exchange_20261104",
+  "engine": "search.body_head_exchange independently generated all three steps from body/head/envelope inputs, without a supplied delta or target count",
+  "engine_delta_sha256": "9bc9aacd9ba0b5d709972748ade8d0e1b6b1e5ea666c977646f94f8f6adf9ffd",
+  "point_certificate_sha256": "042aaff30943205f8d7ce26a4023fb88bcf7db80862484ad21584a1c864135b6",
+  "combined_deleted_from3408": 51,
+  "combined_added_to3408": 93,
+  "population_scope": "Unchanged inherited complete-family identities and P48n minimum/design inputs; no fresh large-shell enumeration."
+}

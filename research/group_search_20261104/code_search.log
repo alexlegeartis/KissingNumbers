@@ -1,0 +1,26 @@
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sympy/polys/polytools.py:6282: SymPyDeprecationWarning: 
+
+Ordered comparisons with modular integers are deprecated.
+
+            Use e.g. int(a) < int(b) instead of a < b.
+
+See https://docs.sympy.org/latest/explanation/active-deprecations.html#modularinteger-compare
+for details.
+
+This has been deprecated since SymPy version 1.13. It
+will be removed in a future version of SymPy.
+
+  return sorted(factors, key=key)
+7 4 0 exhaustively_verified 6 256
+7 8 0 exhaustively_verified 10 4096
+7 16 0 exhaustively_verified 20 65536
+7 4 1 exhaustively_verified 6 256
+7 8 1 exhaustively_verified 10 4096
+7 16 1 exhaustively_verified 20 65536
+23 4 0 structural_candidate_only None None
+23 8 0 two_existing_independent_exact_parent_verifiers_passed 24 137438953472
+23 16 0 structural_candidate_only None None
+23 4 1 structural_candidate_only None None
+23 8 1 structural_candidate_only None None
+23 16 1 structural_candidate_only None None
+DGLS exact verification: 137438953472 24

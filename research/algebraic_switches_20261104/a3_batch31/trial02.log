@@ -1,0 +1,43 @@
+{"supports": 7315, "core_weight": 6, "signed_body_shapes": 234080, "core_admitted_bodies": 43984, "tested_bodies": 43984, "core_points": 148688, "auxiliary_points": 102508}
+{"new_candidates": 87964, "admitted_candidates": 164, "dot_products": 1272761500}
+{
+  "dimension": 31,
+  "source": "/workspace/KissingNumbers-sol/research/algebraic_switches_20261104/lifts31/engine_candidate.npz",
+  "source_sha256": "02cddb863829f7298a1b80779603f3963f0c0db3eef0ff2a9050abe601e56127",
+  "baseline": 251196,
+  "supports": 7315,
+  "core_weight": 6,
+  "signed_body_shapes": 234080,
+  "core_admitted_bodies": 43984,
+  "tested_bodies": 43984,
+  "body_limit": null,
+  "body_generation_complete": true,
+  "a3_core_pair": [
+    8,
+    10
+  ],
+  "a3_tail_pair": [
+    24,
+    25
+  ],
+  "a3_core_pair_sign": -1,
+  "a3_tail_pair_sign": -1,
+  "candidate_pool": 87964,
+  "admitted_candidates": 164,
+  "blocker_cutoff": 4,
+  "dot_products": 1272761500,
+  "optimization": {
+    "solver_status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "gain": 0,
+    "added": [],
+    "removed": [],
+    "candidate_conflicts": 888,
+    "exact_binary_ball_clique_cuts": 0,
+    "numerical_gain_upper_bound": -0.0,
+    "scope": "Numerical MILP diagnostics; only full exact output replay can establish an improvement"
+  },
+  "seconds": 10.464315132001502,
+  "new_sota": false,
+  "scope": "Seeded core/tail signed-support grammar with stated weight and body budget; individually selectable points, all incumbent layers mutable. Full final geometry replay is required for a lower bound."
+}

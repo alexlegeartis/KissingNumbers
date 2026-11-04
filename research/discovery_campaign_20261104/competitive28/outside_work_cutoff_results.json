@@ -1,0 +1,1322 @@
+{
+  "source": "verifications/improved/dim27-31-joint-refills/data/coordinates28_221988.npz",
+  "source_sha256": "509b7894dd8534946a81d8bfd354c9ef947e4fe5c82482796aac76799169f129",
+  "source_fresh_full_verification": {
+    "status": "PASS",
+    "dimension": 28,
+    "points": 221988,
+    "squared_norm": 128,
+    "inner_product_limit": 64,
+    "antipodal_pairs": 110960,
+    "unpaired_points": 68,
+    "distinct_line_pairs_checked": 6156005320,
+    "paired_to_unpaired_checks": 7545280,
+    "unpaired_pairs_checked": 2278,
+    "unordered_point_pairs_covered": 24639225078,
+    "maximum_checked_product": 64,
+    "canonical_point_sha256": "ee6bfb5828c418969fe747b0181249a6338cf05eede8acdbc58f82de41b0ce29",
+    "file_sha256": "509b7894dd8534946a81d8bfd354c9ef947e4fe5c82482796aac76799169f129",
+    "arithmetic": "Exact bounded integer products in binary32; no tolerance",
+    "seconds": 20.190335219999724
+  },
+  "full_sextet_partitions": 1771,
+  "outside_normal_octad_subfamily": 1736,
+  "planned_words": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      0
+    ]
+  ],
+  "attempted_words": 16,
+  "records": [
+    {
+      "common": 153374,
+      "exclusive_source": 68614,
+      "exclusive_candidates": 68614,
+      "blocker_limit": 8,
+      "dot_products": 798823040,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 20196,
+      "source_blocks_scanned": 355,
+      "word": [
+        0
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            7,
+            10,
+            12
+          ],
+          [
+            5,
+            14,
+            17,
+            23
+          ],
+          [
+            6,
+            9,
+            11,
+            22
+          ],
+          [
+            8,
+            15,
+            16,
+            19
+          ],
+          [
+            13,
+            18,
+            20,
+            21
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 152482,
+      "exclusive_source": 69506,
+      "exclusive_candidates": 69506,
+      "blocker_limit": 8,
+      "dot_products": 799877248,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 20268,
+      "source_blocks_scanned": 387,
+      "word": [
+        1
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            4
+          ],
+          [
+            3,
+            7,
+            10,
+            12
+          ],
+          [
+            5,
+            9,
+            18,
+            19
+          ],
+          [
+            6,
+            8,
+            14,
+            20
+          ],
+          [
+            11,
+            15,
+            17,
+            21
+          ],
+          [
+            13,
+            16,
+            22,
+            23
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 152084,
+      "exclusive_source": 69904,
+      "exclusive_candidates": 69904,
+      "blocker_limit": 8,
+      "dot_products": 799835776,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 20572,
+      "source_blocks_scanned": 383,
+      "word": [
+        2
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            5
+          ],
+          [
+            3,
+            14,
+            17,
+            23
+          ],
+          [
+            4,
+            9,
+            18,
+            19
+          ],
+          [
+            6,
+            12,
+            13,
+            15
+          ],
+          [
+            7,
+            11,
+            16,
+            20
+          ],
+          [
+            8,
+            10,
+            21,
+            22
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 151874,
+      "exclusive_source": 70114,
+      "exclusive_candidates": 70114,
+      "blocker_limit": 8,
+      "dot_products": 798747648,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 20752,
+      "source_blocks_scanned": 373,
+      "word": [
+        3
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            6
+          ],
+          [
+            3,
+            9,
+            11,
+            22
+          ],
+          [
+            4,
+            8,
+            14,
+            20
+          ],
+          [
+            5,
+            12,
+            13,
+            15
+          ],
+          [
+            7,
+            19,
+            21,
+            23
+          ],
+          [
+            10,
+            16,
+            17,
+            18
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 153122,
+      "exclusive_source": 68866,
+      "exclusive_candidates": 68866,
+      "blocker_limit": 8,
+      "dot_products": 799075328,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 20071,
+      "source_blocks_scanned": 358,
+      "word": [
+        4
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            7
+          ],
+          [
+            3,
+            4,
+            10,
+            12
+          ],
+          [
+            5,
+            11,
+            16,
+            20
+          ],
+          [
+            6,
+            19,
+            21,
+            23
+          ],
+          [
+            8,
+            9,
+            13,
+            17
+          ],
+          [
+            14,
+            15,
+            18,
+            22
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 153332,
+      "exclusive_source": 68656,
+      "exclusive_candidates": 68656,
+      "blocker_limit": 8,
+      "dot_products": 799368576,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 19754,
+      "source_blocks_scanned": 362,
+      "word": [
+        5
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            8
+          ],
+          [
+            3,
+            15,
+            16,
+            19
+          ],
+          [
+            4,
+            6,
+            14,
+            20
+          ],
+          [
+            5,
+            10,
+            21,
+            22
+          ],
+          [
+            7,
+            9,
+            13,
+            17
+          ],
+          [
+            11,
+            12,
+            18,
+            23
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 152856,
+      "exclusive_source": 69132,
+      "exclusive_candidates": 69132,
+      "blocker_limit": 8,
+      "dot_products": 799651840,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 20383,
+      "source_blocks_scanned": 350,
+      "word": [
+        6
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            9
+          ],
+          [
+            3,
+            6,
+            11,
+            22
+          ],
+          [
+            4,
+            5,
+            18,
+            19
+          ],
+          [
+            7,
+            8,
+            13,
+            17
+          ],
+          [
+            10,
+            15,
+            20,
+            23
+          ],
+          [
+            12,
+            14,
+            16,
+            21
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 152120,
+      "exclusive_source": 69868,
+      "exclusive_candidates": 69868,
+      "blocker_limit": 8,
+      "dot_products": 799896000,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 20558,
+      "source_blocks_scanned": 377,
+      "word": [
+        7
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            10
+          ],
+          [
+            3,
+            4,
+            7,
+            12
+          ],
+          [
+            5,
+            8,
+            21,
+            22
+          ],
+          [
+            6,
+            16,
+            17,
+            18
+          ],
+          [
+            9,
+            15,
+            20,
+            23
+          ],
+          [
+            11,
+            13,
+            14,
+            19
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 152876,
+      "exclusive_source": 69112,
+      "exclusive_candidates": 69112,
+      "blocker_limit": 8,
+      "dot_products": 799036416,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 19806,
+      "source_blocks_scanned": 398,
+      "word": [
+        0,
+        1
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            7,
+            10,
+            12
+          ],
+          [
+            5,
+            14,
+            17,
+            23
+          ],
+          [
+            6,
+            9,
+            11,
+            22
+          ],
+          [
+            8,
+            15,
+            16,
+            19
+          ],
+          [
+            13,
+            18,
+            20,
+            21
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            2,
+            4
+          ],
+          [
+            3,
+            7,
+            10,
+            12
+          ],
+          [
+            5,
+            9,
+            18,
+            19
+          ],
+          [
+            6,
+            8,
+            14,
+            20
+          ],
+          [
+            11,
+            15,
+            17,
+            21
+          ],
+          [
+            13,
+            16,
+            22,
+            23
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 152716,
+      "exclusive_source": 69272,
+      "exclusive_candidates": 69272,
+      "blocker_limit": 8,
+      "dot_products": 799922560,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 20544,
+      "source_blocks_scanned": 353,
+      "word": [
+        1,
+        2
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            4
+          ],
+          [
+            3,
+            7,
+            10,
+            12
+          ],
+          [
+            5,
+            9,
+            18,
+            19
+          ],
+          [
+            6,
+            8,
+            14,
+            20
+          ],
+          [
+            11,
+            15,
+            17,
+            21
+          ],
+          [
+            13,
+            16,
+            22,
+            23
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            2,
+            5
+          ],
+          [
+            3,
+            14,
+            17,
+            23
+          ],
+          [
+            4,
+            9,
+            18,
+            19
+          ],
+          [
+            6,
+            12,
+            13,
+            15
+          ],
+          [
+            7,
+            11,
+            16,
+            20
+          ],
+          [
+            8,
+            10,
+            21,
+            22
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 153176,
+      "exclusive_source": 68812,
+      "exclusive_candidates": 68812,
+      "blocker_limit": 8,
+      "dot_products": 799726592,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 20341,
+      "source_blocks_scanned": 346,
+      "word": [
+        2,
+        3
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            5
+          ],
+          [
+            3,
+            14,
+            17,
+            23
+          ],
+          [
+            4,
+            9,
+            18,
+            19
+          ],
+          [
+            6,
+            12,
+            13,
+            15
+          ],
+          [
+            7,
+            11,
+            16,
+            20
+          ],
+          [
+            8,
+            10,
+            21,
+            22
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            2,
+            6
+          ],
+          [
+            3,
+            9,
+            11,
+            22
+          ],
+          [
+            4,
+            8,
+            14,
+            20
+          ],
+          [
+            5,
+            12,
+            13,
+            15
+          ],
+          [
+            7,
+            19,
+            21,
+            23
+          ],
+          [
+            10,
+            16,
+            17,
+            18
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 152752,
+      "exclusive_source": 69236,
+      "exclusive_candidates": 69236,
+      "blocker_limit": 8,
+      "dot_products": 799319552,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 19859,
+      "source_blocks_scanned": 395,
+      "word": [
+        3,
+        4
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            6
+          ],
+          [
+            3,
+            9,
+            11,
+            22
+          ],
+          [
+            4,
+            8,
+            14,
+            20
+          ],
+          [
+            5,
+            12,
+            13,
+            15
+          ],
+          [
+            7,
+            19,
+            21,
+            23
+          ],
+          [
+            10,
+            16,
+            17,
+            18
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            2,
+            7
+          ],
+          [
+            3,
+            4,
+            10,
+            12
+          ],
+          [
+            5,
+            11,
+            16,
+            20
+          ],
+          [
+            6,
+            19,
+            21,
+            23
+          ],
+          [
+            8,
+            9,
+            13,
+            17
+          ],
+          [
+            14,
+            15,
+            18,
+            22
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 152472,
+      "exclusive_source": 69516,
+      "exclusive_candidates": 69516,
+      "blocker_limit": 8,
+      "dot_products": 799279168,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 20179,
+      "source_blocks_scanned": 384,
+      "word": [
+        4,
+        5
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            7
+          ],
+          [
+            3,
+            4,
+            10,
+            12
+          ],
+          [
+            5,
+            11,
+            16,
+            20
+          ],
+          [
+            6,
+            19,
+            21,
+            23
+          ],
+          [
+            8,
+            9,
+            13,
+            17
+          ],
+          [
+            14,
+            15,
+            18,
+            22
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            2,
+            8
+          ],
+          [
+            3,
+            15,
+            16,
+            19
+          ],
+          [
+            4,
+            6,
+            14,
+            20
+          ],
+          [
+            5,
+            10,
+            21,
+            22
+          ],
+          [
+            7,
+            9,
+            13,
+            17
+          ],
+          [
+            11,
+            12,
+            18,
+            23
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 152498,
+      "exclusive_source": 69490,
+      "exclusive_candidates": 69490,
+      "blocker_limit": 8,
+      "dot_products": 799289728,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 20160,
+      "source_blocks_scanned": 383,
+      "word": [
+        5,
+        6
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            8
+          ],
+          [
+            3,
+            15,
+            16,
+            19
+          ],
+          [
+            4,
+            6,
+            14,
+            20
+          ],
+          [
+            5,
+            10,
+            21,
+            22
+          ],
+          [
+            7,
+            9,
+            13,
+            17
+          ],
+          [
+            11,
+            12,
+            18,
+            23
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            2,
+            9
+          ],
+          [
+            3,
+            6,
+            11,
+            22
+          ],
+          [
+            4,
+            5,
+            18,
+            19
+          ],
+          [
+            7,
+            8,
+            13,
+            17
+          ],
+          [
+            10,
+            15,
+            20,
+            23
+          ],
+          [
+            12,
+            14,
+            16,
+            21
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 152624,
+      "exclusive_source": 69364,
+      "exclusive_candidates": 69364,
+      "blocker_limit": 8,
+      "dot_products": 798924736,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 20049,
+      "source_blocks_scanned": 387,
+      "word": [
+        6,
+        7
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            9
+          ],
+          [
+            3,
+            6,
+            11,
+            22
+          ],
+          [
+            4,
+            5,
+            18,
+            19
+          ],
+          [
+            7,
+            8,
+            13,
+            17
+          ],
+          [
+            10,
+            15,
+            20,
+            23
+          ],
+          [
+            12,
+            14,
+            16,
+            21
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            2,
+            10
+          ],
+          [
+            3,
+            4,
+            7,
+            12
+          ],
+          [
+            5,
+            8,
+            21,
+            22
+          ],
+          [
+            6,
+            16,
+            17,
+            18
+          ],
+          [
+            9,
+            15,
+            20,
+            23
+          ],
+          [
+            11,
+            13,
+            14,
+            19
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    },
+    {
+      "common": 152704,
+      "exclusive_source": 69284,
+      "exclusive_candidates": 69284,
+      "blocker_limit": 8,
+      "dot_products": 798805376,
+      "state": "incomplete",
+      "reason": "cross_work_or_wall_cutoff",
+      "unresolved_candidates": 19972,
+      "source_blocks_scanned": 394,
+      "word": [
+        7,
+        0
+      ],
+      "word_frames": [
+        [
+          [
+            0,
+            1,
+            2,
+            10
+          ],
+          [
+            3,
+            4,
+            7,
+            12
+          ],
+          [
+            5,
+            8,
+            21,
+            22
+          ],
+          [
+            6,
+            16,
+            17,
+            18
+          ],
+          [
+            9,
+            15,
+            20,
+            23
+          ],
+          [
+            11,
+            13,
+            14,
+            19
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            7,
+            10,
+            12
+          ],
+          [
+            5,
+            14,
+            17,
+            23
+          ],
+          [
+            6,
+            9,
+            11,
+            22
+          ],
+          [
+            8,
+            15,
+            16,
+            19
+          ],
+          [
+            13,
+            18,
+            20,
+            21
+          ]
+        ]
+      ],
+      "common_integer_scale": 1,
+      "original_relative_fractional_image_points": 0,
+      "norm_squared": 128
+    }
+  ],
+  "best_cardinality": 221988,
+  "seconds": 98.15962123899953,
+  "limits": {
+    "out": "/tmp/competitive28-outside-sextets-20261104",
+    "frames": 8,
+    "blocker_limit": 8,
+    "seconds": 100.0,
+    "max_checks": 800000000,
+    "max_edges": 1000000,
+    "composites": true
+  },
+  "scope": "bounded restricted two-copy exchanges from the current competitive baseline; no unrestricted nonexistence or global priority claim",
+  "status": "incomplete"
+}

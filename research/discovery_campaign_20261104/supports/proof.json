@@ -1,0 +1,9 @@
+{
+  "status": "exact_bounded_obstruction",
+  "candidate_family": "all six full rows of four cells",
+  "tested": 134596,
+  "minimum_blocker_intersection": 14,
+  "existing_support_sha256": "d0def7d6587ca3aa1b39c9f3e7ccb844310285a7f1794dc8e9492f0fff9fc65d",
+  "proof_sha256": "6c510520d410b67fa82205f7b018727a2ea56c5fb3cb490e687c091f8b7a8260",
+  "scope": "Every candidate violates the sufficient support-intersection<=12 criterion with an existing support. This does not itself prove a signed spherical incompatibility; sign restrictions, replacements and other constructions remain untested."
+}

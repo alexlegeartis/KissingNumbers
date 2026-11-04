@@ -1,0 +1,4238 @@
+{
+  "schema_version": 1,
+  "phase": "target_blind_search",
+  "source_sha256": {
+    "__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
+    "__main__.py": "b7477b369529118ea14b7e48fc38c9e8c37957a554bebad7b37912406692f15a",
+    "certification.py": "d7c38f8d8ce4caab226ac344fd8d28413a740897228ecac17f2f13a98f97d898",
+    "compatibility.py": "b484a934b4f6d68cd11f69b17eb0a23fd61556bf4fe4978205530cbfe68b5f89",
+    "contracts.py": "8a8c134dcf67751a0b0882536e8886e4d120f1b76d7388e66a60f18eeb786872",
+    "core.py": "69313eb6d933f436d151289f23c40f018365d16057a2b75d455ac0fe157a1024",
+    "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
+    "engines/construction_search.py": "d9956f8ccc364a3608c0f02dbda1b27df583d7978e91bf64761e5fe934da9c42",
+    "engines/coset_search.py": "3e808aeee08588665f36d3286172de791dc467fc1a854432a5bec2ae7c9be722",
+    "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
+    "engines/geometry.py": "fc8fd418b7eb55b8241a08b1deae7711ea799b587f31f5efc454744bff820e37",
+    "engines/gluing.py": "94141bac6513dbac7210ed0274871ea27ab8a50d0c3d9b27fd2c8f8a7e868a1d",
+    "engines/groups.py": "6193aed77506366187b5a5163002f23db99cf93c7d9a4f3d3bc477ea19cad836",
+    "engines/lattices.py": "e5a90d85fc180e10da7508672d54843838b3f3182ec8ae5c7fe6a5e0a09958df",
+    "engines/layers.py": "a799fab74c7bbacc93712ad2df2ee201f375cb0c56f0f6617cb9f3d1437045cf",
+    "engines/rings.py": "87d1e00e2da8209f6691a023dc517915623e4713b2b7b87695b8957f056158c2",
+    "engines/selection.py": "401f6073306188cc2dc27126a5898cf55e4bd13bd798d4dd512a8782c8f3e632",
+    "engines/signed_layers.py": "dcea56ad4dbd0154d7a302eff6858174fdd5a6776a7a8ece337d177ad24c2672",
+    "engines/stabilizers.py": "999aa4a478cc5b16a6840b5b8576cef565be83c27ad5ce9ad0ca7592dd64e362",
+    "exact_gram.py": "448103205e806c2d1c8bd2770e7a22d29c533cae2fcd3ef3f2bf219572f440ba",
+    "objects.py": "4e8a922bcd7f57fa0d9be5507a92678a170bb8fa45d4e0ab8b61b1e52cf96bb3",
+    "planner.py": "7567b7ac07e0ef52d74a9126aec34e3b70de9b3498fd1f1edfe11f424ccabb97",
+    "runner.py": "4a449decf7fbea27f2c0dbd6f46cd7f4f2bfdfddd8a4648f3cd41a15a72b8947",
+    "scheduler.py": "34aa720811dce88f75c05a76c23cc5f6b36d62d891cd929c863cb7bca499af75"
+  },
+  "comparison_inputs": [],
+  "supplied_record_coordinates": false,
+  "grammar": "A/D/E roots; searched triple-disjoint weight-four support orbits; real stabilizer parity sectors",
+  "formula_controls_are_discovery": false,
+  "budget": {
+    "max_materialized_points": 20000,
+    "max_pairs": 40000000,
+    "max_codewords": 262144,
+    "max_orbit_points": 10000,
+    "max_trials": 200,
+    "solver_seconds": 1,
+    "max_dgls_words": 16777216,
+    "max_dimension": 256,
+    "max_nodes": 100,
+    "max_gram_entries": 2000000,
+    "max_rank_work": 50000000,
+    "max_rational_bits": 4096
+  },
+  "rows": [
+    {
+      "dimension": 1,
+      "best": {
+        "origin": "root_formula",
+        "op": "lattice.root_system",
+        "params": {
+          "family": "A",
+          "rank": 1
+        },
+        "cardinality": 2,
+        "receipt": "d01-00.json",
+        "receipt_sha256": "0075bc461b81cac89e87da865a75ce5ef0bbf0a696773af0f60b686ac26496a2",
+        "seconds": 0.2235097279999536
+      },
+      "best_search": null,
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 1
+          },
+          "cardinality": 2,
+          "receipt": "d01-00.json",
+          "receipt_sha256": "0075bc461b81cac89e87da865a75ce5ef0bbf0a696773af0f60b686ac26496a2",
+          "seconds": 0.2235097279999536
+        }
+      ]
+    },
+    {
+      "dimension": 2,
+      "best": {
+        "origin": "root_formula",
+        "op": "lattice.root_system",
+        "params": {
+          "family": "A",
+          "rank": 2
+        },
+        "cardinality": 6,
+        "receipt": "d02-00.json",
+        "receipt_sha256": "5676ad20b982d41b853c2b026e523b4aa6554680510287a3521c471625c2bcc1",
+        "seconds": 0.005276121999941097
+      },
+      "best_search": null,
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 2
+          },
+          "cardinality": 6,
+          "receipt": "d02-00.json",
+          "receipt_sha256": "5676ad20b982d41b853c2b026e523b4aa6554680510287a3521c471625c2bcc1",
+          "seconds": 0.005276121999941097
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 2
+          },
+          "cardinality": 4,
+          "receipt": "d02-01.json",
+          "receipt_sha256": "0732abff88f51a2e9ab4955d6bef68e80fd93e7d76d72426c87a7c9ca3c6a28a",
+          "seconds": 0.0017602780000061102
+        },
+        {
+          "origin": "stabilizer_formula",
+          "op": "groups.real_stabilizer_sector",
+          "params": {
+            "m": 1,
+            "parity": 0
+          },
+          "cardinality": 4,
+          "receipt": "d02-02.json",
+          "receipt_sha256": "bbb218950cdb912ab468a8e249535a10c79cd9701871a3c70a9ad52e69c2186b",
+          "seconds": 0.0018381030000682586
+        },
+        {
+          "origin": "stabilizer_formula",
+          "op": "groups.real_stabilizer_sector",
+          "params": {
+            "m": 1,
+            "parity": 1
+          },
+          "cardinality": 4,
+          "receipt": "d02-03.json",
+          "receipt_sha256": "da13a9e37b6379c6b36d52d7e4422f246cff181add45be933d9f97364faece52",
+          "seconds": 0.002119218000075307
+        }
+      ]
+    },
+    {
+      "dimension": 3,
+      "best": {
+        "origin": "root_formula",
+        "op": "lattice.root_system",
+        "params": {
+          "family": "A",
+          "rank": 3
+        },
+        "cardinality": 12,
+        "receipt": "d03-00.json",
+        "receipt_sha256": "11bcdc989f249e0028400453a0c65e588cddb25797434a62626e74e030459f51",
+        "seconds": 0.003280110999980934
+      },
+      "best_search": null,
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 3
+          },
+          "cardinality": 12,
+          "receipt": "d03-00.json",
+          "receipt_sha256": "11bcdc989f249e0028400453a0c65e588cddb25797434a62626e74e030459f51",
+          "seconds": 0.003280110999980934
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 3
+          },
+          "cardinality": 12,
+          "receipt": "d03-01.json",
+          "receipt_sha256": "ad8e6c35dd0412e2e7f8273ce3014a8be525fab432dea09d29a4ff496e80416a",
+          "seconds": 0.0019385909999982687
+        }
+      ]
+    },
+    {
+      "dimension": 4,
+      "best": {
+        "origin": "root_formula",
+        "op": "lattice.root_system",
+        "params": {
+          "family": "D",
+          "rank": 4
+        },
+        "cardinality": 24,
+        "receipt": "d04-01.json",
+        "receipt_sha256": "264342cd91795ccffd9c2d05be3fd62db1653fb33429712111a02b245c9c3427",
+        "seconds": 0.0027546250000796135
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 4,
+          "cycles": [
+            4
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 24,
+        "receipt": "d04-02.json",
+        "receipt_sha256": "eea2eef5e492fa2408135a103cade8970bd20480b64014852743682007902832",
+        "seconds": 0.3427055479999126
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 4
+          },
+          "cardinality": 20,
+          "receipt": "d04-00.json",
+          "receipt_sha256": "5d9f5a6c98480e24c636832c520a3c4de3f43255e4ade1bac1039a9c31affe01",
+          "seconds": 0.0021094930000344903
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 4
+          },
+          "cardinality": 24,
+          "receipt": "d04-01.json",
+          "receipt_sha256": "264342cd91795ccffd9c2d05be3fd62db1653fb33429712111a02b245c9c3427",
+          "seconds": 0.0027546250000796135
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 4,
+            "cycles": [
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 24,
+          "receipt": "d04-02.json",
+          "receipt_sha256": "eea2eef5e492fa2408135a103cade8970bd20480b64014852743682007902832",
+          "seconds": 0.3427055479999126
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 4,
+            "cycles": [
+              3,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 24,
+          "receipt": "d04-03.json",
+          "receipt_sha256": "0e9b073eebc919d2684d9a836b0944e315746f1768e72e5a9bf8ecdc3d0fbde1",
+          "seconds": 0.004527371999984098
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 4,
+            "cycles": [
+              2,
+              2
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 24,
+          "receipt": "d04-04.json",
+          "receipt_sha256": "7f1401ed2310d4f1496e9c400670fc1ee490fc11c4cfbd204744e7cd2619f177",
+          "seconds": 0.003939494000064769
+        },
+        {
+          "origin": "stabilizer_formula",
+          "op": "groups.real_stabilizer_sector",
+          "params": {
+            "m": 2,
+            "parity": 0
+          },
+          "cardinality": 24,
+          "receipt": "d04-05.json",
+          "receipt_sha256": "a0039e39a72f357efa3e3fbf45d794e4a9ad3d531db8a17c64b548aa3bacaa8b",
+          "seconds": 0.0019437490000200341
+        },
+        {
+          "origin": "stabilizer_formula",
+          "op": "groups.real_stabilizer_sector",
+          "params": {
+            "m": 2,
+            "parity": 1
+          },
+          "cardinality": 24,
+          "receipt": "d04-06.json",
+          "receipt_sha256": "2838cbdfd1fa063f6888e1939f49fbeb26fff6a5f8313abf7415a966c36ef93a",
+          "seconds": 0.0023000449999699413
+        }
+      ]
+    },
+    {
+      "dimension": 5,
+      "best": {
+        "origin": "root_formula",
+        "op": "lattice.root_system",
+        "params": {
+          "family": "D",
+          "rank": 5
+        },
+        "cardinality": 40,
+        "receipt": "d05-01.json",
+        "receipt_sha256": "2c43bed208caafaabe5d690c675c37caa5f0757df3f8e061edf32a5c9e29539f",
+        "seconds": 0.003873868000027869
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 5,
+          "cycles": [
+            4,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 26,
+        "receipt": "d05-03.json",
+        "receipt_sha256": "a59596e62acb71ebfbf0aaba1b62bbc24d7e43d3656e3e78e66add77063cfa93",
+        "seconds": 0.0044014659999902506
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 5
+          },
+          "cardinality": 30,
+          "receipt": "d05-00.json",
+          "receipt_sha256": "313a5c92355a9a997895eaf2addab3cc0dd3fc4c947dd865ecd2529bf0caec67",
+          "seconds": 0.0031480659999942873
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 5
+          },
+          "cardinality": 40,
+          "receipt": "d05-01.json",
+          "receipt_sha256": "2c43bed208caafaabe5d690c675c37caa5f0757df3f8e061edf32a5c9e29539f",
+          "seconds": 0.003873868000027869
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 5,
+            "cycles": [
+              5
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 10,
+          "receipt": "d05-02.json",
+          "receipt_sha256": "6d0eaea7c07e375863774e40f16b42abc73d9d891a9a64c0602f2d165ba1e5a9",
+          "seconds": 0.002615820999949392
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 5,
+            "cycles": [
+              4,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 26,
+          "receipt": "d05-03.json",
+          "receipt_sha256": "a59596e62acb71ebfbf0aaba1b62bbc24d7e43d3656e3e78e66add77063cfa93",
+          "seconds": 0.0044014659999902506
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 5,
+            "cycles": [
+              2,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 10,
+          "receipt": "d05-04.json",
+          "receipt_sha256": "d8ff4ad3024396bb5b65bcb325890ca079526c64b5a04cf1147839b13b73cdab",
+          "seconds": 0.0022123250000731787
+        }
+      ]
+    },
+    {
+      "dimension": 6,
+      "best": {
+        "origin": "root_formula",
+        "op": "lattice.root_system",
+        "params": {
+          "family": "E",
+          "rank": 6
+        },
+        "cardinality": 72,
+        "receipt": "d06-02.json",
+        "receipt_sha256": "cf03952d8806643aa554ddf294a707b6ec249077ad4f29a0e2a9801806df1768",
+        "seconds": 0.005855723000081525
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 6,
+          "cycles": [
+            6
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 60,
+        "receipt": "d06-03.json",
+        "receipt_sha256": "6c0f028ec67d17dfd78276a92238e0905f6c23191188a9460517651c7b809d27",
+        "seconds": 0.006268090999924425
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 6
+          },
+          "cardinality": 42,
+          "receipt": "d06-00.json",
+          "receipt_sha256": "d4ab8b5eac099318d3ebdc6af6620a3fe437f6eca58f906c7498c42d72f6cf99",
+          "seconds": 0.0044958760000781695
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 6
+          },
+          "cardinality": 60,
+          "receipt": "d06-01.json",
+          "receipt_sha256": "1eadff552caeb956ebf8b9ae042f51987a454ce5f7e3a6bad9d9ba6a406385b7",
+          "seconds": 0.005621596999958456
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "E",
+            "rank": 6
+          },
+          "cardinality": 72,
+          "receipt": "d06-02.json",
+          "receipt_sha256": "cf03952d8806643aa554ddf294a707b6ec249077ad4f29a0e2a9801806df1768",
+          "seconds": 0.005855723000081525
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 6,
+            "cycles": [
+              6
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 60,
+          "receipt": "d06-03.json",
+          "receipt_sha256": "6c0f028ec67d17dfd78276a92238e0905f6c23191188a9460517651c7b809d27",
+          "seconds": 0.006268090999924425
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 6,
+            "cycles": [
+              5,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 12,
+          "receipt": "d06-04.json",
+          "receipt_sha256": "538ace7588890fdc064086b69893ab34d4ce721ebc9d15f1ec51beba8d0baef6",
+          "seconds": 0.004619377000040004
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 6,
+            "cycles": [
+              2,
+              2,
+              2
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 60,
+          "receipt": "d06-05.json",
+          "receipt_sha256": "a1044bf88fafdb1b6a639e51ac83684d9573f777bee0fadaac677a4a31e66851",
+          "seconds": 0.007282328000087546
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 6,
+            "cycles": [
+              2,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 60,
+          "receipt": "d06-06.json",
+          "receipt_sha256": "c341bd2112ebde7844d85ee1da598fb00f1bc9aaec1d5d0437922a6519bc944a",
+          "seconds": 0.010409312999968279
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 6,
+            "cycles": [
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 60,
+          "receipt": "d06-07.json",
+          "receipt_sha256": "88873514b6758fff9cf5d5f39bbcb74c727570178ef31271ffa0e0fb3986fdfe",
+          "seconds": 0.010193534999984877
+        }
+      ]
+    },
+    {
+      "dimension": 7,
+      "best": {
+        "origin": "root_formula",
+        "op": "lattice.root_system",
+        "params": {
+          "family": "E",
+          "rank": 7
+        },
+        "cardinality": 126,
+        "receipt": "d07-02.json",
+        "receipt_sha256": "3959d889b8160eb80271dd6b0391c7248eb33dd1518e25233cc51f4f7be5bfd9",
+        "seconds": 0.013226846000065962
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 7,
+          "cycles": [
+            7
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 126,
+        "receipt": "d07-03.json",
+        "receipt_sha256": "939417a1917d1a0e760834b6515e2e50250013ddcee36d73ffefa3788a2653a7",
+        "seconds": 0.011085430999969503
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 7
+          },
+          "cardinality": 56,
+          "receipt": "d07-00.json",
+          "receipt_sha256": "ebf570baf6de942109fb43867d1f79d9e1e99962ab6025c8fdde7f038c989d93",
+          "seconds": 0.005965984999988905
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 7
+          },
+          "cardinality": 84,
+          "receipt": "d07-01.json",
+          "receipt_sha256": "6ea8e4b587ef36e71232dec8af50dfbb927aa8fbe0a471586588b6c682d26c89",
+          "seconds": 0.009945718999915698
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "E",
+            "rank": 7
+          },
+          "cardinality": 126,
+          "receipt": "d07-02.json",
+          "receipt_sha256": "3959d889b8160eb80271dd6b0391c7248eb33dd1518e25233cc51f4f7be5bfd9",
+          "seconds": 0.013226846000065962
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 7,
+            "cycles": [
+              7
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 126,
+          "receipt": "d07-03.json",
+          "receipt_sha256": "939417a1917d1a0e760834b6515e2e50250013ddcee36d73ffefa3788a2653a7",
+          "seconds": 0.011085430999969503
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 7,
+            "cycles": [
+              6,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 94,
+          "receipt": "d07-04.json",
+          "receipt_sha256": "e2a0ce4803b3ef4793327ee9fa8429bbef23bb64c7d3ca7da73b34bd1238f6f7",
+          "seconds": 0.007733994999966853
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 7,
+            "cycles": [
+              2,
+              2,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 30,
+          "receipt": "d07-05.json",
+          "receipt_sha256": "c1f52477e76e749f0cf2e12d3cd910dd322f1db641044ab2d468aec2b64b4c27",
+          "seconds": 0.00484415000005356
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 7,
+            "cycles": [
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 30,
+          "receipt": "d07-06.json",
+          "receipt_sha256": "50192f212f7d226c1d824b74cb74d12314564f2900c76ea09cbe4c3a51fd4771",
+          "seconds": 0.004386724000028153
+        }
+      ]
+    },
+    {
+      "dimension": 8,
+      "best": {
+        "origin": "root_formula",
+        "op": "lattice.root_system",
+        "params": {
+          "family": "E",
+          "rank": 8
+        },
+        "cardinality": 240,
+        "receipt": "d08-02.json",
+        "receipt_sha256": "adc66b54fb8885850dd88a1473dc6fdbcd5e9fb9ca6de1b80f69e064ca5519f8",
+        "seconds": 0.0180789429999777
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 8,
+          "cycles": [
+            7,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 240,
+        "receipt": "d08-04.json",
+        "receipt_sha256": "310d3951ddc6a82328f880ea04783c7e32b1c1e8ffc93b03bf8a7b0c3fc09631",
+        "seconds": 0.020809974000030707
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 8
+          },
+          "cardinality": 72,
+          "receipt": "d08-00.json",
+          "receipt_sha256": "16e020e73c9abed1bfdf6253ecf8fc3ab97bdf141584446ad981ba8d2491740b",
+          "seconds": 0.005840741000042726
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 8
+          },
+          "cardinality": 112,
+          "receipt": "d08-01.json",
+          "receipt_sha256": "f7efd0c7269471d8a3971c36a3216866d842e6838e4bde24b29c0f47d652c30a",
+          "seconds": 0.007332752999900549
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "E",
+            "rank": 8
+          },
+          "cardinality": 240,
+          "receipt": "d08-02.json",
+          "receipt_sha256": "adc66b54fb8885850dd88a1473dc6fdbcd5e9fb9ca6de1b80f69e064ca5519f8",
+          "seconds": 0.0180789429999777
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 8,
+            "cycles": [
+              8
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 176,
+          "receipt": "d08-03.json",
+          "receipt_sha256": "913d2d433e9727acbc2a55427feb078747b86695a10e8fb69da8aa38d2b78718",
+          "seconds": 0.015793570000028012
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 8,
+            "cycles": [
+              7,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 240,
+          "receipt": "d08-04.json",
+          "receipt_sha256": "310d3951ddc6a82328f880ea04783c7e32b1c1e8ffc93b03bf8a7b0c3fc09631",
+          "seconds": 0.020809974000030707
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 8,
+            "cycles": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 240,
+          "receipt": "d08-05.json",
+          "receipt_sha256": "2750a6aa0d5482c590a2c703175a87326dcb05e24a3d2d51000f63626c4e03bc",
+          "seconds": 0.02023993199998131
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 8,
+            "cycles": [
+              2,
+              2,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 176,
+          "receipt": "d08-06.json",
+          "receipt_sha256": "db0f78054a82a568f56ade41fcef51b22b33c7095477b5c35185d1cd68f06a49",
+          "seconds": 0.015351757999951587
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 8,
+            "cycles": [
+              2,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 112,
+          "receipt": "d08-07.json",
+          "receipt_sha256": "e62b145f3454ea155bdcec075a112ccfcffab8ec091a53686ce11b2b5f1533c8",
+          "seconds": 0.009418050000022049
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 8,
+            "cycles": [
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 240,
+          "receipt": "d08-08.json",
+          "receipt_sha256": "62db447a7a4d3d034214b3110de637645962b777840e843e3d30c5ae41b7e296",
+          "seconds": 0.020334773000058703
+        },
+        {
+          "origin": "stabilizer_formula",
+          "op": "groups.real_stabilizer_sector",
+          "params": {
+            "m": 3,
+            "parity": 0
+          },
+          "cardinality": 240,
+          "receipt": "d08-09.json",
+          "receipt_sha256": "29a992f045d664d71e6bdb58a903a1499581d67b2de9e29d2f04e109e5a15504",
+          "seconds": 0.0018058450000353332
+        },
+        {
+          "origin": "stabilizer_formula",
+          "op": "groups.real_stabilizer_sector",
+          "params": {
+            "m": 3,
+            "parity": 1
+          },
+          "cardinality": 240,
+          "receipt": "d08-10.json",
+          "receipt_sha256": "d3b3b21958b033f42b00baee3f799b9492bef0cef8c8239b106784ad54a8a6b1",
+          "seconds": 0.0015517610000870263
+        }
+      ]
+    },
+    {
+      "dimension": 9,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 9,
+          "cycles": [
+            8,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 306,
+        "receipt": "d09-03.json",
+        "receipt_sha256": "89edb7d73e3b8ab2eead2ae8341b10f759da831a4f3894a988fae3869ce20e37",
+        "seconds": 0.027948881000043002
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 9,
+          "cycles": [
+            8,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 306,
+        "receipt": "d09-03.json",
+        "receipt_sha256": "89edb7d73e3b8ab2eead2ae8341b10f759da831a4f3894a988fae3869ce20e37",
+        "seconds": 0.027948881000043002
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 9
+          },
+          "cardinality": 90,
+          "receipt": "d09-00.json",
+          "receipt_sha256": "dcc668d8049e5819924e071edba348f0270816a983738a3aa814c1cb0c22b381",
+          "seconds": 0.007752963000029922
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 9
+          },
+          "cardinality": 144,
+          "receipt": "d09-01.json",
+          "receipt_sha256": "b53a2c441aea59393123f037d6c8c53327f7fae13846f1cdf1d3da6aae51b140",
+          "seconds": 0.010086857000032978
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 9,
+            "cycles": [
+              9
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 162,
+          "receipt": "d09-02.json",
+          "receipt_sha256": "29971d95ff732b8313043d87c4326cdb355b64d57587384fdbbdc0ec6b320f0f",
+          "seconds": 0.014558757000031619
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 9,
+            "cycles": [
+              8,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 306,
+          "receipt": "d09-03.json",
+          "receipt_sha256": "89edb7d73e3b8ab2eead2ae8341b10f759da831a4f3894a988fae3869ce20e37",
+          "seconds": 0.027948881000043002
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 9,
+            "cycles": [
+              2,
+              2,
+              2,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 66,
+          "receipt": "d09-04.json",
+          "receipt_sha256": "505b5b5f7ceed565ccf92336440bf722342406c55c56bb71b4828408b296c7bc",
+          "seconds": 0.007455092999975932
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 9,
+            "cycles": [
+              2,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 66,
+          "receipt": "d09-05.json",
+          "receipt_sha256": "2068631b5d3439ad89b6f56c12130406cfeff09838f11c609c187f884c142dc8",
+          "seconds": 0.006506652999973994
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 9,
+            "cycles": [
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 306,
+          "receipt": "d09-06.json",
+          "receipt_sha256": "edf0664573d6cd8439282e5ff50b654a104d529572a191da194e6f0c56fb2c9a",
+          "seconds": 0.04803921200004879
+        }
+      ]
+    },
+    {
+      "dimension": 10,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 10,
+          "cycles": [
+            10
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 500,
+        "receipt": "d10-02.json",
+        "receipt_sha256": "ccf41285048026292a0f2d7d2f77444982315ce6839002d02ffe93242f00baa6",
+        "seconds": 0.07090736399993602
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 10,
+          "cycles": [
+            10
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 500,
+        "receipt": "d10-02.json",
+        "receipt_sha256": "ccf41285048026292a0f2d7d2f77444982315ce6839002d02ffe93242f00baa6",
+        "seconds": 0.07090736399993602
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 10
+          },
+          "cardinality": 110,
+          "receipt": "d10-00.json",
+          "receipt_sha256": "68b144d524557800a4990efe2e3a9eb6e161ee03a7ab1d2b965701af09f4d784",
+          "seconds": 0.009523505999936788
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 10
+          },
+          "cardinality": 180,
+          "receipt": "d10-01.json",
+          "receipt_sha256": "fed27cd258faa0416a61e249ae95a5d5b401e68e8cd041425cdf0402b20c3389",
+          "seconds": 0.012854602999937015
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 10,
+            "cycles": [
+              10
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 500,
+          "receipt": "d10-02.json",
+          "receipt_sha256": "ccf41285048026292a0f2d7d2f77444982315ce6839002d02ffe93242f00baa6",
+          "seconds": 0.07090736399993602
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 10,
+            "cycles": [
+              9,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 308,
+          "receipt": "d10-03.json",
+          "receipt_sha256": "de7849ac185c20e11f14e553a9cde462ff1798c8fae4431086dc0afd20285960",
+          "seconds": 0.03536175099998218
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 10,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 500,
+          "receipt": "d10-04.json",
+          "receipt_sha256": "a05acb67029c44cdc41fb93dd2a8920670f59cc526a1df5ffdc98b7c6841b02a",
+          "seconds": 0.3084017459999586
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 10,
+            "cycles": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 372,
+          "receipt": "d10-05.json",
+          "receipt_sha256": "2d8f047565e24c36ea13a259432e4b55defe6de5a803fbef5bc8b2eaa6d1579f",
+          "seconds": 0.03817364499991527
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 10,
+            "cycles": [
+              2,
+              2,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 372,
+          "receipt": "d10-06.json",
+          "receipt_sha256": "7e04d6650e847e51603ed18855da57551c588bd68d3580542001c11ccdaebf05",
+          "seconds": 0.03784746200005884
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 10,
+            "cycles": [
+              2,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 500,
+          "receipt": "d10-07.json",
+          "receipt_sha256": "72319efbb3ba8343bb6e5161fb047a6fde4a573a992b71e0467d5f7cf9c37d7a",
+          "seconds": 0.09211088000006384
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 10,
+            "cycles": [
+              3,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 180,
+          "receipt": "d10-08.json",
+          "receipt_sha256": "590757338a27f2e254f8ee675f0ad04b6d7eb5e118f88b2c417bdef0e0e3ad41",
+          "seconds": 0.017272004000005836
+        }
+      ]
+    },
+    {
+      "dimension": 11,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 11,
+          "cycles": [
+            11
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 550,
+        "receipt": "d11-02.json",
+        "receipt_sha256": "ed0488756e48f440081239df558cc78f775daf639fe7361ef4c57d16308baf9a",
+        "seconds": 0.07566140799997356
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 11,
+          "cycles": [
+            11
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 550,
+        "receipt": "d11-02.json",
+        "receipt_sha256": "ed0488756e48f440081239df558cc78f775daf639fe7361ef4c57d16308baf9a",
+        "seconds": 0.07566140799997356
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 11
+          },
+          "cardinality": 132,
+          "receipt": "d11-00.json",
+          "receipt_sha256": "72d7a92fb30f7fcb8d687442ea9dce8537e7ce04f738929f4c8ec007d9233fd8",
+          "seconds": 0.01260267300006035
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 11
+          },
+          "cardinality": 220,
+          "receipt": "d11-01.json",
+          "receipt_sha256": "d59a3f9eb438bda9e6bb44d2f9d76fff9d9637daa44a359889fa7270ab6ff482",
+          "seconds": 0.017217563999906815
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 11,
+            "cycles": [
+              11
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 550,
+          "receipt": "d11-02.json",
+          "receipt_sha256": "ed0488756e48f440081239df558cc78f775daf639fe7361ef4c57d16308baf9a",
+          "seconds": 0.07566140799997356
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 11,
+            "cycles": [
+              10,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 502,
+          "receipt": "d11-03.json",
+          "receipt_sha256": "ee86c16f0e95889d50abaf5bf7853c605f10977004990610c3f2c373ead7b306",
+          "seconds": 0.05552355100007844
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 11,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 246,
+          "receipt": "d11-04.json",
+          "receipt_sha256": "2d7a29a42bf93dd777fcc4ae34624e4461d822a50e05683eb435aaad6adda389",
+          "seconds": 0.02648677399997723
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 11,
+            "cycles": [
+              2,
+              2,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 182,
+          "receipt": "d11-05.json",
+          "receipt_sha256": "55f007036159e06efc31d5135b1147ae69e5b4e0fe70d8f8bad0c6bfe4311a94",
+          "seconds": 0.01816499599999588
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 11,
+            "cycles": [
+              2,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 358,
+          "receipt": "d11-06.json",
+          "receipt_sha256": "d91d724451de69c19c9cb257563d00725e3b4ada282161870aeba60f57fa422a",
+          "seconds": 0.055348943000012696
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 11,
+            "cycles": [
+              3,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 246,
+          "receipt": "d11-07.json",
+          "receipt_sha256": "10668a9164ec9ff9dc50cbeff32340ed1e94d33ba90b4d2feaa23cf1717b641f",
+          "seconds": 0.025658558000031917
+        }
+      ]
+    },
+    {
+      "dimension": 12,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 12,
+          "cycles": [
+            2,
+            2,
+            4,
+            4
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 840,
+        "receipt": "d12-07.json",
+        "receipt_sha256": "0ccd9326ba3dda49c5ad435ceeda2ed9db0bfdc450d91dd6a2f3ee876df5a1f4",
+        "seconds": 0.3100327939999943
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 12,
+          "cycles": [
+            2,
+            2,
+            4,
+            4
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 840,
+        "receipt": "d12-07.json",
+        "receipt_sha256": "0ccd9326ba3dda49c5ad435ceeda2ed9db0bfdc450d91dd6a2f3ee876df5a1f4",
+        "seconds": 0.3100327939999943
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 12
+          },
+          "cardinality": 156,
+          "receipt": "d12-00.json",
+          "receipt_sha256": "60253e5326619c98594ad35ec526ded215fbd3a5cf8afa3614a2b5cab236db29",
+          "seconds": 0.015101010999956088
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 12
+          },
+          "cardinality": 264,
+          "receipt": "d12-01.json",
+          "receipt_sha256": "9e05844c19c2a7b99c5e3bcc9df7b0a0c318cbbf2363274b07cc8c7096c618a2",
+          "seconds": 0.02132128800008104
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 12,
+            "cycles": [
+              12
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 744,
+          "receipt": "d12-02.json",
+          "receipt_sha256": "ba59f5db14594e1119d449d10de05a246c978a1dc1a7e23d5f1ac0b4f3e49aaa",
+          "seconds": 0.12173784599997362
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 12,
+            "cycles": [
+              11,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 728,
+          "receipt": "d12-03.json",
+          "receipt_sha256": "b1a67fa3a3374e0d0c897b68011d097f25108114619a1a88802ee961596e6c67",
+          "seconds": 0.11900695399992856
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 12,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 824,
+          "receipt": "d12-04.json",
+          "receipt_sha256": "8831e877248dbe577bb921aae4f748dfc6fd606f8398bf287b8f8fa7578c823d",
+          "seconds": 0.5344561759999351
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 12,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 648,
+          "receipt": "d12-05.json",
+          "receipt_sha256": "118e3a144e74759d2254c346b7f3441ac1f0d8a1144f4b9ea265461dd459cdc3",
+          "seconds": 0.09702909899999668
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 12,
+            "cycles": [
+              2,
+              2,
+              2,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 552,
+          "receipt": "d12-06.json",
+          "receipt_sha256": "56bfc2385e9733934cf972f9f81458fbc7ed60dc430f18e369a48ed5acdab77f",
+          "seconds": 0.0802516009999863
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 12,
+            "cycles": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 840,
+          "receipt": "d12-07.json",
+          "receipt_sha256": "0ccd9326ba3dda49c5ad435ceeda2ed9db0bfdc450d91dd6a2f3ee876df5a1f4",
+          "seconds": 0.3100327939999943
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 12,
+            "cycles": [
+              2,
+              3,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 264,
+          "receipt": "d12-08.json",
+          "receipt_sha256": "9e706b9d94d8c16c655bf28f503531e8c052c96110e61b16f62408a498e62bb4",
+          "seconds": 0.029840688000035698
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 12,
+            "cycles": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 840,
+          "receipt": "d12-09.json",
+          "receipt_sha256": "f246f7dae097e6f769f114f21f1912bac81dca92e785ec5aaeb201a6bdaa2b44",
+          "seconds": 0.41590510800006086
+        }
+      ]
+    },
+    {
+      "dimension": 13,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 13,
+          "cycles": [
+            12,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 1002,
+        "receipt": "d13-03.json",
+        "receipt_sha256": "4b53b769bd56bf70ac3208887aa27d1f756eaa3804690cc7e8845ab70e59128e",
+        "seconds": 0.21957205199998953
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 13,
+          "cycles": [
+            12,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 1002,
+        "receipt": "d13-03.json",
+        "receipt_sha256": "4b53b769bd56bf70ac3208887aa27d1f756eaa3804690cc7e8845ab70e59128e",
+        "seconds": 0.21957205199998953
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 13
+          },
+          "cardinality": 182,
+          "receipt": "d13-00.json",
+          "receipt_sha256": "2d6deee28f116a9ba3754511f045c1d64467a833e899923d8e6bef1769a29eb0",
+          "seconds": 0.02223743399997602
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 13
+          },
+          "cardinality": 312,
+          "receipt": "d13-01.json",
+          "receipt_sha256": "45afe83288aa047305c815dd12631f7c73c2a53af08b200c23592ac8eace44ce",
+          "seconds": 0.029733038000017586
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 13,
+            "cycles": [
+              13
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 858,
+          "receipt": "d13-02.json",
+          "receipt_sha256": "a226531b605542a345275eea6709e9578f126a805b8d0a01d18fa064e380349e",
+          "seconds": 0.20649084000001494
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 13,
+            "cycles": [
+              12,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1002,
+          "receipt": "d13-03.json",
+          "receipt_sha256": "4b53b769bd56bf70ac3208887aa27d1f756eaa3804690cc7e8845ab70e59128e",
+          "seconds": 0.21957205199998953
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 13,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 506,
+          "receipt": "d13-04.json",
+          "receipt_sha256": "56f4305f7e8ea13b490279f0dd07c950a81e6983b5aaa200ddc125cb441d3508",
+          "seconds": 0.3389749620000657
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 13,
+            "cycles": [
+              2,
+              2,
+              2,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 378,
+          "receipt": "d13-05.json",
+          "receipt_sha256": "eb92a9628a5f38657ef8e37d8ce8f630d041594feb31e8ce6cb0b5a273b150c5",
+          "seconds": 0.05268504999992274
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 13,
+            "cycles": [
+              2,
+              2,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 618,
+          "receipt": "d13-06.json",
+          "receipt_sha256": "2201daf5741b4b33bde709c4b57533376471cc9b1873a4fabc730a22cc09aa2b",
+          "seconds": 0.1311433070000021
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 13,
+            "cycles": [
+              2,
+              3,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 506,
+          "receipt": "d13-07.json",
+          "receipt_sha256": "7d398c5b93362ad118f7c3582347429eef568cf151778a80487355e0483a08a2",
+          "seconds": 0.07389943999999105
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 13,
+            "cycles": [
+              3,
+              3,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 426,
+          "receipt": "d13-08.json",
+          "receipt_sha256": "53c809a5ce552e5a5628d30b02fff0ea6dca5077e736eff31c8c9506bfb5b6c3",
+          "seconds": 0.07618907899995975
+        }
+      ]
+    },
+    {
+      "dimension": 14,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 14,
+          "cycles": [
+            14
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 1372,
+        "receipt": "d14-02.json",
+        "receipt_sha256": "952e585a69d80f42c2815a190b43c35ae46dab7b7c17e7620d065acf8d1de9a2",
+        "seconds": 0.43489814899999146
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 14,
+          "cycles": [
+            14
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 1372,
+        "receipt": "d14-02.json",
+        "receipt_sha256": "952e585a69d80f42c2815a190b43c35ae46dab7b7c17e7620d065acf8d1de9a2",
+        "seconds": 0.43489814899999146
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 14
+          },
+          "cardinality": 210,
+          "receipt": "d14-00.json",
+          "receipt_sha256": "638ebbcb5a54f0df8aed5800480f54ffd06c2332c035028e3a57085336595d72",
+          "seconds": 0.026242318000072373
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 14
+          },
+          "cardinality": 364,
+          "receipt": "d14-01.json",
+          "receipt_sha256": "5bbde10b4c7cc07c291908e2c20e70c3bcc40b6ea821af3af6fd1d31b0ab0a4b",
+          "seconds": 0.04202151699996648
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 14,
+            "cycles": [
+              14
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1372,
+          "receipt": "d14-02.json",
+          "receipt_sha256": "952e585a69d80f42c2815a190b43c35ae46dab7b7c17e7620d065acf8d1de9a2",
+          "seconds": 0.43489814899999146
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 14,
+            "cycles": [
+              13,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1276,
+          "receipt": "d14-03.json",
+          "receipt_sha256": "24964e116a3f6c9e575b6a2ad74ac8e9ff59f74d2b6087e4b230d8a0e418048d",
+          "seconds": 0.41869995399997606
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 14,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1164,
+          "receipt": "d14-04.json",
+          "receipt_sha256": "c1b8f0895a4f856cc23eb62d093de374677c95da8b94bf7bc93def289effe510",
+          "seconds": 0.7302222879999363
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 14,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 956,
+          "receipt": "d14-05.json",
+          "receipt_sha256": "45b2eaf6a734c6f3ccd1297f915e34a2a8c9dae9b9c480cb137d2b21be49dfab",
+          "seconds": 0.6529333739999856
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 14,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 876,
+          "receipt": "d14-06.json",
+          "receipt_sha256": "7d6c2dd97363f63c1a08656d53407680267179c2b368e48033ddea8ace3e8cb8",
+          "seconds": 0.20611645600001793
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 14,
+            "cycles": [
+              2,
+              2,
+              2,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1260,
+          "receipt": "d14-07.json",
+          "receipt_sha256": "61e00d251f26fdfdf6c262291538932777d41694226fe603b3d1f094e7755a37",
+          "seconds": 0.7848409720000973
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 14,
+            "cycles": [
+              2,
+              2,
+              3,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 620,
+          "receipt": "d14-08.json",
+          "receipt_sha256": "b3e427f4dd12633954d272cd0b04e9e47addf28ddd35261ede7ab6dbadd910b6",
+          "seconds": 0.2211844389998987
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 14,
+            "cycles": [
+              2,
+              3,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 940,
+          "receipt": "d14-09.json",
+          "receipt_sha256": "90e9745a0edfdc9e379b865042186305168e0332c63d764ad83865caa694de5e",
+          "seconds": 0.5043927880000183
+        }
+      ]
+    },
+    {
+      "dimension": 15,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 15,
+          "cycles": [
+            15
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 1710,
+        "receipt": "d15-02.json",
+        "receipt_sha256": "34ef305efdf1ce86cd9fa0205fc9413523a41d7a91d08b889e751eb53d8604ac",
+        "seconds": 0.7703954969999813
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 15,
+          "cycles": [
+            15
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 1710,
+        "receipt": "d15-02.json",
+        "receipt_sha256": "34ef305efdf1ce86cd9fa0205fc9413523a41d7a91d08b889e751eb53d8604ac",
+        "seconds": 0.7703954969999813
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 15
+          },
+          "cardinality": 240,
+          "receipt": "d15-00.json",
+          "receipt_sha256": "91e7ad3b4221f318171e5db928d5f2f2d35cf6eafe5ba137ede95dbda6772ded",
+          "seconds": 0.03695924200007994
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 15
+          },
+          "cardinality": 420,
+          "receipt": "d15-01.json",
+          "receipt_sha256": "fb57a740846c88f9bafa4ed28ac765fd82a069a5b28b8314e3126c347fa09179",
+          "seconds": 0.06039226600000802
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 15,
+            "cycles": [
+              15
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1710,
+          "receipt": "d15-02.json",
+          "receipt_sha256": "34ef305efdf1ce86cd9fa0205fc9413523a41d7a91d08b889e751eb53d8604ac",
+          "seconds": 0.7703954969999813
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 15,
+            "cycles": [
+              14,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1598,
+          "receipt": "d15-03.json",
+          "receipt_sha256": "247bdd72c0d7036cd3f9c6105bc9954b2fd1c701714be517e9990e2b029ea1ea",
+          "seconds": 0.6220638920000283
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 15,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 830,
+          "receipt": "d15-04.json",
+          "receipt_sha256": "d991d866c23395580c4224e7c2b38fdddc95d33d63438d1836674238c7579b65",
+          "seconds": 0.6239697800000386
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 15,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 654,
+          "receipt": "d15-05.json",
+          "receipt_sha256": "8fbe58b0157034175766ea1cfd8dba157d006ffa79be1064dd14c7f8e6ee2bba",
+          "seconds": 0.1684105049999971
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 15,
+            "cycles": [
+              2,
+              2,
+              2,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1086,
+          "receipt": "d15-06.json",
+          "receipt_sha256": "190cd5e6d44938dcf74a0df9209431dcce2942d1c54e18e62eae625c6d5a6b88",
+          "seconds": 0.3784398610000608
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 15,
+            "cycles": [
+              2,
+              2,
+              3,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 846,
+          "receipt": "d15-07.json",
+          "receipt_sha256": "787edd8c752ba9f4c545bb72f039bc6ec1be2ad11f0944045afb61525c10e19d",
+          "seconds": 0.457891256000039
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 15,
+            "cycles": [
+              2,
+              3,
+              3,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 510,
+          "receipt": "d15-08.json",
+          "receipt_sha256": "20daae96bd3fcf00ebee06809a7f04b3f9bd9426c52121d0a3f7ba7e03cf5dc0",
+          "seconds": 0.12557384000001548
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 15,
+            "cycles": [
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1374,
+          "receipt": "d15-09.json",
+          "receipt_sha256": "1c8875adb7c9ca74128fca01a79d395c1094e9bbebd36da2fd1011900227ebb9",
+          "seconds": 0.8581434620000437
+        }
+      ]
+    },
+    {
+      "dimension": 16,
+      "best": {
+        "origin": "stabilizer_formula",
+        "op": "groups.real_stabilizer_sector",
+        "params": {
+          "m": 4,
+          "parity": 0
+        },
+        "cardinality": 4320,
+        "receipt": "d16-10.json",
+        "receipt_sha256": "78eec11aa28461d69e7ec52073cac4f7cd7fb8b912048fbc7882225671b6661d",
+        "seconds": 0.0023429459999988467
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 16,
+          "cycles": [
+            15,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 2272,
+        "receipt": "d16-03.json",
+        "receipt_sha256": "e1c00af829edfe1b6cef5c5bc712691fccc1efb7ac1961a2539437b8f4d57477",
+        "seconds": 0.9942554360000031
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 16
+          },
+          "cardinality": 272,
+          "receipt": "d16-00.json",
+          "receipt_sha256": "6f7742aea38c9498451d5d849d35e3b0cb9fe4ea2cf4903e68dcd8de3cc871ce",
+          "seconds": 0.07124069600001803
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 16
+          },
+          "cardinality": 480,
+          "receipt": "d16-01.json",
+          "receipt_sha256": "9d7c59b2b96cd9b11acb659ae2b90c71a56e1426dfd4d153237a09e42645fc80",
+          "seconds": 0.07443678599997838
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 16,
+            "cycles": [
+              16
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2144,
+          "receipt": "d16-02.json",
+          "receipt_sha256": "7dbcb5d3fe98074ca2545a2a1fabe4e1f85f5fd0b1d0d2085693bd0fc435b98d",
+          "seconds": 1.1682383859999845
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 16,
+            "cycles": [
+              15,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2272,
+          "receipt": "d16-03.json",
+          "receipt_sha256": "e1c00af829edfe1b6cef5c5bc712691fccc1efb7ac1961a2539437b8f4d57477",
+          "seconds": 0.9942554360000031
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 16,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1984,
+          "receipt": "d16-04.json",
+          "receipt_sha256": "bb9b3071a416233992888d48b8e591a582c87dda8c151da5b759df3b7d38e3e0",
+          "seconds": 1.0133650489999582
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 16,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1344,
+          "receipt": "d16-05.json",
+          "receipt_sha256": "b040be668b7679ff9268778eb58aa4f5ff7eedd93f5108e841f20cc0b23d896d",
+          "seconds": 0.7896556800000099
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 16,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1280,
+          "receipt": "d16-06.json",
+          "receipt_sha256": "262e72db4c5b2f421e09e370c69a064b424f9f34956c4f98482cba0f616f48ee",
+          "seconds": 0.3371469230000912
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 16,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2016,
+          "receipt": "d16-07.json",
+          "receipt_sha256": "f70ff4ba632722d6e6a37e5dbd8c3df66571c41cd4dd2a4006771a7a5452a7d4",
+          "seconds": 0.9511092019999978
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 16,
+            "cycles": [
+              2,
+              2,
+              2,
+              3,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 960,
+          "receipt": "d16-08.json",
+          "receipt_sha256": "64c14929be0b3cbbbb68ab1ccf6f7f66e9abdc168f2cf3135225c46d800eedac",
+          "seconds": 0.21442749499999536
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 16,
+            "cycles": [
+              2,
+              2,
+              3,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1440,
+          "receipt": "d16-09.json",
+          "receipt_sha256": "b72985e416325142e7241562bb8996f5a84e15428dbc3bd481b8af7cd1a962db",
+          "seconds": 0.7061032990000058
+        },
+        {
+          "origin": "stabilizer_formula",
+          "op": "groups.real_stabilizer_sector",
+          "params": {
+            "m": 4,
+            "parity": 0
+          },
+          "cardinality": 4320,
+          "receipt": "d16-10.json",
+          "receipt_sha256": "78eec11aa28461d69e7ec52073cac4f7cd7fb8b912048fbc7882225671b6661d",
+          "seconds": 0.0023429459999988467
+        },
+        {
+          "origin": "stabilizer_formula",
+          "op": "groups.real_stabilizer_sector",
+          "params": {
+            "m": 4,
+            "parity": 1
+          },
+          "cardinality": 4320,
+          "receipt": "d16-11.json",
+          "receipt_sha256": "080fe849d9b8667501172f3e8233120603c2fb74870df3d1269407583c6e447a",
+          "seconds": 0.0018790089999356496
+        }
+      ]
+    },
+    {
+      "dimension": 17,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 17,
+          "cycles": [
+            17
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 2482,
+        "receipt": "d17-02.json",
+        "receipt_sha256": "1140eb946174bca55ce07320d721200600e7cab7bcee3e2e103f2374bfb2004b",
+        "seconds": 1.0815014319999818
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 17,
+          "cycles": [
+            17
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 2482,
+        "receipt": "d17-02.json",
+        "receipt_sha256": "1140eb946174bca55ce07320d721200600e7cab7bcee3e2e103f2374bfb2004b",
+        "seconds": 1.0815014319999818
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 17
+          },
+          "cardinality": 306,
+          "receipt": "d17-00.json",
+          "receipt_sha256": "6f5a600afb56f4f2d0a989267a4ced9d557675f77c92d1dc86d51e86737cf272",
+          "seconds": 0.05506276200003413
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 17
+          },
+          "cardinality": 544,
+          "receipt": "d17-01.json",
+          "receipt_sha256": "0e8d3ab2c8fc1fbf08027b4c2726b8e5ebaf86fdad13e6af952872f08932eb0a",
+          "seconds": 0.07703266199996506
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 17,
+            "cycles": [
+              17
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2482,
+          "receipt": "d17-02.json",
+          "receipt_sha256": "1140eb946174bca55ce07320d721200600e7cab7bcee3e2e103f2374bfb2004b",
+          "seconds": 1.0815014319999818
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 17,
+            "cycles": [
+              16,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2466,
+          "receipt": "d17-03.json",
+          "receipt_sha256": "12a0cc6d38affc0b635d8a6b08f450ae8f4060c42f0bfe6946de220e4970a741",
+          "seconds": 1.4029285029999983
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 17,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1170,
+          "receipt": "d17-04.json",
+          "receipt_sha256": "7637f5b5706e097529f81e4d3c6f2a2c5586c9a7bfef69e58331681092686607",
+          "seconds": 0.6603611140000112
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 17,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1010,
+          "receipt": "d17-05.json",
+          "receipt_sha256": "0c32d7e19e2917a1e2236570060947dfd1568cd486974f2c268a5cf9db342eeb",
+          "seconds": 0.5692302049999398
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 17,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1890,
+          "receipt": "d17-06.json",
+          "receipt_sha256": "c21762c7683baecf4de592ed50464dc488be80425e1406b343b626dc9d0424a3",
+          "seconds": 0.6882991290000291
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 17,
+            "cycles": [
+              2,
+              2,
+              2,
+              3,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1282,
+          "receipt": "d17-07.json",
+          "receipt_sha256": "5bc0150333757daf32f52d7686a4077ad74a189295fc1d915140b3349d7b5dc1",
+          "seconds": 0.7047566899999538
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 17,
+            "cycles": [
+              2,
+              2,
+              3,
+              3,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 866,
+          "receipt": "d17-08.json",
+          "receipt_sha256": "e22779078ad7b805b56f02cef0b012089c895eb1e12f7aaf9cc869de81f05964",
+          "seconds": 0.20045610299996497
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 17,
+            "cycles": [
+              2,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1474,
+          "receipt": "d17-09.json",
+          "receipt_sha256": "be84afb50e7edde5497cf809304ecfc495d82757ae977963d1748a3a55ed5302",
+          "seconds": 0.8039083840000103
+        }
+      ]
+    },
+    {
+      "dimension": 18,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 18,
+          "cycles": [
+            18
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 3060,
+        "receipt": "d18-02.json",
+        "receipt_sha256": "fdfbb7af6e5d494bd8084823c99cee133c03bdac4445ddc4659b31f243c3a981",
+        "seconds": 1.719453491999957
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 18,
+          "cycles": [
+            18
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 3060,
+        "receipt": "d18-02.json",
+        "receipt_sha256": "fdfbb7af6e5d494bd8084823c99cee133c03bdac4445ddc4659b31f243c3a981",
+        "seconds": 1.719453491999957
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 18
+          },
+          "cardinality": 342,
+          "receipt": "d18-00.json",
+          "receipt_sha256": "de604a356817819f938cfdb704460608b382b6257069eee518ef22c9f051eb3d",
+          "seconds": 0.06278857199993126
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 18
+          },
+          "cardinality": 612,
+          "receipt": "d18-01.json",
+          "receipt_sha256": "d3f0a427ed502eb571ceb7e8f86b57fd0fcd637755085724c0c2494c88d1723a",
+          "seconds": 0.09752720400001635
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 18,
+            "cycles": [
+              18
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3060,
+          "receipt": "d18-02.json",
+          "receipt_sha256": "fdfbb7af6e5d494bd8084823c99cee133c03bdac4445ddc4659b31f243c3a981",
+          "seconds": 1.719453491999957
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 18,
+            "cycles": [
+              17,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3028,
+          "receipt": "d18-03.json",
+          "receipt_sha256": "73560690da6bb444fc8ba9913f969a0d00e161f7334838ec2410e73186b041dc",
+          "seconds": 1.4809794669999974
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 18,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2628,
+          "receipt": "d18-04.json",
+          "receipt_sha256": "52d81586343e3ebb608dff098806bb65060aa28505e2353b8b73c0302f8941d1",
+          "seconds": 1.4951892579999821
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 18,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1796,
+          "receipt": "d18-05.json",
+          "receipt_sha256": "de5feefc0b5d03669a246b8c244cc3327c3e8d96d229bc9ab056f31752af04ec",
+          "seconds": 1.0438332260000607
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 18,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1764,
+          "receipt": "d18-06.json",
+          "receipt_sha256": "071908729812f88cae98ff223dc707618193072fa4fbfcd18001fbc4588b23c7",
+          "seconds": 0.906729495000036
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 18,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2436,
+          "receipt": "d18-07.json",
+          "receipt_sha256": "d37570b663f1d9e6fbdc9c9e40a076f95765c61d6ff8c43286f561b9a10be3f9",
+          "seconds": 1.2433237550000058
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 18,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1380,
+          "receipt": "d18-08.json",
+          "receipt_sha256": "2aae78a9922556f636ca06a02ad9572e03dffd8be1fde379919b1266d8c8927c",
+          "seconds": 0.377151141000013
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 18,
+            "cycles": [
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2244,
+          "receipt": "d18-09.json",
+          "receipt_sha256": "5432687801e4a51bbba168026a7ab57d6b4694350ced972adffbdd54b9bc9c70",
+          "seconds": 1.124527303999912
+        }
+      ]
+    },
+    {
+      "dimension": 19,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 19,
+          "cycles": [
+            19
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 3382,
+        "receipt": "d19-02.json",
+        "receipt_sha256": "46fa9d505b50945bca949ddd2d8de524f7e45d7dac2baa586c8ec63423335e8c",
+        "seconds": 1.9530691230000912
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 19,
+          "cycles": [
+            19
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 3382,
+        "receipt": "d19-02.json",
+        "receipt_sha256": "46fa9d505b50945bca949ddd2d8de524f7e45d7dac2baa586c8ec63423335e8c",
+        "seconds": 1.9530691230000912
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 19
+          },
+          "cardinality": 380,
+          "receipt": "d19-00.json",
+          "receipt_sha256": "3bbb0505d6354d250a86450fc4526586855841d6edc7be1e36dba2219be82deb",
+          "seconds": 0.06845373800001653
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 19
+          },
+          "cardinality": 684,
+          "receipt": "d19-01.json",
+          "receipt_sha256": "c42deb8593aa4eb8a73e24609e0b33ce2f01535ecc6c89aeb2bd1aee0ba4ed53",
+          "seconds": 0.11010674699991796
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 19,
+            "cycles": [
+              19
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3382,
+          "receipt": "d19-02.json",
+          "receipt_sha256": "46fa9d505b50945bca949ddd2d8de524f7e45d7dac2baa586c8ec63423335e8c",
+          "seconds": 1.9530691230000912
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 19,
+            "cycles": [
+              18,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3350,
+          "receipt": "d19-03.json",
+          "receipt_sha256": "258ae20a92851651986ba2a4a2845f88aeb75b78c2586ad19cb31780f54c4274",
+          "seconds": 1.959919545000048
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 19,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1990,
+          "receipt": "d19-04.json",
+          "receipt_sha256": "32102edcd024d20c770ee7fb85e45089c0c0b250195c2489304f019409d5d663",
+          "seconds": 1.127050168999972
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 19,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1350,
+          "receipt": "d19-05.json",
+          "receipt_sha256": "077092c6b6e05e9bbfb9520a8537764c1beadc9c944a02a261b9dcd156e74d56",
+          "seconds": 0.8609741060000715
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 19,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2742,
+          "receipt": "d19-06.json",
+          "receipt_sha256": "371d0683a2cc8c2fdd0dac10a4eca835b111f545c8cf069dc6131d34ab53345f",
+          "seconds": 1.4851348619999953
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 19,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              3,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2022,
+          "receipt": "d19-07.json",
+          "receipt_sha256": "be212aa27f204982039bfca4241727b7f0bae59ee0218b32b4d8ef93dc5d4670",
+          "seconds": 1.060986041000092
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 19,
+            "cycles": [
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1494,
+          "receipt": "d19-08.json",
+          "receipt_sha256": "37068e0125f984a409fad7035e4b442068d0cfdc6fdb92890e66779765145bf5",
+          "seconds": 0.4502349019999201
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 19,
+            "cycles": [
+              2,
+              2,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1974,
+          "receipt": "d19-09.json",
+          "receipt_sha256": "b573583f73e5de402b3ded2b3cf505a1749aa6007c0f9fef3c0956ab1628c1c7",
+          "seconds": 1.106024279000053
+        }
+      ]
+    },
+    {
+      "dimension": 20,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 20,
+          "cycles": [
+            20
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 4040,
+        "receipt": "d20-02.json",
+        "receipt_sha256": "e4ab729f23e59a083a81a3ed05b7b98653bb36066f77823bede13b91a0b6e38c",
+        "seconds": 2.7460731500000293
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 20,
+          "cycles": [
+            20
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 4040,
+        "receipt": "d20-02.json",
+        "receipt_sha256": "e4ab729f23e59a083a81a3ed05b7b98653bb36066f77823bede13b91a0b6e38c",
+        "seconds": 2.7460731500000293
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 20
+          },
+          "cardinality": 420,
+          "receipt": "d20-00.json",
+          "receipt_sha256": "dc66375946d21faa50b7d857bf2ac7649abc602e1742b07543ad5171d82052ab",
+          "seconds": 0.0777064840000321
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 20
+          },
+          "cardinality": 760,
+          "receipt": "d20-01.json",
+          "receipt_sha256": "2d2c1ae83a9ce53c6205528495dc8ecacdfa498f4632c5fa212db4da011f784b",
+          "seconds": 0.13085395600000993
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 20,
+            "cycles": [
+              20
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 4040,
+          "receipt": "d20-02.json",
+          "receipt_sha256": "e4ab729f23e59a083a81a3ed05b7b98653bb36066f77823bede13b91a0b6e38c",
+          "seconds": 2.7460731500000293
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 20,
+            "cycles": [
+              19,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3688,
+          "receipt": "d20-03.json",
+          "receipt_sha256": "2f9e9666a238fbcc0dcc109e13bd7788416603d9e918de853f0861f37f1e7c43",
+          "seconds": 2.241162397999915
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 20,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3704,
+          "receipt": "d20-04.json",
+          "receipt_sha256": "b2e92088a37dbb3bd095185405b2d785dcd35567ba1c1dcfd68b6b9aa54a0040",
+          "seconds": 2.351444633999904
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 20,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2712,
+          "receipt": "d20-05.json",
+          "receipt_sha256": "bdeb9ea98ab81fcbf76317a849876a1fdc09f12cf44d0d7185513c183d066958",
+          "seconds": 1.5797806680000122
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 20,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2184,
+          "receipt": "d20-06.json",
+          "receipt_sha256": "98226538a5ada4d7b0afc097e6bc467a56477cf76560bea18c3ef93898908e56",
+          "seconds": 1.2363073960000293
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 20,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3416,
+          "receipt": "d20-07.json",
+          "receipt_sha256": "8f5aeea4a10fda29f459a23e545c7afc911a2806b4b237d0d9cb9b3e2d7df1ff",
+          "seconds": 2.0194744020000144
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 20,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1880,
+          "receipt": "d20-08.json",
+          "receipt_sha256": "0c7f4f5546f84fe4d46eb26ed53119dbc9f7ce77aed77925861682f839991c81",
+          "seconds": 0.990525023000032
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 20,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3672,
+          "receipt": "d20-09.json",
+          "receipt_sha256": "7f66fe01ddd66fa1e1b85acc61cb2cb078a849541931dbd5c0ce86121f3ac0b8",
+          "seconds": 2.2313430059999746
+        }
+      ]
+    },
+    {
+      "dimension": 21,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 21,
+          "cycles": [
+            20,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 4762,
+        "receipt": "d21-03.json",
+        "receipt_sha256": "fcdd2085ea47bf1f633eae142018b917af35cfc26aaf13acaae26c4ff208f4ac",
+        "seconds": 3.629469511000025
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 21,
+          "cycles": [
+            20,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 4762,
+        "receipt": "d21-03.json",
+        "receipt_sha256": "fcdd2085ea47bf1f633eae142018b917af35cfc26aaf13acaae26c4ff208f4ac",
+        "seconds": 3.629469511000025
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 21
+          },
+          "cardinality": 462,
+          "receipt": "d21-00.json",
+          "receipt_sha256": "4d62aa83e4df6beb9c14902a2fc8e3537adcf46dbf666a5596b98624bec7bc56",
+          "seconds": 0.09674839000001612
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 21
+          },
+          "cardinality": 840,
+          "receipt": "d21-01.json",
+          "receipt_sha256": "c8e5805849d246f42c1697002f4235db96586a337d0a50735761372116214e48",
+          "seconds": 0.18976372800000263
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 21,
+            "cycles": [
+              21
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 4410,
+          "receipt": "d21-02.json",
+          "receipt_sha256": "584dfb37dc127b7fcf84dd165bfe5a0b492e752ac6478da5d18a651351acb068",
+          "seconds": 3.110940027999959
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 21,
+            "cycles": [
+              20,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 4762,
+          "receipt": "d21-03.json",
+          "receipt_sha256": "fcdd2085ea47bf1f633eae142018b917af35cfc26aaf13acaae26c4ff208f4ac",
+          "seconds": 3.629469511000025
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 21,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2634,
+          "receipt": "d21-04.json",
+          "receipt_sha256": "74765e2c75dfe611b3666ac91537050ba566573035d70a09bf8be3edb5c17161",
+          "seconds": 1.7458426639999516
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 21,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 1802,
+          "receipt": "d21-05.json",
+          "receipt_sha256": "8681f798f9a1e40a91206ceb101ea480a895a75fb3d31c4a439fed91ffb6167e",
+          "seconds": 1.3881155210000315
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 21,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3162,
+          "receipt": "d21-06.json",
+          "receipt_sha256": "05de7c717c346c78c49fddf157d194da13930c87de5b6dee4ec54e4713ed5e20",
+          "seconds": 2.1257035320001023
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 21,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2442,
+          "receipt": "d21-07.json",
+          "receipt_sha256": "b7bcb640dc718fd068732f3d7e20224633d16027142555b47eaf6c0f809c4a5f",
+          "seconds": 1.4786870599999702
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 21,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2394,
+          "receipt": "d21-08.json",
+          "receipt_sha256": "7539a4925a5c0b8efd6f3c5c7fce217eefeb0c08343f1fc7554323c2f130400a",
+          "seconds": 1.0024018780000006
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 21,
+            "cycles": [
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2874,
+          "receipt": "d21-09.json",
+          "receipt_sha256": "4cb7e11e88c11b7788c463f3cc7728c786b999ce3b7d315211252088e796e4fc",
+          "seconds": 1.7319884699999193
+        }
+      ]
+    },
+    {
+      "dimension": 22,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 22,
+          "cycles": [
+            21,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 5084,
+        "receipt": "d22-03.json",
+        "receipt_sha256": "11b7ff8305b621c304c229464509deb2673d377b276adc53b50d3eebd8fa6d13",
+        "seconds": 3.8539751719999913
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 22,
+          "cycles": [
+            21,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 5084,
+        "receipt": "d22-03.json",
+        "receipt_sha256": "11b7ff8305b621c304c229464509deb2673d377b276adc53b50d3eebd8fa6d13",
+        "seconds": 3.8539751719999913
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 22
+          },
+          "cardinality": 506,
+          "receipt": "d22-00.json",
+          "receipt_sha256": "af92db9095c38e29a04ceed1cfd05c8f8fe220e845e6180a46f3ca66dad21309",
+          "seconds": 0.10771693399999549
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 22
+          },
+          "cardinality": 924,
+          "receipt": "d22-01.json",
+          "receipt_sha256": "ee5cb6e996dd88dbdce702803554bb491c103a27c24b9ddb9665cd0f34365f13",
+          "seconds": 0.17294020799999998
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 22,
+            "cycles": [
+              22
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 4972,
+          "receipt": "d22-02.json",
+          "receipt_sha256": "6526b417b242c78a5ffe08cea99fdfc241d59358d9a61fb583fd40074fc66fcc",
+          "seconds": 3.6948605249999673
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 22,
+            "cycles": [
+              21,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 5084,
+          "receipt": "d22-03.json",
+          "receipt_sha256": "11b7ff8305b621c304c229464509deb2673d377b276adc53b50d3eebd8fa6d13",
+          "seconds": 3.8539751719999913
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 22,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 4860,
+          "receipt": "d22-04.json",
+          "receipt_sha256": "a6d93f0afcfe911893d34d80590e0f6080a18e04a5d1bbf107f40d5b584225c3",
+          "seconds": 4.19385123699999
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 22,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3516,
+          "receipt": "d22-05.json",
+          "receipt_sha256": "dc8d04a27c7bd0d696987a9931f8b8e2e45cdfec82f12d3e094609a3911c06e5",
+          "seconds": 2.489296280000076
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 22,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3196,
+          "receipt": "d22-06.json",
+          "receipt_sha256": "56a829f42b9dc180489aeae95638b1e4025954d405ba2f8899ca889886004193",
+          "seconds": 2.2081664150000506
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 22,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 4284,
+          "receipt": "d22-07.json",
+          "receipt_sha256": "75bae08b5ef73d7e2908178ea16e3fd6350f1a935dca2e24688a4939f4356e78",
+          "seconds": 3.1656715479999775
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 22,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2364,
+          "receipt": "d22-08.json",
+          "receipt_sha256": "e0249832a1950fec7e214b9b71eb8222cfc7301b1fb4321a119ca7ad633baef2",
+          "seconds": 1.5145574529999521
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 22,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 4348,
+          "receipt": "d22-09.json",
+          "receipt_sha256": "91934ac85b8592177d2478b63e69ec5f284d85a2131c9c670e6d5b63afee888d",
+          "seconds": 3.271174581999958
+        }
+      ]
+    },
+    {
+      "dimension": 23,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 23,
+          "cycles": [
+            22,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 6382,
+        "receipt": "d23-03.json",
+        "receipt_sha256": "c638472f1273299e3c37eeb661ade3c5b280be132b199fb2eeb6aaddfa9d531d",
+        "seconds": 6.3822221149999905
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 23,
+          "cycles": [
+            22,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 6382,
+        "receipt": "d23-03.json",
+        "receipt_sha256": "c638472f1273299e3c37eeb661ade3c5b280be132b199fb2eeb6aaddfa9d531d",
+        "seconds": 6.3822221149999905
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 23
+          },
+          "cardinality": 552,
+          "receipt": "d23-00.json",
+          "receipt_sha256": "297b1e1b34258a284fb0776992f62db23227668581929cb17fdcc162967fce3b",
+          "seconds": 0.1349592770000072
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 23
+          },
+          "cardinality": 1012,
+          "receipt": "d23-01.json",
+          "receipt_sha256": "d7b9dfbf8f29636fc761f18c42a3ac0f19c83a8bc0317e7e19552953b66363aa",
+          "seconds": 0.21955423400004292
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 23,
+            "cycles": [
+              23
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 5934,
+          "receipt": "d23-02.json",
+          "receipt_sha256": "af585d7956e39d7814cd85bdbb67369fd820e3a41c3ad177ae6cd1560f88ce41",
+          "seconds": 5.034654498000009
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 23,
+            "cycles": [
+              22,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 6382,
+          "receipt": "d23-03.json",
+          "receipt_sha256": "c638472f1273299e3c37eeb661ade3c5b280be132b199fb2eeb6aaddfa9d531d",
+          "seconds": 6.3822221149999905
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 23,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3710,
+          "receipt": "d23-04.json",
+          "receipt_sha256": "0ea07d554fbac8de935d016879633e26cafe9e70ba2f5b49bb45b76b60750e6c",
+          "seconds": 3.2859766290000607
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 23,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2718,
+          "receipt": "d23-05.json",
+          "receipt_sha256": "0dedde864fe6d33f8b57f28d9c8179ce85ac22c7747a984ee71375b14964c06b",
+          "seconds": 2.443413079000038
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 23,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 4302,
+          "receipt": "d23-06.json",
+          "receipt_sha256": "c20a00927c6059128dc67bcf303d81cc7ad5715b0bedafd2251a3b0fb55af783",
+          "seconds": 3.7392979630000127
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 23,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3422,
+          "receipt": "d23-07.json",
+          "receipt_sha256": "0ab4b4d707257dd38f5c074db24d4d1289c7f6e79df423afd144b61df9e68030",
+          "seconds": 3.0350408360000074
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 23,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3374,
+          "receipt": "d23-08.json",
+          "receipt_sha256": "03c3e70dbb4a5915544ebfa1b0b4e50d8d3d8dff153372ff7b51910feb70e56b",
+          "seconds": 2.910094393999998
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 23,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 4302,
+          "receipt": "d23-09.json",
+          "receipt_sha256": "2e457ed9dd6141d0c4dc31607b40292d772ba185fc1c3ceaa7ac57cd55fb8b63",
+          "seconds": 4.424516113000095
+        }
+      ]
+    },
+    {
+      "dimension": 24,
+      "best": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 24,
+          "cycles": [
+            23,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 7040,
+        "receipt": "d24-03.json",
+        "receipt_sha256": "a722919dbcec6f9155c6d45e8f5a0bbfbb7d1579577844574e3f71c6a6d2e906",
+        "seconds": 9.339222174999918
+      },
+      "best_search": {
+        "origin": "support_search",
+        "op": "search.support_packing",
+        "params": {
+          "dimension": 24,
+          "cycles": [
+            23,
+            1
+          ],
+          "seconds": 0.4
+        },
+        "cardinality": 7040,
+        "receipt": "d24-03.json",
+        "receipt_sha256": "a722919dbcec6f9155c6d45e8f5a0bbfbb7d1579577844574e3f71c6a6d2e906",
+        "seconds": 9.339222174999918
+      },
+      "attempts": [
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "A",
+            "rank": 24
+          },
+          "cardinality": 600,
+          "receipt": "d24-00.json",
+          "receipt_sha256": "317c19e6bc31cde61172e9fe9dfcace76a77a329f9cd503c5c87486759075efa",
+          "seconds": 0.21111236299998382
+        },
+        {
+          "origin": "root_formula",
+          "op": "lattice.root_system",
+          "params": {
+            "family": "D",
+            "rank": 24
+          },
+          "cardinality": 1104,
+          "receipt": "d24-01.json",
+          "receipt_sha256": "e7a2a4f1569a3a9867c11a3f98362fce589608f7df94927b7e320bae08535783",
+          "seconds": 0.3541271849999248
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 24,
+            "cycles": [
+              24
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 6288,
+          "receipt": "d24-02.json",
+          "receipt_sha256": "4ae3ef71da21c409796135d01f9503fc35cb8d8b003b891e27bc6cf70a2c0879",
+          "seconds": 7.82809393399998
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 24,
+            "cycles": [
+              23,
+              1
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 7040,
+          "receipt": "d24-03.json",
+          "receipt_sha256": "a722919dbcec6f9155c6d45e8f5a0bbfbb7d1579577844574e3f71c6a6d2e906",
+          "seconds": 9.339222174999918
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 24,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 6512,
+          "receipt": "d24-04.json",
+          "receipt_sha256": "05b883f7ecad36bccc7d52977670bb17f7fe8a7bdecf1586db8f51d03f77e2fb",
+          "seconds": 9.420056649999992
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 24,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 4624,
+          "receipt": "d24-05.json",
+          "receipt_sha256": "4ea7d8a6cb316d2dc5f3ade61e0f30d7410b903fd88aedda1d2460537653e737",
+          "seconds": 6.098937374999991
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 24,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 3888,
+          "receipt": "d24-06.json",
+          "receipt_sha256": "e230d437423fe2e973921e3c4716173458c505ea812fc263661ce561f62bb312",
+          "seconds": 4.441625068999997
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 24,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 5552,
+          "receipt": "d24-07.json",
+          "receipt_sha256": "308ddb9ab1e913adfb6a1fe0f655c58710175ea83003f0645dd49e1af799ab76",
+          "seconds": 6.423413815999993
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 24,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              4
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 2912,
+          "receipt": "d24-08.json",
+          "receipt_sha256": "c1f833df14e34446a4dae0452ca5950e05d8205457ddfb737c3e0ea797212cc5",
+          "seconds": 2.6969899680000253
+        },
+        {
+          "origin": "support_search",
+          "op": "search.support_packing",
+          "params": {
+            "dimension": 24,
+            "cycles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              3
+            ],
+            "seconds": 0.4
+          },
+          "cardinality": 5616,
+          "receipt": "d24-09.json",
+          "receipt_sha256": "c6b156f6fb38ff8db9f9adf0d9fc71b8e777d0deda20276045bcdbc72e3f7cc2",
+          "seconds": 6.960148404000051
+        }
+      ]
+    }
+  ]
+}

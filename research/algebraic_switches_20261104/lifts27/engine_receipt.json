@@ -1,0 +1,862 @@
+{
+  "schema_version": 1,
+  "program": {
+    "schema_version": 1,
+    "name": "Partial signed-orbit shared-deletion selection",
+    "provenance": {
+      "pool_sha256": "dffad87b2b97c36cc5de5e257a55aea5c25cd68db2b5842e4cef0f840a01c224"
+    },
+    "nodes": [
+      {
+        "id": "exchange",
+        "op": "selection.blocker_exchange",
+        "params": {
+          "blockers": [
+            [
+              204181,
+              204182
+            ],
+            [
+              204181,
+              204182
+            ],
+            [
+              5612,
+              5610
+            ],
+            [
+              5612,
+              5611
+            ],
+            [
+              166296,
+              208860
+            ],
+            [
+              166297,
+              208859
+            ],
+            [
+              121670,
+              13621
+            ],
+            [
+              121671,
+              13622
+            ],
+            [
+              13641,
+              13631
+            ],
+            [
+              13641,
+              13632
+            ],
+            [
+              196166,
+              114256
+            ],
+            [
+              196166,
+              114255
+            ],
+            [
+              204971,
+              204988
+            ],
+            [
+              204971,
+              204989
+            ],
+            [
+              196175,
+              202407
+            ],
+            [
+              196176,
+              202408
+            ],
+            [
+              195140,
+              195152
+            ],
+            [
+              195140,
+              195153
+            ],
+            [
+              41764,
+              5630
+            ],
+            [
+              41765,
+              5631
+            ],
+            [
+              167278,
+              204194
+            ],
+            [
+              167279,
+              204193
+            ],
+            [
+              5610,
+              5630
+            ],
+            [
+              5631,
+              5611
+            ],
+            [
+              114255,
+              205119
+            ],
+            [
+              114256,
+              205120
+            ],
+            [
+              14770,
+              8036
+            ],
+            [
+              14770,
+              8037
+            ],
+            [
+              195031,
+              201771
+            ],
+            [
+              201772,
+              195032
+            ],
+            [
+              204181,
+              95585
+            ],
+            [
+              204181,
+              95586
+            ],
+            [
+              14772,
+              5006
+            ],
+            [
+              5007,
+              14773
+            ],
+            [
+              204971,
+              95585
+            ],
+            [
+              204971,
+              95586
+            ],
+            [
+              132014,
+              138606
+            ],
+            [
+              132014,
+              138606
+            ],
+            [
+              71203,
+              77795
+            ],
+            [
+              71203,
+              77795
+            ],
+            [
+              13764,
+              204193
+            ],
+            [
+              13764,
+              204194
+            ],
+            [
+              14770,
+              125068
+            ],
+            [
+              14770,
+              125069
+            ],
+            [
+              204182,
+              121670
+            ],
+            [
+              204182,
+              121671
+            ],
+            [
+              202408,
+              5630
+            ],
+            [
+              5631,
+              202407
+            ],
+            [
+              202407,
+              5630
+            ],
+            [
+              5631,
+              202408
+            ],
+            [
+              95551,
+              204193
+            ],
+            [
+              204194,
+              95552
+            ],
+            [
+              196043,
+              114255
+            ],
+            [
+              196043,
+              114256
+            ],
+            [
+              204181,
+              95585
+            ],
+            [
+              204181,
+              95586
+            ],
+            [
+              4843,
+              202407
+            ],
+            [
+              4843,
+              202408
+            ],
+            [
+              84225,
+              88889
+            ],
+            [
+              84226,
+              88890
+            ],
+            [],
+            [],
+            [
+              92406
+            ],
+            [
+              92406
+            ],
+            [
+              117400
+            ],
+            [
+              117400
+            ],
+            [],
+            [],
+            [
+              202407,
+              5630
+            ],
+            [
+              5631,
+              202408
+            ],
+            [
+              204191,
+              84225
+            ],
+            [
+              204192,
+              84226
+            ],
+            [
+              92406
+            ],
+            [
+              92406
+            ],
+            [
+              117400
+            ],
+            [
+              117400
+            ],
+            [
+              103054,
+              103053
+            ],
+            [
+              103054,
+              103053
+            ],
+            [
+              103110,
+              103109
+            ],
+            [
+              103110,
+              103109
+            ],
+            [
+              106704,
+              106703
+            ],
+            [
+              106704,
+              106703
+            ],
+            [
+              106760,
+              106759
+            ],
+            [
+              106760,
+              106759
+            ],
+            [
+              103053,
+              103109
+            ],
+            [
+              103054,
+              103110
+            ],
+            [
+              103053,
+              103109
+            ],
+            [
+              103054,
+              103110
+            ],
+            [
+              106759,
+              106703
+            ],
+            [
+              106760,
+              106704
+            ],
+            [
+              106759,
+              106703
+            ],
+            [
+              106760,
+              106704
+            ]
+          ],
+          "candidate_conflicts": [
+            [
+              0,
+              30
+            ],
+            [
+              0,
+              54
+            ],
+            [
+              1,
+              31
+            ],
+            [
+              1,
+              55
+            ],
+            [
+              2,
+              18
+            ],
+            [
+              2,
+              22
+            ],
+            [
+              3,
+              19
+            ],
+            [
+              3,
+              23
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              4,
+              14
+            ],
+            [
+              4,
+              15
+            ],
+            [
+              4,
+              47
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              14
+            ],
+            [
+              5,
+              15
+            ],
+            [
+              5,
+              46
+            ],
+            [
+              6,
+              44
+            ],
+            [
+              7,
+              45
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              10,
+              47
+            ],
+            [
+              10,
+              53
+            ],
+            [
+              11,
+              14
+            ],
+            [
+              11,
+              15
+            ],
+            [
+              11,
+              46
+            ],
+            [
+              11,
+              52
+            ],
+            [
+              12,
+              34
+            ],
+            [
+              13,
+              35
+            ],
+            [
+              14,
+              16
+            ],
+            [
+              14,
+              47
+            ],
+            [
+              14,
+              48
+            ],
+            [
+              14,
+              56
+            ],
+            [
+              15,
+              17
+            ],
+            [
+              15,
+              46
+            ],
+            [
+              15,
+              49
+            ],
+            [
+              15,
+              57
+            ],
+            [
+              16,
+              56
+            ],
+            [
+              17,
+              57
+            ],
+            [
+              18,
+              22
+            ],
+            [
+              18,
+              48
+            ],
+            [
+              18,
+              68
+            ],
+            [
+              19,
+              23
+            ],
+            [
+              19,
+              49
+            ],
+            [
+              19,
+              69
+            ],
+            [
+              20,
+              40
+            ],
+            [
+              20,
+              51
+            ],
+            [
+              21,
+              41
+            ],
+            [
+              21,
+              50
+            ],
+            [
+              22,
+              47
+            ],
+            [
+              22,
+              48
+            ],
+            [
+              22,
+              68
+            ],
+            [
+              23,
+              46
+            ],
+            [
+              23,
+              49
+            ],
+            [
+              23,
+              69
+            ],
+            [
+              26,
+              42
+            ],
+            [
+              27,
+              43
+            ],
+            [
+              30,
+              34
+            ],
+            [
+              30,
+              54
+            ],
+            [
+              31,
+              35
+            ],
+            [
+              31,
+              55
+            ],
+            [
+              32,
+              41
+            ],
+            [
+              33,
+              40
+            ],
+            [
+              34,
+              54
+            ],
+            [
+              35,
+              55
+            ],
+            [
+              40,
+              50
+            ],
+            [
+              41,
+              51
+            ],
+            [
+              46,
+              48
+            ],
+            [
+              46,
+              49
+            ],
+            [
+              46,
+              52
+            ],
+            [
+              46,
+              57
+            ],
+            [
+              46,
+              69
+            ],
+            [
+              47,
+              48
+            ],
+            [
+              47,
+              49
+            ],
+            [
+              47,
+              53
+            ],
+            [
+              47,
+              56
+            ],
+            [
+              47,
+              68
+            ],
+            [
+              48,
+              52
+            ],
+            [
+              48,
+              56
+            ],
+            [
+              48,
+              68
+            ],
+            [
+              49,
+              53
+            ],
+            [
+              49,
+              57
+            ],
+            [
+              49,
+              69
+            ],
+            [
+              56,
+              68
+            ],
+            [
+              57,
+              69
+            ],
+            [
+              58,
+              70
+            ],
+            [
+              59,
+              71
+            ]
+          ],
+          "seconds": 120
+        }
+      }
+    ],
+    "outputs": [
+      "exchange"
+    ]
+  },
+  "program_sha256": "bd4ee9e3739b2935bfd7de82292869e45963d0fef410c81fc5268c26f359b632",
+  "budget": {
+    "max_materialized_points": 20000,
+    "max_pairs": 10000000,
+    "max_codewords": 262144,
+    "max_orbit_points": 10000,
+    "max_trials": 200,
+    "solver_seconds": 120,
+    "max_dgls_words": 16777216,
+    "max_dimension": 256,
+    "max_nodes": 100,
+    "max_gram_entries": 2000000,
+    "max_rank_work": 50000000,
+    "max_rational_bits": 4096
+  },
+  "python": "3.12.14",
+  "source_sha256": {
+    "__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
+    "__main__.py": "b7477b369529118ea14b7e48fc38c9e8c37957a554bebad7b37912406692f15a",
+    "certification.py": "b9c8db84b93244e6d4b0a1736451b2a5f25137991a5bd817bb9c8ed954bac06a",
+    "compatibility.py": "b484a934b4f6d68cd11f69b17eb0a23fd61556bf4fe4978205530cbfe68b5f89",
+    "contracts.py": "8a8c134dcf67751a0b0882536e8886e4d120f1b76d7388e66a60f18eeb786872",
+    "core.py": "69313eb6d933f436d151289f23c40f018365d16057a2b75d455ac0fe157a1024",
+    "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
+    "engines/body_heads.py": "abd61a72b42fb4f112c7db343ef48cfbe10b960db8187ca077d1ab5a55742944",
+    "engines/characters.py": "a889bc661697e1eb2c5f204680f0602e22fd490d929cc090d48d647a7763d4b5",
+    "engines/construction_search.py": "258c948cf2e77b5457157dad828c407c1d0081e3807c9c86ae5f0ab0c9f67662",
+    "engines/coset_search.py": "3e808aeee08588665f36d3286172de791dc467fc1a854432a5bec2ae7c9be722",
+    "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
+    "engines/exact_orbits.py": "186cb1d85f307ec34c2874c588d7b4acd0320754349284a3132999aeabe6850c",
+    "engines/geometry.py": "8e68c74d39d6ad0a894ceb5a3aa80cbee176f846230d78876eb6d33e2ffa1e3c",
+    "engines/gluing.py": "94141bac6513dbac7210ed0274871ea27ab8a50d0c3d9b27fd2c8f8a7e868a1d",
+    "engines/groups.py": "21fb7e2a6fdd7b219576a453cf8e7cc7548aedf2e3c4cce851e5c6de6cc92c9c",
+    "engines/lattices.py": "e5a90d85fc180e10da7508672d54843838b3f3182ec8ae5c7fe6a5e0a09958df",
+    "engines/layers.py": "a799fab74c7bbacc93712ad2df2ee201f375cb0c56f0f6617cb9f3d1437045cf",
+    "engines/rings.py": "87d1e00e2da8209f6691a023dc517915623e4713b2b7b87695b8957f056158c2",
+    "engines/selection.py": "9b696b164dcea59e1a91c098eac0cdf8322909d28b524bd3c7ae503c9cb08284",
+    "engines/signed_layers.py": "6389a095a584629e153f3d2c38c8077da4524250103d5206a83201951f7f4666",
+    "engines/stabilizers.py": "999aa4a478cc5b16a6840b5b8576cef565be83c27ad5ce9ad0ca7592dd64e362",
+    "exact_gram.py": "c88be5a6e2f9e351da6c11f3bd21bbb9faeb552d499062fb8a99609854da5076",
+    "group_constraints.py": "dea348edffb83b3fe05f75f773c1f64c6f5013772866bb7ad42670586466e2ec",
+    "numerical_shapes.py": "85e9df44c717fcc949295e23985e1cca95bd1cfadf18b12bf850233f9faa7520",
+    "objects.py": "4e8a922bcd7f57fa0d9be5507a92678a170bb8fa45d4e0ab8b61b1e52cf96bb3",
+    "planner.py": "7567b7ac07e0ef52d74a9126aec34e3b70de9b3498fd1f1edfe11f424ccabb97",
+    "runner.py": "f8843836061a905370ffdc6a5df982b117ff65d1fa6a3a5624bfa80fbe8a456f",
+    "scheduler.py": "34aa720811dce88f75c05a76c23cc5f6b36d62d891cd929c863cb7bca499af75",
+    "sections.py": "3e5d33680f60c950cb7b232bf73abbe4aa02a1a8dfef261ebefca8875faecbc3"
+  },
+  "events": [
+    {
+      "node": "exchange",
+      "op": "selection.blocker_exchange",
+      "state": "completed",
+      "seconds": 0.345235,
+      "kind": "exchange_proposal",
+      "verification_status": "unverified",
+      "artifact_sha256": "c38b08e752ed2160b0f99de343aa07223c9a2986eb981070af71331e23584b2f"
+    }
+  ],
+  "artifacts": {
+    "exchange": {
+      "kind": "exchange_proposal",
+      "data": {
+        "backend": "shared_blocker_oracles",
+        "selected_candidate_indices": [
+          36,
+          37,
+          38,
+          39,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
+        "removed_source_indices": [
+          71203,
+          77795,
+          92406,
+          103053,
+          103054,
+          103109,
+          103110,
+          106703,
+          106704,
+          106759,
+          106760,
+          117400,
+          132014,
+          138606
+        ],
+        "input_sha256": "5eedbfdab50b3b2338a4c64b93bbefccd2f3dda73c2f9d4f15f78915d927b029",
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "numerical_dual_bound": -18.0,
+          "numerical_gap": 0.0,
+          "scope": "Numerical diagnostics only; no exact finite or global upper bound"
+        },
+        "scope": "Supplied incompatibility oracles and family weights are assumptions; independent geometric replay is required"
+      },
+      "facts": {
+        "gain": 18,
+        "selected_candidates": 32,
+        "removed_sources": 14,
+        "new_sota": false
+      },
+      "verification": {
+        "status": "unverified",
+        "method": "Exact discrete feasibility of a numerical exchange proposal; source geometry and populations not certified",
+        "details": {}
+      }
+    }
+  },
+  "artifacts_sha256": {
+    "exchange": "c38b08e752ed2160b0f99de343aa07223c9a2986eb981070af71331e23584b2f"
+  },
+  "outputs": [
+    "exchange"
+  ],
+  "scope": "construction experiment; no automatic record registration or worldwide-priority claim"
+}

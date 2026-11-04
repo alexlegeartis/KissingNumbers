@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "name": "known32",
+  "description": "Existing352800-point32D construction; compressed native proof, no new record claim.",
+  "nodes": [
+    {
+      "id": "sphere",
+      "op": "layers.known32"
+    }
+  ],
+  "outputs": [
+    "sphere"
+  ]
+}

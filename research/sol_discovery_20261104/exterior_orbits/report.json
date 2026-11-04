@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "seconds": 19.231079560000126,
+  "reflection_class_size": 120,
+  "exact_quadratic_class_average": [
+    1,
+    2
+  ],
+  "root_outer_product_span_rank": 36,
+  "controls": [
+    {
+      "label": "rank_two",
+      "cardinality": 7560,
+      "rank_exact": 28,
+      "norm_squared": 16,
+      "reflection_fixed_actions": 30,
+      "reflection_normalized_dot_histogram": {
+        "-1": 2,
+        "0": 24,
+        "1": 30,
+        "1/2": 64
+      },
+      "AtA_scalar": false,
+      "AtA_diagonal": [
+        16,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "complete_exact_coordinate_proof": {
+        "status": "exact",
+        "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+        "details": {
+          "dimension": 28,
+          "rank_exact": 28,
+          "ambient_dimension": 28,
+          "cardinality": 7560,
+          "norm_squared": 16,
+          "max_inner_product": 8,
+          "pairs_checked": 28573020,
+          "facts": {
+            "dimension": 28,
+            "rank_exact": 28,
+            "ambient_dimension": 28,
+            "cardinality": 7560,
+            "norm_squared": 16,
+            "max_inner_product": 8,
+            "pairs_checked": 28573020
+          },
+          "data_sha256": "295b3864d9c03c9b3a6395b71b5d798fe12cc8707387982ebafeece8aaf27097",
+          "integer_backend": "int64 proven overflow-safe",
+          "rank_scalar_work": 5547696
+        }
+      },
+      "scope": "Exactly closed whole orbit under the generated E8 reflections; known-scale control, no record or novelty claim"
+    },
+    {
+      "label": "complex_structure",
+      "cardinality": 15120,
+      "rank_exact": 28,
+      "norm_squared": 64,
+      "reflection_fixed_actions": 0,
+      "reflection_normalized_dot_histogram": {
+        "1/2": 120
+      },
+      "AtA_scalar": true,
+      "AtA_diagonal": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "complete_exact_coordinate_proof": {
+        "status": "exact",
+        "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+        "details": {
+          "dimension": 28,
+          "rank_exact": 28,
+          "ambient_dimension": 28,
+          "cardinality": 15120,
+          "norm_squared": 64,
+          "max_inner_product": 32,
+          "pairs_checked": 114299640,
+          "facts": {
+            "dimension": 28,
+            "rank_exact": 28,
+            "ambient_dimension": 28,
+            "cardinality": 15120,
+            "norm_squared": 64,
+            "max_inner_product": 32,
+            "pairs_checked": 114299640
+          },
+          "data_sha256": "58994c2711e2463596538f7cfd609a0041e1b968fb2162a2e57fac7795cc6f2f",
+          "integer_backend": "int64 proven overflow-safe",
+          "rank_scalar_work": 15417248
+        }
+      },
+      "scope": "Exactly closed whole orbit under the generated E8 reflections; known-scale control, no record or novelty claim"
+    }
+  ],
+  "correction": "A whole-orbit kissing seed need not be a complex structure when reflections stabilize it. Rank-two seed has a valid7560-point whole orbit,30 fixing reflections and non-scalar AtA.",
+  "free_reflection_sector": "With no fixing reflections, equality forces every reflection dot to norm/2; root outer-product spanning then forces AtA scalar.",
+  "comparison_28D": 221988,
+  "new_sota": false
+}

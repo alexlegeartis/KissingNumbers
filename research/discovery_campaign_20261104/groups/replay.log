@@ -1,0 +1,226 @@
+{
+  "replay_method": "Direct full pair dot products from saved vectors, independent of seed objective/orbit compression. Floating screening is not certification.",
+  "point_sets": [
+    {
+      "file": "asym_d10_c3_k171_pole0_f1,1,1,1,1.npz",
+      "dimension": 10,
+      "points": 513,
+      "distinct_rounded_10_decimals": 513,
+      "max_norm_squared_error": 5.551115123125783e-16,
+      "maximum_pair_cosine": 1.0,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "9327393ebd7c6dc289ad2a642f5f5e11f63165bb4e6d1e64d393e267b5c1ad95",
+      "exact_certificate": false
+    },
+    {
+      "file": "asym_d5_c2_k20_pole1_f1,1.npz",
+      "dimension": 5,
+      "points": 41,
+      "distinct_rounded_10_decimals": 41,
+      "max_norm_squared_error": 2.220446049250313e-16,
+      "maximum_pair_cosine": 0.5254371799883766,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "25cd3773c69ec2f35acf64d6d13e0b2a9c0943d7909511d6ed0e0d17c5b32859",
+      "exact_certificate": false
+    },
+    {
+      "file": "asym_d5_c3_k14_pole0_f1,1.npz",
+      "dimension": 5,
+      "points": 42,
+      "distinct_rounded_10_decimals": 42,
+      "max_norm_squared_error": 4.440892098500626e-16,
+      "maximum_pair_cosine": 0.5291505721440309,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "32f42de62f048cda29ab600709fa85c00771045a5c76849aeb517f66ad315869",
+      "exact_certificate": false
+    },
+    {
+      "file": "asym_d5_c5_k8_pole1_f1,2.npz",
+      "dimension": 5,
+      "points": 41,
+      "distinct_rounded_10_decimals": 41,
+      "max_norm_squared_error": 4.440892098500626e-16,
+      "maximum_pair_cosine": 0.5239052744655572,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "5519ee02e6242dc5e39a30e60eee44fda1e5c4742d2d59e03a13a2c1ac92c192",
+      "exact_certificate": false
+    },
+    {
+      "file": "asym_d5_c7_k6_pole0_f1,2.npz",
+      "dimension": 5,
+      "points": 42,
+      "distinct_rounded_10_decimals": 42,
+      "max_norm_squared_error": 5.551115123125783e-16,
+      "maximum_pair_cosine": 0.5432114727839132,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "f719450efe1fcb693a192849b3ea623939b44854688f9737f4402a374f6d610d",
+      "exact_certificate": false
+    },
+    {
+      "file": "asym_d6_c2_k37_pole0_f1,1.npz",
+      "dimension": 6,
+      "points": 74,
+      "distinct_rounded_10_decimals": 74,
+      "max_norm_squared_error": 4.440892098500626e-16,
+      "maximum_pair_cosine": 0.5691149218416612,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "3ec061420422bbcad9beec6f6fac4208f6359623d2c86cc738dbd5be4aa0cc50",
+      "exact_certificate": false
+    },
+    {
+      "file": "asym_d6_c3_k25_pole0_f1,1,1.npz",
+      "dimension": 6,
+      "points": 75,
+      "distinct_rounded_10_decimals": 75,
+      "max_norm_squared_error": 4.440892098500626e-16,
+      "maximum_pair_cosine": 0.581252714622564,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "2e33875bc196711c3644834c36acfa47b5387532e2db9bc8f4c09cebe16f08c2",
+      "exact_certificate": false
+    },
+    {
+      "file": "asym_d6_c5_k15_pole0_f1,1,2.npz",
+      "dimension": 6,
+      "points": 75,
+      "distinct_rounded_10_decimals": 75,
+      "max_norm_squared_error": 4.440892098500626e-16,
+      "maximum_pair_cosine": 0.5801723675538486,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "dda072f2a303ca0024c904fe8c676220e88deec81e1be368dcc5aa0b231ea2b7",
+      "exact_certificate": false
+    },
+    {
+      "file": "asym_d6_c7_k11_pole0_f1,2,3.npz",
+      "dimension": 6,
+      "points": 77,
+      "distinct_rounded_10_decimals": 77,
+      "max_norm_squared_error": 4.440892098500626e-16,
+      "maximum_pair_cosine": 0.55335118907266,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "f56d9a7f27576c9a3c9e5d93982580f7c4e3b53a5fa1819812b6f36a153a4824",
+      "exact_certificate": false
+    },
+    {
+      "file": "asym_d7_c2_k63_pole1_f1,1,1.npz",
+      "dimension": 7,
+      "points": 127,
+      "distinct_rounded_10_decimals": 127,
+      "max_norm_squared_error": 4.440892098500626e-16,
+      "maximum_pair_cosine": 0.5394255935014477,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "5f94746863f3b1dd0dacad12d88f2681fffb6f492607aa25ffb2fc28c26dc995",
+      "exact_certificate": false
+    },
+    {
+      "file": "asym_d7_c3_k42_pole1_f1,1,1.npz",
+      "dimension": 7,
+      "points": 127,
+      "distinct_rounded_10_decimals": 127,
+      "max_norm_squared_error": 5.551115123125783e-16,
+      "maximum_pair_cosine": 0.5545342772749008,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "4320c878d78828af3be4c493f05c07a5df6456d389872abc41c170c5f4d66b4f",
+      "exact_certificate": false
+    },
+    {
+      "file": "asym_d7_c7_k18_pole1_f1,2,3.npz",
+      "dimension": 7,
+      "points": 127,
+      "distinct_rounded_10_decimals": 127,
+      "max_norm_squared_error": 5.551115123125783e-16,
+      "maximum_pair_cosine": 0.5199562461899305,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "701a4120b64e7c3d35a52e5384b63f758f77e16db7f42c03b61ec97f2120962b",
+      "exact_certificate": false
+    },
+    {
+      "file": "asym_d9_c3_k102_pole1_f1,1,1,1.npz",
+      "dimension": 9,
+      "points": 307,
+      "distinct_rounded_10_decimals": 307,
+      "max_norm_squared_error": 4.440892098500626e-16,
+      "maximum_pair_cosine": 0.5785411808395194,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "9c5f343f4806c54e48e1f143191b43fc132abfc20b9d58db247ca4bfe191852a",
+      "exact_certificate": false
+    },
+    {
+      "file": "d5_c5_40_polished_control.npz",
+      "dimension": 5,
+      "points": 40,
+      "distinct_rounded_10_decimals": 40,
+      "max_norm_squared_error": 2.220446049250313e-16,
+      "maximum_pair_cosine": 0.5000000000000021,
+      "admissible_at_1e-9_numerical_tolerance": true,
+      "sha256": "c19ae1c6b4b7194e6f96a952819244b0ef8d845d402d4507b5d87b10ddf81ad9",
+      "exact_certificate": false
+    },
+    {
+      "file": "d5_c5_k4_f1,2.npz",
+      "dimension": 5,
+      "points": 40,
+      "distinct_rounded_10_decimals": 40,
+      "max_norm_squared_error": 2.220446049250313e-16,
+      "maximum_pair_cosine": 0.5000000078683635,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "752f7a0ec17f098433300be9fa2f8eafe74ddfe997b8e40d7d7d7002cd047316",
+      "exact_certificate": false
+    },
+    {
+      "file": "d5_c7_k3_f1,2.npz",
+      "dimension": 5,
+      "points": 42,
+      "distinct_rounded_10_decimals": 42,
+      "max_norm_squared_error": 4.440892098500626e-16,
+      "maximum_pair_cosine": 0.5750985855599966,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "d4362ea080e186af705cf4c857aa27656d383861c91bf65296d0eb9aa19ce353",
+      "exact_certificate": false
+    },
+    {
+      "file": "d6_c19_k2_f1,2,3.npz",
+      "dimension": 6,
+      "points": 76,
+      "distinct_rounded_10_decimals": 76,
+      "max_norm_squared_error": 6.661338147750939e-16,
+      "maximum_pair_cosine": 0.8008097832601788,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "2b1ae9efe813605e299126fe6ab3339be7a827c27e6158a67887c732be0c8f41",
+      "exact_certificate": false
+    },
+    {
+      "file": "d6_c19_k2_f1,4,7.npz",
+      "dimension": 6,
+      "points": 76,
+      "distinct_rounded_10_decimals": 76,
+      "max_norm_squared_error": 3.3306690738754696e-16,
+      "maximum_pair_cosine": 0.8401918237570057,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "bd97be21fd3738fbf8e531663ddac9927fb73959f5af06b40c24f85cae69fd6d",
+      "exact_certificate": false
+    },
+    {
+      "file": "d7_c8_k8_f1,2,3.npz",
+      "dimension": 7,
+      "points": 128,
+      "distinct_rounded_10_decimals": 128,
+      "max_norm_squared_error": 4.440892098500626e-16,
+      "maximum_pair_cosine": 0.5978907554341742,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "7a3684bd03d65926add83b91ee649331a43903faa62c0f8441716756a2d06d38",
+      "exact_certificate": false
+    },
+    {
+      "file": "d8_c11_k11_f1,2,3,4.npz",
+      "dimension": 8,
+      "points": 242,
+      "distinct_rounded_10_decimals": 242,
+      "max_norm_squared_error": 4.440892098500626e-16,
+      "maximum_pair_cosine": 0.6252352892787374,
+      "admissible_at_1e-9_numerical_tolerance": false,
+      "sha256": "1514e2ccebe1cd93f35ece3a21882e1cfba148e862dd8ce2b01bb619f87767a6",
+      "exact_certificate": false
+    }
+  ],
+  "seconds": 0.020957706999979564
+}

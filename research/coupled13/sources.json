@@ -1,0 +1,16 @@
+[
+  {
+    "file": "paper.html",
+    "url": "https://arxiv.org/html/2606.03299v1",
+    "bytes": 728748,
+    "sha256": "65a2cecda794e976a9bafb2becaec908d3a8a282cf9bba37a37b7ae39d0ce0bf",
+    "status": "fetched"
+  },
+  {
+    "file": "ze99.md",
+    "url": "https://raw.githubusercontent.com/tretoef-estrella/kissing-number-13-zinoviev-ericson-reproduction/main/Ze99%201154%20data.md",
+    "bytes": 38674,
+    "sha256": "ee9514bf4680140a8608e12ea803358230b4ffed19cb74eef646ffe8f929c709",
+    "status": "fetched"
+  }
+]

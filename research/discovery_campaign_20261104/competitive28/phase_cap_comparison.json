@@ -1,0 +1,201 @@
+[
+  {
+    "version": "reviewed_before_fix",
+    "seconds": 5.24700556299922,
+    "cardinality": 6720,
+    "status": "numerical",
+    "materialization_limit_reached": true,
+    "candidate_count": 30,
+    "block_coverage": null,
+    "seed_diagnostics": [
+      {
+        "seed": "coordinate:0",
+        "lines": 1120,
+        "status": "closed_numerically"
+      },
+      {
+        "seed": "coordinate:1",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:2",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:3",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:4",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:5",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:6",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:7",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:8",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:9",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:10",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:11",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:12",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:13",
+        "lines": 1600,
+        "status": "limit_reached"
+      }
+    ],
+    "inventory": [
+      {
+        "orbit": 0,
+        "lines": 1120,
+        "vectors": 2240,
+        "vector_status": "closed_numerically",
+        "accepted_phase_orders": [
+          1,
+          2,
+          3,
+          6
+        ]
+      }
+    ]
+  },
+  {
+    "version": "fixed",
+    "seconds": 4.602818384999409,
+    "cardinality": 6720,
+    "status": "numerical",
+    "materialization_limit_reached": false,
+    "candidate_count": 16,
+    "block_coverage": {
+      "unique_blocks_admitted": 16,
+      "admitted_point_rows": 53760,
+      "duplicate_blocks_skipped": 32,
+      "identity_precision_decimal_digits": 7,
+      "schedule": "phase step then phase order within each closed orbit; orbit discovery order unchanged"
+    },
+    "seed_diagnostics": [
+      {
+        "seed": "coordinate:0",
+        "lines": 1120,
+        "status": "closed_numerically"
+      },
+      {
+        "seed": "coordinate:1",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:2",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:3",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:4",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:5",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:6",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:7",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:8",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:9",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:10",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:11",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:12",
+        "lines": 1600,
+        "status": "limit_reached"
+      },
+      {
+        "seed": "coordinate:13",
+        "lines": 1600,
+        "status": "limit_reached"
+      }
+    ],
+    "inventory": [
+      {
+        "orbit": 0,
+        "lines": 1120,
+        "vectors": 2240,
+        "vector_status": "closed_numerically",
+        "accepted_phase_orders": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "admitted_blocks": 16,
+        "duplicate_blocks_skipped": 32,
+        "capacity_blocks_skipped": 0
+      }
+    ]
+  }
+]

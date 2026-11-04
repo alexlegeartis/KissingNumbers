@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "name": "real_stabilizer_sector_control",
+  "description": "Generated affine-flat/quadratic-sign control; parameterized symbolic count and exact pair-bound certificate, no stored record coordinates.",
+  "nodes": [
+    {"id": "sector", "op": "groups.real_stabilizer_sector", "params": {"m": 4, "parity": 0}}
+  ],
+  "outputs": ["sector"]
+}

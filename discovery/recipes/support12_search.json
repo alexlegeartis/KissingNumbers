@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "name": "Triple-disjoint support search in twelve coordinates",
+  "description": "Search can reproduce historical 840; current captured target is 841, so this is a subtarget result.",
+  "nodes": [{"id": "sphere", "op": "search.support_packing", "params": {"dimension": 12, "cycles": [2, 2, 4, 4], "seconds": 2}}],
+  "outputs": ["sphere"]
+}

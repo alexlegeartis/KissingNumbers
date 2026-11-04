@@ -1,0 +1,40 @@
+{
+  "seed": 20261105,
+  "planned_trials": 2000,
+  "attempted_trials": 2000,
+  "finite_list_exhausted": true,
+  "stop_reason": "finite_list_exhausted",
+  "best_cardinality": 1932,
+  "best_trial_index": 0,
+  "baseline_cardinality": 1932,
+  "new_sota_found": false,
+  "family_counts": {
+    "structured_reflection": 54,
+    "rational_plane_rotation": 36,
+    "random_block_reflection": 319,
+    "random_mixed_reflection": 319,
+    "random_dense_reflection": 318,
+    "block_reflection_word": 318,
+    "mixed_reflection_word": 318,
+    "mixed_commutator": 318
+  },
+  "cardinality_histogram": {
+    "1932": 2000
+  },
+  "conflict_edges_range": [
+    0,
+    149442
+  ],
+  "maximum_new_image_points": 1916,
+  "elapsed_seconds": 245.2498254889997,
+  "scope": "These finite two-isometric-copy unions only. No global bound or exhaustion of rational maps.",
+  "baseline_proof": "full independent integer norm/distinctness/pair/rank verification",
+  "per_trial_proof": "exact isometry, full cross graph, matching and equal-size vertex cover checked against every edge",
+  "output_proof": "full independent integer verification of the first best and every strict improvement",
+  "source_files_sha256_at_report_time": {
+    "/workspace/KissingNumbers/research/discovery_campaign_20261104/coupled14/search.py": "3a62e7483b0fad75ac8c8b61a1f2e85035743a0a197801e8dcd9b2aeb3126174",
+    "discovery/engines/selection.py": "401f6073306188cc2dc27126a5898cf55e4bd13bd798d4dd512a8782c8f3e632",
+    "discovery/certification.py": "af9899a477b49d3d4574b750c58801d5f9722df48bcdaaf25827c67efcfee9e3",
+    "discovery/engines/groups.py": "6193aed77506366187b5a5163002f23db99cf93c7d9a4f3d3bc477ea19cad836"
+  }
+}

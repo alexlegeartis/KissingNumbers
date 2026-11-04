@@ -1,0 +1,39 @@
+{
+  "restored_extension_archive_sha256": "fb8aec51aea76f92306939aa082f562d0c42d0ba6dac2bc7d7ac0b83605f124a",
+  "restored_manifest_files_verified": 405,
+  "base_commit": "e25c2924f377a1061b6c60429c950d34df7515e9",
+  "package_tests": 179,
+  "new_focused_optimized_tests": 11,
+  "coverage_tests": 9,
+  "registered_repository_dimensions_audited": 70,
+  "new_operators": 3,
+  "registered_operators": 32,
+  "heldout_programs": 200,
+  "new_certified_sota": false,
+  "github_actions_changed": false,
+  "pull_request_opened": false,
+  "suite": {
+    "file": "research/sol_discovery_20261104/all_tests.log",
+    "sha256": "5b3ea702f394108a4c934794fb43c9811170123907b226634d34aa919515b940"
+  },
+  "optimized": {
+    "file": "research/sol_discovery_20261104/optimized_tests.log",
+    "sha256": "19eaedcc7df21c19760b9e690bc0635f990e13006d313a16a2975cc9b1e4f66a"
+  },
+  "coverage": {
+    "file": "research/sol_discovery_20261104/coverage_tests.log",
+    "sha256": "1a03529bd5a3e2122aec9496054a53233a2b2ebeb69375912be291d579a237e5"
+  },
+  "audit": {
+    "file": "research/sol_discovery_20261104/final_audit.log",
+    "sha256": "a76310c275c4704fef4f43814ed5da93bc4de865651f7c039b0c7a5f87583d3b"
+  },
+  "projection32": {
+    "file": "research/sol_discovery_20261104/audit32_projection.json",
+    "sha256": "4bcccae8733964d49af43725be3a96014181e3bf8ebcf426acadf3d841dbd90f"
+  },
+  "kernels32": {
+    "file": "research/sol_discovery_20261104/audit32_kernels.json",
+    "sha256": "f5da30baca74252f8f9d3c8de5b7bda0281ed9f277498476915fadc434f822e3"
+  }
+}

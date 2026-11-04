@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "name": "ganzhinov10",
+  "description": "Known exact control; not a new record.",
+  "nodes": [
+    {
+      "id": "code",
+      "op": "groups.ganzhinov10"
+    }
+  ],
+  "outputs": [
+    "code"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "name": "ring_sign32",
+  "description": "Kissing-oriented translation objective;8192-point sign layer below352800 record.",
+  "nodes": [
+    {
+      "id": "factor",
+      "op": "rings.binary_factor",
+      "params": {
+        "n": 7,
+        "index": 0
+      }
+    },
+    {
+      "id": "lift",
+      "op": "rings.hensel",
+      "inputs": [
+        "factor"
+      ],
+      "params": {
+        "modulus": 8
+      }
+    },
+    {
+      "id": "ring",
+      "op": "rings.extend",
+      "inputs": [
+        "lift"
+      ],
+      "params": {
+        "extension": -1
+      }
+    },
+    {
+      "id": "binary",
+      "op": "rings.gray",
+      "inputs": [
+        "ring"
+      ]
+    },
+    {
+      "id": "union",
+      "op": "codes.translate_union",
+      "inputs": [
+        "binary"
+      ],
+      "params": {
+        "target_distance": 8
+      }
+    },
+    {
+      "id": "sphere",
+      "op": "geometry.sign_embed",
+      "inputs": [
+        "union"
+      ]
+    }
+  ],
+  "outputs": [
+    "sphere"
+  ]
+}

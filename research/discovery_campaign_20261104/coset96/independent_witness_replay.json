@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "ring_rejection_witnesses": 24368,
+  "binary_nearest_point_rejections": 5450,
+  "binary_two_parent_rejections": 692,
+  "binary_candidates_total": 6142,
+  "three_half_coset_rejections": 414,
+  "unverified_three_half_coset_survivors": 0,
+  "scope": "Actual positive-distance rejection witnesses only. No lower distance bound is inferred from samples.",
+  "elapsed_seconds": 1.2068631259999165,
+  "checker_sha256": "5dd3b03b495cb9ae6cd394e3c3c4d6cf68430091010fa17c3019f30a4db06832"
+}

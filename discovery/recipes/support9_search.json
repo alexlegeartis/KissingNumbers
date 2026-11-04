@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "name": "Triple-disjoint support search in nine coordinates",
+  "description": "Runtime support-packing search; no record coordinates or target cardinality supplied. Separate held-out benchmark records rediscovery provenance.",
+  "nodes": [{"id": "sphere", "op": "search.support_packing", "params": {"dimension": 9, "cycles": [8, 1], "seconds": 2}}],
+  "outputs": ["sphere"]
+}

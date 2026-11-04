@@ -1,0 +1,193 @@
+{
+  "created_at_utc": "2026-11-04T17:17:51.077831+00:00",
+  "scope": "Coupled construction search and known controls; no new SOTA",
+  "new_sota": false,
+  "held_out_discovery_credit": false,
+  "engine_operators": [
+    "search.character_families",
+    "search.character_orbits"
+  ],
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "parent_research_integrated_commit": "c52d73f0cc7154e0598696386c259ea5f9b6d61c",
+  "checks": {
+    "engine_tests": {
+      "passed": 217,
+      "command": "OPENBLAS_NUM_THREADS=1 python3 -m unittest discover -s discovery/tests -t ."
+    },
+    "optimized_focused_tests": {
+      "passed": 12,
+      "command": "OPENBLAS_NUM_THREADS=1 python3 -O -m unittest discovery.tests.test_characters discovery.tests.test_numerical_shapes"
+    },
+    "current_coverage_replay": {
+      "rows": 24,
+      "exact_target_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19,
+        22,
+        23,
+        24
+      ]
+    },
+    "parent_exact_five_flat_cases": 280,
+    "parent_exact_seven_flat_cases": 56,
+    "parent_seed_points": 5730,
+    "repository_claim_audit": {
+      "dimensions": 70,
+      "status": "PASS",
+      "command": "OPENBLAS_NUM_THREADS=1 python3 audit.py --repository-only"
+    },
+    "coverage_exports": {
+      "views": 3,
+      "rows": 24,
+      "status": "PASS"
+    },
+    "parent_sign_group_closure": [
+      32,
+      16
+    ]
+  },
+  "stochastic_commands": [
+    "g++ -O3 -std=c++17 research/character_families_20261104/line_anneal.cpp -o /tmp/line_anneal",
+    "/tmp/line_anneal research/character_families_20261104/probe21.dat /tmp/probe21-best.dat 8 3000000 20261104",
+    "g++ -O3 -std=c++17 research/character_families_20261104/hole_search.cpp -o /tmp/hole_search",
+    "/tmp/hole_search research/character_families_20261104/probe21.dat /tmp/holes21-best.dat 16 1000000 20261104"
+  ],
+  "remaining_blocker": "No independently certified construction exceeding the captured current lower bound; finite numerical negatives and controls do not establish impossibility or novelty.",
+  "files": {
+    "README.md": {
+      "sha256": "2934056a0e3f4aa164bcd3fc3d0599f50b6152c51bf7d1f26c506e7a5d8db1d9",
+      "bytes": 5810
+    },
+    "build19.py": {
+      "sha256": "a59dc973451a0e6e06605747416e8ba4d05f8819229170e482c98645bac05356",
+      "bytes": 6780
+    },
+    "continuous19-extra0-s20261104.json": {
+      "sha256": "f45dc264632f24ecf1ec42073d52c98cac4d9897a90b7421765aac8ec5e200eb",
+      "bytes": 44522
+    },
+    "continuous19-extra1-s20261104.json": {
+      "sha256": "c77b16ef725aa7738cab73001817c7960756aceef64fa027f4b63a025325bc6f",
+      "bytes": 47747
+    },
+    "continuous19-extra2-s20261105.json": {
+      "sha256": "54279b94b97662e9df6415167f1b9b096239372136512b832801aaedcad1da43",
+      "bytes": 49279
+    },
+    "continuous19.py": {
+      "sha256": "3ec3beb6f8dc90356c80b73807011997cba81bdac990f546121b0c23f0ba3827",
+      "bytes": 3345
+    },
+    "continuous21-q16-s20261104.json": {
+      "sha256": "9a6d7e625bf7746bdc6711ae17100590e4149cf634cfb7dcd110a1f5272724b3",
+      "bytes": 8028
+    },
+    "continuous21-q32-s20261104.json": {
+      "sha256": "9b6ae2c1fcf513e5548ed852ace9f276c6a74f13882e0236044a0df8c5aebd14",
+      "bytes": 15023
+    },
+    "continuous21-q64-fill-initial.log": {
+      "sha256": "a8a45ea5773a54e20e5e2422d5262c538e72ea870dc6e5bcc0d7dac8d282020c",
+      "bytes": 928
+    },
+    "continuous21-q64-fill-saved.log": {
+      "sha256": "29bdad0551a434e7bba05e21939b2f01689695c26e7b98ba66a485c5afe30db6",
+      "bytes": 256
+    },
+    "continuous21-q64-s20261104-fill.json": {
+      "sha256": "f9db13859f1b60c63b1ea627c64d16d6ad8353ae6b3d2d7620d64a74222ead74",
+      "bytes": 27419
+    },
+    "continuous21.py": {
+      "sha256": "4d9613b7fbe503fdd436576e9359eda0926db21c311c7295ec1c0ce2e0cf2db1",
+      "bytes": 4083
+    },
+    "control19_artifact.json": {
+      "sha256": "f5a44bf8748f656a63c90caa05fb7f427923bad29e7bc22d176022c069849b40",
+      "bytes": 1148603
+    },
+    "control19_program.json": {
+      "sha256": "a65202385498f9fd2ad824fded696c1cf08d18fa969d39f9ab82cbc49e2bc8b6",
+      "bytes": 1148023
+    },
+    "control19_source.json": {
+      "sha256": "dee60f0a9df6edcb6772d9f228547ce6a605aac7cfc31214d9aec68d16d71956",
+      "bytes": 25052
+    },
+    "coupled17-s20261104-artifact.json": {
+      "sha256": "79c233b32882acce2e7a9e9b82bbbc5bbd561af95a460247f14ad8f947d255cc",
+      "bytes": 231877
+    },
+    "coupled17-s20261104-program.json": {
+      "sha256": "004898b495af7b70ea401497772a8e922750d021da430f5b0749832ad9d42339",
+      "bytes": 27267
+    },
+    "coupled17-s20261104-summary.json": {
+      "sha256": "e19fbf4daacdb92709a2d833f39c99528ee87455badb7156a2b83f3826fdee64",
+      "bytes": 42070
+    },
+    "coupled17.py": {
+      "sha256": "188cc85a520a6e88f2424a7d37b935cdf12c25283fa59d68e47113ca17dabe79",
+      "bytes": 4823
+    },
+    "discrete21.json": {
+      "sha256": "f1a31712c8ec3b1b8f3c600e0fc1f3f84be2e26ca7434f4844494a9f31ce5423",
+      "bytes": 14797
+    },
+    "discrete21.py": {
+      "sha256": "9236f16407a51af7f87dee5087ca9720b2358a809a2cd54556f59de3a8d683d5",
+      "bytes": 2545
+    },
+    "domination21.json": {
+      "sha256": "c0f3f121674d7ee369cf0508e4206710b51cac08c8c98802c3310ae6e1da5215",
+      "bytes": 618
+    },
+    "hole_proposal21.json": {
+      "sha256": "0bfdf5abefa778c5bcf265b5ad833d94c71847198f2052b8a1aee2246ae0803b",
+      "bytes": 520
+    },
+    "hole_search.cpp": {
+      "sha256": "1b53a59afbe6e5f8ac5a99285a9e4ec7b44d078d5ed35e0a7ac93034e181858a",
+      "bytes": 1950
+    },
+    "hole_search21.log": {
+      "sha256": "6a22c16358598d7a7521b63331d0e0e68d4daa190e5480b8666490b841715cd3",
+      "bytes": 527
+    },
+    "line_anneal.cpp": {
+      "sha256": "4be870cff95aad16c7ac235223e021ad38e9da2674f02a4c5f720678d1c4cd54",
+      "bytes": 1586
+    },
+    "probe21.dat": {
+      "sha256": "d3dca9bce95f30903b7c42bf756e862efcb051576ffa9226fa1697955aa7a8c8",
+      "bytes": 2706
+    },
+    "probe21.json": {
+      "sha256": "6e8355301e4f34f3b68bd29e2ae01e78e04bd50b0aaa226d0a011952b6f22d39",
+      "bytes": 4049
+    },
+    "probe21.py": {
+      "sha256": "c80adbb6e734b6b85ee1f3a1bd415e276ec49097316da5f12efe6b87fb082c2c",
+      "bytes": 1508
+    },
+    "stochastic21.log": {
+      "sha256": "97d922867e18cf4195f02f78b5c6e2e45b4d649c1c5afa6ecfab22f005058ad4",
+      "bytes": 328
+    }
+  }
+}

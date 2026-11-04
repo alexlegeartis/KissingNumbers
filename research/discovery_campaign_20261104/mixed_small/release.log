@@ -1,0 +1,11 @@
+{"job": "d12_c7_fixed842_released", "trial": 0, "power": 2, "maximum_cosine": 0.6241432670266193, "violations": 21905, "seconds": 12.045949829000165}
+{"job": "d12_c7_fixed842_released", "trial": 1, "power": 4, "maximum_cosine": 0.5603411301878366, "violations": 20730, "seconds": 45.969397824000225}
+{"job": "d12_c7_fixed842_released", "trial": 2, "power": 2, "maximum_cosine": 0.6211823870024489, "violations": 21883, "seconds": 57.47640034200049}
+{"job": "d12_c7_fixed842_released", "trial": 3, "power": 4, "maximum_cosine": 0.5654324433545994, "violations": 20604, "seconds": 65.02300626800024}
+{"job": "d11_c5_605_released", "trial": 0, "power": 2, "maximum_cosine": 0.6344256295650398, "violations": 13832, "seconds": 3.5842694529992514}
+{"job": "d11_c5_605_released", "trial": 1, "power": 4, "maximum_cosine": 0.5634606590770954, "violations": 12873, "seconds": 13.623657490999904}
+{"job": "d11_c5_605_released", "trial": 2, "power": 2, "maximum_cosine": 0.6251992493407419, "violations": 13812, "seconds": 17.641379309999138}
+{"job": "d11_c5_605_released", "trial": 3, "power": 4, "maximum_cosine": 0.5651754293554592, "violations": 13017, "seconds": 37.6275346099992}
+{"job": "d12_c11_mixed842_released", "trial": 0, "power": 2, "maximum_cosine": 0.6336688831476623, "violations": 21947, "seconds": 11.378735899000276}
+{"job": "d12_c11_mixed842_released", "trial": 1, "power": 4, "maximum_cosine": 0.562026449645952, "violations": 20636, "seconds": 58.75553116500032}
+{"job": "d12_c11_mixed842_released", "trial": 2, "power": 2, "maximum_cosine": 0.6159652910703628, "violations": 22030, "seconds": 65.00976422800068}

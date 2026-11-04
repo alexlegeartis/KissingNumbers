@@ -1,0 +1,161 @@
+test_bad_graphs_are_rejected (test_core.CoreTests.test_bad_graphs_are_rejected) ... ok
+test_cli_roundtrip_and_no_overwrite (test_core.CoreTests.test_cli_roundtrip_and_no_overwrite) ... ok
+test_dag_and_orthogonal_composition (test_core.CoreTests.test_dag_and_orthogonal_composition) ... ok
+test_forged_auxiliary_facts_and_receipt_hashes (test_core.CoreTests.test_forged_auxiliary_facts_and_receipt_hashes) ... ok
+test_implicit_gray_sign_embedding (test_core.CoreTests.test_implicit_gray_sign_embedding) ... /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sympy/polys/polytools.py:6282: SymPyDeprecationWarning: 
+
+Ordered comparisons with modular integers are deprecated.
+
+            Use e.g. int(a) < int(b) instead of a < b.
+
+See https://docs.sympy.org/latest/explanation/active-deprecations.html#modularinteger-compare
+for details.
+
+This has been deprecated since SymPy version 1.13. It
+will be removed in a future version of SymPy.
+
+  return sorted(factors, key=key)
+ok
+test_invalid_coordinate_certificates (test_core.CoreTests.test_invalid_coordinate_certificates) ... ok
+test_large_integer_backend_is_exact (test_core.CoreTests.test_large_integer_backend_is_exact) ... ok
+test_limits_precede_pair_work (test_core.CoreTests.test_limits_precede_pair_work) ... ok
+test_serialization_and_digest (test_core.CoreTests.test_serialization_and_digest) ... ok
+test_status_and_facts_cannot_forge_proof (test_core.CoreTests.test_status_and_facts_cannot_forge_proof) ... ok
+test_uncertified_geometry_and_novelty_claims_rejected (test_core.CoreTests.test_uncertified_geometry_and_novelty_claims_rejected) ... ok
+test_all_syndrome_distances_match_independent_enumeration (test_cosets.CosetTests.test_all_syndrome_distances_match_independent_enumeration) ... ok
+test_caps_precede_exponential_storage (test_cosets.CosetTests.test_caps_precede_exponential_storage) ... ok
+test_extended_hamming_kernel_exact_distance_and_replay (test_cosets.CosetTests.test_extended_hamming_kernel_exact_distance_and_replay) ... ok
+test_fixed_coset_unions_match_full_binary_pair_distance (test_cosets.CosetTests.test_fixed_coset_unions_match_full_binary_pair_distance) ... ok
+test_implicit_kernel_can_be_much_larger_than_quotient_budget (test_cosets.CosetTests.test_implicit_kernel_can_be_much_larger_than_quotient_budget) ... ok
+test_json_roundtrip_and_saved_receipt_has_no_authority (test_cosets.CosetTests.test_json_roundtrip_and_saved_receipt_has_no_authority) ... ok
+test_labels_pair_budget_and_parameter_validation (test_cosets.CosetTests.test_labels_pair_budget_and_parameter_validation) ... ok
+test_matrix_rejections_and_rank_checked_before_tables (test_cosets.CosetTests.test_matrix_rejections_and_rank_checked_before_tables) ... ok
+test_modified_certificates_facts_and_receipts (test_cosets.CosetTests.test_modified_certificates_facts_and_receipts) ... ok
+test_nonempty_dependency_dp_does_not_use_empty_zero_syndrome (test_cosets.CosetTests.test_nonempty_dependency_dp_does_not_use_empty_zero_syndrome) ... ok
+test_random_full_rank_matrices_against_enumeration (test_cosets.CosetTests.test_random_full_rank_matrices_against_enumeration) ... ok
+test_trivial_kernel_sentinel_is_not_claimed_as_actual_distance (test_cosets.CosetTests.test_trivial_kernel_sentinel_is_not_claimed_as_actual_distance) ... ok
+test_optimized_python_cannot_skip_empty_obstruction (test_extension_replay.ExtensionReplayTests.test_optimized_python_cannot_skip_empty_obstruction) ... ok
+test_rejects_empty_missing_duplicate_and_rank_deficient_proofs (test_extension_replay.ExtensionReplayTests.test_rejects_empty_missing_duplicate_and_rank_deficient_proofs) ... ok
+test_requires_full_layers_and_independent_agreement (test_full96_bridge.Full96BridgeTests.test_requires_full_layers_and_independent_agreement) ... ok
+test_inconsistent_cross_psd_cannot_hide_behind_bounds_or_overlap (test_gluing.GluingTests.test_inconsistent_cross_psd_cannot_hide_behind_bounds_or_overlap) ... ok
+test_mixed_nonorthogonal_two_dimensional_union (test_gluing.GluingTests.test_mixed_nonorthogonal_two_dimensional_union) ... ok
+test_nested_gluing_and_backend_resource_guards (test_gluing.GluingTests.test_nested_gluing_and_backend_resource_guards) ... ok
+test_partial_and_complete_overlaps_have_exact_cardinality (test_gluing.GluingTests.test_partial_and_complete_overlaps_have_exact_cardinality) ... ok
+test_rational_head_changes_union_rank_and_negative_scale_supported (test_gluing.GluingTests.test_rational_head_changes_union_rank_and_negative_scale_supported) ... ok
+test_rational_scales_match_different_source_norms (test_gluing.GluingTests.test_rational_scales_match_different_source_norms) ... ok
+test_runner_accepts_only_explicit_declared_kind_alternatives (test_gluing.GluingTests.test_runner_accepts_only_explicit_declared_kind_alternatives) ... ok
+test_stored_receipts_provenance_and_mutations (test_gluing.GluingTests.test_stored_receipts_provenance_and_mutations) ... ok
+test_wrong_norm_threshold_shapes_and_noninjectivity_reject (test_gluing.GluingTests.test_wrong_norm_threshold_shapes_and_noninjectivity_reject) ... ok
+test_budget_precedes_parsing_and_arithmetic (test_gram.GramTests.test_budget_precedes_parsing_and_arithmetic) ... ok
+test_cli_compare_and_scheduler_include_exact_grams (test_gram.GramTests.test_cli_compare_and_scheduler_include_exact_grams) ... ok
+test_facts_and_status_are_not_authority (test_gram.GramTests.test_facts_and_status_are_not_authority) ... ok
+test_fraction_free_rank_handles_out_of_order_pivots (test_gram.GramTests.test_fraction_free_rank_handles_out_of_order_pivots) ... ok
+test_optimized_python_retains_rejection (test_gram.GramTests.test_optimized_python_retains_rejection) ... ok
+test_rational_singular_gram_exact_rank (test_gram.GramTests.test_rational_singular_gram_exact_rank) ... ok
+test_registered_dag_and_symbolic_status (test_gram.GramTests.test_registered_dag_and_symbolic_status) ... ok
+test_reject_false_geometry (test_gram.GramTests.test_reject_false_geometry) ... ok
+test_invalid_normal_source_and_budget (test_gram.SectionTests.test_invalid_normal_source_and_budget) ... ok
+test_section_budget_precedes_normal_fraction_allocation (test_gram.SectionTests.test_section_budget_precedes_normal_fraction_allocation) ... ok
+test_section_corruption_rejected (test_gram.SectionTests.test_section_corruption_rejected) ... ok
+test_section_dag_replays_membership (test_gram.SectionTests.test_section_dag_replays_membership) ... ok
+test_weighted_rational_normal_and_exact_span (test_gram.SectionTests.test_weighted_rational_normal_and_exact_span) ... ok
+test_compressed_checks_match_full_for_closed_vector_orbits (test_groups.GroupTests.test_compressed_checks_match_full_for_closed_vector_orbits) ... ok
+test_exact_14_recipe_control (test_groups.GroupTests.test_exact_14_recipe_control) ... ok
+test_exact_control_reconstruction_and_mutation (test_groups.GroupTests.test_exact_control_reconstruction_and_mutation) ... ok
+test_exact_rejects_pair_violation_and_false_facts (test_groups.GroupTests.test_exact_rejects_pair_violation_and_false_facts) ... ok
+test_numerical_coordinate_guards_precede_allocation (test_groups.GroupTests.test_numerical_coordinate_guards_precede_allocation) ... ok
+test_numerical_verifier_never_promotes_and_rejects_forgery (test_groups.GroupTests.test_numerical_verifier_never_promotes_and_rejects_forgery) ... ok
+test_orbit_limit_is_explicit_and_never_closed (test_groups.GroupTests.test_orbit_limit_is_explicit_and_never_closed) ... ok
+test_phase_block_duplicates_are_not_charged_against_budget (test_groups.GroupTests.test_phase_block_duplicates_are_not_charged_against_budget) ... ok
+test_search_honors_verification_pair_budget (test_groups.GroupTests.test_search_honors_verification_pair_budget) ... ok
+test_search_is_deterministic_bounded_and_numerical (test_groups.GroupTests.test_search_is_deterministic_bounded_and_numerical) ... ok
+test_supplied_generator_rejections_precede_allocation (test_groups.GroupTests.test_supplied_generator_rejections_precede_allocation) ... ok
+test_supplied_generators_support_other_dimensions (test_groups.GroupTests.test_supplied_generators_support_other_dimensions) ... ok
+test_weil_shape_unitarity_and_parameter_validation (test_groups.GroupTests.test_weil_shape_unitarity_and_parameter_validation) ... ok
+test_classical_counts_and_dimensions_1_to_8 (test_lattices.RootSystemTests.test_classical_counts_and_dimensions_1_to_8) ... ok
+test_exceptional_sections_preserve_integer_metric (test_lattices.RootSystemTests.test_exceptional_sections_preserve_integer_metric) ... ok
+test_generic_families_have_no_rank_8_cutoff (test_lattices.RootSystemTests.test_generic_families_have_no_rank_8_cutoff) ... ok
+test_helmert_metric_matches_original_A_root_gram (test_lattices.RootSystemTests.test_helmert_metric_matches_original_A_root_gram) ... ok
+test_invalid_requests_and_preallocation_budgets (test_lattices.RootSystemTests.test_invalid_requests_and_preallocation_budgets) ... ok
+test_runner_integration_and_modified_geometry_rejection (test_lattices.RootSystemTests.test_runner_integration_and_modified_geometry_rejection) ... ok
+test_actual_352800_control_is_compressed_and_exact (test_layers.LayerTests.test_actual_352800_control_is_compressed_and_exact) ... ok
+test_any_modified_known32_payload_is_rejected (test_layers.LayerTests.test_any_modified_known32_payload_is_rejected) ... ok
+test_dimension_parameters_extend_to_96_and_nonintegral_scales (test_layers.LayerTests.test_dimension_parameters_extend_to_96_and_nonintegral_scales) ... ok
+test_generic_dense_distance_dependencies_and_count_are_replayed (test_layers.LayerTests.test_generic_dense_distance_dependencies_and_count_are_replayed) ... ok
+test_independent_direct_all_pairs_for_smaller_layered_fixture (test_layers.LayerTests.test_independent_direct_all_pairs_for_smaller_layered_fixture) ... ok
+test_limits_precede_exponential_or_pair_work (test_layers.LayerTests.test_limits_precede_exponential_or_pair_work) ... ok
+test_operator_inputs_and_payload_types_are_strict (test_layers.LayerTests.test_operator_inputs_and_payload_types_are_strict) ... ok
+test_saved_verification_receipt_is_not_authority (test_layers.LayerTests.test_saved_verification_receipt_is_not_authority) ... ok
+test_sparse_duplicate_sign_and_field_rejections (test_layers.LayerTests.test_sparse_duplicate_sign_and_field_rejections) ... ok
+test_support_intersection_and_signed_conflicts (test_layers.LayerTests.test_support_intersection_and_signed_conflicts) ... ok
+test_ambient_dimension_is_not_rank (test_object_contracts.ObjectContractTests.test_ambient_dimension_is_not_rank) ... ok
+test_contract_coverage_is_explicitly_partial (test_object_contracts.ObjectContractTests.test_contract_coverage_is_explicitly_partial) ... ok
+test_contract_shapes_and_estimates_are_not_cost_or_proof_certificates (test_object_contracts.ObjectContractTests.test_contract_shapes_and_estimates_are_not_cost_or_proof_certificates) ... ok
+test_interval_numeric_and_unknown_adapters_are_not_implemented_by_schema (test_object_contracts.ObjectContractTests.test_interval_numeric_and_unknown_adapters_are_not_implemented_by_schema) ... ok
+test_malformed_claims_are_rejected_before_replay (test_object_contracts.ObjectContractTests.test_malformed_claims_are_rejected_before_replay) ... ok
+test_metadata_does_not_establish_injectivity_or_symmetry (test_object_contracts.ObjectContractTests.test_metadata_does_not_establish_injectivity_or_symmetry) ... ok
+test_no_family_dimension_filter_from_1_through_96 (test_object_contracts.ObjectContractTests.test_no_family_dimension_filter_from_1_through_96) ... ok
+test_rational_gram_is_real_realization_not_rational_coordinates (test_object_contracts.ObjectContractTests.test_rational_gram_is_real_realization_not_rational_coordinates) ... ok
+test_saved_receipts_and_hashes_cannot_promote_claims (test_object_contracts.ObjectContractTests.test_saved_receipts_and_hashes_cannot_promote_claims) ... ok
+test_snapshot_and_checked_facts_do_not_alias_caller_data (test_object_contracts.ObjectContractTests.test_snapshot_and_checked_facts_do_not_alias_caller_data) ... ok
+test_timeout_and_resource_outcomes_are_not_invalidity_or_exhaustion (test_object_contracts.ObjectContractTests.test_timeout_and_resource_outcomes_are_not_invalidity_or_exhaustion) ... ok
+test_budget_precedes_exhaustive_allocation (test_rings.RingTests.test_budget_precedes_exhaustive_allocation) ... /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sympy/polys/polytools.py:6282: SymPyDeprecationWarning: 
+
+Ordered comparisons with modular integers are deprecated.
+
+            Use e.g. int(a) < int(b) instead of a < b.
+
+See https://docs.sympy.org/latest/explanation/active-deprecations.html#modularinteger-compare
+for details.
+
+This has been deprecated since SymPy version 1.13. It
+will be removed in a future version of SymPy.
+
+  return sorted(factors, key=key)
+ok
+test_dgls_synthesized_two_proofs_and_implicit_union (test_rings.RingTests.test_dgls_synthesized_two_proofs_and_implicit_union) ... ok
+test_gray_isometry_all_symbol_pairs (test_rings.RingTests.test_gray_isometry_all_symbol_pairs) ... ok
+test_huge_parent_is_implicit_and_uncertified (test_rings.RingTests.test_huge_parent_is_implicit_and_uncertified) ... ok
+test_modified_generator_distance_and_proof_rejected (test_rings.RingTests.test_modified_generator_distance_and_proof_rejected) ... ok
+test_octacode_exhaustive_distance_and_replay (test_rings.RingTests.test_octacode_exhaustive_distance_and_replay) ... ok
+test_parameter_and_resource_limits (test_rings.RingTests.test_parameter_and_resource_limits) ... ok
+test_union_replays_masks_and_conservative_multiplicity (test_rings.RingTests.test_union_replays_masks_and_conservative_multiplicity) ... ok
+test_all_low_dimension_controls_through_runner (test_root_controls.RootControlTests.test_all_low_dimension_controls_through_runner) ... ok
+test_committed_fixtures_regenerate_exactly (test_root_controls.RootControlTests.test_committed_fixtures_regenerate_exactly) ... ok
+test_e8_respects_pair_budget (test_root_controls.RootControlTests.test_e8_respects_pair_budget) ... ok
+test_wrong_e8_sign_parity_fails_exact_separation (test_root_controls.RootControlTests.test_wrong_e8_sign_parity_fails_exact_separation) ... ok
+test_all_registered_operators_are_grammar_eligible (test_scheduler.SchedulerTests.test_all_registered_operators_are_grammar_eligible) ... ok
+test_cli_search_then_existing_verify_and_no_overwrite (test_scheduler.SchedulerTests.test_cli_search_then_existing_verify_and_no_overwrite) ... ok
+test_count_cutoff_and_offset_are_explicitly_incomplete (test_scheduler.SchedulerTests.test_count_cutoff_and_offset_are_explicitly_incomplete) ... ok
+test_deterministic_grid_and_input_dag_choices (test_scheduler.SchedulerTests.test_deterministic_grid_and_input_dag_choices) ... ok
+test_invalid_specs_and_grammar_allocation_guard (test_scheduler.SchedulerTests.test_invalid_specs_and_grammar_allocation_guard) ... ok
+test_numerical_geometry_is_not_promoted_or_exact_ranked (test_scheduler.SchedulerTests.test_numerical_geometry_is_not_promoted_or_exact_ranked) ... ok
+test_real_workers_exact_receipts_and_dimension_ranking (test_scheduler.SchedulerTests.test_real_workers_exact_receipts_and_dimension_ranking) ... ok
+test_rejected_parameters_do_not_silently_exclude_or_stop_branches (test_scheduler.SchedulerTests.test_rejected_parameters_do_not_silently_exclude_or_stop_branches) ... ok
+test_timeouts_and_receipt_size_limits (test_scheduler.SchedulerTests.test_timeouts_and_receipt_size_limits) ... ok
+test_total_deadline_prevents_further_worker_launches (test_scheduler.SchedulerTests.test_total_deadline_prevents_further_worker_launches) ... ok
+test_invalid_maps_inputs_and_budgets_reject_before_dense_allocation (test_selection.SelectionTests.test_invalid_maps_inputs_and_budgets_reject_before_dense_allocation) ... ok
+test_large_integer_graph_uses_exact_fallback (test_selection.SelectionTests.test_large_integer_graph_uses_exact_fallback) ... ok
+test_matching_cover_bound_matches_exhaustive_small_graphs (test_selection.SelectionTests.test_matching_cover_bound_matches_exhaustive_small_graphs) ... ok
+test_overlap_identity_weighted_metric_and_matrix_word_agree (test_selection.SelectionTests.test_overlap_identity_weighted_metric_and_matrix_word_agree) ... ok
+test_real_exchange_removes_two_and_adds_three_with_exact_geometry (test_selection.SelectionTests.test_real_exchange_removes_two_and_adds_three_with_exact_geometry) ... ok
+test_registered_program_can_compose_coupled_selection (test_selection.SelectionTests.test_registered_program_can_compose_coupled_selection) ... ok
+test_two_different_codes_and_norm_alignment_are_coupled (test_selection.SelectionTests.test_two_different_codes_and_norm_alignment_are_coupled) ... ok
+test_coupled_lift_is_dimension_parametrized_and_checked (test_signed_layers.SignedLayerTests.test_coupled_lift_is_dimension_parametrized_and_checked) ... ok
+test_exact_quadratic_sign_against_high_precision (test_signed_layers.SignedLayerTests.test_exact_quadratic_sign_against_high_precision) ... ok
+test_forged_facts_and_limits (test_signed_layers.SignedLayerTests.test_forged_facts_and_limits) ... ok
+test_h2_switch_is_actual_nonclassical_signed_code (test_signed_layers.SignedLayerTests.test_h2_switch_is_actual_nonclassical_signed_code) ... ok
+test_malformed_switch_and_quadratic_data (test_signed_layers.SignedLayerTests.test_malformed_switch_and_quadratic_data) ... ok
+test_real_1154_nonclassical_seed_exact (test_signed_layers.SignedLayerTests.test_real_1154_nonclassical_seed_exact) ... ok
+test_sqrt3_cap_geometry_and_duplicate_rejection (test_signed_layers.SignedLayerTests.test_sqrt3_cap_geometry_and_duplicate_rejection) ... ok
+test_variable_norms_and_nonantipodal_points (test_signed_layers.SignedLayerTests.test_variable_norms_and_nonantipodal_points) ... ok
+test_corrupt_m_count_proof_and_definition_rejected (test_stabilizers.StabilizerTests.test_corrupt_m_count_proof_and_definition_rejected) ... ok
+test_generated_16_control_and_family_counts (test_stabilizers.StabilizerTests.test_generated_16_control_and_family_counts) ... ok
+test_m_parity_and_budget_validation (test_stabilizers.StabilizerTests.test_m_parity_and_budget_validation) ... ok
+test_registry_dispatch_and_recipe (test_stabilizers.StabilizerTests.test_registry_dispatch_and_recipe) ... ok
+test_small_independent_all_pairs (test_stabilizers.StabilizerTests.test_small_independent_all_pairs) ... ok
+
+----------------------------------------------------------------------
+Ran 130 tests in 33.325s
+
+OK

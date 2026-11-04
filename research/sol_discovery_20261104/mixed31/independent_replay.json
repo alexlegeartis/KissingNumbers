@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "candidates": 178,
+  "scope": "Every subset of this explicit candidate pool requires at least as many distinct old deletions; no bound on other candidates"
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "status": "PASS",
+    "dimension": 43,
+    "points": 2919785,
+    "complete_families": 118,
+    "explicit_tiny_points": 3450,
+    "pure_points": 5,
+    "exact_angle_checks": 6381496,
+    "refined_body_bounds": 22017,
+    "population_scope": "Inherited population identities for complete families; explicit tiny vectors and every angle checked.",
+    "seconds": 6.481374523998966
+  },
+  {
+    "status": "PASS",
+    "dimension": 43,
+    "points": 2919785,
+    "complete_families": 118,
+    "explicit_tiny_points": 3450,
+    "added_points": 8,
+    "deleted_points": 5,
+    "gain": 3,
+    "tiny_pairs_checked": 5949525,
+    "tiny_family_angles_checked": 407100,
+    "tiny_pure_angles_checked": 17250,
+    "complete_family_and_pure_checks": 7621,
+    "refined_body_bounds": 22017,
+    "arithmetic": "40D coefficient metric, checked int64 products, Python integers and isqrt cutoffs",
+    "population_scope": "Inherited complete-family identities and P48n minimum/design inputs; no fresh large-shell enumeration",
+    "points_sha256": "042aaff30943205f8d7ce26a4023fb88bcf7db80862484ad21584a1c864135b6"
+  }
+]

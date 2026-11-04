@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "name": "Exact mixed-representation nonorthogonal Gram gluing control",
+  "description": "Two antipodal pairs have prescribed base angle 60 degrees and opposite rational head heights. Joint PSD checks the relative realization and the output has exact rank three.",
+  "nodes": [
+    {
+      "id": "coordinate_pair",
+      "op": "geometry.integer_code",
+      "params": {"coordinates": [[1, 0], [-1, 0]], "norm_squared": 1}
+    },
+    {
+      "id": "gram_pair",
+      "op": "geometry.gram_code",
+      "params": {"gram": [[1, -1], [-1, 1]]}
+    },
+    {
+      "id": "glued",
+      "op": "gluing.union",
+      "inputs": ["coordinate_pair", "gram_pair"],
+      "params": {
+        "cross_gram": [[[1, 2], [-1, 2]], [[-1, 2], [1, 2]]],
+        "scales": [1, 1],
+        "heads": [[[1, 2]], [[-1, 2]]]
+      }
+    }
+  ],
+  "outputs": ["glued"]
+}

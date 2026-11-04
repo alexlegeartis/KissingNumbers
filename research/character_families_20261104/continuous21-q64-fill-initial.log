@@ -1,0 +1,4 @@
+{'vertices': 1024, 'labels': 21, 'initial': 960, 'directions': [1, 2, 4, 8, 16, 32, 64, 128, 254, 256, 468, 376, 512, 841, 716, 1021, 696, 913, 434, 618, 827]}
+{"restart": 0, "loss": 0.019603328985751452, "max_pair_cosine": 0.5142386772014712, "max_base_cosine": 0.5016502608970843, "iterations": 825, "success": true, "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH", "seconds": 73.41261911199945}
+{"restart": 1, "loss": 0.01876225481266653, "max_pair_cosine": 0.5152946310749615, "max_base_cosine": 0.5014829216665978, "iterations": 754, "success": true, "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH", "seconds": 145.48308436800107}
+{"restart": 2, "loss": 0.01925697527895359, "max_pair_cosine": 0.5152243491087436, "max_base_cosine": 0.5016024886390976, "iterations": 929, "success": true, "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH", "seconds": 228.97161178500028}

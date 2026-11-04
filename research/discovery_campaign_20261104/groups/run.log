@@ -1,0 +1,264 @@
+{
+  "outcome": "No new record. Known Clifford/Barnes-Wall control reconstructed; exact obstruction closes unions/subsets of both real stabilizer sectors.",
+  "random_seed": 20261104,
+  "control_status": "explicit known construction; algebraic family proof plus exact representative checks; not an independent exhaustive all-pairs certificate",
+  "formula_results": [
+    {
+      "dimension": 16,
+      "support_layers": [
+        32,
+        480,
+        2240,
+        3840,
+        2048
+      ],
+      "total_real_stabilizer_vectors": 8640,
+      "one_sector": 4320,
+      "exact_two_sector_independence_number": 4320,
+      "bipartite_conflict_degree": 30
+    },
+    {
+      "dimension": 32,
+      "support_layers": [
+        64,
+        1984,
+        19840,
+        79360,
+        126976,
+        65536
+      ],
+      "total_real_stabilizer_vectors": 293760,
+      "one_sector": 146880,
+      "exact_two_sector_independence_number": 146880,
+      "bipartite_conflict_degree": 62
+    },
+    {
+      "dimension": 64,
+      "support_layers": [
+        128,
+        8064,
+        166656,
+        1428480,
+        5332992,
+        8257536,
+        4194304
+      ],
+      "total_real_stabilizer_vectors": 19388160,
+      "one_sector": 9694080,
+      "exact_two_sector_independence_number": 9694080,
+      "bipartite_conflict_degree": 126
+    }
+  ],
+  "enumerated_dimension": 32,
+  "enumerated_rows": 293760,
+  "support_layer_counts": [
+    64,
+    1984,
+    19840,
+    79360,
+    126976,
+    65536
+  ],
+  "exact_representative_checks": [
+    {
+      "support_dimension": 0,
+      "within_sector_conflicts": 0,
+      "cross_conflicts": 62,
+      "cross_by_support_dimension": {
+        "0": 0,
+        "1": 62,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "formula_lower": 0,
+      "formula_upper": 62
+    },
+    {
+      "support_dimension": 1,
+      "within_sector_conflicts": 0,
+      "cross_conflicts": 62,
+      "cross_by_support_dimension": {
+        "0": 2,
+        "1": 0,
+        "2": 60,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "formula_lower": 2,
+      "formula_upper": 60
+    },
+    {
+      "support_dimension": 2,
+      "within_sector_conflicts": 0,
+      "cross_conflicts": 62,
+      "cross_by_support_dimension": {
+        "0": 0,
+        "1": 6,
+        "2": 0,
+        "3": 56,
+        "4": 0,
+        "5": 0
+      },
+      "formula_lower": 6,
+      "formula_upper": 56
+    },
+    {
+      "support_dimension": 3,
+      "within_sector_conflicts": 0,
+      "cross_conflicts": 62,
+      "cross_by_support_dimension": {
+        "0": 0,
+        "1": 0,
+        "2": 14,
+        "3": 0,
+        "4": 48,
+        "5": 0
+      },
+      "formula_lower": 14,
+      "formula_upper": 48
+    },
+    {
+      "support_dimension": 4,
+      "within_sector_conflicts": 0,
+      "cross_conflicts": 62,
+      "cross_by_support_dimension": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 30,
+        "4": 0,
+        "5": 32
+      },
+      "formula_lower": 30,
+      "formula_upper": 32
+    },
+    {
+      "support_dimension": 5,
+      "within_sector_conflicts": 0,
+      "cross_conflicts": 62,
+      "cross_by_support_dimension": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 62,
+        "5": 0
+      },
+      "formula_lower": 62,
+      "formula_upper": 0
+    }
+  ],
+  "coordinate_section_samples": [
+    {
+      "dimension": 25,
+      "sampled_coordinate_sets": 32,
+      "best_raw_stabilizer_pool": 19266,
+      "removed_coordinates": [
+        0,
+        3,
+        4,
+        12,
+        25,
+        26,
+        29
+      ],
+      "valid_kissing_subset_upper_bound": 19266
+    },
+    {
+      "dimension": 26,
+      "sampled_coordinate_sets": 32,
+      "best_raw_stabilizer_pool": 23688,
+      "removed_coordinates": [
+        7,
+        9,
+        10,
+        19,
+        23,
+        26
+      ],
+      "valid_kissing_subset_upper_bound": 23688
+    },
+    {
+      "dimension": 27,
+      "sampled_coordinate_sets": 32,
+      "best_raw_stabilizer_pool": 34578,
+      "removed_coordinates": [
+        5,
+        10,
+        18,
+        20,
+        29
+      ],
+      "valid_kissing_subset_upper_bound": 34578
+    },
+    {
+      "dimension": 28,
+      "sampled_coordinate_sets": 32,
+      "best_raw_stabilizer_pool": 51408,
+      "removed_coordinates": [
+        0,
+        1,
+        8,
+        9
+      ],
+      "valid_kissing_subset_upper_bound": 51408
+    },
+    {
+      "dimension": 29,
+      "sampled_coordinate_sets": 32,
+      "best_raw_stabilizer_pool": 61506,
+      "removed_coordinates": [
+        1,
+        5,
+        7
+      ],
+      "valid_kissing_subset_upper_bound": 61506
+    },
+    {
+      "dimension": 30,
+      "sampled_coordinate_sets": 32,
+      "best_raw_stabilizer_pool": 91800,
+      "removed_coordinates": [
+        11,
+        23
+      ],
+      "valid_kissing_subset_upper_bound": 91800
+    },
+    {
+      "dimension": 31,
+      "sampled_coordinate_sets": 32,
+      "best_raw_stabilizer_pool": 142290,
+      "removed_coordinates": [
+        25
+      ],
+      "valid_kissing_subset_upper_bound": 142290
+    }
+  ],
+  "control_file": "bw32_reconstructed_control.npz",
+  "control_sha256": "c90e03d8440fa742d8a024c43fa3ab1f06c3d14ea1891cd96e57f195575912da",
+  "verified_repository_baselines": {
+    "25": 197584,
+    "26": 201136,
+    "27": 209807,
+    "28": 221988,
+    "29": 231697,
+    "30": 247972,
+    "31": 251188,
+    "32": 352800,
+    "64": 335496064
+  },
+  "sources": [
+    "https://arxiv.org/abs/math/0207186",
+    "https://arxiv.org/abs/math/0001038",
+    "https://arxiv.org/html/2404.17677v2",
+    "README.md verified-baseline table, retrieved 2026-11-04"
+  ],
+  "scope": "Real stabilizer states only. Does not bound arbitrary Clifford orbits, arbitrary finite-group representations, deformed states, or kissing numbers.",
+  "wall_seconds": 1.6421102930003144,
+  "peak_rss_kib": 60144,
+  "python": "3.12.14",
+  "numpy": "2.3.5"
+}

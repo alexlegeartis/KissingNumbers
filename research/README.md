@@ -1,9 +1,25 @@
 # Research campaigns
 
-These packages preserve searches, exact certificates for restricted families,
-and checks of published constructions. None of these campaigns produced a new
-kissing-number lower bound. The registered constructions remain in
+These packages preserve construction searches, exact certificates for restricted
+families, and checks of published constructions. The November 4 algebraic
+campaign improves 27D and 31D; the 43D packages record a separate discovery and
+its reproduction by the engine. The earlier lower-dimensional campaigns below
+produced no new kissing-number lower bound. Registered constructions remain in
 [`../verifications/`](../verifications/) and [`../RESULTS.md`](../RESULTS.md).
+
+## Certified construction improvements
+
+| Package | Outcome and scope |
+| --- | --- |
+| [Algebraic completion](algebraic_switches_20261104/) | 209,825 in 27D (+18) and 251,196 in 31D (+8). Complete explicit coordinates, every unordered pair and independent direct-integer changed pairs; no lattice-minimum or unenumerated-population input. |
+| [43D original discovery](43d_head_exchange_20261104/) | 2,919,785 points (+3) from finite body/head exchanges. Both exact representations retain the documented P48n and population inputs. |
+| [High-dimensional engine campaign](highdim_characters_20261104/) | Independently reproduces all three 43D exchanges through a generic operator; also records negative 33–35D, 39D and 40D searches. Seeded discovery replay, distinct from held-out search. |
+
+The source comparisons are dated and limited to the checked sources. Exact
+geometry does not certify worldwide priority. Historical certificates and
+campaigns are retained unchanged.
+
+## Lower-dimensional campaigns and controls
 
 | Package | Main outcome |
 | --- | --- |
@@ -14,6 +30,19 @@ kissing-number lower bound. The registered constructions remain in
 | [19D and 21D campaign](compute19_21_20261104/) | Independent reconstruction of Li's 12460- and 31560-point configurations and unsuccessful broader searches. |
 | [Structured 21D campaign](attack21_structured_20261104/) | Verified recovery, nonlinear examples, exact local trade barriers, and rational bounds conditional on retaining specified holes. |
 | [21D upper-bound certificate](upper21_certificate_20261104/) | An exact interval of 960–971 per component in the full line-profile family, plus an exact feasible pair-moment relaxation at 971. |
+| [Nonclassical 13D seeds](coupled13/) | Exact 1,154-point controls and coupled searches; no 1,155-point witness. |
+| [Partial-orbit 17D campaign](mixed_tier17_20261104/) | Coupled flat-coset, tier and equator searches, including asymmetric height choices; scoped negative certificates and no new bound. |
+| [Character-family campaign](character_families_20261104/) | A robust rational 19D 12,460-point control and coupled 17D/19D/21D searches, without improvement. |
+| [Exact orbit controls](orbit_controls_20261104/) | Known 17D, 18D and 22–24D configurations constructed and independently replayed through the engine. |
+| [Unified discovery campaign](discovery_campaign_20261104/) | Archived group/ring/support searches and source reviews; no new bound in that campaign. |
+| [Construction-search continuation](sol_discovery_20261104/) | Separate 1–24 held-out measurement and finite 13D/14D/31D search pools; no improvement in this earlier continuation. |
+
+The integrated current-source controls cover 19 of the 24 target dimensions.
+The separate held-out catalogue matches ten targets using formula controls
+and support search; actual support search matches 4D, 7D, 8D and 9D. Replaying
+a known configuration is not credited as discovering a new record. See the
+[coverage matrix](discovery_campaign_20261104/coverage_1_24/) and
+[construction-search contract](../discovery/docs/CONSTRUCTION_SEARCH.md).
 
 The package READMEs state each result's scope and attribution. An exclusion in a
 fixed family, a solver timeout, or an invalid numerical candidate does not bound

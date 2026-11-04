@@ -1,0 +1,155 @@
+{
+  "mode": "isometries",
+  "pool_cardinality": 6072,
+  "baseline_cardinality": 1932,
+  "cohort_descriptions": [
+    {
+      "normals": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "normals": [
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "normals": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "cohort_counts": {
+    "0": 1932,
+    "1": 1380,
+    "2": 1380,
+    "3": 1380
+  },
+  "pairs_checked": 18431556,
+  "conflict_edges": 347646,
+  "baseline_candidate_edges": 181792,
+  "candidate_candidate_edges": 165854,
+  "blocker_degree_histogram": {
+    "35": 200,
+    "38": 704,
+    "42": 1168,
+    "46": 432,
+    "26": 10,
+    "44": 248,
+    "40": 80,
+    "32": 64,
+    "62": 40,
+    "57": 6,
+    "41": 40,
+    "37": 36,
+    "39": 48,
+    "53": 64,
+    "48": 128,
+    "52": 112,
+    "54": 128,
+    "50": 128,
+    "64": 32,
+    "69": 8,
+    "33": 24,
+    "58": 24,
+    "47": 80,
+    "49": 128,
+    "60": 112,
+    "43": 16,
+    "51": 32,
+    "61": 16,
+    "25": 2,
+    "56": 2,
+    "70": 4,
+    "45": 24
+  },
+  "norm_squared": 5000,
+  "pool_data_sha256": "a1b6934b4fbc08a1e4dfedeb0908ab6e5e1723028e9c2697b35ef982e67d851f",
+  "baseline_verification": {
+    "status": "exact",
+    "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+    "details": {
+      "dimension": 14,
+      "rank_exact": 14,
+      "ambient_dimension": 14,
+      "cardinality": 1932,
+      "norm_squared": 8,
+      "max_inner_product": 4,
+      "pairs_checked": 1865346,
+      "facts": {
+        "dimension": 14,
+        "rank_exact": 14,
+        "ambient_dimension": 14,
+        "cardinality": 1932,
+        "norm_squared": 8,
+        "max_inner_product": 4,
+        "pairs_checked": 1865346
+      },
+      "data_sha256": "0050b04391ae419101aefe65c2b4f545bf2cc92a19302070447c35e196de40b5",
+      "integer_backend": "int64 proven overflow-safe",
+      "rank_scalar_work": 380968
+    }
+  },
+  "all_accessory_points_jointly_removable": true
+}

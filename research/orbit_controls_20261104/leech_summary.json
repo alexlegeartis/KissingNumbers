@@ -1,0 +1,52 @@
+{
+  "facts": {
+    "dimension": 24,
+    "rank_exact": 24,
+    "ambient_dimension": 24,
+    "cardinality": 196560,
+    "norm_squared": 32,
+    "max_inner_product": 16,
+    "finite_group_proved": true
+  },
+  "verification": {
+    "status": "exact",
+    "method": "exact orthogonal action closure, transitivity, seed separation and rational rank",
+    "details": {
+      "facts": {
+        "dimension": 24,
+        "rank_exact": 24,
+        "ambient_dimension": 24,
+        "cardinality": 196560,
+        "norm_squared": 32,
+        "max_inner_product": 16,
+        "finite_group_proved": true
+      },
+      "seed_pairs_checked": 196559,
+      "unordered_pairs_covered": 19317818520,
+      "generator_images_checked": 786240,
+      "rank_scalar_work": 22848,
+      "data_sha256": "3fade79f114755e721e97971a5e5920dbee60a4b110b9b4efd73aae08841878f",
+      "proof": "Any pair can be moved to a seed pair by an inverse word in the exactly orthogonal generators. Closure and reachability are checked explicitly.",
+      "finite_group_scope": "The generated matrix group is finite if the orbit spans the whole ambient space; no abstract group order or irreducibility is claimed."
+    }
+  },
+  "budget": {
+    "max_materialized_points": 250000,
+    "max_pairs": 250000,
+    "max_codewords": 262144,
+    "max_orbit_points": 250000,
+    "max_trials": 200,
+    "solver_seconds": 30,
+    "max_dgls_words": 16777216,
+    "max_dimension": 256,
+    "max_nodes": 100,
+    "max_gram_entries": 2000000,
+    "max_rank_work": 1000000000,
+    "max_rational_bits": 4096
+  },
+  "program": "leech_program.json",
+  "artifact": "leech_artifact.json",
+  "seconds": 20.625277742000435,
+  "new_sota": false,
+  "scope": "Known Leech control from generated Golay automorphism and exact sextet actions; not held-out discovery"
+}

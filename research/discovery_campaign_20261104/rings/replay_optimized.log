@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "modules_total": 832,
+  "modules_capacity_pruned": 315,
+  "modules_examined": 517,
+  "classification": {
+    "every_extra_coordinate_value": 417,
+    "every_scalar_sum_extension": 91,
+    "unresolved": 7,
+    "every_linear_extension": 2
+  },
+  "unresolved": [
+    [
+      23,
+      4,
+      2
+    ],
+    [
+      23,
+      4,
+      3
+    ],
+    [
+      23,
+      4,
+      4
+    ],
+    [
+      23,
+      4,
+      5
+    ],
+    [
+      23,
+      8,
+      2
+    ],
+    [
+      23,
+      8,
+      4
+    ],
+    [
+      3,
+      16,
+      0
+    ]
+  ],
+  "elapsed_seconds": 0.10589326000035726,
+  "checker_sha256": "0f933f9698bc0e93c825b826eeef48811535e673e418097295b5e0c2b28f460e"
+}

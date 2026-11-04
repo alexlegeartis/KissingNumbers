@@ -1,0 +1,20 @@
+[
+  {
+    "seed": 0,
+    "projective_size": 1120,
+    "projective_status": "closed_numerically",
+    "seconds": 0.3477523960000326,
+    "raw_prefix_size": 500,
+    "raw_status": "limit_reached",
+    "seed_to_generated_vector_max_cosine": 0.3333333333333338
+  },
+  {
+    "seed": 1,
+    "projective_size": 14560,
+    "projective_status": "closed_numerically",
+    "seconds": 3.2398401539994666,
+    "raw_prefix_size": 500,
+    "raw_status": "limit_reached",
+    "seed_to_generated_vector_max_cosine": 0.6666666666666669
+  }
+]

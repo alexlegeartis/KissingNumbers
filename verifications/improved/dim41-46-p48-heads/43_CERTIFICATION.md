@@ -1,21 +1,23 @@
-# Dimension 43: current certificate and historical gap
+# Dimension43: current certificate and historical gap
 
-**28 October 2026:** the registry now contains **2,919,782** points.
-The continuation deletes 46 points from the preceding 3,408-point tiny layer
-and inserts 85, for a gain of **39**. The current 3,447 explicit tiny points
-are in `partial43/explicit_points_43.npz`; the predecessor and exact delta
-are retained in [continuation43/](continuation43/README.md).
+**4 November2026:** the registry contains **2,919,785** points, a gain of three
+over2,919,782. Three finite exchanges remove five old tiny points and add eight.
+The current3450 explicit tiny points are in `partial43/explicit_points_43.npz`.
 
-The 118 complete families and five pure heads retain their previous inputs.
-Both `partial43/verify.py` and `continuation43/verify_coordinates.py` pass
-6,370,783 angle conditions and independently replay 22,001 short-difference
-refinements. The second checker uses the rank-40 coefficient metric and
-integer square-root cutoffs. Complete-family populations still inherit the
-modular identities and published P48n minimum/design inputs; not every large
-shell is freshly enumerated. The exact coordinate delta needs no optimizer.
+The generic `search.body_head_exchange` operator generated all three exchanges
+without a supplied delta or expected count. Its final point set equals the
+separate43D discovery task's result; discovery attribution remains distinct
+from this seeded engine run.
 
-The historical missing 2,911,990-point target remains unnecessary for this
-construction and its 2,919,743-point predecessor.
+Both the ambient48-coordinate verifier and independent40-dimensional
+coefficient verifier pass. The118 complete families, five pure heads,
+complete-family population identities and published P48n minimum/design inputs
+retain their prior scope. Large shells are not freshly enumerated.
+
+The portable delta is composed against the3408-point predecessor in
+`continuation43/previous_points.npz`. The former2,919,782-point certificate,
+its delta and reports are archived in `continuation43/history_2919782/`.
+Its previous certification note is preserved there byte for byte.
 
 ## Earlier checkpoints
 

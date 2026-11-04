@@ -1,0 +1,10 @@
+{
+  "generated_norm36_differences": 10032,
+  "sample_core_points": 4096,
+  "sample_and_B_survivors": 123,
+  "full_core_and_B_survivors": 0,
+  "C_blocker_counts": [],
+  "seconds": 0.938137466999251,
+  "new_sota": false,
+  "scope": "All-core/B compatibility exact under explicit binary32 accumulation bounds. Candidate/C and candidate/candidate assembly still required."
+}

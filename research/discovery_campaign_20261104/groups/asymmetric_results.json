@@ -1,0 +1,5458 @@
+{
+  "outcome": "No SOTA unless a fully screened admissible result explicitly says so.",
+  "random_seed": 20261104,
+  "gradient_finite_difference_error": 1.2778569383658938e-07,
+  "baselines": {
+    "5": 40,
+    "6": 72,
+    "7": 126
+  },
+  "results": [
+    {
+      "dimension": 5,
+      "group_order": 5,
+      "seed_orbits": 8,
+      "fixed_pole": true,
+      "target_cardinality": 41,
+      "frequencies": [
+        1,
+        2
+      ],
+      "trials_completed": 160,
+      "seconds": 1.2929326569997102,
+      "best_loss": 0.013841584527713478,
+      "best_max_cosine": 0.5239052744655572,
+      "admissible_numerically": false,
+      "file": "asym_d5_c5_k8_pole1_f1,2.npz",
+      "trials": [
+        {
+          "trial": 0,
+          "loss": 0.028445120093078414,
+          "max_cosine_full": 0.5465690438111306,
+          "iterations": 112,
+          "status": 0
+        },
+        {
+          "trial": 1,
+          "loss": 0.028445120093080225,
+          "max_cosine_full": 0.5465690500840125,
+          "iterations": 47,
+          "status": 0
+        },
+        {
+          "trial": 2,
+          "loss": 0.028445120093077585,
+          "max_cosine_full": 0.5465690445260208,
+          "iterations": 71,
+          "status": 0
+        },
+        {
+          "trial": 3,
+          "loss": 0.054261247582942325,
+          "max_cosine_full": 0.582515422133568,
+          "iterations": 67,
+          "status": 0
+        },
+        {
+          "trial": 4,
+          "loss": 0.013841584527715148,
+          "max_cosine_full": 0.5239052812996968,
+          "iterations": 139,
+          "status": 0
+        },
+        {
+          "trial": 5,
+          "loss": 0.013841584527713821,
+          "max_cosine_full": 0.5239052731347018,
+          "iterations": 47,
+          "status": 0
+        },
+        {
+          "trial": 6,
+          "loss": 0.013841584527713856,
+          "max_cosine_full": 0.5239052780004791,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 7,
+          "loss": 0.05067101013983522,
+          "max_cosine_full": 0.5502192853610358,
+          "iterations": 78,
+          "status": 0
+        },
+        {
+          "trial": 8,
+          "loss": 0.013841584527714128,
+          "max_cosine_full": 0.5239052739647717,
+          "iterations": 120,
+          "status": 0
+        },
+        {
+          "trial": 9,
+          "loss": 0.013841584527713956,
+          "max_cosine_full": 0.5239052696980869,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 10,
+          "loss": 0.013841584527714428,
+          "max_cosine_full": 0.5239052820566529,
+          "iterations": 51,
+          "status": 0
+        },
+        {
+          "trial": 11,
+          "loss": 0.04131026108439865,
+          "max_cosine_full": 0.5464127240144555,
+          "iterations": 73,
+          "status": 0
+        },
+        {
+          "trial": 12,
+          "loss": 0.013841584527714565,
+          "max_cosine_full": 0.5239052814989887,
+          "iterations": 128,
+          "status": 0
+        },
+        {
+          "trial": 13,
+          "loss": 0.013841584527714567,
+          "max_cosine_full": 0.523905280894063,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 14,
+          "loss": 0.013841584527715306,
+          "max_cosine_full": 0.5239052738622609,
+          "iterations": 51,
+          "status": 0
+        },
+        {
+          "trial": 15,
+          "loss": 0.06428562576372082,
+          "max_cosine_full": 0.557031708350812,
+          "iterations": 83,
+          "status": 0
+        },
+        {
+          "trial": 16,
+          "loss": 0.053743084349389285,
+          "max_cosine_full": 0.5617054813327789,
+          "iterations": 108,
+          "status": 0
+        },
+        {
+          "trial": 17,
+          "loss": 0.013841584527714975,
+          "max_cosine_full": 0.523905283534479,
+          "iterations": 41,
+          "status": 0
+        },
+        {
+          "trial": 18,
+          "loss": 0.013841584527714031,
+          "max_cosine_full": 0.5239052808781273,
+          "iterations": 67,
+          "status": 0
+        },
+        {
+          "trial": 19,
+          "loss": 0.013841584527714227,
+          "max_cosine_full": 0.523905276939849,
+          "iterations": 96,
+          "status": 0
+        },
+        {
+          "trial": 20,
+          "loss": 0.01384158452771396,
+          "max_cosine_full": 0.5239052713855541,
+          "iterations": 76,
+          "status": 0
+        },
+        {
+          "trial": 21,
+          "loss": 0.01384158452771395,
+          "max_cosine_full": 0.5239052750151131,
+          "iterations": 41,
+          "status": 0
+        },
+        {
+          "trial": 22,
+          "loss": 0.01384158452771468,
+          "max_cosine_full": 0.5239052791125305,
+          "iterations": 57,
+          "status": 0
+        },
+        {
+          "trial": 23,
+          "loss": 0.013841584527713478,
+          "max_cosine_full": 0.5239052744655572,
+          "iterations": 75,
+          "status": 0
+        },
+        {
+          "trial": 24,
+          "loss": 0.013841584527713665,
+          "max_cosine_full": 0.5239052743727146,
+          "iterations": 74,
+          "status": 0
+        },
+        {
+          "trial": 25,
+          "loss": 0.013841584527714572,
+          "max_cosine_full": 0.5239052715444705,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 26,
+          "loss": 0.013841584527713733,
+          "max_cosine_full": 0.5239052710228378,
+          "iterations": 47,
+          "status": 0
+        },
+        {
+          "trial": 27,
+          "loss": 0.013841584527714704,
+          "max_cosine_full": 0.5239052689029832,
+          "iterations": 77,
+          "status": 0
+        },
+        {
+          "trial": 28,
+          "loss": 0.013841584527713736,
+          "max_cosine_full": 0.5239052753775176,
+          "iterations": 167,
+          "status": 0
+        },
+        {
+          "trial": 29,
+          "loss": 0.013841584527714846,
+          "max_cosine_full": 0.5239052714737602,
+          "iterations": 40,
+          "status": 0
+        },
+        {
+          "trial": 30,
+          "loss": 0.013841584527713797,
+          "max_cosine_full": 0.5239052754391401,
+          "iterations": 63,
+          "status": 0
+        },
+        {
+          "trial": 31,
+          "loss": 0.029120709442617094,
+          "max_cosine_full": 0.536825769068786,
+          "iterations": 90,
+          "status": 0
+        },
+        {
+          "trial": 32,
+          "loss": 0.025488082727498976,
+          "max_cosine_full": 0.5534073438968757,
+          "iterations": 73,
+          "status": 0
+        },
+        {
+          "trial": 33,
+          "loss": 0.013841584527713544,
+          "max_cosine_full": 0.5239052774746925,
+          "iterations": 44,
+          "status": 0
+        },
+        {
+          "trial": 34,
+          "loss": 0.013841584527715858,
+          "max_cosine_full": 0.5239052639344026,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 35,
+          "loss": 0.013841584527713797,
+          "max_cosine_full": 0.5239052748590064,
+          "iterations": 114,
+          "status": 0
+        },
+        {
+          "trial": 36,
+          "loss": 0.029120709442618176,
+          "max_cosine_full": 0.5368257719501351,
+          "iterations": 80,
+          "status": 0
+        },
+        {
+          "trial": 37,
+          "loss": 0.013841584527713812,
+          "max_cosine_full": 0.5239052751657653,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 38,
+          "loss": 0.013841584527719933,
+          "max_cosine_full": 0.5239052780840048,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 39,
+          "loss": 0.031217161750930523,
+          "max_cosine_full": 0.5467996826164468,
+          "iterations": 116,
+          "status": 0
+        },
+        {
+          "trial": 40,
+          "loss": 0.03300718238988352,
+          "max_cosine_full": 0.5493516354355151,
+          "iterations": 86,
+          "status": 0
+        },
+        {
+          "trial": 41,
+          "loss": 0.013841584527714806,
+          "max_cosine_full": 0.5239052662220877,
+          "iterations": 40,
+          "status": 0
+        },
+        {
+          "trial": 42,
+          "loss": 0.01384158452771509,
+          "max_cosine_full": 0.5239052847399787,
+          "iterations": 53,
+          "status": 0
+        },
+        {
+          "trial": 43,
+          "loss": 0.02844512009307724,
+          "max_cosine_full": 0.5465690531346425,
+          "iterations": 139,
+          "status": 0
+        },
+        {
+          "trial": 44,
+          "loss": 0.041310261084399016,
+          "max_cosine_full": 0.5464127190828472,
+          "iterations": 98,
+          "status": 0
+        },
+        {
+          "trial": 45,
+          "loss": 0.013841584527714255,
+          "max_cosine_full": 0.523905276095311,
+          "iterations": 49,
+          "status": 0
+        },
+        {
+          "trial": 46,
+          "loss": 0.013841584527713753,
+          "max_cosine_full": 0.523905275986937,
+          "iterations": 54,
+          "status": 0
+        },
+        {
+          "trial": 47,
+          "loss": 0.013841584527714225,
+          "max_cosine_full": 0.5239052761297582,
+          "iterations": 129,
+          "status": 0
+        },
+        {
+          "trial": 48,
+          "loss": 0.06428562576372214,
+          "max_cosine_full": 0.5570317196372766,
+          "iterations": 73,
+          "status": 0
+        },
+        {
+          "trial": 49,
+          "loss": 0.013841584527713934,
+          "max_cosine_full": 0.5239052722306243,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 50,
+          "loss": 0.013841584527713885,
+          "max_cosine_full": 0.5239052735406161,
+          "iterations": 63,
+          "status": 0
+        },
+        {
+          "trial": 51,
+          "loss": 0.013841584527713962,
+          "max_cosine_full": 0.5239052765690627,
+          "iterations": 124,
+          "status": 0
+        },
+        {
+          "trial": 52,
+          "loss": 0.01384158452771416,
+          "max_cosine_full": 0.5239052783802629,
+          "iterations": 144,
+          "status": 0
+        },
+        {
+          "trial": 53,
+          "loss": 0.013841584527714291,
+          "max_cosine_full": 0.5239052747155661,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 54,
+          "loss": 0.013841584527713769,
+          "max_cosine_full": 0.5239052760427668,
+          "iterations": 54,
+          "status": 0
+        },
+        {
+          "trial": 55,
+          "loss": 0.0542612475829438,
+          "max_cosine_full": 0.5825154230591706,
+          "iterations": 86,
+          "status": 0
+        },
+        {
+          "trial": 56,
+          "loss": 0.013841584527714144,
+          "max_cosine_full": 0.5239052720691837,
+          "iterations": 131,
+          "status": 0
+        },
+        {
+          "trial": 57,
+          "loss": 0.013841584527716286,
+          "max_cosine_full": 0.5239052866271304,
+          "iterations": 36,
+          "status": 0
+        },
+        {
+          "trial": 58,
+          "loss": 0.013841584527715226,
+          "max_cosine_full": 0.5239052734529773,
+          "iterations": 56,
+          "status": 0
+        },
+        {
+          "trial": 59,
+          "loss": 0.013841584527714267,
+          "max_cosine_full": 0.523905267016522,
+          "iterations": 96,
+          "status": 0
+        },
+        {
+          "trial": 60,
+          "loss": 0.05067101013983571,
+          "max_cosine_full": 0.5502192855212946,
+          "iterations": 74,
+          "status": 0
+        },
+        {
+          "trial": 61,
+          "loss": 0.01384158452771377,
+          "max_cosine_full": 0.523905277910091,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 62,
+          "loss": 0.013841584527714734,
+          "max_cosine_full": 0.5239052670025042,
+          "iterations": 50,
+          "status": 0
+        },
+        {
+          "trial": 63,
+          "loss": 0.013841584527713792,
+          "max_cosine_full": 0.5239052760087755,
+          "iterations": 82,
+          "status": 0
+        },
+        {
+          "trial": 64,
+          "loss": 0.08500231828727027,
+          "max_cosine_full": 0.5623942919417293,
+          "iterations": 100,
+          "status": 0
+        },
+        {
+          "trial": 65,
+          "loss": 0.013841584527713875,
+          "max_cosine_full": 0.5239052740650202,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 66,
+          "loss": 0.013841584527713575,
+          "max_cosine_full": 0.523905276678792,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 67,
+          "loss": 0.013841584527715632,
+          "max_cosine_full": 0.5239052839313317,
+          "iterations": 98,
+          "status": 0
+        },
+        {
+          "trial": 68,
+          "loss": 0.0432231973479628,
+          "max_cosine_full": 0.5455523069286472,
+          "iterations": 76,
+          "status": 0
+        },
+        {
+          "trial": 69,
+          "loss": 0.01384158452771374,
+          "max_cosine_full": 0.5239052743894642,
+          "iterations": 49,
+          "status": 0
+        },
+        {
+          "trial": 70,
+          "loss": 0.01384158452771447,
+          "max_cosine_full": 0.523905277517006,
+          "iterations": 50,
+          "status": 0
+        },
+        {
+          "trial": 71,
+          "loss": 0.013841584527714125,
+          "max_cosine_full": 0.5239052784376153,
+          "iterations": 121,
+          "status": 0
+        },
+        {
+          "trial": 72,
+          "loss": 0.02844512009307733,
+          "max_cosine_full": 0.5465690435626879,
+          "iterations": 143,
+          "status": 0
+        },
+        {
+          "trial": 73,
+          "loss": 0.01384158452771349,
+          "max_cosine_full": 0.523905277284644,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 74,
+          "loss": 0.01384158452771437,
+          "max_cosine_full": 0.5239052813057378,
+          "iterations": 56,
+          "status": 0
+        },
+        {
+          "trial": 75,
+          "loss": 0.028445120093077723,
+          "max_cosine_full": 0.5465690491934792,
+          "iterations": 110,
+          "status": 0
+        },
+        {
+          "trial": 76,
+          "loss": 0.047844075441342865,
+          "max_cosine_full": 0.5621313643684368,
+          "iterations": 107,
+          "status": 0
+        },
+        {
+          "trial": 77,
+          "loss": 0.013841584527713488,
+          "max_cosine_full": 0.5239052771507067,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 78,
+          "loss": 0.01384158452771379,
+          "max_cosine_full": 0.5239052720260501,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 79,
+          "loss": 0.04322319734796365,
+          "max_cosine_full": 0.5455523156468607,
+          "iterations": 98,
+          "status": 0
+        },
+        {
+          "trial": 80,
+          "loss": 0.013841584527714867,
+          "max_cosine_full": 0.5239052727703953,
+          "iterations": 69,
+          "status": 0
+        },
+        {
+          "trial": 81,
+          "loss": 0.013841584527713571,
+          "max_cosine_full": 0.5239052756661616,
+          "iterations": 41,
+          "status": 0
+        },
+        {
+          "trial": 82,
+          "loss": 0.01384158452771366,
+          "max_cosine_full": 0.5239052771321353,
+          "iterations": 63,
+          "status": 0
+        },
+        {
+          "trial": 83,
+          "loss": 0.043223197347961755,
+          "max_cosine_full": 0.5455523129170821,
+          "iterations": 83,
+          "status": 0
+        },
+        {
+          "trial": 84,
+          "loss": 0.013841584527713913,
+          "max_cosine_full": 0.5239052787951715,
+          "iterations": 111,
+          "status": 0
+        },
+        {
+          "trial": 85,
+          "loss": 0.013841584527714883,
+          "max_cosine_full": 0.5239052778987514,
+          "iterations": 40,
+          "status": 0
+        },
+        {
+          "trial": 86,
+          "loss": 0.013841584527714206,
+          "max_cosine_full": 0.5239052771870614,
+          "iterations": 55,
+          "status": 0
+        },
+        {
+          "trial": 87,
+          "loss": 0.06080530047298184,
+          "max_cosine_full": 0.5625966646851137,
+          "iterations": 79,
+          "status": 0
+        },
+        {
+          "trial": 88,
+          "loss": 0.013841584527713556,
+          "max_cosine_full": 0.5239052767486775,
+          "iterations": 116,
+          "status": 0
+        },
+        {
+          "trial": 89,
+          "loss": 0.013841584527713838,
+          "max_cosine_full": 0.5239052726177638,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 90,
+          "loss": 0.013841584527713646,
+          "max_cosine_full": 0.5239052739799831,
+          "iterations": 56,
+          "status": 0
+        },
+        {
+          "trial": 91,
+          "loss": 0.028445120093077987,
+          "max_cosine_full": 0.5465690499407839,
+          "iterations": 131,
+          "status": 0
+        },
+        {
+          "trial": 92,
+          "loss": 0.013841584527713864,
+          "max_cosine_full": 0.5239052738972945,
+          "iterations": 99,
+          "status": 0
+        },
+        {
+          "trial": 93,
+          "loss": 0.013841584527714149,
+          "max_cosine_full": 0.523905272294678,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 94,
+          "loss": 0.013841584527714994,
+          "max_cosine_full": 0.5239052864226447,
+          "iterations": 49,
+          "status": 0
+        },
+        {
+          "trial": 95,
+          "loss": 0.028445120093078025,
+          "max_cosine_full": 0.5465690497081928,
+          "iterations": 114,
+          "status": 0
+        },
+        {
+          "trial": 96,
+          "loss": 0.07903330541145882,
+          "max_cosine_full": 0.5718123387579167,
+          "iterations": 86,
+          "status": 0
+        },
+        {
+          "trial": 97,
+          "loss": 0.013841584527715065,
+          "max_cosine_full": 0.5239052727831495,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 98,
+          "loss": 0.013841584527714031,
+          "max_cosine_full": 0.5239052767024798,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 99,
+          "loss": 0.013841584527713953,
+          "max_cosine_full": 0.5239052729610277,
+          "iterations": 80,
+          "status": 0
+        },
+        {
+          "trial": 100,
+          "loss": 0.029120709442617358,
+          "max_cosine_full": 0.5368257675739171,
+          "iterations": 67,
+          "status": 0
+        },
+        {
+          "trial": 101,
+          "loss": 0.013841584527713793,
+          "max_cosine_full": 0.5239052776606702,
+          "iterations": 44,
+          "status": 0
+        },
+        {
+          "trial": 102,
+          "loss": 0.013841584527713611,
+          "max_cosine_full": 0.5239052756393884,
+          "iterations": 58,
+          "status": 0
+        },
+        {
+          "trial": 103,
+          "loss": 0.01384158452771368,
+          "max_cosine_full": 0.523905277106874,
+          "iterations": 84,
+          "status": 0
+        },
+        {
+          "trial": 104,
+          "loss": 0.05639595698423196,
+          "max_cosine_full": 0.5700380979813953,
+          "iterations": 112,
+          "status": 0
+        },
+        {
+          "trial": 105,
+          "loss": 0.013841584527713831,
+          "max_cosine_full": 0.5239052765466559,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 106,
+          "loss": 0.013841584527713568,
+          "max_cosine_full": 0.5239052737264194,
+          "iterations": 53,
+          "status": 0
+        },
+        {
+          "trial": 107,
+          "loss": 0.07449116968040195,
+          "max_cosine_full": 0.5697053991232709,
+          "iterations": 100,
+          "status": 0
+        },
+        {
+          "trial": 108,
+          "loss": 0.01384158452771374,
+          "max_cosine_full": 0.5239052760976813,
+          "iterations": 90,
+          "status": 0
+        },
+        {
+          "trial": 109,
+          "loss": 0.013841584527714385,
+          "max_cosine_full": 0.5239052812417228,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 110,
+          "loss": 0.013841584527713809,
+          "max_cosine_full": 0.5239052747518704,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 111,
+          "loss": 0.031681766678147115,
+          "max_cosine_full": 0.5387161202263321,
+          "iterations": 87,
+          "status": 0
+        },
+        {
+          "trial": 112,
+          "loss": 0.01384158452771402,
+          "max_cosine_full": 0.523905279818211,
+          "iterations": 101,
+          "status": 0
+        },
+        {
+          "trial": 113,
+          "loss": 0.013841584527713667,
+          "max_cosine_full": 0.5239052746332865,
+          "iterations": 48,
+          "status": 0
+        },
+        {
+          "trial": 114,
+          "loss": 0.01384158452771401,
+          "max_cosine_full": 0.5239052736775806,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 115,
+          "loss": 0.02548808272749879,
+          "max_cosine_full": 0.553407339807639,
+          "iterations": 68,
+          "status": 0
+        },
+        {
+          "trial": 116,
+          "loss": 0.013841584527713979,
+          "max_cosine_full": 0.5239052821326474,
+          "iterations": 84,
+          "status": 0
+        },
+        {
+          "trial": 117,
+          "loss": 0.013841584527713871,
+          "max_cosine_full": 0.5239052790522786,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 118,
+          "loss": 0.0138415845277141,
+          "max_cosine_full": 0.5239052720565676,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 119,
+          "loss": 0.01384158452771379,
+          "max_cosine_full": 0.5239052733507376,
+          "iterations": 86,
+          "status": 0
+        },
+        {
+          "trial": 120,
+          "loss": 0.013841584527713838,
+          "max_cosine_full": 0.5239052773211631,
+          "iterations": 104,
+          "status": 0
+        },
+        {
+          "trial": 121,
+          "loss": 0.013841584527714682,
+          "max_cosine_full": 0.5239052819617472,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 122,
+          "loss": 0.013841584527713916,
+          "max_cosine_full": 0.5239052766752065,
+          "iterations": 57,
+          "status": 0
+        },
+        {
+          "trial": 123,
+          "loss": 0.013841584527714123,
+          "max_cosine_full": 0.5239052742750688,
+          "iterations": 94,
+          "status": 0
+        },
+        {
+          "trial": 124,
+          "loss": 0.05067101013983624,
+          "max_cosine_full": 0.5502192981317774,
+          "iterations": 83,
+          "status": 0
+        },
+        {
+          "trial": 125,
+          "loss": 0.013841584527713804,
+          "max_cosine_full": 0.5239052733062238,
+          "iterations": 40,
+          "status": 0
+        },
+        {
+          "trial": 126,
+          "loss": 0.013841584527713977,
+          "max_cosine_full": 0.5239052785938697,
+          "iterations": 57,
+          "status": 0
+        },
+        {
+          "trial": 127,
+          "loss": 0.013841584527714142,
+          "max_cosine_full": 0.523905274100845,
+          "iterations": 76,
+          "status": 0
+        },
+        {
+          "trial": 128,
+          "loss": 0.01384158452771572,
+          "max_cosine_full": 0.523905286388396,
+          "iterations": 77,
+          "status": 0
+        },
+        {
+          "trial": 129,
+          "loss": 0.013841584527713759,
+          "max_cosine_full": 0.5239052726507457,
+          "iterations": 38,
+          "status": 0
+        },
+        {
+          "trial": 130,
+          "loss": 0.01384158452771432,
+          "max_cosine_full": 0.5239052816387846,
+          "iterations": 53,
+          "status": 0
+        },
+        {
+          "trial": 131,
+          "loss": 0.013841584527715292,
+          "max_cosine_full": 0.5239052845154839,
+          "iterations": 88,
+          "status": 0
+        },
+        {
+          "trial": 132,
+          "loss": 0.028445120093078508,
+          "max_cosine_full": 0.5465690538404131,
+          "iterations": 119,
+          "status": 0
+        },
+        {
+          "trial": 133,
+          "loss": 0.013841584527713556,
+          "max_cosine_full": 0.5239052752873352,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 134,
+          "loss": 0.013841584527713767,
+          "max_cosine_full": 0.5239052754416696,
+          "iterations": 61,
+          "status": 0
+        },
+        {
+          "trial": 135,
+          "loss": 0.06010373079908677,
+          "max_cosine_full": 0.5603718278688082,
+          "iterations": 73,
+          "status": 0
+        },
+        {
+          "trial": 136,
+          "loss": 0.046942552281220726,
+          "max_cosine_full": 0.5583687964761871,
+          "iterations": 74,
+          "status": 0
+        },
+        {
+          "trial": 137,
+          "loss": 0.01384158452771419,
+          "max_cosine_full": 0.5239052799293086,
+          "iterations": 41,
+          "status": 0
+        },
+        {
+          "trial": 138,
+          "loss": 0.013841584527714099,
+          "max_cosine_full": 0.5239052785810024,
+          "iterations": 56,
+          "status": 0
+        },
+        {
+          "trial": 139,
+          "loss": 0.048955598514229905,
+          "max_cosine_full": 0.5629941636791871,
+          "iterations": 77,
+          "status": 0
+        },
+        {
+          "trial": 140,
+          "loss": 0.031681766678146976,
+          "max_cosine_full": 0.538716111326411,
+          "iterations": 111,
+          "status": 0
+        },
+        {
+          "trial": 141,
+          "loss": 0.013841584527714274,
+          "max_cosine_full": 0.5239052712944019,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 142,
+          "loss": 0.013841584527714479,
+          "max_cosine_full": 0.5239052689905062,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 143,
+          "loss": 0.013841584527714376,
+          "max_cosine_full": 0.5239052807366411,
+          "iterations": 98,
+          "status": 0
+        },
+        {
+          "trial": 144,
+          "loss": 0.03218110045466362,
+          "max_cosine_full": 0.5378936614186046,
+          "iterations": 157,
+          "status": 0
+        },
+        {
+          "trial": 145,
+          "loss": 0.013841584527714494,
+          "max_cosine_full": 0.5239052705511394,
+          "iterations": 49,
+          "status": 0
+        },
+        {
+          "trial": 146,
+          "loss": 0.013841584527714258,
+          "max_cosine_full": 0.5239052678813253,
+          "iterations": 54,
+          "status": 0
+        },
+        {
+          "trial": 147,
+          "loss": 0.08768412016414309,
+          "max_cosine_full": 0.5894470875651702,
+          "iterations": 70,
+          "status": 0
+        },
+        {
+          "trial": 148,
+          "loss": 0.013841584527715218,
+          "max_cosine_full": 0.5239052732720696,
+          "iterations": 73,
+          "status": 0
+        },
+        {
+          "trial": 149,
+          "loss": 0.013841584527714538,
+          "max_cosine_full": 0.523905275255595,
+          "iterations": 51,
+          "status": 0
+        },
+        {
+          "trial": 150,
+          "loss": 0.013841584527713885,
+          "max_cosine_full": 0.5239052753748447,
+          "iterations": 62,
+          "status": 0
+        },
+        {
+          "trial": 151,
+          "loss": 0.05374308434939117,
+          "max_cosine_full": 0.561705478505195,
+          "iterations": 77,
+          "status": 0
+        },
+        {
+          "trial": 152,
+          "loss": 0.01384158452771385,
+          "max_cosine_full": 0.523905273023641,
+          "iterations": 114,
+          "status": 0
+        },
+        {
+          "trial": 153,
+          "loss": 0.013841584527714109,
+          "max_cosine_full": 0.5239052703550537,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 154,
+          "loss": 0.01384158452771382,
+          "max_cosine_full": 0.5239052787773674,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 155,
+          "loss": 0.013841584527713738,
+          "max_cosine_full": 0.5239052747096824,
+          "iterations": 101,
+          "status": 0
+        },
+        {
+          "trial": 156,
+          "loss": 0.013841584527714263,
+          "max_cosine_full": 0.52390528127682,
+          "iterations": 106,
+          "status": 0
+        },
+        {
+          "trial": 157,
+          "loss": 0.01384158452771494,
+          "max_cosine_full": 0.5239052656377704,
+          "iterations": 39,
+          "status": 0
+        },
+        {
+          "trial": 158,
+          "loss": 0.013841584527713748,
+          "max_cosine_full": 0.5239052755634369,
+          "iterations": 56,
+          "status": 0
+        },
+        {
+          "trial": 159,
+          "loss": 0.013841584527713563,
+          "max_cosine_full": 0.5239052770712898,
+          "iterations": 85,
+          "status": 0
+        }
+      ],
+      "certificate": "Numerical optimization only. Failed arrays are not kissing configurations.",
+      "restart_limit": 160,
+      "restart_wall_budget_seconds": 55,
+      "wall_budget_checked_between_restarts": true,
+      "optimizer_max_iterations": 3000
+    },
+    {
+      "dimension": 5,
+      "group_order": 7,
+      "seed_orbits": 6,
+      "fixed_pole": false,
+      "target_cardinality": 42,
+      "frequencies": [
+        1,
+        2
+      ],
+      "trials_completed": 160,
+      "seconds": 1.0036993250000705,
+      "best_loss": 0.02867551448496061,
+      "best_max_cosine": 0.5432114727839132,
+      "admissible_numerically": false,
+      "file": "asym_d5_c7_k6_pole0_f1,2.npz",
+      "trials": [
+        {
+          "trial": 0,
+          "loss": 0.028675514484961,
+          "max_cosine_full": 0.5432114733084081,
+          "iterations": 83,
+          "status": 0
+        },
+        {
+          "trial": 1,
+          "loss": 0.028675514484962382,
+          "max_cosine_full": 0.5432114788056395,
+          "iterations": 40,
+          "status": 0
+        },
+        {
+          "trial": 2,
+          "loss": 0.028675514484962413,
+          "max_cosine_full": 0.5432114698248309,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 3,
+          "loss": 0.03170446955407346,
+          "max_cosine_full": 0.5378540761326587,
+          "iterations": 72,
+          "status": 0
+        },
+        {
+          "trial": 4,
+          "loss": 0.034347288521372824,
+          "max_cosine_full": 0.5469775983398301,
+          "iterations": 92,
+          "status": 0
+        },
+        {
+          "trial": 5,
+          "loss": 0.028675514484960644,
+          "max_cosine_full": 0.5432114720562159,
+          "iterations": 35,
+          "status": 0
+        },
+        {
+          "trial": 6,
+          "loss": 0.02867551448496143,
+          "max_cosine_full": 0.5432114743981253,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 7,
+          "loss": 0.03170871441011169,
+          "max_cosine_full": 0.5417377512589991,
+          "iterations": 66,
+          "status": 0
+        },
+        {
+          "trial": 8,
+          "loss": 0.03434728852137232,
+          "max_cosine_full": 0.546977605304253,
+          "iterations": 112,
+          "status": 0
+        },
+        {
+          "trial": 9,
+          "loss": 0.028675514484960925,
+          "max_cosine_full": 0.5432114736875008,
+          "iterations": 39,
+          "status": 0
+        },
+        {
+          "trial": 10,
+          "loss": 0.02867551448496091,
+          "max_cosine_full": 0.5432114709390832,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 11,
+          "loss": 0.039770691350633935,
+          "max_cosine_full": 0.565955706579229,
+          "iterations": 71,
+          "status": 0
+        },
+        {
+          "trial": 12,
+          "loss": 0.03170871441011053,
+          "max_cosine_full": 0.5417377543195058,
+          "iterations": 68,
+          "status": 0
+        },
+        {
+          "trial": 13,
+          "loss": 0.02867551448496061,
+          "max_cosine_full": 0.5432114727839132,
+          "iterations": 36,
+          "status": 0
+        },
+        {
+          "trial": 14,
+          "loss": 0.02867551448496169,
+          "max_cosine_full": 0.5432114769756656,
+          "iterations": 41,
+          "status": 0
+        },
+        {
+          "trial": 15,
+          "loss": 0.03434728852137289,
+          "max_cosine_full": 0.5469776092350485,
+          "iterations": 87,
+          "status": 0
+        },
+        {
+          "trial": 16,
+          "loss": 0.04083802869991926,
+          "max_cosine_full": 0.5559545132934783,
+          "iterations": 61,
+          "status": 0
+        },
+        {
+          "trial": 17,
+          "loss": 0.028675514484961136,
+          "max_cosine_full": 0.543211478536835,
+          "iterations": 37,
+          "status": 0
+        },
+        {
+          "trial": 18,
+          "loss": 0.028675514484961716,
+          "max_cosine_full": 0.5432114690072535,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 19,
+          "loss": 0.06183432426847785,
+          "max_cosine_full": 0.567119441815554,
+          "iterations": 57,
+          "status": 0
+        },
+        {
+          "trial": 20,
+          "loss": 0.03093813057555811,
+          "max_cosine_full": 0.5408790157909319,
+          "iterations": 84,
+          "status": 0
+        },
+        {
+          "trial": 21,
+          "loss": 0.028675514484961202,
+          "max_cosine_full": 0.5432114709239046,
+          "iterations": 37,
+          "status": 0
+        },
+        {
+          "trial": 22,
+          "loss": 0.02867551448496105,
+          "max_cosine_full": 0.5432114702350231,
+          "iterations": 54,
+          "status": 0
+        },
+        {
+          "trial": 23,
+          "loss": 0.03434728852137233,
+          "max_cosine_full": 0.5469776028677779,
+          "iterations": 73,
+          "status": 0
+        },
+        {
+          "trial": 24,
+          "loss": 0.03170446955407218,
+          "max_cosine_full": 0.5378540776883433,
+          "iterations": 92,
+          "status": 0
+        },
+        {
+          "trial": 25,
+          "loss": 0.028675514484961563,
+          "max_cosine_full": 0.5432114759080249,
+          "iterations": 36,
+          "status": 0
+        },
+        {
+          "trial": 26,
+          "loss": 0.028675514484961105,
+          "max_cosine_full": 0.5432114698911061,
+          "iterations": 48,
+          "status": 0
+        },
+        {
+          "trial": 27,
+          "loss": 0.03170446955407376,
+          "max_cosine_full": 0.5378540789563778,
+          "iterations": 82,
+          "status": 0
+        },
+        {
+          "trial": 28,
+          "loss": 0.0691456469271097,
+          "max_cosine_full": 0.6008807129000518,
+          "iterations": 53,
+          "status": 0
+        },
+        {
+          "trial": 29,
+          "loss": 0.02867551448496099,
+          "max_cosine_full": 0.5432114719650148,
+          "iterations": 36,
+          "status": 0
+        },
+        {
+          "trial": 30,
+          "loss": 0.028675514484961005,
+          "max_cosine_full": 0.5432114738184889,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 31,
+          "loss": 0.03408305478675916,
+          "max_cosine_full": 0.5431969798001478,
+          "iterations": 67,
+          "status": 0
+        },
+        {
+          "trial": 32,
+          "loss": 0.030938130575558387,
+          "max_cosine_full": 0.5408790169657781,
+          "iterations": 53,
+          "status": 0
+        },
+        {
+          "trial": 33,
+          "loss": 0.02867551448496146,
+          "max_cosine_full": 0.543211469786655,
+          "iterations": 32,
+          "status": 0
+        },
+        {
+          "trial": 34,
+          "loss": 0.02867551448496087,
+          "max_cosine_full": 0.5432114734512666,
+          "iterations": 47,
+          "status": 0
+        },
+        {
+          "trial": 35,
+          "loss": 0.030938130575558928,
+          "max_cosine_full": 0.5408790155811318,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 36,
+          "loss": 0.03408305478675887,
+          "max_cosine_full": 0.5431969829906581,
+          "iterations": 80,
+          "status": 0
+        },
+        {
+          "trial": 37,
+          "loss": 0.028675514484960772,
+          "max_cosine_full": 0.5432114737328482,
+          "iterations": 38,
+          "status": 0
+        },
+        {
+          "trial": 38,
+          "loss": 0.02867551448496242,
+          "max_cosine_full": 0.5432114737515883,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 39,
+          "loss": 0.04108352886007187,
+          "max_cosine_full": 0.5550461533145701,
+          "iterations": 56,
+          "status": 0
+        },
+        {
+          "trial": 40,
+          "loss": 0.030938130575558383,
+          "max_cosine_full": 0.5408790169892128,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 41,
+          "loss": 0.0286755144849611,
+          "max_cosine_full": 0.5432114679575392,
+          "iterations": 39,
+          "status": 0
+        },
+        {
+          "trial": 42,
+          "loss": 0.028675514484962066,
+          "max_cosine_full": 0.5432114753763168,
+          "iterations": 50,
+          "status": 0
+        },
+        {
+          "trial": 43,
+          "loss": 0.030938130575558418,
+          "max_cosine_full": 0.5408790122505618,
+          "iterations": 125,
+          "status": 0
+        },
+        {
+          "trial": 44,
+          "loss": 0.030938130575558324,
+          "max_cosine_full": 0.5408790171938291,
+          "iterations": 109,
+          "status": 0
+        },
+        {
+          "trial": 45,
+          "loss": 0.028675514484961195,
+          "max_cosine_full": 0.543211475578485,
+          "iterations": 38,
+          "status": 0
+        },
+        {
+          "trial": 46,
+          "loss": 0.028675514484961216,
+          "max_cosine_full": 0.5432114724209062,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 47,
+          "loss": 0.03170871441011052,
+          "max_cosine_full": 0.5417377552670721,
+          "iterations": 78,
+          "status": 0
+        },
+        {
+          "trial": 48,
+          "loss": 0.03093813057555855,
+          "max_cosine_full": 0.5408790149322062,
+          "iterations": 75,
+          "status": 0
+        },
+        {
+          "trial": 49,
+          "loss": 0.028675514484961397,
+          "max_cosine_full": 0.5432114776526726,
+          "iterations": 39,
+          "status": 0
+        },
+        {
+          "trial": 50,
+          "loss": 0.028675514484960956,
+          "max_cosine_full": 0.5432114729292868,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 51,
+          "loss": 0.040838028699919066,
+          "max_cosine_full": 0.5559545107994948,
+          "iterations": 98,
+          "status": 0
+        },
+        {
+          "trial": 52,
+          "loss": 0.03170446955407342,
+          "max_cosine_full": 0.5378540701900492,
+          "iterations": 92,
+          "status": 0
+        },
+        {
+          "trial": 53,
+          "loss": 0.028675514484961112,
+          "max_cosine_full": 0.5432114709064544,
+          "iterations": 37,
+          "status": 0
+        },
+        {
+          "trial": 54,
+          "loss": 0.0286755144849608,
+          "max_cosine_full": 0.5432114735136301,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 55,
+          "loss": 0.034347288521372824,
+          "max_cosine_full": 0.5469776027731147,
+          "iterations": 77,
+          "status": 0
+        },
+        {
+          "trial": 56,
+          "loss": 0.02867551448496195,
+          "max_cosine_full": 0.5432114735983837,
+          "iterations": 65,
+          "status": 0
+        },
+        {
+          "trial": 57,
+          "loss": 0.02867551448496225,
+          "max_cosine_full": 0.5432114742434082,
+          "iterations": 34,
+          "status": 0
+        },
+        {
+          "trial": 58,
+          "loss": 0.028675514484961268,
+          "max_cosine_full": 0.5432114764550124,
+          "iterations": 49,
+          "status": 0
+        },
+        {
+          "trial": 59,
+          "loss": 0.028675514484960758,
+          "max_cosine_full": 0.5432114742001132,
+          "iterations": 90,
+          "status": 0
+        },
+        {
+          "trial": 60,
+          "loss": 0.03170871441011097,
+          "max_cosine_full": 0.5417377588163002,
+          "iterations": 105,
+          "status": 0
+        },
+        {
+          "trial": 61,
+          "loss": 0.028675514484961057,
+          "max_cosine_full": 0.5432114742445738,
+          "iterations": 35,
+          "status": 0
+        },
+        {
+          "trial": 62,
+          "loss": 0.028675514484961077,
+          "max_cosine_full": 0.5432114738173551,
+          "iterations": 37,
+          "status": 0
+        },
+        {
+          "trial": 63,
+          "loss": 0.04083802869991907,
+          "max_cosine_full": 0.5559545084397092,
+          "iterations": 60,
+          "status": 0
+        },
+        {
+          "trial": 64,
+          "loss": 0.030938130575558394,
+          "max_cosine_full": 0.5408790127507525,
+          "iterations": 108,
+          "status": 0
+        },
+        {
+          "trial": 65,
+          "loss": 0.02867551448496178,
+          "max_cosine_full": 0.5432114740819018,
+          "iterations": 39,
+          "status": 0
+        },
+        {
+          "trial": 66,
+          "loss": 0.02867551448496107,
+          "max_cosine_full": 0.5432114740629911,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 67,
+          "loss": 0.06914564692710946,
+          "max_cosine_full": 0.6008807119121781,
+          "iterations": 41,
+          "status": 0
+        },
+        {
+          "trial": 68,
+          "loss": 0.04083802869992145,
+          "max_cosine_full": 0.5559545231908156,
+          "iterations": 70,
+          "status": 0
+        },
+        {
+          "trial": 69,
+          "loss": 0.02867551448496177,
+          "max_cosine_full": 0.5432114740313427,
+          "iterations": 32,
+          "status": 0
+        },
+        {
+          "trial": 70,
+          "loss": 0.028675514484963076,
+          "max_cosine_full": 0.543211475545474,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 71,
+          "loss": 0.0317044695540724,
+          "max_cosine_full": 0.5378540760446767,
+          "iterations": 73,
+          "status": 0
+        },
+        {
+          "trial": 72,
+          "loss": 0.03093813057555834,
+          "max_cosine_full": 0.5408790108935105,
+          "iterations": 88,
+          "status": 0
+        },
+        {
+          "trial": 73,
+          "loss": 0.02867551448496594,
+          "max_cosine_full": 0.5432114553832886,
+          "iterations": 34,
+          "status": 0
+        },
+        {
+          "trial": 74,
+          "loss": 0.028675514484962014,
+          "max_cosine_full": 0.5432114737600614,
+          "iterations": 49,
+          "status": 0
+        },
+        {
+          "trial": 75,
+          "loss": 0.03093813057555824,
+          "max_cosine_full": 0.540879014628014,
+          "iterations": 56,
+          "status": 0
+        },
+        {
+          "trial": 76,
+          "loss": 0.031704469554073286,
+          "max_cosine_full": 0.537854079871963,
+          "iterations": 81,
+          "status": 0
+        },
+        {
+          "trial": 77,
+          "loss": 0.02867551448496076,
+          "max_cosine_full": 0.5432114699941385,
+          "iterations": 36,
+          "status": 0
+        },
+        {
+          "trial": 78,
+          "loss": 0.0286755144849616,
+          "max_cosine_full": 0.5432114776583566,
+          "iterations": 55,
+          "status": 0
+        },
+        {
+          "trial": 79,
+          "loss": 0.03093813057555906,
+          "max_cosine_full": 0.5408790138274797,
+          "iterations": 80,
+          "status": 0
+        },
+        {
+          "trial": 80,
+          "loss": 0.03093813057555811,
+          "max_cosine_full": 0.5408790161670393,
+          "iterations": 108,
+          "status": 0
+        },
+        {
+          "trial": 81,
+          "loss": 0.028675514484961036,
+          "max_cosine_full": 0.5432114761677892,
+          "iterations": 33,
+          "status": 0
+        },
+        {
+          "trial": 82,
+          "loss": 0.028675514484961216,
+          "max_cosine_full": 0.543211472188684,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 83,
+          "loss": 0.040838028699919315,
+          "max_cosine_full": 0.5559545107822558,
+          "iterations": 68,
+          "status": 0
+        },
+        {
+          "trial": 84,
+          "loss": 0.030938130575558317,
+          "max_cosine_full": 0.5408790135866387,
+          "iterations": 76,
+          "status": 0
+        },
+        {
+          "trial": 85,
+          "loss": 0.028675514484960998,
+          "max_cosine_full": 0.5432114737076555,
+          "iterations": 35,
+          "status": 0
+        },
+        {
+          "trial": 86,
+          "loss": 0.028675514484961008,
+          "max_cosine_full": 0.5432114713931193,
+          "iterations": 51,
+          "status": 0
+        },
+        {
+          "trial": 87,
+          "loss": 0.040838028699919385,
+          "max_cosine_full": 0.555954513384458,
+          "iterations": 62,
+          "status": 0
+        },
+        {
+          "trial": 88,
+          "loss": 0.07599993643791947,
+          "max_cosine_full": 0.6152660322189277,
+          "iterations": 58,
+          "status": 0
+        },
+        {
+          "trial": 89,
+          "loss": 0.02867551448496128,
+          "max_cosine_full": 0.5432114703705141,
+          "iterations": 35,
+          "status": 0
+        },
+        {
+          "trial": 90,
+          "loss": 0.02867551448496127,
+          "max_cosine_full": 0.5432114738339414,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 91,
+          "loss": 0.03434728852137475,
+          "max_cosine_full": 0.5469776142458205,
+          "iterations": 76,
+          "status": 0
+        },
+        {
+          "trial": 92,
+          "loss": 0.03170446955407298,
+          "max_cosine_full": 0.5378540742239687,
+          "iterations": 88,
+          "status": 0
+        },
+        {
+          "trial": 93,
+          "loss": 0.028675514484962226,
+          "max_cosine_full": 0.5432114699507803,
+          "iterations": 37,
+          "status": 0
+        },
+        {
+          "trial": 94,
+          "loss": 0.031704469554072676,
+          "max_cosine_full": 0.5378540784763859,
+          "iterations": 57,
+          "status": 0
+        },
+        {
+          "trial": 95,
+          "loss": 0.03434728852137263,
+          "max_cosine_full": 0.5469775998910161,
+          "iterations": 112,
+          "status": 0
+        },
+        {
+          "trial": 96,
+          "loss": 0.03170871441011086,
+          "max_cosine_full": 0.5417377524950047,
+          "iterations": 120,
+          "status": 0
+        },
+        {
+          "trial": 97,
+          "loss": 0.02867551448496198,
+          "max_cosine_full": 0.5432114684736665,
+          "iterations": 34,
+          "status": 0
+        },
+        {
+          "trial": 98,
+          "loss": 0.028675514484961563,
+          "max_cosine_full": 0.5432114696596033,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 99,
+          "loss": 0.034347288521375065,
+          "max_cosine_full": 0.546977593144303,
+          "iterations": 75,
+          "status": 0
+        },
+        {
+          "trial": 100,
+          "loss": 0.028675514484960894,
+          "max_cosine_full": 0.5432114720497693,
+          "iterations": 71,
+          "status": 0
+        },
+        {
+          "trial": 101,
+          "loss": 0.02867551448496137,
+          "max_cosine_full": 0.5432114671516399,
+          "iterations": 36,
+          "status": 0
+        },
+        {
+          "trial": 102,
+          "loss": 0.028675514484961345,
+          "max_cosine_full": 0.5432114785086074,
+          "iterations": 55,
+          "status": 0
+        },
+        {
+          "trial": 103,
+          "loss": 0.030938130575558227,
+          "max_cosine_full": 0.540879014634715,
+          "iterations": 83,
+          "status": 0
+        },
+        {
+          "trial": 104,
+          "loss": 0.030938130575558373,
+          "max_cosine_full": 0.5408790167395089,
+          "iterations": 68,
+          "status": 0
+        },
+        {
+          "trial": 105,
+          "loss": 0.028675514484960998,
+          "max_cosine_full": 0.543211472025052,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 106,
+          "loss": 0.028675514484961025,
+          "max_cosine_full": 0.5432114763664778,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 107,
+          "loss": 0.028675514484961827,
+          "max_cosine_full": 0.5432114647640215,
+          "iterations": 88,
+          "status": 0
+        },
+        {
+          "trial": 108,
+          "loss": 0.03170446955407527,
+          "max_cosine_full": 0.537854069227735,
+          "iterations": 84,
+          "status": 0
+        },
+        {
+          "trial": 109,
+          "loss": 0.028675514484961157,
+          "max_cosine_full": 0.5432114740914893,
+          "iterations": 38,
+          "status": 0
+        },
+        {
+          "trial": 110,
+          "loss": 0.02867551448496091,
+          "max_cosine_full": 0.5432114754832235,
+          "iterations": 44,
+          "status": 0
+        },
+        {
+          "trial": 111,
+          "loss": 0.03093813057555867,
+          "max_cosine_full": 0.5408790157112496,
+          "iterations": 65,
+          "status": 0
+        },
+        {
+          "trial": 112,
+          "loss": 0.030938130575559074,
+          "max_cosine_full": 0.5408790134806462,
+          "iterations": 103,
+          "status": 0
+        },
+        {
+          "trial": 113,
+          "loss": 0.028675514484961345,
+          "max_cosine_full": 0.5432114702466363,
+          "iterations": 37,
+          "status": 0
+        },
+        {
+          "trial": 114,
+          "loss": 0.028675514484961404,
+          "max_cosine_full": 0.5432114774166336,
+          "iterations": 41,
+          "status": 0
+        },
+        {
+          "trial": 115,
+          "loss": 0.031704469554072544,
+          "max_cosine_full": 0.5378540770363228,
+          "iterations": 82,
+          "status": 0
+        },
+        {
+          "trial": 116,
+          "loss": 0.03408305478675855,
+          "max_cosine_full": 0.5431969840670225,
+          "iterations": 64,
+          "status": 0
+        },
+        {
+          "trial": 117,
+          "loss": 0.028675514484961005,
+          "max_cosine_full": 0.5432114732321511,
+          "iterations": 38,
+          "status": 0
+        },
+        {
+          "trial": 118,
+          "loss": 0.028675514484962538,
+          "max_cosine_full": 0.5432114714180069,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 119,
+          "loss": 0.03093813057556359,
+          "max_cosine_full": 0.5408790132269817,
+          "iterations": 72,
+          "status": 0
+        },
+        {
+          "trial": 120,
+          "loss": 0.028675514484960956,
+          "max_cosine_full": 0.5432114754812303,
+          "iterations": 69,
+          "status": 0
+        },
+        {
+          "trial": 121,
+          "loss": 0.02867551448496131,
+          "max_cosine_full": 0.5432114738211405,
+          "iterations": 36,
+          "status": 0
+        },
+        {
+          "trial": 122,
+          "loss": 0.028675514484961535,
+          "max_cosine_full": 0.5432114687790459,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 123,
+          "loss": 0.030938130575558186,
+          "max_cosine_full": 0.5408790127513425,
+          "iterations": 50,
+          "status": 0
+        },
+        {
+          "trial": 124,
+          "loss": 0.034347288521379755,
+          "max_cosine_full": 0.5469776080771561,
+          "iterations": 72,
+          "status": 0
+        },
+        {
+          "trial": 125,
+          "loss": 0.02867551448496094,
+          "max_cosine_full": 0.5432114758937658,
+          "iterations": 39,
+          "status": 0
+        },
+        {
+          "trial": 126,
+          "loss": 0.028675514484960765,
+          "max_cosine_full": 0.5432114740046876,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 127,
+          "loss": 0.031704469554072745,
+          "max_cosine_full": 0.5378540815195301,
+          "iterations": 90,
+          "status": 0
+        },
+        {
+          "trial": 128,
+          "loss": 0.030938130575558817,
+          "max_cosine_full": 0.5408790145777925,
+          "iterations": 83,
+          "status": 0
+        },
+        {
+          "trial": 129,
+          "loss": 0.02867551448496124,
+          "max_cosine_full": 0.5432114754071925,
+          "iterations": 38,
+          "status": 0
+        },
+        {
+          "trial": 130,
+          "loss": 0.028675514484960897,
+          "max_cosine_full": 0.5432114703974601,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 131,
+          "loss": 0.031704469554072544,
+          "max_cosine_full": 0.5378540783658026,
+          "iterations": 93,
+          "status": 0
+        },
+        {
+          "trial": 132,
+          "loss": 0.0343472885213731,
+          "max_cosine_full": 0.5469776078463491,
+          "iterations": 73,
+          "status": 0
+        },
+        {
+          "trial": 133,
+          "loss": 0.028675514484960918,
+          "max_cosine_full": 0.5432114716641854,
+          "iterations": 41,
+          "status": 0
+        },
+        {
+          "trial": 134,
+          "loss": 0.028675514484961057,
+          "max_cosine_full": 0.5432114709180916,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 135,
+          "loss": 0.03093813057555828,
+          "max_cosine_full": 0.5408790129236847,
+          "iterations": 54,
+          "status": 0
+        },
+        {
+          "trial": 136,
+          "loss": 0.030938130575560868,
+          "max_cosine_full": 0.5408790230064446,
+          "iterations": 97,
+          "status": 0
+        },
+        {
+          "trial": 137,
+          "loss": 0.028675514484961036,
+          "max_cosine_full": 0.5432114722131459,
+          "iterations": 39,
+          "status": 0
+        },
+        {
+          "trial": 138,
+          "loss": 0.028675514484961084,
+          "max_cosine_full": 0.54321147336063,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 139,
+          "loss": 0.03434728852137402,
+          "max_cosine_full": 0.5469776090521077,
+          "iterations": 71,
+          "status": 0
+        },
+        {
+          "trial": 140,
+          "loss": 0.03170446955407259,
+          "max_cosine_full": 0.5378540776553499,
+          "iterations": 84,
+          "status": 0
+        },
+        {
+          "trial": 141,
+          "loss": 0.028675514484961646,
+          "max_cosine_full": 0.5432114707400109,
+          "iterations": 37,
+          "status": 0
+        },
+        {
+          "trial": 142,
+          "loss": 0.028675514484960835,
+          "max_cosine_full": 0.5432114728636203,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 143,
+          "loss": 0.02867551448496137,
+          "max_cosine_full": 0.5432114755990539,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 144,
+          "loss": 0.03170446955407257,
+          "max_cosine_full": 0.5378540794781401,
+          "iterations": 89,
+          "status": 0
+        },
+        {
+          "trial": 145,
+          "loss": 0.028675514484961494,
+          "max_cosine_full": 0.5432114752637427,
+          "iterations": 37,
+          "status": 0
+        },
+        {
+          "trial": 146,
+          "loss": 0.028675514484960904,
+          "max_cosine_full": 0.5432114713672825,
+          "iterations": 50,
+          "status": 0
+        },
+        {
+          "trial": 147,
+          "loss": 0.028675514484961258,
+          "max_cosine_full": 0.5432114682418098,
+          "iterations": 66,
+          "status": 0
+        },
+        {
+          "trial": 148,
+          "loss": 0.028675514484961025,
+          "max_cosine_full": 0.5432114731191662,
+          "iterations": 61,
+          "status": 0
+        },
+        {
+          "trial": 149,
+          "loss": 0.028675514484960928,
+          "max_cosine_full": 0.543211474551197,
+          "iterations": 33,
+          "status": 0
+        },
+        {
+          "trial": 150,
+          "loss": 0.028675514484960654,
+          "max_cosine_full": 0.5432114736849774,
+          "iterations": 48,
+          "status": 0
+        },
+        {
+          "trial": 151,
+          "loss": 0.04083802869991972,
+          "max_cosine_full": 0.5559545180557339,
+          "iterations": 74,
+          "status": 0
+        },
+        {
+          "trial": 152,
+          "loss": 0.04083802869992519,
+          "max_cosine_full": 0.5559544925662968,
+          "iterations": 77,
+          "status": 0
+        },
+        {
+          "trial": 153,
+          "loss": 0.02867551448496107,
+          "max_cosine_full": 0.5432114688314988,
+          "iterations": 36,
+          "status": 0
+        },
+        {
+          "trial": 154,
+          "loss": 0.028675514484963145,
+          "max_cosine_full": 0.5432114661954067,
+          "iterations": 48,
+          "status": 0
+        },
+        {
+          "trial": 155,
+          "loss": 0.030938130575558123,
+          "max_cosine_full": 0.5408790156891243,
+          "iterations": 89,
+          "status": 0
+        },
+        {
+          "trial": 156,
+          "loss": 0.028675514484961126,
+          "max_cosine_full": 0.5432114706664811,
+          "iterations": 88,
+          "status": 0
+        },
+        {
+          "trial": 157,
+          "loss": 0.02867551448496153,
+          "max_cosine_full": 0.5432114668457628,
+          "iterations": 33,
+          "status": 0
+        },
+        {
+          "trial": 158,
+          "loss": 0.028675514484960894,
+          "max_cosine_full": 0.5432114741505123,
+          "iterations": 44,
+          "status": 0
+        },
+        {
+          "trial": 159,
+          "loss": 0.06545474927743591,
+          "max_cosine_full": 0.5646874889590545,
+          "iterations": 56,
+          "status": 0
+        }
+      ],
+      "certificate": "Numerical optimization only. Failed arrays are not kissing configurations.",
+      "restart_limit": 160,
+      "restart_wall_budget_seconds": 55,
+      "wall_budget_checked_between_restarts": true,
+      "optimizer_max_iterations": 3000
+    },
+    {
+      "dimension": 6,
+      "group_order": 5,
+      "seed_orbits": 15,
+      "fixed_pole": false,
+      "target_cardinality": 75,
+      "frequencies": [
+        1,
+        1,
+        2
+      ],
+      "trials_completed": 160,
+      "seconds": 4.709617372000139,
+      "best_loss": 0.2537116244134796,
+      "best_max_cosine": 0.5801723675538486,
+      "admissible_numerically": false,
+      "file": "asym_d6_c5_k15_pole0_f1,1,2.npz",
+      "trials": [
+        {
+          "trial": 0,
+          "loss": 0.28903571098222614,
+          "max_cosine_full": 0.6083323497821141,
+          "iterations": 134,
+          "status": 0
+        },
+        {
+          "trial": 1,
+          "loss": 0.2890357109822248,
+          "max_cosine_full": 0.6083323437221008,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 2,
+          "loss": 0.2890357109822247,
+          "max_cosine_full": 0.608332346564114,
+          "iterations": 65,
+          "status": 0
+        },
+        {
+          "trial": 3,
+          "loss": 0.2981861654307792,
+          "max_cosine_full": 0.5793636454334827,
+          "iterations": 158,
+          "status": 0
+        },
+        {
+          "trial": 4,
+          "loss": 0.2740707198584023,
+          "max_cosine_full": 0.6073083366635824,
+          "iterations": 127,
+          "status": 0
+        },
+        {
+          "trial": 5,
+          "loss": 0.2740707198584036,
+          "max_cosine_full": 0.6073083355731655,
+          "iterations": 58,
+          "status": 0
+        },
+        {
+          "trial": 6,
+          "loss": 0.2740707198584045,
+          "max_cosine_full": 0.6073083421920414,
+          "iterations": 77,
+          "status": 0
+        },
+        {
+          "trial": 7,
+          "loss": 0.3224328852019065,
+          "max_cosine_full": 0.5752405427974121,
+          "iterations": 281,
+          "status": 0
+        },
+        {
+          "trial": 8,
+          "loss": 0.27924793353292254,
+          "max_cosine_full": 0.5887910188987707,
+          "iterations": 92,
+          "status": 0
+        },
+        {
+          "trial": 9,
+          "loss": 0.27407071985840387,
+          "max_cosine_full": 0.6073083265615402,
+          "iterations": 61,
+          "status": 0
+        },
+        {
+          "trial": 10,
+          "loss": 0.27407071985840253,
+          "max_cosine_full": 0.6073083367724603,
+          "iterations": 71,
+          "status": 0
+        },
+        {
+          "trial": 11,
+          "loss": 0.28165152643795544,
+          "max_cosine_full": 0.6088683739858122,
+          "iterations": 145,
+          "status": 0
+        },
+        {
+          "trial": 12,
+          "loss": 0.32384688965784314,
+          "max_cosine_full": 0.5946594142415409,
+          "iterations": 128,
+          "status": 0
+        },
+        {
+          "trial": 13,
+          "loss": 0.27407071985840553,
+          "max_cosine_full": 0.607308328572415,
+          "iterations": 60,
+          "status": 0
+        },
+        {
+          "trial": 14,
+          "loss": 0.27407071985840326,
+          "max_cosine_full": 0.6073083367993183,
+          "iterations": 73,
+          "status": 0
+        },
+        {
+          "trial": 15,
+          "loss": 0.36564867790006805,
+          "max_cosine_full": 0.5951955091908812,
+          "iterations": 111,
+          "status": 0
+        },
+        {
+          "trial": 16,
+          "loss": 0.3001074838588143,
+          "max_cosine_full": 0.5826131862991943,
+          "iterations": 155,
+          "status": 0
+        },
+        {
+          "trial": 17,
+          "loss": 0.27407071985840237,
+          "max_cosine_full": 0.6073083385771612,
+          "iterations": 62,
+          "status": 0
+        },
+        {
+          "trial": 18,
+          "loss": 0.27407071985840187,
+          "max_cosine_full": 0.6073083377761943,
+          "iterations": 80,
+          "status": 0
+        },
+        {
+          "trial": 19,
+          "loss": 0.3087754083312946,
+          "max_cosine_full": 0.587280696776293,
+          "iterations": 99,
+          "status": 0
+        },
+        {
+          "trial": 20,
+          "loss": 0.32732980429806147,
+          "max_cosine_full": 0.6137240144382616,
+          "iterations": 165,
+          "status": 0
+        },
+        {
+          "trial": 21,
+          "loss": 0.2740707198584077,
+          "max_cosine_full": 0.6073083238755044,
+          "iterations": 57,
+          "status": 0
+        },
+        {
+          "trial": 22,
+          "loss": 0.2740707198584048,
+          "max_cosine_full": 0.6073083272906774,
+          "iterations": 70,
+          "status": 0
+        },
+        {
+          "trial": 23,
+          "loss": 0.2997442798484104,
+          "max_cosine_full": 0.6002771222762313,
+          "iterations": 193,
+          "status": 0
+        },
+        {
+          "trial": 24,
+          "loss": 0.27970286648824416,
+          "max_cosine_full": 0.5740082514582674,
+          "iterations": 171,
+          "status": 0
+        },
+        {
+          "trial": 25,
+          "loss": 0.2740707198584057,
+          "max_cosine_full": 0.6073083335935382,
+          "iterations": 56,
+          "status": 0
+        },
+        {
+          "trial": 26,
+          "loss": 0.2740707198584029,
+          "max_cosine_full": 0.607308331585658,
+          "iterations": 86,
+          "status": 0
+        },
+        {
+          "trial": 27,
+          "loss": 0.3012577597147608,
+          "max_cosine_full": 0.5937352472308626,
+          "iterations": 127,
+          "status": 0
+        },
+        {
+          "trial": 28,
+          "loss": 0.33205433676849105,
+          "max_cosine_full": 0.5994565774066757,
+          "iterations": 177,
+          "status": 0
+        },
+        {
+          "trial": 29,
+          "loss": 0.2740707198584049,
+          "max_cosine_full": 0.6073083345168443,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 30,
+          "loss": 0.2740707198584015,
+          "max_cosine_full": 0.6073083336730422,
+          "iterations": 75,
+          "status": 0
+        },
+        {
+          "trial": 31,
+          "loss": 0.2708906548538538,
+          "max_cosine_full": 0.5858484148855402,
+          "iterations": 236,
+          "status": 0
+        },
+        {
+          "trial": 32,
+          "loss": 0.3029441533709508,
+          "max_cosine_full": 0.5843715116908805,
+          "iterations": 163,
+          "status": 0
+        },
+        {
+          "trial": 33,
+          "loss": 0.270890654853854,
+          "max_cosine_full": 0.5858483695268043,
+          "iterations": 55,
+          "status": 0
+        },
+        {
+          "trial": 34,
+          "loss": 0.27089065485385355,
+          "max_cosine_full": 0.5858483897333608,
+          "iterations": 68,
+          "status": 0
+        },
+        {
+          "trial": 35,
+          "loss": 0.311646365994951,
+          "max_cosine_full": 0.6125586509805216,
+          "iterations": 146,
+          "status": 0
+        },
+        {
+          "trial": 36,
+          "loss": 0.3029331373670945,
+          "max_cosine_full": 0.5988342267544551,
+          "iterations": 178,
+          "status": 0
+        },
+        {
+          "trial": 37,
+          "loss": 0.27089065485385655,
+          "max_cosine_full": 0.5858483760208574,
+          "iterations": 58,
+          "status": 0
+        },
+        {
+          "trial": 38,
+          "loss": 0.270890654853849,
+          "max_cosine_full": 0.5858483799809152,
+          "iterations": 79,
+          "status": 0
+        },
+        {
+          "trial": 39,
+          "loss": 0.29230729396439237,
+          "max_cosine_full": 0.6044772425538868,
+          "iterations": 161,
+          "status": 0
+        },
+        {
+          "trial": 40,
+          "loss": 0.30839471581877675,
+          "max_cosine_full": 0.5888264938227019,
+          "iterations": 192,
+          "status": 0
+        },
+        {
+          "trial": 41,
+          "loss": 0.2708906548538489,
+          "max_cosine_full": 0.5858483970816794,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 42,
+          "loss": 0.2709789687780902,
+          "max_cosine_full": 0.5852481872960891,
+          "iterations": 90,
+          "status": 0
+        },
+        {
+          "trial": 43,
+          "loss": 0.3056040531309572,
+          "max_cosine_full": 0.5957862289295168,
+          "iterations": 135,
+          "status": 0
+        },
+        {
+          "trial": 44,
+          "loss": 0.2625524916177661,
+          "max_cosine_full": 0.6203219282471099,
+          "iterations": 130,
+          "status": 0
+        },
+        {
+          "trial": 45,
+          "loss": 0.2625524916177635,
+          "max_cosine_full": 0.6203219329398476,
+          "iterations": 58,
+          "status": 0
+        },
+        {
+          "trial": 46,
+          "loss": 0.26255249161777,
+          "max_cosine_full": 0.6203219269797008,
+          "iterations": 81,
+          "status": 0
+        },
+        {
+          "trial": 47,
+          "loss": 0.27353210435154995,
+          "max_cosine_full": 0.579749565864281,
+          "iterations": 177,
+          "status": 0
+        },
+        {
+          "trial": 48,
+          "loss": 0.3347920897150546,
+          "max_cosine_full": 0.5873305494623465,
+          "iterations": 120,
+          "status": 0
+        },
+        {
+          "trial": 49,
+          "loss": 0.26255249161776506,
+          "max_cosine_full": 0.6203219337886425,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 50,
+          "loss": 0.2625524916177665,
+          "max_cosine_full": 0.6203219292829654,
+          "iterations": 78,
+          "status": 0
+        },
+        {
+          "trial": 51,
+          "loss": 0.32765239645865196,
+          "max_cosine_full": 0.5939721372258602,
+          "iterations": 170,
+          "status": 0
+        },
+        {
+          "trial": 52,
+          "loss": 0.26255249161776667,
+          "max_cosine_full": 0.6203219282384452,
+          "iterations": 136,
+          "status": 0
+        },
+        {
+          "trial": 53,
+          "loss": 0.2625524916177651,
+          "max_cosine_full": 0.620321934752044,
+          "iterations": 58,
+          "status": 0
+        },
+        {
+          "trial": 54,
+          "loss": 0.2625524916177646,
+          "max_cosine_full": 0.6203219340471082,
+          "iterations": 75,
+          "status": 0
+        },
+        {
+          "trial": 55,
+          "loss": 0.2997572526826886,
+          "max_cosine_full": 0.5814036104164318,
+          "iterations": 124,
+          "status": 0
+        },
+        {
+          "trial": 56,
+          "loss": 0.29262579683965995,
+          "max_cosine_full": 0.6026825012832341,
+          "iterations": 149,
+          "status": 0
+        },
+        {
+          "trial": 57,
+          "loss": 0.2625524916177645,
+          "max_cosine_full": 0.6203219290376545,
+          "iterations": 60,
+          "status": 0
+        },
+        {
+          "trial": 58,
+          "loss": 0.2625524916177667,
+          "max_cosine_full": 0.6203219270245667,
+          "iterations": 77,
+          "status": 0
+        },
+        {
+          "trial": 59,
+          "loss": 0.29355697240567097,
+          "max_cosine_full": 0.5874234466636568,
+          "iterations": 167,
+          "status": 0
+        },
+        {
+          "trial": 60,
+          "loss": 0.2792479335329221,
+          "max_cosine_full": 0.5887910206635854,
+          "iterations": 126,
+          "status": 0
+        },
+        {
+          "trial": 61,
+          "loss": 0.2625524916177657,
+          "max_cosine_full": 0.6203219300633613,
+          "iterations": 56,
+          "status": 0
+        },
+        {
+          "trial": 62,
+          "loss": 0.2625524916177659,
+          "max_cosine_full": 0.6203219317034934,
+          "iterations": 72,
+          "status": 0
+        },
+        {
+          "trial": 63,
+          "loss": 0.31867979332743723,
+          "max_cosine_full": 0.5866454678821779,
+          "iterations": 177,
+          "status": 0
+        },
+        {
+          "trial": 64,
+          "loss": 0.2788598789977338,
+          "max_cosine_full": 0.5778026942384852,
+          "iterations": 235,
+          "status": 0
+        },
+        {
+          "trial": 65,
+          "loss": 0.2625524916177666,
+          "max_cosine_full": 0.6203219341589877,
+          "iterations": 55,
+          "status": 0
+        },
+        {
+          "trial": 66,
+          "loss": 0.2625524916177655,
+          "max_cosine_full": 0.6203219304474071,
+          "iterations": 84,
+          "status": 0
+        },
+        {
+          "trial": 67,
+          "loss": 0.301011882056393,
+          "max_cosine_full": 0.5869757230023023,
+          "iterations": 112,
+          "status": 0
+        },
+        {
+          "trial": 68,
+          "loss": 0.30073992159502205,
+          "max_cosine_full": 0.5855070237912023,
+          "iterations": 152,
+          "status": 0
+        },
+        {
+          "trial": 69,
+          "loss": 0.26255249161776556,
+          "max_cosine_full": 0.6203219317330232,
+          "iterations": 55,
+          "status": 0
+        },
+        {
+          "trial": 70,
+          "loss": 0.2625524916177656,
+          "max_cosine_full": 0.62032193426302,
+          "iterations": 73,
+          "status": 0
+        },
+        {
+          "trial": 71,
+          "loss": 0.3421837774889552,
+          "max_cosine_full": 0.5969588004992307,
+          "iterations": 128,
+          "status": 0
+        },
+        {
+          "trial": 72,
+          "loss": 0.276190884853746,
+          "max_cosine_full": 0.574461204204132,
+          "iterations": 196,
+          "status": 0
+        },
+        {
+          "trial": 73,
+          "loss": 0.2625524916177654,
+          "max_cosine_full": 0.6203219359106974,
+          "iterations": 57,
+          "status": 0
+        },
+        {
+          "trial": 74,
+          "loss": 0.26255249161776495,
+          "max_cosine_full": 0.6203219329658172,
+          "iterations": 74,
+          "status": 0
+        },
+        {
+          "trial": 75,
+          "loss": 0.354405502540623,
+          "max_cosine_full": 0.5921038284710555,
+          "iterations": 116,
+          "status": 0
+        },
+        {
+          "trial": 76,
+          "loss": 0.25371162441348083,
+          "max_cosine_full": 0.5801723637027901,
+          "iterations": 160,
+          "status": 0
+        },
+        {
+          "trial": 77,
+          "loss": 0.25371162441348216,
+          "max_cosine_full": 0.5801723735572565,
+          "iterations": 69,
+          "status": 0
+        },
+        {
+          "trial": 78,
+          "loss": 0.25371162441348816,
+          "max_cosine_full": 0.5801723767245095,
+          "iterations": 74,
+          "status": 0
+        },
+        {
+          "trial": 79,
+          "loss": 0.3500208273483064,
+          "max_cosine_full": 0.6111905978797744,
+          "iterations": 153,
+          "status": 0
+        },
+        {
+          "trial": 80,
+          "loss": 0.2537116244134857,
+          "max_cosine_full": 0.5801723739377552,
+          "iterations": 232,
+          "status": 0
+        },
+        {
+          "trial": 81,
+          "loss": 0.2537116244134858,
+          "max_cosine_full": 0.5801723625967578,
+          "iterations": 73,
+          "status": 0
+        },
+        {
+          "trial": 82,
+          "loss": 0.2537116244134827,
+          "max_cosine_full": 0.5801723730723994,
+          "iterations": 86,
+          "status": 0
+        },
+        {
+          "trial": 83,
+          "loss": 0.2986735392675909,
+          "max_cosine_full": 0.5862576057864172,
+          "iterations": 126,
+          "status": 0
+        },
+        {
+          "trial": 84,
+          "loss": 0.31725901713823745,
+          "max_cosine_full": 0.5826601254125622,
+          "iterations": 107,
+          "status": 0
+        },
+        {
+          "trial": 85,
+          "loss": 0.25371162441348216,
+          "max_cosine_full": 0.5801723694059587,
+          "iterations": 68,
+          "status": 0
+        },
+        {
+          "trial": 86,
+          "loss": 0.25371162441348316,
+          "max_cosine_full": 0.5801723669801724,
+          "iterations": 100,
+          "status": 0
+        },
+        {
+          "trial": 87,
+          "loss": 0.3022346424835718,
+          "max_cosine_full": 0.5833936389266773,
+          "iterations": 113,
+          "status": 0
+        },
+        {
+          "trial": 88,
+          "loss": 0.2625524916177656,
+          "max_cosine_full": 0.6203219344066231,
+          "iterations": 139,
+          "status": 0
+        },
+        {
+          "trial": 89,
+          "loss": 0.2537116244134817,
+          "max_cosine_full": 0.5801723622547503,
+          "iterations": 75,
+          "status": 0
+        },
+        {
+          "trial": 90,
+          "loss": 0.25371162441348033,
+          "max_cosine_full": 0.5801723617256956,
+          "iterations": 80,
+          "status": 0
+        },
+        {
+          "trial": 91,
+          "loss": 0.29483239793069926,
+          "max_cosine_full": 0.5907794168008005,
+          "iterations": 150,
+          "status": 0
+        },
+        {
+          "trial": 92,
+          "loss": 0.26982083359368475,
+          "max_cosine_full": 0.580495934566486,
+          "iterations": 249,
+          "status": 0
+        },
+        {
+          "trial": 93,
+          "loss": 0.2537116244134796,
+          "max_cosine_full": 0.5801723675538486,
+          "iterations": 76,
+          "status": 0
+        },
+        {
+          "trial": 94,
+          "loss": 0.25371162441348044,
+          "max_cosine_full": 0.5801723682411583,
+          "iterations": 99,
+          "status": 0
+        },
+        {
+          "trial": 95,
+          "loss": 0.2990882520000688,
+          "max_cosine_full": 0.5779224059790781,
+          "iterations": 156,
+          "status": 0
+        },
+        {
+          "trial": 96,
+          "loss": 0.3139009542504088,
+          "max_cosine_full": 0.5991427855746342,
+          "iterations": 90,
+          "status": 0
+        },
+        {
+          "trial": 97,
+          "loss": 0.2537116244134825,
+          "max_cosine_full": 0.580172367592616,
+          "iterations": 76,
+          "status": 0
+        },
+        {
+          "trial": 98,
+          "loss": 0.25371162441348194,
+          "max_cosine_full": 0.5801723617449812,
+          "iterations": 87,
+          "status": 0
+        },
+        {
+          "trial": 99,
+          "loss": 0.325862370597916,
+          "max_cosine_full": 0.603523351937053,
+          "iterations": 107,
+          "status": 0
+        },
+        {
+          "trial": 100,
+          "loss": 0.28695877490967375,
+          "max_cosine_full": 0.5869360724315238,
+          "iterations": 241,
+          "status": 0
+        },
+        {
+          "trial": 101,
+          "loss": 0.25371162441348105,
+          "max_cosine_full": 0.580172364294773,
+          "iterations": 73,
+          "status": 0
+        },
+        {
+          "trial": 102,
+          "loss": 0.2537116244134813,
+          "max_cosine_full": 0.5801723641428845,
+          "iterations": 89,
+          "status": 0
+        },
+        {
+          "trial": 103,
+          "loss": 0.29552732273284266,
+          "max_cosine_full": 0.5845999732180399,
+          "iterations": 174,
+          "status": 0
+        },
+        {
+          "trial": 104,
+          "loss": 0.3221318975215756,
+          "max_cosine_full": 0.5836922361744034,
+          "iterations": 141,
+          "status": 0
+        },
+        {
+          "trial": 105,
+          "loss": 0.2537116244134807,
+          "max_cosine_full": 0.5801723623817785,
+          "iterations": 67,
+          "status": 0
+        },
+        {
+          "trial": 106,
+          "loss": 0.25371162441348066,
+          "max_cosine_full": 0.5801723655914219,
+          "iterations": 95,
+          "status": 0
+        },
+        {
+          "trial": 107,
+          "loss": 0.25371162441348,
+          "max_cosine_full": 0.5801723659511072,
+          "iterations": 193,
+          "status": 0
+        },
+        {
+          "trial": 108,
+          "loss": 0.3022628754564849,
+          "max_cosine_full": 0.5739652747184371,
+          "iterations": 191,
+          "status": 0
+        },
+        {
+          "trial": 109,
+          "loss": 0.2537116244134846,
+          "max_cosine_full": 0.5801723835697844,
+          "iterations": 72,
+          "status": 0
+        },
+        {
+          "trial": 110,
+          "loss": 0.25371162441348294,
+          "max_cosine_full": 0.5801723593110305,
+          "iterations": 98,
+          "status": 0
+        },
+        {
+          "trial": 111,
+          "loss": 0.34640450489291935,
+          "max_cosine_full": 0.6120843173456728,
+          "iterations": 126,
+          "status": 0
+        },
+        {
+          "trial": 112,
+          "loss": 0.3341221013108362,
+          "max_cosine_full": 0.6064100219809461,
+          "iterations": 160,
+          "status": 0
+        },
+        {
+          "trial": 113,
+          "loss": 0.2537116244134811,
+          "max_cosine_full": 0.5801723637306355,
+          "iterations": 78,
+          "status": 0
+        },
+        {
+          "trial": 114,
+          "loss": 0.25371162441348133,
+          "max_cosine_full": 0.5801723669955737,
+          "iterations": 82,
+          "status": 0
+        },
+        {
+          "trial": 115,
+          "loss": 0.3036945966797383,
+          "max_cosine_full": 0.6058261949314079,
+          "iterations": 169,
+          "status": 0
+        },
+        {
+          "trial": 116,
+          "loss": 0.34735736919794946,
+          "max_cosine_full": 0.5932318267505923,
+          "iterations": 115,
+          "status": 0
+        },
+        {
+          "trial": 117,
+          "loss": 0.25371162441347983,
+          "max_cosine_full": 0.5801723654998298,
+          "iterations": 75,
+          "status": 0
+        },
+        {
+          "trial": 118,
+          "loss": 0.25371162441348327,
+          "max_cosine_full": 0.5801723685011513,
+          "iterations": 89,
+          "status": 0
+        },
+        {
+          "trial": 119,
+          "loss": 0.3068592774685133,
+          "max_cosine_full": 0.5764446331663439,
+          "iterations": 208,
+          "status": 0
+        },
+        {
+          "trial": 120,
+          "loss": 0.3254935626620651,
+          "max_cosine_full": 0.590084405724053,
+          "iterations": 119,
+          "status": 0
+        },
+        {
+          "trial": 121,
+          "loss": 0.2537116244134877,
+          "max_cosine_full": 0.5801723694867745,
+          "iterations": 74,
+          "status": 0
+        },
+        {
+          "trial": 122,
+          "loss": 0.2537116244134803,
+          "max_cosine_full": 0.5801723656658907,
+          "iterations": 92,
+          "status": 0
+        },
+        {
+          "trial": 123,
+          "loss": 0.28849166758965605,
+          "max_cosine_full": 0.5764944197843231,
+          "iterations": 255,
+          "status": 0
+        },
+        {
+          "trial": 124,
+          "loss": 0.3076970962204685,
+          "max_cosine_full": 0.5895065374581722,
+          "iterations": 148,
+          "status": 0
+        },
+        {
+          "trial": 125,
+          "loss": 0.25371162441348155,
+          "max_cosine_full": 0.580172368848559,
+          "iterations": 83,
+          "status": 0
+        },
+        {
+          "trial": 126,
+          "loss": 0.25371162441348183,
+          "max_cosine_full": 0.5801723600769642,
+          "iterations": 106,
+          "status": 2
+        },
+        {
+          "trial": 127,
+          "loss": 0.31993619884403013,
+          "max_cosine_full": 0.5840335247830185,
+          "iterations": 92,
+          "status": 0
+        },
+        {
+          "trial": 128,
+          "loss": 0.2754650982476599,
+          "max_cosine_full": 0.5928452288908064,
+          "iterations": 207,
+          "status": 0
+        },
+        {
+          "trial": 129,
+          "loss": 0.2537116244134822,
+          "max_cosine_full": 0.5801723710778894,
+          "iterations": 77,
+          "status": 0
+        },
+        {
+          "trial": 130,
+          "loss": 0.2537116244134804,
+          "max_cosine_full": 0.5801723690657569,
+          "iterations": 82,
+          "status": 0
+        },
+        {
+          "trial": 131,
+          "loss": 0.3346496467079966,
+          "max_cosine_full": 0.6229102558248113,
+          "iterations": 144,
+          "status": 0
+        },
+        {
+          "trial": 132,
+          "loss": 0.3148067815513971,
+          "max_cosine_full": 0.5902134622353039,
+          "iterations": 158,
+          "status": 0
+        },
+        {
+          "trial": 133,
+          "loss": 0.2537116244134815,
+          "max_cosine_full": 0.5801723599704576,
+          "iterations": 74,
+          "status": 0
+        },
+        {
+          "trial": 134,
+          "loss": 0.2537116244134831,
+          "max_cosine_full": 0.5801723679251165,
+          "iterations": 92,
+          "status": 0
+        },
+        {
+          "trial": 135,
+          "loss": 0.30029012118078247,
+          "max_cosine_full": 0.5899928190727246,
+          "iterations": 113,
+          "status": 0
+        },
+        {
+          "trial": 136,
+          "loss": 0.32211569332128953,
+          "max_cosine_full": 0.6132808713996097,
+          "iterations": 143,
+          "status": 0
+        },
+        {
+          "trial": 137,
+          "loss": 0.2537116244134834,
+          "max_cosine_full": 0.5801723562922775,
+          "iterations": 68,
+          "status": 0
+        },
+        {
+          "trial": 138,
+          "loss": 0.2537116244134817,
+          "max_cosine_full": 0.580172365011217,
+          "iterations": 92,
+          "status": 0
+        },
+        {
+          "trial": 139,
+          "loss": 0.28682133587839276,
+          "max_cosine_full": 0.59452895082972,
+          "iterations": 155,
+          "status": 0
+        },
+        {
+          "trial": 140,
+          "loss": 0.29666485781868757,
+          "max_cosine_full": 0.6149489549476773,
+          "iterations": 176,
+          "status": 0
+        },
+        {
+          "trial": 141,
+          "loss": 0.25371162441348133,
+          "max_cosine_full": 0.5801723608211986,
+          "iterations": 75,
+          "status": 0
+        },
+        {
+          "trial": 142,
+          "loss": 0.25371162441348105,
+          "max_cosine_full": 0.5801723702836762,
+          "iterations": 93,
+          "status": 0
+        },
+        {
+          "trial": 143,
+          "loss": 0.25998642130744687,
+          "max_cosine_full": 0.5761345636608897,
+          "iterations": 146,
+          "status": 0
+        },
+        {
+          "trial": 144,
+          "loss": 0.2740707198584056,
+          "max_cosine_full": 0.607308331747301,
+          "iterations": 168,
+          "status": 0
+        },
+        {
+          "trial": 145,
+          "loss": 0.25371162441348094,
+          "max_cosine_full": 0.5801723630471307,
+          "iterations": 79,
+          "status": 0
+        },
+        {
+          "trial": 146,
+          "loss": 0.2537116244134826,
+          "max_cosine_full": 0.5801723698177247,
+          "iterations": 96,
+          "status": 0
+        },
+        {
+          "trial": 147,
+          "loss": 0.30638207412967866,
+          "max_cosine_full": 0.5827217000147675,
+          "iterations": 162,
+          "status": 0
+        },
+        {
+          "trial": 148,
+          "loss": 0.3158647380193649,
+          "max_cosine_full": 0.5915986753617962,
+          "iterations": 112,
+          "status": 0
+        },
+        {
+          "trial": 149,
+          "loss": 0.25371162441348283,
+          "max_cosine_full": 0.5801723550437815,
+          "iterations": 77,
+          "status": 0
+        },
+        {
+          "trial": 150,
+          "loss": 0.2537116244134864,
+          "max_cosine_full": 0.5801723811671823,
+          "iterations": 82,
+          "status": 0
+        },
+        {
+          "trial": 151,
+          "loss": 0.2599864213074456,
+          "max_cosine_full": 0.5761345674015701,
+          "iterations": 175,
+          "status": 0
+        },
+        {
+          "trial": 152,
+          "loss": 0.33350497551875924,
+          "max_cosine_full": 0.5848007111072855,
+          "iterations": 200,
+          "status": 0
+        },
+        {
+          "trial": 153,
+          "loss": 0.25371162441347994,
+          "max_cosine_full": 0.5801723655643614,
+          "iterations": 76,
+          "status": 0
+        },
+        {
+          "trial": 154,
+          "loss": 0.2537116244134855,
+          "max_cosine_full": 0.5801723521228394,
+          "iterations": 88,
+          "status": 0
+        },
+        {
+          "trial": 155,
+          "loss": 0.2956938287751921,
+          "max_cosine_full": 0.598416241178534,
+          "iterations": 206,
+          "status": 0
+        },
+        {
+          "trial": 156,
+          "loss": 0.31683427149795096,
+          "max_cosine_full": 0.6260079061405447,
+          "iterations": 152,
+          "status": 0
+        },
+        {
+          "trial": 157,
+          "loss": 0.2537116244134811,
+          "max_cosine_full": 0.5801723706753626,
+          "iterations": 78,
+          "status": 0
+        },
+        {
+          "trial": 158,
+          "loss": 0.25371162441348016,
+          "max_cosine_full": 0.5801723621476109,
+          "iterations": 93,
+          "status": 0
+        },
+        {
+          "trial": 159,
+          "loss": 0.3673227589713379,
+          "max_cosine_full": 0.5983928901110631,
+          "iterations": 141,
+          "status": 0
+        }
+      ],
+      "certificate": "Numerical optimization only. Failed arrays are not kissing configurations.",
+      "restart_limit": 160,
+      "restart_wall_budget_seconds": 55,
+      "wall_budget_checked_between_restarts": true,
+      "optimizer_max_iterations": 3000
+    },
+    {
+      "dimension": 6,
+      "group_order": 7,
+      "seed_orbits": 11,
+      "fixed_pole": false,
+      "target_cardinality": 77,
+      "frequencies": [
+        1,
+        2,
+        3
+      ],
+      "trials_completed": 160,
+      "seconds": 3.1762074610001036,
+      "best_loss": 0.17949712298001266,
+      "best_max_cosine": 0.55335118907266,
+      "admissible_numerically": false,
+      "file": "asym_d6_c7_k11_pole0_f1,2,3.npz",
+      "trials": [
+        {
+          "trial": 0,
+          "loss": 0.23847145914793538,
+          "max_cosine_full": 0.6035285423146863,
+          "iterations": 223,
+          "status": 0
+        },
+        {
+          "trial": 1,
+          "loss": 0.23847145914793508,
+          "max_cosine_full": 0.6035285322810323,
+          "iterations": 64,
+          "status": 0
+        },
+        {
+          "trial": 2,
+          "loss": 0.23851549641024206,
+          "max_cosine_full": 0.6005436423427702,
+          "iterations": 96,
+          "status": 0
+        },
+        {
+          "trial": 3,
+          "loss": 0.21884237279781138,
+          "max_cosine_full": 0.6111172303284481,
+          "iterations": 150,
+          "status": 0
+        },
+        {
+          "trial": 4,
+          "loss": 0.2659040324699979,
+          "max_cosine_full": 0.5975852936723018,
+          "iterations": 89,
+          "status": 0
+        },
+        {
+          "trial": 5,
+          "loss": 0.2188423727978112,
+          "max_cosine_full": 0.6111172297810717,
+          "iterations": 64,
+          "status": 0
+        },
+        {
+          "trial": 6,
+          "loss": 0.2183182585054329,
+          "max_cosine_full": 0.6024653729775455,
+          "iterations": 88,
+          "status": 0
+        },
+        {
+          "trial": 7,
+          "loss": 0.2364496949830449,
+          "max_cosine_full": 0.585946733300279,
+          "iterations": 97,
+          "status": 0
+        },
+        {
+          "trial": 8,
+          "loss": 0.2469875443979198,
+          "max_cosine_full": 0.6156982713578968,
+          "iterations": 102,
+          "status": 0
+        },
+        {
+          "trial": 9,
+          "loss": 0.21831825850543335,
+          "max_cosine_full": 0.6024653706392745,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 10,
+          "loss": 0.21831825850543443,
+          "max_cosine_full": 0.6024653772404057,
+          "iterations": 72,
+          "status": 0
+        },
+        {
+          "trial": 11,
+          "loss": 0.22379835073574983,
+          "max_cosine_full": 0.5975582909692528,
+          "iterations": 125,
+          "status": 0
+        },
+        {
+          "trial": 12,
+          "loss": 0.2524809102676877,
+          "max_cosine_full": 0.582859653029846,
+          "iterations": 106,
+          "status": 0
+        },
+        {
+          "trial": 13,
+          "loss": 0.21831825850543712,
+          "max_cosine_full": 0.6024653674288293,
+          "iterations": 44,
+          "status": 0
+        },
+        {
+          "trial": 14,
+          "loss": 0.21831825850543385,
+          "max_cosine_full": 0.6024653821717846,
+          "iterations": 83,
+          "status": 0
+        },
+        {
+          "trial": 15,
+          "loss": 0.29926298319944344,
+          "max_cosine_full": 0.5945615295021738,
+          "iterations": 107,
+          "status": 0
+        },
+        {
+          "trial": 16,
+          "loss": 0.26482100588836444,
+          "max_cosine_full": 0.5919326592972068,
+          "iterations": 131,
+          "status": 0
+        },
+        {
+          "trial": 17,
+          "loss": 0.21831825850543587,
+          "max_cosine_full": 0.6024653822260791,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 18,
+          "loss": 0.218318258505433,
+          "max_cosine_full": 0.6024653781003279,
+          "iterations": 74,
+          "status": 0
+        },
+        {
+          "trial": 19,
+          "loss": 0.26325102756230234,
+          "max_cosine_full": 0.5928059330701647,
+          "iterations": 94,
+          "status": 0
+        },
+        {
+          "trial": 20,
+          "loss": 0.1794971229800137,
+          "max_cosine_full": 0.5533511897583999,
+          "iterations": 126,
+          "status": 0
+        },
+        {
+          "trial": 21,
+          "loss": 0.17949712298001425,
+          "max_cosine_full": 0.5533511911524908,
+          "iterations": 48,
+          "status": 0
+        },
+        {
+          "trial": 22,
+          "loss": 0.17949712298001508,
+          "max_cosine_full": 0.5533511917659121,
+          "iterations": 61,
+          "status": 0
+        },
+        {
+          "trial": 23,
+          "loss": 0.27647003803403053,
+          "max_cosine_full": 0.5901407382865135,
+          "iterations": 123,
+          "status": 0
+        },
+        {
+          "trial": 24,
+          "loss": 0.21884237279781232,
+          "max_cosine_full": 0.6111172160670895,
+          "iterations": 104,
+          "status": 0
+        },
+        {
+          "trial": 25,
+          "loss": 0.1794971229800135,
+          "max_cosine_full": 0.5533511892695395,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 26,
+          "loss": 0.17949712298001322,
+          "max_cosine_full": 0.5533511904535364,
+          "iterations": 56,
+          "status": 0
+        },
+        {
+          "trial": 27,
+          "loss": 0.22197375965635896,
+          "max_cosine_full": 0.5764521599703747,
+          "iterations": 200,
+          "status": 0
+        },
+        {
+          "trial": 28,
+          "loss": 0.2583797811921099,
+          "max_cosine_full": 0.5929694343211028,
+          "iterations": 124,
+          "status": 0
+        },
+        {
+          "trial": 29,
+          "loss": 0.17949712298001674,
+          "max_cosine_full": 0.5533511968707414,
+          "iterations": 48,
+          "status": 0
+        },
+        {
+          "trial": 30,
+          "loss": 0.17949712298001308,
+          "max_cosine_full": 0.5533511894345217,
+          "iterations": 66,
+          "status": 0
+        },
+        {
+          "trial": 31,
+          "loss": 0.24366231593556473,
+          "max_cosine_full": 0.6196022958272697,
+          "iterations": 121,
+          "status": 0
+        },
+        {
+          "trial": 32,
+          "loss": 0.31791926303731344,
+          "max_cosine_full": 0.6440173636315694,
+          "iterations": 152,
+          "status": 0
+        },
+        {
+          "trial": 33,
+          "loss": 0.17949712298001358,
+          "max_cosine_full": 0.5533511875345077,
+          "iterations": 51,
+          "status": 0
+        },
+        {
+          "trial": 34,
+          "loss": 0.17949712298001466,
+          "max_cosine_full": 0.5533511904864783,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 35,
+          "loss": 0.24073416148459026,
+          "max_cosine_full": 0.587501486249985,
+          "iterations": 106,
+          "status": 0
+        },
+        {
+          "trial": 36,
+          "loss": 0.2565951834167346,
+          "max_cosine_full": 0.5799421554386789,
+          "iterations": 170,
+          "status": 0
+        },
+        {
+          "trial": 37,
+          "loss": 0.17949712298001472,
+          "max_cosine_full": 0.553351195317751,
+          "iterations": 44,
+          "status": 0
+        },
+        {
+          "trial": 38,
+          "loss": 0.1794971229800149,
+          "max_cosine_full": 0.5533511947360735,
+          "iterations": 64,
+          "status": 0
+        },
+        {
+          "trial": 39,
+          "loss": 0.2703970599796379,
+          "max_cosine_full": 0.603500710497725,
+          "iterations": 140,
+          "status": 0
+        },
+        {
+          "trial": 40,
+          "loss": 0.21884237279781307,
+          "max_cosine_full": 0.6111172185366729,
+          "iterations": 149,
+          "status": 0
+        },
+        {
+          "trial": 41,
+          "loss": 0.17949712298001413,
+          "max_cosine_full": 0.5533511927412638,
+          "iterations": 48,
+          "status": 0
+        },
+        {
+          "trial": 42,
+          "loss": 0.1794971229800172,
+          "max_cosine_full": 0.5533511884180762,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 43,
+          "loss": 0.2436623159355712,
+          "max_cosine_full": 0.619602301581398,
+          "iterations": 153,
+          "status": 0
+        },
+        {
+          "trial": 44,
+          "loss": 0.23854336884103539,
+          "max_cosine_full": 0.5844193402395657,
+          "iterations": 85,
+          "status": 0
+        },
+        {
+          "trial": 45,
+          "loss": 0.1794971229800135,
+          "max_cosine_full": 0.5533511910357319,
+          "iterations": 54,
+          "status": 0
+        },
+        {
+          "trial": 46,
+          "loss": 0.17949712298001347,
+          "max_cosine_full": 0.5533511850195513,
+          "iterations": 71,
+          "status": 0
+        },
+        {
+          "trial": 47,
+          "loss": 0.2183182585054342,
+          "max_cosine_full": 0.6024653748203959,
+          "iterations": 122,
+          "status": 0
+        },
+        {
+          "trial": 48,
+          "loss": 0.27316238988784947,
+          "max_cosine_full": 0.5813827258704211,
+          "iterations": 105,
+          "status": 0
+        },
+        {
+          "trial": 49,
+          "loss": 0.17949712298001483,
+          "max_cosine_full": 0.5533511912052144,
+          "iterations": 50,
+          "status": 0
+        },
+        {
+          "trial": 50,
+          "loss": 0.17949712298001422,
+          "max_cosine_full": 0.5533511925191108,
+          "iterations": 61,
+          "status": 0
+        },
+        {
+          "trial": 51,
+          "loss": 0.21884237279781055,
+          "max_cosine_full": 0.6111172265319352,
+          "iterations": 116,
+          "status": 0
+        },
+        {
+          "trial": 52,
+          "loss": 0.2435478749446237,
+          "max_cosine_full": 0.6060294546591564,
+          "iterations": 121,
+          "status": 0
+        },
+        {
+          "trial": 53,
+          "loss": 0.1794971229800138,
+          "max_cosine_full": 0.5533511899242852,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 54,
+          "loss": 0.17949712298001325,
+          "max_cosine_full": 0.5533511904185124,
+          "iterations": 56,
+          "status": 0
+        },
+        {
+          "trial": 55,
+          "loss": 0.23921426758179315,
+          "max_cosine_full": 0.5945922522933296,
+          "iterations": 103,
+          "status": 0
+        },
+        {
+          "trial": 56,
+          "loss": 0.25897190441414847,
+          "max_cosine_full": 0.5990538830484216,
+          "iterations": 133,
+          "status": 0
+        },
+        {
+          "trial": 57,
+          "loss": 0.17949712298001347,
+          "max_cosine_full": 0.5533511863661147,
+          "iterations": 53,
+          "status": 0
+        },
+        {
+          "trial": 58,
+          "loss": 0.17949712298001552,
+          "max_cosine_full": 0.5533512012434143,
+          "iterations": 62,
+          "status": 0
+        },
+        {
+          "trial": 59,
+          "loss": 0.28103075487928836,
+          "max_cosine_full": 0.601705210581861,
+          "iterations": 126,
+          "status": 0
+        },
+        {
+          "trial": 60,
+          "loss": 0.2589200816086654,
+          "max_cosine_full": 0.5786840457576486,
+          "iterations": 124,
+          "status": 0
+        },
+        {
+          "trial": 61,
+          "loss": 0.17949712298001808,
+          "max_cosine_full": 0.55335119129429,
+          "iterations": 47,
+          "status": 0
+        },
+        {
+          "trial": 62,
+          "loss": 0.17949712298001266,
+          "max_cosine_full": 0.55335118907266,
+          "iterations": 64,
+          "status": 0
+        },
+        {
+          "trial": 63,
+          "loss": 0.25352391693596743,
+          "max_cosine_full": 0.6164416369688818,
+          "iterations": 154,
+          "status": 0
+        },
+        {
+          "trial": 64,
+          "loss": 0.2631062089229026,
+          "max_cosine_full": 0.6080475849342326,
+          "iterations": 162,
+          "status": 0
+        },
+        {
+          "trial": 65,
+          "loss": 0.17949712298001397,
+          "max_cosine_full": 0.5533511884728877,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 66,
+          "loss": 0.1794971229800138,
+          "max_cosine_full": 0.553351187242674,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 67,
+          "loss": 0.25155800870613887,
+          "max_cosine_full": 0.579305753275439,
+          "iterations": 89,
+          "status": 0
+        },
+        {
+          "trial": 68,
+          "loss": 0.2188423727978122,
+          "max_cosine_full": 0.6111172180028769,
+          "iterations": 102,
+          "status": 0
+        },
+        {
+          "trial": 69,
+          "loss": 0.17949712298001402,
+          "max_cosine_full": 0.5533511875050804,
+          "iterations": 48,
+          "status": 0
+        },
+        {
+          "trial": 70,
+          "loss": 0.17949712298001486,
+          "max_cosine_full": 0.5533511908764741,
+          "iterations": 63,
+          "status": 0
+        },
+        {
+          "trial": 71,
+          "loss": 0.21884237279781157,
+          "max_cosine_full": 0.611117231757744,
+          "iterations": 111,
+          "status": 0
+        },
+        {
+          "trial": 72,
+          "loss": 0.2385154964102421,
+          "max_cosine_full": 0.6005436378926445,
+          "iterations": 137,
+          "status": 0
+        },
+        {
+          "trial": 73,
+          "loss": 0.17949712298001527,
+          "max_cosine_full": 0.553351186653655,
+          "iterations": 48,
+          "status": 0
+        },
+        {
+          "trial": 74,
+          "loss": 0.1794971229800149,
+          "max_cosine_full": 0.553351191814713,
+          "iterations": 53,
+          "status": 0
+        },
+        {
+          "trial": 75,
+          "loss": 0.22197375965635852,
+          "max_cosine_full": 0.576452158733093,
+          "iterations": 139,
+          "status": 0
+        },
+        {
+          "trial": 76,
+          "loss": 0.26198915317805166,
+          "max_cosine_full": 0.5802535962480507,
+          "iterations": 88,
+          "status": 0
+        },
+        {
+          "trial": 77,
+          "loss": 0.17949712298001352,
+          "max_cosine_full": 0.5533511912865695,
+          "iterations": 51,
+          "status": 0
+        },
+        {
+          "trial": 78,
+          "loss": 0.17949712298001375,
+          "max_cosine_full": 0.5533511867173632,
+          "iterations": 63,
+          "status": 0
+        },
+        {
+          "trial": 79,
+          "loss": 0.24217458266919525,
+          "max_cosine_full": 0.5830961850553019,
+          "iterations": 93,
+          "status": 0
+        },
+        {
+          "trial": 80,
+          "loss": 0.24454159661878608,
+          "max_cosine_full": 0.5909111272596119,
+          "iterations": 111,
+          "status": 0
+        },
+        {
+          "trial": 81,
+          "loss": 0.1794971229800174,
+          "max_cosine_full": 0.5533511984527902,
+          "iterations": 49,
+          "status": 0
+        },
+        {
+          "trial": 82,
+          "loss": 0.1794971229800144,
+          "max_cosine_full": 0.5533511961164218,
+          "iterations": 60,
+          "status": 0
+        },
+        {
+          "trial": 83,
+          "loss": 0.23921426758179337,
+          "max_cosine_full": 0.5945922490814393,
+          "iterations": 105,
+          "status": 0
+        },
+        {
+          "trial": 84,
+          "loss": 0.2559266483368161,
+          "max_cosine_full": 0.5950562420863776,
+          "iterations": 132,
+          "status": 0
+        },
+        {
+          "trial": 85,
+          "loss": 0.1794971229800136,
+          "max_cosine_full": 0.5533511909507949,
+          "iterations": 47,
+          "status": 0
+        },
+        {
+          "trial": 86,
+          "loss": 0.17949712298001375,
+          "max_cosine_full": 0.5533511909330715,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 87,
+          "loss": 0.24939862620813202,
+          "max_cosine_full": 0.5985571398870138,
+          "iterations": 129,
+          "status": 0
+        },
+        {
+          "trial": 88,
+          "loss": 0.2709990218975875,
+          "max_cosine_full": 0.6184752061122507,
+          "iterations": 120,
+          "status": 0
+        },
+        {
+          "trial": 89,
+          "loss": 0.17949712298001405,
+          "max_cosine_full": 0.553351192380578,
+          "iterations": 50,
+          "status": 0
+        },
+        {
+          "trial": 90,
+          "loss": 0.17949712298001413,
+          "max_cosine_full": 0.5533511910419499,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 91,
+          "loss": 0.2684002430588865,
+          "max_cosine_full": 0.6045173875815528,
+          "iterations": 91,
+          "status": 0
+        },
+        {
+          "trial": 92,
+          "loss": 0.2863711623832147,
+          "max_cosine_full": 0.6082542530324122,
+          "iterations": 95,
+          "status": 0
+        },
+        {
+          "trial": 93,
+          "loss": 0.17949712298001474,
+          "max_cosine_full": 0.5533511893848885,
+          "iterations": 51,
+          "status": 0
+        },
+        {
+          "trial": 94,
+          "loss": 0.17949712298001397,
+          "max_cosine_full": 0.5533511932472078,
+          "iterations": 62,
+          "status": 0
+        },
+        {
+          "trial": 95,
+          "loss": 0.24757564412413757,
+          "max_cosine_full": 0.6084818823891753,
+          "iterations": 88,
+          "status": 0
+        },
+        {
+          "trial": 96,
+          "loss": 0.26055190315097115,
+          "max_cosine_full": 0.5986725247369449,
+          "iterations": 130,
+          "status": 0
+        },
+        {
+          "trial": 97,
+          "loss": 0.1794971229800131,
+          "max_cosine_full": 0.5533511893892334,
+          "iterations": 54,
+          "status": 0
+        },
+        {
+          "trial": 98,
+          "loss": 0.17949712298001416,
+          "max_cosine_full": 0.5533511894546058,
+          "iterations": 58,
+          "status": 0
+        },
+        {
+          "trial": 99,
+          "loss": 0.21884237279781213,
+          "max_cosine_full": 0.6111172224235968,
+          "iterations": 139,
+          "status": 0
+        },
+        {
+          "trial": 100,
+          "loss": 0.2687898321918479,
+          "max_cosine_full": 0.5903584283242668,
+          "iterations": 111,
+          "status": 0
+        },
+        {
+          "trial": 101,
+          "loss": 0.17949712298001402,
+          "max_cosine_full": 0.553351190668173,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 102,
+          "loss": 0.17949712298001372,
+          "max_cosine_full": 0.5533511922225117,
+          "iterations": 63,
+          "status": 0
+        },
+        {
+          "trial": 103,
+          "loss": 0.2846448636417527,
+          "max_cosine_full": 0.5891366840109169,
+          "iterations": 101,
+          "status": 0
+        },
+        {
+          "trial": 104,
+          "loss": 0.23315071897047013,
+          "max_cosine_full": 0.603650126761258,
+          "iterations": 94,
+          "status": 0
+        },
+        {
+          "trial": 105,
+          "loss": 0.17949712298001375,
+          "max_cosine_full": 0.5533511882072786,
+          "iterations": 50,
+          "status": 0
+        },
+        {
+          "trial": 106,
+          "loss": 0.1794971229800136,
+          "max_cosine_full": 0.5533511915346913,
+          "iterations": 56,
+          "status": 0
+        },
+        {
+          "trial": 107,
+          "loss": 0.26975072469950734,
+          "max_cosine_full": 0.5937708316631632,
+          "iterations": 132,
+          "status": 0
+        },
+        {
+          "trial": 108,
+          "loss": 0.28006375256422,
+          "max_cosine_full": 0.6026916345965732,
+          "iterations": 124,
+          "status": 0
+        },
+        {
+          "trial": 109,
+          "loss": 0.1794971229800143,
+          "max_cosine_full": 0.5533511928708834,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 110,
+          "loss": 0.17949712298001724,
+          "max_cosine_full": 0.5533511922881974,
+          "iterations": 61,
+          "status": 0
+        },
+        {
+          "trial": 111,
+          "loss": 0.23846065002288486,
+          "max_cosine_full": 0.6034626784670177,
+          "iterations": 187,
+          "status": 0
+        },
+        {
+          "trial": 112,
+          "loss": 0.2309287097391219,
+          "max_cosine_full": 0.5905319584568879,
+          "iterations": 164,
+          "status": 0
+        },
+        {
+          "trial": 113,
+          "loss": 0.17949712298001352,
+          "max_cosine_full": 0.5533511894701569,
+          "iterations": 47,
+          "status": 0
+        },
+        {
+          "trial": 114,
+          "loss": 0.17949712298001547,
+          "max_cosine_full": 0.5533511913123078,
+          "iterations": 61,
+          "status": 0
+        },
+        {
+          "trial": 115,
+          "loss": 0.230928709739121,
+          "max_cosine_full": 0.59053194704345,
+          "iterations": 160,
+          "status": 0
+        },
+        {
+          "trial": 116,
+          "loss": 0.2913496267426108,
+          "max_cosine_full": 0.6137075738160387,
+          "iterations": 101,
+          "status": 0
+        },
+        {
+          "trial": 117,
+          "loss": 0.1794971229800164,
+          "max_cosine_full": 0.553351190679048,
+          "iterations": 47,
+          "status": 0
+        },
+        {
+          "trial": 118,
+          "loss": 0.1794971229800148,
+          "max_cosine_full": 0.5533511921511535,
+          "iterations": 65,
+          "status": 0
+        },
+        {
+          "trial": 119,
+          "loss": 0.2601444995824551,
+          "max_cosine_full": 0.5846976572932427,
+          "iterations": 82,
+          "status": 0
+        },
+        {
+          "trial": 120,
+          "loss": 0.22197375965635893,
+          "max_cosine_full": 0.5764521598740646,
+          "iterations": 88,
+          "status": 0
+        },
+        {
+          "trial": 121,
+          "loss": 0.17949712298001375,
+          "max_cosine_full": 0.5533511902373888,
+          "iterations": 50,
+          "status": 0
+        },
+        {
+          "trial": 122,
+          "loss": 0.17949712298001327,
+          "max_cosine_full": 0.5533511907363072,
+          "iterations": 53,
+          "status": 0
+        },
+        {
+          "trial": 123,
+          "loss": 0.2565951834167348,
+          "max_cosine_full": 0.5799421657137915,
+          "iterations": 116,
+          "status": 0
+        },
+        {
+          "trial": 124,
+          "loss": 0.24698754439792198,
+          "max_cosine_full": 0.6156982586591062,
+          "iterations": 92,
+          "status": 0
+        },
+        {
+          "trial": 125,
+          "loss": 0.17949712298001597,
+          "max_cosine_full": 0.5533511875546219,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 126,
+          "loss": 0.17949712298001344,
+          "max_cosine_full": 0.5533511857419738,
+          "iterations": 68,
+          "status": 0
+        },
+        {
+          "trial": 127,
+          "loss": 0.2535239169359669,
+          "max_cosine_full": 0.6164416389146518,
+          "iterations": 113,
+          "status": 0
+        },
+        {
+          "trial": 128,
+          "loss": 0.28696865138669414,
+          "max_cosine_full": 0.6188748745271765,
+          "iterations": 85,
+          "status": 0
+        },
+        {
+          "trial": 129,
+          "loss": 0.1794971229800152,
+          "max_cosine_full": 0.5533511945656945,
+          "iterations": 44,
+          "status": 0
+        },
+        {
+          "trial": 130,
+          "loss": 0.17949712298001397,
+          "max_cosine_full": 0.5533511910605108,
+          "iterations": 65,
+          "status": 0
+        },
+        {
+          "trial": 131,
+          "loss": 0.21884237279781388,
+          "max_cosine_full": 0.6111172153872414,
+          "iterations": 161,
+          "status": 0
+        },
+        {
+          "trial": 132,
+          "loss": 0.26423044263160056,
+          "max_cosine_full": 0.5882613645203876,
+          "iterations": 197,
+          "status": 0
+        },
+        {
+          "trial": 133,
+          "loss": 0.1794971229800143,
+          "max_cosine_full": 0.5533511934544045,
+          "iterations": 53,
+          "status": 0
+        },
+        {
+          "trial": 134,
+          "loss": 0.17949712298001488,
+          "max_cosine_full": 0.5533511929025973,
+          "iterations": 57,
+          "status": 0
+        },
+        {
+          "trial": 135,
+          "loss": 0.24698754439792048,
+          "max_cosine_full": 0.6156982740675443,
+          "iterations": 119,
+          "status": 0
+        },
+        {
+          "trial": 136,
+          "loss": 0.2670252872973942,
+          "max_cosine_full": 0.6014586744162741,
+          "iterations": 118,
+          "status": 0
+        },
+        {
+          "trial": 137,
+          "loss": 0.1794971229800137,
+          "max_cosine_full": 0.553351192493079,
+          "iterations": 50,
+          "status": 0
+        },
+        {
+          "trial": 138,
+          "loss": 0.179497122980016,
+          "max_cosine_full": 0.5533511923587673,
+          "iterations": 58,
+          "status": 0
+        },
+        {
+          "trial": 139,
+          "loss": 0.26797416052967815,
+          "max_cosine_full": 0.595966332470457,
+          "iterations": 89,
+          "status": 0
+        },
+        {
+          "trial": 140,
+          "loss": 0.2447334929567307,
+          "max_cosine_full": 0.5783325230012214,
+          "iterations": 143,
+          "status": 0
+        },
+        {
+          "trial": 141,
+          "loss": 0.17949712298001314,
+          "max_cosine_full": 0.5533511886005615,
+          "iterations": 49,
+          "status": 0
+        },
+        {
+          "trial": 142,
+          "loss": 0.17949712298001427,
+          "max_cosine_full": 0.5533511901234263,
+          "iterations": 59,
+          "status": 0
+        },
+        {
+          "trial": 143,
+          "loss": 0.2449982104528079,
+          "max_cosine_full": 0.5854073845583924,
+          "iterations": 120,
+          "status": 0
+        },
+        {
+          "trial": 144,
+          "loss": 0.29772293361393354,
+          "max_cosine_full": 0.6008314837611975,
+          "iterations": 134,
+          "status": 0
+        },
+        {
+          "trial": 145,
+          "loss": 0.17949712298002019,
+          "max_cosine_full": 0.5533511968194733,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 146,
+          "loss": 0.1794971229800132,
+          "max_cosine_full": 0.5533511901788294,
+          "iterations": 65,
+          "status": 0
+        },
+        {
+          "trial": 147,
+          "loss": 0.2436623159355638,
+          "max_cosine_full": 0.6196022968466353,
+          "iterations": 115,
+          "status": 0
+        },
+        {
+          "trial": 148,
+          "loss": 0.23854336884103639,
+          "max_cosine_full": 0.5844193380391307,
+          "iterations": 135,
+          "status": 0
+        },
+        {
+          "trial": 149,
+          "loss": 0.1794971229800137,
+          "max_cosine_full": 0.5533511888447125,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 150,
+          "loss": 0.17949712298001347,
+          "max_cosine_full": 0.5533511901307023,
+          "iterations": 61,
+          "status": 0
+        },
+        {
+          "trial": 151,
+          "loss": 0.27679449952786217,
+          "max_cosine_full": 0.6087743836284316,
+          "iterations": 109,
+          "status": 0
+        },
+        {
+          "trial": 152,
+          "loss": 0.22197375965635832,
+          "max_cosine_full": 0.576452156264185,
+          "iterations": 122,
+          "status": 0
+        },
+        {
+          "trial": 153,
+          "loss": 0.17949712298001322,
+          "max_cosine_full": 0.5533511932150287,
+          "iterations": 55,
+          "status": 0
+        },
+        {
+          "trial": 154,
+          "loss": 0.1794971229800138,
+          "max_cosine_full": 0.5533511901648731,
+          "iterations": 62,
+          "status": 0
+        },
+        {
+          "trial": 155,
+          "loss": 0.24073416148458937,
+          "max_cosine_full": 0.5875014845826089,
+          "iterations": 123,
+          "status": 0
+        },
+        {
+          "trial": 156,
+          "loss": 0.2530522955524389,
+          "max_cosine_full": 0.5840844730681961,
+          "iterations": 139,
+          "status": 0
+        },
+        {
+          "trial": 157,
+          "loss": 0.17949712298001438,
+          "max_cosine_full": 0.5533511918504506,
+          "iterations": 52,
+          "status": 0
+        },
+        {
+          "trial": 158,
+          "loss": 0.1794971229800134,
+          "max_cosine_full": 0.5533511880155969,
+          "iterations": 64,
+          "status": 0
+        },
+        {
+          "trial": 159,
+          "loss": 0.2645716941196399,
+          "max_cosine_full": 0.5864997034244871,
+          "iterations": 159,
+          "status": 0
+        }
+      ],
+      "certificate": "Numerical optimization only. Failed arrays are not kissing configurations.",
+      "restart_limit": 160,
+      "restart_wall_budget_seconds": 55,
+      "wall_budget_checked_between_restarts": true,
+      "optimizer_max_iterations": 3000
+    },
+    {
+      "dimension": 7,
+      "group_order": 7,
+      "seed_orbits": 18,
+      "fixed_pole": true,
+      "target_cardinality": 127,
+      "frequencies": [
+        1,
+        2,
+        3
+      ],
+      "trials_completed": 120,
+      "seconds": 6.028376283999933,
+      "best_loss": 0.06686574363058646,
+      "best_max_cosine": 0.5199562461899305,
+      "admissible_numerically": false,
+      "file": "asym_d7_c7_k18_pole1_f1,2,3.npz",
+      "trials": [
+        {
+          "trial": 0,
+          "loss": 0.5780129297340492,
+          "max_cosine_full": 0.6092838918197745,
+          "iterations": 213,
+          "status": 0
+        },
+        {
+          "trial": 1,
+          "loss": 0.5780129297340497,
+          "max_cosine_full": 0.6092838936988144,
+          "iterations": 83,
+          "status": 0
+        },
+        {
+          "trial": 2,
+          "loss": 0.578012929734052,
+          "max_cosine_full": 0.6092839026223112,
+          "iterations": 123,
+          "status": 0
+        },
+        {
+          "trial": 3,
+          "loss": 0.5701066449876155,
+          "max_cosine_full": 0.6047493275157831,
+          "iterations": 253,
+          "status": 0
+        },
+        {
+          "trial": 4,
+          "loss": 0.06686574363058652,
+          "max_cosine_full": 0.5199562468443042,
+          "iterations": 124,
+          "status": 0
+        },
+        {
+          "trial": 5,
+          "loss": 0.06686574363058655,
+          "max_cosine_full": 0.5199562461292105,
+          "iterations": 35,
+          "status": 0
+        },
+        {
+          "trial": 6,
+          "loss": 0.06686574363058695,
+          "max_cosine_full": 0.5199562478763997,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 7,
+          "loss": 0.6095539844378928,
+          "max_cosine_full": 0.6211484138018977,
+          "iterations": 251,
+          "status": 0
+        },
+        {
+          "trial": 8,
+          "loss": 0.5817445137543086,
+          "max_cosine_full": 0.5836725744744853,
+          "iterations": 227,
+          "status": 0
+        },
+        {
+          "trial": 9,
+          "loss": 0.0668657436305874,
+          "max_cosine_full": 0.5199562464112654,
+          "iterations": 34,
+          "status": 0
+        },
+        {
+          "trial": 10,
+          "loss": 0.06686574363058687,
+          "max_cosine_full": 0.5199562464705701,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 11,
+          "loss": 0.5816680704317962,
+          "max_cosine_full": 0.6086602383882341,
+          "iterations": 202,
+          "status": 0
+        },
+        {
+          "trial": 12,
+          "loss": 0.7095692982561131,
+          "max_cosine_full": 0.6069281385710273,
+          "iterations": 152,
+          "status": 0
+        },
+        {
+          "trial": 13,
+          "loss": 0.06686574363058673,
+          "max_cosine_full": 0.5199562461528507,
+          "iterations": 34,
+          "status": 0
+        },
+        {
+          "trial": 14,
+          "loss": 0.06686574363058673,
+          "max_cosine_full": 0.5199562457612498,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 15,
+          "loss": 0.6085087623911648,
+          "max_cosine_full": 0.5931691894781551,
+          "iterations": 210,
+          "status": 0
+        },
+        {
+          "trial": 16,
+          "loss": 0.6043113176192241,
+          "max_cosine_full": 0.6444788070162307,
+          "iterations": 179,
+          "status": 0
+        },
+        {
+          "trial": 17,
+          "loss": 0.06686574363058703,
+          "max_cosine_full": 0.519956246228963,
+          "iterations": 35,
+          "status": 0
+        },
+        {
+          "trial": 18,
+          "loss": 0.06686574363058834,
+          "max_cosine_full": 0.5199562478348293,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 19,
+          "loss": 0.432458519770041,
+          "max_cosine_full": 0.6028294126663659,
+          "iterations": 137,
+          "status": 0
+        },
+        {
+          "trial": 20,
+          "loss": 0.6211221088750167,
+          "max_cosine_full": 0.603274071772012,
+          "iterations": 159,
+          "status": 0
+        },
+        {
+          "trial": 21,
+          "loss": 0.06686574363058764,
+          "max_cosine_full": 0.5199562469242462,
+          "iterations": 38,
+          "status": 0
+        },
+        {
+          "trial": 22,
+          "loss": 0.06686574363058659,
+          "max_cosine_full": 0.5199562475871038,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 23,
+          "loss": 0.5464596188016798,
+          "max_cosine_full": 0.5915175158167696,
+          "iterations": 199,
+          "status": 0
+        },
+        {
+          "trial": 24,
+          "loss": 0.20944694557488025,
+          "max_cosine_full": 0.5946376245650066,
+          "iterations": 128,
+          "status": 0
+        },
+        {
+          "trial": 25,
+          "loss": 0.06686574363058662,
+          "max_cosine_full": 0.5199562465470488,
+          "iterations": 37,
+          "status": 0
+        },
+        {
+          "trial": 26,
+          "loss": 0.06686574363058775,
+          "max_cosine_full": 0.5199562478734927,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 27,
+          "loss": 0.5560901334139731,
+          "max_cosine_full": 0.5914239130381366,
+          "iterations": 200,
+          "status": 0
+        },
+        {
+          "trial": 28,
+          "loss": 0.5994558120972036,
+          "max_cosine_full": 0.6052239318438881,
+          "iterations": 172,
+          "status": 0
+        },
+        {
+          "trial": 29,
+          "loss": 0.06686574363058725,
+          "max_cosine_full": 0.5199562463731137,
+          "iterations": 36,
+          "status": 0
+        },
+        {
+          "trial": 30,
+          "loss": 0.06686574363058921,
+          "max_cosine_full": 0.5199562487783301,
+          "iterations": 44,
+          "status": 0
+        },
+        {
+          "trial": 31,
+          "loss": 0.5921065247234132,
+          "max_cosine_full": 0.6208750579634061,
+          "iterations": 154,
+          "status": 0
+        },
+        {
+          "trial": 32,
+          "loss": 0.23238491824129648,
+          "max_cosine_full": 0.5506039158737075,
+          "iterations": 250,
+          "status": 0
+        },
+        {
+          "trial": 33,
+          "loss": 0.06686574363058696,
+          "max_cosine_full": 0.5199562465191649,
+          "iterations": 35,
+          "status": 0
+        },
+        {
+          "trial": 34,
+          "loss": 0.06686574363058706,
+          "max_cosine_full": 0.5199562462051339,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 35,
+          "loss": 0.6533493243214029,
+          "max_cosine_full": 0.6185264387857902,
+          "iterations": 140,
+          "status": 0
+        },
+        {
+          "trial": 36,
+          "loss": 0.5427878490444757,
+          "max_cosine_full": 0.6029786202459968,
+          "iterations": 206,
+          "status": 0
+        },
+        {
+          "trial": 37,
+          "loss": 0.06686574363058675,
+          "max_cosine_full": 0.5199562462682861,
+          "iterations": 34,
+          "status": 0
+        },
+        {
+          "trial": 38,
+          "loss": 0.06686574363058698,
+          "max_cosine_full": 0.5199562482262015,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 39,
+          "loss": 0.6627265590832044,
+          "max_cosine_full": 0.6252410137099488,
+          "iterations": 129,
+          "status": 0
+        },
+        {
+          "trial": 40,
+          "loss": 0.4807987169084843,
+          "max_cosine_full": 0.5912399236748674,
+          "iterations": 183,
+          "status": 0
+        },
+        {
+          "trial": 41,
+          "loss": 0.0668657436305867,
+          "max_cosine_full": 0.5199562472807325,
+          "iterations": 34,
+          "status": 0
+        },
+        {
+          "trial": 42,
+          "loss": 0.0668657436305867,
+          "max_cosine_full": 0.5199562461854392,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 43,
+          "loss": 0.5799219857944666,
+          "max_cosine_full": 0.6010453250457078,
+          "iterations": 177,
+          "status": 0
+        },
+        {
+          "trial": 44,
+          "loss": 0.3122192279378001,
+          "max_cosine_full": 0.5880269067076263,
+          "iterations": 106,
+          "status": 0
+        },
+        {
+          "trial": 45,
+          "loss": 0.06686574363058673,
+          "max_cosine_full": 0.5199562457777398,
+          "iterations": 34,
+          "status": 0
+        },
+        {
+          "trial": 46,
+          "loss": 0.06686574363058709,
+          "max_cosine_full": 0.5199562465228952,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 47,
+          "loss": 0.22023102727702493,
+          "max_cosine_full": 0.5619937625301779,
+          "iterations": 117,
+          "status": 0
+        },
+        {
+          "trial": 48,
+          "loss": 0.68433925329299,
+          "max_cosine_full": 0.6254843556428382,
+          "iterations": 126,
+          "status": 0
+        },
+        {
+          "trial": 49,
+          "loss": 0.06686574363058753,
+          "max_cosine_full": 0.5199562473435131,
+          "iterations": 34,
+          "status": 0
+        },
+        {
+          "trial": 50,
+          "loss": 0.06686574363058737,
+          "max_cosine_full": 0.5199562479063415,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 51,
+          "loss": 0.5930910256409317,
+          "max_cosine_full": 0.594055492062934,
+          "iterations": 160,
+          "status": 0
+        },
+        {
+          "trial": 52,
+          "loss": 0.5976687698366013,
+          "max_cosine_full": 0.6157954881797171,
+          "iterations": 174,
+          "status": 0
+        },
+        {
+          "trial": 53,
+          "loss": 0.06686574363058664,
+          "max_cosine_full": 0.5199562463501298,
+          "iterations": 34,
+          "status": 0
+        },
+        {
+          "trial": 54,
+          "loss": 0.0668657436305865,
+          "max_cosine_full": 0.5199562468367079,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 55,
+          "loss": 0.6066995968190881,
+          "max_cosine_full": 0.612681987410868,
+          "iterations": 205,
+          "status": 0
+        },
+        {
+          "trial": 56,
+          "loss": 0.6193531645637591,
+          "max_cosine_full": 0.5930287642560248,
+          "iterations": 162,
+          "status": 0
+        },
+        {
+          "trial": 57,
+          "loss": 0.06686574363058684,
+          "max_cosine_full": 0.519956247113177,
+          "iterations": 35,
+          "status": 0
+        },
+        {
+          "trial": 58,
+          "loss": 0.06686574363058755,
+          "max_cosine_full": 0.5199562467097707,
+          "iterations": 41,
+          "status": 0
+        },
+        {
+          "trial": 59,
+          "loss": 0.22023102727702698,
+          "max_cosine_full": 0.561993757921858,
+          "iterations": 213,
+          "status": 0
+        },
+        {
+          "trial": 60,
+          "loss": 0.49741896028021293,
+          "max_cosine_full": 0.6034271712482304,
+          "iterations": 152,
+          "status": 0
+        },
+        {
+          "trial": 61,
+          "loss": 0.06686574363058759,
+          "max_cosine_full": 0.5199562465007262,
+          "iterations": 37,
+          "status": 0
+        },
+        {
+          "trial": 62,
+          "loss": 0.06686574363058713,
+          "max_cosine_full": 0.5199562465874146,
+          "iterations": 42,
+          "status": 0
+        },
+        {
+          "trial": 63,
+          "loss": 0.5677057505247274,
+          "max_cosine_full": 0.6200977738407437,
+          "iterations": 164,
+          "status": 0
+        },
+        {
+          "trial": 64,
+          "loss": 0.5674208168672108,
+          "max_cosine_full": 0.645539804908538,
+          "iterations": 242,
+          "status": 0
+        },
+        {
+          "trial": 65,
+          "loss": 0.06686574363058756,
+          "max_cosine_full": 0.519956246675575,
+          "iterations": 34,
+          "status": 0
+        },
+        {
+          "trial": 66,
+          "loss": 0.06686574363058831,
+          "max_cosine_full": 0.5199562477833873,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 67,
+          "loss": 0.5962885065394198,
+          "max_cosine_full": 0.6098886946324024,
+          "iterations": 180,
+          "status": 0
+        },
+        {
+          "trial": 68,
+          "loss": 0.6243718465197955,
+          "max_cosine_full": 0.6071258088935756,
+          "iterations": 152,
+          "status": 0
+        },
+        {
+          "trial": 69,
+          "loss": 0.06686574363058675,
+          "max_cosine_full": 0.5199562467928233,
+          "iterations": 32,
+          "status": 0
+        },
+        {
+          "trial": 70,
+          "loss": 0.06686574363058792,
+          "max_cosine_full": 0.5199562464283095,
+          "iterations": 43,
+          "status": 0
+        },
+        {
+          "trial": 71,
+          "loss": 0.634515725012804,
+          "max_cosine_full": 0.6479978759364469,
+          "iterations": 157,
+          "status": 0
+        },
+        {
+          "trial": 72,
+          "loss": 0.6231241348278727,
+          "max_cosine_full": 0.6309351787547813,
+          "iterations": 178,
+          "status": 0
+        },
+        {
+          "trial": 73,
+          "loss": 0.06686574363058698,
+          "max_cosine_full": 0.5199562468502877,
+          "iterations": 36,
+          "status": 0
+        },
+        {
+          "trial": 74,
+          "loss": 0.0668657436305867,
+          "max_cosine_full": 0.5199562462916363,
+          "iterations": 46,
+          "status": 0
+        },
+        {
+          "trial": 75,
+          "loss": 0.5951415916733233,
+          "max_cosine_full": 0.6250046045814355,
+          "iterations": 212,
+          "status": 0
+        },
+        {
+          "trial": 76,
+          "loss": 0.5387325940961436,
+          "max_cosine_full": 0.6147275424094899,
+          "iterations": 186,
+          "status": 0
+        },
+        {
+          "trial": 77,
+          "loss": 0.06686574363058655,
+          "max_cosine_full": 0.5199562472662286,
+          "iterations": 37,
+          "status": 0
+        },
+        {
+          "trial": 78,
+          "loss": 0.06686574363058681,
+          "max_cosine_full": 0.5199562464727571,
+          "iterations": 44,
+          "status": 0
+        },
+        {
+          "trial": 79,
+          "loss": 0.5260569566107769,
+          "max_cosine_full": 0.6302496658449288,
+          "iterations": 155,
+          "status": 0
+        },
+        {
+          "trial": 80,
+          "loss": 0.5799139250999524,
+          "max_cosine_full": 0.5956774601614016,
+          "iterations": 158,
+          "status": 0
+        },
+        {
+          "trial": 81,
+          "loss": 0.06686574363058655,
+          "max_cosine_full": 0.519956245668449,
+          "iterations": 33,
+          "status": 0
+        },
+        {
+          "trial": 82,
+          "loss": 0.06686574363058663,
+          "max_cosine_full": 0.5199562471780437,
+          "iterations": 47,
+          "status": 0
+        },
+        {
+          "trial": 83,
+          "loss": 0.6042817462897205,
+          "max_cosine_full": 0.6004622292688236,
+          "iterations": 180,
+          "status": 0
+        },
+        {
+          "trial": 84,
+          "loss": 0.06686574363058684,
+          "max_cosine_full": 0.5199562466041279,
+          "iterations": 188,
+          "status": 0
+        },
+        {
+          "trial": 85,
+          "loss": 0.06686574363058698,
+          "max_cosine_full": 0.5199562468795786,
+          "iterations": 35,
+          "status": 0
+        },
+        {
+          "trial": 86,
+          "loss": 0.06686574363058723,
+          "max_cosine_full": 0.5199562474605072,
+          "iterations": 40,
+          "status": 0
+        },
+        {
+          "trial": 87,
+          "loss": 0.6244461688727974,
+          "max_cosine_full": 0.6121493903016784,
+          "iterations": 187,
+          "status": 0
+        },
+        {
+          "trial": 88,
+          "loss": 0.6160599984929508,
+          "max_cosine_full": 0.5967426469953198,
+          "iterations": 232,
+          "status": 0
+        },
+        {
+          "trial": 89,
+          "loss": 0.06686574363058695,
+          "max_cosine_full": 0.5199562457475777,
+          "iterations": 33,
+          "status": 0
+        },
+        {
+          "trial": 90,
+          "loss": 0.06686574363058773,
+          "max_cosine_full": 0.5199562475004529,
+          "iterations": 39,
+          "status": 0
+        },
+        {
+          "trial": 91,
+          "loss": 0.23015120932243113,
+          "max_cosine_full": 0.5584682683616408,
+          "iterations": 238,
+          "status": 0
+        },
+        {
+          "trial": 92,
+          "loss": 0.5691915302887581,
+          "max_cosine_full": 0.6074111377078465,
+          "iterations": 163,
+          "status": 0
+        },
+        {
+          "trial": 93,
+          "loss": 0.06686574363058694,
+          "max_cosine_full": 0.5199562474077101,
+          "iterations": 37,
+          "status": 0
+        },
+        {
+          "trial": 94,
+          "loss": 0.06686574363058763,
+          "max_cosine_full": 0.5199562476440391,
+          "iterations": 40,
+          "status": 0
+        },
+        {
+          "trial": 95,
+          "loss": 0.604448020242216,
+          "max_cosine_full": 0.6025213074855647,
+          "iterations": 213,
+          "status": 0
+        },
+        {
+          "trial": 96,
+          "loss": 0.5508408433722028,
+          "max_cosine_full": 0.5990327005593991,
+          "iterations": 179,
+          "status": 0
+        },
+        {
+          "trial": 97,
+          "loss": 0.06686574363058703,
+          "max_cosine_full": 0.5199562469820758,
+          "iterations": 34,
+          "status": 0
+        },
+        {
+          "trial": 98,
+          "loss": 0.06686574363058678,
+          "max_cosine_full": 0.5199562467695246,
+          "iterations": 47,
+          "status": 0
+        },
+        {
+          "trial": 99,
+          "loss": 0.5937018207138861,
+          "max_cosine_full": 0.5963106597411574,
+          "iterations": 169,
+          "status": 0
+        },
+        {
+          "trial": 100,
+          "loss": 0.5292058188456651,
+          "max_cosine_full": 0.5954944359663497,
+          "iterations": 239,
+          "status": 0
+        },
+        {
+          "trial": 101,
+          "loss": 0.06686574363058646,
+          "max_cosine_full": 0.5199562461899305,
+          "iterations": 35,
+          "status": 0
+        },
+        {
+          "trial": 102,
+          "loss": 0.0668657436305885,
+          "max_cosine_full": 0.5199562501862297,
+          "iterations": 44,
+          "status": 0
+        },
+        {
+          "trial": 103,
+          "loss": 0.2998559867336947,
+          "max_cosine_full": 0.5824418115137268,
+          "iterations": 250,
+          "status": 0
+        },
+        {
+          "trial": 104,
+          "loss": 0.5944064364532397,
+          "max_cosine_full": 0.5925474663658775,
+          "iterations": 154,
+          "status": 0
+        },
+        {
+          "trial": 105,
+          "loss": 0.06686574363058717,
+          "max_cosine_full": 0.5199562470490584,
+          "iterations": 36,
+          "status": 0
+        },
+        {
+          "trial": 106,
+          "loss": 0.06686574363058725,
+          "max_cosine_full": 0.5199562469935024,
+          "iterations": 44,
+          "status": 0
+        },
+        {
+          "trial": 107,
+          "loss": 0.6259992998932017,
+          "max_cosine_full": 0.6117226958410537,
+          "iterations": 165,
+          "status": 0
+        },
+        {
+          "trial": 108,
+          "loss": 0.5889273710641045,
+          "max_cosine_full": 0.5937465843241013,
+          "iterations": 138,
+          "status": 0
+        },
+        {
+          "trial": 109,
+          "loss": 0.0668657436305869,
+          "max_cosine_full": 0.519956247099881,
+          "iterations": 35,
+          "status": 0
+        },
+        {
+          "trial": 110,
+          "loss": 0.06686574363058678,
+          "max_cosine_full": 0.5199562468629922,
+          "iterations": 40,
+          "status": 0
+        },
+        {
+          "trial": 111,
+          "loss": 0.5233285533280931,
+          "max_cosine_full": 0.6175262460666074,
+          "iterations": 158,
+          "status": 0
+        },
+        {
+          "trial": 112,
+          "loss": 0.5872490598958685,
+          "max_cosine_full": 0.5874715329074912,
+          "iterations": 173,
+          "status": 0
+        },
+        {
+          "trial": 113,
+          "loss": 0.06686574363058823,
+          "max_cosine_full": 0.5199562492622839,
+          "iterations": 34,
+          "status": 0
+        },
+        {
+          "trial": 114,
+          "loss": 0.06686574363058659,
+          "max_cosine_full": 0.519956246783502,
+          "iterations": 45,
+          "status": 0
+        },
+        {
+          "trial": 115,
+          "loss": 0.661813633117079,
+          "max_cosine_full": 0.6171926136103114,
+          "iterations": 154,
+          "status": 0
+        },
+        {
+          "trial": 116,
+          "loss": 0.5830950833519308,
+          "max_cosine_full": 0.5987708284947559,
+          "iterations": 198,
+          "status": 0
+        },
+        {
+          "trial": 117,
+          "loss": 0.06686574363058655,
+          "max_cosine_full": 0.5199562452629054,
+          "iterations": 37,
+          "status": 0
+        },
+        {
+          "trial": 118,
+          "loss": 0.06686574363058652,
+          "max_cosine_full": 0.5199562463913759,
+          "iterations": 48,
+          "status": 0
+        },
+        {
+          "trial": 119,
+          "loss": 0.5767573426775924,
+          "max_cosine_full": 0.62101285783139,
+          "iterations": 187,
+          "status": 0
+        }
+      ],
+      "certificate": "Numerical optimization only. Failed arrays are not kissing configurations.",
+      "restart_limit": 120,
+      "restart_wall_budget_seconds": 70,
+      "wall_budget_checked_between_restarts": true,
+      "optimizer_max_iterations": 3000
+    }
+  ],
+  "wall_seconds": 16.215293836,
+  "peak_rss_kib": 59632,
+  "scope": "Fully independent seed vectors with no antipodal constraint; reducible real cyclic representation with repeated irreducibles allowed; optional one-sided fixed pole. Bounded multi-start search, no nonexistence claim."
+}

@@ -1,0 +1,198 @@
+[
+  {
+    "cap": 1600,
+    "seed": 0,
+    "size": 1120,
+    "status": "closed_numerically",
+    "seconds": 0.182
+  },
+  {
+    "cap": 1600,
+    "seed": 1,
+    "size": 1600,
+    "status": "limit_reached",
+    "seconds": 0.104
+  },
+  {
+    "cap": 1600,
+    "seed": 2,
+    "size": 1600,
+    "status": "limit_reached",
+    "seconds": 0.102
+  },
+  {
+    "cap": 1600,
+    "seed": 3,
+    "size": 1600,
+    "status": "limit_reached",
+    "seconds": 0.107
+  },
+  {
+    "cap": 1600,
+    "seed": 4,
+    "size": 1600,
+    "status": "limit_reached",
+    "seconds": 0.102
+  },
+  {
+    "cap": 1600,
+    "seed": 5,
+    "size": 1600,
+    "status": "limit_reached",
+    "seconds": 0.11
+  },
+  {
+    "cap": 1600,
+    "seed": 6,
+    "size": 1600,
+    "status": "limit_reached",
+    "seconds": 0.107
+  },
+  {
+    "cap": 1600,
+    "seed": 7,
+    "size": 1600,
+    "status": "limit_reached",
+    "seconds": 0.1
+  },
+  {
+    "cap": 1600,
+    "seed": 8,
+    "size": 1600,
+    "status": "limit_reached",
+    "seconds": 0.214
+  },
+  {
+    "cap": 1600,
+    "seed": 9,
+    "size": 1600,
+    "status": "limit_reached",
+    "seconds": 0.109
+  },
+  {
+    "cap": 1600,
+    "seed": 10,
+    "size": 1600,
+    "status": "limit_reached",
+    "seconds": 0.097
+  },
+  {
+    "cap": 1600,
+    "seed": 11,
+    "size": 1600,
+    "status": "limit_reached",
+    "seconds": 0.103
+  },
+  {
+    "cap": 1600,
+    "seed": 12,
+    "size": 1600,
+    "status": "limit_reached",
+    "seconds": 0.102
+  },
+  {
+    "cap": 1600,
+    "seed": 13,
+    "size": 1600,
+    "status": "limit_reached",
+    "seconds": 0.103
+  },
+  {
+    "cap": 4000,
+    "seed": 0,
+    "size": 1120,
+    "status": "closed_numerically",
+    "seconds": 0.181
+  },
+  {
+    "cap": 4000,
+    "seed": 1,
+    "size": 4000,
+    "status": "limit_reached",
+    "seconds": 0.284
+  },
+  {
+    "cap": 4000,
+    "seed": 2,
+    "size": 4000,
+    "status": "limit_reached",
+    "seconds": 0.281
+  },
+  {
+    "cap": 4000,
+    "seed": 3,
+    "size": 4000,
+    "status": "limit_reached",
+    "seconds": 0.299
+  },
+  {
+    "cap": 4000,
+    "seed": 4,
+    "size": 4000,
+    "status": "limit_reached",
+    "seconds": 0.311
+  },
+  {
+    "cap": 4000,
+    "seed": 5,
+    "size": 4000,
+    "status": "limit_reached",
+    "seconds": 0.306
+  },
+  {
+    "cap": 4000,
+    "seed": 6,
+    "size": 4000,
+    "status": "limit_reached",
+    "seconds": 0.312
+  },
+  {
+    "cap": 4000,
+    "seed": 7,
+    "size": 4000,
+    "status": "limit_reached",
+    "seconds": 0.315
+  },
+  {
+    "cap": 4000,
+    "seed": 8,
+    "size": 4000,
+    "status": "limit_reached",
+    "seconds": 0.306
+  },
+  {
+    "cap": 4000,
+    "seed": 9,
+    "size": 4000,
+    "status": "limit_reached",
+    "seconds": 0.306
+  },
+  {
+    "cap": 4000,
+    "seed": 10,
+    "size": 4000,
+    "status": "limit_reached",
+    "seconds": 0.288
+  },
+  {
+    "cap": 4000,
+    "seed": 11,
+    "size": 4000,
+    "status": "limit_reached",
+    "seconds": 0.296
+  },
+  {
+    "cap": 4000,
+    "seed": 12,
+    "size": 4000,
+    "status": "limit_reached",
+    "seconds": 0.295
+  },
+  {
+    "cap": 4000,
+    "seed": 13,
+    "size": 4000,
+    "status": "limit_reached",
+    "seconds": 0.299
+  }
+]

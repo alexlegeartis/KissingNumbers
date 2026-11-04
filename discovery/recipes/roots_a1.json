@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "name": "roots_a1",
+  "description": "Known root-system control generated from formulas; no new SOTA claim.",
+  "provenance": {
+    "method": "formula-generated benchmark coordinates; no search or coordinate import",
+    "generator": "discovery/benchmarks/root_controls.py",
+    "construction_reference": "https://arxiv.org/html/2411.04916v3#S1",
+    "root_system": "A1"
+  },
+  "nodes": [
+    {
+      "id": "roots",
+      "op": "geometry.integer_code",
+      "params": {
+        "coordinates": [
+          [
+            -1
+          ],
+          [
+            1
+          ]
+        ],
+        "norm_squared": 1
+      }
+    }
+  ],
+  "outputs": [
+    "roots"
+  ]
+}

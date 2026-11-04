@@ -1,0 +1,11 @@
+{
+  "url": "https://raw.githubusercontent.com/k-nic/841_in_12D/main/beyond841/Gram842.txt",
+  "github_api": "https://api.github.com/repos/k-nic/841_in_12D/contents/beyond841",
+  "repository": "k-nic/841_in_12D",
+  "path": "beyond841/Gram842.txt",
+  "bytes": 10989544,
+  "sha256": "3ad70d99caa67a6ff2f572224246440b651391c274eb9f426d78f68246cd1f0a",
+  "git_blob_sha1": "f58e8650fa02e47cc5152b24206a54da26548c66",
+  "expected_api_blob_sha1": "f58e8650fa02e47cc5152b24206a54da26548c66",
+  "classification": "published numerical 842-point near-miss Gram; not the 841-point record and not an admissible kissing certificate"
+}

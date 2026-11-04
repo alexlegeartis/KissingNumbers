@@ -1,0 +1,833 @@
+{
+  "representation": "weil_p3_r2_s1",
+  "random_seed": 20261104,
+  "p": 3,
+  "rank": 2,
+  "parity": 1,
+  "complex_dimension": 5,
+  "trials": 120,
+  "line_limit": 1000,
+  "inventory": [
+    {
+      "orbit": 0,
+      "lines": 40,
+      "vectors": 80,
+      "accepted_phase_orders": [
+        1,
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "orbit": 1,
+      "lines": 160,
+      "vectors": 960,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 2,
+      "lines": 240,
+      "vectors": 960,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 3,
+      "lines": 45,
+      "vectors": 270,
+      "accepted_phase_orders": [
+        1,
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "orbit": 4,
+      "lines": 540,
+      "vectors": 1080,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 5,
+      "lines": 216,
+      "vectors": 432,
+      "accepted_phase_orders": []
+    },
+    {
+      "orbit": 6,
+      "lines": 720,
+      "vectors": 4320,
+      "accepted_phase_orders": []
+    }
+  ],
+  "seeds": [
+    {
+      "seed": "coordinate",
+      "lines": 40
+    },
+    {
+      "seed": "coordinate",
+      "lines": 160
+    },
+    {
+      "seed": "cyclic:[3, 1, 4, 4, 2, 1, 4, 4, 3, 3, 0, 0, 1, 4]:0",
+      "lines": 240
+    },
+    {
+      "seed": "cyclic:[3, 1, 4, 4, 2, 1, 4, 4, 3, 3, 0, 0, 1, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 1, 4, 4, 2, 1, 4, 4, 3, 3, 0, 0, 1, 4]:3",
+      "lines": 45
+    },
+    {
+      "seed": "cyclic:[3, 1, 4, 4, 2, 1, 4, 4, 3, 3, 0, 0, 1, 4]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 3, 4, 3, 2, 2, 0, 4, 0, 0, 1, 0, 3, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 3, 4, 3, 2, 2, 0, 4, 0, 0, 1, 0, 3, 1]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 3, 4, 2, 4]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 3, 4, 2, 4]:1",
+      "lines": 540
+    },
+    {
+      "seed": "cyclic:[4, 0, 3, 4, 2, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 0, 3, 1, 2, 4, 0, 2, 1, 2, 0, 3, 0, 1]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 0, 3, 1, 2, 4, 0, 2, 1, 2, 0, 3, 0, 1]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 0, 3, 1, 2, 4, 0, 2, 1, 2, 0, 3, 0, 1]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 1, 3, 1, 4, 2, 0, 4, 4, 2, 0]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 1, 3, 1, 4, 2, 0, 4, 4, 2, 0]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 0, 1, 0]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 0, 1, 0]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 0, 4, 2, 2, 3, 2, 3, 3, 4, 3, 2, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 0, 4, 2, 2, 3, 2, 3, 3, 4, 3, 2, 2]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 0, 4, 2, 2, 3, 2, 3, 3, 4, 3, 2, 2]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 2, 4, 2, 4, 4]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 2, 4, 2, 4, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 0, 1, 0, 4, 2, 0, 4, 4, 2, 4, 4, 4, 4, 3]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 0, 1, 0, 4, 2, 0, 4, 4, 2, 4, 4, 4, 4, 3]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 3, 0, 0, 3, 1, 1, 1, 4, 3, 4, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 3, 0, 0, 3, 1, 1, 1, 4, 3, 4, 1]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 3, 0, 1, 0, 3, 4, 0, 3, 2, 0, 2, 4, 3, 2]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 3, 0, 1, 0, 3, 4, 0, 3, 2, 0, 2, 4, 3, 2]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 3, 0, 1, 0, 3, 4, 0, 3, 2, 0, 2, 4, 3, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 3, 0, 1, 0, 3, 4, 0, 3, 2, 0, 2, 4, 3, 2]:3",
+      "lines": 216
+    },
+    {
+      "seed": "cyclic:[3, 3, 3, 0, 1, 0, 3, 4, 0, 3, 2, 0, 2, 4, 3, 2]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 2, 0, 4, 1, 0, 4, 4, 2, 4, 3, 2, 2, 0]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 2, 0, 4, 1, 0, 4, 4, 2, 4, 3, 2, 2, 0]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 2, 4, 1, 4, 4, 1, 4, 4, 4, 3, 4, 3, 1, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 2, 4, 1, 4, 4, 1, 4, 4, 4, 3, 4, 3, 1, 4]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 0, 2, 4, 1, 2, 1, 0, 1, 3, 2, 2, 3, 4, 0]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 0, 2, 4, 1, 2, 1, 0, 1, 3, 2, 2, 3, 4, 0]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 4, 4, 0, 1, 0, 2, 1, 4, 3, 2, 4, 0, 3]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 4, 4, 0, 1, 0, 2, 1, 4, 3, 2, 4, 0, 3]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 4, 4, 0, 1, 0, 2, 1, 4, 3, 2, 4, 0, 3]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 4, 4, 0, 1, 0, 2, 1, 4, 3, 2, 4, 0, 3]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 1, 3, 2, 1, 4, 1, 0, 3, 1, 1]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 1, 3, 2, 1, 4, 1, 0, 3, 1, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 2, 3, 3, 4, 0, 4, 0, 3, 0, 3, 1, 1, 0, 3]:4",
+      "lines": 720
+    },
+    {
+      "seed": "cyclic:[0, 4, 1, 0, 0]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 1, 0, 0]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 1, 0, 0]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 2, 3, 1, 2]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 2, 3, 1, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 4, 2, 1, 3, 4, 2, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 4, 2, 1, 3, 4, 2, 1]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 3, 1, 3, 2, 0, 0, 1, 0, 4, 4, 4, 2, 2, 1]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 3, 1, 3, 2, 0, 0, 1, 0, 4, 4, 4, 2, 2, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 0, 1, 3, 0, 2, 3, 0, 0, 2, 3, 1, 4, 0, 2]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 0, 1, 3, 0, 2, 3, 0, 0, 2, 3, 1, 4, 0, 2]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 0, 1, 3, 0, 2, 3, 0, 0, 2, 3, 1, 4, 0, 2]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 4, 3, 2, 4, 3, 4, 1, 2, 2, 2, 4, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 4, 3, 2, 4, 3, 4, 1, 2, 2, 2, 4, 2]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 4, 3, 2, 4, 3, 4, 1, 2, 2, 2, 4, 2]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 1, 3, 1, 3, 3, 2, 3, 4, 2, 1, 2, 2, 4, 3, 2, 0]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 1, 3, 1, 3, 3, 2, 3, 4, 2, 1, 2, 2, 4, 3, 2, 0]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 2, 0, 3, 4]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 2, 0, 3, 4]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 2, 0, 3, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 2, 0, 3, 4]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 4, 3, 3, 4, 4, 4, 0, 2, 0, 3]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 4, 3, 3, 4, 4, 4, 0, 2, 0, 3]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 2, 4, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 2, 4, 1]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 1, 1, 3, 2, 3, 1, 1, 2, 4, 2, 3, 3, 4, 2, 3, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 1, 1, 3, 2, 3, 1, 1, 2, 4, 2, 3, 3, 4, 2, 3, 1]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 4, 1, 0, 3, 1, 1, 1, 1, 4, 4, 2, 4, 4]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 4, 1, 0, 3, 1, 1, 1, 1, 4, 4, 2, 4, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 3, 2, 4, 0, 1, 3, 1, 2, 1, 1]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 3, 2, 4, 0, 1, 3, 1, 2, 1, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 1, 1, 3, 0, 2, 2, 2, 1, 1, 0]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 4, 1, 1, 3, 0, 2, 2, 2, 1, 1, 0]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 2, 1, 0, 0, 3, 3, 2, 4, 4, 2, 2, 4]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 2, 1, 0, 0, 3, 3, 2, 4, 4, 2, 2, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 2, 1, 0, 0, 3, 3, 2, 4, 4, 2, 2, 4]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 2, 1, 0, 0, 3, 3, 2, 4, 4, 2, 2, 4]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 2, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 2, 1]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 4, 1, 2]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 4, 1, 2]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 4, 1, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 4, 1, 2]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 2, 2, 3, 1, 3, 4, 1, 2, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 2, 2, 3, 1, 3, 4, 1, 2, 1]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 2, 2, 3, 1, 3, 4, 1, 2, 1]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 1, 3, 0, 3, 1, 0, 0, 3, 4, 0, 2, 0]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 1, 3, 0, 3, 1, 0, 0, 3, 4, 0, 2, 0]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 4, 2, 3, 1, 0, 0, 1, 1, 4]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 4, 2, 3, 1, 0, 0, 1, 1, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 2, 4, 2, 3, 1, 0, 0, 1, 1, 4]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 4, 1, 3, 1, 0, 3]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 4, 1, 3, 1, 0, 3]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 4, 1, 3, 1, 0, 3]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 3, 4, 3, 2, 4, 0, 0, 2, 3, 4, 3, 1, 1]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 3, 4, 3, 2, 4, 0, 0, 2, 3, 4, 3, 1, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 3, 4, 3, 2, 4, 0, 0, 2, 3, 4, 3, 1, 1]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 1, 2, 0, 0, 2, 0, 2, 0, 4, 0, 1]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 1, 2, 0, 0, 2, 0, 2, 0, 4, 0, 1]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 1, 2, 0, 0, 2, 0, 2, 0, 4, 0, 1]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 1, 2, 0, 0, 2, 0, 2, 0, 4, 0, 1]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 4, 2, 3, 3, 3, 1, 2, 4, 1, 2, 3, 3, 0]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 4, 2, 3, 3, 3, 1, 2, 4, 1, 2, 3, 3, 0]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 4, 3, 2, 3, 3, 1, 3, 4, 4, 1, 1, 4, 2, 0, 2]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 4, 3, 2, 3, 3, 1, 3, 4, 4, 1, 1, 4, 2, 0, 2]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 4, 3, 2, 3, 3, 1, 3, 4, 4, 1, 1, 4, 2, 0, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 0, 4, 3, 2, 3, 3, 1, 3, 4, 4, 1, 1, 4, 2, 0, 2]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 2, 3, 4, 1, 0, 4, 3, 4, 1, 4, 2]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 2, 3, 4, 1, 0, 4, 3, 4, 1, 4, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 0, 4, 3, 2, 4, 4, 3, 4, 3]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 0, 4, 3, 2, 4, 4, 3, 4, 3]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 0, 4, 3, 2, 4, 4, 3, 4, 3]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 0, 4, 0, 0, 4, 0, 1, 0, 1, 2, 3, 1, 4, 0]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 0, 4, 0, 0, 4, 0, 1, 0, 1, 2, 3, 1, 4, 0]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 4, 0, 1, 2, 3, 3, 3]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 4, 0, 1, 2, 3, 3, 3]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 4, 4, 4, 1, 2, 3, 0, 4, 0, 0, 2, 2, 3]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 4, 4, 4, 1, 2, 3, 0, 4, 0, 0, 2, 2, 3]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 4, 4, 4, 1, 2, 3, 0, 4, 0, 0, 2, 2, 3]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 4, 4, 4, 1, 2, 3, 0, 4, 0, 0, 2, 2, 3]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 3, 1, 1, 0]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 3, 1, 1, 0]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 3, 1, 1, 0]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 3, 2, 3, 4, 0, 4, 3, 2]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 3, 2, 3, 4, 0, 4, 3, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 4, 1, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 4, 1, 2]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 3, 4, 1, 2]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 2, 3, 0, 1, 4, 4, 1, 4, 0, 0, 0, 0, 4, 0, 4, 2]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 2, 3, 0, 1, 4, 4, 1, 4, 0, 0, 0, 0, 4, 0, 4, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 4, 4, 2, 0, 4, 3, 1, 0, 1, 1, 0, 3, 4]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 4, 4, 2, 0, 4, 3, 1, 0, 1, 1, 0, 3, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 2, 2, 3, 0, 0, 2, 0, 3, 0, 4]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 0, 2, 2, 3, 0, 0, 2, 0, 3, 0, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 1, 3, 1, 1, 4, 3, 2, 1, 2, 3, 3, 3, 3]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 1, 3, 1, 1, 4, 3, 2, 1, 2, 3, 3, 3, 3]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 1, 3, 1, 1, 4, 3, 2, 1, 2, 3, 3, 3, 3]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 1, 1, 1, 3, 2, 4, 3, 3, 1, 3, 1]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 1, 1, 1, 3, 2, 4, 3, 3, 1, 3, 1]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 0, 3, 3, 0, 4, 2, 4, 1, 1, 2, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 0, 3, 3, 0, 4, 2, 4, 1, 1, 2, 4]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 0, 3, 3, 0, 4, 2, 4, 1, 1, 2, 4]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 1, 0, 0, 1, 3, 3]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 0, 1, 0, 0, 1, 3, 3]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 1, 2, 1, 4, 1, 0, 1, 0, 4, 4, 4, 1, 2, 4, 1, 0]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 1, 2, 1, 4, 1, 0, 1, 0, 4, 4, 4, 1, 2, 4, 1, 0]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 1, 2, 1, 4, 1, 0, 1, 0, 4, 4, 4, 1, 2, 4, 1, 0]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 2, 2, 4, 2, 1, 0, 1, 2, 0, 2, 1]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 2, 2, 4, 2, 1, 0, 1, 2, 0, 2, 1]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 2, 2, 4, 2, 1, 0, 1, 2, 0, 2, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 2, 2, 4, 2, 1, 0, 1, 2, 0, 2, 1]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 3, 0, 3, 0, 4, 3, 0, 1, 2, 4, 2, 4, 1, 4]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 3, 0, 3, 0, 4, 3, 0, 1, 2, 4, 2, 4, 1, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 1, 4, 3, 2, 2, 1, 3, 0, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 1, 4, 3, 2, 2, 1, 3, 0, 1]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 1, 4, 3, 2, 2, 1, 3, 0, 1]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 4, 2, 3, 1, 3, 2, 4, 2, 2, 0, 4, 4, 2]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 4, 2, 3, 1, 3, 2, 4, 2, 2, 0, 4, 4, 2]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 4, 2, 3, 1, 3, 2, 4, 2, 2, 0, 4, 4, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 4, 2, 3, 1, 3, 2, 4, 2, 2, 0, 4, 4, 2]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 1, 4, 2, 0, 3, 2, 4, 1, 1, 1, 3, 2]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[4, 0, 1, 4, 2, 0, 3, 2, 4, 1, 1, 1, 3, 2]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 1, 3, 1, 4, 0, 2, 0, 0, 0, 4, 2, 3, 0]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 1, 3, 1, 4, 0, 2, 0, 0, 0, 4, 2, 3, 0]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 1, 3, 1, 4, 0, 2, 0, 0, 0, 4, 2, 3, 0]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 1, 3, 1, 4, 0, 2, 0, 0, 0, 4, 2, 3, 0]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 1, 3, 0, 3, 3, 2, 0, 4, 2, 1, 3]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 1, 3, 0, 3, 3, 2, 0, 4, 2, 1, 3]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 1, 3, 0, 3, 3, 2, 0, 4, 2, 1, 3]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 4, 0, 4, 0, 2, 2, 0, 3, 3, 1, 0, 4, 3, 1]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[1, 4, 0, 4, 0, 2, 2, 0, 3, 3, 1, 0, 4, 3, 1]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 3, 4, 4, 1, 1, 2, 1, 1, 1, 0, 3, 3, 2, 3, 3, 4]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 3, 4, 4, 1, 1, 2, 1, 1, 1, 0, 3, 3, 2, 3, 3, 4]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 3, 0, 4, 4, 2, 0, 3, 0, 1, 4, 4, 1, 1, 4, 1]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 3, 0, 4, 4, 2, 0, 3, 0, 1, 4, 4, 1, 1, 4, 1]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 3, 0, 4, 4, 2, 0, 3, 0, 1, 4, 4, 1, 1, 4, 1]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[2, 3, 0, 4, 4, 2, 0, 3, 0, 1, 4, 4, 1, 1, 4, 1]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 2, 0, 1, 4, 4, 1, 3, 0, 0, 0, 4, 2, 4, 4, 1]:0",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 2, 0, 1, 4, 4, 1, 3, 0, 0, 0, 4, 2, 4, 4, 1]:1",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 2, 0, 1, 4, 4, 1, 3, 0, 0, 0, 4, 2, 4, 4, 1]:3",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[3, 2, 0, 1, 4, 4, 1, 3, 0, 0, 0, 4, 2, 4, 4, 1]:4",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 3, 0, 3, 0]:2",
+      "over_limit": true
+    },
+    {
+      "seed": "cyclic:[0, 3, 0, 3, 0]:3",
+      "over_limit": true
+    }
+  ],
+  "result": {
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "edges": 3936,
+    "best": 510,
+    "upper_bound": 510.0,
+    "selected": [
+      "o0:m3:phase1/24",
+      "o3:m1:phase1/24"
+    ],
+    "maxcos": 0.5000000000000026,
+    "real_rank": 10
+  },
+  "cross_checks": "one representative per transitive vector orbit against the other full orbit; final all-pairs numerical check",
+  "certificate": "numerical screening only; phase grid and sampled subgroups not exhaustive"
+}

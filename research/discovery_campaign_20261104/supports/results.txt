@@ -1,0 +1,2 @@
+full_rows tested=134596 survivors=0 checks=74731037
+triple_single tested=1000000 survivors=0 checks=1283607867

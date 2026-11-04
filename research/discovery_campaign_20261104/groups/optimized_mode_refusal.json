@@ -1,0 +1,6 @@
+{
+  "command": "python -O clifford_stabilizer.py",
+  "returncode": 1,
+  "stderr": "Exact checks require assertions; rerun without Python -O or -OO.",
+  "stdout_empty": true
+}

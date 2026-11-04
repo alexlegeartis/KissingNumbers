@@ -1,0 +1,4 @@
+{"mode": "high_beta_minimax", "trial_best": 0.5009010186022461, "global_best": 0.5009010186022461, "seconds": 9.055266731999836}
+{"mode": "low_degree_cluster_drive", "trial_best": 0.5009010186022461, "global_best": 0.5009010186022461, "seconds": 20.131652740999925}
+{"mode": "global_coupled_drive", "trial_best": 0.5009010186022461, "global_best": 0.5009010186022461, "seconds": 31.92762115200003}
+{"mode": "hot_cluster_drive", "trial_best": 0.5009010186022461, "global_best": 0.5009010186022461, "seconds": 43.03654126499987}

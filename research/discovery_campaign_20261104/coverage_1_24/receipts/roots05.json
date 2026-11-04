@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "program": {
+    "schema_version": 1,
+    "name": "Classical D5 root-system control",
+    "provenance": {
+      "classification": "classical root-system formula replay; no novelty or optimality claim"
+    },
+    "nodes": [
+      {
+        "id": "roots",
+        "op": "lattice.root_system",
+        "params": {
+          "family": "D",
+          "rank": 5
+        }
+      }
+    ],
+    "outputs": [
+      "roots"
+    ]
+  },
+  "program_sha256": "2c03dd921210ed855c4724ee20051719931edfceacdfbf66653c5f2cc89ce370",
+  "budget": {
+    "max_materialized_points": 20000,
+    "max_pairs": 10000000,
+    "max_codewords": 262144,
+    "max_orbit_points": 10000,
+    "max_trials": 200,
+    "solver_seconds": 30,
+    "max_dgls_words": 16777216,
+    "max_dimension": 256,
+    "max_nodes": 100,
+    "max_gram_entries": 2000000,
+    "max_rank_work": 50000000,
+    "max_rational_bits": 4096
+  },
+  "python": "3.12.14",
+  "source_sha256": {
+    "__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
+    "__main__.py": "b7477b369529118ea14b7e48fc38c9e8c37957a554bebad7b37912406692f15a",
+    "certification.py": "2d7f6b0e52904f8a881c35e6d79f853512f503f2b10fa68c78cc8023854b5583",
+    "compatibility.py": "b484a934b4f6d68cd11f69b17eb0a23fd61556bf4fe4978205530cbfe68b5f89",
+    "contracts.py": "8a8c134dcf67751a0b0882536e8886e4d120f1b76d7388e66a60f18eeb786872",
+    "core.py": "69313eb6d933f436d151289f23c40f018365d16057a2b75d455ac0fe157a1024",
+    "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
+    "engines/characters.py": "a889bc661697e1eb2c5f204680f0602e22fd490d929cc090d48d647a7763d4b5",
+    "engines/construction_search.py": "d9956f8ccc364a3608c0f02dbda1b27df583d7978e91bf64761e5fe934da9c42",
+    "engines/coset_search.py": "3e808aeee08588665f36d3286172de791dc467fc1a854432a5bec2ae7c9be722",
+    "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
+    "engines/exact_orbits.py": "186cb1d85f307ec34c2874c588d7b4acd0320754349284a3132999aeabe6850c",
+    "engines/geometry.py": "8e68c74d39d6ad0a894ceb5a3aa80cbee176f846230d78876eb6d33e2ffa1e3c",
+    "engines/gluing.py": "94141bac6513dbac7210ed0274871ea27ab8a50d0c3d9b27fd2c8f8a7e868a1d",
+    "engines/groups.py": "21fb7e2a6fdd7b219576a453cf8e7cc7548aedf2e3c4cce851e5c6de6cc92c9c",
+    "engines/lattices.py": "e5a90d85fc180e10da7508672d54843838b3f3182ec8ae5c7fe6a5e0a09958df",
+    "engines/layers.py": "a799fab74c7bbacc93712ad2df2ee201f375cb0c56f0f6617cb9f3d1437045cf",
+    "engines/rings.py": "87d1e00e2da8209f6691a023dc517915623e4713b2b7b87695b8957f056158c2",
+    "engines/selection.py": "401f6073306188cc2dc27126a5898cf55e4bd13bd798d4dd512a8782c8f3e632",
+    "engines/signed_layers.py": "6389a095a584629e153f3d2c38c8077da4524250103d5206a83201951f7f4666",
+    "engines/stabilizers.py": "999aa4a478cc5b16a6840b5b8576cef565be83c27ad5ce9ad0ca7592dd64e362",
+    "exact_gram.py": "448103205e806c2d1c8bd2770e7a22d29c533cae2fcd3ef3f2bf219572f440ba",
+    "group_constraints.py": "dea348edffb83b3fe05f75f773c1f64c6f5013772866bb7ad42670586466e2ec",
+    "numerical_shapes.py": "85e9df44c717fcc949295e23985e1cca95bd1cfadf18b12bf850233f9faa7520",
+    "objects.py": "4e8a922bcd7f57fa0d9be5507a92678a170bb8fa45d4e0ab8b61b1e52cf96bb3",
+    "planner.py": "7567b7ac07e0ef52d74a9126aec34e3b70de9b3498fd1f1edfe11f424ccabb97",
+    "runner.py": "84570f966396822a433d13339364629faeac396e6759a0f45907733fc75e7ebe",
+    "scheduler.py": "34aa720811dce88f75c05a76c23cc5f6b36d62d891cd929c863cb7bca499af75",
+    "sections.py": "3e5d33680f60c950cb7b232bf73abbe4aa02a1a8dfef261ebefca8875faecbc3"
+  },
+  "events": [
+    {
+      "node": "roots",
+      "op": "lattice.root_system",
+      "state": "completed",
+      "seconds": 0.000703,
+      "kind": "spherical_code",
+      "verification_status": "exact",
+      "artifact_sha256": "2040a096855a95ab2f16e1506d3bd15333b4553b308bc3a670014f831a427eb9"
+    }
+  ],
+  "artifacts": {
+    "roots": {
+      "kind": "spherical_code",
+      "data": {
+        "coordinates": [
+          [
+            -1,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        ],
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "norm_squared": 2,
+        "construction": "D roots: all four signs of e_i+e_j for distinct coordinate indices",
+        "root_system": {
+          "family": "D",
+          "rank": 5
+        },
+        "provenance": "classical root-system formula replay; no imported record coordinates or novelty claim"
+      },
+      "facts": {
+        "dimension": 5,
+        "rank_exact": 5,
+        "ambient_dimension": 5,
+        "cardinality": 40,
+        "norm_squared": 2,
+        "max_inner_product": 1,
+        "pairs_checked": 780,
+        "root_system": "D5",
+        "classification": "classical_construction_control",
+        "global_optimality_claim": false
+      },
+      "verification": {
+        "status": "exact",
+        "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+        "details": {
+          "dimension": 5,
+          "rank_exact": 5,
+          "ambient_dimension": 5,
+          "cardinality": 40,
+          "norm_squared": 2,
+          "max_inner_product": 1,
+          "pairs_checked": 780,
+          "facts": {
+            "dimension": 5,
+            "rank_exact": 5,
+            "ambient_dimension": 5,
+            "cardinality": 40,
+            "norm_squared": 2,
+            "max_inner_product": 1,
+            "pairs_checked": 780
+          },
+          "data_sha256": "8ba6b2b24c0ee6c9b9128188c582593f6c8382e0f40d423a1587d5969295aa58",
+          "integer_backend": "int64 proven overflow-safe",
+          "rank_scalar_work": 850
+        }
+      }
+    }
+  },
+  "artifacts_sha256": {
+    "roots": "2040a096855a95ab2f16e1506d3bd15333b4553b308bc3a670014f831a427eb9"
+  },
+  "outputs": [
+    "roots"
+  ],
+  "scope": "construction experiment; no automatic record registration or worldwide-priority claim"
+}

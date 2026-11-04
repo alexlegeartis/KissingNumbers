@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-04",
+  "records": [
+    {
+      "dimension": 27,
+      "total": 209825,
+      "previous_repository": 209807,
+      "gain": 18,
+      "packingstar_comparison": 209760,
+      "baseline": "data/baseline27.npz",
+      "baseline_sha256": "55626f2481e6b78e5c1c0f566f618aa23ba5e54d23803f59164b0dd4aa6e88ee",
+      "certificate": "data/coordinates27_209825.npz",
+      "certificate_sha256": "7a869e349545f96d563a654e307cba9461c3bbecb883299b3a85e05d6fe127d1",
+      "delta": "data/exchange27.npz",
+      "removed": 14,
+      "added": 32,
+      "geometry_report": "data/verification27.json",
+      "delta_report": "data/changed_pairs27.json",
+      "construction": "Individual signed-support choices and shared deletions",
+      "baseline_url": "https://github.com/alexlegeartis/KissingNumbers/blob/460de81926759828deb96d0011cc3f9d2eae026f/verifications/improved/dim27-31-joint-refills/data/coordinates27_209807.npz",
+      "discovery_program": "research/algebraic_switches_20261104/lifts27/engine_program.json"
+    },
+    {
+      "dimension": 31,
+      "total": 251196,
+      "previous_repository": 251188,
+      "gain": 8,
+      "packingstar_comparison": 251169,
+      "baseline": "data/baseline31.npz",
+      "baseline_sha256": "bc9cb7f88686a88daff99e951e07daed7665eb0e3f3da6a1a094d93090128998",
+      "certificate": "data/coordinates31_251196.npz",
+      "certificate_sha256": "02cddb863829f7298a1b80779603f3963f0c0db3eef0ff2a9050abe601e56127",
+      "delta": "data/exchange31.npz",
+      "removed": 0,
+      "added": 8,
+      "geometry_report": "data/verification31.json",
+      "delta_report": "data/changed_pairs31.json",
+      "construction": "Eight-point orthogonal sign cube; three independent signs on blocks of squared norms 16,8,8",
+      "baseline_url": "https://github.com/alexlegeartis/KissingNumbers/blob/460de81926759828deb96d0011cc3f9d2eae026f/verifications/improved/dim27-31-joint-refills/data/coordinates31_251188.npz",
+      "discovery_program": "research/algebraic_switches_20261104/lifts31/engine_program.json"
+    }
+  ],
+  "scope": "Complete explicit integer configurations. No assumed lattice minimum or unenumerated populations. Mathematical verification does not establish worldwide priority.",
+  "packingstar_source": "https://github.com/CDM1619/PackingStar/tree/477df34cf2a09bb9476b735a685b538a82da8c55",
+  "independent_geometry_source_sha256": "5900266bff5aee1782007d38a4b2791f7072f45a6397918f5df081cbf55553fd"
+}

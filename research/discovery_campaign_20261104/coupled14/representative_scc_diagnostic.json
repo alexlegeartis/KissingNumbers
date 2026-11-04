@@ -1,0 +1,105 @@
+{
+  "scope": "Diagnostic on five representative two-copy conflict graphs only. A single strong component after perfect-matching contraction implies only the two original maximum subsets outside shared points.",
+  "representatives": [
+    {
+      "normal": [
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_points": 1444,
+      "strong_components": 1
+    },
+    {
+      "normal": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_points": 1370,
+      "strong_components": 1
+    },
+    {
+      "normal": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_points": 1218,
+      "strong_components": 1
+    },
+    {
+      "normal": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_points": 1380,
+      "strong_components": 1
+    },
+    {
+      "normal": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "new_points": 1260,
+      "strong_components": 1
+    }
+  ]
+}

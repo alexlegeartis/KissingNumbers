@@ -1,0 +1,1 @@
+{"restart": 0, "loss": 0.019603328985751452, "max_pair_cosine": 0.5142386772014712, "max_base_cosine": 0.5016502608970843, "iterations": 825, "success": true, "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH", "seconds": 71.01378898800067}

@@ -1,0 +1,235 @@
+{
+  "random_seed": 20261104843,
+  "source": "published842_reconstructed.npz",
+  "all_points_free": true,
+  "gradient_relative_error": 4.634856260022266e-08,
+  "source_screen": {
+    "points": 842,
+    "dimension": 12,
+    "maximum_cosine": 0.5009010186022461,
+    "violating_pairs_at_1e-10": 10937,
+    "near_duplicate_pairs": 0,
+    "maximum_norm_squared_error": 4.440892098500626e-16,
+    "pairs_checked": 354061,
+    "numerically_admissible": false,
+    "exact_certificate": false
+  },
+  "best_screen": {
+    "points": 842,
+    "dimension": 12,
+    "maximum_cosine": 0.5009010186022461,
+    "violating_pairs_at_1e-10": 10937,
+    "near_duplicate_pairs": 0,
+    "maximum_norm_squared_error": 4.440892098500626e-16,
+    "pairs_checked": 354061,
+    "numerically_admissible": false,
+    "exact_certificate": false
+  },
+  "source_squared_violation": 0.007805746737110224,
+  "best_squared_violation": 0.007805746737110224,
+  "runs": [
+    {
+      "name": "high_beta_minimax",
+      "file": "near842_high_beta_minimax.npz",
+      "phases": [
+        {
+          "target": 0.5,
+          "beta": 100000.0,
+          "force_strength": 0.0,
+          "status": 1,
+          "maximum_cosine": 0.5009268576848549
+        },
+        {
+          "target": 0.5,
+          "beta": 400000.0,
+          "force_strength": 0.0,
+          "status": 1,
+          "maximum_cosine": 0.500907425123799
+        },
+        {
+          "target": 0.5,
+          "beta": 1600000.0,
+          "force_strength": 0.0,
+          "status": 1,
+          "maximum_cosine": 0.5009020311864323
+        }
+      ],
+      "best_screen": {
+        "points": 842,
+        "dimension": 12,
+        "maximum_cosine": 0.5009010186022461,
+        "violating_pairs_at_1e-10": 10937,
+        "near_duplicate_pairs": 0,
+        "maximum_norm_squared_error": 4.440892098500626e-16,
+        "pairs_checked": 354061,
+        "numerically_admissible": false,
+        "exact_certificate": false
+      },
+      "seconds": 9.044840730000033
+    },
+    {
+      "name": "low_degree_cluster_drive",
+      "file": "near842_low_degree_cluster_drive.npz",
+      "phases": [
+        {
+          "target": 0.5035,
+          "beta": null,
+          "force_strength": 0.4,
+          "status": 1,
+          "maximum_cosine": 0.50362707327985
+        },
+        {
+          "target": 0.502,
+          "beta": null,
+          "force_strength": 0.1,
+          "status": 1,
+          "maximum_cosine": 0.5020147383878576
+        },
+        {
+          "target": 0.5008,
+          "beta": null,
+          "force_strength": 0.015,
+          "status": 1,
+          "maximum_cosine": 0.501546986358472
+        },
+        {
+          "target": 0.5,
+          "beta": null,
+          "force_strength": 0.0,
+          "status": 1,
+          "maximum_cosine": 0.5068302468259321
+        },
+        {
+          "target": 0.5,
+          "beta": 400000.0,
+          "force_strength": 0.0,
+          "status": 1,
+          "maximum_cosine": 0.5022500387923353
+        }
+      ],
+      "best_screen": {
+        "points": 842,
+        "dimension": 12,
+        "maximum_cosine": 0.5009010186022461,
+        "violating_pairs_at_1e-10": 10937,
+        "near_duplicate_pairs": 0,
+        "maximum_norm_squared_error": 4.440892098500626e-16,
+        "pairs_checked": 354061,
+        "numerically_admissible": false,
+        "exact_certificate": false
+      },
+      "seconds": 11.076301835000777
+    },
+    {
+      "name": "global_coupled_drive",
+      "file": "near842_global_coupled_drive.npz",
+      "phases": [
+        {
+          "target": 0.5035,
+          "beta": null,
+          "force_strength": 0.12,
+          "status": 1,
+          "maximum_cosine": 0.5035778018708652
+        },
+        {
+          "target": 0.502,
+          "beta": null,
+          "force_strength": 0.1,
+          "status": 1,
+          "maximum_cosine": 0.5020597746734179
+        },
+        {
+          "target": 0.5008,
+          "beta": null,
+          "force_strength": 0.015,
+          "status": 1,
+          "maximum_cosine": 0.5016440135978367
+        },
+        {
+          "target": 0.5,
+          "beta": null,
+          "force_strength": 0.0,
+          "status": 1,
+          "maximum_cosine": 0.5068657681476508
+        },
+        {
+          "target": 0.5,
+          "beta": 400000.0,
+          "force_strength": 0.0,
+          "status": 1,
+          "maximum_cosine": 0.5022800949262077
+        }
+      ],
+      "best_screen": {
+        "points": 842,
+        "dimension": 12,
+        "maximum_cosine": 0.5009010186022461,
+        "violating_pairs_at_1e-10": 10937,
+        "near_duplicate_pairs": 0,
+        "maximum_norm_squared_error": 4.440892098500626e-16,
+        "pairs_checked": 354061,
+        "numerically_admissible": false,
+        "exact_certificate": false
+      },
+      "seconds": 11.795898438000222
+    },
+    {
+      "name": "hot_cluster_drive",
+      "file": "near842_hot_cluster_drive.npz",
+      "phases": [
+        {
+          "target": 0.5035,
+          "beta": null,
+          "force_strength": 0.12,
+          "status": 1,
+          "maximum_cosine": 0.5036248701673356
+        },
+        {
+          "target": 0.502,
+          "beta": null,
+          "force_strength": 0.1,
+          "status": 1,
+          "maximum_cosine": 0.502033679121771
+        },
+        {
+          "target": 0.5008,
+          "beta": null,
+          "force_strength": 0.015,
+          "status": 1,
+          "maximum_cosine": 0.5015889226272962
+        },
+        {
+          "target": 0.5,
+          "beta": null,
+          "force_strength": 0.0,
+          "status": 1,
+          "maximum_cosine": 0.506855674472363
+        },
+        {
+          "target": 0.5,
+          "beta": 400000.0,
+          "force_strength": 0.0,
+          "status": 1,
+          "maximum_cosine": 0.5022877024021507
+        }
+      ],
+      "best_screen": {
+        "points": 842,
+        "dimension": 12,
+        "maximum_cosine": 0.5009010186022461,
+        "violating_pairs_at_1e-10": 10937,
+        "near_duplicate_pairs": 0,
+        "maximum_norm_squared_error": 4.440892098500626e-16,
+        "pairs_checked": 354061,
+        "numerically_admissible": false,
+        "exact_certificate": false
+      },
+      "seconds": 11.108862357000362
+    }
+  ],
+  "objective_evaluations": 4654,
+  "wall_budget_seconds": 95,
+  "seconds": 43.055406368999684,
+  "peak_rss_kib": 92412,
+  "status": "Numerical only; no exact/interval certificate; no new kissing-number claim."
+}

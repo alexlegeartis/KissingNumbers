@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "baseline_points": 221988,
+  "distinct_candidates": 24178,
+  "distinct_forbidden_owners": 24178,
+  "squared_norm": 128,
+  "minimum_witness_dot": 80,
+  "maximum_possible_gain": 0,
+  "proof": "Each distinct added point forces deletion of its assigned distinct incompatible baseline point. Every candidate subset costs at least its cardinality; all candidate/candidate constraints may be ignored.",
+  "arithmetic": "direct int64 coordinate sums with proved overflow bound; no BLAS, matching optimizer, saved graph or saved PASS used",
+  "scope": "all subsets of the explicit finite candidate pool with arbitrary baseline deletions; no bound on ungenerated candidates",
+  "source_sha256": "509b7894dd8534946a81d8bfd354c9ef947e4fe5c82482796aac76799169f129",
+  "witness_sha256": "9039b548e5d4ee6dc73678efbf13229f0b7aa285bbd70db8f444bd3f72b99fd1"
+}

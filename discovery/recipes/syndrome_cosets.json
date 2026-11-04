@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "name": "syndrome_cosets",
+  "description": "Exact quotient-distance demonstration. Selectedcosets give32 points in8D, not a record.",
+  "nodes": [
+    {
+      "id": "oracle",
+      "op": "cosets.build",
+      "params": {
+        "parity_check": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "union",
+      "op": "cosets.union",
+      "inputs": [
+        "oracle"
+      ],
+      "params": {
+        "syndrome_labels": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "id": "sphere",
+      "op": "geometry.sign_embed",
+      "inputs": [
+        "union"
+      ]
+    }
+  ],
+  "outputs": [
+    "sphere"
+  ]
+}

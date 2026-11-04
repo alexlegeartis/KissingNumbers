@@ -1,0 +1,2 @@
+{"label": "rank_two", "cardinality": 7560, "reflection_fixed_actions": 30, "AtA_scalar": false}
+{"label": "complex_structure", "cardinality": 15120, "reflection_fixed_actions": 0, "AtA_scalar": true}

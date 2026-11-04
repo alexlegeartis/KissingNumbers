@@ -1,0 +1,48 @@
+{
+  "dimension": 40,
+  "baseline": 1126314,
+  "generated_short_dual": 30240,
+  "new_candidates": 29106,
+  "blocker_cutoff": 64,
+  "restricted_candidates": 8694,
+  "pruned": 20412,
+  "layers": [
+    {
+      "layer": "medium",
+      "norm": 36,
+      "threshold": 16,
+      "source_points_scanned": 40590,
+      "survivors": 29106,
+      "arithmetic_absolute_bound": 4977
+    },
+    {
+      "layer": "small",
+      "norm": 30,
+      "threshold": 15,
+      "source_points_scanned": 1134,
+      "survivors": 29106,
+      "arithmetic_absolute_bound": 3069
+    },
+    {
+      "layer": "core",
+      "norm": 54,
+      "threshold": 20,
+      "source_points_scanned": 1084590,
+      "survivors": 8694,
+      "arithmetic_absolute_bound": 5967
+    }
+  ],
+  "dot_products": 14286809708,
+  "matching_size": 8694,
+  "matching_deficiency": 0,
+  "seconds": 221.93091804899996,
+  "new_sota": false,
+  "source_hashes": {
+    "verifications/improved/dim40-affine-shells/source/gram.json": "3787fe3cc1d4485e34513b6d7b5da07b9667a5797de5021a296454018947e5d8",
+    "verifications/improved/dim40-affine-shells/source/auxiliary.npz": "e9330b63619c5e8999ab4f3960ea104b253ab01093557731ec721088626aad76",
+    "verifications/improved/dim40-affine-shells/source/core.npz": "954fde3d808238c2a268f9f91d7b85a75cfa1ecc35221f268defdeafa2b6bf68",
+    "verifications/improved/dim41-46-p48-heads/partial43/tiny_bodies.npz": "443252c18f6fbd6ea82a37aec74f15e6147d7900a115dd9efe54e8b94866bbe2",
+    "verifications/improved/dim41-46-p48-heads/partial43/body_complement.npz": "6b50a641abb5bcfcb767266511c4f0cc8e9611cec1521cedeaa57a301ee58849"
+  },
+  "scope": "All baseline layers mutable. Complete exact blockers for admitted candidates. A saturating injection excludes gain only from this finite cutoff pool; no global bound."
+}

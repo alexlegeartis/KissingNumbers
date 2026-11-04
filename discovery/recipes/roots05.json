@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "name": "Classical D5 root-system control",
+  "provenance": {
+    "classification": "classical root-system formula replay; no novelty or optimality claim"
+  },
+  "nodes": [
+    {
+      "id": "roots",
+      "op": "lattice.root_system",
+      "params": {
+        "family": "D",
+        "rank": 5
+      }
+    }
+  ],
+  "outputs": [
+    "roots"
+  ]
+}

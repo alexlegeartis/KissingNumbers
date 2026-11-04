@@ -1,0 +1,25 @@
+{
+  "dimension": 27,
+  "source": "research/algebraic_switches_20261104/lifts27/engine_candidate.npz",
+  "source_sha256": "7a869e349545f96d563a654e307cba9461c3bbecb883299b3a85e05d6fe127d1",
+  "baseline": 209825,
+  "supports": 1298,
+  "core_weight": 5,
+  "signed_body_shapes": 41536,
+  "core_admitted_bodies": 19924,
+  "tested_bodies": 19924,
+  "body_limit": null,
+  "body_generation_complete": true,
+  "candidate_pool": 159392,
+  "admitted_candidates": 0,
+  "blocker_cutoff": 2,
+  "dot_products": 51645824,
+  "optimization": {
+    "gain": 0,
+    "added": [],
+    "removed": []
+  },
+  "seconds": 1.5564509100004216,
+  "new_sota": false,
+  "scope": "Seeded core/tail signed-support grammar with stated weight and body budget; individually selectable points, all incumbent layers mutable. Full final geometry replay is required for a lower bound."
+}

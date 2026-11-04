@@ -1,0 +1,2 @@
+generated four exact algebraic actions
+{"facts": {"dimension": 24, "rank_exact": 24, "ambient_dimension": 24, "cardinality": 196560, "norm_squared": 32, "max_inner_product": 16, "finite_group_proved": true}, "proof": {"seed_pairs_checked": 196559, "unordered_pairs_covered": 19317818520, "generator_images_checked": 786240}, "seconds": 19.73499933899984}

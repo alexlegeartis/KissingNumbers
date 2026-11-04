@@ -1,0 +1,8 @@
+RING {'family': 'uniform_ring_syndrome', 'candidates': 4096, 'rejected': 4096, 'survivors': 0, 'minimum_witness_distance_histogram': {16: 1460, 18: 1696, 14: 450, 12: 100, 20: 380, 22: 4, 10: 6}, 'best_proxy': 22}
+RING {'family': 'deep_residue_lift', 'candidates': 4096, 'rejected': 4096, 'survivors': 0, 'minimum_witness_distance_histogram': {16: 1418, 14: 437, 18: 1760, 12: 78, 20: 396, 22: 3, 10: 4}, 'best_proxy': 22}
+RING {'family': 'quadratic_coordinate_offsets', 'candidates': 4096, 'rejected': 4096, 'survivors': 0, 'minimum_witness_distance_histogram': {18: 1727, 16: 1409, 12: 102, 14: 484, 20: 363, 10: 6, 22: 5}, 'best_proxy': 22}
+ASCENT {'generation': 23, 'candidates': 497, 'best_proxy': 22, 'survivors': 0} expanded128best 18 survivors 0
+BINARY {'family': 'balanced_random_masks', 'candidates': 2048, 'rejected': 1889, 'survivors': 159, 'witness_distance_histogram': {21: 454, 20: 331, 22: 450, 23: 312, 24: 133, 19: 182, 17: 43, 18: 100, 25: 25, 16: 15, 26: 1, 15: 2}, 'best_proxy': 26}
+BINARY {'family': 'quadratic_block_masks', 'candidates': 2047, 'rejected': 1780, 'survivors': 267, 'witness_distance_histogram': {20: 650, 22: 935, 24: 263, 18: 164, 16: 27, 14: 4, 26: 4}, 'best_proxy': 26}
+BINARY {'family': 'golay_residue_parity_masks', 'candidates': 2047, 'rejected': 1781, 'survivors': 266, 'witness_distance_histogram': {18: 210, 22: 904, 20: 625, 16: 37, 24: 262, 26: 4, 14: 5}, 'best_proxy': 26}
+elapsed 1.640171167000517
