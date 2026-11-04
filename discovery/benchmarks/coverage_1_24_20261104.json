@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "audit_date": "2026-11-04",
-  "built_at_utc": "2026-11-04T16:24:19.923039+00:00",
+  "built_at_utc": "2026-11-04T17:14:46.092096+00:00",
   "canonical_matrix": "research/discovery_campaign_20261104/coverage_1_24/matrix.json",
-  "canonical_matrix_sha256": "c531a83451a4509439d2fd80042b04f4ee85d9de4daf8ac942c004b85ea806ee",
+  "canonical_matrix_sha256": "608c59dc40b8e02ab6bccf9c0205dec4976f371285bdb77d7a39663cd8d6270a",
   "incoming_patch": {
     "patch": "research/discovery_campaign_20261104/coverage_1_24/integration/coverage-benchmarks-20261104.patch",
     "sha256": "7ac4796cc14c476424e3a09888e499c077844828c9921b7508c8e81e384bd741",
@@ -116,7 +116,7 @@
           "origin": "generated",
           "provenance": "generated known construction control; no autonomous discovery claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots01.json",
-          "receipt_sha256": "4bbed7253e636fb9e9abf37aef2ec56106d8af48e0f148ead52099d8a7d950ef",
+          "receipt_sha256": "aea814f176b0c4e4beb6c3ae6d4089abf49e14ac7636fc327f8ed83ccacb62a9",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -127,7 +127,7 @@
             "rank_scalar_work": 2,
             "pairs_checked": 1
           },
-          "run_seconds": 0.002865,
+          "run_seconds": 0.002856,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -156,7 +156,7 @@
           "origin": "imported",
           "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_a1.json",
-          "receipt_sha256": "3bca09ac0cf2e9cdec6038b4e7bd0afd4509e2ff7a97ec7a6e69d3adcebc94e5",
+          "receipt_sha256": "8aae1b7e0e02c54e58d5bc4de8a2a0bcefa2a91d4107a5c2d6f6715d4f3a9024",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -167,7 +167,7 @@
             "rank_scalar_work": 2,
             "pairs_checked": 1
           },
-          "run_seconds": 0.003053,
+          "run_seconds": 0.003014,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -254,7 +254,7 @@
           "origin": "generated",
           "provenance": "generated known construction control; no autonomous discovery claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots02.json",
-          "receipt_sha256": "be97a7dc32a4223bfff774e165a5df50af0def907366e463a3b399917b1479c0",
+          "receipt_sha256": "ff452bde3fb3a0e7d8bcecaed5e427069b437302dbf14ae96c32f82f3533a43f",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -265,7 +265,7 @@
             "rank_scalar_work": 32,
             "pairs_checked": 15
           },
-          "run_seconds": 0.003157,
+          "run_seconds": 0.003048,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -294,7 +294,7 @@
           "origin": "imported",
           "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_a2.json",
-          "receipt_sha256": "1339568a5191bf9670564ff4047cadea086f17d9d418ecf35103ddad24eb9e11",
+          "receipt_sha256": "17f99f2ae27b64e1bd4aef53219c4dea24d6f5754176fe9bde3d4c5abf64eead",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -305,7 +305,7 @@
             "rank_scalar_work": 36,
             "pairs_checked": 15
           },
-          "run_seconds": 0.002958,
+          "run_seconds": 0.002973,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -397,7 +397,7 @@
           "origin": "generated",
           "provenance": "generated known construction control; no autonomous discovery claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots03.json",
-          "receipt_sha256": "7f597530d44c5e5069bb715b90522e33401e6119164ae954d26053fdaa07104f",
+          "receipt_sha256": "69cd8aa599ad4a957fed4bc3be0ecefb62918e195f108bf60f5ce03bf8828ebc",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -408,7 +408,7 @@
             "rank_scalar_work": 138,
             "pairs_checked": 66
           },
-          "run_seconds": 0.003252,
+          "run_seconds": 0.003155,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -437,7 +437,7 @@
           "origin": "imported",
           "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_d3.json",
-          "receipt_sha256": "b9878841ebb1b73adfb2745b6b5e1e207fed3c25889653408fb03c69cc478df5",
+          "receipt_sha256": "f4b1131eef3edaef10a7a5d7a3b3932ee34e6ba6afb6cdae08836d2285fbf091",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -448,7 +448,7 @@
             "rank_scalar_work": 126,
             "pairs_checked": 66
           },
-          "run_seconds": 0.003249,
+          "run_seconds": 0.003171,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -545,7 +545,7 @@
           "origin": "imported",
           "provenance": "supplied exact coordinate/Gram source in reachable ancestry; geometric composition does not change its import provenance",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/orthogonal_union.json",
-          "receipt_sha256": "e8f5be52a60554903178f0b5a193b06118142996816ebd675f6a2a13ad9dfd92",
+          "receipt_sha256": "45e3a3d10a43ee846fb43c216ced9ee53c3c9914a86ae7b8dc10a15828fe5a55",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -556,7 +556,7 @@
             "rank_scalar_work": 32,
             "pairs_checked": 28
           },
-          "run_seconds": 0.003899,
+          "run_seconds": 0.003891,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -585,7 +585,7 @@
           "origin": "generated",
           "provenance": "generated known construction control; no autonomous discovery claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots04.json",
-          "receipt_sha256": "24010321d67093ff55fe32e1d50969226df55bb91a20d2172cabd9c28273f265",
+          "receipt_sha256": "a87000f91358b005b2a0082ecf34d202988f8f9830db1c8aa8ad211a34830f48",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -596,7 +596,7 @@
             "rank_scalar_work": 400,
             "pairs_checked": 276
           },
-          "run_seconds": 0.003846,
+          "run_seconds": 0.003749,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -625,7 +625,7 @@
           "origin": "imported",
           "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_d4.json",
-          "receipt_sha256": "c24ab3b22fdd6d41a1a9568a66c9c3747cbdec5da45e0e4e528cad6817ace3d7",
+          "receipt_sha256": "86cf95a9e49b0a252af241125c0804dda67b1ae318e80204e04cb74a63df208a",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -636,7 +636,7 @@
             "rank_scalar_work": 448,
             "pairs_checked": 276
           },
-          "run_seconds": 0.003985,
+          "run_seconds": 0.003907,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -733,7 +733,7 @@
           "origin": "imported",
           "provenance": "exact supplied Gram certificate; source numerical discovery history does not establish autonomous program synthesis",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/gram5_control.json",
-          "receipt_sha256": "fcbf6d5ae10a7395e17b3dd7006c6bc5e41f96e0e269c0fa5a6bd368ffd2aa10",
+          "receipt_sha256": "0d4d7b896da73fb3f27b43115aca2a2cac8b6bb32420645676ed259d8079787b",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "exact rational symmetric Gram, Schur PSD/rank, common norm and all pair inequalities",
@@ -744,7 +744,7 @@
             "rank_scalar_work": 10560,
             "pairs_checked": 780
           },
-          "run_seconds": 0.086477,
+          "run_seconds": 0.091886,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -773,7 +773,7 @@
           "origin": "generated",
           "provenance": "generated known construction control; no autonomous discovery claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots05.json",
-          "receipt_sha256": "f3f6ab9b6ad7de4c0d240e6910484982d1410c02bf35e4c634085e6c411197e3",
+          "receipt_sha256": "23d99f47f7b457491009bb83b6fc71febf9428f9fb52b277e25a091f0d8f2087",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -784,7 +784,7 @@
             "rank_scalar_work": 850,
             "pairs_checked": 780
           },
-          "run_seconds": 0.0048,
+          "run_seconds": 0.004922,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -813,7 +813,7 @@
           "origin": "imported",
           "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_d5.json",
-          "receipt_sha256": "2f5efc3bb672258aeee8d402ad08a89b4bc0eef112e408dd98542487cb0e41e1",
+          "receipt_sha256": "a7540fbb1ef91d61d8c6093397279d5841752c908758b60445a43ce4355f82e7",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -824,7 +824,7 @@
             "rank_scalar_work": 1150,
             "pairs_checked": 780
           },
-          "run_seconds": 0.005146,
+          "run_seconds": 0.005469,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -938,7 +938,7 @@
           "origin": "generated",
           "provenance": "generated known construction control; no autonomous discovery claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots06.json",
-          "receipt_sha256": "23d4cb7f009c1aece999fe8b5c88a91f9efc1edbbae3e230922f94f39fd80ac6",
+          "receipt_sha256": "e35eb0ef39bd74ec61fd3d295436fd862997911597097c7562d0700d2740713c",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -949,7 +949,7 @@
             "rank_scalar_work": 3120,
             "pairs_checked": 2556
           },
-          "run_seconds": 0.00786,
+          "run_seconds": 0.007629,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -978,7 +978,7 @@
           "origin": "imported",
           "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_e6.json",
-          "receipt_sha256": "d08d96e67f268893c2dff078b3c5ef7fbca9396e6b0aef04caee8a978b492b19",
+          "receipt_sha256": "89981d3831565d279e894e8f4e0dfac84cc179fd0594e2385845e135dc6380bf",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -989,7 +989,7 @@
             "rank_scalar_work": 4448,
             "pairs_checked": 2556
           },
-          "run_seconds": 0.009307,
+          "run_seconds": 0.009773,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -1020,7 +1020,7 @@
           "origin": "generated",
           "provenance": "generated known construction control; no autonomous discovery claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/section_e8_chain.json",
-          "receipt_sha256": "4de3285eed36626c5c19a01d89363f393da1c7f3fcd644bafb8d53142c47f7fc",
+          "receipt_sha256": "dda0760df7369a4262ef31ee59d7890d400d8884277f7136f1245355d63352ca",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "exact rational weighted central hyperplane selection and independent integer geometry",
@@ -1031,7 +1031,7 @@
             "rank_scalar_work": 4160,
             "pairs_checked": 2556
           },
-          "run_seconds": 0.132538,
+          "run_seconds": 0.125839,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -1128,7 +1128,7 @@
           "origin": "generated",
           "provenance": "generated known construction control; no autonomous discovery claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots07.json",
-          "receipt_sha256": "f62cbe3ac4181e0c107575fc78ca0e974853e7fdd2a73d0420222ae040b5fa6c",
+          "receipt_sha256": "7ea6a238b92b1ef3fe6d3ed3f1496a9c38f319400b6cc678fff07718283d20eb",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -1139,7 +1139,7 @@
             "rank_scalar_work": 7630,
             "pairs_checked": 7875
           },
-          "run_seconds": 0.013543,
+          "run_seconds": 0.013438,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -1168,7 +1168,7 @@
           "origin": "imported",
           "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_e7.json",
-          "receipt_sha256": "194a3112d8feb22e8bbbcc4291389f4a33964a3a15f2aba96d07ae0164be4760",
+          "receipt_sha256": "01a623aa84c9789547b4c5d69404b6f5acc7a8e15e55161467ea3a2069a77b0e",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -1179,7 +1179,7 @@
             "rank_scalar_work": 9552,
             "pairs_checked": 7875
           },
-          "run_seconds": 0.015748,
+          "run_seconds": 0.016456,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -1210,7 +1210,7 @@
           "origin": "generated",
           "provenance": "generated known construction control; no autonomous discovery claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/section_e8_chain.json",
-          "receipt_sha256": "4de3285eed36626c5c19a01d89363f393da1c7f3fcd644bafb8d53142c47f7fc",
+          "receipt_sha256": "dda0760df7369a4262ef31ee59d7890d400d8884277f7136f1245355d63352ca",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "exact rational weighted central hyperplane selection and independent integer geometry",
@@ -1221,7 +1221,7 @@
             "rank_scalar_work": 8720,
             "pairs_checked": 7875
           },
-          "run_seconds": 0.121904,
+          "run_seconds": 0.115628,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -1321,7 +1321,7 @@
           "origin": "generated",
           "provenance": "generated known construction control; no autonomous discovery claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots08.json",
-          "receipt_sha256": "e895d83d0714b1579ee4ab222701e07772f76ff73ce0ca8b3eb857333d510a79",
+          "receipt_sha256": "569595451b0cc345c8f1e79ed4643d124244686b65f6163bab26ea4332f19909",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -1332,7 +1332,7 @@
             "rank_scalar_work": 19168,
             "pairs_checked": 28680
           },
-          "run_seconds": 0.028212,
+          "run_seconds": 0.028203,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -1361,7 +1361,7 @@
           "origin": "imported",
           "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_e8.json",
-          "receipt_sha256": "f90bedbed2b5e93fa915e917a3636bde1753e5399f82dbc01469b813a4818c40",
+          "receipt_sha256": "4224a53231cc9a5be9d7833753a5294eed193a8a7b3e2748f2af6c319fbc73a9",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -1372,7 +1372,7 @@
             "rank_scalar_work": 21888,
             "pairs_checked": 28680
           },
-          "run_seconds": 0.032171,
+          "run_seconds": 0.024333,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -1403,7 +1403,7 @@
           "origin": "generated",
           "provenance": "generated known construction control; no autonomous discovery claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/syndrome_cosets.json",
-          "receipt_sha256": "630b221b68a5c733988690f88ecb1ade03b3daaf59c1deaea8cd92fc702cb912",
+          "receipt_sha256": "07ec84c55e5524b296c8ec979c0e1c6dee502fb95244f866b9681813b28d4513",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "binary sign embedding from independently reverified distance",
@@ -1411,7 +1411,7 @@
           },
           "artifact_kind": "implicit_spherical_code",
           "proof_summary": {},
-          "run_seconds": 0.00518,
+          "run_seconds": 0.005138,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -1506,7 +1506,7 @@
           "origin": "generated",
           "provenance": "runtime triple-disjoint support-orbit search, with no target cardinality or record coordinates; separate blind1_24 benchmark records held-out rediscovery; geometry alone does not authenticate history",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/support9_search.json",
-          "receipt_sha256": "4b348ed96607d541800fbd0828216db586c54321aeea3fe54f24b5bda68df34c",
+          "receipt_sha256": "5c227f6e4b715feac43f182280a3f16d90483c0d0713289eb42861cda09fb04d",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -1517,7 +1517,7 @@
             "rank_scalar_work": 20898,
             "pairs_checked": 46665
           },
-          "run_seconds": 0.039882,
+          "run_seconds": 0.047119,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -1619,7 +1619,7 @@
           "origin": "generated",
           "provenance": "generated known exact recipe; separate numerical subgroup-character search recovered line systems; exact recipe is reconstruction",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/ganzhinov10.json",
-          "receipt_sha256": "1413a6635da49606675a00f468fb90579d2f6b56c448d5501b106beb6d1aacf7",
+          "receipt_sha256": "5d78b1c77c9dfb92c5b11cbd609dd9325758dfdc7a9899ed5a22ea8db36be7eb",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -1630,7 +1630,7 @@
             "rank_scalar_work": 119088,
             "pairs_checked": 129795
           },
-          "run_seconds": 0.775483,
+          "run_seconds": 0.968625,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -1803,7 +1803,7 @@
           "origin": "generated",
           "provenance": "runtime triple-disjoint support-orbit search, with no target cardinality or record coordinates; separate blind1_24 benchmark records held-out rediscovery; geometry alone does not authenticate history",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/support12_search.json",
-          "receipt_sha256": "567f5c91b603616244d49e6b58a054d71b19d3b50586e36aef19ea3b385f2033",
+          "receipt_sha256": "a3df2a0474e12858662417f7e4c397bca736d2cb38f47f5088c57b8fbd09c425",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -1814,7 +1814,7 @@
             "rank_scalar_work": 78624,
             "pairs_checked": 352380
           },
-          "run_seconds": 0.71867,
+          "run_seconds": 0.682822,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -1919,7 +1919,7 @@
           "origin": "imported",
           "provenance": "supplied classical equator coordinates and quadratic-field cap coefficients; registered conditional switching/free-zone joining/coupled lift; known1154 construction, no novelty claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/program_H2.json",
-          "receipt_sha256": "d5aaeeb57b808fb2071cc4df31fa50892dcfa3d90789837ac3130f29f39f9b1e",
+          "receipt_sha256": "d74b6bb401ff158148401b6ded8dd18c6d2c620922a1fc150ea48cfcafcb0132",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "all normalized pair inequalities in Q(sqrt(3)); positive rational squared norms",
@@ -1931,7 +1931,7 @@
             "rank_lower_bound": 13,
             "arithmetic": "integer sign comparisons and exact squaring in Q(sqrt(3))"
           },
-          "run_seconds": 0.663088,
+          "run_seconds": 0.445352,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -2033,7 +2033,7 @@
           "origin": "generated",
           "provenance": "generated known E7-frame recipe; not autonomous U(3,3) subgroup-character discovery",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/ganzhinov14.json",
-          "receipt_sha256": "495c41b2864357a4975e379783dbc53b62594b8df2183cd2ab6098d975f1dec4",
+          "receipt_sha256": "78c450508bfa9fbdcece4c26e417e43334269ecc928528a05a1cfc42d60a6f93",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -2044,7 +2044,7 @@
             "rank_scalar_work": 380968,
             "pairs_checked": 1865346
           },
-          "run_seconds": 0.741444,
+          "run_seconds": 0.700706,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -2211,7 +2211,7 @@
           "origin": "generated",
           "provenance": "generated known construction control; no autonomous discovery claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/octacode.json",
-          "receipt_sha256": "df2156ad6d9c6817c9bea6cbe27690b06161627234ad7f6af302fa68269dda59",
+          "receipt_sha256": "ec32c2c8e7b3f49bf43b8bc717c1b752da997741259ddccaeb8bc34c1e17bab9",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "binary sign embedding from independently reverified distance",
@@ -2219,7 +2219,7 @@
           },
           "artifact_kind": "implicit_spherical_code",
           "proof_summary": {},
-          "run_seconds": 0.027252,
+          "run_seconds": 0.025801,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -2248,7 +2248,7 @@
           "origin": "generated",
           "provenance": "generated implicit affine-flat/quadratic-sign sector; symbolic count and separation replay; no supplied record coordinates or novelty claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/stabilizer16.json",
-          "receipt_sha256": "b279809ad35cddc09eaaf6b8e27a3bf264462965af1072353c87089fa8355eba",
+          "receipt_sha256": "e0ca9eac3e333b10f48c6d77e7a3f1dfc7dc982ffe49bfc42cf7e3d7b9d79a91",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "affine binary-flat count and quadratic Boolean bias theorem",
@@ -2266,7 +2266,7 @@
               "same support quadratic difference"
             ]
           },
-          "run_seconds": 0.0035,
+          "run_seconds": 0.003297,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 10000000,
@@ -2376,7 +2376,7 @@
           "origin": "imported",
           "provenance": "literal runtime coordinate input independently generated by build17.py from Boolean quadratic/RM code formulas; all16413585 weighted integer pairs verified; known5730 control, no held-out discovery claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/control17_program.json.gz",
-          "receipt_sha256": "d515fd69293f7cfaae5d8ef4e077e30f95482c6e870bfa9651bd091419b61803",
+          "receipt_sha256": "45df704e8f50c1091ee7e8aa43c38f8b0e5edf89aea429405ad4c956f12d9344",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -2387,7 +2387,7 @@
             "rank_scalar_work": 1563694,
             "pairs_checked": 16413585
           },
-          "run_seconds": 4.65237,
+          "run_seconds": 4.080262,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 20000000,
@@ -2489,7 +2489,7 @@
           "origin": "imported",
           "provenance": "native weighted quadratic coordinate input reconstructed by build18.py from the existing bent-hexagon component codes; all34923903 pairs verified; known8358 control, no held-out discovery claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/control18_program.json.gz",
-          "receipt_sha256": "8cf3fcb2fc601b57a8162064499de0ec4dba52d1163678a3b69275aca4df03d8",
+          "receipt_sha256": "feb39c876e24539d1742ff54c578087bfb623ee3ebc9ee4d85329ed2c8dd50a5",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "all normalized pair inequalities in Q(sqrt(3)); positive rational squared norms",
@@ -2501,7 +2501,7 @@
             "rank_lower_bound": 18,
             "arithmetic": "integer sign comparisons and exact squaring in Q(sqrt(3))"
           },
-          "run_seconds": 19.496351,
+          "run_seconds": 18.163634,
           "resource_limits": {
             "max_materialized_points": 20000,
             "max_pairs": 40000000,
@@ -2584,18 +2584,62 @@
         "reference_labels": "[ 14 , 12 ]"
       },
       "target_kind": "current sourced lower-bound construction; no optimality claim",
-      "coverage_status": "prototype_only",
+      "coverage_status": "exact_target_recipe",
       "target_status": {
-        "imported": false,
+        "imported": true,
         "formula_generated": false,
         "search_execution": false,
         "search_discovered": false,
-        "exact_verified": false,
-        "unsupported": true,
-        "not_tested": true
+        "exact_verified": true,
+        "unsupported": false,
+        "not_tested": false
       },
-      "recipe": null,
-      "verification_evidence": [],
+      "recipe": [
+        "research/character_families_20261104/control19_program.json"
+      ],
+      "verification_evidence": [
+        {
+          "recipe": "research/character_families_20261104/control19_program.json",
+          "recipe_sha256": "a65202385498f9fd2ad824fded696c1cf08d18fa969d39f9ab82cbc49e2bc8b6",
+          "output_id": "sphere",
+          "operators": [
+            "geometry.quadratic_code"
+          ],
+          "dimension": 19,
+          "ambient_dimension": 19,
+          "cardinality": 12460,
+          "origin": "imported",
+          "provenance": "supplied exact coordinate/Gram source in reachable ancestry; geometric composition does not change its import provenance",
+          "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/control19_program.json.gz",
+          "receipt_sha256": "21dc09ef1b1ae1e6686b43347657a4cc2381e58fa9c2820ca02ff8c210f52c1d",
+          "independent_verification": {
+            "status": "exact_replayed",
+            "method": "all normalized pair inequalities in Q(sqrt(3)); positive rational squared norms",
+            "scope": "current verifier rerun separately after shared-runner terminal replay; not historical-discovery or novelty proof"
+          },
+          "artifact_kind": "quadratic_spherical_code",
+          "proof_summary": {
+            "pairs_checked": 77619570,
+            "rank_lower_bound": 19,
+            "arithmetic": "integer sign comparisons and exact squaring in Q(sqrt(3))"
+          },
+          "run_seconds": 123.880642,
+          "resource_limits": {
+            "max_materialized_points": 15000,
+            "max_pairs": 80000000,
+            "max_codewords": 262144,
+            "max_orbit_points": 10000,
+            "max_trials": 200,
+            "solver_seconds": 30,
+            "max_dgls_words": 16777216,
+            "max_dimension": 256,
+            "max_nodes": 100,
+            "max_gram_entries": 2000000,
+            "max_rank_work": 50000000,
+            "max_rational_bits": 4096
+          }
+        }
+      ],
       "formula_regeneration_verified_fixtures": [],
       "numerical_search_recipes": [],
       "separate_repository_evidence": [
@@ -2608,7 +2652,7 @@
           "note": "historical11948 prototype/mechanism is below current12460; no current target reproduction"
         }
       ],
-      "remaining_gap": "current12460 construction; historical11948 mechanism is insufficient",
+      "remaining_gap": null,
       "resource_limits": {
         "shared_default": {
           "max_materialized_points": 20000,
@@ -2823,7 +2867,7 @@
           "origin": "generated",
           "provenance": "runtime exact orbit generation from four Golay/sextet actions; complete closure/transitivity/seed-separation proof and exact subset sections; known controls, no held-out discovery or novelty claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/leech_sections_program.json.gz",
-          "receipt_sha256": "f92065df498fb76c4d8cf3d41b3076049cbd7382d6893ae9a7c13fa93f4db03a",
+          "receipt_sha256": "1d11a5b2d8dc2479bbfbb149a262fb4572cdd6ef47c9812fc8034ac1e1b712e9",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "complete exact central section membership; separation inherited from independently verified source",
@@ -2833,7 +2877,7 @@
           "proof_summary": {
             "rank_scalar_work": 19344
           },
-          "run_seconds": 190.358944,
+          "run_seconds": 175.947236,
           "resource_limits": {
             "max_materialized_points": 250000,
             "max_pairs": 250000,
@@ -2937,7 +2981,7 @@
           "origin": "generated",
           "provenance": "runtime exact orbit generation from four Golay/sextet actions; complete closure/transitivity/seed-separation proof and exact subset sections; known controls, no held-out discovery or novelty claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/leech_sections_program.json.gz",
-          "receipt_sha256": "f92065df498fb76c4d8cf3d41b3076049cbd7382d6893ae9a7c13fa93f4db03a",
+          "receipt_sha256": "1d11a5b2d8dc2479bbfbb149a262fb4572cdd6ef47c9812fc8034ac1e1b712e9",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "complete exact central section membership; separation inherited from independently verified source",
@@ -2947,7 +2991,7 @@
           "proof_summary": {
             "rank_scalar_work": 22896
           },
-          "run_seconds": 169.98378,
+          "run_seconds": 158.441618,
           "resource_limits": {
             "max_materialized_points": 250000,
             "max_pairs": 250000,
@@ -3055,7 +3099,7 @@
           "origin": "generated",
           "provenance": "runtime exact orbit generation from four Golay/sextet actions; complete closure/transitivity/seed-separation proof and exact subset sections; known controls, no held-out discovery or novelty claim",
           "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/leech_sections_program.json.gz",
-          "receipt_sha256": "f92065df498fb76c4d8cf3d41b3076049cbd7382d6893ae9a7c13fa93f4db03a",
+          "receipt_sha256": "1d11a5b2d8dc2479bbfbb149a262fb4572cdd6ef47c9812fc8034ac1e1b712e9",
           "independent_verification": {
             "status": "exact_replayed",
             "method": "exact orthogonal action closure, transitivity, seed separation and rational rank",
@@ -3065,7 +3109,7 @@
           "proof_summary": {
             "rank_scalar_work": 22848
           },
-          "run_seconds": 152.188305,
+          "run_seconds": 140.191849,
           "resource_limits": {
             "max_materialized_points": 250000,
             "max_pairs": 250000,

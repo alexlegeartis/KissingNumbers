@@ -2,6 +2,12 @@
 __pycache__/
 *.py[cod]
 
+# Regenerated inputs and candidate exports for the coupled17 research package.
+research/mixed_tier17_20261104/mixed17_*.bin
+research/mixed_tier17_20261104/mixed17_keys.json
+research/mixed_tier17_20261104/mixed17_rank4_keys.json
+research/mixed_tier17_20261104/*.npz
+
 # regenerable caches (built on first use by common/leech.py)
 common/data/leech196560.npy
 

@@ -1,12 +1,16 @@
 # Exact construction coverage, dimensions 1–24
 
 The executable audit has exactly24 rows. Current exact target recipes cover
-**1–10,13,14,16–18,22–24**. The remaining dimensions **11,12,15,19–21** have
+**1–10,13,14,16–19,22–24**. The remaining dimensions **11,12,15,20,21** have
 explicit gaps. These are existing lower bounds, with no new record claim.
 The9D route executes runtime support search; its separate held-out benchmark
 is documented in `discovery/docs/CONSTRUCTION_SEARCH.md`. The12D search reaches
 historical840, below current841. Large17D/18D and Leech controls use explicitly
 declared resource profiles; their self-contained receipts are compressed.
+The19D12460 route reconstructs Li's printed coset choices with rational tail
+and mark parameters; all77619570 pairs are checked exactly. Its count is a
+known control. Its stricter auxiliary angular gap is recorded separately in
+`research/character_families_20261104/control19_source.json`.
 
 The source is [Cohn's table](https://cohn.mit.edu/kissing-numbers/), successfully retrieved on **2026-11-04T12:36:52.845533+00:00**. The preserved HTML is `research/discovery_campaign_20261104/baselines/cohn.html`, SHA-256 `94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e`. Earlier browser/network failures in the incoming audit are historical observations; this later successful response supplies every target. Within this range, only dimensions 1, 2, 3, 4, 8 and 24 have proved exact kissing numbers; the other targets are lower bounds.
 

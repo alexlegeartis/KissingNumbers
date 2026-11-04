@@ -32,7 +32,7 @@ From the repository root, run with Python 3, NumPy, and a C++17 compiler:
     python research/mixed_tier17_20261104/verify_seven_flat.py
 
 The scripts write regenerable binary search inputs in this directory. The
-proof certificate is `five_flat_clique_certificate.json`. Both verifiers use
+proof certificate is `mixed17_five_flat_clique_certificate.json`. Both verifiers use
 integer comparisons, reconstruct flat compatibility independently, and check
 each reported clique directly against the 32 sign operations. No numerical
 MILP status is used as a proof.

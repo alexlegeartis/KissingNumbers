@@ -5330,6 +5330,7 @@
     "contracts.py": "8a8c134dcf67751a0b0882536e8886e4d120f1b76d7388e66a60f18eeb786872",
     "core.py": "69313eb6d933f436d151289f23c40f018365d16057a2b75d455ac0fe157a1024",
     "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
+    "engines/characters.py": "a889bc661697e1eb2c5f204680f0602e22fd490d929cc090d48d647a7763d4b5",
     "engines/construction_search.py": "d9956f8ccc364a3608c0f02dbda1b27df583d7978e91bf64761e5fe934da9c42",
     "engines/coset_search.py": "3e808aeee08588665f36d3286172de791dc467fc1a854432a5bec2ae7c9be722",
     "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
@@ -5345,18 +5346,19 @@
     "engines/stabilizers.py": "999aa4a478cc5b16a6840b5b8576cef565be83c27ad5ce9ad0ca7592dd64e362",
     "exact_gram.py": "448103205e806c2d1c8bd2770e7a22d29c533cae2fcd3ef3f2bf219572f440ba",
     "group_constraints.py": "dea348edffb83b3fe05f75f773c1f64c6f5013772866bb7ad42670586466e2ec",
+    "numerical_shapes.py": "85e9df44c717fcc949295e23985e1cca95bd1cfadf18b12bf850233f9faa7520",
     "objects.py": "4e8a922bcd7f57fa0d9be5507a92678a170bb8fa45d4e0ab8b61b1e52cf96bb3",
     "planner.py": "7567b7ac07e0ef52d74a9126aec34e3b70de9b3498fd1f1edfe11f424ccabb97",
-    "runner.py": "caa932e453bad02753c51ecb2f0334c31beba602468f3703f12627af1f34d8e3",
+    "runner.py": "84570f966396822a433d13339364629faeac396e6759a0f45907733fc75e7ebe",
     "scheduler.py": "34aa720811dce88f75c05a76c23cc5f6b36d62d891cd929c863cb7bca499af75",
-    "sections.py": "b6f6c7314a921f95384fef29d6c87677ffbadff1f42b90aa8853c0a3146b451f"
+    "sections.py": "3e5d33680f60c950cb7b232bf73abbe4aa02a1a8dfef261ebefca8875faecbc3"
   },
   "events": [
     {
       "node": "classical6",
       "op": "geometry.integer_code",
       "state": "completed",
-      "seconds": 0.000993,
+      "seconds": 0.000883,
       "kind": "spherical_code",
       "verification_status": "exact",
       "artifact_sha256": "34c87f632e463f3820cab5d2322b47a8b0ea03192a559b6f952a0fbf7ad69a6e"
@@ -5365,7 +5367,7 @@
       "node": "H2",
       "op": "signed_layers.conditional_swap",
       "state": "completed",
-      "seconds": 0.0018,
+      "seconds": 0.001538,
       "kind": "spherical_code",
       "verification_status": "exact",
       "artifact_sha256": "eda005d5f03ece07bcb5cfe1867a41270051160a464efc665b17fcc4dba7c61c"
@@ -5374,7 +5376,7 @@
       "node": "equator",
       "op": "signed_layers.free_zone_join",
       "state": "completed",
-      "seconds": 0.04944,
+      "seconds": 0.037659,
       "kind": "spherical_code",
       "verification_status": "exact",
       "artifact_sha256": "3ba9448c8eae4551dce4d51e22f04f52725c0af699942e836ee00807c8de5e7a"
@@ -5383,7 +5385,7 @@
       "node": "coupled",
       "op": "signed_layers.coupled_lift",
       "state": "completed",
-      "seconds": 0.233279,
+      "seconds": 0.144234,
       "kind": "quadratic_spherical_code",
       "verification_status": "exact",
       "artifact_sha256": "aaa532693966fc98a8c44d75b1c6c3902cdedfc23474aaaee175e3325bb1032e"

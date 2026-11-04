@@ -102,6 +102,7 @@
     "contracts.py": "8a8c134dcf67751a0b0882536e8886e4d120f1b76d7388e66a60f18eeb786872",
     "core.py": "69313eb6d933f436d151289f23c40f018365d16057a2b75d455ac0fe157a1024",
     "engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
+    "engines/characters.py": "a889bc661697e1eb2c5f204680f0602e22fd490d929cc090d48d647a7763d4b5",
     "engines/construction_search.py": "d9956f8ccc364a3608c0f02dbda1b27df583d7978e91bf64761e5fe934da9c42",
     "engines/coset_search.py": "3e808aeee08588665f36d3286172de791dc467fc1a854432a5bec2ae7c9be722",
     "engines/cosets.py": "c47269d89a5c84489ddf85faf1f75620693e4c8d25a83cfa5a6a2adaaa2d7691",
@@ -117,18 +118,19 @@
     "engines/stabilizers.py": "999aa4a478cc5b16a6840b5b8576cef565be83c27ad5ce9ad0ca7592dd64e362",
     "exact_gram.py": "448103205e806c2d1c8bd2770e7a22d29c533cae2fcd3ef3f2bf219572f440ba",
     "group_constraints.py": "dea348edffb83b3fe05f75f773c1f64c6f5013772866bb7ad42670586466e2ec",
+    "numerical_shapes.py": "85e9df44c717fcc949295e23985e1cca95bd1cfadf18b12bf850233f9faa7520",
     "objects.py": "4e8a922bcd7f57fa0d9be5507a92678a170bb8fa45d4e0ab8b61b1e52cf96bb3",
     "planner.py": "7567b7ac07e0ef52d74a9126aec34e3b70de9b3498fd1f1edfe11f424ccabb97",
-    "runner.py": "caa932e453bad02753c51ecb2f0334c31beba602468f3703f12627af1f34d8e3",
+    "runner.py": "84570f966396822a433d13339364629faeac396e6759a0f45907733fc75e7ebe",
     "scheduler.py": "34aa720811dce88f75c05a76c23cc5f6b36d62d891cd929c863cb7bca499af75",
-    "sections.py": "b6f6c7314a921f95384fef29d6c87677ffbadff1f42b90aa8853c0a3146b451f"
+    "sections.py": "3e5d33680f60c950cb7b232bf73abbe4aa02a1a8dfef261ebefca8875faecbc3"
   },
   "events": [
     {
       "node": "oracle",
       "op": "cosets.build",
       "state": "completed",
-      "seconds": 0.000157,
+      "seconds": 0.000169,
       "kind": "syndrome_oracle",
       "verification_status": "exact",
       "artifact_sha256": "4ec8e037ea3410ba634ed7dd8114fe62caead311b6d40517553972e2912170a8"
@@ -137,7 +139,7 @@
       "node": "union",
       "op": "cosets.union",
       "state": "completed",
-      "seconds": 0.000222,
+      "seconds": 0.00018,
       "kind": "binary_code",
       "verification_status": "exact",
       "artifact_sha256": "61c7151c1be0f8bb8c10fa8705ec19ad9e6878a0ad9c2a7727fc34307f5e9e02"
@@ -146,7 +148,7 @@
       "node": "sphere",
       "op": "geometry.sign_embed",
       "state": "completed",
-      "seconds": 0.00034,
+      "seconds": 0.00037,
       "kind": "implicit_spherical_code",
       "verification_status": "exact",
       "artifact_sha256": "02ae0f0db3573b0b35a630cb4d738a78a204b243ba494cef515cb425082ad653"

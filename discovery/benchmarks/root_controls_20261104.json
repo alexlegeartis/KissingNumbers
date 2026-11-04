@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "built_at_utc": "2026-11-04T16:24:19.923039+00:00",
+  "built_at_utc": "2026-11-04T17:14:46.092096+00:00",
   "canonical_matrix": "research/discovery_campaign_20261104/coverage_1_24/matrix.json",
-  "canonical_matrix_sha256": "c531a83451a4509439d2fd80042b04f4ee85d9de4daf8ac942c004b85ea806ee",
+  "canonical_matrix_sha256": "608c59dc40b8e02ab6bccf9c0205dec4976f371285bdb77d7a39663cd8d6270a",
   "source": {
     "url": "https://cohn.mit.edu/kissing-numbers/",
     "retrieved_at_utc": "2026-11-04T12:36:52.845533+00:00",
@@ -29,7 +29,7 @@
       "origin": "imported",
       "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
       "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_a1.json",
-      "receipt_sha256": "3bca09ac0cf2e9cdec6038b4e7bd0afd4509e2ff7a97ec7a6e69d3adcebc94e5",
+      "receipt_sha256": "8aae1b7e0e02c54e58d5bc4de8a2a0bcefa2a91d4107a5c2d6f6715d4f3a9024",
       "independent_verification": {
         "status": "exact_replayed",
         "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -40,7 +40,7 @@
         "rank_scalar_work": 2,
         "pairs_checked": 1
       },
-      "run_seconds": 0.003053,
+      "run_seconds": 0.003014,
       "resource_limits": {
         "max_materialized_points": 20000,
         "max_pairs": 10000000,
@@ -69,7 +69,7 @@
       "origin": "imported",
       "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
       "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_a2.json",
-      "receipt_sha256": "1339568a5191bf9670564ff4047cadea086f17d9d418ecf35103ddad24eb9e11",
+      "receipt_sha256": "17f99f2ae27b64e1bd4aef53219c4dea24d6f5754176fe9bde3d4c5abf64eead",
       "independent_verification": {
         "status": "exact_replayed",
         "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -80,7 +80,7 @@
         "rank_scalar_work": 36,
         "pairs_checked": 15
       },
-      "run_seconds": 0.002958,
+      "run_seconds": 0.002973,
       "resource_limits": {
         "max_materialized_points": 20000,
         "max_pairs": 10000000,
@@ -109,7 +109,7 @@
       "origin": "imported",
       "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
       "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_d3.json",
-      "receipt_sha256": "b9878841ebb1b73adfb2745b6b5e1e207fed3c25889653408fb03c69cc478df5",
+      "receipt_sha256": "f4b1131eef3edaef10a7a5d7a3b3932ee34e6ba6afb6cdae08836d2285fbf091",
       "independent_verification": {
         "status": "exact_replayed",
         "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -120,7 +120,7 @@
         "rank_scalar_work": 126,
         "pairs_checked": 66
       },
-      "run_seconds": 0.003249,
+      "run_seconds": 0.003171,
       "resource_limits": {
         "max_materialized_points": 20000,
         "max_pairs": 10000000,
@@ -149,7 +149,7 @@
       "origin": "imported",
       "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
       "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_d4.json",
-      "receipt_sha256": "c24ab3b22fdd6d41a1a9568a66c9c3747cbdec5da45e0e4e528cad6817ace3d7",
+      "receipt_sha256": "86cf95a9e49b0a252af241125c0804dda67b1ae318e80204e04cb74a63df208a",
       "independent_verification": {
         "status": "exact_replayed",
         "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -160,7 +160,7 @@
         "rank_scalar_work": 448,
         "pairs_checked": 276
       },
-      "run_seconds": 0.003985,
+      "run_seconds": 0.003907,
       "resource_limits": {
         "max_materialized_points": 20000,
         "max_pairs": 10000000,
@@ -189,7 +189,7 @@
       "origin": "imported",
       "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
       "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_d5.json",
-      "receipt_sha256": "2f5efc3bb672258aeee8d402ad08a89b4bc0eef112e408dd98542487cb0e41e1",
+      "receipt_sha256": "a7540fbb1ef91d61d8c6093397279d5841752c908758b60445a43ce4355f82e7",
       "independent_verification": {
         "status": "exact_replayed",
         "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -200,7 +200,7 @@
         "rank_scalar_work": 1150,
         "pairs_checked": 780
       },
-      "run_seconds": 0.005146,
+      "run_seconds": 0.005469,
       "resource_limits": {
         "max_materialized_points": 20000,
         "max_pairs": 10000000,
@@ -229,7 +229,7 @@
       "origin": "imported",
       "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
       "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_e6.json",
-      "receipt_sha256": "d08d96e67f268893c2dff078b3c5ef7fbca9396e6b0aef04caee8a978b492b19",
+      "receipt_sha256": "89981d3831565d279e894e8f4e0dfac84cc179fd0594e2385845e135dc6380bf",
       "independent_verification": {
         "status": "exact_replayed",
         "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -240,7 +240,7 @@
         "rank_scalar_work": 4448,
         "pairs_checked": 2556
       },
-      "run_seconds": 0.009307,
+      "run_seconds": 0.009773,
       "resource_limits": {
         "max_materialized_points": 20000,
         "max_pairs": 10000000,
@@ -269,7 +269,7 @@
       "origin": "imported",
       "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
       "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_e7.json",
-      "receipt_sha256": "194a3112d8feb22e8bbbcc4291389f4a33964a3a15f2aba96d07ae0164be4760",
+      "receipt_sha256": "01a623aa84c9789547b4c5d69404b6f5acc7a8e15e55161467ea3a2069a77b0e",
       "independent_verification": {
         "status": "exact_replayed",
         "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -280,7 +280,7 @@
         "rank_scalar_work": 9552,
         "pairs_checked": 7875
       },
-      "run_seconds": 0.015748,
+      "run_seconds": 0.016456,
       "resource_limits": {
         "max_materialized_points": 20000,
         "max_pairs": 10000000,
@@ -309,7 +309,7 @@
       "origin": "imported",
       "provenance": "literal coordinate input to executor; independently regenerated from root_controls.root_recipe formulas with exact recipe equality; no record-coordinate file or search input",
       "receipt": "research/discovery_campaign_20261104/coverage_1_24/receipts/roots_e8.json",
-      "receipt_sha256": "f90bedbed2b5e93fa915e917a3636bde1753e5399f82dbc01469b813a4818c40",
+      "receipt_sha256": "4224a53231cc9a5be9d7833753a5294eed193a8a7b3e2748f2af6c319fbc73a9",
       "independent_verification": {
         "status": "exact_replayed",
         "method": "integer coordinates with positive diagonal quadratic form and exact rank",
@@ -320,7 +320,7 @@
         "rank_scalar_work": 21888,
         "pairs_checked": 28680
       },
-      "run_seconds": 0.032171,
+      "run_seconds": 0.024333,
       "resource_limits": {
         "max_materialized_points": 20000,
         "max_pairs": 10000000,
