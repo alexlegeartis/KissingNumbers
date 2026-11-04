@@ -89,3 +89,12 @@ The rank-four search and coupling are not prerequisites. Then run:
 
 `equator_anneal.cpp` is an optional heuristic on the generated graph. Neither
 a search failure nor a numerical optimization limit proves an upper bound.
+
+`asymmetric_graph.py` expands the same frontier to independent positive- and
+negative-height choices, while keeping equator deletion costs shared. This
+contains the paired model as a special case. After building the paired graph,
+run `asymmetric_graph.py` and `asymmetric_milp.py`; if a positive candidate
+is saved, run `verify_asymmetric.py` on it. `verify_switch.py` similarly
+checks a paired candidate. The verifiers reconstruct every point and check
+all distinct pairs with integer arithmetic. The empty exchange reproduces
+the 5,730-point seed in both independent verifier paths.
