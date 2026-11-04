@@ -20,7 +20,8 @@ The complete-family population identities and the P48n minimum/design inputs
 are inherited from the existing package; this replay does not freshly
 enumerate all large shells or independently prove those inputs.
 
-The `delta.json` indices are zero-based, relative to the original
+The `delta.json` indices are zero-based, relative to the archived
+`baseline_2919782.npz.b64`, a byte-for-byte copy of the original
 `partial43/explicit_points_43.npz` at the pinned commit. A numerical search
 or optimizer is not needed to reproduce or validate the certificate. The
 current literature priority should be checked separately; the comparison here
