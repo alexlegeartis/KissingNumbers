@@ -2,7 +2,7 @@
 
 The three operators in `engines/construction_search.py` generate and assemble
 candidate configurations. They use the existing DAG, budgets, typed planner and
-independent exact coordinate verifier. All 32 registered operators have planner
+independent exact coordinate verifier. All 35 registered operators have planner
 input/output signatures. No dimension-to-record dispatch or target-count table
 is used by the new construction operators.
 
@@ -61,8 +61,11 @@ The saved run matches targets in 1–9 and 16. Actual support search matches
 matches include classical root or stabilizer formula controls. Search also
 reaches historical 12D840, below current 841. The 24D result is only 7040 versus
 196560, a substantial failure of this small catalogue. Existing exact target
-replay coverage is broader: 1–10,13,14,16. Replaying a known target and finding a
+replay coverage is broader: 1–10,13,14,16–18,22–24. Replaying a known target and finding a
 target through held-out search are different measurements.
+
+The later large controls use exact closed-orbit proof and inherited central
+sections rather than enumerating every pair. See [exact orbits](EXACT_ORBITS.md).
 
 ## Growth diagnostic and competitive trials
 

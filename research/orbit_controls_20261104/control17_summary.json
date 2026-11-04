@@ -1,0 +1,71 @@
+{
+  "facts": {
+    "dimension": 17,
+    "rank_exact": 17,
+    "ambient_dimension": 17,
+    "cardinality": 5730,
+    "norm_squared": 72,
+    "max_inner_product": 36,
+    "pairs_checked": 16413585
+  },
+  "verification": {
+    "status": "exact",
+    "method": "integer coordinates with positive diagonal quadratic form and exact rank",
+    "details": {
+      "dimension": 17,
+      "rank_exact": 17,
+      "ambient_dimension": 17,
+      "cardinality": 5730,
+      "norm_squared": 72,
+      "max_inner_product": 36,
+      "pairs_checked": 16413585,
+      "facts": {
+        "dimension": 17,
+        "rank_exact": 17,
+        "ambient_dimension": 17,
+        "cardinality": 5730,
+        "norm_squared": 72,
+        "max_inner_product": 36,
+        "pairs_checked": 16413585
+      },
+      "data_sha256": "fa8613b867bef89700f13cef8aa1678b86fbd7a274d4740c7a78e7baeb56bcb8",
+      "integer_backend": "int64 proven overflow-safe",
+      "rank_scalar_work": 1563694
+    }
+  },
+  "budget": {
+    "max_materialized_points": 20000,
+    "max_pairs": 20000000,
+    "max_codewords": 262144,
+    "max_orbit_points": 10000,
+    "max_trials": 200,
+    "solver_seconds": 30,
+    "max_dgls_words": 16777216,
+    "max_dimension": 256,
+    "max_nodes": 100,
+    "max_gram_entries": 2000000,
+    "max_rank_work": 50000000,
+    "max_rational_bits": 4096
+  },
+  "heights": {
+    "0": 4320,
+    "-3": 512,
+    "3": 512,
+    "2": 192,
+    "-2": 192,
+    "-6": 1,
+    "6": 1
+  },
+  "quadratic_support_seed": 30856,
+  "independent_fibers": [
+    0,
+    6,
+    11,
+    19,
+    20,
+    26
+  ],
+  "seconds": 1.4965542580002875,
+  "new_sota": false,
+  "scope": "Known5730 reconstruction in a previously closed family. Not a new record or a new search of that family."
+}

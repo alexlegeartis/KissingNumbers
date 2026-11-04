@@ -44,6 +44,16 @@ def integer_code(inputs,params,context):
     artifact.facts=artifact.verification.details['facts']
     return artifact
 
+
+def quadratic_code(inputs,params,context):
+    from .signed_layers import verify_artifact
+    check_params(params,('radicand','rational_coordinates','radical_coordinates','weights'))
+    if inputs:raise ValueError('geometry.quadratic_code takes explicit coefficient parameters')
+    artifact=Artifact('quadratic_spherical_code',dict(params))
+    artifact.verification=verify_artifact(artifact,context)
+    artifact.facts=artifact.verification.details['facts']
+    return artifact
+
 def orthogonal_union(inputs,params,context):
     from ..certification import verify_artifact,verify_integer_spherical
     check_params(params,())
@@ -138,10 +148,13 @@ def verify_section(artifact,context):
 
 def section(inputs,params,context):
     from ..certification import verify_artifact
-    check_params(params,('normal',))
+    check_params(params,('normal','normals'))
     if len(inputs)!=1 or inputs[0].kind!='spherical_code' or 'coordinates' not in inputs[0].data:
         raise ValueError('geometry.section requires one explicit exact integer coordinate code')
     source=inputs[0]
+    if 'normals' in params or source.data.get('backend') in {'exact_integer_orbit','certified_coordinate_section'}:
+        from ..sections import certified_section
+        return certified_section(source,params,context)
     normal=params.get('normal');rows=source.data.get('coordinates')
     if not isinstance(rows,list) or not rows or not isinstance(rows[0],list):
         raise ValueError('Section source needs explicit coordinate rows')
@@ -166,8 +179,11 @@ def section(inputs,params,context):
     return result
 
 OPERATORS={'geometry.sign_embed':sign_embed,'geometry.integer_code':integer_code,
+           'geometry.quadratic_code':quadratic_code,
            'geometry.orthogonal_union':orthogonal_union,'geometry.gram_code':gram_code,
            'geometry.section':section}
 INPUT_KINDS={'geometry.sign_embed':('binary_code',),'geometry.integer_code':(),
+             'geometry.quadratic_code':(),
              'geometry.orthogonal_union':('spherical_code','spherical_code'),'geometry.gram_code':(),
              'geometry.section':('spherical_code',)}
+OUTPUT_KINDS={'geometry.quadratic_code':('quadratic_spherical_code',)}

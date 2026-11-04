@@ -7,12 +7,17 @@ searches. It has not found a new SOTA.**
 
 The Sol continuation adds three target-independent operators: support-orbit
 packing, arbitrary integer point-pool selection across any number of cohorts,
-and negative-contact-sum generation with joint selection. There are now 32
+and negative-contact-sum generation with joint selection. A subsequent extension
+adds exterior-square representations, exact rational orthogonal orbits and
+weighted quadratic-coordinate input. There are now 35
 registered operators. The separate 1–24 held-out benchmark matches ten targets
 with formula controls and four through actual support search, including 9D306.
 The 13D/14D/31D record attempts have no improved certified witness. See
 [construction search](docs/CONSTRUCTION_SEARCH.md) and the
 [continuation evidence](../research/sol_discovery_20261104/README.md).
+The [large known controls](../research/orbit_controls_20261104/README.md)
+now include17D5730,18D8358,22D49896,23D93150 and24D196560 through the same
+registered engine, with explicit resource profiles and independent proof replay.
 
 Run from the repository root with the existing Python environment; no installation
 is required. Dependencies are NumPy, SciPy and SymPy. The code makes no network

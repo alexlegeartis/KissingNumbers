@@ -1,0 +1,1 @@
+{"facts": {"dimension": 17, "rank_exact": 17, "ambient_dimension": 17, "cardinality": 5730, "norm_squared": 72, "max_inner_product": 36, "pairs_checked": 16413585}, "heights": {"0": 4320, "-3": 512, "3": 512, "2": 192, "-2": 192, "-6": 1, "6": 1}, "seconds": 1.4965542580002875}

@@ -1,0 +1,14 @@
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sympy/polys/polytools.py:6282: SymPyDeprecationWarning: 
+
+Ordered comparisons with modular integers are deprecated.
+
+            Use e.g. int(a) < int(b) instead of a < b.
+
+See https://docs.sympy.org/latest/explanation/active-deprecations.html#modularinteger-compare
+for details.
+
+This has been deprecated since SymPy version 1.13. It
+will be removed in a future version of SymPy.
+
+  return sorted(factors, key=key)
+{"status": "PASS", "rows": 24, "exact_target_dimensions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 14, 16, 17, 18, 22, 23, 24]}

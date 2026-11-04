@@ -1,0 +1,78 @@
+{
+  "new_sota": false,
+  "registered_operators": 35,
+  "package_tests": 205,
+  "optimized_focused_tests": 26,
+  "coverage_regression_tests": 9,
+  "target_dimensions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    13,
+    14,
+    16,
+    17,
+    18,
+    22,
+    23,
+    24
+  ],
+  "gaps": [
+    11,
+    12,
+    15,
+    19,
+    20,
+    21
+  ],
+  "source_commit": "118193bfd5ccb4b36a62c32c75b90e401ce53aab",
+  "scope": "General exact orbit and inherited-subset proof, weighted quadratic native input, known controls and finite section search. No new SOTA or held-out-credit promotion.",
+  "tests.log": {
+    "sha256": "d63e52500ebf983c555fb5801a13d204de44a6660ab265c4865c1efd043bdd24",
+    "path": "research/orbit_controls_20261104/tests.log"
+  },
+  "optimized_tests.log": {
+    "sha256": "6ed7289e618debca56ed07efb81f279299e9fc8783318c3535e8684c63ea87ae",
+    "path": "research/orbit_controls_20261104/optimized_tests.log"
+  },
+  "coverage_tests.log": {
+    "sha256": "bb632863902ea1baa1a5c0488be5593c428f2c49de6ce4ca4c4e814677460721",
+    "path": "research/orbit_controls_20261104/coverage_tests.log"
+  },
+  "coverage_refresh.log": {
+    "sha256": "dd136120c25e442263c7228df322d381fff35b78acf8ff424a3ac6055b97f2b3",
+    "path": "research/orbit_controls_20261104/coverage_refresh.log"
+  },
+  "coverage_views.log": {
+    "sha256": "b290115264d72c4aa4b65f6e9a11a20687f4568f0e0bfce6b5bb4bf7b88a6ba0",
+    "path": "research/orbit_controls_20261104/coverage_views.log"
+  },
+  "leech_summary.json": {
+    "sha256": "ea2f630ab09a8c7fccb3625cfa1759f11084df3d9fbef5f24dac09188091b761",
+    "path": "research/orbit_controls_20261104/leech_summary.json"
+  },
+  "control17_summary.json": {
+    "sha256": "6ef975a5c332132999254555d9c2fa2b31a4e57c2c976d131a27a75e1a07d5e9",
+    "path": "research/orbit_controls_20261104/control17_summary.json"
+  },
+  "control18_summary.json": {
+    "sha256": "cf93445f0b42e8b9fd18912477e99cec5aca41fe5dda6a3383ecfa8640997c4a",
+    "path": "research/orbit_controls_20261104/control18_summary.json"
+  },
+  "section_search.json": {
+    "sha256": "c253afc9e39b6479bff4a73d11fabcd2fba318c39a67b729f6bcc3f9b17eff0e",
+    "path": "research/orbit_controls_20261104/section_search.json"
+  },
+  "repository_claims_audited": 70,
+  "audit.log": {
+    "path": "research/orbit_controls_20261104/audit.log",
+    "sha256": "d859fee5e45abe71f160e7457fe0925227ecb0514d96586ec63f5fda28863820"
+  }
+}

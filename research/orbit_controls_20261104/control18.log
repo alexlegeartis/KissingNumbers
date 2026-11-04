@@ -1,0 +1,1 @@
+{"facts": {"dimension": 18, "ambient_dimension": 18, "cardinality": 8358, "max_cosine_upper_bound": [1, 2], "rank_lower_bound": 18, "dimension_scope": "exact; nonzero algebraic minor proved modulo13", "rank_exact": 18, "norm_squared": 288}, "pairs": 34923903, "seconds": 6.246394961999613}

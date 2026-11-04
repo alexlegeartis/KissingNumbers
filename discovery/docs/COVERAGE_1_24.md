@@ -1,6 +1,12 @@
 # Exact construction coverage, dimensions 1–24
 
-The executable audit has exactly 24 rows. Current exact target recipes cover dimensions **1–10, 13, 14 and 16**. The remaining dimensions **11, 12, 15 and 17–24** have explicit gaps. These are existing lower bounds, with no new record claim. The 9D route now executes runtime support search; its separate held-out rediscovery benchmark is documented in `discovery/docs/CONSTRUCTION_SEARCH.md`. The 12D search reaches historical 840, below the current 841 target.
+The executable audit has exactly24 rows. Current exact target recipes cover
+**1–10,13,14,16–18,22–24**. The remaining dimensions **11,12,15,19–21** have
+explicit gaps. These are existing lower bounds, with no new record claim.
+The9D route executes runtime support search; its separate held-out benchmark
+is documented in `discovery/docs/CONSTRUCTION_SEARCH.md`. The12D search reaches
+historical840, below current841. Large17D/18D and Leech controls use explicitly
+declared resource profiles; their self-contained receipts are compressed.
 
 The source is [Cohn's table](https://cohn.mit.edu/kissing-numbers/), successfully retrieved on **2026-11-04T12:36:52.845533+00:00**. The preserved HTML is `research/discovery_campaign_20261104/baselines/cohn.html`, SHA-256 `94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e`. Earlier browser/network failures in the incoming audit are historical observations; this later successful response supplies every target. Within this range, only dimensions 1, 2, 3, 4, 8 and 24 have proved exact kissing numbers; the other targets are lower bounds.
 
@@ -14,7 +20,15 @@ An explicit research-recipe allow-list also includes `research/coupled13/program
 
 The 5D Gram control is a supplied exact 40-point Gram certificate. The E8 section chain generates 126 points of rank 7 and 72 of rank 6 while retaining eight coordinates. The 10D and 14D recipes reconstruct known exact 510- and 1932-point constructions. Separate numerical 10D subgroup-character search is not promoted to exact autonomous synthesis. The 16D `groups.real_stabilizer_sector` recipe generates an implicit 4320-point affine-flat/quadratic-sign family and replays a symbolic count and separation proof; it materializes zero spherical points. The 256-point octacode recipe remains a partial 16D control.
 
-Existing repository prototypes receive no integrated recipe credit. In particular, historical 19D 11948 and 21D 29768 constructions are below the current targets 12460 and 31560. The separate 18D 8358 and 20D 19448 packages need explicit adapters. A Leech generator alone does not supply an integrated compressed 24D certificate: explicit verification of 196560 points requires 19317818520 pairs, beyond the shared pair budget. Resource limits describe the actual proof route, not a claim of mathematical impossibility.
+Existing repository prototypes receive no credit until an actual registered
+recipe and exact proof run exists. Historical19D11948 and21D29768 are below the
+captured targets12460 and31560. The18D8358 package now has a native weighted
+quadratic adapter. The known17D5730 construction is independently reconstructed
+from Boolean quadratic/RM formulas. A24D exact orbit recipe generates196560
+points from four algebraic actions; closure, transitivity and196559 seed
+comparisons certify all19317818520 unordered pairs. Exact source subsets then
+produce23D93150 and22D49896. The same signed-pair-normal search gives only
+21D27720 and20D17400, below31560 and19448. These shortfalls remain explicit.
 
 The external author's original 14-file patch is preserved byte-for-byte at `research/discovery_campaign_20261104/coverage_1_24/integration/coverage-benchmarks-20261104.patch`, SHA-256 `7ac4796cc14c476424e3a09888e499c077844828c9921b7508c8e81e384bd741`. Its source commit `0a6152a9ea6caf8b7865e2f41c2097a838566e2a`, author Alex Kravatsky, date and reviewed base are recorded in `integration/provenance.json`. That patch preserves original construction-attribution notes and external measurements. Active files replace its stale source availability, native-operator and 16D coverage statements with current independently replayed evidence.
 

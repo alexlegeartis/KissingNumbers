@@ -52,27 +52,49 @@ def verify_artifact(artifact, context=None):
     context = context or RunContext(Path('.'))
     require(artifact.kind == 'quadratic_spherical_code', 'Expected quadratic_spherical_code')
     data = artifact.data
-    require(set(data) == {'radicand','rational_coordinates','radical_coordinates'} and data['radicand'] == 3 and type(data['radicand']) is int, 'Unsupported quadratic coordinate fields')
+    require(set(data) in ({'radicand','rational_coordinates','radical_coordinates'},{'radicand','rational_coordinates','radical_coordinates','weights'}) and data['radicand'] == 3 and type(data['radicand']) is int, 'Unsupported quadratic coordinate fields')
     A, B = data['rational_coordinates'], data['radical_coordinates']
     require(isinstance(A,list) and A and isinstance(A[0],list) and A[0], 'Nonempty coordinate matrix required')
     n,d = len(A),len(A[0]);context.limit('max_materialized_points',n);context.limit('max_dimension',d)
     context.limit('max_pairs',n*(n-1)//2);context.limit('max_rank_work',n*d*d)
     require(isinstance(B,list) and len(B)==n, 'Radical coordinate row count')
+    weights=data.get('weights',[1]*d)
+    require(isinstance(weights,list) and len(weights)==d and all(type(w) is int and w>0 for w in weights),'Positive integral quadratic metric required')
+    for w in weights:context.limit('max_rational_bits',w.bit_length())
     for row in A+B:
         require(isinstance(row,list) and len(row)==d, 'Ragged quadratic coordinates')
         require(all(type(x) is int for x in row), 'Quadratic coordinate coefficients must be integers')
         for x in row: context.limit('max_rational_bits',abs(x).bit_length())
     norms=[]
     for a,b in zip(A,B):
-        require(sum(x*y for x,y in zip(a,b))==0, 'Only rational squared norms are supported')
-        norm=sum(x*x+3*y*y for x,y in zip(a,b));require(norm>0,'Zero point')
+        require(sum(w*x*y for w,x,y in zip(weights,a,b))==0, 'Only rational squared norms are supported')
+        norm=sum(w*(x*x+3*y*y) for w,x,y in zip(weights,a,b));require(norm>0,'Zero point')
         norms.append(norm)
     maximum = max(abs(x) for row in A+B for x in row)
-    dtype = np.int64 if 4*d*maximum*maximum < 2**62 else object
+    dtype = np.int64 if 4*sum(weights)*maximum*maximum < 2**62 else object
     AA,BB=np.array(A,dtype=dtype),np.array(B,dtype=dtype)
-    for start in range(0,n,96):
-        P=AA[start:start+96]@AA.T+3*(BB[start:start+96]@BB.T)
-        Q=AA[start:start+96]@BB.T+BB[start:start+96]@AA.T
+    W=np.array(weights,dtype=dtype)
+    context.limit('max_gram_entries',2*n)
+    block=max(1,min(96,context.budget['max_gram_entries']//(2*n)))
+    def positive(X,Y):
+        return ((X>=0)&(Y>=0)&((X!=0)|(Y!=0))) | ((X>0)&(Y<0)&(X*X>3*Y*Y)) | ((X<0)&(Y>0)&(3*Y*Y>X*X))
+    for start in range(0,n,block):
+        P=(AA[start:start+block]*W)@AA.T+3*((BB[start:start+block]*W)@BB.T)
+        Q=(AA[start:start+block]*W)@BB.T+(BB[start:start+block]*W)@AA.T
+        # Exact vectorized sign/square cases only when all intermediate
+        # products, including the second squaring, have a proved int64 bound.
+        if dtype is np.int64:
+            pmax=int(np.abs(P).max());qmax=int(np.abs(Q).max())
+            rmax=4*(pmax*pmax+3*qmax*qmax)+max(norms)**2;smax=8*pmax*qmax
+            fast=max(rmax*rmax,3*smax*smax)<2**62
+        else:fast=False
+        if fast:
+            product=np.array(norms[start:start+len(P)],np.int64)[:,None]*np.array(norms,np.int64)[None,:]
+            R=4*(P*P+3*Q*Q)-product;S=8*P*Q
+            violations=positive(P,Q)&positive(R,S)
+            for offset in range(len(P)):
+                require(not np.any(violations[offset,start+offset+1:]),'Quadratic normalized pair violation or duplicate')
+            continue
         for offset in range(len(P)):
             i=start+offset
             for j in range(i+1,n):

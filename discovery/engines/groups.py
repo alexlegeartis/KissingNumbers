@@ -135,6 +135,46 @@ def from_generators(inputs, params, context):
     return artifact
 
 
+def exterior_square(inputs, params, context):
+    """Lift arbitrary unitary generators by their2-by-2 minors.
+
+    The output remains numerical. Neither finite group order, irreducibility,
+    character tables nor exact spherical geometry follows from this lift.
+    """
+    _known_params(params, set())
+    if len(inputs) != 1 or inputs[0].kind != 'unitary_representation':
+        raise ValueError('groups.exterior_square needs one unitary representation')
+    raw = inputs[0].data.get('generators_real')
+    if not isinstance(raw,list) or not raw or not isinstance(raw[0],list):
+        raise ValueError('Nonempty source generator matrices required')
+    n,count=len(raw[0]),len(raw)
+    if n<2:
+        raise ValueError('Exterior square requires dimension at least2')
+    dimension=n*(n-1)//2
+    # Output allocation guards precede conversion of the source matrices.
+    context.limit('max_dimension',dimension)
+    context.limit('max_materialized_points',2*count*dimension*dimension)
+    context.limit('max_gram_entries',count*dimension*dimension)
+    generators=_generators(inputs[0],context)
+    pairs=list(combinations(range(n),2))
+    lifted=[]
+    for matrix in generators:
+        lifted.append([[matrix[i,k]*matrix[j,l]-matrix[i,l]*matrix[j,k]
+                        for k,l in pairs] for i,j in pairs])
+    values=np.asarray(lifted,dtype=complex)
+    from discovery.core import digest
+    result=Artifact('unitary_representation',{
+        'generators_real':values.real.tolist(),'generators_imag':values.imag.tolist(),
+        'family':'exterior_square','source_dimension':n,
+        'source_artifact_sha256':digest(inputs[0].to_dict()),
+        'basis_pairs':[list(pair) for pair in pairs]},
+        {'complex_dimension':dimension,'generator_count':count})
+    result.verification=verify_artifact(result,context)
+    if result.verification.status!='numerical':
+        raise ValueError('Lifted representation failed numerical unitarity replay')
+    return result
+
+
 def weil(inputs, params, context):
     """Fourier/quadratic-phase generators on an inversion parity subspace."""
     if inputs:
@@ -695,6 +735,9 @@ def verify_artifact(artifact, context=None):
 
 
 OPERATORS = {"groups.weil": weil, "groups.search": search, "groups.ganzhinov10": ganzhinov10,
-             "groups.ganzhinov14": ganzhinov14, "groups.from_generators": from_generators}
+             "groups.ganzhinov14": ganzhinov14, "groups.from_generators": from_generators,
+             "groups.exterior_square":exterior_square}
 INPUT_KINDS = {"groups.weil": (), "groups.search": ("unitary_representation",), "groups.ganzhinov10": (),
-               "groups.ganzhinov14": (), "groups.from_generators": ()}
+               "groups.ganzhinov14": (), "groups.from_generators": (),
+               "groups.exterior_square":('unitary_representation',)}
+OUTPUT_KINDS={'groups.exterior_square':('unitary_representation',)}

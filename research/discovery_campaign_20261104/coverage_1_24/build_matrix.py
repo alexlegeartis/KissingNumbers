@@ -6,7 +6,7 @@ Default emits the24 saved rows as JSON to stdout after checking them.
 """
 import sys
 sys.dont_write_bytecode=True
-import argparse,hashlib,html,json,pathlib,re,time,datetime
+import argparse,hashlib,html,json,pathlib,re,time,datetime,gzip
 HERE=pathlib.Path(__file__).resolve().parent
 ROOT=HERE.parents[2]
 sys.path.insert(0,str(ROOT))
@@ -15,7 +15,26 @@ from discovery.runner import registry,run_program,output_artifact,validate_progr
 from discovery.certification import verify_artifact
 BASE=HERE.parent/'baselines'
 ALLOWED={'groups.ganzhinov10','groups.ganzhinov14','lattice.root_system','geometry.gram_code','groups.real_stabilizer_sector','search.support_packing'}
-EXTERNAL_RECIPES=('research/coupled13/program_H2.json',)
+EXTERNAL_RECIPES=('research/coupled13/program_H2.json',
+ 'research/orbit_controls_20261104/control17_program.json',
+ 'research/orbit_controls_20261104/control18_program.json',
+ 'research/orbit_controls_20261104/leech_sections_program.json')
+RESOURCE_PROFILES={
+ 'research/orbit_controls_20261104/control17_program.json':{'max_pairs':20000000},
+ 'research/orbit_controls_20261104/control18_program.json':{'max_pairs':40000000},
+ 'research/orbit_controls_20261104/leech_sections_program.json':{
+  'max_materialized_points':250000,'max_orbit_points':250000,
+  'max_rank_work':1000000000,'max_pairs':250000}}
+
+def recipe_context(path):return RunContext(HERE,RESOURCE_PROFILES.get(rel(path),{}))
+
+def read_receipt(path):
+    if path.suffix=='.gz':
+        with gzip.open(path,'rb') as stream:
+            raw=stream.read(200000001)
+            if len(raw)>200000000:raise ValueError('Large-control receipt exceeds decompressed byte cap')
+        return json.loads(raw)
+    return json.loads(path.read_text())
 FIXTURES={f'roots_{name}.json':d for d,name in {1:'a1',2:'a2',3:'d3',4:'d4',5:'d5',6:'e6',7:'e7',8:'e8'}.items()}
 EXPECTED=[2,6,12,24,40,72,126,240,306,510,604,841,1154,1932,2564,4320,5730,8358,12460,19448,31560,49896,93150,196560]
 PROTOTYPES={
@@ -33,7 +52,7 @@ PROTOTYPES={
  21:[('verifications/closed/dim17-24-layer-identity/README.md',29768,'historical29768 reconstruction is below current31560; no current target reproduction')],
  22:[('verifications/closed/dim22-23-maximal-cross-sections/README.md',49896,'Leech section construction/obstruction package; not integrated recipe')],
  23:[('verifications/closed/dim22-23-maximal-cross-sections/README.md',93150,'Leech section construction/obstruction package; not integrated recipe')],
- 24:[('common/leech.py',196560,'existing integer Golay/Leech generator; no integrated recipe or compressed separation replay in discovery')],
+ 24:[('common/leech.py',196560,'older Golay/Leech formula builder; the new registered exact-orbit recipe separately supplies compressed separation replay')],
 }
 GAPS={9:'Leech/laminated section or other306-point construction with exact coordinates/proof',11:'current604-point construction and independently replayable proof',12:'current841-point construction and independently replayable proof',13:'Zinoviev–Ericson1154-point construction and independently replayable proof',15:'2564-point laminated construction and independently replayable proof',16:'Barnes–Wall4320 target constructor plus integrated exact proof',17:'Cohn–Li5730 construction as composable program',18:'existing8358 construction adapter with exact quadratic-field proof transfer',19:'current12460 construction; historical11948 mechanism is insufficient',20:'existing19448 layered constructor adapter with exact cross-layer proofs',21:'current31560 construction; historical29768 recipe is insufficient',22:'Leech section with count49896 and compressed/exact separation proof',23:'Leech section with count93150 and compressed/exact separation proof',24:'Golay/Leech196560 constructor plus compressed separation certificate beyond generic pair budget'}
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -63,8 +82,8 @@ def recipe_origin(program,output_id):
         if not node.get('inputs'):leaves.append(node['op'])
         for parent in node.get('inputs',[]):visit(parent)
     visit(output_id)
-    imported=any(op in {'geometry.integer_code','geometry.gram_code'} for op in leaves)
-    generated=any(op not in {'geometry.integer_code','geometry.gram_code'} for op in leaves)
+    imported=any(op in {'geometry.integer_code','geometry.gram_code','geometry.quadratic_code'} for op in leaves)
+    generated=any(op not in {'geometry.integer_code','geometry.gram_code','geometry.quadratic_code'} for op in leaves)
     return 'mixed' if imported and generated else ('imported' if imported else 'generated')
 
 def recipe_files():
@@ -92,8 +111,14 @@ def write():
     meta,source=load_source();ctx=RunContext(HERE);receipts=HERE/'receipts';receipts.mkdir(exist_ok=True)
     integrated=[]
     for p,program in candidates():
+        ctx=recipe_context(p)
         started=time.monotonic();receipt=run_program(program,ctx)
-        receipt_path=receipts/(p.stem+'.json');receipt_path.write_text(json.dumps(receipt,indent=2)+'\n')
+        receipt_path=receipts/(p.stem+'.json')
+        if rel(p) in RESOURCE_PROFILES:
+            receipt_path=receipt_path.with_suffix('.json.gz')
+            with gzip.open(receipt_path,'wt',encoding='utf8',compresslevel=3) as stream:
+                json.dump(receipt,stream,separators=(',',':'));stream.write('\n')
+        else:receipt_path.write_text(json.dumps(receipt,indent=2)+'\n')
         for output_id in program['outputs']:
             artifact=output_artifact(receipt,output_id);report=verify_artifact(artifact,ctx)
             facts=report.details.get('facts',report.details)
@@ -107,7 +132,10 @@ def write():
             if op=='geometry.gram_code':provenance='exact supplied Gram certificate; source numerical discovery history does not establish autonomous program synthesis'
             if op=='groups.ganzhinov10':provenance='generated known exact recipe; separate numerical subgroup-character search recovered line systems; exact recipe is reconstruction'
             if op=='groups.real_stabilizer_sector':provenance='generated implicit affine-flat/quadratic-sign sector; symbolic count and separation replay; no supplied record coordinates or novelty claim'
-            if rel(p) in EXTERNAL_RECIPES:provenance='supplied classical equator coordinates and quadratic-field cap coefficients; registered conditional switching/free-zone joining/coupled lift; known1154 construction, no novelty claim'
+            if rel(p)=='research/coupled13/program_H2.json':provenance='supplied classical equator coordinates and quadratic-field cap coefficients; registered conditional switching/free-zone joining/coupled lift; known1154 construction, no novelty claim'
+            if p.name=='control17_program.json':provenance='literal runtime coordinate input independently generated by build17.py from Boolean quadratic/RM code formulas; all16413585 weighted integer pairs verified; known5730 control, no held-out discovery claim'
+            if p.name=='control18_program.json':provenance='native weighted quadratic coordinate input reconstructed by build18.py from the existing bent-hexagon component codes; all34923903 pairs verified; known8358 control, no held-out discovery claim'
+            if p.name=='leech_sections_program.json':provenance='runtime exact orbit generation from four Golay/sextet actions; complete closure/transitivity/seed-separation proof and exact subset sections; known controls, no held-out discovery or novelty claim'
             if op=='groups.ganzhinov14':provenance='generated known E7-frame recipe; not autonomous U(3,3) subgroup-character discovery'
             if op=='search.support_packing':provenance='runtime triple-disjoint support-orbit search, with no target cardinality or record coordinates; separate blind1_24 benchmark records held-out rediscovery; geometry alone does not authenticate history'
             integrated.append({'recipe':rel(p),'recipe_sha256':sha(p),'output_id':output_id,'operators':[n['op'] for n in program['nodes']],
@@ -141,7 +169,7 @@ def make_readme(matrix):
 
 The matrix has exactly24 rows. Its source is [Cohn's live table]({meta['url']}), successfully retrieved at **{meta['retrieved_at_utc']}** through the configured workspace network path. Saved HTML: `../baselines/cohn.html`; SHA-256 **{meta['html_sha256']}**. Browser502/other earlier fetch failures do not invalidate this later successful timestamped response. No new network retrieval was needed for this matrix.
 
-Targets are existing constructions, not new results. Only dimensions{','.join(map(str,solved))} have proved exact kissing numbers in this range. The source citations, source hash/time, recipe hashes, proof receipts, provenance and resource limits are recorded per row in `matrix.json`. Separate repository prototypes receive no integrated-coverage credit. Explicitly audited research recipes that execute through the registered runner are eligible; the current research allow-list contains `research/coupled13/program_H2.json`. Planner configuration files without runner nodes and UNVERIFIED forecasts are excluded. The existing CLI `compare` catalogue is intentionally unchanged and may remain partial (for example, a5D recipe can verify exactly while default `compare` reports no recorded5D baseline). This matrix performs its own fresh source comparison.
+Targets are existing constructions, not new results. Only dimensions{','.join(map(str,solved))} have proved exact kissing numbers in this range. The source citations, source hash/time, recipe hashes, proof receipts, provenance and resource limits are recorded per row in `matrix.json`. Separate repository prototypes receive no integrated-coverage credit. Explicitly audited research recipes that execute through the registered runner are eligible; the research allow-list includes `research/coupled13/program_H2.json` plus the17D/18D and Leech orbit/section programs under `research/orbit_controls_20261104/`. Explicit per-recipe resource profiles govern the larger controls, whose receipts use bounded gzip serialization. Planner configuration files without runner nodes and UNVERIFIED forecasts are excluded. The existing CLI `compare` catalogue is intentionally unchanged and may remain partial (for example, a5D recipe can verify exactly while default `compare` reports no recorded5D baseline). This matrix compares replayed constructions against the captured, byte-verified source; it makes no new network retrieval.
 
 | Dimension | Sourced target | Integrated exact target recipe | Provenance | Verification / gap |
 |---|---:|---|---|---|
@@ -156,7 +184,7 @@ Targets are existing constructions, not new results. Only dimensions{','.join(ma
 
 Static `roots_a1` through `roots_e8` recipes are literal integer-coordinate inputs at executor level, so their ancestry is classified as imported. The audited inventory also requires exact equality with the independent `root_controls.root_recipe` formula generator. This verified generation lineage is separate from the native `lattice.root_system` routes (`roots01` through `roots08`), which construct roots during program execution. Both routes certify known constructions. The external author's original patch, source commit and author are preserved under `integration/`.
 
-The16D octacode sign recipe produces256 points, below4320; it remains a subtarget recipe even when another16D constructor reaches the target. A registered stabilizer16 control, when present in this matrix, generates4320 points implicitly from affine-flat and quadratic-sign formulas, with symbolic count/separation proof replay rather than a4320-point array. The4D orthogonal-union demonstration imports8 supplied coordinate points, below24. The8D quotient-coset demonstration generates32 points, below240. The exact E8 section chain has target126/rank7 and72/rank6 while retaining8ambient coordinates; output IDs and ambient dimensions are recorded rather than conflated with span rank. Generic integer/Gram import and generic section capability do not imply that every target construction has been encoded. The older19D11948 and21D29768 mechanism notes are below current targets12460 and31560. The registered research `program_H2` route reaches13D1154 by conditional switching, free-zone joining and a coupled lift in Q(sqrt(3)); its supplied coordinate/cap data retain imported ancestry. Current independent replay checks all665281 pairs and exact rank13. It reproduces a known construction. Existing18D8358 and20D19448 packages are separate until an actual composable recipe and proof adapter is registered. Leech generation alone is not an integrated compressed24D proof. Maximality of a supplied configuration neither proves that it is globally optimal nor supplies an integrated construction.
+The16D octacode sign recipe produces256 points, below4320; it remains a subtarget recipe even when another16D constructor reaches the target. A registered stabilizer16 control, when present in this matrix, generates4320 points implicitly from affine-flat and quadratic-sign formulas, with symbolic count/separation proof replay rather than a4320-point array. The4D orthogonal-union demonstration imports8 supplied coordinate points, below24. The8D quotient-coset demonstration generates32 points, below240. The exact E8 section chain has target126/rank7 and72/rank6 while retaining8ambient coordinates; output IDs and ambient dimensions are recorded rather than conflated with span rank. Generic integer/Gram import and generic section capability do not imply that every target construction has been encoded. The older19D11948 and21D29768 mechanism notes are below current targets12460 and31560. The registered research `program_H2` route reaches13D1154 by conditional switching, free-zone joining and a coupled lift in Q(sqrt(3)); its supplied coordinate/cap data retain imported ancestry. Current independent replay checks all665281 pairs and exact rank13. It reproduces a known construction. Known17D5730 is reconstructed from Boolean quadratic/RM formulas and verified through the native weighted integer input. The18D8358 construction now uses the native weighted Q(sqrt(3)) backend. A four-action exact orbit recipe generates24D196560; closure, transitivity and196559 seed comparisons cover every source pair. Exact sections supply23D93150 and22D49896. The same signed-pair-normal search reaches only21D27720 and20D17400, below the captured31560 and19448 targets. Maximality of a supplied configuration neither proves that it is globally optimal nor supplies an integrated construction.
 
 Run from the repository root:
 
@@ -167,7 +195,7 @@ python research/discovery_campaign_20261104/coverage_1_24/build_matrix.py > /tmp
 OPENBLAS_NUM_THREADS=1 python research/discovery_campaign_20261104/coverage_1_24/test_matrix.py
 ```
 
-`--write` executes eligible currently registered small exact controls, separately re-verifies them, writes local receipts and rebuilds the matrix. It refuses to promote missing/unregistered/numerical recipes. `--check` verifies exactly24 ordered dimensions, unchanged source bytes, target/provenance consistency, recipe/evidence/receipt hashes, registry validity and current independent proof replay. Source fingerprints make implementation changes visible. The focused regression checks reject missing rows, a changed source target, false discovery provenance, cross-dimension attribution, omitted integrated runs and an unaudited recipe inventory. Default prints exactly24 row objects as one JSON array after checking. No large18D/Leech proofs, installations, network requests, pushes or record-registry writes occur.
+`--write` executes eligible currently registered exact controls under their declared resource profiles, separately re-verifies them, writes local receipts and rebuilds the matrix. It refuses to promote missing/unregistered/numerical recipes. `--check` verifies exactly24 ordered dimensions, unchanged source bytes, target/provenance consistency, recipe/evidence/receipt hashes, registry validity and current independent proof replay. Source fingerprints make implementation changes visible. The focused regression checks reject missing rows, a changed source target, false discovery provenance, cross-dimension attribution, omitted integrated runs and an unaudited recipe inventory. Default prints exactly24 row objects as one JSON array after checking. The larger17D/18D and Leech proofs run with explicit profiles; no installations, network requests, pushes or record-registry writes occur.
 
 One shared construction language is used across all dimensions. Resource limits and available proof backends determine feasibility. A gap here describes missing target reproduction, not a theorem of mathematical impossibility or absence of all generic operators. Known controls and benchmark coverage remain distinct from the objective of a new exact improvement.
 '''
@@ -176,6 +204,7 @@ One shared construction language is used across all dimensions. Resource limits 
 def check(matrix=None):
     meta,source=load_source()
     if matrix is None:matrix=json.loads((HERE/'matrix.json').read_text())
+    if matrix.get('discovery_source_sha256')!={rel(p):sha(p) for p in sorted((ROOT/'discovery').rglob('*.py'))}:raise ValueError('Discovery source fingerprints changed; rebuild matrix')
     rows=matrix['rows']
     if len(rows)!=24 or [r['dimension'] for r in rows]!=list(range(1,25)):raise ValueError('Require exactly24 rows ordered1–24')
     if matrix.get('audited_eligible_recipe_paths')!=[rel(p) for p,_ in candidates()]:raise ValueError('Eligible integrated recipe inventory changed; rebuild matrix')
@@ -192,16 +221,18 @@ def check(matrix=None):
             if run['dimension']!=r['dimension']:raise ValueError('Run dimension does not match enclosing row')
             collected_recipes.append([run['recipe'],run['output_id']])
             if sha(ROOT/run['recipe'])!=run['recipe_sha256'] or sha(ROOT/run['receipt'])!=run['receipt_sha256']:raise ValueError('Recipe/receipt hash changed')
+            ctx=recipe_context(ROOT/run['recipe'])
             program=json.loads((ROOT/run['recipe']).read_text());validate_program(program,ctx)
-            receipt=json.loads((ROOT/run['receipt']).read_text())
+            receipt=read_receipt(ROOT/run['receipt'])
             if receipt['program']!=program:raise ValueError('Receipt does not execute the current recipe')
             op=next(n['op'] for n in program['nodes'] if n['id']==run['output_id'])
             origin=recipe_origin(program,run['output_id'])
             if run['origin']!=origin:raise ValueError('Imported/generated provenance mismatch')
             if run['resource_limits']!=receipt['budget']:raise ValueError('Receipt resource-limit mismatch')
+            if run['resource_limits']!=ctx.budget:raise ValueError('Receipt differs from declared per-recipe resource profile')
             key=(run['receipt'],run['output_id'])
             if key not in seen:
-                a=output_artifact(json.loads((ROOT/run['receipt']).read_text()),run['output_id']);report=verify_artifact(a,ctx)
+                a=output_artifact(receipt,run['output_id']);report=verify_artifact(a,ctx)
                 if report.status!='exact':raise ValueError('Independent replay not exact')
                 facts=report.details.get('facts',report.details);seen[key]=(facts.get('dimension',a.facts.get('dimension')),facts.get('cardinality',a.facts.get('cardinality')))
             if seen[key]!=(run['dimension'],run['cardinality']):raise ValueError('Dimension/count mismatch')

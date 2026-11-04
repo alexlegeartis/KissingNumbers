@@ -73,6 +73,12 @@ def verify_artifact(artifact,context=None):
     if artifact.kind=='quadratic_spherical_code':
         from .engines.signed_layers import verify_artifact as verify_signed_layers
         report=verify_signed_layers(artifact,context)
+    elif artifact.kind=='spherical_code' and artifact.data.get('backend')=='exact_integer_orbit':
+        from .engines.exact_orbits import verify_artifact as verify_exact_orbit
+        report=verify_exact_orbit(artifact,context)
+    elif artifact.kind=='spherical_code' and artifact.data.get('backend')=='certified_coordinate_section':
+        from .sections import verify_certified_section
+        report=verify_certified_section(artifact,context)
     elif artifact.kind=='gram_spherical_code' and 'gluing' in artifact.data:
         from .compatibility import verify_glued_artifact
         report=verify_glued_artifact(artifact,context)
