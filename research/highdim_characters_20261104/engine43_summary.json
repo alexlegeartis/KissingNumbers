@@ -1,0 +1,26 @@
+{
+  "facts": {
+    "incumbent_points": 3447,
+    "added_points": 0,
+    "removed_points": 0,
+    "gain": 0,
+    "new_sota": false
+  },
+  "search": {
+    "body_count": 30240,
+    "head_count": 305,
+    "screened_candidates": 41616,
+    "tested_replacement_pairs": 512,
+    "seconds": 1.172724747000757,
+    "max_removed": 1,
+    "replacement_test_limit": 512,
+    "replacement_search_truncated": true,
+    "body_product_backend": "bounded exact binary32",
+    "body_product_absolute_bound": 49152,
+    "screening": "Floating point proposals may miss feasible exchanges; every emitted local condition is checked with Python integers"
+  },
+  "seconds": 16.94947516799948,
+  "verification_status": "unverified",
+  "full_construction_replay": "Run research/43d_head_exchange_20261104/replay.py --delta research/highdim_characters_20261104/engine43_delta.json",
+  "scope": "Generic seeded discovery replay. Original discovery belongs to the separate43D task. No held-out credit, global optimality or worldwide-priority conclusion."
+}

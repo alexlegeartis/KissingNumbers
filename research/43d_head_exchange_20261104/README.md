@@ -1,5 +1,12 @@
 # Coupled 43D head exchanges
 
+The generic `search.body_head_exchange` operator has since independently
+generated the same final point set, with the last two exchanges in a different
+order. See `research/highdim_characters_20261104/README.md`. The original
+discovery attribution remains with this separate search. Engine proposals
+receive full certification only through the two independent construction
+replays described below.
+
 This package increases the repository's certified 43D construction from
 2,919,782 to **2,919,785** points. Three successive exchanges remove five
 points from the explicit tiny layer and insert eight rational-head points. All 118

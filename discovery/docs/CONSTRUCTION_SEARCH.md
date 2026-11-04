@@ -2,7 +2,7 @@
 
 The three operators in `engines/construction_search.py` generate and assemble
 candidate configurations. They use the existing DAG, budgets, typed planner and
-independent exact coordinate verifier. All 37 registered operators have planner
+independent exact coordinate verifier. All 38 registered operators have planner
 input/output signatures. No dimension-to-record dispatch or target-count table
 is used by the new construction operators.
 
@@ -69,6 +69,10 @@ sections rather than enumerating every pair. See [exact orbits](EXACT_ORBITS.md)
 The newer [coupled character families](CHARACTER_FAMILIES.md) replace whole
 code-coset and sparse/dense orbit families jointly; their competitive17D/19D/21D
 experiments have not produced a new record.
+The later [finite body/head operator](BODY_HEAD_EXCHANGE.md) generates three
+profitable43D exchanges. Independent full replays certify2919785 points under
+the baseline's existing P48n/population inputs. That seeded discovery replay
+is separate from the1–24 held-out benchmark.
 
 ## Growth diagnostic and competitive trials
 

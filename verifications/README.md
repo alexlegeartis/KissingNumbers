@@ -55,7 +55,7 @@ corrects the missed DGLS parent; the new sections and sparse layers are checked
 in `dim88-96-z8-golay`. The older **46D and 47D cross-section values** are in
 [`recovered/`](recovered/): published by other people and not claimed from that
 package. The new 46D family/head configuration is larger and is registered in
-`improved/`. The supplied 43D construction now registers 2,919,782 points; the older
+`improved/`. The supplied 43D construction now registers 2,919,785 points; the older
 2,878,155-point seed is retained for replay. The missing writeup target
 2,911,990 is historical and is not used by the current certificate.
 No 47D/48D improvement is claimed. The paper retains its 66-result checkpoint; 32–35D and the improved 95–96D values will be added later.

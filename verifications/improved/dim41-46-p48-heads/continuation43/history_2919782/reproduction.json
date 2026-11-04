@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "previous_tiny_points": 3408,
+  "deleted_points": 46,
+  "inserted_points": 85,
+  "explicit_tiny_points": 3447,
+  "gain": 39,
+  "certificate_sha256": "ff4042cfe8bc6bc79f0b33aa4259df41a08c013e37511e03b6833a18aff321c4"
+}

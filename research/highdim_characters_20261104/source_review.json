@@ -1,0 +1,14 @@
+{
+  "reviewed_at_utc": "2026-11-04T18:11:14.559882+00:00",
+  "captured_cohn_sha256": "94780f35728e349694b5ea119f74e0057b65d5c2d6eb79c9ac0fef9fb3261b3e",
+  "captured_43_bound": 2919782,
+  "comparison_scope": "Strongest available captured table and repository bounds. No worldwide-priority conclusion.",
+  "primary_sources": [
+    "https://cohn.mit.edu/kissing-numbers/",
+    "https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07",
+    "https://arxiv.org/abs/2609.35051",
+    "https://arxiv.org/html/2607.20359v4"
+  ],
+  "fresh_lin_head": "0c4e2bd486061b3fd55e128ac3497bfb12b73f07",
+  "fresh_cohn_error": "HTTP Error 503: Service Unavailable"
+}

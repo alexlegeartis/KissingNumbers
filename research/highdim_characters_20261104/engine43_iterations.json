@@ -1,0 +1,57 @@
+{
+  "history": [
+    {
+      "round": 3,
+      "facts": {
+        "incumbent_points": 3449,
+        "added_points": 3,
+        "removed_points": 2,
+        "gain": 1,
+        "new_sota": false
+      },
+      "search": {
+        "body_count": 30240,
+        "head_count": 305,
+        "screened_candidates": 41614,
+        "tested_replacement_pairs": 265701,
+        "seconds": 2.482521400001133,
+        "max_removed": 2,
+        "replacement_test_limit": 500000,
+        "replacement_search_truncated": false,
+        "body_product_backend": "bounded exact binary32",
+        "body_product_absolute_bound": 49152,
+        "screening": "Floating point proposals may miss feasible exchanges; every emitted local condition is checked with Python integers"
+      },
+      "seconds": 11.580516706999333
+    },
+    {
+      "round": 4,
+      "facts": {
+        "incumbent_points": 3450,
+        "added_points": 0,
+        "removed_points": 0,
+        "gain": 0,
+        "new_sota": false
+      },
+      "search": {
+        "body_count": 30240,
+        "head_count": 305,
+        "screened_candidates": 41613,
+        "tested_replacement_pairs": 442963,
+        "seconds": 4.134160226998574,
+        "max_removed": 2,
+        "replacement_test_limit": 500000,
+        "replacement_search_truncated": false,
+        "body_product_backend": "bounded exact binary32",
+        "body_product_absolute_bound": 49152,
+        "screening": "Floating point proposals may miss feasible exchanges; every emitted local condition is checked with Python integers"
+      },
+      "seconds": 24.87751671499973
+    }
+  ],
+  "initial_tiny_points": 3447,
+  "final_tiny_points": 3450,
+  "gain": 3,
+  "full_replay_required": true,
+  "new_sota": false
+}

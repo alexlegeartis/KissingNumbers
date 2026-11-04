@@ -2042,7 +2042,7 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("The 28 October Fano-grid and cube-edge construction gives 611522 in 38D (+1128 over the preceding 610394-point repository certificate). It replaces 5408 latitude points with 6656 and removes 120 caps. Two independent exact proofs check all retained layers, and the expanded replay checks all 22147840 distinct latitude pairs. A small recipe reconstructs the certificate without search. The 6656-point latitude population saturates this particular 63-support model; other supports and norm splits remain open. The manuscript remains deferred.")
     out.append("")
-    out.append("The 28 October continuous-head 43D continuation gives 2919782 points (+39 over the preceding repository certificate), replacing 46 tiny-layer points with 85. Two independent exact representations each check 6370783 angle conditions. Complete-family population inputs and the deferred manuscript scope are unchanged.")
+    out.append("The 4 November finite body/head 43D continuation gives 2919785 points (+3 over the preceding 2919782 certificate), with 3450 explicit tiny points. The generic engine independently generated the same final point set as the separate discovery task. Both ambient and coefficient-coordinate exact replays pass. Complete-family population inputs and the deferred manuscript scope are unchanged.")
     out.append("")
     out.append("The 28 October Coxeter-Todd continuation gives 501672 in 36D (+39) and 505488 in 37D (+129), with two independent exact representations and reproducible phase trades.")
     out.append("")

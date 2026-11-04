@@ -1,5 +1,5 @@
 {
-  "checkpoint_date": "2026-10-28",
+  "checkpoint_date": "2026-11-04",
   "population_scope": "inherited tables; no fresh enumeration of the latest body shells",
   "constructions": [
     {
@@ -20,15 +20,15 @@
     },
     {
       "dimension": 43,
-      "total": 2919782,
+      "total": 2919785,
       "status": "candidate_supplied",
       "older_seed": "data/old43_seed.npz",
       "older_seed_total": 2878155,
-      "body_points": 2919777,
+      "body_points": 2919780,
       "pure_points": 5,
       "candidate": "partial43/configuration_43.npz",
       "explicit_points": "partial43/explicit_points_43.npz",
-      "explicit_body_points": 3447,
+      "explicit_body_points": 3450,
       "portable_replay": "partial43",
       "historical_missing_total": 2911990,
       "independent_replay": "continuation43/verify_coordinates.py"

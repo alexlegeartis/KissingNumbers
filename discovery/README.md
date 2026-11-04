@@ -2,15 +2,19 @@
 
 An experimental, composable foundation for searching and checking kissing
 configurations. It is separate from the repository's registered record pipeline.
-**The work so far reproduces known constructions and records bounded negative
-searches. It has not found a new SOTA.**
+**The generic engine now generates a certified 43D improvement from 2,919,782
+to 2,919,785 points.** This seeded body/head search independently reproduces the
+separate 43D task's discovery. Its full replays retain the documented P48n and
+complete-family population inputs; there is no held-out or worldwide-priority
+claim.
 
 The Sol continuation adds three target-independent operators: support-orbit
 packing, arbitrary integer point-pool selection across any number of cohorts,
 and negative-contact-sum generation with joint selection. A subsequent extension
 adds exterior-square representations, exact rational orthogonal orbits and
 weighted quadratic-coordinate input. Joint character-coset and sign-orbit
-assembly now replace sparse bases and dense caps together. There are now 37
+assembly now replace sparse bases and dense caps together. A finite body/head
+operator finds shared-deletion exchanges. There are now 38
 registered operators. The separate 1–24 held-out benchmark matches ten targets
 with formula controls and four through actual support search, including 9D306.
 The 13D/14D/31D record attempts have no improved certified witness. See
@@ -24,6 +28,9 @@ adds a rational19D12460 control with a strict auxiliary gap. Its17D/19D/21D
 construction searches have no certified improvement. The
 [character-family operators](docs/CHARACTER_FAMILIES.md) retain whole-family
 selection and numerical shape deformation as distinct proposal mechanisms.
+The [high-dimensional campaign](../research/highdim_characters_20261104/README.md)
+records the 43D improvement, negative 33D–35D/39D/40D experiments and independent
+full verification. See [body/head exchanges](docs/BODY_HEAD_EXCHANGE.md).
 
 Run from the repository root with the existing Python environment; no installation
 is required. Dependencies are NumPy, SciPy and SymPy. The code makes no network

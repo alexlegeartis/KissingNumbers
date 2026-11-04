@@ -1,4 +1,4 @@
-43-dimensional kissing configuration with 2,919,782 points.
+43-dimensional kissing configuration with 2,919,785 points.
 
 Run: python verify.py
 Dependency: NumPy. The replay uses integer arithmetic for every angle.
@@ -31,3 +31,10 @@ verify_families.py and its completeness is explained in population_note.txt.
 old points with 85 and gaining 39. The previous layer, exact delta,
 independent coefficient-coordinate verifier and reproduction are in
 ../continuation43/. Complete-family population assumptions are unchanged.
+
+4 November 2026: three finite body/head exchanges improve 2,919,782
+to 2,919,785, with 3,450 explicit tiny points. The generic engine
+reproduces the separately discovered final point set. Both independent
+geometry replays pass with unchanged P48n and population inputs.
+The previous point file and reports are archived in
+../continuation43/history_2919782/.

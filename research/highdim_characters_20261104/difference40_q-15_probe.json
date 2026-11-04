@@ -1,0 +1,17 @@
+{
+  "inner": -15,
+  "candidate_norm": 90,
+  "limits": [
+    34,
+    28,
+    25
+  ],
+  "generated_differences": 1380,
+  "sample_core_points": 4096,
+  "sample_and_B_survivors": 1,
+  "full_core_and_B_survivors": 0,
+  "C_blocker_counts": [],
+  "seconds": 0.13436314399950788,
+  "new_sota": false,
+  "scope": "All-core/B compatibility exact under explicit binary32 accumulation bounds. Candidate/C and candidate/candidate assembly still required."
+}

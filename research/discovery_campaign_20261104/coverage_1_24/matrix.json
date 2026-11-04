@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "audit_date_context": "2026-11-04",
-  "built_at_utc": "2026-11-04T17:14:46.092096+00:00",
+  "built_at_utc": "2026-11-04T18:15:04.523035+00:00",
   "scope": "Exactly24 current Cohn targets. Integrated exact construction coverage is separate from prototypes, data import, numerical discovery and novelty. No new record.",
   "discovery_source_sha256": {
     "discovery/__init__.py": "740613fcd98774473133e04e736c57f7c248e400b4cc56549cfea5c720b6854a",
@@ -17,6 +17,7 @@
     "discovery/contracts.py": "8a8c134dcf67751a0b0882536e8886e4d120f1b76d7388e66a60f18eeb786872",
     "discovery/core.py": "69313eb6d933f436d151289f23c40f018365d16057a2b75d455ac0fe157a1024",
     "discovery/engines/__init__.py": "8a6471ddaf1bca318a98bd1997144ca2495ef56377133230eeb770e0cdeb0809",
+    "discovery/engines/body_heads.py": "abd61a72b42fb4f112c7db343ef48cfbe10b960db8187ca077d1ab5a55742944",
     "discovery/engines/characters.py": "a889bc661697e1eb2c5f204680f0602e22fd490d929cc090d48d647a7763d4b5",
     "discovery/engines/construction_search.py": "d9956f8ccc364a3608c0f02dbda1b27df583d7978e91bf64761e5fe934da9c42",
     "discovery/engines/coset_search.py": "3e808aeee08588665f36d3286172de791dc467fc1a854432a5bec2ae7c9be722",
@@ -36,11 +37,12 @@
     "discovery/numerical_shapes.py": "85e9df44c717fcc949295e23985e1cca95bd1cfadf18b12bf850233f9faa7520",
     "discovery/objects.py": "4e8a922bcd7f57fa0d9be5507a92678a170bb8fa45d4e0ab8b61b1e52cf96bb3",
     "discovery/planner.py": "7567b7ac07e0ef52d74a9126aec34e3b70de9b3498fd1f1edfe11f424ccabb97",
-    "discovery/runner.py": "84570f966396822a433d13339364629faeac396e6759a0f45907733fc75e7ebe",
+    "discovery/runner.py": "f8843836061a905370ffdc6a5df982b117ff65d1fa6a3a5624bfa80fbe8a456f",
     "discovery/scheduler.py": "34aa720811dce88f75c05a76c23cc5f6b36d62d891cd929c863cb7bca499af75",
     "discovery/sections.py": "3e5d33680f60c950cb7b232bf73abbe4aa02a1a8dfef261ebefca8875faecbc3",
     "discovery/tests/__init__.py": "1f4e4edeffe5dc6453b57458ad0350a317b65424ddc91478688549c128f381dc",
     "discovery/tests/test_blind_benchmark.py": "6eb7383550c7e201bd31a98c85a2d0b225415b94bb88860a73895804ba7f72d9",
+    "discovery/tests/test_body_heads.py": "10372997111a6e3f6ef10c14a55c768ec66ebadd068171c4672563763d6e7102",
     "discovery/tests/test_certified_sections.py": "1716c36897ef360354a36c69acd139aadca8062658bc08af9f990361b7cbc7a6",
     "discovery/tests/test_characters.py": "53d42b4afe444bda5e4b1a9d0db6fa90e02a7dc5302645b7fcda616985171f4b",
     "discovery/tests/test_construction_search.py": "bccf444cdaaa14c27e37d0dca36c40b9800a92d8d2a668c9b402f8840cb740f1",
@@ -3185,5 +3187,6 @@
       },
       "new_record": false
     }
-  ]
+  ],
+  "refresh_method": "Existing unchanged construction receipts independently replayed under current source; no reconstruction rerun."
 }
