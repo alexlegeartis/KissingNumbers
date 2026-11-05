@@ -1,0 +1,9 @@
+# Exact saturation of a 13D pure-family union
+
+This is a restricted statement, not an upper bound on tau(13). Work with squared vector norms 16 and pairwise inner products at most 8. Fix the independently verified 1,154-point switched seed in `source.npz`.
+
+Let E be all signed four-support vectors in the first 12 coordinates, H+ and H− all vectors (±1^12,±2) of the respective tail signs, and A all 26 coordinate axes ±4e_i. The union of this source with arbitrary choices from E, H+, H− and A cannot yield a configuration larger than 1,154, even if arbitrary source points are removed.
+
+Proof. The source consists exactly of 816 E-points, 144 H+-points, 144 H−-points, two tail-axis points, and 48 other points. By `BOUND.md`, any compatible subset of E has at most 816 points. Each H sign corresponds to a binary length-12 code with minimum distance at least 4, so has at most A(12,4)=144 points (the classical exact coding bound, e.g. https://users.aalto.fi/~pat/72.html). An exact check on the 48 remaining source points shows that each of the 24 first-coordinate axis vectors conflicts with exactly two of them, and these 24 pairs partition the 48 points. Hence at most 48 of those 24 axes and 48 old outsiders can be retained; the two tail axes contribute at most two more. The total is at most 816+144+144+48+2=1,154. These bounds are simultaneously attained by the source.
+
+In the shared-deletion mixed-integer model, this implies four cuts: the number of new E points cannot exceed deletions of old E points; the same holds independently for each H sign; and new axis points cannot exceed deletions of the 48 old outsiders plus two old tail-axis points. The current expanded model also allows 43 other candidate shapes; the theorem does not exclude an improvement using any of them or any other vectors.

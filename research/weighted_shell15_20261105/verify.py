@@ -1,0 +1,16 @@
+from pathlib import Path
+import numpy as np,collections
+p=Path(__file__).parent;z=np.load(p/'source.npz');X=z['X'].astype(np.int64);g=z['g'].astype(np.int64);assert X.shape==(2564,15) and np.array_equal(g,[1]*14+[2]) and np.all((X*X*g).sum(1)==16)
+for st in range(0,len(X),128):
+ D=(X[st:st+128]*g)@X.T;ii=np.arange(st,st+len(D))[:,None];jj=np.arange(len(X))[None,:];assert not np.any((D>8)&(ii<jj))
+print('Verified all 2,564 source vectors and pairs.')
+z=np.load(p/'low_points.npz');Q=z['Q'].astype(np.int64);B=z['blockers'];part=z['part'];assert len(Q)==17572 and np.array_equal(np.bincount(part,minlength=2),[2212,15360]) and np.all((Q*Q*g).sum(1)==16)
+for st in range(0,len(Q),128):
+ D=(Q[st:st+128]*g)@X.T
+ for i,row in enumerate(D):assert set(map(int,np.flatnonzero(row>8)))==set(map(int,B[st+i][B[st+i]!=65535]))
+old={tuple(v) for v in X};isold=np.array([tuple(v) in old for v in Q]);assert isold.sum()==2564 and collections.Counter((B[~isold]!=65535).sum(1))=={4:672,6:14336};print('Verified 17,572 saved shell points and exact blocker lists.')
+z=np.load(p/'pool.npz');Q=z['Q'].astype(np.int64);B=z['B'];assert len(Q)==30024 and np.all((Q*Q*g).sum(1)==16*144) and len({tuple(v) for v in Q})==len(Q)
+for st in range(0,len(Q),128):
+ D=(Q[st:st+128]*g)@(12*X).T
+ for i,row in enumerate(D):assert set(map(int,np.flatnonzero(row>8*144)))==set(map(int,B[st+i][B[st+i]!=65535]))
+print('Verified all 30,024 search candidates and their exact source blocker lists.')

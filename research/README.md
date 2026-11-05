@@ -7,6 +7,11 @@ its reproduction by the engine. The earlier lower-dimensional campaigns below
 produced no new kissing-number lower bound. Registered constructions remain in
 [`../verifications/`](../verifications/) and [`../RESULTS.md`](../RESULTS.md).
 
+## 5 November lower-bound search
+
+- [Signed equators and coupled 13D search](signed_equator_20261105/) gives a sharp restricted-family equator proof, a source-specific saturation result, a complete fixed-alphabet scan and joint point-level searches. No new lower bound is claimed.
+- [Weighted-shell and mixed-rotation 15D search](weighted_shell15_20261105/) records a complete fixed-source integer-shell scan and a checked individual-point exchange pool. No new lower bound is claimed.
+
 ## Certified construction improvements
 
 | Package | Outcome and scope |
