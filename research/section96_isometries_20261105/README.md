@@ -82,3 +82,27 @@ of both layers in complete common orbits rather than requiring the entire
 transformed subcode to coexist with the entire original section. These counts
 and equivariance are verified by `python verify_common_orbits.py`. They do not
 establish which orbit pairs are compatible, a successful exchange, or a bound.
+
+For an index-64 transformed section, beating the repository's 92D number
+requires a net gain of at least 33,501 common orbits above the source section.
+If all 82,944 candidate orbits were retained, at most 49,443 source orbits
+could be removed. The analogous numbers in 90D are 18,575 net, 46,656
+candidates, and at most 28,081 removed. Other existing accessory layers are not
+included in these particular accounting figures.
+
+`sample_orbit_conflicts.py` samples explicit violating word pairs for a fixed
+map, validates each pair using integer Hamming distance, reduces messages mod 4
+to their common-orbit labels, and computes an exact maximum matching of the
+sampled bipartite conflict graph. For example, provide a 24-by-8 raw unsigned
+byte map and run `python sample_orbit_conflicts.py MAP.bin 4 1008 500` after
+compiling `oracle_index`. Each sampled edge is real, but an absent edge is
+unknown; the matching bounds only the specified two-layer whole-orbit pool and
+the observed edges. It is not a candidate construction or a bound on general
+codes. It is an initial building block for a shared-blocker exchange search,
+not yet an optimizer over the full orbit pool.
+
+A first fixed-map probe supplied 499 explicit conflict edges, containing a
+matching of 497. `python verify_sampled_conflicts.py` independently replays
+all words, section conditions, distances, orbit labels and matching from
+`sample92_conflicts.json`. This is a very small sample relative to the 82,944
+candidate orbits, and does not rule out a useful partial exchange.
