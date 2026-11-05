@@ -136,6 +136,9 @@ def verify_artifact(artifact,context=None):
     elif artifact.kind=='quadratic_projector_code':
         from .engines.quadratic_projector import verify_artifact as verify_quadratic_projector
         report=verify_quadratic_projector(artifact,context)
+    elif artifact.kind=='search_result' and artifact.data.get('backend')=='quadratic_exchange':
+        from .engines.quadratic_exchange import verify_search as verify_quadratic_exchange
+        report=verify_quadratic_exchange(artifact,context)
     elif artifact.kind=='search_result' and artifact.data.get('backend')=='projective_exchange':
         from .engines.projective_exchange import verify_search as verify_projective_search
         report=verify_projective_search(artifact,context)
