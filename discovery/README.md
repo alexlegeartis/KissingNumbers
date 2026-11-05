@@ -431,3 +431,8 @@ from a supplied 5,730-point source, removes 308 points, and searches for 309
 replacements. Its output is a numerical proposal, not a 5,731-point bound; run
 with `--budget max_nodes=350 --budget max_pairs=17000000`. Exact promotion also
 rechecks every fixed-fixed pair, so the source's validity is not assumed.
+
+The joint optimizer evaluates the symmetric moving-point Gram matrix in place
+and avoids explicit triangular-index and second-weight matrices. It still has
+quadratic time and memory cost in the number of simultaneously moving points;
+set resource budgets explicitly for large whole-configuration searches.

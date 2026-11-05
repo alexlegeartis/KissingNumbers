@@ -8,10 +8,24 @@ from pathlib import Path
 import math,time
 import numpy as np
 from scipy.optimize import minimize
-from scipy.special import logsumexp
 from ..core import Artifact,RunContext,Verification,integer,check_params,digest
 from ..exact_gram import exact_integer_rank
 
+
+def _smooth_value_gradient(points,fixed,beta):
+    """Log-sum-exp over each unordered moving pair and each moving/fixed pair.
+
+    The symmetric moving Gram is weighted by one half and overwritten in
+    place. This avoids explicit triangular indices and a second dense matrix.
+    """
+    D=points@fixed.T;R=points@points.T;np.fill_diagonal(R,-np.inf)
+    mx=max(float(np.max(D,initial=-np.inf)),float(np.max(R,initial=-np.inf)))
+    if not math.isfinite(mx):raise ValueError('need at least two total points')
+    D-=mx;D*=beta;np.exp(D,out=D)
+    R-=mx;R*=beta;np.exp(R,out=R);R*=.5
+    total=float(D.sum()+R.sum())
+    grad=(D@fixed+2*(R@points))/total
+    return mx+math.log(total)/beta,grad,mx
 
 def _source(p,context):
     check_params(p,('source','metric','remove_indices','initial_replacements','attempts','max_iterations','seed','seconds','scale','betas'))
@@ -39,20 +53,17 @@ def search_cavity(inputs,p,context):
     if not isinstance(betas,list) or not 1<=len(betas)<=16 or any(type(b) not in (int,float) or not math.isfinite(b) or b<=0 or b>100000 for b in betas):raise ValueError('invalid beta schedule')
     seconds=p.get('seconds',10)
     if type(seconds) not in (int,float) or not math.isfinite(seconds) or seconds<=0:raise ValueError('invalid seconds')
-    context.limit('solver_seconds',seconds);rng=np.random.default_rng(integer(p.get('seed',0),'seed',0));tri=np.triu_indices(m,1);best=math.inf;bestX=None;finished=0;deadline=time.monotonic()+seconds
+    context.limit('solver_seconds',seconds);rng=np.random.default_rng(integer(p.get('seed',0),'seed',0));best=math.inf;bestX=None;finished=0;deadline=time.monotonic()+seconds
     class Cutoff(Exception):pass
     def evaluate(y,beta):
         nonlocal best,bestX
         if time.monotonic()>deadline:raise Cutoff()
         Y=y.reshape(m,d);norm=np.linalg.norm(Y,axis=1)
         if np.any(norm<1e-14):raise ValueError('zero replacement seed')
-        Z=Y/norm[:,None];D=Z@fixed.T;R=Z@Z.T;flat=np.r_[D.ravel(),R[tri]]
-        if not len(flat):raise ValueError('need at least two total points')
-        mx=float(flat.max())
+        Z=Y/norm[:,None];value,grad,mx=_smooth_value_gradient(Z,fixed,beta)
         if mx<best:best=mx;bestX=Z.copy()
-        ls=logsumexp(beta*flat);weight=np.exp(beta*flat-ls);grad=weight[:D.size].reshape(m,-1)@fixed;W=np.zeros((m,m));W[tri]=weight[D.size:];grad+=(W+W.T)@Z
         grad=(grad-Z*np.sum(Z*grad,axis=1)[:,None])/norm[:,None]
-        return ls/beta,grad.ravel()
+        return value,grad.ravel()
     for trial in range(attempts):
         if time.monotonic()>=deadline:break
         y=initial*w if trial==0 else initial*w+rng.normal(scale=.05,size=initial.shape)

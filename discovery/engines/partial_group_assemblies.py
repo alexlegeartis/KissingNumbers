@@ -8,10 +8,10 @@ from pathlib import Path
 import math,time
 import numpy as np
 from scipy.optimize import minimize
-from scipy.special import logsumexp
 from ..core import Artifact,RunContext,Verification,integer,check_params,digest
 from ..exact_gram import exact_integer_rank
 from .group_seed_search import _closure,_fixed_integer_basis
+from .cavity_repacking import _smooth_value_gradient
 
 
 def _group(g,d,context,identity_den=1):
@@ -74,7 +74,7 @@ def search_partial(p,context):
             if max(map(abs,row),default=0)*d*den>=2**62:raise ValueError('initial seed is too large')
             v=np.array(row,dtype=np.int64)
             if not np.any(v) or not np.all(np.einsum('gij,j->gi',H,v)==den*v):raise ValueError('initial seed is not fixed by its stabilizer')
-    sqrtw=np.sqrt(np.asarray(metric,float));U=[np.linalg.qr(sqrtw[:,None]*t[3].astype(float))[0] for t in parts];off=np.cumsum([0]+[u.shape[1] for u in U]);trans=[sqrtw[None,:,None]*t[4].astype(float)/t[1]/sqrtw[None,None,:] for t in parts];span=np.cumsum([0]+[len(x) for x in trans]);tri=np.triu_indices(N,1);deadline=time.monotonic()+seconds;best=math.inf;bestX=None;finished=0
+    sqrtw=np.sqrt(np.asarray(metric,float));U=[np.linalg.qr(sqrtw[:,None]*t[3].astype(float))[0] for t in parts];off=np.cumsum([0]+[u.shape[1] for u in U]);trans=[sqrtw[None,:,None]*t[4].astype(float)/t[1]/sqrtw[None,None,:] for t in parts];span=np.cumsum([0]+[len(x) for x in trans]);deadline=time.monotonic()+seconds;best=math.inf;bestX=None;finished=0
     class Cutoff(Exception):pass
     def evaluate(y,beta):
         nonlocal best,bestX
@@ -84,15 +84,14 @@ def search_partial(p,context):
             z=y[off[i]:off[i+1]];q=np.linalg.norm(z)
             if q<1e-14:raise ValueError('seed projects to zero')
             norm.append(q);X.append(u@(z/q))
-        X=np.array(X);V=np.concatenate([np.einsum('gij,j->gi',t,x) for t,x in zip(trans,X)]);D=V@V.T;v=D[tri]
-        if not len(v):raise ValueError('at least two proposed points are required')
-        mx=float(v.max())
+        X=np.array(X);V=np.concatenate([np.einsum('gij,j->gi',t,x) for t,x in zip(trans,X)])
+        value,gradV,mx=_smooth_value_gradient(V,np.empty((0,d)),beta)
         if mx<best:best=mx;bestX=X.copy()
-        ls=logsumexp(beta*v);w=np.exp(beta*v-ls);W=np.zeros((N,N));W[tri]=w;gradV=(W@V)+(W.T@V);gy=np.empty(off[-1])
+        gy=np.empty(off[-1])
         for i,u in enumerate(U):
             grad=np.einsum('gji,gj->i',trans[i],gradV[span[i]:span[i+1]])
             gy[off[i]:off[i+1]]=u.T@(grad-X[i]*(X[i]@grad))/norm[i]
-        return ls/beta,gy
+        return value,gy
     for trial in range(attempts):
         if time.monotonic()>=deadline:break
         y=np.concatenate([u.T@(sqrtw*np.array(v,float)) for u,v in zip(U,initial)]) if trial==0 and initial is not None else rng.normal(size=off[-1])

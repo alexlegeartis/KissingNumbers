@@ -1,13 +1,23 @@
 from copy import deepcopy
 from pathlib import Path
 import unittest
+import numpy as np
 from discovery.core import RunContext,Artifact
 from discovery.runner import registry
 from discovery.certification import verify_artifact
-from discovery.engines.cavity_repacking import search_cavity,certify_cavity,verify_exact
+from discovery.engines.cavity_repacking import search_cavity,certify_cavity,verify_exact,_smooth_value_gradient
 class CavityTests(unittest.TestCase):
  def setUp(self):
   self.ctx=RunContext(Path('.'));self.p={'source':[[1,0],[-1,0],[0,1],[0,-1]],'remove_indices':[2],'initial_replacements':[[0,1]],'attempts':1,'max_iterations':10,'seconds':4,'scale':100}
+ def test_smooth_objective_and_gradient(self):
+  X=np.array([[.2,.5],[.6,-.4],[-.3,.7]]);F=np.array([[.8,.1],[-.4,-.6]]);beta=4.
+  value,grad,mx=_smooth_value_gradient(X,F,beta)
+  terms=[X[i]@F[j] for i in range(3) for j in range(2)]+[X[i]@X[j] for i in range(3) for j in range(i+1,3)]
+  expected=np.log(np.exp(beta*np.array(terms)).sum())/beta;self.assertAlmostEqual(value,expected,places=12);self.assertAlmostEqual(mx,max(terms),places=12)
+  for i in range(3):
+   for j in range(2):
+    h=1e-6;Y=X.copy();Y[i,j]+=h;a=_smooth_value_gradient(Y,F,beta)[0];Y[i,j]-=2*h;b=_smooth_value_gradient(Y,F,beta)[0];self.assertAlmostEqual(grad[i,j],(a-b)/(2*h),places=7)
+  value,grad,mx=_smooth_value_gradient(X,np.empty((0,2)),beta);self.assertTrue(np.isfinite(value));self.assertEqual(grad.shape,X.shape)
  def test_repacking_search_and_certification(self):
   self.assertIn('search.cavity_repacking',registry()[0]);r=search_cavity([],self.p,self.ctx);self.assertEqual(r.verification.status,'unverified');a=certify_cavity([r],{},self.ctx);self.assertEqual(a.facts['cardinality'],4);self.assertEqual(verify_artifact(a,self.ctx).status,'exact')
  def test_exact_checks_fixed_fixed_pairs(self):
