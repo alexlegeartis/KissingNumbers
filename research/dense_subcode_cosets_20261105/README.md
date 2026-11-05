@@ -55,3 +55,9 @@ samples subgroups; it is not exhaustive over them. It certifies any success
 by explicit span-and-cross-coset enumeration, without requiring a full
 quotient-sized certificate. These searches remain unverified until they find
 and independently check a proposal.
+
+A coordinate-structured subcode can be searched with
+`python research/dense_subcode_cosets_20261105/run.py --codimension 3 --equal-coordinates 18,22,28,30 --trials 1 --seconds 15 --max-candidates 2000`.
+The selected coordinates are constrained to agree inside the subcode. For this
+particular block, the complete quotient graph search exhausts without finding
+nine compatible cosets; this is not an exclusion for other subcodes.

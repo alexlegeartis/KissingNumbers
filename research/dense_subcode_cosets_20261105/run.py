@@ -4,12 +4,15 @@ ROOT=pathlib.Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT))
 from discovery.core import RunContext
 from discovery.engines.binary_coset_discovery import search,certify
 from discovery.engines.binary_grouped_cosets import search as grouped_search,certify as grouped_certify
-p=argparse.ArgumentParser();p.add_argument('--codimension',type=int,choices=(3,4,5,6),default=3);p.add_argument('--grouped',action='store_true');p.add_argument('--subgroup-dimension',type=int,default=2);p.add_argument('--seed',type=int,default=323333);p.add_argument('--trials',type=int,default=10);p.add_argument('--seconds',type=float,default=60);p.add_argument('--max-candidates',type=int,default=4000);p.add_argument('--output',type=pathlib.Path);args=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--codimension',type=int,choices=(3,4,5,6),default=3);p.add_argument('--grouped',action='store_true');p.add_argument('--equal-coordinates',help='comma-separated coordinate block');p.add_argument('--subgroup-dimension',type=int,default=2);p.add_argument('--seed',type=int,default=323333);p.add_argument('--trials',type=int,default=10);p.add_argument('--seconds',type=float,default=60);p.add_argument('--max-candidates',type=int,default=4000);p.add_argument('--output',type=pathlib.Path);args=p.parse_args()
 loc=ROOT/'verifications/improved/dim32-35-signed-layers/source/classic';src=json.loads((loc/'certificate32.json').read_text());states=1<<(15+args.codimension);ctx=RunContext(ROOT,{'max_trials':max(args.trials,1),'max_codewords':states,'max_rank_work':max(50000000,(args.trials*(1<<args.subgroup_dimension)+32)*states if args.grouped else args.trials*32*states),'max_gram_entries':args.max_candidates**2,'max_pairs':10000000,'solver_seconds':max(args.seconds,1)})
+if args.grouped and args.equal_coordinates:p.error('--equal-coordinates is available only for ungrouped search')
 if args.grouped:
  r=grouped_search([] ,{'length':32,'parent_generator':src['dense_generator'],'codimension':args.codimension,'subgroup_dimension':args.subgroup_dimension,'minimum_distance':8,'subgroup_trials':args.trials,'seconds':args.seconds,'max_candidates':args.max_candidates,'seed':args.seed,'scramble_steps':80},ctx)
 else:
- r=search([] ,{'length':32,'parent_generator':src['dense_generator'],'codimension':args.codimension,'minimum_distance':8,'trials':args.trials,'seconds':args.seconds,'max_candidates':args.max_candidates,'seed':args.seed,'scramble_steps':80},ctx)
+ params={'length':32,'parent_generator':src['dense_generator'],'codimension':args.codimension,'minimum_distance':8,'trials':args.trials,'seconds':args.seconds,'max_candidates':args.max_candidates,'seed':args.seed,'scramble_steps':80}
+ if args.equal_coordinates:params['coordinate_equalities']=[[int(x) for x in args.equal_coordinates.split(',')]]
+ r=search([],params,ctx)
 print(json.dumps({'trials':r.data['trials'],'proposal_found':r.data['proposal'] is not None},indent=2))
 if r.data['proposal']:
  code=(grouped_certify if args.grouped else certify)([r],{},ctx);print(json.dumps({'exact_binary_code':code.facts},indent=2))
