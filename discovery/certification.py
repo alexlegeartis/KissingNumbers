@@ -124,6 +124,15 @@ def verify_artifact(artifact,context=None):
     elif artifact.kind in ('binary_code','ring_code','polynomial_pair'):
         from .engines.rings import verify_artifact as verify_ring
         report=verify_ring(artifact,context)
+    elif artifact.kind=='galois_wide_translate_code':
+        from .engines.galois_wide_translates import verify_artifact as verify_galois_wide
+        report=verify_galois_wide(artifact,context)
+    elif artifact.kind=='galois_translate_code':
+        from .engines.galois_kerdock import verify_union as verify_galois_union
+        report=verify_galois_union(artifact,context)
+    elif artifact.kind=='galois_kerdock_code':
+        from .engines.galois_kerdock import verify_artifact as verify_galois_kerdock
+        report=verify_galois_kerdock(artifact,context)
     elif artifact.kind=='quadratic_projector_code':
         from .engines.quadratic_projector import verify_artifact as verify_quadratic_projector
         report=verify_quadratic_projector(artifact,context)

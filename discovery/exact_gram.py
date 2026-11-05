@@ -48,20 +48,17 @@ def exact_integer_rank(rows, context):
     n, width = len(rows), len(rows[0])
     context.limit('max_materialized_points', n)
     context.limit('max_dimension', width)
-    basis = {}; work = 0
+    # Validate every row even when an early full-rank witness exists.
     for source in rows:
         if not isinstance(source, list) or len(source) != width:
             raise ValueError('Ragged integer rank matrix')
-        row = []
         for value in source:
             if isinstance(value, bool) or not isinstance(value, int):
                 raise ValueError('Exact rank input must contain integers')
             context.limit('max_rational_bits', value.bit_length())
-            row.append(value)
-        # A full-width independent minor fixes the rank. Keep validating all
-        # subsequent rows, without repeating elimination in the full space.
-        if len(basis)==width:
-            continue
+    basis = {}; work = 0
+    for source in rows:
+        row = source[:]
         for pivot, old in basis.items():
             if not row[pivot]:
                 continue
@@ -86,6 +83,9 @@ def exact_integer_rank(rows, context):
             # Input rows need not arrive with increasing pivots. Preserve a
             # sorted echelon basis so every new row is reduced in pivot order.
             basis = dict(sorted(basis.items()))
+            # A full-width independent set is an exact upper and lower bound;
+            # later rows cannot change rank and have already been validated.
+            if len(basis)==width:return width,work
     return len(basis), work
 
 
