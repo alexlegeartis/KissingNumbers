@@ -29,3 +29,24 @@ finite image graph, and `python search.py 17w 170705` runs an individual-point
 shared-deletion search. The search is heuristic and a failed run gives no upper
 bound. The related `search.rational_image_exchanges` operator is registered in
 the main discovery engine.
+
+## Complete six-support tier scan
+
+For the twice-switched source, `scan_tier.cpp` tests the entire 1,025,024-vector
+family with six head coordinates ±6 and tail ±6, in the norm-288 weighted
+integer representation. No free extension occurred. Counts through 12 source
+blockers are `0,1024,0,0,0,0,0,0,9216,4096,11264,4096,3072`; all 1,024
+one-blocker vectors are source duplicates. The remaining 992,256 candidates
+were stopped once more than 12 blockers were found. `tier_low.npz` contains all
+32,768 retained vectors and their blocker lists; `verify_tier.py` independently
+checks every saved norm and blocker list, and distinguishes duplicates.
+
+To reproduce the completeness scan, run in this directory:
+
+    python prepare_tier.py
+    c++ -O3 -std=c++17 scan_tier.cpp -o /tmp/scan17-tier
+    /tmp/scan17-tier
+    python verify_tier.py
+
+This excludes a free addition from that stated family only. Coupled replacement
+and other cap shapes remain open.
