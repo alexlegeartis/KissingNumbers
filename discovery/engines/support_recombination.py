@@ -96,3 +96,63 @@ def verify_search(a,context):
 OPERATORS={'search.support_recombination':search,'codes.certify_support_recombination':certify}
 INPUT_KINDS={'search.support_recombination':(),'codes.certify_support_recombination':('search_result',)}
 OUTPUT_KINDS={'search.support_recombination':('search_result',),'codes.certify_support_recombination':('support_code',)}
+
+
+def search_coupled(inputs,params,context):
+ """Recombine support families while paying for removable accessory lines."""
+ from scipy.optimize import milp,Bounds,LinearConstraint
+ from scipy.sparse import coo_matrix,vstack
+ if inputs:raise ValueError('coupled support recombination takes no inputs')
+ allowed=('dimension','source','protected_supports','permutations','seconds','removable_supports','support_value','removal_cost','minimum_score_gain')
+ check_params(params,allowed)
+ base={k:params[k] for k in ('dimension','source','protected_supports','permutations','seconds') if k in params};base['minimum_gain']=1
+ d,S,E,P,_,seconds=_spec(base,context);R=params.get('removable_supports',[])
+ if not isinstance(R,list) or any(type(x) is not int or x<0 or x.bit_length()>d or x.bit_count()!=8 for x in R):raise ValueError('invalid removable support list')
+ value=integer(params.get('support_value',128),'support_value');cost=integer(params.get('removal_cost',2),'removal_cost');gain=integer(params.get('minimum_score_gain',100),'minimum_score_gain')
+ context.limit('max_rank_work',len(S)*(1+len(P))*(56+len(E)+len(R)));_check_code(S,d,E+R,context)
+ pool=set(S)
+ for perm in P:
+  for s in S:
+   q=sum(1<<perm[j] for j in range(d) if s>>j&1)
+   if all((q&t).bit_count()<=4 for t in E):pool.add(q)
+ V=sorted(pool);m=len(V);n=len(R);context.limit('max_codewords',m+n);by=defaultdict(list)
+ for i,s in enumerate(V):
+  pos=[j for j in range(d) if s>>j&1]
+  for t in combinations(pos,5):by[sum(1<<j for j in t)].append(i)
+ cl=[v for v in by.values() if len(v)>1];rr=np.repeat(np.arange(len(cl)),[len(v) for v in cl]);cc=np.array([i for v in cl for i in v],np.int64);A=coo_matrix((np.ones(len(cc)),(rr,cc)),shape=(len(cl),m+n)).tocsr();i=[];j=[]
+ for a,s in enumerate(V):
+  for b,t in enumerate(R):
+   if (s&t).bit_count()>4:i.append(a);j.append(b)
+ ne=len(i);B=coo_matrix((np.tile([1.,-1.],ne),(np.repeat(np.arange(ne),2),np.c_[i,np.array(j,dtype=int)+m].ravel())),shape=(ne,m+n)).tocsr();obj=np.r_[-float(value)*np.ones(m),float(cost)*np.ones(n)];A=vstack([A,B,coo_matrix(obj.reshape(1,-1))],format='csr');up=np.r_[np.ones(len(cl)),np.zeros(ne),-float(value*len(S)+gain)]
+ result=milp(obj,integrality=np.ones(m+n),bounds=Bounds(0,1),constraints=LinearConstraint(A,-np.inf,up),options={'time_limit':float(seconds),'presolve':False})
+ pick=[];removed=[]
+ if result.x is not None:
+  pick=[V[i] for i in np.flatnonzero(result.x[:m]>.5)];removed=np.flatnonzero(result.x[m:]>.5).tolist()
+  if value*(len(pick)-len(S))-cost*len(removed)<gain:pick=[];removed=[]
+ data={'backend':'support_coupled_recombination','dimension':d,'source':S,'protected_supports':E,'removable_supports':R,'selected':pick,'removed_indices':removed,'support_value':value,'removal_cost':cost,'minimum_score_gain':gain,'solver_status':str(result.message),'candidate_count':m}
+ return Artifact('search_result',data,{},Verification('unverified','coupled support proposal; exact replay and independent geometry required'))
+
+
+def certify_coupled(inputs,params,context):
+ check_params(params,())
+ if len(inputs)!=1 or inputs[0].kind!='search_result':raise ValueError('coupled support proposal required')
+ p=inputs[0].data;keys={'backend','dimension','source','protected_supports','removable_supports','selected','removed_indices','support_value','removal_cost','minimum_score_gain','solver_status','candidate_count'}
+ if set(p)!=keys or p['backend']!='support_coupled_recombination':raise ValueError('invalid coupled proposal')
+ d=integer(p['dimension'],'dimension',8);context.limit('max_dimension',d);S=p['source'];E=p['protected_supports'];R=p['removable_supports'];Q=p['selected'];rm=p['removed_indices']
+ if any(not isinstance(x,list) for x in (S,E,R,Q,rm)) or not isinstance(p['solver_status'],str):raise ValueError('invalid proposal fields')
+ if any(type(x) is not int or x<0 or x.bit_length()>d or x.bit_count()!=8 for x in E+R):raise ValueError('invalid protected or removable support')
+ if any(type(i) is not int or not 0<=i<len(R) for i in rm) or len(set(rm))!=len(rm):raise ValueError('invalid removal indices')
+ value=integer(p['support_value'],'support_value');cost=integer(p['removal_cost'],'removal_cost');gain=integer(p['minimum_score_gain'],'minimum_score_gain');integer(p['candidate_count'],'candidate_count');_check_code(S,d,E+R,context)
+ if (Q or rm) and value*(len(Q)-len(S))-cost*len(rm)<gain:raise ValueError('proposal does not meet target')
+ chosen=Q if Q else S;removed=set(rm);protected=E+[s for i,s in enumerate(R) if i not in removed];_check_code(chosen,d,protected,context)
+ data={'dimension':d,'supports':chosen,'protected_supports':protected};facts={'dimension':d,'cardinality':len(chosen),'weight':8,'max_intersection_upper_bound':4}
+ return Artifact('support_code',data,facts,Verification('exact','support packing and retained accessory intersections; score is conditional on external layer construction',{'facts':facts,'weighted_gain':value*(len(chosen)-len(S))-cost*len(rm),'data_sha256':digest(data)}))
+
+
+def verify_coupled_search(a,context):
+ code=certify_coupled([a],{},context)
+ return Verification('unverified','coupled support proposal replayed; spherical layers and score interpretation require independent proof',{'candidate_code_facts':code.facts})
+
+OPERATORS.update({'search.support_coupled_recombination':search_coupled,'codes.certify_support_coupled_recombination':certify_coupled})
+INPUT_KINDS.update({'search.support_coupled_recombination':(),'codes.certify_support_coupled_recombination':('search_result',)})
+OUTPUT_KINDS.update({'search.support_coupled_recombination':('search_result',),'codes.certify_support_coupled_recombination':('support_code',)})

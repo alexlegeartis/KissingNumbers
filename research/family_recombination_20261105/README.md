@@ -24,3 +24,9 @@ source support. Thus none of those three two-family unions can exceed the
 1,704-support source, even after arbitrary switching. This exact obstruction
 is specific to those pairs. It does not rule out recombination across three or
 more families, other maps, partial fibers, or changes to protected layers.
+
+Use `--coupled` to let the solver remove individual exceptional antipodal
+lines while selecting complete octad families. It optimizes 128 points per
+new support against the loss of two points per removed line, targeting a net
+increase of at least 100. The scoring is specific to this signed construction;
+the independent verifier checks all remaining layers and the actual point count.

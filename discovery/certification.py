@@ -139,6 +139,9 @@ def verify_artifact(artifact,context=None):
     elif artifact.kind=='quadratic_projector_code':
         from .engines.quadratic_projector import verify_artifact as verify_quadratic_projector
         report=verify_quadratic_projector(artifact,context)
+    elif artifact.kind=='search_result' and artifact.data.get('backend')=='support_coupled_recombination':
+        from .engines.support_recombination import verify_coupled_search
+        report=verify_coupled_search(artifact,context)
     elif artifact.kind=='search_result' and artifact.data.get('backend')=='support_recombination':
         from .engines.support_recombination import verify_search as verify_support_search
         report=verify_support_search(artifact,context)
