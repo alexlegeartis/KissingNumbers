@@ -6,6 +6,7 @@ from pathlib import Path
 import collections,itertools,time,sys
 import numpy as np
 from scipy.sparse.csgraph import connected_components
+from scipy.sparse import csr_matrix,save_npz
 p=Path(__file__).resolve().parent
 bases=np.fromfile(p/'seed_e7_bases.bin',np.int8).reshape(9,7,7).astype(np.int16)
 R=bases.reshape(-1,7);assert np.all(np.sum(R*R,axis=1)==4)
@@ -49,6 +50,9 @@ for S in itertools.combinations(range(14),8):
 assert not any(hist[k] for k in range(4)) and hist[4]==672 and hist[8]==7056
 assert not any(hist[k] for k in (5,6,7,9,10,11,12,13))
 Q=np.asarray(Q,np.int16);cost=np.array(list(map(len,B)));assert len(Q)==9392
+neighbors=[[] for _ in range(966)]
+for i,b in enumerate(B):
+ for v in b:neighbors[int(v)].append(i)
 sources={c:set(int(j) for i,b in enumerate(B) if cost[i]==c for j in b) for c in (4,8)}
 assert len(sources[4])==84 and len(sources[8])==882 and not sources[4]&sources[8]
 def has5(N,P,depth=0):
@@ -64,17 +68,57 @@ def no_five(G):
  return not has5(masks,(1<<n)-1)
 for c in (4,8):
  for oldline in sources[c]:
-  ids=[i for i,b in enumerate(B) if cost[i]==c and oldline in b];assert len(ids)==(32 if c==4 else 64)
+  ids=[i for i in neighbors[oldline] if cost[i]==c];assert len(ids)==(32 if c==4 else 64)
   P=Q[ids].copy();dots=P@old[oldline];assert np.all(abs(dots)>4);P[dots<0]*=-1
   conflict=(P@P.T)>4;np.fill_diagonal(conflict,False)
   if c==4:assert no_five(conflict)
   else:
    k,lab=connected_components(conflict);assert k==2 and sorted(np.bincount(lab))==[32,32]
    for component in (0,1):assert no_five(conflict[np.ix_(lab==component,lab==component)])
+# A single 14-conflict candidate cannot produce a gain even when mixed
+# with arbitrary cheap candidates: at one old point it makes the exact
+# local cheap capacity unattainable. This is checked pointwise, not just
+# for antipodal exchanges.
+local=[]
+for v in range(966):
+ ids=[i for i in neighbors[v] if cost[i] in (4,8)];c=int(cost[ids[0]]);P=Q[ids].copy();d=P@old[v];P[d<0]*=-1;G=P@P.T>4;np.fill_diagonal(G,False)
+ if c==4:parts=[np.arange(32)]
+ else:
+  k,lab=connected_components(G);assert k==2;parts=[np.flatnonzero(lab==a) for a in (0,1)]
+ local.append((P,G,parts))
+def has_four(G):
+ if len(G)<4:return False
+ D=~G.copy();np.fill_diagonal(D,False);N=[sum(1<<int(j) for j in np.flatnonzero(D[i])) for i in range(len(D))]
+ def rec4(P,k):
+  if k==0:return True
+  if P.bit_count()<k:return False
+  while P:
+   bit=P&-P;u=bit.bit_length()-1;P^=bit
+   if rec4(P&N[u],k-1):return True
+  return False
+ return rec4((1<<len(D))-1,4)
+high=np.flatnonzero(cost==14);wrows=[];wcols=[]
+for row,i in enumerate(high):
+ q=Q[i];witnesses=[]
+ for v in B[i]:
+  P,G,parts=local[v];d=int(q@old[v]);assert abs(d)>4;s=1 if d>0 else -1;allowed=(s*(P@q)<=4)
+  failed=any(not has_four(G[np.ix_(part[allowed[part]],part[allowed[part]])]) for part in parts)
+  if failed and v in sources[8]:witnesses.append(int(v)+(0 if s==1 else 966))
+ assert len(witnesses)==11
+ wrows.extend([row]*len(witnesses));wcols.extend(witnesses)
+W=csr_matrix((np.ones(len(wrows),np.int16),(wrows,wcols)),shape=(len(high),1932));Wneg=W[:,np.r_[np.arange(966,1932),np.arange(966)]]
+W2=__import__('scipy').sparse.vstack([W,Wneg],format='csr');H=(W2@W2.T).tocoo();mask=(H.row<H.col)&(H.data>2);q2=np.r_[Q[high],-Q[high]]
+assert not np.any(np.sum(q2[H.row[mask]]*q2[H.col[mask]],axis=1)<=4)
+# The graph of compatible pairs sharing two witnesses is triangle-free.
+mask=(H.row!=H.col)&(H.data==2);r=H.row[mask];c=H.col[mask];valid=np.sum(q2[r]*q2[c],axis=1)<=4;r=r[valid];c=c[valid]
+T=csr_matrix((np.ones(len(r),np.int16),(r,c)),shape=(len(q2),len(q2)))
+assert (T@T).multiply(T).nnz==0
+print('PASS 11 witnesses per high point, pair overlap at most two, and the double-overlap graph is triangle-free')
 if '--export' in sys.argv:
  cache=p/'cache';cache.mkdir(exist_ok=True)
  blocks=np.full((len(Q),14),65535,np.uint16)
  for i,b in enumerate(B):blocks[i,:len(b)]=b
  np.savez_compressed(cache/'candidates14.npz',Q=Q.astype(np.int8),B=blocks,old=old.astype(np.int8))
+ save_npz(cache/'witness14.npz',W2)
  print('Exported',len(Q),'candidate lines with at most 14 seed-line conflicts')
 print('PASS 1932-point E7-frame code, complete norm-8 shell, and pointwise local capacity bound; seconds',round(time.time()-start,1))
