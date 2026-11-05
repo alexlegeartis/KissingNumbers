@@ -4,7 +4,7 @@ This campaign adds construction-search machinery and a restricted finite scan. I
 
 The source is represented by integer vectors of squared norm 16 in the metric diag(1^14,2), with distinct inner products at most 8. Its original record coordinates were taken from the Cohn table data; see `verifications/improved/dim73-95-gamma72-caps/README.md` in this repository. `source.npz` contains the exact source and metric.
 
-`SATURATION.md` proves that the four pure families already attain their joint ceiling of 2,564. Of the 30,024 pool points, 29,778 lie in those families and 246 lie outside; a strict improvement requires an outside point. `search.py` seeds from those 246, adds proven per-family saturation cuts, and performs individual-point shared-deletion exchanges. The checked pool has 30,024 distinct vectors with denominator 12 in the same metric: it combines exact rational Householder images, including images that change the weighted coordinate, contact reflections and low-blocker weighted-shell samples. Each source deletion is charged once, and candidate incompatibilities are enforced jointly. A positive result is written as `candidate.npz`; it is a proposal until the independent verifier succeeds. A random seed and a per-neighborhood time budget are fixed in the script, so an unchanged result is not a certificate of impossibility.
+`SATURATION.md` proves that the four pure families already attain their joint ceiling of 2,564. Of the 47,448 pool points, 29,778 lie in those families and 17,670 lie outside; a strict improvement requires an outside point. `search.py` seeds from those 17,670, adds proven per-family saturation cuts, and performs individual-point shared-deletion exchanges. The checked pool has 47,448 distinct vectors with denominator 12 in the same metric: it combines exact rational Householder images, including images that change the weighted coordinate, contact reflections and low-blocker weighted-shell samples. Each source deletion is charged once, and candidate incompatibilities are enforced jointly. A positive result is written as `candidate.npz`; it is a proposal until the independent verifier succeeds. A random seed and a per-neighborhood time budget are fixed in the script, so an unchanged result is not a certificate of impossibility.
 
 ## Check and run
 
@@ -14,7 +14,7 @@ Requires Python 3, NumPy and SciPy. Keep at least one logical CPU free as requir
     python research/weighted_shell15_20261105/search.py --trials 1000 --seconds 3
     python research/weighted_shell15_20261105/verify_candidate.py candidate.npz
 
-The first command checks every source pair, every stored shell point and its exact blocker list, and all 30,024 search candidates and blocker lists. The candidate verifier requires more than 2,564 vectors and independently checks every unordered pair in the specified integer metric.
+The first command checks every source pair, every stored shell point and its exact blocker list, and all 47,448 search candidates and blocker lists. The candidate verifier requires more than 2,564 vectors and independently checks every unordered pair in the specified integer metric.
 
 ## Complete integer shell
 
@@ -28,3 +28,9 @@ In an empty scratch directory:
     ./scan 1 > part1.log
 
 The expected final histograms, in blocker-count order 0 through 6, are `0,1540,0,0,672,0,0` and `0,1024,0,0,0,0,14336`. Each run writes `scan_Q<part>.bin` and `scan_B<part>.bin` in the current directory. The scan is computationally substantial; concurrent partitions must leave a CPU free.
+
+## Complete denominator-three shape family
+
+The pool also includes all 17,472 signed permutations of the numerator shape `(8,2,2,0^11;6)` divided by 3 in the weighted metric. Against the fixed source, exactly 1,344 have four blockers, 2,688 have five and 13,440 have seven. All 17,472 are outside the saturated pure families; the pooled verifier checks each point and its source blockers directly. `enumerate_den3.py` reconstructs this whole family and writes `generated_den3_pool.npz`. The search alternates low-blocker non-pure seeds with seeds from the whole non-pure pool.
+
+For a fixed tail sign, at most 28 points from this family can coexist: their 14-dimensional heads have pairwise nonpositive inner products. If their normalized head Gram matrix is G of rank at most 14, then tr(G²)≤2m and m²≤14·tr(G²), so m≤28. This bounds only this one candidate family and does not constrain general 15D constructions.

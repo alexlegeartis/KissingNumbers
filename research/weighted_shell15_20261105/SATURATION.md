@@ -17,4 +17,4 @@ For L with fixed last-coordinate sign, the tail alone contributes 8 to a mutual 
 
 Adding these independent family ceilings gives 1,456+2·512+2·28+28=2,564. The source contains exactly 1,456 E vectors, 512 heads of each sign, 28 L vectors of each sign, and all 28 axes; the package verifier checks these counts and every source pair.
 
-The search pool contains 29,778 points in these pure families and 246 outside them. A strict improvement must select at least one outside point. `search.py` prioritizes those 246 points as seeds and adds valid per-family source-saturation cuts while still allowing individual pure points and arbitrary source deletions. The 246 points are not claimed to exhaust all non-pure possibilities.
+The search pool contains 29,778 points in these pure families and 17,670 outside them. A strict improvement must select at least one outside point. `search.py` prioritizes those 17,670 points as seeds and adds valid per-family source-saturation cuts while still allowing individual pure points and arbitrary source deletions. The 17,670 points are not claimed to exhaust all non-pure possibilities.

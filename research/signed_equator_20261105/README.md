@@ -40,3 +40,7 @@ The expected final histograms by blocker count 0 through 4 are `0,866,24,0,384` 
     python research/signed_equator_20261105/search_den5.py --build-only
     python research/signed_equator_20261105/search_den5.py --seconds 3600
     python research/signed_equator_20261105/verify_candidate.py candidate_den5.npz
+
+`search_local.py` uses the same denominator-5 candidate families in adaptive individual-point neighborhoods. It seeds only from the non-pure candidates and applies the exact source-category saturation cuts, while allowing coordinated replacements in every pure family. Its output `candidate_local_den5.npz` must pass `verify_candidate.py`; as with the global searches, a timeout or failure to improve proves no global bound.
+
+    python research/signed_equator_20261105/search_local.py --trials 1000 --seconds 3

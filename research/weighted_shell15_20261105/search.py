@@ -8,12 +8,13 @@ def category(V):
  e=(t==0)&(np.count_nonzero(a,axis=1)==4)&np.isin(a,[-24,0,24]).all(1);h=(np.abs(a)==12).all(1)&(np.abs(t)==12);l=(np.count_nonzero(a,axis=1)==2)&np.isin(a,[-24,0,24]).all(1)&(np.abs(t)==24);axes=(t==0)&(np.count_nonzero(a,axis=1)==1)&(np.abs(a)==48).any(1)
  out[e]=0;out[h&(t==12)]=1;out[h&(t==-12)]=2;out[l&(t==24)]=3;out[l&(t==-24)]=4;out[axes]=5
  return out
-kind=category(Q);source_kind=category(X);assert np.bincount(source_kind,minlength=7).tolist()==[1456,512,512,28,28,28,0];assert (kind==6).sum()==246
+kind=category(Q);source_kind=category(X);assert np.bincount(source_kind,minlength=7).tolist()==[1456,512,512,28,28,28,0];assert (kind==6).sum()==17670
 trials=int(sys.argv[sys.argv.index('--trials')+1]) if '--trials' in sys.argv else 1000
 seconds=float(sys.argv[sys.argv.index('--seconds')+1]) if '--seconds' in sys.argv else 3
-print('pool',len(Q),'nonpure seeds',int((kind==6).sum()),'trials',trials,'seconds',seconds,flush=True)
+seeds=np.flatnonzero((cost>=2)&(cost<=10)&(kind==6));low_seeds=seeds[cost[seeds]<=5];assert len(low_seeds)>0
+print('pool',len(Q),'nonpure seeds',len(seeds),'low-blocker seeds',len(low_seeds),'trials',trials,'seconds',seconds,flush=True)
 for trial in range(trials):
- seed=int(rng.choice(np.flatnonzero((cost>=2)&(cost<=10)&(kind==6))));vict=set(map(int,B[seed][B[seed]!=65535]));last=-999
+ seed=int(rng.choice(low_seeds if trial%2==0 else seeds));vict=set(map(int,B[seed][B[seed]!=65535]));last=-999
  for step in range(90):
   allow=np.zeros(65536,bool);allow[65535]=1;allow[list(vict)]=1;missing=np.count_nonzero(~allow[B],axis=1);eligible=np.flatnonzero(missing==0);eligible=eligible[eligible!=seed];V=Q[eligible];d=(V*g)@Q[seed];eligible=eligible[d<=1152]
   if step%4==0 and len(eligible)<2500:
