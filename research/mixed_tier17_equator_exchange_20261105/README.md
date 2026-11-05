@@ -28,3 +28,20 @@ Pool generation independently replays the original seed and exactly checks
 that each candidate orbit's point blockers are unions of source subgroup
 orbits. The resulting cached pool is under one megabyte; the candidate search
 uses SciPy MILP and checks a proposed positive exchange separately.
+
+A second search builds the exact finite conflict graph containing every source
+orbit plus the 2,560 new equator orbits with at most 56 source-point blockers.
+Its 4,174 weighted vertices and 112,000 edges support a stochastic weighted
+independent-set search over removals and additions in all original layers:
+
+    OPENBLAS_NUM_THREADS=1 python research/mixed_tier17_equator_exchange_20261105/build_full_graph.py
+    g++ -O3 -std=c++17 research/mixed_tier17_equator_exchange_20261105/weighted_anneal.cpp -o /tmp/equator_anneal
+    /tmp/equator_anneal 170501
+    python research/mixed_tier17_equator_exchange_20261105/decode_weighted.py
+    OPENBLAS_NUM_THREADS=1 python research/mixed_tier17_equator_exchange_20261105/verify.py research/mixed_tier17_equator_exchange_20261105/cache/weighted_POTENTIAL.npz
+
+This remains a finite candidate pool and stochastic search; it can also remove
+old cap orbits but does not add new cap orbits. The full-coordinate verifier,
+not the graph or annealer alone, is required to establish a kissing code.
+`audit_full_graph.py` compares 2,000 sampled edges and nonedges of this graph
+with direct integer Gram checks on the expanded point orbits.
