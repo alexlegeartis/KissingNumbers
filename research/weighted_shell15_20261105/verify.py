@@ -14,5 +14,5 @@ z=np.load(p/'pool.npz');Q=z['Q'].astype(np.int64);B=z['B'];assert len(Q)==47448 
 for st in range(0,len(Q),128):
  D=(Q[st:st+128]*g)@(12*X).T
  for i,row in enumerate(D):assert set(map(int,np.flatnonzero(row>8*144)))==set(map(int,B[st+i][B[st+i]!=65535]))
-a=Q[:,:14];t=Q[:,14];E=(t==0)&(np.count_nonzero(a,axis=1)==4)&np.isin(a,[-24,0,24]).all(1);H=(np.abs(a)==12).all(1)&(np.abs(t)==12);L=(np.count_nonzero(a,axis=1)==2)&np.isin(a,[-24,0,24]).all(1)&(np.abs(t)==24);T=(t==0)&(np.count_nonzero(a,axis=1)==1)&(np.abs(a)==48).any(1);assert np.count_nonzero(~(E|H|L|T))==17670
+a=Q[:,:14];t=Q[:,14];E=(t==0)&(np.count_nonzero(a,axis=1)==4)&np.isin(a,[-24,0,24]).all(1);H=(np.abs(a)==12).all(1)&(np.abs(t)==12);L=(np.abs(t)==24);T=(t==0)&(np.count_nonzero(a,axis=1)==1)&(np.abs(a)==48).any(1);assert np.count_nonzero(~(E|H|L|T))==195
 print('Verified all 47,448 search candidates and their exact source blocker lists.')
