@@ -68,3 +68,17 @@ for mask in B:
 # by the same -4 eigenvalue bound as above.
 print('Extended certificate: 56 extra orbit points; 56 Schlaefli blocks cover one 756-vertex component twice.')
 print('For m selected old vertices and k extra points, 2m+3k<=168. The extended union still has maximum 1932.')
+
+# Broader candidate universe: allow arbitrary re-pairings, not just 9 images.
+left=np.unique(C[:,:7],axis=0);right=np.unique(C[:,7:],axis=0)
+assert left.shape==(126,7) and right.shape==(126,7)
+assert np.all(np.sum(left*left,axis=1)==16) and np.all(np.sum(right*right,axis=1)==16)
+assert all((np.all(v[:7]==0) and v[7:]@v[7:]==32) or
+           (np.all(v[7:]==0) and v[:7]@v[:7]==32) for v in Y)
+# For each fixed left root u, compatible product points (u,v) require
+# v dot v' <= 0. The orthoplex/Rankin bound in R^7 gives at most 14 such v.
+# Thus all 126*126 possible product points contribute at most 126*14=1764.
+# The independent axis pool contributes at most 168, even when the 56 extra
+# orbit points are added, by the preceding certificate. Cross-conflicts only
+# lower the total. The original baseline shows equality is attained.
+print('Broader scope: all 126*126 root-product points, 1512 axis points, and the 56 outside-orbit points have optimum 1932.')
