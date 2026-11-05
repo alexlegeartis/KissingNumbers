@@ -448,3 +448,5 @@ For unequal integer norms, the cavity verifier now uses integer square-root
 lower bounds and checks only ambiguous pairs with arbitrary-precision integer
 arithmetic. This avoids a quadratic table over all distinct norms while
 retaining exact separation checks; the full set of pairs is still covered.
+
+Finite-field discovery: `finite_field.support_pool` enumerates coefficient grids for permutation polynomials over small binary fields, images affine subspaces and filters the resulting support masks. `finite_field.octad_exchange` then searches individual antipodal signed lines in both sign parities, with individual source-line removals. Both return proposals, not automatic record claims. A verified 32D seed and a runnable, independently checked workflow are in `research/gf32_polynomial_octads_20261105/`.
