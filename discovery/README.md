@@ -265,3 +265,41 @@ The imported search measurements remain failed quality gates: 8D 128 versus
 240 and numerical 28D 6720 versus 221988. Enumeration and passing tests do not
 establish competitive discovery. See [historical validation](docs/PLANNER_VALIDATION.md)
 and the separate [integration checks](benchmarks/planner_integration_20261104.json).
+
+### Binary translates of nonlinear block images
+
+`search.binary_translates` proposes binary shifts of a ring code's block
+image. It works in the binary image itself: it does not assume that a Gray
+map turns ring addition into XOR. A mixed-integer model chooses one permitted
+binary block per coordinate. An adversarial oracle seeks two ring messages
+whose images produce a forbidden cross-layer distance. Every discovered pair
+adds an exact, globally valid constraint on subsequent proposals. A local
+oracle is incomplete: surviving proposals are **unverified**, not distance
+certificates. For sufficiently small ring codes the oracle can instead
+exhaustively check all message pairs; even then, internal distance, cardinality,
+and the spherical embedding remain separate obligations.
+
+`recipes/dgls96_binary_translate_probe.json` applies this search to the Z8
+Golay generator in the Duursma–Greferath–Litsyn–Schmidt construction. Its
+output shifts `u` have even parity in every four-bit block. XORing `u` with a
+fixed one-bit-per-block vector gives a prospective third layer: its distance to
+the unshifted even-block layer is automatically at least 24, but its distance
+to the existing odd-block layer still requires a complete proof. The local
+oracle only finds counterexamples; it does not supply that proof. No record
+follows from running the recipe. The search receipt independently replays its
+negative witnesses and any explicitly exhaustive cross checks, while remaining
+unverified as a spherical construction.
+
+Candidate and reference ring offsets may be specified separately. This lets the
+search split a ring code into affine pieces before applying binary shifts,
+without incorrectly treating ring offsets as XOR shifts. For example,
+`recipes/dgls96_index_two_probe.json` considers one 2^35-word subcode against
+both affine halves of the original 2^36-word code. If a valid extra shifted
+half-layer were ever independently proved compatible with the two existing
+full layers, the five half-layers would contain 171,798,691,840 words. The
+recipe searches for such a shift; it does not establish that one exists.
+
+`recipes/dgls96_mixed_parity_probe.json` removes the even-block restriction
+and tests arbitrary binary shifts of the index-two subcode against all four
+existing affine half-layers. This is a wider search, not an assertion that an
+additional layer exists.
