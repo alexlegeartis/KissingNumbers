@@ -22,3 +22,16 @@ The next shell contains 1,664 lines with 14 seed-line conflicts. The following e
 A positive incumbent is independently checked in exact integer arithmetic and saved under `cache/`. Search failure or a solver timeout is not a theorem. The capacity proof above is complete only for the stated 4/8 classes, independently of this search.
 
 The verifier also checks every 14-conflict candidate with either sign. Each has 11 forced deletions at which compatible eight-conflict candidates cannot attain their previous local capacity; any two compatible 14-conflict points share at most two of these witnesses. For h = 1, 2, 3, 4, 5 such points, inclusion–exclusion gives at least 11, 20, 27, 32, 35 witness incidences, respectively. Each missing cheap point accounts for at most eight such incidences, so the cheap class loses at least 2, 3, 4, 4, 5 points. The graph connecting compatible pairs with two shared witnesses is also triangle-free. Mantel’s bound gives at most nine such pairs among any six candidates, so their witness union has at least 66 − 15 − 9 = 42 points and forces a cheap deficit of at least six. Hence an improvement in the 4/8/14 shell requires at least seven 14-conflict candidate points. For seven or more, the cheap deficit is at least six. The pointwise search incorporates both exact restrictions.
+
+## Unequal-norm mixed-shell search
+
+To leave the integer norm-8 shell, the engine also enumerates norm-3 vectors of shape (1,1,1) and norm-18 vectors of shape (3,2,2,1), with signs and coordinate placements. Source compatibility is checked without floating-point normalization. Around this seed, there are 112 norm-3 candidates with three blockers, 3,936 norm-18 candidates with four blockers, and 3,456 norm-18 candidates with nine blockers.
+
+`multinorm_verify.py` exhaustively checks the exact local weighted capacity for the first two classes together with the four-conflict norm-8 candidates. It follows that those cheap classes alone cannot increase the count, even with pointwise asymmetric exchanges. `multinorm_search.py` includes all three cheap classes and the nine-conflict norm-18 points. It optimizes additions and deletions jointly, uses the proved capacity cuts, and checks a positive incumbent by the exact squared inequality for every pair, including unequal norms.
+
+    python research/e7_frame_exchange_20261105/verify.py --export
+    python research/e7_frame_exchange_20261105/multinorm_prepare.py
+    python research/e7_frame_exchange_20261105/multinorm_verify.py
+    E7_SEARCH_SECONDS=300 python research/e7_frame_exchange_20261105/multinorm_search.py
+
+A timeout or absence of a solver incumbent is not a proof of optimality. This finite search does not cover other norms or shapes.
