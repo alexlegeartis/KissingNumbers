@@ -144,3 +144,12 @@ pairs; this does not rule out other maps or subspaces. Run from this directory
 with `oracle_linear` compiled; `LINEAR_SPACES`, `LINEAR_ROUNDS`, and
 `LINEAR_WORKERS` control the workload. Per-subspace logs preserve failures and
 unresolved proposals must still be certified.
+
+For 92D, the optional fifth argument `tail-odd` forces the first four blocks
+to stay even and all other 20 blocks to become odd. Every cross pair then has
+at least 20 bit differences automatically; a violation has total distance 20
+or 22. For example, `search.py 5 4 0 0 tail-odd` uses separate choices on
+the first four blocks and a shared choice on the remaining blocks, while
+`search.py 24 4 0 0 tail-odd` permits all 24 choices independently. Set
+`SECTION_RESTARTS` to control randomized oracle effort. These choices are
+still searches; no compatibility is inferred from the parity floor alone.
