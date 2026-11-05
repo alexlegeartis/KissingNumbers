@@ -3,7 +3,7 @@ import argparse,itertools,json,pathlib,sys
 ROOT=pathlib.Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT))
 from discovery.core import RunContext
 from discovery.engines.block_isometry_search import search_block_isometries
-p=argparse.ArgumentParser();p.add_argument('--seconds',type=float,default=60);p.add_argument('--rounds',type=int,default=8);p.add_argument('--output',type=pathlib.Path);args=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--seconds',type=float,default=60);p.add_argument('--rounds',type=int,default=8);p.add_argument('--output',type=pathlib.Path);p.add_argument('--mixed',action='store_true');args=p.parse_args()
 g=[7,1,4,4,2,7,3,3,4,7,2,1];G=[[0]*24 for _ in range(12)]
 for i in range(12):
  for j,x in enumerate(g):G[i][i+j]=x
@@ -22,7 +22,12 @@ for perm in itertools.permutations(range(4)):
    v=pairs[perm[i]];f=(flips>>i)&1;mp[a]=v[f];mp[b]=v[1-f]
   menu.append([mp[x] for x in gray])
 assert len({tuple(x) for x in menu})==384
-params={'generator':G,'modulus':8,'bit_width':4,'block_map':gray,'map_menu':menu,'groups':list(range(24)),'references':[[0]*24 for _ in range(8)],'reference_offsets':offsets,'minimum_distance':24,'rounds':args.rounds,'oracle_steps':500,'exact_pair_limit':4096,'seed':9618,'seconds':args.seconds}
+references=[[0]*24 for _ in range(8)]
+if args.mixed:
+ menu += [[x^1 for x in row] for row in menu]
+ references += [[1]*24 for _ in range(8)]
+ offsets += offsets[:]
+params={'generator':G,'modulus':8,'bit_width':4,'block_map':gray,'map_menu':menu,'groups':list(range(24)),'references':references,'reference_offsets':offsets,'minimum_distance':24,'rounds':args.rounds,'oracle_steps':500,'exact_pair_limit':4096,'seed':9618,'seconds':args.seconds}
 ctx=RunContext(ROOT,{'max_trials':max(200,args.rounds),'solver_seconds':max(args.seconds,1),'max_rank_work':1000000000})
 r=search_block_isometries(params,ctx);print(json.dumps({'status':r['status'],'oracle':r['oracle'],'witnesses':len(r['rejection_witnesses']),'unresolved_candidates':len(r['candidates']),'scope':r['scope']},indent=2))
 if args.output:args.output.write_text(json.dumps(r))

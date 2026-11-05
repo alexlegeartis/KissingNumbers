@@ -77,7 +77,10 @@ def compare_facts(claimed,computed):
 
 def verify_artifact(artifact,context=None):
     context=context or RunContext(Path('.'))
-    if artifact.kind=='quadratic_spherical_code':
+    if artifact.kind=='support_code':
+        from .engines.support_recombination import verify_code
+        report=verify_code(artifact,context)
+    elif artifact.kind=='quadratic_spherical_code':
         from .engines.signed_layers import verify_artifact as verify_signed_layers
         report=verify_signed_layers(artifact,context)
     elif artifact.kind=='spherical_code' and artifact.data.get('backend')=='exact_integer_orbit':
@@ -136,6 +139,9 @@ def verify_artifact(artifact,context=None):
     elif artifact.kind=='quadratic_projector_code':
         from .engines.quadratic_projector import verify_artifact as verify_quadratic_projector
         report=verify_quadratic_projector(artifact,context)
+    elif artifact.kind=='search_result' and artifact.data.get('backend')=='support_recombination':
+        from .engines.support_recombination import verify_search as verify_support_search
+        report=verify_support_search(artifact,context)
     elif artifact.kind=='search_result' and artifact.data.get('backend')=='quadratic_exchange':
         from .engines.quadratic_exchange import verify_search as verify_quadratic_exchange
         report=verify_quadratic_exchange(artifact,context)

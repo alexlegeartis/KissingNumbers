@@ -23,3 +23,8 @@ Any candidate needs an independent exhaustive or mathematically sufficient
 cross-distance certificate, plus current literature comparison, before a claim.
 
     OPENBLAS_NUM_THREADS=1 python research/dgls96_index8_20261105/run.py --seconds 60 --rounds 8
+
+With `--mixed`, each block may also map into odd-parity words, for 768 maps
+per block. This searches a broader family, and consequently both C and v+C
+must be checked as reference layers. The oracle samples both families and all
+compatibility remains unproved until independently certified.
