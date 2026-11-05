@@ -11,7 +11,7 @@ def bad(s,v,t,w):
 assert all(valid(*x) for x in new+removed)
 Fset=set(F);Eset=set(E)
 for s,w in removed:assert (s in Fset and w.bit_count()%2==0) or (s,w) in Eset
-for s,w in new:assert s not in Fset and all(s!=t for t,v in E)
+for s,w in new:assert not(s in Fset and w.bit_count()%2==0) and (s,w) not in Eset
 assert all(not bad(*a,*b) for a,b in itertools.combinations(new,2))
 rm=set(removed)
 for s,v in new:

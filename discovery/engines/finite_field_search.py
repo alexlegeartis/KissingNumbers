@@ -57,11 +57,15 @@ def affine_flats(m,k,context):
 
 
 def generate(inputs,params,context):
-    check_params(params,('m','modulus','flat_rank','terms','exponents','coefficient_options','translations','seed_supports','max_seed_conflicts','dimension'))
+    check_params(params,('m','modulus','flat_rank','terms','exponents','coefficient_options','translations','seed_supports','max_seed_conflicts','dimension','coordinate_maps'))
     if inputs:raise ValueError('finite-field generation takes no inputs')
     m=params.get('m');mod=params.get('modulus');q=_field(m,mod);k=params.get('flat_rank',3)
     d=params.get('dimension',q);integer(d,'dimension');context.limit('max_dimension',d)
     if d<q:raise ValueError('dimension cannot be smaller than the field coordinate set')
+    maps=params.get('coordinate_maps',[list(range(q))])
+    if not isinstance(maps,list) or not maps or any(not isinstance(a,list) or len(a)!=q or any(type(x) is not int or not 0<=x<d for x in a) or len(set(a))!=q for a in maps):raise ValueError('coordinate maps must be injections into the ambient dimension')
+    if len({tuple(a) for a in maps})!=len(maps):raise ValueError('duplicate coordinate maps')
+    context.limit('max_trials',len(maps))
     terms=params.get('terms');exponents=params.get('exponents');options=params.get('coefficient_options')
     if terms is not None:
         if exponents is not None or options is not None or not isinstance(terms,list) or not terms:raise ValueError('provide terms or a coefficient grid')
@@ -92,13 +96,14 @@ def generate(inputs,params,context):
     if not isinstance(seed,list) or any(type(x) is not int or x<0 or x>>d or x.bit_count()!=(1<<k) for x in seed) or len(set(seed))!=len(seed):raise ValueError('invalid seed supports')
     maxconf=params.get('max_seed_conflicts',len(seed))
     if type(maxconf) is not int or maxconf<0:raise ValueError('max_seed_conflicts must be nonnegative')
-    flats=affine_flats(m,k,context);context.limit('max_rank_work',len(flats)*(q if tr else 1)*len(permutations));images=set();count=0
+    flats=affine_flats(m,k,context);context.limit('max_rank_work',len(flats)*(q if tr else 1)*len(permutations)*len(maps));images=set();count=0
     for perm in permutations:
         for S in flats:
             img=[perm[x] for x in S]
             for t in (range(q) if tr else (0,)):
-                images.add(sum(1<<(x^t) for x in img));count+=1
-                context.limit('max_codewords',len(images))
+                for mapping in maps:
+                    images.add(sum(1<<mapping[x^t] for x in img));count+=1
+                    context.limit('max_codewords',len(images))
     context.limit('max_rank_work',len(images)*(len(seed)+1));seedset=set(seed);found=[]
     for mask in images:
         if mask not in seedset and sum((mask&old).bit_count()>(1<<k)//2 for old in seed)<=maxconf:found.append(mask)
@@ -133,20 +138,28 @@ def exchange(inputs,params,context):
     parity=params.get('parities',[0,1])
     if not isinstance(parity,list) or not parity or len(set(parity))!=len(parity) or any(type(v) is not int or v not in (0,1) for v in parity):raise ValueError('parities must select 0 and/or 1')
     limit=params.get('candidate_limit',len(pool));integer(limit,'candidate_limit');C=pool[:limit]
-    if any(s in set(F) or any(s==t for t,w in E) for s in C):raise ValueError('candidate supports overlap the source support catalog')
-    S=[]
-    for s in C:S.extend((s,v) for v in _lines(s,parity))
+    # A new line may reuse an existing support. Exclude exact source lines,
+    # not the entire support: the other sign parity can still be searched.
+    Fset=set(F);Eset=set(E);S=[]
+    for s in C:S.extend((s,v) for v in _lines(s,parity) if not(s in Fset and v.bit_count()%2==0) and (s,v) not in Eset)
     M=len(S);context.limit('max_codewords',M);context.limit('max_pairs',M*(M-1)//2);context.limit('max_gram_entries',M*M)
     sec=params.get('seconds',1)
     if type(sec) not in (int,float) or not isfinite(sec) or sec<=0:raise ValueError('seconds must be positive')
     context.limit('solver_seconds',sec)
-    old={};a=[];b=[]
-    for i,(s,v) in enumerate(S):
+    # Preflight the actual support-level source scans and reuse their line
+    # lists across all signs in a support. This avoids repeated family work.
+    context.limit('max_rank_work',len(C)*(len(F)+len(E))+M*(M-1)//2)
+    groups={}
+    for s in C:
         oldlines=[]
         for t in F:
             if (s&t).bit_count()>4:oldlines.extend((t,w) for w in _lines(t,[0]))
         oldlines.extend((t,w) for t,w in E if (s&t).bit_count()>4)
-        for line in oldlines:
+        groups[s]=oldlines
+    context.limit('max_rank_work',len(C)*(len(F)+len(E))+sum(sum(1 for t,v in S if t==s)*len(groups[s]) for s in C)+M*(M-1)//2)
+    old={};a=[];b=[]
+    for i,(s,v) in enumerate(S):
+        for line in groups[s]:
             if _bad(s,v,*line):
                 if line not in old:old[line]=len(old)
                 a.append(i);b.append(old[line])

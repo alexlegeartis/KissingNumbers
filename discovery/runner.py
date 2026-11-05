@@ -9,7 +9,7 @@ import time
 from .core import Artifact,RunContext,digest,json_value
 from .certification import verify_artifact
 
-MODULES=('groups','rings','geometry','cosets','layers','lattices','gluing','stabilizers','selection','signed_layers','coset_search','binary_translate_search','block_isometry_search','signed_exchange','ring_orbit_search','group_seed_search','coset_group_search','mixed_group_search','partial_group_assemblies','quadratic_group_assemblies','cavity_repacking','construction_search','exact_orbits','characters','body_heads','partial_orbits','contact_reflections','finite_field_search')
+MODULES=('groups','rings','geometry','cosets','layers','lattices','gluing','stabilizers','selection','signed_layers','coset_search','binary_translate_search','block_isometry_search','signed_exchange','ring_orbit_search','group_seed_search','coset_group_search','mixed_group_search','partial_group_assemblies','quadratic_group_assemblies','cavity_repacking','construction_search','exact_orbits','characters','body_heads','partial_orbits','contact_reflections','finite_field_search','spectral_graph_search')
 
 
 def input_kinds_match(inputs,expected):

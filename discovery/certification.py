@@ -124,6 +124,9 @@ def verify_artifact(artifact,context=None):
     elif artifact.kind in ('binary_code','ring_code','polynomial_pair'):
         from .engines.rings import verify_artifact as verify_ring
         report=verify_ring(artifact,context)
+    elif artifact.kind=='quadratic_projector_code':
+        from .engines.quadratic_projector import verify_artifact as verify_quadratic_projector
+        report=verify_quadratic_projector(artifact,context)
     elif artifact.kind=='search_result' and artifact.data.get('backend')=='cavity_repacking':
         from .engines.cavity_repacking import verify_search
         report=verify_search(artifact,context)

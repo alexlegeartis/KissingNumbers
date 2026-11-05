@@ -38,6 +38,15 @@ class FiniteFieldSearchTests(unittest.TestCase):
   with self.assertRaisesRegex(ValueError,'provide terms or'):generate([],p,self.ctx)
   p={'m':3,'modulus':11,'flat_rank':2,'exponents':[1],'coefficient_options':[[0,1,2]]}
   with self.assertRaisesRegex(ValueError,'max_trials'):generate([],p,RunContext(Path('.'),{'max_trials':2}))
+ def test_sparse_coordinate_embeddings_in_96d(self):
+  p={'m':3,'modulus':11,'flat_rank':3,'terms':[[1,1]],'dimension':96,'coordinate_maps':[list(range(8)),list(range(88,96))]}
+  r=generate([],p,self.ctx);self.assertEqual(set(r.data['supports']),{(1<<8)-1,((1<<8)-1)<<88})
+  p['coordinate_maps']=[[0]*8]
+  with self.assertRaisesRegex(ValueError,'injections'):generate([],p,self.ctx)
+ def test_reuses_exceptional_support_without_readding_its_line(self):
+  p={'m':4,'modulus':19,'flat_rank':3,'terms':[[1,1]]};pool=generate([],p,self.ctx);s=pool.data['supports'][0]
+  r=exchange([pool],{'seed_supports':[],'exceptional_lines':[[s,0]],'parities':[0],'candidate_limit':1,'seconds':5},self.ctx)
+  self.assertEqual(r.facts['gain_lines'],63);self.assertNotIn([s,0],r.data['candidate_lines'])
  def test_registry(self):
   ops,_=registry();self.assertIn('finite_field.support_pool',ops);self.assertIn('finite_field.octad_exchange',ops)
 if __name__=='__main__':unittest.main()
