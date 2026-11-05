@@ -36,3 +36,9 @@ Generated graph and proposal files stay in `cache/` and need substantial memory.
 The known seed was exactly replayed, and 2,000 random same/opposite-cap orbit
 pairs were compared against direct 8×8 integer Gram checks. Neither test proves
 that the search will find an improvement.
+
+`walk.py` also permits neutral changes and a temporary loss of one orbit while
+jointly editing both caps, so later neighborhoods are not tied to the initial
+seed. It does not permit further losses and remains a bounded heuristic. Run
+with `EVAL3_EPOCHS` and `EVAL3_WALK_TRIALS` set as needed; independently
+replay any `cache/walk_POTENTIAL.npz` with the same `verify.py` command.
