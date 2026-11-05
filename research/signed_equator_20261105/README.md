@@ -44,3 +44,15 @@ The expected final histograms by blocker count 0 through 4 are `0,866,24,0,384` 
 `search_local.py` uses the same denominator-5 candidate families in adaptive individual-point neighborhoods. It seeds only from the non-pure candidates and applies the exact source-category saturation cuts, while allowing coordinated replacements in every pure family. Its output `candidate_local_den5.npz` must pass `verify_candidate.py`; as with the global searches, a timeout or failure to improve proves no global bound.
 
     python research/signed_equator_20261105/search_local.py --trials 1000 --seconds 3
+
+## Complete six-blocker field scan and radical extensions
+
+The same full 505,844,378-vector field shell has also been scanned with a six-blocker cutoff. Its partition histograms, in order 0 through 6, are `0,866,24,0,384,132,1464` and `0,288,240,0,960,1044,1720`. In addition to the ≤4-blocker points described above, the complete output contains 360 non-source points outside the saturated head/equator/axis families: 216 have five blockers and 144 have six, and all 360 have nonzero √3 components. `low6_points.npz` stores all 7,122 output points and `verify_low6.py` checks all norms, every stored source blocker, the classification and inclusion of the 360 radical candidates in `extras_complete_den5.npy`.
+
+The full expanded denominator-five search has 476 extra points, including the axes, the 360 radical points, previously sampled field points and 50 rational Householder-image points. `search_complete6.py` is the global mixed model with a strict gain target; `search_local_complete6.py` is its individual-point neighborhood counterpart. Both retain the pure-family saturation cuts. Verify any output with `verify_candidate.py`.
+
+    python research/signed_equator_20261105/verify_low6.py
+    python research/signed_equator_20261105/search_complete6.py --build-only
+    python research/signed_equator_20261105/search_local_complete6.py --trials 1000 --seconds 3
+
+To rerun the complete ≤6 scan, prepare `source.bin` as above and compile `scan6.cpp`; run partitions 0 and 1. As before, saved output verification is separate from the time-consuming completeness rerun. No new lower bound is claimed.

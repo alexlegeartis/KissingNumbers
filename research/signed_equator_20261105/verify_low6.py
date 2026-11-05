@@ -1,0 +1,8 @@
+from pathlib import Path
+import numpy as np,collections
+root=Path(__file__).parent;z=np.load(root/'source.npz');X=np.c_[z['rational'],z['radical']].astype(np.int64);z=np.load(root/'low6_points.npz');Q=z['Q'].astype(np.int64);B=z['blockers'];part=z['part'];assert len(Q)==7122 and np.array_equal(np.bincount(part,minlength=2),[2870,4252]);assert np.all((Q[:,:13]**2+3*Q[:,13:]**2).sum(1)==16) and np.all((Q[:,:13]*Q[:,13:]).sum(1)==0)
+for st in range(0,len(Q),128):
+ p=Q[st:st+128,:13]@X[:,:13].T+3*Q[st:st+128,13:]@X[:,13:].T-8;q=Q[st:st+128,:13]@X[:,13:].T+Q[st:st+128,13:]@X[:,:13].T;bad=((q==0)&(p>0))|((q>0)&((p>=0)|((p<0)&(3*q*q>p*p))))|((q<0)&(p>0)&(p*p>3*q*q))
+ for i,row in enumerate(bad):assert set(map(int,np.flatnonzero(row)))==set(map(int,B[st+i][B[st+i]!=65535]))
+source={tuple(v) for v in X};old=np.array([tuple(v) in source for v in Q]);assert old.sum()==1154;a=Q[:,:13];b=Q[:,13:];z=(b==0).all(1);heads=z&(np.abs(a[:,:12])==1).all(1)&(np.abs(a[:,12])==2);eq=z&(a[:,12]==0)&(np.count_nonzero(a[:,:12],axis=1)==4)&np.isin(a[:,:12],[-2,0,2]).all(1);axes=z&(np.count_nonzero(a,axis=1)==1)&(np.abs(a)==4).any(1);extra=~old&~heads&~eq&~axes;assert extra.sum()==360 and np.all((b[extra]!=0).any(1));assert collections.Counter((B[extra]!=65535).sum(1))=={5:216,6:144}
+T=np.load(root/'extras_complete_den5.npy').astype(np.int64);assert T.shape==(476,26) and np.all((T[:,:13]**2+3*T[:,13:]**2).sum(1)==400) and np.all((T[:,:13]*T[:,13:]).sum(1)==0);pool={tuple(v) for v in T};assert all(tuple(5*v) in pool for v in Q[extra]);print('Verified all 7,122 shell points, blocker lists and all 360 radical extras in the denominator-5 pool.')
