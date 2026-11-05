@@ -544,7 +544,7 @@ def _summary(db):
             candidate = output.get("candidate_facts", {})
             candidate_dimension = candidate.get("dimension", output["facts"].get("dimension", output.get("candidate_ambient_dimension")))
             candidate_count = candidate.get("cardinality")
-            if output["kind"] in ("spherical_code", "implicit_spherical_code", "gram_spherical_code", "quadratic_spherical_code", "search_result") and type(candidate_dimension) is int and type(candidate_count) is int:
+            if output["kind"] in ("spherical_code", "implicit_spherical_code", "gram_spherical_code", "quadratic_spherical_code", "weighted_quadratic_spherical_code", "search_result") and type(candidate_dimension) is int and type(candidate_count) is int:
                 key = str(candidate_dimension)
                 if key not in candidate_best or candidate_count > candidate_best[key]["cardinality"]:
                     candidate_best[key] = {"dimension": candidate_dimension, "cardinality": candidate_count,
@@ -552,7 +552,7 @@ def _summary(db):
             diagnostics = output.get("search_diagnostics", {})
             if diagnostics:
                 limited_outputs.append({"program_id": row["id"], "output": name, "diagnostics": diagnostics})
-            if output["verification_status"] != "exact" or output["kind"] not in ("spherical_code", "implicit_spherical_code", "gram_spherical_code", "quadratic_spherical_code"):
+            if output["verification_status"] != "exact" or output["kind"] not in ("spherical_code", "implicit_spherical_code", "gram_spherical_code", "quadratic_spherical_code", "weighted_quadratic_spherical_code"):
                 continue
             facts = output["facts"]
             dimension, count = facts.get("dimension"), facts.get("cardinality")

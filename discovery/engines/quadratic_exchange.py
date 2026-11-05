@@ -14,11 +14,18 @@ def _points(p,context):
  if not all(isinstance(x,list) and x for x in (A,B,C,D)) or len(A)!=len(B) or len(C)!=len(D) or not isinstance(A[0],list) or not A[0]:raise ValueError('nonempty paired coefficient matrices required')
  n=len(A);m=len(C);d=len(A[0]);context.limit('max_dimension',d);context.limit('max_materialized_points',n+m);context.limit('max_codewords',m)
  if any(not isinstance(v,list) or len(v)!=d or any(type(x) is not int for x in v) for v in A+B+C+D):raise ValueError('integer coefficient matrices must have common width')
- mx=max(abs(x) for row in A+B+C+D for x in row);bound=4*d*mx*mx
- if 3*(8*bound*bound)**2>=2**62:raise ValueError('exact vectorized comparisons exceed safe integer range')
+ # Both real embeddings have the same norm when the radical norm part
+ # vanishes. Cauchy–Schwarz then bounds |P| and |sqrt(3) Q| by the
+ # larger squared norm, and the squared sign tests by 243*norm^4.
+ norms=[]
+ for U,V in ((A,B),(C,D)):
+  for a,b in zip(U,V):
+   if sum(x*y for x,y in zip(a,b))!=0:raise ValueError('positive rational squared norm required')
+   nrm=sum(x*x+3*y*y for x,y in zip(a,b))
+   if nrm<=0:raise ValueError('positive rational squared norm required')
+   norms.append(nrm)
+ if 243*max(norms)**4>=2**62:raise ValueError('exact vectorized comparisons exceed safe integer range')
  A,B,C,D=(np.asarray(v,dtype=np.int64) for v in (A,B,C,D))
- for a,b in ((A,B),(C,D)):
-  if np.any(np.sum(a*b,axis=1)!=0) or np.any(np.sum(a*a+3*b*b,axis=1)<=0):raise ValueError('positive rational squared norm required')
  return A,B,C,D
 
 

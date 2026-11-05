@@ -107,7 +107,7 @@ def main(argv=None):
         report=verify_artifact(artifact,ctx)
         if args.command=='verify':print(json.dumps(report.to_dict(),indent=2));return 0 if report.status=='exact' else 2
         if report.status!='exact':raise ValueError('Only independently exact-certified configurations may be compared')
-        if artifact.kind not in ('spherical_code','implicit_spherical_code','gram_spherical_code','quadratic_spherical_code'):
+        if artifact.kind not in ('spherical_code','implicit_spherical_code','gram_spherical_code','quadratic_spherical_code','weighted_quadratic_spherical_code'):
             raise ValueError('Compare requires a spherical configuration; use geometry.sign_embed for a binary code')
         facts=report.details.get('facts',report.details);d=facts.get('dimension');count=facts.get('cardinality')
         catalog=read(args.catalog);rows=catalog.get('comparisons',[])

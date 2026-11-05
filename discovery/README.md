@@ -470,3 +470,17 @@ Whole-family construction search: `search.support_recombination` applies supplie
 `search.binary_grouped_cosets` constructs new subgroups in a binary quotient and searches for multiple compatible translates, allowing genuinely different nonlinear coset unions. It supports bounded quotients up to 21 bits. `codes.certify_binary_grouped_cosets` independently checks any proposal by enumerating its kernel span and cross-coset differences.
 
 The optional `coordinate_equalities` parameter specifies groups of coordinate indices that must be equal in every word of the sampled subcode. These linear constraints select a structured subcode of the parent, so a complete quotient search can seek nonlinear unions of its cosets. The constraints must have the requested codimension. A failed or timed-out search does not rule out other subcodes or constructions.
+
+Generic algebraic reflection discovery: `search.rational_reflection_exchange`
+constructs exact rational reflections of supplied integer directions in supplied
+axes under any positive integer diagonal metric, ranks candidates by exact
+source conflicts, and invokes the projective exchange optimizer.
+`search.quadratic_reflection_exchange` does the same over Q(sqrt(3)) for
+vectors and axes with rational squared norms. For a weighted quadratic metric,
+it internally expands each coordinate into identical copies, then compresses
+and certifies the output in its original weighted ambient dimension using
+`geometry.certify_weighted_quadratic_reflection`. Both operators return finite-pool
+search proposals, and their certifiers independently check the full resulting
+configuration. Candidate and
+axis limits, pair budgets, integer overflow checks, and solver limits restrict
+practical scaling; neither operator guarantees rediscovery or a new record.

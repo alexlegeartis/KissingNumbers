@@ -1,0 +1,2 @@
+import pathlib,runpy,sys,numpy as np
+root=pathlib.Path(__file__).resolve().parents[2];sys.path.insert(0,str(root));saved=sys.argv;sys.argv=['verify.py'];v=runpy.run_path('research/mixed_tier17_order4_20261105/verify.py');sys.argv=saved;X=v['Y'].astype(np.int16);assert X.shape==(5730,17);pathlib.Path('research/generic_reflection_campaign_20261105/cache').mkdir(parents=True,exist_ok=True);np.savez_compressed('research/generic_reflection_campaign_20261105/cache/seed17.npz',X=X,g=np.r_[np.ones(16,np.int64),2]);print('materialized verified 17D seed',len(X))

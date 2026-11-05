@@ -139,6 +139,9 @@ def verify_artifact(artifact,context=None):
     elif artifact.kind=='galois_kerdock_code':
         from .engines.galois_kerdock import verify_artifact as verify_galois_kerdock
         report=verify_galois_kerdock(artifact,context)
+    elif artifact.kind=='weighted_quadratic_spherical_code':
+        from .engines.rational_reflection_search import verify_weighted
+        report=verify_weighted(artifact,context)
     elif artifact.kind=='quadratic_projector_code':
         from .engines.quadratic_projector import verify_artifact as verify_quadratic_projector
         report=verify_quadratic_projector(artifact,context)
@@ -154,6 +157,9 @@ def verify_artifact(artifact,context=None):
     elif artifact.kind=='search_result' and artifact.data.get('backend')=='support_recombination':
         from .engines.support_recombination import verify_search as verify_support_search
         report=verify_support_search(artifact,context)
+    elif artifact.kind=='search_result' and artifact.data.get('backend')=='weighted_quadratic_reflection':
+        from .engines.rational_reflection_search import verify_search as verify_weighted_reflection
+        report=verify_weighted_reflection(artifact,context)
     elif artifact.kind=='search_result' and artifact.data.get('backend')=='quadratic_exchange':
         from .engines.quadratic_exchange import verify_search as verify_quadratic_exchange
         report=verify_quadratic_exchange(artifact,context)
