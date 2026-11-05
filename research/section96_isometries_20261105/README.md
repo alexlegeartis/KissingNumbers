@@ -232,3 +232,12 @@ The implementations were cross-checked on two targets. A sample of 1,000
 uniform mixed-parity targets all had conflicts. This is a finite sample, not a
 covering theorem. A certified target yields one 4,096-point orbit compatible
 with the source section, but on its own still falls below the repository record.
+
+`exact_count_decoder.cpp` uses the same complete 1,638,400-pattern enumeration
+but counts all source conflicts rather than stopping at the first. The separate
+`anneal_targets.py` searches mixed-parity targets by minimizing that exact
+count. Compile it as `exact_count_decoder` and run `python anneal_targets.py
+920201`; a zero count must still be replayed with `verify_exact_target.py`.
+For context, 1,000 uniformly sampled targets had exact conflict counts between
+525 and 649; that sample is not a deterministic lower bound or a covering
+proof. A hole orbit alone still does not beat the current 92D record.
