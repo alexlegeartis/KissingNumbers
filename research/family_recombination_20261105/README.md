@@ -30,3 +30,7 @@ lines while selecting complete octad families. It optimizes 128 points per
 new support against the loss of two points per removed line, targeting a net
 increase of at least 100. The scoring is specific to this signed construction;
 the independent verifier checks all remaining layers and the actual point count.
+The verifier also checks a stronger matching for every transformed support,
+without filtering against exceptional lines. Thus even allowing arbitrary
+exception-line deletions cannot produce a net gain from one transformed family
+alone. Multi-family combinations and partial fibers remain open.
