@@ -57,7 +57,7 @@ def affine_flats(m,k,context):
 
 
 def generate(inputs,params,context):
-    check_params(params,('m','modulus','flat_rank','terms','exponents','coefficient_options','translations','seed_supports','max_seed_conflicts','dimension','coordinate_maps'))
+    check_params(params,('m','modulus','flat_rank','terms','exponents','coefficient_options','translations','seed_supports','max_seed_conflicts','dimension','coordinate_maps','allow_nonpermutations'))
     if inputs:raise ValueError('finite-field generation takes no inputs')
     m=params.get('m');mod=params.get('modulus');q=_field(m,mod);k=params.get('flat_rank',3)
     d=params.get('dimension',q);integer(d,'dimension');context.limit('max_dimension',d)
@@ -75,7 +75,9 @@ def generate(inputs,params,context):
         count=1
         for v in options:count*=len(v)
         context.limit('max_trials',count);family=[[list(z) for z in zip(coeff,exponents)] for coeff in product(*options)];strict=False
-    permutations=[];seenperm=set();invalid=0
+    allow_nonperm=params.get('allow_nonpermutations',False)
+    if type(allow_nonperm) is not bool:raise ValueError('allow_nonpermutations must be boolean')
+    maps_field=[];seenperm=set();invalid=0;permutation_count=0
     for terms in family:
         for term in terms:
             if not isinstance(term,list) or len(term)!=2 or any(type(x) is not int for x in term) or not(0<=term[0]<q) or not(0<=term[1]<=2*q):raise ValueError('invalid polynomial term')
@@ -84,22 +86,28 @@ def generate(inputs,params,context):
             y=0
             for a,e in terms:y^=_mul(a,_power(x,e,m,mod),m,mod)
             perm.append(y)
-        if len(set(perm))!=q:
+        isperm=len(set(perm))==q
+        if not isperm:
             invalid+=1
-            if strict:raise ValueError('polynomial is not a permutation')
-            continue
-        if tuple(perm) not in seenperm:seenperm.add(tuple(perm));permutations.append(perm)
-    if not permutations:raise ValueError('no permutation polynomial found')
+            if not allow_nonperm:
+                if strict:raise ValueError('polynomial is not a permutation')
+                continue
+        if tuple(perm) not in seenperm:
+            seenperm.add(tuple(perm));maps_field.append(perm)
+            permutation_count+=int(isperm)
+    if not maps_field:raise ValueError('no admissible polynomial map found')
     tr=params.get('translations',True)
     if type(tr) is not bool:raise ValueError('translations must be boolean')
     seed=params.get('seed_supports',[])
     if not isinstance(seed,list) or any(type(x) is not int or x<0 or x>>d or x.bit_count()!=(1<<k) for x in seed) or len(set(seed))!=len(seed):raise ValueError('invalid seed supports')
     maxconf=params.get('max_seed_conflicts',len(seed))
     if type(maxconf) is not int or maxconf<0:raise ValueError('max_seed_conflicts must be nonnegative')
-    flats=affine_flats(m,k,context);context.limit('max_rank_work',len(flats)*(q if tr else 1)*len(permutations)*len(maps));images=set();count=0
-    for perm in permutations:
+    flats=affine_flats(m,k,context);context.limit('max_rank_work',len(flats)*(q if tr else 1)*len(maps_field)*len(maps));images=set();count=0
+    collapsed=0
+    for perm in maps_field:
         for S in flats:
             img=[perm[x] for x in S]
+            if len(set(img))!=len(S):collapsed+=1;continue
             for t in (range(q) if tr else (0,)):
                 for mapping in maps:
                     images.add(sum(1<<mapping[x^t] for x in img));count+=1
@@ -107,7 +115,7 @@ def generate(inputs,params,context):
     context.limit('max_rank_work',len(images)*(len(seed)+1));seedset=set(seed);found=[]
     for mask in images:
         if mask not in seedset and sum((mask&old).bit_count()>(1<<k)//2 for old in seed)<=maxconf:found.append(mask)
-    result={'backend':'finite_field_support_pool','parameters':params,'supports':sorted(found),'flats':len(flats),'images_examined':count,'unique_images':len(images),'polynomials_examined':len(family),'permutations':len(permutations),'nonpermutations':invalid,'scope':'algebraic support proposals, not a spherical code'}
+    result={'backend':'finite_field_support_pool','parameters':params,'supports':sorted(found),'flats':len(flats),'images_examined':count,'unique_images':len(images),'polynomials_examined':len(family),'maps_considered':len(maps_field),'permutations':permutation_count,'nonpermutations':invalid,'collapsed_flats':collapsed,'scope':'algebraic support proposals, not a spherical code'}
     return Artifact('search_result',result,{},Verification('unverified','finite-field support generation; geometric assembly remains to be checked'))
 
 

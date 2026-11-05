@@ -47,6 +47,11 @@ class FiniteFieldSearchTests(unittest.TestCase):
   p={'m':4,'modulus':19,'flat_rank':3,'terms':[[1,1]]};pool=generate([],p,self.ctx);s=pool.data['supports'][0]
   r=exchange([pool],{'seed_supports':[],'exceptional_lines':[[s,0]],'parities':[0],'candidate_limit':1,'seconds':5},self.ctx)
   self.assertEqual(r.facts['gain_lines'],63);self.assertNotIn([s,0],r.data['candidate_lines'])
+ def test_nonpermutation_can_map_injective_local_flats(self):
+  p={'m':3,'modulus':11,'flat_rank':2,'terms':[[1,3],[1,5]],'allow_nonpermutations':True}
+  r=generate([],p,self.ctx);self.assertEqual(r.data['permutations'],0);self.assertEqual(r.data['nonpermutations'],1);self.assertEqual(r.data['collapsed_flats'],12);self.assertEqual(len(r.data['supports']),2);self.assertTrue(all(s.bit_count()==4 for s in r.data['supports']))
+  p['allow_nonpermutations']=False
+  with self.assertRaisesRegex(ValueError,'not a permutation'):generate([],p,self.ctx)
  def test_registry(self):
   ops,_=registry();self.assertIn('finite_field.support_pool',ops);self.assertIn('finite_field.octad_exchange',ops)
 if __name__=='__main__':unittest.main()
