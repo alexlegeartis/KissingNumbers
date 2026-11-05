@@ -66,3 +66,19 @@ specify different subcodes; all have the same conditional section cardinality
 under the triangular-generator argument. For s=6 the corresponding potential
 counts are 22,083,010,560 in 92D and 12,421,693,440 in 90D, still contingent
 on finding and exactly verifying cross-compatibility.
+
+## A common symmetry for partial-layer exchanges
+
+There is a common subgroup even when T differs from block to block. The 4C
+subcode has 2^12 words. Adding a word of 4C complements selected four-bit
+blocks, and every allowed block isometry commutes with complementing. It also
+preserves each weight-two section. Consequently 4C acts freely on both the
+original section and every transformed even-coefficient subcode section.
+
+In 92D the original section has 5,308,416 orbits of 4,096 points; an index-64
+transformed section has 82,944 such orbits. In 90D the respective numbers are
+2,985,984 and 46,656. This suggests a search that retains or replaces *parts*
+of both layers in complete common orbits rather than requiring the entire
+transformed subcode to coexist with the entire original section. These counts
+and equivariance are verified by `python verify_common_orbits.py`. They do not
+establish which orbit pairs are compatible, a successful exchange, or a bound.
