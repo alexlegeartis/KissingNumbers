@@ -6,7 +6,7 @@ The Cayley BFS certifies all coset leader weights. A separate coordinate DP
 certifies the minimum *nonempty* dependency among the columns of H; the empty
 word of syndrome zero cannot establish the kernel's nonzero distance.
 
-The quotient has at most 2^16 states. Both the context's max_codewords bound
+The quotient has at most 2^19 states. Both the context's max_codewords bound
 and this fixed cap apply before allocating any state tables. Tables use packed
 integer arrays; work is O(n 2^r), with an additional fixed transition cap.
 """
@@ -17,7 +17,7 @@ from discovery.core import (Artifact, RunContext, Verification, canonical_json,
                             check_params, integer)
 
 BACKEND = "binary_syndrome_cosets"
-MAX_SYNDROME_BITS = 16
+MAX_SYNDROME_BITS = 19
 MAX_LENGTH = 4096
 MAX_DP_TRANSITIONS = 2**24
 SYNDROME_CONVENTION = "bit i is row i of Hx modulo 2"
@@ -234,3 +234,4 @@ def verify_artifact(artifact, context=None):
 
 OPERATORS = {"cosets.build": build, "cosets.union": union}
 INPUT_KINDS = {"cosets.build": (), "cosets.union": ("syndrome_oracle",)}
+
