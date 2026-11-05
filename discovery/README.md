@@ -402,3 +402,13 @@ recipes add a singleton while breaking blocker orbits; their output is
 numerical and must not be treated as a valid bound without exact promotion.
 Use `--budget max_gram_entries=4000000` for the 14D recipes; the 15D recipes
 need `--budget max_gram_entries=7000000 --budget max_nodes=150`.
+
+`search.quadratic_group_assemblies` extends partially symmetric search to
+coordinates in Q(sqrt(3)). It can start from algebraic seeds, numerically move
+them, and produce provisional algebraic seeds for exact promotion. The
+independent verifier compares all inner products using integer sign tests in
+the quadratic field, including unequal algebraic norms; larger numerators
+use a budgeted Python-integer fallback to avoid overflow. The supplied
+`group13_quadratic_benchmark.json` exactly replays the known 1,154-point
+configuration from supplied coordinates; the related extension probe is a
+numerical search, not a new record. Both require `--budget max_nodes=1200`.
