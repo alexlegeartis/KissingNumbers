@@ -41,6 +41,9 @@ class BlockIsometryTests(unittest.TestCase):
  def test_exact_information_set_overlap_rejection(self):
   p=self.params();p.update(map_menu=[[0,1]],groups=[0,0,0,0],exact_pair_limit=1,rounds=1,oracle_steps=1)
   r=search_block_isometries(p);self.assertEqual(len(r['rejection_witnesses']),1);self.assertEqual(r['rejection_witnesses'][0]['distance'],0);self.assertFalse(r['candidates'])
+ def test_anchored_search_finds_noncident_blocker(self):
+  p=self.params();p.update(map_menu=[[0,1]],groups=[0,0,0,0],references=[[1,0,0,0]],exact_pair_limit=1,rounds=1,oracle_steps=100)
+  r=search_block_isometries(p);self.assertEqual(len(r['rejection_witnesses']),1);w=r['rejection_witnesses'][0];self.assertEqual(w['distance'],1);self.assertEqual(w['message_a'],[0])
  def test_heuristic_does_not_certify(self):
   p=self.params();p.update(exact_pair_limit=1,oracle_steps=1,rounds=3)
   z=search_block_isometries(p);self.assertEqual(z['oracle'],'heuristic');self.assertTrue(all(not x['exhaustive_cross_check'] for x in z['candidates']))

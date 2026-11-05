@@ -163,6 +163,11 @@ def verify_artifact(artifact, context=None):
     if provenance.get('classification') == 'known_recipe_benchmark':
         require(provenance == _provenance32(), 'Modified known-recipe provenance')
         require(digest(data['certificate']) == RECIPE32_SHA256, 'Modified known32 mathematical payload')
+    elif provenance.get('classification') == 'signed_fiber_search':
+        require(set(provenance) == {'classification', 'solver_status', 'candidate_lines', 'flexible_fibers'}, 'Invalid search provenance')
+        require(isinstance(provenance['solver_status'], str) and len(provenance['solver_status']) <= 500, 'Invalid solver status')
+        require(type(provenance['candidate_lines']) is int and provenance['candidate_lines'] >= 0, 'Invalid candidate count')
+        require(type(provenance['flexible_fibers']) is int and provenance['flexible_fibers'] >= 0, 'Invalid flexible fiber count')
     else:
         require(provenance == {'classification': 'provided_recipe'}, 'Unsupported provenance claim')
     facts, proof = _check_certificate(data['certificate'], context)
@@ -203,3 +208,4 @@ def known32(inputs, params, context):
 
 OPERATORS = {'layers.known32': known32, 'layers.signed_supports': signed_supports}
 INPUT_KINDS = {'layers.known32': (), 'layers.signed_supports': ()}
+

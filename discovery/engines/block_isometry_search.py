@@ -103,10 +103,22 @@ def search_block_isometries(p,context=None):
                         if np.array_equal((b@G+offsets[ri])%q,encoded):
                             found=(ri,a.copy(),b.copy(),0);break
                     if found:break
+            # Decode an anchored candidate point against a reference layer
+            # before the joint search. Each failure is a replayable bad pair.
+            anchor_a=np.zeros(k,dtype=np.int64);anchor=cell_maps[coordinates,co]
+            ri=int(rng.integers(len(refs)));b=rng.integers(q,size=k);bv=(b@G+offsets[ri])%q
+            for step in range(steps//2):
+                if found:break
+                tested+=1;current=_weight(anchor^refs[ri]^block[bv])
+                if current<target:found=(ri,anchor_a.copy(),b.copy(),current);break
+                i=int(rng.integers(k));old=int(b[i]);variants=(bv[None,:]+(np.arange(q)[:,None]-old)*G[i])%q
+                scores=wt[anchor[None,:]^refs[ri][None,:]^block[variants]].sum(axis=1);temperature=.4+2.6*(1-(step%1000)/1000)
+                probs=np.exp(-(scores-scores.min())/temperature);probs/=probs.sum();value=int(rng.choice(q,p=probs));b[i]=value;bv=variants[value]
+                if step%1000==999 and len(refs)>1:ri=int(rng.integers(len(refs)));bv=(b@G+offsets[ri])%q
             a=rng.integers(q,size=k);b=rng.integers(q,size=k);ri=int(rng.integers(len(refs)))
             av=(a@G+co)%q;bv=(b@G+offsets[ri])%q
             current=_weight(cell_maps[coordinates,av]^refs[ri]^block[bv])
-            for step in range(steps):
+            for step in range(steps-steps//2):
                 if found:break
                 tested+=1
                 if current<target:found=(ri,a.copy(),b.copy(),current);break

@@ -313,3 +313,25 @@ then uses explicit bad word pairs to add exact constraints. The DGLS recipes
 use the 384 isometries of the eight even-parity four-bit words. The first
 applies them to the full 2^36-word image; the second works on an index-two
 subcode. Neither recipe proves inter-layer compatibility or a new bound.
+
+`search.signed_fiber_exchanges` constructs and optimizes pointwise signed
+antipodal-line exchanges around a compressed signed-support construction.
+Selected full fibers can independently choose even or odd sign parity, and
+individual old and new lines can be removed or added together. The returned
+construction is replayed by the exact compressed verifier; its search
+provenance reports the numerical solver's status so that a time limit is not
+mistaken for an exhaustion proof. Candidate pools and flexible fibers bound
+the scope of a search; an unchanged result is not a global impossibility.
+
+The signed-fiber search uses proved support-level cuts as well as individual
+conflict constraints. A set of signed octads on nine coordinates has at most
+64 antipodal lines, and any octads sharing a fixed six-set also have at most
+64. These cuts reduce the solver's search space without ruling out changes to
+other supports or layers. `dim33_parity_exchange_probe.json` is a reproducible
+bounded search on the 33D source, not a global optimization certificate.
+A finite candidate pool can also be excluded from positive gain when its
+supports match injectively to distinct conflicting incumbent fibers; this
+structural result is recorded separately from a numerical solver status.
+`min_new_lines` and `return_neutral` permit exact same-cardinality outputs
+for subsequent searches. Such outputs are not automatically claimed to be
+nonisometric or even distinct without a separate comparison.
