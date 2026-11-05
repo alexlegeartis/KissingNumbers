@@ -384,3 +384,21 @@ not an independent rediscovery. `group14_mixed_stabilizer_extension_probe.json`
 adds a generic orbit and jointly searches for an extension; it is not a proof
 of a new bound. Different group orbits can still have more symmetry than their
 chosen stabilizers, and the promotion step checks actual distinct counts.
+
+`search.partial_group_assemblies` permits each orbit to use a different
+rational group, including the identity group for independently movable points.
+It can therefore break a selected orbit while leaving other parts symmetric.
+An optional positive integer diagonal metric supports weighted-coordinate
+constructions; every group must preserve that metric, and promotion checks
+all materialized point pairs exactly, including unequal norms. Because this
+operator builds a dense numerical Gram matrix, its Gram-entry budget scales
+quadratically with the proposed point count.
+
+The `group14_partial_orbit_benchmark.json` and
+`group15_weighted_partial_benchmark.json` recipes replay supplied seeds for the
+known 1,932- and 2,564-point configurations, respectively. They are calibration
+checks, not discoveries. The companion `*_partial_extension_probe.json`
+recipes add a singleton while breaking blocker orbits; their output is
+numerical and must not be treated as a valid bound without exact promotion.
+Use `--budget max_gram_entries=4000000` for the 14D recipes; the 15D recipes
+need `--budget max_gram_entries=7000000 --budget max_nodes=150`.

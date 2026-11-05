@@ -103,6 +103,9 @@ def verify_artifact(artifact,context=None):
     elif artifact.kind=='implicit_spherical_code' and artifact.data.get('backend')=='real_stabilizer_sector':
         from .engines.stabilizers import verify_artifact as verify_stabilizer
         report=verify_stabilizer(artifact,context)
+    elif artifact.kind=='implicit_spherical_code' and artifact.data.get('backend')=='exact_partial_group_orbits':
+        from .engines.partial_group_assemblies import verify_exact
+        report=verify_exact(artifact,context)
     elif artifact.kind=='implicit_spherical_code' and artifact.data.get('backend')=='exact_multi_group_orbits':
         from .engines.group_seed_search import verify_multi_artifact as verify_multi_group
         report=verify_multi_group(artifact,context)
@@ -115,6 +118,9 @@ def verify_artifact(artifact,context=None):
     elif artifact.kind in ('binary_code','ring_code','polynomial_pair'):
         from .engines.rings import verify_artifact as verify_ring
         report=verify_ring(artifact,context)
+    elif artifact.kind=='search_result' and artifact.data.get('backend')=='partial_group_search':
+        from .engines.partial_group_assemblies import verify_search_artifact
+        report=verify_search_artifact(artifact,context)
     elif artifact.kind=='search_result' and artifact.data.get('backend')=='group_seed_search':
         from .engines.group_seed_search import verify_search_artifact as verify_group_search
         report=verify_group_search(artifact,context)
