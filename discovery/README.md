@@ -422,3 +422,12 @@ search, and the former is not a rediscovery.
 Exact rational diagonal generators may be written compactly as
 `{"diagonal": [...], "denominator": 1}` instead of a dense matrix. The same
 orthogonality and metric-preservation checks apply.
+
+`search.cavity_repacking` jointly moves and replaces a selected neighborhood
+while holding the remaining points fixed, without requiring any symmetry. It
+supports weighted integer source coordinates, arbitrary numerical replacement
+seeds, and exact promotion with unequal norms. The 17D cavity probe starts
+from a supplied 5,730-point source, removes 308 points, and searches for 309
+replacements. Its output is a numerical proposal, not a 5,731-point bound; run
+with `--budget max_nodes=350 --budget max_pairs=17000000`. Exact promotion also
+rechecks every fixed-fixed pair, so the source's validity is not assumed.
