@@ -5,7 +5,7 @@ import numpy as np
 from discovery.core import RunContext,Artifact
 from discovery.runner import registry
 from discovery.certification import verify_artifact
-from discovery.engines.cavity_repacking import search_cavity,certify_cavity,verify_exact,_smooth_value_gradient
+from discovery.engines.cavity_repacking import search_cavity,certify_cavity,verify_exact,_smooth_value_gradient,adaptive_cavity
 class CavityTests(unittest.TestCase):
  def setUp(self):
   self.ctx=RunContext(Path('.'));self.p={'source':[[1,0],[-1,0],[0,1],[0,-1]],'remove_indices':[2],'initial_replacements':[[0,1]],'attempts':1,'max_iterations':10,'seconds':4,'scale':100}
@@ -25,6 +25,9 @@ class CavityTests(unittest.TestCase):
   with self.assertRaisesRegex(ValueError,'separation'):verify_exact(Artifact('implicit_spherical_code',data),self.ctx)
  def test_unequal_norms_and_weighted_metric(self):
   data={'backend':'exact_cavity_repacking','source':[[2,0],[-1,0]],'metric':[1,2],'remove_indices':[],'replacement_vectors':[[0,1000000]]};a=Artifact('implicit_spherical_code',data);self.assertEqual(verify_exact(a,self.ctx).details['facts']['cardinality'],3)
+ def test_adaptive_expansion_and_exact_replay(self):
+  p={'source':[[1,0,0],[-1,0,0],[0,1,0],[0,-1,0]],'seed_candidate':[0,0,1],'expansion_rounds':2,'add_per_round':1,'max_iterations':2,'seconds':5,'round_seconds':2,'scale':100}
+  r=adaptive_cavity([],p,self.ctx);h=r.data['result']['adaptive_history'];self.assertEqual(len(h),2);self.assertEqual(h[0]['removed'],0);self.assertEqual(h[1]['removed'],1);a=certify_cavity([r],{},self.ctx);self.assertEqual(a.facts['cardinality'],5)
  def test_invalid_remove_and_zero_seed(self):
   p=deepcopy(self.p);p['remove_indices']=[2,2]
   with self.assertRaisesRegex(ValueError,'removal'):search_cavity([],p,self.ctx)

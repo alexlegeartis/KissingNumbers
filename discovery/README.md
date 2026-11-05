@@ -436,3 +436,10 @@ The joint optimizer evaluates the symmetric moving-point Gram matrix in place
 and avoids explicit triangular-index and second-weight matrices. It still has
 quadratic time and memory cost in the number of simultaneously moving points;
 set resource budgets explicitly for large whole-configuration searches.
+
+`search.adaptive_cavity` takes a proposed point, identifies its current
+blockers, jointly optimizes their replacement and the new point, and can
+release additional near-contact source points in subsequent rounds. The
+17D adaptive probe demonstrates this automated neighborhood expansion. Its
+results are numerical proposals, and it neither certifies fixed-fixed pairs
+nor registers a new bound without exact promotion.

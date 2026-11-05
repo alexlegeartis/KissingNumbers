@@ -116,6 +116,39 @@ def certify_cavity(inputs,params,context):
     if not v:raise ValueError('no replacement candidates')
     data={'backend':'exact_cavity_repacking','source':p['source'],'metric':p.get('metric',[1]*len(p['source'][0])),'remove_indices':p['remove_indices'],'replacement_vectors':v};a=Artifact('implicit_spherical_code',data,{},Verification());a.verification=verify_exact(a,context);a.facts=a.verification.details['facts'];return a
 
-OPERATORS={'search.cavity_repacking':search_cavity,'geometry.certify_cavity_repacking':certify_cavity}
-INPUT_KINDS={'search.cavity_repacking':(),'geometry.certify_cavity_repacking':('search_result',)}
-OUTPUT_KINDS={'search.cavity_repacking':('search_result',),'geometry.certify_cavity_repacking':('implicit_spherical_code',)}
+def adaptive_cavity(inputs,p,context):
+    """Propose a point, release blockers, and expand the moving neighborhood."""
+    if inputs:raise ValueError('adaptive cavity search takes no inputs')
+    check_params(p,('source','metric','seed_candidate','expansion_rounds','add_per_round','attempts','max_iterations','seed','seconds','round_seconds','scale','betas'))
+    source=p.get('source');candidate=p.get('seed_candidate')
+    if not isinstance(source,list) or not source or not isinstance(source[0],list) or not isinstance(candidate,list):raise ValueError('source and seed_candidate required')
+    d=len(source[0]);metric=p.get('metric',[1]*d)
+    # Reuse source validation and allocation budgets before making arrays.
+    check={'source':source,'metric':metric,'remove_indices':[],'initial_replacements':[candidate]}
+    S,weights,_,seed,_,_=_source(check,context);w=np.sqrt(weights);Y=S*w;norm=np.linalg.norm(Y,axis=1);q=seed[0]*w;qn=np.linalg.norm(q)
+    if np.any(norm<1e-14) or qn<1e-14:raise ValueError('zero source or candidate')
+    Y/=norm[:,None];q/=qn;initial_scores=Y@q;removed=set(map(int,np.flatnonzero(initial_scores>.5+1e-12)))
+    rounds=integer(p.get('expansion_rounds',2),'expansion_rounds');add=integer(p.get('add_per_round',32),'add_per_round');attempts=integer(p.get('attempts',1),'attempts');context.limit('max_trials',rounds*attempts)
+    seconds=p.get('seconds',30);per=p.get('round_seconds',seconds)
+    if type(seconds) not in (int,float) or not math.isfinite(seconds) or seconds<=0 or type(per) not in (int,float) or not math.isfinite(per) or per<=0:raise ValueError('invalid adaptive time limits')
+    context.limit('solver_seconds',seconds);deadline=time.monotonic()+seconds;initial=[source[i] for i in sorted(removed)]+[candidate];best=None;history=[];last=None
+    for turn in range(rounds):
+        remaining=deadline-time.monotonic()
+        if remaining<=0:break
+        opts={'source':source,'metric':metric,'remove_indices':sorted(removed),'initial_replacements':initial,'attempts':attempts,'max_iterations':p.get('max_iterations',100),'seconds':min(per,remaining),'seed':p.get('seed',0),'scale':p.get('scale',10000)}
+        if 'betas' in p:opts['betas']=p['betas']
+        a=search_cavity([],opts,context);r=a.data['result'];last=a;score=r['best_max_correlation'];history.append({'round':turn,'removed':len(removed),'moving':len(initial),'best_max_correlation':score})
+        if score is not None and (best is None or score<best.data['result']['best_max_correlation']):best=a
+        if turn+1>=rounds or not r['replacement_vectors']:break
+        fixed=[i for i in range(len(source)) if i not in removed]
+        if not fixed:break
+        V=np.asarray(r['replacement_vectors'],float)*w;V/=np.linalg.norm(V,axis=1)[:,None];scores=np.max(V@Y[fixed].T,axis=0);take=np.argsort(-scores)[:min(add,len(fixed))];chosen=[fixed[int(i)] for i in take]
+        removed.update(chosen);initial=r['replacement_vectors']+[source[i] for i in chosen]
+    out=best or last
+    if out is None:raise ValueError('adaptive search timed out before first round')
+    out.data['result']['adaptive_history']=history
+    return out
+
+OPERATORS={'search.cavity_repacking':search_cavity,'search.adaptive_cavity':adaptive_cavity,'geometry.certify_cavity_repacking':certify_cavity}
+INPUT_KINDS={'search.cavity_repacking':(),'search.adaptive_cavity':(),'geometry.certify_cavity_repacking':('search_result',)}
+OUTPUT_KINDS={'search.cavity_repacking':('search_result',),'search.adaptive_cavity':('search_result',),'geometry.certify_cavity_repacking':('implicit_spherical_code',)}
