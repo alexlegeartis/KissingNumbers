@@ -38,3 +38,9 @@ binary coset code and each original signed-octad source independently. It uses
 the universal dense-to-octad and dense-to-root inner-product bounds, and drops
 the optional heavy heads in 34–35D before counting. The resulting counts still
 need comparison against current records before a claim of priority.
+
+For proposals from larger quotients, `verify_syndrome_candidate.py` converts
+syndrome labels to explicit binary representatives and independently checks
+every span word and every cross-coset difference. This avoids requiring the
+whole quotient to fit the 19-bit certification backend. The same geometric
+replacement check then applies.

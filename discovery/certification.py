@@ -98,6 +98,9 @@ def verify_artifact(artifact,context=None):
     elif artifact.kind=='spherical_code' and 'section' in artifact.data:
         from .engines.geometry import verify_section
         report=verify_section(artifact,context)
+    elif artifact.kind=='binary_code' and artifact.data.get('backend')=='binary_span_cosets':
+        from .engines.binary_span_cosets import verify_artifact as verify_span_cosets
+        report=verify_span_cosets(artifact,context)
     elif artifact.kind=='syndrome_oracle' or (artifact.kind=='binary_code' and artifact.data.get('backend')=='binary_syndrome_cosets'):
         from .engines.cosets import verify_artifact as verify_coset
         report=verify_coset(artifact,context)
