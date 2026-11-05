@@ -180,3 +180,22 @@ uniform universe, not a proof excluding a particular structured subcode.
 `second_moment.cpp` and `verify_second_moment.py` independently enumerate all
 16,777,216 differences and agree on the complete histogram and exact rational
 arithmetic. Compile the first with C++17; the second uses bounded NumPy chunks.
+
+`target_search.py` takes a different route: it proposes a mixed-parity target
+word directly, and whenever a conflicting source word is found it adds distance
+cuts for all 4,096 translates under 4C. Each cut is valid for the full source
+section. The source-orbit list is checkpointed and can be restored. The search
+saves an unresolved target only when a randomized decoder fails to find a bad
+pair; such a target is not a certified hole. The 4C orbit of any one target has
+4,096 mutually compatible words because the binary Golay code has minimum
+weight eight, but even a certified new orbit alone would not beat the current
+92D repository count. More orbits or compatible accessory layers would still
+be needed.
+
+From this directory, compile `target_oracle.cpp` as `target_oracle`; then run
+`python verify_target_orbit_cuts.py` and `python target_search.py`. Environment
+variables `TARGET92_ROUNDS`, `TARGET92_RESTARTS`, `TARGET92_MAX_ORBITS`, and
+`TARGET92_CHECKPOINT` control the bounded run and its checkpoint. The source
+oracle is incomplete, the optimization is numerical, and all proposals need
+independent exact proof. The orbit-cut checker enumerates all 4,096 translates
+of one source word and compares them to direct Z8 encoding.
