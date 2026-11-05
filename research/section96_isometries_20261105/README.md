@@ -48,3 +48,13 @@ all 64×64 combinations of the remaining message coefficients. The prefix
 pairs themselves are sampled, so failure to find a forbidden pair does not
 certify global compatibility. This extra search targets 86D directly rather
 than requiring a valid full 96D union.
+
+An optional third argument `s` restricts the transformed layer to the subcode
+where message coefficients m through m+s-1 are even. The original section is
+left intact. Because the first m output coordinates do not depend on these
+later coefficients, the transformed section has exactly 2^(-s) of the full
+section's size. With s=2, the conditional counts are 27,179,089,920 in 92D
+and 15,288,238,080 in 90D. A compatible map is still required. Compile
+`oracle_index.cpp` to `oracle_index` and run `search.py 4 4 2` or
+`search.py 6 6 2`; the randomized oracle remains incomplete. In particular,
+absence of a witness is not a lower-bound proof.

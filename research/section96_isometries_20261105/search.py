@@ -1,6 +1,8 @@
 import itertools, numpy as np, subprocess, re, sys
 ng=int(sys.argv[1]) if len(sys.argv)>1 else 4
 m=int(sys.argv[2]) if len(sys.argv)>2 else 4
+s=int(sys.argv[3]) if len(sys.argv)>3 else 0
+assert 0<=s<=12-m
 assert 1 <= m <= 10
 assert 1 <= ng <= 24
 assignment=np.arange(24)%ng
@@ -29,18 +31,18 @@ for j in range(ng):
 for it in range(500):
  r=milp(rng.normal(size=ng*P),integrality=np.ones(ng*P),bounds=Bounds(np.zeros(ng*P),allowed.ravel()),constraints=LinearConstraint(csr_matrix(np.asarray(rows)),lb,ub),options={'time_limit':120})
  if r.x is None:print('no incumbent',it,r.message,flush=True);break
- choices=np.argmax(r.x.reshape(ng,P),axis=1);mapping=menu[choices[assignment]];mapping.tofile(f'search96_section_{ng}_{m}_current.bin')
+ choices=np.argmax(r.x.reshape(ng,P),axis=1);mapping=menu[choices[assignment]];mapping.tofile(f'search96_section_{ng}_{m}_{s}_current.bin')
  matched=None
  for odd in (0,):
   for ref in range(1):
-   p=subprocess.run((['./oracle_m10',f'search96_section_{ng}_{m}_current.bin','50000'] if m==10 else ['./oracle',f'search96_section_{ng}_{m}_current.bin',str(200),str(ref),str(odd),str(m)]),capture_output=True,text=True)
+   p=subprocess.run((['./oracle_index',f'search96_section_{ng}_{m}_{s}_current.bin','200',str(ref),str(odd),str(m),str(s)] if s else ['./oracle_m10',f'search96_section_{ng}_{m}_{s}_current.bin','50000'] if m==10 else ['./oracle',f'search96_section_{ng}_{m}_{s}_current.bin','200',str(ref),str(odd),str(m)]),capture_output=True,text=True)
    if p.returncode != 0:raise RuntimeError(f'oracle failed ({p.returncode}): {p.stderr}')
    matched=re.search(r'WITNESS A ([0-7]{12}) B ([0-7]{12}) distance (\d+)',p.stdout)
    if matched: break
   if matched:break
  if not matched:
-  print('UNRESOLVED',it,'choices',choices.tolist(),p.stdout.strip(),flush=True);np.save(f'search96_section_{ng}_{m}_survivor_{it}.npy',mapping);continue
- a=np.array(list(matched[1]),dtype=int);b=np.array(list(matched[2]),dtype=int);x=(a@G)%8;y=(b@G+sum((ref>>i&1)*offset[i] for i in range(3)))%8
+  print('UNRESOLVED',it,'choices',choices.tolist(),p.stdout.strip(),flush=True);np.save(f'search96_section_{ng}_{m}_{s}_survivor_{it}.npy',mapping);continue
+ a=np.array(list(matched[1]),dtype=int);b=np.array(list(matched[2]),dtype=int);assert np.all(a[m:m+s]%2==0);x=(a@G)%8;y=(b@G+sum((ref>>i&1)*offset[i] for i in range(3)))%8
  d=int(wt[mapping[np.arange(24),x]^gray[y]^odd].sum());assert d==int(matched[3]) and d<24
  assert np.all(wt[mapping[np.arange(m),x[:m]]]==2) and np.all(wt[gray[y[:m]]]==2)
  per_block=wt[menu[:,x].T^gray[y,None]^odd].astype(int)
