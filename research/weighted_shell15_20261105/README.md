@@ -46,3 +46,25 @@ To reproduce, use the same `source.bin` prepared above, compile `sparse_scan.cpp
     python research/weighted_shell15_20261105/search_direct.py --build-only
     python research/weighted_shell15_20261105/search_direct.py --seconds 900
     python research/weighted_shell15_20261105/verify_candidate.py candidate_direct.npz
+
+## A mixed rational and square-root family
+
+`radical50_low.npz` contains 1,024 candidates from the complete signed family
+with two head entries ±3, six head entries ±2 and weighted tail ±2. Their
+weighted squared norm is 50; after multiplying by 4/sqrt(50), they have the
+source norm. A complete 43,051,008-vector scan found no free source extension;
+exactly 1,024 have at most 12 source blockers, each with exactly 12. The two
+partition counts are 23,181,312 and 19,869,696, retaining 256 and 768 points.
+All retained norms and blocker lists are checked by `verify_radical_low.py`.
+
+`search_hybrid_radical.py` searches those candidates together with the existing
+rational pool, charging shared source deletions. Cross-family comparisons use
+exact integer thresholds for the different norms. It samples at most 600
+eligible candidates in a local model and can time out; no result is a global
+upper bound. Independently check any output using
+`python verify_radical_candidate.py search15_hybrid_lns_potential.npz`.
+
+To reproduce the full scan from this directory, run `python prepare_scan.py`,
+compile `scan_radical50.cpp`, and run its partitions 0 and 1. The scan writes
+raw candidate and blocker files. A positive candidate is not a record until
+independently checked and compared with current published bounds.
