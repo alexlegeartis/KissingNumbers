@@ -97,12 +97,18 @@ def verify_exact(a,context=None):
     if not mx or d*max(metric)*mx*mx>=2**62:raise ValueError('exact integer dot products exceed safe range')
     V=np.asarray(rows,dtype=np.int64);weights=np.asarray(metric,dtype=np.int64);norms=[sum(w*x*x for w,x in zip(metric,row)) for row in rows]
     if any(n==0 for n in norms):raise ValueError('zero exact vector')
-    distinct=sorted(set(norms));lookup={v:i for i,v in enumerate(distinct)};which=np.asarray([lookup[v] for v in norms],dtype=np.int32);context.limit('max_gram_entries',len(distinct)**2);T=np.array([[math.isqrt(a*b)//2 for b in distinct] for a in distinct],dtype=np.int64)
+    # The integer product of floor square roots is a rigorous lower bound on
+    # the true normalized threshold. Only pairs above it need big-integer
+    # squaring; no quadratic table of unequal norms is materialized.
+    roots=np.asarray([math.isqrt(n) for n in norms],dtype=np.int64)
     batch=max(1,min(128,context.budget['max_gram_entries']//total));context.limit('max_gram_entries',batch*total)
     for at in range(0,total,batch):
-        D=(V[at:at+batch]*weights)@V.T;threshold=T[which[at:at+batch,None],which[None,:]];bad=D>threshold
-        for k in range(len(bad)):bad[k,:at+k+1]=False
-        if np.any(bad):raise ValueError('exact cavity separation fails')
+        D=(V[at:at+batch]*weights)@V.T;lower=(roots[at:at+batch,None]*roots[None,:])//2;maybe=D>lower
+        for k in range(len(maybe)):maybe[k,:at+k+1]=False
+        ii,jj=np.nonzero(maybe)
+        for i,j in zip(ii,jj):
+            dot=int(D[i,j])
+            if 4*dot*dot>norms[at+int(i)]*norms[int(j)]:raise ValueError('exact cavity separation fails')
     rows_for_rank=rows[:max(64,4*d)];rank,_=exact_integer_rank(rows_for_rank,context)
     if rank<d:rank,_=exact_integer_rank(rows,context)
     facts={'dimension':rank,'rank_exact':rank,'ambient_dimension':d,'cardinality':total,'max_inner_product_upper_bound':'1/2'}

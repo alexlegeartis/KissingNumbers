@@ -443,3 +443,8 @@ release additional near-contact source points in subsequent rounds. The
 17D adaptive probe demonstrates this automated neighborhood expansion. Its
 results are numerical proposals, and it neither certifies fixed-fixed pairs
 nor registers a new bound without exact promotion.
+
+For unequal integer norms, the cavity verifier now uses integer square-root
+lower bounds and checks only ambiguous pairs with arbitrary-precision integer
+arithmetic. This avoids a quadratic table over all distinct norms while
+retaining exact separation checks; the full set of pairs is still covered.

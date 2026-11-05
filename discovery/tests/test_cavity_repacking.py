@@ -28,6 +28,10 @@ class CavityTests(unittest.TestCase):
  def test_adaptive_expansion_and_exact_replay(self):
   p={'source':[[1,0,0],[-1,0,0],[0,1,0],[0,-1,0]],'seed_candidate':[0,0,1],'expansion_rounds':2,'add_per_round':1,'max_iterations':2,'seconds':5,'round_seconds':2,'scale':100}
   r=adaptive_cavity([],p,self.ctx);h=r.data['result']['adaptive_history'];self.assertEqual(len(h),2);self.assertEqual(h[0]['removed'],0);self.assertEqual(h[1]['removed'],1);a=certify_cavity([r],{},self.ctx);self.assertEqual(a.facts['cardinality'],5)
+ def test_irrational_norm_threshold_boundary(self):
+  data={'backend':'exact_cavity_repacking','source':[[1,1,0]],'metric':[1,1,1],'remove_indices':[],'replacement_vectors':[[1,0,1]]};self.assertEqual(verify_exact(Artifact('implicit_spherical_code',data),self.ctx).status,'exact')
+  data['replacement_vectors']=[[2,1,0]]
+  with self.assertRaisesRegex(ValueError,'separation'):verify_exact(Artifact('implicit_spherical_code',data),self.ctx)
  def test_invalid_remove_and_zero_seed(self):
   p=deepcopy(self.p);p['remove_indices']=[2,2]
   with self.assertRaisesRegex(ValueError,'removal'):search_cavity([],p,self.ctx)
