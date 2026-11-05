@@ -35,3 +35,5 @@ To leave the integer norm-8 shell, the engine also enumerates norm-3 vectors of 
     E7_SEARCH_SECONDS=300 python research/e7_frame_exchange_20261105/multinorm_search.py
 
 A timeout or absence of a solver incumbent is not a proof of optimality. This finite search does not cover other norms or shapes.
+
+The unequal-norm verifier also checks two additional families of exact cuts. Every nine-conflict candidate hits six seed points untouched by the cheap classes, and each such point can block at most 12 mutually compatible nine-conflict candidates. In addition, each nine-conflict candidate hits three cheap-source points where its presence lowers the local weighted capacity from 12 to at most 9. Consequently any nonempty set of nine-conflict candidates causes a cheap-class deficit of at least one, while h of them force at least ceil(h/2) deletions outside the cheap-source set. An improving exchange in this finite pool therefore needs at least four nine-conflict points. The search includes those bounds and individual witness cuts, all derived from the independently enumerated local conflict graphs.
