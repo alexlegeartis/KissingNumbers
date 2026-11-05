@@ -42,3 +42,16 @@ jointly editing both caps, so later neighborhoods are not tied to the initial
 seed. It does not permit further losses and remains a bounded heuristic. Run
 with `EVAL3_EPOCHS` and `EVAL3_WALK_TRIALS` set as needed; independently
 replay any `cache/walk_POTENTIAL.npz` with the same `verify.py` command.
+
+`anneal.cpp` adds a separate full-graph stochastic search that can replace
+several pieces in both caps at once and can temporarily reduce the orbit count.
+After building both graphs, run:
+
+    python research/mixed_tier17_order8_20261105/prepare_anneal.py
+    g++ -O3 -std=c++17 research/mixed_tier17_order8_20261105/anneal.cpp -o /tmp/eval3_anneal
+    /tmp/eval3_anneal 170833
+    python research/mixed_tier17_order8_20261105/decode_anneal.py
+    python research/mixed_tier17_order8_20261105/verify.py research/mixed_tier17_order8_20261105/cache/anneal_POTENTIAL.npz
+
+The output is a proposal until that independent replay succeeds. A finite
+annealing run provides no exclusion or optimality proof.
