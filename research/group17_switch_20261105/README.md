@@ -50,3 +50,17 @@ To reproduce the completeness scan, run in this directory:
 
 This excludes a free addition from that stated family only. Coupled replacement
 and other cap shapes remain open.
+
+## 16D equator eight-support scan
+
+The twice-switched configuration has a 4,320-point 16D equator. In its
+norm-eight integer representation, `scan16_eight.cpp` enumerates all
+3,294,720 signed eight-support vectors and finds no free extension. There are
+3,712 source duplicates and 120,704 other vectors with exactly eight blockers;
+the remaining 3,170,304 were stopped after more than eight blockers. All
+retained norms and duplicates and 1,000 sampled blocker lists were checked
+independently. The complete scan is an exact fixed-source, fixed-family result,
+not an upper bound on the 16D kissing number.
+
+From this directory run `python prepare16.py`, compile `scan16_eight.cpp`,
+run the binary, and then run `python verify16_low.py` to replay those checks.

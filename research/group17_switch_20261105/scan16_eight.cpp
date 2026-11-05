@@ -1,0 +1,5 @@
+#include<bits/stdc++.h>
+using namespace std;constexpr int N=4320,D=16;int8_t X[N][D],q[D];int ord[N];uint16_t B[8];long long hist[10]{},seen=0,kept=0;ofstream out,blk;
+void eval(){seen++;int c=0;for(int k=0;k<N;k++){int i=ord[k],d=0;for(int j=0;j<D;j++)if(q[j])d+=q[j]*X[i][j];if(d>4){if(c==8){c=9;break;}B[c++]=i;}}hist[c]++;if(c<=8){for(int j=c;j<8;j++)B[j]=65535;out.write((char*)q,D);blk.write((char*)B,sizeof(B));kept++;if(c==0){out.flush();blk.flush();cout<<"POTENTIAL FREE"<<endl;exit(0);}}}
+void rec(int start,int depth,int*p){if(depth==8){for(int mask=0;mask<256;mask++){memset(q,0,sizeof(q));for(int j=0;j<8;j++)q[p[j]]=(mask>>j&1)?-1:1;eval();}return;}for(int i=start;i<=16-(8-depth);i++){p[depth]=i;rec(i+1,depth+1,p);}}
+int main(){ifstream f("search16_switched_twice_baseline.bin",ios::binary);f.read((char*)X,sizeof(X));if(!f)return 1;iota(ord,ord+N,0);mt19937 r(160748);shuffle(ord,ord+N,r);out.open("search16_switched_eight_Q.bin",ios::binary);blk.open("search16_switched_eight_B.bin",ios::binary);int p[8];rec(0,0,p);cout<<"total "<<seen<<" kept "<<kept<<" hist ";for(int k=0;k<10;k++)cout<<k<<":"<<hist[k]<<" ";cout<<endl;}
