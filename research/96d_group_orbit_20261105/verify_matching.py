@@ -12,6 +12,15 @@ K=[]
 for w,u in words.items():
  if mask&w in words:K.append((u,words[mask&w]))
 assert len(K)==64 and len({a for a,b in K})==64
+labels={h for h,z in K};assert all((a^b) in labels for a in labels for b in labels)
+# The cyclic shift on the first 23 coordinates fixes the extended code.
+for row in G:
+ target=np.r_[np.roll(row[:23],1),row[23]];coeff=np.zeros(12,dtype=np.int64)
+ for j in range(12):coeff[j]=((int(target[j])-int(coeff@G[:,j]))*7)%8
+ assert np.array_equal(coeff@G%8,target)
+# The ring-code intersection is 2C plus the 64 residue classes in K.
+intersection_size=2**24*len(K);sum_size=2**36*2**36//intersection_size
+assert intersection_size==2**30 and sum_size==2**42 and sum_size//2**36==64
 w=np.array([0,2,2,2,4,2,2,2],np.int64);seen_u=set();seen_v=set();W=c['witnesses'];assert len(W)==64
 for e in W:
  u=e['candidate'];b=np.asarray(e['coeff'],np.int64);assert type(u) is int and 0<=u<4096 and b.shape==(12,) and np.all((0<=b)&(b<8))
@@ -21,4 +30,4 @@ for e in W:
   new_v=sum(int(new_b[i]%2)<<i for i in range(12));assert new_u not in seen_u and new_v not in seen_v;seen_u.add(new_u);seen_v.add(new_v)
   ring=((new_u>>np.arange(12))&1)@G%8;x=(ring+T[ring%2,np.arange(24)])%8;y=new_b@G%8;dist=int(w[(x-y)%8].sum());assert dist==e['distance'] and dist<24
 assert len(seen_u)==len(seen_v)==4096
-print('PASS: 64 base witnesses and 64 symmetries give a 4096-edge perfect matching')
+print('PASS: 4096-edge matching; 64 equivalent affine code cosets and cyclic symmetry verified')

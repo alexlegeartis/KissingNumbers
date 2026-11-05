@@ -28,3 +28,13 @@ once. `python research/96d_group_orbit_20261105/verify_matching.py` derives K,
 reconstructs all 4,096 word pairs and checks their distances and both sets of
 orbit labels exactly. Thus the result does not rely on the numerical decoder
 or a claim that unobserved edges are absent.
+
+The same matching rules out a larger set of equivalent shifts for this α.
+Since α−1 equals 4 on A and zero elsewhere, C∩αC consists exactly of the
+2C-cosets whose residue h lies in K. Consequently |C∩αC|=2^30 and
+|C+αC|=2^42. Replacing t by t+c+d, with c∈C and d∈αC, gives an isomorphic
+conflict graph: d leaves the affine code unchanged and translation by c
+preserves C. The certificate therefore covers 2^42 shifts, representing 64
+distinct affine αC-cosets. It also transports under the verified cyclic shift
+of the first 23 coordinates; this is symmetry reduction, not a conclusion
+about every diagonal transformation or every shift.

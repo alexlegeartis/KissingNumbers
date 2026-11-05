@@ -103,6 +103,9 @@ def verify_artifact(artifact,context=None):
     elif artifact.kind=='implicit_spherical_code' and artifact.data.get('backend')=='real_stabilizer_sector':
         from .engines.stabilizers import verify_artifact as verify_stabilizer
         report=verify_stabilizer(artifact,context)
+    elif artifact.kind=='implicit_spherical_code' and artifact.data.get('backend')=='exact_multi_group_orbits':
+        from .engines.group_seed_search import verify_multi_artifact as verify_multi_group
+        report=verify_multi_group(artifact,context)
     elif artifact.kind=='implicit_spherical_code' and artifact.data.get('backend')=='signed_support_layers':
         from .engines.layers import verify_artifact as verify_layers
         report=verify_layers(artifact,context)
@@ -112,6 +115,12 @@ def verify_artifact(artifact,context=None):
     elif artifact.kind in ('binary_code','ring_code','polynomial_pair'):
         from .engines.rings import verify_artifact as verify_ring
         report=verify_ring(artifact,context)
+    elif artifact.kind=='search_result' and artifact.data.get('backend')=='group_seed_search':
+        from .engines.group_seed_search import verify_search_artifact as verify_group_search
+        report=verify_group_search(artifact,context)
+    elif artifact.kind=='search_result' and artifact.data.get('backend')=='ring_orbit_search':
+        from .engines.ring_orbit_search import verify_artifact as verify_ring_orbits
+        report=verify_ring_orbits(artifact,context)
     elif artifact.kind=='search_result' and artifact.data.get('backend')=='block_isometry_search':
         from .engines.block_isometry_search import verify_artifact as verify_block_isometry
         report=verify_block_isometry(artifact,context)

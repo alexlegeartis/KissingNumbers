@@ -335,3 +335,28 @@ structural result is recorded separately from a numerical solver status.
 `min_new_lines` and `return_neutral` permit exact same-cardinality outputs
 for subsequent searches. Such outputs are not automatically claimed to be
 nonisometric or even distinct without a separate comparison.
+
+`search.ring_orbit_assemblies` searches a different kind of algebraic
+exchange. For a free Z8 code C and a diagonal 1/5 scaling plus shift, both
+codes decompose into orbits of the common subgroup 2C. The operator seeks
+explicit cross-orbit conflict witnesses, expands them by exact common
+symmetries, and optimizes the resulting bipartite graph. Any matching of
+verified conflict edges gives a rigorous upper bound for the specified
+whole-orbit pool. Conversely, its independent set in the **sampled** graph is
+only a proposal: missing conflicts, parent-code distance and the final sphere
+embedding must still be checked. `dgls96_ring_orbit_replay.json` seeds a
+specific search with 64 witnesses and replays the 4,096-edge matching; it is
+a restriction for that transformation, not a global no-go theorem.
+
+`search.group_orbit_seeds` jointly optimizes seeds for several orbits
+of an exactly closed finite rational orthogonal group. It uses all relative
+group products rather than assuming different orbits are independent. Its
+numerical output is a proposal, and its orbit cardinality is only a
+forecast. An optional common stabilizer subgroup restricts all seeds to its
+exact rational fixed space; unintended additional stabilizers can shrink orbits
+and are conservatively treated as conflicts by the numerical objective. `groups.certify_multi_orbit` reconstructs the group, deduplicates
+each orbit and checks every relative product using exact integer arithmetic,
+including unequal seed norms. `group14_search_strict504.json` demonstrates a
+504-point exact orbit below the known 14D benchmark; the 13D and 14D multi-
+orbit probes are exploratory. The numerical search does not yet support a different stabilizer per orbit or
+synthesize new group representations.
