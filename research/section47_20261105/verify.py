@@ -54,7 +54,7 @@ print('0,+/-1 degree relaxation upper',math.floor(upper),'(not a construction)')
 # Separately, use a minimal normal u. Its orthogonal section is the known
 # 23,766,960-point 47D configuration. Project the u.x=+1 layer.
 # Any added projected point is blocked exactly by source z with x.z=3.
-for c in (0,1):
+for c in (0,1,2,3):
  B=S.Matrix([S.Rational(N)*S.Rational(moment(a,b,6,6,c))-(6**a*c**b+(-6)**a*(-c)**b+c**a*6**b+(-c)**a*(-6)**b) for a,b in exps]);v,p=A.gauss_jordan_solve(B);assert p.rows==1;tau=p[0];lo=S.Rational(0);hi=S.oo
  for f in v:
   slope=S.diff(f,tau);offset=f.subs(tau,0)
@@ -63,9 +63,23 @@ for c in (0,1):
  lo,hi=int(S.ceiling(lo)),int(S.floor(hi))
  if c==0:
   assert (lo,hi)==(0,96) and v[pos.index((1,3))]==8280+15*tau
- else:
+  assert v[pos.index((2,3))]==576-6*tau and v[pos.index((3,3))]==tau
+ elif c==1:
   assert (lo,hi)==(49,57) and v[pos.index((0,3))]==16660-20*tau
+ elif c==2:
+  assert (lo,hi)==(368,368) and v[pos.index((0,3))]==15296-20*tau
+ else:
+  assert (lo,hi)==(1656,1656) and v[pos.index((0,3))]==34776-20*tau
 # Each new cap point has >=15,520 old blockers; each old point blocks
 # <=9,720 such cap points. Shared-deletion counting prohibits a net gain.
 assert 16660-20*57==15520 and 8280+15*96==9720 and 15520>9720
 print('minimal-normal section: a single +/-1 projected cap alone cannot improve the 23,766,960 source')
+
+assert 15296-20*368==7936 and 34776-20*1656==1656
+assert F(9720,15520)+F(576,7936)+F(96,1656)<1
+print('all three projected layers on either one side, jointly, cannot improve the minimal-normal source')
+# If either +1 or -1 layer is absent, allow the other sign of layer 1 and
+# all four +/-2 and +/-3 layers. Even this relaxation cannot pay for the
+# source deletions, so both signs of layer 1 are necessary for a net gain.
+assert F(9720,15520)+2*(F(576,7936)+F(96,1656))<1
+print('any projected-shell improvement of the minimal-normal section must use both +1 and -1 layers')

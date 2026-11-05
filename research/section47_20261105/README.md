@@ -43,3 +43,19 @@ adding any number of points from that one layer while deleting arbitrary
 section points cannot give a net gain. The same holds for the -1 layer alone.
 This does **not** rule out adding points from both layers together, or replacing
 points using other shapes; shared deletions can make a joint search different.
+
+This extends to **all three projected shell layers on one side together**.
+The +2 and +3 layers have at least 7,936 and 1,656 blockers per new point;
+each old point blocks at most 576 and 96 points from those respective layers.
+Together with the +1 estimates, the sum of the three blocker ratios is
+9,720/15,520 + 576/7,936 + 96/1,656 < 1. Thus even jointly selecting arbitrary
+subsets from +1,+2,+3 and arbitrarily deleting old section points cannot
+improve the record. By antipodality, the same holds for the three negative
+layers. The six-layer, two-sided problem is still open.
+
+More generally, if either the +1 or the -1 layer is absent, the other sign of
+the 1-layer and **all four** of the ±2 and ±3 layers may be mixed, and the sum
+of their blocker ratios is still below one. Therefore any net gain using only
+projections of this minimal shell must use points from **both** the +1 and -1
+layers. This necessary condition remains true even when all four outer layers
+are also allowed; it does not establish that a two-sided gain exists.
