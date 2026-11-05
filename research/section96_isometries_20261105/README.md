@@ -58,3 +58,11 @@ and 15,288,238,080 in 90D. A compatible map is still required. Compile
 `oracle_index.cpp` to `oracle_index` and run `search.py 4 4 2` or
 `search.py 6 6 2`; the randomized oracle remains incomplete. In particular,
 absence of a witness is not a lower-bound proof.
+
+A fourth optional integer argument is a bit mask selecting which `s` message
+coefficients are even, so long as all selected indices are at least m. For
+example, `search.py 4 4 6 4032` selects coefficients 6–11. Different masks
+specify different subcodes; all have the same conditional section cardinality
+under the triangular-generator argument. For s=6 the corresponding potential
+counts are 22,083,010,560 in 92D and 12,421,693,440 in 90D, still contingent
+on finding and exactly verifying cross-compatibility.
