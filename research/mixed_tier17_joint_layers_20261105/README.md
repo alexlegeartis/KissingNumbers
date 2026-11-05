@@ -30,3 +30,10 @@ The seed replay has exactly 5,730 points. The graph audit samples 2,000 edges
 and nonedges and compares them with direct subgroup-orbit Gram calculations;
 it is a regression check rather than a full proof of graph correctness. Any
 proposed count requires full exact replay and a current literature comparison.
+
+`lns.py` provides a second optimizer: it selects neighborhoods with shared
+source blockers and solves bounded weighted MILPs over candidate additions and
+source removals. Run it with `JOINT_TRIALS` set to the desired trial count. It
+writes the same proposal format for `decode.py` and the independent verifier.
+As with annealing, sampled neighborhoods and solver limits are not a global
+optimality proof.
