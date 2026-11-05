@@ -303,3 +303,13 @@ recipe searches for such a shift; it does not establish that one exists.
 and tests arbitrary binary shifts of the index-two subcode against all four
 existing affine half-layers. This is a wider search, not an assertion that an
 additional layer exists.
+
+`search.block_isometries` goes beyond binary shifts. It jointly selects
+user-specified local maps, checking that each map preserves every block-level
+Hamming distance before it is admitted. Coordinates can be assigned to groups
+that share one choice. The search proposes all group choices simultaneously,
+then uses explicit bad word pairs to add exact constraints. The DGLS recipes
+`dgls96_block_isometry_probe.json` and `dgls96_subcode_isometry_probe.json`
+use the 384 isometries of the eight even-parity four-bit words. The first
+applies them to the full 2^36-word image; the second works on an index-two
+subcode. Neither recipe proves inter-layer compatibility or a new bound.

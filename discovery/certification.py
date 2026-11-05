@@ -112,6 +112,9 @@ def verify_artifact(artifact,context=None):
     elif artifact.kind in ('binary_code','ring_code','polynomial_pair'):
         from .engines.rings import verify_artifact as verify_ring
         report=verify_ring(artifact,context)
+    elif artifact.kind=='search_result' and artifact.data.get('backend')=='block_isometry_search':
+        from .engines.block_isometry_search import verify_artifact as verify_block_isometry
+        report=verify_block_isometry(artifact,context)
     elif artifact.kind=='search_result' and artifact.data.get('backend')=='binary_translate_search':
         from .engines.binary_translate_search import verify_artifact as verify_binary_translate
         report=verify_binary_translate(artifact,context)
