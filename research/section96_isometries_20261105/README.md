@@ -136,3 +136,11 @@ unresolved results are not certificates.
 The optional fifth and sixth arguments to `search_linear.py` select the number
 of candidate maps and random seed, respectively, so distinct parity-subspace
 campaigns can be reproduced independently.
+
+`linear_campaign.py` runs `search_linear.py` on reproducibly sampled,
+distinct two-dimensional parity subspaces. The initial campaign used 12
+subspaces and 60 map proposals each. All 720 maps had explicit forbidden
+pairs; this does not rule out other maps or subspaces. Run from this directory
+with `oracle_linear` compiled; `LINEAR_SPACES`, `LINEAR_ROUNDS`, and
+`LINEAR_WORKERS` control the workload. Per-subspace logs preserve failures and
+unresolved proposals must still be certified.
