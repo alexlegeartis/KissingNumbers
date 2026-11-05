@@ -15,3 +15,9 @@ Run from the repository root, with NumPy and SciPy installed:
 `OPENBLAS_NUM_THREADS=1 python research/14d_nine_image_obstruction_20261105/verify.py`
 
 The script checks the source checksum, the baseline and group generators, closure of the group, the nine images, all cardinalities, the exact conflict graph, and the matrix polynomial. It bounds intermediate integer values before each sparse matrix product.
+
+## Extending the obstruction by an outside orbit
+
+The verifier additionally constructs an orbit of 56 points outside the nine-image union, with an order-nine stabilizer. These points are mutually compatible and compatible with the common core. Each conflicts with 27 vertices in one of the two 756-vertex components of the variable graph; these 56 neighborhoods cover that component twice. Every neighborhood induces a 27-vertex 16-regular Schläfli graph, whose independence number is at most three by its exact quadratic adjacency identity.
+
+If a compatible set contains `m` old vertices from that component and `k` of the new orbit points, summing the 56 neighborhood bounds yields `2m + 3k <= 168`. Thus these choices contribute at most 84 points in total. The other component contributes at most 84, and the common core at most 1,764. The expanded finite union also cannot improve 1,932. This remains a statement about the specified finite orbit, not other subgroup orbits or deformations.

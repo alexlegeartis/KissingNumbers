@@ -358,5 +358,18 @@ and are conservatively treated as conflicts by the numerical objective. `groups.
 each orbit and checks every relative product using exact integer arithmetic,
 including unequal seed norms. `group14_search_strict504.json` demonstrates a
 504-point exact orbit below the known 14D benchmark; the 13D and 14D multi-
-orbit probes are exploratory. The numerical search does not yet support a different stabilizer per orbit or
-synthesize new group representations.
+orbit probes are exploratory. The seed-search operator does not yet support a different stabilizer per orbit.
+
+`search.coset_group_orbits` constructs another rational orthogonal
+representation directly from a finite group's action on cosets of a supplied
+subgroup. For a square subgroup index it removes the trivial direction using
+an exact rational change of basis, and can take several copies plus trivial
+coordinates. It then jointly searches orbit seeds in the resulting
+representation. `group16_coset_rep_orbit.json` independently certifies a
+504-point 16D orbit, well below the 4,320 benchmark; the nine-orbit recipe is
+a search probe, not a certified bound. The operator also supports a supplied
+supplemental representation after checking all source-group relations, so
+inequivalent representations can be combined. The
+15D example combines an 8D coset representation with a 7D representation and
+certifies an orbit of 504 points, below the 2,564 benchmark. Nonsquare-index
+standard representations are not yet synthesized by this operator.
