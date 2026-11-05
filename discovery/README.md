@@ -373,3 +373,14 @@ inequivalent representations can be combined. The
 15D example combines an 8D coset representation with a 7D representation and
 certifies an orbit of 504 points, below the 2,564 benchmark. Nonsquare-index
 standard representations are not yet synthesized by this operator.
+
+`search.mixed_stabilizer_orbits` searches several orbits of the same group
+while allowing each seed its own stabilizer subgroup. It restricts each seed
+to an exactly computed rational fixed space, but its numerical output is only
+a proposal. `group14_mixed_stabilizer_benchmark.json` supplies 42 known seed
+orbits of sizes 56, 28 and 14 and exactly replays the known 1,932-point 14D
+configuration. Because the seeds are supplied, this is a regression benchmark,
+not an independent rediscovery. `group14_mixed_stabilizer_extension_probe.json`
+adds a generic orbit and jointly searches for an extension; it is not a proof
+of a new bound. Different group orbits can still have more symmetry than their
+chosen stabilizers, and the promotion step checks actual distinct counts.
