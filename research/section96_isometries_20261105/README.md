@@ -133,3 +133,6 @@ The common 4C-orbit symmetry continues to apply. Compile `oracle_linear.cpp`
 as `oracle_linear`, then run, for example, `python search_linear.py 4 4 15
 240`. The local oracle toggles a parity generator at a time and is incomplete;
 unresolved results are not certificates.
+The optional fifth and sixth arguments to `search_linear.py` select the number
+of candidate maps and random seed, respectively, so distinct parity-subspace
+campaigns can be reproduced independently.

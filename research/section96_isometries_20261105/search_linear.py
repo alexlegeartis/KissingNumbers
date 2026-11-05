@@ -4,6 +4,9 @@ m=int(sys.argv[2]) if len(sys.argv)>2 else 4
 s=6
 u=int(sys.argv[3]) if len(sys.argv)>3 else 15
 v=int(sys.argv[4]) if len(sys.argv)>4 else 240
+rounds=int(sys.argv[5]) if len(sys.argv)>5 else 500
+seed=int(sys.argv[6]) if len(sys.argv)>6 else 961361+ng
+assert rounds>0 and seed>=0
 assert m==4 and 0<u<256 and 0<v<256 and u!=v
 assert 0<=s<=12-m
 assert 1 <= m <= 10
@@ -11,7 +14,7 @@ assert 1 <= ng <= 24
 assignment=np.arange(24)%ng
 from scipy.optimize import milp, Bounds, LinearConstraint
 from scipy.sparse import csr_matrix
-rng=np.random.default_rng(961361+ng);g=np.array([7,1,4,4,2,7,3,3,4,7,2,1]);G=np.zeros((12,24),dtype=int)
+rng=np.random.default_rng(seed);g=np.array([7,1,4,4,2,7,3,3,4,7,2,1]);G=np.zeros((12,24),dtype=int)
 for i in range(12):G[i,i:i+12]=g;G[i,23]=3
 offset=np.zeros((3,24),dtype=int)
 gray=np.array([sum(((((z>>2)&1)^((z&1)*x)^(((z>>1)&1)*y))<<(2*x+y)) for x in (0,1) for y in (0,1)) for z in range(8)])
@@ -31,7 +34,7 @@ allowed=np.ones((ng,P));allowed[np.unique(assignment[:m]),P//2:]=0
 rows=[];lb=[];ub=[]
 for j in range(ng):
  row=np.zeros((ng,P));row[j,:]=1;rows.append(row.ravel());lb.append(1);ub.append(1)
-for it in range(500):
+for it in range(rounds):
  r=milp(rng.normal(size=ng*P),integrality=np.ones(ng*P),bounds=Bounds(np.zeros(ng*P),allowed.ravel()),constraints=LinearConstraint(csr_matrix(np.asarray(rows)),lb,ub),options={'time_limit':120})
  if r.x is None:print('no incumbent',it,r.message,flush=True);break
  choices=np.argmax(r.x.reshape(ng,P),axis=1);mapping=menu[choices[assignment]];mapping.tofile(f'search96_sectionlinear_{ng}_{m}_{u}_{v}_current.bin')
