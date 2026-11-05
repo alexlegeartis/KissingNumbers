@@ -19,6 +19,11 @@ class QuadraticExchangeTests(unittest.TestCase):
   for i in range(len(a)):
    for j in range(len(c)):
     p=int(a[i]@c[j]+3*b[i]@d[j]);q=int(a[i]@d[j]+b[i]@c[j]);self.assertEqual(K[i,j],not compatible_dot(p,q,int(n1[i]*n2[j])))
+ def test_component_mode(self):
+  p={'source_a':[[1,0],[-1,0],[0,1]],'source_b':[[0,0]]*3,'candidate_a':[[0,0],[1,0]],'candidate_b':[[0,-1],[0,0]],'seconds':3,'decompose':True}
+  a=search([],p,self.ctx);b=certify([a],{},self.ctx);self.assertEqual(b.facts['cardinality'],4)
+  p['minimum_gain']=2
+  with self.assertRaises(ValueError):search([],p,self.ctx)
  def test_registry(self):
   r,_=registry();self.assertIn('search.quadratic_exchange',r);self.assertIn('geometry.certify_quadratic_exchange',r)
 if __name__=='__main__':unittest.main()

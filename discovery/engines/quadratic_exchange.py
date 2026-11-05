@@ -31,11 +31,12 @@ def _conflicts(a,b,c,d,norm0,norm1):
 def search(inputs,params,context):
  from scipy.optimize import milp, Bounds, LinearConstraint
  from scipy.sparse import coo_matrix,vstack
- check_params(params,('source_a','source_b','candidate_a','candidate_b','seconds','minimum_gain'))
+ check_params(params,('source_a','source_b','candidate_a','candidate_b','seconds','minimum_gain','decompose'))
  if inputs:raise ValueError('quadratic exchange takes no inputs')
  A,B,C,D=_points(params,context);n=len(A);m=len(C);dim=A.shape[1]
  context.limit('max_pairs',m*(m-1)//2+m*n);context.limit('max_rank_work',(m*(m-1)//2+m*n)*dim)
- seconds=params.get('seconds',5);gain=params.get('minimum_gain',1)
+ seconds=params.get('seconds',5);gain=params.get('minimum_gain',1);decompose=params.get('decompose',False)
+ if type(decompose) is not bool or (decompose and gain!=1):raise ValueError('component mode requires gain 1 and boolean decompose')
  if type(seconds) not in (int,float) or not isfinite(seconds) or seconds<=0:raise ValueError('seconds must be positive')
  if type(gain) is not int or gain<1:raise ValueError('minimum_gain must be positive')
  context.limit('solver_seconds',seconds)
@@ -48,14 +49,19 @@ def search(inputs,params,context):
   for k in range(len(e)):e[k,:st+k+1]=False
   a,b=np.where(e);ii.append(a+st);jj.append(b)
  a=np.concatenate(bi);b=np.concatenate(bj);i=np.concatenate(ii);j=np.concatenate(jj);ne=len(a);e=len(i)
- rows=np.r_[np.repeat(np.arange(ne),2),np.repeat(np.arange(ne,ne+e),2)];cols=np.r_[np.c_[a,m+b].ravel(),np.c_[i,j].ravel()];v=np.r_[np.tile([1.,-1.],ne),np.ones(2*e)]
- matrix=coo_matrix((v,(rows,cols)),shape=(ne+e,m+n)).tocsr();obj=np.r_[-np.ones(m),np.ones(n)];matrix=vstack([matrix,coo_matrix(obj.reshape(1,-1))],format='csr');up=np.r_[np.zeros(ne),np.ones(e),-float(gain)]
- result=milp(obj,integrality=np.ones(m+n),bounds=Bounds(0,1),constraints=LinearConstraint(matrix,-np.inf,up),options={'time_limit':float(seconds),'presolve':True})
- pick=[];removed=[]
- if result.x is not None:
-  pick=np.flatnonzero(result.x[:m]>.5).tolist();removed=np.flatnonzero(result.x[m:]>.5).tolist()
-  if len(pick)-len(removed)<gain:pick=[];removed=[]
- data={'backend':'quadratic_exchange','source_a':params['source_a'],'source_b':params['source_b'],'candidate_a':params['candidate_a'],'candidate_b':params['candidate_b'],'selected_indices':pick,'removed_indices':removed,'minimum_gain':gain,'solver_status':str(result.message)}
+ if decompose:
+  from .exchange_components import search_components
+  pick,removed,status=search_components(m,n,a,b,i,j,seconds)
+ else:
+  rows=np.r_[np.repeat(np.arange(ne),2),np.repeat(np.arange(ne,ne+e),2)];cols=np.r_[np.c_[a,m+b].ravel(),np.c_[i,j].ravel()];v=np.r_[np.tile([1.,-1.],ne),np.ones(2*e)]
+  matrix=coo_matrix((v,(rows,cols)),shape=(ne+e,m+n)).tocsr();obj=np.r_[-np.ones(m),np.ones(n)];matrix=vstack([matrix,coo_matrix(obj.reshape(1,-1))],format='csr');up=np.r_[np.zeros(ne),np.ones(e),-float(gain)]
+  result=milp(obj,integrality=np.ones(m+n),bounds=Bounds(0,1),constraints=LinearConstraint(matrix,-np.inf,up),options={'time_limit':float(seconds),'presolve':True})
+  pick=[];removed=[]
+  if result.x is not None:
+   pick=np.flatnonzero(result.x[:m]>.5).tolist();removed=np.flatnonzero(result.x[m:]>.5).tolist()
+   if len(pick)-len(removed)<gain:pick=[];removed=[]
+  status=str(result.message)
+ data={'backend':'quadratic_exchange','source_a':params['source_a'],'source_b':params['source_b'],'candidate_a':params['candidate_a'],'candidate_b':params['candidate_b'],'selected_indices':pick,'removed_indices':removed,'minimum_gain':gain,'solver_status':status}
  return Artifact('search_result',data,{},Verification('unverified','numerical exchange proposal; independent exact replay required'))
 
 

@@ -13,7 +13,7 @@ from .cavity_repacking import verify_exact
 def search(inputs,params,context):
  from scipy.optimize import milp,Bounds,LinearConstraint
  from scipy.sparse import coo_matrix,vstack
- check_params(params,('source','candidates','metric','seconds','minimum_gain'))
+ check_params(params,('source','candidates','metric','seconds','minimum_gain','decompose'))
  if inputs:raise ValueError('projective exchange takes no inputs')
  X=params.get('source');Q=params.get('candidates');metric=params.get('metric')
  if not isinstance(X,list) or not X or not isinstance(X[0],list) or not X[0]:raise ValueError('nonempty source required')
@@ -23,7 +23,8 @@ def search(inputs,params,context):
  if metric is None:metric=[1]*d
  if not isinstance(metric,list) or len(metric)!=d or any(type(x) is not int or x<=0 for x in metric):raise ValueError('positive integer diagonal metric required')
  n=len(X);m=len(Q);context.limit('max_materialized_points',n+m);context.limit('max_codewords',m);context.limit('max_pairs',m*(m-1)//2+m*n);context.limit('max_rank_work',(m*(m-1)//2+m*n)*d)
- seconds=params.get('seconds',5);gain=params.get('minimum_gain',1)
+ seconds=params.get('seconds',5);gain=params.get('minimum_gain',1);decompose=params.get('decompose',False)
+ if type(decompose) is not bool or (decompose and gain!=1):raise ValueError('component mode requires gain 1 and boolean decompose')
  if type(seconds) not in (int,float) or not isfinite(seconds) or seconds<=0:raise ValueError('seconds must be positive')
  if type(gain) is not int or gain<1:raise ValueError('minimum_gain must be positive')
  context.limit('solver_seconds',seconds)
@@ -41,13 +42,18 @@ def search(inputs,params,context):
   for k in range(len(bad)):bad[k,:st+k+1]=False
   a,b=np.where(bad);ii.append(a+st);jj.append(b)
  a=np.concatenate(bi);b=np.concatenate(bj);i=np.concatenate(ii);j=np.concatenate(jj);ne=len(a);e=len(i)
- rows=np.r_[np.repeat(np.arange(ne),2),np.repeat(np.arange(ne,ne+e),2)];cols=np.r_[np.c_[a,m+b].ravel(),np.c_[i,j].ravel()];values=np.r_[np.tile([1.,-1.],ne),np.ones(2*e)];A=coo_matrix((values,(rows,cols)),shape=(ne+e,m+n)).tocsr();obj=np.r_[-np.ones(m),np.ones(n)];A=vstack([A,coo_matrix(obj.reshape(1,-1))],format='csr');up=np.r_[np.zeros(ne),np.ones(e),-float(gain)]
- r=milp(obj,integrality=np.ones(m+n),bounds=Bounds(0,1),constraints=LinearConstraint(A,-np.inf,up),options={'time_limit':float(seconds),'presolve':True})
- pick=[];removed=[]
- if r.x is not None:
-  pick=np.flatnonzero(r.x[:m]>.5).tolist();removed=np.flatnonzero(r.x[m:]>.5).tolist()
-  if len(pick)-len(removed)<gain:pick=[];removed=[]
- data={'backend':'projective_exchange','source':X,'candidates':Q,'metric':metric,'selected_indices':pick,'removed_indices':removed,'solver_status':str(r.message),'minimum_gain':gain}
+ if decompose:
+  from .exchange_components import search_components
+  pick,removed,status=search_components(m,n,a,b,i,j,seconds)
+ else:
+  rows=np.r_[np.repeat(np.arange(ne),2),np.repeat(np.arange(ne,ne+e),2)];cols=np.r_[np.c_[a,m+b].ravel(),np.c_[i,j].ravel()];values=np.r_[np.tile([1.,-1.],ne),np.ones(2*e)];A=coo_matrix((values,(rows,cols)),shape=(ne+e,m+n)).tocsr();obj=np.r_[-np.ones(m),np.ones(n)];A=vstack([A,coo_matrix(obj.reshape(1,-1))],format='csr');up=np.r_[np.zeros(ne),np.ones(e),-float(gain)]
+  r=milp(obj,integrality=np.ones(m+n),bounds=Bounds(0,1),constraints=LinearConstraint(A,-np.inf,up),options={'time_limit':float(seconds),'presolve':True})
+  pick=[];removed=[]
+  if r.x is not None:
+   pick=np.flatnonzero(r.x[:m]>.5).tolist();removed=np.flatnonzero(r.x[m:]>.5).tolist()
+   if len(pick)-len(removed)<gain:pick=[];removed=[]
+  status=str(r.message)
+ data={'backend':'projective_exchange','source':X,'candidates':Q,'metric':metric,'selected_indices':pick,'removed_indices':removed,'solver_status':status,'minimum_gain':gain}
  return Artifact('search_result',data,{},Verification('unverified','numerical exchange proposal; exact replay required'))
 
 
