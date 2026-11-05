@@ -412,3 +412,13 @@ use a budgeted Python-integer fallback to avoid overflow. The supplied
 `group13_quadratic_benchmark.json` exactly replays the known 1,154-point
 configuration from supplied coordinates; the related extension probe is a
 numerical search, not a new record. Both require `--budget max_nodes=1200`.
+
+`group16_partial_benchmark.json` replays a supplied 4,320-point 16D code;
+`group16_partial_extension_probe.json` splits selected blocker orbits and
+searches for one additional point. Run these with `--budget max_nodes=250
+--budget max_gram_entries=20000000`. The latter is an unverified numerical
+search, and the former is not a rediscovery.
+
+Exact rational diagonal generators may be written compactly as
+`{"diagonal": [...], "denominator": 1}` instead of a dense matrix. The same
+orthogonality and metric-preservation checks apply.

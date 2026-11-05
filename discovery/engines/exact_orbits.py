@@ -20,9 +20,14 @@ def _generators(raw,d,context):
     context.limit('max_rank_work',3*len(raw)*d*d*d)
     result=[]
     for item in raw:
-        if not isinstance(item,dict) or set(item)!={'matrix','denominator'}:
-            raise ValueError('Generator needs integer matrix and positive denominator')
-        matrix=item['matrix'];den=integer(item['denominator'],'generator denominator')
+        if not isinstance(item,dict) or set(item) not in ({'matrix','denominator'},{'diagonal','denominator'}):
+            raise ValueError('Generator needs an integer matrix or diagonal and positive denominator')
+        den=integer(item['denominator'],'generator denominator')
+        if 'diagonal' in item:
+            diag=item['diagonal']
+            if not isinstance(diag,list) or len(diag)!=d or any(type(x) is not int for x in diag):raise ValueError('Exact diagonal generator dimension mismatch')
+            matrix=[[diag[i] if i==j else 0 for j in range(d)] for i in range(d)]
+        else:matrix=item['matrix']
         context.limit('max_rational_bits',den.bit_length())
         if not isinstance(matrix,list) or len(matrix)!=d or any(not isinstance(row,list) or len(row)!=d for row in matrix):
             raise ValueError('Exact generator dimension mismatch')
@@ -146,3 +151,4 @@ def verify_artifact(artifact,context=None):
 OPERATORS={'groups.integer_orbit':integer_orbit}
 INPUT_KINDS={'groups.integer_orbit':()}
 OUTPUT_KINDS={'groups.integer_orbit':('spherical_code',)}
+

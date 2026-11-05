@@ -24,6 +24,11 @@ class PartialGroupTests(unittest.TestCase):
   data={'backend':'exact_partial_group_orbits','groups':[[],[]],'seed_vectors':[[1,1,0],[1,0,1]],'metric':[1,1,1]};self.assertEqual(verify_exact(Artifact('implicit_spherical_code',data),self.ctx).status,'exact')
   data['seed_vectors']=[[2,1,0],[1,1,0]]
   with self.assertRaisesRegex(ValueError,'separation'):verify_exact(Artifact('implicit_spherical_code',data),self.ctx)
+ def test_compact_diagonal_generator(self):
+  p=deepcopy(self.p);p['orbit_specs'][0]['generators']=[{'diagonal':[-1,-1],'denominator':1}]
+  r=partial_search([],p,self.ctx);a=certify_partial([r],{},self.ctx);self.assertEqual(a.facts['cardinality'],3)
+  p['orbit_specs'][0]['generators']=[{'diagonal':[-1,2],'denominator':1}]
+  with self.assertRaisesRegex(ValueError,'orthogonal'):partial_search([],p,self.ctx)
  def test_weighted_metric_and_metric_preservation(self):
   p=deepcopy(self.p);p['metric']=[1,2];r=partial_search([],p,self.ctx);a=certify_partial([r],{},self.ctx);self.assertEqual(a.facts['cardinality'],3);self.assertEqual(verify_artifact(a,self.ctx).status,'exact')
   p['orbit_specs'][0]['generators']=[{'matrix':[[0,1],[1,0]],'denominator':1}]
