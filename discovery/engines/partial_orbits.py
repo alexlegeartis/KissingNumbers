@@ -235,3 +235,89 @@ def partial_sign_orbits(inputs, params, context):
 OPERATORS = {'search.partial_sign_orbits':partial_sign_orbits}
 INPUT_KINDS = {'search.partial_sign_orbits':('spherical_code',)}
 OUTPUT_KINDS = {'search.partial_sign_orbits':('spherical_code',)}
+
+
+
+def rational_image_exchanges(inputs, params, context):
+    """Search arbitrary partial unions of exact rational isometric images.
+
+    Each generator is an integer numerator matrix and a positive denominator.
+    ``words`` explicitly bounds the group words explored; no finite closure is
+    assumed. Every generated point, including every original point, is free
+    to be selected or removed by the shared-deletion exchange backend.
+    """
+    from math import gcd, lcm
+    check_params(params, ('generators', 'words', 'blocker_limit', 'candidate_limit', 'seconds', 'pool_seed'))
+    if len(inputs) != 1 or inputs[0].kind != 'spherical_code' or 'coordinates' not in inputs[0].data:
+        raise ValueError('rational_image_exchanges requires one explicit integer spherical code')
+    src = inputs[0]
+    if verify_artifact(src, context).status != 'exact':
+        raise ValueError('Independently exact source required')
+    rows = src.data['coordinates']; dim = len(rows[0]); weights = src.data.get('weights', [1]*dim)
+    generators = params.get('generators')
+    if not isinstance(generators, list):
+        raise ValueError('generators must be a list of rational matrices')
+    gen = []
+    for item in generators:
+        if not isinstance(item, dict) or set(item) != {'numerator', 'denominator'}:
+            raise ValueError('each generator requires numerator and denominator')
+        m, den = item['numerator'], item['denominator']
+        integer(den, 'denominator', 1)
+        if not isinstance(m, list) or len(m) != dim or any(not isinstance(r, list) or len(r) != dim or any(type(x) is not int for x in r) for r in m):
+            raise ValueError('generator numerator must be a square integer matrix')
+        for r in m:
+            for x in r: context.limit('max_rational_bits', abs(x).bit_length())
+        # A^T W A = den^2 W, evaluated with unbounded Python integers.
+        for i in range(dim):
+            for j in range(dim):
+                if sum(weights[k]*m[k][i]*m[k][j] for k in range(dim)) != (den*den*weights[i] if i == j else 0):
+                    raise ValueError('generator is not an isometry for the source metric')
+        gen.append((m,den))
+    words = params.get('words', [[i] for i in range(len(gen))])
+    if not isinstance(words, list) or any(not isinstance(w, list) or any(type(i) is not int or not 0 <= i < len(gen) for i in w) for w in words):
+        raise ValueError('words must be lists of generator indices')
+    context.limit('max_materialized_points', len(rows)*(len(words)+1))
+    context.limit('max_rank_work', dim**3*(len(gen)+sum(map(len,words))) + len(rows)*dim*dim*len(words))
+    identity = [[int(i == j) for j in range(dim)] for i in range(dim)]
+    transforms = []
+    for word in words:
+        mat, den = identity, 1
+        for index in word:
+            other, d = gen[index]
+            mat = [[sum(other[i][k]*mat[k][j] for k in range(dim)) for j in range(dim)] for i in range(dim)]
+            den *= d
+            common = den
+            for r in mat:
+                for x in r: common = gcd(common, abs(x))
+            if common > 1:
+                mat = [[x//common for x in r] for r in mat]; den //= common
+            context.limit('max_rational_bits', max([den.bit_length()]+[abs(x).bit_length() for r in mat for x in r]))
+        transforms.append((mat,den))
+    scale = 1
+    for _,den in transforms:
+        scale = lcm(scale,den)
+        context.limit('max_rational_bits', scale.bit_length())
+    scaled_source = [[scale*x for x in row] for row in rows]
+    for row in scaled_source:
+        for value in row: context.limit('max_rational_bits', abs(value).bit_length())
+    context.limit('max_rational_bits', (src.data['norm_squared']*scale*scale).bit_length())
+    images = []
+    for mat,den in transforms:
+        factor = scale//den
+        for row in rows:
+            image = [factor*sum(mat[i][j]*row[j] for j in range(dim)) for i in range(dim)]
+            for value in image: context.limit('max_rational_bits', abs(value).bit_length())
+            images.append(image)
+    result = select_partial_orbits(scaled_source,weights,src.data['norm_squared']*scale*scale,images,[],context,
+        blocker_limit=params.get('blocker_limit',len(rows)),candidate_limit=params.get('candidate_limit',20000),
+        seconds=params.get('seconds',1),pool_seed=params.get('pool_seed'))
+    data = dict(result.data)
+    data['search'] = dict(data['search'], generator_count=len(gen), group_words=words,
+        common_denominator=scale, construction='individually selectable rational isometric images')
+    report = verify_integer_spherical(data,context)
+    return Artifact('spherical_code',data,report.details['facts'],report)
+
+
+OPERATORS['search.rational_image_exchanges'] = rational_image_exchanges
+INPUT_KINDS['search.rational_image_exchanges'] = ('spherical_code',)
+OUTPUT_KINDS['search.rational_image_exchanges'] = ('spherical_code',)
