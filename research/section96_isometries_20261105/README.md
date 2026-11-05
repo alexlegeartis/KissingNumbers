@@ -153,3 +153,14 @@ the first four blocks and a shared choice on the remaining blocks, while
 `search.py 24 4 0 0 tail-odd` permits all 24 choices independently. Set
 `SECTION_RESTARTS` to control randomized oracle effort. These choices are
 still searches; no compatibility is inferred from the parity floor alone.
+
+There is an exact warning against treating the mixed-parity construction as a
+random packing problem. Choose a target uniformly among binary words whose
+first four blocks have weight two and whose other 20 blocks have odd parity.
+For each fixed point of the original even section, probability of distance
+exactly 20 is `(1/6)^4 (1/2)^20`: the first four blocks must match exactly,
+and each remaining odd block must differ in one bit. The even section has
+21,743,271,936 points, so the expected number of such distance-20 neighbors is
+exactly 16. `verify_parity_average.py` checks the local counts and arithmetic.
+This is an average over all mixed-parity target words, not a theorem that
+every target has a neighbor or that a structured transformed code fails.
