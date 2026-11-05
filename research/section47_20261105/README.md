@@ -34,3 +34,12 @@ the central layer and is not claimed exhaustive beyond that sufficient test.
 Run `python research/section47_20261105/verify.py`. It needs SymPy and checks
 all moment and dual identities with rational arithmetic; no numerical LP
 status is used for the proof.
+
+A separate exact calculation addresses the **known** 23,766,960-point section,
+using a minimal normal u. Each point projected from the u·x = +1 layer conflicts
+with at least 15,520 existing section points, while each section point blocks
+at most 9,720 such projected points. Double-counting incidences shows that
+adding any number of points from that one layer while deleting arbitrary
+section points cannot give a net gain. The same holds for the -1 layer alone.
+This does **not** rule out adding points from both layers together, or replacing
+points using other shapes; shared deletions can make a joint search different.
