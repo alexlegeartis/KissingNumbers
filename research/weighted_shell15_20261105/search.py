@@ -2,13 +2,13 @@ import numpy as np,collections,sys
 from pathlib import Path
 from scipy.sparse import coo_matrix
 from scipy.optimize import milp,Bounds,LinearConstraint
-root=Path(__file__).parent;z=np.load(root/'source.npz');X=z['X'].astype(np.int16)*12;g=z['g'].astype(np.int16);z=np.load(root/'pool.npz');Q=z['Q'];B=z['B'];cost=(B!=65535).sum(1);rng=np.random.default_rng(159913)
+root=Path(__file__).parent;z=np.load(root/'source.npz');X=z['X'].astype(np.int16)*12;g=z['g'].astype(np.int16);z=np.load(root/'pool.npz');v=np.load(root/'sparse_low.npz');Q=np.r_[z['Q'],v['Q']];B=np.r_[z['B'],v['blockers']];_,idx=np.unique(Q,axis=0,return_index=True);Q=Q[idx];B=B[idx];cost=(B!=65535).sum(1);rng=np.random.default_rng(159913)
 def category(V):
  a=V[:,:14];t=V[:,14];out=np.full(len(V),6,np.int8)
  e=(t==0)&(np.count_nonzero(a,axis=1)==4)&np.isin(a,[-24,0,24]).all(1);h=(np.abs(a)==12).all(1)&(np.abs(t)==12);l=(np.abs(t)==24);axes=(t==0)&(np.count_nonzero(a,axis=1)==1)&(np.abs(a)==48).any(1)
  out[e]=0;out[h&(t==12)]=1;out[h&(t==-12)]=2;out[l&(t==24)]=3;out[l&(t==-24)]=4;out[axes]=5
  return out
-kind=category(Q);source_kind=category(X);assert np.bincount(source_kind,minlength=7).tolist()==[1456,512,512,28,28,28,0];assert (kind==6).sum()==195
+kind=category(Q);source_kind=category(X);assert np.bincount(source_kind,minlength=7).tolist()==[1456,512,512,28,28,28,0];assert (kind==6).sum()==5120
 trials=int(sys.argv[sys.argv.index('--trials')+1]) if '--trials' in sys.argv else 1000
 seconds=float(sys.argv[sys.argv.index('--seconds')+1]) if '--seconds' in sys.argv else 3
 seeds=np.flatnonzero((cost>=2)&(cost<=10)&(kind==6));low_seeds=seeds[cost[seeds]<=8];assert len(low_seeds)>0
