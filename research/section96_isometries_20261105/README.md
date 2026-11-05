@@ -109,3 +109,15 @@ source orbit that must be removed. `python verify_sampled_conflicts.py` independ
 all words, section conditions, distances, orbit labels and matching from
 `sample92_conflicts.json`. This is a very small sample relative to the 82,944
 candidate orbits, and does not rule out a useful partial exchange.
+
+A useful general obstruction follows immediately. Suppose T changes at most
+five blocks relative to the original Gray map and preserves the set of
+weight-two words in each of the first m blocks. Then x and T(x) lie in their
+respective sections for exactly the same messages and differ in at most
+20 bits. They conflict. Pair each candidate 4C-orbit with the original orbit
+of the same message. Complement equivariance makes this well-defined, and the
+pairing is injective because the transformed section is a subcode of C before
+T is applied. These conflict edges form a matching saturating the candidate
+orbits, so no selection of the two whole-orbit families can exceed the size of
+the original section. This does not apply to maps changing six or more blocks,
+those changing section membership, partial 4C-orbits, or other layers.
