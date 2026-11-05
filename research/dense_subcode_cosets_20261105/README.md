@@ -61,3 +61,12 @@ A coordinate-structured subcode can be searched with
 The selected coordinates are constrained to agree inside the subcode. For this
 particular block, the complete quotient graph search exhausts without finding
 nine compatible cosets; this is not an exclusion for other subcodes.
+
+The seeded coordinate campaign (`coordinate_campaign.py`) sampled 1,000
+four-coordinate blocks with seed 326913; 985 were distinct. In the original
+run, 999 trial searches exhausted and trial 711 timed out after three seconds.
+A 120-second rerun of block `[8,10,12,15]` also exhausted. None found a ninth
+coset. This result concerns only these particular subcodes and their complete
+quotient graphs, and says nothing about other constructions. A search proposal
+remains unverified until separately certified and checked against all spherical
+layers and the current literature.
