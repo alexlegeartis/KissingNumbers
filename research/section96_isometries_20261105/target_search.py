@@ -21,11 +21,11 @@ for _ in range(int(os.getenv('TARGET92_ROUNDS','100'))):
  if res.x is None:print('no incumbent',iteration,res.message,flush=True);break
  rounded=np.rint(res.x).astype(np.int16);assert np.all((rounded==0)|(rounded==1));checks=csr_matrix(np.asarray(rows))@rounded;assert np.all(checks>=np.asarray(lb)-1e-8) and np.all(checks<=np.asarray(ub)+1e-8)
  target=np.array([menu[j][np.argmax(res.x[offset[j]:offset[j+1]])] for j in range(24)],np.uint8);word=''.join(f'{q:x}' for q in target)
- p=subprocess.run(['./target_oracle',word,os.getenv('TARGET92_RESTARTS','2000'),str(920020+iteration)],text=True,capture_output=True)
+ p=subprocess.run(['./exact_target_decoder',word],text=True,capture_output=True)
  if p.returncode:raise RuntimeError((p.returncode,p.stderr))
  match=re.search(r'WITNESS B ([0-7]{12}) distance (\d+)',p.stdout)
  if not match:
-  print('UNRESOLVED',iteration,word,p.stdout.strip(),flush=True);pathlib.Path(f'search92_target_unresolved_{iteration}.json').write_text(json.dumps({'target':word,'scope':'no proof; source oracle incomplete'}))
+  assert p.stdout.startswith('EXACT_HOLE');print('EXACT DECODER HOLE',iteration,word,p.stdout.strip(),'independent replay required',flush=True);pathlib.Path(f'search92_exact_hole_candidate_{iteration}.json').write_text(json.dumps({'target':word,'scope':'exact decoder output; independent replay and literature comparison required'}));break
  else:
   w=match[1];b=np.array(list(w),int);sourceword=gray[(b@G)%8];d=int(wt[sourceword^target].sum());assert d==int(match[2]) and d<24
   

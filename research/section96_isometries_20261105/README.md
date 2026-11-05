@@ -184,18 +184,51 @@ arithmetic. Compile the first with C++17; the second uses bounded NumPy chunks.
 `target_search.py` takes a different route: it proposes a mixed-parity target
 word directly, and whenever a conflicting source word is found it adds distance
 cuts for all 4,096 translates under 4C. Each cut is valid for the full source
-section. The source-orbit list is checkpointed and can be restored. The search
-saves an unresolved target only when a randomized decoder fails to find a bad
-pair; such a target is not a certified hole. The 4C orbit of any one target has
+section. The source-orbit list is checkpointed and can be restored. For each target,
+the exact decoder exhausts every source word that could be at distance 20 or 22.
+An `EXACT DECODER HOLE` must still be replayed by the independently implemented
+`verify_exact_target.py`; it is not automatically registered as a record. The
+4C orbit of any one target has
 4,096 mutually compatible words because the binary Golay code has minimum
 weight eight, but even a certified new orbit alone would not beat the current
 92D repository count. More orbits or compatible accessory layers would still
 be needed.
 
-From this directory, compile `target_oracle.cpp` as `target_oracle`; then run
-`python verify_target_orbit_cuts.py` and `python target_search.py`. Environment
-variables `TARGET92_ROUNDS`, `TARGET92_RESTARTS`, `TARGET92_MAX_ORBITS`, and
-`TARGET92_CHECKPOINT` control the bounded run and its checkpoint. The source
-oracle is incomplete, the optimization is numerical, and all proposals need
-independent exact proof. The orbit-cut checker enumerates all 4,096 translates
+From this directory, compile `exact_target_decoder.cpp` as
+`exact_target_decoder`; then run `python verify_target_orbit_cuts.py` and
+`python target_search.py`. Environment variables `TARGET92_ROUNDS`,
+`TARGET92_MAX_ORBITS`, and `TARGET92_CHECKPOINT` control the bounded run and
+its checkpoint. The target optimizer is numerical; every candidate hole needs
+independent exact replay and a comparison against the current record. The orbit-cut checker enumerates all 4,096 translates
 of one source word and compares them to direct Z8 encoding.
+
+The first moment for all forbidden pairs is also explicit. Relative to a
+distance-20 target, distance 22 can arise by changing one of four prefix
+blocks in four ways, or by changing one of 20 odd blocks from distance one
+to distance three in the same number of ways. Thus a uniform target has 576
+source neighbors at distance 22 and 592 at distance below 24 on average.
+This first moment does not by itself bound the fraction of targets with a
+conflict; the proven 94.85% coverage statement above uses the second moment of
+the distance-20 count.
+
+## Exact mixed-parity target decoding
+
+For a mixed-parity 92D target, every source point has distance at least 20.
+Distance below 24 permits at most one two-bit excess over that floor. The first
+12 code coordinates determine the 12 Z8 message coefficients because the
+corresponding generator matrix is triangular with odd diagonal. In the first
+four blocks there is one allowed exact match and four choices with two-bit
+excess; in each of the next eight there are four choices at distance one and
+four at distance three. Hence there are exactly
+`(1 + 4*4 + 8) * 4^8 = 1,638,400` first-12-coordinate patterns that can lead
+to a conflict. The decoder tests the remaining 12 blocks for every pattern
+unless it finds a witness sooner. Exhaustion proves no source-section conflict
+at distance below 24 for that target.
+
+Compile `exact_target_decoder.cpp` and supply a 24-hex-digit target to it.
+`verify_exact_target.py TARGET` is an independent vectorized enumeration of
+the same complete set and reports the exact number of conflicting source words.
+The implementations were cross-checked on two targets. A sample of 1,000
+uniform mixed-parity targets all had conflicts. This is a finite sample, not a
+covering theorem. A certified target yields one 4,096-point orbit compatible
+with the source section, but on its own still falls below the repository record.
