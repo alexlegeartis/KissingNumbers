@@ -102,7 +102,10 @@ codes. It is an initial building block for a shared-blocker exchange search,
 not yet an optimizer over the full orbit pool.
 
 A first fixed-map probe supplied 499 explicit conflict edges, containing a
-matching of 497. `python verify_sampled_conflicts.py` independently replays
+matching of 497, saturating all 497 sampled candidate orbits. Therefore, for
+this fixed map, no replacement using only these 497 candidate orbits can
+produce a net gain over the original section: each candidate has a distinct
+source orbit that must be removed. `python verify_sampled_conflicts.py` independently replays
 all words, section conditions, distances, orbit labels and matching from
 `sample92_conflicts.json`. This is a very small sample relative to the 82,944
 candidate orbits, and does not rule out a useful partial exchange.

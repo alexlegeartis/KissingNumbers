@@ -21,5 +21,5 @@ for astr,bstr,declared in z['witnesses']:
  assert all(M[j][x[j]].bit_count()==2 and gray(y[j]).bit_count()==2 for j in range(m))
  d=sum((M[j][x[j]]^gray(y[j])).bit_count() for j in range(24));assert d==declared and d<24
  u=tuple(q%4 for q in a);v=tuple(q%4 for q in b);edges.add((L.setdefault(u,len(L)),R.setdefault(v,len(R))))
-i,j=zip(*edges);A=coo_matrix((np.ones(len(edges),np.uint8),(i,j)),shape=(len(L),len(R))).tocsr();size=int((maximum_bipartite_matching(A,perm_type='column')>=0).sum());assert size==497
+i,j=zip(*edges);A=coo_matrix((np.ones(len(edges),np.uint8),(i,j)),shape=(len(L),len(R))).tocsr();size=int((maximum_bipartite_matching(A,perm_type='column')>=0).sum());assert len(L)==497 and len(R)==499 and size==497
 print('verified witnesses',len(z['witnesses']),'distinct edges',len(edges),'matching',size)
