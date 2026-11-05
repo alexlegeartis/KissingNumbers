@@ -33,7 +33,7 @@ for it in range(500):
  matched=None
  for odd in (0,):
   for ref in range(1):
-   p=subprocess.run(['./oracle',f'search96_section_{ng}_{m}_current.bin',str(200),str(ref),str(odd),str(m)],capture_output=True,text=True)
+   p=subprocess.run((['./oracle_m10',f'search96_section_{ng}_{m}_current.bin','50000'] if m==10 else ['./oracle',f'search96_section_{ng}_{m}_current.bin',str(200),str(ref),str(odd),str(m)]),capture_output=True,text=True)
    if p.returncode != 0:raise RuntimeError(f'oracle failed ({p.returncode}): {p.stderr}')
    matched=re.search(r'WITNESS A ([0-7]{12}) B ([0-7]{12}) distance (\d+)',p.stdout)
    if matched: break

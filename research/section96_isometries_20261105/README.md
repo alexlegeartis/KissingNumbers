@@ -39,3 +39,12 @@ is m. Unresolved proposals are saved as NumPy arrays solely for further tests.
 The source currently uses a fixed number of randomized oracle restarts; no
 result is promoted automatically. All files are local and no leaderboard is
 modified by running this experiment.
+
+For the 86D section (`m=10`), the same conditional count is 7,739,670,528,
+compared with the repository figure 6,225,165,512. Compile the additional
+`oracle_m10.cpp` as `oracle_m10` before running `search.py 10 10`. For each
+randomly chosen pair of valid ten-coordinate prefixes, this oracle exhausts
+all 64×64 combinations of the remaining message coefficients. The prefix
+pairs themselves are sampled, so failure to find a forbidden pair does not
+certify global compatibility. This extra search targets 86D directly rather
+than requiring a valid full 96D union.
