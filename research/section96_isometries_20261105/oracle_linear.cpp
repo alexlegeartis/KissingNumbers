@@ -1,0 +1,11 @@
+#include <algorithm>
+#include <cmath>
+#include <cstdio>
+#include <cstdlib>
+#include <fstream>
+#include <random>
+using namespace std;
+int main(int argc,char**argv){if(argc<6)return 2;unsigned char map[24][8];ifstream f(argv[1],ios::binary);f.read((char*)map,sizeof(map));if(!f)return 2;int runs=atoi(argv[2]),m=atoi(argv[3]),u=atoi(argv[4]),v=atoi(argv[5]);if(m!=4||u<=0||v<=0||u==v||u>255||v>255)return 4;mt19937_64 R(argc>6?strtoull(argv[6],nullptr,10):2026110701);int g[]={7,1,4,4,2,7,3,3,4,7,2,1},G[12][24]={},gray[8];for(int i=0;i<12;i++){for(int j=0;j<12;j++)G[i][i+j]=g[j];G[i][23]=3;}for(int z=0;z<8;z++){gray[z]=0;for(int x=0;x<2;x++)for(int y=0;y<2;y++)gray[z]|=(((z>>2&1)^((z&1)*x)^((z>>1&1)*y))<<(2*x+y));}
+ int best=96;for(int run=0;run<runs;run++){int ca[12]={},cb[12]={},a[24]={},b[24]={};int parity=((R()&1)?u:0)^((R()&1)?v:0);for(int i=0;i<12;i++){if(i<m){int va[6],vb[6],na=0,nb=0;for(int z=0;z<8;z++){if(__builtin_popcount((unsigned)map[i][z])==2)va[na++]=z;if(__builtin_popcount((unsigned)gray[z])==2)vb[nb++]=z;}if(na!=6||nb!=6)return 3;ca[i]=(7*(va[R()%6]-a[i]))&7;cb[i]=(7*(vb[R()%6]-b[i]))&7;}else{ca[i]=2*(R()&3)+((parity>>(i-m))&1);cb[i]=R()&7;}for(int j=0;j<24;j++){a[j]=(a[j]+ca[i]*G[i][j])&7;b[j]=(b[j]+cb[i]*G[i][j])&7;}}
+ auto distance=[&](){int d=0;for(int j=0;j<24;j++)d+=__builtin_popcount((unsigned)(map[j][a[j]]^gray[b[j]]));return d;};int cur=distance();for(int it=0;it<300000;it++){int side=R()&1,i=m+R()%(12-m),na[24],nb[24],delta[12]={};if(side){if(R()&1){int t=(R()&1)?u:v;for(int k=m;k<12;k++)if(t>>(k-m)&1)delta[k]=(ca[k]^1)-ca[k];}else{int x=2*(R()&3)+(ca[i]&1);delta[i]=x-ca[i];}}else{delta[i]=int(R()&7)-cb[i];}int nd=0;for(int j=0;j<24;j++){int d=0;for(int k=m;k<12;k++)d+=delta[k]*G[k][j];na[j]=(a[j]+(side?d:0))&7;nb[j]=(b[j]+(side?0:d))&7;nd+=__builtin_popcount((unsigned)(map[j][na[j]]^gray[nb[j]]));}double T=.3+3.0*(1.0-double(it%30000)/30000);if(nd<=cur||double(R()>>11)*(1.0/9007199254740992.0)<exp((cur-nd)/T)){for(int k=m;k<12;k++){if(side)ca[k]+=delta[k];else cb[k]+=delta[k];}for(int j=0;j<24;j++){a[j]=na[j];b[j]=nb[j];}cur=nd;}best=min(best,cur);if(cur<24){printf("WITNESS A ");for(int x:ca)printf("%d",x);printf(" B ");for(int x:cb)printf("%d",x);printf(" distance %d\n",cur);return 0;}}}printf("UNRESOLVED best %d\n",best);
+}
