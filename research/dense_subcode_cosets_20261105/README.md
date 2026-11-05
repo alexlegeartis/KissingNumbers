@@ -44,3 +44,14 @@ syndrome labels to explicit binary representatives and independently checks
 every span word and every cross-coset difference. This avoids requiring the
 whole quotient to fit the 19-bit certification backend. The same geometric
 replacement check then applies.
+
+For a more structural search, `--grouped --codimension 5
+--subgroup-dimension 2` first constructs a new four-coset subgroup of the
+quotient, then searches for eight additional compatible translates. A success
+would produce 36 cosets of a 2^12-word subcode, gaining 16,384 dense points.
+`--codimension 6 --subgroup-dimension 3` instead seeks nine groups of eight,
+for 72 cosets of a 2^11-word subcode and the same gain. The grouped search
+samples subgroups; it is not exhaustive over them. It certifies any success
+by explicit span-and-cross-coset enumeration, without requiring a full
+quotient-sized certificate. These searches remain unverified until they find
+and independently check a proposal.
