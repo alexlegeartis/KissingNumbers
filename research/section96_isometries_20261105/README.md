@@ -164,3 +164,19 @@ and each remaining odd block must differ in one bit. The even section has
 exactly 16. `verify_parity_average.py` checks the local counts and arithmetic.
 This is an average over all mixed-parity target words, not a theorem that
 every target has a neighbor or that a structured transformed code fails.
+
+The second moment can also be computed exactly. For two old-section words to
+be simultaneously at distance 20 from a mixed-parity target, their first four
+blocks must coincide. In each remaining block, two equal even words have four
+common odd neighbors at distance one, two even words at distance two have two,
+and antipodal even words have none. Gray distances depend only on the Z8
+coordinate difference. Enumerating the 8^8 code differences with first four
+coordinates zero gives E[Z²] = 34545/128, where Z counts forbidden distance-20
+neighbors. Together with E[Z]=16, Cauchy–Schwarz gives
+P(Z>0) ≥ 32768/34545 > 0.9485. Thus at most 1777/34545 of the mixed-parity
+section universe has no distance-20 conflict. This is a statement about the
+uniform universe, not a proof excluding a particular structured subcode.
+
+`second_moment.cpp` and `verify_second_moment.py` independently enumerate all
+16,777,216 differences and agree on the complete histogram and exact rational
+arithmetic. Compile the first with C++17; the second uses bounded NumPy chunks.

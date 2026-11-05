@@ -1,0 +1,4 @@
+#include <cstdint>
+#include <cstdio>
+using namespace std;
+int main(){int g[]={7,1,4,4,2,7,3,3,4,7,2,1},G[12][24]={};for(int i=0;i<12;i++){for(int j=0;j<12;j++)G[i][i+j]=g[j];G[i][23]=3;}uint64_t hist[21]={},excluded=0;unsigned __int128 sum=0;for(uint64_t t=0;t<(1ull<<24);t++){uint64_t x=t;int a[12]={};for(int i=4;i<12;i++){a[i]=x&7;x>>=3;}int zero=0;bool bad=false;for(int j=4;j<24;j++){int e=0;for(int i=4;i<12;i++)e+=a[i]*G[i][j];e&=7;if(e==4){bad=true;break;}if(!e)zero++;}if(bad)excluded++;else{hist[zero]++;sum+=(unsigned __int128)1<<(20+zero);}}for(int k=0;k<=20;k++)if(hist[k])printf("zeros %d count %llu\n",k,(unsigned long long)hist[k]);printf("excluded %llu\n",(unsigned long long)excluded);char out[80];int n=0;do{out[n++]='0'+sum%10;sum/=10;}while(sum);printf("WEIGHTED_SUM ");while(n)putchar(out[--n]);putchar('\n');}
