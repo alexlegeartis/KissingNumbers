@@ -51,7 +51,7 @@ def _clique(Q,D,target,deadline):
 
 
 def search(inputs,params,context):
- check_params(params,('length','parent_generator','codimension','minimum_distance','trials','seconds','seed','max_candidates','scramble_steps'))
+ check_params(params,('length','parent_generator','codimension','minimum_distance','trials','seconds','seed','max_candidates','scramble_steps','coordinate_equalities'))
  if inputs:raise ValueError('binary coset discovery takes no inputs')
  n=integer(params.get('length'),'length');context.limit('max_dimension',n);G=params.get('parent_generator')
  if not isinstance(G,list) or not G:raise ValueError('nonempty binary generator required')
@@ -60,13 +60,41 @@ def search(inputs,params,context):
  seconds=params.get('seconds',5)
  if type(seconds) not in (int,float) or not isfinite(seconds) or seconds<=0:raise ValueError('invalid seconds')
  context.limit('solver_seconds',seconds);context.limit('max_trials',trials);states=1<<(n-k+c);context.limit('max_codewords',states);context.limit('max_rank_work',trials*n*states);context.limit('max_gram_entries',limit*limit)
+ fixed=None;groups=params.get('coordinate_equalities')
+ if groups is not None:
+  if not isinstance(groups,list) or any(not isinstance(v,list) or len(v)<2 or any(type(j) is not int or not 0<=j<n for j in v) or len(set(v))!=len(v) for v in groups):raise ValueError('invalid coordinate equality groups')
+  equations=[]
+  for group in groups:
+   for j in group[1:]:equations.append(sum(((((g>>group[0])^(g>>j))&1)<<i) for i,g in enumerate(G)))
+  piv={}
+  for v in equations:
+   while v:
+    j=v.bit_length()-1
+    if j in piv:v^=piv[j]
+    else:piv[j]=v;break
+  masks=[]
+  for j in (j for j in range(k) if j not in piv):
+   v=1<<j
+   for i in sorted(piv):
+    if (v&piv[i]).bit_count()%2:v|=1<<i
+   masks.append(v)
+  fixed=[]
+  for mask in masks:
+   v=0
+   for i,g in enumerate(G):
+    if mask>>i&1:v^=g
+   fixed.append(v)
+  if len(fixed)!=k-c:raise ValueError('coordinate equalities do not have requested codimension')
  rng=np.random.default_rng(seed);deadline=monotonic()+seconds;stats=[];found=None;target=1<<c
- for trial in range(trials):
+ for trial in range(1 if fixed is not None else trials):
   if monotonic()>=deadline:break
   H=G[:]
-  for _ in range(steps):
-   i,j=map(int,rng.choice(k,2,replace=False));H[i]^=H[j]
-  K=_dual(H[:k-c],n);D=_distances(K,n);Q=np.flatnonzero(D>=d).astype(np.uint32);num=len(Q)
+  if fixed is None:
+   for _ in range(steps):
+    i,j=map(int,rng.choice(k,2,replace=False));H[i]^=H[j]
+   base=H[:k-c]
+  else:base=fixed
+  K=_dual(base,n);D=_distances(K,n);Q=np.flatnonzero(D>=d).astype(np.uint32);num=len(Q)
   if num>limit:stats.append({'trial':trial,'candidate_count':num,'status':'candidate_budget'});continue
   good=_clique(Q,D,d,deadline);alive=good.sum(1)>=target-1
   while alive.any():

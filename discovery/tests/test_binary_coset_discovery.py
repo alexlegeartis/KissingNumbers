@@ -15,6 +15,11 @@ class BinaryCosetDiscoveryTests(unittest.TestCase):
   with self.assertRaises(ValueError):search([],p,self.ctx)
   p['parent_generator']=[3,12];p['max_candidates']=2000
   with self.assertRaises(ValueError):search([],p,self.ctx)
+ def test_coordinate_equalities(self):
+  p={'length':4,'parent_generator':[3,12],'codimension':1,'minimum_distance':2,'coordinate_equalities':[[0,2]],'seconds':5,'max_candidates':16}
+  a=search([],p,self.ctx);self.assertIsNotNone(a.data['proposal']);self.assertGreater(certify([a],{},self.ctx).facts['cardinality'],4)
+  p['coordinate_equalities']=[[0,1]]
+  with self.assertRaises(ValueError):search([],p,self.ctx)
  def test_registry(self):
   r,_=registry();self.assertIn('search.binary_subcode_cosets',r);self.assertIn('codes.certify_binary_subcode_cosets',r)
 if __name__=='__main__':unittest.main()
