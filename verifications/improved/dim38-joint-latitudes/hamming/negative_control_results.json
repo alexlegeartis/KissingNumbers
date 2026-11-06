@@ -1,0 +1,18 @@
+[
+  {
+    "case": "duplicate_point",
+    "rejected": true
+  },
+  {
+    "case": "wrong_head_norm",
+    "rejected": true
+  },
+  {
+    "case": "missing_cap_owner",
+    "rejected": true
+  },
+  {
+    "case": "wrong_total",
+    "rejected": true
+  }
+]

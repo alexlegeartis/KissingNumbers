@@ -1,0 +1,25 @@
+{
+  "all_new_and_cross_layer_checks_passed": true,
+  "dimension": 38,
+  "lower_bound": 611638,
+  "gain": 116,
+  "counts": {
+    "retained_caps": 589548,
+    "equator": 13710,
+    "axes": 1596,
+    "retained_fano_grid": 6272,
+    "new_hamming_points": 512
+  },
+  "removed_cap_lines": 22,
+  "restored_cap_lines": 4,
+  "newly_removed_cap_lines": 6,
+  "new_new_pairs": 130816,
+  "maximum_new_new_numerator_over_21": 1280,
+  "new_grid_max_head_integer_product": 6,
+  "new_cap_max_body_product": 16,
+  "new_cap_max_head_product": 4,
+  "new_axis_max_head_product": 4,
+  "new_equator_max_body_product": 24,
+  "certificate_sha256": "3a58cfeb8906d64471ed87d056769aa995a4bbe3af7ba23b76251425816c7aac",
+  "arithmetic": "Exact int64 matrix products and integer comparisons after symbolic squaring. Baseline source proof must also be replayed."
+}

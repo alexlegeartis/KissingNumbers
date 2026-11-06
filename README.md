@@ -134,7 +134,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 35 | 415 308 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 334** | **SOTA** | +0.00626041% | — | since 2026-10-28 | [Parity-coordinated heads](verifications/improved/dim32-35-signed-layers/) | — |
 | 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **501 687** | **SOTA** | +3.5% | — | since 2026-10-24 | [Coxeter–Todd phase refill](verifications/improved/dim36-37-coxeter-todd/) | — |
 | 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **505 503** | **SOTA** | +1.1% | — | since 2026-10-24 | [Phase code + latitudes](verifications/improved/dim36-37-coxeter-todd/) | — |
-| 38 | 566 652 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **611 522** | **SOTA** | +7.92% | — | 2026-08-30 to 2026-09-28; since 2026-10-28 | [Fano-grid and cube-edge latitudes](verifications/improved/dim38-joint-latitudes/) | — |
+| 38 | 566 652 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **611 638** | **SOTA** | +7.94% | — | 2026-08-30 to 2026-09-28; since 2026-11-06 | [Orthogonal Hamming latitude replacement](verifications/improved/dim38-joint-latitudes/) | — |
 | 39 | 755 988 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **769 372** | **SOTA** | +1.76% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) | — |
 | 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/html/2607.20359v4) | **1 126 314** | **SOTA** | +3.14% | — | since 2026-10-26 | [Affine lattice shells](verifications/improved/dim40-affine-shells/) | — |
 | 41 | 1 324 472 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
@@ -331,11 +331,13 @@ its [documented earlier snapshot](common/manuscript_scope.json).
   (+15 each). Both proof representations, reconstruction and deliberate rejection
   checks pass. [Signed-layer proofs](verifications/improved/dim32-35-signed-layers/);
   [phase proofs and searches](verifications/improved/dim36-37-coxeter-todd/).
-- **38D: Fano planes, a Latin square and signed cube edges.** The construction
-  gives **611 522**, adding 1 248 latitude points and deleting 120 caps for a
-  net gain of **1 128**. [Two exact proofs](verifications/improved/dim38-joint-latitudes/refill/)
-  include all 22 147 840 latitude-pair checks. The 6 656-point latitude
-  population saturates this particular 63-support model, without a global optimum claim.
+- **38D: orthogonal Hamming heads beyond the cube-edge ceiling.** The construction
+  gives **611 638**, replacing 384 cube-edge points with 512 points and making
+  12 additional cap deletions for a net gain of **116**. Eight orthogonal
+  body lines, Hamming syndrome colors and a new norm split leave the old
+  63-support model. [Two exact proofs](verifications/improved/dim38-joint-latitudes/hamming/)
+  check all new interactions and retained layers; the cap-cap minimum-norm
+  argument retains its documented Golay/Leech source premise.
 - **43D: continuous heads with shared deletions.** Replacing 46 tiny points
   with 85 gives **2 919 782** (+39), including 3 447 explicit tiny points.
   [Two exact representations](verifications/improved/dim41-46-p48-heads/continuation43/)
@@ -502,7 +504,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | [`dim26-31-residual-completions`](verifications/improved/dim26-31-residual-completions/) | 26–31 | retained residual-head completions and exact exceptional pure tails; independent full replays |
 | [`dim25-collective-deformation`](verifications/improved/dim25-collective-deformation/) | 25 | collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons |
 | [`dim31-dual-centres`](verifications/improved/dim31-dual-centres/) | 31 | shared midpoint replacements and dual E7 centres; exact coordinate replay |
-| [`dim38-joint-latitudes`](verifications/improved/dim38-joint-latitudes/) | 38 | Fano-grid and cube-edge latitudes with shared cap deletions; two independent exact proofs |
+| [`dim38-joint-latitudes`](verifications/improved/dim38-joint-latitudes/) | 38 | Orthogonal Hamming latitude replacement; two exact proofs with inherited Golay/Leech minimum-norm premise |
 | [`dim39-deformed-orbits`](verifications/improved/dim39-deformed-orbits/) | 39 | reduced-symmetry dense sign orbits and retained sparse layers; two independent complete exact proofs |
 | [`dim40-affine-shells`](verifications/improved/dim40-affine-shells/) | 40 | three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products |
 | [`dim18-bent-hexagon`](verifications/improved/dim18-bent-hexagon/) | 18 | bent-coset hexagon over odd Barnes–Wall; matches Cohn’s current table |
@@ -584,7 +586,7 @@ comparison is given separately by its source.
 | 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 231 697 |
 | 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 247 972 |
 | 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 196 |
-| 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 522 |
+| 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 638 |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 372 |
 
 The retained 29–30D and 38–39D certificates exceed those intervening records.

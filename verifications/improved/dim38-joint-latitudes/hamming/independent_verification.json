@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "dimension": 38,
+  "total": 611638,
+  "gain_over_611522": 116,
+  "counts": {
+    "caps": 589548,
+    "equator": 13710,
+    "axes": 1596,
+    "grid": 6272,
+    "new": 512
+  },
+  "restored_cap_lines": [
+    56,
+    71,
+    73,
+    88
+  ],
+  "new_new_pairs": 130816,
+  "max_new_pair_numerator_denominator": [
+    1280,
+    21
+  ],
+  "max_grid_pair_numerator": 64,
+  "new_cap_maxima": [
+    16,
+    4
+  ],
+  "new_grid_tail_max": 12,
+  "new_axis_max": 4,
+  "new_equator_max": 24,
+  "certificate_sha256": "3a58cfeb8906d64471ed87d056769aa995a4bbe3af7ba23b76251425816c7aac",
+  "new_points_sha256": "3320b28af1ef1ba31d50b94a9e08c175db1992a46e514a1e622ad35dc78be4f8",
+  "scope": "Fresh independent Golay/Leech reconstruction, cap class/head checks, equator pairs, retained-grid pairs, all new interactions and restored-cap bounds. Retained cap-cap global minimum bound uses the source elementary Golay lattice minimum32 proof, not a fresh 9.6-billion Leech-pair enumeration. No external optimality/priority claim.",
+  "seconds": 5.61512303352356
+}

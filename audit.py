@@ -422,6 +422,7 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim3
         add(39, 769180, _package, 'source/verify.py: retained historical 256-element orbit certificate')
     if _package == 'dim38-joint-latitudes':
         add(38, 610394, _package, 'source/verify.py: retained historical joint-latitude certificate')
+        add(38, 611522, _package, 'refill/verify.py: retained historical Fano-grid/cube certificate')
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -2018,7 +2019,7 @@ if '--write-results' in sys.argv and not fail:
         'dim32-35-signed-layers': 'signed octad layers, coordinated heads and shared root-star deletions; two independent exact proofs',
         'dim25-collective-deformation': 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons',
         'dim31-dual-centres': 'shared midpoint replacements and dual E7 centres; exact coordinate replay',
-        'dim38-joint-latitudes': 'Fano-grid and cube-edge latitudes with shared cap deletions; two independent exact proofs',
+        'dim38-joint-latitudes': 'Orthogonal Hamming latitude replacement; two exact proofs with inherited Golay/Leech minimum-norm premise',
         'dim39-deformed-orbits': '64-element nonbinary sign orbits with subgroup continuation; two independent complete exact orbit proofs',
         'dim40-affine-shells': 'three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products',
         'dim38-latitude-extension': '24 additional latitude points and an exact rational axis rotation over the Leech caps and Lin equator',
@@ -2060,7 +2061,7 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("The further 28 October continuation gives 370376 in 33D (+8), 390990 in 34D (+8), 415334 in 35D (+20), 501687 in 36D (+15) and 505503 in 37D (+15), compared with the preceding repository certificates. Shared root-star deletions and a latitude-preserving phase refill have two independent exact proof routes, reconstruction and rejection controls. Broader complete-support, signed-region and base-choice searches have not yielded a larger verified gain in this pass. The 32D, 38D and 39D bounds are unchanged.")
     out.append("")
-    out.append("The 28 October Fano-grid and cube-edge construction gives 611522 in 38D (+1128 over the preceding 610394-point repository certificate). It replaces 5408 latitude points with 6656 and removes 120 caps. Two independent exact proofs check all retained layers, and the expanded replay checks all 22147840 distinct latitude pairs. A small recipe reconstructs the certificate without search. The 6656-point latitude population saturates this particular 63-support model; other supports and norm splits remain open. The manuscript remains deferred.")
+    out.append("The 6 November orthogonal Hamming construction gives 611638 in 38D (+116 over the preceding 611522-point repository certificate). It replaces 384 cube-edge points by 512 Hamming points, restores four cap lines and removes six new lines, for 12 additional cap deletions. Two exact proof routes check the new layer and retained components; the cap-cap bound inherits the source Golay/Leech minimum-norm argument rather than an exhaustive Leech-pair enumeration. Full seven-coordinate heads and a new norm split escape the old 63-support ceiling. The manuscript remains deferred.")
     out.append("")
     out.append('The 6 November antipodal-direction completion gives 58,543,525 in 60D (+575,182 over the preceding repository construction). A known antipodal 840-point quaternionic code supplies 420 direction pairs instead of 378; the 841-point pole code is independent. Joint selection and reassignment of complete classes adds a further 704 points over the first 58,542,821-point composition. Exact tail, pole, base-class, isometry and full-coordinate disjointness checks pass. The published P48 minimum and mother-shell population remain explicit inputs. The manuscript is unchanged.')
     out.append("")
