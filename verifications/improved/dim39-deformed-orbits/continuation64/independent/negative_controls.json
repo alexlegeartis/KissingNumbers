@@ -1,0 +1,10 @@
+{
+  "duplicate_representative": {
+    "rejected": true,
+    "stderr": "VIOLATION 0 1 0 99999996241310"
+  },
+  "invalid_self_orbit": {
+    "rejected": true,
+    "stderr": "group 1/2\nVIOLATION 0 0 1 94487899804860"
+  }
+}

@@ -1,0 +1,96 @@
+Structural and all sparse checks passed; full relative product check starting.
+group 1/64
+group 2/64
+group 3/64
+group 4/64
+group 5/64
+group 6/64
+group 7/64
+group 8/64
+group 9/64
+group 10/64
+group 11/64
+group 12/64
+group 13/64
+group 14/64
+group 15/64
+group 16/64
+group 17/64
+group 18/64
+group 19/64
+group 20/64
+group 21/64
+group 22/64
+group 23/64
+group 24/64
+group 25/64
+group 26/64
+group 27/64
+group 28/64
+group 29/64
+group 30/64
+group 31/64
+group 32/64
+group 33/64
+group 34/64
+group 35/64
+group 36/64
+group 37/64
+group 38/64
+group 39/64
+group 40/64
+group 41/64
+group 42/64
+group 43/64
+group 44/64
+group 45/64
+group 46/64
+group 47/64
+group 48/64
+group 49/64
+group 50/64
+group 51/64
+group 52/64
+group 53/64
+group 54/64
+group 55/64
+group 56/64
+group 57/64
+group 58/64
+group 59/64
+group 60/64
+group 61/64
+group 62/64
+group 63/64
+group 64/64
+{
+  "passed": true,
+  "certificate_sha256": "bfea4089709e11e7b810da37f751868552ed0c39d34256c410e386531f5bc401",
+  "dimension": 39,
+  "count": 769372,
+  "dense": 328128,
+  "sparse": 441244,
+  "relative_products": 841315065,
+  "maximum_dot": 49999015430245,
+  "maximum_witness": [
+    228,
+    2900,
+    56
+  ],
+  "allowed_dot": 49999960000008,
+  "norm_squared_range": [
+    99999981539255,
+    100000022283800
+  ],
+  "cross_slacks": [
+    2601206588,
+    53504845470216,
+    37438665997328
+  ],
+  "max_support_intersection": 4,
+  "heavy_heavy_max": 16,
+  "heavy_root_max": 16,
+  "heavy_middle_max": 16,
+  "coordinate_max": 3268139,
+  "elapsed_seconds": 6.509791374206543
+}

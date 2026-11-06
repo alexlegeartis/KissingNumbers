@@ -17,7 +17,7 @@ values and verification packages remain here as part of the research record.
 >   by **65, 124, 21, 5, 27** points. New [algebraic completions](verifications/improved/dim27-31-algebraic-completion/) add 18 in 27D and eight in 31D, with complete explicit coordinate proofs. The [29 October certificates](verifications/improved/dim27-31-joint-refills/) remain available.
 >   **28D is reclaimed at 221 988**, with a gain of **124** from corrected sextet symmetries.
 >   The 26D certificate remains 201 136, two above its pinned comparison.
-> - **39D:** **769 308** points, **128** above the preceding repository construction. [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) pass two independent complete exact proofs, each checking 420,575,485 relative products.
+> - **39D:** **769 372** points, **64** above the preceding repository construction. [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) pass two independent complete exact proofs, each checking 841,315,065 relative products.
 > - **60D:** **58 543 525** points, **575 182** above the preceding repository construction. [840-direction cap lift](verifications/improved/dim60-antipodal840-lift/) verifies the finite ingredients exactly and retains the published P48 minimum/population premises.
 > - **43D:** **2 919 799** points, fourteen above the preceding repository construction. [Weyl core relabeling and rational head insertions](verifications/improved/dim41-46-p48-heads/weyl43/) pass fresh geometry/gluing replay and two exact angle checks; P48n minimum/design and complete-family population inputs remain inherited.
 > - **33–87D:** further improvements include signed layers, phase refills,
@@ -135,7 +135,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **501 687** | **SOTA** | +3.5% | — | since 2026-10-24 | [Coxeter–Todd phase refill](verifications/improved/dim36-37-coxeter-todd/) | — |
 | 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **505 503** | **SOTA** | +1.1% | — | since 2026-10-24 | [Phase code + latitudes](verifications/improved/dim36-37-coxeter-todd/) | — |
 | 38 | 566 652 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **611 522** | **SOTA** | +7.92% | — | 2026-08-30 to 2026-09-28; since 2026-10-28 | [Fano-grid and cube-edge latitudes](verifications/improved/dim38-joint-latitudes/) | — |
-| 39 | 755 988 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **769 308** | **SOTA** | +1.76% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) | — |
+| 39 | 755 988 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **769 372** | **SOTA** | +1.76% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) | — |
 | 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/html/2607.20359v4) | **1 126 314** | **SOTA** | +3.14% | — | since 2026-10-26 | [Affine lattice shells](verifications/improved/dim40-affine-shells/) | — |
 | 41 | 1 324 472 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 42 | 1 792 386 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 991 445** | **SOTA** | +11% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
@@ -585,7 +585,7 @@ comparison is given separately by its source.
 | 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 247 972 |
 | 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 196 |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 522 |
-| 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 308 |
+| 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 372 |
 
 The retained 29–30D and 38–39D certificates exceed those intervening records.
 PackingStar's October update surpassed the residual-completion values in 26–31D;

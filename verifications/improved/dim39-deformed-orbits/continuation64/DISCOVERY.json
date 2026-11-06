@@ -1,0 +1,12 @@
+{
+  "status": "Two independent exact proofs passed",
+  "dimension": 39,
+  "lower_bound": 769372,
+  "previous_published_bound": 769308,
+  "previous_commit": "329642cd3fb22f6d4fd8a33c6153dcd00a10c4da",
+  "certificate_sha256": "bfea4089709e11e7b810da37f751868552ed0c39d34256c410e386531f5bc401",
+  "discovery_script": "research/nonbinary_orbit39_20261106/resume_quarter.py",
+  "discovery_checkpoint": "research/nonbinary_orbit39_20261106/quarter_epoch4.npy",
+  "group_source": "research/nonbinary_orbit39_20261106/quarter_base.npz",
+  "publication": "Prepared for publication; publication commit is recorded by Git history."
+}

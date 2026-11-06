@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "certificate_sha256": "bfea4089709e11e7b810da37f751868552ed0c39d34256c410e386531f5bc401",
+  "dimension": 39,
+  "count": 769372,
+  "dense": 328128,
+  "sparse": 441244,
+  "relative_products": 841315065,
+  "maximum_dot": 49999015430245,
+  "maximum_witness": [
+    228,
+    2900,
+    56
+  ],
+  "allowed_dot": 49999960000008,
+  "norm_squared_range": [
+    99999981539255,
+    100000022283800
+  ],
+  "cross_slacks": [
+    2601206588,
+    53504845470216,
+    37438665997328
+  ],
+  "max_support_intersection": 4,
+  "heavy_heavy_max": 16,
+  "heavy_root_max": 16,
+  "heavy_middle_max": 16,
+  "coordinate_max": 3268139,
+  "elapsed_seconds": 6.509791374206543
+}

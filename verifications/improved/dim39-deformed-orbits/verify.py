@@ -21,9 +21,20 @@ if __name__=='__main__':
         first=json.loads((source/'orbit_verification.json').read_text())
         second=json.loads((source/'audit_result.json').read_text())
         assert first['all_checks_passed'] and second['passed']
-        assert first['lower_bound']==second['total']==expected['total']
+        assert first['lower_bound']==second['total']==769308
         assert first['certificate_sha256']==second['certificate_sha256']
         replay(source,'negative_controls.py')
         controls=json.loads((source/'negative_control_results.json').read_text())
         assert len(controls)==8 and all(row['rejected'] for row in controls)
-    print(json.dumps(dict(status='PASS',results=[expected],proof_routes=2,negative_controls=8)))
+    with tempfile.TemporaryDirectory(prefix='kissing39_continuation64_') as directory:
+        source=Path(directory)/'continuation64'
+        shutil.copytree(ROOT/'continuation64',source,ignore=shutil.ignore_patterns('__pycache__'))
+        replay(source,'verify.py')
+        replay(source/'independent','audit.py',str(source))
+        replay(source/'independent','negative_controls.py')
+        first=json.loads((source/'orbit_verification.json').read_text())
+        second=json.loads((source/'independent/audit_result.json').read_text())
+        assert first['all_checks_passed'] and second['passed']
+        assert first['lower_bound']==second['count']==expected['total']
+        assert first['certificate_sha256']==second['certificate_sha256']
+    print(json.dumps(dict(status='PASS',results=[expected],proof_routes=2,negative_controls=10)))
