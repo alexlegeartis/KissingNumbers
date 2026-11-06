@@ -108,6 +108,8 @@ PAPER = _paper()
 JOBS = [
     ("60D antipodal840: exact tail, poles and 420 disjoint P48 classes",
      os.path.join(V, 'improved', 'dim60-antipodal840-lift'), ['verify.py'], 2.0, True),
+    ("54-59D joint P48 class coverage",
+     os.path.join(V, 'improved', 'dim54-59-p48-coverage'), ['verify.py'], 2.0, True),
     ("audit: all 70 claims, mutual and external consistency",
      HERE, ['audit.py'], 0.5, True),
     ("common: extremal theta series and one-point distributions",
@@ -384,6 +386,7 @@ JOBS = [
 # driver, a manifest, or the GPU run's receipt.
 def _sota_jobs(quick=False):
     wanted = {
+        ('dim54-59-p48-coverage', ('verify.py',)),
         ('dim60-antipodal840-lift', ('verify.py',)),
         ('common', ('capalgebra.py',)),
         ('dim27-31-algebraic-completion', ('verify.py',)),
@@ -475,6 +478,7 @@ def _sota_records():
 def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
+        ('dim54-59-p48-coverage', list(range(54,60)), [('verify.py',)], 'exact root/quadratic tails, 7783-line base, class isometries and full-coordinate disjointness; published P48 minimum/population'),
         ('dim60-antipodal840-lift', [60], [('verify.py',)], 'exact 840-direction and 841-pole pairs, 7783-line base, 420 isometries and full-coordinate disjointness; inherited published P48 minimum and shell population'),
         ('dim27-31-algebraic-completion', [27,31], [('verify.py',)], 'all norms, distinctness and unordered pairs in complete explicit coordinates; independent direct-int64 changed pairs; no lattice or population assumptions'),
         ('dim27-31-joint-refills', [27, 28, 29, 30, 31], [('verify.py',)], 'all norms and all unordered point pairs; bounded exact integer BLAS and separate direct-int64 checks of every inserted point'),

@@ -1,0 +1,20 @@
+{
+  "source_commit": "f0083954ce63e292b0d6024d73e35cb2486716e2",
+  "files": {
+    "test_certificate.py": "9aa56fd947099bde0876b474c260dd18132b860fe7cd82cc835addec63bdaa6b",
+    "README.md": "1ac7e97cb5e9758b1b98f06df3780e735dd896e8dab9ab7a0745d042e3f38ce2",
+    "final.py": "e2e9952db8760e256a75742623da6f491f5c8aa528cabdeed416445d00b12145",
+    "verify.py": "f0e9c5b272b6479552bc7643315388ae3e7818fbcea8d9c7d96b48f174b14c4c",
+    "results.json": "228ab1e76a6b01bba2b82f14c3cc8c17f9b940498acff2b6f7f9e0e652c835ae",
+    "classes_302.npz": "fdedec4763868a269e51a81225f8900fdbf9db8744c01d8928db687117f6885a",
+    "classes_255.npz": "c837e189fa36bee699c61c8a9d7c29dc74a4d5b7cee6de724eba6f8b75f51770",
+    "classes_153.npz": "5b34982e3abcfa0e076f3b7bc2876460d09fe24cee224c9638ea61eee1e1436c",
+    "classes_120.npz": "b2288a44ced48854b60481b6126f307aec7a3c50bab65fa69e0e3819a07bcee2",
+    "classes_63.npz": "309c480f7754a6f9a6c01bd09bec3ba353739d9c0915eed6f855bddfa99f4f31",
+    "classes_36.npz": "43922a9fdfeff96b94bf18ba3a54afcecc807cdc8a65d3f7a68ccd19979859a4",
+    "source/capdirs_11.npz": "62e21350d0f62718a16a012b8932caf9c5cb16db4f2bd00e99c8f5934e18ba62",
+    "source/capdirs_10.npz": "bc4d17399173208c664700e5a97ff6e8b04ffe54b72b5ce20a54c951e9e8015c",
+    "source/capdirs_9.npz": "c5a711ad2f02482b3af198896dfe74dc2a3ab07bf0bf66e4d80b9758584ef653",
+    "source/family_refilled.npz": "d2f6afe15f1ad05b08832e4e9dcbf0a7a1159e232ab63ad30259b98ce60e0396"
+  }
+}

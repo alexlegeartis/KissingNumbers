@@ -411,7 +411,7 @@ add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover'
 
 # October code and nearest-coset constructions supersede earlier packages;
 # add() preserves every displaced claim in SUPERSEDED for the history audit.
-for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions', 'dim88-96-z8-golay', 'dim26-30-asymmetric-exchanges', 'dim27-quadratic-normal-module', 'dim31-normal-module-exchange', 'dim27-31-joint-refills', 'dim27-31-algebraic-completion', 'dim60-antipodal840-lift'):
+for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions', 'dim88-96-z8-golay', 'dim26-30-asymmetric-exchanges', 'dim27-quadratic-normal-module', 'dim31-normal-module-exchange', 'dim27-31-joint-refills', 'dim27-31-algebraic-completion', 'dim60-antipodal840-lift', 'dim54-59-p48-coverage'):
     if _package == 'dim32-35-signed-layers':
         for _dimension, _family in ((33, 'classic'), (34, 'classic'), (35, 'multi35')):
             with io.open(os.path.join(IMP, _package, 'source', _family,
@@ -2030,6 +2030,7 @@ if '--write-results' in sys.argv and not fail:
                             'heads, partial-family 43D points and coordinated 45D motion; '
                             'angles and exact ranks replay using inherited body populations',
         'dim49-63-p48-caps': 'the cap construction over P_48, with explicit classes',
+        'dim54-59-p48-coverage': 'joint maximum-coverage selections of existing P48 class images; exact tails, isometries and full-coordinate ownership replay',
         'dim60-antipodal840-lift': '840 antipodal quaternionic directions, 420 disjoint P48 classes and 841 independent poles; exact finite replay',
         'dim62-63-ers-chain': 'the Edel-Rains-Sloane chain (n, 15, 2), levels 1-2 built here',
         'dim68-69-gamma72-cross-sections': 'k-point moment LP with the Gram exhibited in Gamma_72',
