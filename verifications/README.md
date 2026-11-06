@@ -7,12 +7,13 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-37 packages, one per **construction idea** rather than one per dimension, because several
+38 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
+| [`dim54-59-p48-coverage`](improved/dim54-59-p48-coverage/) | 54–59 | joint selections of complete P48 class images; exact finite tail, isometry and disjointness checks with published mother-shell inputs |
 | [`dim60-antipodal840-lift`](improved/dim60-antipodal840-lift/) | 60 | current 58,543,525; exact 840-direction and 841-pole codes, 420 disjoint P48 classes; published mother-shell inputs |
 | [`dim27-31-algebraic-completion`](improved/dim27-31-algebraic-completion/) | 27, 31 | current 209,825 and 251,196; partial signed orbits, shared deletions and an orthogonal sign cube; complete exact geometry and independent direct-integer changes |
 | [`dim27-31-joint-refills`](improved/dim27-31-joint-refills/) | 27–31 | current in 28–30D; retained 209,807 and 251,188 in 27D/31D; exact full geometry and direct-integer insertion checks |
@@ -23,7 +24,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim25-collective-deformation`](improved/dim25-collective-deformation/) | 25 | collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons |
 | [`dim31-dual-centres`](improved/dim31-dual-centres/) | 31 | shared midpoint replacements and dual E7 centres; exact coordinate replay |
 | [`dim38-joint-latitudes`](improved/dim38-joint-latitudes/) | 38 | 1352 joint latitude families, signed axis rotation and coordinate axes; exact integer replay |
-| [`dim39-deformed-orbits`](improved/dim39-deformed-orbits/) | 39 | rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration |
+| [`dim39-deformed-orbits`](improved/dim39-deformed-orbits/) | 39 | current 769,308 from reduced-symmetry dense sign orbits; two independent complete exact proofs; retained 769,180 certificate |
 | [`dim40-affine-shells`](improved/dim40-affine-shells/) | 40 | three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products |
 | [`dim18-bent-hexagon`](improved/dim18-bent-hexagon/) | 18 | apparently new — Cohn–Li's own ℝ¹⁶ ⊕ ℝ² hexagon over the odd Barnes–Wall lattice, with the three 6-set families taken from bent cosets of RM(1,4) whose pairwise sums are bent but which do not sum to zero; tier B rises from 256 to 960 |
 | [`dim25-lens-heads`](improved/dim25-lens-heads/) | 25 | apparently new — joint work in progress with H. Cohn and B. Lindow; 1016 lens heads (971 from the block family, plus a 45-head maximum independent set over the complete pool), one non-lattice equator point |

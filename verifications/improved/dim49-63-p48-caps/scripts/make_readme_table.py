@@ -29,21 +29,21 @@ def sp(n):
 # Read the current registry so stronger constructions are marked explicitly.
 SUPERSEDED = {}
 for _line in io.open(os.path.join(DELIV, 'RESULTS.md'), encoding='utf-8'):
-    _m = re.match(r'\| (61|62|63) \| [^|]* \| \*\*([\d\s\u202f\u00a0]+)\*\* \|', _line)
+    _m = re.match(r'\| (4[9]|5[0-9]|6[0-3]) \| [^|]* \| \*\*([\d\s\u202f\u00a0]+)\*\* \|', _line)
     if _m:
         SUPERSEDED[int(_m.group(1))] = int(re.sub(r'\D', '', _m.group(2)))
-assert set(SUPERSEDED) == {61, 62, 63}, 'RESULTS.md lacks dimensions 61–63'
+assert set(SUPERSEDED) == set(range(49,64)), 'RESULTS.md lacks dimensions 49–63'
 out = []
 for r in rows:
     d = r['dim']
     b = (lambda x: '**%s**' % x) if d == 60 else (lambda x: x)
-    if d in SUPERSEDED:
+    if SUPERSEDED[d] > r['value']:
         val = '%s &nbsp;*(superseded by %s)*' % (sp(r['value']), sp(SUPERSEDED[d]))
     else:
         val = '**%s**' % sp(r['value'])
-    out.append('| %s | %s | %s | %s | %s | %s | %s |'
+    out.append('| %s | %s | %s | %s | %s | %s | %s | %s |'
                % (b(str(d)), b(str(r['k'])), b(sp(r['lam'])), b(sp(r['S'])),
-                  b('+' + sp(r['gain'])), val, sp(r['previous'])))
+                  b('+' + sp(r['gain'])), val, sp(r['previous']), sp(SUPERSEDED[d])))
 new = EOL.join(out)
 
 lines = text.split(EOL)

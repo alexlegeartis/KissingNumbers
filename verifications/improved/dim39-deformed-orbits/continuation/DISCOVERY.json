@@ -1,0 +1,16 @@
+{
+  "source_commit": "16eb556d7b491d5d819d2d538de269d68a87dbb4",
+  "preceding_points": 769180,
+  "new_points": 769308,
+  "gain": 128,
+  "kernel_shift": 4885138913,
+  "coset_split_mask": 459839213479,
+  "subgroup_rule": "Retain the preceding sign-group masks whose coordinate-zero bit is zero.",
+  "dense_representatives": 2563,
+  "group_order": 128,
+  "scale": 10000000,
+  "floating_search_dense_max": 0.49999000769033586,
+  "floating_search_top8_max": 1.4142035620644573,
+  "accepted_certificate_sha256": "522a6c8eec8edf8abc97a0b9c3bdd82191456b0d56f5f1f50fd44c94f3be0b45",
+  "verification_status": "Primary exact Walsh replay and independent direct-product replay both passed."
+}

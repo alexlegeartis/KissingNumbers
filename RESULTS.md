@@ -1,5 +1,7 @@
 # Results
 
+The 6 November symmetry reduction gives 769308 in 39D (+128 over the preceding 769180 certificate). It combines 441244 retained sparse points with 2563 sign orbits of order 128. Two independent exact proofs check all 420575485 relative products, and both reject corrupted certificates. The historical construction and manuscript are unchanged.
+
 The 29 October continuation gives 209807, 221988, 231697, 247972, 251188 in 27-31D, exceeding PackingStar commit 477df34 by 47, 124, 21, 5, 19 points. Corrected sextet symmetries reclaim 28D and further strengthen 27D, 29D and 31D. Complete exact coordinate replays and independent direct-int64 insertion checks pass. The manuscript remains deferred.
 
 The historical synchronized 28 October registry included 201136, 209600, 221694, 231638, 247960 and 251110 in dimensions 26-31, gains of 2, 14, 30, 2, 4 and 108 over PackingStar commit b67832a. Complete coordinate replays verify the integer and quadratic configurations, including all unpaired points. The concurrent 33-96D improvements and corrected nonlinear-code comparisons are retained; the paper remains deferred.
@@ -48,7 +50,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 36 | 484 760 | **501 687** | 1.03 | `cosets` | [three Coxeter-Todd quotient codes with exact shell enumeration, phase refill and independent coordinate angles checked; 37D adds partial latitude orbits](verifications/improved/dim36-37-coxeter-todd/) |
 | 37 | 500 008 | **505 503** | 1.01 | `cosets` | [three Coxeter-Todd quotient codes with exact shell enumeration, phase refill and independent coordinate angles checked; 37D adds partial latitude orbits](verifications/improved/dim36-37-coxeter-todd/) |
 | 38 | 566 652 | **611 522** | 1.08 | `heads` | [Fano-grid and cube-edge latitudes with shared cap deletions; two independent exact proofs](verifications/improved/dim38-joint-latitudes/) |
-| 39 | 755 988 | **769 180** | 1.02 | `codes` | [rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration](verifications/improved/dim39-deformed-orbits/) |
+| 39 | 755 988 | **769 308** | 1.02 | `codes` | [128-element nonbinary sign orbits with kernel-translated deformation seeds; two independent complete exact orbit proofs](verifications/improved/dim39-deformed-orbits/) |
 | 40 | 1 092 000 | **1 126 314** | 1.03 | `heads` | [three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products](verifications/improved/dim40-affine-shells/) |
 | 41 | 1 324 472 | **1 460 036** | 1.10 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 42 | 1 792 386 | **1 991 445** | 1.11 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
@@ -61,12 +63,12 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 51 | 52 416 012 | **52 509 404** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
 | 52 | 52 416 024 | **52 602 708** | 1.00 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
 | 53 | 52 416 040 | **52 726 898** | 1.01 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 54 | 52 416 072 | **52 974 448** | 1.01 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim54-59-p48-coverage/) |
-| 55 | 52 416 126 | **53 389 510** | 1.02 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim54-59-p48-coverage/) |
-| 56 | 52 416 240 | **54 254 038** | 1.04 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim54-59-p48-coverage/) |
-| 57 | 52 416 306 | **54 747 366** | 1.04 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim54-59-p48-coverage/) |
-| 58 | 52 416 510 | **56 237 990** | 1.07 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim54-59-p48-coverage/) |
-| 59 | 52 416 604 | **56 907 964** | 1.09 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim54-59-p48-coverage/) |
+| 54 | 52 416 072 | **52 974 448** | 1.01 | `classes` | [joint maximum-coverage selections of existing P48 class images; exact tails, isometries and full-coordinate ownership replay](verifications/improved/dim54-59-p48-coverage/) |
+| 55 | 52 416 126 | **53 389 510** | 1.02 | `classes` | [joint maximum-coverage selections of existing P48 class images; exact tails, isometries and full-coordinate ownership replay](verifications/improved/dim54-59-p48-coverage/) |
+| 56 | 52 416 240 | **54 254 038** | 1.04 | `classes` | [joint maximum-coverage selections of existing P48 class images; exact tails, isometries and full-coordinate ownership replay](verifications/improved/dim54-59-p48-coverage/) |
+| 57 | 52 416 306 | **54 747 366** | 1.04 | `classes` | [joint maximum-coverage selections of existing P48 class images; exact tails, isometries and full-coordinate ownership replay](verifications/improved/dim54-59-p48-coverage/) |
+| 58 | 52 416 510 | **56 237 990** | 1.07 | `classes` | [joint maximum-coverage selections of existing P48 class images; exact tails, isometries and full-coordinate ownership replay](verifications/improved/dim54-59-p48-coverage/) |
+| 59 | 52 416 604 | **56 907 964** | 1.09 | `classes` | [joint maximum-coverage selections of existing P48 class images; exact tails, isometries and full-coordinate ownership replay](verifications/improved/dim54-59-p48-coverage/) |
 | 60 | 52 416 841 | **58 543 525** | 1.12 | `classes` | [840 antipodal quaternionic directions, 420 disjoint P48 classes and 841 independent poles; exact finite replay](verifications/improved/dim60-antipodal840-lift/) |
 | 61 | 52 417 154 | **88 260 394** | 1.68 | `codes` | [shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
 | 62 | 52 417 932 | **121 824 268** | 2.32 | `codes` | [shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
@@ -114,7 +116,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 |---|---|---|---|
 | `classes` | 49-60 (12) | larger class families or improved direction and pole codes can help | the strongest prefix of the old 1400-class family or the October 577-image family over a 7783-line base; larger base classes, improved direction codes and different disjoint families remain open (dim49-63-p48-caps/verify_october.py) |
 | `codes` | 32-33 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | signed octad replacements over the dense [32,17,8] code; larger signed support families remain open (dim32-35-signed-layers/verify.py) |
-| `codes` | 39 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration; larger compatible families remain open (dim39-deformed-orbits/verify.py) |
+| `codes` | 39 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | 128-element nonbinary sign orbits and retained sparse layers; two independent complete exact proofs; larger compatible orbit families remain open (dim39-deformed-orbits/verify.py) |
 | `codes` | 61-63, 66-68 (6) | larger input codes or different layer and section geometry can improve these explicit constructions | explicit binary compression, central sections and enlarged support layers; no unrestricted optimality or construction ceiling is claimed (dim61-68-95-96-code-layers/verify.py) |
 | `codes` | 64-65 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | signed support augmentation with exact shared-check parity certificates; larger compatible support families and larger owner classes remain open (dim64-65-signed-parity/verify.py) |
 | `codes` | 88-96 (9) | larger input codes or different layer and section geometry can improve these explicit constructions | nonlinear Z8 Golay parent, exact central sections and sparse layers; different sections and larger compatible layers remain open (dim88-96-z8-golay/verify.py) |
@@ -157,12 +159,7 @@ refreshed table, not more search.
 | 51 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(3) = 6, S = 46696; verify_october.py |
 | 52 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(4) = 12, S = 93342; verify_october.py |
 | 53 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(5) = 20, S = 155429; verify_october.py |
-| 54 | `dim54-59-p48-coverage` | 36 selected image classes, 279188 distinct mother lines; full exact coordinate ownership and tail replay |
-| 55 | `dim54-59-p48-coverage` | 63 selected image classes, 486692 distinct mother lines; full exact coordinate ownership and tail replay |
-| 56 | `dim54-59-p48-coverage` | 120 selected image classes, 918899 distinct mother lines; full exact coordinate ownership and tail replay |
-| 57 | `dim54-59-p48-coverage` | 153 selected image classes, 1165530 distinct mother lines; full exact coordinate ownership and tail replay |
-| 58 | `dim54-59-p48-coverage` | 255 selected image classes, 1910740 distinct mother lines; full exact coordinate ownership and tail replay |
-| 59 | `dim54-59-p48-coverage` | 302 selected image classes, 2245680 distinct mother lines; full exact coordinate ownership and tail replay |
+| 54-59 | `dim54-59-p48-coverage` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 60 | `dim60-antipodal840-lift` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 61-63, 66-68 | `dim61-68-95-96-code-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 64-65 | `dim64-65-signed-parity` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |

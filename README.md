@@ -8,7 +8,7 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
-> **Current repository status — 4 November 2026.** Verified lower bounds in
+> **Current repository status — 6 November 2026.** Verified lower bounds in
 > **70 dimensions**; the [results table](#results-and-construction-history)
 > lists every current value, comparison source and verification package.
 >
@@ -17,6 +17,7 @@ values and verification packages remain here as part of the research record.
 >   by **65, 124, 21, 5, 27** points. New [algebraic completions](verifications/improved/dim27-31-algebraic-completion/) add 18 in 27D and eight in 31D, with complete explicit coordinate proofs. The [29 October certificates](verifications/improved/dim27-31-joint-refills/) remain available.
 >   **28D is reclaimed at 221 988**, with a gain of **124** from corrected sextet symmetries.
 >   The 26D certificate remains 201 136, two above its pinned comparison.
+> - **39D:** **769 308** points, **128** above the preceding repository construction. [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) pass two independent complete exact proofs, each checking 420,575,485 relative products.
 > - **60D:** **58 543 525** points, **575 182** above the preceding repository construction. [840-direction cap lift](verifications/improved/dim60-antipodal840-lift/) verifies the finite ingredients exactly and retains the published P48 minimum/population premises.
 > - **43D:** **2 919 785** points, three above the preceding repository construction. [Both exact representations](verifications/improved/dim41-46-p48-heads/continuation43/) retain the documented P48n minimum/design and complete-family population inputs.
 > - **33–87D:** further improvements include signed layers, phase refills,
@@ -134,7 +135,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **501 687** | **SOTA** | +3.5% | — | since 2026-10-24 | [Coxeter–Todd phase refill](verifications/improved/dim36-37-coxeter-todd/) | — |
 | 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **505 503** | **SOTA** | +1.1% | — | since 2026-10-24 | [Phase code + latitudes](verifications/improved/dim36-37-coxeter-todd/) | — |
 | 38 | 566 652 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **611 522** | **SOTA** | +7.92% | — | 2026-08-30 to 2026-09-28; since 2026-10-28 | [Fano-grid and cube-edge latitudes](verifications/improved/dim38-joint-latitudes/) | — |
-| 39 | 755 988 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **769 180** | **SOTA** | +1.75% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Deformed sign orbits](verifications/improved/dim39-deformed-orbits/) | — |
+| 39 | 755 988 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **769 308** | **SOTA** | +1.76% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) | — |
 | 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/html/2607.20359v4) | **1 126 314** | **SOTA** | +3.14% | — | since 2026-10-26 | [Affine lattice shells](verifications/improved/dim40-affine-shells/) | — |
 | 41 | 1 324 472 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 42 | 1 792 386 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 991 445** | **SOTA** | +11% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
@@ -460,7 +461,7 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               all 70 claims, 37 packages; earlier constructions remain
+  improved/               all 70 claims, 38 packages; earlier constructions remain
                           available with their original proof data
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
@@ -483,7 +484,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 37 packages, 70 dimensions
+### `verifications/improved/` — 38 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -502,7 +503,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | [`dim25-collective-deformation`](verifications/improved/dim25-collective-deformation/) | 25 | collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons |
 | [`dim31-dual-centres`](verifications/improved/dim31-dual-centres/) | 31 | shared midpoint replacements and dual E7 centres; exact coordinate replay |
 | [`dim38-joint-latitudes`](verifications/improved/dim38-joint-latitudes/) | 38 | Fano-grid and cube-edge latitudes with shared cap deletions; two independent exact proofs |
-| [`dim39-deformed-orbits`](verifications/improved/dim39-deformed-orbits/) | 39 | rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration |
+| [`dim39-deformed-orbits`](verifications/improved/dim39-deformed-orbits/) | 39 | reduced-symmetry dense sign orbits and retained sparse layers; two independent complete exact proofs |
 | [`dim40-affine-shells`](verifications/improved/dim40-affine-shells/) | 40 | three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products |
 | [`dim18-bent-hexagon`](verifications/improved/dim18-bent-hexagon/) | 18 | bent-coset hexagon over odd Barnes–Wall; matches Cohn’s current table |
 | `[dim25-lens-heads](verifications/improved/dim25-lens-heads/)`                               | 25     | cap heads of squared length 3 in the lens of a minimal vector remove exactly their owner and never share a removal, so τ = 196560 + H + 2 + \|E\| with H = 1016 and one non-lattice equator point |
@@ -584,7 +585,7 @@ comparison is given separately by its source.
 | 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 247 972 |
 | 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 196 |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 522 |
-| 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 180 |
+| 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 308 |
 
 The retained 29–30D and 38–39D certificates exceed those intervening records.
 PackingStar's October update surpassed the residual-completion values in 26–31D;
@@ -771,10 +772,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 95 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 96 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 114 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 115 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

@@ -59,3 +59,7 @@ For a mother configuration with suitable antipodal block classes, select the dir
 ## Maximum-coverage completion
 
 The initial published composition (commit f0083954ce63e292b0d6024d73e35cb2486716e2) used 3,062,990 lines and gave 58,542,821 points. Refilling its same 420 images gains nothing. However, ranking pre-trimmed classes misses overlaps assigned to omitted classes. Thirty-seven deterministic one-class exchanges among the 577 complete image sets increase the union by 352 lines, hence 704 points. Each line is assigned to the first selected image containing it, preserving the within-class bound. The final masks and isometries are in optimized420.npz; coverage_exchanges.json records the exchanges. verify_coverage.py independently checks the selected geometry and disjointness without trusting the optimizer. This is a one-exchange local optimum in the supplied finite image family, not a global optimum. The earlier head certificates remain as historical evidence.
+
+## Script index
+
+`final.py` derives the registered count from the selected ownership masks. `verify_tail.py` checks the 840-point antipodal direction code, and `verify_poles.py` checks the 841 pole coordinates. `reconstruct_coverage.py` is the optional deterministic full-image coverage search; the accepted coverage is checked by `verify_coverage.py` without rerunning that search.

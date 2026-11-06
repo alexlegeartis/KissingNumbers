@@ -1,0 +1,42 @@
+[
+  {
+    "control": "duplicate_orbit",
+    "checker": "verify.py",
+    "rejected": true
+  },
+  {
+    "control": "duplicate_orbit",
+    "checker": "verify_direct.py",
+    "rejected": true
+  },
+  {
+    "control": "false_count",
+    "checker": "verify.py",
+    "rejected": true
+  },
+  {
+    "control": "false_count",
+    "checker": "verify_direct.py",
+    "rejected": true
+  },
+  {
+    "control": "zero_norm",
+    "checker": "verify.py",
+    "rejected": true
+  },
+  {
+    "control": "zero_norm",
+    "checker": "verify_direct.py",
+    "rejected": true
+  },
+  {
+    "control": "duplicate_group",
+    "checker": "verify.py",
+    "rejected": true
+  },
+  {
+    "control": "duplicate_group",
+    "checker": "verify_direct.py",
+    "rejected": true
+  }
+]

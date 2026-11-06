@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "dimension": 39,
+  "total": 769308,
+  "sparse": 441244,
+  "dense": 328064,
+  "representatives": 2563,
+  "group_order": 128,
+  "integer_norm_squared_min": 99999981871376,
+  "integer_norm_squared_max": 100000019371919,
+  "sparse_slacks": {
+    "middle": 2657774736,
+    "root": 54120667283838,
+    "heavy": 39121945424807
+  },
+  "maximum_integer_dot": 49999014167161,
+  "allowed_integer_dot": 49999960000008,
+  "witness": [
+    1228,
+    2219,
+    325172899872
+  ],
+  "complete_relative_products": 420575485,
+  "certificate_sha256": "522a6c8eec8edf8abc97a0b9c3bdd82191456b0d56f5f1f50fd44c94f3be0b45",
+  "seconds": 5.12053460000061,
+  "method": "Independent sparse reconstruction and complete direct matrix orbit enumeration. Binary64 operations proven exact integers; no Walsh transform, no tolerances."
+}

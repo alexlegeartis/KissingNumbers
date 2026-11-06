@@ -418,6 +418,8 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim3
                                      'certificate%d.json' % _dimension), encoding='utf-8') as _old_stream:
                 _old_total = json.load(_old_stream)['points']
             add(_dimension, _old_total, _package, 'source/%s/verify.py: retained historical certificate' % _family)
+    if _package == 'dim39-deformed-orbits':
+        add(39, 769180, _package, 'source/verify.py: retained historical 256-element orbit certificate')
     if _package == 'dim38-joint-latitudes':
         add(38, 610394, _package, 'source/verify.py: retained historical joint-latitude certificate')
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
@@ -2017,7 +2019,7 @@ if '--write-results' in sys.argv and not fail:
         'dim25-collective-deformation': 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons',
         'dim31-dual-centres': 'shared midpoint replacements and dual E7 centres; exact coordinate replay',
         'dim38-joint-latitudes': 'Fano-grid and cube-edge latitudes with shared cap deletions; two independent exact proofs',
-        'dim39-deformed-orbits': 'rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration',
+        'dim39-deformed-orbits': '128-element nonbinary sign orbits with kernel-translated deformation seeds; two independent complete exact orbit proofs',
         'dim40-affine-shells': 'three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products',
         'dim38-latitude-extension': '24 additional latitude points and an exact rational axis rotation over the Leech caps and Lin equator',
         'dim39-root-replacements': 'four neutral support substitutions and 64-for-56 root replacements over the ERS layers',
@@ -2045,6 +2047,8 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append('The 6 November symmetry reduction gives 769308 in 39D (+128 over the preceding 769180 certificate). It combines 441244 retained sparse points with 2563 sign orbits of order 128. Two independent exact proofs check all 420575485 relative products, and both reject corrupted certificates. The historical construction and manuscript are unchanged.')
+    out.append('')
     out.append("The 29 October continuation gives 209807, 221988, 231697, 247972, 251188 in 27-31D, exceeding PackingStar commit 477df34 by 47, 124, 21, 5, 19 points. Corrected sextet symmetries reclaim 28D and further strengthen 27D, 29D and 31D. Complete exact coordinate replays and independent direct-int64 insertion checks pass. The manuscript remains deferred.")
     out.append("")
     out.append("The historical synchronized 28 October registry included 201136, 209600, 221694, 231638, 247960 and 251110 in dimensions 26-31, gains of 2, 14, 30, 2, 4 and 108 over PackingStar commit b67832a. Complete coordinate replays verify the integer and quadratic configurations, including all unpaired points. The concurrent 33-96D improvements and corrected nonlinear-code comparisons are retained; the paper remains deferred.")

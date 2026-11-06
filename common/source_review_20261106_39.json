@@ -1,0 +1,24 @@
+{
+  "retrieved": "2026-11-06",
+  "primary_sources": [
+    "https://arxiv.org/abs/2611.03682",
+    "https://arxiv.org/html/2611.03682v1"
+  ],
+  "author": "Qihong Lin",
+  "title": "New lower bounds for kissing numbers in dimensions 32\u201335 and 37\u201339",
+  "version": "v1",
+  "displayed_submission_date": "2026-10-22",
+  "date_note": "The primary page displays October 22 despite the 2611 identifier; this inconsistency is not resolved here.",
+  "bounds": {
+    "32": 352320,
+    "33": 370240,
+    "34": 390980,
+    "35": 415308,
+    "37": 499816,
+    "38": 605322,
+    "39": 768916
+  },
+  "evidence": "Abstract, Theorem 1, Tables 1\u20132",
+  "assessment": "All below pinned repository values. This is the already-used Lin comparison, not evidence of a stronger new baseline.",
+  "repository_commit": "16eb556d7b491d5d819d2d538de269d68a87dbb4"
+}

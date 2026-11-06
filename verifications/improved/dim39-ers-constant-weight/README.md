@@ -127,14 +127,14 @@ The gains are exactly $128\cdot(3025-2997) = 3584$ and $128\cdot(3324-3323) = 12
 
 As of 2026-08-19:
 
-| dim | Cohn's table | Brouwer's table | correct value | who claimed it | 28 October repo result |
+| dim | Cohn's table | Brouwer's table | correct value | who claimed it | 6 November repo result |
 |-----|--------------|-----------------|---------------|----------------| --- |
 | 32 | 345408 | 346432 | 346432 | Echols 2026 | **352 800 |
 | 33 | 360640 | 362048 | 362048 | Echols 2026 | **370 376 |
 | 34 | 380868 | 381124 | 381124 | Echols 2026 | **390 990 |
 | 37 | 494312 | 496232 | 496232 | Echols 2026 | **505 503** |
 | **38** | 566652 | 566652 | **591612** | this project, but by a different construction — the ERS value here is 570236 | **611 522** |
-| **39** | 755988 | 755988 | **756116** | this project | **769 180** |
+| **39** | 755988 | 755988 | **756116** | this project | **769 308** |
 
 The comparison and ERS counts above are historical. The 28 October 2026
 Coxeter–Todd phase-refill construction now gives **505,488** in dimension 37; see

@@ -71,7 +71,7 @@ scratch as exact inequalities.
 
 ## Historical comparison results
 
-| n | best chain | N(n) | August Cohn snapshot | historical reference | comparison | 28 October repo result |
+| n | best chain | N(n) | August Cohn snapshot | historical reference | comparison | 6 November repo result |
 |---|---|---|---|---|---| --- |
 | 32 | (32,8,2) | **346 432** | 345 408 | 346 432 | at the value — **table stale** | **352 800 |
 | 33 | (32,8,2) | **362 048** | 360 640 | 362 048 | at the value — **table stale** | **370 376 |
@@ -79,7 +79,7 @@ scratch as exact inequalities.
 | 35, 36, 40 | (32/40,8,2) | = table | = | = | at the value | — |
 | 37 | (32,8,2) | **496 232** | 494 312 | 496 232 | at the value — **table stale** | **505 503** |
 | 38 | (38,8,2) | 570 236 | 566 652 | **591 612** (this project) | below | **611 522** |
-| 39 | (39,8,2) | **756 116** | 755 988 | 756 116 (this project) | at the value | **769 180** |
+| 39 | (39,8,2) | **756 116** | 755 988 | 756 116 (this project) | at the value | **769 308** |
 | 41, 42 | **(40,8,2)** | = table | = | = | at the value | — |
 | 43 | (43,8,2) | 1 745 692 | 2 060 399 | 2 060 399 (Sun–Wang) | below | — |
 | 44 | (44,8,2) | 2 948 552 | 2 948 552 | **4 153 600** (Sun–Wang) | below | — |

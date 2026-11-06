@@ -6,13 +6,13 @@
 | 51 | 52 509 404 | **this work** -- the cap construction over P_48, with explicit classes |
 | 52 | 52 602 708 | **this work** -- the cap construction over P_48, with explicit classes |
 | 53 | 52 726 898 | **this work** -- the cap construction over P_48, with explicit classes |
-| 54 | 52 974 438 | **this work** -- the cap construction over P_48, with explicit classes |
-| 55 | 53 389 476 | **this work** -- the cap construction over P_48, with explicit classes |
-| 56 | 54 253 958 | **this work** -- the cap construction over P_48, with explicit classes |
-| 57 | 54 747 156 | **this work** -- the cap construction over P_48, with explicit classes |
-| 58 | 56 237 690 | **this work** -- the cap construction over P_48, with explicit classes |
-| 59 | 56 907 532 | **this work** -- the cap construction over P_48, with explicit classes |
-| 60 | 57 968 343 | **this work** -- the cap construction over P_48, with explicit classes |
+| 54 | 52 974 448 | **this work** -- joint P48 class coverage; exact finite certificates with stated mother-shell inputs |
+| 55 | 53 389 510 | **this work** -- joint P48 class coverage; exact finite certificates with stated mother-shell inputs |
+| 56 | 54 254 038 | **this work** -- joint P48 class coverage; exact finite certificates with stated mother-shell inputs |
+| 57 | 54 747 366 | **this work** -- joint P48 class coverage; exact finite certificates with stated mother-shell inputs |
+| 58 | 56 237 990 | **this work** -- joint P48 class coverage; exact finite certificates with stated mother-shell inputs |
+| 59 | 56 907 964 | **this work** -- joint P48 class coverage; exact finite certificates with stated mother-shell inputs |
+| 60 | 58 543 525 | **this work** -- 840-direction antipodal P48 lift; exact finite certificates with stated mother-shell inputs |
 | 61 | 88 260 394 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
 | 62 | 121 824 268 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
 | 63 | 184 286 468 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
