@@ -184,7 +184,7 @@ def verify_older_43(geometry, tiny):
     assert not np.any((products > 0) & (products * products > norms[:, None] * norms))
     assert sum(map(int, weights)) == entry['older_seed_total']
     return dict(dimension=43, older_seed_points=entry['older_seed_total'],
-                latest_working_total=entry['total'], latest_certificate='partial43/verify.py',
+                latest_working_total=entry['total'], latest_certificate=entry['portable_replay']+'/verify.py',
                 older_seed_angles='PASS', fresh_body_enumeration=False)
 
 
@@ -248,12 +248,13 @@ def main():
         report = (verify_portable(record) if 'portable_replay' in record
                   else verify_current(record, geometry, tiny))
         print(json.dumps(report), flush=True)
-    independent = subprocess.run([sys.executable, '-B',
-        str(ROOT/'continuation43/verify_coordinates.py')], cwd=ROOT,
-        check=True, capture_output=True, text=True)
-    report = json.loads(independent.stdout)
-    assert report['status'] == 'PASS'
-    assert report['points'] == next(r['total'] for r in results() if r['dimension'] == 43)
+    record43 = next(r for r in results() if r['dimension'] == 43)
+    with tempfile.TemporaryDirectory(prefix='kissing43_independent_') as directory:
+        independent = subprocess.run([sys.executable, '-B',
+            str(ROOT / record43['independent_replay']), '--output', directory],
+            cwd=ROOT, check=True, capture_output=True, text=True)
+        report = json.loads((Path(directory) / 'report.json').read_text())
+    assert report['status'] == 'PASS' and report['total'] == record43['total']
     print(json.dumps(report), flush=True)
     print(json.dumps(verify_older_43(geometry, tiny)), flush=True)
     if args.replay_populations:

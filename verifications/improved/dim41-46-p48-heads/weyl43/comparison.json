@@ -1,0 +1,29 @@
+{
+  "checked_at_utc": "2026-11-06T20:37:51Z",
+  "dimension": 43,
+  "candidate": 2919799,
+  "largest_verified_comparison_found": 2919785,
+  "sources": [
+    {
+      "url": "https://github.com/alexlegeartis/KissingNumbers/blob/main/verifications/improved/dim41-46-p48-heads/bounds.json",
+      "fresh_connector_read": true,
+      "git_blob_sha": "740e6658a2d51e5b09508ca83ee382200c33db92",
+      "value": 2919785,
+      "checkpoint_date": "2026-11-04"
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.35051",
+      "value": 2553792,
+      "source": "Primary paper abstract returned by fresh search"
+    },
+    {
+      "url": "https://cohn.mit.edu/kissing-numbers/",
+      "fresh_open_status": "502 Bad Gateway; no fresh leaderboard value asserted"
+    }
+  ],
+  "queries": [
+    "\"kissing\" \"43\" \"2919785\"",
+    "\"kissing number\" \"43\" \"2026\" lower bound"
+  ],
+  "scope": "A new construction above the highest comparison in reviewed accessible sources. This search does not establish exhaustive worldwide priority; live Cohn retrieval failed."
+}

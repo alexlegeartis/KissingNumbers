@@ -19,7 +19,7 @@ values and verification packages remain here as part of the research record.
 >   The 26D certificate remains 201 136, two above its pinned comparison.
 > - **39D:** **769 308** points, **128** above the preceding repository construction. [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) pass two independent complete exact proofs, each checking 420,575,485 relative products.
 > - **60D:** **58 543 525** points, **575 182** above the preceding repository construction. [840-direction cap lift](verifications/improved/dim60-antipodal840-lift/) verifies the finite ingredients exactly and retains the published P48 minimum/population premises.
-> - **43D:** **2 919 785** points, three above the preceding repository construction. [Both exact representations](verifications/improved/dim41-46-p48-heads/continuation43/) retain the documented P48n minimum/design and complete-family population inputs.
+> - **43D:** **2 919 799** points, fourteen above the preceding repository construction. [Weyl core relabeling and rational head insertions](verifications/improved/dim41-46-p48-heads/weyl43/) pass fresh geometry/gluing replay and two exact angle checks; P48n minimum/design and complete-family population inputs remain inherited.
 > - **33–87D:** further improvements include signed layers, phase refills,
 >   the 38D Fano/cube construction, P48 families and shared parity layers.
 >   [Recent updates](#recent-updates) group the methods and proof scopes by dimension.
@@ -139,7 +139,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/html/2607.20359v4) | **1 126 314** | **SOTA** | +3.14% | — | since 2026-10-26 | [Affine lattice shells](verifications/improved/dim40-affine-shells/) | — |
 | 41 | 1 324 472 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 42 | 1 792 386 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 991 445** | **SOTA** | +11% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 43 | 2 553 792 | [Yang et al., P48n section](https://arxiv.org/abs/2609.35051v1) | **2 919 785** | **SOTA** | +14% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
+| 43 | 2 553 792 | [Yang et al., P48n section](https://arxiv.org/abs/2609.35051v1) | **2 919 799** | **SOTA** | +14% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 44 | 4 153 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **4 939 281** | **SOTA** | +19% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 45 | 7 380 090 | [Yang et al., QR neighbour projection](https://arxiv.org/abs/2609.35051v1) | **7 655 056** | **SOTA** | +3.7% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 46 | 12 309 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **13 387 797** | **SOTA** | +8.8% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |

@@ -1,0 +1,60 @@
+{
+  "inherited_repository": "alexlegeartis/KissingNumbers",
+  "inherited_commit": "d90a659a36e2781fdeca95f09e971ec9204323cb",
+  "files": {
+    "class_geometry.npz": {
+      "source": "research/extended_root_trades_20261106/repo/verifications/improved/dim41-46-p48-heads/partial43/class_geometry.npz",
+      "sha256": "52344b145c5a5a5f5c64784a63011f1981d9ee2b7080fb625e1d7bc5863239e7"
+    },
+    "body_complement.npz": {
+      "source": "research/extended_root_trades_20261106/repo/verifications/improved/dim41-46-p48-heads/partial43/body_complement.npz",
+      "sha256": "6b50a641abb5bcfcb767266511c4f0cc8e9611cec1521cedeaa57a301ee58849"
+    },
+    "population_table.npz": {
+      "source": "research/extended_root_trades_20261106/repo/verifications/improved/dim41-46-p48-heads/partial43/population_table.npz",
+      "sha256": "d5800f72f2f6cceab7918b8c88c7af434d1287ff98f56d12cd21bba5ac4612ed"
+    },
+    "tiny_bodies.npz": {
+      "source": "research/extended_root_trades_20261106/repo/verifications/improved/dim41-46-p48-heads/partial43/tiny_bodies.npz",
+      "sha256": "443252c18f6fbd6ea82a37aec74f15e6147d7900a115dd9efe54e8b94866bbe2"
+    },
+    "verify_families.py": {
+      "source": "research/p48_weyl_continuous43_20261106/source_partial43_verify_families.py",
+      "sha256": "5c49465121beff62e9d8bc668f6c8e6b3c090f5f7c8af3c06c8af155d3f8ce6b"
+    },
+    "verify.py": {
+      "source": "research/p48_weyl_continuous43_20261106/source_partial43_verify.py",
+      "sha256": "49ba9eb4bacc664516135e0a5c8ae109863452eb2963f9846533a69109455de0"
+    },
+    "population_note.txt": {
+      "source": "research/p48_weyl_continuous43_20261106/source_POPULATIONS.txt",
+      "sha256": "73746f780f63c91dca4f52028a8622e6dc899f13ee69544438e6596c4ed963fc"
+    },
+    "configuration_43.npz": {
+      "source": "research/p48_weyl_core43_20261106/configuration_43.npz",
+      "sha256": "1b9c1fdff25c13220634b1857616f8d6ba881f0287f627748f227a67bf9d7295"
+    },
+    "core_transform.npz": {
+      "source": "research/p48_weyl_core43_20261106/core_transform.npz",
+      "sha256": "044c83ec100de677ec86c335f4486d486da2fdcfdac21a426d7ffdb8a76a77c8"
+    },
+    "inherited_e8_uniform_mass_certificate.json": {
+      "source": "research/extended_root_trades_20261106/repo/verifications/improved/dim41-46-p48-heads/population_replay/reports/e8_uniform_mass_certificate.json",
+      "sha256": "978066581e9b8566fafd2f89954d812b36a91c6569903aeb2ad98ce3b21065cd"
+    },
+    "inherited_verify_masses.py": {
+      "source": "research/extended_root_trades_20261106/repo/verifications/improved/dim41-46-p48-heads/population_replay/verify_masses.py",
+      "sha256": "68c076507ca8a659adbadf58de3838526eb28c6242fe2525f4e78f5666c948c3"
+    },
+    "comparison.json": {
+      "source": "research/p48_weyl_continuous43_20261106/comparison_20261106.json",
+      "sha256": "2816685f136257108a2bd9e7f6742dc950cf4308a1b8eb4953fcf425e507c825"
+    }
+  },
+  "modifications": "verify.py adds explicit duplicate and tiny-accounting checks, and separate geometry status.",
+  "parent_embedding_source": {
+    "repository_path": "verifications/improved/dim41-46-p48-heads/partial43/parent_embedding.npz",
+    "git_blob_sha": "62ab919531863b248fb5a37f121c95a8454100b5",
+    "sha256": "56336f1fa6d38ef64492493c0041e55359a8f25956552a486e39a2761318026f"
+  }
+}

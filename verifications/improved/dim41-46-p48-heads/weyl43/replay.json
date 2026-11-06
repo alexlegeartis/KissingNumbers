@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "dimension": 43,
+  "points": 2919799,
+  "complete_families": 118,
+  "explicit_tiny_points": 3464,
+  "pure_points": 5,
+  "exact_angle_checks": 6431609,
+  "refined_body_bounds": 22152,
+  "geometry_replay": "PASS: parent embedding, full complement, E8 gluing, tiny norms, labels and counts",
+  "population_scope": "Inherited population identities for complete families; explicit tiny vectors and every angle checked.",
+  "seconds": 7.0827708580000035
+}

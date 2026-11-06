@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "total": 2919799,
+  "family_points": 2916330,
+  "tiny_points": 3464,
+  "pure_points": 5,
+  "all_tiny_ordered_pairs": 11999296,
+  "refined_cross_bounds": 22152,
+  "dimension": 43,
+  "tiny_body_uniqueness": 30240,
+  "scope": "Independent exact raw-coordinate all tiny pairs and tiny/family, family/family, pure pairs; complete populations and gluing/lattice minimum remain inherited mathematical premises. No full enumeration of large families.",
+  "sha256": {
+    "configuration_43.npz": "1b9c1fdff25c13220634b1857616f8d6ba881f0287f627748f227a67bf9d7295",
+    "explicit_points_43.npz": "92ce94e4d7b92e0fe068c0375357c609fe5f856efb76f533d8bba91bb6f7e81a"
+  }
+}

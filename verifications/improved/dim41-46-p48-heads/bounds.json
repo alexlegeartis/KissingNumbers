@@ -1,5 +1,5 @@
 {
-  "checkpoint_date": "2026-11-04",
+  "checkpoint_date": "2026-11-06",
   "population_scope": "inherited tables; no fresh enumeration of the latest body shells",
   "constructions": [
     {
@@ -20,18 +20,18 @@
     },
     {
       "dimension": 43,
-      "total": 2919785,
+      "total": 2919799,
       "status": "candidate_supplied",
       "older_seed": "data/old43_seed.npz",
       "older_seed_total": 2878155,
-      "body_points": 2919780,
+      "body_points": 2919794,
       "pure_points": 5,
-      "candidate": "partial43/configuration_43.npz",
-      "explicit_points": "partial43/explicit_points_43.npz",
-      "explicit_body_points": 3450,
-      "portable_replay": "partial43",
+      "candidate": "weyl43/configuration_43.npz",
+      "explicit_points": "weyl43/explicit_points_43.npz",
+      "explicit_body_points": 3464,
+      "portable_replay": "weyl43",
       "historical_missing_total": 2911990,
-      "independent_replay": "continuation43/verify_coordinates.py"
+      "independent_replay": "weyl43/independent_verify.py"
     },
     {
       "dimension": 44,
