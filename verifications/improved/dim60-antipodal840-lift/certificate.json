@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "dimension": 60,
+  "lower_bound": 58542821,
+  "previous_repository_bound": 57968343,
+  "gain": 574478,
+  "mother_shell_population": 52416000,
+  "selected_mother_lines": 3062990,
+  "direction_count": 840,
+  "direction_pairs": 420,
+  "independent_poles": 841,
+  "exact_tail_pairs": 352380,
+  "exact_pole_pairs": 353220,
+  "exact_base_pairs": 30283653,
+  "class_isometries": 420,
+  "disjointness": "Full canonical 48-coordinate comparison",
+  "inherited_inputs": [
+    "P48p has minimum squared norm 6 and 52,416,000 minimal vectors; published lattice input, not re-enumerated."
+  ],
+  "scope": "New composition of published constructions; exact finite verification and algebraic pair-type proof, not an expanded all-pairs check of 58 million points. No unrestricted optimality or worldwide-priority claim."
+}

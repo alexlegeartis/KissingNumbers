@@ -1,0 +1,8 @@
+{
+  "points": 841,
+  "dimension": 12,
+  "pairs_checked": 353220,
+  "violations": 0,
+  "arithmetic": "Python arbitrary-precision integers on exact printed decimal rays",
+  "sha256": "be4b651ae8167e2c33bda881f77c9fa2cb5e6a07a8fb92f8360acd4691ed48de"
+}

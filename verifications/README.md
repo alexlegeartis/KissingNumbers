@@ -7,12 +7,13 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-36 packages, one per **construction idea** rather than one per dimension, because several
+37 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
+| [`dim60-antipodal840-lift`](improved/dim60-antipodal840-lift/) | 60 | current 58,542,821; exact 840-direction and 841-pole codes, 420 disjoint P48 classes; published mother-shell inputs |
 | [`dim27-31-algebraic-completion`](improved/dim27-31-algebraic-completion/) | 27, 31 | current 209,825 and 251,196; partial signed orbits, shared deletions and an orthogonal sign cube; complete exact geometry and independent direct-integer changes |
 | [`dim27-31-joint-refills`](improved/dim27-31-joint-refills/) | 27–31 | current in 28–30D; retained 209,807 and 251,188 in 27D/31D; exact full geometry and direct-integer insertion checks |
 | [`dim26-30-asymmetric-exchanges`](improved/dim26-30-asymmetric-exchanges/) | 26, 28–30 | 201,136 current in 26D; retained 221,694; 231,638; 247,960; asymmetric integer codes with complete exact all-pairs proofs |
@@ -40,7 +41,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim38-leech-large-codimension`](improved/dim38-leech-large-codimension/) | 38 | apparently new |
 | [`dim39-ers-constant-weight`](improved/dim39-ers-constant-weight/) | 39 | apparently new — but check Sun–Wang's latest revision |
 | [`dim41-46-p48-heads`](improved/dim41-46-p48-heads/) | 41–46 | current supplied certificates, including partial-family 43D and coordinated-motion 45D; integer angles and exact head dimensions replay with inherited complete-family populations |
-| [`dim49-63-p48-caps`](improved/dim49-63-p48-caps/) | 49–63 | current in 49–60D; retained cap counts in 61–63D are superseded by October code constructions |
+| [`dim49-63-p48-caps`](improved/dim49-63-p48-caps/) | 49–63 | current in 49–59D; retained 60D and cap counts in 61–63D are superseded by October code constructions |
 | [`dim62-63-ers-chain`](improved/dim62-63-ers-chain/) | 62, 63 | retained chain, superseded by the October central sections |
 | [`dim68-69-gamma72-cross-sections`](improved/dim68-69-gamma72-cross-sections/) | 68, 69 | current in 69D; the retained 68D section is superseded by October code layers |
 | [`dim70-71-gamma72-cross-sections`](improved/dim70-71-gamma72-cross-sections/) | 70, 71 | apparently new — **the claim most in need of a literature check** |

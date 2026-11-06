@@ -50,7 +50,7 @@ LEGEND = {
     'heads': 'joint body-family and head searches remain open; no construction ceiling is claimed',
     'exhausted': 'the mechanism cannot give more; a different construction is needed',
     'external': 'a function of a published table -- recheck when the table moves',
-    'classes': 'only a better class family helps; these all improve together',
+    'classes': 'larger class families or improved direction and pole codes can help',
     'lp-exact': 'the programme solved to its EXACT optimum, for a Gram at the Hermite determinant floor; only a larger k helps',
 }
 
@@ -460,7 +460,7 @@ for _d in range(73, 87):
 
 for _d in range(49, 61):
     STATUS[_d] = ('classes', 'the strongest prefix of the old 1400-class family or the October '
-                  '577-image family over a 7387-line base; larger base classes and different '
+                  '577-image family over a 7783-line base; larger base classes, improved direction codes and different '
                   'disjoint families remain open (dim49-63-p48-caps/verify_october.py)')
 
 

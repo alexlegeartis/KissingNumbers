@@ -17,6 +17,7 @@ values and verification packages remain here as part of the research record.
 >   by **65, 124, 21, 5, 27** points. New [algebraic completions](verifications/improved/dim27-31-algebraic-completion/) add 18 in 27D and eight in 31D, with complete explicit coordinate proofs. The [29 October certificates](verifications/improved/dim27-31-joint-refills/) remain available.
 >   **28D is reclaimed at 221 988**, with a gain of **124** from corrected sextet symmetries.
 >   The 26D certificate remains 201 136, two above its pinned comparison.
+> - **60D:** **58 542 821** points, **574 478** above the preceding repository construction. [840-direction cap lift](verifications/improved/dim60-antipodal840-lift/) verifies the finite ingredients exactly and retains the published P48 minimum/population premises.
 > - **43D:** **2 919 785** points, three above the preceding repository construction. [Both exact representations](verifications/improved/dim41-46-p48-heads/continuation43/) retain the documented P48n minimum/design and complete-family population inputs.
 > - **33–87D:** further improvements include signed layers, phase refills,
 >   the 38D Fano/cube construction, P48 families and shared parity layers.
@@ -152,7 +153,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 57 | 52 416 306 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [9D tail](common/published.py) *(derived)* | **54 747 156** | **SOTA** | +4.447% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
 | 58 | 52 416 510 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [10D tail](common/published.py) *(derived)* | **56 237 690** | **SOTA** | +7.29% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
 | 59 | 52 416 604 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail](common/published.py) *(derived)* | **56 907 532** | **SOTA** | +8.568% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **57 968 343** | **SOTA** | +10.59% | — | since 2026-08-30 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
+| 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **58 542 821** | **SOTA** | +11.69% | — | since 2026-08-30 | [840-direction P48 lift](verifications/improved/dim60-antipodal840-lift/) | — |
 | 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **88 260 394** | **SOTA** | +68.38% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **121 824 268** | **SOTA** | +132.41% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **184 286 468** | **SOTA** | +251.57% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
@@ -289,6 +290,8 @@ improvement is claimed in 47D or 48D.
 </details>
 
 ## Recent updates
+
+**6 November 2026:** The 6 November antipodal-direction completion gives 58,542,821 in 60D (+574,478 over the preceding repository construction). A known antipodal 840-point quaternionic code supplies 420 direction pairs instead of 378; the 841-point pole code is independent. Exact tail, pole, base-class, isometry and full-coordinate disjointness checks pass. The published P48 minimum and mother-shell population remain explicit inputs. The manuscript is unchanged. [Verification package](verifications/improved/dim60-antipodal840-lift/).
 
 **4 November 2026:** [Algebraic completion](verifications/improved/dim27-31-algebraic-completion/) gives **209 825 in 27D** (+18) and **251 196 in 31D** (+8). The 31D additions form a three-sign cube with orthogonal block norms 16, 8 and 8. Both full coordinate configurations and all changed pairs replay exactly. The [43D finite body/head continuation](verifications/improved/dim41-46-p48-heads/continuation43/) gives **2 919 785** (+3), retaining its documented P48n/population inputs. Fresh Cohn retrieval failed; the [limited November 4 comparison](common/source_review_20261104_algebraic.json) uses the saved table and author repositories. The manuscript is unchanged.
 
@@ -457,7 +460,7 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               all 70 claims, 36 packages; earlier constructions remain
+  improved/               all 70 claims, 37 packages; earlier constructions remain
                           available with their original proof data
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
@@ -480,7 +483,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 36 packages, 70 dimensions
+### `verifications/improved/` — 37 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -513,8 +516,9 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | `[dim39-ers-constant-weight](verifications/improved/dim39-ers-constant-weight/)`             | 39     | Edel–Rains–Sloane with the 2026 constant-weight codes, at n₀ = n rather than n₀ = 32                                                                                                         |
 | [`dim32-35-signed-layers`](verifications/improved/dim32-35-signed-layers/) | 32–35 | signed octad replacements, dense-code coset heads and parity-coordinated root replacements; two independent exact checkers |
 | [`dim36-37-coxeter-todd`](verifications/improved/dim36-37-coxeter-todd/) | 36, 37 | Coxeter–Todd phase orbits; exact short-shell and angle replay; two latitude layers |
+| [`dim60-antipodal840-lift`](verifications/improved/dim60-antipodal840-lift/) | 60 | 58,542,821; 840 antipodal directions and 841 independent poles over 420 P48 classes |
 | [`dim41-46-p48-heads`](verifications/improved/dim41-46-p48-heads/) | 41–46 | rational heads, explicit partial 43D families and coordinated 45D movement; inherited complete-family populations |
-| `[dim49-63-p48-caps](verifications/improved/dim49-63-p48-caps/)`                             | 49–60  | the cap construction over P₄₈, with the 7 387-line class and 577 explicit disjoint images                                                                                             |
+| `[dim49-63-p48-caps](verifications/improved/dim49-63-p48-caps/)`                             | 49–59 (60 retained) | the cap construction over P₄₈, with the 7 783-line class and 577 explicit disjoint images                                                                                             |
 | `[dim62-63-ers-chain](verifications/improved/dim62-63-ers-chain/)`                         | 62, 63 | retained Edel–Rains–Sloane chain (n, 15, 2); it beats the caps restricted to the shipped bases and is superseded by the October central sections |
 | `[dim68-69-gamma72-cross-sections](verifications/improved/dim68-69-gamma72-cross-sections/)` | 68, 69 | realizability of a k-point Gram settled by **exhibiting** the k-tuple in Γ₇₂ rather than through the LP's own witness lemma, which unlocks k = 3 and k = 4 |
 | `[dim70-71-gamma72-cross-sections](verifications/improved/dim70-71-gamma72-cross-sections/)` | 70, 71 | the same k-point method on Nebe's Γ₇₂                                                                                                                                                        |
@@ -767,10 +771,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 94 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 95 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 113 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 114 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

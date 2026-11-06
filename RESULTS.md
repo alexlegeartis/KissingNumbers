@@ -13,6 +13,8 @@ The further 28 October continuation gives 370376 in 33D (+8), 390990 in 34D (+8)
 
 The 28 October Fano-grid and cube-edge construction gives 611522 in 38D (+1128 over the preceding 610394-point repository certificate). It replaces 5408 latitude points with 6656 and removes 120 caps. Two independent exact proofs check all retained layers, and the expanded replay checks all 22147840 distinct latitude pairs. A small recipe reconstructs the certificate without search. The 6656-point latitude population saturates this particular 63-support model; other supports and norm splits remain open. The manuscript remains deferred.
 
+The 6 November antipodal-direction completion gives 58,542,821 in 60D (+574,478 over the preceding repository construction). A known antipodal 840-point quaternionic code supplies 420 direction pairs instead of 378; the 841-point pole code is independent. Exact tail, pole, base-class, isometry and full-coordinate disjointness checks pass. The published P48 minimum and mother-shell population remain explicit inputs. The manuscript is unchanged.
+
 The 4 November algebraic completion gives 209825 in 27D (+18) and 251196 in 31D (+8). Individual signed-support choices share 14 deletions for 32 additions in 27D. An eight-point orthogonal sign cube fills a 31D hole without deletion. Both complete explicit configurations and all changed pairs replay exactly; the registered engine reproduces the selections. The manuscript is unchanged.
 
 The 4 November finite body/head 43D continuation gives 2919785 points (+3 over the preceding 2919782 certificate), with 3450 explicit tiny points. The generic engine independently generated the same final point set as the separate discovery task. Both ambient and coefficient-coordinate exact replays pass. Complete-family population inputs and the deferred manuscript scope are unchanged.
@@ -65,7 +67,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 57 | 52 416 306 | **54 747 156** | 1.04 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
 | 58 | 52 416 510 | **56 237 690** | 1.07 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
 | 59 | 52 416 604 | **56 907 532** | 1.09 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
-| 60 | 52 416 841 | **57 968 343** | 1.11 | `classes` | [the cap construction over P_48, with explicit classes](verifications/improved/dim49-63-p48-caps/) |
+| 60 | 52 416 841 | **58 542 821** | 1.12 | `classes` | [840 antipodal quaternionic directions, 420 disjoint P48 classes and 841 independent poles; exact finite replay](verifications/improved/dim60-antipodal840-lift/) |
 | 61 | 52 417 154 | **88 260 394** | 1.68 | `codes` | [shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
 | 62 | 52 417 932 | **121 824 268** | 2.32 | `codes` | [shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
 | 63 | 52 418 564 | **184 286 468** | 3.52 | `codes` | [shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay](verifications/improved/dim61-68-95-96-code-layers/) |
@@ -110,7 +112,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 
 | status | dims | what it means | why |
 |---|---|---|---|
-| `classes` | 49-60 (12) | only a better class family helps; these all improve together | the strongest prefix of the old 1400-class family or the October 577-image family over a 7387-line base; larger base classes and different disjoint families remain open (dim49-63-p48-caps/verify_october.py) |
+| `classes` | 49-60 (12) | larger class families or improved direction and pole codes can help | the strongest prefix of the old 1400-class family or the October 577-image family over a 7783-line base; larger base classes, improved direction codes and different disjoint families remain open (dim49-63-p48-caps/verify_october.py) |
 | `codes` | 32-33 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | signed octad replacements over the dense [32,17,8] code; larger signed support families remain open (dim32-35-signed-layers/verify.py) |
 | `codes` | 39 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | rationally deformed dense sign orbits and sparse root replacements; complete relative orbit enumeration; larger compatible families remain open (dim39-deformed-orbits/verify.py) |
 | `codes` | 61-63, 66-68 (6) | larger input codes or different layer and section geometry can improve these explicit constructions | explicit binary compression, central sections and enlarged support layers; no unrestricted optimality or construction ceiling is claimed (dim61-68-95-96-code-layers/verify.py) |
@@ -161,7 +163,7 @@ refreshed table, not more search.
 | 57 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(9) = 153, S = 1165425; verify_october.py |
 | 58 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(10) = 255, S = 1910590; verify_october.py |
 | 59 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(11) = 302, S = 2245464; verify_october.py |
-| 60 | `dim49-63-p48-caps` | family_refilled.npz: 577 explicit images of a 7783-line class; lambda(12) = 378, S = 2775751; verify_october.py |
+| 60 | `dim60-antipodal840-lift` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 61-63, 66-68 | `dim61-68-95-96-code-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 64-65 | `dim64-65-signed-parity` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 69 | `dim68-69-gamma72-cross-sections` | verify69.py (A_3 at the Hermite floor, det 256, exhibited inside the D_4 four-tuple) |

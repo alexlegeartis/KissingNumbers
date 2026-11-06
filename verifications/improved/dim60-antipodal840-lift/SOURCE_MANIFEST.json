@@ -1,0 +1,34 @@
+{
+  "repository": "https://github.com/alexlegeartis/KissingNumbers",
+  "commit": "11dc33180eb63bcf255f81a9a4cc95f187bdd174",
+  "files": {
+    "coordinates841.txt": {
+      "bytes": 208997,
+      "sha256": "be4b651ae8167e2c33bda881f77c9fa2cb5e6a07a8fb92f8360acd4691ed48de"
+    },
+    "family_55_61.npz": {
+      "bytes": 3156602,
+      "sha256": "8cd78593124ffd3b072aa0116c58b1cbe0c17960d98ec319090554258e51c777"
+    },
+    "family_refilled.npz": {
+      "bytes": 389181,
+      "sha256": "d2f6afe15f1ad05b08832e4e9dcbf0a7a1159e232ab63ad30259b98ce60e0396"
+    },
+    "family_refilled.verified.json": {
+      "bytes": 8749,
+      "sha256": "ad7136c45bd88b410073a7b9a8a75b3d33ad949856988409c7c0db489c52e54f"
+    },
+    "p48p_gens.npy": {
+      "bytes": 55424,
+      "sha256": "38671ddae7fd02d4eb4d3a8b8dadce412f244aae2e918987de6c07a1aea7077f"
+    },
+    "p48p_gram.npy": {
+      "bytes": 18560,
+      "sha256": "01a5d107e4424092e5300e201592aaff62804ee27eeb1d23b6e516249897d3e1"
+    }
+  },
+  "tail_source": "https://arxiv.org/abs/2609.09179",
+  "independent_lift_source": "https://arxiv.org/html/2611.01906v1",
+  "prior_repository_bound60": 57968343,
+  "independent_paper_bound60": 57573374
+}
