@@ -490,7 +490,7 @@ for _d in (77, 78, 79):
 STATUS[25] = ('heads', 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons; larger compatible families remain open (dim25-collective-deformation/verify.py)')
 STATUS[31] = ('heads', 'shared midpoint replacements and dual E7 centres; exact coordinate replay; larger compatible families remain open (dim31-dual-centres/verify.py)')
 STATUS[38] = ('heads', '6784 Fano-grid and orthogonal Hamming latitude points after 132 cap deletions; full seven-coordinate heads and a new norm split escape the old support ceiling; other joint layers remain open (dim38-joint-latitudes/verify.py)')
-STATUS[39] = ('codes', '64-element nonbinary sign orbits and retained sparse layers; two independent complete exact proofs; larger compatible orbit families remain open (dim39-deformed-orbits/verify.py)')
+STATUS[39] = ('codes', '32-element nonbinary sign orbits and retained sparse layers; two independent complete exact proofs; larger compatible orbit families remain open (dim39-deformed-orbits/verify.py)')
 STATUS[40] = ('heads', 'three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products; larger compatible families remain open (dim40-affine-shells/verify.py)')
 
 for _d in (32, 33):

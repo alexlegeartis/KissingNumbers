@@ -1,0 +1,24 @@
+Checked dense/middle supports 500/3424
+Checked dense/middle supports 1000/3424
+Checked dense/middle supports 1500/3424
+Checked dense/middle supports 2000/3424
+Checked dense/middle supports 2500/3424
+Checked dense/middle supports 3000/3424
+{
+  "status": "PASS",
+  "report": "research/independent_audit39_769436_20261106/sparse_dense_sparse_audit39.json",
+  "elapsed_seconds": 58.68002941699888,
+  "counts": {
+    "middle": 438272,
+    "roots": 2908,
+    "stars": 64,
+    "sparse_total": 441244,
+    "dense_representatives": 10256,
+    "group_order": 32,
+    "dense_total_conditional_on_independent_dense_distinctness": 328192,
+    "total_conditional_on_independent_dense_distinctness": 769436
+  },
+  "dense_middle_max": 141421267,
+  "dense_root_max": 49454881,
+  "dense_star_max": 128757197
+}

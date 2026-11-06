@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-06",
+  "dimension": 39,
+  "verified_lower_bound": 769436,
+  "preceding_repository_bound": 769372,
+  "preceding_39_commit": "b4c1fe9b6339e1b90e12c6bb216908702f8aba90",
+  "latest_main_before_preparation": "c074ceec11664fb2dbc1c1103350ffbaf3863be6",
+  "initial_repository_baseline": 769180,
+  "gain_from_preceding": 64,
+  "gain_from_initial": 256,
+  "primary_literature_comparison": {
+    "url": "https://arxiv.org/abs/2611.03682",
+    "bound": 768916,
+    "source_review": "common/source_review_20261106_39.json",
+    "scope": "Previously checked primary source; no exhaustive worldwide-priority claim."
+  },
+  "verification_package": "verifications/improved/dim39-deformed-orbits/continuation32",
+  "certificate_sha256": "e9f2dd59bf5169bf915be8e7d622a7ff14481471e2e0a96e0f9d90b46a5c6ad7",
+  "mathematical_scope": "Complete explicit finite configuration. All sparse points are retained; all dense representatives were jointly deformed. Both proof routes check every pair family with exact integer arithmetic."
+}

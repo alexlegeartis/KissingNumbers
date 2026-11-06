@@ -1,0 +1,6 @@
+if not __debug__:raise RuntimeError('Run without -O.')
+import json,hashlib,numpy as np
+from pathlib import Path
+p=Path(__file__).parent;q=p.parent/'orbit_certificate.json';raw=q.read_bytes();sha=hashlib.sha256(raw).hexdigest();assert sha=='e9f2dd59bf5169bf915be8e7d622a7ff14481471e2e0a96e0f9d90b46a5c6ad7';c=json.loads(raw);G=c['group_words'];V=c['representatives'];assert len(G)==len(set(G))==32 and 0 in G and all(type(g)is int and 0<=g<2**39 for g in G);gs=set(G);assert all(a^b in gs for a in G for b in G);assert len(V)==10256 and all(len(v)==39 and all(type(x)is int and abs(x)<=100000000 for x in v) for v in V);assert 39*100000000**2<2**63;rows=np.zeros((len(V),40),np.int32);rows[:,:39]=V
+with open(p/'dense_input.bin','wb') as f:np.array([len(V),39,len(G),c['norm_lower'],c['norm_upper']],np.int64).tofile(f);rows.tofile(f);np.array(G,np.uint64).tofile(f)
+json.dump({'certificate_sha256':sha,'binary_sign_group_closure_checks':len(G)**2,'coordinates_are_integers':True,'full_support':bool(np.all(rows[:,:39]!=0)),'int64_absolute_sum_bound':39*100000000**2,'method':'Direct integer dot products for every unordered representative pair and all32 explicit relative sign masks. No Walsh transform, floating point, cached geometry or producer checker.'},open(p/'dense_input_checks.json','w'),indent=2)

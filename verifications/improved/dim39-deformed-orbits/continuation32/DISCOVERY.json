@@ -1,0 +1,11 @@
+{
+  "dimension": 39,
+  "points": 769436,
+  "previous_bound": 769372,
+  "previous_commit": "b4c1fe9b6339e1b90e12c6bb216908702f8aba90",
+  "initial_baseline": 769180,
+  "construction": "All dense representatives were jointly relaxed under a 32-element coordinate-sign subgroup, with the actual 3,424 middle-support constraints and their projected sign parity. The 441,244-point sparse configuration is unchanged.",
+  "certificate_sha256": "e9f2dd59bf5169bf915be8e7d622a7ff14481471e2e0a96e0f9d90b46a5c6ad7",
+  "coordinates": "Exact normalized integer directions at scale 100,000,000; floating search output is not trusted by either proof.",
+  "search": "SciPy L-BFGS-B with analytically differentiated angle penalties. Search constraint lists were pruned for speed, but complete dense pairs and every actual support were checked after optimization; final integer verification is exhaustive."
+}

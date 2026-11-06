@@ -1,0 +1,35 @@
+SOURCE DATA AND ATTRIBUTION
+
+All three source files are copied unchanged from Qihong Lin's public
+certificate, as fetched into the workspace on 24 October 2026:
+https://github.com/QH-Lin/kissing-numbers-33-39
+Qihong Lin, New lower bounds for kissing numbers in dimensions 33-39,
+22 October 2026, https://doi.org/10.5281/zenodo.23554808 .
+SHA-256 hashes are pinned in base_certificate.json.
+
+supports_3424.txt is Lin's 3424-support constant-weight code, CC BY 4.0.
+The four changes to its use are specified separately in base_certificate.json;
+the original source file itself has not been edited.
+
+dense_kernel.txt and dense_representatives.txt originate with Yang et al.,
+Large-Scale Autonomous Discovery of Kissing Number Constructions,
+https://arxiv.org/abs/2609.35051 and
+https://github.com/Oxelra-AI/Qiushi-Engine-Kissing-Number-Research .
+They retain their original CC BY 4.0 attribution, also recorded in the
+file headers supplied by Lin.
+
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ .
+
+The dense code and original support family are existing results. The new
+work consists of the four support substitutions and the 64-for-56 root
+replacement, with a new exact verification program.
+
+PRESENT ORBIT CONSTRUCTION
+
+The original binary dense data are retained for provenance and replay of
+the base verifier. The present result replaces all original dense vectors
+by the exact normalized integer group orbits in orbit_certificate.json.
+The new orbit representatives and complete integer orbit verifier are
+additional work. Lin's eight-support data remain in use, with the four
+previously certified replacements. The original CC BY 4.0 attribution
+and notices above continue to apply to the supplied source data.

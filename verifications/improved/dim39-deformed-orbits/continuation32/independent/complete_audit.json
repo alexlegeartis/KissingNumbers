@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "dimension": 39,
+  "points": 769436,
+  "complete_pair_family_coverage": true,
+  "exact_arithmetic_only": true,
+  "producer_code_imported_or_executed": false,
+  "certificate_sha256": "e9f2dd59bf5169bf915be8e7d622a7ff14481471e2e0a96e0f9d90b46a5c6ad7",
+  "counts": {
+    "dense": 328192,
+    "middle": 438272,
+    "roots": 2908,
+    "stars": 64
+  },
+  "dense_relative_products_checked": 1683122416,
+  "literal_dense_middle_signed_sums_checked": 8848056320,
+  "distinct_support_pairs_checked": 5860176,
+  "dense_maximum_integer_dot": 4999992742814284,
+  "dense_allowed_integer_dot": 4999999600000008,
+  "middle_maximum_signed_sum": 141421267,
+  "middle_exact_squared_slack": 23640114743,
+  "partial_middle_points_removed": 0,
+  "scope_limitations": [
+    "Certifies the frozen finite configuration, not optimality or worldwide priority.",
+    "The comparison with previous repository counts is provenance, not a claim that old dense points were retained: all representatives were jointly deformed."
+  ]
+}

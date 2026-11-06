@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "representatives": 10256,
+  "group_order": 32,
+  "products_checked": 1683122416,
+  "minimum_squared_norm": 9999999796355239,
+  "maximum_squared_norm": 10000000200188878,
+  "maximum_integer_dot": 4999992742814284,
+  "allowed_integer_dot": 4999999600000008,
+  "witness": [
+    1378,
+    8971,
+    116386551608
+  ],
+  "seconds": 2.68846,
+  "threads": 4,
+  "unbounded_integer_witness_check": {
+    "dot": 4999992742814284,
+    "norm_i": 10000000013895690,
+    "norm_j": 10000000052643042,
+    "left_4_dot_squared": "99999709712782026978066057730624",
+    "right_norm_product": "100000000665387320731511392288980"
+  },
+  "simd_scalar_cross_checks": 8192,
+  "dense_points": 328192,
+  "certificate_sha256": "e9f2dd59bf5169bf915be8e7d622a7ff14481471e2e0a96e0f9d90b46a5c6ad7"
+}
