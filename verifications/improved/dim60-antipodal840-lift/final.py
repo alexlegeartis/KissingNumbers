@@ -11,13 +11,14 @@ def results():
     keys = {tuple(np.r_[a, b]) for a, b in zip(A, B)}
     assert len(keys) == 840 and all(tuple(-np.r_[a, b]) in keys for a, b in zip(A, B))
     pairs = len(keys) // 2
-    with np.load(ROOT / 'source/family_refilled.npz', allow_pickle=False) as heads:
-        sizes = np.sort(heads['sizes'])[::-1]
-    assert pairs == 420 and len(sizes) >= pairs
-    selected = int(sizes[:pairs].sum())
+    with np.load(ROOT / 'optimized420.npz', allow_pickle=False) as heads:
+        bits = np.unpackbits(heads['retained_bits'], axis=1)
+        assert len(bits) == pairs == 420 and not bits[:, 7783:].any()
+        assert np.array_equal(bits[:, :7783].sum(axis=1), heads['sizes'])
+        selected = int(heads['sizes'].sum())
     poles = sum(bool(line.strip()) for line in (ROOT / 'source/coordinates841.txt').read_text().splitlines())
     total = 52416000 + 2 * selected + poles
-    assert selected == 3062990 and poles == 841 and total == 58542821
+    assert selected == 3063342 and poles == 841 and total == 58543525
     return [{'dimension': 60, 'total': total}]
 
 if __name__ == '__main__':

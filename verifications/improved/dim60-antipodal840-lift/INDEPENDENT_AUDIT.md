@@ -40,3 +40,7 @@ Selecting whole already-disjoint classes from the 577-class certificate is safe.
 - https://arxiv.org/html/2611.01906v1 : November 1 paper reports the weaker 57,573,374 using 378 pairs and 756 poles. Its repository README also still reports this value when inspected.
 
 A current web search did not reveal a stronger public 60D construction or this 840-direction substitution. That is a bounded source check, not proof of worldwide novelty. The earliest +84 observation against the November 1 paper is superseded by the stronger repository baseline and must not be presented as the final improvement.
+
+## Subsequent joint-coverage completion
+
+The updated 58,543,525-point result was independently audited after the initial publication. Fresh full-union counts replayed all 37 recorded exchanges: 3,062,990 lines became 3,063,342. The packed retained memberships cover the final selected union exactly once. A separate endpoint swap calculation using set intersections, rather than the optimizer's owner-vector shortcut, found maximum one-swap gain zero. This is a weak local optimum: zero-gain moves remain, and no global optimality follows. The full geometric verifier was rerun successfully, including 420 isometries, all 30,283,653 base pairs and canonical 48-coordinate disjointness. The optimized420.npz SHA-256 was b3f9c757533949c90601ae0de2adb4386bdf20371da1b852740595bc1da5cdbf. The inherited lattice and independent pole premises above are unchanged.

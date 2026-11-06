@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "selected_lines": 3063342,
+  "classes": 420,
+  "mother_lines": 3063342,
+  "bound60": 58543525,
+  "gain_over_58542821": 704,
+  "base_pairs_checked": 30283653,
+  "verified_class_isometries": 420,
+  "verification": "Full exact coordinate disjointness; tail/pole and mother-lattice premises from published f0083954 package",
+  "sha256": "b3f9c757533949c90601ae0de2adb4386bdf20371da1b852740595bc1da5cdbf"
+}

@@ -1,0 +1,193 @@
+{
+  "selected_lines": 3063342,
+  "bound60": 58543525,
+  "gain_over_published": 704,
+  "exchanges": [
+    {
+      "gain": 30,
+      "add": 449,
+      "remove": 280
+    },
+    {
+      "gain": 15,
+      "add": 448,
+      "remove": 249
+    },
+    {
+      "gain": 13,
+      "add": 512,
+      "remove": 87
+    },
+    {
+      "gain": 13,
+      "add": 423,
+      "remove": 9
+    },
+    {
+      "gain": 13,
+      "add": 428,
+      "remove": 136
+    },
+    {
+      "gain": 12,
+      "add": 450,
+      "remove": 315
+    },
+    {
+      "gain": 12,
+      "add": 426,
+      "remove": 255
+    },
+    {
+      "gain": 11,
+      "add": 498,
+      "remove": 154
+    },
+    {
+      "gain": 14,
+      "add": 422,
+      "remove": 199
+    },
+    {
+      "gain": 12,
+      "add": 427,
+      "remove": 90
+    },
+    {
+      "gain": 14,
+      "add": 425,
+      "remove": 353
+    },
+    {
+      "gain": 13,
+      "add": 421,
+      "remove": 77
+    },
+    {
+      "gain": 13,
+      "add": 437,
+      "remove": 0
+    },
+    {
+      "gain": 9,
+      "add": 444,
+      "remove": 95
+    },
+    {
+      "gain": 13,
+      "add": 436,
+      "remove": 359
+    },
+    {
+      "gain": 10,
+      "add": 435,
+      "remove": 143
+    },
+    {
+      "gain": 11,
+      "add": 439,
+      "remove": 189
+    },
+    {
+      "gain": 12,
+      "add": 430,
+      "remove": 52
+    },
+    {
+      "gain": 10,
+      "add": 466,
+      "remove": 313
+    },
+    {
+      "gain": 13,
+      "add": 429,
+      "remove": 402
+    },
+    {
+      "gain": 7,
+      "add": 524,
+      "remove": 345
+    },
+    {
+      "gain": 5,
+      "add": 471,
+      "remove": 355
+    },
+    {
+      "gain": 9,
+      "add": 476,
+      "remove": 56
+    },
+    {
+      "gain": 5,
+      "add": 431,
+      "remove": 377
+    },
+    {
+      "gain": 6,
+      "add": 445,
+      "remove": 37
+    },
+    {
+      "gain": 8,
+      "add": 483,
+      "remove": 264
+    },
+    {
+      "gain": 7,
+      "add": 486,
+      "remove": 115
+    },
+    {
+      "gain": 5,
+      "add": 505,
+      "remove": 238
+    },
+    {
+      "gain": 5,
+      "add": 433,
+      "remove": 259
+    },
+    {
+      "gain": 5,
+      "add": 457,
+      "remove": 429
+    },
+    {
+      "gain": 7,
+      "add": 452,
+      "remove": 387
+    },
+    {
+      "gain": 6,
+      "add": 434,
+      "remove": 356
+    },
+    {
+      "gain": 4,
+      "add": 345,
+      "remove": 186
+    },
+    {
+      "gain": 1,
+      "add": 432,
+      "remove": 251
+    },
+    {
+      "gain": 1,
+      "add": 461,
+      "remove": 365
+    },
+    {
+      "gain": 2,
+      "add": 526,
+      "remove": 80
+    },
+    {
+      "gain": 6,
+      "add": 441,
+      "remove": 301
+    }
+  ],
+  "one_exchange_local_optimum": true
+}
