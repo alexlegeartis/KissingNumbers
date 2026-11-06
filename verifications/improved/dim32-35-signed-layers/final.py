@@ -32,6 +32,11 @@ def results():
             assert hashlib.sha256(file.read_bytes()).hexdigest()==trade['baseline_sha256']
             total+=16*len(trade['stars'])-2*len(trade['removed_root_lines'])
             assert total==trade['points']
+        if d==34:
+            assert total==390990
+            rotated=json.loads((ROOT/'rotated34/certificate.json').read_text())
+            total=(1<<len(rotated['dense_generator']))+128*len(rotated['full_even_supports'])+len(rotated['stars'])+len(rotated['heavy_numerators_over_85'])+2*d*(d-1)-2*len(rotated['removed_root_lines'])
+            assert total==rotated['points']==390992
         out.append(dict(dimension=d,total=total))
     return out
 

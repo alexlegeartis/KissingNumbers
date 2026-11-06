@@ -1,0 +1,30 @@
+{
+  "all_checks_pass": true,
+  "dimension": 34,
+  "points": 390992,
+  "counts": {
+    "dense": 131072,
+    "middle": 257664,
+    "stars": 64,
+    "heavy": 4,
+    "roots": 2188
+  },
+  "support_pairs": 2025078,
+  "maximum_support_overlap": 4,
+  "dense_minimum_distance": 8,
+  "dense_shifted_weight_range": [
+    6,
+    26
+  ],
+  "head_middle_numerator_maxima": [
+    1604,
+    1700,
+    1604,
+    1700
+  ],
+  "star_middle_upper_bound": 16,
+  "integer_squared_norm": 5780000,
+  "integer_pair_bound": 2890000,
+  "certificate_sha256": "36a9017be6de898d16bdfdad1b686db1d991a9be8a77a804134d770794a5f7ea",
+  "elapsed_seconds": 0.42842278700118186
+}

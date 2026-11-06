@@ -1,6 +1,6 @@
 """Replay two independent exact proofs for every current configuration."""
 from pathlib import Path
-import json,shutil,sys
+import json,shutil,sys,tempfile
 ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT.parents[2]/'common'))
 from checkpoint import check_manifest,temporary_source,replay
@@ -30,6 +30,20 @@ if __name__=='__main__':
         coordinate=json.loads((target/'coordinate_verification.json').read_text())
         for rows in (symbolic,coordinate):
             assert all(row['all_checks_pass'] for row in rows)
-            assert {row['dimension']:row['points'] for row in rows}=={d:expected[d] for d in (33,34,35)}
+            assert {row['dimension']:row['points'] for row in rows}=={33:370376,34:390990,35:415334}
         assert [(row['dimension'],row['certificate_sha256']) for row in symbolic]==[(row['dimension'],row['certificate_sha256']) for row in coordinate]
+    with tempfile.TemporaryDirectory(prefix='rotated34_replay_') as directory:
+        current=Path(directory)/'rotated34'
+        shutil.copytree(ROOT/'rotated34',current,ignore=shutil.ignore_patterns('__pycache__'))
+        replay(current,'verify.py')
+        replay(current,'verify_coordinates.py')
+        replay(current,'negative_controls.py')
+        symbolic=json.loads((current/'verification.json').read_text())
+        coordinate=json.loads((current/'coordinate_verification.json').read_text())
+        controls=json.loads((current/'negative_control_results.json').read_text())
+        assert symbolic['all_checks_pass'] and coordinate['all_checks_pass']
+        assert symbolic['points']==coordinate['points']==expected[34]==390992
+        assert symbolic['certificate_sha256']==coordinate['input_sha256']['certificate.json']
+        assert coordinate['unique_rows']==390992 and coordinate['exact_rank']==34
+        assert len(controls)==10 and all(row['rejected'] for row in controls)
     print(json.dumps(dict(status='PASS',results=[dict(dimension=d,total=n) for d,n in sorted(expected.items())])))

@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-06",
+  "dimension": 34,
+  "verified_lower_bound": 390992,
+  "preceding_repository_bound": 390990,
+  "gain_from_preceding": 2,
+  "published_comparison": {
+    "bound": 390980,
+    "source": "https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07",
+    "scope": "Retains the repository pinned Lin support-code/ERS comparison; no new exhaustive worldwide literature audit."
+  },
+  "verification_package": "verifications/improved/dim32-35-signed-layers/rotated34",
+  "certificate_sha256": "36a9017be6de898d16bdfdad1b686db1d991a9be8a77a804134d770794a5f7ea",
+  "mathematical_scope": "Complete explicit finite rational configuration; every layer interaction, uniqueness and exact rank 34 checked independently. Integer coordinates reconstruct without search."
+}

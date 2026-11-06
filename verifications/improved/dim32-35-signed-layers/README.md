@@ -1,13 +1,13 @@
 # Signed octad layers and coordinated heads in dimensions 32–35
 
-Checkpoint: **28 October 2026**. All four lower bounds have two independent
+Checkpoint: **6 November 2026**. All four lower bounds have two independent
 exact verification routes.
 
 | Dimension | Previous reviewed bound | This construction | Added points | Previous method |
 |---|---:|---:|---:|---|
 | 32 | 352,320 | **352,800** | **480** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-number-32) |
 | 33 | 370,240 | **370,376** | **136** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
-| 34 | 390,980 | **390,990** | **10** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
+| 34 | 390,980 | **390,992** | **12** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
 | 35 | 415,308 | **415,334** | **26** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
 
 The preceding constructions use 1,713, 1,852, 2,013 and 2,202 supports from
@@ -15,9 +15,25 @@ The preceding constructions use 1,713, 1,852, 2,013 and 2,202 supports from
 Their counts are 131,072 + 128 M + 2n(n−1). This is the gain over those public
 witnesses. A complete new retrieval of Cohn's table was unavailable.
 
+## Rational heavy-head rotation: 6 November continuation
+
+The 34D bound is now **390,992**, two above the preceding repository
+certificate. Moving the dense layer to coordinates excluding 0 and 2,
+switching one star parity, and rationally rotating one heavy head restore
+two roots. [The exact construction](rotated34/README.md) has 390,992 unique
+integer vectors after common scaling, all norm squared 5,780,000 and all
+pairwise products at most 2,890,000. No numerical premise is used.
+
+`rotated34/verify.py` supplies a symbolic integer proof;
+`rotated34/verify_coordinates.py` independently expands every layer,
+checks all interaction types, uniqueness and rank, and optionally writes
+the full coordinate archive. `rotated34/negative_controls.py` checks ten
+corrupt-certificate rejections. The parent `verify.py` runs all three in
+an isolated copy; the historical source certificates remain unchanged.
+
 ## Shared root deletions: 28 October continuation
 
-The current bounds improve the preceding repository certificates by **8, 8
+The 28 October bounds improve the preceding repository certificates by **8, 8
 and 20 points** in 33D, 34D and 35D. Four, four and eight complete root-star
 families add 64, 64 and 128 points while removing 56, 56 and 108 roots.
 All preceding dense, middle and head points are retained. Shared deleted

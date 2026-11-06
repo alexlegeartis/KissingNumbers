@@ -1,0 +1,52 @@
+[
+  {
+    "case": "duplicate support",
+    "verifier": "verify.py",
+    "rejected": true
+  },
+  {
+    "case": "duplicate support",
+    "verifier": "verify_coordinates.py",
+    "rejected": true
+  },
+  {
+    "case": "wrong heavy norm",
+    "verifier": "verify.py",
+    "rejected": true
+  },
+  {
+    "case": "wrong heavy norm",
+    "verifier": "verify_coordinates.py",
+    "rejected": true
+  },
+  {
+    "case": "restore incompatible root",
+    "verifier": "verify.py",
+    "rejected": true
+  },
+  {
+    "case": "restore incompatible root",
+    "verifier": "verify_coordinates.py",
+    "rejected": true
+  },
+  {
+    "case": "false count",
+    "verifier": "verify.py",
+    "rejected": true
+  },
+  {
+    "case": "false count",
+    "verifier": "verify_coordinates.py",
+    "rejected": true
+  },
+  {
+    "case": "duplicate star",
+    "verifier": "verify.py",
+    "rejected": true
+  },
+  {
+    "case": "duplicate star",
+    "verifier": "verify_coordinates.py",
+    "rejected": true
+  }
+]

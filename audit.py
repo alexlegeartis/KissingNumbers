@@ -418,6 +418,8 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim3
                                      'certificate%d.json' % _dimension), encoding='utf-8') as _old_stream:
                 _old_total = json.load(_old_stream)['points']
             add(_dimension, _old_total, _package, 'source/%s/verify.py: retained historical certificate' % _family)
+    if _package == 'dim32-35-signed-layers':
+        add(34, 390990, _package, 'root_trades/verify.py: retained 28 October root-star certificate')
     if _package == 'dim39-deformed-orbits':
         add(39, 769180, _package, 'source/verify.py: retained historical 256-element orbit certificate')
     if _package == 'dim38-joint-latitudes':
@@ -2016,7 +2018,7 @@ if '--write-results' in sys.argv and not fail:
         'dim26-31-residual-completions': 'shared midpoint replacements, axiswise residual heads and exact exceptional pure tails; independent full-coordinate proof',
         'dim26-27-midpoint-replacements': 'shared midpoint replacements on orthogonal tail directions; exact Leech membership, midpoint identities and all inserted-pair products',
         'dim29-30-midpoint-replacements': 'shared Leech midpoint replacements with D5/D6 inserted tails and pure D5/E6 roots; exact coordinate replay',
-        'dim32-35-signed-layers': 'signed octad layers, coordinated heads and shared root-star deletions; two independent exact proofs',
+        'dim32-35-signed-layers': 'signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs',
         'dim25-collective-deformation': 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons',
         'dim31-dual-centres': 'shared midpoint replacements and dual E7 centres; exact coordinate replay',
         'dim38-joint-latitudes': 'Orthogonal Hamming latitude replacement; two exact proofs with inherited Golay/Leech minimum-norm premise',
@@ -2048,6 +2050,8 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append('The 6 November rational heavy-head rotation gives 390992 in 34D (+2 over the preceding 390990 certificate). A changed dense coordinate placement and star parity permit shared root deletion and restore two roots. Two independent exact proofs check all finite layers, uniqueness and rank 34; common scaling gives squared integer norm 5780000 and product bound 2890000. Historical constructions and the manuscript are unchanged.')
+    out.append('')
     out.append('The 6 November actual-support continuation gives 769436 in 39D (+64 over 769372; +256 over 769180). It combines all 441244 retained sparse points with 10256 sign orbits of order 32. Two independent exact proofs check all 1683122416 relative products and the actual middle-support geometry. All previous certificates and the manuscript are retained unchanged.')
     out.append('')
     out.append("The 29 October continuation gives 209807, 221988, 231697, 247972, 251188 in 27-31D, exceeding PackingStar commit 477df34 by 47, 124, 21, 5, 19 points. Corrected sextet symmetries reclaim 28D and further strengthen 27D, 29D and 31D. Complete exact coordinate replays and independent direct-int64 insertion checks pass. The manuscript remains deferred.")

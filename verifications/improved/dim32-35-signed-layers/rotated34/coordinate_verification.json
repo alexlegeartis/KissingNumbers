@@ -1,0 +1,43 @@
+{
+  "all_checks_pass": true,
+  "points": 390992,
+  "dimension": 34,
+  "exact_rank": 34,
+  "counts": {
+    "dense": 131072,
+    "middle": 257664,
+    "roots": 2188,
+    "stars": 64,
+    "heads": 4
+  },
+  "removed_roots": 56,
+  "dense_minimum_distance": 8,
+  "middle_maximum_overlap": 4,
+  "maxima": {
+    "dense_dense": 16,
+    "middle_middle": 16,
+    "dense_middle_upper_bound": 16,
+    "dense_roots_upper_bound": 8,
+    "dense_stars_upper_bound": 12,
+    "stars_middle": 16,
+    "stars_roots": 16,
+    "roots_middle": 16,
+    "stars_stars": 16,
+    "roots_roots": 16,
+    "head_numerator_dense": 1700,
+    "head_numerator_middle": 1700,
+    "head_numerator_stars": 1700,
+    "head_numerator_roots": 1696,
+    "head_numerator_head_numerator": 113390
+  },
+  "common_scale": 425,
+  "integer_squared_norm": 5780000,
+  "integer_pairwise_bound": 2890000,
+  "unique_rows": 390992,
+  "input_sha256": {
+    "certificate.json": "36a9017be6de898d16bdfdad1b686db1d991a9be8a77a804134d770794a5f7ea"
+  },
+  "elapsed_seconds": 3.0910985469818115,
+  "inherited_assumptions": [],
+  "scope_note": "Exact finite construction verified independently; current world-record/literature priority not established by this computation."
+}

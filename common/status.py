@@ -530,3 +530,5 @@ for _d in (27, 28, 29, 30, 31):
 # Explicit algebraic completions, independently replayed 4 November 2026.
 for _d in (27,31):
     STATUS[_d] = ('heads', 'partial signed-orbit shared-deletion selection and an orthogonal sign cube; full explicit geometry and independent direct-integer changed pairs (dim27-31-algebraic-completion/verify.py)')
+
+STATUS[34] = ('heads', 'rational heavy-head rotation with a changed dense coordinate placement and star parity; all finite interactions, uniqueness and rank verified exactly (dim32-35-signed-layers/rotated34/verify.py)')
