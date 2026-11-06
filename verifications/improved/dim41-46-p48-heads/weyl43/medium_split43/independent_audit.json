@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "dimension": 43,
+  "base_count": 2919799,
+  "medium_enumerated_distinct": 29700,
+  "deleted_medium": 6,
+  "deleted_tiny": 3,
+  "inserted": 13,
+  "new_count": 2919803,
+  "checks": {
+    "retained_medium": 386022,
+    "retained_tiny": 44993,
+    "pure": 65,
+    "major_family_bound": 754,
+    "new_pair": 78
+  },
+  "total_checks": 431912,
+  "positive_dot_min_integer_slack": {
+    "retained_medium": 287577270328529244419306215748585375331251025744,
+    "retained_tiny": 17953351099115206097611109992025051275927956321500000,
+    "pure": 101178046564357254128917663577051055242725544,
+    "major_family_bound": 100344901562162730252525952512000000000000000000,
+    "new_pair": 10519979386586695144196462482349360108930566346498246
+  },
+  "candidate_sha256": "3f36ee6721f1a339e4e3701b46b86f2d056a0da674393d4cc77c67ae9c3a0960",
+  "scope": "Published parent geometry and old configuration replayed separately. All 60 medium families independently checked against published complement and gluing labels. New interactions exact; retained-retained inherited from freshly rerun published verifier. Minimum-six/11-design and family population/completeness identities remain inherited. No worldwide priority claim."
+}

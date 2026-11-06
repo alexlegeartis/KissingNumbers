@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "old_count": 2919799,
+  "new_count": 2919803,
+  "new_points": 13,
+  "deleted_medium_points": 6,
+  "deleted_tiny_points": 3,
+  "exact_angle_checks": 431912,
+  "candidate_sha256": "3f36ee6721f1a339e4e3701b46b86f2d056a0da674393d4cc77c67ae9c3a0960",
+  "scope": "Fresh exact checks of new points against every retained explicit medium and tiny point, all pure heads, and universal bounds for retained major families. Published old configuration and population premises remain inherited."
+}

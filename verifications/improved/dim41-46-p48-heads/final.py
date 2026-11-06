@@ -32,6 +32,11 @@ def results():
                 explicit = len(points['body_indices'])
                 assert explicit == row['explicit_body_points']
                 body += explicit
+        if 'partial_continuation' in row:
+            continuation = json.loads((ROOT / row['partial_continuation']).read_text())
+            gain = len(continuation['points']) + len(continuation['new_tiny']) - len(continuation['delete']) - len(continuation['delete_tiny'])
+            assert gain == continuation['gain']
+            body += gain
         assert body == row['body_points'] and pure == row['pure_points']
         assert body + pure == row['total']
         out.append(dict(row, population_scope=ledger()['population_scope']))

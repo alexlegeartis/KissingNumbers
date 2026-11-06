@@ -6,7 +6,7 @@ Checkpoint: **28 October 2026**. Six current constructions are supplied.
 |---|---:|---|
 | 41 | **1,460,036** | 1,460,034 body points and two pure-head poles |
 | 42 | **1,991,445** | 1,991,439 body points and a pure-head hexagon |
-| 43 | **2,919,799** | 118 relabeled complete families, 3,464 explicit tiny points and five pure heads |
+| 43 | **2,919,803** | Weyl core with six individual medium splits, three tiny deletions and one refill |
 | 44 | **4,939,281** | 1,034 complete body families |
 | 45 | **7,655,056** | 2,187 complete body families and 16 pure heads |
 | 46 | **13,387,797** | 13,387,770 body points and 27 pure heads |
@@ -174,3 +174,7 @@ unrestricted kissing-number upper bounds.
 The [new portable certificate](weyl43/) gives **2,919,799** points (+14): 2,916,330 complete-family points, 3,464 explicit tiny points and five pure heads. The additive E8 discriminant relabeling changes actual classes and their individual populations; the family total is preserved after recomputation. The transform is not assumed to lift to a body-lattice isometry. Fresh parent/complement/gluing replay and two exact angle implementations pass. Large-shell populations, P48n minimum and design remain the documented inherited inputs. No fresh full-shell enumeration or exhaustive worldwide-priority claim is made.
 
 The added replay scripts are `weyl43/verify.py`, `weyl43/verify_families.py` and `weyl43/independent_verify.py`. `weyl43/inherited_verify_masses.py` preserves the upstream moment-identity derivation as provenance; it is not a standalone command in this portable bundle.
+
+## Medium-body splitting continuation
+
+The [partial-family certificate](weyl43/medium_split43/) adds four points to the retained Weyl construction, reaching **2,919,803**. It removes six individual medium points and three old tiny points and inserts twelve medium points plus one new tiny point. Both exact implementations pass 431,912 changed-pair checks. The scripts are `weyl43/medium_split43/verify.py` and `weyl43/medium_split43/verify_independent.py`. The latter also freshly replays the old independent checker. All 29,700 medium bodies are checked against the replayed complement/gluing geometry; their completeness and the large-shell populations remain inherited.

@@ -184,7 +184,7 @@ def verify_older_43(geometry, tiny):
     assert not np.any((products > 0) & (products * products > norms[:, None] * norms))
     assert sum(map(int, weights)) == entry['older_seed_total']
     return dict(dimension=43, older_seed_points=entry['older_seed_total'],
-                latest_working_total=entry['total'], latest_certificate=entry['portable_replay']+'/verify.py',
+                latest_working_total=entry['total'], latest_certificate=(str(Path(entry['partial_continuation']).parent / 'verify.py') if 'partial_continuation' in entry else entry['portable_replay']+'/verify.py'),
                 older_seed_angles='PASS', fresh_body_enumeration=False)
 
 
@@ -213,6 +213,13 @@ def verify_portable(record):
         replay = subprocess.run([sys.executable, '-B', str(target / 'verify.py')],
                                 cwd=target, check=True, capture_output=True, text=True)
         report = json.loads(replay.stdout)
+        if 'partial_continuation' in record:
+            relative = Path(record['partial_continuation']).relative_to(record['portable_replay']).parent
+            continuation = subprocess.run([sys.executable, '-B', str(target / relative / 'verify.py')], cwd=target, check=True, capture_output=True, text=True)
+            result = json.loads(continuation.stdout)
+            assert result['status'] == 'PASS' and result['old_count'] == report['points']
+            report['points'] = result['new_count']
+            report['partial_continuation'] = result
     assert report['status'] == 'PASS'
     assert report['dimension'] == record['dimension'] and report['points'] == record['total']
     report['fresh_body_enumeration'] = False

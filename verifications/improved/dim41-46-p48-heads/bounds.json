@@ -20,18 +20,19 @@
     },
     {
       "dimension": 43,
-      "total": 2919799,
+      "total": 2919803,
       "status": "candidate_supplied",
       "older_seed": "data/old43_seed.npz",
       "older_seed_total": 2878155,
-      "body_points": 2919794,
+      "body_points": 2919798,
       "pure_points": 5,
       "candidate": "weyl43/configuration_43.npz",
       "explicit_points": "weyl43/explicit_points_43.npz",
       "explicit_body_points": 3464,
       "portable_replay": "weyl43",
       "historical_missing_total": 2911990,
-      "independent_replay": "weyl43/independent_verify.py"
+      "independent_replay": "weyl43/medium_split43/verify_independent.py",
+      "partial_continuation": "weyl43/medium_split43/candidate.json"
     },
     {
       "dimension": 44,

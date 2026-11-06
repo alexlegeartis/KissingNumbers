@@ -1,13 +1,13 @@
 # Shared root-star deletions in dimensions 33–35
 
-28 October 2026. Each new bound has a separate formula proof and an expanded
+This retained construction dates to 28 October 2026. Each bound has a separate formula proof and an expanded
 integer-coordinate proof, freshly replaying its retained baseline first.
 
-| Dimension | Preceding repository bound | New bound | Added star points | Removed roots | Gain |
-|---|---:|---:|---:|---:|---:|
-| 33 | 370,368 | **370,376** | 64 | 56 | **8** |
-| 34 | 390,982 | **390,990** | 64 | 56 | **8** |
-| 35 | 415,314 | **415,334** | 128 | 108 | **20** |
+| Dimension | Preceding repository bound | New bound | Added star points | Removed roots | Gain | Current repository bound |
+|---|---:|---:|---:|---:|---:|---:|
+| 33 | 370,368 | **370,376** | 64 | 56 | **8** | **370,376** |
+| 34 | 390,982 | **390,990** | 64 | 56 | **8** | **390,992** |
+| 35 | 415,314 | **415,334** | 128 | 108 | **20** | **415,334** |
 
 For a center a and four leaves B, take the 16 vectors
 `+/-4 e_a + 2*sum(s_b e_b)`, with an even number of negative leaf signs.
