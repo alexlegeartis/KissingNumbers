@@ -51,15 +51,15 @@ table listed 494 312 at that checkpoint.
 **Cohn's table is stale in four dimensions for this reason** — 32, 33, 34 and 37 — all from
 Echols' 2026 constant-weight improvements, which Brouwer's page already carries:
 
-| dim | Cohn's table | Brouwer / correct | who | 6 November repo result |
+| dim | Cohn's table | Brouwer / correct | who | 7 November repo result |
 |---|---|---|---| --- |
 | 32 | 345 408 | **346 432** | Echols 2026 | **352 800 |
 | 33 | 360 640 | **362 048** | Echols 2026 | **370 376 |
 | 34 | 380 868 | **381 124** | Echols 2026 | **390 992** |
-| 37 | 494 312 | **496 232** | Echols 2026 | **505 503** |
+| 37 | 494 312 | **496 232** | Echols 2026 | **505 629** |
 
-The comparison and ERS counts above are historical. The 28 October 2026
-Coxeter–Todd phase-refill construction now gives **505,488** in dimension 37; see
+The comparison and ERS counts above are historical. The 7 November 2026
+Coxeter–Todd triangle-switch construction gives **505,629** in dimension 37; see
 [its certificate](../../improved/dim36-37-coxeter-todd/).
 
 None of these is a claim of this project; they are corrections to the table, and they are

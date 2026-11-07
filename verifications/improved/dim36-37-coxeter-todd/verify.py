@@ -44,13 +44,25 @@ def main():
         assert coordinates['all_checks_pass']
         for key in ('points_36', 'points_37', 'base_points', 'certificate_sha256'):
             assert coordinates[key] == report[key], key
+        old_report=report
+        target=Path(directory)/'triangle_switch'
+        shutil.copytree(ROOT/'triangle_switch',target,ignore=shutil.ignore_patterns('__pycache__'))
+        for script in ('verify.py','verify_coordinates.py','negative_controls.py'):
+            subprocess.run([sys.executable,'-B',str(target/script)],cwd=target,check=True)
+        report=json.loads((target/'verification.json').read_text())
+        independent=json.loads((target/'coordinate_verification.json').read_text())
+        assert report['all_checks_pass'] and independent['all_checks_pass']
+        for key in ('points_36','points_37','proposal_sha256'):
+            assert report[key]==independent[key],key
+        assert report['source_certificate_sha256']==independent['source_sha256']==old_report['certificate_sha256']
+        assert report['gain_36']==report['gain_37']==126
     registered = results()
     assert report['all_checks_pass']
-    assert report['unit_sphere_max_inner_product'] == '1/2'
+    assert report['all_norms_squared']==12 and report['threshold']==6
     assert report['points_36'] == registered[0]['total']
     assert report['points_37'] == registered[1]['total']
     print(json.dumps(dict(status='PASS', results=registered,
-                          construction='36D phase refill and 37D partial latitude orbits; two exact representations')))
+                          construction='36D independent base-triangle switches and joint phase refill; all 37D latitude orbits retained; two exact coordinate proofs')))
 
 
 if __name__ == '__main__':

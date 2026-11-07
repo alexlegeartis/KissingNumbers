@@ -1,0 +1,78 @@
+{
+  "source_certificate_sha256": "b37691e110c73f1100112aea1a4dc39e2a911559a7a49c67c88bb303f6cd8760",
+  "source_short_shell_counts": {
+    "4": 756,
+    "6": 4032,
+    "8": 20412
+  },
+  "unchanged_source_proof_replayed": true,
+  "proposal_sha256": "6a88389c8adcdff44b9cd8ef09edaa0bbc9c98af8db4879296c4d4f9ef25356d",
+  "reconstruction_uses_triangle_api": false,
+  "base_points": 403704,
+  "equatorial_points": 98109,
+  "changed_base_points": 270,
+  "new_equatorial_points": 4533,
+  "removed_base_points": 270,
+  "point_pair_checks": {
+    "new_equator_vs_all_final_base": {
+      "count": 1829990232,
+      "maximum_inner_product": 6,
+      "passed": true
+    },
+    "changed_base_vs_retained_base": {
+      "count": 108927180,
+      "maximum_inner_product": 6,
+      "passed": true
+    },
+    "changed_base_internal": {
+      "count": 36315,
+      "maximum_inner_product": 6,
+      "passed": true
+    },
+    "changed_base_vs_all_final_equator": {
+      "count": 26489430,
+      "maximum_inner_product": 6,
+      "passed": true
+    },
+    "new_equator_vs_all_final_equator": {
+      "count": 444723564,
+      "maximum_inner_product": 6,
+      "passed": true
+    },
+    "changed_base_vs_lift_bodies": {
+      "count": 515160,
+      "maximum_inner_product": 5,
+      "passed": true
+    },
+    "new_equator_vs_lift_bodies": {
+      "count": 8648964,
+      "maximum_inner_product": 6,
+      "passed": true
+    },
+    "distinct_lift_body_pairs": {
+      "count": 1819278,
+      "maximum_inner_product": 2,
+      "passed": true
+    }
+  },
+  "points_36": 501813,
+  "rank_36": 36,
+  "all_norms_squared": 12,
+  "threshold": 6,
+  "all_final_points_distinct": true,
+  "source36_comparison": 501687,
+  "points_37": 505629,
+  "rank_37": 37,
+  "lift_body_points": 1908,
+  "lift_heads": [
+    -2,
+    2
+  ],
+  "source37_comparison": 505503,
+  "gain_36": 126,
+  "gain_37": 126,
+  "all_affected_categories_checked_directly": true,
+  "unchanged_pairs_rely_on_separately_replayed_retained_source_proof": true,
+  "seconds": 41.411940813064575,
+  "all_checks_pass": true
+}

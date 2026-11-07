@@ -363,10 +363,16 @@ assert (_old36, _old37) == (_old_phase['points_36'], _old_phase['points_37'])
 for _d, _v in ((36, _old36), (37, _old37)):
     add(_d, _v, COS_PACKAGE, 'phase/verify.py (retained earlier exact phase witness)')
 
+# Preserve the unchanged completion certificate as registered history.
+with open(os.path.join(IMP,COS_PACKAGE,'completion/certificate.json')) as _stream:
+    _completion=_cos_json.load(_stream)
+for _d,_key in ((36,'points_36'),(37,'points_37')):
+    add(_d,_completion[_key],COS_PACKAGE,'completion/verify.py (retained exact phase completion)')
+
 for _record in _cos_driver.results():
     add(_record['dimension'], _record['total'], COS_PACKAGE,
-        'verify.py (exact short-shell enumeration and phase-orbit angles; '
-        '37D adds two latitude layers to the 36D equator)')
+        'verify.py (independent three-point base switches and joint equatorial refill; '
+        'two exact coordinate proofs; all 37D latitude orbits retained)')
 
 HEAD_PACKAGE = 'dim41-46-p48-heads'
 _head_spec = importlib.util.spec_from_file_location(
@@ -2005,9 +2011,9 @@ if '--write-results' in sys.argv and not fail:
                              'so max |a| sits at a VERTEX, and all 1120 vertices are below 1 '
                              '(ceilings.py 31).  Supersedes the height-sqrt3 '
                              'layer, now in verifications/superseded/dim31-sqrt3-layer/',
-        'dim36-37-coxeter-todd': 'three Coxeter-Todd quotient codes with exact shell '
-                                  'enumeration, phase refill and independent coordinate angles checked; '
-                                  '37D adds partial latitude orbits',
+        'dim36-37-coxeter-todd': 'independent three-point Coxeter-Todd base switches and joint equatorial refill; '
+                                  'two exact coordinate proofs with fresh short-shell enumeration; '
+                                  'all 37D latitude orbits retained',
         'dim88-96-z8-golay': 'published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays',
         'dim61-68-95-96-code-layers': 'shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay',
         'dim26-30-asymmetric-exchanges': 'signed-point normal-sector exchanges without antipodal constraints; full independent exact all-pairs replay',
@@ -2073,6 +2079,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("The 6 November medium-body splitting continuation gives 2,919,803 points (+4 over the retained 2,919,799-point Weyl construction). Six medium points and three tiny points are removed; twelve medium points and one tiny point are inserted. Two exact implementations pass 431,912 changed-interaction checks, with fresh geometry/gluing and medium-membership checks. P48n minimum/design and family completeness/populations remain inherited; no full large-shell enumeration or worldwide-priority assertion is made. The manuscript remains unchanged.")
     out.append("The 4 November finite body/head 43D continuation gives 2919785 points (+3 over the preceding 2919782 certificate), with 3450 explicit tiny points. The generic engine independently generated the same final point set as the separate discovery task. Both ambient and coefficient-coordinate exact replays pass. Complete-family population inputs and the deferred manuscript scope are unchanged.")
+    out.append("")
+    out.append("The 7 November Coxeter-Todd triangle-switch continuation gives 501813 in 36D and 505629 in 37D, adding 126 to each preceding certificate. Ninety independent three-point base switches combine with 1511 added and 1469 removed equatorial phase orbits. Two exact coordinate proofs replay every affected category, including new equator versus unchanged base, and retain all 636 lift-body orbits at both heights. The original source and manuscript remain unchanged.")
     out.append("")
     out.append("The 28 October Coxeter-Todd continuation gives 501672 in 36D (+39) and 505488 in 37D (+129), with two independent exact representations and reproducible phase trades.")
     out.append("")

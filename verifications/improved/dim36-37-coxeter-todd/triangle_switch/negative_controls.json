@@ -1,0 +1,18 @@
+{
+  "restore_original_base_switches": {
+    "detected_conflict": true,
+    "new_equator_vs_original_base_max": 8,
+    "first_max_indices": [
+      0,
+      144
+    ]
+  },
+  "restore_removed_phase_points": {
+    "detected_conflict": true,
+    "changed_or_added_vs_removed_phase_max": 10,
+    "first_max_indices": [
+      507,
+      132
+    ]
+  }
+}

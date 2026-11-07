@@ -1,11 +1,22 @@
-# Coxeter–Todd phase refills in dimensions 36 and 37
+# Coxeter–Todd triangle switches in dimensions 36 and 37
+
+## Current triangle-switch continuation
+
+The [7 November triangle-switch package](triangle_switch/) gives **501,813 in 36D** and **505,629 in 37D**, increasing each preceding completion by **126**. Ninety independent three-point base switches combine with 1,511 added and 1,469 removed equatorial phase orbits. Every one of the 636 latitude body orbits survives at both heights.
+
+Two exact coordinate representations freshly enumerate the short Coxeter–Todd shells and check every affected point-pair category, full norms, distinctness, and ranks. The independent route uses its own rational LDL enumerator and reconstructs the entire base. All unchanged source pairs inherit a freshly replayed exact completion proof. There is no unenumerated shell-population premise. See [construction and scope](triangle_switch/proof.md), [the frozen proposal](triangle_switch/proposal.json), and [the dated comparison](../../../common/source_review_20261107_36_37_triangles.json). This is a repository improvement, not an exhaustive worldwide-priority claim.
+
+Run `python verify.py` here, or `python run_all.py --repository-only --only coxeter-todd` at repository root. The wrapper replays retained history and both new proofs in temporary copies, preserving shipped hashes. The manuscript is unchanged.
+
+## Retained preceding phase completion
+
 
 Checkpoint: **28 October 2026**. Both new bounds pass two exact proof representations.
 
-| Dimension | Previous repository bound | This construction | Increase |
-|---|---:|---:|---:|
-| 36 | 501,672 | **501,687** | **15** |
-| 37 | 505,488 | **505,503** | **15** |
+| Dimension | Previous repository bound | Retained construction | Increase | 7 November repository result |
+|---|---:|---:|---:|---:|
+| 36 | 501,672 | **501,687** | **15** | **501,813** |
+| 37 | 505,488 | **505,503** | **15** | **505,629** |
 
 The fixed base has 403,704 points. Replacing 147 retained original phase orbits
 by 165 new ones gives 32,661 orbits, hence **501,687** equatorial points.
@@ -90,7 +101,7 @@ by taking sections of that particular construction.
 
 `source/` preserves the earlier complete-cell construction, **501,147** in
 36D and **501,149** with two poles in 37D. `UPDATE_PROVENANCE.json` records its
-original integration. Every new file is under `completion/`; the old source
+original integration. The preceding completion files are under `completion/`; the old source
 and phase certificates, reports and coordinate exports remain unchanged.
 
 Rows of all coefficient vectors use the supplied Gram basis. Unit Cartesian

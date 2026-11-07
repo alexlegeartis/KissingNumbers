@@ -8,7 +8,7 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
-> **Current repository status — 6 November 2026.** Verified lower bounds in
+> **Current repository status — 7 November 2026.** Verified lower bounds in
 > **70 dimensions**; the [results table](#results-and-construction-history)
 > lists every current value, comparison source and verification package.
 >
@@ -18,6 +18,7 @@ values and verification packages remain here as part of the research record.
 >   **28D is reclaimed at 221 988**, with a gain of **124** from corrected sextet symmetries.
 >   The 26D certificate remains 201 136, two above its pinned comparison.
 > - **34D:** **390 992** points, **two** above the preceding repository construction. [Rational heavy-head rotation](verifications/improved/dim32-35-signed-layers/rotated34/) has two independent exact proofs, a reconstructible integer witness, uniqueness and rank checks.
+> - **36–37D:** **501 813 and 505 629** points, **126** above each preceding repository construction. [Individual base-triangle switches and joint phase refills](verifications/improved/dim36-37-coxeter-todd/triangle_switch/) pass two exact coordinate proofs with fresh short-shell enumeration; all latitude orbits are retained.
 > - **39D:** **769 436** points, **64** above the preceding repository construction. [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) pass two independent complete exact proofs, each checking 1,683,122,416 relative products.
 > - **60D:** **58 543 525** points, **575 182** above the preceding repository construction. [840-direction cap lift](verifications/improved/dim60-antipodal840-lift/) verifies the finite ingredients exactly and retains the published P48 minimum/population premises.
 > - **43D:** **2 919 803** points, four above the preceding repository construction. [Individual medium-body splitting and a tiny-point refill](verifications/improved/dim41-46-p48-heads/weyl43/medium_split43/) pass two exact changed-pair checks with fresh geometry/gluing replay; P48n minimum/design and complete-family population inputs remain inherited.
@@ -133,8 +134,8 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 376** | **SOTA** | +0.036733% | — | since 2026-10-28 | [Signed octad replacements](verifications/improved/dim32-35-signed-layers/) | — |
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 992** | **SOTA** | +0.00306921% | — | since 2026-11-06 | [Rational heavy-head rotation](verifications/improved/dim32-35-signed-layers/rotated34/) | — |
 | 35 | 415 308 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 334** | **SOTA** | +0.00626041% | — | since 2026-10-28 | [Parity-coordinated heads](verifications/improved/dim32-35-signed-layers/) | — |
-| 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **501 687** | **SOTA** | +3.5% | — | since 2026-10-24 | [Coxeter–Todd phase refill](verifications/improved/dim36-37-coxeter-todd/) | — |
-| 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **505 503** | **SOTA** | +1.1% | — | since 2026-10-24 | [Phase code + latitudes](verifications/improved/dim36-37-coxeter-todd/) | — |
+| 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **501 813** | **SOTA** | +3.5% | — | since 2026-10-24 | [Individual triangle switches](verifications/improved/dim36-37-coxeter-todd/triangle_switch/) | — |
+| 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **505 629** | **SOTA** | +1.1% | — | since 2026-10-24 | [Triangle switches + latitudes](verifications/improved/dim36-37-coxeter-todd/triangle_switch/) | — |
 | 38 | 566 652 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **611 638** | **SOTA** | +7.94% | — | 2026-08-30 to 2026-09-28; since 2026-11-06 | [Orthogonal Hamming latitude replacement](verifications/improved/dim38-joint-latitudes/) | — |
 | 39 | 755 988 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **769 436** | **SOTA** | +1.78% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) | — |
 | 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/html/2607.20359v4) | **1 126 314** | **SOTA** | +3.14% | — | since 2026-10-26 | [Affine lattice shells](verifications/improved/dim40-affine-shells/) | — |
@@ -227,8 +228,10 @@ been superseded. The manuscript in [paper/](paper/) retains its documented earli
 including its historical appendix. See [The write-up](#the-write-up).
 
 The [Coxeter–Todd package](verifications/improved/dim36-37-coxeter-todd/)
-proves 501 687 points in 36D by exact short-shell enumeration and phase-orbit
-angle checks, then reaches 505 503 in 37D with two latitude layers. The
+proves 501 813 points in 36D by exact short-shell enumeration, individual
+base-triangle switches and joint equatorial refill, then reaches 505 629 in 37D
+while retaining all latitude orbits. Two independent coordinate proofs check every
+affected pair category. The
 [P48n family/head package](verifications/improved/dim41-46-p48-heads/) now supplies
 all six 41–46D constructions. The 43D partial-family certificate checks 3 450 explicit
 tiny points; the latest 45D certificate retains 2 187 complete families and 16 pure
@@ -251,7 +254,7 @@ improvement is claimed in 47D or 48D.
 - **31D (retained construction):** A normal-coordinate signed simplex module and exact compatible-union selection give **251 110**, 108 above PackingStar's 28 October 251 002-point file. [Complete coordinates and all-pairs verification](verifications/improved/dim31-normal-module-exchange/) credit and pin the public baseline.
 - **26D–30D and the preceding 31D construction:** Shared midpoint replacements with axiswise residual-head completion give 201 108, 209 532, 216 680, 226 520, 238 808 and 246 638. The final 30D/31D pure tails are represented exactly over Q(√3)/Q(√2), replacing—not supplementing—the ordinary D6/D7 tails. [Coordinate assembly and independent full replays](verifications/improved/dim26-31-residual-completions/) describe all components. Earlier midpoint, joint-Leech, frame-layer and dual-centre packages remain as historical constructions.
 
-- **36D:** Three Coxeter–Todd lattices with 32 661 explicit three-point phase orbits over a fixed 403 704-point base; exact shells and angles give 501 687 points
+- **36D:** Three Coxeter–Todd lattices with 32 703 explicit three-point phase orbits and a 403 704-point base modified by 90 independent triangle switches; exact shell enumeration and two coordinate proofs give 501 813 points
 
 - **37D:** The 36D construction as an equator, plus two latitude layers of 1 908 points each
 
@@ -292,6 +295,8 @@ improvement is claimed in 47D or 48D.
 </details>
 
 ## Recent updates
+
+**7 November 2026:** [Individual Coxeter–Todd base-triangle switches](verifications/improved/dim36-37-coxeter-todd/triangle_switch/) give **501 813 in 36D** and **505 629 in 37D**, adding **126** to each preceding certificate. Ninety three-point base switches combine with 1 511 added and 1 469 removed phase orbits. Both proofs freshly enumerate the short lattice shells and check every affected pair category, including all new-equator/unchanged-base products. All 636 latitude body orbits survive at both heights. [The dated source comparison](common/source_review_20261107_36_37_triangles.json) claims repository improvement, not exhaustive worldwide priority. The source certificates and manuscript are unchanged.
 
 **6 November 2026:** The 6 November antipodal-direction completion gives 58,543,525 in 60D (+575,182 over the preceding repository construction). A known antipodal 840-point quaternionic code supplies 420 direction pairs instead of 378; the 841-point pole code is independent. Joint selection and reassignment of complete classes adds a further 704 points over the first 58,542,821-point composition. Exact tail, pole, base-class, isometry and full-coordinate disjointness checks pass. The published P48 minimum and mother-shell population remain explicit inputs. The manuscript is unchanged. [Verification package](verifications/improved/dim60-antipodal840-lift/).
 
@@ -816,7 +821,7 @@ Or individually, each from its own directory:
 | `…/dim31-frame-layer/ceilings.py 31`                                         | the same report at k = 7, 1120 vertices enumerated            | 20 s   |
 | `…/dim38-leech-large-codimension/scripts/verify.py`                           | τ(38) ≥ 591 612                                                | 10 s   |
 | `…/dim39-ers-constant-weight/scripts/verify.py`                               | τ(39) ≥ 756 116 (and τ(38) ≥ 570 236)                          | 10 s   |
-| `.../dim36-37-coxeter-todd/verify.py` | exact 501 687-point 36D construction and 505 503-point 37D extension | ~15 s |
+| `.../dim36-37-coxeter-todd/verify.py` | exact 501 813-point 36D construction and 505 629-point 37D extension, two coordinate proofs | ~3 min |
 | `.../dim41-46-p48-heads/verify.py` | current 41–46D totals, partial 43D points and coordinated 45D; inherited populations | ~30 s |
 | `…/dim46-47-p48-cross-sections/derive.py`                                     | recovers 12 309 600 and 23 766 960, claiming neither           | 6 s    |
 | `…/dim49-63-p48-caps/verify.py` + `final.py`                                  |  the P₄₈ lattice, class, and fifteen numbers                    | 3 s    |

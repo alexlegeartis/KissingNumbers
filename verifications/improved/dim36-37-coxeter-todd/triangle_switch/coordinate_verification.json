@@ -1,0 +1,182 @@
+{
+  "all_checks_pass": true,
+  "points_36": 501813,
+  "points_37": 505629,
+  "source_points_36": 501687,
+  "source_points_37": 505503,
+  "gains": [
+    126,
+    126
+  ],
+  "source_sha256": "b37691e110c73f1100112aea1a4dc39e2a911559a7a49c67c88bb303f6cd8760",
+  "proposal_sha256": "6a88389c8adcdff44b9cd8ef09edaa0bbc9c98af8db4879296c4d4f9ef25356d",
+  "triangle_geometry_sha256": "54096729335bfcffb792dc06c3d807ad53ceaea939de2b9acbda4f7791729774",
+  "fresh_rational_shell_counts": {
+    "8": 20412,
+    "6": 4032,
+    "4": 756
+  },
+  "actual_binary_triangle_flips": 90,
+  "old_base_points_removed": 270,
+  "new_base_points_added": 270,
+  "old_phase_orbits_removed": 1469,
+  "new_phase_orbits_added": 1511,
+  "retained_lift_body_orbits": 636,
+  "lift_heights": [
+    2,
+    -2
+  ],
+  "point_checks": {
+    "source_base": {
+      "points": 403704,
+      "squared_norm": 12,
+      "unique": true,
+      "integer_product_abs_bound": 864
+    },
+    "changed_base": {
+      "points": 270,
+      "squared_norm": 12,
+      "unique": true,
+      "integer_product_abs_bound": 288
+    },
+    "retained_equator": {
+      "points": 93576,
+      "squared_norm": 12,
+      "unique": true,
+      "integer_product_abs_bound": 288
+    },
+    "new_equator": {
+      "points": 4533,
+      "squared_norm": 12,
+      "unique": true,
+      "integer_product_abs_bound": 288
+    },
+    "lift_bodies": {
+      "points": 1908,
+      "squared_norm": 8,
+      "unique": true,
+      "integer_product_abs_bound": 288
+    },
+    "full_36": {
+      "points": 501813,
+      "squared_norm": 12,
+      "unique": true,
+      "integer_product_abs_bound": 864
+    }
+  },
+  "pair_categories": {
+    "NEW_EQUATOR_vs_UNCHANGED_BASE": {
+      "ordered_point_pairs": 1828766322,
+      "max_dot": 6,
+      "limit": 6,
+      "max_witness_indices": [
+        0,
+        202
+      ],
+      "pass": true
+    },
+    "CHANGED_BASE_vs_UNCHANGED_BASE": {
+      "ordered_point_pairs": 108927180,
+      "max_dot": 6,
+      "limit": 6,
+      "max_witness_indices": [
+        0,
+        12
+      ],
+      "pass": true
+    },
+    "CHANGED_BASE_vs_CHANGED_BASE": {
+      "ordered_point_pairs": 72630,
+      "max_dot": 6,
+      "limit": 6,
+      "max_witness_indices": [
+        0,
+        1
+      ],
+      "pass": true
+    },
+    "CHANGED_BASE_vs_RETAINED_EQUATOR": {
+      "ordered_point_pairs": 25265520,
+      "max_dot": 6,
+      "limit": 6,
+      "max_witness_indices": [
+        0,
+        1281
+      ],
+      "pass": true
+    },
+    "CHANGED_BASE_vs_NEW_EQUATOR": {
+      "ordered_point_pairs": 1223910,
+      "max_dot": 6,
+      "limit": 6,
+      "max_witness_indices": [
+        0,
+        88
+      ],
+      "pass": true
+    },
+    "NEW_EQUATOR_vs_RETAINED_EQUATOR": {
+      "ordered_point_pairs": 424180008,
+      "max_dot": 6,
+      "limit": 6,
+      "max_witness_indices": [
+        0,
+        13
+      ],
+      "pass": true
+    },
+    "NEW_EQUATOR_vs_NEW_EQUATOR": {
+      "ordered_point_pairs": 20543556,
+      "max_dot": 6,
+      "limit": 6,
+      "max_witness_indices": [
+        0,
+        3
+      ],
+      "pass": true
+    },
+    "CHANGED_BASE_vs_LIFT_BODIES": {
+      "ordered_point_pairs": 515160,
+      "max_dot": 5,
+      "limit": 6,
+      "max_witness_indices": [
+        108,
+        112
+      ],
+      "pass": true
+    },
+    "NEW_EQUATOR_vs_LIFT_BODIES": {
+      "ordered_point_pairs": 8648964,
+      "max_dot": 6,
+      "limit": 6,
+      "max_witness_indices": [
+        0,
+        349
+      ],
+      "pass": true
+    },
+    "LIFT_BODIES_vs_LIFT_BODIES_DISTINCT": {
+      "ordered_point_pairs": 3638556,
+      "max_dot": 2,
+      "limit": 2,
+      "max_witness_indices": [
+        0,
+        3
+      ],
+      "pass": true
+    },
+    "ACTUAL_37D_LATITUDES_vs_LATITUDES": {
+      "ordered_point_pairs": 14558040,
+      "max_dot": 6,
+      "limit": 6,
+      "pass": true
+    }
+  },
+  "inherited_pairs": "All pairs wholly inside unchanged source subsets use fresh isolated completion/verify.py replay. Every pair involving a new base or equator point is explicitly checked above. All actual latitude pairs are explicitly rechecked.",
+  "unchanged_source_proof_replayed": true,
+  "source_base_reconstructed_from_fresh_shells": true,
+  "integer_arithmetic_overflow_bounds_checked": true,
+  "full_37_norm_and_uniqueness": true,
+  "independence": "No imports from TriangleModel, gain verifier, search code, or source enumerator. Independent rational shell enumeration and complete source-base reconstruction. Norm8 vectors are freshly enumerated and lexicographically ordered; all90 decoded switches must equal the explicit coordinate record.",
+  "elapsed_seconds": 84.05111052399297
+}

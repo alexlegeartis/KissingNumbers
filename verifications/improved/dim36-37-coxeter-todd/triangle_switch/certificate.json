@@ -1,0 +1,23 @@
+{
+  "format": "ct_triangle_switch_record_v1",
+  "source_certificate": "../completion/certificate.json",
+  "source_sha256": "b37691e110c73f1100112aea1a4dc39e2a911559a7a49c67c88bb303f6cd8760",
+  "proposal_sha256": "6a88389c8adcdff44b9cd8ef09edaa0bbc9c98af8db4879296c4d4f9ef25356d",
+  "squared_norm": 12,
+  "maximum_inner_product": 6,
+  "base_points": 403704,
+  "source_points_36": 501687,
+  "source_points_37": 505503,
+  "points_36": 501813,
+  "points_37": 505629,
+  "gain_each": 126,
+  "flipped_triangles": 90,
+  "removed_phase_orbits": 1469,
+  "added_phase_orbits": 1511,
+  "retained_lift_body_orbits": 636,
+  "lift_heads": [
+    2,
+    -2
+  ],
+  "proof_scope": "All unchanged source pairs use freshly replayed completion/verify.py. Every pair involving a changed base or added equator point is checked directly. Both verifiers freshly enumerate the complete short Coxeter\u2013Todd shells; the independent verifier imports no source enumerator or producer code."
+}

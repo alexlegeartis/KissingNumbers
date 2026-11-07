@@ -1,0 +1,27 @@
+{
+  "repository": "https://github.com/alexlegeartis/KissingNumbers",
+  "remote_main_commit": "7bdca53c3539aa411b9081ae7cc9a5bb89d8bb91",
+  "checked_at_utc": "2026-11-07",
+  "dimensions": [
+    36,
+    37
+  ],
+  "comparison_bounds": [
+    501687,
+    505503
+  ],
+  "candidate_bounds": [
+    501813,
+    505629
+  ],
+  "gains": [
+    126,
+    126
+  ],
+  "source_certificate_sha256": "b37691e110c73f1100112aea1a4dc39e2a911559a7a49c67c88bb303f6cd8760",
+  "proposal_sha256": "6a88389c8adcdff44b9cd8ef09edaa0bbc9c98af8db4879296c4d4f9ef25356d",
+  "verification_package": "verifications/improved/dim36-37-coxeter-todd/triangle_switch",
+  "proof_scope": "Fresh exact short-shell enumeration and complete source-base reconstruction; every affected point pair exact; unchanged pairs inherit freshly replayed retained completion proof; all latitude pairs explicitly rechecked.",
+  "comparison_scope": "Improvement on current repository source, not exhaustive worldwide priority.",
+  "manuscript_changed": false
+}
