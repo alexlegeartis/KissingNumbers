@@ -19,7 +19,7 @@ values and verification packages remain here as part of the research record.
 >   The 26D certificate remains 201 136, two above its pinned comparison.
 > - **34D:** **390 992** points, **two** above the preceding repository construction. [Rational heavy-head rotation](verifications/improved/dim32-35-signed-layers/rotated34/) has two independent exact proofs, a reconstructible integer witness, uniqueness and rank checks.
 > - **36–37D:** **501 813 and 505 629** points, **126** above each preceding repository construction. [Individual base-triangle switches and joint phase refills](verifications/improved/dim36-37-coxeter-todd/triangle_switch/) pass two exact coordinate proofs with fresh short-shell enumeration; all latitude orbits are retained.
-> - **39D:** **769 436** points, **64** above the preceding repository construction. [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) pass two independent complete exact proofs, each checking 1,683,122,416 relative products.
+> - **39D:** **769 820** points, **384** above the preceding repository construction. [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) pass two independent complete exact proofs, each checking 1,687,063,204 relative products.
 > - **60D:** **58 543 525** points, **575 182** above the preceding repository construction. [840-direction cap lift](verifications/improved/dim60-antipodal840-lift/) verifies the finite ingredients exactly and retains the published P48 minimum/population premises.
 > - **43D:** **2 919 803** points, four above the preceding repository construction. [Individual medium-body splitting and a tiny-point refill](verifications/improved/dim41-46-p48-heads/weyl43/medium_split43/) pass two exact changed-pair checks with fresh geometry/gluing replay; P48n minimum/design and complete-family population inputs remain inherited.
 > - **33–87D:** further improvements include signed layers, phase refills,
@@ -137,7 +137,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **501 813** | **SOTA** | +3.5% | — | since 2026-10-24 | [Individual triangle switches](verifications/improved/dim36-37-coxeter-todd/triangle_switch/) | — |
 | 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **505 629** | **SOTA** | +1.1% | — | since 2026-10-24 | [Triangle switches + latitudes](verifications/improved/dim36-37-coxeter-todd/triangle_switch/) | — |
 | 38 | 566 652 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **611 638** | **SOTA** | +7.94% | — | 2026-08-30 to 2026-09-28; since 2026-11-06 | [Orthogonal Hamming latitude replacement](verifications/improved/dim38-joint-latitudes/) | — |
-| 39 | 755 988 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **769 436** | **SOTA** | +1.78% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) | — |
+| 39 | 755 988 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **769 820** | **SOTA** | +1.83% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) | — |
 | 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/html/2607.20359v4) | **1 126 314** | **SOTA** | +3.14% | — | since 2026-10-26 | [Affine lattice shells](verifications/improved/dim40-affine-shells/) | — |
 | 41 | 1 324 472 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 42 | 1 792 386 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 991 445** | **SOTA** | +11% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
@@ -593,7 +593,7 @@ comparison is given separately by its source.
 | 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 247 972 |
 | 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 196 |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 638 |
-| 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 436 |
+| 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 820 |
 
 The retained 29–30D and 38–39D certificates exceed those intervening records.
 PackingStar's October update surpassed the residual-completion values in 26–31D;

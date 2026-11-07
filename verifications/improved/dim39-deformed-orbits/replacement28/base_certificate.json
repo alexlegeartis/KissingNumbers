@@ -1,0 +1,144 @@
+{
+  "dimension": 39,
+  "claimed_size": 768924,
+  "previous_size": 768916,
+  "source_repository": "https://github.com/QH-Lin/kissing-numbers-33-39",
+  "source_sha256": {
+    "supports_3424.txt": "5e750c76c21aa9e350784624d367cc724a392eb8cb006826613d8dc82321d1cf",
+    "dense_kernel.txt": "6e931af754b792bc3355c4339e8a29b2a319c1be16c8c22c9a76b894ef2e9b32",
+    "dense_representatives.txt": "ac6e8d4d4fada750a50e72d788c44c88ff577a491a0537329270e218880365c0"
+  },
+  "support_replacements": [
+    {
+      "remove_index": 4,
+      "remove": [
+        0,
+        2,
+        14,
+        15,
+        26,
+        29,
+        33,
+        34
+      ],
+      "add": [
+        0,
+        14,
+        15,
+        26,
+        29,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "remove_index": 769,
+      "remove": [
+        4,
+        10,
+        14,
+        21,
+        26,
+        31,
+        34,
+        35
+      ],
+      "add": [
+        0,
+        4,
+        10,
+        21,
+        26,
+        31,
+        34,
+        35
+      ]
+    },
+    {
+      "remove_index": 1898,
+      "remove": [
+        14,
+        15,
+        18,
+        21,
+        31,
+        32,
+        35,
+        38
+      ],
+      "add": [
+        14,
+        15,
+        18,
+        21,
+        25,
+        31,
+        32,
+        35
+      ]
+    },
+    {
+      "remove_index": 2155,
+      "remove": [
+        1,
+        2,
+        16,
+        18,
+        25,
+        28,
+        31,
+        38
+      ],
+      "add": [
+        1,
+        2,
+        16,
+        18,
+        25,
+        28,
+        31,
+        35
+      ]
+    }
+  ],
+  "heavy_stars": [
+    {
+      "center": 0,
+      "leaves": [
+        2,
+        16,
+        26,
+        29
+      ]
+    },
+    {
+      "center": 2,
+      "leaves": [
+        0,
+        6,
+        20,
+        36
+      ]
+    },
+    {
+      "center": 31,
+      "leaves": [
+        10,
+        14,
+        21,
+        38
+      ]
+    },
+    {
+      "center": 38,
+      "leaves": [
+        1,
+        9,
+        18,
+        31
+      ]
+    }
+  ],
+  "rule": "Delete all four roots on every center-leaf pair. For each star add all vectors with center +/-4, four leaves +/-2, an even number of negative leaves, and zeros elsewhere. Keep the dense code and the updated even-sign middle layer."
+}

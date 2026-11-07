@@ -6,7 +6,7 @@ Checkpoint: **25 October 2026**.
 
 | Dimension | Previous benchmark | This construction | Gain | Current repo bound |
 |---|---:|---:|---:|---:|
-| 39 | 768,916 | **768,924** | 8 | 769,436 |
+| 39 | 768,916 | **768,924** | 8 | 769,820 |
 
 The previous method is Qihong Lin's [ERS layers with an enlarged support code](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07).
 

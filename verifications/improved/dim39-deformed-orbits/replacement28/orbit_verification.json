@@ -1,0 +1,28 @@
+{
+  "all_checks_passed": true,
+  "dimension": 39,
+  "lower_bound": 769820,
+  "sparse_points": 441244,
+  "orbit_representatives": 10268,
+  "group_order": 32,
+  "dense_points": 328576,
+  "complete_relative_orbit_products_checked": 1687063204,
+  "maximum_integer_inner_product": 4999995789376822,
+  "maximum_witness": [
+    188,
+    10261,
+    277388594648
+  ],
+  "allowed_integer_inner_product": 4999999600000008,
+  "norm_lower": 99999996,
+  "norm_upper": 100000004,
+  "top2_square_slack": 5598758703657294,
+  "heavy_square_slack": 4100012807429007,
+  "arithmetic": "Bounded integer arithmetic; complete relative orbit-pair enumeration",
+  "certificate_sha256": "dbc293625abdbc7f4377ee94e77344967877864ea7717482e34479ce794085df",
+  "elapsed_seconds": 43.53031959600048,
+  "minimum_middle_support_slack": 11760726551,
+  "maximum_middle_absolute_sum": 141421309,
+  "middle_support_representative_checks": 35157632,
+  "middle_points_removed": 0
+}

@@ -1,0 +1,11 @@
+{
+  "dimension": 39,
+  "points": 769820,
+  "repository_comparison": 769436,
+  "previous_verified_research_bound": 769692,
+  "certificate_sha256": "dbc293625abdbc7f4377ee94e77344967877864ea7717482e34479ce794085df",
+  "independent_archive_sha256": "b23c5695cc8f4055be9539da2966ee6070a8d1950e7b87c06d84f95541418fd5",
+  "construction": "Replace the preceding 512 extra dense points by 28 sign orbits of order 32 (896 points), and jointly deform all 10,268 representatives while retaining the full sparse layer. The intermediate 17- and 24-orbit constructions were independently verified. No previous dense coordinates are assumed unchanged.",
+  "coordinates": "Each supplied integer direction is normalized by its own exact Euclidean norm. Floating search is not part of the proof.",
+  "literature": "This integration compares to repository certificates and Lin arXiv:2611.03682; it does not establish exhaustive worldwide priority."
+}

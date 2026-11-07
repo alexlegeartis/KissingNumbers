@@ -24,7 +24,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim25-collective-deformation`](improved/dim25-collective-deformation/) | 25 | collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons |
 | [`dim31-dual-centres`](improved/dim31-dual-centres/) | 31 | shared midpoint replacements and dual E7 centres; exact coordinate replay |
 | [`dim38-joint-latitudes`](improved/dim38-joint-latitudes/) | 38 | 611,638 points; orthogonal Hamming replacement, retained Fano grid and exact cross-layer proofs with the source Golay/Leech minimum-norm premise |
-| [`dim39-deformed-orbits`](improved/dim39-deformed-orbits/) | 39 | current 769,436 from reduced-symmetry dense sign orbits; two independent complete exact proofs; retained 769,180 certificate |
+| [`dim39-deformed-orbits`](improved/dim39-deformed-orbits/) | 39 | current 769,820 from reduced-symmetry dense sign orbits; two independent complete exact proofs; retained 769,180 certificate |
 | [`dim40-affine-shells`](improved/dim40-affine-shells/) | 40 | three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products |
 | [`dim18-bent-hexagon`](improved/dim18-bent-hexagon/) | 18 | apparently new — Cohn–Li's own ℝ¹⁶ ⊕ ℝ² hexagon over the odd Barnes–Wall lattice, with the three 6-set families taken from bent cosets of RM(1,4) whose pairwise sums are bent but which do not sum to zero; tier B rises from 256 to 960 |
 | [`dim25-lens-heads`](improved/dim25-lens-heads/) | 25 | apparently new — joint work in progress with H. Cohn and B. Lindow; 1016 lens heads (971 from the block family, plus a 45-head maximum independent set over the complete pool), one non-lattice equator point |

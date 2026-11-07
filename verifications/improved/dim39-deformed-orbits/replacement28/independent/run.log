@@ -1,0 +1,131 @@
+{
+  "all_checks_passed": true,
+  "dimension": 39,
+  "lower_bound": 769820,
+  "certificate_sha256": "dbc293625abdbc7f4377ee94e77344967877864ea7717482e34479ce794085df",
+  "input_sha256": {
+    "orbit_certificate.json": "dbc293625abdbc7f4377ee94e77344967877864ea7717482e34479ce794085df",
+    "base_certificate.json": "01bed5e6c9a138e13358e5b1e4d2cdc565135fce1c79ee17b01e1a305c37bad1",
+    "supports_3424.txt": "5e750c76c21aa9e350784624d367cc724a392eb8cb006826613d8dc82321d1cf"
+  },
+  "independent_python_sha256": "8199ab2569abdb291fe3e6ffc62207767765d1e876403eebbd15880d6642b414",
+  "independent_cpp_sha256": "fb4c5bb5fc2ee9ebb4cd9dc557e1d03be635c6e29a5d9f701c0cde4bbd5d6fa0",
+  "dense_representatives": 10268,
+  "group_order": 32,
+  "dense_points": 328576,
+  "middle_supports": 3424,
+  "middle_points": 438272,
+  "retained_roots": 2908,
+  "heavy_points": 64,
+  "sparse_points": 441244,
+  "support_pairs_checked": 5860176,
+  "support_intersection_histogram": {
+    "0": 738842,
+    "2": 2024634,
+    "3": 842621,
+    "1": 1956100,
+    "4": 297979
+  },
+  "max_support_intersection": 4,
+  "max_same_support_middle_dot": 16,
+  "deleted_root_pairs": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      16
+    ],
+    [
+      0,
+      26
+    ],
+    [
+      0,
+      29
+    ],
+    [
+      1,
+      38
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      20
+    ],
+    [
+      2,
+      36
+    ],
+    [
+      9,
+      38
+    ],
+    [
+      10,
+      31
+    ],
+    [
+      14,
+      31
+    ],
+    [
+      18,
+      38
+    ],
+    [
+      21,
+      31
+    ],
+    [
+      31,
+      38
+    ]
+  ],
+  "direct_integer_checks": {
+    "passed": true,
+    "arithmetic": "direct signed int64, no transforms or floating point",
+    "norm_squared_min": 9999999524744775,
+    "norm_squared_max": 10000000204057668,
+    "dense_relative_products": 1687063204,
+    "max_dense_dot": 4999995789376822,
+    "dense_dot_limit": 4999999600000008,
+    "dense_witness": [
+      188,
+      10261,
+      277388594648
+    ],
+    "max_root_root_dot": 16,
+    "max_heavy_root_dot": 16,
+    "max_heavy_heavy_dot": 16,
+    "max_heavy_middle_dot": 16,
+    "middle_supports_allowing_both_parities": 3316,
+    "middle_sign_sums_evaluated": 8858408960,
+    "max_dense_middle_half_dot": 141421309,
+    "middle_witness": [
+      10261,
+      320
+    ],
+    "middle_square_slack": 11760726551,
+    "max_dense_root_dot": 187290956,
+    "dense_root_coordinate_pair_checks": 7464836,
+    "max_dense_heavy_dot": 242013292,
+    "dense_heavy_direct_checks": 21028864
+  },
+  "distinctness": "Sparse shapes and complete even signs; dense orbit pairs have normalized dot <= 1/2, ruling out all repeated rays and stabilizers; full dense support separates dense from sparse.",
+  "compiler": "c++ (Debian 14.2.0-19) 14.2.0",
+  "compile_flags": [
+    "-O3",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic"
+  ],
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "elapsed_seconds": 93.28320589700161,
+  "scope": "Full finite certificate; no lattice, solver, binary-code, floating-point, or producer-verifier assumption. No optimality or worldwide-priority claim. Remote comparison is a separately dated snapshot."
+}

@@ -1,0 +1,40 @@
+{
+  "observed_utc": "2026-11-07T05:41:26.231639+00:00",
+  "repository": "https://github.com/alexlegeartis/KissingNumbers",
+  "origin_main_sha": "daa3a9a54ccbe450a08a4de03bed6ef1c7a43cd6",
+  "method": "Fresh git ls-remote origin HEAD refs/heads/main, then git show of that exact object; README independently fetched with GitHub connector.",
+  "remote_39D_lower_bound": 769436,
+  "candidate": 769820,
+  "gain_over_remote": 384,
+  "local_predecessor": 769692,
+  "gain_over_local_predecessor": 128,
+  "evidence": [
+    {
+      "path": "README.md",
+      "url": "https://github.com/alexlegeartis/KissingNumbers/blob/daa3a9a54ccbe450a08a4de03bed6ef1c7a43cd6/README.md",
+      "sha256": "e771fcf644c33dadf5244146c25d13e46dae60ab9fcd96d4553658f74d05dbf6",
+      "relevant_text": "> - **39D:** **769 436** points, **64** above the preceding repository construction. [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) pass two independent complete exact proofs, each checking 1,683,122,416 relative products.\n| 39 | 755 988 | [Edel\u2013Rains\u2013Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **769 436** | **SOTA** | +1.78% | \u2014 | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) | \u2014 |\n  gave 769 180 in 39D (+264 over Lin), and affine shells gave 1 126 314 in 40D\n| 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 436 |"
+    },
+    {
+      "path": "RESULTS.md",
+      "url": "https://github.com/alexlegeartis/KissingNumbers/blob/daa3a9a54ccbe450a08a4de03bed6ef1c7a43cd6/RESULTS.md",
+      "sha256": "5717a3b9d5c11cba768f1189893d2d2b492c25ef0284e692de6fd967c3287d63",
+      "relevant_text": "The 6 November actual-support continuation gives 769436 in 39D (+64 over 769372; +256 over 769180). It combines all 441244 retained sparse points with 10256 sign orbits of order 32. Two independent exact proofs check all 1683122416 relative products and the actual middle-support geometry. All previous certificates and the manuscript are retained unchanged.\nThe 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over the preceding registered bound) and 7092187916 in 95D (+180224), with all 303330765 support pairs checked in two independent representations. PackingStar reports larger 26\u201331D bounds; README.md records these supersessions from the pinned 28 October source review. The paper retains its earlier values. The later 26 October update adds 352800 in 32D, 370368 in 33D, 390982 in 34D and 415314 in 35D, each with two independent exact proof representations. The paper update is deferred; common/manuscript_scope.json records its 66-result state and hashes. The 26 October continuation gives 197584 in 25D, 241742 in 31D, 610394 in 38D, 769180 in 39D and 1126314 in the newly registered dimension 40. All five independent exact replays passed. Fresh primary-source comparisons and the unavailable Cohn retrieval are documented in common/source_review_20261026.json. The 24 October 2026 checkpoint adds exact Coxeter-Todd constructions in dimensions 36 and 37, registers the supplied 2 919 743-point partial-family 43D certificate, and raises 45D to 7 655 056. All 41-46D integer angles and head dimensions replay; complete-family body populations inherit the documented identities and have not all been freshly enumerated. The 25 October continuation adds shared midpoint replacements with 200,918 points in 26D and 204,636 in 27D, adds 216,568 points in 29D and 224,280 in 30D, regains 38D with 605,346 and 39D with 768,924, and strengthens 73D and 76-96D. The norm-ten continuation gives 6,218,204,076 in 73D and exact finite-graph existence bounds in 77-79D. The checkpoint also includes the 205,232-point joint Leech lift in 28D, the 7 387-line P48 class family, code constructions in 61-68D and 95-96D, including the new signed-support 64-65D constructions, and Gamma72 nearest-coset lifts. The comparison column uses common/published.py's pinned published data; this integration is not a new comprehensive literature audit. The paper currently reports the preceding 66-result checkpoint; the four new 32-35D results await a later manuscript update. Its September appendix is retained. See [verification scope](verifications/improved/dim41-46-p48-heads/README.md).\n| 39 | 755\u202f988 | **769\u202f436** | 1.02 | `codes` | [32-element nonbinary sign orbits with actual support/parity bounds; two independent complete exact orbit proofs](verifications/improved/dim39-deformed-orbits/) |"
+    },
+    {
+      "path": "verifications/improved/dim39-deformed-orbits/README.md",
+      "url": "https://github.com/alexlegeartis/KissingNumbers/blob/daa3a9a54ccbe450a08a4de03bed6ef1c7a43cd6/verifications/improved/dim39-deformed-orbits/README.md",
+      "sha256": "f06f6003e54cefccfd1d0ac3bccbf959a8e45d21d2b0867e8a955afe858f8015",
+      "relevant_text": "# A 769,436-point kissing configuration in dimension 39\n**Exact lower bound: \u03c4(39) \u2265 769,436**, an increase of **64** over the preceding 769,372 certificate and **256** over the initial 769,180 baseline. The 441,244-point sparse layer is unchanged. The new dense layer has 10,256 representatives under a 32-element sign group, giving 328,192 points. All dense representatives were jointly deformed; the count increase does not mean that the previous dense coordinates are retained."
+    },
+    {
+      "path": "verifications/improved/dim39-deformed-orbits/continuation32/orbit_verification.json",
+      "url": "https://github.com/alexlegeartis/KissingNumbers/blob/daa3a9a54ccbe450a08a4de03bed6ef1c7a43cd6/verifications/improved/dim39-deformed-orbits/continuation32/orbit_verification.json",
+      "sha256": "61c65e428af2e6d141b8074c4643f097eca39418422ca1cffeeef594426e155e",
+      "relevant_text": "{\n  \"all_checks_passed\": true,\n  \"dimension\": 39,\n  \"lower_bound\": 769436,\n  \"sparse_points\": 441244,\n  \"orbit_representatives\": 10256,\n  \"group_order\": 32,\n  \"dense_points\": 328192,\n  \"complete_relative_orbit_products_checked\": 1683122416,\n  \"maximum_integer_inner_product\": 4999992742814284,\n  \"maximum_witness\": [\n    1378,\n    8971,\n    116386551608\n  ],\n  \"allowed_integer_inner_product\": 4999999600000008,\n  \"norm_lower\": 99999996,\n  \"norm_upper\": 100000004,\n  \"top2_square_slack\": 5108428690551694,\n  \"heavy_square_slack\": 3174667559724983,\n  \"arithmetic\": \"Bounded integer arithmetic; complete relative orbit-pair enumeration\",\n  \"certificate_sha256\": \"e9f2dd59bf5169bf915be8e7d622a7ff14481471e2e0a96e0f9d90b46a5c6ad7\",\n  \"elapsed_seconds\": 46.170404222997604,\n  \"minimum_middle_support_slack\": 23640114743,\n  \"maximum_middle_absolute_sum\": 141421267,\n  \"middle_support_representative_checks\": 35116544,\n  \"middle_points_removed\": 0\n}\n"
+    }
+  ],
+  "limitation": "Repository-main snapshot only; not a worldwide literature or priority check.",
+  "head_rechecked_utc": "2026-11-07T05:48:34.916830+00:00",
+  "head_recheck_result": "daa3a9a54ccbe450a08a4de03bed6ef1c7a43cd6\tHEAD\ndaa3a9a54ccbe450a08a4de03bed6ef1c7a43cd6\trefs/heads/main"
+}

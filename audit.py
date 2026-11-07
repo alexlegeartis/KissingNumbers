@@ -2058,7 +2058,7 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append('The 6 November rational heavy-head rotation gives 390992 in 34D (+2 over the preceding 390990 certificate). A changed dense coordinate placement and star parity permit shared root deletion and restore two roots. Two independent exact proofs check all finite layers, uniqueness and rank 34; common scaling gives squared integer norm 5780000 and product bound 2890000. Historical constructions and the manuscript are unchanged.')
     out.append('')
-    out.append('The 6 November actual-support continuation gives 769436 in 39D (+64 over 769372; +256 over 769180). It combines all 441244 retained sparse points with 10256 sign orbits of order 32. Two independent exact proofs check all 1683122416 relative products and the actual middle-support geometry. All previous certificates and the manuscript are retained unchanged.')
+    out.append('The 7 November whole-extra-layer replacement gives 769820 in 39D (+384 over the preceding published 769436 certificate). It combines all 441244 retained sparse points with 10268 sign orbits of order 32. Two independent exact proofs check all 1687063204 relative products and the actual middle-support geometry. All previous published certificates and the manuscript are retained unchanged.')
     out.append('')
     out.append("The 29 October continuation gives 209807, 221988, 231697, 247972, 251188 in 27-31D, exceeding PackingStar commit 477df34 by 47, 124, 21, 5, 19 points. Corrected sextet symmetries reclaim 28D and further strengthen 27D, 29D and 31D. Complete exact coordinate replays and independent direct-int64 insertion checks pass. The manuscript remains deferred.")
     out.append("")

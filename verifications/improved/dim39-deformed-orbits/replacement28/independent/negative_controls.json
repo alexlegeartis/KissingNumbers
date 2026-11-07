@@ -1,0 +1,38 @@
+{
+  "all_rejected": true,
+  "controls": [
+    {
+      "name": "zero_norm",
+      "rejected": true,
+      "returncode": 1,
+      "reason": "norm enclosure",
+      "input_sha256": "3773cfb4f3fe1472438c0687c4472803d1820d05580caf7be9525363b9412090",
+      "elapsed_seconds": 0.027245516001130454
+    },
+    {
+      "name": "duplicate_dense_direction",
+      "rejected": true,
+      "returncode": 1,
+      "reason": "dense-dense",
+      "input_sha256": "04698007083a75e9aa7282239da09f1a5409458f2d9a016dace94e5e9e701b8c",
+      "elapsed_seconds": 16.28827323400037
+    },
+    {
+      "name": "middle_collision_with_valid_norm",
+      "rejected": true,
+      "returncode": 1,
+      "reason": "dense-middle",
+      "input_sha256": "593d996ff034dae280993b594e9ee893318022ce9e37a6373b4defdcf8add1c7",
+      "elapsed_seconds": 0.24148067100031767
+    },
+    {
+      "name": "wrong_representative_count",
+      "rejected": true,
+      "returncode": 1,
+      "reason": "unexpected sizes",
+      "input_sha256": "3cbcba23a65f46b6eaddb5e1bdcd7cb874f6a10ddc51ca58d2ed207910d44db4",
+      "elapsed_seconds": 0.0054530730049009435
+    }
+  ],
+  "scope": "Controls bypass frozen-input SHA256 gates to test actual C++ integer geometry. They are not the source of acceptance for the original certificate."
+}

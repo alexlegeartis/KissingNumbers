@@ -1,0 +1,29 @@
+{
+  "repository": "https://github.com/alexlegeartis/KissingNumbers",
+  "remote_main_commit": "daa3a9a54ccbe450a08a4de03bed6ef1c7a43cd6",
+  "checked_at_utc": "2026-11-07",
+  "dimensions": [
+    39
+  ],
+  "comparison_bounds": [
+    769436
+  ],
+  "candidate_bounds": [
+    769820
+  ],
+  "gains": [
+    384
+  ],
+  "source_certificate_sha256": "dbc293625abdbc7f4377ee94e77344967877864ea7717482e34479ce794085df",
+  "verification_package": "verifications/improved/dim39-deformed-orbits/replacement28",
+  "proof_scope": "Complete primary integer proof and independently implemented direct-integer proof. Exact sparse reconstruction, every relative dense product, actual middle signs, roots, stars, uniqueness, extrema witnesses and geometric rejection controls.",
+  "comparison_scope": "Current repository comparison and Lin primary paper, not an exhaustive worldwide-priority claim.",
+  "primary_literature": [
+    {
+      "url": "https://arxiv.org/html/2611.03682v1",
+      "dimension": 39,
+      "bound": 768916
+    }
+  ],
+  "manuscript_changed": false
+}

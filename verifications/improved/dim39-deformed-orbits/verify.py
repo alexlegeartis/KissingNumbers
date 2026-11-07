@@ -45,10 +45,25 @@ if __name__=='__main__':
         first=json.loads((source/'orbit_verification.json').read_text())
         second=json.loads((source/'independent/complete_audit.json').read_text())
         assert first['all_checks_passed'] and second['status']=='PASS'
-        assert first['lower_bound']==second['points']==expected['total']
+        assert first['lower_bound']==second['points']==769436
         assert first['certificate_sha256']==second['certificate_sha256']
         assert second['negative_controls_passed']==2
         replay(source,'negative_controls.py')
         controls=json.loads((source/'negative_control_results.json').read_text())
         assert len(controls)==4 and all(row['rejected'] for row in controls)
-    print(json.dumps(dict(status='PASS',results=[expected],proof_routes=2,negative_controls=16)))
+    with tempfile.TemporaryDirectory(prefix='kissing39_replacement28_') as directory:
+        source=Path(directory)/'replacement28'
+        shutil.copytree(ROOT/'replacement28',source,ignore=shutil.ignore_patterns('__pycache__','_build'))
+        replay(source,'verify.py')
+        replay(source/'independent','verify_independent.py')
+        replay(source/'independent','check_witnesses.py')
+        replay(source/'independent','negative_controls.py')
+        first=json.loads((source/'orbit_verification.json').read_text())
+        second=json.loads((source/'independent/independent_report.json').read_text())
+        assert first['all_checks_passed'] and second['all_checks_passed']
+        assert first['lower_bound']==second['lower_bound']==expected['total']
+        assert first['certificate_sha256']==second['certificate_sha256']
+        assert json.loads((source/'independent/witness_checks.json').read_text())['passed']
+        controls=json.loads((source/'independent/negative_controls.json').read_text())
+        assert controls['all_rejected'] and len(controls['controls'])==4
+    print(json.dumps(dict(status='PASS',results=[expected],proof_routes=2,negative_controls=20)))
