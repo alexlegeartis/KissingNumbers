@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/941a2e823e69/research/independent_audit_signed_gain32_20261107/audit.py", line 167, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/workspace/scratch/941a2e823e69/research/independent_audit_signed_gain32_20261107/audit.py", line 157, in main
+    need(sha==args.expected_sha256,'certificate SHA256')
+  File "/workspace/scratch/941a2e823e69/research/independent_audit_signed_gain32_20261107/audit.py", line 20, in need
+    if not condition: raise Rejected(reason)
+                      ^^^^^^^^^^^^^^^^^^^^^^
+Rejected: certificate SHA256

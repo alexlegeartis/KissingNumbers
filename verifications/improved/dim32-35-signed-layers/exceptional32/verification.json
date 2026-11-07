@@ -1,0 +1,29 @@
+[
+  {
+    "dimension": 32,
+    "verified_points": 352832,
+    "benchmark": 352320,
+    "gain": 512,
+    "base_squared_norm": 32,
+    "max_normalized_inner_product": "1/2",
+    "full_supports": 1704,
+    "exceptional_lines": 832,
+    "dense_code_size": 131072,
+    "dense_code_minimum_distance": 8,
+    "base_pair_inner_product_upper_bounds": {
+      "dense_dense": 16,
+      "full_same_support": 16,
+      "full_different_supports": 16,
+      "exceptional_full": 16,
+      "exceptional_exceptional": 16,
+      "antipodal_pair": -32,
+      "roots_roots": 16,
+      "dense_middle": 16,
+      "dense_roots": 8,
+      "middle_roots": 16
+    },
+    "heavy_pair_checks": null,
+    "certificate_sha256": "69c3f368a4aae5956ca75a8569f761224148831e8a85edd5972a0b3b057af646",
+    "all_checks_pass": true
+  }
+]

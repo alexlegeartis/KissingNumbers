@@ -1,11 +1,11 @@
 # Signed octad layers and coordinated heads in dimensions 32–35
 
-Checkpoint: **6 November 2026**. All four lower bounds have two independent
+Checkpoint: **7 November 2026**. All four lower bounds have two independent
 exact verification routes.
 
 | Dimension | Previous reviewed bound | This construction | Added points | Previous method |
 |---|---:|---:|---:|---|
-| 32 | 352,320 | **352,800** | **480** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-number-32) |
+| 32 | 352,320 | **352,832** | **512** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-number-32) |
 | 33 | 370,240 | **370,376** | **136** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
 | 34 | 390,980 | **390,992** | **12** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
 | 35 | 415,308 | **415,334** | **26** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
@@ -14,6 +14,20 @@ The preceding constructions use 1,713, 1,852, 2,013 and 2,202 supports from
 [Brouwer's table](https://aeb.win.tue.nl/codes/Andw.html), reviewed on 26 October.
 Their counts are 131,072 + 128 M + 2n(n−1). This is the gain over those public
 witnesses. A complete new retrieval of Cohn's table was unavailable.
+
+## Exceptional signed octads: 7 November continuation
+
+The 32D bound is now **352,832**, 32 above the preceding repository certificate
+and 512 above the pinned Lin construction. [The new self-contained proof](exceptional32/README.md)
+replaces 380 exceptional points with 412 on the same 25 supports. Every other
+layer remains unchanged. Three exact routes cover all pair categories; the
+standalone `independent_audit.py` materializes all 352,832 coordinate rows and
+checks every exceptional pair directly. `replay.py` also runs the two original
+checkers, `verify_delta.py`, `verify_pool_bound.py` and `negative_controls.py`.
+The exact 1,664-point capacity bound applies only to these 25 supports, not to
+other supports, coordinate shapes or the kissing number. Fresh source snapshots
+and unavailable Cohn retrieval are recorded; worldwide priority is not asserted.
+The historical 352,800-point certificate remains byte-for-byte unchanged.
 
 ## Rational heavy-head rotation: 6 November continuation
 
@@ -81,7 +95,7 @@ python verify.py
 ```
 
 `verify.py` checks the complete SHA-256 manifest, then runs both proof
-representations in an isolated temporary copy. Python 3.9+ and NumPy suffice.
+representations in an isolated temporary copy. Python 3.10+ and NumPy suffice.
 
 - `source/classic/verify.py` uses standard-library masks, exact code enumeration
   and signed-support bounds for the original four certificates.

@@ -1,0 +1,13 @@
+[
+  {
+    "dimension": 32,
+    "verified_points": 352832,
+    "expanded_middle_points": 219776,
+    "expanded_roots": 1984,
+    "expanded_dense_points": 131072,
+    "expanded_heads": 0,
+    "exceptional_cross_dot_products": 114688,
+    "mixed_norm_checks": null,
+    "all_checks_pass": true
+  }
+]

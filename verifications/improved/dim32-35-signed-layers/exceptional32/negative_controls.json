@@ -1,0 +1,50 @@
+[
+  {
+    "case": "false_count",
+    "checker": "verify",
+    "rejected": true,
+    "exception": "ValueError"
+  },
+  {
+    "case": "false_count",
+    "checker": "verify_coordinates",
+    "rejected": true,
+    "exception": "AssertionError"
+  },
+  {
+    "case": "duplicate_exceptional_line",
+    "checker": "verify",
+    "rejected": true,
+    "exception": "ValueError"
+  },
+  {
+    "case": "duplicate_exceptional_line",
+    "checker": "verify_coordinates",
+    "rejected": true,
+    "exception": "AssertionError"
+  },
+  {
+    "case": "incompatible_sign_flip",
+    "checker": "verify",
+    "rejected": true,
+    "exception": "ValueError"
+  },
+  {
+    "case": "incompatible_sign_flip",
+    "checker": "verify_coordinates",
+    "rejected": true,
+    "exception": "AssertionError"
+  },
+  {
+    "case": "rank_deficient_dense_generator",
+    "checker": "verify",
+    "rejected": true,
+    "exception": "ValueError"
+  },
+  {
+    "case": "rank_deficient_dense_generator",
+    "checker": "verify_coordinates",
+    "rejected": true,
+    "exception": "AssertionError"
+  }
+]

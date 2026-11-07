@@ -1,0 +1,47 @@
+{
+  "checked_at_utc": "2026-11-07T11:44:59Z",
+  "access": "Read-only GitHub connector, main branch resolved then files fetched at exact commits.",
+  "sources": [
+    {
+      "repo": "alexlegeartis/KissingNumbers",
+      "commit": "b9164aebd6b0e09105b398ed7d9a593bf52a2df5",
+      "url": "https://github.com/alexlegeartis/KissingNumbers/blob/b9164aebd6b0e09105b398ed7d9a593bf52a2df5/RESULTS.md",
+      "snapshot": "public_results.txt",
+      "excerpts": [
+        "| 32 | 352 320 | **352 800** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |"
+      ]
+    },
+    {
+      "repo": "alexlegeartis/KissingNumbers",
+      "commit": "b9164aebd6b0e09105b398ed7d9a593bf52a2df5",
+      "url": "https://github.com/alexlegeartis/KissingNumbers/blob/b9164aebd6b0e09105b398ed7d9a593bf52a2df5/verifications/improved/dim32-35-signed-layers/source/classic/certificate32.json",
+      "snapshot": "public_baseline_certificate32.json",
+      "excerpts": [
+        "points: 352800; certificate JSON structurally equal to independently audited local baseline; newline encoding differs in saved tool snapshot."
+      ]
+    },
+    {
+      "repo": "QH-Lin/kissing-number-32",
+      "commit": "f367a9c5a051c0d6821ce71324b9dfa1ead76c2e",
+      "url": "https://github.com/QH-Lin/kissing-number-32/blob/f367a9c5a051c0d6821ce71324b9dfa1ead76c2e/README.md",
+      "snapshot": "lin_readme.txt",
+      "excerpts": [
+        "# A kissing configuration of 352320 points in ℝ³²",
+        "**τ₃₂ ≥ 352320**, obtained from a new binary constant-weight code showing **A(32, 8, 8) ≥ 1713**.",
+        "| kissing number τ₃₂ (lower bound) | 347584 — Yang et al., [arXiv:2609.35051](https://arxiv.org/abs/2609.35051), as listed in [Cohn's table](https://cohn.mit.edu/kissing-numbers/) | **352320** (+4736) |",
+        "Total: 131072 + 219264 + 1984 = **352320**. Any two distinct vectors have inner product ≤ 16, i.e. angle ≥ 60°."
+      ]
+    }
+  ],
+  "cohn": {
+    "url": "https://cohn.mit.edu/kissing-numbers/",
+    "status": "Unavailable in this audit",
+    "attempts": [
+      "Timeout from direct open with trailing slash",
+      "HTTP 502 without trailing slash",
+      "Search did not retrieve the kissing-number table"
+    ],
+    "conclusion": "No fresh Cohn 32D value verified."
+  },
+  "conclusion": "Verified +32 over current repository's 352800 baseline and +512 over Lin's 352320. These checked sources do not establish worldwide priority."
+}

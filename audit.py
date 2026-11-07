@@ -419,7 +419,7 @@ add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover'
 # add() preserves every displaced claim in SUPERSEDED for the history audit.
 for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions', 'dim88-96-z8-golay', 'dim26-30-asymmetric-exchanges', 'dim27-quadratic-normal-module', 'dim31-normal-module-exchange', 'dim27-31-joint-refills', 'dim27-31-algebraic-completion', 'dim60-antipodal840-lift', 'dim54-59-p48-coverage'):
     if _package == 'dim32-35-signed-layers':
-        for _dimension, _family in ((33, 'classic'), (34, 'classic'), (35, 'multi35')):
+        for _dimension, _family in ((32, 'classic'), (33, 'classic'), (34, 'classic'), (35, 'multi35')):
             with io.open(os.path.join(IMP, _package, 'source', _family,
                                      'certificate%d.json' % _dimension), encoding='utf-8') as _old_stream:
                 _old_total = json.load(_old_stream)['points']
@@ -2055,6 +2055,8 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append('')
+    out.append('The 7 November exceptional-sign continuation gives 352832 in 32D (+32 over the reviewed repository certificate and +512 over the pinned Lin result). All 352832 integer vectors are reconstructed; three exact verification routes cover every pair category, including 1383616 direct exceptional pairs. The same 25 exceptional supports attain their exact limited-source capacity of 1664. No global optimality or worldwide-priority claim is made. Historical certificates and the manuscript are unchanged.')
     out.append("")
     out.append('The 6 November rational heavy-head rotation gives 390992 in 34D (+2 over the preceding 390990 certificate). A changed dense coordinate placement and star parity permit shared root deletion and restore two roots. Two independent exact proofs check all finite layers, uniqueness and rank 34; common scaling gives squared integer norm 5780000 and product bound 2890000. Historical constructions and the manuscript are unchanged.')
     out.append('')

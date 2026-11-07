@@ -1,0 +1,54 @@
+{
+  "all_checks_pass": true,
+  "scope": "Only all 256 sign patterns on each of the same 25 exceptional supports, with other layers fixed",
+  "triangles": [
+    [
+      134776952,
+      2156431472,
+      2290122872
+    ],
+    [
+      142084232,
+      2289076232,
+      2289598592
+    ],
+    [
+      2013792392,
+      2021687432,
+      2022213632
+    ],
+    [
+      143099912,
+      2290288776,
+      2290581632
+    ],
+    [
+      2148038792,
+      2290104456,
+      2290643072
+    ],
+    [
+      2265450632,
+      2273347592,
+      2273869952
+    ],
+    [
+      143163527,
+      2155907207,
+      2290616327
+    ],
+    [
+      143165312,
+      2155906952,
+      2290616072
+    ]
+  ],
+  "isolated_support": 146047490,
+  "explicit_pair_clique_covers_checked": 24,
+  "each_pair_cover_cliques": 128,
+  "triangle_bound": 192,
+  "isolated_support_bound": 128,
+  "upper_bound": 1664,
+  "achieved": 1664,
+  "total_configuration": 352832
+}

@@ -25,6 +25,14 @@ def results():
                 assert e['removed_root_antipodal_lines']==1 and e['added_head_antipodal_lines']==2
                 total+=2*(e['added_head_antipodal_lines']-e['removed_root_antipodal_lines'])
         assert total==c['points']=={32:352800,33:370368,34:390982,35:415314}[d]
+        if d==32:
+            current=ROOT/'exceptional32/certificate32_352832.json'
+            assert hashlib.sha256(current.read_bytes()).hexdigest()=='69c3f368a4aae5956ca75a8569f761224148831e8a85edd5972a0b3b057af646'
+            now=json.loads(current.read_bytes())
+            assert now['dimension']==32 and now['dense_generator']==c['dense_generator']
+            assert now['full_even_supports']==c['full_even_supports']
+            total=(1<<17)+128*len(now['full_even_supports'])+2*len(now['exceptional_antipodal_lines'])+2*d*(d-1)
+            assert total==now['points']==352832
         if d in (33,34,35):
             trade=json.loads((ROOT/'root_trades'/('certificate%d.json'%d)).read_text())
             assert trade['format']=='root_star_trade_v1' and trade['dimension']==d

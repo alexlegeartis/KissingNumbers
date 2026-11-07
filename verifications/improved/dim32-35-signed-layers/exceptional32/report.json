@@ -1,0 +1,287 @@
+{
+  "certificate": "certificate32_352832.json",
+  "certificate_sha256": "69c3f368a4aae5956ca75a8569f761224148831e8a85edd5972a0b3b057af646",
+  "baseline": "control32_352800.json",
+  "baseline_sha256": "3a96dc79d21d07557a221f2cdd6664d2d5270e93d7c98711d7b962a2ba2b41d2",
+  "certificate_audit": {
+    "counts": {
+      "dense": 131072,
+      "full_even": 218112,
+      "exceptional": 1664,
+      "roots": 1984
+    },
+    "total": 352832,
+    "dense_weight_distribution": {
+      "0": 1,
+      "8": 908,
+      "10": 3328,
+      "12": 14784,
+      "14": 27392,
+      "16": 38246,
+      "18": 27392,
+      "20": 14784,
+      "22": 3328,
+      "24": 908,
+      "32": 1
+    },
+    "dense_rank": 17,
+    "dense_minimum_distance": 8,
+    "full_supports": 1704,
+    "exceptional_supports": 25,
+    "full_full_intersection_histogram": {
+      "0": 116158,
+      "1": 330639,
+      "2": 621333,
+      "3": 203174,
+      "4": 179652
+    },
+    "full_exceptional_intersection_histogram": {
+      "0": 3237,
+      "1": 10227,
+      "2": 17392,
+      "3": 7148,
+      "4": 4596
+    },
+    "exceptional_unordered_pairs_checked": 1383616,
+    "exceptional_pair_dot_histogram": {
+      "-32": 832,
+      "-16": 50368,
+      "-12": 70656,
+      "-8": 178432,
+      "-4": 209920,
+      "0": 364032,
+      "4": 209920,
+      "8": 178432,
+      "12": 70656,
+      "16": 50368
+    },
+    "root_unordered_pairs_checked": 1967136,
+    "pair_type_maximum_proven_upper_bounds": {
+      "dense_dense": 16,
+      "dense_full": 16,
+      "dense_exceptional": 16,
+      "dense_root": 8,
+      "full_full": 16,
+      "full_exceptional": 16,
+      "full_root": 16,
+      "exceptional_exceptional": 16,
+      "exceptional_root": 16,
+      "root_root": 16
+    },
+    "global_maximum_distinct_pair_dot": 16,
+    "minimum_squared_euclidean_distance": 32,
+    "squared_norm": 32,
+    "pair_coverage": "All ten family pair types covered by exact checks or pointwise shape bounds; not a brute force full Gram matrix.",
+    "materialized_coordinate_rows": 352832,
+    "materialized_distinct_rows": 352832,
+    "coordinates_sha256_int8_rowmajor": "d9d3c8b937dd6fac6a1f6c0f75dc87b08acffdfd981bc58b4eec613ab4b69b25"
+  },
+  "baseline_audit": {
+    "counts": {
+      "dense": 131072,
+      "full_even": 218112,
+      "exceptional": 1632,
+      "roots": 1984
+    },
+    "total": 352800,
+    "dense_weight_distribution": {
+      "0": 1,
+      "8": 908,
+      "10": 3328,
+      "12": 14784,
+      "14": 27392,
+      "16": 38246,
+      "18": 27392,
+      "20": 14784,
+      "22": 3328,
+      "24": 908,
+      "32": 1
+    },
+    "dense_rank": 17,
+    "dense_minimum_distance": 8,
+    "full_supports": 1704,
+    "exceptional_supports": 25,
+    "full_full_intersection_histogram": {
+      "0": 116158,
+      "1": 330639,
+      "2": 621333,
+      "3": 203174,
+      "4": 179652
+    },
+    "full_exceptional_intersection_histogram": {
+      "0": 3237,
+      "1": 10227,
+      "2": 17392,
+      "3": 7148,
+      "4": 4596
+    },
+    "exceptional_unordered_pairs_checked": 1330896,
+    "exceptional_pair_dot_histogram": {
+      "-32": 816,
+      "-16": 48860,
+      "-12": 67584,
+      "-8": 173624,
+      "-4": 201728,
+      "0": 346488,
+      "4": 201728,
+      "8": 173624,
+      "12": 67584,
+      "16": 48860
+    },
+    "root_unordered_pairs_checked": 1967136,
+    "pair_type_maximum_proven_upper_bounds": {
+      "dense_dense": 16,
+      "dense_full": 16,
+      "dense_exceptional": 16,
+      "dense_root": 8,
+      "full_full": 16,
+      "full_exceptional": 16,
+      "full_root": 16,
+      "exceptional_exceptional": 16,
+      "exceptional_root": 16,
+      "root_root": 16
+    },
+    "global_maximum_distinct_pair_dot": 16,
+    "minimum_squared_euclidean_distance": 32,
+    "squared_norm": 32,
+    "pair_coverage": "All ten family pair types covered by exact checks or pointwise shape bounds; not a brute force full Gram matrix.",
+    "materialized_coordinate_rows": 352800,
+    "materialized_distinct_rows": 352800,
+    "coordinates_sha256_int8_rowmajor": "8b693c87de5846afef1e0aeaeeb7277cbf0ec730c8e860a9c4556f374f229557"
+  },
+  "delta": {
+    "dense_generator_unchanged": true,
+    "full_supports_unchanged": true,
+    "same_exceptional_supports": 25,
+    "removed_exceptional_points": 380,
+    "added_exceptional_points": 412,
+    "net_gain": 32,
+    "changed_supports": [
+      143099912,
+      2148038792,
+      2265450632,
+      2273347592,
+      2273869952,
+      2290104456,
+      2290288776,
+      2290581632,
+      2290643072
+    ],
+    "components": [
+      {
+        "supports": [
+          134776952,
+          2156431472,
+          2290122872
+        ],
+        "support_count": 3,
+        "old_points": 192,
+        "new_points": 192
+      },
+      {
+        "supports": [
+          142084232,
+          2013792392,
+          2021687432,
+          2022213632,
+          2289076232,
+          2289598592
+        ],
+        "support_count": 6,
+        "old_points": 384,
+        "new_points": 384
+      },
+      {
+        "supports": [
+          143099912,
+          2148038792,
+          2265450632,
+          2273347592,
+          2273869952,
+          2290104456,
+          2290288776,
+          2290581632,
+          2290643072
+        ],
+        "support_count": 9,
+        "old_points": 544,
+        "new_points": 576
+      },
+      {
+        "supports": [
+          143163527,
+          143165312,
+          2155906952,
+          2155907207,
+          2290616072,
+          2290616327
+        ],
+        "support_count": 6,
+        "old_points": 384,
+        "new_points": 384
+      },
+      {
+        "supports": [
+          146047490
+        ],
+        "support_count": 1,
+        "old_points": 128,
+        "new_points": 128
+      }
+    ]
+  },
+  "negative_controls": [
+    {
+      "mutation": "claim one extra point",
+      "rejected": true,
+      "reason": "claimed point count"
+    },
+    {
+      "mutation": "zero a generator row",
+      "rejected": true,
+      "reason": "dense rank"
+    },
+    {
+      "mutation": "insert weight-one generator",
+      "rejected": true,
+      "reason": "dense minimum distance"
+    },
+    {
+      "mutation": "duplicate full support",
+      "rejected": true,
+      "reason": "duplicate full support"
+    },
+    {
+      "mutation": "append full support intersecting another in seven places",
+      "rejected": true,
+      "reason": "full/full intersection"
+    },
+    {
+      "mutation": "duplicate exceptional line",
+      "rejected": true,
+      "reason": "duplicate exceptional vector"
+    },
+    {
+      "mutation": "put exceptional minus sign outside support",
+      "rejected": true,
+      "reason": "exceptional negative mask"
+    },
+    {
+      "mutation": "flip one exceptional coordinate",
+      "rejected": true,
+      "reason": "exceptional pair dot"
+    },
+    {
+      "mutation": "use an exceptional support as a full layer",
+      "rejected": true,
+      "reason": "full/exceptional intersection"
+    }
+  ],
+  "cpu_affinity": [
+    0
+  ],
+  "python_numpy_version": "2.3.5",
+  "independence": "New standalone implementation; no producer checker/search imports or calls.",
+  "status": "PASS",
+  "elapsed_seconds": 3.5985821439971915
+}

@@ -46,4 +46,10 @@ if __name__=='__main__':
         assert symbolic['certificate_sha256']==coordinate['input_sha256']['certificate.json']
         assert coordinate['unique_rows']==390992 and coordinate['exact_rank']==34
         assert len(controls)==10 and all(row['rejected'] for row in controls)
+    with tempfile.TemporaryDirectory(prefix='exceptional32_replay_') as directory:
+        current=Path(directory)/'exceptional32'
+        shutil.copytree(ROOT/'exceptional32',current,ignore=shutil.ignore_patterns('__pycache__'))
+        replay(current,'replay.py')
+        report=json.loads((current/'report.json').read_text())
+        assert report['status']=='PASS' and report['certificate_audit']['total']==expected[32]==352832
     print(json.dumps(dict(status='PASS',results=[dict(dimension=d,total=n) for d,n in sorted(expected.items())])))

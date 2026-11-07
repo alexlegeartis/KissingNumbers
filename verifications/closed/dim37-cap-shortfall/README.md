@@ -53,7 +53,7 @@ Echols' 2026 constant-weight improvements, which Brouwer's page already carries:
 
 | dim | Cohn's table | Brouwer / correct | who | 7 November repo result |
 |---|---|---|---| --- |
-| 32 | 345 408 | **346 432** | Echols 2026 | **352 800 |
+| 32 | 345 408 | **346 432** | Echols 2026 | **352 832** |
 | 33 | 360 640 | **362 048** | Echols 2026 | **370 376 |
 | 34 | 380 868 | **381 124** | Echols 2026 | **390 992** |
 | 37 | 494 312 | **496 232** | Echols 2026 | **505 629** |
