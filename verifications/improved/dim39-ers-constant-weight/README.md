@@ -134,7 +134,7 @@ As of 2026-08-19:
 | 34 | 380868 | 381124 | 381124 | Echols 2026 | **390 992** |
 | 37 | 494312 | 496232 | 496232 | Echols 2026 | **505 629** |
 | **38** | 566652 | 566652 | **591612** | this project, but by a different construction — the ERS value here is 570236 | **611 638** |
-| **39** | 755988 | 755988 | **756116** | this project | **769 820** |
+| **39** | 755988 | 755988 | **756116** | this project | **769 852** |
 
 The comparison and ERS counts above are historical. The 7 November 2026
 Coxeter–Todd triangle-switch construction gives **505,629** in dimension 37; see

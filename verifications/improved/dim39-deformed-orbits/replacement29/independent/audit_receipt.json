@@ -1,0 +1,36 @@
+{
+  "all_checks_passed": true,
+  "completed_utc": "2026-11-07T07:09:12.813362+00:00",
+  "dimension": 39,
+  "distinct_unit_vectors": 769852,
+  "improvement_over_verified_predecessor": 32,
+  "certificate_sha256": "dee846d08a9516ca12a55fcf89bde154e529ba6302d7146487bed92d18a58300",
+  "route": "Independent Python reconstruction plus exhaustive direct signed-int64 C++ geometry; no Walsh transform or producer code imported",
+  "dense_relative_products": 1687391811,
+  "middle_support_representative_checks": 35161056,
+  "permitted_middle_sign_sums": 8859271680,
+  "dense_heavy_direct_checks": 21030912,
+  "dense_root_coordinate_pairs": 7465563,
+  "support_pairs": 5860176,
+  "witness_replays": 4,
+  "negative_controls": 8,
+  "producer_extrema_agree": true,
+  "coordinate_guard": 100000004,
+  "maximum_absolute_coordinate": 32295667,
+  "int64_max_dense_absolute_partial_sum": 390000031200000624,
+  "reports": [
+    "independent_report.json",
+    "direct_results.json",
+    "witness_checks.json",
+    "negative_controls.json",
+    "producer_comparison.json"
+  ],
+  "single_threaded": true,
+  "cpu_policy": "When multiple CPUs are allowed, highest allowed CPU excluded from affinity; no audit parallelism",
+  "publication": "Local audit only. No remote or publication worktree changed.",
+  "caveats": [
+    "Finite-certificate proof, not a proof-assistant formalization.",
+    "Ordinary trust in Python, compiler, hardware and hash implementation.",
+    "No optimality, worldwide priority or publication claim."
+  ]
+}

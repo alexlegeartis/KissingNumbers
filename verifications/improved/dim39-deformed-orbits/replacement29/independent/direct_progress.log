@@ -1,0 +1,14 @@
+Sparse direct checks passed
+Dense-middle direct sign enumerations passed
+Dense-root and dense-heavy direct checks passed
+Dense rows 0 / 10269
+Dense rows 1024 / 10269
+Dense rows 2048 / 10269
+Dense rows 3072 / 10269
+Dense rows 4096 / 10269
+Dense rows 5120 / 10269
+Dense rows 6144 / 10269
+Dense rows 7168 / 10269
+Dense rows 8192 / 10269
+Dense rows 9216 / 10269
+Dense rows 10240 / 10269

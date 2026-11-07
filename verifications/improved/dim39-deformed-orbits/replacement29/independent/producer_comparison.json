@@ -1,0 +1,11 @@
+{
+  "all_agree": true,
+  "checks": {
+    "dense_products": true,
+    "dense_maximum": true,
+    "dense_witness": true,
+    "middle_maximum": true,
+    "middle_slack": true
+  },
+  "purpose": "Post-audit comparison only; producer receipt is not an input to independent acceptance."
+}

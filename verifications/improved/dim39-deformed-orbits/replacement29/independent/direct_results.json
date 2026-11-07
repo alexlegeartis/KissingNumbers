@@ -1,0 +1,23 @@
+{
+"passed": true,
+"arithmetic": "direct signed int64, no transforms or floating point",
+"norm_squared_min": 9999999524744775,
+"norm_squared_max": 10000000199081894,
+"dense_relative_products": 1687391811,
+"max_dense_dot": 4999991179259176,
+"dense_dot_limit": 4999999600000008,
+"dense_witness": [4520,8972,116386551608],
+"max_root_root_dot": 16,
+"max_heavy_root_dot": 16,
+"max_heavy_heavy_dot": 16,
+"max_heavy_middle_dot": 16,
+"middle_supports_allowing_both_parities": 3316,
+"middle_sign_sums_evaluated": 8859271680,
+"max_dense_middle_half_dot": 141421268,
+"middle_witness": [10253,1160],
+"middle_square_slack": 23357272208,
+"max_dense_root_dot": 192155436,
+"dense_root_coordinate_pair_checks": 7465563,
+"max_dense_heavy_dot": 248825452,
+"dense_heavy_direct_checks": 21030912
+}

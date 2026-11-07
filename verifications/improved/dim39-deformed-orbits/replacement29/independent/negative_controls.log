@@ -1,0 +1,70 @@
+{
+  "all_rejected": true,
+  "controls": [
+    {
+      "name": "zero_norm",
+      "rejected": true,
+      "returncode": 1,
+      "reason": "coordinate safety bound",
+      "input_sha256": "19aca98065eca1792f127455e8f9e527632d325bfd9057a969d52f0a6a4bc8e2",
+      "elapsed_seconds": 0.028408011006831657
+    },
+    {
+      "name": "nonzero_wrong_norm",
+      "rejected": true,
+      "returncode": 1,
+      "reason": "norm enclosure",
+      "input_sha256": "bc954c6384d66a948faa9dcd9f8f4bd28686a03852ba938f3284bea2ec5f3699",
+      "elapsed_seconds": 0.03649210200092057
+    },
+    {
+      "name": "coordinate_safety_guard",
+      "rejected": true,
+      "returncode": 1,
+      "reason": "coordinate safety bound",
+      "input_sha256": "7c56b572ec2e01676df0c264ae616da39ba759d08e1acee2437de127f905fabd",
+      "elapsed_seconds": 0.029118732003553305
+    },
+    {
+      "name": "duplicate_sparse_root",
+      "rejected": true,
+      "returncode": 1,
+      "reason": "root-root",
+      "input_sha256": "d1c9e0040e7158f90e40681f71a4f253095532e6a7ac456fc1bee2e151092f99",
+      "elapsed_seconds": 0.028275176002352964
+    },
+    {
+      "name": "duplicate_sparse_heavy",
+      "rejected": true,
+      "returncode": 1,
+      "reason": "heavy-heavy",
+      "input_sha256": "06643a56880133e8ad98231ade646013d778650bfdf64c35bf46e33a02d5e170",
+      "elapsed_seconds": 0.0333911839989014
+    },
+    {
+      "name": "duplicate_dense_direction",
+      "rejected": true,
+      "returncode": 1,
+      "reason": "dense-dense",
+      "input_sha256": "e7afc88218aa2b72c3307b5b9ee490e47bc504ff3db82612e14849df91dad31a",
+      "elapsed_seconds": 16.810310246997687
+    },
+    {
+      "name": "middle_collision_with_valid_norm",
+      "rejected": true,
+      "returncode": 1,
+      "reason": "dense-middle",
+      "input_sha256": "041761233acce9384098e9f1c328cd75cf524c4ad8ccb90c5f7faed5741022fe",
+      "elapsed_seconds": 0.25631242000235943
+    },
+    {
+      "name": "wrong_representative_count",
+      "rejected": true,
+      "returncode": 1,
+      "reason": "unexpected sizes",
+      "input_sha256": "96ac5b70cb1f35c8dac9e197e0b7c172a06944e02c1d70a0ccd83d25376ea1ab",
+      "elapsed_seconds": 0.005856212999788113
+    }
+  ],
+  "scope": "Controls bypass frozen-input SHA256 gates to test actual C++ integer geometry. They are not the source of acceptance for the original certificate."
+}

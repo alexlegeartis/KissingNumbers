@@ -61,9 +61,24 @@ if __name__=='__main__':
         first=json.loads((source/'orbit_verification.json').read_text())
         second=json.loads((source/'independent/independent_report.json').read_text())
         assert first['all_checks_passed'] and second['all_checks_passed']
-        assert first['lower_bound']==second['lower_bound']==expected['total']
+        assert first['lower_bound']==second['lower_bound']==769820
         assert first['certificate_sha256']==second['certificate_sha256']
         assert json.loads((source/'independent/witness_checks.json').read_text())['passed']
         controls=json.loads((source/'independent/negative_controls.json').read_text())
         assert controls['all_rejected'] and len(controls['controls'])==4
-    print(json.dumps(dict(status='PASS',results=[expected],proof_routes=2,negative_controls=20)))
+    with tempfile.TemporaryDirectory(prefix='kissing39_replacement29_') as directory:
+        source=Path(directory)/'replacement29'
+        shutil.copytree(ROOT/'replacement29',source,ignore=shutil.ignore_patterns('__pycache__','_build'))
+        replay(source,'verify.py')
+        replay(source/'independent','verify_independent.py')
+        replay(source/'independent','check_witnesses.py')
+        replay(source/'independent','negative_controls.py')
+        first=json.loads((source/'orbit_verification.json').read_text())
+        second=json.loads((source/'independent/independent_report.json').read_text())
+        assert first['all_checks_passed'] and second['all_checks_passed']
+        assert first['lower_bound']==second['lower_bound']==expected['total']
+        assert first['certificate_sha256']==second['certificate_sha256']
+        assert json.loads((source/'independent/witness_checks.json').read_text())['passed']
+        controls=json.loads((source/'independent/negative_controls.json').read_text())
+        assert controls['all_rejected'] and len(controls['controls'])==8
+    print(json.dumps(dict(status='PASS',results=[expected],proof_routes=2,negative_controls=28)))

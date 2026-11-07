@@ -5,16 +5,16 @@ import numpy as np
 ROOT=Path(__file__).resolve().parent
 
 def results():
-    c=json.loads((ROOT/'replacement28/orbit_certificate.json').read_text())
+    c=json.loads((ROOT/'replacement29/orbit_certificate.json').read_text())
     assert c.get('partial_middle',[])==[]
     b=json.loads((ROOT/'source/base_certificate.json').read_text())
     stars=b['heavy_stars']
     pairs={tuple(sorted((s['center'],j))) for s in stars for j in s['leaves']}
     supports=(ROOT/'source/source/supports_3424.txt').read_text().splitlines()
     sparse=128*len(supports)+4*(39*38//2-len(pairs))+16*len(stars)
-    assert sparse==441244 and len(c['group_words'])==32 and len(c['representatives'])==10268
+    assert sparse==441244 and len(c['group_words'])==32 and len(c['representatives'])==10269
     total=sparse+len(c['group_words'])*len(c['representatives'])
-    assert c['dimension']==39 and total==c['claimed_size']==769820
+    assert c['dimension']==39 and total==c['claimed_size']==769852
     return [dict(dimension=39,total=total)]
 
 if __name__=='__main__':

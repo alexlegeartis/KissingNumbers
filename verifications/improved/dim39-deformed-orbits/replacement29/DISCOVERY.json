@@ -1,0 +1,11 @@
+{
+  "dimension": 39,
+  "points": 769852,
+  "repository_comparison": 769820,
+  "gain": 32,
+  "certificate_sha256": "dee846d08a9516ca12a55fcf89bde154e529ba6302d7146487bed92d18a58300",
+  "independent_archive_sha256": "e1f83f77997aef9e6613fb0d9db4a2a70de090039b0a249f4d5f258f306e5431",
+  "construction": "Prune a numerical 32-extra-orbit pose to 29 extra orbits by pricing all 4,960 deletion triples. Jointly deform all 10,269 representatives under the 32-element sign group, retaining the full 441,244-point sparse layer. No previous dense coordinate is assumed unchanged.",
+  "coordinates": "Each supplied integer direction is normalized by its own exact Euclidean norm. Floating search and screening are not part of the acceptance proof.",
+  "literature": "This integration compares to repository certificates and Lin arXiv:2611.03682; it does not establish exhaustive worldwide priority."
+}
