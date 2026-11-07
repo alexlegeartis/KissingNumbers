@@ -61,4 +61,6 @@ if __name__=='__main__':
         assert report['status']=='PASS' and report['certificate_audit']['total']==352832  # retained history
     assert expected[32]==352992
     replay(ROOT/'nonantipodal32','replay.py')
+    assert expected[33]==370408
+    replay(ROOT/'nonantipodal33','replay.py')
     print(json.dumps(dict(status='PASS',results=[dict(dimension=d,total=n) for d,n in sorted(expected.items())])))

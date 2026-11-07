@@ -49,6 +49,17 @@ def results():
             assert hashlib.sha256(file.read_bytes()).hexdigest()==trade['baseline_sha256']
             total+=16*len(trade['stars'])-2*len(trade['removed_root_lines'])
             assert total==trade['points']
+        if d==33:
+            assert total==370376  # actual previous published repository certificate
+            current=ROOT/'nonantipodal33/certificate33_370408_explicit.json'
+            assert hashlib.sha256(current.read_bytes()).hexdigest()=='5686dfcd2b891bf6d9be6b01013d8205774aa1a19c02a2c45bdfd86194314a60'
+            explicit=json.loads(current.read_bytes())
+            assert explicit['dimension']==33 and explicit['format']=='signed_octad_star_points_explicit_v1'
+            assert explicit['dense_coordinates']==list(range(32)) and explicit['dense_coset_shift']==0
+            assert explicit['dense_generator']==c['dense_generator']
+            assert 'stars' not in explicit and 'removed_root_lines' not in explicit
+            total=(1<<17)+128*len(explicit['full_even_supports'])+len(explicit['exceptional_signed_points'])+2*d*(d-1)-len(explicit['removed_root_signed_points'])+len(explicit['star_signed_points'])
+            assert total==explicit['points']==370408
         if d==34:
             assert total==390990
             rotated=json.loads((ROOT/'rotated34/certificate.json').read_text())

@@ -534,3 +534,5 @@ for _d in (27,31):
 STATUS[34] = ('heads', 'rational heavy-head rotation with a changed dense coordinate placement and star parity; all finite interactions, uniqueness and rank verified exactly (dim32-35-signed-layers/rotated34/verify.py)')
 
 STATUS[32] = ('codes', 'non-antipodal explicit signed octads on 29 supports; 1824 exceptional points with 380 unpaired, with broader supports and sign selections still open (dim32-35-signed-layers/nonantipodal32/replay.py)')
+
+STATUS[33] = ('codes', 'non-antipodal signed octads and individual root-star trades; 370408 points with 500 unpaired, with broader supports and joint root-star choices still open (dim32-35-signed-layers/nonantipodal33/replay.py)')

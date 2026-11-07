@@ -1,0 +1,726 @@
+{
+  "status": "PASS",
+  "dimension": 33,
+  "lower_bound": 370392,
+  "hashes": {
+    "candidate": {
+      "file": "research/transfer_nonantipodal32_to33_20261107/certificate33_370392_explicit.json",
+      "sha256": "a3bda380ae2f4aff5ab5429fd1ec5bae9b4e06f51b3b1525331519a325bbb53d"
+    },
+    "delta": {
+      "file": "research/transfer_nonantipodal32_to33_20261107/delta_370392.json",
+      "sha256": "27cde348c511f1d0a7b8c24b845bf7b23fe7aa3848d009f7203a201f7e39a4da"
+    },
+    "old_trade": {
+      "file": "research/publish43_2920901_repo/verifications/improved/dim32-35-signed-layers/root_trades/certificate33.json",
+      "sha256": "1c11d1585922b2e96ba70c05e342e2593bd6defc6ab9e17a7a9a5b38e847bb3b"
+    },
+    "classic": {
+      "file": "research/publish43_2920901_repo/verifications/improved/dim32-35-signed-layers/source/classic/certificate33.json",
+      "sha256": "e87a39623fe881340c84c4bba8c89960b9e9eca90fe5452e169d64c0511a9751"
+    },
+    "source32": {
+      "file": "research/release_full_octad32_20261107/certificate32_352992_fixed_body_explicit.json",
+      "sha256": "ab06963895d074d8dd6162bea2298796391dc876330ae997a5324adfb6638c5e"
+    }
+  },
+  "candidate": {
+    "counts": {
+      "dense": 131072,
+      "full": 235136,
+      "explicit": 2064,
+      "root": 2056,
+      "star": 64
+    },
+    "total": 370392,
+    "dense": {
+      "binary_rank": 17,
+      "size": 131072,
+      "minimum_distance": 8,
+      "weight_enumerator": {
+        "0": 1,
+        "12": 14784,
+        "8": 908,
+        "10": 3328,
+        "14": 27392,
+        "16": 38246,
+        "18": 27392,
+        "20": 14784,
+        "22": 3328,
+        "24": 908,
+        "32": 1
+      },
+      "actual_coordinate_support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "coset_shift": 0,
+      "pair_maximum": 16,
+      "antipodal": true
+    },
+    "full_full": {
+      "support_pairs_checked": 1686366,
+      "maximum_distinct_support_overlap": 4,
+      "same_support_patterns": 128,
+      "same_support_minimum_hamming_distance": 2,
+      "distinct_support_product_bound": 16,
+      "same_support_product_bound": 16
+    },
+    "explicit_masks": {
+      "scalar_pairs_checked": 2129016,
+      "scalar_ordinary_maximum": 16,
+      "scalar_ordinary_minimum": -32,
+      "explicit_support_count": 35,
+      "explicit_full_support_pairs_checked": 64295,
+      "explicit_full_maximum_overlap": 4,
+      "explicit_full_product_bound": 16
+    },
+    "explicit_coordinates": {
+      "ordinary_maximum": 16,
+      "ordinary_minimum": -32,
+      "pairs_checked": 2129016,
+      "maximum_witness": [
+        0,
+        1,
+        16
+      ],
+      "arithmetic": "int64 coordinates"
+    },
+    "root_root": {
+      "ordinary_maximum": 16,
+      "ordinary_minimum": -32,
+      "pairs_checked": 2112540,
+      "maximum_witness": [
+        0,
+        4,
+        16
+      ],
+      "arithmetic": "int64 coordinates"
+    },
+    "automatic_category_bounds": {
+      "dense_full": "Each octad has eight entries of absolute value 2; dense entries have absolute value at most 1, so product <= 16.",
+      "dense_explicit": "Same coordinatewise magnitude bound: product <= 16.",
+      "dense_root": "Two root entries of absolute value 4 against entries of absolute value at most 1: product <= 8.",
+      "full_root": "Only two root coordinates contribute, each by at most 8: product <= 16.",
+      "explicit_root": "Only two root coordinates contribute, each by at most 8: product <= 16."
+    },
+    "star_categories": {
+      "dense": {
+        "ordinary_maximum": 12,
+        "ordinary_minimum": -12,
+        "pairs_checked": 8388608,
+        "maximum_witness": [
+          0,
+          0,
+          12
+        ],
+        "arithmetic": "int64 coordinates"
+      },
+      "full": {
+        "ordinary_maximum": 16,
+        "ordinary_minimum": -16,
+        "pairs_checked": 15048704,
+        "maximum_witness": [
+          0,
+          15616,
+          16
+        ],
+        "arithmetic": "int64 coordinates"
+      },
+      "explicit": {
+        "ordinary_maximum": 16,
+        "ordinary_minimum": -16,
+        "pairs_checked": 132096,
+        "maximum_witness": [
+          16,
+          0,
+          16
+        ],
+        "arithmetic": "int64 coordinates"
+      },
+      "root": {
+        "ordinary_maximum": 16,
+        "ordinary_minimum": -16,
+        "pairs_checked": 131584,
+        "maximum_witness": [
+          0,
+          0,
+          16
+        ],
+        "arithmetic": "int64 coordinates"
+      },
+      "star": {
+        "ordinary_maximum": 16,
+        "ordinary_minimum": -32,
+        "pairs_checked": 2016,
+        "maximum_witness": [
+          0,
+          2,
+          16
+        ],
+        "arithmetic": "int64 coordinates"
+      }
+    },
+    "rank_mod101": 33,
+    "missing_antipodes": 372,
+    "row_sha256": "f9c9bbb19d1736babcd3b1dad31fed0c5941cf94fd49fd19c3bdac909ee11d30"
+  },
+  "old_control": {
+    "counts": {
+      "dense": 131072,
+      "full": 236544,
+      "explicit": 640,
+      "root": 2056,
+      "star": 64
+    },
+    "total": 370376,
+    "dense": {
+      "binary_rank": 17,
+      "size": 131072,
+      "minimum_distance": 8,
+      "weight_enumerator": {
+        "0": 1,
+        "12": 14784,
+        "8": 908,
+        "10": 3328,
+        "14": 27392,
+        "16": 38246,
+        "18": 27392,
+        "20": 14784,
+        "22": 3328,
+        "24": 908,
+        "32": 1
+      },
+      "actual_coordinate_support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "coset_shift": 0,
+      "pair_maximum": 16,
+      "antipodal": true
+    },
+    "full_full": {
+      "support_pairs_checked": 1706628,
+      "maximum_distinct_support_overlap": 4,
+      "same_support_patterns": 128,
+      "same_support_minimum_hamming_distance": 2,
+      "distinct_support_product_bound": 16,
+      "same_support_product_bound": 16
+    },
+    "explicit_masks": {
+      "scalar_pairs_checked": 204480,
+      "scalar_ordinary_maximum": 16,
+      "scalar_ordinary_minimum": -32,
+      "explicit_support_count": 12,
+      "explicit_full_support_pairs_checked": 22176,
+      "explicit_full_maximum_overlap": 4,
+      "explicit_full_product_bound": 16
+    },
+    "explicit_coordinates": {
+      "ordinary_maximum": 16,
+      "ordinary_minimum": -32,
+      "pairs_checked": 204480,
+      "maximum_witness": [
+        0,
+        2,
+        16
+      ],
+      "arithmetic": "int64 coordinates"
+    },
+    "root_root": {
+      "ordinary_maximum": 16,
+      "ordinary_minimum": -32,
+      "pairs_checked": 2112540,
+      "maximum_witness": [
+        0,
+        4,
+        16
+      ],
+      "arithmetic": "int64 coordinates"
+    },
+    "automatic_category_bounds": {
+      "dense_full": "Each octad has eight entries of absolute value 2; dense entries have absolute value at most 1, so product <= 16.",
+      "dense_explicit": "Same coordinatewise magnitude bound: product <= 16.",
+      "dense_root": "Two root entries of absolute value 4 against entries of absolute value at most 1: product <= 8.",
+      "full_root": "Only two root coordinates contribute, each by at most 8: product <= 16.",
+      "explicit_root": "Only two root coordinates contribute, each by at most 8: product <= 16."
+    },
+    "star_categories": {
+      "dense": {
+        "ordinary_maximum": 12,
+        "ordinary_minimum": -12,
+        "pairs_checked": 8388608,
+        "maximum_witness": [
+          0,
+          0,
+          12
+        ],
+        "arithmetic": "int64 coordinates"
+      },
+      "full": {
+        "ordinary_maximum": 16,
+        "ordinary_minimum": -16,
+        "pairs_checked": 15138816,
+        "maximum_witness": [
+          0,
+          15616,
+          16
+        ],
+        "arithmetic": "int64 coordinates"
+      },
+      "explicit": {
+        "ordinary_maximum": 16,
+        "ordinary_minimum": -16,
+        "pairs_checked": 40960,
+        "maximum_witness": [
+          16,
+          0,
+          16
+        ],
+        "arithmetic": "int64 coordinates"
+      },
+      "root": {
+        "ordinary_maximum": 16,
+        "ordinary_minimum": -16,
+        "pairs_checked": 131584,
+        "maximum_witness": [
+          0,
+          0,
+          16
+        ],
+        "arithmetic": "int64 coordinates"
+      },
+      "star": {
+        "ordinary_maximum": 16,
+        "ordinary_minimum": -32,
+        "pairs_checked": 2016,
+        "maximum_witness": [
+          0,
+          2,
+          16
+        ],
+        "arithmetic": "int64 coordinates"
+      }
+    },
+    "rank_mod101": 33,
+    "missing_antipodes": 0,
+    "row_sha256": "2b80e2c3de6b58de012cc692bb8dbb44613e89f21c4bc1b5aab1112cbb74591f"
+  },
+  "classic_baseline": {
+    "counts": {
+      "dense": 131072,
+      "full": 236544,
+      "explicit": 640,
+      "root": 2112,
+      "star": 0
+    },
+    "total": 370368,
+    "dense": {
+      "binary_rank": 17,
+      "size": 131072,
+      "minimum_distance": 8,
+      "weight_enumerator": {
+        "0": 1,
+        "12": 14784,
+        "8": 908,
+        "10": 3328,
+        "14": 27392,
+        "16": 38246,
+        "18": 27392,
+        "20": 14784,
+        "22": 3328,
+        "24": 908,
+        "32": 1
+      },
+      "actual_coordinate_support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "coset_shift": 0,
+      "pair_maximum": 16,
+      "antipodal": true
+    },
+    "full_full": {
+      "support_pairs_checked": 1706628,
+      "maximum_distinct_support_overlap": 4,
+      "same_support_patterns": 128,
+      "same_support_minimum_hamming_distance": 2,
+      "distinct_support_product_bound": 16,
+      "same_support_product_bound": 16
+    },
+    "explicit_masks": {
+      "scalar_pairs_checked": 204480,
+      "scalar_ordinary_maximum": 16,
+      "scalar_ordinary_minimum": -32,
+      "explicit_support_count": 12,
+      "explicit_full_support_pairs_checked": 22176,
+      "explicit_full_maximum_overlap": 4,
+      "explicit_full_product_bound": 16
+    },
+    "explicit_coordinates": {
+      "ordinary_maximum": 16,
+      "ordinary_minimum": -32,
+      "pairs_checked": 204480,
+      "maximum_witness": [
+        0,
+        2,
+        16
+      ],
+      "arithmetic": "int64 coordinates"
+    },
+    "root_root": {
+      "ordinary_maximum": 16,
+      "ordinary_minimum": -32,
+      "pairs_checked": 2229216,
+      "maximum_witness": [
+        0,
+        4,
+        16
+      ],
+      "arithmetic": "int64 coordinates"
+    },
+    "automatic_category_bounds": {
+      "dense_full": "Each octad has eight entries of absolute value 2; dense entries have absolute value at most 1, so product <= 16.",
+      "dense_explicit": "Same coordinatewise magnitude bound: product <= 16.",
+      "dense_root": "Two root entries of absolute value 4 against entries of absolute value at most 1: product <= 8.",
+      "full_root": "Only two root coordinates contribute, each by at most 8: product <= 16.",
+      "explicit_root": "Only two root coordinates contribute, each by at most 8: product <= 16."
+    },
+    "rank_mod101": 33,
+    "missing_antipodes": 0,
+    "row_sha256": "efc44da348308c7c92d2fe788e93b58f058b960ce9b802003a172ac1b29b1b61"
+  },
+  "shifted_source32": {
+    "counts": {
+      "dense": 131072,
+      "full": 218112,
+      "explicit": 1824,
+      "root": 1984,
+      "star": 0
+    },
+    "total": 352992,
+    "dense": {
+      "binary_rank": 17,
+      "size": 131072,
+      "minimum_distance": 8,
+      "weight_enumerator": {
+        "0": 1,
+        "12": 14784,
+        "8": 908,
+        "10": 3328,
+        "14": 27392,
+        "16": 38246,
+        "18": 27392,
+        "20": 14784,
+        "22": 3328,
+        "24": 908,
+        "32": 1
+      },
+      "actual_coordinate_support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "coset_shift": 0,
+      "pair_maximum": 16,
+      "antipodal": true
+    },
+    "full_full": {
+      "support_pairs_checked": 1450956,
+      "maximum_distinct_support_overlap": 4,
+      "same_support_patterns": 128,
+      "same_support_minimum_hamming_distance": 2,
+      "distinct_support_product_bound": 16,
+      "same_support_product_bound": 16
+    },
+    "explicit_masks": {
+      "scalar_pairs_checked": 1662576,
+      "scalar_ordinary_maximum": 16,
+      "scalar_ordinary_minimum": -32,
+      "explicit_support_count": 29,
+      "explicit_full_support_pairs_checked": 49416,
+      "explicit_full_maximum_overlap": 4,
+      "explicit_full_product_bound": 16
+    },
+    "explicit_coordinates": {
+      "ordinary_maximum": 16,
+      "ordinary_minimum": -32,
+      "pairs_checked": 1662576,
+      "maximum_witness": [
+        0,
+        1,
+        16
+      ],
+      "arithmetic": "int64 coordinates"
+    },
+    "root_root": {
+      "ordinary_maximum": 16,
+      "ordinary_minimum": -32,
+      "pairs_checked": 1967136,
+      "maximum_witness": [
+        0,
+        4,
+        16
+      ],
+      "arithmetic": "int64 coordinates"
+    },
+    "automatic_category_bounds": {
+      "dense_full": "Each octad has eight entries of absolute value 2; dense entries have absolute value at most 1, so product <= 16.",
+      "dense_explicit": "Same coordinatewise magnitude bound: product <= 16.",
+      "dense_root": "Two root entries of absolute value 4 against entries of absolute value at most 1: product <= 8.",
+      "full_root": "Only two root coordinates contribute, each by at most 8: product <= 16.",
+      "explicit_root": "Only two root coordinates contribute, each by at most 8: product <= 16."
+    },
+    "rank_mod101": 32,
+    "missing_antipodes": 380,
+    "row_sha256": "7c79fbb7238f70060025b5989e977607e0db3bfd2186dd593d2cb94aa93f0ccf"
+  },
+  "delta": {
+    "added": 1648,
+    "removed": 1632,
+    "net_gain": 16,
+    "old_total": 370376,
+    "new_total": 370392,
+    "retained_roots": 2056,
+    "retained_stars": 64,
+    "unchanged_dense": 131072,
+    "source_common": 327760,
+    "source_left_only": 25232,
+    "source_right_only": 42616,
+    "source_id_checks": 3280,
+    "scope": "Exact geometry, source identities, set delta and union counts only; no matching/cover or union-optimality audit."
+  },
+  "independence": "No producer proof, search, graph, matching, or verification module was imported or called.",
+  "scope": "Direct finite lower-bound audit and exact +16 comparison with the actual old33 repository control. No worldwide-priority, global-optimality, or matching/cover claim.",
+  "controls": {
+    "rejection_count": 16,
+    "results": [
+      {
+        "name": "corrupted frozen byte hash",
+        "rejected": true,
+        "reason": "SHA-256 mismatch"
+      },
+      {
+        "name": "duplicate full support",
+        "rejected": true,
+        "reason": "duplicate full support"
+      },
+      {
+        "name": "duplicate explicit signed point",
+        "rejected": true,
+        "reason": "duplicate exceptional point or line"
+      },
+      {
+        "name": "duplicate star family",
+        "rejected": true,
+        "reason": "duplicate star"
+      },
+      {
+        "name": "incorrect total count",
+        "rejected": true,
+        "reason": "claimed count differs from materialized count"
+      },
+      {
+        "name": "deficient dense code rank",
+        "rejected": true,
+        "reason": "dense code has deficient rank"
+      },
+      {
+        "name": "dense code minimum distance one",
+        "rejected": true,
+        "reason": "dense minimum distance below eight"
+      },
+      {
+        "name": "dense support erroneously all 33 coordinates",
+        "rejected": true,
+        "reason": "dense support must have exactly 32 coordinates"
+      },
+      {
+        "name": "duplicate dense coordinate",
+        "rejected": true,
+        "reason": "dense support must have exactly 32 coordinates"
+      },
+      {
+        "name": "out-of-range full support bit",
+        "rejected": true,
+        "reason": "full support: invalid mask"
+      },
+      {
+        "name": "negative sign bit outside its exceptional support",
+        "rejected": true,
+        "reason": "exceptional sign mask outside octad"
+      },
+      {
+        "name": "star leaf duplicates its center",
+        "rejected": true,
+        "reason": "star center/leaves not distinct"
+      },
+      {
+        "name": "restore a forbidden root",
+        "rejected": true,
+        "reason": "restored root/star: forbidden ordinary product 24"
+      },
+      {
+        "name": "odd star leaf-sign parity at unchanged norm",
+        "rejected": true,
+        "reason": "bad star/star: forbidden ordinary product 24"
+      },
+      {
+        "name": "odd full-octad sign parity at unchanged norm",
+        "rejected": true,
+        "reason": "bad full/full: forbidden ordinary product 24"
+      },
+      {
+        "name": "append a missing antipode",
+        "rejected": true,
+        "reason": "antipode/explicit: forbidden ordinary product 24"
+      }
+    ],
+    "missing_antipode_witness": {
+      "original_explicit_index": 260,
+      "conflict_explicit_index": 314,
+      "original": [
+        0,
+        285274384,
+        16400,
+        0
+      ],
+      "missing_antipode": [
+        0,
+        285274384,
+        285257984,
+        0
+      ],
+      "conflict_point": [
+        0,
+        285274384,
+        285253888,
+        0
+      ],
+      "ordinary_product_after_completion": 24,
+      "ordinary_product_before_completion": -24
+    },
+    "semantic_note": "The valid configuration contains an ordinary product -24. An absolute-product test would reject it incorrectly; completing antipodes creates +24 and is invalid."
+  },
+  "elapsed_seconds": 21.322361165992334,
+  "verifier_sha256": "cf0543551eafabc69d37d9c5d39a5e440224ba6db5a3add6b547d22040112111"
+}

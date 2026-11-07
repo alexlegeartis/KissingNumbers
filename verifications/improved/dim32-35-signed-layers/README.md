@@ -6,7 +6,7 @@ exact verification routes.
 | Dimension | Previous reviewed bound | This construction | Added points | Previous method |
 |---|---:|---:|---:|---|
 | 32 | 352,320 | **352,992** | **672** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-number-32) |
-| 33 | 370,240 | **370,376** | **136** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
+| 33 | 370,240 | **370,408** | **168** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
 | 34 | 390,980 | **390,992** | **12** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
 | 35 | 415,308 | **415,334** | **26** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
 
@@ -15,7 +15,26 @@ The preceding constructions use 1,713, 1,852, 2,013 and 2,202 supports from
 Their counts are 131,072 + 128 M + 2n(n−1). This is the gain over those public
 witnesses. A complete new retrieval of Cohn's table was unavailable.
 
-## Non-antipodal signed points: 7 November continuation
+## Non-antipodal 33D octads and individual root-star trades
+
+The current 33D bound is **370,408**, 32 above the actual published 370,376
+repository certificate and 168 above the pinned Lin construction. The
+[self-contained 33D package](nonantipodal33/README.md) contains 131,072 dense
+points, 1,837 full-even octad layers, 2,064 individual exceptional octads,
+1,956 retained roots and 180 individual stars. All have squared norm 32,
+ordinary products at most 16, and rank 33. Exactly 500 points lack antipodes.
+Dense signs occupy coordinates 0 through 31 inside R^33; stars and the 156
+root deletions are individual signed vectors, never implicitly doubled.
+
+The unpublished 370,392 intermediate is preserved as provenance. Its octad
+exchange gains 16 over 370,376, then the individual star/root trade gains
+another 16. Independent reconstruction checks the actual old certificate,
+all coordinate-set deltas and all pair categories. Both intermediate and
+final audits have 16 corruption controls. `nonantipodal33/replay.py` checks
+the complete manifest and reruns every proof in a temporary directory.
+No global optimum, source-union optimum or worldwide priority is claimed.
+
+## Non-antipodal signed points: 7 November 32D continuation
 
 The current 32D bound is **352,992**, a gain of 160 over the reviewed 352,832
 repository certificate and 672 over the pinned Lin construction. The
@@ -104,6 +123,16 @@ The earlier 415,310-point 35D witness is retained and explicitly checked as
 history. No construction optimum or kissing-number optimum is claimed.
 
 ## Reproduction
+
+The current 33D package runs `nonantipodal33/replay.py`, which includes the
+scalar and coordinate checkers and the independent intermediate/final audits.
+The independent replay entry points are `nonantipodal33/independent_core.py`
+and `nonantipodal33/independent_audit.py`;
+`nonantipodal33/evidence/original_independent_core.py` and
+`nonantipodal33/evidence/original_independent_audit.py` are frozen provenance
+copies, not replay entry points.
+It preserves and rechecks the previous 370,376 certificate as the actual
+published control. See its README for the individual root/star convention.
 
 The current 32D package runs `nonantipodal32/replay.py`,
 `nonantipodal32/verify_coordinates.py`, `nonantipodal32/independent_audit.py`

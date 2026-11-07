@@ -25,8 +25,8 @@ research/**/data/*.log whitespace=-blank-at-eol
 research/partial_orbits_20261104/evidence/*.log whitespace=-blank-at-eol
 research/compute19_21_20261104/diagnostics/*.search whitespace=-blank-at-eof
 
-# Census refreshed 2026-11-07 after adding the 32D 352,992 non-antipodal verification package.
-# NOTE: this tree contains BOTH line endings -- 2195 text files use LF and 246 use CRLF,
+# Census refreshed 2026-11-07 after adding the 33D 370,408 non-antipodal verification package.
+# NOTE: this tree contains BOTH line endings -- 2215 text files use LF and 247 use CRLF,
 # an artefact of two write paths used while the repository was assembled.  No SOURCE OR
 # DOCUMENTATION file mixes them within itself.  Both statements are about the ten extensions
 # audit.py check 5k opens -- .py .md .txt .cff .json .tex .bib .yml .cfg .out -- and that is
@@ -57,3 +57,6 @@ research/compute19_21_20261104/diagnostics/*.search whitespace=-blank-at-eof
 # Preserve the exact historical control and fetched comparison snapshot in the 32D package.
 verifications/improved/dim32-35-signed-layers/exceptional32/control32_352800.json whitespace=cr-at-eol
 verifications/improved/dim32-35-signed-layers/exceptional32/evidence/public_results.txt whitespace=-blank-at-eof
+
+# Preserve the exact historical 33D baseline copied into the self-contained package.
+verifications/improved/dim32-35-signed-layers/nonantipodal33/sources/certificate33_370368.json whitespace=cr-at-eol

@@ -425,6 +425,7 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim3
                 _old_total = json.load(_old_stream)['points']
             add(_dimension, _old_total, _package, 'source/%s/verify.py: retained historical certificate' % _family)
     if _package == 'dim32-35-signed-layers':
+        add(33, 370376, _package, 'root_trades/verify.py: retained 28 October root-star certificate')
         add(34, 390990, _package, 'root_trades/verify.py: retained 28 October root-star certificate')
         add(32, 352832, _package, 'exceptional32/replay.py: retained 7 November antipodal certificate')
     if _package == 'dim39-deformed-orbits':
@@ -2056,6 +2057,8 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append('')
+    out.append('The 7 November 33D non-antipodal continuation gives 370408, a gain of 32 over the actual published 370376 repository certificate and 168 over the pinned Lin construction. Its 131072 dense points, 1837 full-even octad layers, 2064 individual exceptional octads, 1956 retained roots and 180 individual stars have squared norm 32 and ordinary inner products at most 16. Exactly 500 points lack antipodes. The unpublished 370392 intermediate gains 16 by octad replacement; the final star/root trade gains another 16. Independent exact geometry, source and coordinate-set deltas, rank 33, two sets of 16 corruption controls and complete manifests are replayed without a solver. No worldwide-priority, source-union optimum or global-optimality claim is made. All prior certificates, other dimension bounds, the paper and workflows remain unchanged.')
     out.append('')
     out.append('The 7 November non-antipodal signed-point continuation gives 352992 in 32D (+160 over the reviewed 352832 repository certificate and +672 over the pinned Lin result). Two independent implementations reconstruct the configuration and cover every pair category; the audit checks all 1662576 exceptional pairs by scalar-mask and int64 coordinate arithmetic. Its 1824 explicit exceptional points occupy 29 supports, and 380 points lack antipodes. Fourteen semantic controls and a hash-corruption control guard the individual-point interpretation. The preceding fixed-25-support capacity proof does not apply to this new witness. No global optimality or worldwide-priority claim is made. Historical certificates and the manuscript are unchanged.')
     out.append("")
