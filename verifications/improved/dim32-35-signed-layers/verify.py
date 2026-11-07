@@ -1,10 +1,17 @@
 """Replay two independent exact proofs for every current configuration."""
 from pathlib import Path
-import json,shutil,sys,tempfile
+import json,os,shutil,subprocess,sys,tempfile
 ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT.parents[2]/'common'))
-from checkpoint import check_manifest,temporary_source,replay
+from checkpoint import check_manifest,temporary_source
 from final import results
+
+def replay(source, script):
+    # Respect the one-thread proof budget without changing other packages.
+    path=Path(source)/script
+    env=dict(os.environ,OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',MKL_NUM_THREADS='1',NUMEXPR_NUM_THREADS='1')
+    subprocess.run([sys.executable,'-B',str(path)],cwd=path.parent,env=env,check=True)
+
 
 if __name__=='__main__':
     check_manifest(ROOT)
@@ -51,5 +58,7 @@ if __name__=='__main__':
         shutil.copytree(ROOT/'exceptional32',current,ignore=shutil.ignore_patterns('__pycache__'))
         replay(current,'replay.py')
         report=json.loads((current/'report.json').read_text())
-        assert report['status']=='PASS' and report['certificate_audit']['total']==expected[32]==352832
+        assert report['status']=='PASS' and report['certificate_audit']['total']==352832  # retained history
+    assert expected[32]==352992
+    replay(ROOT/'nonantipodal32','replay.py')
     print(json.dumps(dict(status='PASS',results=[dict(dimension=d,total=n) for d,n in sorted(expected.items())])))

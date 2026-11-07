@@ -1,0 +1,28 @@
+[
+  {
+    "certificate_file": "certificate32_352992_explicit.json",
+    "certificate_sha256": "a21b8ee4086cdbbc90651bcab378b888d0c3f10643aa0d63b5d208cafe471d1a",
+    "dimension": 32,
+    "verified_points": 352992,
+    "expanded_middle_points": 219936,
+    "expanded_roots": 1984,
+    "expanded_dense_points": 131072,
+    "expanded_heads": 0,
+    "exceptional_cross_dot_products": 146396,
+    "mixed_norm_checks": null,
+    "all_checks_pass": true
+  },
+  {
+    "certificate_file": "certificate32_352992_fixed_body_explicit.json",
+    "certificate_sha256": "ab06963895d074d8dd6162bea2298796391dc876330ae997a5324adfb6638c5e",
+    "dimension": 32,
+    "verified_points": 352992,
+    "expanded_middle_points": 219936,
+    "expanded_roots": 1984,
+    "expanded_dense_points": 131072,
+    "expanded_heads": 0,
+    "exceptional_cross_dot_products": 146396,
+    "mixed_norm_checks": null,
+    "all_checks_pass": true
+  }
+]

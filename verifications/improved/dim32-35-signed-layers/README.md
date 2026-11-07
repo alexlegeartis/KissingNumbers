@@ -5,7 +5,7 @@ exact verification routes.
 
 | Dimension | Previous reviewed bound | This construction | Added points | Previous method |
 |---|---:|---:|---:|---|
-| 32 | 352,320 | **352,832** | **512** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-number-32) |
+| 32 | 352,320 | **352,992** | **672** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-number-32) |
 | 33 | 370,240 | **370,376** | **136** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
 | 34 | 390,980 | **390,992** | **12** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
 | 35 | 415,308 | **415,334** | **26** | [Lin's support code and ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) |
@@ -15,9 +15,25 @@ The preceding constructions use 1,713, 1,852, 2,013 and 2,202 supports from
 Their counts are 131,072 + 128 M + 2n(n−1). This is the gain over those public
 witnesses. A complete new retrieval of Cohn's table was unavailable.
 
-## Exceptional signed octads: 7 November continuation
+## Non-antipodal signed points: 7 November continuation
 
-The 32D bound is now **352,832**, 32 above the preceding repository certificate
+The current 32D bound is **352,992**, a gain of 160 over the reviewed 352,832
+repository certificate and 672 over the pinned Lin construction. The
+[self-contained continuation package](nonantipodal32/README.md) keeps all
+1,704 full-even layers and replaces the exceptional set by 1,824 individual
+signed points on 29 supports. Exactly 380 points lack antipodes. Two independent
+implementations verify every pair category; the audit checks every exceptional
+pair both by scalar masks and int64 coordinates. Fourteen semantic controls and
+one hash-corruption control protect the explicit-point interpretation.
+
+The preceding fixed-25-support capacity bound does not apply to this new
+29-support set. Its 14 affine and 15 nonlinear fibers are properties of this
+witness, not a necessity theorem. No worldwide-priority or global-optimality
+claim is made. Every preceding certificate and its proof remain unchanged.
+
+## Historical antipodal signed octads: earlier 7 November continuation
+
+The preceding 32D bound was **352,832**, 32 above the preceding repository certificate
 and 512 above the pinned Lin construction. [The new self-contained proof](exceptional32/README.md)
 replaces 380 exceptional points with 412 on the same 25 supports. Every other
 layer remains unchanged. Three exact routes cover all pair categories; the
@@ -88,6 +104,13 @@ The earlier 415,310-point 35D witness is retained and explicitly checked as
 history. No construction optimum or kissing-number optimum is claimed.
 
 ## Reproduction
+
+The current 32D package runs `nonantipodal32/replay.py`,
+`nonantipodal32/verify_coordinates.py`, `nonantipodal32/independent_audit.py`
+and `nonantipodal32/verify_fibers.py`. Its
+`nonantipodal32/evidence/original_independent_audit.py` is a frozen provenance
+copy, not a replay entry point. See that package's README for its standalone
+command, individual-point schema and complete proof.
 
 ```bash
 python final.py

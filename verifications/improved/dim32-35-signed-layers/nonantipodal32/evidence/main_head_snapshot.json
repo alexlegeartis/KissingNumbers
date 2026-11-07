@@ -1,0 +1,8 @@
+{
+  "read_at_utc": "2026-11-07T12:45:55.597Z",
+  "queried_ref": "main",
+  "sha": "2017d94a57a564382ec8549f3f4592944f6bd5a6",
+  "display_url": "https://github.com/alexlegeartis/KissingNumbers/commit/2017d94a57a564382ec8549f3f4592944f6bd5a6",
+  "title": "Improve 32D lower bound to 352,832 with exact independent proofs [skip ci]\n\nReplace 380 exceptional signed-octad points with 412 on the same 25 supports, gaining 32 over the reviewed 352,800-point repository certificate. Add the frozen witness, three exact proof routes, full coordinate reconstruction, independent corruption controls, exact delta replay and the limited 25-support capacity proof. Record pinned repository and Lin comparisons without asserting worldwide priority.\n\nUpdate record tables and isolated replay integration. Preserve every historical certificate, all other dimension bounds, the manuscript and workflows.",
+  "commit_message": "Improve 32D lower bound to 352,832 with exact independent proofs [skip ci]\n\nReplace 380 exceptional signed-octad points with 412 on the same 25 supports, gaining 32 over the reviewed 352,800-point repository certificate. Add the frozen witness, three exact proof routes, full coordinate reconstruction, independent corruption controls, exact delta replay and the limited 25-support capacity proof. Record pinned repository and Lin comparisons without asserting worldwide priority.\n\nUpdate record tables and isolated replay integration. Preserve every historical certificate, all other dimension bounds, the manuscript and workflows."
+}

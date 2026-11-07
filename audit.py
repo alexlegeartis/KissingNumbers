@@ -426,6 +426,7 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim3
             add(_dimension, _old_total, _package, 'source/%s/verify.py: retained historical certificate' % _family)
     if _package == 'dim32-35-signed-layers':
         add(34, 390990, _package, 'root_trades/verify.py: retained 28 October root-star certificate')
+        add(32, 352832, _package, 'exceptional32/replay.py: retained 7 November antipodal certificate')
     if _package == 'dim39-deformed-orbits':
         add(39, 769180, _package, 'source/verify.py: retained historical 256-element orbit certificate')
     if _package == 'dim38-joint-latitudes':
@@ -2056,7 +2057,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append('')
-    out.append('The 7 November exceptional-sign continuation gives 352832 in 32D (+32 over the reviewed repository certificate and +512 over the pinned Lin result). All 352832 integer vectors are reconstructed; three exact verification routes cover every pair category, including 1383616 direct exceptional pairs. The same 25 exceptional supports attain their exact limited-source capacity of 1664. No global optimality or worldwide-priority claim is made. Historical certificates and the manuscript are unchanged.')
+    out.append('The 7 November non-antipodal signed-point continuation gives 352992 in 32D (+160 over the reviewed 352832 repository certificate and +672 over the pinned Lin result). Two independent implementations reconstruct the configuration and cover every pair category; the audit checks all 1662576 exceptional pairs by scalar-mask and int64 coordinate arithmetic. Its 1824 explicit exceptional points occupy 29 supports, and 380 points lack antipodes. Fourteen semantic controls and a hash-corruption control guard the individual-point interpretation. The preceding fixed-25-support capacity proof does not apply to this new witness. No global optimality or worldwide-priority claim is made. Historical certificates and the manuscript are unchanged.')
     out.append("")
     out.append('The 6 November rational heavy-head rotation gives 390992 in 34D (+2 over the preceding 390990 certificate). A changed dense coordinate placement and star parity permit shared root deletion and restore two roots. Two independent exact proofs check all finite layers, uniqueness and rank 34; common scaling gives squared integer norm 5780000 and product bound 2890000. Historical constructions and the manuscript are unchanged.')
     out.append('')

@@ -1,0 +1,19 @@
+{
+  "review_date_utc": "2026-11-07",
+  "repository": {
+    "url": "https://github.com/alexlegeartis/KissingNumbers/commit/2017d94a57a564382ec8549f3f4592944f6bd5a6",
+    "commit": "2017d94a57a564382ec8549f3f4592944f6bd5a6",
+    "points": 352832,
+    "certificate_sha256": "69c3f368a4aae5956ca75a8569f761224148831e8a85edd5972a0b3b057af646",
+    "gain": 160
+  },
+  "lin": {
+    "url": "https://github.com/QH-Lin/kissing-number-32/tree/f367a9c5a051c0d6821ce71324b9dfa1ead76c2e",
+    "commit": "f367a9c5a051c0d6821ce71324b9dfa1ead76c2e",
+    "points": 352320,
+    "gain": 672
+  },
+  "new_points": 352992,
+  "cohn": "Fresh retrieval unavailable in the preceding review; not re-fetched by the independent audit.",
+  "scope": "Explicit lower-bound construction and comparisons to these pinned sources only. No worldwide-priority or global-optimality claim. The preceding 25-support capacity bound does not apply to this 29-support witness."
+}

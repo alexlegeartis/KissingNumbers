@@ -1,0 +1,215 @@
+{
+  "certificate_file": "certificate32_352992_fixed_body_explicit.json",
+  "certificate_sha256": "ab06963895d074d8dd6162bea2298796391dc876330ae997a5324adfb6638c5e",
+  "points": 1824,
+  "supports": 29,
+  "missing_antipodes": 380,
+  "affine_fibers": 14,
+  "nonlinear_fibers": 15,
+  "partial_antipodality_fibers": 15,
+  "fibers": [
+    {
+      "support": 142084232,
+      "size": 64,
+      "missing_antipodes": 0,
+      "translation_kernel_size": 64,
+      "affine": true
+    },
+    {
+      "support": 142637192,
+      "size": 64,
+      "missing_antipodes": 16,
+      "translation_kernel_size": 8,
+      "affine": false
+    },
+    {
+      "support": 143099912,
+      "size": 64,
+      "missing_antipodes": 0,
+      "translation_kernel_size": 64,
+      "affine": true
+    },
+    {
+      "support": 143163527,
+      "size": 32,
+      "missing_antipodes": 16,
+      "translation_kernel_size": 8,
+      "affine": false
+    },
+    {
+      "support": 143165312,
+      "size": 64,
+      "missing_antipodes": 0,
+      "translation_kernel_size": 64,
+      "affine": true
+    },
+    {
+      "support": 143165552,
+      "size": 64,
+      "missing_antipodes": 0,
+      "translation_kernel_size": 64,
+      "affine": true
+    },
+    {
+      "support": 146047490,
+      "size": 128,
+      "missing_antipodes": 0,
+      "translation_kernel_size": 128,
+      "affine": true
+    },
+    {
+      "support": 2013792392,
+      "size": 64,
+      "missing_antipodes": 0,
+      "translation_kernel_size": 64,
+      "affine": true
+    },
+    {
+      "support": 2021687432,
+      "size": 64,
+      "missing_antipodes": 32,
+      "translation_kernel_size": 4,
+      "affine": false
+    },
+    {
+      "support": 2022213632,
+      "size": 32,
+      "missing_antipodes": 16,
+      "translation_kernel_size": 2,
+      "affine": false
+    },
+    {
+      "support": 2148042872,
+      "size": 64,
+      "missing_antipodes": 0,
+      "translation_kernel_size": 64,
+      "affine": true
+    },
+    {
+      "support": 2155906952,
+      "size": 64,
+      "missing_antipodes": 0,
+      "translation_kernel_size": 64,
+      "affine": true
+    },
+    {
+      "support": 2156333192,
+      "size": 64,
+      "missing_antipodes": 0,
+      "translation_kernel_size": 64,
+      "affine": true
+    },
+    {
+      "support": 2156431367,
+      "size": 64,
+      "missing_antipodes": 32,
+      "translation_kernel_size": 16,
+      "affine": false
+    },
+    {
+      "support": 2265450632,
+      "size": 64,
+      "missing_antipodes": 48,
+      "translation_kernel_size": 8,
+      "affine": false
+    },
+    {
+      "support": 2273347592,
+      "size": 64,
+      "missing_antipodes": 32,
+      "translation_kernel_size": 16,
+      "affine": false
+    },
+    {
+      "support": 2273869952,
+      "size": 64,
+      "missing_antipodes": 16,
+      "translation_kernel_size": 8,
+      "affine": false
+    },
+    {
+      "support": 2282193032,
+      "size": 64,
+      "missing_antipodes": 0,
+      "translation_kernel_size": 64,
+      "affine": true
+    },
+    {
+      "support": 2282227592,
+      "size": 64,
+      "missing_antipodes": 0,
+      "translation_kernel_size": 64,
+      "affine": true
+    },
+    {
+      "support": 2282227847,
+      "size": 64,
+      "missing_antipodes": 32,
+      "translation_kernel_size": 16,
+      "affine": false
+    },
+    {
+      "support": 2282256392,
+      "size": 64,
+      "missing_antipodes": 32,
+      "translation_kernel_size": 4,
+      "affine": false
+    },
+    {
+      "support": 2289076232,
+      "size": 64,
+      "missing_antipodes": 32,
+      "translation_kernel_size": 4,
+      "affine": false
+    },
+    {
+      "support": 2289598592,
+      "size": 64,
+      "missing_antipodes": 32,
+      "translation_kernel_size": 4,
+      "affine": false
+    },
+    {
+      "support": 2290092152,
+      "size": 64,
+      "missing_antipodes": 0,
+      "translation_kernel_size": 64,
+      "affine": true
+    },
+    {
+      "support": 2290124931,
+      "size": 38,
+      "missing_antipodes": 18,
+      "translation_kernel_size": 1,
+      "affine": false
+    },
+    {
+      "support": 2290452608,
+      "size": 58,
+      "missing_antipodes": 2,
+      "translation_kernel_size": 2,
+      "affine": false
+    },
+    {
+      "support": 2290643072,
+      "size": 64,
+      "missing_antipodes": 24,
+      "translation_kernel_size": 4,
+      "affine": false
+    },
+    {
+      "support": 2290647144,
+      "size": 64,
+      "missing_antipodes": 0,
+      "translation_kernel_size": 64,
+      "affine": true
+    },
+    {
+      "support": 2290648584,
+      "size": 64,
+      "missing_antipodes": 0,
+      "translation_kernel_size": 64,
+      "affine": true
+    }
+  ]
+}

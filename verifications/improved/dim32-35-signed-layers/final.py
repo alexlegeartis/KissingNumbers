@@ -33,6 +33,15 @@ def results():
             assert now['full_even_supports']==c['full_even_supports']
             total=(1<<17)+128*len(now['full_even_supports'])+2*len(now['exceptional_antipodal_lines'])+2*d*(d-1)
             assert total==now['points']==352832
+            current=ROOT/'nonantipodal32/certificate32_352992_fixed_body_explicit.json'
+            assert hashlib.sha256(current.read_bytes()).hexdigest()=='ab06963895d074d8dd6162bea2298796391dc876330ae997a5324adfb6638c5e'
+            explicit=json.loads(current.read_bytes())
+            assert explicit['dimension']==32 and explicit['format']=='signed_octad_kissing_explicit_v1'
+            assert explicit['dense_generator']==now['dense_generator']
+            assert explicit['full_even_supports']==now['full_even_supports']
+            assert 'exceptional_antipodal_lines' not in explicit
+            total=(1<<17)+128*len(explicit['full_even_supports'])+len(explicit['exceptional_signed_points'])+2*d*(d-1)
+            assert total==explicit['points']==352992
         if d in (33,34,35):
             trade=json.loads((ROOT/'root_trades'/('certificate%d.json'%d)).read_text())
             assert trade['format']=='root_star_trade_v1' and trade['dimension']==d

@@ -1,0 +1,615 @@
+{
+  "status": "PASS",
+  "source_files": {
+    "fixed_body": {
+      "path": "certificate32_352992_fixed_body_explicit.json",
+      "sha256": "ab06963895d074d8dd6162bea2298796391dc876330ae997a5324adfb6638c5e",
+      "bytes": 110854
+    },
+    "discovery": {
+      "path": "certificate32_352992_explicit.json",
+      "sha256": "a21b8ee4086cdbbc90651bcab378b888d0c3f10643aa0d63b5d208cafe471d1a",
+      "bytes": 128143
+    },
+    "baseline": {
+      "path": "certificate32_352832.json",
+      "sha256": "69c3f368a4aae5956ca75a8569f761224148831e8a85edd5972a0b3b057af646",
+      "bytes": 64553
+    },
+    "delta": {
+      "path": "fixed_body_delta.json",
+      "sha256": "4ee5f24fa852acda415028c4e4c6ec974b1225271428cdb858134eead4f7d37d",
+      "bytes": 147079
+    }
+  },
+  "audit_script_sha256": "809f04d59a879df1b058461d95cc74703c72cf8db0853ddfdca8f9be5f648565",
+  "certificates": {
+    "fixed_body": {
+      "format": "signed_octad_kissing_explicit_v1",
+      "counts": {
+        "dense": 131072,
+        "full_even": 218112,
+        "exceptional": 1824,
+        "roots": 1984
+      },
+      "total": 352992,
+      "dense_generator_rank": 17,
+      "dense_words_enumerated": 131072,
+      "dense_minimum_distance": 8,
+      "dense_weight_distribution": {
+        "0": 1,
+        "8": 908,
+        "10": 3328,
+        "12": 14784,
+        "14": 27392,
+        "16": 38246,
+        "18": 27392,
+        "20": 14784,
+        "22": 3328,
+        "24": 908,
+        "32": 1
+      },
+      "full_support_count": 1704,
+      "exceptional_support_count": 29,
+      "full_full_support_intersection_histogram": {
+        "0": 116158,
+        "1": 330639,
+        "2": 621333,
+        "3": 203174,
+        "4": 179652
+      },
+      "full_exceptional_support_intersection_histogram": {
+        "0": 3731,
+        "1": 11837,
+        "2": 20290,
+        "3": 8244,
+        "4": 5314
+      },
+      "full_same_support_pattern_pair_histogram": {
+        "-32": 64,
+        "-16": 1792,
+        "0": 4480,
+        "16": 1792
+      },
+      "exceptional_pair_count_checked_twice": 1662576,
+      "exceptional_pair_product_histogram": {
+        "-32": 722,
+        "-24": 768,
+        "-16": 64446,
+        "-12": 75264,
+        "-8": 233312,
+        "-4": 233984,
+        "0": 446836,
+        "4": 233984,
+        "8": 232212,
+        "12": 75264,
+        "16": 65784
+      },
+      "exceptional_signed_parity_histogram": {
+        "0": 832,
+        "1": 992
+      },
+      "exceptional_support_population_histogram": {
+        "32": 2,
+        "38": 1,
+        "58": 1,
+        "64": 24,
+        "128": 1
+      },
+      "exceptional_paired_points": 1444,
+      "exceptional_antipodal_pairs": 722,
+      "exceptional_unpaired_points": 380,
+      "non_antipodal_negative_product_witness": {
+        "i": 100,
+        "j": 90,
+        "point_i": [
+          142637192,
+          134226048
+        ],
+        "point_j": [
+          142637192,
+          8409096
+        ],
+        "dot": -24
+      },
+      "root_pair_count": 1967136,
+      "root_pair_product_histogram": {
+        "-32": 992,
+        "-16": 119040,
+        "0": 1728064,
+        "16": 119040
+      },
+      "pair_category_bounds": {
+        "dense/dense": {
+          "upper_bound": 16,
+          "reason": "Binary linear differences range over the exhaustively enumerated nonzero codewords."
+        },
+        "dense/full": {
+          "upper_bound": 16,
+          "reason": "Eight products of magnitude 2."
+        },
+        "dense/exceptional": {
+          "upper_bound": 16,
+          "reason": "Eight products of magnitude 2, independently of signs or parity."
+        },
+        "dense/root": {
+          "upper_bound": 8,
+          "reason": "Two products of magnitude 4."
+        },
+        "full/full": {
+          "upper_bound": 16,
+          "reason": "Same support: exact 128-pattern Gram; different supports: every overlap at most 4, each contribution magnitude 4."
+        },
+        "full/exceptional": {
+          "upper_bound": 16,
+          "reason": "Every support overlap checked at most 4, each contribution magnitude 4."
+        },
+        "full/root": {
+          "upper_bound": 16,
+          "reason": "At most two products of magnitude 8."
+        },
+        "exceptional/exceptional": {
+          "upper_bound": 16,
+          "reason": "Every unordered pair checked by scalar signed masks and independently by int64 coordinate products."
+        },
+        "exceptional/root": {
+          "upper_bound": 16,
+          "reason": "At most two products of magnitude 8."
+        },
+        "root/root": {
+          "upper_bound": 16,
+          "reason": "Every unordered pair checked in int64 coordinates."
+        }
+      },
+      "squared_norm": 32,
+      "maximum_distinct_pair_product": 16,
+      "minimum_squared_distance": 32,
+      "pair_scope": "Complete proof by all ten pair categories, not a full-configuration brute-force Gram sweep.",
+      "materialized_rows": 352992,
+      "materialized_distinct_rows": 352992,
+      "materialized_global_unpaired_points": 380,
+      "coordinates_sha256_int8_rowmajor": "50257ab21fa21ed92eee3048009ddb8d468d6bb9adcd58d58ae60bfae0db1994",
+      "coordinate_order": "Dense Gray-generator order; full support file order and lexicographic (-2,+2) even patterns; explicit file order (legacy line then antipode); roots lexicographic coordinates and (-4,+4) signs."
+    },
+    "discovery": {
+      "format": "signed_octad_kissing_explicit_v1",
+      "counts": {
+        "dense": 131072,
+        "full_even": 217728,
+        "exceptional": 2208,
+        "roots": 1984
+      },
+      "total": 352992,
+      "dense_generator_rank": 17,
+      "dense_words_enumerated": 131072,
+      "dense_minimum_distance": 8,
+      "dense_weight_distribution": {
+        "0": 1,
+        "8": 908,
+        "10": 3328,
+        "12": 14784,
+        "14": 27392,
+        "16": 38246,
+        "18": 27392,
+        "20": 14784,
+        "22": 3328,
+        "24": 908,
+        "32": 1
+      },
+      "full_support_count": 1701,
+      "exceptional_support_count": 32,
+      "full_full_support_intersection_histogram": {
+        "0": 115853,
+        "1": 329346,
+        "2": 619369,
+        "3": 202031,
+        "4": 179251
+      },
+      "full_exceptional_support_intersection_histogram": {
+        "0": 4036,
+        "1": 13121,
+        "2": 22230,
+        "3": 9362,
+        "4": 5683
+      },
+      "full_same_support_pattern_pair_histogram": {
+        "-32": 64,
+        "-16": 1792,
+        "0": 4480,
+        "16": 1792
+      },
+      "exceptional_pair_count_checked_twice": 2436528,
+      "exceptional_pair_product_histogram": {
+        "-32": 914,
+        "-24": 768,
+        "-16": 86974,
+        "-12": 100864,
+        "-8": 344928,
+        "-4": 359936,
+        "0": 649204,
+        "4": 359936,
+        "8": 343828,
+        "12": 100864,
+        "16": 88312
+      },
+      "exceptional_signed_parity_histogram": {
+        "0": 1088,
+        "1": 1120
+      },
+      "exceptional_support_population_histogram": {
+        "32": 2,
+        "38": 1,
+        "58": 1,
+        "64": 24,
+        "128": 4
+      },
+      "exceptional_paired_points": 1828,
+      "exceptional_antipodal_pairs": 914,
+      "exceptional_unpaired_points": 380,
+      "non_antipodal_negative_product_witness": {
+        "i": 100,
+        "j": 90,
+        "point_i": [
+          142637192,
+          134226048
+        ],
+        "point_j": [
+          142637192,
+          8409096
+        ],
+        "dot": -24
+      },
+      "root_pair_count": 1967136,
+      "root_pair_product_histogram": {
+        "-32": 992,
+        "-16": 119040,
+        "0": 1728064,
+        "16": 119040
+      },
+      "pair_category_bounds": {
+        "dense/dense": {
+          "upper_bound": 16,
+          "reason": "Binary linear differences range over the exhaustively enumerated nonzero codewords."
+        },
+        "dense/full": {
+          "upper_bound": 16,
+          "reason": "Eight products of magnitude 2."
+        },
+        "dense/exceptional": {
+          "upper_bound": 16,
+          "reason": "Eight products of magnitude 2, independently of signs or parity."
+        },
+        "dense/root": {
+          "upper_bound": 8,
+          "reason": "Two products of magnitude 4."
+        },
+        "full/full": {
+          "upper_bound": 16,
+          "reason": "Same support: exact 128-pattern Gram; different supports: every overlap at most 4, each contribution magnitude 4."
+        },
+        "full/exceptional": {
+          "upper_bound": 16,
+          "reason": "Every support overlap checked at most 4, each contribution magnitude 4."
+        },
+        "full/root": {
+          "upper_bound": 16,
+          "reason": "At most two products of magnitude 8."
+        },
+        "exceptional/exceptional": {
+          "upper_bound": 16,
+          "reason": "Every unordered pair checked by scalar signed masks and independently by int64 coordinate products."
+        },
+        "exceptional/root": {
+          "upper_bound": 16,
+          "reason": "At most two products of magnitude 8."
+        },
+        "root/root": {
+          "upper_bound": 16,
+          "reason": "Every unordered pair checked in int64 coordinates."
+        }
+      },
+      "squared_norm": 32,
+      "maximum_distinct_pair_product": 16,
+      "minimum_squared_distance": 32,
+      "pair_scope": "Complete proof by all ten pair categories, not a full-configuration brute-force Gram sweep.",
+      "materialized_rows": 352992,
+      "materialized_distinct_rows": 352992,
+      "materialized_global_unpaired_points": 380,
+      "coordinates_sha256_int8_rowmajor": "031d0ad973c3a2a300bc9d9bae9b25d62adb4cf604dfb055d4b1371986737803",
+      "coordinate_order": "Dense Gray-generator order; full support file order and lexicographic (-2,+2) even patterns; explicit file order (legacy line then antipode); roots lexicographic coordinates and (-4,+4) signs."
+    },
+    "baseline": {
+      "format": "signed_octad_kissing_v1",
+      "counts": {
+        "dense": 131072,
+        "full_even": 218112,
+        "exceptional": 1664,
+        "roots": 1984
+      },
+      "total": 352832,
+      "dense_generator_rank": 17,
+      "dense_words_enumerated": 131072,
+      "dense_minimum_distance": 8,
+      "dense_weight_distribution": {
+        "0": 1,
+        "8": 908,
+        "10": 3328,
+        "12": 14784,
+        "14": 27392,
+        "16": 38246,
+        "18": 27392,
+        "20": 14784,
+        "22": 3328,
+        "24": 908,
+        "32": 1
+      },
+      "full_support_count": 1704,
+      "exceptional_support_count": 25,
+      "full_full_support_intersection_histogram": {
+        "0": 116158,
+        "1": 330639,
+        "2": 621333,
+        "3": 203174,
+        "4": 179652
+      },
+      "full_exceptional_support_intersection_histogram": {
+        "0": 3237,
+        "1": 10227,
+        "2": 17392,
+        "3": 7148,
+        "4": 4596
+      },
+      "full_same_support_pattern_pair_histogram": {
+        "-32": 64,
+        "-16": 1792,
+        "0": 4480,
+        "16": 1792
+      },
+      "exceptional_pair_count_checked_twice": 1383616,
+      "exceptional_pair_product_histogram": {
+        "-32": 832,
+        "-16": 50368,
+        "-12": 70656,
+        "-8": 178432,
+        "-4": 209920,
+        "0": 364032,
+        "4": 209920,
+        "8": 178432,
+        "12": 70656,
+        "16": 50368
+      },
+      "exceptional_signed_parity_histogram": {
+        "0": 880,
+        "1": 784
+      },
+      "exceptional_support_population_histogram": {
+        "64": 24,
+        "128": 1
+      },
+      "exceptional_paired_points": 1664,
+      "exceptional_antipodal_pairs": 832,
+      "exceptional_unpaired_points": 0,
+      "non_antipodal_negative_product_witness": null,
+      "root_pair_count": 1967136,
+      "root_pair_product_histogram": {
+        "-32": 992,
+        "-16": 119040,
+        "0": 1728064,
+        "16": 119040
+      },
+      "pair_category_bounds": {
+        "dense/dense": {
+          "upper_bound": 16,
+          "reason": "Binary linear differences range over the exhaustively enumerated nonzero codewords."
+        },
+        "dense/full": {
+          "upper_bound": 16,
+          "reason": "Eight products of magnitude 2."
+        },
+        "dense/exceptional": {
+          "upper_bound": 16,
+          "reason": "Eight products of magnitude 2, independently of signs or parity."
+        },
+        "dense/root": {
+          "upper_bound": 8,
+          "reason": "Two products of magnitude 4."
+        },
+        "full/full": {
+          "upper_bound": 16,
+          "reason": "Same support: exact 128-pattern Gram; different supports: every overlap at most 4, each contribution magnitude 4."
+        },
+        "full/exceptional": {
+          "upper_bound": 16,
+          "reason": "Every support overlap checked at most 4, each contribution magnitude 4."
+        },
+        "full/root": {
+          "upper_bound": 16,
+          "reason": "At most two products of magnitude 8."
+        },
+        "exceptional/exceptional": {
+          "upper_bound": 16,
+          "reason": "Every unordered pair checked by scalar signed masks and independently by int64 coordinate products."
+        },
+        "exceptional/root": {
+          "upper_bound": 16,
+          "reason": "At most two products of magnitude 8."
+        },
+        "root/root": {
+          "upper_bound": 16,
+          "reason": "Every unordered pair checked in int64 coordinates."
+        }
+      },
+      "squared_norm": 32,
+      "maximum_distinct_pair_product": 16,
+      "minimum_squared_distance": 32,
+      "pair_scope": "Complete proof by all ten pair categories, not a full-configuration brute-force Gram sweep.",
+      "materialized_rows": 352832,
+      "materialized_distinct_rows": 352832,
+      "materialized_global_unpaired_points": 0,
+      "coordinates_sha256_int8_rowmajor": "2ac2d58ecffdacf159017a62281926a8516a90f6413e62aa8c4dc50fc8c8874d",
+      "coordinate_order": "Dense Gray-generator order; full support file order and lexicographic (-2,+2) even patterns; explicit file order (legacy line then antipode); roots lexicographic coordinates and (-4,+4) signs."
+    }
+  },
+  "delta": {
+    "baseline_exceptional_points": 1664,
+    "fixed_exceptional_points": 1824,
+    "removed_points": 1316,
+    "added_points": 1476,
+    "retained_points": 348,
+    "net_gain": 160,
+    "old_exceptional_supports": 25,
+    "new_exceptional_supports": 29,
+    "retained_exceptional_supports": 15,
+    "added_exceptional_supports": 14,
+    "removed_exceptional_supports": 10,
+    "dense_and_full_body_unchanged": true,
+    "advertised_delta_matches_exactly": true,
+    "discovery_normalization": {
+      "same_count_not_same_coordinate_set": true,
+      "three_recovered_supports": [
+        310921256,
+        612898888,
+        1099442200
+      ],
+      "odd_to_even_support": 1099442200,
+      "removed_odd_points": 128,
+      "added_even_points": 128
+    }
+  },
+  "negative_controls": [
+    {
+      "name": "duplicate explicit point",
+      "rejected": true,
+      "reason": "duplicate exceptional point"
+    },
+    {
+      "name": "wrong declared point count",
+      "rejected": true,
+      "reason": "claimed total"
+    },
+    {
+      "name": "zero dense generator row",
+      "rejected": true,
+      "reason": "dense generator rank"
+    },
+    {
+      "name": "weight-one dense generator",
+      "rejected": true,
+      "reason": "dense minimum distance"
+    },
+    {
+      "name": "out-of-range generator mask",
+      "rejected": true,
+      "reason": "dense generator shape"
+    },
+    {
+      "name": "invalid explicit support weight",
+      "rejected": true,
+      "reason": "exceptional support mask"
+    },
+    {
+      "name": "explicit negative bit outside support",
+      "rejected": true,
+      "reason": "exceptional negative mask"
+    },
+    {
+      "name": "out-of-range explicit support",
+      "rejected": true,
+      "reason": "exceptional support mask"
+    },
+    {
+      "name": "duplicate full layer",
+      "rejected": true,
+      "reason": "duplicate full support"
+    },
+    {
+      "name": "new full support with overlap seven",
+      "rejected": true,
+      "reason": "full/full overlap"
+    },
+    {
+      "name": "explicit support reused as a full layer",
+      "rejected": true,
+      "reason": "full/exceptional overlap"
+    },
+    {
+      "name": "actual nonduplicate incompatible sign corruption",
+      "rejected": true,
+      "reason": "exceptional ordinary product",
+      "witness": {
+        "replaced_index": 0,
+        "replacement": [
+          142084232,
+          128
+        ],
+        "other_index": 1,
+        "other_point": [
+          142084232,
+          2176
+        ],
+        "dot": 24
+      }
+    },
+    {
+      "name": "adding a missing antipode is invalid",
+      "rejected": true,
+      "reason": "exceptional ordinary product",
+      "witness": {
+        "valid_point": [
+          142637192,
+          8200
+        ],
+        "other_valid_point": [
+          142637192,
+          142626944
+        ],
+        "original_dot": -24,
+        "missing_antipode": [
+          142637192,
+          142628992
+        ],
+        "new_dot": 24
+      }
+    },
+    {
+      "name": "absolute-product rule would falsely reject a valid non-antipodal pair",
+      "valid_ordinary_product": -24,
+      "incorrect_absolute_product": 24,
+      "threshold": 16,
+      "witness": {
+        "valid_point": [
+          142637192,
+          8200
+        ],
+        "other_valid_point": [
+          142637192,
+          142626944
+        ],
+        "original_dot": -24,
+        "missing_antipode": [
+          142637192,
+          142628992
+        ],
+        "new_dot": 24
+      },
+      "demonstrated": true
+    }
+  ],
+  "independence": "New standalone implementation. No producer search/verifier functions or prior checker functions are imported or called. An earlier independent audit was read only for format context.",
+  "scientific_scope": "Both 352992-point configurations are proved valid kissing configurations in R^32; each is a constructive lower bound, not an optimality proof. Exact comparisons to the frozen 352832 certificate are established. No worldwide-priority claim.",
+  "limitations": "Pair-category proof rather than a 62-billion-pair full Gram sweep. NumPy int64 products and Python exact integers are used; arithmetic magnitudes are at most 32. No external theorem about a lattice minimum/population is assumed. Public-source freshness is recorded separately.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "cpu_affinity": [
+      5
+    ],
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  },
+  "elapsed_seconds": 8.32917291400372
+}
