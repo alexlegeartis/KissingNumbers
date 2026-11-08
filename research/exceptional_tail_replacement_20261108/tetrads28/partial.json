@@ -1,0 +1,29 @@
+[
+  {
+    "tail_start": 0,
+    "tails": 8,
+    "tested": 1360128,
+    "retained": 788,
+    "new": 500,
+    "zero_blockers": 0,
+    "seconds": 9.124738594000064
+  },
+  {
+    "tail_start": 8,
+    "tails": 8,
+    "tested": 1360128,
+    "retained": 784,
+    "new": 504,
+    "zero_blockers": 0,
+    "seconds": 18.184447578000118
+  },
+  {
+    "tail_start": 16,
+    "tails": 8,
+    "tested": 1360128,
+    "retained": 1196,
+    "new": 844,
+    "zero_blockers": 0,
+    "seconds": 27.185075218000065
+  }
+]

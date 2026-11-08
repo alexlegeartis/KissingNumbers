@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 97 scripts, including large exact certificate replays
-    python run_all.py --full       # 116 scripts, budget about 10 hours
+    python run_all.py              # 98 scripts, including large exact certificate replays
+    python run_all.py --full       # 117 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -194,6 +194,8 @@ JOBS = [
      os.path.join(V, 'improved', 'dim61-68-95-96-code-layers'), ['verify.py'], 5.0, True),
     ("dims 26-31: residual completions, full independent exact replay",
      os.path.join(V, 'improved', 'dim26-31-residual-completions'), ['verify.py'], 30.0, True),
+    ("dim31: latitude-contact exchange, two complete exact coordinate proofs",
+     os.path.join(V, 'improved', 'dim31-latitude-contact-exchange'), ['verify.py'], 4.0, True),
     ("dims 27,31: algebraic completion, full geometry and direct integer checks",
      os.path.join(V, 'improved', 'dim27-31-algebraic-completion'), ['verify.py'], 3.0, True),
     ("dims 27-31: joint refills, complete exact geometry and direct integer checks",
@@ -393,6 +395,7 @@ def _sota_jobs(quick=False):
         ('dim54-59-p48-coverage', ('verify.py',)),
         ('dim60-antipodal840-lift', ('verify.py',)),
         ('common', ('capalgebra.py',)),
+        ('dim31-latitude-contact-exchange', ('verify.py',)),
         ('dim27-31-algebraic-completion', ('verify.py',)),
         ('dim27-31-joint-refills', ('verify.py',)),
         ('dim26-30-asymmetric-exchanges', ('verify.py',)),
@@ -485,6 +488,7 @@ def _sota_coverage(jobs, results=None):
         ('dim49-60-p48-pointwise-refill', list(range(49,61)), [('verify.py',)], 'two exact head proofs; every added pair and full-coordinate ownership; complete direction and pole checks; published P48 minimum/population'),
         ('dim54-59-p48-coverage', list(range(54,60)), [('verify.py',)], 'exact root/quadratic tails, 7783-line base, class isometries and full-coordinate disjointness; published P48 minimum/population'),
         ('dim60-antipodal840-lift', [60], [('verify.py',)], 'exact 840-direction and 841-pole pairs, 7783-line base, 420 isometries and full-coordinate disjointness; inherited published P48 minimum and shell population'),
+        ('dim31-latitude-contact-exchange', [31], [('verify.py',)], 'two independent complete pair enumerations: bounded exact integer BLAS and direct integer all-pairs without antipodal compression; full reconstruction and rejection controls; no inherited geometric assumptions'),
         ('dim27-31-algebraic-completion', [27,31], [('verify.py',)], 'all norms, distinctness and unordered pairs in complete explicit coordinates; independent direct-int64 changed pairs; no lattice or population assumptions'),
         ('dim27-31-joint-refills', [27, 28, 29, 30, 31], [('verify.py',)], 'all norms and all unordered point pairs; bounded exact integer BLAS and separate direct-int64 checks of every inserted point'),
         ('dim26-30-asymmetric-exchanges', [26, 28, 29, 30], [('verify.py',)], 'complete explicit integer codes; exact opposite-pair and unpaired-point checks cover every unordered pair'),

@@ -1,0 +1,28 @@
+{
+  "rows": 251200,
+  "retained": 251192,
+  "seconds": 104.61,
+  "categories": [
+    {
+      "pairs": 31548584836,
+      "contacts": 375640646,
+      "violations": 0,
+      "maximum": 64,
+      "minimum": -128
+    },
+    {
+      "pairs": 2009536,
+      "contacts": 6840,
+      "violations": 0,
+      "maximum": 64,
+      "minimum": -64
+    },
+    {
+      "pairs": 28,
+      "contacts": 8,
+      "violations": 0,
+      "maximum": 64,
+      "minimum": -128
+    }
+  ]
+}

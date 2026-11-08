@@ -1,0 +1,32 @@
+{"anchor_start": 0, "anchors": 32, "sum_incidences": 21119, "new_sums": 18019, "admitted": 11, "free": 0, "seconds": 1.179367946000184}
+{"anchor_start": 32, "anchors": 28, "sum_incidences": 18389, "new_sums": 11584, "admitted": 5, "free": 0, "seconds": 1.735032921000311}
+OPTIMIZE 16
+MODEL 16 22 0 seconds 0.0002839799999492243
+/workspace/scratch/941a2e823e69/KissingNumbers/research/exceptional_tail_replacement_20261108/optimize_rational.py:21: RuntimeWarning: Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim.
+  ans=milp(np.r_[-np.ones(n),np.ones(len(old))],integrality=np.ones(n+len(old)),bounds=Bounds(0,1),constraints=LinearConstraint(mat,-np.inf,upper),options={'time_limit':seconds,'mip_rel_gap':0,'threads':int(os.environ.get('RESEARCH_THREADS','3'))})
+{
+  "dimension": 31,
+  "source": "verifications/improved/dim27-31-algebraic-completion/data/coordinates31_251196.npz",
+  "source_sha256": "02cddb863829f7298a1b80779603f3963f0c0db3eef0ff2a9050abe601e56127",
+  "baseline": 251196,
+  "tail_norm": null,
+  "unpaired_anchor_family": true,
+  "anchor_count": 60,
+  "generated_incidences": 39508,
+  "unique_new_sums": 29603,
+  "admitted": 16,
+  "cutoff": 2,
+  "dot_products": 882898624,
+  "optimization": {
+    "gain": 0,
+    "added": [],
+    "removed": [],
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "new_conflicts": 0,
+    "numerical_gain_upper_bound": -0.0,
+    "scope": "Numerical optimizer, exact independent replay required for positive result."
+  },
+  "seconds": 1.9919971810004427,
+  "scope": "Complete sum closure for every incumbent point in stated latitude layer paired with all incumbent points; blocker cutoff restricts optimization pool; numerical non-gain is not a global bound."
+}

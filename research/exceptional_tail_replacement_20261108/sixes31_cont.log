@@ -1,0 +1,293 @@
+{"all_supports": 134596, "admitted_supports": 26172, "admitted_nonseed_supports": 25520, "admitted_signed_bodies": 1436624, "seconds": 28.739597044999755}
+{"body_start": 4096, "tested": 344064, "new_admitted": 16, "seconds": 30.58275858199977}
+{"body_start": 32768, "tested": 344064, "new_admitted": 32, "seconds": 32.080181111}
+{"body_start": 36864, "tested": 344064, "new_admitted": 18, "seconds": 33.5297372809996}
+{"body_start": 81920, "tested": 344064, "new_admitted": 16, "seconds": 35.10169333199974}
+{"body_start": 106496, "tested": 344064, "new_admitted": 16, "seconds": 36.951124247999815}
+{"body_start": 110592, "tested": 344064, "new_admitted": 64, "seconds": 39.06661966299998}
+{"body_start": 114688, "tested": 344064, "new_admitted": 16, "seconds": 40.760451993999595}
+{"body_start": 163840, "tested": 344064, "new_admitted": 48, "seconds": 42.44196835099956}
+{"body_start": 167936, "tested": 344064, "new_admitted": 48, "seconds": 44.11845333999963}
+{"body_start": 229376, "tested": 344064, "new_admitted": 48, "seconds": 45.76512941799956}
+{"body_start": 237568, "tested": 344064, "new_admitted": 32, "seconds": 47.37711221999962}
+{"body_start": 245760, "tested": 344064, "new_admitted": 104, "seconds": 49.712882824999724}
+{"body_start": 249856, "tested": 344064, "new_admitted": 48, "seconds": 51.33103902199991}
+{"body_start": 258048, "tested": 344064, "new_admitted": 92, "seconds": 53.3458453129997}
+{"body_start": 262144, "tested": 344064, "new_admitted": 152, "seconds": 56.180123402999925}
+{"body_start": 438272, "tested": 344064, "new_admitted": 0, "seconds": 57.207224117999885}
+{"body_start": 442368, "tested": 344064, "new_admitted": 0, "seconds": 58.62494466599992}
+{"body_start": 446464, "tested": 344064, "new_admitted": 0, "seconds": 59.53428155699976}
+{"body_start": 450560, "tested": 344064, "new_admitted": 0, "seconds": 60.66707608899969}
+{"body_start": 454656, "tested": 344064, "new_admitted": 0, "seconds": 61.7168940939996}
+{"body_start": 458752, "tested": 344064, "new_admitted": 0, "seconds": 62.81535015700001}
+{"body_start": 462848, "tested": 344064, "new_admitted": 0, "seconds": 63.83528036399957}
+{"body_start": 466944, "tested": 344064, "new_admitted": 0, "seconds": 64.79165923499977}
+{"body_start": 471040, "tested": 344064, "new_admitted": 0, "seconds": 65.87085808499978}
+{"body_start": 475136, "tested": 344064, "new_admitted": 0, "seconds": 66.886711483}
+{"body_start": 479232, "tested": 344064, "new_admitted": 0, "seconds": 68.03613467099967}
+{"body_start": 483328, "tested": 344064, "new_admitted": 0, "seconds": 69.20740794899984}
+{"body_start": 487424, "tested": 344064, "new_admitted": 0, "seconds": 70.33642841099982}
+{"body_start": 491520, "tested": 344064, "new_admitted": 0, "seconds": 71.09849099599978}
+{"body_start": 495616, "tested": 344064, "new_admitted": 0, "seconds": 72.29867081899965}
+{"body_start": 499712, "tested": 344064, "new_admitted": 0, "seconds": 73.4380786769998}
+{"body_start": 503808, "tested": 344064, "new_admitted": 0, "seconds": 74.73663763499962}
+{"body_start": 507904, "tested": 344064, "new_admitted": 0, "seconds": 76.07319944799974}
+{"body_start": 512000, "tested": 344064, "new_admitted": 0, "seconds": 77.277818347}
+{"body_start": 516096, "tested": 344064, "new_admitted": 0, "seconds": 78.38797365799974}
+{"body_start": 520192, "tested": 344064, "new_admitted": 0, "seconds": 79.31653148299984}
+{"body_start": 524288, "tested": 344064, "new_admitted": 0, "seconds": 80.23635961599985}
+{"body_start": 528384, "tested": 344064, "new_admitted": 0, "seconds": 81.2933479569997}
+{"body_start": 532480, "tested": 344064, "new_admitted": 0, "seconds": 82.81003965699983}
+{"body_start": 536576, "tested": 344064, "new_admitted": 0, "seconds": 83.78380840399996}
+{"body_start": 540672, "tested": 344064, "new_admitted": 0, "seconds": 85.01465519399972}
+{"body_start": 544768, "tested": 344064, "new_admitted": 0, "seconds": 86.15344309599959}
+{"body_start": 548864, "tested": 344064, "new_admitted": 0, "seconds": 87.20271382599958}
+{"body_start": 552960, "tested": 344064, "new_admitted": 0, "seconds": 88.20395572999996}
+{"body_start": 557056, "tested": 344064, "new_admitted": 0, "seconds": 89.1645340719997}
+{"body_start": 561152, "tested": 344064, "new_admitted": 0, "seconds": 90.40417792599965}
+{"body_start": 565248, "tested": 344064, "new_admitted": 0, "seconds": 91.50935488899995}
+{"body_start": 569344, "tested": 344064, "new_admitted": 0, "seconds": 92.43107577199999}
+{"body_start": 573440, "tested": 344064, "new_admitted": 0, "seconds": 93.34477322699968}
+{"body_start": 577536, "tested": 344064, "new_admitted": 0, "seconds": 94.35338656099975}
+{"body_start": 581632, "tested": 344064, "new_admitted": 0, "seconds": 95.31669204299988}
+{"body_start": 585728, "tested": 344064, "new_admitted": 0, "seconds": 96.48544017899985}
+{"body_start": 589824, "tested": 344064, "new_admitted": 0, "seconds": 97.60061650299986}
+{"body_start": 593920, "tested": 344064, "new_admitted": 0, "seconds": 98.66318381199972}
+{"body_start": 598016, "tested": 344064, "new_admitted": 0, "seconds": 99.59074499499957}
+{"body_start": 602112, "tested": 344064, "new_admitted": 0, "seconds": 100.7969761469999}
+{"body_start": 606208, "tested": 344064, "new_admitted": 0, "seconds": 101.78689373499992}
+{"body_start": 610304, "tested": 344064, "new_admitted": 0, "seconds": 103.09773815399967}
+{"body_start": 614400, "tested": 344064, "new_admitted": 0, "seconds": 104.15449340499981}
+{"body_start": 618496, "tested": 344064, "new_admitted": 0, "seconds": 105.04282639099983}
+{"body_start": 622592, "tested": 344064, "new_admitted": 0, "seconds": 106.18610950099992}
+{"body_start": 626688, "tested": 344064, "new_admitted": 0, "seconds": 107.25935339599982}
+{"body_start": 630784, "tested": 344064, "new_admitted": 0, "seconds": 108.26779889199997}
+{"body_start": 634880, "tested": 344064, "new_admitted": 0, "seconds": 109.42858533499975}
+{"body_start": 638976, "tested": 344064, "new_admitted": 0, "seconds": 110.54857010099977}
+{"body_start": 643072, "tested": 344064, "new_admitted": 0, "seconds": 111.50782476599989}
+{"body_start": 647168, "tested": 344064, "new_admitted": 0, "seconds": 112.54820622199986}
+{"body_start": 651264, "tested": 344064, "new_admitted": 0, "seconds": 113.90307371399967}
+{"body_start": 655360, "tested": 344064, "new_admitted": 0, "seconds": 115.11642226999993}
+{"body_start": 659456, "tested": 344064, "new_admitted": 0, "seconds": 116.40986237799962}
+{"body_start": 663552, "tested": 344064, "new_admitted": 0, "seconds": 117.8407203859997}
+{"body_start": 667648, "tested": 344064, "new_admitted": 0, "seconds": 119.37036908099981}
+{"body_start": 671744, "tested": 344064, "new_admitted": 0, "seconds": 120.75511175299971}
+{"body_start": 675840, "tested": 344064, "new_admitted": 0, "seconds": 122.00830844799975}
+{"body_start": 679936, "tested": 344064, "new_admitted": 0, "seconds": 123.3714543039996}
+{"body_start": 684032, "tested": 344064, "new_admitted": 0, "seconds": 124.62131577799983}
+{"body_start": 688128, "tested": 344064, "new_admitted": 0, "seconds": 125.56001643899981}
+{"body_start": 692224, "tested": 344064, "new_admitted": 0, "seconds": 126.758942209}
+{"body_start": 696320, "tested": 344064, "new_admitted": 0, "seconds": 127.84608046699987}
+{"body_start": 700416, "tested": 344064, "new_admitted": 0, "seconds": 129.2688259309998}
+{"body_start": 704512, "tested": 344064, "new_admitted": 0, "seconds": 130.16118036399985}
+{"body_start": 708608, "tested": 344064, "new_admitted": 0, "seconds": 131.5973994469996}
+{"body_start": 712704, "tested": 344064, "new_admitted": 0, "seconds": 133.18143068799964}
+{"body_start": 716800, "tested": 344064, "new_admitted": 0, "seconds": 134.71205724399988}
+{"body_start": 720896, "tested": 344064, "new_admitted": 0, "seconds": 136.36011463199975}
+{"body_start": 724992, "tested": 344064, "new_admitted": 0, "seconds": 137.68058729699987}
+{"body_start": 729088, "tested": 344064, "new_admitted": 0, "seconds": 139.0263642079999}
+{"body_start": 733184, "tested": 344064, "new_admitted": 0, "seconds": 140.31565763199978}
+{"body_start": 737280, "tested": 344064, "new_admitted": 0, "seconds": 141.68608599299978}
+{"body_start": 741376, "tested": 344064, "new_admitted": 0, "seconds": 143.12263822399973}
+{"body_start": 745472, "tested": 344064, "new_admitted": 0, "seconds": 144.50467798199998}
+{"body_start": 749568, "tested": 344064, "new_admitted": 0, "seconds": 145.94992930199987}
+{"body_start": 753664, "tested": 344064, "new_admitted": 0, "seconds": 147.43974234299958}
+{"body_start": 757760, "tested": 344064, "new_admitted": 0, "seconds": 149.19003515399982}
+{"body_start": 761856, "tested": 344064, "new_admitted": 0, "seconds": 150.55061378699975}
+{"body_start": 765952, "tested": 344064, "new_admitted": 0, "seconds": 151.86887589699973}
+{"body_start": 770048, "tested": 344064, "new_admitted": 0, "seconds": 153.2308477649999}
+{"body_start": 774144, "tested": 344064, "new_admitted": 0, "seconds": 154.70673431299974}
+{"body_start": 778240, "tested": 344064, "new_admitted": 0, "seconds": 156.29323048699962}
+{"body_start": 782336, "tested": 344064, "new_admitted": 0, "seconds": 157.57343078299982}
+{"body_start": 786432, "tested": 344064, "new_admitted": 0, "seconds": 158.93866336899964}
+{"body_start": 790528, "tested": 344064, "new_admitted": 0, "seconds": 160.38315497799977}
+{"body_start": 794624, "tested": 344064, "new_admitted": 0, "seconds": 161.6992790889999}
+{"body_start": 798720, "tested": 344064, "new_admitted": 0, "seconds": 162.98348111699988}
+{"body_start": 802816, "tested": 344064, "new_admitted": 0, "seconds": 164.58818658899963}
+{"body_start": 806912, "tested": 344064, "new_admitted": 0, "seconds": 165.9224359369996}
+{"body_start": 811008, "tested": 344064, "new_admitted": 0, "seconds": 167.34023126299962}
+{"body_start": 815104, "tested": 344064, "new_admitted": 0, "seconds": 168.47959864099994}
+{"body_start": 819200, "tested": 344064, "new_admitted": 0, "seconds": 169.5963652989999}
+{"body_start": 823296, "tested": 344064, "new_admitted": 0, "seconds": 171.24293618899992}
+{"body_start": 827392, "tested": 344064, "new_admitted": 0, "seconds": 172.109821689}
+{"body_start": 831488, "tested": 344064, "new_admitted": 0, "seconds": 173.07918903999962}
+{"body_start": 835584, "tested": 344064, "new_admitted": 0, "seconds": 174.06205289399986}
+{"body_start": 839680, "tested": 344064, "new_admitted": 0, "seconds": 174.91578228699973}
+{"body_start": 843776, "tested": 344064, "new_admitted": 0, "seconds": 175.82764522599973}
+{"body_start": 847872, "tested": 344064, "new_admitted": 0, "seconds": 177.11780802899966}
+{"body_start": 851968, "tested": 344064, "new_admitted": 0, "seconds": 177.93792226999994}
+{"body_start": 856064, "tested": 344064, "new_admitted": 0, "seconds": 179.02912952299994}
+{"body_start": 860160, "tested": 344064, "new_admitted": 0, "seconds": 180.28234452699962}
+{"body_start": 864256, "tested": 344064, "new_admitted": 0, "seconds": 181.46731238999973}
+{"body_start": 868352, "tested": 344064, "new_admitted": 0, "seconds": 182.4228245549998}
+{"body_start": 872448, "tested": 344064, "new_admitted": 0, "seconds": 183.2736956589997}
+{"body_start": 876544, "tested": 344064, "new_admitted": 0, "seconds": 184.54584232699972}
+{"body_start": 880640, "tested": 344064, "new_admitted": 0, "seconds": 185.7387964059999}
+{"body_start": 884736, "tested": 344064, "new_admitted": 0, "seconds": 186.76299522599993}
+{"body_start": 888832, "tested": 344064, "new_admitted": 0, "seconds": 187.7916059019999}
+{"body_start": 892928, "tested": 344064, "new_admitted": 0, "seconds": 188.91806570799963}
+{"body_start": 897024, "tested": 344064, "new_admitted": 0, "seconds": 189.9377741479998}
+{"body_start": 901120, "tested": 344064, "new_admitted": 0, "seconds": 190.8900048649998}
+{"body_start": 905216, "tested": 344064, "new_admitted": 0, "seconds": 191.76580399099976}
+{"body_start": 909312, "tested": 344064, "new_admitted": 0, "seconds": 192.82316457299976}
+{"body_start": 913408, "tested": 344064, "new_admitted": 0, "seconds": 193.56317062899961}
+{"body_start": 917504, "tested": 344064, "new_admitted": 0, "seconds": 194.70888905599986}
+{"body_start": 921600, "tested": 344064, "new_admitted": 0, "seconds": 195.84570493799993}
+{"body_start": 925696, "tested": 344064, "new_admitted": 0, "seconds": 196.7786919399996}
+{"body_start": 929792, "tested": 344064, "new_admitted": 0, "seconds": 197.76103974499983}
+{"body_start": 933888, "tested": 344064, "new_admitted": 0, "seconds": 198.621730071}
+{"body_start": 937984, "tested": 344064, "new_admitted": 0, "seconds": 199.7737689989999}
+{"body_start": 942080, "tested": 344064, "new_admitted": 0, "seconds": 200.6700005169996}
+{"body_start": 946176, "tested": 344064, "new_admitted": 0, "seconds": 201.4504398729996}
+{"body_start": 950272, "tested": 344064, "new_admitted": 0, "seconds": 202.44243207099998}
+{"body_start": 954368, "tested": 344064, "new_admitted": 0, "seconds": 203.41936997999983}
+{"body_start": 958464, "tested": 344064, "new_admitted": 0, "seconds": 204.50146633099985}
+{"body_start": 962560, "tested": 344064, "new_admitted": 0, "seconds": 205.65259201299978}
+{"body_start": 966656, "tested": 344064, "new_admitted": 0, "seconds": 206.5394149179997}
+{"body_start": 970752, "tested": 344064, "new_admitted": 0, "seconds": 207.44747761399958}
+{"body_start": 974848, "tested": 344064, "new_admitted": 0, "seconds": 208.4000139929999}
+{"body_start": 978944, "tested": 344064, "new_admitted": 0, "seconds": 209.41970730999992}
+{"body_start": 983040, "tested": 344064, "new_admitted": 0, "seconds": 210.24461914099993}
+{"body_start": 987136, "tested": 344064, "new_admitted": 0, "seconds": 211.28587535299994}
+{"body_start": 991232, "tested": 344064, "new_admitted": 0, "seconds": 212.25759145599977}
+{"body_start": 995328, "tested": 344064, "new_admitted": 0, "seconds": 212.97496763499976}
+{"body_start": 999424, "tested": 344064, "new_admitted": 0, "seconds": 213.99338310599978}
+{"body_start": 1003520, "tested": 344064, "new_admitted": 0, "seconds": 214.84671428499996}
+{"body_start": 1007616, "tested": 344064, "new_admitted": 0, "seconds": 215.63941551799962}
+{"body_start": 1011712, "tested": 344064, "new_admitted": 0, "seconds": 216.7272013539996}
+{"body_start": 1015808, "tested": 344064, "new_admitted": 0, "seconds": 217.61538817999963}
+{"body_start": 1019904, "tested": 344064, "new_admitted": 0, "seconds": 218.3932592189999}
+{"body_start": 1024000, "tested": 344064, "new_admitted": 0, "seconds": 219.26397370899986}
+{"body_start": 1028096, "tested": 344064, "new_admitted": 0, "seconds": 220.3707978829998}
+{"body_start": 1032192, "tested": 344064, "new_admitted": 0, "seconds": 221.63855025199973}
+{"body_start": 1036288, "tested": 344064, "new_admitted": 0, "seconds": 223.15243614199971}
+{"body_start": 1040384, "tested": 344064, "new_admitted": 0, "seconds": 224.37004166799989}
+{"body_start": 1044480, "tested": 344064, "new_admitted": 0, "seconds": 225.59179809599982}
+{"body_start": 1048576, "tested": 344064, "new_admitted": 0, "seconds": 226.87374292699997}
+{"body_start": 1052672, "tested": 344064, "new_admitted": 0, "seconds": 228.02487081499976}
+{"body_start": 1056768, "tested": 344064, "new_admitted": 0, "seconds": 229.42918996599974}
+{"body_start": 1060864, "tested": 344064, "new_admitted": 0, "seconds": 230.61390787899973}
+{"body_start": 1064960, "tested": 344064, "new_admitted": 0, "seconds": 231.88252147999992}
+{"body_start": 1069056, "tested": 344064, "new_admitted": 0, "seconds": 233.0942047689996}
+{"body_start": 1073152, "tested": 344064, "new_admitted": 0, "seconds": 234.2033000399997}
+{"body_start": 1077248, "tested": 344064, "new_admitted": 0, "seconds": 235.28898188199992}
+{"body_start": 1081344, "tested": 344064, "new_admitted": 0, "seconds": 236.3099243429997}
+{"body_start": 1085440, "tested": 344064, "new_admitted": 0, "seconds": 237.61592374599968}
+{"body_start": 1089536, "tested": 344064, "new_admitted": 0, "seconds": 238.86040439599992}
+{"body_start": 1093632, "tested": 344064, "new_admitted": 0, "seconds": 240.1093890979996}
+{"body_start": 1097728, "tested": 344064, "new_admitted": 0, "seconds": 241.12958094999976}
+{"body_start": 1101824, "tested": 344064, "new_admitted": 0, "seconds": 242.05994005699995}
+{"body_start": 1105920, "tested": 344064, "new_admitted": 0, "seconds": 243.28342498599977}
+{"body_start": 1110016, "tested": 344064, "new_admitted": 0, "seconds": 244.01631795899993}
+{"body_start": 1114112, "tested": 344064, "new_admitted": 0, "seconds": 244.94336767799996}
+{"body_start": 1118208, "tested": 344064, "new_admitted": 0, "seconds": 246.04717823199962}
+{"body_start": 1122304, "tested": 344064, "new_admitted": 0, "seconds": 247.00046330999976}
+{"body_start": 1126400, "tested": 344064, "new_admitted": 0, "seconds": 248.21622793699999}
+{"body_start": 1130496, "tested": 344064, "new_admitted": 0, "seconds": 249.3887890259998}
+{"body_start": 1134592, "tested": 344064, "new_admitted": 0, "seconds": 250.24060803699967}
+{"body_start": 1138688, "tested": 344064, "new_admitted": 0, "seconds": 251.55111798299959}
+{"body_start": 1142784, "tested": 344064, "new_admitted": 0, "seconds": 252.8456752129996}
+{"body_start": 1146880, "tested": 344064, "new_admitted": 0, "seconds": 254.0068158429999}
+{"body_start": 1150976, "tested": 344064, "new_admitted": 0, "seconds": 254.88154597499988}
+{"body_start": 1155072, "tested": 344064, "new_admitted": 0, "seconds": 255.87796804499976}
+{"body_start": 1159168, "tested": 344064, "new_admitted": 0, "seconds": 257.0442379259998}
+{"body_start": 1163264, "tested": 344064, "new_admitted": 0, "seconds": 258.1688303179999}
+{"body_start": 1167360, "tested": 344064, "new_admitted": 0, "seconds": 259.33607886599975}
+{"body_start": 1171456, "tested": 344064, "new_admitted": 0, "seconds": 260.5553702809998}
+{"body_start": 1175552, "tested": 344064, "new_admitted": 0, "seconds": 261.56960294099963}
+{"body_start": 1179648, "tested": 344064, "new_admitted": 0, "seconds": 262.7819984599996}
+{"body_start": 1183744, "tested": 344064, "new_admitted": 0, "seconds": 263.9037913469997}
+{"body_start": 1187840, "tested": 344064, "new_admitted": 0, "seconds": 264.97930375999977}
+{"body_start": 1191936, "tested": 344064, "new_admitted": 0, "seconds": 266.21645697799977}
+{"body_start": 1196032, "tested": 344064, "new_admitted": 0, "seconds": 267.3916275839997}
+{"body_start": 1200128, "tested": 344064, "new_admitted": 0, "seconds": 268.2484191999997}
+{"body_start": 1204224, "tested": 344064, "new_admitted": 0, "seconds": 269.15170642799967}
+{"body_start": 1208320, "tested": 344064, "new_admitted": 0, "seconds": 270.4084492539996}
+{"body_start": 1212416, "tested": 344064, "new_admitted": 0, "seconds": 271.22364917799996}
+{"body_start": 1216512, "tested": 344064, "new_admitted": 0, "seconds": 272.3909438889996}
+{"body_start": 1220608, "tested": 344064, "new_admitted": 0, "seconds": 273.30825125}
+{"body_start": 1224704, "tested": 344064, "new_admitted": 0, "seconds": 274.3165617559998}
+{"body_start": 1228800, "tested": 344064, "new_admitted": 0, "seconds": 275.6703430819998}
+{"body_start": 1232896, "tested": 344064, "new_admitted": 0, "seconds": 276.9985285509997}
+{"body_start": 1236992, "tested": 344064, "new_admitted": 0, "seconds": 278.1219566349996}
+{"body_start": 1241088, "tested": 344064, "new_admitted": 0, "seconds": 278.9125251419996}
+{"body_start": 1245184, "tested": 344064, "new_admitted": 0, "seconds": 279.7322062379999}
+{"body_start": 1249280, "tested": 344064, "new_admitted": 0, "seconds": 280.56098958999974}
+{"body_start": 1253376, "tested": 344064, "new_admitted": 0, "seconds": 281.40182418899985}
+{"body_start": 1257472, "tested": 344064, "new_admitted": 0, "seconds": 282.4492270759997}
+{"body_start": 1261568, "tested": 344064, "new_admitted": 0, "seconds": 283.2505260319999}
+{"body_start": 1265664, "tested": 344064, "new_admitted": 0, "seconds": 284.1438170939996}
+{"body_start": 1269760, "tested": 344064, "new_admitted": 0, "seconds": 285.0321479669997}
+{"body_start": 1273856, "tested": 344064, "new_admitted": 0, "seconds": 285.970741997}
+{"body_start": 1277952, "tested": 344064, "new_admitted": 0, "seconds": 286.9148332249997}
+{"body_start": 1282048, "tested": 344064, "new_admitted": 0, "seconds": 288.01168068499965}
+{"body_start": 1286144, "tested": 344064, "new_admitted": 0, "seconds": 288.7355849569999}
+{"body_start": 1290240, "tested": 344064, "new_admitted": 0, "seconds": 289.8869626589999}
+{"body_start": 1294336, "tested": 344064, "new_admitted": 0, "seconds": 290.906377282}
+{"body_start": 1298432, "tested": 344064, "new_admitted": 0, "seconds": 292.02889748999996}
+{"body_start": 1302528, "tested": 344064, "new_admitted": 0, "seconds": 292.94392201699975}
+{"body_start": 1306624, "tested": 344064, "new_admitted": 0, "seconds": 293.8400492679998}
+{"body_start": 1310720, "tested": 344064, "new_admitted": 0, "seconds": 294.8637097799997}
+{"body_start": 1314816, "tested": 344064, "new_admitted": 0, "seconds": 295.6131165889997}
+{"body_start": 1318912, "tested": 344064, "new_admitted": 0, "seconds": 296.53631835099986}
+{"body_start": 1323008, "tested": 344064, "new_admitted": 0, "seconds": 297.48072202599997}
+{"body_start": 1327104, "tested": 344064, "new_admitted": 0, "seconds": 298.21344799499957}
+{"body_start": 1331200, "tested": 344064, "new_admitted": 0, "seconds": 299.21933016899993}
+{"body_start": 1335296, "tested": 344064, "new_admitted": 0, "seconds": 300.1523180019999}
+{"body_start": 1339392, "tested": 344064, "new_admitted": 0, "seconds": 300.8054620429998}
+{"body_start": 1343488, "tested": 344064, "new_admitted": 0, "seconds": 301.5841384379996}
+{"body_start": 1347584, "tested": 344064, "new_admitted": 0, "seconds": 302.5184621579997}
+{"body_start": 1351680, "tested": 344064, "new_admitted": 0, "seconds": 303.40317507699956}
+{"body_start": 1355776, "tested": 344064, "new_admitted": 0, "seconds": 304.1678883329996}
+{"body_start": 1359872, "tested": 344064, "new_admitted": 0, "seconds": 305.1375363259999}
+{"body_start": 1363968, "tested": 344064, "new_admitted": 0, "seconds": 306.1888851949998}
+{"body_start": 1368064, "tested": 344064, "new_admitted": 0, "seconds": 306.921821765}
+{"body_start": 1372160, "tested": 344064, "new_admitted": 0, "seconds": 307.7443352089999}
+{"body_start": 1376256, "tested": 344064, "new_admitted": 0, "seconds": 308.8540602789999}
+{"body_start": 1380352, "tested": 344064, "new_admitted": 0, "seconds": 309.7510417469998}
+{"body_start": 1384448, "tested": 344064, "new_admitted": 0, "seconds": 310.6586365889998}
+{"body_start": 1388544, "tested": 344064, "new_admitted": 0, "seconds": 311.36599499099975}
+{"body_start": 1392640, "tested": 344064, "new_admitted": 0, "seconds": 312.123179016}
+{"body_start": 1396736, "tested": 344064, "new_admitted": 0, "seconds": 313.2114742949998}
+{"body_start": 1400832, "tested": 344064, "new_admitted": 0, "seconds": 314.1929354849999}
+{"body_start": 1404928, "tested": 344064, "new_admitted": 0, "seconds": 315.2284643129997}
+{"body_start": 1409024, "tested": 344064, "new_admitted": 0, "seconds": 316.11903682599996}
+{"body_start": 1413120, "tested": 344064, "new_admitted": 0, "seconds": 316.9839871099998}
+{"body_start": 1417216, "tested": 344064, "new_admitted": 0, "seconds": 317.87536745199986}
+{"body_start": 1421312, "tested": 344064, "new_admitted": 0, "seconds": 318.69627688699984}
+{"body_start": 1425408, "tested": 344064, "new_admitted": 0, "seconds": 319.6805940559998}
+{"body_start": 1429504, "tested": 344064, "new_admitted": 0, "seconds": 320.61819135199994}
+{"body_start": 1433600, "tested": 254016, "new_admitted": 0, "seconds": 321.17731823799977}
+OPTIMIZE 750
+MODEL 750 182 9850 seconds 0.00684888299974773
+/workspace/scratch/941a2e823e69/KissingNumbers/research/exceptional_tail_replacement_20261108/optimize_rational.py:21: RuntimeWarning: Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim.
+  ans=milp(np.r_[-np.ones(n),np.ones(len(old))],integrality=np.ones(n+len(old)),bounds=Bounds(0,1),constraints=LinearConstraint(mat,-np.inf,upper),options={'time_limit':seconds,'mip_rel_gap':0,'threads':int(os.environ.get('RESEARCH_THREADS','3'))})
+{
+  "dimension": 31,
+  "source": "verifications/improved/dim27-31-algebraic-completion/data/coordinates31_251196.npz",
+  "source_sha256": "02cddb863829f7298a1b80779603f3963f0c0db3eef0ff2a9050abe601e56127",
+  "baseline": 251196,
+  "all_six_supports": 134596,
+  "admitted_supports": 26172,
+  "nonseed_supports": 25520,
+  "signed_bodies": 1436624,
+  "tails": 84,
+  "raw_candidates": 120676416,
+  "admitted": 750,
+  "reused_zero_chunks": 92,
+  "resume_log": "research/exceptional_tail_replacement_20261108/sixes31.log",
+  "cutoff": 2,
+  "checks": 1417868947152,
+  "optimization": {
+    "gain": 0,
+    "added": [],
+    "removed": [],
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "new_conflicts": 9850,
+    "numerical_gain_upper_bound": -0.0,
+    "scope": "Numerical optimizer, exact independent replay required for positive result."
+  },
+  "seconds": 321.5611998229997,
+  "scope": "Every core six-support and every sign, with stated core/global blocker cutoff; all signed tail roots. No support selected from source required. Candidate blockers independently rebuilt by full int64 sums."
+}

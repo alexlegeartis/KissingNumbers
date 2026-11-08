@@ -1,0 +1,10 @@
+{
+  "points": 251200,
+  "added": 8,
+  "removed": 4,
+  "maximum": 64,
+  "changed_pairs": 2009592,
+  "source_sha256": "02cddb863829f7298a1b80779603f3963f0c0db3eef0ff2a9050abe601e56127",
+  "candidate_sha256": "b75a8e9d958017fe03926265f5ee9d42f24b16c9ec848414b4a4e7eba0d329ee",
+  "arithmetic": "Direct int64 coordinate sums over all inserted points and final rows"
+}

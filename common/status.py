@@ -530,3 +530,6 @@ STATUS[34] = ('heads', 'rational heavy-head rotation with a changed dense coordi
 STATUS[32] = ('codes', 'non-antipodal explicit signed octads on 29 supports; 1824 exceptional points with 380 unpaired, with broader supports and sign selections still open (dim32-35-signed-layers/nonantipodal32/replay.py)')
 
 STATUS[33] = ('codes', 'non-antipodal signed octads and individual root-star trades; 370408 points with 500 unpaired, with broader supports and joint root-star choices still open (dim32-35-signed-layers/nonantipodal33/replay.py)')
+
+# Complete latitude-contact exchange, independently replayed 8 November 2026.
+STATUS[31] = ('heads', 'orthogonal four-for-eight latitude-to-midpoint exchange; two complete exact pair enumerations including integer-only checks without antipodal compression; broader layers remain open (dim31-latitude-contact-exchange/verify.py)')

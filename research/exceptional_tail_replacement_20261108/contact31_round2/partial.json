@@ -1,0 +1,1856 @@
+[
+  {
+    "anchor_start": 0,
+    "anchors": 32,
+    "sum_incidences": 22762,
+    "new_sums": 17233,
+    "admitted": 8,
+    "free": 0,
+    "seconds": 1.088688103000095
+  },
+  {
+    "anchor_start": 32,
+    "anchors": 32,
+    "sum_incidences": 18763,
+    "new_sums": 15735,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 2.1598926500000744
+  },
+  {
+    "anchor_start": 64,
+    "anchors": 32,
+    "sum_incidences": 18289,
+    "new_sums": 14048,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 2.8280761669998356
+  },
+  {
+    "anchor_start": 96,
+    "anchors": 32,
+    "sum_incidences": 21272,
+    "new_sums": 13190,
+    "admitted": 3,
+    "free": 0,
+    "seconds": 3.5569097249999686
+  },
+  {
+    "anchor_start": 128,
+    "anchors": 32,
+    "sum_incidences": 20029,
+    "new_sums": 12724,
+    "admitted": 3,
+    "free": 0,
+    "seconds": 4.441888755000036
+  },
+  {
+    "anchor_start": 160,
+    "anchors": 32,
+    "sum_incidences": 18678,
+    "new_sums": 12437,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 5.229350328999772
+  },
+  {
+    "anchor_start": 192,
+    "anchors": 32,
+    "sum_incidences": 24217,
+    "new_sums": 14151,
+    "admitted": 5,
+    "free": 0,
+    "seconds": 6.029162200999963
+  },
+  {
+    "anchor_start": 224,
+    "anchors": 32,
+    "sum_incidences": 20939,
+    "new_sums": 13758,
+    "admitted": 2,
+    "free": 0,
+    "seconds": 6.881016773999818
+  },
+  {
+    "anchor_start": 256,
+    "anchors": 32,
+    "sum_incidences": 24758,
+    "new_sums": 11709,
+    "admitted": 1,
+    "free": 0,
+    "seconds": 7.464075933999993
+  },
+  {
+    "anchor_start": 288,
+    "anchors": 32,
+    "sum_incidences": 19233,
+    "new_sums": 11705,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 7.916223539999919
+  },
+  {
+    "anchor_start": 320,
+    "anchors": 32,
+    "sum_incidences": 20405,
+    "new_sums": 10252,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 8.342494309999893
+  },
+  {
+    "anchor_start": 352,
+    "anchors": 32,
+    "sum_incidences": 20591,
+    "new_sums": 10353,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 8.636544762000085
+  },
+  {
+    "anchor_start": 384,
+    "anchors": 32,
+    "sum_incidences": 19883,
+    "new_sums": 13406,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 9.044225763999748
+  },
+  {
+    "anchor_start": 416,
+    "anchors": 32,
+    "sum_incidences": 18064,
+    "new_sums": 10626,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 9.389196572999936
+  },
+  {
+    "anchor_start": 448,
+    "anchors": 32,
+    "sum_incidences": 21826,
+    "new_sums": 12324,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 9.678336837999723
+  },
+  {
+    "anchor_start": 480,
+    "anchors": 32,
+    "sum_incidences": 21157,
+    "new_sums": 9148,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 9.941787012000077
+  },
+  {
+    "anchor_start": 512,
+    "anchors": 32,
+    "sum_incidences": 25097,
+    "new_sums": 16694,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 10.331182028000057
+  },
+  {
+    "anchor_start": 544,
+    "anchors": 32,
+    "sum_incidences": 25001,
+    "new_sums": 18238,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 10.762499761000072
+  },
+  {
+    "anchor_start": 576,
+    "anchors": 32,
+    "sum_incidences": 28636,
+    "new_sums": 16193,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 11.226895929999955
+  },
+  {
+    "anchor_start": 608,
+    "anchors": 32,
+    "sum_incidences": 27225,
+    "new_sums": 12872,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 11.600293589000103
+  },
+  {
+    "anchor_start": 640,
+    "anchors": 32,
+    "sum_incidences": 23831,
+    "new_sums": 14702,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 12.069993371999772
+  },
+  {
+    "anchor_start": 672,
+    "anchors": 32,
+    "sum_incidences": 25831,
+    "new_sums": 14315,
+    "admitted": 3,
+    "free": 0,
+    "seconds": 12.717355016000056
+  },
+  {
+    "anchor_start": 704,
+    "anchors": 32,
+    "sum_incidences": 21587,
+    "new_sums": 7442,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 13.163697755999692
+  },
+  {
+    "anchor_start": 736,
+    "anchors": 32,
+    "sum_incidences": 21608,
+    "new_sums": 11054,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 13.637770802999967
+  },
+  {
+    "anchor_start": 768,
+    "anchors": 32,
+    "sum_incidences": 25302,
+    "new_sums": 13486,
+    "admitted": 2,
+    "free": 0,
+    "seconds": 14.039236739999978
+  },
+  {
+    "anchor_start": 800,
+    "anchors": 32,
+    "sum_incidences": 21123,
+    "new_sums": 13155,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 14.42959534800002
+  },
+  {
+    "anchor_start": 832,
+    "anchors": 32,
+    "sum_incidences": 23346,
+    "new_sums": 11317,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 14.813042047999716
+  },
+  {
+    "anchor_start": 864,
+    "anchors": 32,
+    "sum_incidences": 24032,
+    "new_sums": 14424,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 15.249547297999925
+  },
+  {
+    "anchor_start": 896,
+    "anchors": 32,
+    "sum_incidences": 23168,
+    "new_sums": 10001,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 15.749408013999982
+  },
+  {
+    "anchor_start": 928,
+    "anchors": 32,
+    "sum_incidences": 21894,
+    "new_sums": 12143,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 16.210999049999828
+  },
+  {
+    "anchor_start": 960,
+    "anchors": 32,
+    "sum_incidences": 23239,
+    "new_sums": 8221,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 16.469044498999665
+  },
+  {
+    "anchor_start": 992,
+    "anchors": 32,
+    "sum_incidences": 22466,
+    "new_sums": 10307,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 16.818690587999754
+  },
+  {
+    "anchor_start": 1024,
+    "anchors": 32,
+    "sum_incidences": 25677,
+    "new_sums": 9920,
+    "admitted": 2,
+    "free": 0,
+    "seconds": 17.125199042000077
+  },
+  {
+    "anchor_start": 1056,
+    "anchors": 32,
+    "sum_incidences": 21612,
+    "new_sums": 10196,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 17.41677713199988
+  },
+  {
+    "anchor_start": 1088,
+    "anchors": 32,
+    "sum_incidences": 23775,
+    "new_sums": 9558,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 17.73014457499994
+  },
+  {
+    "anchor_start": 1120,
+    "anchors": 32,
+    "sum_incidences": 24225,
+    "new_sums": 10717,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 18.23467435099974
+  },
+  {
+    "anchor_start": 1152,
+    "anchors": 32,
+    "sum_incidences": 21913,
+    "new_sums": 7324,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 18.618501854999977
+  },
+  {
+    "anchor_start": 1184,
+    "anchors": 32,
+    "sum_incidences": 23882,
+    "new_sums": 7607,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 19.006539905999944
+  },
+  {
+    "anchor_start": 1216,
+    "anchors": 32,
+    "sum_incidences": 23786,
+    "new_sums": 8231,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 19.423650787000042
+  },
+  {
+    "anchor_start": 1248,
+    "anchors": 32,
+    "sum_incidences": 22472,
+    "new_sums": 5903,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 19.764612164000027
+  },
+  {
+    "anchor_start": 1280,
+    "anchors": 32,
+    "sum_incidences": 23658,
+    "new_sums": 10794,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 20.18337541799974
+  },
+  {
+    "anchor_start": 1312,
+    "anchors": 32,
+    "sum_incidences": 23715,
+    "new_sums": 5692,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 20.350427272999696
+  },
+  {
+    "anchor_start": 1344,
+    "anchors": 32,
+    "sum_incidences": 21473,
+    "new_sums": 9830,
+    "admitted": 2,
+    "free": 0,
+    "seconds": 20.700213106999854
+  },
+  {
+    "anchor_start": 1376,
+    "anchors": 32,
+    "sum_incidences": 24621,
+    "new_sums": 5737,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 20.86449183099967
+  },
+  {
+    "anchor_start": 1408,
+    "anchors": 32,
+    "sum_incidences": 22426,
+    "new_sums": 4962,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 21.03075769499992
+  },
+  {
+    "anchor_start": 1440,
+    "anchors": 32,
+    "sum_incidences": 23292,
+    "new_sums": 7318,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 21.230162462999942
+  },
+  {
+    "anchor_start": 1472,
+    "anchors": 32,
+    "sum_incidences": 22355,
+    "new_sums": 4296,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 21.375626941000064
+  },
+  {
+    "anchor_start": 1504,
+    "anchors": 32,
+    "sum_incidences": 22746,
+    "new_sums": 8691,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 21.66048704500008
+  },
+  {
+    "anchor_start": 1536,
+    "anchors": 32,
+    "sum_incidences": 22909,
+    "new_sums": 4401,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 21.82469902799994
+  },
+  {
+    "anchor_start": 1568,
+    "anchors": 32,
+    "sum_incidences": 23783,
+    "new_sums": 4970,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 22.042067784999745
+  },
+  {
+    "anchor_start": 1600,
+    "anchors": 32,
+    "sum_incidences": 22039,
+    "new_sums": 4840,
+    "admitted": 2,
+    "free": 0,
+    "seconds": 22.221437086999686
+  },
+  {
+    "anchor_start": 1632,
+    "anchors": 32,
+    "sum_incidences": 23648,
+    "new_sums": 3484,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 22.35948622299975
+  },
+  {
+    "anchor_start": 1664,
+    "anchors": 32,
+    "sum_incidences": 21515,
+    "new_sums": 2992,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 22.486025875999985
+  },
+  {
+    "anchor_start": 1696,
+    "anchors": 32,
+    "sum_incidences": 23824,
+    "new_sums": 7065,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 22.689988016999905
+  },
+  {
+    "anchor_start": 1728,
+    "anchors": 32,
+    "sum_incidences": 24055,
+    "new_sums": 2687,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 22.8153779889999
+  },
+  {
+    "anchor_start": 1760,
+    "anchors": 32,
+    "sum_incidences": 21598,
+    "new_sums": 5133,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 23.029890800999965
+  },
+  {
+    "anchor_start": 1792,
+    "anchors": 32,
+    "sum_incidences": 23335,
+    "new_sums": 5494,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 23.241684152999824
+  },
+  {
+    "anchor_start": 1824,
+    "anchors": 32,
+    "sum_incidences": 23301,
+    "new_sums": 2860,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 23.45323555899995
+  },
+  {
+    "anchor_start": 1856,
+    "anchors": 32,
+    "sum_incidences": 24977,
+    "new_sums": 3540,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 23.621340964999945
+  },
+  {
+    "anchor_start": 1888,
+    "anchors": 32,
+    "sum_incidences": 21991,
+    "new_sums": 3494,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 23.762729860000036
+  },
+  {
+    "anchor_start": 1920,
+    "anchors": 32,
+    "sum_incidences": 23644,
+    "new_sums": 2130,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 23.884305843999755
+  },
+  {
+    "anchor_start": 1952,
+    "anchors": 32,
+    "sum_incidences": 21392,
+    "new_sums": 9273,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 24.214505721000023
+  },
+  {
+    "anchor_start": 1984,
+    "anchors": 32,
+    "sum_incidences": 23660,
+    "new_sums": 12409,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 25.050523254999916
+  },
+  {
+    "anchor_start": 2016,
+    "anchors": 32,
+    "sum_incidences": 20719,
+    "new_sums": 11443,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 25.819297576999816
+  },
+  {
+    "anchor_start": 2048,
+    "anchors": 32,
+    "sum_incidences": 17811,
+    "new_sums": 8221,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 26.400367494999955
+  },
+  {
+    "anchor_start": 2080,
+    "anchors": 32,
+    "sum_incidences": 20336,
+    "new_sums": 9562,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 26.865044982999734
+  },
+  {
+    "anchor_start": 2112,
+    "anchors": 32,
+    "sum_incidences": 18438,
+    "new_sums": 7293,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 27.13330557600011
+  },
+  {
+    "anchor_start": 2144,
+    "anchors": 32,
+    "sum_incidences": 21589,
+    "new_sums": 7732,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 27.526995787000033
+  },
+  {
+    "anchor_start": 2176,
+    "anchors": 32,
+    "sum_incidences": 24647,
+    "new_sums": 10867,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 28.08118145399976
+  },
+  {
+    "anchor_start": 2208,
+    "anchors": 32,
+    "sum_incidences": 21831,
+    "new_sums": 9440,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 28.460511791000044
+  },
+  {
+    "anchor_start": 2240,
+    "anchors": 32,
+    "sum_incidences": 26729,
+    "new_sums": 10359,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 28.935391764000087
+  },
+  {
+    "anchor_start": 2272,
+    "anchors": 32,
+    "sum_incidences": 28301,
+    "new_sums": 12244,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 29.363441777999924
+  },
+  {
+    "anchor_start": 2304,
+    "anchors": 32,
+    "sum_incidences": 21590,
+    "new_sums": 10106,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 29.664069489999747
+  },
+  {
+    "anchor_start": 2336,
+    "anchors": 32,
+    "sum_incidences": 25044,
+    "new_sums": 11621,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 29.94236874699982
+  },
+  {
+    "anchor_start": 2368,
+    "anchors": 32,
+    "sum_incidences": 27857,
+    "new_sums": 8081,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 30.157079043000067
+  },
+  {
+    "anchor_start": 2400,
+    "anchors": 32,
+    "sum_incidences": 24194,
+    "new_sums": 10028,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 30.4321755699998
+  },
+  {
+    "anchor_start": 2432,
+    "anchors": 32,
+    "sum_incidences": 19382,
+    "new_sums": 12725,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 30.788897477999853
+  },
+  {
+    "anchor_start": 2464,
+    "anchors": 32,
+    "sum_incidences": 18276,
+    "new_sums": 11445,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 31.16247492699995
+  },
+  {
+    "anchor_start": 2496,
+    "anchors": 32,
+    "sum_incidences": 19266,
+    "new_sums": 11547,
+    "admitted": 3,
+    "free": 0,
+    "seconds": 31.735888380999768
+  },
+  {
+    "anchor_start": 2528,
+    "anchors": 32,
+    "sum_incidences": 19318,
+    "new_sums": 11333,
+    "admitted": 1,
+    "free": 0,
+    "seconds": 32.33426767899982
+  },
+  {
+    "anchor_start": 2560,
+    "anchors": 32,
+    "sum_incidences": 18830,
+    "new_sums": 9369,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 32.83098624500008
+  },
+  {
+    "anchor_start": 2592,
+    "anchors": 32,
+    "sum_incidences": 21166,
+    "new_sums": 10138,
+    "admitted": 4,
+    "free": 0,
+    "seconds": 33.29722154499996
+  },
+  {
+    "anchor_start": 2624,
+    "anchors": 32,
+    "sum_incidences": 21906,
+    "new_sums": 7642,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 33.60198621800009
+  },
+  {
+    "anchor_start": 2656,
+    "anchors": 32,
+    "sum_incidences": 25036,
+    "new_sums": 6643,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 33.923997227999735
+  },
+  {
+    "anchor_start": 2688,
+    "anchors": 32,
+    "sum_incidences": 20026,
+    "new_sums": 6065,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 34.19354857899998
+  },
+  {
+    "anchor_start": 2720,
+    "anchors": 32,
+    "sum_incidences": 24458,
+    "new_sums": 10384,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 34.50083981199987
+  },
+  {
+    "anchor_start": 2752,
+    "anchors": 32,
+    "sum_incidences": 29342,
+    "new_sums": 6946,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 34.848631768999894
+  },
+  {
+    "anchor_start": 2784,
+    "anchors": 32,
+    "sum_incidences": 24347,
+    "new_sums": 6604,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 35.21899782699984
+  },
+  {
+    "anchor_start": 2816,
+    "anchors": 32,
+    "sum_incidences": 19433,
+    "new_sums": 4410,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 35.462764739999784
+  },
+  {
+    "anchor_start": 2848,
+    "anchors": 32,
+    "sum_incidences": 24549,
+    "new_sums": 8253,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 35.84526419299982
+  },
+  {
+    "anchor_start": 2880,
+    "anchors": 32,
+    "sum_incidences": 21792,
+    "new_sums": 4919,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 36.18116109899984
+  },
+  {
+    "anchor_start": 2912,
+    "anchors": 32,
+    "sum_incidences": 26657,
+    "new_sums": 6940,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 36.51662308599998
+  },
+  {
+    "anchor_start": 2944,
+    "anchors": 32,
+    "sum_incidences": 24195,
+    "new_sums": 4613,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 36.75881234899998
+  },
+  {
+    "anchor_start": 2976,
+    "anchors": 32,
+    "sum_incidences": 24134,
+    "new_sums": 3364,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 37.01097522400005
+  },
+  {
+    "anchor_start": 3008,
+    "anchors": 32,
+    "sum_incidences": 22594,
+    "new_sums": 6017,
+    "admitted": 3,
+    "free": 0,
+    "seconds": 37.38833950499975
+  },
+  {
+    "anchor_start": 3040,
+    "anchors": 32,
+    "sum_incidences": 23026,
+    "new_sums": 4767,
+    "admitted": 1,
+    "free": 0,
+    "seconds": 37.71871779200001
+  },
+  {
+    "anchor_start": 3072,
+    "anchors": 32,
+    "sum_incidences": 24342,
+    "new_sums": 7148,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 38.17262023600006
+  },
+  {
+    "anchor_start": 3104,
+    "anchors": 32,
+    "sum_incidences": 28287,
+    "new_sums": 4117,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 38.44685425899979
+  },
+  {
+    "anchor_start": 3136,
+    "anchors": 32,
+    "sum_incidences": 25820,
+    "new_sums": 4995,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 38.66696688100001
+  },
+  {
+    "anchor_start": 3168,
+    "anchors": 32,
+    "sum_incidences": 24462,
+    "new_sums": 4326,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 38.8082056180001
+  },
+  {
+    "anchor_start": 3200,
+    "anchors": 32,
+    "sum_incidences": 19466,
+    "new_sums": 1664,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 38.90932774399971
+  },
+  {
+    "anchor_start": 3232,
+    "anchors": 32,
+    "sum_incidences": 27320,
+    "new_sums": 2658,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 39.03831016799995
+  },
+  {
+    "anchor_start": 3264,
+    "anchors": 32,
+    "sum_incidences": 24811,
+    "new_sums": 5012,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 39.230163403999995
+  },
+  {
+    "anchor_start": 3296,
+    "anchors": 32,
+    "sum_incidences": 23980,
+    "new_sums": 5376,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 39.409743500999866
+  },
+  {
+    "anchor_start": 3328,
+    "anchors": 32,
+    "sum_incidences": 27282,
+    "new_sums": 1748,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 39.51359365999997
+  },
+  {
+    "anchor_start": 3360,
+    "anchors": 32,
+    "sum_incidences": 20162,
+    "new_sums": 934,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 39.601857912000014
+  },
+  {
+    "anchor_start": 3392,
+    "anchors": 32,
+    "sum_incidences": 24053,
+    "new_sums": 3906,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 39.74335831500002
+  },
+  {
+    "anchor_start": 3424,
+    "anchors": 32,
+    "sum_incidences": 25458,
+    "new_sums": 2602,
+    "admitted": 2,
+    "free": 0,
+    "seconds": 39.914056462999724
+  },
+  {
+    "anchor_start": 3456,
+    "anchors": 32,
+    "sum_incidences": 28385,
+    "new_sums": 3742,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 40.09339234299978
+  },
+  {
+    "anchor_start": 3488,
+    "anchors": 32,
+    "sum_incidences": 25008,
+    "new_sums": 5292,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 40.34403702000009
+  },
+  {
+    "anchor_start": 3520,
+    "anchors": 32,
+    "sum_incidences": 22983,
+    "new_sums": 2433,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 40.47333436500003
+  },
+  {
+    "anchor_start": 3552,
+    "anchors": 32,
+    "sum_incidences": 22495,
+    "new_sums": 4104,
+    "admitted": 2,
+    "free": 0,
+    "seconds": 40.695074351999665
+  },
+  {
+    "anchor_start": 3584,
+    "anchors": 32,
+    "sum_incidences": 24260,
+    "new_sums": 1735,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 40.846428854999886
+  },
+  {
+    "anchor_start": 3616,
+    "anchors": 32,
+    "sum_incidences": 23317,
+    "new_sums": 1636,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 40.943014588000096
+  },
+  {
+    "anchor_start": 3648,
+    "anchors": 32,
+    "sum_incidences": 27292,
+    "new_sums": 1869,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 41.04943640900001
+  },
+  {
+    "anchor_start": 3680,
+    "anchors": 32,
+    "sum_incidences": 22067,
+    "new_sums": 2213,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 41.18515562499988
+  },
+  {
+    "anchor_start": 3712,
+    "anchors": 32,
+    "sum_incidences": 23681,
+    "new_sums": 2843,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 41.31050318200005
+  },
+  {
+    "anchor_start": 3744,
+    "anchors": 32,
+    "sum_incidences": 20032,
+    "new_sums": 993,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 41.40512584199996
+  },
+  {
+    "anchor_start": 3776,
+    "anchors": 32,
+    "sum_incidences": 23597,
+    "new_sums": 2929,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 41.54992115499999
+  },
+  {
+    "anchor_start": 3808,
+    "anchors": 32,
+    "sum_incidences": 29673,
+    "new_sums": 2940,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 41.67912638500002
+  },
+  {
+    "anchor_start": 3840,
+    "anchors": 32,
+    "sum_incidences": 24877,
+    "new_sums": 4574,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 41.93125046799969
+  },
+  {
+    "anchor_start": 3872,
+    "anchors": 32,
+    "sum_incidences": 19431,
+    "new_sums": 431,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 42.013067331
+  },
+  {
+    "anchor_start": 3904,
+    "anchors": 32,
+    "sum_incidences": 25366,
+    "new_sums": 5206,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 42.32023346400001
+  },
+  {
+    "anchor_start": 3936,
+    "anchors": 32,
+    "sum_incidences": 22497,
+    "new_sums": 4957,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 42.60178503899988
+  },
+  {
+    "anchor_start": 3968,
+    "anchors": 32,
+    "sum_incidences": 20843,
+    "new_sums": 5411,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 42.89316724299988
+  },
+  {
+    "anchor_start": 4000,
+    "anchors": 32,
+    "sum_incidences": 18440,
+    "new_sums": 9276,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 43.226160358000016
+  },
+  {
+    "anchor_start": 4032,
+    "anchors": 32,
+    "sum_incidences": 19486,
+    "new_sums": 10203,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 43.70949536299986
+  },
+  {
+    "anchor_start": 4064,
+    "anchors": 32,
+    "sum_incidences": 18979,
+    "new_sums": 7853,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 44.01561700499997
+  },
+  {
+    "anchor_start": 4096,
+    "anchors": 32,
+    "sum_incidences": 18893,
+    "new_sums": 7557,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 44.25395949599988
+  },
+  {
+    "anchor_start": 4128,
+    "anchors": 32,
+    "sum_incidences": 18856,
+    "new_sums": 7667,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 44.50924864499984
+  },
+  {
+    "anchor_start": 4160,
+    "anchors": 32,
+    "sum_incidences": 25341,
+    "new_sums": 2341,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 44.618971555999906
+  },
+  {
+    "anchor_start": 4192,
+    "anchors": 32,
+    "sum_incidences": 27939,
+    "new_sums": 3825,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 44.8153276969997
+  },
+  {
+    "anchor_start": 4224,
+    "anchors": 32,
+    "sum_incidences": 24487,
+    "new_sums": 1846,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 44.92722693399992
+  },
+  {
+    "anchor_start": 4256,
+    "anchors": 32,
+    "sum_incidences": 21837,
+    "new_sums": 888,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 45.022632351000084
+  },
+  {
+    "anchor_start": 4288,
+    "anchors": 32,
+    "sum_incidences": 28957,
+    "new_sums": 2045,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 45.14810992699995
+  },
+  {
+    "anchor_start": 4320,
+    "anchors": 32,
+    "sum_incidences": 26864,
+    "new_sums": 1581,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 45.26648474100011
+  },
+  {
+    "anchor_start": 4352,
+    "anchors": 32,
+    "sum_incidences": 21359,
+    "new_sums": 8103,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 45.5241459519998
+  },
+  {
+    "anchor_start": 4384,
+    "anchors": 32,
+    "sum_incidences": 23965,
+    "new_sums": 8484,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 45.83354834800002
+  },
+  {
+    "anchor_start": 4416,
+    "anchors": 32,
+    "sum_incidences": 21009,
+    "new_sums": 6986,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 46.05383629500011
+  },
+  {
+    "anchor_start": 4448,
+    "anchors": 32,
+    "sum_incidences": 18510,
+    "new_sums": 5824,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 46.24392523400002
+  },
+  {
+    "anchor_start": 4480,
+    "anchors": 32,
+    "sum_incidences": 20274,
+    "new_sums": 6095,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 46.425815835999856
+  },
+  {
+    "anchor_start": 4512,
+    "anchors": 32,
+    "sum_incidences": 17910,
+    "new_sums": 3154,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 46.55690955499995
+  },
+  {
+    "anchor_start": 4544,
+    "anchors": 32,
+    "sum_incidences": 21150,
+    "new_sums": 8087,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 46.81480607200001
+  },
+  {
+    "anchor_start": 4576,
+    "anchors": 32,
+    "sum_incidences": 23474,
+    "new_sums": 7040,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 47.11707040700003
+  },
+  {
+    "anchor_start": 4608,
+    "anchors": 32,
+    "sum_incidences": 21984,
+    "new_sums": 6204,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 47.480327868999666
+  },
+  {
+    "anchor_start": 4640,
+    "anchors": 32,
+    "sum_incidences": 22673,
+    "new_sums": 1534,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 47.65815989900011
+  },
+  {
+    "anchor_start": 4672,
+    "anchors": 32,
+    "sum_incidences": 22695,
+    "new_sums": 3132,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 47.924317859999974
+  },
+  {
+    "anchor_start": 4704,
+    "anchors": 32,
+    "sum_incidences": 24789,
+    "new_sums": 1681,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 48.12926756299976
+  },
+  {
+    "anchor_start": 4736,
+    "anchors": 32,
+    "sum_incidences": 22785,
+    "new_sums": 1592,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 48.315151960000094
+  },
+  {
+    "anchor_start": 4768,
+    "anchors": 32,
+    "sum_incidences": 23746,
+    "new_sums": 4166,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 48.63422175799997
+  },
+  {
+    "anchor_start": 4800,
+    "anchors": 32,
+    "sum_incidences": 21393,
+    "new_sums": 2803,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 48.818942677999985
+  },
+  {
+    "anchor_start": 4832,
+    "anchors": 32,
+    "sum_incidences": 25219,
+    "new_sums": 990,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 48.92844185900003
+  },
+  {
+    "anchor_start": 4864,
+    "anchors": 32,
+    "sum_incidences": 23319,
+    "new_sums": 3664,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 49.21589710699982
+  },
+  {
+    "anchor_start": 4896,
+    "anchors": 32,
+    "sum_incidences": 21396,
+    "new_sums": 816,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 49.433775261999926
+  },
+  {
+    "anchor_start": 4928,
+    "anchors": 32,
+    "sum_incidences": 23767,
+    "new_sums": 1085,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 49.5712674829997
+  },
+  {
+    "anchor_start": 4960,
+    "anchors": 32,
+    "sum_incidences": 21884,
+    "new_sums": 1522,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 49.725267685999825
+  },
+  {
+    "anchor_start": 4992,
+    "anchors": 32,
+    "sum_incidences": 23277,
+    "new_sums": 851,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 49.85605118500007
+  },
+  {
+    "anchor_start": 5024,
+    "anchors": 32,
+    "sum_incidences": 23574,
+    "new_sums": 780,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 50.00323482399972
+  },
+  {
+    "anchor_start": 5056,
+    "anchors": 32,
+    "sum_incidences": 22744,
+    "new_sums": 3384,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 50.202148313999714
+  },
+  {
+    "anchor_start": 5088,
+    "anchors": 32,
+    "sum_incidences": 22381,
+    "new_sums": 612,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 50.31655147299989
+  },
+  {
+    "anchor_start": 5120,
+    "anchors": 32,
+    "sum_incidences": 23273,
+    "new_sums": 1233,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 50.46052143499992
+  },
+  {
+    "anchor_start": 5152,
+    "anchors": 32,
+    "sum_incidences": 22840,
+    "new_sums": 492,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 50.58581603999983
+  },
+  {
+    "anchor_start": 5184,
+    "anchors": 32,
+    "sum_incidences": 23745,
+    "new_sums": 1197,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 50.71488428099974
+  },
+  {
+    "anchor_start": 5216,
+    "anchors": 32,
+    "sum_incidences": 21912,
+    "new_sums": 2044,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 50.86978187399973
+  },
+  {
+    "anchor_start": 5248,
+    "anchors": 32,
+    "sum_incidences": 23831,
+    "new_sums": 463,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 50.97821149099991
+  },
+  {
+    "anchor_start": 5280,
+    "anchors": 32,
+    "sum_incidences": 23758,
+    "new_sums": 5318,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 51.19072189799999
+  },
+  {
+    "anchor_start": 5312,
+    "anchors": 32,
+    "sum_incidences": 22288,
+    "new_sums": 292,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 51.303473179999855
+  },
+  {
+    "anchor_start": 5344,
+    "anchors": 32,
+    "sum_incidences": 23363,
+    "new_sums": 959,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 51.44220387999985
+  },
+  {
+    "anchor_start": 5376,
+    "anchors": 32,
+    "sum_incidences": 23626,
+    "new_sums": 251,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 51.51749785999982
+  },
+  {
+    "anchor_start": 5408,
+    "anchors": 32,
+    "sum_incidences": 23071,
+    "new_sums": 1443,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 51.611012887000015
+  },
+  {
+    "anchor_start": 5440,
+    "anchors": 32,
+    "sum_incidences": 23609,
+    "new_sums": 4170,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 51.85574666399998
+  },
+  {
+    "anchor_start": 5472,
+    "anchors": 32,
+    "sum_incidences": 22931,
+    "new_sums": 1170,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 51.99381622300007
+  },
+  {
+    "anchor_start": 5504,
+    "anchors": 32,
+    "sum_incidences": 22732,
+    "new_sums": 649,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 52.10261659099979
+  },
+  {
+    "anchor_start": 5536,
+    "anchors": 32,
+    "sum_incidences": 25527,
+    "new_sums": 388,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 52.21078839699976
+  },
+  {
+    "anchor_start": 5568,
+    "anchors": 32,
+    "sum_incidences": 21594,
+    "new_sums": 344,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 52.324279038999975
+  },
+  {
+    "anchor_start": 5600,
+    "anchors": 32,
+    "sum_incidences": 24108,
+    "new_sums": 106,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 52.4085515769998
+  },
+  {
+    "anchor_start": 5632,
+    "anchors": 32,
+    "sum_incidences": 22313,
+    "new_sums": 3571,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 52.66020553499993
+  },
+  {
+    "anchor_start": 5664,
+    "anchors": 32,
+    "sum_incidences": 22562,
+    "new_sums": 124,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 52.77379003899978
+  },
+  {
+    "anchor_start": 5696,
+    "anchors": 32,
+    "sum_incidences": 24549,
+    "new_sums": 162,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 52.890173632999904
+  },
+  {
+    "anchor_start": 5728,
+    "anchors": 32,
+    "sum_incidences": 23019,
+    "new_sums": 120,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 53.01696480999999
+  },
+  {
+    "anchor_start": 5760,
+    "anchors": 32,
+    "sum_incidences": 21116,
+    "new_sums": 3144,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 53.21202764999998
+  },
+  {
+    "anchor_start": 5792,
+    "anchors": 32,
+    "sum_incidences": 24641,
+    "new_sums": 86,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 53.32450467699982
+  },
+  {
+    "anchor_start": 5824,
+    "anchors": 32,
+    "sum_incidences": 22763,
+    "new_sums": 228,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 53.43371118999994
+  },
+  {
+    "anchor_start": 5856,
+    "anchors": 32,
+    "sum_incidences": 21185,
+    "new_sums": 137,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 53.534819828999844
+  },
+  {
+    "anchor_start": 5888,
+    "anchors": 32,
+    "sum_incidences": 25362,
+    "new_sums": 1421,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 53.68471661100011
+  },
+  {
+    "anchor_start": 5920,
+    "anchors": 32,
+    "sum_incidences": 23825,
+    "new_sums": 363,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 53.80438108399994
+  },
+  {
+    "anchor_start": 5952,
+    "anchors": 32,
+    "sum_incidences": 29555,
+    "new_sums": 2621,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 53.977826753000045
+  },
+  {
+    "anchor_start": 5984,
+    "anchors": 32,
+    "sum_incidences": 27428,
+    "new_sums": 428,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 54.094266270999924
+  },
+  {
+    "anchor_start": 6016,
+    "anchors": 32,
+    "sum_incidences": 23716,
+    "new_sums": 226,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 54.22204710699998
+  },
+  {
+    "anchor_start": 6048,
+    "anchors": 32,
+    "sum_incidences": 26045,
+    "new_sums": 1421,
+    "admitted": 3,
+    "free": 0,
+    "seconds": 54.40094331099999
+  },
+  {
+    "anchor_start": 6080,
+    "anchors": 32,
+    "sum_incidences": 21252,
+    "new_sums": 92,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 54.51236691299982
+  },
+  {
+    "anchor_start": 6112,
+    "anchors": 32,
+    "sum_incidences": 20421,
+    "new_sums": 3855,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 54.76387269099996
+  },
+  {
+    "anchor_start": 6144,
+    "anchors": 32,
+    "sum_incidences": 18829,
+    "new_sums": 8077,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 55.38799260799988
+  },
+  {
+    "anchor_start": 6176,
+    "anchors": 32,
+    "sum_incidences": 20194,
+    "new_sums": 8384,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 55.88952148899989
+  },
+  {
+    "anchor_start": 6208,
+    "anchors": 32,
+    "sum_incidences": 19402,
+    "new_sums": 2218,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 56.015338821000114
+  },
+  {
+    "anchor_start": 6240,
+    "anchors": 32,
+    "sum_incidences": 20463,
+    "new_sums": 4207,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 56.32904794199976
+  },
+  {
+    "anchor_start": 6272,
+    "anchors": 32,
+    "sum_incidences": 20618,
+    "new_sums": 7610,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 56.64141409900003
+  },
+  {
+    "anchor_start": 6304,
+    "anchors": 32,
+    "sum_incidences": 23690,
+    "new_sums": 4324,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 56.93001623400005
+  },
+  {
+    "anchor_start": 6336,
+    "anchors": 32,
+    "sum_incidences": 21297,
+    "new_sums": 8439,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 57.357591675000094
+  },
+  {
+    "anchor_start": 6368,
+    "anchors": 32,
+    "sum_incidences": 23959,
+    "new_sums": 5367,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 57.65862246200004
+  },
+  {
+    "anchor_start": 6400,
+    "anchors": 32,
+    "sum_incidences": 18281,
+    "new_sums": 1987,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 57.857492514000114
+  },
+  {
+    "anchor_start": 6432,
+    "anchors": 32,
+    "sum_incidences": 20576,
+    "new_sums": 3331,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 58.12578020299998
+  },
+  {
+    "anchor_start": 6464,
+    "anchors": 32,
+    "sum_incidences": 21135,
+    "new_sums": 3338,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 58.38407824599972
+  },
+  {
+    "anchor_start": 6496,
+    "anchors": 32,
+    "sum_incidences": 18089,
+    "new_sums": 7529,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 58.8543718410001
+  },
+  {
+    "anchor_start": 6528,
+    "anchors": 32,
+    "sum_incidences": 19780,
+    "new_sums": 7060,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 59.14177360099984
+  },
+  {
+    "anchor_start": 6560,
+    "anchors": 28,
+    "sum_incidences": 19524,
+    "new_sums": 1723,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 59.265820336999695
+  }
+]

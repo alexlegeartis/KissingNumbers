@@ -1,0 +1,249 @@
+{"anchor_start": 0, "anchors": 32, "sum_incidences": 22768, "new_sums": 17225, "admitted": 4, "free": 0, "seconds": 1.1683235720001903}
+{"anchor_start": 32, "anchors": 32, "sum_incidences": 18765, "new_sums": 15735, "admitted": 0, "free": 0, "seconds": 2.0973741419998078}
+{"anchor_start": 64, "anchors": 32, "sum_incidences": 18297, "new_sums": 14044, "admitted": 0, "free": 0, "seconds": 2.9290220170000794}
+{"anchor_start": 96, "anchors": 32, "sum_incidences": 21272, "new_sums": 13190, "admitted": 3, "free": 0, "seconds": 3.58458138900005}
+{"anchor_start": 128, "anchors": 32, "sum_incidences": 20036, "new_sums": 12724, "admitted": 3, "free": 0, "seconds": 4.425112965000153}
+{"anchor_start": 160, "anchors": 32, "sum_incidences": 18685, "new_sums": 12429, "admitted": 0, "free": 0, "seconds": 5.114491858999827}
+{"anchor_start": 192, "anchors": 32, "sum_incidences": 24221, "new_sums": 14149, "admitted": 5, "free": 0, "seconds": 5.882335636999869}
+{"anchor_start": 224, "anchors": 32, "sum_incidences": 20941, "new_sums": 13754, "admitted": 2, "free": 0, "seconds": 6.497421119000137}
+{"anchor_start": 256, "anchors": 32, "sum_incidences": 24764, "new_sums": 11709, "admitted": 1, "free": 0, "seconds": 7.012616526999864}
+{"anchor_start": 288, "anchors": 32, "sum_incidences": 19235, "new_sums": 11699, "admitted": 0, "free": 0, "seconds": 7.592614944000161}
+{"anchor_start": 320, "anchors": 32, "sum_incidences": 20413, "new_sums": 10250, "admitted": 0, "free": 0, "seconds": 8.127903025999785}
+{"anchor_start": 352, "anchors": 32, "sum_incidences": 20597, "new_sums": 10345, "admitted": 0, "free": 0, "seconds": 8.5941934880002}
+{"anchor_start": 384, "anchors": 32, "sum_incidences": 19890, "new_sums": 13392, "admitted": 0, "free": 0, "seconds": 9.284121326999866}
+{"anchor_start": 416, "anchors": 32, "sum_incidences": 17833, "new_sums": 10328, "admitted": 0, "free": 0, "seconds": 9.726716700999987}
+{"anchor_start": 448, "anchors": 32, "sum_incidences": 21131, "new_sums": 12220, "admitted": 0, "free": 0, "seconds": 10.161439274999793}
+{"anchor_start": 480, "anchors": 32, "sum_incidences": 21217, "new_sums": 9137, "admitted": 0, "free": 0, "seconds": 10.517596871000023}
+{"anchor_start": 512, "anchors": 32, "sum_incidences": 25604, "new_sums": 16535, "admitted": 0, "free": 0, "seconds": 11.27476459699983}
+{"anchor_start": 544, "anchors": 32, "sum_incidences": 24733, "new_sums": 18108, "admitted": 0, "free": 0, "seconds": 11.939985563999926}
+{"anchor_start": 576, "anchors": 32, "sum_incidences": 28346, "new_sums": 16118, "admitted": 0, "free": 0, "seconds": 12.626666016999934}
+{"anchor_start": 608, "anchors": 32, "sum_incidences": 27781, "new_sums": 13314, "admitted": 0, "free": 0, "seconds": 13.144917388000067}
+{"anchor_start": 640, "anchors": 32, "sum_incidences": 23547, "new_sums": 14445, "admitted": 0, "free": 0, "seconds": 13.761506160999943}
+{"anchor_start": 672, "anchors": 32, "sum_incidences": 26151, "new_sums": 14328, "admitted": 2, "free": 0, "seconds": 14.233299310999882}
+{"anchor_start": 704, "anchors": 32, "sum_incidences": 20987, "new_sums": 8061, "admitted": 1, "free": 0, "seconds": 14.528367764999985}
+{"anchor_start": 736, "anchors": 32, "sum_incidences": 22076, "new_sums": 10679, "admitted": 0, "free": 0, "seconds": 14.912646324999969}
+{"anchor_start": 768, "anchors": 32, "sum_incidences": 25085, "new_sums": 13450, "admitted": 2, "free": 0, "seconds": 15.392667923999852}
+{"anchor_start": 800, "anchors": 32, "sum_incidences": 21338, "new_sums": 13542, "admitted": 0, "free": 0, "seconds": 15.869743594999818}
+{"anchor_start": 832, "anchors": 32, "sum_incidences": 22898, "new_sums": 10748, "admitted": 0, "free": 0, "seconds": 16.210787338000046}
+{"anchor_start": 864, "anchors": 32, "sum_incidences": 24260, "new_sums": 14586, "admitted": 0, "free": 0, "seconds": 16.72128642100006}
+{"anchor_start": 896, "anchors": 32, "sum_incidences": 22966, "new_sums": 10174, "admitted": 0, "free": 0, "seconds": 17.04809891800005}
+{"anchor_start": 928, "anchors": 32, "sum_incidences": 22099, "new_sums": 12171, "admitted": 0, "free": 0, "seconds": 17.48870998099983}
+{"anchor_start": 960, "anchors": 32, "sum_incidences": 23662, "new_sums": 8441, "admitted": 0, "free": 0, "seconds": 17.776024409}
+{"anchor_start": 992, "anchors": 32, "sum_incidences": 22041, "new_sums": 9518, "admitted": 0, "free": 0, "seconds": 18.126852126999893}
+{"anchor_start": 1024, "anchors": 32, "sum_incidences": 25757, "new_sums": 10618, "admitted": 2, "free": 0, "seconds": 18.607295093000175}
+{"anchor_start": 1056, "anchors": 32, "sum_incidences": 22055, "new_sums": 10330, "admitted": 0, "free": 0, "seconds": 18.977613097999892}
+{"anchor_start": 1088, "anchors": 32, "sum_incidences": 23247, "new_sums": 9190, "admitted": 0, "free": 0, "seconds": 19.32436470599987}
+{"anchor_start": 1120, "anchors": 32, "sum_incidences": 24234, "new_sums": 10805, "admitted": 0, "free": 0, "seconds": 19.728795226999864}
+{"anchor_start": 1152, "anchors": 32, "sum_incidences": 22130, "new_sums": 7468, "admitted": 0, "free": 0, "seconds": 20.01279694799996}
+{"anchor_start": 1184, "anchors": 32, "sum_incidences": 23825, "new_sums": 7191, "admitted": 0, "free": 0, "seconds": 20.309882030000153}
+{"anchor_start": 1216, "anchors": 32, "sum_incidences": 23617, "new_sums": 8698, "admitted": 0, "free": 0, "seconds": 20.609594346999984}
+{"anchor_start": 1248, "anchors": 32, "sum_incidences": 22291, "new_sums": 5715, "admitted": 0, "free": 0, "seconds": 20.83927794600004}
+{"anchor_start": 1280, "anchors": 32, "sum_incidences": 23843, "new_sums": 10877, "admitted": 0, "free": 0, "seconds": 21.303738761000204}
+{"anchor_start": 1312, "anchors": 32, "sum_incidences": 23906, "new_sums": 5863, "admitted": 0, "free": 0, "seconds": 21.538966832999904}
+{"anchor_start": 1344, "anchors": 32, "sum_incidences": 21566, "new_sums": 9163, "admitted": 2, "free": 0, "seconds": 21.90948488899994}
+{"anchor_start": 1376, "anchors": 32, "sum_incidences": 24135, "new_sums": 6321, "admitted": 0, "free": 0, "seconds": 22.15859792099991}
+{"anchor_start": 1408, "anchors": 32, "sum_incidences": 22627, "new_sums": 5176, "admitted": 0, "free": 0, "seconds": 22.378972473999966}
+{"anchor_start": 1440, "anchors": 32, "sum_incidences": 23525, "new_sums": 7337, "admitted": 0, "free": 0, "seconds": 22.66126950099988}
+{"anchor_start": 1472, "anchors": 32, "sum_incidences": 21949, "new_sums": 4036, "admitted": 0, "free": 0, "seconds": 22.864594272999966}
+{"anchor_start": 1504, "anchors": 32, "sum_incidences": 22923, "new_sums": 8853, "admitted": 0, "free": 0, "seconds": 23.23962800399977}
+{"anchor_start": 1536, "anchors": 32, "sum_incidences": 23128, "new_sums": 4407, "admitted": 0, "free": 0, "seconds": 23.445182333000048}
+{"anchor_start": 1568, "anchors": 32, "sum_incidences": 23561, "new_sums": 4531, "admitted": 0, "free": 0, "seconds": 23.630642710999837}
+{"anchor_start": 1600, "anchors": 32, "sum_incidences": 21865, "new_sums": 5201, "admitted": 2, "free": 0, "seconds": 23.84573901800013}
+{"anchor_start": 1632, "anchors": 32, "sum_incidences": 23955, "new_sums": 3630, "admitted": 0, "free": 0, "seconds": 24.015128733999973}
+{"anchor_start": 1664, "anchors": 32, "sum_incidences": 21208, "new_sums": 2878, "admitted": 0, "free": 0, "seconds": 24.1565179170002}
+{"anchor_start": 1696, "anchors": 32, "sum_incidences": 23997, "new_sums": 7066, "admitted": 0, "free": 0, "seconds": 24.414201947000038}
+{"anchor_start": 1728, "anchors": 32, "sum_incidences": 24491, "new_sums": 2869, "admitted": 0, "free": 0, "seconds": 24.547625594999772}
+{"anchor_start": 1760, "anchors": 32, "sum_incidences": 21360, "new_sums": 4421, "admitted": 0, "free": 0, "seconds": 24.7546739469999}
+{"anchor_start": 1792, "anchors": 32, "sum_incidences": 23587, "new_sums": 6220, "admitted": 0, "free": 0, "seconds": 25.004530751999937}
+{"anchor_start": 1824, "anchors": 32, "sum_incidences": 22977, "new_sums": 2791, "admitted": 0, "free": 0, "seconds": 25.143146432999856}
+{"anchor_start": 1856, "anchors": 32, "sum_incidences": 24854, "new_sums": 3198, "admitted": 0, "free": 0, "seconds": 25.313082546999794}
+{"anchor_start": 1888, "anchors": 32, "sum_incidences": 22415, "new_sums": 3880, "admitted": 0, "free": 0, "seconds": 25.49715991999983}
+{"anchor_start": 1920, "anchors": 32, "sum_incidences": 23221, "new_sums": 2044, "admitted": 0, "free": 0, "seconds": 25.614494211999954}
+{"anchor_start": 1952, "anchors": 32, "sum_incidences": 21572, "new_sums": 8682, "admitted": 0, "free": 0, "seconds": 25.940343828000096}
+{"anchor_start": 1984, "anchors": 32, "sum_incidences": 23637, "new_sums": 12357, "admitted": 0, "free": 0, "seconds": 26.409822149999854}
+{"anchor_start": 2016, "anchors": 32, "sum_incidences": 20869, "new_sums": 11547, "admitted": 0, "free": 0, "seconds": 26.885301590999916}
+{"anchor_start": 2048, "anchors": 32, "sum_incidences": 17806, "new_sums": 8331, "admitted": 0, "free": 0, "seconds": 27.243536362000214}
+{"anchor_start": 2080, "anchors": 32, "sum_incidences": 20493, "new_sums": 9853, "admitted": 0, "free": 0, "seconds": 27.641047995000008}
+{"anchor_start": 2112, "anchors": 32, "sum_incidences": 18325, "new_sums": 7212, "admitted": 0, "free": 0, "seconds": 27.97644871800003}
+{"anchor_start": 2144, "anchors": 32, "sum_incidences": 21376, "new_sums": 7564, "admitted": 0, "free": 0, "seconds": 28.32472758799986}
+{"anchor_start": 2176, "anchors": 32, "sum_incidences": 24808, "new_sums": 10591, "admitted": 0, "free": 0, "seconds": 28.833738455000002}
+{"anchor_start": 2208, "anchors": 32, "sum_incidences": 21137, "new_sums": 9209, "admitted": 0, "free": 0, "seconds": 29.154078575999847}
+{"anchor_start": 2240, "anchors": 32, "sum_incidences": 26948, "new_sums": 10863, "admitted": 0, "free": 0, "seconds": 29.497969939000086}
+{"anchor_start": 2272, "anchors": 32, "sum_incidences": 28709, "new_sums": 12090, "admitted": 0, "free": 0, "seconds": 29.933301109999775}
+{"anchor_start": 2304, "anchors": 32, "sum_incidences": 21367, "new_sums": 10171, "admitted": 0, "free": 0, "seconds": 30.364605029999893}
+{"anchor_start": 2336, "anchors": 32, "sum_incidences": 24886, "new_sums": 11729, "admitted": 0, "free": 0, "seconds": 30.750463759000013}
+{"anchor_start": 2368, "anchors": 32, "sum_incidences": 27955, "new_sums": 8312, "admitted": 0, "free": 0, "seconds": 31.036580069000138}
+{"anchor_start": 2400, "anchors": 32, "sum_incidences": 24693, "new_sums": 9533, "admitted": 0, "free": 0, "seconds": 31.367413857999964}
+{"anchor_start": 2432, "anchors": 32, "sum_incidences": 19134, "new_sums": 12932, "admitted": 0, "free": 0, "seconds": 31.848162521000177}
+{"anchor_start": 2464, "anchors": 32, "sum_incidences": 18563, "new_sums": 11350, "admitted": 0, "free": 0, "seconds": 32.36787312600018}
+{"anchor_start": 2496, "anchors": 32, "sum_incidences": 19159, "new_sums": 11680, "admitted": 3, "free": 0, "seconds": 32.936491054999806}
+{"anchor_start": 2528, "anchors": 32, "sum_incidences": 19510, "new_sums": 11326, "admitted": 1, "free": 0, "seconds": 33.4056123219998}
+{"anchor_start": 2560, "anchors": 32, "sum_incidences": 18443, "new_sums": 8909, "admitted": 0, "free": 0, "seconds": 33.77542669500008}
+{"anchor_start": 2592, "anchors": 32, "sum_incidences": 21592, "new_sums": 10598, "admitted": 4, "free": 0, "seconds": 34.14401288199997}
+{"anchor_start": 2624, "anchors": 32, "sum_incidences": 21345, "new_sums": 7828, "admitted": 0, "free": 0, "seconds": 34.41601884800002}
+{"anchor_start": 2656, "anchors": 32, "sum_incidences": 24648, "new_sums": 6319, "admitted": 0, "free": 0, "seconds": 34.62533395799983}
+{"anchor_start": 2688, "anchors": 32, "sum_incidences": 20622, "new_sums": 6265, "admitted": 0, "free": 0, "seconds": 34.85084999599985}
+{"anchor_start": 2720, "anchors": 32, "sum_incidences": 23738, "new_sums": 9816, "admitted": 0, "free": 0, "seconds": 35.18878333800012}
+{"anchor_start": 2752, "anchors": 32, "sum_incidences": 29643, "new_sums": 7676, "admitted": 0, "free": 0, "seconds": 35.461716158999934}
+{"anchor_start": 2784, "anchors": 32, "sum_incidences": 24538, "new_sums": 6546, "admitted": 0, "free": 0, "seconds": 35.70938994900007}
+{"anchor_start": 2816, "anchors": 32, "sum_incidences": 19223, "new_sums": 4566, "admitted": 0, "free": 0, "seconds": 35.909634408999864}
+{"anchor_start": 2848, "anchors": 32, "sum_incidences": 25246, "new_sums": 8271, "admitted": 0, "free": 0, "seconds": 36.198622399000215}
+{"anchor_start": 2880, "anchors": 32, "sum_incidences": 21533, "new_sums": 4843, "admitted": 0, "free": 0, "seconds": 36.42360231500015}
+{"anchor_start": 2912, "anchors": 32, "sum_incidences": 26015, "new_sums": 6361, "admitted": 0, "free": 0, "seconds": 36.63362406499982}
+{"anchor_start": 2944, "anchors": 32, "sum_incidences": 24882, "new_sums": 5229, "admitted": 0, "free": 0, "seconds": 36.80403490700019}
+{"anchor_start": 2976, "anchors": 32, "sum_incidences": 24082, "new_sums": 3398, "admitted": 0, "free": 0, "seconds": 36.956903308000165}
+{"anchor_start": 3008, "anchors": 32, "sum_incidences": 22086, "new_sums": 5442, "admitted": 2, "free": 0, "seconds": 37.27389834299993}
+{"anchor_start": 3040, "anchors": 32, "sum_incidences": 23789, "new_sums": 5169, "admitted": 2, "free": 0, "seconds": 37.51615261500001}
+{"anchor_start": 3072, "anchors": 32, "sum_incidences": 23716, "new_sums": 7313, "admitted": 0, "free": 0, "seconds": 37.86541099499982}
+{"anchor_start": 3104, "anchors": 32, "sum_incidences": 27879, "new_sums": 3717, "admitted": 0, "free": 0, "seconds": 38.034891588999926}
+{"anchor_start": 3136, "anchors": 32, "sum_incidences": 25960, "new_sums": 5003, "admitted": 2, "free": 0, "seconds": 38.2692288180001}
+{"anchor_start": 3168, "anchors": 32, "sum_incidences": 25398, "new_sums": 4826, "admitted": 0, "free": 0, "seconds": 38.502030988000115}
+{"anchor_start": 3200, "anchors": 32, "sum_incidences": 18762, "new_sums": 1594, "admitted": 0, "free": 0, "seconds": 38.62233208199996}
+{"anchor_start": 3232, "anchors": 32, "sum_incidences": 27338, "new_sums": 2325, "admitted": 0, "free": 0, "seconds": 38.74716385900001}
+{"anchor_start": 3264, "anchors": 32, "sum_incidences": 25289, "new_sums": 4868, "admitted": 0, "free": 0, "seconds": 38.97945970599994}
+{"anchor_start": 3296, "anchors": 32, "sum_incidences": 23510, "new_sums": 5570, "admitted": 0, "free": 0, "seconds": 39.247081223999885}
+{"anchor_start": 3328, "anchors": 32, "sum_incidences": 27240, "new_sums": 2085, "admitted": 0, "free": 0, "seconds": 39.39600594400008}
+{"anchor_start": 3360, "anchors": 32, "sum_incidences": 20860, "new_sums": 963, "admitted": 0, "free": 0, "seconds": 39.48571854700003}
+{"anchor_start": 3392, "anchors": 32, "sum_incidences": 23143, "new_sums": 3655, "admitted": 0, "free": 0, "seconds": 39.66891119000002}
+{"anchor_start": 3424, "anchors": 32, "sum_incidences": 26225, "new_sums": 2744, "admitted": 1, "free": 0, "seconds": 39.80964193799991}
+{"anchor_start": 3456, "anchors": 32, "sum_incidences": 27838, "new_sums": 3820, "admitted": 1, "free": 0, "seconds": 39.98467040600008}
+{"anchor_start": 3488, "anchors": 32, "sum_incidences": 25373, "new_sums": 5203, "admitted": 0, "free": 0, "seconds": 40.20418437299986}
+{"anchor_start": 3520, "anchors": 32, "sum_incidences": 23299, "new_sums": 2582, "admitted": 0, "free": 0, "seconds": 40.35966467600019}
+{"anchor_start": 3552, "anchors": 32, "sum_incidences": 22225, "new_sums": 3979, "admitted": 4, "free": 0, "seconds": 40.5804032330002}
+{"anchor_start": 3584, "anchors": 32, "sum_incidences": 24180, "new_sums": 1747, "admitted": 0, "free": 0, "seconds": 40.7103852209998}
+{"anchor_start": 3616, "anchors": 32, "sum_incidences": 23254, "new_sums": 1744, "admitted": 0, "free": 0, "seconds": 40.82915019800021}
+{"anchor_start": 3648, "anchors": 32, "sum_incidences": 27294, "new_sums": 1834, "admitted": 0, "free": 0, "seconds": 40.949171304000174}
+{"anchor_start": 3680, "anchors": 32, "sum_incidences": 22474, "new_sums": 2246, "admitted": 0, "free": 0, "seconds": 41.12147644600009}
+{"anchor_start": 3712, "anchors": 32, "sum_incidences": 22822, "new_sums": 2561, "admitted": 0, "free": 0, "seconds": 41.26461622299985}
+{"anchor_start": 3744, "anchors": 32, "sum_incidences": 20632, "new_sums": 1206, "admitted": 0, "free": 0, "seconds": 41.38958299400019}
+{"anchor_start": 3776, "anchors": 32, "sum_incidences": 22847, "new_sums": 2562, "admitted": 0, "free": 0, "seconds": 41.56280592499979}
+{"anchor_start": 3808, "anchors": 32, "sum_incidences": 29673, "new_sums": 3142, "admitted": 0, "free": 0, "seconds": 41.72827897800016}
+{"anchor_start": 3840, "anchors": 32, "sum_incidences": 25399, "new_sums": 4799, "admitted": 0, "free": 0, "seconds": 41.921837046999826}
+{"anchor_start": 3872, "anchors": 32, "sum_incidences": 19221, "new_sums": 456, "admitted": 0, "free": 0, "seconds": 42.00015875200006}
+{"anchor_start": 3904, "anchors": 32, "sum_incidences": 25238, "new_sums": 4572, "admitted": 0, "free": 0, "seconds": 42.19881024999995}
+{"anchor_start": 3936, "anchors": 32, "sum_incidences": 23251, "new_sums": 5325, "admitted": 0, "free": 0, "seconds": 42.395874966000065}
+{"anchor_start": 3968, "anchors": 32, "sum_incidences": 20596, "new_sums": 4822, "admitted": 0, "free": 0, "seconds": 42.58082771499994}
+{"anchor_start": 4000, "anchors": 32, "sum_incidences": 18833, "new_sums": 9771, "admitted": 0, "free": 0, "seconds": 43.00122878399998}
+{"anchor_start": 4032, "anchors": 32, "sum_incidences": 19319, "new_sums": 10113, "admitted": 0, "free": 0, "seconds": 43.39142921800021}
+{"anchor_start": 4064, "anchors": 32, "sum_incidences": 19108, "new_sums": 7902, "admitted": 0, "free": 0, "seconds": 43.71854053600009}
+{"anchor_start": 4096, "anchors": 32, "sum_incidences": 18563, "new_sums": 7667, "admitted": 0, "free": 0, "seconds": 44.0202760369998}
+{"anchor_start": 4128, "anchors": 32, "sum_incidences": 19134, "new_sums": 7401, "admitted": 0, "free": 0, "seconds": 44.278203605999806}
+{"anchor_start": 4160, "anchors": 32, "sum_incidences": 24693, "new_sums": 2827, "admitted": 0, "free": 0, "seconds": 44.416224406999845}
+{"anchor_start": 4192, "anchors": 32, "sum_incidences": 27955, "new_sums": 3703, "admitted": 0, "free": 0, "seconds": 44.56988374599996}
+{"anchor_start": 4224, "anchors": 32, "sum_incidences": 24886, "new_sums": 1954, "admitted": 0, "free": 0, "seconds": 44.69687131499995}
+{"anchor_start": 4256, "anchors": 32, "sum_incidences": 21367, "new_sums": 843, "admitted": 0, "free": 0, "seconds": 44.79882624699985}
+{"anchor_start": 4288, "anchors": 32, "sum_incidences": 28709, "new_sums": 1665, "admitted": 0, "free": 0, "seconds": 44.90565040399997}
+{"anchor_start": 4320, "anchors": 32, "sum_incidences": 26948, "new_sums": 1950, "admitted": 0, "free": 0, "seconds": 45.01472731400008}
+{"anchor_start": 4352, "anchors": 32, "sum_incidences": 21137, "new_sums": 6904, "admitted": 0, "free": 0, "seconds": 45.25897162199999}
+{"anchor_start": 4384, "anchors": 32, "sum_incidences": 24808, "new_sums": 9622, "admitted": 0, "free": 0, "seconds": 45.64892624899994}
+{"anchor_start": 4416, "anchors": 32, "sum_incidences": 21376, "new_sums": 6931, "admitted": 0, "free": 0, "seconds": 45.92149179599983}
+{"anchor_start": 4448, "anchors": 32, "sum_incidences": 18325, "new_sums": 5679, "admitted": 0, "free": 0, "seconds": 46.1206357330002}
+{"anchor_start": 4480, "anchors": 32, "sum_incidences": 20493, "new_sums": 6295, "admitted": 0, "free": 0, "seconds": 46.35560111799987}
+{"anchor_start": 4512, "anchors": 32, "sum_incidences": 17806, "new_sums": 3202, "admitted": 0, "free": 0, "seconds": 46.53555651099987}
+{"anchor_start": 4544, "anchors": 32, "sum_incidences": 20869, "new_sums": 7555, "admitted": 0, "free": 0, "seconds": 46.85194155099998}
+{"anchor_start": 4576, "anchors": 32, "sum_incidences": 23637, "new_sums": 7335, "admitted": 0, "free": 0, "seconds": 47.134935554000094}
+{"anchor_start": 4608, "anchors": 32, "sum_incidences": 21572, "new_sums": 6398, "admitted": 0, "free": 0, "seconds": 47.45160527400003}
+{"anchor_start": 4640, "anchors": 32, "sum_incidences": 23221, "new_sums": 1646, "admitted": 0, "free": 0, "seconds": 47.555753273999926}
+{"anchor_start": 4672, "anchors": 32, "sum_incidences": 22415, "new_sums": 2838, "admitted": 0, "free": 0, "seconds": 47.68572818299981}
+{"anchor_start": 4704, "anchors": 32, "sum_incidences": 24854, "new_sums": 1939, "admitted": 0, "free": 0, "seconds": 47.80347548200007}
+{"anchor_start": 4736, "anchors": 32, "sum_incidences": 22977, "new_sums": 1627, "admitted": 0, "free": 0, "seconds": 47.90338340900007}
+{"anchor_start": 4768, "anchors": 32, "sum_incidences": 23586, "new_sums": 3799, "admitted": 0, "free": 0, "seconds": 48.078042750999884}
+{"anchor_start": 4800, "anchors": 32, "sum_incidences": 21361, "new_sums": 3134, "admitted": 0, "free": 0, "seconds": 48.21583712399979}
+{"anchor_start": 4832, "anchors": 32, "sum_incidences": 24491, "new_sums": 984, "admitted": 0, "free": 0, "seconds": 48.314680528999816}
+{"anchor_start": 4864, "anchors": 32, "sum_incidences": 23996, "new_sums": 3693, "admitted": 0, "free": 0, "seconds": 48.492722764000064}
+{"anchor_start": 4896, "anchors": 32, "sum_incidences": 21209, "new_sums": 797, "admitted": 0, "free": 0, "seconds": 48.57412393000004}
+{"anchor_start": 4928, "anchors": 32, "sum_incidences": 23954, "new_sums": 1119, "admitted": 0, "free": 0, "seconds": 48.66308266399983}
+{"anchor_start": 4960, "anchors": 32, "sum_incidences": 21866, "new_sums": 1352, "admitted": 0, "free": 0, "seconds": 48.772398921999866}
+{"anchor_start": 4992, "anchors": 32, "sum_incidences": 23561, "new_sums": 1034, "admitted": 0, "free": 0, "seconds": 48.866478000999905}
+{"anchor_start": 5024, "anchors": 32, "sum_incidences": 23128, "new_sums": 771, "admitted": 0, "free": 0, "seconds": 48.95238841699984}
+{"anchor_start": 5056, "anchors": 32, "sum_incidences": 22924, "new_sums": 3392, "admitted": 0, "free": 0, "seconds": 49.10646768600009}
+{"anchor_start": 5088, "anchors": 32, "sum_incidences": 21948, "new_sums": 604, "admitted": 0, "free": 0, "seconds": 49.17565331900005}
+{"anchor_start": 5120, "anchors": 32, "sum_incidences": 23525, "new_sums": 1241, "admitted": 0, "free": 0, "seconds": 49.28690367699983}
+{"anchor_start": 5152, "anchors": 32, "sum_incidences": 22627, "new_sums": 465, "admitted": 0, "free": 0, "seconds": 49.36811187100011}
+{"anchor_start": 5184, "anchors": 32, "sum_incidences": 24135, "new_sums": 880, "admitted": 0, "free": 0, "seconds": 49.45275692999985}
+{"anchor_start": 5216, "anchors": 32, "sum_incidences": 21567, "new_sums": 2375, "admitted": 0, "free": 0, "seconds": 49.58304398300015}
+{"anchor_start": 5248, "anchors": 32, "sum_incidences": 23905, "new_sums": 467, "admitted": 0, "free": 0, "seconds": 49.65691796700003}
+{"anchor_start": 5280, "anchors": 32, "sum_incidences": 23843, "new_sums": 5306, "admitted": 0, "free": 0, "seconds": 49.86117216499997}
+{"anchor_start": 5312, "anchors": 32, "sum_incidences": 22291, "new_sums": 327, "admitted": 0, "free": 0, "seconds": 49.92206308499999}
+{"anchor_start": 5344, "anchors": 32, "sum_incidences": 23617, "new_sums": 870, "admitted": 0, "free": 0, "seconds": 50.01431351400015}
+{"anchor_start": 5376, "anchors": 32, "sum_incidences": 23825, "new_sums": 335, "admitted": 0, "free": 0, "seconds": 50.07981300399979}
+{"anchor_start": 5408, "anchors": 32, "sum_incidences": 22130, "new_sums": 1430, "admitted": 0, "free": 0, "seconds": 50.16743730600001}
+{"anchor_start": 5440, "anchors": 32, "sum_incidences": 24234, "new_sums": 4192, "admitted": 0, "free": 0, "seconds": 50.34351506599978}
+{"anchor_start": 5472, "anchors": 32, "sum_incidences": 23247, "new_sums": 1168, "admitted": 0, "free": 0, "seconds": 50.4446919359998}
+{"anchor_start": 5504, "anchors": 32, "sum_incidences": 22055, "new_sums": 645, "admitted": 0, "free": 0, "seconds": 50.528329142000075}
+{"anchor_start": 5536, "anchors": 32, "sum_incidences": 25756, "new_sums": 320, "admitted": 0, "free": 0, "seconds": 50.61115698100002}
+{"anchor_start": 5568, "anchors": 32, "sum_incidences": 22042, "new_sums": 421, "admitted": 0, "free": 0, "seconds": 50.68938379100018}
+{"anchor_start": 5600, "anchors": 32, "sum_incidences": 23662, "new_sums": 107, "admitted": 0, "free": 0, "seconds": 50.74967895100008}
+{"anchor_start": 5632, "anchors": 32, "sum_incidences": 22099, "new_sums": 3572, "admitted": 0, "free": 0, "seconds": 50.9046624839998}
+{"anchor_start": 5664, "anchors": 32, "sum_incidences": 22966, "new_sums": 120, "admitted": 0, "free": 0, "seconds": 50.97133835900013}
+{"anchor_start": 5696, "anchors": 32, "sum_incidences": 24260, "new_sums": 163, "admitted": 0, "free": 0, "seconds": 51.04338167200012}
+{"anchor_start": 5728, "anchors": 32, "sum_incidences": 22898, "new_sums": 99, "admitted": 0, "free": 0, "seconds": 51.11412033099987}
+{"anchor_start": 5760, "anchors": 32, "sum_incidences": 21338, "new_sums": 3164, "admitted": 0, "free": 0, "seconds": 51.251206765999996}
+{"anchor_start": 5792, "anchors": 32, "sum_incidences": 25085, "new_sums": 83, "admitted": 0, "free": 0, "seconds": 51.320265439000195}
+{"anchor_start": 5824, "anchors": 32, "sum_incidences": 22076, "new_sums": 230, "admitted": 0, "free": 0, "seconds": 51.39374755300014}
+{"anchor_start": 5856, "anchors": 32, "sum_incidences": 21238, "new_sums": 133, "admitted": 0, "free": 0, "seconds": 51.45237082899985}
+{"anchor_start": 5888, "anchors": 32, "sum_incidences": 25851, "new_sums": 1423, "admitted": 0, "free": 0, "seconds": 51.54798492600003}
+{"anchor_start": 5920, "anchors": 32, "sum_incidences": 23563, "new_sums": 363, "admitted": 0, "free": 0, "seconds": 51.6273748980002}
+{"anchor_start": 5952, "anchors": 32, "sum_incidences": 29077, "new_sums": 2205, "admitted": 0, "free": 0, "seconds": 51.756633927000166}
+{"anchor_start": 5984, "anchors": 32, "sum_incidences": 28185, "new_sums": 829, "admitted": 0, "free": 0, "seconds": 51.83537646800005}
+{"anchor_start": 6016, "anchors": 32, "sum_incidences": 23586, "new_sums": 235, "admitted": 0, "free": 0, "seconds": 51.91040178999992}
+{"anchor_start": 6048, "anchors": 32, "sum_incidences": 26078, "new_sums": 572, "admitted": 1, "free": 0, "seconds": 52.00335103999987}
+{"anchor_start": 6080, "anchors": 32, "sum_incidences": 20788, "new_sums": 955, "admitted": 2, "free": 0, "seconds": 52.09997912300014}
+{"anchor_start": 6112, "anchors": 32, "sum_incidences": 21131, "new_sums": 3346, "admitted": 0, "free": 0, "seconds": 52.25273183799982}
+{"anchor_start": 6144, "anchors": 32, "sum_incidences": 17833, "new_sums": 8425, "admitted": 0, "free": 0, "seconds": 52.609530665999955}
+{"anchor_start": 6176, "anchors": 32, "sum_incidences": 19890, "new_sums": 8632, "admitted": 0, "free": 0, "seconds": 52.94910191600002}
+{"anchor_start": 6208, "anchors": 32, "sum_incidences": 20597, "new_sums": 2124, "admitted": 0, "free": 0, "seconds": 53.06620996999982}
+{"anchor_start": 6240, "anchors": 32, "sum_incidences": 20413, "new_sums": 4394, "admitted": 0, "free": 0, "seconds": 53.27489110899978}
+{"anchor_start": 6272, "anchors": 32, "sum_incidences": 19235, "new_sums": 6316, "admitted": 0, "free": 0, "seconds": 53.53896271900021}
+{"anchor_start": 6304, "anchors": 32, "sum_incidences": 24764, "new_sums": 5348, "admitted": 0, "free": 0, "seconds": 53.725024545999986}
+{"anchor_start": 6336, "anchors": 32, "sum_incidences": 20941, "new_sums": 8746, "admitted": 0, "free": 0, "seconds": 54.00012315699996}
+{"anchor_start": 6368, "anchors": 32, "sum_incidences": 24221, "new_sums": 4007, "admitted": 0, "free": 0, "seconds": 54.15671554800019}
+{"anchor_start": 6400, "anchors": 32, "sum_incidences": 18685, "new_sums": 3319, "admitted": 0, "free": 0, "seconds": 54.3117009839998}
+{"anchor_start": 6432, "anchors": 32, "sum_incidences": 20036, "new_sums": 3250, "admitted": 0, "free": 0, "seconds": 54.47365149999996}
+{"anchor_start": 6464, "anchors": 32, "sum_incidences": 21272, "new_sums": 2062, "admitted": 0, "free": 0, "seconds": 54.59814705200006}
+{"anchor_start": 6496, "anchors": 32, "sum_incidences": 18297, "new_sums": 7995, "admitted": 0, "free": 0, "seconds": 54.924233334999826}
+{"anchor_start": 6528, "anchors": 32, "sum_incidences": 18765, "new_sums": 6453, "admitted": 0, "free": 0, "seconds": 55.19590961199992}
+{"anchor_start": 6560, "anchors": 32, "sum_incidences": 22768, "new_sums": 3167, "admitted": 0, "free": 0, "seconds": 55.334221652999986}
+OPTIMIZE 52
+MODEL 52 44 36 seconds 0.0004959610000696557
+/workspace/scratch/941a2e823e69/KissingNumbers/research/exceptional_tail_replacement_20261108/optimize_rational.py:21: RuntimeWarning: Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim.
+  ans=milp(np.r_[-np.ones(n),np.ones(len(old))],integrality=np.ones(n+len(old)),bounds=Bounds(0,1),constraints=LinearConstraint(mat,-np.inf,upper),options={'time_limit':seconds,'mip_rel_gap':0,'threads':int(os.environ.get('RESEARCH_THREADS','3'))})
+{
+  "dimension": 31,
+  "source": "verifications/improved/dim27-31-algebraic-completion/data/coordinates31_251196.npz",
+  "source_sha256": "02cddb863829f7298a1b80779603f3963f0c0db3eef0ff2a9050abe601e56127",
+  "baseline": 251196,
+  "tail_norm": 64,
+  "anchor_count": 6592,
+  "generated_incidences": 4704622,
+  "unique_new_sums": 1243881,
+  "admitted": 52,
+  "cutoff": 2,
+  "dot_products": 30130623536,
+  "optimization": {
+    "gain": 4,
+    "added": [
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "removed": [
+      12876,
+      12879,
+      238316,
+      238319
+    ],
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "new_conflicts": 36,
+    "numerical_gain_upper_bound": 4.0,
+    "scope": "Numerical optimizer, exact independent replay required for positive result."
+  },
+  "seconds": 56.087237834999996,
+  "scope": "Complete sum closure for every incumbent point in stated latitude layer paired with all incumbent points; blocker cutoff restricts optimization pool; numerical non-gain is not a global bound."
+}

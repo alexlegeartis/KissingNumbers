@@ -1,0 +1,41 @@
+{
+  "reviewed_at_utc": "2026-11-08T19:07:10.579Z",
+  "scope": "Bounded primary-source comparison for the 31D latitude contact exchange. Not an exhaustive worldwide-priority audit.",
+  "sources": [
+    {
+      "repo": "CDM1619/PackingStar",
+      "sha": "477df34cf2a09bb9476b735a685b538a82da8c55",
+      "date": "2026-10-28T20:50:24Z",
+      "url": "https://github.com/CDM1619/PackingStar/commit/477df34cf2a09bb9476b735a685b538a82da8c55",
+      "dimension31": 251169,
+      "readme_url": "https://github.com/CDM1619/PackingStar/blob/477df34cf2a09bb9476b735a685b538a82da8c55/README.md"
+    },
+    {
+      "repo": "k-nic/kissing_d25-31",
+      "sha": "b3768310ba566da5c8947546266c103fbcdce181",
+      "date": "2026-10-05T12:11:55Z",
+      "url": "https://github.com/k-nic/kissing_d25-31/commit/b3768310ba566da5c8947546266c103fbcdce181",
+      "dimension31": 238666,
+      "readme_url": "https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/README.md"
+    },
+    {
+      "repo": "Felpix-Studios/kissing-number",
+      "sha": "b823640f4e98134b9d55b27288132ee954a8affa",
+      "date": "2026-10-18T01:41:36Z",
+      "url": "https://github.com/Felpix-Studios/kissing-number/commit/b823640f4e98134b9d55b27288132ee954a8affa",
+      "dimension31": 241079,
+      "readme_url": "https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/README.md"
+    }
+  ],
+  "cohn": {
+    "url": "https://cohn.mit.edu/kissing-numbers/",
+    "fresh_status": "Failed to fetch: (502) Bad Gateway",
+    "fallback": "Earlier pinned November 4 snapshot is retained in common/source_review_20261104_algebraic.json; it is not a fresh leaderboard read."
+  },
+  "previous_repository": 251196,
+  "new_lower_bound": 251200,
+  "gain_over_previous_repository": 4,
+  "gain_over_packingstar": 31,
+  "verification": "Complete explicit integer coordinates; two independent complete pair enumerations, one direct integer with no antipodal compression; direct int64 changed pairs.",
+  "manuscript": "Unchanged."
+}

@@ -1,0 +1,45 @@
+{"anchor_start": 0, "anchors": 32, "sum_incidences": 28298, "new_sums": 25943, "admitted": 17, "free": 0, "seconds": 1.3129412640000737}
+{"anchor_start": 32, "anchors": 32, "sum_incidences": 29476, "new_sums": 24746, "admitted": 12, "free": 0, "seconds": 2.1225537660002374}
+{"anchor_start": 64, "anchors": 32, "sum_incidences": 35174, "new_sums": 29023, "admitted": 0, "free": 0, "seconds": 2.8927488310000626}
+{"anchor_start": 96, "anchors": 32, "sum_incidences": 35288, "new_sums": 21743, "admitted": 0, "free": 0, "seconds": 3.486702680000235}
+{"anchor_start": 128, "anchors": 32, "sum_incidences": 33219, "new_sums": 25052, "admitted": 7, "free": 0, "seconds": 4.225167402000352}
+{"anchor_start": 160, "anchors": 32, "sum_incidences": 32075, "new_sums": 23999, "admitted": 3, "free": 0, "seconds": 4.935095233000084}
+{"anchor_start": 192, "anchors": 32, "sum_incidences": 37489, "new_sums": 17619, "admitted": 0, "free": 0, "seconds": 5.354331590000129}
+{"anchor_start": 224, "anchors": 32, "sum_incidences": 36092, "new_sums": 15343, "admitted": 0, "free": 0, "seconds": 5.736290734000249}
+{"anchor_start": 256, "anchors": 32, "sum_incidences": 37528, "new_sums": 11768, "admitted": 0, "free": 0, "seconds": 6.033547871000337}
+{"anchor_start": 288, "anchors": 32, "sum_incidences": 32028, "new_sums": 14537, "admitted": 3, "free": 0, "seconds": 6.507130404000236}
+{"anchor_start": 320, "anchors": 32, "sum_incidences": 33225, "new_sums": 14720, "admitted": 3, "free": 0, "seconds": 6.9485455130002265}
+{"anchor_start": 352, "anchors": 32, "sum_incidences": 35352, "new_sums": 12649, "admitted": 0, "free": 0, "seconds": 7.3216724480002995}
+{"anchor_start": 384, "anchors": 32, "sum_incidences": 35123, "new_sums": 9888, "admitted": 0, "free": 0, "seconds": 7.58017634800035}
+{"anchor_start": 416, "anchors": 32, "sum_incidences": 29936, "new_sums": 19057, "admitted": 10, "free": 0, "seconds": 8.240047357000094}
+{"anchor_start": 448, "anchors": 32, "sum_incidences": 27767, "new_sums": 20759, "admitted": 13, "free": 0, "seconds": 8.924649586000214}
+OPTIMIZE 68
+MODEL 68 74 14 seconds 0.0005612599998130463
+/workspace/scratch/941a2e823e69/KissingNumbers/research/exceptional_tail_replacement_20261108/optimize_rational.py:21: RuntimeWarning: Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim.
+  ans=milp(np.r_[-np.ones(n),np.ones(len(old))],integrality=np.ones(n+len(old)),bounds=Bounds(0,1),constraints=LinearConstraint(mat,-np.inf,upper),options={'time_limit':seconds,'mip_rel_gap':0,'threads':int(os.environ.get('RESEARCH_THREADS','3'))})
+{
+  "dimension": 30,
+  "source": "verifications/improved/dim27-31-joint-refills/data/coordinates30_247972.npz",
+  "source_sha256": "d3c8767360bded77dec3cfc9263053c5bcdc65caaef1980954a6fb19217c1730",
+  "baseline": 247972,
+  "tail_norm": null,
+  "unpaired_anchor_family": true,
+  "anchor_count": 480,
+  "generated_incidences": 498070,
+  "unique_new_sums": 286846,
+  "admitted": 68,
+  "cutoff": 2,
+  "dot_products": 5203094672,
+  "optimization": {
+    "gain": 0,
+    "added": [],
+    "removed": [],
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "new_conflicts": 14,
+    "numerical_gain_upper_bound": -0.0,
+    "scope": "Numerical optimizer, exact independent replay required for positive result."
+  },
+  "seconds": 9.280650170000172,
+  "scope": "Complete sum closure for every incumbent point in stated latitude layer paired with all incumbent points; blocker cutoff restricts optimization pool; numerical non-gain is not a global bound."
+}

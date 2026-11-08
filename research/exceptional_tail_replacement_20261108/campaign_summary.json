@@ -1,0 +1,89 @@
+{
+  "certified_new_lower_bound": {
+    "dimension": 31,
+    "points": 251200,
+    "previous": 251196,
+    "gain": 4,
+    "package": "verifications/improved/dim31-latitude-contact-exchange",
+    "candidate_sha256": "b75a8e9d958017fe03926265f5ee9d42f24b16c9ec848414b4a4e7eba0d329ee"
+  },
+  "completed_reports": [
+    {
+      "path": "contact27/report.json",
+      "sha256": "c5c146072053571bea06703f966357214b0d2ddd20f75e42848059072bb1807a"
+    },
+    {
+      "path": "contact29/report.json",
+      "sha256": "cf6539bf692e037bb843fe10cc32da91d55fcb115d9fd957817f04688d4b8f13"
+    },
+    {
+      "path": "contact30/report.json",
+      "sha256": "2989240dfbc2c20379a9593f5e21718d50e9a3efb9db62e9c5c4b08110a8c8b8"
+    },
+    {
+      "path": "contact31/report.json",
+      "sha256": "4d45ae3f476c41893b4a2c509a024eba096a81d7d1d1a6d3038f1f11b8ee154c"
+    },
+    {
+      "path": "contact31_round2/report.json",
+      "sha256": "03d7f818e901447a4900b08356fe2f8c02e98c2f85c461c49ed2f2867d9b7264"
+    },
+    {
+      "path": "e6_axis28/report.json",
+      "sha256": "732f451ce1ed99e7327b9fde336790a94d69eed2e4cb5ef46a5bc424d777e27e"
+    },
+    {
+      "path": "e7_axis24/report.json",
+      "sha256": "848f329ad42a284f3258add4384f57d38519f5aaa37d590e359329f3b1065210"
+    },
+    {
+      "path": "sixes27/report.json",
+      "sha256": "e8a8d5765957a75d0919ea456464ff8abbb4d5de17360f92e118ac30009a2db5"
+    },
+    {
+      "path": "sixes31_cont/report.json",
+      "sha256": "c772ce89051217c1b77e7622d58d46e405770d4c552e4bbe13d42aeca5d6059d"
+    },
+    {
+      "path": "tetrads28/report.json",
+      "sha256": "fd2f7143b3c1e2f526242234ba8e302500f2857f71f2ae6bf1108ffdea3337c2"
+    },
+    {
+      "path": "tetrads29/report.json",
+      "sha256": "c73ab0720cbcb6b8ed5a81da1048fdafdbd4e72c0c9e4752202d70a00f73b9b0"
+    },
+    {
+      "path": "tetrads30/report.json",
+      "sha256": "aa78f38a6cd457a578645ddaf723d25e91ff8b387f4df5201765a9adb9749a92"
+    },
+    {
+      "path": "unpaired27/report.json",
+      "sha256": "b9586c0a7a232928947c1717e9d9f92c9c760b649657830a9598fe7059d51114"
+    },
+    {
+      "path": "unpaired28/report.json",
+      "sha256": "db2fa83f99763725f0889adfe65938b3eb25208d54078272e45ddf36038a1693"
+    },
+    {
+      "path": "unpaired29/report.json",
+      "sha256": "9755ada10f93bd2c4b2a9b20541c85beb7da1fb102eb2309133230958f2237b7"
+    },
+    {
+      "path": "unpaired30/report.json",
+      "sha256": "57dba57b22b5bd09dc3d943ffc1b01cf75b3fda947f8d5325066f0ba1be519d4"
+    },
+    {
+      "path": "unpaired31/report.json",
+      "sha256": "04571fa208cb56bf2615ad4d00059d3ee5ea4ceae5aafb0606a5f9e6fe266d58"
+    }
+  ],
+  "partial_tetrad31_tail_vectors": 104,
+  "total_tetrad31_tail_vectors": 574,
+  "no_new_bound_in_this_worker": [
+    27,
+    28,
+    29,
+    30
+  ],
+  "scope": "Research pool outcomes are not unrestricted ceilings. The portable31D certificate alone establishes the new lower bound."
+}

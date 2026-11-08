@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-08",
+  "records": [
+    {
+      "dimension": 31,
+      "previous_repository": 251196,
+      "total": 251200,
+      "gain": 4,
+      "removed": 4,
+      "added": 8,
+      "baseline": "data/baseline31_251196.npz",
+      "certificate": "data/coordinates31_251200.npz",
+      "delta": "data/exchange31.npz",
+      "baseline_sha256": "02cddb863829f7298a1b80779603f3963f0c0db3eef0ff2a9050abe601e56127",
+      "certificate_sha256": "b75a8e9d958017fe03926265f5ee9d42f24b16c9ec848414b4a4e7eba0d329ee",
+      "geometry_report": "data/geometry.json",
+      "delta_report": "data/changed_pairs.json"
+    }
+  ],
+  "scope": "Complete explicit integer coordinates; all pairs; no lattice or unenumerated population assumption."
+}

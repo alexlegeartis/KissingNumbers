@@ -1,0 +1,26 @@
+{
+  "dimension": 31,
+  "source": "research/exceptional_tail_replacement_20261108/contact31/candidate.npz",
+  "source_sha256": "b75a8e9d958017fe03926265f5ee9d42f24b16c9ec848414b4a4e7eba0d329ee",
+  "baseline": 251200,
+  "tail_norm": 64,
+  "unpaired_anchor_family": false,
+  "anchor_count": 6588,
+  "generated_incidences": 4702770,
+  "unique_new_sums": 1243609,
+  "admitted": 52,
+  "cutoff": 2,
+  "dot_products": 30040748544,
+  "optimization": {
+    "gain": 0,
+    "added": [],
+    "removed": [],
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "new_conflicts": 44,
+    "numerical_gain_upper_bound": -0.0,
+    "scope": "Numerical optimizer, exact independent replay required for positive result."
+  },
+  "seconds": 59.623738839,
+  "scope": "Complete sum closure for every incumbent point in stated latitude layer paired with all incumbent points; blocker cutoff restricts optimization pool; numerical non-gain is not a global bound."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "anchor_start": 0,
+    "anchors": 32,
+    "sum_incidences": 28426,
+    "new_sums": 24191,
+    "admitted": 3,
+    "free": 0,
+    "seconds": 0.9317413990002024
+  },
+  {
+    "anchor_start": 32,
+    "anchors": 32,
+    "sum_incidences": 28420,
+    "new_sums": 18850,
+    "admitted": 1,
+    "free": 0,
+    "seconds": 1.4580515799998466
+  },
+  {
+    "anchor_start": 64,
+    "anchors": 4,
+    "sum_incidences": 3378,
+    "new_sums": 2559,
+    "admitted": 0,
+    "free": 0,
+    "seconds": 1.5423477859999366
+  }
+]

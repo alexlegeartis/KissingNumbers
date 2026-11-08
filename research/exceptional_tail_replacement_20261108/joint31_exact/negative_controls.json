@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "case": "positive",
+      "exit_code": 0,
+      "expected_acceptance": true
+    },
+    {
+      "case": "incumbent_hash",
+      "exit_code": 1,
+      "expected_acceptance": false
+    },
+    {
+      "case": "pool_hash",
+      "exit_code": 1,
+      "expected_acceptance": false
+    },
+    {
+      "case": "dual_sign",
+      "exit_code": 1,
+      "expected_acceptance": false
+    },
+    {
+      "case": "clique_duplicate",
+      "exit_code": 1,
+      "expected_acceptance": false
+    }
+  ]
+}

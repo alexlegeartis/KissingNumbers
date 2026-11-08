@@ -1,0 +1,11 @@
+[
+  {
+    "tail_start": 0,
+    "tails": 6,
+    "tested": 1020096,
+    "retained": 3540,
+    "new": 3428,
+    "zero_blockers": 0,
+    "seconds": 8.4127657680001
+  }
+]

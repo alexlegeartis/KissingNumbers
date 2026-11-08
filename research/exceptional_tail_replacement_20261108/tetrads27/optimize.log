@@ -1,0 +1,4 @@
+MODEL 3428 286 353008 seconds 0.12454279999997198
+/workspace/scratch/941a2e823e69/KissingNumbers/research/exceptional_tail_replacement_20261108/optimize_rational.py:21: RuntimeWarning: Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim.
+  ans=milp(np.r_[-np.ones(n),np.ones(len(old))],integrality=np.ones(n+len(old)),bounds=Bounds(0,1),constraints=LinearConstraint(mat,-np.inf,upper),options={'time_limit':seconds,'mip_rel_gap':0,'threads':3})
+{'gain': 0, 'added': [], 'removed': [], 'status': 1, 'message': 'Time limit reached. (HiGHS Status 13: Time limit reached)', 'new_conflicts': 353008, 'numerical_gain_upper_bound': 65.0, 'scope': 'Numerical optimizer, exact independent replay required for positive result.'}

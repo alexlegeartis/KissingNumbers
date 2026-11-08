@@ -1,6 +1,6 @@
 # Exact residual-head completions in dimensions 26–31
 
-Latest repository bounds (4 November 2026) follow the [algebraic completion](../dim27-31-algebraic-completion/). Earlier dated benchmarks and construction counts are retained.
+Latest repository bounds (8 November 2026) follow the [latitude-contact exchange](../dim31-latitude-contact-exchange/). Earlier dated benchmarks and construction counts are retained.
 
 Verified research checkpoint, 27 October 2026. These are achieved lower bounds, not optimality claims or a fresh worldwide record survey.
 
@@ -10,14 +10,14 @@ the [209,600-point quadratic module](../dim27-quadratic-normal-module/) and the
 The [asymmetric exchanges](../dim26-30-asymmetric-exchanges/) also supersede the 26D and
 28D–30D values. The dated certificates and construction counts here remain unchanged.
 
-| Dimension | Previous repository value | Verified construction | Improvement | Repository bound (29 October 2026) | Current repository bound (4 November 2026) |
+| Dimension | Previous repository value | Verified construction | Improvement | Repository bound (29 October 2026) | Current repository bound (8 November 2026) |
 |---|---:|---:|---:|---:|---:|
 | 26 | 200,918 | **201,108** | 190 | 201,136 | 201,136 |
 | 27 | 204,636 | **209,532** | 4,896 | 209,807 | 209,825 |
 | 28 | 205,232 | **216,680** | 11,448 | 221,988 | 221,988 |
 | 29 | 216,568 | **226,520** | 9,952 | 231,697 | 231,697 |
 | 30 | 224,280 | **238,808** | 14,528 | 247,972 | 247,972 |
-| 31 | 241,742 | **246,638** | 4,896 | 251,188 | 251,196 |
+| 31 | 241,742 | **246,638** | 4,896 | 251,188 | 251,200 |
 
 Comparison values were rechecked against repository main commit `4838231d173cca75046e55c9c900bcd6f2b53a0f`. Historical coordinate certificates and manuscript sources are unchanged; historical package documentation now also identifies the current repository bounds.
 

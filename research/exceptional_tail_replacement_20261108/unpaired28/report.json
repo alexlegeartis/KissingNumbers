@@ -1,0 +1,26 @@
+{
+  "dimension": 28,
+  "source": "verifications/improved/dim27-31-joint-refills/data/coordinates28_221988.npz",
+  "source_sha256": "509b7894dd8534946a81d8bfd354c9ef947e4fe5c82482796aac76799169f129",
+  "baseline": 221988,
+  "tail_norm": null,
+  "unpaired_anchor_family": true,
+  "anchor_count": 68,
+  "generated_incidences": 60224,
+  "unique_new_sums": 45600,
+  "admitted": 4,
+  "cutoff": 2,
+  "dot_products": 822375824,
+  "optimization": {
+    "gain": 0,
+    "added": [],
+    "removed": [],
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "new_conflicts": 0,
+    "numerical_gain_upper_bound": -0.0,
+    "scope": "Numerical optimizer, exact independent replay required for positive result."
+  },
+  "seconds": 1.7949911099999554,
+  "scope": "Complete sum closure for every incumbent point in stated latitude layer paired with all incumbent points; blocker cutoff restricts optimization pool; numerical non-gain is not a global bound."
+}

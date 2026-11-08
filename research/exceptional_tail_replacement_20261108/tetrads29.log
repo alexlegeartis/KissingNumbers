@@ -1,0 +1,41 @@
+{"tail_start": 0, "tails": 8, "tested": 1360128, "retained": 697, "new": 678, "zero_blockers": 0, "seconds": 14.055779509999866}
+{"tail_start": 8, "tails": 8, "tested": 1360128, "retained": 707, "new": 691, "zero_blockers": 0, "seconds": 27.798765115999913}
+{"tail_start": 16, "tails": 8, "tested": 1360128, "retained": 434, "new": 293, "zero_blockers": 0, "seconds": 39.69727792499998}
+{"tail_start": 24, "tails": 8, "tested": 1360128, "retained": 459, "new": 313, "zero_blockers": 0, "seconds": 50.37938661899989}
+{"tail_start": 32, "tails": 8, "tested": 1360128, "retained": 611, "new": 415, "zero_blockers": 0, "seconds": 64.33573459399986}
+{"tail_start": 40, "tails": 8, "tested": 1360128, "retained": 634, "new": 447, "zero_blockers": 0, "seconds": 76.54181321999977}
+{"tail_start": 48, "tails": 8, "tested": 1360128, "retained": 465, "new": 444, "zero_blockers": 0, "seconds": 91.41573173500001}
+{"tail_start": 56, "tails": 8, "tested": 1360128, "retained": 465, "new": 442, "zero_blockers": 0, "seconds": 106.12270473999979}
+{"tail_start": 64, "tails": 8, "tested": 1360128, "retained": 657, "new": 614, "zero_blockers": 0, "seconds": 120.93881116200009}
+{"tail_start": 72, "tails": 8, "tested": 1360128, "retained": 652, "new": 606, "zero_blockers": 0, "seconds": 135.05076279000014}
+{"tail_start": 80, "tails": 8, "tested": 1360128, "retained": 1628, "new": 1308, "zero_blockers": 0, "seconds": 147.0248853879998}
+{"tail_start": 88, "tails": 2, "tested": 340032, "retained": 306, "new": 210, "zero_blockers": 0, "seconds": 150.04329578899979}
+OPTIMIZE 6461
+MODEL 6461 2337 198329 seconds 0.11360312899978453
+/workspace/scratch/941a2e823e69/KissingNumbers/research/exceptional_tail_replacement_20261108/optimize_rational.py:21: RuntimeWarning: Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim.
+  ans=milp(np.r_[-np.ones(n),np.ones(len(old))],integrality=np.ones(n+len(old)),bounds=Bounds(0,1),constraints=LinearConstraint(mat,-np.inf,upper),options={'time_limit':seconds,'mip_rel_gap':0,'threads':int(os.environ.get('RESEARCH_THREADS','3'))})
+{
+  "dimension": 29,
+  "source": "verifications/improved/dim27-31-joint-refills/data/coordinates29_231697.npz",
+  "source_sha256": "e79b7f465007787501c08745a76d0472f351968624dd31993db484c112dce2c2",
+  "baseline": 231697,
+  "core_tetrads": 10626,
+  "tail_vectors": 90,
+  "raw_candidates": 15301440,
+  "new_admitted": 6461,
+  "zero_blockers": 0,
+  "cutoff": 4,
+  "products": 109965037467,
+  "optimization": {
+    "gain": 0,
+    "added": [],
+    "removed": [],
+    "status": 1,
+    "message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+    "new_conflicts": 198329,
+    "numerical_gain_upper_bound": 713.0,
+    "scope": "Numerical optimizer, exact independent replay required for positive result."
+  },
+  "seconds": 210.70984743100007,
+  "scope": "All signed four-core/four-tail and four-core/one-heavy-tail norm128 points. All incumbent points deletable; blocker cutoff bounds the finite pool only; no unrestricted exclusion."
+}

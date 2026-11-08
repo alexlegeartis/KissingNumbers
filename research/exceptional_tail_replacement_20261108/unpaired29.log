@@ -1,0 +1,43 @@
+{"anchor_start": 0, "anchors": 32, "sum_incidences": 22064, "new_sums": 21525, "admitted": 32, "free": 0, "seconds": 1.1096169710003778}
+{"anchor_start": 32, "anchors": 32, "sum_incidences": 21329, "new_sums": 19564, "admitted": 26, "free": 0, "seconds": 1.8558655350002482}
+{"anchor_start": 64, "anchors": 32, "sum_incidences": 22431, "new_sums": 19979, "admitted": 14, "free": 0, "seconds": 2.6276711730001807}
+{"anchor_start": 96, "anchors": 32, "sum_incidences": 21598, "new_sums": 20359, "admitted": 19, "free": 0, "seconds": 3.400142975000108}
+{"anchor_start": 128, "anchors": 19, "sum_incidences": 12234, "new_sums": 10599, "admitted": 5, "free": 0, "seconds": 3.76670311900034}
+OPTIMIZE 96
+MODEL 96 133 83 seconds 0.0006849779997537553
+/workspace/scratch/941a2e823e69/KissingNumbers/research/exceptional_tail_replacement_20261108/optimize_rational.py:21: RuntimeWarning: Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim.
+  ans=milp(np.r_[-np.ones(n),np.ones(len(old))],integrality=np.ones(n+len(old)),bounds=Bounds(0,1),constraints=LinearConstraint(mat,-np.inf,upper),options={'time_limit':seconds,'mip_rel_gap':0,'threads':int(os.environ.get('RESEARCH_THREADS','3'))})
+{
+  "dimension": 29,
+  "source": "verifications/improved/dim27-31-joint-refills/data/coordinates29_231697.npz",
+  "source_sha256": "e79b7f465007787501c08745a76d0472f351968624dd31993db484c112dce2c2",
+  "baseline": 231697,
+  "tail_norm": null,
+  "unpaired_anchor_family": true,
+  "anchor_count": 147,
+  "generated_incidences": 99656,
+  "unique_new_sums": 92026,
+  "admitted": 96,
+  "cutoff": 2,
+  "dot_products": 2023110496,
+  "optimization": {
+    "gain": 0,
+    "added": [
+      16,
+      39,
+      83
+    ],
+    "removed": [
+      94508,
+      111302,
+      136725
+    ],
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "new_conflicts": 83,
+    "numerical_gain_upper_bound": -0.0,
+    "scope": "Numerical optimizer, exact independent replay required for positive result."
+  },
+  "seconds": 4.100744267000209,
+  "scope": "Complete sum closure for every incumbent point in stated latitude layer paired with all incumbent points; blocker cutoff restricts optimization pool; numerical non-gain is not a global bound."
+}

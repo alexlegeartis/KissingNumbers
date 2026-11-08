@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+The 8 November [31D latitude-contact exchange](verifications/improved/dim31-latitude-contact-exchange/) gives **251,200** points, four above the preceding repository certificate. Both complete exact pair proofs cover all 31,550,594,400 unordered pairs. One uses direct integer arithmetic without antipodal compression; reconstruction, all changed-pair checks and semantic rejection controls are included. This proof assumes no lattice minimum or unenumerated population. The source-comparison scope is recorded separately.
+
 The 8 November [pointwise P48 refill](verifications/improved/dim49-60-p48-pointwise-refill/) gives twelve improved 49–60D bounds, including **58,627,711 in 60D**. Its portable replay uses two exact head implementations, every added/retained and added/added pair, full-coordinate ownership, complete direction/pole checks and an algebraic lift proof. Twelve rejection controls test malformed inputs. Published P48 minimum six and shell population 52,416,000 remain inherited; the full lifted code is not expanded.
 
 The 6 November [840-direction lift](verifications/improved/dim60-antipodal840-lift/) gives **58,543,525 in 60D**. Its replay checks all direction/pole/base-class pairs, 420 isometries and all selected mother-line disjointness. The 52,416,000-point P48 shell population and minimum six remain published inputs; the full lifted code is not expanded.
@@ -63,7 +65,7 @@ not a new mathematical verification. All commands require assertions enabled.
 |---|---|---|
 | 18 | Reconstruct all 8,358 points and check every pair exactly | None beyond the stated mathematical construction |
 | 25 | Independent Leech rebuild, all 971 circles and 102 moved points; exact biquadratic comparisons | Standard Leech shell kissing property |
-| 27–31 | Complete integer coordinates, all unordered point pairs and direct-int64 inserted-point checks | NumPy; exact bounded products, no baseline validity assumption |
+| 27–31 | Complete integer coordinates, all unordered point pairs and direct-int64 inserted-point checks; current 31D also enumerates every pair with a separate integer-only C++ kernel | NumPy; g++ and a little-endian host for the additional 31D checker; no baseline validity assumption |
 | 40 | Independent lattice minimum enumeration and all auxiliary/core pair types | NumPy and C++17 g++ with __int128; exact bounded integer BLAS |
 | 26 | Complete asymmetric integer coordinates; every unordered point pair | NumPy; retained 28–30D certificates remain available |
 | 38 | Two independent exact proofs rebuild all cap classes, equatorial lines and axes; check 120 cap deletions and all 6,656 expanded latitude points | Golay lattice congruences and weight enumerator prove the parent minimum |

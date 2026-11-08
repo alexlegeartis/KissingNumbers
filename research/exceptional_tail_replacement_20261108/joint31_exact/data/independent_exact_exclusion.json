@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "candidate_count": 3762,
+  "incumbent_count": 251200,
+  "old_deletion_variables": 2650,
+  "validated_constraints": 20717,
+  "exact_lower_bound_for_negative_gain": "-428571624/1000000000",
+  "integer_gain_upper_bound": 0,
+  "source_sha256": "b75a8e9d958017fe03926265f5ee9d42f24b16c9ec848414b4a4e7eba0d329ee",
+  "pool_sha256": "58bcda47bb38581fcd99e6dab809ac1473e68280b1712289918efa89759dd4b5",
+  "seconds": 2.8909873962402344,
+  "scope": "All exchanges using this explicit 3762-point pool; includes every old-point deletion. No bound outside this finite pool."
+}

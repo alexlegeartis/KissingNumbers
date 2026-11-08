@@ -1,0 +1,47 @@
+[
+  {
+    "anchor_start": 0,
+    "anchors": 32,
+    "sum_incidences": 22064,
+    "new_sums": 21525,
+    "admitted": 32,
+    "free": 0,
+    "seconds": 1.1096169710003778
+  },
+  {
+    "anchor_start": 32,
+    "anchors": 32,
+    "sum_incidences": 21329,
+    "new_sums": 19564,
+    "admitted": 26,
+    "free": 0,
+    "seconds": 1.8558655350002482
+  },
+  {
+    "anchor_start": 64,
+    "anchors": 32,
+    "sum_incidences": 22431,
+    "new_sums": 19979,
+    "admitted": 14,
+    "free": 0,
+    "seconds": 2.6276711730001807
+  },
+  {
+    "anchor_start": 96,
+    "anchors": 32,
+    "sum_incidences": 21598,
+    "new_sums": 20359,
+    "admitted": 19,
+    "free": 0,
+    "seconds": 3.400142975000108
+  },
+  {
+    "anchor_start": 128,
+    "anchors": 19,
+    "sum_incidences": 12234,
+    "new_sums": 10599,
+    "admitted": 5,
+    "free": 0,
+    "seconds": 3.76670311900034
+  }
+]

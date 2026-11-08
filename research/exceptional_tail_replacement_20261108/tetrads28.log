@@ -1,0 +1,30 @@
+{"tail_start": 0, "tails": 8, "tested": 1360128, "retained": 788, "new": 500, "zero_blockers": 0, "seconds": 9.124738594000064}
+{"tail_start": 8, "tails": 8, "tested": 1360128, "retained": 784, "new": 504, "zero_blockers": 0, "seconds": 18.184447578000118}
+{"tail_start": 16, "tails": 8, "tested": 1360128, "retained": 1196, "new": 844, "zero_blockers": 0, "seconds": 27.185075218000065}
+OPTIMIZE 1848
+{
+  "dimension": 28,
+  "source": "verifications/improved/dim27-31-joint-refills/data/coordinates28_221988.npz",
+  "source_sha256": "509b7894dd8534946a81d8bfd354c9ef947e4fe5c82482796aac76799169f129",
+  "baseline": 221988,
+  "core_tetrads": 10626,
+  "tail_vectors": 24,
+  "raw_candidates": 4080384,
+  "new_admitted": 1848,
+  "zero_blockers": 0,
+  "cutoff": 4,
+  "products": 17641717680,
+  "optimization": {
+    "solver_status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "gain": 0,
+    "added": [],
+    "removed": [],
+    "candidate_conflicts": 10674,
+    "exact_binary_ball_clique_cuts": 0,
+    "numerical_gain_upper_bound": -0.0,
+    "scope": "Numerical MILP diagnostics; only full exact output replay can establish an improvement"
+  },
+  "seconds": 29.98768258500013,
+  "scope": "All signed four-core/four-tail and four-core/one-heavy-tail norm128 points. All incumbent points deletable; blocker cutoff bounds the finite pool only; no unrestricted exclusion."
+}

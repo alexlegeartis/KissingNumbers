@@ -1,0 +1,27 @@
+{
+  "dimension": 27,
+  "source": "verifications/improved/dim27-31-algebraic-completion/data/coordinates27_209825.npz",
+  "source_sha256": "7a869e349545f96d563a654e307cba9461c3bbecb883299b3a85e05d6fe127d1",
+  "baseline": 209825,
+  "all_six_supports": 134596,
+  "admitted_supports": 21300,
+  "nonseed_supports": 21079,
+  "signed_bodies": 1360256,
+  "tails": 12,
+  "raw_candidates": 16323072,
+  "admitted": 102,
+  "cutoff": 2,
+  "checks": 11695415002,
+  "optimization": {
+    "gain": 0,
+    "added": [],
+    "removed": [],
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "new_conflicts": 118,
+    "numerical_gain_upper_bound": -0.0,
+    "scope": "Numerical optimizer, exact independent replay required for positive result."
+  },
+  "seconds": 48.902414789000204,
+  "scope": "Every core six-support and every sign, with stated core/global blocker cutoff; all signed tail roots. No support selected from source required. Candidate blockers independently rebuilt by full int64 sums."
+}

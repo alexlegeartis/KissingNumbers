@@ -1,0 +1,25 @@
+{
+  "dimension": 29,
+  "source": "verifications/improved/dim27-31-joint-refills/data/coordinates29_231697.npz",
+  "source_sha256": "e79b7f465007787501c08745a76d0472f351968624dd31993db484c112dce2c2",
+  "baseline": 231697,
+  "core_tetrads": 10626,
+  "tail_vectors": 90,
+  "raw_candidates": 15301440,
+  "new_admitted": 6461,
+  "zero_blockers": 0,
+  "cutoff": 4,
+  "products": 109965037467,
+  "optimization": {
+    "gain": 0,
+    "added": [],
+    "removed": [],
+    "status": 1,
+    "message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+    "new_conflicts": 198329,
+    "numerical_gain_upper_bound": 713.0,
+    "scope": "Numerical optimizer, exact independent replay required for positive result."
+  },
+  "seconds": 210.70984743100007,
+  "scope": "All signed four-core/four-tail and four-core/one-heavy-tail norm128 points. All incumbent points deletable; blocker cutoff bounds the finite pool only; no unrestricted exclusion."
+}

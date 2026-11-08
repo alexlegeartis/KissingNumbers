@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "dimension": 27,
+      "source": "verifications/improved/dim27-31-algebraic-completion/data/coordinates27_209825.npz",
+      "sha256": "7a869e349545f96d563a654e307cba9461c3bbecb883299b3a85e05d6fe127d1",
+      "baseline": 209825,
+      "tail_count": 6,
+      "points_per_tail": 48,
+      "head_points": 288,
+      "family_upper_bound": 209825
+    },
+    {
+      "dimension": 28,
+      "source": "verifications/improved/dim27-31-joint-refills/data/coordinates28_221988.npz",
+      "sha256": "509b7894dd8534946a81d8bfd354c9ef947e4fe5c82482796aac76799169f129",
+      "baseline": 221988,
+      "tail_count": 24,
+      "points_per_tail": 48,
+      "head_points": 1152,
+      "family_upper_bound": 221988
+    }
+  ],
+  "proof": "For a fixed norm64 tail, norm128 points have core squared norm64 and distinct core products at most0. A unit Gram matrix G of m such core points has -1<=Gij<=0 off diagonal, so tr(G^2)<=2m using sum(Gij)>=0. Cauchy-Schwarz gives rank(G)>=m/2, while rank(G)<=24. Hence m<=48. The displayed alphabets are saturated. Deleting any outside points cannot raise this bound.",
+  "scope": "Allows arbitrary real core bodies on each of the stated fixed tails and deletion of ANY incumbent points, but no new tail directions or other radii."
+}

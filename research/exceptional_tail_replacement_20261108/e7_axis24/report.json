@@ -1,0 +1,63 @@
+{
+  "source": "verifications/improved/dim27-31-algebraic-completion/data/coordinates31_251196.npz",
+  "source_sha256": "02cddb863829f7298a1b80779603f3963f0c0db3eef0ff2a9050abe601e56127",
+  "dimension": 31,
+  "axis": 24,
+  "baseline": 251196,
+  "retained": 234936,
+  "deleted": 16260,
+  "unique_bodies": 47920,
+  "spinor_directions": 64,
+  "candidate_count": 3066880,
+  "admitted_count": 256,
+  "potential_total_before_new_new": 235192,
+  "exact_products": 30181826784,
+  "seconds": 34.84813053800008,
+  "history": [
+    [
+      0,
+      2986494
+    ],
+    [
+      8192,
+      1275822
+    ],
+    [
+      16384,
+      551826
+    ],
+    [
+      24576,
+      241766
+    ],
+    [
+      32768,
+      107326
+    ],
+    [
+      40960,
+      48198
+    ],
+    [
+      49152,
+      21036
+    ],
+    [
+      57344,
+      8374
+    ],
+    [
+      65536,
+      3514
+    ],
+    [
+      73728,
+      1706
+    ],
+    [
+      81920,
+      608
+    ]
+  ],
+  "scope": "All norm96 bodies in incumbent paired with every exceptional spinor tail. Fixed-point gate is exact; no conclusion beyond this family. New/new constraints not yet applied."
+}

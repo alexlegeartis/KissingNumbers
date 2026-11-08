@@ -1,0 +1,60 @@
+{"dimension": 30, "axis": 28, "removed": 32938, "bodies": 46420, "spinor_directions": 32, "raw_candidates": 1485440, "fixed_aux": 64794}
+0 1445262
+8192 600577
+16384 245019
+24576 96662
+32768 35145
+40960 10082
+49152 2509
+57344 467
+{
+  "source": "verifications/improved/dim27-31-joint-refills/data/coordinates30_247972.npz",
+  "source_sha256": "d3c8767360bded77dec3cfc9263053c5bcdc65caaef1980954a6fb19217c1730",
+  "dimension": 30,
+  "axis": 28,
+  "baseline": 247972,
+  "retained": 215034,
+  "deleted": 32938,
+  "unique_bodies": 46420,
+  "spinor_directions": 32,
+  "candidate_count": 1485440,
+  "admitted_count": 0,
+  "potential_total_before_new_new": 215034,
+  "exact_products": 13739395328,
+  "seconds": 15.068221646999973,
+  "history": [
+    [
+      0,
+      1445262
+    ],
+    [
+      8192,
+      600577
+    ],
+    [
+      16384,
+      245019
+    ],
+    [
+      24576,
+      96662
+    ],
+    [
+      32768,
+      35145
+    ],
+    [
+      40960,
+      10082
+    ],
+    [
+      49152,
+      2509
+    ],
+    [
+      57344,
+      467
+    ]
+  ],
+  "scope": "All norm96 bodies in incumbent paired with every exceptional spinor tail. Fixed-point gate is exact; no conclusion beyond this family. New/new constraints not yet applied."
+}

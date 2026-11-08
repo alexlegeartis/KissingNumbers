@@ -8,13 +8,13 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
-> **Current repository status — 7 November 2026.** Verified lower bounds in
+> **Current repository status — 8 November 2026.** Verified lower bounds in
 > **70 dimensions**; the [results table](#results-and-construction-history)
 > lists every current value, comparison source and verification package.
 >
-> - **27–31D:** **209 825, 221 988, 231 697, 247 972, 251 196** exceed
+> - **27–31D:** **209 825, 221 988, 231 697, 247 972, 251 200** exceed
 >   [PackingStar’s October 28 release](common/source_review_20261029_27_31.json)
->   by **65, 124, 21, 5, 27** points. New [algebraic completions](verifications/improved/dim27-31-algebraic-completion/) add 18 in 27D and eight in 31D, with complete explicit coordinate proofs. The [29 October certificates](verifications/improved/dim27-31-joint-refills/) remain available.
+>   by **65, 124, 21, 5, 31** points. The new [31D latitude-contact exchange](verifications/improved/dim31-latitude-contact-exchange/) adds four, with two complete exact pair proofs. Earlier [algebraic completions](verifications/improved/dim27-31-algebraic-completion/) add 18 in 27D and eight in 31D, with complete explicit coordinate proofs. The [29 October certificates](verifications/improved/dim27-31-joint-refills/) remain available.
 >   **28D is reclaimed at 221 988**, with a gain of **124** from corrected sextet symmetries.
 >   The 26D certificate remains 201 136, two above its pinned comparison.
 > - **32D:** **352 992** points, **160** above the reviewed repository certificate and **672** above the pinned Lin construction. [Non-antipodal signed octad continuation](verifications/improved/dim32-35-signed-layers/nonantipodal32/) has two independent implementations, complete integer reconstruction and semantic rejection controls. Its 29 exceptional supports contain 1,824 individual points, including 380 without antipodes. No worldwide-priority or global-optimality claim is made.
@@ -42,7 +42,7 @@ The new 27D and 31D certificates check every pair in complete explicit integer
 coordinates, with separate direct-integer checks of all changed pairs. They
 assume no lattice minimum or unenumerated population. The 43D proof has the
 inherited-input scope stated above. These are verified lower bounds; the
-[dated source comparison](common/source_review_20261104_algebraic.json) does
+[dated source comparison](common/source_review_20261108_31.json) does
 not establish worldwide priority.
 
 Below 24D, the archived campaigns have no new certified lower-bound improvement.
@@ -85,10 +85,10 @@ or the ratio `this work / recorded comparison` when it is at least 2.
 That baseline can precede an intervening record by another author. For example,
 the 25D row compares 197,584 with Ma et al.'s historical 197,056, a gain of
 528 points (+0.268%). The advance over Takhanov-Yun's subsequent 197,583-point
-record is **one point**. In 31D the current 251,196-point construction gains
-**12,846 points** over the historical 238,350-point comparison. Its advance
-over PackingStar's October 28 release of 251,169 is **27 points**, and its
-increase over the preceding repository value 251,188 is **8 points**. The
+record is **one point**. In 31D the current 251,200-point construction gains
+**12,850 points** over the historical 238,350-point comparison. Its advance
+over PackingStar's October 28 release of 251,169 is **31 points**, and its
+increase over the preceding repository value 251,196 is **4 points**. The
 [25D](verifications/improved/dim25-collective-deformation/),
 [historical 31D](verifications/improved/dim31-dual-centres/) and
 [retained 26–31D residual completions](verifications/improved/dim26-31-residual-completions/) packages
@@ -131,7 +131,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **221 988** | **SOTA** | +8.196% | — | reclaimed 2026-10-29 | [Joint refills and sextet unions](verifications/improved/dim27-31-joint-refills/) | — |
 | 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **231 697** | **SOTA** | +10.597% | — | reclaimed 2026-10-29 | [Joint refills and reflected unions](verifications/improved/dim27-31-joint-refills/) | — |
 | 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **247 972** | **SOTA** | +12.490% | — | reclaimed 2026-10-29 | [Joint refills and reflected unions](verifications/improved/dim27-31-joint-refills/) | — |
-| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **251 196** | **SOTA** | +5.390% | — | reclaimed 2026-10-29 | [Orthogonal sign cube](verifications/improved/dim27-31-algebraic-completion/) | — |
+| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **251 200** | **SOTA** | +5.391% | — | reclaimed 2026-10-29 | [Latitude-contact cube exchange](verifications/improved/dim31-latitude-contact-exchange/) | — |
 | 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32/tree/f367a9c5a051c0d6821ce71324b9dfa1ead76c2e) | **352 992** | **SOTA** | +0.190736% | — | since 2026-11-07 | [Non-antipodal signed octad continuation](verifications/improved/dim32-35-signed-layers/nonantipodal32/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal32/evidence/public_comparison.json) |
 | 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 408** | **SOTA** | +0.045376% | — | since 2026-11-07 | [Non-antipodal octads and individual root-star trades](verifications/improved/dim32-35-signed-layers/nonantipodal33/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal33/evidence/public_comparison.json) |
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 992** | **SOTA** | +0.00306921% | — | since 2026-11-06 | [Rational heavy-head rotation](verifications/improved/dim32-35-signed-layers/rotated34/) | — |
@@ -245,7 +245,7 @@ improvement is claimed in 47D or 48D.
 <details>
 <summary>Detailed construction notes</summary>
 
-- **27–31D (current):** The current values are **209 825, 221 988, 231 697, 247 972, 251 196**, respectively. [Algebraic completion](verifications/improved/dim27-31-algebraic-completion/) adds 18 in 27D through shared-deletion signed-support choices and eight in 31D through an orthogonal sign cube. Complete explicit geometry and independent changed-pair proofs pass. The [29 October joint refills](verifications/improved/dim27-31-joint-refills/) supply the retained 28–30D records and earlier 27D/31D configurations.
+- **27–31D (current):** The current values are **209 825, 221 988, 231 697, 247 972, 251 200**, respectively. The [31D latitude-contact exchange](verifications/improved/dim31-latitude-contact-exchange/) replaces four latitude points with eight midpoint points, adding four to the preceding bound. Two independent complete exact proofs cover every pair, including one integer-only enumeration without antipodal compression. The earlier [algebraic completion](verifications/improved/dim27-31-algebraic-completion/) supplies 27D and the retained 251,196-point predecessor; the [29 October joint refills](verifications/improved/dim27-31-joint-refills/) supply the current 28–30D records.
 
 - **18D:** the base of Cohn–Li's hexagon had a free combinatorial parameter nobody had varied: which coset of RM(1,4) the three six-set families lie in.  Three bent cosets with pairwise-bent sums that do not sum to zero give the twelve tier-B slots three different 512-word spaces instead of one, and tier B rises from 256 to 960
 
@@ -303,6 +303,8 @@ improvement is claimed in 47D or 48D.
 **8 November 2026:** The 8 November pointwise-refill constructions improve all twelve dimensions 49–60, reaching 58,627,711 in 60D (+84,186 over the preceding repository bound). Ownership rerouting and individual mother-line insertions enlarge the classes beyond their original image subsets. Two exact head implementations, complete direction and pole checks, full-coordinate ownership and twelve rejection controls are supplied. The published P48 minimum and mother-shell population remain explicit inputs; the manuscript is unchanged. [Verification package](verifications/improved/dim49-60-p48-pointwise-refill/).
 
 **6 November 2026:** The 6 November antipodal-direction completion gives 58,543,525 in 60D (+575,182 over the preceding repository construction). A known antipodal 840-point quaternionic code supplies 420 direction pairs instead of 378; the 841-point pole code is independent. Joint selection and reassignment of complete classes adds a further 704 points over the first 58,542,821-point composition. Exact tail, pole, base-class, isometry and full-coordinate disjointness checks pass. The published P48 minimum and mother-shell population remain explicit inputs. The manuscript is unchanged. [Verification package](verifications/improved/dim60-antipodal840-lift/).
+
+**8 November 2026:** [Latitude-contact exchange](verifications/improved/dim31-latitude-contact-exchange/) gives **251 200 in 31D**, four above the preceding repository certificate and 31 above PackingStar's latest checked release. Complete integer coordinates reconstruct from a four-block formula. Two independent exact proofs cover all 31,550,594,400 unordered pairs; one uses integer arithmetic without antipodal compression. [Fresh primary-source comparison](common/source_review_20261108_31.json) is limited in scope because Cohn's leaderboard returned 502. The manuscript is unchanged.
 
 **4 November 2026:** [Algebraic completion](verifications/improved/dim27-31-algebraic-completion/) gives **209 825 in 27D** (+18) and **251 196 in 31D** (+8). The 31D additions form a three-sign cube with orthogonal block norms 16, 8 and 8. Both full coordinate configurations and all changed pairs replay exactly. The [43D finite body/head continuation](verifications/improved/dim41-46-p48-heads/continuation43/) gives **2 919 785** (+3), retaining its documented P48n/population inputs. Fresh Cohn retrieval failed; the [limited November 4 comparison](common/source_review_20261104_algebraic.json) uses the saved table and author repositories. The manuscript is unchanged.
 
@@ -496,7 +498,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 39 packages, 70 dimensions
+### `verifications/improved/` — 40 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -507,6 +509,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 
 | package                                                                                      | dims   | the idea                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`dim31-latitude-contact-exchange`](verifications/improved/dim31-latitude-contact-exchange/) | 31 | current 251,200-point four-for-eight exchange; two complete exact proofs, including independent integer-only enumeration |
 | [`dim27-31-joint-refills`](verifications/improved/dim27-31-joint-refills/) | 27–31 | joint refills and reflected unions above the October 28 PackingStar release; complete exact proofs |
 | [`dim26-30-asymmetric-exchanges`](verifications/improved/dim26-30-asymmetric-exchanges/) | 26, 28–30 | current asymmetric integer configurations; complete independent all-pairs verification |
 | [`dim27-quadratic-normal-module`](verifications/improved/dim27-quadratic-normal-module/) | 27 | current 209 600-point quadratic code; full independent all-pairs verification |
@@ -596,7 +599,7 @@ comparison is given separately by its source.
 | 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) | 197 584 |
 | 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 231 697 |
 | 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 247 972 |
-| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 196 |
+| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 200 |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 638 |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 852 |
 
@@ -785,10 +788,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 97 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 98 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 116 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 117 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay
