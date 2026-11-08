@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "valid_control_sha256": "9d7c99f12b865c37e177f6c4d20d0e47699fce2150369b7be692d9249f295073",
+  "rejection_controls": [
+    "wrong_norm",
+    "unsafe_integer",
+    "nonzero_padding",
+    "nonisometric_transform",
+    "wrong_partition_end",
+    "wrong_tail_class_count",
+    "changed_gram",
+    "changed_base",
+    "duplicate_added_line",
+    "retained_extra_collision",
+    "file_hash_corruption",
+    "disabled_assertions_rejected"
+  ],
+  "count": 12,
+  "scope": "Controls demonstrate rejection paths; the full positive replay remains required."
+}

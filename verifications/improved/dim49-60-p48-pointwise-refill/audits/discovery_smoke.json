@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "dimension": 49,
+  "lower_bound": 52431600,
+  "witness_arrays_compared": 7,
+  "all_arrays_equal": true,
+  "sieve_first_images": 25,
+  "retained_candidates": 365,
+  "novel_candidates": 302,
+  "seed": 20261108,
+  "script_sha256": {
+    "sieve.py": "34705ae4f1b7e83fc24089f849c1a2f4417e35f106ec101a060bb7daea65a294",
+    "augment.py": "4d4768e570931024192689e9e98e9dbb060defc277a1d93ec3b8a9b97530a0f3"
+  },
+  "scope": "Fresh-directory 49D augmentation reproduces every stored array; the first 25-image sieve checkpoint reproduces its original candidate count and conflict histogram. Full 3500-image search was the construction run, not repeated in this smoke test."
+}

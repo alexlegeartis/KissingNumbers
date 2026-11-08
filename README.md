@@ -22,7 +22,7 @@ values and verification packages remain here as part of the research record.
 > - **34D:** **390 992** points, **two** above the preceding repository construction. [Rational heavy-head rotation](verifications/improved/dim32-35-signed-layers/rotated34/) has two independent exact proofs, a reconstructible integer witness, uniqueness and rank checks.
 > - **36–37D:** **501 813 and 505 629** points, **126** above each preceding repository construction. [Individual base-triangle switches and joint phase refills](verifications/improved/dim36-37-coxeter-todd/triangle_switch/) pass two exact coordinate proofs with fresh short-shell enumeration; all latitude orbits are retained.
 > - **39D:** **769 852** points, **32** above the preceding repository construction. [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) pass two independent complete exact proofs, each checking 1,687,391,811 relative products.
-> - **60D:** **58 543 525** points, **575 182** above the preceding repository construction. [840-direction cap lift](verifications/improved/dim60-antipodal840-lift/) verifies the finite ingredients exactly and retains the published P48 minimum/population premises.
+> - **49–60D:** twelve improved bounds, including **58 627 711** in **60D**, **84 186** above the preceding repository construction. [Pointwise P48 refill](verifications/improved/dim49-60-p48-pointwise-refill/) has two exact finite proofs and retains the published mother-lattice premises.
 > - **43D:** **2 919 803** points, four above the preceding repository construction. [Individual medium-body splitting and a tiny-point refill](verifications/improved/dim41-46-p48-heads/weyl43/medium_split43/) pass two exact changed-pair checks with fresh geometry/gluing replay; P48n minimum/design and complete-family population inputs remain inherited.
 > - **33–87D:** further improvements include signed layers, phase refills,
 >   the 38D Fano/cube construction, P48 families and shared parity layers.
@@ -147,18 +147,18 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 44 | 4 153 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **4 939 281** | **SOTA** | +19% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 45 | 7 380 090 | [Yang et al., QR neighbour projection](https://arxiv.org/abs/2609.35051v1) | **7 655 056** | **SOTA** | +3.7% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 46 | 12 309 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **13 387 797** | **SOTA** | +8.8% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 49 | 52 416 002 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [1D tail](common/published.py) *(derived)* | **52 431 568** | **SOTA** | +0.0297% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 50 | 52 416 006 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [2D tail](common/published.py) *(derived)* | **52 462 704** | **SOTA** | +0.08909% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 51 | 52 416 012 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [3D tail](common/published.py) *(derived)* | **52 509 404** | **SOTA** | +0.1782% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 52 | 52 416 024 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [4D tail](common/published.py) *(derived)* | **52 602 708** | **SOTA** | +0.3562% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 53 | 52 416 040 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [5D tail](common/published.py) *(derived)* | **52 726 898** | **SOTA** | +0.5931% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 caps, 7 783-line class](verifications/improved/dim49-63-p48-caps/) | — |
-| 54 | 52 416 072 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [6D tail](common/published.py) *(derived)* | **52 974 448** | **SOTA** | +1.065% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [Joint P48 class coverage](verifications/improved/dim54-59-p48-coverage/) | — |
-| 55 | 52 416 126 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [7D tail](common/published.py) *(derived)* | **53 389 510** | **SOTA** | +1.857% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [Joint P48 class coverage](verifications/improved/dim54-59-p48-coverage/) | — |
-| 56 | 52 416 240 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [8D tail](common/published.py) *(derived)* | **54 254 038** | **SOTA** | +3.506% | — | since 2026-08-30 | [Joint P48 class coverage](verifications/improved/dim54-59-p48-coverage/) | — |
-| 57 | 52 416 306 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [9D tail](common/published.py) *(derived)* | **54 747 366** | **SOTA** | +4.447% | — | since 2026-08-30 | [Joint P48 class coverage](verifications/improved/dim54-59-p48-coverage/) | — |
-| 58 | 52 416 510 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [10D tail](common/published.py) *(derived)* | **56 237 990** | **SOTA** | +7.291% | — | since 2026-08-30 | [Joint P48 class coverage](verifications/improved/dim54-59-p48-coverage/) | — |
-| 59 | 52 416 604 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail](common/published.py) *(derived)* | **56 907 964** | **SOTA** | +8.569% | — | since 2026-08-30 | [Joint P48 class coverage](verifications/improved/dim54-59-p48-coverage/) | — |
-| 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **58 543 525** | **SOTA** | +11.69% | — | since 2026-08-30 | [840-direction P48 lift](verifications/improved/dim60-antipodal840-lift/) | — |
+| 49 | 52 416 002 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [1D tail](common/published.py) *(derived)* | **52 431 600** | **SOTA** | +0.02976% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
+| 50 | 52 416 006 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [2D tail](common/published.py) *(derived)* | **52 462 800** | **SOTA** | +0.08927% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
+| 51 | 52 416 012 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [3D tail](common/published.py) *(derived)* | **52 509 596** | **SOTA** | +0.1785% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
+| 52 | 52 416 024 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [4D tail](common/published.py) *(derived)* | **52 603 116** | **SOTA** | +0.3569% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
+| 53 | 52 416 040 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [5D tail](common/published.py) *(derived)* | **52 727 584** | **SOTA** | +0.5944% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
+| 54 | 52 416 072 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [6D tail](common/published.py) *(derived)* | **52 975 804** | **SOTA** | +1.068% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
+| 55 | 52 416 126 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [7D tail](common/published.py) *(derived)* | **53 392 162** | **SOTA** | +1.862% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
+| 56 | 52 416 240 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [8D tail](common/published.py) *(derived)* | **54 260 992** | **SOTA** | +3.519% | — | since 2026-08-30 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
+| 57 | 52 416 306 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [9D tail](common/published.py) *(derived)* | **54 757 822** | **SOTA** | +4.467% | — | since 2026-08-30 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
+| 58 | 52 416 510 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [10D tail](common/published.py) *(derived)* | **56 266 316** | **SOTA** | +7.345% | — | since 2026-08-30 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
+| 59 | 52 416 604 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail](common/published.py) *(derived)* | **56 948 468** | **SOTA** | +8.646% | — | since 2026-08-30 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
+| 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **58 627 711** | **SOTA** | +11.85% | — | since 2026-08-30 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
 | 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **88 260 394** | **SOTA** | +68.38% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **121 824 268** | **SOTA** | +132.41% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **184 286 468** | **SOTA** | +251.57% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
@@ -299,6 +299,8 @@ improvement is claimed in 47D or 48D.
 ## Recent updates
 
 **7 November 2026:** [Individual Coxeter–Todd base-triangle switches](verifications/improved/dim36-37-coxeter-todd/triangle_switch/) give **501 813 in 36D** and **505 629 in 37D**, adding **126** to each preceding certificate. Ninety three-point base switches combine with 1 511 added and 1 469 removed phase orbits. Both proofs freshly enumerate the short lattice shells and check every affected pair category, including all new-equator/unchanged-base products. All 636 latitude body orbits survive at both heights. [The dated source comparison](common/source_review_20261107_36_37_triangles.json) claims repository improvement, not exhaustive worldwide priority. The source certificates and manuscript are unchanged.
+
+**8 November 2026:** The 8 November pointwise-refill constructions improve all twelve dimensions 49–60, reaching 58,627,711 in 60D (+84,186 over the preceding repository bound). Ownership rerouting and individual mother-line insertions enlarge the classes beyond their original image subsets. Two exact head implementations, complete direction and pole checks, full-coordinate ownership and twelve rejection controls are supplied. The published P48 minimum and mother-shell population remain explicit inputs; the manuscript is unchanged. [Verification package](verifications/improved/dim49-60-p48-pointwise-refill/).
 
 **6 November 2026:** The 6 November antipodal-direction completion gives 58,543,525 in 60D (+575,182 over the preceding repository construction). A known antipodal 840-point quaternionic code supplies 420 direction pairs instead of 378; the 841-point pole code is independent. Joint selection and reassignment of complete classes adds a further 704 points over the first 58,542,821-point composition. Exact tail, pole, base-class, isometry and full-coordinate disjointness checks pass. The published P48 minimum and mother-shell population remain explicit inputs. The manuscript is unchanged. [Verification package](verifications/improved/dim60-antipodal840-lift/).
 
@@ -494,7 +496,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 38 packages, 70 dimensions
+### `verifications/improved/` — 39 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -527,6 +529,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | `[dim39-ers-constant-weight](verifications/improved/dim39-ers-constant-weight/)`             | 39     | Edel–Rains–Sloane with the 2026 constant-weight codes, at n₀ = n rather than n₀ = 32                                                                                                         |
 | [`dim32-35-signed-layers`](verifications/improved/dim32-35-signed-layers/) | 32–35 | signed octad replacements, dense-code coset heads and parity-coordinated root replacements; two independent exact checkers |
 | [`dim36-37-coxeter-todd`](verifications/improved/dim36-37-coxeter-todd/) | 36, 37 | Coxeter–Todd phase orbits; exact short-shell and angle replay; two latitude layers |
+| [`dim49-60-p48-pointwise-refill`](verifications/improved/dim49-60-p48-pointwise-refill/) | 49–60 | twelve pointwise-refill improvements, up to 58,627,711 in 60D; two exact head proofs and complete tail/pole checks |
 | [`dim60-antipodal840-lift`](verifications/improved/dim60-antipodal840-lift/) | 60 | 58,543,525; 840 antipodal directions and 841 independent poles over 420 P48 classes |
 | [`dim41-46-p48-heads`](verifications/improved/dim41-46-p48-heads/) | 41–46 | rational heads, explicit partial 43D families and coordinated 45D movement; inherited complete-family populations |
 | `[dim49-63-p48-caps](verifications/improved/dim49-63-p48-caps/)`                             | 49–59 (60 retained) | the cap construction over P₄₈, with the 7 783-line class and 577 explicit disjoint images                                                                                             |
@@ -782,10 +785,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 96 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 97 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 115 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 116 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

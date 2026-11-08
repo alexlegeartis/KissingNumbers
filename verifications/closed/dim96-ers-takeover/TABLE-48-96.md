@@ -1,18 +1,18 @@
 | n | tau(n) >= | source |
 |---|---|---|
 | 48 | 52 416 000 | Cohn's table: Leech-Sloane 1971 (P_48) |
-| 49 | 52 431 568 | **this work** -- the cap construction over P_48, with explicit classes |
-| 50 | 52 462 704 | **this work** -- the cap construction over P_48, with explicit classes |
-| 51 | 52 509 404 | **this work** -- the cap construction over P_48, with explicit classes |
-| 52 | 52 602 708 | **this work** -- the cap construction over P_48, with explicit classes |
-| 53 | 52 726 898 | **this work** -- the cap construction over P_48, with explicit classes |
-| 54 | 52 974 448 | **this work** -- joint P48 class coverage; exact finite certificates with stated mother-shell inputs |
-| 55 | 53 389 510 | **this work** -- joint P48 class coverage; exact finite certificates with stated mother-shell inputs |
-| 56 | 54 254 038 | **this work** -- joint P48 class coverage; exact finite certificates with stated mother-shell inputs |
-| 57 | 54 747 366 | **this work** -- joint P48 class coverage; exact finite certificates with stated mother-shell inputs |
-| 58 | 56 237 990 | **this work** -- joint P48 class coverage; exact finite certificates with stated mother-shell inputs |
-| 59 | 56 907 964 | **this work** -- joint P48 class coverage; exact finite certificates with stated mother-shell inputs |
-| 60 | 58 543 525 | **this work** -- 840-direction antipodal P48 lift; exact finite certificates with stated mother-shell inputs |
+| 49 | 52 431 600 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness |
+| 50 | 52 462 800 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness |
+| 51 | 52 509 596 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness |
+| 52 | 52 603 116 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness |
+| 53 | 52 727 584 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness |
+| 54 | 52 975 804 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness |
+| 55 | 53 392 162 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness |
+| 56 | 54 260 992 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness |
+| 57 | 54 757 822 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness |
+| 58 | 56 266 316 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness |
+| 59 | 56 948 468 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness |
+| 60 | 58 627 711 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness |
 | 61 | 88 260 394 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
 | 62 | 121 824 268 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |
 | 63 | 184 286 468 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay |

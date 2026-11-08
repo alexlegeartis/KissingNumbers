@@ -25,8 +25,8 @@ research/**/data/*.log whitespace=-blank-at-eol
 research/partial_orbits_20261104/evidence/*.log whitespace=-blank-at-eol
 research/compute19_21_20261104/diagnostics/*.search whitespace=-blank-at-eof
 
-# Census refreshed 2026-11-07 after adding the 33D 370,408 non-antipodal verification package.
-# NOTE: this tree contains BOTH line endings -- 2215 text files use LF and 247 use CRLF,
+# Census refreshed 2026-11-08 after the 49–60D pointwise-refill package.
+# NOTE: this tree contains BOTH line endings -- 2247 text files use LF and 247 use CRLF,
 # an artefact of two write paths used while the repository was assembled.  No SOURCE OR
 # DOCUMENTATION file mixes them within itself.  Both statements are about the ten extensions
 # audit.py check 5k opens -- .py .md .txt .cff .json .tex .bib .yml .cfg .out -- and that is
@@ -60,3 +60,10 @@ verifications/improved/dim32-35-signed-layers/exceptional32/evidence/public_resu
 
 # Preserve the exact historical 33D baseline copied into the self-contained package.
 verifications/improved/dim32-35-signed-layers/nonantipodal33/sources/certificate33_370368.json whitespace=cr-at-eol
+
+# Preserve the CRLF historical comparison documents when refreshing registry cells.
+verifications/closed/dim96-ers-takeover/README.md whitespace=cr-at-eol
+verifications/closed/dim96-ers-takeover/TABLE-48-96.md whitespace=cr-at-eol
+
+# Preserve the exact inherited 841-pole coordinate source.
+verifications/improved/dim49-60-p48-pointwise-refill/source/coordinates841.txt whitespace=-blank-at-eof

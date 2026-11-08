@@ -1,0 +1,144 @@
+{
+  "status": "exact finite certificates",
+  "date": "2026-11-08",
+  "source_commit": "52eac7a24a5912ac5262733165f55abfe6869aa8",
+  "mother_shell_population": 52416000,
+  "rows": [
+    {
+      "dimension": 49,
+      "lower_bound": 52431600,
+      "previous_repository_bound": 52431568,
+      "gain": 32,
+      "selected_lines": 7799,
+      "classes": 1,
+      "poles": 2,
+      "certificate": "heads49.npz",
+      "sha256": "9d7c99f12b865c37e177f6c4d20d0e47699fce2150369b7be692d9249f295073"
+    },
+    {
+      "dimension": 50,
+      "lower_bound": 52462800,
+      "previous_repository_bound": 52462704,
+      "gain": 96,
+      "selected_lines": 23397,
+      "classes": 3,
+      "poles": 6,
+      "certificate": "heads50.npz",
+      "sha256": "cbccb1ebba3656f4722942c802bce2da77eac6225d32a08a27163f3cd9e4d8fb"
+    },
+    {
+      "dimension": 51,
+      "lower_bound": 52509596,
+      "previous_repository_bound": 52509404,
+      "gain": 192,
+      "selected_lines": 46792,
+      "classes": 6,
+      "poles": 12,
+      "certificate": "heads51.npz",
+      "sha256": "98034bb0c332bc8783af09725afab4f484f3ad22c0171ab320418ce584bbfa16"
+    },
+    {
+      "dimension": 52,
+      "lower_bound": 52603116,
+      "previous_repository_bound": 52602708,
+      "gain": 408,
+      "selected_lines": 93546,
+      "classes": 12,
+      "poles": 24,
+      "certificate": "heads52.npz",
+      "sha256": "90e6232387f0d490c8ccc10ecd31b58a47c664d513b4ac03ed6fb7ca06fcbc1f"
+    },
+    {
+      "dimension": 53,
+      "lower_bound": 52727584,
+      "previous_repository_bound": 52726898,
+      "gain": 686,
+      "selected_lines": 155772,
+      "classes": 20,
+      "poles": 40,
+      "certificate": "heads53.npz",
+      "sha256": "b652dc5be5c5e72534ba35d3462548fac937ed13a37ac544c91899a763cf0396"
+    },
+    {
+      "dimension": 54,
+      "lower_bound": 52975804,
+      "previous_repository_bound": 52974448,
+      "gain": 1356,
+      "selected_lines": 279866,
+      "classes": 36,
+      "poles": 72,
+      "certificate": "heads54.npz",
+      "sha256": "4fe02e7dd69ce14f81833ac2d15f2ec8665125ad1c06bd4c15a994d579f8e112"
+    },
+    {
+      "dimension": 55,
+      "lower_bound": 53392162,
+      "previous_repository_bound": 53389510,
+      "gain": 2652,
+      "selected_lines": 488018,
+      "classes": 63,
+      "poles": 126,
+      "certificate": "heads55.npz",
+      "sha256": "23d891f182411220d4e85afa39d457c34bd20a5df62e825f02756485830d52dd"
+    },
+    {
+      "dimension": 56,
+      "lower_bound": 54260992,
+      "previous_repository_bound": 54254038,
+      "gain": 6954,
+      "selected_lines": 922376,
+      "classes": 120,
+      "poles": 240,
+      "certificate": "heads56.npz",
+      "sha256": "a11b0dbaec08f531b7f5ae27a0163d1ce93953cd1bfbc2e55b33276003fbfe99"
+    },
+    {
+      "dimension": 57,
+      "lower_bound": 54757822,
+      "previous_repository_bound": 54747366,
+      "gain": 10456,
+      "selected_lines": 1170758,
+      "classes": 153,
+      "poles": 306,
+      "certificate": "heads57.npz",
+      "sha256": "b081a40b1845dbf3e10448328449c6449916cec7771736defe45598591a517fe"
+    },
+    {
+      "dimension": 58,
+      "lower_bound": 56266316,
+      "previous_repository_bound": 56237990,
+      "gain": 28326,
+      "selected_lines": 1924903,
+      "classes": 255,
+      "poles": 510,
+      "certificate": "heads58.npz",
+      "sha256": "c96191d091ce45a4c3e00ed3fff615fac06525bd3f9311d3d298de2ea6b6dfa2"
+    },
+    {
+      "dimension": 59,
+      "lower_bound": 56948468,
+      "previous_repository_bound": 56907964,
+      "gain": 40504,
+      "selected_lines": 2265932,
+      "classes": 302,
+      "poles": 604,
+      "certificate": "heads59.npz",
+      "sha256": "e92d40b8e36bbfdd81b744fa73692ddbf96cb099f0ce91c6475d8986b9024ab1"
+    },
+    {
+      "dimension": 60,
+      "lower_bound": 58627711,
+      "previous_repository_bound": 58543525,
+      "gain": 84186,
+      "selected_lines": 3105435,
+      "classes": 420,
+      "poles": 841,
+      "certificate": "heads60.npz",
+      "sha256": "cc3a2e07fbe3f5f91c33d61ba69102057c5fd8f90dc509d3c5d83d29adac9b25"
+    }
+  ],
+  "inherited_inputs": [
+    "The pinned integral Gram describes P48p, with minimum squared norm six and 52416000 minimal vectors."
+  ],
+  "scope": "Explicit lower-bound constructions; no unrestricted optimality or worldwide-priority claim. The mother shell and lifted codes are not expanded and checked pairwise."
+}

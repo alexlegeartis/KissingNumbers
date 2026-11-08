@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/alexlegeartis/KissingNumbers",
+  "commit": "52eac7a24a5912ac5262733165f55abfe6869aa8",
+  "license": "MIT, copyright (c) 2026 Alexey Kravatskiy; complete text in LICENSE",
+  "inputs": {
+    "capdirs_9.npz": {
+      "repository_path": "verifications/improved/dim54-59-p48-coverage/source/capdirs_9.npz",
+      "sha256": "c5a711ad2f02482b3af198896dfe74dc2a3ab07bf0bf66e4d80b9758584ef653"
+    },
+    "capdirs_10.npz": {
+      "repository_path": "verifications/improved/dim54-59-p48-coverage/source/capdirs_10.npz",
+      "sha256": "bc4d17399173208c664700e5a97ff6e8b04ffe54b72b5ce20a54c951e9e8015c"
+    },
+    "capdirs_11.npz": {
+      "repository_path": "verifications/improved/dim54-59-p48-coverage/source/capdirs_11.npz",
+      "sha256": "62e21350d0f62718a16a012b8932caf9c5cb16db4f2bd00e99c8f5934e18ba62"
+    },
+    "tail840_exact.npz": {
+      "repository_path": "verifications/improved/dim60-antipodal840-lift/tail840_exact.npz",
+      "sha256": "39d71d68bd77cfb96fd973a70b48059ef25377d3a73b6dbcb82de59f93779009"
+    },
+    "coordinates841.txt": {
+      "repository_path": "verifications/improved/dim60-antipodal840-lift/source/coordinates841.txt",
+      "sha256": "be4b651ae8167e2c33bda881f77c9fa2cb5e6a07a8fb92f8360acd4691ed48de"
+    },
+    "LICENSE": {
+      "repository_path": "LICENSE",
+      "sha256": "f27b3a1c633d96f2a99634473b4e32ce2a76aad37a502fb84224a739984c2781"
+    }
+  },
+  "format_references": [
+    "verifications/improved/dim54-59-p48-coverage/verify.py",
+    "verifications/improved/dim60-antipodal840-lift/verify_tail.py",
+    "verifications/improved/dim60-antipodal840-lift/verify_poles.py"
+  ],
+  "mathematical_source": "Takhanov, https://arxiv.org/abs/2609.09179 (840-point antipodal construction); existing repository provenance retained for 841 exact decimal rays and capdirs9\u201311."
+}

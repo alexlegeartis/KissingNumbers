@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "certificate_sha256": "9d7c99f12b865c37e177f6c4d20d0e47699fce2150369b7be692d9249f295073",
+  "classes": 1,
+  "selected_lines": 7799,
+  "class_sizes": [
+    7799
+  ],
+  "extra_lines": 16,
+  "base_pairs": 30283653,
+  "extra_pairs": 124648,
+  "arithmetic": "independent binary64 integer products with strict <2^53 absolute partial-sum bounds",
+  "disjointness": "complete canonical 48-coordinate int16 records, no hashes",
+  "mother_shell_scope": "Published integral P48 Gram lattice, minimum norm six and population 52416000 inherited; shell not enumerated",
+  "tail_pole_scope": "Not checked by this head-only replay",
+  "elapsed_seconds": 0.227,
+  "source_sha256": {
+    "family_refilled.npz": "d2f6afe15f1ad05b08832e4e9dcbf0a7a1159e232ab63ad30259b98ce60e0396",
+    "p48p_gram.npy": "01a5d107e4424092e5300e201592aaff62804ee27eeb1d23b6e516249897d3e1"
+  },
+  "conditional_kissing_count": 52431600,
+  "dimension": 49,
+  "verifier_sha256": "2ca4d09688ef8e7b5917f473407f06cbbbc5c19fd676cc89bea915f4a2e1a68b"
+}

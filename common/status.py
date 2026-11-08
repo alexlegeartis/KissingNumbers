@@ -346,13 +346,7 @@ REASON = {
     'external-39': 'the Edel-Rains-Sloane chain evaluated with current constant-weight tables; '
                    'the whole +128 came from A(39,8,8) moving 3323 -> 3324, so it improves '
                    'whenever Brouwer\'s table does',
-    'classes-p48': 'directions and axis layer are at their ceilings, and the class family is '
-                   'close to its own: scripts/ceiling.py shows that 94-105% of the distance '
-                   'from the family to the ceiling is the overlap two random automorphism '
-                   'images have BY CHANCE, so best-of-N selection has almost nothing left to '
-                   'win -- a real gain needs a family disjoint BY CONSTRUCTION (KNOWLEDGE 89, '
-                   '91).  The same script shows the ceiling is BELOW the level-0 sign code in '
-                   'dimensions 62 and 63, which is why they are not in this group',
+    'classes-p48': 'pointwise insertions and ownership rerouting enlarge the actual mother classes beyond subsets of the original images. Larger classes, broader candidate pools, joint reassignment and improved direction/pole codes remain possible. The shipped witnesses are finite lower bounds, not a construction or global optimum (verifications/improved/dim49-60-p48-pointwise-refill/README.md)',
     'classes-g72': ('the cap DIRECTIONS are at their ceiling -- the partition into zero-sum '
                    'triples is perfect where one exists, and three is the most a class line '
                    'can ever serve.  The class FAMILY is what moves, and it moved twice in '

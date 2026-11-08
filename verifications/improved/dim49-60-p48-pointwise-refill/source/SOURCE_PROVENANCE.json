@@ -1,0 +1,73 @@
+{
+  "repository": "https://github.com/alexlegeartis/KissingNumbers",
+  "commit": "52eac7a24a5912ac5262733165f55abfe6869aa8",
+  "head_inputs": {
+    "family_refilled.npz": {
+      "repository_path": "verifications/improved/dim60-antipodal840-lift/source/family_refilled.npz",
+      "sha256": "d2f6afe15f1ad05b08832e4e9dcbf0a7a1159e232ab63ad30259b98ce60e0396",
+      "bytes": 389181
+    },
+    "p48p_gram.npy": {
+      "repository_path": "verifications/improved/dim60-antipodal840-lift/source/p48p_gram.npy",
+      "sha256": "01a5d107e4424092e5300e201592aaff62804ee27eeb1d23b6e516249897d3e1",
+      "bytes": 18560
+    },
+    "p48p_gens.npy": {
+      "repository_path": "verifications/improved/dim60-antipodal840-lift/source/p48p_gens.npy",
+      "sha256": "38671ddae7fd02d4eb4d3a8b8dadce412f244aae2e918987de6c07a1aea7077f",
+      "bytes": 55424
+    }
+  },
+  "initial_image_selections": {
+    "49": {
+      "repository_path": "verifications/improved/dim49-63-p48-caps/october/family_refilled.npz",
+      "sha256": "d2f6afe15f1ad05b08832e4e9dcbf0a7a1159e232ab63ad30259b98ce60e0396"
+    },
+    "50": {
+      "repository_path": "verifications/improved/dim49-63-p48-caps/october/family_refilled.npz",
+      "sha256": "d2f6afe15f1ad05b08832e4e9dcbf0a7a1159e232ab63ad30259b98ce60e0396"
+    },
+    "51": {
+      "repository_path": "verifications/improved/dim49-63-p48-caps/october/family_refilled.npz",
+      "sha256": "d2f6afe15f1ad05b08832e4e9dcbf0a7a1159e232ab63ad30259b98ce60e0396"
+    },
+    "52": {
+      "repository_path": "verifications/improved/dim49-63-p48-caps/october/family_refilled.npz",
+      "sha256": "d2f6afe15f1ad05b08832e4e9dcbf0a7a1159e232ab63ad30259b98ce60e0396"
+    },
+    "53": {
+      "repository_path": "verifications/improved/dim49-63-p48-caps/october/family_refilled.npz",
+      "sha256": "d2f6afe15f1ad05b08832e4e9dcbf0a7a1159e232ab63ad30259b98ce60e0396"
+    },
+    "54": {
+      "repository_path": "verifications/improved/dim54-59-p48-coverage/classes_36.npz",
+      "sha256": "43922a9fdfeff96b94bf18ba3a54afcecc807cdc8a65d3f7a68ccd19979859a4"
+    },
+    "55": {
+      "repository_path": "verifications/improved/dim54-59-p48-coverage/classes_63.npz",
+      "sha256": "309c480f7754a6f9a6c01bd09bec3ba353739d9c0915eed6f855bddfa99f4f31"
+    },
+    "56": {
+      "repository_path": "verifications/improved/dim54-59-p48-coverage/classes_120.npz",
+      "sha256": "b2288a44ced48854b60481b6126f307aec7a3c50bab65fa69e0e3819a07bcee2"
+    },
+    "57": {
+      "repository_path": "verifications/improved/dim54-59-p48-coverage/classes_153.npz",
+      "sha256": "5b34982e3abcfa0e076f3b7bc2876460d09fe24cee224c9638ea61eee1e1436c"
+    },
+    "58": {
+      "repository_path": "verifications/improved/dim54-59-p48-coverage/classes_255.npz",
+      "sha256": "c837e189fa36bee699c61c8a9d7c29dc74a4d5b7cee6de724eba6f8b75f51770"
+    },
+    "59": {
+      "repository_path": "verifications/improved/dim54-59-p48-coverage/classes_302.npz",
+      "sha256": "fdedec4763868a269e51a81225f8900fdbf9db8744c01d8928db687117f6885a"
+    },
+    "60": {
+      "repository_path": "verifications/improved/dim60-antipodal840-lift/optimized420.npz",
+      "sha256": "b3f9c757533949c90601ae0de2adb4386bdf20371da1b852740595bc1da5cdbf"
+    }
+  },
+  "tail_inputs": "TAIL_SOURCE_PROVENANCE.json",
+  "scope": "The published P48 Gram identity, minimum squared norm six and shell size 52416000 are inherited lattice inputs; all finite final head and tail claims are replayed."
+}

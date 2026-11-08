@@ -1,5 +1,7 @@
 # An 840-direction cap lift in dimension 60
 
+**Retained construction.** The [49–60D pointwise-refill package](../dim49-60-p48-pointwise-refill/) supersedes this bound. This package retains its original witness and verification programs.
+
 **Exact replay gives K(60) >= 58,543,525**, an increase of **575,182** over the repository's pinned 57,968,343 comparison. This combines existing constructions; it does not claim a new general lifting theorem or establish worldwide priority.
 
 The missed ingredient was the distinction between the largest known kissing code and a large antipodal code. The 841-point 12D record is asymmetric, but Takhanov's separate 840-point quaternionic construction is antipodal. It supplies 420 direction pairs, instead of the 378 pairs from the 756-point Coxeter–Todd shell used by the existing cap package. The 841-point code remains useful independently as pure poles.

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 96 scripts, including large exact certificate replays
-    python run_all.py --full       # 115 scripts, budget about 10 hours
+    python run_all.py              # 97 scripts, including large exact certificate replays
+    python run_all.py --full       # 116 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -381,11 +381,15 @@ JOBS = [
 ]
 
 
+JOBS.append(('49-60D pointwise P48 refill: two exact proofs and complete tails',
+             os.path.join(V, 'improved', 'dim49-60-p48-pointwise-refill'), ['verify.py'], 12.0, True))
+
 # Jobs needed for the current README records, without rediscovering constructions or
 # replaying their superseded versions. Do not infer geometric verification from a count
 # driver, a manifest, or the GPU run's receipt.
 def _sota_jobs(quick=False):
     wanted = {
+        ('dim49-60-p48-pointwise-refill', ('verify.py',)),
         ('dim54-59-p48-coverage', ('verify.py',)),
         ('dim60-antipodal840-lift', ('verify.py',)),
         ('common', ('capalgebra.py',)),
@@ -438,7 +442,7 @@ def _sota_jobs(quick=False):
             jobs.append((lab, directory, argv, minutes, fast))
     if found != wanted:
         raise ValueError('SOTA profile has no job for %r' % sorted(wanted - found))
-    return [(JOBS[0][0], HERE, ['audit.py', '--repository-only'], 0.5, True)] + jobs
+    return [(next(lab for lab, d, argv, _, _ in JOBS if d == HERE and argv == ['audit.py']), HERE, ['audit.py', '--repository-only'], 0.5, True)] + jobs
 
 
 def _sota_records():
@@ -478,6 +482,7 @@ def _sota_records():
 def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
+        ('dim49-60-p48-pointwise-refill', list(range(49,61)), [('verify.py',)], 'two exact head proofs; every added pair and full-coordinate ownership; complete direction and pole checks; published P48 minimum/population'),
         ('dim54-59-p48-coverage', list(range(54,60)), [('verify.py',)], 'exact root/quadratic tails, 7783-line base, class isometries and full-coordinate disjointness; published P48 minimum/population'),
         ('dim60-antipodal840-lift', [60], [('verify.py',)], 'exact 840-direction and 841-pole pairs, 7783-line base, 420 isometries and full-coordinate disjointness; inherited published P48 minimum and shell population'),
         ('dim27-31-algebraic-completion', [27,31], [('verify.py',)], 'all norms, distinctness and unordered pairs in complete explicit coordinates; independent direct-int64 changed pairs; no lattice or population assumptions'),
@@ -543,8 +548,8 @@ def _sota_coverage(jobs, results=None):
     selected = {(os.path.basename(d), tuple(argv)): lab for lab, d, argv, _, _ in jobs}
     if results is not None:
         verdicts = {lab: verdict for verdict, lab, _ in results}
-        audit_label = JOBS[0][0]
-        common_label = JOBS[5][0]
+        audit_label = next(lab for lab, d, argv, _, _ in JOBS if d == HERE and argv == ['audit.py'])
+        common_label = next(lab for lab, d, argv, _, _ in JOBS if os.path.basename(d) == 'common' and argv == ['capalgebra.py'])
     print('\nVerification scope for %d results labelled SOTA in README.md:' % len(records))
     for package, dimensions, commands, scope in groups:
         states = []

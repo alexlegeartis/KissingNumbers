@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+The 8 November [pointwise P48 refill](verifications/improved/dim49-60-p48-pointwise-refill/) gives twelve improved 49–60D bounds, including **58,627,711 in 60D**. Its portable replay uses two exact head implementations, every added/retained and added/added pair, full-coordinate ownership, complete direction/pole checks and an algebraic lift proof. Twelve rejection controls test malformed inputs. Published P48 minimum six and shell population 52,416,000 remain inherited; the full lifted code is not expanded.
+
 The 6 November [840-direction lift](verifications/improved/dim60-antipodal840-lift/) gives **58,543,525 in 60D**. Its replay checks all direction/pole/base-class pairs, 420 isometries and all selected mother-line disjointness. The 52,416,000-point P48 shell population and minimum six remain published inputs; the full lifted code is not expanded.
 
 The 29 October [joint-refill certificates](verifications/improved/dim27-31-joint-refills/) give 209,807, 221,988, 231,697, 247,972, 251,188 in 27–31D, respectively, exceeding PackingStar by 47, 124, 21, 5, 19. Complete exact all-pairs checks and direct-int64 inserted-point checks pass. Binary32 and binary64 replays, pinned-source rebuilds and six rejection controls are supplied. Corrected sextet symmetries reclaim 28D and strengthen three further dimensions.
