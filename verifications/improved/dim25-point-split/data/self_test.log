@@ -1,0 +1,10 @@
+10,000 biquadratic signs and 90,601 quadratic signs passed.
+600 near-cancellation signs passed.
+wrong_count correctly rejected: Certificate point count is incorrect
+wrong_norm correctly rejected: Point2913 norm is not exactly32
+duplicated_point correctly rejected: Exceptional conflict2913,2914
+retained_blocker correctly rejected: Bulk conflict at small point44
+wrong_rotation_count correctly rejected: Rotation count mismatch
+zero_denominator correctly rejected: Invalid small denominator
+wrong_circle_shift correctly rejected: Circle shift norm is not48
+All seven corrupted witnesses rejected; all self-tests passed.

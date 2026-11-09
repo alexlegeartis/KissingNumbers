@@ -25,8 +25,8 @@ research/**/data/*.log whitespace=-blank-at-eol
 research/partial_orbits_20261104/evidence/*.log whitespace=-blank-at-eol
 research/compute19_21_20261104/diagnostics/*.search whitespace=-blank-at-eof
 
-# Census refreshed 2026-11-08 after the 31D latitude-contact exchange package.
-# NOTE: this tree contains BOTH line endings -- 2322 text files use LF and 247 use CRLF,
+# Census refreshed 2026-11-09 after the 25D point-splitting package.
+# NOTE: this tree contains BOTH line endings -- 2333 text files use LF and 247 use CRLF,
 # an artefact of two write paths used while the repository was assembled.  No SOURCE OR
 # DOCUMENTATION file mixes them within itself.  Both statements are about the ten extensions
 # audit.py check 5k opens -- .py .md .txt .cff .json .tex .bib .yml .cfg .out -- and that is

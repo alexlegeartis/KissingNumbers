@@ -8,10 +8,11 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
-> **Current repository status — 8 November 2026.** Verified lower bounds in
+> **Current repository status — 9 November 2026.** Verified lower bounds in
 > **70 dimensions**; the [results table](#results-and-construction-history)
 > lists every current value, comparison source and verification package.
 >
+> - **25D:** **197 585** points, **one** above the preceding repository certificate. [Point splitting and joint circle motion](verifications/improved/dim25-point-split/) have a self-contained exact proof, an independently rebuilt shell and seven corruption controls.
 > - **27–31D:** **209 825, 221 988, 231 697, 247 972, 251 200** exceed
 >   [PackingStar’s October 28 release](common/source_review_20261029_27_31.json)
 >   by **65, 124, 21, 5, 31** points. The new [31D latitude-contact exchange](verifications/improved/dim31-latitude-contact-exchange/) adds four, with two complete exact pair proofs. Earlier [algebraic completions](verifications/improved/dim27-31-algebraic-completion/) add 18 in 27D and eight in 31D, with complete explicit coordinate proofs. The [29 October certificates](verifications/improved/dim27-31-joint-refills/) remain available.
@@ -83,13 +84,14 @@ entry, as recorded there.
 baseline in the same row: `(this work / recorded comparison - 1) * 100%`,
 or the ratio `this work / recorded comparison` when it is at least 2.
 That baseline can precede an intervening record by another author. For example,
-the 25D row compares 197,584 with Ma et al.'s historical 197,056, a gain of
-528 points (+0.268%). The advance over Takhanov-Yun's subsequent 197,583-point
-record is **one point**. In 31D the current 251,200-point construction gains
+the 25D row compares 197,585 with Ma et al.'s historical 197,056, a gain of
+529 points (+0.268%). The advance over Takhanov-Yun's subsequent 197,583-point
+construction is **two points**, and the gain over this repository's preceding
+197,584-point certificate is **one point**. In 31D the current 251,200-point construction gains
 **12,850 points** over the historical 238,350-point comparison. Its advance
 over PackingStar's October 28 release of 251,169 is **31 points**, and its
 increase over the preceding repository value 251,196 is **4 points**. The
-[25D](verifications/improved/dim25-collective-deformation/),
+[25D](verifications/improved/dim25-point-split/),
 [historical 31D](verifications/improved/dim31-dual-centres/) and
 [retained 26–31D residual completions](verifications/improved/dim26-31-residual-completions/) packages
 name these comparisons and the associated constructions.
@@ -125,7 +127,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | dim | recorded comparison | comparison method / source | **this work** | SOTA value | gain over recorded comparison | later gain | SOTA period | our method | superseding method |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 18 | 7 654 | [Cohn–Li, BW16 + hexagons](https://arxiv.org/abs/2411.04916v3) | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
-| 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 584** | **SOTA** | +0.268% | — |2026-08-30 to 2026-09-28; since 2026-10-26 | [Collective deformation](verifications/improved/dim25-collective-deformation/) | — |
+| 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 585** | **SOTA** | +0.268% | — |2026-08-30 to 2026-09-28; since 2026-10-26 | [Point splitting and collective motion](verifications/improved/dim25-point-split/) | — |
 | 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 136** | **SOTA** | +0.634% | — | 2026-09-08 to 2026-10-05; reclaimed 2026-10-28 | [Asymmetric exchanges](verifications/improved/dim26-30-asymmetric-exchanges/) | — |
 | 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 825** | **SOTA** | +4.086% | — | reclaimed 2026-10-29 | [Partial signed-orbit exchanges](verifications/improved/dim27-31-algebraic-completion/) | — |
 | 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **221 988** | **SOTA** | +8.196% | — | reclaimed 2026-10-29 | [Joint refills and sextet unions](verifications/improved/dim27-31-joint-refills/) | — |
@@ -297,6 +299,8 @@ improvement is claimed in 47D or 48D.
 </details>
 
 ## Recent updates
+
+**9 November 2026:** [General-point splitting and joint circle motion](verifications/improved/dim25-point-split/) give **197 585 in 25D**, one above the preceding repository certificate. The self-contained exact proof rebuilds all 196 560 shell points and proves every pair bound; 194 569 retained shell vectors, 2 913 circle points and 103 rational points remain. The previous package and manuscript are preserved. No fresh exhaustive worldwide-priority claim is made.
 
 **7 November 2026:** [Individual Coxeter–Todd base-triangle switches](verifications/improved/dim36-37-coxeter-todd/triangle_switch/) give **501 813 in 36D** and **505 629 in 37D**, adding **126** to each preceding certificate. Ninety three-point base switches combine with 1 511 added and 1 469 removed phase orbits. Both proofs freshly enumerate the short lattice shells and check every affected pair category, including all new-equator/unchanged-base products. All 636 latitude body orbits survive at both heights. [The dated source comparison](common/source_review_20261107_36_37_triangles.json) claims repository improvement, not exhaustive worldwide priority. The source certificates and manuscript are unchanged.
 
@@ -498,7 +502,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 40 packages, 70 dimensions
+### `verifications/improved/` — 41 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -515,7 +519,8 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | [`dim27-quadratic-normal-module`](verifications/improved/dim27-quadratic-normal-module/) | 27 | current 209 600-point quadratic code; full independent all-pairs verification |
 | [`dim31-normal-module-exchange`](verifications/improved/dim31-normal-module-exchange/) | 31 | current 251 110-point integer code; full independent all-pairs verification |
 | [`dim26-31-residual-completions`](verifications/improved/dim26-31-residual-completions/) | 26–31 | retained residual-head completions and exact exceptional pure tails; independent full replays |
-| [`dim25-collective-deformation`](verifications/improved/dim25-collective-deformation/) | 25 | collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons |
+| [`dim25-point-split`](verifications/improved/dim25-point-split/) | 25 | one-for-two point splitting; 971 circles and 103 rational points; complete independent exact proof |
+| [`dim25-collective-deformation`](verifications/improved/dim25-collective-deformation/) | 25 | retained 197,584-point predecessor: 971 circles and 102 moved points; exact biquadratic comparisons |
 | [`dim31-dual-centres`](verifications/improved/dim31-dual-centres/) | 31 | shared midpoint replacements and dual E7 centres; exact coordinate replay |
 | [`dim38-joint-latitudes`](verifications/improved/dim38-joint-latitudes/) | 38 | Orthogonal Hamming latitude replacement; two exact proofs with inherited Golay/Leech minimum-norm premise |
 | [`dim39-deformed-orbits`](verifications/improved/dim39-deformed-orbits/) | 39 | reduced-symmetry dense sign orbits and retained sparse layers; two independent complete exact proofs |
@@ -596,7 +601,7 @@ comparison is given separately by its source.
 
 | dim | earlier result | intervening result | source | current result |
 |---|---:|---:|---|---:|
-| 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) | 197 584 |
+| 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) | 197 585 |
 | 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 231 697 |
 | 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 247 972 |
 | 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 200 |
@@ -788,10 +793,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 98 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 100 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 117 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 119 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

@@ -70,6 +70,7 @@ DRIVERS = [
 ]
 DRIVERS += [(_name, os.path.join(V, _name), 'final.py') for _name in
             ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim88-96-z8-golay', 'dim26-30-asymmetric-exchanges', 'dim27-quadratic-normal-module', 'dim31-normal-module-exchange')]
+DRIVERS.append(('25D point splitting', os.path.join(V, 'dim25-point-split'), 'final.py'))
 DRIVERS.append(('31D latitude contact exchange', os.path.join(V, 'dim31-latitude-contact-exchange'), 'final.py'))
 DRIVERS.append(('60D antipodal direction lift', os.path.join(V, 'dim60-antipodal840-lift'), 'final.py'))
 DRIVERS.append(('49-60D pointwise P48 refill', os.path.join(V, 'dim49-60-p48-pointwise-refill'), 'final.py'))

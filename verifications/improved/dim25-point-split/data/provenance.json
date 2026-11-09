@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-09",
+  "dimension": 25,
+  "previous_repository_bound": 197584,
+  "new_bound": 197585,
+  "gain": 1,
+  "baseline_commit": "c0b3f9a73442074b49ecf8f71d9698ba702e33e3",
+  "certificate": "source/certificate25.json",
+  "certificate_sha256": "c5ddce2af91688875d54f68ff570a2814d63dcdc7f5884ce49526b630d409d55",
+  "checker_sha256": "4becb67a85b17ae419570d9d10da4c931ccc5dbd758573756f48d537850d4a86",
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "verification": "complete exact pair coverage; independent polynomial-built shell; no construction imports or floating-point geometry",
+  "receipt_path_normalization": "Absolute certificate path replaced by its package-relative path; numerical proof results unchanged.",
+  "literature_scope": "Repository improvement; no new exhaustive worldwide-priority review.",
+  "paper": "unchanged"
+}
