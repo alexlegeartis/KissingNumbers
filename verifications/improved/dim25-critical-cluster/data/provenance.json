@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-09",
+  "dimension": 25,
+  "previous_repository_bound": 197585,
+  "new_bound": 197586,
+  "gain": 1,
+  "gain_over_197584": 2,
+  "baseline_commit": "a2d12e440210ee47fe5afecd20d817b76a47cc6e",
+  "certificate": "source/certificate25.json",
+  "certificate_sha256": "5270afec106a2336179fd8c1d21fd5b9e30da100a8d4f1e6ec4ca3ec8b161299",
+  "checker_sha256": "4becb67a85b17ae419570d9d10da4c931ccc5dbd758573756f48d537850d4a86",
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "verification": "Fresh complete exact replay before publication; independent polynomial-built shell; no construction imports or floating-point geometry",
+  "receipt_path_normalization": "Absolute certificate path replaced by its package-relative path; numerical proof results unchanged.",
+  "exactification": "Nineteen freed inherited-circle points use rational conic coordinates; all 247 general points have exact rational coordinates and squared norm 32.",
+  "literature_scope": "Repository improvement; no new exhaustive worldwide-priority review.",
+  "paper": "unchanged"
+}

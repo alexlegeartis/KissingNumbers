@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-41 packages, one per **construction idea** rather than one per dimension, because several
+42 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -23,6 +23,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim27-quadratic-normal-module`](improved/dim27-quadratic-normal-module/) | 27 | retained 209,600-point quadratic construction, +14 over PackingStar; complete independent exact all-pairs replay |
 | [`dim31-normal-module-exchange`](improved/dim31-normal-module-exchange/) | 31 | retained 251,110-point integer construction, +108 over PackingStar's 28 October update; complete independent all-pairs replay |
 | [`dim26-31-residual-completions`](improved/dim26-31-residual-completions/) | 26–31 | retained residual-head completions: 201,108; 209,532; 216,680; 226,520; 238,808; 246,638; independent exact full replays |
+| [`dim25-critical-cluster`](improved/dim25-critical-cluster/) | 25 | current 197,586; critical-cluster replacement with 926 circles and 247 rational points; complete independent exact proof |
 | [`dim25-point-split`](improved/dim25-point-split/) | 25 | one-for-two point splitting; 971 circles and 103 rational points; complete independent exact proof |
 | [`dim25-collective-deformation`](improved/dim25-collective-deformation/) | 25 | retained 197,584-point predecessor: 971 circles and 102 moved points; exact biquadratic comparisons |
 | [`dim31-dual-centres`](improved/dim31-dual-centres/) | 31 | shared midpoint replacements and dual E7 centres; exact coordinate replay |

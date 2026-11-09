@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 100 scripts, including large exact certificate replays
-    python run_all.py --full       # 119 scripts, budget about 10 hours
+    python run_all.py              # 102 scripts, including large exact certificate replays
+    python run_all.py --full       # 121 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -212,6 +212,8 @@ JOBS = [
      os.path.join(V, 'improved', 'dim32-35-signed-layers'), ['verify.py'], 1.0, True),
     ('dim25-point-split: independent exact proof', os.path.join(V, 'improved', 'dim25-point-split'), ['verify.py'], 1.0, True),
     ('dim25-point-split: arithmetic and corruption controls', os.path.join(V, 'improved', 'dim25-point-split'), ['self_test.py'], 1.0, True),
+    ('dim25-critical-cluster: independent exact proof', os.path.join(V, 'improved', 'dim25-critical-cluster'), ['verify.py'], 1.0, True),
+    ('dim25-critical-cluster: arithmetic and corruption controls', os.path.join(V, 'improved', 'dim25-critical-cluster'), ['self_test.py'], 1.0, True),
     ('dim25-collective-deformation: independent exact replay', os.path.join(V, 'improved', 'dim25-collective-deformation'), ['verify.py'], 1.0, True),
     ('dim31-dual-centres: independent exact replay', os.path.join(V, 'improved', 'dim31-dual-centres'), ['verify.py'], 5.0, True),
     ('dim38-joint-latitudes: independent exact replay', os.path.join(V, 'improved', 'dim38-joint-latitudes'), ['verify.py'], 1.0, True),
@@ -407,6 +409,8 @@ def _sota_jobs(quick=False):
         ('dim32-35-signed-layers', ('verify.py',)),
         ('dim25-point-split', ('verify.py',)),
         ('dim25-point-split', ('self_test.py',)),
+        ('dim25-critical-cluster', ('verify.py',)),
+        ('dim25-critical-cluster', ('self_test.py',)),
         ('dim25-collective-deformation', ('verify.py',)),
         ('dim31-dual-centres', ('verify.py',)),
         ('dim40-affine-shells', ('verify.py',)),
@@ -501,6 +505,7 @@ def _sota_coverage(jobs, results=None):
         ('dim18-bent-hexagon', [18], [('verify18.py',)], ''),
         ('dim32-35-signed-layers', [32, 33, 34, 35], [('verify.py',)], 'two independent exact representations; full dense-code enumeration and every exceptional pair type'),
         ('dim25-point-split', [25], [('verify.py',), ('self_test.py',)], 'independently rebuilt Golay/Leech shell; complete exact pair coverage with explicit shell and circle lemmas, integer intervals and exact biquadratic signs; seven corruption controls'),
+        ('dim25-critical-cluster', [25], [('verify.py',), ('self_test.py',)], 'independently rebuilt Golay/Leech shell; complete exact pair coverage with rational conic contact preservation, integer intervals and exact biquadratic signs; seven corruption controls'),
         ('dim25-collective-deformation', [25], [('verify.py',)], ''),
         ('dim31-dual-centres', [31], [('verify.py',)], ''),
         ('dim40-affine-shells', [40], [('verify.py',)], ''),
