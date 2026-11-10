@@ -12,10 +12,11 @@ def results():
     assert certificate['z8']['binary_union_words'] == 2**37
     assert certificate['z8']['low_lee_coset_exclusions'] == 759*5489
     assert certificate['support']['support_pairs_checked'] == 26022*26021//2
+    sections={r['dimension']:r for r in json.loads((ROOT/'data/section_receipt.json').read_text())}
     rows = []
     for row in recorded['rows']:
         dimension = row['dimension']
-        source = certificate['dimensions'][str(dimension)]
+        source = sections.get(dimension,certificate['dimensions'][str(dimension)])
         assert source['total'] == row['total'] == sum(row['terms'].values())
         assert source['terms'] == row['terms']
         assert len(source['constraint_rows']) == 96-dimension
@@ -28,3 +29,4 @@ def results():
 if __name__ == '__main__':
     for row in results():
         print(json.dumps(row))
+

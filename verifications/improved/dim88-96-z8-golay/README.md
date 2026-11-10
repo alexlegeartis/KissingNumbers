@@ -8,15 +8,15 @@ It is not a new code discovered here. The former use of the linear [96,33,24]
 code missed this stronger nonlinear input. The corrected published-code baselines
 are recorded separately from the gains over the preceding repository checkpoint.
 
-| dimension | verified lower bound | gain over preceding repository certificate |
+| dimension | verified lower bound | gain over preceding certificate (88–94: November row sections; 95–96: original update) |
 |---|---:|---:|
-| 88 | **6,921,251,584** | +689,012,056 |
-| 89 | **9,229,354,136** | +2,993,829,100 |
-| 90 | **12,306,670,328** | +6,064,643,188 |
-| 91 | **16,409,599,116** | +10,157,396,566 |
-| 92 | **21,880,490,288** | +15,608,058,713 |
-| 93 | **31,040,958,640** | +24,739,322,556 |
-| 94 | **47,697,508,076** | +41,339,850,680 |
+| 88 | **6,922,487,106** | +1,235,522 |
+| 89 | **9,229,785,598** | +431,462 |
+| 90 | **12,307,197,352** | +527,024 |
+| 91 | **16,410,365,876** | +766,760 |
+| 92 | **21,881,382,480** | +892,192 |
+| 93 | **31,041,848,144** | +889,504 |
+| 94 | **47,698,308,180** | +800,104 |
 | 95 | **77,565,848,332** | +70,464,307,200 |
 | 96 | **142,162,362,560** | +128,849,018,880 |
 
@@ -183,3 +183,48 @@ bound or a claim about other section choices.
 
 The section choices, complete counts and compatible small layers are explicit
 here. The manuscript and PDF remain at their pinned earlier snapshot.
+
+
+## November 2026 alternative sections
+
+The current 88–94D results replace the original first-row sections below with the explicitly listed row sets in `data/sections.json`. The original parent proofs and their receipts remain unchanged. `data/section_receipt.json` supplies the new seven results; `final.py` combines these with the unchanged 95D and 96D results. These are improvements over the repository baseline, with no claim of worldwide priority or optimality.
+
+### Construction and proof
+
+## Verified improvements against the fetched repository baseline
+
+The construction is the existing 96D parent from `alexlegeartis/KissingNumbers/verifications/improved/dim88-96-z8-golay`, with different linear sections. The published nonlinear binary parent remains Duursma–Greferath–Litsyn–Schmidt (2001), DOI 10.1109/18.923742. No new parent code is claimed.
+
+All coordinates are grouped into 24 rows of four. For the rows T listed in `data/sections.json`, impose that each selected row sums to zero. This imposes exactly |T| independent real linear equations. The construction consists of:
+
+1. Unflipped Z8-code Gray words whose selected ring coordinates are nonzero modulo 4, mapped to signs in R^96. Flipped-parent words cannot satisfy a zero row sum.
+2. Every archived weight-24 support/sign vector satisfying these equations. Signs are assigned to occupied positions in their original increasing-coordinate order. No alteration of the source sign code is used.
+3. The source Reed–Solomon weight-six layer, moved to any 6q distinct coordinates outside all selected rows, using increasing outside-coordinate order. The size is unchanged. This move preserves all compatibility: its supports intersect one another in at most three, and its inner product with any weight-24 vector is at most 6*4*2=48.
+4. All source pure roots: 12 A3 roots in each selected row, plus both coordinate poles outside selected rows. Total 192+4|T|.
+
+All vectors have squared norm 96 and pairwise inner product at most 48 by the source parent proof and unchanged layer compatibility bounds. Taking a linear section never weakens these bounds. An orthonormal basis of the section gives the claimed Euclidean dimension. The transversal weight-24 layer contributes zero in these sections.
+
+## Count checks
+
+The selected witnesses were found by exact support/sign enumeration and a superset zeta transform over row masks. Search optimality is not needed for validity and the large search histograms are not shipped.
+
+`source/section_replay.py` processes all 26,022 supports without profile grouping using Python big-integer intersections of sign-condition masks. `source/section_independent.py` independently uses matrix-expanded signs and coordinate prefix sums. Both enumerate complete projected ring images. Since the generator is free over Z8 of rank 12, every projected image has equal fiber size.
+
+In 88D the selected eight rows form a binary Golay octad. Their Z4 image has size 32,768, with 3,281 fully nonzero vectors. This adds 1,048,576 dense points relative to an independent eight-row projection. For the four through seven selected rows the Z4 projections are all surjective.
+
+Results:
+- 88D: 6,922,487,106, increase 1,235,522.
+- 89D: 9,229,785,598, increase 431,462.
+- 90D: 12,307,197,352, increase 527,024.
+- 91D: 16,410,365,876, increase 766,760.
+- 92D: 21,881,382,480, increase 892,192.
+
+The comparison baseline is the source `bounds.json`, also checked against the repository RESULTS.md. These are repository improvements, not an independent claim of worldwide novelty. Both inherited parent proofs and both new section count proofs are replayed by the production verifier.
+
+### Equal-row sections and production verification
+
+For 93D impose S0=S1=S4=S8. For 94D impose S0=S1=S8. Their dimensions are 96-(4-1)=93 and 96-(3-1)=94. Selected Z8 projections are surjective; explicit enumeration checks both Gray-parent cosets. The transversal layer contributes 536,870,912 and 1,073,741,824, respectively. These counts are also checked directly on every sign word. The RS layer uses the first 6q outside cells in increasing order; A3 roots lie within selected rows, and poles lie outside.
+
+Run `python verify.py` from this package. It checks the manifest, both complete parent proofs, both new exact section-count implementations, all layer counts and the explicit unit minors proving section dimensions. It compares computed receipts with pinned data. The candidate-specific corruption controls reject 64 malformed counts/sections, including a duplicate selected row, wrong rank, wrong sparse/dense/transversal/RS/pure counts and the erroneous uniform-projection formula for the 88D octad.
+
+Both new counting implementations are independent: one uses integer sign masks and set-based ring image closure; the other uses matrix-expanded sign words, coordinate prefix sums and unique-array ring images. They share only final geometry/claim consistency checks. The inherited parent implementations remain fully independent. See `SECTION_AUDIT.md` for the independent mathematical audit; its packaging-gap paragraph describes the pre-integration candidate and is resolved by these production files and controls. The construction is an injective isometric identification of a linear section, not coordinate deletion.

@@ -494,7 +494,7 @@ for _d in (34, 35):
 
 # Published nonlinear Z8 parent and fully checked sections, 28 October 2026.
 for _d in range(88, 97):
-    STATUS[_d] = ('codes', 'nonlinear Z8 Golay parent, exact central sections and sparse layers; '
+    STATUS[_d] = ('codes', 'nonlinear Z8 Golay parent, optimized zero/equal-row sections and sparse layers; '
                   'different sections and larger compatible layers remain open '
                   '(dim88-96-z8-golay/verify.py)')
 
@@ -536,3 +536,4 @@ STATUS[31] = ('heads', 'orthogonal four-for-eight latitude-to-midpoint exchange;
 
 # Three affine Gamma72 slices, independently verified 10 November 2026.
 STATUS[70] = ('heads', 'three normalized affine slices of Gamma72 with an exact moment-dual population certificate; different offset unions and projections remain open, with no global-optimality claim (dim70-71-gamma72-cross-sections/affine70/verify.py)')
+

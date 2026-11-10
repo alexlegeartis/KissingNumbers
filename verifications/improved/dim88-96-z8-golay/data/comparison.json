@@ -58,5 +58,28 @@
     "sha256": "d0def7d6587ca3aa1b39c9f3e7ccb844310285a7f1794dc8e9492f0fff9fc65d",
     "scope": "Pinned unchanged support family; all geometry reverified by this package."
   },
-  "novelty_scope": "Stronger repository constructions using a recovered published nonlinear input, new explicit section counts and compatible small layers. No new binary-code or comprehensive global-priority claim; paper deferred."
+  "novelty_scope": "Stronger repository constructions using a recovered published nonlinear input, new explicit section counts and compatible small layers. No new binary-code or comprehensive global-priority claim; paper deferred.",
+  "november_sections": {
+    "baseline_commit": "86ed15b6032a57d8a134c1935fba3850b446e507",
+    "review_date": "2026-11-10",
+    "previous_repository_rows": {
+      "92": 21880490288,
+      "91": 16409599116,
+      "90": 12306670328,
+      "89": 9229354136,
+      "88": 6921251584,
+      "94": 47697508076,
+      "93": 31040958640
+    },
+    "new_rows": {
+      "92": 21881382480,
+      "91": 16410365876,
+      "90": 12307197352,
+      "89": 9229785598,
+      "88": 6922487106,
+      "94": 47698308180,
+      "93": 31041848144
+    },
+    "scope": "Repository improvement only; published parent unchanged, no worldwide-priority or optimality claim."
+  }
 }

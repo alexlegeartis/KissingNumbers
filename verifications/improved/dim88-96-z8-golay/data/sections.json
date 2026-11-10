@@ -1,0 +1,166 @@
+[
+  {
+    "dimension": 92,
+    "rows": [
+      0,
+      1,
+      4,
+      8
+    ],
+    "mask": 275,
+    "image_size": 256,
+    "nonzero_images": 81,
+    "terms": {
+      "dense": 21743271936,
+      "transversal24": 0,
+      "support24": 137196384,
+      "support6": 913952,
+      "pure": 208
+    },
+    "total": 21881382480,
+    "baseline": 21880490288,
+    "gain": 892192,
+    "section": "zero"
+  },
+  {
+    "dimension": 91,
+    "rows": [
+      0,
+      1,
+      4,
+      8,
+      13
+    ],
+    "mask": 8467,
+    "image_size": 1024,
+    "nonzero_images": 243,
+    "terms": {
+      "dense": 16307453952,
+      "transversal24": 0,
+      "support24": 102443200,
+      "support6": 468512,
+      "pure": 212
+    },
+    "total": 16410365876,
+    "baseline": 16409599116,
+    "gain": 766760,
+    "section": "zero"
+  },
+  {
+    "dimension": 90,
+    "rows": [
+      0,
+      1,
+      4,
+      8,
+      13,
+      23
+    ],
+    "mask": 8397075,
+    "image_size": 4096,
+    "nonzero_images": 729,
+    "terms": {
+      "dense": 12230590464,
+      "transversal24": 0,
+      "support24": 76138160,
+      "support6": 468512,
+      "pure": 216
+    },
+    "total": 12307197352,
+    "baseline": 12306670328,
+    "gain": 527024,
+    "section": "zero"
+  },
+  {
+    "dimension": 89,
+    "rows": [
+      0,
+      1,
+      11,
+      12,
+      13,
+      18,
+      21
+    ],
+    "mask": 2373635,
+    "image_size": 16384,
+    "nonzero_images": 2187,
+    "terms": {
+      "dense": 9172942848,
+      "transversal24": 0,
+      "support24": 56374018,
+      "support6": 468512,
+      "pure": 220
+    },
+    "total": 9229785598,
+    "baseline": 9229354136,
+    "gain": 431462,
+    "section": "zero"
+  },
+  {
+    "dimension": 88,
+    "rows": [
+      0,
+      1,
+      4,
+      8,
+      13,
+      17,
+      19,
+      22
+    ],
+    "mask": 4858131,
+    "image_size": 32768,
+    "nonzero_images": 3281,
+    "terms": {
+      "dense": 6880755712,
+      "transversal24": 0,
+      "support24": 41521218,
+      "support6": 209952,
+      "pure": 224
+    },
+    "total": 6922487106,
+    "baseline": 6921251584,
+    "gain": 1235522,
+    "section": "zero"
+  },
+  {
+    "dimension": 94,
+    "rows": [
+      0,
+      1,
+      8
+    ],
+    "terms": {
+      "dense": 46439333888,
+      "transversal24": 1073741824,
+      "support24": 184318312,
+      "support6": 913952,
+      "pure": 204
+    },
+    "total": 47698308180,
+    "baseline": 47697508076,
+    "gain": 800104,
+    "section": "equal"
+  },
+  {
+    "dimension": 93,
+    "rows": [
+      0,
+      1,
+      4,
+      8
+    ],
+    "terms": {
+      "dense": 30366760960,
+      "transversal24": 536870912,
+      "support24": 137302112,
+      "support6": 913952,
+      "pure": 208
+    },
+    "total": 31041848144,
+    "baseline": 31040958640,
+    "gain": 889504,
+    "section": "equal"
+  }
+]
