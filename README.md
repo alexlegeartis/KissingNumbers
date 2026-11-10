@@ -1,5 +1,7 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
+The 10 November three-slice Gamma72 construction gives 1,360,986,112 in 70D, improving the preceding 1,249,778,250 by 111,207,862 (8.90%). A self-contained exact verifier regenerates all 61 cells and 108 constraints, checks the rational dual and every projected pair type, and rejects eight corrupted certificates. The published lattice minimum, population and 11-design property remain explicit inputs; the paper and workflows are unchanged.
+
 The kissing number τ(n) is the largest number of unit spheres that can touch a central unit
 sphere in ℝⁿ; equivalently, the largest set of unit vectors with pairwise inner products at
 most 1/2. This repository registers constructions in **70 dimensions**, each with a package
@@ -8,7 +10,7 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
-> **Current repository status — 9 November 2026.** Verified lower bounds in
+> **Current repository status — 10 November 2026.** Verified lower bounds in
 > **70 dimensions**; the [results table](#results-and-construction-history)
 > lists every current value, comparison source and verification package.
 >
@@ -170,7 +172,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 67 | 331 737 996 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **355 090 822** | **SOTA** | +7.04% | — | since 2026-10-24 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **375 222 168** | **SOTA** | +13.11% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **627 822 180** | **SOTA** | +89% | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim68-69-gamma72-cross-sections/) | — |
-| 70 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **1 249 778 250** | **SOTA** | 3.77x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
+| 70 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **1 360 986 112** | **SOTA** | 4.10x | — | updated 2026-11-10 | [Gamma72 affine slices](verifications/improved/dim70-71-gamma72-cross-sections/affine70/) | — |
 | 71 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **2 603 658 750** | **SOTA** | 7.85x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
 | 73 | 6 218 175 602 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [1D tail](common/published.py) *(derived)* | **6 218 206 932** | **SOTA** | +0.000504% | — | since 2026-08-30 | [Gamma72 cosets plus caps](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 74 | 6 218 175 606 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [2D tail](common/published.py) *(derived)* | **6 218 211 606** | **SOTA** | +0.000579% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
@@ -546,7 +548,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | `[dim49-63-p48-caps](verifications/improved/dim49-63-p48-caps/)`                             | 49–59 (60 retained) | the cap construction over P₄₈, with the 7 783-line class and 577 explicit disjoint images                                                                                             |
 | `[dim62-63-ers-chain](verifications/improved/dim62-63-ers-chain/)`                         | 62, 63 | retained Edel–Rains–Sloane chain (n, 15, 2); it beats the caps restricted to the shipped bases and is superseded by the October central sections |
 | `[dim68-69-gamma72-cross-sections](verifications/improved/dim68-69-gamma72-cross-sections/)` | 68, 69 | realizability of a k-point Gram settled by **exhibiting** the k-tuple in Γ₇₂ rather than through the LP's own witness lemma, which unlocks k = 3 and k = 4 |
-| `[dim70-71-gamma72-cross-sections](verifications/improved/dim70-71-gamma72-cross-sections/)` | 70, 71 | the same k-point method on Nebe's Γ₇₂                                                                                                                                                        |
+| `[dim70-71-gamma72-cross-sections](verifications/improved/dim70-71-gamma72-cross-sections/)` | 70, 71 | central sections and the exact three-slice affine continuation on Nebe's Γ₇₂                                                                                                                                                        |
 | `[dim73-95-gamma72-caps](verifications/improved/dim73-95-gamma72-caps/)`                     | 73–95  | the cap construction over Γ₇₂, whose class threshold γ = 1/4 is exactly what permits zero-sum triples                                                                                        |
 | [`dim88-96-z8-golay`](verifications/improved/dim88-96-z8-golay/) | 88–96 | nonlinear published Golay parent, exact sections and sparse layers; two independent proofs |
 | [`dim61-68-95-96-code-layers`](verifications/improved/dim61-68-95-96-code-layers/) | 61–63, 66–68, 95–96 | binary compression, central sections and enlarged support codes |
@@ -849,7 +851,7 @@ Or individually, each from its own directory:
 | `…/dim68-69-gamma72-cross-sections/scripts/recheck_cert.py`                    | both certificates re-derived by a second arithmetic path        | 40 s   |
 | `…/dim68-69-gamma72-cross-sections/scripts/presentation_invariance.py`         | the bound does not depend on which basis presents the Gram      | 80 s   |
 | `…/dim68-69-gamma72-cross-sections/scripts/k4_gram_min_det.py`                 | no four-tuple of Γ₇₂ minimal lines beats D₄                        | 2 min  |
-| `…/dim70-71-gamma72-cross-sections/derive.py`                                 | τ(70) ≥ 1 249 778 250, τ(71) ≥ 2 603 658 750                   | 11 s   |
+| `…/dim70-71-gamma72-cross-sections/derive.py`                                 | τ(70) ≥ 1 360 986 112, τ(71) ≥ 2 603 658 750                   | 11 s   |
 | `…/dim73-95-gamma72-caps/scripts/calibrate.py`                                | **the calibration**: reproduces Cohn's table in dims 26, 28–31 | 2 min  |
 | `…/dim73-95-gamma72-caps/scripts/verify_classes.py data/disjoint_classes.npz` | the 120 Γ₇₂ classes, exactly                                   | 46 s   |
 | `…/superseded/dim44-45-p48-cross-sections/brackets.py`                        | the withdrawn claims, and Sun–Wang inside the brackets         | 40 min |

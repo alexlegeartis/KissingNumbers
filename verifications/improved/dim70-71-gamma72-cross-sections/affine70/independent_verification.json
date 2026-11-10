@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "dimension": 70,
+  "bound": 1360986112,
+  "baseline": 1249778250,
+  "gain": 111207862,
+  "cells": 61,
+  "constraints": 108,
+  "geometry_checks": [
+    {
+      "i": 0,
+      "j": 0,
+      "squared_margin": "31/12"
+    },
+    {
+      "i": 1,
+      "j": 0,
+      "squared_margin": "0"
+    },
+    {
+      "i": 1,
+      "j": 1,
+      "squared_margin": "31/12"
+    },
+    {
+      "i": 2,
+      "j": 0,
+      "squared_margin": "5/2"
+    },
+    {
+      "i": 2,
+      "j": 1,
+      "squared_margin": "5/2"
+    },
+    {
+      "i": 2,
+      "j": 2,
+      "squared_margin": "29/4"
+    }
+  ],
+  "assumptions": [
+    "Gamma72 is an even unimodular 72D lattice of minimum 8 with 6,218,175,600 minimal vectors.",
+    "Its minimal shell is an 11-design."
+  ],
+  "scope": "Exact existence lower bound from three affine slices; no full shell enumeration and no global priority claim."
+}

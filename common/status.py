@@ -533,3 +533,6 @@ STATUS[33] = ('codes', 'non-antipodal signed octads and individual root-star tra
 
 # Complete latitude-contact exchange, independently replayed 8 November 2026.
 STATUS[31] = ('heads', 'orthogonal four-for-eight latitude-to-midpoint exchange; two complete exact pair enumerations including integer-only checks without antipodal compression; broader layers remain open (dim31-latitude-contact-exchange/verify.py)')
+
+# Three affine Gamma72 slices, independently verified 10 November 2026.
+STATUS[70] = ('heads', 'three normalized affine slices of Gamma72 with an exact moment-dual population certificate; different offset unions and projections remain open, with no global-optimality claim (dim70-71-gamma72-cross-sections/affine70/verify.py)')

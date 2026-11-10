@@ -3,7 +3,9 @@
 | dim | previously published | this package | factor |
 |---|---|---|---|
 | 71 | 331 737 984 | **2 603 658 750** | **7.85** |
-| 70 | 331 737 984 | **1 249 778 250** | **3.77** |
+| 70 | 331 737 984 | **1 360 986 112** | **4.10** |
+
+The 10 November 2026 [three-slice affine continuation](affine70/) improves 70D by 111,207,862. Run `python affine70/verify.py` and `python affine70/rejection_controls.py` for the self-contained exact proof and corruption controls. `derive.py` retains its historical central-section checks and now also invokes the affine verifier. The remaining central-section discussion below describes the historical method, not a ceiling for the new construction.
 
 ```
 python derive.py            # a few seconds, needs numpy + scipy

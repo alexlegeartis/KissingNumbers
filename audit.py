@@ -395,7 +395,7 @@ add(62, (1 << 26) + 4096 * 1024 + 1891 * 4, 'dim62-63-ers-chain',
     'scripts/verify_chain.py (chain (62,15,2): 2^26 + 4096*1024 + 1891*4)')
 add(63, (1 << 27) + 4096 * 1024 + 1953 * 4, 'dim62-63-ers-chain',
     'scripts/verify_chain.py (chain (63,15,2): 2^27 + 4096*1024 + 1953*4)')
-add(70, 1249778250, 'dim70-71-gamma72-cross-sections', 'derive.py (exact dual certificate)')
+add(70, 1360986112, 'dim70-71-gamma72-cross-sections', 'affine70/verify.py (independent exact cells, dual and geometry)')
 add(69, 627822180, 'dim68-69-gamma72-cross-sections',
     'verify69.py (A_3 at the Hermite floor, det 256, exhibited inside the D_4 four-tuple)')
 add(68, 361275480, 'dim68-69-gamma72-cross-sections',
@@ -2051,7 +2051,7 @@ if '--write-results' in sys.argv and not fail:
         'dim60-antipodal840-lift': '840 antipodal quaternionic directions, 420 disjoint P48 classes and 841 independent poles; exact finite replay',
         'dim62-63-ers-chain': 'the Edel-Rains-Sloane chain (n, 15, 2), levels 1-2 built here',
         'dim68-69-gamma72-cross-sections': 'k-point moment LP with the Gram exhibited in Gamma_72',
-        'dim70-71-gamma72-cross-sections': 'k-point moment LP on cross-sections of Gamma_72',
+        'dim70-71-gamma72-cross-sections': 'central Gamma72 sections and a three-slice 70D affine union with an independent exact dual proof',
         'dim73-95-gamma72-caps': 'the cap construction over Gamma_72, with zero-sum triples',
         'dim96-ers-takeover': 'the Edel-Rains-Sloane chain (96, 24, 6, 1)',
     }
@@ -2061,6 +2061,8 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append("")
+    out.append('The 10 November three-slice Gamma72 construction gives 1,360,986,112 in 70D, improving the preceding 1,249,778,250 by 111,207,862 (8.90%). A self-contained exact verifier regenerates all 61 cells and 108 constraints, checks the rational dual and every projected pair type, and rejects eight corrupted certificates. The published lattice minimum, population and 11-design property remain explicit inputs; the paper and workflows are unchanged.')
     out.append('')
     out.append('The 7 November 33D non-antipodal continuation gives 370408, a gain of 32 over the actual published 370376 repository certificate and 168 over the pinned Lin construction. Its 131072 dense points, 1837 full-even octad layers, 2064 individual exceptional octads, 1956 retained roots and 180 individual stars have squared norm 32 and ordinary inner products at most 16. Exactly 500 points lack antipodes. The unpublished 370392 intermediate gains 16 by octad replacement; the final star/root trade gains another 16. Independent exact geometry, source and coordinate-set deltas, rank 33, two sets of 16 corruption controls and complete manifests are replayed without a solver. No worldwide-priority, source-union optimum or global-optimality claim is made. All prior certificates, other dimension bounds, the paper and workflows remain unchanged.')
     out.append('')

@@ -1,0 +1,34 @@
+[
+  {
+    "mutation": "bound",
+    "rejected": true
+  },
+  {
+    "mutation": "numerator",
+    "rejected": true
+  },
+  {
+    "mutation": "gram",
+    "rejected": true
+  },
+  {
+    "mutation": "rhs",
+    "rejected": true
+  },
+  {
+    "mutation": "row",
+    "rejected": true
+  },
+  {
+    "mutation": "offset",
+    "rejected": true
+  },
+  {
+    "mutation": "cell",
+    "rejected": true
+  },
+  {
+    "mutation": "dual",
+    "rejected": true
+  }
+]

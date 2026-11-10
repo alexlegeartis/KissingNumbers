@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Dimensions 70 and 71: cross-sections of Nebe's extremal 72-dimensional lattice.
+"""Historical central sections in dimensions 70 and 71, followed by the current 70D affine proof.
 
     tau(71) >= 2 603 658 750       previously 331 737 984   -- a factor 7.85
     tau(70) >= 1 249 778 250       previously 331 737 984   -- a factor 3.77
@@ -166,4 +166,8 @@ print()
 print("=" * 78)
 print("ALL CHECKS PASSED" if ok else "*** FAILURES ***")
 print("=" * 78)
+# Preserve the central-section replay above, then verify the stronger affine union.
+if ok:
+    import runpy
+    runpy.run_path(os.path.join(os.path.dirname(__file__), 'affine70', 'verify.py'), run_name='__main__')
 raise SystemExit(0 if ok else 1)
