@@ -537,3 +537,7 @@ STATUS[31] = ('heads', 'orthogonal four-for-eight latitude-to-midpoint exchange;
 # Three affine Gamma72 slices, independently verified 10 November 2026.
 STATUS[70] = ('heads', 'three normalized affine slices of Gamma72 with an exact moment-dual population certificate; different offset unions and projections remain open, with no global-optimality claim (dim70-71-gamma72-cross-sections/affine70/verify.py)')
 
+
+# Affine Gamma72 slice unions, independently verified 10 November 2026.
+for _d in (68, 69):
+    STATUS[_d] = ('heads', 'compatible affine Gamma72 slice unions with exhibited normals and independent exact population-dual proofs; larger offset unions and other projections remain open, without a global-optimality claim (dim68-69-gamma72-cross-sections/affine68_69/verify.py)')

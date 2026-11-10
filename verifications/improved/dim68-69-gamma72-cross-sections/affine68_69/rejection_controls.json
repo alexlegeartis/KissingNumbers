@@ -1,0 +1,82 @@
+[
+  {
+    "dimension": 69,
+    "mutation": "bound",
+    "rejected": true
+  },
+  {
+    "dimension": 69,
+    "mutation": "numerator",
+    "rejected": true
+  },
+  {
+    "dimension": 69,
+    "mutation": "gram",
+    "rejected": true
+  },
+  {
+    "dimension": 69,
+    "mutation": "group",
+    "rejected": true
+  },
+  {
+    "dimension": 69,
+    "mutation": "moment",
+    "rejected": true
+  },
+  {
+    "dimension": 69,
+    "mutation": "offset",
+    "rejected": true
+  },
+  {
+    "dimension": 69,
+    "mutation": "objective",
+    "rejected": true
+  },
+  {
+    "dimension": 69,
+    "mutation": "dual",
+    "rejected": true
+  },
+  {
+    "dimension": 68,
+    "mutation": "bound",
+    "rejected": true
+  },
+  {
+    "dimension": 68,
+    "mutation": "numerator",
+    "rejected": true
+  },
+  {
+    "dimension": 68,
+    "mutation": "gram",
+    "rejected": true
+  },
+  {
+    "dimension": 68,
+    "mutation": "group",
+    "rejected": true
+  },
+  {
+    "dimension": 68,
+    "mutation": "moment",
+    "rejected": true
+  },
+  {
+    "dimension": 68,
+    "mutation": "offset",
+    "rejected": true
+  },
+  {
+    "dimension": 68,
+    "mutation": "objective",
+    "rejected": true
+  },
+  {
+    "dimension": 68,
+    "mutation": "dual",
+    "rejected": true
+  }
+]

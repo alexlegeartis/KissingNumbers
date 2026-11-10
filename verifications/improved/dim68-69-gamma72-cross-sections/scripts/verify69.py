@@ -89,3 +89,8 @@ print("   monotonicity: tau(69) <= tau(70) = 1249778250 : %s" % (627822180 <= 12
 print("   monotonicity: tau(68) = 361275480 <= 627822180 : %s" % (361275480 <= 627822180))
 print()
 print("ALL CHECKS PASSED -- tau(69) >= 627822180")
+
+# Preserve the historical central-section proof, then verify the stronger affine union.
+import subprocess as _affine_subprocess
+import sys as _affine_sys
+_affine_subprocess.check_call([_affine_sys.executable, os.path.join(HERE, '..', 'affine68_69', 'verify.py'), '3'])

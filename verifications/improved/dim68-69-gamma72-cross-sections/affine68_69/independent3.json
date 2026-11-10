@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "dimension": 69,
+  "bound": 689442146,
+  "baseline": 627822180,
+  "gain": 61619966,
+  "cells": 369,
+  "groups": 132,
+  "constraints": 188,
+  "slice_count": 10,
+  "geometric_pairs": 55,
+  "minimum_squared_margin": "0",
+  "embedding_checked": true,
+  "assumptions": [
+    "Published Gamma72 catalogue Gram, minimum 8, population 6,218,175,600 and 11-design property."
+  ],
+  "scope": "Exact affine-slice existence lower bound; no full shell enumeration or worldwide-priority claim."
+}

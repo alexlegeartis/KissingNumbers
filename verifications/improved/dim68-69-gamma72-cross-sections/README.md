@@ -1,5 +1,19 @@
 # Dimensions 68 and 69 — cross-sections of Γ₇₂, with the Grams exhibited
 
+## Current affine continuation (10 November 2026)
+
+The 10 November affine Gamma72 continuations give 471,366,656 in 68D (+96,144,488; 25.62%) and 689,442,146 in 69D (+61,619,966; 9.81%). Six and ten compatible affine slices replace the central-section restriction. Self-contained exact verifiers check exhibited normals, all cells and equality groups, rational duals and geometry; sixteen corruption controls pass. The lattice minimum, population and 11-design property remain published inputs. The paper and workflows are unchanged.
+
+See [the self-contained affine package](affine68_69/). Run `python affine68_69/verify.py 3`, `python affine68_69/verify.py 4`, and `python affine68_69/rejection_controls.py`. The existing `scripts/verify69.py` and `scripts/verify68.py` retain their historical replays and then invoke the corresponding affine proof.
+
+| dimension | current lower bound | preceding repository bound | gain |
+|---|---:|---:|---:|
+| 68 | **471 366 656** | 375 222 168 | 96 144 488 |
+| 69 | **689 442 146** | 627 822 180 | 61 619 966 |
+
+The remaining text records the historical central-section method. Statements below that restrict progress to a larger k concern that former central-cell objective, not the affine unions.
+
+
 **Retained construction and history.** The October registry takes the strongest
 construction in each dimension. See the [current registry](../../../RESULTS.md),
 [code-layer updates](../dim61-68-95-96-code-layers/) and

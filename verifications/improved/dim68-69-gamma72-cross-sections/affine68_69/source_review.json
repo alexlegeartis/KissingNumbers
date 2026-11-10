@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-10",
+  "comparison_commit": "c959e1e5bd099ad622e7889cc09d5730ad6f34cb",
+  "previous": {
+    "68": 375222168,
+    "69": 627822180
+  },
+  "new": {
+    "68": 471366656,
+    "69": 689442146
+  },
+  "priority_scope": "Improvements over checked repository values; no worldwide-priority claim.",
+  "full_repository_audit": "Not run: full historical checkout/data unavailable.",
+  "paper": "Unchanged",
+  "workflows": "Unchanged"
+}

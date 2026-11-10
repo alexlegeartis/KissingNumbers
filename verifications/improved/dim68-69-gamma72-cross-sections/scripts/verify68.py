@@ -135,3 +135,8 @@ print("   the default path certifies 361275383 for the same programme, 97 lower;
 print("   valid lower bounds and the exact one is claimed.")
 print()
 print("ALL CHECKS PASSED -- tau(68) >= 361275480")
+
+# Preserve the historical central-section proof, then verify the stronger affine union.
+import subprocess as _affine_subprocess
+import sys as _affine_sys
+_affine_subprocess.check_call([_affine_sys.executable, os.path.join(HERE, '..', 'affine68_69', 'verify.py'), '4'])

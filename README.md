@@ -1,5 +1,7 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
+The 10 November affine Gamma72 continuations give 471,366,656 in 68D (+96,144,488; 25.62%) and 689,442,146 in 69D (+61,619,966; 9.81%). Six and ten compatible affine slices replace the central-section restriction. Self-contained exact verifiers check exhibited normals, all cells and equality groups, rational duals and geometry; sixteen corruption controls pass. The lattice minimum, population and 11-design property remain published inputs. The paper and workflows are unchanged.
+
 The 10 November three-slice Gamma72 construction gives 1,360,986,112 in 70D, improving the preceding 1,249,778,250 by 111,207,862 (8.90%). A self-contained exact verifier regenerates all 61 cells and 108 constraints, checks the rational dual and every projected pair type, and rejects eight corrupted certificates. The published lattice minimum, population and 11-design property remain explicit inputs; the paper and workflows are unchanged.
 
 The kissing number τ(n) is the largest number of unit spheres that can touch a central unit
@@ -171,8 +173,8 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 65 | 331 737 986 | [ERS64](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **335 564 290** | **SOTA** | +1.15% | — | since 2026-10-24 | [Signed supports and BCH owner caps](verifications/improved/dim64-65-signed-parity/) | — |
 | 66 | 331 737 990 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **341 994 884** | **SOTA** | +3.09% | — | since 2026-10-24 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 67 | 331 737 996 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **355 090 822** | **SOTA** | +7.04% | — | since 2026-10-24 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **375 222 168** | **SOTA** | +13.11% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **627 822 180** | **SOTA** | +89% | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim68-69-gamma72-cross-sections/) | — |
+| 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **471 366 656** | **SOTA** | +42.09% | — | updated 2026-11-10 | [Gamma72 affine slices](verifications/improved/dim68-69-gamma72-cross-sections/affine68_69/) | — |
+| 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **689 442 146** | **SOTA** | +107.83% | — | updated 2026-11-10 | [Gamma72 affine slices](verifications/improved/dim68-69-gamma72-cross-sections/affine68_69/) | — |
 | 70 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **1 360 986 112** | **SOTA** | 4.10x | — | updated 2026-11-10 | [Gamma72 affine slices](verifications/improved/dim70-71-gamma72-cross-sections/affine70/) | — |
 | 71 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **2 603 658 750** | **SOTA** | 7.85x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
 | 73 | 6 218 175 602 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [1D tail](common/published.py) *(derived)* | **6 218 206 932** | **SOTA** | +0.000504% | — | since 2026-08-30 | [Gamma72 cosets plus caps](verifications/improved/dim73-88-gamma72-cosets/) | — |
@@ -848,6 +850,7 @@ Or individually, each from its own directory:
 | `…/dim49-63-p48-caps/scripts/ceiling.py`                                      | ceilings restricted to the shipped base classes, against level 0        | 1 s    |
 | `…/dim62-63-ers-chain/scripts/verify.py`                                     | τ(62) ≥ 67 108 864, τ(63) ≥ 134 217 728, mechanism verified      | 1 s    |
 | `…/dim62-63-ers-chain/scripts/verify_chain.py`                               | τ(62) ≥ 71 310 732, τ(63) ≥ 138 419 844, levels 1–2 built here | 20 s   |
+| `…/dim68-69-gamma72-cross-sections/affine68_69/verify.py 3` and `verify.py 4` | exact 689 442 146-point 69D and 471 366 656-point 68D existence bounds | ~12 s |
 | `…/dim68-69-gamma72-cross-sections/scripts/leech_truth.py`                     | the k-point LP is **exact** on the Leech through k = 4          | 2 s    |
 | `…/dim68-69-gamma72-cross-sections/scripts/recheck_cert.py`                    | both certificates re-derived by a second arithmetic path        | 40 s   |
 | `…/dim68-69-gamma72-cross-sections/scripts/presentation_invariance.py`         | the bound does not depend on which basis presents the Gram      | 80 s   |
