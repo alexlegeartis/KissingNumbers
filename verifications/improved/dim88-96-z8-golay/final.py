@@ -20,6 +20,12 @@ def results():
             u=[[int(j//4==t) for j in range(96)] for t in r['rows']]
             r['constraint_rows']=[[a-b for a,b in zip(v,u[0])] for v in u[1:]] if equal else u
             sections[r['dimension']]=r
+    for r in json.loads((ROOT/'nonlinear/data/verified.json').read_text())['records']:
+        m=len(r['rows']);equal=r['section']=='equal'
+        assert len(set(r['rows']))==m and all(0<=t<24 for t in r['rows'])
+        u=[[int(j//4==t) for j in range(96)] for t in r['rows']]
+        r['constraint_rows']=[[a-b for a,b in zip(v,u[0])] for v in u[1:]] if equal else u
+        sections[r['dimension']]=r
     rows = []
     for row in recorded['rows']:
         dimension = row['dimension']

@@ -45,12 +45,21 @@ def main():
             assert independent['status']=='PASS'
             assert {r['dimension']:r['total'] for r in independent['dimensions']}=={r['dimension']:r['total'] for r in claims}
             totals.update({r['dimension']:r['total'] for r in claims})
+        nr_claim=json.loads((ROOT/'nonlinear/data/verified.json').read_text())
+        for script in ['replay.py','independent.py']:
+            output=Path(directory)/('nr_'+script+'.json')
+            subprocess.run([sys.executable,'-B',str(ROOT/'nonlinear/source'/script),'--output',str(output)],check=True)
+            fresh=json.loads(output.read_text())
+            assert fresh['status']=='PASS' and fresh['NR24_pairs']==8386560
+            assert fresh['records']==nr_claim['records']
+        totals.update({r['dimension']:r['total'] for r in nr_claim['records']})
         assert totals=={r['dimension']:r['total'] for r in results()}
+        subprocess.run([sys.executable,'-B',str(ROOT/'nonlinear/source/negative_controls.py')],check=True)
         subprocess.run([sys.executable,'-B',str(ROOT/'source/adapted_negative_controls.py')],check=True)
         subprocess.run([sys.executable,'-B',str(ROOT/'source/section_negative_controls.py')],check=True)
         subprocess.run([sys.executable,'-B',str(ROOT/'source/negative_controls.py')],check=True)
     print(json.dumps(dict(status='PASS',results=results(),independent_replays=2,
-                          support_pairs_per_replay=338559231,octad_coset_exclusions_per_replay=4166151)))
+                          nonlinear_replays=2, nonlinear_pairs_per_replay=8386560, support_pairs_per_replay=338559231,octad_coset_exclusions_per_replay=4166151)))
 
 
 if __name__ == '__main__':

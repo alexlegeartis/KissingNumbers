@@ -104,5 +104,28 @@
       "93": 31044526932
     },
     "scope": "Repository improvement only; same published parent. No worldwide-priority or optimality claim."
+  },
+  "nonlinear_signs": {
+    "baseline_commit": "bede564fdf5ee8a07e79715736f1fe9fa4253750",
+    "review_date": "2026-11-10",
+    "previous_repository_rows": {
+      "92": 21883990128,
+      "91": 16416373024,
+      "90": 12316642276,
+      "89": 9243338748,
+      "88": 6942236928,
+      "94": 47698939020,
+      "93": 31044526932
+    },
+    "new_rows": {
+      "92": 21896439920,
+      "91": 16435507572,
+      "90": 12341351672,
+      "89": 9270596604,
+      "88": 6967552256,
+      "94": 47703347340,
+      "93": 31056799856
+    },
+    "scope": "Repository improvement only. Classical NR and published Z8 parents unchanged. No worldwide-priority or optimality claim."
   }
 }

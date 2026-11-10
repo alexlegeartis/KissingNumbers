@@ -10,13 +10,13 @@ are recorded separately from the gains over the preceding repository checkpoint.
 
 | dimension | verified lower bound | gain over preceding certificate (88–94: November row sections; 95–96: original update) |
 |---|---:|---:|
-| 88 | **6,942,236,928** | +19,749,822 |
-| 89 | **9,243,338,748** | +13,553,150 |
-| 90 | **12,316,642,276** | +9,444,924 |
-| 91 | **16,416,373,024** | +6,007,148 |
-| 92 | **21,883,990,128** | +2,607,648 |
-| 93 | **31,044,526,932** | +2,678,788 |
-| 94 | **47,698,939,020** | +630,840 |
+| 88 | **6,967,552,256** | +25,315,328 |
+| 89 | **9,270,596,604** | +27,257,856 |
+| 90 | **12,341,351,672** | +24,709,396 |
+| 91 | **16,435,507,572** | +19,134,548 |
+| 92 | **21,896,439,920** | +12,449,792 |
+| 93 | **31,056,799,856** | +12,272,924 |
+| 94 | **47,703,347,340** | +4,408,320 |
 | 95 | **77,565,848,332** | +70,464,307,200 |
 | 96 | **142,162,362,560** | +128,849,018,880 |
 
@@ -138,7 +138,7 @@ counts for intersection sizes 0,...,8 are
 
 A final weight-six layer has entries ±4 and 32 signs per support. Reed–Solomon
 [6,4,3] codes over GF(9), GF(11), GF(13) or GF(16) give q^4 supports. In 88–94D
-these use only coordinates outside the selected rows. Add the twelve A3 roots
+these use only coordinates outside the selected rows. Add the twelve A 3 roots
 in each selected four-cell row, scaled to squared norm 96, and coordinate poles
 outside those rows. Their number is 192+4m. In 95–96D keep the earlier exact
 GF(16) section and coordinate poles. Both implementations verify all field
@@ -200,7 +200,7 @@ All coordinates are grouped into 24 rows of four. For the rows T listed in `data
 1. Unflipped Z8-code Gray words whose selected ring coordinates are nonzero modulo 4, mapped to signs in R^96. Flipped-parent words cannot satisfy a zero row sum.
 2. Every archived weight-24 support/sign vector satisfying these equations. Signs are assigned to occupied positions in their original increasing-coordinate order. No alteration of the source sign code is used.
 3. The source Reed–Solomon weight-six layer, moved to any 6q distinct coordinates outside all selected rows, using increasing outside-coordinate order. The size is unchanged. This move preserves all compatibility: its supports intersect one another in at most three, and its inner product with any weight-24 vector is at most 6*4*2=48.
-4. All source pure roots: 12 A3 roots in each selected row, plus both coordinate poles outside selected rows. Total 192+4|T|.
+4. All source pure roots: 12 A 3 roots in each selected row, plus both coordinate poles outside selected rows. Total 192+4|T|.
 
 All vectors have squared norm 96 and pairwise inner product at most 48 by the source parent proof and unchanged layer compatibility bounds. Taking a linear section never weakens these bounds. An orthonormal basis of the section gives the claimed Euclidean dimension. The transversal weight-24 layer contributes zero in these sections.
 
@@ -223,7 +223,7 @@ The comparison baseline is the source `bounds.json`, also checked against the re
 
 ### Equal-row sections and production verification
 
-For 93D impose S0=S1=S4=S8. For 94D impose S0=S1=S8. Their dimensions are 96-(4-1)=93 and 96-(3-1)=94. Selected Z8 projections are surjective; explicit enumeration checks both Gray-parent cosets. The transversal layer contributes 536,870,912 and 1,073,741,824, respectively. These counts are also checked directly on every sign word. The RS layer uses the first 6q outside cells in increasing order; A3 roots lie within selected rows, and poles lie outside.
+For 93D impose S0=S1=S4=S8. For 94D impose S0=S1=S8. Their dimensions are 96-(4-1)=93 and 96-(3-1)=94. Selected Z8 projections are surjective; explicit enumeration checks both Gray-parent cosets. The transversal layer contributes 536,870,912 and 1,073,741,824, respectively. These counts are also checked directly on every sign word. The RS layer uses the first 6q outside cells in increasing order; A 3 roots lie within selected rows, and poles lie outside.
 
 Run `python verify.py` from this package. It checks the manifest, both complete parent proofs, both new exact section-count implementations, all layer counts and the explicit unit minors proving section dimensions. It compares computed receipts with pinned data. The candidate-specific corruption controls reject 64 malformed counts/sections, including a duplicate selected row, wrong rank, wrong sparse/dense/transversal/RS/pure counts and the erroneous uniform-projection formula for the 88D octad.
 
@@ -233,14 +233,20 @@ Both new counting implementations are independent: one uses integer sign masks a
 
 The top table and `bounds.json` now report the further adapted-sign improvements, compared with the preceding published row sections. The earlier chapters and receipts are retained as historical proofs. Current witnesses are `data/adapted_zero.json` and `data/adapted_equal.json`; their sign-position patterns are `data/adapted_patterns.json` and `data/adapted_equal_patterns.json`.
 
-For each weight-24 support, inspect occupancy in the selected rows. For zero sections reject odd occupancy. Order the nonempty selected rows by occupancy (two before four), then by row index. Use the corresponding pattern's ordered groups of sign positions on those occupied cells, sorted by physical coordinate within each row. For equal sections order all selected rows by occupancy then index, including empty rows; mixed odd/even occupancies cannot have equal sums. Map remaining occupied cells in increasing order to remaining sign positions in increasing order. This is a full bijection of24 positions, explicitly reconstructed for every included support by the independent proof.
+For each weight-24 support, inspect occupancy in the selected rows. For zero sections reject odd occupancy. Order the nonempty selected rows by occupancy (two before four), then by row index. Use the corresponding pattern's ordered groups of sign positions on those occupied cells, sorted by physical coordinate within each row. For equal sections order all selected rows by occupancy then index, including empty rows; mixed odd/even occupancies cannot have equal sums. Map remaining occupied cells in increasing order to remaining sign positions in increasing order. This is a full bijection of 24 positions, explicitly reconstructed for every included support by the independent proof.
 
 Retain every codeword satisfying zero/equal sums after this permutation. The same [24,14,6] sign code is used on each support. Within-support distances are preserved by the bijection. Across distinct supports, intersection at most12 guarantees product at most4*12=48 for any signs, so different supports need not share a permutation. Dense/sparse, sparse/RS and sparse/pure bounds likewise hold for arbitrary signs. All vectors still have squared norm96. Support sizes separate layers, and within-support bijectivity ensures distinctness. The operation remains an isometric linear section, not coordinate deletion.
 
-Dual octads explain why adaptation helps: four pair constraints can have a redundant parity equation, doubling their retained sign count. More general patterns are counted exactly, not inferred from parity heuristics. The final88D selected rows are [0,5,8,10,13,18,19,21]; their projected Z4 image is surjective, with65,536 images and6,561 all-nonzero images. Thus the dense count is6,879,707,136, while62,319,616 adapted sparse vectors give the new total6,942,236,928. The previous octad bonus is not mistakenly retained.
+Dual octads explain why adaptation helps: four pair constraints can have a redundant parity equation, doubling their retained sign count. More general patterns are counted exactly, not inferred from parity heuristics. The final88D selected rows are [0,5,8,10,13,18,19,21]; their projected Z4 image is surjective, with 65,536 images and6,561 all-nonzero images. Thus the dense count is6,879,707,136, while62,319,616 adapted sparse vectors give the new total6,942,236,928. The previous octad bonus is not mistakenly retained.
 
-The latest93D equations are S0=S1=S8=S16;94D uses S0=S1=S8. The unchanged transversal layer is counted directly. RS points use the first6q outside coordinates. A3 roots and outside poles certify the section span; the equal sections additionally contain the all-positive dense word for the common-sum direction.
+The latest93D equations are S0=S1=S8=S16;94D uses S0=S1=S8. The unchanged transversal layer is counted directly. RS points use the first6q outside coordinates. A 3 roots and outside poles certify the section span; the equal sections additionally contain the all-positive dense word for the common-sum direction.
 
 `verify.py` runs both full parent proofs, both preceding section proofs, both primary adapted proofs and both independent physical-permutation audits. It checks immutable claims, every pattern count, every support mapping, dense images, all remaining layer counts, constraints and inherited pair-category arguments. Parent support data and parent proof code are unchanged. New rejection controls cover repeated or out-of-range sign positions, wrong group sizes, nonbijective physical assignments, parity-incompatible claims, duplicate rows and corrupted layer counts. All artifacts are manifest-pinned. `AUDIT.md`, `FINAL_88_AUDIT.md` and `EQUAL_AUDIT.md` preserve the independent research audits; their packaging-gap notes refer to the pre-integration state and are resolved by these production files.
 
 The pattern search was heuristic. Even exhaustive row scans establish optimality only for the fixed stored patterns, not among all sign permutations or kissing configurations. No worldwide-priority claim is made.
+
+## Latest continuation: nonlinear sign fibers
+
+The current top-table 88–94D values are the nonlinear continuation in [nonlinear/README.md](nonlinear/README.md). It preserves every earlier parent/section/adapted-sign certificate and uses a classical Nordstrom–Robinson input, not a new parent-code discovery. The latest immutable claims are `nonlinear/data/verified.json`. `final.py` overlays them, while95–96D remain unchanged. All earlier count tables and gains elsewhere in this README are historical stages.
+
+The full production verifier now additionally runs two exact nonlinear-code proofs, both checking all 8,386,560 pairs of the4,096-word source family, every pattern, every physical support map, all dense projections and ranks. Candidate-specific controls reject corrupted octacode generators, translates, partitions, span bases, source words, families, translations, pattern counts/groups and final layer claims. The original support file and both parent proof programs remain unchanged. The root SHA256 manifest covers the complete nonlinear subpackage.

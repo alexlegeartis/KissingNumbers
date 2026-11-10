@@ -3,91 +3,91 @@
   "rows": [
     {
       "dimension": 88,
-      "total": 6942236928,
-      "previous_repository": 6922487106,
-      "gain": 19749822,
+      "total": 6967552256,
+      "previous_repository": 6942236928,
+      "gain": 25315328,
       "terms": {
         "dense": 6879707136,
         "transversal24": 0,
-        "support24": 62319616,
+        "support24": 87634944,
         "support6": 209952,
         "pure": 224
       }
     },
     {
       "dimension": 89,
-      "total": 9243338748,
-      "previous_repository": 9229785598,
-      "gain": 13553150,
+      "total": 9270596604,
+      "previous_repository": 9243338748,
+      "gain": 27257856,
       "terms": {
         "dense": 9172942848,
         "transversal24": 0,
-        "support24": 69927168,
+        "support24": 97185024,
         "support6": 468512,
         "pure": 220
       }
     },
     {
       "dimension": 90,
-      "total": 12316642276,
-      "previous_repository": 12307197352,
-      "gain": 9444924,
+      "total": 12341351672,
+      "previous_repository": 12316642276,
+      "gain": 24709396,
       "terms": {
         "dense": 12230590464,
         "transversal24": 0,
-        "support24": 85583084,
+        "support24": 110292480,
         "support6": 468512,
         "pure": 216
       }
     },
     {
       "dimension": 91,
-      "total": 16416373024,
-      "previous_repository": 16410365876,
-      "gain": 6007148,
+      "total": 16435507572,
+      "previous_repository": 16416373024,
+      "gain": 19134548,
       "terms": {
         "dense": 16307453952,
         "transversal24": 0,
-        "support24": 108450348,
+        "support24": 127584896,
         "support6": 468512,
         "pure": 212
       }
     },
     {
       "dimension": 92,
-      "total": 21883990128,
-      "previous_repository": 21881382480,
-      "gain": 2607648,
+      "total": 21896439920,
+      "previous_repository": 21883990128,
+      "gain": 12449792,
       "terms": {
         "dense": 21743271936,
         "transversal24": 0,
-        "support24": 139804032,
+        "support24": 152253824,
         "support6": 913952,
         "pure": 208
       }
     },
     {
       "dimension": 93,
-      "total": 31044526932,
-      "previous_repository": 31041848144,
-      "gain": 2678788,
+      "total": 31056799856,
+      "previous_repository": 31044526932,
+      "gain": 12272924,
       "terms": {
         "dense": 30366760960,
         "transversal24": 536870912,
-        "support24": 139980900,
+        "support24": 152253824,
         "support6": 913952,
         "pure": 208
       }
     },
     {
       "dimension": 94,
-      "total": 47698939020,
-      "previous_repository": 47698308180,
-      "gain": 630840,
+      "total": 47703347340,
+      "previous_repository": 47698939020,
+      "gain": 4408320,
       "terms": {
         "dense": 46439333888,
         "transversal24": 1073741824,
-        "support24": 184949152,
+        "support24": 189357472,
         "support6": 913952,
         "pure": 204
       }

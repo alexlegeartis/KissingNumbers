@@ -32,9 +32,9 @@ values and verification packages remain here as part of the research record.
 > - **33–87D:** further improvements include signed layers, phase refills,
 >   the 38D Fano/cube construction, P48 families and shared parity layers.
 >   [Recent updates](#recent-updates) group the methods and proof scopes by dimension.
-> - **88–94D:** Support-adapted sign permutations and row sections add **630,840–19,749,822** points per dimension over the preceding repository certificates, with two exact section replays, both parent proofs and candidate-specific rejection controls. No worldwide-priority claim is made.
+> - **88–94D:** Nonlinear Nordstrom–Robinson sign fibers and row sections add **4,408,320–27,257,856** points per dimension over the preceding repository certificates, with two exact section replays, both parent proofs and candidate-specific rejection controls. No worldwide-priority claim is made.
 > - **88–96D:** [nonlinear-code constructions and exact sections](verifications/improved/dim88-96-z8-golay/)
->   give **6 942 236 928 in 88D** through **142 162 362 560 in 96D**.
+>   give **6 967 552 256 in 88D** through **142 162 362 560 in 96D**.
 >
 > **Attribution and gains.** The nonlinear (96, 2^37, 24) parent is published work
 > of [Duursma–Greferath–Litsyn–Schmidt (2001)](https://doi.org/10.1109/18.923742).
@@ -192,13 +192,13 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 85 | 6 218 176 754 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [13D tail](common/published.py) *(derived)* | **6 223 222 688** | **SOTA** | +0.081148% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 86 | 6 218 177 532 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [14D tail](common/published.py) *(derived)* | **6 225 165 512** | **SOTA** | +0.112% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 87 | 6 218 178 164 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [15D tail](common/published.py) *(derived)* | **6 226 194 610** | **SOTA** | +0.128920% | — | since 2026-08-30 | [Gamma72 signed-tail existence proof](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 88 | 6 218 179 920 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [16D tail](common/published.py) *(derived)* | **6 942 236 928** | **SOTA** | +11.644195% | — | since 2026-10-28 | [Z8 sections / adapted signs](verifications/improved/dim88-96-z8-golay/) | — |
-| 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **9 243 338 748** | **SOTA** | +48.650196% | — | since 2026-10-28 | [Z8 sections / adapted signs](verifications/improved/dim88-96-z8-golay/) | — |
-| 90 | 6 218 183 254 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [18D tail](common/published.py) *(derived)* | **12 316 642 276** | **SOTA** | +98.074611% | — | since 2026-10-28 | [Z8 sections / adapted signs](verifications/improved/dim88-96-z8-golay/) | — |
-| 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **16 416 373 024** | **SOTA** | +164.005756% | — | since 2026-10-28 | [Z8 sections / adapted signs](verifications/improved/dim88-96-z8-golay/) | — |
-| 92 | 8 589 934 592 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **21 883 990 128** | **SOTA** | +154.763175% | — | since 2026-10-28 | [Z8 sections / adapted signs](verifications/improved/dim88-96-z8-golay/) | — |
-| 93 | 17 179 869 184 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **31 044 526 932** | **SOTA** | +80.702930% | — | since 2026-10-28 | [Z8 sections / adapted signs](verifications/improved/dim88-96-z8-golay/) | — |
-| 94 | 34 359 738 368 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **47 698 939 020** | **SOTA** | +38.822183% | — | since 2026-10-28 | [Z8 sections / adapted signs](verifications/improved/dim88-96-z8-golay/) | — |
+| 88 | 6 218 179 920 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [16D tail](common/published.py) *(derived)* | **6 967 552 256** | **SOTA** | +12.051313% | — | since 2026-10-28 | [Z8 sections / nonlinear sign fibers](verifications/improved/dim88-96-z8-golay/) | — |
+| 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **9 270 596 604** | **SOTA** | +49.088554% | — | since 2026-10-28 | [Z8 sections / nonlinear sign fibers](verifications/improved/dim88-96-z8-golay/) | — |
+| 90 | 6 218 183 254 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [18D tail](common/published.py) *(derived)* | **12 341 351 672** | **SOTA** | +98.471984% | — | since 2026-10-28 | [Z8 sections / nonlinear sign fibers](verifications/improved/dim88-96-z8-golay/) | — |
+| 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **16 435 507 572** | **SOTA** | +164.313475% | — | since 2026-10-28 | [Z8 sections / nonlinear sign fibers](verifications/improved/dim88-96-z8-golay/) | — |
+| 92 | 8 589 934 592 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **21 896 439 920** | **SOTA** | +154.908110% | — | since 2026-10-28 | [Z8 sections / nonlinear sign fibers](verifications/improved/dim88-96-z8-golay/) | — |
+| 93 | 17 179 869 184 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **31 056 799 856** | **SOTA** | +80.774368% | — | since 2026-10-28 | [Z8 sections / nonlinear sign fibers](verifications/improved/dim88-96-z8-golay/) | — |
+| 94 | 34 359 738 368 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **47 703 347 340** | **SOTA** | +38.835013% | — | since 2026-10-28 | [Z8 sections / nonlinear sign fibers](verifications/improved/dim88-96-z8-golay/) | — |
 | 95 | 68 719 476 736 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **77 565 848 332** | **SOTA** | +12.873165% | — | since 2026-10-28 | [Nonlinear Z8 code / sections](verifications/improved/dim88-96-z8-golay/) | — |
 | 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) | **142 162 362 560** | **SOTA** | +3.436732% | — | since 2026-10-28 | [Nonlinear Z8 code / sections](verifications/improved/dim88-96-z8-golay/) | — |
 
@@ -992,6 +992,7 @@ did not work.
 
 Alexey Kravatskiy, MIRIAI (Moscow Independent Research Institute of Artificial Intelligence),
 Moscow, Russia. [kravatskii.a@miriai.org](mailto:kravatskii.a@miriai.org)
+
 
 
 
