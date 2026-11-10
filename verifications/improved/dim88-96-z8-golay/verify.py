@@ -34,7 +34,19 @@ def main():
         assert section_reports[0]==section_reports[1]
         totals={int(d):r['total'] for d,r in reports[0]['dimensions'].items()}
         totals.update({r['dimension']:r['total'] for r in section_reports[0]})
+        for prefix,claimfile in [('adapted','adapted_zero.json'),('adapted_equal','adapted_equal.json')]:
+            claims=json.loads((ROOT/'data'/claimfile).read_text())
+            first=Path(directory)/(prefix+'_first.json')
+            second=Path(directory)/(prefix+'_second.json')
+            subprocess.run([sys.executable,'-B',str(ROOT/'source'/(prefix+'_replay.py')),'--output',str(first)],check=True)
+            subprocess.run([sys.executable,'-B',str(ROOT/'source'/(prefix+'_independent.py')),'--output',str(second)],check=True)
+            assert json.loads(first.read_text())==claims
+            independent=json.loads(second.read_text())
+            assert independent['status']=='PASS'
+            assert {r['dimension']:r['total'] for r in independent['dimensions']}=={r['dimension']:r['total'] for r in claims}
+            totals.update({r['dimension']:r['total'] for r in claims})
         assert totals=={r['dimension']:r['total'] for r in results()}
+        subprocess.run([sys.executable,'-B',str(ROOT/'source/adapted_negative_controls.py')],check=True)
         subprocess.run([sys.executable,'-B',str(ROOT/'source/section_negative_controls.py')],check=True)
         subprocess.run([sys.executable,'-B',str(ROOT/'source/negative_controls.py')],check=True)
     print(json.dumps(dict(status='PASS',results=results(),independent_replays=2,

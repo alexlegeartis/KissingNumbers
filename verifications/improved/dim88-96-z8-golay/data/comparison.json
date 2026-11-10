@@ -81,5 +81,28 @@
       "93": 31041848144
     },
     "scope": "Repository improvement only; published parent unchanged, no worldwide-priority or optimality claim."
+  },
+  "adapted_signs": {
+    "baseline_commit": "f2f84b4eb34a8517217512dfc660d2259981a890",
+    "review_date": "2026-11-10",
+    "previous_repository_rows": {
+      "92": 21881382480,
+      "91": 16410365876,
+      "90": 12307197352,
+      "89": 9229785598,
+      "88": 6922487106,
+      "94": 47698308180,
+      "93": 31041848144
+    },
+    "new_rows": {
+      "92": 21883990128,
+      "91": 16416373024,
+      "90": 12316642276,
+      "89": 9243338748,
+      "88": 6942236928,
+      "94": 47698939020,
+      "93": 31044526932
+    },
+    "scope": "Repository improvement only; same published parent. No worldwide-priority or optimality claim."
   }
 }

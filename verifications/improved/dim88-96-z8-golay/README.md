@@ -10,13 +10,13 @@ are recorded separately from the gains over the preceding repository checkpoint.
 
 | dimension | verified lower bound | gain over preceding certificate (88–94: November row sections; 95–96: original update) |
 |---|---:|---:|
-| 88 | **6,922,487,106** | +1,235,522 |
-| 89 | **9,229,785,598** | +431,462 |
-| 90 | **12,307,197,352** | +527,024 |
-| 91 | **16,410,365,876** | +766,760 |
-| 92 | **21,881,382,480** | +892,192 |
-| 93 | **31,041,848,144** | +889,504 |
-| 94 | **47,698,308,180** | +800,104 |
+| 88 | **6,942,236,928** | +19,749,822 |
+| 89 | **9,243,338,748** | +13,553,150 |
+| 90 | **12,316,642,276** | +9,444,924 |
+| 91 | **16,416,373,024** | +6,007,148 |
+| 92 | **21,883,990,128** | +2,607,648 |
+| 93 | **31,044,526,932** | +2,678,788 |
+| 94 | **47,698,939,020** | +630,840 |
 | 95 | **77,565,848,332** | +70,464,307,200 |
 | 96 | **142,162,362,560** | +128,849,018,880 |
 
@@ -228,3 +228,19 @@ For 93D impose S0=S1=S4=S8. For 94D impose S0=S1=S8. Their dimensions are 96-(4-
 Run `python verify.py` from this package. It checks the manifest, both complete parent proofs, both new exact section-count implementations, all layer counts and the explicit unit minors proving section dimensions. It compares computed receipts with pinned data. The candidate-specific corruption controls reject 64 malformed counts/sections, including a duplicate selected row, wrong rank, wrong sparse/dense/transversal/RS/pure counts and the erroneous uniform-projection formula for the 88D octad.
 
 Both new counting implementations are independent: one uses integer sign masks and set-based ring image closure; the other uses matrix-expanded sign words, coordinate prefix sums and unique-array ring images. They share only final geometry/claim consistency checks. The inherited parent implementations remain fully independent. See `SECTION_AUDIT.md` for the independent mathematical audit; its packaging-gap paragraph describes the pre-integration candidate and is resolved by these production files and controls. The construction is an injective isometric identification of a linear section, not coordinate deletion.
+
+## Support-adapted signs: latest November continuation
+
+The top table and `bounds.json` now report the further adapted-sign improvements, compared with the preceding published row sections. The earlier chapters and receipts are retained as historical proofs. Current witnesses are `data/adapted_zero.json` and `data/adapted_equal.json`; their sign-position patterns are `data/adapted_patterns.json` and `data/adapted_equal_patterns.json`.
+
+For each weight-24 support, inspect occupancy in the selected rows. For zero sections reject odd occupancy. Order the nonempty selected rows by occupancy (two before four), then by row index. Use the corresponding pattern's ordered groups of sign positions on those occupied cells, sorted by physical coordinate within each row. For equal sections order all selected rows by occupancy then index, including empty rows; mixed odd/even occupancies cannot have equal sums. Map remaining occupied cells in increasing order to remaining sign positions in increasing order. This is a full bijection of24 positions, explicitly reconstructed for every included support by the independent proof.
+
+Retain every codeword satisfying zero/equal sums after this permutation. The same [24,14,6] sign code is used on each support. Within-support distances are preserved by the bijection. Across distinct supports, intersection at most12 guarantees product at most4*12=48 for any signs, so different supports need not share a permutation. Dense/sparse, sparse/RS and sparse/pure bounds likewise hold for arbitrary signs. All vectors still have squared norm96. Support sizes separate layers, and within-support bijectivity ensures distinctness. The operation remains an isometric linear section, not coordinate deletion.
+
+Dual octads explain why adaptation helps: four pair constraints can have a redundant parity equation, doubling their retained sign count. More general patterns are counted exactly, not inferred from parity heuristics. The final88D selected rows are [0,5,8,10,13,18,19,21]; their projected Z4 image is surjective, with65,536 images and6,561 all-nonzero images. Thus the dense count is6,879,707,136, while62,319,616 adapted sparse vectors give the new total6,942,236,928. The previous octad bonus is not mistakenly retained.
+
+The latest93D equations are S0=S1=S8=S16;94D uses S0=S1=S8. The unchanged transversal layer is counted directly. RS points use the first6q outside coordinates. A3 roots and outside poles certify the section span; the equal sections additionally contain the all-positive dense word for the common-sum direction.
+
+`verify.py` runs both full parent proofs, both preceding section proofs, both primary adapted proofs and both independent physical-permutation audits. It checks immutable claims, every pattern count, every support mapping, dense images, all remaining layer counts, constraints and inherited pair-category arguments. Parent support data and parent proof code are unchanged. New rejection controls cover repeated or out-of-range sign positions, wrong group sizes, nonbijective physical assignments, parity-incompatible claims, duplicate rows and corrupted layer counts. All artifacts are manifest-pinned. `AUDIT.md`, `FINAL_88_AUDIT.md` and `EQUAL_AUDIT.md` preserve the independent research audits; their packaging-gap notes refer to the pre-integration state and are resolved by these production files.
+
+The pattern search was heuristic. Even exhaustive row scans establish optimality only for the fixed stored patterns, not among all sign permutations or kissing configurations. No worldwide-priority claim is made.

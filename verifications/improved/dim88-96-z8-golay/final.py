@@ -13,6 +13,13 @@ def results():
     assert certificate['z8']['low_lee_coset_exclusions'] == 759*5489
     assert certificate['support']['support_pairs_checked'] == 26022*26021//2
     sections={r['dimension']:r for r in json.loads((ROOT/'data/section_receipt.json').read_text())}
+    for name in ['adapted_zero.json','adapted_equal.json']:
+        for r in json.loads((ROOT/'data'/name).read_text()):
+            m=len(r['rows']);equal=r['dimension']>=93
+            assert len(set(r['rows']))==m and all(0<=t<24 for t in r['rows'])
+            u=[[int(j//4==t) for j in range(96)] for t in r['rows']]
+            r['constraint_rows']=[[a-b for a,b in zip(v,u[0])] for v in u[1:]] if equal else u
+            sections[r['dimension']]=r
     rows = []
     for row in recorded['rows']:
         dimension = row['dimension']
