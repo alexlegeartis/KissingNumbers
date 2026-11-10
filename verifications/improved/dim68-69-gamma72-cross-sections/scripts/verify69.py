@@ -94,3 +94,6 @@ print("ALL CHECKS PASSED -- tau(69) >= 627822180")
 import subprocess as _affine_subprocess
 import sys as _affine_sys
 _affine_subprocess.check_call([_affine_sys.executable, os.path.join(HERE, '..', 'affine68_69', 'verify.py'), '3'])
+
+# Verify the stronger finite-orientation averaged affine bound as well.
+_affine_subprocess.check_call([_affine_sys.executable, os.path.join(HERE, '..', 'weyl_averaged', 'verify.py'), '3'])

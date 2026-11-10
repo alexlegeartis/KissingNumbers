@@ -1,0 +1,22 @@
+{
+  "dimension": 68,
+  "bound": 471884288,
+  "exact_value": "471884288",
+  "cells": 1681,
+  "groups": 16,
+  "rows": 8,
+  "known_minima": 24,
+  "slack_min": 0,
+  "slack_max": 35136,
+  "radii": [
+    "31/4",
+    "31/4",
+    "31/4",
+    "15/2",
+    "15/2",
+    "13/2"
+  ],
+  "minimum_geometry_gap": "0",
+  "gain_over_supplied_benchmark": 517632,
+  "status": "PASS"
+}

@@ -1,0 +1,25 @@
+{
+  "orientation_group_order": 1152,
+  "orbit_count": 16,
+  "orbit_sizes": [
+    1,
+    24,
+    24,
+    24,
+    24,
+    96,
+    192,
+    192,
+    96,
+    96,
+    24,
+    288,
+    144,
+    144,
+    288,
+    24
+  ],
+  "all_generators_integral_gram_isometries": true,
+  "all_groups_are_actual_orientation_orbits": true,
+  "shell_invariance_required": false
+}

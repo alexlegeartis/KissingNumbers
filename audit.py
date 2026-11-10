@@ -396,10 +396,10 @@ add(62, (1 << 26) + 4096 * 1024 + 1891 * 4, 'dim62-63-ers-chain',
 add(63, (1 << 27) + 4096 * 1024 + 1953 * 4, 'dim62-63-ers-chain',
     'scripts/verify_chain.py (chain (63,15,2): 2^27 + 4096*1024 + 1953*4)')
 add(70, 1360986112, 'dim70-71-gamma72-cross-sections', 'affine70/verify.py (independent exact cells, dual and geometry)')
-add(69, 689442146, 'dim68-69-gamma72-cross-sections',
-    'affine68_69/verify.py 3 (independent exact embedding, cells, dual and geometry)')
-add(68, 471366656, 'dim68-69-gamma72-cross-sections',
-    'affine68_69/verify.py 4 (independent exact embedding, cells, dual and geometry)')
+add(69, 689452922, 'dim68-69-gamma72-cross-sections',
+    'weyl_averaged/verify.py 3 (integral orientations, exact averaged dual and geometry)')
+add(68, 471884288, 'dim68-69-gamma72-cross-sections',
+    'weyl_averaged/verify.py 4 (integral orientations, exact averaged dual and geometry)')
 # Dimension 96, the Edel-Rains-Sloane chain (96,24,6,1), on exactly the footing of 62 and 63:
 # their construction evaluated at a length they never evaluated.  Their section 3 gives seven
 # worked examples -- 32, 36, 40, 44, 64, 80, 128 -- and 96 is not among them (arXiv:math/
@@ -2050,7 +2050,7 @@ if '--write-results' in sys.argv and not fail:
         'dim54-59-p48-coverage': 'joint maximum-coverage selections of existing P48 class images; exact tails, isometries and full-coordinate ownership replay',
         'dim60-antipodal840-lift': '840 antipodal quaternionic directions, 420 disjoint P48 classes and 841 independent poles; exact finite replay',
         'dim62-63-ers-chain': 'the Edel-Rains-Sloane chain (n, 15, 2), levels 1-2 built here',
-        'dim68-69-gamma72-cross-sections': 'six-slice 68D and ten-slice 69D affine Gamma72 unions; independently verified embeddings, exact moment duals and geometry',
+        'dim68-69-gamma72-cross-sections': 'Weyl-averaged six-slice 68D and ten-slice 69D Gamma72 unions; exact integral orientations, averaged moment duals and geometry',
         'dim70-71-gamma72-cross-sections': 'central Gamma72 sections and a three-slice 70D affine union with an independent exact dual proof',
         'dim73-95-gamma72-caps': 'the cap construction over Gamma_72, with zero-sum triples',
         'dim96-ers-takeover': 'the Edel-Rains-Sloane chain (96, 24, 6, 1)',
@@ -2061,6 +2061,8 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append("")
+    out.append('Weyl-averaged Gamma72 affine unions now give 471,884,288 in 68D (+517,632) and 689,452,922 in 69D (+10,776 over the preceding affine certificates). Integral Gram-preserving normal orientations, exact moment duals and an averaging/integer-ceiling argument certify existence; no ambient shell symmetry is assumed. Prior packages, paper and workflows are unchanged.')
     out.append("")
     out.append('The 10 November affine Gamma72 continuations give 471,366,656 in 68D (+96,144,488; 25.62%) and 689,442,146 in 69D (+61,619,966; 9.81%). Six and ten compatible affine slices replace the central-section restriction. Self-contained exact verifiers check exhibited normals, all cells and equality groups, rational duals and geometry; sixteen corruption controls pass. The lattice minimum, population and 11-design property remain published inputs. The paper and workflows are unchanged.')
     out.append("")

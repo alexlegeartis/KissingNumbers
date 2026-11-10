@@ -543,3 +543,7 @@ for _d in (68, 69):
     STATUS[_d] = ('heads', 'compatible affine Gamma72 slice unions with exhibited normals and independent exact population-dual proofs; larger offset unions and other projections remain open, without a global-optimality claim (dim68-69-gamma72-cross-sections/affine68_69/verify.py)')
 
 
+
+# Finite normal-orientation averaging, independently verified 10 November 2026.
+for _d in (68, 69):
+    STATUS[_d] = ('heads', 'Weyl-averaged compatible affine Gamma72 unions with integral normal orientations and exact population duals; larger offset unions and other projections remain open, without a global-optimality claim (dim68-69-gamma72-cross-sections/weyl_averaged/verify.py)')

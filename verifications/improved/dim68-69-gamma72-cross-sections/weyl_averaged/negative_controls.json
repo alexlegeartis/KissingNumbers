@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "rejections": 20,
+  "cases": [
+    {
+      "dimension": 69,
+      "corruption": "bound",
+      "result": "rejected"
+    },
+    {
+      "dimension": 69,
+      "corruption": "numerator",
+      "result": "rejected"
+    },
+    {
+      "dimension": 69,
+      "corruption": "gram",
+      "result": "rejected"
+    },
+    {
+      "dimension": 69,
+      "corruption": "group",
+      "result": "rejected"
+    },
+    {
+      "dimension": 69,
+      "corruption": "moment",
+      "result": "rejected"
+    },
+    {
+      "dimension": 69,
+      "corruption": "offset",
+      "result": "rejected"
+    },
+    {
+      "dimension": 69,
+      "corruption": "objective",
+      "result": "rejected"
+    },
+    {
+      "dimension": 69,
+      "corruption": "dual",
+      "result": "rejected"
+    },
+    {
+      "dimension": 69,
+      "corruption": "population",
+      "result": "rejected"
+    },
+    {
+      "dimension": 69,
+      "corruption": "dimension",
+      "result": "rejected"
+    },
+    {
+      "dimension": 68,
+      "corruption": "bound",
+      "result": "rejected"
+    },
+    {
+      "dimension": 68,
+      "corruption": "numerator",
+      "result": "rejected"
+    },
+    {
+      "dimension": 68,
+      "corruption": "gram",
+      "result": "rejected"
+    },
+    {
+      "dimension": 68,
+      "corruption": "group",
+      "result": "rejected"
+    },
+    {
+      "dimension": 68,
+      "corruption": "moment",
+      "result": "rejected"
+    },
+    {
+      "dimension": 68,
+      "corruption": "offset",
+      "result": "rejected"
+    },
+    {
+      "dimension": 68,
+      "corruption": "objective",
+      "result": "rejected"
+    },
+    {
+      "dimension": 68,
+      "corruption": "dual",
+      "result": "rejected"
+    },
+    {
+      "dimension": 68,
+      "corruption": "population",
+      "result": "rejected"
+    },
+    {
+      "dimension": 68,
+      "corruption": "dimension",
+      "result": "rejected"
+    }
+  ]
+}

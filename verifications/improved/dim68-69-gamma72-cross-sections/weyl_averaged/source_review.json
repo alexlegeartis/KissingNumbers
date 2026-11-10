@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-10",
+  "comparison_commit": "c99dd99697dc2581e20ae49130d2f869a7c38e8e",
+  "previous": {
+    "68": 471366656,
+    "69": 689442146
+  },
+  "new": {
+    "68": 471884288,
+    "69": 689452922
+  },
+  "method": "Finite actual normal-orientation averaging; exact integer dual objectives; no ambient shell symmetry assumption.",
+  "inherited_inputs": [
+    "Nebe Gamma72 catalogue Gram and identity",
+    "Squared minimum 8",
+    "6,218,175,600 minimal vectors",
+    "Spherical 11-design property"
+  ],
+  "independent_checks": [
+    "Polynomial mixed moments and exact dual arithmetic",
+    "Full integral orientation groups of orders 1152 and 48",
+    "All projection geometry pairs",
+    "Twenty semantic corruption rejections"
+  ],
+  "full_repository_audit": "Not run: complete historical checkout/data unavailable.",
+  "priority_scope": "Improvements over checked repository values; no worldwide-priority claim.",
+  "paper": "Unchanged",
+  "workflows": "Unchanged"
+}
