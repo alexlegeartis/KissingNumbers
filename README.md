@@ -307,6 +307,8 @@ improvement is claimed in 47D or 48D.
 
 ## Recent updates
 
+**11 November 2026:** Our new public [SpherePackingUpperBounds](https://github.com/alexlegeartis/SpherePackingUpperBounds) repository collects sphere-packing density upper bounds, proof certificates, independent verification code and discovery histories. See its [results and method summaries](https://github.com/alexlegeartis/SpherePackingUpperBounds#registered-results).
+
 **9 November 2026 (further refinement):** [Critical-cluster replacement and exact contact preservation](verifications/improved/dim25-critical-cluster/) give **197 586 in 25D**, one above the published 197 585-point certificate and two above 197 584. The complete exact proof checks 194 561 retained shell vectors, 2 778 circle points and 247 rational points. Nineteen freed inherited-circle points use rational conic coordinates. Both earlier packages and the manuscript are preserved; no new exhaustive worldwide-priority claim is made.
 
 **9 November 2026:** [General-point splitting and joint circle motion](verifications/improved/dim25-point-split/) give **197 585 in 25D**, one above the preceding repository certificate. The self-contained exact proof rebuilds all 196 560 shell points and proves every pair bound; 194 569 retained shell vectors, 2 913 circle points and 103 rational points remain. The previous package and manuscript are preserved. No fresh exhaustive worldwide-priority claim is made.
