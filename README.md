@@ -14,6 +14,8 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
+> **New companion repository — 11 November 2026.** [SpherePackingUpperBounds](https://github.com/alexlegeartis/SpherePackingUpperBounds) collects sphere-packing density upper bounds, proof certificates, independent verification code and discovery histories. See its [results and method summaries](https://github.com/alexlegeartis/SpherePackingUpperBounds#registered-results).
+>
 > **Current repository status — 10 November 2026.** Verified lower bounds in
 > **70 dimensions**; the [results table](#results-and-construction-history)
 > lists every current value, comparison source and verification package.
