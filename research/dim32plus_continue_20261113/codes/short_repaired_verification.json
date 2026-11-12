@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "certificate_sha256": "d9f5744e5c92745ab6f5cc8bb144f0bd7862dfc4c69a3371c2759b408a24e598",
+  "retained_old_supports": 9673,
+  "new_supports": 937,
+  "modified_old": 820,
+  "old_new_pairs": 9063601,
+  "new_new_pairs": 438516,
+  "old_new_repairs": 4046,
+  "new_new_repairs": 99,
+  "scalar_cpp": {
+    "status": "PASS",
+    "parent_words": 268435456,
+    "parent_minimum": 16,
+    "parent_weight16_words": 30828,
+    "old_new_pairs": 9063601,
+    "new_new_pairs": 438516,
+    "old_new_repairs": 4046,
+    "new_new_repairs": 99
+  }
+}

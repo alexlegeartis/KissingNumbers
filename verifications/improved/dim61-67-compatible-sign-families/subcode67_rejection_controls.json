@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "control": "new_phase_bit_flip_preserves_population_and_norm",
+      "status": "REJECTED",
+      "reason": "exact pair violation: {\"support_a\": 10613436243767297348, \"support_b\": 9457141446546128960, \"sign_word_a\": 4098, \"sign_word_b\": 8265, \"intersection\": 10, \"inner_product\": 40}"
+    },
+    {
+      "control": "old_phase_bit_flip_preserves_population_and_norm",
+      "status": "REJECTED",
+      "reason": "exact pair violation: {\"support_a\": 10613436243767297348, \"support_b\": 1245535671217722628, \"sign_word_a\": 4096, \"sign_word_b\": 16960, \"intersection\": 10, \"inner_product\": 40}"
+    },
+    {
+      "control": "sign_code_distance_two_with_consistent_count",
+      "status": "REJECTED",
+      "reason": "minimum sign distance is below four"
+    },
+    {
+      "control": "replacement_full_code_loses_half_its_population",
+      "status": "REJECTED",
+      "reason": "replacement class lost full size"
+    },
+    {
+      "control": "repeated_support_with_adjusted_claimed_count",
+      "status": "REJECTED",
+      "reason": "duplicate or absent new support"
+    },
+    {
+      "control": "inflated_total",
+      "status": "REJECTED",
+      "reason": "incorrect total population"
+    },
+    {
+      "control": "changed_baseline_source_pin",
+      "status": "REJECTED",
+      "reason": "certificate does not pin the expected published baseline"
+    },
+    {
+      "control": "optimized_python_rejects_geometric_collision",
+      "status": "REJECTED",
+      "returncode": 1,
+      "reason": "ValueError: exact pair violation: {\"support_a\": 10613436243767297348, \"support_b\": 9457141446546128960, \"sign_word_a\": 4098, \"sign_word_b\": 8265, \"intersection\": 10, \"inner_product\": 40}"
+    }
+  ],
+  "control_count": 8,
+  "certificate_sha256": "90a421e678dd2f61f9fd668c374152145a6937dcfa4cbd4f5107825a44b5fe93",
+  "reviewer_sha256": "f8772529f8a801be744f07e8e59ae688304eaea1c485485edfcfbc65a75a0cfa"
+}

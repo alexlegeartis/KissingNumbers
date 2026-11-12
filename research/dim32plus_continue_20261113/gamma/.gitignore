@@ -1,0 +1,9 @@
+# Reproducible discovery pools and compiled helpers, never proof inputs.
+__pycache__/
+*_vertices*.txt
+sparse_root_pool
+sparse_root_pool.txt
+root_pool_gram.txt
+# Superseded explicit-cell LP dumps. Compact exact certificates are retained.
+d5_extension*.json
+d6_extension*.json

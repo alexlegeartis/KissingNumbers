@@ -1,5 +1,7 @@
 # Signed support augmentation in dimensions 64 and 65
 
+**Retained construction.** The [13 November compatible-sign-family package](../dim61-67-compatible-sign-families/) now supplies the current 64D and 65D bounds. The counts below remain valid historical constructions and their exact proofs are preserved.
+
 Checkpoint: 28 October 2026 (shared parity continuation).
 
 | Dimension | Constructed lower bound | Gain over ERS64, plus two poles in 65D |

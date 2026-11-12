@@ -1,8 +1,8 @@
 # Dimensions 68 and 69 — cross-sections of Γ₇₂, with the Grams exhibited
 
-**Retained construction in 69D.** The [13 November head-compression proof](../dim69-gamma72-head-compression/) now gives **743,522,304** in 69D.
-This package preserves the preceding 689,452,922-point proof and the current
-471,884,288-point 68D proof. All historical certificates and gains remain unchanged.
+**Retained constructions in 68D and 69D.** The [13 November extended-moment proof](../dim68-69-gamma72-extended-moments/) now gives **471,886,208 in 68D** and **746,325,051 in 69D**.
+This package preserves the preceding 471,884,288-point and 689,452,922-point proofs.
+All historical certificates and gains remain unchanged.
 
 ## Retained averaged continuation (10 November 2026)
 
@@ -18,8 +18,8 @@ See [the self-contained affine package](affine68_69/). Run `python affine68_69/v
 
 | dimension | 10 November affine lower bound | preceding repository bound | historical gain | current registry |
 |---|---:|---:|---:|---:|
-| 68 | **471 366 656** | 375 222 168 | 96 144 488 | 471 884 288 |
-| 69 | **689 442 146** | 627 822 180 | 61 619 966 | 743 522 304 |
+| 68 | **471 366 656** | 375 222 168 | 96 144 488 | 471 886 208 |
+| 69 | **689 442 146** | 627 822 180 | 61 619 966 | 746 325 051 |
 
 The remaining text records the historical central-section method. Statements below that restrict progress to a larger k concern that former central-cell objective, not the affine unions.
 

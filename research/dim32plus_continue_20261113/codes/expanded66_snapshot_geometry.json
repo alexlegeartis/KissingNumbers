@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "dimension": 66,
+  "total": 342244740,
+  "terms": {
+    "dense64": 268435456,
+    "weight16": 73631744,
+    "weight4": 177408,
+    "poles": 132
+  },
+  "previous": 341994884,
+  "gain": 249856,
+  "parent_supports_checked": 174324,
+  "retained_parent_supports": 34028,
+  "extra_supports": 3200,
+  "new_supports": 1925,
+  "extra_pairs": 6160000,
+  "maximum_intersection": 8,
+  "scalar_cpp": {
+    "status": "PASS",
+    "parent_support_pairs": 578935378,
+    "new_extra_pairs": 6160000,
+    "extra_supports": 3200
+  },
+  "input_scope": "Every retained parent-support pair is checked directly, so the inherited 73-bit code minimum is unnecessary. The unchanged Netto four-support construction is replayed by verify.py."
+}

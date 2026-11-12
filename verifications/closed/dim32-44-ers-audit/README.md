@@ -71,22 +71,22 @@ scratch as exact inequalities.
 
 ## Historical comparison results
 
-| n | best chain | N(n) | August Cohn snapshot | historical reference | comparison | 7 November repo result |
+| n | best chain | N(n) | August Cohn snapshot | historical reference | comparison | Current repo result |
 |---|---|---|---|---|---| --- |
 | 32 | (32,8,2) | **346 432** | 345 408 | 346 432 | at the value — **table stale** | **352 992** |
-| 33 | (32,8,2) | **362 048** | 360 640 | 362 048 | at the value — **table stale** | **370 408 |
+| 33 | (32,8,2) | **362 048** | 360 640 | 362 048 | at the value — **table stale** | **370 408** |
 | 34 | (32,8,2) | **381 124** | 380 868 | 381 124 | at the value — **table stale** | **390 992** |
 | 35, 36, 40 | (32/40,8,2) | = table | = | = | at the value | — |
-| 37 | (32,8,2) | **496 232** | 494 312 | 496 232 | at the value — **table stale** | **505 629** |
+| 37 | (32,8,2) | **496 232** | 494 312 | 496 232 | at the value — **table stale** | **505 638** |
 | 38 | (38,8,2) | 570 236 | 566 652 | **591 612** (this project) | below | **611 638** |
 | 39 | (39,8,2) | **756 116** | 755 988 | 756 116 (this project) | at the value | **769 852** |
 | 41, 42 | **(40,8,2)** | = table | = | = | at the value | — |
 | 43 | (43,8,2) | 1 745 692 | 2 060 399 | 2 060 399 (Sun–Wang) | below | — |
 | 44 | (44,8,2) | 2 948 552 | 2 948 552 | **4 153 600** (Sun–Wang) | below | — |
 
-The comparison and ERS counts above are historical. The 7 November 2026
-Coxeter–Todd triangle-switch construction gives **505,629** in dimension 37; see
-[its certificate](../../improved/dim36-37-coxeter-todd/).
+The comparison and ERS counts above are historical. The 13 November 2026
+Coxeter–Todd orbit exchange gives **505,638** in dimension 37; see
+[its certificate](../../improved/dim36-37-orbit-exchange/).
 
 ## Three things worth keeping
 

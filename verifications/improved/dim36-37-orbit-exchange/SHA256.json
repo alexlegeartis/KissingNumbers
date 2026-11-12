@@ -1,0 +1,9 @@
+{
+  "README.md": "bc33a8a2e4f3d067c999b3b3ae74e7e599f186468d5fd2cebcf6ecabf99a6ad7",
+  "certificate.json": "6c27172fbead6928f7448ce3bfb51f47576df34f12c8e4d3eea831ad9d6dbf4e",
+  "final.py": "8a64bea21fd4986971eb27f55a82c4d711e30c5dc19ab1ccca1c6c7da1fd1383",
+  "rejection_controls.json": "e53d2a3ce9d102db8acf1d3aef0f3d5e10abf65fe7adcfdbdaf17985e8af6a1f",
+  "rejection_controls.py": "b7b56b367deced3ceb3ad8f6123c62f2025902717032003ad9042321d7df0ed9",
+  "verification.json": "591b311a6723a02125e7809016b0f69d9cead2064dea2c9c7d34af99b6fcde48",
+  "verify.py": "04f211bcbfb9e590ae4b1e1e4f1590c2978fde73a2455bde2ab68dea35ddf0c1"
+}

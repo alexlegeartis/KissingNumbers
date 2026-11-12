@@ -1,0 +1,7 @@
+__pycache__/
+*.bin
+*.npz
+shared_search
+build_records
+*_best.txt
+*_old.txt

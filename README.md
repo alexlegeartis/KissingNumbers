@@ -1,6 +1,10 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
-**13 November 2026 — a substantial 69D improvement.** Ten Gamma72 slices with one reconstructed coordinate give **743,522,304** points, an increase of **54,069,382 (+7.8424%)** over our preceding 689,452,922-point certificate. [Two independent exact proofs](verifications/improved/dim69-gamma72-head-compression/) rebuild the complete profile domain, actual normal embedding, orientation average, rational population dual and every geometric pair type.
+**13 November 2026 — continuation in 36–37D and 61–69D.** An actual D7 normal system strengthens the Gamma72 bounds to **471,886,208 in 68D** and **746,325,051 in 69D**, gains of **1,920** and **2,802,747** over the preceding certificates. [Two independent exact proofs](verifications/improved/dim68-69-gamma72-extended-moments/) enumerate all 162,969 possible profiles, verify the rational population duals and geometry, and include two additional 69D poles.
+
+[Larger compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) also strengthen the code constructions in **61–67D**, including **88,975,146 in 61D**, **122,539,020 in 62D** and **355,095,446 in 67D**. In 67D, 49 smaller affine sign classes add 4,624 points; an independent direct sign-pair replay checks the changed geometry. A [Coxeter–Todd orbit exchange](verifications/improved/dim36-37-orbit-exchange/) gives **501,822 in 36D** and **505,638 in 37D**, adding nine points to each preceding certificate. The latest exact values and proof routes appear in the table below.
+
+**Earlier on 13 November 2026 — the initial 69D improvement.** Ten Gamma72 slices with one reconstructed coordinate give **743,522,304** points, an increase of **54,069,382 (+7.8424%)** over our preceding 689,452,922-point certificate. [Two independent exact proofs](verifications/improved/dim69-gamma72-head-compression/) rebuild the complete profile domain, actual normal embedding, orientation average, rational population dual and every geometric pair type.
 
 The same campaign also improves all twelve bounds in **49–60D** using asymmetric signed P48 classes. The gains range from **24** to **3,946** points; the new 60D bound is **58,631,571**. These are smaller advances, with their own [exact finite verification package](verifications/improved/dim49-60-p48-signed-refill/).
 
@@ -35,9 +39,9 @@ values and verification packages remain here as part of the research record.
 > - **32D:** **352 992** points, **160** above the reviewed repository certificate and **672** above the pinned Lin construction. [Non-antipodal signed octad continuation](verifications/improved/dim32-35-signed-layers/nonantipodal32/) has two independent implementations, complete integer reconstruction and semantic rejection controls. Its 29 exceptional supports contain 1,824 individual points, including 380 without antipodes. No worldwide-priority or global-optimality claim is made.
 > - **33D:** **370 408** points, **32** above the actual published repository certificate and **168** above the pinned Lin construction. [Non-antipodal octads and individual root-star trades](verifications/improved/dim32-35-signed-layers/nonantipodal33/) have independent exact geometry and source/delta replays. The 500 points without antipodes are interpreted literally; the 370 392 witness is an unpublished intermediate.
 > - **34D:** **390 992** points, **two** above the preceding repository construction. [Rational heavy-head rotation](verifications/improved/dim32-35-signed-layers/rotated34/) has two independent exact proofs, a reconstructible integer witness, uniqueness and rank checks.
-> - **36–37D:** **501 813 and 505 629** points, **126** above each preceding repository construction. [Individual base-triangle switches and joint phase refills](verifications/improved/dim36-37-coxeter-todd/triangle_switch/) pass two exact coordinate proofs with fresh short-shell enumeration; all latitude orbits are retained.
+> - **36–37D:** **501 822 and 505 638** points, **nine** above each preceding repository construction. A [compatible phase-orbit exchange](verifications/improved/dim36-37-orbit-exchange/) replaces three orbits by six, with fresh exact source reconstruction and direct integer replacement checks; all latitude orbits are retained.
 > - **39D:** **769 852** points, **32** above the preceding repository construction. [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) pass two independent complete exact proofs, each checking 1,687,391,811 relative products.
-> - **49–60D:** twelve improved bounds, including **58 627 711** in **60D**, **84 186** above the preceding repository construction. [Pointwise P48 refill](verifications/improved/dim49-60-p48-pointwise-refill/) has two exact finite proofs and retains the published mother-lattice premises.
+> - **49–60D:** twelve improved bounds, including **58 631 571** in **60D**, **3 860** above the preceding repository construction. [Signed P48 refill](verifications/improved/dim49-60-p48-signed-refill/) has independent complete mother-class checks and full finite-family verification, and retains the published mother-lattice premises.
 > - **43D:** **2 919 803** points, four above the preceding repository construction. [Individual medium-body splitting and a tiny-point refill](verifications/improved/dim41-46-p48-heads/weyl43/medium_split43/) pass two exact changed-pair checks with fresh geometry/gluing replay; P48n minimum/design and complete-family population inputs remain inherited.
 > - **33–87D:** further improvements include signed layers, phase refills,
 >   the 38D Fano/cube construction, P48 families and shared parity layers.
@@ -155,8 +159,8 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 408** | **SOTA** | +0.045376% | — | since 2026-11-07 | [Non-antipodal octads and individual root-star trades](verifications/improved/dim32-35-signed-layers/nonantipodal33/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal33/evidence/public_comparison.json) |
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 992** | **SOTA** | +0.00306921% | — | since 2026-11-06 | [Rational heavy-head rotation](verifications/improved/dim32-35-signed-layers/rotated34/) | — |
 | 35 | 415 308 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 334** | **SOTA** | +0.00626041% | — | since 2026-10-28 | [Parity-coordinated heads](verifications/improved/dim32-35-signed-layers/) | — |
-| 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **501 813** | **SOTA** | +3.5% | — | since 2026-10-24 | [Individual triangle switches](verifications/improved/dim36-37-coxeter-todd/triangle_switch/) | — |
-| 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **505 629** | **SOTA** | +1.1% | — | since 2026-10-24 | [Triangle switches + latitudes](verifications/improved/dim36-37-coxeter-todd/triangle_switch/) | — |
+| 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **501 822** | **SOTA** | +3.5197% | — | updated 2026-11-13 | [Coxeter–Todd orbit exchange](verifications/improved/dim36-37-orbit-exchange/) | — |
+| 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **505 638** | **SOTA** | +1.1260% | — | updated 2026-11-13 | [Orbit exchange and latitudes](verifications/improved/dim36-37-orbit-exchange/) | — |
 | 38 | 566 652 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **611 638** | **SOTA** | +7.94% | — | 2026-08-30 to 2026-09-28; since 2026-11-06 | [Orthogonal Hamming latitude replacement](verifications/improved/dim38-joint-latitudes/) | — |
 | 39 | 755 988 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **769 852** | **SOTA** | +1.83% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) | — |
 | 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/html/2607.20359v4) | **1 126 314** | **SOTA** | +3.14% | — | since 2026-10-26 | [Affine lattice shells](verifications/improved/dim40-affine-shells/) | — |
@@ -178,15 +182,15 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 58 | 52 416 510 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [10D tail](common/published.py) *(derived)* | **56 270 076** | **SOTA** | +7.3518% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
 | 59 | 52 416 604 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail](common/published.py) *(derived)* | **56 952 414** | **SOTA** | +8.6534% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
 | 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **58 631 571** | **SOTA** | +11.8564% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
-| 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **88 260 394** | **SOTA** | +68.38% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **121 824 268** | **SOTA** | +132.41% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **184 286 468** | **SOTA** | +251.57% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 64 | 331 737 984 | [Edel-Rains-Sloane](https://arxiv.org/abs/math/0207291) | **335 496 064** | **SOTA** | +1.13% | — | since 2026-10-24 | [Signed support augmentation](verifications/improved/dim64-65-signed-parity/) | — |
-| 65 | 331 737 986 | [ERS64](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **335 564 290** | **SOTA** | +1.15% | — | since 2026-10-24 | [Signed supports and BCH owner caps](verifications/improved/dim64-65-signed-parity/) | — |
-| 66 | 331 737 990 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **341 994 884** | **SOTA** | +3.09% | — | since 2026-10-24 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 67 | 331 737 996 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **355 090 822** | **SOTA** | +7.04% | — | since 2026-10-24 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
-| 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **471 884 288** | **SOTA** | +42.25% | — | updated 2026-11-10 | [Gamma72 averaged affine slices](verifications/improved/dim68-69-gamma72-cross-sections/weyl_averaged/) | — |
-| 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **743 522 304** | **SOTA** | 2.24x | — | updated 2026-11-13 | [Gamma72 slice compression](verifications/improved/dim69-gamma72-head-compression/) | — |
+| 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **88 975 146** | **SOTA** | +69.7443% | — | updated 2026-11-13 | [Compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) | — |
+| 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **122 539 020** | **SOTA** | +133.7731% | — | updated 2026-11-13 | [Compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) | — |
+| 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **184 393 988** | **SOTA** | +251.7723% | — | updated 2026-11-13 | [Compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) | — |
+| 64 | 331 737 984 | [Edel-Rains-Sloane](https://arxiv.org/abs/math/0207291) | **335 711 104** | **SOTA** | +1.1977% | — | updated 2026-11-13 | [Compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) | — |
+| 65 | 331 737 986 | [ERS64](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **335 779 330** | **SOTA** | +1.2182% | — | updated 2026-11-13 | [Compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) | — |
+| 66 | 331 737 990 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **342 271 364** | **SOTA** | +3.1752% | — | updated 2026-11-13 | [Compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) | — |
+| 67 | 331 737 996 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **355 095 446** | **SOTA** | +7.0409% | — | since 2026-11-13 | [Compatible affine sign classes](verifications/improved/dim61-67-compatible-sign-families/) | — |
+| 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **471 886 208** | **SOTA** | +42.2467% | — | updated 2026-11-13 | [Extended Gamma72 moments](verifications/improved/dim68-69-gamma72-extended-moments/) | — |
+| 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **746 325 051** | **SOTA** | 2.25x | — | updated 2026-11-13 | [Extended moments and head poles](verifications/improved/dim68-69-gamma72-extended-moments/) | — |
 | 70 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **1 360 986 112** | **SOTA** | 4.10x | — | updated 2026-11-10 | [Gamma72 affine slices](verifications/improved/dim70-71-gamma72-cross-sections/affine70/) | — |
 | 71 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **2 603 658 750** | **SOTA** | 7.85x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
 | 73 | 6 218 175 602 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [1D tail](common/published.py) *(derived)* | **6 218 206 932** | **SOTA** | +0.000504% | — | since 2026-08-30 | [Gamma72 cosets plus caps](verifications/improved/dim73-88-gamma72-cosets/) | — |
@@ -264,7 +268,7 @@ improvement is claimed in 47D or 48D.
 <details>
 <summary>Detailed construction notes</summary>
 
-- **27–31D (current):** The current values are **209 825, 221 988, 231 697, 247 972, 251 200**, respectively. The [31D latitude-contact exchange](verifications/improved/dim31-latitude-contact-exchange/) replaces four latitude points with eight midpoint points, adding four to the preceding bound. Two independent complete exact proofs cover every pair, including one integer-only enumeration without antipodal compression. The earlier [algebraic completion](verifications/improved/dim27-31-algebraic-completion/) supplies 27D and the retained 251,196-point predecessor; the [29 October joint refills](verifications/improved/dim27-31-joint-refills/) supply the current 28–30D records.
+- **27–31D (current):** The current repository values are **209 825, 222 120, 231 776, 247 972, 251 200**, respectively. The [November sextet unions](verifications/improved/dim28-29-november-sextets/) give the 28D and 29D bounds with complete exact geometry and independent changed-pair checks. The [31D latitude-contact exchange](verifications/improved/dim31-latitude-contact-exchange/) replaces four latitude points with eight midpoint points, adding four to the preceding bound. Two independent complete exact proofs cover every pair, including one integer-only enumeration without antipodal compression. The earlier [algebraic completion](verifications/improved/dim27-31-algebraic-completion/) supplies 27D and the retained 251,196-point predecessor; the [29 October joint refills](verifications/improved/dim27-31-joint-refills/) supply 30D.
 
 - **18D:** the base of Cohn–Li's hexagon had a free combinatorial parameter nobody had varied: which coset of RM(1,4) the three six-set families lie in.  Three bent cosets with pairwise-bent sums that do not sum to zero give the twelve tier-B slots three different 512-word spaces instead of one, and tier B rises from 256 to 960
 
@@ -275,9 +279,9 @@ improvement is claimed in 47D or 48D.
 - **31D (retained construction):** A normal-coordinate signed simplex module and exact compatible-union selection give **251 110**, 108 above PackingStar's 28 October 251 002-point file. [Complete coordinates and all-pairs verification](verifications/improved/dim31-normal-module-exchange/) credit and pin the public baseline.
 - **26D–30D and the preceding 31D construction:** Shared midpoint replacements with axiswise residual-head completion give 201 108, 209 532, 216 680, 226 520, 238 808 and 246 638. The final 30D/31D pure tails are represented exactly over Q(√3)/Q(√2), replacing—not supplementing—the ordinary D6/D7 tails. [Coordinate assembly and independent full replays](verifications/improved/dim26-31-residual-completions/) describe all components. Earlier midpoint, joint-Leech, frame-layer and dual-centre packages remain as historical constructions.
 
-- **36D:** Three Coxeter–Todd lattices with 32 703 explicit three-point phase orbits and a 403 704-point base modified by 90 independent triangle switches; exact shell enumeration and two coordinate proofs give 501 813 points
+- **36D:** Three Coxeter–Todd lattices with 32 706 explicit three-point phase orbits and a 403 704-point base modified by 90 triangle switches give **501 822** points. The [latest orbit exchange](verifications/improved/dim36-37-orbit-exchange/) retains every base point and latitude body; fresh source reconstruction and exact integer products verify all changed interactions.
 
-- **37D:** The 36D construction as an equator, plus two latitude layers of 1 908 points each
+- **37D:** The 501 822-point 36D construction as an equator, plus two compatible latitude layers of 1 908 points each, gives **505 638**.
 
 - **38D:** The Leech cap construction at codimension 14
 
@@ -295,17 +299,15 @@ improvement is claimed in 47D or 48D.
 
 - **46D:** October: independently normalized P48n families with six-dimensional heads, plus 27 pure-head points
 
-- **49–61D:** [P48 cap construction with explicit disjoint classes](verifications/improved/dim49-63-p48-caps/)
+- **49–60D:** [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) extend the cap construction by allowing individual signed owners without requiring each class to be antipodal. Exact replay checks classes, ownership, isometries and tails.
 
-- **62D:** Edel–Rains–Sloane chain (62,15,2); the recorded tables stop at 48 and resume at 64
+- **61–67D:** [Compatible support and sign families](verifications/improved/dim61-67-compatible-sign-families/) use shortened binary layers, exact head compression and balanced sections. The 67D construction also uses 49 smaller affine Hamming subcodes; full source replays and independent sign-pair checks verify the extensions.
 
-- **63D:** Edel–Rains–Sloane chain (63,15,2); the recorded tables stop at 48 and resume at 64
+- **68D:** Six affine Gamma72 slices with a D4 normal geometry give **471 886 208** points. An actual D7 normal extension strengthens the population count through exact moments and nested orientation averaging; [two independent proofs](verifications/improved/dim68-69-gamma72-extended-moments/) check the complete finite profile domain.
 
-- **68D:** Gamma72 four-point cross-section programme at its exact optimum, with a D4 Gram matrix
+- **69D:** Ten Gamma72 slices are compressed from four normal coordinates to one rational-height coordinate. The [D7 moment extension](verifications/improved/dim68-69-gamma72-extended-moments/) raises the certified population mean to `6716925440/9`; its integer ceiling and two pure head poles give **746 325 051** points.
 
-- **69D:** Gamma72 three-point cross-section programme at its exact optimum, with the Gram determinant forced by Hermite
-
-- **70D:** Gamma72 two-point cross-section count; the recorded tables have no entry between 65 and 71
+- **70D:** Three compatible affine Gamma72 slices give **1 360 986 112** points, with an [exact moment dual and projected geometry proof](verifications/improved/dim70-71-gamma72-cross-sections/).
 
 - **71D:** Gamma72 one-point cross-section count; the recorded tables have no entry between 65 and 71
 
@@ -502,7 +504,7 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               all 70 claims, 45 packages; earlier constructions remain
+  improved/               all 70 claims, 48 packages; earlier constructions remain
                           available with their original proof data
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
@@ -525,7 +527,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 45 packages, 70 dimensions
+### `verifications/improved/` — 48 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -536,7 +538,10 @@ in `improved/` may now be superseded by a later publication; its package is reta
 
 | package                                                                                      | dims   | the idea                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`dim69-gamma72-head-compression`](verifications/improved/dim69-gamma72-head-compression/) | 69 | 743,522,304; ten slices with one reconstructed coordinate; two independent exact moment and geometry proofs |
+| [`dim36-37-orbit-exchange`](verifications/improved/dim36-37-orbit-exchange/) | 36, 37 | 501,822 and 505,638; nine-point gains from a compatible orbit exchange; fresh exact source and replacement replay |
+| [`dim61-67-compatible-sign-families`](verifications/improved/dim61-67-compatible-sign-families/) | 61–67 | larger compatible support and sign families; fresh exact code and layer verification |
+| [`dim68-69-gamma72-extended-moments`](verifications/improved/dim68-69-gamma72-extended-moments/) | 68, 69 | 471,886,208 and 746,325,051; actual D7 extension, exact population duals, independent direct-profile proof and two 69D poles |
+| [`dim69-gamma72-head-compression`](verifications/improved/dim69-gamma72-head-compression/) | 69 | retained 743,522,304-point construction; ten slices with one reconstructed coordinate; two independent exact moment and geometry proofs |
 | [`dim49-60-p48-signed-refill`](verifications/improved/dim49-60-p48-signed-refill/) | 49–60 | signed P48 class exchanges; twelve improvements with complete finite class, ownership and tail verification |
 | [`dim28-29-november-sextets`](verifications/improved/dim28-29-november-sextets/) | 28, 29 | current 222,120 and 231,776; exact finite geometry and independent direct-integer changes over the November 11 PackingStar files |
 | [`dim31-latitude-contact-exchange`](verifications/improved/dim31-latitude-contact-exchange/) | 31 | current 251,200-point four-for-eight exchange; two complete exact proofs, including independent integer-only enumeration |
@@ -574,7 +579,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | `[dim73-95-gamma72-caps](verifications/improved/dim73-95-gamma72-caps/)`                     | 73–95  | the cap construction over Γ₇₂, whose class threshold γ = 1/4 is exactly what permits zero-sum triples                                                                                        |
 | [`dim88-96-z8-golay`](verifications/improved/dim88-96-z8-golay/) | 88–96 | nonlinear published Golay parent, exact sections and sparse layers; two independent proofs |
 | [`dim61-68-95-96-code-layers`](verifications/improved/dim61-68-95-96-code-layers/) | 61–63, 66–68, 95–96 | binary compression, central sections and enlarged support codes |
-| [`dim64-65-signed-parity`](verifications/improved/dim64-65-signed-parity/) | 64-65 | 211 added Hamming sign blocks, exact parity repairs and BCH owner caps |
+| [`dim64-65-signed-parity`](verifications/improved/dim64-65-signed-parity/) | 64-65 | retained 1,835-block Hamming augmentation, exact parity repairs and BCH owner caps |
 | [`dim73-88-gamma72-cosets`](verifications/improved/dim73-88-gamma72-cosets/) | 73–88 | certified nearest subsets, repaired and scaled group images |
 
 
@@ -822,10 +827,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 105 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 112 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 124 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 131 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay
@@ -863,6 +868,9 @@ Or individually, each from its own directory:
 | `…/dim31-frame-layer/ceilings.py 31`                                         | the same report at k = 7, 1120 vertices enumerated            | 20 s   |
 | `…/dim38-leech-large-codimension/scripts/verify.py`                           | τ(38) ≥ 591 612                                                | 10 s   |
 | `…/dim39-ers-constant-weight/scripts/verify.py`                               | τ(39) ≥ 756 116 (and τ(38) ≥ 570 236)                          | 10 s   |
+| `.../dim36-37-orbit-exchange/verify.py` | fresh exact baseline and orbit-exchange proof: 501 822 in 36D and 505 638 in 37D | ~1 min |
+| `.../dim61-67-compatible-sign-families/verify.py` | fresh exact compatible-support, sign-family, code and layer checks for 61–67D | ~1 min |
+| `.../dim68-69-gamma72-extended-moments/verify.py --enumerate` and `verify_independent.py` | two exact D7 population and geometry proofs: 471 886 208 in 68D and 746 325 051 in 69D | ~15 s |
 | `.../dim36-37-coxeter-todd/verify.py` | exact 501 813-point 36D construction and 505 629-point 37D extension, two coordinate proofs | ~3 min |
 | `.../dim41-46-p48-heads/verify.py` | current 41–46D totals, partial 43D points and coordinated 45D; inherited populations | ~30 s |
 | `…/dim46-47-p48-cross-sections/derive.py`                                     | recovers 12 309 600 and 23 766 960, claiming neither           | 6 s    |

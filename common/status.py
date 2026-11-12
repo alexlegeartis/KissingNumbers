@@ -558,3 +558,11 @@ STATUS[69] = ('heads', 'ten Gamma72 slices compressed from four normal coordinat
 # Signed, non-antipodal P48 mother classes, independently checked 13 November 2026.
 for _d in range(49, 61):
     STATUS[_d] = ('classes', 'signed P48 mother-class exchanges with individual ownership; complete finite class and tail checks, independent full seed proof, and published mother-shell inputs (dim49-60-p48-signed-refill/verify.py)')
+
+# Exact continuation in dimensions 36-37 and 61-69, checked 13 November 2026.
+for _d in (36, 37):
+    STATUS[_d] = ('cosets', 'compatible Coxeter-Todd orbit exchange with fresh exact source and replacement geometry; larger simultaneous exchanges remain open (dim36-37-orbit-exchange/verify.py)')
+for _d in range(61, 68):
+    STATUS[_d] = ('codes', 'larger compatible support and sign families in shortened, compressed and extended code layers; exact finite replay; broader support and parity choices remain open (dim61-67-compatible-sign-families/verify.py)')
+for _d in (68, 69):
+    STATUS[_d] = ('heads', 'actual D7 normals strengthen D4 slice populations by nested orientation averaging and exact moment duals; two independent profile and geometry proofs, with published Gamma72 premises; other normal systems and geometries remain open (dim68-69-gamma72-extended-moments/verify.py)')

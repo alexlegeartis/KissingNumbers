@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "complete_profile_count": 162969,
+  "signed_permutation_orbits": 60,
+  "known_D7_roots": 84,
+  "D4_profile_count": 1681,
+  "D4_orientation_orbits": 16,
+  "normals_sha256": "58cf8fff959ea8b1fbc97dcc44ae254ab30ba2ba0975fb0fc7bb63c4db3ec66a",
+  "reports": [
+    {
+      "dimension": 68,
+      "exact_mean": "471886208",
+      "bound": 471886208,
+      "moments_directly_summed": 18,
+      "geometric_pair_types": 21,
+      "minimum_squared_gap": "0",
+      "minimum_positive_squared_gap": "176/403",
+      "minimum_dual_slack": "0",
+      "certificate_sha256": "12d43962141cba0e4aa3b54478ef92d6b71c972bf1e1919d18b2bb8e530b84d7"
+    },
+    {
+      "dimension": 69,
+      "exact_mean": "6716925440/9",
+      "bound": 746325051,
+      "moments_directly_summed": 18,
+      "geometric_pair_types": 55,
+      "minimum_squared_gap": "0",
+      "minimum_positive_squared_gap": "1/180",
+      "minimum_dual_slack": "0",
+      "certificate_sha256": "3a05c71817f8bb93f044c8b13fd554b1f01b1fdd44444398426902bfd9d91684"
+    }
+  ],
+  "elapsed_seconds": 7.182580380998843,
+  "independence": "No producer/model/checker imports. Direct profile-domain traversal; D4 generator BFS; all moment/objective terms summed explicitly.",
+  "published_premises": "Pinned Gamma72 catalogue identity, integrality, minimum8, shell population6218175600, spherical11-design."
+}

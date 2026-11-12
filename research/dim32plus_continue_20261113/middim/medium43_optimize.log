@@ -1,0 +1,14 @@
+MIP (53667, 1761) nonzero 107334 conflicts 45543
+research/dim32plus_continue_20261113/middim/medium43_optimize.py:37: RuntimeWarning: Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim.
+  sol=milp(objective,integrality=np.ones(len(objective)),bounds=Bounds(0,1),
+STATUS Time limit reached. (HiGHS Status 13: Time limit reached) objective 0.0 bound -5.0 seconds 120.03891801834106
+{
+  "status": "Exact combinatorial exchange; fresh geometric replay still required",
+  "gain": 0,
+  "new_vertex_indices": [],
+  "deleted_current_indices": [],
+  "option_indices": [],
+  "solver_message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+  "solver_upper_bound": 5.0,
+  "seconds": 120.04177212715149
+}

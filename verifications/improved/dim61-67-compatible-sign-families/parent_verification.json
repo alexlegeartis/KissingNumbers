@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "owner65_points": 68224,
+  "owner65_dense_words": 268435456,
+  "netto68_blocks": 12529,
+  "distinct_triples": 50116,
+  "four_support_counts": {
+    "66": 11088,
+    "67": 11792
+  }
+}

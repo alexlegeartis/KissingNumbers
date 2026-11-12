@@ -1,0 +1,86 @@
+{
+  "format": "ct_current_phase_exchange_v1",
+  "baseline_proposal_sha256": "6a88389c8adcdff44b9cd8ef09edaa0bbc9c98af8db4879296c4d4f9ef25356d",
+  "baseline_certificate_sha256": "09e5fcfd11cf09a11d68cac48c923928f26591245923921d20a5e7ee8186d16a",
+  "remove_phase_orbits": [
+    [
+      23,
+      77,
+      23,
+      0,
+      1
+    ],
+    [
+      23,
+      77,
+      23,
+      1,
+      1
+    ],
+    [
+      23,
+      77,
+      23,
+      2,
+      1
+    ]
+  ],
+  "add_phase_orbits": [
+    [
+      23,
+      105,
+      23,
+      0,
+      1
+    ],
+    [
+      23,
+      105,
+      23,
+      1,
+      1
+    ],
+    [
+      23,
+      105,
+      23,
+      2,
+      1
+    ],
+    [
+      38,
+      77,
+      12,
+      0,
+      2
+    ],
+    [
+      38,
+      77,
+      12,
+      1,
+      2
+    ],
+    [
+      38,
+      77,
+      12,
+      2,
+      2
+    ]
+  ],
+  "points_36": 501822,
+  "points_37": 505638,
+  "source_sha256": {
+    "completion/certificate.json": "b37691e110c73f1100112aea1a4dc39e2a911559a7a49c67c88bb303f6cd8760",
+    "completion/verify.py": "4c36c65de1383b5a3db81dc58e51355256fb7ede9afedef269154001bc117db3",
+    "phase/exact_lattice.py": "5efd39c031287f0f2e3508a4336a715817d7b3786debabd8ea339c95dd5df2d1",
+    "triangle_switch/certificate.json": "09e5fcfd11cf09a11d68cac48c923928f26591245923921d20a5e7ee8186d16a",
+    "triangle_switch/proposal.json": "6a88389c8adcdff44b9cd8ef09edaa0bbc9c98af8db4879296c4d4f9ef25356d",
+    "triangle_switch/switches.json": "54096729335bfcffb792dc06c3d807ad53ceaea939de2b9acbda4f7791729774",
+    "triangle_switch/verify.py": "48acf68fbafeda8f829f1aea51b606333c20b6fbd03adb93e54c7d024c994ba7"
+  },
+  "previous_points_36": 501813,
+  "previous_points_37": 505629,
+  "gain_each": 9
+}

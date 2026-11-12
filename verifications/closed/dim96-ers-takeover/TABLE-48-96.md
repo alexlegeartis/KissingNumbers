@@ -15,15 +15,15 @@
 | 58 | 56 266 316 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness | 56 270 076 |
 | 59 | 56 948 468 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness | 56 952 414 |
 | 60 | 58 627 711 | **this work** -- pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness | 58 631 571 |
-| 61 | 88 260 394 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 88 260 394 |
-| 62 | 121 824 268 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 121 824 268 |
-| 63 | 184 286 468 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 184 286 468 |
-| 64 | 335 496 064 | **this work** -- 1,835 added Hamming sign blocks with reusable parity-check spaces; 65D caps replace 68,224 BCH and affine-line owners | 335 496 064 |
-| 65 | 335 564 290 | **this work** -- 1,835 added Hamming sign blocks with reusable parity-check spaces; 65D caps replace 68,224 BCH and affine-line owners | 335 564 290 |
-| 66 | 341 994 884 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 341 994 884 |
-| 67 | 355 090 822 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 355 090 822 |
-| 68 | 375 222 168 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 471 884 288 |
-| 69 | 627 822 180 | **this work** -- k-point moment LP with the Gram exhibited in Gamma_72 | 743 522 304 |
+| 61 | 88 260 394 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 88 975 146 |
+| 62 | 121 824 268 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 122 539 020 |
+| 63 | 184 286 468 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 184 393 988 |
+| 64 | 335 496 064 | **this work** -- 1,835 added Hamming sign blocks with reusable parity-check spaces; 65D caps replace 68,224 BCH and affine-line owners | 335 711 104 |
+| 65 | 335 564 290 | **this work** -- 1,835 added Hamming sign blocks with reusable parity-check spaces; 65D caps replace 68,224 BCH and affine-line owners | 335 779 330 |
+| 66 | 341 994 884 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 342 271 364 |
+| 67 | 355 090 822 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 355 095 446 |
+| 68 | 375 222 168 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 471 886 208 |
+| 69 | 627 822 180 | **this work** -- k-point moment LP with the Gram exhibited in Gamma_72 | 746 325 051 |
 | 70 | 1 249 778 250 | **this work** -- k-point moment LP on cross-sections of Gamma_72 | 1 360 986 112 |
 | 71 | 2 603 658 750 | **this work** -- k-point moment LP on cross-sections of Gamma_72 | 2 603 658 750 |
 | 72 | 6 218 175 600 | Cohn's table: Nebe 2012, J. Reine Angew. Math. 673, 237-247 (Gamma_72) | — |

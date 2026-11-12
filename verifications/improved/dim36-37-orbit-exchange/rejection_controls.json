@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "positive_delta_counts": [
+    501822,
+    505638
+  ],
+  "positive_delta_passed": true,
+  "baseline_proof_scope": "Pinned; freshly replayed separately by verify.py",
+  "negative_controls": 5,
+  "controls": [
+    {
+      "case": "duplicate_added_orbit",
+      "rejected": true,
+      "error_type": "AssertionError"
+    },
+    {
+      "case": "restore_a_conflicting_removed_orbit",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "exact_bad_product": 10,
+      "allowed_product": 6,
+      "all_point_norms_squared": 12
+    },
+    {
+      "case": "inflate_both_counts",
+      "rejected": true,
+      "error_type": "AssertionError"
+    },
+    {
+      "case": "alter_pinned_source_hash",
+      "rejected": true,
+      "error_type": "AssertionError"
+    },
+    {
+      "case": "disabled_assertions",
+      "rejected": true,
+      "exit_code": 1
+    }
+  ]
+}

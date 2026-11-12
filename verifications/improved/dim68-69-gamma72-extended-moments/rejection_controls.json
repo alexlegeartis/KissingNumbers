@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "baseline_certificates": 2,
+  "rejection_controls": 13,
+  "controls": [
+    {
+      "control": "changed exact rational mean",
+      "result": "REJECTED"
+    },
+    {
+      "control": "changed population ceiling",
+      "result": "REJECTED"
+    },
+    {
+      "control": "changed final bound",
+      "result": "REJECTED"
+    },
+    {
+      "control": "changed pole count",
+      "result": "REJECTED"
+    },
+    {
+      "control": "changed dual multiplier",
+      "result": "REJECTED"
+    },
+    {
+      "control": "changed objective coefficient",
+      "result": "REJECTED"
+    },
+    {
+      "control": "removed orbit representative",
+      "result": "REJECTED"
+    },
+    {
+      "control": "changed moment right side",
+      "result": "REJECTED"
+    },
+    {
+      "control": "invalid head height",
+      "result": "REJECTED"
+    },
+    {
+      "control": "nonzero height in dimension68",
+      "result": "REJECTED"
+    },
+    {
+      "control": "changed actual normal vector",
+      "result": "REJECTED"
+    },
+    {
+      "control": "changed catalogue Gram",
+      "result": "REJECTED"
+    },
+    {
+      "control": "disabled assertions with -O",
+      "result": "REJECTED"
+    }
+  ]
+}

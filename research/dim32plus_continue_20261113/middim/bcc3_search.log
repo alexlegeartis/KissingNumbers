@@ -1,0 +1,94 @@
+POPULATIONS bcc 3 profiles 201 orbits 12 moments 16
+[((0, 2, 4), 24, np.float64(92.0)), ((1, 1, 4), 24, np.float64(184.0)), ((0, 0, 4), 6, np.float64(1148.0)), ((0, 3, 3), 12, np.float64(184.0)), ((1, 2, 3), 48, np.float64(3784.0)), ((0, 1, 3), 24, np.float64(40376.0)), ((2, 2, 2), 8, np.float64(12488.0)), ((0, 2, 2), 12, np.float64(121744.0)), ((1, 1, 2), 24, np.float64(348048.0)), ((0, 0, 2), 6, np.float64(945968.0)), ((0, 1, 1), 12, np.float64(2459688.0)), ((0, 0, 0), 1, np.float64(6143568.0))]
+VERTICES 20613
+it 0 best 11306800 slices 7
+{
+  "estimate": 11306800.000000004,
+  "iteration": 0,
+  "vertices": [
+    10306,
+    6953,
+    6655,
+    4086,
+    3477,
+    1285,
+    1825
+  ],
+  "model": "bcc",
+  "k": 3,
+  "dimension": 46,
+  "numerical_lower_bound": 11306800.000000022,
+  "slices": [
+    {
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "head": 0.0,
+      "alpha": 1.0,
+      "mean_population": 6143568.000000005
+    },
+    {
+      "profile": [
+        -1,
+        0,
+        -1
+      ],
+      "head": -0.8660254037844386,
+      "alpha": 1.0,
+      "mean_population": 2459687.9999999995
+    },
+    {
+      "profile": [
+        -1,
+        -1,
+        0
+      ],
+      "head": 0.8660254037844386,
+      "alpha": 1.0,
+      "mean_population": 2459687.9999999995
+    },
+    {
+      "profile": [
+        -2,
+        0,
+        -2
+      ],
+      "head": -1.7320508075688772,
+      "alpha": 1.0,
+      "mean_population": 121744.00000000004
+    },
+    {
+      "profile": [
+        -2,
+        -2,
+        0
+      ],
+      "head": 1.7320508075688772,
+      "alpha": 1.0,
+      "mean_population": 121744.00000000004
+    },
+    {
+      "profile": [
+        -3,
+        -3,
+        0
+      ],
+      "head": 2.5980762113533156,
+      "alpha": 1.0,
+      "mean_population": 184.00000000000003
+    },
+    {
+      "profile": [
+        -3,
+        0,
+        -3
+      ],
+      "head": -2.5980762113533156,
+      "alpha": 1.0,
+      "mean_population": 184.00000000000003
+    }
+  ],
+  "status": "Numerical discovery only; exact embedding, geometry and dual verification are required"
+}

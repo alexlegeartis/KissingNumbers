@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "families": [
+    {
+      "certificate": "global_repaired_certificate.json",
+      "sha256": "588799d5266215f36bae95bce5663169176182fef8bc003d76821a5f1ee5ae7e",
+      "old_supports": 30828,
+      "new_supports": 1873,
+      "changed_pair_checks": 59493972,
+      "old_new_repairs": 14984,
+      "new_new_repairs": 91,
+      "seconds": 6.2425103187561035
+    },
+    {
+      "certificate": "short_repaired_certificate.json",
+      "sha256": "d9f5744e5c92745ab6f5cc8bb144f0bd7862dfc4c69a3371c2759b408a24e598",
+      "old_supports": 9673,
+      "new_supports": 937,
+      "changed_pair_checks": 9502117,
+      "old_new_repairs": 4046,
+      "new_new_repairs": 99,
+      "seconds": 1.2859318256378174
+    }
+  ],
+  "section63": {
+    "octad": 1284508757262368,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35503776,
+      "new_sparse": 1917952,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 184325380,
+    "explicit_sign_words_enumerated": 7505920
+  },
+  "geometry": {
+    "dense61_cases": 736,
+    "dense62_cases": 36,
+    "owner65_count": 68224,
+    "notes": "65D changes the dense layer to the inherited BCH radical; all sparse interactions use only amplitudes. Owners use no weight-16 point."
+  },
+  "inherited_inputs": [
+    "Parent [64,28,16] minimum and exact weight-16 list, freshly enumerated by the separate scalar C++ verifier.",
+    "The existing 65D BCH radical and 68,224-owner certificate; its transfer to changed sparse layers is checked here.",
+    "66/67 Netto quadruple construction remains a separately replayed input."
+  ],
+  "review": "No mathematical gap found. Standalone entry points should reject -O; 63D untouched sign orders and 65D dense-code substitution must be stated explicitly."
+}

@@ -1,0 +1,8 @@
+{
+  "vertices": 891,
+  "edges": 8265,
+  "required_orbits": 637,
+  "status": 2,
+  "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+  "scope": "Numerical MILP discovery on the <=4-blocker pool; not a proof of a global construction ceiling."
+}

@@ -1,0 +1,17 @@
+# Reproducible compiler output and caches.
+__pycache__/
+*.py[cod]
+/head_search
+/multihead_search
+/family40_search
+/subcode67_search
+/subcode67_collect
+*.bin
+
+# Regenerated compatibility graphs and discovery inputs.
+*.txt
+/medium43_pool*.json
+/medium43_pool*.npz
+/medium43_options*.json
+/subcode67_context.json
+/subcode67_collection_work.json

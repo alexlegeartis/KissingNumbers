@@ -1,0 +1,89 @@
+MOMENTS overlap -1 parameter interval 0 8
+it 0 best 23766960 slices 7
+{
+  "estimate": 23766960,
+  "iteration": 0,
+  "vertices": [
+    4514,
+    5379,
+    3649,
+    2520,
+    6508,
+    8003,
+    1025
+  ],
+  "overlap": -1,
+  "dimension": 47,
+  "numerical_lower_bound": 23766960,
+  "parameter_interval": [
+    0,
+    8
+  ],
+  "population_expression": "23766960",
+  "slices": [
+    {
+      "profile": [
+        0,
+        0
+      ],
+      "head": 0.0,
+      "alpha": 1.0,
+      "population": "400*tau0 + 10811360"
+    },
+    {
+      "profile": [
+        1,
+        0
+      ],
+      "head": -0.7171371656006361,
+      "alpha": 1.0,
+      "population": "5713400 - 300*tau0"
+    },
+    {
+      "profile": [
+        -1,
+        0
+      ],
+      "head": 0.7171371656006361,
+      "alpha": 1.0,
+      "population": "5713400 - 300*tau0"
+    },
+    {
+      "profile": [
+        -2,
+        0
+      ],
+      "head": 1.4342743312012722,
+      "alpha": 1.0,
+      "population": "120*tau0 + 748720"
+    },
+    {
+      "profile": [
+        2,
+        0
+      ],
+      "head": -1.4342743312012722,
+      "alpha": 1.0,
+      "population": "120*tau0 + 748720"
+    },
+    {
+      "profile": [
+        3,
+        0
+      ],
+      "head": -2.1514114968019085,
+      "alpha": 1.0,
+      "population": "15680 - 20*tau0"
+    },
+    {
+      "profile": [
+        -3,
+        0
+      ],
+      "head": 2.1514114968019085,
+      "alpha": 1.0,
+      "population": "15680 - 20*tau0"
+    }
+  ],
+  "status": "Numerical discovery only; exact geometry and embedding required"
+}

@@ -7,13 +7,16 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-45 packages, one per **construction idea** rather than one per dimension, because several
+48 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
-| [`dim69-gamma72-head-compression`](improved/dim69-gamma72-head-compression/) | 69 | 743,522,304; +54,069,382 (7.8424%); two exact population and angle proofs with published Gamma72 inputs |
+| [`dim36-37-orbit-exchange`](improved/dim36-37-orbit-exchange/) | 36, 37 | 501,822 and 505,638; nine-point gains from a compatible orbit exchange; fresh exact source and replacement replay |
+| [`dim61-67-compatible-sign-families`](improved/dim61-67-compatible-sign-families/) | 61–67 | larger compatible support and sign families; fresh exact code and layer verification |
+| [`dim68-69-gamma72-extended-moments`](improved/dim68-69-gamma72-extended-moments/) | 68, 69 | 471,886,208 and 746,325,051; actual D7 extension, exact population duals, independent direct-profile proof and two 69D poles |
+| [`dim69-gamma72-head-compression`](improved/dim69-gamma72-head-compression/) | 69 | retained 743,522,304-point construction; +54,069,382 (7.8424%); two exact population and angle proofs with published Gamma72 inputs |
 | [`dim49-60-p48-signed-refill`](improved/dim49-60-p48-signed-refill/) | 49–60 | asymmetric signed mother classes; gains 24–3,946; current 58,631,571 in 60D; complete finite verification |
 | [`dim28-29-november-sextets`](improved/dim28-29-november-sextets/) | 28, 29 | current 222,120 and 231,776; +16 and +2 over PackingStar November 11; complete exact geometry and direct-integer changed pairs |
 | [`dim49-60-p48-pointwise-refill`](improved/dim49-60-p48-pointwise-refill/) | 49–60 | current pointwise-refill bounds, including 58,627,711 in 60D; two exact head proofs, complete tails/poles and ownership checks |
@@ -51,12 +54,12 @@ file, and the history of the lower bound in its dimensions.
 | [`dim41-46-p48-heads`](improved/dim41-46-p48-heads/) | 41–46 | current supplied certificates, including partial-family 43D and coordinated-motion 45D; integer angles and exact head dimensions replay with inherited complete-family populations |
 | [`dim49-63-p48-caps`](improved/dim49-63-p48-caps/) | 49–63 | current in 49–59D; retained 60D and cap counts in 61–63D are superseded by October code constructions |
 | [`dim62-63-ers-chain`](improved/dim62-63-ers-chain/) | 62, 63 | retained chain, superseded by the October central sections |
-| [`dim68-69-gamma72-cross-sections`](improved/dim68-69-gamma72-cross-sections/) | 68, 69 | current in 69D; the retained 68D section is superseded by October code layers |
+| [`dim68-69-gamma72-cross-sections`](improved/dim68-69-gamma72-cross-sections/) | 68, 69 | retained central and affine Gamma72 proofs; current bounds use the extended D7 moment package |
 | [`dim70-71-gamma72-cross-sections`](improved/dim70-71-gamma72-cross-sections/) | 70, 71 | apparently new — **the claim most in need of a literature check** |
 | [`dim73-95-gamma72-caps`](improved/dim73-95-gamma72-caps/) | 73–95 | retained cap construction; 88–96D now use nonlinear codes |
 | [`dim88-96-z8-golay`](improved/dim88-96-z8-golay/) | 88–96 | published nonlinear parent, exact sections and compatible sparse layers; two independent proofs |
-| [`dim61-68-95-96-code-layers`](improved/dim61-68-95-96-code-layers/) | 61–63, 66–68, 95–96 | exact code compression, layers and central sections |
-| [`dim64-65-signed-parity`](improved/dim64-65-signed-parity/) | 64-65 | signed support augmentation and BCH owner caps |
+| [`dim61-68-95-96-code-layers`](improved/dim61-68-95-96-code-layers/) | 61–63, 66–68, 95–96 | retained exact code compression, layers and central sections; source data reused by later packages |
+| [`dim64-65-signed-parity`](improved/dim64-65-signed-parity/) | 64-65 | retained signed support augmentation and BCH owner caps |
 | [`dim73-88-gamma72-cosets`](improved/dim73-88-gamma72-cosets/) | 73–88 | nearest subsets, explicit 73D refills and exact mixed/signed-tail existence proofs |
 
 **All current claims are in this tier.** The older 96D ERS evaluation remains

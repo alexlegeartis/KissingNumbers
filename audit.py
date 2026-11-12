@@ -417,7 +417,7 @@ add(96, (1 << 33) + 4 ** 9 * 16384 + 16 ** 4 * 32 + 96 * 2, 'dim96-ers-takeover'
 
 # October code and nearest-coset constructions supersede earlier packages;
 # add() preserves every displaced claim in SUPERSEDED for the history audit.
-for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim25-point-split', 'dim25-critical-cluster', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions', 'dim88-96-z8-golay', 'dim26-30-asymmetric-exchanges', 'dim27-quadratic-normal-module', 'dim31-normal-module-exchange', 'dim27-31-joint-refills', 'dim27-31-algebraic-completion', 'dim31-latitude-contact-exchange', 'dim60-antipodal840-lift', 'dim54-59-p48-coverage', 'dim49-60-p48-pointwise-refill', 'dim28-29-november-sextets', 'dim69-gamma72-head-compression', 'dim49-60-p48-signed-refill'):
+for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim25-point-split', 'dim25-critical-cluster', 'dim31-dual-centres', 'dim38-joint-latitudes', 'dim39-deformed-orbits', 'dim40-affine-shells', 'dim29-30-midpoint-replacements', 'dim38-latitude-extension', 'dim39-root-replacements', 'dim26-27-midpoint-replacements', 'dim28-joint-leech-layers', 'dim61-68-95-96-code-layers', 'dim64-65-signed-parity', 'dim73-88-gamma72-cosets', 'dim26-31-residual-completions', 'dim88-96-z8-golay', 'dim26-30-asymmetric-exchanges', 'dim27-quadratic-normal-module', 'dim31-normal-module-exchange', 'dim27-31-joint-refills', 'dim27-31-algebraic-completion', 'dim31-latitude-contact-exchange', 'dim60-antipodal840-lift', 'dim54-59-p48-coverage', 'dim49-60-p48-pointwise-refill', 'dim28-29-november-sextets', 'dim69-gamma72-head-compression', 'dim49-60-p48-signed-refill', 'dim36-37-orbit-exchange', 'dim61-67-compatible-sign-families', 'dim68-69-gamma72-extended-moments'):
     if _package == 'dim32-35-signed-layers':
         for _dimension, _family in ((32, 'classic'), (33, 'classic'), (34, 'classic'), (35, 'multi35')):
             with io.open(os.path.join(IMP, _package, 'source', _family,
@@ -2054,6 +2054,9 @@ if '--write-results' in sys.argv and not fail:
         'dim62-63-ers-chain': 'the Edel-Rains-Sloane chain (n, 15, 2), levels 1-2 built here',
         'dim68-69-gamma72-cross-sections': 'Weyl-averaged six-slice 68D and ten-slice 69D Gamma72 unions; exact integral orientations, averaged moment duals and geometry',
         'dim69-gamma72-head-compression': 'ten Gamma72 slices compressed to one reconstructed coordinate; two independent exact population and geometry proofs',
+        'dim68-69-gamma72-extended-moments': 'actual D7 normals, nested D4 orientation averaging and stronger exact moment duals; two independent complete profile and geometry proofs, including two 69D poles',
+        'dim36-37-orbit-exchange': 'compatible Coxeter-Todd orbit exchange; fresh exact source and replacement geometry, retaining all latitude body orbits',
+        'dim61-67-compatible-sign-families': 'larger compatible support and sign families in shortened, compressed and extended binary-code layers; fresh exact finite replay',
         'dim70-71-gamma72-cross-sections': 'central Gamma72 sections and a three-slice 70D affine union with an independent exact dual proof',
         'dim73-95-gamma72-caps': 'the cap construction over Gamma_72, with zero-sum triples',
         'dim96-ers-takeover': 'the Edel-Rains-Sloane chain (96, 24, 6, 1)',
@@ -2065,6 +2068,10 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append('13 November 2026 continuation: an actual D7 normal extension strengthens the Gamma72 constructions to 471,886,208 in 68D and 746,325,051 in 69D, gains of 1,920 and 2,802,747. Two independent standard-library checkers enumerate the complete 162,969-profile domain and verify all moment duals, geometric cases and the two extra 69D poles. The published Gamma72 minimum, shell population and 11-design remain explicit premises. See verifications/improved/dim68-69-gamma72-extended-moments/.')
+    out.append('')
+    out.append('The same continuation gives 501,822 in 36D and 505,638 in 37D, adding nine points to each preceding Coxeter-Todd certificate by a verified compatible-orbit exchange. Larger compatible support and sign families also improve dimensions 61–67; their exact current values and package routes are in the table below. All three packages have fresh exact replays, and the manuscript remains deferred.')
+    out.append('')
     out.append('13 November 2026: one-coordinate compression of ten Gamma72 slices proves 743,522,304 in 69D, an increase of 54,069,382 (7.8424%) over 689,452,922. Two independent standard-library exact proofs check the actual D4 embedding, full profile domain, orientation averaging, rational moment dual and all 55 pair types. See verifications/improved/dim69-gamma72-head-compression/.')
     out.append('')
     out.append('The same campaign gives twelve signed P48 class improvements in dimensions 49–60, from 52,431,624 through 58,631,571. Independent complete checks certify the new 15,622-point signed class; complete final-family replays check signed ownership, isometries, all exceptional pairs and the direction/pole codes. The published P48 minimum and shell population remain inputs. See verifications/improved/dim49-60-p48-signed-refill/.')

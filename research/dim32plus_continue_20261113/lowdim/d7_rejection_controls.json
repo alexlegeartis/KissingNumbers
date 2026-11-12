@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "valid_baselines": [
+    471886208,
+    746325051
+  ],
+  "negative_controls": 16,
+  "controls": [
+    {
+      "case": "duplicate_selected_profile",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "incomplete_profile_domain",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "wrong_orbit_population",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "odd_moment_power",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "degree_beyond_design",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "changed_moment_coefficient",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "changed_moment_rhs",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "changed_objective",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "invalid_dual_multiplier",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "false_dual_slack",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "inflated_exact_mean",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "inflated_integral_bound",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "inflated_pole_bonus",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "norm_preserving_cross_layer_failure",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": "(0, 0, Fraction(-2376, 961))",
+      "changed_height_index": 0,
+      "new_height": "-1",
+      "minimum_squared_gap": "-169/31",
+      "all_new_norms_remain_8": true,
+      "pole_height_limit_still_satisfied": true
+    },
+    {
+      "case": "changed_actual_integral_normal",
+      "rejected": true,
+      "error_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "disabled_assertions",
+      "rejected": true,
+      "exit_code": 1
+    }
+  ]
+}

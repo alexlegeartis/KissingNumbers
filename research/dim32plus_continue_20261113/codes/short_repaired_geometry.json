@@ -1,0 +1,19 @@
+{
+  "geometry": {
+    "status": "PASS",
+    "dense61_pair_cases": 736,
+    "hexagonal_pair_types": 36,
+    "four_support_counts": {
+      "61": 8555,
+      "62": 9145,
+      "64": 10416
+    },
+    "dense61_count": 67108864,
+    "dense62_count": 100663296,
+    "owner65_scope": "The unchanged 68,224-owner BCH/affine-line certificate is inherited; all new cap/equator interactions are checked here."
+  },
+  "dimensions": {
+    "61": 88975146,
+    "62": 122539020
+  }
+}

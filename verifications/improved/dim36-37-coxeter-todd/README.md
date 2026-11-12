@@ -1,6 +1,8 @@
 # Coxeter–Todd triangle switches in dimensions 36 and 37
 
-## Current triangle-switch continuation
+**Retained construction.** The [13 November compatible-orbit exchange](../dim36-37-orbit-exchange/) raises the repository bounds to **501,822 in 36D** and **505,638 in 37D**. This package preserves its earlier exact source proofs and supplies the freshly replayed baseline.
+
+## Retained triangle-switch continuation
 
 The [7 November triangle-switch package](triangle_switch/) gives **501,813 in 36D** and **505,629 in 37D**, increasing each preceding completion by **126**. Ninety independent three-point base switches combine with 1,511 added and 1,469 removed equatorial phase orbits. Every one of the 636 latitude body orbits survives at both heights.
 
@@ -13,10 +15,10 @@ Run `python verify.py` here, or `python run_all.py --repository-only --only coxe
 
 Checkpoint: **28 October 2026**. Both new bounds pass two exact proof representations.
 
-| Dimension | Previous repository bound | Retained construction | Increase | 7 November repository result |
+| Dimension | Previous repository bound | Retained construction | Increase | Current repository result |
 |---|---:|---:|---:|---:|
-| 36 | 501,672 | **501,687** | **15** | **501,813** |
-| 37 | 505,488 | **505,503** | **15** | **505,629** |
+| 36 | 501,672 | **501,687** | **15** | **501,822** |
+| 37 | 505,488 | **505,503** | **15** | **505,638** |
 
 The fixed base has 403,704 points. Replacing 147 retained original phase orbits
 by 165 new ones gives 32,661 orbits, hence **501,687** equatorial points.

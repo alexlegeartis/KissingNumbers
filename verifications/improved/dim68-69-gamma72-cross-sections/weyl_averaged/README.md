@@ -1,11 +1,11 @@
 # Weyl-averaged affine sections of Gamma72
 
-This package proves the following improvements over the immediately preceding repository records:
+**Retained construction.** The [13 November D7 moment extension](../../dim68-69-gamma72-extended-moments/) gives the stronger current bounds shown in the last column. This package preserves the preceding Weyl-averaged proofs:
 
-| Dimension | New bound | Previous repository bound | Gain |
-|---|---:|---:|---:|
-| 68 | **471,884,288** | 471,366,656 | 517,632 |
-| 69 | **689,452,922** | 689,442,146 | 10,776 |
+| Dimension | Retained bound | Previous repository bound | Gain | Current repository bound |
+|---|---:|---:|---:|---:|
+| 68 | **471,884,288** | 471,366,656 | 517,632 | **471,886,208** |
+| 69 | **689,452,922** | 689,442,146 | 10,776 | **746,325,051** |
 
 The construction uses the same compatible six- and ten-offset geometries as the previous affine package, but averages over finitely many orientations of an actual root subsystem. It does **not** assert that the Gamma72 shell is invariant under that group. The claim is existence of a favorable orientation, not enumeration of a particular shell section.
 

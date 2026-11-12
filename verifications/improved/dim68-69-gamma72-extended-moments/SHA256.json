@@ -1,0 +1,16 @@
+{
+  "INDEPENDENT_REVIEW.md": "9effb058a0556388316550b574e14f8cd2844523514315359f3fca9a5ae5d8c5",
+  "README.md": "09ef6e22f2516e0468ff306721191a991c87475460df1c54639faf2a84e757d9",
+  "certificate68.json": "12d43962141cba0e4aa3b54478ef92d6b71c972bf1e1919d18b2bb8e530b84d7",
+  "certificate69.json": "3a05c71817f8bb93f044c8b13fd554b1f01b1fdd44444398426902bfd9d91684",
+  "d7_embedding.json": "58cf8fff959ea8b1fbc97dcc44ae254ab30ba2ba0975fb0fc7bb63c4db3ec66a",
+  "embedding.json": "5f180d5d6c737010083e72210e16b92926ec2e79ed9a0891d0960a018b2d7842",
+  "exact_orbits.py": "67d304ef6324fb2766332e56c0168027de1a9b5fe3ea1f883e76b129c97e7433",
+  "final.py": "db04120bc22b4f70196c20bc38128ab36ad8ebe1f101f9496e5b22d7dbddd282",
+  "independent_verification.json": "903a19624e5e3130dd61f50d09ac80252ecdc112861fef3355ac4b90c8b6d370",
+  "rejection_controls.json": "2320bed8e888bb8aa20a95d60ceda28eab1b0418d2ff647b759ae82de362e430",
+  "rejection_controls.py": "f0dc1f145ac070e0efb92ad290d2279f149a0e224ad56003c1cbf88523f79c95",
+  "verification.json": "3becb09b5856bfbe364da0e60090bb1fbe03d7bc21f9ac262c4e900ff27a6315",
+  "verify.py": "f999489cd14d4fb056f2536c34ef201ad5da63851495ee8e0e0076e9ca502d5e",
+  "verify_independent.py": "01bfbe99dfb3cbedcc04fceccbcb2f5ed9eecc4e5c12d7479cb8c13465e4f9dc"
+}

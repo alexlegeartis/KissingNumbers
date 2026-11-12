@@ -1,0 +1,174 @@
+MODEL D5 profiles 2167 vertices 23245
+it 0 best 4149492 slices 5
+{
+  "estimate": 4149492,
+  "iteration": 0,
+  "vertices": [
+    11622,
+    19341,
+    3903,
+    64,
+    23180
+  ],
+  "kind": "D5",
+  "dimension": 44,
+  "denominator": 16,
+  "qmax_scaled": 4.5,
+  "normals": [
+    [
+      2,
+      -2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      -2,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      -2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      -2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      2,
+      0,
+      0,
+      0
+    ]
+  ],
+  "gram": [
+    [
+      6.0,
+      -3.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      -3.0,
+      6.0,
+      -3.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -3.0,
+      6.0,
+      -3.0,
+      -3.0
+    ],
+    [
+      0.0,
+      0.0,
+      -3.0,
+      6.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -3.0,
+      0.0,
+      6.0
+    ]
+  ],
+  "slices": [
+    {
+      "profile": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "head": 0.0,
+      "scale": 1.0,
+      "weight": 2553792,
+      "q_scaled": 0.0
+    },
+    {
+      "profile": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "head": -1.0,
+      "scale": 1.0,
+      "weight": 782730,
+      "q_scaled": 1.0
+    },
+    {
+      "profile": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "head": 1.0,
+      "scale": 1.0,
+      "weight": 782730,
+      "q_scaled": 1.0
+    },
+    {
+      "profile": [
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "head": 2.0,
+      "scale": 1.0,
+      "weight": 15120,
+      "q_scaled": 4.0
+    },
+    {
+      "profile": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "head": -2.0,
+      "scale": 1.0,
+      "weight": 15120,
+      "q_scaled": 4.0
+    }
+  ],
+  "status": "Numerical discovery only; geometry and population provenance require independent exact replay"
+}

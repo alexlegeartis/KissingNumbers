@@ -3,11 +3,13 @@
 **Retained construction in 95–96D.** The nonlinear parent and sections in
 [dim88-96-z8-golay](../dim88-96-z8-golay/) supersede these two totals. The
 published (96,2^37,24) code was missed by the former linear-code comparison.
-This package remains current in 61–63D and 66–68D, and supplies the reverified
-support family used by the new 88–96D package.
+The [13 November compatible-sign-family package](../dim61-67-compatible-sign-families/)
+now supplies the current 61–67D bounds, and the [extended Gamma72 moments](../dim68-69-gamma72-extended-moments/)
+supply the current 68D bound. This package preserves earlier constructions and
+supplies the reverified support family used by the 88–96D package.
 
 Checkpoint: **28 October 2026**. This package registers eight constructions.
-The latest continuation improves all six registered values in 61–63D and 66–68D,
+The retained October continuation improved all six values in 61–63D and 66–68D,
 and the neighbouring 64–65D package uses the same shared parity proof.
 
 | Dimension | This construction | Mechanism |
@@ -28,7 +30,7 @@ unrestricted optimum is asserted.
 
 ## Replay
 
-The current 61–68D continuation uses `source/shared_parity/shared_layers.py`
+The retained 61–68D continuation uses `source/shared_parity/shared_layers.py`
 and three explicit sign-code archives. `verify_shared.py` replays all shared
 checks, the odd-phase system, every section count and the expanded layers.
 The optional `search/shared_fill.cpp` is the discovery engine; it is not a

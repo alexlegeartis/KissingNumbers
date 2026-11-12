@@ -1,13 +1,24 @@
 # Research campaigns
 
 These packages preserve construction searches, exact certificates for restricted
-families, and checks of published constructions. The November 13 campaign
-improves 69D by 7.8424% and adds smaller gains in dimensions 49–60. The November 12 campaign
+families, and checks of published constructions. The November 13 campaigns
+improve 69D first by 7.8424% and then by another 0.377%, strengthen code layers
+in 61–67D, and add smaller gains in 36–37D, 49–60D and 68D. The November 12 campaign
 improves 28D and 29D over PackingStar's November 11 release. The November 4 algebraic
 campaign improves 27D and 31D; the 43D packages record a separate discovery and
 its reproduction by the engine. The earlier lower-dimensional campaigns below
 produced no new kissing-number lower bound. Registered constructions remain in
 [`../verifications/`](../verifications/) and [`../RESULTS.md`](../RESULTS.md).
+
+## 13 November continuation in 32–48D and 61D upward
+
+[The continuation campaign](dim32plus_continue_20261113/) combines exact
+Coxeter–Todd orbit exchanges, larger compatible code-support sign families,
+and a D7 extension of the Gamma72 population model. The resulting proof packages
+register new bounds in 36–37D and 61–69D. Independent profile and geometry
+checks establish **471,886,208 in 68D** and **746,325,051 in 69D**; the two lower
+dimensions gain nine points each. The research notes also record the bounded
+normal-system, affine-slice and scalar-head searches that found no improvement.
 
 ## 13 November campaign in dimensions 32 and above
 

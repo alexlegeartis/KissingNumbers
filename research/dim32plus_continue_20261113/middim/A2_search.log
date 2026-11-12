@@ -1,0 +1,124 @@
+MODEL A2 profiles 49 vertices 3121
+it 0 best 23766960 slices 7
+{
+  "estimate": 23766960,
+  "iteration": 0,
+  "vertices": [
+    1560,
+    1144,
+    1519,
+    783,
+    1438,
+    1319,
+    447
+  ],
+  "kind": "A2",
+  "dimension": 47,
+  "denominator": 24,
+  "qmax_scaled": 8.0,
+  "normals": [
+    [
+      2,
+      -2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      -2,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "gram": [
+    [
+      6.0,
+      -3.0
+    ],
+    [
+      -3.0,
+      6.0
+    ]
+  ],
+  "slices": [
+    {
+      "profile": [
+        0,
+        0
+      ],
+      "head": 0.0,
+      "scale": 1.0,
+      "weight": 12309600,
+      "q_scaled": 0.0
+    },
+    {
+      "profile": [
+        -1,
+        1
+      ],
+      "head": 0.8164965809277261,
+      "scale": 1.0,
+      "weight": 5365440,
+      "q_scaled": 0.6666666666666669
+    },
+    {
+      "profile": [
+        0,
+        -1
+      ],
+      "head": -0.816496580927726,
+      "scale": 1.0,
+      "weight": 5365440,
+      "q_scaled": 0.6666666666666667
+    },
+    {
+      "profile": [
+        -2,
+        2
+      ],
+      "head": 1.6329931618554523,
+      "scale": 1.0,
+      "weight": 361584,
+      "q_scaled": 2.6666666666666674
+    },
+    {
+      "profile": [
+        0,
+        -2
+      ],
+      "head": -1.632993161855452,
+      "scale": 1.0,
+      "weight": 361584,
+      "q_scaled": 2.666666666666667
+    },
+    {
+      "profile": [
+        0,
+        -3
+      ],
+      "head": -2.4494897427831783,
+      "scale": 1.0,
+      "weight": 1656,
+      "q_scaled": 6.000000000000001
+    },
+    {
+      "profile": [
+        -3,
+        3
+      ],
+      "head": 2.4494897427831783,
+      "scale": 1.0,
+      "weight": 1656,
+      "q_scaled": 6.000000000000001
+    }
+  ],
+  "status": "Numerical discovery only; geometry and population provenance require independent exact replay"
+}

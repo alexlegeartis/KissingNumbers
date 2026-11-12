@@ -1,0 +1,5866 @@
+{
+  "status": "PASS",
+  "integrity": {
+    "files": 28,
+    "pinned_source_files": 9
+  },
+  "dimensions": [
+    {
+      "dimension": 61,
+      "total": 88975146,
+      "previous": 88260394,
+      "gain": 714752
+    },
+    {
+      "dimension": 62,
+      "total": 122539020,
+      "previous": 121824268,
+      "gain": 714752
+    },
+    {
+      "dimension": 63,
+      "total": 184393988,
+      "previous": 184286468,
+      "gain": 107520
+    },
+    {
+      "dimension": 64,
+      "total": 335711104,
+      "previous": 335496064,
+      "gain": 215040
+    },
+    {
+      "dimension": 65,
+      "total": 335779330,
+      "previous": 335564290,
+      "gain": 215040
+    },
+    {
+      "dimension": 66,
+      "total": 342271364,
+      "previous": 341994884,
+      "gain": 276480
+    },
+    {
+      "dimension": 67,
+      "total": 355095446,
+      "previous": 355090822,
+      "gain": 4624
+    }
+  ],
+  "families": {
+    "data/expanded66.json": {
+      "status": "PASS",
+      "certificate_sha256": "4c627b51a9fa919b397bdf4dc20418b69906247e80e112ad38216061f1f97764",
+      "retained_old_supports": 30828,
+      "new_supports": 1938,
+      "modified_old": 1792,
+      "old_new_pairs": 59744664,
+      "new_new_pairs": 1876953,
+      "old_new_repairs": 15504,
+      "new_new_repairs": 299,
+      "scalar_cpp": {
+        "status": "PASS",
+        "parent_words": 268435456,
+        "parent_minimum": 16,
+        "parent_weight16_words": 30828,
+        "old_new_pairs": 59744664,
+        "new_new_pairs": 1876953,
+        "old_new_repairs": 15504,
+        "new_new_repairs": 299
+      }
+    },
+    "data/global64.json": {
+      "status": "PASS",
+      "certificate_sha256": "8c0c35f8127c578118f1f09e5950d712a272db32f2d50f382e6fe32f46c6dbf5",
+      "retained_old_supports": 30828,
+      "new_supports": 1940,
+      "modified_old": 1792,
+      "old_new_pairs": 59806320,
+      "new_new_pairs": 1880830,
+      "old_new_repairs": 15520,
+      "new_new_repairs": 303,
+      "scalar_cpp": {
+        "status": "PASS",
+        "parent_words": 268435456,
+        "parent_minimum": 16,
+        "parent_weight16_words": 30828,
+        "old_new_pairs": 59806320,
+        "new_new_pairs": 1880830,
+        "old_new_repairs": 15520,
+        "new_new_repairs": 303
+      }
+    },
+    "data/short61_62.json": {
+      "status": "PASS",
+      "certificate_sha256": "d9f5744e5c92745ab6f5cc8bb144f0bd7862dfc4c69a3371c2759b408a24e598",
+      "retained_old_supports": 9673,
+      "new_supports": 937,
+      "modified_old": 820,
+      "old_new_pairs": 9063601,
+      "new_new_pairs": 438516,
+      "old_new_repairs": 4046,
+      "new_new_repairs": 99,
+      "scalar_cpp": {
+        "status": "PASS",
+        "parent_words": 268435456,
+        "parent_minimum": 16,
+        "parent_weight16_words": 30828,
+        "old_new_pairs": 9063601,
+        "new_new_pairs": 438516,
+        "old_new_repairs": 4046,
+        "new_new_repairs": 99
+      }
+    }
+  },
+  "independent_full_family_review": {
+    "status": "PASS",
+    "families": [
+      {
+        "certificate": "global64.json",
+        "sha256": "8c0c35f8127c578118f1f09e5950d712a272db32f2d50f382e6fe32f46c6dbf5",
+        "old_supports": 30828,
+        "new_supports": 1940,
+        "changed_pair_checks": 61687150,
+        "old_new_repairs": 15520,
+        "new_new_repairs": 303
+      },
+      {
+        "certificate": "short61_62.json",
+        "sha256": "d9f5744e5c92745ab6f5cc8bb144f0bd7862dfc4c69a3371c2759b408a24e598",
+        "old_supports": 9673,
+        "new_supports": 937,
+        "changed_pair_checks": 9502117,
+        "old_new_repairs": 4046,
+        "new_new_repairs": 99
+      }
+    ],
+    "section63": {
+      "octad": 1284508757262368,
+      "terms": {
+        "dense": 146800640,
+        "old_sparse": 35503776,
+        "new_sparse": 1986560,
+        "four_supports": 102900,
+        "poles": 112
+      },
+      "total": 184393988,
+      "explicit_sign_words_enumerated": 7643136
+    },
+    "geometry": {
+      "dense61_cases": 736,
+      "dense62_cases": 36,
+      "dense_projection_rank": 4,
+      "dense61_count": 67108864,
+      "dense62_count": 100663296,
+      "four_support_counts": {
+        "61": 8555,
+        "62": 9145,
+        "64": 10416
+      },
+      "owner65_count": 68224,
+      "notes": "65D changes the dense layer to the inherited BCH radical; all sparse interactions use only amplitudes. Owners use no weight-16 point."
+    },
+    "totals": {
+      "61": 88975146,
+      "62": 122539020,
+      "63": 184393988,
+      "64": 335711104,
+      "65": 335779330
+    },
+    "pinned_source_files": {
+      "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/code64_supports.npz": "cdbd5e5a7bbda9ddb84ee86052e2d4d00ccc331f0188de958a69ed83b0c529f6",
+      "verifications/improved/dim61-68-95-96-code-layers/source/shared_parity/dual_octads.json": "b7a608049cb57407abe234168da4ebf752e6f01418b8384cfad5971f1acdb11a"
+    },
+    "independently_checked": [
+      "Explicit RM(1,4) duals, affine phases, independently generated kernels, and every new/old and new/new support intersection.",
+      "All 72 dual-octad candidates and the selected 63D section, including explicit affine sign enumeration.",
+      "61D/62D dense geometry and cardinalities, sparse amplitude interactions, and the affine-plane quadruple design.",
+      "65D cap transfer to the changed weight-sixteen layers."
+    ],
+    "separately_replayed_inputs": [
+      "The parent [64,28,16] code minimum and exact weight-sixteen support list are replayed by check_family.cpp in the main verifier.",
+      "The unchanged 65D BCH radical and 68,224-owner certificate are replayed by replay_parents.py; this independent review checks their transfer.",
+      "The 66D and 67D retained parent supports, Netto quadruples, and 67D baseline and new subcodes are covered by the other package verifiers."
+    ],
+    "review": "No mathematical gap found in the reviewed scope. The 63D untouched sign orders may be chosen for its octad; 65D uses the separately replayed BCH dense layer."
+  },
+  "geometry": {
+    "status": "PASS",
+    "dense61_pair_cases": 736,
+    "hexagonal_pair_types": 36,
+    "four_support_counts": {
+      "61": 8555,
+      "62": 9145,
+      "64": 10416
+    },
+    "dense61_count": 67108864,
+    "dense62_count": 100663296,
+    "owner65_scope": "The unchanged 68,224-owner BCH/affine-line certificate is inherited; all new cap/equator interactions are checked here."
+  },
+  "parent_replays": {
+    "status": "PASS",
+    "owner65_points": 68224,
+    "owner65_dense_words": 268435456,
+    "netto68_blocks": 12529,
+    "distinct_triples": 50116,
+    "four_support_counts": {
+      "66": 11088,
+      "67": 11792
+    }
+  },
+  "section63": {
+    "status": "PASS",
+    "octad": 1284508757262368,
+    "total": 184393988,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35503776,
+      "new_sparse": 1986560,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "octads_checked": 72,
+    "sign_classes_independently_enumerated": 32768,
+    "previous": 184286468,
+    "gain": 107520
+  },
+  "expanded66": {
+    "status": "PASS",
+    "dimension": 66,
+    "total": 342271364,
+    "terms": {
+      "dense64": 268435456,
+      "weight16": 73658368,
+      "weight4": 177408,
+      "poles": 132
+    },
+    "previous": 341994884,
+    "gain": 276480,
+    "parent_supports_checked": 174324,
+    "retained_parent_supports": 34028,
+    "extra_supports": 3200,
+    "new_supports": 1938,
+    "extra_pairs": 6201600,
+    "maximum_intersection": 8,
+    "scalar_cpp": {
+      "status": "PASS",
+      "parent_support_pairs": 578935378,
+      "new_extra_pairs": 6201600,
+      "extra_supports": 3200
+    },
+    "input_scope": "Every retained parent-support pair is checked directly, so the inherited 73-bit code minimum is unnecessary. The unchanged Netto four-support construction is replayed by verify.py."
+  },
+  "subcode67": {
+    "status": "PASS",
+    "dimension": 67,
+    "base": 355090822,
+    "gain": 4624,
+    "total": 355095446,
+    "new_classes": 49,
+    "class_sizes": [
+      512,
+      256,
+      64,
+      256,
+      64,
+      128,
+      64,
+      64,
+      64,
+      256,
+      64,
+      256,
+      64,
+      128,
+      64,
+      128,
+      32,
+      256,
+      32,
+      256,
+      32,
+      64,
+      128,
+      32,
+      64,
+      64,
+      128,
+      64,
+      32,
+      16,
+      32,
+      32,
+      128,
+      64,
+      16,
+      32,
+      128,
+      64,
+      64,
+      64,
+      64,
+      32,
+      64,
+      64,
+      32,
+      32,
+      32,
+      32,
+      16
+    ],
+    "minimum_sign_distances": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      6,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      6,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      6,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      6
+    ],
+    "modified_full_hamming_classes": 357,
+    "changed_old_support_pairs": 15072183,
+    "new_support_pair_checks": 2069956,
+    "ten_or_nine_overlap_repairs": [
+      {
+        "new_support": 10613436243767297348,
+        "old_support": 9457141446546128960,
+        "intersection": 10,
+        "check": 9442500306224087104,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10613436243767297348,
+        "old_support": 9442573011772309572,
+        "intersection": 10,
+        "check": 9368190912439582788,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10613436243767297348,
+        "old_support": 9460515809613908298,
+        "intersection": 10,
+        "check": 9442500306224087104,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10613436243767297348,
+        "old_support": 10631450607876121680,
+        "intersection": 10,
+        "check": 10593170011017248832,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10613436243767297348,
+        "old_support": 1245535671217722628,
+        "intersection": 10,
+        "check": 1245245331327714560,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10613436243767297348,
+        "old_support": 10394906128051373445,
+        "intersection": 10,
+        "check": 1170935937543210244,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10613436243767297348,
+        "old_support": 3476937551309539108,
+        "intersection": 10,
+        "check": 1170935937543210244,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10613436243767297348,
+        "old_support": 6791428822391637316,
+        "intersection": 10,
+        "check": 1170935937543210244,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11547247143190791171,
+        "old_support": 9241551673561187379,
+        "intersection": 10,
+        "check": 9241386471939113985,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11547247143190791171,
+        "old_support": 9252646639251362817,
+        "intersection": 10,
+        "check": 9241386471939113985,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11547247143190791171,
+        "old_support": 9313734345955478529,
+        "intersection": 10,
+        "check": 9241386471955891200,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11547247143190791171,
+        "old_support": 11529796379750727682,
+        "intersection": 10,
+        "check": 11529232708089675778,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11547247143190791171,
+        "old_support": 11583328648526890497,
+        "intersection": 10,
+        "check": 9241386471939113985,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11547247143190791171,
+        "old_support": 2455605376109248582,
+        "intersection": 10,
+        "check": 2305860671285231618,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11547247143190791171,
+        "old_support": 3747047740677309451,
+        "intersection": 10,
+        "check": 2305860671234899971,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11547247143190791171,
+        "old_support": 7512021842640511362,
+        "intersection": 10,
+        "check": 2305860671251677186,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 1707569754480681,
+        "intersection": 10,
+        "check": 580568177713192,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 7743354132234308,
+        "intersection": 10,
+        "check": 7177646268219396,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 5260501999167656,
+        "intersection": 10,
+        "check": 580568177713192,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 9383746854826803204,
+        "intersection": 10,
+        "check": 7177646268219396,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 649380389495824446,
+        "intersection": 10,
+        "check": 580568177713192,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 1178131141605327372,
+        "intersection": 10,
+        "check": 7177646268219396,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 2313029524589389092,
+        "intersection": 10,
+        "check": 7177646268219396,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 65742317032612831264,
+        "intersection": 9,
+        "check": 7177637675933728,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 55923940997434736682,
+        "intersection": 9,
+        "check": 6896180147519528,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 55354446752868605988,
+        "intersection": 9,
+        "check": 5207330018828324,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 55372060944127755360,
+        "intersection": 9,
+        "check": 4802726919929888,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 55419836914653487124,
+        "intersection": 9,
+        "check": 7476730608492544,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 64710675020021637132,
+        "intersection": 9,
+        "check": 2955504705863692,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 4938777595090055208,
+        "intersection": 10,
+        "check": 580568177713192,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 110683279389963322404,
+        "intersection": 9,
+        "check": 2814801575411748,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7758214445932588,
+        "old_support": 111836482575605445120,
+        "intersection": 9,
+        "check": 3096285143891968,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2112905149801300050,
+        "old_support": 9602971878666799170,
+        "intersection": 10,
+        "check": 288384350729273410,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2112905149801300050,
+        "old_support": 2143797638347100230,
+        "intersection": 10,
+        "check": 2107689058015641664,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2112905149801300050,
+        "old_support": 2040834328345051152,
+        "intersection": 10,
+        "check": 2040834327230545920,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2112905149801300050,
+        "old_support": 1736841387322638929,
+        "intersection": 10,
+        "check": 1734589586929090624,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2112905149801300050,
+        "old_support": 1734598778461110546,
+        "intersection": 10,
+        "check": 1734598348662374416,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2112905149801300050,
+        "old_support": 1950801917152108592,
+        "intersection": 10,
+        "check": 1806651544653791232,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2112905149801300050,
+        "old_support": 2698233454759313610,
+        "intersection": 10,
+        "check": 293310154231775298,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2112905149801300050,
+        "old_support": 4990285289860629586,
+        "intersection": 10,
+        "check": 378315597198393424,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4620723060331774150,
+        "old_support": 18044228534554756,
+        "intersection": 10,
+        "check": 28725815541892,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4620723060331774150,
+        "old_support": 9263932059981217892,
+        "intersection": 10,
+        "check": 27626438131716,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4620723060331774150,
+        "old_support": 2305871202656847878,
+        "intersection": 10,
+        "check": 27626303913990,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4620723060331774150,
+        "old_support": 5845840680790269957,
+        "intersection": 10,
+        "check": 9033726181244932,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4620723060331774150,
+        "old_support": 4909529442067415250,
+        "intersection": 10,
+        "check": 4620695434027860160,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4620723060331774150,
+        "old_support": 4620985876762134218,
+        "intersection": 10,
+        "check": 4620695433893642434,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4620723060331774150,
+        "old_support": 4624091069398647238,
+        "intersection": 10,
+        "check": 4620695433893642434,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4620723060331774150,
+        "old_support": 5341341754845561026,
+        "intersection": 10,
+        "check": 4620695433893642434,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4620723060331774150,
+        "old_support": 113202510061203095552,
+        "intersection": 9,
+        "check": 28725958148096,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4620723060331774150,
+        "old_support": 110752534294140485829,
+        "intersection": 9,
+        "check": 11149743489220,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4620723060331774150,
+        "old_support": 110682796645151154372,
+        "intersection": 9,
+        "check": 1238159065284,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4620723060331774150,
+        "old_support": 111267085920193741062,
+        "intersection": 9,
+        "check": 9034688253394950,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4620723060331774150,
+        "old_support": 111256953919983592642,
+        "intersection": 9,
+        "check": 26525860626626,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4620723060331774150,
+        "old_support": 115314696453553127428,
+        "intersection": 9,
+        "check": 4611713660837429252,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7503069559382410369,
+        "old_support": 2954370849111092225,
+        "intersection": 10,
+        "check": 2305843019481940992,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7503069559382410369,
+        "old_support": 2306408434746623409,
+        "intersection": 10,
+        "check": 2305843010892006401,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7503069559382410369,
+        "old_support": 11583328648526890497,
+        "intersection": 10,
+        "check": 2305843010892006401,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7503069559382410369,
+        "old_support": 57691111778318615746,
+        "intersection": 9,
+        "check": 2314850210079638656,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7503069559382410369,
+        "old_support": 57790225614270694417,
+        "intersection": 9,
+        "check": 2305843020555617281,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7503069559382410369,
+        "old_support": 58511405176747787265,
+        "intersection": 9,
+        "check": 576531122725389313,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7503069559382410369,
+        "old_support": 7508716718244495492,
+        "intersection": 10,
+        "check": 5197226548490403968,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7503069559382410369,
+        "old_support": 6928789128036942849,
+        "intersection": 10,
+        "check": 2305843010892006401,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7503069559382410369,
+        "old_support": 6350570269857354888,
+        "intersection": 10,
+        "check": 5197226548490403968,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7503069559382410369,
+        "old_support": 5485496507870232705,
+        "intersection": 10,
+        "check": 5197226548490403968,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7503069559382410369,
+        "old_support": 5341341754845561026,
+        "intersection": 10,
+        "check": 5197226548490403968,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7503069559382410369,
+        "old_support": 71638761480799659648,
+        "intersection": 9,
+        "check": 4620695425899299968,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7503069559382410369,
+        "old_support": 71481135502977485825,
+        "intersection": 9,
+        "check": 6917531227805777921,
+        "kind": "parent"
+      },
+      {
+        "new_support": 7503069559382410369,
+        "old_support": 62951317824885293185,
+        "intersection": 9,
+        "check": 7502999178222567553,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 9224153017132875780,
+        "intersection": 10,
+        "check": 710576569352196,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 13095475685134404,
+        "intersection": 10,
+        "check": 4088276289847296,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 577180125016156172,
+        "intersection": 10,
+        "check": 710576569352196,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 10956132826457702436,
+        "intersection": 10,
+        "check": 10956131994039222304,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 11136416793932890145,
+        "intersection": 10,
+        "check": 10956131994039255040,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 1153684857734332854,
+        "intersection": 10,
+        "check": 710576569352196,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 13568504706044526624,
+        "intersection": 10,
+        "check": 10956131994039222304,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 65789716145721319940,
+        "intersection": 9,
+        "check": 10377424131489529860,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 65726098388534968357,
+        "intersection": 9,
+        "check": 10376858965853077540,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 66329020003631761508,
+        "intersection": 9,
+        "check": 10952758967226335268,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 66295385924160274520,
+        "intersection": 9,
+        "check": 10378692950728114176,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 55927433055105484836,
+        "intersection": 9,
+        "check": 578149619880460324,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 15644946554140231200,
+        "intersection": 10,
+        "check": 10956131994039222304,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 60535699832905409572,
+        "intersection": 9,
+        "check": 2817241385009188,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 120480340130108964896,
+        "intersection": 9,
+        "check": 9799839403961516032,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10956842570608574500,
+        "old_support": 121922155020801806352,
+        "intersection": 9,
+        "check": 10953460197946818560,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 9224568339920343544,
+        "intersection": 10,
+        "check": 9224497936782852264,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 9233557912598423720,
+        "intersection": 10,
+        "check": 9224497936782852264,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 65447349645754892,
+        "intersection": 10,
+        "check": 63191149487079424,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 135249298188157088,
+        "intersection": 10,
+        "check": 63191149487079424,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 9711170439258341544,
+        "intersection": 10,
+        "check": 9224497936782852264,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 641349823699633152,
+        "intersection": 10,
+        "check": 63191149487079424,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 11530482946206335145,
+        "intersection": 10,
+        "check": 9224497936782852264,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 64581689026914041864,
+        "intersection": 9,
+        "check": 9241386435416965128,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 64609767292448031752,
+        "intersection": 9,
+        "check": 9268408033179090952,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 15055674309272289282,
+        "intersection": 10,
+        "check": 63191149487079424,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 94576859379501637640,
+        "intersection": 9,
+        "check": 37295451644624904,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 102710219019200496684,
+        "intersection": 9,
+        "check": 9251519551739265064,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 101552934652710242313,
+        "intersection": 9,
+        "check": 9241527190053470216,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 101497770488436637826,
+        "intersection": 9,
+        "check": 36169534530666624,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 97297033004321259656,
+        "intersection": 9,
+        "check": 19281035938513032,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9287689086269931688,
+        "old_support": 106105231718291226656,
+        "intersection": 9,
+        "check": 9259400851108151328,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 9192539241611352,
+        "intersection": 10,
+        "check": 149602369044560,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 180293521164673236,
+        "intersection": 10,
+        "check": 149536065454160,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 581115005224620880,
+        "intersection": 10,
+        "check": 149536065454160,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 2792657511898972161,
+        "intersection": 10,
+        "check": 2486128985928368128,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 11710495050231218210,
+        "intersection": 10,
+        "check": 2485988317158473728,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 2486005943740434512,
+        "intersection": 10,
+        "check": 2485988317158473728,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 3461799305844637776,
+        "intersection": 10,
+        "check": 149536065454160,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 57502242705137205330,
+        "intersection": 9,
+        "check": 144116358789988432,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 55396539331365601360,
+        "intersection": 9,
+        "check": 36037612707807312,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 7169736609259095040,
+        "intersection": 10,
+        "check": 2485987202882895872,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 16141056869888196608,
+        "intersection": 10,
+        "check": 2305985069553057792,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 180154179535507800,
+        "intersection": 10,
+        "check": 180152783670870096,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 2306063126360015057,
+        "intersection": 10,
+        "check": 149602369044560,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 257832266493888112,
+        "intersection": 10,
+        "check": 180144056230248528,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 2504301716529348692,
+        "intersection": 10,
+        "check": 2485987134163386448,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 1335459180505538640,
+        "intersection": 10,
+        "check": 141856596820048,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 2891495888038952962,
+        "intersection": 10,
+        "check": 2305992749021691904,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 2486137853223927888,
+        "old_support": 2774932259253815296,
+        "intersection": 10,
+        "check": 2305992749021691904,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 12704656894423730696,
+        "old_support": 1208094045231939594,
+        "intersection": 10,
+        "check": 1170938240137428992,
+        "kind": "parent"
+      },
+      {
+        "new_support": 12704656894423730696,
+        "old_support": 1171519203201122888,
+        "intersection": 10,
+        "check": 1170938102682223104,
+        "kind": "parent"
+      },
+      {
+        "new_support": 12704656894423730696,
+        "old_support": 1175441746342971420,
+        "intersection": 10,
+        "check": 1170938111271632904,
+        "kind": "parent"
+      },
+      {
+        "new_support": 12704656894423730696,
+        "old_support": 12200603372260707840,
+        "intersection": 10,
+        "check": 11533718783152097792,
+        "kind": "parent"
+      },
+      {
+        "new_support": 12704656894423730696,
+        "old_support": 11542902183445400192,
+        "intersection": 10,
+        "check": 11533718783152097792,
+        "kind": "parent"
+      },
+      {
+        "new_support": 12704656894423730696,
+        "old_support": 11533718794158287369,
+        "intersection": 10,
+        "check": 11533718791741507592,
+        "kind": "parent"
+      },
+      {
+        "new_support": 12704656894423730696,
+        "old_support": 12844277227542544424,
+        "intersection": 10,
+        "check": 1170938111271632904,
+        "kind": "parent"
+      },
+      {
+        "new_support": 12704656894423730696,
+        "old_support": 56650797511865796608,
+        "intersection": 9,
+        "check": 1157425242228393984,
+        "kind": "parent"
+      },
+      {
+        "new_support": 12704656894423730696,
+        "old_support": 55363324306225375744,
+        "intersection": 9,
+        "check": 22520334620035584,
+        "kind": "parent"
+      },
+      {
+        "new_support": 12704656894423730696,
+        "old_support": 17588815079221500672,
+        "intersection": 10,
+        "check": 11533718783152097792,
+        "kind": "parent"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 6900090451551266,
+        "intersection": 10,
+        "check": 144585783263266,
+        "kind": "parent"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 9510785269305890,
+        "intersection": 10,
+        "check": 431008558289440,
+        "kind": "parent"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 18036253522546698,
+        "intersection": 10,
+        "check": 3848295043074,
+        "kind": "parent"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 36465303944895024,
+        "intersection": 10,
+        "check": 432108074045472,
+        "kind": "parent"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 9512632105780335137,
+        "intersection": 10,
+        "check": 431008558289440,
+        "kind": "parent"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 1226108849029235202,
+        "intersection": 10,
+        "check": 3850442915842,
+        "kind": "parent"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 2306137135023669510,
+        "intersection": 10,
+        "check": 3850442915842,
+        "kind": "parent"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 5332692986692834016,
+        "intersection": 10,
+        "check": 431008558289440,
+        "kind": "parent"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 110680914142584964627,
+        "intersection": 9,
+        "check": 432108074500098,
+        "kind": "parent"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 119922149156662084128,
+        "intersection": 9,
+        "check": 293571756294688,
+        "kind": "parent"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 6918031507681316960,
+        "intersection": 10,
+        "check": 291372733698048,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 10394452525821575715,
+        "intersection": 10,
+        "check": 142386760073760,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 1422357882884120,
+        "intersection": 10,
+        "check": 291372733698048,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 2685651656983202,
+        "intersection": 10,
+        "check": 433757337174050,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 324568413639479808,
+        "intersection": 10,
+        "check": 291372733628928,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 9150722038384422,
+        "intersection": 10,
+        "check": 2750927159810,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 725373116060676098,
+        "intersection": 10,
+        "check": 292472241131522,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 434859001205282,
+        "old_support": 72799214933072418,
+        "intersection": 10,
+        "check": 142936511812130,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 11835464986266706436,
+        "old_support": 414477089387840004,
+        "intersection": 10,
+        "check": 288234991094071812,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11835464986266706436,
+        "old_support": 297242190988460708,
+        "intersection": 10,
+        "check": 288234991094071812,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11835464986266706436,
+        "old_support": 10664528532555971142,
+        "intersection": 10,
+        "check": 288234991094071812,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11835464986266706436,
+        "old_support": 12123972397489528832,
+        "intersection": 10,
+        "check": 11547229995172634624,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11835464986266706436,
+        "old_support": 11838874629806497812,
+        "intersection": 10,
+        "check": 11547229995172634624,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11835464986266706436,
+        "old_support": 11547815004217549056,
+        "intersection": 10,
+        "check": 11547229995172634624,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11835464986266706436,
+        "old_support": 11691424356676150792,
+        "intersection": 10,
+        "check": 11547229995172634624,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11835464986266706436,
+        "old_support": 7210269817654379013,
+        "intersection": 10,
+        "check": 288234991094071812,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11835464986266706436,
+        "old_support": 113274833118000054276,
+        "intersection": 9,
+        "check": 2594078404068245508,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11835464986266706436,
+        "old_support": 110986784191780243468,
+        "intersection": 9,
+        "check": 306249379704995840,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11835464986266706436,
+        "old_support": 101480807436730376704,
+        "intersection": 9,
+        "check": 9223372801392517632,
+        "kind": "parent"
+      },
+      {
+        "new_support": 11835464986266706436,
+        "old_support": 101475157942477005441,
+        "intersection": 9,
+        "check": 18019357586104832,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 2184843960246640640,
+        "intersection": 10,
+        "check": 1441750019515383808,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 10665122777924682761,
+        "intersection": 10,
+        "check": 1153519677589193728,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 1478069088409455104,
+        "intersection": 10,
+        "check": 1441750019515383808,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 2640235318734623744,
+        "intersection": 10,
+        "check": 2594073422007632896,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 2342612914114659622,
+        "intersection": 10,
+        "check": 2342469975455040512,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 3494815630174749840,
+        "intersection": 10,
+        "check": 2341871843277538304,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 3819721001225453568,
+        "intersection": 10,
+        "check": 1441750019515383808,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 6955810834050974784,
+        "intersection": 10,
+        "check": 2341871843277538304,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 94287502580814189568,
+        "intersection": 9,
+        "check": 1477180712274101248,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 92702165140028687392,
+        "intersection": 9,
+        "check": 288230417625023488,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 1478307851819058184,
+        "intersection": 10,
+        "check": 1477180680596652032,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 2414531939658367252,
+        "intersection": 10,
+        "check": 2341871813214863360,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 3459725494502326274,
+        "intersection": 10,
+        "check": 3459362650294353920,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 1477796722804622848,
+        "intersection": 10,
+        "check": 1441750049578058752,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 2614938343136051200,
+        "intersection": 10,
+        "check": 2594671524122460160,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 3783164476959001760,
+        "intersection": 10,
+        "check": 2630102217415459840,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 7638703143151080512,
+        "intersection": 10,
+        "check": 2306441182196270080,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3783621862792922112,
+        "old_support": 10714063552850732033,
+        "intersection": 10,
+        "check": 1188950340819518464,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 9224568339920343544,
+        "intersection": 10,
+        "check": 70403137491280,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 5137234315465552,
+        "intersection": 10,
+        "check": 70403137491280,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 1731713256692666706,
+        "intersection": 10,
+        "check": 70403137491280,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 65721101972985366548,
+        "intersection": 9,
+        "check": 10380797175482564624,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 64563679196875120906,
+        "intersection": 9,
+        "check": 9223442405901222146,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 17298328368022206531,
+        "intersection": 10,
+        "check": 14992483159785209858,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 15055674309272289282,
+        "intersection": 10,
+        "check": 14992483159785209858,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 15137004102012502018,
+        "intersection": 10,
+        "check": 14992483159785209858,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 15280713750685876498,
+        "intersection": 10,
+        "check": 14992483159785209858,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 4683818964479006036,
+        "intersection": 10,
+        "check": 70403137491280,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 102637106984921481297,
+        "intersection": 9,
+        "check": 10376363910474383440,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 106068989822397469200,
+        "intersection": 9,
+        "check": 13835128424026755088,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 106073985768915075392,
+        "intersection": 9,
+        "check": 13835058089675850048,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 96953563181505454353,
+        "intersection": 9,
+        "check": 4611686053089509648,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 108397210384577218832,
+        "intersection": 9,
+        "check": 13839632058013597952,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14992553562922701138,
+        "old_support": 99191781964670849282,
+        "intersection": 9,
+        "check": 4616189652448317698,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2312055593608708532,
+        "old_support": 149465686853337528,
+        "intersection": 10,
+        "check": 565423854617008,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2312055593608708532,
+        "old_support": 289921772940202480,
+        "intersection": 10,
+        "check": 565423854617008,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2312055593608708532,
+        "old_support": 1153684857734332854,
+        "intersection": 10,
+        "check": 565423854617008,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2312055593608708532,
+        "old_support": 2403814236994412804,
+        "intersection": 10,
+        "check": 2311490375912521732,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2312055593608708532,
+        "old_support": 2306408434746623409,
+        "intersection": 10,
+        "check": 565423854617008,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2312055593608708532,
+        "old_support": 2311499137648067108,
+        "intersection": 10,
+        "check": 2311490169754091524,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2312055593608708532,
+        "old_support": 11571455602982914068,
+        "intersection": 10,
+        "check": 2311490169754091524,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2312055593608708532,
+        "old_support": 55344474549305509552,
+        "intersection": 9,
+        "check": 1691323761459376,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2312055593608708532,
+        "old_support": 55340806269278716348,
+        "intersection": 9,
+        "check": 565217696186800,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2312055593608708532,
+        "old_support": 55340938386867626416,
+        "intersection": 9,
+        "check": 565423955247408,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2312055593608708532,
+        "old_support": 58894137750980694416,
+        "intersection": 9,
+        "check": 2310912032695648656,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2312055593608708532,
+        "old_support": 57663141849937772688,
+        "intersection": 9,
+        "check": 2311472508848603280,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2312055593608708532,
+        "old_support": 7508716718244495492,
+        "intersection": 10,
+        "check": 2311490169754091524,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2312055593608708532,
+        "old_support": 63415755968848330976,
+        "intersection": 9,
+        "check": 2310911826637881376,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4639311253452360026,
+        "old_support": 32656643711863050,
+        "intersection": 10,
+        "check": 27026001179445512,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4639311253452360026,
+        "old_support": 9460515809613908298,
+        "intersection": 10,
+        "check": 18015503389821194,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4639311253452360026,
+        "old_support": 1206965805041855770,
+        "intersection": 10,
+        "check": 18015503389821208,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4639311253452360026,
+        "old_support": 6945443566361772120,
+        "intersection": 10,
+        "check": 4621295750062538832,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4639311253452360026,
+        "old_support": 4909529442067415250,
+        "intersection": 10,
+        "check": 4621295750062538832,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4639311253452360026,
+        "old_support": 4621366672052734032,
+        "intersection": 10,
+        "check": 4621295750062538832,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4639311253452360026,
+        "old_support": 4621313621423690068,
+        "intersection": 10,
+        "check": 4621295754349117712,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4639311253452360026,
+        "old_support": 5206197527245753131,
+        "intersection": 10,
+        "check": 18049588250282250,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4639311253452360026,
+        "old_support": 106167897202480912656,
+        "intersection": 9,
+        "check": 27061184477792528,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4639311253452360026,
+        "old_support": 98151490158766129416,
+        "intersection": 9,
+        "check": 4620732801182859528,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 3982521313398930,
+        "intersection": 10,
+        "check": 1132501274722322,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 9296852405418721299,
+        "intersection": 10,
+        "check": 1132503453663234,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 326515948815188264,
+        "intersection": 10,
+        "check": 290482745082183712,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 295056713459010594,
+        "intersection": 10,
+        "check": 2252368930471970,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 317504485133975604,
+        "intersection": 10,
+        "check": 290482745082183712,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 1444533483832680480,
+        "intersection": 10,
+        "check": 3380467860570112,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 3027552000623854098,
+        "intersection": 10,
+        "check": 1132501274722322,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 55376280315472707602,
+        "intersection": 9,
+        "check": 21511602194,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 4901207500540346482,
+        "intersection": 10,
+        "check": 289362877426434064,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 61251211686566756378,
+        "intersection": 9,
+        "check": 2256751912091666,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 110979398017036388354,
+        "intersection": 9,
+        "check": 289362875277967362,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 110975497033566191648,
+        "intersection": 9,
+        "check": 290484941926498336,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 110972147991442555041,
+        "intersection": 9,
+        "check": 291613043001917472,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 111005568613770403874,
+        "intersection": 9,
+        "check": 288230949529911330,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 120266376802127122488,
+        "intersection": 9,
+        "check": 290482727902314544,
+        "kind": "parent"
+      },
+      {
+        "new_support": 291615246356906034,
+        "old_support": 110825712814541313060,
+        "intersection": 9,
+        "check": 1133046769188864,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1351091477749432328,
+        "old_support": 189336766771101824,
+        "intersection": 10,
+        "check": 180153366477799424,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1351091477749432328,
+        "old_support": 180153377483989001,
+        "intersection": 10,
+        "check": 180153366477799424,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1351091477749432328,
+        "old_support": 847037955586409472,
+        "intersection": 10,
+        "check": 198167215734784000,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1351091477749432328,
+        "old_support": 1208094045231939594,
+        "intersection": 10,
+        "check": 1188952509311352840,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1351091477749432328,
+        "old_support": 1171519203201122888,
+        "intersection": 10,
+        "check": 1152924262014648328,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1351091477749432328,
+        "old_support": 1175441746342971420,
+        "intersection": 10,
+        "check": 1170938111271632904,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1351091477749432328,
+        "old_support": 12844277227542544424,
+        "intersection": 10,
+        "check": 1170938111271632904,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1351091477749432328,
+        "old_support": 65752632119270703136,
+        "intersection": 9,
+        "check": 36031589889605632,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1351091477749432328,
+        "old_support": 58835027783709623624,
+        "intersection": 9,
+        "check": 1188950337164148744,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1351091477749432328,
+        "old_support": 6235249662547202304,
+        "intersection": 10,
+        "check": 1188961332276232192,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 1425053782721615,
+        "intersection": 10,
+        "check": 1143492898209859,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 9235783359005805002,
+        "intersection": 10,
+        "check": 9007199791694026,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 45177288182374595,
+        "intersection": 10,
+        "check": 9007199624003713,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 91779545379881034,
+        "intersection": 10,
+        "check": 1143492093116490,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 153122663786840217,
+        "intersection": 10,
+        "check": 9007199355633800,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 874916724401668737,
+        "intersection": 10,
+        "check": 1143492462149633,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 1154100181730938954,
+        "intersection": 10,
+        "check": 1143492730503176,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 6931042026454696097,
+        "intersection": 10,
+        "check": 9007199624003713,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 112989704942770651218,
+        "intersection": 9,
+        "check": 17592555339842,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 94585742866404995081,
+        "intersection": 9,
+        "check": 10150691347742729,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 94549696498419007691,
+        "intersection": 9,
+        "check": 10133099161616587,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 93392289532616310921,
+        "intersection": 9,
+        "check": 1143492898390152,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 92247424681753936066,
+        "intersection": 9,
+        "check": 9024791709417666,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 115297797552656646475,
+        "intersection": 9,
+        "check": 1125900007538763,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 9007543508091086,
+        "intersection": 10,
+        "check": 9007199791694026,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 48431848774238666,
+        "intersection": 10,
+        "check": 10150691448291522,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 4613148369702077449,
+        "intersection": 10,
+        "check": 805552137,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 1716510255137347,
+        "intersection": 10,
+        "check": 1143492898209859,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 1306043893382451435,
+        "intersection": 10,
+        "check": 9007199355470026,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 9809051099041335498,
+        "intersection": 10,
+        "check": 100892746,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 2311490119162576913,
+        "intersection": 10,
+        "check": 1143492462149633,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 10150692253843659,
+        "old_support": 388457458899017857,
+        "intersection": 10,
+        "check": 1143492898373633,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 76949355710418050,
+        "old_support": 40607172109831434,
+        "intersection": 10,
+        "check": 4573968448129026,
+        "kind": "parent"
+      },
+      {
+        "new_support": 76949355710418050,
+        "old_support": 99968748361876608,
+        "intersection": 10,
+        "check": 72375387333591168,
+        "kind": "parent"
+      },
+      {
+        "new_support": 76949355710418050,
+        "old_support": 76772368757345922,
+        "intersection": 10,
+        "check": 76631562414753794,
+        "kind": "parent"
+      },
+      {
+        "new_support": 76949355710418050,
+        "old_support": 74627189311576197,
+        "intersection": 10,
+        "check": 72375387333591168,
+        "kind": "parent"
+      },
+      {
+        "new_support": 76949355710418050,
+        "old_support": 216579090928369824,
+        "intersection": 10,
+        "check": 72375387333591168,
+        "kind": "parent"
+      },
+      {
+        "new_support": 76949355710418050,
+        "old_support": 1158624707127323650,
+        "intersection": 10,
+        "check": 4575102243997698,
+        "kind": "parent"
+      },
+      {
+        "new_support": 76949355710418050,
+        "old_support": 12110566700975557698,
+        "intersection": 10,
+        "check": 4573968376826882,
+        "kind": "parent"
+      },
+      {
+        "new_support": 76949355710418050,
+        "old_support": 4976795518979342482,
+        "intersection": 10,
+        "check": 72375387333591168,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1306061774304841312,
+        "old_support": 9224656556635195425,
+        "intersection": 10,
+        "check": 17882366871552,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1306061774304841312,
+        "old_support": 14126806993545728,
+        "intersection": 10,
+        "check": 9007480845634048,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1306061774304841312,
+        "old_support": 1911795984852617216,
+        "intersection": 10,
+        "check": 1297054566191204352,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1306061774304841312,
+        "old_support": 1594275651136015972,
+        "intersection": 10,
+        "check": 1306044166815354432,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1306061774304841312,
+        "old_support": 1306125285863327336,
+        "intersection": 10,
+        "check": 1306043891937969760,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1306061774304841312,
+        "old_support": 1306325516166371042,
+        "intersection": 10,
+        "check": 1306043894084929120,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1306061774304841312,
+        "old_support": 3629919450599262048,
+        "intersection": 10,
+        "check": 1306043900527380064,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1306061774304841312,
+        "old_support": 4683765918682582096,
+        "intersection": 10,
+        "check": 17873777461248,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1306061774304841312,
+        "old_support": 94692686102783854192,
+        "intersection": 9,
+        "check": 153122672945923616,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1306061774304841312,
+        "old_support": 93575815056327475936,
+        "intersection": 9,
+        "check": 1306061492713947712,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1306061774304841312,
+        "old_support": 94118478062739785248,
+        "intersection": 9,
+        "check": 1306043900795815456,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1306061774304841312,
+        "old_support": 92242746332785680998,
+        "intersection": 9,
+        "check": 17596752069216,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1306061774304841312,
+        "old_support": 92243589600757171712,
+        "intersection": 9,
+        "check": 9024804594648576,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1306061774304841312,
+        "old_support": 98079392762190368360,
+        "intersection": 9,
+        "check": 1161928712453623360,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 1729806712433148616,
+        "intersection": 10,
+        "check": 1153343751442268288,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 1445955140801396880,
+        "intersection": 10,
+        "check": 1441433390103527568,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 11964032312714208404,
+        "intersection": 10,
+        "check": 2594214122864255120,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 2747688474166438161,
+        "intersection": 10,
+        "check": 2594495632192315408,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 2756450370693148688,
+        "intersection": 10,
+        "check": 2450169312114647040,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 3496205401740435584,
+        "intersection": 10,
+        "check": 2306124527148998784,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 3963941730509791248,
+        "intersection": 10,
+        "check": 2738399679675899920,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 5909074739523682466,
+        "intersection": 10,
+        "check": 1297388579353919488,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 95548380723776991378,
+        "intersection": 9,
+        "check": 2738188573449789584,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 93675295595678540938,
+        "intersection": 9,
+        "check": 1441433390097244288,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 100592753121750459600,
+        "intersection": 9,
+        "check": 3747065258724827280,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 100322651526605701648,
+        "intersection": 9,
+        "check": 3459186760653864976,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 4342596225276190864,
+        "intersection": 10,
+        "check": 1441151889357537424,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 3747839912444567600,
+        "intersection": 10,
+        "check": 3747276399308840976,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 5913718926317324419,
+        "intersection": 10,
+        "check": 1297247798925852800,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 11673825049015529664,
+        "intersection": 10,
+        "check": 2450310075378573440,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 3972262858109624336,
+        "intersection": 10,
+        "check": 2738258950775906320,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 146864010240197260,
+        "intersection": 10,
+        "check": 144326302909333632,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 3783209513049023504,
+        "intersection": 10,
+        "check": 3458905259901591552,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3891602702218174608,
+        "old_support": 432838388129792400,
+        "intersection": 10,
+        "check": 432697442316583056,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 1800048766222465,
+        "old_support": 1343190943008193,
+        "intersection": 10,
+        "check": 1201903698575360,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1800048766222465,
+        "old_support": 1743149006914056,
+        "intersection": 10,
+        "check": 1724180282736640,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1800048766222465,
+        "old_support": 5750654691836033,
+        "intersection": 10,
+        "check": 1235988542259201,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1800048766222465,
+        "old_support": 9232978498162264193,
+        "intersection": 10,
+        "check": 599244595527681,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1800048766222465,
+        "old_support": 40325830228451459,
+        "intersection": 10,
+        "check": 1200804170694784,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1800048766222465,
+        "old_support": 1009480329125691408,
+        "intersection": 10,
+        "check": 638824867168256,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1800048766222465,
+        "old_support": 1243592741851140096,
+        "intersection": 10,
+        "check": 598145117585408,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1800048766222465,
+        "old_support": 6918729874765136037,
+        "intersection": 10,
+        "check": 1200812760105088,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 9303887082386751626,
+        "intersection": 10,
+        "check": 9296568731381530626,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 9332703304855072770,
+        "intersection": 10,
+        "check": 9296599534886977536,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 11025951538060460550,
+        "intersection": 10,
+        "check": 10449485837941866500,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 1590931774283203661,
+        "intersection": 10,
+        "check": 1301575493862047756,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 1302019696878436366,
+        "intersection": 10,
+        "check": 148658387301711882,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 1373644366484097084,
+        "intersection": 10,
+        "check": 1229526695917125644,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 11755535227437564162,
+        "intersection": 10,
+        "check": 9439558015255592962,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 65938635909641622528,
+        "intersection": 9,
+        "check": 10596978721443299328,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 67085769658154893324,
+        "intersection": 9,
+        "check": 9439553617209081868,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 15154647984298278924,
+        "intersection": 10,
+        "check": 1301575493862047756,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 93415418309730385926,
+        "intersection": 9,
+        "check": 1154091402158686214,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 93602996131058417798,
+        "intersection": 9,
+        "check": 1369133890614067204,
+        "kind": "parent"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 12827415045742871572,
+        "intersection": 10,
+        "check": 10377454649362874372,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 10890839838374780996,
+        "intersection": 10,
+        "check": 10592475121815928836,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 15138005729098612748,
+        "intersection": 10,
+        "check": 10381923047438286860,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 1229531095862607886,
+        "intersection": 10,
+        "check": 76609589356789770,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 113834667911710986,
+        "intersection": 10,
+        "check": 5669103427649546,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 10540116416756204166,
+        "intersection": 10,
+        "check": 10521534635886788612,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 9878853059906502666,
+        "intersection": 10,
+        "check": 9295478028731678722,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 10598144225243578382,
+        "old_support": 220725121030574123,
+        "intersection": 10,
+        "check": 148658387301711882,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 37737025889796674,
+        "intersection": 10,
+        "check": 36029484213895746,
+        "kind": "parent"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 90107589795955266,
+        "intersection": 10,
+        "check": 90072130003665474,
+        "kind": "parent"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 128493898259038488,
+        "intersection": 10,
+        "check": 126242081122811904,
+        "kind": "parent"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 144124174249132642,
+        "intersection": 10,
+        "check": 154644513346,
+        "kind": "parent"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 414477089387840004,
+        "intersection": 10,
+        "check": 126242098293768192,
+        "kind": "parent"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 585960674518795970,
+        "intersection": 10,
+        "check": 137456419394,
+        "kind": "parent"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 10502535639755667522,
+        "intersection": 10,
+        "check": 126101356510445634,
+        "kind": "parent"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 7048276924854075393,
+        "intersection": 10,
+        "check": 126242081105674240,
+        "kind": "parent"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 95170349368051665408,
+        "intersection": 9,
+        "check": 18014965454242304,
+        "kind": "parent"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 101569753469230957568,
+        "intersection": 9,
+        "check": 108086545701044224,
+        "kind": "parent"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 243335260442624707,
+        "intersection": 10,
+        "check": 90072129986527810,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 14501804264311130624,
+        "intersection": 10,
+        "check": 90212871769850368,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 127244917340176462,
+        "intersection": 10,
+        "check": 90072009752969282,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 36310838959580258,
+        "intersection": 10,
+        "check": 36029363980337218,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 379011695987311104,
+        "intersection": 10,
+        "check": 90212734348197888,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 126277413792547344,
+        "intersection": 10,
+        "check": 126242081105674240,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 38281576212595522,
+        "intersection": 10,
+        "check": 36029363980337218,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 126242235750187586,
+        "old_support": 3499447049664335938,
+        "intersection": 10,
+        "check": 140758988881986,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 2395915212856821320,
+        "old_support": 92464740405674796,
+        "intersection": 10,
+        "check": 90072130087092744,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2395915212856821320,
+        "old_support": 126101488153477640,
+        "intersection": 10,
+        "check": 90072130087092744,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2395915212856821320,
+        "old_support": 2954361841427975376,
+        "intersection": 10,
+        "check": 210994988096,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2395915212856821320,
+        "old_support": 2595199359977591873,
+        "intersection": 10,
+        "check": 2305843082836836416,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2395915212856821320,
+        "old_support": 2400709044357899784,
+        "intersection": 10,
+        "check": 2395915139300786688,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2395915212856821320,
+        "old_support": 11556307086268302912,
+        "intersection": 10,
+        "check": 2323857481279209536,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2395915212856821320,
+        "old_support": 3602901783166846024,
+        "intersection": 10,
+        "check": 73556034632,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2395915212856821320,
+        "old_support": 64636238137954730048,
+        "intersection": 9,
+        "check": 72057731582328896,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2395915212856821320,
+        "old_support": 55412362606880694344,
+        "intersection": 9,
+        "check": 72057800267726920,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2395915212856821320,
+        "old_support": 4702359581379068490,
+        "intersection": 10,
+        "check": 90072130087092744,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6917531931242801682,
+        "old_support": 2323860178315139202,
+        "intersection": 10,
+        "check": 2766028539904,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6917531931242801682,
+        "old_support": 2305871202656847878,
+        "intersection": 10,
+        "check": 2305843576352933888,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6917531931242801682,
+        "old_support": 2451647717250828818,
+        "intersection": 10,
+        "check": 567005022722,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6917531931242801682,
+        "old_support": 8151656630570854403,
+        "intersection": 10,
+        "check": 6917529594646104064,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6917531931242801682,
+        "old_support": 7210269738063438426,
+        "intersection": 10,
+        "check": 6917531364237778960,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6917531931242801682,
+        "old_support": 13837312202430130960,
+        "intersection": 10,
+        "check": 4611688217585134096,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6917531931242801682,
+        "old_support": 4612005031666001424,
+        "intersection": 10,
+        "check": 154820420112,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6917531931242801682,
+        "old_support": 5224249097727517232,
+        "intersection": 10,
+        "check": 4611688355026182656,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 9263932059981217892,
+        "intersection": 10,
+        "check": 4513632712949764,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 9799849286171475972,
+        "intersection": 10,
+        "check": 576470647950065668,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 11674466579456229910,
+        "intersection": 10,
+        "check": 9224506732890849284,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 15876877690962724096,
+        "intersection": 10,
+        "check": 14700875083646779392,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 14123509708728344588,
+        "intersection": 10,
+        "check": 9223381932501925892,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 5556598752222926848,
+        "intersection": 10,
+        "check": 5482006783857803264,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 5491022856821293056,
+        "intersection": 10,
+        "check": 5482006783857803264,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 5482042004804255877,
+        "intersection": 10,
+        "check": 5482006783857803264,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 69469190834197627904,
+        "intersection": 9,
+        "check": 14128917931004264448,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 69482672083545161920,
+        "intersection": 9,
+        "check": 14124423264875315200,
+        "kind": "parent"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 14268531203122233348,
+        "intersection": 10,
+        "check": 4901043394008088580,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 4977956578228469764,
+        "intersection": 10,
+        "check": 4905546031554396164,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 4937080988244158476,
+        "intersection": 10,
+        "check": 4901043394008088580,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 9804487503091744832,
+        "intersection": 10,
+        "check": 9799842684805332992,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 7801361556182189573,
+        "intersection": 10,
+        "check": 4901043394008088580,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 14715538308189409312,
+        "intersection": 10,
+        "check": 9804345322351640576,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 10958434508309283200,
+        "intersection": 10,
+        "check": 9804345322351640576,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 14705388716359729156,
+        "old_support": 9804908293780979734,
+        "intersection": 10,
+        "check": 580973285496373252,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 4636456187104755969,
+        "old_support": 92367824664297729,
+        "intersection": 10,
+        "check": 20266215788380417,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4636456187104755969,
+        "old_support": 146367264667124001,
+        "intersection": 10,
+        "check": 2252076051103745,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4636456187104755969,
+        "old_support": 10378545421018110213,
+        "intersection": 10,
+        "check": 2251877408964864,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4636456187104755969,
+        "old_support": 6924286626525577497,
+        "intersection": 10,
+        "check": 4618441418154311681,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4636456187104755969,
+        "old_support": 4959167385325143040,
+        "intersection": 10,
+        "check": 4634204318285824000,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4636456187104755969,
+        "old_support": 4636544147832971456,
+        "intersection": 10,
+        "check": 4634204378432012288,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4636456187104755969,
+        "old_support": 4634491913590833665,
+        "intersection": 10,
+        "check": 4634204309695791105,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4636456187104755969,
+        "old_support": 5220798238504517890,
+        "intersection": 10,
+        "check": 4634204318285693184,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4636456187104755969,
+        "old_support": 94563321995723833344,
+        "intersection": 9,
+        "check": 22518351666380800,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4636456187104755969,
+        "old_support": 92825944064496148481,
+        "intersection": 9,
+        "check": 6755744112345089,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4636456187104755969,
+        "old_support": 97439901733802344449,
+        "intersection": 9,
+        "check": 4629700512500023297,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4636456187104755969,
+        "old_support": 96852303444110213144,
+        "intersection": 9,
+        "check": 4618441513431990272,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4636456187104755969,
+        "old_support": 96976011133875978496,
+        "intersection": 9,
+        "check": 4634204369825300736,
+        "kind": "parent"
+      },
+      {
+        "new_support": 4636456187104755969,
+        "old_support": 97062705353856286785,
+        "intersection": 9,
+        "check": 4611686303254347776,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 416587982825341204,
+        "intersection": 10,
+        "check": 396321715682033664,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 9548235392608651281,
+        "intersection": 10,
+        "check": 324264671265701905,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 324405000868545080,
+        "intersection": 10,
+        "check": 324264121644154896,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 649926822894878743,
+        "intersection": 10,
+        "check": 648519445855141909,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 648537064482219015,
+        "intersection": 10,
+        "check": 72058694222807045,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 977282527907614855,
+        "intersection": 10,
+        "check": 936749822006853637,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 4116304902827343879,
+        "intersection": 10,
+        "check": 648523843901652997,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 56240974695718125613,
+        "intersection": 9,
+        "check": 900724873813360641,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 56216188466967413251,
+        "intersection": 9,
+        "check": 864697175903371265,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 56295206998927016465,
+        "intersection": 9,
+        "check": 360288520484487185,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 55970742221184434179,
+        "intersection": 9,
+        "check": 612491199128797187,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 55736555052967404586,
+        "intersection": 9,
+        "check": 396322814524653570,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 55376829676248973382,
+        "intersection": 9,
+        "check": 36033195201871878,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 5656598649291948114,
+        "intersection": 10,
+        "check": 900724873276440594,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 113923636716848087058,
+        "intersection": 9,
+        "check": 936748723164217362,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 111006130993165762839,
+        "intersection": 9,
+        "check": 324259173843861525,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 110808820884363542550,
+        "intersection": 9,
+        "check": 108088040460648454,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 111653243061994373376,
+        "intersection": 9,
+        "check": 396317867391401984,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 120984704857051054597,
+        "intersection": 9,
+        "check": 936753121076527108,
+        "kind": "parent"
+      },
+      {
+        "new_support": 972783567499247639,
+        "old_support": 120518577829190918150,
+        "intersection": 9,
+        "check": 612489549995655170,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 81235288210543120,
+        "intersection": 10,
+        "check": 158398679355904,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 326299871365858240,
+        "intersection": 10,
+        "check": 289074801115660992,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 292927577687856200,
+        "intersection": 10,
+        "check": 288388707721936960,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 9656562371791180512,
+        "intersection": 10,
+        "check": 289074801115660992,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 867946232663638721,
+        "intersection": 10,
+        "check": 288951655779795648,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 1441996315926203076,
+        "intersection": 10,
+        "check": 289074802726011072,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 2306287282572824578,
+        "intersection": 10,
+        "check": 158400289705984,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 56223219292612074056,
+        "intersection": 9,
+        "check": 281544518275648,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 55632966859725475905,
+        "intersection": 9,
+        "check": 288230446263963648,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 4630421939112915072,
+        "intersection": 10,
+        "check": 158400289705984,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 94576876474039538240,
+        "intersection": 9,
+        "check": 140807029920320,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 93459174535152537984,
+        "intersection": 9,
+        "check": 439806278504576,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 93116865701371712322,
+        "intersection": 9,
+        "check": 288670181876826688,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 92234450532080588804,
+        "intersection": 9,
+        "check": 721350259900416,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 97133865535920214016,
+        "intersection": 9,
+        "check": 288248038416453632,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 97133800144253518400,
+        "intersection": 9,
+        "check": 288388706396799552,
+        "kind": "parent"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 565494537262768,
+        "intersection": 10,
+        "check": 563020283777664,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 4324458946954854596,
+        "intersection": 10,
+        "check": 289074801400611008,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 338281313997951048,
+        "intersection": 10,
+        "check": 439873689358336,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 432820570749715264,
+        "intersection": 10,
+        "check": 288670181121589312,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 4612530513859318401,
+        "intersection": 10,
+        "check": 563020283777664,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 18740189463845506,
+        "intersection": 10,
+        "check": 721348347564672,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 290922119997562944,
+        "intersection": 10,
+        "check": 288388707721936960,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 289233201405366976,
+        "old_support": 9585357729770508992,
+        "intersection": 10,
+        "check": 288793327716008640,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 38314691667496992,
+        "intersection": 10,
+        "check": 18700564758560,
+        "kind": "parent"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 72428207580053554,
+        "intersection": 10,
+        "check": 18691706388530,
+        "kind": "parent"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 164944907601255442,
+        "intersection": 10,
+        "check": 164381936155169792,
+        "kind": "parent"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 9387896084896429082,
+        "intersection": 10,
+        "check": 164383035674858496,
+        "kind": "parent"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 177910466813629491,
+        "intersection": 10,
+        "check": 164381936154842130,
+        "kind": "parent"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 594493851511932004,
+        "intersection": 10,
+        "check": 18700564758560,
+        "kind": "parent"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 2471386038507935378,
+        "intersection": 10,
+        "check": 162130145199522834,
+        "kind": "parent"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 55918945331872633618,
+        "intersection": 9,
+        "check": 2252358436261906,
+        "kind": "parent"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 58954372030463758358,
+        "intersection": 9,
+        "check": 146368096259543058,
+        "kind": "parent"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 6196972372009222432,
+        "intersection": 10,
+        "check": 18700564758560,
+        "kind": "parent"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 92828214765388176416,
+        "intersection": 9,
+        "check": 18033090483983392,
+        "kind": "parent"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 92399246423886939168,
+        "intersection": 9,
+        "check": 164400086686630944,
+        "kind": "parent"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 4965236191298655264,
+        "intersection": 10,
+        "check": 18031999554225184,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 20355259461606496,
+        "intersection": 10,
+        "check": 2270491520077856,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 9820679546801574962,
+        "intersection": 10,
+        "check": 20283790509544480,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 162131317735171098,
+        "intersection": 10,
+        "check": 162130145199522834,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 3602907748343218994,
+        "intersection": 10,
+        "check": 144133338876084274,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 216596927591317526,
+        "intersection": 10,
+        "check": 144115746690367506,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 151998317425856530,
+        "intersection": 10,
+        "check": 146368637165375506,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 164400636719600690,
+        "old_support": 164441311930553505,
+        "intersection": 10,
+        "check": 146385129831731232,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 3608949418402783275,
+        "old_support": 9237042679400374313,
+        "intersection": 10,
+        "check": 4644749436788769,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3608949418402783275,
+        "old_support": 725245428823515194,
+        "intersection": 10,
+        "check": 148759937508450344,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3608949418402783275,
+        "old_support": 1229931711366734124,
+        "intersection": 10,
+        "check": 4943816595341352,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3608949418402783275,
+        "old_support": 2311631255037616680,
+        "intersection": 10,
+        "check": 2310505213393379368,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3608949418402783275,
+        "old_support": 3608843454311830595,
+        "intersection": 10,
+        "check": 1302947667197820931,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3608949418402783275,
+        "old_support": 3660582218289381539,
+        "intersection": 10,
+        "check": 1298444205009403907,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3608949418402783275,
+        "old_support": 3892658276944314379,
+        "intersection": 10,
+        "check": 3603301914365657091,
+        "kind": "parent"
+      },
+      {
+        "new_support": 3608949418402783275,
+        "old_support": 8216606723146917891,
+        "intersection": 10,
+        "check": 3603161451755208707,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 797428101217806344,
+        "intersection": 10,
+        "check": 576469548446803976,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 577180125016156172,
+        "intersection": 10,
+        "check": 576469548446803976,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 2936355756410170889,
+        "intersection": 10,
+        "check": 576469548446803976,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 66366882492381710856,
+        "intersection": 9,
+        "check": 72629340092779016,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 56169464374475383816,
+        "intersection": 9,
+        "check": 649081296303186952,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 15644946554140231200,
+        "intersection": 10,
+        "check": 4688814560101008896,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 4688823356399814282,
+        "intersection": 10,
+        "check": 4688814560101008896,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 4688902521033875200,
+        "intersection": 10,
+        "check": 4688814560101008896,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 4697856978121205328,
+        "intersection": 10,
+        "check": 4688814560101008896,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 5476387115561543688,
+        "intersection": 10,
+        "check": 576469548446803976,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 60640982196153223240,
+        "intersection": 9,
+        "check": 5260217558916663304,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 60038060578648899593,
+        "intersection": 9,
+        "check": 4688818958155923464,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 59958827571178687528,
+        "intersection": 9,
+        "check": 4616202812194311176,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 59956998077815982597,
+        "intersection": 9,
+        "check": 4616202812244625920,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 115526975359151269888,
+        "intersection": 9,
+        "check": 4684310960482052096,
+        "kind": "parent"
+      },
+      {
+        "new_support": 5265284108547812872,
+        "old_support": 118179525180676130816,
+        "intersection": 9,
+        "check": 5193217718400073728,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 1707569754480681,
+        "intersection": 10,
+        "check": 1707552295419912,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 185280972152165256,
+        "intersection": 10,
+        "check": 149181806384513416,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 167831999690834368,
+        "intersection": 10,
+        "check": 148689225175531904,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 436318145909686536,
+        "intersection": 10,
+        "check": 1707552295419912,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 578520217173427228,
+        "intersection": 10,
+        "check": 1707552295419912,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 1301647701397930368,
+        "intersection": 10,
+        "check": 148690255967748224,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 11544574139029325960,
+        "intersection": 10,
+        "check": 6211143332855816,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 4832450438485508482,
+        "intersection": 10,
+        "check": 148689225175531904,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 110848875547966849024,
+        "intersection": 9,
+        "check": 150396698005602304,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 110830790296925241512,
+        "intersection": 9,
+        "check": 150325300616495112,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 110903199109899944326,
+        "intersection": 9,
+        "check": 150378006307733888,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 111477602755270411674,
+        "intersection": 9,
+        "check": 148618867160121736,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 121063020813494518152,
+        "intersection": 9,
+        "check": 6262828969230472,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 95837815110254231556,
+        "intersection": 9,
+        "check": 145329128370077696,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 93532534971558462080,
+        "intersection": 9,
+        "check": 144767198479581312,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 92820402810164167424,
+        "intersection": 9,
+        "check": 1213940302348544,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 92379085924959518985,
+        "intersection": 9,
+        "check": 145330148432937224,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 92378504276591583520,
+        "intersection": 9,
+        "check": 144748517511201024,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 92238225972319813896,
+        "intersection": 9,
+        "check": 4504778596220936,
+        "kind": "parent"
+      },
+      {
+        "new_support": 150396777470951816,
+        "old_support": 115292168132337304008,
+        "intersection": 9,
+        "check": 17669503910280,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 9224153017132875780,
+        "intersection": 10,
+        "check": 9223442440563523584,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 9444400993334525952,
+        "intersection": 10,
+        "check": 9223442440563523584,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 11583328648526890497,
+        "intersection": 10,
+        "check": 9223442440563523584,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 64852508093672851072,
+        "intersection": 9,
+        "check": 9224009753674646528,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 55347621008617767968,
+        "intersection": 9,
+        "check": 5136918401254400,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 15644946554140231200,
+        "intersection": 10,
+        "check": 4688814560101008896,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 14123360007678263296,
+        "intersection": 10,
+        "check": 9223442440563523584,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 4688823356399814282,
+        "intersection": 10,
+        "check": 4688814560101008896,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 4688902521033875200,
+        "intersection": 10,
+        "check": 4688814560101008896,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 4697856978121205328,
+        "intersection": 10,
+        "check": 4688814560101008896,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 60096601876016662034,
+        "intersection": 9,
+        "check": 4612253366495217152,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 69179799416622187009,
+        "intersection": 9,
+        "check": 13839566087383417344,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 60493124255867012096,
+        "intersection": 9,
+        "check": 72690913281115136,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 70977930862844969472,
+        "intersection": 9,
+        "check": 4683818379323900416,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 115292797146134743553,
+        "intersection": 9,
+        "check": 4612323769540149760,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13912257000664532480,
+        "old_support": 124552471036044067848,
+        "intersection": 9,
+        "check": 9224009753607865344,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2995104996968054800,
+        "old_support": 689332393068546049,
+        "intersection": 10,
+        "check": 648518484871168000,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2995104996968054800,
+        "old_support": 1779485027181478144,
+        "intersection": 10,
+        "check": 580964489374416896,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2995104996968054800,
+        "old_support": 3067022403789218312,
+        "intersection": 10,
+        "check": 2922906527981699072,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2995104996968054800,
+        "old_support": 2977125648747364368,
+        "intersection": 10,
+        "check": 76772299918934032,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2995104996968054800,
+        "old_support": 2378117216760893488,
+        "intersection": 10,
+        "check": 2378041341834821648,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2995104996968054800,
+        "old_support": 11601483883800052948,
+        "intersection": 10,
+        "check": 72198468986355728,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2995104996968054800,
+        "old_support": 2416420893917118480,
+        "intersection": 10,
+        "check": 2414070137780043792,
+        "kind": "parent"
+      },
+      {
+        "new_support": 2995104996968054800,
+        "old_support": 5518176594317099026,
+        "intersection": 10,
+        "check": 581105226858446864,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6350345982370119814,
+        "old_support": 1801647272098801670,
+        "intersection": 10,
+        "check": 1153119433879715846,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6350345982370119814,
+        "old_support": 10430605071514599942,
+        "intersection": 10,
+        "check": 1153119433879715846,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6350345982370119814,
+        "old_support": 1153684857734332854,
+        "intersection": 10,
+        "check": 1153119433879715846,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6350345982370119814,
+        "old_support": 56637431670661709846,
+        "intersection": 9,
+        "check": 1152943522756689926,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6350345982370119814,
+        "old_support": 56538388201306325189,
+        "intersection": 9,
+        "check": 1162126633134456836,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6350345982370119814,
+        "old_support": 57080402896869130340,
+        "intersection": 9,
+        "check": 1738477427832651780,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6350345982370119814,
+        "old_support": 57358672803643523078,
+        "intersection": 9,
+        "check": 1729646139700936710,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6350345982370119814,
+        "old_support": 7508716718244495492,
+        "intersection": 10,
+        "check": 5197226548490403968,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6350345982370119814,
+        "old_support": 6350570269857354888,
+        "intersection": 10,
+        "check": 5197226548490403968,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6350345982370119814,
+        "old_support": 5776065551024652294,
+        "intersection": 10,
+        "check": 1162126633134456836,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6350345982370119814,
+        "old_support": 5485496507870232705,
+        "intersection": 10,
+        "check": 5197226548490403968,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6350345982370119814,
+        "old_support": 5341341754845561026,
+        "intersection": 10,
+        "check": 5197226548490403968,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6350345982370119814,
+        "old_support": 60530894753929134100,
+        "intersection": 9,
+        "check": 4611949911955472388,
+        "kind": "parent"
+      },
+      {
+        "new_support": 6350345982370119814,
+        "old_support": 70328411892679198726,
+        "intersection": 9,
+        "check": 5764807634150490116,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 9284228906378084356,
+        "intersection": 10,
+        "check": 9225645827304718340,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 9442573011772309572,
+        "intersection": 10,
+        "check": 9226186924333531140,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 148412534922739716,
+        "intersection": 10,
+        "check": 144753042397396992,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 435257210626442260,
+        "intersection": 10,
+        "check": 147000444030353412,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 9817869316858679424,
+        "intersection": 10,
+        "check": 9241390971285995520,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 10547522703895691784,
+        "intersection": 10,
+        "check": 162221945730891776,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 11547815004217549056,
+        "intersection": 10,
+        "check": 9241408426034069504,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 4776700865295747111,
+        "intersection": 10,
+        "check": 162763042759704576,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 120102632580806902852,
+        "intersection": 9,
+        "check": 9242024152380997636,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 120627308533559349248,
+        "intersection": 9,
+        "check": 9370301975138140160,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 92326064003831103492,
+        "intersection": 9,
+        "check": 20283790681243652,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 92268363918456389700,
+        "intersection": 9,
+        "check": 20833683796656132,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 9674506193525116944,
+        "intersection": 10,
+        "check": 162763042759704576,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 56879944291598860,
+        "intersection": 10,
+        "check": 20833546495066116,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 9385591989863514560,
+        "intersection": 10,
+        "check": 9367575323569356800,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 74895024140124164,
+        "intersection": 10,
+        "check": 2819285391048708,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 12108521335946224644,
+        "intersection": 10,
+        "check": 9225645827304718340,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 10538534320891691040,
+        "intersection": 10,
+        "check": 9241390971285995520,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 151807405923239941,
+        "intersection": 10,
+        "check": 144770497145470976,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 9388408870064422916,
+        "old_support": 14009643339385733126,
+        "intersection": 10,
+        "check": 9369809531195949060,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 7602025042411673,
+        "intersection": 10,
+        "check": 7318351005221000,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 9303887082386751626,
+        "intersection": 10,
+        "check": 7318351005221000,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 313721498290489544,
+        "intersection": 10,
+        "check": 25332782263828616,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 55407786803547080856,
+        "intersection": 9,
+        "check": 22518036388904968,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 16158915569992667136,
+        "intersection": 10,
+        "check": 4629700453044584448,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 15154647984298278924,
+        "intersection": 10,
+        "check": 13853072490436231168,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 13900431754779820544,
+        "intersection": 10,
+        "check": 9243638271688441856,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 4619004644797056168,
+        "intersection": 10,
+        "check": 4616752569753010312,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 14430096879887884672,
+        "intersection": 10,
+        "check": 13853072490436231168,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 69774905688643862536,
+        "intersection": 9,
+        "check": 13857576089389367304,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 96867512069462835200,
+        "intersection": 9,
+        "check": 4632515167780995072,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 97072855799672471680,
+        "intersection": 9,
+        "check": 2251834847789184,
+        "kind": "parent"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 4782259893388329096,
+        "intersection": 10,
+        "check": 4634767001011617928,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 11820541650758992064,
+        "intersection": 10,
+        "check": 9223934990569439360,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 5211228380383418504,
+        "intersection": 10,
+        "check": 4634767001011617928,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 13909411450674610688,
+        "intersection": 10,
+        "check": 9225623840429834240,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 9243640609773854736,
+        "intersection": 10,
+        "check": 9243638271688441856,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 9239140136937194506,
+        "intersection": 10,
+        "check": 6755401054945288,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 15047159985261772972,
+        "intersection": 10,
+        "check": 9246453021452271752,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 13860390841441452168,
+        "old_support": 4634925332297187721,
+        "intersection": 10,
+        "check": 4634767001011617928,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 42831488345719908,
+        "intersection": 10,
+        "check": 40541201330095104,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 40563191706342528,
+        "intersection": 10,
+        "check": 36055193889555456,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 1734750108116191297,
+        "intersection": 10,
+        "check": 1153504245774942272,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 1491826473308144656,
+        "intersection": 10,
+        "check": 1193453909844049920,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 1261590776502239296,
+        "intersection": 10,
+        "check": 1188970092836307008,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 1171519203201122888,
+        "intersection": 10,
+        "check": 1153504245774942272,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 12826913645024912448,
+        "intersection": 10,
+        "check": 1153504245774942272,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 4652930975925028098,
+        "intersection": 10,
+        "check": 40541201330095104,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 111293811688030733376,
+        "intersection": 9,
+        "check": 36600543070258240,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 111837891754184836417,
+        "intersection": 9,
+        "check": 4505807245149248,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 111906017530134152448,
+        "intersection": 9,
+        "check": 1153495458270692352,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 111910521154319554752,
+        "intersection": 9,
+        "check": 1157999049304703040,
+        "kind": "parent"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 1194443504809295872,
+        "intersection": 10,
+        "check": 1193453909844049920,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 577052299228649032,
+        "intersection": 10,
+        "check": 28595893830720,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 10490574856247459904,
+        "intersection": 10,
+        "check": 1157990253215481920,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 2353159418374808644,
+        "intersection": 10,
+        "check": 36055193889555456,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 4532814542013888,
+        "intersection": 10,
+        "check": 28595893830720,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 1482256029915169840,
+        "intersection": 10,
+        "check": 1194016851211206656,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 5823734860368726019,
+        "intersection": 10,
+        "check": 41112938791321600,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 1194045447105037376,
+        "old_support": 1297172078643577920,
+        "intersection": 10,
+        "check": 1152947901477553152,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 9223567770929891088,
+        "intersection": 10,
+        "check": 35203162866432,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 9224709602431619365,
+        "intersection": 10,
+        "check": 9223513324099096609,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 18054308957029155,
+        "intersection": 10,
+        "check": 35203162866432,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 146402328504099584,
+        "intersection": 10,
+        "check": 35203162866432,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 9512632105780335137,
+        "intersection": 10,
+        "check": 9223513324099096609,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 590008472335323912,
+        "intersection": 10,
+        "check": 35203162866432,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 10412463630827313185,
+        "intersection": 10,
+        "check": 9223513324099096609,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 55344911743692729217,
+        "intersection": 9,
+        "check": 35185446241025,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 55413838498769453984,
+        "intersection": 9,
+        "check": 141304424317728,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 66878489673649505056,
+        "intersection": 9,
+        "check": 35202625848096,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 66869482479084247105,
+        "intersection": 9,
+        "check": 9223407222837874689,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 16213099962991792353,
+        "intersection": 10,
+        "check": 9223513324099096609,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 69175466525796253699,
+        "intersection": 9,
+        "check": 9223547976969011200,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 69193449811026527008,
+        "intersection": 9,
+        "check": 9223512774880412416,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 122209715245541343237,
+        "intersection": 9,
+        "check": 9223407789236338689,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 110824756127988482597,
+        "intersection": 9,
+        "check": 176471616553505,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 110681238499249003424,
+        "intersection": 9,
+        "check": 140738025394976,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 119907320024545890849,
+        "intersection": 9,
+        "check": 9223407238943871489,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 121673927622001688873,
+        "intersection": 9,
+        "check": 9223547976431960353,
+        "kind": "parent"
+      },
+      {
+        "new_support": 9223548527261963041,
+        "old_support": 121101935886786138657,
+        "intersection": 9,
+        "check": 9223512775417168417,
+        "kind": "parent"
+      },
+      {
+        "new_support": 301196965112184840,
+        "old_support": 10890959041593504,
+        "intersection": 10,
+        "check": 10714745113935872,
+        "kind": "parent"
+      },
+      {
+        "new_support": 301196965112184840,
+        "old_support": 14637948925388808,
+        "intersection": 10,
+        "check": 10134211561259016,
+        "kind": "parent"
+      },
+      {
+        "new_support": 301196965112184840,
+        "old_support": 64247803293991936,
+        "intersection": 10,
+        "check": 10134238404804608,
+        "kind": "parent"
+      },
+      {
+        "new_support": 301196965112184840,
+        "old_support": 436318145909686536,
+        "intersection": 10,
+        "check": 291609219407282184,
+        "kind": "parent"
+      },
+      {
+        "new_support": 301196965112184840,
+        "old_support": 867804989414179356,
+        "intersection": 10,
+        "check": 290499812179050504,
+        "kind": "parent"
+      },
+      {
+        "new_support": 301196965112184840,
+        "old_support": 1443987015558496265,
+        "intersection": 10,
+        "check": 291045169944330248,
+        "kind": "parent"
+      },
+      {
+        "new_support": 301196965112184840,
+        "old_support": 11901342605784432650,
+        "intersection": 10,
+        "check": 299489423538520072,
+        "kind": "parent"
+      },
+      {
+        "new_support": 301196965112184840,
+        "old_support": 4912302466230521920,
+        "intersection": 10,
+        "check": 300616378943012864,
+        "kind": "parent"
+      },
+      {
+        "new_support": 301196965112184840,
+        "old_support": 110979959370909224968,
+        "intersection": 9,
+        "check": 290483314136973320,
+        "kind": "parent"
+      },
+      {
+        "new_support": 301196965112184840,
+        "old_support": 115592766299531378977,
+        "intersection": 9,
+        "check": 300615284795899904,
+        "kind": "parent"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 18385028419543121,
+        "intersection": 10,
+        "check": 89077623906304,
+        "kind": "parent"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 73255050650182690,
+        "intersection": 10,
+        "check": 70439879696384,
+        "kind": "parent"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 288260633460478216,
+        "intersection": 10,
+        "check": 288258965939159040,
+        "kind": "parent"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 288444901213464576,
+        "intersection": 10,
+        "check": 71554155274240,
+        "kind": "parent"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 878265770753163776,
+        "intersection": 10,
+        "check": 288259032242749440,
+        "kind": "parent"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 1624139205416394752,
+        "intersection": 10,
+        "check": 288258965939159040,
+        "kind": "parent"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 2594172481340326020,
+        "intersection": 10,
+        "check": 288258965939159040,
+        "kind": "parent"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 55665692681890283528,
+        "intersection": 9,
+        "check": 288300815765061632,
+        "kind": "parent"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 13835143082833731584,
+        "intersection": 10,
+        "check": 71554155274240,
+        "kind": "parent"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 60096123659794833440,
+        "intersection": 9,
+        "check": 90228941447168,
+        "kind": "parent"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 110970395831820296256,
+        "intersection": 9,
+        "check": 12163416662016,
+        "kind": "parent"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 110968723422966816822,
+        "intersection": 9,
+        "check": 288256781677862912,
+        "kind": "parent"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 360362004957152264,
+        "intersection": 10,
+        "check": 288303015054589952,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 3749338140681191424,
+        "intersection": 10,
+        "check": 288251286470524928,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 293942358720926496,
+        "intersection": 10,
+        "check": 288311742495211520,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 306740674002378756,
+        "intersection": 10,
+        "check": 288302946335154176,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 9799860363605417986,
+        "intersection": 10,
+        "check": 18777599221760,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 468403025931772033,
+        "intersection": 10,
+        "check": 288259032242749440,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 4620759810414059520,
+        "intersection": 10,
+        "check": 26457067855872,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 288330520094433280,
+        "old_support": 659775774386256,
+        "intersection": 10,
+        "check": 26457067855872,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 18044228534554756,
+        "intersection": 10,
+        "check": 27625364410368,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 9263932059981217892,
+        "intersection": 10,
+        "check": 27626438131716,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 180372760826534145,
+        "intersection": 10,
+        "check": 180214422558527744,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 145831767470244372,
+        "intersection": 10,
+        "check": 27695157608448,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 288610123340316940,
+        "intersection": 10,
+        "check": 97994108567556,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 1911849030649041156,
+        "intersection": 10,
+        "check": 180214423632249092,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 2495101069529575680,
+        "intersection": 10,
+        "check": 180215522070151424,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 55349271378363170852,
+        "intersection": 9,
+        "check": 27557584453636,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 55386062066022924544,
+        "intersection": 9,
+        "check": 36116759157195008,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 55395498073587757829,
+        "intersection": 9,
+        "check": 36125554042736900,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 55448346259981140228,
+        "intersection": 9,
+        "check": 36056285883924740,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 64707746247863710726,
+        "intersection": 9,
+        "check": 26526926508036,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 4863971229364704514,
+        "intersection": 10,
+        "check": 180214422558527744,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 62259011532406423556,
+        "intersection": 9,
+        "check": 89199089319936,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 93530925357418959104,
+        "intersection": 9,
+        "check": 144142675867095296,
+        "kind": "parent"
+      },
+      {
+        "new_support": 180242048996659460,
+        "old_support": 92382427598889177153,
+        "intersection": 9,
+        "check": 144132986555092992,
+        "kind": "parent"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 47598202777569794,
+        "intersection": 10,
+        "check": 38570937427167232,
+        "kind": "parent"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 43674876579946498,
+        "intersection": 10,
+        "check": 42786464739631106,
+        "kind": "parent"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 9263071227563475083,
+        "intersection": 10,
+        "check": 2544355806019714,
+        "kind": "parent"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 295197003560791200,
+        "intersection": 10,
+        "check": 4644354564040864,
+        "kind": "parent"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 725514964059564468,
+        "intersection": 10,
+        "check": 431026006395040,
+        "kind": "parent"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 1229626202021488802,
+        "intersection": 10,
+        "check": 4644354564040864,
+        "kind": "parent"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 2344557991006830626,
+        "intersection": 10,
+        "check": 38573136181985282,
+        "kind": "parent"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 4670373569123989728,
+        "intersection": 10,
+        "check": 36169552492497056,
+        "kind": "parent"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 92275249233107361922,
+        "intersection": 9,
+        "check": 36462004600316034,
+        "kind": "parent"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 92288188268564447392,
+        "intersection": 9,
+        "check": 36451027469205664,
+        "kind": "parent"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 92256653999796659234,
+        "intersection": 9,
+        "check": 4796087437099042,
+        "kind": "parent"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 92558146691712157858,
+        "intersection": 9,
+        "check": 36178348317083808,
+        "kind": "parent"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 38423793727177898,
+        "intersection": 10,
+        "check": 36171751247315106,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 3100871366157797538,
+        "intersection": 10,
+        "check": 2392623469824160,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 1202896507926259760,
+        "intersection": 10,
+        "check": 40822668521383936,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 329053066284382336,
+        "intersection": 10,
+        "check": 40822685432815744,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 2685651656983202,
+        "intersection": 10,
+        "check": 2394822224642210,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 9248355227101307043,
+        "intersection": 10,
+        "check": 6898404672151586,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 4656484589715335232,
+        "intersection": 10,
+        "check": 40822668521383936,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 43217490746026146,
+        "old_support": 40843834124413190,
+        "intersection": 10,
+        "check": 4796069988804610,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 19296706279509057,
+        "intersection": 10,
+        "check": 19142774515302464,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 167831999690834368,
+        "intersection": 10,
+        "check": 19142774515302464,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 9531026701421641840,
+        "intersection": 10,
+        "check": 19142774515302464,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 666884657962468438,
+        "intersection": 10,
+        "check": 576812664878007316,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 576848261589501460,
+        "intersection": 10,
+        "check": 576812664878007316,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 578520217173427228,
+        "intersection": 10,
+        "check": 576812664878007316,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 2912705553354465348,
+        "intersection": 10,
+        "check": 19142774515302464,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 6377451733810942996,
+        "intersection": 10,
+        "check": 576814795215340548,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 113580782674677858325,
+        "intersection": 9,
+        "check": 18014469560991764,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 110680485695953314844,
+        "intersection": 9,
+        "check": 2542670971924,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 110681944454753982484,
+        "intersection": 9,
+        "check": 1409642676617236,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 111295700917404319761,
+        "intersection": 9,
+        "check": 354388522565648,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 111269664411168539748,
+        "intersection": 9,
+        "check": 577940969832318016,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 111258968387997474816,
+        "intersection": 9,
+        "check": 576815070110023680,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 92901462853231477776,
+        "intersection": 9,
+        "check": 595671696489317392,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 93117780564922859556,
+        "intersection": 9,
+        "check": 595671490347663364,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 93120155713999473921,
+        "intersection": 9,
+        "check": 595953169352098816,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 92377978599588758612,
+        "intersection": 9,
+        "check": 2270041210964,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 92235141284003594310,
+        "intersection": 9,
+        "check": 1407720762638404,
+        "kind": "parent"
+      },
+      {
+        "new_support": 595955439393309780,
+        "old_support": 97423063796892568644,
+        "intersection": 9,
+        "check": 577657366699312192,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 163512497916085376,
+        "intersection": 10,
+        "check": 145356811581522944,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 435838996137379356,
+        "intersection": 10,
+        "check": 145356811581522944,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 722679616439845888,
+        "intersection": 10,
+        "check": 145356811581522944,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 9880910228985512720,
+        "intersection": 10,
+        "check": 576463501085901328,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 576498771709662736,
+        "intersection": 10,
+        "check": 576463501085901328,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 1302784114839391297,
+        "intersection": 10,
+        "check": 145356811581522944,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 3027552000623854098,
+        "intersection": 10,
+        "check": 576463501085901328,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 5224249097727517232,
+        "intersection": 10,
+        "check": 576463775962759696,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 113996355666385634400,
+        "intersection": 9,
+        "check": 721817838762852352,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 110824697696299787280,
+        "intersection": 9,
+        "check": 144162741953758224,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 110870331408686253584,
+        "intersection": 9,
+        "check": 144118486612051472,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 110866287679790646282,
+        "intersection": 9,
+        "check": 145251258468402176,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 111330156002435924528,
+        "intersection": 9,
+        "check": 1173178907099664,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 92955434578817318912,
+        "intersection": 9,
+        "check": 721705413702057984,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 102178868205579141656,
+        "intersection": 9,
+        "check": 145315030139666960,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 92955784652535369732,
+        "intersection": 9,
+        "check": 721782104636260352,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 92377916680253489792,
+        "intersection": 9,
+        "check": 144187480967741952,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 92253506977939853328,
+        "intersection": 9,
+        "check": 1138819170566160,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 92667412078673560080,
+        "intersection": 9,
+        "check": 145320527699116048,
+        "kind": "parent"
+      },
+      {
+        "new_support": 721820312667424272,
+        "old_support": 115293550413999261184,
+        "intersection": 9,
+        "check": 1232827412907520,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 85674225209855572,
+        "intersection": 10,
+        "check": 76631841582368256,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 293932548986290848,
+        "intersection": 10,
+        "check": 288302946339274880,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 306599098998608264,
+        "intersection": 10,
+        "check": 288232856767955072,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 544939158389523973,
+        "intersection": 10,
+        "check": 76561472838305284,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 9876394262688564870,
+        "intersection": 10,
+        "check": 76561472838305284,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 1515674582287213696,
+        "intersection": 10,
+        "check": 360360537961284736,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 2594172481340326020,
+        "intersection": 10,
+        "check": 288302946339274880,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 56278188483349201028,
+        "intersection": 9,
+        "check": 360360812835111044,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 55629098669660324900,
+        "intersection": 9,
+        "check": 288302948214260740,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 57719265601072940672,
+        "intersection": 9,
+        "check": 72060072238269568,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 4688815392519489028,
+        "intersection": 10,
+        "check": 76561472838305284,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 60893258939222721696,
+        "intersection": 9,
+        "check": 360358618110887040,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 120342957513432384004,
+        "intersection": 9,
+        "check": 292736179365757444,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 110788641271098402306,
+        "intersection": 9,
+        "check": 72130436951721472,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 111765902328045061120,
+        "intersection": 9,
+        "check": 364861945003656192,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 112162362306257355264,
+        "intersection": 9,
+        "check": 292806820572037632,
+        "kind": "parent"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 553980419150714624,
+        "intersection": 10,
+        "check": 76561475254093312,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 360362004957152264,
+        "intersection": 10,
+        "check": 360290450801689600,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 312228316944419492,
+        "intersection": 10,
+        "check": 292806543546663428,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 4574290531992277,
+        "intersection": 10,
+        "check": 4573968375890564,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 3821307452708619392,
+        "intersection": 10,
+        "check": 360290450801689600,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 937314153603998724,
+        "intersection": 10,
+        "check": 288232856763891716,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 4723504575562374,
+        "intersection": 10,
+        "check": 4573968375890564,
+        "kind": "published_new"
+      },
+      {
+        "new_support": 364864419177580164,
+        "old_support": 13911711607947413124,
+        "intersection": 10,
+        "check": 76631562409625092,
+        "kind": "published_new"
+      }
+    ],
+    "certificate_sha256": "90a421e678dd2f61f9fd668c374152145a6937dcfa4cbd4f5107825a44b5fe93",
+    "scope": "All changed sign codes and support interactions are freshly exact. The unchanged published 67D family and Netto quadruple construction remain inherited.",
+    "independent_direct_review": {
+      "status": "PASS",
+      "dimension": 67,
+      "base_count": 355090822,
+      "gain": 4624,
+      "total": 355095446,
+      "certificate_sha256": "90a421e678dd2f61f9fd668c374152145a6937dcfa4cbd4f5107825a44b5fe93",
+      "reviewer_sha256": "f8772529f8a801be744f07e8e59ae688304eaea1c485485edfcfbc65a75a0cfa",
+      "new_classes": 49,
+      "new_class_size_histogram": {
+        "512": 1,
+        "256": 6,
+        "64": 19,
+        "128": 7,
+        "32": 13,
+        "16": 3
+      },
+      "new_minimum_distance_histogram": {
+        "4": 45,
+        "6": 4
+      },
+      "replaced_full_classes": 357,
+      "replacement_population_each": 2048,
+      "replacement_minimum_distance_histogram": {
+        "4": 357
+      },
+      "published_classes_bruteforce_decoded_for_affected_pairs": 355,
+      "changed_old_support_pairs": 15072183,
+      "changed_old_overlap_histogram": {
+        "0": 231181,
+        "2": 4297668,
+        "4": 7793068,
+        "6": 2516934,
+        "8": 233332
+      },
+      "new_support_pairs": 2069956,
+      "new_overlap_histogram": {
+        "0": 19508,
+        "1": 34879,
+        "2": 444957,
+        "3": 146652,
+        "4": 927770,
+        "5": 87895,
+        "6": 364029,
+        "7": 10326,
+        "8": 33182,
+        "9": 238,
+        "10": 520
+      },
+      "low_overlap_new_sign_pairs_certified_by_support": 399715634432,
+      "directly_enumerated_high_overlap_pairs": 758,
+      "directly_enumerated_sign_pairs": 115998720,
+      "maximum_direct_inner_product": 32,
+      "source_pins": {
+        "verifications/improved/dim61-68-95-96-code-layers/source/shared_parity/expanded67_68.npz": "288ab6a9574e6163cabba45a0472204ec6a788300649a330edfc8ed9bce3140f",
+        "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/code64_supports.npz": "cdbd5e5a7bbda9ddb84ee86052e2d4d00ccc331f0188de958a69ed83b0c529f6",
+        "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/cyclic73.weight16.bin": "5d240938e26a7a477de62bc255439e743cb33120bb13b986a70c6b1fea0b5239",
+        "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/shortening_support_search.json": "5422ed8f2b3be75267a57ea6fccc88f403a80e5bbe60dc64adc8edda51b61d88",
+        "verifications/improved/dim61-68-95-96-code-layers/source/continuation49_72/netto.json": "95e62ec390f8ec100e8ddb9eb0bcb687d44fac9412457abcda00807e371a7b51"
+      },
+      "deleted_coordinates": [
+        21,
+        37,
+        38,
+        49,
+        57,
+        63
+      ],
+      "retained_coordinates": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        58,
+        59,
+        60,
+        61,
+        62,
+        64,
+        65,
+        66,
+        68,
+        69,
+        71,
+        0,
+        67,
+        70,
+        72
+      ],
+      "scope": "All changed codes and affected interactions are exact. Unchanged published baseline and Netto quadruples remain inherited; no full ambient point enumeration is claimed."
+    },
+    "baseline_replay": {
+      "status": "PASS",
+      "family": {
+        "status": "PASS",
+        "certificate_sha256": "5b2b6c2e9d153c445ee0a645281ed4aaad043af8013de25df4a9cd5be883b665",
+        "retained_old_supports": 30828,
+        "new_supports": 1792,
+        "modified_old": 1792,
+        "old_new_pairs": 55243776,
+        "new_new_pairs": 1604736,
+        "old_new_repairs": 14336,
+        "new_new_repairs": 0,
+        "scalar_cpp": {
+          "status": "PASS",
+          "parent_words": 268435456,
+          "parent_minimum": 16,
+          "parent_weight16_words": 30828,
+          "old_new_pairs": 55243776,
+          "new_new_pairs": 1604736,
+          "old_new_repairs": 14336,
+          "new_new_repairs": 0
+        }
+      },
+      "expanded": {
+        "status": "PASS",
+        "dimension": 67,
+        "total": 355090822,
+        "terms": {
+          "dense64": 268435456,
+          "weight16": 86466560,
+          "weight4": 188672,
+          "poles": 134
+        },
+        "previous": 355090822,
+        "gain": 0,
+        "parent_supports_checked": 174324,
+        "retained_parent_supports": 40428,
+        "extra_supports": 9600,
+        "new_supports": 1792,
+        "extra_pairs": 17203200,
+        "maximum_intersection": 8,
+        "scalar_cpp": {
+          "status": "PASS",
+          "parent_support_pairs": 817191378,
+          "new_extra_pairs": 17203200,
+          "extra_supports": 9600
+        },
+        "input_scope": "Every retained parent-support pair is checked directly, so the inherited 73-bit code minimum is unnecessary. The unchanged Netto four-support construction is replayed by verify.py."
+      }
+    }
+  }
+}

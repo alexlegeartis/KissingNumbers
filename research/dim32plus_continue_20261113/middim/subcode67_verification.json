@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "dimension": 67,
+  "base": 355090822,
+  "gain": 512,
+  "total": 355091334,
+  "new_classes": 1,
+  "class_sizes": [
+    512
+  ],
+  "minimum_sign_distances": [
+    4
+  ],
+  "modified_full_hamming_classes": 4,
+  "changed_old_support_pairs": 168876,
+  "new_support_pair_checks": 42220,
+  "ten_or_nine_overlap_repairs": [
+    {
+      "new_support": 10613436243767297348,
+      "old_support": 9457141446546128960,
+      "intersection": 10,
+      "check": 9442500306224087104,
+      "kind": "parent"
+    },
+    {
+      "new_support": 10613436243767297348,
+      "old_support": 9442573011772309572,
+      "intersection": 10,
+      "check": 9368190912439582788,
+      "kind": "parent"
+    },
+    {
+      "new_support": 10613436243767297348,
+      "old_support": 9460515809613908298,
+      "intersection": 10,
+      "check": 9442500306224087104,
+      "kind": "parent"
+    },
+    {
+      "new_support": 10613436243767297348,
+      "old_support": 10631450607876121680,
+      "intersection": 10,
+      "check": 10593170011017248832,
+      "kind": "parent"
+    },
+    {
+      "new_support": 10613436243767297348,
+      "old_support": 1245535671217722628,
+      "intersection": 10,
+      "check": 1245245331327714560,
+      "kind": "parent"
+    },
+    {
+      "new_support": 10613436243767297348,
+      "old_support": 10394906128051373445,
+      "intersection": 10,
+      "check": 1170935937543210244,
+      "kind": "parent"
+    },
+    {
+      "new_support": 10613436243767297348,
+      "old_support": 3476937551309539108,
+      "intersection": 10,
+      "check": 1170935937543210244,
+      "kind": "parent"
+    },
+    {
+      "new_support": 10613436243767297348,
+      "old_support": 6791428822391637316,
+      "intersection": 10,
+      "check": 1170935937543210244,
+      "kind": "parent"
+    }
+  ],
+  "certificate_sha256": "787f81e1455872f01019e61d63f52e8743414c9cf112dc20ccb827a7ffdaa280",
+  "scope": "All changed sign codes and support interactions are freshly exact. The unchanged published 67D family and Netto quadruple construction remain inherited."
+}

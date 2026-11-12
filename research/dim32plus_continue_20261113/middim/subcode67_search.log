@@ -1,0 +1,5 @@
+BEST count 64 tested 401 phase feasible 1 forced 4 free 4
+BEST count 128 tested 401 phase feasible 1 forced 4 free 4
+BEST count 256 tested 10490 phase feasible 9 forced 4 free 8
+BEST count 512 tested 29455 phase feasible 20 forced 4 free 4
+DONE best 512 tested 112896 feasible 67

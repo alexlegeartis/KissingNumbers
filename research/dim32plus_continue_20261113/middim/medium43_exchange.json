@@ -1,0 +1,10 @@
+{
+  "status": "Exact combinatorial exchange; fresh geometric replay still required",
+  "gain": 0,
+  "new_vertex_indices": [],
+  "deleted_current_indices": [],
+  "option_indices": [],
+  "solver_message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+  "solver_upper_bound": 5.0,
+  "seconds": 120.04177212715149
+}

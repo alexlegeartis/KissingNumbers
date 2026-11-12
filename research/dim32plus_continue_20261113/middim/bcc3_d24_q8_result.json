@@ -1,0 +1,90 @@
+{
+  "estimate": 11306800.000000004,
+  "iteration": 0,
+  "vertices": [
+    10306,
+    6953,
+    6655,
+    4086,
+    3477,
+    1285,
+    1825
+  ],
+  "model": "bcc",
+  "k": 3,
+  "dimension": 46,
+  "numerical_lower_bound": 11306800.000000022,
+  "slices": [
+    {
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "head": 0.0,
+      "alpha": 1.0,
+      "mean_population": 6143568.000000005
+    },
+    {
+      "profile": [
+        -1,
+        0,
+        -1
+      ],
+      "head": -0.8660254037844386,
+      "alpha": 1.0,
+      "mean_population": 2459687.9999999995
+    },
+    {
+      "profile": [
+        -1,
+        -1,
+        0
+      ],
+      "head": 0.8660254037844386,
+      "alpha": 1.0,
+      "mean_population": 2459687.9999999995
+    },
+    {
+      "profile": [
+        -2,
+        0,
+        -2
+      ],
+      "head": -1.7320508075688772,
+      "alpha": 1.0,
+      "mean_population": 121744.00000000004
+    },
+    {
+      "profile": [
+        -2,
+        -2,
+        0
+      ],
+      "head": 1.7320508075688772,
+      "alpha": 1.0,
+      "mean_population": 121744.00000000004
+    },
+    {
+      "profile": [
+        -3,
+        -3,
+        0
+      ],
+      "head": 2.5980762113533156,
+      "alpha": 1.0,
+      "mean_population": 184.00000000000003
+    },
+    {
+      "profile": [
+        -3,
+        0,
+        -3
+      ],
+      "head": -2.5980762113533156,
+      "alpha": 1.0,
+      "mean_population": 184.00000000000003
+    }
+  ],
+  "status": "Numerical discovery only; exact embedding, geometry and dual verification are required"
+}

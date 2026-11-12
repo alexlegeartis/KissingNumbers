@@ -1,0 +1,11 @@
+__pycache__/
+*.bin
+filter_phase
+refill_phase
+refill_points
+shared_trades
+current36/small*
+current36/T.bin
+*.tmp
+dense14_costs.npz
+dense14_screen.npz

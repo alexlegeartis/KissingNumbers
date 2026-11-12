@@ -1,0 +1,4 @@
+vertices 103903 edges 2026072
+best 32703 steps 0 seconds 0.00159832
+best 32706 steps 151 seconds 0.0030748
+finished steps=100000000 best=32706

@@ -1,0 +1,15 @@
+head 0 admitted 494 min blockers 1
+head 1 admitted 488 min blockers 1
+head 2 admitted 488 min blockers 1
+head 3 admitted 494 min blockers 1
+head 4 admitted 494 min blockers 1
+head 5 admitted 488 min blockers 1
+head 6 admitted 494 min blockers 1
+head 7 admitted 488 min blockers 1
+head 8 admitted 488 min blockers 1
+head 9 admitted 494 min blockers 1
+head 10 admitted 488 min blockers 1
+head 11 admitted 494 min blockers 1
+head 12 admitted 6 min blockers 1
+POOL 5898 blocker histogram (array([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12]), array([2004,  663,  306,   72,  324,  387,  477,  504,  459,  441,  162,
+         99])) seconds 13.362008571624756

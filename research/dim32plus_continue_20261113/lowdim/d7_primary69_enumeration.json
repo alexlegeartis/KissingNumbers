@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "dimension": 69,
+  "normal_rank": 7,
+  "exact_mean_lower_bound": "6716925440/9",
+  "population_ceiling": 746325049,
+  "added_poles": 2,
+  "bound": 746325051,
+  "complete_possible_profiles": 162969,
+  "known_normal_roots": 84,
+  "averaging_orbits": 60,
+  "moment_rows": 18,
+  "exact_geometric_pair_types": 55,
+  "minimum_dual_slack": "0",
+  "direct_enumeration_cross_check": true,
+  "published_inputs": "Gamma72 integrality, minimum 8, shell population, and spherical 11-design."
+}

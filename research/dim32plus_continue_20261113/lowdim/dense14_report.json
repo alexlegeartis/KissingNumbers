@@ -1,0 +1,68 @@
+{
+  "antipodal_head_lines_screened": 8192,
+  "uniform_cap_axis_survivors": 0,
+  "minimum_additional_cap_point_deletions_per_body_line": [
+    124,
+    114
+  ],
+  "axis_deletion_histogram": {
+    "12": 7168,
+    "14": 1024
+  },
+  "candidate_new_points_per_head_and_body_line": 4,
+  "scope": "Four independent-sign points on each tested head/body pair. Cap cost excludes its own body line. No joint-union optimality claim.",
+  "body_roots": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      4
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      -4
+    ]
+  ]
+}

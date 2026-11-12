@@ -1,0 +1,25 @@
+configuration candidates 112896 removed 0 odd 0 new_pair_repairs 1 seed_size 1840
+iteration 0 best 1841 seconds 0.104747
+iteration 8 best 1842 seconds 1.08894
+iteration 11 best 1843 seconds 1.48833
+iteration 22 best 1845 seconds 2.76043
+iteration 23 best 1847 seconds 2.87348
+iteration 24 best 1849 seconds 2.99067
+iteration 62 best 1850 seconds 7.62987
+iteration 96 best 1854 seconds 11.8047
+iteration 117 best 1855 seconds 14.0773
+iteration 119 best 1856 seconds 14.2791
+iteration 124 best 1857 seconds 14.8469
+iteration 128 best 1860 seconds 15.2597
+iteration 140 best 1861 seconds 16.5805
+iteration 146 best 1863 seconds 17.2535
+iteration 148 best 1864 seconds 17.4816
+iteration 152 best 1865 seconds 18.1991
+iteration 167 best 1866 seconds 20.237
+iteration 176 best 1867 seconds 21.2487
+iteration 177 best 1868 seconds 21.3937
+iteration 186 best 1869 seconds 22.3689
+iteration 190 best 1870 seconds 22.8281
+iteration 267 best 1872 seconds 32.5046
+iteration 295 best 1873 seconds 36.0057
+finished best 1873 iterations 4801

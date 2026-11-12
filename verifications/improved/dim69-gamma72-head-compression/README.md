@@ -1,5 +1,7 @@
 # A 69-dimensional kissing configuration with at least 743,522,304 points
 
+**Retained first-stage construction.** The [extended D7 moment package](../dim68-69-gamma72-extended-moments/) strengthens this geometry to **746,325,051** points, including two pure head poles. The original certificate and its historical gain below are preserved.
+
 **13 November 2026.** This package proves
 
 \[

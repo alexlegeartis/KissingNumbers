@@ -1,0 +1,37 @@
+{
+  "status": "EXACT REJECTION OF SPECIFIED SHAPES",
+  "norm4_plus_norm6_body_candidates": 18289152,
+  "unchanged_norm6_pair_owners_by_zero_block": {
+    "0": 224,
+    "1": 224,
+    "2": 224
+  },
+  "minimum_blocking_base_product": 7,
+  "single_norm8_body_candidates": 61236,
+  "single_norm8_blocking_base_product": 8,
+  "single_block_norm4_and_norm6": {
+    "0": {
+      "used_root_labels": 142,
+      "minimum_largest_product_for_norm4_body": 2,
+      "minimum_largest_product_for_norm6_body": 3
+    },
+    "1": {
+      "used_root_labels": 142,
+      "minimum_largest_product_for_norm4_body": 2,
+      "minimum_largest_product_for_norm6_body": 3
+    },
+    "2": {
+      "used_root_labels": 144,
+      "minimum_largest_product_for_norm4_body": 2,
+      "minimum_largest_product_for_norm6_body": 3
+    }
+  },
+  "head_squares": {
+    "body_norm4": 8,
+    "body_norm6": 6,
+    "body_norm8": 4,
+    "body_norm10": 2
+  },
+  "reason": "Norm10 mixed bodies and norm8 single bodies already conflict with the unchanged equatorial base. Norm4/6 single bodies conflict with one of the retained +/-2 latitude points.",
+  "scope": "No changes to base ownership or existing latitude bodies; only the explicitly enumerated integer lattice shapes."
+}

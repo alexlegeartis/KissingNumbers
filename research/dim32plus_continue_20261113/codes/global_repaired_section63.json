@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "octad": 1284508757262368,
+  "total": 184325380,
+  "terms": {
+    "dense": 146800640,
+    "old_sparse": 35503776,
+    "new_sparse": 1917952,
+    "four_supports": 102900,
+    "poles": 112
+  },
+  "octads_checked": 72,
+  "sign_classes_independently_enumerated": 32701,
+  "previous": 184286468,
+  "gain": 38912
+}

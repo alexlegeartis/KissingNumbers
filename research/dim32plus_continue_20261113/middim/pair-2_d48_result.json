@@ -1,0 +1,87 @@
+{
+  "estimate": 23766960,
+  "iteration": 0,
+  "vertices": [
+    3725,
+    3727,
+    2856,
+    3802,
+    1705,
+    3948,
+    467
+  ],
+  "overlap": -2,
+  "dimension": 47,
+  "numerical_lower_bound": 23766960,
+  "parameter_interval": [
+    0,
+    0
+  ],
+  "population_expression": "23766960",
+  "slices": [
+    {
+      "profile": [
+        0,
+        0
+      ],
+      "head": 0.0,
+      "alpha": 1.0,
+      "population": "400*tau0 + 11306800"
+    },
+    {
+      "profile": [
+        0,
+        1
+      ],
+      "head": -0.75,
+      "alpha": 1.0,
+      "population": "5623040 - 300*tau0"
+    },
+    {
+      "profile": [
+        -1,
+        0
+      ],
+      "head": 0.75,
+      "alpha": 1.0,
+      "population": "5623040 - 300*tau0"
+    },
+    {
+      "profile": [
+        0,
+        2
+      ],
+      "head": -1.5,
+      "alpha": 1.0,
+      "population": "120*tau0 + 599104"
+    },
+    {
+      "profile": [
+        -2,
+        0
+      ],
+      "head": 1.5,
+      "alpha": 1.0,
+      "population": "120*tau0 + 599104"
+    },
+    {
+      "profile": [
+        0,
+        3
+      ],
+      "head": -2.25,
+      "alpha": 1.0,
+      "population": "7936 - 20*tau0"
+    },
+    {
+      "profile": [
+        -3,
+        0
+      ],
+      "head": 2.25,
+      "alpha": 1.0,
+      "population": "7936 - 20*tau0"
+    }
+  ],
+  "status": "Numerical discovery only; exact geometry and embedding required"
+}

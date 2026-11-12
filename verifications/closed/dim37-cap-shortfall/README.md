@@ -51,16 +51,16 @@ table listed 494 312 at that checkpoint.
 **Cohn's table is stale in four dimensions for this reason** — 32, 33, 34 and 37 — all from
 Echols' 2026 constant-weight improvements, which Brouwer's page already carries:
 
-| dim | Cohn's table | Brouwer / correct | who | 7 November repo result |
+| dim | Cohn's table | Brouwer / correct | who | Current repo result |
 |---|---|---|---| --- |
 | 32 | 345 408 | **346 432** | Echols 2026 | **352 992** |
-| 33 | 360 640 | **362 048** | Echols 2026 | **370 408 |
+| 33 | 360 640 | **362 048** | Echols 2026 | **370 408** |
 | 34 | 380 868 | **381 124** | Echols 2026 | **390 992** |
-| 37 | 494 312 | **496 232** | Echols 2026 | **505 629** |
+| 37 | 494 312 | **496 232** | Echols 2026 | **505 638** |
 
-The comparison and ERS counts above are historical. The 7 November 2026
-Coxeter–Todd triangle-switch construction gives **505,629** in dimension 37; see
-[its certificate](../../improved/dim36-37-coxeter-todd/).
+The comparison and ERS counts above are historical. The 13 November 2026
+Coxeter–Todd orbit exchange gives **505,638** in dimension 37; see
+[its certificate](../../improved/dim36-37-orbit-exchange/).
 
 None of these is a claim of this project; they are corrections to the table, and they are
 worth passing on. See [`../dim32-44-ers-audit/`](../dim32-44-ers-audit/) for the full audit.

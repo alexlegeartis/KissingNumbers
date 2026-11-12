@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 105 scripts, including large exact certificate replays
-    python run_all.py --full       # 124 scripts, budget about 10 hours
+    python run_all.py              # 112 scripts, including large exact certificate replays
+    python run_all.py --full       # 131 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -106,6 +106,20 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('36-37D orbit exchange: fresh exact geometric replay',
+     os.path.join(V, 'improved', 'dim36-37-orbit-exchange'), ['verify.py'], 1.0, True),
+    ('36-37D orbit exchange: rejection controls',
+     os.path.join(V, 'improved', 'dim36-37-orbit-exchange'), ['rejection_controls.py'], 0.3, True),
+    ('61-67D compatible sign families: fresh exact code and layer replay',
+     os.path.join(V, 'improved', 'dim61-67-compatible-sign-families'), ['verify.py'], 1.0, True),
+    ('61-67D compatible sign families: rejection controls',
+     os.path.join(V, 'improved', 'dim61-67-compatible-sign-families'), ['rejection_controls.py'], 0.6, True),
+    ('68-69D extended Gamma72 moments: exact profiles, duals and geometry',
+     os.path.join(V, 'improved', 'dim68-69-gamma72-extended-moments'), ['verify.py', '--enumerate'], 0.3, True),
+    ('68-69D extended Gamma72 moments: independent exact proof',
+     os.path.join(V, 'improved', 'dim68-69-gamma72-extended-moments'), ['verify_independent.py'], 0.5, True),
+    ('68-69D extended Gamma72 moments: rejection controls',
+     os.path.join(V, 'improved', 'dim68-69-gamma72-extended-moments'), ['rejection_controls.py'], 0.1, True),
     ('49-60D signed P48 refill: complete finite family verification',
      os.path.join(V, 'improved', 'dim49-60-p48-signed-refill'), ['verify.py'], 6.0, True),
     ('69D head compression: two exact proofs and rejection controls',
@@ -401,6 +415,14 @@ JOBS.append(('49-60D pointwise P48 refill: two exact proofs and complete tails',
 # driver, a manifest, or the GPU run's receipt.
 def _sota_jobs(quick=False):
     wanted = {
+        ('dim36-37-orbit-exchange', ('verify.py',)),
+        ('dim36-37-orbit-exchange', ('rejection_controls.py',)),
+        ('dim61-67-compatible-sign-families', ('verify.py',)),
+        ('dim61-67-compatible-sign-families', ('rejection_controls.py',)),
+        ('dim68-69-gamma72-extended-moments', ('verify.py', '--enumerate')),
+        ('dim68-69-gamma72-extended-moments', ('verify_independent.py',)),
+        ('dim68-69-gamma72-extended-moments', ('rejection_controls.py',)),
+        ('dim49-60-p48-signed-refill', ('verify.py',)),
         ('dim28-29-november-sextets', ('verify.py',)),
         ('dim49-60-p48-pointwise-refill', ('verify.py',)),
         ('dim54-59-p48-coverage', ('verify.py',)),
@@ -500,6 +522,12 @@ def _sota_records():
 def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
+        ('dim36-37-orbit-exchange', [36,37], [('verify.py',), ('rejection_controls.py',)],
+         'fresh exact Coxeter-Todd source replay and all replacement interactions; no floating-point angle tolerance'),
+        ('dim61-67-compatible-sign-families', list(range(61,68)), [('verify.py',), ('rejection_controls.py',)],
+         'fresh exact compatible-support, sign-family, code and layer replay with malformed-input controls'),
+        ('dim68-69-gamma72-extended-moments', [68,69], [('verify.py','--enumerate'), ('verify_independent.py',), ('rejection_controls.py',)],
+         'two independent exact D7 profile/population and geometry proofs; published Gamma72 inputs, finite orientation existence and two 69D poles; no ambient shell enumeration'),
         ('dim28-29-november-sextets', [28,29], [('verify.py',)], 'complete exact integer geometry with no tolerance; independent direct-int64 inserted pairs and pinned source reconstruction; no inherited geometry assumptions'),
         ('dim49-60-p48-pointwise-refill', list(range(49,61)), [('verify.py',)], 'two exact head proofs; every added pair and full-coordinate ownership; complete direction and pole checks; published P48 minimum/population'),
         ('dim54-59-p48-coverage', list(range(54,60)), [('verify.py',)], 'exact root/quadratic tails, 7783-line base, class isometries and full-coordinate disjointness; published P48 minimum/population'),

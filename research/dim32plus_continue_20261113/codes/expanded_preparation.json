@@ -1,0 +1,18 @@
+[
+  {
+    "dimension": 66,
+    "candidates": 62720,
+    "extra_supports": 3200,
+    "global_seed": 1814,
+    "published_seed": 1803,
+    "chosen": 1814
+  },
+  {
+    "dimension": 67,
+    "candidates": 18816,
+    "extra_supports": 9600,
+    "global_seed": 1699,
+    "published_seed": 1792,
+    "chosen": 1792
+  }
+]

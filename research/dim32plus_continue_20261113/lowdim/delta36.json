@@ -1,0 +1,74 @@
+{
+  "format": "ct_current_phase_exchange_v1",
+  "baseline_proposal_sha256": "6a88389c8adcdff44b9cd8ef09edaa0bbc9c98af8db4879296c4d4f9ef25356d",
+  "baseline_certificate_sha256": "09e5fcfd11cf09a11d68cac48c923928f26591245923921d20a5e7ee8186d16a",
+  "remove_phase_orbits": [
+    [
+      23,
+      77,
+      23,
+      0,
+      1
+    ],
+    [
+      23,
+      77,
+      23,
+      1,
+      1
+    ],
+    [
+      23,
+      77,
+      23,
+      2,
+      1
+    ]
+  ],
+  "add_phase_orbits": [
+    [
+      23,
+      105,
+      23,
+      0,
+      1
+    ],
+    [
+      23,
+      105,
+      23,
+      1,
+      1
+    ],
+    [
+      23,
+      105,
+      23,
+      2,
+      1
+    ],
+    [
+      38,
+      77,
+      12,
+      0,
+      2
+    ],
+    [
+      38,
+      77,
+      12,
+      1,
+      2
+    ],
+    [
+      38,
+      77,
+      12,
+      2,
+      2
+    ]
+  ],
+  "points_36": 501822,
+  "points_37": 505638
+}

@@ -1,18 +1,20 @@
 # Shared parity repairs improve every dimension from 61 through 68
 
-Checkpoint: 28 October 2026. These constructions replace the preceding
+**Retained construction.** Current bounds in 61–67D use [larger compatible sign families](../../../dim61-67-compatible-sign-families/); 68D uses [extended Gamma72 moments](../../../dim68-69-gamma72-extended-moments/).
+
+Checkpoint: 28 October 2026. These constructions replaced the preceding
 repository constructions in eight dimensions:
 
-| Dimension | Previous bound | New bound | Gain |
-|---|---:|---:|---:|
-| 61 | 87,056,170 | **88,260,394** | 1,204,224 |
-| 62 | 120,620,044 | **121,824,268** | 1,204,224 |
-| 63 | 182,537,988 | **184,286,468** | 1,748,480 |
-| 64 | 332,170,112 | **335,496,064** | 3,325,952 |
-| 65 | 332,238,338 | **335,564,290** | 3,325,952 |
-| 66 | 338,302,340 | **341,994,884** | 3,692,544 |
-| 67 | 351,420,806 | **355,090,822** | 3,670,016 |
-| 68 | 371,552,152 | **375,222,168** | 3,670,016 |
+| Dimension | Previous bound | Retained bound | Gain | Current repository bound |
+|---|---:|---:|---:|---:|
+| 61 | 87,056,170 | **88,260,394** | 1,204,224 | **88,975,146** |
+| 62 | 120,620,044 | **121,824,268** | 1,204,224 | **122,539,020** |
+| 63 | 182,537,988 | **184,286,468** | 1,748,480 | **184,393,988** |
+| 64 | 332,170,112 | **335,496,064** | 3,325,952 | **335,711,104** |
+| 65 | 332,238,338 | **335,564,290** | 3,325,952 | **335,779,330** |
+| 66 | 338,302,340 | **341,994,884** | 3,692,544 | **342,271,364** |
+| 67 | 351,420,806 | **355,090,822** | 3,670,016 | **355,095,446** |
+| 68 | 371,552,152 | **375,222,168** | 3,670,016 | **471,886,208** |
 
 The baseline is commit `816e291`. The total gain across these eight separate
 dimensions is 21,841,408 points. Dimensions 49--60 and 69--72 retain their

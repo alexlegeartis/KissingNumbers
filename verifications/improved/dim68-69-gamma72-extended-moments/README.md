@@ -1,0 +1,270 @@
+# Dimensions 68 and 69: Gamma72 counts from an extended normal system
+
+This package proves the following lower bounds from the published properties of
+Nebe's extremal 72-dimensional lattice:
+
+| Dimension | Previous repository bound | This package | Increase |
+| --- | ---: | ---: | ---: |
+| 68 | 471,884,288 | **471,886,208** | 1,920 |
+| 69 | 743,522,304 | **746,325,051** | 2,802,747 |
+
+The 69D improvement is approximately 0.377%. These are lower bounds on the kissing
+numbers, not claims to determine the kissing numbers exactly. They are existence
+proofs using finite profile counts; the configurations' hundreds of millions of
+points are not explicitly enumerated.
+
+The geometry is inherited from the existing D4 projection and head compression.
+The new ingredient is an actual D7 normal system, whose mixed moment constraints
+give stronger lower bounds on the source populations. Three extra normal
+coordinates are used for counting and remain inside the geometric body.
+
+## Verify
+
+Run from this directory, with standard Python and no third-party dependencies:
+
+```sh
+python verify.py --enumerate
+python verify_independent.py
+python rejection_controls.py
+```
+
+All three programs are exact. The optional `--enumerate` flag makes the primary
+checker directly sum every possible profile to cross-check its compact orbit
+formulas. The independent checker implements its own profile enumeration, D4
+orbit traversal, moment sums, actual root membership, duality, and geometry; it
+imports neither `verify.py` nor `exact_orbits.py`.
+
+The primary checker validates both certificates by default. To check only one:
+
+```sh
+python verify.py certificate69.json --enumerate
+```
+
+Do not run with Python's `-O` option: the programs deliberately reject execution
+with assertions disabled. `rejection_controls.py` checks that altered counts,
+dual multipliers, moments, geometry, normal vectors, and source data are rejected.
+
+## Published inputs and source boundary
+
+The argument assumes the published facts that Gamma72 is integral, has minimum
+squared norm 8, has **6,218,175,600** minimal vectors, and that this minimal shell
+is a spherical **11-design**. See [Nebe's construction paper](https://arxiv.org/abs/1008.2862),
+the [lattice catalogue entry](https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/neb72.html),
+and [Nebe's account of Venkov's design theorem](https://www.math.rwth-aachen.de/~Gabriele.Nebe/papers/venklat.pdf).
+The same premises and catalogue input were used in the preceding verified packages.
+
+`embedding.json` preserves the catalogue Gram matrix and its original provenance.
+Its SHA256 is pinned in the checker:
+
+```text
+5f180d5d6c737010083e72210e16b92926ec2e79ed9a0891d0960a018b2d7842
+```
+
+The checker verifies all subsequent algebra and geometry. It does not reprove
+the lattice's global minimum or the design theorem.
+
+## 1. An actual D7 normal system
+
+Using zero-based coordinates in the supplied 72-dimensional integer basis, choose
+
+```text
+u0 = e0
+u1 = e3
+u2 = e4
+u3 = e16
+u4 = -e0 - e16 + e17
+u5 = e1 + e2 - e5 - e18
+u6 = -e2 + e4 - e6 - e7 + e9 + e16
+```
+
+`d7_embedding.json` contains the full vectors. Their Gram matrix has diagonal 8
+and entry -4 at edges `(0,1)`, `(0,2)`, `(0,3)`, `(3,4)`, `(4,5)`, `(5,6)`;
+all other off-diagonal entries vanish. The checker obtains this matrix directly
+from the supplied integer vectors and the catalogue Gram matrix.
+
+In orthonormal normal coordinates this is the root lattice `2D7`. A root basis is
+twice the rows of the following integer matrix:
+
+\[
+B=\begin{pmatrix}
+1&-1&0&0&0&0&0\\
+0&1&-1&0&0&0&0\\
+0&1&1&0&0&0&0\\
+-1&0&0&1&0&0&0\\
+0&0&0&-1&1&0&0\\
+0&0&0&0&-1&1&0\\
+0&0&0&0&0&-1&1
+\end{pmatrix}.
+\]
+
+The determinant has absolute value 2. Its rows generate D7, so all 84 roots
+`2*(+/-e_i +/-e_j)` are actual lattice vectors of squared norm 8. Signed
+coordinate permutations are integral changes of this root basis. This does not
+require those transformations to be automorphisms of the ambient lattice.
+
+## 2. Complete profile domain
+
+For a minimal vector `v`, write its projection to the seven-dimensional normal
+space as `h/4`. Since every scalar product with a normal is integral,
+
+\[
+h=2B^{-1}(\langle u_i,v\rangle)_i
+\]
+
+has integral coordinates of common parity. If `v` is not one of the 84 normal
+roots, minimum 8 applied to its differences with those roots gives
+
+\[
+|h_i|+|h_j|\le8\quad(i\ne j).
+\]
+
+Projection also gives `|h|^2<=128`. These conditions leave **162,969** possible
+profiles, partitioned into **60** signed-permutation orbits. The independent
+checker generates the domain directly. No feasible profile is discarded by a
+numerical threshold.
+
+The 84 known normal roots are outside this domain. Their exact contributions
+are subtracted from all moment right sides.
+
+## 3. Nested orientation averaging
+
+The geometric construction removes only the first four normal coordinates. For
+a four-coordinate profile `a`, let `O(a)` be its orbit under the full D4 root
+symmetry group, generated by signed permutations and the half-Hadamard map
+
+\[
+(a,b,c,d)\longmapsto\tfrac12
+(a+b+c+d,\ a+b-c-d,\ a-b+c-d,\ a-b-c+d).
+\]
+
+Let `S` be the selected four-coordinate profiles for the desired dimension, and
+define
+
+\[
+f(a)=\frac{|O(a)\cap S|}{|O(a)|}.
+\]
+
+For a D7 signed-permutation orbit `G`, the objective coefficient is
+
+\[
+c_G=\sum_{h\in G}f(h_1,h_2,h_3,h_4).
+\]
+
+This is a literal finite average: first average the selected slices over the D4
+orientations inside the first four coordinates, then average the D7 orientation
+over signed permutations. Every resulting four-normal tuple consists of actual
+integer combinations of lattice roots. The internal D4 transformation need not
+extend to D7; it is already valid inside its four-dimensional normal subspace.
+
+The extra three normal coordinates are marginalized in this objective. They stay
+in the **68-dimensional body** used by the original geometric map. Thus the
+larger counting model does not cost any output dimension.
+
+The known D7 roots contribute zero to these two objectives. Their first four
+coordinates are zero, a single `+/-8`, or a D4 root, and none is in a selected
+orbit. The checker verifies this explicitly.
+
+## 4. Exact population certificates
+
+For even exponents `2*a_i` with `s=sum(a_i)<=5`, the spherical design identity is
+
+\[
+\sum_{v\in\operatorname{Min}(\Gamma_{72})}\prod_i h_i(v)^{2a_i}
+=N128^s\frac{\prod_i(2a_i-1)!!}{72\cdot74\cdots(72+2s-2)}.
+\]
+
+After subtracting the known normal roots, signed-permutation averaging yields
+18 independent moment equations. The JSON certificates contain primitive integer
+rows `A`, right sides `b`, exact rational objectives `c`, rational duals `y`, and
+every dual slack. They contain no optimizer-dependent proof step.
+
+If `x_G` is the nonnegative average population per profile in orbit `G`, then
+`A*x=b`. The checker verifies
+
+\[
+A^Ty\le c.
+\]
+
+Consequently the average selected population is at least `b^T*y`. Some actual
+orientation has an integer population at least the ceiling of that value.
+
+| Dimension | Exact dual value | Integer source population | Added poles | Final bound |
+| --- | ---: | ---: | ---: | ---: |
+| 68 | 471,886,208 | 471,886,208 | 0 | 471,886,208 |
+| 69 | 6,716,925,440 / 9 | 746,325,049 | 2 | 746,325,051 |
+
+The ceiling in the second row is essential. Two further valid points are then
+added geometrically, giving **746,325,051** in dimension 69.
+
+## 5. Exact geometry
+
+Let `p=h/4` be the four-dimensional removed component and `b=v-p` the remaining
+68-dimensional body. Put `q=|h|^2/16`. The 69D map for a selected profile is
+
+\[
+F(v)=(\alpha_h b,t_h),\qquad
+\alpha_h^2=\frac{8-t_h^2}{8-q}.
+\]
+
+The selected profiles and rational heights are:
+
+| Profile `h` | Height `t` |
+| --- | ---: |
+| `(-1,1,1,1)` | 1/8 |
+| `(-2,-2,-2,2)` | -1 |
+| `(-1,-1,1,1)` | -2/15 |
+| `(0,0,0,2)` | 0 |
+| `(1,1,1,1)` | 1/2 |
+| `(-1,-1,-1,1)` | -1/2 |
+| `(-2,0,0,2)` | -4/15 |
+| `(0,0,2,2)` | 4/15 |
+| `(1,1,1,3)` | 1/2 |
+| `(2,2,2,2)` | 1 |
+
+All outputs have squared norm 8. Distinct source minimal vectors satisfy
+`<v,w><=4`, so for profiles `h_i,h_j` their images satisfy
+
+\[
+\langle F(v),F(w)\rangle
+\le \alpha_i\alpha_j(4-h_i\cdot h_j/16)+t_it_j.
+\]
+
+The checker verifies all 55 diagonal/cross profile cases by checking the signs and
+the exact rational inequality
+
+\[
+(4-t_it_j)^2-\alpha_i^2\alpha_j^2(4-h_i\cdot h_j/16)^2\ge0.
+\]
+
+For dimension 68 the six profiles are `(0,0,-2,0)`, `(1,1,-1,1)`,
+`(1,1,-1,-1)`, `(2,0,-2,0)`, `(0,2,-2,0)`, `(2,2,-4,0)`, all with zero height.
+The same verification covers its 21 diagonal/cross cases in 68 dimensions.
+
+For 69D, all heights have absolute value at most 1. The two pure head points
+`(0,+sqrt(8))` and `(0,-sqrt(8))` have scalar product at most 4 with every image
+and with each other. Each old image has a positive body radius, so these poles
+are additional, distinct points.
+
+After division by `sqrt(8)`, the configurations are on the unit sphere with all
+distinct pair products at most `1/2`, as required for kissing configurations.
+
+## Files and independent review
+
+| File | Role |
+| --- | --- |
+| `certificate68.json`, `certificate69.json` | Exact population and geometry data |
+| `embedding.json` | Pinned catalogue Gram matrix and original provenance |
+| `d7_embedding.json` | Seven explicit integer normals and their Gram matrix |
+| `exact_orbits.py` | Standard-library combinatorial orbit formulas |
+| `verify.py` | Primary exact checker, with optional direct profile sums |
+| `verification.json` | Fresh primary result with direct profile sums enabled |
+| `verify_independent.py` | Independent direct-enumeration checker |
+| `independent_verification.json`, `INDEPENDENT_REVIEW.md` | Independent result and mathematical review |
+| `rejection_controls.py`, `rejection_controls.json` | Malformed-proof and geometry rejection checks |
+| `SHA256.json` | Package file hashes |
+| `final.py` | Registry driver that derives both totals after an exact replay |
+
+The exploratory LPs, sparse normal searches, alternative normal systems, head
+grids, and unsuccessful extensions are documented in
+`research/dim32plus_continue_20261113/gamma/` at the repository root. Those
+generated pools and numerical outputs are research data, not certificates.

@@ -1,0 +1,72 @@
+{
+  "families": [
+    {
+      "certificate": "global64.json",
+      "changed_pair_checks": 61687150,
+      "new_new_repairs": 303,
+      "new_supports": 1940,
+      "old_new_repairs": 15520,
+      "old_supports": 30828,
+      "sha256": "8c0c35f8127c578118f1f09e5950d712a272db32f2d50f382e6fe32f46c6dbf5"
+    },
+    {
+      "certificate": "short61_62.json",
+      "changed_pair_checks": 9502117,
+      "new_new_repairs": 99,
+      "new_supports": 937,
+      "old_new_repairs": 4046,
+      "old_supports": 9673,
+      "sha256": "d9f5744e5c92745ab6f5cc8bb144f0bd7862dfc4c69a3371c2759b408a24e598"
+    }
+  ],
+  "geometry": {
+    "dense61_cases": 736,
+    "dense61_count": 67108864,
+    "dense62_cases": 36,
+    "dense62_count": 100663296,
+    "dense_projection_rank": 4,
+    "four_support_counts": {
+      "61": 8555,
+      "62": 9145,
+      "64": 10416
+    },
+    "notes": "65D changes the dense layer to the inherited BCH radical; all sparse interactions use only amplitudes. Owners use no weight-16 point.",
+    "owner65_count": 68224
+  },
+  "independently_checked": [
+    "Explicit RM(1,4) duals, affine phases, independently generated kernels, and every new/old and new/new support intersection.",
+    "All 72 dual-octad candidates and the selected 63D section, including explicit affine sign enumeration.",
+    "61D/62D dense geometry and cardinalities, sparse amplitude interactions, and the affine-plane quadruple design.",
+    "65D cap transfer to the changed weight-sixteen layers."
+  ],
+  "pinned_source_files": {
+    "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/code64_supports.npz": "cdbd5e5a7bbda9ddb84ee86052e2d4d00ccc331f0188de958a69ed83b0c529f6",
+    "verifications/improved/dim61-68-95-96-code-layers/source/shared_parity/dual_octads.json": "b7a608049cb57407abe234168da4ebf752e6f01418b8384cfad5971f1acdb11a"
+  },
+  "review": "No mathematical gap found in the reviewed scope. The 63D untouched sign orders may be chosen for its octad; 65D uses the separately replayed BCH dense layer.",
+  "section63": {
+    "explicit_sign_words_enumerated": 7643136,
+    "octad": 1284508757262368,
+    "terms": {
+      "dense": 146800640,
+      "four_supports": 102900,
+      "new_sparse": 1986560,
+      "old_sparse": 35503776,
+      "poles": 112
+    },
+    "total": 184393988
+  },
+  "separately_replayed_inputs": [
+    "The parent [64,28,16] code minimum and exact weight-sixteen support list are replayed by check_family.cpp in the main verifier.",
+    "The unchanged 65D BCH radical and 68,224-owner certificate are replayed by replay_parents.py; this independent review checks their transfer.",
+    "The 66D and 67D retained parent supports, Netto quadruples, and 67D baseline and new subcodes are covered by the other package verifiers."
+  ],
+  "status": "PASS",
+  "totals": {
+    "61": 88975146,
+    "62": 122539020,
+    "63": 184393988,
+    "64": 335711104,
+    "65": 335779330
+  }
+}

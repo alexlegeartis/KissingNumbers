@@ -1,0 +1,16 @@
+{
+  "source_sha256": "b37691e110c73f1100112aea1a4dc39e2a911559a7a49c67c88bb303f6cd8760",
+  "proposal_sha256": "6a88389c8adcdff44b9cd8ef09edaa0bbc9c98af8db4879296c4d4f9ef25356d",
+  "base_triangles_switched": 90,
+  "base_points": 403704,
+  "admitted_cells": 722728,
+  "pool_orbits": 6444168,
+  "selected_orbits": 32703,
+  "preserved_lifts": true,
+  "safe_label_pairs": {
+    "(0, 1)": 22604,
+    "(0, 2)": 22556,
+    "(1, 2)": 22684
+  },
+  "elapsed_seconds": 4.565841197967529
+}

@@ -1,0 +1,14 @@
+{
+  "global64": {
+    "candidates": 112896,
+    "seed_supports": 1835,
+    "removed_mask": 0,
+    "odd": false
+  },
+  "short61": {
+    "candidates": 34272,
+    "seed_supports": 588,
+    "removed_mask": 45040394336993280,
+    "odd": true
+  }
+}

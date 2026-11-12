@@ -1,0 +1,97 @@
+{
+  "all_affected_pairs_pass": true,
+  "points_36": 501822,
+  "points_37": 505638,
+  "gain_each": 9,
+  "removed_orbits": 3,
+  "added_orbits": 6,
+  "certificate_sha256": "6c27172fbead6928f7448ce3bfb51f47576df34f12c8e4d3eea831ad9d6dbf4e",
+  "short_shell_counts": {
+    "4": 756,
+    "6": 4032,
+    "8": 20412
+  },
+  "categories": {
+    "added_vs_current_base": {
+      "ordered_products": 7266672,
+      "maximum": 6,
+      "limit": 6
+    },
+    "added_vs_all_final_phase_points": {
+      "ordered_products": 1766106,
+      "maximum": 6,
+      "limit": 6
+    },
+    "added_vs_all_latitude_bodies": {
+      "ordered_products": 34344,
+      "maximum": 5,
+      "limit": 6
+    }
+  },
+  "unchanged_pairs": "Inherited from pinned triangle-switch certificate",
+  "enumeration": "Fresh rational enumeration of all short lattice shells",
+  "arithmetic": "Exact int64 coordinate products with explicit overflow bound",
+  "elapsed_seconds": 48.11839102600061,
+  "baseline_freshly_replayed": true,
+  "source_sha256": {
+    "completion/certificate.json": "b37691e110c73f1100112aea1a4dc39e2a911559a7a49c67c88bb303f6cd8760",
+    "completion/verify.py": "4c36c65de1383b5a3db81dc58e51355256fb7ede9afedef269154001bc117db3",
+    "phase/exact_lattice.py": "5efd39c031287f0f2e3508a4336a715817d7b3786debabd8ea339c95dd5df2d1",
+    "triangle_switch/certificate.json": "09e5fcfd11cf09a11d68cac48c923928f26591245923921d20a5e7ee8186d16a",
+    "triangle_switch/proposal.json": "6a88389c8adcdff44b9cd8ef09edaa0bbc9c98af8db4879296c4d4f9ef25356d",
+    "triangle_switch/switches.json": "54096729335bfcffb792dc06c3d807ad53ceaea939de2b9acbda4f7791729774",
+    "triangle_switch/verify.py": "48acf68fbafeda8f829f1aea51b606333c20b6fbd03adb93e54c7d024c994ba7"
+  },
+  "baseline_proof": {
+    "points_36": 501813,
+    "points_37": 505629,
+    "all_checks_pass": true,
+    "point_pair_checks": {
+      "new_equator_vs_all_final_base": {
+        "count": 1829990232,
+        "maximum_inner_product": 6,
+        "passed": true
+      },
+      "changed_base_vs_retained_base": {
+        "count": 108927180,
+        "maximum_inner_product": 6,
+        "passed": true
+      },
+      "changed_base_internal": {
+        "count": 36315,
+        "maximum_inner_product": 6,
+        "passed": true
+      },
+      "changed_base_vs_all_final_equator": {
+        "count": 26489430,
+        "maximum_inner_product": 6,
+        "passed": true
+      },
+      "new_equator_vs_all_final_equator": {
+        "count": 444723564,
+        "maximum_inner_product": 6,
+        "passed": true
+      },
+      "changed_base_vs_lift_bodies": {
+        "count": 515160,
+        "maximum_inner_product": 5,
+        "passed": true
+      },
+      "new_equator_vs_lift_bodies": {
+        "count": 8648964,
+        "maximum_inner_product": 6,
+        "passed": true
+      },
+      "distinct_lift_body_pairs": {
+        "count": 1819278,
+        "maximum_inner_product": 2,
+        "passed": true
+      }
+    },
+    "source_short_shell_counts": {
+      "4": 756,
+      "6": 4032,
+      "8": 20412
+    }
+  }
+}

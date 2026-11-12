@@ -1,0 +1,60 @@
+  audit: all 70 claims, mutual and external consistency      ~ 0.5 min   audit.py --repository-only
+  36-37D orbit exchange: fresh exact geometric replay        ~ 1.0 min   verify.py
+  36-37D orbit exchange: rejection controls                  ~ 0.3 min   rejection_controls.py
+  61-67D compatible sign families: fresh exact code and layer replay ~ 1.0 min   verify.py
+  61-67D compatible sign families: rejection controls        ~ 0.6 min   rejection_controls.py
+  68-69D extended Gamma72 moments: exact profiles, duals and geometry ~ 0.3 min   verify.py --enumerate
+  68-69D extended Gamma72 moments: independent exact proof   ~ 0.5 min   verify_independent.py
+  68-69D extended Gamma72 moments: rejection controls        ~ 0.1 min   rejection_controls.py
+  49-60D signed P48 refill: complete finite family verification ~ 6.0 min   verify.py
+  dims28,29: November sextet unions, complete exact geometry and direct integer changes ~ 4.0 min   verify.py
+  common: the cap construction's algebra and count, exactly  ~ 0.1 min   capalgebra.py
+  dim 18: the 8358-point bent-coset hexagon over the odd Barnes-Wall lattice, exactly ~ 0.5 min   verify18.py
+  p48-heads: dims 41-46, partial 43D and coordinated 45D, inherited populations ~ 3.0 min   verify.py
+  Z8 Golay: dimensions 88-96, two exact compressed-construction proofs ~ 5.0 min   verify.py
+  dims 32-35: signed layers and coordinated heads, two independent exact proofs ~ 1.0 min   verify.py
+  dim25-critical-cluster: independent exact proof            ~ 1.0 min   verify.py
+  dim25-critical-cluster: arithmetic and corruption controls ~ 1.0 min   self_test.py
+  dim38-joint-latitudes: independent exact replay            ~ 1.0 min   verify.py
+  dim39-deformed-orbits: independent exact replay            ~ 1.0 min   verify.py
+  dim40-affine-shells: independent exact replay              ~ 5.0 min   verify.py
+  dims 73, 77-79, 82-85, 87: norm-ten addition and exact existence proofs ~ 0.3 min   verify_norm10.py
+  dim 73: completed lattice plus non-lattice cap surgery     ~ 0.1 min   verify73.py
+  october-cosets: Gamma72 nearest subsets and all repaired/scaled cross products ~60.0 min   verify.py
+  dims 70, 71: cross-sections of Gamma_72                    ~ 0.2 min   derive.py
+
+  24 scripts, about 94 minutes
+
+Verification scope for 66 results labelled SOTA in README.md:
+  36,37                    SELECTED dim36-37-orbit-exchange
+      fresh exact Coxeter-Todd source replay and all replacement interactions; no floating-point angle tolerance
+  61,62,63,64,65,66,67     SELECTED dim61-67-compatible-sign-families
+      fresh exact compatible-support, sign-family, code and layer replay with malformed-input controls
+  68,69                    SELECTED dim68-69-gamma72-extended-moments
+      two independent exact D7 profile/population and geometry proofs; published Gamma72 inputs, finite orientation existence and two 69D poles; no ambient shell enumeration
+  28,29                    SELECTED dim28-29-november-sextets
+      complete exact integer geometry with no tolerance; independent direct-int64 inserted pairs and pinned source reconstruction; no inherited geometry assumptions
+  18                       SELECTED dim18-bent-hexagon
+  32,33,34,35              SELECTED dim32-35-signed-layers
+      two independent exact representations; full dense-code enumeration and every exceptional pair type
+  25                       SELECTED dim25-critical-cluster
+      independently rebuilt Golay/Leech shell; complete exact pair coverage with rational conic contact preservation, integer intervals and exact biquadratic signs; seven corruption controls
+  40                       SELECTED dim40-affine-shells
+  38                       SELECTED dim38-joint-latitudes
+  39                       SELECTED dim39-deformed-orbits
+  41,42,43,44,45,46        SELECTED dim41-46-p48-heads
+      inherited body populations; the latest large shells are not all freshly enumerated
+  49,50,51,52,53,54,55,56,57,58,59,60 SELECTED dim49-60-p48-signed-refill
+      complete signed class geometry, ownership and tails; published P48 minimum and shell population
+  70,71                    SELECTED dim70-71-gamma72-cross-sections
+  73                       SELECTED dim73-88-gamma72-cosets
+      completed half-coset minimum, cap surgery, all refilled norm-ten heads in two exact arithmetics and non-lattice witness; published Gamma72 parent facts
+  77,78,79,82,83,84,85,87  SELECTED dim73-88-gamma72-cosets
+      exact finite-graph existence proofs; published Gamma72 minimum and all-shell design theorem; no full selected head list
+  74,75,76,80,81,86        SELECTED dim73-88-gamma72-cosets
+      seed nearestness inherits 21 completed block-enumeration lists and their completion metadata
+  88,89,90,91,92,93,94,95,96 SELECTED dim88-96-z8-golay
+      published nonlinear parent; complete finite distance proof, both support representations and exact section counts; no full 2^37-word enumeration
+PASS covers the replay described above, with published parent lattice/code facts as inputs.
+SAME reuses earlier checks after input hashing. DEFERRED and GAP are not fresh verification.
+This profile does not check whether a later publication has surpassed a README record.
