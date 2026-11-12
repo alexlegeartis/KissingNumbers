@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "controls": {
+    "duplicate": {
+      "python": "REJECTED",
+      "cpp": "REJECTED",
+      "cpp_exit": 5,
+      "reason": "bad pair 15622 0 6"
+    },
+    "wrong_norm": {
+      "python": "REJECTED",
+      "cpp": "REJECTED",
+      "cpp_exit": 4,
+      "reason": "bad norm 0 10"
+    },
+    "positive_product_three": {
+      "python": "REJECTED",
+      "cpp": "REJECTED",
+      "cpp_exit": 5,
+      "reason": "bad pair 15608 5937 3"
+    }
+  }
+}

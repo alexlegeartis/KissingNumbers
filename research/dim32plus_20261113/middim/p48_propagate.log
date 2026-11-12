@@ -1,0 +1,13 @@
+template removed 32 added 56
+{'dimension': 49, 'bound': 52431624, 'baseline': 52431600, 'gain': 24, 'changed_classes': 1, 'signed_removed': 32, 'signed_added': 56, 'seconds': 0.5432517528533936}
+{'dimension': 50, 'bound': 52462872, 'baseline': 52462800, 'gain': 72, 'changed_classes': 3, 'signed_removed': 96, 'signed_added': 168, 'seconds': 1.185239315032959}
+{'dimension': 51, 'bound': 52509740, 'baseline': 52509596, 'gain': 144, 'changed_classes': 6, 'signed_removed': 192, 'signed_added': 336, 'seconds': 2.402961492538452}
+{'dimension': 52, 'bound': 52603402, 'baseline': 52603116, 'gain': 286, 'changed_classes': 12, 'signed_removed': 382, 'signed_added': 668, 'seconds': 4.628856182098389}
+{'dimension': 53, 'bound': 52728054, 'baseline': 52727584, 'gain': 470, 'changed_classes': 20, 'signed_removed': 638, 'signed_added': 1108, 'seconds': 7.432209491729736}
+{'dimension': 54, 'bound': 52976623, 'baseline': 52975804, 'gain': 819, 'changed_classes': 36, 'signed_removed': 1146, 'signed_added': 1965, 'seconds': 13.660804033279419}
+{'dimension': 55, 'bound': 53393546, 'baseline': 53392162, 'gain': 1384, 'changed_classes': 63, 'signed_removed': 1989, 'signed_added': 3373, 'seconds': 23.649826765060425}
+{'dimension': 56, 'bound': 54263398, 'baseline': 54260992, 'gain': 2406, 'changed_classes': 120, 'signed_removed': 3737, 'signed_added': 6143, 'seconds': 42.422218322753906}
+{'dimension': 57, 'bound': 54760693, 'baseline': 54757822, 'gain': 2871, 'changed_classes': 153, 'signed_removed': 4735, 'signed_added': 7606, 'seconds': 52.214186906814575}
+{'dimension': 58, 'bound': 56270076, 'baseline': 56266316, 'gain': 3760, 'changed_classes': 255, 'signed_removed': 7674, 'signed_added': 11434, 'seconds': 90.10278034210205}
+{'dimension': 59, 'bound': 56952414, 'baseline': 56948468, 'gain': 3946, 'changed_classes': 302, 'signed_removed': 8933, 'signed_added': 12879, 'seconds': 79.416264295578}
+{'dimension': 60, 'bound': 58631571, 'baseline': 58627711, 'gain': 3860, 'changed_classes': 407, 'signed_removed': 11663, 'signed_added': 15523, 'seconds': 86.19794464111328}

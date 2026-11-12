@@ -1,0 +1,7 @@
+__pycache__/
+*.npz
+heads_k*.txt
+dheads_k*.txt
+twoheads_k*.txt
+head_search
+multihead_search

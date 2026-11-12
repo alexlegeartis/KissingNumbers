@@ -1,0 +1,23 @@
+# Reproducible local cache and compiler output.
+__pycache__/
+*.py[cod]
+*.o
+*.so
+*.bin
+*.npy
+
+# Discovery outputs. The frozen final witnesses live in the canonical package.
+/profile_*.npz
+/p48_signed_class.npz
+/p48_signed_class_lns.npz
+/p48_signed_delta*.json
+/p48_signed_delta*.json.gz
+
+# Local copies of the canonical proof implementation and replay receipts.
+/verify_single_class.py
+/verify_signed_family.py
+/check_signed_class.cpp
+/negative_controls.py
+/single_class_verification.json
+/negative_controls.json
+/signed_family_*.jsonl

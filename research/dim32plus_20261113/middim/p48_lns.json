@@ -1,0 +1,15 @@
+{
+  "count": 15622,
+  "baseline": 15598,
+  "gain": 24,
+  "history": [
+    {
+      "round": 0,
+      "before": 15614,
+      "after": 15622,
+      "removed": 16,
+      "added": 24,
+      "elapsed": 5.796300888061523
+    }
+  ]
+}

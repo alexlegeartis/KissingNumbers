@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "dimension": 69,
+  "certified_lower_bound": 743522304,
+  "previous_registered_bound": 689452922,
+  "gain": 54069382,
+  "exact_dual_value": "743522304",
+  "profile_cells": 1681,
+  "normal_roots": 24,
+  "averaging_orbits": 16,
+  "moment_rows": 10,
+  "pair_types": 55,
+  "minimum_positive_squared_gap": "1/180",
+  "certificate_sha256": "e2a91d0dc90b110426d2c3278a43630c94261030118e5eb36e6523f960aa52d0",
+  "root_basis_certificate_sha256": "a7bd1e07f6083a38e4059edec79eadac8b722b30c5fadb29cddf9ae4196b9d97",
+  "corruption_tests": [
+    {
+      "name": "false_count",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "wrong_shell_population",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "duplicate_slice",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "wrong_dual_parity",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "missing_profile_cell",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "false_moment_rhs",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "false_moment_coefficient",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "false_objective",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "negative_dual_denominator",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "false_dual_multiplier",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "excessive_same_slice_height",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "cross_slice_collision_risk",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "wrong_normal_embedding_with_refreshed_hash",
+      "rejected": true,
+      "exception": "AssertionError"
+    }
+  ],
+  "mathematical_findings": [
+    "Finite normal-coordinate averaging requires no automorphism of the ambient Gamma72 lattice.",
+    "Integral products with the embedded 2D4 roots imply exactly the common-parity profile lattice.",
+    "The domain covers every non-normal-root minimal vector; all 24 omitted normal roots are subtracted in the moments.",
+    "Within a profile the projection map is injective. Between profiles the verified norm and pair bounds rule out image collisions.",
+    "All squared geometric inequalities have explicitly checked nonnegative sides.",
+    "The integer lower bound follows from a favorable finite orientation and exact rational weak duality, not a numerical LP status."
+  ],
+  "inherited_premises": [
+    "The supplied catalogue Gram matrix describes the cited integral even 72-dimensional Gamma72 lattice.",
+    "Its minimum is 8, its minimal shell has population 6218175600, and that shell is a spherical 11-design."
+  ],
+  "scope": "Third exact arithmetic and mathematical review. It does not reprove the published lattice existence/minimum/design theorems or enumerate all source points.",
+  "final_package_controls": {
+    "status": "PASS",
+    "valid_baselines": 2,
+    "rejected_corruptions": 26,
+    "source_sha256": {
+      "verify.py": "040e377aec30ea75eeed555625c3e5c6f15e805f9539ab2a3b67adc5f3bdb2f8",
+      "verify_orthonormal.py": "e2a0eb660c76a8b73930bf51d34f108ad84e64a0be61bfbc604621da78185a43",
+      "certificate.json": "a7bd1e07f6083a38e4059edec79eadac8b722b30c5fadb29cddf9ae4196b9d97",
+      "orthonormal_certificate.json": "e2a91d0dc90b110426d2c3278a43630c94261030118e5eb36e6523f960aa52d0",
+      "embedding.json": "5f180d5d6c737010083e72210e16b92926ec2e79ed9a0891d0960a018b2d7842"
+    }
+  },
+  "review_issue_and_resolution": {
+    "issue": "The original primary checker used assert __debug__, which Python strips under -O.",
+    "resolution": "Replaced with an explicit if/raise guard; both final checkers now reject -O in the package-local control replay."
+  }
+}

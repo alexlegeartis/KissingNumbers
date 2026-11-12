@@ -1,0 +1,82 @@
+{
+  "estimate": 2603650659,
+  "iteration": 0,
+  "vertices": [
+    0,
+    189,
+    1,
+    55,
+    513,
+    891,
+    109
+  ],
+  "k": 2,
+  "dimension": 71,
+  "numerical_lower_bound": 2603642568.0,
+  "slices": [
+    {
+      "profile": [
+        0,
+        0
+      ],
+      "h": 0.0,
+      "alpha": 1.0,
+      "weight": 1250142345.000002
+    },
+    {
+      "profile": [
+        1,
+        0
+      ],
+      "h": 0.408248290463863,
+      "alpha": 1.0,
+      "weight": 610834661.9999989
+    },
+    {
+      "profile": [
+        0,
+        1
+      ],
+      "h": -0.408248290463863,
+      "alpha": 1.0,
+      "weight": 610834661.999999
+    },
+    {
+      "profile": [
+        0,
+        2
+      ],
+      "h": -0.816496580927726,
+      "alpha": 1.0,
+      "weight": 64812969.00000022
+    },
+    {
+      "profile": [
+        2,
+        0
+      ],
+      "h": 0.816496580927726,
+      "alpha": 1.0,
+      "weight": 64812969.00000016
+    },
+    {
+      "profile": [
+        3,
+        0
+      ],
+      "h": 1.224744871391589,
+      "alpha": 1.0,
+      "weight": 1106526.0000000042
+    },
+    {
+      "profile": [
+        0,
+        3
+      ],
+      "h": -1.2247448713915892,
+      "alpha": 1.0,
+      "weight": 1106525.9999999476
+    }
+  ],
+  "status": "NUMERICAL DISCOVERY ONLY; geometry and population require exact certification"
+}

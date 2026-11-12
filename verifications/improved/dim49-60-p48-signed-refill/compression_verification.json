@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "method": "gzip level9, mtime0; decompressed bytes identical to the completely replayed inputs",
+  "files": [
+    {
+      "dimension": 49,
+      "decoded_sha256": "c30d5ca1880f43333dcdccbbf8410f9703f8161271be775e15c15ac8c73a845f",
+      "compressed_sha256": "4a1ca487cdb77f305c474538871fd54730e0db69cedf9bfd25bf78d98a49ae46",
+      "uncompressed_bytes": 10439,
+      "compressed_bytes": 2765,
+      "decoded_identity": "PASS"
+    },
+    {
+      "dimension": 50,
+      "decoded_sha256": "27f7dca5febfaac41307078cd674f0427870ad3f4ee438e37b6ede27a341e6a9",
+      "compressed_sha256": "e2e4970d39e98a58dbf9cb93340f7034c95a1571aff2c2ce0ac1ba40f30ceb12",
+      "uncompressed_bytes": 30993,
+      "compressed_bytes": 3001,
+      "decoded_identity": "PASS"
+    },
+    {
+      "dimension": 51,
+      "decoded_sha256": "d78fe9832fcfc483a6f2dd9b095e23dee9b78a920be1ffd1bd2c19fd84c1f284",
+      "compressed_sha256": "cf486322e1922f156c5e2c01cef59b97888affc4756db8b31c54b1a26d91e75a",
+      "uncompressed_bytes": 61826,
+      "compressed_bytes": 3297,
+      "decoded_identity": "PASS"
+    },
+    {
+      "dimension": 52,
+      "decoded_sha256": "75188cadc549d921bced53cda85d2615a2d837f6fae17b2a91e8d67a1d8582dd",
+      "compressed_sha256": "ba1fa1cafedaf5889e6a418f50b09776033c7ff775cadad911a4c6d25c572a8c",
+      "uncompressed_bytes": 122787,
+      "compressed_bytes": 3838,
+      "decoded_identity": "PASS"
+    },
+    {
+      "dimension": 53,
+      "decoded_sha256": "bde06267ab99123de7ef296b4e70f617380f9ee1623da451cb8efb2b67faef82",
+      "compressed_sha256": "9d6e5bb6e2b30e003324e9b3da3a8afb793643841e547065525321c64b9e9d4c",
+      "uncompressed_bytes": 204077,
+      "compressed_bytes": 4507,
+      "decoded_identity": "PASS"
+    },
+    {
+      "dimension": 54,
+      "decoded_sha256": "43adaa690f7d653c8cb08e1b472e77ad050d68997b5274c3094ad9cb46e167eb",
+      "compressed_sha256": "9622fce8977fe03d3f4fdd565f7173ea7696b3e38d02c905a5e25ae6a7080ce6",
+      "uncompressed_bytes": 363540,
+      "compressed_bytes": 5818,
+      "decoded_identity": "PASS"
+    },
+    {
+      "dimension": 55,
+      "decoded_sha256": "381269947d959c610018b240699b704ac7ab851d780d4660ff7540e42eb5b45a",
+      "compressed_sha256": "c74653824c84c961a5408207324e07fc5e132c4c4ac8828cb0e05ea0866fa87e",
+      "uncompressed_bytes": 626565,
+      "compressed_bytes": 8021,
+      "decoded_identity": "PASS"
+    },
+    {
+      "dimension": 56,
+      "decoded_sha256": "94394574e973cdd480f6b1ea0887b80c7674ffa22595aded34a55cb700f43301",
+      "compressed_sha256": "898e994c52b3a4d23ed0ab5f260f67fef4e7bd92462d037d965b420cd62f2c7a",
+      "uncompressed_bytes": 1154805,
+      "compressed_bytes": 13090,
+      "decoded_identity": "PASS"
+    },
+    {
+      "dimension": 57,
+      "decoded_sha256": "2929bec83843fc06fc27b764d1362263750f7fc65a52cbe43b2ad633030d4c5d",
+      "compressed_sha256": "ea9a5e9a92059fffb9b8e4e0ba93a3d616b8de2c11bd7a6b257f869fb5dea64f",
+      "uncompressed_bytes": 1442557,
+      "compressed_bytes": 16124,
+      "decoded_identity": "PASS"
+    },
+    {
+      "dimension": 58,
+      "decoded_sha256": "da86b2315eb48fe85f6c7291d3122894079c55372fbc8162daec90a7e498af03",
+      "compressed_sha256": "d888a020d88e9f9b9ea7736fabef3a0d3d5d5b363eb13a5c8b14dc4e140a1826",
+      "uncompressed_bytes": 2234545,
+      "compressed_bytes": 27885,
+      "decoded_identity": "PASS"
+    },
+    {
+      "dimension": 59,
+      "decoded_sha256": "a97283fbc4c6e7aa9a4279f125d3825401450a872483183a29ad35ee56b90569",
+      "compressed_sha256": "cd0c5b368828c13117fa845b97b12b8a930333a86893cb8bb5c0ef4d2446b708",
+      "uncompressed_bytes": 2551325,
+      "compressed_bytes": 34355,
+      "decoded_identity": "PASS"
+    },
+    {
+      "dimension": 60,
+      "decoded_sha256": "9498be95961da41b878c7becf4bb8185837e297698a5aa2eee6ffa42eab4b493",
+      "compressed_sha256": "6e516dedf722e13c6c660a873285332d73ee0f813ad8cfd39e2d97c5715612ac",
+      "uncompressed_bytes": 3182127,
+      "compressed_bytes": 45620,
+      "decoded_identity": "PASS"
+    }
+  ]
+}

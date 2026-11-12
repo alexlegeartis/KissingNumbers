@@ -1,8 +1,12 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
+**13 November 2026 — a substantial 69D improvement.** Ten Gamma72 slices with one reconstructed coordinate give **743,522,304** points, an increase of **54,069,382 (+7.8424%)** over our preceding 689,452,922-point certificate. [Two independent exact proofs](verifications/improved/dim69-gamma72-head-compression/) rebuild the complete profile domain, actual normal embedding, orientation average, rational population dual and every geometric pair type.
+
+The same campaign also improves all twelve bounds in **49–60D** using asymmetric signed P48 classes. The gains range from **24** to **3,946** points; the new 60D bound is **58,631,571**. These are smaller advances, with their own [exact finite verification package](verifications/improved/dim49-60-p48-signed-refill/).
+
 **12 November 2026 — 28D and 29D exceed the November 11 PackingStar release.** Complete exact certificates give **222,120** and **231,776**, gains of **16** and **2** over that release. These are modest improvements; the current 26D, 27D, 30D and 31D repository certificates remain below PackingStar. See the [proof package](verifications/improved/dim28-29-november-sextets/), [dated source review](common/source_review_20261112_26_31.json) and [research campaign](research/reclaim_26_31_20261112/).
 
-Weyl-averaged Gamma72 affine unions now give 471,884,288 in 68D (+517,632) and 689,452,922 in 69D (+10,776 over the preceding affine certificates). Integral Gram-preserving normal orientations, exact moment duals and an averaging/integer-ceiling argument certify existence; no ambient shell symmetry is assumed. Prior packages, paper and workflows are unchanged.
+The 10 November Weyl-averaged Gamma72 affine unions gave 471,884,288 in 68D (+517,632) and 689,452,922 in 69D (+10,776 over the preceding affine certificates). Integral Gram-preserving normal orientations, exact moment duals and an averaging/integer-ceiling argument certify existence; no ambient shell symmetry is assumed. Prior packages, paper and workflows are unchanged.
 
 The 10 November affine Gamma72 continuations give 471,366,656 in 68D (+96,144,488; 25.62%) and 689,442,146 in 69D (+61,619,966; 9.81%). Six and ten compatible affine slices replace the central-section restriction. Self-contained exact verifiers check exhibited normals, all cells and equality groups, rational duals and geometry; sixteen corruption controls pass. The lattice minimum, population and 11-design property remain published inputs. The paper and workflows are unchanged.
 
@@ -18,7 +22,7 @@ values and verification packages remain here as part of the research record.
 > [!IMPORTANT]
 > **New companion repository — 11 November 2026.** [SpherePackingUpperBounds](https://github.com/alexlegeartis/SpherePackingUpperBounds) collects sphere-packing density upper bounds, proof certificates, independent verification code and discovery histories. See its [results and method summaries](https://github.com/alexlegeartis/SpherePackingUpperBounds#registered-results).
 >
-> **Current repository status — 12 November 2026.** Verified lower bounds in
+> **Current repository status — 13 November 2026.** Verified lower bounds in
 > **70 dimensions**; the [results table](#results-and-construction-history)
 > lists every current value, comparison source and verification package.
 >
@@ -162,18 +166,18 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 44 | 4 153 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **4 939 281** | **SOTA** | +19% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 45 | 7 380 090 | [Yang et al., QR neighbour projection](https://arxiv.org/abs/2609.35051v1) | **7 655 056** | **SOTA** | +3.7% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 46 | 12 309 600 | Conway–Sloane P48 sections; [counts: Dorofeev–Sun–Wang](https://arxiv.org/abs/2607.20359v4) | **13 387 797** | **SOTA** | +8.8% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
-| 49 | 52 416 002 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [1D tail](common/published.py) *(derived)* | **52 431 600** | **SOTA** | +0.02976% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
-| 50 | 52 416 006 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [2D tail](common/published.py) *(derived)* | **52 462 800** | **SOTA** | +0.08927% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
-| 51 | 52 416 012 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [3D tail](common/published.py) *(derived)* | **52 509 596** | **SOTA** | +0.1785% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
-| 52 | 52 416 024 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [4D tail](common/published.py) *(derived)* | **52 603 116** | **SOTA** | +0.3569% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
-| 53 | 52 416 040 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [5D tail](common/published.py) *(derived)* | **52 727 584** | **SOTA** | +0.5944% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
-| 54 | 52 416 072 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [6D tail](common/published.py) *(derived)* | **52 975 804** | **SOTA** | +1.068% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
-| 55 | 52 416 126 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [7D tail](common/published.py) *(derived)* | **53 392 162** | **SOTA** | +1.862% | — | 2026-08-30 to 2026-09-28; since 2026-10-24 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
-| 56 | 52 416 240 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [8D tail](common/published.py) *(derived)* | **54 260 992** | **SOTA** | +3.519% | — | since 2026-08-30 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
-| 57 | 52 416 306 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [9D tail](common/published.py) *(derived)* | **54 757 822** | **SOTA** | +4.467% | — | since 2026-08-30 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
-| 58 | 52 416 510 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [10D tail](common/published.py) *(derived)* | **56 266 316** | **SOTA** | +7.345% | — | since 2026-08-30 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
-| 59 | 52 416 604 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail](common/published.py) *(derived)* | **56 948 468** | **SOTA** | +8.646% | — | since 2026-08-30 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
-| 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **58 627 711** | **SOTA** | +11.85% | — | since 2026-08-30 | [P48 pointwise refill](verifications/improved/dim49-60-p48-pointwise-refill/) | — |
+| 49 | 52 416 002 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [1D tail](common/published.py) *(derived)* | **52 431 624** | **SOTA** | +0.0298% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
+| 50 | 52 416 006 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [2D tail](common/published.py) *(derived)* | **52 462 872** | **SOTA** | +0.0894% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
+| 51 | 52 416 012 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [3D tail](common/published.py) *(derived)* | **52 509 740** | **SOTA** | +0.1788% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
+| 52 | 52 416 024 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [4D tail](common/published.py) *(derived)* | **52 603 402** | **SOTA** | +0.3575% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
+| 53 | 52 416 040 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [5D tail](common/published.py) *(derived)* | **52 728 054** | **SOTA** | +0.5953% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
+| 54 | 52 416 072 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [6D tail](common/published.py) *(derived)* | **52 976 623** | **SOTA** | +1.0694% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
+| 55 | 52 416 126 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [7D tail](common/published.py) *(derived)* | **53 393 546** | **SOTA** | +1.8647% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
+| 56 | 52 416 240 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [8D tail](common/published.py) *(derived)* | **54 263 398** | **SOTA** | +3.5240% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
+| 57 | 52 416 306 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [9D tail](common/published.py) *(derived)* | **54 760 693** | **SOTA** | +4.4726% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
+| 58 | 52 416 510 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [10D tail](common/published.py) *(derived)* | **56 270 076** | **SOTA** | +7.3518% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
+| 59 | 52 416 604 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail](common/published.py) *(derived)* | **56 952 414** | **SOTA** | +8.6534% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
+| 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **58 631 571** | **SOTA** | +11.8564% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
 | 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **88 260 394** | **SOTA** | +68.38% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **121 824 268** | **SOTA** | +132.41% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **184 286 468** | **SOTA** | +251.57% | — | since 2026-08-30 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
@@ -182,7 +186,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 66 | 331 737 990 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **341 994 884** | **SOTA** | +3.09% | — | since 2026-10-24 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 67 | 331 737 996 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **355 090 822** | **SOTA** | +7.04% | — | since 2026-10-24 | [Shared parity layers](verifications/improved/dim61-68-95-96-code-layers/) | — |
 | 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **471 884 288** | **SOTA** | +42.25% | — | updated 2026-11-10 | [Gamma72 averaged affine slices](verifications/improved/dim68-69-gamma72-cross-sections/weyl_averaged/) | — |
-| 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **689 452 922** | **SOTA** | +107.83% | — | updated 2026-11-10 | [Gamma72 averaged affine slices](verifications/improved/dim68-69-gamma72-cross-sections/weyl_averaged/) | — |
+| 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **743 522 304** | **SOTA** | 2.24x | — | updated 2026-11-13 | [Gamma72 slice compression](verifications/improved/dim69-gamma72-head-compression/) | — |
 | 70 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **1 360 986 112** | **SOTA** | 4.10x | — | updated 2026-11-10 | [Gamma72 affine slices](verifications/improved/dim70-71-gamma72-cross-sections/affine70/) | — |
 | 71 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **2 603 658 750** | **SOTA** | 7.85x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
 | 73 | 6 218 175 602 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [1D tail](common/published.py) *(derived)* | **6 218 206 932** | **SOTA** | +0.000504% | — | since 2026-08-30 | [Gamma72 cosets plus caps](verifications/improved/dim73-88-gamma72-cosets/) | — |
@@ -498,7 +502,7 @@ common/                   shared modules and the two proofs
   PROOF-kpoint.md         the cross-section method, as numbered lemmas with proofs
 
 verifications/
-  improved/               all 70 claims, 43 packages; earlier constructions remain
+  improved/               all 70 claims, 45 packages; earlier constructions remain
                           available with their original proof data
   recovered/              values already published, re-derived here and claimed nowhere
   superseded/             claims this project made and then lost, and why
@@ -509,8 +513,8 @@ KNOWLEDGE.md              the full working record, 160 sections, including every
                           sections supersede which, and where each script now lives
 ```
 
-[`research/`](research/) preserves the November campaigns in dimensions 12 and
-17–21, including restricted-family certificates and unsuccessful searches.
+[`research/`](research/) preserves the November campaigns, including the new
+32+ search, restricted-family certificates and unsuccessful searches.
 Its index lists the results and compact evidence replays.
 
 Dimension-five upper-bound research is maintained separately in
@@ -521,7 +525,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 43 packages, 70 dimensions
+### `verifications/improved/` — 45 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -532,6 +536,8 @@ in `improved/` may now be superseded by a later publication; its package is reta
 
 | package                                                                                      | dims   | the idea                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`dim69-gamma72-head-compression`](verifications/improved/dim69-gamma72-head-compression/) | 69 | 743,522,304; ten slices with one reconstructed coordinate; two independent exact moment and geometry proofs |
+| [`dim49-60-p48-signed-refill`](verifications/improved/dim49-60-p48-signed-refill/) | 49–60 | signed P48 class exchanges; twelve improvements with complete finite class, ownership and tail verification |
 | [`dim28-29-november-sextets`](verifications/improved/dim28-29-november-sextets/) | 28, 29 | current 222,120 and 231,776; exact finite geometry and independent direct-integer changes over the November 11 PackingStar files |
 | [`dim31-latitude-contact-exchange`](verifications/improved/dim31-latitude-contact-exchange/) | 31 | current 251,200-point four-for-eight exchange; two complete exact proofs, including independent integer-only enumeration |
 | [`dim27-31-joint-refills`](verifications/improved/dim27-31-joint-refills/) | 27–31 | joint refills and reflected unions above the October 28 PackingStar release; complete exact proofs |
@@ -816,10 +822,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 103 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 105 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 122 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 124 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

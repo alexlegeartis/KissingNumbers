@@ -1,12 +1,24 @@
 # Research campaigns
 
 These packages preserve construction searches, exact certificates for restricted
-families, and checks of published constructions. The November 12 campaign
+families, and checks of published constructions. The November 13 campaign
+improves 69D by 7.8424% and adds smaller gains in dimensions 49–60. The November 12 campaign
 improves 28D and 29D over PackingStar's November 11 release. The November 4 algebraic
 campaign improves 27D and 31D; the 43D packages record a separate discovery and
 its reproduction by the engine. The earlier lower-dimensional campaigns below
 produced no new kissing-number lower bound. Registered constructions remain in
 [`../verifications/`](../verifications/) and [`../RESULTS.md`](../RESULTS.md).
+
+## 13 November campaign in dimensions 32 and above
+
+[The 32+ campaign](dim32plus_20261113/) proves **743,522,304 in 69D**, an
+increase of **54,069,382** over the preceding repository certificate. Ten
+Gamma72 slices replace four normal coordinates with one adjustable coordinate;
+two independent exact proofs certify population and geometry. Signed P48
+classes give twelve further improvements in dimensions 49–60. The campaign
+records the unsuccessful 32–48D and neighboring Gamma72 searches with their
+finite scope and time limits. The proof packages retain the published parent
+lattice minimum, population and design inputs where used.
 
 ## 12 November PackingStar comparison and construction campaign
 

@@ -551,3 +551,10 @@ for _d in (68, 69):
 # Exact November 12 unions over the November 11 PackingStar coordinates.
 for _d in (28, 29):
     STATUS[_d] = ('heads', 'corrected sextet unions over the November 11 release; full exact geometry and direct-integer changed pairs; new radii and coordinated changes remain open (dim28-29-november-sextets/verify.py)')
+
+# Ten-slice normal-coordinate compression, independently checked 13 November 2026.
+STATUS[69] = ('heads', 'ten Gamma72 slices compressed from four normal coordinates to one rational-height coordinate; two exact moment-dual and geometry proofs, with published parent lattice inputs (dim69-gamma72-head-compression/verify.py)')
+
+# Signed, non-antipodal P48 mother classes, independently checked 13 November 2026.
+for _d in range(49, 61):
+    STATUS[_d] = ('classes', 'signed P48 mother-class exchanges with individual ownership; complete finite class and tail checks, independent full seed proof, and published mother-shell inputs (dim49-60-p48-signed-refill/verify.py)')

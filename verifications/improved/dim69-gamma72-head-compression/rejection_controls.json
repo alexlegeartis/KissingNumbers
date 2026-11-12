@@ -1,0 +1,247 @@
+{
+  "status": "PASS",
+  "valid_baselines": 2,
+  "rejected_corruptions": 26,
+  "source_sha256": {
+    "verify.py": "d056a6b3d437a80122d570527b114c20355168a56f6338466d54b285458d67bc",
+    "verify_orthonormal.py": "e2a0eb660c76a8b73930bf51d34f108ad84e64a0be61bfbc604621da78185a43",
+    "certificate.json": "a7bd1e07f6083a38e4059edec79eadac8b722b30c5fadb29cddf9ae4196b9d97",
+    "orthonormal_certificate.json": "e2a91d0dc90b110426d2c3278a43630c94261030118e5eb36e6523f960aa52d0",
+    "embedding.json": "5f180d5d6c737010083e72210e16b92926ec2e79ed9a0891d0960a018b2d7842"
+  },
+  "cross_slice_witness": {
+    "changed_slice_index": 0,
+    "changed_height": "-1/2",
+    "squared_scale": "1",
+    "other_slice_index": 5,
+    "squared_geometric_gap": "-31/16",
+    "within_slice_norms_preserved": true
+  },
+  "tests": [
+    {
+      "checker": "verify.py",
+      "case": "unchanged_valid_certificate",
+      "expected": "PASS",
+      "actual": "PASS",
+      "returncode": 0,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify.py",
+      "case": "false_claimed_bound",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify.py",
+      "case": "wrong_shell_population",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify.py",
+      "case": "false_moment_rhs",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify.py",
+      "case": "false_population_objective",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify.py",
+      "case": "changed_embedded_normal_hash_refreshed",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": true
+    },
+    {
+      "checker": "verify.py",
+      "case": "assertions_disabled",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify_orthonormal.py",
+      "case": "unchanged_valid_certificate",
+      "expected": "PASS",
+      "actual": "PASS",
+      "returncode": 0,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify_orthonormal.py",
+      "case": "false_claimed_bound",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify_orthonormal.py",
+      "case": "wrong_shell_population",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify_orthonormal.py",
+      "case": "false_moment_rhs",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify_orthonormal.py",
+      "case": "false_population_objective",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify_orthonormal.py",
+      "case": "changed_embedded_normal_hash_refreshed",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": true
+    },
+    {
+      "checker": "verify_orthonormal.py",
+      "case": "assertions_disabled",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify.py",
+      "case": "duplicate_selected_slice",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify.py",
+      "case": "slice_outside_proved_domain",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify.py",
+      "case": "omitted_profile_cell",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify.py",
+      "case": "false_moment_coefficient",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify.py",
+      "case": "false_dual_multiplier",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify.py",
+      "case": "negative_squared_scale",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify.py",
+      "case": "cross_slice_failure_with_norms_preserved",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify_orthonormal.py",
+      "case": "duplicate_selected_slice",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify_orthonormal.py",
+      "case": "wrong_dual_lattice_parity",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify_orthonormal.py",
+      "case": "omitted_profile_cell",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify_orthonormal.py",
+      "case": "false_moment_coefficient",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify_orthonormal.py",
+      "case": "false_dual_multiplier",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify_orthonormal.py",
+      "case": "negative_dual_denominator",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    },
+    {
+      "checker": "verify_orthonormal.py",
+      "case": "cross_slice_failure_with_norms_preserved",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "returncode": 1,
+      "checksum_refreshed": false
+    }
+  ],
+  "scope": "Corruption coverage for the exact finite proof. Published Gamma72 minimum, shell population, design and catalogue identity remain explicit premises."
+}

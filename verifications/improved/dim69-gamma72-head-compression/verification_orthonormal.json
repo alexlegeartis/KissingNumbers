@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "dimension": 69,
+  "bound": 743522304,
+  "exact_dual_value": "743522304",
+  "prior_bound": 689452922,
+  "gain": 54069382,
+  "complete_profile_domain": 1681,
+  "normal_roots": 24,
+  "averaging_orbits": 16,
+  "independent_moment_rows": 10,
+  "selected_slices": 10,
+  "exact_geometric_pair_types": 55,
+  "tight_pairs": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      9,
+      9
+    ]
+  ],
+  "minimum_positive_squared_margin": "1/180",
+  "dual_slack_min": 0,
+  "actual_embedding_verified": true,
+  "verification_scope": "Exact existence proof using published Gamma72 minimum, shell population and 11-design premises; no full shell enumeration."
+}

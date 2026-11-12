@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "dimension": 69,
+  "certified_lower_bound": 743522304,
+  "previous_registered_bound": 689452922,
+  "gain": 54069382,
+  "exact_dual_value": "743522304",
+  "profile_cells": 1681,
+  "normal_roots": 24,
+  "averaging_orbits": 16,
+  "moment_rows": 10,
+  "pair_types": 55,
+  "minimum_positive_squared_gap": "1/180",
+  "certificate_sha256": "e2a91d0dc90b110426d2c3278a43630c94261030118e5eb36e6523f960aa52d0",
+  "root_basis_certificate_sha256": "a7bd1e07f6083a38e4059edec79eadac8b722b30c5fadb29cddf9ae4196b9d97",
+  "corruption_tests": [
+    {
+      "name": "false_count",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "wrong_shell_population",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "duplicate_slice",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "wrong_dual_parity",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "missing_profile_cell",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "false_moment_rhs",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "false_moment_coefficient",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "false_objective",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "negative_dual_denominator",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "false_dual_multiplier",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "excessive_same_slice_height",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "cross_slice_collision_risk",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "wrong_normal_embedding_with_refreshed_hash",
+      "rejected": true,
+      "exception": "AssertionError"
+    }
+  ],
+  "mathematical_findings": [
+    "Finite normal-coordinate averaging requires no automorphism of the ambient Gamma72 lattice.",
+    "Integral products with the embedded 2D4 roots imply exactly the common-parity profile lattice.",
+    "The domain covers every non-normal-root minimal vector; all 24 omitted normal roots are subtracted in the moments.",
+    "Within a profile the projection map is injective. Between profiles the verified norm and pair bounds rule out image collisions.",
+    "All squared geometric inequalities have explicitly checked nonnegative sides.",
+    "The integer lower bound follows from a favorable finite orientation and exact rational weak duality, not a numerical LP status."
+  ],
+  "inherited_premises": [
+    "The supplied catalogue Gram matrix describes the cited integral even 72-dimensional Gamma72 lattice.",
+    "Its minimum is 8, its minimal shell has population 6218175600, and that shell is a spherical 11-design."
+  ],
+  "scope": "Third exact arithmetic and mathematical review. It does not reprove the published lattice existence/minimum/design theorems or enumerate all source points."
+}

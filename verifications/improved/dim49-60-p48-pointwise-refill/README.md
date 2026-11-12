@@ -1,25 +1,30 @@
 # Pointwise P48 refill in dimensions 49–60
 
+**Retained construction.** The twelve bounds below are the unchanged preceding
+certificates. The [13 November signed refill](../dim49-60-p48-signed-refill/)
+now supplies the current registry values in dimensions 49–60, including
+**58,631,571** in 60D. Historical gains below retain their original comparisons.
+
 Twelve explicit constructions improve the repository's preceding lower bounds.
 The 60D construction has **58,627,711 points**, an increase of **84,186**.
 The finite certificates are antipodal mother-line classes, enlarged by pointwise
 insertions and ownership reassignment. They need not remain subsets of the
 original 7,783-line images. These are lower bounds, not optimality or worldwide-priority claims.
 
-| Dimension | Previous repository bound | New bound | Gain | Selected mother lines |
-|---|---:|---:|---:|---:|
-| 49 | 52,431,568 | **52,431,600** | +32 | 7,799 |
-| 50 | 52,462,704 | **52,462,800** | +96 | 23,397 |
-| 51 | 52,509,404 | **52,509,596** | +192 | 46,792 |
-| 52 | 52,602,708 | **52,603,116** | +408 | 93,546 |
-| 53 | 52,726,898 | **52,727,584** | +686 | 155,772 |
-| 54 | 52,974,448 | **52,975,804** | +1,356 | 279,866 |
-| 55 | 53,389,510 | **53,392,162** | +2,652 | 488,018 |
-| 56 | 54,254,038 | **54,260,992** | +6,954 | 922,376 |
-| 57 | 54,747,366 | **54,757,822** | +10,456 | 1,170,758 |
-| 58 | 56,237,990 | **56,266,316** | +28,326 | 1,924,903 |
-| 59 | 56,907,964 | **56,948,468** | +40,504 | 2,265,932 |
-| 60 | 58,543,525 | **58,627,711** | +84,186 | 3,105,435 |
+| Dimension | Previous bound at publication | Retained bound | Historical gain | Selected mother lines | Current registry |
+|---|---:|---:|---:|---:|---:|
+| 49 | 52,431,568 | **52,431,600** | +32 | 7,799 | 52,431,624 |
+| 50 | 52,462,704 | **52,462,800** | +96 | 23,397 | 52,462,872 |
+| 51 | 52,509,404 | **52,509,596** | +192 | 46,792 | 52,509,740 |
+| 52 | 52,602,708 | **52,603,116** | +408 | 93,546 | 52,603,402 |
+| 53 | 52,726,898 | **52,727,584** | +686 | 155,772 | 52,728,054 |
+| 54 | 52,974,448 | **52,975,804** | +1,356 | 279,866 | 52,976,623 |
+| 55 | 53,389,510 | **53,392,162** | +2,652 | 488,018 | 53,393,546 |
+| 56 | 54,254,038 | **54,260,992** | +6,954 | 922,376 | 54,263,398 |
+| 57 | 54,747,366 | **54,757,822** | +10,456 | 1,170,758 | 54,760,693 |
+| 58 | 56,237,990 | **56,266,316** | +28,326 | 1,924,903 | 56,270,076 |
+| 59 | 56,907,964 | **56,948,468** | +40,504 | 2,265,932 | 56,952,414 |
+| 60 | 58,543,525 | **58,627,711** | +84,186 | 3,105,435 | 58,631,571 |
 
 ## Portable verification
 

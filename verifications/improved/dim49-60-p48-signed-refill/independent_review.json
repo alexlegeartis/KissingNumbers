@@ -1,0 +1,12 @@
+{
+  "reviewer": "independent records_and_constructions agent",
+  "scope": "Conceptual signed-class lift theorem; not a second execution of every propagated certificate",
+  "conclusion": "No mathematical gap found",
+  "checks": [
+    "Retaining the antipode of a selected signed head at the equator is valid.",
+    "Assigning opposite signed heads to different classes is valid.",
+    "Global ownership must exclude repeated signed vectors, not repeated unoriented lines.",
+    "Different classes must use distinct pairs of a complete antipodal tail code, ensuring absolute representative inner product at most one half."
+  ],
+  "condition_replayed": "tail_and_lift.check_code checks antipodality and every pair of the full tail code; the number of classes equals its number of antipodal pairs."
+}

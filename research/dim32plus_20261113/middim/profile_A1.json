@@ -1,0 +1,33 @@
+{
+  "kind": "A",
+  "k": 1,
+  "dimension": 47,
+  "bound": 23766960,
+  "normals": [
+    [
+      2,
+      -2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "gram": [
+    [
+      6
+    ]
+  ],
+  "offsets": [
+    [
+      0
+    ]
+  ],
+  "weights": [
+    23766960
+  ],
+  "cells": 7,
+  "status": "numeric geometry needs exact replay"
+}

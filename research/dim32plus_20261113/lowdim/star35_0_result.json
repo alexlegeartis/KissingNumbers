@@ -1,0 +1,11 @@
+{
+  "coordinate": 0,
+  "source_supports": 2202,
+  "removed_star_size": 251,
+  "complete_pool_size": 4687,
+  "solver_status": 1,
+  "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+  "chosen_supports": 0,
+  "solver_seconds": 60.24268411199955,
+  "scope": "Solver result on finite coordinate-star neighborhood; only an independently checked feasible witness can imply a kissing lower bound."
+}

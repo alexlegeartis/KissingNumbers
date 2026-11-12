@@ -1,5 +1,9 @@
 # Verification of the retained SOTA results
 
+The 13 November [signed P48 refill](verifications/improved/dim49-60-p48-signed-refill/) improves all 49–60D bounds, reaching **58,631,571 in 60D**. The class model permits individual signed vectors without an antipodality requirement. Verification checks complete finite classes, all changed and retained interactions, full-coordinate ownership and tail geometry; the reusable new class also has an independent scalar-integer all-pairs replay. Published P48 minimum and shell population remain inputs.
+
+The 13 November [69D slice-compression proof](verifications/improved/dim69-gamma72-head-compression/) establishes **743,522,304** points, **54,069,382 (+7.8424%)** above the preceding certificate. Two standard-library exact checkers independently reconstruct all 1,681 profiles, 16 averaging orbits, 10 moment rows and 55 geometric pair types. Published Gamma72 minimum, shell population and design facts are explicit premises; the certificate proves a favorable orientation exists.
+
 The 12 November [28D/29D sextet continuation](verifications/improved/dim28-29-november-sextets/) gives **222,120** and **231,776**, respectively **16** and **2** above PackingStar’s November 11 files. Complete exact integer geometry covers every unordered pair; direct-int64 changed-pair checks and four rejection controls are included. The comparison is pinned; 26D, 27D, 30D and 31D remain below that release.
 
 The 8 November [31D latitude-contact exchange](verifications/improved/dim31-latitude-contact-exchange/) gives **251,200** points, four above the preceding repository certificate. Both complete exact pair proofs cover all 31,550,594,400 unordered pairs. One uses direct integer arithmetic without antipodal compression; reconstruction, all changed-pair checks and semantic rejection controls are included. This proof assumes no lattice minimum or unenumerated population. The source-comparison scope is recorded separately.

@@ -1,0 +1,112 @@
+CONSTRAINT_RANK 4 10 of 18 aug 10
+MODEL 4 cells 1681 groups 16 rows 10 rank 10
+CENTRAL 4 361275480.0000016
+SEARCH 4 (0, 0, 0, 2) pool 57 conflicts 509 round 0 selected 6 value 471884288.0000006 status 0 seconds 0.08
+BEST 4 471884288.0000006
+SEARCH 4 (0, 0, 0, 2) pool 57 conflicts 509 round 1 selected 6 value 471884288.0000006 status 0 seconds 0.06
+SEARCH 4 (0, 0, 0, 2) pool 57 conflicts 509 round 2 selected 6 value 471884288.0000006 status 0 seconds 0.06
+SEARCH 4 (1, 1, 1, 1) pool 57 conflicts 509 round 0 selected 6 value 471884288.0000006 status 0 seconds 0.05
+SEARCH 4 (1, 1, 1, 1) pool 57 conflicts 509 round 1 selected 6 value 471884288.0000006 status 0 seconds 0.09
+SEARCH 4 (1, 1, 1, 1) pool 57 conflicts 509 round 2 selected 6 value 471884288.0000006 status 0 seconds 0.1
+SEARCH 4 (0, 0, 2, 2) pool 180 conflicts 6377 round 0 selected 6 value 471884288.0000006 status 0 seconds 0.22
+SEARCH 4 (0, 0, 2, 2) pool 180 conflicts 6377 round 1 selected 6 value 471884288.0000006 status 0 seconds 1.54
+SEARCH 4 (0, 0, 2, 2) pool 180 conflicts 6377 round 2 selected 6 value 471884288.0000006 status 0 seconds 0.5
+SEARCH 4 (0, 2, 2, 2) pool 206 conflicts 8811 round 0 selected 6 value 399016263.1111073 status 0 seconds 0.04
+SEARCH 4 (0, 2, 2, 2) pool 206 conflicts 8811 round 1 selected 6 value 399016263.1111073 status 0 seconds 1.3
+SEARCH 4 (0, 2, 2, 2) pool 206 conflicts 8811 round 2 selected 6 value 399016263.1111073 status 0 seconds 0.4
+SEARCH 4 (1, 1, 1, 3) pool 206 conflicts 8811 round 0 selected 6 value 399016263.1111073 status 0 seconds 0.04
+SEARCH 4 (1, 1, 1, 3) pool 206 conflicts 8811 round 1 selected 6 value 399016263.1111073 status 0 seconds 1.25
+SEARCH 4 (1, 1, 1, 3) pool 206 conflicts 8811 round 2 selected 6 value 399016263.1111073 status 0 seconds 0.36
+SEARCH 4 (0, 0, 0, 4) pool 247 conflicts 14010 round 0 selected 9 value 277973623.1111125 status 0 seconds 0.15
+SEARCH 4 (0, 0, 0, 4) pool 247 conflicts 14010 round 1 selected 11 value 278100855.1111016 status 0 seconds 3.3
+SEARCH 4 (0, 0, 0, 4) pool 247 conflicts 14010 round 2 selected 10 value 278100855.11111104 status 0 seconds 2.12
+SEARCH 4 (2, 2, 2, 2) pool 247 conflicts 14010 round 0 selected 9 value 277973623.1111125 status 0 seconds 0.15
+SEARCH 4 (2, 2, 2, 2) pool 247 conflicts 14010 round 1 selected 11 value 278100855.1111016 status 0 seconds 3.47
+SEARCH 4 (2, 2, 2, 2) pool 247 conflicts 14010 round 2 selected 10 value 278100855.11111104 status 0 seconds 1.03
+SEARCH 4 (0, 0, 2, 4) pool 259 conflicts 15713 round 0 selected 9 value 277973623.1111125 status 0 seconds 0.09
+SEARCH 4 (0, 0, 2, 4) pool 259 conflicts 15713 round 1 selected 11 value 278100855.1111016 status 0 seconds 4.39
+SEARCH 4 (0, 0, 2, 4) pool 259 conflicts 15713 round 2 selected 10 value 278100855.11111104 status 0 seconds 0.94
+SEARCH 4 (1, 1, 3, 3) pool 259 conflicts 15713 round 0 selected 9 value 277973623.1111125 status 0 seconds 0.08
+SEARCH 4 (1, 1, 3, 3) pool 259 conflicts 15713 round 1 selected 11 value 278100855.1111016 status 0 seconds 3.62
+SEARCH 4 (1, 1, 3, 3) pool 259 conflicts 15713 round 2 selected 10 value 278100855.11111104 status 0 seconds 0.91
+SEARCH 4 (0, 2, 2, 4) pool 271 conflicts 17617 round 0 selected 6 value 471884288.0000006 status 0 seconds 0.05
+SEARCH 4 (0, 2, 2, 4) pool 271 conflicts 17617 round 1 selected 6 value 471884288.0000006 status 0 seconds 3.82
+SEARCH 4 (0, 2, 2, 4) pool 271 conflicts 17617 round 2 selected 6 value 471884288.0000006 status 0 seconds 0.27
+{
+  "value": 471884288.0000006,
+  "offsets": [
+    [
+      -2,
+      -2,
+      0,
+      4
+    ],
+    [
+      -2,
+      0,
+      0,
+      2
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      1
+    ],
+    [
+      -1,
+      -1,
+      1,
+      1
+    ],
+    [
+      0,
+      -2,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      2
+    ]
+  ],
+  "anchor": [
+    0,
+    0,
+    0,
+    2
+  ],
+  "exact_certificate": false,
+  "dual": [
+    -0.0,
+    0.3779134183250464,
+    -0.47067882293660124,
+    0.11688881864320666,
+    0.14729834454713728,
+    -0.03357769835502802,
+    -0.012051174624274422,
+    -0.056683153799696864,
+    0.006921818527756803,
+    -0.0001436503460792108
+  ],
+  "objective": [
+    0.0,
+    3.0,
+    2.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

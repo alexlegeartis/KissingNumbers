@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "signed_points": 15622,
+  "unordered_pairs": 122015631,
+  "maximum_product": 2,
+  "points_without_antipodes": 10,
+  "kissing49": 52431624,
+  "gain49": 24,
+  "certificate_sha256": "ee848a6940bed96246dd3cdfa9e64eb10abd768757b40f86d7d6f114b1f54480",
+  "published_gram_sha256": "01a5d107e4424092e5300e201592aaff62804ee27eeb1d23b6e516249897d3e1",
+  "arithmetic": "integer matrix products followed by binary64 integer products; every product and partial sum strictly below2^53",
+  "inherited_inputs": [
+    "The pinned P48p Gram is an even unimodular48D lattice of minimum6.",
+    "Its complete minimal shell has52,416,000 vectors."
+  ],
+  "tail": "Two poles in one dimension; each chosen signed mother point is replaced by its two opposite-tail lifts.",
+  "independent_cpp": {
+    "status": "PASS",
+    "signed_points": 15622,
+    "unordered_pairs": 122015631,
+    "maximum_product": 2,
+    "arithmetic": "bounded int64 scalar accumulation"
+  }
+}

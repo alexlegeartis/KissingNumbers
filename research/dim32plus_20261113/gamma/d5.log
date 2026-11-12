@@ -1,0 +1,22 @@
+CONSTRAINT_RANK 5 18 of 19 aug 18
+MODEL 5 cells 7689 groups 39 rows 18 rank 18
+CENTRAL 5 180799469.33333403
+SEARCH 5 (0, 0, 0, 0, 2) pool 83 conflicts 456 round 0 selected 7 value 173368556.00000036 status 0 seconds 0.1
+SEARCH 5 (0, 0, 0, 0, 2) pool 83 conflicts 456 round 1 selected 13 value 179397664.0000209 status 0 seconds 0.15
+SEARCH 5 (0, 0, 0, 0, 2) pool 83 conflicts 456 round 2 selected 12 value 179397664.00000432 status 0 seconds 0.26
+SEARCH 5 (1, 1, 1, 1, 1) pool 233 conflicts 9225 round 0 selected 14 value 183108608.0000009 status 0 seconds 2.34
+BEST 5 183108608.0000009
+SEARCH 5 (1, 1, 1, 1, 1) pool 233 conflicts 9225 round 1 selected 15 value 183335765.33333525 status 1 seconds 10.27
+BEST 5 183335765.33333525
+SEARCH 5 (1, 1, 1, 1, 1) pool 233 conflicts 9225 round 2 selected 15 value 185406463.99964803 status 1 seconds 10.09
+BEST 5 185406463.99964803
+SEARCH 5 (0, 0, 0, 2, 2) pool 450 conflicts 40185 round 0 selected 14 value 183108608.0000009 status 0 seconds 7.56
+NO_SOLUTION 5 (0, 0, 0, 2, 2) pool 450 status 1 Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)
+SEARCH 5 (0, 0, 0, 2, 2) pool 450 conflicts 40185 round 2 selected 3 value 21790943.99999994 status 1 seconds 10.08
+SEARCH 5 (0, 0, 2, 2, 2) pool 564 conflicts 67592 round 0 selected 13 value 185379157.33325857 status 0 seconds 0.4
+NO_SOLUTION 5 (0, 0, 2, 2, 2) pool 564 status 1 Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)
+SEARCH 5 (0, 0, 2, 2, 2) pool 564 conflicts 67592 round 2 selected 15 value 185406463.99964803 status 1 seconds 10.06
+SEARCH 5 (1, 1, 1, 1, 3) pool 620 conflicts 90030 round 0 selected 14 value 183108608.0000009 status 0 seconds 1.59
+NO_SOLUTION 5 (1, 1, 1, 1, 3) pool 620 status 1 Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)
+SEARCH 5 (1, 1, 1, 1, 3) pool 620 conflicts 90030 round 2 selected 2 value 60435114.66666761 status 1 seconds 10.2
+SEARCH 5 (0, 0, 0, 0, 4) pool 779 conflicts 156336 round 0 selected 7 value 173368556.00000036 status 0 seconds 2.78

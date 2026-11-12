@@ -1,17 +1,17 @@
 # Joint P48 coverage in dimensions 54–59
 
-**Retained construction.** These dated certificates are superseded by the [49–60D pointwise-refill package](../dim49-60-p48-pointwise-refill/). All witness and verifier bytes remain unchanged.
+**Retained construction.** These dated certificates were superseded by the [49–60D pointwise-refill package](../dim49-60-p48-pointwise-refill/). The [signed-refill package](../dim49-60-p48-signed-refill/) now supplies the current registry values. All witness and verifier bytes remain unchanged.
 
 Six independent selections of existing isometric images improve the retained repository constructions by 1,066 points in total. These are explicit lower bounds, not optimality or worldwide-priority claims. The 60D result is unchanged.
 
 | Dimension | Previous | Retained construction | Gain | Selected lines | Current registry |
 |---|---:|---:|---:|---:|---:|
-| 54 | 52,974,438 | 52,974,448 | 10 | 279,188 | 52,975,804 |
-| 55 | 53,389,476 | 53,389,510 | 34 | 486,692 | 53,392,162 |
-| 56 | 54,253,958 | 54,254,038 | 80 | 918,899 | 54,260,992 |
-| 57 | 54,747,156 | 54,747,366 | 210 | 1,165,530 | 54,757,822 |
-| 58 | 56,237,690 | 56,237,990 | 300 | 1,910,740 | 56,266,316 |
-| 59 | 56,907,532 | 56,907,964 | 432 | 2,245,680 | 56,948,468 |
+| 54 | 52,974,438 | 52,974,448 | 10 | 279,188 | 52,976,623 |
+| 55 | 53,389,476 | 53,389,510 | 34 | 486,692 | 53,393,546 |
+| 56 | 54,253,958 | 54,254,038 | 80 | 918,899 | 54,263,398 |
+| 57 | 54,747,156 | 54,747,366 | 210 | 1,165,530 | 54,760,693 |
+| 58 | 56,237,690 | 56,237,990 | 300 | 1,910,740 | 56,270,076 |
+| 59 | 56,907,532 | 56,907,964 | 432 | 2,245,680 | 56,952,414 |
 
 ## Replay
 

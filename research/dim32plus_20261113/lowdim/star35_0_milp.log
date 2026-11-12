@@ -1,0 +1,4 @@
+pool 0 4687 old 251 rows 48882 nnz 225197
+/workspace/scratch/a8e345928e2e/KissingNumbers/research/dim32plus_20261113/lowdim/star_milp.py:22: RuntimeWarning: Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim.
+  t=time.monotonic();res=milp(-np.ones(len(V)),integrality=np.ones(len(V)),bounds=Bounds(0,1),constraints=LinearConstraint(A,-np.inf,up),options={'time_limit':args.seconds,'mip_rel_gap':0.,'threads':1})
+{"coordinate": 0, "source_supports": 2202, "removed_star_size": 251, "complete_pool_size": 4687, "solver_status": 1, "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)", "chosen_supports": 0, "solver_seconds": 60.24268411199955, "scope": "Solver result on finite coordinate-star neighborhood; only an independently checked feasible witness can imply a kissing lower bound."}

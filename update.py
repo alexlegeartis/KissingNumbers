@@ -76,6 +76,8 @@ DRIVERS.append(('31D latitude contact exchange', os.path.join(V, 'dim31-latitude
 DRIVERS.append(('60D antipodal direction lift', os.path.join(V, 'dim60-antipodal840-lift'), 'final.py'))
 DRIVERS.append(('49-60D pointwise P48 refill', os.path.join(V, 'dim49-60-p48-pointwise-refill'), 'final.py'))
 DRIVERS.append(('28D/29D November sextet unions', os.path.join(V, 'dim28-29-november-sextets'), 'final.py'))
+DRIVERS.append(('69D ten-slice head compression', os.path.join(V, 'dim69-gamma72-head-compression'), 'final.py'))
+DRIVERS.append(('49-60D signed P48 refill', os.path.join(V, 'dim49-60-p48-signed-refill'), 'final.py'))
 TABLES = [(os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
           (os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py')]
 

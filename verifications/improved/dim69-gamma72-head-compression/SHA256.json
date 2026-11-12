@@ -1,0 +1,16 @@
+{
+  "INDEPENDENT_REVIEW.md": "f49eb68dd9eb5fe485cdb3a933e574df437e5a4ff6005c044a515f9d89d3a527",
+  "README.md": "5254c4e0f82948a5d1f8d2b002a2490bf7988ef35a576fe37f8706ff469a2a0d",
+  "certificate.json": "a7bd1e07f6083a38e4059edec79eadac8b722b30c5fadb29cddf9ae4196b9d97",
+  "embedding.json": "5f180d5d6c737010083e72210e16b92926ec2e79ed9a0891d0960a018b2d7842",
+  "final.py": "0842ca3646b371a902966ba52980d71620a28037bec71a6565bced55fa1e9339",
+  "independent_review.json": "69b2b46ad2fe34bb3a1cba9ef05768599cbb1bfd86333cd3aca70be928b3d004",
+  "orthonormal_certificate.json": "e2a91d0dc90b110426d2c3278a43630c94261030118e5eb36e6523f960aa52d0",
+  "rejection_controls.json": "fb0e76811bc92eaaf3d88017db865943a1fca890705e87fd63bdcacdfb1ddf69",
+  "rejection_controls.py": "3ba91b13eb56b6cb5fd66c769581ac1ffeda2278ce9b320ec57cd19461944164",
+  "source_review.json": "3adcd4182b1fc6d170407da6bd8bd762cf029b327eac95d7981e37886eb70e5e",
+  "verification.json": "62f142bb54c1e1d679a27e010aae2cd32870b2c2c782df51651f52f616ffc947",
+  "verification_orthonormal.json": "cbe2a151434a2a5a80dc8158637e55d456c5693f97f37dea4db73fededb31c04",
+  "verify.py": "d056a6b3d437a80122d570527b114c20355168a56f6338466d54b285458d67bc",
+  "verify_orthonormal.py": "e2a0eb660c76a8b73930bf51d34f108ad84e64a0be61bfbc604621da78185a43"
+}

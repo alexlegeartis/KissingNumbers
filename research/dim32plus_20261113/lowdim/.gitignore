@@ -1,0 +1,12 @@
+# Reproducible temporary search pools and binaries. Compact sources, receipts,
+# seed files, and bounded-run logs are the publication artifacts.
+*.pool.bin
+support_lns
+support_lns_v2
+star_pool
+star[0-9][0-9]_[0-9]*.txt
+*.best.txt
+polar38_heads.npz
+n35_c12.log
+final69_controls.log
+review69.log

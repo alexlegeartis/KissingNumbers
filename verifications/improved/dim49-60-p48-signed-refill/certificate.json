@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-13",
+  "method": "Signed P48 cap classes with exact individual exchanges",
+  "rows": [
+    {
+      "dimension": 49,
+      "lower_bound": 52431624,
+      "previous_repository_bound": 52431600,
+      "gain": 24,
+      "parent_sha256": "9d7c99f12b865c37e177f6c4d20d0e47699fce2150369b7be692d9249f295073",
+      "delta_sha256": "4a1ca487cdb77f305c474538871fd54730e0db69cedf9bfd25bf78d98a49ae46",
+      "changed_classes": 1,
+      "decoded_delta_sha256": "c30d5ca1880f43333dcdccbbf8410f9703f8161271be775e15c15ac8c73a845f",
+      "delta_file": "p48_signed_delta49.json.gz"
+    },
+    {
+      "dimension": 50,
+      "lower_bound": 52462872,
+      "previous_repository_bound": 52462800,
+      "gain": 72,
+      "parent_sha256": "cbccb1ebba3656f4722942c802bce2da77eac6225d32a08a27163f3cd9e4d8fb",
+      "delta_sha256": "e2e4970d39e98a58dbf9cb93340f7034c95a1571aff2c2ce0ac1ba40f30ceb12",
+      "changed_classes": 3,
+      "decoded_delta_sha256": "27f7dca5febfaac41307078cd674f0427870ad3f4ee438e37b6ede27a341e6a9",
+      "delta_file": "p48_signed_delta50.json.gz"
+    },
+    {
+      "dimension": 51,
+      "lower_bound": 52509740,
+      "previous_repository_bound": 52509596,
+      "gain": 144,
+      "parent_sha256": "98034bb0c332bc8783af09725afab4f484f3ad22c0171ab320418ce584bbfa16",
+      "delta_sha256": "cf486322e1922f156c5e2c01cef59b97888affc4756db8b31c54b1a26d91e75a",
+      "changed_classes": 6,
+      "decoded_delta_sha256": "d78fe9832fcfc483a6f2dd9b095e23dee9b78a920be1ffd1bd2c19fd84c1f284",
+      "delta_file": "p48_signed_delta51.json.gz"
+    },
+    {
+      "dimension": 52,
+      "lower_bound": 52603402,
+      "previous_repository_bound": 52603116,
+      "gain": 286,
+      "parent_sha256": "90e6232387f0d490c8ccc10ecd31b58a47c664d513b4ac03ed6fb7ca06fcbc1f",
+      "delta_sha256": "ba1fa1cafedaf5889e6a418f50b09776033c7ff775cadad911a4c6d25c572a8c",
+      "changed_classes": 12,
+      "decoded_delta_sha256": "75188cadc549d921bced53cda85d2615a2d837f6fae17b2a91e8d67a1d8582dd",
+      "delta_file": "p48_signed_delta52.json.gz"
+    },
+    {
+      "dimension": 53,
+      "lower_bound": 52728054,
+      "previous_repository_bound": 52727584,
+      "gain": 470,
+      "parent_sha256": "b652dc5be5c5e72534ba35d3462548fac937ed13a37ac544c91899a763cf0396",
+      "delta_sha256": "9d6e5bb6e2b30e003324e9b3da3a8afb793643841e547065525321c64b9e9d4c",
+      "changed_classes": 20,
+      "decoded_delta_sha256": "bde06267ab99123de7ef296b4e70f617380f9ee1623da451cb8efb2b67faef82",
+      "delta_file": "p48_signed_delta53.json.gz"
+    },
+    {
+      "dimension": 54,
+      "lower_bound": 52976623,
+      "previous_repository_bound": 52975804,
+      "gain": 819,
+      "parent_sha256": "4fe02e7dd69ce14f81833ac2d15f2ec8665125ad1c06bd4c15a994d579f8e112",
+      "delta_sha256": "9622fce8977fe03d3f4fdd565f7173ea7696b3e38d02c905a5e25ae6a7080ce6",
+      "changed_classes": 36,
+      "decoded_delta_sha256": "43adaa690f7d653c8cb08e1b472e77ad050d68997b5274c3094ad9cb46e167eb",
+      "delta_file": "p48_signed_delta54.json.gz"
+    },
+    {
+      "dimension": 55,
+      "lower_bound": 53393546,
+      "previous_repository_bound": 53392162,
+      "gain": 1384,
+      "parent_sha256": "23d891f182411220d4e85afa39d457c34bd20a5df62e825f02756485830d52dd",
+      "delta_sha256": "c74653824c84c961a5408207324e07fc5e132c4c4ac8828cb0e05ea0866fa87e",
+      "changed_classes": 63,
+      "decoded_delta_sha256": "381269947d959c610018b240699b704ac7ab851d780d4660ff7540e42eb5b45a",
+      "delta_file": "p48_signed_delta55.json.gz"
+    },
+    {
+      "dimension": 56,
+      "lower_bound": 54263398,
+      "previous_repository_bound": 54260992,
+      "gain": 2406,
+      "parent_sha256": "a11b0dbaec08f531b7f5ae27a0163d1ce93953cd1bfbc2e55b33276003fbfe99",
+      "delta_sha256": "898e994c52b3a4d23ed0ab5f260f67fef4e7bd92462d037d965b420cd62f2c7a",
+      "changed_classes": 120,
+      "decoded_delta_sha256": "94394574e973cdd480f6b1ea0887b80c7674ffa22595aded34a55cb700f43301",
+      "delta_file": "p48_signed_delta56.json.gz"
+    },
+    {
+      "dimension": 57,
+      "lower_bound": 54760693,
+      "previous_repository_bound": 54757822,
+      "gain": 2871,
+      "parent_sha256": "b081a40b1845dbf3e10448328449c6449916cec7771736defe45598591a517fe",
+      "delta_sha256": "ea9a5e9a92059fffb9b8e4e0ba93a3d616b8de2c11bd7a6b257f869fb5dea64f",
+      "changed_classes": 153,
+      "decoded_delta_sha256": "2929bec83843fc06fc27b764d1362263750f7fc65a52cbe43b2ad633030d4c5d",
+      "delta_file": "p48_signed_delta57.json.gz"
+    },
+    {
+      "dimension": 58,
+      "lower_bound": 56270076,
+      "previous_repository_bound": 56266316,
+      "gain": 3760,
+      "parent_sha256": "c96191d091ce45a4c3e00ed3fff615fac06525bd3f9311d3d298de2ea6b6dfa2",
+      "delta_sha256": "d888a020d88e9f9b9ea7736fabef3a0d3d5d5b363eb13a5c8b14dc4e140a1826",
+      "changed_classes": 255,
+      "decoded_delta_sha256": "da86b2315eb48fe85f6c7291d3122894079c55372fbc8162daec90a7e498af03",
+      "delta_file": "p48_signed_delta58.json.gz"
+    },
+    {
+      "dimension": 59,
+      "lower_bound": 56952414,
+      "previous_repository_bound": 56948468,
+      "gain": 3946,
+      "parent_sha256": "e92d40b8e36bbfdd81b744fa73692ddbf96cb099f0ce91c6475d8986b9024ab1",
+      "delta_sha256": "cd0c5b368828c13117fa845b97b12b8a930333a86893cb8bb5c0ef4d2446b708",
+      "changed_classes": 302,
+      "decoded_delta_sha256": "a97283fbc4c6e7aa9a4279f125d3825401450a872483183a29ad35ee56b90569",
+      "delta_file": "p48_signed_delta59.json.gz"
+    },
+    {
+      "dimension": 60,
+      "lower_bound": 58631571,
+      "previous_repository_bound": 58627711,
+      "gain": 3860,
+      "parent_sha256": "cc3a2e07fbe3f5f91c33d61ba69102057c5fd8f90dc509d3c5d83d29adac9b25",
+      "delta_sha256": "6e516dedf722e13c6c660a873285332d73ee0f813ad8cfd39e2d97c5715612ac",
+      "changed_classes": 407,
+      "decoded_delta_sha256": "9498be95961da41b878c7becf4bb8185837e297698a5aa2eee6ffa42eab4b493",
+      "delta_file": "p48_signed_delta60.json.gz"
+    }
+  ],
+  "inherited_inputs": [
+    "Published P48p Gram identification, minimum norm six and 52,416,000 minimal vectors."
+  ]
+}

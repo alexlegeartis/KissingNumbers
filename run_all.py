@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 103 scripts, including large exact certificate replays
-    python run_all.py --full       # 122 scripts, budget about 10 hours
+    python run_all.py              # 105 scripts, including large exact certificate replays
+    python run_all.py --full       # 124 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -106,6 +106,10 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('49-60D signed P48 refill: complete finite family verification',
+     os.path.join(V, 'improved', 'dim49-60-p48-signed-refill'), ['verify.py'], 6.0, True),
+    ('69D head compression: two exact proofs and rejection controls',
+     os.path.join(V, 'improved', 'dim69-gamma72-head-compression'), ['rejection_controls.py'], 0.2, True),
     ("dims28,29: November sextet unions, complete exact geometry and direct integer changes",
      os.path.join(V, "improved", "dim28-29-november-sextets"), ["verify.py"], 4.0, True),
     ("60D antipodal840: exact tail, poles and 420 disjoint P48 classes",
@@ -523,12 +527,16 @@ def _sota_coverage(jobs, results=None):
         ('dim39-deformed-orbits', [39], [('verify.py',)], ''),
         ('dim41-46-p48-heads', list(range(41, 47)), [('verify.py',)],
          'inherited body populations; the latest large shells are not all freshly enumerated'),
+        ('dim49-60-p48-signed-refill', list(range(49, 61)), [('verify.py',)],
+         'complete signed class geometry, ownership and tails; published P48 minimum and shell population'),
         ('dim49-63-p48-caps', list(range(49, 61)),
          [('verify_october.py',), ('scripts/verify_capdirs.py',)], ''),
         ('dim61-68-95-96-code-layers', [61, 62, 63, 95, 96], [('verify.py',)], ''),
         ('dim64-65-signed-parity', [64, 65], [('verify.py',)], ''),
         ('dim61-68-95-96-code-layers', [66, 67, 68], [('verify.py',)],
          'the default replay reads the saved [73,36,16] distance report; --sota also enumerates all words'),
+        ('dim69-gamma72-head-compression', [69], [('rejection_controls.py',)],
+         'two exact population/geometry proofs with published Gamma72 premises; favorable orientation exists, no full shell enumeration'),
         ('dim68-69-gamma72-cross-sections', [69],
          [('scripts/verify69.py',), ('scripts/recheck_cert.py',)],
          'geometry replay plus an independent LP-certificate replay; recheck_cert also covers dimensions 68 and 70'),

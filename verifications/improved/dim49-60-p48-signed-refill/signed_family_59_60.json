@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "base_pairs": 30283653,
+  "dimensions": [
+    {
+      "status": "PASS",
+      "dimension": 59,
+      "bound": 56952414,
+      "baseline": 56948468,
+      "gain": 3946,
+      "classes": 302,
+      "changed_classes": 302,
+      "selected_signed_mother_points": 4535810,
+      "removed_signed_points": 8933,
+      "added_signed_points": 12879,
+      "explicit_exceptional_pairs": 797548988,
+      "global_original_lines": 2265932,
+      "global_added_signed_points": 12879,
+      "source_sha256": "e92d40b8e36bbfdd81b744fa73692ddbf96cb099f0ce91c6475d8986b9024ab1",
+      "delta_sha256": "cd0c5b368828c13117fa845b97b12b8a930333a86893cb8bb5c0ef4d2446b708",
+      "seconds": 28.772432565689087,
+      "delta_decoded_sha256": "a97283fbc4c6e7aa9a4279f125d3825401450a872483183a29ad35ee56b90569"
+    },
+    {
+      "status": "PASS",
+      "dimension": 60,
+      "bound": 58631571,
+      "baseline": 58627711,
+      "gain": 3860,
+      "classes": 420,
+      "changed_classes": 407,
+      "selected_signed_mother_points": 6214730,
+      "removed_signed_points": 11663,
+      "added_signed_points": 15523,
+      "explicit_exceptional_pairs": 1465333061,
+      "global_original_lines": 3105435,
+      "global_added_signed_points": 15523,
+      "source_sha256": "cc3a2e07fbe3f5f91c33d61ba69102057c5fd8f90dc509d3c5d83d29adac9b25",
+      "delta_sha256": "6e516dedf722e13c6c660a873285332d73ee0f813ad8cfd39e2d97c5715612ac",
+      "seconds": 58.114869832992554,
+      "delta_decoded_sha256": "9498be95961da41b878c7becf4bb8185837e297698a5aa2eee6ffa42eab4b493"
+    }
+  ],
+  "arithmetic": "Every int64 and binary64 multiplication has an explicit absolute partial-sum bound; no tolerance is used.",
+  "inherited_inputs": [
+    "Published P48p Gram identification, lattice minimum6 and52,416,000 minimal vectors."
+  ],
+  "head_scope": "Complete base pairs, all final exceptional/retained-base and exceptional/exceptional pairs, integral isometries and full-coordinate signed ownership are freshly checked.",
+  "certificate_container": "JSON inputs losslessly compressed after the completed pair replay; byte identities in compression_verification.json"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "dimension": 69,
+  "bound": 743522304,
+  "previous": 689452922,
+  "gain": 54069382,
+  "geometry_pair_types": 55,
+  "profile_cells": 1681,
+  "averaged_variables": 16,
+  "exact_moment_rows": 10,
+  "dual_value": "743522304",
+  "dual_slack_min": "0",
+  "inherited_inputs": [
+    "Nebe Gamma72 existence, integral even lattice, minimum 8, minimal-shell population 6,218,175,600, spherical 11-design, and identity of the supplied catalogue Gram matrix."
+  ],
+  "scope": "Existence of one favorable orientation of the D4 normals, with explicit algebraic slice/head maps; not an enumeration of all 743,522,304 points."
+}
