@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+The 12 November [28D/29D sextet continuation](verifications/improved/dim28-29-november-sextets/) gives **222,120** and **231,776**, respectively **16** and **2** above PackingStar’s November 11 files. Complete exact integer geometry covers every unordered pair; direct-int64 changed-pair checks and four rejection controls are included. The comparison is pinned; 26D, 27D, 30D and 31D remain below that release.
+
 The 8 November [31D latitude-contact exchange](verifications/improved/dim31-latitude-contact-exchange/) gives **251,200** points, four above the preceding repository certificate. Both complete exact pair proofs cover all 31,550,594,400 unordered pairs. One uses direct integer arithmetic without antipodal compression; reconstruction, all changed-pair checks and semantic rejection controls are included. This proof assumes no lattice minimum or unenumerated population. The source-comparison scope is recorded separately.
 
 The 8 November [pointwise P48 refill](verifications/improved/dim49-60-p48-pointwise-refill/) gives twelve improved 49–60D bounds, including **58,627,711 in 60D**. Its portable replay uses two exact head implementations, every added/retained and added/added pair, full-coordinate ownership, complete direction/pole checks and an algebraic lift proof. Twelve rejection controls test malformed inputs. Published P48 minimum six and shell population 52,416,000 remain inherited; the full lifted code is not expanded.
@@ -36,8 +38,10 @@ The 28 October P48 refilling certificate improves 49–60D. `verify_october.py` 
 
 The 27 October [26–31D residual completion package](verifications/improved/dim26-31-residual-completions/) supersedes the earlier 26–31D packages. Its default replay checks all supplied coordinates independently, including a self-contained shell lemma, and uses exact quadratic-field arithmetic for the final 30D/31D pure tails. Historical packages remain reproducible. No new worldwide record survey is asserted.
 
-The README labels 70 results SOTA against its dated sources. Every labelled result
-has a verification route, but a short run does not freshly establish all of them.
+The repository registers 70 constructions. The README labels 66 as best in its
+dated reviewed sources; PackingStar has superseded the repository in 26D, 27D,
+30D and 31D. Every construction has a verification route, but a short run does
+not freshly establish all of them.
 The commands below check constructions; they do not perform a literature search.
 
 From this repository's root:

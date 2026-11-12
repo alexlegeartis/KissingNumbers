@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-12",
+  "packingstar_commit": "2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6",
+  "repository_base": "f1be2cc3d2ae2e5d7c0ebab447c3533e43e9c18d",
+  "records": [
+    {
+      "dimension": 28,
+      "total": 222120,
+      "prior_repository": 221988,
+      "packingstar": 222104,
+      "gain_over_packingstar": 16,
+      "certificate": "data/coordinates28_222120.npz",
+      "exchange": "data/exchange28.npz",
+      "verification": "data/verification28.json",
+      "removed": 40,
+      "added": 56,
+      "source_url": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D28_222104_coordinates.npz",
+      "source_file_sha256": "76b638828b7c77ec4736fb5cfb292aaeed5a3657f4a67c7179387c920cfee087",
+      "source_canonical_sha256": "ca62cc5b154c01db80f0ef29b78d7a88083caa21ee087684101f5bf973bc2164",
+      "direct_integer_replay": {
+        "status": "PASS",
+        "dimension": 28,
+        "added": 56,
+        "removed": 40,
+        "total": 222120,
+        "changed_point_comparisons": 12438664,
+        "maximum_changed_product": 64,
+        "arithmetic": "Direct int64 coordinate sums; no BLAS or tolerance",
+        "source_canonical_sha256": "ca62cc5b154c01db80f0ef29b78d7a88083caa21ee087684101f5bf973bc2164"
+      }
+    },
+    {
+      "dimension": 29,
+      "total": 231776,
+      "prior_repository": 231697,
+      "packingstar": 231774,
+      "gain_over_packingstar": 2,
+      "certificate": "data/coordinates29_231776.npz",
+      "exchange": "data/exchange29.npz",
+      "verification": "data/verification29.json",
+      "removed": 6,
+      "added": 8,
+      "source_url": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D29_231774_coordinates.npz",
+      "source_file_sha256": "4a48f217029861df8a74d0201d997709f2123bdd08835db1cbc0dd074453b66e",
+      "source_canonical_sha256": "dfc3f756927e6715e853c4d4fea9708f33d59428954d276e8e34b16ef213361e",
+      "direct_integer_replay": {
+        "status": "PASS",
+        "dimension": 29,
+        "added": 8,
+        "removed": 6,
+        "total": 231776,
+        "changed_point_comparisons": 1854200,
+        "maximum_changed_product": 64,
+        "arithmetic": "Direct int64 coordinate sums; no BLAS or tolerance",
+        "source_canonical_sha256": "dfc3f756927e6715e853c4d4fea9708f33d59428954d276e8e34b16ef213361e"
+      }
+    }
+  ]
+}

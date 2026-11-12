@@ -1,0 +1,120 @@
+{
+  "small": {
+    "support": {
+      "support_count": 928,
+      "maximum_support_intersection": 4,
+      "dimension": 31,
+      "resulting_construction_count": 218948,
+      "improves_current_record": false
+    },
+    "triangle": {
+      "binary_length": 24,
+      "allowed_distances": [
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24
+      ],
+      "exact_bound_per_fixed_phase": 280,
+      "six_fixed_phase_bound": 1680,
+      "scope": "Applies to the six fixed orthogonal-plane triangle phases, not arbitrary triangle orientations."
+    }
+  },
+  "layer": {
+    "dimension": 31,
+    "new_layer_points": 2688,
+    "squared_norm": 128,
+    "distinct_pair_product_at_most": 64,
+    "maximum_support_intersection": 4,
+    "minimum_sign_distance": 2,
+    "exact_coordinate_reconstruction": true,
+    "source_cost_checked": true,
+    "source_filename": "D31_251254_coordinates.npz",
+    "source_sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+    "source_points": 251254,
+    "shared_deletions": 9649,
+    "full_layer_gain": -6961,
+    "maximum_gain_from_any_subset_of_these_21_whole_fibers": 0,
+    "integer_flow_checked": true,
+    "scope": "The subset result concerns this one exhibited orientation and whole 128-sign fibers; partial sign fibers and other orientations are not excluded."
+  },
+  "amplification": [
+    {
+      "dimension": 26,
+      "source_filename": "D26_201180_coordinates.npz",
+      "source_sha256": "36732203081894af188e75e2dae69327961b79c7b0781385b1589025b7e0b309",
+      "incumbent_points": 201180,
+      "candidate_points": 128,
+      "distinct_forbidden_partners": 128,
+      "quadratic_matched_pairs": 0,
+      "complete_candidate_regeneration": true,
+      "maximum_gain": 0,
+      "scope": "Every subset of this supplied complete candidate family requires at least as many incumbent deletions as insertions. This is not a bound on other families."
+    },
+    {
+      "dimension": 27,
+      "source_filename": "D27_209862_coordinates.npz",
+      "source_sha256": "79f8c596a3bdffac1005032af0edaa8790d3c724f146115898237905982e757e",
+      "incumbent_points": 209862,
+      "candidate_points": 384,
+      "distinct_forbidden_partners": 384,
+      "quadratic_matched_pairs": 0,
+      "complete_candidate_regeneration": true,
+      "maximum_gain": 0,
+      "scope": "Every subset of this supplied complete candidate family requires at least as many incumbent deletions as insertions. This is not a bound on other families."
+    },
+    {
+      "dimension": 28,
+      "source_filename": "sextet28_222120.npz",
+      "source_sha256": "55434e35355afbd8b9b75fa2e921337188febf6957e0bb47241077b9e7744259",
+      "incumbent_points": 222120,
+      "candidate_points": 704,
+      "distinct_forbidden_partners": 704,
+      "quadratic_matched_pairs": 0,
+      "complete_candidate_regeneration": true,
+      "maximum_gain": 0,
+      "scope": "Every subset of this supplied complete candidate family requires at least as many incumbent deletions as insertions. This is not a bound on other families."
+    },
+    {
+      "dimension": 29,
+      "source_filename": "sextet29_231776.npz",
+      "source_sha256": "e4fbeebe6d290e4c3f196e041b6b1319631871ce8e503913255e9d644911beb3",
+      "incumbent_points": 231776,
+      "candidate_points": 1280,
+      "distinct_forbidden_partners": 1280,
+      "quadratic_matched_pairs": 0,
+      "complete_candidate_regeneration": true,
+      "maximum_gain": 0,
+      "scope": "Every subset of this supplied complete candidate family requires at least as many incumbent deletions as insertions. This is not a bound on other families."
+    },
+    {
+      "dimension": 30,
+      "source_filename": "D30_247992_coordinates.npz",
+      "source_sha256": "5e46243e5f3cf4790d56abc4008c9cebeb45bdde2fd3080e44a0546d59cccc5a",
+      "incumbent_points": 247992,
+      "candidate_points": 1920,
+      "distinct_forbidden_partners": 1920,
+      "quadratic_matched_pairs": 0,
+      "complete_candidate_regeneration": true,
+      "maximum_gain": 0,
+      "scope": "Every subset of this supplied complete candidate family requires at least as many incumbent deletions as insertions. This is not a bound on other families."
+    },
+    {
+      "dimension": 31,
+      "source_filename": "D31_251254_coordinates.npz",
+      "source_sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+      "incumbent_points": 251254,
+      "candidate_points": 2688,
+      "distinct_forbidden_partners": 2688,
+      "quadratic_matched_pairs": 0,
+      "complete_candidate_regeneration": true,
+      "maximum_gain": 0,
+      "scope": "Every subset of this supplied complete candidate family requires at least as many incumbent deletions as insertions. This is not a bound on other families."
+    }
+  ],
+  "design_reproduced": true
+}

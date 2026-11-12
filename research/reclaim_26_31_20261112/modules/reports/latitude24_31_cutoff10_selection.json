@@ -1,0 +1,12 @@
+{
+  "solver_status": 0,
+  "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "gain": 0,
+  "added": 0,
+  "removed": 0,
+  "selection": [],
+  "deletions": [],
+  "numerical_gain_upper_bound": -0.0,
+  "seconds": 0.5482558329999847,
+  "scope": "Numerical selection; an improving output gets exact changed-pair replay, not a source proof."
+}

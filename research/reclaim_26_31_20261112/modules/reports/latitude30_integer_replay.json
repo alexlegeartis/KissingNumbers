@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "candidates": 15360,
+  "explicit_forbidden_products": 76800,
+  "minimum_witness_product": 20,
+  "candidate_blocker_degree": 5,
+  "maximum_selected_conflicts_per_deleted_old_point": 4,
+  "conclusion": "5*added <= 4*deleted, only for the explicit norm8-core/norm24-tail family"
+}

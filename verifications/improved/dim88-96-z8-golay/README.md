@@ -43,6 +43,18 @@ certificate controls. It does not enumerate 2^37 binary words.
 - `source/negative_controls.py` checks positive examples and rejects incorrect
   ring lifts, duplicate supports, missing checks, overlapping checks and wrong
   trace parity in both implementations.
+- `source/adapted_common.py` supplies structural pattern guards and physical sign-position maps.
+- `source/adapted_replay.py` and `source/adapted_independent.py` independently
+  count the support-adapted zero-row sections and check their support maps.
+- `source/adapted_equal_replay.py` and `source/adapted_equal_independent.py`
+  independently count the support-adapted equal-row sections and check their maps.
+- `source/adapted_negative_controls.py` rejects malformed adapted patterns,
+  nonbijective maps and corrupted section claims.
+- `source/section_negative_controls.py` rejects malformed row sections and
+  corrupted counts, including an invalid uniform-projection count for the octad section.
+- `nonlinear/source/guards.py` checks nonlinear source families, patterns and support maps.
+- `nonlinear/source/independent.py` independently reconstructs the nonlinear
+  source code and verifies its distances, patterns, support maps and section counts.
 - `data/z8_generator.json` gives the complete ring generator and polynomial factors.
 - `data/supports.npz` pins the 26,022-support family from the preceding verified
   dual-obstruction construction, including both generator matrices and all witnesses.

@@ -56,12 +56,14 @@ No mathematical defect was found in the section mechanism or inherited parent as
 
 All seven independent count checks PASS. Together with both parent replays and the section/layer checks, all seven claimed gains are substantiated against the freshly fetched repository baseline.
 
-|Dimension|Audited total|Gain over current repository|
-|---|---:|---:|
-|88|6,922,487,106|1,235,522|
-|89|9,229,785,598|431,462|
-|90|12,307,197,352|527,024|
-|91|16,410,365,876|766,760|
-|92|21,881,382,480|892,192|
-|93|31,041,848,144|889,504|
-|94|47,698,308,180|800,104|
+**Historical comparison.** The audited totals and gains are retained as recorded. The added current registry column follows `nonlinear/data/verified.json`.
+
+|Dimension|Historical audited total|Gain over repository baseline at this audit|Current registry|
+|---|---:|---:|---:|
+|88|6,922,487,106|1,235,522|6,967,552,256|
+|89|9,229,785,598|431,462|9,270,596,604|
+|90|12,307,197,352|527,024|12,341,351,672|
+|91|16,410,365,876|766,760|16,435,507,572|
+|92|21,881,382,480|892,192|21,896,439,920|
+|93|31,041,848,144|889,504|31,056,799,856|
+|94|47,698,308,180|800,104|47,703,347,340|

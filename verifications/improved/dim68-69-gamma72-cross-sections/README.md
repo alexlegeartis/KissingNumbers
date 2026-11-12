@@ -4,18 +4,18 @@
 
 Weyl-averaged Gamma72 affine unions now give 471,884,288 in 68D (+517,632) and 689,452,922 in 69D (+10,776 over the preceding affine certificates). Integral Gram-preserving normal orientations, exact moment duals and an averaging/integer-ceiling argument certify existence; no ambient shell symmetry is assumed. Prior packages, paper and workflows are unchanged.
 
-See [the self-contained averaging proof](weyl_averaged/). Run `python weyl_averaged/verify.py 3`, `python weyl_averaged/verify.py 4`, and `python weyl_averaged/negative_controls.py`. The earlier records and methods below are retained as history.
+See [the self-contained averaging proof](weyl_averaged/). Run `python weyl_averaged/verify.py 3`, `python weyl_averaged/verify.py 4`, and `python weyl_averaged/negative_controls.py`. `weyl_averaged/verify_orientations.py` checks the integral Gram-preserving orientation groups and their cell orbits. The earlier records and methods below are retained as history.
 
-## Current affine continuation (10 November 2026)
+## Historical affine continuation (10 November 2026)
 
 The 10 November affine Gamma72 continuations give 471,366,656 in 68D (+96,144,488; 25.62%) and 689,442,146 in 69D (+61,619,966; 9.81%). Six and ten compatible affine slices replace the central-section restriction. Self-contained exact verifiers check exhibited normals, all cells and equality groups, rational duals and geometry; sixteen corruption controls pass. The lattice minimum, population and 11-design property remain published inputs. The paper and workflows are unchanged.
 
 See [the self-contained affine package](affine68_69/). Run `python affine68_69/verify.py 3`, `python affine68_69/verify.py 4`, and `python affine68_69/rejection_controls.py`. The existing `scripts/verify69.py` and `scripts/verify68.py` retain their historical replays and then invoke the corresponding affine proof.
 
-| dimension | current lower bound | preceding repository bound | gain |
-|---|---:|---:|---:|
-| 68 | **471 366 656** | 375 222 168 | 96 144 488 |
-| 69 | **689 442 146** | 627 822 180 | 61 619 966 |
+| dimension | 10 November affine lower bound | preceding repository bound | historical gain | current registry |
+|---|---:|---:|---:|---:|
+| 68 | **471 366 656** | 375 222 168 | 96 144 488 | 471 884 288 |
+| 69 | **689 442 146** | 627 822 180 | 61 619 966 | 689 452 922 |
 
 The remaining text records the historical central-section method. Statements below that restrict progress to a larger k concern that former central-cell objective, not the affine unions.
 

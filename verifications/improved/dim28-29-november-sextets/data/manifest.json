@@ -1,0 +1,15 @@
+{
+  "README.md": "aada8d51a224abbdb96939f8da859a759f220337f743264bea4233ec43dce5f2",
+  "data/coordinates28_222120.npz": "55434e35355afbd8b9b75fa2e921337188febf6957e0bb47241077b9e7744259",
+  "data/coordinates29_231776.npz": "e4fbeebe6d290e4c3f196e041b6b1319631871ce8e503913255e9d644911beb3",
+  "data/exchange28.npz": "b2e42efe76817dd40a2b6b65e2c502c2427e71ba9e72a7ad7ab246ab2ec7a6d4",
+  "data/exchange29.npz": "18b61bfbd1124fbbb01b5ec528965edbf95747f4fe7d5ac00c6f1f3a20272b06",
+  "data/provenance.json": "bc67c904f55071e72d53b3abb9fee85fab6d909e947b8cd1815dfbd740951455",
+  "data/verification28.json": "591093257f66ecfe55a8547db1683bc2c4807609075fd3cacc357971b446e5d5",
+  "data/verification29.json": "c0441832dad6684ee2da71835e760481b9767694b2bf3b5cbaafeedd5b8cb913",
+  "final.py": "4b866dd4b5d25a664b19ff76c57be53dcd86b0f74b94896e18c212154746120a",
+  "negative_controls.py": "73ec8f42fe7ab26f7ca03b7e6e3c3ed477202f243c9b6b1f92e267da331b69c9",
+  "verify.py": "fd50ca2ab0d0218720a41f16f08b2a8d9e14b687112bbb244bf6667c0851ed0f",
+  "verify_delta.py": "cd309513cc90b6dc6c48a7863d33d8e82023235d0efa86de8e47699bf57b5c5b",
+  "verify_geometry.py": "5900266bff5aee1782007d38a4b2791f7072f45a6397918f5df081cbf55553fd"
+}

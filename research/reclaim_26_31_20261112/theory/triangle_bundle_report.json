@@ -1,0 +1,82 @@
+{
+  "source": "D31_251254_coordinates.npz",
+  "source_points": 251254,
+  "heads": 23040,
+  "current_heads": 11136,
+  "fixed_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "colors": [
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      -1
+    ],
+    [
+      2,
+      3,
+      1
+    ],
+    [
+      2,
+      3,
+      -1
+    ],
+    [
+      4,
+      5,
+      1
+    ],
+    [
+      4,
+      5,
+      -1
+    ]
+  ],
+  "bundle_count": 138240,
+  "minimum_blockers": 334,
+  "quantiles": {
+    "0": 334.0,
+    "0.001": 348.0,
+    "0.01": 385.0,
+    "0.1": 448.0,
+    "0.5": 754.0,
+    "0.9": 1153.0,
+    "1": 1316.0
+  },
+  "at_most": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "8": 0,
+    "16": 0,
+    "32": 0,
+    "64": 0,
+    "128": 0,
+    "256": 0,
+    "512": 16979,
+    "1024": 105730
+  },
+  "saved_bundles": 1200,
+  "saved_union_blockers": 33795,
+  "elapsed_seconds": 21.535365104675293,
+  "scope": "Exact pricing of every one of the three points in each fixed-plane bundle against current incumbent; no bundle compatibility optimization yet."
+}

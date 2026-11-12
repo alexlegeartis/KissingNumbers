@@ -1,0 +1,40 @@
+{
+  "description": "Pinned external incumbents required for cost and amplification replays. Source directory paths are supplied at runtime.",
+  "sources": {
+    "26": {
+      "filename": "D26_201180_coordinates.npz",
+      "sha256": "36732203081894af188e75e2dae69327961b79c7b0781385b1589025b7e0b309",
+      "points": 201180
+    },
+    "27": {
+      "filename": "D27_209862_coordinates.npz",
+      "sha256": "79f8c596a3bdffac1005032af0edaa8790d3c724f146115898237905982e757e",
+      "points": 209862
+    },
+    "28": {
+      "filename": "sextet28_222120.npz",
+      "sha256": "55434e35355afbd8b9b75fa2e921337188febf6957e0bb47241077b9e7744259",
+      "points": 222120
+    },
+    "29": {
+      "filename": "sextet29_231776.npz",
+      "sha256": "e4fbeebe6d290e4c3f196e041b6b1319631871ce8e503913255e9d644911beb3",
+      "points": 231776
+    },
+    "30": {
+      "filename": "D30_247992_coordinates.npz",
+      "sha256": "5e46243e5f3cf4790d56abc4008c9cebeb45bdde2fd3080e44a0546d59cccc5a",
+      "points": 247992
+    },
+    "31": {
+      "filename": "D31_251254_coordinates.npz",
+      "sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+      "points": 251254
+    }
+  },
+  "packingstar_latest_commit": "2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6",
+  "generated_sources": {
+    "28": "Regained 28D certificate from this research campaign.",
+    "29": "Regained 29D certificate from this research campaign."
+  }
+}

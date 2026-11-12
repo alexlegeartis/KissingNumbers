@@ -1,0 +1,17 @@
+{
+  "dimension": 31,
+  "packingstar_points": 251254,
+  "repository_points": 251200,
+  "common_rational_points": 134864,
+  "repository_exclusive_points": 116336,
+  "packingstar_exclusive_points": 116390,
+  "conflict_graph_edges": 3371484,
+  "matched_blockers": 116336,
+  "status": "PASS exact injective blocker certificate",
+  "maximum_feasible_cardinality_in_union": 251254,
+  "scope": "Literal two-source union only; no global or larger-family exclusion",
+  "packingstar_sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+  "repository_sha256": "b75a8e9d958017fe03926265f5ee9d42f24b16c9ec848414b4a4e7eba0d329ee",
+  "matching_sha256": "6cbbca5c8539f342628681bddc7fc5b3785af803109e57a1aee83c015ed7e7c6",
+  "seconds": 56.79989457130432
+}

@@ -1,0 +1,69 @@
+{
+  "packingstar_commit": "2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6",
+  "dimensions": [
+    {
+      "dimension": 26,
+      "rational_points": 201164,
+      "rational_core_norm_counts": {
+        "0": 4,
+        "16": 192,
+        "24": 8832,
+        "32": 192136
+      },
+      "quadratic_points": 16,
+      "exact_quadratic_cross_pairs": 3218624,
+      "exact_quadratic_pairs": 120
+    },
+    {
+      "dimension": 27,
+      "rational_points": 209862,
+      "rational_core_norm_counts": {
+        "0": 12,
+        "16": 288,
+        "24": 26024,
+        "32": 183538
+      }
+    },
+    {
+      "dimension": 28,
+      "rational_points": 222104,
+      "rational_core_norm_counts": {
+        "0": 24,
+        "16": 1152,
+        "24": 48450,
+        "32": 172478
+      }
+    },
+    {
+      "dimension": 29,
+      "rational_points": 231774,
+      "rational_core_norm_counts": {
+        "0": 40,
+        "16": 2080,
+        "24": 66006,
+        "32": 163648
+      }
+    },
+    {
+      "dimension": 30,
+      "rational_points": 247992,
+      "rational_core_norm_counts": {
+        "0": 60,
+        "16": 4900,
+        "24": 92792,
+        "32": 150240
+      }
+    },
+    {
+      "dimension": 31,
+      "rational_points": 251254,
+      "rational_core_norm_counts": {
+        "0": 84,
+        "16": 6630,
+        "24": 95852,
+        "32": 148688
+      }
+    }
+  ],
+  "scope": "Exact hashes/norms/layers and 26D radical pairs; rational-rational angles are not checked here"
+}

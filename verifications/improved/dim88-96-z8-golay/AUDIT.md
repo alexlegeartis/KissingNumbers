@@ -4,13 +4,15 @@
 
 All five claims PASS. The audit is `audit.py`, with machine-readable receipt `report.json` and log `audit.log`.
 
-|Dimension|Total|Gain over current published repository|
-|---|---:|---:|
-|88|6,937,411,712|14,924,606|
-|89|9,243,338,748|13,553,150|
-|90|12,316,642,276|9,444,924|
-|91|16,416,373,024|6,007,148|
-|92|21,883,990,128|2,607,648|
+**Historical comparison.** The audited totals and gains are retained as recorded. The added current registry column follows `nonlinear/data/verified.json`.
+
+|Dimension|Historical audited total|Gain over repository baseline at this audit|Current registry|
+|---|---:|---:|---:|
+|88|6,937,411,712|14,924,606|6,967,552,256|
+|89|9,243,338,748|13,553,150|9,270,596,604|
+|90|12,316,642,276|9,444,924|12,341,351,672|
+|91|16,416,373,024|6,007,148|16,435,507,572|
+|92|21,883,990,128|2,607,648|21,896,439,920|
 
 Fresh remote RESULTS.md, blob `5ee520eafa6c797f191b03a79bc9d948c541ac74`, already contains the preceding seven row-section improvements. These five candidate baselines match it, not the earlier superseded baseline. The same fresh file now lists 70D at 1,360,986,112.
 

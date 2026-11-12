@@ -1,0 +1,25 @@
+{
+  "source": "reconstructed/forced31_251244.npz",
+  "source_sha256": "4d40441ef48ed2747e94ef570104489112d732bdd57ba2b449b1919737ba5c30",
+  "anchors_file": "data/forced_delta251244.npz",
+  "anchors_sha256": "1610c3ff484b63785a32e7e91f30477c10e8ebf9eb7266e0e9f8a35a4900f2fb",
+  "baseline": 251244,
+  "anchors": 1996,
+  "sum_incidences": 1281954,
+  "unique_new_sums": 241358,
+  "admitted": 8,
+  "cutoff": 2,
+  "pricing_products": 5238143072,
+  "optimization": {
+    "gain": 0,
+    "added": [],
+    "removed": [],
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "candidate_conflicts": 0,
+    "numerical_gain_bound": -0.0,
+    "scope": "Numerical finite-pool selection; only exact changed-pair checks establish a positive output."
+  },
+  "seconds": 15.929422393000095,
+  "scope": "Complete contact closure on the explicit added-head anchors, with all source points; only the stated blocker-cutoff selection pool."
+}

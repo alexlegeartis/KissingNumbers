@@ -1,0 +1,35 @@
+{
+  "source": "CDM1619/PackingStar@2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D31_251254_coordinates.npz",
+  "seed_trial": 262,
+  "baseline": 251254,
+  "iterations": 200000,
+  "initial_module": "data/bw15_module76.npz",
+  "initial_module_sha256": "4d998aa1f9e982bab575515adb18f572f4523ebcabb3cce6f231663174faa6bd",
+  "rng_seed": 20261114,
+  "temperature": 9.0,
+  "restart_interval": 5000,
+  "requested_iterations": 200000,
+  "time_budget_seconds": 120.0,
+  "seconds": 76.45580801200003,
+  "best_external_deletions": 68,
+  "best_union_gain": 0,
+  "records": [
+    {
+      "iteration": 0,
+      "external_deletions": 76,
+      "whole_module_gain": -18,
+      "union_gain": 0,
+      "new_points": 2016,
+      "cross_conflicts": 41320
+    },
+    {
+      "iteration": 7464,
+      "external_deletions": 68,
+      "whole_module_gain": -10,
+      "union_gain": 0,
+      "new_points": 1996,
+      "cross_conflicts": 38314
+    }
+  ],
+  "scope": "Bounded orientation search, no global optimum; whole-module and best-orientation finite-union counts only."
+}

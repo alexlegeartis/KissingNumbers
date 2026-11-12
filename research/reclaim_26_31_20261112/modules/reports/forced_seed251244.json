@@ -1,0 +1,19 @@
+{
+  "source": "CDM1619/PackingStar@2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D31_251254_coordinates.npz",
+  "source_sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+  "module_sha256": "bfdc02d8f8ad14579d2d0846d4cb5bb505cb891de5d948a8b0065915750b6a0d",
+  "baseline": 251254,
+  "forced_seed": 251244,
+  "gain": -10,
+  "removed": 2006,
+  "added": 1996,
+  "old_module_heads": 1958,
+  "external_deleted": 68,
+  "checks": {
+    "all_source_new_pairs": 506528064,
+    "all_new_new_pairs": 2031120,
+    "arithmetic": "bounded exact integer binary32 source-new; independent int32 new-new",
+    "new_new_maximum": 16
+  },
+  "scope": "All changed inequalities checked exactly; unchanged source validity must be independently established. This may be below the incumbent and is a research seed."
+}

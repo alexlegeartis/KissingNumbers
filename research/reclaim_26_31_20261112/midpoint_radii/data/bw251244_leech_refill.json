@@ -1,0 +1,12 @@
+{
+  "source": "/workspace/scratch/fe26bd298b09/repo_audit_work/bw15_forced_best/forced31_251244.npz",
+  "source_sha256": "4d40441ef48ed2747e94ef570104489112d732bdd57ba2b449b1919737ba5c30",
+  "baseline": 251244,
+  "missing_leech_points": 47872,
+  "distinct_nonzero_tail_core_projections": 48943,
+  "added": 0,
+  "total": 251244,
+  "products": 804008448,
+  "seconds": 2.124679426000057,
+  "scope": "Complete free insertion from the fixed Leech core only; no seed-validity or exchange optimality claim."
+}

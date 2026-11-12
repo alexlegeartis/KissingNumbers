@@ -1,0 +1,94 @@
+priced 0 / 23040 minimum 390 seconds 3.310661554336548
+priced 2048 / 23040 minimum 338 seconds 4.93115234375
+priced 4096 / 23040 minimum 338 seconds 6.520746231079102
+priced 6144 / 23040 minimum 336 seconds 8.03516411781311
+priced 8192 / 23040 minimum 334 seconds 9.53851842880249
+priced 10240 / 23040 minimum 334 seconds 11.045339107513428
+priced 12288 / 23040 minimum 334 seconds 12.716715097427368
+priced 14336 / 23040 minimum 334 seconds 14.154556512832642
+priced 16384 / 23040 minimum 334 seconds 15.60075569152832
+priced 18432 / 23040 minimum 334 seconds 17.05188274383545
+priced 20480 / 23040 minimum 334 seconds 18.474340438842773
+priced 22528 / 23040 minimum 334 seconds 19.933374404907227
+{
+  "source": "/workspace/scratch/fe26bd298b09/PackingStar/25D-31D/new_bounds_20261111/D31_251254_coordinates.npz",
+  "source_points": 251254,
+  "heads": 23040,
+  "current_heads": 11136,
+  "fixed_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "colors": [
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      -1
+    ],
+    [
+      2,
+      3,
+      1
+    ],
+    [
+      2,
+      3,
+      -1
+    ],
+    [
+      4,
+      5,
+      1
+    ],
+    [
+      4,
+      5,
+      -1
+    ]
+  ],
+  "bundle_count": 138240,
+  "minimum_blockers": 334,
+  "quantiles": {
+    "0": 334.0,
+    "0.001": 348.0,
+    "0.01": 385.0,
+    "0.1": 448.0,
+    "0.5": 754.0,
+    "0.9": 1153.0,
+    "1": 1316.0
+  },
+  "at_most": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "8": 0,
+    "16": 0,
+    "32": 0,
+    "64": 0,
+    "128": 0,
+    "256": 0,
+    "512": 16979,
+    "1024": 105730
+  },
+  "saved_bundles": 1200,
+  "saved_union_blockers": 33795,
+  "elapsed_seconds": 21.535365104675293,
+  "scope": "Exact pricing of every one of the three points in each fixed-plane bundle against current incumbent; no bundle compatibility optimization yet."
+}

@@ -1,0 +1,323 @@
+{
+  "baseline": 201180,
+  "current": 201180,
+  "cutoff": 32,
+  "frames": [
+    {
+      "gain": 0,
+      "exclusive": 13040,
+      "candidates": 7576,
+      "edges": 108680,
+      "frame": 1,
+      "total": 201180,
+      "seconds": 7.196994326000095
+    },
+    {
+      "gain": 0,
+      "exclusive": 12568,
+      "candidates": 4376,
+      "edges": 18040,
+      "frame": 2,
+      "total": 201180,
+      "seconds": 15.933874379000144
+    },
+    {
+      "gain": 0,
+      "exclusive": 13012,
+      "candidates": 7580,
+      "edges": 108968,
+      "frame": 3,
+      "total": 201180,
+      "seconds": 24.970212988999947
+    },
+    {
+      "gain": 0,
+      "exclusive": 13298,
+      "candidates": 5106,
+      "edges": 23280,
+      "frame": 4,
+      "total": 201180,
+      "seconds": 35.35854520800012
+    },
+    {
+      "gain": 0,
+      "exclusive": 13290,
+      "candidates": 5098,
+      "edges": 22984,
+      "frame": 5,
+      "total": 201180,
+      "seconds": 45.67849883300005
+    },
+    {
+      "gain": 0,
+      "exclusive": 12642,
+      "candidates": 4450,
+      "edges": 18960,
+      "frame": 6,
+      "total": 201180,
+      "seconds": 50.32666930200003
+    },
+    {
+      "gain": 0,
+      "exclusive": 12962,
+      "candidates": 7530,
+      "edges": 108088,
+      "frame": 7,
+      "total": 201180,
+      "seconds": 54.42550958000015
+    },
+    {
+      "gain": 0,
+      "exclusive": 13192,
+      "candidates": 5000,
+      "edges": 21368,
+      "frame": 8,
+      "total": 201180,
+      "seconds": 58.60031156600007
+    },
+    {
+      "gain": 0,
+      "exclusive": 13200,
+      "candidates": 5008,
+      "edges": 21528,
+      "frame": 9,
+      "total": 201180,
+      "seconds": 62.802311906000114
+    },
+    {
+      "gain": 0,
+      "exclusive": 12650,
+      "candidates": 4458,
+      "edges": 19240,
+      "frame": 10,
+      "total": 201180,
+      "seconds": 67.16496079800004
+    },
+    {
+      "gain": 0,
+      "exclusive": 13288,
+      "candidates": 8368,
+      "edges": 124080,
+      "frame": 11,
+      "total": 201180,
+      "seconds": 71.74402955100004
+    },
+    {
+      "gain": 0,
+      "exclusive": 13280,
+      "candidates": 8360,
+      "edges": 126384,
+      "frame": 12,
+      "total": 201180,
+      "seconds": 76.36849862200006
+    },
+    {
+      "gain": 0,
+      "exclusive": 13188,
+      "candidates": 4996,
+      "edges": 21416,
+      "frame": 13,
+      "total": 201180,
+      "seconds": 80.7497103820001
+    },
+    {
+      "gain": 0,
+      "exclusive": 13196,
+      "candidates": 5004,
+      "edges": 21712,
+      "frame": 14,
+      "total": 201180,
+      "seconds": 85.01046061500006
+    },
+    {
+      "gain": 0,
+      "exclusive": 12946,
+      "candidates": 7514,
+      "edges": 105944,
+      "frame": 15,
+      "total": 201180,
+      "seconds": 89.22151328400014
+    },
+    {
+      "gain": 0,
+      "exclusive": 12642,
+      "candidates": 4450,
+      "edges": 19080,
+      "frame": 16,
+      "total": 201180,
+      "seconds": 93.78272674200002
+    },
+    {
+      "gain": 0,
+      "exclusive": 12962,
+      "candidates": 7530,
+      "edges": 108792,
+      "frame": 17,
+      "total": 201180,
+      "seconds": 98.28349991300001
+    },
+    {
+      "gain": 0,
+      "exclusive": 13192,
+      "candidates": 5000,
+      "edges": 21352,
+      "frame": 18,
+      "total": 201180,
+      "seconds": 105.49462519200006
+    },
+    {
+      "gain": 0,
+      "exclusive": 13200,
+      "candidates": 5008,
+      "edges": 21568,
+      "frame": 19,
+      "total": 201180,
+      "seconds": 116.00885135600015
+    },
+    {
+      "gain": 0,
+      "exclusive": 12650,
+      "candidates": 4458,
+      "edges": 19184,
+      "frame": 20,
+      "total": 201180,
+      "seconds": 125.306927954
+    },
+    {
+      "gain": 0,
+      "exclusive": 13288,
+      "candidates": 8368,
+      "edges": 124208,
+      "frame": 21,
+      "total": 201180,
+      "seconds": 136.211993872
+    },
+    {
+      "gain": 0,
+      "exclusive": 13280,
+      "candidates": 8360,
+      "edges": 126000,
+      "frame": 22,
+      "total": 201180,
+      "seconds": 146.37228052199998
+    },
+    {
+      "gain": 0,
+      "exclusive": 13188,
+      "candidates": 4996,
+      "edges": 21448,
+      "frame": 23,
+      "total": 201180,
+      "seconds": 154.15573407600004
+    },
+    {
+      "gain": 0,
+      "exclusive": 13196,
+      "candidates": 5004,
+      "edges": 21576,
+      "frame": 24,
+      "total": 201180,
+      "seconds": 158.51838197300003
+    },
+    {
+      "gain": 0,
+      "exclusive": 12946,
+      "candidates": 7514,
+      "edges": 106424,
+      "frame": 25,
+      "total": 201180,
+      "seconds": 165.84373138499996
+    },
+    {
+      "gain": 0,
+      "exclusive": 12504,
+      "candidates": 4312,
+      "edges": 17624,
+      "frame": 26,
+      "total": 201180,
+      "seconds": 171.45825150199994
+    },
+    {
+      "gain": 0,
+      "exclusive": 13218,
+      "candidates": 8298,
+      "edges": 123568,
+      "frame": 27,
+      "total": 201180,
+      "seconds": 176.53734209499999
+    },
+    {
+      "gain": 0,
+      "exclusive": 13226,
+      "candidates": 8306,
+      "edges": 125168,
+      "frame": 28,
+      "total": 201180,
+      "seconds": 181.16298413799996
+    },
+    {
+      "gain": 0,
+      "exclusive": 13290,
+      "candidates": 5098,
+      "edges": 23056,
+      "frame": 29,
+      "total": 201180,
+      "seconds": 186.19389006999995
+    },
+    {
+      "gain": 0,
+      "exclusive": 13274,
+      "candidates": 5082,
+      "edges": 22808,
+      "frame": 30,
+      "total": 201180,
+      "seconds": 191.30469983700004
+    },
+    {
+      "gain": 0,
+      "exclusive": 13048,
+      "candidates": 7616,
+      "edges": 107816,
+      "frame": 31,
+      "total": 201180,
+      "seconds": 196.20994897100013
+    },
+    {
+      "gain": 0,
+      "exclusive": 13210,
+      "candidates": 8258,
+      "edges": 121808,
+      "frame": 32,
+      "total": 201180,
+      "seconds": 200.9597904090001
+    },
+    {
+      "gain": 0,
+      "exclusive": 13218,
+      "candidates": 8298,
+      "edges": 125520,
+      "frame": 33,
+      "total": 201180,
+      "seconds": 205.56564379199995
+    },
+    {
+      "gain": 0,
+      "exclusive": 240,
+      "candidates": 240,
+      "edges": 1088,
+      "frame": 34,
+      "total": 201180,
+      "seconds": 206.04058394899994
+    },
+    {
+      "gain": 0,
+      "exclusive": 13028,
+      "candidates": 7596,
+      "edges": 107080,
+      "frame": 35,
+      "total": 201180,
+      "seconds": 210.60337485600007
+    }
+  ],
+  "scope": "Exact finite union search; positive witnesses pending complete geometric replay."
+}

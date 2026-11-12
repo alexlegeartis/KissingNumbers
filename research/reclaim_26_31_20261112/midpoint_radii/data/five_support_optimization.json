@@ -1,0 +1,10 @@
+{
+  "gain": 0,
+  "added": [],
+  "removed": [],
+  "status": 1,
+  "message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+  "new_conflicts": 310096,
+  "numerical_gain_upper_bound": 177.0,
+  "scope": "Numerical optimizer, exact independent replay required for positive result."
+}

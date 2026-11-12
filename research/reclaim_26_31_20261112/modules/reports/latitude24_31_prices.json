@@ -1,0 +1,127 @@
+{
+  "dimension": 31,
+  "source": "CDM1619/PackingStar@2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D31_251254_coordinates.npz",
+  "source_sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+  "source_count": 251254,
+  "body_catalogue": "e8_norm8_plus_tail24",
+  "body_squared_norm": 8,
+  "tail_squared_norm": 24,
+  "normal_octad": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    10,
+    11,
+    23
+  ],
+  "body_samples": 0,
+  "bodies": 240,
+  "tails": 448,
+  "distinct_old_tails": 394,
+  "priced_candidates": 107520,
+  "all_blocker_counts": {
+    "6": 10,
+    "7": 26,
+    "8": 101,
+    "9": 135,
+    "10": 311,
+    "11": 584,
+    "12": 843,
+    "13": 1232,
+    "14": 2305,
+    "15": 2692,
+    "16": 4125,
+    "17": 4570,
+    "18": 5399,
+    "19": 6004,
+    "20": 6302,
+    "21": 6924,
+    "22": 8494,
+    "23": 8043,
+    "24": 8398,
+    "25": 7557,
+    "26": 6885,
+    "27": 5804,
+    "28": 4909,
+    "29": 4420,
+    "30": 3541,
+    "31": 2460,
+    "32": 1865,
+    "33": 1350,
+    "34": 1171,
+    "35": 526,
+    "36": 289,
+    "37": 133,
+    "38": 94,
+    "39": 18
+  },
+  "body_minimum_blocker_counts": {
+    "6": 10,
+    "7": 10,
+    "8": 28,
+    "9": 37,
+    "10": 89,
+    "11": 30,
+    "12": 36
+  },
+  "layer_examples": [
+    {
+      "body_index": 0,
+      "tail_index": 136,
+      "blockers": 10,
+      "by_old_tail_norm": {
+        "0": 0,
+        "8": 0,
+        "16": 10,
+        "32": 0
+      }
+    },
+    {
+      "body_index": 64,
+      "tail_index": 332,
+      "blockers": 11,
+      "by_old_tail_norm": {
+        "0": 0,
+        "8": 0,
+        "16": 11,
+        "32": 0
+      }
+    },
+    {
+      "body_index": 128,
+      "tail_index": 361,
+      "blockers": 8,
+      "by_old_tail_norm": {
+        "0": 0,
+        "8": 0,
+        "16": 8,
+        "32": 0
+      }
+    },
+    {
+      "body_index": 192,
+      "tail_index": 226,
+      "blockers": 10,
+      "by_old_tail_norm": {
+        "0": 0,
+        "8": 0,
+        "16": 10,
+        "32": 0
+      }
+    }
+  ],
+  "cutoff": 10000,
+  "eligible_at_cutoff": 107520,
+  "selected_pool": 0,
+  "pool_limit": 0,
+  "pool_edges": 0,
+  "injectively_matched": 0,
+  "minimum_cost": 6,
+  "zero_blocker_candidates": 0,
+  "status": "bounded exact pricing; no geometric lower-bound claim",
+  "pool_conclusion": "No selection problem instantiated; all reported candidates were priced.",
+  "seconds": 3.3815667070000472,
+  "partial": false
+}

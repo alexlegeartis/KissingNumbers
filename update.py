@@ -27,16 +27,16 @@ HOW TO IMPROVE A BOUND.  RESULTS.md's status column says what would have to chan
 
     cosets     dimensions 36-37 and 73-87. Larger phase codes, nearest subsets,
                or compatible tail assignments remain open; no construction ceiling is claimed.
-    heads      dimensions 25-31, 34-35, 38 and 40-46. Joint layer and family/head searches and partial families
+    heads      dimensions 25-31, 34-35, 38, 40-46 and 68-70. Joint layer and family/head searches and partial families
                remain open. Complete-family populations retain their documented assumptions.
-    codes      dimensions 32-33, 39, 61-68 and 88-96. Improve the explicit input codes,
+    codes      dimensions 32-33, 39, 61-67 and 88-96. Improve the explicit input codes,
                sparse support layers, compression maps or central sections.
     classes    dimensions 49-60. Better pairwise-disjoint class
                families improve the corresponding cap constructions. The October P48
                family is certified by dim49-63-p48-caps/verify_october.py.
     exhausted  dimension 18. These construction templates have
                their documented ceilings; other construction ideas remain possible.
-    lp-exact   dimensions 69-71. The existing k-point programs are solved exactly;
+    lp-exact   dimension 71. The existing k-point programs are solved exactly;
                a different section or a larger k is needed to improve their bounds.
 
 Nothing here knows about tau(n) itself: no matching upper bound is known in any of these
@@ -75,6 +75,7 @@ DRIVERS.append(('25D critical-cluster refinement', os.path.join(V, 'dim25-critic
 DRIVERS.append(('31D latitude contact exchange', os.path.join(V, 'dim31-latitude-contact-exchange'), 'final.py'))
 DRIVERS.append(('60D antipodal direction lift', os.path.join(V, 'dim60-antipodal840-lift'), 'final.py'))
 DRIVERS.append(('49-60D pointwise P48 refill', os.path.join(V, 'dim49-60-p48-pointwise-refill'), 'final.py'))
+DRIVERS.append(('28D/29D November sextet unions', os.path.join(V, 'dim28-29-november-sextets'), 'final.py'))
 TABLES = [(os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
           (os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py')]
 

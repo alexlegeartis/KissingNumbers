@@ -1,0 +1,100 @@
+{
+  "repository_base": "f1be2cc3d2ae2e5d7c0ebab447c3533e43e9c18d",
+  "packingstar_source": "2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6",
+  "complete_packaged_replay": [
+    {
+      "status": "PASS",
+      "geometry": {
+        "status": "PASS",
+        "dimension": 28,
+        "points": 222120,
+        "squared_norm": 128,
+        "inner_product_limit": 64,
+        "antipodal_pairs": 110652,
+        "unpaired_points": 816,
+        "distinct_line_pairs_checked": 6121877226,
+        "paired_to_unpaired_checks": 90292032,
+        "unpaired_pairs_checked": 332520,
+        "unordered_point_pairs_covered": 24668536140,
+        "maximum_checked_product": 64,
+        "canonical_point_sha256": "6a896b605e8e42f23446d007c0970f94d7e6ce641bf3a899c504d7cac8940a67",
+        "file_sha256": "55434e35355afbd8b9b75fa2e921337188febf6957e0bb47241077b9e7744259",
+        "arithmetic": "Exact bounded integer products in binary32; no tolerance",
+        "seconds": 24.948612271000002
+      },
+      "delta": {
+        "status": "PASS",
+        "dimension": 28,
+        "added": 56,
+        "removed": 40,
+        "total": 222120,
+        "changed_point_comparisons": 12438664,
+        "maximum_changed_product": 64,
+        "arithmetic": "Direct int64 coordinate sums; no BLAS or tolerance",
+        "source_canonical_sha256": "ca62cc5b154c01db80f0ef29b78d7a88083caa21ee087684101f5bf973bc2164"
+      }
+    },
+    {
+      "status": "PASS",
+      "geometry": {
+        "status": "PASS",
+        "dimension": 29,
+        "points": 231776,
+        "squared_norm": 128,
+        "inner_product_limit": 64,
+        "antipodal_pairs": 115452,
+        "unpaired_points": 872,
+        "distinct_line_pairs_checked": 6664524426,
+        "paired_to_unpaired_checks": 100674144,
+        "unpaired_pairs_checked": 379756,
+        "unordered_point_pairs_covered": 26859941200,
+        "maximum_checked_product": 64,
+        "canonical_point_sha256": "9b8c1ac6fe55da80259588af3b483e493e59e478e70126cfcaa0d1c038353f48",
+        "file_sha256": "e4fbeebe6d290e4c3f196e041b6b1319631871ce8e503913255e9d644911beb3",
+        "arithmetic": "Exact bounded integer products in binary32; no tolerance",
+        "seconds": 27.359570406999865
+      },
+      "delta": {
+        "status": "PASS",
+        "dimension": 29,
+        "added": 8,
+        "removed": 6,
+        "total": 231776,
+        "changed_point_comparisons": 1854200,
+        "maximum_changed_product": 64,
+        "arithmetic": "Direct int64 coordinate sums; no BLAS or tolerance",
+        "source_canonical_sha256": "dfc3f756927e6715e853c4d4fea9708f33d59428954d276e8e34b16ef213361e"
+      }
+    }
+  ],
+  "semantic_negative_controls": {
+    "status": "PASS",
+    "rejected": [
+      "norm",
+      "duplicate",
+      "signed_angle",
+      "opposite_pair_angle"
+    ]
+  },
+  "unsupported_dimension_rejection": "PASS",
+  "manifest_verification": "PASS",
+  "independent_review": "proof_review/results.json",
+  "proof_runner_registration": "PASS: run_all.py --only November --repository-only --skip-paper --list selects one complete proof job",
+  "baseline_audit": {
+    "commit": "f1be2cc3d2ae2e5d7c0ebab447c3533e43e9c18d",
+    "reported_failure_count": 22,
+    "detail": "Pristine baseline has stale documentation inventory, current-registry columns, guide ranges and text census. The displayed first-eight stale-table limit hides further historical table cells. No proof failure was established by this metadata audit."
+  },
+  "final_repository_audit": {
+    "status": "PASS",
+    "registered_dimensions": 70,
+    "stale_table_rows": 0,
+    "command": "python audit.py --repository-only",
+    "only_changed_registered_bounds": {
+      "28": 222120,
+      "29": 231776
+    }
+  },
+  "scope": "Full new 28D/29D geometric proofs and targeted research replays; no claim that every historical proof in the repository was rerun.",
+  "final_diff_check": "PASS: git diff --check after preserving explicitly marked CRLF documentation"
+}

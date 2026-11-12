@@ -1,0 +1,324 @@
+{
+  "dim": 28,
+  "baseline": 222104,
+  "current": 222120,
+  "cutoff": 32,
+  "scope": "candidate pending full geometry; negative results restricted to cutoff",
+  "frames": [
+    {
+      "gain": 0,
+      "candidates": 19390,
+      "removed": 0,
+      "added": 0,
+      "frame": 1,
+      "total": 222104,
+      "seconds": 9.404866933822632
+    },
+    {
+      "gain": 8,
+      "candidates": 24122,
+      "removed": 40,
+      "added": 48,
+      "frame": 2,
+      "total": 222112,
+      "seconds": 29.621344327926636
+    },
+    {
+      "gain": 8,
+      "candidates": 19147,
+      "removed": 0,
+      "added": 8,
+      "frame": 3,
+      "total": 222120,
+      "seconds": 50.14043736457825
+    },
+    {
+      "gain": 0,
+      "candidates": 16714,
+      "removed": 0,
+      "added": 0,
+      "frame": 4,
+      "total": 222120,
+      "seconds": 59.06010818481445
+    },
+    {
+      "gain": 0,
+      "candidates": 20370,
+      "removed": 0,
+      "added": 0,
+      "frame": 5,
+      "total": 222120,
+      "seconds": 69.90201210975647
+    },
+    {
+      "gain": 0,
+      "candidates": 25392,
+      "removed": 0,
+      "added": 0,
+      "frame": 6,
+      "total": 222120,
+      "seconds": 83.29954624176025
+    },
+    {
+      "gain": 0,
+      "candidates": 19401,
+      "removed": 0,
+      "added": 0,
+      "frame": 7,
+      "total": 222120,
+      "seconds": 93.28990149497986
+    },
+    {
+      "gain": 0,
+      "candidates": 20318,
+      "removed": 0,
+      "added": 0,
+      "frame": 8,
+      "total": 222120,
+      "seconds": 103.758052110672
+    },
+    {
+      "gain": 0,
+      "candidates": 20342,
+      "removed": 0,
+      "added": 0,
+      "frame": 9,
+      "total": 222120,
+      "seconds": 113.42041945457458
+    },
+    {
+      "gain": 0,
+      "candidates": 28926,
+      "removed": 0,
+      "added": 0,
+      "frame": 10,
+      "total": 222120,
+      "seconds": 129.37101531028748
+    },
+    {
+      "gain": 0,
+      "candidates": 19705,
+      "removed": 0,
+      "added": 0,
+      "frame": 11,
+      "total": 222120,
+      "seconds": 138.61897349357605
+    },
+    {
+      "gain": 0,
+      "candidates": 19547,
+      "removed": 0,
+      "added": 0,
+      "frame": 12,
+      "total": 222120,
+      "seconds": 149.14796257019043
+    },
+    {
+      "gain": 0,
+      "candidates": 23918,
+      "removed": 0,
+      "added": 0,
+      "frame": 13,
+      "total": 222120,
+      "seconds": 164.97524070739746
+    },
+    {
+      "gain": 0,
+      "candidates": 25516,
+      "removed": 0,
+      "added": 0,
+      "frame": 14,
+      "total": 222120,
+      "seconds": 182.45740938186646
+    },
+    {
+      "gain": 0,
+      "candidates": 19195,
+      "removed": 0,
+      "added": 0,
+      "frame": 15,
+      "total": 222120,
+      "seconds": 195.606543302536
+    },
+    {
+      "gain": 0,
+      "candidates": 28682,
+      "removed": 0,
+      "added": 0,
+      "frame": 16,
+      "total": 222120,
+      "seconds": 214.4098744392395
+    },
+    {
+      "gain": 0,
+      "candidates": 20107,
+      "removed": 0,
+      "added": 0,
+      "frame": 17,
+      "total": 222120,
+      "seconds": 227.5623505115509
+    },
+    {
+      "gain": 0,
+      "candidates": 23934,
+      "removed": 0,
+      "added": 0,
+      "frame": 18,
+      "total": 222120,
+      "seconds": 242.43253588676453
+    },
+    {
+      "gain": 0,
+      "candidates": 25216,
+      "removed": 0,
+      "added": 0,
+      "frame": 19,
+      "total": 222120,
+      "seconds": 253.50754523277283
+    },
+    {
+      "gain": 0,
+      "candidates": 25488,
+      "removed": 0,
+      "added": 0,
+      "frame": 20,
+      "total": 222120,
+      "seconds": 264.5567207336426
+    },
+    {
+      "gain": 0,
+      "candidates": 19419,
+      "removed": 0,
+      "added": 0,
+      "frame": 21,
+      "total": 222120,
+      "seconds": 273.2312984466553
+    },
+    {
+      "gain": 0,
+      "candidates": 19147,
+      "removed": 0,
+      "added": 0,
+      "frame": 22,
+      "total": 222120,
+      "seconds": 283.1986312866211
+    },
+    {
+      "gain": 0,
+      "candidates": 20426,
+      "removed": 0,
+      "added": 0,
+      "frame": 23,
+      "total": 222120,
+      "seconds": 293.96204257011414
+    },
+    {
+      "gain": 0,
+      "candidates": 20492,
+      "removed": 0,
+      "added": 0,
+      "frame": 24,
+      "total": 222120,
+      "seconds": 303.2392361164093
+    },
+    {
+      "gain": 0,
+      "candidates": 19358,
+      "removed": 0,
+      "added": 0,
+      "frame": 25,
+      "total": 222120,
+      "seconds": 311.75086402893066
+    },
+    {
+      "gain": 0,
+      "candidates": 24050,
+      "removed": 0,
+      "added": 0,
+      "frame": 26,
+      "total": 222120,
+      "seconds": 323.4639928340912
+    },
+    {
+      "gain": 0,
+      "candidates": 19069,
+      "removed": 0,
+      "added": 0,
+      "frame": 27,
+      "total": 222120,
+      "seconds": 333.27813744544983
+    },
+    {
+      "gain": 0,
+      "candidates": 19476,
+      "removed": 0,
+      "added": 0,
+      "frame": 28,
+      "total": 222120,
+      "seconds": 344.04799365997314
+    },
+    {
+      "gain": 0,
+      "candidates": 22608,
+      "removed": 0,
+      "added": 0,
+      "frame": 29,
+      "total": 222120,
+      "seconds": 355.57345271110535
+    },
+    {
+      "gain": 0,
+      "candidates": 20278,
+      "removed": 0,
+      "added": 0,
+      "frame": 30,
+      "total": 222120,
+      "seconds": 367.66643357276917
+    },
+    {
+      "gain": 0,
+      "candidates": 19705,
+      "removed": 0,
+      "added": 0,
+      "frame": 31,
+      "total": 222120,
+      "seconds": 377.2234380245209
+    },
+    {
+      "gain": 0,
+      "candidates": 19187,
+      "removed": 0,
+      "added": 0,
+      "frame": 32,
+      "total": 222120,
+      "seconds": 386.0632438659668
+    },
+    {
+      "gain": 0,
+      "candidates": 19545,
+      "removed": 0,
+      "added": 0,
+      "frame": 33,
+      "total": 222120,
+      "seconds": 394.2812271118164
+    },
+    {
+      "gain": 0,
+      "candidates": 8646,
+      "removed": 0,
+      "added": 0,
+      "frame": 34,
+      "total": 222120,
+      "seconds": 395.51286363601685
+    },
+    {
+      "gain": 0,
+      "candidates": 19600,
+      "removed": 0,
+      "added": 0,
+      "frame": 35,
+      "total": 222120,
+      "seconds": 404.92811489105225
+    }
+  ]
+}

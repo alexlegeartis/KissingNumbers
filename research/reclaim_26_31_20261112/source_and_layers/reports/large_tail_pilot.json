@@ -1,0 +1,48 @@
+{
+  "source_dimension": 31,
+  "source_points": 251254,
+  "source_sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+  "core_coordinates": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    10,
+    11,
+    23
+  ],
+  "families": [
+    [
+      3,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      1,
+      7
+    ]
+  ],
+  "total_coherent_fibers": 102400,
+  "total_individual_points": 353280,
+  "blocker_cap": 96,
+  "admitted_fibers": 99147,
+  "relevant_incumbent_points": 80210,
+  "weighted_projection_profiles": 4586,
+  "model_fibers": 4000,
+  "model_deletion_profiles": 2045,
+  "model_cross_fiber_edges": 348307,
+  "minimum_fiber_deletions": {
+    "four_points_3plus5": 53,
+    "two_points_2plus6": 12,
+    "one_point_1plus7": 21
+  },
+  "requested_solver_limit_seconds": 90,
+  "observed_unreturned_wall_time_seconds_approx": 300,
+  "solver_outcome": "externally interrupted after no result was returned; unresolved",
+  "improving_incumbent_returned": false,
+  "scope": "exact finite grammar/pricing and cross-fiber geometry; no exact optimization exclusion and no new lower bound"
+}

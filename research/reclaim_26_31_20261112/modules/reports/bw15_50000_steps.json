@@ -1,0 +1,94 @@
+{
+  "source": "CDM1619/PackingStar@2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D31_251254_coordinates.npz",
+  "seed_trial": 262,
+  "baseline": 251254,
+  "iterations": 50000,
+  "requested_iterations": 50000,
+  "time_budget_seconds": 150.0,
+  "seconds": 24.019622889000175,
+  "best_external_deletions": 76,
+  "best_union_gain": 0,
+  "records": [
+    {
+      "iteration": 0,
+      "external_deletions": 114,
+      "whole_module_gain": -56,
+      "union_gain": 0,
+      "new_points": 2016,
+      "cross_conflicts": 47985
+    },
+    {
+      "iteration": 20,
+      "external_deletions": 112,
+      "whole_module_gain": -54,
+      "union_gain": 0,
+      "new_points": 2016,
+      "cross_conflicts": 47381
+    },
+    {
+      "iteration": 52,
+      "external_deletions": 110,
+      "whole_module_gain": -52,
+      "union_gain": 0,
+      "new_points": 2004,
+      "cross_conflicts": 45521
+    },
+    {
+      "iteration": 119,
+      "external_deletions": 106,
+      "whole_module_gain": -48,
+      "union_gain": 0,
+      "new_points": 2004,
+      "cross_conflicts": 35686
+    },
+    {
+      "iteration": 148,
+      "external_deletions": 102,
+      "whole_module_gain": -44,
+      "union_gain": 0,
+      "new_points": 2004,
+      "cross_conflicts": 41018
+    },
+    {
+      "iteration": 8266,
+      "external_deletions": 100,
+      "whole_module_gain": -42,
+      "union_gain": 0,
+      "new_points": 2008,
+      "cross_conflicts": 41064
+    },
+    {
+      "iteration": 9025,
+      "external_deletions": 92,
+      "whole_module_gain": -34,
+      "union_gain": 0,
+      "new_points": 2008,
+      "cross_conflicts": 40472
+    },
+    {
+      "iteration": 9555,
+      "external_deletions": 90,
+      "whole_module_gain": -32,
+      "union_gain": 0,
+      "new_points": 2008,
+      "cross_conflicts": 44594
+    },
+    {
+      "iteration": 12788,
+      "external_deletions": 84,
+      "whole_module_gain": -26,
+      "union_gain": 0,
+      "new_points": 2016,
+      "cross_conflicts": 47073
+    },
+    {
+      "iteration": 14134,
+      "external_deletions": 76,
+      "whole_module_gain": -18,
+      "union_gain": 0,
+      "new_points": 2016,
+      "cross_conflicts": 41320
+    }
+  ],
+  "scope": "Bounded orientation search, no global optimum; whole-module and best-orientation finite-union counts only."
+}

@@ -1,0 +1,9 @@
+{
+  "candidates": 4000,
+  "old_points": 855,
+  "candidate_conflicts": 357106,
+  "constraints": 402650,
+  "state": "Interrupted during HiGHS presolve; no numerical or exact optimum established",
+  "gain_found": null,
+  "pool_scope": "4000 cheapest candidates within cutoff64 from327680 priced candidates; arbitrary incumbent deletion variables shared"
+}

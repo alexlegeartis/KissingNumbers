@@ -1,0 +1,139 @@
+{
+  "source": "CDM1619/PackingStar@2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D31_251254_coordinates.npz",
+  "source_sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+  "source_count": 251254,
+  "trials_requested": 1536,
+  "trials_completed": 1536,
+  "best_gain": 0,
+  "seconds": 115.44946975199991,
+  "scope": "Exact finite two-copy unions. New BW15 module and changed pairs are exact; source full geometry remains independently required.",
+  "relevant_old": 2136,
+  "normal_octad": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    10,
+    11,
+    23
+  ],
+  "best_external_deletions": 114,
+  "best_orientation": {
+    "trial": 262,
+    "gain": 0,
+    "new_points": 2016,
+    "cross_conflicts": 47985,
+    "external_blocker_count": 114,
+    "whole_module_replacement_gain": -56,
+    "orientation": {
+      "core_permutation": [
+        6,
+        4,
+        1,
+        0,
+        7,
+        3,
+        5,
+        2
+      ],
+      "core_signs": [
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "core_tetrads": [
+        [
+          3,
+          2,
+          1,
+          6
+        ],
+        [
+          5,
+          0,
+          7,
+          4
+        ]
+      ],
+      "core_root_reflections": [
+        [
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          1
+        ]
+      ],
+      "tail_permutation": [
+        4,
+        6,
+        5,
+        3,
+        0,
+        2,
+        1
+      ],
+      "tail_signs": [
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1
+      ]
+    }
+  },
+  "orientation_cost_histogram": {
+    "114": 1,
+    "116": 1,
+    "120": 2,
+    "122": 1,
+    "126": 3,
+    "128": 4,
+    "130": 12,
+    "132": 2,
+    "134": 10,
+    "136": 11,
+    "138": 32,
+    "140": 11,
+    "142": 16,
+    "144": 11,
+    "146": 48,
+    "148": 24,
+    "150": 32,
+    "152": 19,
+    "154": 82,
+    "156": 29,
+    "158": 61,
+    "160": 31,
+    "162": 145,
+    "164": 55,
+    "166": 69,
+    "168": 37,
+    "170": 251,
+    "172": 56,
+    "174": 129,
+    "176": 29,
+    "178": 322
+  }
+}

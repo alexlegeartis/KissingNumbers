@@ -1,11 +1,23 @@
 # Research campaigns
 
 These packages preserve construction searches, exact certificates for restricted
-families, and checks of published constructions. The November 4 algebraic
+families, and checks of published constructions. The November 12 campaign
+improves 28D and 29D over PackingStar's November 11 release. The November 4 algebraic
 campaign improves 27D and 31D; the 43D packages record a separate discovery and
 its reproduction by the engine. The earlier lower-dimensional campaigns below
 produced no new kissing-number lower bound. Registered constructions remain in
 [`../verifications/`](../verifications/) and [`../RESULTS.md`](../RESULTS.md).
+
+## 12 November PackingStar comparison and construction campaign
+
+[Reclaiming 26–31D](reclaim_26_31_20261112/) gives **222,120 in 28D (+16)** and
+**231,776 in 29D (+2)** over the pinned November 11 release. Complete finite
+geometry, independent direct-integer changed pairs and source reconstruction
+establish both results. The other four target dimensions remain below that
+release. Larger-radius, support, module and joint-deletion experiments are
+recorded with their exact scope; the best alternate 31D Barnes–Wall seed has
+251,244 points, ten below the source. Substantial gains remain open. See the
+[concrete larger-gain strategy](reclaim_26_31_20261112/STRATEGY.md).
 
 ## 5 November lower-bound search
 

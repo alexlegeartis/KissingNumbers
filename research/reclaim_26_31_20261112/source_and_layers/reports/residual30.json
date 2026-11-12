@@ -1,0 +1,10 @@
+{
+  "dim": 30,
+  "missing_Leech_vectors": 46320,
+  "tail_directions": 60,
+  "initial_candidates": 2779200,
+  "candidate_count": 0,
+  "seconds": 1.9559898376464844,
+  "scope": "Fixed-source classical sqrt(3)/2 Leech lifts only; no global exclusion",
+  "script_sha256": "8ec63096d1ddcb122e6d173ff387a90b2b5ff6c62f44db581a3fc8e4f95797b3"
+}

@@ -1,0 +1,11 @@
+{
+  "dimension": 26,
+  "rational_points": 201164,
+  "quadratic_points": 16,
+  "norms": "all exactly32",
+  "quadratic_vs_rational_pairs": 3218624,
+  "quadratic_pairs": 120,
+  "status": "PASS quadratic block only; rational-rational pairs not checked here",
+  "field": "Q(sqrt(3))",
+  "comparison": "exact integer sign/squared comparison, no tolerance"
+}

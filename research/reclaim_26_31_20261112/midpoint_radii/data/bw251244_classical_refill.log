@@ -1,0 +1,7 @@
+start 31 missing 47872 tailvalues 84 groups 388
+group 1 of 388 surviving 2749952 heads 47872 sec 1.432241439819336
+group 11 of 388 surviving 142736 heads 34952 sec 2.6354188919067383
+group 21 of 388 surviving 4672 heads 512 sec 3.0547778606414795
+group 31 of 388 surviving 2912 heads 328 sec 3.103605270385742
+group 41 of 388 surviving 512 heads 128 sec 3.146409273147583
+{"dim": 31, "candidate_count": 0, "seconds": 3.1814892292022705, "file": "/workspace/scratch/fe26bd298b09/fives_work/bw_refill31/classical_best_candidates.npz"}

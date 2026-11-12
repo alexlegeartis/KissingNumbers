@@ -1,14 +1,14 @@
 # Exact improvements over PackingStar in all dimensions 27–31
 
-Latest repository bounds (8 November 2026) follow the [latitude-contact exchange](../dim31-latitude-contact-exchange/). Earlier dated benchmarks and construction counts are retained.
+Latest repository bounds (12 November 2026) include the [November 28D/29D sextet exchanges](../dim28-29-november-sextets/). Earlier dated benchmarks and construction counts are retained.
 
 29 October 2026. Five explicit configurations exceed PackingStar’s **28 October release**:
 
-| Dimension | PackingStar | This construction | Gain | Removed | Added | Current repository bound (8 November 2026) |
+| Dimension | PackingStar | This construction | Gain | Removed | Added | Current repository bound (12 November 2026) |
 |---|---:|---:|---:|---:|---:|---:|
 | 27 | 209,760 | **209,807** | **47** | 244 | 291 | 209,825 |
-| 28 | 221,864 | **221,988** | **124** | 312 | 436 | 221,988 |
-| 29 | 231,676 | **231,697** | **21** | 219 | 240 | 231,697 |
+| 28 | 221,864 | **221,988** | **124** | 312 | 436 | 222,120 |
+| 29 | 231,676 | **231,697** | **21** | 219 | 240 | 231,776 |
 | 30 | 247,967 | **247,972** | **5** | 512 | 517 | 247,972 |
 | 31 | 251,169 | **251,188** | **19** | 463 | 482 | 251,200 |
 

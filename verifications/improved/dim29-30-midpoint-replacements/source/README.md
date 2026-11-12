@@ -1,6 +1,6 @@
 # Verified midpoint constructions in dimensions 29 and 30
 
-Latest repository bounds (8 November 2026) follow the [latitude-contact exchange](../../dim31-latitude-contact-exchange/). Earlier dated benchmarks and construction counts are retained.
+Latest repository bounds (12 November 2026) include the [November 28D/29D sextet exchanges](../../dim28-29-november-sextets/). Earlier dated benchmarks and construction counts are retained.
 
 Retained construction: the dated comparison and investigation results remain historical; the dated columns retain their original values; the 28 October column records the [asymmetric exchanges](../../dim26-30-asymmetric-exchanges/) and the [31D module exchange](../../dim31-normal-module-exchange/).
 
@@ -9,9 +9,9 @@ numbers or upper bounds. The comparison targets were checked against the
 [Felpix-Studios table](https://github.com/Felpix-Studios/kissing-number), including
 its current 241,079 entry in dimension 31.
 
-| Dimension | Published comparison | New verified construction | Improvement | Repo bound (26 October) | Repo bound (27 October) | Repo bound (28 October) | Repo bound (29 October) | Current repository bound (8 November 2026) |
+| Dimension | Published comparison | New verified construction | Improvement | Repo bound (26 October) | Repo bound (27 October) | Repo bound (28 October) | Repo bound (29 October) | Current repository bound (12 November 2026) |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 29 | 210,495 | **216,568** | **6,073** | — | 226,520 | 231,638 | 231,697 | 231,697 |
+| 29 | 210,495 | **216,568** | **6,073** | — | 226,520 | 231,638 | 231,697 | 231,776 |
 | 30 | 222,073 | **224,280** | **2,207** | — | 238,808 | 247,960 | 247,972 | 247,972 |
 | 31 | 241,079 | No improvement in this investigation | — | 241,742 | 246,638 | 251,110 | 251,188 | 251,200 |
 
@@ -62,9 +62,9 @@ roots in 29D, or 72 E6 roots in 30D. Its inner products with inserted points are
 at most sqrt(32*8)=16 by Cauchy-Schwarz. The pure tail configuration need not
 belong to the same root system as the inserted tails.
 
-| Dimension | Uniform pieces | Deleted Leech points | Inserted midpoint points | Pure tail points | Total |
-|---|---:|---:|---:|---:|---:|
-| 29 | 156 | 19,968 | 39,936 | 40 | 216,568 | 231,697 |
+| Dimension | Uniform pieces | Deleted Leech points | Inserted midpoint points | Pure tail points | Historical total | Current repository bound |
+|---|---:|---:|---:|---:|---:|---:|
+| 29 | 156 | 19,968 | 39,936 | 40 | 216,568 | 231,776 |
 | 30 | 216 | 27,648 | 55,296 | 72 | 224,280 | 247,972 |
 
 Thus the totals are 196560 + 128*156 + 40 and 196560 + 128*216 + 72.

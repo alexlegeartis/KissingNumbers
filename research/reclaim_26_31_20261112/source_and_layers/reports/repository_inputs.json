@@ -1,0 +1,29 @@
+{
+  "repository_commit": "f1be2cc3d2ae2e5d7c0ebab447c3533e43e9c18d",
+  "files": {
+    "26": {
+      "path": "verifications/improved/dim26-30-asymmetric-exchanges/data/coordinates26_201136.npz",
+      "sha256": "60893d235fc47954bf15d83254b0f19f82638175a61d20230fa70a8991dba895"
+    },
+    "27": {
+      "path": "verifications/improved/dim27-31-algebraic-completion/data/coordinates27_209825.npz",
+      "sha256": "7a869e349545f96d563a654e307cba9461c3bbecb883299b3a85e05d6fe127d1"
+    },
+    "28": {
+      "path": "verifications/improved/dim27-31-joint-refills/data/coordinates28_221988.npz",
+      "sha256": "509b7894dd8534946a81d8bfd354c9ef947e4fe5c82482796aac76799169f129"
+    },
+    "29": {
+      "path": "verifications/improved/dim27-31-joint-refills/data/coordinates29_231697.npz",
+      "sha256": "e79b7f465007787501c08745a76d0472f351968624dd31993db484c112dce2c2"
+    },
+    "30": {
+      "path": "verifications/improved/dim27-31-joint-refills/data/coordinates30_247972.npz",
+      "sha256": "d3c8767360bded77dec3cfc9263053c5bcdc65caaef1980954a6fb19217c1730"
+    },
+    "31": {
+      "path": "verifications/improved/dim31-latitude-contact-exchange/data/coordinates31_251200.npz",
+      "sha256": "b75a8e9d958017fe03926265f5ee9d42f24b16c9ec848414b4a4e7eba0d329ee"
+    }
+  }
+}

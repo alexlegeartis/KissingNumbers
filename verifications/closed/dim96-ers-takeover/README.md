@@ -118,8 +118,8 @@ earlier counts. `ers96.py` evaluates the chains:
 
 | n | then claim | ERS level 0 | A(n,23,23) needed to overturn it | grid map gives | Johnson allows | current registry |
 |---|---|---|---|---|---|---|
-| 93 | 6 294 850 360 | 2³¹ | 506 210 | 65 536 | 2.7e8 | 31 040 958 640 |
-| 94 | 6 355 739 600 | 2³¹ | 513 638 | 65 536 | 3.0e8 | 47 697 508 076 |
+| 93 | 6 294 850 360 | 2³¹ | 506 210 | 65 536 | 2.7e8 | 31 056 799 856 |
+| 94 | 6 355 739 600 | 2³¹ | 513 638 | 65 536 | 3.0e8 | 47 703 347 340 |
 | **95** | **6 473 065 046** | **2³²** | **265 816** | **65 536** | 4.0e8 | 77 565 848 332 |
 
 So **dimension 95 is exposed**: a level-1 constant-weight code only 4.06× better than the

@@ -1,0 +1,340 @@
+{
+  "status": "bounded heuristic completed without a positive exchange; unresolved",
+  "source_sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+  "source_points": 251254,
+  "seed": 20261112,
+  "wall_budget_seconds": 285.0,
+  "proof_scope": "heuristic search; negative outcomes are unresolved, not no-gain certificates",
+  "core_triples": [
+    [
+      0,
+      3,
+      23
+    ],
+    [
+      0,
+      7,
+      23
+    ],
+    [
+      0,
+      9,
+      23
+    ],
+    [
+      0,
+      11,
+      23
+    ],
+    [
+      0,
+      17,
+      23
+    ],
+    [
+      0,
+      21,
+      23
+    ],
+    [
+      1,
+      11,
+      23
+    ],
+    [
+      2,
+      3,
+      10
+    ],
+    [
+      2,
+      7,
+      10
+    ],
+    [
+      2,
+      8,
+      10
+    ],
+    [
+      2,
+      9,
+      10
+    ],
+    [
+      2,
+      10,
+      12
+    ],
+    [
+      2,
+      10,
+      13
+    ],
+    [
+      2,
+      10,
+      14
+    ],
+    [
+      2,
+      10,
+      15
+    ],
+    [
+      2,
+      10,
+      16
+    ],
+    [
+      2,
+      10,
+      17
+    ],
+    [
+      2,
+      10,
+      18
+    ],
+    [
+      2,
+      10,
+      19
+    ],
+    [
+      2,
+      10,
+      20
+    ],
+    [
+      2,
+      10,
+      21
+    ],
+    [
+      2,
+      10,
+      22
+    ],
+    [
+      2,
+      11,
+      23
+    ],
+    [
+      3,
+      11,
+      23
+    ],
+    [
+      4,
+      11,
+      23
+    ],
+    [
+      5,
+      11,
+      23
+    ],
+    [
+      6,
+      11,
+      23
+    ],
+    [
+      7,
+      11,
+      23
+    ],
+    [
+      8,
+      11,
+      23
+    ],
+    [
+      9,
+      11,
+      23
+    ],
+    [
+      10,
+      11,
+      23
+    ],
+    [
+      11,
+      12,
+      23
+    ],
+    [
+      11,
+      13,
+      23
+    ],
+    [
+      11,
+      14,
+      23
+    ],
+    [
+      11,
+      15,
+      23
+    ],
+    [
+      11,
+      16,
+      23
+    ],
+    [
+      11,
+      17,
+      23
+    ],
+    [
+      11,
+      18,
+      23
+    ],
+    [
+      11,
+      19,
+      23
+    ],
+    [
+      11,
+      20,
+      23
+    ],
+    [
+      11,
+      21,
+      23
+    ],
+    [
+      11,
+      22,
+      23
+    ]
+  ],
+  "stage": "finished",
+  "family": 1,
+  "priced_points": 726528,
+  "family_points": 6144,
+  "family_minimum": 21,
+  "family_median": 77.0,
+  "family_maximum": 125,
+  "family_costs": [
+    {
+      "r": 3,
+      "points": 225792,
+      "minimum": 4,
+      "median": 32.0,
+      "maximum": 89
+    },
+    {
+      "r": 2,
+      "points": 494592,
+      "minimum": 2,
+      "median": 34.0,
+      "maximum": 85
+    },
+    {
+      "r": 1,
+      "points": 6144,
+      "minimum": 21,
+      "median": 77.0,
+      "maximum": 125
+    }
+  ],
+  "pool_points": 19110,
+  "pool_old_victims": 5735,
+  "pool_old_incidences": 302518,
+  "seed_points": 9984,
+  "new_conflict_edges": 4105565,
+  "best_gain": 0,
+  "runs": [
+    {
+      "gain": 0,
+      "best_nonempty_gain": -1,
+      "max_selected": 14,
+      "victims_at_max_selected": 184,
+      "proposals": 153994585,
+      "accepted": 5126662,
+      "restarts": 15,
+      "seconds": 180.01,
+      "selected": [],
+      "best_nonempty_selected": [
+        16324
+      ],
+      "seed": 20261112,
+      "schedule": "fixed initial temperature 6; interrupted after last checkpoint to replace the schedule",
+      "saved_witnesses_direct_integer_replay": "PASS"
+    },
+    {
+      "gain": 0,
+      "best_nonempty_gain": -1,
+      "max_selected": 46,
+      "victims_at_max_selected": 624,
+      "proposals": 136852185,
+      "accepted": 25926080,
+      "restarts": 15,
+      "seconds": 180.001,
+      "selected": [],
+      "best_nonempty_selected": [
+        13157
+      ],
+      "seed": 20261113,
+      "schedule": "initial temperatures 6,12,24,48,96 cycled across restarts",
+      "saved_witnesses_direct_integer_replay": "PASS"
+    },
+    {
+      "gain": 0,
+      "best_nonempty_gain": -1,
+      "max_selected": 262,
+      "victims_at_max_selected": 1667,
+      "proposals": 41538151,
+      "accepted": 2567853,
+      "restarts": 6,
+      "seconds": 70.0012,
+      "selected": [],
+      "best_nonempty_selected": [
+        16419
+      ],
+      "seed": 20261114,
+      "schedule": "deletion penalty 0.02+0.98*phase^3; temperature 0.5*0.02^phase",
+      "saved_witnesses_direct_integer_replay": "PASS"
+    }
+  ],
+  "exact_replay": "Every stored best and best-nonempty witness replayed directly with int32 dot products against all 251254 source points; no positive witness exists.",
+  "large_state_metric_scope": "Maximum selected counts are heuristic trajectory diagnostics, not saved lower-bound certificates.",
+  "pool_sha256": "5f30ef9337e0b55d6095b9e01433889c1c99c299c6668e295f2c8c1c0f68ae1e",
+  "all_core_universe": {
+    "points": 11381760,
+    "old_new_incidences": 473381256,
+    "families": [
+      {
+        "core": 3,
+        "tail": 5,
+        "points": 10881024,
+        "incidences": 454329088
+      },
+      {
+        "core": 2,
+        "tail": 6,
+        "points": 494592,
+        "incidences": 18637960
+      },
+      {
+        "core": 1,
+        "tail": 7,
+        "points": 6144,
+        "incidences": 414208
+      }
+    ],
+    "count_method": "Signed-subset generating-function coefficients from the exact absolute coordinate shapes; conflict iff signed selected coordinate sum exceeds 16."
+  },
+  "search_resource_scope": "At most two single-threaded heuristic processes on CPUs 0-1, overlapping within the approximately five-minute search window. Ordinary schedule was interrupted before continuation replaced it.",
+  "reproduction": "partial_sign_pilot.py now defaults to the continuation schedule; --search-mode anneal uses the cycling-temperature schedule. Timing determines proposal counts; seeds and pool ordering are fixed.",
+  "pricing_and_graph_seconds": 12.303525928
+}

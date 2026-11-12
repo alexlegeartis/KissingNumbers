@@ -547,3 +547,7 @@ for _d in (68, 69):
 # Finite normal-orientation averaging, independently verified 10 November 2026.
 for _d in (68, 69):
     STATUS[_d] = ('heads', 'Weyl-averaged compatible affine Gamma72 unions with integral normal orientations and exact population duals; larger offset unions and other projections remain open, without a global-optimality claim (dim68-69-gamma72-cross-sections/weyl_averaged/verify.py)')
+
+# Exact November 12 unions over the November 11 PackingStar coordinates.
+for _d in (28, 29):
+    STATUS[_d] = ('heads', 'corrected sextet unions over the November 11 release; full exact geometry and direct-integer changed pairs; new radii and coordinated changes remain open (dim28-29-november-sextets/verify.py)')

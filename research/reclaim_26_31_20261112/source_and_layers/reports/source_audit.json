@@ -1,0 +1,98 @@
+{
+  "PackingStar_commit": "2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6",
+  "release_label": "November 11, 2026",
+  "reviewed_utc_date": "2026-11-12",
+  "verification_scope": "file schema, cardinalities, norms, support structure; full pair proof not performed in this audit",
+  "dimensions": [
+    {
+      "dimension": 26,
+      "count": 201180,
+      "rational_count": 201164,
+      "quadratic_count": 16,
+      "integer_coordinate_denominator": 1,
+      "rational_core_squared_norm_counts": {
+        "0": 4,
+        "16": 192,
+        "24": 8832,
+        "32": 192136
+      },
+      "path": "25D-31D/new_bounds_20261111/D26_201180_coordinates.npz",
+      "sha256": "36732203081894af188e75e2dae69327961b79c7b0781385b1589025b7e0b309"
+    },
+    {
+      "dimension": 27,
+      "count": 209862,
+      "rational_count": 209862,
+      "quadratic_count": 0,
+      "integer_coordinate_denominator": 1,
+      "rational_core_squared_norm_counts": {
+        "0": 12,
+        "16": 288,
+        "24": 26024,
+        "32": 183538
+      },
+      "path": "25D-31D/new_bounds_20261111/D27_209862_coordinates.npz",
+      "sha256": "79f8c596a3bdffac1005032af0edaa8790d3c724f146115898237905982e757e"
+    },
+    {
+      "dimension": 28,
+      "count": 222104,
+      "rational_count": 222104,
+      "quadratic_count": 0,
+      "integer_coordinate_denominator": 1,
+      "rational_core_squared_norm_counts": {
+        "0": 24,
+        "16": 1152,
+        "24": 48450,
+        "32": 172478
+      },
+      "path": "25D-31D/new_bounds_20261111/D28_222104_coordinates.npz",
+      "sha256": "76b638828b7c77ec4736fb5cfb292aaeed5a3657f4a67c7179387c920cfee087"
+    },
+    {
+      "dimension": 29,
+      "count": 231774,
+      "rational_count": 231774,
+      "quadratic_count": 0,
+      "integer_coordinate_denominator": 1,
+      "rational_core_squared_norm_counts": {
+        "0": 40,
+        "16": 2080,
+        "24": 66006,
+        "32": 163648
+      },
+      "path": "25D-31D/new_bounds_20261111/D29_231774_coordinates.npz",
+      "sha256": "4a48f217029861df8a74d0201d997709f2123bdd08835db1cbc0dd074453b66e"
+    },
+    {
+      "dimension": 30,
+      "count": 247992,
+      "rational_count": 247992,
+      "quadratic_count": 0,
+      "integer_coordinate_denominator": 1,
+      "rational_core_squared_norm_counts": {
+        "0": 60,
+        "16": 4900,
+        "24": 92792,
+        "32": 150240
+      },
+      "path": "25D-31D/new_bounds_20261111/D30_247992_coordinates.npz",
+      "sha256": "5e46243e5f3cf4790d56abc4008c9cebeb45bdde2fd3080e44a0546d59cccc5a"
+    },
+    {
+      "dimension": 31,
+      "count": 251254,
+      "rational_count": 251254,
+      "quadratic_count": 0,
+      "integer_coordinate_denominator": 2,
+      "rational_core_squared_norm_counts": {
+        "0": 84,
+        "16": 6630,
+        "24": 95852,
+        "32": 148688
+      },
+      "path": "25D-31D/new_bounds_20261111/D31_251254_coordinates.npz",
+      "sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943"
+    }
+  ]
+}

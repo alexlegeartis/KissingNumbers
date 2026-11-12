@@ -1,0 +1,81 @@
+{
+  "dim": 30,
+  "baseline": 247992,
+  "current": 247992,
+  "cutoff": 32,
+  "scope": "candidate pending full geometry; negative results restricted to cutoff",
+  "frames": [
+    {
+      "gain": 0,
+      "candidates": 31490,
+      "removed": 0,
+      "added": 0,
+      "frame": 1,
+      "total": 247992,
+      "seconds": 28.11422824859619
+    },
+    {
+      "gain": 0,
+      "candidates": 34942,
+      "removed": 0,
+      "added": 0,
+      "frame": 2,
+      "total": 247992,
+      "seconds": 62.393656730651855
+    },
+    {
+      "gain": 0,
+      "candidates": 29582,
+      "removed": 0,
+      "added": 0,
+      "frame": 3,
+      "total": 247992,
+      "seconds": 86.95231890678406
+    },
+    {
+      "gain": 0,
+      "candidates": 36820,
+      "removed": 0,
+      "added": 0,
+      "frame": 4,
+      "total": 247992,
+      "seconds": 127.11407494544983
+    },
+    {
+      "gain": 0,
+      "candidates": 32420,
+      "removed": 0,
+      "added": 0,
+      "frame": 5,
+      "total": 247992,
+      "seconds": 158.05602073669434
+    },
+    {
+      "gain": 0,
+      "candidates": 35266,
+      "removed": 0,
+      "added": 0,
+      "frame": 6,
+      "total": 247992,
+      "seconds": 190.63241529464722
+    },
+    {
+      "gain": 0,
+      "candidates": 30518,
+      "removed": 0,
+      "added": 0,
+      "frame": 7,
+      "total": 247992,
+      "seconds": 216.67993760108948
+    },
+    {
+      "gain": 0,
+      "candidates": 33964,
+      "removed": 0,
+      "added": 0,
+      "frame": 8,
+      "total": 247992,
+      "seconds": 240.61806273460388
+    }
+  ]
+}

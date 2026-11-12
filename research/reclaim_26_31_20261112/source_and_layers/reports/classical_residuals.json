@@ -1,0 +1,50 @@
+[
+  {
+    "dimension": 26,
+    "missing_Leech_vectors": 4424,
+    "D_tail_directions": 4,
+    "initial_candidates": 17696,
+    "new_compatible_points": 0,
+    "scope": "all classical sqrt(3)/2 Leech lifts at existing D-root tail directions; fixed current PackingStar configuration"
+  },
+  {
+    "dimension": 27,
+    "missing_Leech_vectors": 13022,
+    "D_tail_directions": 12,
+    "initial_candidates": 156264,
+    "new_compatible_points": 0,
+    "scope": "all classical sqrt(3)/2 Leech lifts at existing D-root tail directions; fixed current PackingStar configuration"
+  },
+  {
+    "dimension": 28,
+    "missing_Leech_vectors": 24082,
+    "D_tail_directions": 24,
+    "initial_candidates": 577968,
+    "new_compatible_points": 0,
+    "scope": "all classical sqrt(3)/2 Leech lifts at existing D-root tail directions; fixed current PackingStar configuration"
+  },
+  {
+    "dimension": 29,
+    "missing_Leech_vectors": 32912,
+    "D_tail_directions": 40,
+    "initial_candidates": 1316480,
+    "new_compatible_points": 0,
+    "scope": "all classical sqrt(3)/2 Leech lifts at existing D-root tail directions; fixed current PackingStar configuration"
+  },
+  {
+    "dimension": 30,
+    "missing_Leech_vectors": 46320,
+    "D_tail_directions": 60,
+    "initial_candidates": 2779200,
+    "new_compatible_points": 0,
+    "scope": "all classical sqrt(3)/2 Leech lifts at existing D-root tail directions; fixed current PackingStar configuration"
+  },
+  {
+    "dimension": 31,
+    "missing_Leech_vectors": 47872,
+    "D_tail_directions": 84,
+    "initial_candidates": 4021248,
+    "new_compatible_points": 0,
+    "scope": "all classical sqrt(3)/2 Leech lifts at existing D-root tail directions; fixed current PackingStar configuration"
+  }
+]

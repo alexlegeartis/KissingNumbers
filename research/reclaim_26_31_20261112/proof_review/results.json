@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "scope": "Independent source pins and direct-int64 delta replay; small-fixture coverage audit",
+  "large_configuration_all_pairs_repeated": false,
+  "reviewed_implementation_sha256": {
+    "verify_geometry.py": "5900266bff5aee1782007d38a4b2791f7072f45a6397918f5df081cbf55553fd",
+    "verify_delta.py": "cd309513cc90b6dc6c48a7863d33d8e82023235d0efa86de8e47699bf57b5c5b"
+  },
+  "packingstar_commit": "2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6",
+  "sources": [
+    {
+      "dimension": 28,
+      "source_file_hash": "PASS",
+      "normalized_source_set_hash": "PASS",
+      "delta": {
+        "status": "PASS",
+        "dimension": 28,
+        "added": 56,
+        "removed": 40,
+        "total": 222120,
+        "changed_point_comparisons": 12438664,
+        "maximum_changed_product": 64,
+        "arithmetic": "Direct int64 coordinate sums; no BLAS or tolerance",
+        "source_canonical_sha256": "ca62cc5b154c01db80f0ef29b78d7a88083caa21ee087684101f5bf973bc2164"
+      }
+    },
+    {
+      "dimension": 29,
+      "source_file_hash": "PASS",
+      "normalized_source_set_hash": "PASS",
+      "delta": {
+        "status": "PASS",
+        "dimension": 29,
+        "added": 8,
+        "removed": 6,
+        "total": 231776,
+        "changed_point_comparisons": 1854200,
+        "maximum_changed_product": 64,
+        "arithmetic": "Direct int64 coordinate sums; no BLAS or tolerance",
+        "source_canonical_sha256": "dfc3f756927e6715e853c4d4fea9708f33d59428954d276e8e34b16ef213361e"
+      }
+    }
+  ],
+  "independent_fixture_comparisons": 90,
+  "precisions": [
+    32,
+    64
+  ],
+  "block_sizes": [
+    1,
+    2,
+    3,
+    7,
+    64
+  ],
+  "fixtures": {
+    "valid_all_paired": true,
+    "valid_all_unpaired": true,
+    "valid_mixed": true,
+    "valid_negative_large_product": true,
+    "wrong_norm": false,
+    "duplicate": false,
+    "illegal_unpaired": false,
+    "illegal_paired_unpaired": false,
+    "illegal_paired_paired": false
+  }
+}
