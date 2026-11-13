@@ -1,0 +1,110 @@
+name: Execute 26D and 27D research audit
+on:
+  push:
+    branches: [reclaim-26-27-global-fiber-search-20261113]
+    paths: [.github/workflows/research2627-execute-20261113.yml]
+permissions:
+  contents: read
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - name: Install numerical dependencies
+        run: python3 -m pip install numpy scipy
+      - name: Execute source-based audit
+        run: |
+          python3 -u - <<'PY'
+          import os
+          cpus=sorted(os.sched_getaffinity(0)); os.sched_setaffinity(0,cpus[:-1] if len(cpus)>1 else cpus)
+          import io,json,hashlib,urllib.request,itertools,time
+          import numpy as np
+          from scipy.sparse import csr_matrix
+          from scipy.sparse.csgraph import maximum_bipartite_matching
+          from scipy.optimize import linprog
+          START=time.monotonic()
+          def fetch(repo,ref,path):
+              url=f'https://raw.githubusercontent.com/{repo}/{ref}/{path}'
+              data=urllib.request.urlopen(url,timeout=60).read()
+              print('INPUT',json.dumps(dict(url=url,sha256=hashlib.sha256(data).hexdigest(),bytes=len(data))),flush=True)
+              return np.load(io.BytesIO(data),allow_pickle=False)
+          P=fetch('alexlegeartis/KissingNumbers','921b1b653f15b599b78953139448be71d8f3812e','research/reclaim_26_31_20261113/continuous26/transplant759.npz')
+          ptr=P['blocker_indptr']; idx=P['blocker_indices']; C=P['candidate_A'].astype(np.int64)
+          victims,inv=np.unique(idx,return_inverse=True)
+          G=csr_matrix((np.ones(len(idx),np.int8),inv,ptr),shape=(len(C),len(victims)))
+          match=maximum_bipartite_matching(G,perm_type='column')
+          valid=all(m<0 or np.any(idx[ptr[i]:ptr[i+1]]==victims[m]) for i,m in enumerate(match))
+          used=match[match>=0]
+          assert valid and len(used)==len(np.unique(used))
+          print('RESULT26',json.dumps(dict(candidates=len(C),victims=len(victims),matched=len(used),perfect=len(used)==len(C),maximum_pool_gain_upper_bound=len(C)-len(used),scope='Matching bound uses supplied blocker lists; source replay follows.')),flush=True)
+          Z=fetch('CDM1619/PackingStar','2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6','25D-31D/new_bounds_20261111/D26_201180_coordinates.npz')
+          A=np.vstack([Z['rational_points'],Z['quadratic_A']]).astype(np.int64)
+          B=np.vstack([np.zeros_like(Z['rational_points']),Z['quadratic_B']]).astype(np.int64)
+          assert not np.any(P['candidate_B']) and np.all(np.sum(C*C,axis=1)==32)
+          for i,m in enumerate(match):
+              if m<0: continue
+              old=int(victims[m]); a=int(C[i]@A[old])-16; b=int(C[i]@B[old])
+              assert (b==0 and a>0) or (b>0 and (a>=0 or 3*b*b>a*a)) or (b<0 and a>0 and a*a>3*b*b)
+          print('MATCHING26_EXACT_SOURCE_REPLAY_PASS',json.dumps(dict(matching_source_indices=[int(victims[m]) if m>=0 else -1 for m in match])),flush=True)
+          Z=fetch('CDM1619/PackingStar','2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6','25D-31D/new_bounds_20261111/D27_209862_coordinates.npz')
+          X=Z['points'].astype(np.int64); assert int(Z['coordinate_denominator'])==1
+          J=np.array([0,2,4,5,6,10,11,23,24,25,26]); K=np.setdiff1d(np.arange(27),J)
+          inside=np.all(X[:,K]==0,axis=1); Y=X[inside][:,J]
+          E,w=np.unique(X[~inside][:,J],axis=0,return_counts=True)
+          Q,qi=np.unique(E[:,8:],axis=0,return_inverse=True)
+          H=[]
+          for i in range(8):
+              for s in [-4,4]:
+                  h=np.zeros(8,np.int64);h[i]=s;H.append(h)
+          for ii in itertools.combinations(range(8),4):
+              for s in itertools.product([-2,2],repeat=4):
+                  h=np.zeros(8,np.int64);h[list(ii)]=s;H.append(h)
+          for i in range(8):
+              for s in itertools.product([-1,1],repeat=8):
+                  if sum(v<0 for v in s)%2==0:continue
+                  h=np.array(s);h[i]*=3;H.append(h)
+          H=np.array(H); assert H.shape==(2160,8)
+          R=np.array([np.min(16-H@E[qi==i,:8].T,axis=1) for i in range(len(Q))]).T
+          print('GEOMETRY27',json.dumps(dict(source_count=len(X),module=len(Y),exterior_profiles=len(E),tail_normals=Q.tolist(),head_constraint_patterns=len(np.unique(R,axis=0)),module_tail_norms=np.unique(np.sum(Y[:,8:]**2,axis=1),return_counts=True)[0].tolist())),flush=True)
+          # Price a full D3-head alphabet against the exterior, without arbitrary low cutoffs.
+          candidates=[]; hist={}
+          for ij in itertools.combinations(range(3),2):
+              for ss in itertools.product([-2,2],repeat=2):
+                  t=np.zeros(3,np.int64);t[list(ij)]=ss
+                  p=H@E[:,:8].T; q=t@E[:,8:].T; a=p-16
+                  bad=((q>=0)&((a>0)|(2*q*q>a*a))) | ((q<0)&(a>0)&(a*a>2*q*q))
+                  price=bad@w
+                  for val,cnt in zip(*np.unique(price,return_counts=True)):hist[int(val)]=hist.get(int(val),0)+int(cnt)
+          print('D3_27_EXTERIOR_PRICE_HIST',json.dumps(hist,sort_keys=True),flush=True)
+          # Reduce each tail polytope to its exact integer normal/right-side pattern.
+          unique,labels,counts=np.unique(R,axis=0,return_inverse=True,return_counts=True)
+          triples=[]
+          for ids in itertools.combinations(range(len(Q)),3):
+              M=Q[list(ids)].astype(float);det=round(np.linalg.det(M))
+              if det:triples.append((np.array(ids),np.linalg.inv(M)))
+          print('POLYTOPES27',json.dumps(dict(patterns=len(unique),invertible_triples=len(triples))),flush=True)
+          maxima=[]; new=[]
+          for k,r in enumerate(unique):
+              verts=[]
+              for ids,invM in triples:
+                  t=invM@r[ids]
+                  if np.all(Q@t<=r+1e-9):verts.append(t)
+              if not verts:
+                  maxima.append(None);continue
+              V=np.unique(np.round(verts,10),axis=0); norms=np.sum(V*V,axis=1); mx=float(norms.max());maxima.append(mx)
+              if mx>=16-1e-8:
+                  for t,n in zip(V,norms):
+                      if n>=16-1e-8:
+                          tail=t*np.sqrt(16/n)
+                          for hi in np.flatnonzero(labels==k):new.append(np.r_[H[hi],tail])
+          print('POLYTOPE_MAXIMA27',json.dumps(dict(histogram={str(v):sum(int(counts[j]) for j,z in enumerate(maxima) if z==v) for v in set(maxima)},radial_candidates=len(new),seconds=time.monotonic()-START)),flush=True)
+          if new:
+              N=np.unique(np.round(np.vstack(new),10),axis=0)
+              assert np.max(N@E.T)<=16+1e-7
+              print('CANDIDATE27_SUMMARY',json.dumps(dict(unique=len(N),max_norm_error=float(np.max(np.abs(np.sum(N*N,axis=1)-32))),max_exterior_product=float(np.max(N@E.T)))),flush=True)
+          print('EXECUTION_FINISHED',time.monotonic()-START,flush=True)
+          PY
