@@ -90,3 +90,5 @@ pairs for every exceptional support overlap. Its separate receipt records the
 49-class, 4,624-point gain. No mathematical gap was found in either reviewed
 construction. This is an exact verification of the supplied witnesses and
 does not assert their optimality.
+
+This is the independent audit of a **retained construction**, not the later affine-reconstruction extensions.

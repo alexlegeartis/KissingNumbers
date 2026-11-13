@@ -1,0 +1,861 @@
+[
+  {
+    "octad": 190069211232,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1110624,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183513572
+  },
+  {
+    "octad": 2834947900928,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1156248,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183559756
+  },
+  {
+    "octad": 22576503992320,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1177696,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183581204
+  },
+  {
+    "octad": 55121643880448,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1164656,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183568164
+  },
+  {
+    "octad": 185267843694593,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1134872,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183538380
+  },
+  {
+    "octad": 370535687389186,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1163344,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183566292
+  },
+  {
+    "octad": 705921362427908,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1108992,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183511940
+  },
+  {
+    "octad": 1284508757262368,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35502656,
+      "new_sparse": 2008416,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 184414724
+  },
+  {
+    "octad": 1447027095896072,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1133184,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183537252
+  },
+  {
+    "octad": 2894054191792144,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1134752,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183537700
+  },
+  {
+    "octad": 3377734080350338,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1157144,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183561212
+  },
+  {
+    "octad": 4503621672636419,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1133752,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183536700
+  },
+  {
+    "octad": 7037432769806400,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1109520,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183513028
+  },
+  {
+    "octad": 9007208986583046,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500976,
+      "new_sparse": 1136720,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183541348
+  },
+  {
+    "octad": 9606450284331136,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35502096,
+      "new_sparse": 2009952,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 184415700,
+    "four_support_permutation": [
+      7,
+      22,
+      23,
+      34,
+      40,
+      45,
+      49,
+      53,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      37,
+      38,
+      39,
+      41,
+      42,
+      43,
+      44,
+      46,
+      47,
+      48,
+      50,
+      51,
+      52,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "construction": "Relabel quadruple SQS independently; relabel unspecified full Hamming classes to put section coordinates first."
+  },
+  {
+    "octad": 13511073760691216,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1180160,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183584228
+  },
+  {
+    "octad": 18014417973166092,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1165312,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183568820
+  },
+  {
+    "octad": 23716465836294400,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1139312,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183543380
+  },
+  {
+    "octad": 36028835946332184,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1138272,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183542340
+  },
+  {
+    "octad": 41113007706605568,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35498736,
+      "new_sparse": 1113040,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183515428
+  },
+  {
+    "octad": 47432931672588800,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1155000,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183559068
+  },
+  {
+    "octad": 54044295041716288,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1165944,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183568892
+  },
+  {
+    "octad": 72057671892664368,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1160256,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183564324
+  },
+  {
+    "octad": 72061992089960705,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1115040,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183517988
+  },
+  {
+    "octad": 72163151449164356,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1181472,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183584980
+  },
+  {
+    "octad": 90362298077545472,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35502656,
+      "new_sparse": 2008032,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 184414340
+  },
+  {
+    "octad": 144115533854539968,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500976,
+      "new_sparse": 1134208,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183538836
+  },
+  {
+    "octad": 144123984179921410,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1110208,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183513156
+  },
+  {
+    "octad": 144537417720801552,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1162624,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183566692
+  },
+  {
+    "octad": 146370286491533353,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1182680,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183585628
+  },
+  {
+    "octad": 226306019116978176,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1111536,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183515044
+  },
+  {
+    "octad": 288231067709079936,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1165224,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183568732
+  },
+  {
+    "octad": 308532034530189312,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35498736,
+      "new_sparse": 1114816,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183517204
+  },
+  {
+    "octad": 364933410038251520,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500976,
+      "new_sparse": 1161056,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183565684
+  },
+  {
+    "octad": 432363156434650116,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1132352,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183535300
+  },
+  {
+    "octad": 576462169776849664,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1131712,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183535780
+  },
+  {
+    "octad": 576495936761761808,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1164624,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183568132
+  },
+  {
+    "octad": 578149602163729473,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1158016,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183561524
+  },
+  {
+    "octad": 580977546338762916,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1158496,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183562564
+  },
+  {
+    "octad": 756675657508864000,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35502656,
+      "new_sparse": 2006112,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 184412420
+  },
+  {
+    "octad": 864691128498259976,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1104896,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183507844
+  },
+  {
+    "octad": 1152927140142910464,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1134992,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183538500
+  },
+  {
+    "octad": 1152991873523523616,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1159408,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183562916
+  },
+  {
+    "octad": 1155173373140177156,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35502656,
+      "new_sparse": 2008160,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 184414468
+  },
+  {
+    "octad": 1170953496376115857,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35498736,
+      "new_sparse": 1105504,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183507892
+  },
+  {
+    "octad": 1225542873248694282,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1153784,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183557292
+  },
+  {
+    "octad": 1478315399547453440,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1177512,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183581580
+  },
+  {
+    "octad": 1738673136607494144,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1112576,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183516644
+  },
+  {
+    "octad": 2305854280285820928,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1165088,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183568036
+  },
+  {
+    "octad": 2306124484879351936,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1175384,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183578892
+  },
+  {
+    "octad": 2310346746280354312,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35503776,
+      "new_sparse": 2006496,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 184413924
+  },
+  {
+    "octad": 2341906992752231714,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1104080,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183508148
+  },
+  {
+    "octad": 2468539956683997184,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500976,
+      "new_sparse": 1160816,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183565444
+  },
+  {
+    "octad": 2603151056445636609,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1158288,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183562356
+  },
+  {
+    "octad": 3458905251652845632,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1131256,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183534204
+  },
+  {
+    "octad": 4611695987063283712,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1105952,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183509460
+  },
+  {
+    "octad": 4611897133249860744,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35498176,
+      "new_sparse": 1110352,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183512180
+  },
+  {
+    "octad": 4612248969758703872,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1176952,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183580460
+  },
+  {
+    "octad": 4612811921090019840,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1160896,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183564404
+  },
+  {
+    "octad": 4638708165947721760,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1133240,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183536748
+  },
+  {
+    "octad": 4647996702748311557,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35498736,
+      "new_sparse": 1159392,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183561780
+  },
+  {
+    "octad": 4899922991783084114,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35501536,
+      "new_sparse": 2009696,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 184414884
+  },
+  {
+    "octad": 7568316783162556416,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1126080,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183530148
+  },
+  {
+    "octad": 9223372047877933057,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35502096,
+      "new_sparse": 2008672,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 184414420
+  },
+  {
+    "octad": 9223447095770447872,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1107824,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183511892
+  },
+  {
+    "octad": 9225623842180039680,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1162880,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183566388
+  },
+  {
+    "octad": 9232405624925454664,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1157392,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183560340
+  },
+  {
+    "octad": 9331460626937159808,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1130456,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183533964
+  },
+  {
+    "octad": 9512446837936640544,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35501536,
+      "new_sparse": 1142952,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183548140
+  },
+  {
+    "octad": 9817988131318661122,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35500416,
+      "new_sparse": 1180976,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183585044
+  },
+  {
+    "octad": 11530342595276308500,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499296,
+      "new_sparse": 1113696,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183516644
+  },
+  {
+    "octad": 15136633566325112832,
+    "terms": {
+      "dense": 146800640,
+      "old_sparse": 35499856,
+      "new_sparse": 1159424,
+      "four_supports": 102900,
+      "poles": 112
+    },
+    "total": 183562932
+  }
+]

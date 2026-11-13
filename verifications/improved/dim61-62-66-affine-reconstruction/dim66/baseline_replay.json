@@ -1,0 +1,60 @@
+{
+  "family": {
+    "status": "PASS",
+    "certificate_sha256": "4c627b51a9fa919b397bdf4dc20418b69906247e80e112ad38216061f1f97764",
+    "retained_old_supports": 30828,
+    "new_supports": 1938,
+    "modified_old": 1792,
+    "old_new_pairs": 59744664,
+    "new_new_pairs": 1876953,
+    "old_new_repairs": 15504,
+    "new_new_repairs": 299,
+    "scalar_cpp": {
+      "status": "PASS",
+      "parent_words": 268435456,
+      "parent_minimum": 16,
+      "parent_weight16_words": 30828,
+      "old_new_pairs": 59744664,
+      "new_new_pairs": 1876953,
+      "old_new_repairs": 15504,
+      "new_new_repairs": 299
+    }
+  },
+  "expanded": {
+    "status": "PASS",
+    "dimension": 66,
+    "total": 342271364,
+    "terms": {
+      "dense64": 268435456,
+      "weight16": 73658368,
+      "weight4": 177408,
+      "poles": 132
+    },
+    "previous": 341994884,
+    "gain": 276480,
+    "parent_supports_checked": 174324,
+    "retained_parent_supports": 34028,
+    "extra_supports": 3200,
+    "new_supports": 1938,
+    "extra_pairs": 6201600,
+    "maximum_intersection": 8,
+    "scalar_cpp": {
+      "status": "PASS",
+      "parent_support_pairs": 578935378,
+      "new_extra_pairs": 6201600,
+      "extra_supports": 3200
+    },
+    "input_scope": "Every retained parent-support pair is checked directly, so the inherited 73-bit code minimum is unnecessary. The unchanged Netto four-support construction is replayed by verify.py."
+  },
+  "parents": {
+    "status": "PASS",
+    "owner65_points": 68224,
+    "owner65_dense_words": 268435456,
+    "netto68_blocks": 12529,
+    "distinct_triples": 50116,
+    "four_support_counts": {
+      "66": 11088,
+      "67": 11792
+    }
+  }
+}

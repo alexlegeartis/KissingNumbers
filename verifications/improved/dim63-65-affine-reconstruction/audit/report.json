@@ -1,0 +1,2437 @@
+{
+  "status": "PASS",
+  "total64": 335749696,
+  "total65": 335817922,
+  "gain": 38592,
+  "new_classes": 33,
+  "modified_classes": 81,
+  "changed_old_support_pairs": 2654127,
+  "new_support_pairs": 1081872,
+  "critical_pairs": [
+    {
+      "left": 4701199459216791104,
+      "right": 4688902521033875200,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4701199459216791104,
+      "right": 15644946554140231200,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4701199459216791104,
+      "right": 4697856978121205328,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4701199459216791104,
+      "right": 2372271107079149121,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4701199459216791104,
+      "right": 13095475685134404,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4701199459216791104,
+      "right": 4912302466230521920,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4701199459216791104,
+      "right": 4688823356399814282,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4701199459216791104,
+      "right": 233343451886784576,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11835464986266706436,
+      "right": 414477089387840004,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11835464986266706436,
+      "right": 10664528532555971142,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11835464986266706436,
+      "right": 297242190988460708,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11835464986266706436,
+      "right": 7210269817654379013,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11835464986266706436,
+      "right": 11838874629806497812,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11835464986266706436,
+      "right": 11691424356676150792,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11835464986266706436,
+      "right": 12123972397489528832,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11835464986266706436,
+      "right": 11547815004217549056,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9287689086269931688,
+      "right": 9711170439258341544,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9287689086269931688,
+      "right": 11530482946206335145,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9287689086269931688,
+      "right": 9233557912598423720,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9287689086269931688,
+      "right": 641349823699633152,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9287689086269931688,
+      "right": 9224568339920343544,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9287689086269931688,
+      "right": 135249298188157088,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9287689086269931688,
+      "right": 65447349645754892,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9287689086269931688,
+      "right": 15055674309272289282,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13912257000664532480,
+      "right": 4688902521033875200,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13912257000664532480,
+      "right": 15644946554140231200,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13912257000664532480,
+      "right": 4697856978121205328,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13912257000664532480,
+      "right": 11583328648526890497,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13912257000664532480,
+      "right": 9224153017132875780,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13912257000664532480,
+      "right": 14123360007678263296,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13912257000664532480,
+      "right": 4688823356399814282,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13912257000664532480,
+      "right": 9444400993334525952,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2672345419668874320,
+      "right": 11915984754349984000,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2672345419668874320,
+      "right": 2743980806602047562,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2672345419668874320,
+      "right": 650207274056393841,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2672345419668874320,
+      "right": 3752927872458183680,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2672345419668874320,
+      "right": 4697856978121205328,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2672345419668874320,
+      "right": 2666705061991752912,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2672345419668874320,
+      "right": 2635754497457283088,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2672345419668874320,
+      "right": 72708507348198484,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10956842570608574500,
+      "right": 1153684857734332854,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10956842570608574500,
+      "right": 13568504706044526624,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10956842570608574500,
+      "right": 15644946554140231200,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10956842570608574500,
+      "right": 11136416793932890145,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10956842570608574500,
+      "right": 577180125016156172,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10956842570608574500,
+      "right": 9224153017132875780,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10956842570608574500,
+      "right": 13095475685134404,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10956842570608574500,
+      "right": 10956132826457702436,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 6937045913219631144,
+      "right": 8092761959646644256,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 6937045913219631144,
+      "right": 4640155193043617832,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 6937045913219631144,
+      "right": 14214791988140051488,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 6937045913219631144,
+      "right": 7535879528124579864,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 6937045913219631144,
+      "right": 2450053310012465768,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 6937045913219631144,
+      "right": 4631112512157780003,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 6937045913219631144,
+      "right": 2306216300055107724,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 6937045913219631144,
+      "right": 2323956935407829256,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1304230281903079684,
+      "right": 2313029524589389092,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1304230281903079684,
+      "right": 7743354132234308,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1304230281903079684,
+      "right": 1945852456952971542,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1304230281903079684,
+      "right": 1298179637211627777,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1304230281903079684,
+      "right": 1178131141605327372,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1304230281903079684,
+      "right": 1301732569456314752,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1304230281903079684,
+      "right": 6235249662547202304,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1304230281903079684,
+      "right": 9383746854826803204,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5841788841265989554,
+      "right": 3512860489128347571,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5841788841265989554,
+      "right": 1153684857734332854,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5841788841265989554,
+      "right": 6052891848279720370,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5841788841265989554,
+      "right": 4688902521033875200,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5841788841265989554,
+      "right": 15644946554140231200,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5841788841265989554,
+      "right": 4697856978121205328,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5841788841265989554,
+      "right": 4688823356399814282,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5841788841265989554,
+      "right": 1373932833935983026,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9377743624017917952,
+      "right": 2495101069529575680,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9377743624017917952,
+      "right": 9224691620472171008,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9377743624017917952,
+      "right": 10954012169431431234,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9377743624017917952,
+      "right": 160511810385317892,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9377743624017917952,
+      "right": 13980635594901335040,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9377743624017917952,
+      "right": 9233557912598423720,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9377743624017917952,
+      "right": 459455277575542801,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9377743624017917952,
+      "right": 9449753114887426048,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13316018202002589217,
+      "right": 3512860489128347571,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13316018202002589217,
+      "right": 13568504706044526624,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13316018202002589217,
+      "right": 15644946554140231200,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13316018202002589217,
+      "right": 11136416793932890145,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13316018202002589217,
+      "right": 2936355756410170889,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13316018202002589217,
+      "right": 11583328648526890497,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13316018202002589217,
+      "right": 2372271107079149121,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 13316018202002589217,
+      "right": 10956132826457702436,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 14992553562922701138,
+      "right": 4683818964479006036,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 14992553562922701138,
+      "right": 9224568339920343544,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 14992553562922701138,
+      "right": 1731713256692666706,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 14992553562922701138,
+      "right": 17298328368022206531,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 14992553562922701138,
+      "right": 15280713750685876498,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 14992553562922701138,
+      "right": 15137004102012502018,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 14992553562922701138,
+      "right": 5137234315465552,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 14992553562922701138,
+      "right": 15055674309272289282,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2486077708451389580,
+      "right": 3641793754878402692,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2486077708451389580,
+      "right": 189186988275376268,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2486077708451389580,
+      "right": 9763823783371809924,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2486077708451389580,
+      "right": 7535879528124579864,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2486077708451389580,
+      "right": 2450053310012465768,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2486077708451389580,
+      "right": 180144307389538439,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2486077708451389580,
+      "right": 2306216300055107724,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 2486077708451389580,
+      "right": 2323956935407829256,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11177090546810224672,
+      "right": 13568504706044526624,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11177090546810224672,
+      "right": 15644946554140231200,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11177090546810224672,
+      "right": 11136416793932890145,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11177090546810224672,
+      "right": 1373932833935983026,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11177090546810224672,
+      "right": 10956132826457702436,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11177090546810224672,
+      "right": 797428101217806344,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11177090546810224672,
+      "right": 9444400993334525952,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11177090546810224672,
+      "right": 233343451886784576,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1153290960137507844,
+      "right": 3752927872458183680,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1153290960137507844,
+      "right": 1162219037234205824,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1153290960137507844,
+      "right": 6341422472728417824,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1153290960137507844,
+      "right": 72708507348198484,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1153290960137507844,
+      "right": 88793351346436,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1153290960137507844,
+      "right": 10558918027224694788,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1153290960137507844,
+      "right": 1153238250253980677,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1153290960137507844,
+      "right": 18384953660555278,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 15856049561153962016,
+      "right": 6052891848279720370,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 15856049561153962016,
+      "right": 13568504706044526624,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 15856049561153962016,
+      "right": 15644946554140231200,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 15856049561153962016,
+      "right": 11136416793932890145,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 15856049561153962016,
+      "right": 5476387115561543688,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 15856049561153962016,
+      "right": 14123360007678263296,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 15856049561153962016,
+      "right": 4912302466230521920,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 15856049561153962016,
+      "right": 10956132826457702436,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 36345562757137413,
+      "right": 3141418558686468,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 36345562757137413,
+      "right": 433810183530546188,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 36345562757137413,
+      "right": 4648034292317561892,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 36345562757137413,
+      "right": 36205031405748375,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 36345562757137413,
+      "right": 11583328648526890497,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 36345562757137413,
+      "right": 689332393068546049,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 36345562757137413,
+      "right": 45036107076141121,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 36345562757137413,
+      "right": 1153238250253980677,
+      "intersection": 10,
+      "left_projection_size": 512,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5265284108547812872,
+      "right": 4688902521033875200,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5265284108547812872,
+      "right": 15644946554140231200,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5265284108547812872,
+      "right": 4697856978121205328,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5265284108547812872,
+      "right": 2936355756410170889,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5265284108547812872,
+      "right": 577180125016156172,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5265284108547812872,
+      "right": 5476387115561543688,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5265284108547812872,
+      "right": 4688823356399814282,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5265284108547812872,
+      "right": 797428101217806344,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5265284108547812872,
+      "right": 6426636672577982048,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 104145799474069952,
+      "right": 9679924489881698760,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 104145799474069952,
+      "right": 86153374982162752,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 104145799474069952,
+      "right": 7021114035383050434,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 104145799474069952,
+      "right": 135249298188157088,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 104145799474069952,
+      "right": 99968748361876608,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 104145799474069952,
+      "right": 101331088378954116,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 104145799474069952,
+      "right": 1734449002114466113,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 104145799474069952,
+      "right": 5137234315465552,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 73764384245084468,
+      "right": 1156457881897439524,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 73764384245084468,
+      "right": 289921772940202480,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 73764384245084468,
+      "right": 2379035784650011936,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 73764384245084468,
+      "right": 649380389495824446,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 73764384245084468,
+      "right": 4693331393856958996,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 73764384245084468,
+      "right": 9404712640925716768,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 73764384245084468,
+      "right": 77182143159101716,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 73764384245084468,
+      "right": 91779603764633621,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10899597423018020,
+      "right": 10890959041593504,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10899597423018020,
+      "right": 29247560204959776,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10899597423018020,
+      "right": 5845840680790269957,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10899597423018020,
+      "right": 299104546294206758,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10899597423018020,
+      "right": 578779769564890116,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10899597423018020,
+      "right": 145831767470244372,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10899597423018020,
+      "right": 9263932059981217892,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 10899597423018020,
+      "right": 2316715120054241320,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11241556759829780481,
+      "right": 3243164371106992353,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11241556759829780481,
+      "right": 14700462028083904512,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11241556759829780481,
+      "right": 865265422030186496,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11241556759829780481,
+      "right": 11098083618899269633,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11241556759829780481,
+      "right": 2085738717387489282,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11241556759829780481,
+      "right": 10377183081001032705,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11241556759829780481,
+      "right": 10378545421018110213,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 11241556759829780481,
+      "right": 10664528453501688345,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5494824787559677954,
+      "right": 5188368927940116488,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5494824787559677954,
+      "right": 5188569158243160194,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5494824787559677954,
+      "right": 5476519293212805124,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5494824787559677954,
+      "right": 2218315356030664706,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5494824787559677954,
+      "right": 320646178171593218,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5494824787559677954,
+      "right": 9531175927813242915,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5494824787559677954,
+      "right": 4990285289860629586,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5494824787559677954,
+      "right": 7512163092676051200,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4759185514223904833,
+      "right": 5948696598841204769,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4759185514223904833,
+      "right": 5421208128816422976,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4759185514223904833,
+      "right": 4759198726533423360,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4759185514223904833,
+      "right": 144228990373071041,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4759185514223904833,
+      "right": 2308101408395672141,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4759185514223904833,
+      "right": 4759460531704850432,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4759185514223904833,
+      "right": 19296706279509057,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4759185514223904833,
+      "right": 14123295039661017171,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 875427859673121042,
+      "right": 586881378085012227,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 875427859673121042,
+      "right": 10962896189060366610,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 875427859673121042,
+      "right": 4909529442067415250,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 875427859673121042,
+      "right": 292229643678777620,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 875427859673121042,
+      "right": 1009480329125691408,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 875427859673121042,
+      "right": 586629070902270250,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 875427859673121042,
+      "right": 2689252609663180816,
+      "intersection": 10,
+      "left_projection_size": 256,
+      "right_projection_size": 512
+    },
+    {
+      "left": 875427859673121042,
+      "right": 911556849819321602,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1306047603141534772,
+      "right": 9376500404994470946,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1306047603141534772,
+      "right": 1594275651136015972,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1306047603141534772,
+      "right": 159881360252224569,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1306047603141534772,
+      "right": 1181072478802288660,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1306047603141534772,
+      "right": 1369826699188920468,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1306047603141534772,
+      "right": 1729702094853644340,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1306047603141534772,
+      "right": 1189023007200257044,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 1306047603141534772,
+      "right": 7070652789847868704,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4647820928806824964,
+      "right": 6919967203805111302,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4647820928806824964,
+      "right": 4692808537157086212,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4647820928806824964,
+      "right": 4648034292317561892,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4647820928806824964,
+      "right": 9980047705386797057,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4647820928806824964,
+      "right": 1190146585060739332,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4647820928806824964,
+      "right": 4611792396490389012,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4647820928806824964,
+      "right": 58617346251566088,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 4647820928806824964,
+      "right": 4936613722467600576,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5512797933218824514,
+      "right": 5215489714190291209,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5512797933218824514,
+      "right": 902079613336035906,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5512797933218824514,
+      "right": 4616508043172774178,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5512797933218824514,
+      "right": 10124202491177338946,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5512797933218824514,
+      "right": 6954446243496198468,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5512797933218824514,
+      "right": 903328516911826242,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5512797933218824514,
+      "right": 5656598649291948114,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 5512797933218824514,
+      "right": 6125282535008436608,
+      "intersection": 10,
+      "left_projection_size": 128,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 435257210626442260,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 4776700865295747111,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 148412534922739716,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 9442573011772309572,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 9817869316858679424,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 10547522703895691784,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 9284228906378084356,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 11547815004217549056,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 56879944291598860,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 74895024140124164,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 151807405923239941,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 9385591989863514560,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 9674506193525116944,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 10538534320891691040,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 12108521335946224644,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9388408870064422916,
+      "right": 14009643339385733126,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 315781947111600385,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 10164645267431757568,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 13045329568051774464,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 9592722801448748040,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 9763823783371809924,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 9130378953062736,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 9233619485443846434,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 4692861044471723264,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 72145563564471761,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 541014696458272000,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 657578325243409666,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 9520726439750816008,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 9598404526709196320,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 10676031440720846848,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 11844873976744656900,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 9592792550643692800,
+      "right": 13907139307092653312,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 9263071227563475083,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 43674876579946498,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 2344557991006830626,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 725514964059564468,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 47598202777569794,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 1229626202021488802,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 4670373569123989728,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 295197003560791200,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 2685651656983202,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 38423793727177898,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 40843834124413190,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 329053066284382336,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 1202896507926259760,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 3100871366157797538,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 4656484589715335232,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 43217490746026146,
+      "right": 9248355227101307043,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 5802346621228355592,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 37737025889796674,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 128493898259038488,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 147212788435584280,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 579970427934802200,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 11571455602982914068,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 11258999859659192,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 328223462713991425,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 38018432180691988,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 48431848774238666,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 126665388941082680,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 147545665935835417,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 1189655780321137168,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 2349200910377812240,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 4615083527200391432,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 39988688398647576,
+      "right": 10092097273572952328,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 6920810590961942624,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 3469192834011938832,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 2306137135023669510,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 2594382092717412480,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 10700984960816283689,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 1517925283561775136,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 4485727074673524768,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 1441294302281059872,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 1442058842694795272,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 1442569709748863488,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 2324004194745073972,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 2704553484812550176,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 3756292914760960000,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 4179484526735295522,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 6918031507681316960,
+      "intersection": 10,
+      "left_projection_size": 32,
+      "right_projection_size": 512
+    },
+    {
+      "left": 3747427550084513824,
+      "right": 10669459092868751521,
+      "intersection": 10,
+      "left_projection_size": 64,
+      "right_projection_size": 512
+    }
+  ],
+  "explicit_sign_classes_enumerated": 280,
+  "explicit_sign_words_enumerated": 544448,
+  "minimum_sign_weights": {
+    "88793351346436": 4,
+    "3141418558686468": 4,
+    "10890959041593504": 4,
+    "13095475685134404": 4,
+    "19296706279509057": 4,
+    "29247560204959776": 4,
+    "58617346251566088": 4,
+    "99968748361876608": 4,
+    "101331088378954116": 4,
+    "135249298188157088": 4,
+    "144228990373071041": 4,
+    "160511810385317892": 4,
+    "189186988275376268": 4,
+    "289921772940202480": 4,
+    "292229643678777620": 4,
+    "299104546294206758": 4,
+    "320646178171593218": 4,
+    "641349823699633152": 4,
+    "689332393068546049": 4,
+    "797428101217806344": 4,
+    "902079613336035906": 4,
+    "903328516911826242": 4,
+    "1009480329125691408": 4,
+    "1153238250253980677": 4,
+    "1153684857734332854": 4,
+    "1156457881897439524": 4,
+    "1162219037234205824": 4,
+    "1178131141605327372": 4,
+    "1190146585060739332": 4,
+    "1731713256692666706": 4,
+    "1945852456952971542": 4,
+    "2218315356030664706": 4,
+    "2308101408395672141": 4,
+    "2313029524589389092": 4,
+    "2316715120054241320": 4,
+    "2379035784650011936": 4,
+    "2450053310012465768": 4,
+    "2495101069529575680": 4,
+    "2635754497457283088": 4,
+    "2666705061991752912": 4,
+    "2689252609663180816": 4,
+    "2743980806602047562": 4,
+    "2936355756410170889": 4,
+    "3641793754878402692": 4,
+    "4631112512157780003": 4,
+    "4683818964479006036": 4,
+    "4688823356399814282": 4,
+    "4697856978121205328": 4,
+    "4909529442067415250": 4,
+    "4912302466230521920": 4,
+    "4936613722467600576": 4,
+    "4990285289860629586": 4,
+    "5656598649291948114": 4,
+    "6052891848279720370": 4,
+    "6235249662547202304": 4,
+    "7021114035383050434": 4,
+    "7210269817654379013": 4,
+    "7535879528124579864": 4,
+    "9224691620472171008": 4,
+    "9233557912598423720": 4,
+    "9404712640925716768": 4,
+    "9444400993334525952": 4,
+    "9531175927813242915": 4,
+    "9980047705386797057": 4,
+    "10124202491177338946": 4,
+    "10377183081001032705": 4,
+    "10378545421018110213": 4,
+    "10558918027224694788": 4,
+    "10664528453501688345": 4,
+    "10664528532555971142": 4,
+    "10956132826457702436": 4,
+    "11098083618899269633": 4,
+    "11136416793932890145": 4,
+    "11530482946206335145": 4,
+    "11583328648526890497": 4,
+    "11691424356676150792": 4,
+    "12123972397489528832": 4,
+    "14123295039661017171": 4,
+    "14214791988140051488": 4,
+    "15280713750685876498": 4,
+    "17298328368022206531": 4,
+    "4701199459216791104": 4,
+    "11835464986266706436": 4,
+    "9287689086269931688": 4,
+    "13912257000664532480": 4,
+    "2672345419668874320": 4,
+    "10956842570608574500": 4,
+    "6937045913219631144": 4,
+    "1304230281903079684": 4,
+    "5841788841265989554": 4,
+    "9377743624017917952": 4,
+    "13316018202002589217": 4,
+    "14992553562922701138": 4,
+    "2486077708451389580": 4,
+    "11177090546810224672": 4,
+    "1153290960137507844": 4,
+    "15856049561153962016": 4,
+    "36345562757137413": 4,
+    "5265284108547812872": 4,
+    "104145799474069952": 4,
+    "73764384245084468": 4,
+    "10899597423018020": 4,
+    "11241556759829780481": 4,
+    "5494824787559677954": 4,
+    "4759185514223904833": 4,
+    "875427859673121042": 4,
+    "1306047603141534772": 4,
+    "4647820928806824964": 4,
+    "5512797933218824514": 4,
+    "9388408870064422916": 4,
+    "9592792550643692800": 4,
+    "43217490746026146": 4,
+    "39988688398647576": 4,
+    "3747427550084513824": 4,
+    "4688902521033875200": 4,
+    "15644946554140231200": 4,
+    "2372271107079149121": 4,
+    "233343451886784576": 4,
+    "414477089387840004": 4,
+    "297242190988460708": 4,
+    "11838874629806497812": 4,
+    "11547815004217549056": 4,
+    "9711170439258341544": 4,
+    "9224568339920343544": 4,
+    "65447349645754892": 4,
+    "15055674309272289282": 4,
+    "9224153017132875780": 4,
+    "14123360007678263296": 4,
+    "11915984754349984000": 4,
+    "650207274056393841": 4,
+    "3752927872458183680": 4,
+    "72708507348198484": 4,
+    "13568504706044526624": 4,
+    "577180125016156172": 4,
+    "8092761959646644256": 4,
+    "4640155193043617832": 4,
+    "2306216300055107724": 4,
+    "2323956935407829256": 4,
+    "7743354132234308": 4,
+    "1298179637211627777": 4,
+    "1301732569456314752": 4,
+    "9383746854826803204": 4,
+    "3512860489128347571": 4,
+    "1373932833935983026": 4,
+    "10954012169431431234": 4,
+    "13980635594901335040": 4,
+    "459455277575542801": 4,
+    "9449753114887426048": 4,
+    "15137004102012502018": 4,
+    "5137234315465552": 4,
+    "9763823783371809924": 4,
+    "180144307389538439": 4,
+    "6341422472728417824": 4,
+    "18384953660555278": 4,
+    "5476387115561543688": 4,
+    "433810183530546188": 4,
+    "4648034292317561892": 4,
+    "36205031405748375": 4,
+    "45036107076141121": 4,
+    "6426636672577982048": 4,
+    "9679924489881698760": 4,
+    "86153374982162752": 4,
+    "1734449002114466113": 4,
+    "649380389495824446": 4,
+    "4693331393856958996": 4,
+    "77182143159101716": 4,
+    "91779603764633621": 4,
+    "5845840680790269957": 4,
+    "578779769564890116": 4,
+    "145831767470244372": 4,
+    "9263932059981217892": 4,
+    "3243164371106992353": 4,
+    "14700462028083904512": 4,
+    "865265422030186496": 4,
+    "2085738717387489282": 4,
+    "5188368927940116488": 4,
+    "5188569158243160194": 4,
+    "5476519293212805124": 4,
+    "7512163092676051200": 4,
+    "5948696598841204769": 4,
+    "5421208128816422976": 4,
+    "4759198726533423360": 4,
+    "4759460531704850432": 4,
+    "586881378085012227": 4,
+    "10962896189060366610": 4,
+    "586629070902270250": 4,
+    "911556849819321602": 4,
+    "9376500404994470946": 4,
+    "1594275651136015972": 4,
+    "159881360252224569": 4,
+    "1181072478802288660": 4,
+    "1369826699188920468": 4,
+    "1729702094853644340": 4,
+    "1189023007200257044": 4,
+    "7070652789847868704": 4,
+    "6919967203805111302": 4,
+    "4692808537157086212": 4,
+    "4611792396490389012": 4,
+    "5215489714190291209": 4,
+    "4616508043172774178": 4,
+    "6954446243496198468": 4,
+    "6125282535008436608": 4,
+    "435257210626442260": 4,
+    "4776700865295747111": 4,
+    "148412534922739716": 4,
+    "9442573011772309572": 4,
+    "9817869316858679424": 4,
+    "10547522703895691784": 4,
+    "9284228906378084356": 4,
+    "56879944291598860": 4,
+    "74895024140124164": 4,
+    "151807405923239941": 4,
+    "9385591989863514560": 4,
+    "9674506193525116944": 4,
+    "10538534320891691040": 4,
+    "12108521335946224644": 4,
+    "14009643339385733126": 4,
+    "315781947111600385": 4,
+    "10164645267431757568": 4,
+    "13045329568051774464": 4,
+    "9592722801448748040": 4,
+    "9130378953062736": 4,
+    "9233619485443846434": 4,
+    "4692861044471723264": 4,
+    "72145563564471761": 4,
+    "541014696458272000": 4,
+    "657578325243409666": 4,
+    "9520726439750816008": 4,
+    "9598404526709196320": 4,
+    "10676031440720846848": 4,
+    "11844873976744656900": 4,
+    "13907139307092653312": 4,
+    "9263071227563475083": 4,
+    "43674876579946498": 4,
+    "2344557991006830626": 4,
+    "725514964059564468": 4,
+    "47598202777569794": 4,
+    "1229626202021488802": 4,
+    "4670373569123989728": 4,
+    "295197003560791200": 4,
+    "2685651656983202": 4,
+    "38423793727177898": 4,
+    "40843834124413190": 4,
+    "329053066284382336": 4,
+    "1202896507926259760": 4,
+    "3100871366157797538": 4,
+    "4656484589715335232": 4,
+    "9248355227101307043": 4,
+    "5802346621228355592": 4,
+    "37737025889796674": 4,
+    "128493898259038488": 4,
+    "147212788435584280": 4,
+    "579970427934802200": 4,
+    "11571455602982914068": 4,
+    "11258999859659192": 4,
+    "328223462713991425": 4,
+    "38018432180691988": 4,
+    "48431848774238666": 4,
+    "126665388941082680": 4,
+    "147545665935835417": 4,
+    "1189655780321137168": 4,
+    "2349200910377812240": 4,
+    "4615083527200391432": 4,
+    "10092097273572952328": 4,
+    "6920810590961942624": 4,
+    "3469192834011938832": 4,
+    "2306137135023669510": 4,
+    "2594382092717412480": 4,
+    "10700984960816283689": 4,
+    "1517925283561775136": 4,
+    "4485727074673524768": 4,
+    "1441294302281059872": 4,
+    "1442058842694795272": 4,
+    "1442569709748863488": 4,
+    "2324004194745073972": 4,
+    "2704553484812550176": 4,
+    "3756292914760960000": 4,
+    "4179484526735295522": 4,
+    "6918031507681316960": 4,
+    "10669459092868751521": 4
+  },
+  "sha256": {
+    "/workspace/scratch/941a2e823e69/research/kn_latest/verifications/improved/dim63-65-affine-reconstruction/certificate.json": "266af3683caadf6d23c2aa3e7409ce28d2d3f4a8644be2784263c80bd407fc7e",
+    "/workspace/scratch/941a2e823e69/research/kn_latest/verifications/improved/dim61-67-compatible-sign-families/data/global64.json": "8c0c35f8127c578118f1f09e5950d712a272db32f2d50f382e6fe32f46c6dbf5",
+    "/workspace/scratch/941a2e823e69/research/kn_latest/verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/code64_supports.npz": "cdbd5e5a7bbda9ddb84ee86052e2d4d00ccc331f0188de958a69ed83b0c529f6"
+  },
+  "scope": "New/modified classes independently enumerated. High-overlap pairs verified using disjoint explicit projected sign sets, not parity witness algorithm. Unchanged published construction and owner lift replayed separately."
+}

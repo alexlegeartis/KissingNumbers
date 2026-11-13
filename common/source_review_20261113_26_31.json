@@ -54,11 +54,12 @@
       "dimension": 31,
       "previous_repository": 251200,
       "packingstar": 251254,
-      "repository": 251395,
-      "gap_over_packingstar": 141,
+      "repository": 251420,
+      "gap_over_packingstar": 166,
       "status": "ahead_of_pinned_release",
       "external_source": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D31_251254_coordinates.npz",
-      "certificate": "verifications/improved/dim31-leech-sloane-module/"
+      "certificate": "verifications/improved/dim31-annealed-design/",
+      "immediate_predecessor": 251396
     }
   ]
 }

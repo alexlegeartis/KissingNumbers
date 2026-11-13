@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 115 scripts, including large exact certificate replays
-    python run_all.py --full       # 134 scripts, budget about 10 hours
+    python run_all.py              # 123 scripts, including large exact certificate replays
+    python run_all.py --full       # 142 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -106,6 +106,16 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('dim61-62-66-affine-reconstruction: verify.py', os.path.join(V, 'improved', 'dim61-62-66-affine-reconstruction'), ['verify.py'], 3.0, True),
+    ('dim61-62-66-affine-reconstruction: verify.py --independent', os.path.join(V, 'improved', 'dim61-62-66-affine-reconstruction'), ['verify.py', '--independent'], 3.0, True),
+    ('dim63-65-affine-reconstruction: verify.py', os.path.join(V, 'improved', 'dim63-65-affine-reconstruction'), ['verify.py'], 3.0, True),
+    ('dim63-65-affine-reconstruction: section63.py', os.path.join(V, 'improved', 'dim63-65-affine-reconstruction'), ['section63.py'], 3.0, True),
+    ('dim63-65-affine-reconstruction: audit/audit.py', os.path.join(V, 'improved', 'dim63-65-affine-reconstruction'), ['audit/audit.py'], 3.0, True),
+    ('dim63-65-affine-reconstruction: audit/section_audit.py', os.path.join(V, 'improved', 'dim63-65-affine-reconstruction'), ['audit/section_audit.py'], 3.0, True),
+    ('31D annealed design: complete exact geometry and integer exchange',
+     os.path.join(V, 'improved', 'dim31-annealed-design'), ['verify.py'], 3.0, True),
+    ('31D joint design: complete exact geometry and independent integer exchange',
+     os.path.join(V, 'improved', 'dim31-joint-design'), ['verify.py'], 3.0, True),
     ('30D Leech-Sloane section: complete exact geometry and independent integer reconstruction',
      os.path.join(V, 'improved', 'dim30-leech-sloane-section'), ['verify.py'], 2.0, True),
     ('31D Leech-Sloane module: complete exact geometry and independent integer reconstruction',
@@ -421,8 +431,14 @@ JOBS.append(('49-60D pointwise P48 refill: two exact proofs and complete tails',
 # driver, a manifest, or the GPU run's receipt.
 def _sota_jobs(quick=False):
     wanted = {
+        ('dim61-62-66-affine-reconstruction', ('verify.py',)),
+        ('dim61-62-66-affine-reconstruction', ('verify.py', '--independent')),
+        ('dim63-65-affine-reconstruction', ('verify.py',)),
+        ('dim63-65-affine-reconstruction', ('section63.py',)),
+        ('dim63-65-affine-reconstruction', ('audit/audit.py',)),
+        ('dim63-65-affine-reconstruction', ('audit/section_audit.py',)),
         ('dim30-leech-sloane-section', ('verify.py',)),
-        ('dim31-leech-sloane-module', ('verify.py',)),
+        ('dim31-annealed-design', ('verify.py',)),
         ('dim36-37-orbit-exchange', ('verify.py',)),
         ('dim36-37-orbit-exchange', ('rejection_controls.py',)),
         ('dim61-67-compatible-sign-families', ('verify.py',)),
@@ -530,15 +546,17 @@ def _sota_records():
 def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
+        ('dim61-62-66-affine-reconstruction', [61,62,66], [('verify.py',), ('verify.py', '--independent')], 'exact new affine classes, all affected support pairs, independent brute-force kernels and direct sign-pair replay; unchanged layers use parent package'),
+        ('dim63-65-affine-reconstruction', [63,64,65], [('verify.py',), ('section63.py',), ('audit/audit.py',), ('audit/section_audit.py',)], 'exact affine sign classes and explicit relabeled 63D section; independent replay plus retained parent geometry'),
         ('dim30-leech-sloane-section', [30], [('verify.py',)],
          'complete exact geometry for all 248084 points; independent integer parent/section construction, source reconstruction and every inserted pair; four malformed-input controls'),
-        ('dim31-leech-sloane-module', [31], [('verify.py',)],
-         'complete exact geometry for all 251395 points; independent integer module and partial-union reconstruction and every inserted pair; four malformed-input controls'),
+        ('dim31-annealed-design', [31], [('verify.py',)],
+         'complete exact geometry for all 251420 points; exact int32 exchange with 2218 additions and 2052 removals from251254; historical packages retained'),
         ('dim30-bw14-module', [30], [('verify.py',)],
          'complete exact geometry for all 248020 points; separate integer Barnes-Wall reconstruction, pinned-source exchange and every inserted pair; four malformed-input controls'),
         ('dim36-37-orbit-exchange', [36,37], [('verify.py',), ('rejection_controls.py',)],
          'fresh exact Coxeter-Todd source replay and all replacement interactions; no floating-point angle tolerance'),
-        ('dim61-67-compatible-sign-families', list(range(61,68)), [('verify.py',), ('rejection_controls.py',)],
+        ('dim61-67-compatible-sign-families', [67], [('verify.py',), ('rejection_controls.py',)],
          'fresh exact compatible-support, sign-family, code and layer replay with malformed-input controls'),
         ('dim68-69-gamma72-extended-moments', [68,69], [('verify.py','--enumerate'), ('verify_independent.py',), ('rejection_controls.py',)],
          'two independent exact D7 profile/population and geometry proofs; published Gamma72 inputs, finite orientation existence and two 69D poles; no ambient shell enumeration'),

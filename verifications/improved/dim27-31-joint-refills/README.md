@@ -10,7 +10,7 @@ Latest repository bounds (13 November 2026) include the [November 28D/29D sextet
 | 28 | 221,864 | **221,988** | **124** | 312 | 436 | 222,120 |
 | 29 | 231,676 | **231,697** | **21** | 219 | 240 | 231,776 |
 | 30 | 247,967 | **247,972** | **5** | 512 | 517 | 248,084 |
-| 31 | 251,169 | **251,188** | **19** | 463 | 482 | 251,395 |
+| 31 | 251,169 | **251,188** | **19** | 463 | 482 | 251,420 |
 
 The sextet continuation reclaims 28D by **124 points** and further improves
 27D, 29D and 31D. These are explicit lower bounds; no unrestricted optimum

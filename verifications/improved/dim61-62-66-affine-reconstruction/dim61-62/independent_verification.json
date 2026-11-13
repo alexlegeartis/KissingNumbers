@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "gain": 4416,
+  "totals": {
+    "61": 88979562,
+    "62": 122543436
+  },
+  "new_classes": 25,
+  "modified_classes": 1,
+  "affected_support_pairs": 265550,
+  "critical_support_pairs": 170,
+  "distinct_restricted_sign_pairs": 7995392,
+  "max_critical_dot": 32,
+  "certificate_sha256": "34c5b527252603d693c8e760b7b4215d0d84eaf503ce44622d11bfdd7fc0dee1",
+  "scope": "Independent brute-force65536-word kernels and direct critical sign-pair products; baseline/transfer replay separate."
+}

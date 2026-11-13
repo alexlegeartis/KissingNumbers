@@ -7,14 +7,18 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-51 packages, one per **construction idea** rather than one per dimension, because several
+55 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
 | [`dim30-leech-sloane-section`](improved/dim30-leech-sloane-section/) | 30 | current 248,084; 92 above PackingStar; complete final geometry and independent exact section and exchange reconstruction |
-| [`dim31-leech-sloane-module`](improved/dim31-leech-sloane-module/) | 31 | current 251,395; 141 above PackingStar; complete final geometry and independent exact module and partial-union reconstruction |
+| [`dim61-62-66-affine-reconstruction`](improved/dim61-62-66-affine-reconstruction/) | 61, 62, 66 | exact affine sign subcodes and independent replay |
+| [`dim63-65-affine-reconstruction`](improved/dim63-65-affine-reconstruction/) | 63–65 | exact affine sign subcodes and independent replay |
+| [`dim31-annealed-design`](improved/dim31-annealed-design/) | 31 | 251,420 points; E8 orientations with exact exchange and full final geometry |
+| [`dim31-joint-design`](improved/dim31-joint-design/) | 31 | 251,396 points; joint exact-cover design, exact integer exchange and full final geometry |
+| [`dim31-leech-sloane-module`](improved/dim31-leech-sloane-module/) | 31 | retained 251,395; 141 above PackingStar; complete final geometry and independent exact module and partial-union reconstruction |
 | [`dim30-bw14-module`](improved/dim30-bw14-module/) | 30 | retained 248,020; 28 above PackingStar November 11; 932-for-960 Barnes–Wall module replacement; complete exact geometry and independent integer module reconstruction |
 | [`dim36-37-orbit-exchange`](improved/dim36-37-orbit-exchange/) | 36, 37 | 501,822 and 505,638; nine-point gains from a compatible orbit exchange; fresh exact source and replacement replay |
 | [`dim61-67-compatible-sign-families`](improved/dim61-67-compatible-sign-families/) | 61–67 | larger compatible support and sign families; fresh exact code and layer verification |

@@ -1,5 +1,11 @@
 # Verification of the retained SOTA results
 
+Latest 61–66D: [61/62/66 affine subcodes](verifications/improved/dim61-62-66-affine-reconstruction/) and [63–65 affine subcodes and explicit section](verifications/improved/dim63-65-affine-reconstruction/) extend the retained parent proof. The SOTA runner executes both new proofs and the unchanged parent geometry.
+
+Latest 31D: **251,420**, with [annealed-design proof](verifications/improved/dim31-annealed-design/). Run `python verifications/improved/dim31-annealed-design/verify.py`. The historical checkpoints below remain valid.
+
+13 November 2026 continuation: [31D joint design](verifications/improved/dim31-joint-design/) gives **251,396**, +1 over the retained 251,395 certificate and +142 over the pinned PackingStar release. Full exact final geometry covers **31,599,848,710** unordered pairs, and direct int64 exchange checks verify all added-point interactions. Run `python verifications/improved/dim31-joint-design/verify.py`.
+
 13 November 2026: the [30D Leech–Sloane section](verifications/improved/dim30-leech-sloane-section/) and [31D Leech–Sloane module](verifications/improved/dim31-leech-sloane-module/) give **248,084** and **251,395**, 92 and 141 above PackingStar's pinned November 11 release. Complete exact final geometry covers **30,772,711,486** and **31,599,597,315** unordered pairs. Separate integer checkers rebuild the full 2,564-point recipe, verify its section and exact orientations, reconstruct the pinned sources and check every inserted-point interaction. Four malformed-input controls and complete manifests are replayed. The earlier [248,020-point Barnes–Wall package](verifications/improved/dim30-bw14-module/) remains available. The [fresh comparison](common/source_review_20261113_26_31.json) records the remaining 26D/27D gaps.
 
 The 13 November continuation has three new verification routes. The [Coxeter–Todd orbit exchange](verifications/improved/dim36-37-orbit-exchange/) gives **501,822 in 36D** and **505,638 in 37D**. Its fresh replay reconstructs the source proof and checks every interaction involving the added phase orbits; malformed witnesses, including a correctly counted but geometrically invalid restored orbit, are rejected.

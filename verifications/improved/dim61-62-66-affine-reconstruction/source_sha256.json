@@ -1,0 +1,10 @@
+{
+  "verifications/improved/dim61-67-compatible-sign-families/subcode67.py": "1bb14b6f12f148b87ec834530ba6a69caac4d46fa18806f11cc453a87d9c4d4f",
+  "verifications/improved/dim61-67-compatible-sign-families/data/short61_62.json": "d9f5744e5c92745ab6f5cc8bb144f0bd7862dfc4c69a3371c2759b408a24e598",
+  "verifications/improved/dim61-67-compatible-sign-families/data/expanded66.json": "4c627b51a9fa919b397bdf4dc20418b69906247e80e112ad38216061f1f97764",
+  "verifications/improved/dim61-67-compatible-sign-families/geometry_counts.py": "3cbd82a49831b9ef20203fa9e971ae025f67da70b6c45da8466d81fe7c9abbed",
+  "verifications/improved/dim61-67-compatible-sign-families/expanded_geometry.py": "d3a8af93d382bc87dde87b1670bda65647cecb5bc24a6f08f3a8e072c8dcdcc1",
+  "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/code64_supports.npz": "cdbd5e5a7bbda9ddb84ee86052e2d4d00ccc331f0188de958a69ed83b0c529f6",
+  "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/cyclic73.weight16.bin": "5d240938e26a7a477de62bc255439e743cb33120bb13b986a70c6b1fea0b5239",
+  "verifications/improved/dim61-68-95-96-code-layers/source/dim61_96/shortening_support_search.json": "5422ed8f2b3be75267a57ea6fccc88f403a80e5bbe60dc64adc8edda51b61d88"
+}

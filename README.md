@@ -1,5 +1,11 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
+**13 November 2026 — restored high-dimensional advances.** Exact affine sign subcodes give **88,979,562 (61D), 122,543,436 (62D), 184,415,700 (63D), 335,749,696 (64D), 335,817,922 (65D), and 342,291,652 (66D)**. [61/62/66D ideas and proof](verifications/improved/dim61-62-66-affine-reconstruction/) · [63–65D ideas and proof](verifications/improved/dim63-65-affine-reconstruction/). Historical constructions remain available.
+
+**13 November 2026 — 31D further continuation.** Exact E8 orientation search with full exterior-deletion pricing gives **251,420 points**, +24 over the retained 251,396 certificate and +166 over pinned PackingStar. [Idea, exchange replay and complete exact geometry](verifications/improved/dim31-annealed-design/).
+
+**13 November 2026 — 31D continuation.** Joint design and exterior-deletion optimization gives **251,396 points**, +1 over our retained 251,395-point construction and +142 over the pinned PackingStar release. The [construction and complete exact proof](verifications/improved/dim31-joint-design/) reconstruct the 1,004-for-1,003 exchange and verify all 31,599,848,710 unordered final pairs. This is a dated comparison, not an exhaustive worldwide-priority claim.
+
 **13 November 2026 — 30D and 31D reclaimed against PackingStar.** Exact Leech–Sloane module constructions give **248,084 in 30D** and **251,395 in 31D**, respectively **92 and 141 above** the November 11 release, and 112 and 195 above the preceding repository certificates. The [30D section proof](verifications/improved/dim30-leech-sloane-section/) and [31D module proof](verifications/improved/dim31-leech-sloane-module/) check every final point pair, independently reconstruct the modules and verify every inserted-point interaction with integer arithmetic. The earlier [248,020-point Barnes–Wall certificate](verifications/improved/dim30-bw14-module/) is retained. The [fresh comparison](common/source_review_20261113_26_31.json) places the repository ahead in 28–31D; 26D and 27D remain open. The [research campaign and next attack](research/reclaim_26_31_20261113/) record the construction, restricted exclusions and remaining models.
 
 **13 November 2026 — continuation in 36–37D and 61–69D.** An actual D7 normal system strengthens the Gamma72 bounds to **471,886,208 in 68D** and **746,325,051 in 69D**, gains of **1,920** and **2,802,747** over the preceding certificates. [Two independent exact proofs](verifications/improved/dim68-69-gamma72-extended-moments/) enumerate all 162,969 possible profiles, verify the rational population duals and geometry, and include two additional 69D poles.
@@ -156,7 +162,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **222 120** | **SOTA** | +8.260% | — | reclaimed 2026-10-29 and 2026-11-12 | [November sextet unions](verifications/improved/dim28-29-november-sextets/) | — |
 | 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **231 776** | **SOTA** | +10.635% | — | reclaimed 2026-10-29 and 2026-11-12 | [November sextet unions](verifications/improved/dim28-29-november-sextets/) | — |
 | 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v5) | **248 084** | **SOTA** | +12.540% | — | reclaimed 2026-11-13 | [Leech–Sloane section with partial fibers](verifications/improved/dim30-leech-sloane-section/) | — |
-| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v5) | **251 395** | **SOTA** | +5.473% | — | reclaimed 2026-11-13 | [Leech–Sloane module and partial union](verifications/improved/dim31-leech-sloane-module/) | — |
+| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v5) | **251 420** | **SOTA** | +5.4835% | — | reclaimed 2026-11-13 | [Construction and exact proof](verifications/improved/dim31-annealed-design/) | — |
 | 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32/tree/f367a9c5a051c0d6821ce71324b9dfa1ead76c2e) | **352 992** | **SOTA** | +0.190736% | — | since 2026-11-07 | [Non-antipodal signed octad continuation](verifications/improved/dim32-35-signed-layers/nonantipodal32/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal32/evidence/public_comparison.json) |
 | 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 408** | **SOTA** | +0.045376% | — | since 2026-11-07 | [Non-antipodal octads and individual root-star trades](verifications/improved/dim32-35-signed-layers/nonantipodal33/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal33/evidence/public_comparison.json) |
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 992** | **SOTA** | +0.00306921% | — | since 2026-11-06 | [Rational heavy-head rotation](verifications/improved/dim32-35-signed-layers/rotated34/) | — |
@@ -184,12 +190,12 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 58 | 52 416 510 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [10D tail](common/published.py) *(derived)* | **56 270 076** | **SOTA** | +7.3518% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
 | 59 | 52 416 604 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail](common/published.py) *(derived)* | **56 952 414** | **SOTA** | +8.6534% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
 | 60 | 52 416 841 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail](common/published.py) *(derived)* | **58 631 571** | **SOTA** | +11.8564% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
-| 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **88 975 146** | **SOTA** | +69.7443% | — | updated 2026-11-13 | [Compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) | — |
-| 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **122 539 020** | **SOTA** | +133.7731% | — | updated 2026-11-13 | [Compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) | — |
-| 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **184 393 988** | **SOTA** | +251.7723% | — | updated 2026-11-13 | [Compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) | — |
-| 64 | 331 737 984 | [Edel-Rains-Sloane](https://arxiv.org/abs/math/0207291) | **335 711 104** | **SOTA** | +1.1977% | — | updated 2026-11-13 | [Compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) | — |
-| 65 | 331 737 986 | [ERS64](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **335 779 330** | **SOTA** | +1.2182% | — | updated 2026-11-13 | [Compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) | — |
-| 66 | 331 737 990 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **342 271 364** | **SOTA** | +3.1752% | — | updated 2026-11-13 | [Compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) | — |
+| 61 | 52 417 154 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail](common/published.py) *(derived)* | **88 979 562** | **SOTA** | +69.7528% | — | updated 2026-11-13 | [Construction and exact proof](verifications/improved/dim61-62-66-affine-reconstruction/) | — |
+| 62 | 52 417 932 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail](common/published.py) *(derived)* | **122 543 436** | **SOTA** | +133.7815% | — | updated 2026-11-13 | [Construction and exact proof](verifications/improved/dim61-62-66-affine-reconstruction/) | — |
+| 63 | 52 418 564 | [Leech–Sloane P48](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail](common/published.py) *(derived)* | **184 415 700** | **SOTA** | +251.8137% | — | updated 2026-11-13 | [Construction and exact proof](verifications/improved/dim63-65-affine-reconstruction/) | — |
+| 64 | 331 737 984 | [Edel-Rains-Sloane](https://arxiv.org/abs/math/0207291) | **335 749 696** | **SOTA** | +1.2093% | — | updated 2026-11-13 | [Construction and exact proof](verifications/improved/dim63-65-affine-reconstruction/) | — |
+| 65 | 331 737 986 | [ERS64](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **335 817 922** | **SOTA** | +1.2299% | — | updated 2026-11-13 | [Construction and exact proof](verifications/improved/dim63-65-affine-reconstruction/) | — |
+| 66 | 331 737 990 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **342 291 652** | **SOTA** | +3.1813% | — | updated 2026-11-13 | [Construction and exact proof](verifications/improved/dim61-62-66-affine-reconstruction/) | — |
 | 67 | 331 737 996 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **355 095 446** | **SOTA** | +7.0409% | — | since 2026-11-13 | [Compatible affine sign classes](verifications/improved/dim61-67-compatible-sign-families/) | — |
 | 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **471 886 208** | **SOTA** | +42.2467% | — | updated 2026-11-13 | [Extended Gamma72 moments](verifications/improved/dim68-69-gamma72-extended-moments/) | — |
 | 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **746 325 051** | **SOTA** | 2.25x | — | updated 2026-11-13 | [Extended moments and head poles](verifications/improved/dim68-69-gamma72-extended-moments/) | — |
@@ -270,7 +276,7 @@ improvement is claimed in 47D or 48D.
 <details>
 <summary>Detailed construction notes</summary>
 
-- **27–31D (current):** The current repository values are **209 825, 222 120, 231 776, 248 084, 251 395**, respectively. The [November sextet unions](verifications/improved/dim28-29-november-sextets/) give the 28D and 29D bounds. The [30D Leech–Sloane section](verifications/improved/dim30-leech-sloane-section/) replaces 932 heads by 1,056 and deletes 32 exterior blockers. The [31D Leech–Sloane module](verifications/improved/dim31-leech-sloane-module/) uses an exact 2,564-point module and retains a 2,559-point subset, giving 2,219 additions and 2,078 deletions. Both have complete exact final geometry and independent direct-integer reconstruction and changed-pair proofs. The earlier [algebraic completion](verifications/improved/dim27-31-algebraic-completion/) supplies the current 27D bound.
+- **27–31D (current):** The current repository values are **209 825, 222 120, 231 776, 248 084, 251 420**, respectively. The latest [31D annealed-design continuation](verifications/improved/dim31-annealed-design/) adds 2,218 points and removes 2,052 from the pinned 251,254-point source. The [November sextet unions](verifications/improved/dim28-29-november-sextets/) give the 28D and 29D bounds. The [30D Leech–Sloane section](verifications/improved/dim30-leech-sloane-section/) replaces 932 heads by 1,056 and deletes 32 exterior blockers. The [31D Leech–Sloane module](verifications/improved/dim31-leech-sloane-module/) uses an exact 2,564-point module and retains a 2,559-point subset, giving 2,219 additions and 2,078 deletions. Both have complete exact final geometry and independent direct-integer reconstruction and changed-pair proofs. The earlier [algebraic completion](verifications/improved/dim27-31-algebraic-completion/) supplies the current 27D bound.
 
 - **18D:** the base of Cohn–Li's hexagon had a free combinatorial parameter nobody had varied: which coset of RM(1,4) the three six-set families lie in.  Three bent cosets with pairwise-bent sums that do not sum to zero give the twelve tier-B slots three different 512-word spaces instead of one, and tier B rises from 256 to 960
 
@@ -529,7 +535,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 51 packages, 70 dimensions
+### `verifications/improved/` — 55 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -546,7 +552,11 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | [`dim69-gamma72-head-compression`](verifications/improved/dim69-gamma72-head-compression/) | 69 | retained 743,522,304-point construction; ten slices with one reconstructed coordinate; two independent exact moment and geometry proofs |
 | [`dim49-60-p48-signed-refill`](verifications/improved/dim49-60-p48-signed-refill/) | 49–60 | signed P48 class exchanges; twelve improvements with complete finite class, ownership and tail verification |
 | [`dim30-leech-sloane-section`](verifications/improved/dim30-leech-sloane-section/) | 30 | current 248,084; partial-fiber 1,356-point section, complete exact geometry and independent integer reconstruction |
-| [`dim31-leech-sloane-module`](verifications/improved/dim31-leech-sloane-module/) | 31 | current 251,395; 2,559-point module subset, complete exact geometry and independent integer reconstruction |
+| [`dim61-62-66-affine-reconstruction`](verifications/improved/dim61-62-66-affine-reconstruction/) | 61, 62, 66 | exact affine sign subcodes and independent replay |
+| [`dim63-65-affine-reconstruction`](verifications/improved/dim63-65-affine-reconstruction/) | 63–65 | exact affine sign subcodes and independent replay |
+| [`dim31-annealed-design`](verifications/improved/dim31-annealed-design/) | 31 | current 251,420; E8 orientation search, exact exchange and full geometry |
+| [`dim31-joint-design`](verifications/improved/dim31-joint-design/) | 31 | historical 251,396; joint exact-cover design, exact exchange and full all-pairs verification |
+| [`dim31-leech-sloane-module`](verifications/improved/dim31-leech-sloane-module/) | 31 | retained 251,395; 2,559-point module subset, complete exact geometry and independent integer reconstruction |
 | [`dim30-bw14-module`](verifications/improved/dim30-bw14-module/) | 30 | retained 248,020 points; exact 932-for-960 Barnes–Wall module replacement, full geometry and independent integer checks |
 | [`dim28-29-november-sextets`](verifications/improved/dim28-29-november-sextets/) | 28, 29 | current 222,120 and 231,776; exact finite geometry and independent direct-integer changes over the November 11 PackingStar files |
 | [`dim31-latitude-contact-exchange`](verifications/improved/dim31-latitude-contact-exchange/) | 31 | retained 251,200-point four-for-eight exchange; two complete exact proofs, including independent integer-only enumeration |
@@ -643,7 +653,7 @@ comparison is given separately by its source.
 | 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) | 197 586 |
 | 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 231 776 |
 | 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 248 084 |
-| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 395 |
+| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 420 |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 638 |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 852 |
 
@@ -832,10 +842,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 115 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 123 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 134 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 142 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

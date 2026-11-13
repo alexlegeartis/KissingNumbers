@@ -10,7 +10,7 @@ The dated constructions and coordinate certificates below remain unchanged.
 | Dimension | Preceding repository | New lower bound | Gain | Removed | Added | Current repository bound (13 November 2026) |
 |---|---:|---:|---:|---:|---:|---:|
 |27|209,807|**209,825**|18|14|32|209,825|
-|31|251,188|**251,196**|8|0|8| 251,395 |
+|31|251,188|**251,196**|8|0|8| 251,420 |
 
 The PackingStar release checked for that dated construction has 209,760 and 251,169 points,
 respectively. Its retained coordinates and the repository's subsequent

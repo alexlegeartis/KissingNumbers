@@ -1,0 +1,13 @@
+{
+  "pass_": true,
+  "new_classes": 25,
+  "gain": 4416,
+  "modified": 1,
+  "pair_checks": 265550,
+  "totals": {
+    "61": 88979562,
+    "62": 122543436
+  },
+  "source_family_sha256": "d9f5744e5c92745ab6f5cc8bb144f0bd7862dfc4c69a3371c2759b408a24e598",
+  "scope": "Exact new subcodes and affected pairs; inherits independently replayed existing family and transfer geometry"
+}

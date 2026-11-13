@@ -573,3 +573,20 @@ for _d in (68, 69):
 # Exact Leech–Sloane normal modules, independently checked 13 November 2026.
 STATUS[30] = ('heads', '1356-point Leech-Sloane section with partial fibers; 1056 insertions and 964 deletions; complete exact geometry and independent integer reconstruction (dim30-leech-sloane-section/verify.py)')
 STATUS[31] = ('heads', '2559-point subset of an oriented 2564-point Leech-Sloane module; 2219 insertions and 2078 deletions; complete exact geometry and independent integer reconstruction (dim31-leech-sloane-module/verify.py)')
+
+# Joint design continuation, 13 November 2026.
+STATUS[31] = ('heads', 'joint exact-cover design with exterior deletion optimization; 1004 insertions and 1003 deletions; full exact geometry and direct integer exchange (dim31-joint-design/verify.py)')
+
+STATUS[31] = ('heads', 'annealed E8 orientation and full exterior deletion pricing; 2218 additions and 2052 removals; exact complete geometry (dim31-annealed-design/verify.py)')
+
+STATUS[61] = ('codes', 'affine sign-subcode reconstruction with exact affected geometry and independent replay (dim61-62-66-affine-reconstruction/verify.py)')
+
+STATUS[62] = ('codes', 'affine sign-subcode reconstruction with exact affected geometry and independent replay (dim61-62-66-affine-reconstruction/verify.py)')
+
+STATUS[63] = ('codes', 'affine sign-subcode reconstruction with exact affected geometry and independent replay (dim63-65-affine-reconstruction/verify.py)')
+
+STATUS[64] = ('codes', 'affine sign-subcode reconstruction with exact affected geometry and independent replay (dim63-65-affine-reconstruction/verify.py)')
+
+STATUS[65] = ('codes', 'affine sign-subcode reconstruction with exact affected geometry and independent replay (dim63-65-affine-reconstruction/verify.py)')
+
+STATUS[66] = ('codes', 'affine sign-subcode reconstruction with exact affected geometry and independent replay (dim61-62-66-affine-reconstruction/verify.py)')

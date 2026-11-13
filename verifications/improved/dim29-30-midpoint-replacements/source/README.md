@@ -13,7 +13,7 @@ its current 241,079 entry in dimension 31.
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 29 | 210,495 | **216,568** | **6,073** | — | 226,520 | 231,638 | 231,697 | 231,776 |
 | 30 | 222,073 | **224,280** | **2,207** | — | 238,808 | 247,960 | 247,972 | 248,084 |
-| 31 | 241,079 | No improvement in this investigation | — | 241,742 | 246,638 | 251,110 | 251,188 | 251,395 |
+| 31 | 241,079 | No improvement in this investigation | — | 241,742 | 246,638 | 251,110 | 251,188 | 251,420 |
 
 The final certificates are `certificate29_216568.npz` and
 `certificate30_224280.npz` in `certificates/`. Earlier successful certificates

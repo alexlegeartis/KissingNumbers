@@ -4,15 +4,15 @@
 code constructions. The preceding values are the repository certificates at
 commit `d595c660a8672e0ee436935b74790dadb5d9a838`.
 
-| Dimension | Preceding bound | New bound | Gain |
-|---:|---:|---:|---:|
-| 61 | 88,260,394 | **88,975,146** | 714,752 |
-| 62 | 121,824,268 | **122,539,020** | 714,752 |
-| 63 | 184,286,468 | **184,393,988** | 107,520 |
-| 64 | 335,496,064 | **335,711,104** | 215,040 |
-| 65 | 335,564,290 | **335,779,330** | 215,040 |
-| 66 | 341,994,884 | **342,271,364** | 276,480 |
-| 67 | 355,090,822 | **355,095,446** | 4,624 |
+| Dimension | Preceding bound | New bound | Gain | Current repository bound |
+|---:|---:|---:|---:|---:|
+| 61 | 88,260,394 | **88,975,146** | 714,752 | 88,979,562 |
+| 62 | 121,824,268 | **122,539,020** | 714,752 | 122,543,436 |
+| 63 | 184,286,468 | **184,393,988** | 107,520 | 184,415,700 |
+| 64 | 335,496,064 | **335,711,104** | 215,040 | 335,749,696 |
+| 65 | 335,564,290 | **335,779,330** | 215,040 | 335,817,922 |
+| 66 | 341,994,884 | **342,271,364** | 276,480 | 342,291,652 |
+| 67 | 355,090,822 | **355,095,446** | 4,624 | 355,095,446 |
 
 The finite construction, its size and every relevant interaction are checked
 exactly. The search is not an optimality proof. Dated literature comparisons
@@ -259,3 +259,5 @@ Discovery programs and finite unsuccessful searches are archived under
 [`research/dim32plus_continue_20261113/codes`](../../../research/dim32plus_continue_20261113/codes/).
 The proof uses the explicit data and exact checks above, not an optimization
 solver's status or a proposed search optimum.
+
+**Retained construction:** the 61–66D values above are historical checkpoints, superseded by the affine-reconstruction packages; the parent geometry remains part of their proof. The 67D value is unchanged.
