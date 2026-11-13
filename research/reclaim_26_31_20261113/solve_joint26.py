@@ -150,6 +150,22 @@ def main():
     required=np.unique(np.concatenate([blockers[int(i)] for i in chosen])) if len(chosen) else np.empty(0,np.int64)
     if not set(map(int,required)).issubset(set(map(int,deleted))): raise RuntimeError("assembled exchange omits blockers")
     if len(chosen)>1 and np.any(np.triu(C[chosen]@C[chosen].T,1)>16): raise RuntimeError("candidate conflict")
+    # Materialize and independently replay every changed pair. Unchanged
+    # source-source pairs inherit the frozen source certificate.
+    keep=np.ones(len(A),dtype=bool); keep[deleted]=False
+    FA=np.vstack([A[keep],C[chosen]])
+    FB=np.vstack([B[keep],np.zeros((len(chosen),A.shape[1]),dtype=np.int64)])
+    if len(FA)!=len(A)+len(chosen)-len(deleted): raise RuntimeError("bad exchange cardinality")
+    if not np.all((FA*FA+3*FB*FB).sum(1)==32): raise RuntimeError("proposal norm failure")
+    for k,x in enumerate(C[chosen]):
+        da=np.zeros(len(FA),np.int64); db=np.zeros(len(FA),np.int64)
+        for j in np.flatnonzero(x):
+            da += int(x[j])*FA[:,j]; db += int(x[j])*FB[:,j]
+        # The new point itself has product 32; exclude its own appended row.
+        da[len(A)-len(deleted)+k]=-32; db[len(A)-len(deleted)+k]=0
+        if np.any(above16(da,db)): raise RuntimeError("changed-pair replay failed")
+    np.savez_compressed(args.out/'proposal_coordinates.npz',rational=FA,radical=FB,
+        radicand=3,squared_norm=32,inner_product_limit=16)
     report=dict(source_sha256=hashlib.sha256(args.source.read_bytes()).hexdigest(),
         pool_sha256=hashlib.sha256(args.pool.read_bytes()).hexdigest(),source_count=len(A),
         candidates=len(C),candidate_conflicts=len(ei),components=len(comps),
