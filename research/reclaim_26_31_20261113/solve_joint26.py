@@ -156,7 +156,7 @@ def main():
     FA=np.vstack([A[keep],C[chosen]])
     FB=np.vstack([B[keep],np.zeros((len(chosen),A.shape[1]),dtype=np.int64)])
     if len(FA)!=len(A)+len(chosen)-len(deleted): raise RuntimeError("bad exchange cardinality")
-    if not np.all((FA*FA+3*FB*FB).sum(1)==32): raise RuntimeError("proposal norm failure")
+    if not (np.all((FA*FA+3*FB*FB).sum(1)==32) and np.all((FA*FB).sum(1)==0)):\n        raise RuntimeError("proposal exact Q(sqrt(3)) norm failure")
     for k,x in enumerate(C[chosen]):
         da=np.zeros(len(FA),np.int64); db=np.zeros(len(FA),np.int64)
         for j in np.flatnonzero(x):
