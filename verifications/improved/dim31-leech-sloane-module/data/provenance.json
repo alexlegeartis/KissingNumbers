@@ -1,0 +1,25 @@
+{
+  "dimension": 31,
+  "target_count": 251395,
+  "coordinate_file": "coordinates31_251395.npz",
+  "source_count": 251254,
+  "source_commit": "2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6",
+  "source_path": "25D-31D/new_bounds_20261111/D31_251254_coordinates.npz",
+  "source_file_sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+  "source_canonical_norm32_sha256": "035cdd14f3afb73a89c6b8b5597bd19abad73656fc546763b35491c130c1f467",
+  "added_count": 2219,
+  "removed_count": 2078,
+  "normal_octad": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    10,
+    11,
+    23
+  ],
+  "full_module_retained": false,
+  "source_attribution": "PackingStar (CDM1619/PackingStar), November11release",
+  "construction_attribution": "Leech\u2013Sloane 2564-point recipe reassembled with an E8 equator; no new15D kissing bound claimed"
+}

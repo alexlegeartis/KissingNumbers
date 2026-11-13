@@ -1,0 +1,162 @@
+{
+  "source": "../PackingStar/25D-31D/new_bounds_20261111/D31_251254_coordinates.npz",
+  "source_sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+  "baseline": 251254,
+  "final": 251254,
+  "cutoff": 32,
+  "records": [
+    {
+      "gain": 0,
+      "candidates": 12841,
+      "removed": 0,
+      "added": 0,
+      "trial": 0,
+      "root": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "total": 251254,
+      "seconds": 13.675438646999737
+    },
+    {
+      "gain": 0,
+      "candidates": 12600,
+      "removed": 0,
+      "added": 0,
+      "trial": 1,
+      "root": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "total": 251254,
+      "seconds": 26.881185122999796
+    },
+    {
+      "gain": 0,
+      "candidates": 12355,
+      "removed": 0,
+      "added": 0,
+      "trial": 2,
+      "root": [
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "total": 251254,
+      "seconds": 39.99122363100014
+    },
+    {
+      "gain": 0,
+      "candidates": 8488,
+      "removed": 0,
+      "added": 0,
+      "trial": 3,
+      "root": [
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "total": 251254,
+      "seconds": 51.5626109169998
+    },
+    {
+      "gain": 0,
+      "candidates": 8889,
+      "removed": 0,
+      "added": 0,
+      "trial": 4,
+      "root": [
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "total": 251254,
+      "seconds": 63.39853956399975
+    },
+    {
+      "gain": 0,
+      "candidates": 13333,
+      "removed": 0,
+      "added": 0,
+      "trial": 5,
+      "root": [
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "total": 251254,
+      "seconds": 77.69461606499999
+    },
+    {
+      "gain": 0,
+      "candidates": 11207,
+      "removed": 0,
+      "added": 0,
+      "trial": 6,
+      "root": [
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "total": 251254,
+      "seconds": 90.58863720599993
+    },
+    {
+      "gain": 0,
+      "candidates": 10015,
+      "removed": 0,
+      "added": 0,
+      "trial": 7,
+      "root": [
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "total": 251254,
+      "seconds": 102.81169276599985
+    }
+  ],
+  "scope": "Finite whole-isometry unions; full output replay required for any claimed bound."
+}

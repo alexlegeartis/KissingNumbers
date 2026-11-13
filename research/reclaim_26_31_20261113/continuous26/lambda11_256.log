@@ -1,0 +1,13 @@
+{"trial": 0, "module438": true, "old_module": 422, "external_blockers": 12480, "whole_replacement_gain": -12464, "exact_union_gain": 0, "seconds": 0.4604620709997107}
+{"trial": 20, "module438": true, "old_module": 422, "external_blockers": 12608, "whole_replacement_gain": -12592, "exact_union_gain": 0, "seconds": 1.3480830680000508}
+{"trial": 40, "module438": true, "old_module": 422, "external_blockers": 11456, "whole_replacement_gain": -11440, "exact_union_gain": 0, "seconds": 2.2807817349998913}
+{"trial": 60, "module438": true, "old_module": 422, "external_blockers": 12480, "whole_replacement_gain": -12464, "exact_union_gain": 0, "seconds": 3.225846554999862}
+{"trial": 80, "module438": true, "old_module": 422, "external_blockers": 11328, "whole_replacement_gain": -11312, "exact_union_gain": 0, "seconds": 4.112488707000011}
+{"trial": 100, "module438": true, "old_module": 422, "external_blockers": 12736, "whole_replacement_gain": -12720, "exact_union_gain": 0, "seconds": 5.0377134450000085}
+{"trial": 120, "module438": true, "old_module": 422, "external_blockers": 12608, "whole_replacement_gain": -12592, "exact_union_gain": 0, "seconds": 5.9155554280000615}
+{"trial": 140, "module438": true, "old_module": 422, "external_blockers": 12352, "whole_replacement_gain": -12336, "exact_union_gain": 0, "seconds": 6.844987625999693}
+{"trial": 160, "module438": true, "old_module": 422, "external_blockers": 11712, "whole_replacement_gain": -11696, "exact_union_gain": 0, "seconds": 7.7648174779997134}
+{"trial": 180, "module438": true, "old_module": 422, "external_blockers": 12608, "whole_replacement_gain": -12592, "exact_union_gain": 0, "seconds": 8.640454514999874}
+{"trial": 200, "module438": true, "old_module": 422, "external_blockers": 12352, "whole_replacement_gain": -12336, "exact_union_gain": 0, "seconds": 9.652940430999934}
+{"trial": 220, "module438": true, "old_module": 422, "external_blockers": 12736, "whole_replacement_gain": -12720, "exact_union_gain": 0, "seconds": 10.517838186000063}
+{"trial": 240, "module438": true, "old_module": 422, "external_blockers": 11328, "whole_replacement_gain": -11312, "exact_union_gain": 0, "seconds": 11.443044976999772}

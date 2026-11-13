@@ -1,5 +1,7 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
+**13 November 2026 — 30D and 31D reclaimed against PackingStar.** Exact Leech–Sloane module constructions give **248,084 in 30D** and **251,395 in 31D**, respectively **92 and 141 above** the November 11 release, and 112 and 195 above the preceding repository certificates. The [30D section proof](verifications/improved/dim30-leech-sloane-section/) and [31D module proof](verifications/improved/dim31-leech-sloane-module/) check every final point pair, independently reconstruct the modules and verify every inserted-point interaction with integer arithmetic. The earlier [248,020-point Barnes–Wall certificate](verifications/improved/dim30-bw14-module/) is retained. The [fresh comparison](common/source_review_20261113_26_31.json) places the repository ahead in 28–31D; 26D and 27D remain open. The [research campaign and next attack](research/reclaim_26_31_20261113/) record the construction, restricted exclusions and remaining models.
+
 **13 November 2026 — continuation in 36–37D and 61–69D.** An actual D7 normal system strengthens the Gamma72 bounds to **471,886,208 in 68D** and **746,325,051 in 69D**, gains of **1,920** and **2,802,747** over the preceding certificates. [Two independent exact proofs](verifications/improved/dim68-69-gamma72-extended-moments/) enumerate all 162,969 possible profiles, verify the rational population duals and geometry, and include two additional 69D poles.
 
 [Larger compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) also strengthen the code constructions in **61–67D**, including **88,975,146 in 61D**, **122,539,020 in 62D** and **355,095,446 in 67D**. In 67D, 49 smaller affine sign classes add 4,624 points; an independent direct sign-pair replay checks the changed geometry. A [Coxeter–Todd orbit exchange](verifications/improved/dim36-37-orbit-exchange/) gives **501,822 in 36D** and **505,638 in 37D**, adding nine points to each preceding certificate. The latest exact values and proof routes appear in the table below.
@@ -8,7 +10,7 @@
 
 The same campaign also improves all twelve bounds in **49–60D** using asymmetric signed P48 classes. The gains range from **24** to **3,946** points; the new 60D bound is **58,631,571**. These are smaller advances, with their own [exact finite verification package](verifications/improved/dim49-60-p48-signed-refill/).
 
-**12 November 2026 — 28D and 29D exceed the November 11 PackingStar release.** Complete exact certificates give **222,120** and **231,776**, gains of **16** and **2** over that release. These are modest improvements; the current 26D, 27D, 30D and 31D repository certificates remain below PackingStar. See the [proof package](verifications/improved/dim28-29-november-sextets/), [dated source review](common/source_review_20261112_26_31.json) and [research campaign](research/reclaim_26_31_20261112/).
+**12 November 2026 — 28D and 29D exceed the November 11 PackingStar release.** Complete exact certificates give **222,120** and **231,776**, gains of **16** and **2** over that release. These are modest improvements; at that date the 26D, 27D, 30D and 31D repository certificates remained below PackingStar. The November 13 modules above subsequently reclaimed 30D and 31D. See the [proof package](verifications/improved/dim28-29-november-sextets/), [dated source review](common/source_review_20261112_26_31.json) and [research campaign](research/reclaim_26_31_20261112/).
 
 The 10 November Weyl-averaged Gamma72 affine unions gave 471,884,288 in 68D (+517,632) and 689,452,922 in 69D (+10,776 over the preceding affine certificates). Integral Gram-preserving normal orientations, exact moment duals and an averaging/integer-ceiling argument certify existence; no ambient shell symmetry is assumed. Prior packages, paper and workflows are unchanged.
 
@@ -106,10 +108,10 @@ That baseline can precede an intervening record by another author. For example,
 the 25D row compares 197,585 with Ma et al.'s historical 197,056, a gain of
 529 points (+0.268%). The advance over Takhanov-Yun's subsequent 197,583-point
 construction is **two points**, and the gain over this repository's preceding
-197,584-point certificate is **one point**. In 31D the current 251,200-point construction gains
-**12,850 points** over the historical 238,350-point comparison. Its advance
-over PackingStar's October 28 release of 251,169 is **31 points**, and its
-increase over the preceding repository value 251,196 is **4 points**. The
+197,584-point certificate is **one point**. In 31D the current 251,395-point construction gains
+**13,045 points** over the historical 238,350-point comparison. Its advance
+over PackingStar's November 11 release of 251,254 is **141 points**, and its
+increase over the preceding published repository value 251,200 is **195 points**. The
 [25D](verifications/improved/dim25-critical-cluster/),
 [historical 31D](verifications/improved/dim31-dual-centres/) and
 [retained 26–31D residual completions](verifications/improved/dim26-31-residual-completions/) packages
@@ -136,10 +138,10 @@ last retrieved **25 October 2026**, with all 48 rows captured in
 failed, so this update retains that snapshot. Fresh checks of the relevant
 authors' repositories and the dimension-40 paper are recorded in
 [the 26 October source review](common/source_review_20261026.json).
-All 70 constructions exceed their recorded historical comparisons. Of these, 66 remain best in
-the reviewed sources. The November 12 review records PackingStar supersessions in
-26D, 27D, 30D and 31D; our November certificates exceed its November 11 release
-in 28D and 29D. See the [current comparison](common/source_review_20261112_26_31.json)
+All 70 constructions exceed their recorded historical comparisons. Of these, 68 remain best in
+the reviewed sources. The November 13 review records PackingStar supersessions in
+26D and 27D; our November certificates exceed its November 11 release
+in 28D, 29D, 30D and 31D. See the [current comparison](common/source_review_20261113_26_31.json)
 and the retained [October 29 review](common/source_review_20261029_27_31.json).
 Higher-dimensional status uses the separate sources below.
 The phase continuation separately records its [comparison scope](common/source_review_20261028_coxeter_todd.json).
@@ -153,8 +155,8 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 825** | **209 862** | +4.086% | +0.017634% | 2026-10-29 to 2026-11-10 | [Partial signed-orbit exchanges](verifications/improved/dim27-31-algebraic-completion/) | [PackingStar, joint Leech layers](https://github.com/CDM1619/PackingStar/tree/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111) |
 | 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **222 120** | **SOTA** | +8.260% | — | reclaimed 2026-10-29 and 2026-11-12 | [November sextet unions](verifications/improved/dim28-29-november-sextets/) | — |
 | 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **231 776** | **SOTA** | +10.635% | — | reclaimed 2026-10-29 and 2026-11-12 | [November sextet unions](verifications/improved/dim28-29-november-sextets/) | — |
-| 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **247 972** | **247 992** | +12.490% | +0.008065% | 2026-10-29 to 2026-11-10 | [Joint refills and reflected unions](verifications/improved/dim27-31-joint-refills/) | [PackingStar, joint Leech layers](https://github.com/CDM1619/PackingStar/tree/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111) |
-| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **251 200** | **251 254** | +5.391% | +0.021497% | 2026-10-29 to 2026-11-10 | [Latitude-contact cube exchange](verifications/improved/dim31-latitude-contact-exchange/) | [PackingStar, joint Leech layers](https://github.com/CDM1619/PackingStar/tree/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111) |
+| 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v5) | **248 084** | **SOTA** | +12.540% | — | reclaimed 2026-11-13 | [Leech–Sloane section with partial fibers](verifications/improved/dim30-leech-sloane-section/) | — |
+| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v5) | **251 395** | **SOTA** | +5.473% | — | reclaimed 2026-11-13 | [Leech–Sloane module and partial union](verifications/improved/dim31-leech-sloane-module/) | — |
 | 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32/tree/f367a9c5a051c0d6821ce71324b9dfa1ead76c2e) | **352 992** | **SOTA** | +0.190736% | — | since 2026-11-07 | [Non-antipodal signed octad continuation](verifications/improved/dim32-35-signed-layers/nonantipodal32/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal32/evidence/public_comparison.json) |
 | 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 408** | **SOTA** | +0.045376% | — | since 2026-11-07 | [Non-antipodal octads and individual root-star trades](verifications/improved/dim32-35-signed-layers/nonantipodal33/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal33/evidence/public_comparison.json) |
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 992** | **SOTA** | +0.00306921% | — | since 2026-11-06 | [Rational heavy-head rotation](verifications/improved/dim32-35-signed-layers/rotated34/) | — |
@@ -268,7 +270,7 @@ improvement is claimed in 47D or 48D.
 <details>
 <summary>Detailed construction notes</summary>
 
-- **27–31D (current):** The current repository values are **209 825, 222 120, 231 776, 247 972, 251 200**, respectively. The [November sextet unions](verifications/improved/dim28-29-november-sextets/) give the 28D and 29D bounds with complete exact geometry and independent changed-pair checks. The [31D latitude-contact exchange](verifications/improved/dim31-latitude-contact-exchange/) replaces four latitude points with eight midpoint points, adding four to the preceding bound. Two independent complete exact proofs cover every pair, including one integer-only enumeration without antipodal compression. The earlier [algebraic completion](verifications/improved/dim27-31-algebraic-completion/) supplies 27D and the retained 251,196-point predecessor; the [29 October joint refills](verifications/improved/dim27-31-joint-refills/) supply 30D.
+- **27–31D (current):** The current repository values are **209 825, 222 120, 231 776, 248 084, 251 395**, respectively. The [November sextet unions](verifications/improved/dim28-29-november-sextets/) give the 28D and 29D bounds. The [30D Leech–Sloane section](verifications/improved/dim30-leech-sloane-section/) replaces 932 heads by 1,056 and deletes 32 exterior blockers. The [31D Leech–Sloane module](verifications/improved/dim31-leech-sloane-module/) uses an exact 2,564-point module and retains a 2,559-point subset, giving 2,219 additions and 2,078 deletions. Both have complete exact final geometry and independent direct-integer reconstruction and changed-pair proofs. The earlier [algebraic completion](verifications/improved/dim27-31-algebraic-completion/) supplies the current 27D bound.
 
 - **18D:** the base of Cohn–Li's hexagon had a free combinatorial parameter nobody had varied: which coset of RM(1,4) the three six-set families lie in.  Three bent cosets with pairwise-bent sums that do not sum to zero give the twelve tier-B slots three different 512-word spaces instead of one, and tier B rises from 256 to 960
 
@@ -527,7 +529,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 48 packages, 70 dimensions
+### `verifications/improved/` — 51 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -543,12 +545,15 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | [`dim68-69-gamma72-extended-moments`](verifications/improved/dim68-69-gamma72-extended-moments/) | 68, 69 | 471,886,208 and 746,325,051; actual D7 extension, exact population duals, independent direct-profile proof and two 69D poles |
 | [`dim69-gamma72-head-compression`](verifications/improved/dim69-gamma72-head-compression/) | 69 | retained 743,522,304-point construction; ten slices with one reconstructed coordinate; two independent exact moment and geometry proofs |
 | [`dim49-60-p48-signed-refill`](verifications/improved/dim49-60-p48-signed-refill/) | 49–60 | signed P48 class exchanges; twelve improvements with complete finite class, ownership and tail verification |
+| [`dim30-leech-sloane-section`](verifications/improved/dim30-leech-sloane-section/) | 30 | current 248,084; partial-fiber 1,356-point section, complete exact geometry and independent integer reconstruction |
+| [`dim31-leech-sloane-module`](verifications/improved/dim31-leech-sloane-module/) | 31 | current 251,395; 2,559-point module subset, complete exact geometry and independent integer reconstruction |
+| [`dim30-bw14-module`](verifications/improved/dim30-bw14-module/) | 30 | retained 248,020 points; exact 932-for-960 Barnes–Wall module replacement, full geometry and independent integer checks |
 | [`dim28-29-november-sextets`](verifications/improved/dim28-29-november-sextets/) | 28, 29 | current 222,120 and 231,776; exact finite geometry and independent direct-integer changes over the November 11 PackingStar files |
-| [`dim31-latitude-contact-exchange`](verifications/improved/dim31-latitude-contact-exchange/) | 31 | current 251,200-point four-for-eight exchange; two complete exact proofs, including independent integer-only enumeration |
+| [`dim31-latitude-contact-exchange`](verifications/improved/dim31-latitude-contact-exchange/) | 31 | retained 251,200-point four-for-eight exchange; two complete exact proofs, including independent integer-only enumeration |
 | [`dim27-31-joint-refills`](verifications/improved/dim27-31-joint-refills/) | 27–31 | joint refills and reflected unions above the October 28 PackingStar release; complete exact proofs |
-| [`dim26-30-asymmetric-exchanges`](verifications/improved/dim26-30-asymmetric-exchanges/) | 26, 28–30 | current asymmetric integer configurations; complete independent all-pairs verification |
-| [`dim27-quadratic-normal-module`](verifications/improved/dim27-quadratic-normal-module/) | 27 | current 209 600-point quadratic code; full independent all-pairs verification |
-| [`dim31-normal-module-exchange`](verifications/improved/dim31-normal-module-exchange/) | 31 | current 251 110-point integer code; full independent all-pairs verification |
+| [`dim26-30-asymmetric-exchanges`](verifications/improved/dim26-30-asymmetric-exchanges/) | 26, 28–30 | current 26D and retained 28–30D asymmetric integer configurations; complete independent all-pairs verification |
+| [`dim27-quadratic-normal-module`](verifications/improved/dim27-quadratic-normal-module/) | 27 | retained 209 600-point quadratic code; full independent all-pairs verification |
+| [`dim31-normal-module-exchange`](verifications/improved/dim31-normal-module-exchange/) | 31 | retained 251 110-point integer code; full independent all-pairs verification |
 | [`dim26-31-residual-completions`](verifications/improved/dim26-31-residual-completions/) | 26–31 | retained residual-head completions and exact exceptional pure tails; independent full replays |
 | [`dim25-critical-cluster`](verifications/improved/dim25-critical-cluster/) | 25 | critical-cluster replacement; 926 circles and 247 rational points; exact conic contacts and complete independent proof |
 | [`dim25-point-split`](verifications/improved/dim25-point-split/) | 25 | one-for-two point splitting; 971 circles and 103 rational points; complete independent exact proof |
@@ -596,7 +601,7 @@ the lower bound in its dimensions** — who held it, when, and by what construct
 
 ## Record status and retained results
 
-**12 November comparison.** PackingStar’s [November 11 release](https://github.com/CDM1619/PackingStar/tree/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111) gives 201,180; 209,862; 222,104; 231,774; 247,992; and 251,254 in 26–31D. The [new exact 28D/29D certificates](verifications/improved/dim28-29-november-sextets/) regain those two dimensions at 222,120 and 231,776. The other four repository values remain superseded. The comparison records source-reported external bounds; our complete coordinate proofs establish the new configurations independently.
+**13 November comparison.** PackingStar’s [November 11 release](https://github.com/CDM1619/PackingStar/tree/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111) gives 201,180; 209,862; 222,104; 231,774; 247,992; and 251,254 in 26–31D. The [new exact 28D/29D certificates](verifications/improved/dim28-29-november-sextets/) regain those two dimensions at 222,120 and 231,776. The new [30D section](verifications/improved/dim30-leech-sloane-section/) and [31D module](verifications/improved/dim31-leech-sloane-module/) give 248,084 and 251,395, gains of 92 and 141 over that release. The repository values in 26D and 27D remain superseded. The comparison records source-reported external bounds; our complete coordinate proofs establish the new configurations independently.
 
 **29 October comparison history.** PackingStar’s [October 28 release](https://github.com/CDM1619/PackingStar/tree/477df34cf2a09bb9476b735a685b538a82da8c55/25D-31D/new_bounds_20261028) gives 209 760, 221 864, 231 676, 247 967 and 251 169 in 27–31D. Those certificates regained 27–31D against that release. The then-current 28D certificate was 124 points above it. The [source review](common/source_review_20261029_27_31.json) pins the comparison and verification scope.
 
@@ -637,8 +642,8 @@ comparison is given separately by its source.
 |---|---:|---:|---|---:|
 | 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) | 197 586 |
 | 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 231 776 |
-| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 247 972 |
-| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 200 |
+| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 248 084 |
+| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 395 |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 638 |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 852 |
 
@@ -827,10 +832,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 112 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 115 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 131 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 134 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

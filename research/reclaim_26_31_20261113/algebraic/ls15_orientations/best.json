@@ -1,0 +1,74 @@
+{
+  "trial": 507,
+  "gain": 141,
+  "new_points": 2224,
+  "edges": 45065,
+  "external_cost": 142,
+  "whole_module_gain": 140,
+  "orientation": {
+    "core_permutation": [
+      1,
+      6,
+      0,
+      2,
+      5,
+      7,
+      4,
+      3
+    ],
+    "core_signs": [
+      -1,
+      1,
+      1,
+      -1,
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "core_root_reflections": [
+      [
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "tail_permutation": [
+      2,
+      6,
+      1,
+      0,
+      4,
+      3,
+      5
+    ],
+    "tail_signs": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1,
+      -1
+    ]
+  },
+  "added": 2219,
+  "removed": 2078,
+  "changed_pair_maximum": 16,
+  "exact_changed_pairs": "PASS"
+}

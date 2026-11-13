@@ -1,0 +1,21 @@
+{
+  "source": "../PackingStar/25D-31D/new_bounds_20261111/D31_251254_coordinates.npz",
+  "source_sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+  "module": "research/reclaim_26_31_20261113/algebraic/ls15_exact/module.npz",
+  "module_sha256": "872ddef50069fb569f7ae763ed8080025f8dc1f7fd6551a01b5c43cd3161e584",
+  "baseline": 251254,
+  "points": 251358,
+  "gain": 104,
+  "module_points": 2564,
+  "removed": 2460,
+  "removed_module": 2282,
+  "removed_external": 178,
+  "old_module": 2282,
+  "flipped_core_coordinate_7": false,
+  "maximum_new_old_product": 16,
+  "independent_direct_int64_pairs": 637907816,
+  "new_new_unordered_pairs": 3285766,
+  "changed_geometry": "PASS",
+  "seconds": 22.426550492000388,
+  "scope": "Complete changed-pair proof. Unchanged source pairs inherit the pinned source until an independent full replay."
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "omitted": 0,
+    "sign": -1,
+    "external_cost": 162,
+    "full_module_gain": -104,
+    "union_gain": 0
+  },
+  {
+    "omitted": 0,
+    "sign": 1,
+    "external_cost": 162,
+    "full_module_gain": -104,
+    "union_gain": 0
+  },
+  {
+    "omitted": 1,
+    "sign": -1,
+    "external_cost": 170,
+    "full_module_gain": -112,
+    "union_gain": 0
+  },
+  {
+    "omitted": 1,
+    "sign": 1,
+    "external_cost": 170,
+    "full_module_gain": -112,
+    "union_gain": 0
+  },
+  {
+    "omitted": 2,
+    "sign": -1,
+    "external_cost": 156,
+    "full_module_gain": -98,
+    "union_gain": 0
+  },
+  {
+    "omitted": 2,
+    "sign": 1,
+    "external_cost": 156,
+    "full_module_gain": -98,
+    "union_gain": 0
+  },
+  {
+    "omitted": 3,
+    "sign": -1,
+    "external_cost": 156,
+    "full_module_gain": -98,
+    "union_gain": 0
+  },
+  {
+    "omitted": 3,
+    "sign": 1,
+    "external_cost": 156,
+    "full_module_gain": -98,
+    "union_gain": 0
+  },
+  {
+    "omitted": 4,
+    "sign": -1,
+    "external_cost": 178,
+    "full_module_gain": -120,
+    "union_gain": 0
+  },
+  {
+    "omitted": 4,
+    "sign": 1,
+    "external_cost": 178,
+    "full_module_gain": -120,
+    "union_gain": 0
+  },
+  {
+    "omitted": 5,
+    "sign": -1,
+    "external_cost": 162,
+    "full_module_gain": -104,
+    "union_gain": 0
+  },
+  {
+    "omitted": 5,
+    "sign": 1,
+    "external_cost": 162,
+    "full_module_gain": -104,
+    "union_gain": 0
+  },
+  {
+    "omitted": 6,
+    "sign": -1,
+    "external_cost": 162,
+    "full_module_gain": -104,
+    "union_gain": 0
+  },
+  {
+    "omitted": 6,
+    "sign": 1,
+    "external_cost": 162,
+    "full_module_gain": -104,
+    "union_gain": 0
+  }
+]

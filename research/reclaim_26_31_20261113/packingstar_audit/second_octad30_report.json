@@ -1,0 +1,67 @@
+{
+  "source": "/tmp/bw14_first/proposal30_248020.npz",
+  "source_sha256": "edbef290f882ba5c972e5a0c27ab57cfed47c5d0d55e816b8af69bcd06abeb20",
+  "source_count": 248020,
+  "old_module": 588,
+  "external_potential_blockers": 8256,
+  "module_head_count": 960,
+  "best_external_cost": 4448,
+  "nominal_full_module_gain": 672,
+  "normal_octad": [
+    3,
+    7,
+    8,
+    9,
+    17,
+    18,
+    20,
+    21
+  ],
+  "best_union_gain": 0,
+  "iterations": 5000,
+  "seconds": 31.017548048000208,
+  "seed": 20261113,
+  "records": [
+    {
+      "iteration": 0,
+      "external_deletions": 5472,
+      "whole_module_gain": -4800,
+      "union_gain": 0,
+      "new_points": 960,
+      "cross_conflicts": 26548
+    },
+    {
+      "iteration": 31,
+      "external_deletions": 4960,
+      "whole_module_gain": -4288,
+      "union_gain": 0,
+      "new_points": 960,
+      "cross_conflicts": 21748
+    },
+    {
+      "iteration": 58,
+      "external_deletions": 4896,
+      "whole_module_gain": -4224,
+      "union_gain": 0,
+      "new_points": 960,
+      "cross_conflicts": 21812
+    },
+    {
+      "iteration": 65,
+      "external_deletions": 4800,
+      "whole_module_gain": -4128,
+      "union_gain": 0,
+      "new_points": 960,
+      "cross_conflicts": 25520
+    },
+    {
+      "iteration": 108,
+      "external_deletions": 4448,
+      "whole_module_gain": -3776,
+      "union_gain": 0,
+      "new_points": 896,
+      "cross_conflicts": 19280
+    }
+  ],
+  "scope": "Bounded E8-Weyl/signed-tail BW14 orientation search; not an exhaustive exclusion."
+}

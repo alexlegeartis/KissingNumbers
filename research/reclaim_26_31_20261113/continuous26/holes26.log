@@ -1,0 +1,4 @@
+/workspace/scratch/624f4a87f43c/KissingNumbers/research/reclaim_26_31_20261113/continuous26/polytope_holes.py:31: OptimizeWarning: Unrecognized options detected: {'threads': 2}. These will be passed to HiGHS verbatim.
+  r=linprog(-c,A_ub=A,b_ub=np.full(len(A),16.),bounds=[(None,None)]*d,
+{"start": 0, "norm2": 19.84, "steps": 2, "seconds": 0.028747290999945108, "best": true}
+{"start": 1, "norm2": 24.0, "steps": 2, "seconds": 0.05032696999978725, "best": true}

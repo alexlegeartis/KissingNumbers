@@ -552,6 +552,9 @@ for _d in (68, 69):
 for _d in (28, 29):
     STATUS[_d] = ('heads', 'corrected sextet unions over the November 11 release; full exact geometry and direct-integer changed pairs; new radii and coordinated changes remain open (dim28-29-november-sextets/verify.py)')
 
+# Oriented Barnes-Wall module, independently checked 13 November 2026.
+STATUS[30] = ('heads', 'oriented Barnes-Wall 14-dimensional module replaces 932 heads with 960 and preserves every external point; complete exact geometry and independent integer reconstruction; partial fibers and new geometries remain open (dim30-bw14-module/verify.py)')
+
 # Ten-slice normal-coordinate compression, independently checked 13 November 2026.
 STATUS[69] = ('heads', 'ten Gamma72 slices compressed from four normal coordinates to one rational-height coordinate; two exact moment-dual and geometry proofs, with published parent lattice inputs (dim69-gamma72-head-compression/verify.py)')
 
@@ -566,3 +569,7 @@ for _d in range(61, 68):
     STATUS[_d] = ('codes', 'larger compatible support and sign families in shortened, compressed and extended code layers; exact finite replay; broader support and parity choices remain open (dim61-67-compatible-sign-families/verify.py)')
 for _d in (68, 69):
     STATUS[_d] = ('heads', 'actual D7 normals strengthen D4 slice populations by nested orientation averaging and exact moment duals; two independent profile and geometry proofs, with published Gamma72 premises; other normal systems and geometries remain open (dim68-69-gamma72-extended-moments/verify.py)')
+
+# Exact Leech–Sloane normal modules, independently checked 13 November 2026.
+STATUS[30] = ('heads', '1356-point Leech-Sloane section with partial fibers; 1056 insertions and 964 deletions; complete exact geometry and independent integer reconstruction (dim30-leech-sloane-section/verify.py)')
+STATUS[31] = ('heads', '2559-point subset of an oriented 2564-point Leech-Sloane module; 2219 insertions and 2078 deletions; complete exact geometry and independent integer reconstruction (dim31-leech-sloane-module/verify.py)')

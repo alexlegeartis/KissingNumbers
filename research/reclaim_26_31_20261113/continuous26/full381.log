@@ -1,0 +1,4 @@
+{"trial": 0, "loss": 0.0688372488655419, "violation": 0.10917531840117523, "iterations": 862, "seconds": 17.823328093000327, "best": true}
+{"trial": 1, "loss": 0.06800822328154116, "violation": 0.09995042046443536, "iterations": 730, "seconds": 32.77198922600019, "best": true}
+{"trial": 2, "loss": 0.06780635435897853, "violation": 0.09943867672260998, "iterations": 719, "seconds": 48.6288365270002, "best": true}
+{"trial": 7, "loss": 0.06714604774433454, "violation": 0.09809902023220995, "iterations": 537, "seconds": 113.52576922900016, "best": true}

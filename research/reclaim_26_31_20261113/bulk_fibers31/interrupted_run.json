@@ -1,0 +1,190 @@
+{
+  "status": "interrupted_selection_no_positive_witness",
+  "source_sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+  "source_count": 251254,
+  "exact_rank14_fibers": 4004,
+  "new_integer_missing_axis_points": 8008,
+  "blocker_cutoff": 8,
+  "admitted_points": 3960,
+  "distinct_old_blockers": 520,
+  "blocker_histogram": {
+    "4": 2164,
+    "5": 320,
+    "6": 8,
+    "7": 1212,
+    "8": 256
+  },
+  "tail_groups": [
+    {
+      "tail": [
+        -8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidates": 96
+    },
+    {
+      "tail": [
+        0,
+        -8,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidates": 1278
+    },
+    {
+      "tail": [
+        0,
+        -4,
+        -4,
+        0,
+        4,
+        -4,
+        0
+      ],
+      "candidates": 16
+    },
+    {
+      "tail": [
+        0,
+        0,
+        -8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidates": 352
+    },
+    {
+      "tail": [
+        0,
+        0,
+        0,
+        -8,
+        0,
+        0,
+        0
+      ],
+      "candidates": 96
+    },
+    {
+      "tail": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -8,
+        0
+      ],
+      "candidates": 30
+    },
+    {
+      "tail": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -8
+      ],
+      "candidates": 112
+    },
+    {
+      "tail": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "candidates": 112
+    },
+    {
+      "tail": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0
+      ],
+      "candidates": 30
+    },
+    {
+      "tail": [
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      "candidates": 96
+    },
+    {
+      "tail": [
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidates": 352
+    },
+    {
+      "tail": [
+        0,
+        4,
+        4,
+        0,
+        -4,
+        4,
+        0
+      ],
+      "candidates": 16
+    },
+    {
+      "tail": [
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidates": 1278
+    },
+    {
+      "tail": [
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidates": 96
+    }
+  ],
+  "pool_sha256": "e6f0e5c46a93f527d1d3b4cb10cfb82a0196ee254b6f8aa3df321fbf6bfcd0b9",
+  "selection": "Initial unstrengthened HiGHS model was interrupted after its nominal90-second solver limit did not bound total runtime. No incumbent or exclusion certificate was returned.",
+  "scope": "Exact missing-axis generation and exact saved blocker lists. This report gives no finite-pool optimum or global bound. Strengthened subsequent selection is recorded separately."
+}

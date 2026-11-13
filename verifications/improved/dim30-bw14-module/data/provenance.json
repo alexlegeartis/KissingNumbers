@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-13",
+  "dimension": 30,
+  "source_count": 247992,
+  "previous_repository_count": 247972,
+  "total": 248020,
+  "gain_over_source": 28,
+  "gain_over_previous_repository": 48,
+  "packingstar_commit": "2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6",
+  "source_url": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D30_247992_coordinates.npz",
+  "source_file_sha256": "5e46243e5f3cf4790d56abc4008c9cebeb45bdde2fd3080e44a0546d59cccc5a",
+  "source_canonical_norm32_sha256": "ccafb41964e6e0f2167a108fbadc0d90d323a736a89d2c3f8035ff9fcc8bf03f",
+  "removed": 932,
+  "added": 960,
+  "source_credit": "Retained coordinates are from PackingStar. The new contribution is an explicitly oriented BW14 normal module and complete verification.",
+  "scope": "Strict improvement over the pinned PackingStar release; no exhaustive worldwide-priority or optimality claim."
+}

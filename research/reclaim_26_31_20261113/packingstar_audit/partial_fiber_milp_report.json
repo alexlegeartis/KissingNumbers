@@ -1,0 +1,1182 @@
+{
+  "source_sha256": "edbef290f882ba5c972e5a0c27ab57cfed47c5d0d55e816b8af69bcd06abeb20",
+  "source_count": 248020,
+  "pool_sha256": "70df267e0fd0940b2ca44e22ccac00e57e5fa37feb9e04571478c7c6ba50a71a",
+  "models_completed": 18,
+  "best_gain": 0,
+  "seed": 20261113,
+  "seconds": 125.8855665709998,
+  "records": [
+    {
+      "model": 0,
+      "tail_indices": [
+        1,
+        2,
+        18,
+        19
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          -2,
+          -2,
+          0,
+          -2,
+          0
+        ],
+        [
+          -2,
+          -2,
+          -2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          -2,
+          -2,
+          -2,
+          0,
+          -2
+        ],
+        [
+          0,
+          -2,
+          -2,
+          -2,
+          0,
+          2
+        ]
+      ],
+      "candidates": 1098,
+      "old_variables": 64,
+      "new_conflicts": 85108,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": 92.0,
+      "seconds": 6.148491950999869
+    },
+    {
+      "model": 1,
+      "tail_indices": [
+        40,
+        41,
+        57,
+        58
+      ],
+      "tail_vectors": [
+        [
+          0,
+          2,
+          2,
+          2,
+          0,
+          -2
+        ],
+        [
+          0,
+          2,
+          2,
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          0,
+          -2,
+          0
+        ],
+        [
+          2,
+          2,
+          2,
+          0,
+          2,
+          0
+        ]
+      ],
+      "candidates": 1098,
+      "old_variables": 64,
+      "new_conflicts": 85108,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": 94.0,
+      "seconds": 6.25104890800003
+    },
+    {
+      "model": 2,
+      "tail_indices": [
+        3,
+        22,
+        24,
+        45
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          -2,
+          2,
+          0,
+          -2,
+          0
+        ],
+        [
+          0,
+          -2,
+          2,
+          -2,
+          0,
+          -2
+        ],
+        [
+          0,
+          -2,
+          2,
+          2,
+          0,
+          -2
+        ],
+        [
+          2,
+          -2,
+          2,
+          0,
+          -2,
+          0
+        ]
+      ],
+      "candidates": 1096,
+      "old_variables": 64,
+      "new_conflicts": 84612,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": 90.0,
+      "seconds": 6.117787616999976
+    },
+    {
+      "model": 3,
+      "tail_indices": [
+        14,
+        35,
+        37,
+        56
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          2,
+          -2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          -2,
+          -2,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          -2,
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          -2,
+          0,
+          2,
+          0
+        ]
+      ],
+      "candidates": 1096,
+      "old_variables": 64,
+      "new_conflicts": 84612,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": 92.0,
+      "seconds": 6.118235660999744
+    },
+    {
+      "model": 4,
+      "tail_indices": [
+        5,
+        18,
+        22,
+        47
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          0,
+          0,
+          -2,
+          -2,
+          -2
+        ],
+        [
+          0,
+          -2,
+          -2,
+          -2,
+          0,
+          -2
+        ],
+        [
+          0,
+          -2,
+          2,
+          -2,
+          0,
+          -2
+        ],
+        [
+          2,
+          0,
+          0,
+          -2,
+          -2,
+          -2
+        ]
+      ],
+      "candidates": 1062,
+      "old_variables": 64,
+      "new_conflicts": 80240,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": 91.0,
+      "seconds": 6.117132860999845
+    },
+    {
+      "model": 5,
+      "tail_indices": [
+        12,
+        37,
+        41,
+        54
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          -2,
+          2,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          2,
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          2,
+          2,
+          2
+        ]
+      ],
+      "candidates": 1062,
+      "old_variables": 64,
+      "new_conflicts": 80240,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": 90.0,
+      "seconds": 6.130096189000142
+    },
+    {
+      "model": 6,
+      "tail_indices": [
+        1,
+        2,
+        18,
+        19,
+        20,
+        44
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          -2,
+          -2,
+          0,
+          -2,
+          0
+        ],
+        [
+          -2,
+          -2,
+          -2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          -2,
+          -2,
+          -2,
+          0,
+          -2
+        ],
+        [
+          0,
+          -2,
+          -2,
+          -2,
+          0,
+          2
+        ],
+        [
+          0,
+          -2,
+          -2,
+          2,
+          0,
+          -2
+        ],
+        [
+          2,
+          -2,
+          -2,
+          0,
+          2,
+          0
+        ]
+      ],
+      "candidates": 2072,
+      "old_variables": 96,
+      "new_conflicts": 241150,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": null,
+      "seconds": 8.879724501000055
+    },
+    {
+      "model": 7,
+      "tail_indices": [
+        16,
+        39,
+        40,
+        41,
+        57,
+        58
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          2,
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          2,
+          -2,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          2,
+          2,
+          0,
+          -2
+        ],
+        [
+          0,
+          2,
+          2,
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          0,
+          -2,
+          0
+        ],
+        [
+          2,
+          2,
+          2,
+          0,
+          2,
+          0
+        ]
+      ],
+      "candidates": 2156,
+      "old_variables": 96,
+      "new_conflicts": 263758,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": null,
+      "seconds": 8.217174284000066
+    },
+    {
+      "model": 8,
+      "tail_indices": [
+        3,
+        4,
+        22,
+        24,
+        45,
+        46
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          -2,
+          2,
+          0,
+          -2,
+          0
+        ],
+        [
+          -2,
+          -2,
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          -2,
+          2,
+          -2,
+          0,
+          -2
+        ],
+        [
+          0,
+          -2,
+          2,
+          2,
+          0,
+          -2
+        ],
+        [
+          2,
+          -2,
+          2,
+          0,
+          -2,
+          0
+        ],
+        [
+          2,
+          -2,
+          2,
+          0,
+          2,
+          0
+        ]
+      ],
+      "candidates": 2080,
+      "old_variables": 96,
+      "new_conflicts": 246026,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": null,
+      "seconds": 7.2896095749997585
+    },
+    {
+      "model": 9,
+      "tail_indices": [
+        13,
+        14,
+        35,
+        37,
+        55,
+        56
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          2,
+          -2,
+          0,
+          -2,
+          0
+        ],
+        [
+          -2,
+          2,
+          -2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          -2,
+          -2,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          -2,
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          -2,
+          0,
+          -2,
+          0
+        ],
+        [
+          2,
+          2,
+          -2,
+          0,
+          2,
+          0
+        ]
+      ],
+      "candidates": 2080,
+      "old_variables": 96,
+      "new_conflicts": 246026,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": null,
+      "seconds": 6.883560996000142
+    },
+    {
+      "model": 10,
+      "tail_indices": [
+        5,
+        18,
+        22,
+        34,
+        47,
+        49
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          0,
+          0,
+          -2,
+          -2,
+          -2
+        ],
+        [
+          0,
+          -2,
+          -2,
+          -2,
+          0,
+          -2
+        ],
+        [
+          0,
+          -2,
+          2,
+          -2,
+          0,
+          -2
+        ],
+        [
+          0,
+          2,
+          -2,
+          -2,
+          0,
+          -2
+        ],
+        [
+          2,
+          0,
+          0,
+          -2,
+          -2,
+          -2
+        ],
+        [
+          2,
+          0,
+          0,
+          -2,
+          2,
+          -2
+        ]
+      ],
+      "candidates": 1978,
+      "old_variables": 96,
+      "new_conflicts": 221114,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": null,
+      "seconds": 6.405872040999839
+    },
+    {
+      "model": 11,
+      "tail_indices": [
+        12,
+        21,
+        37,
+        41,
+        52,
+        54
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          -2,
+          -2,
+          2,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          -2,
+          2,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          2,
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          2,
+          -2,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          2,
+          2,
+          2
+        ]
+      ],
+      "candidates": 2112,
+      "old_variables": 96,
+      "new_conflicts": 256588,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": null,
+      "seconds": 8.050124417999996
+    },
+    {
+      "model": 12,
+      "tail_indices": [
+        3,
+        4,
+        22,
+        24,
+        25,
+        45
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          -2,
+          2,
+          0,
+          -2,
+          0
+        ],
+        [
+          -2,
+          -2,
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          -2,
+          2,
+          -2,
+          0,
+          -2
+        ],
+        [
+          0,
+          -2,
+          2,
+          2,
+          0,
+          -2
+        ],
+        [
+          0,
+          -2,
+          2,
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          -2,
+          2,
+          0,
+          -2,
+          0
+        ]
+      ],
+      "candidates": 2188,
+      "old_variables": 96,
+      "new_conflicts": 271248,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": null,
+      "seconds": 7.224256349999905
+    },
+    {
+      "model": 13,
+      "tail_indices": [
+        14,
+        35,
+        36,
+        37,
+        55,
+        56
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          2,
+          -2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          -2,
+          -2,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          -2,
+          2,
+          0,
+          -2
+        ],
+        [
+          0,
+          2,
+          -2,
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          -2,
+          0,
+          -2,
+          0
+        ],
+        [
+          2,
+          2,
+          -2,
+          0,
+          2,
+          0
+        ]
+      ],
+      "candidates": 2154,
+      "old_variables": 96,
+      "new_conflicts": 263120,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": null,
+      "seconds": 7.595047709000028
+    },
+    {
+      "model": 14,
+      "tail_indices": [
+        5,
+        7,
+        18,
+        22,
+        38,
+        49
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          0,
+          0,
+          -2,
+          -2,
+          -2
+        ],
+        [
+          -2,
+          0,
+          0,
+          -2,
+          2,
+          -2
+        ],
+        [
+          0,
+          -2,
+          -2,
+          -2,
+          0,
+          -2
+        ],
+        [
+          0,
+          -2,
+          2,
+          -2,
+          0,
+          -2
+        ],
+        [
+          0,
+          2,
+          2,
+          -2,
+          0,
+          -2
+        ],
+        [
+          2,
+          0,
+          0,
+          -2,
+          2,
+          -2
+        ]
+      ],
+      "candidates": 1948,
+      "old_variables": 96,
+      "new_conflicts": 213900,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": null,
+      "seconds": 6.558907776000069
+    },
+    {
+      "model": 15,
+      "tail_indices": [
+        10,
+        25,
+        37,
+        41,
+        52,
+        54
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          0,
+          0,
+          2,
+          -2,
+          2
+        ],
+        [
+          0,
+          -2,
+          2,
+          2,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          -2,
+          2,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          2,
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          2,
+          -2,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          2,
+          2,
+          2
+        ]
+      ],
+      "candidates": 2010,
+      "old_variables": 96,
+      "new_conflicts": 228888,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": null,
+      "seconds": 6.808281062999868
+    },
+    {
+      "model": 16,
+      "tail_indices": [
+        8,
+        19,
+        23,
+        35,
+        48,
+        50
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          0,
+          0,
+          -2,
+          2,
+          2
+        ],
+        [
+          0,
+          -2,
+          -2,
+          -2,
+          0,
+          2
+        ],
+        [
+          0,
+          -2,
+          2,
+          -2,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          -2,
+          -2,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          -2,
+          -2,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          -2,
+          2,
+          2
+        ]
+      ],
+      "candidates": 2084,
+      "old_variables": 96,
+      "new_conflicts": 248198,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": null,
+      "seconds": 7.566623463999804
+    },
+    {
+      "model": 17,
+      "tail_indices": [
+        9,
+        20,
+        24,
+        36,
+        40,
+        51
+      ],
+      "tail_vectors": [
+        [
+          -2,
+          0,
+          0,
+          2,
+          -2,
+          -2
+        ],
+        [
+          0,
+          -2,
+          -2,
+          2,
+          0,
+          -2
+        ],
+        [
+          0,
+          -2,
+          2,
+          2,
+          0,
+          -2
+        ],
+        [
+          0,
+          2,
+          -2,
+          2,
+          0,
+          -2
+        ],
+        [
+          0,
+          2,
+          2,
+          2,
+          0,
+          -2
+        ],
+        [
+          2,
+          0,
+          0,
+          2,
+          -2,
+          -2
+        ]
+      ],
+      "candidates": 2128,
+      "old_variables": 96,
+      "new_conflicts": 252286,
+      "status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "gain": 0,
+      "added": 0,
+      "removed": 0,
+      "numerical_gain_upper_bound": null,
+      "seconds": 7.472512616999666
+    }
+  ],
+  "scope": "Numerical bounded local MILPs; only direct-verified positive exchanges certify improvements."
+}

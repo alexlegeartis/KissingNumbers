@@ -1,0 +1,74 @@
+{
+  "source": "../PackingStar/25D-31D/new_bounds_20261111/D30_247992_coordinates.npz",
+  "source_sha256": "5e46243e5f3cf4790d56abc4008c9cebeb45bdde2fd3080e44a0546d59cccc5a",
+  "source_count": 247992,
+  "old_module": 1232,
+  "external_potential_blockers": 152,
+  "module_head_count": 960,
+  "best_external_cost": 0,
+  "nominal_full_module_gain": 28,
+  "best_union_gain": 28,
+  "iterations": 200000,
+  "seconds": 59.17739761499979,
+  "seed": 20261113,
+  "records": [
+    {
+      "iteration": 0,
+      "external_deletions": 72,
+      "whole_module_gain": -44,
+      "union_gain": 0,
+      "new_points": 904,
+      "cross_conflicts": 10096
+    },
+    {
+      "iteration": 5,
+      "external_deletions": 40,
+      "whole_module_gain": -12,
+      "union_gain": 0,
+      "new_points": 960,
+      "cross_conflicts": 12856
+    },
+    {
+      "iteration": 67,
+      "external_deletions": 32,
+      "whole_module_gain": -4,
+      "union_gain": 0,
+      "new_points": 960,
+      "cross_conflicts": 13344
+    },
+    {
+      "iteration": 79,
+      "external_deletions": 16,
+      "whole_module_gain": 12,
+      "union_gain": 12,
+      "new_points": 912,
+      "cross_conflicts": 11376,
+      "exact_changed_pairs": "PASS",
+      "added": 784,
+      "removed": 772
+    },
+    {
+      "iteration": 468,
+      "external_deletions": 8,
+      "whole_module_gain": 20,
+      "union_gain": 20,
+      "new_points": 960,
+      "cross_conflicts": 12688,
+      "exact_changed_pairs": "PASS",
+      "added": 960,
+      "removed": 940
+    },
+    {
+      "iteration": 11025,
+      "external_deletions": 0,
+      "whole_module_gain": 28,
+      "union_gain": 28,
+      "new_points": 960,
+      "cross_conflicts": 13336,
+      "exact_changed_pairs": "PASS",
+      "added": 960,
+      "removed": 932
+    }
+  ],
+  "scope": "Bounded E8-Weyl/signed-tail BW14 orientation search; not an exhaustive exclusion."
+}

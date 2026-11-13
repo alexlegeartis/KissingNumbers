@@ -1,0 +1,76 @@
+{
+  "source": "/workspace/scratch/624f4a87f43c/PackingStar/25D-31D/new_bounds_20261111/D30_247992_coordinates.npz",
+  "source_sha256": "5e46243e5f3cf4790d56abc4008c9cebeb45bdde2fd3080e44a0546d59cccc5a",
+  "baseline": 247992,
+  "old_module": 1232,
+  "new_module": 1356,
+  "new_heads": 1056,
+  "omitted_tail": 6,
+  "best_gain": 92,
+  "records": [
+    {
+      "iteration": 0,
+      "external": 96,
+      "removed": 1328,
+      "added": 1356,
+      "gain": 28,
+      "total": 248020,
+      "seconds": 0.7327432740003132
+    },
+    {
+      "iteration": 54,
+      "external": 76,
+      "removed": 1308,
+      "added": 1356,
+      "gain": 48,
+      "total": 248040,
+      "seconds": 1.9741326490002393
+    },
+    {
+      "iteration": 92,
+      "external": 68,
+      "removed": 1300,
+      "added": 1356,
+      "gain": 56,
+      "total": 248048,
+      "seconds": 3.2354659419997915
+    },
+    {
+      "iteration": 446,
+      "external": 64,
+      "removed": 1296,
+      "added": 1356,
+      "gain": 60,
+      "total": 248052,
+      "seconds": 4.456600360999801
+    },
+    {
+      "iteration": 463,
+      "external": 56,
+      "removed": 1288,
+      "added": 1356,
+      "gain": 68,
+      "total": 248060,
+      "seconds": 5.583162034999987
+    },
+    {
+      "iteration": 812,
+      "external": 44,
+      "removed": 1276,
+      "added": 1356,
+      "gain": 80,
+      "total": 248072,
+      "seconds": 6.958115307999833
+    },
+    {
+      "iteration": 30403,
+      "external": 32,
+      "removed": 1264,
+      "added": 1356,
+      "gain": 92,
+      "total": 248084,
+      "seconds": 13.609588694000195
+    }
+  ],
+  "scope": "Exact source-compressed full-module placement; direct independent changed-pair and full-configuration replay required before record registration"
+}

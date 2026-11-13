@@ -1,0 +1,8 @@
+{"trial": 0, "loss": 0.15714297293433957, "violation": 0.3035622544158496, "iterations": 103, "seconds": 0.07708405499988658, "best": true}
+{"trial": 1, "loss": 0.11585029355008515, "violation": 0.1463884334482699, "iterations": 336, "seconds": 0.3033489270001155, "best": true}
+{"trial": 3, "loss": 0.11580324255617043, "violation": 0.14619810487540785, "iterations": 473, "seconds": 0.8196580660001018, "best": true}
+{"trial": 5, "loss": 0.11522025450321238, "violation": 0.14470710171669865, "iterations": 150, "seconds": 0.9584794689999399, "best": true}
+{"trial": 7, "loss": 0.11519579056589337, "violation": 0.21311899539864565, "iterations": 73, "seconds": 1.1323334339999747, "best": true}
+{"trial": 8, "loss": 0.1150580776999057, "violation": 0.1450294724180421, "iterations": 240, "seconds": 1.280900384999768, "best": true}
+{"trial": 20, "loss": 0.11495203543513165, "violation": 0.14492517074672062, "iterations": 415, "seconds": 2.5495619610001086, "best": true}
+{"trial": 22, "loss": 0.11492106167218952, "violation": 0.14493954972787093, "iterations": 318, "seconds": 2.791674289999719, "best": true}

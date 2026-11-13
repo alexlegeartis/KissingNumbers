@@ -441,6 +441,17 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim2
         add(_row['dimension'], _row['total'], _package,
             'verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks')
 
+# Exact 13 November module replacements, including the retained BW14 checkpoint.
+for _package in ('dim30-bw14-module', 'dim30-leech-sloane-section',
+                 'dim31-leech-sloane-module'):
+    _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
+        os.path.join(IMP, _package, 'final.py'))
+    _driver = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(_driver)
+    for _row in _driver.results():
+        add(_row['dimension'], _row['total'], _package,
+            'verify.py: complete exact coordinates and independent direct-integer module exchange')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
@@ -2021,6 +2032,9 @@ if '--write-results' in sys.argv and not fail:
         'dim26-30-asymmetric-exchanges': 'signed-point normal-sector exchanges without antipodal constraints; full independent exact all-pairs replay',
         'dim27-quadratic-normal-module': '384-point quadratic E8/cuboctahedral module replacing a 370-point normal sector; complete independent exact all-pairs verification',
         'dim28-29-november-sextets': 'corrected sextet unions over the November 11 PackingStar files; complete exact geometry and independent direct-int64 changed-pair replay',
+        'dim30-bw14-module': 'oriented Barnes-Wall 14-dimensional module; 932-for-960 exchange over the November 11 PackingStar source; complete exact geometry and independent integer reconstruction',
+        'dim30-leech-sloane-section': '1356-point Leech-Sloane section with partial fibers; 1056 insertions and 964 deletions; complete exact geometry and independent integer reconstruction',
+        'dim31-leech-sloane-module': '2559-point subset of an oriented 2564-point Leech-Sloane module; 2219 insertions and 2078 deletions; complete exact geometry and independent integer reconstruction',
         'dim31-latitude-contact-exchange': 'whole-latitude negative-contact closure and an orthogonal four-for-eight exchange; two complete exact pair enumerations, including direct integer arithmetic without antipodal compression',
         'dim27-31-algebraic-completion': 'partial signed-orbit selection with shared deletions in 27D and an eight-point orthogonal sign cube in 31D; full exact geometry and independent direct-integer changed pairs',
         'dim27-31-joint-refills': 'joint core/auxiliary refills, reflected unions and corrected sextet symmetries over the October 28 PackingStar files; complete exact geometry and direct-int64 insertion checks',
@@ -2068,6 +2082,10 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append('13 November 2026: exact Leech-Sloane module constructions give 248084 in 30D and 251395 in 31D, respectively 92 and 141 above PackingStar commit 2f3453b, and 112 and 195 above the preceding repository certificates. A 1356-point section with partial fibers supplies 30D; an individually selected 2559-point subset of a 2564-point module supplies 31D. Complete exact geometry covers all 30772711486 and 31599597315 unordered pairs. Separate direct-integer checkers reconstruct the modules and pinned sources and check every inserted pair. The fresh comparison retains unresolved gaps in 26D and 27D. See verifications/improved/dim30-leech-sloane-section/, verifications/improved/dim31-leech-sloane-module/ and common/source_review_20261113_26_31.json.')
+    out.append('')
+    out.append('The earlier Barnes-Wall module checkpoint from the same campaign gives 248020 in 30D. Its 932-for-960 exchange, complete geometry and independent integer reconstruction remain available in verifications/improved/dim30-bw14-module/.')
+    out.append('')
     out.append('13 November 2026 continuation: an actual D7 normal extension strengthens the Gamma72 constructions to 471,886,208 in 68D and 746,325,051 in 69D, gains of 1,920 and 2,802,747. Two independent standard-library checkers enumerate the complete 162,969-profile domain and verify all moment duals, geometric cases and the two extra 69D poles. The published Gamma72 minimum, shell population and 11-design remain explicit premises. See verifications/improved/dim68-69-gamma72-extended-moments/.')
     out.append('')
     out.append('The same continuation gives 501,822 in 36D and 505,638 in 37D, adding nine points to each preceding Coxeter-Todd certificate by a verified compatible-orbit exchange. Larger compatible support and sign families also improve dimensions 61–67; their exact current values and package routes are in the table below. All three packages have fresh exact replays, and the manuscript remains deferred.')

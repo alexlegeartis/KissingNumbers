@@ -1,0 +1,27 @@
+{
+  "dimension": 30,
+  "target_count": 248084,
+  "coordinate_file": "coordinates30_248084.npz",
+  "source_count": 247992,
+  "source_commit": "2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6",
+  "source_path": "25D-31D/new_bounds_20261111/D30_247992_coordinates.npz",
+  "source_file_sha256": "5e46243e5f3cf4790d56abc4008c9cebeb45bdde2fd3080e44a0546d59cccc5a",
+  "source_canonical_norm32_sha256": "ccafb41964e6e0f2167a108fbadc0d90d323a736a89d2c3f8035ff9fcc8bf03f",
+  "added_count": 1056,
+  "removed_count": 964,
+  "normal_octad": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    10,
+    11,
+    23
+  ],
+  "full_module_retained": true,
+  "omitted_tail": 6,
+  "external_deletions": 32,
+  "source_attribution": "PackingStar (CDM1619/PackingStar), November11release",
+  "construction_attribution": "Fourteen-dimensional section of the reassembled Leech\u2013Sloane 2564-point module"
+}

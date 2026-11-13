@@ -1,0 +1,19 @@
+{"p": -1, "q": 3, "head_scale": [14, 10], "tail_scale": [2, 10], "exterior_admissible": 0, "retained": 0}
+{"p": 1, "q": 3, "head_scale": [2, 10], "tail_scale": [14, 10], "exterior_admissible": 0, "retained": 0}
+{"p": -1, "q": 4, "head_scale": [23, 17], "tail_scale": [7, 17], "exterior_admissible": 0, "retained": 0}
+{"p": 1, "q": 4, "head_scale": [7, 17], "tail_scale": [23, 17], "exterior_admissible": 0, "retained": 0}
+{"p": -1, "q": 5, "head_scale": [34, 26], "tail_scale": [14, 26], "exterior_admissible": 1632, "retained": 0}
+{"p": 1, "q": 5, "head_scale": [14, 26], "tail_scale": [34, 26], "exterior_admissible": 0, "retained": 0}
+{"p": -1, "q": 7, "head_scale": [62, 50], "tail_scale": [34, 50], "exterior_admissible": 544, "retained": 0}
+{"p": 1, "q": 7, "head_scale": [34, 50], "tail_scale": [62, 50], "exterior_admissible": 0, "retained": 0}
+{"p": -1, "q": 10, "head_scale": [119, 101], "tail_scale": [79, 101], "exterior_admissible": 544, "retained": 0}
+{"p": 1, "q": 10, "head_scale": [79, 101], "tail_scale": [119, 101], "exterior_admissible": 0, "retained": 0}
+{"p": -1, "q": 15, "head_scale": [254, 226], "tail_scale": [194, 226], "exterior_admissible": 544, "retained": 0}
+{"p": 1, "q": 15, "head_scale": [194, 226], "tail_scale": [254, 226], "exterior_admissible": 160, "retained": 0}
+{"p": -1, "q": 20, "head_scale": [439, 401], "tail_scale": [359, 401], "exterior_admissible": 544, "retained": 0}
+{"p": 1, "q": 20, "head_scale": [359, 401], "tail_scale": [439, 401], "exterior_admissible": 320, "retained": 0}
+{"p": 0, "q": 1, "head_scale": [1, 1], "tail_scale": [1, 1], "exterior_admissible": 9280, "retained": 352}
+{"cutoff": 8, "new_rational_points": 352, "pool_points": 732, "conflicts": 8448, "baseline_sector": 380, "scope": "Finite exact candidate/conflict generation; numerical MILP optimality is not an exact exclusion"}
+/workspace/scratch/624f4a87f43c/KissingNumbers/research/reclaim_26_31_20261113/continuous26/latitude_pool.py:72: RuntimeWarning: Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim.
+  res=milp(-np.ones(total),integrality=np.ones(total),bounds=Bounds(0,1),constraints=LinearConstraint(M,-np.inf,1),options={'time_limit':a.seconds,'mip_rel_gap':0,'threads':2})
+{"cutoff": 8, "new_rational_points": 352, "pool_points": 732, "conflicts": 8448, "baseline_sector": 380, "scope": "Finite exact candidate/conflict generation; numerical MILP optimality is not an exact exclusion", "status": 0, "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)", "seconds": 5.8683251940001355, "selected_count": 380, "mip_gap": 0.0, "mip_dual_bound": -380.0}

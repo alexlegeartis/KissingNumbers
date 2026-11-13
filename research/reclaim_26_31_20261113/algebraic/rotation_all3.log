@@ -1,0 +1,112 @@
+{"event": "best", "fibers_completed": 1, "fiber": 4119, "axis": 25, "parents": [34199, 44784, 122740, 235972], "parent_axis_tail_norms": [0, 0], "parameter": [1, 16], "sign_q": -1, "sign_r": -1, "exterior_blockers": 362, "net_gain": -360}
+{"event": "best", "fibers_completed": 1, "fiber": 4119, "axis": 25, "parents": [34199, 44784, 122740, 235972], "parent_axis_tail_norms": [0, 0], "parameter": [4, 7], "sign_q": -1, "sign_r": -1, "exterior_blockers": 332, "net_gain": -330}
+{"event": "best", "fibers_completed": 1, "fiber": 4119, "axis": 25, "parents": [34199, 44784, 122740, 235972], "parent_axis_tail_norms": [0, 0], "parameter": [4, 7], "sign_q": -1, "sign_r": 1, "exterior_blockers": 330, "net_gain": -328}
+{"event": "best", "fibers_completed": 1, "fiber": 4119, "axis": 25, "parents": [34199, 35923, 37133, 44784], "parent_axis_tail_norms": [8, 0], "parameter": [1, 2], "sign_q": -1, "sign_r": -1, "exterior_blockers": 231, "net_gain": -229}
+{"event": "best", "fibers_completed": 1, "fiber": 4119, "axis": 25, "parents": [34199, 35923, 37133, 44784], "parent_axis_tail_norms": [8, 0], "parameter": [4, 7], "sign_q": -1, "sign_r": -1, "exterior_blockers": 223, "net_gain": -221}
+{"event": "best", "fibers_completed": 1, "fiber": 4119, "axis": 25, "parents": [34199, 35923, 37133, 44784], "parent_axis_tail_norms": [8, 0], "parameter": [4, 7], "sign_q": -1, "sign_r": 1, "exterior_blockers": 222, "net_gain": -220}
+{"event": "best", "fibers_completed": 1, "fiber": 4119, "axis": 25, "parents": [34199, 35923, 37133, 44784], "parent_axis_tail_norms": [8, 0], "parameter": [4, 7], "sign_q": 1, "sign_r": -1, "exterior_blockers": 213, "net_gain": -211}
+{"event": "best", "fibers_completed": 2, "fiber": 3748, "axis": 25, "parents": [94516, 100698, 180289, 186891], "parent_axis_tail_norms": [0, 8], "parameter": [4, 7], "sign_q": -1, "sign_r": 1, "exterior_blockers": 210, "net_gain": -208}
+{"event": "best", "fibers_completed": 4, "fiber": 1929, "axis": 25, "parents": [9562, 81979, 135468, 207510], "parent_axis_tail_norms": [0, 8], "parameter": [1, 2], "sign_q": -1, "sign_r": 1, "exterior_blockers": 188, "net_gain": -186}
+{"event": "best", "fibers_completed": 4, "fiber": 1929, "axis": 25, "parents": [9562, 81979, 135468, 207510], "parent_axis_tail_norms": [0, 8], "parameter": [1, 2], "sign_q": 1, "sign_r": 1, "exterior_blockers": 177, "net_gain": -175}
+{"event": "best", "fibers_completed": 17, "fiber": 2842, "axis": 25, "parents": [12344, 16451, 121093, 245561], "parent_axis_tail_norms": [8, 0], "parameter": [1, 2], "sign_q": 1, "sign_r": 1, "exterior_blockers": 169, "net_gain": -167}
+{"event": "best", "fibers_completed": 37, "fiber": 3681, "axis": 25, "parents": [25061, 29411, 32544, 34040], "parent_axis_tail_norms": [8, 8], "parameter": [1, 2], "sign_q": -1, "sign_r": -1, "exterior_blockers": 112, "net_gain": -110}
+{"event": "best", "fibers_completed": 68, "fiber": 2143, "axis": 25, "parents": [20697, 21075, 146023, 146434], "parent_axis_tail_norms": [0, 8], "parameter": [1, 2], "sign_q": -1, "sign_r": -1, "exterior_blockers": 103, "net_gain": -101}
+{"event": "progress", "fibers_completed": 100, "states": 12000, "best_exterior_cost": 103, "saved": 0, "seconds": 2.6188605299998926}
+{"event": "progress", "fibers_completed": 200, "states": 24000, "best_exterior_cost": 103, "saved": 0, "seconds": 3.4930191260000356}
+{"event": "progress", "fibers_completed": 300, "states": 36000, "best_exterior_cost": 103, "saved": 0, "seconds": 4.361532638999961}
+{"event": "best", "fibers_completed": 306, "fiber": 3925, "axis": 25, "parents": [30104, 32183, 100939, 186689], "parent_axis_tail_norms": [8, 8], "parameter": [1, 2], "sign_q": -1, "sign_r": -1, "exterior_blockers": 93, "net_gain": -91}
+{"event": "progress", "fibers_completed": 400, "states": 48000, "best_exterior_cost": 93, "saved": 0, "seconds": 5.300047472999722}
+{"event": "progress", "fibers_completed": 500, "states": 60000, "best_exterior_cost": 93, "saved": 0, "seconds": 6.216563611999845}
+{"event": "progress", "fibers_completed": 600, "states": 72000, "best_exterior_cost": 93, "saved": 0, "seconds": 7.186592583999754}
+{"event": "progress", "fibers_completed": 700, "states": 84000, "best_exterior_cost": 93, "saved": 0, "seconds": 8.052500483999665}
+{"event": "progress", "fibers_completed": 800, "states": 96000, "best_exterior_cost": 93, "saved": 0, "seconds": 8.922397613999692}
+{"event": "progress", "fibers_completed": 900, "states": 108000, "best_exterior_cost": 93, "saved": 0, "seconds": 9.802818712999851}
+{"event": "progress", "fibers_completed": 1000, "states": 120000, "best_exterior_cost": 93, "saved": 0, "seconds": 10.854274576999615}
+{"event": "progress", "fibers_completed": 1100, "states": 132000, "best_exterior_cost": 93, "saved": 0, "seconds": 11.716320190999795}
+{"event": "progress", "fibers_completed": 1200, "states": 144000, "best_exterior_cost": 93, "saved": 0, "seconds": 12.743808615000034}
+{"event": "progress", "fibers_completed": 1300, "states": 156000, "best_exterior_cost": 93, "saved": 0, "seconds": 13.748590577999948}
+{"event": "progress", "fibers_completed": 1400, "states": 168000, "best_exterior_cost": 93, "saved": 0, "seconds": 14.770631450999645}
+{"event": "progress", "fibers_completed": 1500, "states": 180000, "best_exterior_cost": 93, "saved": 0, "seconds": 15.68254134899962}
+{"event": "progress", "fibers_completed": 1600, "states": 192000, "best_exterior_cost": 93, "saved": 0, "seconds": 16.560507614000016}
+{"event": "progress", "fibers_completed": 1700, "states": 204000, "best_exterior_cost": 93, "saved": 0, "seconds": 17.451016497999717}
+{"event": "progress", "fibers_completed": 1800, "states": 216000, "best_exterior_cost": 93, "saved": 0, "seconds": 18.294729940999787}
+{"event": "progress", "fibers_completed": 1900, "states": 228000, "best_exterior_cost": 93, "saved": 0, "seconds": 19.153618259999803}
+{"event": "progress", "fibers_completed": 2000, "states": 240000, "best_exterior_cost": 93, "saved": 0, "seconds": 19.874217850999685}
+{"event": "progress", "fibers_completed": 2100, "states": 252000, "best_exterior_cost": 93, "saved": 0, "seconds": 20.626215529999627}
+{"event": "progress", "fibers_completed": 2200, "states": 264000, "best_exterior_cost": 93, "saved": 0, "seconds": 21.38565680800002}
+{"event": "progress", "fibers_completed": 2300, "states": 276000, "best_exterior_cost": 93, "saved": 0, "seconds": 22.135299701999884}
+{"event": "progress", "fibers_completed": 2400, "states": 288000, "best_exterior_cost": 93, "saved": 0, "seconds": 22.861229870999978}
+{"event": "progress", "fibers_completed": 2500, "states": 300000, "best_exterior_cost": 93, "saved": 0, "seconds": 23.76430530799962}
+{"event": "progress", "fibers_completed": 2600, "states": 312000, "best_exterior_cost": 93, "saved": 0, "seconds": 24.501703358999748}
+{"event": "progress", "fibers_completed": 2700, "states": 324000, "best_exterior_cost": 93, "saved": 0, "seconds": 25.327317770999798}
+{"event": "progress", "fibers_completed": 2800, "states": 336000, "best_exterior_cost": 93, "saved": 0, "seconds": 26.10147952999978}
+{"event": "progress", "fibers_completed": 2900, "states": 348000, "best_exterior_cost": 93, "saved": 0, "seconds": 26.86652784099988}
+{"event": "progress", "fibers_completed": 3000, "states": 360000, "best_exterior_cost": 93, "saved": 0, "seconds": 27.64683525600003}
+{"event": "progress", "fibers_completed": 3100, "states": 372000, "best_exterior_cost": 93, "saved": 0, "seconds": 28.38628847899963}
+{"event": "best", "fibers_completed": 3198, "fiber": 3, "axis": 25, "parents": [161097, 168596, 169804, 171272], "parent_axis_tail_norms": [8, 8], "parameter": [4, 7], "sign_q": 1, "sign_r": -1, "exterior_blockers": 91, "net_gain": -89}
+{"event": "progress", "fibers_completed": 3200, "states": 384000, "best_exterior_cost": 91, "saved": 0, "seconds": 29.136072212999807}
+{"event": "progress", "fibers_completed": 3300, "states": 396000, "best_exterior_cost": 91, "saved": 0, "seconds": 29.905512764999912}
+{"event": "progress", "fibers_completed": 3400, "states": 408000, "best_exterior_cost": 91, "saved": 0, "seconds": 30.61221117399964}
+{"event": "best", "fibers_completed": 3409, "fiber": 3631, "axis": 25, "parents": [29910, 31989, 100568, 187060], "parent_axis_tail_norms": [8, 8], "parameter": [1, 2], "sign_q": 1, "sign_r": -1, "exterior_blockers": 90, "net_gain": -88}
+{"event": "progress", "fibers_completed": 3500, "states": 420000, "best_exterior_cost": 90, "saved": 0, "seconds": 31.411157772000024}
+{"event": "progress", "fibers_completed": 3600, "states": 432000, "best_exterior_cost": 90, "saved": 0, "seconds": 32.18734546299993}
+{"event": "progress", "fibers_completed": 3700, "states": 444000, "best_exterior_cost": 90, "saved": 0, "seconds": 32.99067051299971}
+{"event": "progress", "fibers_completed": 3800, "states": 456000, "best_exterior_cost": 90, "saved": 0, "seconds": 33.87518040299983}
+{"event": "progress", "fibers_completed": 3900, "states": 468000, "best_exterior_cost": 90, "saved": 0, "seconds": 34.72660948299972}
+{
+  "source": "../PackingStar/25D-31D/new_bounds_20261111/D31_251254_coordinates.npz",
+  "source_sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+  "baseline": 251254,
+  "dimension": 31,
+  "fibers_available": 3988,
+  "fibers_tested": 3988,
+  "axis_pairs_tested": 11964,
+  "parameter_states": 478560,
+  "parameters": [
+    [
+      1,
+      16
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      7,
+      12
+    ],
+    [
+      24,
+      41
+    ],
+    [
+      41,
+      70
+    ]
+  ],
+  "best_exterior_cost": 90,
+  "best_net_gain": -88,
+  "saved_bundles": 0,
+  "seconds": 35.44189173399991,
+  "scope": "Finite exact three-axis rotations of old size28 fibers. Source validity is inherited; no global optimality is claimed."
+}

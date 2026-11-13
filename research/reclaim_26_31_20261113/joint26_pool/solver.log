@@ -1,0 +1,3 @@
+{"exact_blocker_replay": "PASS", "candidates": 2004}
+/workspace/scratch/624f4a87f43c/KissingNumbers/research/reclaim_26_31_20261113/joint26_pool.py:66: RuntimeWarning: Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim.
+  result = milp(np.r_[-np.ones(len(C)), np.ones(len(old))], integrality=np.ones(len(C)+len(old)),

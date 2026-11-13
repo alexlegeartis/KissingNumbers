@@ -1,0 +1,137 @@
+{
+  "starts": 2048,
+  "seed": 20261113,
+  "vertices": 16,
+  "edges": 8,
+  "best_norm2": 40.0,
+  "progress": [
+    {
+      "trial": 0,
+      "norm2": 40.0,
+      "best_norm2": 40.0,
+      "vertices": 1,
+      "seconds": 0.033096574999945005
+    },
+    {
+      "trial": 128,
+      "norm2": 40.0,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 2.9080159550003373
+    },
+    {
+      "trial": 256,
+      "norm2": 40.0,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 6.474293464000311
+    },
+    {
+      "trial": 384,
+      "norm2": 21.333333333333332,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 9.876511832000233
+    },
+    {
+      "trial": 512,
+      "norm2": 40.0,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 13.26385037
+    },
+    {
+      "trial": 640,
+      "norm2": 40.0,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 16.640516925000156
+    },
+    {
+      "trial": 768,
+      "norm2": 40.0,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 19.63100830400026
+    },
+    {
+      "trial": 896,
+      "norm2": 40.0,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 22.684650137000062
+    },
+    {
+      "trial": 1024,
+      "norm2": 39.999999999999964,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 25.883027944000332
+    },
+    {
+      "trial": 1152,
+      "norm2": 40.0,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 29.114074739999978
+    },
+    {
+      "trial": 1280,
+      "norm2": 40.0,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 32.23877695600004
+    },
+    {
+      "trial": 1408,
+      "norm2": 40.0,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 35.07982630100014
+    },
+    {
+      "trial": 1536,
+      "norm2": 40.0,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 38.15448315399999
+    },
+    {
+      "trial": 1664,
+      "norm2": 39.999999999999964,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 41.292108265000024
+    },
+    {
+      "trial": 1792,
+      "norm2": 40.0,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 44.225786941000024
+    },
+    {
+      "trial": 1920,
+      "norm2": 40.0,
+      "best_norm2": 40.0,
+      "vertices": 16,
+      "seconds": 47.32971305499996
+    }
+  ],
+  "scope": "Floating discovery; exactification required before a lower bound",
+  "solver_status": 0,
+  "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "selected": 8,
+  "selected_indices": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+  ],
+  "dual_bound": -8.0,
+  "seconds": 50.31197741100004
+}

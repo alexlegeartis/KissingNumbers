@@ -1,0 +1,59 @@
+{
+  "module438": {
+    "status": "PASS direct int64 norms and complete Gram matrix",
+    "dimension": 11,
+    "points": 438,
+    "squared_norm": 32,
+    "maximum_distinct_inner_product": 16,
+    "unordered_pairs": 95703,
+    "file_sha256": "aeca73f2f2c618959283541fb73be5c8f4487d9e9f5c2b53803364a3146fb292"
+  },
+  "corrected_latitude_pool": {
+    "rational_points": 716,
+    "exact_norm32": "PASS"
+  },
+  "octad26": {
+    "trials": 759,
+    "best_gain": 0
+  },
+  "lambda11_27": {
+    "lambda11_256": {
+      "best_gain": 0,
+      "best_external_cost": 8000
+    },
+    "lambda11_rotated1024": {
+      "best_gain": 0,
+      "best_external_cost": 8384
+    }
+  },
+  "section30": {
+    "status": "PASS exact transform, minimal exchange and independent direct int64 changed pairs",
+    "baseline": 247992,
+    "points": 248084,
+    "gain": 92,
+    "canonical_section_omitted_tail": 6,
+    "transformation_denominator": 4,
+    "module_points": 1356,
+    "module_heads": 1056,
+    "tail_fiber_occupancies": {
+      "2": 192,
+      "10": 48,
+      "16": 12
+    },
+    "whole_removed": 1264,
+    "whole_added": 1356,
+    "common_cancelled": 300,
+    "removed": 964,
+    "added": 1056,
+    "new_retained_pairs": 260861568,
+    "new_new_pairs": 557040,
+    "maximum_new_retained_product": 64,
+    "squared_norm": 128,
+    "inner_product_limit": 64,
+    "source_sha256": "5e46243e5f3cf4790d56abc4008c9cebeb45bdde2fd3080e44a0546d59cccc5a",
+    "coordinates_sha256": "bf160f13a56f5a4b368f4f159ca78500620f33a6e95ac34199e0a022d72ac871",
+    "minimal_exchange_sha256": "4b24e539a9bf6c9a95d642cb29ef032a23ab5d188b7272af9e0b3ec54659001b",
+    "seconds": 20.414052105999872,
+    "scope": "Changed geometry independently checked. Unchanged source pairs require the separate complete final verifier."
+  }
+}

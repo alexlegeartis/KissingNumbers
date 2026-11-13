@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+13 November 2026: the [30D Leech–Sloane section](verifications/improved/dim30-leech-sloane-section/) and [31D Leech–Sloane module](verifications/improved/dim31-leech-sloane-module/) give **248,084** and **251,395**, 92 and 141 above PackingStar's pinned November 11 release. Complete exact final geometry covers **30,772,711,486** and **31,599,597,315** unordered pairs. Separate integer checkers rebuild the full 2,564-point recipe, verify its section and exact orientations, reconstruct the pinned sources and check every inserted-point interaction. Four malformed-input controls and complete manifests are replayed. The earlier [248,020-point Barnes–Wall package](verifications/improved/dim30-bw14-module/) remains available. The [fresh comparison](common/source_review_20261113_26_31.json) records the remaining 26D/27D gaps.
+
 The 13 November continuation has three new verification routes. The [Coxeter–Todd orbit exchange](verifications/improved/dim36-37-orbit-exchange/) gives **501,822 in 36D** and **505,638 in 37D**. Its fresh replay reconstructs the source proof and checks every interaction involving the added phase orbits; malformed witnesses, including a correctly counted but geometrically invalid restored orbit, are rejected.
 
 The [extended Gamma72 moments](verifications/improved/dim68-69-gamma72-extended-moments/) give **471,886,208 in 68D** and **746,325,051 in 69D**. Two independent standard-library proofs enumerate the complete 162,969-profile D7 domain, rebuild the nested D4 orientation objective and exact moment rows, check rational duals and all geometric pair types, and validate the two additional 69D poles. Thirteen production rejection controls pass. The published Gamma72 minimum, shell population and spherical 11-design remain explicit inputs.
@@ -10,7 +12,7 @@ The 13 November [signed P48 refill](verifications/improved/dim49-60-p48-signed-r
 
 The 13 November [69D slice-compression proof](verifications/improved/dim69-gamma72-head-compression/) establishes **743,522,304** points, **54,069,382 (+7.8424%)** above the preceding certificate. Two standard-library exact checkers independently reconstruct all 1,681 profiles, 16 averaging orbits, 10 moment rows and 55 geometric pair types. Published Gamma72 minimum, shell population and design facts are explicit premises; the certificate proves a favorable orientation exists.
 
-The 12 November [28D/29D sextet continuation](verifications/improved/dim28-29-november-sextets/) gives **222,120** and **231,776**, respectively **16** and **2** above PackingStar’s November 11 files. Complete exact integer geometry covers every unordered pair; direct-int64 changed-pair checks and four rejection controls are included. The comparison is pinned; 26D, 27D, 30D and 31D remain below that release.
+The 12 November [28D/29D sextet continuation](verifications/improved/dim28-29-november-sextets/) gives **222,120** and **231,776**, respectively **16** and **2** above PackingStar’s November 11 files. Complete exact integer geometry covers every unordered pair; direct-int64 changed-pair checks and four rejection controls are included. At that date 26D, 27D, 30D and 31D remained below that release; the November 13 campaign above subsequently reclaimed 30D and 31D.
 
 The 8 November [31D latitude-contact exchange](verifications/improved/dim31-latitude-contact-exchange/) gives **251,200** points, four above the preceding repository certificate. Both complete exact pair proofs cover all 31,550,594,400 unordered pairs. One uses direct integer arithmetic without antipodal compression; reconstruction, all changed-pair checks and semantic rejection controls are included. This proof assumes no lattice minimum or unenumerated population. The source-comparison scope is recorded separately.
 
@@ -48,9 +50,8 @@ The 28 October P48 refilling certificate improves 49–60D. `verify_october.py` 
 
 The 27 October [26–31D residual completion package](verifications/improved/dim26-31-residual-completions/) supersedes the earlier 26–31D packages. Its default replay checks all supplied coordinates independently, including a self-contained shell lemma, and uses exact quadratic-field arithmetic for the final 30D/31D pure tails. Historical packages remain reproducible. No new worldwide record survey is asserted.
 
-The repository registers 70 constructions. The README labels 66 as best in its
-dated reviewed sources; PackingStar has superseded the repository in 26D, 27D,
-30D and 31D. Every construction has a verification route, but a short run does
+The repository registers 70 constructions. The README labels 68 as best in its
+dated reviewed sources; PackingStar has superseded the repository in 26D and 27D. Every construction has a verification route, but a short run does
 not freshly establish all of them.
 The commands below check constructions; they do not perform a literature search.
 
@@ -79,7 +80,7 @@ not a new mathematical verification. All commands require assertions enabled.
 |---|---|---|
 | 18 | Reconstruct all 8,358 points and check every pair exactly | None beyond the stated mathematical construction |
 | 25 | Independent Leech rebuild, all 971 circles and 102 moved points; exact biquadratic comparisons | Standard Leech shell kissing property |
-| 27–31 | Complete integer coordinates, all unordered point pairs and direct-int64 inserted-point checks; current 31D also enumerates every pair with a separate integer-only C++ kernel | NumPy; g++ and a little-endian host for the additional 31D checker; no baseline validity assumption |
+| 27–31 | Complete integer coordinates, all unordered point pairs and direct-int64 inserted-point checks; current 30D/31D modules also have independent exact reconstruction | NumPy; no baseline validity assumption. The retained earlier 31D package additionally provides an integer-only C++ full-pair replay |
 | 40 | Independent lattice minimum enumeration and all auxiliary/core pair types | NumPy and C++17 g++ with __int128; exact bounded integer BLAS |
 | 26 | Complete asymmetric integer coordinates; every unordered point pair | NumPy; retained 28–30D certificates remain available |
 | 38 | Two independent exact proofs rebuild all cap classes, equatorial lines and axes; check 120 cap deletions and all 6,656 expanded latitude points | Golay lattice congruences and weight enumerator prove the parent minimum |

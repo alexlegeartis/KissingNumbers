@@ -1,0 +1,11 @@
+{
+  "source_ls": 248084,
+  "source_bw": 248020,
+  "common": 247220,
+  "ls_exclusive": 864,
+  "bw_exclusive": 800,
+  "conflicts": 12976,
+  "matching": 800,
+  "gain": 0,
+  "scope": "Exact finite two-source union"
+}

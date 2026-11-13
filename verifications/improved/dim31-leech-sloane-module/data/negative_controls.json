@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "rejected": [
+    "wrong_norm",
+    "duplicate",
+    "same_norm_bad_angle",
+    "wrong_metadata"
+  ],
+  "valid_control": "PASS"
+}

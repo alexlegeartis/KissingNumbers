@@ -1,0 +1,66 @@
+{
+  "scope": "Numerical finite-restart search; no certificate",
+  "seed": 20261113,
+  "free_all": true,
+  "moving": 380,
+  "candidate_count": 381,
+  "boundary_count": 2541,
+  "trials": [
+    {
+      "trial": 0,
+      "loss": 0.0688372488655419,
+      "violation": 0.10917531840117523,
+      "iterations": 862,
+      "seconds": 17.823328093000327
+    },
+    {
+      "trial": 1,
+      "loss": 0.06800822328154116,
+      "violation": 0.09995042046443536,
+      "iterations": 730,
+      "seconds": 32.77198922600019
+    },
+    {
+      "trial": 2,
+      "loss": 0.06780635435897853,
+      "violation": 0.09943867672260998,
+      "iterations": 719,
+      "seconds": 48.6288365270002
+    },
+    {
+      "trial": 3,
+      "loss": 0.06886734591741896,
+      "violation": 0.10910547307313145,
+      "iterations": 570,
+      "seconds": 58.37228805700033
+    },
+    {
+      "trial": 4,
+      "loss": 0.0681855456748082,
+      "violation": 0.10047357890081754,
+      "iterations": 1022,
+      "seconds": 76.71280459200034
+    },
+    {
+      "trial": 5,
+      "loss": 0.10176454237993553,
+      "violation": 0.1276793776380808,
+      "iterations": 835,
+      "seconds": 93.02899242800004
+    },
+    {
+      "trial": 6,
+      "loss": 0.06816680339417013,
+      "violation": 0.10702781163118036,
+      "iterations": 610,
+      "seconds": 104.06924802000003
+    },
+    {
+      "trial": 7,
+      "loss": 0.06714604774433454,
+      "violation": 0.09809902023220995,
+      "iterations": 537,
+      "seconds": 113.52576922900016
+    }
+  ]
+}

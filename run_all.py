@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 112 scripts, including large exact certificate replays
-    python run_all.py --full       # 131 scripts, budget about 10 hours
+    python run_all.py              # 115 scripts, including large exact certificate replays
+    python run_all.py --full       # 134 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -106,6 +106,12 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('30D Leech-Sloane section: complete exact geometry and independent integer reconstruction',
+     os.path.join(V, 'improved', 'dim30-leech-sloane-section'), ['verify.py'], 2.0, True),
+    ('31D Leech-Sloane module: complete exact geometry and independent integer reconstruction',
+     os.path.join(V, 'improved', 'dim31-leech-sloane-module'), ['verify.py'], 2.0, True),
+    ('30D Barnes-Wall module: complete exact geometry and independent integer reconstruction',
+     os.path.join(V, 'improved', 'dim30-bw14-module'), ['verify.py'], 2.0, True),
     ('36-37D orbit exchange: fresh exact geometric replay',
      os.path.join(V, 'improved', 'dim36-37-orbit-exchange'), ['verify.py'], 1.0, True),
     ('36-37D orbit exchange: rejection controls',
@@ -415,6 +421,8 @@ JOBS.append(('49-60D pointwise P48 refill: two exact proofs and complete tails',
 # driver, a manifest, or the GPU run's receipt.
 def _sota_jobs(quick=False):
     wanted = {
+        ('dim30-leech-sloane-section', ('verify.py',)),
+        ('dim31-leech-sloane-module', ('verify.py',)),
         ('dim36-37-orbit-exchange', ('verify.py',)),
         ('dim36-37-orbit-exchange', ('rejection_controls.py',)),
         ('dim61-67-compatible-sign-families', ('verify.py',)),
@@ -522,6 +530,12 @@ def _sota_records():
 def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
+        ('dim30-leech-sloane-section', [30], [('verify.py',)],
+         'complete exact geometry for all 248084 points; independent integer parent/section construction, source reconstruction and every inserted pair; four malformed-input controls'),
+        ('dim31-leech-sloane-module', [31], [('verify.py',)],
+         'complete exact geometry for all 251395 points; independent integer module and partial-union reconstruction and every inserted pair; four malformed-input controls'),
+        ('dim30-bw14-module', [30], [('verify.py',)],
+         'complete exact geometry for all 248020 points; separate integer Barnes-Wall reconstruction, pinned-source exchange and every inserted pair; four malformed-input controls'),
         ('dim36-37-orbit-exchange', [36,37], [('verify.py',), ('rejection_controls.py',)],
          'fresh exact Coxeter-Todd source replay and all replacement interactions; no floating-point angle tolerance'),
         ('dim61-67-compatible-sign-families', list(range(61,68)), [('verify.py',), ('rejection_controls.py',)],

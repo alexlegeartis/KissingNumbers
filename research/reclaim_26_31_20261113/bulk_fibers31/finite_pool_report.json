@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "source_sha256": "714c9a0189cd1ff2f9363f6672e84506606ca54cb806a18d155d817481019943",
+  "pool_sha256": "e6f0e5c46a93f527d1d3b4cb10cfb82a0196ee254b6f8aa3df321fbf6bfcd0b9",
+  "source_count": 251254,
+  "candidate_count": 3960,
+  "axis_candidates": 3928,
+  "saturated_axis_fibers": 12,
+  "old_points_per_axis_fiber": 32,
+  "disjoint_axis_victims": 384,
+  "exception_candidates": 32,
+  "injectively_matched_outside_victims": 32,
+  "minimum_matched_product": 80,
+  "inner_product_limit": 64,
+  "exact_gain_upper_bound": 0,
+  "finite_union_population_upper_bound": 251254,
+  "scope": "Every feasible subset of this pinned source union this3960-point pool. No exclusion of other candidates, radii, deformations, or kissing configurations."
+}

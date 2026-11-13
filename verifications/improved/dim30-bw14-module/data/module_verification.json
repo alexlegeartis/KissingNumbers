@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "dimension": 30,
+  "source_count": 247992,
+  "total": 248020,
+  "removed": 932,
+  "added": 960,
+  "gain": 28,
+  "source_canonical_norm32_sha256": "ccafb41964e6e0f2167a108fbadc0d90d323a736a89d2c3f8035ff9fcc8bf03f",
+  "reconstructed_module_count": 1260,
+  "reconstructed_heads": 960,
+  "changed_point_comparisons": 238098240,
+  "maximum_changed_product": 16,
+  "arithmetic": "Direct int64 coordinate sums; no tolerance or floating matrix products"
+}

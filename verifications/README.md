@@ -7,12 +7,15 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-48 packages, one per **construction idea** rather than one per dimension, because several
+51 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
+| [`dim30-leech-sloane-section`](improved/dim30-leech-sloane-section/) | 30 | current 248,084; 92 above PackingStar; complete final geometry and independent exact section and exchange reconstruction |
+| [`dim31-leech-sloane-module`](improved/dim31-leech-sloane-module/) | 31 | current 251,395; 141 above PackingStar; complete final geometry and independent exact module and partial-union reconstruction |
+| [`dim30-bw14-module`](improved/dim30-bw14-module/) | 30 | retained 248,020; 28 above PackingStar November 11; 932-for-960 Barnes–Wall module replacement; complete exact geometry and independent integer module reconstruction |
 | [`dim36-37-orbit-exchange`](improved/dim36-37-orbit-exchange/) | 36, 37 | 501,822 and 505,638; nine-point gains from a compatible orbit exchange; fresh exact source and replacement replay |
 | [`dim61-67-compatible-sign-families`](improved/dim61-67-compatible-sign-families/) | 61–67 | larger compatible support and sign families; fresh exact code and layer verification |
 | [`dim68-69-gamma72-extended-moments`](improved/dim68-69-gamma72-extended-moments/) | 68, 69 | 471,886,208 and 746,325,051; actual D7 extension, exact population duals, independent direct-profile proof and two 69D poles |
@@ -22,9 +25,9 @@ file, and the history of the lower bound in its dimensions.
 | [`dim49-60-p48-pointwise-refill`](improved/dim49-60-p48-pointwise-refill/) | 49–60 | current pointwise-refill bounds, including 58,627,711 in 60D; two exact head proofs, complete tails/poles and ownership checks |
 | [`dim54-59-p48-coverage`](improved/dim54-59-p48-coverage/) | 54–59 | joint selections of complete P48 class images; exact finite tail, isometry and disjointness checks with published mother-shell inputs |
 | [`dim60-antipodal840-lift`](improved/dim60-antipodal840-lift/) | 60 | retained construction, 58,543,525; exact 840-direction and 841-pole codes, 420 disjoint P48 classes; published mother-shell inputs |
-| [`dim31-latitude-contact-exchange`](improved/dim31-latitude-contact-exchange/) | 31 | current 251,200; explicit four-for-eight exchange, two complete exact coordinate proofs including independent integer-only enumeration |
+| [`dim31-latitude-contact-exchange`](improved/dim31-latitude-contact-exchange/) | 31 | retained 251,200; explicit four-for-eight exchange, two complete exact coordinate proofs including independent integer-only enumeration |
 | [`dim27-31-algebraic-completion`](improved/dim27-31-algebraic-completion/) | 27, 31 | current 209,825 in 27D and retained 251,196 in 31D; partial signed orbits, shared deletions and an orthogonal sign cube; complete exact geometry and independent direct-integer changes |
-| [`dim27-31-joint-refills`](improved/dim27-31-joint-refills/) | 27–31 | current in 30D; retained earlier 27–29D and 31D certificates; exact full geometry and direct-integer insertion checks |
+| [`dim27-31-joint-refills`](improved/dim27-31-joint-refills/) | 27–31 | retained earlier certificates; exact full geometry and direct-integer insertion checks |
 | [`dim26-30-asymmetric-exchanges`](improved/dim26-30-asymmetric-exchanges/) | 26, 28–30 | 201,136 current in 26D; retained 221,694; 231,638; 247,960; asymmetric integer codes with complete exact all-pairs proofs |
 | [`dim27-quadratic-normal-module`](improved/dim27-quadratic-normal-module/) | 27 | retained 209,600-point quadratic construction, +14 over PackingStar; complete independent exact all-pairs replay |
 | [`dim31-normal-module-exchange`](improved/dim31-normal-module-exchange/) | 31 | retained 251,110-point integer construction, +108 over PackingStar's 28 October update; complete independent all-pairs replay |

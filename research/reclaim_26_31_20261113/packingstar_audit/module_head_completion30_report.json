@@ -1,0 +1,27 @@
+{
+  "source_sha256": "edbef290f882ba5c972e5a0c27ab57cfed47c5d0d55e816b8af69bcd06abeb20",
+  "source_count": 248020,
+  "candidate_universe": 544320,
+  "relevant_old": 1112,
+  "cutoff": 4,
+  "admitted_new": 49772,
+  "conflict_incidences": 199088,
+  "matched_new": 960,
+  "free": 0,
+  "price_histogram": {
+    "1": 960,
+    "4": 49772,
+    "6": 16140,
+    "8": 4144,
+    "10": 204,
+    "12": 14220,
+    "14": 81184,
+    "16": 286572,
+    "18": 75520,
+    "20": 13828,
+    "22": 1556,
+    "24": 184,
+    "26": 36
+  },
+  "scope": "Full integer2160x252 head catalogue priced; selection limited by cutoff."
+}

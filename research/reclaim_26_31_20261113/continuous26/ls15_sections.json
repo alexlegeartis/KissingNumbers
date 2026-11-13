@@ -1,0 +1,1076 @@
+[
+  {
+    "dimension": 26,
+    "old_packingstar_module": 380,
+    "reference_new_module": 380,
+    "min_section": 308,
+    "max_section": 308,
+    "sections": [
+      {
+        "tails": [
+          0,
+          1
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          0,
+          2
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          0,
+          3
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          0,
+          4
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          0,
+          5
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          0,
+          6
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          1,
+          2
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          1,
+          3
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          1,
+          4
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          1,
+          5
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          1,
+          6
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          2,
+          3
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          2,
+          4
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          2,
+          5
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          2,
+          6
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          3,
+          4
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          3,
+          5
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          3,
+          6
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          4,
+          5
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          4,
+          6
+        ],
+        "points": 308
+      },
+      {
+        "tails": [
+          5,
+          6
+        ],
+        "points": 308
+      }
+    ]
+  },
+  {
+    "dimension": 27,
+    "old_packingstar_module": 422,
+    "reference_new_module": 422,
+    "min_section": 348,
+    "max_section": 348,
+    "sections": [
+      {
+        "tails": [
+          0,
+          1,
+          2
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          0,
+          1,
+          3
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          0,
+          1,
+          4
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          0,
+          1,
+          5
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          0,
+          1,
+          6
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          0,
+          2,
+          3
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          0,
+          2,
+          4
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          0,
+          2,
+          5
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          0,
+          2,
+          6
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          0,
+          3,
+          4
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          0,
+          3,
+          5
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          0,
+          3,
+          6
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          0,
+          4,
+          5
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          0,
+          4,
+          6
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          0,
+          5,
+          6
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          1,
+          2,
+          3
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          1,
+          2,
+          4
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          1,
+          2,
+          5
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          1,
+          2,
+          6
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          1,
+          3,
+          4
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          1,
+          3,
+          5
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          1,
+          3,
+          6
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          1,
+          4,
+          5
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          1,
+          4,
+          6
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          1,
+          5,
+          6
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          2,
+          3,
+          4
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          2,
+          3,
+          5
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          2,
+          3,
+          6
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          2,
+          4,
+          5
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          2,
+          4,
+          6
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          2,
+          5,
+          6
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          3,
+          4,
+          5
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          3,
+          4,
+          6
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          3,
+          5,
+          6
+        ],
+        "points": 348
+      },
+      {
+        "tails": [
+          4,
+          5,
+          6
+        ],
+        "points": 348
+      }
+    ]
+  },
+  {
+    "dimension": 28,
+    "old_packingstar_module": 696,
+    "reference_new_module": 696,
+    "min_section": 424,
+    "max_section": 552,
+    "sections": [
+      {
+        "tails": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          1,
+          2,
+          5
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          1,
+          2,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          1,
+          3,
+          5
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          1,
+          3,
+          6
+        ],
+        "points": 552
+      },
+      {
+        "tails": [
+          0,
+          1,
+          4,
+          5
+        ],
+        "points": 552
+      },
+      {
+        "tails": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          1,
+          5,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          2,
+          3,
+          5
+        ],
+        "points": 552
+      },
+      {
+        "tails": [
+          0,
+          2,
+          3,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          2,
+          4,
+          6
+        ],
+        "points": 552
+      },
+      {
+        "tails": [
+          0,
+          2,
+          5,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          3,
+          4,
+          5
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          3,
+          4,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          3,
+          5,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          0,
+          4,
+          5,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "points": 552
+      },
+      {
+        "tails": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          1,
+          2,
+          5,
+          6
+        ],
+        "points": 552
+      },
+      {
+        "tails": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          1,
+          3,
+          4,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          1,
+          3,
+          5,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          1,
+          4,
+          5,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          2,
+          3,
+          4,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          2,
+          3,
+          5,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          2,
+          4,
+          5,
+          6
+        ],
+        "points": 424
+      },
+      {
+        "tails": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "points": 552
+      }
+    ]
+  },
+  {
+    "dimension": 29,
+    "old_packingstar_module": 736,
+    "reference_new_module": 736,
+    "min_section": 728,
+    "max_section": 728,
+    "sections": [
+      {
+        "tails": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          0,
+          1,
+          2,
+          3,
+          6
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          0,
+          1,
+          2,
+          4,
+          6
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          0,
+          1,
+          2,
+          5,
+          6
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          0,
+          1,
+          3,
+          4,
+          5
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          0,
+          1,
+          3,
+          4,
+          6
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          0,
+          1,
+          3,
+          5,
+          6
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          0,
+          1,
+          4,
+          5,
+          6
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          0,
+          2,
+          3,
+          4,
+          5
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          0,
+          2,
+          3,
+          4,
+          6
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          0,
+          2,
+          3,
+          5,
+          6
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          0,
+          2,
+          4,
+          5,
+          6
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          0,
+          3,
+          4,
+          5,
+          6
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "points": 728
+      },
+      {
+        "tails": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "points": 728
+      }
+    ]
+  },
+  {
+    "dimension": 30,
+    "old_packingstar_module": 1232,
+    "reference_new_module": 1260,
+    "min_section": 1356,
+    "max_section": 1356,
+    "sections": [
+      {
+        "tails": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "points": 1356
+      },
+      {
+        "tails": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "points": 1356
+      },
+      {
+        "tails": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "points": 1356
+      },
+      {
+        "tails": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "points": 1356
+      },
+      {
+        "tails": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "points": 1356
+      },
+      {
+        "tails": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "points": 1356
+      },
+      {
+        "tails": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "points": 1356
+      }
+    ]
+  }
+]

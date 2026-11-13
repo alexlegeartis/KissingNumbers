@@ -7,12 +7,12 @@ Retained construction: the 31D certificate is superseded by the
 [8 November latitude-contact exchange](../dim31-latitude-contact-exchange/).
 The dated constructions and coordinate certificates below remain unchanged.
 
-| Dimension | Preceding repository | New lower bound | Gain | Removed | Added | Current repository bound (8 November 2026) |
+| Dimension | Preceding repository | New lower bound | Gain | Removed | Added | Current repository bound (13 November 2026) |
 |---|---:|---:|---:|---:|---:|---:|
 |27|209,807|**209,825**|18|14|32|209,825|
-|31|251,188|**251,196**|8|0|8|251,200|
+|31|251,188|**251,196**|8|0|8| 251,395 |
 
-The current checked PackingStar release has 209,760 and 251,169 points,
+The PackingStar release checked for that dated construction has 209,760 and 251,169 points,
 respectively. Its retained coordinates and the repository's subsequent
 improvements are credited as the baselines. Both complete predecessors are
 included byte for byte; their original package remains unchanged.

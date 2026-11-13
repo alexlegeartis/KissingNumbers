@@ -1,0 +1,32 @@
+{
+  "fiber": 3631,
+  "axis": 25,
+  "parents": [
+    29910,
+    31989,
+    100568,
+    187060
+  ],
+  "parent_axis_tail_norms": [
+    8,
+    8
+  ],
+  "parameter": [
+    1,
+    2
+  ],
+  "sign_q": 1,
+  "sign_r": -1,
+  "exterior_blockers": 90,
+  "net_gain": -88,
+  "denominator": 9,
+  "full_source_direct_int64_pairs": 1507524,
+  "direct_blockers": 94,
+  "exterior_blocker_types": {
+    "(0, 16)": 8,
+    "(0, 32)": 2,
+    "(16, 8)": 48,
+    "(16, 16)": 32
+  },
+  "exact_full_replay": "PASS"
+}

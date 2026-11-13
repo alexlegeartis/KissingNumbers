@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "dimension": 30,
+  "source_count": 247992,
+  "total": 248084,
+  "removed": 964,
+  "added": 1056,
+  "gain": 92,
+  "source_canonical_norm32_sha256": "ccafb41964e6e0f2167a108fbadc0d90d323a736a89d2c3f8035ff9fcc8bf03f",
+  "reconstructed_module_count": 1356,
+  "reconstructed_layer_counts": {
+    "0": 240,
+    "16": 1056,
+    "32": 60
+  },
+  "parent_module_count": 2564,
+  "parent_module_sorted_int16_sha256": "23b0bb8156f41313b3249011eaa4fc655a3e711bd520874931a1eabc5cfa3263",
+  "parent_module_unordered_pairs_checked": 3285766,
+  "module_sorted_int16_sha256": "d3d48e6f93b232e8be87c97bfa62ebd2ed2a767f99e8816b14792c84a2f2cd79",
+  "module_unordered_pairs_checked": 918690,
+  "maximum_module_product": 16,
+  "retained_module_points": 1356,
+  "full_module_retained": true,
+  "available_new_module_points": 1056,
+  "omitted_new_module_points": 0,
+  "changed_point_comparisons": 261975648,
+  "maximum_changed_product": 16,
+  "arithmetic": "Direct int64 products and sums; no tolerance or floating matrix products",
+  "scope": "Every changed pair; unchanged pairs are covered by the separate complete geometry replay",
+  "seconds": 2.852523151999776
+}

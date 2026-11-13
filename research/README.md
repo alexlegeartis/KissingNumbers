@@ -3,12 +3,27 @@
 These packages preserve construction searches, exact certificates for restricted
 families, and checks of published constructions. The November 13 campaigns
 improve 69D first by 7.8424% and then by another 0.377%, strengthen code layers
-in 61–67D, and add smaller gains in 36–37D, 49–60D and 68D. The November 12 campaign
+in 61–67D, reclaim 30D and 31D against PackingStar, and add smaller gains in 36–37D, 49–60D and 68D. The November 12 campaign
 improves 28D and 29D over PackingStar's November 11 release. The November 4 algebraic
 campaign improves 27D and 31D; the 43D packages record a separate discovery and
 its reproduction by the engine. The earlier lower-dimensional campaigns below
 produced no new kissing-number lower bound. Registered constructions remain in
 [`../verifications/`](../verifications/) and [`../RESULTS.md`](../RESULTS.md).
+
+## 13 November PackingStar attack in 26–31D
+
+[The new campaign](reclaim_26_31_20261113/) gives **248,084 in 30D** and
+**251,395 in 31D**, 92 and 141 above PackingStar's November 11 release.
+A reassembled 2,564-point Leech–Sloane module exposes the required E8 equator;
+a 1,356-point section with partial fibers supplies 30D, and an individually
+selected 2,559-point module subset supplies 31D. Complete exact geometry and
+independent integer reconstruction and exchange proofs are portable in the
+[30D](../verifications/improved/dim30-leech-sloane-section/) and
+[31D](../verifications/improved/dim31-leech-sloane-module/) packages.
+The earlier 248,020-point Barnes–Wall certificate is retained. The campaign
+corrects the rational-coordinate premise, records bounded searches and exact
+restricted exclusions, and gives a [concrete next strategy](reclaim_26_31_20261113/STRATEGY.md).
+The remaining target dimensions are 26D and 27D.
 
 ## 13 November continuation in 32–48D and 61D upward
 
@@ -36,8 +51,8 @@ lattice minimum, population and design inputs where used.
 [Reclaiming 26–31D](reclaim_26_31_20261112/) gives **222,120 in 28D (+16)** and
 **231,776 in 29D (+2)** over the pinned November 11 release. Complete finite
 geometry, independent direct-integer changed pairs and source reconstruction
-establish both results. The other four target dimensions remain below that
-release. Larger-radius, support, module and joint-deletion experiments are
+establish both results. At that date the other four target dimensions remained below that
+release; the November 13 campaign subsequently reclaimed 30D and 31D. Larger-radius, support, module and joint-deletion experiments are
 recorded with their exact scope; the best alternate 31D Barnes–Wall seed has
 251,244 points, ten below the source. Substantial gains remain open. See the
 [concrete larger-gain strategy](reclaim_26_31_20261112/STRATEGY.md).

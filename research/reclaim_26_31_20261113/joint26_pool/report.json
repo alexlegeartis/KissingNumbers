@@ -1,0 +1,13 @@
+{
+  "status": "process_wall_timeout",
+  "wall_limit_seconds": 160,
+  "solver_time_limit_seconds": 90,
+  "presolve": false,
+  "candidates": 2004,
+  "candidate_conflicts": 8724,
+  "unique_old_blockers": 4094,
+  "exact_fullsource_blocker_replay": "PASS",
+  "incumbent": null,
+  "scope": "The process was terminated by its external wall timeout before HiGHS returned a result. No positive witness, optimum, or exclusion follows.",
+  "pool_sha256": "5858f2dcc02b9aeda80e89f07b42d5c532ffccafbc1e98970c77bccd5f45a40b"
+}
