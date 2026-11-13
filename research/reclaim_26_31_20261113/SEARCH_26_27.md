@@ -72,6 +72,41 @@ exhaustive search. Increase them in staged runs. A positive output is encoded
 as `rational + sqrt(2)*radical`; it includes exact blocker and candidate-pair
 checks, but must still pass an independent full-configuration verifier.
 
+## 27D extension: rational spherical tails
+
+The earlier D3-tail catalogue is still useful as a small controlled baseline,
+but its twelve tail directions are unnecessarily restrictive. The new
+`search_rational_sphere_tails27.py` replaces that alphabet with rational
+stereographic points on the full radius-4 sphere in the three tail coordinates.
+For coprime integers `(a,b,c)`, `c>0`, put `d=a^2+b^2+c^2` and
+
+```text
+t = (8ac, 8bc, 4(c^2-a^2-b^2))/d.
+```
+
+Then `||t||^2=16`. Pair it with any of the 2,160 norm-16 E8 heads. Unlike
+the D3 pilot, this varies the tail continuously over a rationally dense
+subset of the sphere. Candidate/source products are compared after
+multiplication by `d`; candidate/candidate products after multiplication by
+both denominators. No floating-point geometry is used.
+
+Run:
+
+```bash
+OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 \
+python research/reclaim_26_31_20261113/search_rational_sphere_tails27.py \
+  --source ../PackingStar/25D-31D/new_bounds_20261111/D27_209862_coordinates.npz \
+  --out /tmp/rational_sphere27 --K 2 --blocker-cost 512 \
+  --max-candidates 10000 --seconds 180
+```
+
+Increase `K` and the blocker-cost threshold in staged runs. The old D3
+engine's default blocker cost was corrected from 12 to 256: projected source
+profiles often have multiplicity 32 or more, so a cutoff of 12 would
+artificially discard every candidate that blocks even one such profile.
+Neither finite rational search excludes algebraic tail points outside its
+parameter catalogue.
+
 ## Tests
 
 Run:
