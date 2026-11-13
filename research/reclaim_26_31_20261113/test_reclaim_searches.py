@@ -38,6 +38,11 @@ class Test27D(unittest.TestCase):
         self.assertEqual(H.shape,(2160,8)); self.assertEqual(T.shape,(12,3))
         self.assertTrue(np.all((H.astype(np.int64)**2).sum(1)==16))
         self.assertTrue(np.all((T.astype(np.int64)**2).sum(1)==8))
+    def test_rational_sphere_tails(self):
+        m=load('search_rational_sphere_tails27')
+        T,D=m.tails(2)
+        self.assertTrue(np.all((T*T).sum(1)==16*D*D))
+        self.assertEqual(len({(tuple(t),int(d)) for t,d in zip(T,D)}),len(T))
     def test_qsqrt2_predicate(self):
         for p in range(-8,33):
             for q in range(-12,13):
