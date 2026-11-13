@@ -62,7 +62,7 @@ def greedy(cs, blockers, edges, seed):
     freq={}
     for i in cs:
         for v in sig[int(i)]: freq[v]=freq.get(v,0)+1
-    reuse={int(i):sum(1/freq[v] for v in sig[int(i)]) for i in cs}
+    reuse={int(i):sum(freq[v] for v in sig[int(i)]) for i in cs}
     orders=[sorted(cs,key=lambda i:(len(sig[int(i)]),-reuse[int(i)],int(i))),
             sorted(cs,key=lambda i:(-reuse[int(i)],len(sig[int(i)]),int(i)))]
     for _ in range(32):
