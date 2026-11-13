@@ -35,20 +35,23 @@
       "dimension": 29,
       "previous_repository": 231776,
       "packingstar": 231774,
-      "repository": 231776,
-      "gap_over_packingstar": 2,
+      "repository": 231814,
+      "gap_over_packingstar": 40,
       "status": "ahead_of_pinned_release",
-      "external_source": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D29_231774_coordinates.npz"
+      "external_source": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D29_231774_coordinates.npz",
+      "immediate_predecessor": 231776,
+      "certificate": "verifications/improved/dim29-30-native-partial-design/"
     },
     {
       "dimension": 30,
       "previous_repository": 247972,
       "packingstar": 247992,
-      "repository": 248084,
-      "gap_over_packingstar": 92,
+      "repository": 248180,
+      "gap_over_packingstar": 188,
       "status": "ahead_of_pinned_release",
       "external_source": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D30_247992_coordinates.npz",
-      "certificate": "verifications/improved/dim30-leech-sloane-section/"
+      "certificate": "verifications/improved/dim29-30-native-partial-design/",
+      "immediate_predecessor": 248084
     },
     {
       "dimension": 31,

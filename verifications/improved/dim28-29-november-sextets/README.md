@@ -5,10 +5,10 @@ These exceed PackingStar's November 11 release by **16 and 2** points.
 They are modest improvements; the campaign has not obtained a substantial
 increase across all dimensions 26–31.
 
-| Dimension | Previous repository certificate | PackingStar, November 11 | This construction | Removed from PackingStar | Added |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| 28 | 221,988 | 222,104 | **222,120** | 40 | 56 |
-| 29 | 231,697 | 231,774 | **231,776** | 6 | 8 |
+| Dimension | Previous repository certificate | PackingStar, November 11 | This construction | Removed from PackingStar | Added | Current repository bound |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 28 | 221,988 | 222,104 | **222,120** | 40 | 56 | 222,120 |
+| 29 | 231,697 | 231,774 | **231,776** | 6 | 8 | 231,814 |
 
 The retained points are credited to PackingStar. Its inputs are pinned to
 commit [`2f3453b`](https://github.com/CDM1619/PackingStar/tree/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111).
@@ -95,3 +95,5 @@ steps. No worldwide-priority or unrestricted maximality result is asserted.
 | `data/provenance.json` | Source commit, hashes, counts and integer replay results. |
 | `data/verification*.json` | Executed complete-geometry reports. |
 | `data/manifest.json` | SHA-256 for every other file in this package. |
+
+The 29D result here is a retained construction, superseded by the [native partial design](../dim29-30-native-partial-design/). The 28D value remains current.

@@ -1,0 +1,7 @@
+oldids 30
+fixed 876 variable 3840
+fixed incompatible blocks 0
+/workspace/scratch/941a2e823e69/research/section30_newdesign/native30.py:32: RuntimeWarning: Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim.
+  res=milp(cost,integrality=np.ones(len(cost)),bounds=Bounds(np.zeros(len(cost)),ub),constraints=LinearConstraint(con,np.full(con.shape[0],-np.inf),np.r_[np.ones(280),np.zeros(nr)]),options={'time_limit':120,'threads':2})
+Optimization terminated successfully. (HiGHS Status 7: Optimal) -576.0000000000123 bound -576.0000000000123
+TOTAL 248180 module 1452 blocks 36

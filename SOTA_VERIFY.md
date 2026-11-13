@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+Latest 29D/30D: **231,814 and 248,180**. The [native partial-design package](verifications/improved/dim29-30-native-partial-design/) reconstructs the local ingredients and exact source exchanges and verifies complete final geometry. Run `python verifications/improved/dim29-30-native-partial-design/verify.py`.
+
 Latest 61–66D: [61/62/66 affine subcodes](verifications/improved/dim61-62-66-affine-reconstruction/) and [63–65 affine subcodes and explicit section](verifications/improved/dim63-65-affine-reconstruction/) extend the retained parent proof. The SOTA runner executes both new proofs and the unchanged parent geometry.
 
 Latest 31D: **251,420**, with [annealed-design proof](verifications/improved/dim31-annealed-design/). Run `python verifications/improved/dim31-annealed-design/verify.py`. The historical checkpoints below remain valid.

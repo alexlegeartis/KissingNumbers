@@ -1,0 +1,18 @@
+{
+  "pass": true,
+  "dimension": 30,
+  "count": 248180,
+  "norm_squared": 32,
+  "max_dot": 16,
+  "unordered_pairs": 30796532110,
+  "added": 384,
+  "removed": 288,
+  "source_count": 248084,
+  "arithmetic": "binary64 exactly representable integer products and partial sums bounded by32; no tolerance. Independent int64 changed-pair replay.",
+  "hashes": {
+    "coordinates30_248180.npz": "c9d8e3a81b0e58407177f577e1d52b8716935b556b87532bb4d5747e8d9a740a",
+    "delta30_248180.npz": "01e9ce55bc1a210b542894d3e798dd0fe347ecdb1c4f6794b5c252e7ffb50e98",
+    "source30_248084.npz": "bf160f13a56f5a4b368f4f159ca78500620f33a6e95ac34199e0a022d72ac871"
+  },
+  "seconds": 79.31675815582275
+}

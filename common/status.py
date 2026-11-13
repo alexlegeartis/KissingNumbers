@@ -590,3 +590,7 @@ STATUS[64] = ('codes', 'affine sign-subcode reconstruction with exact affected g
 STATUS[65] = ('codes', 'affine sign-subcode reconstruction with exact affected geometry and independent replay (dim63-65-affine-reconstruction/verify.py)')
 
 STATUS[66] = ('codes', 'affine sign-subcode reconstruction with exact affected geometry and independent replay (dim61-62-66-affine-reconstruction/verify.py)')
+
+STATUS[29] = ('heads', 'native partial transversal design, exact oriented module and source exchange, full final geometry (dim29-30-native-partial-design/verify.py)')
+
+STATUS[30] = ('heads', 'native partial transversal design, exact oriented module and source exchange, full final geometry (dim29-30-native-partial-design/verify.py)')

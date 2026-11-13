@@ -15,8 +15,8 @@ The [asymmetric exchanges](../dim26-30-asymmetric-exchanges/) also supersede the
 | 26 | 200,918 | **201,108** | 190 | 201,136 | 201,136 |
 | 27 | 204,636 | **209,532** | 4,896 | 209,807 | 209,825 |
 | 28 | 205,232 | **216,680** | 11,448 | 221,988 | 222,120 |
-| 29 | 216,568 | **226,520** | 9,952 | 231,697 | 231,776 |
-| 30 | 224,280 | **238,808** | 14,528 | 247,972 | 248,084 |
+| 29 | 216,568 | **226,520** | 9,952 | 231,697 | 231,814 |
+| 30 | 224,280 | **238,808** | 14,528 | 247,972 | 248,180 |
 | 31 | 241,742 | **246,638** | 4,896 | 251,188 | 251,420 |
 
 Comparison values were rechecked against repository main commit `4838231d173cca75046e55c9c900bcd6f2b53a0f`. Historical coordinate certificates and manuscript sources are unchanged; historical package documentation now also identifies the current repository bounds.

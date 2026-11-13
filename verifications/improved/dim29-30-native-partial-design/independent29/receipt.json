@@ -1,0 +1,21 @@
+{
+  "pass_": true,
+  "count": 231814,
+  "dimension": 29,
+  "squared_norm": 128,
+  "inner_product_limit": 64,
+  "max_inner_product": 64,
+  "distinct": true,
+  "all_unordered_pairs": 26868749391,
+  "arithmetic": "binary64 exact integer dot products; no antipodal grouping",
+  "max_partial_sum_bound": 1856,
+  "integer_exact_limit": 9007199254740992,
+  "source_count": 231776,
+  "added": 492,
+  "removed": 454,
+  "gain": 38,
+  "coordinate_sha256": "c237076120b06c6d9f928ef91da410e972a9299f9cf8de5cb986015a463d8b78",
+  "delta_sha256": "64ab69b29a652616cf805ff39ee533e1ed1a2f8b0629dfd234a02c5f6e67dd17",
+  "source_sha256": "e4fbeebe6d290e4c3f196e041b6b1319631871ce8e503913255e9d644911beb3",
+  "seconds": 57.19874334335327
+}

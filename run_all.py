@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 123 scripts, including large exact certificate replays
-    python run_all.py --full       # 142 scripts, budget about 10 hours
+    python run_all.py              # 127 scripts, including large exact certificate replays
+    python run_all.py --full       # 146 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -106,6 +106,11 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('29D/30D native design negative_controls.py', os.path.join(V, 'improved', 'dim29-30-native-partial-design'), ['negative_controls.py'], 3.0, True),
+    ('29D/30D native design independent29/audit.py', os.path.join(V, 'improved', 'dim29-30-native-partial-design'), ['independent29/audit.py'], 3.0, True),
+    ('29D/30D native design independent30/audit.py', os.path.join(V, 'improved', 'dim29-30-native-partial-design'), ['independent30/audit.py'], 3.0, True),
+    ('29D/30D native partial designs: recipes, exact exchanges and complete geometry',
+     os.path.join(V, 'improved', 'dim29-30-native-partial-design'), ['verify.py'], 5.0, True),
     ('dim61-62-66-affine-reconstruction: verify.py', os.path.join(V, 'improved', 'dim61-62-66-affine-reconstruction'), ['verify.py'], 3.0, True),
     ('dim61-62-66-affine-reconstruction: verify.py --independent', os.path.join(V, 'improved', 'dim61-62-66-affine-reconstruction'), ['verify.py', '--independent'], 3.0, True),
     ('dim63-65-affine-reconstruction: verify.py', os.path.join(V, 'improved', 'dim63-65-affine-reconstruction'), ['verify.py'], 3.0, True),
@@ -437,7 +442,11 @@ def _sota_jobs(quick=False):
         ('dim63-65-affine-reconstruction', ('section63.py',)),
         ('dim63-65-affine-reconstruction', ('audit/audit.py',)),
         ('dim63-65-affine-reconstruction', ('audit/section_audit.py',)),
-        ('dim30-leech-sloane-section', ('verify.py',)),
+        ('dim29-30-native-partial-design', ('verify.py',)),
+        ('dim29-30-native-partial-design', ('negative_controls.py',)),
+        ('dim29-30-native-partial-design', ('independent29/audit.py',)),
+        ('dim29-30-native-partial-design', ('independent30/audit.py',)),
+
         ('dim31-annealed-design', ('verify.py',)),
         ('dim36-37-orbit-exchange', ('verify.py',)),
         ('dim36-37-orbit-exchange', ('rejection_controls.py',)),
@@ -548,8 +557,8 @@ def _sota_coverage(jobs, results=None):
     groups = [
         ('dim61-62-66-affine-reconstruction', [61,62,66], [('verify.py',), ('verify.py', '--independent')], 'exact new affine classes, all affected support pairs, independent brute-force kernels and direct sign-pair replay; unchanged layers use parent package'),
         ('dim63-65-affine-reconstruction', [63,64,65], [('verify.py',), ('section63.py',), ('audit/audit.py',), ('audit/section_audit.py',)], 'exact affine sign classes and explicit relabeled 63D section; independent replay plus retained parent geometry'),
-        ('dim30-leech-sloane-section', [30], [('verify.py',)],
-         'complete exact geometry for all 248084 points; independent integer parent/section construction, source reconstruction and every inserted pair; four malformed-input controls'),
+        ('dim29-30-native-partial-design', [29,30], [('verify.py',), ('negative_controls.py',), ('independent29/audit.py',), ('independent30/audit.py',)],
+         'native partial-design recipe, exact source/delta reconstruction and complete final geometry for231814 and248180 points; retained historical proofs remain available'),
         ('dim31-annealed-design', [31], [('verify.py',)],
          'complete exact geometry for all 251420 points; exact int32 exchange with 2218 additions and 2052 removals from251254; historical packages retained'),
         ('dim30-bw14-module', [30], [('verify.py',)],
@@ -560,7 +569,7 @@ def _sota_coverage(jobs, results=None):
          'fresh exact compatible-support, sign-family, code and layer replay with malformed-input controls'),
         ('dim68-69-gamma72-extended-moments', [68,69], [('verify.py','--enumerate'), ('verify_independent.py',), ('rejection_controls.py',)],
          'two independent exact D7 profile/population and geometry proofs; published Gamma72 inputs, finite orientation existence and two 69D poles; no ambient shell enumeration'),
-        ('dim28-29-november-sextets', [28,29], [('verify.py',)], 'complete exact integer geometry with no tolerance; independent direct-int64 inserted pairs and pinned source reconstruction; no inherited geometry assumptions'),
+        ('dim28-29-november-sextets', [28], [('verify.py',)], 'complete exact integer geometry with no tolerance; independent direct-int64 inserted pairs and pinned source reconstruction; no inherited geometry assumptions'),
         ('dim49-60-p48-pointwise-refill', list(range(49,61)), [('verify.py',)], 'two exact head proofs; every added pair and full-coordinate ownership; complete direction and pole checks; published P48 minimum/population'),
         ('dim54-59-p48-coverage', list(range(54,60)), [('verify.py',)], 'exact root/quadratic tails, 7783-line base, class isometries and full-coordinate disjointness; published P48 minimum/population'),
         ('dim60-antipodal840-lift', [60], [('verify.py',)], 'exact 840-direction and 841-pole pairs, 7783-line base, 420 isometries and full-coordinate disjointness; inherited published P48 minimum and shell population'),

@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-55 packages, one per **construction idea** rather than one per dimension, because several
+56 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -16,6 +16,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim30-leech-sloane-section`](improved/dim30-leech-sloane-section/) | 30 | current 248,084; 92 above PackingStar; complete final geometry and independent exact section and exchange reconstruction |
 | [`dim61-62-66-affine-reconstruction`](improved/dim61-62-66-affine-reconstruction/) | 61, 62, 66 | exact affine sign subcodes and independent replay |
 | [`dim63-65-affine-reconstruction`](improved/dim63-65-affine-reconstruction/) | 63–65 | exact affine sign subcodes and independent replay |
+| [`dim29-30-native-partial-design`](improved/dim29-30-native-partial-design/) | 29,30 | 231,814 and 248,180; exact native-design construction and final geometry |
 | [`dim31-annealed-design`](improved/dim31-annealed-design/) | 31 | 251,420 points; E8 orientations with exact exchange and full final geometry |
 | [`dim31-joint-design`](improved/dim31-joint-design/) | 31 | 251,396 points; joint exact-cover design, exact integer exchange and full final geometry |
 | [`dim31-leech-sloane-module`](improved/dim31-leech-sloane-module/) | 31 | retained 251,395; 141 above PackingStar; complete final geometry and independent exact module and partial-union reconstruction |
