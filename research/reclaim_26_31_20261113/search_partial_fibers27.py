@@ -55,7 +55,7 @@ def tails12():
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument('--source',type=Path,required=True); ap.add_argument('--out',type=Path,required=True)
-    ap.add_argument('--cutoff',type=int,default=12); ap.add_argument('--seconds',type=float,default=180)
+    ap.add_argument('--cutoff',type=int,default=256); ap.add_argument('--seconds',type=float,default=180)
     ap.add_argument('--max-candidates',type=int,default=12000); ap.add_argument('--seed',type=int,default=20261114)
     args=ap.parse_args(); args.out.mkdir(parents=True,exist_ok=False); t0=time.monotonic()
     z=np.load(args.source,allow_pickle=False); X=z['points'].astype(np.int64)
