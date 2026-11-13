@@ -128,6 +128,12 @@ def main():
             D=hc[chosen]@hc[chosen].T+2*(tc[chosen]@tc[chosen].T)
             if np.any(np.triu(D,1)>16): raise RuntimeError("selected candidates conflict")
         deleted=np.flatnonzero(np.isin(inverse,deleted_profiles)); gain=len(chosen)-len(deleted)
+        # Exact replay against every retained projected source profile.
+        retained_profiles=np.setdiff1d(np.arange(len(profiles)),deleted_profiles,assume_unique=False)
+        for k in chosen:
+            if np.any(greater2(hc[k]@profiles[retained_profiles,:8].astype(np.int64).T,
+                               tc[k]@profiles[retained_profiles,8:].astype(np.int64).T,16)):
+                raise RuntimeError("selected point conflicts with a retained source profile")
         report.update(selected=len(chosen),deleted=len(deleted),gain=int(gain),
             selected_indices=chosen.tolist(),deleted_profile_ids=deleted_profiles.tolist())
         if gain>0:
