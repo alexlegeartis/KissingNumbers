@@ -1,0 +1,31 @@
+{
+  "dimension": 26,
+  "sources": [
+    {
+      "label": "flats",
+      "total": 1792
+    },
+    {
+      "label": "six-supports",
+      "total": 2208
+    },
+    {
+      "label": "normal-catalogue",
+      "total": 2704
+    },
+    {
+      "label": "octad-transplants",
+      "total": 4662
+    }
+  ],
+  "candidates": 4662,
+  "old_blockers": 4982,
+  "conflicts": 39556,
+  "solver_status": 0,
+  "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "gain": 0,
+  "added": 0,
+  "removed": 0,
+  "numerical_upper_bound": -0.0,
+  "seconds": 66.12928188799992
+}

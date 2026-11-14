@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "name": "original26",
+      "dimension": 26,
+      "status": "PASS",
+      "candidates": 2004,
+      "source_points": 201180,
+      "exact_gain_upper_bound": [
+        33,
+        8388608
+      ],
+      "integer_gain_upper_bound": 0,
+      "cliques": 3085,
+      "source_owner_products_checked": 4894,
+      "candidate_clique_products_checked": 5119,
+      "arithmetic": "Integer dot products, exact Q(sqrt(3)) signs, and Fraction weights.",
+      "scope": "The explicit finite pool only; all source points may be deleted. No assertion of global optimality or complete source geometry."
+    },
+    {
+      "name": "joint26",
+      "dimension": 26,
+      "status": "PASS",
+      "candidates": 4662,
+      "source_points": 201180,
+      "exact_gain_upper_bound": [
+        47,
+        4194304
+      ],
+      "integer_gain_upper_bound": 0,
+      "cliques": 3866,
+      "source_owner_products_checked": 9853,
+      "candidate_clique_products_checked": 21645,
+      "arithmetic": "Integer dot products, exact Q(sqrt(3)) signs, and Fraction weights.",
+      "scope": "The explicit finite pool only; all source points may be deleted. No assertion of global optimality or complete source geometry."
+    },
+    {
+      "name": "joint27",
+      "dimension": 27,
+      "status": "PASS",
+      "candidates": 5230,
+      "source_points": 209862,
+      "exact_gain_upper_bound": [
+        347,
+        16777216
+      ],
+      "integer_gain_upper_bound": 0,
+      "cliques": 2244,
+      "source_owner_products_checked": 12435,
+      "candidate_clique_products_checked": 41457,
+      "arithmetic": "Integer dot products, exact Q(sqrt(3)) signs, and Fraction weights.",
+      "scope": "The explicit finite pool only; all source points may be deleted. No assertion of global optimality or complete source geometry."
+    }
+  ],
+  "seconds": 1.61516590500014,
+  "no_new_lower_bound": true
+}

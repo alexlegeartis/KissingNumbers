@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "repository_start_commit": "921b1b653f15b599b78953139448be71d8f3812e",
+  "packingstar_commit": "2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6",
+  "packingstar_source_url": "https://github.com/CDM1619/PackingStar/tree/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111",
+  "records": [
+    {
+      "name": "original26",
+      "dimension": 26,
+      "baseline": 201180,
+      "candidates": 2004,
+      "source": "source26.npz",
+      "pool": "original26.npz",
+      "certificate": "original26_dual.json",
+      "reference_pool": "transplant759_original.npz"
+    },
+    {
+      "name": "joint26",
+      "dimension": 26,
+      "baseline": 201180,
+      "candidates": 4662,
+      "source": "source26.npz",
+      "pool": "joint26.npz",
+      "certificate": "joint26_dual.json"
+    },
+    {
+      "name": "joint27",
+      "dimension": 27,
+      "baseline": 209862,
+      "candidates": 5230,
+      "source": "source27.npz",
+      "pool": "joint27.npz",
+      "certificate": "joint27_dual.json"
+    }
+  ],
+  "sha256": {
+    "data/joint26.npz": "d8a64b3c25f451289713834d63f1233335c940b2d9210d57982e14912a8c8b86",
+    "data/joint26_dual.json": "cdcc2b71e9a95c782f81dce0cb30837d1b03cea90c64990daf1d66ffccfa6152",
+    "data/joint27.npz": "17cdc5f7512c3062d78303f03f5976eb1324fa941fcc66d46183f006cc5757e9",
+    "data/joint27_dual.json": "d759826c3e08d47be9f6a353ef57ad2009e1d45588f085879b01f550c975f1ba",
+    "data/original26.npz": "4c0eb5b0e3227e3b4151628ed1759a348f730ee19abe3f1f6ac471890dadf5fa",
+    "data/original26_dual.json": "c9baaa970b05116409f2b51b9f53811647838de44bd6d10b17e567f86b1bd475",
+    "data/source26.npz": "36732203081894af188e75e2dae69327961b79c7b0781385b1589025b7e0b309",
+    "data/source27.npz": "79f8c596a3bdffac1005032af0edaa8790d3c724f146115898237905982e757e",
+    "data/transplant759_original.npz": "5858f2dcc02b9aeda80e89f07b42d5c532ffccafbc1e98970c77bccd5f45a40b"
+  }
+}
