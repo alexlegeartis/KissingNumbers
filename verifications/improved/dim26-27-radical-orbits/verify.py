@@ -1,21 +1,24 @@
 """Pinned exchange reconstruction, separate integer delta proof, full geometry."""
 from pathlib import Path
-import hashlib,json,subprocess,sys,tempfile
+import argparse,hashlib,json,subprocess,sys,tempfile
 import numpy as np
 if not __debug__:raise RuntimeError('Run without -O: assertions are required.')
 ROOT=Path(__file__).resolve().parent
 def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--count',type=int,choices=(201182,201184),default=201184)
+    args=ap.parse_args();count=args.count
     manifest=json.loads((ROOT/'manifest.json').read_text())
     for name,digest in manifest.items():
         assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest,name
-    s=np.load(ROOT/'data/source26_201180.npz');z=np.load(ROOT/'data/coordinates26_201182.npz')
-    e=np.load(ROOT/'data/exchange26.npz');A=z['rational'];B=z['radical']
+    s=np.load(ROOT/'data/source26_201180.npz');z=np.load(ROOT/f'data/coordinates26_{count}.npz')
+    e=np.load(ROOT/('data/exchange26.npz' if count==201182 else 'data/exchange26_201184.npz'));A=z['rational'];B=z['radical']
     O=2*np.r_[s['rational_points'],s['quadratic_A']]
     OB=2*np.r_[np.zeros_like(s['rational_points']),s['quadratic_B']]
-    assert A.shape==B.shape==(201182,26)
+    assert A.shape==B.shape==(count,26)
     addA,addB,removed=e['added_A'],e['added_B'],e['removed_indices']
-    assert addA.shape==addB.shape==(68,26) and removed.shape==(66,)
-    assert len(np.unique(removed))==66 and np.all((removed>=0)&(removed<len(O)))
+    na,nr=(68,66) if count==201182 else (144,140)
+    assert addA.shape==addB.shape==(na,26) and removed.shape==(nr,)
+    assert len(np.unique(removed))==nr and np.all((removed>=0)&(removed<len(O)))
     keep=np.ones(len(O),bool);keep[removed]=False
     rebuilt={np.r_[v,b].tobytes() for v,b in zip(np.r_[O[keep],addA],np.r_[OB[keep],addB])}
     keys=[np.r_[v,b].tobytes() for v,b in zip(A,B)]
@@ -37,7 +40,7 @@ def main():
         assert not bad.any()
     print('SOURCE_AND_EXCHANGE_EXACT',len(O),'+',len(addA),'-',len(removed),'=',len(A),flush=True)
     with tempfile.TemporaryDirectory() as td:
-        subprocess.run([sys.executable,str(ROOT/'verify_geometry.py'),str(ROOT/'data/coordinates26_201182.npz'),
+        subprocess.run([sys.executable,str(ROOT/'verify_geometry.py'),str(ROOT/f'data/coordinates26_{count}.npz'),
                         '--out',str(Path(td)/'verification.json')],check=True)
-    print('PASS: 26D 201182, full exact final geometry; no source-validity premise.',flush=True)
+    print(f'PASS: 26D {count}, full exact final geometry; no source-validity premise.',flush=True)
 if __name__=='__main__':main()

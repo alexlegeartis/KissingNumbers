@@ -562,7 +562,7 @@ def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
         ('dim26-27-radical-orbits', [26], [('verify.py',), ('negative_controls.py',)],
-         'complete exact geometry of 201182 points and all 20236997971 unordered pairs; independent integer exchange and semantic rejection controls'),
+         'complete exact geometry of 201184 points and all 20237400336 unordered pairs; independent integer exchange and semantic rejection controls'),
         ('dim61-62-66-affine-reconstruction', [61,62,66], [('verify.py',), ('verify.py', '--independent')], 'exact new affine classes, all affected support pairs, independent brute-force kernels and direct sign-pair replay; unchanged layers use parent package'),
         ('dim63-65-affine-reconstruction', [63,64,65], [('verify.py',), ('section63.py',), ('audit/audit.py',), ('audit/section_audit.py',)], 'exact affine sign classes and explicit relabeled 63D section; independent replay plus retained parent geometry'),
         ('dim29-30-native-partial-design', [29,30], [('verify.py',), ('negative_controls.py',), ('independent29/audit.py',), ('independent30/audit.py',)],

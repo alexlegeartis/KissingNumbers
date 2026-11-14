@@ -1,16 +1,17 @@
-# 26D radical-orbit continuation: 201,182
+# 26D radical-orbit continuation: 201,184
 
-The complete coordinate certificate proves **K(26) >= 201,182**, two above
+The complete coordinate certificate proves **K(26) >= 201,184**, four above
 PackingStar's 201,180-point November 11 release at commit
 `2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6`. This is a lower bound; no
 optimality or exhaustive worldwide-priority claim is made. The 27D search
 continues separately.
 
-The construction reroutes sixteen four-point midpoint orbits inside the
-ten-dimensional normal sector. It removes 64 old midpoint points, inserts
-64 new ones, then replaces two Leech points with a four-point orbit over
-Q(sqrt(3)). All head points are retained. The normal sector grows from 380
-to 382 points. The full code has 201,162 rational and 20 radical points.
+The construction reroutes 28 four-point midpoint orbits inside the
+ten-dimensional normal sector: 112 old midpoint points become 112 new ones.
+It replaces four old radical orbits by six new radical orbits, restores eight
+Leech points and removes twelve. All head points are retained. This is a
+144-for-140 exchange. The normal sector grows from 380 to 384 points; the full
+code has 201,160 rational and 24 radical points.
 
 Coordinates are `(A + sqrt(3)*B)/2`. Every point has squared norm 32 and
 every distinct inner product is at most 16. Equivalently the stored
@@ -22,9 +23,9 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python negative_controls.py
 ```
 
 Only Python and NumPy are required. The default proof pins every supplied
-file, reconstructs the 68-for-66 exchange, verifies all inserted-point
+file, reconstructs the 144-for-140 exchange, verifies all inserted-point
 interactions with separate coordinate-at-a-time integer arithmetic, and
-checks **all 20,236,997,971 unordered pairs of the final configuration**.
+checks **all 20,237,400,336 unordered pairs of the final configuration**.
 Final validity assumes no unverified source geometry.
 
 The full geometry checker is independent of discovery. Rational matrix
@@ -34,7 +35,7 @@ pairs use integer lower and upper bounds for sqrt(3), obtained by an integer
 square root; no floating tolerance is used. Six malformed-input controls
 exercise norms, distinctness, both pair types and metadata.
 
-`data/verification26.json` records the complete verification and coordinate
+`data/verification26_201184.json` records the complete verification and coordinate
 hash. `data/discovery26.log` and `discovery_snapshot.py` preserve the actual
 CP-SAT discovery. The latter is a research snapshot using the original
 workspace paths; it is unnecessary for certificate replay. CP-SAT's
@@ -47,3 +48,7 @@ The pinned source is credited to
 
 `final.py` reads the actual retained coordinate count for the registry.
 `verify_geometry.py` is the standalone full-pair checker invoked by `verify.py`.
+
+The earlier 201,182-point certificate is retained. Replay it with
+`python verify.py --count 201182`. `discovery_normal_snapshot.py` and
+`data/discovery26_201184.log` preserve the stronger normal-sector search.
