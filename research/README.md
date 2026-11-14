@@ -10,6 +10,16 @@ its reproduction by the engine. The earlier lower-dimensional campaigns below
 produced no new kissing-number lower bound. Registered constructions remain in
 [`../verifications/`](../verifications/) and [`../RESULTS.md`](../RESULTS.md).
 
+## 14 November continuation in 26D and 27D
+
+[The continuation checkpoint](26_27_continuation_20261114/) preserves new
+midpoint catalogues, complete contact-square enumerations, individual-point
+and cycle searches, and joint head/midpoint models. No improvement over
+201,180 or 209,862 has been obtained. It includes hash-pinned inputs, an
+independent geometry checker, and a replayable reduced 27D finite-union search.
+The preceding [exact finite-pool exclusions](26_27_exchange_exclusions_20261114/)
+remain separate from these continuation receipts.
+
 ## 13 November PackingStar attack in 26–31D
 
 [The new campaign](reclaim_26_31_20261113/) gives **248,084 in 30D** and

@@ -442,7 +442,7 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim2
             'verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks')
 
 # Exact 13 November module replacements, including the retained BW14 checkpoint.
-for _package in ('dim30-bw14-module', 'dim30-leech-sloane-section',
+for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sloane-section',
                  'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
@@ -2030,6 +2030,7 @@ if '--write-results' in sys.argv and not fail:
         'dim88-96-z8-golay': 'published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays',
         'dim61-68-95-96-code-layers': 'shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay',
         'dim26-30-asymmetric-exchanges': 'signed-point normal-sector exchanges without antipodal constraints; full independent exact all-pairs replay',
+        'dim26-27-radical-orbits': '26D radical-orbit and 27D E8 head-frame exchanges over PackingStar; complete exact final geometry and independent integer exchanges',
         'dim27-quadratic-normal-module': '384-point quadratic E8/cuboctahedral module replacing a 370-point normal sector; complete independent exact all-pairs verification',
         'dim28-29-november-sextets': 'corrected sextet unions over the November 11 PackingStar files; complete exact geometry and independent direct-int64 changed-pair replay',
         'dim30-bw14-module': 'oriented Barnes-Wall 14-dimensional module; 932-for-960 exchange over the November 11 PackingStar source; complete exact geometry and independent integer reconstruction',
@@ -2087,6 +2088,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append('14 November 2026: radical-orbit and E8 head-frame exchanges give 201188 in 26D and 209884 in 27D, respectively 8 and 22 above the pinned PackingStar November 11 release. The 160-for-152 and 238-for-216 exact exchanges and all 20238205078 and 22025541786 unordered final pairs are verified independently. See verifications/improved/dim26-27-radical-orbits/.')
     out.append('13 November 2026 native partial-design continuation: 231814 in29D and248180 in30D, improvements of38 and96 over retained repository certificates, and40 and188 over pinned PackingStar. Complete exact source/delta and final geometry verification; see verifications/improved/dim29-30-native-partial-design/.')
     out.append('13 November 2026 reconstructed affine subcodes: 88979562 in61D, 122543436 in62D, 184415700 in63D, 335749696 in64D, 335817922 in65D and342291652 in66D. New exact sign-family certificates and independent replays extend the retained parent proof. See verifications/improved/dim61-62-66-affine-reconstruction/ and verifications/improved/dim63-65-affine-reconstruction/.')
     out.append('13 November 2026 further continuation: annealed E8 orientations and full exterior deletion pricing give 251420 in 31D, 24 above retained 251396 and 166 above pinned PackingStar. Complete exact geometry covers all 31605882490 unordered final pairs; see verifications/improved/dim31-annealed-design/.')

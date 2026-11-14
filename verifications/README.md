@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-56 packages, one per **construction idea** rather than one per dimension, because several
+57 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -31,8 +31,9 @@ file, and the history of the lower bound in its dimensions.
 | [`dim54-59-p48-coverage`](improved/dim54-59-p48-coverage/) | 54–59 | joint selections of complete P48 class images; exact finite tail, isometry and disjointness checks with published mother-shell inputs |
 | [`dim60-antipodal840-lift`](improved/dim60-antipodal840-lift/) | 60 | retained construction, 58,543,525; exact 840-direction and 841-pole codes, 420 disjoint P48 classes; published mother-shell inputs |
 | [`dim31-latitude-contact-exchange`](improved/dim31-latitude-contact-exchange/) | 31 | retained 251,200; explicit four-for-eight exchange, two complete exact coordinate proofs including independent integer-only enumeration |
-| [`dim27-31-algebraic-completion`](improved/dim27-31-algebraic-completion/) | 27, 31 | current 209,825 in 27D and retained 251,196 in 31D; partial signed orbits, shared deletions and an orthogonal sign cube; complete exact geometry and independent direct-integer changes |
+| [`dim27-31-algebraic-completion`](improved/dim27-31-algebraic-completion/) | 27, 31 | retained 209,825 in 27D and 251,196 in 31D; partial signed orbits, shared deletions and an orthogonal sign cube; complete exact geometry and independent direct-integer changes |
 | [`dim27-31-joint-refills`](improved/dim27-31-joint-refills/) | 27–31 | retained earlier certificates; exact full geometry and direct-integer insertion checks |
+| [`dim26-27-radical-orbits`](improved/dim26-27-radical-orbits/) | 26, 27 | **201,188 and 209,884**, +8 and +22 over PackingStar; complete exact final geometry and independent integer 160-for-152 and 238-for-216 exchanges |
 | [`dim26-30-asymmetric-exchanges`](improved/dim26-30-asymmetric-exchanges/) | 26, 28–30 | 201,136 current in 26D; retained 221,694; 231,638; 247,960; asymmetric integer codes with complete exact all-pairs proofs |
 | [`dim27-quadratic-normal-module`](improved/dim27-quadratic-normal-module/) | 27 | retained 209,600-point quadratic construction, +14 over PackingStar; complete independent exact all-pairs replay |
 | [`dim31-normal-module-exchange`](improved/dim31-normal-module-exchange/) | 31 | retained 251,110-point integer construction, +108 over PackingStar's 28 October update; complete independent all-pairs replay |

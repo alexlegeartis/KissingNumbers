@@ -1,0 +1,2783 @@
+{
+  "dimension": 27,
+  "source_sha256": "79f8c596a3bdffac1005032af0edaa8790d3c724f146115898237905982e757e",
+  "baseline": 209862,
+  "body_count": 1130496,
+  "tail_count": 12,
+  "cutoff": 4,
+  "records": [
+    {
+      "pair": 0,
+      "positions": [
+        0,
+        1
+      ],
+      "admitted": 0,
+      "cumulative": 0,
+      "seconds": 1.1919821510000475
+    },
+    {
+      "pair": 1,
+      "positions": [
+        0,
+        2
+      ],
+      "admitted": 128,
+      "cumulative": 128,
+      "seconds": 1.9972937300001377
+    },
+    {
+      "pair": 2,
+      "positions": [
+        0,
+        3
+      ],
+      "admitted": 0,
+      "cumulative": 128,
+      "seconds": 2.4594578940000247
+    },
+    {
+      "pair": 3,
+      "positions": [
+        0,
+        4
+      ],
+      "admitted": 256,
+      "cumulative": 384,
+      "seconds": 3.2480195260000073
+    },
+    {
+      "pair": 4,
+      "positions": [
+        0,
+        5
+      ],
+      "admitted": 128,
+      "cumulative": 512,
+      "seconds": 4.007411002000026
+    },
+    {
+      "pair": 5,
+      "positions": [
+        0,
+        6
+      ],
+      "admitted": 0,
+      "cumulative": 512,
+      "seconds": 4.80055051599993
+    },
+    {
+      "pair": 6,
+      "positions": [
+        0,
+        7
+      ],
+      "admitted": 0,
+      "cumulative": 512,
+      "seconds": 5.258055920000061
+    },
+    {
+      "pair": 7,
+      "positions": [
+        0,
+        8
+      ],
+      "admitted": 0,
+      "cumulative": 512,
+      "seconds": 5.693624805000127
+    },
+    {
+      "pair": 8,
+      "positions": [
+        0,
+        9
+      ],
+      "admitted": 0,
+      "cumulative": 512,
+      "seconds": 6.134087161000025
+    },
+    {
+      "pair": 9,
+      "positions": [
+        0,
+        10
+      ],
+      "admitted": 256,
+      "cumulative": 768,
+      "seconds": 6.874704123000129
+    },
+    {
+      "pair": 10,
+      "positions": [
+        0,
+        11
+      ],
+      "admitted": 256,
+      "cumulative": 1024,
+      "seconds": 7.660947148000105
+    },
+    {
+      "pair": 11,
+      "positions": [
+        0,
+        12
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 8.10819355700005
+    },
+    {
+      "pair": 12,
+      "positions": [
+        0,
+        13
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 8.554635004000147
+    },
+    {
+      "pair": 13,
+      "positions": [
+        0,
+        14
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 8.997247871000127
+    },
+    {
+      "pair": 14,
+      "positions": [
+        0,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 9.431892607000009
+    },
+    {
+      "pair": 15,
+      "positions": [
+        0,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 9.873234464999996
+    },
+    {
+      "pair": 16,
+      "positions": [
+        0,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 10.308975867000072
+    },
+    {
+      "pair": 17,
+      "positions": [
+        0,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 10.749554255000021
+    },
+    {
+      "pair": 18,
+      "positions": [
+        0,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 11.184817977999955
+    },
+    {
+      "pair": 19,
+      "positions": [
+        0,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 11.625845242999958
+    },
+    {
+      "pair": 20,
+      "positions": [
+        0,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 12.060641287999943
+    },
+    {
+      "pair": 21,
+      "positions": [
+        0,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 12.502837220999936
+    },
+    {
+      "pair": 22,
+      "positions": [
+        0,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 13.278971827000078
+    },
+    {
+      "pair": 23,
+      "positions": [
+        1,
+        2
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 13.734358930000099
+    },
+    {
+      "pair": 24,
+      "positions": [
+        1,
+        3
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 14.401820477000001
+    },
+    {
+      "pair": 25,
+      "positions": [
+        1,
+        4
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 14.863617449999992
+    },
+    {
+      "pair": 26,
+      "positions": [
+        1,
+        5
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 15.307666956000048
+    },
+    {
+      "pair": 27,
+      "positions": [
+        1,
+        6
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 15.759247723000044
+    },
+    {
+      "pair": 28,
+      "positions": [
+        1,
+        7
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 16.416464689000122
+    },
+    {
+      "pair": 29,
+      "positions": [
+        1,
+        8
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 17.11637908700004
+    },
+    {
+      "pair": 30,
+      "positions": [
+        1,
+        9
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 17.841185072000144
+    },
+    {
+      "pair": 31,
+      "positions": [
+        1,
+        10
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 18.30941929400001
+    },
+    {
+      "pair": 32,
+      "positions": [
+        1,
+        11
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 18.835731205000002
+    },
+    {
+      "pair": 33,
+      "positions": [
+        1,
+        12
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 19.47793441900012
+    },
+    {
+      "pair": 34,
+      "positions": [
+        1,
+        13
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 20.138827767000066
+    },
+    {
+      "pair": 35,
+      "positions": [
+        1,
+        14
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 20.80507599900011
+    },
+    {
+      "pair": 36,
+      "positions": [
+        1,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 21.461768033
+    },
+    {
+      "pair": 37,
+      "positions": [
+        1,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 22.108132696999974
+    },
+    {
+      "pair": 38,
+      "positions": [
+        1,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 22.789575612000135
+    },
+    {
+      "pair": 39,
+      "positions": [
+        1,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 23.455518296000037
+    },
+    {
+      "pair": 40,
+      "positions": [
+        1,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 24.111660362000066
+    },
+    {
+      "pair": 41,
+      "positions": [
+        1,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 24.75426607700001
+    },
+    {
+      "pair": 42,
+      "positions": [
+        1,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 25.43394635100003
+    },
+    {
+      "pair": 43,
+      "positions": [
+        1,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 26.084557443999984
+    },
+    {
+      "pair": 44,
+      "positions": [
+        1,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 26.52462160999994
+    },
+    {
+      "pair": 45,
+      "positions": [
+        2,
+        3
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 26.97966832399993
+    },
+    {
+      "pair": 46,
+      "positions": [
+        2,
+        4
+      ],
+      "admitted": 0,
+      "cumulative": 1024,
+      "seconds": 27.784955856000124
+    },
+    {
+      "pair": 47,
+      "positions": [
+        2,
+        5
+      ],
+      "admitted": 256,
+      "cumulative": 1280,
+      "seconds": 28.56357832699996
+    },
+    {
+      "pair": 48,
+      "positions": [
+        2,
+        6
+      ],
+      "admitted": 128,
+      "cumulative": 1408,
+      "seconds": 29.377995306000003
+    },
+    {
+      "pair": 49,
+      "positions": [
+        2,
+        7
+      ],
+      "admitted": 0,
+      "cumulative": 1408,
+      "seconds": 29.8237344260001
+    },
+    {
+      "pair": 50,
+      "positions": [
+        2,
+        8
+      ],
+      "admitted": 0,
+      "cumulative": 1408,
+      "seconds": 30.26622697100015
+    },
+    {
+      "pair": 51,
+      "positions": [
+        2,
+        9
+      ],
+      "admitted": 0,
+      "cumulative": 1408,
+      "seconds": 30.70916860300008
+    },
+    {
+      "pair": 52,
+      "positions": [
+        2,
+        10
+      ],
+      "admitted": 256,
+      "cumulative": 1664,
+      "seconds": 31.500075380999988
+    },
+    {
+      "pair": 53,
+      "positions": [
+        2,
+        11
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 32.26874105900015
+    },
+    {
+      "pair": 54,
+      "positions": [
+        2,
+        12
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 32.728414434000115
+    },
+    {
+      "pair": 55,
+      "positions": [
+        2,
+        13
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 33.20313385700001
+    },
+    {
+      "pair": 56,
+      "positions": [
+        2,
+        14
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 33.63808558699998
+    },
+    {
+      "pair": 57,
+      "positions": [
+        2,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 34.085878942000136
+    },
+    {
+      "pair": 58,
+      "positions": [
+        2,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 34.51859718200012
+    },
+    {
+      "pair": 59,
+      "positions": [
+        2,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 34.95881629199994
+    },
+    {
+      "pair": 60,
+      "positions": [
+        2,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 35.42683453199993
+    },
+    {
+      "pair": 61,
+      "positions": [
+        2,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 35.87716545300009
+    },
+    {
+      "pair": 62,
+      "positions": [
+        2,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 36.3185321200001
+    },
+    {
+      "pair": 63,
+      "positions": [
+        2,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 36.76564667499997
+    },
+    {
+      "pair": 64,
+      "positions": [
+        2,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 37.21532124500004
+    },
+    {
+      "pair": 65,
+      "positions": [
+        2,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 37.971655144000124
+    },
+    {
+      "pair": 66,
+      "positions": [
+        3,
+        4
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 38.41207376500006
+    },
+    {
+      "pair": 67,
+      "positions": [
+        3,
+        5
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 38.85188009100011
+    },
+    {
+      "pair": 68,
+      "positions": [
+        3,
+        6
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 39.30621229999997
+    },
+    {
+      "pair": 69,
+      "positions": [
+        3,
+        7
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 39.96636214900013
+    },
+    {
+      "pair": 70,
+      "positions": [
+        3,
+        8
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 40.62372408600004
+    },
+    {
+      "pair": 71,
+      "positions": [
+        3,
+        9
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 41.26968610300014
+    },
+    {
+      "pair": 72,
+      "positions": [
+        3,
+        10
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 41.71730198499995
+    },
+    {
+      "pair": 73,
+      "positions": [
+        3,
+        11
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 42.155606140000145
+    },
+    {
+      "pair": 74,
+      "positions": [
+        3,
+        12
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 42.81090981500006
+    },
+    {
+      "pair": 75,
+      "positions": [
+        3,
+        13
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 43.47833417900006
+    },
+    {
+      "pair": 76,
+      "positions": [
+        3,
+        14
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 44.142937030999974
+    },
+    {
+      "pair": 77,
+      "positions": [
+        3,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 44.79698608400008
+    },
+    {
+      "pair": 78,
+      "positions": [
+        3,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 45.47013567499994
+    },
+    {
+      "pair": 79,
+      "positions": [
+        3,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 46.123610394000025
+    },
+    {
+      "pair": 80,
+      "positions": [
+        3,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 46.80426162100002
+    },
+    {
+      "pair": 81,
+      "positions": [
+        3,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 47.467348865000076
+    },
+    {
+      "pair": 82,
+      "positions": [
+        3,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 48.166959371000075
+    },
+    {
+      "pair": 83,
+      "positions": [
+        3,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 48.819339206999985
+    },
+    {
+      "pair": 84,
+      "positions": [
+        3,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 49.49500881800009
+    },
+    {
+      "pair": 85,
+      "positions": [
+        3,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 1664,
+      "seconds": 49.928818976
+    },
+    {
+      "pair": 86,
+      "positions": [
+        4,
+        5
+      ],
+      "admitted": 256,
+      "cumulative": 1920,
+      "seconds": 50.745416947999956
+    },
+    {
+      "pair": 87,
+      "positions": [
+        4,
+        6
+      ],
+      "admitted": 256,
+      "cumulative": 2176,
+      "seconds": 51.548950789999935
+    },
+    {
+      "pair": 88,
+      "positions": [
+        4,
+        7
+      ],
+      "admitted": 0,
+      "cumulative": 2176,
+      "seconds": 51.99404802599997
+    },
+    {
+      "pair": 89,
+      "positions": [
+        4,
+        8
+      ],
+      "admitted": 0,
+      "cumulative": 2176,
+      "seconds": 52.456999217999964
+    },
+    {
+      "pair": 90,
+      "positions": [
+        4,
+        9
+      ],
+      "admitted": 0,
+      "cumulative": 2176,
+      "seconds": 52.898521631999984
+    },
+    {
+      "pair": 91,
+      "positions": [
+        4,
+        10
+      ],
+      "admitted": 0,
+      "cumulative": 2176,
+      "seconds": 53.676009757999964
+    },
+    {
+      "pair": 92,
+      "positions": [
+        4,
+        11
+      ],
+      "admitted": 128,
+      "cumulative": 2304,
+      "seconds": 54.45304348900004
+    },
+    {
+      "pair": 93,
+      "positions": [
+        4,
+        12
+      ],
+      "admitted": 0,
+      "cumulative": 2304,
+      "seconds": 54.90514213300003
+    },
+    {
+      "pair": 94,
+      "positions": [
+        4,
+        13
+      ],
+      "admitted": 0,
+      "cumulative": 2304,
+      "seconds": 55.377125620000015
+    },
+    {
+      "pair": 95,
+      "positions": [
+        4,
+        14
+      ],
+      "admitted": 0,
+      "cumulative": 2304,
+      "seconds": 55.83404848200007
+    },
+    {
+      "pair": 96,
+      "positions": [
+        4,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 2304,
+      "seconds": 56.275699325999994
+    },
+    {
+      "pair": 97,
+      "positions": [
+        4,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 2304,
+      "seconds": 56.740891348000105
+    },
+    {
+      "pair": 98,
+      "positions": [
+        4,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 2304,
+      "seconds": 57.18832876900001
+    },
+    {
+      "pair": 99,
+      "positions": [
+        4,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 2304,
+      "seconds": 57.64827918500009
+    },
+    {
+      "pair": 100,
+      "positions": [
+        4,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 2304,
+      "seconds": 58.09399999800007
+    },
+    {
+      "pair": 101,
+      "positions": [
+        4,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 2304,
+      "seconds": 58.54489401699993
+    },
+    {
+      "pair": 102,
+      "positions": [
+        4,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 2304,
+      "seconds": 58.98932329200011
+    },
+    {
+      "pair": 103,
+      "positions": [
+        4,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 2304,
+      "seconds": 59.45118328300009
+    },
+    {
+      "pair": 104,
+      "positions": [
+        4,
+        23
+      ],
+      "admitted": 128,
+      "cumulative": 2432,
+      "seconds": 60.22168128800013
+    },
+    {
+      "pair": 105,
+      "positions": [
+        5,
+        6
+      ],
+      "admitted": 128,
+      "cumulative": 2560,
+      "seconds": 61.00069698100015
+    },
+    {
+      "pair": 106,
+      "positions": [
+        5,
+        7
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 61.445456553999975
+    },
+    {
+      "pair": 107,
+      "positions": [
+        5,
+        8
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 61.882569987000124
+    },
+    {
+      "pair": 108,
+      "positions": [
+        5,
+        9
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 62.3615988250001
+    },
+    {
+      "pair": 109,
+      "positions": [
+        5,
+        10
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 63.147626013000036
+    },
+    {
+      "pair": 110,
+      "positions": [
+        5,
+        11
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 63.93598737499997
+    },
+    {
+      "pair": 111,
+      "positions": [
+        5,
+        12
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 64.36994083900004
+    },
+    {
+      "pair": 112,
+      "positions": [
+        5,
+        13
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 64.82100446799996
+    },
+    {
+      "pair": 113,
+      "positions": [
+        5,
+        14
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 65.28012621800008
+    },
+    {
+      "pair": 114,
+      "positions": [
+        5,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 65.7309853700001
+    },
+    {
+      "pair": 115,
+      "positions": [
+        5,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 66.16552303899994
+    },
+    {
+      "pair": 116,
+      "positions": [
+        5,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 66.60405317899995
+    },
+    {
+      "pair": 117,
+      "positions": [
+        5,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 67.03871749500013
+    },
+    {
+      "pair": 118,
+      "positions": [
+        5,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 67.47992419499997
+    },
+    {
+      "pair": 119,
+      "positions": [
+        5,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 67.91366684400009
+    },
+    {
+      "pair": 120,
+      "positions": [
+        5,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 68.35466965599994
+    },
+    {
+      "pair": 121,
+      "positions": [
+        5,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 68.78345440199996
+    },
+    {
+      "pair": 122,
+      "positions": [
+        5,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 69.53042248199995
+    },
+    {
+      "pair": 123,
+      "positions": [
+        6,
+        7
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 69.98010929500015
+    },
+    {
+      "pair": 124,
+      "positions": [
+        6,
+        8
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 70.42772271700005
+    },
+    {
+      "pair": 125,
+      "positions": [
+        6,
+        9
+      ],
+      "admitted": 0,
+      "cumulative": 2560,
+      "seconds": 70.89069803200005
+    },
+    {
+      "pair": 126,
+      "positions": [
+        6,
+        10
+      ],
+      "admitted": 256,
+      "cumulative": 2816,
+      "seconds": 71.66543941200007
+    },
+    {
+      "pair": 127,
+      "positions": [
+        6,
+        11
+      ],
+      "admitted": 0,
+      "cumulative": 2816,
+      "seconds": 72.46824232800009
+    },
+    {
+      "pair": 128,
+      "positions": [
+        6,
+        12
+      ],
+      "admitted": 0,
+      "cumulative": 2816,
+      "seconds": 72.92595836400005
+    },
+    {
+      "pair": 129,
+      "positions": [
+        6,
+        13
+      ],
+      "admitted": 0,
+      "cumulative": 2816,
+      "seconds": 73.38319058599996
+    },
+    {
+      "pair": 130,
+      "positions": [
+        6,
+        14
+      ],
+      "admitted": 0,
+      "cumulative": 2816,
+      "seconds": 73.83207150499993
+    },
+    {
+      "pair": 131,
+      "positions": [
+        6,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 2816,
+      "seconds": 74.28750363800009
+    },
+    {
+      "pair": 132,
+      "positions": [
+        6,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 2816,
+      "seconds": 74.73153980100005
+    },
+    {
+      "pair": 133,
+      "positions": [
+        6,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 2816,
+      "seconds": 75.18442545300013
+    },
+    {
+      "pair": 134,
+      "positions": [
+        6,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 2816,
+      "seconds": 75.62840381699993
+    },
+    {
+      "pair": 135,
+      "positions": [
+        6,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 2816,
+      "seconds": 76.07560353500003
+    },
+    {
+      "pair": 136,
+      "positions": [
+        6,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 2816,
+      "seconds": 76.52651210399995
+    },
+    {
+      "pair": 137,
+      "positions": [
+        6,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 2816,
+      "seconds": 76.98271324100006
+    },
+    {
+      "pair": 138,
+      "positions": [
+        6,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 2816,
+      "seconds": 77.428033315
+    },
+    {
+      "pair": 139,
+      "positions": [
+        6,
+        23
+      ],
+      "admitted": 256,
+      "cumulative": 3072,
+      "seconds": 78.22534807800002
+    },
+    {
+      "pair": 140,
+      "positions": [
+        7,
+        8
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 78.87358164200009
+    },
+    {
+      "pair": 141,
+      "positions": [
+        7,
+        9
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 79.54972247299997
+    },
+    {
+      "pair": 142,
+      "positions": [
+        7,
+        10
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 79.97851074200003
+    },
+    {
+      "pair": 143,
+      "positions": [
+        7,
+        11
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 80.42796726400002
+    },
+    {
+      "pair": 144,
+      "positions": [
+        7,
+        12
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 81.08091025700014
+    },
+    {
+      "pair": 145,
+      "positions": [
+        7,
+        13
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 81.72557246299993
+    },
+    {
+      "pair": 146,
+      "positions": [
+        7,
+        14
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 82.38157401100011
+    },
+    {
+      "pair": 147,
+      "positions": [
+        7,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 83.0334133450001
+    },
+    {
+      "pair": 148,
+      "positions": [
+        7,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 83.68550539400007
+    },
+    {
+      "pair": 149,
+      "positions": [
+        7,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 84.33830456999999
+    },
+    {
+      "pair": 150,
+      "positions": [
+        7,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 84.99328150700012
+    },
+    {
+      "pair": 151,
+      "positions": [
+        7,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 85.63852357500014
+    },
+    {
+      "pair": 152,
+      "positions": [
+        7,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 86.30156486200008
+    },
+    {
+      "pair": 153,
+      "positions": [
+        7,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 86.95915644900015
+    },
+    {
+      "pair": 154,
+      "positions": [
+        7,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 87.61434065799995
+    },
+    {
+      "pair": 155,
+      "positions": [
+        7,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 88.04906781399995
+    },
+    {
+      "pair": 156,
+      "positions": [
+        8,
+        9
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 88.71546505700007
+    },
+    {
+      "pair": 157,
+      "positions": [
+        8,
+        10
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 89.15025700199999
+    },
+    {
+      "pair": 158,
+      "positions": [
+        8,
+        11
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 89.59342228000014
+    },
+    {
+      "pair": 159,
+      "positions": [
+        8,
+        12
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 90.24848479000002
+    },
+    {
+      "pair": 160,
+      "positions": [
+        8,
+        13
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 90.91972122800007
+    },
+    {
+      "pair": 161,
+      "positions": [
+        8,
+        14
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 91.5745799450001
+    },
+    {
+      "pair": 162,
+      "positions": [
+        8,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 92.24035283900002
+    },
+    {
+      "pair": 163,
+      "positions": [
+        8,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 92.90905242400004
+    },
+    {
+      "pair": 164,
+      "positions": [
+        8,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 93.55640431400002
+    },
+    {
+      "pair": 165,
+      "positions": [
+        8,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 94.22600008600011
+    },
+    {
+      "pair": 166,
+      "positions": [
+        8,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 94.88244914200004
+    },
+    {
+      "pair": 167,
+      "positions": [
+        8,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 95.55677091999996
+    },
+    {
+      "pair": 168,
+      "positions": [
+        8,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 96.20565978900004
+    },
+    {
+      "pair": 169,
+      "positions": [
+        8,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 96.8762350070001
+    },
+    {
+      "pair": 170,
+      "positions": [
+        8,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 97.31197963599993
+    },
+    {
+      "pair": 171,
+      "positions": [
+        9,
+        10
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 97.75478308600009
+    },
+    {
+      "pair": 172,
+      "positions": [
+        9,
+        11
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 98.19494634300008
+    },
+    {
+      "pair": 173,
+      "positions": [
+        9,
+        12
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 98.85481457800006
+    },
+    {
+      "pair": 174,
+      "positions": [
+        9,
+        13
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 99.51307242500002
+    },
+    {
+      "pair": 175,
+      "positions": [
+        9,
+        14
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 100.18501362200004
+    },
+    {
+      "pair": 176,
+      "positions": [
+        9,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 100.83672599300007
+    },
+    {
+      "pair": 177,
+      "positions": [
+        9,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 101.4997755500001
+    },
+    {
+      "pair": 178,
+      "positions": [
+        9,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 102.14983221000011
+    },
+    {
+      "pair": 179,
+      "positions": [
+        9,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 102.81043588900002
+    },
+    {
+      "pair": 180,
+      "positions": [
+        9,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 103.471587323
+    },
+    {
+      "pair": 181,
+      "positions": [
+        9,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 104.13791430200013
+    },
+    {
+      "pair": 182,
+      "positions": [
+        9,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 104.79365608600006
+    },
+    {
+      "pair": 183,
+      "positions": [
+        9,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 105.44061134899994
+    },
+    {
+      "pair": 184,
+      "positions": [
+        9,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 3072,
+      "seconds": 105.87857000000008
+    },
+    {
+      "pair": 185,
+      "positions": [
+        10,
+        11
+      ],
+      "admitted": 128,
+      "cumulative": 3200,
+      "seconds": 106.6431040980001
+    },
+    {
+      "pair": 186,
+      "positions": [
+        10,
+        12
+      ],
+      "admitted": 0,
+      "cumulative": 3200,
+      "seconds": 107.097935151
+    },
+    {
+      "pair": 187,
+      "positions": [
+        10,
+        13
+      ],
+      "admitted": 0,
+      "cumulative": 3200,
+      "seconds": 107.54061102900005
+    },
+    {
+      "pair": 188,
+      "positions": [
+        10,
+        14
+      ],
+      "admitted": 0,
+      "cumulative": 3200,
+      "seconds": 107.97687322299998
+    },
+    {
+      "pair": 189,
+      "positions": [
+        10,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 3200,
+      "seconds": 108.40856762499993
+    },
+    {
+      "pair": 190,
+      "positions": [
+        10,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 3200,
+      "seconds": 108.84861185800014
+    },
+    {
+      "pair": 191,
+      "positions": [
+        10,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 3200,
+      "seconds": 109.2790644700001
+    },
+    {
+      "pair": 192,
+      "positions": [
+        10,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 3200,
+      "seconds": 109.71445302200004
+    },
+    {
+      "pair": 193,
+      "positions": [
+        10,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 3200,
+      "seconds": 110.15128878199994
+    },
+    {
+      "pair": 194,
+      "positions": [
+        10,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 3200,
+      "seconds": 110.58865403100003
+    },
+    {
+      "pair": 195,
+      "positions": [
+        10,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 3200,
+      "seconds": 111.01619335300006
+    },
+    {
+      "pair": 196,
+      "positions": [
+        10,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3200,
+      "seconds": 111.45328223799993
+    },
+    {
+      "pair": 197,
+      "positions": [
+        10,
+        23
+      ],
+      "admitted": 128,
+      "cumulative": 3328,
+      "seconds": 112.19104274699998
+    },
+    {
+      "pair": 198,
+      "positions": [
+        11,
+        12
+      ],
+      "admitted": 0,
+      "cumulative": 3328,
+      "seconds": 112.63547433600002
+    },
+    {
+      "pair": 199,
+      "positions": [
+        11,
+        13
+      ],
+      "admitted": 0,
+      "cumulative": 3328,
+      "seconds": 113.07432944900006
+    },
+    {
+      "pair": 200,
+      "positions": [
+        11,
+        14
+      ],
+      "admitted": 0,
+      "cumulative": 3328,
+      "seconds": 113.52118772800009
+    },
+    {
+      "pair": 201,
+      "positions": [
+        11,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 3328,
+      "seconds": 113.96916927999996
+    },
+    {
+      "pair": 202,
+      "positions": [
+        11,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 3328,
+      "seconds": 114.41360302800013
+    },
+    {
+      "pair": 203,
+      "positions": [
+        11,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 3328,
+      "seconds": 114.86065730600012
+    },
+    {
+      "pair": 204,
+      "positions": [
+        11,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 3328,
+      "seconds": 115.29708051600005
+    },
+    {
+      "pair": 205,
+      "positions": [
+        11,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 3328,
+      "seconds": 115.74154082600012
+    },
+    {
+      "pair": 206,
+      "positions": [
+        11,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 3328,
+      "seconds": 116.18179972000007
+    },
+    {
+      "pair": 207,
+      "positions": [
+        11,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 3328,
+      "seconds": 116.62534922999998
+    },
+    {
+      "pair": 208,
+      "positions": [
+        11,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3328,
+      "seconds": 117.06302534700012
+    },
+    {
+      "pair": 209,
+      "positions": [
+        11,
+        23
+      ],
+      "admitted": 256,
+      "cumulative": 3584,
+      "seconds": 117.85594728799992
+    },
+    {
+      "pair": 210,
+      "positions": [
+        12,
+        13
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 118.50629940499994
+    },
+    {
+      "pair": 211,
+      "positions": [
+        12,
+        14
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 119.1777124350001
+    },
+    {
+      "pair": 212,
+      "positions": [
+        12,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 119.82019099600006
+    },
+    {
+      "pair": 213,
+      "positions": [
+        12,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 120.47957670400001
+    },
+    {
+      "pair": 214,
+      "positions": [
+        12,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 121.13516580700002
+    },
+    {
+      "pair": 215,
+      "positions": [
+        12,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 121.79416840800013
+    },
+    {
+      "pair": 216,
+      "positions": [
+        12,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 122.4545496610001
+    },
+    {
+      "pair": 217,
+      "positions": [
+        12,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 123.12626947900003
+    },
+    {
+      "pair": 218,
+      "positions": [
+        12,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 123.7811927140001
+    },
+    {
+      "pair": 219,
+      "positions": [
+        12,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 124.45485136499997
+    },
+    {
+      "pair": 220,
+      "positions": [
+        12,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 124.9205340640001
+    },
+    {
+      "pair": 221,
+      "positions": [
+        13,
+        14
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 125.58735639199995
+    },
+    {
+      "pair": 222,
+      "positions": [
+        13,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 126.25319784900012
+    },
+    {
+      "pair": 223,
+      "positions": [
+        13,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 126.9086857530001
+    },
+    {
+      "pair": 224,
+      "positions": [
+        13,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 127.57290492700008
+    },
+    {
+      "pair": 225,
+      "positions": [
+        13,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 128.22629475400004
+    },
+    {
+      "pair": 226,
+      "positions": [
+        13,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 128.88438661600003
+    },
+    {
+      "pair": 227,
+      "positions": [
+        13,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 129.54100730899995
+    },
+    {
+      "pair": 228,
+      "positions": [
+        13,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 130.21100595100006
+    },
+    {
+      "pair": 229,
+      "positions": [
+        13,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 130.863832818
+    },
+    {
+      "pair": 230,
+      "positions": [
+        13,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 131.313315353
+    },
+    {
+      "pair": 231,
+      "positions": [
+        14,
+        15
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 131.96568182200008
+    },
+    {
+      "pair": 232,
+      "positions": [
+        14,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 132.63422128499997
+    },
+    {
+      "pair": 233,
+      "positions": [
+        14,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 133.283422342
+    },
+    {
+      "pair": 234,
+      "positions": [
+        14,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 133.94741898300003
+    },
+    {
+      "pair": 235,
+      "positions": [
+        14,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 134.60243504599998
+    },
+    {
+      "pair": 236,
+      "positions": [
+        14,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 135.26464855400013
+    },
+    {
+      "pair": 237,
+      "positions": [
+        14,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 135.91602600700003
+    },
+    {
+      "pair": 238,
+      "positions": [
+        14,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 136.59372906700014
+    },
+    {
+      "pair": 239,
+      "positions": [
+        14,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 137.04357442700007
+    },
+    {
+      "pair": 240,
+      "positions": [
+        15,
+        16
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 137.69360621300007
+    },
+    {
+      "pair": 241,
+      "positions": [
+        15,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 138.39985585900013
+    },
+    {
+      "pair": 242,
+      "positions": [
+        15,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 139.0525345640001
+    },
+    {
+      "pair": 243,
+      "positions": [
+        15,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 139.71136139700002
+    },
+    {
+      "pair": 244,
+      "positions": [
+        15,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 140.37457555800006
+    },
+    {
+      "pair": 245,
+      "positions": [
+        15,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 141.03295088799996
+    },
+    {
+      "pair": 246,
+      "positions": [
+        15,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 141.67913170199995
+    },
+    {
+      "pair": 247,
+      "positions": [
+        15,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 142.12422549999997
+    },
+    {
+      "pair": 248,
+      "positions": [
+        16,
+        17
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 142.77384166599995
+    },
+    {
+      "pair": 249,
+      "positions": [
+        16,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 143.43382283300002
+    },
+    {
+      "pair": 250,
+      "positions": [
+        16,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 144.08642202200008
+    },
+    {
+      "pair": 251,
+      "positions": [
+        16,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 144.75289290299997
+    },
+    {
+      "pair": 252,
+      "positions": [
+        16,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 145.40313961800007
+    },
+    {
+      "pair": 253,
+      "positions": [
+        16,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 146.06752426699995
+    },
+    {
+      "pair": 254,
+      "positions": [
+        16,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 146.5016565620001
+    },
+    {
+      "pair": 255,
+      "positions": [
+        17,
+        18
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 147.16939675000003
+    },
+    {
+      "pair": 256,
+      "positions": [
+        17,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 147.81728384100006
+    },
+    {
+      "pair": 257,
+      "positions": [
+        17,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 148.48726695200003
+    },
+    {
+      "pair": 258,
+      "positions": [
+        17,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 149.15271907800002
+    },
+    {
+      "pair": 259,
+      "positions": [
+        17,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 149.80050631099994
+    },
+    {
+      "pair": 260,
+      "positions": [
+        17,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 150.2459758980001
+    },
+    {
+      "pair": 261,
+      "positions": [
+        18,
+        19
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 150.89041580799994
+    },
+    {
+      "pair": 262,
+      "positions": [
+        18,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 151.54572482599997
+    },
+    {
+      "pair": 263,
+      "positions": [
+        18,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 152.19713154500005
+    },
+    {
+      "pair": 264,
+      "positions": [
+        18,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 152.86221728500004
+    },
+    {
+      "pair": 265,
+      "positions": [
+        18,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 153.29826817599997
+    },
+    {
+      "pair": 266,
+      "positions": [
+        19,
+        20
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 153.95222820599997
+    },
+    {
+      "pair": 267,
+      "positions": [
+        19,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 154.61566020600003
+    },
+    {
+      "pair": 268,
+      "positions": [
+        19,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 155.28681030899997
+    },
+    {
+      "pair": 269,
+      "positions": [
+        19,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 155.71965552000006
+    },
+    {
+      "pair": 270,
+      "positions": [
+        20,
+        21
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 156.38030715100012
+    },
+    {
+      "pair": 271,
+      "positions": [
+        20,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 157.03025671
+    },
+    {
+      "pair": 272,
+      "positions": [
+        20,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 157.47033434000014
+    },
+    {
+      "pair": 273,
+      "positions": [
+        21,
+        22
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 158.12350685399997
+    },
+    {
+      "pair": 274,
+      "positions": [
+        21,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 158.56435077100014
+    },
+    {
+      "pair": 275,
+      "positions": [
+        22,
+        23
+      ],
+      "admitted": 0,
+      "cumulative": 3584,
+      "seconds": 158.9970777640001
+    }
+  ],
+  "products": 20895526592,
+  "optimization": {
+    "solver_status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "gain": 0,
+    "added": [],
+    "removed": [],
+    "candidate_conflicts": 39424,
+    "exact_binary_ball_clique_cuts": 0,
+    "numerical_gain_upper_bound": -0.0,
+    "scope": "Numerical MILP diagnostics; only full exact output replay can establish an improvement"
+  },
+  "seconds": 160.61489655200012
+}

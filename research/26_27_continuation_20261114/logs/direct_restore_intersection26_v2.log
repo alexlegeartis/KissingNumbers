@@ -1,0 +1,78 @@
+LOADED 26 942728 cycles
+BEST -772 at 655360 phase 0 seconds 12.936470976997953
+PROGRESS 655360 942728 best -772 minremoved 944 seconds 12.9
+BEST -600 at 655488 phase 0 seconds 12.977735683998617
+BEST -448 at 655616 phase 0 seconds 13.01615180799854
+BEST -152 at 656384 phase 0 seconds 13.23823134000122
+BEST 0 at 657664 phase 1 seconds 13.620372098001098
+PROGRESS 659456 942728 best 0 minremoved 16 seconds 14.1
+PROGRESS 663552 942728 best 0 minremoved 16 seconds 15.3
+PROGRESS 667648 942728 best 0 minremoved 16 seconds 16.4
+PROGRESS 671744 942728 best 0 minremoved 16 seconds 17.6
+PROGRESS 675840 942728 best 0 minremoved 16 seconds 18.8
+PROGRESS 679936 942728 best 0 minremoved 16 seconds 20.0
+PROGRESS 684032 942728 best 0 minremoved 16 seconds 21.1
+PROGRESS 688128 942728 best 0 minremoved 16 seconds 22.4
+PROGRESS 692224 942728 best 0 minremoved 16 seconds 23.6
+PROGRESS 696320 942728 best 0 minremoved 16 seconds 24.8
+PROGRESS 700416 942728 best 0 minremoved 16 seconds 26.1
+PROGRESS 704512 942728 best 0 minremoved 16 seconds 27.3
+PROGRESS 708608 942728 best 0 minremoved 16 seconds 28.6
+PROGRESS 712704 942728 best 0 minremoved 16 seconds 29.9
+PROGRESS 716800 942728 best 0 minremoved 16 seconds 31.1
+PROGRESS 720896 942728 best 0 minremoved 16 seconds 32.3
+PROGRESS 724992 942728 best 0 minremoved 16 seconds 33.6
+PROGRESS 729088 942728 best 0 minremoved 16 seconds 34.8
+PROGRESS 733184 942728 best 0 minremoved 16 seconds 36.1
+PROGRESS 737280 942728 best 0 minremoved 16 seconds 37.3
+PROGRESS 741376 942728 best 0 minremoved 16 seconds 38.6
+PROGRESS 745472 942728 best 0 minremoved 16 seconds 39.8
+PROGRESS 749568 942728 best 0 minremoved 16 seconds 41.1
+PROGRESS 753664 942728 best 0 minremoved 16 seconds 42.3
+PROGRESS 757760 942728 best 0 minremoved 16 seconds 43.6
+PROGRESS 761856 942728 best 0 minremoved 16 seconds 44.8
+PROGRESS 765952 942728 best 0 minremoved 16 seconds 46.0
+PROGRESS 770048 942728 best 0 minremoved 16 seconds 47.3
+PROGRESS 774144 942728 best 0 minremoved 16 seconds 48.6
+PROGRESS 778240 942728 best 0 minremoved 16 seconds 49.8
+PROGRESS 782336 942728 best 0 minremoved 16 seconds 51.1
+PROGRESS 786432 942728 best 0 minremoved 16 seconds 52.3
+PROGRESS 790528 942728 best 0 minremoved 16 seconds 53.5
+PROGRESS 794624 942728 best 0 minremoved 16 seconds 54.7
+PROGRESS 798720 942728 best 0 minremoved 16 seconds 56.0
+PROGRESS 802816 942728 best 0 minremoved 16 seconds 57.3
+PROGRESS 806912 942728 best 0 minremoved 16 seconds 58.6
+PROGRESS 811008 942728 best 0 minremoved 16 seconds 59.8
+PROGRESS 815104 942728 best 0 minremoved 16 seconds 61.1
+PROGRESS 819200 942728 best 0 minremoved 16 seconds 62.3
+PROGRESS 823296 942728 best 0 minremoved 16 seconds 63.6
+PROGRESS 827392 942728 best 0 minremoved 16 seconds 64.8
+PROGRESS 831488 942728 best 0 minremoved 16 seconds 66.0
+PROGRESS 835584 942728 best 0 minremoved 16 seconds 67.3
+PROGRESS 839680 942728 best 0 minremoved 16 seconds 68.5
+PROGRESS 843776 942728 best 0 minremoved 16 seconds 69.8
+PROGRESS 847872 942728 best 0 minremoved 16 seconds 71.0
+PROGRESS 851968 942728 best 0 minremoved 16 seconds 72.2
+PROGRESS 856064 942728 best 0 minremoved 16 seconds 73.4
+PROGRESS 860160 942728 best 0 minremoved 16 seconds 74.6
+PROGRESS 864256 942728 best 0 minremoved 16 seconds 75.9
+PROGRESS 868352 942728 best 0 minremoved 16 seconds 77.1
+PROGRESS 872448 942728 best 0 minremoved 16 seconds 78.3
+PROGRESS 876544 942728 best 0 minremoved 16 seconds 79.6
+PROGRESS 880640 942728 best 0 minremoved 16 seconds 80.8
+PROGRESS 884736 942728 best 0 minremoved 16 seconds 82.1
+PROGRESS 888832 942728 best 0 minremoved 16 seconds 83.3
+PROGRESS 892928 942728 best 0 minremoved 16 seconds 84.6
+PROGRESS 897024 942728 best 0 minremoved 16 seconds 85.9
+PROGRESS 901120 942728 best 0 minremoved 16 seconds 87.1
+PROGRESS 905216 942728 best 0 minremoved 16 seconds 88.3
+PROGRESS 909312 942728 best 0 minremoved 16 seconds 89.6
+PROGRESS 913408 942728 best 0 minremoved 16 seconds 90.8
+PROGRESS 917504 942728 best 0 minremoved 16 seconds 92.1
+PROGRESS 921600 942728 best 0 minremoved 16 seconds 93.3
+PROGRESS 925696 942728 best 0 minremoved 16 seconds 94.5
+PROGRESS 929792 942728 best 0 minremoved 16 seconds 95.7
+PROGRESS 933888 942728 best 0 minremoved 16 seconds 97.0
+PROGRESS 937984 942728 best 0 minremoved 16 seconds 98.2
+PROGRESS 942080 942728 best 0 minremoved 16 seconds 99.4
+FINISHED {"dimension": 26, "cycles": 942728, "start_index": 655360, "best_gain": 0, "min_full_removals": 16, "seconds": 99.54792724800063}

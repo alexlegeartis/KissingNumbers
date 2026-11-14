@@ -1,0 +1,18 @@
+{
+  "dimension": 27,
+  "source": "/workspace/work/PackingStar/25D-31D/new_bounds_20261111/D27_209862_coordinates.npz",
+  "octads": 759,
+  "tested": 16321536,
+  "pool": 18464,
+  "minimum": 2,
+  "costs": {
+    "8": 4076,
+    "6": 7176,
+    "7": 1588,
+    "4": 3484,
+    "5": 1064,
+    "3": 1068,
+    "2": 8
+  },
+  "seconds": 178.36698400899695
+}

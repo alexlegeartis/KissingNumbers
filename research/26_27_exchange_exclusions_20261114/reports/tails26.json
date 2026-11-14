@@ -1,0 +1,158 @@
+{
+  "dim": 26,
+  "base": 201180,
+  "final": 201180,
+  "kind": "tails",
+  "seed": 20261114,
+  "cutoff": 8,
+  "records": [
+    {
+      "gain": 0,
+      "candidates": 0,
+      "trial": 0,
+      "total": 201180,
+      "seconds": 0.4293540610000264,
+      "action": {
+        "perm": [
+          0,
+          1
+        ],
+        "sign": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 0,
+      "trial": 1,
+      "total": 201180,
+      "seconds": 0.6912465020000127,
+      "action": {
+        "perm": [
+          0,
+          1
+        ],
+        "sign": [
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 640,
+      "edges": 3872,
+      "exclusive_old": 8848,
+      "trial": 2,
+      "total": 201180,
+      "seconds": 1.477410682000027,
+      "action": {
+        "perm": [
+          0,
+          1
+        ],
+        "sign": [
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 736,
+      "edges": 4480,
+      "exclusive_old": 8976,
+      "trial": 3,
+      "total": 201180,
+      "seconds": 2.3644012369999814,
+      "action": {
+        "perm": [
+          1,
+          0
+        ],
+        "sign": [
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 640,
+      "edges": 3872,
+      "exclusive_old": 8848,
+      "trial": 4,
+      "total": 201180,
+      "seconds": 3.091037620999998,
+      "action": {
+        "perm": [
+          0,
+          1
+        ],
+        "sign": [
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 736,
+      "edges": 4480,
+      "exclusive_old": 8976,
+      "trial": 5,
+      "total": 201180,
+      "seconds": 3.8629730289999884,
+      "action": {
+        "perm": [
+          1,
+          0
+        ],
+        "sign": [
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 96,
+      "edges": 608,
+      "exclusive_old": 128,
+      "trial": 6,
+      "total": 201180,
+      "seconds": 4.073105224000017,
+      "action": {
+        "perm": [
+          1,
+          0
+        ],
+        "sign": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 96,
+      "edges": 608,
+      "exclusive_old": 128,
+      "trial": 7,
+      "total": 201180,
+      "seconds": 4.30167035300002,
+      "action": {
+        "perm": [
+          1,
+          0
+        ],
+        "sign": [
+          -1,
+          -1
+        ]
+      }
+    }
+  ]
+}

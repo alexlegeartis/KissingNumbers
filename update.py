@@ -81,6 +81,7 @@ DRIVERS.append(('49-60D signed P48 refill', os.path.join(V, 'dim49-60-p48-signed
 DRIVERS.append(('36-37D Coxeter-Todd orbit exchange', os.path.join(V, 'dim36-37-orbit-exchange'), 'final.py'))
 DRIVERS.append(('61-67D compatible sign families', os.path.join(V, 'dim61-67-compatible-sign-families'), 'final.py'))
 DRIVERS.append(('68-69D extended Gamma72 moments', os.path.join(V, 'dim68-69-gamma72-extended-moments'), 'final.py'))
+DRIVERS.append(('26D radical-orbit continuation', os.path.join(V, 'dim26-27-radical-orbits'), 'final.py'))
 TABLES = [(os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
           (os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py')]
 

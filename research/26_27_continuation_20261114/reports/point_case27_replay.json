@@ -1,0 +1,11 @@
+{
+  "status": "OPTIMAL",
+  "nodes": 11366,
+  "old": 2774,
+  "new": 8592,
+  "edges": 214378,
+  "max_cost": 4,
+  "seconds": 25.880330425003194,
+  "selected": 2774,
+  "bound": 2774.0
+}

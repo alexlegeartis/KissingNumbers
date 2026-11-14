@@ -1,0 +1,1014 @@
+{
+  "dim": 27,
+  "base": 209862,
+  "final": 209862,
+  "kind": "tails",
+  "seed": 20261114,
+  "cutoff": 8,
+  "records": [
+    {
+      "gain": 0,
+      "candidates": 532,
+      "edges": 3204,
+      "exclusive_old": 26248,
+      "trial": 0,
+      "total": 209862,
+      "seconds": 0.705825472000015,
+      "action": {
+        "perm": [
+          1,
+          2,
+          0
+        ],
+        "sign": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 624,
+      "edges": 3256,
+      "exclusive_old": 17272,
+      "trial": 1,
+      "total": 209862,
+      "seconds": 1.1394511290000082,
+      "action": {
+        "perm": [
+          0,
+          1,
+          2
+        ],
+        "sign": [
+          -1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 240,
+      "edges": 1468,
+      "exclusive_old": 17712,
+      "trial": 2,
+      "total": 209862,
+      "seconds": 1.5696479829999817,
+      "action": {
+        "perm": [
+          2,
+          1,
+          0
+        ],
+        "sign": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 292,
+      "edges": 1804,
+      "exclusive_old": 26248,
+      "trial": 3,
+      "total": 209862,
+      "seconds": 2.224111037,
+      "action": {
+        "perm": [
+          2,
+          0,
+          1
+        ],
+        "sign": [
+          -1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 284,
+      "edges": 1740,
+      "exclusive_old": 26248,
+      "trial": 4,
+      "total": 209862,
+      "seconds": 2.8398460249999857,
+      "action": {
+        "perm": [
+          2,
+          0,
+          1
+        ],
+        "sign": [
+          -1,
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 680,
+      "edges": 4020,
+      "exclusive_old": 26088,
+      "trial": 5,
+      "total": 209862,
+      "seconds": 3.457429487000013,
+      "action": {
+        "perm": [
+          0,
+          2,
+          1
+        ],
+        "sign": [
+          1,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 532,
+      "edges": 3204,
+      "exclusive_old": 26248,
+      "trial": 6,
+      "total": 209862,
+      "seconds": 4.034504416999994,
+      "action": {
+        "perm": [
+          1,
+          2,
+          0
+        ],
+        "sign": [
+          -1,
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 232,
+      "edges": 1384,
+      "exclusive_old": 17464,
+      "trial": 7,
+      "total": 209862,
+      "seconds": 4.556231786000012,
+      "action": {
+        "perm": [
+          1,
+          0,
+          2
+        ],
+        "sign": [
+          1,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 0,
+      "trial": 8,
+      "total": 209862,
+      "seconds": 4.803406369000015,
+      "action": {
+        "perm": [
+          0,
+          1,
+          2
+        ],
+        "sign": [
+          -1,
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 872,
+      "edges": 5264,
+      "exclusive_old": 17520,
+      "trial": 9,
+      "total": 209862,
+      "seconds": 5.217031793999979,
+      "action": {
+        "perm": [
+          0,
+          1,
+          2
+        ],
+        "sign": [
+          1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 684,
+      "edges": 4048,
+      "exclusive_old": 26088,
+      "trial": 10,
+      "total": 209862,
+      "seconds": 5.819169859999988,
+      "action": {
+        "perm": [
+          0,
+          2,
+          1
+        ],
+        "sign": [
+          -1,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 544,
+      "edges": 2932,
+      "exclusive_old": 26216,
+      "trial": 11,
+      "total": 209862,
+      "seconds": 6.486452348,
+      "action": {
+        "perm": [
+          2,
+          1,
+          0
+        ],
+        "sign": [
+          1,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 284,
+      "edges": 1740,
+      "exclusive_old": 26248,
+      "trial": 12,
+      "total": 209862,
+      "seconds": 7.051900392999983,
+      "action": {
+        "perm": [
+          2,
+          0,
+          1
+        ],
+        "sign": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 528,
+      "edges": 3176,
+      "exclusive_old": 26248,
+      "trial": 13,
+      "total": 209862,
+      "seconds": 7.649945785,
+      "action": {
+        "perm": [
+          1,
+          2,
+          0
+        ],
+        "sign": [
+          1,
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 212,
+      "edges": 1220,
+      "exclusive_old": 17464,
+      "trial": 14,
+      "total": 209862,
+      "seconds": 8.025459028,
+      "action": {
+        "perm": [
+          1,
+          0,
+          2
+        ],
+        "sign": [
+          -1,
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 292,
+      "edges": 1804,
+      "exclusive_old": 26248,
+      "trial": 15,
+      "total": 209862,
+      "seconds": 8.621319690999997,
+      "action": {
+        "perm": [
+          2,
+          0,
+          1
+        ],
+        "sign": [
+          1,
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 772,
+      "edges": 4756,
+      "exclusive_old": 26216,
+      "trial": 16,
+      "total": 209862,
+      "seconds": 9.224324927999987,
+      "action": {
+        "perm": [
+          1,
+          0,
+          2
+        ],
+        "sign": [
+          1,
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 240,
+      "edges": 1468,
+      "exclusive_old": 17712,
+      "trial": 17,
+      "total": 209862,
+      "seconds": 9.608849832000033,
+      "action": {
+        "perm": [
+          2,
+          1,
+          0
+        ],
+        "sign": [
+          -1,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 528,
+      "edges": 3176,
+      "exclusive_old": 26248,
+      "trial": 18,
+      "total": 209862,
+      "seconds": 10.16959509000003,
+      "action": {
+        "perm": [
+          1,
+          2,
+          0
+        ],
+        "sign": [
+          -1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 240,
+      "edges": 1468,
+      "exclusive_old": 17712,
+      "trial": 19,
+      "total": 209862,
+      "seconds": 10.576958375000004,
+      "action": {
+        "perm": [
+          2,
+          1,
+          0
+        ],
+        "sign": [
+          -1,
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 364,
+      "edges": 2256,
+      "exclusive_old": 17320,
+      "trial": 20,
+      "total": 209862,
+      "seconds": 10.962865008999984,
+      "action": {
+        "perm": [
+          0,
+          2,
+          1
+        ],
+        "sign": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 292,
+      "edges": 1804,
+      "exclusive_old": 26248,
+      "trial": 21,
+      "total": 209862,
+      "seconds": 11.52765365700003,
+      "action": {
+        "perm": [
+          2,
+          0,
+          1
+        ],
+        "sign": [
+          1,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 680,
+      "edges": 4020,
+      "exclusive_old": 26088,
+      "trial": 22,
+      "total": 209862,
+      "seconds": 12.12350298199999,
+      "action": {
+        "perm": [
+          0,
+          2,
+          1
+        ],
+        "sign": [
+          -1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 540,
+      "edges": 3276,
+      "exclusive_old": 26248,
+      "trial": 23,
+      "total": 209862,
+      "seconds": 12.722829973999978,
+      "action": {
+        "perm": [
+          1,
+          2,
+          0
+        ],
+        "sign": [
+          1,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 360,
+      "edges": 2228,
+      "exclusive_old": 17320,
+      "trial": 24,
+      "total": 209862,
+      "seconds": 13.138256676000026,
+      "action": {
+        "perm": [
+          0,
+          2,
+          1
+        ],
+        "sign": [
+          -1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 0,
+      "trial": 25,
+      "total": 209862,
+      "seconds": 13.375266307999993,
+      "action": {
+        "perm": [
+          0,
+          1,
+          2
+        ],
+        "sign": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 776,
+      "edges": 4792,
+      "exclusive_old": 26216,
+      "trial": 26,
+      "total": 209862,
+      "seconds": 13.95590714399998,
+      "action": {
+        "perm": [
+          1,
+          0,
+          2
+        ],
+        "sign": [
+          -1,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 284,
+      "edges": 1740,
+      "exclusive_old": 26248,
+      "trial": 27,
+      "total": 209862,
+      "seconds": 14.494918391999988,
+      "action": {
+        "perm": [
+          2,
+          0,
+          1
+        ],
+        "sign": [
+          -1,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 240,
+      "edges": 1468,
+      "exclusive_old": 17712,
+      "trial": 28,
+      "total": 209862,
+      "seconds": 14.894996578000018,
+      "action": {
+        "perm": [
+          2,
+          1,
+          0
+        ],
+        "sign": [
+          1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 284,
+      "edges": 1740,
+      "exclusive_old": 26248,
+      "trial": 29,
+      "total": 209862,
+      "seconds": 15.442220225000028,
+      "action": {
+        "perm": [
+          2,
+          0,
+          1
+        ],
+        "sign": [
+          1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 540,
+      "edges": 3276,
+      "exclusive_old": 26248,
+      "trial": 30,
+      "total": 209862,
+      "seconds": 16.01619185100003,
+      "action": {
+        "perm": [
+          1,
+          2,
+          0
+        ],
+        "sign": [
+          -1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 232,
+      "edges": 1384,
+      "exclusive_old": 17464,
+      "trial": 31,
+      "total": 209862,
+      "seconds": 16.393872338999984,
+      "action": {
+        "perm": [
+          1,
+          0,
+          2
+        ],
+        "sign": [
+          -1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 212,
+      "edges": 1220,
+      "exclusive_old": 17464,
+      "trial": 32,
+      "total": 209862,
+      "seconds": 16.77976871200002,
+      "action": {
+        "perm": [
+          1,
+          0,
+          2
+        ],
+        "sign": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 544,
+      "edges": 2932,
+      "exclusive_old": 26216,
+      "trial": 33,
+      "total": 209862,
+      "seconds": 17.343552910000028,
+      "action": {
+        "perm": [
+          2,
+          1,
+          0
+        ],
+        "sign": [
+          -1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 776,
+      "edges": 4792,
+      "exclusive_old": 26216,
+      "trial": 34,
+      "total": 209862,
+      "seconds": 17.94075631999999,
+      "action": {
+        "perm": [
+          1,
+          0,
+          2
+        ],
+        "sign": [
+          1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 856,
+      "edges": 4936,
+      "exclusive_old": 17256,
+      "trial": 35,
+      "total": 209862,
+      "seconds": 18.345685688000003,
+      "action": {
+        "perm": [
+          0,
+          1,
+          2
+        ],
+        "sign": [
+          -1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 684,
+      "edges": 4048,
+      "exclusive_old": 26088,
+      "trial": 36,
+      "total": 209862,
+      "seconds": 18.935272622000014,
+      "action": {
+        "perm": [
+          0,
+          2,
+          1
+        ],
+        "sign": [
+          1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 364,
+      "edges": 2256,
+      "exclusive_old": 17320,
+      "trial": 37,
+      "total": 209862,
+      "seconds": 19.322205019000023,
+      "action": {
+        "perm": [
+          0,
+          2,
+          1
+        ],
+        "sign": [
+          -1,
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 772,
+      "edges": 4756,
+      "exclusive_old": 26216,
+      "trial": 38,
+      "total": 209862,
+      "seconds": 19.92632951500002,
+      "action": {
+        "perm": [
+          1,
+          0,
+          2
+        ],
+        "sign": [
+          -1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 292,
+      "edges": 1804,
+      "exclusive_old": 26248,
+      "trial": 39,
+      "total": 209862,
+      "seconds": 20.487369409999985,
+      "action": {
+        "perm": [
+          2,
+          0,
+          1
+        ],
+        "sign": [
+          -1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 360,
+      "edges": 2228,
+      "exclusive_old": 17320,
+      "trial": 40,
+      "total": 209862,
+      "seconds": 20.88824233700001,
+      "action": {
+        "perm": [
+          0,
+          2,
+          1
+        ],
+        "sign": [
+          1,
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 872,
+      "edges": 5264,
+      "exclusive_old": 17520,
+      "trial": 41,
+      "total": 209862,
+      "seconds": 21.31719081,
+      "action": {
+        "perm": [
+          0,
+          1,
+          2
+        ],
+        "sign": [
+          -1,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 544,
+      "edges": 2932,
+      "exclusive_old": 26216,
+      "trial": 42,
+      "total": 209862,
+      "seconds": 21.899550860000033,
+      "action": {
+        "perm": [
+          2,
+          1,
+          0
+        ],
+        "sign": [
+          -1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 624,
+      "edges": 3256,
+      "exclusive_old": 17272,
+      "trial": 43,
+      "total": 209862,
+      "seconds": 22.310678596000002,
+      "action": {
+        "perm": [
+          0,
+          1,
+          2
+        ],
+        "sign": [
+          1,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 544,
+      "edges": 3304,
+      "exclusive_old": 26248,
+      "trial": 44,
+      "total": 209862,
+      "seconds": 22.943027414000028,
+      "action": {
+        "perm": [
+          1,
+          2,
+          0
+        ],
+        "sign": [
+          -1,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 544,
+      "edges": 3304,
+      "exclusive_old": 26248,
+      "trial": 45,
+      "total": 209862,
+      "seconds": 23.535513121999998,
+      "action": {
+        "perm": [
+          1,
+          2,
+          0
+        ],
+        "sign": [
+          1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 856,
+      "edges": 4936,
+      "exclusive_old": 17256,
+      "trial": 46,
+      "total": 209862,
+      "seconds": 23.954693322000026,
+      "action": {
+        "perm": [
+          0,
+          1,
+          2
+        ],
+        "sign": [
+          1,
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "gain": 0,
+      "candidates": 544,
+      "edges": 2932,
+      "exclusive_old": 26216,
+      "trial": 47,
+      "total": 209862,
+      "seconds": 24.525717781000026,
+      "action": {
+        "perm": [
+          2,
+          1,
+          0
+        ],
+        "sign": [
+          1,
+          -1,
+          -1
+        ]
+      }
+    }
+  ]
+}

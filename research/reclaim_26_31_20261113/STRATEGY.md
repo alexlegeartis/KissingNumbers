@@ -45,6 +45,14 @@ improvement or an optimality claim for the present design.
 
 ## 2. Attack 26D through shared deletions and coupled deformations
 
+**14 November update:** the original 2,004-point transplant pool now has an
+[independently checked exact no-gain certificate](../26_27_exchange_exclusions_20261114/).
+The continuation also certifies zero possible gain for a merged 4,662-point
+26D pool and a merged 5,230-point 27D pool. All source points remain eligible
+for deletion. These are finite-pool exclusions; the broader deformation
+and candidate-generation questions below remain open. The interrupted solve
+described next is the historical November 13 run.
+
 The complete 759-octad sweep supplies 2,004 distinct rational candidate points
 with two to four old blockers each. Their old-point blockers were replayed
 against the full quadratic source. The joint model has 4,094 distinct old

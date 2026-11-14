@@ -1,0 +1,51 @@
+LOADED 27 1309200 cycles
+BEST -572 at 122880 phase 0 seconds 19.71273052899778
+PROGRESS 122880 1309200 best -572 minremoved 592 seconds 19.9
+BEST -568 at 123392 phase 0 seconds 20.734557605999726
+BEST -508 at 123392 phase 2 seconds 20.795978363999893
+BEST -496 at 124288 phase 0 seconds 22.389083361998928
+BEST -488 at 124288 phase 2 seconds 22.453524063999794
+BEST -464 at 124416 phase 4 seconds 22.762040302997775
+BEST -376 at 124800 phase 0 seconds 23.353434290998848
+BEST -352 at 124800 phase 1 seconds 23.38420764699913
+BEST -344 at 124800 phase 2 seconds 23.414980872999877
+BEST -312 at 124800 phase 3 seconds 23.44988403499883
+BEST -272 at 126720 phase 0 seconds 27.027267423000012
+BEST -224 at 126720 phase 4 seconds 27.151263916999596
+BEST -48 at 126848 phase 0 seconds 27.266452201998618
+PROGRESS 126976 1309200 best -48 minremoved 68 seconds 27.7
+PROGRESS 131072 1309200 best -48 minremoved 68 seconds 35.4
+PROGRESS 135168 1309200 best -48 minremoved 68 seconds 43.2
+PROGRESS 139264 1309200 best -48 minremoved 68 seconds 51.0
+BEST 0 at 140160 phase 1 seconds 52.60699654599739
+PROGRESS 143360 1309200 best 0 minremoved 16 seconds 58.8
+PROGRESS 147456 1309200 best 0 minremoved 16 seconds 66.6
+PROGRESS 151552 1309200 best 0 minremoved 16 seconds 74.3
+PROGRESS 155648 1309200 best 0 minremoved 16 seconds 82.1
+PROGRESS 159744 1309200 best 0 minremoved 16 seconds 92.5
+PROGRESS 163840 1309200 best 0 minremoved 16 seconds 100.6
+PROGRESS 167936 1309200 best 0 minremoved 16 seconds 108.5
+PROGRESS 172032 1309200 best 0 minremoved 16 seconds 116.6
+PROGRESS 176128 1309200 best 0 minremoved 16 seconds 124.9
+PROGRESS 180224 1309200 best 0 minremoved 16 seconds 132.9
+PROGRESS 184320 1309200 best 0 minremoved 16 seconds 141.0
+PROGRESS 188416 1309200 best 0 minremoved 16 seconds 148.9
+PROGRESS 192512 1309200 best 0 minremoved 16 seconds 157.0
+PROGRESS 196608 1309200 best 0 minremoved 16 seconds 165.1
+PROGRESS 200704 1309200 best 0 minremoved 16 seconds 173.2
+PROGRESS 204800 1309200 best 0 minremoved 16 seconds 181.3
+PROGRESS 208896 1309200 best 0 minremoved 16 seconds 189.4
+PROGRESS 212992 1309200 best 0 minremoved 16 seconds 197.2
+PROGRESS 217088 1309200 best 0 minremoved 16 seconds 205.1
+PROGRESS 221184 1309200 best 0 minremoved 16 seconds 212.9
+PROGRESS 225280 1309200 best 0 minremoved 16 seconds 220.6
+PROGRESS 229376 1309200 best 0 minremoved 16 seconds 228.8
+PROGRESS 233472 1309200 best 0 minremoved 16 seconds 237.2
+PROGRESS 237568 1309200 best 0 minremoved 16 seconds 245.4
+PROGRESS 241664 1309200 best 0 minremoved 16 seconds 254.0
+PROGRESS 245760 1309200 best 0 minremoved 16 seconds 262.3
+PROGRESS 249856 1309200 best 0 minremoved 16 seconds 270.2
+PROGRESS 253952 1309200 best 0 minremoved 16 seconds 278.2
+PROGRESS 258048 1309200 best 0 minremoved 16 seconds 286.1
+PROGRESS 262144 1309200 best 0 minremoved 16 seconds 294.1
+PROGRESS 266240 1309200 best 0 minremoved 16 seconds 301.9

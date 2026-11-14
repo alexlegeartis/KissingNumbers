@@ -1,0 +1,21 @@
+{
+  "new_lower_bound": false,
+  "source_all_pairs_checked": false,
+  "hashed_files": 86,
+  "baseline_reconstruction": {
+    "26": 201180,
+    "27": 209862
+  },
+  "one_missing_states": {
+    "26": 144,
+    "27": 546
+  },
+  "point_case27": {
+    "nodes": 11366,
+    "old": 2774,
+    "candidates": 8592,
+    "verified_undirected_edges": 214378
+  },
+  "module604_verified_pairs": 182106,
+  "rejected_corruptions": 5
+}

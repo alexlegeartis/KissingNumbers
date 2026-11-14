@@ -1,0 +1,46 @@
+{
+  "dimension": 27,
+  "records": [
+    {
+      "core_norm": 0,
+      "bodies": 1,
+      "tails": 12,
+      "tested": 12,
+      "new_admissible": 0
+    },
+    {
+      "core_norm": 8,
+      "bodies": 240,
+      "tails": 24,
+      "tested": 5760,
+      "new_admissible": 2976
+    },
+    {
+      "core_norm": 16,
+      "bodies": 2160,
+      "tails": 6,
+      "tested": 12960,
+      "new_admissible": 12864
+    },
+    {
+      "core_norm": 24,
+      "bodies": 6720,
+      "tails": 12,
+      "tested": 80640,
+      "new_admissible": 41112
+    },
+    {
+      "core_norm": 32,
+      "bodies": 17520,
+      "tails": 1,
+      "tested": 17520,
+      "new_admissible": 94
+    }
+  ],
+  "old_sector": 422,
+  "pool_size": 1364,
+  "candidate_conflicts": 15024,
+  "solver_status": 2,
+  "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+  "seconds": 3.1316363390000106
+}

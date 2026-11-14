@@ -1,0 +1,2339 @@
+{
+  "dimension": 26,
+  "source_sha256": "36732203081894af188e75e2dae69327961b79c7b0781385b1589025b7e0b309",
+  "baseline": 201180,
+  "bodies": 169856,
+  "processed_bodies": 169856,
+  "cutoff": 8,
+  "candidates": 0,
+  "free": 0,
+  "checks": 723685120,
+  "records": [
+    {
+      "start": 0,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.14894701000002897
+    },
+    {
+      "start": 512,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.17076895799982594
+    },
+    {
+      "start": 1024,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.19187066299991784
+    },
+    {
+      "start": 1536,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.2120081289999689
+    },
+    {
+      "start": 2048,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.22904146299993045
+    },
+    {
+      "start": 2560,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.24697280399982446
+    },
+    {
+      "start": 3072,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.26623594599982425
+    },
+    {
+      "start": 3584,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.2861119079998389
+    },
+    {
+      "start": 4096,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.32175308199998653
+    },
+    {
+      "start": 4608,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.34117497599982016
+    },
+    {
+      "start": 5120,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.3585571920000348
+    },
+    {
+      "start": 5632,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.3776483399999506
+    },
+    {
+      "start": 6144,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.4074528549999741
+    },
+    {
+      "start": 6656,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.42694897299998047
+    },
+    {
+      "start": 7168,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.4442852499998935
+    },
+    {
+      "start": 7680,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.46278989899997214
+    },
+    {
+      "start": 8192,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.4814031129999421
+    },
+    {
+      "start": 8704,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.5006999439999618
+    },
+    {
+      "start": 9216,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.5201721839998754
+    },
+    {
+      "start": 9728,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.5388584639999863
+    },
+    {
+      "start": 10240,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.556591939999862
+    },
+    {
+      "start": 10752,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.5727435629999036
+    },
+    {
+      "start": 11264,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.5926193679999869
+    },
+    {
+      "start": 11776,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.6150714939999489
+    },
+    {
+      "start": 12288,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.6340427689999615
+    },
+    {
+      "start": 12800,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.6515931750000163
+    },
+    {
+      "start": 13312,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.6711171879999256
+    },
+    {
+      "start": 13824,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.689864703000012
+    },
+    {
+      "start": 14336,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.709844836000002
+    },
+    {
+      "start": 14848,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.7284654019999834
+    },
+    {
+      "start": 15360,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.7453824629999417
+    },
+    {
+      "start": 15872,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.7633267149999483
+    },
+    {
+      "start": 16384,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.7813456829999268
+    },
+    {
+      "start": 16896,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.7994757039998603
+    },
+    {
+      "start": 17408,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.8207923519998985
+    },
+    {
+      "start": 17920,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.8414540530000068
+    },
+    {
+      "start": 18432,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.8597337409999
+    },
+    {
+      "start": 18944,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.8789642699998694
+    },
+    {
+      "start": 19456,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.8964454160000059
+    },
+    {
+      "start": 19968,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.9158669739999823
+    },
+    {
+      "start": 20480,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.9341294349999316
+    },
+    {
+      "start": 20992,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.9529036769999948
+    },
+    {
+      "start": 21504,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.9717678489998889
+    },
+    {
+      "start": 22016,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 0.9907423099998596
+    },
+    {
+      "start": 22528,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.0083179779999227
+    },
+    {
+      "start": 23040,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.027739247999989
+    },
+    {
+      "start": 23552,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.0453609579999465
+    },
+    {
+      "start": 24064,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.0622542179999073
+    },
+    {
+      "start": 24576,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.0798537649998252
+    },
+    {
+      "start": 25088,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.0983070190000035
+    },
+    {
+      "start": 25600,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.121307938999962
+    },
+    {
+      "start": 26112,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.1419253379999645
+    },
+    {
+      "start": 26624,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.160230773999956
+    },
+    {
+      "start": 27136,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.1799885440000253
+    },
+    {
+      "start": 27648,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.1977650300000278
+    },
+    {
+      "start": 28160,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.2149440419998427
+    },
+    {
+      "start": 28672,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.2345318620000398
+    },
+    {
+      "start": 29184,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.2518755869998586
+    },
+    {
+      "start": 29696,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.2693928959999994
+    },
+    {
+      "start": 30208,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.2884520220000013
+    },
+    {
+      "start": 30720,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.3057536669998626
+    },
+    {
+      "start": 31232,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.3258058139999775
+    },
+    {
+      "start": 31744,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.3453096499999901
+    },
+    {
+      "start": 32256,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.3633315699999002
+    },
+    {
+      "start": 32768,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.381387863999862
+    },
+    {
+      "start": 33280,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.4010851379998712
+    },
+    {
+      "start": 33792,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.4198822460000429
+    },
+    {
+      "start": 34304,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.4408246860000418
+    },
+    {
+      "start": 34816,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.459777817000031
+    },
+    {
+      "start": 35328,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.47652613199989
+    },
+    {
+      "start": 35840,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.4938003499999013
+    },
+    {
+      "start": 36352,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.5111959349999324
+    },
+    {
+      "start": 36864,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.5298840939999536
+    },
+    {
+      "start": 37376,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.5487074099999063
+    },
+    {
+      "start": 37888,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.5826358419999451
+    },
+    {
+      "start": 38400,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.6014704409999467
+    },
+    {
+      "start": 38912,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.6200498589998915
+    },
+    {
+      "start": 39424,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.6413568529999338
+    },
+    {
+      "start": 39936,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.6630695789999663
+    },
+    {
+      "start": 40448,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.6829775960000006
+    },
+    {
+      "start": 40960,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.7010379949999788
+    },
+    {
+      "start": 41472,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.7201248209998994
+    },
+    {
+      "start": 41984,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.739716210999859
+    },
+    {
+      "start": 42496,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.7578175669998473
+    },
+    {
+      "start": 43008,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.77630102299986
+    },
+    {
+      "start": 43520,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.7952716509998936
+    },
+    {
+      "start": 44032,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.8142761629999313
+    },
+    {
+      "start": 44544,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.833704361999935
+    },
+    {
+      "start": 45056,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.8561658080000143
+    },
+    {
+      "start": 45568,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.8768872059999921
+    },
+    {
+      "start": 46080,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.8950153139999202
+    },
+    {
+      "start": 46592,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.9119920609998644
+    },
+    {
+      "start": 47104,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.9304483399998844
+    },
+    {
+      "start": 47616,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.951411465999854
+    },
+    {
+      "start": 48128,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.9700746789999357
+    },
+    {
+      "start": 48640,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 1.988574127999982
+    },
+    {
+      "start": 49152,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.005686251000043
+    },
+    {
+      "start": 49664,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.025799485999869
+    },
+    {
+      "start": 50176,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.046324854999966
+    },
+    {
+      "start": 50688,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.0656075039998996
+    },
+    {
+      "start": 51200,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.084096190999844
+    },
+    {
+      "start": 51712,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.102095979999831
+    },
+    {
+      "start": 52224,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.118651391999947
+    },
+    {
+      "start": 52736,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.1380414969999038
+    },
+    {
+      "start": 53248,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.1589596869998786
+    },
+    {
+      "start": 53760,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.179007479999882
+    },
+    {
+      "start": 54272,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.1980829899998753
+    },
+    {
+      "start": 54784,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.215067622999868
+    },
+    {
+      "start": 55296,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.233111678999876
+    },
+    {
+      "start": 55808,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.2532495169998583
+    },
+    {
+      "start": 56320,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.2723224839999148
+    },
+    {
+      "start": 56832,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.2917498669999077
+    },
+    {
+      "start": 57344,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.309265319999895
+    },
+    {
+      "start": 57856,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.327806460999909
+    },
+    {
+      "start": 58368,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.346836116999839
+    },
+    {
+      "start": 58880,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.367747412999961
+    },
+    {
+      "start": 59392,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.387804484999833
+    },
+    {
+      "start": 59904,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.405219777999946
+    },
+    {
+      "start": 60416,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.4220303029999286
+    },
+    {
+      "start": 60928,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.440460126999824
+    },
+    {
+      "start": 61440,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.464008593000017
+    },
+    {
+      "start": 61952,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.4845060389998253
+    },
+    {
+      "start": 62464,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.504427858999861
+    },
+    {
+      "start": 62976,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.523408487999859
+    },
+    {
+      "start": 63488,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.5427976239998316
+    },
+    {
+      "start": 64000,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.560735940999848
+    },
+    {
+      "start": 64512,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.58130481399985
+    },
+    {
+      "start": 65024,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.599926783000001
+    },
+    {
+      "start": 65536,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.619734355999981
+    },
+    {
+      "start": 66048,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.640546919999906
+    },
+    {
+      "start": 66560,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.660647678000032
+    },
+    {
+      "start": 67072,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.6822737539998798
+    },
+    {
+      "start": 67584,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.7002917539998634
+    },
+    {
+      "start": 68096,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.7187359009999454
+    },
+    {
+      "start": 68608,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.737008357999912
+    },
+    {
+      "start": 69120,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.7550517889999355
+    },
+    {
+      "start": 69632,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.7728884460000245
+    },
+    {
+      "start": 70144,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.7938866309998502
+    },
+    {
+      "start": 70656,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.8118027880000227
+    },
+    {
+      "start": 71168,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.8308504249998805
+    },
+    {
+      "start": 71680,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.8534720630000265
+    },
+    {
+      "start": 72192,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.8911532140000418
+    },
+    {
+      "start": 72704,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.9087062649998643
+    },
+    {
+      "start": 73216,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.9256188049998855
+    },
+    {
+      "start": 73728,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.943332140999928
+    },
+    {
+      "start": 74240,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.9629418059998898
+    },
+    {
+      "start": 74752,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 2.9823157809998975
+    },
+    {
+      "start": 75264,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.0013961679999284
+    },
+    {
+      "start": 75776,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.019212341999946
+    },
+    {
+      "start": 76288,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.036332791999939
+    },
+    {
+      "start": 76800,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.0542156809999597
+    },
+    {
+      "start": 77312,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.0756412359999104
+    },
+    {
+      "start": 77824,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.097235748999992
+    },
+    {
+      "start": 78336,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.117430676999902
+    },
+    {
+      "start": 78848,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.1372491039999204
+    },
+    {
+      "start": 79360,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.157702425000025
+    },
+    {
+      "start": 79872,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.176186666999911
+    },
+    {
+      "start": 80384,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.1989824669999507
+    },
+    {
+      "start": 80896,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.217596301999947
+    },
+    {
+      "start": 81408,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.236229468999909
+    },
+    {
+      "start": 81920,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.2545857559998694
+    },
+    {
+      "start": 82432,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.2748756900000444
+    },
+    {
+      "start": 82944,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.2938470499998402
+    },
+    {
+      "start": 83456,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.3162460199998804
+    },
+    {
+      "start": 83968,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.3355050010000014
+    },
+    {
+      "start": 84480,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.355342558999837
+    },
+    {
+      "start": 84992,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.3731132640000396
+    },
+    {
+      "start": 85504,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.392733464999992
+    },
+    {
+      "start": 86016,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.4125648570000067
+    },
+    {
+      "start": 86528,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.4312198109998917
+    },
+    {
+      "start": 87040,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.4491283390000262
+    },
+    {
+      "start": 87552,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.468691528999898
+    },
+    {
+      "start": 88064,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.487681574999897
+    },
+    {
+      "start": 88576,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.5063668569998754
+    },
+    {
+      "start": 89088,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.5267779460000384
+    },
+    {
+      "start": 89600,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.5450762519999444
+    },
+    {
+      "start": 90112,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.5639078110000355
+    },
+    {
+      "start": 90624,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.5812898429999223
+    },
+    {
+      "start": 91136,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.6010055140000077
+    },
+    {
+      "start": 91648,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.621362515999863
+    },
+    {
+      "start": 92160,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.639284231999909
+    },
+    {
+      "start": 92672,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.658692507999831
+    },
+    {
+      "start": 93184,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.678469896000024
+    },
+    {
+      "start": 93696,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.6994142129999545
+    },
+    {
+      "start": 94208,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.71855079199986
+    },
+    {
+      "start": 94720,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.7374906620000274
+    },
+    {
+      "start": 95232,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.7555953910000426
+    },
+    {
+      "start": 95744,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.773082435999868
+    },
+    {
+      "start": 96256,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.7915494479998415
+    },
+    {
+      "start": 96768,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.811834396999984
+    },
+    {
+      "start": 97280,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.832898888000045
+    },
+    {
+      "start": 97792,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.8532820220000303
+    },
+    {
+      "start": 98304,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.8734934399999474
+    },
+    {
+      "start": 98816,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.892948724000007
+    },
+    {
+      "start": 99328,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.9092074089999187
+    },
+    {
+      "start": 99840,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.9266056069998285
+    },
+    {
+      "start": 100352,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.948473079999985
+    },
+    {
+      "start": 100864,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.966845919999969
+    },
+    {
+      "start": 101376,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 3.9840011199999026
+    },
+    {
+      "start": 101888,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.001931044000003
+    },
+    {
+      "start": 102400,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.0205003529999885
+    },
+    {
+      "start": 102912,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.038545372000044
+    },
+    {
+      "start": 103424,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.05856874899996
+    },
+    {
+      "start": 103936,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.079702193000003
+    },
+    {
+      "start": 104448,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.098776247999922
+    },
+    {
+      "start": 104960,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.115428236999833
+    },
+    {
+      "start": 105472,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.135758960999965
+    },
+    {
+      "start": 105984,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.172339045999934
+    },
+    {
+      "start": 106496,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.19222227399996
+    },
+    {
+      "start": 107008,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.209599455999978
+    },
+    {
+      "start": 107520,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.2279742009998245
+    },
+    {
+      "start": 108032,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.247815768999999
+    },
+    {
+      "start": 108544,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.26662649900004
+    },
+    {
+      "start": 109056,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.286870460000046
+    },
+    {
+      "start": 109568,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.304654693999964
+    },
+    {
+      "start": 110080,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.323399919999929
+    },
+    {
+      "start": 110592,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.343471688999898
+    },
+    {
+      "start": 111104,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.3634293620000335
+    },
+    {
+      "start": 111616,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.38190789500004
+    },
+    {
+      "start": 112128,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.400852423999822
+    },
+    {
+      "start": 112640,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.41843748999986
+    },
+    {
+      "start": 113152,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.438602008999851
+    },
+    {
+      "start": 113664,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.461746459999858
+    },
+    {
+      "start": 114176,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.479822612999897
+    },
+    {
+      "start": 114688,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.502620297000021
+    },
+    {
+      "start": 115200,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.519753814999831
+    },
+    {
+      "start": 115712,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.539308306999828
+    },
+    {
+      "start": 116224,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.559273292999933
+    },
+    {
+      "start": 116736,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.576982084999827
+    },
+    {
+      "start": 117248,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.595085508000011
+    },
+    {
+      "start": 117760,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.61335555200003
+    },
+    {
+      "start": 118272,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.632789064000008
+    },
+    {
+      "start": 118784,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.652620078999917
+    },
+    {
+      "start": 119296,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.673264492000044
+    },
+    {
+      "start": 119808,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.6961593959999846
+    },
+    {
+      "start": 120320,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.713208539999869
+    },
+    {
+      "start": 120832,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.731460249999827
+    },
+    {
+      "start": 121344,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.748996592999902
+    },
+    {
+      "start": 121856,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.768291367999836
+    },
+    {
+      "start": 122368,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.788189354999986
+    },
+    {
+      "start": 122880,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.804530977000013
+    },
+    {
+      "start": 123392,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.822622178999836
+    },
+    {
+      "start": 123904,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.842225249999956
+    },
+    {
+      "start": 124416,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.863950593000027
+    },
+    {
+      "start": 124928,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.884233172999984
+    },
+    {
+      "start": 125440,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.902966062999894
+    },
+    {
+      "start": 125952,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.9202396129999215
+    },
+    {
+      "start": 126464,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.938555695999867
+    },
+    {
+      "start": 126976,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.9567720789998475
+    },
+    {
+      "start": 127488,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.978051892999929
+    },
+    {
+      "start": 128000,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 4.9955919249998715
+    },
+    {
+      "start": 128512,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.0125244289999955
+    },
+    {
+      "start": 129024,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.029423119999819
+    },
+    {
+      "start": 129536,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.048571584000001
+    },
+    {
+      "start": 130048,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.06791609999982
+    },
+    {
+      "start": 130560,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.088334540999995
+    },
+    {
+      "start": 131072,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.10841996399995
+    },
+    {
+      "start": 131584,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.1255936309999015
+    },
+    {
+      "start": 132096,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.144502688999864
+    },
+    {
+      "start": 132608,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.163257193999925
+    },
+    {
+      "start": 133120,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.182387913999946
+    },
+    {
+      "start": 133632,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.202542438999899
+    },
+    {
+      "start": 134144,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.219130003999908
+    },
+    {
+      "start": 134656,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.23632101499993
+    },
+    {
+      "start": 135168,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.256364850999944
+    },
+    {
+      "start": 135680,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.2781691089999185
+    },
+    {
+      "start": 136192,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.296503540000003
+    },
+    {
+      "start": 136704,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.315743192999889
+    },
+    {
+      "start": 137216,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.3330439950000255
+    },
+    {
+      "start": 137728,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.351357948999976
+    },
+    {
+      "start": 138240,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.369265728999835
+    },
+    {
+      "start": 138752,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.390180097999973
+    },
+    {
+      "start": 139264,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.409120934999919
+    },
+    {
+      "start": 139776,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.425703259999864
+    },
+    {
+      "start": 140288,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.4605436709998685
+    },
+    {
+      "start": 140800,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.478644888999952
+    },
+    {
+      "start": 141312,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.4980112929999905
+    },
+    {
+      "start": 141824,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.5170958839999
+    },
+    {
+      "start": 142336,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.535646699999916
+    },
+    {
+      "start": 142848,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.554757550999966
+    },
+    {
+      "start": 143360,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.573829005999869
+    },
+    {
+      "start": 143872,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.595808326999986
+    },
+    {
+      "start": 144384,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.615456365999989
+    },
+    {
+      "start": 144896,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.634540772000037
+    },
+    {
+      "start": 145408,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.65325995399985
+    },
+    {
+      "start": 145920,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.671833316999937
+    },
+    {
+      "start": 146432,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.692847264999955
+    },
+    {
+      "start": 146944,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.713179567999987
+    },
+    {
+      "start": 147456,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.730490560999897
+    },
+    {
+      "start": 147968,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.748331720999886
+    },
+    {
+      "start": 148480,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.766791108999996
+    },
+    {
+      "start": 148992,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.784946429999991
+    },
+    {
+      "start": 149504,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.804924249999885
+    },
+    {
+      "start": 150016,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.822691292999934
+    },
+    {
+      "start": 150528,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.840947861999894
+    },
+    {
+      "start": 151040,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.859900400000015
+    },
+    {
+      "start": 151552,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.8798267419999775
+    },
+    {
+      "start": 152064,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.900770102000024
+    },
+    {
+      "start": 152576,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.920645658000012
+    },
+    {
+      "start": 153088,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.9390732539998226
+    },
+    {
+      "start": 153600,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.9569704450000245
+    },
+    {
+      "start": 154112,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.975257563000014
+    },
+    {
+      "start": 154624,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 5.993172057000038
+    },
+    {
+      "start": 155136,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.0120900150000125
+    },
+    {
+      "start": 155648,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.030050338999899
+    },
+    {
+      "start": 156160,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.049334710000039
+    },
+    {
+      "start": 156672,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.0662794919999214
+    },
+    {
+      "start": 157184,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.0836437409998325
+    },
+    {
+      "start": 157696,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.101591773999871
+    },
+    {
+      "start": 158208,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.1218209869998645
+    },
+    {
+      "start": 158720,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.140392912999914
+    },
+    {
+      "start": 159232,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.15872200900003
+    },
+    {
+      "start": 159744,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.17701745699992
+    },
+    {
+      "start": 160256,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.195152592999875
+    },
+    {
+      "start": 160768,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.215396186999897
+    },
+    {
+      "start": 161280,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.232496244999993
+    },
+    {
+      "start": 161792,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.249846445000003
+    },
+    {
+      "start": 162304,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.267474559999982
+    },
+    {
+      "start": 162816,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.285312258999966
+    },
+    {
+      "start": 163328,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.302922679999938
+    },
+    {
+      "start": 163840,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.332621464999875
+    },
+    {
+      "start": 164352,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.351254714999868
+    },
+    {
+      "start": 164864,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.369972738999877
+    },
+    {
+      "start": 165376,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.388868055999865
+    },
+    {
+      "start": 165888,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.406577037000034
+    },
+    {
+      "start": 166400,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.425211878000027
+    },
+    {
+      "start": 166912,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.4436417899999014
+    },
+    {
+      "start": 167424,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.462475548999919
+    },
+    {
+      "start": 167936,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.481283597999891
+    },
+    {
+      "start": 168448,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.499722768999845
+    },
+    {
+      "start": 168960,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.52112023199993
+    },
+    {
+      "start": 169472,
+      "admitted": 0,
+      "cumulative": 0,
+      "free": 0,
+      "seconds": 6.536523175999946
+    }
+  ],
+  "gain": 0,
+  "seconds": 6.538406376000012
+}
