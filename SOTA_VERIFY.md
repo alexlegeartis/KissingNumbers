@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+Latest 26D: **201,182**, two above pinned PackingStar. The [radical-orbit proof](verifications/improved/dim26-27-radical-orbits/) reconstructs the 68-for-66 exchange and checks all **20,236,997,971** final unordered pairs exactly. Run `python verifications/improved/dim26-27-radical-orbits/verify.py` and `negative_controls.py`. The 27D comparison remains open.
+
 Latest 29D/30D: **231,814 and 248,180**. The [native partial-design package](verifications/improved/dim29-30-native-partial-design/) reconstructs the local ingredients and exact source exchanges and verifies complete final geometry. Run `python verifications/improved/dim29-30-native-partial-design/verify.py`.
 
 Latest 61–66D: [61/62/66 affine subcodes](verifications/improved/dim61-62-66-affine-reconstruction/) and [63–65 affine subcodes and explicit section](verifications/improved/dim63-65-affine-reconstruction/) extend the retained parent proof. The SOTA runner executes both new proofs and the unchanged parent geometry.
@@ -58,8 +60,8 @@ The 28 October P48 refilling certificate improves 49–60D. `verify_october.py` 
 
 The 27 October [26–31D residual completion package](verifications/improved/dim26-31-residual-completions/) supersedes the earlier 26–31D packages. Its default replay checks all supplied coordinates independently, including a self-contained shell lemma, and uses exact quadratic-field arithmetic for the final 30D/31D pure tails. Historical packages remain reproducible. No new worldwide record survey is asserted.
 
-The repository registers 70 constructions. The README labels 68 as best in its
-dated reviewed sources; PackingStar has superseded the repository in 26D and 27D. Every construction has a verification route, but a short run does
+The repository registers 70 constructions. The README labels 69 as best in its
+dated reviewed sources; PackingStar has superseded the repository in 27D. Every construction has a verification route, but a short run does
 not freshly establish all of them.
 The commands below check constructions; they do not perform a literature search.
 

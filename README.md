@@ -1,5 +1,7 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
+**14 November 2026 — 26D reclaimed against PackingStar.** A radical-orbit exchange gives **201,182 points**, two above the November 11 release. Independent exact verification covers every one of the **20,236,997,971 unordered pairs**. [Coordinates, exchange and full proof](verifications/improved/dim26-27-radical-orbits/). The 27D search continues.
+
 **13 November 2026 — native partial designs.** Removing the requirement that a local design extend to the full parent gives **231,814 points in 29D** and **248,180 in 30D**, +38 and +96 over our retained certificates (+40 and +188 over pinned PackingStar). [Construction ideas and complete exact proofs](verifications/improved/dim29-30-native-partial-design/).
 
 **13 November 2026 — restored high-dimensional advances.** Exact affine sign subcodes give **88,979,562 (61D), 122,543,436 (62D), 184,415,700 (63D), 335,749,696 (64D), 335,817,922 (65D), and 342,291,652 (66D)**. [61/62/66D ideas and proof](verifications/improved/dim61-62-66-affine-reconstruction/) · [63–65D ideas and proof](verifications/improved/dim63-65-affine-reconstruction/). Historical constructions remain available.
@@ -146,10 +148,10 @@ last retrieved **25 October 2026**, with all 48 rows captured in
 failed, so this update retains that snapshot. Fresh checks of the relevant
 authors' repositories and the dimension-40 paper are recorded in
 [the 26 October source review](common/source_review_20261026.json).
-All 70 constructions exceed their recorded historical comparisons. Of these, 68 remain best in
-the reviewed sources. The November 13 review records PackingStar supersessions in
-26D and 27D; our November certificates exceed its November 11 release
-in 28D, 29D, 30D and 31D. See the [current comparison](common/source_review_20261113_26_31.json)
+All 70 constructions exceed their recorded historical comparisons. Of these, 69 remain best in
+the reviewed sources. The November 14 review records a remaining PackingStar supersession in
+27D; our November certificates exceed its November 11 release
+in 26D, 28D, 29D, 30D and 31D. See the [current comparison](common/source_review_20261114_26_31.json)
 and the retained [October 29 review](common/source_review_20261029_27_31.json).
 Higher-dimensional status uses the separate sources below.
 The phase continuation separately records its [comparison scope](common/source_review_20261028_coxeter_todd.json).
@@ -159,7 +161,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 18 | 7 654 | [Cohn–Li, BW16 + hexagons](https://arxiv.org/abs/2411.04916v3) | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
 | 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 586** | **SOTA** | +0.269% | — |2026-08-30 to 2026-09-28; since 2026-10-26 | [Critical-cluster replacement and exact contacts](verifications/improved/dim25-critical-cluster/) | — |
-| 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 136** | **201 180** | +0.634% | +0.021876% | 2026-09-08 to 2026-10-05; 2026-10-28 to 2026-11-10 | [Asymmetric exchanges](verifications/improved/dim26-30-asymmetric-exchanges/) | [PackingStar, joint Leech layers](https://github.com/CDM1619/PackingStar/tree/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111) |
+| 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 182** | **SOTA** | +0.6574% | — | reclaimed 2026-11-14 | [Radical-orbit continuation](verifications/improved/dim26-27-radical-orbits/) | — |
 | 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 825** | **209 862** | +4.086% | +0.017634% | 2026-10-29 to 2026-11-10 | [Partial signed-orbit exchanges](verifications/improved/dim27-31-algebraic-completion/) | [PackingStar, joint Leech layers](https://github.com/CDM1619/PackingStar/tree/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111) |
 | 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **222 120** | **SOTA** | +8.260% | — | reclaimed 2026-10-29 and 2026-11-12 | [November sextet unions](verifications/improved/dim28-29-november-sextets/) | — |
 | 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **231 814** | **SOTA** | +10.6532% | — | updated 2026-11-13 | [Native partial designs](verifications/improved/dim29-30-native-partial-design/) | — |
@@ -537,7 +539,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 56 packages, 70 dimensions
+### `verifications/improved/` — 57 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -845,10 +847,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 127 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 129 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 146 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 148 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

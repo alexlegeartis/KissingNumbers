@@ -594,3 +594,5 @@ STATUS[66] = ('codes', 'affine sign-subcode reconstruction with exact affected g
 STATUS[29] = ('heads', 'native partial transversal design, exact oriented module and source exchange, full final geometry (dim29-30-native-partial-design/verify.py)')
 
 STATUS[30] = ('heads', 'native partial transversal design, exact oriented module and source exchange, full final geometry (dim29-30-native-partial-design/verify.py)')
+
+STATUS[26] = ('heads', 'radical-orbit continuation: 68 additions and 66 removals from PackingStar 201180; complete exact geometry of all 201182 points (dim26-27-radical-orbits/verify.py)')

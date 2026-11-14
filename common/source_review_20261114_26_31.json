@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-14",
+  "scope": "Pinned PackingStar November 11 release versus current complete repository certificates. The release directory was checked again through the GitHub commit API on November 14. No exhaustive worldwide-priority survey.",
+  "packingstar_commit": "2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6",
+  "repository_base": "61a4ce37c4b89a0ed8425c0309bc87bbb0243a0f",
+  "records": [
+    {
+      "dimension": 26,
+      "previous_repository": 201136,
+      "packingstar": 201180,
+      "repository": 201182,
+      "gap_over_packingstar": 2,
+      "status": "ahead_of_pinned_release",
+      "external_source": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D26_201180_coordinates.npz",
+      "certificate": "verifications/improved/dim26-27-radical-orbits/"
+    },
+    {
+      "dimension": 27,
+      "previous_repository": 209825,
+      "packingstar": 209862,
+      "repository": 209825,
+      "gap_over_packingstar": -37,
+      "status": "superseded",
+      "external_source": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D27_209862_coordinates.npz"
+    },
+    {
+      "dimension": 28,
+      "previous_repository": 222120,
+      "packingstar": 222104,
+      "repository": 222120,
+      "gap_over_packingstar": 16,
+      "status": "ahead_of_pinned_release",
+      "external_source": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D28_222104_coordinates.npz"
+    },
+    {
+      "dimension": 29,
+      "previous_repository": 231776,
+      "packingstar": 231774,
+      "repository": 231814,
+      "gap_over_packingstar": 40,
+      "status": "ahead_of_pinned_release",
+      "external_source": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D29_231774_coordinates.npz",
+      "immediate_predecessor": 231776,
+      "certificate": "verifications/improved/dim29-30-native-partial-design/"
+    },
+    {
+      "dimension": 30,
+      "previous_repository": 247972,
+      "packingstar": 247992,
+      "repository": 248180,
+      "gap_over_packingstar": 188,
+      "status": "ahead_of_pinned_release",
+      "external_source": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D30_247992_coordinates.npz",
+      "certificate": "verifications/improved/dim29-30-native-partial-design/",
+      "immediate_predecessor": 248084
+    },
+    {
+      "dimension": 31,
+      "previous_repository": 251200,
+      "packingstar": 251254,
+      "repository": 251420,
+      "gap_over_packingstar": 166,
+      "status": "ahead_of_pinned_release",
+      "external_source": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D31_251254_coordinates.npz",
+      "certificate": "verifications/improved/dim31-annealed-design/",
+      "immediate_predecessor": 251396
+    }
+  ],
+  "packingstar_path_latest_commit": "2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6"
+}

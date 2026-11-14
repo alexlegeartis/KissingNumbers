@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "all_pairs_checked": true,
+  "dimension": 26,
+  "count": 201182,
+  "unordered_pairs": 20236997971,
+  "rational_points": 201162,
+  "radical_points": 20,
+  "squared_norm": 128,
+  "inner_product_limit": 64,
+  "rational_pair_maximum": 64,
+  "coordinate_denominator": 2,
+  "sha256": "05273347dc5f08287b85e9631187ac374b02c8691dfd880856f1364d441b59d3",
+  "seconds": 34.88110977099859
+}
