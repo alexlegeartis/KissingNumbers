@@ -1,6 +1,6 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
-**14 November 2026 — 26D reclaimed against PackingStar.** A radical-orbit exchange gives **201,188 points**, eight above the November 11 release. Independent exact verification covers every one of the **20,238,205,078 unordered pairs**. [Coordinates, exchange and full proof](verifications/improved/dim26-27-radical-orbits/). The 27D search continues.
+**14 November 2026 — 26D and 27D reclaimed against PackingStar.** Radical-orbit and E8 head-frame exchanges give **201,188 in 26D (+8)** and **209,884 in 27D (+22)** over its November 11 release. Independent exact verification covers all **20,238,205,078** and **22,025,541,786** unordered pairs. [Coordinates, exchanges and full proofs](verifications/improved/dim26-27-radical-orbits/).
 
 **13 November 2026 — native partial designs.** Removing the requirement that a local design extend to the full parent gives **231,814 points in 29D** and **248,180 in 30D**, +38 and +96 over our retained certificates (+40 and +188 over pinned PackingStar). [Construction ideas and complete exact proofs](verifications/improved/dim29-30-native-partial-design/).
 
@@ -148,10 +148,9 @@ last retrieved **25 October 2026**, with all 48 rows captured in
 failed, so this update retains that snapshot. Fresh checks of the relevant
 authors' repositories and the dimension-40 paper are recorded in
 [the 26 October source review](common/source_review_20261026.json).
-All 70 constructions exceed their recorded historical comparisons. Of these, 69 remain best in
-the reviewed sources. The November 14 review records a remaining PackingStar supersession in
-27D; our November certificates exceed its November 11 release
-in 26D, 28D, 29D, 30D and 31D. See the [current comparison](common/source_review_20261114_26_31.json)
+All 70 constructions exceed their recorded historical comparisons and remain best in
+the dated reviewed sources. The November 14 review records complete certificates
+exceeding PackingStar's November 11 release in every dimension from 26D through 31D. See the [current comparison](common/source_review_20261114_26_31.json)
 and the retained [October 29 review](common/source_review_20261029_27_31.json).
 Higher-dimensional status uses the separate sources below.
 The phase continuation separately records its [comparison scope](common/source_review_20261028_coxeter_todd.json).
@@ -162,7 +161,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 18 | 7 654 | [Cohn–Li, BW16 + hexagons](https://arxiv.org/abs/2411.04916v3) | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
 | 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 586** | **SOTA** | +0.269% | — |2026-08-30 to 2026-09-28; since 2026-10-26 | [Critical-cluster replacement and exact contacts](verifications/improved/dim25-critical-cluster/) | — |
 | 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 188** | **SOTA** | +0.6604% | — | reclaimed 2026-11-14 | [Radical-orbit continuation](verifications/improved/dim26-27-radical-orbits/) | — |
-| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 825** | **209 862** | +4.086% | +0.017634% | 2026-10-29 to 2026-11-10 | [Partial signed-orbit exchanges](verifications/improved/dim27-31-algebraic-completion/) | [PackingStar, joint Leech layers](https://github.com/CDM1619/PackingStar/tree/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111) |
+| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 884** | **SOTA** | +4.1148% | — | reclaimed 2026-11-14 | [E8 head-frame replacement](verifications/improved/dim26-27-radical-orbits/) | — |
 | 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **222 120** | **SOTA** | +8.260% | — | reclaimed 2026-10-29 and 2026-11-12 | [November sextet unions](verifications/improved/dim28-29-november-sextets/) | — |
 | 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **231 814** | **SOTA** | +10.6532% | — | updated 2026-11-13 | [Native partial designs](verifications/improved/dim29-30-native-partial-design/) | — |
 | 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v5) | **248 180** | **SOTA** | +12.5839% | — | updated 2026-11-13 | [Native partial designs](verifications/improved/dim29-30-native-partial-design/) | — |

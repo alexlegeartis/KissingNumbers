@@ -4,20 +4,23 @@ import argparse,hashlib,json,subprocess,sys,tempfile
 import numpy as np
 if not __debug__:raise RuntimeError('Run without -O: assertions are required.')
 ROOT=Path(__file__).resolve().parent
-def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--count',type=int,choices=(201182,201184,201188),default=201188)
-    args=ap.parse_args();count=args.count
-    manifest=json.loads((ROOT/'manifest.json').read_text())
-    for name,digest in manifest.items():
-        assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest,name
-    s=np.load(ROOT/'data/source26_201180.npz');z=np.load(ROOT/f'data/coordinates26_{count}.npz')
-    e=np.load(ROOT/('data/exchange26.npz' if count==201182 else f'data/exchange26_{count}.npz'));A=z['rational'];B=z['radical']
-    O=2*np.r_[s['rational_points'],s['quadratic_A']]
-    OB=2*np.r_[np.zeros_like(s['rational_points']),s['quadratic_B']]
-    assert A.shape==B.shape==(count,26)
+def verify_record(dimension,count):
+    baseline={26:201180,27:209862}[dimension]
+    s=np.load(ROOT/f'data/source{dimension}_{baseline}.npz',allow_pickle=False)
+    candidate=ROOT/f'data/coordinates{dimension}_{count}.npz'
+    z=np.load(candidate,allow_pickle=False)
+    exchange='data/exchange26.npz' if count==201182 else f'data/exchange{dimension}_{count}.npz'
+    e=np.load(ROOT/exchange,allow_pickle=False);A=z['rational'];B=z['radical']
+    if dimension==26:
+        O=2*np.r_[s['rational_points'],s['quadratic_A']]
+        OB=2*np.r_[np.zeros_like(s['rational_points']),s['quadratic_B']]
+    else:
+        O=2*s['points'];OB=np.zeros_like(O)
+    assert O.shape==OB.shape==(baseline,dimension)
+    assert A.shape==B.shape==(count,dimension)
     addA,addB,removed=e['added_A'],e['added_B'],e['removed_indices']
-    na,nr={201182:(68,66),201184:(144,140),201188:(160,152)}[count]
-    assert addA.shape==addB.shape==(na,26) and removed.shape==(nr,)
+    na,nr={201182:(68,66),201184:(144,140),201188:(160,152),209884:(238,216)}[count]
+    assert addA.shape==addB.shape==(na,dimension) and removed.shape==(nr,)
     assert len(np.unique(removed))==nr and np.all((removed>=0)&(removed<len(O)))
     keep=np.ones(len(O),bool);keep[removed]=False
     rebuilt={np.r_[v,b].tobytes() for v,b in zip(np.r_[O[keep],addA],np.r_[OB[keep],addB])}
@@ -40,7 +43,17 @@ def main():
         assert not bad.any()
     print('SOURCE_AND_EXCHANGE_EXACT',len(O),'+',len(addA),'-',len(removed),'=',len(A),flush=True)
     with tempfile.TemporaryDirectory() as td:
-        subprocess.run([sys.executable,str(ROOT/'verify_geometry.py'),str(ROOT/f'data/coordinates26_{count}.npz'),
+        subprocess.run([sys.executable,str(ROOT/'verify_geometry.py'),str(candidate),
                         '--out',str(Path(td)/'verification.json')],check=True)
-    print(f'PASS: 26D {count}, full exact final geometry; no source-validity premise.',flush=True)
+    print(f'PASS: {dimension}D {count}, full exact final geometry; no source-validity premise.',flush=True)
+def main():
+    ap=argparse.ArgumentParser()
+    ap.add_argument('--count',type=int,choices=(201182,201184,201188,209884),
+                    help='Replay one certificate; default: both latest records.')
+    args=ap.parse_args()
+    manifest=json.loads((ROOT/'manifest.json').read_text())
+    for name,digest in manifest.items():
+        assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest,name
+    records=[(26,201188),(27,209884)] if args.count is None else [(27 if args.count==209884 else 26,args.count)]
+    for dimension,count in records:verify_record(dimension,count)
 if __name__=='__main__':main()

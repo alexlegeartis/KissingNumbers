@@ -1,6 +1,6 @@
 # Verification of the retained SOTA results
 
-Latest 26D: **201,188**, eight above pinned PackingStar. The [radical-orbit proof](verifications/improved/dim26-27-radical-orbits/) reconstructs the 160-for-152 exchange and checks all **20,238,205,078** final unordered pairs exactly. Run `python verifications/improved/dim26-27-radical-orbits/verify.py` and `negative_controls.py`. The 27D comparison remains open.
+Latest 26D/27D: **201,188 and 209,884**, respectively **8 and 22 above** pinned PackingStar. The [radical-orbit and E8 head-frame proofs](verifications/improved/dim26-27-radical-orbits/) reconstruct the 160-for-152 and 238-for-216 exchanges and check all **20,238,205,078** and **22,025,541,786** final unordered pairs exactly. Run `python verifications/improved/dim26-27-radical-orbits/verify.py` and `python verifications/improved/dim26-27-radical-orbits/negative_controls.py`. The default proof checks both records.
 
 Latest 29D/30D: **231,814 and 248,180**. The [native partial-design package](verifications/improved/dim29-30-native-partial-design/) reconstructs the local ingredients and exact source exchanges and verifies complete final geometry. Run `python verifications/improved/dim29-30-native-partial-design/verify.py`.
 
@@ -60,8 +60,8 @@ The 28 October P48 refilling certificate improves 49–60D. `verify_october.py` 
 
 The 27 October [26–31D residual completion package](verifications/improved/dim26-31-residual-completions/) supersedes the earlier 26–31D packages. Its default replay checks all supplied coordinates independently, including a self-contained shell lemma, and uses exact quadratic-field arithmetic for the final 30D/31D pure tails. Historical packages remain reproducible. No new worldwide record survey is asserted.
 
-The repository registers 70 constructions. The README labels 69 as best in its
-dated reviewed sources; PackingStar has superseded the repository in 27D. Every construction has a verification route, but a short run does
+The repository registers 70 constructions. The README labels all 70 as best in its
+dated reviewed sources; the November 14 certificates exceed pinned PackingStar in 26D and 27D. Every construction has a verification route, but a short run does
 not freshly establish all of them.
 The commands below check constructions; they do not perform a literature search.
 

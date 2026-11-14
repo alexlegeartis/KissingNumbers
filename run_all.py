@@ -106,9 +106,9 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
-    ('26D radical-orbit continuation: complete exact geometry and integer exchange',
+    ('26D/27D radical-orbit and E8 frame exchanges: complete exact geometry',
      os.path.join(V, 'improved', 'dim26-27-radical-orbits'), ['verify.py'], 3.0, True),
-    ('26D radical-orbit continuation: semantic rejection controls',
+    ('26D/27D radical-orbit and E8 frame exchanges: semantic rejection controls',
      os.path.join(V, 'improved', 'dim26-27-radical-orbits'), ['negative_controls.py'], 0.5, True),
     ('29D/30D native design negative_controls.py', os.path.join(V, 'improved', 'dim29-30-native-partial-design'), ['negative_controls.py'], 3.0, True),
     ('29D/30D native design independent29/audit.py', os.path.join(V, 'improved', 'dim29-30-native-partial-design'), ['independent29/audit.py'], 3.0, True),
@@ -561,8 +561,8 @@ def _sota_records():
 def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
-        ('dim26-27-radical-orbits', [26], [('verify.py',), ('negative_controls.py',)],
-         'complete exact geometry of 201188 points and all 20238205078 unordered pairs; independent integer exchange and semantic rejection controls'),
+        ('dim26-27-radical-orbits', [26,27], [('verify.py',), ('negative_controls.py',)],
+         'complete exact geometry of 201188 and 209884 points, all 20238205078 and 22025541786 unordered pairs; independent integer exchanges and semantic rejection controls'),
         ('dim61-62-66-affine-reconstruction', [61,62,66], [('verify.py',), ('verify.py', '--independent')], 'exact new affine classes, all affected support pairs, independent brute-force kernels and direct sign-pair replay; unchanged layers use parent package'),
         ('dim63-65-affine-reconstruction', [63,64,65], [('verify.py',), ('section63.py',), ('audit/audit.py',), ('audit/section_audit.py',)], 'exact affine sign classes and explicit relabeled 63D section; independent replay plus retained parent geometry'),
         ('dim29-30-native-partial-design', [29,30], [('verify.py',), ('negative_controls.py',), ('independent29/audit.py',), ('independent30/audit.py',)],

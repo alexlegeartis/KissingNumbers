@@ -18,10 +18,11 @@
       "dimension": 27,
       "previous_repository": 209825,
       "packingstar": 209862,
-      "repository": 209825,
-      "gap_over_packingstar": -37,
-      "status": "superseded",
-      "external_source": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D27_209862_coordinates.npz"
+      "repository": 209884,
+      "gap_over_packingstar": 22,
+      "status": "ahead_of_pinned_release",
+      "external_source": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D27_209862_coordinates.npz",
+      "certificate": "verifications/improved/dim26-27-radical-orbits/"
     },
     {
       "dimension": 28,

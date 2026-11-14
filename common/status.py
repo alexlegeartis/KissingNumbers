@@ -596,3 +596,5 @@ STATUS[29] = ('heads', 'native partial transversal design, exact oriented module
 STATUS[30] = ('heads', 'native partial transversal design, exact oriented module and source exchange, full final geometry (dim29-30-native-partial-design/verify.py)')
 
 STATUS[26] = ('heads', 'radical-orbit continuation: 160 additions and 152 removals from PackingStar 201180; complete exact geometry of all 201188 points (dim26-27-radical-orbits/verify.py)')
+
+STATUS[27] = ('heads', 'E8 head-frame replacement: 238 additions and 216 removals from PackingStar 209862; complete exact geometry of all 209884 points (dim26-27-radical-orbits/verify.py)')
