@@ -1,11 +1,15 @@
 # 26D–27D global fiber search
 
-This branch adds two search engines for the remaining deficits against
-PackingStar's 11 November 2026 release. It does **not** claim a new record:
-the target coordinate archives are not mounted in this execution environment,
-so only the small helper/catalogue tests have been run here. Run the
-data-dependent searches on the research machine with the adjacent
-`PackingStar` checkout.
+These engines are now integrated with the independently verified November 14
+certificates: **201,188 in 26D and 209,884 in 27D**. The new searches themselves
+claim no further record. `search_sources.py` reads either the pinned PackingStar
+archives or these certificates and converts their denominator-two storage to
+integral physical coordinates of squared norm 32. Unsupported fractional or
+radical 27D sources are rejected. Run without Python's `-O` flag.
+
+The helper tests and data-dependent runs against both current certificates
+are documented in `integration_20261114/README.md`. All solver instances use
+one HiGHS worker. Reserve a logical CPU and set affinity according to `AGENTS.md`.
 
 ## 26D: component-wise optimization of the 759-octad pool
 
@@ -29,12 +33,16 @@ The replacement:
 Run from the repository root:
 
 ```bash
-OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 \
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
 python research/reclaim_26_31_20261113/solve_joint26.py \
-  --source ../PackingStar/25D-31D/new_bounds_20261111/D26_201180_coordinates.npz \
+  --source verifications/improved/dim26-27-radical-orbits/data/coordinates26_201188.npz \
   --pool research/reclaim_26_31_20261113/continuous26/transplant759.npz \
-  --out /tmp/joint26_components --seconds 180
+  --rebuild-blockers --out /tmp/joint26_components --seconds 180
 ```
+
+With a newer source, `--rebuild-blockers` reprices every candidate instead of
+requiring the cached PackingStar blocker list. Without it, cached blockers
+must match exactly. The optimization time budget starts after this replay.
 
 The output `proposal_coordinates.npz` is a full coordinate witness over
 Q(√3), with changed-pair replay. Unchanged source-source pairs inherit the
@@ -60,10 +68,10 @@ arbitrary partial fibers and shared incumbent deletions.
 Run:
 
 ```bash
-OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 \
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
 python research/reclaim_26_31_20261113/search_partial_fibers27.py \
-  --source ../PackingStar/25D-31D/new_bounds_20261111/D27_209862_coordinates.npz \
-  --out /tmp/partial_fibers27 --cutoff 12 --max-candidates 12000 \
+  --source verifications/improved/dim26-27-radical-orbits/data/coordinates27_209884.npz \
+  --out /tmp/partial_fibers27 --cutoff 256 --max-candidates 12000 \
   --seconds 180
 ```
 
@@ -93,9 +101,9 @@ both denominators. No floating-point geometry is used.
 Run:
 
 ```bash
-OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 \
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
 python research/reclaim_26_31_20261113/search_rational_sphere_tails27.py \
-  --source ../PackingStar/25D-31D/new_bounds_20261111/D27_209862_coordinates.npz \
+  --source verifications/improved/dim26-27-radical-orbits/data/coordinates27_209884.npz \
   --out /tmp/rational_sphere27 --K 2 --blocker-cost 512 \
   --max-candidates 10000 --seconds 180
 ```

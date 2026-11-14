@@ -2,13 +2,18 @@
 import importlib.util
 from pathlib import Path
 import unittest
+import sys
+import tempfile
+from unittest.mock import patch
 import numpy as np
 
 HERE=Path(__file__).parent
 
 def load(stem):
     spec=importlib.util.spec_from_file_location(stem,HERE/(stem+'.py'))
-    module=importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
+    module=importlib.util.module_from_spec(spec)
+    with patch.object(sys, "path", [str(HERE), *sys.path]):
+        spec.loader.exec_module(module)
     return module
 
 class Test26D(unittest.TestCase):
@@ -48,5 +53,29 @@ class Test27D(unittest.TestCase):
             for q in range(-12,13):
                 got=bool(self.m.greater2(np.array([p]),np.array([q]))[0])
                 self.assertEqual(got,p+np.sqrt(2)*q>16)
+
+class TestCurrentSources(unittest.TestCase):
+    def test_pinned_and_current_26(self):
+        m=load('search_sources')
+        data=HERE.parents[1]/'verifications/improved/dim26-27-radical-orbits/data'
+        for name,n in [('source26_201180.npz',201180),('coordinates26_201188.npz',201188)]:
+            A,B=m.load_source26(data/name)
+            self.assertEqual(A.shape,(n,26))
+            self.assertEqual(B.shape,A.shape)
+
+    def test_pinned_and_current_27(self):
+        m=load('search_sources')
+        data=HERE.parents[1]/'verifications/improved/dim26-27-radical-orbits/data'
+        for name,n in [('source27_209862.npz',209862),('coordinates27_209884.npz',209884)]:
+            self.assertEqual(m.load_source27(data/name).shape,(n,27))
+
+    def test_fractional_certificate_is_rejected(self):
+        m=load('search_sources')
+        A=np.zeros((1,27),np.int16); A[0,0]=1
+        with tempfile.TemporaryDirectory() as td:
+            path=Path(td)/'fractional.npz'
+            np.savez(path,rational=A,radical=np.zeros_like(A),radicand=3,
+                     squared_norm=128,inner_product_limit=64,coordinate_denominator=2)
+            with self.assertRaises(ValueError):m.load_source27(path)
 
 if __name__=='__main__': unittest.main()

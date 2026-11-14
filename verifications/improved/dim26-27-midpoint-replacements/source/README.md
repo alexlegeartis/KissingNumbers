@@ -6,10 +6,10 @@ Retained construction: the dated benchmark, construction and gain columns below 
 
 Exact lower bounds obtained on 2026-10-25:
 
-| Dimension | Previous benchmark | This construction | Improvement | Repository bound (29 October 2026) | Current repository bound (4 November 2026) |
+| Dimension | Previous benchmark | This construction | Improvement | Repository bound (29 October 2026) | Current repository bound (14 November 2026) |
 |---|---:|---:|---:|---:|---:|
-| 26 | 199,868 | **200,918** | **1,050** | 201,136 | 201,136 |
-| 27 | 201,589 | **204,636** | **3,047** | 209,807 | 209,825 |
+| 26 | 199,868 | **200,918** | **1,050** | 201,136 | 201,188 |
+| 27 | 201,589 | **204,636** | **3,047** | 209,807 | 209,884 |
 
 The comparison benchmarks are those published in the [Takhanov–Yun certificate repository](https://github.com/k-nic/kissing_d25-31). The construction here rebuilds from the standard Leech shell and does not use their lifted configurations.
 

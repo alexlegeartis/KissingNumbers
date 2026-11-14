@@ -11,8 +11,10 @@ import argparse, hashlib, json, time
 from itertools import combinations, product
 from pathlib import Path
 import numpy as np
+if not __debug__:raise RuntimeError('Run without -O: exact input checks require assertions.')
 from scipy.optimize import Bounds, LinearConstraint, milp
 from scipy.sparse import coo_matrix
+from search_sources import load_source27
 
 CORE=np.array([0,2,4,5,6,10,11,23],dtype=np.int64)
 TAIL=np.array([24,25,26],dtype=np.int64)
@@ -58,9 +60,7 @@ def main():
     ap.add_argument('--cutoff',type=int,default=256); ap.add_argument('--seconds',type=float,default=180)
     ap.add_argument('--max-candidates',type=int,default=12000); ap.add_argument('--seed',type=int,default=20261114)
     args=ap.parse_args(); args.out.mkdir(parents=True,exist_ok=False); t0=time.monotonic()
-    z=np.load(args.source,allow_pickle=False); X=z['points'].astype(np.int64)
-    if int(z['coordinate_denominator'])!=1 or not np.all((X*X).sum(1)==32):
-        raise ValueError("expected exact integral norm-32 source")
+    X=load_source27(args.source)
     J=np.r_[CORE,TAIL]
     profiles,inverse,weights=np.unique(X[:,J],axis=0,return_inverse=True,return_counts=True)
     H=heads2160(); T=tails12(); P=H.astype(np.int64)@profiles[:,:8].astype(np.int64).T
@@ -115,7 +115,7 @@ def main():
     print(json.dumps(report),flush=True)
     res=milp(obj,integrality=np.ones(len(obj)),bounds=Bounds(0,1),
         constraints=LinearConstraint(M,-np.inf,np.asarray(ub)),
-        options={'time_limit':args.seconds,'presolve':True,'mip_rel_gap':0.0})
+        options={'time_limit':args.seconds,'presolve':True,'mip_rel_gap':0.0,'threads':1})
     report.update(solver_status=int(res.status),solver_message=str(res.message),
         seconds=time.monotonic()-t0,dual_bound=None if res.mip_dual_bound is None else float(-res.mip_dual_bound))
     if res.x is not None:
@@ -124,6 +124,9 @@ def main():
         required=np.unique(np.concatenate([bl[i] for i in chosen])) if len(chosen) else np.empty(0,np.int64)
         if not set(map(int,required)).issubset(set(map(int,deleted_profiles))):
             raise RuntimeError("MILP omitted selected-candidate blockers")
+        deleted_profiles=required
+        if len(chosen)<int(weights[deleted_profiles].sum()):
+            chosen=np.empty(0,np.int64);deleted_profiles=np.empty(0,np.int64)
         if len(chosen)>1:
             D=hc[chosen]@hc[chosen].T+2*(tc[chosen]@tc[chosen].T)
             if np.any(np.triu(D,1)>16): raise RuntimeError("selected candidates conflict")

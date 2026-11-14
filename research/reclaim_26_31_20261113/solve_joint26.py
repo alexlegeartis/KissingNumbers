@@ -9,9 +9,11 @@ rebuilt with int64 products. A timeout is not an exclusion proof.
 import argparse, hashlib, json, time
 from pathlib import Path
 import numpy as np
+if not __debug__:raise RuntimeError('Run without -O: exact input checks require assertions.')
 from scipy.optimize import Bounds, LinearConstraint, milp
 from scipy.sparse import coo_matrix, csr_matrix
 from scipy.sparse.csgraph import connected_components
+from search_sources import load_source26
 
 
 def above16(a, b):
@@ -93,7 +95,7 @@ def solve_component(cs,vs,blockers,ei,ej,seconds):
     obj=np.r_[-np.ones(len(cs)),np.ones(len(vs))]
     res=milp(obj,integrality=np.ones(len(obj)),bounds=Bounds(0,1),
         constraints=LinearConstraint(M,-np.inf,np.asarray(ub)),
-        options={'time_limit':seconds,'presolve':True,'mip_rel_gap':0.0})
+        options={'time_limit':seconds,'presolve':True,'mip_rel_gap':0.0,'threads':1})
     if res.x is None:
         return dict(status=int(res.status),message=str(res.message),gain=None,selected=None,deleted=None,dual_bound=None)
     sel=cs[np.flatnonzero(res.x[:len(cs)]>.5)].astype(int)
@@ -109,13 +111,11 @@ def main():
     ap=argparse.ArgumentParser()
     ap.add_argument('--source',type=Path,required=True); ap.add_argument('--pool',type=Path,required=True)
     ap.add_argument('--out',type=Path,required=True); ap.add_argument('--seconds',type=float,default=180)
-    ap.add_argument('--seed',type=int,default=20261114); args=ap.parse_args()
+    ap.add_argument('--seed',type=int,default=20261114)
+    ap.add_argument('--rebuild-blockers',action='store_true',help='Reprice the pool against a newer source.')
+    args=ap.parse_args()
     args.out.mkdir(parents=True,exist_ok=False); t0=time.monotonic()
-    z=np.load(args.source,allow_pickle=False)
-    assert int(z['rational_denominator'])==1
-    assert np.all(z['quadratic_denominators']==1) and np.all(z['quadratic_radicands']==3)
-    A=np.r_[z['rational_points'],z['quadratic_A']].astype(np.int64)
-    B=np.r_[np.zeros_like(z['rational_points']),z['quadratic_B']].astype(np.int64)
+    A,B=load_source26(args.source)
     p=np.load(args.pool,allow_pickle=False); C=p['candidate_A'].astype(np.int64)
     ptr,idx=p['blocker_indptr'],p['blocker_indices']
     supplied=[idx[ptr[i]:ptr[i+1]].astype(np.int64) for i in range(len(C))]
@@ -123,7 +123,7 @@ def main():
     blockers=[]
     for i,x in enumerate(C):
         actual=replay_blockers(x,A,B)
-        if not np.array_equal(np.sort(actual),np.sort(supplied[i])): raise ValueError(f"blocker mismatch {i}")
+        if not args.rebuild_blockers and not np.array_equal(np.sort(actual),np.sort(supplied[i])): raise ValueError(f"blocker mismatch {i}")
         blockers.append(actual)
     ei,ej=conflict_edges(C); edge_set={(int(a),int(b)) for a,b in zip(ei,ej)}
     comps=components(len(C),blockers,ei,ej)
@@ -131,14 +131,14 @@ def main():
     for k,(cs,vs) in enumerate(comps):
         g=greedy(cs,blockers,edge_set,args.seed+k)
         greedy_rows.append(dict(candidates=len(cs),victims=len(vs),gain=g[0],selected=g[1],deleted=g[2]))
-    rows=[]; solved={}; remaining=args.seconds
+    rows=[]; solved={}; remaining=args.seconds; solve_start=time.monotonic()
     for k,(cs,vs) in enumerate(comps):
         if remaining<=0: break
         mask=np.isin(ei,cs)&np.isin(ej,cs); t=time.monotonic()
         budget=max(.25,remaining*len(cs)/max(1,len(C)))
         r=solve_component(cs,vs,blockers,ei[mask],ej[mask],budget)
         r.update(component=k,candidates=len(cs),victims=len(vs),seconds=time.monotonic()-t)
-        rows.append(r); solved[k]=r; remaining=max(0,args.seconds-(time.monotonic()-t0))
+        rows.append(r); solved[k]=r; remaining=max(0,args.seconds-(time.monotonic()-solve_start))
         print(json.dumps(r),flush=True)
     chosen=[]; deleted=[]
     for k,(cs,vs) in enumerate(comps):
@@ -156,7 +156,8 @@ def main():
     FA=np.vstack([A[keep],C[chosen]])
     FB=np.vstack([B[keep],np.zeros((len(chosen),A.shape[1]),dtype=np.int64)])
     if len(FA)!=len(A)+len(chosen)-len(deleted): raise RuntimeError("bad exchange cardinality")
-    if not (np.all((FA*FA+3*FB*FB).sum(1)==32) and np.all((FA*FB).sum(1)==0)):\n        raise RuntimeError("proposal exact Q(sqrt(3)) norm failure")
+    if not (np.all((FA*FA+3*FB*FB).sum(1)==32) and np.all((FA*FB).sum(1)==0)):
+        raise RuntimeError("proposal exact Q(sqrt(3)) norm failure")
     for k,x in enumerate(C[chosen]):
         da=np.zeros(len(FA),np.int64); db=np.zeros(len(FA),np.int64)
         for j in np.flatnonzero(x):
@@ -169,6 +170,7 @@ def main():
     report=dict(source_sha256=hashlib.sha256(args.source.read_bytes()).hexdigest(),
         pool_sha256=hashlib.sha256(args.pool.read_bytes()).hexdigest(),source_count=len(A),
         candidates=len(C),candidate_conflicts=len(ei),components=len(comps),
+        rebuilt_blockers=args.rebuild_blockers,
         exact_blocker_replay="PASS",greedy_components=greedy_rows,solved_components=rows,
         added=len(chosen),removed=len(deleted),gain=int(len(chosen)-len(deleted)),
         scope="Finite 2,004-candidate pool only. Positive exchange requires full final exact replay; timeout is not exclusion.",

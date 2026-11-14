@@ -11,8 +11,10 @@ import argparse, hashlib, json, math, time
 from itertools import combinations, product
 from pathlib import Path
 import numpy as np
+if not __debug__:raise RuntimeError('Run without -O: exact input checks require assertions.')
 from scipy.optimize import Bounds, LinearConstraint, milp
 from scipy.sparse import coo_matrix
+from search_sources import load_source27
 
 CORE=np.array([0,2,4,5,6,10,11,23])
 TAIL=np.array([24,25,26])
@@ -54,8 +56,7 @@ def main():
     ap.add_argument('--K',type=int,default=2); ap.add_argument('--blocker-cost',type=int,default=512)
     ap.add_argument('--max-candidates',type=int,default=10000); ap.add_argument('--seconds',type=float,default=180)
     a=ap.parse_args(); a.out.mkdir(parents=True,exist_ok=False); t0=time.monotonic()
-    z=np.load(a.source,allow_pickle=False); X=z['points'].astype(np.int64)
-    assert int(z['coordinate_denominator'])==1 and np.all((X*X).sum(1)==32)
+    X=load_source27(a.source)
     J=np.r_[CORE,TAIL]; P,inv,w=np.unique(X[:,J],axis=0,return_inverse=True,return_counts=True)
     PC=P[:,:8]; PT=P[:,8:]; H=heads(); T,D=tails(a.K)
     hs=[]; ts=[]; ds=[]; bl=[]; prices=[]
@@ -102,13 +103,16 @@ def main():
     (a.out/'pool_report.json').write_text(json.dumps(report,indent=2)+'\n')
     res=milp(obj,integrality=np.ones(len(obj)),bounds=Bounds(0,1),
         constraints=LinearConstraint(M,-np.inf,np.asarray(ub)),
-        options={'time_limit':a.seconds,'presolve':True,'mip_rel_gap':0.0})
+        options={'time_limit':a.seconds,'presolve':True,'mip_rel_gap':0.0,'threads':1})
     report.update(status=int(res.status),message=str(res.message),seconds=time.monotonic()-t0,
         dual_bound=None if res.mip_dual_bound is None else float(-res.mip_dual_bound))
     if res.x is not None:
         chosen=np.flatnonzero(res.x[:len(Hc)]>.5); dels=used[np.flatnonzero(res.x[len(Hc):]>.5)]
         req=np.unique(np.concatenate([bl[i] for i in chosen])) if len(chosen) else np.empty(0,int)
         if not set(map(int,req)).issubset(set(map(int,dels))): raise RuntimeError('missing blocker')
+        dels=req
+        if len(chosen)<int(w[dels].sum()):
+            chosen=np.empty(0,np.int64);dels=np.empty(0,np.int64)
         if len(chosen)>1:
             for pos,i in enumerate(chosen):
                 v=(Hc[i]@Hc[chosen[pos+1:]].T-16)*Dc[i]*Dc[chosen[pos+1:]]+Tc[i]@Tc[chosen[pos+1:]].T
