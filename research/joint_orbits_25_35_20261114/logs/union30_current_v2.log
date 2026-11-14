@@ -1,0 +1,16 @@
+UNION_START 20 uncached 20
+EXACT_GRAPH 20 edges 68
+{"new": 20, "edges": 68, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim29-30-native-partial-design/data/coordinates30_248180.npz", "count": 248212}
+UNION_START 308 uncached 288
+EXACT_GRAPH 308 edges 2060
+{"new": 308, "edges": 2060, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim30-leech-sloane-section/data/coordinates30_248084.npz", "count": 248212}
+UNION_START 796 uncached 776
+EXACT_GRAPH 796 edges 15092
+{"new": 796, "edges": 15092, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim30-bw14-module/data/coordinates30_248020.npz", "count": 248212}
+UNION_START 5680 uncached 5678
+EXACT_GRAPH 5680 edges 45994
+{"new": 5680, "edges": 45994, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim27-31-joint-refills/data/coordinates30_247972.npz", "count": 248212}
+UNION_START 5510 uncached 5510
+EXACT_GRAPH 5510 edges 43598
+{"new": 5510, "edges": 43598, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim26-30-asymmetric-exchanges/data/coordinates30_247960.npz", "count": 248212}
+FINISHED {"dimension": 30, "baseline": 248212, "count": 248212, "source": "/workspace/work/union30_current_v1/coordinates30_248212.npz", "rows": [{"new": 20, "edges": 68, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim29-30-native-partial-design/data/coordinates30_248180.npz", "count": 248212}, {"new": 308, "edges": 2060, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim30-leech-sloane-section/data/coordinates30_248084.npz", "count": 248212}, {"new": 796, "edges": 15092, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim30-bw14-module/data/coordinates30_248020.npz", "count": 248212}, {"new": 5680, "edges": 45994, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim27-31-joint-refills/data/coordinates30_247972.npz", "count": 248212}, {"new": 5510, "edges": 43598, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim26-30-asymmetric-exchanges/data/coordinates30_247960.npz", "count": 248212}], "seconds": 14.96384794700134}

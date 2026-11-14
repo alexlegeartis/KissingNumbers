@@ -1,0 +1,19 @@
+UNION_START 2226 uncached 2226
+EXACT_GRAPH 2226 edges 56289
+{"new": 2226, "edges": 56289, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim31-joint-design/data/coordinates31_251396.npz", "count": 251420}
+UNION_START 2237 uncached 1003
+EXACT_GRAPH 2237 edges 56434
+{"new": 2237, "edges": 56434, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim31-leech-sloane-module/data/coordinates31_251395.npz", "count": 251420}
+UNION_START 116424 uncached 116418
+EXACT_GRAPH 116424 edges 3390606
+{"new": 116424, "edges": 3390606, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim31-latitude-contact-exchange/data/coordinates31_251200.npz", "count": 251420}
+UNION_START 116420 uncached 4
+EXACT_GRAPH 116420 edges 3390454
+{"new": 116420, "edges": 3390454, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim27-31-algebraic-completion/data/coordinates31_251196.npz", "count": 251420}
+UNION_START 116412 uncached 0
+EXACT_GRAPH 116412 edges 3390238
+{"new": 116412, "edges": 3390238, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim27-31-joint-refills/data/coordinates31_251188.npz", "count": 251420}
+UNION_START 116286 uncached 2810
+EXACT_GRAPH 116286 edges 3381938
+{"new": 116286, "edges": 3381938, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim31-normal-module-exchange/data/coordinates31_251110.npz", "count": 251420}
+FINISHED {"dimension": 31, "baseline": 251420, "count": 251420, "source": "verifications/improved/dim31-annealed-design/data/coordinates31_251420.npz", "rows": [{"new": 2226, "edges": 56289, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim31-joint-design/data/coordinates31_251396.npz", "count": 251420}, {"new": 2237, "edges": 56434, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim31-leech-sloane-module/data/coordinates31_251395.npz", "count": 251420}, {"new": 116424, "edges": 3390606, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim31-latitude-contact-exchange/data/coordinates31_251200.npz", "count": 251420}, {"new": 116420, "edges": 3390454, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim27-31-algebraic-completion/data/coordinates31_251196.npz", "count": 251420}, {"new": 116412, "edges": 3390238, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim27-31-joint-refills/data/coordinates31_251188.npz", "count": 251420}, {"new": 116286, "edges": 3381938, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim31-normal-module-exchange/data/coordinates31_251110.npz", "count": 251420}], "seconds": 108.43283405099646}

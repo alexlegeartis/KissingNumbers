@@ -2,10 +2,10 @@
 
 13 November 2026. Complete explicit certificates give:
 
-| Dimension | Previous repository | This construction | Gain | PackingStar November 11 | Gain over that source |
-|---|---:|---:|---:|---:|---:|
-| 29 | 231,776 | **231,814** | +38 | 231,774 | +40 |
-| 30 | 248,084 | **248,180** | +96 | 247,992 | +188 |
+| Dimension | Previous repository | This construction | Gain | PackingStar November 11 | Gain over that source | Current repository (14 November) |
+|---|---:|---:|---:|---:|---:|---:|
+| 29 | 231,776 | **231,814** | +38 | 231,774 | +40 | 231,814 |
+| 30 | 248,084 | **248,180** | +96 | 247,992 | +188 | 248,212 |
 
 PackingStar is pinned to [commit 2f3453b](https://github.com/CDM1619/PackingStar/tree/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111). The previous repository certificates and their provenance remain in [November sextets](../dim28-29-november-sextets/) and [30D Leech–Sloane section](../dim30-leech-sloane-section/). These comparisons do not establish exhaustive worldwide priority or global optimality.
 

@@ -1,0 +1,10 @@
+UNION_START 37755 uncached 37755
+EXACT_GRAPH 37755 edges 1150330
+{"new": 37755, "edges": 1150330, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim27-31-algebraic-completion/data/coordinates27_209825.npz", "count": 209884}
+UNION_START 37731 uncached 8
+EXACT_GRAPH 37731 edges 1149202
+{"new": 37731, "edges": 1149202, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim27-31-joint-refills/data/coordinates27_209807.npz", "count": 209884}
+UNION_START 37280 uncached 311
+EXACT_GRAPH 37280 edges 1145884
+{"new": 37280, "edges": 1145884, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim27-quadratic-normal-module/data/coordinates27_209600.npz", "count": 209884}
+FINISHED {"dimension": 27, "baseline": 209884, "count": 209884, "source": "/workspace/work/KissingNumbers/verifications/improved/dim26-27-radical-orbits/data/coordinates27_209884.npz", "rows": [{"new": 37755, "edges": 1150330, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim27-31-algebraic-completion/data/coordinates27_209825.npz", "count": 209884}, {"new": 37731, "edges": 1149202, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim27-31-joint-refills/data/coordinates27_209807.npz", "count": 209884}, {"new": 37280, "edges": 1145884, "added": 0, "removed": 0, "gain": 0, "donor": "verifications/improved/dim27-quadratic-normal-module/data/coordinates27_209600.npz", "count": 209884}], "seconds": 16.754160117001447}

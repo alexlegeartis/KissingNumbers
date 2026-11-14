@@ -1,0 +1,19 @@
+test_cached_and_uncached_graphs_agree (test_searches.MatchingGeometry.test_cached_and_uncached_graphs_agree) ... UNION_START 1 uncached 1
+EXACT_GRAPH 1 edges 1
+UNION_START 1 uncached 0
+EXACT_GRAPH 1 edges 1
+ok
+test_complete_matching_preserves_the_incumbent (test_searches.MatchingGeometry.test_complete_matching_preserves_the_incumbent) ... UNION_START 1 uncached 1
+EXACT_GRAPH 1 edges 1
+ok
+test_four_sign_orbit_conflict_formula (test_searches.MatchingGeometry.test_four_sign_orbit_conflict_formula) ... ok
+test_quadratic_sign_at_the_boundary (test_searches.MatchingGeometry.test_quadratic_sign_at_the_boundary) ... ok
+test_shared_blocker_produces_a_real_gain (test_searches.MatchingGeometry.test_shared_blocker_produces_a_real_gain) ... UNION_START 2 uncached 2
+EXACT_GRAPH 2 edges 2
+POSITIVE_MATCHING {"new": 2, "edges": 2, "added": 2, "removed": 1, "gain": 1}
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.005s
+
+OK

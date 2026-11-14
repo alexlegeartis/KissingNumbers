@@ -2,7 +2,7 @@
 
 Latest 26D/27D: **201,188 and 209,884**, respectively **8 and 22 above** pinned PackingStar. The [radical-orbit and E8 head-frame proofs](verifications/improved/dim26-27-radical-orbits/) reconstruct the 160-for-152 and 238-for-216 exchanges and check all **20,238,205,078** and **22,025,541,786** final unordered pairs exactly. Run `python verifications/improved/dim26-27-radical-orbits/verify.py` and `python verifications/improved/dim26-27-radical-orbits/negative_controls.py`. The default proof checks both records.
 
-Latest 29D/30D: **231,814 and 248,180**. The [native partial-design package](verifications/improved/dim29-30-native-partial-design/) reconstructs the local ingredients and exact source exchanges and verifies complete final geometry. Run `python verifications/improved/dim29-30-native-partial-design/verify.py`.
+Latest 30D: **248,212**, +32 over the retained native design and +220 over pinned PackingStar. The [exact certificate-union proof](verifications/improved/dim30-certificate-unions/) reconstructs 52 additions and 20 removals and checks all **30,804,474,366** final unordered pairs. Run `python verifications/improved/dim30-certificate-unions/verify.py` and `python verifications/improved/dim30-certificate-unions/negative_controls.py`. The [native-design package](verifications/improved/dim29-30-native-partial-design/) retains the current 231,814-point 29D certificate and historical 248,180-point 30D certificate.
 
 Latest 61–66D: [61/62/66 affine subcodes](verifications/improved/dim61-62-66-affine-reconstruction/) and [63–65 affine subcodes and explicit section](verifications/improved/dim63-65-affine-reconstruction/) extend the retained parent proof. The SOTA runner executes both new proofs and the unchanged parent geometry.
 

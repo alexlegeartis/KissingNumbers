@@ -48,12 +48,12 @@
       "dimension": 30,
       "previous_repository": 247972,
       "packingstar": 247992,
-      "repository": 248180,
-      "gap_over_packingstar": 188,
+      "repository": 248212,
+      "gap_over_packingstar": 220,
       "status": "ahead_of_pinned_release",
       "external_source": "https://github.com/CDM1619/PackingStar/blob/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111/D30_247992_coordinates.npz",
-      "certificate": "verifications/improved/dim29-30-native-partial-design/",
-      "immediate_predecessor": 248084
+      "certificate": "verifications/improved/dim30-certificate-unions/",
+      "immediate_predecessor": 248180
     },
     {
       "dimension": 31,

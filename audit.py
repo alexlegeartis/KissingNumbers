@@ -443,7 +443,7 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim2
 
 # Exact 13 November module replacements, including the retained BW14 checkpoint.
 for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sloane-section',
-                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction'):
+                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -2030,6 +2030,7 @@ if '--write-results' in sys.argv and not fail:
         'dim88-96-z8-golay': 'published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays',
         'dim61-68-95-96-code-layers': 'shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay',
         'dim26-30-asymmetric-exchanges': 'signed-point normal-sector exchanges without antipodal constraints; full independent exact all-pairs replay',
+        'dim30-certificate-unions': 'exact unions with retained Barnes-Wall and joint-refill certificates; complete final geometry and independent integer exchange',
         'dim26-27-radical-orbits': '26D radical-orbit and 27D E8 head-frame exchanges over PackingStar; complete exact final geometry and independent integer exchanges',
         'dim27-quadratic-normal-module': '384-point quadratic E8/cuboctahedral module replacing a 370-point normal sector; complete independent exact all-pairs verification',
         'dim28-29-november-sextets': 'corrected sextet unions over the November 11 PackingStar files; complete exact geometry and independent direct-int64 changed-pair replay',
@@ -2087,6 +2088,8 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append("")
+    out.append('14 November 2026 certificate unions: 248212 in 30D, 32 above the preceding 248180 and 220 above pinned PackingStar. A 52-for-20 exchange and all 30804474366 unordered final pairs are verified independently. See verifications/improved/dim30-certificate-unions/.')
     out.append("")
     out.append('14 November 2026: radical-orbit and E8 head-frame exchanges give 201188 in 26D and 209884 in 27D, respectively 8 and 22 above the pinned PackingStar November 11 release. The 160-for-152 and 238-for-216 exact exchanges and all 20238205078 and 22025541786 unordered final pairs are verified independently. See verifications/improved/dim26-27-radical-orbits/.')
     out.append('13 November 2026 native partial-design continuation: 231814 in29D and248180 in30D, improvements of38 and96 over retained repository certificates, and40 and188 over pinned PackingStar. Complete exact source/delta and final geometry verification; see verifications/improved/dim29-30-native-partial-design/.')

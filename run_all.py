@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 129 scripts, including large exact certificate replays
-    python run_all.py --full       # 148 scripts, budget about 10 hours
+    python run_all.py              # 131 scripts, including large exact certificate replays
+    python run_all.py --full       # 150 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -106,6 +106,10 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('30D certificate unions: complete exact geometry and integer exchange',
+     os.path.join(V, 'improved', 'dim30-certificate-unions'), ['verify.py'], 3.0, True),
+    ('30D certificate unions: semantic rejection controls',
+     os.path.join(V, 'improved', 'dim30-certificate-unions'), ['negative_controls.py'], 0.5, True),
     ('26D/27D radical-orbit and E8 frame exchanges: complete exact geometry',
      os.path.join(V, 'improved', 'dim26-27-radical-orbits'), ['verify.py'], 3.0, True),
     ('26D/27D radical-orbit and E8 frame exchanges: semantic rejection controls',
@@ -440,6 +444,8 @@ JOBS.append(('49-60D pointwise P48 refill: two exact proofs and complete tails',
 # driver, a manifest, or the GPU run's receipt.
 def _sota_jobs(quick=False):
     wanted = {
+        ('dim30-certificate-unions', ('verify.py',)),
+        ('dim30-certificate-unions', ('negative_controls.py',)),
         ('dim26-27-radical-orbits', ('verify.py',)),
         ('dim26-27-radical-orbits', ('negative_controls.py',)),
         ('dim61-62-66-affine-reconstruction', ('verify.py',)),
@@ -561,11 +567,13 @@ def _sota_records():
 def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
+        ('dim30-certificate-unions', [30], [('verify.py',), ('negative_controls.py',)],
+         'complete exact geometry of 248212 points and 30804474366 unordered pairs; pinned 52-for-20 exchange and separate integer delta checks'),
         ('dim26-27-radical-orbits', [26,27], [('verify.py',), ('negative_controls.py',)],
          'complete exact geometry of 201188 and 209884 points, all 20238205078 and 22025541786 unordered pairs; independent integer exchanges and semantic rejection controls'),
         ('dim61-62-66-affine-reconstruction', [61,62,66], [('verify.py',), ('verify.py', '--independent')], 'exact new affine classes, all affected support pairs, independent brute-force kernels and direct sign-pair replay; unchanged layers use parent package'),
         ('dim63-65-affine-reconstruction', [63,64,65], [('verify.py',), ('section63.py',), ('audit/audit.py',), ('audit/section_audit.py',)], 'exact affine sign classes and explicit relabeled 63D section; independent replay plus retained parent geometry'),
-        ('dim29-30-native-partial-design', [29,30], [('verify.py',), ('negative_controls.py',), ('independent29/audit.py',), ('independent30/audit.py',)],
+        ('dim29-30-native-partial-design', [29], [('verify.py',), ('negative_controls.py',), ('independent29/audit.py',), ('independent30/audit.py',)],
          'native partial-design recipe, exact source/delta reconstruction and complete final geometry for231814 and248180 points; retained historical proofs remain available'),
         ('dim31-annealed-design', [31], [('verify.py',)],
          'complete exact geometry for all 251420 points; exact int32 exchange with 2218 additions and 2052 removals from251254; historical packages retained'),

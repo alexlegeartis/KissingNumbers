@@ -1,0 +1,45 @@
+{
+  "dimension": 30,
+  "baseline": 248180,
+  "count": 248212,
+  "source": "verifications/improved/dim29-30-native-partial-design/data/coordinates30_248180.npz",
+  "rows": [
+    {
+      "new": 288,
+      "edges": 1920,
+      "added": 0,
+      "removed": 0,
+      "gain": 0,
+      "donor": "verifications/improved/dim30-leech-sloane-section/data/coordinates30_248084.npz",
+      "count": 248180
+    },
+    {
+      "new": 800,
+      "edges": 15024,
+      "added": 24,
+      "removed": 0,
+      "gain": 24,
+      "donor": "verifications/improved/dim30-bw14-module/data/coordinates30_248020.npz",
+      "count": 248204
+    },
+    {
+      "new": 5708,
+      "edges": 46068,
+      "added": 28,
+      "removed": 20,
+      "gain": 8,
+      "donor": "verifications/improved/dim27-31-joint-refills/data/coordinates30_247972.npz",
+      "count": 248212
+    },
+    {
+      "new": 5510,
+      "edges": 43598,
+      "added": 0,
+      "removed": 0,
+      "gain": 0,
+      "donor": "verifications/improved/dim26-30-asymmetric-exchanges/data/coordinates30_247960.npz",
+      "count": 248212
+    }
+  ],
+  "seconds": 24.007955799999763
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "dimension": 26,
+    "target": 25,
+    "count": 196562,
+    "normal": [
+      24,
+      25,
+      -1
+    ]
+  },
+  {
+    "dimension": 27,
+    "target": 26,
+    "count": 192500,
+    "normal": [
+      24
+    ]
+  },
+  {
+    "dimension": 28,
+    "target": 27,
+    "count": 198746,
+    "normal": [
+      24
+    ]
+  },
+  {
+    "dimension": 29,
+    "target": 28,
+    "count": 206400,
+    "normal": [
+      27
+    ]
+  },
+  {
+    "dimension": 30,
+    "target": 29,
+    "count": 214988,
+    "normal": [
+      28
+    ]
+  },
+  {
+    "dimension": 31,
+    "target": 30,
+    "count": 234798,
+    "normal": [
+      25
+    ]
+  }
+]

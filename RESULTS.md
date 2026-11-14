@@ -1,5 +1,7 @@
 # Results
 
+14 November 2026 certificate unions: 248212 in 30D, 32 above the preceding 248180 and 220 above pinned PackingStar. A 52-for-20 exchange and all 30804474366 unordered final pairs are verified independently. See verifications/improved/dim30-certificate-unions/.
+
 14 November 2026: radical-orbit and E8 head-frame exchanges give 201188 in 26D and 209884 in 27D, respectively 8 and 22 above the pinned PackingStar November 11 release. The 160-for-152 and 238-for-216 exact exchanges and all 20238205078 and 22025541786 unordered final pairs are verified independently. See verifications/improved/dim26-27-radical-orbits/.
 13 November 2026 native partial-design continuation: 231814 in29D and248180 in30D, improvements of38 and96 over retained repository certificates, and40 and188 over pinned PackingStar. Complete exact source/delta and final geometry verification; see verifications/improved/dim29-30-native-partial-design/.
 13 November 2026 reconstructed affine subcodes: 88979562 in61D, 122543436 in62D, 184415700 in63D, 335749696 in64D, 335817922 in65D and342291652 in66D. New exact sign-family certificates and independent replays extend the retained parent proof. See verifications/improved/dim61-62-66-affine-reconstruction/ and verifications/improved/dim63-65-affine-reconstruction/.
@@ -85,7 +87,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 27 | 201 589 | **209 884** | 1.04 | `heads` | [26D radical-orbit and 27D E8 head-frame exchanges over PackingStar; complete exact final geometry and independent integer exchanges](verifications/improved/dim26-27-radical-orbits/) |
 | 28 | 205 172 | **222 120** | 1.08 | `heads` | [corrected sextet unions over the November 11 PackingStar files; complete exact geometry and independent direct-int64 changed-pair replay](verifications/improved/dim28-29-november-sextets/) |
 | 29 | 209 496 | **231 814** | 1.11 | `heads` | [native partial transversal designs without complete-parent extendibility; exact module, source exchange and full final geometry](verifications/improved/dim29-30-native-partial-design/) |
-| 30 | 220 440 | **248 180** | 1.13 | `heads` | [native partial transversal designs without complete-parent extendibility; exact module, source exchange and full final geometry](verifications/improved/dim29-30-native-partial-design/) |
+| 30 | 220 440 | **248 212** | 1.13 | `heads` | [exact unions with retained Barnes-Wall and joint-refill certificates; complete final geometry and independent integer exchange](verifications/improved/dim30-certificate-unions/) |
 | 31 | 238 350 | **251 420** | 1.05 | `heads` | [exact E8 orientation search with full exterior deletion pricing; 2218 insertions and 2052 deletions; full exact final geometry](verifications/improved/dim31-annealed-design/) |
 | 32 | 352 320 | **352 992** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
 | 33 | 370 240 | **370 408** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
@@ -175,7 +177,8 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `heads` | 26 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | radical-orbit continuation: 160 additions and 152 removals from PackingStar 201180; complete exact geometry of all 201188 points (dim26-27-radical-orbits/verify.py) |
 | `heads` | 27 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | E8 head-frame replacement: 238 additions and 216 removals from PackingStar 209862; complete exact geometry of all 209884 points (dim26-27-radical-orbits/verify.py) |
 | `heads` | 28 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | corrected sextet unions over the November 11 release; full exact geometry and direct-integer changed pairs; new radii and coordinated changes remain open (dim28-29-november-sextets/verify.py) |
-| `heads` | 29-30 (2) | joint body-family and head searches remain open; no construction ceiling is claimed | native partial transversal design, exact oriented module and source exchange, full final geometry (dim29-30-native-partial-design/verify.py) |
+| `heads` | 29 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | native partial transversal design, exact oriented module and source exchange, full final geometry (dim29-30-native-partial-design/verify.py) |
+| `heads` | 30 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | exact unions of native-design, Barnes-Wall and joint-refill certificates; 52 additions and 20 removals, complete exact geometry of 248212 points (dim30-certificate-unions/verify.py) |
 | `heads` | 31 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | annealed E8 orientation and full exterior deletion pricing; 2218 additions and 2052 removals; exact complete geometry (dim31-annealed-design/verify.py) |
 | `heads` | 34 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | rational heavy-head rotation with a changed dense coordinate placement and star parity; all finite interactions, uniqueness and rank verified exactly (dim32-35-signed-layers/rotated34/verify.py) |
 | `heads` | 35 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | dense-code coset shifts with coordinated full-support heads and root deletions; larger compatible head families and different parities remain open (dim32-35-signed-layers/verify.py) |
@@ -198,7 +201,8 @@ refreshed table, not more search.
 | 25 | `dim25-critical-cluster` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 26-27 | `dim26-27-radical-orbits` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 28 | `dim28-29-november-sextets` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
-| 29-30 | `dim29-30-native-partial-design` | verify.py: complete exact coordinates and independent direct-integer module exchange |
+| 29 | `dim29-30-native-partial-design` | verify.py: complete exact coordinates and independent direct-integer module exchange |
+| 30 | `dim30-certificate-unions` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 31 | `dim31-annealed-design` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 32-35 | `dim32-35-signed-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 36-37 | `dim36-37-orbit-exchange` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |

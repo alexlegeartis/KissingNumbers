@@ -1,0 +1,389 @@
+{
+  "scope": "Constructive 30D improvement; other finite searches and timeouts are not global exclusions.",
+  "reports": {
+    "union25": {
+      "reports": [
+        {
+          "donor": "dim25-point-split",
+          "new": 111,
+          "edges": 1380,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "exact_fallbacks": 1382
+        }
+      ],
+      "seconds": 3.020146067996393
+    },
+    "union26": {
+      "dimension": 26,
+      "baseline": 201188,
+      "count": 201188,
+      "source": "verifications/improved/dim26-27-radical-orbits/data/coordinates26_201188.npz",
+      "rows": [
+        {
+          "new": 140,
+          "edges": 784,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim26-27-radical-orbits/data/coordinates26_201184.npz",
+          "count": 201188
+        },
+        {
+          "new": 164,
+          "edges": 940,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim26-27-radical-orbits/data/coordinates26_201182.npz",
+          "count": 201188
+        },
+        {
+          "new": 157,
+          "edges": 1078,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim26-30-asymmetric-exchanges/data/coordinates26_201136.npz",
+          "count": 201188
+        }
+      ],
+      "seconds": 4.436160254997958
+    },
+    "union28": {
+      "dimension": 28,
+      "baseline": 222120,
+      "count": 222120,
+      "source": "verifications/improved/dim28-29-november-sextets/data/coordinates28_222120.npz",
+      "rows": [
+        {
+          "new": 2260,
+          "edges": 12001,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim27-31-joint-refills/data/coordinates28_221988.npz",
+          "count": 222120
+        },
+        {
+          "new": 2413,
+          "edges": 16585,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim26-30-asymmetric-exchanges/data/coordinates28_221694.npz",
+          "count": 222120
+        }
+      ],
+      "seconds": 4.726935512000637
+    },
+    "union29": {
+      "dimension": 29,
+      "baseline": 231814,
+      "count": 231814,
+      "source": "verifications/improved/dim29-30-native-partial-design/data/coordinates29_231814.npz",
+      "rows": [
+        {
+          "new": 454,
+          "edges": 4587,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim28-29-november-sextets/data/coordinates29_231776.npz",
+          "count": 231814
+        },
+        {
+          "new": 2063,
+          "edges": 13617,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim27-31-joint-refills/data/coordinates29_231697.npz",
+          "count": 231814
+        },
+        {
+          "new": 3798,
+          "edges": 25560,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim26-30-asymmetric-exchanges/data/coordinates29_231638.npz",
+          "count": 231814
+        }
+      ],
+      "seconds": 6.709559730996261
+    },
+    "union30": {
+      "dimension": 30,
+      "baseline": 248180,
+      "count": 248212,
+      "source": "verifications/improved/dim29-30-native-partial-design/data/coordinates30_248180.npz",
+      "rows": [
+        {
+          "new": 288,
+          "edges": 1920,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim30-leech-sloane-section/data/coordinates30_248084.npz",
+          "count": 248180
+        },
+        {
+          "new": 800,
+          "edges": 15024,
+          "added": 24,
+          "removed": 0,
+          "gain": 24,
+          "donor": "verifications/improved/dim30-bw14-module/data/coordinates30_248020.npz",
+          "count": 248204
+        },
+        {
+          "new": 5708,
+          "edges": 46068,
+          "added": 28,
+          "removed": 20,
+          "gain": 8,
+          "donor": "verifications/improved/dim27-31-joint-refills/data/coordinates30_247972.npz",
+          "count": 248212
+        },
+        {
+          "new": 5510,
+          "edges": 43598,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim26-30-asymmetric-exchanges/data/coordinates30_247960.npz",
+          "count": 248212
+        }
+      ],
+      "seconds": 24.007955799999763
+    },
+    "union30_second_pass": {
+      "dimension": 30,
+      "baseline": 248212,
+      "count": 248212,
+      "source": "/workspace/work/union30_current_v1/coordinates30_248212.npz",
+      "rows": [
+        {
+          "new": 20,
+          "edges": 68,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim29-30-native-partial-design/data/coordinates30_248180.npz",
+          "count": 248212
+        },
+        {
+          "new": 308,
+          "edges": 2060,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim30-leech-sloane-section/data/coordinates30_248084.npz",
+          "count": 248212
+        },
+        {
+          "new": 796,
+          "edges": 15092,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim30-bw14-module/data/coordinates30_248020.npz",
+          "count": 248212
+        },
+        {
+          "new": 5680,
+          "edges": 45994,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim27-31-joint-refills/data/coordinates30_247972.npz",
+          "count": 248212
+        },
+        {
+          "new": 5510,
+          "edges": 43598,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim26-30-asymmetric-exchanges/data/coordinates30_247960.npz",
+          "count": 248212
+        }
+      ],
+      "seconds": 14.96384794700134
+    },
+    "union31": {
+      "dimension": 31,
+      "baseline": 251420,
+      "count": 251420,
+      "source": "verifications/improved/dim31-annealed-design/data/coordinates31_251420.npz",
+      "rows": [
+        {
+          "new": 2226,
+          "edges": 56289,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim31-joint-design/data/coordinates31_251396.npz",
+          "count": 251420
+        },
+        {
+          "new": 2237,
+          "edges": 56434,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim31-leech-sloane-module/data/coordinates31_251395.npz",
+          "count": 251420
+        },
+        {
+          "new": 116424,
+          "edges": 3390606,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim31-latitude-contact-exchange/data/coordinates31_251200.npz",
+          "count": 251420
+        },
+        {
+          "new": 116420,
+          "edges": 3390454,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim27-31-algebraic-completion/data/coordinates31_251196.npz",
+          "count": 251420
+        },
+        {
+          "new": 116412,
+          "edges": 3390238,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim27-31-joint-refills/data/coordinates31_251188.npz",
+          "count": 251420
+        },
+        {
+          "new": 116286,
+          "edges": 3381938,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim31-normal-module-exchange/data/coordinates31_251110.npz",
+          "count": 251420
+        }
+      ],
+      "seconds": 108.43283405099646
+    },
+    "joint27_small": {
+      "source_sha256": "3eb58e11ef143cb9288fd0860238e5fdd0ae5544386d07154fc12c9d204f2d59",
+      "status": "INFEASIBLE",
+      "candidates": 248,
+      "edges": 2212,
+      "cost": 16,
+      "K": 2,
+      "seed": 701,
+      "seconds": 8.854057178999938
+    },
+    "joint27_medium": {
+      "source_sha256": "3eb58e11ef143cb9288fd0860238e5fdd0ae5544386d07154fc12c9d204f2d59",
+      "status": "UNKNOWN",
+      "candidates": 4632,
+      "edges": 1141867,
+      "cost": 32,
+      "K": 2,
+      "seed": 701,
+      "seconds": 252.88406647800002
+    },
+    "joint27_fractional": {
+      "source_sha256": "3eb58e11ef143cb9288fd0860238e5fdd0ae5544386d07154fc12c9d204f2d59",
+      "status": "UNKNOWN",
+      "candidates": 7878,
+      "edges": 4159960,
+      "cost": 64,
+      "body_cost": 32,
+      "require_fractional": true,
+      "local": true,
+      "K": 2,
+      "seed": 701,
+      "seconds": 321.12268067400146
+    },
+    "frames26_axis0": {
+      "axis": 0,
+      "status": "OPTIMAL",
+      "frames": 275,
+      "bodies": 960,
+      "quads": 96,
+      "neutrals": [],
+      "seconds": 7.136171158999787
+    },
+    "frames26_axis1": {
+      "axis": 1,
+      "status": "OPTIMAL",
+      "frames": 275,
+      "bodies": 960,
+      "quads": 96,
+      "neutrals": [],
+      "seconds": 6.971611965003831
+    },
+    "frames27_axis1": {
+      "axis": 1,
+      "status": "FEASIBLE",
+      "frames": 275,
+      "bodies": 2272,
+      "quads": 28,
+      "neutrals": [
+        {
+          "frame": 16,
+          "D": 48
+        }
+      ],
+      "seconds": 485.67139241899713
+    },
+    "partial35": {
+      "status": "INFEASIBLE",
+      "dimension": 35,
+      "candidates": 992,
+      "edges": 25024,
+      "baseline": 415334,
+      "seconds": 4.760120483995706
+    },
+    "union27": {
+      "dimension": 27,
+      "baseline": 209884,
+      "count": 209884,
+      "source": "/workspace/work/KissingNumbers/verifications/improved/dim26-27-radical-orbits/data/coordinates27_209884.npz",
+      "rows": [
+        {
+          "new": 37755,
+          "edges": 1150330,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim27-31-algebraic-completion/data/coordinates27_209825.npz",
+          "count": 209884
+        },
+        {
+          "new": 37731,
+          "edges": 1149202,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim27-31-joint-refills/data/coordinates27_209807.npz",
+          "count": 209884
+        },
+        {
+          "new": 37280,
+          "edges": 1145884,
+          "added": 0,
+          "removed": 0,
+          "gain": 0,
+          "donor": "verifications/improved/dim27-quadratic-normal-module/data/coordinates27_209600.npz",
+          "count": 209884
+        }
+      ],
+      "seconds": 16.754160117001447
+    }
+  }
+}
