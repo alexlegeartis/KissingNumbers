@@ -34,6 +34,8 @@ def main():
     ap.add_argument('--full-heads',action='store_true')
     ap.add_argument('--maximize',action='store_true')
     ap.add_argument('--score-gain',type=int,default=1)
+    ap.add_argument('--keep-searching',action='store_true')
+    ap.add_argument('--hint-code',type=Path)
     a=ap.parse_args();a.out.mkdir(exist_ok=False);start=time.monotonic();root=Path('/workspace/work');d=a.dim
     baseline=201180 if d==26 else 209862
     z=np.load(root/f'PackingStar/25D-31D/new_bounds_20261111/D{d}_{baseline}_coordinates.npz')
@@ -272,10 +274,24 @@ def main():
         return above(tt,cc)|((tt>0)&(cc==0)&a.full_heads)
     conflicts(heads,quads,'head_quad',head_quad)
     conflicts(quads,quads,'quad_quad',lambda at,end:3*np.abs(QBF[at:end]@QBF.T)+np.abs(QT[at:end].astype(np.float32)@QT.astype(np.float32).T)>64)
+    if a.hint_code:
+        z=np.load(a.hint_code);ca,cb=z['rational'],z['radical'];mask=~np.any(ca[:,J],axis=1)&~np.any(cb[:,J],axis=1)
+        codekeys={np.r_[v,b].tobytes() for v,b in zip(ca[mask],cb[mask])};zero=np.zeros(d,np.int16)
+        hx=[np.r_[np.r_[h,T[c]],zero].tobytes() in codekeys for h,c in zip(H,colors)]
+        hh=[np.r_[np.r_[h,t],zero].tobytes() in codekeys for h,t in zip(HA,HT)]
+        hq=[np.r_[np.r_[np.zeros(24,np.int16),t],np.r_[b,np.zeros(d-24,np.int16)]].tobytes() in codekeys for b,t in zip(QB,QT)]
+        hr=[np.r_[np.r_[2*L[p],np.zeros(d-24,np.int16)],zero].tobytes() not in codekeys for p in vertices]
+        hd=[sum(hx[i] for i in incident[j])+2*sum(hq[i] for i in qowner[j])-hr[j] for j in range(len(vertices))]
+        assert all(v in (0,1) for v in hd)
+        model.clear_hints()
+        for arr,hints in ((x,hx),(heads,hh),(quads,hq),(used,hr),(double,hd)):
+            for v,b in zip(arr,hints):model.add_hint(v,bool(b))
+        print('INCUMBENT_HINT_SCORE',sum(hd)+2*sum(hh),flush=True)
     print('MODEL',json.dumps(dict(dimension=d,bodies=len(H),heads=len(HA),quads=len(QB),old_heads=int(ho.sum()),old_quads=int(qo.sum()),vertices=len(vertices),cuts=dict(cuts),target_score=score+1,seconds=time.monotonic()-start)),flush=True)
     class Improve(cp_model.CpSolverSolutionCallback):
         def on_solution_callback(self):
-            print('FEASIBLE_COMPLETE_MODEL',int(self.value(target)),'seconds',self.wall_time,flush=True);self.stop_search()
+            print('FEASIBLE_COMPLETE_MODEL',int(self.value(target)),'count',base_count+len(pure)+2*int(self.value(target)),'seconds',self.wall_time,flush=True)
+            if not a.keep_searching:self.stop_search()
     solver=cp_model.CpSolver();solver.parameters.num_search_workers=1;solver.parameters.max_time_in_seconds=a.seconds
     solver.parameters.random_seed=a.seed;solver.parameters.symmetry_level=0;solver.parameters.linearization_level=2
     solver.parameters.repair_hint=a.repair_hint;solver.parameters.hint_conflict_limit=100;solver.parameters.log_search_progress=True
