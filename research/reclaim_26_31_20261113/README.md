@@ -132,6 +132,7 @@ did not affect either successful 30D/31D construction or their independent proof
 | [continuous26/](continuous26/) | Final 30D section, lower-dimensional pilots, 26D catalogue, 27D module and source pricing |
 | [bulk_fibers31/](bulk_fibers31/) | Exact missing-axis pool, interrupted initial solve, independent capacity/matching exclusion |
 | [joint26_pool/](joint26_pool/) | Exact blocker replay and bounded numerical selection attempt |
+| [SEARCH_26_27.md](SEARCH_26_27.md) | New component-wise 26D optimizer and full-alphabet 27D partial-fiber search |
 | [STRATEGY.md](STRATEGY.md) | Prioritized remaining attack with explicit objectives and stopping rules |
 
 The scripts at this directory's root generate the missing-axis, joint-26D,

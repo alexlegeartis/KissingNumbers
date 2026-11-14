@@ -8,7 +8,7 @@ packages, every dimension from 26 through 31 exceeds that pinned comparison.
 
 | Dimension | PackingStar | This construction | Gain | Removed | Added | Unpaired points | Current registry |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| 26 | 201,134 | **201,136** | 2 | 59 | 61 | 58 | 201,136 |
+| 26 | 201,134 | **201,136** | 2 | 59 | 61 | 58 | 201,188 |
 | 28 | 221,664 | **221,694** | 30 | 130 | 160 | 32 | 222,120 |
 | 29 | 231,636 | **231,638** | 2 | 14 | 16 | 22 | 231,814 |
 | 30 | 247,956 | **247,960** | 4 | 80 | 84 | 104 | 248,180 |
@@ -61,7 +61,7 @@ pinned public file. The normal-sector counts change as follows:
 
 | Dimension | Previous sector | New sector | Current registry |
 |---|---:|---:|---:|
-| 26 | 334 | 336 | 201,136 |
+| 26 | 334 | 336 | 201,188 |
 | 28 | 648 | 678 | 222,120 |
 | 29 | 728 | 730 | 231,814 |
 | 30 | 1,216 | 1,220 | 248,180 |
