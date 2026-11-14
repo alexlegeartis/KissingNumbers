@@ -1,0 +1,11 @@
+{
+  "dimension": 26,
+  "missing_parents": 2212,
+  "bodies_tested": 9775320,
+  "states": 144,
+  "budget": 3,
+  "histogram": {
+    "3": 144
+  },
+  "seconds": 17.873498672001006
+}

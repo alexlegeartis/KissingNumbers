@@ -1,0 +1,8 @@
+{
+  "edges": 6159,
+  "cycles": 5004,
+  "admitted_cycles": 1552,
+  "min_full_removals": 16,
+  "best_gain": 0,
+  "seconds": 6.490601502999198
+}

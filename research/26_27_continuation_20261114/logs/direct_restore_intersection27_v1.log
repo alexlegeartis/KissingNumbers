@@ -1,0 +1,40 @@
+LOADED 27 1309200 cycles
+BEST -182 at 0 phase 0 seconds 10.94230878000235
+BEST -118 at 0 phase 2 seconds 11.01623599300001
+PROGRESS 0 1309200 best -118 minremoved 174 seconds 11.1
+BEST -76 at 2816 phase 0 seconds 15.770322333999502
+BEST -44 at 2816 phase 2 seconds 15.832634106001933
+PROGRESS 4096 1309200 best -44 minremoved 92 seconds 18.2
+BEST 0 at 4736 phase 4 seconds 19.268612092000694
+PROGRESS 8192 1309200 best 0 minremoved 16 seconds 25.5
+PROGRESS 12288 1309200 best 0 minremoved 16 seconds 33.9
+PROGRESS 16384 1309200 best 0 minremoved 16 seconds 41.5
+PROGRESS 20480 1309200 best 0 minremoved 16 seconds 49.1
+PROGRESS 24576 1309200 best 0 minremoved 16 seconds 56.8
+PROGRESS 28672 1309200 best 0 minremoved 16 seconds 64.5
+PROGRESS 32768 1309200 best 0 minremoved 16 seconds 72.2
+PROGRESS 36864 1309200 best 0 minremoved 16 seconds 79.6
+PROGRESS 40960 1309200 best 0 minremoved 16 seconds 87.0
+PROGRESS 45056 1309200 best 0 minremoved 16 seconds 94.5
+PROGRESS 49152 1309200 best 0 minremoved 16 seconds 101.7
+PROGRESS 53248 1309200 best 0 minremoved 16 seconds 109.2
+PROGRESS 57344 1309200 best 0 minremoved 16 seconds 116.7
+PROGRESS 61440 1309200 best 0 minremoved 16 seconds 124.2
+PROGRESS 65536 1309200 best 0 minremoved 16 seconds 131.7
+PROGRESS 69632 1309200 best 0 minremoved 16 seconds 139.1
+PROGRESS 73728 1309200 best 0 minremoved 16 seconds 146.5
+PROGRESS 77824 1309200 best 0 minremoved 16 seconds 153.7
+PROGRESS 81920 1309200 best 0 minremoved 16 seconds 161.3
+PROGRESS 86016 1309200 best 0 minremoved 16 seconds 170.6
+PROGRESS 90112 1309200 best 0 minremoved 16 seconds 182.7
+PROGRESS 94208 1309200 best 0 minremoved 16 seconds 195.1
+PROGRESS 98304 1309200 best 0 minremoved 16 seconds 207.0
+PROGRESS 102400 1309200 best 0 minremoved 16 seconds 219.1
+PROGRESS 106496 1309200 best 0 minremoved 16 seconds 231.3
+PROGRESS 110592 1309200 best 0 minremoved 16 seconds 243.3
+PROGRESS 114688 1309200 best 0 minremoved 16 seconds 255.5
+PROGRESS 118784 1309200 best 0 minremoved 16 seconds 268.1
+PROGRESS 122880 1309200 best 0 minremoved 16 seconds 281.2
+PROGRESS 126976 1309200 best 0 minremoved 16 seconds 294.5
+PROGRESS 131072 1309200 best 0 minremoved 16 seconds 307.0
+PROGRESS 135168 1309200 best 0 minremoved 16 seconds 319.4

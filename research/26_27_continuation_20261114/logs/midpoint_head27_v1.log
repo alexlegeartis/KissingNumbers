@@ -1,0 +1,4 @@
+MODEL {"dimension": 27, "bodies": 26208, "parent_lines": 7274, "heads": 72, "quads": 0, "original_bodies": 6506, "source_cuts": 292999, "target_score": 6646, "seconds": 9.199099573997955}
+ROUND {"round": 0, "status": "FEASIBLE", "cuts": 292999, "seconds": 927.7843113569979, "score": 6882.0, "bound": 7405.0, "selected_bodies": 6999, "new_conflicts": 15400, "heads": 56, "quads": 0}
+ROUND_NO_POSITIVE {"round": 1, "status": "FEASIBLE", "cuts": 308399, "seconds": 1800.326734727998, "score": 5694.0, "bound": 7408.0}
+FINISHED {"round": 1, "status": "FEASIBLE", "cuts": 308399, "seconds": 1800.326734727998, "score": 5694.0, "bound": 7408.0}

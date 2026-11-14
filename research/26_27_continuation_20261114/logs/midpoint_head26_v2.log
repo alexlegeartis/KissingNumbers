@@ -1,0 +1,149 @@
+MODEL {"dimension": 26, "bodies": 14144, "parent_lines": 2913, "heads": 48, "quads": 4, "original_bodies": 2208, "source_cuts": 140873, "target_score": 2309, "seconds": 3.492374182002095}
+MASTER_INCUMBENT 2308 target 2309 bound 3005.0 seconds 4.703777154
+MASTER_INCUMBENT 2309 target 2309 bound 3005.0 seconds 7.185239887000001
+ROUND {"round": 0, "status": "FEASIBLE", "cuts": 140873, "seconds": 10.707788940002501, "score": 2309.0, "bound": 3005.0, "selected_bodies": 2214, "new_conflicts": 25, "heads": 48, "quads": 4}
+MASTER_INCUMBENT 2304 target 2309 bound 3005.0 seconds 8.526346786000001
+MASTER_INCUMBENT 2417 target 2309 bound 2945.0 seconds 42.105997663000004
+ROUND {"round": 1, "status": "FEASIBLE", "cuts": 140898, "seconds": 53.01834282799973, "score": 2417.0, "bound": 2945.0, "selected_bodies": 2354, "new_conflicts": 1314, "heads": 47, "quads": 3}
+MASTER_INCUMBENT 2253 target 2309 bound 3005.0 seconds 5.846448208
+MASTER_INCUMBENT 2261 target 2309 bound 2949.0 seconds 14.933322306
+MASTER_INCUMBENT 2280 target 2309 bound 2949.0 seconds 17.876736171
+MASTER_INCUMBENT 2281 target 2309 bound 2949.0 seconds 18.209423138000002
+MASTER_INCUMBENT 2394 target 2309 bound 2947.0 seconds 26.494169452
+ROUND {"round": 2, "status": "FEASIBLE", "cuts": 142212, "seconds": 79.68055409299996, "score": 2394.0, "bound": 2947.0, "selected_bodies": 2329, "new_conflicts": 1567, "heads": 46, "quads": 0}
+MASTER_INCUMBENT 2251 target 2309 bound 3005.0 seconds 6.066031486
+MASTER_INCUMBENT 2386 target 2309 bound 2947.0 seconds 19.407404423000003
+ROUND {"round": 3, "status": "FEASIBLE", "cuts": 143779, "seconds": 99.23645773000317, "score": 2386.0, "bound": 2947.0, "selected_bodies": 2318, "new_conflicts": 1169, "heads": 48, "quads": 1}
+MASTER_INCUMBENT 2255 target 2309 bound 3005.0 seconds 5.9209964170000005
+MASTER_INCUMBENT 2294 target 2309 bound 2944.0 seconds 18.417382142
+MASTER_INCUMBENT 2310 target 2309 bound 2944.0 seconds 29.053848702000003
+ROUND {"round": 4, "status": "FEASIBLE", "cuts": 144948, "seconds": 128.44832810100343, "score": 2310.0, "bound": 2944.0, "selected_bodies": 2236, "new_conflicts": 579, "heads": 48, "quads": 3}
+MASTER_INCUMBENT 2255 target 2309 bound 3005.0 seconds 5.444913299
+MASTER_INCUMBENT 2299 target 2309 bound 2929.0 seconds 19.045592405
+MASTER_INCUMBENT 2404 target 2309 bound 2926.0 seconds 26.206472368
+ROUND {"round": 5, "status": "FEASIBLE", "cuts": 145527, "seconds": 154.79905691900058, "score": 2404.0, "bound": 2926.0, "selected_bodies": 2351, "new_conflicts": 1310, "heads": 46, "quads": 3}
+MASTER_INCUMBENT 2243 target 2309 bound 3003.0 seconds 6.131285047
+MASTER_INCUMBENT 2264 target 2309 bound 2935.0 seconds 23.558691468000003
+MASTER_INCUMBENT 2265 target 2309 bound 2935.0 seconds 30.874673034
+MASTER_INCUMBENT 2333 target 2309 bound 2935.0 seconds 70.781389945
+ROUND {"round": 6, "status": "FEASIBLE", "cuts": 146837, "seconds": 225.78862093600037, "score": 2333.0, "bound": 2935.0, "selected_bodies": 2269, "new_conflicts": 1128, "heads": 48, "quads": 1}
+MASTER_INCUMBENT 2249 target 2309 bound 3005.0 seconds 7.6739382140000005
+MASTER_INCUMBENT 2265 target 2309 bound 2949.0 seconds 16.51344679
+MASTER_INCUMBENT 2275 target 2309 bound 2945.0 seconds 17.759689797
+MASTER_INCUMBENT 2371 target 2309 bound 2944.0 seconds 21.602843824
+ROUND {"round": 7, "status": "FEASIBLE", "cuts": 147965, "seconds": 247.562571182003, "score": 2371.0, "bound": 2944.0, "selected_bodies": 2304, "new_conflicts": 1167, "heads": 46, "quads": 0}
+MASTER_INCUMBENT 2257 target 2309 bound 3005.0 seconds 6.6691984600000005
+MASTER_INCUMBENT 2345 target 2309 bound 2956.0 seconds 19.990763467
+ROUND {"round": 8, "status": "FEASIBLE", "cuts": 149132, "seconds": 267.711714680001, "score": 2345.0, "bound": 2956.0, "selected_bodies": 2288, "new_conflicts": 907, "heads": 47, "quads": 2}
+MASTER_INCUMBENT 2245 target 2309 bound 3005.0 seconds 5.717879818
+MASTER_INCUMBENT 2265 target 2309 bound 2957.0 seconds 11.711439192
+MASTER_INCUMBENT 2266 target 2309 bound 2953.0 seconds 18.880582826
+MASTER_INCUMBENT 2301 target 2309 bound 2953.0 seconds 21.053136211
+MASTER_INCUMBENT 2322 target 2309 bound 2953.0 seconds 22.64380252
+ROUND {"round": 9, "status": "FEASIBLE", "cuts": 150039, "seconds": 290.5045713779982, "score": 2322.0, "bound": 2953.0, "selected_bodies": 2263, "new_conflicts": 436, "heads": 46, "quads": 1}
+MASTER_INCUMBENT 2249 target 2309 bound 3005.0 seconds 5.9973079270000005
+MASTER_INCUMBENT 2265 target 2309 bound 2923.0 seconds 17.457003892
+MASTER_INCUMBENT 2266 target 2309 bound 2921.0 seconds 23.254078262
+MASTER_INCUMBENT 2361 target 2309 bound 2921.0 seconds 39.549488378
+ROUND {"round": 10, "status": "FEASIBLE", "cuts": 150475, "seconds": 330.1931898210023, "score": 2361.0, "bound": 2921.0, "selected_bodies": 2297, "new_conflicts": 745, "heads": 48, "quads": 1}
+MASTER_INCUMBENT 2254 target 2309 bound 3005.0 seconds 5.761868915
+MASTER_INCUMBENT 2255 target 2309 bound 2941.0 seconds 20.796671103
+MASTER_INCUMBENT 2256 target 2309 bound 2941.0 seconds 25.557299083
+MASTER_INCUMBENT 2257 target 2309 bound 2941.0 seconds 30.086242424
+MASTER_INCUMBENT 2258 target 2309 bound 2941.0 seconds 34.171717152
+MASTER_INCUMBENT 2259 target 2309 bound 2941.0 seconds 38.443621224000005
+MASTER_INCUMBENT 2260 target 2309 bound 2941.0 seconds 41.947033145000006
+MASTER_INCUMBENT 2261 target 2309 bound 2941.0 seconds 46.207155167
+MASTER_INCUMBENT 2262 target 2309 bound 2941.0 seconds 50.406772529
+MASTER_INCUMBENT 2263 target 2309 bound 2941.0 seconds 54.65923921500001
+MASTER_INCUMBENT 2264 target 2309 bound 2941.0 seconds 59.02409629500001
+MASTER_INCUMBENT 2265 target 2309 bound 2941.0 seconds 62.347780320000005
+MASTER_INCUMBENT 2270 target 2309 bound 2941.0 seconds 69.449679466
+MASTER_INCUMBENT 2361 target 2309 bound 2941.0 seconds 70.50199970700001
+ROUND {"round": 11, "status": "FEASIBLE", "cuts": 151220, "seconds": 400.86863840500155, "score": 2361.0, "bound": 2941.0, "selected_bodies": 2292, "new_conflicts": 925, "heads": 46, "quads": 1}
+MASTER_INCUMBENT 2255 target 2309 bound 3005.0 seconds 6.012025354
+MASTER_INCUMBENT 2261 target 2309 bound 2942.0 seconds 12.255388449000002
+MASTER_INCUMBENT 2316 target 2309 bound 2942.0 seconds 24.224222001
+ROUND {"round": 12, "status": "FEASIBLE", "cuts": 152145, "seconds": 425.2666263959982, "score": 2316.0, "bound": 2942.0, "selected_bodies": 2258, "new_conflicts": 380, "heads": 46, "quads": 2}
+MASTER_INCUMBENT 2252 target 2309 bound 3005.0 seconds 5.642892334000001
+MASTER_INCUMBENT 2361 target 2309 bound 2957.0 seconds 9.266940752
+ROUND {"round": 13, "status": "FEASIBLE", "cuts": 152525, "seconds": 434.6837611919982, "score": 2361.0, "bound": 2957.0, "selected_bodies": 2296, "new_conflicts": 1268, "heads": 46, "quads": 2}
+MASTER_INCUMBENT 2251 target 2309 bound 3005.0 seconds 5.6222595900000005
+MASTER_INCUMBENT 2252 target 2309 bound 2940.0 seconds 26.199778567000003
+MASTER_INCUMBENT 2253 target 2309 bound 2940.0 seconds 30.877404799
+MASTER_INCUMBENT 2255 target 2309 bound 2940.0 seconds 35.256768417
+MASTER_INCUMBENT 2256 target 2309 bound 2940.0 seconds 39.635379689000004
+MASTER_INCUMBENT 2258 target 2309 bound 2940.0 seconds 45.296243665000006
+MASTER_INCUMBENT 2259 target 2309 bound 2940.0 seconds 49.176907167
+MASTER_INCUMBENT 2260 target 2309 bound 2940.0 seconds 56.223777482
+MASTER_INCUMBENT 2277 target 2309 bound 2940.0 seconds 61.210684053
+MASTER_INCUMBENT 2358 target 2309 bound 2940.0 seconds 66.523485652
+ROUND {"round": 14, "status": "FEASIBLE", "cuts": 153793, "seconds": 501.39836439400096, "score": 2358.0, "bound": 2940.0, "selected_bodies": 2305, "new_conflicts": 1129, "heads": 46, "quads": 2}
+MASTER_INCUMBENT 2245 target 2309 bound 3005.0 seconds 6.341690676000001
+MASTER_INCUMBENT 2350 target 2309 bound 2969.0 seconds 17.763348345
+ROUND {"round": 15, "status": "FEASIBLE", "cuts": 154922, "seconds": 519.3197038220023, "score": 2350.0, "bound": 2969.0, "selected_bodies": 2292, "new_conflicts": 894, "heads": 46, "quads": 0}
+MASTER_INCUMBENT 2254 target 2309 bound 3005.0 seconds 5.837908474000001
+MASTER_INCUMBENT 2361 target 2309 bound 2954.0 seconds 11.150627936000001
+ROUND {"round": 16, "status": "FEASIBLE", "cuts": 155816, "seconds": 530.6096227810049, "score": 2361.0, "bound": 2954.0, "selected_bodies": 2299, "new_conflicts": 621, "heads": 46, "quads": 4}
+MASTER_INCUMBENT 2255 target 2309 bound 3005.0 seconds 5.910345199
+MASTER_INCUMBENT 2324 target 2309 bound 2938.0 seconds 14.395520971000002
+ROUND {"round": 17, "status": "FEASIBLE", "cuts": 156437, "seconds": 545.142966145002, "score": 2324.0, "bound": 2938.0, "selected_bodies": 2258, "new_conflicts": 672, "heads": 46, "quads": 1}
+MASTER_INCUMBENT 2256 target 2309 bound 3005.0 seconds 5.919266110000001
+MASTER_INCUMBENT 2267 target 2309 bound 2977.0 seconds 8.881197626
+MASTER_INCUMBENT 2278 target 2309 bound 2968.0 seconds 12.428973975
+MASTER_INCUMBENT 2281 target 2309 bound 2949.0 seconds 12.989252627
+MASTER_INCUMBENT 2282 target 2309 bound 2949.0 seconds 19.49598727
+MASTER_INCUMBENT 2283 target 2309 bound 2949.0 seconds 25.160233525000002
+MASTER_INCUMBENT 2284 target 2309 bound 2949.0 seconds 30.405220701
+MASTER_INCUMBENT 2397 target 2309 bound 2949.0 seconds 52.044457327
+ROUND {"round": 18, "status": "FEASIBLE", "cuts": 157109, "seconds": 597.3392534140003, "score": 2397.0, "bound": 2949.0, "selected_bodies": 2343, "new_conflicts": 1400, "heads": 46, "quads": 2}
+MASTER_INCUMBENT 2250 target 2309 bound 3005.0 seconds 6.304295529
+MASTER_INCUMBENT 2271 target 2309 bound 2964.0 seconds 10.076012705
+MASTER_INCUMBENT 2322 target 2309 bound 2960.0 seconds 15.763514762000002
+ROUND {"round": 19, "status": "FEASIBLE", "cuts": 158509, "seconds": 613.2630816880046, "score": 2322.0, "bound": 2960.0, "selected_bodies": 2265, "new_conflicts": 409, "heads": 46, "quads": 2}
+MASTER_INCUMBENT 2250 target 2309 bound 3005.0 seconds 6.193795238000001
+MASTER_INCUMBENT 2252 target 2309 bound 2940.0 seconds 13.523542865000001
+MASTER_INCUMBENT 2267 target 2309 bound 2940.0 seconds 14.287271921
+MASTER_INCUMBENT 2339 target 2309 bound 2939.0 seconds 15.298617125000002
+ROUND {"round": 20, "status": "FEASIBLE", "cuts": 158918, "seconds": 628.7139724590015, "score": 2339.0, "bound": 2939.0, "selected_bodies": 2282, "new_conflicts": 678, "heads": 46, "quads": 4}
+MASTER_INCUMBENT 2245 target 2309 bound 3005.0 seconds 5.956069791
+MASTER_INCUMBENT 2271 target 2309 bound 2951.0 seconds 10.566382709
+MASTER_INCUMBENT 2345 target 2309 bound 2947.0 seconds 16.034045957
+ROUND {"round": 21, "status": "FEASIBLE", "cuts": 159596, "seconds": 644.9016943620009, "score": 2345.0, "bound": 2947.0, "selected_bodies": 2286, "new_conflicts": 541, "heads": 46, "quads": 3}
+MASTER_INCUMBENT 2248 target 2309 bound 3005.0 seconds 5.898478518
+MASTER_INCUMBENT 2260 target 2309 bound 2941.0 seconds 16.287681301000003
+MASTER_INCUMBENT 2289 target 2309 bound 2937.0 seconds 19.459835585
+MASTER_INCUMBENT 2291 target 2309 bound 2937.0 seconds 123.088486856
+MASTER_INCUMBENT 2293 target 2309 bound 2937.0 seconds 128.1917329
+MASTER_INCUMBENT 2295 target 2309 bound 2937.0 seconds 134.471261414
+MASTER_INCUMBENT 2298 target 2309 bound 2937.0 seconds 172.128773195
+MASTER_INCUMBENT 2300 target 2309 bound 2937.0 seconds 203.947479764
+MASTER_INCUMBENT 2319 target 2309 bound 2820.0 seconds 217.416899263
+ROUND {"round": 22, "status": "FEASIBLE", "cuts": 160137, "seconds": 862.5565590870028, "score": 2319.0, "bound": 2820.0, "selected_bodies": 2259, "new_conflicts": 982, "heads": 46, "quads": 2}
+MASTER_INCUMBENT 2245 target 2309 bound 3005.0 seconds 6.173910632
+MASTER_INCUMBENT 2247 target 2309 bound 2938.0 seconds 22.840591594000003
+MASTER_INCUMBENT 2249 target 2309 bound 2938.0 seconds 26.130892267
+MASTER_INCUMBENT 2250 target 2309 bound 2938.0 seconds 29.779605336000003
+MASTER_INCUMBENT 2251 target 2309 bound 2938.0 seconds 33.009965632000004
+MASTER_INCUMBENT 2329 target 2309 bound 2938.0 seconds 48.104938852000004
+ROUND {"round": 23, "status": "FEASIBLE", "cuts": 161119, "seconds": 910.8745255219983, "score": 2329.0, "bound": 2938.0, "selected_bodies": 2271, "new_conflicts": 586, "heads": 46, "quads": 4}
+MASTER_INCUMBENT 2252 target 2309 bound 3003.0 seconds 5.9359756720000005
+MASTER_INCUMBENT 2349 target 2309 bound 2943.0 seconds 16.018973475
+ROUND {"round": 24, "status": "FEASIBLE", "cuts": 161705, "seconds": 927.0590824419996, "score": 2349.0, "bound": 2943.0, "selected_bodies": 2285, "new_conflicts": 570, "heads": 46, "quads": 2}
+MASTER_INCUMBENT 2251 target 2309 bound 3003.0 seconds 6.420060942
+MASTER_INCUMBENT 2268 target 2309 bound 2957.0 seconds 11.24567717
+MASTER_INCUMBENT 2273 target 2309 bound 2956.0 seconds 12.181286298000002
+MASTER_INCUMBENT 2274 target 2309 bound 2944.0 seconds 25.114245672000003
+MASTER_INCUMBENT 2275 target 2309 bound 2944.0 seconds 29.523653656
+MASTER_INCUMBENT 2279 target 2309 bound 2944.0 seconds 52.548990494
+MASTER_INCUMBENT 2320 target 2309 bound 2944.0 seconds 73.637959553
+ROUND {"round": 25, "status": "FEASIBLE", "cuts": 162275, "seconds": 1000.9310646750018, "score": 2320.0, "bound": 2944.0, "selected_bodies": 2261, "new_conflicts": 968, "heads": 48, "quads": 1}
+MASTER_INCUMBENT 2243 target 2309 bound 3005.0 seconds 6.012902908
+MASTER_INCUMBENT 2245 target 2309 bound 2938.0 seconds 40.711150045000004
+MASTER_INCUMBENT 2247 target 2309 bound 2938.0 seconds 46.402791904000004
+MASTER_INCUMBENT 2256 target 2309 bound 2938.0 seconds 52.971047129000006
+MASTER_INCUMBENT 2328 target 2309 bound 2938.0 seconds 56.394785680000005
+ROUND {"round": 26, "status": "FEASIBLE", "cuts": 163243, "seconds": 1057.5175907910016, "score": 2328.0, "bound": 2938.0, "selected_bodies": 2262, "new_conflicts": 570, "heads": 46, "quads": 1}
+MASTER_INCUMBENT 2258 target 2309 bound 3005.0 seconds 5.82494374
+MASTER_INCUMBENT 2267 target 2309 bound 2943.0 seconds 14.815135115
+MASTER_INCUMBENT 2279 target 2309 bound 2930.0 seconds 35.338770555

@@ -1,0 +1,238 @@
+MODEL {"nodes": 11366, "old": 2774, "new": 8592, "edges": 214378, "cliques": 5277, "max_cost": 4, "seconds": 2.0311366169989924}
+
+Starting CP-SAT solver v9.15.6755
+Parameters: random_seed: 367 max_time_in_seconds: 1200 log_search_progress: true linearization_level: 2 num_search_workers: 1 symmetry_level: 0
+
+Initial optimization model '': (model_fingerprint: 0xcd6c9a77a62986aa)
+#Variables: 11'366 (#bools: 11'366 in objective) (11'366 primary variables)
+  - 11'366 Booleans in [0,1]
+#kAtMostOne: 219'655 (#literals: 463'146)
+#kLinearN: 1 (#terms: 11'366)
+
+Starting presolve at 0.06s
+The solution hint is complete and is feasible. Its objective value is 2774.
+  7.13e-02s  0.00e+00d  [DetectDominanceRelations]
+  4.05e-02s  0.00e+00d  [DetectDominanceRelations]
+  2.63e-01s  0.00e+00d  [PresolveToFixPoint] #num_loops=4 #num_dual_strengthening=3
+  6.22e-03s  0.00e+00d  [ExtractEncodingFromLinear] #potential_supersets=219'211
+  1.73e-02s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=6
+  1.93e-01s  5.69e-02d  [Probe] #probed=22'660
+  2.51e-01s  1.74e-01d  [MaxClique] Merged 219'205 constraints with 462'212 literals into 23'582 constraints with 143'412 literals
+  2.47e-02s  0.00e+00d  [DetectDominanceRelations]
+  1.73e-02s  0.00e+00d  [DetectDominanceRelations]
+  9.27e-02s  0.00e+00d  [PresolveToFixPoint] #num_loops=3 #num_dual_strengthening=3
+  1.14e-02s  0.00e+00d  [ProcessAtMostOneAndLinear]
+  6.84e-03s  0.00e+00d  [DetectDuplicateConstraints]
+  5.09e-03s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements]
+  1.67e-03s  0.00e+00d  [DetectDominatedLinearConstraints] #relevant_constraints=1
+  1.56e-03s  0.00e+00d  [DetectDifferentVariables]
+  1.84e-02s  1.00e-01d  [ProcessSetPPC] #relevant_constraints=23'523 #num_inclusions=8'877
+  1.81e-02s  0.00e+00d  [TransformClausesToExactlyOne] #num_amos=23'467
+  1.53e-03s  0.00e+00d  [DetectEncodedComplexDomains]
+  9.08e-04s  0.00e+00d  [FindAlmostIdenticalLinearConstraints]
+  5.02e-01s  1.00e+00d *[FindBigAtMostOneAndLinearOverlap]
+  8.66e-02s  6.32e-01d  [FindBigVerticalLinearOverlap]
+  4.57e-03s  5.62e-05d  [FindBigHorizontalLinearOverlap] #linears=1
+  4.54e-03s  0.00e+00d  [MergeClauses]
+  1.80e-02s  0.00e+00d  [DetectDominanceRelations]
+  4.44e-02s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1
+  1.75e-02s  0.00e+00d  [DetectDominanceRelations]
+  4.32e-02s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1
+[SAT presolve] num removable Booleans: 0 / 11'237
+[SAT presolve] num trivial clauses: 0
+[SAT presolve] [0s] clauses:3'191 literals:6'382 vars:3'057 one_side_vars:3057 simple_definition:0 singleton_clauses:0
+[SAT presolve] [0.00029247s] clauses:3'191 literals:6'382 vars:3'057 one_side_vars:3057 simple_definition:0 singleton_clauses:0
+[SAT presolve] [0.00111376s] clauses:3'191 literals:6'382 vars:3'057 one_side_vars:3057 simple_definition:0 singleton_clauses:0
+  5.95e-03s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements]
+  1.46e-01s  5.73e-02d  [Probe] #probed=22'474
+  1.54e-01s  2.26e-01d  [MaxClique] Merged 23'467 constraints with 142'571 literals into 23'432 constraints with 142'507 literals
+  1.94e-02s  0.00e+00d  [DetectDominanceRelations]
+  5.07e-02s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1
+  1.00e-02s  0.00e+00d  [ProcessAtMostOneAndLinear]
+  6.31e-03s  0.00e+00d  [DetectDuplicateConstraints]
+  6.05e-03s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements]
+  1.59e-03s  0.00e+00d  [DetectDominatedLinearConstraints] #relevant_constraints=1
+  1.26e-03s  0.00e+00d  [DetectDifferentVariables]
+  2.26e-02s  1.00e-01d  [ProcessSetPPC] #relevant_constraints=23'433 #num_inclusions=8'823
+  1.64e-02s  0.00e+00d  [TransformClausesToExactlyOne] #num_amos=23'432
+  1.47e-03s  0.00e+00d  [DetectEncodedComplexDomains]
+  1.06e-03s  0.00e+00d  [FindAlmostIdenticalLinearConstraints]
+  5.47e-01s  1.00e+00d *[FindBigAtMostOneAndLinearOverlap]
+  8.13e-02s  6.32e-01d  [FindBigVerticalLinearOverlap]
+  4.57e-03s  5.62e-05d  [FindBigHorizontalLinearOverlap] #linears=1
+  4.70e-03s  0.00e+00d  [MergeClauses]
+  1.90e-02s  0.00e+00d  [DetectDominanceRelations]
+  4.60e-02s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1
+  1.97e-02s  0.00e+00d  [DetectDominanceRelations]
+  4.67e-02s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1
+[SAT presolve] num removable Booleans: 0 / 11'237
+[SAT presolve] num trivial clauses: 0
+[SAT presolve] [0s] clauses:3'170 literals:6'340 vars:3'040 one_side_vars:3040 simple_definition:0 singleton_clauses:0
+[SAT presolve] [0.000277891s] clauses:3'170 literals:6'340 vars:3'040 one_side_vars:3040 simple_definition:0 singleton_clauses:0
+[SAT presolve] [0.00158612s] clauses:3'170 literals:6'340 vars:3'040 one_side_vars:3040 simple_definition:0 singleton_clauses:0
+  7.06e-03s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements]
+  1.42e-01s  5.73e-02d  [Probe] #probed=22'474
+  1.55e-01s  2.26e-01d  [MaxClique]
+  2.12e-02s  0.00e+00d  [DetectDominanceRelations]
+  5.09e-02s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1
+  1.02e-02s  0.00e+00d  [ProcessAtMostOneAndLinear]
+  7.27e-03s  0.00e+00d  [DetectDuplicateConstraints]
+  5.94e-03s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements]
+  2.18e-03s  0.00e+00d  [DetectDominatedLinearConstraints] #relevant_constraints=1
+  1.93e-03s  0.00e+00d  [DetectDifferentVariables]
+  1.76e-02s  1.00e-01d  [ProcessSetPPC] #relevant_constraints=23'433 #num_inclusions=8'823
+  1.51e-02s  0.00e+00d  [TransformClausesToExactlyOne] #num_amos=23'432
+  1.38e-03s  0.00e+00d  [DetectEncodedComplexDomains]
+  1.12e-03s  0.00e+00d  [FindAlmostIdenticalLinearConstraints]
+  5.07e-01s  1.00e+00d *[FindBigAtMostOneAndLinearOverlap]
+  8.32e-02s  6.32e-01d  [FindBigVerticalLinearOverlap]
+  5.07e-03s  5.62e-05d  [FindBigHorizontalLinearOverlap] #linears=1
+  5.41e-03s  0.00e+00d  [MergeClauses]
+  1.95e-02s  0.00e+00d  [DetectDominanceRelations]
+  4.58e-02s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1
+  1.05e-03s  0.00e+00d  [MergeNoOverlap]
+  1.21e-03s  0.00e+00d  [MergeNoOverlap2D]
+  3.87e-03s  0.00e+00d  [ExpandObjective]
+
+Presolve summary:
+  - 0 affine relations were detected.
+  - rule 'TODO dual: tighten at most one' was applied 38 times.
+  - rule 'at_most_one: empty or all false' was applied 8 times.
+  - rule 'at_most_one: removed literals' was applied 872 times.
+  - rule 'at_most_one: size one' was applied 496 times.
+  - rule 'at_most_one: transformed into max clique' was applied 2 times.
+  - rule 'domination: in at most one' was applied 85 times.
+  - rule 'dual: fix variable' was applied 44 times.
+  - rule 'duplicate: removed enforced constraint' was applied 6 times.
+  - rule 'linear: fixed or dup variables' was applied 4 times.
+  - rule 'presolve: 129 unused variables removed.' was applied 1 time.
+  - rule 'presolve: iteration' was applied 3 times.
+  - rule 'setppc: removed dominated constraints' was applied 55 times.
+
+Presolved optimization model '': (model_fingerprint: 0x1e295b42fefdd7b5)
+#Variables: 11'237 (#bools: 11'237 in objective) (11'237 primary variables)
+  - 11'237 Booleans in [0,1]
+#kAtMostOne: 20'262 (#literals: 136'167)
+#kBoolAnd: 1'935 (#enforced: 1'935) (#literals: 5'105)
+#kLinearN: 1 (#terms: 11'237)
+
+Preloading model.
+#Bound   4.02s best:-inf  next:[44,11281] initial_domain
+#1       4.02s best:2774  next:[2775,11281] complete_hint
+INCUMBENT 2774 target 2775 seconds 4.02410725
+
+Starting search at 4.02s with 1 workers.
+1 full problem subsolver: [main]
+
+[Precedences] num_relations=0 num_clauses=0
+[Probing] deterministic_time: 0.0556993 (limit: 1) wall_time: 0.101542 (11237/11237)
+[LinearRelaxationBeforeCliqueExpansion] #linear:1 #at_most_ones:23432
+[FinalLinearRelaxation] #linear:23433 #cut_generators:0
+Initial num_bool: 11237
+#Bound   4.51s best:2774  next:[2775,7414] main
+
+Starting subsolver 'main' hint search at 4.51s
+#Bound   4.52s best:2774  next:[2775,7407] main
+#Bound   4.55s best:2774  next:[2775,7371] main
+#Bound   4.57s best:2774  next:[2775,6936] main
+#Bound   4.58s best:2774  next:[2775,6500] main
+#Bound   4.61s best:2774  next:[2775,6076] main
+#Bound   4.62s best:2774  next:[2775,5666] main
+#Bound   4.63s best:2774  next:[2775,5587] main
+#Bound   4.64s best:2774  next:[2775,5535] main
+#Bound   4.64s best:2774  next:[2775,5486] main
+#Bound   4.64s best:2774  next:[2775,5296] main
+#Bound   4.66s best:2774  next:[2775,4988] main
+#Bound   4.67s best:2774  next:[2775,4946] main
+#Bound   4.67s best:2774  next:[2775,4914] main
+#Bound   4.67s best:2774  next:[2775,4896] main
+#Bound   4.68s best:2774  next:[2775,4794] main
+#Bound   4.70s best:2774  next:[2775,4654] main
+#Bound   4.71s best:2774  next:[2775,4629] main
+#Bound   4.71s best:2774  next:[2775,4604] main
+#Bound   4.71s best:2774  next:[2775,4521] main
+#Bound   4.73s best:2774  next:[2775,4382] main
+#Bound   4.75s best:2774  next:[2775,4250] main
+#Bound   4.76s best:2774  next:[2775,4107] main
+#Bound   4.77s best:2774  next:[2775,3998] main
+#Bound   5.00s best:2774  next:[2775,3427] main [skipped_logs=20]
+Starting subsolver 'main' search at 7.64s
+#Bound   7.84s best:2774  next:[2775,2949] main [skipped_logs=59]
+#Bound   8.26s best:2774  next:[2775,2943] main
+#Bound   9.26s best:2774  next:[2775,2935] main
+#Bound  11.14s best:2774  next:[2775,2928] main
+#Bound  11.25s best:2774  next:[2775,2916] main
+#Bound  20.03s best:2774  next:[2775,2781] main
+#Bound  20.60s best:2774  next:[2775,2779] main
+#Bound  22.51s best:2774  next:[2775,2775] main
+#Done   22.62s main
+
+Task timing           n [     min,      max]      avg      dev     time         n [     min,      max]      avg      dev    dtime
+      'main':         1 [  18.60s,   18.60s]   18.60s   0.00ns   18.60s         1 [   6.38s,    6.38s]    6.38s   0.00ns    6.38s
+
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+       'main':  11'237        627    94'232         2           72'569     90'606   2'703'820      3'746'910
+
+SAT formula    Fixed  Equiv   Total  VarLeft  BinaryClauses  PermanentClauses  TemporaryClauses
+      'main':  6'959      0  11'237    4'278         18'230                 2               598
+
+SAT stats    ClassicMinim  LitRemoved  LitRemovedBinary  LitLearned  LitForgotten  Subsumed
+    'main':            23          77            19'141     322'203             0        22
+
+Vivification    Clauses  Decisions  LitTrue  Subsumed  LitRemoved  DecisionReused  Conflicts
+       'main':        0          0        0         0           0               0          0
+
+Clause deletion    at_true  l_and_not(l)  to_binary  sub_conflict  sub_extra  sub_decisions  sub_eager  sub_vivify  sub_probing  sub_inpro  blocked  eliminated  forgotten  promoted  conflicts
+          'main':        0             0          0            18          4              0          4           0            0          0        0           0          0     1'077        627
+
+Lp stats    Component  Iterations  AddedCuts  OPTIMAL  DUAL_F.  DUAL_U.
+   'main':          1      53'256      1'239      213    2'019        0
+
+Lp dimension         Final dimension of first component
+       'main':  5450 rows, 11237 columns, 42862 entries
+
+Lp debug    CutPropag  CutEqPropag  Adjust  Overflow    Bad  BadScaling
+   'main':          0            0   2'130         0  8'623           0
+
+Lp pool    Constraints  Updates  Simplif  Merged  Shortened  Split  Strengthened    Cuts/Call
+  'main':       24'672        0        0       0          0      0             0  1'239/3'629
+
+Lp Cut           main
+         CG_FF:    25
+          CG_R:   130
+        Clique:   109
+  ZERO_HALF_FF:   609
+   ZERO_HALF_R:   366
+
+Solutions (1)       Num   Rank
+  'complete_hint':    2  [0,1]
+
+Objective bounds     Num
+  'initial_domain':    1
+            'main':  112
+
+Solution repositories    Added  Queried  Synchro
+    'alternative_path':      0        0        0
+      'best_solutions':      1        0        1
+   'fj solution hints':      0        0        0
+
+LRAT_status: NA
+CpSolverResponse summary:
+status: OPTIMAL
+objective: 2774
+best_bound: 2774
+integers: 11345
+booleans: 11237
+conflicts: 627
+branches: 94232
+propagations: 2703820
+integer_propagations: 3746910
+restarts: 2
+lp_iterations: 53256
+walltime: 22.6316
+usertime: 22.6316
+deterministic_time: 12.3711
+gap_integral: 0
+solution_fingerprint: 0x856e08dc69a07963
+
+FINISHED {"status": "OPTIMAL", "nodes": 11366, "old": 2774, "new": 8592, "edges": 214378, "max_cost": 4, "seconds": 24.67029339000146, "selected": 2774, "bound": 2774.0}

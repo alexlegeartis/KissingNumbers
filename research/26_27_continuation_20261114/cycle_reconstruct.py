@@ -1,0 +1,14 @@
+"""Rebuild a cycle trade and check all changed-point comparisons exactly."""
+import itertools,json,time
+from pathlib import Path
+import numpy as np
+from image_search import above
+
+def reconstruct(pack,out,newH,newcolors,newparents,deleted):
+ start=time.monotonic();pack=Path(pack);out=Path(out);z=np.load(pack/'data.npz');d=int(z['dimension']);T=z['tail_palette'];nt=len(T);L=z['leech'];F=z['fixed_A'];FB=z['fixed_B'];blocked=z['blocked'];flat=z['state'][z['initial']];ci=flat//nt;phase=flat%nt;OH=z['H'].reshape(-1,4,24)[ci];OO=z['offset'].reshape(-1,4)[ci]^phase[:,None];OP=z['parents'][ci];keepold=~np.isin(np.arange(len(ci)),list(deleted));allH=np.r_[OH[keepold],newH];colors=np.r_[OO[keepold],newcolors];allP=np.r_[OP[keepold],newparents];assert len(np.unique(allP))==4*len(allP);lk={v.tobytes():i for i,v in enumerate(L)};anti=np.array([lk[(-v).tobytes()] for v in L]);keep=~blocked.copy();keep[allP.ravel()]=False;keep[anti[allP.ravel()]]=False;C=np.array([np.r_[s*h,t*T[int(c)]] for hs,cs in zip(allH,colors) for h,c in zip(hs,cs) for s,t in itertools.product([-1,1],repeat=2)],np.int16);LC=np.c_[2*L[keep],np.zeros((int(keep.sum()),d-24),np.int16)];RA=np.r_[LC,F,C];RB=np.r_[np.zeros_like(LC),FB,np.zeros_like(C)];baseline=201180 if d==26 else 209862;assert len(RA)==baseline+8*(len(newH)-len(deleted));assert len(RA)>baseline;assert np.all(np.sum(RA.astype(np.int64)**2+3*RB.astype(np.int64)**2,axis=1)==128) and not np.any(np.sum(RA.astype(np.int64)*RB.astype(np.int64),axis=1));src=np.load(f'{Path(__file__).resolve().parent}/data/PackingStar/25D-31D/new_bounds_20261111/D{d}_{baseline}_coordinates.npz')
+ if d==26:SA=2*np.r_[src['rational_points'],src['quadratic_A']];SB=2*np.r_[np.zeros_like(src['rational_points']),src['quadratic_B']]
+ else:SA=2*src['points'];SB=np.zeros_like(SA)
+ sourcekeys={np.r_[v,b].tobytes() for v,b in zip(SA,SB)};keys=[np.r_[v,b].tobytes() for v,b in zip(RA,RB)];assert len(set(keys))==len(RA);added=np.flatnonzero([k not in sourcekeys for k in keys]);newkeys=set(keys);removed=np.flatnonzero([np.r_[v,b].tobytes() not in newkeys for v,b in zip(SA,SB)]);RA64=RA.astype(np.int64);RB64=RB.astype(np.int64)
+ for j in added:
+  ca=RA64[j];cb=RB64[j];fail=above(RA64@ca+3*RB64@cb,RA64@cb+RB64@ca);fail[j]=False;assert not fail.any(),('changed geometry',j,np.flatnonzero(fail)[:8])
+ np.savez_compressed(out/'candidate.npz',rational=RA,radical=RB,radicand=3,squared_norm=128,inner_product_limit=64,coordinate_denominator=2);np.savez_compressed(out/'exchange.npz',added_A=RA[added],added_B=RB[added],removed_indices=removed);report=dict(dimension=d,count=len(RA),gain=len(RA)-baseline,added=len(added),removed=len(removed),new_cycles=len(newH),deleted_cycles=list(map(int,deleted)),seconds=time.monotonic()-start);(out/'positive.json').write_text(json.dumps(report,indent=2)+'\n');return report
