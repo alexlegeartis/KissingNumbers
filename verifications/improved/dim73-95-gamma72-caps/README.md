@@ -1,5 +1,7 @@
 # Dimensions 73–95: the cap construction over Γ₇₂, with zero-sum triples
 
+Historical construction values are retained below. The current92D lower bound is21,943,640,940; see the root registry and dim90-92-hexagonal-phase-layers. No mathematical input is changed.
+
 **Retained construction and history.** The October registry takes the strongest
 construction in each dimension. See the [current registry](../../../RESULTS.md),
 [code-layer updates](../dim61-68-95-96-code-layers/) and
@@ -37,7 +39,7 @@ python scripts/verify_classes.py data/disjoint_classes.npz     # exact check of 
 | 89 | 17 | Lambda_k | 1782 T +  0 P +5704 poles | +17 349 436 | 9 229 354 136 | 6 218 181 330 | 9 270 596 604 |
 | 90 | 18 | Lambda_k | 2466 T +  0 P +7624 poles | +23 851 540 | 12 306 670 328 | 6 218 183 254 | 12 341 351 672 |
 | 91 | 19 | Lambda_k | 3556 T +  0 P +11934 poles | +34 026 950 | 16 409 599 116 | 6 218 187 548 | 16 435 507 572 |
-| 92 | 20 | Lambda_k | 5800 T +  0 P +19415 poles | +54 255 975 | 21 880 490 288 | 6 218 195 048 | 21 896 439 920 |
+| 92 | 20 | Lambda_k | 5800 T +  0 P +19415 poles | +54 255 975 | 21 880 490 288 (retained) | 6 218 195 048 | 21 896 439 920 (retained) |
 | 93 | 21 | Lambda_k | 9240 T +  0 P +29712 poles | +83 460 484 | 31 040 958 640 | 6 218 205 368 | 31 056 799 856 |
 | 94 | 22 | Lambda_k | 16632 T +  0 P +49852 poles | +139 481 796 | 47 697 508 076 | 6 218 225 496 | 47 703 347 340 |
 | **95** | 23 | Lambda_k | 31050 T +  0 P +93074 poles | +254 889 446 | **6 473 065 046** | 6 218 268 750 | 77 565 848 332 |

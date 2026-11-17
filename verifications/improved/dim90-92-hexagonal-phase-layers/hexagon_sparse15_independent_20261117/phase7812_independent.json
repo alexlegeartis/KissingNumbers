@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "independent_algorithm": "two binary indicator planes with integer XOR/OR population counts for every unordered pair",
+  "phase_size": 7812,
+  "pairs": 30509766,
+  "distance_histogram": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    270456,
+    834540,
+    1359530,
+    3697130,
+    5724275,
+    6265937,
+    5764405,
+    4256725,
+    1800675,
+    433895,
+    102198
+  ],
+  "minimum": 5,
+  "sparse45": 1022934528,
+  "dense90_union": 21943640934,
+  "gain_over_previous_internal90": 982442916,
+  "gain_over_public92": 47201014
+}

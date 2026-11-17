@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "phase_words": 6561,
+  "phase_minimum": 5,
+  "coordinate_distance_tables_exact": true,
+  "profiles": [
+    {
+      "shortened_coordinates": [
+        0,
+        1,
+        2
+      ],
+      "body_blocks": 45,
+      "min15_words": 130944,
+      "phase_words": 6561,
+      "sparse_points": 859123584,
+      "file": "outer_45_0_1_2.npz"
+    },
+    {
+      "shortened_coordinates": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "body_blocks": 44,
+      "min15_words": 87296,
+      "phase_words": 6561,
+      "sparse_points": 572749056,
+      "file": "outer_44_0_1_2_3.npz"
+    },
+    {
+      "shortened_coordinates": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "body_blocks": 43,
+      "min15_words": 57536,
+      "phase_words": 6561,
+      "sparse_points": 377493696,
+      "file": "outer_43_0_1_2_3_4.npz"
+    },
+    {
+      "shortened_coordinates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "body_blocks": 42,
+      "min15_words": 37432,
+      "phase_words": 6561,
+      "sparse_points": 245591352,
+      "file": "outer_42_0_1_2_3_4_5.npz"
+    },
+    {
+      "shortened_coordinates": [
+        12,
+        14,
+        25,
+        41,
+        42,
+        44
+      ],
+      "body_blocks": 42,
+      "min15_words": 37468,
+      "phase_words": 6561,
+      "sparse_points": 245827548,
+      "file": "outer_42_12_14_25_41_42_44.npz"
+    },
+    {
+      "shortened_coordinates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "body_blocks": 41,
+      "min15_words": 24036,
+      "phase_words": 6561,
+      "sparse_points": 157700196,
+      "file": "outer_41_0_1_2_3_4_5_6.npz"
+    }
+  ],
+  "parent_minimum15_premise": "The ternary Pless[48,24,15] code hasminimum15, established in parent full enumeration/source. Distinct selectedweight15 words verified directly.",
+  "dense90_plus_sparse45": 21779829990
+}

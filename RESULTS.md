@@ -145,9 +145,9 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 87 | 6 218 178 164 | **7 000 788 678** | 1.13 | `codes` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 88 | 6 218 179 920 | **9 329 710 944** | 1.50 | `codes` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 89 | 6 218 181 330 | **12 433 498 768** | 2.00 | `codes` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
-| 90 | 6 218 183 254 | **20 961 198 018** | 3.37 | `codes` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
-| 91 | 6 218 187 548 | **20 961 198 378** | 3.37 | `codes` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
-| 92 | 8 589 934 592 | **21 896 439 920** | 2.55 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
+| 90 | 6 218 183 254 | **21 943 640 934** | 3.53 | `codes` | [Pless weight15 words with nonlinear7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |
+| 91 | 6 218 187 548 | **21 943 640 936** | 3.53 | `codes` | [Pless weight15 words with nonlinear7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |
+| 92 | 8 589 934 592 | **21 943 640 940** | 2.55 | `codes` | [Pless weight15 words with nonlinear7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |
 | 93 | 17 179 869 184 | **31 056 799 856** | 1.81 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
 | 94 | 34 359 738 368 | **47 703 347 340** | 1.39 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
 | 95 | 68 719 476 736 | **77 565 848 332** | 1.13 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
@@ -216,10 +216,11 @@ refreshed table, not more search.
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 63-65 | `dim63-65-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 67 | `dim61-67-compatible-sign-families` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
-| 68-69, 71, 87-91 | `dim68-91-lattice-code-continuation` | verify.py: exact slice/head geometry, code ranks, design moments and sparse counts; published source minima retained |
+| 68-69, 71, 87-89 | `dim68-91-lattice-code-continuation` | verify.py: exact slice/head geometry, code ranks, design moments and sparse counts; published source minima retained |
 | 70 | `dim70-71-gamma72-cross-sections` | affine70/verify.py (independent exact cells, dual and geometry) |
 | 73-86 | `dim73-88-gamma72-cosets` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
-| 92-96 | `dim88-96-z8-golay` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
+| 90-92 | `dim90-92-hexagonal-phase-layers` | verify.py: all nonlinear phase pairs, outer membership, exact hexagonal geometry and orthogonal complement; published parent minima |
+| 93-96 | `dim88-96-z8-golay` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 
 ## Where the previously published figures come from
 

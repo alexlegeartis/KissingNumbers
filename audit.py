@@ -460,6 +460,12 @@ _spec.loader.exec_module(_driver)
 for _row in _driver.results():
     add(_row['dimension'], _row['total'], _package, 'verify.py: exact slice/head geometry, code ranks, design moments and sparse counts; published source minima retained')
 
+_package='dim90-92-hexagonal-phase-layers'
+_spec=importlib.util.spec_from_file_location('phase90_92',os.path.join(IMP,_package,'final.py'))
+_driver=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_driver)
+for _row in _driver.results():
+    add(_row['dimension'],_row['total'],_package,'verify.py: all nonlinear phase pairs, outer membership, exact hexagonal geometry and orthogonal complement; published parent minima')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
@@ -1989,6 +1995,7 @@ if '--write-results' in sys.argv and not fail:
         return "{:,}".format(x).replace(",", "\u202f")
 
     PKGDOC = {
+        'dim90-92-hexagonal-phase-layers': 'Pless weight15 words with nonlinear7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima',
         'dim68-91-lattice-code-continuation': 'mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises',
         'dim18-bent-hexagon': 'odd BW16 in R^16 plus a hexagon of tiers in R^2 whose three six-set families are bent cosets of RM(1,4) with pairwise-bent sums not summing to zero; tier B rises from 256 to 960',
         'dim25-lens-heads': '1016 heads in the lens of a minimal vector, no removal shared, plus one non-lattice equator point.  972 are class heads x = u + t- v and the other 44 are exact rationals, and the 44 are a MAXIMUM INDEPENDENT SET of the whole admissible pool rather than heads added one at a time: solving max |x| over the region of each owner against the class core alone gives a pool of 1188 heads, whose greedy answer is the 35 this package used to ship and whose CP-SAT answer is 44',

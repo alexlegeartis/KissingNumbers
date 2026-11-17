@@ -1,5 +1,7 @@
 # Dimensions 88–96: nonlinear Z8 Golay codes and exact sections
 
+Historical construction values are retained below. The current92D lower bound is21,943,640,940; see the root registry and dim90-92-hexagonal-phase-layers. No mathematical input is changed.
+
 This package corrects a missed published input and constructs stronger repository
 bounds in nine dimensions. The nonlinear binary **(96, 2^37, 24)** parent is due
 to **I. M. Duursma, M. Greferath, S. N. Litsyn and S. E. Schmidt (2001)**,
@@ -14,7 +16,7 @@ are recorded separately from the gains over the preceding repository checkpoint.
 | 89 | **9,270,596,604** | +27,257,856 |
 | 90 | **12,341,351,672** | +24,709,396 |
 | 91 | **16,435,507,572** | +19,134,548 |
-| 92 | **21,896,439,920** | +12,449,792 |
+| 92 | **21,896,439,920** (retained) | +12,449,792 |
 | 93 | **31,056,799,856** | +12,272,924 |
 | 94 | **47,703,347,340** | +4,408,320 |
 | 95 | **77,565,848,332** | +70,464,307,200 |

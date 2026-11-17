@@ -1,5 +1,7 @@
 > Historical first-pass report: its 88D candidate is superseded by FINAL_88_AUDIT.md. report.json and audit_final.log contain the final replay; audit.log retains the earlier run. Other dimensions below remain unchanged.
 
+Historical construction values are retained below. The current92D lower bound is21,943,640,940; see the root registry and dim90-92-hexagonal-phase-layers. No mathematical input is changed.
+
 # Independent adapted-sign audit
 
 All five claims PASS. The audit is `audit.py`, with machine-readable receipt `report.json` and log `audit.log`.
@@ -12,7 +14,7 @@ All five claims PASS. The audit is `audit.py`, with machine-readable receipt `re
 |89|9,243,338,748|13,553,150|9,270,596,604|
 |90|12,316,642,276|9,444,924|12,341,351,672|
 |91|16,416,373,024|6,007,148|16,435,507,572|
-|92|21,883,990,128|2,607,648|21,896,439,920|
+|92|21,883,990,128 (retained) |2,607,648|21,896,439,920 (retained) |
 
 Fresh remote RESULTS.md, blob `5ee520eafa6c797f191b03a79bc9d948c541ac74`, already contains the preceding seven row-section improvements. These five candidate baselines match it, not the earlier superseded baseline. The same fresh file now lists 70D at 1,360,986,112.
 

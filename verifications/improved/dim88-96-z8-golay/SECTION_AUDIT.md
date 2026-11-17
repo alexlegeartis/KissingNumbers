@@ -1,5 +1,7 @@
 > Archived independent pre-integration audit. Development paths below refer to the research workspace. All seven claims are now pinned in data/sections.json; packaging gaps listed below have been resolved by the production verifier.
 
+Historical construction values are retained below. The current92D lower bound is21,943,640,940; see the root registry and dim90-92-hexagonal-phase-layers. No mathematical input is changed.
+
 # Independent audit of the seven Z8 row-section claims
 
 ## Scope and provenance
@@ -64,6 +66,6 @@ All seven independent count checks PASS. Together with both parent replays and t
 |89|9,229,785,598|431,462|9,270,596,604|
 |90|12,307,197,352|527,024|12,341,351,672|
 |91|16,410,365,876|766,760|16,435,507,572|
-|92|21,881,382,480|892,192|21,896,439,920|
+|92|21,881,382,480 (retained) |892,192|21,896,439,920 (retained) |
 |93|31,041,848,144|889,504|31,056,799,856|
 |94|47,698,308,180|800,104|47,703,347,340|

@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "phase_code_size": 7812,
+  "all_unordered_pairs": 30509766,
+  "phase_minimum_distance": 5,
+  "distance_histogram": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    270456,
+    834540,
+    1359530,
+    3697130,
+    5724275,
+    6265937,
+    5764405,
+    4256725,
+    1800675,
+    433895,
+    102198
+  ],
+  "outer_profiles": [
+    {
+      "body_blocks": 45,
+      "outer_words": 130944,
+      "shortened_coordinates": [
+        0,
+        1,
+        2
+      ],
+      "sparse_points": 1022934528
+    },
+    {
+      "body_blocks": 44,
+      "outer_words": 87296,
+      "shortened_coordinates": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sparse_points": 681956352
+    },
+    {
+      "body_blocks": 43,
+      "outer_words": 57536,
+      "shortened_coordinates": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sparse_points": 449471232
+    },
+    {
+      "body_blocks": 42,
+      "outer_words": 37432,
+      "shortened_coordinates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sparse_points": 292418784
+    },
+    {
+      "body_blocks": 42,
+      "outer_words": 37468,
+      "shortened_coordinates": [
+        12,
+        14,
+        25,
+        41,
+        42,
+        44
+      ],
+      "sparse_points": 292700016
+    },
+    {
+      "body_blocks": 41,
+      "outer_words": 24036,
+      "shortened_coordinates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sparse_points": 187769232
+    }
+  ],
+  "geometry_exact": true,
+  "dense90_plus_sparse": 21943640934,
+  "with_orthogonal_complement91": 21943640936,
+  "with_orthogonal_complement92": 21943640940,
+  "outer_minimum15_premise": "The ternary Pless[48,24,15] code hasminimum15, established in parent full enumeration/source. Distinct selectedweight15 words verified directly."
+}

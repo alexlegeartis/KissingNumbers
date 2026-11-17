@@ -1,0 +1,108 @@
+{
+  "source_author_page": "https://www.cs.helsinki.fi/u/ahslaaks/codes/",
+  "download_url": "https://www.cs.helsinki.fi/u/ahslaaks/codes/codes2a.zip",
+  "source_zip_sha256": "ea4e604eff928524de98a5904c740b2e2ff3de979ea94b35ae307265f379cf89",
+  "code_filename": "3_15_5_7812.txt",
+  "code_file_sha256": "d5ba3940239da9750271082790a2ac3f62aa52a14c4ee66727f9a66121f593e2",
+  "publication": "Antti Laaksonen and Patric R. J. Ostergard, New lower bounds on error-correcting ternary, quaternary and quinary codes, ICMCTA2017,pp228\u2013237.",
+  "code_size": 7812,
+  "length": 15,
+  "minimum_distance": 5,
+  "unordered_pairs_checked": 30509766,
+  "distance_histogram": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    270456,
+    834540,
+    1359530,
+    3697130,
+    5724275,
+    6265937,
+    5764405,
+    4256725,
+    1800675,
+    433895,
+    102198
+  ],
+  "profiles": [
+    {
+      "body_blocks": 45,
+      "shortened_coordinates": [
+        0,
+        1,
+        2
+      ],
+      "outer_words": 130944,
+      "sparse_points": 1022934528
+    },
+    {
+      "body_blocks": 44,
+      "shortened_coordinates": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "outer_words": 87296,
+      "sparse_points": 681956352
+    },
+    {
+      "body_blocks": 43,
+      "shortened_coordinates": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "outer_words": 57536,
+      "sparse_points": 449471232
+    },
+    {
+      "body_blocks": 42,
+      "shortened_coordinates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "outer_words": 37432,
+      "sparse_points": 292418784
+    },
+    {
+      "body_blocks": 42,
+      "shortened_coordinates": [
+        12,
+        14,
+        25,
+        41,
+        42,
+        44
+      ],
+      "outer_words": 37468,
+      "sparse_points": 292700016
+    },
+    {
+      "body_blocks": 41,
+      "shortened_coordinates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "outer_words": 24036,
+      "sparse_points": 187769232
+    }
+  ],
+  "dense90_count": 20920706406,
+  "dense90_plus_sparse": 21943640934,
+  "status": "Exact allpairs phasecodeverification PASS; geometry theorem same aslinearphaseversion; independent audit requested, not published."
+}

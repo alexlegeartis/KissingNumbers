@@ -1,5 +1,7 @@
 **Retained historical comparison.** The earlier bound and source columns are preserved. The current registry column follows [RESULTS.md](../../../RESULTS.md); dimensions 48 and 72 are published input rows rather than registered improvement claims.
 
+Historical construction values are retained below. The current92D lower bound is21,943,640,940; see the root registry and dim90-92-hexagonal-phase-layers. No mathematical input is changed.
+
 Historical construction values are retained. Current bounds are in the root registry and the dim68-91-lattice-code-continuation package; no proof input is changed.
 
 | n | Historical tau(n) >= | Historical source | Current registry |
@@ -48,7 +50,7 @@ Historical construction values are retained. Current bounds are in the root regi
 | 89 | 9 229 354 136 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays | 9 270 596 604 |
 | 90 | 12 306 670 328 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays | 12 341 351 672 |
 | 91 | 16 409 599 116 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays | 16 435 507 572 |
-| 92 | 21 880 490 288 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays | 21 896 439 920 |
+| 92 | 21 880 490 288 (retained) | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays | 21 896 439 920 (retained) |
 | 93 | 31 040 958 640 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays | 31 056 799 856 |
 | 94 | 47 697 508 076 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays | 47 703 347 340 |
 | 95 | 77 565 848 332 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays | 77 565 848 332 |
