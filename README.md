@@ -1,56 +1,6 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
-**17 November 2026: exact triangle-sensitive norm-ten layers in79–86D.** Eight independently verified kissing-number improvements, each small relative to the existing multi-billion-point bounds. [Counts, source premises and complete replay](verifications/improved/dim79-86-norm10-triangle-layers/). These are existence results, without a full selected-coordinate list or a worldwide-priority guarantee.
-
-**17 November 2026: 70D planar-head compression.** At least **1,361,134,720** kissing points, +148,608 over the previous repository construction. [Exact geometry and independently replayed populations](verifications/improved/dim70-gamma72-d4-planar-heads/). This is a small verified gain, not a worldwide-priority assertion.
-
-**17 November 2026: four-row partition-head construction in 92D.** Exact lower bound **29,797,911,144**, with complete partition-head and cross-layer verification. [Independently audited package](verifications/improved/dim92-four-row-partition-heads/).
-
-**17 November 2026: nonlinear phase unions in 87–89D.** Exact bounds **7,266,268,830**, **9,590,791,776**, and **12,690,155,704**. [Complete independently checked inputs and union proof](verifications/improved/dim87-89-hexagonal-phase-unions/).
-
-**17 November 2026: direct 92D two-alphabet construction.** Exact lower bound **26,038,868,280**, with complete head, sparse-code and cross-layer verification. [Independently audited package](verifications/improved/dim92-two-alphabet-fibers/).
-
-**17 November 2026: E6 and mixed E7 head exchanges.** Exact bounds **66,573,830,860 in 94D** and **109,523,504,196 in 95D**. [Complete independently audited package](verifications/improved/dim94-95-e6-e7-head-exchange/).
-
-**17 November 2026: E7 head sections and compatible RS/root layers.** Exact bounds **107,376,020,548 in 95D** and **206,160,530,240 in 96D**, with 93D/94D updates. [Complete independently audited package](verifications/improved/dim93-96-e7-rs-root-augmentation/).
-
-**17 November 2026: three crosspolytope alphabets.** New exact bounds in 93–96D, including **206,158,430,208 in 96D**. [Complete independently audited construction](verifications/improved/dim93-96-three-crosspolytope-alphabets/).
-
-**17 November 2026: direct latitude improvements.** Exact lower bounds **22,359,345,896 in 91D** and **22,835,674,500 in 92D**. [Complete construction and independently checked proof packages](verifications/improved/dim91-92-direct-latitude-layers/).
-
-**17 November 2026: nonlinear hexagonal phase layers (retained equatorial construction).** Exact lower bounds **21,943,640,934 in 90D**, **21,943,640,936 in 91D**, and **21,943,640,940 in 92D**. [Construction, external-source comparisons and complete checks](verifications/improved/dim90-92-hexagonal-phase-layers/).
-
-**17 November 2026: mixed-shell sections and ternary-code head compression.** New verified construction lower bounds in **68–69D, 71D and 87–91D**, including **20,961,198,018 in 90D**, 237.095212% above the attributed external-source baseline (a derived orthogonal sum). [Methods, exact checks and source attributions](verifications/improved/dim68-91-lattice-code-continuation/). Published source premises remain explicit; no exhaustive worldwide-priority claim is made.
-
-**14 November 2026 — combining certificates improves 30D to 248,212.** Exact unions add 32 over the preceding record and 220 over pinned PackingStar. All **30,804,474,366** final point pairs are checked independently. [Coordinates and complete proof](verifications/improved/dim30-certificate-unions/).
-
-**14 November 2026 — 26D and 27D reclaimed against PackingStar.** Radical-orbit and E8 head-frame exchanges give **201,188 in 26D (+8)** and **209,884 in 27D (+22)** over its November 11 release. Independent exact verification covers all **20,238,205,078** and **22,025,541,786** unordered pairs. [Coordinates, exchanges and full proofs](verifications/improved/dim26-27-radical-orbits/).
-
-**13 November 2026 — native partial designs.** Removing the requirement that a local design extend to the full parent gives **231,814 points in 29D** and **248,180 in 30D**, +38 and +96 over our retained certificates (+40 and +188 over pinned PackingStar). [Construction ideas and complete exact proofs](verifications/improved/dim29-30-native-partial-design/).
-
-**13 November 2026 — restored high-dimensional advances.** Exact affine sign subcodes give **88,979,562 (61D), 122,543,436 (62D), 184,415,700 (63D), 335,749,696 (64D), 335,817,922 (65D), and 342,291,652 (66D)**. [61/62/66D ideas and proof](verifications/improved/dim61-62-66-affine-reconstruction/) · [63–65D ideas and proof](verifications/improved/dim63-65-affine-reconstruction/). Historical constructions remain available.
-
-**13 November 2026 — 31D further continuation.** Exact E8 orientation search with full exterior-deletion pricing gives **251,420 points**, +24 over the retained 251,396 certificate and +166 over pinned PackingStar. [Idea, exchange replay and complete exact geometry](verifications/improved/dim31-annealed-design/).
-
-**13 November 2026 — 31D continuation.** Joint design and exterior-deletion optimization gives **251,396 points**, +1 over our retained 251,395-point construction and +142 over the pinned PackingStar release. The [construction and complete exact proof](verifications/improved/dim31-joint-design/) reconstruct the 1,004-for-1,003 exchange and verify all 31,599,848,710 unordered final pairs. This is a dated comparison, not an exhaustive worldwide-priority claim.
-
-**13 November 2026 — 30D and 31D reclaimed against PackingStar.** Exact Leech–Sloane module constructions give **248,084 in 30D** and **251,395 in 31D**, respectively **92 and 141 above** the November 11 release, and 112 and 195 above the preceding repository certificates. The [30D section proof](verifications/improved/dim30-leech-sloane-section/) and [31D module proof](verifications/improved/dim31-leech-sloane-module/) check every final point pair, independently reconstruct the modules and verify every inserted-point interaction with integer arithmetic. The earlier [248,020-point Barnes–Wall certificate](verifications/improved/dim30-bw14-module/) is retained. The [fresh comparison](common/source_review_20261113_26_31.json) places the repository ahead in 28–31D; 26D and 27D remain open. The [research campaign and next attack](research/reclaim_26_31_20261113/) record the construction, restricted exclusions and remaining models.
-
-**13 November 2026 — continuation in 36–37D and 61–69D.** An actual D7 normal system strengthens the Gamma72 bounds to **471,886,208 in 68D** and **746,325,051 in 69D**, gains of **1,920** and **2,802,747** over the preceding certificates. [Two independent exact proofs](verifications/improved/dim68-69-gamma72-extended-moments/) enumerate all 162,969 possible profiles, verify the rational population duals and geometry, and include two additional 69D poles.
-
-[Larger compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) also strengthen the code constructions in **61–67D**, including **88,975,146 in 61D**, **122,539,020 in 62D** and **355,095,446 in 67D**. In 67D, 49 smaller affine sign classes add 4,624 points; an independent direct sign-pair replay checks the changed geometry. A [Coxeter–Todd orbit exchange](verifications/improved/dim36-37-orbit-exchange/) gives **501,822 in 36D** and **505,638 in 37D**, adding nine points to each preceding certificate. The latest exact values and proof routes appear in the table below.
-
-**Earlier on 13 November 2026 — the initial 69D improvement.** Ten Gamma72 slices with one reconstructed coordinate give **743,522,304** points, an increase of **54,069,382 (+7.8424%)** over our preceding 689,452,922-point certificate. [Two independent exact proofs](verifications/improved/dim69-gamma72-head-compression/) rebuild the complete profile domain, actual normal embedding, orientation average, rational population dual and every geometric pair type.
-
-The same campaign also improves all twelve bounds in **49–60D** using asymmetric signed P48 classes. The gains range from **24** to **3,946** points; the new 60D bound is **58,631,571**. These are smaller advances, with their own [exact finite verification package](verifications/improved/dim49-60-p48-signed-refill/).
-
-**12 November 2026 — 28D and 29D exceed the November 11 PackingStar release.** Complete exact certificates give **222,120** and **231,776**, gains of **16** and **2** over that release. These are modest improvements; at that date the 26D, 27D, 30D and 31D repository certificates remained below PackingStar. The November 13 modules above subsequently reclaimed 30D and 31D. See the [proof package](verifications/improved/dim28-29-november-sextets/), [dated source review](common/source_review_20261112_26_31.json) and [research campaign](research/reclaim_26_31_20261112/).
-
-The 10 November Weyl-averaged Gamma72 affine unions gave 471,884,288 in 68D (+517,632) and 689,452,922 in 69D (+10,776 over the preceding affine certificates). Integral Gram-preserving normal orientations, exact moment duals and an averaging/integer-ceiling argument certify existence; no ambient shell symmetry is assumed. Prior packages, paper and workflows are unchanged.
-
-The 10 November affine Gamma72 continuations give 471,366,656 in 68D (+96,144,488; 25.62%) and 689,442,146 in 69D (+61,619,966; 9.81%). Six and ten compatible affine slices replace the central-section restriction. Self-contained exact verifiers check exhibited normals, all cells and equality groups, rational duals and geometry; sixteen corruption controls pass. The lattice minimum, population and 11-design property remain published inputs. The paper and workflows are unchanged.
-
-The 10 November three-slice Gamma72 construction gives 1,360,986,112 in 70D, improving the preceding 1,249,778,250 by 111,207,862 (8.90%). A self-contained exact verifier regenerates all 61 cells and 108 constraints, checks the rational dual and every projected pair type, and rejects eight corrupted certificates. The published lattice minimum, population and 11-design property remain explicit inputs; the paper and workflows are unchanged.
+[Henry Cohn’s kissing-number table](https://cohn.mit.edu/kissing-numbers/) includes and credits our advances in **23 dimensions: 18 and 25–46**, with all 23 values matching this repository. **Checked 17 November 2026** against the live table. [Dated comparison and attribution](common/cohn_20261117.json).
 
 The kissing number τ(n) is the largest number of unit spheres that can touch a central unit
 sphere in ℝⁿ; equivalently, the largest set of unit vectors with pairwise inner products at
@@ -60,46 +10,13 @@ searches. Some of our earlier records have since been superseded. Their construc
 values and verification packages remain here as part of the research record.
 
 > [!IMPORTANT]
-> **New companion repository — 11 November 2026.** [SpherePackingUpperBounds](https://github.com/alexlegeartis/SpherePackingUpperBounds) collects sphere-packing density upper bounds, proof certificates, independent verification code and discovery histories. See its [results and method summaries](https://github.com/alexlegeartis/SpherePackingUpperBounds#registered-results).
+> **Verification scope.** These are construction lower bounds, not proofs of optimality. Each linked package states its exact checks and any inherited lattice, population or design assumptions; some large configurations are certified by existence arguments rather than complete coordinate lists.
 >
-> **Current repository status — 13 November 2026.** Verified lower bounds in
-> **70 dimensions**; the [results table](#results-and-construction-history)
-> lists every current value, comparison source and verification package.
+> **Comparisons.** Cohn's current table credits this repository in **18D and 25–46D**. Results beyond its 1–48D coverage use the separately attributed sources in the table below; historical gains do not imply a fresh worldwide-priority survey.
 >
-> - **25D:** **197 586** points, **one** above the preceding 197 585-point certificate and **two** above 197 584. [Critical-cluster replacement and exact contact preservation](verifications/improved/dim25-critical-cluster/) have a self-contained exact proof, an independently rebuilt shell and seven corruption controls.
-> - **Historical comparison with the October 28 release, 27–31D:** **209 825, 221 988, 231 697, 247 972, 251 200** exceeded
->   [PackingStar’s October 28 release](common/source_review_20261029_27_31.json)
->   by **65, 124, 21, 5, 31** points. The new [31D latitude-contact exchange](verifications/improved/dim31-latitude-contact-exchange/) adds four, with two complete exact pair proofs. Earlier [algebraic completions](verifications/improved/dim27-31-algebraic-completion/) add 18 in 27D and eight in 31D, with complete explicit coordinate proofs. The [29 October certificates](verifications/improved/dim27-31-joint-refills/) remain available.
->   The then-current **28D certificate was 221 988**, a gain of **124** from corrected sextet symmetries; the November certificate above supersedes it.
->   The 26D certificate remains 201 136, two above its historical pinned comparison and 44 below the November release.
-> - **32D:** **352 992** points, **160** above the reviewed repository certificate and **672** above the pinned Lin construction. [Non-antipodal signed octad continuation](verifications/improved/dim32-35-signed-layers/nonantipodal32/) has two independent implementations, complete integer reconstruction and semantic rejection controls. Its 29 exceptional supports contain 1,824 individual points, including 380 without antipodes. No worldwide-priority or global-optimality claim is made.
-> - **33D:** **370 408** points, **32** above the actual published repository certificate and **168** above the pinned Lin construction. [Non-antipodal octads and individual root-star trades](verifications/improved/dim32-35-signed-layers/nonantipodal33/) have independent exact geometry and source/delta replays. The 500 points without antipodes are interpreted literally; the 370 392 witness is an unpublished intermediate.
-> - **34D:** **390 992** points, **two** above the preceding repository construction. [Rational heavy-head rotation](verifications/improved/dim32-35-signed-layers/rotated34/) has two independent exact proofs, a reconstructible integer witness, uniqueness and rank checks.
-> - **36–37D:** **501 822 and 505 638** points, **nine** above each preceding repository construction. A [compatible phase-orbit exchange](verifications/improved/dim36-37-orbit-exchange/) replaces three orbits by six, with fresh exact source reconstruction and direct integer replacement checks; all latitude orbits are retained.
-> - **39D:** **769 852** points, **32** above the preceding repository construction. [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) pass two independent complete exact proofs, each checking 1,687,391,811 relative products.
-> - **49–60D:** twelve improved bounds, including **58 631 571** in **60D**, **3 860** above the preceding repository construction. [Signed P48 refill](verifications/improved/dim49-60-p48-signed-refill/) has independent complete mother-class checks and full finite-family verification, and retains the published mother-lattice premises.
-> - **43D:** **2 919 803** points, four above the preceding repository construction. [Individual medium-body splitting and a tiny-point refill](verifications/improved/dim41-46-p48-heads/weyl43/medium_split43/) pass two exact changed-pair checks with fresh geometry/gluing replay; P48n minimum/design and complete-family population inputs remain inherited.
-> - **33–87D:** further improvements include signed layers, phase refills,
->   the 38D Fano/cube construction, P48 families and shared parity layers.
->   [Recent updates](#recent-updates) group the methods and proof scopes by dimension.
-> - **88–94D:** Nonlinear Nordstrom–Robinson sign fibers and row sections add **4,408,320–27,257,856** points per dimension over the preceding repository certificates, with two exact section replays, both parent proofs and candidate-specific rejection controls. No worldwide-priority claim is made.
-> - **88–96D:** [nonlinear-code constructions and exact sections](verifications/improved/dim88-96-z8-golay/)
->   give **6 967 552 256 in 88D** through **142 162 362 560 in 96D**.
->
-> **Attribution and gains.** The nonlinear (96, 2^37, 24) parent is published work
-> of [Duursma–Greferath–Litsyn–Schmidt (2001)](https://doi.org/10.1109/18.923742).
-> The new 96D layers add **426 344 448** points beyond the standard full chain
-> using that parent. Table gains use their named historical comparisons;
-> dated updates below identify the preceding certificate when that is the baseline.
->
-> **Paper:** the [manuscript update remains deferred](#the-write-up).
+> **Manuscript.** The [paper update remains deferred](#the-write-up); the results table and verification packages are the current repository record.
 
-The new 27D and 31D certificates check every pair in complete explicit integer
-coordinates, with separate direct-integer checks of all changed pairs. They
-assume no lattice minimum or unenumerated population. The 43D proof has the
-inherited-input scope stated above. These are verified lower bounds; the
-[dated source comparison](common/source_review_20261108_31.json) does
-not establish worldwide priority.
+Companion project: [SpherePackings](https://github.com/alexlegeartis/SpherePackings), covering sphere-packing constructions, density bounds and verification.
 
 Below 24D, the archived campaigns have no new certified lower-bound improvement.
 They include exact reproductions, nonclassical seeds and restricted-family
@@ -167,11 +84,10 @@ improvements. See
 [record status](#record-status-and-retained-results) for the later values and sources.
 
 The status notes use [Cohn's leaderboard](https://cohn.mit.edu/kissing-numbers/),
-last retrieved **25 October 2026**, with all 48 rows captured in
-[the dated comparison](common/cohn_20261025.json). Retrieval on 26 October
-failed, so this update retains that snapshot. Fresh checks of the relevant
-authors' repositories and the dimension-40 paper are recorded in
-[the 26 October source review](common/source_review_20261026.json).
+retrieved live on **17 November 2026**, with all 48 rows and explicit source credits captured in
+[the dated comparison](common/cohn_20261117.json). It credits this repository in 18D and 25–46D;
+all 23 listed values match the current results below. The [25 October snapshot](common/cohn_20261025.json)
+and [26 October source review](common/source_review_20261026.json) remain historical records.
 All 70 constructions exceed their recorded historical comparisons and remain best in
 the dated reviewed sources. The November 14 review records complete certificates
 exceeding PackingStar's November 11 release in every dimension from 26D through 31D. See the [current comparison](common/source_review_20261114_26_31.json)
@@ -353,6 +269,112 @@ improvement is claimed in 47D or 48D.
 </details>
 
 ## Recent updates
+
+<details>
+<summary>Dated construction announcements, 10–17 November 2026</summary>
+
+**17 November 2026: exact triangle-sensitive norm-ten layers in79–86D.** Eight independently verified kissing-number improvements, each small relative to the existing multi-billion-point bounds. [Counts, source premises and complete replay](verifications/improved/dim79-86-norm10-triangle-layers/). These are existence results, without a full selected-coordinate list or a worldwide-priority guarantee.
+
+**17 November 2026: 70D planar-head compression.** At least **1,361,134,720** kissing points, +148,608 over the previous repository construction. [Exact geometry and independently replayed populations](verifications/improved/dim70-gamma72-d4-planar-heads/). This is a small verified gain, not a worldwide-priority assertion.
+
+**17 November 2026: four-row partition-head construction in 92D.** Exact lower bound **29,797,911,144**, with complete partition-head and cross-layer verification. [Independently audited package](verifications/improved/dim92-four-row-partition-heads/).
+
+**17 November 2026: nonlinear phase unions in 87–89D.** Exact bounds **7,266,268,830**, **9,590,791,776**, and **12,690,155,704**. [Complete independently checked inputs and union proof](verifications/improved/dim87-89-hexagonal-phase-unions/).
+
+**17 November 2026: direct 92D two-alphabet construction.** Exact lower bound **26,038,868,280**, with complete head, sparse-code and cross-layer verification. [Independently audited package](verifications/improved/dim92-two-alphabet-fibers/).
+
+**17 November 2026: E6 and mixed E7 head exchanges.** Exact bounds **66,573,830,860 in 94D** and **109,523,504,196 in 95D**. [Complete independently audited package](verifications/improved/dim94-95-e6-e7-head-exchange/).
+
+**17 November 2026: E7 head sections and compatible RS/root layers.** Exact bounds **107,376,020,548 in 95D** and **206,160,530,240 in 96D**, with 93D/94D updates. [Complete independently audited package](verifications/improved/dim93-96-e7-rs-root-augmentation/).
+
+**17 November 2026: three crosspolytope alphabets.** New exact bounds in 93–96D, including **206,158,430,208 in 96D**. [Complete independently audited construction](verifications/improved/dim93-96-three-crosspolytope-alphabets/).
+
+**17 November 2026: direct latitude improvements.** Exact lower bounds **22,359,345,896 in 91D** and **22,835,674,500 in 92D**. [Complete construction and independently checked proof packages](verifications/improved/dim91-92-direct-latitude-layers/).
+
+**17 November 2026: nonlinear hexagonal phase layers (retained equatorial construction).** Exact lower bounds **21,943,640,934 in 90D**, **21,943,640,936 in 91D**, and **21,943,640,940 in 92D**. [Construction, external-source comparisons and complete checks](verifications/improved/dim90-92-hexagonal-phase-layers/).
+
+**17 November 2026: mixed-shell sections and ternary-code head compression.** New verified construction lower bounds in **68–69D, 71D and 87–91D**, including **20,961,198,018 in 90D**, 237.095212% above the attributed external-source baseline (a derived orthogonal sum). [Methods, exact checks and source attributions](verifications/improved/dim68-91-lattice-code-continuation/). Published source premises remain explicit; no exhaustive worldwide-priority claim is made.
+
+**14 November 2026 — combining certificates improves 30D to 248,212.** Exact unions add 32 over the preceding record and 220 over pinned PackingStar. All **30,804,474,366** final point pairs are checked independently. [Coordinates and complete proof](verifications/improved/dim30-certificate-unions/).
+
+**14 November 2026 — 26D and 27D reclaimed against PackingStar.** Radical-orbit and E8 head-frame exchanges give **201,188 in 26D (+8)** and **209,884 in 27D (+22)** over its November 11 release. Independent exact verification covers all **20,238,205,078** and **22,025,541,786** unordered pairs. [Coordinates, exchanges and full proofs](verifications/improved/dim26-27-radical-orbits/).
+
+**13 November 2026 — native partial designs.** Removing the requirement that a local design extend to the full parent gives **231,814 points in 29D** and **248,180 in 30D**, +38 and +96 over our retained certificates (+40 and +188 over pinned PackingStar). [Construction ideas and complete exact proofs](verifications/improved/dim29-30-native-partial-design/).
+
+**13 November 2026 — restored high-dimensional advances.** Exact affine sign subcodes give **88,979,562 (61D), 122,543,436 (62D), 184,415,700 (63D), 335,749,696 (64D), 335,817,922 (65D), and 342,291,652 (66D)**. [61/62/66D ideas and proof](verifications/improved/dim61-62-66-affine-reconstruction/) · [63–65D ideas and proof](verifications/improved/dim63-65-affine-reconstruction/). Historical constructions remain available.
+
+**13 November 2026 — 31D further continuation.** Exact E8 orientation search with full exterior-deletion pricing gives **251,420 points**, +24 over the retained 251,396 certificate and +166 over pinned PackingStar. [Idea, exchange replay and complete exact geometry](verifications/improved/dim31-annealed-design/).
+
+**13 November 2026 — 31D continuation.** Joint design and exterior-deletion optimization gives **251,396 points**, +1 over our retained 251,395-point construction and +142 over the pinned PackingStar release. The [construction and complete exact proof](verifications/improved/dim31-joint-design/) reconstruct the 1,004-for-1,003 exchange and verify all 31,599,848,710 unordered final pairs. This is a dated comparison, not an exhaustive worldwide-priority claim.
+
+**13 November 2026 — 30D and 31D reclaimed against PackingStar.** Exact Leech–Sloane module constructions give **248,084 in 30D** and **251,395 in 31D**, respectively **92 and 141 above** the November 11 release, and 112 and 195 above the preceding repository certificates. The [30D section proof](verifications/improved/dim30-leech-sloane-section/) and [31D module proof](verifications/improved/dim31-leech-sloane-module/) check every final point pair, independently reconstruct the modules and verify every inserted-point interaction with integer arithmetic. The earlier [248,020-point Barnes–Wall certificate](verifications/improved/dim30-bw14-module/) is retained. The [fresh comparison](common/source_review_20261113_26_31.json) places the repository ahead in 28–31D; 26D and 27D remain open. The [research campaign and next attack](research/reclaim_26_31_20261113/) record the construction, restricted exclusions and remaining models.
+
+**13 November 2026 — continuation in 36–37D and 61–69D.** An actual D7 normal system strengthens the Gamma72 bounds to **471,886,208 in 68D** and **746,325,051 in 69D**, gains of **1,920** and **2,802,747** over the preceding certificates. [Two independent exact proofs](verifications/improved/dim68-69-gamma72-extended-moments/) enumerate all 162,969 possible profiles, verify the rational population duals and geometry, and include two additional 69D poles.
+
+[Larger compatible sign families](verifications/improved/dim61-67-compatible-sign-families/) also strengthen the code constructions in **61–67D**, including **88,975,146 in 61D**, **122,539,020 in 62D** and **355,095,446 in 67D**. In 67D, 49 smaller affine sign classes add 4,624 points; an independent direct sign-pair replay checks the changed geometry. A [Coxeter–Todd orbit exchange](verifications/improved/dim36-37-orbit-exchange/) gives **501,822 in 36D** and **505,638 in 37D**, adding nine points to each preceding certificate. The latest exact values and proof routes appear in the table below.
+
+**Earlier on 13 November 2026 — the initial 69D improvement.** Ten Gamma72 slices with one reconstructed coordinate give **743,522,304** points, an increase of **54,069,382 (+7.8424%)** over our preceding 689,452,922-point certificate. [Two independent exact proofs](verifications/improved/dim69-gamma72-head-compression/) rebuild the complete profile domain, actual normal embedding, orientation average, rational population dual and every geometric pair type.
+
+The same campaign also improves all twelve bounds in **49–60D** using asymmetric signed P48 classes. The gains range from **24** to **3,946** points; the new 60D bound is **58,631,571**. These are smaller advances, with their own [exact finite verification package](verifications/improved/dim49-60-p48-signed-refill/).
+
+**12 November 2026 — 28D and 29D exceed the November 11 PackingStar release.** Complete exact certificates give **222,120** and **231,776**, gains of **16** and **2** over that release. These are modest improvements; at that date the 26D, 27D, 30D and 31D repository certificates remained below PackingStar. The November 13 modules above subsequently reclaimed 30D and 31D. See the [proof package](verifications/improved/dim28-29-november-sextets/), [dated source review](common/source_review_20261112_26_31.json) and [research campaign](research/reclaim_26_31_20261112/).
+
+The 10 November Weyl-averaged Gamma72 affine unions gave 471,884,288 in 68D (+517,632) and 689,452,922 in 69D (+10,776 over the preceding affine certificates). Integral Gram-preserving normal orientations, exact moment duals and an averaging/integer-ceiling argument certify existence; no ambient shell symmetry is assumed. Prior packages, paper and workflows are unchanged.
+
+The 10 November affine Gamma72 continuations give 471,366,656 in 68D (+96,144,488; 25.62%) and 689,442,146 in 69D (+61,619,966; 9.81%). Six and ten compatible affine slices replace the central-section restriction. Self-contained exact verifiers check exhibited normals, all cells and equality groups, rational duals and geometry; sixteen corruption controls pass. The lattice minimum, population and 11-design property remain published inputs. The paper and workflows are unchanged.
+
+The 10 November three-slice Gamma72 construction gives 1,360,986,112 in 70D, improving the preceding 1,249,778,250 by 111,207,862 (8.90%). A self-contained exact verifier regenerates all 61 cells and 108 constraints, checks the rational dual and every projected pair type, and rejects eight corrupted certificates. The published lattice minimum, population and 11-design property remain explicit inputs; the paper and workflows are unchanged.
+
+</details>
+
+<details>
+<summary>Archived status notes (historical values and comparisons)</summary>
+
+These dated notes preserve earlier construction details and links. Some values and status statements have since been superseded; use the current results table above.
+
+The new 27D and 31D certificates check every pair in complete explicit integer
+coordinates, with separate direct-integer checks of all changed pairs. They
+assume no lattice minimum or unenumerated population. The 43D proof has the
+inherited-input scope stated above. These are verified lower bounds; the
+[dated source comparison](common/source_review_20261108_31.json) does
+not establish worldwide priority.
+
+**New companion repository — 11 November 2026.** [SpherePackingUpperBounds](https://github.com/alexlegeartis/SpherePackingUpperBounds) collects sphere-packing density upper bounds, proof certificates, independent verification code and discovery histories. See its [results and method summaries](https://github.com/alexlegeartis/SpherePackingUpperBounds#registered-results).
+
+**Current repository status — 13 November 2026.** Verified lower bounds in
+**70 dimensions**; the [results table](#results-and-construction-history)
+lists every current value, comparison source and verification package.
+
+- **25D:** **197 586** points, **one** above the preceding 197 585-point certificate and **two** above 197 584. [Critical-cluster replacement and exact contact preservation](verifications/improved/dim25-critical-cluster/) have a self-contained exact proof, an independently rebuilt shell and seven corruption controls.
+- **Historical comparison with the October 28 release, 27–31D:** **209 825, 221 988, 231 697, 247 972, 251 200** exceeded
+  [PackingStar’s October 28 release](common/source_review_20261029_27_31.json)
+  by **65, 124, 21, 5, 31** points. The new [31D latitude-contact exchange](verifications/improved/dim31-latitude-contact-exchange/) adds four, with two complete exact pair proofs. Earlier [algebraic completions](verifications/improved/dim27-31-algebraic-completion/) add 18 in 27D and eight in 31D, with complete explicit coordinate proofs. The [29 October certificates](verifications/improved/dim27-31-joint-refills/) remain available.
+  The then-current **28D certificate was 221 988**, a gain of **124** from corrected sextet symmetries; the November certificate above supersedes it.
+  The 26D certificate remains 201 136, two above its historical pinned comparison and 44 below the November release.
+- **32D:** **352 992** points, **160** above the reviewed repository certificate and **672** above the pinned Lin construction. [Non-antipodal signed octad continuation](verifications/improved/dim32-35-signed-layers/nonantipodal32/) has two independent implementations, complete integer reconstruction and semantic rejection controls. Its 29 exceptional supports contain 1,824 individual points, including 380 without antipodes. No worldwide-priority or global-optimality claim is made.
+- **33D:** **370 408** points, **32** above the actual published repository certificate and **168** above the pinned Lin construction. [Non-antipodal octads and individual root-star trades](verifications/improved/dim32-35-signed-layers/nonantipodal33/) have independent exact geometry and source/delta replays. The 500 points without antipodes are interpreted literally; the 370 392 witness is an unpublished intermediate.
+- **34D:** **390 992** points, **two** above the preceding repository construction. [Rational heavy-head rotation](verifications/improved/dim32-35-signed-layers/rotated34/) has two independent exact proofs, a reconstructible integer witness, uniqueness and rank checks.
+- **36–37D:** **501 822 and 505 638** points, **nine** above each preceding repository construction. A [compatible phase-orbit exchange](verifications/improved/dim36-37-orbit-exchange/) replaces three orbits by six, with fresh exact source reconstruction and direct integer replacement checks; all latitude orbits are retained.
+- **39D:** **769 852** points, **32** above the preceding repository construction. [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) pass two independent complete exact proofs, each checking 1,687,391,811 relative products.
+- **49–60D:** twelve improved bounds, including **58 631 571** in **60D**, **3 860** above the preceding repository construction. [Signed P48 refill](verifications/improved/dim49-60-p48-signed-refill/) has independent complete mother-class checks and full finite-family verification, and retains the published mother-lattice premises.
+- **43D:** **2 919 803** points, four above the preceding repository construction. [Individual medium-body splitting and a tiny-point refill](verifications/improved/dim41-46-p48-heads/weyl43/medium_split43/) pass two exact changed-pair checks with fresh geometry/gluing replay; P48n minimum/design and complete-family population inputs remain inherited.
+- **33–87D:** further improvements include signed layers, phase refills,
+  the 38D Fano/cube construction, P48 families and shared parity layers.
+  [Recent updates](#recent-updates) group the methods and proof scopes by dimension.
+- **88–94D:** Nonlinear Nordstrom–Robinson sign fibers and row sections add **4,408,320–27,257,856** points per dimension over the preceding repository certificates, with two exact section replays, both parent proofs and candidate-specific rejection controls. No worldwide-priority claim is made.
+- **88–96D:** [nonlinear-code constructions and exact sections](verifications/improved/dim88-96-z8-golay/)
+  give **6 967 552 256 in 88D** through **142 162 362 560 in 96D**.
+
+**Attribution and gains.** The nonlinear (96, 2^37, 24) parent is published work
+of [Duursma–Greferath–Litsyn–Schmidt (2001)](https://doi.org/10.1109/18.923742).
+The new 96D layers add **426 344 448** points beyond the standard full chain
+using that parent. Table gains use their named historical comparisons;
+dated updates below identify the preceding certificate when that is the baseline.
+
+**Paper:** the [manuscript update remains deferred](#the-write-up).
+
+</details>
+
 
 - **12 November, 28D/29D:** [222,120 and 231,776](verifications/improved/dim28-29-november-sextets/), respectively 16 and 2 above PackingStar’s November 11 release. Complete exact geometry, source reconstruction and independent changed-pair checks pass. The [wider campaign](research/reclaim_26_31_20261112/) records substantial-gain attempts separately from these small certified gains.
 
@@ -1065,6 +1087,7 @@ did not work.
 
 Alexey Kravatskiy, MIRIAI (Moscow Independent Research Institute of Artificial Intelligence),
 Moscow, Russia. [kravatskii.a@miriai.org](mailto:kravatskii.a@miriai.org)
+
 
 
 

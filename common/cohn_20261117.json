@@ -1,0 +1,469 @@
+{
+  "source": "https://cohn.mit.edu/kissing-numbers/",
+  "retrieved_date": "2026-11-17",
+  "retrieved_at_utc": "2026-11-17T15:22:59.470688+00:00",
+  "retrieval_method": "Fresh HTTPS GET (HTTP200), full48-row table parsed; search-tool cached results were not used.",
+  "retrieved_html_sha256": "1f54cedd97389d22f2514fe317c7f04157a1ea503964891f4d1b8d20f3524ecb",
+  "scope": "Cohn current table, dimensions1\u201348; attribution is limited to the explicitly cited rows.",
+  "repository_reference": {
+    "number": 8,
+    "text": "A. Kravatskiy,2026",
+    "url": "https://github.com/alexlegeartis/KissingNumbers"
+  },
+  "repository_credited_dimensions": [
+    18,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "all_credited_values_match_current_repository": true,
+  "repository_commit": "d7a43333703e8b8dfecea124268f43120b47034c",
+  "bounds": [
+    {
+      "dimension": 1,
+      "lower_bound": 2,
+      "upper_bound": 2,
+      "reference_numbers": []
+    },
+    {
+      "dimension": 2,
+      "lower_bound": 6,
+      "upper_bound": 6,
+      "reference_numbers": []
+    },
+    {
+      "dimension": 3,
+      "lower_bound": 12,
+      "upper_bound": 12,
+      "reference_numbers": [
+        21
+      ]
+    },
+    {
+      "dimension": 4,
+      "lower_bound": 24,
+      "upper_bound": 24,
+      "reference_numbers": [
+        20,
+        15
+      ]
+    },
+    {
+      "dimension": 5,
+      "lower_bound": 40,
+      "upper_bound": 43,
+      "reference_numbers": [
+        7,
+        23
+      ]
+    },
+    {
+      "dimension": 6,
+      "lower_bound": 72,
+      "upper_bound": 76,
+      "reference_numbers": [
+        7,
+        23
+      ]
+    },
+    {
+      "dimension": 7,
+      "lower_bound": 126,
+      "upper_bound": 132,
+      "reference_numbers": [
+        7,
+        23
+      ]
+    },
+    {
+      "dimension": 8,
+      "lower_bound": 240,
+      "upper_bound": 240,
+      "reference_numbers": [
+        7,
+        12,
+        19
+      ]
+    },
+    {
+      "dimension": 9,
+      "lower_bound": 306,
+      "upper_bound": 363,
+      "reference_numbers": [
+        10,
+        14
+      ]
+    },
+    {
+      "dimension": 10,
+      "lower_bound": 510,
+      "upper_bound": 552,
+      "reference_numbers": [
+        6,
+        18
+      ]
+    },
+    {
+      "dimension": 11,
+      "lower_bound": 604,
+      "upper_bound": 867,
+      "reference_numbers": [
+        2,
+        16
+      ]
+    },
+    {
+      "dimension": 12,
+      "lower_bound": 841,
+      "upper_bound": 1355,
+      "reference_numbers": [
+        22,
+        11
+      ]
+    },
+    {
+      "dimension": 13,
+      "lower_bound": 1154,
+      "upper_bound": 2064,
+      "reference_numbers": [
+        24,
+        11
+      ]
+    },
+    {
+      "dimension": 14,
+      "lower_bound": 1932,
+      "upper_bound": 3174,
+      "reference_numbers": [
+        6,
+        11
+      ]
+    },
+    {
+      "dimension": 15,
+      "lower_bound": 2564,
+      "upper_bound": 4853,
+      "reference_numbers": [
+        10,
+        11
+      ]
+    },
+    {
+      "dimension": 16,
+      "lower_bound": 4320,
+      "upper_bound": 7319,
+      "reference_numbers": [
+        1,
+        17
+      ]
+    },
+    {
+      "dimension": 17,
+      "lower_bound": 5730,
+      "upper_bound": 10978,
+      "reference_numbers": [
+        4,
+        11
+      ]
+    },
+    {
+      "dimension": 18,
+      "lower_bound": 8358,
+      "upper_bound": 16406,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 19,
+      "lower_bound": 12460,
+      "upper_bound": 24417,
+      "reference_numbers": [
+        13,
+        11
+      ]
+    },
+    {
+      "dimension": 20,
+      "lower_bound": 19448,
+      "upper_bound": 36195,
+      "reference_numbers": [
+        4,
+        11
+      ]
+    },
+    {
+      "dimension": 21,
+      "lower_bound": 31560,
+      "upper_bound": 53524,
+      "reference_numbers": [
+        13,
+        11
+      ]
+    },
+    {
+      "dimension": 22,
+      "lower_bound": 49896,
+      "upper_bound": 80810,
+      "reference_numbers": [
+        9,
+        11
+      ]
+    },
+    {
+      "dimension": 23,
+      "lower_bound": 93150,
+      "upper_bound": 122351,
+      "reference_numbers": [
+        9,
+        11
+      ]
+    },
+    {
+      "dimension": 24,
+      "lower_bound": 196560,
+      "upper_bound": 196560,
+      "reference_numbers": [
+        9,
+        12,
+        19
+      ]
+    },
+    {
+      "dimension": 25,
+      "lower_bound": 197586,
+      "upper_bound": 265006,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 26,
+      "lower_bound": 201188,
+      "upper_bound": 367775,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 27,
+      "lower_bound": 209884,
+      "upper_bound": 522212,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 28,
+      "lower_bound": 222120,
+      "upper_bound": 752292,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 29,
+      "lower_bound": 231814,
+      "upper_bound": 1075991,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 30,
+      "lower_bound": 248212,
+      "upper_bound": 1537707,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 31,
+      "lower_bound": 251420,
+      "upper_bound": 2213487,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 32,
+      "lower_bound": 352992,
+      "upper_bound": 3162316,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 33,
+      "lower_bound": 370408,
+      "upper_bound": 4494570,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 34,
+      "lower_bound": 390992,
+      "upper_bound": 6422593,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 35,
+      "lower_bound": 415334,
+      "upper_bound": 9162403,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 36,
+      "lower_bound": 501822,
+      "upper_bound": 13017098,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 37,
+      "lower_bound": 505638,
+      "upper_bound": 18498316,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 38,
+      "lower_bound": 611638,
+      "upper_bound": 26496684,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 39,
+      "lower_bound": 769852,
+      "upper_bound": 37826766,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 40,
+      "lower_bound": 1126314,
+      "upper_bound": 53589200,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 41,
+      "lower_bound": 1460036,
+      "upper_bound": 76287040,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 42,
+      "lower_bound": 1991445,
+      "upper_bound": 108404055,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 43,
+      "lower_bound": 2919803,
+      "upper_bound": 153813582,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 44,
+      "lower_bound": 4939281,
+      "upper_bound": 220788272,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 45,
+      "lower_bound": 7655056,
+      "upper_bound": 316735249,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 46,
+      "lower_bound": 13387797,
+      "upper_bound": 441900184,
+      "reference_numbers": [
+        8,
+        11
+      ]
+    },
+    {
+      "dimension": 47,
+      "lower_bound": 23766960,
+      "upper_bound": 621658419,
+      "reference_numbers": [
+        3,
+        11
+      ]
+    },
+    {
+      "dimension": 48,
+      "lower_bound": 52416000,
+      "upper_bound": 867897072,
+      "reference_numbers": [
+        10,
+        11
+      ]
+    }
+  ]
+}
