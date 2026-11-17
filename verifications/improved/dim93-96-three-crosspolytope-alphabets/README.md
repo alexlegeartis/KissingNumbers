@@ -34,3 +34,5 @@ Run `python verify.py` (Python3.10+, NumPy). The complete original producer and 
 - `three_basis_independent_20261117/replay_parent.py`
 - `three_basis_z8_93_96_20261117/verify.py`
 - `verify.py`
+
+This is a retained construction; the E7 and RS/root augmentation package supersedes these totals without invalidating the original proof.

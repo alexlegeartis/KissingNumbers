@@ -478,6 +478,12 @@ _driver=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_driver)
 for _row in _driver.results():
     add(_row['dimension'],_row['total'],_package,'verify.py: all alphabet/root-head pairs, exact ring fibers and full inherited parent minimum replay')
 
+_package='dim93-96-e7-rs-root-augmentation'
+_spec=importlib.util.spec_from_file_location('e7_rs93_96',os.path.join(IMP,_package,'final.py'))
+_driver=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_driver)
+for _row in _driver.results():
+    add(_row['dimension'],_row['total'],_package,'verify.py: complete E7 head Grams, finite-field evaluation and exact root/sparse cross bounds with full parent replay')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
@@ -2007,6 +2013,7 @@ if '--write-results' in sys.argv and not fail:
         return "{:,}".format(x).replace(",", "\u202f")
 
     PKGDOC = {
+        'dim93-96-e7-rs-root-augmentation': 'Three crosspolytope alphabets, E7 head sections and exact Reed-Solomon/root augmentation',
         'dim93-96-three-crosspolytope-alphabets': 'Three isometric crosspolytope alphabets, exact root-head compression and full inherited parent minimum replay',
         'dim91-92-direct-latitude-layers': 'Direct signed-grid latitudes with exact linear ternary phase codes; published parent minima retained',
         'dim90-92-hexagonal-phase-layers': 'Pless weight15 words with nonlinear7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima',

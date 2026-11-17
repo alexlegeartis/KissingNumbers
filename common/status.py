@@ -611,3 +611,6 @@ for _d in (91,92):
 
 for _d in (93,94,95,96):
     STATUS[_d]=('codes','three crosspolytope alphabets with exact root-head compression and full inherited Z8 parent minimum replay; no global optimality claim')
+
+for _d in (93,94,95,96):
+    STATUS[_d]=('codes','three crosspolytope alphabets with E7 head sections and exact Reed-Solomon/root augmentation; full inherited parent replay')
