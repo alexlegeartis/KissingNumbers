@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 134 scripts, including large exact certificate replays
-    python run_all.py --full       # 153 scripts, budget about 10 hours
+    python run_all.py              # 135 scripts, including large exact certificate replays
+    python run_all.py --full       # 154 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -106,6 +106,7 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('93–96D three crosspolytope alphabets',os.path.join(V,'improved','dim93-96-three-crosspolytope-alphabets'),['verify.py'],2.0,True),
     ('91–92D direct latitude layers',os.path.join(V,'improved','dim91-92-direct-latitude-layers'),['verify.py'],2.0,True),
     ('90–92D nonlinear hexagonal phase layer',os.path.join(V,'improved','dim90-92-hexagonal-phase-layers'),['verify.py'],2.0,True),
     ('71D and87–91D lattice/code continuation', os.path.join(V, 'improved', 'dim68-91-lattice-code-continuation'), ['verify.py'], 5.0, True),
@@ -447,6 +448,7 @@ JOBS.append(('49-60D pointwise P48 refill: two exact proofs and complete tails',
 # driver, a manifest, or the GPU run's receipt.
 def _sota_jobs(quick=False):
     wanted = {
+        ('dim93-96-three-crosspolytope-alphabets',('verify.py',)),
         ('dim91-92-direct-latitude-layers',('verify.py',)),
         ('dim90-92-hexagonal-phase-layers',('verify.py',)),
         ('dim68-91-lattice-code-continuation', ('verify.py',)),
@@ -573,6 +575,7 @@ def _sota_records():
 def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
+        ('dim93-96-three-crosspolytope-alphabets',[93,94,95,96],[('verify.py',)],'exact crosspolytope/root-head geometry, ring fibers and full parent minimum replay'),
         ('dim91-92-direct-latitude-layers',[91,92],[('verify.py',)],'exact linear phase enumeration, outer membership and signed-grid latitude geometry'),
         ('dim90-92-hexagonal-phase-layers',[90,91,92],[('verify.py',)],'all phase pairs, explicit outer membership, exact block geometry and complements; published minimum15 parents'),
         ('dim68-91-lattice-code-continuation', [68,69,71,87,88,89,90,91], [('verify.py',)], 'exact rational shell/head geometry, generator ranks and sparse counts; published minimum and design inputs retained'),

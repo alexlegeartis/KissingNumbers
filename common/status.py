@@ -608,3 +608,6 @@ for _d in range(87,92):
 
 for _d in (91,92):
     STATUS[_d] = ('codes', 'direct signed-grid latitude layers with exact linear phase codes and independently checked outer membership; inherited published parent minima')
+
+for _d in (93,94,95,96):
+    STATUS[_d]=('codes','three crosspolytope alphabets with exact root-head compression and full inherited Z8 parent minimum replay; no global optimality claim')

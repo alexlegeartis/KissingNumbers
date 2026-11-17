@@ -84,6 +84,7 @@ DRIVERS.append(('30D exact certificate unions', os.path.join(V, 'dim30-certifica
 DRIVERS.append(('71D and87–91D lattice/code continuation', os.path.join(V, 'dim68-91-lattice-code-continuation'), 'final.py'))
 DRIVERS.append(('90–92D hexagonal phases',os.path.join(V,'dim90-92-hexagonal-phase-layers'),'final.py'))
 DRIVERS.append(('91–92D direct latitude layers',os.path.join(V,'dim91-92-direct-latitude-layers'),'final.py'))
+DRIVERS.append(('93–96D three crosspolytope alphabets',os.path.join(V,'dim93-96-three-crosspolytope-alphabets'),'final.py'))
 TABLES = [(os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
           (os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py')]
 

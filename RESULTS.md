@@ -148,10 +148,10 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 90 | 6 218 183 254 | **21 943 640 934** | 3.53 | `codes` | [Pless weight15 words with nonlinear7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |
 | 91 | 6 218 187 548 | **22 359 345 896** | 3.60 | `codes` | [Direct signed-grid latitudes with exact linear ternary phase codes; published parent minima retained](verifications/improved/dim91-92-direct-latitude-layers/) |
 | 92 | 8 589 934 592 | **22 835 674 500** | 2.66 | `codes` | [Direct signed-grid latitudes with exact linear ternary phase codes; published parent minima retained](verifications/improved/dim91-92-direct-latitude-layers/) |
-| 93 | 17 179 869 184 | **31 056 799 856** | 1.81 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
-| 94 | 34 359 738 368 | **47 703 347 340** | 1.39 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
-| 95 | 68 719 476 736 | **77 565 848 332** | 1.13 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
-| 96 | 137 438 953 472 | **142 162 362 560** | 1.03 | `codes` | [published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays](verifications/improved/dim88-96-z8-golay/) |
+| 93 | 17 179 869 184 | **42 949 672 960** | 2.50 | `codes` | [Three isometric crosspolytope alphabets, exact root-head compression and full inherited parent minimum replay](verifications/improved/dim93-96-three-crosspolytope-alphabets/) |
+| 94 | 34 359 738 368 | **64 424 509 440** | 1.88 | `codes` | [Three isometric crosspolytope alphabets, exact root-head compression and full inherited parent minimum replay](verifications/improved/dim93-96-three-crosspolytope-alphabets/) |
+| 95 | 68 719 476 736 | **90 194 313 216** | 1.31 | `codes` | [Three isometric crosspolytope alphabets, exact root-head compression and full inherited parent minimum replay](verifications/improved/dim93-96-three-crosspolytope-alphabets/) |
+| 96 | 137 438 953 472 | **206 158 430 208** | 1.50 | `codes` | [Three isometric crosspolytope alphabets, exact root-head compression and full inherited parent minimum replay](verifications/improved/dim93-96-three-crosspolytope-alphabets/) |
 
 ## Status: what would have to change
 
@@ -170,7 +170,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `codes` | 67 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | larger compatible support and sign families in shortened, compressed and extended code layers; exact finite replay; broader support and parity choices remain open (dim61-67-compatible-sign-families/verify.py) |
 | `codes` | 87-90 (4) | larger input codes or different layer and section geometry can improve these explicit constructions | ternary QR48 fibers, exact compressed heads and sparse augmentation; parent minimum15 is a published premise |
 | `codes` | 91-92 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | direct signed-grid latitude layers with exact linear phase codes and independently checked outer membership; inherited published parent minima |
-| `codes` | 93-96 (4) | larger input codes or different layer and section geometry can improve these explicit constructions | nonlinear Z8 Golay parent, optimized zero/equal-row sections and support-adapted linear/nonlinear sign fibers; different sections and larger compatible layers remain open (dim88-96-z8-golay/verify.py) |
+| `codes` | 93-96 (4) | larger input codes or different layer and section geometry can improve these explicit constructions | three crosspolytope alphabets with exact root-head compression and full inherited Z8 parent minimum replay; no global optimality claim |
 | `cosets` | 36-37 (2) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | compatible Coxeter-Todd orbit exchange with fresh exact source and replacement geometry; larger simultaneous exchanges remain open (dim36-37-orbit-exchange/verify.py) |
 | `cosets` | 73-76, 80-81, 86 (7) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | nearest Gamma72 subsets and repaired group images; exact geometry and the inherited nearestness certificates are replayed (dim73-88-gamma72-cosets/verify.py) |
 | `cosets` | 77-79 (3) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | exact norm-ten moments, mixed tails and weighted-priority existence bounds; different tail sets and stronger independence bounds remain open (dim73-88-gamma72-cosets/verify_norm10.py) |
@@ -222,7 +222,7 @@ refreshed table, not more search.
 | 73-86 | `dim73-88-gamma72-cosets` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 90 | `dim90-92-hexagonal-phase-layers` | verify.py: all nonlinear phase pairs, outer membership, exact hexagonal geometry and orthogonal complement; published parent minima |
 | 91-92 | `dim91-92-direct-latitude-layers` | verify.py: exact parent membership, linear phase enumeration and latitude geometry; inherited published parent minima |
-| 93-96 | `dim88-96-z8-golay` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
+| 93-96 | `dim93-96-three-crosspolytope-alphabets` | verify.py: all alphabet/root-head pairs, exact ring fibers and full inherited parent minimum replay |
 
 ## Where the previously published figures come from
 
@@ -247,7 +247,7 @@ typed by hand. Sources:
 | 47 | already in the literature. 23 766 960 is Boyvalenkov-Cherkashin, Results Math. 80 (2025), Paper No. 3, equation (3) of the preprint arXiv:2312.05121. The historical 46D value 12 309 600 is Sun-Wang, arXiv:2607.20359, Table 3; the new 46D construction is larger. `verifications/recovered/dim46-47-p48-cross-sections/` |
 | 48 | 52 416 000 is P_48 itself. |
 | 72 | 6 218 175 600 is Gamma_72 itself. |
-| 97 and above | **not evaluated here.** Monotonicity gives at least dimension 96's 142 162 362 560, and nothing in this repository claims anything there. The Edel-Rains-Sloane chain is the thing to evaluate, as it was at 96. |
+| 97 and above | **not evaluated here.** Monotonicity gives at least dimension 96's 206 158 430 208, and nothing in this repository claims anything there. The Edel-Rains-Sloane chain is the thing to evaluate, as it was at 96. |
 | 9-17, 19 | every published record is checked MAXIMAL -- no sphere can be added to any of them, and the margin of each is recorded. `verifications/closed/dim09-19-record-maximality/` |
 | 17, 19-21 | the Cohn-Li mechanism is at its exact ceiling: provably exhausted in 20 and 21, dimension 19 closed at exactly Ho's 11948, and dimension 17 at its two-slot value; the middle dimension of that range left this table for the improved tier (the bent-coset hexagon). `verifications/closed/dim17-23-cohn-li-mechanism/` |
 | 17, 19-24 | one construction, not eight: every Leech minimal vector's part in the 8 coordinates of an octad has norm^2 0, 8, 16 or 32, the multiplicity is CONSTANT on each of those four position shells (4320, 512, 32, 1), and hence tau(Lambda_{16+k}) = 4320 + 513*N_2(L_k) + 32*N_4(L_k) for L = A1, A2, A3, D4, D5, E6, E7, E8.  The records add a flat layer, which is EXACTLY 2048 in 20 and 21 (Koenig on a regular bipartite Cayley graph) -- both are rebuilt there from the Golay code and checked pair by pair.  The one component not at a proved ceiling is the tier size, in [512, 533]. `verifications/closed/dim17-24-layer-identity/` |
@@ -256,5 +256,5 @@ typed by hand. Sources:
 
 Dimensions 25 to 31 left this table on 2026-09-15, when dimension 28 became the last of them to be claimed. The cap model still reproduces Cohn's table *exactly* in 26, 28, 29, 30 and 31 --- that is what `verifications/improved/dim73-95-gamma72-caps/scripts/calibrate.py` checks --- and in each of those five a layer now beats the template that calibration validates.
 
-**Prior-code comparison in dimensions 92-96.** The published nonlinear parent corrects the earlier linear-code-only comparison. In 96D, the standard Edel-Rains-Sloane chain with that parent and the shipped classical auxiliary codes gives 2^37 + 2^32 + 2^21 + 192 = 141 736 018 112. The current construction exceeds that derived baseline by 426 344 448 points. This is a construction-based LOWER bound, not an upper bound on what other inputs could achieve or a published tabulated kissing number. Provenance and both arithmetic replays are in `verifications/improved/dim88-96-z8-golay/`.
+**Prior-code comparison in dimensions 92-96.** The published nonlinear parent corrects the earlier linear-code-only comparison. In 96D, the standard Edel-Rains-Sloane chain with that parent and the shipped classical auxiliary codes gives 2^37 + 2^32 + 2^21 + 192 = 141 736 018 112. The current construction exceeds that derived baseline by 64 422 412 096 points. This is a construction-based LOWER bound, not an upper bound on what other inputs could achieve or a published tabulated kissing number. Provenance and both arithmetic replays are in `verifications/improved/dim88-96-z8-golay/`.
 

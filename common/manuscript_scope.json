@@ -541,22 +541,22 @@
     {
       "dimension": 93,
       "manuscript_total": 6301636084,
-      "repository_total": 31056799856
+      "repository_total": 42949672960
     },
     {
       "dimension": 94,
       "manuscript_total": 6357657396,
-      "repository_total": 47703347340
+      "repository_total": 64424509440
     },
     {
       "dimension": 95,
       "manuscript_total": 7091452684,
-      "repository_total": 77565848332
+      "repository_total": 90194313216
     },
     {
       "dimension": 96,
       "manuscript_total": 13289406656,
-      "repository_total": 142162362560
+      "repository_total": 206158430208
     }
   ]
 }
