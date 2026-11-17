@@ -92,6 +92,7 @@ DRIVERS.append(('87–89D nonlinear phase unions',os.path.join(V,'dim87-89-hexag
 DRIVERS.append(('92D four-row partition heads',os.path.join(V,'dim92-four-row-partition-heads'),'final.py'))
 DRIVERS.append(('79-86D norm-ten triangle layers',os.path.join(V,'dim79-86-norm10-triangle-layers'),'final.py'))
 DRIVERS.append(('70D D4 planar heads',os.path.join(V,'dim70-gamma72-d4-planar-heads'),'final.py'))
+DRIVERS.append(('88-89D punctured Z8 fibers',os.path.join(V,'dim88-89-z8-prefix-anticode'),'final.py'))
 TABLES = [(os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
           (os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py')]
 

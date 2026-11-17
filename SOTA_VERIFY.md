@@ -213,3 +213,7 @@ The (96,2^37,24) parent is published work of Duursma–Greferath–Litsyn–Schm
 now use that code and its shortenings; the standard full-chain evaluation is
 recorded separately as a derived comparison. No 2^37-word enumeration is claimed.
 Both the SOTA profile and CI run this complete package replay.
+
+**17 November 2026: twelve punctured Z8 fibers.** **12,884,901,888 in 88D**, +3,294,110,112 (+34.34659%) over the preceding repository bound. The same bound improves 89D by zero-coordinate embedding. [Complete exact parent, population, pair-type and injectivity proof](verifications/improved/dim88-89-z8-prefix-anticode/); no exhaustive worldwide-priority claim.
+
+Run `python verifications/improved/dim88-89-z8-prefix-anticode/verify.py`.

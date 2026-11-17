@@ -534,6 +534,12 @@ _driver=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_driver)
 for _row in _driver.results():
     add(_row['dimension'],_row['total'],_package,'verify.py: exact shell moments, repaired local triangle duals, rational independence recurrence and complete kissing geometry')
 
+_package='dim88-89-z8-prefix-anticode'
+_spec=importlib.util.spec_from_file_location('prefix_anticode88',os.path.join(IMP,_package,'final.py'))
+_driver=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_driver)
+for _row in _driver.results():
+    add(_row['dimension'],_row['total'],_package,'verify.py: complete inherited parent minimum replay, exact fiber populations and all punctured pair types; 89D embedding')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
@@ -2075,6 +2081,7 @@ if '--write-results' in sys.argv and not fail:
         'dim79-86-norm10-triangle-layers': 'Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence',
         'dim70-gamma72-d4-planar-heads': 'D4-profile compression with anisotropic planar heads and independently replayed Gamma72 populations',
         'dim92-four-row-partition-heads': 'Four-row partition heads with three crosspolytope alphabets and compatible Reed-Solomon/root layers',
+        'dim88-89-z8-prefix-anticode': 'Twelve punctured Z8 prefix fibers with complete parent replay; 89D by zero-coordinate embedding',
         'dim87-89-hexagonal-phase-unions': 'Compressed ternary fibers with nonlinear hexagonal phases and pure-head root systems',
         'dim92-two-alphabet-fibers': 'Two Gray alphabets with D4 heads, shortened support/sign codes and compatible Reed-Solomon layers',
         'dim94-95-e6-e7-head-exchange': 'E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation',

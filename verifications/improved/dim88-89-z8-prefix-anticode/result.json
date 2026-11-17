@@ -1,0 +1,26 @@
+{
+  "status": "PASS exact geometry and population conditional on parent minimum24",
+  "dimension": 88,
+  "count": 12884901888,
+  "previous_repository": 9590791776,
+  "gain": 3294110112,
+  "percent": 34.34659190749174,
+  "prefixes": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ]
+  ]
+}
