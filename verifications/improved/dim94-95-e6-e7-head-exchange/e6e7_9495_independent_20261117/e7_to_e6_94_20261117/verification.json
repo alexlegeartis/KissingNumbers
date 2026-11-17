@@ -1,0 +1,11 @@
+{
+  "status": "PASS exact62-head three-basis94D construction; inheritedZ8 minimum24 explicit",
+  "count": 66571993088,
+  "color_counts": [
+    24,
+    20,
+    18
+  ],
+  "source_sha256": "903c193dbd00c1e7c692e8de62fc4e42c42806dd53365f83ddd73e673dc0fb73",
+  "candidate_sha256": "98abea68bc0eb18295b21b8d9c6f06e6ae7c12a509cd76eebf21cbd0814009e8"
+}

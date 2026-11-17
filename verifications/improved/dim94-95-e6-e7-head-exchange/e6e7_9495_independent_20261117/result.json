@@ -1,0 +1,20 @@
+[
+  {
+    "dimension": 94,
+    "head_count": 62,
+    "dense_count": 66571993088,
+    "RS_root_count": 1837772,
+    "total": 66573830860,
+    "candidate_sha256": "98abea68bc0eb18295b21b8d9c6f06e6ae7c12a509cd76eebf21cbd0814009e8",
+    "status": "PASS new exact head geometry; source and RS/root proofs inherited from completed audit"
+  },
+  {
+    "dimension": 95,
+    "head_count": 102,
+    "dense_count": 109521666048,
+    "RS_root_count": 1838148,
+    "total": 109523504196,
+    "candidate_sha256": "acadde8f28ee5372cf347791307660f2da47e4e170e7fa0f0bde2acfd636c4f9",
+    "status": "PASS new exact head geometry; source and RS/root proofs inherited from completed audit"
+  }
+]

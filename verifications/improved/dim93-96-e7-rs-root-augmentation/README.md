@@ -40,3 +40,5 @@ Run `python verify.py` (Python3.10+, NumPy). It replays the preceding complete p
 - `three_basis_final_independent_20261117/input/e7/verify.py`
 - `three_basis_final_independent_20261117/input/verify_augmentation.py`
 - `verify.py`
+
+The 94D and 95D rows are a retained construction, superseded by the [E6 and mixed E7 head exchanges](../dim94-95-e6-e7-head-exchange/). Frozen producer and independent proof files below retain their original historical values unchanged.

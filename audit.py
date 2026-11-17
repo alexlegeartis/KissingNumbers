@@ -484,6 +484,12 @@ _driver=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_driver)
 for _row in _driver.results():
     add(_row['dimension'],_row['total'],_package,'verify.py: complete E7 head Grams, finite-field evaluation and exact root/sparse cross bounds with full parent replay')
 
+_package='dim94-95-e6-e7-head-exchange'
+_spec=importlib.util.spec_from_file_location('e6e7_9495',os.path.join(IMP,_package,'final.py'))
+_driver=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_driver)
+for _row in _driver.results():
+    add(_row['dimension'],_row['total'],_package,'verify.py: exact E6 and mixed E7 head tables, coordinate isometries and unchanged audited RS/root layers')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
@@ -1360,6 +1366,15 @@ else:
                 _lines = io.open(_p, encoding='utf-8').read().split(chr(10))
             except (IOError, UnicodeDecodeError):
                 continue
+            # Immutable original proof tables below the explicitly retained E7 package.
+            # Their exact bytes are preserved; current claims are checked separately.
+            _frozen_e7 = {'verifications/improved/dim93-96-e7-rs-root-augmentation/three_basis_final_independent_20261117/input/PROOF.md': 'f025abd12bca5eb17a6fbefef0e77ce39e0aff1e0ce53e1177628ce650020448', 'verifications/improved/dim93-96-e7-rs-root-augmentation/three_basis_final93_96_20261117/PROOF.md': 'f025abd12bca5eb17a6fbefef0e77ce39e0aff1e0ce53e1177628ce650020448'}
+            _rel_e7 = os.path.relpath(_p, HERE).replace(os.sep, '/')
+            if _rel_e7 in _frozen_e7:
+                import hashlib as _hashlib_e7
+                if _hashlib_e7.sha256(open(_p, 'rb').read()).hexdigest() != _frozen_e7[_rel_e7]:
+                    bad('frozen E7 historical proof hash mismatch: ' + _rel_e7)
+                continue
             for _i, _L in enumerate(_lines, 1):
                 if _L.count('|') < 3:
                     continue
@@ -2013,10 +2028,11 @@ if '--write-results' in sys.argv and not fail:
         return "{:,}".format(x).replace(",", "\u202f")
 
     PKGDOC = {
+        'dim94-95-e6-e7-head-exchange': 'E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation',
         'dim93-96-e7-rs-root-augmentation': 'Three crosspolytope alphabets, E7 head sections and exact Reed-Solomon/root augmentation',
         'dim93-96-three-crosspolytope-alphabets': 'Three isometric crosspolytope alphabets, exact root-head compression and full inherited parent minimum replay',
         'dim91-92-direct-latitude-layers': 'Direct signed-grid latitudes with exact linear ternary phase codes; published parent minima retained',
-        'dim90-92-hexagonal-phase-layers': 'Pless weight15 words with nonlinear7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima',
+        'dim90-92-hexagonal-phase-layers': 'Pless weight 15 words with nonlinear 7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima',
         'dim68-91-lattice-code-continuation': 'mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises',
         'dim18-bent-hexagon': 'odd BW16 in R^16 plus a hexagon of tiers in R^2 whose three six-set families are bent cosets of RM(1,4) with pairwise-bent sums not summing to zero; tier B rises from 256 to 960',
         'dim25-lens-heads': '1016 heads in the lens of a minimal vector, no removal shared, plus one non-lattice equator point.  972 are class heads x = u + t- v and the other 44 are exact rationals, and the 44 are a MAXIMUM INDEPENDENT SET of the whole admissible pool rather than heads added one at a time: solving max |x| over the region of each owner against the class core alone gives a pool of 1188 heads, whose greedy answer is the 35 this package used to ship and whose CP-SAT answer is 44',
@@ -2130,7 +2146,7 @@ if '--write-results' in sys.argv and not fail:
     out.append('14 November 2026 certificate unions: 248212 in 30D, 32 above the preceding 248180 and 220 above pinned PackingStar. A 52-for-20 exchange and all 30804474366 unordered final pairs are verified independently. See verifications/improved/dim30-certificate-unions/.')
     out.append("")
     out.append('14 November 2026: radical-orbit and E8 head-frame exchanges give 201188 in 26D and 209884 in 27D, respectively 8 and 22 above the pinned PackingStar November 11 release. The 160-for-152 and 238-for-216 exact exchanges and all 20238205078 and 22025541786 unordered final pairs are verified independently. See verifications/improved/dim26-27-radical-orbits/.')
-    out.append('13 November 2026 native partial-design continuation: 231814 in29D and248180 in30D, improvements of38 and96 over retained repository certificates, and40 and188 over pinned PackingStar. Complete exact source/delta and final geometry verification; see verifications/improved/dim29-30-native-partial-design/.')
+    out.append('13 November 2026 native partial-design continuation: 231814 in29D and248180 in30D, improvements of 38 and96 over retained repository certificates, and40 and188 over pinned PackingStar. Complete exact source/delta and final geometry verification; see verifications/improved/dim29-30-native-partial-design/.')
     out.append('13 November 2026 reconstructed affine subcodes: 88979562 in61D, 122543436 in62D, 184415700 in63D, 335749696 in64D, 335817922 in65D and342291652 in66D. New exact sign-family certificates and independent replays extend the retained parent proof. See verifications/improved/dim61-62-66-affine-reconstruction/ and verifications/improved/dim63-65-affine-reconstruction/.')
     out.append('13 November 2026 further continuation: annealed E8 orientations and full exterior deletion pricing give 251420 in 31D, 24 above retained 251396 and 166 above pinned PackingStar. Complete exact geometry covers all 31605882490 unordered final pairs; see verifications/improved/dim31-annealed-design/.')
     out.append('13 November 2026 continuation: joint design and exterior deletion optimization gives 251396 in 31D, one above the retained 251395-point certificate and 142 above pinned PackingStar commit 2f3453b. The new proof reconstructs the exact-cover module and the 1004-for-1003 exchange and checks all 31599848710 unordered final pairs; see verifications/improved/dim31-joint-design/.')
@@ -2138,7 +2154,7 @@ if '--write-results' in sys.argv and not fail:
     out.append('')
     out.append('The earlier Barnes-Wall module checkpoint from the same campaign gives 248020 in 30D. Its 932-for-960 exchange, complete geometry and independent integer reconstruction remain available in verifications/improved/dim30-bw14-module/.')
     out.append('')
-    out.append('13 November 2026 native partial-design continuation: 231814 in29D and248180 in30D, improvements of38 and96 over retained repository certificates, and40 and188 over pinned PackingStar. Complete exact source/delta and final geometry verification; see verifications/improved/dim29-30-native-partial-design/.')
+    out.append('13 November 2026 native partial-design continuation: 231814 in29D and248180 in30D, improvements of 38 and96 over retained repository certificates, and40 and188 over pinned PackingStar. Complete exact source/delta and final geometry verification; see verifications/improved/dim29-30-native-partial-design/.')
     out.append('13 November 2026 reconstructed affine subcodes: 88979562 in61D, 122543436 in62D, 184415700 in63D, 335749696 in64D, 335817922 in65D and342291652 in66D. New exact sign-family certificates and independent replays extend the retained parent proof. See verifications/improved/dim61-62-66-affine-reconstruction/ and verifications/improved/dim63-65-affine-reconstruction/.')
     out.append('13 November 2026 further continuation: annealed E8 orientations and full exterior deletion pricing give 251420 in 31D, 24 above retained 251396 and 166 above pinned PackingStar. Complete exact geometry covers all 31605882490 unordered final pairs; see verifications/improved/dim31-annealed-design/.')
     out.append('13 November 2026 continuation: an actual D7 normal extension strengthens the Gamma72 constructions to 471,886,208 in 68D and 746,325,051 in 69D, gains of 1,920 and 2,802,747. Two independent standard-library checkers enumerate the complete 162,969-profile domain and verify all moment duals, geometric cases and the two extra 69D poles. The published Gamma72 minimum, shell population and 11-design remain explicit premises. See verifications/improved/dim68-69-gamma72-extended-moments/.')

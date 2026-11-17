@@ -604,7 +604,7 @@ STATUS[30] = ('heads', 'exact unions of native-design, Barnes-Wall and joint-ref
 # 17 November finite construction continuation.
 STATUS[71] = ('heads', 'four normalized slices from two Gamma72 shells; other sections remain open, no global optimality claim')
 for _d in range(87,92):
-    STATUS[_d] = ('codes', 'ternary QR48 fibers, exact compressed heads and sparse augmentation; parent minimum15 is a published premise')
+    STATUS[_d] = ('codes', 'ternary QR48 fibers, exact compressed heads and sparse augmentation; parent minimum 15 is a published premise')
 
 for _d in (91,92):
     STATUS[_d] = ('codes', 'direct signed-grid latitude layers with exact linear phase codes and independently checked outer membership; inherited published parent minima')
@@ -614,3 +614,6 @@ for _d in (93,94,95,96):
 
 for _d in (93,94,95,96):
     STATUS[_d]=('codes','three crosspolytope alphabets with E7 head sections and exact Reed-Solomon/root augmentation; full inherited parent replay')
+
+for _d in (94,95):
+    STATUS[_d]=('codes','E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation; full inherited parent replay')
