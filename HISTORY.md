@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: direct high-dimensional layers (through 17 November)</summary>
 
+**17 November 2026: mixed-latitude Z8 fibers in 89D.** **13,958,643,714**, +1,073,741,826 (about +8.33333%) over the twelve-fiber embedding. Thirteen fibers with two opposite nonzero heights plus two pure poles, exact pointwise normalization and full inherited parent replay. [Independent complete proof](verifications/improved/dim88-89-z8-prefix-anticode/mixed89/AUDIT.md); no exhaustive worldwide-priority claim.
+
 **17 November 2026: twelve punctured Z8 fibers.** **12,884,901,888 in 88D**, +3,294,110,112 (+34.34659%) over the preceding repository bound. The same bound improves 89D by zero-coordinate embedding. [Complete exact parent, population, pair-type and injectivity proof](verifications/improved/dim88-89-z8-prefix-anticode/); no exhaustive worldwide-priority claim.
 
 **17 November 2026: Gram-dominated E6 heads in 94D.** A 68-head assignment gives **73,016,281,804** kissing points, 9.67715% above the preceding 62-head construction. The fresh complete parent replay and separately authored head/augmentation checks pass. [Proof and scope](verifications/improved/dim94-95-e6-e7-head-exchange/). No exhaustive worldwide-priority claim is made.

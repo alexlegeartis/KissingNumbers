@@ -634,3 +634,5 @@ STATUS[94] = ('codes', '68 Gram-dominated E6 heads with exact RS/root augmentati
 
 for _d in (88,89):
     STATUS[_d] = ('codes', 'twelve punctured Z8 prefix fibers; exact population, all pair types and full inherited parent replay; 89D by zero-coordinate embedding')
+
+STATUS[89] = ('codes', 'thirteen Z8 fibers with opposite mixed latitudes and exact pointwise normalization; complete pair proof and inherited parent replay')

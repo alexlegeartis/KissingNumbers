@@ -217,3 +217,6 @@ Both the SOTA profile and CI run this complete package replay.
 **17 November 2026: twelve punctured Z8 fibers.** **12,884,901,888 in 88D**, +3,294,110,112 (+34.34659%) over the preceding repository bound. The same bound improves 89D by zero-coordinate embedding. [Complete exact parent, population, pair-type and injectivity proof](verifications/improved/dim88-89-z8-prefix-anticode/); no exhaustive worldwide-priority claim.
 
 Run `python verifications/improved/dim88-89-z8-prefix-anticode/verify.py`.
+
+**17 November 2026: mixed-latitude Z8 fibers in 89D.** **13,958,643,714**, +1,073,741,826 (about +8.33333%) over the twelve-fiber embedding. Thirteen fibers with two opposite nonzero heights plus two pure poles, exact pointwise normalization and full inherited parent replay. [Independent complete proof](verifications/improved/dim88-89-z8-prefix-anticode/mixed89/AUDIT.md); no exhaustive worldwide-priority claim.
+

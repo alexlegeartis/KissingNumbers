@@ -9,7 +9,7 @@ Verified construction lower bounds in **70 dimensions**, with exact proof packag
 
 [Weekly history](#recent-updates) · [Construction and verification guide](RESEARCH_GUIDE.md) · [Replay coverage](SOTA_VERIFY.md) · [Sphere-packing companion](https://github.com/alexlegeartis/SpherePackings)
 
-The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over the preceding repository result), also valid in 89D by embedding.
+The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over the preceding repository result), also valid in 89D by embedding. Mixed latitudes then raise 89D to **13,958,643,714** (about +8.33333% over that embedding).
 
 ## Results and construction history
 
@@ -79,7 +79,7 @@ The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over t
 | 86 | 6 218 177 532 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [14D tail](common/published.py) *(derived)* | **6 228 511 388** | **SOTA** | +0.166188% | — | updated 2026-11-17 | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) | — |
 | 87 | 6 218 178 164 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [15D tail](common/published.py) *(derived)* | **7 266 268 830** | **SOTA** | +16.855269% | — | updated 2026-11-17 | [Compressed ternary fibers, nonlinear phases and pure-head roots](verifications/improved/dim87-89-hexagonal-phase-unions/) | — |
 | 88 | 6 218 179 920 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [16D tail](common/published.py) *(derived)* | **12 884 901 888** | **SOTA** | +107.213398% | — | updated 2026-11-17 | [Twelve punctured Z8 fibers](verifications/improved/dim88-89-z8-prefix-anticode/) | — |
-| 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **12 884 901 888** | **SOTA** | +107.213351% | — | updated 2026-11-17 | [Twelve punctured Z8 fibers (zero-coordinate embedding)](verifications/improved/dim88-89-z8-prefix-anticode/) | — |
+| 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **13 958 643 714** | **SOTA** | +124.481130% | — | updated 2026-11-17 | [Thirteen mixed-latitude Z8 fibers](verifications/improved/dim88-89-z8-prefix-anticode/mixed89/) | — |
 | 90 | 6 218 183 254 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [18D tail](common/published.py) *(derived)* | **21 943 640 934** | **SOTA** | +252.894729% | — | updated 2026-11-17 | [Nonlinear hexagonal phase layers](verifications/improved/dim90-92-hexagonal-phase-layers/) | — |
 | 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **22 359 345 896** | **SOTA** | +259.579793% | — | updated 2026-11-17 | [Direct linear-phase latitude layers](verifications/improved/dim91-92-direct-latitude-layers/) | — |
 | 92 | 8 589 934 592 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **29 797 911 144** | **SOTA** | +246.893342% | — | updated 2026-11-17 | [Four-row partition heads with RS/root augmentation](verifications/improved/dim92-four-row-partition-heads/) | — |

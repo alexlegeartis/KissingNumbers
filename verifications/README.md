@@ -13,7 +13,7 @@ file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
-| [`dim88-89-z8-prefix-anticode`](improved/dim88-89-z8-prefix-anticode/) | 88–89 | Twelve punctured Z8 fibers; 89D by embedding |
+| [`dim88-89-z8-prefix-anticode`](improved/dim88-89-z8-prefix-anticode/) | 88–89 | Punctured Z8 fibers; 89D by thirteen mixed-latitude fibers |
 | [`dim92-four-row-partition-heads`](improved/dim92-four-row-partition-heads/) | 92 | Four-row partition heads with RS/root augmentation |
 | [`dim87-89-hexagonal-phase-unions`](improved/dim87-89-hexagonal-phase-unions/) | 87–89 | Compressed ternary fibers, nonlinear phases and pure-head roots |
 | [`dim92-two-alphabet-fibers`](improved/dim92-two-alphabet-fibers/) | 92 | Two Gray alphabets, D4 heads and compatible sparse layers |

@@ -1,4 +1,6 @@
-# Twelve punctured Z8 fibers in dimensions 88 and 89
+# Punctured Z8 fibers and mixed latitudes in dimensions 88 and 89
+
+Current bounds: **12,884,901,888 in 88D** and **13,958,643,714 in 89D**. The 89D mixed-latitude continuation adds one full fiber and two pure poles (about +8.33333% over the embedding below). See [complete pair-type proof](mixed89/AUDIT.md). The historical twelve-fiber construction follows.
 
 **12,884,901,888 kissing points in 88D**, and the same bound in 89D by appending a zero coordinate. The 88D gain is 3,294,110,112 (+34.34659%) over the preceding repository bound. The 89D gain is 194,746,184 (+1.53462%). No unrestricted optimality or exhaustive worldwide-priority claim is made.
 
@@ -6,9 +8,13 @@ Retain prefixes (0,b), b=0,1,2,3, in each of three crosspolytope alphabets for t
 
 ## Portable replay
 
-Run `python verify.py` (Python 3.10+, NumPy). This first replays the complete inherited Z8 minimum proof, then the independently written integer alphabet, rank, fiber-count and pair-type checker. There is no network or other-package dependency. No 12.9-billion-point enumeration is required: the finite proof exhausts the algebraic pair types.
+Run `python verify.py` (Python 3.10+, NumPy). This first replays the complete inherited Z8 minimum proof, then the independently written mixed-latitude and integer alphabet, rank, fiber-count and pair-type checker. There is no network or other-package dependency. No 12.9-billion-point enumeration is required: the finite proof exhausts the algebraic pair types.
 
 Files and scripts:
+- `mixed89/check.py`: independent rational mixed-radius geometry, population and normalization proof.
+- `mixed89/AUDIT.md`: full 89D proof and comparison.
+- `mixed89/z8_generator.json`: identical source-bound parent input.
+- `mixed89/result.json`: exact finite-check receipt.
 - `verify.py`: full replay driver.
 - `check.py`: independent exact finite geometry and counts.
 - `parent_independent.py`: unchanged inherited parent proof implementation; its unused historical sparse-layer routines are retained for provenance. Invoke via verify.py, not standalone.

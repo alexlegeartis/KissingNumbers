@@ -591,7 +591,7 @@ def _sota_records():
 def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
-        ('dim88-89-z8-prefix-anticode',[88,89],[('verify.py',)],'complete inherited parent replay, exact fibers and punctured geometry; 89D embedding'),
+        ('dim88-89-z8-prefix-anticode',[88,89],[('verify.py',)],'complete inherited parent replay, exact fibers, punctured and mixed-latitude geometry; pointwise normalization'),
         ('dim87-89-hexagonal-phase-unions',[87,88,89],[('verify.py',)],'audited dense/phase inputs and exact independent union geometry'),
         ('dim79-86-norm10-triangle-layers',[79,80,81,82,83,84,85,86],[('verify.py',)],'exact local triangle duals and rational independence recurrence; published Gamma72 shell premises'),
         ('dim70-gamma72-d4-planar-heads',[70],[('verify.py',)],'exact profile geometry and source-bound direct population replay'),

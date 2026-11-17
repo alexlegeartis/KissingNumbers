@@ -24,4 +24,17 @@
     ]
   ]
 }
-PASS complete 88D parent/fiber/geometry proof; 89D by appending zero
+{
+  "status": "PASS exact mixed-radius geometry and population; parent replay required",
+  "count": 13958643714,
+  "pairs": 78,
+  "types": {
+    "(44, '0', '88', '88')": 55,
+    "(44, '0', '272/3', '88')": 22,
+    "(48, '-8/3', '272/3', '272/3')": 1
+  },
+  "baseline": 12884901888,
+  "gain": 1073741826,
+  "percent": 8.333333348855376
+}
+PASS complete 88D parent/fiber/geometry proof; 89D mixed-latitude proof
