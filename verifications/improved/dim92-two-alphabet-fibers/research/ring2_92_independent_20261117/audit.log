@@ -1,0 +1,40 @@
+{
+  "status": "NEW92D GEOMETRY AND COUNTS PASS; pinned parent minimum24 inherited",
+  "dimension": 92,
+  "norm_squared": 96,
+  "max_pair_inner_product": 48,
+  "counts": {
+    "dense": 25769803776,
+    "sparse": 268435456,
+    "RS": 628864,
+    "poles": 184
+  },
+  "total": 26038868280,
+  "gf4_histogram": {
+    "0": 1,
+    "11": 954,
+    "12": 906,
+    "13": 4002,
+    "14": 2448,
+    "15": 14004,
+    "16": 6327,
+    "17": 18900,
+    "18": 5088,
+    "19": 10002,
+    "20": 1566,
+    "21": 1290,
+    "22": 48
+  },
+  "binary_histogram": {
+    "0": 1,
+    "6": 186,
+    "8": 582,
+    "10": 1278,
+    "12": 1264,
+    "14": 630,
+    "16": 137,
+    "18": 18
+  },
+  "parent_generator_sha256": "903c193dbd00c1e7c692e8de62fc4e42c42806dd53365f83ddd73e673dc0fb73",
+  "archive_sha256": "8c79c5a80aeecba467d203c48d194b3efac666e6b8a6219a0ada0c36c1d6f3b1"
+}

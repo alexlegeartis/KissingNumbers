@@ -7,12 +7,13 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-64 packages, one per **construction idea** rather than one per dimension, because several
+65 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
+| [`dim92-two-alphabet-fibers`](improved/dim92-two-alphabet-fibers/) | 92 | Two Gray alphabets, D4 heads and compatible sparse layers |
 | [`dim94-95-e6-e7-head-exchange`](improved/dim94-95-e6-e7-head-exchange/) | 94–95 | E6 and mixed E7 head exchanges with compatible RS/root layers |
 | [`dim93-96-e7-rs-root-augmentation`](improved/dim93-96-e7-rs-root-augmentation/) | 93–96 | E7 head sections, Reed–Solomon supports and compatible roots |
 | [`dim93-96-three-crosspolytope-alphabets`](improved/dim93-96-three-crosspolytope-alphabets/) | 93–96 | three crosspolytope alphabets, exact root-head compression and full parent replay |

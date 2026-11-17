@@ -1,5 +1,7 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
+**17 November 2026: direct 92D two-alphabet construction.** Exact lower bound **26,038,868,280**, with complete head, sparse-code and cross-layer verification. [Independently audited package](verifications/improved/dim92-two-alphabet-fibers/).
+
 **17 November 2026: E6 and mixed E7 head exchanges.** Exact bounds **66,573,830,860 in 94D** and **109,523,504,196 in 95D**. [Complete independently audited package](verifications/improved/dim94-95-e6-e7-head-exchange/).
 
 **17 November 2026: E7 head sections and compatible RS/root layers.** Exact bounds **107,376,020,548 in 95D** and **206,160,530,240 in 96D**, with 93D/94D updates. [Complete independently audited package](verifications/improved/dim93-96-e7-rs-root-augmentation/).
@@ -237,7 +239,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **12 433 498 768** | **SOTA** | +99.953943% | — | updated 2026-11-17 | [Ternary QR48 head compression and sparse augmentation](verifications/improved/dim68-91-lattice-code-continuation/) | — |
 | 90 | 6 218 183 254 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [18D tail](common/published.py) *(derived)* | **21 943 640 934** | **SOTA** | +252.894729% | — | updated 2026-11-17 | [Nonlinear hexagonal phase layers](verifications/improved/dim90-92-hexagonal-phase-layers/) | — |
 | 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **22 359 345 896** | **SOTA** | +259.579793% | — | updated 2026-11-17 | [Direct linear-phase latitude layers](verifications/improved/dim91-92-direct-latitude-layers/) | — |
-| 92 | 8 589 934 592 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **22 835 674 500** | **SOTA** | +165.842240% | — | updated 2026-11-17 | [Direct linear-phase latitude layers](verifications/improved/dim91-92-direct-latitude-layers/) | — |
+| 92 | 8 589 934 592 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **26 038 868 280** | **SOTA** | +203.132323% | — | updated 2026-11-17 | [Two-alphabet fibers with D4 heads and compatible sparse layers](verifications/improved/dim92-two-alphabet-fibers/) | — |
 | 93 | 17 179 869 184 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **42 951 379 608** | **SOTA** | +150.009934% | — | updated 2026-11-17 | [Three alphabets, E7 heads and RS/root layers](verifications/improved/dim93-96-e7-rs-root-augmentation/) | — |
 | 94 | 34 359 738 368 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **66 573 830 860** | **SOTA** | +93.755349% | — | updated 2026-11-17 | [E6 and mixed E7 head exchanges with RS/root layers](verifications/improved/dim94-95-e6-e7-head-exchange/) | — |
 | 95 | 68 719 476 736 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **109 523 504 196** | **SOTA** | +59.377675% | — | updated 2026-11-17 | [E6 and mixed E7 head exchanges with RS/root layers](verifications/improved/dim94-95-e6-e7-head-exchange/) | — |
@@ -552,7 +554,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 64 packages, 70 dimensions
+### `verifications/improved/` — 65 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -860,10 +862,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 137 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 138 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 156 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 157 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

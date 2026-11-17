@@ -147,7 +147,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 89 | 6 218 181 330 | **12 433 498 768** | 2.00 | `codes` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 90 | 6 218 183 254 | **21 943 640 934** | 3.53 | `codes` | [Pless weight 15 words with nonlinear 7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |
 | 91 | 6 218 187 548 | **22 359 345 896** | 3.60 | `codes` | [Direct signed-grid latitudes with exact linear ternary phase codes; published parent minima retained](verifications/improved/dim91-92-direct-latitude-layers/) |
-| 92 | 8 589 934 592 | **22 835 674 500** | 2.66 | `codes` | [Direct signed-grid latitudes with exact linear ternary phase codes; published parent minima retained](verifications/improved/dim91-92-direct-latitude-layers/) |
+| 92 | 8 589 934 592 | **26 038 868 280** | 3.03 | `codes` | [Two Gray alphabets with D4 heads, shortened support/sign codes and compatible Reed-Solomon layers](verifications/improved/dim92-two-alphabet-fibers/) |
 | 93 | 17 179 869 184 | **42 951 379 608** | 2.50 | `codes` | [Three crosspolytope alphabets, E7 head sections and exact Reed-Solomon/root augmentation](verifications/improved/dim93-96-e7-rs-root-augmentation/) |
 | 94 | 34 359 738 368 | **66 573 830 860** | 1.94 | `codes` | [E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation](verifications/improved/dim94-95-e6-e7-head-exchange/) |
 | 95 | 68 719 476 736 | **109 523 504 196** | 1.59 | `codes` | [E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation](verifications/improved/dim94-95-e6-e7-head-exchange/) |
@@ -169,7 +169,8 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `codes` | 63-65 (3) | larger input codes or different layer and section geometry can improve these explicit constructions | affine sign-subcode reconstruction with exact affected geometry and independent replay (dim63-65-affine-reconstruction/verify.py) |
 | `codes` | 67 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | larger compatible support and sign families in shortened, compressed and extended code layers; exact finite replay; broader support and parity choices remain open (dim61-67-compatible-sign-families/verify.py) |
 | `codes` | 87-90 (4) | larger input codes or different layer and section geometry can improve these explicit constructions | ternary QR48 fibers, exact compressed heads and sparse augmentation; parent minimum 15 is a published premise |
-| `codes` | 91-92 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | direct signed-grid latitude layers with exact linear phase codes and independently checked outer membership; inherited published parent minima |
+| `codes` | 91 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | direct signed-grid latitude layers with exact linear phase codes and independently checked outer membership; inherited published parent minima |
+| `codes` | 92 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | two Gray alphabets with D4 heads, independently enumerated shortened support/sign codes and compatible sparse layers |
 | `codes` | 93, 96 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | three crosspolytope alphabets with E7 head sections and exact Reed-Solomon/root augmentation; full inherited parent replay |
 | `codes` | 94-95 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation; full inherited parent replay |
 | `cosets` | 36-37 (2) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | compatible Coxeter-Todd orbit exchange with fresh exact source and replacement geometry; larger simultaneous exchanges remain open (dim36-37-orbit-exchange/verify.py) |
@@ -222,7 +223,8 @@ refreshed table, not more search.
 | 70 | `dim70-71-gamma72-cross-sections` | affine70/verify.py (independent exact cells, dual and geometry) |
 | 73-86 | `dim73-88-gamma72-cosets` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 90 | `dim90-92-hexagonal-phase-layers` | verify.py: all nonlinear phase pairs, outer membership, exact hexagonal geometry and orthogonal complement; published parent minima |
-| 91-92 | `dim91-92-direct-latitude-layers` | verify.py: exact parent membership, linear phase enumeration and latitude geometry; inherited published parent minima |
+| 91 | `dim91-92-direct-latitude-layers` | verify.py: exact parent membership, linear phase enumeration and latitude geometry; inherited published parent minima |
+| 92 | `dim92-two-alphabet-fibers` | verify.py: two-alphabet ring fibers, independently enumerated sparse codes and exact cross-layer geometry |
 | 93, 96 | `dim93-96-e7-rs-root-augmentation` | verify.py: complete E7 head Grams, finite-field evaluation and exact root/sparse cross bounds with full parent replay |
 | 94-95 | `dim94-95-e6-e7-head-exchange` | verify.py: exact E6 and mixed E7 head tables, coordinate isometries and unchanged audited RS/root layers |
 

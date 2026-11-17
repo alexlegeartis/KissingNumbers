@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 137 scripts, including large exact certificate replays
-    python run_all.py --full       # 156 scripts, budget about 10 hours
+    python run_all.py              # 138 scripts, including large exact certificate replays
+    python run_all.py --full       # 157 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -106,6 +106,7 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('92D two-alphabet fibers',os.path.join(V,'improved','dim92-two-alphabet-fibers'),['verify.py'],2.0,True),
     ('94–95D E6 and E7 head exchanges',os.path.join(V,'improved','dim94-95-e6-e7-head-exchange'),['verify.py'],2.0,True),
     ('93–96D E7 and RS/root augmentation',os.path.join(V,'improved','dim93-96-e7-rs-root-augmentation'),['verify.py'],2.0,True),
     ('93–96D three crosspolytope alphabets',os.path.join(V,'improved','dim93-96-three-crosspolytope-alphabets'),['verify.py'],2.0,True),
@@ -450,6 +451,7 @@ JOBS.append(('49-60D pointwise P48 refill: two exact proofs and complete tails',
 # driver, a manifest, or the GPU run's receipt.
 def _sota_jobs(quick=False):
     wanted = {
+        ('dim92-two-alphabet-fibers',('verify.py',)),
         ('dim94-95-e6-e7-head-exchange',('verify.py',)),
         ('dim93-96-e7-rs-root-augmentation',('verify.py',)),
         ('dim93-96-three-crosspolytope-alphabets',('verify.py',)),
@@ -579,6 +581,7 @@ def _sota_records():
 def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
+        ('dim92-two-alphabet-fibers',[92],[('verify.py',)],'independent ring fibers, sparse codes and cross-layer geometry'),
         ('dim94-95-e6-e7-head-exchange',[94,95],[('verify.py',)],'exact E6 and mixed E7 head audit with inherited parent and augmentation replay'),
         ('dim93-96-e7-rs-root-augmentation',[93,94,95,96],[('verify.py',)],'complete E7, RS and root augmentation audit with inherited parent replay'),
         ('dim93-96-three-crosspolytope-alphabets',[93,94,95,96],[('verify.py',)],'exact crosspolytope/root-head geometry, ring fibers and full parent minimum replay'),

@@ -87,6 +87,7 @@ DRIVERS.append(('91–92D direct latitude layers',os.path.join(V,'dim91-92-direc
 DRIVERS.append(('93–96D three crosspolytope alphabets',os.path.join(V,'dim93-96-three-crosspolytope-alphabets'),'final.py'))
 DRIVERS.append(('93–96D E7 and RS/root augmentation',os.path.join(V,'dim93-96-e7-rs-root-augmentation'),'final.py'))
 DRIVERS.append(('94–95D E6 and E7 head exchanges',os.path.join(V,'dim94-95-e6-e7-head-exchange'),'final.py'))
+DRIVERS.append(('92D two-alphabet fibers',os.path.join(V,'dim92-two-alphabet-fibers'),'final.py'))
 TABLES = [(os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
           (os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py')]
 

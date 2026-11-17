@@ -617,3 +617,5 @@ for _d in (93,94,95,96):
 
 for _d in (94,95):
     STATUS[_d]=('codes','E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation; full inherited parent replay')
+
+STATUS[92]=('codes','two Gray alphabets with D4 heads, independently enumerated shortened support/sign codes and compatible sparse layers')

@@ -1,0 +1,75 @@
+{
+  "status": "PASS exact RS17 MDS minors, finite support/sign counts and cross inequalities",
+  "evaluation_generator": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      0,
+      1,
+      4,
+      9,
+      16,
+      8
+    ],
+    [
+      0,
+      1,
+      8,
+      10,
+      13,
+      6
+    ]
+  ],
+  "results": {
+    "92": {
+      "head_dimension": 4,
+      "support_count": 19652,
+      "signs": 32,
+      "rs_count": 628864,
+      "poles": 184,
+      "prior_dense_sparse22": 26038239232,
+      "total": 26038868280
+    },
+    "93": {
+      "head_dimension": 5,
+      "support_count": 24565,
+      "signs": 32,
+      "rs_count": 786080,
+      "poles": 186,
+      "prior_dense_sparse22": 38923141120,
+      "total": 38923927386
+    },
+    "94": {
+      "head_dimension": 6,
+      "support_count": 29478,
+      "signs": 32,
+      "rs_count": 943296,
+      "poles": 188,
+      "prior_dense_sparse22": 56103010304,
+      "total": 56103953788
+    },
+    "95": {
+      "head_dimension": 7,
+      "support_count": 34391,
+      "signs": 32,
+      "rs_count": 1100512,
+      "poles": 190,
+      "prior_dense_sparse22": 77577846784,
+      "total": 77578947486
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# Independent92D kissing audit: PASS
+
+Verified count **26,038,868,280** =25,769,803,776 dense +268,435,456 sparse22 +628,864 RS17 +184 coordinate poles. All points have squared norm96 and every distinct pair has inner product at most48. This is a construction audit, not a novelty or global optimality claim. No publication was performed.
+
+The new verifier is separately written and does not import or execute any producer verifier. It independently reconstructs all24 signed D4 heads, exact within-color prefix Gram preservation, cross-color bound44+4=48, prefix surjectivity and8^10 fiber count. The generator is free because its first12 columns are triangular with odd diagonal.
+
+For sparse22, rather than copying the producer row-elimination procedure, it enumerates the entire original GF4 rank9 span (262144 coefficient tuples), filters coordinate0=0 and punctures0,1; the result has65536 distinct words and minimum weight11. It separately enumerates all16384 binary source coefficient tuples, filters coordinates0,1=0 and punctures them;4096 distinct words have minimum weight6. It independently verifies that the archived shortened generators span exactly these same sets. All pairwise sparse and dense/sparse inequalities use exact fractions and squared positive quantities.
+
+For RS17 it constructs all19652 supports from cubic evaluations, verifies every four-position evaluation determinant modulo17, proves intersection at most3 from the degree3 root bound, checks all32 even signs, and checks ambient indices. All cross-layer/pole inequalities and disjointness follow from the explicit support patterns: dense88body+2head, sparse22body+0head, RS5body+1head, poles1coordinate. No legacy layer is silently included.
+
+Only the previously established Z8 parent homogeneous minimum24 is inherited. Its raw generator SHA256903c193dbd00c1e7c692e8de62fc4e42c42806dd53365f83ddd73e673dc0fb73 is byte-identical to the freshly independently replayed source in three_basis_independent_20261117. That audit replayed16,777,216 Z4 words and759 octads times5489 low-Lee errors; parent_result.json and its exact source input are checked here. This92D audit does not falsely claim to have newly reimplemented that large parent enumeration. The inherited parent is attributed to Duursma,Greferath,Litsyn,Schmidt(2001), DOI10.1109/18.923742.
+
+Every producer SHA256SUMS entry and the final archive hash8c79c5a80aeecba467d203c48d194b3efac666e6b8a6219a0ada0c36c1d6f3b1 was checked. Dense certificate labels/heads are compared with the independently reconstructed set. Run audit.py from the workspace root with numpy available. Exact histograms and counts are in result.json. Dependency paths are retained in the bundled directory structure.
