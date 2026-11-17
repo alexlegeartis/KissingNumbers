@@ -27,3 +27,5 @@ Original production and independent packages are preserved unchanged. Their rese
 Run `python verify.py` (Python3.10+, NumPy and SymPy). It invokes unchanged `hexagon_sparse15_independent_20261117/verify.py`, `hexagon_sparse15_phase7812_20261117/verify.py`, and `hexagon_sparse15_independent_20261117/verify_phase7812.py`, checks the exact Pless generator, replays the retained QR48 generator, and verifies the orthogonal complement and totals. The optional production regeneration script is `hexagon_sparse15_20261117/build.py`; all input code data and original checksums are shipped. Further body lengths included in the original data are finite supporting artifacts, not additional registered claims in this release.
 
 `final.py` supplies the three declared totals to the root registry; it is not a replacement for the proof replay.
+
+This is a retained construction; the direct latitude package supersedes its91D and92D totals.

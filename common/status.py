@@ -605,3 +605,6 @@ STATUS[30] = ('heads', 'exact unions of native-design, Barnes-Wall and joint-ref
 STATUS[71] = ('heads', 'four normalized slices from two Gamma72 shells; other sections remain open, no global optimality claim')
 for _d in range(87,92):
     STATUS[_d] = ('codes', 'ternary QR48 fibers, exact compressed heads and sparse augmentation; parent minimum15 is a published premise')
+
+for _d in (91,92):
+    STATUS[_d] = ('codes', 'direct signed-grid latitude layers with exact linear phase codes and independently checked outer membership; inherited published parent minima')

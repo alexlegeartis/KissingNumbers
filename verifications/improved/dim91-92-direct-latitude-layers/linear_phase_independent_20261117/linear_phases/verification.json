@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "sources": [
+    "https://www.codetables.de/BKLC/BKLC.php?q=3&n=14&k=8",
+    "https://www.codetables.de/BKLC/BKLC.php?q=3&n=13&k=7"
+  ],
+  "polynomial_coefficients_ascending": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1
+  ],
+  "weight_histogram14": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    140,
+    280,
+    508,
+    1120,
+    1344,
+    1540,
+    868,
+    616,
+    112,
+    32
+  ],
+  "weight_histogram13": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    90,
+    160,
+    254,
+    480,
+    480,
+    440,
+    186,
+    88,
+    8
+  ],
+  "phase14": 6561,
+  "phase13": 2187,
+  "addition91": 415704960,
+  "addition92": 892033560,
+  "total91": 22359345896,
+  "total92": 22835674500
+}

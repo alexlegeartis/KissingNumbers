@@ -466,6 +466,12 @@ _driver=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_driver)
 for _row in _driver.results():
     add(_row['dimension'],_row['total'],_package,'verify.py: all nonlinear phase pairs, outer membership, exact hexagonal geometry and orthogonal complement; published parent minima')
 
+_package='dim91-92-direct-latitude-layers'
+_spec=importlib.util.spec_from_file_location('latitude91_92',os.path.join(IMP,_package,'final.py'))
+_driver=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_driver)
+for _row in _driver.results():
+    add(_row['dimension'],_row['total'],_package,'verify.py: exact parent membership, linear phase enumeration and latitude geometry; inherited published parent minima')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
@@ -1995,6 +2001,7 @@ if '--write-results' in sys.argv and not fail:
         return "{:,}".format(x).replace(",", "\u202f")
 
     PKGDOC = {
+        'dim91-92-direct-latitude-layers': 'Direct signed-grid latitudes with exact linear ternary phase codes; published parent minima retained',
         'dim90-92-hexagonal-phase-layers': 'Pless weight15 words with nonlinear7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima',
         'dim68-91-lattice-code-continuation': 'mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises',
         'dim18-bent-hexagon': 'odd BW16 in R^16 plus a hexagon of tiers in R^2 whose three six-set families are bent cosets of RM(1,4) with pairwise-bent sums not summing to zero; tier B rises from 256 to 960',

@@ -83,6 +83,7 @@ DRIVERS.append(('26D radical-orbit continuation', os.path.join(V, 'dim26-27-radi
 DRIVERS.append(('30D exact certificate unions', os.path.join(V, 'dim30-certificate-unions'), 'final.py'))
 DRIVERS.append(('71D and87–91D lattice/code continuation', os.path.join(V, 'dim68-91-lattice-code-continuation'), 'final.py'))
 DRIVERS.append(('90–92D hexagonal phases',os.path.join(V,'dim90-92-hexagonal-phase-layers'),'final.py'))
+DRIVERS.append(('91–92D direct latitude layers',os.path.join(V,'dim91-92-direct-latitude-layers'),'final.py'))
 TABLES = [(os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
           (os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py')]
 

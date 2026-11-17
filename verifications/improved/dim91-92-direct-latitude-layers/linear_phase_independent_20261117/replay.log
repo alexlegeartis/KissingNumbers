@@ -1,0 +1,33 @@
+/workspace/scratch/941a2e823e69/research/latitude14_independent_20261117/check.py:55: SyntaxWarning: invalid decimal literal
+  assert sum((f[a]-f[b])**2for a,b in zip(p,q))>=sum(a!=b for a,b in zip(p,q))
+{
+  "status": "FINITE INPUTS AND UNION GEOMETRY PASS",
+  "phase_pairs": 3402136,
+  "phase_minimum": 5,
+  "each_outer": 31680,
+  "points_per_layer": 82653120,
+  "total91": 22108947176,
+  "total92": 22274253420,
+  "source_generator_sha256": "4c1fc7cd9a6fd1e4bd9a7ca2144bc96b524c52afdf9afea35a484e98f972e637",
+  "premises": [
+    "Previously established Pless generator minimum15",
+    "Previously audited 21943640934-point equatorial union"
+  ]
+}
+GRID EXTENSION PASS {
+  "status": "FINITE INPUTS AND UNION GEOMETRY PASS",
+  "phase_pairs": 3402136,
+  "phase_minimum": 5,
+  "each_outer": 31680,
+  "points_per_layer": 82653120,
+  "total91": 22108947176,
+  "total92": 22274253420,
+  "source_generator_sha256": "4c1fc7cd9a6fd1e4bd9a7ca2144bc96b524c52afdf9afea35a484e98f972e637",
+  "premises": [
+    "Previously established Pless generator minimum15",
+    "Previously audited 21943640934-point equatorial union"
+  ],
+  "corner_phase_pairs": 393828,
+  "corner_added": 24615360,
+  "total92_with_corners": 22298868780
+}

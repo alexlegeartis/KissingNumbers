@@ -1,0 +1,86 @@
+{
+  "phase_count": 2609,
+  "shortening_coordinate": 14,
+  "shortening_value": 1,
+  "phase_distance_histogram": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    60424,
+    167455,
+    242552,
+    577541,
+    766041,
+    698728,
+    514676,
+    284732,
+    80263,
+    9724
+  ],
+  "outer_layers": [
+    {
+      "prefix": [
+        1,
+        0,
+        0
+      ],
+      "file": "outer_100.npy",
+      "count": 31680
+    },
+    {
+      "prefix": [
+        2,
+        0,
+        0
+      ],
+      "file": "outer_200.npy",
+      "count": 31680
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0
+      ],
+      "file": "outer_010.npy",
+      "count": 31680
+    },
+    {
+      "prefix": [
+        0,
+        2,
+        0
+      ],
+      "file": "outer_020.npy",
+      "count": 31680
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1
+      ],
+      "file": "outer_001.npy",
+      "count": 31680
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        2
+      ],
+      "file": "outer_002.npy",
+      "count": 31680
+    }
+  ],
+  "points_per_layer": 82653120,
+  "addition91": 165306240,
+  "addition92": 330612480,
+  "equator": 21943640934,
+  "total91_without_poles": 22108947174,
+  "total92_without_poles": 22274253414,
+  "total91": 22108947176,
+  "total92": 22274253420
+}
