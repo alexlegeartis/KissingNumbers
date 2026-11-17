@@ -82,7 +82,7 @@ Verified construction lower bounds in **70 dimensions**, with exact proof packag
 | 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **22 359 345 896** | **SOTA** | +259.579793% | — | updated 2026-11-17 | [Direct linear-phase latitude layers](verifications/improved/dim91-92-direct-latitude-layers/) | — |
 | 92 | 8 589 934 592 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **29 797 911 144** | **SOTA** | +246.893342% | — | updated 2026-11-17 | [Four-row partition heads with RS/root augmentation](verifications/improved/dim92-four-row-partition-heads/) | — |
 | 93 | 17 179 869 184 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **42 951 379 608** | **SOTA** | +150.009934% | — | updated 2026-11-17 | [Three alphabets, E7 heads and RS/root layers](verifications/improved/dim93-96-e7-rs-root-augmentation/) | — |
-| 94 | 34 359 738 368 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **66 573 830 860** | **SOTA** | +93.755349% | — | updated 2026-11-17 | [E6 and mixed E7 head exchanges with RS/root layers](verifications/improved/dim94-95-e6-e7-head-exchange/) | — |
+| 94 | 34 359 738 368 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **73 016 281 804** | **SOTA** | +112.505349% | — | updated 2026-11-17 | [E6 and mixed E7 head exchanges with RS/root layers](verifications/improved/dim94-95-e6-e7-head-exchange/) | — |
 | 95 | 68 719 476 736 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **109 523 504 196** | **SOTA** | +59.377675% | — | updated 2026-11-17 | [E6 and mixed E7 head exchanges with RS/root layers](verifications/improved/dim94-95-e6-e7-head-exchange/) | — |
 | 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) | **206 160 530 240** | **SOTA** | +50.001528% | — | updated 2026-11-17 | [Three alphabets, E7 heads and RS/root layers](verifications/improved/dim93-96-e7-rs-root-augmentation/) | — |
 
@@ -93,7 +93,7 @@ Expand a week for the main milestones; follow its history link for the full date
 <details>
 <summary>16–22 November 2026 (through 17 November)</summary>
 
-Direct high-dimensional layers strengthen 79–96D, while planar-head compression improves 70D. Mixed-shell sections and code constructions also advance 68–69D and 71D. Cohn’s current table explicitly credits this repository in 18D and 25–46D.
+A Gram-dominated E6 assignment strengthens 94D to 73,016,281,804 points. Direct high-dimensional layers strengthen 79–96D, while planar-head compression improves 70D. Mixed-shell sections and code constructions also advance 68–69D and 71D. Cohn’s current table explicitly credits this repository in 18D and 25–46D.
 
 [Full weekly history and verification links](HISTORY.md#week-2026-11-16).
 

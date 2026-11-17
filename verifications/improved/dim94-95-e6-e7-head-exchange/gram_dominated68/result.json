@@ -1,0 +1,9 @@
+{
+  "status": "PASS fresh head and augmentation arithmetic",
+  "candidate_sha256": "de956543b714631172ccde72301b6312031a1d8f03cd2a9bfa19a881d319e4c3",
+  "pairs": 2278,
+  "count": 73016281804,
+  "rs": 1835008,
+  "roots": 2764,
+  "parent": "Full published parent replay separately passed; parent proof reviewed, not new enumeration algorithm"
+}

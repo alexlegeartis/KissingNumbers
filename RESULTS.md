@@ -149,7 +149,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 91 | 6 218 187 548 | **22 359 345 896** | 3.60 | `codes` | [Direct signed-grid latitudes with exact linear ternary phase codes; published parent minima retained](verifications/improved/dim91-92-direct-latitude-layers/) |
 | 92 | 8 589 934 592 | **29 797 911 144** | 3.47 | `codes` | [Four-row partition heads with three crosspolytope alphabets and compatible Reed-Solomon/root layers](verifications/improved/dim92-four-row-partition-heads/) |
 | 93 | 17 179 869 184 | **42 951 379 608** | 2.50 | `codes` | [Three crosspolytope alphabets, E7 head sections and exact Reed-Solomon/root augmentation](verifications/improved/dim93-96-e7-rs-root-augmentation/) |
-| 94 | 34 359 738 368 | **66 573 830 860** | 1.94 | `codes` | [E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation](verifications/improved/dim94-95-e6-e7-head-exchange/) |
+| 94 | 34 359 738 368 | **73 016 281 804** | 2.13 | `codes` | [E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation](verifications/improved/dim94-95-e6-e7-head-exchange/) |
 | 95 | 68 719 476 736 | **109 523 504 196** | 1.59 | `codes` | [E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation](verifications/improved/dim94-95-e6-e7-head-exchange/) |
 | 96 | 137 438 953 472 | **206 160 530 240** | 1.50 | `codes` | [Three crosspolytope alphabets, E7 head sections and exact Reed-Solomon/root augmentation](verifications/improved/dim93-96-e7-rs-root-augmentation/) |
 

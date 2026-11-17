@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: direct high-dimensional layers (through 17 November)</summary>
 
+**17 November 2026: Gram-dominated E6 heads in 94D.** A 68-head assignment gives **73,016,281,804** kissing points, 9.67715% above the preceding 62-head construction. The fresh complete parent replay and separately authored head/augmentation checks pass. [Proof and scope](verifications/improved/dim94-95-e6-e7-head-exchange/). No exhaustive worldwide-priority claim is made.
+
 **17 November 2026: exact triangle-sensitive norm-ten layers in79–86D.** Eight independently verified kissing-number improvements, each small relative to the existing multi-billion-point bounds. [Counts, source premises and complete replay](verifications/improved/dim79-86-norm10-triangle-layers/). These are existence results, without a full selected-coordinate list or a worldwide-priority guarantee.
 
 **17 November 2026: 70D planar-head compression.** At least **1,361,134,720** kissing points, +148,608 over the previous repository construction. [Exact geometry and independently replayed populations](verifications/improved/dim70-gamma72-d4-planar-heads/). This is a small verified gain, not a worldwide-priority assertion.

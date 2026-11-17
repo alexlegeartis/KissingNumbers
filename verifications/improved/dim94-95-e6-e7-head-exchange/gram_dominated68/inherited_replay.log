@@ -1,0 +1,54 @@
+{
+  "full96": 206158430208,
+  "compressed": {
+    "93": 42949672960,
+    "94": 64424509440,
+    "95": 90194313216
+  }
+}
+{
+  "status": "PASS elementary exact geometry/counts and public generator identity; inherited parent minimum24",
+  "counts": {
+    "96": 206158430208,
+    "93": 42949672960,
+    "94": 64424509440,
+    "95": 90194313216
+  }
+}
+PASS full inherited parent minimum replay; source independent implementation reused, not a newly authored parent solver.
+PASS: approved93–96 three-crosspolytope-alphabet bounds and parent minimum replay
+{
+  "status": "PASS exact100-head three-basis95D construction; inheritedZ8 minimum24 explicit",
+  "count": 107374182400,
+  "color_counts": [
+    38,
+    32,
+    30
+  ],
+  "source_sha256": "903c193dbd00c1e7c692e8de62fc4e42c42806dd53365f83ddd73e673dc0fb73",
+  "candidate_sha256": "ee3f1feea993a1a9da8979f4e8df7e2e13685d8cdc4b8d16d6e7b053fca77097"
+}
+{
+  "93": {
+    "rs_count": 1703936,
+    "root_count": 2712,
+    "total": 42951379608
+  },
+  "94": {
+    "rs_count": 1835008,
+    "root_count": 2764,
+    "total": 64426347212
+  },
+  "95": {
+    "rs_count": 1835008,
+    "root_count": 3140,
+    "total": 107376020548
+  },
+  "96": {
+    "rs_count": 2097152,
+    "root_count": 2880,
+    "total": 206160530240
+  }
+}
+{93: 42951379608, 94: 64426347212, 95: 107376020548, 96: 206160530240}
+PASS: approved93–96 E7 and RS/root augmentation bounds

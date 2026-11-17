@@ -629,3 +629,5 @@ STATUS[70] = ('heads', 'D4-profile compression with anisotropic planar heads and
 
 for _n in range(79,87):
     STATUS[_n] = ('heads', 'joint source moments, local triangle bounds and tail families can improve this existence construction; no optimality claim (dim79-86-norm10-triangle-layers/verify.py)')
+
+STATUS[94] = ('codes', '68 Gram-dominated E6 heads with exact RS/root augmentation; full inherited parent minimum replay; no global-optimality claim (dim94-95-e6-e7-head-exchange/gram_dominated68/check.py)')
