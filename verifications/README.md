@@ -7,12 +7,13 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-66 packages, one per **construction idea** rather than one per dimension, because several
+67 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
+| [`dim92-four-row-partition-heads`](improved/dim92-four-row-partition-heads/) | 92 | Four-row partition heads with RS/root augmentation |
 | [`dim87-89-hexagonal-phase-unions`](improved/dim87-89-hexagonal-phase-unions/) | 87–89 | Compressed ternary fibers, nonlinear phases and pure-head roots |
 | [`dim92-two-alphabet-fibers`](improved/dim92-two-alphabet-fibers/) | 92 | Two Gray alphabets, D4 heads and compatible sparse layers |
 | [`dim94-95-e6-e7-head-exchange`](improved/dim94-95-e6-e7-head-exchange/) | 94–95 | E6 and mixed E7 head exchanges with compatible RS/root layers |

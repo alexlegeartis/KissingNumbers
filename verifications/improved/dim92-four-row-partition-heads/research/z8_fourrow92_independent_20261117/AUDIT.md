@@ -1,0 +1,13 @@
+# Independent four-row92D audit: PASS
+
+Verified total **29,797,911,144** =29,796,335,616 dense +1,572,864 RS6 +2664 within-group roots. This replaces, rather than augments, the previous92D dense/sparse construction. No old sparse22 layer is included. No publication is performed here; this audit verifies construction validity, not global optimality or novelty.
+
+The verifier is separately authored and does not import or run the producer verifier. It checks every frozen SHA and the archive hash, matches the parent generator byte-for-byte with the previously independently replayed source, verifies triangular odd pivots and enumerates all4096 first-four input prefixes to confirm surjectivity/fiber8^8.
+
+It independently constructs the three alphabets, checks all internal Gram entries and every cross-alphabet product, checks the three12-axis partitions and all selected-support intersections, reconstructs every one of1776 signed heads and prefixes, and compares their complete set with the source certificate. Within-color Gram matrices are checked by direct integer matrix products; cross-color head products are checked directly and bounded by8. The20 retained blocks contribute at most40 across colors. Within each color the deleted-four-row Gram is exactly preserved. Norm96 and inner-product48 follow.
+
+For the augmentation it independently builds GF16 through a cyclic exponent/log table, verifies inverses and all4096 distributivity triples, and checks every four-evaluation Vandermonde determinant as a nonzero product. It enumerates all49152 RS supports and checks uniqueness/indices, all32 even sign patterns, and the exact counts. Cubic root count gives support intersection<=3. The2664 root vectors are independently enumerated as signed pairs within the six coordinate groups. Their mutual inner products are<=48 because distinct signed2-support roots of norm2 have integer inner product<=1 before scaling by48; RS overlaps are<=1, and dense coordinates have magnitude<=2. All cross inequalities are checked after squaring positive quantities. Support cardinalities24-or-more,6,2 prove layer disjointness.
+
+Only the parent Z8 homogeneous minimum24 is inherited: generator SHA903c193dbd00c1e7c692e8de62fc4e42c42806dd53365f83ddd73e673dc0fb73, Duursma–Greferath–Litsyn–Schmidt(2001), DOI10.1109/18.923742. The referenced independent parent replay checked16,777,216 Z4 words and759 octads against5489 errors each. This audit does not claim to newly reimplement that large enumeration. Its receipt and exact input binding are checked and bundled.
+
+Run audit.py from the workspace root. result.json records exact totals and inputs. Producer archive SHA74265a34180da67093877f3a285534ee17947cfeb7bb443ef2f1278a02bbb90f.

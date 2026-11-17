@@ -1,0 +1,20 @@
+{
+  "status": "INDEPENDENT NEW GEOMETRY AND COUNTS PASS; pinned parent minimum24 inherited",
+  "dimension": 92,
+  "counts": {
+    "dense": 29796335616,
+    "RS": 1572864,
+    "roots": 2664
+  },
+  "total": 29797911144,
+  "supports_by_color": [
+    81,
+    24,
+    6
+  ],
+  "heads": 1776,
+  "prefix_fiber": 16777216,
+  "RS_supports": 49152,
+  "source_archive_sha256": "74265a34180da67093877f3a285534ee17947cfeb7bb443ef2f1278a02bbb90f",
+  "parent_generator_sha256": "903c193dbd00c1e7c692e8de62fc4e42c42806dd53365f83ddd73e673dc0fb73"
+}

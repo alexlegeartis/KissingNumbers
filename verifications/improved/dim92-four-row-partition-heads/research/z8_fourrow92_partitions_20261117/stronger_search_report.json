@@ -1,0 +1,18 @@
+{
+  "fixed_first_color_supports": 81,
+  "maximum_total_supports": 111,
+  "pair_tests": 47227,
+  "partition_count": 15400,
+  "eligible_histogram": {
+    "0": 271,
+    "3": 648,
+    "9": 792,
+    "16": 4131,
+    "11": 3888,
+    "8": 486,
+    "19": 3888,
+    "24": 1296
+  },
+  "symmetry_orbits": 10,
+  "scope": "All balanced3+3+3+3 extra partitions, fixed complete first-color palette; computational search report not an independent optimality audit."
+}

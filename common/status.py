@@ -622,3 +622,5 @@ STATUS[92]=('codes','two Gray alphabets with D4 heads, independently enumerated 
 
 for _d in (87,88,89):
     STATUS[_d]=('codes','compressed ternary fibers with nonlinear hexagonal phases and pure-head roots; exact union proof with inherited parent minima')
+
+STATUS[92]=('codes','four-row partition heads with three crosspolytope alphabets and exact RS/root augmentation')

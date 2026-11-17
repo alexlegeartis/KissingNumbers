@@ -1,0 +1,15 @@
+{
+  "status": "PASS exact alphabets,1776 heads,first4-prefix uniformity,RS field/minors/signs/root geometry; parent minimum24 inherited",
+  "supports_by_color": [
+    81,
+    24,
+    6
+  ],
+  "heads": 1776,
+  "fiber_size": 16777216,
+  "dense_count": 29796335616,
+  "rs_count": 1572864,
+  "root_count": 2664,
+  "total": 29797911144,
+  "parent_generator_sha256": "903c193dbd00c1e7c692e8de62fc4e42c42806dd53365f83ddd73e673dc0fb73"
+}
