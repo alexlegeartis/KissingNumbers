@@ -1,6 +1,6 @@
 > Archived independent pre-integration audit. Development paths below refer to the research workspace. All seven claims are now pinned in data/sections.json; packaging gaps listed below have been resolved by the production verifier.
 
-Historical construction values are retained below. The current92D lower bound is21,943,640,940; see the root registry and dim90-92-hexagonal-phase-layers. No mathematical input is changed.
+Historical construction values are retained below. The current92D lower bound is22,835,674,500; see the root registry and dim91-92-direct-latitude-layers. No mathematical input is changed.
 
 # Independent audit of the seven Z8 row-section claims
 

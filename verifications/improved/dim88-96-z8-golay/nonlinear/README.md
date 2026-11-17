@@ -1,6 +1,6 @@
 # Nonlinear Nordstrom–Robinson sign fibers for Z8-Golay sections
 
-Historical construction values are retained below. The current92D lower bound is21,943,640,940; see the root registry and dim90-92-hexagonal-phase-layers. No mathematical input is changed.
+Historical construction values are retained below. The current92D lower bound is22,835,674,500; see the root registry and dim91-92-direct-latitude-layers. No mathematical input is changed.
 
 ## Verified bounds
 

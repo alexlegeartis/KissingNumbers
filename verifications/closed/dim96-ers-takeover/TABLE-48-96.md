@@ -1,6 +1,6 @@
 **Retained historical comparison.** The earlier bound and source columns are preserved. The current registry column follows [RESULTS.md](../../../RESULTS.md); dimensions 48 and 72 are published input rows rather than registered improvement claims.
 
-Historical construction values are retained below. The current92D lower bound is21,943,640,940; see the root registry and dim90-92-hexagonal-phase-layers. No mathematical input is changed.
+Historical construction values are retained below. The current92D lower bound is22,835,674,500; see the root registry and dim91-92-direct-latitude-layers. No mathematical input is changed.
 
 Historical construction values are retained. Current bounds are in the root registry and the dim68-91-lattice-code-continuation package; no proof input is changed.
 
