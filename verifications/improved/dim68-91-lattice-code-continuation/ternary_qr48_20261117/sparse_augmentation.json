@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "rows": {
+    "88": {
+      "dimension": 88,
+      "norm_squared": 44,
+      "dense_count": 6973568802,
+      "affine_plane_supports": 19626,
+      "axis_points": 176,
+      "sparse_points": 314192,
+      "total": 6973882994,
+      "canonical_supports_sha256": "747e427c137026c7c58ecf406ff36e54440a9a38bad601ef6433c410fd7b5a96"
+    },
+    "89": {
+      "dimension": 89,
+      "norm_squared": 45,
+      "dense_count": 11622614670,
+      "affine_plane_supports": 20458,
+      "axis_points": 178,
+      "sparse_points": 327506,
+      "total": 11622942176,
+      "canonical_supports_sha256": "462a431556c4202d2de71ccd68859dc5d1af8a2a663a3a95cc2d17576ae811b0"
+    },
+    "90": {
+      "dimension": 90,
+      "norm_squared": 45,
+      "dense_count": 20920706406,
+      "affine_plane_supports": 21334,
+      "axis_points": 180,
+      "sparse_points": 341524,
+      "total": 20921047930,
+      "canonical_supports_sha256": "322b3950e9dfb16cb4f3b7af5f9a69aac5dff02759ccc138fe9dd6a05e064a2e"
+    },
+    "91": {
+      "dimension": 91,
+      "norm_squared": 45,
+      "dense_count": 20920706406,
+      "affine_plane_supports": 22254,
+      "axis_points": 182,
+      "sparse_points": 356246,
+      "total": 20921062652,
+      "canonical_supports_sha256": "362cc8db90f3df1c3cc86efd9cb1f8342a864e8c4e54ccdd3cba63864f05c1a5"
+    }
+  },
+  "proof_scope": "Exact support uniqueness plus symbolic norm and inner-product inequalities; dense minimum inherited from QR48 theorem"
+}

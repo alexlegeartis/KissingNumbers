@@ -452,6 +452,14 @@ for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sl
         add(_row['dimension'], _row['total'], _package,
             'verify.py: complete exact coordinates and independent direct-integer module exchange')
 
+# 17 November: independently checked mixed-shell and ternary-code constructions.
+_package = 'dim68-91-lattice-code-continuation'
+_spec = importlib.util.spec_from_file_location('continuation_20261117', os.path.join(IMP, _package, 'final.py'))
+_driver = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_driver)
+for _row in _driver.results():
+    add(_row['dimension'], _row['total'], _package, 'verify.py: exact slice/head geometry, code ranks, design moments and sparse counts; published source minima retained')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
@@ -1981,6 +1989,7 @@ if '--write-results' in sys.argv and not fail:
         return "{:,}".format(x).replace(",", "\u202f")
 
     PKGDOC = {
+        'dim68-91-lattice-code-continuation': 'mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises',
         'dim18-bent-hexagon': 'odd BW16 in R^16 plus a hexagon of tiers in R^2 whose three six-set families are bent cosets of RM(1,4) with pairwise-bent sums not summing to zero; tier B rises from 256 to 960',
         'dim25-lens-heads': '1016 heads in the lens of a minimal vector, no removal shared, plus one non-lattice equator point.  972 are class heads x = u + t- v and the other 44 are exact rationals, and the 44 are a MAXIMUM INDEPENDENT SET of the whole admissible pool rather than heads added one at a time: solving max |x| over the region of each owner against the class core alone gives a pool of 1188 heads, whose greedy answer is the 35 this package used to ship and whose CP-SAT answer is 44',
         'dim26-27-iota-triangles': 'the coset triangle of three norm-6 vectors on every triangle of directions, the side chosen per head; in 26 the second side is the involution image of the first.  On top of it a layer of FREE heads y = +-2v, which remove no equator point and are therefore worth 3 where a class head is worth 2: their conflicts with the class layer concentrate onto about 72 heads, so the deletions are shared and the trade is solved jointly -- 129 free heads for 77 class heads in dimension 27, since improved by B. Lindow to 2090 class heads, 168 axial normals and a 310-head second layer by optimising all three TOGETHER rather than in sequence (contributed, 2026-09-21; the artefact is contributed/dim27-joint-optimised-two-layer/).  In dimension 26 the free heads are given up instead: they are the ONLY thing blocking its second layer, because a free head y = 2v makes <Y,u> = 2<v,u> a multiple of 16, hence 32 the moment <v,u> = 16, above the bar of 24 whatever the geometry.  Over the class heads alone 1188 owners qualify and 324 fit, so dropping all 96 free heads costs 288 and buys 324: +36, and no free head can be put back.  Both dimensions carry a SECOND cap layer at |x|^2 = 3 with |y| = 1, at |x|^2 = 3: such a cap points anywhere (|y||a| = 2), carries the antipodal pair +-y, and the scaled owner sqrt(3)/2 u deletes exactly u, so it is +1 each.  Its direction must clear the twelve first-layer directions, and the cuboctahedron covers at 45 degrees where the hexagon covers at 30, so the bar is <Y,u> <= 32 against 24 -- 3009 admissible owners against 1188, and 284 heads on the three square-face lines against 324 on the three vertex lines of the hexagon.  That layer is a maximum 3-COLOURABLE induced subgraph -- one condition on a line, none across lines.  In dimension 27 it now carries 310 heads (105 + 104 + 101) over 3110 admissible owners.  Beware the ceiling that was once recorded for it: three times a REALISED single-line count is not an upper bound at all, and 299 exceeds both figures (285, 297) that were derived that way',
@@ -2089,6 +2098,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append('17 November 2026: mixed-shell Gamma72 sections and ternary QR48 head compression improve dimensions 71 and 87–91. Exact finite verifiers and source attributions are in verifications/improved/dim68-91-lattice-code-continuation/. Comparisons are against retained repository constructions, not a worldwide-priority audit.')
     out.append('14 November 2026 certificate unions: 248212 in 30D, 32 above the preceding 248180 and 220 above pinned PackingStar. A 52-for-20 exchange and all 30804474366 unordered final pairs are verified independently. See verifications/improved/dim30-certificate-unions/.')
     out.append("")
     out.append('14 November 2026: radical-orbit and E8 head-frame exchanges give 201188 in 26D and 209884 in 27D, respectively 8 and 22 above the pinned PackingStar November 11 release. The 160-for-152 and 238-for-216 exact exchanges and all 20238205078 and 22025541786 unordered final pairs are verified independently. See verifications/improved/dim26-27-radical-orbits/.')

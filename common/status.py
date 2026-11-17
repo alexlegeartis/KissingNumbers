@@ -600,3 +600,8 @@ STATUS[26] = ('heads', 'radical-orbit continuation: 160 additions and 152 remova
 STATUS[27] = ('heads', 'E8 head-frame replacement: 238 additions and 216 removals from PackingStar 209862; complete exact geometry of all 209884 points (dim26-27-radical-orbits/verify.py)')
 
 STATUS[30] = ('heads', 'exact unions of native-design, Barnes-Wall and joint-refill certificates; 52 additions and 20 removals, complete exact geometry of 248212 points (dim30-certificate-unions/verify.py)')
+
+# 17 November finite construction continuation.
+STATUS[71] = ('heads', 'four normalized slices from two Gamma72 shells; other sections remain open, no global optimality claim')
+for _d in range(87,92):
+    STATUS[_d] = ('codes', 'ternary QR48 fibers, exact compressed heads and sparse augmentation; parent minimum15 is a published premise')

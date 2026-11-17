@@ -1,0 +1,34 @@
+Source HTML matrix matches; raw hash: 92daeaf0d93672e82ca5e5bc4479e5775daf59029aa4e983fb464e36ef002044
+{
+  "status": "PASS",
+  "source_gram_entries_matched": 5184,
+  "gram72_canonical_ascii_sha256": "602e1f76be6b3345412d3e76928b0950b085b139aa23f12e375d87d74d16d78e",
+  "Leech_theta_coefficients_through_norm8": [
+    1,
+    0,
+    196560,
+    16773120,
+    398034000
+  ],
+  "norm4_distinct_integer_witnesses": 196560,
+  "type2_parity_classes": 98280,
+  "nonzero_B_fibers": 4095,
+  "type2_classes_per_nonzero_B_fiber": 24,
+  "quadratic_split_per_nonzero_B_fiber": [
+    2048,
+    2048
+  ],
+  "norm8_completion_weights": {
+    "c_norm0": 9828000,
+    "c_norm4": 12800,
+    "c_norm6": 192,
+    "fiber8_table_sum": 9828000,
+    "c_norm16_pure": 1
+  },
+  "Gamma72_norm8_total": 6218175600,
+  "table_sha256": "356cce48ef46e88bf114740aeb1a3afeddc092d1afa326f5225044341bee2037",
+  "premises": [
+    "The published Gamma72 Gram matrix has minimum8.",
+    "The theta series of an even unimodular rootless rank24 lattice is E4^3\u2212720Delta."
+  ]
+}

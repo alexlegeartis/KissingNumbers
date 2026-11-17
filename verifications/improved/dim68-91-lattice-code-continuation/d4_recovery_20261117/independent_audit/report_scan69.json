@@ -1,0 +1,338 @@
+{
+  "status": "PASS",
+  "sha256": "d05673d3241427cbfcbc80c77dbf3e6dab33fd466170c64029061901a3ebe3d2",
+  "dimension": 69,
+  "bound": 780388888,
+  "pair_checks": 136,
+  "rows": [
+    {
+      "h": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "claimed": 128301784,
+      "replayed": 128301784,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 128301784,
+        "nodes": 20845052,
+        "hist": {
+          "4": 5120,
+          "6": 296960,
+          "8": 4844544
+        },
+        "seconds": 2.01593
+      }
+    },
+    {
+      "h": [
+        -2,
+        -2,
+        2,
+        -2
+      ],
+      "claimed": 4487328,
+      "replayed": 4487328,
+      "pure": 5120,
+      "enumeration": {
+        "weighted": 4482208,
+        "nodes": 3630112,
+        "hist": {
+          "4": 40,
+          "6": 16640,
+          "8": 654240
+        },
+        "seconds": 0.195312
+      }
+    },
+    {
+      "h": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "claimed": 128292440,
+      "replayed": 128292440,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 128292440,
+        "nodes": 20848574,
+        "hist": {
+          "4": 5120,
+          "6": 296960,
+          "8": 4844544
+        },
+        "seconds": 2.05215
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        0,
+        0
+      ],
+      "claimed": 128302600,
+      "replayed": 128302600,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 128302600,
+        "nodes": 20845018,
+        "hist": {
+          "4": 5120,
+          "6": 296960,
+          "8": 4844544
+        },
+        "seconds": 1.45168
+      }
+    },
+    {
+      "h": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "claimed": 128299632,
+      "replayed": 128299632,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 128299632,
+        "nodes": 20847450,
+        "hist": {
+          "4": 5120,
+          "6": 296960,
+          "8": 4844544
+        },
+        "seconds": 1.03568
+      }
+    },
+    {
+      "h": [
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "claimed": 128300232,
+      "replayed": 128300232,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 128300232,
+        "nodes": 20845825,
+        "hist": {
+          "4": 5120,
+          "6": 296960,
+          "8": 4844544
+        },
+        "seconds": 1.71636
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        0,
+        -2
+      ],
+      "claimed": 43648432,
+      "replayed": 43648432,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 43648432,
+        "nodes": 12048419,
+        "hist": {
+          "4": 1280,
+          "6": 125952,
+          "8": 2603520
+        },
+        "seconds": 0.679806
+      }
+    },
+    {
+      "h": [
+        2,
+        -2,
+        0,
+        0
+      ],
+      "claimed": 43650656,
+      "replayed": 43650656,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 43650656,
+        "nodes": 12045701,
+        "hist": {
+          "4": 1280,
+          "6": 125952,
+          "8": 2603520
+        },
+        "seconds": 0.676356
+      }
+    },
+    {
+      "h": [
+        1,
+        -3,
+        -1,
+        1
+      ],
+      "claimed": 14200120,
+      "replayed": 14200120,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14200120,
+        "nodes": 6735758,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.361503
+      }
+    },
+    {
+      "h": [
+        2,
+        -2,
+        -2,
+        2
+      ],
+      "claimed": 4491008,
+      "replayed": 4491008,
+      "pure": 5120,
+      "enumeration": {
+        "weighted": 4485888,
+        "nodes": 3630617,
+        "hist": {
+          "4": 40,
+          "6": 16640,
+          "8": 654240
+        },
+        "seconds": 0.199844
+      }
+    },
+    {
+      "h": [
+        -1,
+        -3,
+        1,
+        -1
+      ],
+      "claimed": 14201944,
+      "replayed": 14201944,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14201944,
+        "nodes": 6736132,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.392054
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        2,
+        -2
+      ],
+      "claimed": 14200688,
+      "replayed": 14200688,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14200688,
+        "nodes": 6735619,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.37579
+      }
+    },
+    {
+      "h": [
+        -4,
+        -4,
+        4,
+        -4
+      ],
+      "claimed": 40,
+      "replayed": 40,
+      "pure": 40,
+      "enumeration": {
+        "weighted": 0,
+        "nodes": 20,
+        "hist": {
+          "8": 1
+        },
+        "seconds": 0.0198007
+      }
+    },
+    {
+      "h": [
+        -3,
+        -3,
+        3,
+        -3
+      ],
+      "claimed": 5848,
+      "replayed": 5848,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 5848,
+        "nodes": 77552,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0210093
+      }
+    },
+    {
+      "h": [
+        3,
+        -3,
+        -3,
+        3
+      ],
+      "claimed": 6096,
+      "replayed": 6096,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 6096,
+        "nodes": 77074,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0164865
+      }
+    },
+    {
+      "h": [
+        4,
+        -4,
+        -4,
+        4
+      ],
+      "claimed": 40,
+      "replayed": 40,
+      "pure": 40,
+      "enumeration": {
+        "weighted": 0,
+        "nodes": 20,
+        "hist": {
+          "8": 1
+        },
+        "seconds": 0.0181473
+      }
+    }
+  ],
+  "scope": "Exact rational geometry and saturated affine mapping; direct repeated traversal with exact integer leaves provides lower counts, not completeness. Inherits audited Leech completion weights and published Gamma72 minimum8."
+}

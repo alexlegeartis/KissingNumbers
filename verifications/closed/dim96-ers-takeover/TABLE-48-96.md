@@ -1,5 +1,7 @@
 **Retained historical comparison.** The earlier bound and source columns are preserved. The current registry column follows [RESULTS.md](../../../RESULTS.md); dimensions 48 and 72 are published input rows rather than registered improvement claims.
 
+Historical construction values are retained. Current bounds are in the root registry and the dim68-91-lattice-code-continuation package; no proof input is changed.
+
 | n | Historical tau(n) >= | Historical source | Current registry |
 |---|---|---|---:|
 | 48 | 52 416 000 | Cohn's table: Leech-Sloane 1971 (P_48) | — |
@@ -22,10 +24,10 @@
 | 65 | 335 564 290 | **this work** -- 1,835 added Hamming sign blocks with reusable parity-check spaces; 65D caps replace 68,224 BCH and affine-line owners | 335 817 922 |
 | 66 | 341 994 884 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 342 291 652 |
 | 67 | 355 090 822 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 355 095 446 |
-| 68 | 375 222 168 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 471 886 208 |
+| 68 | 375 222 168 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 471 886 208 (retained) |
 | 69 | 627 822 180 | **this work** -- k-point moment LP with the Gram exhibited in Gamma_72 | 746 325 051 |
 | 70 | 1 249 778 250 | **this work** -- k-point moment LP on cross-sections of Gamma_72 | 1 360 986 112 |
-| 71 | 2 603 658 750 | **this work** -- k-point moment LP on cross-sections of Gamma_72 | 2 603 658 750 |
+| 71 | 2 603 658 750 (retained) | **this work** -- k-point moment LP on cross-sections of Gamma_72 | 2 603 658 750 (retained) |
 | 72 | 6 218 175 600 | Cohn's table: Nebe 2012, J. Reine Angew. Math. 673, 237-247 (Gamma_72) | — |
 | 73 | 6 218 206 932 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 218 206 932 |
 | 74 | 6 218 211 606 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 218 211 606 |

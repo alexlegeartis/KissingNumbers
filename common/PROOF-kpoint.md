@@ -1,5 +1,7 @@
 # Cross-sections of extremal even unimodular lattices: the k-point moment method
 
+Historical construction tables are retained below. The current 17 November 2026 lower bounds are 472,598,888 in 68D and 2,623,578,936 in 71D; see the root registry and the dim68-91-lattice-code-continuation package. No historical proof input has been changed.
+
 This is the mathematics behind two of the claims in this repository, and behind the two
 values it recovers rather than claims:
 
@@ -234,7 +236,7 @@ for the withdrawal this replaced.
 | 47 | 48 | 1 | — | **23 766 960** | 9 741 412 | 2.44 |
 | 46 | 48 | 2 | *u*₁·*u*₂ = 3 | **12 309 600** | 5 318 060 | 2.31 |
 | 46 | 48 | 2 | orthogonal | [10 659 120, 10 697 520] | | |
-| 71 | 72 | 1 | — | **2 603 658 750** | 331 737 984 | 7.85 |
+| 71 | 72 | 1 | — | **2 603 658 750** (retained) | 331 737 984 | 7.85 |
 | 70 | 72 | 2 | *u*₁·*u*₂ = 4 | **1 249 778 250** | 331 737 984 | 3.77 |
 
 **A point of care about the word "exact".** Everything in the table is a **lower bound on

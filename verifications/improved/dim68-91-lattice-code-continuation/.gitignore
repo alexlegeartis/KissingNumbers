@@ -1,0 +1,6 @@
+__pycache__/
+**/count128
+**/affine.input
+**/fiber8_table.bin
+**/replayed_keys.bin
+**/table_report.json

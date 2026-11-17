@@ -1,5 +1,7 @@
 # Dimensions 68 and 69 — cross-sections of Γ₇₂, with the Grams exhibited
 
+Historical construction tables are retained below. The current 17 November 2026 lower bounds are 472,598,888 in 68D and 2,623,578,936 in 71D; see the root registry and the dim68-91-lattice-code-continuation package. No historical proof input has been changed.
+
 **Retained constructions in 68D and 69D.** The [13 November extended-moment proof](../dim68-69-gamma72-extended-moments/) now gives **471,886,208 in 68D** and **746,325,051 in 69D**.
 This package preserves the preceding 471,884,288-point and 689,452,922-point proofs.
 All historical certificates and gains remain unchanged.
@@ -18,7 +20,7 @@ See [the self-contained affine package](affine68_69/). Run `python affine68_69/v
 
 | dimension | 10 November affine lower bound | preceding repository bound | historical gain | current registry |
 |---|---:|---:|---:|---:|
-| 68 | **471 366 656** | 375 222 168 | 96 144 488 | 471 886 208 |
+| 68 | **471 366 656** (retained) | 375 222 168 | 96 144 488 | 471 886 208 (retained) |
 | 69 | **689 442 146** | 627 822 180 | 61 619 966 | 746 325 051 |
 
 The remaining text records the historical central-section method. Statements below that restrict progress to a larger k concern that former central-cell objective, not the affine unions.
@@ -295,7 +297,7 @@ everything a better method could win without changing the Gram at all:
 
 | dim | k | claimed (LP minimum) | LP maximum | room |
 |---|---|---|---|---|
-| 71 | 1 | 2 603 658 750 | 2 603 658 750 | **0** — the one-point system has a unique solution |
+| 71 | 1 | 2 603 658 750 (retained) | 2 603 658 750 (retained) | **0** — the one-point system has a unique solution |
 | 70 | 2 | 1 249 778 250 | 1 250 506 440 | +728 190, **0.058%** |
 | 69 | 3 | 627 822 180 | 663 905 373 | +36 083 193, **5.75%** |
 | 68 | 4 | 361 275 480 | 406 583 317 | +45 307 837, **12.5%** |

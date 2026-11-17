@@ -7,12 +7,13 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-58 packages, one per **construction idea** rather than one per dimension, because several
+59 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
+| [`dim68-91-lattice-code-continuation`](improved/dim68-91-lattice-code-continuation/) | 68–69,71,87–91 | exact lattice-fiber and ternary-code constructions; finite checks and explicit source premises |
 | [`dim30-certificate-unions`](improved/dim30-certificate-unions/) | 30 | **248,212**, +32 over the retained native design and +220 over PackingStar; complete exact final geometry and independent 52-for-20 exchange |
 | [`dim30-leech-sloane-section`](improved/dim30-leech-sloane-section/) | 30 | current 248,084; 92 above PackingStar; complete final geometry and independent exact section and exchange reconstruction |
 | [`dim61-62-66-affine-reconstruction`](improved/dim61-62-66-affine-reconstruction/) | 61, 62, 66 | exact affine sign subcodes and independent replay |

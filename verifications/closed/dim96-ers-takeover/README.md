@@ -1,5 +1,7 @@
 # Dimension 96 — where Edel–Rains–Sloane takes over, and the cap construction cannot follow
 
+Historical construction values are retained. Current bounds are in the root registry and the dim68-91-lattice-code-continuation package; no proof input is changed.
+
 **Retained historical analysis.** The 28 October nonlinear-code review corrects the former
 linear-only comparison: DGLS (2001) already gives 2^37 sign points in 96D.
 The current construction and credit are in
@@ -177,7 +179,7 @@ level 0; those historical ratios are unchanged by later registry improvements.
 | 63 | 67 365 752 | **134 217 728** = 2²⁷ | [63,27,16] | **beaten, by a factor 1.99** | 184 415 700 |
 | 60 | 57 477 123 | 33 554 432 = 2²⁵ | [60,25,15] | ×1.71 of margin | 58 631 571 |
 | 61 | 59 898 694 | 33 554 432 = 2²⁵ | [60,25,15] | ×1.79 | 88 979 562 |
-| 68 | 361 275 480 | 268 435 456 = 2²⁸ | [64,28,16] | ×1.35 | 471 886 208 |
+| 68 | 361 275 480 | 268 435 456 = 2²⁸ | [64,28,16] | ×1.35 | 471 886 208 (retained) |
 | 95 | 6 473 065 046 | 4 294 967 296 = 2³² | [95,32,24] | ×1.51 | 77 565 848 332 |
 
 ⌈62/4⌉ = ⌈63/4⌉ = 16, and both codes are in the table, so **the sign vectors of [62,26,16]

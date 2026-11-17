@@ -1,0 +1,63 @@
+{
+  "dimension": 68,
+  "bound": 472598888,
+  "fibers": [
+    {
+      "h": [
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "count": 128302600
+    },
+    {
+      "h": [
+        -2,
+        0,
+        0,
+        0
+      ],
+      "count": 128301784
+    },
+    {
+      "h": [
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "count": 128299632
+    },
+    {
+      "h": [
+        -2,
+        0,
+        0,
+        -2
+      ],
+      "count": 43647728
+    },
+    {
+      "h": [
+        -2,
+        2,
+        0,
+        0
+      ],
+      "count": 43650656
+    },
+    {
+      "h": [
+        -4,
+        2,
+        0,
+        -2
+      ],
+      "count": 396488
+    }
+  ],
+  "maximal_cliques_checked": 3817,
+  "scope": "Exact geometry, lowercounts, one higher-profile augmentation",
+  "embedding_index": 16
+}

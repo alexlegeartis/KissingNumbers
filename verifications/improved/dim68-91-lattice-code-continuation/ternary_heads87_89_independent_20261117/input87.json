@@ -1,0 +1,115 @@
+{
+  "pattern_count": 9,
+  "rows": [
+    {
+      "pattern": [
+        0,
+        0,
+        0
+      ],
+      "root": [
+        -1,
+        -1,
+        0
+      ]
+    },
+    {
+      "pattern": [
+        2,
+        1,
+        0
+      ],
+      "root": [
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "pattern": [
+        2,
+        0,
+        0
+      ],
+      "root": [
+        -1,
+        0,
+        -1
+      ]
+    },
+    {
+      "pattern": [
+        1,
+        0,
+        0
+      ],
+      "root": [
+        0,
+        -1,
+        -1
+      ]
+    },
+    {
+      "pattern": [
+        1,
+        1,
+        0
+      ],
+      "root": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "pattern": [
+        2,
+        2,
+        0
+      ],
+      "root": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "pattern": [
+        0,
+        1,
+        0
+      ],
+      "root": [
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "pattern": [
+        1,
+        2,
+        0
+      ],
+      "root": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "pattern": [
+        0,
+        2,
+        0
+      ],
+      "root": [
+        0,
+        1,
+        1
+      ]
+    }
+  ],
+  "dense_bound": 6973568802,
+  "scope": "Exact pairwise head compression geometry; each prefix fiber has3^18 words"
+}

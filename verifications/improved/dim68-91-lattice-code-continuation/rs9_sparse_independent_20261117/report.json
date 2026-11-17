@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "input_sha256": "2d1af5edf7d83024a5b84b94c0c22fddc21555a39f870054d44e1662184d55a3",
+  "all_extended_codewords_checked": 531441,
+  "extended_minimum_distance": 5,
+  "extended_weight_histogram": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    2016,
+    6720,
+    40320,
+    113760,
+    205040,
+    163584
+  ],
+  "sign_codewords": 64,
+  "rows": [
+    {
+      "dimension": 87,
+      "infinity_alphabet": 6,
+      "supports": 354294,
+      "signs_per_support": 64,
+      "dense": 6973568802,
+      "sparse": 22689780,
+      "total": 6996258582
+    },
+    {
+      "dimension": 88,
+      "infinity_alphabet": 7,
+      "supports": 413343,
+      "signs_per_support": 64,
+      "dense": 9298091736,
+      "sparse": 26469264,
+      "total": 9324561000
+    },
+    {
+      "dimension": 89,
+      "infinity_alphabet": 8,
+      "supports": 472392,
+      "signs_per_support": 64,
+      "dense": 12397455648,
+      "sparse": 30248752,
+      "total": 12427704400
+    },
+    {
+      "dimension": 90,
+      "infinity_alphabet": 9,
+      "supports": 531441,
+      "signs_per_support": 64,
+      "dense": 20920706406,
+      "sparse": 34028244,
+      "total": 20954734650
+    },
+    {
+      "dimension": 91,
+      "infinity_alphabet": 9,
+      "supports": 531441,
+      "signs_per_support": 64,
+      "dense": 20920706406,
+      "sparse": 34028604,
+      "total": 20954735010
+    }
+  ]
+}

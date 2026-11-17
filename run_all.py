@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 131 scripts, including large exact certificate replays
-    python run_all.py --full       # 150 scripts, budget about 10 hours
+    python run_all.py              # 132 scripts, including large exact certificate replays
+    python run_all.py --full       # 151 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -106,6 +106,7 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('71D and87–91D lattice/code continuation', os.path.join(V, 'improved', 'dim68-91-lattice-code-continuation'), ['verify.py'], 5.0, True),
     ('30D certificate unions: complete exact geometry and integer exchange',
      os.path.join(V, 'improved', 'dim30-certificate-unions'), ['verify.py'], 3.0, True),
     ('30D certificate unions: semantic rejection controls',
@@ -444,6 +445,7 @@ JOBS.append(('49-60D pointwise P48 refill: two exact proofs and complete tails',
 # driver, a manifest, or the GPU run's receipt.
 def _sota_jobs(quick=False):
     wanted = {
+        ('dim68-91-lattice-code-continuation', ('verify.py',)),
         ('dim30-certificate-unions', ('verify.py',)),
         ('dim30-certificate-unions', ('negative_controls.py',)),
         ('dim26-27-radical-orbits', ('verify.py',)),
@@ -567,6 +569,7 @@ def _sota_records():
 def _sota_coverage(jobs, results=None):
     """Report scope per dimension, including steps absent from the selected profile."""
     groups = [
+        ('dim68-91-lattice-code-continuation', [68,69,71,87,88,89,90,91], [('verify.py',)], 'exact rational shell/head geometry, generator ranks and sparse counts; published minimum and design inputs retained'),
         ('dim30-certificate-unions', [30], [('verify.py',), ('negative_controls.py',)],
          'complete exact geometry of 248212 points and 30804474366 unordered pairs; pinned 52-for-20 exchange and separate integer delta checks'),
         ('dim26-27-radical-orbits', [26,27], [('verify.py',), ('negative_controls.py',)],

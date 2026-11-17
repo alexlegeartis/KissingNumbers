@@ -1,5 +1,7 @@
 # Sparse filling and parity-compatible central sections
 
+Historical construction values are retained. Current bounds are in the root registry and the dim68-91-lattice-code-continuation package; no proof input is changed.
+
 This is a retained construction. Current bounds in 61–67D use
 [larger compatible sign families](../../../dim61-67-compatible-sign-families/);
 68D uses [extended Gamma72 moments](../../../dim68-69-gamma72-extended-moments/).
@@ -15,7 +17,7 @@ literature survey. The parent codes retain their existing distance proofs.
 | 63 | 182,537,988 | 130,560 | **184,415,700** |
 | 66 | 338,302,340 | 10,240 | **342,291,652** |
 | 67 | 351,420,806 | 20,480 | **355,095,446** |
-| 68 | 371,552,152 | 30,720 | **471,886,208** |
+| 68 | 371,552,152 | 30,720 | **471,886,208** (retained) |
 
 ## The weight-eight bridge in 61D
 

@@ -1,11 +1,13 @@
 # Dimensions 68 and 69: Gamma72 counts from an extended normal system
 
+Historical construction tables are retained below. The current 17 November 2026 lower bounds are 472,598,888 in 68D and 2,623,578,936 in 71D; see the root registry and the dim68-91-lattice-code-continuation package. No historical proof input has been changed.
+
 This package proves the following lower bounds from the published properties of
 Nebe's extremal 72-dimensional lattice:
 
 | Dimension | Previous repository bound | This package | Increase |
 | --- | ---: | ---: | ---: |
-| 68 | 471,884,288 | **471,886,208** | 1,920 |
+| 68 | 471,884,288 (retained) | **471,886,208** (retained) | 1,920 |
 | 69 | 743,522,304 | **746,325,051** | 2,802,747 |
 
 The 69D improvement is approximately 0.377%. These are lower bounds on the kissing
@@ -190,7 +192,7 @@ orientation has an integer population at least the ceiling of that value.
 
 | Dimension | Exact dual value | Integer source population | Added poles | Final bound |
 | --- | ---: | ---: | ---: | ---: |
-| 68 | 471,886,208 | 471,886,208 | 0 | 471,886,208 |
+| 68 | 471,886,208 (retained) | 471,886,208 (retained) | 0 | 471,886,208 (retained) |
 | 69 | 6,716,925,440 / 9 | 746,325,049 | 2 | 746,325,051 |
 
 The ceiling in the second row is essential. Two further valid points are then

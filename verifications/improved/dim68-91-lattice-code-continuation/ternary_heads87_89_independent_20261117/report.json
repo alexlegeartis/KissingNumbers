@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "n": 87,
+      "input_sha256": "56bc28f5641628611a0246b22f574c70ecd15dbe78c1763eb1273ec9e8c5720c",
+      "patterns": 9,
+      "all_pair_types": 45,
+      "fiber_count": 387420489,
+      "dense": 6973568802,
+      "supports": 18827,
+      "sparse": 301406,
+      "total": 6973870208
+    },
+    {
+      "n": 89,
+      "input_sha256": "7f4b94d67c5896ae9b39c4b6ebc6cfcc5aa12551547956bfa2f8d5019638c1b6",
+      "patterns": 16,
+      "all_pair_types": 136,
+      "fiber_count": 387420489,
+      "dense": 12397455648,
+      "supports": 20458,
+      "sparse": 327506,
+      "total": 12397783154
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "input_sha256": "3439267ca1dbb7d43149760db292042c47a9e4cbe4f1dbf7f050d88290c1a4d5",
+  "prefix_projection_rank": 6,
+  "head_pairs": 66,
+  "fiber_count": 387420489,
+  "dense": 9298091736,
+  "sparse": 314192,
+  "total": 9298405928,
+  "source": "Published QR48 minimum15, independently replayed generator rank and shortening"
+}

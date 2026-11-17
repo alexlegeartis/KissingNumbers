@@ -1,0 +1,13 @@
+# Independent audit: D4 embedding sweep, 68 and 69 dimensions
+
+PASS: kissing-number lower bounds 472,598,888 in dimension 68 and 780,388,888 in dimension 69. Frozen source hashes are in SCAN_FROZEN_HASHES.json. This is a construction validation, not an exhaustive world-priority check.
+
+The auditor directly re-enumerated all six selected fibers of embedding 16 and all sixteen selected fibers of embedding 25. All populations matched the frozen input exactly. No antipodal count reuse was used. See replay_scan.py, report_scan68.json, report_scan69.json and corresponding logs. The enumeration traversal reuses the previously inspected algorithm, with exact signed 128-bit leaf norm accumulation, but independently rebuilds each affine input. It is not a second exhaustive enumeration algorithm.
+
+For each embedding, the Leech Gram equals the inherited audited source. Integral normals N obey 2 N F N^T = R R^T, where R is the fixed four-dimensional normal-coordinate matrix. The integer kernel K satisfies K F N^T = 0. A solve minor and the complementary K minor have determinant plus or minus one, proving saturated and unique affine coordinates. Its quadratic form is exactly K F K^T.
+
+The profile h has projection h/4, hence residual squared norm r=8-|h|^2/16, and physical pairings R h/4. Each source residual is mapped to (sqrt((8-t^2)/r) b,t); for dimension 68 all heights t are zero and the extra zero coordinate is omitted. All scales are positive. Distinct source minima have scalar product at most 4. For each unordered same- or cross-fiber type, the verifier checks the stronger exact rational condition c=4-tu>=0 and c^2 >= a*b*(4-h.k/16)^2. This proves every resulting scalar product at most 4 on the norm-8 sphere, including noncoincidence. There are 21 checks for the six-fiber 68D construction and 136 for the sixteen-fiber 69D construction. Profiles are distinct; neither candidate includes head poles.
+
+Population scope remains lower bounds. Floating-point LDL pruning may omit leaves, but exact integer leaf norms and injective integer coordinates prevent overcounting. Nonnegative Leech completion weights are inherited from the previously audited Gamma72 fiber theorem; pure c=2v, v^2=4 contributions are disjoint from the weighted c^2<=8 enumeration. The published minimum-8 property of Nebe's Gamma72 remains a source premise. No exhaustive shell completeness or newly independent proof of that published minimum is asserted here.
+
+The prior audited 69D candidate 780,384,888 is improved by 4,000 points. The current 68D and 69D figures must not be described as lattice kissing configurations: these are projected/rescaled spherical configurations.

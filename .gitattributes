@@ -25,8 +25,8 @@ research/**/data/*.log whitespace=-blank-at-eol
 research/partial_orbits_20261104/evidence/*.log whitespace=-blank-at-eol
 research/compute19_21_20261104/diagnostics/*.search whitespace=-blank-at-eof
 
-# Census refreshed 2026-11-13 after the 26–31D module campaign.
-# NOTE: this tree contains BOTH line endings -- 3149 text files use LF and 247 use CRLF,
+# Census refreshed 2026-11-17 after the lattice/code continuation.
+# NOTE: this tree contains BOTH line endings -- 3206 text files use LF and 247 use CRLF,
 # an artefact of two write paths used while the repository was assembled.  No SOURCE OR
 # DOCUMENTATION file mixes them within itself.  Both statements are about the ten extensions
 # audit.py check 5k opens -- .py .md .txt .cff .json .tex .bib .yml .cfg .out -- and that is
@@ -71,3 +71,6 @@ verifications/improved/dim49-60-p48-pointwise-refill/source/coordinates841.txt w
 
 # Preserve the historical CRLF midpoint-package README when updating current bounds.
 verifications/improved/dim26-27-midpoint-replacements/README.md whitespace=cr-at-eol
+
+# Preserve the existing CRLF historical proof document.
+common/PROOF-kpoint.md whitespace=cr-at-eol

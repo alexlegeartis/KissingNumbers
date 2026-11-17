@@ -1,5 +1,7 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
+**17 November 2026: mixed-shell sections and ternary-code head compression.** New verified construction lower bounds in **68–69D, 71D and 87–91D**, including **20,961,198,018 in 90D**, 237.095212% above the attributed external-source baseline (a derived orthogonal sum). [Methods, exact checks and source attributions](verifications/improved/dim68-91-lattice-code-continuation/). Published source premises remain explicit; no exhaustive worldwide-priority claim is made.
+
 **14 November 2026 — combining certificates improves 30D to 248,212.** Exact unions add 32 over the preceding record and 220 over pinned PackingStar. All **30,804,474,366** final point pairs are checked independently. [Coordinates and complete proof](verifications/improved/dim30-certificate-unions/).
 
 **14 November 2026 — 26D and 27D reclaimed against PackingStar.** Radical-orbit and E8 head-frame exchanges give **201,188 in 26D (+8)** and **209,884 in 27D (+22)** over its November 11 release. Independent exact verification covers all **20,238,205,078** and **22,025,541,786** unordered pairs. [Coordinates, exchanges and full proofs](verifications/improved/dim26-27-radical-orbits/).
@@ -202,10 +204,10 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 65 | 331 737 986 | [ERS64](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **335 817 922** | **SOTA** | +1.2299% | — | updated 2026-11-13 | [Construction and exact proof](verifications/improved/dim63-65-affine-reconstruction/) | — |
 | 66 | 331 737 990 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **342 291 652** | **SOTA** | +3.1813% | — | updated 2026-11-13 | [Construction and exact proof](verifications/improved/dim61-62-66-affine-reconstruction/) | — |
 | 67 | 331 737 996 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **355 095 446** | **SOTA** | +7.0409% | — | since 2026-11-13 | [Compatible affine sign classes](verifications/improved/dim61-67-compatible-sign-families/) | — |
-| 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **471 886 208** | **SOTA** | +42.2467% | — | updated 2026-11-13 | [Extended Gamma72 moments](verifications/improved/dim68-69-gamma72-extended-moments/) | — |
-| 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **746 325 051** | **SOTA** | 2.25x | — | updated 2026-11-13 | [Extended moments and head poles](verifications/improved/dim68-69-gamma72-extended-moments/) | — |
+| 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **472 598 888** | **SOTA** | +42.461494% | — | updated 2026-11-17 | [Exact Gamma72 D4 fiber rescaling](verifications/improved/dim68-91-lattice-code-continuation/) | — |
+| 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **780 388 888** | **SOTA** | +135.242549% | — | updated 2026-11-17 | [Exact Gamma72 D4 fiber rescaling](verifications/improved/dim68-91-lattice-code-continuation/) | — |
 | 70 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **1 360 986 112** | **SOTA** | 4.10x | — | updated 2026-11-10 | [Gamma72 affine slices](verifications/improved/dim70-71-gamma72-cross-sections/affine70/) | — |
-| 71 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **2 603 658 750** | **SOTA** | 7.85x | — | since 2026-08-30 | [Gamma72 section](verifications/improved/dim70-71-gamma72-cross-sections/) | — |
+| 71 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **2 623 578 936** | **SOTA** | +690.858769% | — | updated 2026-11-17 | [Mixed-shell Gamma72 sections](verifications/improved/dim68-91-lattice-code-continuation/) | — |
 | 73 | 6 218 175 602 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [1D tail](common/published.py) *(derived)* | **6 218 206 932** | **SOTA** | +0.000504% | — | since 2026-08-30 | [Gamma72 cosets plus caps](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 74 | 6 218 175 606 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [2D tail](common/published.py) *(derived)* | **6 218 211 606** | **SOTA** | +0.000579% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 75 | 6 218 175 612 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [3D tail](common/published.py) *(derived)* | **6 218 246 060** | **SOTA** | +0.00113% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
@@ -220,11 +222,11 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 84 | 6 218 176 441 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [12D tail](common/published.py) *(derived)* | **6 222 025 404** | **SOTA** | +0.061899% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 85 | 6 218 176 754 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [13D tail](common/published.py) *(derived)* | **6 223 222 688** | **SOTA** | +0.081148% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 86 | 6 218 177 532 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [14D tail](common/published.py) *(derived)* | **6 225 165 512** | **SOTA** | +0.112% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 87 | 6 218 178 164 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [15D tail](common/published.py) *(derived)* | **6 226 194 610** | **SOTA** | +0.128920% | — | since 2026-08-30 | [Gamma72 signed-tail existence proof](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 88 | 6 218 179 920 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [16D tail](common/published.py) *(derived)* | **6 967 552 256** | **SOTA** | +12.051313% | — | since 2026-10-28 | [Z8 sections / nonlinear sign fibers](verifications/improved/dim88-96-z8-golay/) | — |
-| 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **9 270 596 604** | **SOTA** | +49.088554% | — | since 2026-10-28 | [Z8 sections / nonlinear sign fibers](verifications/improved/dim88-96-z8-golay/) | — |
-| 90 | 6 218 183 254 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [18D tail](common/published.py) *(derived)* | **12 341 351 672** | **SOTA** | +98.471984% | — | since 2026-10-28 | [Z8 sections / nonlinear sign fibers](verifications/improved/dim88-96-z8-golay/) | — |
-| 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **16 435 507 572** | **SOTA** | +164.313475% | — | since 2026-10-28 | [Z8 sections / nonlinear sign fibers](verifications/improved/dim88-96-z8-golay/) | — |
+| 87 | 6 218 178 164 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [15D tail](common/published.py) *(derived)* | **7 000 788 678** | **SOTA** | +12.585849% | — | updated 2026-11-17 | [Ternary QR48 head compression and sparse augmentation](verifications/improved/dim68-91-lattice-code-continuation/) | — |
+| 88 | 6 218 179 920 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [16D tail](common/published.py) *(derived)* | **9 329 710 944** | **SOTA** | +50.039257% | — | updated 2026-11-17 | [Ternary QR48 head compression and sparse augmentation](verifications/improved/dim68-91-lattice-code-continuation/) | — |
+| 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **12 433 498 768** | **SOTA** | +99.953943% | — | updated 2026-11-17 | [Ternary QR48 head compression and sparse augmentation](verifications/improved/dim68-91-lattice-code-continuation/) | — |
+| 90 | 6 218 183 254 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [18D tail](common/published.py) *(derived)* | **20 961 198 018** | **SOTA** | +237.095212% | — | updated 2026-11-17 | [Ternary QR48 head compression and sparse augmentation](verifications/improved/dim68-91-lattice-code-continuation/) | — |
+| 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **20 961 198 378** | **SOTA** | +237.094985% | — | updated 2026-11-17 | [Ternary QR48 head compression and sparse augmentation](verifications/improved/dim68-91-lattice-code-continuation/) | — |
 | 92 | 8 589 934 592 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **21 896 439 920** | **SOTA** | +154.908110% | — | since 2026-10-28 | [Z8 sections / nonlinear sign fibers](verifications/improved/dim88-96-z8-golay/) | — |
 | 93 | 17 179 869 184 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **31 056 799 856** | **SOTA** | +80.774368% | — | since 2026-10-28 | [Z8 sections / nonlinear sign fibers](verifications/improved/dim88-96-z8-golay/) | — |
 | 94 | 34 359 738 368 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **47 703 347 340** | **SOTA** | +38.835013% | — | since 2026-10-28 | [Z8 sections / nonlinear sign fibers](verifications/improved/dim88-96-z8-golay/) | — |
@@ -540,7 +542,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 58 packages, 70 dimensions
+### `verifications/improved/` — 59 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -848,10 +850,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 131 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 132 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 150 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 151 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay
