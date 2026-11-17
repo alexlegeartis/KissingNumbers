@@ -1,5 +1,7 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
+**17 November 2026: nonlinear phase unions in 87–89D.** Exact bounds **7,266,268,830**, **9,590,791,776**, and **12,690,155,704**. [Complete independently checked inputs and union proof](verifications/improved/dim87-89-hexagonal-phase-unions/).
+
 **17 November 2026: direct 92D two-alphabet construction.** Exact lower bound **26,038,868,280**, with complete head, sparse-code and cross-layer verification. [Independently audited package](verifications/improved/dim92-two-alphabet-fibers/).
 
 **17 November 2026: E6 and mixed E7 head exchanges.** Exact bounds **66,573,830,860 in 94D** and **109,523,504,196 in 95D**. [Complete independently audited package](verifications/improved/dim94-95-e6-e7-head-exchange/).
@@ -234,9 +236,9 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 84 | 6 218 176 441 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [12D tail](common/published.py) *(derived)* | **6 222 025 404** | **SOTA** | +0.061899% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 85 | 6 218 176 754 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [13D tail](common/published.py) *(derived)* | **6 223 222 688** | **SOTA** | +0.081148% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 86 | 6 218 177 532 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [14D tail](common/published.py) *(derived)* | **6 225 165 512** | **SOTA** | +0.112% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 87 | 6 218 178 164 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [15D tail](common/published.py) *(derived)* | **7 000 788 678** | **SOTA** | +12.585849% | — | updated 2026-11-17 | [Ternary QR48 head compression and sparse augmentation](verifications/improved/dim68-91-lattice-code-continuation/) | — |
-| 88 | 6 218 179 920 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [16D tail](common/published.py) *(derived)* | **9 329 710 944** | **SOTA** | +50.039257% | — | updated 2026-11-17 | [Ternary QR48 head compression and sparse augmentation](verifications/improved/dim68-91-lattice-code-continuation/) | — |
-| 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **12 433 498 768** | **SOTA** | +99.953943% | — | updated 2026-11-17 | [Ternary QR48 head compression and sparse augmentation](verifications/improved/dim68-91-lattice-code-continuation/) | — |
+| 87 | 6 218 178 164 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [15D tail](common/published.py) *(derived)* | **7 266 268 830** | **SOTA** | +16.855269% | — | updated 2026-11-17 | [Compressed ternary fibers, nonlinear phases and pure-head roots](verifications/improved/dim87-89-hexagonal-phase-unions/) | — |
+| 88 | 6 218 179 920 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [16D tail](common/published.py) *(derived)* | **9 590 791 776** | **SOTA** | +54.237927% | — | updated 2026-11-17 | [Compressed ternary fibers, nonlinear phases and pure-head roots](verifications/improved/dim87-89-hexagonal-phase-unions/) | — |
+| 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **12 690 155 704** | **SOTA** | +104.081467% | — | updated 2026-11-17 | [Compressed ternary fibers, nonlinear phases and pure-head roots](verifications/improved/dim87-89-hexagonal-phase-unions/) | — |
 | 90 | 6 218 183 254 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [18D tail](common/published.py) *(derived)* | **21 943 640 934** | **SOTA** | +252.894729% | — | updated 2026-11-17 | [Nonlinear hexagonal phase layers](verifications/improved/dim90-92-hexagonal-phase-layers/) | — |
 | 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **22 359 345 896** | **SOTA** | +259.579793% | — | updated 2026-11-17 | [Direct linear-phase latitude layers](verifications/improved/dim91-92-direct-latitude-layers/) | — |
 | 92 | 8 589 934 592 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **26 038 868 280** | **SOTA** | +203.132323% | — | updated 2026-11-17 | [Two-alphabet fibers with D4 heads and compatible sparse layers](verifications/improved/dim92-two-alphabet-fibers/) | — |
@@ -554,7 +556,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 65 packages, 70 dimensions
+### `verifications/improved/` — 66 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -862,10 +864,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 138 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 139 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 157 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 158 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

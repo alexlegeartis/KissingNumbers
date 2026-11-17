@@ -496,6 +496,12 @@ _driver=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_driver)
 for _row in _driver.results():
     add(_row['dimension'],_row['total'],_package,'verify.py: two-alphabet ring fibers, independently enumerated sparse codes and exact cross-layer geometry')
 
+_package='dim87-89-hexagonal-phase-unions'
+_spec=importlib.util.spec_from_file_location('hex8789',os.path.join(IMP,_package,'final.py'))
+_driver=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_driver)
+for _row in _driver.results():
+    add(_row['dimension'],_row['total'],_package,'verify.py: audited ternary heads, all nonlinear phase pairs and exact independent union geometry')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
@@ -2034,6 +2040,7 @@ if '--write-results' in sys.argv and not fail:
         return "{:,}".format(x).replace(",", "\u202f")
 
     PKGDOC = {
+        'dim87-89-hexagonal-phase-unions': 'Compressed ternary fibers with nonlinear hexagonal phases and pure-head root systems',
         'dim92-two-alphabet-fibers': 'Two Gray alphabets with D4 heads, shortened support/sign codes and compatible Reed-Solomon layers',
         'dim94-95-e6-e7-head-exchange': 'E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation',
         'dim93-96-e7-rs-root-augmentation': 'Three crosspolytope alphabets, E7 head sections and exact Reed-Solomon/root augmentation',

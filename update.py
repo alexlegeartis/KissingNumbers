@@ -88,6 +88,7 @@ DRIVERS.append(('93–96D three crosspolytope alphabets',os.path.join(V,'dim93-9
 DRIVERS.append(('93–96D E7 and RS/root augmentation',os.path.join(V,'dim93-96-e7-rs-root-augmentation'),'final.py'))
 DRIVERS.append(('94–95D E6 and E7 head exchanges',os.path.join(V,'dim94-95-e6-e7-head-exchange'),'final.py'))
 DRIVERS.append(('92D two-alphabet fibers',os.path.join(V,'dim92-two-alphabet-fibers'),'final.py'))
+DRIVERS.append(('87–89D nonlinear phase unions',os.path.join(V,'dim87-89-hexagonal-phase-unions'),'final.py'))
 TABLES = [(os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
           (os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py')]
 

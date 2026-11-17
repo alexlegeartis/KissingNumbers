@@ -1,0 +1,23 @@
+[
+  {
+    "dimension": 87,
+    "dense": 6973568802,
+    "sparse": 292700016,
+    "pure_head": 12,
+    "total": 7266268830
+  },
+  {
+    "dimension": 88,
+    "dense": 9298091736,
+    "sparse": 292700016,
+    "pure_head": 24,
+    "total": 9590791776
+  },
+  {
+    "dimension": 89,
+    "dense": 12397455648,
+    "sparse": 292700016,
+    "pure_head": 40,
+    "total": 12690155704
+  }
+]

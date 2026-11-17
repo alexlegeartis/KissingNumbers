@@ -1,0 +1,27 @@
+{
+  "status": "PASS independent union geometry and arithmetic",
+  "inherited_premises": "Previously audited dense compression and Pless/7812 phase construction; source wrappers must replay these independently of this small union check",
+  "results": [
+    {
+      "dimension": 87,
+      "dense": 6973568802,
+      "sparse": 292700016,
+      "head_points": 12,
+      "total": 7266268830
+    },
+    {
+      "dimension": 88,
+      "dense": 9298091736,
+      "sparse": 292700016,
+      "head_points": 24,
+      "total": 9590791776
+    },
+    {
+      "dimension": 89,
+      "dense": 12397455648,
+      "sparse": 292700016,
+      "head_points": 40,
+      "total": 12690155704
+    }
+  ]
+}

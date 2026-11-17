@@ -619,3 +619,6 @@ for _d in (94,95):
     STATUS[_d]=('codes','E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation; full inherited parent replay')
 
 STATUS[92]=('codes','two Gray alphabets with D4 heads, independently enumerated shortened support/sign codes and compatible sparse layers')
+
+for _d in (87,88,89):
+    STATUS[_d]=('codes','compressed ternary fibers with nonlinear hexagonal phases and pure-head roots; exact union proof with inherited parent minima')
