@@ -1,0 +1,2409 @@
+{
+  "status": "PASS",
+  "bound": 1361134720,
+  "rows": [
+    {
+      "h": [
+        -3,
+        -3,
+        -5,
+        -1
+      ],
+      "claimed": 208,
+      "replayed": 208,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 208,
+        "nodes": 10380,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.175791
+      }
+    },
+    {
+      "h": [
+        -3,
+        -3,
+        -5,
+        1
+      ],
+      "claimed": 288,
+      "replayed": 288,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 288,
+        "nodes": 10104,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0332628
+      }
+    },
+    {
+      "h": [
+        -2,
+        -4,
+        -4,
+        -2
+      ],
+      "claimed": 1664,
+      "replayed": 1664,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1664,
+        "nodes": 29505,
+        "hist": {
+          "8": 1280
+        },
+        "seconds": 0.0321614
+      }
+    },
+    {
+      "h": [
+        -2,
+        -4,
+        -4,
+        0
+      ],
+      "claimed": 5896,
+      "replayed": 5896,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 5896,
+        "nodes": 76908,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0671135
+      }
+    },
+    {
+      "h": [
+        -2,
+        -4,
+        -4,
+        2
+      ],
+      "claimed": 1520,
+      "replayed": 1520,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1520,
+        "nodes": 29548,
+        "hist": {
+          "8": 1280
+        },
+        "seconds": 0.0303715
+      }
+    },
+    {
+      "h": [
+        -2,
+        -2,
+        -4,
+        -4
+      ],
+      "claimed": 1560,
+      "replayed": 1560,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1560,
+        "nodes": 29359,
+        "hist": {
+          "8": 1280
+        },
+        "seconds": 0.0366315
+      }
+    },
+    {
+      "h": [
+        -2,
+        -2,
+        -4,
+        -2
+      ],
+      "claimed": 106648,
+      "replayed": 106648,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 106648,
+        "nodes": 426414,
+        "hist": {
+          "6": 256,
+          "8": 48640
+        },
+        "seconds": 0.0670258
+      }
+    },
+    {
+      "h": [
+        -2,
+        -2,
+        -4,
+        0
+      ],
+      "claimed": 394984,
+      "replayed": 394984,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 394984,
+        "nodes": 911565,
+        "hist": {
+          "6": 1280,
+          "8": 125952
+        },
+        "seconds": 0.103979
+      }
+    },
+    {
+      "h": [
+        -2,
+        -2,
+        -4,
+        2
+      ],
+      "claimed": 107016,
+      "replayed": 107016,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 107016,
+        "nodes": 426414,
+        "hist": {
+          "6": 256,
+          "8": 48640
+        },
+        "seconds": 0.0932871
+      }
+    },
+    {
+      "h": [
+        -2,
+        -2,
+        -4,
+        4
+      ],
+      "claimed": 1480,
+      "replayed": 1480,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1480,
+        "nodes": 29359,
+        "hist": {
+          "8": 1280
+        },
+        "seconds": 0.0405873
+      }
+    },
+    {
+      "h": [
+        -1,
+        -3,
+        -5,
+        -3
+      ],
+      "claimed": 424,
+      "replayed": 424,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 424,
+        "nodes": 10328,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0345247
+      }
+    },
+    {
+      "h": [
+        -1,
+        -3,
+        -5,
+        -1
+      ],
+      "claimed": 6160,
+      "replayed": 6160,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 6160,
+        "nodes": 77024,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0374172
+      }
+    },
+    {
+      "h": [
+        -1,
+        -3,
+        -5,
+        1
+      ],
+      "claimed": 6064,
+      "replayed": 6064,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 6064,
+        "nodes": 77416,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0475977
+      }
+    },
+    {
+      "h": [
+        -1,
+        -3,
+        -5,
+        3
+      ],
+      "claimed": 408,
+      "replayed": 408,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 408,
+        "nodes": 10119,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0318317
+      }
+    },
+    {
+      "h": [
+        -1,
+        -3,
+        -3,
+        -5
+      ],
+      "claimed": 312,
+      "replayed": 312,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 312,
+        "nodes": 10225,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0365057
+      }
+    },
+    {
+      "h": [
+        -1,
+        -3,
+        -3,
+        -3
+      ],
+      "claimed": 107192,
+      "replayed": 107192,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 107192,
+        "nodes": 426172,
+        "hist": {
+          "6": 256,
+          "8": 48640
+        },
+        "seconds": 0.0831261
+      }
+    },
+    {
+      "h": [
+        -1,
+        -3,
+        -3,
+        -1
+      ],
+      "claimed": 1334104,
+      "replayed": 1334104,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1334104,
+        "nodes": 1850880,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.206958
+      }
+    },
+    {
+      "h": [
+        -1,
+        -3,
+        -3,
+        1
+      ],
+      "claimed": 1335664,
+      "replayed": 1335664,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1335664,
+        "nodes": 1851645,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.232806
+      }
+    },
+    {
+      "h": [
+        -1,
+        -3,
+        -3,
+        3
+      ],
+      "claimed": 107248,
+      "replayed": 107248,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 107248,
+        "nodes": 425206,
+        "hist": {
+          "6": 256,
+          "8": 48640
+        },
+        "seconds": 0.0739728
+      }
+    },
+    {
+      "h": [
+        -1,
+        -3,
+        -3,
+        5
+      ],
+      "claimed": 440,
+      "replayed": 440,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 440,
+        "nodes": 10404,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0312284
+      }
+    },
+    {
+      "h": [
+        -1,
+        -1,
+        -3,
+        -5
+      ],
+      "claimed": 5888,
+      "replayed": 5888,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 5888,
+        "nodes": 76964,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0389718
+      }
+    },
+    {
+      "h": [
+        -1,
+        -1,
+        -3,
+        -3
+      ],
+      "claimed": 1334768,
+      "replayed": 1334768,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1334768,
+        "nodes": 1851717,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.197963
+      }
+    },
+    {
+      "h": [
+        -1,
+        -1,
+        -3,
+        -1
+      ],
+      "claimed": 14201856,
+      "replayed": 14201856,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14201856,
+        "nodes": 6658711,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.579519
+      }
+    },
+    {
+      "h": [
+        -1,
+        -1,
+        -3,
+        1
+      ],
+      "claimed": 14202072,
+      "replayed": 14202072,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14202072,
+        "nodes": 6660047,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.846942
+      }
+    },
+    {
+      "h": [
+        -1,
+        -1,
+        -3,
+        3
+      ],
+      "claimed": 1333536,
+      "replayed": 1333536,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1333536,
+        "nodes": 1851296,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.178502
+      }
+    },
+    {
+      "h": [
+        -1,
+        -1,
+        -3,
+        5
+      ],
+      "claimed": 5864,
+      "replayed": 5864,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 5864,
+        "nodes": 77401,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0364355
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        -4,
+        -4
+      ],
+      "claimed": 6040,
+      "replayed": 6040,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 6040,
+        "nodes": 77340,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0303489
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        -4,
+        -2
+      ],
+      "claimed": 394400,
+      "replayed": 394400,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 394400,
+        "nodes": 911255,
+        "hist": {
+          "6": 1280,
+          "8": 125952
+        },
+        "seconds": 0.228436
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        -4,
+        0
+      ],
+      "claimed": 1335712,
+      "replayed": 1335712,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1335712,
+        "nodes": 1851823,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.285491
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        -4,
+        2
+      ],
+      "claimed": 395472,
+      "replayed": 395472,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 395472,
+        "nodes": 911593,
+        "hist": {
+          "6": 1280,
+          "8": 125952
+        },
+        "seconds": 0.15444
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        -4,
+        4
+      ],
+      "claimed": 5752,
+      "replayed": 5752,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 5752,
+        "nodes": 77340,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0392999
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        -2,
+        -6
+      ],
+      "claimed": 336,
+      "replayed": 336,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 336,
+        "nodes": 10204,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0260881
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        -2,
+        -4
+      ],
+      "claimed": 394168,
+      "replayed": 394168,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 394168,
+        "nodes": 912149,
+        "hist": {
+          "6": 1280,
+          "8": 125952
+        },
+        "seconds": 0.0815225
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        -2,
+        -2
+      ],
+      "claimed": 14204896,
+      "replayed": 14204896,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14204896,
+        "nodes": 6658269,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.552569
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        -2,
+        0
+      ],
+      "claimed": 43646288,
+      "replayed": 43646288,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 43646288,
+        "nodes": 11909173,
+        "hist": {
+          "4": 1280,
+          "6": 125952,
+          "8": 2603520
+        },
+        "seconds": 1.64671
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        -2,
+        2
+      ],
+      "claimed": 14200800,
+      "replayed": 14200800,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14200800,
+        "nodes": 6658269,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.823971
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        -2,
+        4
+      ],
+      "claimed": 396120,
+      "replayed": 396120,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 396120,
+        "nodes": 912149,
+        "hist": {
+          "6": 1280,
+          "8": 125952
+        },
+        "seconds": 0.140378
+      }
+    },
+    {
+      "h": [
+        0,
+        -2,
+        -2,
+        6
+      ],
+      "claimed": 400,
+      "replayed": 400,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 400,
+        "nodes": 10204,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0933691
+      }
+    },
+    {
+      "h": [
+        0,
+        0,
+        -2,
+        -6
+      ],
+      "claimed": 1400,
+      "replayed": 1400,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1400,
+        "nodes": 29112,
+        "hist": {
+          "8": 1280
+        },
+        "seconds": 0.0763754
+      }
+    },
+    {
+      "h": [
+        0,
+        0,
+        -2,
+        -4
+      ],
+      "claimed": 1336400,
+      "replayed": 1336400,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1336400,
+        "nodes": 1851866,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.205408
+      }
+    },
+    {
+      "h": [
+        0,
+        0,
+        -2,
+        -2
+      ],
+      "claimed": 43647632,
+      "replayed": 43647632,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 43647632,
+        "nodes": 11905626,
+        "hist": {
+          "4": 1280,
+          "6": 125952,
+          "8": 2603520
+        },
+        "seconds": 1.76763
+      }
+    },
+    {
+      "h": [
+        0,
+        0,
+        -2,
+        0
+      ],
+      "claimed": 128298160,
+      "replayed": 128298160,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 128298160,
+        "nodes": 20595821,
+        "hist": {
+          "4": 5120,
+          "6": 296960,
+          "8": 4844544
+        },
+        "seconds": 2.72854
+      }
+    },
+    {
+      "h": [
+        0,
+        0,
+        -2,
+        2
+      ],
+      "claimed": 43645264,
+      "replayed": 43645264,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 43645264,
+        "nodes": 11907440,
+        "hist": {
+          "4": 1280,
+          "6": 125952,
+          "8": 2603520
+        },
+        "seconds": 1.31542
+      }
+    },
+    {
+      "h": [
+        0,
+        0,
+        -2,
+        4
+      ],
+      "claimed": 1335984,
+      "replayed": 1335984,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1335984,
+        "nodes": 1851866,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.254232
+      }
+    },
+    {
+      "h": [
+        0,
+        0,
+        -2,
+        6
+      ],
+      "claimed": 1464,
+      "replayed": 1464,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1464,
+        "nodes": 29146,
+        "hist": {
+          "8": 1280
+        },
+        "seconds": 0.033232
+      }
+    },
+    {
+      "h": [
+        1,
+        -1,
+        -3,
+        -5
+      ],
+      "claimed": 6392,
+      "replayed": 6392,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 6392,
+        "nodes": 77416,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.154771
+      }
+    },
+    {
+      "h": [
+        1,
+        -1,
+        -3,
+        -3
+      ],
+      "claimed": 1334936,
+      "replayed": 1334936,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1334936,
+        "nodes": 1850978,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.274687
+      }
+    },
+    {
+      "h": [
+        1,
+        -1,
+        -3,
+        -1
+      ],
+      "claimed": 14200960,
+      "replayed": 14200960,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14200960,
+        "nodes": 6660748,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.64168
+      }
+    },
+    {
+      "h": [
+        1,
+        -1,
+        -3,
+        1
+      ],
+      "claimed": 14200512,
+      "replayed": 14200512,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14200512,
+        "nodes": 6658767,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 1.05191
+      }
+    },
+    {
+      "h": [
+        1,
+        -1,
+        -3,
+        3
+      ],
+      "claimed": 1334984,
+      "replayed": 1334984,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1334984,
+        "nodes": 1851404,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.264071
+      }
+    },
+    {
+      "h": [
+        1,
+        -1,
+        -3,
+        5
+      ],
+      "claimed": 6328,
+      "replayed": 6328,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 6328,
+        "nodes": 77024,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0383798
+      }
+    },
+    {
+      "h": [
+        1,
+        -1,
+        -1,
+        -5
+      ],
+      "claimed": 106824,
+      "replayed": 106824,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 106824,
+        "nodes": 426172,
+        "hist": {
+          "6": 256,
+          "8": 48640
+        },
+        "seconds": 0.0654273
+      }
+    },
+    {
+      "h": [
+        1,
+        -1,
+        -1,
+        -3
+      ],
+      "claimed": 14200864,
+      "replayed": 14200864,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14200864,
+        "nodes": 6659606,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.790716
+      }
+    },
+    {
+      "h": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "claimed": 128298384,
+      "replayed": 128298384,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 128298384,
+        "nodes": 20597082,
+        "hist": {
+          "4": 5120,
+          "6": 296960,
+          "8": 4844544
+        },
+        "seconds": 1.99204
+      }
+    },
+    {
+      "h": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "claimed": 128299224,
+      "replayed": 128299224,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 128299224,
+        "nodes": 20599942,
+        "hist": {
+          "4": 5120,
+          "6": 296960,
+          "8": 4844544
+        },
+        "seconds": 2.09393
+      }
+    },
+    {
+      "h": [
+        1,
+        -1,
+        -1,
+        3
+      ],
+      "claimed": 14200872,
+      "replayed": 14200872,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14200872,
+        "nodes": 6658836,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.770919
+      }
+    },
+    {
+      "h": [
+        1,
+        -1,
+        -1,
+        5
+      ],
+      "claimed": 106712,
+      "replayed": 106712,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 106712,
+        "nodes": 425206,
+        "hist": {
+          "6": 256,
+          "8": 48640
+        },
+        "seconds": 0.124246
+      }
+    },
+    {
+      "h": [
+        1,
+        1,
+        -1,
+        -5
+      ],
+      "claimed": 107728,
+      "replayed": 107728,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 107728,
+        "nodes": 425887,
+        "hist": {
+          "6": 256,
+          "8": 48640
+        },
+        "seconds": 0.0513476
+      }
+    },
+    {
+      "h": [
+        1,
+        1,
+        -1,
+        -3
+      ],
+      "claimed": 14203104,
+      "replayed": 14203104,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14203104,
+        "nodes": 6658711,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.944196
+      }
+    },
+    {
+      "h": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "claimed": 128296112,
+      "replayed": 128296112,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 128296112,
+        "nodes": 20597876,
+        "hist": {
+          "4": 5120,
+          "6": 296960,
+          "8": 4844544
+        },
+        "seconds": 2.18493
+      }
+    },
+    {
+      "h": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "claimed": 128297440,
+      "replayed": 128297440,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 128297440,
+        "nodes": 20597043,
+        "hist": {
+          "4": 5120,
+          "6": 296960,
+          "8": 4844544
+        },
+        "seconds": 1.99284
+      }
+    },
+    {
+      "h": [
+        1,
+        1,
+        -1,
+        3
+      ],
+      "claimed": 14201408,
+      "replayed": 14201408,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14201408,
+        "nodes": 6660047,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.584406
+      }
+    },
+    {
+      "h": [
+        1,
+        1,
+        -1,
+        5
+      ],
+      "claimed": 107488,
+      "replayed": 107488,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 107488,
+        "nodes": 425721,
+        "hist": {
+          "6": 256,
+          "8": 48640
+        },
+        "seconds": 0.060995
+      }
+    },
+    {
+      "h": [
+        2,
+        0,
+        -2,
+        -6
+      ],
+      "claimed": 272,
+      "replayed": 272,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 272,
+        "nodes": 10524,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0266295
+      }
+    },
+    {
+      "h": [
+        2,
+        0,
+        -2,
+        -4
+      ],
+      "claimed": 393952,
+      "replayed": 393952,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 393952,
+        "nodes": 912392,
+        "hist": {
+          "6": 1280,
+          "8": 125952
+        },
+        "seconds": 0.0953945
+      }
+    },
+    {
+      "h": [
+        2,
+        0,
+        -2,
+        -2
+      ],
+      "claimed": 14200040,
+      "replayed": 14200040,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14200040,
+        "nodes": 6658611,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.579534
+      }
+    },
+    {
+      "h": [
+        2,
+        0,
+        -2,
+        0
+      ],
+      "claimed": 43649792,
+      "replayed": 43649792,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 43649792,
+        "nodes": 11906226,
+        "hist": {
+          "4": 1280,
+          "6": 125952,
+          "8": 2603520
+        },
+        "seconds": 1.30107
+      }
+    },
+    {
+      "h": [
+        2,
+        0,
+        -2,
+        2
+      ],
+      "claimed": 14202784,
+      "replayed": 14202784,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14202784,
+        "nodes": 6658611,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 1.01871
+      }
+    },
+    {
+      "h": [
+        2,
+        0,
+        -2,
+        4
+      ],
+      "claimed": 392960,
+      "replayed": 392960,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 392960,
+        "nodes": 912392,
+        "hist": {
+          "6": 1280,
+          "8": 125952
+        },
+        "seconds": 0.160031
+      }
+    },
+    {
+      "h": [
+        2,
+        0,
+        -2,
+        6
+      ],
+      "claimed": 200,
+      "replayed": 200,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 200,
+        "nodes": 10524,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0401831
+      }
+    },
+    {
+      "h": [
+        2,
+        0,
+        0,
+        -6
+      ],
+      "claimed": 1624,
+      "replayed": 1624,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1624,
+        "nodes": 29505,
+        "hist": {
+          "8": 1280
+        },
+        "seconds": 0.040237
+      }
+    },
+    {
+      "h": [
+        2,
+        0,
+        0,
+        -4
+      ],
+      "claimed": 1333312,
+      "replayed": 1333312,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1333312,
+        "nodes": 1851316,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.173039
+      }
+    },
+    {
+      "h": [
+        2,
+        0,
+        0,
+        -2
+      ],
+      "claimed": 43647440,
+      "replayed": 43647440,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 43647440,
+        "nodes": 11909972,
+        "hist": {
+          "4": 1280,
+          "6": 125952,
+          "8": 2603520
+        },
+        "seconds": 1.59756
+      }
+    },
+    {
+      "h": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "claimed": 128295712,
+      "replayed": 128295712,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 128295712,
+        "nodes": 20596133,
+        "hist": {
+          "4": 5120,
+          "6": 296960,
+          "8": 4844544
+        },
+        "seconds": 2.24749
+      }
+    },
+    {
+      "h": [
+        2,
+        0,
+        0,
+        2
+      ],
+      "claimed": 43650704,
+      "replayed": 43650704,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 43650704,
+        "nodes": 11904925,
+        "hist": {
+          "4": 1280,
+          "6": 125952,
+          "8": 2603520
+        },
+        "seconds": 1.11377
+      }
+    },
+    {
+      "h": [
+        2,
+        0,
+        0,
+        4
+      ],
+      "claimed": 1335264,
+      "replayed": 1335264,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1335264,
+        "nodes": 1851316,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.174686
+      }
+    },
+    {
+      "h": [
+        2,
+        0,
+        0,
+        6
+      ],
+      "claimed": 1528,
+      "replayed": 1528,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1528,
+        "nodes": 29548,
+        "hist": {
+          "8": 1280
+        },
+        "seconds": 0.0330361
+      }
+    },
+    {
+      "h": [
+        2,
+        2,
+        0,
+        -6
+      ],
+      "claimed": 264,
+      "replayed": 264,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 264,
+        "nodes": 10322,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0238617
+      }
+    },
+    {
+      "h": [
+        2,
+        2,
+        0,
+        -4
+      ],
+      "claimed": 395752,
+      "replayed": 395752,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 395752,
+        "nodes": 911565,
+        "hist": {
+          "6": 1280,
+          "8": 125952
+        },
+        "seconds": 0.090107
+      }
+    },
+    {
+      "h": [
+        2,
+        2,
+        0,
+        -2
+      ],
+      "claimed": 14201288,
+      "replayed": 14201288,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14201288,
+        "nodes": 6659184,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.572834
+      }
+    },
+    {
+      "h": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "claimed": 43647376,
+      "replayed": 43647376,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 43647376,
+        "nodes": 11905317,
+        "hist": {
+          "4": 1280,
+          "6": 125952,
+          "8": 2603520
+        },
+        "seconds": 0.946693
+      }
+    },
+    {
+      "h": [
+        2,
+        2,
+        0,
+        2
+      ],
+      "claimed": 14200680,
+      "replayed": 14200680,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14200680,
+        "nodes": 6659184,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.875635
+      }
+    },
+    {
+      "h": [
+        2,
+        2,
+        0,
+        4
+      ],
+      "claimed": 394600,
+      "replayed": 394600,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 394600,
+        "nodes": 911565,
+        "hist": {
+          "6": 1280,
+          "8": 125952
+        },
+        "seconds": 0.157433
+      }
+    },
+    {
+      "h": [
+        2,
+        2,
+        0,
+        6
+      ],
+      "claimed": 296,
+      "replayed": 296,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 296,
+        "nodes": 10322,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0335449
+      }
+    },
+    {
+      "h": [
+        3,
+        1,
+        -1,
+        -5
+      ],
+      "claimed": 6088,
+      "replayed": 6088,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 6088,
+        "nodes": 77024,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0367919
+      }
+    },
+    {
+      "h": [
+        3,
+        1,
+        -1,
+        -3
+      ],
+      "claimed": 1335640,
+      "replayed": 1335640,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1335640,
+        "nodes": 1851404,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.322736
+      }
+    },
+    {
+      "h": [
+        3,
+        1,
+        -1,
+        -1
+      ],
+      "claimed": 14202872,
+      "replayed": 14202872,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14202872,
+        "nodes": 6658767,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 1.11101
+      }
+    },
+    {
+      "h": [
+        3,
+        1,
+        -1,
+        1
+      ],
+      "claimed": 14200600,
+      "replayed": 14200600,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14200600,
+        "nodes": 6660748,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 1.31261
+      }
+    },
+    {
+      "h": [
+        3,
+        1,
+        -1,
+        3
+      ],
+      "claimed": 1335736,
+      "replayed": 1335736,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1335736,
+        "nodes": 1850978,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.456749
+      }
+    },
+    {
+      "h": [
+        3,
+        1,
+        -1,
+        5
+      ],
+      "claimed": 6488,
+      "replayed": 6488,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 6488,
+        "nodes": 77416,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0428522
+      }
+    },
+    {
+      "h": [
+        3,
+        1,
+        1,
+        -5
+      ],
+      "claimed": 6264,
+      "replayed": 6264,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 6264,
+        "nodes": 76980,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0461506
+      }
+    },
+    {
+      "h": [
+        3,
+        1,
+        1,
+        -3
+      ],
+      "claimed": 1333296,
+      "replayed": 1333296,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1333296,
+        "nodes": 1851645,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.234119
+      }
+    },
+    {
+      "h": [
+        3,
+        1,
+        1,
+        -1
+      ],
+      "claimed": 14201640,
+      "replayed": 14201640,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14201640,
+        "nodes": 6659606,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 0.965416
+      }
+    },
+    {
+      "h": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "claimed": 14203208,
+      "replayed": 14203208,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 14203208,
+        "nodes": 6658836,
+        "hist": {
+          "4": 256,
+          "6": 48640,
+          "8": 1337600
+        },
+        "seconds": 1.12268
+      }
+    },
+    {
+      "h": [
+        3,
+        1,
+        1,
+        3
+      ],
+      "claimed": 1334648,
+      "replayed": 1334648,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1334648,
+        "nodes": 1850880,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.439779
+      }
+    },
+    {
+      "h": [
+        3,
+        1,
+        1,
+        5
+      ],
+      "claimed": 6040,
+      "replayed": 6040,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 6040,
+        "nodes": 77416,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0551503
+      }
+    },
+    {
+      "h": [
+        3,
+        3,
+        1,
+        -5
+      ],
+      "claimed": 320,
+      "replayed": 320,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 320,
+        "nodes": 10104,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0713749
+      }
+    },
+    {
+      "h": [
+        3,
+        3,
+        1,
+        -3
+      ],
+      "claimed": 107096,
+      "replayed": 107096,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 107096,
+        "nodes": 425887,
+        "hist": {
+          "6": 256,
+          "8": 48640
+        },
+        "seconds": 0.181419
+      }
+    },
+    {
+      "h": [
+        3,
+        3,
+        1,
+        -1
+      ],
+      "claimed": 1335648,
+      "replayed": 1335648,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1335648,
+        "nodes": 1851296,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.535139
+      }
+    },
+    {
+      "h": [
+        3,
+        3,
+        1,
+        1
+      ],
+      "claimed": 1336592,
+      "replayed": 1336592,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1336592,
+        "nodes": 1851717,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.421769
+      }
+    },
+    {
+      "h": [
+        3,
+        3,
+        1,
+        3
+      ],
+      "claimed": 107072,
+      "replayed": 107072,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 107072,
+        "nodes": 425721,
+        "hist": {
+          "6": 256,
+          "8": 48640
+        },
+        "seconds": 0.104464
+      }
+    },
+    {
+      "h": [
+        3,
+        3,
+        1,
+        5
+      ],
+      "claimed": 248,
+      "replayed": 248,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 248,
+        "nodes": 10380,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0397505
+      }
+    },
+    {
+      "h": [
+        4,
+        2,
+        0,
+        -4
+      ],
+      "claimed": 5928,
+      "replayed": 5928,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 5928,
+        "nodes": 77340,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0393364
+      }
+    },
+    {
+      "h": [
+        4,
+        2,
+        0,
+        -2
+      ],
+      "claimed": 395760,
+      "replayed": 395760,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 395760,
+        "nodes": 911593,
+        "hist": {
+          "6": 1280,
+          "8": 125952
+        },
+        "seconds": 0.123786
+      }
+    },
+    {
+      "h": [
+        4,
+        2,
+        0,
+        0
+      ],
+      "claimed": 1333248,
+      "replayed": 1333248,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1333248,
+        "nodes": 1851823,
+        "hist": {
+          "6": 5120,
+          "8": 296960
+        },
+        "seconds": 0.281176
+      }
+    },
+    {
+      "h": [
+        4,
+        2,
+        0,
+        2
+      ],
+      "claimed": 395296,
+      "replayed": 395296,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 395296,
+        "nodes": 911255,
+        "hist": {
+          "6": 1280,
+          "8": 125952
+        },
+        "seconds": 0.276524
+      }
+    },
+    {
+      "h": [
+        4,
+        2,
+        0,
+        4
+      ],
+      "claimed": 5800,
+      "replayed": 5800,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 5800,
+        "nodes": 77340,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0392673
+      }
+    },
+    {
+      "h": [
+        4,
+        2,
+        2,
+        -4
+      ],
+      "claimed": 1608,
+      "replayed": 1608,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1608,
+        "nodes": 29643,
+        "hist": {
+          "8": 1280
+        },
+        "seconds": 0.0500453
+      }
+    },
+    {
+      "h": [
+        4,
+        2,
+        2,
+        -2
+      ],
+      "claimed": 107360,
+      "replayed": 107360,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 107360,
+        "nodes": 425671,
+        "hist": {
+          "6": 256,
+          "8": 48640
+        },
+        "seconds": 0.223986
+      }
+    },
+    {
+      "h": [
+        4,
+        2,
+        2,
+        0
+      ],
+      "claimed": 393464,
+      "replayed": 393464,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 393464,
+        "nodes": 912149,
+        "hist": {
+          "6": 1280,
+          "8": 125952
+        },
+        "seconds": 0.208541
+      }
+    },
+    {
+      "h": [
+        4,
+        2,
+        2,
+        2
+      ],
+      "claimed": 106624,
+      "replayed": 106624,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 106624,
+        "nodes": 425671,
+        "hist": {
+          "6": 256,
+          "8": 48640
+        },
+        "seconds": 0.0884609
+      }
+    },
+    {
+      "h": [
+        4,
+        2,
+        2,
+        4
+      ],
+      "claimed": 1608,
+      "replayed": 1608,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1608,
+        "nodes": 29643,
+        "hist": {
+          "8": 1280
+        },
+        "seconds": 0.0541663
+      }
+    },
+    {
+      "h": [
+        4,
+        4,
+        2,
+        -2
+      ],
+      "claimed": 1536,
+      "replayed": 1536,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1536,
+        "nodes": 29112,
+        "hist": {
+          "8": 1280
+        },
+        "seconds": 0.0360201
+      }
+    },
+    {
+      "h": [
+        4,
+        4,
+        2,
+        0
+      ],
+      "claimed": 5856,
+      "replayed": 5856,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 5856,
+        "nodes": 77207,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0428822
+      }
+    },
+    {
+      "h": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "claimed": 1560,
+      "replayed": 1560,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 1560,
+        "nodes": 29146,
+        "hist": {
+          "8": 1280
+        },
+        "seconds": 0.0335962
+      }
+    },
+    {
+      "h": [
+        5,
+        3,
+        1,
+        -3
+      ],
+      "claimed": 208,
+      "replayed": 208,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 208,
+        "nodes": 10119,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0370149
+      }
+    },
+    {
+      "h": [
+        5,
+        3,
+        1,
+        -1
+      ],
+      "claimed": 6272,
+      "replayed": 6272,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 6272,
+        "nodes": 77416,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0655036
+      }
+    },
+    {
+      "h": [
+        5,
+        3,
+        1,
+        1
+      ],
+      "claimed": 6048,
+      "replayed": 6048,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 6048,
+        "nodes": 77024,
+        "hist": {
+          "8": 5120
+        },
+        "seconds": 0.0779114
+      }
+    },
+    {
+      "h": [
+        5,
+        3,
+        1,
+        3
+      ],
+      "claimed": 320,
+      "replayed": 320,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 320,
+        "nodes": 10328,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.041364
+      }
+    },
+    {
+      "h": [
+        5,
+        3,
+        3,
+        -1
+      ],
+      "claimed": 344,
+      "replayed": 344,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 344,
+        "nodes": 10404,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.114886
+      }
+    },
+    {
+      "h": [
+        5,
+        3,
+        3,
+        1
+      ],
+      "claimed": 320,
+      "replayed": 320,
+      "pure": 0,
+      "enumeration": {
+        "weighted": 320,
+        "nodes": 10225,
+        "hist": {
+          "8": 256
+        },
+        "seconds": 0.0494914
+      }
+    }
+  ]
+}

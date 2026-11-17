@@ -126,7 +126,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 67 | 331 737 996 | **355 095 446** | 1.07 | `codes` | [larger compatible support and sign families in shortened, compressed and extended binary-code layers; fresh exact finite replay](verifications/improved/dim61-67-compatible-sign-families/) |
 | 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
-| 70 | 331 737 984 | **1 360 986 112** | 4.10 | `heads` | [central Gamma72 sections and a three-slice 70D affine union with an independent exact dual proof](verifications/improved/dim70-71-gamma72-cross-sections/) |
+| 70 | 331 737 984 | **1 361 134 720** | 4.10 | `heads` | [D4-profile compression with anisotropic planar heads and independently replayed Gamma72 populations](verifications/improved/dim70-gamma72-d4-planar-heads/) |
 | 71 | 331 737 984 | **2 623 578 936** | 7.91 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 73 | 6 218 175 602 | **6 218 206 932** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
 | 74 | 6 218 175 606 | **6 218 211 606** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
@@ -221,7 +221,7 @@ refreshed table, not more search.
 | 63-65 | `dim63-65-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 67 | `dim61-67-compatible-sign-families` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 68-69, 71 | `dim68-91-lattice-code-continuation` | verify.py: exact slice/head geometry, code ranks, design moments and sparse counts; published source minima retained |
-| 70 | `dim70-71-gamma72-cross-sections` | affine70/verify.py (independent exact cells, dual and geometry) |
+| 70 | `dim70-gamma72-d4-planar-heads` | verify.py: exact same/cross-fiber geometry and fresh source-bound population replay |
 | 73-86 | `dim73-88-gamma72-cosets` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 87-89 | `dim87-89-hexagonal-phase-unions` | verify.py: audited ternary heads, all nonlinear phase pairs and exact independent union geometry |
 | 90 | `dim90-92-hexagonal-phase-layers` | verify.py: all nonlinear phase pairs, outer membership, exact hexagonal geometry and orthogonal complement; published parent minima |

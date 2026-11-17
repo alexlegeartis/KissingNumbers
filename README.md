@@ -1,5 +1,7 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
+**17 November 2026: 70D planar-head compression.** At least **1,361,134,720** kissing points, +148,608 over the previous repository construction. [Exact geometry and independently replayed populations](verifications/improved/dim70-gamma72-d4-planar-heads/). This is a small verified gain, not a worldwide-priority assertion.
+
 **17 November 2026: four-row partition-head construction in 92D.** Exact lower bound **29,797,911,144**, with complete partition-head and cross-layer verification. [Independently audited package](verifications/improved/dim92-four-row-partition-heads/).
 
 **17 November 2026: nonlinear phase unions in 87–89D.** Exact bounds **7,266,268,830**, **9,590,791,776**, and **12,690,155,704**. [Complete independently checked inputs and union proof](verifications/improved/dim87-89-hexagonal-phase-unions/).
@@ -222,7 +224,7 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 67 | 331 737 996 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **355 095 446** | **SOTA** | +7.0409% | — | since 2026-11-13 | [Compatible affine sign classes](verifications/improved/dim61-67-compatible-sign-families/) | — |
 | 68 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **472 598 888** | **SOTA** | +42.461494% | — | updated 2026-11-17 | [Exact Gamma72 D4 fiber rescaling](verifications/improved/dim68-91-lattice-code-continuation/) | — |
 | 69 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **780 388 888** | **SOTA** | +135.242549% | — | updated 2026-11-17 | [Exact Gamma72 D4 fiber rescaling](verifications/improved/dim68-91-lattice-code-continuation/) | — |
-| 70 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **1 360 986 112** | **SOTA** | 4.10x | — | updated 2026-11-10 | [Gamma72 affine slices](verifications/improved/dim70-71-gamma72-cross-sections/affine70/) | — |
+| 70 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **1 361 134 720** | **SOTA** | 4.10x | — | updated 2026-11-17 | [D4-profile compression with anisotropic planar heads and independently replayed Gamma72 populations](verifications/improved/dim70-gamma72-d4-planar-heads/) | — |
 | 71 | 331 737 984 | [Edel–Rains–Sloane 64D](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **2 623 578 936** | **SOTA** | +690.858769% | — | updated 2026-11-17 | [Mixed-shell Gamma72 sections](verifications/improved/dim68-91-lattice-code-continuation/) | — |
 | 73 | 6 218 175 602 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [1D tail](common/published.py) *(derived)* | **6 218 206 932** | **SOTA** | +0.000504% | — | since 2026-08-30 | [Gamma72 cosets plus caps](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 74 | 6 218 175 606 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [2D tail](common/published.py) *(derived)* | **6 218 211 606** | **SOTA** | +0.000579% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
@@ -558,7 +560,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 67 packages, 70 dimensions
+### `verifications/improved/` — 68 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -866,10 +868,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 140 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 141 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 159 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 160 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

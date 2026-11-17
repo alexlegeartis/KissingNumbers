@@ -624,3 +624,5 @@ for _d in (87,88,89):
     STATUS[_d]=('codes','compressed ternary fibers with nonlinear hexagonal phases and pure-head roots; exact union proof with inherited parent minima')
 
 STATUS[92]=('codes','four-row partition heads with three crosspolytope alphabets and exact RS/root augmentation')
+
+STATUS[70] = ('heads', 'D4-profile compression with anisotropic planar heads and independently replayed Gamma72 populations; other profiles and heads remain open; no global-optimality claim (dim70-gamma72-d4-planar-heads/verify.py)')

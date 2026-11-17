@@ -90,6 +90,7 @@ DRIVERS.append(('94–95D E6 and E7 head exchanges',os.path.join(V,'dim94-95-e6-
 DRIVERS.append(('92D two-alphabet fibers',os.path.join(V,'dim92-two-alphabet-fibers'),'final.py'))
 DRIVERS.append(('87–89D nonlinear phase unions',os.path.join(V,'dim87-89-hexagonal-phase-unions'),'final.py'))
 DRIVERS.append(('92D four-row partition heads',os.path.join(V,'dim92-four-row-partition-heads'),'final.py'))
+DRIVERS.append(('70D D4 planar heads',os.path.join(V,'dim70-gamma72-d4-planar-heads'),'final.py'))
 TABLES = [(os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
           (os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py')]
 

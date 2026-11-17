@@ -28,7 +28,7 @@ Historical construction values are retained. Current bounds are in the root regi
 | 67 | 355 090 822 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 355 095 446 |
 | 68 | 375 222 168 | **this work** -- shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay | 471 886 208 (retained) |
 | 69 | 627 822 180 | **this work** -- k-point moment LP with the Gram exhibited in Gamma_72 | 746 325 051 |
-| 70 | 1 249 778 250 | **this work** -- k-point moment LP on cross-sections of Gamma_72 | 1 360 986 112 |
+| 70 | 1 249 778 250 | **this work** -- k-point moment LP on cross-sections of Gamma_72 | 1 360 986 112 (retained) |
 | 71 | 2 603 658 750 (retained) | **this work** -- k-point moment LP on cross-sections of Gamma_72 | 2 603 658 750 (retained) |
 | 72 | 6 218 175 600 | Cohn's table: Nebe 2012, J. Reine Angew. Math. 673, 237-247 (Gamma_72) | — |
 | 73 | 6 218 206 932 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 218 206 932 |

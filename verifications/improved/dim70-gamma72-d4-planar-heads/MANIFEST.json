@@ -1,0 +1,19 @@
+{
+  "../dim68-91-lattice-code-continuation/mixed_shell71_20261117/leech_structure.npz": "3253520e074ea6866bb39c22bf05b595945b6183b48d9ae145758c65db79752e",
+  "../dim68-91-lattice-code-continuation/public_gamma72_provenance_20261117/THEOREM.md": "0953b2aa4c3191432161c19de23433812b5e482b3c3f9cbacd2140d9471ab6c5",
+  "../dim68-91-lattice-code-continuation/public_gamma72_provenance_20261117/leech_min4_witnesses.npz": "fa0bc64bb109affec930edf200e10527d16a9554bf65bd63b35d26da8203f5f4",
+  "../dim68-91-lattice-code-continuation/public_gamma72_provenance_20261117/source.json": "a9017bdfc73fdcd86dd963fc9164a83fa30a9838c8566ec03d164591e3b0e38b",
+  "../dim68-91-lattice-code-continuation/public_gamma72_provenance_20261117/verify.py": "f0c08f756dbdb0a48b60d4bba761d6a3a3ba865c2d157c1a3437a24b33e1c246",
+  "README.md": "e24e801afd843e910b8c8aa8a39d424ca6453c1757fb3f1e8f1887b7bf445c21",
+  "candidate.json": "1ba5b0ef0ff2be308bc8a78e9d07b16f1edd3bfa3efe3f24f9d0fc18f3622d2b",
+  "check_geometry.py": "b8ea1b81f38a5410e452a38cdc5bdc56375eed7f00174b6229c94e053741d972",
+  "claims.json": "f91c99ba60e1cdf6f0da67694b16ca1ab7071bf429c2345a9c454983f5ee1816",
+  "count128.cpp": "b6f8cbf2cbb6b624f957e8d009c05dc57ee3588726294e8857d0bf1c2cbd8381",
+  "final.py": "3d6411218e86c8fa9e3b8a12dec5da74fffb2ad94f1a4b60cb5bc8738e47eb95",
+  "independent_replay.log": "b844d14d4f66ecacac1757f1c9bc06218009bbb7baf6bce9a2a372f27731f6e1",
+  "independent_result.json": "0a169822a565c50d1013959e3ca81173e6d4078b9a5f8fda8ce69f396fb4a58d",
+  "kernel_0.npz": "f81e2eb8b5e30830f178ba46ec99d2b3c5f68ad77350e4a6183ef3729b5de1b3",
+  "provenance_replay.log": "e700822ebf4730b7438cbb789c2597d571a00e22fc1aba46a7db06c7542e906c",
+  "replay.py": "afe844f6acd990e3ece281331f7eb1cbd43995ba94edb03a97fbe2f5e4bb8160",
+  "verify.py": "cfc645a1e7ae704531edddf3267b18da96a715d50bc12f256954c105a113807e"
+}

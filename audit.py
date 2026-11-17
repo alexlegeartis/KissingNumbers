@@ -508,6 +508,12 @@ _driver=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_driver)
 for _row in _driver.results():
     add(_row['dimension'],_row['total'],_package,'verify.py: four-row prefix fibers, complete partition-head Grams and independently checked RS/root geometry')
 
+_package='dim70-gamma72-d4-planar-heads'
+_spec=importlib.util.spec_from_file_location('planar70',os.path.join(IMP,_package,'final.py'))
+_driver=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_driver)
+for _row in _driver.results():
+    add(_row['dimension'],_row['total'],_package,'verify.py: exact same/cross-fiber geometry and fresh source-bound population replay')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
@@ -2046,6 +2052,7 @@ if '--write-results' in sys.argv and not fail:
         return "{:,}".format(x).replace(",", "\u202f")
 
     PKGDOC = {
+        'dim70-gamma72-d4-planar-heads': 'D4-profile compression with anisotropic planar heads and independently replayed Gamma72 populations',
         'dim92-four-row-partition-heads': 'Four-row partition heads with three crosspolytope alphabets and compatible Reed-Solomon/root layers',
         'dim87-89-hexagonal-phase-unions': 'Compressed ternary fibers with nonlinear hexagonal phases and pure-head root systems',
         'dim92-two-alphabet-fibers': 'Two Gray alphabets with D4 heads, shortened support/sign codes and compatible Reed-Solomon layers',
