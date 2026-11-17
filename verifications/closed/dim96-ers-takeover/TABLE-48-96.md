@@ -37,14 +37,14 @@ Historical construction values are retained. Current bounds are in the root regi
 | 76 | 6 218 315 288 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 218 315 288 |
 | 77 | 6 218 490 542 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 218 490 542 |
 | 78 | 6 218 688 770 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 218 688 770 |
-| 79 | 6 218 922 650 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 218 922 650 |
-| 80 | 6 219 474 300 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 219 474 300 |
-| 81 | 6 219 649 576 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 219 649 576 |
-| 82 | 6 220 170 666 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 220 170 666 |
-| 83 | 6 221 008 658 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 221 008 658 |
-| 84 | 6 222 025 404 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 222 025 404 |
-| 85 | 6 223 222 688 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 223 222 688 |
-| 86 | 6 225 165 512 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 225 165 512 |
+| 79 | 6 219 067 454 | **this work** -- Gamma72 norm-ten shells, exact moments and marginals, local triangle bounds and blocked independence recurrence | 6 219 067 454 |
+| 80 | 6 219 714 034 | **this work** -- Gamma72 norm-ten shells, exact moments and marginals, local triangle bounds and blocked independence recurrence | 6 219 714 034 |
+| 81 | 6 220 589 740 | **this work** -- Gamma72 norm-ten shells, exact moments and marginals, local triangle bounds and blocked independence recurrence | 6 220 589 740 |
+| 82 | 6 221 706 936 | **this work** -- Gamma72 norm-ten shells, exact moments and marginals, local triangle bounds and blocked independence recurrence | 6 221 706 936 |
+| 83 | 6 223 067 174 | **this work** -- Gamma72 norm-ten shells, exact moments and marginals, local triangle bounds and blocked independence recurrence | 6 223 067 174 |
+| 84 | 6 224 663 766 | **this work** -- Gamma72 norm-ten shells, exact moments and marginals, local triangle bounds and blocked independence recurrence | 6 224 663 766 |
+| 85 | 6 226 484 034 | **this work** -- Gamma72 norm-ten shells, exact moments and marginals, local triangle bounds and blocked independence recurrence | 6 226 484 034 |
+| 86 | 6 228 511 388 | **this work** -- Gamma72 norm-ten shells, exact moments and marginals, local triangle bounds and blocked independence recurrence | 6 228 511 388 |
 | 87 | 6 226 194 610 | **this work** -- Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D | 6 226 194 610 |
 | 88 | 6 921 251 584 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays | 6 967 552 256 |
 | 89 | 9 229 354 136 | **this work** -- published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays | 9 270 596 604 |

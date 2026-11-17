@@ -1,5 +1,7 @@
 # Norm-ten layers over Gamma72
 
+This is a retained construction and its historical proof tables. Dimensions79–86 now have stronger [triangle-sensitive norm-ten bounds](../../../dim79-86-norm10-triangle-layers/); the source lattice and moment premises here remain in use.
+
 The parent is the even unimodular Gamma72 lattice of minimum squared norm 8.
 Its minimal shell has 6,218,175,600 points. These are literature inputs from
 [Nebe's lattice catalogue](https://www.math.rwth-aachen.de/~Gabriele.Nebe/LATTICES/neb72.html)
@@ -105,7 +107,7 @@ selected with probability the reciprocal of its closed degree. Taking
 expectations and rounding up proves the Caro--Wei bound used by the checker.
 The number of points added is twice this integer bound, plus the pure tails.
 
-| Dimension | s | q | Tails | Earlier guaranteed pairs | Pure tails | Current weighted total |
+| Dimension | s | q | Tails | Earlier guaranteed pairs | Pure tails | Retained weighted total |
 |---:|:---:|---:|---:|---:|---:|---:|
 | 77 | 16/25 | 40 | 560 | 144,688 | 40 | **6,218,490,542** |
 | 78 | 16/25 | 40 | 2,160 | 255,104 | 72 | **6,218,688,770** |
@@ -135,7 +137,7 @@ enumerates all 64 graphs on four vertices and all 24 weighted clock
 orders, verifying the local-minimum expectation and independence.
 Both isolated wrappers run this independent check as well.
 
-| Dimension | Tail norms q | Tails | Guaranteed pairs | Pure tails | Current bound | Gain over preceding bound |
+| Dimension | Tail norms q | Tails | Guaranteed pairs | Pure tails | Retained bound | Gain over preceding bound |
 |---:|:---:|---:|---:|---:|---:|---:|
 | 77 | 32, 40 | 760 | 157,451 | 40 | **6,218,490,542** | 25,526 |
 | 78 | 8, 40 | 2,232 | 256,549 | 72 | **6,218,688,770** | 2,890 |
@@ -248,7 +250,7 @@ represented integer below 2^24. `refilled_shell10_verification.json` and
 
 The signed-tail certificates improve five more dimensions:
 
-| Dimension | Rank k | Support weights | Guaranteed pairs | Pure tails | Current bound | Gain over preceding repository bound |
+| Dimension | Rank k | Support weights | Guaranteed pairs | Pure tails | Retained bound | Gain over preceding repository bound |
 |---:|---:|:---:|---:|---:|---:|---:|---:|
 | 82 | 10 | 1, 4 | 997,443 | 180 | **6,220,170,666** | 169,130 |
 | 83 | 11 | 1, 4 | 1,416,419 | 220 | **6,221,008,658** | 474,298 |

@@ -1,0 +1,14 @@
+{
+  "status": "EXACT_AUDIT_PASS_WITH_PUBLISHED_SOURCE_PREMISES",
+  "dimension": 86,
+  "kissing_bound": 6228511388,
+  "pairs": 5167712,
+  "degree": 38325971576,
+  "triangles": 135239973884495409913,
+  "graph_vertices": 122376561143316480,
+  "dual_checks": 9,
+  "input_sha256": {
+    "exact86_marginal.json": "db87e0be0a9e864d3e7a62129bda7523d3928f13bdb11397cd718fc3e7e0e622",
+    "blocked86_marginal.json": "fb714e35959a0e9af5758e2b83c5afacad426f963e995d79c44d025adbf3fb60"
+  }
+}

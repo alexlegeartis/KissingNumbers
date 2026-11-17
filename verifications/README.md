@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-68 packages, one per **construction idea** rather than one per dimension, because several
+69 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -165,3 +165,5 @@ construction. Every current registered claim is in `improved/`.
    them about things that did not work.
 
 - [70D D4-profile compression with anisotropic planar heads](improved/dim70-gamma72-d4-planar-heads/): 1,361,134,720 points; all 121 populations freshly replayed and exact geometry checked.
+
+- [79–86D exact local-triangle norm-ten layers](improved/dim79-86-norm10-triangle-layers/): rational moment duals, blocked independence bounds and independently checked kissing geometry.

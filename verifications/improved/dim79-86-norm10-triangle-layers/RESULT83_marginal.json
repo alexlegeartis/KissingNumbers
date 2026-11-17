@@ -1,0 +1,15 @@
+{
+  "status": "PASS transformed recurrence and every rational block; conditional on graph/theorem premises audited separately",
+  "dimension": 83,
+  "blocks": 40,
+  "degree": 28731981896,
+  "triangles": "56009488409956742484",
+  "graph_vertices": 40343921256038400,
+  "pairs": 2445677,
+  "bound": 6223067174,
+  "block_start": 10871221594,
+  "source_sha256": {
+    "exact83_marginal.json": "ee165bbdf9276f672ff0706022f30e928c3d348c335144aaea0e8994d4010515",
+    "blocked83_marginal.json": "8f68fe9c95e70f446f241ba571182c43623ea26315c7b2abe055f1adad25ffe1"
+  }
+}

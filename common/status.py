@@ -626,3 +626,6 @@ for _d in (87,88,89):
 STATUS[92]=('codes','four-row partition heads with three crosspolytope alphabets and exact RS/root augmentation')
 
 STATUS[70] = ('heads', 'D4-profile compression with anisotropic planar heads and independently replayed Gamma72 populations; other profiles and heads remain open; no global-optimality claim (dim70-gamma72-d4-planar-heads/verify.py)')
+
+for _n in range(79,87):
+    STATUS[_n] = ('heads', 'joint source moments, local triangle bounds and tail families can improve this existence construction; no optimality claim (dim79-86-norm10-triangle-layers/verify.py)')

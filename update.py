@@ -25,9 +25,9 @@ diverged, and step 3 would paper over it.
 
 HOW TO IMPROVE A BOUND.  RESULTS.md's status column says what would have to change:
 
-    cosets     dimensions 36-37 and 73-86. Larger phase codes, nearest subsets,
+    cosets     dimensions 36-37 and 73-78. Larger phase codes, nearest subsets,
                or compatible tail assignments remain open; no construction ceiling is claimed.
-    heads      dimensions 25-31, 34-35, 38, 40-46 and 68-71. Joint layer and family/head searches and partial families
+    heads      dimensions 25-31, 34-35, 38, 40-46, 68-71 and 79-86. Joint layer and family/head searches and partial families
                remain open. Complete-family populations retain their documented assumptions.
     codes      dimensions 32-33, 39, 61-67 and 87-96. Improve the explicit input codes,
                sparse support layers, compression maps or central sections.
@@ -90,6 +90,7 @@ DRIVERS.append(('94–95D E6 and E7 head exchanges',os.path.join(V,'dim94-95-e6-
 DRIVERS.append(('92D two-alphabet fibers',os.path.join(V,'dim92-two-alphabet-fibers'),'final.py'))
 DRIVERS.append(('87–89D nonlinear phase unions',os.path.join(V,'dim87-89-hexagonal-phase-unions'),'final.py'))
 DRIVERS.append(('92D four-row partition heads',os.path.join(V,'dim92-four-row-partition-heads'),'final.py'))
+DRIVERS.append(('79-86D norm-ten triangle layers',os.path.join(V,'dim79-86-norm10-triangle-layers'),'final.py'))
 DRIVERS.append(('70D D4 planar heads',os.path.join(V,'dim70-gamma72-d4-planar-heads'),'final.py'))
 TABLES = [(os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
           (os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py')]

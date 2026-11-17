@@ -1,5 +1,7 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
+**17 November 2026: exact triangle-sensitive norm-ten layers in79–86D.** Eight independently verified kissing-number improvements, each small relative to the existing multi-billion-point bounds. [Counts, source premises and complete replay](verifications/improved/dim79-86-norm10-triangle-layers/). These are existence results, without a full selected-coordinate list or a worldwide-priority guarantee.
+
 **17 November 2026: 70D planar-head compression.** At least **1,361,134,720** kissing points, +148,608 over the previous repository construction. [Exact geometry and independently replayed populations](verifications/improved/dim70-gamma72-d4-planar-heads/). This is a small verified gain, not a worldwide-priority assertion.
 
 **17 November 2026: four-row partition-head construction in 92D.** Exact lower bound **29,797,911,144**, with complete partition-head and cross-layer verification. [Independently audited package](verifications/improved/dim92-four-row-partition-heads/).
@@ -232,14 +234,14 @@ The phase continuation separately records its [comparison scope](common/source_r
 | 76 | 6 218 175 624 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [4D tail](common/published.py) *(derived)* | **6 218 315 288** | **SOTA** | +0.00225% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 77 | 6 218 175 640 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [5D tail](common/published.py) *(derived)* | **6 218 490 542** | **SOTA** | +0.005064% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
 | 78 | 6 218 175 672 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [6D tail](common/published.py) *(derived)* | **6 218 688 770** | **SOTA** | +0.008252% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 79 | 6 218 175 726 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [7D tail](common/published.py) *(derived)* | **6 218 922 650** | **SOTA** | +0.012012% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 80 | 6 218 175 840 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ E8 (tabulated direct sum) | **6 219 474 300** | **SOTA** | +0.0209% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 81 | 6 218 175 906 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [9D tail](common/published.py) *(derived)* | **6 219 649 576** | **SOTA** | +0.0237% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 82 | 6 218 176 110 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [10D tail](common/published.py) *(derived)* | **6 220 170 666** | **SOTA** | +0.032076% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 83 | 6 218 176 204 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [11D tail](common/published.py) *(derived)* | **6 221 008 658** | **SOTA** | +0.045551% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 84 | 6 218 176 441 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [12D tail](common/published.py) *(derived)* | **6 222 025 404** | **SOTA** | +0.061899% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 85 | 6 218 176 754 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [13D tail](common/published.py) *(derived)* | **6 223 222 688** | **SOTA** | +0.081148% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
-| 86 | 6 218 177 532 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [14D tail](common/published.py) *(derived)* | **6 225 165 512** | **SOTA** | +0.112% | — | since 2026-08-30 | [Gamma72 nearest cosets](verifications/improved/dim73-88-gamma72-cosets/) | — |
+| 79 | 6 218 175 726 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [7D tail](common/published.py) *(derived)* | **6 219 067 454** | **SOTA** | +0.014341% | — | updated 2026-11-17 | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) | — |
+| 80 | 6 218 175 840 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ E8 (tabulated direct sum) | **6 219 714 034** | **SOTA** | +0.024737% | — | updated 2026-11-17 | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) | — |
+| 81 | 6 218 175 906 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [9D tail](common/published.py) *(derived)* | **6 220 589 740** | **SOTA** | +0.038819% | — | updated 2026-11-17 | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) | — |
+| 82 | 6 218 176 110 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [10D tail](common/published.py) *(derived)* | **6 221 706 936** | **SOTA** | +0.056782% | — | updated 2026-11-17 | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) | — |
+| 83 | 6 218 176 204 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [11D tail](common/published.py) *(derived)* | **6 223 067 174** | **SOTA** | +0.078656% | — | updated 2026-11-17 | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) | — |
+| 84 | 6 218 176 441 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [12D tail](common/published.py) *(derived)* | **6 224 663 766** | **SOTA** | +0.104328% | — | updated 2026-11-17 | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) | — |
+| 85 | 6 218 176 754 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [13D tail](common/published.py) *(derived)* | **6 226 484 034** | **SOTA** | +0.133597% | — | updated 2026-11-17 | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) | — |
+| 86 | 6 218 177 532 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [14D tail](common/published.py) *(derived)* | **6 228 511 388** | **SOTA** | +0.166188% | — | updated 2026-11-17 | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) | — |
 | 87 | 6 218 178 164 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [15D tail](common/published.py) *(derived)* | **7 266 268 830** | **SOTA** | +16.855269% | — | updated 2026-11-17 | [Compressed ternary fibers, nonlinear phases and pure-head roots](verifications/improved/dim87-89-hexagonal-phase-unions/) | — |
 | 88 | 6 218 179 920 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [16D tail](common/published.py) *(derived)* | **9 590 791 776** | **SOTA** | +54.237927% | — | updated 2026-11-17 | [Compressed ternary fibers, nonlinear phases and pure-head roots](verifications/improved/dim87-89-hexagonal-phase-unions/) | — |
 | 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **12 690 155 704** | **SOTA** | +104.081467% | — | updated 2026-11-17 | [Compressed ternary fibers, nonlinear phases and pure-head roots](verifications/improved/dim87-89-hexagonal-phase-unions/) | — |
@@ -560,7 +562,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 68 packages, 70 dimensions
+### `verifications/improved/` — 69 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -868,10 +870,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 141 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 142 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 160 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 161 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

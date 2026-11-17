@@ -1,0 +1,10 @@
+dual PASS (4, 4, 4) 139
+dual PASS (5, 4, 4) 129
+dual PASS (5, 3, 3) 129
+dual PASS (6, 4, 2) 113
+dual PASS (6, 4, 4) 113
+dual PASS (6, 3, 1) 113
+dual PASS (6, 3, 3) 113
+dual PASS (6, 2, 2) 113
+dual PASS (6, 1, 1) 113
+{'status': 'EXACT_AUDIT_PASS_WITH_PUBLISHED_SOURCE_PREMISES', 'dimension': 83, 'kissing_bound': 6223067174, 'pairs': 2445677, 'degree': 28731981896, 'triangles': 56009488409956742484, 'graph_vertices': 40343921256038400, 'dual_checks': 9, 'input_sha256': {'exact83_marginal.json': 'ee165bbdf9276f672ff0706022f30e928c3d348c335144aaea0e8994d4010515', 'blocked83_marginal.json': '8f68fe9c95e70f446f241ba571182c43623ea26315c7b2abe055f1adad25ffe1'}}
