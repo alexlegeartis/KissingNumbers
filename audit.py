@@ -113,6 +113,20 @@ import sys
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+def _project_documentation():
+    """Read the linked root documentation without weakening existing prose checks.
+
+    README.md retains the result table; detailed methods and historical scope moved
+    to RESEARCH_GUIDE.md and HISTORY.md. All three files are required.
+    """
+    return '\n\n'.join(
+        io.open(os.path.join(HERE, name), encoding='utf-8', errors='replace').read()
+        for name in ('README.md', 'RESEARCH_GUIDE.md', 'HISTORY.md')
+    )
+
+
 REPOSITORY_ONLY = '--repository-only' in sys.argv
 sys.path.insert(0, os.path.join(HERE, 'common'))
 from published import (COHN, floor_for, upper_for,       # noqa: E402
@@ -741,7 +755,7 @@ for _tier in _TIERS:
 # The top-level scripts too.  update.py -- the maintainer's entry point, which runs every
 # driver, the audit, the table generators, the paper's checkers and the whole suite -- was
 # named in no markdown file at all, because this check looked only inside packages.
-_rtext = io.open(os.path.join(HERE, 'README.md'), encoding='utf-8', errors='replace').read()
+_rtext = _project_documentation()
 for _f in sorted(_f for _f in os.listdir(HERE) if _f.endswith('.py')):
     if not _named(_f, _rtext):
         _undoc.append('(top level): %s' % _f)
@@ -850,7 +864,7 @@ else:
     # "eleven ideas, 48 dimensions" against twelve and 50.  Both are counted, so both are read
     # back.  The sentence under the heading used to spell out two more counts; it no longer
     # names any, which is why nothing below looks for them.
-    _rmt = io.open(os.path.join(HERE, 'README.md'), encoding='utf-8', errors='replace').read()
+    _rmt = _project_documentation()
     _impath = os.path.join(_VDIR, 'improved')
     _idirs = [_d for _d in os.listdir(_impath) if os.path.isdir(os.path.join(_impath, _d))]
     # An EMPTY directory is not a package: git does not track one, a clone will not have it,
@@ -908,7 +922,7 @@ else:
         _khave = len(re.findall(r'^## ', io.open(_kp, encoding='utf-8',
                                                  errors='replace').read(), re.M))
         for _m in re.finditer(r'KNOWLEDGE\.md.{0,40}?(\d+) sections',
-                              io.open(_rootp, encoding='utf-8', errors='replace').read()):
+                              _project_documentation()):
             if int(_m.group(1)) != _khave:
                 _vrbad += 1
                 bad("README.md says KNOWLEDGE.md has %s sections; it has %d"
@@ -1045,7 +1059,7 @@ print("5g. the README's description of the paper partitions its earlier snapshot
 # that state it, so the PDF is opened in one place only.  This check needs no PDF -- it used
 # to branch on one, and so skipped itself in exactly the clean checkout where it matters.
 _rm = os.path.join(HERE, 'README.md')
-_wr = io.open(_rm, encoding='utf-8').read()
+_wr = _project_documentation()
 _m = re.search(r'is a (\d+)-page account of(.{0,600}?)\n\n', _wr, re.S)
 _current_paper = re.search(r'The\s+main table reports (?:all )?(\d+)(?: of the (\d+))? registered claims', _wr)
 _paper_scope_file = os.path.join(HERE, 'common', 'manuscript_scope.json')
@@ -1809,7 +1823,7 @@ except Exception as _e:                                                      # n
 if _JOBS is not None:
     _fast = sum(1 for _j in _JOBS if _j[4])
     _rmp = os.path.join(HERE, 'README.md')
-    _rm = io.open(_rmp, encoding='utf-8').read()
+    _rm = _project_documentation()
     # README.md states it and so does run_all.py's own header, in the same phrasing, so one
     # regex covers both.  The header was the one that went stale unnoticed: it read
     # "55 scripts ... 71 scripts" against 59 and 74 on 2026-09-15.
