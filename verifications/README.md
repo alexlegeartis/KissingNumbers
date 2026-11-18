@@ -7,12 +7,14 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-72 packages, one per **construction idea** rather than one per dimension, because several
+74 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
+| [`dim29-takhanov-auxiliary-exchange`](improved/dim29-takhanov-auxiliary-exchange/) | 29 | 232,154 points, one above Takhanov. Exact midpoint and auxiliary exchange. |
+| [`dim30-contact-sum-exchanges`](improved/dim30-contact-sum-exchanges/) | 30 | 248,351 points. Exact contact-sum exchange and complete geometry. |
 | [`dim28-takhanov-root-exchange`](improved/dim28-takhanov-root-exchange/) | 28 | 223,528 points, 32 above Takhanov. Exact source exchange and complete geometry. |
 | [`dim30-31-midpoint-exchanges`](improved/dim30-31-midpoint-exchanges/) | 30, 31 | 248,289 and 251,524 points. Complete exact geometry and separate integer exchange checks. |
 | [`dim88-89-z8-prefix-anticode`](improved/dim88-89-z8-prefix-anticode/) | 88–89 | Punctured Z8 fibers; 89D by thirteen mixed-latitude fibers |

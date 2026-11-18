@@ -1,5 +1,9 @@
 # Results
 
+The 18 November 2026 E8 and auxiliary exchange gives 232154 in 29D, one above the pinned Takhanov witness. Complete exact geometry and the 22-for-21 exchange replay from verifications/improved/dim29-takhanov-auxiliary-exchange/.
+
+Two 18 November 2026 contact-sum rounds give 248351 in 30D, gaining 62 over the 248289-point witness. The exact exchange and every final pair replay from verifications/improved/dim30-contact-sum-exchanges/.
+
 18 November 2026: complete coordinate certificates give 223528 in 28D, 248289 in 30D and 251524 in 31D. The 28D contact-cycle exchange gains 32 over the pinned Takhanov witness. The 30D and 31D midpoint exchanges gain 77 and 104 over the preceding repository certificates. Every final pair is checked exactly.
 
 17 November 2026: mixed-shell Gamma72 sections and ternary QR48 head compression improve dimensions 71 and 87–91. Exact finite verifiers and source attributions are in verifications/improved/dim68-91-lattice-code-continuation/. Comparisons are against retained repository constructions, not a worldwide-priority audit.
@@ -89,8 +93,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 26 | 199 868 | **201 188** | 1.01 | `heads` | [26D radical-orbit and 27D E8 head-frame exchanges over PackingStar; complete exact final geometry and independent integer exchanges](verifications/improved/dim26-27-radical-orbits/) |
 | 27 | 201 589 | **209 884** | 1.04 | `heads` | [26D radical-orbit and 27D E8 head-frame exchanges over PackingStar; complete exact final geometry and independent integer exchanges](verifications/improved/dim26-27-radical-orbits/) |
 | 28 | 205 172 | **223 528** | 1.09 | `heads` | [E8 contact cycles and auxiliary-frame exchange over the pinned Takhanov witness; complete exact geometry](verifications/improved/dim28-takhanov-root-exchange/) |
-| 29 | 209 496 | **231 814** | 1.11 | `heads` | [native partial transversal designs without complete-parent extendibility; exact module, source exchange and full final geometry](verifications/improved/dim29-30-native-partial-design/) |
-| 30 | 220 440 | **248 289** | 1.13 | `heads` | [joint row-midpoint, fibre, auxiliary and Leech-root exchanges; complete exact geometry](verifications/improved/dim30-31-midpoint-exchanges/) |
+| 29 | 209 496 | **232 154** | 1.11 | `heads` | [E8 midpoint and auxiliary exchange over Takhanov; complete exact geometry](verifications/improved/dim29-takhanov-auxiliary-exchange/) |
+| 30 | 220 440 | **248 351** | 1.13 | `heads` | [contact-sum continuation with shared deletion pricing and complete exact geometry](verifications/improved/dim30-contact-sum-exchanges/) |
 | 31 | 238 350 | **251 524** | 1.06 | `heads` | [joint row-midpoint, fibre, auxiliary and Leech-root exchanges; complete exact geometry](verifications/improved/dim30-31-midpoint-exchanges/) |
 | 32 | 352 320 | **352 992** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
 | 33 | 370 240 | **370 408** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
@@ -209,8 +213,9 @@ refreshed table, not more search.
 | 25 | `dim25-critical-cluster` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 26-27 | `dim26-27-radical-orbits` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 28 | `dim28-takhanov-root-exchange` | verify.py: complete exact coordinates and independent direct-integer module exchange |
-| 29 | `dim29-30-native-partial-design` | verify.py: complete exact coordinates and independent direct-integer module exchange |
-| 30-31 | `dim30-31-midpoint-exchanges` | verify.py: complete exact coordinates and independent direct-integer module exchange |
+| 29 | `dim29-takhanov-auxiliary-exchange` | verify.py: complete exact coordinates and independent direct-integer module exchange |
+| 30 | `dim30-contact-sum-exchanges` | verify.py: complete exact coordinates and independent direct-integer module exchange |
+| 31 | `dim30-31-midpoint-exchanges` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 32-35 | `dim32-35-signed-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 36-37 | `dim36-37-orbit-exchange` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 38 | `dim38-joint-latitudes` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |

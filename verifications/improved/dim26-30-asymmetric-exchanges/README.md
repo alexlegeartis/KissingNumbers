@@ -10,8 +10,8 @@ packages, every dimension from 26 through 31 exceeds that pinned comparison.
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 26 | 201,134 | **201,136** | 2 | 59 | 61 | 58 | 201,188 |
 | 28 | 221,664 | **221,694** | 30 | 130 | 160 | 32 | 223,528 |
-| 29 | 231,636 | **231,638** | 2 | 14 | 16 | 22 | 231,814 |
-| 30 | 247,956 | **247,960** | 4 | 80 | 84 | 104 | 248,289 |
+| 29 | 231,636 | **231,638** | 2 | 14 | 16 | 22 | 232,154 |
+| 30 | 247,956 | **247,960** | 4 | 80 | 84 | 104 | 248,351 |
 
 PackingStar's retained points are credited as the baseline. The comparison
 is pinned to commit
@@ -63,8 +63,8 @@ pinned public file. The normal-sector counts change as follows:
 |---|---:|---:|---:|
 | 26 | 334 | 336 | 201,188 |
 | 28 | 648 | 678 | 223,528 |
-| 29 | 728 | 730 | 231,814 |
-| 30 | 1,216 | 1,220 | 248,289 |
+| 29 | 728 | 730 | 232,154 |
+| 30 | 1,216 | 1,220 | 248,351 |
 
 The finite candidate dictionaries combine E8 heads with tail vectors of
 complementary squared norm. The search permits each point and its negative

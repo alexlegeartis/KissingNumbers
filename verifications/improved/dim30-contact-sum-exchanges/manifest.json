@@ -1,0 +1,22 @@
+{
+  "records": [
+    {
+      "dimension": 30,
+      "count": 248351,
+      "added": 188,
+      "removed": 126,
+      "source": {
+        "path": "verifications/improved/dim30-31-midpoint-exchanges/data/coordinates30_248289.npz",
+        "count": 248289,
+        "key": "points",
+        "commit": "315f7838e8e453f14c8715f22917c77f46fa3db3",
+        "sha256": "f282e5a6c22bc29a5b6a502c72dc76ae1ce310e96b4d94225122c89954f04616"
+      },
+      "coordinates": "data/coordinates30_248351.npz",
+      "coordinates_sha256": "ece0feb7b87fcfa835338f56688785b7386352893d34bb81c98cc453b62d93c1",
+      "exchange_file": "data/exchange30.npz",
+      "exchange_sha256": "0323da37fae614fc80e4ae3f25ea13c23519ca41f703d0c6b0029430234cd9c2",
+      "coordinate_array_sha256": "56b5fd42877391f50cdbf2dc7929727bcba88ec62c8c735834d74229d14f48a7"
+    }
+  ]
+}

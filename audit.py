@@ -457,7 +457,7 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim2
 
 # Exact 13 November module replacements, including the retained BW14 checkpoint.
 for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sloane-section',
-                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges'):
+                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -2142,6 +2142,8 @@ if '--write-results' in sys.argv and not fail:
         'dim61-68-95-96-code-layers': 'shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay',
         'dim26-30-asymmetric-exchanges': 'signed-point normal-sector exchanges without antipodal constraints; full independent exact all-pairs replay',
         'dim28-takhanov-root-exchange': 'E8 contact cycles and auxiliary-frame exchange over the pinned Takhanov witness; complete exact geometry',
+        'dim29-takhanov-auxiliary-exchange': 'E8 midpoint and auxiliary exchange over Takhanov; complete exact geometry',
+        'dim30-contact-sum-exchanges': 'contact-sum continuation with shared deletion pricing and complete exact geometry',
         'dim30-31-midpoint-exchanges': 'joint row-midpoint, fibre, auxiliary and Leech-root exchanges; complete exact geometry',
         'dim30-certificate-unions': 'exact unions with retained Barnes-Wall and joint-refill certificates; complete final geometry and independent integer exchange',
         'dim26-27-radical-orbits': '26D radical-orbit and 27D E8 head-frame exchanges over PackingStar; complete exact final geometry and independent integer exchanges',
@@ -2201,6 +2203,10 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append("")
+    out.append('The 18 November 2026 E8 and auxiliary exchange gives 232154 in 29D, one above the pinned Takhanov witness. Complete exact geometry and the 22-for-21 exchange replay from verifications/improved/dim29-takhanov-auxiliary-exchange/.')
+    out.append("")
+    out.append('Two 18 November 2026 contact-sum rounds give 248351 in 30D, gaining 62 over the 248289-point witness. The exact exchange and every final pair replay from verifications/improved/dim30-contact-sum-exchanges/.')
     out.append("")
     out.append('18 November 2026: complete coordinate certificates give 223528 in 28D, 248289 in 30D and 251524 in 31D. The 28D contact-cycle exchange gains 32 over the pinned Takhanov witness. The 30D and 31D midpoint exchanges gain 77 and 104 over the preceding repository certificates. Every final pair is checked exactly.')
     out.append("")

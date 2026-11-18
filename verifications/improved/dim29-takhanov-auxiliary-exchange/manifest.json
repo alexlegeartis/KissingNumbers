@@ -1,0 +1,23 @@
+{
+  "records": [
+    {
+      "dimension": 29,
+      "count": 232154,
+      "added": 22,
+      "removed": 21,
+      "source": {
+        "path": "verifications/improved/dim29-takhanov-auxiliary-exchange/data/takhanov_d29_alt_232153.npz",
+        "count": 232153,
+        "key": "points",
+        "sha256": "e7f2a1187c0b280cf1d4ae5689d2adb58db17eda141907e3b21893cef71b90f7",
+        "commit": "dadcb2940f7c3c3bd478b0543931d3eef9f4bd65",
+        "upstream_url": "https://github.com/k-nic/KissingNumbers/blob/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1/certificates/data/d29_alt_coordinates.npz"
+      },
+      "coordinates": "data/coordinates29_232154.npz",
+      "coordinates_sha256": "5daac8c4449cfaff1e9b73d8d7de9baced5a54f92e84f45a28cc8764a5b5cbd4",
+      "exchange_file": "data/exchange29.npz",
+      "exchange_sha256": "130c0c144b014e1afa2284242718918fa7ccc2a9af8dd026a10d1a6a5aa9bd3e",
+      "coordinate_array_sha256": "f62df9eb2b3cdf7442828722aeb8b7e66441ffc6c1a16043429f88bec0904a3a"
+    }
+  ]
+}

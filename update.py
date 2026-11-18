@@ -81,6 +81,8 @@ DRIVERS.append(('61-67D compatible sign families', os.path.join(V, 'dim61-67-com
 DRIVERS.append(('68-69D extended Gamma72 moments', os.path.join(V, 'dim68-69-gamma72-extended-moments'), 'final.py'))
 DRIVERS.append(('26D radical-orbit continuation', os.path.join(V, 'dim26-27-radical-orbits'), 'final.py'))
 DRIVERS.append(('28D Takhanov root exchange', os.path.join(V, 'dim28-takhanov-root-exchange'), 'final.py'))
+DRIVERS.append(('29D Takhanov auxiliary exchange', os.path.join(V, 'dim29-takhanov-auxiliary-exchange'), 'final.py'))
+DRIVERS.append(('30D contact-sum exchanges', os.path.join(V, 'dim30-contact-sum-exchanges'), 'final.py'))
 DRIVERS.append(('30D and 31D joint midpoint exchanges', os.path.join(V, 'dim30-31-midpoint-exchanges'), 'final.py'))
 DRIVERS.append(('30D exact certificate unions', os.path.join(V, 'dim30-certificate-unions'), 'final.py'))
 DRIVERS.append(('71D and87–91D lattice/code continuation', os.path.join(V, 'dim68-91-lattice-code-continuation'), 'final.py'))

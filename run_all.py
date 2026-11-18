@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 146 scripts, including large exact certificate replays
-    python run_all.py --full       # 165 scripts, budget about 10 hours
+    python run_all.py              # 148 scripts, including large exact certificate replays
+    python run_all.py --full       # 167 scripts, budget about 10 hours
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -106,6 +106,8 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('29D Takhanov auxiliary exchange and complete geometry', os.path.join(V, 'improved', 'dim29-takhanov-auxiliary-exchange'), ['verify.py'], 1.0, True),
+    ('30D contact-sum exchange and complete geometry', os.path.join(V, 'improved', 'dim30-contact-sum-exchanges'), ['verify.py'], 1.0, True),
     ('28D Takhanov root exchange: complete exact geometry', os.path.join(V, 'improved', 'dim28-takhanov-root-exchange'), ['verify.py'], 1.0, True),
     ('28D Takhanov root exchange: semantic rejection controls', os.path.join(V, 'improved', 'dim28-takhanov-root-exchange'), ['negative_controls.py'], 0.2, True),
     ('30D and 31D joint midpoint exchanges: complete exact geometry', os.path.join(V, 'improved', 'dim30-31-midpoint-exchanges'), ['verify.py'], 2.0, True),
@@ -473,6 +475,8 @@ def _sota_jobs(quick=False):
         ('dim68-91-lattice-code-continuation', ('verify.py',)),
         ('dim28-takhanov-root-exchange', ('verify.py',)),
         ('dim28-takhanov-root-exchange', ('negative_controls.py',)),
+        ('dim29-takhanov-auxiliary-exchange', ('verify.py',)),
+        ('dim30-contact-sum-exchanges', ('verify.py',)),
         ('dim30-31-midpoint-exchanges', ('verify.py',)),
         ('dim30-certificate-unions', ('verify.py',)),
         ('dim30-certificate-unions', ('negative_controls.py',)),
@@ -611,6 +615,10 @@ def _sota_coverage(jobs, results=None):
         ('dim68-91-lattice-code-continuation', [68,69,71,87,88,89,90,91], [('verify.py',)], 'exact rational shell/head geometry, generator ranks and sparse counts; published minimum and design inputs retained'),
         ('dim28-takhanov-root-exchange', [28], [('verify.py',), ('negative_controls.py',)],
          'complete exact geometry for 223528 points, pinned Takhanov source and independent integer exchange'),
+        ('dim29-takhanov-auxiliary-exchange', [29], [('verify.py',)],
+         'complete exact geometry for 232154 points and the pinned 22-for-21 exchange'),
+        ('dim30-contact-sum-exchanges', [30], [('verify.py',)],
+         'complete exact geometry for 248351 points, pinned exchange and separate signed-int64 changed pairs'),
         ('dim30-31-midpoint-exchanges', [30, 31], [('verify.py',)],
          'complete exact geometry for 248289 and 251524 points, pinned source exchanges and independent signed-int64 changed pairs'),
         ('dim30-certificate-unions', [30], [('verify.py',), ('negative_controls.py',)],

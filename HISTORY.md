@@ -11,6 +11,10 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 18 November)</summary>
 
+**18 November 2026 — 29D E8 and auxiliary exchange.** The **232,154**-point witness gains one over Takhanov’s released 232,153-point configuration. [Exact proof](verifications/improved/dim29-takhanov-auxiliary-exchange/).
+
+**18 November 2026 — 30D contact-sum continuation.** Two rounds lift the bound to **248,351**, 62 above the previously published 248,289-point witness. [Exact proof](verifications/improved/dim30-contact-sum-exchanges/).
+
 **18 November 2026 — 28D, 30D and 31D exact exchanges.** The 28D contact-cycle and auxiliary-frame exchange gives **223,528**, 32 above Takhanov’s pinned release and 1,408 above the preceding repository certificate. The joint midpoint exchanges give **248,289 in 30D** and **251,524 in 31D**, 77 and 104 above the preceding repository results. [28D proof](verifications/improved/dim28-takhanov-root-exchange/) · [30D and 31D proofs](verifications/improved/dim30-31-midpoint-exchanges/).
 
 **17 November 2026: mixed-latitude Z8 fibers in 89D.** **13,958,643,714**, +1,073,741,826 (about +8.33333%) over the twelve-fiber embedding. Thirteen fibers with two opposite nonzero heights plus two pure poles, exact pointwise normalization and full inherited parent replay. [Independent complete proof](verifications/improved/dim88-89-z8-prefix-anticode/mixed89/AUDIT.md); no exhaustive worldwide-priority claim.
@@ -357,8 +361,8 @@ comparison is given separately by its source.
 | dim | earlier result | intervening result | source | current repository result |
 |---|---:|---:|---|---:|
 | 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) | 197 586 |
-| 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 231 814 |
-| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 248 289 |
+| 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 232 154 |
+| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 248 351 |
 | 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 524 |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 638 |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 852 |

@@ -2,10 +2,12 @@
 
 The full coordinate witnesses give **248,289 in 30D** and **251,524 in 31D**. The sources are the preceding repository certificates at revision [`fe5d9f7`](https://github.com/alexlegeartis/KissingNumbers/tree/fe5d9f7f63c7fc5dbe209e6bdc7693fbab58dbfc).
 
-| Dimension | Source | Inserted | Removed | Net gain | Final count | Final unordered pairs |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 30 | 248,212 | 545 | 468 | 77 | **248,289** | 30,823,589,616 |
-| 31 | 251,420 | 274 | 170 | 104 | **251,524** | 31,632,035,526 |
+| Dimension | Source | Inserted | Removed | Net gain | Witness count | Witness unordered pairs | Current repository bound |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 30 | 248,212 | 545 | 468 | 77 | **248,289** | 30,823,589,616 | 248,351 |
+| 31 | 251,420 | 274 | 170 | 104 | **251,524** | 31,632,035,526 | 251,524 |
+
+The 248,289-point witness is the source for the [30D contact-sum continuation](../dim30-contact-sum-exchanges/).
 
 The search used row midpoints between Leech vectors with a common octad projection. If the endpoints have squared norm 128 and product 64, their midpoint has squared norm 96. A tail of squared norm 32 restores the target squared norm. Reusing endpoints already omitted from the source makes these insertions cheaper. The joint exchanges also change fibre midpoints, auxiliary points and retained Leech rows. The 30D search continued with candidates obtained by summing points of inner product −64 and optimizing the resulting exchanges.
 

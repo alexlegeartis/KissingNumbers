@@ -50,7 +50,7 @@ retrieved live on **17 November 2026**, with all 48 rows and explicit source cre
 [the dated comparison](common/cohn_20261117.json). It credits this repository in 18D and 25–46D;
 all 23 listed values matched the repository at that checkpoint. The [25 October snapshot](common/cohn_20261025.json)
 and [26 October source review](common/source_review_20261026.json) remain historical records.
-All 70 constructions exceed their recorded historical comparisons. [Takhanov’s 17 November release](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1) supersedes the retained 26D, 27D and 29D values. The November 14 review records complete certificates
+All 70 constructions exceed their recorded historical comparisons. [Takhanov’s 17 November release](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1) supersedes the retained 26D and 27D values. The November 14 review records complete certificates
 exceeding PackingStar's November 11 release in every dimension from 26D through 31D. See the [current comparison](common/source_review_20261114_26_31.json)
 and the retained [October 29 review](common/source_review_20261029_27_31.json).
 Higher-dimensional status uses the separate sources below.
@@ -107,7 +107,11 @@ improvement is claimed in 47D or 48D.
 <details>
 <summary>Detailed construction notes</summary>
 
-- **26–31D (current):** **201 188, 209 884, 222 120, 231 814, 248 212 and 251 420**. The [26D/27D radical-orbit and head-frame exchanges](verifications/improved/dim26-27-radical-orbits/), [28D sextet unions](verifications/improved/dim28-29-november-sextets/), [29D native design](verifications/improved/dim29-30-native-partial-design/), [30D exact certificate unions](verifications/improved/dim30-certificate-unions/) and [31D annealed design](verifications/improved/dim31-annealed-design/) supply complete exact proofs. Earlier construction packages remain available.
+- **26–31D (13 November checkpoint):** **201 188, 209 884, 222 120, 231 814, 248 212 and 251 420**. The [26D/27D radical-orbit and head-frame exchanges](verifications/improved/dim26-27-radical-orbits/), [28D sextet unions](verifications/improved/dim28-29-november-sextets/), [29D native design](verifications/improved/dim29-30-native-partial-design/), [30D exact certificate unions](verifications/improved/dim30-certificate-unions/) and [31D annealed design](verifications/improved/dim31-annealed-design/) supply complete exact proofs. Earlier construction packages remain available.
+
+- **29D** gains one point over Takhanov’s bound of 232,153 by replacing two E8 roots with four midpoints and repacking 19 auxiliary points into 18. [Complete exact proof](verifications/improved/dim29-takhanov-auxiliary-exchange/).
+
+- **30D:** Two contact-sum rounds give **248,351**, 62 above the preceding 248,289-point witness. [Complete exact proof](verifications/improved/dim30-contact-sum-exchanges/).
 
 - **18D:** the base of Cohn–Li's hexagon had a free combinatorial parameter nobody had varied: which coset of RM(1,4) the three six-set families lie in.  Three bent cosets with pairwise-bent sums that do not sum to zero give the twelve tier-B slots three different 512-word spaces instead of one, and tier B rises from 256 to 960
 
@@ -194,7 +198,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 72 packages, 70 dimensions
+### `verifications/improved/` — 74 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -210,7 +214,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | [`dim68-69-gamma72-extended-moments`](verifications/improved/dim68-69-gamma72-extended-moments/) | 68, 69 | 471,886,208 and 746,325,051; actual D7 extension, exact population duals, independent direct-profile proof and two 69D poles |
 | [`dim69-gamma72-head-compression`](verifications/improved/dim69-gamma72-head-compression/) | 69 | retained 743,522,304-point construction; ten slices with one reconstructed coordinate; two independent exact moment and geometry proofs |
 | [`dim49-60-p48-signed-refill`](verifications/improved/dim49-60-p48-signed-refill/) | 49–60 | signed P48 class exchanges; twelve improvements with complete finite class, ownership and tail verification |
-| [`dim29-30-native-partial-design`](verifications/improved/dim29-30-native-partial-design/) | 29,30 | current 231,814 in 29D and retained 248,180 in 30D; native partial designs, exact exchanges and full geometry |
+| [`dim29-30-native-partial-design`](verifications/improved/dim29-30-native-partial-design/) | 29,30 | retained 231,814 in 29D and 248,180 in 30D; native partial designs, exact exchanges and full geometry |
 | [`dim30-leech-sloane-section`](verifications/improved/dim30-leech-sloane-section/) | 30 | retained 248,084; partial-fiber 1,356-point section, complete exact geometry and independent integer reconstruction |
 | [`dim61-62-66-affine-reconstruction`](verifications/improved/dim61-62-66-affine-reconstruction/) | 61, 62, 66 | exact affine sign subcodes and independent replay |
 | [`dim63-65-affine-reconstruction`](verifications/improved/dim63-65-affine-reconstruction/) | 63–65 | exact affine sign subcodes and independent replay |
@@ -401,10 +405,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 146 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 148 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 165 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 167 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

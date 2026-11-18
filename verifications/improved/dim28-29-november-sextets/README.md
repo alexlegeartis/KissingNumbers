@@ -8,7 +8,7 @@ increase across all dimensions 26–31.
 | Dimension | Previous repository certificate | PackingStar, November 11 | This construction | Removed from PackingStar | Added | Current repository bound |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | 28 | 221,988 | 222,104 | **222,120** | 40 | 56 | 223,528 |
-| 29 | 231,697 | 231,774 | **231,776** | 6 | 8 | 231,814 |
+| 29 | 231,697 | 231,774 | **231,776** | 6 | 8 | 232,154 |
 
 The retained points are credited to PackingStar. Its inputs are pinned to
 commit [`2f3453b`](https://github.com/CDM1619/PackingStar/tree/2f3453b79268d55ff7cac3e2f3a3b9d14ef590c6/25D-31D/new_bounds_20261111).
