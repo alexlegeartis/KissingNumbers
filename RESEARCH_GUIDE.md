@@ -48,10 +48,9 @@ improvements. See
 The status notes use [Cohn's leaderboard](https://cohn.mit.edu/kissing-numbers/),
 retrieved live on **17 November 2026**, with all 48 rows and explicit source credits captured in
 [the dated comparison](common/cohn_20261117.json). It credits this repository in 18D and 25–46D;
-all 23 listed values match the current results below. The [25 October snapshot](common/cohn_20261025.json)
+all 23 listed values matched the repository at that checkpoint. The [25 October snapshot](common/cohn_20261025.json)
 and [26 October source review](common/source_review_20261026.json) remain historical records.
-All 70 constructions exceed their recorded historical comparisons and remain best in
-the dated reviewed sources. The November 14 review records complete certificates
+All 70 constructions exceed their recorded historical comparisons. [Takhanov’s 17 November release](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1) supersedes the retained 26D, 27D and 29D values. The November 14 review records complete certificates
 exceeding PackingStar's November 11 release in every dimension from 26D through 31D. See the [current comparison](common/source_review_20261114_26_31.json)
 and the retained [October 29 review](common/source_review_20261029_27_31.json).
 Higher-dimensional status uses the separate sources below.
@@ -195,7 +194,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 69 packages, 70 dimensions
+### `verifications/improved/` — 72 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -402,10 +401,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 142 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
+python run_all.py          # 146 scripts; earlier suite about 40 minutes, plus the October certificate replays, one verdict
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 161 scripts, budget about 10 hours: adds the all-pairs sweep, the
+python run_all.py --full   # 165 scripts, budget about 10 hours: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

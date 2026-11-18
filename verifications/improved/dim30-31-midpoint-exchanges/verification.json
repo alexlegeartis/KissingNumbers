@@ -1,0 +1,58 @@
+[
+  {
+    "verified": true,
+    "dimension": 30,
+    "geometry": {
+      "count": 248289,
+      "dimension": 30,
+      "antipodal_pairs": 123317,
+      "unpaired_points": 1655,
+      "unordered_pairs": 30823589616,
+      "maximum_inner_product": 64,
+      "squared_norm": 128,
+      "inner_product_limit": 64,
+      "kernel": "binary32 exact bounded integers",
+      "absolute_partial_sum_bound": 1920,
+      "matrix_blocks": 649
+    },
+    "exchange": {
+      "source_count": 248212,
+      "retained": 247744,
+      "removed": 468,
+      "added": 545,
+      "gain": 77,
+      "changed_unordered_pairs": 135168720,
+      "maximum_changed_inner_product": 64,
+      "kernel": "direct signed int64"
+    },
+    "coordinate_array_sha256": "b95f50e9ff78b69d3d052c83eb5634b72fce28197878799ade0a66a1b8e0a652"
+  },
+  {
+    "verified": true,
+    "dimension": 31,
+    "geometry": {
+      "count": 251524,
+      "dimension": 31,
+      "antipodal_pairs": 125602,
+      "unpaired_points": 320,
+      "unordered_pairs": 31632035526,
+      "maximum_inner_product": 64,
+      "squared_norm": 128,
+      "inner_product_limit": 64,
+      "kernel": "binary32 exact bounded integers",
+      "absolute_partial_sum_bound": 1984,
+      "matrix_blocks": 657
+    },
+    "exchange": {
+      "source_count": 251420,
+      "retained": 251250,
+      "removed": 170,
+      "added": 274,
+      "gain": 104,
+      "changed_unordered_pairs": 68879901,
+      "maximum_changed_inner_product": 64,
+      "kernel": "direct signed int64"
+    },
+    "coordinate_array_sha256": "f19261413d1022f3b67b2df2acc753ff8e87d9c68dc4415f2a4109f91e121517"
+  }
+]

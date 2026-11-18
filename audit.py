@@ -457,7 +457,7 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim2
 
 # Exact 13 November module replacements, including the retained BW14 checkpoint.
 for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sloane-section',
-                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions'):
+                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -1793,6 +1793,8 @@ else:
     _quotes = []
     for _rel, _pat in (('README.md',
                         r'became the search space, and cost ([0-9\u202f ]+) spheres'),
+                       ('RESEARCH_GUIDE.md',
+                        r'became the search space, and cost ([0-9\u202f ]+) spheres'),
                        ('../notes/PAPER-WORKLOG.md',
                         r'\*\*\+([0-9\u202f ]+) spheres across \w+ dimensions\*\*'),
                        ('../notes/SUBMISSION-all-dimensions.md',
@@ -2139,6 +2141,8 @@ if '--write-results' in sys.argv and not fail:
         'dim88-96-z8-golay': 'published nonlinear Z8 Golay parent, exact central sections and compatible sparse layers; two independent arithmetic replays',
         'dim61-68-95-96-code-layers': 'shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay',
         'dim26-30-asymmetric-exchanges': 'signed-point normal-sector exchanges without antipodal constraints; full independent exact all-pairs replay',
+        'dim28-takhanov-root-exchange': 'E8 contact cycles and auxiliary-frame exchange over the pinned Takhanov witness; complete exact geometry',
+        'dim30-31-midpoint-exchanges': 'joint row-midpoint, fibre, auxiliary and Leech-root exchanges; complete exact geometry',
         'dim30-certificate-unions': 'exact unions with retained Barnes-Wall and joint-refill certificates; complete final geometry and independent integer exchange',
         'dim26-27-radical-orbits': '26D radical-orbit and 27D E8 head-frame exchanges over PackingStar; complete exact final geometry and independent integer exchanges',
         'dim27-quadratic-normal-module': '384-point quadratic E8/cuboctahedral module replacing a 370-point normal sector; complete independent exact all-pairs verification',
@@ -2197,6 +2201,8 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append("")
+    out.append('18 November 2026: complete coordinate certificates give 223528 in 28D, 248289 in 30D and 251524 in 31D. The 28D contact-cycle exchange gains 32 over the pinned Takhanov witness. The 30D and 31D midpoint exchanges gain 77 and 104 over the preceding repository certificates. Every final pair is checked exactly.')
     out.append("")
     out.append('17 November 2026: mixed-shell Gamma72 sections and ternary QR48 head compression improve dimensions 71 and 87–91. Exact finite verifiers and source attributions are in verifications/improved/dim68-91-lattice-code-continuation/. Comparisons are against retained repository constructions, not a worldwide-priority audit.')
     out.append('14 November 2026 certificate unions: 248212 in 30D, 32 above the preceding 248180 and 220 above pinned PackingStar. A 52-for-20 exchange and all 30804474366 unordered final pairs are verified independently. See verifications/improved/dim30-certificate-unions/.')

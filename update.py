@@ -80,6 +80,8 @@ DRIVERS.append(('36-37D Coxeter-Todd orbit exchange', os.path.join(V, 'dim36-37-
 DRIVERS.append(('61-67D compatible sign families', os.path.join(V, 'dim61-67-compatible-sign-families'), 'final.py'))
 DRIVERS.append(('68-69D extended Gamma72 moments', os.path.join(V, 'dim68-69-gamma72-extended-moments'), 'final.py'))
 DRIVERS.append(('26D radical-orbit continuation', os.path.join(V, 'dim26-27-radical-orbits'), 'final.py'))
+DRIVERS.append(('28D Takhanov root exchange', os.path.join(V, 'dim28-takhanov-root-exchange'), 'final.py'))
+DRIVERS.append(('30D and 31D joint midpoint exchanges', os.path.join(V, 'dim30-31-midpoint-exchanges'), 'final.py'))
 DRIVERS.append(('30D exact certificate unions', os.path.join(V, 'dim30-certificate-unions'), 'final.py'))
 DRIVERS.append(('71D and87–91D lattice/code continuation', os.path.join(V, 'dim68-91-lattice-code-continuation'), 'final.py'))
 DRIVERS.append(('90–92D hexagonal phases',os.path.join(V,'dim90-92-hexagonal-phase-layers'),'final.py'))

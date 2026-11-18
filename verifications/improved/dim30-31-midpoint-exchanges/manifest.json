@@ -1,0 +1,40 @@
+{
+  "records": [
+    {
+      "dimension": 30,
+      "count": 248289,
+      "added": 545,
+      "removed": 468,
+      "coordinates": "data/coordinates30_248289.npz",
+      "coordinates_sha256": "f282e5a6c22bc29a5b6a502c72dc76ae1ce310e96b4d94225122c89954f04616",
+      "exchange_file": "data/exchange30.npz",
+      "exchange_sha256": "60eeefdf9734c003981311a5f65674ef7f15fdd44798cb44a072d81769149b00",
+      "coordinate_array_sha256": "b95f50e9ff78b69d3d052c83eb5634b72fce28197878799ade0a66a1b8e0a652",
+      "source": {
+        "revision": "fe5d9f7f63c7fc5dbe209e6bdc7693fbab58dbfc",
+        "count": 248212,
+        "path": "verifications/improved/dim30-certificate-unions/data/coordinates30_248212.npz",
+        "key": "rational",
+        "sha256": "b535f52aa4c634ee0149fc5c8a316926f1404f2436a725688c69103eb994a771"
+      }
+    },
+    {
+      "dimension": 31,
+      "count": 251524,
+      "added": 274,
+      "removed": 170,
+      "coordinates": "data/coordinates31_251524.npz",
+      "coordinates_sha256": "8d8b36e55e86965edb61774bfaf5e39e9a55ede31d6545b7ceadb72f7acacbc5",
+      "exchange_file": "data/exchange31.npz",
+      "exchange_sha256": "f538f320890f8fad6334d8c94df3e61b85c1dcf841c957fcef04c54407511680",
+      "coordinate_array_sha256": "f19261413d1022f3b67b2df2acc753ff8e87d9c68dc4415f2a4109f91e121517",
+      "source": {
+        "revision": "fe5d9f7f63c7fc5dbe209e6bdc7693fbab58dbfc",
+        "count": 251420,
+        "path": "verifications/improved/dim31-annealed-design/data/coordinates31_251420.npz",
+        "key": "points",
+        "sha256": "644c8dd5c60c87ea3bb1c0aed0a10639e3689c1d1a8d69a580219d10cea2b622"
+      }
+    }
+  ]
+}

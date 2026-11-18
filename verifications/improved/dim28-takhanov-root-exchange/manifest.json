@@ -1,0 +1,30 @@
+{
+  "dimension": 28,
+  "count": 223528,
+  "coordinate_file": "data/coordinates28_223528.npz",
+  "source_file": "data/takhanov_d28_223496.npz",
+  "canonical_coordinate_sha256": "19aed25d116134936541f5390be1085f12893478d174bbc3d2ac197318b29077",
+  "source": {
+    "author": "Rustem Takhanov",
+    "title": "Lower bounds for kissing numbers between dimensions 25 and 31",
+    "repository": "https://github.com/k-nic/KissingNumbers",
+    "commit": "dadcb2940f7c3c3bd478b0543931d3eef9f4bd65",
+    "path": "version1/certificates/data/d28_coordinates.npz",
+    "count": 223496
+  },
+  "files": {
+    "data/coordinates28_223528.npz": "3556adb1c32b26116bd83df0793e4eca0b007ca1c751da47c50d3e37cb66d5d2",
+    "data/exchange.npz": "bf69329027aadece1d20e1459fd9012550ecaa70674862be07b90bf5eaa2854c",
+    "data/takhanov_d28_223496.npz": "58d19be5527573c1edd4979d5fe3ef430bd9a39af6e62d65a95e61852e498e6f"
+  },
+  "normalization": {
+    "squared_norm": 128,
+    "inner_product_limit": 64
+  },
+  "exchange": {
+    "added": 320,
+    "removed": 288,
+    "gain": 32
+  },
+  "date": "2026-11-18"
+}

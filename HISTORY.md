@@ -9,7 +9,9 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <a id="week-2026-11-16"></a>
 
 <details>
-<summary>16–22 November 2026: direct high-dimensional layers (through 17 November)</summary>
+<summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 18 November)</summary>
+
+**18 November 2026 — 28D, 30D and 31D exact exchanges.** The 28D contact-cycle and auxiliary-frame exchange gives **223,528**, 32 above Takhanov’s pinned release and 1,408 above the preceding repository certificate. The joint midpoint exchanges give **248,289 in 30D** and **251,524 in 31D**, 77 and 104 above the preceding repository results. [28D proof](verifications/improved/dim28-takhanov-root-exchange/) · [30D and 31D proofs](verifications/improved/dim30-31-midpoint-exchanges/).
 
 **17 November 2026: mixed-latitude Z8 fibers in 89D.** **13,958,643,714**, +1,073,741,826 (about +8.33333%) over the twelve-fiber embedding. Thirteen fibers with two opposite nonzero heights plus two pure poles, exact pointwise normalization and full inherited parent replay. [Independent complete proof](verifications/improved/dim88-89-z8-prefix-anticode/mixed89/AUDIT.md); no exhaustive worldwide-priority claim.
 
@@ -352,12 +354,12 @@ this repository. The later values below are from
 (28 September 2026). Cohn's table covers dimensions through 48; the higher-dimensional
 comparison is given separately by its source.
 
-| dim | earlier result | intervening result | source | current result |
+| dim | earlier result | intervening result | source | current repository result |
 |---|---:|---:|---|---:|
 | 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) | 197 586 |
 | 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 231 814 |
-| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 248 212 |
-| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 420 |
+| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 248 289 |
+| 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 524 |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 638 |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 852 |
 

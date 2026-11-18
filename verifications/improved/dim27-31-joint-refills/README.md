@@ -1,16 +1,16 @@
 # Exact improvements over PackingStar in all dimensions 27–31
 
-Latest repository bounds (13 November 2026) include the [November 28D/29D sextet exchanges](../dim28-29-november-sextets/). The new 30D and 31D Leech–Sloane module certificates give 248,084 and 251,395. Earlier dated benchmarks and construction counts are retained.
+The 13 November 2026 checkpoint includes the [November 28D/29D sextet exchanges](../dim28-29-november-sextets/). The 30D and 31D Leech–Sloane module certificates give 248,084 and 251,395. Earlier dated benchmarks and construction counts are retained.
 
 29 October 2026. Five explicit configurations exceed PackingStar’s **28 October release**:
 
-| Dimension | PackingStar | This construction | Gain | Removed | Added | Current repository bound (14 November 2026) |
+| Dimension | PackingStar | This construction | Gain | Removed | Added | Current repository bound |
 |---|---:|---:|---:|---:|---:|---:|
 | 27 | 209,760 | **209,807** | **47** | 244 | 291 | 209,884 |
-| 28 | 221,864 | **221,988** | **124** | 312 | 436 | 222,120 |
+| 28 | 221,864 | **221,988** | **124** | 312 | 436 | 223,528 |
 | 29 | 231,676 | **231,697** | **21** | 219 | 240 | 231,814 |
-| 30 | 247,967 | **247,972** | **5** | 512 | 517 | 248,212 |
-| 31 | 251,169 | **251,188** | **19** | 463 | 482 | 251,420 |
+| 30 | 247,967 | **247,972** | **5** | 512 | 517 | 248,289 |
+| 31 | 251,169 | **251,188** | **19** | 463 | 482 | 251,524 |
 
 The sextet continuation reclaims 28D by **124 points** and further improves
 27D, 29D and 31D. These are explicit lower bounds; no unrestricted optimum

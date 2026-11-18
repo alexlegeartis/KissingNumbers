@@ -1,6 +1,6 @@
 # Kissing numbers: constructions and verification in dimensions 18 through 96
 
-[Henry Cohn’s kissing-number table](https://cohn.mit.edu/kissing-numbers/) includes and credits our advances in **23 dimensions: 18 and 25–46**, with all 23 values matching this repository. **Checked 17 November 2026** against the live table. [Dated comparison and attribution](common/cohn_20261117.json).
+[Henry Cohn’s kissing-number table](https://cohn.mit.edu/kissing-numbers/) credited this repository in **23 dimensions, 18 and 25–46**, in the 17 November 2026 snapshot. [Dated comparison and attribution](common/cohn_20261117.json).
 
 Verified construction lower bounds in **70 dimensions**, with exact proof packages and retained research history. A kissing configuration consists of unit vectors whose pairwise inner products are at most 1/2.
 
@@ -19,12 +19,12 @@ The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over t
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 18 | 7 654 | [Cohn–Li, BW16 + hexagons](https://arxiv.org/abs/2411.04916v3) | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
 | 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 586** | **SOTA** | +0.269% | — |2026-08-30 to 2026-09-28; since 2026-10-26 | [Critical-cluster replacement and exact contacts](verifications/improved/dim25-critical-cluster/) | — |
-| 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 188** | **SOTA** | +0.6604% | — | reclaimed 2026-11-14 | [Radical-orbit continuation](verifications/improved/dim26-27-radical-orbits/) | — |
-| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 884** | **SOTA** | +4.1148% | — | reclaimed 2026-11-14 | [E8 head-frame replacement](verifications/improved/dim26-27-radical-orbits/) | — |
-| 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **222 120** | **SOTA** | +8.260% | — | reclaimed 2026-10-29 and 2026-11-12 | [November sextet unions](verifications/improved/dim28-29-november-sextets/) | — |
-| 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **231 814** | **SOTA** | +10.6532% | — | updated 2026-11-13 | [Native partial designs](verifications/improved/dim29-30-native-partial-design/) | — |
-| 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v5) | **248 212** | **SOTA** | +12.5984% | — | updated 2026-11-14 | [Exact certificate unions](verifications/improved/dim30-certificate-unions/) | — |
-| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v5) | **251 420** | **SOTA** | +5.4835% | — | reclaimed 2026-11-13 | [Construction and exact proof](verifications/improved/dim31-annealed-design/) | — |
+| 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 188** | 201 192 | +0.6604% | +0.00199% | superseded 2026-11-17 | [Radical-orbit continuation](verifications/improved/dim26-27-radical-orbits/) | [Takhanov’s Leech midpoint construction](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1) |
+| 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 884** | 210 108 | +4.1148% | +0.10673% | superseded 2026-11-17 | [E8 head-frame replacement](verifications/improved/dim26-27-radical-orbits/) | [Takhanov’s Leech midpoint construction](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1) |
+| 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **223 528** | **SOTA** | +8.94664% | — | updated 2026-11-18 | [E8 root and auxiliary exchange](verifications/improved/dim28-takhanov-root-exchange/) | — |
+| 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **231 814** | 232 153 | +10.6532% | +0.14624% | superseded 2026-11-17 | [Native partial designs](verifications/improved/dim29-30-native-partial-design/) | [Takhanov’s Leech midpoint construction](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1) |
+| 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v5) | **248 289** | **SOTA** | +12.63337% | — | updated 2026-11-18 | [Joint midpoint exchange](verifications/improved/dim30-31-midpoint-exchanges/) | — |
+| 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v5) | **251 524** | **SOTA** | +5.52717% | — | updated 2026-11-18 | [Joint midpoint exchange](verifications/improved/dim30-31-midpoint-exchanges/) | — |
 | 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32/tree/f367a9c5a051c0d6821ce71324b9dfa1ead76c2e) | **352 992** | **SOTA** | +0.190736% | — | since 2026-11-07 | [Non-antipodal signed octad continuation](verifications/improved/dim32-35-signed-layers/nonantipodal32/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal32/evidence/public_comparison.json) |
 | 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 408** | **SOTA** | +0.045376% | — | since 2026-11-07 | [Non-antipodal octads and individual root-star trades](verifications/improved/dim32-35-signed-layers/nonantipodal33/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal33/evidence/public_comparison.json) |
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 992** | **SOTA** | +0.00306921% | — | since 2026-11-06 | [Rational heavy-head rotation](verifications/improved/dim32-35-signed-layers/rotated34/) | — |
@@ -93,7 +93,9 @@ The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over t
 Expand a week for the main milestones; follow its history link for the full dated sequence, intermediate values and proof notes. Current bounds are in the table above.
 
 <details>
-<summary>16–22 November 2026 (through 17 November)</summary>
+<summary>16–22 November 2026 (through 18 November)</summary>
+
+Exact exchanges give **223,528 in 28D**, **248,289 in 30D**, and **251,524 in 31D**. [28D proof](verifications/improved/dim28-takhanov-root-exchange/) · [30D and 31D proofs](verifications/improved/dim30-31-midpoint-exchanges/).
 
 A Gram-dominated E6 assignment strengthens 94D to 73,016,281,804 points. Direct high-dimensional layers strengthen 79–96D, while planar-head compression improves 70D. Mixed-shell sections and code constructions also advance 68–69D and 71D. Cohn’s current table explicitly credits this repository in 18D and 25–46D.
 
