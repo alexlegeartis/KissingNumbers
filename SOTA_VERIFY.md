@@ -4,11 +4,15 @@ Latest 28D: **223,528**, 32 above Takhanov’s pinned construction. The [E8 root
 
 The latest 29D witness has **232,154** points, one above Takhanov’s alternate witness. The 22-for-21 exchange and all **26,947,623,781** final pairs pass exact verification. [29D exchange proof](verifications/improved/dim29-takhanov-auxiliary-exchange/).
 
-The latest 30D witness has **248,351** points, a gain of 62 over 248,289. The verifier checks all **30,838,985,425** unordered pairs and rebuilds the 188-for-126 exchange. [30D contact-sum proof](verifications/improved/dim30-contact-sum-exchanges/).
+The latest 30D witness has **248,416** points, a gain of 65. The verifier checks all **30,855,130,320** unordered pairs and rebuilds the exact 456-for-391 exchange. [30D reflected unions](verifications/improved/dim30-reflected-certificate-unions/)
+
+The preceding 30D witness has **248,351** points, a gain of 62 over 248,289. The verifier checks all **30,838,985,425** unordered pairs and rebuilds the 188-for-126 exchange. [30D contact-sum proof](verifications/improved/dim30-contact-sum-exchanges/).
 
 The joint midpoint package verifies **251,524** in 31D and the preceding 30D witness of **248,289**. [Joint midpoint proofs](verifications/improved/dim30-31-midpoint-exchanges/).
 
 Retained 26D and 27D certificates give **201,188** and **209,884**, respectively **8 and 22 above** pinned PackingStar. Takhanov’s later release gives **201,192** and **210,108**. The [radical-orbit and E8 head-frame proofs](verifications/improved/dim26-27-radical-orbits/) reconstruct the 160-for-152 and 238-for-216 exchanges and check all **20,238,205,078** and **22,025,541,786** final unordered pairs exactly. Run `python verifications/improved/dim26-27-radical-orbits/verify.py` and `python verifications/improved/dim26-27-radical-orbits/negative_controls.py`. [Takhanov’s release](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1)
+
+The alternate **201,192**-point 26D witness passes complete integer and rational verification. Fixed-projection verifiers cover the two Takhanov witnesses and the 26D alternate. [26D and 27D research](research/26_27_native_projection_obstructions_20261118/)
 
 Retained 30D: **248,212**, +32 over the retained native design and +220 over pinned PackingStar. The [exact certificate-union proof](verifications/improved/dim30-certificate-unions/) reconstructs 52 additions and 20 removals and checks all **30,804,474,366** final unordered pairs. Run `python verifications/improved/dim30-certificate-unions/verify.py` and `python verifications/improved/dim30-certificate-unions/negative_controls.py`. The [native-design package](verifications/improved/dim29-30-native-partial-design/) retains the 231,814-point 29D repository certificate and the 248,180-point 30D certificate.
 

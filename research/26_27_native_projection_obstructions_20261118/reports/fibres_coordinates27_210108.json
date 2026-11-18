@@ -1,0 +1,16 @@
+{
+  "dimension": 27,
+  "configuration_size": 210108,
+  "coordinate_file_sha256": "ad94d28223a03a19907c5c2f15cea02ae2f499d48e7c4f180c7196ba6ceca708",
+  "native_projections_excluded": 4320,
+  "proof_cases": {
+    "exact_polytope_dim_1": 3616,
+    "exact_polytope_dim_2": 462,
+    "dyadic_subdivision": 210,
+    "inconsistent_with_norm": 32
+  },
+  "maximum_subdivision_depth": 6,
+  "required_squared_norm": 64,
+  "max_squared_norm_bound_among_dim_1_and_2_cases": "44",
+  "omitted_rational_constraints": 0
+}

@@ -1,0 +1,11 @@
+{
+  "dimension": 30,
+  "count": 248416,
+  "squared_norm": 128,
+  "maximum_dot": 64,
+  "antipodal_pairs": 123792,
+  "singletons": 832,
+  "unordered_pairs": 30855130320,
+  "absolute_sum_bound": 1920,
+  "coordinate_sha256": "5c9d9b8978bc2aa0b1d20d34edb30d1ff13ac5cecb4454c106aee29949be92c3"
+}

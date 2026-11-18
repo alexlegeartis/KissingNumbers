@@ -1,0 +1,18 @@
+{
+  "dimension": 26,
+  "points": 201192,
+  "rational_points": 52,
+  "integer_geometry": {
+    "dimension": 26,
+    "count": 201140,
+    "squared_norm": 128,
+    "maximum_dot": 64,
+    "antipodal_pairs": 100546,
+    "singletons": 48,
+    "unordered_pairs": 20228549230,
+    "absolute_sum_bound": 1664,
+    "coordinate_sha256": "56e4e1c18d328bfb7265e60fcb1bfd9c9b454e997090aa4ad36be2fb15c1b5b8"
+  },
+  "unordered_pairs": 20239009836,
+  "status": "PASS"
+}

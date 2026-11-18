@@ -4,7 +4,7 @@ The full coordinate witnesses give **248,289 in 30D** and **251,524 in 31D**. Th
 
 | Dimension | Source | Inserted | Removed | Net gain | Witness count | Witness unordered pairs | Current repository bound |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 30 | 248,212 | 545 | 468 | 77 | **248,289** | 30,823,589,616 | 248,351 |
+| 30 | 248,212 | 545 | 468 | 77 | **248,289** | 30,823,589,616 | 248,416 |
 | 31 | 251,420 | 274 | 170 | 104 | **251,524** | 31,632,035,526 | 251,524 |
 
 The 248,289-point witness is the source for the [30D contact-sum continuation](../dim30-contact-sum-exchanges/).

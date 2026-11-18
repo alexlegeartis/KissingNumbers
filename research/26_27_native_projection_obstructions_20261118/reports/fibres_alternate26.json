@@ -1,0 +1,15 @@
+{
+  "dimension": 26,
+  "configuration_size": 201192,
+  "coordinate_file_sha256": "87b1e2465bb9232a9dde9da4f3c7d5cf06104dec3c5c89408cf138c7371b38c9",
+  "native_projections_excluded": 4320,
+  "proof_cases": {
+    "exact_polytope_dim_2": 3200,
+    "orthoplex_capacity": 1088,
+    "exact_polytope_dim_1": 32
+  },
+  "maximum_subdivision_depth": 0,
+  "required_squared_norm": 64,
+  "max_squared_norm_bound_among_dim_1_and_2_cases": "40",
+  "omitted_rational_constraints": 52
+}

@@ -457,7 +457,7 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim2
 
 # Exact 13 November module replacements, including the retained BW14 checkpoint.
 for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sloane-section',
-                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange'):
+                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange', 'dim30-reflected-certificate-unions'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -1403,6 +1403,22 @@ else:
 
     _canon = dict((_d, _v) for _d, _v, _p, _h in claims)
     _stale = []
+    # These proof documents carry frozen coordinate-package manifests. Their
+    # dated comparison tables remain part of the original certificate bytes.
+    _frozen_proofs = {
+        'verifications/improved/dim93-96-e7-rs-root-augmentation/three_basis_final_independent_20261117/input/PROOF.md':
+            'f025abd12bca5eb17a6fbefef0e77ce39e0aff1e0ce53e1177628ce650020448',
+        'verifications/improved/dim93-96-e7-rs-root-augmentation/three_basis_final93_96_20261117/PROOF.md':
+            'f025abd12bca5eb17a6fbefef0e77ce39e0aff1e0ce53e1177628ce650020448',
+        'verifications/improved/dim26-30-asymmetric-exchanges/README.md':
+            '7be3f41eaa0e998941ec34fc3bb3f89b88620bdc07064eac1b48713545fc3021',
+        'verifications/improved/dim26-31-residual-completions/README.md':
+            '2bc1a0707bdf2ff160ef6576050a7b593a72304cc57f1a610e368a622fd9c0c0',
+        'verifications/improved/dim27-31-joint-refills/README.md':
+            'b410093caa06be18b01e7486d7bff406ef1d4014efaab98d68395ee07cf77b63',
+        'verifications/improved/dim29-30-midpoint-replacements/source/README.md':
+            'e834854ad153bd09cf471129f2ed2b30816ef0fc44a7a120ef204af6441d525a',
+    }
     for _dp, _dn, _fn in _sweep():
         _dn[:] = [_x for _x in _dn if _x not in ('__pycache__', '.git', 'research', 'colab')]
         for _f in _fn:
@@ -1416,14 +1432,13 @@ else:
                 _lines = io.open(_p, encoding='utf-8').read().split(chr(10))
             except (IOError, UnicodeDecodeError):
                 continue
-            # Immutable original proof tables below the explicitly retained E7 package.
-            # Their exact bytes are preserved; current claims are checked separately.
-            _frozen_e7 = {'verifications/improved/dim93-96-e7-rs-root-augmentation/three_basis_final_independent_20261117/input/PROOF.md': 'f025abd12bca5eb17a6fbefef0e77ce39e0aff1e0ce53e1177628ce650020448', 'verifications/improved/dim93-96-e7-rs-root-augmentation/three_basis_final93_96_20261117/PROOF.md': 'f025abd12bca5eb17a6fbefef0e77ce39e0aff1e0ce53e1177628ce650020448'}
-            _rel_e7 = os.path.relpath(_p, HERE).replace(os.sep, '/')
-            if _rel_e7 in _frozen_e7:
-                import hashlib as _hashlib_e7
-                if _hashlib_e7.sha256(open(_p, 'rb').read()).hexdigest() != _frozen_e7[_rel_e7]:
-                    bad('frozen E7 historical proof hash mismatch: ' + _rel_e7)
+            _proof_rel = os.path.relpath(_p, HERE).replace(os.sep, '/')
+            if _proof_rel in _frozen_proofs:
+                import hashlib as _proof_hashlib
+                with open(_p, 'rb') as _proof_stream:
+                    _proof_digest = _proof_hashlib.sha256(_proof_stream.read()).hexdigest()
+                if _proof_digest != _frozen_proofs[_proof_rel]:
+                    bad('frozen historical proof hash mismatch: ' + _proof_rel)
                 continue
             for _i, _L in enumerate(_lines, 1):
                 if _L.count('|') < 3:
@@ -2143,6 +2158,7 @@ if '--write-results' in sys.argv and not fail:
         'dim26-30-asymmetric-exchanges': 'signed-point normal-sector exchanges without antipodal constraints; full independent exact all-pairs replay',
         'dim28-takhanov-root-exchange': 'E8 contact cycles and auxiliary-frame exchange over the pinned Takhanov witness; complete exact geometry',
         'dim29-takhanov-auxiliary-exchange': 'E8 midpoint and auxiliary exchange over Takhanov; complete exact geometry',
+        'dim30-reflected-certificate-unions': 'four reflected certificate unions and four auxiliary points with complete exact geometry',
         'dim30-contact-sum-exchanges': 'contact-sum continuation with shared deletion pricing and complete exact geometry',
         'dim30-31-midpoint-exchanges': 'joint row-midpoint, fibre, auxiliary and Leech-root exchanges; complete exact geometry',
         'dim30-certificate-unions': 'exact unions with retained Barnes-Wall and joint-refill certificates; complete final geometry and independent integer exchange',
@@ -2206,6 +2222,10 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append('The 18 November 2026 E8 and auxiliary exchange gives 232154 in 29D, one above the pinned Takhanov witness. Complete exact geometry and the 22-for-21 exchange replay from verifications/improved/dim29-takhanov-auxiliary-exchange/.')
     out.append("")
+    out.append('Four reflected unions give 248416 in 30D, gaining 65 over 248351. [Exact coordinate proof](verifications/improved/dim30-reflected-certificate-unions/)')
+    out.append('')
+    out.append('A 201192-point alternate construction ties Takhanov in 26D. Fixed-projection proofs cover both Takhanov witnesses in 26D and 27D and the 26D alternate. [Research and verifiers](research/26_27_native_projection_obstructions_20261118/)')
+    out.append('')
     out.append('Two 18 November 2026 contact-sum rounds give 248351 in 30D, gaining 62 over the 248289-point witness. The exact exchange and every final pair replay from verifications/improved/dim30-contact-sum-exchanges/.')
     out.append("")
     out.append('18 November 2026: complete coordinate certificates give 223528 in 28D, 248289 in 30D and 251524 in 31D. The 28D contact-cycle exchange gains 32 over the pinned Takhanov witness. The 30D and 31D midpoint exchanges gain 77 and 104 over the preceding repository certificates. Every final pair is checked exactly.')

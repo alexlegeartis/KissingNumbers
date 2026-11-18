@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 18 November)</summary>
 
+**18 November 2026.** Four reflected certificate unions and four auxiliary points give **248,416 in 30D**, a gain of 65. An alternate 26D witness ties Takhanov at **201,192**. [30D proof](verifications/improved/dim30-reflected-certificate-unions/) · [26D and 27D research](research/26_27_native_projection_obstructions_20261118/)
+
 **18 November 2026 — 29D E8 and auxiliary exchange.** The **232,154**-point witness gains one over Takhanov’s released 232,153-point configuration. [Exact proof](verifications/improved/dim29-takhanov-auxiliary-exchange/).
 
 **18 November 2026 — 30D contact-sum continuation.** Two rounds lift the bound to **248,351**, 62 above the previously published 248,289-point witness. [Exact proof](verifications/improved/dim30-contact-sum-exchanges/).
@@ -362,7 +364,7 @@ comparison is given separately by its source.
 |---|---:|---:|---|---:|
 | 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) | 197 586 |
 | 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 232 154 |
-| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 248 351 |
+| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 248 416 |
 | 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 524 |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 638 |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 852 |
