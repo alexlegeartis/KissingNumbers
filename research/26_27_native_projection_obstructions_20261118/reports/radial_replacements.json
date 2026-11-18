@@ -1,0 +1,26 @@
+{
+  "Leech_parent_cap": 850,
+  "critical_cluster_25_to_26": {
+    "parent": 197586,
+    "circle_triples_with_a_pair_above_15_over_32": 926,
+    "balanced_non_Leech_cap": 2099,
+    "extreme_gain_cap": 205,
+    "upper": 200740
+  },
+  "alternate_26_to_27": {
+    "parent": 201192,
+    "eight_point_fibres": 1088,
+    "other_points": 376,
+    "balanced_non_Leech_cap": 2552,
+    "extreme_gain_cap": 213,
+    "upper": 204807
+  },
+  "published_26_to_27": {
+    "parent": 201192,
+    "eight_point_fibres": 1024,
+    "other_points": 888,
+    "balanced_non_Leech_cap": 2936,
+    "extreme_gain_cap": 213,
+    "upper": 205191
+  }
+}

@@ -94,3 +94,10 @@ A separate linear-programming argument bounds one-axis symmetric lifts
 of the 197,586-point 25D code by 200,536 in 26D. Every symmetric lift
 of any 201,192-point 26D code has at most 210,035 points in 27D.
 The angles can vary by parent. [Exact polynomial proof](symmetric_lifts.md)
+
+Allowing arbitrary latitudes along the parent rays also falls short
+for these supplied codes. The 25D parent yields at most 200,740 in 26D.
+The two 26D parents yield at most 205,191 and 204,807 in 27D,
+respectively. The proof covers up to four children on a ray and uses
+exact checks of the 25D circles and the 26D fibre structure.
+[Ray-preserving replacement bounds](symmetric_lifts.md#arbitrary-latitudes-along-the-parent-rays)

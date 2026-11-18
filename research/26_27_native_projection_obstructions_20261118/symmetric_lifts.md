@@ -1,4 +1,4 @@
-# Upper bounds for symmetric one-axis lifts into 26D and 27D
+# Upper bounds for one-axis lifts into 26D and 27D
 
 A one-axis lift starts with a unit-sphere code C in dimension d. It
 retains the unselected points on the equator. For each selected parent
@@ -38,8 +38,8 @@ f(t) = (t − 1/3)(t + 9/14)²(t + 5/18)²(t − 1/38)².
 It is nonpositive for −1 ≤ t ≤ 1/3. Its normalized Gegenbauer
 coefficients in dimension 26 are nonnegative, with positive constant
 coefficient. The addition formula gives
-Σ(x,y in C) f(x·y) ≥ f₀ |C|². The off-diagonal sign bounds the same
-sum above by |C| f(1). The exact ratio f(1)/f₀ is
+Σ(x,y in X) f(x·y) ≥ f₀ |X|² for the set X of nonpolar parents.
+The off-diagonal sign bounds the same sum above by |X| f(1). The exact ratio f(1)/f₀ is
 5,363,432,606 / 606,523 < 8,843. Thus at most 8,842 nonpolar parents
 can be used, plus at most one polar parent. Starting at 201,192 gives
 at most **210,035** points in dimension 27. The bound applies to
@@ -79,6 +79,66 @@ eligible and allow one polar parent. This yields at most
 
 Run `python verify_symmetric_lifts.py`. The checker verifies the two
 polynomial certificates with the standard library's rational arithmetic.
-The scope is the reflection-symmetric, one-axis replacement above.
-Unequal positive and negative heights or changes to the parent
-directions fall outside the construction.
+This checker covers the symmetric two-child construction above.
+
+## Arbitrary latitudes along the parent rays
+
+The following bounds allow different positive and negative latitudes,
+three- and four-point replacements, and motion of singly represented
+parents. Every child of x has coordinates (cos(a) x, sin(a)) with
+−π/2 ≤ a ≤ π/2. The projection of each child onto the original space
+therefore follows its original parent's ray.
+
+Each parent's children are separated by at least π/3 in latitude.
+A parent with no child at absolute latitude at least π/4 has at most
+two children. If it has two, one is positive and one negative, with both
+absolute latitudes between π/12 and π/4. Call such parents balanced.
+For any two balanced parents the positive children impose
+
+```text
+x · y ≤ g(a,b) = (1/2 − sin(a) sin(b)) / (cos(a) cos(b)).
+```
+
+For fixed b, the derivative of g in a has the sign of
+(1/2) sin(a) − sin(b), which is increasing on the interval.
+Thus the maximum on the square is at a corner. Corner evaluation
+gives g ≤ 2√3 − 3 < 15/32.
+
+Now consider parents with a child of absolute latitude at least π/4.
+Assign each such parent to the sign of one such child. Within each
+sign, the nonpolar children imply pairwise nonpositive products for
+their parent directions, since sin(a) sin(b) ≥ 1/2. The orthoplex bound
+gives at most 2d such parents per sign, and the pole allows one more
+per sign. Three children contribute a gain of two. Four children
+require both poles and can occur for at most one parent. The total
+contribution of these parents is at most 2(4d + 2) + 1.
+
+### Counts for the supplied parent codes
+
+In the 25D critical-cluster code, the above 850-point bound still
+applies to the balanced parents from the Leech shell. Exact checks of
+the field coordinates find a pair of product above 15/32 in each of
+the 926 circles, so each circle contributes at most two balanced
+parents. The remaining 247 points can all contribute.
+
+For each of the two 26D certificates, the verifier checks that the
+integer equator consists of Leech points. On each eight-point
+midpoint fibre, the residual vectors form four orthogonal axes with
+both signs. Two different residual axes give full normalized product
+1/2 because they share the same squared-norm-64 projection. Hence
+at most two balanced parents come from each such fibre. The remaining
+columns include all integer and rational points outside the stated layers.
+
+| Parent witness | Balanced Leech cap | Balanced cap off the equator | Gain from the larger latitudes | Lift upper bound |
+| --- | ---: | ---: | ---: | ---: |
+| 197,586-point critical-cluster code in 25D | 850 | 2·926 + 247 | 205 | **200,740** |
+| Takhanov’s 201,192-point code in 26D | 850 | 2·1,024 + 888 | 213 | **205,191** |
+| Alternate 201,192-point code in 26D | 850 | 2·1,088 + 376 | 213 | **204,807** |
+
+Run `python verify_radial_replacements.py` from this directory with
+NumPy. Supply `--published26 /tmp/d26_coordinates.npz` to include the
+pinned Takhanov parent. The replay reconstructs the 25D circles and
+uses exact comparisons in Q(√2, √3). The two 26D fibre decompositions
+use integer arithmetic. Parent configurations and other geometric
+premises are documented in the source certificates linked by the
+[research README](README.md).
