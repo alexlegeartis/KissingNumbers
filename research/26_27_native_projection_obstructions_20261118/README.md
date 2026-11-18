@@ -87,3 +87,10 @@ OPENBLAS_NUM_THREADS=1 python certify_fibres.py /tmp/d26_coordinates.npz
 OPENBLAS_NUM_THREADS=1 python certify_fibres.py /tmp/d27_coordinates.npz
 python reconstruct26.py /tmp/d26_coordinates.npz data/exchange26.npz /tmp/rebuilt26.npz
 ```
+
+## Symmetric lifts from one dimension below
+
+A separate linear-programming argument bounds one-axis symmetric lifts
+of the 197,586-point 25D code by 200,536 in 26D. Every symmetric lift
+of any 201,192-point 26D code has at most 210,035 points in 27D.
+The angles can vary by parent. [Exact polynomial proof](symmetric_lifts.md)
