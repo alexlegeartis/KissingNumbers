@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 19 November)</summary>
 
+**19 November 2026 — 29D projected-grid search.** The **232,157**-point witness replaces 11 points with 14. [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/).
+
 **19 November 2026.** Shared signed-root deletions between 150 stars and 12 heads give **415,336 in 35D**, two above 415,334. [Exact proof and coordinate audit](verifications/improved/dim35-shared-root-heads/).
 
 **18 November 2026.** Four reflected certificate unions and four auxiliary points give **248,416 in 30D**, a gain of 65. An alternate 26D witness ties Takhanov at **201,192**. [30D proof](verifications/improved/dim30-reflected-certificate-unions/) · [26D and 27D research](research/26_27_native_projection_obstructions_20261118/)

@@ -106,6 +106,7 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('dim29-even-grid-exchange: exact projected-grid trade', os.path.join(V, 'improved', 'dim29-even-grid-exchange'), ['verify.py'], 1.0, True),
     ('dim35-shared-root-heads: exact signed-root trade', os.path.join(V, 'improved', 'dim35-shared-root-heads'), ['verify.py'], 1.0, True),
     ('29D Takhanov auxiliary exchange and complete geometry', os.path.join(V, 'improved', 'dim29-takhanov-auxiliary-exchange'), ['verify.py'], 1.0, True),
     ('30D reflected certificate unions and complete geometry', os.path.join(V, 'improved', 'dim30-reflected-certificate-unions'), ['verify.py'], 1.0, True),
@@ -477,6 +478,7 @@ def _sota_jobs(quick=False):
         ('dim68-91-lattice-code-continuation', ('verify.py',)),
         ('dim28-takhanov-root-exchange', ('verify.py',)),
         ('dim28-takhanov-root-exchange', ('negative_controls.py',)),
+        ('dim29-even-grid-exchange', ('verify.py',)),
         ('dim29-takhanov-auxiliary-exchange', ('verify.py',)),
         ('dim35-shared-root-heads', ('verify.py',)),
         ('dim30-reflected-certificate-unions', ('verify.py',)),
@@ -619,6 +621,7 @@ def _sota_coverage(jobs, results=None):
         ('dim28-takhanov-root-exchange', [28], [('verify.py',), ('negative_controls.py',)],
          'complete exact geometry for 223528 points, pinned Takhanov source and independent integer exchange'),
         ('dim35-shared-root-heads', [35], [('verify.py',)], 'exact signed-layer and shared-root checks plus independent coordinate expansion for all 67258188 changed/anchor products'),
+        ('dim29-even-grid-exchange', [29], [('verify.py',)], 'exact integer exchange replay for 232157 points; --full independently checks all final pairs'),
         ('dim29-takhanov-auxiliary-exchange', [29], [('verify.py',)],
          'complete exact geometry for 232154 points and the pinned 22-for-21 exchange'),
         ('dim30-reflected-certificate-unions', [30], [('verify.py',)],

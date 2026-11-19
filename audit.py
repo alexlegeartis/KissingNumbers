@@ -457,7 +457,7 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim2
 
 # Exact 13 November module replacements, including the retained BW14 checkpoint.
 for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sloane-section',
-                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange', 'dim30-reflected-certificate-unions', 'dim35-shared-root-heads'):
+                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange', 'dim30-reflected-certificate-unions', 'dim35-shared-root-heads', 'dim29-even-grid-exchange'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -2158,6 +2158,7 @@ if '--write-results' in sys.argv and not fail:
         'dim26-30-asymmetric-exchanges': 'signed-point normal-sector exchanges without antipodal constraints; full independent exact all-pairs replay',
         'dim28-takhanov-root-exchange': 'E8 contact cycles and auxiliary-frame exchange over the pinned Takhanov witness; complete exact geometry',
         'dim35-shared-root-heads': 'shared signed-root deletion ledger and exact coordinate replay',
+        'dim29-even-grid-exchange': '14-for-11 projected-grid exchange with exact integer and full-pair replay',
         'dim29-takhanov-auxiliary-exchange': 'E8 midpoint and auxiliary exchange over Takhanov; complete exact geometry',
         'dim30-reflected-certificate-unions': 'four reflected certificate unions and four auxiliary points with complete exact geometry',
         'dim30-contact-sum-exchanges': 'contact-sum continuation with shared deletion pricing and complete exact geometry',
@@ -2221,6 +2222,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append('19 November 2026: exact projected-grid search and coordinated exchange give 232157 in 29D, 3 above the previous certificate. [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/).')
     out.append('19 November 2026: shared root deletions give 415336 in 35D, two above the previous 415334-point construction. [Two exact verification routes](verifications/improved/dim35-shared-root-heads/).')
     out.append("")
     out.append('The 18 November 2026 E8 and auxiliary exchange gives 232154 in 29D, one above the pinned Takhanov witness. Complete exact geometry and the 22-for-21 exchange replay from verifications/improved/dim29-takhanov-auxiliary-exchange/.')

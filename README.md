@@ -22,7 +22,7 @@ The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over t
 | 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 188** | 201 192 | +0.6604% | +0.00199% | superseded 2026-11-17 | [Radical-orbit continuation](verifications/improved/dim26-27-radical-orbits/) | [Takhanov’s Leech midpoint construction](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1) |
 | 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 884** | 210 108 | +4.1148% | +0.10673% | superseded 2026-11-17 | [E8 head-frame replacement](verifications/improved/dim26-27-radical-orbits/) | [Takhanov’s Leech midpoint construction](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1) |
 | 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **223 528** | **SOTA** | +8.94664% | — | updated 2026-11-18 | [E8 root and auxiliary exchange](verifications/improved/dim28-takhanov-root-exchange/) | — |
-| 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **232 154** | **SOTA** | +10.81548% | — | updated 2026-11-18 | [E8 midpoint and auxiliary exchange](verifications/improved/dim29-takhanov-auxiliary-exchange/) | — |
+| 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **232 157** | **SOTA** | +10.81691% | — | updated 2026-11-19 | [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/) | — |
 | 30 | 220 440 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v5) | **248 416** | **SOTA** | +12.69098% | — | updated 2026-11-18 | [Reflected certificate unions](verifications/improved/dim30-reflected-certificate-unions/) | — |
 | 31 | 238 350 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v5) | **251 524** | **SOTA** | +5.52717% | — | updated 2026-11-18 | [Joint midpoint exchange](verifications/improved/dim30-31-midpoint-exchanges/) | — |
 | 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32/tree/f367a9c5a051c0d6821ce71324b9dfa1ead76c2e) | **352 992** | **SOTA** | +0.190736% | — | since 2026-11-07 | [Non-antipodal signed octad continuation](verifications/improved/dim32-35-signed-layers/nonantipodal32/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal32/evidence/public_comparison.json) |
@@ -93,11 +93,11 @@ The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over t
 Expand a week for the main milestones; follow its history link for the full dated sequence, intermediate values and proof notes. Current bounds are in the table above.
 
 <details>
-<summary>16–22 November 2026 (through 18 November)</summary>
+<summary>16–22 November 2026 (through 19 November)</summary>
 
 The alternate 26D construction reaches **201,192**, tying Takhanov. Fixed-projection obstructions cover the 26D and 27D comparison witnesses. [26D and 27D research](research/26_27_native_projection_obstructions_20261118/)
 
-The 29D exchange gives **232,154**, one above Takhanov’s released witness. [29D proof](verifications/improved/dim29-takhanov-auxiliary-exchange/).
+The 29D projected-grid search gives **232,157**, 3 above the preceding repository witness and 4 above Takhanov’s pinned release. [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/).
 
 Exact exchanges give **223,528 in 28D**, **248,416 in 30D**, and **251,524 in 31D**. [28D proof](verifications/improved/dim28-takhanov-root-exchange/) · [30D proof](verifications/improved/dim30-reflected-certificate-unions/) · [31D proof](verifications/improved/dim30-31-midpoint-exchanges/).
 

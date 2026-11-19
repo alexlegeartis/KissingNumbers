@@ -4,7 +4,7 @@ Latest 35D: **415,336**, two above the previous certificate. The [shared-root pr
 
 Latest 28D: **223,528**, 32 above Takhanov’s pinned construction. The [E8 root exchange](verifications/improved/dim28-takhanov-root-exchange/) checks all **24,982,271,628** unordered final pairs and separately verifies the 320-for-288 exchange in signed int64.
 
-The latest 29D witness has **232,154** points, one above Takhanov’s alternate witness. The 22-for-21 exchange and all **26,947,623,781** final pairs pass exact verification. [29D exchange proof](verifications/improved/dim29-takhanov-auxiliary-exchange/).
+The latest 29D witness has **232,157** points, 3 above the previous certificate and 4 above Takhanov’s pinned release. The direct integer replay checks all 3,250,156 donor–incumbent products and 91 donor pairs; `--full` checks all **26,948,320,246** final unordered pairs. [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/).
 
 The latest 30D witness has **248,416** points, a gain of 65. The verifier checks all **30,855,130,320** unordered pairs and rebuilds the exact 456-for-391 exchange. [30D reflected unions](verifications/improved/dim30-reflected-certificate-unions/)
 

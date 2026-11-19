@@ -1,5 +1,7 @@
 # Results
 
+19 November 2026: exact projected-grid search and coordinated exchange give 232157 in 29D, 3 above the previous certificate. [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/).
+
 19 November 2026: shared root deletions give 415336 in 35D, two above the previous 415334-point construction. [Two exact verification routes](verifications/improved/dim35-shared-root-heads/).
 
 The 18 November 2026 E8 and auxiliary exchange gives 232154 in 29D, one above the pinned Takhanov witness. Complete exact geometry and the 22-for-21 exchange replay from verifications/improved/dim29-takhanov-auxiliary-exchange/.
@@ -99,7 +101,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 26 | 199 868 | **201 188** | 1.01 | `heads` | [26D radical-orbit and 27D E8 head-frame exchanges over PackingStar; complete exact final geometry and independent integer exchanges](verifications/improved/dim26-27-radical-orbits/) |
 | 27 | 201 589 | **209 884** | 1.04 | `heads` | [26D radical-orbit and 27D E8 head-frame exchanges over PackingStar; complete exact final geometry and independent integer exchanges](verifications/improved/dim26-27-radical-orbits/) |
 | 28 | 205 172 | **223 528** | 1.09 | `heads` | [E8 contact cycles and auxiliary-frame exchange over the pinned Takhanov witness; complete exact geometry](verifications/improved/dim28-takhanov-root-exchange/) |
-| 29 | 209 496 | **232 154** | 1.11 | `heads` | [E8 midpoint and auxiliary exchange over Takhanov; complete exact geometry](verifications/improved/dim29-takhanov-auxiliary-exchange/) |
+| 29 | 209 496 | **232 157** | 1.11 | `heads` | [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/) with complete exact geometry |
 | 30 | 220 440 | **248 416** | 1.13 | `heads` | [four reflected certificate unions and four auxiliary points with complete exact geometry](verifications/improved/dim30-reflected-certificate-unions/) |
 | 31 | 238 350 | **251 524** | 1.06 | `heads` | [joint row-midpoint, fibre, auxiliary and Leech-root exchanges; complete exact geometry](verifications/improved/dim30-31-midpoint-exchanges/) |
 | 32 | 352 320 | **352 992** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
@@ -219,7 +221,7 @@ refreshed table, not more search.
 | 25 | `dim25-critical-cluster` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 26-27 | `dim26-27-radical-orbits` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 28 | `dim28-takhanov-root-exchange` | verify.py: complete exact coordinates and independent direct-integer module exchange |
-| 29 | `dim29-takhanov-auxiliary-exchange` | verify.py: complete exact coordinates and independent direct-integer module exchange |
+| 29 | `dim29-even-grid-exchange` | verify.py: exact exchange replay; use --full for complete final geometry |
 | 30 | `dim30-reflected-certificate-unions` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 31 | `dim30-31-midpoint-exchanges` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 32-35 | `dim32-35-signed-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
