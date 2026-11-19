@@ -81,6 +81,7 @@ DRIVERS.append(('61-67D compatible sign families', os.path.join(V, 'dim61-67-com
 DRIVERS.append(('68-69D extended Gamma72 moments', os.path.join(V, 'dim68-69-gamma72-extended-moments'), 'final.py'))
 DRIVERS.append(('26D radical-orbit continuation', os.path.join(V, 'dim26-27-radical-orbits'), 'final.py'))
 DRIVERS.append(('28D Takhanov root exchange', os.path.join(V, 'dim28-takhanov-root-exchange'), 'final.py'))
+DRIVERS.append(('38D triangular Hamming', os.path.join(V, 'dim38-triangle-hamming'), 'final.py'))
 DRIVERS.append(('35D shared signed-root trade', os.path.join(V, 'dim35-shared-root-heads'), 'final.py'))
 DRIVERS.append(('29D even-grid exchange', os.path.join(V, 'dim29-even-grid-exchange'), 'final.py'))
 DRIVERS.append(('29D Takhanov auxiliary exchange', os.path.join(V, 'dim29-takhanov-auxiliary-exchange'), 'final.py'))

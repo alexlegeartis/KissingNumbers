@@ -31,7 +31,7 @@ The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over t
 | 35 | 415 308 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 336** | **SOTA** | +0.00674198% | — | updated 2026-11-19 | [Shared root deletions across heads and stars](verifications/improved/dim35-shared-root-heads/) | — |
 | 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **501 822** | **SOTA** | +3.5197% | — | updated 2026-11-13 | [Coxeter–Todd orbit exchange](verifications/improved/dim36-37-orbit-exchange/) | — |
 | 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **505 638** | **SOTA** | +1.1260% | — | updated 2026-11-13 | [Orbit exchange and latitudes](verifications/improved/dim36-37-orbit-exchange/) | — |
-| 38 | 566 652 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **611 638** | **SOTA** | +7.94% | — | 2026-08-30 to 2026-09-28; since 2026-11-06 | [Orthogonal Hamming latitude replacement](verifications/improved/dim38-joint-latitudes/) | — |
+| 38 | 605 322 | [Qihong Lin, Leech equatorial augmentation](https://arxiv.org/abs/2611.03682) | **611 798** | **SOTA** | +1.07% | — | updated 2026-11-19 | [Parity-split triangular Hamming latitudes](verifications/improved/dim38-triangle-hamming/) | — |
 | 39 | 755 988 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **769 852** | **SOTA** | +1.83% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) | — |
 | 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/html/2607.20359v4) | **1 126 314** | **SOTA** | +3.14% | — | since 2026-10-26 | [Affine lattice shells](verifications/improved/dim40-affine-shells/) | — |
 | 41 | 1 324 472 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/abs/2607.20359v4) | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
@@ -94,6 +94,8 @@ Expand a week for the main milestones; follow its history link for the full date
 
 <details>
 <summary>16–22 November 2026 (through 19 November)</summary>
+
+Triangular Hamming latitudes raise **38D to 611,798**, a gain of 160. [Exact proof](verifications/improved/dim38-triangle-hamming/).
 
 The alternate 26D construction reaches **201,192**, tying Takhanov. Fixed-projection obstructions cover the 26D and 27D comparison witnesses. [26D and 27D research](research/26_27_native_projection_obstructions_20261118/)
 

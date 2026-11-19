@@ -457,7 +457,7 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim2
 
 # Exact 13 November module replacements, including the retained BW14 checkpoint.
 for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sloane-section',
-                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange', 'dim30-reflected-certificate-unions', 'dim35-shared-root-heads', 'dim29-even-grid-exchange'):
+                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange', 'dim30-reflected-certificate-unions', 'dim35-shared-root-heads', 'dim29-even-grid-exchange', 'dim38-triangle-hamming'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -2187,6 +2187,7 @@ if '--write-results' in sys.argv and not fail:
         'dim25-point-split': 'one-for-two general-point splitting with collective motion of 971 Leech circles and 103 rational points; complete independent exact proof',
         'dim25-collective-deformation': 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons',
         'dim31-dual-centres': 'shared midpoint replacements and dual E7 centres; exact coordinate replay',
+        'dim38-triangle-hamming': 'Parity-split triangular Hamming latitudes; two exact changed-pair proofs',
         'dim38-joint-latitudes': 'Orthogonal Hamming latitude replacement; two exact proofs with inherited Golay/Leech minimum-norm premise',
         'dim39-deformed-orbits': '32-element nonbinary sign orbits with actual support/parity bounds; two independent complete exact orbit proofs',
         'dim40-affine-shells': 'three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products',
@@ -2222,6 +2223,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append('19 November 2026: parity-split triangular Hamming latitudes give 611798 in 38D, 160 above the previous certificate. The complete Hamming layer grows from 512 to 768, at a net cost of 96 cap points. [Two exact replays](verifications/improved/dim38-triangle-hamming/).')
     out.append('19 November 2026: exact projected-grid search and coordinated exchange give 232157 in 29D, 3 above the previous certificate. [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/).')
     out.append('19 November 2026: shared root deletions give 415336 in 35D, two above the previous 415334-point construction. [Two exact verification routes](verifications/improved/dim35-shared-root-heads/).')
     out.append("")
