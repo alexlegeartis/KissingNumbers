@@ -1,1 +1,1 @@
-{"lift_equator": 1111364, "lift_lift": 23653, "minimum_distances": [12, 12, 8], "outer_pairs_checked": 12992253, "points_36": 502767, "points_37": 506691, "shell_counts": {"0": 1, "4": 756, "6": 4032, "8": 20412}, "status": "PASS"}
+{"lift_equator": 1116462, "lift_lift": 23871, "minimum_distances": [12, 12, 8], "outer_pairs_checked": 12992253, "points_36": 502767, "points_37": 506709, "shell_counts": {"0": 1, "4": 756, "6": 4032, "8": 20412}, "status": "PASS"}

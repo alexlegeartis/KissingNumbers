@@ -2224,7 +2224,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
-    out.append('19 November 2026: rebuilt Coxeter–Todd cells give 502767 in 36D (+945) and their two-sided latitude lift gives 506691 in 37D (+1,053). [Two exact coset replays](verifications/improved/dim36-37-ct-cell-rebuild/).')
+    out.append('19 November 2026: rebuilt Coxeter–Todd cells give 502767 in 36D (+945) and their two-sided latitude lift gives 506709 in 37D (+1,071). [Two exact coset replays](verifications/improved/dim36-37-ct-cell-rebuild/).')
     out.append('19 November 2026: parity-split triangular Hamming latitudes give 611798 in 38D, 160 above the previous certificate. The complete Hamming layer grows from 512 to 768, at a net cost of 96 cap points. [Two exact replays](verifications/improved/dim38-triangle-hamming/).')
     out.append('19 November 2026: exact projected-grid search and coordinated exchange give 232157 in 29D, 3 above the previous certificate. [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/).')
     out.append('19 November 2026: shared root deletions give 415336 in 35D, two above the previous 415334-point construction. [Two exact verification routes](verifications/improved/dim35-shared-root-heads/).')

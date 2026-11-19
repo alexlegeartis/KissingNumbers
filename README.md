@@ -30,7 +30,7 @@ The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over t
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 992** | **SOTA** | +0.00306921% | — | since 2026-11-06 | [Rational heavy-head rotation](verifications/improved/dim32-35-signed-layers/rotated34/) | — |
 | 35 | 415 308 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 336** | **SOTA** | +0.00674198% | — | updated 2026-11-19 | [Shared root deletions across heads and stars](verifications/improved/dim35-shared-root-heads/) | — |
 | 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **502 767** | **SOTA** | +3.7146% | — | updated 2026-11-19 | [Coxeter–Todd cell-layer rebuild](verifications/improved/dim36-37-ct-cell-rebuild/) | — |
-| 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **506 691** | **SOTA** | +1.3366% | — | updated 2026-11-19 | [Coxeter–Todd cell-layer rebuild and latitude lift](verifications/improved/dim36-37-ct-cell-rebuild/) | — |
+| 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **506 709** | **SOTA** | +1.3402% | — | updated 2026-11-19 | [Coxeter–Todd cell-layer rebuild and latitude lift](verifications/improved/dim36-37-ct-cell-rebuild/) | — |
 | 38 | 605 322 | [Qihong Lin, Leech equatorial augmentation](https://arxiv.org/abs/2611.03682) | **611 798** | **SOTA** | +1.07% | — | updated 2026-11-19 | [Parity-split triangular Hamming latitudes](verifications/improved/dim38-triangle-hamming/) | — |
 | 39 | 755 988 | [Edel–Rains–Sloane](https://arxiv.org/abs/math/0207291) + [Brouwer codes](https://aeb.win.tue.nl/codes/Andw.html) | **769 852** | **SOTA** | +1.83% | — | 2026-08-30 to 2026-09-28; since 2026-10-25 | [Reduced-symmetry sign orbits](verifications/improved/dim39-deformed-orbits/) | — |
 | 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections](https://arxiv.org/html/2607.20359v4) | **1 126 314** | **SOTA** | +3.14% | — | since 2026-10-26 | [Affine lattice shells](verifications/improved/dim40-affine-shells/) | — |
@@ -95,7 +95,7 @@ Expand a week for the main milestones; follow its history link for the full date
 <details>
 <summary>16–22 November 2026 (through 19 November)</summary>
 
-Rebuilding the Coxeter–Todd cell layer raises **36D to 502,767** (+945) and **37D to 506,691** (+1,053). [Exact proof](verifications/improved/dim36-37-ct-cell-rebuild/).
+Rebuilding the Coxeter–Todd cell layer raises **36D to 502,767** (+945) and **37D to 506,709** (+1,071). [Exact proof](verifications/improved/dim36-37-ct-cell-rebuild/).
 
 Triangular Hamming latitudes raise **38D to 611,798**, a gain of 160. [Exact proof](verifications/improved/dim38-triangle-hamming/).
 

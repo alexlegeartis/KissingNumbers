@@ -11,7 +11,7 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 19 November)</summary>
 
-**19 November 2026 — 36D/37D Coxeter–Todd cell rebuild.** The new witnesses give **502,767** and **506,691**, up 945 and 1,053. [Exact proof](verifications/improved/dim36-37-ct-cell-rebuild/).
+**19 November 2026 — 36D/37D Coxeter–Todd cell rebuild.** The new witnesses give **502,767** and **506,709**, up 945 and 1,071. [Exact proof](verifications/improved/dim36-37-ct-cell-rebuild/).
 
 **19 November 2026 — 38D triangular Hamming latitudes.** The new witness gives **611,798**, 160 above the preceding certificate. [Exact proof](verifications/improved/dim38-triangle-hamming/).
 

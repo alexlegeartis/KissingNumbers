@@ -1,7 +1,7 @@
-# 36D and 37D: 502,767 and 506,691 by rebuilding Coxeter–Todd cells
+# 36D and 37D: 502,767 and 506,709 by rebuilding Coxeter–Todd cells
 
 This construction raises the [preceding 501,822-point bound](../dim36-37-orbit-exchange/)
-by **945** and raises the preceding 505,638-point 37D bound by **1,053**. The 36D code is given by 5,098 outer cosets of a
+by **945** and raises the preceding 505,638-point 37D bound by **1,071**. The 36D code is given by 5,098 outer cosets of a
 product of three Coxeter–Todd lattices. The plain-text certificate is
 `certificate.json`. The [external Yang et al. comparison](https://arxiv.org/abs/2609.35051v1)
 is 484,760; this is a lower-bound construction, not an optimality
@@ -40,10 +40,10 @@ normalized pair has inner product at most 1/2.
 
 Use the entire 36D set as the equator. Select 219 outer cells with
 permuted block minima (0,4,4), each containing nine norm-eight points.
-At heights +2 and −2 these give 3,924 additional norm-12 points:
-**506,691** in total. Both replays check all 23,653 latitude cell
+At heights +2 and −2 these give 3,942 additional norm-12 points:
+**506,709** in total. Both replays check all 23,871 latitude cell
 pairs on one side at squared quotient distance at least 12, and all
-1,111,364 latitude-to-equator pairs at squared quotient distance at
+1,116,462 latitude-to-equator pairs at squared quotient distance at
 least eight. The height coordinate supplies the other four, and
 opposite heights alone supply squared distance 16.
 

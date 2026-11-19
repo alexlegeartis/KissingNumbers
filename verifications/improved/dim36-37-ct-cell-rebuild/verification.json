@@ -9,11 +9,11 @@
   "outer_pairs_checked": 12992253,
   "minimum_outer_distance": 12,
   "points_36": 502767,
-  "points_37": 506691,
-  "lift_cosets": 218,
+  "points_37": 506709,
+  "lift_cosets": 219,
   "lift_lift_and_lift_equator_pairs": [
-    23653,
-    1111364
+    23871,
+    1116462
   ],
   "minimum_lift_lift_and_lift_equator_distances": [
     12,
@@ -26,5 +26,5 @@
   },
   "all_checks_pass": true,
   "arithmetic": "Python integers and fractions.Fraction; no third-party libraries",
-  "certificate_sha256": "af4767c9d21f4b4c492ffcf97034a909ac41e3393d6bc01e96cb85992193f6ec"
+  "certificate_sha256": "81169c377a85bc45d567af059a038b26379427f758ddc48def2aa2befacfc236"
 }
