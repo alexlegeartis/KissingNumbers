@@ -30,9 +30,15 @@ def replay():
     # Ordinary roots contribute at most two terms of magnitude eight.
     # Octads contribute at most four terms of magnitude four.
     assert 2*8==16 and 4*4==16
+    # Add both unit poles on the marked axis. They have mutual
+    # product -1, and zero product with the retained roots and octads.
+    # Check squared absolute product against each remaining layer.
+    assert 4*8==32  # radical marked entry ±2√2, squared norm 32
+    assert all(4*m*m<=144+m*m for m in (1,4))
+    poles=2
     removed=4*36
-    n=data['points']-removed+64*len(T)
+    n=data['points']-removed+64*len(T)+poles
     return dict(status='PASS',dimension=37,points=n,baseline=data['points'],
-        new_six_supports=len(T),radical_points=64*len(T),removed_marked_roots=removed,
+        new_six_supports=len(T),unit_poles=poles,radical_points=64*len(T),removed_marked_roots=removed,
         kept_ordinary_roots=2*36*35,gain=n-data['points'])
 if __name__=='__main__': print(json.dumps(replay(),sort_keys=True))

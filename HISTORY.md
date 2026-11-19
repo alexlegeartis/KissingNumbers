@@ -11,7 +11,7 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 19 November)</summary>
 
-**19 November 2026 — 37D radical support packing.** The new **544,280**-point result gains 10,416 over the original QR construction by adding 10,560 radical points and removing 144 marked roots. [Exact proof](verifications/improved/dim37-qr-radical-families/).
+**19 November 2026 — 37D radical support packing.** The new **544,282**-point result gains 10,418 over the original QR construction by adding 10,560 radical points and two unit poles while removing 144 marked roots. [Exact proof](verifications/improved/dim37-qr-radical-families/).
 
 **19 November 2026 — 37D shared-root stars and the seven-site layer.** The new configuration gives **536,440** (+2,576), adding 720 stars and 2,432 radical-coordinate points while removing 576 roots. [37D proof](verifications/improved/dim37-qr-shared-stars/).
 

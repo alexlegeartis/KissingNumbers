@@ -46,5 +46,11 @@ assert 2*8<=16 and 4*4<=16
 assert 99**2>2*70**2
 for m in (1,4):
     assert 4*(24*70+2*m*99)**2<=32*(144+m*m)*70**2
-print(json.dumps({'status':'PASS','dimension':37,'points':533864-144+len(W),'radical_points':len(W),
+# Add the marked-axis poles. The radical pole products are ±1/2
+# after normalization; dense products are at most 4/sqrt(160).
+assert set(G)=={-1,1}
+assert 8*4==32
+assert all(160*m*m<=16*(144+m*m) for m in (1,4))
+assert all(4*m*m<=144+m*m for m in (1,4))
+print(json.dumps({'status':'PASS','dimension':37,'points':533864-144+len(W)+2,'unit_poles':2,'radical_points':len(W),
                   'all_radical_pairs':total,'max_radical_dot':mx},sort_keys=True))

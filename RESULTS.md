@@ -1,6 +1,6 @@
 # Results
 
-19 November 2026: 165 signed six-support families give 544280 in 37D (+10,416 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).
+19 November 2026: 165 signed six-support families and two unit poles give 544282 in 37D (+10,418 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).
 
 19 November 2026: shared signed-root cuts and a seven-site layer give 536440 in 37D (+2,576). [Exact replay](verifications/improved/dim37-qr-shared-stars/).
 

@@ -1,4 +1,4 @@
-# 37D: 544,280 by packing six-coordinate radical supports
+# 37D: 544,282 by packing six-coordinate radical supports
 
 Keep the dense and signed octad layers of the [533,864-point QR
 construction](../dim37-38-qr-merge/). Remove only the 144 signed roots
@@ -21,9 +21,14 @@ coordinate. Against dense points of special magnitude m=1 or 4,
 the raw product is at most 24 + 2m√2, strictly below half the norm
 product; the replays check its square with exact integer bounds.
 
+Both unit poles on the special coordinate also fit. They have
+product −1 with each other, zero with the roots and octads, absolute
+product exactly 1/2 with the normalized radical points, and squared
+product at most 16/160 with the normalized dense points.
+
 The set totals 180,224 dense points, 350,976 signed octad points,
-2,520 ordinary roots and 10,560 radical points: **544,280**. This is
-**10,416** above the original QR result and **7,840** above the
+2,520 ordinary roots, 10,560 radical points and 2 poles: **544,282**. This is
+**10,418** above the original QR result and **7,842** above the
 intermediate star construction.
 
 The supports are explicit masks on the 36 ordinary columns. They
