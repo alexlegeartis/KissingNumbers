@@ -1,8 +1,10 @@
 # Verification of the retained SOTA results
 
-Latest 36D and 37D: **502,767** and **506,709**, gains of 945 and 1,071. The [Coxeter–Todd cell proof](verifications/improved/dim36-37-ct-cell-rebuild/) checks short-shell enumerations, all 12,992,253 equator coset pairs, and all 1,140,333 relevant latitude coset pairs in two exact replays.
+Latest 37D and 38D: **533,864** and **643,836**, gains of 27,155 and 32,038. The [QR compression proof](verifications/improved/dim37-38-qr-merge/) checks the complete dense and sparse layers, all product classes in two formulations, and an optional full dense-pair expansion.
 
-Latest 38D: **611,798**, a gain of 160. The [triangular Hamming proof](verifications/improved/dim38-triangle-hamming/) gives two exact coordinate reconstructions and changed-pair checks, inheriting the unchanged Leech minimum-norm argument.
+Latest 36D and preceding 37D: **502,767** and **506,709**, gains of 945 and 1,071. The [Coxeter–Todd cell proof](verifications/improved/dim36-37-ct-cell-rebuild/) checks short-shell enumerations, all 12,992,253 equator coset pairs, and all 1,140,333 relevant latitude coset pairs in two exact replays.
+
+Preceding 38D: **611,798**, a gain of 160. The [triangular Hamming proof](verifications/improved/dim38-triangle-hamming/) gives two exact coordinate reconstructions and changed-pair checks, inheriting the unchanged Leech minimum-norm argument.
 
 Latest 35D: **415,336**, two above the previous certificate. The [shared-root proof](verifications/improved/dim35-shared-root-heads/) checks the complete code and support layers and a separate expansion verifies all 67,258,188 changed/anchor pairs.
 

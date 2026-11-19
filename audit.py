@@ -457,7 +457,7 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim2
 
 # Exact 13 November module replacements, including the retained BW14 checkpoint.
 for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sloane-section',
-                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange', 'dim30-reflected-certificate-unions', 'dim35-shared-root-heads', 'dim29-even-grid-exchange', 'dim38-triangle-hamming', 'dim36-37-ct-cell-rebuild'):
+                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange', 'dim30-reflected-certificate-unions', 'dim35-shared-root-heads', 'dim29-even-grid-exchange', 'dim38-triangle-hamming', 'dim36-37-ct-cell-rebuild', 'dim37-38-qr-merge'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -2187,6 +2187,7 @@ if '--write-results' in sys.argv and not fail:
         'dim25-point-split': 'one-for-two general-point splitting with collective motion of 971 Leech circles and 103 rational points; complete independent exact proof',
         'dim25-collective-deformation': 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons',
         'dim31-dual-centres': 'shared midpoint replacements and dual E7 centres; exact coordinate replay',
+        'dim37-38-qr-merge': 'QR coordinate compression with signed octads and roots; two exact layer proofs',
         'dim38-triangle-hamming': 'Parity-split triangular Hamming latitudes; two exact changed-pair proofs',
         'dim38-joint-latitudes': 'Orthogonal Hamming latitude replacement; two exact proofs with inherited Golay/Leech minimum-norm premise',
         'dim39-deformed-orbits': '32-element nonbinary sign orbits with actual support/parity bounds; two independent complete exact orbit proofs',
@@ -2224,6 +2225,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append('19 November 2026: compressing quadratic-residue coset codes raises 37D to 533864 (+27,155) and 38D to 643836 (+32,038). [Two exact replays](verifications/improved/dim37-38-qr-merge/).')
     out.append('19 November 2026: rebuilt Coxeter–Todd cells give 502767 in 36D (+945) and their two-sided latitude lift gives 506709 in 37D (+1,071). [Two exact coset replays](verifications/improved/dim36-37-ct-cell-rebuild/).')
     out.append('19 November 2026: parity-split triangular Hamming latitudes give 611798 in 38D, 160 above the previous certificate. The complete Hamming layer grows from 512 to 768, at a net cost of 96 cap points. [Two exact replays](verifications/improved/dim38-triangle-hamming/).')
     out.append('19 November 2026: exact projected-grid search and coordinated exchange give 232157 in 29D, 3 above the previous certificate. [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/).')

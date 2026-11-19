@@ -1,0 +1,1 @@
+{"dense": 180224, "dense_product_bounds": [[145, 145, 71], [145, 160, 76], [160, 160, 80]], "dimension": 37, "middle": 350976, "octad_intersections": {"0": 400893, "1": 1139016, "2": 1376880, "3": 583464, "4": 257658}, "points": 533864, "roots": 2664, "status": "PASS"}

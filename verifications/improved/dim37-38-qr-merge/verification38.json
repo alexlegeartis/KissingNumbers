@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "dimension": 38,
+  "points": 643836,
+  "dense_equal": 163840,
+  "dense_fixed_opposite": 81920,
+  "middle": 395264,
+  "roots": 2812,
+  "min_parent_kernel_distance": 12,
+  "cross_coset_pairs_at_distance_10": 45,
+  "merged_parent_coordinates_zero_based": [
+    0,
+    1
+  ],
+  "middle_support_sha256": "ccb530f90e914df84cbc8d19a71d30c79146d23a2e8e86e7a813d4d92a5a6a8b",
+  "octad_intersections": {
+    "0": 562756,
+    "1": 1540993,
+    "2": 1682649,
+    "3": 710496,
+    "4": 269434
+  },
+  "integer_product_ceiling_norms": {
+    "equal_equal": [
+      77,
+      157,
+      157
+    ],
+    "equal_opposite": [
+      76,
+      157,
+      148
+    ],
+    "opposite_opposite": [
+      68,
+      148,
+      148
+    ],
+    "equal_octad": [
+      34,
+      157,
+      32
+    ],
+    "opposite_octad": [
+      32,
+      148,
+      32
+    ],
+    "equal_root": [
+      20,
+      157,
+      32
+    ],
+    "opposite_root": [
+      16,
+      148,
+      32
+    ],
+    "octad_octad": [
+      16,
+      32,
+      32
+    ],
+    "octad_root": [
+      16,
+      32,
+      32
+    ],
+    "root_root": [
+      16,
+      32,
+      32
+    ]
+  }
+}

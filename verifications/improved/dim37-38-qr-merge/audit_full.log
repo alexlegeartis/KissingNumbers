@@ -1,0 +1,7 @@
+37 dense rows 65536
+37 dense rows 131072
+{"all_dense_pairs": 16240254976, "checked_five_subsets": 153552, "dense": 180224, "dense_extrema": [[145, 145, 71], [145, 160, 76], [160, 160, 80]], "dimension": 37, "points": 533864, "roots": 2664, "sparse_supports": 2742, "status": "PASS"}
+38 dense rows 65536
+38 dense rows 131072
+38 dense rows 196608
+{"all_dense_pairs": 30198865920, "checked_five_subsets": 172928, "dense": 245760, "dense_extrema": [[148, 148, 68], [148, 157, 76], [157, 157, 77]], "dimension": 38, "points": 643836, "roots": 2812, "sparse_supports": 3088, "status": "PASS"}

@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 19 November)</summary>
 
+**19 November 2026 — 37D/38D QR coordinate compression.** New bounds **533,864** and **643,836** improve the preceding witnesses by 27,155 and 32,038. [Exact proofs](verifications/improved/dim37-38-qr-merge/).
+
 **19 November 2026 — 36D/37D Coxeter–Todd cell rebuild.** The new witnesses give **502,767** and **506,709**, up 945 and 1,071. [Exact proof](verifications/improved/dim36-37-ct-cell-rebuild/).
 
 **19 November 2026 — 38D triangular Hamming latitudes.** The new witness gives **611,798**, 160 above the preceding certificate. [Exact proof](verifications/improved/dim38-triangle-hamming/).
@@ -374,7 +376,7 @@ comparison is given separately by its source.
 | 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 232 154 |
 | 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 248 416 |
 | 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 524 |
-| 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 611 798 |
+| 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 643 836 |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 852 |
 
 The retained 29–30D and 38–39D certificates exceed those intervening records.

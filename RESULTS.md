@@ -1,5 +1,7 @@
 # Results
 
+19 November 2026: compressing quadratic-residue coset codes raises 37D to 533864 (+27,155) and 38D to 643836 (+32,038). [Two exact replays](verifications/improved/dim37-38-qr-merge/).
+
 19 November 2026: rebuilt Coxeter–Todd cells give 502767 in 36D (+945) and their two-sided latitude lift gives 506709 in 37D (+1,071). [Two exact coset replays](verifications/improved/dim36-37-ct-cell-rebuild/).
 
 19 November 2026: parity-split triangular Hamming latitudes give 611798 in 38D, 160 above the previous certificate. The complete Hamming layer grows from 512 to 768, at a net cost of 96 cap points. [Two exact replays](verifications/improved/dim38-triangle-hamming/).
@@ -113,8 +115,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 34 | 390 980 | **390 992** | 1.00 | `heads` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
 | 35 | 415 308 | **415 336** | 1.00 | `heads` | [shared signed-root deletion ledger and exact coordinate replay](verifications/improved/dim35-shared-root-heads/) |
 | 36 | 484 760 | **502 767** | 1.04 | `cosets` | [Coxeter–Todd cell-layer rebuild; two exact coset geometry proofs](verifications/improved/dim36-37-ct-cell-rebuild/) |
-| 37 | 500 008 | **506 709** | 1.01 | `cosets` | [Rebuilt Coxeter–Todd cells and their two-sided latitude lift](verifications/improved/dim36-37-ct-cell-rebuild/) |
-| 38 | 566 652 | **611 798** | 1.08 | `heads` | [Parity-split triangular Hamming latitudes; two exact changed-pair proofs](verifications/improved/dim38-triangle-hamming/) |
+| 37 | 500 008 | **533 864** | 1.07 | `codes` | [QR coordinate compression with projective octads](verifications/improved/dim37-38-qr-merge/) |
+| 38 | 566 652 | **643 836** | 1.14 | `codes` | [QR coordinate compression with Lin octads](verifications/improved/dim37-38-qr-merge/) |
 | 39 | 755 988 | **769 852** | 1.02 | `codes` | [32-element nonbinary sign orbits with actual support/parity bounds; two independent complete exact orbit proofs](verifications/improved/dim39-deformed-orbits/) |
 | 40 | 1 092 000 | **1 126 314** | 1.03 | `heads` | [three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products](verifications/improved/dim40-affine-shells/) |
 | 41 | 1 324 472 | **1 460 036** | 1.10 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
@@ -192,7 +194,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `codes` | 92 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | four-row partition heads with three crosspolytope alphabets and exact RS/root augmentation |
 | `codes` | 93, 96 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | three crosspolytope alphabets with E7 head sections and exact Reed-Solomon/root augmentation; full inherited parent replay |
 | `codes` | 94-95 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation; full inherited parent replay |
-| `cosets` | 36-37 (2) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | compatible Coxeter-Todd orbit exchange with fresh exact source and replacement geometry; larger simultaneous exchanges remain open (dim36-37-orbit-exchange/verify.py) |
+| `cosets` | 36 (1) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | compatible Coxeter-Todd orbit exchange with fresh exact source and replacement geometry; larger simultaneous exchanges remain open (dim36-37-orbit-exchange/verify.py) |
 | `cosets` | 73-76 (4) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | nearest Gamma72 subsets and repaired group images; exact geometry and the inherited nearestness certificates are replayed (dim73-88-gamma72-cosets/verify.py) |
 | `cosets` | 77-78 (2) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | exact norm-ten moments, mixed tails and weighted-priority existence bounds; different tail sets and stronger independence bounds remain open (dim73-88-gamma72-cosets/verify_norm10.py) |
 | `exhausted` | 18 (1) | the mechanism cannot give more; a different construction is needed | the bent-coset hexagon over odd BW16 is exactly at its ceiling: tier B <= 6*M6 and M6 = 160 (the 512-word slot graph is isomorphic to the girth-5 graph whose independence number 160 is CP-SAT-certified), so 8358 is the scheme maximum; poles, family size and vector shapes are all pinned (verifications/improved/dim18-bent-hexagon/README.md) |
@@ -205,7 +207,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `heads` | 31 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | annealed E8 orientation and full exterior deletion pricing; 2218 additions and 2052 removals; exact complete geometry (dim31-annealed-design/verify.py) |
 | `heads` | 34 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | rational heavy-head rotation with a changed dense coordinate placement and star parity; all finite interactions, uniqueness and rank verified exactly (dim32-35-signed-layers/rotated34/verify.py) |
 | `heads` | 35 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | coordinated full-support heads and root stars share four discarded roots; larger compatible head families and different parities remain open (dim35-shared-root-heads/verify.py) |
-| `heads` | 38 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | 768 triangular Hamming points replace 512 antipodal latitude points; two exact changed-pair replays (dim38-triangle-hamming/verify.py) |
+| `codes` | 37-38 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | complete projected QR dense layers with signed octads and roots (dim37-38-qr-merge/verify.py) |
 | `heads` | 40 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products; larger compatible families remain open (dim40-affine-shells/verify.py) |
 | `heads` | 41-46 (6) | joint body-family and head searches remain open; no construction ceiling is claimed | independently normalized P48n body families with rational heads and pure head points; the latest angles and exact ranks replay, while populations inherit the supplied tables and modular-form derivation. Larger coupled family changes, partial families and new body models remain open; finite search optima are not global ceilings. The partial-family 43D and coordinated-motion 45D certificates are installed (dim41-46-p48-heads/README.md, verify.py, POPULATIONS.txt) |
 | `heads` | 68-69 (2) | joint body-family and head searches remain open; no construction ceiling is claimed | actual D7 normals strengthen D4 slice populations by nested orientation averaging and exact moment duals; two independent profile and geometry proofs, with published Gamma72 premises; other normal systems and geometries remain open (dim68-69-gamma72-extended-moments/verify.py) |
@@ -230,8 +232,8 @@ refreshed table, not more search.
 | 31 | `dim30-31-midpoint-exchanges` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 32-35 | `dim32-35-signed-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 35 | `dim35-shared-root-heads` | verify.py: exact signed layers, shared deletions and separate coordinate expansion |
-| 36-37 | `dim36-37-ct-cell-rebuild` | verify.py and audit.py: exact short-shell, outer-coset and latitude replays |
-| 38 | `dim38-triangle-hamming` | verify.py and audit.py: two independent integer replays of the new layer and its interactions |
+| 36 | `dim36-37-ct-cell-rebuild` | verify.py and audit.py: exact short-shell and outer-coset replays |
+| 37-38 | `dim37-38-qr-merge` | verify.py and audit.py: two independent integer checks of all layer types |
 | 39 | `dim39-deformed-orbits` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 40 | `dim40-affine-shells` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 41-46 | `dim41-46-p48-heads` | verify.py (integer angles and exact ranks; inherited population tables, not a fresh body enumeration) |

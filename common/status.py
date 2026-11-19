@@ -642,3 +642,6 @@ STATUS[89] = ('codes', 'thirteen Z8 fibers with opposite mixed latitudes and exa
 
 STATUS[36] = ('cosets', 'rebuilt 3669 phase cells over the 403704-point base; two exact coset replays (dim36-37-ct-cell-rebuild/verify.py)')
 STATUS[37] = ('cosets', 'two-sided height-2 extension with 219 complete latitude cells over the rebuilt equator (dim36-37-ct-cell-rebuild/verify.py)')
+
+STATUS[37] = ('codes', 'complete projected QR sign code, projective octads and roots (dim37-38-qr-merge/verify.py)')
+STATUS[38] = ('codes', 'complete projected QR sign code, Lin octads and roots (dim37-38-qr-merge/verify.py)')
