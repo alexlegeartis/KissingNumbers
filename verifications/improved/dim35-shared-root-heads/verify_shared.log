@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "dimension": 35,
+  "points": 415336,
+  "gain": 2,
+  "root_star_count": 150,
+  "head_count": 12,
+  "delta_deleted_roots": 134,
+  "roots_retained": 2246,
+  "roots_paid_by_stars": 132,
+  "roots_paid_by_heads": 6,
+  "root_overlap": 4,
+  "extra_coordinates": [
+    0,
+    3,
+    18
+  ],
+  "pair_maxima_checked": {
+    "star_star": 16,
+    "head_head": 19,
+    "star_head": 20,
+    "star_root": 16,
+    "head_root": 16,
+    "head_dense": 20
+  },
+  "certificate_sha256": "9d4b35ac5d18f40011282ec2e83753bdffee947351584a77a910baef875768cf"
+}

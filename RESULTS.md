@@ -1,5 +1,7 @@
 # Results
 
+19 November 2026: shared root deletions give 415336 in 35D, two above the previous 415334-point construction. [Two exact verification routes](verifications/improved/dim35-shared-root-heads/).
+
 The 18 November 2026 E8 and auxiliary exchange gives 232154 in 29D, one above the pinned Takhanov witness. Complete exact geometry and the 22-for-21 exchange replay from verifications/improved/dim29-takhanov-auxiliary-exchange/.
 
 Four reflected unions give 248416 in 30D, gaining 65 over 248351. [Exact coordinate proof](verifications/improved/dim30-reflected-certificate-unions/)
@@ -103,7 +105,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 32 | 352 320 | **352 992** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
 | 33 | 370 240 | **370 408** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
 | 34 | 390 980 | **390 992** | 1.00 | `heads` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
-| 35 | 415 308 | **415 334** | 1.00 | `heads` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
+| 35 | 415 308 | **415 336** | 1.00 | `heads` | [shared signed-root deletion ledger and exact coordinate replay](verifications/improved/dim35-shared-root-heads/) |
 | 36 | 484 760 | **501 822** | 1.04 | `cosets` | [compatible Coxeter-Todd orbit exchange; fresh exact source and replacement geometry, retaining all latitude body orbits](verifications/improved/dim36-37-orbit-exchange/) |
 | 37 | 500 008 | **505 638** | 1.01 | `cosets` | [compatible Coxeter-Todd orbit exchange; fresh exact source and replacement geometry, retaining all latitude body orbits](verifications/improved/dim36-37-orbit-exchange/) |
 | 38 | 566 652 | **611 638** | 1.08 | `heads` | [Orthogonal Hamming latitude replacement; two exact proofs with inherited Golay/Leech minimum-norm premise](verifications/improved/dim38-joint-latitudes/) |
@@ -196,7 +198,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `heads` | 30 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | four reflected unions and four auxiliary points give 248416; exact 456-for-391 exchange and all-pairs geometry (dim30-reflected-certificate-unions/verify.py) |
 | `heads` | 31 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | annealed E8 orientation and full exterior deletion pricing; 2218 additions and 2052 removals; exact complete geometry (dim31-annealed-design/verify.py) |
 | `heads` | 34 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | rational heavy-head rotation with a changed dense coordinate placement and star parity; all finite interactions, uniqueness and rank verified exactly (dim32-35-signed-layers/rotated34/verify.py) |
-| `heads` | 35 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | dense-code coset shifts with coordinated full-support heads and root deletions; larger compatible head families and different parities remain open (dim32-35-signed-layers/verify.py) |
+| `heads` | 35 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | coordinated full-support heads and root stars share four discarded roots; larger compatible head families and different parities remain open (dim35-shared-root-heads/verify.py) |
 | `heads` | 38 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | 6784 Fano-grid and orthogonal Hamming latitude points after 132 cap deletions; full seven-coordinate heads and a new norm split escape the old support ceiling; other joint layers remain open (dim38-joint-latitudes/verify.py) |
 | `heads` | 40 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products; larger compatible families remain open (dim40-affine-shells/verify.py) |
 | `heads` | 41-46 (6) | joint body-family and head searches remain open; no construction ceiling is claimed | independently normalized P48n body families with rational heads and pure head points; the latest angles and exact ranks replay, while populations inherit the supplied tables and modular-form derivation. Larger coupled family changes, partial families and new body models remain open; finite search optima are not global ceilings. The partial-family 43D and coordinated-motion 45D certificates are installed (dim41-46-p48-heads/README.md, verify.py, POPULATIONS.txt) |
@@ -221,6 +223,7 @@ refreshed table, not more search.
 | 30 | `dim30-reflected-certificate-unions` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 31 | `dim30-31-midpoint-exchanges` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 32-35 | `dim32-35-signed-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
+| 35 | `dim35-shared-root-heads` | verify.py: exact signed layers, shared deletions and separate coordinate expansion |
 | 36-37 | `dim36-37-orbit-exchange` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 38 | `dim38-joint-latitudes` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 39 | `dim39-deformed-orbits` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |

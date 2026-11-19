@@ -106,6 +106,7 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('dim35-shared-root-heads: exact signed-root trade', os.path.join(V, 'improved', 'dim35-shared-root-heads'), ['verify.py'], 1.0, True),
     ('29D Takhanov auxiliary exchange and complete geometry', os.path.join(V, 'improved', 'dim29-takhanov-auxiliary-exchange'), ['verify.py'], 1.0, True),
     ('30D reflected certificate unions and complete geometry', os.path.join(V, 'improved', 'dim30-reflected-certificate-unions'), ['verify.py'], 1.0, True),
     ('30D contact-sum exchange and complete geometry', os.path.join(V, 'improved', 'dim30-contact-sum-exchanges'), ['verify.py'], 1.0, True),
@@ -477,6 +478,7 @@ def _sota_jobs(quick=False):
         ('dim28-takhanov-root-exchange', ('verify.py',)),
         ('dim28-takhanov-root-exchange', ('negative_controls.py',)),
         ('dim29-takhanov-auxiliary-exchange', ('verify.py',)),
+        ('dim35-shared-root-heads', ('verify.py',)),
         ('dim30-reflected-certificate-unions', ('verify.py',)),
         ('dim30-31-midpoint-exchanges', ('verify.py',)),
         ('dim30-certificate-unions', ('verify.py',)),
@@ -616,6 +618,7 @@ def _sota_coverage(jobs, results=None):
         ('dim68-91-lattice-code-continuation', [68,69,71,87,88,89,90,91], [('verify.py',)], 'exact rational shell/head geometry, generator ranks and sparse counts; published minimum and design inputs retained'),
         ('dim28-takhanov-root-exchange', [28], [('verify.py',), ('negative_controls.py',)],
          'complete exact geometry for 223528 points, pinned Takhanov source and independent integer exchange'),
+        ('dim35-shared-root-heads', [35], [('verify.py',)], 'exact signed-layer and shared-root checks plus independent coordinate expansion for all 67258188 changed/anchor products'),
         ('dim29-takhanov-auxiliary-exchange', [29], [('verify.py',)],
          'complete exact geometry for 232154 points and the pinned 22-for-21 exchange'),
         ('dim30-reflected-certificate-unions', [30], [('verify.py',)],

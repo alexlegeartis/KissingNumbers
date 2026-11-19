@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+Latest 35D: **415,336**, two above the previous certificate. The [shared-root proof](verifications/improved/dim35-shared-root-heads/) checks the complete code and support layers and a separate expansion verifies all 67,258,188 changed/anchor pairs.
+
 Latest 28D: **223,528**, 32 above Takhanov’s pinned construction. The [E8 root exchange](verifications/improved/dim28-takhanov-root-exchange/) checks all **24,982,271,628** unordered final pairs and separately verifies the 320-for-288 exchange in signed int64.
 
 The latest 29D witness has **232,154** points, one above Takhanov’s alternate witness. The 22-for-21 exchange and all **26,947,623,781** final pairs pass exact verification. [29D exchange proof](verifications/improved/dim29-takhanov-auxiliary-exchange/).
@@ -107,7 +109,7 @@ not a new mathematical verification. All commands require assertions enabled.
 | 26 | Complete asymmetric integer coordinates; every unordered point pair | NumPy; retained 28–30D certificates remain available |
 | 38 | Two independent exact proofs rebuild all cap classes, equatorial lines and axes; check 120 cap deletions and all 6,656 expanded latitude points | Golay lattice congruences and weight enumerator prove the parent minimum |
 | 39 | Replay sparse supports and root replacements; check every relative pair of 1,281 dense sign orbits | Bounded integer arithmetic and complete Walsh enumeration |
-| 32–35 | Current 32D 352992 and 33D 370408 configurations reconstructed with independent exact proofs; the 33D audit checks all 2129016 exceptional pairs in two arithmetic representations, every star category, exact source/deltas, rank 33, 500 missing antipodes and 16 controls for each of its final and unpublished intermediate witnesses; retained 32D controls, all historical proofs and exact 34–35D head/root replays | Python 3.10+ and NumPy; no search or unverified population input |
+| 32–35 | Current 32D 352992 and 33D 370408 configurations reconstructed with independent exact proofs; the 33D audit checks all 2129016 exceptional pairs in two arithmetic representations, every star category, exact source/deltas, rank 33, 500 missing antipodes and 16 controls for each of its final and unpublished intermediate witnesses; retained 32D controls, all historical proofs and exact 34–35D head/root replays, including the 415336-point 35D construction | Python 3.10+ and NumPy; no search or unverified population input |
 | 36–37 | Fresh exact source replay and independent reconstruction of all retained base switches; every added/retained phase and latitude interaction, plus malformed-proof controls | Python 3.9+, NumPy and SymPy; no unverified parent population |
 | 41–46 | Exact head ranks and angles; two independent 43D tiny-layer replays; explicit tiny bodies and added medium classes | Complete-family population identities and tables are inherited; the latest large shells have not all been freshly enumerated |
 | 49–60 | All 7,387 base lines, 577 integral isometries, 3,901,694 distinct lines and cap directions | Published parent lattice minimum/shell size; the 12D Coxeter–Todd direction count is a literature input |
