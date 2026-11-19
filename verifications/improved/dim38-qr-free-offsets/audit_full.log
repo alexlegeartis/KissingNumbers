@@ -1,0 +1,4 @@
+dense rows 65536
+dense rows 131072
+dense rows 196608
+{"all_dense_pairs": 32245682176, "dense": 253952, "dimension": 38, "product_extrema": [[-3, -3, 77], [-3, 0, 76], [-3, 3, 75], [0, 0, 68], [0, 3, 76], [3, 3, 77]], "status": "PASS", "total": 652028}

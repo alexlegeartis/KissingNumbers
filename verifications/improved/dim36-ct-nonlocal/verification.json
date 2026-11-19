@@ -1,0 +1,19 @@
+{
+  "dimension": 36,
+  "points": 502821,
+  "squared_norm": 12,
+  "minimum_squared_distance_at_least": 12,
+  "maximum_inner_product_at_most": 6,
+  "unit_sphere_inner_product_at_most": "1/2",
+  "outer_cosets": 5100,
+  "outer_pairs_checked": 13002450,
+  "minimum_outer_distance": 12,
+  "exact_short_shell_counts": {
+    "8": 20412,
+    "6": 4032,
+    "4": 756
+  },
+  "all_checks_pass": true,
+  "arithmetic": "Python integers and fractions.Fraction; no third-party libraries",
+  "certificate_sha256": "c4598a0dfc49365ae2b082745454c38b53b76703e5eef5dafbd71e2d06c59180"
+}

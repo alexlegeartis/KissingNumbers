@@ -106,6 +106,13 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('dim37-qr-shared-stars: exact sparse insertion', os.path.join(V, 'improved', 'dim37-qr-shared-stars'), ['verify.py'], 1.0, True),
+    ('dim37-qr-shared-stars: independent seven-site surd audit', os.path.join(V, 'improved', 'dim37-qr-shared-stars'), ['audit_six.py'], 1.0, True),
+    ('dim37-qr-shared-stars: independent signed-root incidence', os.path.join(V, 'improved', 'dim37-qr-shared-stars'), ['audit.py'], 1.0, True),
+    ('dim36-ct-nonlocal: exact CT phase code', os.path.join(V, 'improved', 'dim36-ct-nonlocal'), ['verify.py'], 1.0, True),
+    ('dim36-ct-nonlocal: independent shell and coset audit', os.path.join(V, 'improved', 'dim36-ct-nonlocal'), ['verify_independent.py'], 1.0, True),
+    ('dim38-qr-free-offsets: exact dense and sparse layers', os.path.join(V, 'improved', 'dim38-qr-free-offsets'), ['verify.py'], 1.0, True),
+    ('dim38-qr-free-offsets: independent fibre audit', os.path.join(V, 'improved', 'dim38-qr-free-offsets'), ['audit.py'], 1.0, True),
     ('dim37-38-qr-merge: exact compressed code geometry', os.path.join(V, 'improved', 'dim37-38-qr-merge'), ['verify.py'], 1.0, True),
     ('dim37-38-qr-merge: independent difference and support audit', os.path.join(V, 'improved', 'dim37-38-qr-merge'), ['audit.py'], 1.0, True),
     ('dim36-37-ct-cell-rebuild: exact coset geometry', os.path.join(V, 'improved', 'dim36-37-ct-cell-rebuild'), ['verify.py'], 1.0, True),
@@ -505,6 +512,13 @@ def _sota_jobs(quick=False):
         ('dim29-30-native-partial-design', ('independent30/audit.py',)),
 
         ('dim31-annealed-design', ('verify.py',)),
+        ('dim36-ct-nonlocal', ('verify.py',)),
+        ('dim36-ct-nonlocal', ('verify_independent.py',)),
+        ('dim37-qr-shared-stars', ('verify.py',)),
+        ('dim37-qr-shared-stars', ('audit.py',)),
+        ('dim37-qr-shared-stars', ('audit_six.py',)),
+        ('dim38-qr-free-offsets', ('verify.py',)),
+        ('dim38-qr-free-offsets', ('audit.py',)),
         ('dim37-38-qr-merge', ('verify.py',)),
         ('dim37-38-qr-merge', ('audit.py',)),
         ('dim36-37-ct-cell-rebuild', ('verify.py',)),
@@ -654,6 +668,9 @@ def _sota_coverage(jobs, results=None):
          'complete exact geometry for all 251420 points; exact int32 exchange with 2218 additions and 2052 removals from251254; historical packages retained'),
         ('dim30-bw14-module', [30], [('verify.py',)],
          'complete exact geometry for all 248020 points; separate integer Barnes-Wall reconstruction, pinned-source exchange and every inserted pair; four malformed-input controls'),
+        ('dim36-ct-nonlocal', [36], [('verify.py',), ('verify_independent.py',)], 'complete Coxeter-Todd phase layer and all coset pairs'),
+        ('dim38-qr-free-offsets', [38], [('verify.py',), ('audit.py',)], '31 full QR fibres with independently optimized offsets and two retained sparse layers'),
+        ('dim37-qr-shared-stars', [37], [('verify.py',), ('audit.py',), ('audit_six.py',)], 'exact sparse geometry, shared signed-root accounting, and radical-layer replay'),
         ('dim37-38-qr-merge', [37,38], [('verify.py',), ('audit.py',)], 'exact integer dense compression, projective octads and sparse cross products'),
         ('dim36-37-ct-cell-rebuild', [36,37], [('verify.py',), ('audit.py',)], 'complete exact Coxeter-Todd short-shell, equator coset and two-sided latitude geometry'),
         ('dim36-37-orbit-exchange', [36,37], [('verify.py',), ('rejection_controls.py',)],

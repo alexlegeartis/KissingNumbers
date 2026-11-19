@@ -645,3 +645,8 @@ STATUS[37] = ('cosets', 'two-sided height-2 extension with 219 complete latitude
 
 STATUS[37] = ('codes', 'complete projected QR sign code, projective octads and roots (dim37-38-qr-merge/verify.py)')
 STATUS[38] = ('codes', 'complete projected QR sign code, Lin octads and roots (dim37-38-qr-merge/verify.py)')
+
+STATUS[36] = ('cosets', '3,671 phase cells from nonlocal fibre neighborhoods over the fixed two-block base; two exact replays (dim36-ct-nonlocal/verify.py)')
+STATUS[38] = ('codes', '31 complete affine fibres with separately optimized offsets; signed octads and roots retained (dim38-qr-free-offsets/verify.py)')
+
+STATUS[37] = ('codes', '720 stars use 576 shared signed-root cuts and permit 2,432 more seven-site points; dense and octad layers retained (dim37-qr-shared-stars/verify.py)')
