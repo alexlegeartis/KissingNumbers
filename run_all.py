@@ -679,7 +679,7 @@ def _sota_coverage(jobs, results=None):
         ('dim36-ct-nonlocal', [36], [('verify.py',), ('verify_independent.py',)], 'complete Coxeter-Todd phase layer and all coset pairs'),
         ('dim38-qr-star-trades', [38], [('verify.py',), ('audit.py',)], '144 explicit stars with 128 root deletions'),
         ('dim38-qr-free-offsets', [38], [('verify.py',), ('audit.py',)], '31 full QR fibres with independently optimized offsets and two retained sparse layers'),
-        ('dim37-qr-radical-families', [37], [('verify.py',), ('audit.py',)], '165 radical families, exact affected geometry and explicit 55,751,520 radical pairs'),
+        ('dim37-qr-radical-families', [37], [('verify.py',), ('audit.py',)], '166 radical families, exact affected geometry and explicit 56,429,376 radical pairs'),
         ('dim37-qr-shared-stars', [37], [('verify.py',), ('audit.py',), ('audit_six.py',)], 'exact sparse geometry, shared signed-root accounting, and radical-layer replay'),
         ('dim37-38-qr-merge', [37,38], [('verify.py',), ('audit.py',)], 'exact integer dense compression, projective octads and sparse cross products'),
         ('dim36-37-ct-cell-rebuild', [36,37], [('verify.py',), ('audit.py',)], 'complete exact Coxeter-Todd short-shell, equator coset and two-sided latitude geometry'),
