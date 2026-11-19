@@ -651,6 +651,6 @@ STATUS[38] = ('codes', '31 complete affine fibres with separately optimized offs
 
 STATUS[37] = ('codes', '720 stars use 576 shared signed-root cuts and permit 2,432 more seven-site points; dense and octad layers retained (dim37-qr-shared-stars/verify.py)')
 
-STATUS[37] = ('codes', '166 six-supports with 10,624 seven-site points; 144 removed marked roots (dim37-qr-radical-families/verify.py)')
+STATUS[37] = ('codes', '168 six-supports with 10,752 seven-site points; 144 removed marked roots (dim37-qr-radical-families/verify.py)')
 
 STATUS[38] = ('codes', '31 complete affine fibres and a 144-star trade with 128 root deletions (dim38-qr-star-trades/verify.py)')

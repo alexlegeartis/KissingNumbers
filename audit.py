@@ -2230,7 +2230,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
-    out.append('19 November 2026: 166 signed six-support families and two unit poles give 544346 in 37D (+10,482 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).')
+    out.append('19 November 2026: 168 signed six-support families and two unit poles give 544474 in 37D (+10,610 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).')
     out.append('19 November 2026: shared signed-root cuts and a seven-site layer give 536440 in 37D (+2,576). [Exact replay](verifications/improved/dim37-qr-shared-stars/).')
     out.append('19 November 2026: new exact QR offsets and signed star trades give 652044 in 38D (+8,208), and a nonlocal Coxeter–Todd phase rebuild gives 502821 in 36D (+54). [38D replay](verifications/improved/dim38-qr-star-trades/) · [36D replay](verifications/improved/dim36-ct-nonlocal/).')
     out.append('19 November 2026: compressing quadratic-residue coset codes raises 37D to 533864 (+27,155) and 38D to 643836 (+32,038). [Two exact replays](verifications/improved/dim37-38-qr-merge/).')

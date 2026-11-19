@@ -13,7 +13,7 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **19 November 2026 — 38D signed star trades.** Replace 128 signed roots with 144 stars, keeping every dense point and signed octad. [652,044-point proof](verifications/improved/dim38-qr-star-trades/).
 
-**19 November 2026 — 37D radical support packing.** The new **544,346**-point result gains 10,482 over the original QR construction by adding 10,624 radical points and two unit poles while removing 144 marked roots. [Exact proof](verifications/improved/dim37-qr-radical-families/).
+**19 November 2026 — 37D radical support packing.** The new **544,474**-point result gains 10,610 over the original QR construction by adding 10,752 radical points and two unit poles while removing 144 marked roots. [Exact proof](verifications/improved/dim37-qr-radical-families/).
 
 **19 November 2026 — 37D shared-root stars and the seven-site layer.** The new configuration gives **536,440** (+2,576), adding 720 stars and 2,432 radical-coordinate points while removing 576 roots. [37D proof](verifications/improved/dim37-qr-shared-stars/).
 

@@ -1,6 +1,6 @@
 # Verification of the retained SOTA results
 
-Latest 37D: **544,346**, 10,482 above the original QR construction. The [radical-layer verification](verifications/improved/dim37-qr-radical-families/) checks all 56,429,376 new-layer pairs and exact cross-layer bounds.
+Latest 37D: **544,474**, 10,610 above the original QR construction. The [radical-layer verification](verifications/improved/dim37-qr-radical-families/) checks all 57,797,376 new-layer pairs and exact cross-layer bounds.
 
 Intermediate 37D: **536,440** (+2,576), with 720 stars replacing 576 roots and a further 2,432 seven-site points. Independent exact [sparse-layer checks](verifications/improved/dim37-qr-shared-stars/) cover all affected pairs and the signed-root ledger.
 

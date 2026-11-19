@@ -1,6 +1,6 @@
 # Results
 
-19 November 2026: 166 signed six-support families and two unit poles give 544346 in 37D (+10,482 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).
+19 November 2026: 168 signed six-support families and two unit poles give 544474 in 37D (+10,610 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).
 
 19 November 2026: shared signed-root cuts and a seven-site layer give 536440 in 37D (+2,576). [Exact replay](verifications/improved/dim37-qr-shared-stars/).
 
@@ -213,7 +213,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `heads` | 31 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | annealed E8 orientation and full exterior deletion pricing; 2218 additions and 2052 removals; exact complete geometry (dim31-annealed-design/verify.py) |
 | `heads` | 34 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | rational heavy-head rotation with a changed dense coordinate placement and star parity; all finite interactions, uniqueness and rank verified exactly (dim32-35-signed-layers/rotated34/verify.py) |
 | `heads` | 35 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | coordinated full-support heads and root stars share four discarded roots; larger compatible head families and different parities remain open (dim35-shared-root-heads/verify.py) |
-| `codes` | 37 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | 166 six-supports with 10,624 seven-site points; 144 removed marked roots (dim37-qr-radical-families/verify.py) |
+| `codes` | 37 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | 168 six-supports with 10,752 seven-site points; 144 removed marked roots (dim37-qr-radical-families/verify.py) |
 | `codes` | 38 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | finds 31 complete affine fibres after shortening; signed octads and roots retained (dim38-qr-free-offsets/verify.py) |
 | `heads` | 40 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products; larger compatible families remain open (dim40-affine-shells/verify.py) |
 | `heads` | 41-46 (6) | joint body-family and head searches remain open; no construction ceiling is claimed | independently normalized P48n body families with rational heads and pure head points; the latest angles and exact ranks replay, while populations inherit the supplied tables and modular-form derivation. Larger coupled family changes, partial families and new body models remain open; finite search optima are not global ceilings. The partial-family 43D and coordinated-motion 45D certificates are installed (dim41-46-p48-heads/README.md, verify.py, POPULATIONS.txt) |
@@ -240,7 +240,7 @@ refreshed table, not more search.
 | 32-35 | `dim32-35-signed-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 35 | `dim35-shared-root-heads` | verify.py: exact signed layers, shared deletions and separate coordinate expansion |
 | 36 | `dim36-ct-nonlocal` | verify.py and verify_independent.py: two exact short-shell and 13,002,450 coset-pair replays |
-| 37 | `dim37-qr-radical-families` | verify.py and audit.py: exact sparse and dense cross bounds and all 56,429,376 new-layer pairs |
+| 37 | `dim37-qr-radical-families` | verify.py and audit.py: exact sparse and dense cross bounds and all 57,797,376 new-layer pairs |
 | 38 | `dim38-qr-free-offsets` | verify.py and audit.py: exact checks of 31 full dense fibres and all layer types |
 | 39 | `dim39-deformed-orbits` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 40 | `dim40-affine-shells` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
