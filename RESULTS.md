@@ -1,5 +1,7 @@
 # Results
 
+19 November 2026: 165 signed six-support families give 544280 in 37D (+10,416 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).
+
 19 November 2026: shared signed-root cuts and a seven-site layer give 536440 in 37D (+2,576). [Exact replay](verifications/improved/dim37-qr-shared-stars/).
 
 19 November 2026: new exact QR offsets give 652028 in 38D (+8,192), and a nonlocal Coxeter–Todd phase rebuild gives 502821 in 36D (+54). [38D replay](verifications/improved/dim38-qr-free-offsets/) · [36D replay](verifications/improved/dim36-ct-nonlocal/).
@@ -119,7 +121,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 34 | 390 980 | **390 992** | 1.00 | `heads` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
 | 35 | 415 308 | **415 336** | 1.00 | `heads` | [shared signed-root deletion ledger and exact coordinate replay](verifications/improved/dim35-shared-root-heads/) |
 | 36 | 484 760 | **502 821** | 1.04 | `cosets` | [Nonlocal Coxeter–Todd phase rebuild](verifications/improved/dim36-ct-nonlocal/) |
-| 37 | 500 008 | **536 440** | 1.07 | `codes` | [QR compression and shared signed-root cuts](verifications/improved/dim37-qr-shared-stars/) |
+| 37 | 500 008 | **544 280** | 1.09 | `codes` | [QR compression and radical support packing](verifications/improved/dim37-qr-radical-families/) |
 | 38 | 566 652 | **652 028** | 1.15 | `codes` | [New QR offsets after compression; signed octads and roots retained](verifications/improved/dim38-qr-free-offsets/) |
 | 39 | 755 988 | **769 852** | 1.02 | `codes` | [32-element nonbinary sign orbits with actual support/parity bounds; two independent complete exact orbit proofs](verifications/improved/dim39-deformed-orbits/) |
 | 40 | 1 092 000 | **1 126 314** | 1.03 | `heads` | [three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products](verifications/improved/dim40-affine-shells/) |
@@ -211,7 +213,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `heads` | 31 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | annealed E8 orientation and full exterior deletion pricing; 2218 additions and 2052 removals; exact complete geometry (dim31-annealed-design/verify.py) |
 | `heads` | 34 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | rational heavy-head rotation with a changed dense coordinate placement and star parity; all finite interactions, uniqueness and rank verified exactly (dim32-35-signed-layers/rotated34/verify.py) |
 | `heads` | 35 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | coordinated full-support heads and root stars share four discarded roots; larger compatible head families and different parities remain open (dim35-shared-root-heads/verify.py) |
-| `codes` | 37 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | 720 stars use 576 shared signed-root cuts and permit 2,432 more seven-site points; dense and octad layers retained (dim37-qr-shared-stars/verify.py) |
+| `codes` | 37 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | 165 six-supports with 10,560 seven-site points; 144 removed marked roots (dim37-qr-radical-families/verify.py) |
 | `codes` | 38 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | finds 31 complete affine fibres after shortening; signed octads and roots retained (dim38-qr-free-offsets/verify.py) |
 | `heads` | 40 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products; larger compatible families remain open (dim40-affine-shells/verify.py) |
 | `heads` | 41-46 (6) | joint body-family and head searches remain open; no construction ceiling is claimed | independently normalized P48n body families with rational heads and pure head points; the latest angles and exact ranks replay, while populations inherit the supplied tables and modular-form derivation. Larger coupled family changes, partial families and new body models remain open; finite search optima are not global ceilings. The partial-family 43D and coordinated-motion 45D certificates are installed (dim41-46-p48-heads/README.md, verify.py, POPULATIONS.txt) |
@@ -238,7 +240,7 @@ refreshed table, not more search.
 | 32-35 | `dim32-35-signed-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 35 | `dim35-shared-root-heads` | verify.py: exact signed layers, shared deletions and separate coordinate expansion |
 | 36 | `dim36-ct-nonlocal` | verify.py and verify_independent.py: two exact short-shell and 13,002,450 coset-pair replays |
-| 37 | `dim37-qr-shared-stars` | verify.py, audit.py, and audit_six.py: exact sparse insertions, signed-root ledger and surd-product audit |
+| 37 | `dim37-qr-radical-families` | verify.py and audit.py: exact sparse and dense cross bounds and all 55,751,520 new-layer pairs |
 | 38 | `dim38-qr-free-offsets` | verify.py and audit.py: exact checks of 31 full dense fibres and all layer types |
 | 39 | `dim39-deformed-orbits` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 40 | `dim40-affine-shells` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |

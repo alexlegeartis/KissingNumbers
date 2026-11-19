@@ -457,7 +457,7 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim2
 
 # Exact 13 November module replacements, including the retained BW14 checkpoint.
 for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sloane-section',
-                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange', 'dim30-reflected-certificate-unions', 'dim35-shared-root-heads', 'dim29-even-grid-exchange', 'dim38-triangle-hamming', 'dim36-37-ct-cell-rebuild', 'dim37-38-qr-merge', 'dim36-ct-nonlocal', 'dim38-qr-free-offsets', 'dim37-qr-shared-stars'):
+                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange', 'dim30-reflected-certificate-unions', 'dim35-shared-root-heads', 'dim29-even-grid-exchange', 'dim38-triangle-hamming', 'dim36-37-ct-cell-rebuild', 'dim37-38-qr-merge', 'dim36-ct-nonlocal', 'dim38-qr-free-offsets', 'dim37-qr-shared-stars', 'dim37-qr-radical-families'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -2188,6 +2188,7 @@ if '--write-results' in sys.argv and not fail:
         'dim25-collective-deformation': 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons',
         'dim31-dual-centres': 'shared midpoint replacements and dual E7 centres; exact coordinate replay',
         'dim36-ct-nonlocal': 'Nonlocal Coxeter–Todd phase rebuild; two exact integer replays',
+        'dim37-qr-radical-families': 'QR compression and radical support packing; exact changed-pair proof',
         'dim37-qr-shared-stars': 'QR compression and shared signed-root cuts; exact sparse geometry',
         'dim38-qr-free-offsets': 'New QR offsets after compression; signed octads and roots retained',
         'dim37-38-qr-merge': 'QR coordinate compression with signed octads and roots; two exact layer proofs',
@@ -2228,6 +2229,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append('19 November 2026: 165 signed six-support families give 544280 in 37D (+10,416 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).')
     out.append('19 November 2026: shared signed-root cuts and a seven-site layer give 536440 in 37D (+2,576). [Exact replay](verifications/improved/dim37-qr-shared-stars/).')
     out.append('19 November 2026: new exact QR offsets give 652028 in 38D (+8,192), and a nonlocal Coxeter–Todd phase rebuild gives 502821 in 36D (+54). [38D replay](verifications/improved/dim38-qr-free-offsets/) · [36D replay](verifications/improved/dim36-ct-nonlocal/).')
     out.append('19 November 2026: compressing quadratic-residue coset codes raises 37D to 533864 (+27,155) and 38D to 643836 (+32,038). [Two exact replays](verifications/improved/dim37-38-qr-merge/).')

@@ -650,3 +650,5 @@ STATUS[36] = ('cosets', '3,671 phase cells from nonlocal fibre neighborhoods ove
 STATUS[38] = ('codes', '31 complete affine fibres with separately optimized offsets; signed octads and roots retained (dim38-qr-free-offsets/verify.py)')
 
 STATUS[37] = ('codes', '720 stars use 576 shared signed-root cuts and permit 2,432 more seven-site points; dense and octad layers retained (dim37-qr-shared-stars/verify.py)')
+
+STATUS[37] = ('codes', '165 six-supports with 10,560 seven-site points; 144 removed marked roots (dim37-qr-radical-families/verify.py)')

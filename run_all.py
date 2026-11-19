@@ -106,6 +106,8 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('dim37-qr-radical-families: exact layered construction', os.path.join(V, 'improved', 'dim37-qr-radical-families'), ['verify.py'], 1.0, True),
+    ('dim37-qr-radical-families: explicit radical pair audit', os.path.join(V, 'improved', 'dim37-qr-radical-families'), ['audit.py'], 1.0, True),
     ('dim37-qr-shared-stars: exact sparse insertion', os.path.join(V, 'improved', 'dim37-qr-shared-stars'), ['verify.py'], 1.0, True),
     ('dim37-qr-shared-stars: independent seven-site surd audit', os.path.join(V, 'improved', 'dim37-qr-shared-stars'), ['audit_six.py'], 1.0, True),
     ('dim37-qr-shared-stars: independent signed-root incidence', os.path.join(V, 'improved', 'dim37-qr-shared-stars'), ['audit.py'], 1.0, True),
@@ -514,6 +516,8 @@ def _sota_jobs(quick=False):
         ('dim31-annealed-design', ('verify.py',)),
         ('dim36-ct-nonlocal', ('verify.py',)),
         ('dim36-ct-nonlocal', ('verify_independent.py',)),
+        ('dim37-qr-radical-families', ('verify.py',)),
+        ('dim37-qr-radical-families', ('audit.py',)),
         ('dim37-qr-shared-stars', ('verify.py',)),
         ('dim37-qr-shared-stars', ('audit.py',)),
         ('dim37-qr-shared-stars', ('audit_six.py',)),
@@ -670,6 +674,7 @@ def _sota_coverage(jobs, results=None):
          'complete exact geometry for all 248020 points; separate integer Barnes-Wall reconstruction, pinned-source exchange and every inserted pair; four malformed-input controls'),
         ('dim36-ct-nonlocal', [36], [('verify.py',), ('verify_independent.py',)], 'complete Coxeter-Todd phase layer and all coset pairs'),
         ('dim38-qr-free-offsets', [38], [('verify.py',), ('audit.py',)], '31 full QR fibres with independently optimized offsets and two retained sparse layers'),
+        ('dim37-qr-radical-families', [37], [('verify.py',), ('audit.py',)], '165 radical families, exact affected geometry and explicit 55,751,520 radical pairs'),
         ('dim37-qr-shared-stars', [37], [('verify.py',), ('audit.py',), ('audit_six.py',)], 'exact sparse geometry, shared signed-root accounting, and radical-layer replay'),
         ('dim37-38-qr-merge', [37,38], [('verify.py',), ('audit.py',)], 'exact integer dense compression, projective octads and sparse cross products'),
         ('dim36-37-ct-cell-rebuild', [36,37], [('verify.py',), ('audit.py',)], 'complete exact Coxeter-Todd short-shell, equator coset and two-sided latitude geometry'),

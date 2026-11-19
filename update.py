@@ -83,6 +83,7 @@ DRIVERS.append(('68-69D extended Gamma72 moments', os.path.join(V, 'dim68-69-gam
 DRIVERS.append(('26D radical-orbit continuation', os.path.join(V, 'dim26-27-radical-orbits'), 'final.py'))
 DRIVERS.append(('28D Takhanov root exchange', os.path.join(V, 'dim28-takhanov-root-exchange'), 'final.py'))
 DRIVERS.append(('36D nonlocal Coxeter-Todd phase rebuild', os.path.join(V, 'dim36-ct-nonlocal'), 'final.py'))
+DRIVERS.append(('37D QR radical support packing', os.path.join(V, 'dim37-qr-radical-families'), 'final.py'))
 DRIVERS.append(('37D shared-root QR stars', os.path.join(V, 'dim37-qr-shared-stars'), 'final.py'))
 DRIVERS.append(('38D QR free offsets', os.path.join(V, 'dim38-qr-free-offsets'), 'final.py'))
 DRIVERS.append(('37-38D QR coordinate compression', os.path.join(V, 'dim37-38-qr-merge'), 'final.py'))
