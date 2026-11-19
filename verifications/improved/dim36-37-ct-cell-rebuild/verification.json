@@ -1,0 +1,30 @@
+{
+  "dimension": 36,
+  "points": 502767,
+  "squared_norm": 12,
+  "minimum_squared_distance_at_least": 12,
+  "maximum_inner_product_at_most": 6,
+  "unit_sphere_inner_product_at_most": "1/2",
+  "outer_cosets": 5098,
+  "outer_pairs_checked": 12992253,
+  "minimum_outer_distance": 12,
+  "points_36": 502767,
+  "points_37": 506691,
+  "lift_cosets": 218,
+  "lift_lift_and_lift_equator_pairs": [
+    23653,
+    1111364
+  ],
+  "minimum_lift_lift_and_lift_equator_distances": [
+    12,
+    8
+  ],
+  "exact_short_shell_counts": {
+    "8": 20412,
+    "6": 4032,
+    "4": 756
+  },
+  "all_checks_pass": true,
+  "arithmetic": "Python integers and fractions.Fraction; no third-party libraries",
+  "certificate_sha256": "af4767c9d21f4b4c492ffcf97034a909ac41e3393d6bc01e96cb85992193f6ec"
+}

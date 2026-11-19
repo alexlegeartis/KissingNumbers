@@ -457,7 +457,7 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim2
 
 # Exact 13 November module replacements, including the retained BW14 checkpoint.
 for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sloane-section',
-                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange', 'dim30-reflected-certificate-unions', 'dim35-shared-root-heads', 'dim29-even-grid-exchange', 'dim38-triangle-hamming'):
+                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange', 'dim30-reflected-certificate-unions', 'dim35-shared-root-heads', 'dim29-even-grid-exchange', 'dim38-triangle-hamming', 'dim36-37-ct-cell-rebuild'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -2210,6 +2210,7 @@ if '--write-results' in sys.argv and not fail:
         'dim68-69-gamma72-cross-sections': 'Weyl-averaged six-slice 68D and ten-slice 69D Gamma72 unions; exact integral orientations, averaged moment duals and geometry',
         'dim69-gamma72-head-compression': 'ten Gamma72 slices compressed to one reconstructed coordinate; two independent exact population and geometry proofs',
         'dim68-69-gamma72-extended-moments': 'actual D7 normals, nested D4 orientation averaging and stronger exact moment duals; two independent complete profile and geometry proofs, including two 69D poles',
+        'dim36-37-ct-cell-rebuild': 'Coxeter–Todd cell-layer rebuild; two exact coset geometry proofs',
         'dim36-37-orbit-exchange': 'compatible Coxeter-Todd orbit exchange; fresh exact source and replacement geometry, retaining all latitude body orbits',
         'dim61-67-compatible-sign-families': 'larger compatible support and sign families in shortened, compressed and extended binary-code layers; fresh exact finite replay',
         'dim70-71-gamma72-cross-sections': 'central Gamma72 sections and a three-slice 70D affine union with an independent exact dual proof',
@@ -2223,6 +2224,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append('19 November 2026: rebuilt Coxeter–Todd cells give 502767 in 36D (+945) and their two-sided latitude lift gives 506691 in 37D (+1,053). [Two exact coset replays](verifications/improved/dim36-37-ct-cell-rebuild/).')
     out.append('19 November 2026: parity-split triangular Hamming latitudes give 611798 in 38D, 160 above the previous certificate. The complete Hamming layer grows from 512 to 768, at a net cost of 96 cap points. [Two exact replays](verifications/improved/dim38-triangle-hamming/).')
     out.append('19 November 2026: exact projected-grid search and coordinated exchange give 232157 in 29D, 3 above the previous certificate. [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/).')
     out.append('19 November 2026: shared root deletions give 415336 in 35D, two above the previous 415334-point construction. [Two exact verification routes](verifications/improved/dim35-shared-root-heads/).')

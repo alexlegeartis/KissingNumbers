@@ -106,6 +106,8 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('dim36-37-ct-cell-rebuild: exact coset geometry', os.path.join(V, 'improved', 'dim36-37-ct-cell-rebuild'), ['verify.py'], 1.0, True),
+    ('dim36-37-ct-cell-rebuild: independent short-shell audit', os.path.join(V, 'improved', 'dim36-37-ct-cell-rebuild'), ['audit.py'], 1.0, True),
     ('dim29-even-grid-exchange: exact projected-grid trade', os.path.join(V, 'improved', 'dim29-even-grid-exchange'), ['verify.py'], 1.0, True),
     ('dim35-shared-root-heads: exact signed-root trade', os.path.join(V, 'improved', 'dim35-shared-root-heads'), ['verify.py'], 1.0, True),
     ('29D Takhanov auxiliary exchange and complete geometry', os.path.join(V, 'improved', 'dim29-takhanov-auxiliary-exchange'), ['verify.py'], 1.0, True),
@@ -501,6 +503,8 @@ def _sota_jobs(quick=False):
         ('dim29-30-native-partial-design', ('independent30/audit.py',)),
 
         ('dim31-annealed-design', ('verify.py',)),
+        ('dim36-37-ct-cell-rebuild', ('verify.py',)),
+        ('dim36-37-ct-cell-rebuild', ('audit.py',)),
         ('dim36-37-orbit-exchange', ('verify.py',)),
         ('dim36-37-orbit-exchange', ('rejection_controls.py',)),
         ('dim61-67-compatible-sign-families', ('verify.py',)),
@@ -646,6 +650,7 @@ def _sota_coverage(jobs, results=None):
          'complete exact geometry for all 251420 points; exact int32 exchange with 2218 additions and 2052 removals from251254; historical packages retained'),
         ('dim30-bw14-module', [30], [('verify.py',)],
          'complete exact geometry for all 248020 points; separate integer Barnes-Wall reconstruction, pinned-source exchange and every inserted pair; four malformed-input controls'),
+        ('dim36-37-ct-cell-rebuild', [36,37], [('verify.py',), ('audit.py',)], 'complete exact Coxeter-Todd short-shell, equator coset and two-sided latitude geometry'),
         ('dim36-37-orbit-exchange', [36,37], [('verify.py',), ('rejection_controls.py',)],
          'fresh exact Coxeter-Todd source replay and all replacement interactions; no floating-point angle tolerance'),
         ('dim61-67-compatible-sign-families', [67], [('verify.py',), ('rejection_controls.py',)],
