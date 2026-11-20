@@ -4,6 +4,8 @@
 
 19 November 2026: shared signed-root cuts and a seven-site layer give 536440 in 37D (+2,576). [Exact replay](verifications/improved/dim37-qr-shared-stars/).
 
+20 November 2026: two full-octad swaps enable 32 extra stars for 24 roots, giving 370416 in 33D (+8 over 370408). [Two exact replays](verifications/improved/dim33-octad-switches/).
+
 20 November 2026: four octad switches and a signed-star exchange give 391004 in 34D (+12 over 390992). [Two exact replays](verifications/improved/dim34-octad-switches/).
 
 20 November 2026: seven octad switches enable a net 96-star gain for 74 signed roots, giving 415358 in 35D (+22 over 415336). [Exact proof](verifications/improved/dim35-octad-switches/).
@@ -123,7 +125,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 30 | 220 440 | **248 416** | 1.13 | `heads` | [four reflected certificate unions and four auxiliary points with complete exact geometry](verifications/improved/dim30-reflected-certificate-unions/) |
 | 31 | 238 350 | **251 524** | 1.06 | `heads` | [joint row-midpoint, fibre, auxiliary and Leech-root exchanges; complete exact geometry](verifications/improved/dim30-31-midpoint-exchanges/) |
 | 32 | 352 320 | **352 992** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
-| 33 | 370 240 | **370 408** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
+| 33 | 370 240 | **370 416** | 1.00 | `codes` | [two full-octad swaps and two signed-star families](verifications/improved/dim33-octad-switches/) |
 | 34 | 390 980 | **391 004** | 1.00 | `heads` | [coordinated octad switches and root-star exchanges; two exact proofs](verifications/improved/dim34-octad-switches/) |
 | 35 | 415 308 | **415 358** | 1.00 | `heads` | [octad switches and a signed-star exchange](verifications/improved/dim35-octad-switches/) |
 | 36 | 484 760 | **502 821** | 1.04 | `cosets` | [Nonlocal Coxeter–Todd phase rebuild](verifications/improved/dim36-ct-nonlocal/) |
@@ -195,7 +197,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 |---|---|---|---|
 | `classes` | 49-60 (12) | larger class families or improved direction and pole codes can help | signed P48 mother-class exchanges with individual ownership; complete finite class and tail checks, independent full seed proof, and published mother-shell inputs (dim49-60-p48-signed-refill/verify.py) |
 | `codes` | 32 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | non-antipodal explicit signed octads on 29 supports; 1824 exceptional points with 380 unpaired, with broader supports and sign selections still open (dim32-35-signed-layers/nonantipodal32/replay.py) |
-| `codes` | 33 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | non-antipodal signed octads and individual root-star trades; 370408 points with 500 unpaired, with broader supports and joint root-star choices still open (dim32-35-signed-layers/nonantipodal33/replay.py) |
+| `codes` | 33 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | two full-octad swaps and new signed star families; 370416 points with 500 unpaired (dim33-octad-switches/verify.py) |
 | `codes` | 39 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | 32-element nonbinary sign orbits and retained sparse layers; two independent complete exact proofs; larger compatible orbit families remain open (dim39-deformed-orbits/verify.py) |
 | `codes` | 61-62, 66 (3) | larger input codes or different layer and section geometry can improve these explicit constructions | affine sign-subcode reconstruction with exact affected geometry and independent replay (dim61-62-66-affine-reconstruction/verify.py) |
 | `codes` | 63-65 (3) | larger input codes or different layer and section geometry can improve these explicit constructions | affine sign-subcode reconstruction with exact affected geometry and independent replay (dim63-65-affine-reconstruction/verify.py) |
@@ -243,6 +245,7 @@ refreshed table, not more search.
 | 29 | `dim29-even-grid-exchange` | verify.py: exact exchange replay; use --full for complete final geometry |
 | 30 | `dim30-reflected-certificate-unions` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 31 | `dim30-31-midpoint-exchanges` | verify.py: complete exact coordinates and independent direct-integer module exchange |
+| 33 | `dim33-octad-switches` | Exact support and coordinate replays of the 370,416 directions |
 | 34 | `dim34-octad-switches` | Two exact replays of four octad switches and the final 391,004 directions |
 | 32-35 | `dim32-35-signed-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 35 | `dim35-octad-switches` | Exact dense code and signed layers, seven octad switches, 246 stars and 208 deleted roots |
