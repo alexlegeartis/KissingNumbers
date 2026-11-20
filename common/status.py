@@ -647,7 +647,7 @@ STATUS[37] = ('codes', 'complete projected QR sign code, projective octads and r
 STATUS[38] = ('codes', 'complete projected QR sign code, Lin octads and roots (dim37-38-qr-merge/verify.py)')
 
 STATUS[36] = ('cosets', '3,671 phase cells from nonlocal fibre neighborhoods over the fixed two-block base; two exact replays (dim36-ct-nonlocal/verify.py)')
-STATUS[38] = ('codes', '31 QR fibres, eight octad switches and verified signed star/root trade (dim38-qr-octad-switches/verify.py)')
+STATUS[38] = ('codes', '31 QR fibres, ten octad switches and verified signed star/root trade (dim38-qr-octad-switches/verify.py)')
 
 STATUS[37] = ('codes', '720 stars use 576 shared signed-root cuts and permit 2,432 more seven-site points; dense and octad layers retained (dim37-qr-shared-stars/verify.py)')
 

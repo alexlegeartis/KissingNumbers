@@ -64,7 +64,7 @@ ix=set()
 for r in J['replacements']:
  i=r['i']; assert i not in ix and tuple(r['remove'])==O[i]
  ix.add(i);O[i]=tuple(r['add'])
-assert len(ix)==8
+assert len(ix)==10
 A=[set(x)for x in O]
 assert len(set(map(frozenset,A)))==3088 and all(len(s)==8 and min(s)>=0 and max(s)<38 for s in A)
 assert max(len(x&y)for x,y in I.combinations(A,2))==4
@@ -75,7 +75,7 @@ for c,*l in J['stars']:
   for s in I.product((-1,1),repeat=4):
    if s.count(-1)%2:continue
    T.append({c:4*e,**{j:2*v for j,v in zip(l,s)}})
-assert len(T)==len({tuple(sorted(z.items()))for z in T})==272
+assert len(T)==len({tuple(sorted(z.items()))for z in T})==288
 R=[]
 removed=[]
 def dot(v,w):return sum(a*w.get(i,0)for i,a in v.items())
@@ -84,7 +84,7 @@ for i,j in I.combinations(range(38),2):
   r={i:a,j:b}
   if any(dot(t,r)>16 for t in T):removed.append((i,j,a,b))
   else:R.append(r)
-assert len(R)==2584 and len(removed)==228
+assert len(R)==2572 and len(removed)==240
 for a,b in I.combinations(T,2):assert dot(a,b)<=16
 # Use the absolute support bound against all signed octad realizations.
 for s in T:
@@ -98,5 +98,5 @@ for h in (-3,0,3):
  for o in A:assert safe(sum(2*(abs(h)if i==0 else 2)for i in o),n,32)
  for q in R+T:assert safe(sum(abs(v)*(abs(h)if i==0 else 2)for i,v in q.items()),n,32)
 total=len(V)*len(K)+128*len(O)+len(T)+len(R)
-assert total==652072
+assert total==652076
 print(json.dumps(dict(status='PASS',dimension=38,total=total,dense=len(V)*len(K),octads=128*len(O),new_stars=len(T),retained_roots=len(R),removed_roots=len(removed),removed_root_supports=len({(i,j) for i,j,a,b in removed})),sort_keys=True))

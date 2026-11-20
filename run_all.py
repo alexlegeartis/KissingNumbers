@@ -681,7 +681,7 @@ def _sota_coverage(jobs, results=None):
         ('dim30-bw14-module', [30], [('verify.py',)],
          'complete exact geometry for all 248020 points; separate integer Barnes-Wall reconstruction, pinned-source exchange and every inserted pair; four malformed-input controls'),
         ('dim36-ct-nonlocal', [36], [('verify.py',), ('verify_independent.py',)], 'complete Coxeter-Todd phase layer and all coset pairs'),
-        ('dim38-qr-octad-switches', [38], [('verify.py',), ('audit.py',)], 'eight verified octad switches, 272 stars, 228 root deletions and unchanged QR fibres'),
+        ('dim38-qr-octad-switches', [38], [('verify.py',), ('audit.py',)], 'ten verified octad switches, 288 stars, 240 root deletions and unchanged QR fibres'),
         ('dim38-qr-star-trades', [38], [('verify.py',), ('audit.py',)], '144 explicit stars with 128 root deletions'),
         ('dim38-qr-free-offsets', [38], [('verify.py',), ('audit.py',)], '31 full QR fibres with independently optimized offsets and two retained sparse layers'),
         ('dim37-qr-radical-families', [37], [('verify.py',), ('audit.py',)], '168 radical families, exact affected geometry and explicit 57,797,376 radical pairs'),

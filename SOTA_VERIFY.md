@@ -4,7 +4,7 @@ Latest 37D: **544,474**, 10,610 above the original QR construction. The [radical
 
 Intermediate 37D: **536,440** (+2,576), with 720 stars replacing 576 roots and a further 2,432 seven-site points. Independent exact [sparse-layer checks](verifications/improved/dim37-qr-shared-stars/) cover all affected pairs and the signed-root ledger.
 
-Latest 38D: **652,072** (+28). The [octad-switch verification](verifications/improved/dim38-qr-octad-switches/) checks the eight replacements and all final support pairs, and independently regenerates the signed stars and root deletions. The 31 dense fibres are unchanged and replayed.
+Latest 38D: **652,076** (+4). The [octad-switch verification](verifications/improved/dim38-qr-octad-switches/) checks the ten replacements and all final support pairs, and independently regenerates the signed stars and root deletions. The 31 dense fibres are unchanged and replayed.
 
 Latest 36D and preceding 38D: **502,821** (+54) and **652,044** (+8,208). The [36D phase proof](verifications/improved/dim36-ct-nonlocal/) replays all 13,002,450 outer coset pairs; the [38D offset proof](verifications/improved/dim38-qr-free-offsets/) replays all 465 inter-fibre comparisons and the unchanged sparse geometry. The [38D star trade](verifications/improved/dim38-qr-star-trades/) verifies every new star and the 128 root deletions.
 
