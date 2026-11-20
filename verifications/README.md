@@ -49,6 +49,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim31-latitude-contact-exchange`](improved/dim31-latitude-contact-exchange/) | 31 | retained 251,200; explicit four-for-eight exchange, two complete exact coordinate proofs including independent integer-only enumeration |
 | [`dim27-31-algebraic-completion`](improved/dim27-31-algebraic-completion/) | 27, 31 | retained 209,825 in 27D and 251,196 in 31D; partial signed orbits, shared deletions and an orthogonal sign cube; complete exact geometry and independent direct-integer changes |
 | [`dim27-31-joint-refills`](improved/dim27-31-joint-refills/) | 27–31 | retained earlier certificates; exact full geometry and direct-integer insertion checks |
+| [`dim26-section-rational-kernel`](improved/dim26-section-rational-kernel/) | 26 | **201,195**, three above Takhanov; full exact geometry |
 | [`dim26-27-radical-orbits`](improved/dim26-27-radical-orbits/) | 26, 27 | **201,188 and 209,884**, +8 and +22 over PackingStar; complete exact final geometry and independent integer 160-for-152 and 238-for-216 exchanges |
 | [`dim26-30-asymmetric-exchanges`](improved/dim26-30-asymmetric-exchanges/) | 26, 28–30 | 201,136 current in 26D; retained 221,694; 231,638; 247,960; asymmetric integer codes with complete exact all-pairs proofs |
 | [`dim27-quadratic-normal-module`](improved/dim27-quadratic-normal-module/) | 27 | retained 209,600-point quadratic construction, +14 over PackingStar; complete independent exact all-pairs replay |

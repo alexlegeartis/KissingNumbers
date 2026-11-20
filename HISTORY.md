@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 20 November)</summary>
 
+**20 November 2026 — 26D rational kernel replacement.** A rebuilt 10D section of a 27D Leech-based code gives [**201,195 in 26D**](verifications/improved/dim26-section-rational-kernel/), three above [Takhanov’s 201,192](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1).
+
 **20 November 2026 — 33D octad switches.** Two octad replacements enable 32 additional stars for 24 signed roots, giving [370,416](verifications/improved/dim33-octad-switches/).
 
 **20 November 2026 — 34D coordinated octad switches.** Four octad replacements enable a net gain of 48 stars for 36 roots, raising the lower bound to [391,004](verifications/improved/dim34-octad-switches/).

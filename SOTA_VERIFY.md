@@ -32,6 +32,8 @@ The preceding 30D witness has **248,351** points, a gain of 62 over 248,289. The
 
 The joint midpoint package verifies **251,524** in 31D and the preceding 30D witness of **248,289**. [Joint midpoint proofs](verifications/improved/dim30-31-midpoint-exchanges/).
 
+Latest 26D: **201,195** (three above Takhanov). The [section rebuild](verifications/improved/dim26-section-rational-kernel/) restores the Leech roots, verifies the new 331-point kernel in exact rational arithmetic, and offers a complete exact exterior-pair check with `--full`.
+
 Retained 26D and 27D certificates give **201,188** and **209,884**, respectively **8 and 22 above** pinned PackingStar. Takhanov’s later release gives **201,192** and **210,108**. The [radical-orbit and E8 head-frame proofs](verifications/improved/dim26-27-radical-orbits/) reconstruct the 160-for-152 and 238-for-216 exchanges and check all **20,238,205,078** and **22,025,541,786** final unordered pairs exactly. Run `python verifications/improved/dim26-27-radical-orbits/verify.py` and `python verifications/improved/dim26-27-radical-orbits/negative_controls.py`. [Takhanov’s release](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1)
 
 The alternate **201,192**-point 26D witness passes complete integer and rational verification. Fixed-projection verifiers cover the two Takhanov witnesses and the 26D alternate. [26D and 27D research](research/26_27_native_projection_obstructions_20261118/)
@@ -126,7 +128,7 @@ not a new mathematical verification. All commands require assertions enabled.
 | 25 | Independent Leech rebuild, all 971 circles and 102 moved points; exact biquadratic comparisons | Standard Leech shell kissing property |
 | 27–31 | Complete integer coordinates, all unordered point pairs and direct-int64 inserted-point checks; current 30D/31D modules also have independent exact reconstruction | NumPy; no baseline validity assumption. The retained earlier 31D package additionally provides an integer-only C++ full-pair replay |
 | 40 | Independent lattice minimum enumeration and all auxiliary/core pair types | NumPy and C++17 g++ with __int128; exact bounded integer BLAS |
-| 26 | Complete asymmetric integer coordinates; every unordered point pair | NumPy; retained 28–30D certificates remain available |
+| 26 | 27D section, exact rational kernel, and every unordered exterior pair with `--full` | NumPy |
 | 38 | Two independent exact proofs rebuild all cap classes, equatorial lines and axes; check 120 cap deletions and all 6,656 expanded latitude points | Golay lattice congruences and weight enumerator prove the parent minimum |
 | 39 | Replay sparse supports and root replacements; check every relative pair of 1,281 dense sign orbits | Bounded integer arithmetic and complete Walsh enumeration |
 | 32–35 | Current 32D 352992 and 33D 370408 configurations reconstructed with independent exact proofs; the 33D audit checks all 2129016 exceptional pairs in two arithmetic representations, every star category, exact source/deltas, rank 33, 500 missing antipodes and 16 controls for each of its final and unpublished intermediate witnesses; retained 32D controls, all historical proofs and exact 34–35D head/root replays, including the 415336-point 35D construction | Python 3.10+ and NumPy; no search or unverified population input |

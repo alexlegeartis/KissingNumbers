@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "dimension": 26,
+  "fixed_exterior": 200864,
+  "kernel": 331,
+  "rational_noninteger_kernel_rows": 77,
+  "cardinality": 201195,
+  "full_exterior_pair_check": true
+}

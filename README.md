@@ -19,7 +19,7 @@ The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over t
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 18 | 7 654 | [Cohn–Li, BW16 + hexagons](https://arxiv.org/abs/2411.04916v3) | **8 358** | **SOTA** | +9.2% | — | since 2026-09-17 | [BW16](verifications/improved/dim18-bent-hexagon/) | — |
 | 25 | 197 056 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **197 586** | **SOTA** | +0.269% | — |2026-08-30 to 2026-09-28; since 2026-10-26 | [Critical-cluster replacement and exact contacts](verifications/improved/dim25-critical-cluster/) | — |
-| 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 188** | 201 192 | +0.6604% | +0.00199% | superseded 2026-11-17 | [Radical-orbit continuation](verifications/improved/dim26-27-radical-orbits/) | [Takhanov’s Leech midpoint construction](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1) |
+| 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 195** | **SOTA** | +0.66394% | — | updated 2026-11-20 | [27D section and rational kernel](verifications/improved/dim26-section-rational-kernel/) | — |
 | 27 | 201 589 | [Takhanov–Yun, cap colouring](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 884** | 210 108 | +4.1148% | +0.10673% | superseded 2026-11-17 | [E8 head-frame replacement](verifications/improved/dim26-27-radical-orbits/) | [Takhanov’s Leech midpoint construction](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1) |
 | 28 | 205 172 | [K. Li, Leech lift and auxiliary layers](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **223 528** | **SOTA** | +8.94664% | — | updated 2026-11-18 | [E8 root and auxiliary exchange](verifications/improved/dim28-takhanov-root-exchange/) | — |
 | 29 | 209 496 | [Ma et al., PackingStar](https://arxiv.org/abs/2511.13391v4) | **232 157** | **SOTA** | +10.81691% | — | updated 2026-11-19 | [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/) | — |
@@ -111,7 +111,7 @@ Rebuilding the Coxeter–Todd cell layer raises **36D to 502,767** (+945) and **
 
 Triangular Hamming latitudes raise **38D to 611,798**, a gain of 160. [Exact proof](verifications/improved/dim38-triangle-hamming/).
 
-The alternate 26D construction reaches **201,192**, tying Takhanov. Fixed-projection obstructions cover the 26D and 27D comparison witnesses. [26D and 27D research](research/26_27_native_projection_obstructions_20261118/)
+A rebuilt 10D section of a 27D Leech-based code gives [**201,195 in 26D**](verifications/improved/dim26-section-rational-kernel/), three above [Takhanov’s 201,192](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1). The earlier alternate construction tied Takhanov at 201,192. Fixed-projection obstructions cover the 26D and 27D comparison witnesses. [26D and 27D research](research/26_27_native_projection_obstructions_20261118/)
 
 The 29D projected-grid search gives **232,157**, 3 above the preceding repository witness and 4 above Takhanov’s pinned release. [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/).
 

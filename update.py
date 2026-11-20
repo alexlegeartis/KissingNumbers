@@ -90,6 +90,7 @@ DRIVERS.append(('38D QR star trades', os.path.join(V, 'dim38-qr-star-trades'), '
 DRIVERS.append(('38D QR octad switches', os.path.join(V, 'dim38-qr-octad-switches'), 'final.py'))
 DRIVERS.append(('37-38D QR coordinate compression', os.path.join(V, 'dim37-38-qr-merge'), 'final.py'))
 DRIVERS.append(('38D triangular Hamming', os.path.join(V, 'dim38-triangle-hamming'), 'final.py'))
+DRIVERS.append(('26D section and rational kernel', os.path.join(V, 'dim26-section-rational-kernel'), 'final.py'))
 DRIVERS.append(('33D octad switches', os.path.join(V, 'dim33-octad-switches'), 'final.py'))
 DRIVERS.append(('34D octad switches', os.path.join(V, 'dim34-octad-switches'), 'final.py'))
 DRIVERS.append(('35D octad switches', os.path.join(V, 'dim35-octad-switches'), 'final.py'))
