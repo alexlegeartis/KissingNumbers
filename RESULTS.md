@@ -28,7 +28,7 @@ The 18 November 2026 E8 and auxiliary exchange gives 232154 in 29D, one above th
 
 Four reflected unions give 248416 in 30D, gaining 65 over 248351. [Exact coordinate proof](verifications/improved/dim30-reflected-certificate-unions/)
 
-A rebuilt 10D section of a 27D Leech-based code gives [**201,202 in 26D**](verifications/improved/dim26-section-rational-kernel/), 10 above [Takhanov’s 201,192](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1). A preceding 201192-point alternate construction tied Takhanov in 26D. Fixed-projection proofs cover both Takhanov witnesses in 26D and 27D and the 26D alternate. [Research and verifiers](research/26_27_native_projection_obstructions_20261118/)
+A rebuilt 10D section of a 27D Leech-based code gives [**201,203 in 26D**](verifications/improved/dim26-section-rational-kernel/), 11 above [Takhanov’s 201,192](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1). A preceding 201192-point alternate construction tied Takhanov in 26D. Fixed-projection proofs cover both Takhanov witnesses in 26D and 27D and the 26D alternate. [Research and verifiers](research/26_27_native_projection_obstructions_20261118/)
 
 Two 18 November 2026 contact-sum rounds give 248351 in 30D, gaining 62 over the 248289-point witness. The exact exchange and every final pair replay from verifications/improved/dim30-contact-sum-exchanges/.
 
@@ -118,7 +118,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 |---|---|---|---|---|---|
 | 18 | 7 654 | **8 358** | 1.09 | `exhausted` | [odd BW16 in R^16 plus a hexagon of tiers in R^2 whose three six-set families are bent cosets of RM(1,4) with pairwise-bent sums not summing to zero; tier B rises from 256 to 960](verifications/improved/dim18-bent-hexagon/) |
 | 25 | 197 056 | **197 586** | 1.00 | `heads` | [critical-cluster replacement with 926 Leech circles and 247 rational points; rational conic contact preservation and complete independent exact proof](verifications/improved/dim25-critical-cluster/) |
-| 26 | 199 868 | **201 202** | 1.01 | `heads` | [27D section and 338-point rational kernel](verifications/improved/dim26-section-rational-kernel/); complete exact geometry |
+| 26 | 199 868 | **201 203** | 1.01 | `heads` | [27D section and 339-point rational kernel](verifications/improved/dim26-section-rational-kernel/); complete exact geometry |
 | 27 | 201 589 | **209 884** | 1.04 | `heads` | [26D radical-orbit and 27D E8 head-frame exchanges over PackingStar; complete exact final geometry and independent integer exchanges](verifications/improved/dim26-27-radical-orbits/) |
 | 28 | 205 172 | **223 528** | 1.09 | `heads` | [E8 contact cycles and auxiliary-frame exchange over the pinned Takhanov witness; complete exact geometry](verifications/improved/dim28-takhanov-root-exchange/) |
 | 29 | 209 496 | **232 157** | 1.11 | `heads` | [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/) with complete exact geometry |
