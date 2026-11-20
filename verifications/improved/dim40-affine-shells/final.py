@@ -11,7 +11,9 @@ def results():
         assert all(x.dtype==np.int8 for x in arrays)
         total=sum(len(x) for x in arrays)
         assert total==1126314
-    return [dict(dimension=40,total=total)]
+    refill=np.loadtxt(ROOT/'source/minimum_shell_refill.txt',dtype=np.int64,ndmin=2)
+    assert refill.shape==(8,40)
+    return [dict(dimension=40,total=total+len(refill))]
 
 if __name__=='__main__':
     for row in results(): print(json.dumps(row))

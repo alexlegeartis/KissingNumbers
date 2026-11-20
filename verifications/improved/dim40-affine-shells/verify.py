@@ -16,5 +16,9 @@ if __name__=='__main__':
         if compiler is None: raise SystemExit('A C++17 g++ compiler supporting __int128 is required.')
         replay(source,'verify.py','--compiler',compiler)
         receipt=json.loads((source/'replay/verification.json').read_text())
-        assert receipt['status']=='PASS' and receipt['points']==expected['total']
+        assert receipt['status']=='PASS' and receipt['points']==1126314
+        sys.path.insert(0,str(source))
+        from verify_refill import verify
+        out=verify(source)
+        assert out['base']==receipt['points'] and out['total']==expected['total']
     print(json.dumps(dict(status='PASS',results=[expected])))

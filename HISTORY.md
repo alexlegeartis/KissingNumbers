@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 20 November)</summary>
 
+**20 November 2026 — 40D minimum-shell refill.** Eight vectors from the complete minimum shell raise the bound to [**1,126,322**](verifications/improved/dim40-affine-shells/), with no prior point removed.
+
 **20 November 2026 — 26D rational kernel replacement.** A rebuilt 10D section of a 27D Leech-based code gives [**201,204 in 26D**](verifications/improved/dim26-section-rational-kernel/), up 9 from the [first published rebuild](https://github.com/alexlegeartis/KissingNumbers/tree/2eb3c99a6869e373cad45598c9e55ce8fe1aead2/verifications/improved/dim26-section-rational-kernel) and 12 above [Takhanov’s 201,192](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1).
 
 **20 November 2026 — 33D octad switches.** Two octad replacements enable 32 additional stars for 24 signed roots, giving [370,416](verifications/improved/dim33-octad-switches/).

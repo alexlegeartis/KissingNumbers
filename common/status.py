@@ -485,7 +485,7 @@ STATUS[25] = ('heads', 'critical-cluster replacement with 926 Leech circles and 
 STATUS[31] = ('heads', 'shared midpoint replacements and dual E7 centres; exact coordinate replay; larger compatible families remain open (dim31-dual-centres/verify.py)')
 STATUS[38] = ('heads', '768 triangular Hamming points replace 512 antipodal latitude points; two exact changed-pair replays (dim38-triangle-hamming/verify.py)')
 STATUS[39] = ('codes', '32-element nonbinary sign orbits and retained sparse layers; two independent complete exact proofs; larger compatible orbit families remain open (dim39-deformed-orbits/verify.py)')
-STATUS[40] = ('heads', 'three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products; larger compatible families remain open (dim40-affine-shells/verify.py)')
+STATUS[40] = ('heads', 'affine lattice shells and eight exact minimum-shell refills; 1126322 points with integer verification (dim40-affine-shells/verify.py)')
 
 for _d in (32, 33):
     STATUS[_d] = ('codes', 'signed octad replacements over the dense [32,17,8] code; larger signed support families remain open (dim32-35-signed-layers/verify.py)')

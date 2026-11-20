@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "dimension": 40,
+  "base": 1126314,
+  "new": 8,
+  "total": 1126322,
+  "max_new_new": 3,
+  "max_core_54": 9,
+  "max_aux_36": 6,
+  "max_aux_30": 6,
+  "exact_cross_pairs": 9010512,
+  "exact_new_pairs": 28
+}

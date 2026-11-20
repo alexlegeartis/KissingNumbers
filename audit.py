@@ -2251,7 +2251,7 @@ if '--write-results' in sys.argv and not fail:
         'dim38-triangle-hamming': 'Parity-split triangular Hamming latitudes; two exact changed-pair proofs',
         'dim38-joint-latitudes': 'Orthogonal Hamming latitude replacement; two exact proofs with inherited Golay/Leech minimum-norm premise',
         'dim39-deformed-orbits': '32-element nonbinary sign orbits with actual support/parity bounds; two independent complete exact orbit proofs',
-        'dim40-affine-shells': 'three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products',
+        'dim40-affine-shells': 'affine lattice shells and eight minimum-shell vectors, verified by exact integer products',
         'dim38-latitude-extension': '24 additional latitude points and an exact rational axis rotation over the Leech caps and Lin equator',
         'dim39-root-replacements': 'four neutral support substitutions and 64-for-56 root replacements over the ERS layers',
         'dim28-joint-leech-layers': 'joint selection of even Leech heads and auxiliary layers over Li\'s odd blocks; exact arithmetic replay',

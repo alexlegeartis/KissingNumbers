@@ -1,5 +1,20 @@
 # Three affine lattice shells in dimension 40
 
+## November 2026 update: 1,126,322 points
+
+Eight integer vectors of Gram norm 6 can be added to the original
+1,126,314-point code without removing any of its points. They were found by
+enumerating the 1,092,000-point minimum shell, then screening the two
+families for conflicts. The new verifier checks all 9,010,512 new–old
+products and 28 new–new products with signed int64 arithmetic. It observes
+exact maxima 9, 6, and 6 against the squared-norm 54, 36, and 30 layers,
+respectively, and maximum 3 within the refill. The retained October
+certificate below still proves the original configuration.
+
+Run `python verify.py` here for the original proof followed by the refill,
+or `python source/verify_refill.py` to replay just the new interactions.
+
+
 Checkpoint: **26 October 2026**. Exact lower bound: **1,126,314**.
 Previous method: Dorofeev–Sun–Wang, [Table 2, arXiv:2607.20359v4](https://arxiv.org/html/2607.20359v4), **1,092,000** points; gain **34,314**.
 The inherited lattice basis comes from [wcgbg/sphere-packing](https://github.com/wcgbg/sphere-packing/blob/a0bc7f51444e42c3cbae0d2a910039cd50013500/sphere_packing/lattices/p48nm.cc).
