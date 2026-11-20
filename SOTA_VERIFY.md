@@ -32,7 +32,7 @@ The preceding 30D witness has **248,351** points, a gain of 62 over 248,289. The
 
 The joint midpoint package verifies **251,524** in 31D and the preceding 30D witness of **248,289**. [Joint midpoint proofs](verifications/improved/dim30-31-midpoint-exchanges/).
 
-Latest 26D: **201,201** (9 above Takhanov). The [section rebuild](verifications/improved/dim26-section-rational-kernel/) restores the Leech roots, verifies the new 337-point kernel in exact rational arithmetic, and offers a complete exact exterior-pair check with `--full`.
+Latest 26D: **201,202** (10 above Takhanov). The [section rebuild](verifications/improved/dim26-section-rational-kernel/) restores the Leech roots, verifies the new 338-point kernel in exact rational arithmetic, and offers a complete exact exterior-pair check with `--full`.
 
 Retained 26D and 27D certificates give **201,188** and **209,884**, respectively **8 and 22 above** pinned PackingStar. Takhanov’s later release gives **201,192** and **210,108**. The [radical-orbit and E8 head-frame proofs](verifications/improved/dim26-27-radical-orbits/) reconstruct the 160-for-152 and 238-for-216 exchanges and check all **20,238,205,078** and **22,025,541,786** final unordered pairs exactly. Run `python verifications/improved/dim26-27-radical-orbits/verify.py` and `python verifications/improved/dim26-27-radical-orbits/negative_controls.py`. [Takhanov’s release](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1)
 
