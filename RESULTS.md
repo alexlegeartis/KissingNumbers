@@ -4,6 +4,8 @@
 
 19 November 2026: shared signed-root cuts and a seven-site layer give 536440 in 37D (+2,576). [Exact replay](verifications/improved/dim37-qr-shared-stars/).
 
+20 November 2026: four octad switches and a signed-star exchange give 391004 in 34D (+12 over 390992). [Two exact replays](verifications/improved/dim34-octad-switches/).
+
 20 November 2026: seven octad switches enable a net 96-star gain for 74 signed roots, giving 415358 in 35D (+22 over 415336). [Exact proof](verifications/improved/dim35-octad-switches/).
 
 20 November 2026: ten octad switches and 288 signed stars give 652076 in 38D, up 4 from 652072. [Exact replay](verifications/improved/dim38-qr-octad-switches/).
@@ -122,7 +124,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 31 | 238 350 | **251 524** | 1.06 | `heads` | [joint row-midpoint, fibre, auxiliary and Leech-root exchanges; complete exact geometry](verifications/improved/dim30-31-midpoint-exchanges/) |
 | 32 | 352 320 | **352 992** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
 | 33 | 370 240 | **370 408** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
-| 34 | 390 980 | **390 992** | 1.00 | `heads` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
+| 34 | 390 980 | **391 004** | 1.00 | `heads` | [coordinated octad switches and root-star exchanges; two exact proofs](verifications/improved/dim34-octad-switches/) |
 | 35 | 415 308 | **415 358** | 1.00 | `heads` | [octad switches and a signed-star exchange](verifications/improved/dim35-octad-switches/) |
 | 36 | 484 760 | **502 821** | 1.04 | `cosets` | [Nonlocal Coxeter–Todd phase rebuild](verifications/improved/dim36-ct-nonlocal/) |
 | 37 | 500 008 | **544 280** | 1.09 | `codes` | [QR compression and radical support packing](verifications/improved/dim37-qr-radical-families/) |
@@ -215,7 +217,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `heads` | 29 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | native partial transversal design, exact oriented module and source exchange, full final geometry (dim29-30-native-partial-design/verify.py) |
 | `heads` | 30 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | four reflected unions and four auxiliary points give 248416; exact 456-for-391 exchange and all-pairs geometry (dim30-reflected-certificate-unions/verify.py) |
 | `heads` | 31 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | annealed E8 orientation and full exterior deletion pricing; 2218 additions and 2052 removals; exact complete geometry (dim31-annealed-design/verify.py) |
-| `heads` | 34 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | rational heavy-head rotation with a changed dense coordinate placement and star parity; all finite interactions, uniqueness and rank verified exactly (dim32-35-signed-layers/rotated34/verify.py) |
+| `heads` | 34 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | four octad switches; exact signed interactions and full rank with unchanged rational heads (dim34-octad-switches/verify.py) |
 | `heads` | 35 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | seven octad switches and a signed-star exchange; the dense code and 12 heads are retained (dim35-octad-switches/verify.py) |
 | `codes` | 37 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | 168 six-supports with 10,752 seven-site points; 144 removed marked roots (dim37-qr-radical-families/verify.py) |
 | `codes` | 38 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | finds 31 complete affine fibres after shortening; signed octads and roots retained (dim38-qr-free-offsets/verify.py) |
@@ -241,6 +243,7 @@ refreshed table, not more search.
 | 29 | `dim29-even-grid-exchange` | verify.py: exact exchange replay; use --full for complete final geometry |
 | 30 | `dim30-reflected-certificate-unions` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 31 | `dim30-31-midpoint-exchanges` | verify.py: complete exact coordinates and independent direct-integer module exchange |
+| 34 | `dim34-octad-switches` | Two exact replays of four octad switches and the final 391,004 directions |
 | 32-35 | `dim32-35-signed-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 35 | `dim35-octad-switches` | Exact dense code and signed layers, seven octad switches, 246 stars and 208 deleted roots |
 | 36 | `dim36-ct-nonlocal` | verify.py and verify_independent.py: two exact short-shell and 13,002,450 coset-pair replays |

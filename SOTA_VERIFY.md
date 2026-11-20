@@ -14,6 +14,8 @@ Earlier 36D and 37D: **502,767** and **506,709**, gains of 945 and 1,071. The [C
 
 Preceding 38D: **611,798**, a gain of 160. The [triangular Hamming proof](verifications/improved/dim38-triangle-hamming/) gives two exact coordinate reconstructions and changed-pair checks, inheriting the unchanged Leech minimum-norm argument.
 
+Latest 34D: **391,004** (+12). The [octad-switch proof](verifications/improved/dim34-octad-switches/) checks the support and root ledgers, integer angles and all 391,004 distinct coordinates of exact rank 34.
+
 Latest 35D: **415,358** (+22). The [octad-switch proof](verifications/improved/dim35-octad-switches/) has two independent integer replays of the changed supports, all sparse layer interactions and the dense code.
 
 Preceding 35D: **415,336**, two above its predecessor. The [shared-root proof](verifications/improved/dim35-shared-root-heads/) checks the complete code and support layers and a separate expansion verifies all 67,258,188 changed/anchor pairs.

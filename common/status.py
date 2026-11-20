@@ -527,7 +527,7 @@ for _d in (27,31):
 
 STATUS[35] = ('heads', 'seven octad switches and a signed-star exchange; the dense code and 12 heads are retained (dim35-octad-switches/verify.py)')
 
-STATUS[34] = ('heads', 'rational heavy-head rotation with a changed dense coordinate placement and star parity; all finite interactions, uniqueness and rank verified exactly (dim32-35-signed-layers/rotated34/verify.py)')
+STATUS[34] = ('heads', 'four octad switches; exact signed interactions and full rank with unchanged rational heads (dim34-octad-switches/verify.py)')
 
 STATUS[32] = ('codes', 'non-antipodal explicit signed octads on 29 supports; 1824 exceptional points with 380 unpaired, with broader supports and sign selections still open (dim32-35-signed-layers/nonantipodal32/replay.py)')
 

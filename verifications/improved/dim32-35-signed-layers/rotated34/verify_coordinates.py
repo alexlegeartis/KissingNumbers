@@ -3,11 +3,11 @@ import numpy as np,json,itertools,hashlib,time,argparse
 from pathlib import Path
 HERE=Path(__file__).resolve().parent
 
-def verify(certificate=HERE/'certificate.json',write_report=False,coordinate_output=None):
+def verify(certificate=HERE/'certificate.json',write_report=False,coordinate_output=None, *, expected_points=390992, expected_lines=28):
     assert __debug__, 'Run without -O'
     p=Path(certificate).resolve().parent
     started=time.time();c=json.loads(Path(certificate).read_text());assert all(type(x)==int for key in ('stars','heavy_numerators_over_85') for row in c[key] for x in row);S=np.array(c['stars'],np.int64);H=np.array(c['heavy_numerators_over_85'],np.int64);coords=c['dense_coordinates'];assert coords==[j for j in range(34) if j not in [0,2]]
-    assert c['dimension']==34 and c['points']==390992
+    assert c['dimension']==34 and c['points']==expected_points
     assert c['common_coordinate_scale']==425 and c['squared_norm']==5780000 and c['maximum_inner_product']==2890000 and c['heavy_multiplier_at_scale425']==4
     W=c['full_even_supports'];assert len(W)==len(set(W))==2013;assert all(type(w)==int and w>=0 and w<2**34 and w.bit_count()==8 for w in W)
     maxov=max((a&b).bit_count() for i,a in enumerate(W) for b in W[:i]);assert maxov<=4
@@ -53,9 +53,9 @@ def verify(certificate=HERE/'certificate.json',write_report=False,coordinate_out
     hg=H@H.T;np.fill_diagonal(hg,-999999);assert hg.max()<=180625;maxima['head_numerator_head_numerator']=int(hg.max())
     # Common scale425 makes all coordinates integers, all norms5780000.
     ALL=np.concatenate([425*D,425*M,425*R,425*S,4*H]).astype(np.int32)
-    assert len(ALL)==c['points']==390992
+    assert len(ALL)==c['points']==expected_points
     assert c['counts']==dict(dense=len(D),middle=len(M),roots=len(R),stars=len(S),heavy=len(H))
-    assert len(c['removed_root_lines'])==len(removed_lines)==28
+    assert len(c['removed_root_lines'])==len(removed_lines)==expected_lines
     assert len(np.unique(ALL,axis=0))==len(ALL)
     assert np.all((ALL.astype(np.int64)**2).sum(1)==5780000)
     # Full rank follows from an exact rational row elimination on selected roots.
