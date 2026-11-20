@@ -1,0 +1,1 @@
+{"baseline": 415336, "dense": 131072, "dimension": 35, "gain": 22, "heads": 12, "octads": 281856, "pair_maxima": {"head_dense": 20, "head_head": 19, "root_head": 16, "root_star": 16, "star_head": 20, "star_star": 16}, "points": 415358, "removed_roots": 208, "roots": 2172, "roots_newly_blocked": 80, "roots_restored": 6, "stars": 246, "status": "PASS"}

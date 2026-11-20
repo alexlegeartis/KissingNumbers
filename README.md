@@ -28,7 +28,7 @@ The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over t
 | 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32/tree/f367a9c5a051c0d6821ce71324b9dfa1ead76c2e) | **352 992** | **SOTA** | +0.190736% | — | since 2026-11-07 | [Non-antipodal signed octad continuation](verifications/improved/dim32-35-signed-layers/nonantipodal32/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal32/evidence/public_comparison.json) |
 | 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 408** | **SOTA** | +0.045376% | — | since 2026-11-07 | [Non-antipodal octads and individual root-star trades](verifications/improved/dim32-35-signed-layers/nonantipodal33/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal33/evidence/public_comparison.json) |
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **390 992** | **SOTA** | +0.00306921% | — | since 2026-11-06 | [Rational heavy-head rotation](verifications/improved/dim32-35-signed-layers/rotated34/) | — |
-| 35 | 415 308 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 336** | **SOTA** | +0.00674198% | — | updated 2026-11-19 | [Shared root deletions across heads and stars](verifications/improved/dim35-shared-root-heads/) | — |
+| 35 | 415 308 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 358** | **SOTA** | +0.01204% | — | updated 2026-11-20 | [Octad switches and signed-star exchange](verifications/improved/dim35-octad-switches/) | — |
 | 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **502 821** | **SOTA** | +3.7258% | — | updated 2026-11-19 | [Nonlocal Coxeter–Todd phase rebuild](verifications/improved/dim36-ct-nonlocal/) | — |
 | 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **544 474** | **SOTA** | +8.8931% | — | updated 2026-11-19 | [QR compression and radical support packing](verifications/improved/dim37-qr-radical-families/) | — |
 | 38 | 605 322 | [Qihong Lin, Leech equatorial augmentation](https://arxiv.org/abs/2611.03682) | **652 076** | **SOTA** | +7.7238% | — | updated 2026-11-20 | [QR offsets, octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) | — |
@@ -96,6 +96,8 @@ Expand a week for the main milestones; follow its history link for the full date
 <summary>16–22 November 2026 (through 19 November)</summary>
 
 A larger radical support packing takes **37D to 544,474** (+10,610 over the original QR result). [37D proof](verifications/improved/dim37-qr-radical-families/). The [536,440-point intermediate](verifications/improved/dim37-qr-shared-stars/) is retained.
+
+Seven octad switches raise **35D to 415,358** (+22). [35D proof](verifications/improved/dim35-octad-switches/).
 
 A coordinated pair of octad switches raises **38D to 652,076** (+4). A nonlocal Coxeter–Todd phase rebuild raises **36D to 502,821** (+54). [38D proof](verifications/improved/dim38-qr-octad-switches/) · [36D proof](verifications/improved/dim36-ct-nonlocal/).
 

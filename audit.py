@@ -466,6 +466,16 @@ for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sl
         add(_row['dimension'], _row['total'], _package,
             'verify.py: complete exact coordinates and independent direct-integer module exchange')
 
+# 20 November: 35D octad switches and a signed-star exchange.
+_package = 'dim35-octad-switches'
+_spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
+    os.path.join(IMP, _package, 'final.py'))
+_driver = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_driver)
+for _row in _driver.results():
+    add(_row['dimension'], _row['total'], _package,
+        'verify.py: integer code distances, signed geometry and complete root ledger')
+
 # 20 November: coordinated 38D octad and star/root switches.
 _package = 'dim38-qr-octad-switches'
 _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
@@ -2167,6 +2177,7 @@ if '--write-results' in sys.argv and not fail:
         'dim61-68-95-96-code-layers': 'shared parity-compatible Hamming layers, binary compression and central sections; exact code and geometry replay',
         'dim26-30-asymmetric-exchanges': 'signed-point normal-sector exchanges without antipodal constraints; full independent exact all-pairs replay',
         'dim28-takhanov-root-exchange': 'E8 contact cycles and auxiliary-frame exchange over the pinned Takhanov witness; complete exact geometry',
+        'dim35-octad-switches': 'octad switches and a signed-star exchange',
         'dim35-shared-root-heads': 'shared signed-root deletion ledger and exact coordinate replay',
         'dim29-even-grid-exchange': '14-for-11 projected-grid exchange with exact integer and full-pair replay',
         'dim29-takhanov-auxiliary-exchange': 'E8 midpoint and auxiliary exchange over Takhanov; complete exact geometry',
@@ -2243,6 +2254,7 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append('19 November 2026: 168 signed six-support families and two unit poles give 544474 in 37D (+10,610 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).')
     out.append('19 November 2026: shared signed-root cuts and a seven-site layer give 536440 in 37D (+2,576). [Exact replay](verifications/improved/dim37-qr-shared-stars/).')
+    out.append('20 November 2026: seven octad switches enable a net 96-star gain for 74 signed roots, giving 415358 in 35D (+22 over 415336). [Exact proof](verifications/improved/dim35-octad-switches/).')
     out.append('20 November 2026: ten octad switches and 288 signed stars give 652076 in 38D, up 4 from 652072. [Exact replay](verifications/improved/dim38-qr-octad-switches/).')
     out.append('19 November 2026: new exact QR offsets and signed star trades give 652044 in 38D (+8,208), and a nonlocal Coxeter–Todd phase rebuild gives 502821 in 36D (+54). [38D replay](verifications/improved/dim38-qr-star-trades/) · [36D replay](verifications/improved/dim36-ct-nonlocal/).')
     out.append('19 November 2026: compressing quadratic-residue coset codes raises 37D to 533864 (+27,155) and 38D to 643836 (+32,038). [Two exact replays](verifications/improved/dim37-38-qr-merge/).')

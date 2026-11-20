@@ -14,7 +14,9 @@ Earlier 36D and 37D: **502,767** and **506,709**, gains of 945 and 1,071. The [C
 
 Preceding 38D: **611,798**, a gain of 160. The [triangular Hamming proof](verifications/improved/dim38-triangle-hamming/) gives two exact coordinate reconstructions and changed-pair checks, inheriting the unchanged Leech minimum-norm argument.
 
-Latest 35D: **415,336**, two above the previous certificate. The [shared-root proof](verifications/improved/dim35-shared-root-heads/) checks the complete code and support layers and a separate expansion verifies all 67,258,188 changed/anchor pairs.
+Latest 35D: **415,358** (+22). The [octad-switch proof](verifications/improved/dim35-octad-switches/) has two independent integer replays of the changed supports, all sparse layer interactions and the dense code.
+
+Preceding 35D: **415,336**, two above its predecessor. The [shared-root proof](verifications/improved/dim35-shared-root-heads/) checks the complete code and support layers and a separate expansion verifies all 67,258,188 changed/anchor pairs.
 
 Latest 28D: **223,528**, 32 above Takhanov’s pinned construction. The [E8 root exchange](verifications/improved/dim28-takhanov-root-exchange/) checks all **24,982,271,628** unordered final pairs and separately verifies the 320-for-288 exchange in signed int64.
 

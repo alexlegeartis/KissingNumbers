@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 20 November)</summary>
 
+**20 November 2026 — 35D octad switches.** Seven octad replacements enable a gain of 96 stars for 74 roots, giving [415,358](verifications/improved/dim35-octad-switches/).
+
 **20 November 2026 — 38D interdependent pair of octad switches.** Two new octads each conflict with both removed octads. Their simultaneous replacement allows 16 additional stars for 12 additional root deletions, giving [652,076](verifications/improved/dim38-qr-octad-switches/).
 
 **20 November 2026 — 38D coordinated octad switches.** Eight full octad replacements let 272 signed stars share 228 root deletions, with all dense points unchanged. [652,072-point proof](https://github.com/alexlegeartis/KissingNumbers/tree/31a99695ad9ee55d4f63f9e0f478fdd9c11edc17/verifications/improved/dim38-qr-octad-switches/).
