@@ -1,6 +1,6 @@
-# 26D: 201,195 kissing points from a 27D section
+# 26D: 201,201 kissing points from a 27D section
 
-This gives **tau(26) >= 201,195**, three above the 201,192-point configuration in
+This gives **tau(26) >= 201,201**, 9 above the 201,192-point configuration in
 [R. Takhanov’s released certificates](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1).
 It is an explicit lower bound, not a proof of optimality.
 
@@ -14,13 +14,13 @@ after all unblocked roots are restored.
 
 Let I = {0, 2, 4, 5, 6, 10, 11, 23} and let J be the other 16 Leech coordinates.
 Keep the 200,864 rows with nonzero J projection. Replace the remaining 308
-rows with a new 331-point code in the ten coordinates I plus the two tails.
+rows with a new 337-point code in the ten coordinates I plus the two tails.
 The frozen rows project to only 2,601 distinct linear constraints on the
-new code. The replacement has 254 integer rows and 77 nonintegral rational
+new code. The replacement has 250 integer rows and 87 nonintegral rational
 rows. The rational directions were found by maximizing linear forms over the
 constraint polytope, rationalizing outward directions on the sphere, and
 selecting compatible subsets by exact conflict-graph exchanges. Verification
-does not require rerunning the search.
+does not require rerunning the search. The latest kernel adds 6 points over the first published 331-point kernel, by reoptimizing neighborhoods of exact conflicts among the rational candidates.
 
 ## Replay
 
