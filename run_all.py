@@ -313,6 +313,7 @@ JOBS = [
     ('dim38-triangle-hamming: independent coordinate audit', os.path.join(V, 'improved', 'dim38-triangle-hamming'), ['audit.py'], 1.0, True),
     ('dim38-joint-latitudes: independent exact replay', os.path.join(V, 'improved', 'dim38-joint-latitudes'), ['verify.py'], 1.0, True),
     ('dim39-deformed-orbits: independent exact replay', os.path.join(V, 'improved', 'dim39-deformed-orbits'), ['verify.py'], 1.0, True),
+    ('dim39-qr-three-coordinate-heads: exact dense/sparse replay', os.path.join(V, 'improved', 'dim39-qr-three-coordinate-heads'), ['verify.py'], 8.0, True),
     ('dim39-qr-pentapolar: exact Hamming and head geometry', os.path.join(V, 'improved', 'dim39-qr-pentapolar'), ['verify.py'], 5.0, True),
     ('dim40-affine-shells: independent exact replay', os.path.join(V, 'improved', 'dim40-affine-shells'), ['verify.py'], 5.0, True),
     ("dims 29, 30: midpoint replacements, exact independent replay",
@@ -577,6 +578,7 @@ def _sota_jobs(quick=False):
         ('dim25-critical-cluster', ('self_test.py',)),
         ('dim25-collective-deformation', ('verify.py',)),
         ('dim31-dual-centres', ('verify.py',)),
+        ('dim39-qr-three-coordinate-heads', ('verify.py',)),
         ('dim39-qr-pentapolar', ('verify.py',)),
         ('dim40-affine-shells', ('verify.py',)),
 
@@ -730,6 +732,7 @@ def _sota_coverage(jobs, results=None):
         ('dim25-critical-cluster', [25], [('verify.py',), ('self_test.py',)], 'independently rebuilt Golay/Leech shell; complete exact pair coverage with rational conic contact preservation, integer intervals and exact biquadratic signs; seven corruption controls'),
         ('dim25-collective-deformation', [25], [('verify.py',)], ''),
         ('dim31-dual-centres', [31], [('verify.py',)], ''),
+        ('dim39-qr-three-coordinate-heads', [39], [('verify.py',)], 'exact quotient distances and projected sparse signs'),
         ('dim39-qr-pentapolar', [39], [('verify.py',)], 'exact Hamming quotient and rational head checks'),
         ('dim40-affine-shells', [40], [('verify.py',)], ''),
 

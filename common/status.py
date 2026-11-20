@@ -657,3 +657,5 @@ STATUS[38] = ('codes', '31 complete affine fibres and a 144-star trade with 128 
 
 # Latest 39D construction, following the historical status entries.
 STATUS[39] = ('codes', 'QR quotient fibres at five rational heads with exact sparse pruning; verified 774972 (dim39-qr-pentapolar/verify.py)')
+
+STATUS[39] = ('codes', '84 QR quotient fibres with three-coordinate heads; exact sparse signs, 783468 points (dim39-qr-three-coordinate-heads/verify.py)')

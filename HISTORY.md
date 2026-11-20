@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 20 November)</summary>
 
+**20 November 2026 — 39D three-coordinate QR heads.** A shortened QR kernel supports 84 dense fibres. Exact sparse pricing gives [**783,468**](verifications/improved/dim39-qr-three-coordinate-heads/), up 8,496 from 774,972.
+
 **20 November 2026 — 39D five-head QR construction.** A new full 8,192-point fibre and three weighted support replacements give [**774,972**](verifications/improved/dim39-qr-pentapolar/), a gain of 5,120 over 769,852 (including 96 recovered points after the first five-head witness).
 
 **20 November 2026 — 40D minimum-shell refill.** Eight vectors from the complete minimum shell raise the bound to [**1,126,322**](verifications/improved/dim40-affine-shells/), with no prior point removed.
