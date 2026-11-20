@@ -466,6 +466,15 @@ for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sl
         add(_row['dimension'], _row['total'], _package,
             'verify.py: complete exact coordinates and independent direct-integer module exchange')
 
+# 20 November: shortened QR kernel and five rational head locations.
+_package = 'dim39-qr-pentapolar'
+_spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
+    os.path.join(IMP, _package, 'final.py'))
+_driver = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_driver)
+for _row in _driver.results():
+    add(_row['dimension'], _row['total'], _package, 'verify.py: exact quotient distances and rational sparse/dense geometry')
+
 # 20 November: a 27D section rebuilt using rational kernel points.
 _package = 'dim26-section-rational-kernel'
 _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
@@ -2251,6 +2260,7 @@ if '--write-results' in sys.argv and not fail:
         'dim38-triangle-hamming': 'Parity-split triangular Hamming latitudes; two exact changed-pair proofs',
         'dim38-joint-latitudes': 'Orthogonal Hamming latitude replacement; two exact proofs with inherited Golay/Leech minimum-norm premise',
         'dim39-deformed-orbits': '32-element nonbinary sign orbits with actual support/parity bounds; two independent complete exact orbit proofs',
+        'dim39-qr-pentapolar': 'QR quotient fibres at five rational heads with exact sparse pruning',
         'dim40-affine-shells': 'affine lattice shells and eight minimum-shell vectors, verified by exact integer products',
         'dim38-latitude-extension': '24 additional latitude points and an exact rational axis rotation over the Leech caps and Lin equator',
         'dim39-root-replacements': 'four neutral support substitutions and 64-for-56 root replacements over the ERS layers',
