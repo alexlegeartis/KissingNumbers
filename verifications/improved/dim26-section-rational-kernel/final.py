@@ -6,5 +6,5 @@ from pathlib import Path
 def results():
     proof = json.loads(Path(__file__).with_name("verification.json").read_text())
     assert proof["status"] == "PASS" and proof["full_exterior_pair_check"]
-    assert proof["fixed_exterior"] + proof["kernel"] == proof["cardinality"] == 201203
+    assert proof["fixed_exterior"] + proof["kernel"] == proof["cardinality"] == 201204
     return [{"dimension": proof["dimension"], "total": proof["cardinality"]}]

@@ -597,7 +597,7 @@ STATUS[29] = ('heads', 'exact projected-grid donor search and 14-for-11 exchange
 
 STATUS[30] = ('heads', 'native partial transversal design, exact oriented module and source exchange, full final geometry (dim29-30-native-partial-design/verify.py)')
 
-STATUS[26] = ('heads', '27D section with fixed Leech-based exterior and a new 339-point rational kernel; exact replay (dim26-section-rational-kernel/verify.py)')
+STATUS[26] = ('heads', '27D section with fixed Leech-based exterior and a new 340-point rational kernel; exact replay (dim26-section-rational-kernel/verify.py)')
 
 STATUS[27] = ('heads', 'E8 head-frame replacement: 238 additions and 216 removals from PackingStar 209862; complete exact geometry of all 209884 points (dim26-27-radical-orbits/verify.py)')
 
