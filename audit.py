@@ -466,6 +466,16 @@ for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sl
         add(_row['dimension'], _row['total'], _package,
             'verify.py: complete exact coordinates and independent direct-integer module exchange')
 
+# 20 November: coordinated 38D octad and star/root switches.
+_package = 'dim38-qr-octad-switches'
+_spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
+    os.path.join(IMP, _package, 'final.py'))
+_driver = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_driver)
+for _row in _driver.results():
+    add(_row['dimension'], _row['total'], _package,
+        'verify.py and audit.py: exact dense fibres, octad overlaps, and signed star/root interactions')
+
 # 17 November: independently checked mixed-shell and ternary-code constructions.
 _package = 'dim68-91-lattice-code-continuation'
 _spec = importlib.util.spec_from_file_location('continuation_20261117', os.path.join(IMP, _package, 'final.py'))
@@ -2190,6 +2200,7 @@ if '--write-results' in sys.argv and not fail:
         'dim36-ct-nonlocal': 'Nonlocal Coxeter–Todd phase rebuild; two exact integer replays',
         'dim37-qr-radical-families': 'QR compression and radical support packing; exact changed-pair proof',
         'dim37-qr-shared-stars': 'QR compression and shared signed-root cuts; exact sparse geometry',
+        'dim38-qr-octad-switches': 'Unchanged QR fibres, eight octad switches and a verified signed star/root trade',
         'dim38-qr-star-trades': 'QR offsets and signed star trades; exact affected-pair proof',
         'dim38-qr-free-offsets': 'New QR offsets after compression; signed octads and roots retained',
         'dim37-38-qr-merge': 'QR coordinate compression with signed octads and roots; two exact layer proofs',
@@ -2232,6 +2243,7 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append('19 November 2026: 168 signed six-support families and two unit poles give 544474 in 37D (+10,610 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).')
     out.append('19 November 2026: shared signed-root cuts and a seven-site layer give 536440 in 37D (+2,576). [Exact replay](verifications/improved/dim37-qr-shared-stars/).')
+    out.append('20 November 2026: eight octad switches and 272 signed stars give 652072 in 38D, up 28 from 652044. [Exact replay](verifications/improved/dim38-qr-octad-switches/).')
     out.append('19 November 2026: new exact QR offsets and signed star trades give 652044 in 38D (+8,208), and a nonlocal Coxeter–Todd phase rebuild gives 502821 in 36D (+54). [38D replay](verifications/improved/dim38-qr-star-trades/) · [36D replay](verifications/improved/dim36-ct-nonlocal/).')
     out.append('19 November 2026: compressing quadratic-residue coset codes raises 37D to 533864 (+27,155) and 38D to 643836 (+32,038). [Two exact replays](verifications/improved/dim37-38-qr-merge/).')
     out.append('19 November 2026: rebuilt Coxeter–Todd cells give 502767 in 36D (+945) and their two-sided latitude lift gives 506709 in 37D (+1,071). [Two exact coset replays](verifications/improved/dim36-37-ct-cell-rebuild/).')

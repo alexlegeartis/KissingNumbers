@@ -9,7 +9,9 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <a id="week-2026-11-16"></a>
 
 <details>
-<summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 19 November)</summary>
+<summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 20 November)</summary>
+
+**20 November 2026 — 38D coordinated octad switches.** Eight full octad replacements let 272 signed stars share 228 root deletions, with all dense points unchanged. [652,072-point proof](verifications/improved/dim38-qr-octad-switches/).
 
 **19 November 2026 — 38D signed star trades.** Replace 128 signed roots with 144 stars, keeping every dense point and signed octad. [652,044-point proof](verifications/improved/dim38-qr-star-trades/).
 

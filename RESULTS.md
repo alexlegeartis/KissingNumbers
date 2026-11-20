@@ -4,6 +4,8 @@
 
 19 November 2026: shared signed-root cuts and a seven-site layer give 536440 in 37D (+2,576). [Exact replay](verifications/improved/dim37-qr-shared-stars/).
 
+20 November 2026: eight octad switches and 272 signed stars give 652072 in 38D, up 28 from 652044. [Exact replay](verifications/improved/dim38-qr-octad-switches/).
+
 19 November 2026: new exact QR offsets and signed star trades give 652044 in 38D (+8,208), and a nonlocal Coxeter–Todd phase rebuild gives 502821 in 36D (+54). [38D replay](verifications/improved/dim38-qr-star-trades/) · [36D replay](verifications/improved/dim36-ct-nonlocal/).
 
 19 November 2026: compressing quadratic-residue coset codes raises 37D to 533864 (+27,155) and 38D to 643836 (+32,038). [Two exact replays](verifications/improved/dim37-38-qr-merge/).
@@ -122,7 +124,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 35 | 415 308 | **415 336** | 1.00 | `heads` | [shared signed-root deletion ledger and exact coordinate replay](verifications/improved/dim35-shared-root-heads/) |
 | 36 | 484 760 | **502 821** | 1.04 | `cosets` | [Nonlocal Coxeter–Todd phase rebuild](verifications/improved/dim36-ct-nonlocal/) |
 | 37 | 500 008 | **544 280** | 1.09 | `codes` | [QR compression and radical support packing](verifications/improved/dim37-qr-radical-families/) |
-| 38 | 566 652 | **652 028** | 1.15 | `codes` | [New QR offsets after compression; signed octads and roots retained](verifications/improved/dim38-qr-free-offsets/) |
+| 38 | 566 652 | **652 072** | 1.15 | `codes` | [QR offsets, eight octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) |
 | 39 | 755 988 | **769 852** | 1.02 | `codes` | [32-element nonbinary sign orbits with actual support/parity bounds; two independent complete exact orbit proofs](verifications/improved/dim39-deformed-orbits/) |
 | 40 | 1 092 000 | **1 126 314** | 1.03 | `heads` | [three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products](verifications/improved/dim40-affine-shells/) |
 | 41 | 1 324 472 | **1 460 036** | 1.10 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
@@ -241,7 +243,7 @@ refreshed table, not more search.
 | 35 | `dim35-shared-root-heads` | verify.py: exact signed layers, shared deletions and separate coordinate expansion |
 | 36 | `dim36-ct-nonlocal` | verify.py and verify_independent.py: two exact short-shell and 13,002,450 coset-pair replays |
 | 37 | `dim37-qr-radical-families` | verify.py and audit.py: exact sparse and dense cross bounds and all 57,797,376 new-layer pairs |
-| 38 | `dim38-qr-free-offsets` | verify.py and audit.py: exact checks of 31 full dense fibres and all layer types |
+| 38 | `dim38-qr-octad-switches` | verify.py and audit.py: exact replay of 31 dense fibres, eight new octad supports, 272 stars and the signed-root ledger |
 | 39 | `dim39-deformed-orbits` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 40 | `dim40-affine-shells` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 41-46 | `dim41-46-p48-heads` | verify.py (integer angles and exact ranks; inherited population tables, not a fresh body enumeration) |

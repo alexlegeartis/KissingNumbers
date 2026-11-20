@@ -87,6 +87,7 @@ DRIVERS.append(('37D QR radical support packing', os.path.join(V, 'dim37-qr-radi
 DRIVERS.append(('37D shared-root QR stars', os.path.join(V, 'dim37-qr-shared-stars'), 'final.py'))
 DRIVERS.append(('38D QR free offsets', os.path.join(V, 'dim38-qr-free-offsets'), 'final.py'))
 DRIVERS.append(('38D QR star trades', os.path.join(V, 'dim38-qr-star-trades'), 'final.py'))
+DRIVERS.append(('38D QR octad switches', os.path.join(V, 'dim38-qr-octad-switches'), 'final.py'))
 DRIVERS.append(('37-38D QR coordinate compression', os.path.join(V, 'dim37-38-qr-merge'), 'final.py'))
 DRIVERS.append(('38D triangular Hamming', os.path.join(V, 'dim38-triangle-hamming'), 'final.py'))
 DRIVERS.append(('35D shared signed-root trade', os.path.join(V, 'dim35-shared-root-heads'), 'final.py'))
