@@ -1,7 +1,7 @@
-# 39D: 774,876 kissing points with five head positions
+# 39D: 774,972 kissing points with five head positions
 
-This is an explicit lower bound, **5,024** above the preceding repository
-witness of 769,852 and **5,960** above the named 768,916-point Lin construction.
+This is an explicit lower bound, **5,120** above the preceding repository
+witness of 769,852 and **6,056** above the named 768,916-point Lin construction.
 It is not an optimality claim.
 
 Mark two coordinate axes, leaving a 37-coordinate sign body. Shorten the
@@ -12,10 +12,10 @@ head, farther from the origin, gets one additional coset; its relative
 distance to the four groups is checked exactly. Each dense vector has
 body coordinates ±2 and the chosen rational two-coordinate head.
 
-This gives 335,872 dense points. Keep the previous 3,424 octad supports,
+This gives 335,872 dense points. Replace three doubly marked octads by conflict-free unmarked-pair supports. Keep 3,424 octad supports,
 but remove the even signings with both marked entries positive. Exactly
-70 octads contain both marked axes and each loses 32 points, leaving
-436,032 octad points. The 2,908 roots and 64 stars complete the witness.
+67 octads contain both marked axes and each loses 32 points, leaving
+436,128 octad points. The 2,908 roots and 64 stars complete the witness.
 
 Run `python verify.py` with Python 3. The replay checks all within-fibre
 and cross-fibre dense angles via exact Hamming minima, checks the sparse

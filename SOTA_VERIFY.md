@@ -32,7 +32,7 @@ The preceding 30D witness has **248,351** points, a gain of 62 over 248,289. The
 
 The joint midpoint package verifies **251,524** in 31D and the preceding 30D witness of **248,289**. [Joint midpoint proofs](verifications/improved/dim30-31-midpoint-exchanges/).
 
-Latest 39D: **774,876** (up 5,024). The [five-head QR verification](verifications/improved/dim39-qr-pentapolar/) checks the shortened kernel, all fibre distance minima, all sparse supports, and exact sparse–dense angular inequalities.
+Latest 39D: **774,972** (up 5,120). The [five-head QR verification](verifications/improved/dim39-qr-pentapolar/) checks the shortened kernel, all fibre distance minima, all sparse supports, and exact sparse–dense angular inequalities.
 
 Latest 40D: **1,126,322** after [eight minimum-shell points](verifications/improved/dim40-affine-shells/); exact verification checks all 9,010,512 new–old products and all 28 new–new products.
 

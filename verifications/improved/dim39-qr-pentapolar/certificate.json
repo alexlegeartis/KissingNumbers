@@ -27,5 +27,46 @@
     ]
   ],
   "extra_syndrome": 16614089,
-  "claimed_size": 774876
+  "claimed_size": 774972,
+  "weighted_support_exchange": [
+    {
+      "index": 1564,
+      "replacement": [
+        0,
+        1,
+        9,
+        14,
+        15,
+        20,
+        21,
+        33
+      ]
+    },
+    {
+      "index": 294,
+      "replacement": [
+        0,
+        4,
+        6,
+        11,
+        19,
+        23,
+        33,
+        36
+      ]
+    },
+    {
+      "index": 1274,
+      "replacement": [
+        2,
+        9,
+        18,
+        19,
+        21,
+        24,
+        25,
+        30
+      ]
+    }
+  ]
 }

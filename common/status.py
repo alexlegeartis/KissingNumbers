@@ -656,4 +656,4 @@ STATUS[37] = ('codes', '168 six-supports with 10,752 seven-site points; 144 remo
 STATUS[38] = ('codes', '31 complete affine fibres and a 144-star trade with 128 root deletions (dim38-qr-star-trades/verify.py)')
 
 # Latest 39D construction, following the historical status entries.
-STATUS[39] = ('codes', 'QR quotient fibres at five rational heads with exact sparse pruning; verified 774876 (dim39-qr-pentapolar/verify.py)')
+STATUS[39] = ('codes', 'QR quotient fibres at five rational heads with exact sparse pruning; verified 774972 (dim39-qr-pentapolar/verify.py)')

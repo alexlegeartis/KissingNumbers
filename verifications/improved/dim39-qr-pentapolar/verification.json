@@ -1,1 +1,57 @@
-{"status": "PASS", "dimension": 39, "points": 774876, "improvement": 5024, "dense": 335872, "octad_points": 436032, "removed_octad_points": 2240, "roots": 2908, "stars": 64, "kernel_minimum_distance": 12, "fibres": 41, "fibres_by_head": [10, 10, 10, 10, 1], "least_intertier_distances": [[10, 9, 9, 8, 7], [37, 10, 8, 9, 8], [37, 37, 10, 9, 8], [37, 37, 37, 10, 9], [37, 37, 37, 37, 37]]}
+{
+  "status": "PASS",
+  "dimension": 39,
+  "points": 774972,
+  "improvement": 5120,
+  "dense": 335872,
+  "octad_points": 436128,
+  "removed_octad_points": 2144,
+  "roots": 2908,
+  "stars": 64,
+  "kernel_minimum_distance": 12,
+  "fibres": 41,
+  "fibres_by_head": [
+    10,
+    10,
+    10,
+    10,
+    1
+  ],
+  "least_intertier_distances": [
+    [
+      10,
+      9,
+      9,
+      8,
+      7
+    ],
+    [
+      37,
+      10,
+      8,
+      9,
+      8
+    ],
+    [
+      37,
+      37,
+      10,
+      9,
+      8
+    ],
+    [
+      37,
+      37,
+      37,
+      10,
+      9
+    ],
+    [
+      37,
+      37,
+      37,
+      37,
+      37
+    ]
+  ]
+}

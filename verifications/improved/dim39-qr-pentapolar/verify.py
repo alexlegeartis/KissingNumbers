@@ -66,6 +66,10 @@ assert len(rows)==3424 and all(len(row)==39 and set(row)<=set('01') and row.coun
 supports=[[i for i,b in enumerate(row) if b=='1'] for row in rows]
 for v in B['support_replacements']:
  assert supports[v['remove_index']]==v['remove'];supports[v['remove_index']]=v['add']
+for x in C.get('weighted_support_exchange', []):
+ i=x['index']; t=x['replacement']
+ assert set(marks)<=set(supports[i]) and not set(marks)<=set(t)
+ supports[i]=t
 assert all(len(s)==len(set(s))==8 and all(0<=x<39 for x in s) for s in supports)
 covered=set()
 for s in supports:

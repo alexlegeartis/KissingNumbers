@@ -131,7 +131,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 36 | 484 760 | **502 821** | 1.04 | `cosets` | [Nonlocal Coxeter–Todd phase rebuild](verifications/improved/dim36-ct-nonlocal/) |
 | 37 | 500 008 | **544 280** | 1.09 | `codes` | [QR compression and radical support packing](verifications/improved/dim37-qr-radical-families/) |
 | 38 | 566 652 | **652 076** | 1.15 | `codes` | [QR offsets, ten octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) |
-| 39 | 755 988 | **774 876** | 1.02 | `codes` | [QR quotient fibres at five rational heads with exact sparse pruning](verifications/improved/dim39-qr-pentapolar/) |
+| 39 | 755 988 | **774 972** | 1.02 | `codes` | [QR quotient fibres at five rational heads with exact sparse pruning](verifications/improved/dim39-qr-pentapolar/) |
 | 40 | 1 092 000 | **1 126 322** | 1.03 | `heads` | [affine lattice shells and an eight-point minimum-shell refill](verifications/improved/dim40-affine-shells/) |
 | 41 | 1 324 472 | **1 460 036** | 1.10 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 42 | 1 792 386 | **1 991 445** | 1.11 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
