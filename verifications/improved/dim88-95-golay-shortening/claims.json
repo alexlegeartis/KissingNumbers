@@ -1,0 +1,38 @@
+[
+  {
+    "dimension": 88,
+    "incumbent": 12884901888,
+    "added_over_incumbent": 92749824,
+    "lower_bound": 12977651712
+  },
+  {
+    "dimension": 89,
+    "incumbent": 13958643714,
+    "added_over_incumbent": 92749824,
+    "lower_bound": 14051393538
+  },
+  {
+    "dimension": 92,
+    "incumbent": 30121921128,
+    "added_over_incumbent": 19922944,
+    "lower_bound": 30141844072
+  },
+  {
+    "dimension": 93,
+    "incumbent": 43934943896,
+    "added_over_incumbent": 53477376,
+    "lower_bound": 43988421272
+  },
+  {
+    "dimension": 94,
+    "incumbent": 73999846092,
+    "added_over_incumbent": 53477376,
+    "lower_bound": 74053323468
+  },
+  {
+    "dimension": 95,
+    "incumbent": 110507068484,
+    "added_over_incumbent": 53477376,
+    "lower_bound": 110560545860
+  }
+]

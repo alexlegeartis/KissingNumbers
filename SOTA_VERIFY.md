@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+The [shortened Golay–dodecacode replay](verifications/improved/dim88-95-golay-shortening/) verifies the 629-pattern 88D/89D construction and larger 92–95D pattern lists, and checks a shortened dodecacode and all distances in the 144 binary signs. Run `node verifications/improved/dim88-95-golay-shortening/verify.js`.
+
 The [92–96D Golay–dodecacode augmentation](verifications/improved/dim92-96-golay-dodecacode/) verifies three outer pattern lists (309, 938 and 2,583 patterns) and their two exact inner codes. Run `node verifications/improved/dim92-96-golay-dodecacode/verify.js`; the proof checks compatibility with the pinned dense, Reed–Solomon and root layers without enumerating billions of points.
 
 Latest 37D: **544,474**, 10,610 above the original QR construction. The [radical-layer verification](verifications/improved/dim37-qr-radical-families/) checks all 57,797,376 new-layer pairs and exact cross-layer bounds.
