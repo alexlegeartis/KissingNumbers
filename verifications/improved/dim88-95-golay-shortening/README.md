@@ -2,8 +2,8 @@
 
 | Dimension | Preceding lower bound | Increase | New lower bound |
 |---:|---:|---:|---:|
-| 88 | 12,884,901,888 | 92,749,824 | **12,977,651,712** |
-| 89 | 13,958,643,714 | 92,749,824 | **14,051,393,538** |
+| 88 | 12,884,901,888 | 92,952,576 | **12,977,854,464** |
+| 89 | 13,958,643,714 | 92,952,576 | **14,051,596,290** |
 | 92 | 30,121,921,128 | 19,922,944 | **30,141,844,072** |
 | 93 | 43,934,943,896 | 53,477,376 | **43,988,421,272** |
 | 94 | 73,999,846,092 | 53,477,376 | **74,053,323,468** |
@@ -18,6 +18,12 @@ Start with 629 length-24, weight-12 quaternary words from pairs of binary Golay 
 Shorten the additive dodecacode by taking the 1,024 words with last symbol zero, then deleting it. This preserves distance six. Use 144 binary signs from the punctured Julin–Golay code of length 11 and distance three, reproduced as cyclic shifts and negations of quaternary seeds, Gray mapped and then punctured. See [the quaternary construction](https://neilsloane.com/doc/Me185.pdf). The verifier checks all sign pairs, not an assumed minimum-distance theorem. For one pattern, different axis words can match in at most five rows, contributing at most 40. Equal axis words with distinct signs have at least three sign disagreements, also contributing at most 40. The result is 629 × 1,024 × 144 = 92,749,824 new norm-88 points.
 
 The [88D and 89D parents](https://github.com/alexlegeartis/KissingNumbers/tree/27247d2c57e82d589f688b2996ec2dfabf8ac4fa/verifications/improved/dim88-89-z8-prefix-anticode) keep all 22 body blocks after deleting exactly blocks 0 and 1, each populated by one of the three incumbent dense alphabets. Each of eleven new nonzero blocks has maximum dot 4 against any old row, giving raw dot at most 44. In 89D, the new last coordinate is zero. The eleven zero-height parent fibres have squared norm 88, and the two raised parent fibres have squared norm 272/3. In both cases, a raw dot of at most 44 gives normalized dot at most 1/2. The two pure poles are orthogonal. The new body has just eleven nonzero rows, while every old dense body has all 22, so none of the points duplicates an inherited point.
+
+### An additional 10-row layer
+
+The eleven patterns in `weight10.json` have weight ten and retain zeros in original blocks 0 and 1. They have mutual quaternary distance at least ten, and their distance from every punctured weight-eleven pattern is at least eleven. The latter gives raw inner product at most 40 (total double-occupancy-plus-equal-tag at most ten). Since the squared radii are 80 and 88, this is safely below half their product of radii. The same raw estimate holds against every old dense vector, including the raised ones; the pure poles remain orthogonal. Ten occupied rows distinguish this layer from every other body.
+
+Shortening the dodecacode twice gives 256 axis words, and the zero slice of one more Julin sign coordinate gives 72 signs, with distances six and three retained. Thus the additional layer contributes 202,752 points in each of 88D and 89D, at squared radius 80. Within this layer the same pattern/axis/sign estimates apply with threshold 40.
 
 ## Shortened outer-code improvements in 92–95D
 

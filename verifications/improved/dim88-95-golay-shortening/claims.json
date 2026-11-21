@@ -2,14 +2,14 @@
   {
     "dimension": 88,
     "incumbent": 12884901888,
-    "added_over_incumbent": 92749824,
-    "lower_bound": 12977651712
+    "added_over_incumbent": 92952576,
+    "lower_bound": 12977854464
   },
   {
     "dimension": 89,
     "incumbent": 13958643714,
-    "added_over_incumbent": 92749824,
-    "lower_bound": 14051393538
+    "added_over_incumbent": 92952576,
+    "lower_bound": 14051596290
   },
   {
     "dimension": 92,

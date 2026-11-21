@@ -87,6 +87,19 @@ for (let i=0;i<data.length;i++) {
  }
  out.push(ids.length*shortAxes.length*signs.length);
 }
+const ten=JSON.parse(fs.readFileSync(path.join(__dirname,"weight10.json"),"utf8"));
+const original11=data[0].ids.map(x=>[golay[x%4096]&~8,golay[Math.floor(x/4096)]&~8]);
+const qdist=([a,b],[c,d])=>pop((a^c)|(b^d));
+if(ten.length!==11||ten.some(r=>r.length!==2||r.some(x=>!Number.isInteger(x)||x<0||x>=2**24)||pop(r[0]|r[1])!==10||((r[0]|r[1])&3)))throw Error("weight10 pattern");
+for(let i=0;i<ten.length;i++){
+ for(let j=0;j<i;j++)if(qdist(ten[i],ten[j])<10)throw Error("distance within the 10-row layer");
+ for(const old of original11)if(qdist(ten[i],old)<11)throw Error("distance between 10- and 11-row layers");
+}
+const axes10=shortAxes.filter(a=>a>>>20===0);
+const signs10=signs.filter(a=>a>>>10===0);
+if(axes10.length!==256||signs10.length!==72)throw Error("10-row code sizes");
+if(4*40**2>80*88)throw Error("cross-radius cap");
+out[0]+=ten.length*axes10.length*signs10.length;
 const prev92={"92":29797911144,"93":42951379608,"94":73016281804,"95":109523504196};
 const claims=JSON.parse(fs.readFileSync(path.join(__dirname,"claims.json"),"utf8"));
 for (const {dimension:n,incumbent,added_over_incumbent:gain,lower_bound:value} of claims) {

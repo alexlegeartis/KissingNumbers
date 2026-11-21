@@ -11,7 +11,7 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 21 November)</summary>
 
-**21 November 2026 — shortened Golay–dodecacode layers.** Two new dimensions, 88D and 89D, gain 92,749,824 points each. Larger outer lists add 19,922,944 in 92D and 53,477,376 in each of 93–95D over the first augmentation. [Proof and replay](verifications/improved/dim88-95-golay-shortening/).
+**21 November 2026 — shortened Golay–dodecacode layers.** Two new dimensions, 88D and 89D, gain 92,952,576 points each across the eleven-row and ten-row layers. Larger outer lists add 19,922,944 in 92D and 53,477,376 in each of 93–95D over the first augmentation. [Proof and replay](verifications/improved/dim88-95-golay-shortening/).
 
 **21 November 2026 — five Golay–dodecacode augmentations.** Added layers in 92–96D give **30,121,921,128**, **43,934,943,896**, **73,999,846,092**, **110,507,068,484**, **208,869,002,048** respectively, with no incumbent vector removed. [Exact proof and replay](verifications/improved/dim92-96-golay-dodecacode/).
 
