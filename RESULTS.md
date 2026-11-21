@@ -185,9 +185,9 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 91 | 6 218 187 548 | **25 917 421 568** | 4.17 | `codes` | [Asymmetric head planes and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/)
 | 92 | 8 589 934 592 | **34 507 356 160** | 4.02 | `codes` | [Variable-radius fibers and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/)
 | 93 | 17 179 869 184 | **47 392 258 048** | 2.76 | `codes` | [Variable-radius fibers and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/)
-| 94 | 34 359 738 368 | **74 136 160 972** | 2.16 | `codes` | [BCH phases on flat supports](verifications/improved/dim94-96-bch-flat-phase/)
-| 95 | 68 719 476 736 | **117 085 834 308** | 1.70 | `codes` | [108 E7 heads and BCH flat phases](verifications/improved/dim94-96-bch-flat-phase/)
-| 96 | 137 438 953 472 | **209 283 189 568** | 1.52 | `codes` | [BCH phases on flat supports](verifications/improved/dim94-96-bch-flat-phase/)
+| 94 | 34 359 738 368 | **74 137 471 692** | 2.16 | `codes` | [BCH phases and paired physical groups](verifications/improved/dim94-96-bch-paired-group-append/)
+| 95 | 68 719 476 736 | **117 087 145 028** | 1.70 | `codes` | [BCH phases and paired physical groups](verifications/improved/dim94-96-bch-paired-group-append/)
+| 96 | 137 438 953 472 | **209 285 286 720** | 1.52 | `codes` | [BCH phases and paired physical groups](verifications/improved/dim94-96-bch-paired-group-append/)
 
 ## Status: what would have to change
 

@@ -10,6 +10,8 @@ The [91–93D flat six-/seven-row parity layers proof](verifications/improved/di
 
 The [94–96D BCH flat syndrome gluing proof](verifications/improved/dim94-96-bch-flat-phase/) replays with `python verifications/improved/dim94-96-bch-flat-phase/verify.py`.
 
+The [94–96D paired-group BCH append](verifications/improved/dim94-96-bch-paired-group-append/) replays with `python verifications/improved/dim94-96-bch-paired-group-append/verify.py`.
+
 The [91D asymmetric head-plane proof](verifications/improved/dim91-z8-asymmetric-planes/) runs with `python verifications/improved/dim91-z8-asymmetric-planes/verify_flat.py` (Node.js for the inherited sparse layer). Its analytic alternative head assignments in 91–93D are checked by `heads_analytic.py`.
 
 The [expanded 92D variable-radius proof](verifications/improved/dim92-z8-variable-radius-heads-continuation/) replays with `python verifications/improved/dim92-z8-variable-radius-heads-continuation/verify_flat.py` (Node.js for the sparse ancestor).

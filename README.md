@@ -15,7 +15,7 @@ The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over t
 
 Two asymmetric latitude pairs and [353 new Golay support patterns](verifications/improved/dim88-89-golay-variable-punctures/) raise **89D to 15,177,390,082** (+1,125,793,792 over the prior repository construction). The same new patterns also improve **88D to 13,029,906,432**.
 
-Larger [shifted dodecacode lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) and [BCH flat phases](verifications/improved/dim94-96-bch-flat-phase/) help reach **209,283,189,568 in 96D**. The separate [108-head E7 construction](verifications/improved/dim95-e7-108-heads/) with BCH flat phases reaches **117,085,834,308 in 95D**.
+Larger [shifted dodecacode lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) and [BCH flat phases and paired groups](verifications/improved/dim94-96-bch-paired-group-append/) help reach **209,285,286,720 in 96D**. The separate [108-head E7 construction](verifications/improved/dim95-e7-108-heads/) with BCH flat phases reaches **117,087,145,028 in 95D**.
 
 Individually normalized Z8 fibers and the [enlarged flat layer](verifications/improved/dim91-93-flat-parity-extensions/) reach **25,917,421,568 in 91D**, **34,507,356,160 in 92D**, and **47,392,258,048 in 93D**.
 
@@ -94,9 +94,9 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **25 917 421 568** | **SOTA** | +316.800255% | — | updated 2026-11-21 | [Asymmetric head planes and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/) | — |
 | 92 | 8 589 934 592 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **34 507 356 160** | **SOTA** | +301.718497% | — | updated 2026-11-21 | [Variable-radius fibers and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/) | — |
 | 93 | 17 179 869 184 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **47 392 258 048** | **SOTA** | +175.859249% | — | updated 2026-11-21 | [Variable-radius fibers and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/) | — |
-| 94 | 34 359 738 368 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **74 136 160 972** | **SOTA** | +115.764626% | — | updated 2026-11-21 | [BCH phases on flat supports](verifications/improved/dim94-96-bch-flat-phase/) | — |
-| 95 | 68 719 476 736 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **117 085 834 308** | **SOTA** | +70.382314% | — | updated 2026-11-21 | [108 E7 heads and BCH flat phases](verifications/improved/dim94-96-bch-flat-phase/) | — |
-| 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) | **209 283 189 568** | **SOTA** | +52.273562% | — | updated 2026-11-21 | [BCH phases on flat supports](verifications/improved/dim94-96-bch-flat-phase/) | — |
+| 94 | 34 359 738 368 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **74 137 471 692** | **SOTA** | +115.768441% | — | updated 2026-11-21 | [BCH phases and paired physical groups](verifications/improved/dim94-96-bch-paired-group-append/) | — |
+| 95 | 68 719 476 736 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **117 087 145 028** | **SOTA** | +70.384221% | — | updated 2026-11-21 | [BCH phases and paired physical groups](verifications/improved/dim94-96-bch-paired-group-append/) | — |
+| 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) | **209 285 286 720** | **SOTA** | +52.275088% | — | updated 2026-11-21 | [BCH phases and paired physical groups](verifications/improved/dim94-96-bch-paired-group-append/) | — |
 
 ## Recent updates
 

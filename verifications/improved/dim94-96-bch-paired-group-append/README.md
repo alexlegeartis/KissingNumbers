@@ -1,0 +1,17 @@
+# Paired-group BCH append in dimensions 94–96
+
+| Dimension | Pinned predecessor | Appended points | Combined lower bound |
+|---:|---:|---:|---:|
+| 94 | 74,136,160,972 | 1,310,720 | **74,137,471,692** |
+| 95 | 117,085,834,308 | 1,310,720 | **117,087,145,028** |
+| 96 | 209,283,189,568 | 2,097,152 | **209,285,286,720** |
+
+This is a direct append to the [published BCH-flat witness](https://github.com/alexlegeartis/KissingNumbers/tree/8acb205dbf3af98d1b4b24c367bab294ed11785d/verifications/improved/dim94-96-bch-flat-phase), preserving **all** points in that witness. These are lower bounds only.
+
+The preceding flat layer used six groups of ordinary four-coordinate blocks, with all groups of size four in 96D and group 0 of size two in 94–95D; it chose one block per group. Pair the groups as (0,1), (2,3), (4,5). For each pair choose one of its two constituent groups; then select one block from each half of that chosen group, hence two blocks per chosen group. This defines six *virtual slots* (first and second half of the group selected from each pair). In a virtual slot, let its binary-first symbol flag (a/2) rounded down choose the old group, and let its binary-second flag (amod2) choose the block from the designated half of that group. The half of an old size-two group has just one block and consequently only the choice 0 is allowed. The high flags must agree on each pair of virtual slots. Require the bitwise XOR of the six symbols to be zero. These rules give exactly 160 support words in 94–95D and 256 in 96D. The virtual slots partition the ordinary physical blocks, so virtual-symbol coincidences are precisely the shared physical blocks.
+
+On each support use the same published length-24 BCH kernel and syndrome phases as before, with the six block segments interpreted as the virtual slots. There are exactly 8,192 signs per support of squared norm 24. For two supports differing in at least three slots, at most 12 coordinates are shared, so the dot is at most 12 without sign restrictions. For exactly two changed slots, the XOR constraint gives identical nonzero symbol differences in those two slots. The inherited phase formula, replayed against its BCH erasure quotients, ensures at least two sign differences on the 16 shared coordinates, hence dot at most 12. Identical supports have distance at least six from the ordinary BCH kernel.
+
+An **old** BCH flat support meets a **new** support in at most three distinct blocks because one chooses one block per old group and the other chooses just three of the old groups. This gives raw dot at most 12 and proves they are distinct. Against the dense and shifted 96-norm-squared stocks, each active row contributes at most 4, so raw dot at most 24. Against the old RS amplitude-four support of size six, the same total follows from the new amplitudes one. Against a two-coordinate old root the maximum is (2sqrt{48}<24). The new vectors have zero head coordinates and are distinct from the other old layers by support profiles. These are the correct normalized comparisons since the new squared radius is 24 and the four nonflat older squared radii are 96.
+
+`python3 verify.py` replays the field, exact shortened BCH minimum, rank, every erased-block quotient, support counts and overlap identities, the dense/sparse row dot inequalities and arithmetic. It uses standard-library Python only. The unchanged old witnesses remain explicit inherited premises.

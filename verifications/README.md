@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-111 packages, one per **construction idea** rather than one per dimension, because several
+112 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -30,6 +30,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim86-87-ternary-chord-sections`](improved/dim86-87-ternary-chord-sections/) | 86–87 | QR48 chord sections, Pless phases and E8 poles; exact replay |
 | [`dim91-93-flat-parity-extensions`](improved/dim91-93-flat-parity-extensions/) | 91–93 | flat six-/seven-row parity layers; exact replay |
 | [`dim94-96-bch-flat-phase`](improved/dim94-96-bch-flat-phase/) | 94–96 | BCH flat syndrome gluing; exact replay |
+| [`dim94-96-bch-paired-group-append`](improved/dim94-96-bch-paired-group-append/) | 94–96 | Paired-group BCH append; exact replay |
 | [`dim89-two-color-latitudes`](improved/dim89-two-color-latitudes/) | 89 | Fourteen unequal-latitude Z8 fibers and sparse replay |
 | [`dim92-96-shifted-dodecacode-outer-extension`](improved/dim92-96-shifted-dodecacode-outer-extension/) | 92–96 | Larger shifted Golay–dodecacode outer lists; two exact replays |
 | [`dim88-89-z8-prefix-anticode`](improved/dim88-89-z8-prefix-anticode/) | 88–89 | Punctured Z8 fibers; 89D by thirteen mixed-latitude fibers |

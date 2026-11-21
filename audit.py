@@ -677,6 +677,11 @@ with io.open(os.path.join(IMP, 'dim94-96-bch-flat-phase', 'claims.json'), encodi
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim94-96-bch-flat-phase', 'verify.py: BCH flat syndrome gluing')
 
+# 21 November: paired-group BCH append.
+with io.open(os.path.join(IMP, 'dim94-96-bch-paired-group-append', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim94-96-bch-paired-group-append', 'verify.py: exact paired-group BCH support and syndrome checks')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
