@@ -717,6 +717,11 @@ with io.open(os.path.join(IMP, 'dim77-85-delta-marginal', 'claims.json'), encodi
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim77-85-delta-marginal', 'verify.py: difference-coordinate marginal and rational graph certificate')
 
+# 21 November: A2 normal fibers in 70D.
+with io.open(os.path.join(IMP, 'dim70-gamma72-a2-fibers', 'claims.json'), encoding='utf-8') as _file:
+    _row = json.load(_file)
+    add(_row['dimension'], _row['lower_bound'], 'dim70-gamma72-a2-fibers', 'verify.py: direct exact A2 normal-fiber counts and projected geometry')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

@@ -6,6 +6,8 @@ The [93D variable-radius fiber proof](verifications/improved/dim93-z8-variable-r
 
 The [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/) replays with `python verifications/improved/dim61-62-marked-caps/verify.py`.
 
+The [A2 normal fibers of Gamma72](verifications/improved/dim70-gamma72-a2-fibers/) replay with `python verifications/improved/dim70-gamma72-a2-fibers/verify.py`.
+
 The [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) replays with `python verifications/improved/dim77-85-delta-marginal/verify.py`.
 
 The [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) replays with `python verifications/improved/dim76-85-mixed-shape-norm10/verify.py`.
