@@ -712,6 +712,11 @@ with io.open(os.path.join(IMP, 'dim75-76-oriented-norm10-latitudes', 'claims.jso
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim75-76-oriented-norm10-latitudes', 'verify.py: exact polyhedral angles and oriented shell triangle duals')
 
+# 21 November: third shell marginal.
+with io.open(os.path.join(IMP, 'dim77-85-delta-marginal', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim77-85-delta-marginal', 'verify.py: difference-coordinate marginal and rational graph certificate')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

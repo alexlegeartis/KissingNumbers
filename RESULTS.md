@@ -168,15 +168,15 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 74 | 6 218 175 606 | **6 218 211 606** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
 | 75 | 6 218 175 612 | **6 218 276 173** | 1.00 | `heads` | [Oriented polyhedral norm-ten latitude](verifications/improved/dim75-76-oriented-norm10-latitudes/) |
 | 76 | 6 218 175 624 | **6 218 400 136** | 1.00 | `heads` | [Oriented polyhedral norm-ten latitude](verifications/improved/dim75-76-oriented-norm10-latitudes/) |
-| 77 | 6 218 175 640 | **6 218 669 616** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
-| 78 | 6 218 175 672 | **6 218 991 624** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
-| 79 | 6 218 175 726 | **6 219 415 042** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
-| 80 | 6 218 175 840 | **6 219 960 348** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
-| 81 | 6 218 175 906 | **6 220 773 344** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
-| 82 | 6 218 176 110 | **6 222 087 772** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
-| 83 | 6 218 176 204 | **6 223 765 754** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
-| 84 | 6 218 176 441 | **6 225 860 206** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
-| 85 | 6 218 176 754 | **6 228 414 172** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
+| 77 | 6 218 175 640 | **6 218 669 870** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
+| 78 | 6 218 175 672 | **6 218 992 206** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
+| 79 | 6 218 175 726 | **6 219 416 084** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
+| 80 | 6 218 175 840 | **6 219 962 106** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
+| 81 | 6 218 175 906 | **6 220 774 236** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
+| 82 | 6 218 176 110 | **6 222 089 254** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
+| 83 | 6 218 176 204 | **6 223 768 006** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
+| 84 | 6 218 176 441 | **6 225 863 462** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
+| 85 | 6 218 176 754 | **6 228 418 680** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
 | 86 | 6 218 177 532 | **8 008 545 838** | 1.29 | `codes` | [Re-marked axial Pless and Steiner squares](verifications/improved/dim86-87-remarked-square/)
 | 87 | 6 218 178 164 | **8 160 981 972** | 1.31 | `codes` | [Re-marked axial Pless and Steiner squares](verifications/improved/dim86-87-remarked-square/)
 | 88 | 6 218 179 920 | **13 357 769 652** | 2.15 | `codes` | [Axial Pless and square layers](verifications/improved/dim88-axial-pless/)
@@ -229,7 +229,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `heads` | 68-69 (2) | joint body-family and head searches remain open; no construction ceiling is claimed | actual D7 normals strengthen D4 slice populations by nested orientation averaging and exact moment duals; two independent profile and geometry proofs, with published Gamma72 premises; other normal systems and geometries remain open (dim68-69-gamma72-extended-moments/verify.py) |
 | `heads` | 70 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | D4-profile compression with anisotropic planar heads and independently replayed Gamma72 populations; other profiles and heads remain open; no global-optimality claim (dim70-gamma72-d4-planar-heads/verify.py) |
 | `heads` | 71 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | four normalized slices from two Gamma72 shells; other sections remain open, no global optimality claim |
-| `heads` | 76-85 (10) | other signed-permutation palettes and joint body-family searches remain open | exact source moments, rational triangle duals and blocked independence bounds (dim76-85-mixed-shape-norm10/verify.py) |
+| `heads` | 76-85 (10) | other signed-permutation palettes and joint body-family searches remain open | exact source moments, rational triangle duals and blocked independence bounds with the additional difference-coordinate marginal (dim77-85-delta-marginal/verify.py) |
 
 So the 12 `classes` dimensions all improve together when a better family of pairwise-disjoint
 classes is found -- which is where compute pays -- and the other 58 need a new idea or a

@@ -6,6 +6,8 @@ The [93D variable-radius fiber proof](verifications/improved/dim93-z8-variable-r
 
 The [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/) replays with `python verifications/improved/dim61-62-marked-caps/verify.py`.
 
+The [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) replays with `python verifications/improved/dim77-85-delta-marginal/verify.py`.
+
 The [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) replays with `python verifications/improved/dim76-85-mixed-shape-norm10/verify.py`.
 
 The [Re-marked axial Pless and Steiner squares](verifications/improved/dim86-87-remarked-square/) replays with `python verifications/improved/dim86-87-remarked-square/verify.py`.
