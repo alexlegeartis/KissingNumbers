@@ -687,6 +687,11 @@ with io.open(os.path.join(IMP, 'dim86-87-axial-pless', 'claims.json'), encoding=
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim86-87-axial-pless', 'verify.py: marked QR48 projection, Pless orbit and phase replay')
 
+# 21 November: 88D axial Pless and induced square design.
+with io.open(os.path.join(IMP, 'dim88-axial-pless', 'claims.json'), encoding='utf-8') as _file:
+    _row = json.load(_file)
+    add(_row['dimension'], _row['lower_bound'], 'dim88-axial-pless', 'verify.py: shortened QR48 and Pless, square and D88 layers')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

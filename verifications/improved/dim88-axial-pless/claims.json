@@ -1,0 +1,18 @@
+{
+  "dimension": 88,
+  "lower_bound": 13357769652,
+  "previous": 13029906432,
+  "gain": 327863220,
+  "dense": 12397455648,
+  "sparse": 959965380,
+  "square_supports": 2604,
+  "squares": 333312,
+  "roots": 15312,
+  "histogram": [
+    37468,
+    80272,
+    58152,
+    16784,
+    1628
+  ]
+}
