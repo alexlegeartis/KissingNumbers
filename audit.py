@@ -662,6 +662,21 @@ with io.open(os.path.join(IMP, 'dim91-z8-asymmetric-planes', 'claims.json'), enc
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim91-z8-asymmetric-planes', 'verify_flat.py: 24 exact Z8 fibers plus sparse layers')
 
+# 21 November: QR48 chord sections, Pless phases and E8 poles.
+with io.open(os.path.join(IMP, 'dim86-87-ternary-chord-sections', 'verification.json'), encoding='utf-8') as _file:
+    for _dimension, _row in json.load(_file).items():
+        add(int(_dimension), _row['total'], 'dim86-87-ternary-chord-sections', 'verify.py: QR48 chord sections, Pless phases and E8 poles')
+
+# 21 November: flat six-/seven-row parity layers.
+with io.open(os.path.join(IMP, 'dim91-93-flat-parity-extensions', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim91-93-flat-parity-extensions', 'verify.py: flat six-/seven-row parity layers')
+
+# 21 November: BCH flat syndrome gluing.
+with io.open(os.path.join(IMP, 'dim94-96-bch-flat-phase', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim94-96-bch-flat-phase', 'verify.py: BCH flat syndrome gluing')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

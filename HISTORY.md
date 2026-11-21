@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 21 November)</summary>
 
+**21 November 2026 — ternary chord sections.** [Mixed binary and ternary coordinates](verifications/improved/dim86-87-ternary-chord-sections/) raise 86D to **7,422,120,168** (+1,193,608,780) and 87D to **7,422,120,170** (+155,851,340). [Six- and seven-row flat layers](verifications/improved/dim91-93-flat-parity-extensions/) continue 91–93D, and [BCH flat syndrome gluing](verifications/improved/dim94-96-bch-flat-phase/) continues 94–96D.
+
 **21 November 2026 — signed-diagonal doubling in 91D.** [Three asymmetric head planes](verifications/improved/dim91-z8-asymmetric-planes/) fit 24 dense fibers instead of the earlier architecture and reach **25,915,131,904**, up **3,555,326,110**. The proof also constructs independent analytic 32- and 44-fiber head assignments in 92D and 93D.
 
 **21 November 2026 — expanded mixed-radius Z8 fibers.** [32 fibers in 92D](verifications/improved/dim92-z8-variable-radius-heads-continuation/) and [44 fibers in 93D](verifications/improved/dim93-z8-variable-radius-heads-continuation/) replace the smaller same-day witnesses, with the sparse and flat hexacode layers retained.

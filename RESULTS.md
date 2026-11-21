@@ -177,17 +177,17 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 83 | 6 218 176 204 | **6 223 067 174** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
 | 84 | 6 218 176 441 | **6 224 663 766** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
 | 85 | 6 218 176 754 | **6 226 484 034** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
-| 86 | 6 218 177 532 | **6 228 511 388** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
-| 87 | 6 218 178 164 | **7 266 268 830** | 1.17 | `codes` | [Compressed ternary fibers with nonlinear hexagonal phases and pure-head root systems](verifications/improved/dim87-89-hexagonal-phase-unions/) |
+| 86 | 6 218 177 532 | **7 422 120 168** | 1.19 | `heads` | [Ternary chord sections](verifications/improved/dim86-87-ternary-chord-sections/)
+| 87 | 6 218 178 164 | **7 422 120 170** | 1.19 | `codes` | [Ternary chord sections plus two poles](verifications/improved/dim86-87-ternary-chord-sections/)
 | 88 | 6 218 179 920 | **13 029 906 432** | 2.10 | `codes` | [Variable-puncture Golay layers](verifications/improved/dim88-89-golay-variable-punctures/)
 | 89 | 6 218 181 330 | **15 177 390 082** | 2.44 | `codes` | [Variable-puncture Golay layers](verifications/improved/dim88-89-golay-variable-punctures/)
 | 90 | 6 218 183 254 | **21 943 640 934** | 3.53 | `codes` | [Pless weight 15 words with nonlinear 7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |
-| 91 | 6 218 187 548 | **25 915 131 904** | 4.17 | `codes` | [Three asymmetric head planes](verifications/improved/dim91-z8-asymmetric-planes/)
-| 92 | 8 589 934 592 | **34 505 066 496** | 4.02 | `codes` | [Expanded variable-radius Z8 fibers](verifications/improved/dim92-z8-variable-radius-heads-continuation/)
-| 93 | 17 179 869 184 | **47 389 968 384** | 2.76 | `codes` | [Expanded variable-radius Z8 fibers](verifications/improved/dim93-z8-variable-radius-heads-continuation/)
-| 94 | 34 359 738 368 | **74 134 063 820** | 2.16 | `codes` | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/)
-| 95 | 68 719 476 736 | **117 083 737 156** | 1.70 | `codes` | [108 Gram-dominated E7 heads](verifications/improved/dim95-e7-108-heads/)
-| 96 | 137 438 953 472 | **209 278 995 264** | 1.52 | `codes` | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/)
+| 91 | 6 218 187 548 | **25 917 421 568** | 4.17 | `codes` | [Asymmetric head planes and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/)
+| 92 | 8 589 934 592 | **34 507 356 160** | 4.02 | `codes` | [Variable-radius fibers and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/)
+| 93 | 17 179 869 184 | **47 392 258 048** | 2.76 | `codes` | [Variable-radius fibers and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/)
+| 94 | 34 359 738 368 | **74 136 160 972** | 2.16 | `codes` | [BCH phases on flat supports](verifications/improved/dim94-96-bch-flat-phase/)
+| 95 | 68 719 476 736 | **117 085 834 308** | 1.70 | `codes` | [108 E7 heads and BCH flat phases](verifications/improved/dim94-96-bch-flat-phase/)
+| 96 | 137 438 953 472 | **209 283 189 568** | 1.52 | `codes` | [BCH phases on flat supports](verifications/improved/dim94-96-bch-flat-phase/)
 
 ## Status: what would have to change
 

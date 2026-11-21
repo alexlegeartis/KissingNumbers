@@ -1,0 +1,28 @@
+{
+  "86": {
+    "dense": 7346640384,
+    "gain": 1193608780,
+    "orthogonal_poles": 0,
+    "outer_pairs": 46672291,
+    "outer_words": 9662,
+    "phase_pairs": 30509766,
+    "phase_words": 7812,
+    "previous": 6228511388,
+    "root_tail": 240,
+    "sparse": 75479544,
+    "total": 7422120168
+  },
+  "87": {
+    "dense": 7346640384,
+    "gain": 155851340,
+    "orthogonal_poles": 2,
+    "outer_pairs": 46672291,
+    "outer_words": 9662,
+    "phase_pairs": 30509766,
+    "phase_words": 7812,
+    "previous": 7266268830,
+    "root_tail": 240,
+    "sparse": 75479544,
+    "total": 7422120170
+  }
+}

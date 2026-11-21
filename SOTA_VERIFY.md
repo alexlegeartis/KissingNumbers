@@ -4,6 +4,12 @@ The [92D variable-radius fiber proof](verifications/improved/dim92-z8-variable-r
 
 The [93D variable-radius fiber proof](verifications/improved/dim93-z8-variable-radius-heads/) replays with `python verifications/improved/dim93-z8-variable-radius-heads/verify_flat.py` (Node.js for the sparse ancestor).
 
+The [86–87D QR48 chord sections, Pless phases and E8 poles proof](verifications/improved/dim86-87-ternary-chord-sections/) replays with `python verifications/improved/dim86-87-ternary-chord-sections/verify.py`.
+
+The [91–93D flat six-/seven-row parity layers proof](verifications/improved/dim91-93-flat-parity-extensions/) replays with `python verifications/improved/dim91-93-flat-parity-extensions/verify.py`.
+
+The [94–96D BCH flat syndrome gluing proof](verifications/improved/dim94-96-bch-flat-phase/) replays with `python verifications/improved/dim94-96-bch-flat-phase/verify.py`.
+
 The [91D asymmetric head-plane proof](verifications/improved/dim91-z8-asymmetric-planes/) runs with `python verifications/improved/dim91-z8-asymmetric-planes/verify_flat.py` (Node.js for the inherited sparse layer). Its analytic alternative head assignments in 91–93D are checked by `heads_analytic.py`.
 
 The [expanded 92D variable-radius proof](verifications/improved/dim92-z8-variable-radius-heads-continuation/) replays with `python verifications/improved/dim92-z8-variable-radius-heads-continuation/verify_flat.py` (Node.js for the sparse ancestor).

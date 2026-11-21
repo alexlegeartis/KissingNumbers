@@ -1,0 +1,5 @@
+[
+  {"dimension":94,"previous":74134063820,"replaced_flat":2097152,"new_flat":4194304,"increase":2097152,"lower_bound":74136160972},
+  {"dimension":95,"previous":117083737156,"replaced_flat":2097152,"new_flat":4194304,"increase":2097152,"lower_bound":117085834308},
+  {"dimension":96,"previous":209278995264,"replaced_flat":4194304,"new_flat":8388608,"increase":4194304,"lower_bound":209283189568}
+]
