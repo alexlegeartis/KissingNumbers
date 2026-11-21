@@ -183,8 +183,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 89 | 6 218 181 330 | **15 177 390 082** | 2.44 | `codes` | [Variable-puncture Golay layers](verifications/improved/dim88-89-golay-variable-punctures/)
 | 90 | 6 218 183 254 | **21 943 640 934** | 3.53 | `codes` | [Pless weight 15 words with nonlinear 7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |
 | 91 | 6 218 187 548 | **22 359 345 896** | 3.60 | `codes` | [Direct signed-grid latitudes with exact linear ternary phase codes; published parent minima retained](verifications/improved/dim91-92-direct-latitude-layers/) |
-| 92 | 8 589 934 592 | **30 157 851 240** | 3.51 | `codes` | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/)
-| 93 | 17 179 869 184 | **44 069 161 624** | 2.57 | `codes` | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/)
+| 92 | 8 589 934 592 | **32 357 582 848** | 3.77 | `codes` | [Variable-radius Z8 fibers and hexacode layer](verifications/improved/dim92-z8-variable-radius-heads/)
+| 93 | 17 179 869 184 | **46 316 226 560** | 2.70 | `codes` | [Variable-radius Z8 fibers and hexacode layer](verifications/improved/dim93-z8-variable-radius-heads/)
 | 94 | 34 359 738 368 | **74 134 063 820** | 2.16 | `codes` | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/)
 | 95 | 68 719 476 736 | **117 083 737 156** | 1.70 | `codes` | [108 Gram-dominated E7 heads](verifications/improved/dim95-e7-108-heads/)
 | 96 | 137 438 953 472 | **209 278 995 264** | 1.52 | `codes` | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/)

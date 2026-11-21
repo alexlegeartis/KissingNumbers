@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 21 November)</summary>
 
+**21 November 2026 — variable-radius 92D and 93D constructions.** Individually normalized Z8 fibers with a separate hexacode layer raise [92D to 32,357,582,848](verifications/improved/dim92-z8-variable-radius-heads/) and [93D to 46,316,226,560](verifications/improved/dim93-z8-variable-radius-heads/), replacing the preceding configurations in these dimensions.
+
 **21 November 2026 — 108 E7 heads in 95D.** [A new Gram-dominated head assignment](verifications/improved/dim95-e7-108-heads/) adds six dense fibers, preserving all previous sparse layers, and reaches **117,083,737,156** (+6,442,450,944 after the flat layer).
 
 **21 November 2026 — nine-support affine caps.** [Exact append-only layers](verifications/improved/dim61-66-nonary-affine-caps/) improve 61–66D, using the 40-word punctured pentacode and residue-specific nine-support caps. The largest gain is **115,640** in 62D.

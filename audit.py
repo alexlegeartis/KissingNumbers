@@ -637,6 +637,16 @@ with io.open(os.path.join(IMP, 'dim95-e7-108-heads', 'claims.json'), encoding='u
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim95-e7-108-heads', 'verify.py: exact head Gram and sparse geometry')
 
+# 21 November: individually normalized Z8 fibers in 92D.
+with io.open(os.path.join(IMP, 'dim92-z8-variable-radius-heads', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim92-z8-variable-radius-heads', 'verify_flat.py: exact variable-radius, sparse and hexacode geometry')
+
+# 21 November: individually normalized Z8 fibers in 93D.
+with io.open(os.path.join(IMP, 'dim93-z8-variable-radius-heads', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim93-z8-variable-radius-heads', 'verify_flat.py: exact variable-radius, sparse and hexacode geometry')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
