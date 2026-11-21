@@ -9,7 +9,9 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <a id="week-2026-11-16"></a>
 
 <details>
-<summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 20 November)</summary>
+<summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 21 November)</summary>
+
+**21 November 2026 — five Golay–dodecacode augmentations.** Added layers in 92–96D give **30,121,921,128**, **43,934,943,896**, **73,999,846,092**, **110,507,068,484**, **208,869,002,048** respectively, with no incumbent vector removed. [Exact proof and replay](verifications/improved/dim92-96-golay-dodecacode/).
 
 **20 November 2026 — 39D three-coordinate QR heads.** A shortened QR kernel supports 84 dense fibres. Exact sparse pricing gives [**783,468**](verifications/improved/dim39-qr-three-coordinate-heads/), up 8,496 from 774,972.
 

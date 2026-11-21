@@ -1,0 +1,32 @@
+[
+  {
+    "dimension": 92,
+    "incumbent": 29797911144,
+    "added": 324009984,
+    "lower_bound": 30121921128
+  },
+  {
+    "dimension": 93,
+    "incumbent": 42951379608,
+    "added": 983564288,
+    "lower_bound": 43934943896
+  },
+  {
+    "dimension": 94,
+    "incumbent": 73016281804,
+    "added": 983564288,
+    "lower_bound": 73999846092
+  },
+  {
+    "dimension": 95,
+    "incumbent": 109523504196,
+    "added": 983564288,
+    "lower_bound": 110507068484
+  },
+  {
+    "dimension": 96,
+    "incumbent": 206160530240,
+    "added": 2708471808,
+    "lower_bound": 208869002048
+  }
+]
