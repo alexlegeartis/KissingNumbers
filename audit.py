@@ -692,6 +692,21 @@ with io.open(os.path.join(IMP, 'dim88-axial-pless', 'claims.json'), encoding='ut
     _row = json.load(_file)
     add(_row['dimension'], _row['lower_bound'], 'dim88-axial-pless', 'verify.py: shortened QR48 and Pless, square and D88 layers')
 
+# 21 November: Marked caps and nine-support refill.
+with io.open(os.path.join(IMP, 'dim61-62-marked-caps', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim61-62-marked-caps', 'verify.py: exact marked capsule phases and pinned support exchange')
+
+# 21 November: Shaped Gamma72 norm-ten latitudes.
+with io.open(os.path.join(IMP, 'dim76-85-mixed-shape-norm10', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim76-85-mixed-shape-norm10', 'verify.py: exact shell moments and shaped latitude graph duals')
+
+# 21 November: Re-marked axial Pless and Steiner squares.
+with io.open(os.path.join(IMP, 'dim86-87-remarked-square', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim86-87-remarked-square', 'verify.py: exact marked projection and Steiner square and root layers')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

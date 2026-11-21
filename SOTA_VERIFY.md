@@ -4,6 +4,12 @@ The [92D variable-radius fiber proof](verifications/improved/dim92-z8-variable-r
 
 The [93D variable-radius fiber proof](verifications/improved/dim93-z8-variable-radius-heads/) replays with `python verifications/improved/dim93-z8-variable-radius-heads/verify_flat.py` (Node.js for the sparse ancestor).
 
+The [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/) replays with `python verifications/improved/dim61-62-marked-caps/verify.py`.
+
+The [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) replays with `python verifications/improved/dim76-85-mixed-shape-norm10/verify.py`.
+
+The [Re-marked axial Pless and Steiner squares](verifications/improved/dim86-87-remarked-square/) replays with `python verifications/improved/dim86-87-remarked-square/verify.py`.
+
 The [88D axial Pless construction](verifications/improved/dim88-axial-pless/) replays with `python verifications/improved/dim88-axial-pless/verify.py`.
 
 The [86–87D axial Pless construction](verifications/improved/dim86-87-axial-pless/) replays with `python verifications/improved/dim86-87-axial-pless/verify.py`.

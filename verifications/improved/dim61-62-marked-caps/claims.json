@@ -1,0 +1,20 @@
+[
+  {
+    "dimension": 61,
+    "lower_bound": 89082322,
+    "previous": 89072802,
+    "gain": 9520,
+    "templates": 35,
+    "retired_nine_supports": 96,
+    "refilled_nine_supports": 82
+  },
+  {
+    "dimension": 62,
+    "lower_bound": 122668916,
+    "previous": 122659076,
+    "gain": 9840,
+    "templates": 35,
+    "retired_nine_supports": 92,
+    "refilled_nine_supports": 86
+  }
+]

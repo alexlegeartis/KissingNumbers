@@ -1,0 +1,82 @@
+[
+  {
+    "dimension": 76,
+    "lower_bound": 6218371050,
+    "previous": 6218315288,
+    "gain": 55762,
+    "certified_antipodal_pairs": 97713,
+    "pure_tail": 24
+  },
+  {
+    "dimension": 77,
+    "lower_bound": 6218669616,
+    "previous": 6218490542,
+    "gain": 179074,
+    "certified_antipodal_pairs": 246988,
+    "pure_tail": 40
+  },
+  {
+    "dimension": 78,
+    "lower_bound": 6218991624,
+    "previous": 6218688770,
+    "gain": 302854,
+    "certified_antipodal_pairs": 407982,
+    "pure_tail": 60
+  },
+  {
+    "dimension": 79,
+    "lower_bound": 6219415042,
+    "previous": 6219067454,
+    "gain": 347588,
+    "certified_antipodal_pairs": 619679,
+    "pure_tail": 84
+  },
+  {
+    "dimension": 80,
+    "lower_bound": 6219960348,
+    "previous": 6219714034,
+    "gain": 246314,
+    "certified_antipodal_pairs": 892318,
+    "pure_tail": 112
+  },
+  {
+    "dimension": 81,
+    "lower_bound": 6220773344,
+    "previous": 6220589740,
+    "gain": 183604,
+    "certified_antipodal_pairs": 1298800,
+    "pure_tail": 144
+  },
+  {
+    "dimension": 82,
+    "lower_bound": 6222087772,
+    "previous": 6221706936,
+    "gain": 380836,
+    "certified_antipodal_pairs": 1955996,
+    "pure_tail": 180
+  },
+  {
+    "dimension": 83,
+    "lower_bound": 6223765754,
+    "previous": 6223067174,
+    "gain": 698580,
+    "certified_antipodal_pairs": 2794967,
+    "pure_tail": 220
+  },
+  {
+    "dimension": 84,
+    "lower_bound": 6225860206,
+    "previous": 6224663766,
+    "gain": 1196440,
+    "certified_antipodal_pairs": 3842171,
+    "pure_tail": 264
+  },
+  {
+    "dimension": 85,
+    "lower_bound": 6228414172,
+    "previous": 6226484034,
+    "gain": 1930138,
+    "certified_antipodal_pairs": 5119130,
+    "pure_tail": 312
+  }
+]

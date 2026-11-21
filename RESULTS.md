@@ -153,8 +153,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 58 | 52 416 510 | **56 270 076** | 1.07 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
 | 59 | 52 416 604 | **56 952 414** | 1.09 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
 | 60 | 52 416 841 | **58 631 571** | 1.12 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
-| 61 | 52 417 154 | **89 072 802** | 1.70 | `codes` | [Signed nine-support layers](verifications/improved/dim61-66-nonary-affine-caps/)
-| 62 | 52 417 932 | **122 659 076** | 2.34 | `codes` | [Signed nine-support layers](verifications/improved/dim61-66-nonary-affine-caps/)
+| 61 | 52 417 154 | **89 082 322** | 1.70 | `codes` | [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/)
+| 62 | 52 417 932 | **122 668 916** | 2.34 | `codes` | [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/)
 | 63 | 52 418 564 | **184 417 784** | 3.52 | `codes` | [Signed nine-support layers](verifications/improved/dim61-66-nonary-affine-caps/)
 | 64 | 331 737 984 | **335 789 656** | 1.01 | `codes` | [Signed nine-support layers](verifications/improved/dim61-66-nonary-affine-caps/)
 | 65 | 331 737 986 | **335 857 882** | 1.01 | `codes` | [Signed nine-support layers](verifications/improved/dim61-66-nonary-affine-caps/)
@@ -167,18 +167,18 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 73 | 6 218 175 602 | **6 218 206 932** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
 | 74 | 6 218 175 606 | **6 218 211 606** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
 | 75 | 6 218 175 612 | **6 218 246 060** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
-| 76 | 6 218 175 624 | **6 218 315 288** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
-| 77 | 6 218 175 640 | **6 218 490 542** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
-| 78 | 6 218 175 672 | **6 218 688 770** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
-| 79 | 6 218 175 726 | **6 219 067 454** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
-| 80 | 6 218 175 840 | **6 219 714 034** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
-| 81 | 6 218 175 906 | **6 220 589 740** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
-| 82 | 6 218 176 110 | **6 221 706 936** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
-| 83 | 6 218 176 204 | **6 223 067 174** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
-| 84 | 6 218 176 441 | **6 224 663 766** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
-| 85 | 6 218 176 754 | **6 226 484 034** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
-| 86 | 6 218 177 532 | **8 008 206 430** | 1.29 | `codes` | [Axial Pless layers](verifications/improved/dim86-87-axial-pless/)
-| 87 | 6 218 178 164 | **8 160 632 946** | 1.31 | `codes` | [Axial Pless layers](verifications/improved/dim86-87-axial-pless/)
+| 76 | 6 218 175 624 | **6 218 371 050** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
+| 77 | 6 218 175 640 | **6 218 669 616** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
+| 78 | 6 218 175 672 | **6 218 991 624** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
+| 79 | 6 218 175 726 | **6 219 415 042** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
+| 80 | 6 218 175 840 | **6 219 960 348** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
+| 81 | 6 218 175 906 | **6 220 773 344** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
+| 82 | 6 218 176 110 | **6 222 087 772** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
+| 83 | 6 218 176 204 | **6 223 765 754** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
+| 84 | 6 218 176 441 | **6 225 860 206** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
+| 85 | 6 218 176 754 | **6 228 414 172** | 1.00 | `heads` | [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) |
+| 86 | 6 218 177 532 | **8 008 545 838** | 1.29 | `codes` | [Re-marked axial Pless and Steiner squares](verifications/improved/dim86-87-remarked-square/)
+| 87 | 6 218 178 164 | **8 160 981 972** | 1.31 | `codes` | [Re-marked axial Pless and Steiner squares](verifications/improved/dim86-87-remarked-square/)
 | 88 | 6 218 179 920 | **13 357 769 652** | 2.15 | `codes` | [Axial Pless and square layers](verifications/improved/dim88-axial-pless/)
 | 89 | 6 218 181 330 | **15 177 390 082** | 2.44 | `codes` | [Variable-puncture Golay layers](verifications/improved/dim88-89-golay-variable-punctures/)
 | 90 | 6 218 183 254 | **21 943 640 934** | 3.53 | `codes` | [Pless weight 15 words with nonlinear 7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |
@@ -211,8 +211,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `codes` | 93, 96 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | three crosspolytope alphabets with E7 head sections and exact Reed-Solomon/root augmentation; full inherited parent replay |
 | `codes` | 94-95 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation; full inherited parent replay |
 | `cosets` | 36 (1) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | compatible Coxeter-Todd orbit exchange with fresh exact source and replacement geometry; larger simultaneous exchanges remain open (dim36-37-orbit-exchange/verify.py) |
-| `cosets` | 73-76 (4) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | nearest Gamma72 subsets and repaired group images; exact geometry and the inherited nearestness certificates are replayed (dim73-88-gamma72-cosets/verify.py) |
-| `cosets` | 77-78 (2) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | exact norm-ten moments, mixed tails and weighted-priority existence bounds; different tail sets and stronger independence bounds remain open (dim73-88-gamma72-cosets/verify_norm10.py) |
+| `cosets` | 73-75 (3) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | nearest Gamma72 subsets and repaired group images; exact geometry and the inherited nearestness certificates are replayed (dim73-88-gamma72-cosets/verify.py) |
 | `exhausted` | 18 (1) | the mechanism cannot give more; a different construction is needed | the bent-coset hexagon over odd BW16 is exactly at its ceiling: tier B <= 6*M6 and M6 = 160 (the 512-word slot graph is isomorphic to the girth-5 graph whose independence number 160 is CP-SAT-certified), so 8358 is the scheme maximum; poles, family size and vector shapes are all pinned (verifications/improved/dim18-bent-hexagon/README.md) |
 | `heads` | 25 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | critical-cluster replacement with 926 Leech circles and 247 rational points; complete independent exact proof; larger compatible families remain open (dim25-critical-cluster/verify.py) |
 | `heads` | 26 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | radical-orbit continuation: 160 additions and 152 removals from PackingStar 201180; complete exact geometry of all 201188 points (dim26-27-radical-orbits/verify.py) |
@@ -230,7 +229,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `heads` | 68-69 (2) | joint body-family and head searches remain open; no construction ceiling is claimed | actual D7 normals strengthen D4 slice populations by nested orientation averaging and exact moment duals; two independent profile and geometry proofs, with published Gamma72 premises; other normal systems and geometries remain open (dim68-69-gamma72-extended-moments/verify.py) |
 | `heads` | 70 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | D4-profile compression with anisotropic planar heads and independently replayed Gamma72 populations; other profiles and heads remain open; no global-optimality claim (dim70-gamma72-d4-planar-heads/verify.py) |
 | `heads` | 71 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | four normalized slices from two Gamma72 shells; other sections remain open, no global optimality claim |
-| `heads` | 79-86 (8) | joint body-family and head searches remain open; no construction ceiling is claimed | joint source moments, local triangle bounds and tail families can improve this existence construction; no optimality claim (dim79-86-norm10-triangle-layers/verify.py) |
+| `heads` | 76-85 (10) | other signed-permutation palettes and joint body-family searches remain open | exact source moments, rational triangle duals and blocked independence bounds (dim76-85-mixed-shape-norm10/verify.py) |
 
 So the 12 `classes` dimensions all improve together when a better family of pairwise-disjoint
 classes is found -- which is where compute pays -- and the other 58 need a new idea or a
@@ -265,6 +264,7 @@ refreshed table, not more search.
 | 68-69, 71 | `dim68-91-lattice-code-continuation` | verify.py: exact slice/head geometry, code ranks, design moments and sparse counts; published source minima retained |
 | 70 | `dim70-gamma72-d4-planar-heads` | verify.py: exact same/cross-fiber geometry and fresh source-bound population replay |
 | 73-78 | `dim73-88-gamma72-cosets` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
+| 76-85 | `dim76-85-mixed-shape-norm10` | verify.py: shaped lattices, exact moments and graph bounds |
 | 79-86 | `dim79-86-norm10-triangle-layers` | verify.py: exact shell moments, repaired local triangle duals, rational independence recurrence and complete kissing geometry |
 | 87-89 | `dim87-89-hexagonal-phase-unions` | verify.py: audited ternary heads, all nonlinear phase pairs and exact independent union geometry |
 | 90 | `dim90-92-hexagonal-phase-layers` | verify.py: all nonlinear phase pairs, outer membership, exact hexagonal geometry and orthogonal complement; published parent minima |
