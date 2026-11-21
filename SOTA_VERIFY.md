@@ -26,7 +26,9 @@ Latest 33D: **370,416** (+8). Two [exact replays](verifications/improved/dim33-o
 
 Latest 34D: **391,004** (+12). The [octad-switch proof](verifications/improved/dim34-octad-switches/) checks the support and root ledgers, integer angles and all 391,004 distinct coordinates of exact rank 34.
 
-Latest 35D: **415,358** (+22). The [octad-switch proof](verifications/improved/dim35-octad-switches/) has two independent integer replays of the changed supports, all sparse layer interactions and the dense code.
+Latest 35D: **415,360** (+2). The [exact replay](verifications/improved/dim35-joint-star-root/) checks all five layers and the chosen star/root replacement in exact integer arithmetic.
+
+Preceding 35D: **415,358** (+22). The [octad-switch proof](verifications/improved/dim35-octad-switches/) has two independent integer replays of the changed supports, all sparse layer interactions and the dense code.
 
 Preceding 35D: **415,336**, two above its predecessor. The [shared-root proof](verifications/improved/dim35-shared-root-heads/) checks the complete code and support layers and a separate expansion verifies all 67,258,188 changed/anchor pairs.
 

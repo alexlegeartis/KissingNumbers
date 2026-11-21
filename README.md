@@ -32,7 +32,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 32 | 352 320 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-number-32/tree/f367a9c5a051c0d6821ce71324b9dfa1ead76c2e) | **352 992** | **SOTA** | +0.190736% | — | since 2026-11-07 | [Non-antipodal signed octad continuation](verifications/improved/dim32-35-signed-layers/nonantipodal32/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal32/evidence/public_comparison.json) |
 | 33 | 370 240 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 416** | **SOTA** | +0.047537% | — | updated 2026-11-20 | [Full-octad swaps and signed-star exchange](verifications/improved/dim33-octad-switches/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal33/evidence/public_comparison.json) |
 | 34 | 390 980 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **391 004** | **SOTA** | +0.00614% | — | updated 2026-11-20 | [Octad swaps and signed stars](verifications/improved/dim34-octad-switches/) | — |
-| 35 | 415 308 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 358** | **SOTA** | +0.01204% | — | updated 2026-11-20 | [Octad switches and signed-star exchange](verifications/improved/dim35-octad-switches/) | — |
+| 35 | 415 308 | [Lin, support code + ERS layers](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 360** | **SOTA** | +0.01252% | — | updated 2026-11-21 | [Joint signed-star and root repacking](verifications/improved/dim35-joint-star-root/) | — |
 | 36 | 484 760 | [Yang et al., signed replacements](https://arxiv.org/abs/2609.35051v1) | **502 821** | **SOTA** | +3.7258% | — | updated 2026-11-19 | [Nonlocal Coxeter–Todd phase rebuild](verifications/improved/dim36-ct-nonlocal/) | — |
 | 37 | 500 008 | [Olivier, using Lin's code](https://doi.org/10.5281/zenodo.23569153) | **544 474** | **SOTA** | +8.8931% | — | updated 2026-11-19 | [QR compression and radical support packing](verifications/improved/dim37-qr-radical-families/) | — |
 | 38 | 605 322 | [Qihong Lin, Leech equatorial augmentation](https://arxiv.org/abs/2611.03682) | **652 076** | **SOTA** | +7.7238% | — | updated 2026-11-20 | [QR offsets, octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) | — |
@@ -105,7 +105,7 @@ Two octad swaps raise **33D to 370,416** (+8). [33D proof](verifications/improve
 
 Four octad swaps raise **34D to 391,004** (+12). [34D proof](verifications/improved/dim34-octad-switches/).
 
-Seven octad switches raise **35D to 415,358** (+22). [35D proof](verifications/improved/dim35-octad-switches/).
+Joint signed-star and root repacking raises **35D to 415,360** (+2). [35D proof](verifications/improved/dim35-joint-star-root/).
 
 A coordinated pair of octad switches raises **38D to 652,076** (+4). A nonlocal Coxeter–Todd phase rebuild raises **36D to 502,821** (+54). [38D proof](verifications/improved/dim38-qr-octad-switches/) · [36D proof](verifications/improved/dim36-ct-nonlocal/).
 

@@ -1,5 +1,7 @@
 # Results
 
+21 November 2026: joint signed-star/root repacking adds 16 stars for 14 signed roots, giving 415360 in 35D (+2 over 415358). [Exact replay](verifications/improved/dim35-joint-star-root/).
+
 19 November 2026: 168 signed six-support families and two unit poles give 544474 in 37D (+10,610 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).
 
 19 November 2026: shared signed-root cuts and a seven-site layer give 536440 in 37D (+2,576). [Exact replay](verifications/improved/dim37-qr-shared-stars/).
@@ -127,7 +129,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 32 | 352 320 | **352 992** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
 | 33 | 370 240 | **370 416** | 1.00 | `codes` | [two full-octad swaps and two signed-star families](verifications/improved/dim33-octad-switches/) |
 | 34 | 390 980 | **391 004** | 1.00 | `heads` | [coordinated octad switches and root-star exchanges; two exact proofs](verifications/improved/dim34-octad-switches/) |
-| 35 | 415 308 | **415 358** | 1.00 | `heads` | [octad switches and a signed-star exchange](verifications/improved/dim35-octad-switches/) |
+| 35 | 415 308 | **415 360** | 1.00 | `heads` | [joint signed-star and root repacking](verifications/improved/dim35-joint-star-root/) |
 | 36 | 484 760 | **502 821** | 1.04 | `cosets` | [Nonlocal Coxeter–Todd phase rebuild](verifications/improved/dim36-ct-nonlocal/) |
 | 37 | 500 008 | **544 280** | 1.09 | `codes` | [QR compression and radical support packing](verifications/improved/dim37-qr-radical-families/) |
 | 38 | 566 652 | **652 076** | 1.15 | `codes` | [QR offsets, ten octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) |
@@ -248,7 +250,7 @@ refreshed table, not more search.
 | 33 | `dim33-octad-switches` | Exact support and coordinate replays of the 370,416 directions |
 | 34 | `dim34-octad-switches` | Two exact replays of four octad switches and the final 391,004 directions |
 | 32-35 | `dim32-35-signed-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
-| 35 | `dim35-octad-switches` | Exact dense code and signed layers, seven octad switches, 246 stars and 208 deleted roots |
+| 35 | `dim35-joint-star-root` | Integer replay of 415,360 directions with 262 stars and 2,158 signed roots |
 | 36 | `dim36-ct-nonlocal` | verify.py and verify_independent.py: two exact short-shell and 13,002,450 coset-pair replays |
 | 37 | `dim37-qr-radical-families` | verify.py and audit.py: exact sparse and dense cross bounds and all 57,797,376 new-layer pairs |
 | 38 | `dim38-qr-octad-switches` | verify.py and audit.py: exact replay of 31 dense fibres, ten new octad supports, 288 stars and the signed-root ledger |

@@ -31,6 +31,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **20 November 2026 — 34D coordinated octad switches.** Four octad replacements enable a net gain of 48 stars for 36 roots, raising the lower bound to [391,004](verifications/improved/dim34-octad-switches/).
 
+**21 November 2026 — 35D joint signed-star and root repacking.** A finite conflict graph adds 16 stars at the cost of 14 roots, giving [415,360](verifications/improved/dim35-joint-star-root/), with all octad supports, dense points and full-support heads unchanged.
+
 **20 November 2026 — 35D octad switches.** Seven octad replacements enable a gain of 96 stars for 74 roots, giving [415,358](verifications/improved/dim35-octad-switches/).
 
 **20 November 2026 — 38D interdependent pair of octad switches.** Two new octads each conflict with both removed octads. Their simultaneous replacement allows 16 additional stars for 12 additional root deletions, giving [652,076](verifications/improved/dim38-qr-octad-switches/).
