@@ -1,5 +1,9 @@
 # Verification of the retained SOTA results
 
+The [two-color 89D latitude replay](verifications/improved/dim89-two-color-latitudes/) checks all 91 cross-fiber pairs and the unchanged sparse layer. Run `python verifications/improved/dim89-two-color-latitudes/verify.py` (with Node.js installed).
+
+The [enlarged 92–96D outer lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) have two exact replays: `node verifications/improved/dim92-96-shifted-dodecacode-outer-extension/verify.js` and `python verifications/improved/dim92-96-shifted-dodecacode-outer-extension/verify_shifted.py`.
+
 The [shifted-dodecacode replay](verifications/improved/dim92-96-shifted-dodecacode/) checks all three quotient maps, the 637 rescued outer pairs across three lists, and all remaining pairs. Run `node verifications/improved/dim92-96-shifted-dodecacode/verify.js`.
 
 The [90D/91D rotated-square replay](verifications/improved/dim90-91-a2-rotated-square/) checks all 15,180 triples of the 46-point Steiner system and the 3,465 surviving support blocks, 128 even signs per support, symbolic geometry, and root-layer counts. Run `python3 verifications/improved/dim90-91-a2-rotated-square/verify.py`.

@@ -1,0 +1,11 @@
+{
+  "dimension": 89,
+  "new_dense_fibers": 14,
+  "dense_with_poles": 15032385538,
+  "retained_sparse": 92952576,
+  "previous": 14051596290,
+  "lower_bound": 15125338114,
+  "gain": 1073741824,
+  "exact_cross_fiber_pairs": 91,
+  "proof": "independent geometry and sparse replay; inherits pinned homogeneous minimum 24"
+}

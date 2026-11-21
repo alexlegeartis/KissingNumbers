@@ -609,6 +609,14 @@ _driver=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_driver)
 for _row in _driver.results():
     add(_row['dimension'],_row['total'],_package,'verify.py: complete inherited parent minimum replay, exact fiber populations and all punctured/mixed-latitude pair types and normalization')
 
+# 21 November: the two-color latitude and shifted outer-list continuations.
+for _fresh, _how in (
+        ('dim89-two-color-latitudes', 'verify.py: exact individual-radius and sparse-layer checks'),
+        ('dim92-96-shifted-dodecacode-outer-extension', 'verify.js and verify_shifted.py: all shifted outer pairs and quotient cosets')):
+    with io.open(os.path.join(IMP, _fresh, 'claims.json'), encoding='utf-8') as _file:
+        for _row in json.load(_file):
+            add(_row['dimension'], _row['lower_bound'], _fresh, _how)
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

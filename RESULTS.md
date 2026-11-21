@@ -180,14 +180,14 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 86 | 6 218 177 532 | **6 228 511 388** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
 | 87 | 6 218 178 164 | **7 266 268 830** | 1.17 | `codes` | [Compressed ternary fibers with nonlinear hexagonal phases and pure-head root systems](verifications/improved/dim87-89-hexagonal-phase-unions/) |
 | 88 | 6 218 179 920 | **12 884 901 888** | 2.07 | `codes` | [Twelve punctured Z8 fibers](verifications/improved/dim88-89-z8-prefix-anticode/) |
-| 89 | 6 218 181 330 | **13 958 643 714** | 2.24 | `codes` | [Thirteen mixed-latitude Z8 fibers](verifications/improved/dim88-89-z8-prefix-anticode/mixed89/) |
+| 89 | 6 218 181 330 | **15 125 338 114** | 2.43 | `codes` | [Two-color asymmetric latitudes](verifications/improved/dim89-two-color-latitudes/) |
 | 90 | 6 218 183 254 | **21 943 640 934** | 3.53 | `codes` | [Pless weight 15 words with nonlinear 7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |
 | 91 | 6 218 187 548 | **22 359 345 896** | 3.60 | `codes` | [Direct signed-grid latitudes with exact linear ternary phase codes; published parent minima retained](verifications/improved/dim91-92-direct-latitude-layers/) |
-| 92 | 8 589 934 592 | **29 797 911 144** | 3.47 | `codes` | [Four-row partition heads with three crosspolytope alphabets and compatible Reed-Solomon/root layers](verifications/improved/dim92-four-row-partition-heads/) |
-| 93 | 17 179 869 184 | **42 951 379 608** | 2.50 | `codes` | [Three crosspolytope alphabets, E7 head sections and exact Reed-Solomon/root augmentation](verifications/improved/dim93-96-e7-rs-root-augmentation/) |
-| 94 | 34 359 738 368 | **73 016 281 804** | 2.13 | `codes` | [E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation](verifications/improved/dim94-95-e6-e7-head-exchange/) |
-| 95 | 68 719 476 736 | **109 523 504 196** | 1.59 | `codes` | [E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation](verifications/improved/dim94-95-e6-e7-head-exchange/) |
-| 96 | 137 438 953 472 | **206 160 530 240** | 1.50 | `codes` | [Three crosspolytope alphabets, E7 head sections and exact Reed-Solomon/root augmentation](verifications/improved/dim93-96-e7-rs-root-augmentation/) |
+| 92 | 8 589 934 592 | **30 156 524 136** | 3.51 | `codes` | [Larger shifted dodecacode outer lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) |
+| 93 | 17 179 869 184 | **44 067 064 472** | 2.57 | `codes` | [Larger shifted dodecacode outer lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) |
+| 94 | 34 359 738 368 | **74 131 966 668** | 2.16 | `codes` | [Larger shifted dodecacode outer lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) |
+| 95 | 68 719 476 736 | **110 639 189 060** | 1.61 | `codes` | [Larger shifted dodecacode outer lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) |
+| 96 | 137 438 953 472 | **209 274 800 960** | 1.52 | `codes` | [Larger shifted dodecacode outer lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) |
 
 ## Status: what would have to change
 

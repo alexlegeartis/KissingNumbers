@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 21 November)</summary>
 
+**21 November 2026 — high-dimensional latitude and outer-code advances.** [Two asymmetric latitude pairs](verifications/improved/dim89-two-color-latitudes/) raise 89D to **15,125,338,114** (+1,073,741,824). [Larger shifted dodecacode outer lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) raise 92–96D, including **209,274,800,960** in 96D (+76,546,048).
+
 **21 November 2026 — shifted dodecacode phases.** Three independently assigned cosets rescue selected outer distance-eight pairs, giving **209,198,254,912** in 96D (up **329,252,864**), with verified gains in 92–95D as well. [Exact proof and replay](verifications/improved/dim92-96-shifted-dodecacode/).
 
 **21 November 2026 — 90D and 91D rotated squares.** A Steiner quadruple support design and rotated A2 squares, together with roots, give **21,944,100,474** in 90D and **22,359,805,794** in 91D. [Exact proof](verifications/improved/dim90-91-a2-rotated-square/).
