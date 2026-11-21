@@ -177,8 +177,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 83 | 6 218 176 204 | **6 223 067 174** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
 | 84 | 6 218 176 441 | **6 224 663 766** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
 | 85 | 6 218 176 754 | **6 226 484 034** | 1.00 | `heads` | [Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence](verifications/improved/dim79-86-norm10-triangle-layers/) |
-| 86 | 6 218 177 532 | **7 422 120 168** | 1.19 | `heads` | [Ternary chord sections](verifications/improved/dim86-87-ternary-chord-sections/)
-| 87 | 6 218 178 164 | **7 422 120 170** | 1.19 | `codes` | [Ternary chord sections plus two poles](verifications/improved/dim86-87-ternary-chord-sections/)
+| 86 | 6 218 177 532 | **8 008 206 430** | 1.29 | `codes` | [Axial Pless layers](verifications/improved/dim86-87-axial-pless/)
+| 87 | 6 218 178 164 | **8 160 632 946** | 1.31 | `codes` | [Axial Pless layers](verifications/improved/dim86-87-axial-pless/)
 | 88 | 6 218 179 920 | **13 029 906 432** | 2.10 | `codes` | [Variable-puncture Golay layers](verifications/improved/dim88-89-golay-variable-punctures/)
 | 89 | 6 218 181 330 | **15 177 390 082** | 2.44 | `codes` | [Variable-puncture Golay layers](verifications/improved/dim88-89-golay-variable-punctures/)
 | 90 | 6 218 183 254 | **21 943 640 934** | 3.53 | `codes` | [Pless weight 15 words with nonlinear 7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |

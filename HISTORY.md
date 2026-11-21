@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 21 November)</summary>
 
+**21 November 2026 — axial Pless layers.** [Axial Pless layers](verifications/improved/dim86-87-axial-pless/) raise 86D to **8,008,206,430** (+586,086,262) and 87D to **8,160,632,946** (+738,512,776), with a re-marked QR48 chord section and larger sparse orbits.
+
 **21 November 2026 — paired-group BCH supports.** [A compatible additional flat layer](verifications/improved/dim94-96-bch-paired-group-append/) adds **1,310,720** in each of 94D and 95D, and **2,097,152** in 96D, with all earlier points retained.
 
 **21 November 2026 — ternary chord sections.** [Mixed binary and ternary coordinates](verifications/improved/dim86-87-ternary-chord-sections/) raise 86D to **7,422,120,168** (+1,193,608,780) and 87D to **7,422,120,170** (+155,851,340). [Six- and seven-row flat layers](verifications/improved/dim91-93-flat-parity-extensions/) continue 91–93D, and [BCH flat syndrome gluing](verifications/improved/dim94-96-bch-flat-phase/) continues 94–96D.

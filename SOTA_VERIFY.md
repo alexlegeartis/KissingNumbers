@@ -4,6 +4,8 @@ The [92D variable-radius fiber proof](verifications/improved/dim92-z8-variable-r
 
 The [93D variable-radius fiber proof](verifications/improved/dim93-z8-variable-radius-heads/) replays with `python verifications/improved/dim93-z8-variable-radius-heads/verify_flat.py` (Node.js for the sparse ancestor).
 
+The [86–87D axial Pless construction](verifications/improved/dim86-87-axial-pless/) replays with `python verifications/improved/dim86-87-axial-pless/verify.py`.
+
 The [86–87D QR48 chord sections, Pless phases and E8 poles proof](verifications/improved/dim86-87-ternary-chord-sections/) replays with `python verifications/improved/dim86-87-ternary-chord-sections/verify.py`.
 
 The [91–93D flat six-/seven-row parity layers proof](verifications/improved/dim91-93-flat-parity-extensions/) replays with `python verifications/improved/dim91-93-flat-parity-extensions/verify.py`.

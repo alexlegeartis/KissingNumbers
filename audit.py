@@ -682,6 +682,11 @@ with io.open(os.path.join(IMP, 'dim94-96-bch-paired-group-append', 'claims.json'
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim94-96-bch-paired-group-append', 'verify.py: exact paired-group BCH support and syndrome checks')
 
+# 21 November: axial Pless sparse orbits with re-marked ternary chord sections.
+with io.open(os.path.join(IMP, 'dim86-87-axial-pless', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim86-87-axial-pless', 'verify.py: marked QR48 projection, Pless orbit and phase replay')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

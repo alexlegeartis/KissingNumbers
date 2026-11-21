@@ -1,0 +1,20 @@
+[
+  {
+    "dimension": 86,
+    "lower_bound": 8008206430,
+    "previous": 7422120168,
+    "gain": 586086262,
+    "dense": 7346640384,
+    "sparse": 661565934,
+    "pure_tail": 112
+  },
+  {
+    "dimension": 87,
+    "lower_bound": 8160632946,
+    "previous": 7422120170,
+    "gain": 738512776,
+    "dense": 7346640384,
+    "sparse": 813992418,
+    "pure_tail": 144
+  }
+]
