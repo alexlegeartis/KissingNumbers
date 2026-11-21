@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 21 November)</summary>
 
+**21 November 2026 — shifted dodecacode phases.** Three independently assigned cosets rescue selected outer distance-eight pairs, giving **209,198,254,912** in 96D (up **329,252,864**), with verified gains in 92–95D as well. [Exact proof and replay](verifications/improved/dim92-96-shifted-dodecacode/).
+
 **21 November 2026 — 90D and 91D rotated squares.** A Steiner quadruple support design and rotated A2 squares, together with roots, give **21,944,100,474** in 90D and **22,359,805,794** in 91D. [Exact proof](verifications/improved/dim90-91-a2-rotated-square/).
 
 **21 November 2026 — shortened Golay–dodecacode layers.** Two new dimensions, 88D and 89D, gain 92,952,576 points each across the eleven-row and ten-row layers. Larger outer lists add 19,922,944 in 92D and 53,477,376 in each of 93–95D over the first augmentation. [Proof and replay](verifications/improved/dim88-95-golay-shortening/).

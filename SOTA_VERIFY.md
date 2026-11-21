@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+The [shifted-dodecacode replay](verifications/improved/dim92-96-shifted-dodecacode/) checks all three quotient maps, the 637 rescued outer pairs across three lists, and all remaining pairs. Run `node verifications/improved/dim92-96-shifted-dodecacode/verify.js`.
+
 The [90D/91D rotated-square replay](verifications/improved/dim90-91-a2-rotated-square/) checks all 15,180 triples of the 46-point Steiner system and the 3,465 surviving support blocks, 128 even signs per support, symbolic geometry, and root-layer counts. Run `python3 verifications/improved/dim90-91-a2-rotated-square/verify.py`.
 
 The [shortened Golay–dodecacode replay](verifications/improved/dim88-95-golay-shortening/) verifies the 629-pattern 88D/89D construction and larger 92–95D pattern lists, and checks a shortened dodecacode and all distances in the 144 binary signs. Run `node verifications/improved/dim88-95-golay-shortening/verify.js`.

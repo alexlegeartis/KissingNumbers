@@ -11,7 +11,7 @@ Verified construction lower bounds in **70 dimensions**, with exact proof packag
 
 The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over the preceding repository result), also valid in 89D by embedding. Mixed latitudes then raise 89D to **13,958,643,714** (about +8.33333% over that embedding).
 
-One [Golay–dodecacode construction](verifications/improved/dim92-96-golay-dodecacode/) improves all five dimensions 92–96 without deleting incumbent points, reaching **208,869,002,048** in 96D (up **2,708,471,808**).
+One [Golay–dodecacode construction](verifications/improved/dim92-96-shifted-dodecacode/) improves all five dimensions 92–96 without deleting incumbent points, reaching **209,198,254,912** in 96D (up **3,037,724,672** from before the Golay layers).
 
 The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-shortening/) extend the Golay–dodecacode method to **88D and 89D**, and further strengthen **92–95D**.
 
@@ -86,11 +86,11 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 89 | 6 218 181 330 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [17D tail](common/published.py) *(derived)* | **14 051 596 290** | **SOTA** | +125.975981% | — | updated 2026-11-21 | [Shortened Golay–dodecacode layers](verifications/improved/dim88-95-golay-shortening/) | — |
 | 90 | 6 218 183 254 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [18D tail](common/published.py) *(derived)* | **21 944 100 474** | **SOTA** | +252.902119% | — | updated 2026-11-21 | [Rotated A2 squares and roots](verifications/improved/dim90-91-a2-rotated-square/) | — |
 | 91 | 6 218 187 548 | [Nebe Γ72](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail](common/published.py) *(derived)* | **22 359 805 794** | **SOTA** | +259.587189% | — | updated 2026-11-21 | [Rotated A2 squares and roots](verifications/improved/dim90-91-a2-rotated-square/) | — |
-| 92 | 8 589 934 592 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **30 141 844 072** | **SOTA** | +250.897248% | — | updated 2026-11-21 | [Shortened Golay–dodecacode layers](verifications/improved/dim88-95-golay-shortening/) | — |
-| 93 | 17 179 869 184 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **43 988 421 272** | **SOTA** | +156.046311% | — | updated 2026-11-21 | [Shortened Golay–dodecacode layers](verifications/improved/dim88-95-golay-shortening/) | — |
-| 94 | 34 359 738 368 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **74 053 323 468** | **SOTA** | +115.523537% | — | updated 2026-11-21 | [Shortened Golay–dodecacode layers](verifications/improved/dim88-95-golay-shortening/) | — |
-| 95 | 68 719 476 736 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **110 560 545 860** | **SOTA** | +60.886769% | — | updated 2026-11-21 | [Shortened Golay–dodecacode layers](verifications/improved/dim88-95-golay-shortening/) | — |
-| 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) | **208 869 002 048** | **SOTA** | +51.972201% | — | updated 2026-11-21 | [Golay–dodecacode augmentation](verifications/improved/dim92-96-golay-dodecacode/) | — |
+| 92 | 8 589 934 592 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **30 151 281 256** | **SOTA** | +251.007111% | — | updated 2026-11-21 | [Shifted dodecacode phases](verifications/improved/dim92-96-shifted-dodecacode/) | — |
+| 93 | 17 179 869 184 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **44 038 752 920** | **SOTA** | +156.339280% | — | updated 2026-11-21 | [Shifted dodecacode phases](verifications/improved/dim92-96-shifted-dodecacode/) | — |
+| 94 | 34 359 738 368 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **74 103 655 116** | **SOTA** | +115.670021% | — | updated 2026-11-21 | [Shifted dodecacode phases](verifications/improved/dim92-96-shifted-dodecacode/) | — |
+| 95 | 68 719 476 736 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **110 610 877 508** | **SOTA** | +60.960011% | — | updated 2026-11-21 | [Shifted dodecacode phases](verifications/improved/dim92-96-shifted-dodecacode/) | — |
+| 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) | **209 198 254 912** | **SOTA** | +52.211764% | — | updated 2026-11-21 | [Shifted dodecacode phases](verifications/improved/dim92-96-shifted-dodecacode/) | — |
 
 ## Recent updates
 

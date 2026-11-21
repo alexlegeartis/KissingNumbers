@@ -1,0 +1,47 @@
+[
+  {
+    "dimension": 92,
+    "previous": 30141844072,
+    "lower_bound": 30151281256,
+    "inherited": 29797911144,
+    "patterns": 337,
+    "mask": 15,
+    "increase": 9437184
+  },
+  {
+    "dimension": 93,
+    "previous": 43988421272,
+    "lower_bound": 44038752920,
+    "inherited": 42951379608,
+    "patterns": 1037,
+    "mask": 3,
+    "increase": 50331648
+  },
+  {
+    "dimension": 94,
+    "previous": 74053323468,
+    "lower_bound": 74103655116,
+    "inherited": 73016281804,
+    "patterns": 1037,
+    "mask": 3,
+    "increase": 50331648
+  },
+  {
+    "dimension": 95,
+    "previous": 110560545860,
+    "lower_bound": 110610877508,
+    "inherited": 109523504196,
+    "patterns": 1037,
+    "mask": 3,
+    "increase": 50331648
+  },
+  {
+    "dimension": 96,
+    "previous": 208869002048,
+    "lower_bound": 209198254912,
+    "inherited": 206160530240,
+    "patterns": 2897,
+    "mask": 0,
+    "increase": 329252864
+  }
+]
