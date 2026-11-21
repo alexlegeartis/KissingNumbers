@@ -4,6 +4,12 @@ The [92D variable-radius fiber proof](verifications/improved/dim92-z8-variable-r
 
 The [93D variable-radius fiber proof](verifications/improved/dim93-z8-variable-radius-heads/) replays with `python verifications/improved/dim93-z8-variable-radius-heads/verify_flat.py` (Node.js for the sparse ancestor).
 
+The [91D asymmetric head-plane proof](verifications/improved/dim91-z8-asymmetric-planes/) runs with `python verifications/improved/dim91-z8-asymmetric-planes/verify_flat.py` (Node.js for the inherited sparse layer). Its analytic alternative head assignments in 91–93D are checked by `heads_analytic.py`.
+
+The [expanded 92D variable-radius proof](verifications/improved/dim92-z8-variable-radius-heads-continuation/) replays with `python verifications/improved/dim92-z8-variable-radius-heads-continuation/verify_flat.py` (Node.js for the sparse ancestor).
+
+The [expanded 93D variable-radius proof](verifications/improved/dim93-z8-variable-radius-heads-continuation/) replays with `python verifications/improved/dim93-z8-variable-radius-heads-continuation/verify_flat.py` (Node.js for the sparse ancestor).
+
 The [95D 108-head proof](verifications/improved/dim95-e7-108-heads/) checks all 5,778 head pairs and the unchanged sparse-layer bounds. Run `python verifications/improved/dim95-e7-108-heads/verify.py`.
 
 The [signed nine-support layers](verifications/improved/dim61-66-nonary-affine-caps/) replay with `python verifications/improved/dim61-66-nonary-affine-caps/verify.py`; the original body stocks are inherited unchanged.

@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-105 packages, one per **construction idea** rather than one per dimension, because several
+108 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -24,6 +24,9 @@ file, and the history of the lower bound in its dimensions.
 | [`dim95-e7-108-heads`](improved/dim95-e7-108-heads/) | 95 | 108 Gram-dominated E7 heads and exact sparse compatibility |
 | [`dim92-z8-variable-radius-heads`](improved/dim92-z8-variable-radius-heads/) | 92 | Mixed-radius Z8 fibers and hexacode flat appendix |
 | [`dim93-z8-variable-radius-heads`](improved/dim93-z8-variable-radius-heads/) | 93 | Mixed-radius Z8 fibers and hexacode flat appendix |
+| [`dim92-z8-variable-radius-heads-continuation`](improved/dim92-z8-variable-radius-heads-continuation/) | 92 | Enlarged mixed-radius Z8 fibers and hexacode layer |
+| [`dim93-z8-variable-radius-heads-continuation`](improved/dim93-z8-variable-radius-heads-continuation/) | 93 | Enlarged mixed-radius Z8 fibers and hexacode layer |
+| [`dim91-z8-asymmetric-planes`](improved/dim91-z8-asymmetric-planes/) | 91 | 24 asymmetric variable-radius Z8 fibers; sparse and hexacode replay |
 | [`dim89-two-color-latitudes`](improved/dim89-two-color-latitudes/) | 89 | Fourteen unequal-latitude Z8 fibers and sparse replay |
 | [`dim92-96-shifted-dodecacode-outer-extension`](improved/dim92-96-shifted-dodecacode-outer-extension/) | 92–96 | Larger shifted Golay–dodecacode outer lists; two exact replays |
 | [`dim88-89-z8-prefix-anticode`](improved/dim88-89-z8-prefix-anticode/) | 88–89 | Punctured Z8 fibers; 89D by thirteen mixed-latitude fibers |

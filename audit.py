@@ -647,6 +647,21 @@ with io.open(os.path.join(IMP, 'dim93-z8-variable-radius-heads', 'claims.json'),
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim93-z8-variable-radius-heads', 'verify_flat.py: exact variable-radius, sparse and hexacode geometry')
 
+# 21 November: expanded variable-radius 92D construction.
+with io.open(os.path.join(IMP, 'dim92-z8-variable-radius-heads-continuation', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim92-z8-variable-radius-heads-continuation', 'verify_flat.py: enlarged variable-radius and hexacode certificate')
+
+# 21 November: expanded variable-radius 93D construction.
+with io.open(os.path.join(IMP, 'dim93-z8-variable-radius-heads-continuation', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim93-z8-variable-radius-heads-continuation', 'verify_flat.py: enlarged variable-radius and hexacode certificate')
+
+# 21 November: asymmetric signed-diagonal doubling in 91D.
+with io.open(os.path.join(IMP, 'dim91-z8-asymmetric-planes', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim91-z8-asymmetric-planes', 'verify_flat.py: 24 exact Z8 fibers plus sparse layers')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

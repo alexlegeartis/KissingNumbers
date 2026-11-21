@@ -11,6 +11,10 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 21 November)</summary>
 
+**21 November 2026 — signed-diagonal doubling in 91D.** [Three asymmetric head planes](verifications/improved/dim91-z8-asymmetric-planes/) fit 24 dense fibers instead of the earlier architecture and reach **25,915,131,904**, up **3,555,326,110**. The proof also constructs independent analytic 32- and 44-fiber head assignments in 92D and 93D.
+
+**21 November 2026 — expanded mixed-radius Z8 fibers.** [32 fibers in 92D](verifications/improved/dim92-z8-variable-radius-heads-continuation/) and [44 fibers in 93D](verifications/improved/dim93-z8-variable-radius-heads-continuation/) replace the smaller same-day witnesses, with the sparse and flat hexacode layers retained.
+
 **21 November 2026 — variable-radius 92D and 93D constructions.** Individually normalized Z8 fibers with a separate hexacode layer raise [92D to 32,357,582,848](verifications/improved/dim92-z8-variable-radius-heads/) and [93D to 46,316,226,560](verifications/improved/dim93-z8-variable-radius-heads/), replacing the preceding configurations in these dimensions.
 
 **21 November 2026 — 108 E7 heads in 95D.** [A new Gram-dominated head assignment](verifications/improved/dim95-e7-108-heads/) adds six dense fibers, preserving all previous sparse layers, and reaches **117,083,737,156** (+6,442,450,944 after the flat layer).
