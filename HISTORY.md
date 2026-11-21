@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 21 November)</summary>
 
+**21 November 2026 — 108 E7 heads in 95D.** [A new Gram-dominated head assignment](verifications/improved/dim95-e7-108-heads/) adds six dense fibers, preserving all previous sparse layers, and reaches **117,083,737,156** (+6,442,450,944 after the flat layer).
+
 **21 November 2026 — nine-support affine caps.** [Exact append-only layers](verifications/improved/dim61-66-nonary-affine-caps/) improve 61–66D, using the 40-word punctured pentacode and residue-specific nine-support caps. The largest gain is **115,640** in 62D.
 
 **21 November 2026 — variable-puncture and flat-code augmentations.** [353 new shortened Golay patterns](verifications/improved/dim88-89-golay-variable-punctures/) add **52,051,968** points each in 88D and 89D, retaining both sparse layers. [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/) further improve 92–96D, reaching **209,278,995,264** in 96D.

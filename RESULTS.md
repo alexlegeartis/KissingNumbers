@@ -186,7 +186,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 92 | 8 589 934 592 | **30 157 851 240** | 3.51 | `codes` | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/)
 | 93 | 17 179 869 184 | **44 069 161 624** | 2.57 | `codes` | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/)
 | 94 | 34 359 738 368 | **74 134 063 820** | 2.16 | `codes` | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/)
-| 95 | 68 719 476 736 | **110 641 286 212** | 1.61 | `codes` | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/)
+| 95 | 68 719 476 736 | **117 083 737 156** | 1.70 | `codes` | [108 Gram-dominated E7 heads](verifications/improved/dim95-e7-108-heads/)
 | 96 | 137 438 953 472 | **209 278 995 264** | 1.52 | `codes` | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/)
 
 ## Status: what would have to change

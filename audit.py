@@ -632,6 +632,11 @@ with io.open(os.path.join(IMP, 'dim61-66-nonary-affine-caps', 'verification.json
     for _dimension, _row in json.load(_file).items():
         add(int(_dimension), _row['total'], 'dim61-66-nonary-affine-caps', 'verify.py: exact nine-support geometry and inherited layer checks')
 
+# 21 November: additional Gram-dominated E7 heads.
+with io.open(os.path.join(IMP, 'dim95-e7-108-heads', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim95-e7-108-heads', 'verify.py: exact head Gram and sparse geometry')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

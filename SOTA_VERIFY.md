@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+The [95D 108-head proof](verifications/improved/dim95-e7-108-heads/) checks all 5,778 head pairs and the unchanged sparse-layer bounds. Run `python verifications/improved/dim95-e7-108-heads/verify.py`.
+
 The [signed nine-support layers](verifications/improved/dim61-66-nonary-affine-caps/) replay with `python verifications/improved/dim61-66-nonary-affine-caps/verify.py`; the original body stocks are inherited unchanged.
 
 The [variable-puncture Golay supports proof](verifications/improved/dim88-89-golay-variable-punctures/) replays with `python verifications/improved/dim88-89-golay-variable-punctures/verify.py`.

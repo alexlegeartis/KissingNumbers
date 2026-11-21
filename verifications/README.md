@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-102 packages, one per **construction idea** rather than one per dimension, because several
+103 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -21,6 +21,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim88-89-golay-variable-punctures`](improved/dim88-89-golay-variable-punctures/) | 88–89 | variable-puncture Golay supports; exact replay |
 | [`dim92-96-flat-rs-layers`](improved/dim92-96-flat-rs-layers/) | 92–96 | flat Reed–Solomon layers; exact replay |
 | [`dim61-66-nonary-affine-caps`](improved/dim61-66-nonary-affine-caps/) | 61–66 | Exact signed nine-support affine caps |
+| [`dim95-e7-108-heads`](improved/dim95-e7-108-heads/) | 95 | 108 Gram-dominated E7 heads and exact sparse compatibility |
 | [`dim89-two-color-latitudes`](improved/dim89-two-color-latitudes/) | 89 | Fourteen unequal-latitude Z8 fibers and sparse replay |
 | [`dim92-96-shifted-dodecacode-outer-extension`](improved/dim92-96-shifted-dodecacode-outer-extension/) | 92–96 | Larger shifted Golay–dodecacode outer lists; two exact replays |
 | [`dim88-89-z8-prefix-anticode`](improved/dim88-89-z8-prefix-anticode/) | 88–89 | Punctured Z8 fibers; 89D by thirteen mixed-latitude fibers |

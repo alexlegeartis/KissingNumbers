@@ -13,7 +13,7 @@ The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over t
 
 Two asymmetric latitude pairs and [353 new Golay support patterns](verifications/improved/dim88-89-golay-variable-punctures/) raise **89D to 15,177,390,082** (+1,125,793,792 over the prior repository construction). The same new patterns also improve **88D to 13,029,906,432**.
 
-Larger [shifted dodecacode lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) and [flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/) improve **92–96D**, reaching **209,278,995,264** in 96D (+80,740,352 across both steps).
+Larger [shifted dodecacode lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) and [flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/) improve **92–96D**, reaching **209,278,995,264** in 96D (+80,740,352 across both steps). A separate [108-head E7 construction](verifications/improved/dim95-e7-108-heads/) reaches **117,083,737,156 in 95D**.
 
 The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-shortening/) extend the Golay–dodecacode method to **88D and 89D**, and further strengthen **92–95D**.
 
@@ -91,7 +91,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 92 | 8 589 934 592 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **30 157 851 240** | **SOTA** | +251.083596% | — | updated 2026-11-21 | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/) | — |
 | 93 | 17 179 869 184 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **44 069 161 624** | **SOTA** | +156.516282% | — | updated 2026-11-21 | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/) | — |
 | 94 | 34 359 738 368 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **74 134 063 820** | **SOTA** | +115.758522% | — | updated 2026-11-21 | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/) | — |
-| 95 | 68 719 476 736 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **110 641 286 212** | **SOTA** | +61.004262% | — | updated 2026-11-21 | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/) | — |
+| 95 | 68 719 476 736 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **117 083 737 156** | **SOTA** | +70.379262% | — | updated 2026-11-21 | [108 Gram-dominated E7 heads](verifications/improved/dim95-e7-108-heads/) | — |
 | 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) | **209 278 995 264** | **SOTA** | +52.270510% | — | updated 2026-11-21 | [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/) | — |
 
 ## Recent updates
