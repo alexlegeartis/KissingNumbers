@@ -1,0 +1,18 @@
+[
+  {
+    "dimension": 90,
+    "incumbent": 21943640934,
+    "squares": 443520,
+    "roots": 16020,
+    "removed": 0,
+    "lower_bound": 21944100474
+  },
+  {
+    "dimension": 91,
+    "incumbent": 22359345896,
+    "squares": 443520,
+    "roots": 16380,
+    "removed": 2,
+    "lower_bound": 22359805794
+  }
+]
