@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-117 packages, one per **construction idea** rather than one per dimension, because several
+118 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -30,6 +30,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim61-62-marked-caps`](improved/dim61-62-marked-caps/) | 61–62 | Marked caps and nine-support refill; exact replay |
 | [`dim76-85-mixed-shape-norm10`](improved/dim76-85-mixed-shape-norm10/) | 76–85 | Shaped Gamma72 norm-ten latitudes; exact replay |
 | [`dim86-87-remarked-square`](improved/dim86-87-remarked-square/) | 86–87 | Re-marked axial Pless and Steiner squares; exact replay |
+| [`dim75-76-oriented-norm10-latitudes`](improved/dim75-76-oriented-norm10-latitudes/) | 75–76 | Oriented polyhedral norm-ten latitude; exact replay |
 | [`dim88-axial-pless`](improved/dim88-axial-pless/) | 88 | Shortened ternary sections and induced square design; exact replay |
 | [`dim86-87-axial-pless`](improved/dim86-87-axial-pless/) | 86–87 | Axial Pless layers and a re-marked QR48 section; exact replay |
 | [`dim86-87-ternary-chord-sections`](improved/dim86-87-ternary-chord-sections/) | 86–87 | QR48 chord sections, Pless phases and E8 poles; exact replay |

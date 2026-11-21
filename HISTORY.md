@@ -17,6 +17,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **21 November 2026 — re-marking and Steiner squares.** [A refined Pless repacking](verifications/improved/dim86-87-remarked-square/) further raises 86D to **8,008,545,838** and 87D to **8,160,981,972**, with 2,223 square supports in each dimension.
 
+**21 November 2026 — polyhedral norm-ten latitudes.** [Oriented icosahedral and D4 tails](verifications/improved/dim75-76-oriented-norm10-latitudes/) prove **6,218,276,173 in 75D** and **6,218,400,136 in 76D**.
+
 **21 November 2026 — 88D axial Pless shortening.** [Axial Pless and square layers](verifications/improved/dim88-axial-pless/) give **13,357,769,652** (+327,863,220), combining a two-coordinate shortening of QR48, a shortened Pless sparse layer, and an induced Steiner-system square layer.
 
 **21 November 2026 — axial Pless layers.** [Axial Pless layers](verifications/improved/dim86-87-axial-pless/) raise 86D to **8,008,206,430** (+586,086,262) and 87D to **8,160,632,946** (+738,512,776), with a re-marked QR48 chord section and larger sparse orbits.

@@ -1,0 +1,18 @@
+[
+  {
+    "dimension": 75,
+    "lower_bound": 6218276173,
+    "previous": 6218246060,
+    "gain": 30113,
+    "oriented_points": 100561,
+    "pure_tail": 12
+  },
+  {
+    "dimension": 76,
+    "lower_bound": 6218400136,
+    "previous": 6218371050,
+    "gain": 29086,
+    "oriented_points": 224512,
+    "pure_tail": 24
+  }
+]

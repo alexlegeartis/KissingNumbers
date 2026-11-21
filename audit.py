@@ -707,6 +707,11 @@ with io.open(os.path.join(IMP, 'dim86-87-remarked-square', 'claims.json'), encod
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim86-87-remarked-square', 'verify.py: exact marked projection and Steiner square and root layers')
 
+# 21 November: Oriented polyhedral norm-ten latitude.
+with io.open(os.path.join(IMP, 'dim75-76-oriented-norm10-latitudes', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim75-76-oriented-norm10-latitudes', 'verify.py: exact polyhedral angles and oriented shell triangle duals')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

@@ -10,6 +10,8 @@ The [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-sh
 
 The [Re-marked axial Pless and Steiner squares](verifications/improved/dim86-87-remarked-square/) replays with `python verifications/improved/dim86-87-remarked-square/verify.py`.
 
+The [Oriented polyhedral norm-ten latitude](verifications/improved/dim75-76-oriented-norm10-latitudes/) replays with `python verifications/improved/dim75-76-oriented-norm10-latitudes/verify.py`.
+
 The [88D axial Pless construction](verifications/improved/dim88-axial-pless/) replays with `python verifications/improved/dim88-axial-pless/verify.py`.
 
 The [86–87D axial Pless construction](verifications/improved/dim86-87-axial-pless/) replays with `python verifications/improved/dim86-87-axial-pless/verify.py`.
