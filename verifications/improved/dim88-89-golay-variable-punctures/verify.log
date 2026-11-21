@@ -1,0 +1,20 @@
+{
+  "additional_11_patterns": 353,
+  "additional_11_rays": 52051968,
+  "full_weight_11_patterns": 982,
+  "old_weight_10_patterns": 11,
+  "claims": [
+    {
+      "dimension": 88,
+      "previous": 12977854464,
+      "lower_bound": 13029906432,
+      "added_over_previous": 52051968
+    },
+    {
+      "dimension": 89,
+      "previous": 14051596290,
+      "lower_bound": 15177390082,
+      "added_over_previous": 1125793792
+    }
+  ]
+}

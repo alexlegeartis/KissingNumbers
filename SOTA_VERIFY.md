@@ -1,5 +1,11 @@
 # Verification of the retained SOTA results
 
+The [signed nine-support layers](verifications/improved/dim61-66-nonary-affine-caps/) replay with `python verifications/improved/dim61-66-nonary-affine-caps/verify.py`; the original body stocks are inherited unchanged.
+
+The [variable-puncture Golay supports proof](verifications/improved/dim88-89-golay-variable-punctures/) replays with `python verifications/improved/dim88-89-golay-variable-punctures/verify.py`.
+
+The [flat Reed–Solomon layers proof](verifications/improved/dim92-96-flat-rs-layers/) replays with `python verifications/improved/dim92-96-flat-rs-layers/verify_flat.py`.
+
 The [two-color 89D latitude replay](verifications/improved/dim89-two-color-latitudes/) checks all 91 cross-fiber pairs and the unchanged sparse layer. Run `python verifications/improved/dim89-two-color-latitudes/verify.py` (with Node.js installed).
 
 The [enlarged 92–96D outer lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) have two exact replays: `node verifications/improved/dim92-96-shifted-dodecacode-outer-extension/verify.js` and `python verifications/improved/dim92-96-shifted-dodecacode-outer-extension/verify_shifted.py`.

@@ -1,0 +1,50 @@
+{
+  "61": {
+    "added": 93240,
+    "base": 88979562,
+    "new_overlap": 4,
+    "parent_overlap": 6,
+    "supports": 2331,
+    "total": 89072802
+  },
+  "62": {
+    "added": 115640,
+    "base": 122543436,
+    "new_overlap": 4,
+    "parent_overlap": 6,
+    "supports": 2891,
+    "total": 122659076
+  },
+  "63": {
+    "added": 2084,
+    "base": 184415700,
+    "new_overlap": 4,
+    "parent_overlap": 6,
+    "supports": 62,
+    "total": 184417784
+  },
+  "64": {
+    "added": 39960,
+    "base": 335749696,
+    "new_overlap": 4,
+    "parent_overlap": 6,
+    "supports": 999,
+    "total": 335789656
+  },
+  "65": {
+    "added": 39960,
+    "base": 335817922,
+    "new_overlap": 4,
+    "parent_overlap": 6,
+    "supports": 999,
+    "total": 335857882
+  },
+  "66": {
+    "added": 5520,
+    "base": 342291652,
+    "new_overlap": 4,
+    "parent_overlap": 6,
+    "supports": 138,
+    "total": 342297172
+  }
+}

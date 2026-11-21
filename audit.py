@@ -617,6 +617,21 @@ for _fresh, _how in (
         for _row in json.load(_file):
             add(_row['dimension'], _row['lower_bound'], _fresh, _how)
 
+# 21 November: variable-puncture Golay supports.
+with io.open(os.path.join(IMP, 'dim88-89-golay-variable-punctures', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim88-89-golay-variable-punctures', 'verify.py: variable-puncture Golay supports')
+
+# 21 November: flat Reed–Solomon layers.
+with io.open(os.path.join(IMP, 'dim92-96-flat-rs-layers', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim92-96-flat-rs-layers', 'verify_flat.py: flat Reed–Solomon layers')
+
+# 21 November: nine-support signed affine caps in 61–66 dimensions.
+with io.open(os.path.join(IMP, 'dim61-66-nonary-affine-caps', 'verification.json'), encoding='utf-8') as _file:
+    for _dimension, _row in json.load(_file).items():
+        add(int(_dimension), _row['total'], 'dim61-66-nonary-affine-caps', 'verify.py: exact nine-support geometry and inherited layer checks')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

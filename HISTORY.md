@@ -11,6 +11,10 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 21 November)</summary>
 
+**21 November 2026 — nine-support affine caps.** [Exact append-only layers](verifications/improved/dim61-66-nonary-affine-caps/) improve 61–66D, using the 40-word punctured pentacode and residue-specific nine-support caps. The largest gain is **115,640** in 62D.
+
+**21 November 2026 — variable-puncture and flat-code augmentations.** [353 new shortened Golay patterns](verifications/improved/dim88-89-golay-variable-punctures/) add **52,051,968** points each in 88D and 89D, retaining both sparse layers. [Flat Reed–Solomon layers](verifications/improved/dim92-96-flat-rs-layers/) further improve 92–96D, reaching **209,278,995,264** in 96D.
+
 **21 November 2026 — high-dimensional latitude and outer-code advances.** [Two asymmetric latitude pairs](verifications/improved/dim89-two-color-latitudes/) raise 89D to **15,125,338,114** (+1,073,741,824). [Larger shifted dodecacode outer lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) raise 92–96D, including **209,274,800,960** in 96D (+76,546,048).
 
 **21 November 2026 — shifted dodecacode phases.** Three independently assigned cosets rescue selected outer distance-eight pairs, giving **209,198,254,912** in 96D (up **329,252,864**), with verified gains in 92–95D as well. [Exact proof and replay](verifications/improved/dim92-96-shifted-dodecacode/).

@@ -1,0 +1,42 @@
+[
+  {
+    "dimension": 92,
+    "inherited": 30156524136,
+    "extra": 1327104,
+    "lower_bound": 30157851240,
+    "previous_published_before_both_steps": 30151281256,
+    "increase_over_published_before_both_steps": 6569984
+  },
+  {
+    "dimension": 93,
+    "inherited": 44067064472,
+    "extra": 2097152,
+    "lower_bound": 44069161624,
+    "previous_published_before_both_steps": 44038752920,
+    "increase_over_published_before_both_steps": 30408704
+  },
+  {
+    "dimension": 94,
+    "inherited": 74131966668,
+    "extra": 2097152,
+    "lower_bound": 74134063820,
+    "previous_published_before_both_steps": 74103655116,
+    "increase_over_published_before_both_steps": 30408704
+  },
+  {
+    "dimension": 95,
+    "inherited": 110639189060,
+    "extra": 2097152,
+    "lower_bound": 110641286212,
+    "previous_published_before_both_steps": 110610877508,
+    "increase_over_published_before_both_steps": 30408704
+  },
+  {
+    "dimension": 96,
+    "inherited": 209274800960,
+    "extra": 4194304,
+    "lower_bound": 209278995264,
+    "previous_published_before_both_steps": 209198254912,
+    "increase_over_published_before_both_steps": 80740352
+  }
+]
