@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-120 packages, one per **construction idea** rather than one per dimension, because several
+122 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -28,6 +28,8 @@ file, and the history of the lower bound in its dimensions.
 | [`dim93-z8-variable-radius-heads-continuation`](improved/dim93-z8-variable-radius-heads-continuation/) | 93 | Enlarged mixed-radius Z8 fibers and hexacode layer |
 | [`dim91-z8-asymmetric-planes`](improved/dim91-z8-asymmetric-planes/) | 91 | 24 asymmetric variable-radius Z8 fibers; sparse and hexacode replay |
 | [`dim61-62-marked-caps`](improved/dim61-62-marked-caps/) | 61–62 | Marked caps and nine-support refill; exact replay |
+| [`dim64-65-partial-nonary-signs`](improved/dim64-65-partial-nonary-signs/) | 64–65 | Partial phase additions, exact replay |
+| [`dim67-signed-nine-refill`](improved/dim67-signed-nine-refill/) | 67 | Exact signed Netto exchange and independent C++ replay |
 | [`dim70-gamma72-a2-fibers`](improved/dim70-gamma72-a2-fibers/) | 70 | Direct exact A2 normal-fiber counts and projected geometry |
 | [`dim77-85-delta-marginal`](improved/dim77-85-delta-marginal/) | 77–85 | Difference-coordinate marginal, rational duals and exact replay |
 | [`dim76-85-mixed-shape-norm10`](improved/dim76-85-mixed-shape-norm10/) | 76–85 | Shaped Gamma72 norm-ten latitudes; exact replay |

@@ -722,6 +722,12 @@ with io.open(os.path.join(IMP, 'dim70-gamma72-a2-fibers', 'claims.json'), encodi
     _row = json.load(_file)
     add(_row['dimension'], _row['lower_bound'], 'dim70-gamma72-a2-fibers', 'verify.py: direct exact A2 normal-fiber counts and projected geometry')
 
+# 22 November: partial signed nine-support layers.
+for _package in ('dim64-65-partial-nonary-signs', 'dim67-signed-nine-refill'):
+    with io.open(os.path.join(IMP, _package, 'claims.json'), encoding='utf-8') as _file:
+        for _row in json.load(_file)['dimensions']:
+            add(_row['dimension'], _row['lower_bound'], _package, 'verify.py: exact signed support and phase checks')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

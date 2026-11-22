@@ -1,0 +1,16 @@
+{
+  "dimension": 67,
+  "old": 355095446,
+  "total": 355170821,
+  "gain": 75375,
+  "selected_supports": 1835,
+  "partial_supports": 2404,
+  "one_netto": 1339,
+  "removed_netto_supports": 1028,
+  "removed_sign_points": 7110,
+  "added_sign_points": 82485,
+  "stock_weight16": 42269,
+  "netto_four_supports": 11792,
+  "overlap_pair_count": 14093,
+  "projected_sign_pair_count": 519597
+}

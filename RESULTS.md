@@ -156,10 +156,10 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 61 | 52 417 154 | **89 082 322** | 1.70 | `codes` | [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/)
 | 62 | 52 417 932 | **122 668 916** | 2.34 | `codes` | [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/)
 | 63 | 52 418 564 | **184 417 784** | 3.52 | `codes` | [Signed nine-support layers](verifications/improved/dim61-66-nonary-affine-caps/)
-| 64 | 331 737 984 | **335 789 656** | 1.01 | `codes` | [Signed nine-support layers](verifications/improved/dim61-66-nonary-affine-caps/)
-| 65 | 331 737 986 | **335 857 882** | 1.01 | `codes` | [Signed nine-support layers](verifications/improved/dim61-66-nonary-affine-caps/)
+| 64 | 331 737 984 | **335 795 354** | 1.01 | `codes` | [Partial signed nine-support fibers](verifications/improved/dim64-65-partial-nonary-signs/) 
+| 65 | 331 737 986 | **335 863 580** | 1.01 | `codes` | [Partial signed nine-support fibers](verifications/improved/dim64-65-partial-nonary-signs/) 
 | 66 | 331 737 990 | **342 297 172** | 1.03 | `codes` | [Signed nine-support layers](verifications/improved/dim61-66-nonary-affine-caps/)
-| 67 | 331 737 996 | **355 095 446** | 1.07 | `codes` | [larger compatible support and sign families in shortened, compressed and extended binary-code layers; fresh exact finite replay](verifications/improved/dim61-67-compatible-sign-families/) |
+| 67 | 331 737 996 | **355 170 821** | 1.07 | `codes` | [Signed nine-support refill and Netto exchange](verifications/improved/dim67-signed-nine-refill/) |
 | 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 137 216** | 4.10 | `heads` | [A2 normal fibers of Gamma72](verifications/improved/dim70-gamma72-a2-fibers/) |
@@ -260,7 +260,7 @@ refreshed table, not more search.
 | 49-60 | `dim49-60-p48-signed-refill` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 63-65 | `dim63-65-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
-| 67 | `dim61-67-compatible-sign-families` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
+| 67 | `dim67-signed-nine-refill` | exact signed phase comparisons and individual Netto deletions |
 | 68-69, 71 | `dim68-91-lattice-code-continuation` | verify.py: exact slice/head geometry, code ranks, design moments and sparse counts; published source minima retained |
 | 70 | `dim70-gamma72-d4-planar-heads` | verify.py: exact same/cross-fiber geometry and fresh source-bound population replay |
 | 73-78 | `dim73-88-gamma72-cosets` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |

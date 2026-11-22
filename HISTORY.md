@@ -17,6 +17,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **21 November 2026 — re-marking and Steiner squares.** [A refined Pless repacking](verifications/improved/dim86-87-remarked-square/) further raises 86D to **8,008,545,838** and 87D to **8,160,981,972**, with 2,223 square supports in each dimension.
 
+**22 November 2026 — partial signed nine-support layers.** [New compatible phase subsets](verifications/improved/dim64-65-partial-nonary-signs/) give **335,795,354 in 64D** and **335,863,580 in 65D**, each up 5,698. A [signed Netto exchange and refill](verifications/improved/dim67-signed-nine-refill/) adds 82,485 and removes 7,110 in 67D, giving **355,170,821**.
+
 **21 November 2026 — A2 normal fibers in 70D.** [A2 normal fibers of Gamma72](verifications/improved/dim70-gamma72-a2-fibers/) give **1,361,137,216** (+2,496), with three directly enumerated pairing classes of Gamma72 minima projected to their common 70-dimensional subspace.
 
 **21 November 2026 — third shell marginal.** [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) sharpens the local triangle estimates in 77–85D. The largest gain is **4,508 in 85D**, giving **6,228,418,680**.

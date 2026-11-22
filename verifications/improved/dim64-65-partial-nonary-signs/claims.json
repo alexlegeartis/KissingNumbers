@@ -1,0 +1,16 @@
+{
+  "dimensions": [
+    {
+      "dimension": 64,
+      "previous": 335789656,
+      "lower_bound": 335795354,
+      "gain": 5698
+    },
+    {
+      "dimension": 65,
+      "previous": 335857882,
+      "lower_bound": 335863580,
+      "gain": 5698
+    }
+  ]
+}
