@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-152 packages, one per **construction idea** rather than one per dimension, because several
+153 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -53,6 +53,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim94-95-coordinate-aligned-dodecad-fibres`](improved/dim94-95-coordinate-aligned-dodecad-fibres/) | 94–95 | Supportwise coordinate alignments and weighted sign kernels |
 | [`dim96-joint-dodecad-fibres`](improved/dim96-joint-dodecad-fibres/) | 96 | Joint axis and sign projections on new dodecads |
 | [`dim96-adapted-dodecad-fibres`](improved/dim96-adapted-dodecad-fibres/) | 96 | Dodecad sign kernels adapted to active projections |
+| [`dim96-mixed-tetrad-axis-sign-fibres`](improved/dim96-mixed-tetrad-axis-sign-fibres/) | 96 | Mixed-tetrad dodecad fibres with exact cross-frame sign checks |
 | [`dim94-96-hexary-parity-packing`](improved/dim94-96-hexary-parity-packing/) | 94–96 | Complementary parity six-row packings; exact replay |
 | [`dim65-dg-dense-owners`](improved/dim65-dg-dense-owners/) | 65 | Delsarte–Goethals dense owners; exact replay |
 | [`dim66-tail-signed-nine-refill`](improved/dim66-tail-signed-nine-refill/) | 66 | Signed tail-support Netto exchange; exact replay |
