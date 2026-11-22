@@ -17,6 +17,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **21 November 2026 — re-marking and Steiner squares.** [A refined Pless repacking](verifications/improved/dim86-87-remarked-square/) further raises 86D to **8,008,545,838** and 87D to **8,160,981,972**, with 2,223 square supports in each dimension.
 
+**22 November 2026 — Omitted-fibre weighted spikes.** **89,116,048** in 61D (+33,726) and **123,209,522** in 62D (+540,606), using shortened cyclic-code cosets and no dense removals. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
+
 **22 November 2026 — 348 more mixed triality patterns.** The 96D bound rises to **209,291,873,088** (+1,425,408) without removing any of the original 822 patterns. [Exact replay](verifications/improved/dim96-mixed-triality-six-rows/).
 
 **22 November 2026 — Mixed 96D triality rows.** Add 3,366,912 points in 96D with 822 tagged six-row patterns, reaching **209,290,447,680**. [Exact replay](verifications/improved/dim96-mixed-triality-six-rows/).

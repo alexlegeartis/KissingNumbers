@@ -8,6 +8,8 @@
 
 22 November 2026: signed plane and row designs add 24268 in 88D and 2069008 in 89D. [Exact replay](verifications/improved/dim88-89-signed-row-designs/).
 
+22 November 2026: omitted-fibre weighted spikes give 89116048 in 61D and 123209522 in 62D. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
+
 22 November 2026: 348 further six-row patterns add 1425408 in 96D, giving 209291873088. [Exact replay](verifications/improved/dim96-mixed-triality-six-rows/).
 
 22 November 2026: mixed triality rows add 3366912 in 96D. [Exact replay](verifications/improved/dim96-mixed-triality-six-rows/).
@@ -179,8 +181,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 58 | 52 416 510 | **56 270 076** | 1.07 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
 | 59 | 52 416 604 | **56 952 414** | 1.09 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
 | 60 | 52 416 841 | **58 631 571** | 1.12 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
-| 61 | 52 417 154 | **89 082 322** | 1.70 | `codes` | [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/)
-| 62 | 52 417 932 | **122 668 916** | 2.34 | `codes` | [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/)
+| 61 | 52 417 154 | **89 116 048** | 1.70 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
+| 62 | 52 417 932 | **123 209 522** | 2.34 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
 | 63 | 52 418 564 | **184 427 691** | 3.52 | `codes` | [Cloned dense owners](verifications/improved/dim63-64-dense-owner-clones/)
 | 64 | 331 737 984 | **335 797 303** | 1.01 | `codes` | [Cloned dense owners](verifications/improved/dim63-64-dense-owner-clones/) 
 | 65 | 331 737 986 | **336 257 692** | 1.01 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/)

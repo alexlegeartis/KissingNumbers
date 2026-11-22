@@ -1,0 +1,28 @@
+{
+  "dimensions": [
+    {
+      "dimension": 61,
+      "previous": 89082322,
+      "lower_bound": 89116048,
+      "gain": 33726,
+      "inserted": 33792,
+      "removed_poles": 66,
+      "shortened_rank": 10,
+      "minimum_hamming": 24,
+      "omitted_label": 6,
+      "weight_four_verification": "amplitude envelope"
+    },
+    {
+      "dimension": 62,
+      "previous": 122668916,
+      "lower_bound": 123209522,
+      "gain": 540606,
+      "inserted": 540672,
+      "removed_poles": 66,
+      "shortened_rank": 14,
+      "minimum_hamming": 20,
+      "omitted_label": 2,
+      "weight_four_verification": "amplitude envelope"
+    }
+  ]
+}
