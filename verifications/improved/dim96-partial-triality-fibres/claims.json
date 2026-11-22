@@ -1,0 +1,11 @@
+{
+  "dimension": 96,
+  "previous": 209292294976,
+  "fibres": 60,
+  "axes": 5240,
+  "signs_per_axis": 32,
+  "active_old_pairs": 165,
+  "active_new_pairs": 9,
+  "gain": 167680,
+  "lower_bound": 209292462656
+}

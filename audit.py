@@ -807,6 +807,10 @@ with io.open(os.path.join(IMP, 'dim96-affine-phase-projections', 'claims.json'),
     _phase96 = json.load(_file)
 add(_phase96['dimension'], _phase96['lower_bound'], 'dim96-affine-phase-projections', 'verify.py: exact affine projection append')
 
+with io.open(os.path.join(IMP, 'dim96-partial-triality-fibres', 'claims.json'), encoding='utf-8') as _file:
+    _partial96 = json.load(_file)
+add(_partial96['dimension'], _partial96['lower_bound'], 'dim96-partial-triality-fibres', 'verify.py: exact partial axis fibre append')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
