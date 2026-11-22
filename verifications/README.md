@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-173 packages, one per **construction idea** rather than one per dimension, because several
+175 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -139,6 +139,8 @@ file, and the history of the lower bound in its dimensions.
 | [`dim39-qr-pentapolar`](improved/dim39-qr-pentapolar/) | 39 | **774,972**; five rational QR head positions with exact replay |
 | [`dim40-affine-shells`](improved/dim40-affine-shells/) | 40 | **1,126,322**: affine lattice shells and eight minimum-shell refills; exact cross-products |
 | [`dim40-affine-centre-refill`](improved/dim40-affine-centre-refill/) | 40 | Alternate affine centre and thirteen individual short-shell points with an explicit lattice replay |
+| [`dim44-d4-section`](improved/dim44-d4-section/) | 44 | **4,940,961** points from a scaled D4 in P48m, with an exact lattice minimum and shell-moment proof |
+| [`dim41-43-affine-sections`](improved/dim41-43-affine-sections/) | 41–43 | Fresh shell and angle replays for **1,460,066**, **1,991,475** and **2,921,073** |
 | [`dim40-p48q-affine-refill`](improved/dim40-p48q-affine-refill/) | 40 | **1,126,365** via a joint short-layer exchange, with a fresh lattice and angular replay |
 | [`dim18-bent-hexagon`](improved/dim18-bent-hexagon/) | 18 | apparently new — Cohn–Li's own ℝ¹⁶ ⊕ ℝ² hexagon over the odd Barnes–Wall lattice, with the three 6-set families taken from bent cosets of RM(1,4) whose pairwise sums are bent but which do not sum to zero; tier B rises from 256 to 960 |
 | [`dim25-lens-heads`](improved/dim25-lens-heads/) | 25 | apparently new — joint work in progress with H. Cohn and B. Lindow; 1016 lens heads (971 from the block family, plus a 45-head maximum independent set over the complete pool), one non-lattice equator point |
@@ -155,7 +157,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim39-root-replacements`](improved/dim39-root-replacements/) | 39 | 768,924 points; neutral support changes and shared root deletions |
 | [`dim38-leech-large-codimension`](improved/dim38-leech-large-codimension/) | 38 | apparently new |
 | [`dim39-ers-constant-weight`](improved/dim39-ers-constant-weight/) | 39 | apparently new — but check Sun–Wang's latest revision |
-| [`dim41-46-p48-heads`](improved/dim41-46-p48-heads/) | 41–46 | current supplied certificates, including partial-family 43D and coordinated-motion 45D; integer angles and exact head dimensions replay with inherited complete-family populations |
+| [`dim41-46-p48-heads`](improved/dim41-46-p48-heads/) | 41–46 | earlier 41–44D configurations and current 45–46D configurations, including coordinated 45D motion, with exact head geometry and inherited body populations |
 | [`dim49-63-p48-caps`](improved/dim49-63-p48-caps/) | 49–63 | current in 49–59D; retained 60D and cap counts in 61–63D are superseded by October code constructions |
 | [`dim62-63-ers-chain`](improved/dim62-63-ers-chain/) | 62, 63 | retained chain, superseded by the October central sections |
 | [`dim68-69-gamma72-cross-sections`](improved/dim68-69-gamma72-cross-sections/) | 68, 69 | retained central and affine Gamma72 proofs; current bounds use the extended D7 moment package |

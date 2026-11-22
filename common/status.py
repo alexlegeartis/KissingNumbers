@@ -414,6 +414,11 @@ for _d in range(41, 47):
                   'coordinated-motion 45D certificates are installed '
                   '(dim41-46-p48-heads/README.md, verify.py, POPULATIONS.txt)')
 
+STATUS[44] = ('heads', 'scaled D4 section; the parent minimum, projected populations and class distances have exact replays (dim44-d4-section/verify.py)')
+
+for _d in (41, 42, 43):
+    STATUS[_d] = ('heads', 'all selected affine shells are freshly enumerated and all angles checked by short differences or direct products (dim41-43-affine-sections/verify.py)')
+
 
 def runs(ds):
     """compress a dimension list into contiguous runs, e.g. [49..61, 73..95] -> "49-61, 73-95"

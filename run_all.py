@@ -2,7 +2,7 @@
 """Run every verification in this repository and report a single verdict.
 
     python run_all.py              # 256 scripts, including large exact certificate replays
-    python run_all.py --full       # 277 scripts
+    python run_all.py --full       # 279 scripts
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -391,6 +391,8 @@ JOBS = [
     ('dim39-deformed-orbits: independent exact replay', os.path.join(V, 'improved', 'dim39-deformed-orbits'), ['verify.py'], 1.0, True),
     ('dim39-qr-three-coordinate-heads: exact dense/sparse replay', os.path.join(V, 'improved', 'dim39-qr-three-coordinate-heads'), ['verify.py'], 8.0, True),
     ('dim39-qr-pentapolar: exact Hamming and head geometry', os.path.join(V, 'improved', 'dim39-qr-pentapolar'), ['verify.py'], 5.0, True),
+    ('dim44-d4-section: parent minimum and exact moment proof', os.path.join(V, 'improved', 'dim44-d4-section'), ['verify.py'], 10.0, False),
+    ('dim41-43-affine-sections: fresh enumeration and integer geometry', os.path.join(V, 'improved', 'dim41-43-affine-sections'), ['verify.py'], 60.0, False),
     ('dim40-p48q-affine-refill: fresh lattice and exact angular replay', os.path.join(V, 'improved', 'dim40-p48q-affine-refill'), ['verify.py'], 6.0, False),
     ('dim40-affine-centre-refill: exact gluing and refill', os.path.join(V, 'improved', 'dim40-affine-centre-refill'), ['verify.py'], 0.1, True),
     ('dim40-affine-centre-refill: fresh lattice and explicit cross-layer pairs', os.path.join(V, 'improved', 'dim40-affine-centre-refill'), ['verify_expanded.py'], 6.0, False),
@@ -735,6 +737,8 @@ def _sota_jobs(quick=False):
         ('dim31-dual-centres', ('verify.py',)),
         ('dim39-qr-three-coordinate-heads', ('verify.py',)),
         ('dim39-qr-pentapolar', ('verify.py',)),
+        ('dim44-d4-section', ('verify.py',)),
+        ('dim41-43-affine-sections', ('verify.py',)),
         ('dim40-p48q-affine-refill', ('verify.py',)),
         ('dim40-affine-centre-refill', ('verify.py',)),
         ('dim40-affine-centre-refill', ('verify_expanded.py',)),
@@ -980,7 +984,9 @@ def _sota_coverage(jobs, results=None):
         ('dim38-triangle-hamming', [38], [('verify.py',), ('audit.py',)], '768 triangular Hamming points, exact geometry with the pinned 38D parent'),
         ('dim38-joint-latitudes', [38], [('verify.py',)], ''),
         ('dim39-deformed-orbits', [39], [('verify.py',)], ''),
-        ('dim41-46-p48-heads', list(range(41, 47)), [('verify.py',)],
+        ('dim41-43-affine-sections', [41, 42, 43], [('verify.py',)], 'fresh counts for every affine shell and exact integer angle checks'),
+        ('dim44-d4-section', [44], [('verify.py',)], 'exact shell counts by spherical moments and certified class distances'),
+        ('dim41-46-p48-heads', [45, 46], [('verify.py',)],
          'inherited body populations; the latest large shells are not all freshly enumerated'),
         ('dim49-60-p48-signed-refill', list(range(49, 61)), [('verify.py',)],
          'complete signed class geometry, ownership and tails; published P48 minimum and shell population'),

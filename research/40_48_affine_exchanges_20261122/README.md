@@ -211,3 +211,68 @@ give a maximum net gain of 51 across the 96 centres tested. Adding the
 difference classes of normal squared norm two in 18 tested centres,
 or allowing eight blockers in six centres, gives the same maximum.
 [1,126,365-point certificate](../../verifications/improved/dim40-p48q-affine-refill/).
+
+## Distance-ten binary cosets in 40D
+
+Shortening the extended binary quadratic-residue [48,24,12] code on any eight coordinates gives a dimension-16 kernel in length 40. Nine translates with union minimum distance ten always exist. Use the syndromes of zero and of the eight deleted unit columns. The remaining columns span the syndrome space. Any body representing a single deleted syndrome extends to a nonzero codeword with one added bit, and a difference of two such syndromes extends with two added bits. The respective body distances are at least eleven and ten.
+
+An exhaustive computation gives **exactly nine** for every such kernel, allowing arbitrary translates. The translation and inversion generators on the projective line over the field of 47 elements preserve the code. Orbit–stabilizer counts cover all 377,348,994 eight-subsets with 7,497 representatives. For each representative, start with Hamming weights on 24 independent syndrome columns and update all 16,777,216 distances once for each of the other 16 columns. An independent breadth-first search checks the entire distance table for the first representative.
+
+Translate one prospective coset to zero. Join two syndromes of leader weight at least ten when their difference also has leader weight at least ten. No representative admits a nine-clique in this graph. The largest vertex count is 463. This excludes the proposed 40D construction using ten full translates of these kernels. Other length-40 kernels and partial translates remain open.
+
+The same upper bound of **589,824 dense points** holds if any three of the nine standard translates are kept whole and all other binary words can be chosen individually. This covers 629,748 choices of shortening representative and retained triple. Any eligible syndrome must differ from all three fixed labels by syndromes of distance at least ten. The zero translate and the forty one-bit translates partition into radius-one balls about the kernel words, contributing at most 65,536 points in total. For every other eligible nonstandard syndrome, the verifier finds a distinct nonzero standard target at distance less than ten. Adding a fixed shortest error gives a perfect matching between that candidate translate and its target. Their combined contribution is at most 65,536 points per target. The remaining unpaired standard translates have the same individual bound. Thus even arbitrary partial replacements require changing at least seven of the nine standard translates to improve the dense layer.
+
+Two intact translates of opposite Hamming parity suffice for the same bound, for arbitrary translate labels. Translate one to zero and denote the odd label of the other by `y`. The other eligible odd labels form a set `T`, and the eligible even labels are exactly `y + T`. Match pairs of opposite-parity candidate cosets at distance below ten. As above each matched pair contributes at most one coset's worth of points. Across all 60,121 choices of odd difference and shortening representative, the two intact translates, matched pairs and unmatched translates contribute at most nine coset populations in total.
+
+Replay on an x86-64 host with AVX2, BMI2, GNU libstdc++ and OpenMP, with assertions enabled. The optional final argument to the executable limits the number of representatives for a shorter run.
+
+```sh
+g++ -O3 -std=c++17 -mavx2 -mbmi2 -mpopcnt -fopenmp research/40_48_affine_exchanges_20261122/qr40_all_shortenings.cpp -o /tmp/qr40-all
+taskset -c 0-126 env OMP_NUM_THREADS=16 /tmp/qr40-all
+```
+
+## Unequal coordinate weights and lifts from 39D
+
+Shortening on nine coordinates gives a length-39, dimension-15 kernel. Put a real height on the fortieth coordinate and normalize each resulting fibre. Taking the original two levels at heights −1 and +1 gives eighteen fibres. Twenty would suffice to beat the current 40D bound with the complete sparse layer. The 21 quarter-integer heights from −2.5 to +2.5 all preserve the sparse layer. Even for an octad through the weighted coordinate, the largest possible unnormalized dot product is at most seven plus the absolute height, and its normalized value is at most one half.
+
+All 32,345 shortening orbits and all nine choices of the marked coordinate were checked. Among the resulting 291,105 marked cases, none allows twenty fibres after removing up to three of the original eighteen and choosing replacements at any of the 21 heights, anywhere in the full syndrome space. For each height one of the two old levels requires Hamming distance at least ten. Its surviving fibres bound the candidate list by translates of the deep syndromes. The program exhausts the compatible extensions for every removal set.
+
+A separate calculation lifts two copies of the 39D construction with 36 sign coordinates and a four-dimensional head. Each copy has eight distinct central heads of length at most two, ten body cosets per central head, and four exceptional fibres. Use the same 4,096-word kernel and allow any relative translation in the full quotient. Of the 16,777,216 translations, all but 64 produce a body difference of Hamming weight at most five that forces at least sixteen disjoint conflicts. At distance six, compatibility requires antipodal heads of length exactly two. For the remaining 64 translations, counting these conflicts by head pair forces at least 34 deletions. This bounds the two-copy model by **152 fibres, or 622,592 dense points**. Its total with the 3,755-octad layer and all 3,120 roots is at most 1,106,352. The argument permits arbitrary orientations of the two head systems. [39D source construction](../../verifications/improved/dim39-qr-three-coordinate-heads/).
+
+```sh
+g++ -O3 -std=c++17 -mavx2 -mbmi2 -mpopcnt -fopenmp research/40_48_affine_exchanges_20261122/qr40_one_coordinate.cpp -o /tmp/qr40-one-coordinate
+taskset -c 0-126 env OMP_NUM_THREADS=16 /tmp/qr40-one-coordinate
+python research/40_48_affine_exchanges_20261122/qr40_double_lift.py
+```
+
+## Norm-eight sections in 47D and 48D
+
+Take a norm-eight vector in an extremal even unimodular lattice of dimension 48. Index projected classes by the inner product with the normal modulo eight. Choosing its representative between −3 and 4 shows that projected squared radius at most six requires only the norm-six and norm-eight shells (apart from the origin). The degree-ten spherical moments give the class populations. The norm-eight parent shell contributes a class of 20,489,368 projected vectors of squared radius six. [Spherical designs of extremal lattices](https://www.mathnet.ru/php/archive.phtml?jrnid=mmj&option_lang=eng&paperid=245&wshow=paper).
+
+Use the minimum squared distance of each difference class to certify pairs of whole families. In the 47D model with all families at zero head, the maximum accepted by this test is 20,876,648. In 48D, allow a one-dimensional head, repeated copies of families at different heights and two possible pure head directions. Constrain the total squared norm before normalization to at most six. The same difference-class test reaches exactly **52,416,000**, attained by the original minimum shell.
+
+To see the 48D limit, a fixed nonzero body of squared radius greater than 4.5 lies at latitude angle less than 30 degrees, so that family can occur only once. The radius-four family admits at most two copies, since two copies on the same side of the equator would be separated by less than 60 degrees. The two radius-six families have zero height and their difference class has squared distance four, so the test excludes their joint selection. Summing the remaining populations, even with both pure head directions, falls short unless the original radius-six core and both radius-four copies are present. With that core, the class-distance test forces each radius-four copy to have total squared norm six. Their heights are then opposite and each excludes the pure head in its direction. These restrictions apply only to complete classes selected by this distance test.
+
+```sh
+python research/40_48_affine_exchanges_20261122/norm_eight_section.py
+```
+
+The complementary search in ranks 41–43 produced three explicit improvements. [Configurations and exact replays](../../verifications/improved/dim41-43-affine-sections/).
+
+## The determinant-128 P48m section in 45D
+
+The published P48m section with normal Gram matrix `[[6,2,2],[2,6,-2],[2,-2,6]]` has 128 discriminant classes. Its three affine families of squared radius 23/4 contain 7,379,838 points at the origin. An additional family can be normalized separately and contributes 12,746 points at squared radius 9/2. The resulting **7,392,584** is the exact maximum for complete projected families of squared radius at most six, with zero heads and compatibility decided by the minimum squared distance of the difference class. The repository's 45D configuration has 7,655,056 points. [Source certificate](https://github.com/wcgbg/sphere-packing/blob/a0bc7f51444e42c3cbae0d2a910039cd50013500/packings_out/records/dim45-kissing7379838/P48m-d914e7d8.cert.txt).
+
+To recover the populations, enumerate the integer triples of inner products with the normal basis. Within each discriminant class the least squared normal length is at most 5/2. An ambient representative for any eligible projected family can therefore be chosen on shell six or eight. The spherical 11-design equations relate the populations in the 68 classes up to sign. The source certificate gives the extra equation needed on shell six. For a harmonic polynomial of degree twelve, the weighted theta series has weight 36 and begins in degree three, so it is a multiple of the modular discriminant cubed. The degree-four coefficient is −72 times the degree-three coefficient. One such equation in normal direction (1,2,4) completes the system on shell eight. The replay solves both systems over the rationals, checks every moment, and searches the resulting graph of 149 families exhaustively. An independent enumeration in the published 45D body Gram matrix returned the predicted populations of 49 and 941,720 at normal inner products (−3,−3,−1).
+
+```sh
+python research/40_48_affine_exchanges_20261122/p48m_45_section.py
+```
+
+## Choosing a scaled D4 in 44D
+
+For seventeen projected families in the complement of a scaled D4, the population is 4,940,961 minus seventy times the sum of three small shell counts. In the previous 4,939,281-point model the sum was 24. Enumerating the 36,848 minimal vectors at inner product three with a fixed minimal vector allowed a search over mutually orthogonal triples within that set. P48m, P48p and P48q all supplied triples for which the three counts vanish. The P48m coordinates give **4,940,961** and require just 1,656 listed vectors to certify the calibrating slice. [Exact construction and population proof](../../verifications/improved/dim44-d4-section/).
+
+Nine additional projected families of squared radius 13/3 pass the class-distance test against sixteen of the seventeen selected families. Each contains 4,488 points and conflicts with one retained family of squared radius five. A matching assigns every one of the **40,392** proposed points a distinct incumbent point at an incompatible angle. Consequently the entire union, even with unrestricted point deletions, has maximum 4,940,961. [Exact matching replay](d4_refill_matching.py) and [integer coordinates](d4_refill_matching.npz).
+
+One-, two- and three-dimensional replacement heads on the new section were also searched on finite grids. The searches found no improvement in 45D–47D within their branch budgets.

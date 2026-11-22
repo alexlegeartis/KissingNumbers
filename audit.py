@@ -817,6 +817,15 @@ _spec.loader.exec_module(_driver)
 for _row in _driver.results():
     add(_row['dimension'], _row['total'], _package, 'verify.py and verify_expanded.py: exact gluing and fresh affine-core enumeration')
 
+for _package, _description in (
+        ('dim41-43-affine-sections', 'verify.py (fresh affine shell counts, exact ranks and integer angle checks)'),
+        ('dim44-d4-section', 'verify.py (exact parent minimum, spherical moments and projected class distances)')):
+    _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'), os.path.join(IMP, _package, 'final.py'))
+    _driver = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(_driver)
+    for _row in _driver.results():
+        add(_row['dimension'], _row['total'], _package, _description)
+
 _package = 'dim40-p48q-affine-refill'
 _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
     os.path.join(IMP, _package, 'final.py'))
@@ -2627,6 +2636,8 @@ if '--write-results' in sys.argv and not fail:
         'dim39-qr-pentapolar': 'QR quotient fibres at five rational heads with exact sparse pruning',
         'dim40-affine-shells': 'affine lattice shells and eight minimum-shell vectors, verified by exact integer products',
         'dim40-affine-centre-refill': 'alternate affine centre and thirteen individual short-shell points',
+        'dim44-d4-section': 'scaled D4 section with exact projected shell populations and class distances',
+        'dim41-43-affine-sections': 'affine body shells with rational heads and fresh counts for every family',
         'dim40-p48q-affine-refill': 'P48q affine core and joint short-layer exchange',
         'dim38-latitude-extension': '24 additional latitude points and an exact rational axis rotation over the Leech caps and Lin equator',
         'dim39-root-replacements': 'four neutral support substitutions and 64-for-56 root replacements over the ERS layers',
@@ -2661,6 +2672,8 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append('22 November 2026 — A scaled D4 in P48m gives 4940961 points in 44D. [Configuration and exact moment proof](verifications/improved/dim44-d4-section/).')
+    out.append('22 November 2026 — Affine shells in the P48q and P48p complements give 1460066 in 41D, 1991475 in 42D and 2921073 in 43D. [Exact replay](verifications/improved/dim41-43-affine-sections/).')
     out.append('22 November 2026 — A joint short-layer exchange in the P48q complement raises 40D to 1126365 (+38 over the P48n construction). [Exact replay](verifications/improved/dim40-p48q-affine-refill/).')
     out.append('22 November 2026 — An alternate affine centre and thirteen individual short-shell points raise 40D to 1126327 (+5). [Exact replays](verifications/improved/dim40-affine-centre-refill/).')
     out.append('22 November 2026 — Coxeter–Todd triangle switches and a three-block phase refill raise 36D to 502902 (+81). [Exact replays](verifications/improved/dim36-ct-triangle-refill/).')

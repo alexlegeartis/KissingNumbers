@@ -25,9 +25,11 @@ def enclosing_form(gram, path, squared_norm):
         diagonal = enclosure["D"].astype(object)
         lower = enclosure["M"].astype(object)
         inverse = enclosure["inverse_times_three"].astype(object)
-    assert 0 < scale < 2**40 and diagonal.shape == (40,) and lower.shape == (40, 40)
-    assert inverse.shape == (40, 40)
-    assert np.array_equal(gram.astype(object) @ inverse, 3 * np.eye(40, dtype=object))
+    rank = len(gram)
+    assert gram.shape == (rank, rank)
+    assert 0 < scale < 2**40 and diagonal.shape == (rank,) and lower.shape == (rank, rank)
+    assert inverse.shape == (rank, rank)
+    assert np.array_equal(gram.astype(object) @ inverse, 3 * np.eye(rank, dtype=object))
     assert np.all(np.diag(lower) == scale) and not np.any(np.triu(lower, 1))
     assert np.all((0 < diagonal) & (diagonal < 2**36)) and np.max(np.abs(lower)) < 2**40
     error = scale**3 * gram.astype(object) - (lower * diagonal) @ lower.T

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "dimension": 44,
+  "points": 4940961,
+  "complete_families": 17,
+  "parent_minimum": 6,
+  "section_points": 1656,
+  "calibration_counts": [
+    0,
+    0,
+    0,
+    134
+  ]
+}

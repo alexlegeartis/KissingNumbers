@@ -195,6 +195,10 @@ Latest 39D: **783,468**. The [three-coordinate QR certificate](verifications/imp
 
 Earlier 39D: **774,972** (up 5,120). The [five-head QR verification](verifications/improved/dim39-qr-pentapolar/) checks the shortened kernel, all fibre distance minima, all sparse supports, and exact sparse–dense angular inequalities.
 
+The 44D verifier checks a 48D Gram matrix, an extremal lattice minimum and a complete 1,656-point section. Spherical moments and exact class distances certify all 4,940,961 projected points. [Witness and replay](verifications/improved/dim44-d4-section/).
+
+The 41D–43D affine-shell verifier reconstructs every family from its Gram matrix and residue. Short-difference enumerations and direct integer products certify the angles. [Witnesses and full replay](verifications/improved/dim41-43-affine-sections/).
+
 The latest 40D result gives **1,126,365** with a joint short-layer exchange in the \(P_{48q}\) complement. The replay proves the lattice minimum, enumerates the 1,084,590-point affine core and checks all remaining unordered pairs. [40D P48q proof](verifications/improved/dim40-p48q-affine-refill/).
 
 The \(P_{48n}\) construction gave **1,126,327** with an alternate affine centre and thirteen individual short-shell points. Its two replays check the gluing geometry and enumerate the affine core. [40D P48n proof](verifications/improved/dim40-affine-centre-refill/).
@@ -302,7 +306,9 @@ not a new mathematical verification. All commands require assertions enabled.
 | 39 | Replay sparse supports and root replacements; check every relative pair of 1,281 dense sign orbits | Bounded integer arithmetic and complete Walsh enumeration |
 | 32–35 | Current 32D 352992 and 33D 370408 configurations reconstructed with independent exact proofs; the 33D audit checks all 2129016 exceptional pairs in two arithmetic representations, every star category, exact source/deltas, rank 33, 500 missing antipodes and 16 controls for each of its final and unpublished intermediate witnesses; retained 32D controls, all historical proofs and exact 34–35D head/root replays, including the 415336-point 35D construction | Python 3.10+ and NumPy; no search or unverified population input |
 | 36–37 | Fresh exact source replay and independent reconstruction of all retained base switches; every added/retained phase and latitude interaction, plus malformed-proof controls | Python 3.9+, NumPy and SymPy; no unverified parent population |
-| 41–46 | Exact head ranks and angles; two independent 43D tiny-layer replays; explicit tiny bodies and added medium classes | Complete-family population identities and tables are inherited; the latest large shells have not all been freshly enumerated |
+| 41–43 | Fresh counts, head ranks and integer angle checks | Gram matrices and explicit head coordinates supplied |
+| 44 | Exact parent minimum, class distances and shell counts by spherical moments | Gram matrix, normals and a complete pair section supplied |
+| 45–46 | Exact head ranks and angles, including the added 45D medium classes | Complete-family population identities and tables are inherited; the latest large shells have not all been freshly enumerated |
 | 49–60 | All 7,387 base lines, 577 integral isometries, 3,901,694 distinct lines and cap directions | Published parent lattice minimum/shell size; the 12D Coxeter–Todd direction count is a literature input |
 | 61–67 | Fresh exact compatible-support, sign-family and code replays; direct retained parent-support pairs, exact section/compression geometry and controls | NumPy and C++17 g++; the unchanged auxiliary layer constructions are replayed locally |
 | 68–69 | Two independent exact D7 population and D4 geometry proofs; complete 162,969-profile domain, rational duals, integer ceiling and two 69D poles | Published Gamma72 minimum, shell population and spherical 11-design; no ambient shell enumeration |

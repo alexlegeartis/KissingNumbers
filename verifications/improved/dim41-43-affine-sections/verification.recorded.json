@@ -1,0 +1,38 @@
+[
+  {
+    "status": "PASS",
+    "dimension": 41,
+    "points": 1460066,
+    "complete_families": 151,
+    "recounted_body_points": 1460064,
+    "explicit_tiny": 0,
+    "pure_heads": 2,
+    "distinct_shell_enumerations": 3561,
+    "difference_vectors_in_refinements": 0,
+    "explicit_tiny_pairs": 0
+  },
+  {
+    "status": "PASS",
+    "dimension": 42,
+    "points": 1991475,
+    "complete_families": 184,
+    "recounted_body_points": 1991469,
+    "explicit_tiny": 0,
+    "pure_heads": 6,
+    "distinct_shell_enumerations": 4013,
+    "difference_vectors_in_refinements": 0,
+    "explicit_tiny_pairs": 0
+  },
+  {
+    "status": "PASS",
+    "dimension": 43,
+    "points": 2921073,
+    "complete_families": 119,
+    "recounted_body_points": 2917905,
+    "explicit_tiny": 3165,
+    "pure_heads": 3,
+    "distinct_shell_enumerations": 4286,
+    "difference_vectors_in_refinements": 78,
+    "explicit_tiny_pairs": 5007030
+  }
+]

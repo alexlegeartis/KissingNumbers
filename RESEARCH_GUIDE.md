@@ -96,13 +96,14 @@ proves 501 813 points in 36D by exact short-shell enumeration, individual
 base-triangle switches and joint equatorial refill, then reaches 505 629 in 37D
 while retaining all latitude orbits. Two independent coordinate proofs check every
 affected pair category. The
-[P48n family/head package](verifications/improved/dim41-46-p48-heads/) now supplies
-all six 41–46D constructions. The 43D partial-family certificate checks 3 450 explicit
-tiny points; the latest 45D certificate retains 2 187 complete families and 16 pure
-heads. Their integer angles and exact head dimensions replay, with complete-family
-populations inherited from the documented identities. The older missing 43D writeup
-certificate is historical and is not needed for the current construction. No October
-improvement is claimed in 47D or 48D.
+[P48n family/head package](verifications/improved/dim41-46-p48-heads/) supplies
+the six October 41–46D constructions. In October the 43D certificate checked 3 450 individual small-body points, and the 45D construction used 2 187 complete families and 16 pure heads. The October angle checks use the documented population identities.
+
+The November 41D and 42D constructions use P48q, and the 43D construction uses P48p. Their exact replays count every complete affine family from the Gram matrix and check all angular constraints. The 43D witness contains 3 165 individual small-body points. [Configurations and verification](verifications/improved/dim41-43-affine-sections/).
+
+The 44D construction takes seventeen complete projected shells in the complement of a scaled D4 in P48m. The choice of normal vectors gives three empty projected shells of squared radius three. The resulting count is **4 940 961**. [Coordinates and moment proof](verifications/improved/dim44-d4-section/).
+
+In 40D the distance-ten binary search covers all 7 497 quadratic-residue shortening types. Any three intact standard translates already limit an otherwise unrestricted binary sign layer to 589 824 words. In 45D the determinant-128 P48m section reaches 7 392 584 under the complete-family distance test. [Research calculations](research/40_48_affine_exchanges_20261122/).
 
 <details>
 <summary>Detailed construction notes</summary>
@@ -198,7 +199,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 173 packages, 70 dimensions
+### `verifications/improved/` — 175 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -290,7 +291,7 @@ in the package history; the new latitude layer uses partial three-point orbits.
 use a rank-40 complement of sqrt(3) E8 in P48n, with heads in one to six dimensions.
 Each family is normalized separately, so families can have different original lengths.
 Joint class replacements and head motions admit additional complete or partial families;
-zero-body points in the existing head span give the latest 41D, 42D, 45D and 46D
+zero-body points in the existing head span give the October 41D, 42D, 45D and 46D
 extensions. The supplied 43D construction replaces its tiny layer with 3 447 explicit
 body/head pairs, while coordinated 45D motion admits further complete families.
 Exact checks, population assumptions and fresh
@@ -412,7 +413,7 @@ remain tied to its earlier registry scope until the deferred paper update.
 python run_all.py          # 256 scripts, including exact certificate replays
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 277 scripts: adds the all-pairs sweep, the
+python run_all.py --full   # 279 scripts: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay
@@ -454,7 +455,9 @@ Or individually, each from its own directory:
 | `.../dim61-67-compatible-sign-families/verify.py` | fresh exact compatible-support, sign-family, code and layer checks for 61–67D | ~1 min |
 | `.../dim68-69-gamma72-extended-moments/verify.py --enumerate` and `verify_independent.py` | two exact D7 population and geometry proofs: 471 886 208 in 68D and 746 325 051 in 69D | ~15 s |
 | `.../dim36-37-coxeter-todd/verify.py` | exact 501 813-point 36D construction and 505 629-point 37D extension, two coordinate proofs | ~3 min |
-| `.../dim41-46-p48-heads/verify.py` | current 41–46D totals, partial 43D points and coordinated 45D; inherited populations | ~30 s |
+| `.../dim44-d4-section/verify.py` | 44D lattice minimum, shell moments and angle checks | several minutes |
+| `.../dim41-43-affine-sections/verify.py` | 41–43D shell counts and angles from integral coordinates | several minutes |
+| `.../dim41-46-p48-heads/verify.py` | earlier 41–44D configurations and current 45–46D configurations with inherited populations | ~30 s |
 | `…/dim46-47-p48-cross-sections/derive.py`                                     | recovers 12 309 600 and 23 766 960, claiming neither           | 6 s    |
 | `…/dim49-63-p48-caps/verify.py` + `final.py`                                  |  the P₄₈ lattice, class, and fifteen numbers                    | 3 s    |
 | `…/dim49-63-p48-caps/scripts/regenerate.py`                                   | rebuilds and re-verifies all 1400 disjoint classes             | 15 min |

@@ -10,7 +10,15 @@
 
 using Integer = __int128_t;
 using Unsigned = __uint128_t;
-constexpr int dimension = 40;
+#ifndef KN_SHELL_RANK
+#define KN_SHELL_RANK 40
+#endif
+#ifndef KN_RESIDUE_MODULUS
+#define KN_RESIDUE_MODULUS 3
+#endif
+constexpr int dimension = KN_SHELL_RANK;
+constexpr int modulus = KN_RESIDUE_MODULUS;
+static_assert(dimension > 0 && modulus > 0);
 using Row = std::array<int64_t, dimension>;
 using Matrix = std::array<Row, dimension>;
 
@@ -42,6 +50,8 @@ class Enumeration {
     Integer radius = 0;
     std::ostream& output;
     const std::vector<int64_t>& prefix;
+    const int64_t target_norm;
+    const bool through;
     uint64_t count = 0;
 
     void visit(int k, Integer remaining) {
@@ -50,7 +60,7 @@ class Enumeration {
             for (int i = 0; i < dimension; ++i)
                 for (int j = 0; j < dimension; ++j)
                     norm += Integer{point[i]} * gram[i][j] * point[j];
-            if (norm == 54) {
+            if (norm == target_norm || (through && norm > 0 && norm < target_norm)) {
                 std::array<int8_t, dimension> bytes{};
                 for (int i = 0; i < dimension; ++i) {
                     assert(point[i] >= -127 && point[i] <= 127);
@@ -71,15 +81,15 @@ class Enumeration {
         assert(limit < (int64_t{1} << 60));
         int64_t lo = -floor_divide(limit + shift, scale);
         int64_t hi = floor_divide(limit - shift, scale);
-        lo += ((residue[k] - lo) % 3 + 3) % 3;
+        lo += ((residue[k] - lo) % modulus + modulus) % modulus;
         assert(lo > -(int64_t{1} << 20) && hi < (int64_t{1} << 20));
         const auto index = static_cast<size_t>(dimension - 1 - k);
         if (index < prefix.size()) {
             const int64_t value = prefix[index];
-            if (value < lo || value > hi || (value - lo) % 3 != 0) return;
+            if (value < lo || value > hi || (value - lo) % modulus != 0) return;
             lo = hi = value;
         }
-        for (int64_t value = lo; value <= hi; value += 3) {
+        for (int64_t value = lo; value <= hi; value += modulus) {
             point[k] = value;
             const Integer offset = Integer{scale} * value + shift;
             assert(offset > -(Integer{1} << 44) && offset < (Integer{1} << 44));
@@ -91,7 +101,8 @@ class Enumeration {
 
 public:
     Enumeration(std::istream& input, std::ostream& output,
-                const std::vector<int64_t>& prefix) : output(output), prefix(prefix) {
+                const std::vector<int64_t>& prefix, int64_t target_norm, bool through)
+                : output(output), prefix(prefix), target_norm(target_norm), through(through) {
         std::string text;
         input >> scale >> text;
         assert(scale > 0 && scale < (int64_t{1} << 40));
@@ -122,11 +133,19 @@ public:
 };
 
 int main(int argc, char** argv) {
-    if (argc < 3 || argc > dimension + 3) return 1;
+    if (argc < 3) return 1;
     std::ifstream input(argv[1]);
     std::ofstream output(argv[2], std::ios::binary);
     if (!input || !output) return 2;
     std::vector<int64_t> prefix;
-    for (int i = 3; i < argc; ++i) prefix.push_back(std::stoll(argv[i]));
-    std::cout << Enumeration(input, output, prefix).run() << '\n';
+    int first = 3;
+    int64_t target_norm = 54;
+    const bool through = argc >= 5 && std::string(argv[3]) == "--through";
+    if (argc >= 5 && (through || std::string(argv[3]) == "--norm")) {
+        target_norm = std::stoll(argv[4]);
+        first = 5;
+    }
+    if (target_norm < 1 || argc - first > dimension) return 1;
+    for (int i = first; i < argc; ++i) prefix.push_back(std::stoll(argv[i]));
+    std::cout << Enumeration(input, output, prefix, target_norm, through).run() << '\n';
 }

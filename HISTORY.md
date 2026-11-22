@@ -11,6 +11,10 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 22 November)</summary>
 
+**22 November 2026.** A scaled D4 section of P48m raises 44D to **4,940,961** (+1,680). Choosing four normals makes three small projected shells empty and increases the count in the seventeen selected families. [Certificate and proof](verifications/improved/dim44-d4-section/).
+
+**22 November 2026.** Changing the body lattice and its affine classes gives **1,460,066 in 41D** (+30), **1,991,475 in 42D** (+30) and **2,921,073 in 43D** (+1,270). Each complete family has a fresh integer shell count. [Certificates and replay](verifications/improved/dim41-43-affine-sections/).
+
 **22 November 2026 — 62D partial nonary refill.** An exact sign exchange adds 1,914 and retires 971 old rays, producing **126,571,579** (+943). [Proof and replay](verifications/improved/dim62-partial-nonary-refill/).
 
 **22 November 2026 — 71D single-block refill.** Keeping the entire norm-ten slice, a Leech-block exchange adds 81,952 rays and removes 4,600, giving **2,623,656,288** (+77,352). [Exact proof and replay](verifications/improved/dim71-gamma72-single-block-refill/).
