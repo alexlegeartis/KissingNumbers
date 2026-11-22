@@ -1,0 +1,102 @@
+[
+  {
+    "dimension": 73,
+    "count": 6218449010,
+    "contacts_by_vertical_norm": {
+      "2": 273408,
+      "4": 0,
+      "6": 0,
+      "8": 2
+    }
+  },
+  {
+    "dimension": 74,
+    "count": 6218995830,
+    "contacts_by_vertical_norm": {
+      "2": 820224,
+      "4": 0,
+      "6": 0,
+      "8": 6
+    }
+  },
+  {
+    "dimension": 75,
+    "count": 6219816924,
+    "contacts_by_vertical_norm": {
+      "2": 1640448,
+      "4": 864,
+      "6": 0,
+      "8": 12
+    }
+  },
+  {
+    "dimension": 76,
+    "count": 6221459976,
+    "contacts_by_vertical_norm": {
+      "2": 3280896,
+      "4": 3456,
+      "6": 0,
+      "8": 24
+    }
+  },
+  {
+    "dimension": 77,
+    "count": 6221737226,
+    "contacts_by_vertical_norm": {
+      "2": 3554304,
+      "4": 7296,
+      "6": 0,
+      "8": 26
+    }
+  },
+  {
+    "dimension": 78,
+    "count": 6222291726,
+    "contacts_by_vertical_norm": {
+      "2": 4101120,
+      "4": 14976,
+      "6": 0,
+      "8": 30
+    }
+  },
+  {
+    "dimension": 79,
+    "count": 6223124388,
+    "contacts_by_vertical_norm": {
+      "2": 4921344,
+      "4": 27360,
+      "6": 0,
+      "8": 84
+    }
+  },
+  {
+    "dimension": 80,
+    "count": 6224790624,
+    "contacts_by_vertical_norm": {
+      "2": 6561792,
+      "4": 52992,
+      "6": 0,
+      "8": 240
+    }
+  },
+  {
+    "dimension": 81,
+    "count": 6225064194,
+    "contacts_by_vertical_norm": {
+      "2": 6835200,
+      "4": 53152,
+      "6": 0,
+      "8": 242
+    }
+  },
+  {
+    "dimension": 82,
+    "count": 6225611462,
+    "contacts_by_vertical_norm": {
+      "2": 7382016,
+      "4": 53600,
+      "6": 0,
+      "8": 246
+    }
+  }
+]

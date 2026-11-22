@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 251 scripts, including large exact certificate replays
-    python run_all.py --full       # 270 scripts
+    python run_all.py              # 252 scripts, including large exact certificate replays
+    python run_all.py --full       # 271 scripts
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -175,6 +175,7 @@ JOBS = [
     ('dim94-95-mixed-tetrad-axis-sign-fibres: mixed-tetrad axis and sign fibres in 94–95D', os.path.join(V, 'improved', 'dim94-95-mixed-tetrad-axis-sign-fibres'), ['verify.py'], 0.5, True),
     ('dim91-93-complementary-parity-steiner-append: complementary parity Steiner append in 91–93D', os.path.join(V, 'improved', 'dim91-93-complementary-parity-steiner-append'), ['verify.py'], 0.5, True),
     ('dim91-93-nonsteiner-triality-append: non-Steiner triality append in 91–93D', os.path.join(V, 'improved', 'dim91-93-nonsteiner-triality-append'), ['verify.py'], 0.5, True),
+    ('dim73-82-gamma72-depth6-lattice: explicit lattice shell and exact theta', os.path.join(V, 'improved', 'dim73-82-gamma72-depth6-lattice'), ['verify.py'], 30.0, True),
     ('dim93-z8-split-d5-heads: 46 full Z8 fibres and roots', os.path.join(V, 'improved', 'dim93-z8-split-d5-heads'), ['verify.py'], 0.5, True),
     ('dim94-96-hexary-parity-packing: Complementary parity six-row packings', os.path.join(V, 'improved', 'dim94-96-hexary-parity-packing'), ['verify.py'], 6.0, True),
     ('dim65-dg-dense-owners: Delsarte–Goethals dense owners', os.path.join(V, 'improved', 'dim65-dg-dense-owners'), ['verify.py'], 7.0, True),
@@ -628,6 +629,7 @@ def _sota_jobs(quick=False):
         ('dim94-95-mixed-tetrad-axis-sign-fibres', ('verify.py',)),
         ('dim91-93-complementary-parity-steiner-append', ('verify.py',)),
         ('dim91-93-nonsteiner-triality-append', ('verify.py',)),
+        ('dim73-82-gamma72-depth6-lattice', ('verify.py',)),
         ('dim93-z8-split-d5-heads', ('verify.py',)),
         ('dim94-96-hexary-parity-packing', ('verify.py',)),
         ('dim65-dg-dense-owners', ('verify.py',)),
@@ -866,6 +868,7 @@ def _sota_coverage(jobs, results=None):
         ('dim94-95-mixed-tetrad-axis-sign-fibres', [94,95], [('verify.py',)], 'exact mixed-tetrad axis and sign fibres in 94–95D'),
         ('dim91-93-complementary-parity-steiner-append', [91,92,93], [('verify.py',)], 'exact complementary parity Steiner append in 91–93D'),
         ('dim91-93-nonsteiner-triality-append', [91,92,93], [('verify.py',)], 'exact non-Steiner triality append in 91–93D'),
+        ('dim73-82-gamma72-depth6-lattice', list(range(73, 83)), [('verify.py',)], 'explicit depth-six lattice with exact contact count'),
         ('dim93-z8-split-d5-heads', [93], [('verify.py',)], '46 full Z8 fibres with bipartite D5 heads and new roots'),
         ('dim94-96-hexary-parity-packing', [94,95,96], [('verify.py',)], 'exact construction replay'),
         ('dim65-dg-dense-owners', [65], [('verify.py',)], 'exact delsarte–goethals dense owners'),

@@ -1,5 +1,7 @@
 # Results
 
+**22 November 2026 — Depth-six Γ72 lattices.** Exact shortest shells of explicit Leech-block lifts raise **all ten 73–82D bounds**, with a largest increment of **3,028,346** in 80D (to **6,224,790,624**). Each root-height layer has exactly 136,704 horizontal contacts. [Proof and exact replay](verifications/improved/dim73-82-gamma72-depth6-lattice/).
+
 22 November 2026: exact harmonic-theta constraints on joint shell profiles give twelve stronger existence lower bounds in 74–85D. The largest gain is 7,405,724 in 85D, reaching 6,235,824,404. [Exact replay](verifications/improved/dim74-85-gamma72-harmonic-latitudes/).
 
 22 November 2026: fourteen non-Steiner triality modes append another 14,336 rays each in 91D, 92D, and 93D. [Exact replay](verifications/improved/dim91-93-nonsteiner-triality-append/).
@@ -244,16 +246,16 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 142 400** | 4.10 | `heads` | [Alternate Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-alternate-a2-normals/) |
 | 71 | 331 737 984 | **2 623 578 936** | 7.91 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
-| 73 | 6 218 175 602 | **6 218 206 932** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
-| 74 | 6 218 175 606 | **6 218 213 549** | 1.00 | `cosets` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
-| 75 | 6 218 175 612 | **6 218 331 159** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
-| 76 | 6 218 175 624 | **6 218 635 448** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
-| 77 | 6 218 175 640 | **6 219 013 264** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
-| 78 | 6 218 175 672 | **6 219 716 626** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
-| 79 | 6 218 175 726 | **6 220 590 652** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
-| 80 | 6 218 175 840 | **6 221 713 348** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
-| 81 | 6 218 175 906 | **6 222 197 896** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
-| 82 | 6 218 176 110 | **6 224 427 690** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
+| 73 | 6 218 175 602 | **6 218 449 010** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
+| 74 | 6 218 175 606 | **6 218 995 830** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
+| 75 | 6 218 175 612 | **6 219 816 924** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
+| 76 | 6 218 175 624 | **6 221 459 976** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
+| 77 | 6 218 175 640 | **6 221 737 226** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
+| 78 | 6 218 175 672 | **6 222 291 726** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
+| 79 | 6 218 175 726 | **6 223 124 388** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
+| 80 | 6 218 175 840 | **6 224 790 624** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
+| 81 | 6 218 175 906 | **6 225 064 194** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
+| 82 | 6 218 176 110 | **6 225 611 462** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 83 | 6 218 176 204 | **6 227 374 552** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
 | 84 | 6 218 176 441 | **6 231 140 058** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
 | 85 | 6 218 176 754 | **6 235 824 404** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |

@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 22 November)</summary>
 
+**22 November 2026 — Depth-six Γ72 lattices.** Exact shortest shells of explicit Leech-block lifts raise **all ten 73–82D bounds**, with a largest increment of **3,028,346** in 80D (to **6,224,790,624**). Each root-height layer has exactly 136,704 horizontal contacts. [Proof and exact replay](verifications/improved/dim73-82-gamma72-depth6-lattice/).
+
 **22 November 2026 — Full Pless census and new chord marks.** Reassigning four chord coordinates raises the sparse layer by **569,772** points for an **88D lower bound of 13,358,363,692**. The dense and small layers retain their counts under the new coordinate assignment. [Exact proof and replay](verifications/improved/dim88-full-pless-chord-marks/).
 
 **22 November 2026 — Finer exact Γ72 recurrence.** Smaller blocks in the graph independence proof strengthen the same Γ72 construction in all twelve dimensions 74–85, with **6,235,993,850** in 85D (+138,200). [Exact replay](verifications/improved/dim74-85-gamma72-fine-recurrence/).

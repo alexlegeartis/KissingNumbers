@@ -735,6 +735,10 @@ with io.open(os.path.join(IMP, 'dim74-85-gamma72-rooted-exchange', 'results.json
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim74-85-gamma72-rooted-exchange', 'verify.py: exact rooted shell profile exchange and rational graph certificate')
 
+with io.open(os.path.join(IMP, 'dim73-82-gamma72-depth6-lattice', 'comparisons.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim73-82-gamma72-depth6-lattice', 'verify.py: explicit depth-six lattice and exact shortest shell')
+
 with io.open(os.path.join(IMP, 'dim74-85-gamma72-fine-recurrence', 'results.json'), encoding='utf-8') as _file:
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim74-85-gamma72-fine-recurrence', 'verify.py: finer exact rooted graph recurrence')
