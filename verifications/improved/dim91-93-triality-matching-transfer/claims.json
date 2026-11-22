@@ -1,0 +1,34 @@
+{
+  "claims": [
+    {
+      "dimension": 91,
+      "previous": 25917421568,
+      "lower_bound": 25922303504,
+      "gain": 4881936
+    },
+    {
+      "dimension": 92,
+      "previous": 34507356160,
+      "lower_bound": 34512238096,
+      "gain": 4881936
+    },
+    {
+      "dimension": 93,
+      "previous": 47392258048,
+      "lower_bound": 47397139984,
+      "gain": 4881936
+    }
+  ],
+  "old_flat_retained": 131072,
+  "unconditional_axial_modes": 385,
+  "flat_modes": 696,
+  "ordinary_roots": 528,
+  "matching_patterns": {
+    "5": 2,
+    "6": 850,
+    "7": 3,
+    "8": 61
+  },
+  "new_triality_and_roots": 1107472,
+  "new_matching": 6256640
+}
