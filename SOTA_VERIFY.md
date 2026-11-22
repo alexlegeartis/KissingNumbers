@@ -8,6 +8,8 @@ The [Marked caps and nine-support refill](verifications/improved/dim61-62-marked
 
 The [Balanced signed nine-support refill](verifications/improved/dim63-balanced-nine-refill/) replays with `python verifications/improved/dim63-balanced-nine-refill/verify.py`.
 
+The [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/) improves 63–67D. Run `node verifications/improved/dim63-67-gf8-norm-poles/verify.cjs` for exact checks of the exterior cosets, the 63D section, and the new vectors.
+
 The [signed Netto trades](verifications/improved/dim66-67-netto-signed-trades/) refine the 66D and 67D results to **342,389,574** and **355,195,404**, with exact nine-support phase and signed-triple checks.
 
 The [exterior BCH cap bodies](verifications/improved/dim65-67-bch-exterior-caps/) raise 65D to **336,256,796**, 66D to **342,389,558**, and 67D to **355,195,391**. Replay `python verifications/improved/dim65-67-bch-exterior-caps/verify.py`; the optional Node checker establishes the scoped fixed-cap no-append result in 65D.

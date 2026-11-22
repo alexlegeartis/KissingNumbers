@@ -1,0 +1,7 @@
+{"dimensions":[
+ {"dimension":63,"previous":184426297,"replaced":112,"inserted":896,"gain":784,"lower_bound":184427081},
+ {"dimension":64,"previous":335795354,"replaced":128,"inserted":1024,"gain":896,"lower_bound":335796250},
+ {"dimension":65,"previous":336256796,"replaced":128,"inserted":1024,"gain":896,"lower_bound":336257692},
+ {"dimension":66,"previous":342389574,"replaced":128,"inserted":1024,"gain":896,"lower_bound":342390470},
+ {"dimension":67,"previous":355195404,"replaced":128,"inserted":1024,"gain":896,"lower_bound":355196300}
+]}

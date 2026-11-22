@@ -17,6 +17,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **21 November 2026 — re-marking and Steiner squares.** [A refined Pless repacking](verifications/improved/dim86-87-remarked-square/) further raises 86D to **8,008,545,838** and 87D to **8,160,981,972**, with 2,223 square supports in each dimension.
 
+**22 November 2026 — GF(8) norm pole replacement.** The ordinary-coordinate pole replacement adds 784 in 63D and 896 in each of 64–67D. [Exact replay](verifications/improved/dim63-67-gf8-norm-poles/).
+
 **22 November 2026 — Stronger matching-row inner code.** **15,184,866,834** in 89D (+783,360), using the Laaksonen–Östergård 352-word eight-coordinate code and an enlarged mixed pattern list. [Exact replay](verifications/improved/dim89-mixed-matching-rows/).
 
 **22 November 2026 — Mixed matching-row codes.** **15,184,083,474** in 89D (+4,624,384), replacing the 865 five-row families with 916 mixed five- through eight-row patterns. [Exact replay](verifications/improved/dim89-mixed-matching-rows/).

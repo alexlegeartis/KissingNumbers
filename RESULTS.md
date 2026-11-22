@@ -8,6 +8,8 @@
 
 22 November 2026: signed plane and row designs add 24268 in 88D and 2069008 in 89D. [Exact replay](verifications/improved/dim88-89-signed-row-designs/).
 
+22 November 2026: GF(8) norm pole replacement adds 784 in 63D and 896 per dimension in 64–67D. [Exact replay](verifications/improved/dim63-67-gf8-norm-poles/).
+
 22 November 2026: signed Netto trades improve 66D by 16 and 67D by 13. [Exact replay](verifications/improved/dim66-67-netto-signed-trades/).
 
 22 November 2026: a distance-22 BCH cap and exterior translates raise 65–67D to 336256796, 342389558 and 355195391. [Exact replay](verifications/improved/dim65-67-bch-exterior-caps/).
@@ -167,11 +169,11 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 60 | 52 416 841 | **58 631 571** | 1.12 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
 | 61 | 52 417 154 | **89 082 322** | 1.70 | `codes` | [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/)
 | 62 | 52 417 932 | **122 668 916** | 2.34 | `codes` | [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/)
-| 63 | 52 418 564 | **184 426 297** | 3.52 | `codes` | [Balanced signed nine-support refill](verifications/improved/dim63-balanced-nine-refill/)
-| 64 | 331 737 984 | **335 795 354** | 1.01 | `codes` | [Partial signed nine-support fibers](verifications/improved/dim64-65-partial-nonary-signs/) 
-| 65 | 331 737 986 | **336 256 796** | 1.01 | `codes` | [Exterior BCH cap bodies](verifications/improved/dim65-67-bch-exterior-caps/)
-| 66 | 331 737 990 | **342 389 574** | 1.03 | `codes` | [Signed Netto trades](verifications/improved/dim66-67-netto-signed-trades/)
-| 67 | 331 737 996 | **355 195 404** | 1.07 | `codes` | [Signed Netto trades](verifications/improved/dim66-67-netto-signed-trades/) |
+| 63 | 52 418 564 | **184 427 081** | 3.52 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/)
+| 64 | 331 737 984 | **335 796 250** | 1.01 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/) 
+| 65 | 331 737 986 | **336 257 692** | 1.01 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/)
+| 66 | 331 737 990 | **342 390 470** | 1.03 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/)
+| 67 | 331 737 996 | **355 196 300** | 1.07 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/) |
 | 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 137 216** | 4.10 | `heads` | [A2 normal fibers of Gamma72](verifications/improved/dim70-gamma72-a2-fibers/) |
