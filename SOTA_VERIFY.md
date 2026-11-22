@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+22 November 2026 — Eighty cubic cosets of RM(2,6) give 335,544,320 dense signs and improve all dimensions 62–67. The 64D lower bound is **402,819,968** (+67,021,024), and the 67D lower bound is **422,204,310**. [Exact replay](verifications/improved/dim62-67-rm2-cubic-cosets/).
+
 22 November 2026 — The signed-owner replay corrects the 60D bound to **58,664,184** (+462 over 58,663,722), with 231 compatible ray pairs and no blockers. [Exact replay and correction](verifications/improved/dim60-p48-n12-blockers/).
 
 22 November 2026 — Global owner migration and a second refill improve 50–60D. The 60D construction reaches 58,663,722, combining exact owner changes with the 16-head sign cube and nested tetrahedral palettes. [Exact replay](verifications/improved/dim50-60-p48-global-owner-refill/).

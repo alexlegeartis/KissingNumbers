@@ -838,6 +838,10 @@ _spec.loader.exec_module(_driver)
 for _row in _driver.results():
     add(_row['dimension'], _row['total'], _package, 'verify.py: fresh lattice and core enumeration with exact cross-layer pairs')
 
+with io.open(os.path.join(IMP, 'dim62-67-rm2-cubic-cosets', 'transfer.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim62-67-rm2-cubic-cosets', 'verify.py: exact cubic coset distance and inherited sparse-layer geometry')
+
 with io.open(os.path.join(IMP, 'dim60-p48-n12-blockers', 'claims.json'), encoding='utf-8') as _file:
     _row = json.load(_file)
     add(_row['dimension'], _row['lower_bound'], 'dim60-p48-n12-blockers', 'verify.py and audit_angles.py: exact paired latitude and conservative blocker union')
@@ -2669,6 +2673,7 @@ if '--write-results' in sys.argv and not fail:
         'dim50-59-p48-joint-transport': 'transported signed P48 trades with exact pair and ownership checks',
         'dim50-60-p48-global-owner-refill': 'global P48 owner exchanges and exact tetrahedral tail geometry',
         'dim60-p48-n12-blockers': 'matched norm-12 layer with exact shared-blocker accounting',
+        'dim62-67-rm2-cubic-cosets': 'Eighty cubic cosets with exact sparse transfer',
         'dim54-60-p48-tail-antipodes': 'complementary tail directions above signed P48 with exact ownership and angles',
         'dim49-60-p48-signed-refill': 'signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification',
         'dim54-59-p48-coverage': 'joint maximum-coverage selections of existing P48 class images; exact tails, isometries and full-coordinate ownership replay',
@@ -2691,6 +2696,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append("22 November 2026 — Eighty cubic cosets of RM(2,6) give 335,544,320 dense signs and improve all dimensions 62–67. The 64D lower bound is **402,819,968** (+67,021,024), and the 67D lower bound is **422,204,310**. [Exact replay](verifications/improved/dim62-67-rm2-cubic-cosets/).")
     out.append("22 November 2026 — The signed-owner replay corrects the 60D bound to **58,664,184** (+462 over 58,663,722), with 231 compatible ray pairs and no blockers. [Exact replay and correction](verifications/improved/dim60-p48-n12-blockers/).")
     out.append("22 November 2026 — Global owner migration and a second refill improve 50–60D. The 60D construction reaches 58,663,722, combining exact owner changes with the 16-head sign cube and nested tetrahedral palettes. [Exact replay](verifications/improved/dim50-60-p48-global-owner-refill/).")
     out.append("22 November 2026 — New signed-head exchanges and complementary tail directions improve every dimension from 49D through 60D. [Transport proof](verifications/improved/dim50-59-p48-joint-transport/). [Tail proof and replay](verifications/improved/dim54-60-p48-tail-antipodes/) · [49D proof](verifications/improved/dim49-joint-signed-exchange/).")

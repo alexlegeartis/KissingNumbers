@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "dimension": 63,
+  "coordinate_pair": [
+    2,
+    41
+  ],
+  "dense": 167772160,
+  "sparse": 39591936,
+  "quadruple": 146568,
+  "poles": 124,
+  "total": 207510788
+}
