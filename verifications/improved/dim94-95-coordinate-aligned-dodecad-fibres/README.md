@@ -2,12 +2,12 @@
 
 | Dimension | Previous lower bound | Net gain | New lower bound |
 |---:|---:|---:|---:|
-| 94 | 74,143,250,508 | 3,663,872 | **74,146,914,380** |
-| 95 | 117,092,923,844 | 3,663,872 | **117,096,587,716** |
+| 94 | 74,143,250,508 | 3,926,712 | **74,147,177,220** |
+| 95 | 117,092,923,844 | 3,926,712 | **117,096,850,556** |
 
 This construction retains the entire post–Reed–Solomon stock of
 74,142,198,284 and 117,091,871,620 points, respectively. It **replaces** the
-previous 1,052,224-point adapted dodecad append by a larger 4,716,096-point
+previous 1,052,224-point adapted dodecad append by a larger 4,978,936-point
 append. The two dodecad layers are not added together.
 
 The geometry and old interfaces are the same as in the
@@ -31,15 +31,23 @@ the old slot labels on one eight-row interface makes that projected
 code identical; now translating it can move an entire fibre into a
 favorable projection coset. Different assignments are scored by the
 number of admissible sign words, not merely by the number of axes.
-Finally select collectively compatible fibres in the exact sign-overlap
-graph. The optimizer does not enter the verification.
+We also allow invertible binary relabelings of the two-bit axes on
+individual rows. After choosing whole sign fibres, keep every compatible
+sign in discarded fibres. Further exchanges work one axis at a time:
+the exact conflict graph between its unused signs and their selected
+blockers is bipartite, so a maximum matching finds the best local exchange.
+The resulting append is 262,840 larger than the initial coordinate-aligned
+version. No claim of global optimality is made. No search procedure enters
+the verifier.
 
 Run `python3 verify.py` with assertions enabled. The base64/zlib witness
 stores the actual geometry, packed axis words and adapted sign syndromes.
 Its little-endian schema is a 16-bit geometry count followed by records
-`(uint32 mask, uint8 tag, uint16 axis_count, uint32 words[])`. The lower
+`(uint32 mask, uint8 tag, uint16 axis_count, axis records[])`. The lower
 24 word bits are the twelve two-bit axis labels in increasing physical
-row order; bits 24–27 specify the adapted sign syndrome. The verifier
+row order; bits 24–27 specify the adapted sign syndrome. Bit 28 indicates a trim, encoded just
+after that word as a one-byte byte count followed by a little-endian
+selection mask in ascending sign order. The verifier
 decodes all signs, checks every active old and new overlap, preserves the
 85 earlier short matching modes by the squared geometric cap, and
 recomputes both lower bounds with integer arithmetic.

@@ -123,9 +123,19 @@ def decode():
         m,t,n = unpack_from('<IBH',z,at)
         at += 7
         assert 0<m<1<<24 and t in (1,2,3) and n>0 and PC(m)==12
-        W = unpack_from('<'+'I'*n,z,at)
-        at += 4*n
-        assert len({x&0xffffff for x in W})==n and all(0<=x<1<<28 for x in W)
+        W = []
+        for _ in range(n):
+            w, = unpack_from('<I',z,at)
+            at += 4
+            assert w < (1<<29)
+            mask = None
+            if w & (1<<28):
+                k, = unpack_from('<B',z,at)
+                assert k > 0 and at+1+k <= len(z)
+                mask = z[at+1:at+1+k]
+                at += 1+k
+            W.append((w & ((1<<28)-1), mask))
+        assert len({w&0xffffff for w,_ in W}) == n
         yield (m if t&1 else 0),(m if t&2 else 0),W
     assert at == len(z)
 
@@ -265,7 +275,17 @@ def main():
             neighbors.append((tuple(I.index(k)for k in common),tuple(J.index(k)for k in common)))
         assert len(neighbors) in (3,4,5)
         old_pairs+=len(neighbors)
-        words=[(w&0xffffff,allowed_signs(w&0xffffff,w>>24,neighbors)) for w in W]
+        words=[]
+        for w, mask in W:
+            axis=w&0xffffff
+            signs=allowed_signs(axis,w>>24,neighbors)
+            if mask is not None:
+                assert len(mask)==(len(signs)+7)//8
+                chosen=int.from_bytes(mask,'little')
+                assert 0<chosen.bit_length()<=len(signs)
+                signs=tuple(s for i,s in enumerate(signs) if chosen>>i&1)
+                assert len(signs)==chosen.bit_count()>0
+            words.append((axis,signs))
         axis_count+=len(words)
         total+=sum(len(S) for w,S in words)
         taken.append((a,b,m,I,words))
@@ -297,7 +317,7 @@ def main():
                 claims=[dict(dimension=d,previous=prev[d],construction_base=origin[d],construction_gain=total,
                              gain=origin[d]+total-prev[d],lower_bound=origin[d]+total)
                         for d in (94,95)])
-    assert result==json.loads((P/"claims.json").read_text())
+    assert result==json.loads((P/'claims.json').read_text())
     print(json.dumps(result,indent=2))
 
 if __name__=='__main__':

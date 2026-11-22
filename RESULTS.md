@@ -1,6 +1,6 @@
 # Results
 
-22 November 2026: coordinate-aligned dodecacode fibres append 4,716,096 points without removing any of the stock preceding the first adapted append. Replacing that append adds a net 3,663,872 points each in 94D and 95D, reaching 74,146,914,380 and 117,096,587,716. [Exact replay](verifications/improved/dim94-95-coordinate-aligned-dodecad-fibres/).
+22 November 2026: coordinate-aligned and trimmed dodecacode fibres append 4,978,936 points without removing any stock preceding the adapted append. Replacing that append adds a net 3,926,712 points each in 94D and 95D, reaching 74,147,177,220 and 117,096,850,556. [Exact replay](verifications/improved/dim94-95-coordinate-aligned-dodecad-fibres/).
 
 21 November 2026: joint signed-star/root repacking adds 16 stars for 14 signed roots, giving 415360 in 35D (+2 over 415358). [Exact replay](verifications/improved/dim35-joint-star-root/).
 
@@ -245,8 +245,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 91 | 6 218 187 548 | **25 923 282 704** | 4.17 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
 | 92 | 8 589 934 592 | **34 513 217 296** | 4.02 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
 | 93 | 17 179 869 184 | **47 398 119 184** | 2.76 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
-| 94 | 34 359 738 368 | **74 146 914 380** | 2.16 | `codes` | [Adapted dodecad sign fibres](verifications/improved/dim94-95-coordinate-aligned-dodecad-fibres/)
-| 95 | 68 719 476 736 | **117 096 587 716** | 1.70 | `codes` | [Adapted dodecad sign fibres](verifications/improved/dim94-95-coordinate-aligned-dodecad-fibres/)
+| 94 | 34 359 738 368 | **74 147 177 220** | 2.16 | `codes` | [Adapted dodecad sign fibres](verifications/improved/dim94-95-coordinate-aligned-dodecad-fibres/)
+| 95 | 68 719 476 736 | **117 096 850 556** | 1.70 | `codes` | [Adapted dodecad sign fibres](verifications/improved/dim94-95-coordinate-aligned-dodecad-fibres/)
 | 96 | 137 438 953 472 | **209 295 249 216** | 1.52 | `codes` | [Adapted dodecad sign kernels](verifications/improved/dim96-adapted-dodecad-fibres/)
 
 ## Status: what would have to change
