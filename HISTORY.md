@@ -17,6 +17,10 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **21 November 2026 — re-marking and Steiner squares.** [A refined Pless repacking](verifications/improved/dim86-87-remarked-square/) further raises 86D to **8,008,545,838** and 87D to **8,160,981,972**, with 2,223 square supports in each dimension.
 
+**22 November 2026 — Kerdock-axis owner lifts.** **342,381,366** in 66D (+8,188); **355,183,103** in 67D (+12,282). [Exact replay](verifications/improved/dim66-67-kerdock-axis-owners/).
+
+**22 November 2026 — Complementary parity six-row packings.** **74,138,716,876** in 94D (+1,245,184); **117,088,390,212** in 95D (+1,245,184); **209,287,080,768** in 96D (+1,794,048). [Exact replay](verifications/improved/dim94-96-hexary-parity-packing/).
+
 **22 November 2026 — a doubled dense owner code and balanced sign refills.** **184,426,297** in 63D (+8,513); **335,929,116** in 65D (+65,536); **342,373,178** in 66D (+76,006). Exact replays: [63D](verifications/improved/dim63-balanced-nine-refill/), [65D](verifications/improved/dim65-dg-dense-owners/), [66D](verifications/improved/dim66-tail-signed-nine-refill/).
 
 **22 November 2026 — partial signed nine-support layers.** [New compatible phase subsets](verifications/improved/dim64-65-partial-nonary-signs/) give **335,795,354 in 64D** and **335,863,580 in 65D**, each up 5,698. A [signed Netto exchange and refill](verifications/improved/dim67-signed-nine-refill/) adds 82,485 and removes 7,110 in 67D, giving **355,170,821**.

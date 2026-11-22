@@ -1,0 +1,23 @@
+[
+  {
+    "dimension": 94,
+    "preceding": 74137471692,
+    "supports": 152,
+    "gain": 1245184,
+    "lower_bound": 74138716876
+  },
+  {
+    "dimension": 95,
+    "preceding": 117087145028,
+    "supports": 152,
+    "gain": 1245184,
+    "lower_bound": 117088390212
+  },
+  {
+    "dimension": 96,
+    "preceding": 209285286720,
+    "supports": 219,
+    "gain": 1794048,
+    "lower_bound": 209287080768
+  }
+]

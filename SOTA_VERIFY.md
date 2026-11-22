@@ -8,6 +8,10 @@ The [Marked caps and nine-support refill](verifications/improved/dim61-62-marked
 
 The [Balanced signed nine-support refill](verifications/improved/dim63-balanced-nine-refill/) replays with `python verifications/improved/dim63-balanced-nine-refill/verify.py`.
 
+The [Kerdock-axis owner lifts](verifications/improved/dim66-67-kerdock-axis-owners/) replay with `python verifications/improved/dim66-67-kerdock-axis-owners/verify.py`.
+
+The [Complementary parity six-row packings](verifications/improved/dim94-96-hexary-parity-packing/) replay with `python verifications/improved/dim94-96-hexary-parity-packing/verify.py`.
+
 The [Delsarte–Goethals dense owners](verifications/improved/dim65-dg-dense-owners/) replays with `python verifications/improved/dim65-dg-dense-owners/verify.py`.
 
 The [Signed tail-support Netto exchange](verifications/improved/dim66-tail-signed-nine-refill/) replays with `python verifications/improved/dim66-tail-signed-nine-refill/verify.py`.

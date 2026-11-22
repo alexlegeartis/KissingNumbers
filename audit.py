@@ -743,6 +743,16 @@ with io.open(os.path.join(IMP, 'dim66-tail-signed-nine-refill', 'claims.json'), 
     _row = json.load(_file)['dimensions'][0]
     add(_row['dimension'], _row['lower_bound'], 'dim66-tail-signed-nine-refill', 'verify.py: exact signed tail-support netto exchange')
 
+# 22 November: Kerdock-axis owner lifts.
+with io.open(os.path.join(IMP, 'dim66-67-kerdock-axis-owners', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file)['dimensions']:
+        add(_row['dimension'], _row['lower_bound'], 'dim66-67-kerdock-axis-owners', 'verify.py: exact construction replay')
+
+# 22 November: Complementary parity six-row packings.
+with io.open(os.path.join(IMP, 'dim94-96-hexary-parity-packing', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim94-96-hexary-parity-packing', 'verify.py: exact construction replay')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

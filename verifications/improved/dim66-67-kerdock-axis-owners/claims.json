@@ -1,0 +1,20 @@
+{
+  "dimensions": [
+    {
+      "dimension": 66,
+      "previous": 342373178,
+      "lower_bound": 342381366,
+      "gain": 8188,
+      "owner_words": 8192,
+      "tail_poles_removed": 4
+    },
+    {
+      "dimension": 67,
+      "previous": 355170821,
+      "lower_bound": 355183103,
+      "gain": 12282,
+      "owner_words": 12288,
+      "tail_poles_removed": 6
+    }
+  ]
+}

@@ -158,8 +158,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 63 | 52 418 564 | **184 426 297** | 3.52 | `codes` | [Balanced signed nine-support refill](verifications/improved/dim63-balanced-nine-refill/)
 | 64 | 331 737 984 | **335 795 354** | 1.01 | `codes` | [Partial signed nine-support fibers](verifications/improved/dim64-65-partial-nonary-signs/) 
 | 65 | 331 737 986 | **335 929 116** | 1.01 | `codes` | [Delsarte–Goethals dense owners](verifications/improved/dim65-dg-dense-owners/)
-| 66 | 331 737 990 | **342 373 178** | 1.03 | `codes` | [Signed tail-support Netto exchange](verifications/improved/dim66-tail-signed-nine-refill/)
-| 67 | 331 737 996 | **355 170 821** | 1.07 | `codes` | [Signed nine-support refill and Netto exchange](verifications/improved/dim67-signed-nine-refill/) |
+| 66 | 331 737 990 | **342 381 366** | 1.03 | `codes` | [Kerdock-axis owner lifts](verifications/improved/dim66-67-kerdock-axis-owners/)
+| 67 | 331 737 996 | **355 183 103** | 1.07 | `codes` | [Kerdock-axis owner lifts](verifications/improved/dim66-67-kerdock-axis-owners/) |
 | 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 137 216** | 4.10 | `heads` | [A2 normal fibers of Gamma72](verifications/improved/dim70-gamma72-a2-fibers/) |
@@ -185,9 +185,9 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 91 | 6 218 187 548 | **25 917 421 568** | 4.17 | `codes` | [Asymmetric head planes and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/)
 | 92 | 8 589 934 592 | **34 507 356 160** | 4.02 | `codes` | [Variable-radius fibers and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/)
 | 93 | 17 179 869 184 | **47 392 258 048** | 2.76 | `codes` | [Variable-radius fibers and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/)
-| 94 | 34 359 738 368 | **74 137 471 692** | 2.16 | `codes` | [BCH phases and paired physical groups](verifications/improved/dim94-96-bch-paired-group-append/)
-| 95 | 68 719 476 736 | **117 087 145 028** | 1.70 | `codes` | [BCH phases and paired physical groups](verifications/improved/dim94-96-bch-paired-group-append/)
-| 96 | 137 438 953 472 | **209 285 286 720** | 1.52 | `codes` | [BCH phases and paired physical groups](verifications/improved/dim94-96-bch-paired-group-append/)
+| 94 | 34 359 738 368 | **74 138 716 876** | 2.16 | `codes` | [Complementary parity six-row packings](verifications/improved/dim94-96-hexary-parity-packing/)
+| 95 | 68 719 476 736 | **117 088 390 212** | 1.70 | `codes` | [Complementary parity six-row packings](verifications/improved/dim94-96-hexary-parity-packing/)
+| 96 | 137 438 953 472 | **209 287 080 768** | 1.52 | `codes` | [Complementary parity six-row packings](verifications/improved/dim94-96-hexary-parity-packing/)
 
 ## Status: what would have to change
 
