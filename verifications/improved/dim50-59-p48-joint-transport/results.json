@@ -1,0 +1,124 @@
+{
+  "rows": [
+    {
+      "status": "PASS",
+      "dimension": 50,
+      "baseline": 52462872,
+      "lower_bound": 52462974,
+      "gain": 102,
+      "added": 546,
+      "removed": 444,
+      "changed_classes": 3,
+      "exact_new_pairs": 8498217,
+      "transport_sha256": "89cca72139901b6f783e7e1c57396cc139ac0108f386aca3966a6cabe7325091"
+    },
+    {
+      "status": "PASS",
+      "dimension": 51,
+      "baseline": 52509740,
+      "lower_bound": 52509940,
+      "gain": 200,
+      "added": 1074,
+      "removed": 874,
+      "changed_classes": 6,
+      "exact_new_pairs": 16716437,
+      "transport_sha256": "88998837f27e280b7dfa037d5e08446190a884bdb69104683639804fbedced23"
+    },
+    {
+      "status": "PASS",
+      "dimension": 52,
+      "baseline": 52603402,
+      "lower_bound": 52603800,
+      "gain": 398,
+      "added": 2114,
+      "removed": 1716,
+      "changed_classes": 12,
+      "exact_new_pairs": 32892541,
+      "transport_sha256": "9f4b31ce0da2d5d17a8310b3b071269f82f060e69372e5b04978df7dbca7255a"
+    },
+    {
+      "status": "PASS",
+      "dimension": 53,
+      "baseline": 52728054,
+      "lower_bound": 52728705,
+      "gain": 651,
+      "added": 3439,
+      "removed": 2788,
+      "changed_classes": 20,
+      "exact_new_pairs": 53465223,
+      "transport_sha256": "65365e65a0f445b5e5f1cf79cebb80689b342167f0020fc2027aace6078e16ba"
+    },
+    {
+      "status": "PASS",
+      "dimension": 54,
+      "baseline": 52976623,
+      "lower_bound": 52977769,
+      "gain": 1146,
+      "added": 6067,
+      "removed": 4921,
+      "changed_classes": 36,
+      "exact_new_pairs": 94142864,
+      "transport_sha256": "9451e52a9f3deb07eda1fcf890cb89d2b0f42294c457ca142a2e9d06cfb9ab15"
+    },
+    {
+      "status": "PASS",
+      "dimension": 55,
+      "baseline": 53393546,
+      "lower_bound": 53395469,
+      "gain": 1923,
+      "added": 9965,
+      "removed": 8042,
+      "changed_classes": 63,
+      "exact_new_pairs": 154094798,
+      "transport_sha256": "0c7e6d6149be5ab9f201729f7f3194a1da4e2a2b566e7813358d08fe0e37b8b8"
+    },
+    {
+      "status": "PASS",
+      "dimension": 56,
+      "baseline": 54263398,
+      "lower_bound": 54266509,
+      "gain": 3111,
+      "added": 15491,
+      "removed": 12380,
+      "changed_classes": 120,
+      "exact_new_pairs": 237842560,
+      "transport_sha256": "281f61047b6ced2e9807cb574968e2e1d215fc19810abd8e11a754a2dcdf3857"
+    },
+    {
+      "status": "PASS",
+      "dimension": 57,
+      "baseline": 54760693,
+      "lower_bound": 54764394,
+      "gain": 3701,
+      "added": 17872,
+      "removed": 14171,
+      "changed_classes": 153,
+      "exact_new_pairs": 273219113,
+      "transport_sha256": "3571ee8b59648fa1135348ff38b1aedd6951f1f008272d1dd63be4097733f943"
+    },
+    {
+      "status": "PASS",
+      "dimension": 58,
+      "baseline": 56270076,
+      "lower_bound": 56274806,
+      "gain": 4730,
+      "added": 20779,
+      "removed": 16049,
+      "changed_classes": 255,
+      "exact_new_pairs": 313188279,
+      "transport_sha256": "728523852f3cc4f801392dae8e39df4f853f31026e48ba3d81bb9a062aacba08"
+    },
+    {
+      "status": "PASS",
+      "dimension": 59,
+      "baseline": 56952414,
+      "lower_bound": 56957415,
+      "gain": 5001,
+      "added": 20934,
+      "removed": 15933,
+      "changed_classes": 302,
+      "exact_new_pairs": 313417619,
+      "transport_sha256": "6968d3aeee3280455f27b4bf480b0d5b950949b6ec9e2014311b9f8e2b3520ca"
+    }
+  ]
+}

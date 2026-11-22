@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "dimension": 49,
+  "baseline": 52431624,
+  "added": 343,
+  "removed": 309,
+  "gain": 34,
+  "selected": 15656,
+  "unordered_pairs": 122547340,
+  "lower_bound": 52431658,
+  "source_sha256": "ee848a6940bed96246dd3cdfa9e64eb10abd768757b40f86d7d6f114b1f54480",
+  "trade_sha256": "a88a834814f31d844f5ef095d9164640fa201bdf13d289a7fa8c4b553a12ed91"
+}

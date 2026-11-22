@@ -1,0 +1,9 @@
+# 49D: a joint signed-owner exchange
+
+**Kissing number in 49 dimensions is at least 52,431,658**, up from 52,431,624. The exact joint exchange removes 309 old signed owners and adds 343 new ones. The owners are actual norm-six vectors in the pinned P48p lattice, with every pair of distinct owners having raw inner product at most two.
+
+Replay with `python final.py` (NumPy), or supply the published prior `p48_signed_class_lns.npz` by `python final.py --source path/to/p48_signed_class_lns.npz`. The SHA-256 of the prior data and gzip trade are pinned. Independently reconstruct the final vectors, check every norm and all 122,547,340 unordered final pairs, and derive the count. Matrix products are integer-exact: the int64 sums and binary64 products have explicit absolute partial-sum bounds. Discovery did not supply the verifier with any conflict graph, objective value, or arithmetic tolerances.
+
+Let u be a P48p minimum vector normalized to unit length. In dimension 49, replace each of the 15,656 chosen signed owners u by `(sqrt(3)/2 u, +1/2)` and `(sqrt(3)/2 u, -1/2)`. Retain all remaining 52,416,000 minus 15,656 unit equatorial vectors and add the two poles. On one latitude, distinct heads have inner product at most 1/3, giving final dot at most (3/4)(1/3)+1/4=1/2. Distinct latitudes have maximum 3/4−1/4=1/2 without any condition on the direction pair. Equator/latitude dots are at most sqrt(3)/4 using the P48p minimum and removing the owner. Pole/latitude products are at most 1/2 and pole/equator products vanish. Hence the total is 52,416,000+15,656+2. The parent lattice identification, minimum and kissing shell size are inherited from the published input.
+
+The discovery optimized a joint overlap-aware exchange among 7,458 literal available signed candidates with at most two conflicts against the old owner class. That search scope is not claimed optimal for the full shell and is not needed for verification.

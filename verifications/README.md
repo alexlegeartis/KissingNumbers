@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-175 packages, one per **construction idea** rather than one per dimension, because several
+178 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -115,7 +115,10 @@ file, and the history of the lower bound in its dimensions.
 | [`dim61-67-compatible-sign-families`](improved/dim61-67-compatible-sign-families/) | 61–67 | larger compatible support and sign families; fresh exact code and layer verification |
 | [`dim68-69-gamma72-extended-moments`](improved/dim68-69-gamma72-extended-moments/) | 68, 69 | 471,886,208 and 746,325,051; actual D7 extension, exact population duals, independent direct-profile proof and two 69D poles |
 | [`dim69-gamma72-head-compression`](improved/dim69-gamma72-head-compression/) | 69 | retained 743,522,304-point construction; +54,069,382 (7.8424%); two exact population and angle proofs with published Gamma72 inputs |
-| [`dim49-60-p48-signed-refill`](improved/dim49-60-p48-signed-refill/) | 49–60 | asymmetric signed mother classes; gains 24–3,946; current 58,631,571 in 60D; complete finite verification |
+| [`dim49-joint-signed-exchange`](improved/dim49-joint-signed-exchange/) | 49 | Exact joint signed-head exchange (+34) |
+| [`dim54-60-p48-tail-antipodes`](improved/dim54-60-p48-tail-antipodes/) | 54, 55, 57, 59, 60 | Exact tail and pole trades; best in this release in 60D |
+| [`dim50-59-p48-joint-transport`](improved/dim50-59-p48-joint-transport/) | 50–59 | Transported signed trades with exact changed-pair replay |
+| [`dim49-60-p48-signed-refill`](improved/dim49-60-p48-signed-refill/) | 49–60 | asymmetric signed mother classes; gains 24–3,946; preceding 58,631,571 in 60D; complete finite verification |
 | [`dim28-29-november-sextets`](improved/dim28-29-november-sextets/) | 28, 29 | current 222,120 and 231,776; +16 and +2 over PackingStar November 11; complete exact geometry and direct-integer changed pairs |
 | [`dim49-60-p48-pointwise-refill`](improved/dim49-60-p48-pointwise-refill/) | 49–60 | current pointwise-refill bounds, including 58,627,711 in 60D; two exact head proofs, complete tails/poles and ownership checks |
 | [`dim54-59-p48-coverage`](improved/dim54-59-p48-coverage/) | 54–59 | joint selections of complete P48 class images; exact finite tail, isometry and disjointness checks with published mother-shell inputs |

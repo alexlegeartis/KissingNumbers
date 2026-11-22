@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 22 November)</summary>
 
+**22 November 2026.** New signed-head exchanges and complementary tail directions improve every dimension from 49D through 60D. [Transport proof](verifications/improved/dim50-59-p48-joint-transport/). [Tail proof and replay](verifications/improved/dim54-60-p48-tail-antipodes/) · [49D proof](verifications/improved/dim49-joint-signed-exchange/).
+
 **22 November 2026.** A scaled D4 section of P48m raises 44D to **4,940,961** (+1,680). Choosing four normals makes three small projected shells empty and increases the count in the seventeen selected families. [Certificate and proof](verifications/improved/dim44-d4-section/).
 
 **22 November 2026.** Changing the body lattice and its affine classes gives **1,460,066 in 41D** (+30), **1,991,475 in 42D** (+30) and **2,921,073 in 43D** (+1,270). Each complete family has a fresh integer shell count. [Certificates and replay](verifications/improved/dim41-43-affine-sections/).
