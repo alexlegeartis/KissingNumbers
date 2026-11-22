@@ -8,6 +8,8 @@
 
 22 November 2026: signed plane and row designs add 24268 in 88D and 2069008 in 89D. [Exact replay](verifications/improved/dim88-89-signed-row-designs/).
 
+22 November 2026: mixed triality rows add 3366912 in 96D. [Exact replay](verifications/improved/dim96-mixed-triality-six-rows/).
+
 22 November 2026: cloned cyclic dense owners raise 63D to 184427691 and 64D to 335797303. [Exact replay](verifications/improved/dim63-64-dense-owner-clones/).
 
 22 November 2026: matching-row append adds 463872 each in 94D and 95D. [Exact replay](verifications/improved/dim94-95-matching-row-append/).
@@ -209,7 +211,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 93 | 17 179 869 184 | **47 397 139 984** | 2.76 | `codes` | [Triality and matching-row transfer](verifications/improved/dim91-93-triality-matching-transfer/)
 | 94 | 34 359 738 368 | **74 139 180 748** | 2.16 | `codes` | [Matching-row append](verifications/improved/dim94-95-matching-row-append/)
 | 95 | 68 719 476 736 | **117 088 854 084** | 1.70 | `codes` | [Matching-row append](verifications/improved/dim94-95-matching-row-append/)
-| 96 | 137 438 953 472 | **209 287 080 768** | 1.52 | `codes` | [Complementary parity six-row packings](verifications/improved/dim94-96-hexary-parity-packing/)
+| 96 | 137 438 953 472 | **209 290 447 680** | 1.52 | `codes` | [Mixed triality six-row append](verifications/improved/dim96-mixed-triality-six-rows/)
 
 ## Status: what would have to change
 

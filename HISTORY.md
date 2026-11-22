@@ -17,6 +17,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **21 November 2026 — re-marking and Steiner squares.** [A refined Pless repacking](verifications/improved/dim86-87-remarked-square/) further raises 86D to **8,008,545,838** and 87D to **8,160,981,972**, with 2,223 square supports in each dimension.
 
+**22 November 2026 — Mixed 96D triality rows.** Add 3,366,912 points in 96D with 822 tagged six-row patterns, reaching **209,290,447,680**. [Exact replay](verifications/improved/dim96-mixed-triality-six-rows/).
+
 **22 November 2026 — Cloned dense owners.** Alternate cyclic-BCH configurations reach **184,427,691** in 63D (+610 over GF(8)) and **335,797,303** in 64D (+1,053). [Exact replay](verifications/improved/dim63-64-dense-owner-clones/).
 
 **22 November 2026 — Matching-row append.** Add 463,872 points each in 94D and 95D using 85 tagged patterns, leaving every preceding layer intact. [Exact replay](verifications/improved/dim94-95-matching-row-append/).

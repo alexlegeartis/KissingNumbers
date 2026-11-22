@@ -1,0 +1,11 @@
+{
+  "dimension": 96,
+  "previous": 209287080768,
+  "patterns": {
+    "2": 262,
+    "3": 560
+  },
+  "per_pattern": 4096,
+  "gain": 3366912,
+  "lower_bound": 209290447680
+}
