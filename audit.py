@@ -820,6 +820,11 @@ with io.open(os.path.join(IMP, 'dim89-96-rs-axis-code-repack', 'claims.json'), e
 for _row in _axis_repack['claims']:
     add(_row['dimension'], _row['lower_bound'], 'dim89-96-rs-axis-code-repack', 'verify.py: exact 164-word axis-code repack')
 
+with io.open(os.path.join(IMP, 'dim94-96-post-rs-partial-fibres', 'claims.json'), encoding='utf-8') as _file:
+    _post_rs = json.load(_file)
+for _row in _post_rs['claims']:
+    add(_row['dimension'], _row['lower_bound'], 'dim94-96-post-rs-partial-fibres', 'verify.py: exact post-RS partial-fibre packings')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

@@ -29,6 +29,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **22 November 2026 — Omitted-fibre weighted spikes.** **89,116,048** in 61D (+33,726) and **123,209,522** in 62D (+540,606), using shortened cyclic-code cosets and no dense removals. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
 
+**22 November 2026 — Post-RS partial axis fibres.** Exact projections permit 148 further modes in both 94D and 95D, adding 121,664 points each. Refilling 76 96D modes yields a net 33,056. [Exact replay](verifications/improved/dim94-96-post-rs-partial-fibres/).
+
 **22 November 2026 — A 164-word axis code.** Restricting the extended quinary Reed–Solomon code to four symbols in each slot replaces 128-word triality fibres in seven dimensions. The gain is between 958,464 and 1,536,768 in each, depending on the number of eligible fibres. [Exact replay](verifications/improved/dim89-96-rs-axis-code-repack/).
 
 **22 November 2026 — Partial triality fibres.** Retaining individual compatible axis words instead of whole code cosets adds **167,680** in 96D, reaching **209,292,462,656** without removing any old point. [Exact replay](verifications/improved/dim96-partial-triality-fibres/).

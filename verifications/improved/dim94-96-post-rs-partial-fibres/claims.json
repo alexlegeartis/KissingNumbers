@@ -1,0 +1,29 @@
+{
+  "new_modes94_95": 148,
+  "new_axes94_95": 3802,
+  "active_old_pairs94_95": 264,
+  "active_new_pairs94_95": 118,
+  "repacked96": 76,
+  "net_axes96": 1033,
+  "active_old_pairs96": 79,
+  "claims": [
+    {
+      "dimension": 94,
+      "previous": 74142076620,
+      "gain": 121664,
+      "lower_bound": 74142198284
+    },
+    {
+      "dimension": 95,
+      "previous": 117091749956,
+      "gain": 121664,
+      "lower_bound": 117091871620
+    },
+    {
+      "dimension": 96,
+      "previous": 209293999424,
+      "gain": 33056,
+      "lower_bound": 209294032480
+    }
+  ]
+}
