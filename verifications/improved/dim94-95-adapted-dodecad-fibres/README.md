@@ -2,8 +2,8 @@
 
 | Dimension | Previous lower bound | Appended points | New lower bound |
 |---:|---:|---:|---:|
-| 94 | 74,142,198,284 | 1,026,880 | **74,143,225,164** |
-| 95 | 117,091,871,620 | 1,026,880 | **117,092,898,500** |
+| 94 | 74,142,198,284 | 1,052,224 | **74,143,250,508** |
+| 95 | 117,091,871,620 | 1,052,224 | **117,092,923,844** |
 
 Every old point is retained. The new points all live on physical rows
 2 through 23 of the common four-coordinate-row body, and therefore

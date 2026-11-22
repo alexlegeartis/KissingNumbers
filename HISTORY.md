@@ -29,7 +29,7 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **22 November 2026 — Omitted-fibre weighted spikes.** **89,116,048** in 61D (+33,726) and **123,209,522** in 62D (+540,606), using shortened cyclic-code cosets and no dense removals. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
 
-**22 November 2026 — Adapted dodecads in 94D and 95D.** The joint projection and sign-kernel construction adds **1,026,880** points in each dimension without removing any prior point. [Exact replay](verifications/improved/dim94-95-adapted-dodecad-fibres/).
+**22 November 2026 — Adapted dodecads in 94D and 95D.** The joint projection and sign-kernel construction adds **1,052,224** points in each dimension without removing any prior point. [Exact replay](verifications/improved/dim94-95-adapted-dodecad-fibres/).
 
 **22 November 2026 — Adapted dodecad sign kernels.** Choosing distance checks after fixing the active projection constraints admits **1,216,736** points in a replacement dodecad layer, an increase of **827,308** over the first joint append, for **209,295,249,216** in 96D. [Exact replay](verifications/improved/dim96-adapted-dodecad-fibres/).
 

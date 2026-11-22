@@ -20,7 +20,7 @@
 
 22 November 2026: omitted-fibre weighted spikes give 89116048 in 61D and 123209522 in 62D. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
 
-22 November 2026: adapted dodecad sign fibres append 1026880 each in 94D and 95D, reaching 74143225164 and 117092898500. [Exact replay](verifications/improved/dim94-95-adapted-dodecad-fibres/).
+22 November 2026: adapted dodecad sign fibres append 1052224 each in 94D and 95D, reaching 74143250508 and 117092923844. [Exact replay](verifications/improved/dim94-95-adapted-dodecad-fibres/).
 
 22 November 2026: adapting each dodecad sign kernel to the active projections gives 209295249216 in 96D (+827308 beyond the first joint append). [Exact replay](verifications/improved/dim96-adapted-dodecad-fibres/).
 
@@ -241,8 +241,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 91 | 6 218 187 548 | **25 923 282 704** | 4.17 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
 | 92 | 8 589 934 592 | **34 513 217 296** | 4.02 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
 | 93 | 17 179 869 184 | **47 398 119 184** | 2.76 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
-| 94 | 34 359 738 368 | **74 143 225 164** | 2.16 | `codes` | [Adapted dodecad sign fibres](verifications/improved/dim94-95-adapted-dodecad-fibres/)
-| 95 | 68 719 476 736 | **117 092 898 500** | 1.70 | `codes` | [Adapted dodecad sign fibres](verifications/improved/dim94-95-adapted-dodecad-fibres/)
+| 94 | 34 359 738 368 | **74 143 250 508** | 2.16 | `codes` | [Adapted dodecad sign fibres](verifications/improved/dim94-95-adapted-dodecad-fibres/)
+| 95 | 68 719 476 736 | **117 092 923 844** | 1.70 | `codes` | [Adapted dodecad sign fibres](verifications/improved/dim94-95-adapted-dodecad-fibres/)
 | 96 | 137 438 953 472 | **209 295 249 216** | 1.52 | `codes` | [Adapted dodecad sign kernels](verifications/improved/dim96-adapted-dodecad-fibres/)
 
 ## Status: what would have to change
