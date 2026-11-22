@@ -391,6 +391,7 @@ JOBS = [
     ('dim39-deformed-orbits: independent exact replay', os.path.join(V, 'improved', 'dim39-deformed-orbits'), ['verify.py'], 1.0, True),
     ('dim39-qr-three-coordinate-heads: exact dense/sparse replay', os.path.join(V, 'improved', 'dim39-qr-three-coordinate-heads'), ['verify.py'], 8.0, True),
     ('dim39-qr-pentapolar: exact Hamming and head geometry', os.path.join(V, 'improved', 'dim39-qr-pentapolar'), ['verify.py'], 5.0, True),
+    ('dim40-p48q-affine-refill: fresh lattice and exact angular replay', os.path.join(V, 'improved', 'dim40-p48q-affine-refill'), ['verify.py'], 6.0, False),
     ('dim40-affine-centre-refill: exact gluing and refill', os.path.join(V, 'improved', 'dim40-affine-centre-refill'), ['verify.py'], 0.1, True),
     ('dim40-affine-centre-refill: fresh lattice and explicit cross-layer pairs', os.path.join(V, 'improved', 'dim40-affine-centre-refill'), ['verify_expanded.py'], 6.0, False),
     ('dim40-affine-shells: independent exact replay', os.path.join(V, 'improved', 'dim40-affine-shells'), ['verify.py'], 5.0, True),
@@ -734,6 +735,7 @@ def _sota_jobs(quick=False):
         ('dim31-dual-centres', ('verify.py',)),
         ('dim39-qr-three-coordinate-heads', ('verify.py',)),
         ('dim39-qr-pentapolar', ('verify.py',)),
+        ('dim40-p48q-affine-refill', ('verify.py',)),
         ('dim40-affine-centre-refill', ('verify.py',)),
         ('dim40-affine-centre-refill', ('verify_expanded.py',)),
         ('dim40-affine-shells', ('verify.py',)),
@@ -966,6 +968,7 @@ def _sota_coverage(jobs, results=None):
         ('dim31-dual-centres', [31], [('verify.py',)], ''),
         ('dim39-qr-three-coordinate-heads', [39], [('verify.py',)], 'exact quotient distances and projected sparse signs'),
         ('dim39-qr-pentapolar', [39], [('verify.py',)], 'exact Hamming quotient and rational head checks'),
+        ('dim40-p48q-affine-refill', [40], [('verify.py',)], 'fresh lattice and affine-core enumeration with exact cross-layer products'),
         ('dim40-affine-centre-refill', [40], [('verify.py',), ('verify_expanded.py',)], 'exact gluing and refill, with a fresh affine-core enumeration and direct cross-layer pairs'),
         ('dim40-affine-shells', [40], [('verify.py',)], ''),
 

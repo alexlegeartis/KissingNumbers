@@ -105,6 +105,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **22 November 2026 — Signed plane and row designs.** **13,357,793,920** in 88D (+24,268) by a doubled Steiner system and two rotated plane layers; **15,179,459,090** in 89D (+2,069,008) by three triality frames and tagged five-row D4 fibers. [Exact replay](verifications/improved/dim88-89-signed-row-designs/).
 
+**22 November 2026 — Empty difference classes in 40D.** **1,126,351** (+24). The \(P_{48q}\) complement admits 30 norm-36 refills through empty short-difference classes and seven norm-six refills. [Exact replay](verifications/improved/dim40-p48q-affine-refill/).
+
 **22 November 2026 — Alternate affine centre in 40D.** **1,126,327** (+5). A census of all 2,240 nonzero isotropic centres found a ten-point minimum-shell refill. Short differences then certified three further bodies. [Exact replays](verifications/improved/dim40-affine-centre-refill/).
 
 **22 November 2026 — Coxeter–Todd triangle switches.** **502,902** in 36D (+81). The construction relocates 63 triangles in the two-block layer and adds a net 81 individual points to the three-block layer. [Exact replays](verifications/improved/dim36-ct-triangle-refill/).

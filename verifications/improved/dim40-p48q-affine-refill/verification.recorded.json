@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "dimension": 40,
+  "points": 1126351,
+  "core_count": 1084590,
+  "minimum_enumeration": {
+    "nonzero_vectors_of_norm_at_most_4": 0,
+    "nodes": 90796277,
+    "leaves": 1
+  },
+  "explicit_unordered_pairs": 46165532670,
+  "raw_product_maxima": {
+    "54/54": 27,
+    "54/36": 21,
+    "54/30": 18,
+    "54/6": 9,
+    "36/36": 18,
+    "36/30": 15,
+    "36/6": 6,
+    "30/30": 12,
+    "30/6": 6,
+    "6/6": 3
+  }
+}

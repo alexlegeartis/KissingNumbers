@@ -43,7 +43,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 37 | 500 008 | [Olivier, using Lin's code (2026)](https://doi.org/10.5281/zenodo.23569153) | **544 666** | **SOTA** | +8.9315% | — | updated 2026-11-22 | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) | — |
 | 38 | 605 322 | [Qihong Lin, Leech equatorial augmentation (2026)](https://arxiv.org/abs/2611.03682) | **652 076** | **SOTA** | +7.7238% | — | updated 2026-11-20 | [QR offsets, octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) | — |
 | 39 | 755 988 | [Edel–Rains–Sloane (1998 method)](https://arxiv.org/abs/math/0207291) + [Brouwer’s archived 39D bound](https://aeb.win.tue.nl/codes/Andw.html-old5#kiss) | **783 468** | **SOTA** | +3.63% | — | updated 2026-11-20 | [Three-coordinate QR heads](verifications/improved/dim39-qr-three-coordinate-heads/) | — |
-| 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections (2026)](https://arxiv.org/html/2607.20359v4) | **1 126 327** | **SOTA** | +3.14% | — | updated 2026-11-22 | [Affine centre and short-shell refills](verifications/improved/dim40-affine-centre-refill/) | — |
+| 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections (2026)](https://arxiv.org/html/2607.20359v4) | **1 126 351** | **SOTA** | +3.15% | — | updated 2026-11-22 | [P48q affine refill through empty difference classes](verifications/improved/dim40-p48q-affine-refill/) | — |
 | 41 | 1 324 472 | [Dorofeev–Sun–Wang, P48 sections (2026)](https://arxiv.org/abs/2607.20359v4) | **1 460 036** | **SOTA** | +10% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 42 | 1 792 386 | [Dorofeev–Sun–Wang, P48 sections (2026)](https://arxiv.org/abs/2607.20359v4) | **1 991 445** | **SOTA** | +11% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 43 | 2 553 792 | [Yang et al., P48n section (2026)](https://arxiv.org/abs/2609.35051v1) | **2 919 803** | **SOTA** | +14% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
@@ -108,7 +108,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 
 Expand a week for the main milestones; follow its history link for the full dated sequence, intermediate values and proof notes. Current bounds are in the table above.
 
-An alternate affine centre admits thirteen individual short-shell points, taking **40D to 1,126,327** (+5). [Exact replays](verifications/improved/dim40-affine-centre-refill/).
+Empty short-difference classes in the \(P_{48q}\) complement take **40D to 1,126,351** (+24). [Exact replay](verifications/improved/dim40-p48q-affine-refill/).
 
 Individual Coxeter–Todd triangle switches and a three-block phase refill raise **36D to 502,902** (+81). [Exact replays](verifications/improved/dim36-ct-triangle-refill/).
 

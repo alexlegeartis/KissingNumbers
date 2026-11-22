@@ -1,8 +1,10 @@
 """Freshly enumerate the affine core and verify the explicit cross-layer pairs."""
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 from fractions import Fraction
 import json
+from math import isqrt
 import os
 from pathlib import Path
 import subprocess
@@ -16,8 +18,9 @@ import numpy as np
 from verify import AFFINE, CORE_COUNT, GLUING, HERE, load_module, witness
 
 
-def enumerate_core(gram, residue, compiler, work):
-    enclosure = np.load(AFFINE / "enclosure.npz", allow_pickle=False)
+def enumerate_core(gram, residue, compiler, work, *, enclosure_path=None, workers=1):
+    path = enclosure_path if enclosure_path is not None else AFFINE / "enclosure.npz"
+    enclosure = np.load(path, allow_pickle=False)
     scale = int(enclosure["P"])
     diagonal = enclosure["D"].astype(object)
     lower = enclosure["M"].astype(object)
@@ -38,12 +41,38 @@ def enumerate_core(gram, residue, compiler, work):
         for row in (diagonal, *lower, *gram, residue):
             print(*row, file=stream)
     binary = work / "enumerate_core"
-    result = work / "core.i8"
     subprocess.run([compiler, "-O3", "-std=c++17", str(HERE / "enumerate_core.cpp"),
                     "-o", str(binary)], check=True)
-    out = subprocess.check_output([str(binary), str(data), str(result)], text=True)
-    core = np.fromfile(result, dtype=np.int8).reshape(-1, 40)
-    assert int(out) == len(core) == CORE_COUNT
+
+    def prefixes(prefix, remaining):
+        if len(prefix) == 3:
+            yield prefix
+            return
+        k = 39 - len(prefix)
+        shift = sum(int(lower[39 - i, k]) * value for i, value in enumerate(prefix))
+        limit = isqrt(remaining // int(diagonal[k]))
+        lo = -((limit + shift) // scale)
+        hi = (limit - shift) // scale
+        lo += (int(residue[k]) - lo) % 3
+        for value in range(lo, hi + 1, 3):
+            offset = scale * value + shift
+            yield from prefixes((*prefix, value), remaining - int(diagonal[k]) * offset**2)
+
+    def part(task):
+        i, prefix = task
+        result = work / f"core-{i}.i8"
+        out = subprocess.check_output([str(binary), str(data), str(result), *map(str, prefix)],
+                                      text=True)
+        rows = np.fromfile(result, dtype=np.int8).reshape(-1, 40)
+        assert int(out) == len(rows)
+        return rows
+
+    if workers == 1:
+        core = part((0, ()))
+    else:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            core = np.concatenate(list(pool.map(part, enumerate(prefixes((), radius)))))
+    assert len(core) == CORE_COUNT
     return core
 
 

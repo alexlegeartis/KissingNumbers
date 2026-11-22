@@ -6,6 +6,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <vector>
 
 using Integer = __int128_t;
 using Unsigned = __uint128_t;
@@ -40,6 +41,7 @@ class Enumeration {
     int64_t scale = 0;
     Integer radius = 0;
     std::ostream& output;
+    const std::vector<int64_t>& prefix;
     uint64_t count = 0;
 
     void visit(int k, Integer remaining) {
@@ -68,9 +70,15 @@ class Enumeration {
         const int64_t limit = integer_sqrt(static_cast<Unsigned>(remaining / diagonal[k]));
         assert(limit < (int64_t{1} << 60));
         int64_t lo = -floor_divide(limit + shift, scale);
-        const int64_t hi = floor_divide(limit - shift, scale);
+        int64_t hi = floor_divide(limit - shift, scale);
         lo += ((residue[k] - lo) % 3 + 3) % 3;
         assert(lo > -(int64_t{1} << 20) && hi < (int64_t{1} << 20));
+        const auto index = static_cast<size_t>(dimension - 1 - k);
+        if (index < prefix.size()) {
+            const int64_t value = prefix[index];
+            if (value < lo || value > hi || (value - lo) % 3 != 0) return;
+            lo = hi = value;
+        }
         for (int64_t value = lo; value <= hi; value += 3) {
             point[k] = value;
             const Integer offset = Integer{scale} * value + shift;
@@ -82,7 +90,8 @@ class Enumeration {
     }
 
 public:
-    Enumeration(std::istream& input, std::ostream& output) : output(output) {
+    Enumeration(std::istream& input, std::ostream& output,
+                const std::vector<int64_t>& prefix) : output(output), prefix(prefix) {
         std::string text;
         input >> scale >> text;
         assert(scale > 0 && scale < (int64_t{1} << 40));
@@ -113,9 +122,11 @@ public:
 };
 
 int main(int argc, char** argv) {
-    if (argc != 3) return 1;
+    if (argc < 3 || argc > dimension + 3) return 1;
     std::ifstream input(argv[1]);
     std::ofstream output(argv[2], std::ios::binary);
     if (!input || !output) return 2;
-    std::cout << Enumeration(input, output).run() << '\n';
+    std::vector<int64_t> prefix;
+    for (int i = 3; i < argc; ++i) prefix.push_back(std::stoll(argv[i]));
+    std::cout << Enumeration(input, output, prefix).run() << '\n';
 }
