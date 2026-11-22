@@ -68,7 +68,7 @@ The [shortened Golay–dodecacode replay](verifications/improved/dim88-95-golay-
 
 The [92–96D Golay–dodecacode augmentation](verifications/improved/dim92-96-golay-dodecacode/) verifies three outer pattern lists (309, 938 and 2,583 patterns) and their two exact inner codes. Run `node verifications/improved/dim92-96-golay-dodecacode/verify.js`; the proof checks compatibility with the pinned dense, Reed–Solomon and root layers without enumerating billions of points.
 
-Latest 37D: **544,538** (+64). The [12-flat repacking](verifications/improved/dim37-qr-flat-repack/) replaces 384 octad phases by 448 points, checking every new pair and all inherited-layer interfaces exactly.
+Latest 37D: **544,666** (+192 over the radical-family proof). The [12-flat repacking](verifications/improved/dim37-qr-flat-repack/) replaces 384 octad phases by 576 points, checking every new pair and all inherited-layer interfaces exactly.
 
 Preceding 37D: **544,474**, 10,610 above the original QR construction. The [radical-layer verification](verifications/improved/dim37-qr-radical-families/) checks all 57,797,376 new-layer pairs and exact cross-layer bounds.
 

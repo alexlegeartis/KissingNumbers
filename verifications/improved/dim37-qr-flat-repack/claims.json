@@ -1,9 +1,11 @@
 [
   {
     "dimension": 37,
-    "previous_bound": 544474,
-    "lower_bound": 544538,
-    "gain": 64,
+    "previous_bound": 544538,
+    "lower_bound": 544666,
+    "gain": 128,
+    "construction_base": 544474,
+    "construction_gain": 192,
     "verification": "python verify.py"
   }
 ]

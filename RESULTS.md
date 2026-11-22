@@ -2,7 +2,7 @@
 
 21 November 2026: joint signed-star/root repacking adds 16 stars for 14 signed roots, giving 415360 in 35D (+2 over 415358). [Exact replay](verifications/improved/dim35-joint-star-root/).
 
-22 November 2026: a 448-point 12-flat repacking replaces 384 octad phases and gives 544538 in 37D (+64). [Exact replay](verifications/improved/dim37-qr-flat-repack/).
+22 November 2026: a 576-point 12-flat repacking replaces 384 octad phases and gives 544666 in 37D (+192). [Exact replay](verifications/improved/dim37-qr-flat-repack/).
 
 19 November 2026: 168 signed six-support families and two unit poles give 544474 in 37D (+10,610 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).
 
@@ -133,7 +133,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 34 | 390 980 | **391 004** | 1.00 | `heads` | [coordinated octad switches and root-star exchanges; two exact proofs](verifications/improved/dim34-octad-switches/) |
 | 35 | 415 308 | **415 360** | 1.00 | `heads` | [joint signed-star and root repacking](verifications/improved/dim35-joint-star-root/) |
 | 36 | 484 760 | **502 821** | 1.04 | `cosets` | [Nonlocal Coxeter–Todd phase rebuild](verifications/improved/dim36-ct-nonlocal/) |
-| 37 | 500 008 | **544 538** | 1.09 | `codes` | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) |
+| 37 | 500 008 | **544 666** | 1.09 | `codes` | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) |
 | 38 | 566 652 | **652 076** | 1.15 | `codes` | [QR offsets, ten octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) |
 | 39 | 755 988 | **783 468** | 1.03 | `codes` | [QR fibres with three-coordinate heads and projected support checks](verifications/improved/dim39-qr-three-coordinate-heads/) |
 | 40 | 1 092 000 | **1 126 322** | 1.03 | `heads` | [affine lattice shells and an eight-point minimum-shell refill](verifications/improved/dim40-affine-shells/) |
@@ -224,7 +224,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `heads` | 31 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | annealed E8 orientation and full exterior deletion pricing; 2218 additions and 2052 removals; exact complete geometry (dim31-annealed-design/verify.py) |
 | `heads` | 34 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | four octad switches; exact signed interactions and full rank with unchanged rational heads (dim34-octad-switches/verify.py) |
 | `heads` | 35 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | seven octad switches and a signed-star exchange; the dense code and 12 heads are retained (dim35-octad-switches/verify.py) |
-| `codes` | 37 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | a rank-six sign-flip group repacks a 12-coordinate flat (dim37-qr-flat-repack/verify.py) |
+| `codes` | 37 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | a paired-coordinate parity code repacks a 12-coordinate flat (dim37-qr-flat-repack/verify.py) |
 | `codes` | 38 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | finds 31 complete affine fibres after shortening; signed octads and roots retained (dim38-qr-free-offsets/verify.py) |
 | `heads` | 40 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products; larger compatible families remain open (dim40-affine-shells/verify.py) |
 | `heads` | 41-46 (6) | joint body-family and head searches remain open; no construction ceiling is claimed | independently normalized P48n body families with rational heads and pure head points; the latest angles and exact ranks replay, while populations inherit the supplied tables and modular-form derivation. Larger coupled family changes, partial families and new body models remain open; finite search optima are not global ceilings. The partial-family 43D and coordinated-motion 45D certificates are installed (dim41-46-p48-heads/README.md, verify.py, POPULATIONS.txt) |

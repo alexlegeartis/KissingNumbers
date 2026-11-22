@@ -753,7 +753,7 @@ with io.open(os.path.join(IMP, 'dim94-96-hexary-parity-packing', 'claims.json'),
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim94-96-hexary-parity-packing', 'verify.py: exact construction replay')
 
-add(37, 544538, 'dim37-qr-flat-repack', 'verify.py: exact local signed pairs and inherited interfaces')
+add(37, 544666, 'dim37-qr-flat-repack', 'verify.py: exact local signed pairs and inherited interfaces')
 
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
@@ -2453,7 +2453,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
-    out.append('22 November 2026: a 448-point 12-flat repacking replaces 384 octad phases and gives 544538 in 37D (+64). [Exact replay](verifications/improved/dim37-qr-flat-repack/).')
+    out.append('22 November 2026: a 576-point 12-flat repacking replaces 384 octad phases and gives 544666 in 37D (+192). [Exact replay](verifications/improved/dim37-qr-flat-repack/).')
     out.append('')
     out.append('19 November 2026: 168 signed six-support families and two unit poles give 544474 in 37D (+10,610 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).')
     out.append('19 November 2026: shared signed-root cuts and a seven-site layer give 536440 in 37D (+2,576). [Exact replay](verifications/improved/dim37-qr-shared-stars/).')

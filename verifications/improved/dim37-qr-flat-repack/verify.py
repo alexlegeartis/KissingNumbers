@@ -25,7 +25,7 @@ pts=set()
 g={0}
 for b in lines[0]:
  assert 0<b<4096;g|={x^b for x in g}
-assert len(g)==64
+assert len(g)==256
 for mask,neg,n in lines[1:]:
  assert 0<mask<4096 and mask.bit_count()==8 and neg&mask==neg
  v={(mask,neg^(x&mask)) for x in g}
@@ -40,5 +40,5 @@ assert 2*4*2==16
 # the above support-intersection caps make their dot product at most 16.
 assert 4*2*2==16
 assert len(dense)+4*(36*35//2)+128*2742+64*168+2==544474
-assert len(pts)==448
+assert len(pts)==576
 print(json.dumps(dict(dimension=37,previous_bound=544474,deleted=384,inserted=len(pts),lower_bound=544474-384+len(pts),local_phase_group_order=len(g),pair_checks=len(pts)*(len(pts)-1)//2)))

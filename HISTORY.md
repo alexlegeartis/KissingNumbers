@@ -17,7 +17,7 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **21 November 2026 — re-marking and Steiner squares.** [A refined Pless repacking](verifications/improved/dim86-87-remarked-square/) further raises 86D to **8,008,545,838** and 87D to **8,160,981,972**, with 2,223 square supports in each dimension.
 
-**22 November 2026 — QR 12-flat phase repacking.** **544,538** in 37D (+64), replacing 384 all-phase octad points with a 448-point rank-six sign-orbit construction. [Exact replay](verifications/improved/dim37-qr-flat-repack/).
+**22 November 2026 — QR 12-flat phase repacking.** **544,666** in 37D (+192 over the radical-family construction), replacing 384 all-phase octad points with a 576-point paired-coordinate parity code. The [448-point refill](https://github.com/alexlegeartis/KissingNumbers/commit/9124b78a1e2eed5132d0fe3e14669e0e451e8b11) was an intermediate step. [Exact replay](verifications/improved/dim37-qr-flat-repack/).
 
 **22 November 2026 — Kerdock-axis owner lifts.** **342,381,366** in 66D (+8,188); **355,183,103** in 67D (+12,282). [Exact replay](verifications/improved/dim66-67-kerdock-axis-owners/).
 
