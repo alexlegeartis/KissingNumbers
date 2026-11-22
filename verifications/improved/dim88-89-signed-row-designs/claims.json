@@ -1,0 +1,12 @@
+[
+  {
+    "dimension": 88, "previous": 13357769652, "square_supports": 2730,
+    "new_five_plane_points": 11024, "deleted_D88_roots": 3444,
+    "new_three_plane_points": 560, "added": 24268, "lower_bound": 13357793920
+  },
+  {
+    "dimension": 89, "previous": 15177390082, "supports": 385, "rays_per_support": 3072,
+    "root_rays": 528, "five_row_patterns": 865, "rays_per_five_row_pattern": 1024,
+    "added": 2069008, "lower_bound": 15179459090
+  }
+]
