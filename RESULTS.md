@@ -1,5 +1,7 @@
 # Results
 
+22 November 2026: six mixed-tetrad modes append 279,552 points in each of 94D and 95D, reaching 74,147,456,772 and 117,097,130,108. [Exact replay](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/).
+
 22 November 2026: a different $A_2$ normal embedding in $\Gamma_{72}$ raises the 70D lower bound to 1,361,142,400 (+5,184). [Exact replay](verifications/improved/dim70-gamma72-alternate-a2-normals/).
 
 22 November 2026: mixed-tetrad dodecad axis and sign fibres add 4,621,984 points to 96D without removing any retained point, reaching 209,299,871,200. [Exact replay](verifications/improved/dim96-mixed-tetrad-axis-sign-fibres/).
@@ -249,8 +251,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 91 | 6 218 187 548 | **25 923 282 704** | 4.17 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
 | 92 | 8 589 934 592 | **34 513 217 296** | 4.02 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
 | 93 | 17 179 869 184 | **47 398 119 184** | 2.76 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
-| 94 | 34 359 738 368 | **74 147 177 220** | 2.16 | `codes` | [Adapted dodecad sign fibres](verifications/improved/dim94-95-coordinate-aligned-dodecad-fibres/)
-| 95 | 68 719 476 736 | **117 096 850 556** | 1.70 | `codes` | [Adapted dodecad sign fibres](verifications/improved/dim94-95-coordinate-aligned-dodecad-fibres/)
+| 94 | 34 359 738 368 | **74 147 456 772** | 2.16 | `codes` | [Mixed-tetrad axis and sign fibres](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/)
+| 95 | 68 719 476 736 | **117 097 130 108** | 1.70 | `codes` | [Mixed-tetrad axis and sign fibres](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/)
 | 96 | 137 438 953 472 | **209 299 871 200** | 1.52 | `codes` | [Mixed-tetrad axis and sign fibres](verifications/improved/dim96-mixed-tetrad-axis-sign-fibres/)
 
 ## Status: what would have to change

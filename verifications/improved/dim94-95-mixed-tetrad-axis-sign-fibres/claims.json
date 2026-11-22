@@ -1,0 +1,19 @@
+{
+  "geometries": 6,
+  "axis_modes": 1152,
+  "old_active_interfaces": 14,
+  "claims": [
+    {
+      "dimension": 94,
+      "previous": 74147177220,
+      "gain": 279552,
+      "lower_bound": 74147456772
+    },
+    {
+      "dimension": 95,
+      "previous": 117096850556,
+      "gain": 279552,
+      "lower_bound": 117097130108
+    }
+  ]
+}

@@ -29,6 +29,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **22 November 2026 — Omitted-fibre weighted spikes.** **89,116,048** in 61D (+33,726) and **123,209,522** in 62D (+540,606), using shortened cyclic-code cosets and no dense removals. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
 
+**22 November 2026 — Mixed-tetrad axis and sign fibres in 94D and 95D.** Six head-free mixed modes add **279,552** points in each dimension without removing earlier stock. New bounds **74,147,456,772** and **117,097,130,108**. [Exact replay](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/).
+
 **22 November 2026 — Partial dodecad sign exchanges.** Per-row axis relabeling and exact bipartite sign exchanges add **262,840** to the initial coordinate-aligned construction, giving **74,147,177,220** and **117,096,850,556**. [Exact replay](verifications/improved/dim94-95-coordinate-aligned-dodecad-fibres/).
 
 **22 November 2026 — Coordinate-aligned dodecacode fibres in 94D and 95D.** An optimized coordinate permutation and quotient translate on each support grow the previous append from 1,052,224 to **4,716,096** points. This raises the bounds to **74,146,914,380** and **117,096,587,716**. [Exact replay](https://github.com/alexlegeartis/KissingNumbers/tree/94b77b440405375cea2845b2ad5d439fb2d9c9c3/verifications/improved/dim94-95-coordinate-aligned-dodecad-fibres/).
