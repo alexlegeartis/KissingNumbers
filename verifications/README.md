@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-134 packages, one per **construction idea** rather than one per dimension, because several
+135 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -50,6 +50,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim88-axial-pless`](improved/dim88-axial-pless/) | 88 | Shortened ternary sections and induced square design; exact replay |
 | [`dim86-87-axial-pless`](improved/dim86-87-axial-pless/) | 86–87 | Axial Pless layers and a re-marked QR48 section; exact replay |
 | [`dim86-87-ternary-chord-sections`](improved/dim86-87-ternary-chord-sections/) | 86–87 | QR48 chord sections, Pless phases and E8 poles; exact replay |
+| [`dim91-93-triality-matching-transfer`](improved/dim91-93-triality-matching-transfer/) | 91–93 | Triality and matching-row transfer; exact replay |
 | [`dim91-93-flat-parity-extensions`](improved/dim91-93-flat-parity-extensions/) | 91–93 | flat six-/seven-row parity layers; exact replay |
 | [`dim94-96-bch-flat-phase`](improved/dim94-96-bch-flat-phase/) | 94–96 | BCH flat syndrome gluing; exact replay |
 | [`dim94-96-bch-paired-group-append`](improved/dim94-96-bch-paired-group-append/) | 94–96 | Paired-group BCH append; exact replay |
