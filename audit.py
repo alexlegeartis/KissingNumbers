@@ -717,6 +717,10 @@ with io.open(os.path.join(IMP, 'dim77-85-delta-marginal', 'claims.json'), encodi
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim77-85-delta-marginal', 'verify.py: difference-coordinate marginal and rational graph certificate')
 
+with io.open(os.path.join(IMP, 'dim74-85-gamma72-harmonic-latitudes', 'results.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim74-85-gamma72-harmonic-latitudes', 'verify.py: harmonic theta and exact latitude graph certificate')
+
 # 21 November: A2 normal fibers in 70D.
 with io.open(os.path.join(IMP, 'dim70-gamma72-a2-fibers', 'claims.json'), encoding='utf-8') as _file:
     _row = json.load(_file)

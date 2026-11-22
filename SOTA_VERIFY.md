@@ -44,6 +44,8 @@ The [alternate Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-al
 
 The [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) replays with `python verifications/improved/dim77-85-delta-marginal/verify.py`.
 
+The [harmonic-theta 74–85D latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) replay with `python verifications/improved/dim74-85-gamma72-harmonic-latitudes/verify.py`. The verifier rebuilds the harmonic shell identities, exact linear dual bounds and downward-rounded graph recurrence. These are existence bounds.
+
 The [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) replays with `python verifications/improved/dim76-85-mixed-shape-norm10/verify.py`.
 
 The [Re-marked axial Pless and Steiner squares](verifications/improved/dim86-87-remarked-square/) replays with `python verifications/improved/dim86-87-remarked-square/verify.py`.

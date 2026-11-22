@@ -101,6 +101,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **21 November 2026 — A2 normal fibers in 70D.** [A2 normal fibers of Gamma72](verifications/improved/dim70-gamma72-a2-fibers/) give **1,361,137,216** (+2,496), with three directly enumerated pairing classes of Gamma72 minima projected to their common 70-dimensional subspace.
 
+**22 November 2026 — Harmonic-theta shell profiles.** Exact constraints from weighted modular forms and rational graph bounds increase the certified kissing lower bounds in every dimension **74–85**. The largest gain is **7,405,724 in 85D**, giving **6,235,824,404**. [Exact replay](verifications/improved/dim74-85-gamma72-harmonic-latitudes/).
+
 **21 November 2026 — third shell marginal.** [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) sharpens the local triangle estimates in 77–85D. The largest gain is **4,508 in 85D**, giving **6,228,418,680**.
 
 **21 November 2026 — polyhedral norm-ten latitudes.** [Oriented icosahedral and D4 tails](verifications/improved/dim75-76-oriented-norm10-latitudes/) prove **6,218,276,173 in 75D** and **6,218,400,136 in 76D**.

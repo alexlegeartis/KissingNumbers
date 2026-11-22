@@ -1,5 +1,7 @@
 # Results
 
+22 November 2026: exact harmonic-theta constraints on joint shell profiles give twelve stronger existence lower bounds in 74–85D. The largest gain is 7,405,724 in 85D, reaching 6,235,824,404. [Exact replay](verifications/improved/dim74-85-gamma72-harmonic-latitudes/).
+
 22 November 2026: fourteen non-Steiner triality modes append another 14,336 rays each in 91D, 92D, and 93D. [Exact replay](verifications/improved/dim91-93-nonsteiner-triality-append/).
 
 22 November 2026: complementary parity Steiner modes append 40,960 rays each in 91D, 92D, and 93D. [Exact replay](verifications/improved/dim91-93-complementary-parity-steiner-append/).
@@ -237,18 +239,18 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 70 | 331 737 984 | **1 361 142 400** | 4.10 | `heads` | [Alternate Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-alternate-a2-normals/) |
 | 71 | 331 737 984 | **2 623 578 936** | 7.91 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 73 | 6 218 175 602 | **6 218 206 932** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
-| 74 | 6 218 175 606 | **6 218 211 606** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
-| 75 | 6 218 175 612 | **6 218 276 173** | 1.00 | `heads` | [Oriented polyhedral norm-ten latitude](verifications/improved/dim75-76-oriented-norm10-latitudes/) |
-| 76 | 6 218 175 624 | **6 218 400 136** | 1.00 | `heads` | [Oriented polyhedral norm-ten latitude](verifications/improved/dim75-76-oriented-norm10-latitudes/) |
-| 77 | 6 218 175 640 | **6 218 669 870** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
-| 78 | 6 218 175 672 | **6 218 992 206** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
-| 79 | 6 218 175 726 | **6 219 416 084** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
-| 80 | 6 218 175 840 | **6 219 962 106** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
-| 81 | 6 218 175 906 | **6 220 774 236** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
-| 82 | 6 218 176 110 | **6 222 089 254** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
-| 83 | 6 218 176 204 | **6 223 768 006** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
-| 84 | 6 218 176 441 | **6 225 863 462** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
-| 85 | 6 218 176 754 | **6 228 418 680** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
+| 74 | 6 218 175 606 | **6 218 213 549** | 1.00 | `cosets` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
+| 75 | 6 218 175 612 | **6 218 331 159** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
+| 76 | 6 218 175 624 | **6 218 635 448** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
+| 77 | 6 218 175 640 | **6 219 013 264** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
+| 78 | 6 218 175 672 | **6 219 716 626** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
+| 79 | 6 218 175 726 | **6 220 590 652** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
+| 80 | 6 218 175 840 | **6 221 713 348** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
+| 81 | 6 218 175 906 | **6 222 197 896** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
+| 82 | 6 218 176 110 | **6 224 427 690** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
+| 83 | 6 218 176 204 | **6 227 374 552** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
+| 84 | 6 218 176 441 | **6 231 140 058** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
+| 85 | 6 218 176 754 | **6 235 824 404** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
 | 86 | 6 218 177 532 | **8 008 552 282** | 1.29 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 87 | 6 218 178 164 | **8 160 988 416** | 1.31 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 88 | 6 218 179 920 | **13 357 793 920** | 2.15 | `codes` | [Signed plane and row designs](verifications/improved/dim88-89-signed-row-designs/)
