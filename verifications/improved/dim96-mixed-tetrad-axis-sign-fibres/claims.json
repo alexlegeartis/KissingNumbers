@@ -2,8 +2,8 @@
   "dimension": 96,
   "previous": 209295249216,
   "geometries": 27,
-  "axis_modes": 16156,
+  "axis_modes": 18504,
   "old_active_interfaces": 60,
-  "gain": 4054112,
-  "lower_bound": 209299303328
+  "gain": 4621984,
+  "lower_bound": 209299871200
 }

@@ -1,8 +1,8 @@
 # Mixed three-tetrad axis and sign fibres in dimension 96
 
-The exact lower bound is **209,299,303,328**, up **4,054,112** from
+The exact lower bound is **209,299,871,200**, up **4,621,984** from
 209,295,249,216. All previously certified points are retained. The new
-layer comprises 27 additional modes, using 16,156 distinct
+layer comprises 27 additional modes, using 18,504 distinct
 (mode, axis word) pairs with nonempty sign fibres.
 
 A mode is specified by two binary Golay octads whose intersection has

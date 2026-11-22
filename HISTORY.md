@@ -35,7 +35,7 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **22 November 2026 — Adapted dodecads in 94D and 95D.** The joint projection and sign-kernel construction adds **1,052,224** points in each dimension without removing any prior point. [Exact replay](verifications/improved/dim94-95-adapted-dodecad-fibres/).
 
-**22 November 2026 — Mixed-tetrad axis and sign fibres in 96D.** Exact off-frame projections and adapted sign kernels permit 27 more dodecad patterns, adding **4,054,112** points while retaining the previous construction. New bound: **209,299,303,328**. [Exact replay](verifications/improved/dim96-mixed-tetrad-axis-sign-fibres/).
+**22 November 2026 — Mixed-tetrad axis and sign fibres in 96D.** Exact off-frame projections and adapted sign kernels permit 27 more dodecad patterns, adding **4,621,984** points while retaining the previous construction. New bound: **209,299,871,200**. [Exact replay](verifications/improved/dim96-mixed-tetrad-axis-sign-fibres/).
 
 **22 November 2026 — Adapted dodecad sign kernels.** Choosing distance checks after fixing the active projection constraints admits **1,216,736** points in a replacement dodecad layer, an increase of **827,308** over the first joint append, for **209,295,249,216** in 96D. [Exact replay](verifications/improved/dim96-adapted-dodecad-fibres/).
 
