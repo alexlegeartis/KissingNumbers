@@ -783,6 +783,10 @@ with io.open(os.path.join(IMP, 'dim91-93-triality-matching-transfer', 'claims.js
     for _row in json.load(_file)['claims']:
         add(_row['dimension'], _row['lower_bound'], 'dim91-93-triality-matching-transfer', 'verify.py: exact triality and matching-row transfer')
 
+with io.open(os.path.join(IMP, 'dim94-95-matching-row-append', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file)['claims']:
+        add(_row['dimension'], _row['lower_bound'], 'dim94-95-matching-row-append', 'verify.py: exact matching-row append')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
