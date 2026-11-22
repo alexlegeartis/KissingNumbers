@@ -47,11 +47,13 @@ def main():
     U,n=oldsupports(96);assert n==24
     V=[tuple(map(int,l.split()))for l in pin(base+'best6_96.txt','bef34cfc76b36934686b7714d20299e53c1ea4ca').read_text().splitlines()]
     assert len(V)==len({s for s,p in V})==219 and all(s.bit_count()==6 and p&s==p and s<1<<24 for s,p in V)
-    W=[tuple(map(int,l.split()))for l in (P/'witness.txt').read_text().splitlines()]
+    files=[(P/f).read_text().splitlines() for f in ('witness.txt','witness_extra.txt')]
+    assert [len(f) for f in files]==[822,348]
+    W=[tuple(map(int,l.split())) for f in files for l in f]
     assert len(W)==len(set(W))
     for a,e,o in W:
         assert all(0<=u<1<<24 for u in (a,e,o)) and not(a&e or a&o or e&o)
-        s=a|e|o;assert s.bit_count()==6 and a.bit_count() in (2,3)
+        s=a|e|o;assert s.bit_count()==6 and a.bit_count() in (1,2,3)
         G=[15<<(4*q)for q in range(6)]
         # The amplitude-four RS groups of four rows align here. Since the
         # grouped norm-96 roots use both physical entries in one group, its
@@ -77,13 +79,15 @@ def main():
     # point. Sparse shifted matching uses 12 ordinary rows while this uses 6,
     # amplitude-four RS has 6 individual nonzeros vs 15 or 18 here, old roots 2,
     # and dense vectors use all 24 rows.
-    assert 6<12<24 and min(2+4*4,3+4*3)>6
+    assert 6<12<24 and min(1+4*5,2+4*4,3+4*3)>6
     old=json.loads(pin(base+'claims.json','766a432c247d00a349629e5daaea0686e2e55f47').read_text())[-1]
     assert old['dimension']==96 and old['lower_bound']==209287080768
     unit=geometry()
     tally=Counter(a.bit_count()for a,_,_ in W)
     gain=len(W)*unit
-    out=dict(dimension=96,previous=old['lower_bound'],patterns=dict(sorted(tally.items())),per_pattern=unit,gain=gain,lower_bound=old['lower_bound']+gain)
+    construction_base=old['lower_bound']
+    previous=construction_base+822*unit
+    out=dict(dimension=96,previous=previous,patterns=dict(sorted(tally.items())),per_pattern=unit,gain=348*unit,lower_bound=construction_base+gain,construction_base=construction_base,construction_gain=gain)
     assert json.loads(json.dumps(out))==json.loads((P/'claims.json').read_text())
     print(json.dumps(out,indent=2))
 if __name__=='__main__':main()

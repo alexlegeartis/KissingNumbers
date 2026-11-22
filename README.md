@@ -15,7 +15,7 @@ The twelve-fiber continuation gives **12,884,901,888 in 88D** (+34.34659% over t
 
 Two asymmetric latitude pairs and [353 new Golay support patterns](verifications/improved/dim88-89-golay-variable-punctures/) raise **89D to 15,177,390,082** (+1,125,793,792 over the prior repository construction). The same new patterns also improve **88D to 13,029,906,432**.
 
-Larger [shifted dodecacode lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) and [BCH and complementary parity flat layers](verifications/improved/dim94-96-hexary-parity-packing/) are retained in the [mixed triality construction](verifications/improved/dim96-mixed-triality-six-rows/), which reaches **209,290,447,680 in 96D**. The separate [108-head E7 construction](verifications/improved/dim95-e7-108-heads/) with BCH flat phases reaches **117,088,390,212 in 95D**.
+Larger [shifted dodecacode lists](verifications/improved/dim92-96-shifted-dodecacode-outer-extension/) and [BCH and complementary parity flat layers](verifications/improved/dim94-96-hexary-parity-packing/) are retained in the [mixed triality construction](verifications/improved/dim96-mixed-triality-six-rows/), which reaches **209,291,873,088 in 96D**. The separate [108-head E7 construction](verifications/improved/dim95-e7-108-heads/) with BCH flat phases reaches **117,088,390,212 in 95D**.
 
 Individually normalized Z8 fibers and the [enlarged flat layer](verifications/improved/dim91-93-flat-parity-extensions/) reach **25,917,421,568 in 91D**, **34,507,356,160 in 92D**, and **47,392,258,048 in 93D**.
 
@@ -96,7 +96,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 93 | 17 179 869 184 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **47 397 139 984** | **SOTA** | +175.887665% | — | updated 2026-11-22 | [Triality and matching-row transfer](verifications/improved/dim91-93-triality-matching-transfer/) | — |
 | 94 | 34 359 738 368 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **74 139 180 748** | **SOTA** | +115.773415% | — | updated 2026-11-22 | [Matching-row append](verifications/improved/dim94-95-matching-row-append/) | — |
 | 95 | 68 719 476 736 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) *(shortened)* | **117 088 854 084** | **SOTA** | +70.386708% | — | updated 2026-11-22 | [Matching-row append](verifications/improved/dim94-95-matching-row-append/) | — |
-| 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) | **209 290 447 680** | **SOTA** | +52.278843% | — | updated 2026-11-22 | [Mixed triality six-row append](verifications/improved/dim96-mixed-triality-six-rows/) | — |
+| 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code](https://doi.org/10.1109/18.923742) | **209 291 873 088** | **SOTA** | +52.279880% | — | updated 2026-11-22 | [Mixed triality six-row append](verifications/improved/dim96-mixed-triality-six-rows/) | — |
 
 ## Recent updates
 

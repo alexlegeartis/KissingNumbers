@@ -1,11 +1,14 @@
 {
   "dimension": 96,
-  "previous": 209287080768,
+  "previous": 209290447680,
   "patterns": {
-    "2": 262,
-    "3": 560
+    "1": 2,
+    "2": 539,
+    "3": 629
   },
   "per_pattern": 4096,
-  "gain": 3366912,
-  "lower_bound": 209290447680
+  "gain": 1425408,
+  "lower_bound": 209291873088,
+  "construction_base": 209287080768,
+  "construction_gain": 4792320
 }
