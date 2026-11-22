@@ -55,6 +55,8 @@ def verify(compiler, workers):
     for i, r in enumerate(norms):
         for j in range(max(1, i), len(norms)):
             s = norms[j]
+            if not len(groups[r]) or not len(groups[s]):
+                continue
             maximum, _ = parent.max_product(groups[r], groups[s], gram, i == j, False)
             assert maximum <= 0 or 4 * maximum**2 <= r * s
             n, m = len(groups[r]), len(groups[s])

@@ -190,15 +190,24 @@ automatically when their difference class is one of these 16. The
 rank-40 minimum-shell sweep over 2,240 centres in each complement
 found maxima of eight available points for \(P_{48p}\), nine for
 \(P_{48q}\) and ten for \(P_{48n}\). For \(P_{48q}\), joint selection
-over the strongest centres combines 30 norm-36 points with seven
-norm-six points. The independent certificate re-enumerates the core
-and checks its exact angles with every explicit point.
-[1,126,351-point certificate](../../verifications/improved/dim40-p48q-affine-refill/).
+over the strongest centres initially combined 30 norm-36 points with
+seven norm-six points. Checking the classes with three short
+differences then added three more points to that configuration.
 
 Using the stronger difference bound for the 16 empty classes leaves
 the complete-short-family maximum at 41,724 points beside the core
-in each of the 2,240 \(P_{48q}\) centres. A separate pointwise search
-permitted each proposal to displace up to five short-layer points. In
-the 128 highest-ranked centres tested, the best net refill stayed at
-37 points. The pointwise result applies to proposals from the empty
-difference classes and the available minimum-shell points.
+in each of the 2,240 \(P_{48q}\) centres. A pointwise search over the
+empty difference classes in all 2,240 centres attains a best net
+refill of 37 when each proposal can displace up to five short-layer
+points.
+
+Including difference shells with three or six vectors makes it
+profitable to displace short-layer points jointly. Sixteen centres
+admit a net gain of 51 over their complete affine construction. The
+published witness adds 93 norm-36 points and removes 30 norm-36
+and 12 norm-30 points. Exact searches over all difference classes
+whose shortest normal representative has squared norm \(8/3\)
+give a maximum net gain of 51 across the 96 centres tested. Adding the
+difference classes of normal squared norm two in 18 tested centres,
+or allowing eight blockers in six centres, gives the same maximum.
+[1,126,365-point certificate](../../verifications/improved/dim40-p48q-affine-refill/).

@@ -195,7 +195,7 @@ Latest 39D: **783,468**. The [three-coordinate QR certificate](verifications/imp
 
 Earlier 39D: **774,972** (up 5,120). The [five-head QR verification](verifications/improved/dim39-qr-pentapolar/) checks the shortened kernel, all fibre distance minima, all sparse supports, and exact sparse–dense angular inequalities.
 
-The latest 40D result gives **1,126,351** using empty short-difference classes in the \(P_{48q}\) complement. The replay proves the lattice minimum, enumerates the 1,084,590-point affine core and checks all remaining unordered pairs. [40D P48q proof](verifications/improved/dim40-p48q-affine-refill/).
+The latest 40D result gives **1,126,365** with a joint short-layer exchange in the \(P_{48q}\) complement. The replay proves the lattice minimum, enumerates the 1,084,590-point affine core and checks all remaining unordered pairs. [40D P48q proof](verifications/improved/dim40-p48q-affine-refill/).
 
 The \(P_{48n}\) construction gave **1,126,327** with an alternate affine centre and thirteen individual short-shell points. Its two replays check the gluing geometry and enumerate the affine core. [40D P48n proof](verifications/improved/dim40-affine-centre-refill/).
 

@@ -1,16 +1,15 @@
 # 40D affine refill in the P48q complement
 
-This construction gives **1,126,351** kissing points, an increase of 24
+This construction gives **1,126,365** kissing points, an increase of 38
 over the preceding affine construction. It uses the rank-40 complement
 of \(\sqrt{3}E_8\) in \(P_{48q}\).
 [Preceding certificate](../dim40-affine-centre-refill/).
 
-| Coefficient squared norm | Core or complete short families | Refill |
-|---:|---:|---:|
-| 54 | 1,084,590 | 0 |
-| 36 | 40,590 | 30 |
-| 30 | 1,134 | 0 |
-| 6 | 0 | 7 |
+| Coefficient squared norm | Starting points | Removed | Added | Retained total |
+|---:|---:|---:|---:|---:|
+| 54 | 1,084,590 | 0 | 0 | 1,084,590 |
+| 36 | 40,590 | 30 | 93 | 40,653 |
+| 30 | 1,134 | 12 | 0 | 1,122 |
 
 The search enumerated the complete shortest dual shell. In the
 \(P_{48q}\) complement, 16 discriminant classes whose shortest normal
@@ -18,9 +17,13 @@ representatives have squared norm \(8/3\) contain no bodies of squared
 norm \(10/3\). If a candidate of coefficient squared norm 36 has one of
 those classes as its difference from the core class, a forbidden
 core contact would force a difference of coefficient squared norm 30.
-The empty shell makes the candidate compatible with the entire core.
-The search then selected the refill vectors jointly against the
-short families and the available norm-six points.
+Among the 93 additions, 69 have empty difference shells. The other 24
+have difference shells of size three or six. Each possible contact
+is tested against the corresponding short difference shell. A joint
+integer optimization selects compatible additions and charges each
+displaced short-layer point once, even if several additions displace
+it. The resulting trade adds a net 51 points to the complete affine
+construction at centre 86.
 
 Dorofeev, Sun and Wang supplied the rank-40 lattice. The basis used here
 is an integer re-reduction of the published Gram matrix.

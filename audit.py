@@ -2627,7 +2627,7 @@ if '--write-results' in sys.argv and not fail:
         'dim39-qr-pentapolar': 'QR quotient fibres at five rational heads with exact sparse pruning',
         'dim40-affine-shells': 'affine lattice shells and eight minimum-shell vectors, verified by exact integer products',
         'dim40-affine-centre-refill': 'alternate affine centre and thirteen individual short-shell points',
-        'dim40-p48q-affine-refill': 'P48q affine core and empty difference classes',
+        'dim40-p48q-affine-refill': 'P48q affine core and joint short-layer exchange',
         'dim38-latitude-extension': '24 additional latitude points and an exact rational axis rotation over the Leech caps and Lin equator',
         'dim39-root-replacements': 'four neutral support substitutions and 64-for-56 root replacements over the ERS layers',
         'dim28-joint-leech-layers': 'joint selection of even Leech heads and auxiliary layers over Li\'s odd blocks; exact arithmetic replay',
@@ -2661,7 +2661,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
-    out.append('22 November 2026 — Empty short-difference classes in the P48q complement raise 40D to 1126351 (+24). [Exact replay](verifications/improved/dim40-p48q-affine-refill/).')
+    out.append('22 November 2026 — A joint short-layer exchange in the P48q complement raises 40D to 1126365 (+38 over the P48n construction). [Exact replay](verifications/improved/dim40-p48q-affine-refill/).')
     out.append('22 November 2026 — An alternate affine centre and thirteen individual short-shell points raise 40D to 1126327 (+5). [Exact replays](verifications/improved/dim40-affine-centre-refill/).')
     out.append('22 November 2026 — Coxeter–Todd triangle switches and a three-block phase refill raise 36D to 502902 (+81). [Exact replays](verifications/improved/dim36-ct-triangle-refill/).')
     out.append('22 November 2026: a 576-point 12-flat repacking replaces 384 octad phases and gives 544666 in 37D (+192). [Exact replay](verifications/improved/dim37-qr-flat-repack/).')
