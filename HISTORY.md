@@ -19,6 +19,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **22 November 2026 — QR 12-flat phase repacking.** **544,666** in 37D (+192 over the radical-family construction), replacing 384 all-phase octad points with a 576-point paired-coordinate parity code. The [448-point refill](https://github.com/alexlegeartis/KissingNumbers/commit/9124b78a1e2eed5132d0fe3e14669e0e451e8b11) was an intermediate step. [Exact replay](verifications/improved/dim37-qr-flat-repack/).
 
+**22 November 2026 — Exterior BCH cap bodies.** **336,256,796** in 65D (+327,680); **342,389,558** in 66D (+8,192); **355,195,391** in 67D (+12,288). [Exact replay](verifications/improved/dim65-67-bch-exterior-caps/).
+
 **22 November 2026 — Kerdock-axis owner lifts.** **342,381,366** in 66D (+8,188); **355,183,103** in 67D (+12,282). [Exact replay](verifications/improved/dim66-67-kerdock-axis-owners/).
 
 **22 November 2026 — Complementary parity six-row packings.** **74,138,716,876** in 94D (+1,245,184); **117,088,390,212** in 95D (+1,245,184); **209,287,080,768** in 96D (+1,794,048). [Exact replay](verifications/improved/dim94-96-hexary-parity-packing/).

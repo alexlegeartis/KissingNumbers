@@ -1,0 +1,7 @@
+{
+  "dimensions": [
+    {"dimension":65,"previous":335929116,"lower_bound":336256796,"gain":327680},
+    {"dimension":66,"previous":342381366,"lower_bound":342389558,"gain":8192},
+    {"dimension":67,"previous":355183103,"lower_bound":355195391,"gain":12288}
+  ]
+}

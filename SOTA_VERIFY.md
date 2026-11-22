@@ -8,6 +8,8 @@ The [Marked caps and nine-support refill](verifications/improved/dim61-62-marked
 
 The [Balanced signed nine-support refill](verifications/improved/dim63-balanced-nine-refill/) replays with `python verifications/improved/dim63-balanced-nine-refill/verify.py`.
 
+The [exterior BCH cap bodies](verifications/improved/dim65-67-bch-exterior-caps/) raise 65D to **336,256,796**, 66D to **342,389,558**, and 67D to **355,195,391**. Replay `python verifications/improved/dim65-67-bch-exterior-caps/verify.py`; the optional Node checker establishes the scoped fixed-cap no-append result in 65D.
+
 The [Kerdock-axis owner lifts](verifications/improved/dim66-67-kerdock-axis-owners/) replay with `python verifications/improved/dim66-67-kerdock-axis-owners/verify.py`.
 
 The [Complementary parity six-row packings](verifications/improved/dim94-96-hexary-parity-packing/) replay with `python verifications/improved/dim94-96-hexary-parity-packing/verify.py`.

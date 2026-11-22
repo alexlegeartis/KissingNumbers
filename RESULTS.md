@@ -2,6 +2,8 @@
 
 21 November 2026: joint signed-star/root repacking adds 16 stars for 14 signed roots, giving 415360 in 35D (+2 over 415358). [Exact replay](verifications/improved/dim35-joint-star-root/).
 
+22 November 2026: a distance-22 BCH cap and exterior translates raise 65–67D to 336256796, 342389558 and 355195391. [Exact replay](verifications/improved/dim65-67-bch-exterior-caps/).
+
 22 November 2026: a 576-point 12-flat repacking replaces 384 octad phases and gives 544666 in 37D (+192). [Exact replay](verifications/improved/dim37-qr-flat-repack/).
 
 19 November 2026: 168 signed six-support families and two unit poles give 544474 in 37D (+10,610 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).
@@ -159,9 +161,9 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 62 | 52 417 932 | **122 668 916** | 2.34 | `codes` | [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/)
 | 63 | 52 418 564 | **184 426 297** | 3.52 | `codes` | [Balanced signed nine-support refill](verifications/improved/dim63-balanced-nine-refill/)
 | 64 | 331 737 984 | **335 795 354** | 1.01 | `codes` | [Partial signed nine-support fibers](verifications/improved/dim64-65-partial-nonary-signs/) 
-| 65 | 331 737 986 | **335 929 116** | 1.01 | `codes` | [Delsarte–Goethals dense owners](verifications/improved/dim65-dg-dense-owners/)
-| 66 | 331 737 990 | **342 381 366** | 1.03 | `codes` | [Kerdock-axis owner lifts](verifications/improved/dim66-67-kerdock-axis-owners/)
-| 67 | 331 737 996 | **355 183 103** | 1.07 | `codes` | [Kerdock-axis owner lifts](verifications/improved/dim66-67-kerdock-axis-owners/) |
+| 65 | 331 737 986 | **336 256 796** | 1.01 | `codes` | [Exterior BCH cap bodies](verifications/improved/dim65-67-bch-exterior-caps/)
+| 66 | 331 737 990 | **342 389 558** | 1.03 | `codes` | [Exterior BCH cap bodies](verifications/improved/dim65-67-bch-exterior-caps/)
+| 67 | 331 737 996 | **355 195 391** | 1.07 | `codes` | [Exterior BCH cap bodies](verifications/improved/dim65-67-bch-exterior-caps/) |
 | 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 137 216** | 4.10 | `heads` | [A2 normal fibers of Gamma72](verifications/improved/dim70-gamma72-a2-fibers/) |
@@ -262,7 +264,7 @@ refreshed table, not more search.
 | 49-60 | `dim49-60-p48-signed-refill` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 63-65 | `dim63-65-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
-| 67 | `dim67-signed-nine-refill` | exact signed phase comparisons and individual Netto deletions |
+| 65–67 | `dim65-67-bch-exterior-caps` | exact extended BCH codes, cap distances, inherited sparse geometry and counts |
 | 68-69, 71 | `dim68-91-lattice-code-continuation` | verify.py: exact slice/head geometry, code ranks, design moments and sparse counts; published source minima retained |
 | 70 | `dim70-gamma72-d4-planar-heads` | verify.py: exact same/cross-fiber geometry and fresh source-bound population replay |
 | 73-78 | `dim73-88-gamma72-cosets` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
