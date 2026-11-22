@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 22 November)</summary>
 
+**22 November 2026 — Rooted Γ72 profile exchange.** Rootwise double counts couple three harmonic profile systems, improving all twelve bounds in **74–85D**. The new 85D bound is **6,235,855,650** (+31,246). [Exact replay](verifications/improved/dim74-85-gamma72-rooted-exchange/).
+
 **22 November 2026 — 30D lifted contact midpoints.** An exchange of 340 new points for 250 old ones gives **248,506**, a gain of 90. The complete integer coordinates and exact pair checks are available in the [30D proof](verifications/improved/dim30-row-midpoint-packing/).
 
 **21 November 2026 — marked caps and refills.** [Two exact support exchanges](verifications/improved/dim61-62-marked-caps/) yield **89,082,322 in 61D** (+9,520) and **122,668,916 in 62D** (+9,840).

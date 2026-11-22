@@ -1,0 +1,98 @@
+[
+  {
+    "dimension": 74,
+    "previous": 6218213549,
+    "lower_bound": 6218213672,
+    "gain": 123,
+    "triangles": 1980519153993227743,
+    "selected": 38066
+  },
+  {
+    "dimension": 75,
+    "previous": 6218331159,
+    "lower_bound": 6218331258,
+    "gain": 99,
+    "triangles": 2119825978895366180,
+    "selected": 155646
+  },
+  {
+    "dimension": 76,
+    "previous": 6218635448,
+    "lower_bound": 6218636373,
+    "gain": 925,
+    "triangles": 2858460774878039535,
+    "selected": 460749
+  },
+  {
+    "dimension": 77,
+    "previous": 6219013264,
+    "lower_bound": 6219014956,
+    "gain": 1692,
+    "triangles": 2970280249706112042,
+    "selected": 839316
+  },
+  {
+    "dimension": 78,
+    "previous": 6219716626,
+    "lower_bound": 6219721604,
+    "gain": 4978,
+    "triangles": 5524107824654855322,
+    "selected": 1545944
+  },
+  {
+    "dimension": 79,
+    "previous": 6220590652,
+    "lower_bound": 6220599336,
+    "gain": 8684,
+    "triangles": 10233616552238969544,
+    "selected": 2423652
+  },
+  {
+    "dimension": 80,
+    "previous": 6221713348,
+    "lower_bound": 6221725998,
+    "gain": 12650,
+    "triangles": 28932005807982827659,
+    "selected": 3550286
+  },
+  {
+    "dimension": 81,
+    "previous": 6222197896,
+    "lower_bound": 6222202604,
+    "gain": 4708,
+    "triangles": 2516325293476104306,
+    "selected": 4026860
+  },
+  {
+    "dimension": 82,
+    "previous": 6224427690,
+    "lower_bound": 6224435960,
+    "gain": 8270,
+    "triangles": 2661767761116512158,
+    "selected": 6260180
+  },
+  {
+    "dimension": 83,
+    "previous": 6227374552,
+    "lower_bound": 6227388086,
+    "gain": 13534,
+    "triangles": 2816962676841791426,
+    "selected": 9212266
+  },
+  {
+    "dimension": 84,
+    "previous": 6231140058,
+    "lower_bound": 6231161058,
+    "gain": 21000,
+    "triangles": 2981973794877723366,
+    "selected": 12985194
+  },
+  {
+    "dimension": 85,
+    "previous": 6235824404,
+    "lower_bound": 6235855650,
+    "gain": 31246,
+    "triangles": 3156867304737950778,
+    "selected": 17679738
+  }
+]
