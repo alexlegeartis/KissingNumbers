@@ -49,6 +49,8 @@ The [88D full Pless census](verifications/improved/dim88-full-pless-chord-marks/
 
 The [rooted exchange in 74–85D](verifications/improved/dim74-85-gamma72-rooted-exchange/) replays with `python verifications/improved/dim74-85-gamma72-rooted-exchange/verify.py`. It uses exact double counts at each graph root, rational triangle duals and the inherited integer recurrence. These are existence bounds.
 
+The [finer exact Γ72 recurrence](verifications/improved/dim74-85-gamma72-fine-recurrence/) replays with `python verifications/improved/dim74-85-gamma72-fine-recurrence/verify.py`, verifies the rooted parent, and uses up to 32,768 blocks to certify the higher integer bounds in dimensions 74–85.
+
 The [harmonic-theta 74–85D latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) replay with `python verifications/improved/dim74-85-gamma72-harmonic-latitudes/verify.py`. The verifier rebuilds the harmonic shell identities, exact linear dual bounds and downward-rounded graph recurrence. These are existence bounds.
 
 The [Shaped Gamma72 norm-ten latitudes](verifications/improved/dim76-85-mixed-shape-norm10/) replays with `python verifications/improved/dim76-85-mixed-shape-norm10/verify.py`.

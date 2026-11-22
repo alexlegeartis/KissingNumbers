@@ -735,6 +735,10 @@ with io.open(os.path.join(IMP, 'dim74-85-gamma72-rooted-exchange', 'results.json
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim74-85-gamma72-rooted-exchange', 'verify.py: exact rooted shell profile exchange and rational graph certificate')
 
+with io.open(os.path.join(IMP, 'dim74-85-gamma72-fine-recurrence', 'results.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file):
+        add(_row['dimension'], _row['lower_bound'], 'dim74-85-gamma72-fine-recurrence', 'verify.py: finer exact rooted graph recurrence')
+
 # 21 November: A2 normal fibers in 70D.
 with io.open(os.path.join(IMP, 'dim70-gamma72-a2-fibers', 'claims.json'), encoding='utf-8') as _file:
     _row = json.load(_file)
