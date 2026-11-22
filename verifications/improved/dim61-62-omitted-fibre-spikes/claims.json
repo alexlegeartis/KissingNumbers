@@ -4,13 +4,15 @@
       "dimension": 61,
       "previous": 89082322,
       "construction_base": 89072802,
-      "lower_bound": 90055722,
-      "gain": 973400,
-      "inserted": 983040,
+      "lower_bound": 91038762,
+      "gain": 1956440,
+      "inserted": 1966080,
       "removed_poles": 120,
-      "points_per_axis": 16384,
+      "points_per_axis": 32768,
       "minimum_hamming": 24,
       "omitted_labels": [
+        4,
+        5,
         6,
         7
       ]

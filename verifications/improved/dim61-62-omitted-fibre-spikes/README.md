@@ -2,10 +2,10 @@
 
 | Dimension | Construction base | Inserted | Retired poles | New lower bound |
 |---:|---:|---:|---:|---:|
-| 61 | 89,072,802 | 983,040 | 120 | **90,055,722** |
+| 61 | 89,072,802 | 1,966,080 | 120 | **91,038,762** |
 | 62 | 122,659,076 | 1,966,080 | 120 | **124,625,036** |
 
-These improve the preceding marked-capsule bounds by 973,400 and
+These improve the preceding marked-capsule bounds by 1,956,440 and
 1,956,120, respectively. The stock for these constructions is the one
 *before* the marked-capsule exchanges, including the original append-only
 nine-support layer. We trade the older capsule gains for much larger
@@ -16,23 +16,26 @@ latitudes and all incumbent sparse layers. Its 60 ordinary coordinates
 remain after deleting coordinates 24, 42, 53 and 55 from a 64-coordinate
 binary code of minimum Hamming distance 16. The former dense points
 occupy deleted labels 0,1,2,3 in 61D and 0,1,3,7,6,4 in 62D.
-Use the omitted labels 6 and 7 in 61D, and omitted label 2 in 62D.
+Use the four omitted labels 4, 5, 6 and 7 in 61D, and omitted label 2 in 62D.
 
 Use all 60 ordinary axes as marks. On a marked axis put the magnitude `a b` and
 on the 59 other ordinary axes put magnitude `b`, with the unaltered signs
-of a binary word in the omitted fibre. In 61D take `a = 11/2` and
-heads `+2/5` and `−2/5` for labels 6 and 7; in 62D take `a = 9/2` and head zero. Scale the ordinary
+of a binary word in the omitted fibre. In 61D the profiles are
+`a = 23/4` with heads `+3/2`, `−3/2` for labels 4, 5 and
+`a = 11/2` with heads `+2/5`, `−2/5` for labels 6, 7. In 62D
+take `a = 9/2` and head zero. Scale the ordinary
 part by `b² = (64 − r²)/(59 + a²)`.
 
 For 61D, relabel the original code by the explicit six-bit affine
 coordinate list in the verifier. It checks that every quadratic
 Reed–Muller row belongs to the actual original binary code. The
 Delsarte–Goethals construction gives 131,072 words in this subspace
-with minimum distance 24. Each of labels 6 and 7 selects 8,192 words.
+with minimum distance 24. Each of labels 4–7 selects 8,192 words.
 Assign each marked coordinate one of 60 distinct prefix-zero shifts
-modulo this quadratic subspace. Within a mark the two labels differ
-on one deleted position, so the cross-phase Hamming distance is at
-least 23 on the body and the two heads oppose.
+modulo this quadratic subspace. The four exact angular profiles
+account for the coordinate differences lost at each pair of deleted
+labels and the product of their tails. The two new labels add
+983,040 points without removing any of the previous points.
 
 For 62D, an explicit rank-15 binary subcode of distance 20 in the common
 shortened kernel supplies 32,768 points on each selected marked

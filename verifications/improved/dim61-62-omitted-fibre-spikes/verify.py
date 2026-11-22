@@ -96,8 +96,9 @@ def dg61(G,K):
     assert min((ev(f)^t).bit_count() for f in differences for t in H)==24
     Z=[ev(f)^t for f in forms for t in H]
     assert len(Z)==len(set(Z))==131072
-    Z=[x for x in Z if prefix(x) in (6,7)]
-    assert sum(prefix(x)==6 for x in Z)==sum(prefix(x)==7 for x in Z)==8192
+    labels=(4,5,6,7)
+    Z=[x for x in Z if prefix(x) in labels]
+    assert all(sum(prefix(x)==u for x in Z)==8192 for u in labels)
     # Prefix-zero representatives of K / (K intersect RM2). Lift each
     # residual using an actual K word so that translation preserves labels.
     extras=[]
@@ -152,7 +153,7 @@ def verify():
         use=list(range(60))
         if d==61:
             per_axis,dist,chosen=dg61(G,K)
-            assert 7 not in occ and (6^7).bit_count()==1
+            assert not set((4,5,6,7)).intersection(occ)
             assert len(chosen)==60
         else:
             # An explicit binary rank-15 distance-20 subcode.
@@ -172,48 +173,50 @@ def verify():
                 reserved.update(x^y for y in J)
                 if len(chosen)==len(use):break
             assert len(chosen)==len(use)==60 and len(reserved)==len(chosen)*len(J)
-        # A point copies the signs of L + K[x] + Z on the physical
-        # 60-coordinate body (no sign flips), with heavy factor a versus
-        # regular 1. Its head is +r for 61D label six, -r for label seven,
-        # or (0,0) for 62D.
-        a,r,B=dat["a"],dat["r"],dat["bmax"]
-        r2=r*r
-        b2=(64-r2)/(59+a*a)
-        assert b2<B*B and b2*a*a>16 and 59*b2+a*a*b2+r2==64
-        # Old even-versus-odd weight sixteen ensures one flipped sign on
-        # every overlap with the mark, and primary checked body has no tail.
-        assert 2*(a+13)*B<32 and 32*B<32
-        # Old retained signed W4, W9 and individual axes.
-        assert 4*max((a+3)*B,(a+2)*B+r)<32
-        assert Q(8,3)*max((a+8)*B,(a+7)*B+r)<32
-        assert 8*max(B,r)<32
-        # Distinct dense old words: original binary distance at least 16.
-        # If all deleted differences number k, the body loses precisely k.
-        # The two cases (agree, disagree on the heavy sign) are bounded by
-        # the first, as a>1. A signed matching body cross has sum<=a+27+2k.
-        raw=[a+27+2*(v^u).bit_count() for v in occ]
+        # Points copy the signs of one omitted parent codeword. Each
+        # mark has its own quotient coset; each deleted label specifies
+        # an exact latitude and its signed tail.
         if d==61:
-            c=Q(33,32);assert c*c>Q(17,16)
-            assert raw==[Q(73,2),Q(77,2),Q(69,2),Q(73,2)]
-            assert max(raw[0]*B+2*r,raw[1]*B-2*r,
-                       raw[2]*B*c+r/2,raw[3]*B*c-r/2)<32
-            # Label 7 swaps the first two and last two comparisons and
-            # reverses the tail. Hence it has the exact same envelopes.
-            assert [a+27+2*(v^7).bit_count() for v in occ]==[raw[i] for i in (1,0,3,2)]
+            profiles=[(4,Q(23,4),Q(3,2),Q(819,1000)),
+                      (5,Q(23,4),Q(-3,2),Q(819,1000)),
+                      (6,Q(11,2),Q(2,5),Q(847,1000)),
+                      (7,Q(11,2),Q(-2,5),Q(847,1000))]
+            old=[(0,Q(1),Q(2)),(1,Q(1),Q(-2)),
+                 (2,Q(17,16),Q(1,2)),(3,Q(17,16),Q(-1,2))]
         else:
-            assert set(raw)=={Q(67,2),Q(71,2)}
-            assert max(raw)*B<32
-        # Exact new-pair inequalities. On the same mark the span's min
-        # distance dist gives >=2 dist loss of scaled body product; if
-        # heavy sign differs the loss is even greater. Different marks
-        # have disjoint owner cosets, hence body distance >=16, since
-        # every owner has the same deleted label. The heavy factors can
-        # add at most 2(a-1) to the ordinary signed sum.
-        assert (a*a+59-2*dist)*b2+r2<=32
-        assert (60-2*16+2*(a-1))*b2+r2<=32
-        if d==61:
-            assert (a*a+59-2*(dist-1))*b2-r2<=32
-            assert (60-2*15+2*(a-1))*b2+r2<=32
+            profiles=[(u,dat["a"],dat["r"],dat["bmax"])]
+            old=[(v,Q(1),Q(0)) for v in occ]
+        coords=[]
+        def cap(scale2, coeff, tail):
+            # If the body envelope is positive, remove its radical by
+            # squaring against the nonnegative budget.
+            if coeff>0:
+                assert 32-tail>=0 and scale2*coeff*coeff<=(32-tail)**2
+            else:
+                assert tail<=32
+        for u,a,r,B in profiles:
+            assert u not in occ
+            b2=(64-r*r)/(59+a*a)
+            assert b2<B*B and b2*a*a>16 and b2*(59+a*a)+r*r==64
+            # Every old W16 is supported only in ordinary coordinates,
+            # and at least one sign disagrees by the dual-code argument.
+            cap(b2,2*(a+13),0);cap(b2,32,0)
+            # Old W4, W9 and retained axes. A support containing the
+            # head and mark spends only the stated number of other slots.
+            cap(b2,4*(a+3),0);cap(b2,4*(a+2),4*abs(r))
+            cap(b2,Q(8,3)*(a+8),0);cap(b2,Q(8,3)*(a+7),Q(8,3)*abs(r))
+            cap(b2,8,0);assert 8*abs(r)<=32
+            # Dense owners of each old latitude have squared entry
+            # magnitude c2; distance in the ordinary body is at least
+            # 16 minus the difference on the four deleted positions.
+            for v,c2,t in old:
+                cap(b2*c2,a+27+2*(v^u).bit_count(),r*t)
+            coords.append((u,a,r,b2))
+        for i,(u,a,r,b2) in enumerate(coords):
+            for v,c,t,f2 in coords[i:]:
+                k=(u^v).bit_count()
+                cap(b2*f2,a*c+59-2*(dist-k),r*t)
+                cap(b2*f2,58+a+c-2*(16-k),r*t)
         # Reconstruct the certified stock immediately before the
         # distinguished-capsule exchanges, including its original
         # append-only nonary layer (every such point satisfies the above).
@@ -231,7 +234,7 @@ def verify():
         out.append(dict(dimension=d,previous=prior["lower_bound"],construction_base=stock_total,
                         lower_bound=total,gain=total-prior["lower_bound"],inserted=n,
                         removed_poles=gone,points_per_axis=per_axis,minimum_hamming=dist,
-                        omitted_labels=[6,7] if d==61 else [2]))
+                        omitted_labels=[4,5,6,7] if d==61 else [2]))
     return dict(dimensions=out)
 
 if __name__=="__main__":print(json.dumps(verify(),indent=2))
