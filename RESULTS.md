@@ -8,6 +8,8 @@
 
 22 November 2026: signed plane and row designs add 24268 in 88D and 2069008 in 89D. [Exact replay](verifications/improved/dim88-89-signed-row-designs/).
 
+22 November 2026: triality and matching-row transfer adds 4881936 in each of 91–93D. [Exact replay](verifications/improved/dim91-93-triality-matching-transfer/).
+
 22 November 2026: rotated layers add 6444 each in 86D and 87D and 10912 in 90D. [Exact replay](verifications/improved/dim86-87-90-rotated-plane-trades/).
 
 22 November 2026: GF(8) norm pole replacement adds 784 in 63D and 896 per dimension in 64–67D. [Exact replay](verifications/improved/dim63-67-gf8-norm-poles/).
@@ -198,9 +200,9 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 88 | 6 218 179 920 | **13 357 793 920** | 2.15 | `codes` | [Signed plane and row designs](verifications/improved/dim88-89-signed-row-designs/)
 | 89 | 6 218 181 330 | **15 184 866 834** | 2.44 | `codes` | [Mixed matching-row codes](verifications/improved/dim89-mixed-matching-rows/)
 | 90 | 6 218 183 254 | **21 943 640 934** | 3.53 | `codes` | [Pless weight 15 words with nonlinear 7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |
-| 91 | 6 218 187 548 | **25 917 421 568** | 4.17 | `codes` | [Asymmetric head planes and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/)
-| 92 | 8 589 934 592 | **34 507 356 160** | 4.02 | `codes` | [Variable-radius fibers and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/)
-| 93 | 17 179 869 184 | **47 392 258 048** | 2.76 | `codes` | [Variable-radius fibers and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/)
+| 91 | 6 218 187 548 | **25 922 303 504** | 4.17 | `codes` | [Triality and matching-row transfer](verifications/improved/dim91-93-triality-matching-transfer/)
+| 92 | 8 589 934 592 | **34 512 238 096** | 4.02 | `codes` | [Triality and matching-row transfer](verifications/improved/dim91-93-triality-matching-transfer/)
+| 93 | 17 179 869 184 | **47 397 139 984** | 2.76 | `codes` | [Triality and matching-row transfer](verifications/improved/dim91-93-triality-matching-transfer/)
 | 94 | 34 359 738 368 | **74 138 716 876** | 2.16 | `codes` | [Complementary parity six-row packings](verifications/improved/dim94-96-hexary-parity-packing/)
 | 95 | 68 719 476 736 | **117 088 390 212** | 1.70 | `codes` | [Complementary parity six-row packings](verifications/improved/dim94-96-hexary-parity-packing/)
 | 96 | 137 438 953 472 | **209 287 080 768** | 1.52 | `codes` | [Complementary parity six-row packings](verifications/improved/dim94-96-hexary-parity-packing/)
