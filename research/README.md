@@ -1,5 +1,7 @@
 # Research campaigns
 
+[Discrete exchanges in dimensions 25–31](low_dimensional_exchanges_20261122.md) give **248,506 in 30D**, a gain of 90.
+
 These packages preserve construction searches, exact certificates for restricted
 families, and checks of published constructions. The November 13 campaigns
 improve 69D first by 7.8424% and then by another 0.377%, strengthen code layers
@@ -9,6 +11,17 @@ campaign improves 27D and 31D; the 43D packages record a separate discovery and
 its reproduction by the engine. The earlier lower-dimensional campaigns below
 produced no new kissing-number lower bound. Registered constructions remain in
 [`../verifications/`](../verifications/) and [`../RESULTS.md`](../RESULTS.md).
+
+## 21–22 November discrete 27D search
+
+The [27D checkpoint](dim27_discrete_20261121/) replays Takhanov's 210,108-point
+certificate and records exact exclusions for native fibre exchanges, the
+integer kernel, head-frame changes and two-code fusions. It includes a finite
+Barnes–Wall refill model for an additional fibre class. The November 22
+search constructs at least 283 non-isometric configurations at 210,108. It
+checks all 452,088,000 Leech contact midpoints against every one of the
+2^32 midpoint switch assignments and exhausts signed one-fibre trades.
+The search found no larger configuration.
 
 ## 14 November continuation in 26D and 27D
 

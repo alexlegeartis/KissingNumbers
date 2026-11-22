@@ -9,7 +9,9 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <a id="week-2026-11-16"></a>
 
 <details>
-<summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 21 November)</summary>
+<summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 22 November)</summary>
+
+**22 November 2026 — 30D lifted contact midpoints.** An exchange of 340 new points for 250 old ones gives **248,506**, a gain of 90. The complete integer coordinates and exact pair checks are available in the [30D proof](verifications/improved/dim30-row-midpoint-packing/).
 
 **21 November 2026 — marked caps and refills.** [Two exact support exchanges](verifications/improved/dim61-62-marked-caps/) yield **89,082,322 in 61D** (+9,520) and **122,668,916 in 62D** (+9,840).
 
@@ -528,7 +530,7 @@ comparison is given separately by its source.
 |---|---:|---:|---|---:|
 | 25 | 197 579 | 197 583 | [Takhanov–Yun](https://github.com/k-nic/kissing_d25-31) | 197 586 |
 | 29 | 209 968 | 210 495 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 232 154 |
-| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 248 416 |
+| 30 | 221 012 | 222 073 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 248 506 |
 | 31 | 238 662 | 241 079 | [K. Li](https://github.com/Felpix-Studios/kissing-number/tree/main/preprints/leech-lift-d28-d31) | 251 524 |
 | 38 | 591 612 | 605 322 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 652 028 |
 | 39 | 756 116 | 768 916 | [Q. Lin](https://github.com/QH-Lin/kissing-numbers-33-39) | 769 852 |

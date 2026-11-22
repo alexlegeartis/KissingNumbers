@@ -1,0 +1,30 @@
+[
+  {
+    "verified": true,
+    "dimension": 30,
+    "geometry": {
+      "count": 248506,
+      "dimension": 30,
+      "antipodal_pairs": 123822,
+      "unpaired_points": 862,
+      "unordered_pairs": 30877491765,
+      "maximum_inner_product": 64,
+      "squared_norm": 128,
+      "inner_product_limit": 64,
+      "kernel": "binary32 exact bounded integers",
+      "absolute_partial_sum_bound": 1920,
+      "matrix_blocks": 649
+    },
+    "exchange": {
+      "source_count": 248416,
+      "retained": 248166,
+      "removed": 250,
+      "added": 340,
+      "gain": 90,
+      "changed_unordered_pairs": 84434070,
+      "maximum_changed_inner_product": 64,
+      "kernel": "direct signed int64"
+    },
+    "coordinate_array_sha256": "dddd272c46650a89e82c3f29b984ba4a4ec254161c9c8e9d154dc639e564ca78"
+  }
+]

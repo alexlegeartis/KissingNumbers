@@ -1,0 +1,531 @@
+{
+  "source_geometry": {
+    "dimension": 27,
+    "count": 210108,
+    "squared_norm": 128,
+    "maximum_dot": 64,
+    "antipodal_pairs": 104964,
+    "singletons": 180,
+    "unordered_pairs": 22072580778,
+    "absolute_sum_bound": 1728,
+    "coordinate_sha256": "ba50b047bd330934d1c5e2fa72a971c18700f9768a145213d98d59afa8e1adf6"
+  },
+  "source_recipe": {
+    "leech_shell": 196560,
+    "source_size": 210108,
+    "midpoint_rows": 26496
+  },
+  "one_class": {
+    "native_classes": 135,
+    "exceptional_classes_frozen": 2,
+    "classes_per_window": 1,
+    "signed_native_candidates": 36976,
+    "windows": 133,
+    "excluded_by_branching": 96,
+    "no_additional_candidates": 37
+  },
+  "two_classes": {
+    "native_classes": 135,
+    "exceptional_classes_frozen": 2,
+    "classes_per_window": 2,
+    "signed_native_candidates": 36976,
+    "windows": 8778,
+    "excluded_by_branching": 8112,
+    "no_additional_candidates": 666
+  },
+  "fusion": {
+    "transforms": 512,
+    "maximum_gain": 0,
+    "matched_right_side_in_every_union": true,
+    "transforms_with_no_coordinate_change": 8,
+    "largest_difference_on_one_side": 1900
+  },
+  "even_kernel_grid": {
+    "scale": 1,
+    "lines_clearing_exterior": 123650,
+    "lines_clearing_incumbent_as_well": 0,
+    "blocker_histogram_capped_at_25": [
+      0,
+      238,
+      0,
+      0,
+      64,
+      0,
+      384,
+      1216,
+      512,
+      3024,
+      1856,
+      4864,
+      6000,
+      7952,
+      5984,
+      6698,
+      7040,
+      9394,
+      11652,
+      11318,
+      12176,
+      9950,
+      8678,
+      6464,
+      4006,
+      4180
+    ]
+  },
+  "full_kernel_grid": {
+    "scale": 2,
+    "lines_clearing_exterior": 5377994,
+    "lines_clearing_incumbent_as_well": 0,
+    "blocker_histogram_capped_at_25": [
+      0,
+      238,
+      0,
+      0,
+      64,
+      0,
+      640,
+      2408,
+      3048,
+      8184,
+      10180,
+      27986,
+      62002,
+      102948,
+      133102,
+      138938,
+      174928,
+      197094,
+      243176,
+      317288,
+      420626,
+      488580,
+      576596,
+      587022,
+      535646,
+      1347300
+    ]
+  },
+  "e8_head_frames": {
+    "frame_triples": 5702400,
+    "maximum_degree_two_upper_bound": 64,
+    "frame_triples_passing_65": 0
+  },
+  "bw_original": {
+    "extra_fibre_class": false,
+    "contact_pairs": 604800,
+    "admissible_tail_pairs": 28544,
+    "eligible_endpoints": 960,
+    "retained_source_tail_pairs": 512,
+    "fixed_points_before_refill": 209596,
+    "construction_with_retained_source_refill": 210108,
+    "refill_gain_needed_to_beat_210108": 513
+  },
+  "bw_with_extra_class": {
+    "extra_fibre_class": true,
+    "contact_pairs": 604800,
+    "admissible_tail_pairs": 6144,
+    "eligible_endpoints": 512,
+    "retained_source_tail_pairs": 256,
+    "fixed_points_before_refill": 209692,
+    "construction_with_retained_source_refill": 209948,
+    "refill_gain_needed_to_beat_210108": 417
+  },
+  "additional_searches": {
+    "bw_extra_class_cp_sat_240s": {
+      "status": "UNKNOWN",
+      "target_refill_gain": 417,
+      "solver_upper_bound": 448
+    },
+    "bw_local_search": {
+      "original_best_refill_gain": 512,
+      "extra_class_best_refill_gain": 256
+    }
+  },
+  "e8_omissions": [
+    {
+      "omitted_head_lines": 0,
+      "degree_two_target": 65,
+      "maximum_first_bound": 64,
+      "excluded_by_incidence": 1
+    },
+    {
+      "omitted_head_lines": 1,
+      "degree_two_target": 67,
+      "maximum_first_bound": 64,
+      "excluded_by_incidence": 24
+    },
+    {
+      "omitted_head_lines": 2,
+      "degree_two_target": 69,
+      "maximum_first_bound": 66,
+      "excluded_by_incidence": 276
+    },
+    {
+      "omitted_head_lines": 3,
+      "degree_two_target": 71,
+      "maximum_first_bound": 68,
+      "excluded_by_incidence": 2024
+    },
+    {
+      "omitted_head_lines": 4,
+      "degree_two_target": 73,
+      "maximum_first_bound": 72,
+      "excluded_by_incidence": 10626
+    },
+    {
+      "omitted_head_lines": 5,
+      "degree_two_target": 75,
+      "maximum_first_bound": 76,
+      "excluded_by_incidence": 42456,
+      "excluded_by_matching": 48
+    },
+    {
+      "omitted_head_lines": 6,
+      "degree_two_target": 77,
+      "maximum_first_bound": 82,
+      "excluded_by_incidence": 134568,
+      "excluded_by_matching": 28
+    }
+  ],
+  "extra_class_geometry": {
+    "dimension": 27,
+    "count": 209948,
+    "squared_norm": 128,
+    "maximum_dot": 64,
+    "antipodal_pairs": 104930,
+    "singletons": 88,
+    "unordered_pairs": 22038976378,
+    "absolute_sum_bound": 1728,
+    "coordinate_sha256": "f87663b41e2189fe970829f4aaa10bc1b3f88e1f16092ab724e0e705bac61f9c"
+  },
+  "arbitrary_real_bw_tails": [
+    {
+      "extra_fibre_class": false,
+      "contact_pairs": 604800,
+      "constraint_profiles": 111,
+      "profiles_reaching_the_sphere": 11,
+      "bodies_reaching_the_sphere": 11904,
+      "admissible_tail_pairs": 28544,
+      "admissible_tail_lines": [
+        [
+          0,
+          4,
+          -4
+        ],
+        [
+          0,
+          4,
+          4
+        ],
+        [
+          4,
+          0,
+          -4
+        ],
+        [
+          4,
+          0,
+          4
+        ]
+      ],
+      "additional_real_tails": 0
+    },
+    {
+      "extra_fibre_class": true,
+      "contact_pairs": 604800,
+      "constraint_profiles": 101,
+      "profiles_reaching_the_sphere": 1,
+      "bodies_reaching_the_sphere": 3072,
+      "admissible_tail_pairs": 6144,
+      "admissible_tail_lines": [
+        [
+          4,
+          0,
+          -4
+        ],
+        [
+          4,
+          0,
+          4
+        ]
+      ],
+      "additional_real_tails": 0
+    }
+  ],
+  "heads_with_poles_deleted": [
+    {
+      "body_family": "bw",
+      "body_count": 522720,
+      "profiles": 210,
+      "bodies_with_axial_tails": 0,
+      "bodies_with_off_axis_tails": 0
+    },
+    {
+      "body_family": "e8",
+      "body_count": 2160,
+      "profiles": 20,
+      "bodies_with_axial_tails": 0,
+      "bodies_with_off_axis_tails": 0
+    },
+    {
+      "body_family": "mixed_sparse",
+      "body_count": 139776,
+      "profiles": 365,
+      "bodies_with_axial_tails": 0,
+      "bodies_with_off_axis_tails": 0
+    }
+  ],
+  "exploratory_followup": {
+    "signed_refill_near_source": {
+      "candidate_points_including_incumbent": 8448,
+      "solver_status": "UNKNOWN"
+    },
+    "partial_extra_class": {
+      "candidate_points": 17408,
+      "solver_status": "UNKNOWN",
+      "reported_gain_upper_bound_in_model": 15,
+      "tightened_feasibility_status": "UNKNOWN"
+    },
+    "oriented_triangle_and_axial_state_search": {
+      "finite_states": 408240,
+      "best_native_gain": 12672,
+      "heuristic": true
+    }
+  },
+  "contact_faces_and_frame_search_20261122": {
+    "head_frames": {
+      "points": 210108,
+      "compatible_frames_per_axis": [
+        13,
+        24,
+        1
+      ],
+      "frame_triples": 312,
+      "distinct_contact_totals": 20,
+      "source_frames": [
+        51,
+        121,
+        121
+      ],
+      "source_contacts_incident_to_heads": 126624,
+      "minimum_contact_frames": [
+        51,
+        28,
+        121
+      ],
+      "minimum_contacts_incident_to_heads": 126240,
+      "maximum_contacts_incident_to_heads": 127648,
+      "contact_histogram": {
+        "126240": 8,
+        "126288": 8,
+        "126304": 24,
+        "126352": 16,
+        "126368": 64,
+        "126416": 48,
+        "126432": 64,
+        "126480": 16,
+        "126496": 20,
+        "126544": 4,
+        "126560": 4,
+        "126624": 4,
+        "126672": 4,
+        "126688": 4,
+        "127136": 2,
+        "127200": 4,
+        "127264": 12,
+        "127328": 4,
+        "127392": 1,
+        "127648": 1
+      }
+    },
+    "head_frame_witness": {
+      "dimension": 27,
+      "count": 210108,
+      "squared_norm": 128,
+      "maximum_dot": 64,
+      "antipodal_pairs": 104964,
+      "singletons": 180,
+      "unordered_pairs": 22072580778,
+      "absolute_sum_bound": 1728,
+      "coordinate_sha256": "1fe08caf56dbef9adb95971be6b7139ee49ab50a9db9ed13c612e95769100131"
+    },
+    "all_shell_contact_midpoints": {
+      "contacts": 452088000,
+      "minimal_profiles": 85,
+      "feasible_bodies": 0
+    },
+    "deleted_contact_chords": {
+      "chords": 2966566,
+      "constraint_patterns": 1413,
+      "feasible_chords": 0
+    },
+    "deleted_contact_centroids": {
+      "triangles": 137159728,
+      "tetrahedra": 2647762920,
+      "feasible_triangles": 0,
+      "feasible_tetrahedra": 0
+    },
+    "extra_class_frames_126_1_134": {
+      "extra_fibre_class": true,
+      "contact_pairs": 604800,
+      "admissible_tail_pairs": 9216,
+      "eligible_endpoints": 640,
+      "retained_source_tail_pairs": 256,
+      "fixed_points_before_refill": 209692,
+      "construction_with_retained_source_refill": 209948,
+      "refill_gain_needed_to_beat_210108": 417
+    },
+    "all_deleted_root_chords_with_poles": {
+      "chords": 87748128,
+      "full_envelopes_checked": 50452,
+      "axial_midpoint_chords": 9684,
+      "other_feasible_chords": 0
+    },
+    "full_contact_counts": {
+      "source": 424420110,
+      "minimum_contact_frame_triple": 424419726
+    }
+  },
+  "midpoint_switches_and_native_trades": {
+    "best_size": 210108,
+    "switches": {
+      "midpoint_bodies": 13248,
+      "strong_edges": 14144,
+      "weak_edges": 1166432,
+      "strong_components": 3142,
+      "initially_plane_pinned": 20,
+      "forced_components": 3142,
+      "flip_groups": 32,
+      "midpoint_assignments": 4294967296,
+      "frame_choices": 312,
+      "midpoint_contact_totals": 44,
+      "combined_contact_totals": 283,
+      "minimum_contact_delta": -1488,
+      "maximum_contact_delta": 1024
+    },
+    "minimum_contact_witness": {
+      "dimension": 27,
+      "count": 210108,
+      "squared_norm": 128,
+      "maximum_dot": 64,
+      "antipodal_pairs": 104964,
+      "singletons": 180,
+      "unordered_pairs": 22072580778,
+      "absolute_sum_bound": 1728,
+      "coordinate_sha256": "1400e1371afc303b45685c4e016b12b055f9c2e467ae505c691c0976011bacaa"
+    },
+    "minimum_witness_contacts": 424418622,
+    "contact_midpoints_over_all_switches": {
+      "contacts": 452088000,
+      "minimal_profiles": 85,
+      "feasible_bodies": 0
+    },
+    "deleted_contact_centroids_over_all_switches": {
+      "triangles": 137159728,
+      "tetrahedra": 2647762920,
+      "feasible_triangles": 0,
+      "feasible_tetrahedra": 0
+    },
+    "deleted_contact_prices": {
+      "fresh_contacts": 2953318,
+      "sorted_minimal_profiles": 28,
+      "minimum_conflicting_midpoint_pairs": 3,
+      "attaining_minimum": 512
+    },
+    "paid_single_fibre_trades": {
+      "fibres": 4320,
+      "infeasible_by_cp_sat": 3136,
+      "excluded_by_option_count": 1184,
+      "improvements": 0
+    },
+    "exceptional_fibres_joint_bound": {
+      "jointly_released_fibres": 64,
+      "maximal_phase_domains": 128,
+      "capacity_by_fibre": {
+        "17": 12,
+        "18": 8,
+        "19": 12,
+        "20": 32
+      },
+      "total_capacity": 1216
+    },
+    "polar_ray_bounds": {
+      "root_rays": 196560,
+      "support_profiles": 35,
+      "multiplier_interval": [
+        "1/3",
+        "3/4"
+      ],
+      "largest_squared_norm": "108"
+    },
+    "regular_square_classes_joint_bound": {
+      "eligible_classes": 98,
+      "candidate_square_states": 3168,
+      "excluded_omissions": 98,
+      "maximum_regular_square_classes": 96
+    },
+    "nonuniform_square_search": {
+      "plane_0": {
+        "active_fibres": 1024,
+        "candidate_states": 14400,
+        "conflicts": 5586016,
+        "admissible_entrant_states_before_enforcing_active_fibres": 2112
+      },
+      "plane_2": {
+        "active_fibres": 1024,
+        "candidate_states": 12576,
+        "conflicts": 4226752,
+        "admissible_entrant_states_before_enforcing_active_fibres": 288
+      },
+      "one_vacancy_arc_consistency_tests": 2457600,
+      "one_vacancy_survivors": 0,
+      "full_graph_local_search_runs": 24,
+      "best_occupied_fibres": 1024,
+      "scope": "Two separate regular coordinate-plane modules. Each active or previously unused projection can use its own complete square. Heuristic full-graph runs carry no upper bound."
+    },
+    "two_for_three_residual_rotations": {
+      "fibres": 4320,
+      "opposite_pairs": 40870,
+      "excluded_signs": 81740,
+      "unresolved_signs": 0,
+      "slabs": 97612,
+      "most_slabs_per_sign": 3
+    },
+    "imported_28d_sections": {
+      "source_size": 223528,
+      "rank_three_hyperplanes": 120,
+      "direct_section_size_histogram": {
+        "201332": 1,
+        "201430": 4,
+        "201276": 1,
+        "196850": 48,
+        "196662": 48,
+        "201494": 8,
+        "201340": 1,
+        "205244": 4,
+        "197180": 2,
+        "197168": 2,
+        "201396": 1
+      },
+      "coordinate_and_diagonal_hyperplanes": 12,
+      "signed_tail_axis_alignments_per_section": 48,
+      "alignments": 576,
+      "perfect_candidate_matchings_with_all_roots": 534,
+      "deficient_components_checked": 608,
+      "candidates_per_component": 12,
+      "blockers_per_component": 8,
+      "maximum_points_in_each_union": 210108
+    },
+    "mixed_28d_low_cost_clique_cover": {
+      "candidates": 16892,
+      "deleted_roots": 13248,
+      "cliques": 15850,
+      "denominator": 24,
+      "maximum_union_size": 210108,
+      "catalogue_rebuilt": true,
+      "imported_candidate_conflict_limit": 12,
+      "fresh_imports": 3644
+    }
+  }
+}

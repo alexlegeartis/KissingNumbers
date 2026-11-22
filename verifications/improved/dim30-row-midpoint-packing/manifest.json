@@ -1,0 +1,27 @@
+{
+  "records": [
+    {
+      "dimension": 30,
+      "count": 248506,
+      "added": 340,
+      "removed": 250,
+      "source": {
+        "path": "verifications/improved/dim30-reflected-certificate-unions/data/coordinates30_248416.npz",
+        "count": 248416,
+        "key": "points",
+        "commit": "fde77c3e8b9124640ec65f8915337960029f30d4",
+        "sha256": "fa0678d91ea86dad42a4ad4dd5ed5adaf29f7f9650ecdbbc294fbaa17b2bc0ed"
+      },
+      "coordinates": "data/coordinates30.npz",
+      "coordinates_sha256": "3f875bd8ad5f3dff28f3c3dcdcf8fcea32774cb1f7c610f4115d8828de47a4b7",
+      "exchange_file": "data/exchange.npz",
+      "exchange_sha256": "b1943de2560d2a0c7898c6e43925be4795e4d57d3cd4e4451c87ae2bb499b429",
+      "coordinate_array_sha256": "dddd272c46650a89e82c3f29b984ba4a4ec254161c9c8e9d154dc639e564ca78",
+      "candidate_pool": {
+        "path": "data/candidates.npz",
+        "count": 1403,
+        "sha256": "5fbc95f77a3dc129cd69a96566d0f2cffa3533da475e4019b82632ef72853500"
+      }
+    }
+  ]
+}

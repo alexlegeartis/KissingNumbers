@@ -102,6 +102,8 @@
 
 The 18 November 2026 E8 and auxiliary exchange gives 232154 in 29D, one above the pinned Takhanov witness. Complete exact geometry and the 22-for-21 exchange replay from verifications/improved/dim29-takhanov-auxiliary-exchange/.
 
+On 22 November 2026, lifted Leech contact midpoints raised the 30D lower bound to 248,506, a gain of 90 over 248,416. [Coordinates and exact exchange](verifications/improved/dim30-row-midpoint-packing/)
+
 Four reflected unions give 248416 in 30D, gaining 65 over 248351. [Exact coordinate proof](verifications/improved/dim30-reflected-certificate-unions/)
 
 A rebuilt 10D section of a 27D Leech-based code gives [**201,204 in 26D**](verifications/improved/dim26-section-rational-kernel/), 12 above [Takhanov’s 201,192](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1). A preceding 201192-point alternate construction tied Takhanov in 26D. Fixed-projection proofs cover both Takhanov witnesses in 26D and 27D and the 26D alternate. [Research and verifiers](research/26_27_native_projection_obstructions_20261118/)
@@ -198,7 +200,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 27 | 201 589 | **209 884** | 1.04 | `heads` | [26D radical-orbit and 27D E8 head-frame exchanges over PackingStar; complete exact final geometry and independent integer exchanges](verifications/improved/dim26-27-radical-orbits/) |
 | 28 | 205 172 | **223 528** | 1.09 | `heads` | [E8 contact cycles and auxiliary-frame exchange over the pinned Takhanov witness; complete exact geometry](verifications/improved/dim28-takhanov-root-exchange/) |
 | 29 | 209 496 | **232 157** | 1.11 | `heads` | [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/) with complete exact geometry |
-| 30 | 220 440 | **248 416** | 1.13 | `heads` | [four reflected certificate unions and four auxiliary points with complete exact geometry](verifications/improved/dim30-reflected-certificate-unions/) |
+| 30 | 220 440 | **248 506** | 1.13 | `heads` | [packing of lifted Leech contact midpoints with complete exact geometry](verifications/improved/dim30-row-midpoint-packing/) |
 | 31 | 238 350 | **251 524** | 1.06 | `heads` | [joint row-midpoint, fibre, auxiliary and Leech-root exchanges; complete exact geometry](verifications/improved/dim30-31-midpoint-exchanges/) |
 | 32 | 352 320 | **352 992** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
 | 33 | 370 240 | **370 416** | 1.00 | `codes` | [two full-octad swaps and two signed-star families](verifications/improved/dim33-octad-switches/) |
@@ -292,7 +294,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `heads` | 27 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | E8 head-frame replacement: 238 additions and 216 removals from PackingStar 209862; complete exact geometry of all 209884 points (dim26-27-radical-orbits/verify.py) |
 | `heads` | 28 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | corrected sextet unions over the November 11 release; full exact geometry and direct-integer changed pairs; new radii and coordinated changes remain open (dim28-29-november-sextets/verify.py) |
 | `heads` | 29 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | native partial transversal design, exact oriented module and source exchange, full final geometry (dim29-30-native-partial-design/verify.py) |
-| `heads` | 30 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | four reflected unions and four auxiliary points give 248416; exact 456-for-391 exchange and all-pairs geometry (dim30-reflected-certificate-unions/verify.py) |
+| `heads` | 30 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | lifted Leech contact midpoints give 248506 by a 340-for-250 exchange (dim30-row-midpoint-packing/verify.py) |
 | `heads` | 31 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | annealed E8 orientation and full exterior deletion pricing; 2218 additions and 2052 removals; exact complete geometry (dim31-annealed-design/verify.py) |
 | `heads` | 34 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | four octad switches; exact signed interactions and full rank with unchanged rational heads (dim34-octad-switches/verify.py) |
 | `heads` | 35 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | seven octad switches and a signed-star exchange; the dense code and 12 heads are retained (dim35-octad-switches/verify.py) |
@@ -318,7 +320,7 @@ refreshed table, not more search.
 | 26-27 | `dim26-27-radical-orbits` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 28 | `dim28-takhanov-root-exchange` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 29 | `dim29-even-grid-exchange` | verify.py: exact exchange replay; use --full for complete final geometry |
-| 30 | `dim30-reflected-certificate-unions` | verify.py: complete exact coordinates and independent direct-integer module exchange |
+| 30 | `dim30-row-midpoint-packing` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 31 | `dim30-31-midpoint-exchanges` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 33 | `dim33-octad-switches` | Exact support and coordinate replays of the 370,416 directions |
 | 34 | `dim34-octad-switches` | Two exact replays of four octad switches and the final 391,004 directions |

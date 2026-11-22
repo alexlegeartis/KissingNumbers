@@ -457,7 +457,7 @@ for _package in ('dim32-35-signed-layers', 'dim25-collective-deformation', 'dim2
 
 # Exact 13 November module replacements, including the retained BW14 checkpoint.
 for _package in ('dim26-27-radical-orbits', 'dim30-bw14-module', 'dim30-leech-sloane-section',
-                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange', 'dim30-reflected-certificate-unions', 'dim35-shared-root-heads', 'dim29-even-grid-exchange', 'dim38-triangle-hamming', 'dim36-37-ct-cell-rebuild', 'dim37-38-qr-merge', 'dim36-ct-nonlocal', 'dim38-qr-free-offsets', 'dim37-qr-shared-stars', 'dim37-qr-radical-families', 'dim38-qr-star-trades'):
+                 'dim29-30-native-partial-design', 'dim31-leech-sloane-module', 'dim31-joint-design', 'dim31-annealed-design', 'dim61-62-66-affine-reconstruction', 'dim63-65-affine-reconstruction', 'dim30-certificate-unions', 'dim28-takhanov-root-exchange', 'dim30-31-midpoint-exchanges', 'dim30-contact-sum-exchanges', 'dim29-takhanov-auxiliary-exchange', 'dim30-reflected-certificate-unions', 'dim30-row-midpoint-packing', 'dim35-shared-root-heads', 'dim29-even-grid-exchange', 'dim38-triangle-hamming', 'dim36-37-ct-cell-rebuild', 'dim37-38-qr-merge', 'dim36-ct-nonlocal', 'dim38-qr-free-offsets', 'dim37-qr-shared-stars', 'dim37-qr-radical-families', 'dim38-qr-star-trades'):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
         os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -2512,6 +2512,7 @@ if '--write-results' in sys.argv and not fail:
         'dim35-shared-root-heads': 'shared signed-root deletion ledger and exact coordinate replay',
         'dim29-even-grid-exchange': '14-for-11 projected-grid exchange with exact integer and full-pair replay',
         'dim29-takhanov-auxiliary-exchange': 'E8 midpoint and auxiliary exchange over Takhanov; complete exact geometry',
+        'dim30-row-midpoint-packing': 'packing of lifted Leech contact midpoints with complete exact geometry',
         'dim30-reflected-certificate-unions': 'four reflected certificate unions and four auxiliary points with complete exact geometry',
         'dim30-contact-sum-exchanges': 'contact-sum continuation with shared deletion pricing and complete exact geometry',
         'dim30-31-midpoint-exchanges': 'joint row-midpoint, fibre, auxiliary and Leech-root exchanges; complete exact geometry',
@@ -2603,6 +2604,8 @@ if '--write-results' in sys.argv and not fail:
     out.append('19 November 2026: shared root deletions give 415336 in 35D, two above the previous 415334-point construction. [Two exact verification routes](verifications/improved/dim35-shared-root-heads/).')
     out.append("")
     out.append('The 18 November 2026 E8 and auxiliary exchange gives 232154 in 29D, one above the pinned Takhanov witness. Complete exact geometry and the 22-for-21 exchange replay from verifications/improved/dim29-takhanov-auxiliary-exchange/.')
+    out.append("")
+    out.append('On 22 November 2026, lifted Leech contact midpoints raised the 30D lower bound to 248,506, a gain of 90 over 248,416. [Coordinates and exact exchange](verifications/improved/dim30-row-midpoint-packing/)')
     out.append("")
     out.append('Four reflected unions give 248416 in 30D, gaining 65 over 248351. [Exact coordinate proof](verifications/improved/dim30-reflected-certificate-unions/)')
     out.append('')

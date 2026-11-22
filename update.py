@@ -100,6 +100,7 @@ DRIVERS.append(('35D shared signed-root trade', os.path.join(V, 'dim35-shared-ro
 DRIVERS.append(('29D even-grid exchange', os.path.join(V, 'dim29-even-grid-exchange'), 'final.py'))
 DRIVERS.append(('29D Takhanov auxiliary exchange', os.path.join(V, 'dim29-takhanov-auxiliary-exchange'), 'final.py'))
 DRIVERS.append(('30D contact-sum exchanges', os.path.join(V, 'dim30-contact-sum-exchanges'), 'final.py'))
+DRIVERS.append(('30D row midpoint packing', os.path.join(V, 'dim30-row-midpoint-packing'), 'final.py'))
 DRIVERS.append(('30D reflected certificate unions', os.path.join(V, 'dim30-reflected-certificate-unions'), 'final.py'))
 DRIVERS.append(('30D and 31D joint midpoint exchanges', os.path.join(V, 'dim30-31-midpoint-exchanges'), 'final.py'))
 DRIVERS.append(('30D exact certificate unions', os.path.join(V, 'dim30-certificate-unions'), 'final.py'))

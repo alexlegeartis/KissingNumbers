@@ -160,7 +160,9 @@ Latest 28D: **223,528**, 32 above Takhanov’s pinned construction. The [E8 root
 
 The latest 29D witness has **232,157** points, 3 above the previous certificate and 4 above Takhanov’s pinned release. The direct integer replay checks all 3,250,156 donor–incumbent products and 91 donor pairs; `--full` checks all **26,948,320,246** final unordered pairs. [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/).
 
-The latest 30D witness has **248,416** points, a gain of 65. The verifier checks all **30,855,130,320** unordered pairs and rebuilds the exact 456-for-391 exchange. [30D reflected unions](verifications/improved/dim30-reflected-certificate-unions/)
+The latest 30D witness has **248,506** points. The verifier checks all **30,877,491,765** unordered pairs and independently checks every pair involving one of the 340 insertions. [30D midpoint packing](verifications/improved/dim30-row-midpoint-packing/)
+
+The preceding 30D witness has **248,416** points, a gain of 65. The verifier checks all **30,855,130,320** unordered pairs and rebuilds the exact 456-for-391 exchange. [30D reflected unions](verifications/improved/dim30-reflected-certificate-unions/)
 
 The preceding 30D witness has **248,351** points, a gain of 62 over 248,289. The verifier checks all **30,838,985,425** unordered pairs and rebuilds the 188-for-126 exchange. [30D contact-sum proof](verifications/improved/dim30-contact-sum-exchanges/).
 
