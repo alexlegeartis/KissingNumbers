@@ -198,7 +198,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 169 packages, 70 dimensions
+### `verifications/improved/` — 170 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -237,6 +237,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 | [`dim38-joint-latitudes`](verifications/improved/dim38-joint-latitudes/) | 38 | Orthogonal Hamming latitude replacement; two exact proofs with inherited Golay/Leech minimum-norm premise |
 | [`dim39-deformed-orbits`](verifications/improved/dim39-deformed-orbits/) | 39 | reduced-symmetry dense sign orbits and retained sparse layers; two independent complete exact proofs |
 | [`dim40-affine-shells`](verifications/improved/dim40-affine-shells/) | 40 | three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products |
+| [`dim40-affine-centre-refill`](verifications/improved/dim40-affine-centre-refill/) | 40 | alternate affine centre and thirteen individual short-shell points |
 | [`dim18-bent-hexagon`](verifications/improved/dim18-bent-hexagon/) | 18 | bent-coset hexagon over odd Barnes–Wall; matches Cohn’s current table |
 | `[dim25-lens-heads](verifications/improved/dim25-lens-heads/)`                               | 25     | cap heads of squared length 3 in the lens of a minimal vector remove exactly their owner and never share a removal, so τ = 196560 + H + 2 + \|E\| with H = 1016 and one non-lattice equator point |
 | `[dim26-27-iota-triangles](verifications/improved/dim26-27-iota-triangles/)`                 | 26, 27 | retained construction: the axis forces the heads onto squared length 8/3 and onto fixed triangles of directions, so the layer is two or four head sets at cosine ≤ 1/4 cross-constrained at cosine 1/2; the coset triangle of three norm-6 vectors summing to zero is one such set, and the involution ι(u) = −v − u on each class puts S and ι(S) on two triangles at once |
@@ -406,10 +407,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 253 scripts, including exact certificate replays
+python run_all.py          # 254 scripts, including exact certificate replays
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 272 scripts: adds the all-pairs sweep, the
+python run_all.py --full   # 274 scripts: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

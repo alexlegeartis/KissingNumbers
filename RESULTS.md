@@ -78,6 +78,8 @@
 
 22 November 2026: a distance-22 BCH cap and exterior translates raise 65–67D to 336256796, 342389558 and 355195391. [Exact replay](verifications/improved/dim65-67-bch-exterior-caps/).
 
+22 November 2026 — An alternate affine centre and thirteen individual short-shell points raise 40D to 1126327 (+5). [Exact replays](verifications/improved/dim40-affine-centre-refill/).
+
 22 November 2026 — Coxeter–Todd triangle switches and a three-block phase refill raise 36D to 502902 (+81). [Exact replays](verifications/improved/dim36-ct-triangle-refill/).
 
 22 November 2026: a 576-point 12-flat repacking replaces 384 octad phases and gives 544666 in 37D (+192). [Exact replay](verifications/improved/dim37-qr-flat-repack/).
@@ -218,7 +220,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 37 | 500 008 | **544 666** | 1.09 | `codes` | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) |
 | 38 | 566 652 | **652 076** | 1.15 | `codes` | [QR offsets, ten octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) |
 | 39 | 755 988 | **783 468** | 1.03 | `codes` | [QR fibres with three-coordinate heads and projected support checks](verifications/improved/dim39-qr-three-coordinate-heads/) |
-| 40 | 1 092 000 | **1 126 322** | 1.03 | `heads` | [affine lattice shells and an eight-point minimum-shell refill](verifications/improved/dim40-affine-shells/) |
+| 40 | 1 092 000 | **1 126 327** | 1.03 | `heads` | [alternate affine centre and thirteen individual short-shell points](verifications/improved/dim40-affine-centre-refill/) |
 | 41 | 1 324 472 | **1 460 036** | 1.10 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 42 | 1 792 386 | **1 991 445** | 1.11 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 43 | 2 553 792 | **2 919 803** | 1.14 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
@@ -308,7 +310,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `heads` | 35 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | seven octad switches and a signed-star exchange; the dense code and 12 heads are retained (dim35-octad-switches/verify.py) |
 | `codes` | 37 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | a paired-coordinate parity code repacks a 12-coordinate flat (dim37-qr-flat-repack/verify.py) |
 | `codes` | 38 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | finds 31 complete affine fibres after shortening; signed octads and roots retained (dim38-qr-free-offsets/verify.py) |
-| `heads` | 40 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products; larger compatible families remain open (dim40-affine-shells/verify.py) |
+| `heads` | 40 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | alternate affine centre and thirteen individual short-shell points (dim40-affine-centre-refill/verify.py) |
 | `heads` | 41-46 (6) | joint body-family and head searches remain open; no construction ceiling is claimed | independently normalized P48n body families with rational heads and pure head points; the latest angles and exact ranks replay, while populations inherit the supplied tables and modular-form derivation. Larger coupled family changes, partial families and new body models remain open; finite search optima are not global ceilings. The partial-family 43D and coordinated-motion 45D certificates are installed (dim41-46-p48-heads/README.md, verify.py, POPULATIONS.txt) |
 | `heads` | 68-69 (2) | joint body-family and head searches remain open; no construction ceiling is claimed | actual D7 normals strengthen D4 slice populations by nested orientation averaging and exact moment duals; two independent profile and geometry proofs, with published Gamma72 premises; other normal systems and geometries remain open (dim68-69-gamma72-extended-moments/verify.py) |
 | `heads` | 70 (1) | other normal systems and pairing classes remain open | three direct A2 normal-fiber counts and exact projected geometry (dim70-gamma72-alternate-a2-normals/verify.py) |
@@ -339,7 +341,7 @@ refreshed table, not more search.
 | 38 | `dim38-qr-octad-switches` | verify.py and audit.py: exact replay of 31 dense fibres, ten new octad supports, 288 stars and the signed-root ledger |
 | 39 | `dim39-deformed-orbits` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 39 | `dim39-qr-pentapolar` | exact rational head, Hamming quotient, and sparse cross-angle checks |
-| 40 | `dim40-affine-shells` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
+| 40 | `dim40-affine-centre-refill` | verify.py and verify_expanded.py: exact gluing and fresh affine-core enumeration |
 | 41-46 | `dim41-46-p48-heads` | verify.py (integer angles and exact ranks; inherited population tables, not a fresh body enumeration) |
 | 49-60 | `dim49-60-p48-signed-refill` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |

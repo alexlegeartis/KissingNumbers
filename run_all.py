@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 253 scripts, including large exact certificate replays
-    python run_all.py --full       # 272 scripts
+    python run_all.py              # 254 scripts, including large exact certificate replays
+    python run_all.py --full       # 274 scripts
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -389,6 +389,8 @@ JOBS = [
     ('dim39-deformed-orbits: independent exact replay', os.path.join(V, 'improved', 'dim39-deformed-orbits'), ['verify.py'], 1.0, True),
     ('dim39-qr-three-coordinate-heads: exact dense/sparse replay', os.path.join(V, 'improved', 'dim39-qr-three-coordinate-heads'), ['verify.py'], 8.0, True),
     ('dim39-qr-pentapolar: exact Hamming and head geometry', os.path.join(V, 'improved', 'dim39-qr-pentapolar'), ['verify.py'], 5.0, True),
+    ('dim40-affine-centre-refill: exact gluing and refill', os.path.join(V, 'improved', 'dim40-affine-centre-refill'), ['verify.py'], 0.1, True),
+    ('dim40-affine-centre-refill: fresh lattice and explicit cross-layer pairs', os.path.join(V, 'improved', 'dim40-affine-centre-refill'), ['verify_expanded.py'], 6.0, False),
     ('dim40-affine-shells: independent exact replay', os.path.join(V, 'improved', 'dim40-affine-shells'), ['verify.py'], 5.0, True),
     ("dims 29, 30: midpoint replacements, exact independent replay",
      os.path.join(V, 'improved', 'dim29-30-midpoint-replacements'), ['verify.py'], 2.0, True),
@@ -728,6 +730,8 @@ def _sota_jobs(quick=False):
         ('dim31-dual-centres', ('verify.py',)),
         ('dim39-qr-three-coordinate-heads', ('verify.py',)),
         ('dim39-qr-pentapolar', ('verify.py',)),
+        ('dim40-affine-centre-refill', ('verify.py',)),
+        ('dim40-affine-centre-refill', ('verify_expanded.py',)),
         ('dim40-affine-shells', ('verify.py',)),
 
         ('dim26-31-residual-completions', ('verify.py',)),
@@ -956,6 +960,7 @@ def _sota_coverage(jobs, results=None):
         ('dim31-dual-centres', [31], [('verify.py',)], ''),
         ('dim39-qr-three-coordinate-heads', [39], [('verify.py',)], 'exact quotient distances and projected sparse signs'),
         ('dim39-qr-pentapolar', [39], [('verify.py',)], 'exact Hamming quotient and rational head checks'),
+        ('dim40-affine-centre-refill', [40], [('verify.py',), ('verify_expanded.py',)], 'exact gluing and refill, with a fresh affine-core enumeration and direct cross-layer pairs'),
         ('dim40-affine-shells', [40], [('verify.py',)], ''),
 
         ('dim26-31-residual-completions', [26,27,28,29,30,31], [('verify.py',)], 'full independent coordinate replays and self-contained shell lemma; exact quadratic fields in 30D/31D'),

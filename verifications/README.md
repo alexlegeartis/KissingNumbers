@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-169 packages, one per **construction idea** rather than one per dimension, because several
+170 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -136,6 +136,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim39-qr-three-coordinate-heads`](improved/dim39-qr-three-coordinate-heads/) | 39 | **783,468**; 84 QR fibres with rational three-coordinate heads |
 | [`dim39-qr-pentapolar`](improved/dim39-qr-pentapolar/) | 39 | **774,972**; five rational QR head positions with exact replay |
 | [`dim40-affine-shells`](improved/dim40-affine-shells/) | 40 | **1,126,322**: affine lattice shells and eight minimum-shell refills; exact cross-products |
+| [`dim40-affine-centre-refill`](improved/dim40-affine-centre-refill/) | 40 | Alternate affine centre and thirteen individual short-shell points with an explicit lattice replay |
 | [`dim18-bent-hexagon`](improved/dim18-bent-hexagon/) | 18 | apparently new — Cohn–Li's own ℝ¹⁶ ⊕ ℝ² hexagon over the odd Barnes–Wall lattice, with the three 6-set families taken from bent cosets of RM(1,4) whose pairwise sums are bent but which do not sum to zero; tier B rises from 256 to 960 |
 | [`dim25-lens-heads`](improved/dim25-lens-heads/) | 25 | apparently new — joint work in progress with H. Cohn and B. Lindow; 1016 lens heads (971 from the block family, plus a 45-head maximum independent set over the complete pool), one non-lattice equator point |
 | [`dim26-27-midpoint-replacements`](improved/dim26-27-midpoint-replacements/) | 26–27 | 200,918 and 204,636 points from shared midpoint replacements; exact portable replay |

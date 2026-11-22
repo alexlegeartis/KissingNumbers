@@ -191,7 +191,9 @@ Latest 39D: **783,468**. The [three-coordinate QR certificate](verifications/imp
 
 Earlier 39D: **774,972** (up 5,120). The [five-head QR verification](verifications/improved/dim39-qr-pentapolar/) checks the shortened kernel, all fibre distance minima, all sparse supports, and exact sparse–dense angular inequalities.
 
-Latest 40D: **1,126,322** after [eight minimum-shell points](verifications/improved/dim40-affine-shells/); exact verification checks all 9,010,512 new–old products and all 28 new–new products.
+The latest 40D result gives **1,126,327** with an alternate affine centre and thirteen individual short-shell points. The two replays check the gluing geometry and enumerate the 1,084,590-point affine core. [40D affine centre proof](verifications/improved/dim40-affine-centre-refill/).
+
+The preceding 40D result gave **1,126,322** with eight minimum-shell points. Exact verification checks all 9,010,512 new–old products and all 28 new–new products. [40D affine shell proof](verifications/improved/dim40-affine-shells/).
 
 Latest 26D: **201,204** (12 above Takhanov). The [section rebuild](verifications/improved/dim26-section-rational-kernel/) restores the Leech roots, verifies the new 340-point kernel in exact rational arithmetic, and offers a complete exact exterior-pair check with `--full`.
 
