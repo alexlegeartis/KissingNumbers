@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-148 packages, one per **construction idea** rather than one per dimension, because several
+150 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -37,6 +37,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim63-64-dense-owner-clones`](improved/dim63-64-dense-owner-clones/) | 63–64 | Cloned cyclic dense owners; exact replay |
 | [`dim63-64-mixed-depth-clones`](improved/dim63-64-mixed-depth-clones/) | 63–64 | Mixed-depth cyclic dense owner clones |
 | [`dim63-67-gf8-norm-poles`](improved/dim63-67-gf8-norm-poles/) | 63–67 | GF(8) norm simplex pole exchange; exact replay |
+| [`dim65-mixed-depth-transfer`](improved/dim65-mixed-depth-transfer/) | 65 | Exact BCH-aligned mixed-depth clone transfer |
 | [`dim66-67-netto-signed-trades`](improved/dim66-67-netto-signed-trades/) | 66–67 | Signed Netto trades with exterior BCH caps; exact replay |
 | [`dim65-67-bch-exterior-caps`](improved/dim65-67-bch-exterior-caps/) | 65–67 | Exterior BCH cap bodies; exact replay |
 | [`dim66-67-kerdock-axis-owners`](improved/dim66-67-kerdock-axis-owners/) | 66–67 | Kerdock-axis owner lifts; exact replay |
@@ -47,6 +48,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim96-partial-triality-fibres`](improved/dim96-partial-triality-fibres/) | 96 | Partial axis-word fibres; exact pair replay |
 | [`dim89-96-rs-axis-code-repack`](improved/dim89-96-rs-axis-code-repack/) | 89, 91–96 | 164 Reed–Solomon axis words and exact eligibility replay |
 | [`dim94-96-post-rs-partial-fibres`](improved/dim94-96-post-rs-partial-fibres/) | 94–96 | Exact partial axis words after the 164-word repack |
+| [`dim94-95-adapted-dodecad-fibres`](improved/dim94-95-adapted-dodecad-fibres/) | 94–95 | Adapted joint dodecad projections, append only |
 | [`dim96-joint-dodecad-fibres`](improved/dim96-joint-dodecad-fibres/) | 96 | Joint axis and sign projections on new dodecads |
 | [`dim96-adapted-dodecad-fibres`](improved/dim96-adapted-dodecad-fibres/) | 96 | Dodecad sign kernels adapted to active projections |
 | [`dim94-96-hexary-parity-packing`](improved/dim94-96-hexary-parity-packing/) | 94–96 | Complementary parity six-row packings; exact replay |

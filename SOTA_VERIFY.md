@@ -12,6 +12,8 @@ The [62D coordinate-weighted distance upgrade](verifications/improved/dim62-coor
 
 The [61–62D omitted-fibre construction](verifications/improved/dim61-62-omitted-fibre-spikes/) replays with `python verifications/improved/dim61-62-omitted-fibre-spikes/verify.py` and checks the exact shortened-code distances and weighted geometry.
 
+The [65D mixed-depth transfer](verifications/improved/dim65-mixed-depth-transfer/) replays with `python verifications/improved/dim65-mixed-depth-transfer/verify.py`, checking BCH coordinate alignment, discarded dense owners and retained GF(8) interfaces.
+
 The [63–64D mixed-depth clones](verifications/improved/dim63-64-mixed-depth-clones/) replay with `python verifications/improved/dim63-64-mixed-depth-clones/verify.py`. This trades against the same unmodified parent stock; gains are not additive to the old clones.
 
 The [63–64D dense owner clones](verifications/improved/dim63-64-dense-owner-clones/) replay with `python verifications/improved/dim63-64-dense-owner-clones/verify.py` and validate all altered signs and pair products. These are alternative witnesses, not an append to the GF(8) layers.
@@ -49,6 +51,8 @@ The [latest 89D mixed matching-row construction](verifications/improved/dim89-mi
 The [new 88–89D signed plane and row designs](verifications/improved/dim88-89-signed-row-designs/) are verified by `python verifications/improved/dim88-89-signed-row-designs/verify.py`. This checks the support and signed-row geometry against the pinned parents.
 
 The [94–95D mixed triality append](verifications/improved/dim94-95-mixed-triality/) replays with `python verifications/improved/dim94-95-mixed-triality/verify.py` with the true physical RS grouping.
+
+The [94–95D adapted dodecad sign fibres](verifications/improved/dim94-95-adapted-dodecad-fibres/) replay with `python verifications/improved/dim94-95-adapted-dodecad-fibres/verify.py`, including the latest mixed and partial triality and matching layers in the compatibility checks.
 
 The [96D adapted sign kernels](verifications/improved/dim96-adapted-dodecad-fibres/) replay with `python verifications/improved/dim96-adapted-dodecad-fibres/verify.py`. Each kernel is reconstructed from its active projection equations, checked at minimum Hamming distance three, and checked against the unchanged post-RS stock.
 

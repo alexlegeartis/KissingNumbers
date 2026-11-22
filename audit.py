@@ -838,6 +838,15 @@ with io.open(os.path.join(IMP, 'dim96-adapted-dodecad-fibres', 'claims.json'), e
     _adapted96 = json.load(_file)
 add(_adapted96['dimension'], _adapted96['lower_bound'], 'dim96-adapted-dodecad-fibres', 'verify.py: adapted dodecad sign kernels')
 
+with io.open(os.path.join(IMP, 'dim65-mixed-depth-transfer', 'claims.json'), encoding='utf-8') as _file:
+    _mixed65 = json.load(_file)
+add(_mixed65['dimension'], _mixed65['lower_bound'], 'dim65-mixed-depth-transfer', 'verify.py: mixed-depth BCH clone transfer')
+
+with io.open(os.path.join(IMP, 'dim94-95-adapted-dodecad-fibres', 'claims.json'), encoding='utf-8') as _file:
+    _adapted9495 = json.load(_file)
+for _row in _adapted9495['claims']:
+    add(_row['dimension'], _row['lower_bound'], 'dim94-95-adapted-dodecad-fibres', 'verify.py: adapted joint dodecad append')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

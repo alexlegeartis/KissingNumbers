@@ -29,6 +29,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **22 November 2026 — Omitted-fibre weighted spikes.** **89,116,048** in 61D (+33,726) and **123,209,522** in 62D (+540,606), using shortened cyclic-code cosets and no dense removals. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
 
+**22 November 2026 — Adapted dodecads in 94D and 95D.** The joint projection and sign-kernel construction adds **1,026,880** points in each dimension without removing any prior point. [Exact replay](verifications/improved/dim94-95-adapted-dodecad-fibres/).
+
 **22 November 2026 — Adapted dodecad sign kernels.** Choosing distance checks after fixing the active projection constraints admits **1,216,736** points in a replacement dodecad layer, an increase of **827,308** over the first joint append, for **209,295,249,216** in 96D. [Exact replay](verifications/improved/dim96-adapted-dodecad-fibres/).
 
 **22 November 2026 — Joint axis and sign dodecad fibres.** Exact projected sign constraints allow **389,428** more points on 1,619 new 96D dodecad modes while keeping every old point. [Exact replay](verifications/improved/dim96-joint-dodecad-fibres/).
@@ -44,6 +46,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 **22 November 2026 — 348 more mixed triality patterns.** The 96D bound rises to **209,291,873,088** (+1,425,408) without removing any of the original 822 patterns. [Exact replay](verifications/improved/dim96-mixed-triality-six-rows/).
 
 **22 November 2026 — Mixed 96D triality rows.** Add 3,366,912 points in 96D with 822 tagged six-row patterns, reaching **209,290,447,680**. [Exact replay](verifications/improved/dim96-mixed-triality-six-rows/).
+
+**22 November 2026 — Mixed-depth clone transfer to 65D.** Aligning the BCH coordinates with the cyclic owner code permits a weighted clone trade while retaining 96 of the old GF(8) spikes. The bound becomes **336,258,432** (+740). [Exact replay](verifications/improved/dim65-mixed-depth-transfer/).
 
 **22 November 2026 — Mixed-depth dense owner clones.** Adding a shallower type of weighted clone raises the lower bounds to **184,428,848** in 63D (+1,157) and **335,798,944** in 64D (+1,641). [Exact replay](verifications/improved/dim63-64-mixed-depth-clones/).
 

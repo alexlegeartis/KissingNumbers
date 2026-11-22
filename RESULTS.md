@@ -20,6 +20,8 @@
 
 22 November 2026: omitted-fibre weighted spikes give 89116048 in 61D and 123209522 in 62D. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
 
+22 November 2026: adapted dodecad sign fibres append 1026880 each in 94D and 95D, reaching 74143225164 and 117092898500. [Exact replay](verifications/improved/dim94-95-adapted-dodecad-fibres/).
+
 22 November 2026: adapting each dodecad sign kernel to the active projections gives 209295249216 in 96D (+827308 beyond the first joint append). [Exact replay](verifications/improved/dim96-adapted-dodecad-fibres/).
 
 22 November 2026: coupled axis and sign dodecad fibres append 389428 points in 96D, reaching 209294421908. [Exact replay](verifications/improved/dim96-joint-dodecad-fibres/).
@@ -35,6 +37,8 @@
 22 November 2026: 348 further six-row patterns add 1425408 in 96D, giving 209291873088. [Exact replay](verifications/improved/dim96-mixed-triality-six-rows/).
 
 22 November 2026: mixed triality rows add 3366912 in 96D. [Exact replay](verifications/improved/dim96-mixed-triality-six-rows/).
+
+22 November 2026: a BCH-aligned mixed-depth transfer gives 336258432 in 65D. [Exact replay](verifications/improved/dim65-mixed-depth-transfer/).
 
 22 November 2026: mixed-depth clones give 184428848 in 63D and 335798944 in 64D. [Exact replay](verifications/improved/dim63-64-mixed-depth-clones/).
 
@@ -209,7 +213,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 62 | 52 417 932 | **126 570 636** | 2.41 | `codes` | [Coordinate-weighted distance](verifications/improved/dim62-coordinate-weighted-distance/)
 | 63 | 52 418 564 | **184 428 848** | 3.52 | `codes` | [Mixed-depth dense owner clones](verifications/improved/dim63-64-mixed-depth-clones/)
 | 64 | 331 737 984 | **335 798 944** | 1.01 | `codes` | [Mixed-depth dense owner clones](verifications/improved/dim63-64-mixed-depth-clones/)
-| 65 | 331 737 986 | **336 257 692** | 1.01 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/)
+| 65 | 331 737 986 | **336 258 432** | 1.01 | `codes` | [Mixed-depth clone transfer](verifications/improved/dim65-mixed-depth-transfer/)
 | 66 | 331 737 990 | **342 390 470** | 1.03 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/)
 | 67 | 331 737 996 | **355 196 300** | 1.07 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/) |
 | 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
@@ -237,8 +241,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 91 | 6 218 187 548 | **25 923 282 704** | 4.17 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
 | 92 | 8 589 934 592 | **34 513 217 296** | 4.02 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
 | 93 | 17 179 869 184 | **47 398 119 184** | 2.76 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
-| 94 | 34 359 738 368 | **74 142 198 284** | 2.16 | `codes` | [Post-RS partial axis fibres](verifications/improved/dim94-96-post-rs-partial-fibres/)
-| 95 | 68 719 476 736 | **117 091 871 620** | 1.70 | `codes` | [Post-RS partial axis fibres](verifications/improved/dim94-96-post-rs-partial-fibres/)
+| 94 | 34 359 738 368 | **74 143 225 164** | 2.16 | `codes` | [Adapted dodecad sign fibres](verifications/improved/dim94-95-adapted-dodecad-fibres/)
+| 95 | 68 719 476 736 | **117 092 898 500** | 1.70 | `codes` | [Adapted dodecad sign fibres](verifications/improved/dim94-95-adapted-dodecad-fibres/)
 | 96 | 137 438 953 472 | **209 295 249 216** | 1.52 | `codes` | [Adapted dodecad sign kernels](verifications/improved/dim96-adapted-dodecad-fibres/)
 
 ## Status: what would have to change

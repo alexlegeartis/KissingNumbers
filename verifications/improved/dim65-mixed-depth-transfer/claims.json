@@ -1,0 +1,11 @@
+{
+  "dimension": 65,
+  "previous": 336257692,
+  "lower_bound": 336258432,
+  "gain": 740,
+  "inserted": 3242,
+  "retired_dense_owners": 1574,
+  "retired_gf8_spikes": 928,
+  "retained_gf8_spikes": 96,
+  "exact_new_pairs": 5253661
+}
