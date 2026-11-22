@@ -20,6 +20,8 @@
 
 22 November 2026: omitted-fibre weighted spikes give 89116048 in 61D and 123209522 in 62D. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
 
+22 November 2026: coupled axis and sign dodecad fibres append 389428 points in 96D, reaching 209294421908. [Exact replay](verifications/improved/dim96-joint-dodecad-fibres/).
+
 22 November 2026: post-RS partial axis fibres give 74142198284, 117091871620 and 209294032480 in 94D, 95D and 96D. [Exact replay](verifications/improved/dim94-96-post-rs-partial-fibres/).
 
 22 November 2026: restricted quinary Reed–Solomon axis words raise the bounds in 89D and 91–96D, including 209293999424 in 96D. [Exact replay](verifications/improved/dim89-96-rs-axis-code-repack/).
@@ -233,7 +235,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 93 | 17 179 869 184 | **47 398 119 184** | 2.76 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
 | 94 | 34 359 738 368 | **74 142 198 284** | 2.16 | `codes` | [Post-RS partial axis fibres](verifications/improved/dim94-96-post-rs-partial-fibres/)
 | 95 | 68 719 476 736 | **117 091 871 620** | 1.70 | `codes` | [Post-RS partial axis fibres](verifications/improved/dim94-96-post-rs-partial-fibres/)
-| 96 | 137 438 953 472 | **209 294 032 480** | 1.52 | `codes` | [Post-RS partial axis fibres](verifications/improved/dim94-96-post-rs-partial-fibres/)
+| 96 | 137 438 953 472 | **209 294 421 908** | 1.52 | `codes` | [Joint axis and sign dodecad append](verifications/improved/dim96-joint-dodecad-fibres/)
 
 ## Status: what would have to change
 

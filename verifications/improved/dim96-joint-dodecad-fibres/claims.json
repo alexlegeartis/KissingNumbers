@@ -1,0 +1,12 @@
+{
+  "dimension": 96,
+  "previous": 209294032480,
+  "geometries": 1619,
+  "axis_modes": 12688,
+  "old_geometric_interfaces": 14571,
+  "new_geometric_interfaces": 85730,
+  "active_new_axial_pairs": 701,
+  "active_within_axial_pairs": 2084,
+  "gain": 389428,
+  "lower_bound": 209294421908
+}

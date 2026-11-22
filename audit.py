@@ -825,6 +825,10 @@ with io.open(os.path.join(IMP, 'dim94-96-post-rs-partial-fibres', 'claims.json')
 for _row in _post_rs['claims']:
     add(_row['dimension'], _row['lower_bound'], 'dim94-96-post-rs-partial-fibres', 'verify.py: exact post-RS partial-fibre packings')
 
+with io.open(os.path.join(IMP, 'dim96-joint-dodecad-fibres', 'claims.json'), encoding='utf-8') as _file:
+    _joint96 = json.load(_file)
+add(_joint96['dimension'], _joint96['lower_bound'], 'dim96-joint-dodecad-fibres', 'verify.py: joint dodecad axis and sign projections')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

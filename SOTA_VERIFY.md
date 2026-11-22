@@ -48,6 +48,8 @@ The [new 88–89D signed plane and row designs](verifications/improved/dim88-89-
 
 The [94–95D mixed triality append](verifications/improved/dim94-95-mixed-triality/) replays with `python verifications/improved/dim94-95-mixed-triality/verify.py` with the true physical RS grouping.
 
+The [96D joint dodecad fibres](verifications/improved/dim96-joint-dodecad-fibres/) replay with `python verifications/improved/dim96-joint-dodecad-fibres/verify.py`, checking individual axis words and their Hamming-syndrome sign fibres against all active projections.
+
 The [post-RS partial-fibre packings](verifications/improved/dim94-96-post-rs-partial-fibres/) replay with `python verifications/improved/dim94-96-post-rs-partial-fibres/verify.py`, checking each explicit set of axis words directly against the repacked and untouched interfaces.
 
 The [164-word axis-code repack](verifications/improved/dim89-96-rs-axis-code-repack/) replays with `python verifications/improved/dim89-96-rs-axis-code-repack/verify.py`, regenerating the restricted Reed–Solomon code and checking every replacement eligibility and count in 89D and 91–96D.
