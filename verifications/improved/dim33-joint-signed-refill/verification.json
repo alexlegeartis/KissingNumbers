@@ -1,0 +1,13 @@
+{
+  "dimension": 33,
+  "count": 370528,
+  "current_gain": 112,
+  "dense_minimum_distance": 8,
+  "full_octads": 1837,
+  "explicit_points": 4320,
+  "explicit_pairs": 9329040,
+  "maximum_explicit_inner_product": 16,
+  "maximum_full_octad_to_explicit_inner_product": 16,
+  "maximum_inner_product_all_pairs": 16,
+  "unordered_pairs": 68645314128
+}

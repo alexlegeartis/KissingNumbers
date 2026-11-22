@@ -1,5 +1,7 @@
 # Research campaigns
 
+[32–35D coded-layer search](32_35_coded_layer_search_20261122/) records the exact 33D signed refill and a coordinate-weight obstruction for two larger binary codes.
+
 [Discrete exchanges in dimensions 25–31](low_dimensional_exchanges_20261122.md) give **248,506 in 30D**, a gain of 90.
 
 These packages preserve construction searches, exact certificates for restricted

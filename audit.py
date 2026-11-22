@@ -495,6 +495,16 @@ for _row in _driver.results():
     add(_row['dimension'], _row['total'], _package,
         'verify.py: exact section and rational kernel, optional full exterior pair check')
 
+# 22 November: joint signed-octad, star and root refill in dimension 33.
+_package = 'dim33-joint-signed-refill'
+_spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
+    os.path.join(IMP, _package, 'final.py'))
+_driver = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_driver)
+for _row in _driver.results():
+    add(_row['dimension'], _row['total'], _package,
+        'verify.py: complete signed geometry for 370,528 directions with optional all-pairs replay')
+
 # 20 November: 33D octad switches with retained non-antipodal exceptions.
 _package = 'dim33-octad-switches'
 _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
@@ -2514,6 +2524,7 @@ if '--write-results' in sys.argv and not fail:
         'dim26-30-asymmetric-exchanges': 'signed-point normal-sector exchanges without antipodal constraints; full independent exact all-pairs replay',
         'dim28-takhanov-root-exchange': 'E8 contact cycles and auxiliary-frame exchange over the pinned Takhanov witness; complete exact geometry',
         'dim26-section-rational-kernel': '27D section with fixed Leech-based exterior and a new 340-point rational kernel; exact replay',
+        'dim33-joint-signed-refill': 'joint repacking of individual signed octads, stars and roots',
         'dim33-octad-switches': 'two full-octad swaps and two signed-star families',
         'dim34-octad-switches': 'coordinated octad switches and root-star exchanges; two exact proofs',
         'dim35-octad-switches': 'octad switches and a signed-star exchange',
@@ -2600,6 +2611,8 @@ if '--write-results' in sys.argv and not fail:
     out.append('19 November 2026: 168 signed six-support families and two unit poles give 544474 in 37D (+10,610 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).')
     out.append('19 November 2026: shared signed-root cuts and a seven-site layer give 536440 in 37D (+2,576). [Exact replay](verifications/improved/dim37-qr-shared-stars/).')
     out.append('20 November 2026: 27D section and rational kernel give 201204 in 26D, 12 above Takhanov. [Exact replay](verifications/improved/dim26-section-rational-kernel/).')
+    out.append('On 22 November 2026, joint signed repacking raised the 33D lower bound to 370,528, a gain of 112. [Complete 33D geometry](verifications/improved/dim33-joint-signed-refill/)')
+    out.append("")
     out.append('20 November 2026: two full-octad swaps enable 32 extra stars for 24 roots, giving 370416 in 33D (+8 over 370408). [Two exact replays](verifications/improved/dim33-octad-switches/).')
     out.append('20 November 2026: four octad switches and a signed-star exchange give 391004 in 34D (+12 over 390992). [Two exact replays](verifications/improved/dim34-octad-switches/).')
     out.append('20 November 2026: seven octad switches enable a net 96-star gain for 74 signed roots, giving 415358 in 35D (+22 over 415336). [Exact proof](verifications/improved/dim35-octad-switches/).')

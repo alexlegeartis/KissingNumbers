@@ -7,12 +7,13 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-162 packages, one per **construction idea** rather than one per dimension, because several
+163 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
+| [`dim33-joint-signed-refill`](improved/dim33-joint-signed-refill/) | 33 | 370,528 points. Joint exact signed refill. |
 | [`dim29-takhanov-auxiliary-exchange`](improved/dim29-takhanov-auxiliary-exchange/) | 29 | 232,154 points, one above Takhanov. Exact midpoint and auxiliary exchange. |
 | [`dim30-row-midpoint-packing`](improved/dim30-row-midpoint-packing/) | 30 | 248,506 points. Lifted Leech contact midpoints and exact exchange. |
 | [`dim30-reflected-certificate-unions`](improved/dim30-reflected-certificate-unions/) | 30 | 248,416 points. Exact reflected exchanges and complete final geometry. |

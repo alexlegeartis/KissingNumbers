@@ -1,0 +1,16 @@
+{
+  "search_instances": {
+    "initial": {
+      "path": "data/initial_search.npz",
+      "sha256": "45346a0202134c61607e0a17a91319fe24b71b9a28da006fcea6735427c0a735"
+    },
+    "repeat": {
+      "path": "data/repeat_search.npz",
+      "sha256": "376cb37b2de006bc14a8e16e8c9312ff0c2408ae4438ccfad68f6f715f0e156e"
+    }
+  },
+  "dimension": 33,
+  "count": 370528,
+  "parent_count": 370416,
+  "witness_sha256": "90d130ba1bb96172fae7b7ae10d1169747b76f2e720946bc2350c99a08d427c9"
+}

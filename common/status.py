@@ -661,3 +661,5 @@ STATUS[39] = ('codes', 'QR quotient fibres at five rational heads with exact spa
 STATUS[39] = ('codes', '84 QR quotient fibres with three-coordinate heads; exact sparse signs, 783468 points (dim39-qr-three-coordinate-heads/verify.py)')
 
 STATUS[30] = ('heads', 'lifted Leech contact midpoints give 248506 by a 340-for-250 exchange (dim30-row-midpoint-packing/verify.py)')
+
+STATUS[33] = ('codes', 'joint signed refill gives 370528 by selecting octad signs, stars and roots together (dim33-joint-signed-refill/verify.py)')

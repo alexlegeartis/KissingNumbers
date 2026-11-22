@@ -17,6 +17,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **22 November 2026 — 30D lifted contact midpoints.** An exchange of 340 new points for 250 old ones gives **248,506**, a gain of 90. The complete integer coordinates and exact pair checks are available in the [30D proof](verifications/improved/dim30-row-midpoint-packing/).
 
+**22 November 2026 — joint 33D signed refill.** Joint repacking of the explicit signed octads, stars and roots gives **370,528**, a gain of 112. [Exact 33D proof](verifications/improved/dim33-joint-signed-refill/).
+
 **21 November 2026 — marked caps and refills.** [Two exact support exchanges](verifications/improved/dim61-62-marked-caps/) yield **89,082,322 in 61D** (+9,520) and **122,668,916 in 62D** (+9,840).
 
 **21 November 2026 — shaped Nebe latitudes.** [Ten exact existence bounds](verifications/improved/dim76-85-mixed-shape-norm10/) improve 76–85D with signed-permutation tails and rational triangle bounds. The largest gain is **1,930,138 in 85D**.

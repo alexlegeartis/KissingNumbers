@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 243 scripts, including large exact certificate replays
-    python run_all.py --full       # 262 scripts
+    python run_all.py              # 246 scripts, including large exact certificate replays
+    python run_all.py --full       # 265 scripts
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -126,6 +126,7 @@ JOBS = [
     ('dim36-37-ct-cell-rebuild: independent short-shell audit', os.path.join(V, 'improved', 'dim36-37-ct-cell-rebuild'), ['audit.py'], 1.0, True),
     ('dim29-even-grid-exchange: exact projected-grid trade', os.path.join(V, 'improved', 'dim29-even-grid-exchange'), ['verify.py'], 1.0, True),
     ('dim26-section-rational-kernel: exact section and rational kernel', os.path.join(V, 'improved', 'dim26-section-rational-kernel'), ['verify.py'], 7.0, True),
+    ('33D joint signed refill and complete geometry', os.path.join(V, 'improved', 'dim33-joint-signed-refill'), ['verify.py'], 0.1, True),
     ('dim33-octad-switches: exact support and angle replay', os.path.join(V, 'improved', 'dim33-octad-switches'), ['verify.py'], 1.0, True),
     ('dim33-octad-switches: expanded integer-coordinate replay', os.path.join(V, 'improved', 'dim33-octad-switches'), ['audit.py'], 1.0, True),
     ('dim34-octad-switches: exact support and angle replay', os.path.join(V, 'improved', 'dim34-octad-switches'), ['verify.py'], 1.0, True),
@@ -575,6 +576,7 @@ def _sota_jobs(quick=False):
         ('dim29-even-grid-exchange', ('verify.py',)),
         ('dim29-takhanov-auxiliary-exchange', ('verify.py',)),
         ('dim26-section-rational-kernel', ('verify.py',)),
+        ('dim33-joint-signed-refill', ('verify.py',)),
         ('dim33-octad-switches', ('verify.py',)),
         ('dim33-octad-switches', ('audit.py',)),
         ('dim34-octad-switches', ('verify.py',)),
@@ -809,6 +811,7 @@ def _sota_coverage(jobs, results=None):
         ('dim28-takhanov-root-exchange', [28], [('verify.py',), ('negative_controls.py',)],
          'complete exact geometry for 223528 points, pinned Takhanov source and independent integer exchange'),
         ('dim26-section-rational-kernel', [26], [('verify.py',)], 'exact section replay and rational kernel; optional full exterior pair check'),
+        ('dim33-joint-signed-refill', [33], [('verify.py',)], 'complete exact pair-category geometry and optional expanded replay'),
         ('dim33-octad-switches', [33], [('verify.py',), ('audit.py',)], 'two octad swaps, 32 new stars and all independent signed geometry'),
         ('dim34-octad-switches', [34], [('verify.py',), ('audit.py',)], 'complete support and discrete geometry, exact rank and uniqueness of all 391,004 integer rows'),
         ('dim89-two-color-latitudes', [89], [('verify.py',)], '14 Z8 fibers, exact individual-radius geometry and sparse replay'),

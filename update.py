@@ -93,6 +93,7 @@ DRIVERS.append(('38D triangular Hamming', os.path.join(V, 'dim38-triangle-hammin
 DRIVERS.append(('39D three-coordinate QR heads', os.path.join(V, 'dim39-qr-three-coordinate-heads'), 'final.py'))
 DRIVERS.append(('39D five-head QR quotient', os.path.join(V, 'dim39-qr-pentapolar'), 'final.py'))
 DRIVERS.append(('26D section and rational kernel', os.path.join(V, 'dim26-section-rational-kernel'), 'final.py'))
+DRIVERS.append(('33D joint signed refill', os.path.join(V, 'dim33-joint-signed-refill'), 'final.py'))
 DRIVERS.append(('33D octad switches', os.path.join(V, 'dim33-octad-switches'), 'final.py'))
 DRIVERS.append(('34D octad switches', os.path.join(V, 'dim34-octad-switches'), 'final.py'))
 DRIVERS.append(('35D octad switches', os.path.join(V, 'dim35-octad-switches'), 'final.py'))
