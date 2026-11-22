@@ -783,6 +783,14 @@ with io.open(os.path.join(IMP, 'dim94-96-hexary-parity-packing', 'claims.json'),
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim94-96-hexary-parity-packing', 'verify.py: exact construction replay')
 
+_package = 'dim36-ct-triangle-refill'
+_spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
+    os.path.join(IMP, _package, 'final.py'))
+_driver = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_driver)
+for _row in _driver.results():
+    add(_row['dimension'], _row['total'], _package, 'verify.py and verify_expanded.py: exact triangle switches and changed-point geometry')
+
 add(37, 544666, 'dim37-qr-flat-repack', 'verify.py: exact local signed pairs and inherited interfaces')
 
 with io.open(os.path.join(IMP, 'dim65-67-bch-exterior-caps', 'claims.json'), encoding='utf-8') as _file:
@@ -2572,6 +2580,7 @@ if '--write-results' in sys.argv and not fail:
         'dim25-collective-deformation': 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons',
         'dim31-dual-centres': 'shared midpoint replacements and dual E7 centres; exact coordinate replay',
         'dim36-ct-nonlocal': 'Nonlocal Coxeter–Todd phase rebuild; two exact integer replays',
+        'dim36-ct-triangle-refill': 'Coxeter–Todd triangle switches and phase refill with an explicit changed-point audit',
         'dim37-qr-flat-repack': 'QR 12-flat phase repacking',
         'dim37-qr-radical-families': 'QR compression and radical support packing; exact changed-pair proof',
         'dim37-qr-shared-stars': 'QR compression and shared signed-root cuts; exact sparse geometry',
@@ -2618,6 +2627,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append('22 November 2026 — Coxeter–Todd triangle switches and a three-block phase refill raise 36D to 502902 (+81). [Exact replays](verifications/improved/dim36-ct-triangle-refill/).')
     out.append('22 November 2026: a 576-point 12-flat repacking replaces 384 octad phases and gives 544666 in 37D (+192). [Exact replay](verifications/improved/dim37-qr-flat-repack/).')
     out.append('')
     out.append('19 November 2026: 168 signed six-support families and two unit poles give 544474 in 37D (+10,610 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).')

@@ -147,7 +147,11 @@ Intermediate 37D: **536,440** (+2,576), with 720 stars replacing 576 roots and a
 
 Latest 38D: **652,076** (+4). The [octad-switch verification](verifications/improved/dim38-qr-octad-switches/) checks the ten replacements and all final support pairs, and independently regenerates the signed stars and root deletions. The 31 dense fibres are unchanged and replayed.
 
-Latest 36D and preceding 38D: **502,821** (+54) and **652,044** (+8,208). The [36D phase proof](verifications/improved/dim36-ct-nonlocal/) replays all 13,002,450 outer coset pairs; the [38D offset proof](verifications/improved/dim38-qr-free-offsets/) replays all 465 inter-fibre comparisons and the unchanged sparse geometry. The [38D star trade](verifications/improved/dim38-qr-star-trades/) verifies every new star and the 128 root deletions.
+The latest 36D construction gives **502,902** (+81) by switching individual Coxeter–Todd triangles and refilling the three-block layer. The two replays check the quotient geometry and 792,834,848 explicit pairs involving changed points. [36D triangle switch proof](verifications/improved/dim36-ct-triangle-refill/).
+
+The preceding 36D result of **502,821** (+54) replays all 13,002,450 outer coset pairs. [36D phase proof](verifications/improved/dim36-ct-nonlocal/).
+
+The preceding 38D result of **652,044** (+8,208) replays all 465 inter-fibre comparisons. The signed star replay checks every added star and the 128 root deletions. [38D offset proof](verifications/improved/dim38-qr-free-offsets/) · [38D star trade](verifications/improved/dim38-qr-star-trades/).
 
 Preceding 37D and 38D: **533,864** and **643,836**, gains of 27,155 and 32,038. The [QR compression proof](verifications/improved/dim37-38-qr-merge/) checks the complete dense and sparse layers, all product classes in two formulations, and an optional full dense-pair expansion.
 

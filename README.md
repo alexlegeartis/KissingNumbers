@@ -39,7 +39,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 33 | 370 240 | [Lin, support code + ERS layers (2026)](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 528** | **SOTA** | +0.077787% | — | updated 2026-11-22 | [Joint signed refill](verifications/improved/dim33-joint-signed-refill/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal33/evidence/public_comparison.json) |
 | 34 | 390 980 | [Lin, support code + ERS layers (2026)](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **391 004** | **SOTA** | +0.00614% | — | updated 2026-11-20 | [Octad swaps and signed stars](verifications/improved/dim34-octad-switches/) | — |
 | 35 | 415 308 | [Lin, support code + ERS layers (2026)](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 360** | **SOTA** | +0.01252% | — | updated 2026-11-21 | [Joint signed-star and root repacking](verifications/improved/dim35-joint-star-root/) | — |
-| 36 | 484 760 | [Yang et al., signed replacements (2026)](https://arxiv.org/abs/2609.35051v1) | **502 821** | **SOTA** | +3.7258% | — | updated 2026-11-19 | [Nonlocal Coxeter–Todd phase rebuild](verifications/improved/dim36-ct-nonlocal/) | — |
+| 36 | 484 760 | [Yang et al., signed replacements (2026)](https://arxiv.org/abs/2609.35051v1) | **502 902** | **SOTA** | +3.7425% | — | updated 2026-11-22 | [Coxeter–Todd triangle switches and phase refill](verifications/improved/dim36-ct-triangle-refill/) | — |
 | 37 | 500 008 | [Olivier, using Lin's code (2026)](https://doi.org/10.5281/zenodo.23569153) | **544 666** | **SOTA** | +8.9315% | — | updated 2026-11-22 | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) | — |
 | 38 | 605 322 | [Qihong Lin, Leech equatorial augmentation (2026)](https://arxiv.org/abs/2611.03682) | **652 076** | **SOTA** | +7.7238% | — | updated 2026-11-20 | [QR offsets, octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) | — |
 | 39 | 755 988 | [Edel–Rains–Sloane (1998 method)](https://arxiv.org/abs/math/0207291) + [Brouwer’s archived 39D bound](https://aeb.win.tue.nl/codes/Andw.html-old5#kiss) | **783 468** | **SOTA** | +3.63% | — | updated 2026-11-20 | [Three-coordinate QR heads](verifications/improved/dim39-qr-three-coordinate-heads/) | — |
@@ -101,6 +101,8 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 ## Recent updates
 
 Expand a week for the main milestones; follow its history link for the full dated sequence, intermediate values and proof notes. Current bounds are in the table above.
+
+Individual Coxeter–Todd triangle switches and a three-block phase refill raise **36D to 502,902** (+81). [Exact replays](verifications/improved/dim36-ct-triangle-refill/).
 
 <details>
 <summary>16–22 November 2026 (through 19 November)</summary>

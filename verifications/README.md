@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-166 packages, one per **construction idea** rather than one per dimension, because several
+167 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -36,6 +36,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim62-coordinate-weighted-distance`](improved/dim62-coordinate-weighted-distance/) | 62 | Rank-16 marked-coordinate distance and exact deduplication |
 | [`dim61-62-marked-caps`](improved/dim61-62-marked-caps/) | 61–62 | Marked caps and nine-support refill; exact replay |
 | [`dim63-balanced-nine-refill`](improved/dim63-balanced-nine-refill/) | 63 | Balanced signed nine-support refill; exact replay |
+| [`dim36-ct-triangle-refill`](improved/dim36-ct-triangle-refill/) | 36 | Coxeter–Todd triangle switches and phase refill with an explicit changed-point audit |
 | [`dim37-qr-flat-repack`](improved/dim37-qr-flat-repack/) | 37 | QR 12-flat phase repacking; exact replay |
 | [`dim63-64-dense-owner-clones`](improved/dim63-64-dense-owner-clones/) | 63–64 | Cloned cyclic dense owners; exact replay |
 | [`dim63-64-mixed-depth-clones`](improved/dim63-64-mixed-depth-clones/) | 63–64 | Mixed-depth cyclic dense owner clones |

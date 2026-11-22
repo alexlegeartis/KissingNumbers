@@ -97,6 +97,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **22 November 2026 — Signed plane and row designs.** **13,357,793,920** in 88D (+24,268) by a doubled Steiner system and two rotated plane layers; **15,179,459,090** in 89D (+2,069,008) by three triality frames and tagged five-row D4 fibers. [Exact replay](verifications/improved/dim88-89-signed-row-designs/).
 
+**22 November 2026 — Coxeter–Todd triangle switches.** **502,902** in 36D (+81). The construction relocates 63 triangles in the two-block layer and adds a net 81 individual points to the three-block layer. [Exact replays](verifications/improved/dim36-ct-triangle-refill/).
+
 **22 November 2026 — QR 12-flat phase repacking.** **544,666** in 37D (+192 over the radical-family construction), replacing 384 all-phase octad points with a 576-point paired-coordinate parity code. The [448-point refill](https://github.com/alexlegeartis/KissingNumbers/commit/9124b78a1e2eed5132d0fe3e14669e0e451e8b11) was an intermediate step. [Exact replay](verifications/improved/dim37-qr-flat-repack/).
 
 **22 November 2026 — Signed Netto trades.** **342,389,574** in 66D (+16) and **355,195,404** in 67D (+13), replacing selected signed quadruples without changing the exterior BCH caps. [Exact replay](verifications/improved/dim66-67-netto-signed-trades/).

@@ -74,6 +74,8 @@
 
 22 November 2026: a distance-22 BCH cap and exterior translates raise 65–67D to 336256796, 342389558 and 355195391. [Exact replay](verifications/improved/dim65-67-bch-exterior-caps/).
 
+22 November 2026 — Coxeter–Todd triangle switches and a three-block phase refill raise 36D to 502902 (+81). [Exact replays](verifications/improved/dim36-ct-triangle-refill/).
+
 22 November 2026: a 576-point 12-flat repacking replaces 384 octad phases and gives 544666 in 37D (+192). [Exact replay](verifications/improved/dim37-qr-flat-repack/).
 
 19 November 2026: 168 signed six-support families and two unit poles give 544474 in 37D (+10,610 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).
@@ -208,7 +210,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 33 | 370 240 | **370 528** | 1.00 | `codes` | [joint repacking of individual signed octads, stars and roots](verifications/improved/dim33-joint-signed-refill/) |
 | 34 | 390 980 | **391 004** | 1.00 | `heads` | [coordinated octad switches and root-star exchanges; two exact proofs](verifications/improved/dim34-octad-switches/) |
 | 35 | 415 308 | **415 360** | 1.00 | `heads` | [joint signed-star and root repacking](verifications/improved/dim35-joint-star-root/) |
-| 36 | 484 760 | **502 821** | 1.04 | `cosets` | [Nonlocal Coxeter–Todd phase rebuild](verifications/improved/dim36-ct-nonlocal/) |
+| 36 | 484 760 | **502 902** | 1.04 | `cosets` | [Coxeter–Todd triangle switches and phase refill with an explicit changed-point audit](verifications/improved/dim36-ct-triangle-refill/) |
 | 37 | 500 008 | **544 666** | 1.09 | `codes` | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) |
 | 38 | 566 652 | **652 076** | 1.15 | `codes` | [QR offsets, ten octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) |
 | 39 | 755 988 | **783 468** | 1.03 | `codes` | [QR fibres with three-coordinate heads and projected support checks](verifications/improved/dim39-qr-three-coordinate-heads/) |
@@ -288,7 +290,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `codes` | 92 (1) | larger input codes or different layer and section geometry can improve these explicit constructions | four-row partition heads with three crosspolytope alphabets and exact RS/root augmentation |
 | `codes` | 93, 96 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | three crosspolytope alphabets with E7 head sections and exact Reed-Solomon/root augmentation; full inherited parent replay |
 | `codes` | 94-95 (2) | larger input codes or different layer and section geometry can improve these explicit constructions | E6 and mixed E7 head exchanges with exact Reed-Solomon/root augmentation; full inherited parent replay |
-| `cosets` | 36 (1) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | compatible Coxeter-Todd orbit exchange with fresh exact source and replacement geometry; larger simultaneous exchanges remain open (dim36-37-orbit-exchange/verify.py) |
+| `cosets` | 36 (1) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | Individual Coxeter–Todd triangle switches and a repacked three-block phase layer (dim36-ct-triangle-refill/verify.py) |
 | `cosets` | 73-74 (2) | larger phase codes, nearest subsets or improved compatible tail assignments remain open | nearest Gamma72 subsets and repaired group images; exact geometry and the inherited nearestness certificates are replayed (dim73-88-gamma72-cosets/verify.py) |
 | `exhausted` | 18 (1) | the mechanism cannot give more; a different construction is needed | the bent-coset hexagon over odd BW16 is exactly at its ceiling: tier B <= 6*M6 and M6 = 160 (the 512-word slot graph is isomorphic to the girth-5 graph whose independence number 160 is CP-SAT-certified), so 8358 is the scheme maximum; poles, family size and vector shapes are all pinned (verifications/improved/dim18-bent-hexagon/README.md) |
 | `heads` | 25 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | critical-cluster replacement with 926 Leech circles and 247 rational points; complete independent exact proof; larger compatible families remain open (dim25-critical-cluster/verify.py) |
@@ -328,7 +330,7 @@ refreshed table, not more search.
 | 34 | `dim34-octad-switches` | Two exact replays of four octad switches and the final 391,004 directions |
 | 32-35 | `dim32-35-signed-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 35 | `dim35-joint-star-root` | Integer replay of 415,360 directions with 262 stars and 2,158 signed roots |
-| 36 | `dim36-ct-nonlocal` | verify.py and verify_independent.py: two exact short-shell and 13,002,450 coset-pair replays |
+| 36 | `dim36-ct-triangle-refill` | verify.py and verify_expanded.py: exact triangle switches and changed-point geometry |
 | 37 | `dim37-qr-flat-repack` | verify.py: exact signed pairs and inherited-layer interfaces; composes with the radical-family proof |
 | 38 | `dim38-qr-octad-switches` | verify.py and audit.py: exact replay of 31 dense fibres, ten new octad supports, 288 stars and the signed-root ledger |
 | 39 | `dim39-deformed-orbits` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |

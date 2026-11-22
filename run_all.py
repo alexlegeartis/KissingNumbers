@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 246 scripts, including large exact certificate replays
-    python run_all.py --full       # 265 scripts
+    python run_all.py              # 251 scripts, including large exact certificate replays
+    python run_all.py --full       # 270 scripts
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -106,6 +106,8 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('dim36-ct-triangle-refill: exact triangle switches and phase refill', os.path.join(V, 'improved', 'dim36-ct-triangle-refill'), ['verify.py'], 1.0, True),
+    ('dim36-ct-triangle-refill: explicit changed-point pairs', os.path.join(V, 'improved', 'dim36-ct-triangle-refill'), ['verify_expanded.py'], 1.0, True),
     ('dim37-qr-flat-repack: exact signed 12-flat substitution', os.path.join(V, 'improved', 'dim37-qr-flat-repack'), ['verify.py'], 0.1, True),
     ('dim37-qr-radical-families: exact layered construction', os.path.join(V, 'improved', 'dim37-qr-radical-families'), ['verify.py'], 1.0, True),
     ('dim37-qr-radical-families: explicit radical pair audit', os.path.join(V, 'improved', 'dim37-qr-radical-families'), ['audit.py'], 1.0, True),
@@ -673,6 +675,8 @@ def _sota_jobs(quick=False):
         ('dim29-30-native-partial-design', ('independent30/audit.py',)),
 
         ('dim31-annealed-design', ('verify.py',)),
+        ('dim36-ct-triangle-refill', ('verify.py',)),
+        ('dim36-ct-triangle-refill', ('verify_expanded.py',)),
         ('dim36-ct-nonlocal', ('verify.py',)),
         ('dim36-ct-nonlocal', ('verify_independent.py',)),
         ('dim37-qr-flat-repack', ('verify.py',)),
@@ -912,6 +916,7 @@ def _sota_coverage(jobs, results=None):
          'complete exact geometry for all 251420 points; exact int32 exchange with 2218 additions and 2052 removals from251254; historical packages retained'),
         ('dim30-bw14-module', [30], [('verify.py',)],
          'complete exact geometry for all 248020 points; separate integer Barnes-Wall reconstruction, pinned-source exchange and every inserted pair; four malformed-input controls'),
+        ('dim36-ct-triangle-refill', [36], [('verify.py',), ('verify_expanded.py',)], 'exact Coxeter-Todd triangle switches and phase refill, with explicit changed-point pairs'),
         ('dim36-ct-nonlocal', [36], [('verify.py',), ('verify_independent.py',)], 'complete Coxeter-Todd phase layer and all coset pairs'),
         ('dim38-qr-octad-switches', [38], [('verify.py',), ('audit.py',)], 'ten verified octad switches, 288 stars, 240 root deletions and unchanged QR fibres'),
         ('dim38-qr-star-trades', [38], [('verify.py',), ('audit.py',)], '144 explicit stars with 128 root deletions'),
