@@ -29,8 +29,8 @@ def positive_definite(q):
     for d in D:determinant*=d
     return determinant
 
-def check_minimum(q,compiler,work,*,enclosure_path=None):
-    e=np.load(enclosure_path if enclosure_path is not None else ROOT/'enclosure.npz',allow_pickle=False)
+def check_minimum(q,compiler,work):
+    e=np.load(ROOT/'enclosure.npz',allow_pickle=False)
     require(all(e[k].dtype.kind in 'iu' for k in e.files),'Noninteger enclosure')
     P=int(e['P']);D=e['D'].astype(object);M=e['M'].astype(object)
     J=e['inverse_times_three'].astype(object);Q=q.astype(object)

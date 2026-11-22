@@ -13,7 +13,7 @@ import numpy as np
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "dim40-affine-centre-refill"))
-from verify_expanded import AFFINE, enumerate_core, load_module
+from verify_expanded import AFFINE, check_minimum, enumerate_core, load_module
 
 
 def verify(compiler, workers):
@@ -30,7 +30,7 @@ def verify(compiler, workers):
     enclosure = HERE / "enclosure.npz"
     with tempfile.TemporaryDirectory(prefix="kn40_p48q_") as scratch:
         work = Path(scratch)
-        minimum = parent.check_minimum(gram, compiler, work, enclosure_path=enclosure)
+        minimum = check_minimum(gram, compiler, work, enclosure)
         print("Rank-40 lattice minimum is at least six.", flush=True)
         core = enumerate_core(gram, residue, compiler, work, enclosure_path=enclosure,
                               workers=workers)

@@ -198,7 +198,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 172 packages, 70 dimensions
+### `verifications/improved/` — 173 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -412,7 +412,7 @@ remain tied to its earlier registry scope until the deferred paper update.
 python run_all.py          # 256 scripts, including exact certificate replays
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 276 scripts: adds the all-pairs sweep, the
+python run_all.py --full   # 277 scripts: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

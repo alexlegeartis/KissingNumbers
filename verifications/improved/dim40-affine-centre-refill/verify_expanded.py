@@ -18,23 +18,47 @@ import numpy as np
 from verify import AFFINE, CORE_COUNT, GLUING, HERE, load_module, witness
 
 
-def enumerate_core(gram, residue, compiler, work, *, enclosure_path=None, workers=1):
-    path = enclosure_path if enclosure_path is not None else AFFINE / "enclosure.npz"
-    enclosure = np.load(path, allow_pickle=False)
-    scale = int(enclosure["P"])
-    diagonal = enclosure["D"].astype(object)
-    lower = enclosure["M"].astype(object)
-    inverse = enclosure["inverse_times_three"].astype(object)
+def enclosing_form(gram, path, squared_norm):
+    with np.load(path, allow_pickle=False) as enclosure:
+        assert all(enclosure[key].dtype.kind in "iu" for key in enclosure.files)
+        scale = int(enclosure["P"])
+        diagonal = enclosure["D"].astype(object)
+        lower = enclosure["M"].astype(object)
+        inverse = enclosure["inverse_times_three"].astype(object)
+    assert 0 < scale < 2**40 and diagonal.shape == (40,) and lower.shape == (40, 40)
+    assert inverse.shape == (40, 40)
     assert np.array_equal(gram.astype(object) @ inverse, 3 * np.eye(40, dtype=object))
     assert np.all(np.diag(lower) == scale) and not np.any(np.triu(lower, 1))
-    assert np.all(diagonal > 0)
+    assert np.all((0 < diagonal) & (diagonal < 2**36)) and np.max(np.abs(lower)) < 2**40
     error = scale**3 * gram.astype(object) - (lower * diagonal) @ lower.T
     eta = max(sum(abs(int(x)) for x in row) for row in error)
     trace = Fraction(sum(int(x) for x in np.diag(inverse)), 3)
-    # If xQx=54, then ||x||^2 <= 54 trace(Q^-1). The error
-    # between the rational LDL form and Q has operator norm <= eta.
-    bound = 54 * (scale**3 + eta * trace)
+    # If xQx <= squared_norm, then ||x||^2 <= squared_norm trace(Q^-1).
+    # The residual of the scaled rational LDL form has operator norm <= eta.
+    bound = squared_norm * (scale**3 + eta * trace)
     radius = -(-bound.numerator // bound.denominator)
+    assert 0 < radius < 2**120
+    return scale, diagonal, lower, radius
+
+
+def check_minimum(gram, compiler, work, enclosure_path):
+    scale, diagonal, lower, radius = enclosing_form(gram, enclosure_path, 4)
+    data = work / "minimum.input"
+    with data.open("w", encoding="ascii") as stream:
+        print(40, scale, radius, file=stream)
+        for row in (diagonal, *lower, *gram):
+            print(*row, file=stream)
+    binary = work / "exact_minimum"
+    subprocess.run([compiler, "-O3", "-std=c++17", str(AFFINE / "exact_minimum.cpp"),
+                    "-o", str(binary)], check=True)
+    result = json.loads(subprocess.check_output([str(binary), str(data)], text=True))
+    assert result["nonzero_vectors_of_norm_at_most_4"] == 0
+    return result
+
+
+def enumerate_core(gram, residue, compiler, work, *, enclosure_path=None, workers=1):
+    path = enclosure_path if enclosure_path is not None else AFFINE / "enclosure.npz"
+    scale, diagonal, lower, radius = enclosing_form(gram, path, 54)
     data = work / "core.input"
     with data.open("w", encoding="ascii") as stream:
         print(scale, radius, file=stream)
