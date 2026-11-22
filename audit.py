@@ -815,6 +815,11 @@ with io.open(os.path.join(IMP, 'dim62-coordinate-weighted-distance', 'claims.jso
     _weighted62 = json.load(_file)
 add(_weighted62['dimension'], _weighted62['lower_bound'], 'dim62-coordinate-weighted-distance', 'verify.py: exact rank-16 coordinate-weighted distances')
 
+with io.open(os.path.join(IMP, 'dim89-96-rs-axis-code-repack', 'claims.json'), encoding='utf-8') as _file:
+    _axis_repack = json.load(_file)
+for _row in _axis_repack['claims']:
+    add(_row['dimension'], _row['lower_bound'], 'dim89-96-rs-axis-code-repack', 'verify.py: exact 164-word axis-code repack')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

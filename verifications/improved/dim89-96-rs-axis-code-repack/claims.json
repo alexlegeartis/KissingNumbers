@@ -1,0 +1,62 @@
+{
+  "axis_words": 164,
+  "signs_per_word": 32,
+  "claims": [
+    {
+      "dimension": 89,
+      "previous": 15184866834,
+      "repacked_modes": 859,
+      "per_mode": 5248,
+      "gain": 989568,
+      "lower_bound": 15185856402
+    },
+    {
+      "dimension": 91,
+      "previous": 25922303504,
+      "repacked_modes": 850,
+      "per_mode": 5248,
+      "gain": 979200,
+      "lower_bound": 25923282704
+    },
+    {
+      "dimension": 92,
+      "previous": 34512238096,
+      "repacked_modes": 850,
+      "per_mode": 5248,
+      "gain": 979200,
+      "lower_bound": 34513217296
+    },
+    {
+      "dimension": 93,
+      "previous": 47397139984,
+      "repacked_modes": 850,
+      "per_mode": 5248,
+      "gain": 979200,
+      "lower_bound": 47398119184
+    },
+    {
+      "dimension": 94,
+      "previous": 74141118156,
+      "repacked_modes": 832,
+      "per_mode": 5248,
+      "gain": 958464,
+      "lower_bound": 74142076620
+    },
+    {
+      "dimension": 95,
+      "previous": 117090791492,
+      "repacked_modes": 832,
+      "per_mode": 5248,
+      "gain": 958464,
+      "lower_bound": 117091749956
+    },
+    {
+      "dimension": 96,
+      "previous": 209292462656,
+      "repacked_modes": 1334,
+      "per_mode": 5248,
+      "gain": 1536768,
+      "lower_bound": 209293999424
+    }
+  ]
+}
