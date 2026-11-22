@@ -838,6 +838,10 @@ _spec.loader.exec_module(_driver)
 for _row in _driver.results():
     add(_row['dimension'], _row['total'], _package, 'verify.py: fresh lattice and core enumeration with exact cross-layer pairs')
 
+with io.open(os.path.join(IMP, 'dim60-p48-n12-blockers', 'claims.json'), encoding='utf-8') as _file:
+    _row = json.load(_file)
+    add(_row['dimension'], _row['lower_bound'], 'dim60-p48-n12-blockers', 'verify.py and audit_angles.py: exact paired latitude and conservative blocker union')
+
 with io.open(os.path.join(IMP, 'dim65-67-bch-exterior-caps', 'claims.json'), encoding='utf-8') as _file:
     for _row in json.load(_file)['dimensions']:
         add(_row['dimension'], _row['lower_bound'], 'dim65-67-bch-exterior-caps', 'verify.py: exact extended BCH geometry')
@@ -2664,6 +2668,7 @@ if '--write-results' in sys.argv and not fail:
         'dim49-joint-signed-exchange': 'joint signed P48 exchange with exact full final-class check',
         'dim50-59-p48-joint-transport': 'transported signed P48 trades with exact pair and ownership checks',
         'dim50-60-p48-global-owner-refill': 'global P48 owner exchanges and exact tetrahedral tail geometry',
+        'dim60-p48-n12-blockers': 'matched norm-12 layer with exact shared-blocker accounting',
         'dim54-60-p48-tail-antipodes': 'complementary tail directions above signed P48 with exact ownership and angles',
         'dim49-60-p48-signed-refill': 'signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification',
         'dim54-59-p48-coverage': 'joint maximum-coverage selections of existing P48 class images; exact tails, isometries and full-coordinate ownership replay',
@@ -2686,6 +2691,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append("22 November 2026 — One matched norm-12 layer raises 60D to **58,664,259** (+537), adding 626 rays and charging at most 89 shared blockers. [Exact replay](verifications/improved/dim60-p48-n12-blockers/).")
     out.append("22 November 2026 — Global owner migration and a second refill improve 50–60D. The 60D construction reaches 58,663,722, combining exact owner changes with the 16-head sign cube and nested tetrahedral palettes. [Exact replay](verifications/improved/dim50-60-p48-global-owner-refill/).")
     out.append("22 November 2026 — New signed-head exchanges and complementary tail directions improve every dimension from 49D through 60D. [Transport proof](verifications/improved/dim50-59-p48-joint-transport/). [Tail proof and replay](verifications/improved/dim54-60-p48-tail-antipodes/) · [49D proof](verifications/improved/dim49-joint-signed-exchange/).")
     out.append('22 November 2026 — A scaled D4 in P48m gives 4940961 points in 44D. [Configuration and exact moment proof](verifications/improved/dim44-d4-section/).')
