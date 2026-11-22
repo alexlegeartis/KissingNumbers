@@ -8,6 +8,8 @@
 
 22 November 2026: signed plane and row designs add 24268 in 88D and 2069008 in 89D. [Exact replay](verifications/improved/dim88-89-signed-row-designs/).
 
+22 November 2026: using all sixty ordinary axes raises 61D to 90055722 and 62D to 124625036. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
+
 22 November 2026: two Delsarte–Goethals slices raise 61D to 89622928, and mixed triality adds 1937408 each in 94D/95D. [61D replay](verifications/improved/dim61-62-omitted-fibre-spikes/) · [94–95D replay](verifications/improved/dim94-95-mixed-triality/).
 
 22 November 2026: a rank-fifteen omitted-fibre code raises 62D to 123750194 (+540672). [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
@@ -185,8 +187,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 58 | 52 416 510 | **56 270 076** | 1.07 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
 | 59 | 52 416 604 | **56 952 414** | 1.09 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
 | 60 | 52 416 841 | **58 631 571** | 1.12 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
-| 61 | 52 417 154 | **89 622 928** | 1.70 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
-| 62 | 52 417 932 | **123 750 194** | 2.34 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
+| 61 | 52 417 154 | **90 055 722** | 1.70 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
+| 62 | 52 417 932 | **124 625 036** | 2.34 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
 | 63 | 52 418 564 | **184 427 691** | 3.52 | `codes` | [Cloned dense owners](verifications/improved/dim63-64-dense-owner-clones/)
 | 64 | 331 737 984 | **335 797 303** | 1.01 | `codes` | [Cloned dense owners](verifications/improved/dim63-64-dense-owner-clones/) 
 | 65 | 331 737 986 | **336 257 692** | 1.01 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/)

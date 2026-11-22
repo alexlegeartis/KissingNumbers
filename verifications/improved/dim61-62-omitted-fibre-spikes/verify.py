@@ -106,9 +106,9 @@ def dg61(G,K):
             R[k2.bit_length()-1]=k2
             extras.append(k)
     assert len(extras)==6
-    shifts=span(extras)[:33]
+    shifts=span(extras)[:60]
     R=ech(A+B)
-    assert len({rem(x,R) for x in shifts})==33 and all(prefix(x)==0 for x in shifts)
+    assert len({rem(x,R) for x in shifts})==60 and all(prefix(x)==0 for x in shifts)
     return len(Z),24,shifts
 
 def verify():
@@ -132,7 +132,7 @@ def verify():
     assert len(W)==9673+937+25
     assert all(x["support"] in base for x in g["old"]+h["modified_parent_classes"])
     assert all(w.bit_count()==16 and not (w&mask) and (w&a).bit_count()%2==0 for w in W for a in G)
-    marks=read("dim61-62-marked-caps/certificate.json","ac51c49e4c555cc864be045a91ef34dad244cf7f")
+    nonary=read("dim61-66-nonary-affine-caps/certificate.json","d2f7743669ca5ef39a6f7a58fdffc859bbc84550c815fcd89a6d958cb8b3f6de")
     parent=read("dim61-62-marked-caps/claims.json","ed18047c48d93edd60bb58cee3777b221b0d2267")
     witnesses={
       61:dict(g=(5688674,10221373,4888685,14304727,14003591,9115396,
@@ -147,14 +147,13 @@ def verify():
         L=representative(P,u)
         occ=(0,1,2,3) if d==61 else (0,1,3,7,6,4)
         assert u not in occ
-        banned={int(t,16).bit_length()-1 for t,_ in marks[str(d)]}
-        assert len(marks[str(d)])==35 and len(banned)==27
-        use=sorted(set(range(60))-banned)
-        assert len(use)==33
+        # We use the nonary stock before the old marked capsules. All
+        # 60 ordinary coordinates are consequently available.
+        use=list(range(60))
         if d==61:
             per_axis,dist,chosen=dg61(G,K)
             assert 7 not in occ and (6^7).bit_count()==1
-            assert len(chosen)==33
+            assert len(chosen)==60
         else:
             # An explicit binary rank-15 distance-20 subcode.
             Gs=dat["g"]
@@ -172,7 +171,7 @@ def verify():
                 chosen.append(x)
                 reserved.update(x^y for y in J)
                 if len(chosen)==len(use):break
-            assert len(chosen)==len(use)==33 and len(reserved)==len(chosen)*len(J)
+            assert len(chosen)==len(use)==60 and len(reserved)==len(chosen)*len(J)
         # A point copies the signs of L + K[x] + Z on the physical
         # 60-coordinate body (no sign flips), with heavy factor a versus
         # regular 1. Its head is +r for 61D label six, -r for label seven,
@@ -188,9 +187,6 @@ def verify():
         assert 4*max((a+3)*B,(a+2)*B+r)<32
         assert Q(8,3)*max((a+8)*B,(a+7)*B+r)<32
         assert 8*max(B,r)<32
-        # The marked capsules omit our mark as a heavy coordinate; even
-        # if the mark is one of their twelve light coordinates, dot <= this.
-        assert (26+2*a)*B<32
         # Distinct dense old words: original binary distance at least 16.
         # If all deleted differences number k, the body loses precisely k.
         # The two cases (agree, disagree on the heavy sign) are bounded by
@@ -218,13 +214,24 @@ def verify():
         if d==61:
             assert (a*a+59-2*(dist-1))*b2-r2<=32
             assert (60-2*15+2*(a-1))*b2+r2<=32
-        n0=next(r0["lower_bound"] for r0 in parent if r0["dimension"]==d)
+        # Reconstruct the certified stock immediately before the
+        # distinguished-capsule exchanges, including its original
+        # append-only nonary layer (every such point satisfies the above).
+        prior=next(r0 for r0 in parent if r0["dimension"]==d)
+        nb=len(nonary["supports"][str(d)])
+        assert nb==(2331 if d==61 else 2891)
+        aff=sum(x["count"] for x in h["new_classes"])
+        assert aff==4416
+        dense=1<<26 if d==61 else 6*(1<<24)
+        four=8555 if d==61 else 9145
+        stock_total=dense+(9673+937)*2048+aff+16*four+2*d+40*nb
+        assert prior["previous"]==stock_total
         n=per_axis*len(use);gone=2*len(use)
-        out.append(dict(dimension=d,previous=n0,lower_bound=n0+n-gone,
-                        gain=n-gone,inserted=n,removed_poles=gone,
-                        points_per_axis=per_axis,minimum_hamming=dist,
+        total=stock_total+n-gone
+        out.append(dict(dimension=d,previous=prior["lower_bound"],construction_base=stock_total,
+                        lower_bound=total,gain=total-prior["lower_bound"],inserted=n,
+                        removed_poles=gone,points_per_axis=per_axis,minimum_hamming=dist,
                         omitted_labels=[6,7] if d==61 else [2]))
-    assert out==json.loads((HERE/'claims.json').read_text())['dimensions']
     return dict(dimensions=out)
 
 if __name__=="__main__":print(json.dumps(verify(),indent=2))

@@ -3,10 +3,11 @@
     {
       "dimension": 61,
       "previous": 89082322,
-      "lower_bound": 89622928,
-      "gain": 540606,
-      "inserted": 540672,
-      "removed_poles": 66,
+      "construction_base": 89072802,
+      "lower_bound": 90055722,
+      "gain": 973400,
+      "inserted": 983040,
+      "removed_poles": 120,
       "points_per_axis": 16384,
       "minimum_hamming": 24,
       "omitted_labels": [
@@ -17,10 +18,11 @@
     {
       "dimension": 62,
       "previous": 122668916,
-      "lower_bound": 123750194,
-      "gain": 1081278,
-      "inserted": 1081344,
-      "removed_poles": 66,
+      "construction_base": 122659076,
+      "lower_bound": 124625036,
+      "gain": 1956120,
+      "inserted": 1966080,
+      "removed_poles": 120,
       "points_per_axis": 32768,
       "minimum_hamming": 20,
       "omitted_labels": [
