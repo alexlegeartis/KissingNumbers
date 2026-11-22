@@ -73,6 +73,8 @@ The [91–93D complementary parity Steiner append](verifications/improved/dim91-
 
 The [91–93D non-Steiner triality append](verifications/improved/dim91-93-nonsteiner-triality-append/) replays with `python verifications/improved/dim91-93-nonsteiner-triality-append/verify.py`, checking all affected retained modes and the fourteen new ones.
 
+The [93D bipartite D5 head construction](verifications/improved/dim93-z8-split-d5-heads/) replays with `python verifications/improved/dim93-z8-split-d5-heads/verify.py`. It checks 45 full Z8 fibres, the interfaces to the retained body layers, and the 1,800 new roots.
+
 The [94–95D mixed-tetrad axis and sign fibres](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/) replay with `python verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/verify.py` and a C++17 compiler. The replay checks the retained post-refinement monochrome geometry, matching modes, and actual shifted cross-frame interfaces.
 
 The [96D adapted sign kernels](verifications/improved/dim96-adapted-dodecad-fibres/) replay with `python verifications/improved/dim96-adapted-dodecad-fibres/verify.py`. Each kernel is reconstructed from its active projection equations, checked at minimum Hamming distance three, and checked against the unchanged post-RS stock.
