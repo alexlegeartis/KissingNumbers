@@ -44,6 +44,8 @@ The [alternate Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-al
 
 The [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) replays with `python verifications/improved/dim77-85-delta-marginal/verify.py`.
 
+The [88D full Pless census](verifications/improved/dim88-full-pless-chord-marks/) replays with `python verifications/improved/dim88-full-pless-chord-marks/verify.py` and a C++17 compiler. It certifies the six-column QR projection rank and enumerates the sparse weight-15 words from their unique lighter information half.
+
 The [rooted exchange in 74–85D](verifications/improved/dim74-85-gamma72-rooted-exchange/) replays with `python verifications/improved/dim74-85-gamma72-rooted-exchange/verify.py`. It uses exact double counts at each graph root, rational triangle duals and the inherited integer recurrence. These are existence bounds.
 
 The [harmonic-theta 74–85D latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) replay with `python verifications/improved/dim74-85-gamma72-harmonic-latitudes/verify.py`. The verifier rebuilds the harmonic shell identities, exact linear dual bounds and downward-rounded graph recurrence. These are existence bounds.

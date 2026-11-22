@@ -1,0 +1,12 @@
+{
+  "dimension": 88,
+  "fixed": [0, 3],
+  "chord_axes": [9, 30, 39, 44],
+  "previous": 13357793920,
+  "dense": 12397455648,
+  "previous_sparse": 959965380,
+  "sparse": 960535152,
+  "histogram": [37392, 80576, 57696, 17088, 1552],
+  "gain": 569772,
+  "lower_bound": 13358363692
+}

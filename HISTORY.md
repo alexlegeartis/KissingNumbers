@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 22 November)</summary>
 
+**22 November 2026 — Full Pless census and new chord marks.** Reassigning four chord coordinates raises the sparse layer by **569,772** points for an **88D lower bound of 13,358,363,692**. The dense and small layers retain their counts under the new coordinate assignment. [Exact proof and replay](verifications/improved/dim88-full-pless-chord-marks/).
+
 **22 November 2026 — Rooted Γ72 profile exchange.** Rootwise double counts couple three harmonic profile systems, improving all twelve bounds in **74–85D**. The new 85D bound is **6,235,855,650** (+31,246). [Exact replay](verifications/improved/dim74-85-gamma72-rooted-exchange/).
 
 **22 November 2026 — 30D lifted contact midpoints.** An exchange of 340 new points for 250 old ones gives **248,506**, a gain of 90. The complete integer coordinates and exact pair checks are available in the [30D proof](verifications/improved/dim30-row-midpoint-packing/).

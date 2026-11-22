@@ -775,6 +775,10 @@ with io.open(os.path.join(IMP, 'dim88-89-signed-row-designs', 'claims.json'), en
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim88-89-signed-row-designs', 'verify.py: exact signed planes and row codes')
 
+with io.open(os.path.join(IMP, 'dim88-full-pless-chord-marks', 'claims.json'), encoding='utf-8') as _file:
+    _row = json.load(_file)
+    add(_row['dimension'], _row['lower_bound'], 'dim88-full-pless-chord-marks', 'verify.py: full Pless census and QR chord rank')
+
 with io.open(os.path.join(IMP, 'dim89-mixed-matching-rows', 'claims.json'), encoding='utf-8') as _file:
     _row = json.load(_file)
     add(_row['dimension'], _row['lower_bound'], 'dim89-mixed-matching-rows', 'verify.py: exact mixed row codes')
