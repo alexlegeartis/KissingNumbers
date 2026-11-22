@@ -2,6 +2,8 @@
 
 21 November 2026: joint signed-star/root repacking adds 16 stars for 14 signed roots, giving 415360 in 35D (+2 over 415358). [Exact replay](verifications/improved/dim35-joint-star-root/).
 
+22 November 2026: a larger eight-row inner code and revised pattern list raise 89D to 15184866834 (+783360). [Exact replay](verifications/improved/dim89-mixed-matching-rows/).
+
 22 November 2026: mixed matching-row codes raise 89D to 15184083474 (+4624384). [Exact replay](verifications/improved/dim89-mixed-matching-rows/).
 
 22 November 2026: signed plane and row designs add 24268 in 88D and 2069008 in 89D. [Exact replay](verifications/improved/dim88-89-signed-row-designs/).
@@ -190,7 +192,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 86 | 6 218 177 532 | **8 008 545 838** | 1.29 | `codes` | [Re-marked axial Pless and Steiner squares](verifications/improved/dim86-87-remarked-square/)
 | 87 | 6 218 178 164 | **8 160 981 972** | 1.31 | `codes` | [Re-marked axial Pless and Steiner squares](verifications/improved/dim86-87-remarked-square/)
 | 88 | 6 218 179 920 | **13 357 793 920** | 2.15 | `codes` | [Signed plane and row designs](verifications/improved/dim88-89-signed-row-designs/)
-| 89 | 6 218 181 330 | **15 184 083 474** | 2.44 | `codes` | [Mixed matching-row codes](verifications/improved/dim89-mixed-matching-rows/)
+| 89 | 6 218 181 330 | **15 184 866 834** | 2.44 | `codes` | [Mixed matching-row codes](verifications/improved/dim89-mixed-matching-rows/)
 | 90 | 6 218 183 254 | **21 943 640 934** | 3.53 | `codes` | [Pless weight 15 words with nonlinear 7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |
 | 91 | 6 218 187 548 | **25 917 421 568** | 4.17 | `codes` | [Asymmetric head planes and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/)
 | 92 | 8 589 934 592 | **34 507 356 160** | 4.02 | `codes` | [Variable-radius fibers and larger flat layer](verifications/improved/dim91-93-flat-parity-extensions/)

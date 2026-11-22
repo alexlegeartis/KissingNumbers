@@ -83,10 +83,12 @@ def geometry():
             c=b^phase(y,[7,3,4,6,2,1,5])
             Q7.append(tuple((a>>i&1)+2*(c>>i&1) for i in range(7)))
     Q6=[w[:6] for w in Q7]
-    Q8=[tuple(a^(b if x&1 else 0)^(c if x&2 else 0)^(d if x&4 else 0) for x in range(8))
-        for a,b,c,d in product(range(4),repeat=4)]
+    raw=(P/'axis8.txt').read_bytes()
+    assert hashlib.sha256(raw).hexdigest()=='347643e55cc4a131d702beb8cded3b0008ae8a03b1be0acfa53406b8ea46cd4d'
+    Q8=[tuple(int(v) for v in line) for line in raw.decode().splitlines()]
+    assert all(len(w)==8 and set(w)<=set(range(4)) for w in Q8)
     out={}
-    for w,Q,ct,md in ((5,Q5,64,3),(6,Q6,128,3),(7,Q7,128,4),(8,Q8,256,4)):
+    for w,Q,ct,md in ((5,Q5,64,3),(6,Q6,128,3),(7,Q7,128,4),(8,Q8,352,4)):
         assert len(Q)==len(set(Q))==ct
         assert min(sum(x!=y for x,y in zip(a,b)) for a,b in combinations(Q,2))==md
         signs=[s for s in range(2**w) if s.bit_count()%2==0]
@@ -126,7 +128,7 @@ def main():
     assert hashlib.sha1(f'blob {len(raw)}\0'.encode()+raw).hexdigest()=='1d5278cb39b4ff76de27ccbd04e493f41bf45681'
     floor=json.loads(raw)[1]
     assert floor['dimension']==89 and floor['lower_bound']==15179459090
-    out.update(previous=floor['lower_bound'],gain=out['lower_bound']-floor['lower_bound'])
+    out.update(previous=15184083474,gain=out['lower_bound']-15184083474)
     assert json.loads(json.dumps(out))==json.loads((P/'claims.json').read_text())
     print(json.dumps(out,indent=2))
 if __name__=='__main__':main()
