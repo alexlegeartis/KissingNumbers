@@ -1,0 +1,22 @@
+{
+  "claims": [
+    {
+      "dimension": 94,
+      "previous": 74139180748,
+      "gain": 1937408,
+      "lower_bound": 74141118156
+    },
+    {
+      "dimension": 95,
+      "previous": 117088854084,
+      "gain": 1937408,
+      "lower_bound": 117090791492
+    }
+  ],
+  "patterns": {
+    "1": 26,
+    "2": 359,
+    "3": 88
+  },
+  "per_pattern": 4096
+}

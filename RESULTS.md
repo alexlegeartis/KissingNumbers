@@ -8,6 +8,8 @@
 
 22 November 2026: signed plane and row designs add 24268 in 88D and 2069008 in 89D. [Exact replay](verifications/improved/dim88-89-signed-row-designs/).
 
+22 November 2026: two Delsarte–Goethals slices raise 61D to 89622928, and mixed triality adds 1937408 each in 94D/95D. [61D replay](verifications/improved/dim61-62-omitted-fibre-spikes/) · [94–95D replay](verifications/improved/dim94-95-mixed-triality/).
+
 22 November 2026: a rank-fifteen omitted-fibre code raises 62D to 123750194 (+540672). [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
 
 22 November 2026: omitted-fibre weighted spikes give 89116048 in 61D and 123209522 in 62D. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
@@ -183,7 +185,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 58 | 52 416 510 | **56 270 076** | 1.07 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
 | 59 | 52 416 604 | **56 952 414** | 1.09 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
 | 60 | 52 416 841 | **58 631 571** | 1.12 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
-| 61 | 52 417 154 | **89 116 048** | 1.70 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
+| 61 | 52 417 154 | **89 622 928** | 1.70 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
 | 62 | 52 417 932 | **123 750 194** | 2.34 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
 | 63 | 52 418 564 | **184 427 691** | 3.52 | `codes` | [Cloned dense owners](verifications/improved/dim63-64-dense-owner-clones/)
 | 64 | 331 737 984 | **335 797 303** | 1.01 | `codes` | [Cloned dense owners](verifications/improved/dim63-64-dense-owner-clones/) 
@@ -215,8 +217,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 91 | 6 218 187 548 | **25 922 303 504** | 4.17 | `codes` | [Triality and matching-row transfer](verifications/improved/dim91-93-triality-matching-transfer/)
 | 92 | 8 589 934 592 | **34 512 238 096** | 4.02 | `codes` | [Triality and matching-row transfer](verifications/improved/dim91-93-triality-matching-transfer/)
 | 93 | 17 179 869 184 | **47 397 139 984** | 2.76 | `codes` | [Triality and matching-row transfer](verifications/improved/dim91-93-triality-matching-transfer/)
-| 94 | 34 359 738 368 | **74 139 180 748** | 2.16 | `codes` | [Matching-row append](verifications/improved/dim94-95-matching-row-append/)
-| 95 | 68 719 476 736 | **117 088 854 084** | 1.70 | `codes` | [Matching-row append](verifications/improved/dim94-95-matching-row-append/)
+| 94 | 34 359 738 368 | **74 141 118 156** | 2.16 | `codes` | [Mixed triality six-row append](verifications/improved/dim94-95-mixed-triality/)
+| 95 | 68 719 476 736 | **117 090 791 492** | 1.70 | `codes` | [Mixed triality six-row append](verifications/improved/dim94-95-mixed-triality/)
 | 96 | 137 438 953 472 | **209 291 873 088** | 1.52 | `codes` | [Mixed triality six-row append](verifications/improved/dim96-mixed-triality-six-rows/)
 
 ## Status: what would have to change

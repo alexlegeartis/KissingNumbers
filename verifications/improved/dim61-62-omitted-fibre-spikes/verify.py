@@ -4,6 +4,8 @@ from fractions import Fraction as Q
 from pathlib import Path
 from hashlib import sha1,sha256
 from itertools import combinations
+from functools import reduce
+from operator import xor
 import importlib.util,json
 import numpy as np
 HERE=Path(__file__).resolve().parent
@@ -59,6 +61,56 @@ def choose_rows(K,z):
         if z>>i&1:u^=k
     return u
 
+def rem(w,p):
+    for i in sorted(p,reverse=True):
+        if w>>i&1:w^=p[i]
+    return w
+
+def ech(rows):
+    p={}
+    for w in rows:
+        if v:=rem(w,p):p[v.bit_length()-1]=v
+    return p
+
+def dg61(G,K):
+    p=pin("dim65-dg-dense-owners/verify.py","094053bd8c4ddf34546ae6c7deda4075d07fad90")
+    a=importlib.util.spec_from_file_location("published_dg",p)
+    dg=importlib.util.module_from_spec(a);a.loader.exec_module(dg)
+    # A D0 coordinate labeling found by aligning the known dual-octad
+    # geometry with affine F8^2. The inclusion is verified literally below.
+    X=[23, 55, 61, 15, 31, 1, 37, 26, 4, 36, 9, 60, 62, 39, 17, 21, 29, 7, 53, 6, 2, 19, 32, 49, 20, 10, 24, 13, 5, 3, 18, 63, 42, 45, 35, 48, 47, 54, 16, 40, 25, 14, 38, 34, 41, 50, 43, 56, 27, 11, 59, 22, 30, 8, 33, 58, 51, 0, 52, 57, 44, 12, 28, 46]
+    assert len(X)==64 and len(set(X))==64 and set(X)==set(range(64))
+    A=[(1<<64)-1]+[sum(((x>>j)&1)<<i for i,x in enumerate(X)) for j in range(6)]
+    B=[A[i+1]&A[j+1] for i,j in combinations(range(6),2)]
+    R=ech(A+B)
+    D=ech(G)
+    assert len(R)==22 and all(not rem(x,D) for x in A+B)
+    assert len(ech(prefix(x)for x in A))==3 and len(ech(prefix(x)for x in A+B))==4
+    H=span(A)
+    assert len(H)==128 and min(x.bit_count() for x in H[1:])==32
+    forms={dg.form(a,b) for a in range(32) for b in range(32)}
+    assert len(forms)==1024
+    differences={a^b for a,b in combinations(forms,2)}
+    assert len(differences)==15903
+    def ev(f):return reduce(xor,(x for i,x in enumerate(B) if f>>i&1),0)
+    assert min((ev(f)^t).bit_count() for f in differences for t in H)==24
+    Z=[ev(f)^t for f in forms for t in H]
+    assert len(Z)==len(set(Z))==131072
+    Z=[x for x in Z if prefix(x) in (6,7)]
+    assert sum(prefix(x)==6 for x in Z)==sum(prefix(x)==7 for x in Z)==8192
+    # Prefix-zero representatives of K / (K intersect RM2). Lift each
+    # residual using an actual K word so that translation preserves labels.
+    extras=[]
+    for k in K:
+        if k2:=rem(k,R):
+            R[k2.bit_length()-1]=k2
+            extras.append(k)
+    assert len(extras)==6
+    shifts=span(extras)[:33]
+    R=ech(A+B)
+    assert len({rem(x,R) for x in shifts})==33 and all(prefix(x)==0 for x in shifts)
+    return len(Z),24,shifts
+
 def verify():
     assert __debug__
     src=pin("dim61-67-compatible-sign-families/verify_family.py","222c034a630bfab0db9df1249797d0e633436bfc")
@@ -90,15 +142,7 @@ def verify():
               r=Q(0),a=Q(9,2),bmax=Q(899,1000))}
     out=[]
     for d,dat in witnesses.items():
-        # A sparse array of affine subcode generators, all in the actual
-        # shortened kernel K. Verify all distances by enumerating one span.
-        Gs=dat["g"]
-        J=span(Gs)
-        assert len(J)==len(set(J))==1<<len(Gs)
-        Z=span([choose_rows(K,z) for z in Gs])
-        assert len(Z)==len(set(Z))==len(J)
-        dist=min(w.bit_count() for w in Z[1:])
-        assert dist>=dat["minimum"] and all(prefix(w)==0 for w in Z)
+
         u=dat["label"]
         L=representative(P,u)
         occ=(0,1,2,3) if d==61 else (0,1,3,7,6,4)
@@ -106,19 +150,33 @@ def verify():
         banned={int(t,16).bit_length()-1 for t,_ in marks[str(d)]}
         assert len(marks[str(d)])==35 and len(banned)==27
         use=sorted(set(range(60))-banned)
-        # Choose one distinct affine coset per retained mark in K/H.
-        chosen=[]
-        reserved=set()
-        for x in range(1<<24):
-            if x in reserved:continue
-            chosen.append(x)
-            reserved.update(x^y for y in J)
-            if len(chosen)==len(use):break
-        assert len(chosen)==len(use)==33 and len(reserved)==len(chosen)*len(J)
-        assert all(0<=m<60 for m in use)
+        assert len(use)==33
+        if d==61:
+            per_axis,dist,chosen=dg61(G,K)
+            assert 7 not in occ and (6^7).bit_count()==1
+            assert len(chosen)==33
+        else:
+            # An explicit binary rank-15 distance-20 subcode.
+            Gs=dat["g"]
+            J=span(Gs)
+            assert len(J)==len(set(J))==1<<len(Gs)
+            Z=span([choose_rows(K,z) for z in Gs])
+            assert len(Z)==len(set(Z))==len(J)
+            dist=min(w.bit_count() for w in Z[1:])
+            assert dist>=dat["minimum"] and all(prefix(w)==0 for w in Z)
+            per_axis=len(Z)
+            chosen=[]
+            reserved=set()
+            for x in range(1<<24):
+                if x in reserved:continue
+                chosen.append(x)
+                reserved.update(x^y for y in J)
+                if len(chosen)==len(use):break
+            assert len(chosen)==len(use)==33 and len(reserved)==len(chosen)*len(J)
         # A point copies the signs of L + K[x] + Z on the physical
         # 60-coordinate body (no sign flips), with heavy factor a versus
-        # regular 1. Its head is (r) in 61D or (0,0) in 62D.
+        # regular 1. Its head is +r for 61D label six, -r for label seven,
+        # or (0,0) for 62D.
         a,r,B=dat["a"],dat["r"],dat["bmax"]
         r2=r*r
         b2=(64-r2)/(59+a*a)
@@ -143,6 +201,9 @@ def verify():
             assert raw==[Q(73,2),Q(77,2),Q(69,2),Q(73,2)]
             assert max(raw[0]*B+2*r,raw[1]*B-2*r,
                        raw[2]*B*c+r/2,raw[3]*B*c-r/2)<32
+            # Label 7 swaps the first two and last two comparisons and
+            # reverses the tail. Hence it has the exact same envelopes.
+            assert [a+27+2*(v^7).bit_count() for v in occ]==[raw[i] for i in (1,0,3,2)]
         else:
             assert set(raw)=={Q(67,2),Q(71,2)}
             assert max(raw)*B<32
@@ -154,12 +215,16 @@ def verify():
         # add at most 2(a-1) to the ordinary signed sum.
         assert (a*a+59-2*dist)*b2+r2<=32
         assert (60-2*16+2*(a-1))*b2+r2<=32
+        if d==61:
+            assert (a*a+59-2*(dist-1))*b2-r2<=32
+            assert (60-2*15+2*(a-1))*b2+r2<=32
         n0=next(r0["lower_bound"] for r0 in parent if r0["dimension"]==d)
-        n=len(Z)*len(use);gone=2*len(use)
+        n=per_axis*len(use);gone=2*len(use)
         out.append(dict(dimension=d,previous=n0,lower_bound=n0+n-gone,
                         gain=n-gone,inserted=n,removed_poles=gone,
-                        shortened_rank=len(Gs),minimum_hamming=dist,
-                        omitted_label=u,weight_four_verification="amplitude envelope"))
+                        points_per_axis=per_axis,minimum_hamming=dist,
+                        omitted_labels=[6,7] if d==61 else [2]))
+    assert out==json.loads((HERE/'claims.json').read_text())['dimensions']
     return dict(dimensions=out)
 
 if __name__=="__main__":print(json.dumps(verify(),indent=2))

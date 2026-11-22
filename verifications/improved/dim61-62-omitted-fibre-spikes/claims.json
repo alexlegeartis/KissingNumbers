@@ -3,14 +3,16 @@
     {
       "dimension": 61,
       "previous": 89082322,
-      "lower_bound": 89116048,
-      "gain": 33726,
-      "inserted": 33792,
+      "lower_bound": 89622928,
+      "gain": 540606,
+      "inserted": 540672,
       "removed_poles": 66,
-      "shortened_rank": 10,
+      "points_per_axis": 16384,
       "minimum_hamming": 24,
-      "omitted_label": 6,
-      "weight_four_verification": "amplitude envelope"
+      "omitted_labels": [
+        6,
+        7
+      ]
     },
     {
       "dimension": 62,
@@ -19,10 +21,11 @@
       "gain": 1081278,
       "inserted": 1081344,
       "removed_poles": 66,
-      "shortened_rank": 15,
+      "points_per_axis": 32768,
       "minimum_hamming": 20,
-      "omitted_label": 2,
-      "weight_four_verification": "amplitude envelope"
+      "omitted_labels": [
+        2
+      ]
     }
   ]
 }

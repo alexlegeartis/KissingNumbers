@@ -17,6 +17,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **21 November 2026 — re-marking and Steiner squares.** [A refined Pless repacking](verifications/improved/dim86-87-remarked-square/) further raises 86D to **8,008,545,838** and 87D to **8,160,981,972**, with 2,223 square supports in each dimension.
 
+**22 November 2026 — Two folded Delsarte–Goethals slices and mixed triality.** **89,622,928** in 61D (+506,880 beyond the first omitted-fibre construction); the mixed triality append adds **1,937,408** each in 94D and 95D. [61D replay](verifications/improved/dim61-62-omitted-fibre-spikes/) · [94–95D replay](verifications/improved/dim94-95-mixed-triality/).
+
 **22 November 2026 — Rank-fifteen omitted-fibre code.** The 62D bound rises to **123,750,194**, a further 540,672 beyond the rank-fourteen version. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
 
 **22 November 2026 — Omitted-fibre weighted spikes.** **89,116,048** in 61D (+33,726) and **123,209,522** in 62D (+540,606), using shortened cyclic-code cosets and no dense removals. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).

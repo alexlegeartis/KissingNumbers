@@ -799,6 +799,10 @@ with io.open(os.path.join(IMP, 'dim61-62-omitted-fibre-spikes', 'claims.json'), 
     for _row in json.load(_file)['dimensions']:
         add(_row['dimension'], _row['lower_bound'], 'dim61-62-omitted-fibre-spikes', 'verify.py: exact omitted-fibre weighted spikes')
 
+with io.open(os.path.join(IMP, 'dim94-95-mixed-triality', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file)['claims']:
+        add(_row['dimension'], _row['lower_bound'], 'dim94-95-mixed-triality', 'verify.py: exact mixed triality wrap')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

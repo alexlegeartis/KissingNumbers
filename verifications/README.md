@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-139 packages, one per **construction idea** rather than one per dimension, because several
+140 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -38,6 +38,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim66-67-netto-signed-trades`](improved/dim66-67-netto-signed-trades/) | 66–67 | Signed Netto trades with exterior BCH caps; exact replay |
 | [`dim65-67-bch-exterior-caps`](improved/dim65-67-bch-exterior-caps/) | 65–67 | Exterior BCH cap bodies; exact replay |
 | [`dim66-67-kerdock-axis-owners`](improved/dim66-67-kerdock-axis-owners/) | 66–67 | Kerdock-axis owner lifts; exact replay |
+| [`dim94-95-mixed-triality`](improved/dim94-95-mixed-triality/) | 94–95 | Mixed axial and flat-parity six-row append; exact replay |
 | [`dim94-95-matching-row-append`](improved/dim94-95-matching-row-append/) | 94–95 | Matching-row append; exact replay |
 | [`dim96-mixed-triality-six-rows`](improved/dim96-mixed-triality-six-rows/) | 96 | Mixed axial and parity six-row packing; exact replay |
 | [`dim94-96-hexary-parity-packing`](improved/dim94-96-hexary-parity-packing/) | 94–96 | Complementary parity six-row packings; exact replay |
