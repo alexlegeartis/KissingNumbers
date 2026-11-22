@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-156 packages, one per **construction idea** rather than one per dimension, because several
+157 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -51,6 +51,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim94-96-post-rs-partial-fibres`](improved/dim94-96-post-rs-partial-fibres/) | 94–96 | Exact partial axis words after the 164-word repack |
 | [`dim94-95-adapted-dodecad-fibres`](improved/dim94-95-adapted-dodecad-fibres/) | 94–95 | Adapted joint dodecad projections, append only |
 | [`dim94-95-coordinate-aligned-dodecad-fibres`](improved/dim94-95-coordinate-aligned-dodecad-fibres/) | 94–95 | Supportwise coordinate alignments and weighted sign kernels |
+| [`dim91-93-complementary-parity-steiner-append`](improved/dim91-93-complementary-parity-steiner-append/) | 91–93 | Complementary parity frame patterns on Steiner quadruples |
 | [`dim94-95-mixed-tetrad-axis-sign-fibres`](improved/dim94-95-mixed-tetrad-axis-sign-fibres/) | 94–95 | Mixed-tetrad dodecad fibres avoiding the shortened head |
 | [`dim96-joint-dodecad-fibres`](improved/dim96-joint-dodecad-fibres/) | 96 | Joint axis and sign projections on new dodecads |
 | [`dim96-adapted-dodecad-fibres`](improved/dim96-adapted-dodecad-fibres/) | 96 | Dodecad sign kernels adapted to active projections |

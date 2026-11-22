@@ -869,6 +869,11 @@ with io.open(os.path.join(IMP, 'dim94-95-mixed-tetrad-axis-sign-fibres', 'claims
 for _row in _adapted9495['claims']:
     add(_row['dimension'], _row['lower_bound'], 'dim94-95-mixed-tetrad-axis-sign-fibres', 'verify.py: mixed-tetrad axis and sign fibres')
 
+with io.open(os.path.join(IMP, 'dim91-93-complementary-parity-steiner-append', 'claims.json'), encoding='utf-8') as _file:
+    _adapted9495 = json.load(_file)
+for _row in _adapted9495['claims']:
+    add(_row['dimension'], _row['lower_bound'], 'dim91-93-complementary-parity-steiner-append', 'verify.py: complementary parity Steiner append')
+
 with io.open(os.path.join(IMP, 'dim66-67-mixed-depth-transfer', 'claims.json'), encoding='utf-8') as _file:
     _mixed_66_67 = json.load(_file)
 for _row in _mixed_66_67['dimensions']:

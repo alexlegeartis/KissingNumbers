@@ -1,0 +1,25 @@
+{
+  "supports": 20,
+  "modes": 40,
+  "points_per_mode": 1024,
+  "claims": [
+    {
+      "dimension": 91,
+      "previous": 25923282704,
+      "gain": 40960,
+      "lower_bound": 25923323664
+    },
+    {
+      "dimension": 92,
+      "previous": 34513217296,
+      "gain": 40960,
+      "lower_bound": 34513258256
+    },
+    {
+      "dimension": 93,
+      "previous": 47398119184,
+      "gain": 40960,
+      "lower_bound": 47398160144
+    }
+  ]
+}
