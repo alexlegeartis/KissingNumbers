@@ -1,8 +1,8 @@
-# Forty-five Z8 fibres from bipartite root heads in dimension 93
+# Forty-six Z8 fibres from bipartite root heads in dimension 93
 
-**48,471,918,104 kissing directions**, an increase of **1,073,743,624**
-over 47,398,174,480 (about **2.27%**). This is an explicit lower bound.
-It replaces the entire preceding 44-fibre dense stock with 45 fibres
+**49,545,659,928 kissing directions**, an increase of **2,147,485,448**
+over 47,398,174,480 (about **4.53%**). This is an explicit lower bound.
+It replaces the entire preceding 44-fibre dense stock with 46 fibres
 and keeps all 153,534,224 certified body-only rays in the current 93D
 construction. It also adds 1,800 D93 roots incident to the head (40 pure and 1,760 mixed).
 
@@ -13,12 +13,12 @@ same two Walsh frames or the axial frame. The body has norm squared
 88. Each new head lies in five orthogonal coordinates.
 
 Take the 40 heads 2(±e_i±e_j) of the D5 root arrangement, together
-with five signed unit heads. Give the 24 roots crossing the split
+with six signed unit heads. Give the 24 roots crossing the split
 {0,1}|{2,3,4} one body colour. Their two prefix symbols record the
 signed axes i and j separately. This equates their head Gram with
 the original two-block Gram, so their compatibility follows directly.
 The remaining 16 roots are on same-side axis pairs. Assign them and
-the five unit heads to the two other colours; the explicit choices
+the six unit heads to the two other colours; the explicit choices
 are in the witness. This is a joint recolouring/replacement of the
 previous head design, not an append to its head rays.
 
@@ -30,7 +30,7 @@ For different prefixes of the same colour subtract the exact
 two-block prefix dot from the source cap 48. For different colours
 all body rows have mixed dot at most 2, and hence body dot at most
 44. Add the literal head dot and check the normalized constraint
-by integer squaring for all 990 pairs. Strict separation rules out
+by integer squaring for all 1,035 pairs. Strict separation rules out
 duplicates. The source minimum theorem is inherited, not inferred
 from the rank test.
 

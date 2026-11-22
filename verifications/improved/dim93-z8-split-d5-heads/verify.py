@@ -1,4 +1,4 @@
-"""Replay the 45 full 93D bipartite-root Z8 fibres and retained body-only stock."""
+"""Replay the 46 full 93D bipartite-root Z8 fibres and retained body-only stock."""
 from collections import Counter
 from hashlib import sha1, sha256
 from itertools import combinations, product
@@ -63,13 +63,13 @@ def main():
     raw=[tuple(map(int,l.split())) for l in (P/"witness.txt").read_text().splitlines()]
     assert all(len(r)==7 and 0<=r[0]<3 and 0<=r[1]<64 for r in raw)
     H=[(c,divmod(p,8),h) for c,p,*h in raw]
-    assert len(H)==len({(c,p) for c,p,_ in H})==45
+    assert len(H)==len({(c,p) for c,p,_ in H})==46
     expected=[]
     for i,j,s,t in product(range(2),range(2,5),range(2),range(2)):
         h=[0]*5;h[i]=2-4*s;h[j]=2-4*t
         expected.append((0,(i+4*s,j-2+4*t),tuple(h)))
     assert {(c,p,tuple(h)) for c,p,h in H if c==0}==set(expected)
-    assert Counter(dot(h,h) for _,_,h in H)=={8:40,1:5}
+    assert Counter(dot(h,h) for _,_,h in H)=={8:40,1:6}
     # The homogeneous minimum 24 of the pinned parent is inherited.
     for c,p,h in H:
         assert 2*(40+dot(h,h))<=88+dot(h,h)
@@ -79,7 +79,7 @@ def main():
         x=b+dot(h,k)
         assert x<=0 or 4*x*x<=(88+dot(h,h))*(88+dot(k,k))
         pairs+=1
-    assert pairs==990
+    assert pairs==1035
     # Body-only retained families, with conservative mode-independent caps.
     # Matching rows have two entries +/-sqrt(2); their per-row dot cap
     # is 2sqrt(2), with square 8, against all three dense alphabets.
@@ -99,7 +99,7 @@ def main():
     previous=a["lower_bound"]
     assert previous==47398174480
     old_dense=44*8**10
-    dense=45*8**10
+    dense=46*8**10
     stock=previous-old_dense
     assert stock==153534224
     # Add all D93 roots with at least one head axis (head coords 88..92).

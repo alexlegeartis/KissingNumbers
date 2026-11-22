@@ -911,7 +911,7 @@ for _row in _adapted9495['claims']:
 
 with io.open(os.path.join(IMP, 'dim93-z8-split-d5-heads', 'claims.json'), encoding='utf-8') as _file:
     _row = json.load(_file)
-add(_row['dimension'], _row['lower_bound'], 'dim93-z8-split-d5-heads', 'verify.py: 45 full Z8 fibres and head/body roots')
+add(_row['dimension'], _row['lower_bound'], 'dim93-z8-split-d5-heads', 'verify.py: 46 full Z8 fibres and head/body roots')
 
 with io.open(os.path.join(IMP, 'dim66-67-mixed-depth-transfer', 'claims.json'), encoding='utf-8') as _file:
     _mixed_66_67 = json.load(_file)

@@ -39,7 +39,9 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **22 November 2026 — Omitted-fibre weighted spikes.** **89,116,048** in 61D (+33,726) and **123,209,522** in 62D (+540,606), using shortened cyclic-code cosets and no dense removals. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
 
-**22 November 2026 — Bipartite D5 heads in 93D.** A two-by-three coordinate split lets 45 full Z8 fibres coexist while retaining the body-only stock. With 1,800 additional head and mixed roots the lower bound reaches **48,471,918,104** (+1,073,743,624; +2.265%). [Exact replay](verifications/improved/dim93-z8-split-d5-heads/).
+**22 November 2026 — Forty-six full Z8 fibres in 93D.** A second head assignment places one more full fibre in the bipartite D5 construction, taking the verified bound to **49,545,659,928**. This is +1,073,741,824 from the 45-fibre version and +2,147,485,448 (+4.531%) from before the redesign. [Exact replay](verifications/improved/dim93-z8-split-d5-heads/).
+
+**22 November 2026 — Bipartite D5 heads in 93D.** A two-by-three coordinate split lets 45 full Z8 fibres coexist while retaining the body-only stock. With 1,800 additional head and mixed roots the lower bound reaches **48,471,918,104** (+1,073,743,624; +2.265%). [Exact replay](https://github.com/alexlegeartis/KissingNumbers/tree/c22f0225aefe61dc8f72c344779089629f633fc1/verifications/improved/dim93-z8-split-d5-heads).
 
 **22 November 2026 — Non-Steiner triality append in 91–93D.** Fourteen further modes on supports outside the Steiner system add **14,336** in every dimension without removing prior stock. [Exact replay](verifications/improved/dim91-93-nonsteiner-triality-append/).
 
