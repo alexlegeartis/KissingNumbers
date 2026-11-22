@@ -847,6 +847,11 @@ with io.open(os.path.join(IMP, 'dim94-95-adapted-dodecad-fibres', 'claims.json')
 for _row in _adapted9495['claims']:
     add(_row['dimension'], _row['lower_bound'], 'dim94-95-adapted-dodecad-fibres', 'verify.py: adapted joint dodecad append')
 
+with io.open(os.path.join(IMP, 'dim94-95-coordinate-aligned-dodecad-fibres', 'claims.json'), encoding='utf-8') as _file:
+    _adapted9495 = json.load(_file)
+for _row in _adapted9495['claims']:
+    add(_row['dimension'], _row['lower_bound'], 'dim94-95-coordinate-aligned-dodecad-fibres', 'verify.py: coordinate-aligned dodecad append')
+
 with io.open(os.path.join(IMP, 'dim66-67-mixed-depth-transfer', 'claims.json'), encoding='utf-8') as _file:
     _mixed_66_67 = json.load(_file)
 for _row in _mixed_66_67['dimensions']:

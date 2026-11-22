@@ -56,6 +56,8 @@ The [94–95D mixed triality append](verifications/improved/dim94-95-mixed-trial
 
 The [94–95D adapted dodecad sign fibres](verifications/improved/dim94-95-adapted-dodecad-fibres/) replay with `python verifications/improved/dim94-95-adapted-dodecad-fibres/verify.py`, including the latest mixed and partial triality and matching layers in the compatibility checks.
 
+The [94–95D coordinate-aligned dodecad fibres](verifications/improved/dim94-95-coordinate-aligned-dodecad-fibres/) replay with `python verifications/improved/dim94-95-coordinate-aligned-dodecad-fibres/verify.py`, checking each support's affine axis code and sign kernels against the retained stock.
+
 The [96D adapted sign kernels](verifications/improved/dim96-adapted-dodecad-fibres/) replay with `python verifications/improved/dim96-adapted-dodecad-fibres/verify.py`. Each kernel is reconstructed from its active projection equations, checked at minimum Hamming distance three, and checked against the unchanged post-RS stock.
 
 The [96D joint dodecad fibres](verifications/improved/dim96-joint-dodecad-fibres/) replay with `python verifications/improved/dim96-joint-dodecad-fibres/verify.py`, checking individual axis words and their Hamming-syndrome sign fibres against all active projections.

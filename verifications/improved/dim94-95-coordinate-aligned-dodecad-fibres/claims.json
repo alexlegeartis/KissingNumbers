@@ -1,0 +1,26 @@
+{
+  "geometries": 329,
+  "axis_modes": 19877,
+  "old_geometric_interfaces": 1304,
+  "new_geometric_interfaces": 7397,
+  "active_new_axial_pairs": 4,
+  "active_within_axial_pairs": 0,
+  "claims": [
+    {
+      "dimension": 94,
+      "previous": 74143250508,
+      "construction_base": 74142198284,
+      "construction_gain": 4716096,
+      "gain": 3663872,
+      "lower_bound": 74146914380
+    },
+    {
+      "dimension": 95,
+      "previous": 117092923844,
+      "construction_base": 117091871620,
+      "construction_gain": 4716096,
+      "gain": 3663872,
+      "lower_bound": 117096587716
+    }
+  ]
+}
