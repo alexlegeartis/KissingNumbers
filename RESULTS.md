@@ -1,5 +1,7 @@
 # Results
 
+**22 November 2026 — Half-root Γ72 shells.** Exact lattice shells improve **eight bounds in 77–84D**; the largest gains over the preceding certificates are **3,314,392** each in 81D and 82D. [Proof and replay](verifications/improved/dim77-84-gamma72-half-root-shells/).
+
 **22 November 2026 — Depth-six Γ72 lattices.** Exact shortest shells of explicit Leech-block lifts raise **all ten 73–82D bounds**, with a largest increment of **3,028,346** in 80D (to **6,224,790,624**). Each root-height layer has exactly 136,704 horizontal contacts. [Proof and exact replay](verifications/improved/dim73-82-gamma72-depth6-lattice/).
 
 22 November 2026: exact harmonic-theta constraints on joint shell profiles give twelve stronger existence lower bounds in 74–85D. The largest gain is 7,405,724 in 85D, reaching 6,235,824,404. [Exact replay](verifications/improved/dim74-85-gamma72-harmonic-latitudes/).
@@ -244,29 +246,29 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 67 | 331 737 996 | **355 203 873** | 1.07 | `codes` | [Mixed-depth clone transfer](verifications/improved/dim66-67-mixed-depth-transfer/)|
 | 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
-| 70 | 331 737 984 | **1 361 142 400** | 4.10 | `heads` | [Alternate Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-alternate-a2-normals/) |
+| 70 | 331 737 984 | **1 361 151 808** | 4.10 | `heads` | [Mixed Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-mixed-a2-normals/) |
 | 71 | 331 737 984 | **2 623 578 936** | 7.91 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 73 | 6 218 175 602 | **6 218 449 010** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 74 | 6 218 175 606 | **6 218 995 830** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 75 | 6 218 175 612 | **6 219 816 924** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 76 | 6 218 175 624 | **6 221 459 976** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
-| 77 | 6 218 175 640 | **6 221 737 226** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
-| 78 | 6 218 175 672 | **6 222 291 726** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
-| 79 | 6 218 175 726 | **6 223 124 388** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
-| 80 | 6 218 175 840 | **6 224 790 624** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
-| 81 | 6 218 175 906 | **6 225 064 194** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
-| 82 | 6 218 176 110 | **6 225 611 462** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
-| 83 | 6 218 176 204 | **6 227 374 552** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
-| 84 | 6 218 176 441 | **6 231 140 058** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
-| 85 | 6 218 176 754 | **6 235 824 404** | 1.00 | `heads` | [Harmonic-theta Gamma72 latitude bounds](verifications/improved/dim74-85-gamma72-harmonic-latitudes/) |
+| 77 | 6 218 175 640 | **6 222 013 132** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
+| 78 | 6 218 175 672 | **6 223 119 444** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
+| 79 | 6 218 175 726 | **6 224 780 712** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
+| 80 | 6 218 175 840 | **6 228 104 952** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
+| 81 | 6 218 175 906 | **6 228 378 586** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
+| 82 | 6 218 176 110 | **6 228 925 854** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
+| 83 | 6 218 176 204 | **6 229 747 428** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
+| 84 | 6 218 176 441 | **6 231 391 584** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
+| 85 | 6 218 176 754 | **6 235 993 850** | 1.00 | `heads` | [Finer exact Γ72 recurrence](verifications/improved/dim74-85-gamma72-fine-recurrence/) |
 | 86 | 6 218 177 532 | **8 008 552 282** | 1.29 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 87 | 6 218 178 164 | **8 160 988 416** | 1.31 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
-| 88 | 6 218 179 920 | **13 357 793 920** | 2.15 | `codes` | [Signed plane and row designs](verifications/improved/dim88-89-signed-row-designs/)
+| 88 | 6 218 179 920 | **13 358 363 692** | 2.15 | `codes` | [Full Pless census and new chord marks](verifications/improved/dim88-full-pless-chord-marks/) 
 | 89 | 6 218 181 330 | **15 185 856 402** | 2.44 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
-| 90 | 6 218 183 254 | **21 943 640 934** | 3.53 | `codes` | [Pless weight 15 words with nonlinear 7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |
+| 90 | 6 218 183 254 | **21 944 111 386** | 3.53 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/) |
 | 91 | 6 218 187 548 | **25 923 338 000** | 4.17 | `codes` | [Non-Steiner triality append](verifications/improved/dim91-93-nonsteiner-triality-append/)
 | 92 | 8 589 934 592 | **34 513 272 592** | 4.02 | `codes` | [Non-Steiner triality append](verifications/improved/dim91-93-nonsteiner-triality-append/)
-| 93 | 17 179 869 184 | **47 398 174 480** | 2.76 | `codes` | [Non-Steiner triality append](verifications/improved/dim91-93-nonsteiner-triality-append/)
+| 93 | 17 179 869 184 | **49 545 659 928** | 2.88 | `codes` | [Bipartite D5 heads and 46 Z8 fibres](verifications/improved/dim93-z8-split-d5-heads/) 
 | 94 | 34 359 738 368 | **74 147 456 772** | 2.16 | `codes` | [Mixed-tetrad axis and sign fibres](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/)
 | 95 | 68 719 476 736 | **117 097 130 108** | 1.70 | `codes` | [Mixed-tetrad axis and sign fibres](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/)
 | 96 | 137 438 953 472 | **209 299 907 072** | 1.52 | `codes` | [Mixed-tetrad row-alphabet repack](verifications/improved/dim96-mixed-tetrad-row-alphabet-repack/)

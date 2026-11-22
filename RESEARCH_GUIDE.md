@@ -198,7 +198,7 @@ and SHA-256 inventory, before being removed here. The unrestricted bound remains
 `40 <= tau(5) <= 44`.
 
 
-### `verifications/improved/` — 168 packages, 70 dimensions
+### `verifications/improved/` — 169 packages, 70 dimensions
 
 Every current claim is in this tier. The historical 96D ERS evaluation remains
 in `closed/dim96-ers-takeover/`; the new doubled-support construction is larger.
@@ -209,6 +209,7 @@ in `improved/` may now be superseded by a later publication; its package is reta
 
 | package                                                                                      | dims   | the idea                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`dim77-84-gamma72-half-root-shells`](verifications/improved/dim77-84-gamma72-half-root-shells/) | 77–84 | Tilted roots and orthogonal D4 extensions of Γ72; exact parity-resolved shortest-shell enumeration |
 | [`dim36-37-orbit-exchange`](verifications/improved/dim36-37-orbit-exchange/) | 36, 37 | 501,822 and 505,638; nine-point gains from a compatible orbit exchange; fresh exact source and replacement replay |
 | [`dim61-67-compatible-sign-families`](verifications/improved/dim61-67-compatible-sign-families/) | 61–67 | larger compatible support and sign families; fresh exact code and layer verification |
 | [`dim68-69-gamma72-extended-moments`](verifications/improved/dim68-69-gamma72-extended-moments/) | 68, 69 | 471,886,208 and 746,325,051; actual D7 extension, exact population duals, independent direct-profile proof and two 69D poles |
@@ -405,10 +406,10 @@ remain tied to its earlier registry scope until the deferred paper update.
 `python run_all.py --sota` verifies the current repository constructions.
 
 ```bash
-python run_all.py          # 252 scripts, including exact certificate replays
+python run_all.py          # 253 scripts, including exact certificate replays
 python run_all.py --changed   # skip jobs whose inputs have not moved since they passed
 python run_all.py --only dim31 # just the jobs whose label or command matches
-python run_all.py --full   # 271 scripts: adds the all-pairs sweep, the
+python run_all.py --full   # 272 scripts: adds the all-pairs sweep, the
                            # negative controls, the class regeneration and the LP brackets
 python run_all.py --list   # what would run, and roughly how long each takes
 python run_all.py --only p48-heads  # October constructions: exact consistency replay

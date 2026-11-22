@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+The [77–84D half-root Γ72 proof](verifications/improved/dim77-84-gamma72-half-root-shells/) replays with `python verifications/improved/dim77-84-gamma72-half-root-shells/verify.py`. It verifies all shorter-length gates and convolves exact vertical parity shells with Leech contact counts.
+
 The [73–82D depth-six Γ72 lattice proof](verifications/improved/dim73-82-gamma72-depth6-lattice/) replays with `python verifications/improved/dim73-82-gamma72-depth6-lattice/verify.py` (NumPy and SymPy). It reconstructs the catalogue gluing and short vertical shells, then uses exact theta coefficients and Leech norm classes to count all contacts.
 
 The [92D variable-radius fiber proof](verifications/improved/dim92-z8-variable-radius-heads/) replays with `python verifications/improved/dim92-z8-variable-radius-heads/verify_flat.py` (Node.js for the sparse ancestor).

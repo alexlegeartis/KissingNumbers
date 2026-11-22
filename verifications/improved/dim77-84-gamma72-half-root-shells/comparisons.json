@@ -1,0 +1,58 @@
+[
+  {
+    "dimension": 77,
+    "lower_bound": 6222013132,
+    "preceding_repository_bound": 6221737226,
+    "gain": 275906,
+    "derived_comparison": 6218175640
+  },
+  {
+    "dimension": 78,
+    "lower_bound": 6223119444,
+    "preceding_repository_bound": 6222291726,
+    "gain": 827718,
+    "derived_comparison": 6218175672
+  },
+  {
+    "dimension": 79,
+    "lower_bound": 6224780712,
+    "preceding_repository_bound": 6223124388,
+    "gain": 1656324,
+    "derived_comparison": 6218175726
+  },
+  {
+    "dimension": 80,
+    "lower_bound": 6228104952,
+    "preceding_repository_bound": 6224790624,
+    "gain": 3314328,
+    "derived_comparison": 6218175840
+  },
+  {
+    "dimension": 81,
+    "lower_bound": 6228378586,
+    "preceding_repository_bound": 6225064194,
+    "gain": 3314392,
+    "derived_comparison": 6218175906
+  },
+  {
+    "dimension": 82,
+    "lower_bound": 6228925854,
+    "preceding_repository_bound": 6225611462,
+    "gain": 3314392,
+    "derived_comparison": 6218176110
+  },
+  {
+    "dimension": 83,
+    "lower_bound": 6229747428,
+    "preceding_repository_bound": 6227455178,
+    "gain": 2292250,
+    "derived_comparison": 6218176204
+  },
+  {
+    "dimension": 84,
+    "lower_bound": 6231391584,
+    "preceding_repository_bound": 6231259216,
+    "gain": 132368,
+    "derived_comparison": 6218176441
+  }
+]
