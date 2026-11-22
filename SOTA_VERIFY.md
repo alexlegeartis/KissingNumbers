@@ -6,6 +6,12 @@ The [93D variable-radius fiber proof](verifications/improved/dim93-z8-variable-r
 
 The [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/) replays with `python verifications/improved/dim61-62-marked-caps/verify.py`.
 
+The [Balanced signed nine-support refill](verifications/improved/dim63-balanced-nine-refill/) replays with `python verifications/improved/dim63-balanced-nine-refill/verify.py`.
+
+The [Delsarte–Goethals dense owners](verifications/improved/dim65-dg-dense-owners/) replays with `python verifications/improved/dim65-dg-dense-owners/verify.py`.
+
+The [Signed tail-support Netto exchange](verifications/improved/dim66-tail-signed-nine-refill/) replays with `python verifications/improved/dim66-tail-signed-nine-refill/verify.py`.
+
 The [64–65D partial signed fibers](verifications/improved/dim64-65-partial-nonary-signs/) replay with `python verifications/improved/dim64-65-partial-nonary-signs/verify.py`.
 
 The [67D sign refill](verifications/improved/dim67-signed-nine-refill/) replays with `python verifications/improved/dim67-signed-nine-refill/verify.py`; its independent scalar check is `python verifications/improved/dim67-signed-nine-refill/audit.py`.

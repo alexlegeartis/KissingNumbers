@@ -1,0 +1,11 @@
+{
+  "dimension": 65,
+  "previous": 335863580,
+  "lower_bound": 335929116,
+  "gain": 65536,
+  "new_dense_owners": 131072,
+  "old_dense_owners": 65536,
+  "sparse_owners": 2688,
+  "quadratic_difference_masks": 15903,
+  "minimum_hamming_distance": 24
+}

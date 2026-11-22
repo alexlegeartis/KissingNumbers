@@ -1,0 +1,11 @@
+{
+  "dimension": 63,
+  "old": 184417784,
+  "total": 184426297,
+  "gain": 8513,
+  "new_supports": 746,
+  "added_signs": 14790,
+  "removed_quadruple_signs": 6277,
+  "hit_old_quadruple_supports": 569,
+  "relevant_new_support_pairs": 652
+}

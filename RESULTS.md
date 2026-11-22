@@ -155,10 +155,10 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 60 | 52 416 841 | **58 631 571** | 1.12 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
 | 61 | 52 417 154 | **89 082 322** | 1.70 | `codes` | [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/)
 | 62 | 52 417 932 | **122 668 916** | 2.34 | `codes` | [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/)
-| 63 | 52 418 564 | **184 417 784** | 3.52 | `codes` | [Signed nine-support layers](verifications/improved/dim61-66-nonary-affine-caps/)
+| 63 | 52 418 564 | **184 426 297** | 3.52 | `codes` | [Balanced signed nine-support refill](verifications/improved/dim63-balanced-nine-refill/)
 | 64 | 331 737 984 | **335 795 354** | 1.01 | `codes` | [Partial signed nine-support fibers](verifications/improved/dim64-65-partial-nonary-signs/) 
-| 65 | 331 737 986 | **335 863 580** | 1.01 | `codes` | [Partial signed nine-support fibers](verifications/improved/dim64-65-partial-nonary-signs/) 
-| 66 | 331 737 990 | **342 297 172** | 1.03 | `codes` | [Signed nine-support layers](verifications/improved/dim61-66-nonary-affine-caps/)
+| 65 | 331 737 986 | **335 929 116** | 1.01 | `codes` | [Delsarte–Goethals dense owners](verifications/improved/dim65-dg-dense-owners/)
+| 66 | 331 737 990 | **342 373 178** | 1.03 | `codes` | [Signed tail-support Netto exchange](verifications/improved/dim66-tail-signed-nine-refill/)
 | 67 | 331 737 996 | **355 170 821** | 1.07 | `codes` | [Signed nine-support refill and Netto exchange](verifications/improved/dim67-signed-nine-refill/) |
 | 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |

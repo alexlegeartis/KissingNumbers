@@ -728,6 +728,21 @@ for _package in ('dim64-65-partial-nonary-signs', 'dim67-signed-nine-refill'):
         for _row in json.load(_file)['dimensions']:
             add(_row['dimension'], _row['lower_bound'], _package, 'verify.py: exact signed support and phase checks')
 
+# 22 November: Balanced signed nine-support refill.
+with io.open(os.path.join(IMP, 'dim63-balanced-nine-refill', 'claims.json'), encoding='utf-8') as _file:
+    _row = json.load(_file)['dimensions'][0]
+    add(_row['dimension'], _row['lower_bound'], 'dim63-balanced-nine-refill', 'verify.py: exact balanced signed nine-support refill')
+
+# 22 November: Delsarte–Goethals dense owners.
+with io.open(os.path.join(IMP, 'dim65-dg-dense-owners', 'claims.json'), encoding='utf-8') as _file:
+    _row = json.load(_file)
+    add(_row['dimension'], _row['lower_bound'], 'dim65-dg-dense-owners', 'verify.py: exact delsarte–goethals dense owners')
+
+# 22 November: Signed tail-support Netto exchange.
+with io.open(os.path.join(IMP, 'dim66-tail-signed-nine-refill', 'claims.json'), encoding='utf-8') as _file:
+    _row = json.load(_file)['dimensions'][0]
+    add(_row['dimension'], _row['lower_bound'], 'dim66-tail-signed-nine-refill', 'verify.py: exact signed tail-support netto exchange')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
