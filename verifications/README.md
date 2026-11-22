@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-163 packages, one per **construction idea** rather than one per dimension, because several
+164 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -68,6 +68,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim67-signed-nine-refill`](improved/dim67-signed-nine-refill/) | 67 | Exact signed Netto exchange and independent C++ replay |
 | [`dim70-gamma72-a2-fibers`](improved/dim70-gamma72-a2-fibers/) | 70 | Direct exact A2 normal-fiber counts and projected geometry |
 | [`dim70-gamma72-alternate-a2-normals`](improved/dim70-gamma72-alternate-a2-normals/) | 70 | Alternate Γ72 A2 normal pair and direct affine counts |
+| [`dim70-gamma72-mixed-a2-normals`](improved/dim70-gamma72-mixed-a2-normals/) | 70 | Mixed Γ72 A2 normals; exact link and harmonic fibre counts |
 | [`dim77-85-delta-marginal`](improved/dim77-85-delta-marginal/) | 77–85 | Difference-coordinate marginal, rational duals and exact replay |
 | [`dim74-85-gamma72-harmonic-latitudes`](improved/dim74-85-gamma72-harmonic-latitudes/) | 74–85 | Harmonic-theta shell identities and exact latitude graph bounds |
 | [`dim74-85-gamma72-rooted-exchange`](improved/dim74-85-gamma72-rooted-exchange/) | 74–85 | Rooted double counts and exact triangle bounds for Γ72 latitudes |

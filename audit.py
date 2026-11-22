@@ -744,6 +744,10 @@ with io.open(os.path.join(IMP, 'dim70-gamma72-alternate-a2-normals', 'claims.jso
     _alternate70 = json.load(_file)
 add(_alternate70['dimension'], _alternate70['lower_bound'], 'dim70-gamma72-alternate-a2-normals', 'verify.py: alternate A2 normal embedding')
 
+with io.open(os.path.join(IMP, 'dim70-gamma72-mixed-a2-normals', 'results.json'), encoding='utf-8') as _file:
+    _mixed70 = json.load(_file)
+add(_mixed70['dimension'], _mixed70['lower_bound'], 'dim70-gamma72-mixed-a2-normals', 'verify.py: exact mixed A2 link and harmonic population counts')
+
 # 22 November: partial signed nine-support layers.
 for _package in ('dim64-65-partial-nonary-signs', 'dim67-signed-nine-refill'):
     with io.open(os.path.join(IMP, _package, 'claims.json'), encoding='utf-8') as _file:

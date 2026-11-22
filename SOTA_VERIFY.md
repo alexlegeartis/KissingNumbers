@@ -41,6 +41,7 @@ The [67D sign refill](verifications/improved/dim67-signed-nine-refill/) replays 
 The [A2 normal fibers of Gamma72](verifications/improved/dim70-gamma72-a2-fibers/) replay with `python verifications/improved/dim70-gamma72-a2-fibers/verify.py`.
 
 The [alternate Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-alternate-a2-normals/) replays with `OPENBLAS_NUM_THREADS=1 python verifications/improved/dim70-gamma72-alternate-a2-normals/verify.py` (NumPy, SymPy, g++), counting the three pairing classes directly.
+The [mixed Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-mixed-a2-normals/) replays with `OPENBLAS_NUM_THREADS=1 python verifications/improved/dim70-gamma72-mixed-a2-normals/verify.py` (NumPy, SymPy, g++ and Node.js), using an exact link enumeration and harmonic identities.
 
 The [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) replays with `python verifications/improved/dim77-85-delta-marginal/verify.py`.
 

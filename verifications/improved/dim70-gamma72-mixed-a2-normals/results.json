@@ -1,0 +1,13 @@
+{
+  "dimension": 70,
+  "previous": 1361142400,
+  "lower_bound": 1361151808,
+  "gain": 9408,
+  "corner": 1187,
+  "link_count": 127800,
+  "Fibre_populations": [
+    610937568,
+    610937568,
+    139276672
+  ]
+}
