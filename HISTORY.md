@@ -89,6 +89,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **22 November 2026 — partial signed nine-support layers.** [New compatible phase subsets](verifications/improved/dim64-65-partial-nonary-signs/) give **335,795,354 in 64D** and **335,863,580 in 65D**, each up 5,698. A [signed Netto exchange and refill](verifications/improved/dim67-signed-nine-refill/) adds 82,485 and removes 7,110 in 67D, giving **355,170,821**.
 
+**22 November 2026 — Alternate A2 normal embedding in 70D.** Scanning a rare pairing class identifies better normals without changing the projected geometry. Three direct exact counts give **1,361,142,400** (+5,184). [Exact replay](verifications/improved/dim70-gamma72-alternate-a2-normals/).
+
 **21 November 2026 — A2 normal fibers in 70D.** [A2 normal fibers of Gamma72](verifications/improved/dim70-gamma72-a2-fibers/) give **1,361,137,216** (+2,496), with three directly enumerated pairing classes of Gamma72 minima projected to their common 70-dimensional subspace.
 
 **21 November 2026 — third shell marginal.** [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) sharpens the local triangle estimates in 77–85D. The largest gain is **4,508 in 85D**, giving **6,228,418,680**.

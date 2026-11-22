@@ -722,6 +722,10 @@ with io.open(os.path.join(IMP, 'dim70-gamma72-a2-fibers', 'claims.json'), encodi
     _row = json.load(_file)
     add(_row['dimension'], _row['lower_bound'], 'dim70-gamma72-a2-fibers', 'verify.py: direct exact A2 normal-fiber counts and projected geometry')
 
+with io.open(os.path.join(IMP, 'dim70-gamma72-alternate-a2-normals', 'claims.json'), encoding='utf-8') as _file:
+    _alternate70 = json.load(_file)
+add(_alternate70['dimension'], _alternate70['lower_bound'], 'dim70-gamma72-alternate-a2-normals', 'verify.py: alternate A2 normal embedding')
+
 # 22 November: partial signed nine-support layers.
 for _package in ('dim64-65-partial-nonary-signs', 'dim67-signed-nine-refill'):
     with io.open(os.path.join(IMP, _package, 'claims.json'), encoding='utf-8') as _file:

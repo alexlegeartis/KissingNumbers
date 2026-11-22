@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-153 packages, one per **construction idea** rather than one per dimension, because several
+154 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -60,6 +60,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim64-65-partial-nonary-signs`](improved/dim64-65-partial-nonary-signs/) | 64–65 | Partial phase additions, exact replay |
 | [`dim67-signed-nine-refill`](improved/dim67-signed-nine-refill/) | 67 | Exact signed Netto exchange and independent C++ replay |
 | [`dim70-gamma72-a2-fibers`](improved/dim70-gamma72-a2-fibers/) | 70 | Direct exact A2 normal-fiber counts and projected geometry |
+| [`dim70-gamma72-alternate-a2-normals`](improved/dim70-gamma72-alternate-a2-normals/) | 70 | Alternate Γ72 A2 normal pair and direct affine counts |
 | [`dim77-85-delta-marginal`](improved/dim77-85-delta-marginal/) | 77–85 | Difference-coordinate marginal, rational duals and exact replay |
 | [`dim76-85-mixed-shape-norm10`](improved/dim76-85-mixed-shape-norm10/) | 76–85 | Shaped Gamma72 norm-ten latitudes; exact replay |
 | [`dim86-87-90-rotated-plane-trades`](improved/dim86-87-90-rotated-plane-trades/) | 86, 87, 90 | Rotated planar trades and Steiner triples; exact replay |

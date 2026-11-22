@@ -1,5 +1,7 @@
 # Results
 
+22 November 2026: a different $A_2$ normal embedding in $\Gamma_{72}$ raises the 70D lower bound to 1,361,142,400 (+5,184). [Exact replay](verifications/improved/dim70-gamma72-alternate-a2-normals/).
+
 22 November 2026: mixed-tetrad dodecad axis and sign fibres add 4,621,984 points to 96D without removing any retained point, reaching 209,299,871,200. [Exact replay](verifications/improved/dim96-mixed-tetrad-axis-sign-fibres/).
 
 22 November 2026: coordinate-aligned and trimmed dodecacode fibres append 4,978,936 points without removing any stock preceding the adapted append. Replacing that append adds a net 3,926,712 points each in 94D and 95D, reaching 74,147,177,220 and 117,096,850,556. [Exact replay](verifications/improved/dim94-95-coordinate-aligned-dodecad-fibres/).
@@ -224,7 +226,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 67 | 331 737 996 | **355 203 873** | 1.07 | `codes` | [Mixed-depth clone transfer](verifications/improved/dim66-67-mixed-depth-transfer/)|
 | 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
-| 70 | 331 737 984 | **1 361 137 216** | 4.10 | `heads` | [A2 normal fibers of Gamma72](verifications/improved/dim70-gamma72-a2-fibers/) |
+| 70 | 331 737 984 | **1 361 142 400** | 4.10 | `heads` | [Alternate Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-alternate-a2-normals/) |
 | 71 | 331 737 984 | **2 623 578 936** | 7.91 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 73 | 6 218 175 602 | **6 218 206 932** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
 | 74 | 6 218 175 606 | **6 218 211 606** | 1.00 | `cosets` | [Gamma72 nearest cosets, explicit norm-ten 73D additions and exact mixed/signed-tail weighted-priority existence bounds in 77-87D](verifications/improved/dim73-88-gamma72-cosets/) |
@@ -289,7 +291,7 @@ bound is known in any dimension here, so no value below is known to be optimal -
 | `heads` | 40 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | three affine lattice shells with independent exact minimum enumeration and complete bounded integer cross-products; larger compatible families remain open (dim40-affine-shells/verify.py) |
 | `heads` | 41-46 (6) | joint body-family and head searches remain open; no construction ceiling is claimed | independently normalized P48n body families with rational heads and pure head points; the latest angles and exact ranks replay, while populations inherit the supplied tables and modular-form derivation. Larger coupled family changes, partial families and new body models remain open; finite search optima are not global ceilings. The partial-family 43D and coordinated-motion 45D certificates are installed (dim41-46-p48-heads/README.md, verify.py, POPULATIONS.txt) |
 | `heads` | 68-69 (2) | joint body-family and head searches remain open; no construction ceiling is claimed | actual D7 normals strengthen D4 slice populations by nested orientation averaging and exact moment duals; two independent profile and geometry proofs, with published Gamma72 premises; other normal systems and geometries remain open (dim68-69-gamma72-extended-moments/verify.py) |
-| `heads` | 70 (1) | other normal systems and pairing classes remain open | three direct A2 normal-fiber counts and exact projected geometry (dim70-gamma72-a2-fibers/verify.py) |
+| `heads` | 70 (1) | other normal systems and pairing classes remain open | three direct A2 normal-fiber counts and exact projected geometry (dim70-gamma72-alternate-a2-normals/verify.py) |
 | `heads` | 71 (1) | joint body-family and head searches remain open; no construction ceiling is claimed | four normalized slices from two Gamma72 shells; other sections remain open, no global optimality claim |
 | `heads` | 76-85 (10) | other signed-permutation palettes and joint body-family searches remain open | exact source moments, rational triangle duals and blocked independence bounds with the additional difference-coordinate marginal (dim77-85-delta-marginal/verify.py) |
 
