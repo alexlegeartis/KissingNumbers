@@ -8,6 +8,8 @@
 
 22 November 2026: signed plane and row designs add 24268 in 88D and 2069008 in 89D. [Exact replay](verifications/improved/dim88-89-signed-row-designs/).
 
+22 November 2026: cloned cyclic dense owners raise 63D to 184427691 and 64D to 335797303. [Exact replay](verifications/improved/dim63-64-dense-owner-clones/).
+
 22 November 2026: matching-row append adds 463872 each in 94D and 95D. [Exact replay](verifications/improved/dim94-95-matching-row-append/).
 
 22 November 2026: triality and matching-row transfer adds 4881936 in each of 91–93D. [Exact replay](verifications/improved/dim91-93-triality-matching-transfer/).
@@ -175,8 +177,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 60 | 52 416 841 | **58 631 571** | 1.12 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
 | 61 | 52 417 154 | **89 082 322** | 1.70 | `codes` | [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/)
 | 62 | 52 417 932 | **122 668 916** | 2.34 | `codes` | [Marked caps and nine-support refill](verifications/improved/dim61-62-marked-caps/)
-| 63 | 52 418 564 | **184 427 081** | 3.52 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/)
-| 64 | 331 737 984 | **335 796 250** | 1.01 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/) 
+| 63 | 52 418 564 | **184 427 691** | 3.52 | `codes` | [Cloned dense owners](verifications/improved/dim63-64-dense-owner-clones/)
+| 64 | 331 737 984 | **335 797 303** | 1.01 | `codes` | [Cloned dense owners](verifications/improved/dim63-64-dense-owner-clones/) 
 | 65 | 331 737 986 | **336 257 692** | 1.01 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/)
 | 66 | 331 737 990 | **342 390 470** | 1.03 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/)
 | 67 | 331 737 996 | **355 196 300** | 1.07 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/) |

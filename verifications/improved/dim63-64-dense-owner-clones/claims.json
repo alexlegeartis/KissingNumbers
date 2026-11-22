@@ -1,0 +1,28 @@
+{
+  "dimensions": [
+    {
+      "dimension": 63,
+      "previous": 184427081,
+      "lower_bound": 184427691,
+      "gain": 610,
+      "inserted": 2774,
+      "removed_dense": 1268,
+      "removed_poles": 112,
+      "max_scaled_dot": 56,
+      "construction_base": 184426297,
+      "construction_gain": 1394
+    },
+    {
+      "dimension": 64,
+      "previous": 335796250,
+      "lower_bound": 335797303,
+      "gain": 1053,
+      "inserted": 3821,
+      "removed_dense": 1744,
+      "removed_poles": 128,
+      "max_scaled_dot": 56,
+      "construction_base": 335795354,
+      "construction_gain": 1949
+    }
+  ]
+}

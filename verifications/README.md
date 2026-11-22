@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-136 packages, one per **construction idea** rather than one per dimension, because several
+137 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -32,6 +32,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim61-62-marked-caps`](improved/dim61-62-marked-caps/) | 61–62 | Marked caps and nine-support refill; exact replay |
 | [`dim63-balanced-nine-refill`](improved/dim63-balanced-nine-refill/) | 63 | Balanced signed nine-support refill; exact replay |
 | [`dim37-qr-flat-repack`](improved/dim37-qr-flat-repack/) | 37 | QR 12-flat phase repacking; exact replay |
+| [`dim63-64-dense-owner-clones`](improved/dim63-64-dense-owner-clones/) | 63–64 | Cloned cyclic dense owners; exact replay |
 | [`dim63-67-gf8-norm-poles`](improved/dim63-67-gf8-norm-poles/) | 63–67 | GF(8) norm simplex pole exchange; exact replay |
 | [`dim66-67-netto-signed-trades`](improved/dim66-67-netto-signed-trades/) | 66–67 | Signed Netto trades with exterior BCH caps; exact replay |
 | [`dim65-67-bch-exterior-caps`](improved/dim65-67-bch-exterior-caps/) | 65–67 | Exterior BCH cap bodies; exact replay |

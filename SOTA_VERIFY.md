@@ -8,6 +8,8 @@ The [Marked caps and nine-support refill](verifications/improved/dim61-62-marked
 
 The [Balanced signed nine-support refill](verifications/improved/dim63-balanced-nine-refill/) replays with `python verifications/improved/dim63-balanced-nine-refill/verify.py`.
 
+The [63–64D dense owner clones](verifications/improved/dim63-64-dense-owner-clones/) replay with `python verifications/improved/dim63-64-dense-owner-clones/verify.py` and validate all altered signs and pair products. These are alternative witnesses, not an append to the GF(8) layers.
+
 The [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/) improves 63–67D. Run `node verifications/improved/dim63-67-gf8-norm-poles/verify.cjs` for exact checks of the exterior cosets, the 63D section, and the new vectors.
 
 The [signed Netto trades](verifications/improved/dim66-67-netto-signed-trades/) refine the 66D and 67D results to **342,389,574** and **355,195,404**, with exact nine-support phase and signed-triple checks.
