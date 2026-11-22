@@ -43,6 +43,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **22 November 2026 — Mixed 96D triality rows.** Add 3,366,912 points in 96D with 822 tagged six-row patterns, reaching **209,290,447,680**. [Exact replay](verifications/improved/dim96-mixed-triality-six-rows/).
 
+**22 November 2026 — Mixed-depth dense owner clones.** Adding a shallower type of weighted clone raises the lower bounds to **184,428,848** in 63D (+1,157) and **335,798,944** in 64D (+1,641). [Exact replay](verifications/improved/dim63-64-mixed-depth-clones/).
+
 **22 November 2026 — Cloned dense owners.** Alternate cyclic-BCH configurations reach **184,427,691** in 63D (+610 over GF(8)) and **335,797,303** in 64D (+1,053). [Exact replay](verifications/improved/dim63-64-dense-owner-clones/).
 
 **22 November 2026 — Matching-row append.** Add 463,872 points each in 94D and 95D using 85 tagged patterns, leaving every preceding layer intact. [Exact replay](verifications/improved/dim94-95-matching-row-append/).

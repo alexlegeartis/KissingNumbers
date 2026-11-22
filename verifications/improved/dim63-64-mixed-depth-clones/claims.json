@@ -1,0 +1,30 @@
+{
+  "dimensions": [
+    {
+      "dimension": 63,
+      "previous": 184427691,
+      "stock": 184426297,
+      "lower_bound": 184428848,
+      "gain": 1157,
+      "inserted": 5042,
+      "removed_dense": 2379,
+      "removed_poles": 112,
+      "shallow_clones": 1978,
+      "shallow_marks": 15,
+      "exact_same_mark_pairs": 270849
+    },
+    {
+      "dimension": 64,
+      "previous": 335797303,
+      "stock": 335795354,
+      "lower_bound": 335798944,
+      "gain": 1641,
+      "inserted": 7067,
+      "removed_dense": 3349,
+      "removed_poles": 128,
+      "shallow_clones": 2733,
+      "shallow_marks": 13,
+      "exact_same_mark_pairs": 519033
+    }
+  ]
+}

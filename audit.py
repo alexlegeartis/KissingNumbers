@@ -829,6 +829,11 @@ with io.open(os.path.join(IMP, 'dim96-joint-dodecad-fibres', 'claims.json'), enc
     _joint96 = json.load(_file)
 add(_joint96['dimension'], _joint96['lower_bound'], 'dim96-joint-dodecad-fibres', 'verify.py: joint dodecad axis and sign projections')
 
+with io.open(os.path.join(IMP, 'dim63-64-mixed-depth-clones', 'claims.json'), encoding='utf-8') as _file:
+    _mixed_depth = json.load(_file)
+for _row in _mixed_depth['dimensions']:
+    add(_row['dimension'], _row['lower_bound'], 'dim63-64-mixed-depth-clones', 'verify.py: exact mixed-depth dense-owner clones')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
