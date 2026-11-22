@@ -6,6 +6,8 @@
 
 22 November 2026: signed plane and row designs add 24268 in 88D and 2069008 in 89D. [Exact replay](verifications/improved/dim88-89-signed-row-designs/).
 
+22 November 2026: signed Netto trades improve 66D by 16 and 67D by 13. [Exact replay](verifications/improved/dim66-67-netto-signed-trades/).
+
 22 November 2026: a distance-22 BCH cap and exterior translates raise 65–67D to 336256796, 342389558 and 355195391. [Exact replay](verifications/improved/dim65-67-bch-exterior-caps/).
 
 22 November 2026: a 576-point 12-flat repacking replaces 384 octad phases and gives 544666 in 37D (+192). [Exact replay](verifications/improved/dim37-qr-flat-repack/).
@@ -166,8 +168,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 63 | 52 418 564 | **184 426 297** | 3.52 | `codes` | [Balanced signed nine-support refill](verifications/improved/dim63-balanced-nine-refill/)
 | 64 | 331 737 984 | **335 795 354** | 1.01 | `codes` | [Partial signed nine-support fibers](verifications/improved/dim64-65-partial-nonary-signs/) 
 | 65 | 331 737 986 | **336 256 796** | 1.01 | `codes` | [Exterior BCH cap bodies](verifications/improved/dim65-67-bch-exterior-caps/)
-| 66 | 331 737 990 | **342 389 558** | 1.03 | `codes` | [Exterior BCH cap bodies](verifications/improved/dim65-67-bch-exterior-caps/)
-| 67 | 331 737 996 | **355 195 391** | 1.07 | `codes` | [Exterior BCH cap bodies](verifications/improved/dim65-67-bch-exterior-caps/) |
+| 66 | 331 737 990 | **342 389 574** | 1.03 | `codes` | [Signed Netto trades](verifications/improved/dim66-67-netto-signed-trades/)
+| 67 | 331 737 996 | **355 195 404** | 1.07 | `codes` | [Signed Netto trades](verifications/improved/dim66-67-netto-signed-trades/) |
 | 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 137 216** | 4.10 | `heads` | [A2 normal fibers of Gamma72](verifications/improved/dim70-gamma72-a2-fibers/) |
