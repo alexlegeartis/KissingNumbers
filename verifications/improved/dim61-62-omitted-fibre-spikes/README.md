@@ -3,7 +3,7 @@
 | Dimension | Previous bound | Inserted | Retired poles | New lower bound |
 |---:|---:|---:|---:|---:|
 | 61 | 89,082,322 | 33,792 | 66 | **89,116,048** |
-| 62 | 122,668,916 | 540,672 | 66 | **123,209,522** |
+| 62 | 122,668,916 | 1,081,344 | 66 | **123,750,194** |
 
 Keep the original cyclic dense code, together with the exact old dense
 latitudes and all incumbent sparse layers. Its 60 ordinary coordinates

@@ -15,11 +15,11 @@
     {
       "dimension": 62,
       "previous": 122668916,
-      "lower_bound": 123209522,
-      "gain": 540606,
-      "inserted": 540672,
+      "lower_bound": 123750194,
+      "gain": 1081278,
+      "inserted": 1081344,
       "removed_poles": 66,
-      "shortened_rank": 14,
+      "shortened_rank": 15,
       "minimum_hamming": 20,
       "omitted_label": 2,
       "weight_four_verification": "amplitude envelope"
