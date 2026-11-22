@@ -846,6 +846,10 @@ with io.open(os.path.join(IMP, 'dim96-mixed-tetrad-axis-sign-fibres', 'claims.js
     _mixedTetrad96 = json.load(_file)
 add(_mixedTetrad96['dimension'], _mixedTetrad96['lower_bound'], 'dim96-mixed-tetrad-axis-sign-fibres', 'verify.py: exact mixed-tetrad axis and sign fibres')
 
+with io.open(os.path.join(IMP, 'dim96-mixed-tetrad-row-alphabet-repack', 'claims.json'), encoding='utf-8') as _file:
+    _repackedTetrad96 = json.load(_file)
+add(_repackedTetrad96['dimension'], _repackedTetrad96['lower_bound'], 'dim96-mixed-tetrad-row-alphabet-repack', 'verify.py: exact mixed-tetrad row-alphabet repack')
+
 with io.open(os.path.join(IMP, 'dim65-mixed-depth-transfer', 'claims.json'), encoding='utf-8') as _file:
     _mixed65 = json.load(_file)
 add(_mixed65['dimension'], _mixed65['lower_bound'], 'dim65-mixed-depth-transfer', 'verify.py: mixed-depth BCH clone transfer')

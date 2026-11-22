@@ -1,5 +1,7 @@
 # Results
 
+22 November 2026: repacking the row alphabets of seven mixed-tetrad modes adds a net 35,872 points in 96D, reaching 209,299,907,072. [Exact replay](verifications/improved/dim96-mixed-tetrad-row-alphabet-repack/).
+
 22 November 2026: six mixed-tetrad modes append 279,552 points in each of 94D and 95D, reaching 74,147,456,772 and 117,097,130,108. [Exact replay](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/).
 
 22 November 2026: a different $A_2$ normal embedding in $\Gamma_{72}$ raises the 70D lower bound to 1,361,142,400 (+5,184). [Exact replay](verifications/improved/dim70-gamma72-alternate-a2-normals/).
@@ -253,7 +255,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 93 | 17 179 869 184 | **47 398 119 184** | 2.76 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
 | 94 | 34 359 738 368 | **74 147 456 772** | 2.16 | `codes` | [Mixed-tetrad axis and sign fibres](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/)
 | 95 | 68 719 476 736 | **117 097 130 108** | 1.70 | `codes` | [Mixed-tetrad axis and sign fibres](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/)
-| 96 | 137 438 953 472 | **209 299 871 200** | 1.52 | `codes` | [Mixed-tetrad axis and sign fibres](verifications/improved/dim96-mixed-tetrad-axis-sign-fibres/)
+| 96 | 137 438 953 472 | **209 299 907 072** | 1.52 | `codes` | [Mixed-tetrad row-alphabet repack](verifications/improved/dim96-mixed-tetrad-row-alphabet-repack/)
 
 ## Status: what would have to change
 

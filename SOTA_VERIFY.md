@@ -66,6 +66,8 @@ The [96D adapted sign kernels](verifications/improved/dim96-adapted-dodecad-fibr
 
 The [96D mixed-tetrad axis and sign fibres](verifications/improved/dim96-mixed-tetrad-axis-sign-fibres/) replay with `python verifications/improved/dim96-mixed-tetrad-axis-sign-fibres/verify.py` and a C++17 compiler. The replay checks same-frame and off-frame signs against the retained mixed layers and verifies geometric compatibility with the adapted monochrome stock.
 
+The [96D row-alphabet repack](verifications/improved/dim96-mixed-tetrad-row-alphabet-repack/) replays with `python verifications/improved/dim96-mixed-tetrad-row-alphabet-repack/verify.py` and a C++17 compiler, checking the prior mixed layer and the revised axis alphabets.
+
 The [96D joint dodecad fibres](verifications/improved/dim96-joint-dodecad-fibres/) replay with `python verifications/improved/dim96-joint-dodecad-fibres/verify.py`, checking individual axis words and their Hamming-syndrome sign fibres against all active projections.
 
 The [post-RS partial-fibre packings](verifications/improved/dim94-96-post-rs-partial-fibres/) replay with `python verifications/improved/dim94-96-post-rs-partial-fibres/verify.py`, checking each explicit set of axis words directly against the repacked and untouched interfaces.
