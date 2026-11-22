@@ -2691,7 +2691,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
-    out.append("22 November 2026 — One matched norm-12 layer raises 60D to **58,664,259** (+537), adding 626 rays and charging at most 89 shared blockers. [Exact replay](verifications/improved/dim60-p48-n12-blockers/).")
+    out.append("22 November 2026 — The signed-owner replay corrects the 60D bound to **58,664,184** (+462 over 58,663,722), with 231 compatible ray pairs and no blockers. [Exact replay and correction](verifications/improved/dim60-p48-n12-blockers/).")
     out.append("22 November 2026 — Global owner migration and a second refill improve 50–60D. The 60D construction reaches 58,663,722, combining exact owner changes with the 16-head sign cube and nested tetrahedral palettes. [Exact replay](verifications/improved/dim50-60-p48-global-owner-refill/).")
     out.append("22 November 2026 — New signed-head exchanges and complementary tail directions improve every dimension from 49D through 60D. [Transport proof](verifications/improved/dim50-59-p48-joint-transport/). [Tail proof and replay](verifications/improved/dim54-60-p48-tail-antipodes/) · [49D proof](verifications/improved/dim49-joint-signed-exchange/).")
     out.append('22 November 2026 — A scaled D4 in P48m gives 4940961 points in 44D. [Configuration and exact moment proof](verifications/improved/dim44-d4-section/).')

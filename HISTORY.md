@@ -11,7 +11,7 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 22 November)</summary>
 
-22 November 2026 — One matched norm-12 layer raises 60D to **58,664,259** (+537), adding 626 rays and charging at most 89 shared blockers. [Exact replay](verifications/improved/dim60-p48-n12-blockers/).
+22 November 2026 — The signed-owner replay corrects the 60D bound to **58,664,184** (+462 over 58,663,722), with 231 compatible ray pairs and no blockers. [Exact replay and correction](verifications/improved/dim60-p48-n12-blockers/).
 
 22 November 2026 — Global owner migration and a second refill improve 50–60D. The 60D construction reaches 58,663,722, combining exact owner changes with the 16-head sign cube and nested tetrahedral palettes. [Exact replay](verifications/improved/dim50-60-p48-global-owner-refill/).
 

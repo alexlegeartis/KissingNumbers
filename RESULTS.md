@@ -1,6 +1,6 @@
 # Results
 
-22 November 2026 — One matched norm-12 layer raises 60D to **58,664,259** (+537), adding 626 rays and charging at most 89 shared blockers. [Exact replay](verifications/improved/dim60-p48-n12-blockers/).
+22 November 2026 — The signed-owner replay corrects the 60D bound to **58,664,184** (+462 over 58,663,722), with 231 compatible ray pairs and no blockers. [Exact replay and correction](verifications/improved/dim60-p48-n12-blockers/).
 
 22 November 2026 — Global owner migration and a second refill improve 50–60D. The 60D construction reaches 58,663,722, combining exact owner changes with the 16-head sign cube and nested tetrahedral palettes. [Exact replay](verifications/improved/dim50-60-p48-global-owner-refill/).
 
@@ -251,7 +251,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 57 | 52 416 306 | **54 766 981** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 58 | 52 416 510 | **56 281 695** | 1.07 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 59 | 52 416 604 | **56 967 571** | 1.09 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
-| 60 | 52 416 841 | **58 664 259** | 1.12 | `classes` | [matched norm-12 layer with exact shared-blocker accounting](verifications/improved/dim60-p48-n12-blockers/) |
+| 60 | 52 416 841 | **58 664 184** | 1.12 | `classes` | [matched norm-12 layer with exact shared-blocker accounting](verifications/improved/dim60-p48-n12-blockers/) |
 | 61 | 52 417 154 | **91 038 762** | 1.74 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
 | 62 | 52 417 932 | **126 571 579** | 2.41 | `codes` | [Partial nonary signed refill](verifications/improved/dim62-partial-nonary-refill/) |
 | 63 | 52 418 564 | **184 428 848** | 3.52 | `codes` | [Mixed-depth dense owner clones](verifications/improved/dim63-64-mixed-depth-clones/)

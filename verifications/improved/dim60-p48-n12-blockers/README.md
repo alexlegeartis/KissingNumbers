@@ -1,6 +1,16 @@
 # 60D: one matched norm-12 layer with shared blocker retirement
 
-This construction raises the exact 60D kissing-number lower bound from **58,663,722** to **58,664,259**. It adds **626** new rays arranged in pairs on **123** norm-12 lattice heads, and charges at most **89** old blockers. The certified net gain is at least **537**. It reuses the completed [global-owner and tetrahedral-tail certificate](../dim50-60-p48-global-owner-refill/) and adds one latitude, not a separate packing assumption.
+This construction raises the exact 60D kissing-number lower bound from
+**58,663,722** to **58,664,184**. It adds **462** rays in 231 pairs on
+65 norm-12 lattice heads, with no conflicting signed owner, and does not
+remove any ray from the [global-owner and tetrahedral-tail certificate](../dim50-60-p48-global-owner-refill/).
+
+**Correction to the earlier replay:** the pointwise source stores one
+representative per antipodal pair, not all signed owners. The earlier
+shared-blocker count overlooked the negative representatives. This
+replay includes both signs from the source and all already-signed
+changes, and uses a different witness that needs no blocker retirement.
+The corrected bound supersedes the earlier 58,664,259 claim.
 
 ## New rays
 
@@ -16,7 +26,7 @@ The old body has 420 distinct antipodal direction labels. Assign them to its 420
 
 For an old signed head `x` in the class given label `D`, its two lifts are `(x/(2√2), ±D/4)`. A new pair conflicts with at least one of those two lifts precisely when `|w·x| + |Z·D| > 8`. Take the union of obstructing old owners, charging each only once even when it blocks many new rays. Remove both lifts of any obstructing actual owner and restore the old unit equatorial ray `x/√6`. The ancestor equator had omitted it and its norm-six ownership is unique; it is also disjoint from the reserved equatorial heads of the parent layers. Thus the net cost per removed owner is one. The restored rays are compatible with the whole old construction and the new layer by the same old bound and the norm-12 argument above.
 
-To obtain a conservative exact charge, the checker uses an overinclusive stock: every signed ancestor row, even rows retired in the earlier exchanges, plus all 62,937 rows inserted or reassigned by the parent migration and refills. Therefore the computed blocker count is an upper bound on the actual cost. It needs no claim about the optimality of the matching or of the lower bound.
+To obtain a conservative exact charge, the checker uses an overinclusive stock: every signed ancestor row, even rows retired in the earlier exchanges, plus all 62,937 rows inserted or reassigned by the parent migration and refills. Therefore the computed blocker count is an upper bound on the actual cost. In the corrected witness the count is zero. It needs no claim about the optimality of the matching or of the lower bound.
 
 ## Replay
 

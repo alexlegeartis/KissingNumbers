@@ -122,7 +122,10 @@ d0={q['class_index']:q['add']for q in d['changes']}
 WG=ip(G,W.T)
 cost=0; class_costs=[]
 for j,Hj in enumerate(T):
- x=np.vstack((V[M[j]],E[O[j]:O[j+1]],np.array(d0.get(j,[]),dtype='i8').reshape(-1,48),Y[j]))
+ # The pinned pointwise archive stores one representative per antipodal line.
+ # Expand both signs here; the signed delta and all later changes are already oriented.
+ old=np.vstack((V[M[j]],E[O[j]:O[j+1]]))
+ x=np.vstack((old,-old,np.array(d0.get(j,[]),dtype='i8').reshape(-1,48),Y[j]))
  y=ip(Hj,WG)
  assert 48*num(x)*num(y)<2**52
  # Exactly rounded integers even for every partial sum in a binary64 GEMM.

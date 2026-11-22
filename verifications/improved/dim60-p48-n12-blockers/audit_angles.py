@@ -55,7 +55,8 @@ T,V,E,O,M,Y,d0,perm=(d[k] for k in ('T','V','E','O','M','Y','d0','perm'))
 cost=seen=0
 for j,t in enumerate(T):
     cut=np.array([max(abs(int(q)) for q in block@D[perm[j]]) for block in [Z[I==i]for i in range(len(W))]])
-    x=np.vstack((V[M[j]], E[O[j]:O[j+1]], np.array(d0.get(j,[]),dtype='i8').reshape(-1,48),Y[j]))
+    seed=np.r_[V[M[j]], E[O[j]:O[j+1]]]
+    x=np.r_[seed,-seed,np.array(d0.get(j,[]),dtype='i8').reshape(-1,48),Y[j]]
     # Columns where |tail product|<=2 cannot block, since mother minimum gives |w.x|<=6.
     jx=np.flatnonzero(cut>2)
     if len(jx):
