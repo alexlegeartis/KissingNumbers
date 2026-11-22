@@ -1,0 +1,31 @@
+{
+  "dimensions": [
+    {
+      "dimension": 86,
+      "previous": 8008545838,
+      "lower_bound": 8008552282,
+      "gain": 6444,
+      "five_plane_supports": 543,
+      "three_plane_supports": 90,
+      "retired_roots": 2964
+    },
+    {
+      "dimension": 87,
+      "previous": 8160981972,
+      "lower_bound": 8160988416,
+      "gain": 6444,
+      "five_plane_supports": 543,
+      "three_plane_supports": 90,
+      "retired_roots": 2964
+    },
+    {
+      "dimension": 90,
+      "previous": 21944100474,
+      "lower_bound": 21944111386,
+      "gain": 10912,
+      "five_plane_supports": 864,
+      "three_plane_supports": 131,
+      "retired_roots": 3960
+    }
+  ]
+}

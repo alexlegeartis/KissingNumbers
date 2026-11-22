@@ -40,6 +40,8 @@ The [latest 89D mixed matching-row construction](verifications/improved/dim89-mi
 
 The [new 88–89D signed plane and row designs](verifications/improved/dim88-89-signed-row-designs/) are verified by `python verifications/improved/dim88-89-signed-row-designs/verify.py`. This checks the support and signed-row geometry against the pinned parents.
 
+The [86/87/90D rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/) replay with `python verifications/improved/dim86-87-90-rotated-plane-trades/verify.py`.
+
 The [88D axial Pless construction](verifications/improved/dim88-axial-pless/) replays with `python verifications/improved/dim88-axial-pless/verify.py`.
 
 The [86–87D axial Pless construction](verifications/improved/dim86-87-axial-pless/) replays with `python verifications/improved/dim86-87-axial-pless/verify.py`.

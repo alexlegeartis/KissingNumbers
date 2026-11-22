@@ -8,6 +8,8 @@
 
 22 November 2026: signed plane and row designs add 24268 in 88D and 2069008 in 89D. [Exact replay](verifications/improved/dim88-89-signed-row-designs/).
 
+22 November 2026: rotated layers add 6444 each in 86D and 87D and 10912 in 90D. [Exact replay](verifications/improved/dim86-87-90-rotated-plane-trades/).
+
 22 November 2026: GF(8) norm pole replacement adds 784 in 63D and 896 per dimension in 64–67D. [Exact replay](verifications/improved/dim63-67-gf8-norm-poles/).
 
 22 November 2026: signed Netto trades improve 66D by 16 and 67D by 13. [Exact replay](verifications/improved/dim66-67-netto-signed-trades/).
@@ -191,8 +193,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 83 | 6 218 176 204 | **6 223 768 006** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
 | 84 | 6 218 176 441 | **6 225 863 462** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
 | 85 | 6 218 176 754 | **6 228 418 680** | 1.00 | `heads` | [Three-marginal Gamma72 proof](verifications/improved/dim77-85-delta-marginal/) |
-| 86 | 6 218 177 532 | **8 008 545 838** | 1.29 | `codes` | [Re-marked axial Pless and Steiner squares](verifications/improved/dim86-87-remarked-square/)
-| 87 | 6 218 178 164 | **8 160 981 972** | 1.31 | `codes` | [Re-marked axial Pless and Steiner squares](verifications/improved/dim86-87-remarked-square/)
+| 86 | 6 218 177 532 | **8 008 552 282** | 1.29 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
+| 87 | 6 218 178 164 | **8 160 988 416** | 1.31 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 88 | 6 218 179 920 | **13 357 793 920** | 2.15 | `codes` | [Signed plane and row designs](verifications/improved/dim88-89-signed-row-designs/)
 | 89 | 6 218 181 330 | **15 184 866 834** | 2.44 | `codes` | [Mixed matching-row codes](verifications/improved/dim89-mixed-matching-rows/)
 | 90 | 6 218 183 254 | **21 943 640 934** | 3.53 | `codes` | [Pless weight 15 words with nonlinear 7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |

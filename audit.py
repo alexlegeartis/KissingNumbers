@@ -775,6 +775,10 @@ with io.open(os.path.join(IMP, 'dim63-67-gf8-norm-poles', 'claims.json'), encodi
     for _row in json.load(_file)['dimensions']:
         add(_row['dimension'], _row['lower_bound'], 'dim63-67-gf8-norm-poles', 'verify.py: exact field norm spikes and section')
 
+with io.open(os.path.join(IMP, 'dim86-87-90-rotated-plane-trades', 'claims.json'), encoding='utf-8') as _file:
+    for _row in json.load(_file)['dimensions']:
+        add(_row['dimension'], _row['lower_bound'], 'dim86-87-90-rotated-plane-trades', 'verify.py: exact rotated plane and Steiner triple replay')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
