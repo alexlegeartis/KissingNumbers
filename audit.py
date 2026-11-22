@@ -735,6 +735,10 @@ with io.open(os.path.join(IMP, 'dim74-85-gamma72-rooted-exchange', 'results.json
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim74-85-gamma72-rooted-exchange', 'verify.py: exact rooted shell profile exchange and rational graph certificate')
 
+with io.open(os.path.join(IMP, 'dim71-gamma72-single-block-refill', 'pattern.json'), encoding='utf-8') as _file:
+    _row = json.load(_file)
+    add(_row['dimension'], _row['lower_bound'], 'dim71-gamma72-single-block-refill', 'verify.py: single-Leech-block replacement of 4600 with 81952')
+
 with io.open(os.path.join(IMP, 'dim77-84-gamma72-half-root-shells', 'comparisons.json'), encoding='utf-8') as _file:
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim77-84-gamma72-half-root-shells', 'verify.py: half-root lattice and exact convolved shortest shell')

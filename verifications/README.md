@@ -7,12 +7,13 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-170 packages, one per **construction idea** rather than one per dimension, because several
+171 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
+| [`dim71-gamma72-single-block-refill`](improved/dim71-gamma72-single-block-refill/) | 71 | Exact Leech-block shell refill |
 | [`dim77-84-gamma72-half-root-shells`](improved/dim77-84-gamma72-half-root-shells/) | 77–84 | Half-root Γ72 lattices and exact convolved contact counts |
 | [`dim73-82-gamma72-depth6-lattice`](improved/dim73-82-gamma72-depth6-lattice/) | 73–82 | Explicit Γ72 half-coset lattices and exact modular shell counts |
 | [`dim33-joint-signed-refill`](improved/dim33-joint-signed-refill/) | 33 | 370,528 points. Joint exact signed refill. |

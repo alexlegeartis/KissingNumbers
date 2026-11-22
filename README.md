@@ -72,7 +72,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 68 | 331 737 984 | [Edel–Rains–Sloane 64D (1998)](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **472 598 888** | **SOTA** | +42.461494% | — | updated 2026-11-17 | [Exact Gamma72 D4 fiber rescaling](verifications/improved/dim68-91-lattice-code-continuation/) | — |
 | 69 | 331 737 984 | [Edel–Rains–Sloane 64D (1998)](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **780 388 888** | **SOTA** | +135.242549% | — | updated 2026-11-17 | [Exact Gamma72 D4 fiber rescaling](verifications/improved/dim68-91-lattice-code-continuation/) | — |
 | 70 | 331 737 984 | [Edel–Rains–Sloane 64D (1998)](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **1 361 151 808** | **SOTA** | 4.10x | — | updated 2026-11-22 | [Mixed Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-mixed-a2-normals/) | — |
-| 71 | 331 737 984 | [Edel–Rains–Sloane 64D (1998)](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **2 623 578 936** | **SOTA** | +690.858769% | — | updated 2026-11-17 | [Mixed-shell Gamma72 sections](verifications/improved/dim68-91-lattice-code-continuation/) | — |
+| 71 | 331 737 984 | [Edel–Rains–Sloane 64D (1998)](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **2 623 656 288** | **SOTA** | +690.882086% | — | updated 2026-11-22 | [Single-block Γ72 refill](verifications/improved/dim71-gamma72-single-block-refill/) | — |
 | 73 | 6 218 175 602 | [Nebe Γ72 (2010 preprint; 2012 journal)](https://arxiv.org/abs/1008.2862v3) ⊕ [1D tail](common/published.py) *(derived)* | **6 218 449 010** | **SOTA** | +0.004396% | — | updated 2026-11-22 | [Depth-six Γ72 lattice shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) | — |
 | 74 | 6 218 175 606 | [Nebe Γ72 (2010 preprint; 2012 journal)](https://arxiv.org/abs/1008.2862v3) ⊕ [2D tail](common/published.py) *(derived)* | **6 218 995 830** | **SOTA** | +0.013190% | — | updated 2026-11-22 | [Depth-six Γ72 lattice shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) | — |
 | 75 | 6 218 175 612 | [Nebe Γ72 (2010 preprint; 2012 journal)](https://arxiv.org/abs/1008.2862v3) ⊕ [3D tail](common/published.py) *(derived)* | **6 219 816 924** | **SOTA** | +0.026395% | — | updated 2026-11-22 | [Depth-six Γ72 lattice shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) | — |
@@ -99,6 +99,8 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code (2001)](https://doi.org/10.1109/18.923742) *(derived by sign embedding)* | **209 299 907 072** | **SOTA** | +52.285725% | — | updated 2026-11-22 | [Mixed-tetrad row-alphabet repack](verifications/improved/dim96-mixed-tetrad-row-alphabet-repack/) | — |
 
 ## Recent updates
+
+**22 November 2026 — 71D single-block refill.** Keeping the entire norm-ten slice, a Leech-block exchange adds 81,952 rays and removes 4,600, giving **2,623,656,288** (+77,352). [Exact proof and replay](verifications/improved/dim71-gamma72-single-block-refill/).
 
 **22 November 2026 — Half-root Γ72 shells.** Exact lattice shells improve **eight bounds in 77–84D**; the largest gains over the preceding certificates are **3,314,392** each in 81D and 82D. [Proof and replay](verifications/improved/dim77-84-gamma72-half-root-shells/).
 

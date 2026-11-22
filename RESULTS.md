@@ -1,5 +1,7 @@
 # Results
 
+**22 November 2026 — 71D single-block refill.** Keeping the entire norm-ten slice, a Leech-block exchange adds 81,952 rays and removes 4,600, giving **2,623,656,288** (+77,352). [Exact proof and replay](verifications/improved/dim71-gamma72-single-block-refill/).
+
 **22 November 2026 — Half-root Γ72 shells.** Exact lattice shells improve **eight bounds in 77–84D**; the largest gains over the preceding certificates are **3,314,392** each in 81D and 82D. [Proof and replay](verifications/improved/dim77-84-gamma72-half-root-shells/).
 
 **22 November 2026 — Depth-six Γ72 lattices.** Exact shortest shells of explicit Leech-block lifts raise **all ten 73–82D bounds**, with a largest increment of **3,028,346** in 80D (to **6,224,790,624**). Each root-height layer has exactly 136,704 horizontal contacts. [Proof and exact replay](verifications/improved/dim73-82-gamma72-depth6-lattice/).
@@ -249,7 +251,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 151 808** | 4.10 | `heads` | [Mixed Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-mixed-a2-normals/) |
-| 71 | 331 737 984 | **2 623 578 936** | 7.91 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
+| 71 | 331 737 984 | **2 623 656 288** | 7.91 | `heads` | [Single-block Γ72 refill](verifications/improved/dim71-gamma72-single-block-refill/) |
 | 73 | 6 218 175 602 | **6 218 449 010** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 74 | 6 218 175 606 | **6 218 995 830** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 75 | 6 218 175 612 | **6 219 816 924** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
