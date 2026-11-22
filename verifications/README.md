@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-150 packages, one per **construction idea** rather than one per dimension, because several
+151 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -38,6 +38,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim63-64-mixed-depth-clones`](improved/dim63-64-mixed-depth-clones/) | 63–64 | Mixed-depth cyclic dense owner clones |
 | [`dim63-67-gf8-norm-poles`](improved/dim63-67-gf8-norm-poles/) | 63–67 | GF(8) norm simplex pole exchange; exact replay |
 | [`dim65-mixed-depth-transfer`](improved/dim65-mixed-depth-transfer/) | 65 | Exact BCH-aligned mixed-depth clone transfer |
+| [`dim66-67-mixed-depth-transfer`](improved/dim66-67-mixed-depth-transfer/) | 66–67 | Mixed-depth clones and short-tail interfaces |
 | [`dim66-67-netto-signed-trades`](improved/dim66-67-netto-signed-trades/) | 66–67 | Signed Netto trades with exterior BCH caps; exact replay |
 | [`dim65-67-bch-exterior-caps`](improved/dim65-67-bch-exterior-caps/) | 65–67 | Exterior BCH cap bodies; exact replay |
 | [`dim66-67-kerdock-axis-owners`](improved/dim66-67-kerdock-axis-owners/) | 66–67 | Kerdock-axis owner lifts; exact replay |

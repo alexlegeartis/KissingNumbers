@@ -38,6 +38,8 @@
 
 22 November 2026: mixed triality rows add 3366912 in 96D. [Exact replay](verifications/improved/dim96-mixed-triality-six-rows/).
 
+22 November 2026: the aligned mixed-depth transfer gives 342390951 in 66D and 355203873 in 67D. [Exact replay](verifications/improved/dim66-67-mixed-depth-transfer/).
+
 22 November 2026: a BCH-aligned mixed-depth transfer gives 336258432 in 65D. [Exact replay](verifications/improved/dim65-mixed-depth-transfer/).
 
 22 November 2026: mixed-depth clones give 184428848 in 63D and 335798944 in 64D. [Exact replay](verifications/improved/dim63-64-mixed-depth-clones/).
@@ -214,8 +216,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 63 | 52 418 564 | **184 428 848** | 3.52 | `codes` | [Mixed-depth dense owner clones](verifications/improved/dim63-64-mixed-depth-clones/)
 | 64 | 331 737 984 | **335 798 944** | 1.01 | `codes` | [Mixed-depth dense owner clones](verifications/improved/dim63-64-mixed-depth-clones/)
 | 65 | 331 737 986 | **336 258 432** | 1.01 | `codes` | [Mixed-depth clone transfer](verifications/improved/dim65-mixed-depth-transfer/)
-| 66 | 331 737 990 | **342 390 470** | 1.03 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/)
-| 67 | 331 737 996 | **355 196 300** | 1.07 | `codes` | [GF(8) norm pole replacement](verifications/improved/dim63-67-gf8-norm-poles/) |
+| 66 | 331 737 990 | **342 390 951** | 1.03 | `codes` | [Mixed-depth clone transfer](verifications/improved/dim66-67-mixed-depth-transfer/)
+| 67 | 331 737 996 | **355 203 873** | 1.07 | `codes` | [Mixed-depth clone transfer](verifications/improved/dim66-67-mixed-depth-transfer/)|
 | 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 137 216** | 4.10 | `heads` | [A2 normal fibers of Gamma72](verifications/improved/dim70-gamma72-a2-fibers/) |

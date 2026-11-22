@@ -12,6 +12,8 @@ The [62D coordinate-weighted distance upgrade](verifications/improved/dim62-coor
 
 The [61–62D omitted-fibre construction](verifications/improved/dim61-62-omitted-fibre-spikes/) replays with `python verifications/improved/dim61-62-omitted-fibre-spikes/verify.py` and checks the exact shortened-code distances and weighted geometry.
 
+The [66–67D mixed-depth transfer](verifications/improved/dim66-67-mixed-depth-transfer/) replays with `python verifications/improved/dim66-67-mixed-depth-transfer/verify.py`, including the Kerdock and two-tail sparse interfaces.
+
 The [65D mixed-depth transfer](verifications/improved/dim65-mixed-depth-transfer/) replays with `python verifications/improved/dim65-mixed-depth-transfer/verify.py`, checking BCH coordinate alignment, discarded dense owners and retained GF(8) interfaces.
 
 The [63–64D mixed-depth clones](verifications/improved/dim63-64-mixed-depth-clones/) replay with `python verifications/improved/dim63-64-mixed-depth-clones/verify.py`. This trades against the same unmodified parent stock; gains are not additive to the old clones.

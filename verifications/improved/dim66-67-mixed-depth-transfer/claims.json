@@ -1,0 +1,26 @@
+{
+  "dimensions": [
+    {
+      "dimension": 66,
+      "previous": 342390470,
+      "lower_bound": 342390951,
+      "gain": 481,
+      "inserted": 2875,
+      "retired_dense_owners": 1418,
+      "retired_gf8_spikes": 976,
+      "retained_gf8_spikes": 48,
+      "exact_new_pairs": 4131375
+    },
+    {
+      "dimension": 67,
+      "previous": 355196300,
+      "lower_bound": 355203873,
+      "gain": 7573,
+      "inserted": 14777,
+      "retired_dense_owners": 6180,
+      "retired_gf8_spikes": 1024,
+      "retained_gf8_spikes": 0,
+      "exact_new_pairs": 109172476
+    }
+  ]
+}
