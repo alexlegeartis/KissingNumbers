@@ -1,5 +1,7 @@
 # Results
 
+**22 November 2026 — 62D partial nonary refill.** An exact sign exchange adds 1,914 and retires 971 old rays, producing **126,571,579** (+943). [Proof and replay](verifications/improved/dim62-partial-nonary-refill/).
+
 **22 November 2026 — 71D single-block refill.** Keeping the entire norm-ten slice, a Leech-block exchange adds 81,952 rays and removes 4,600, giving **2,623,656,288** (+77,352). [Exact proof and replay](verifications/improved/dim71-gamma72-single-block-refill/).
 
 **22 November 2026 — Half-root Γ72 shells.** Exact lattice shells improve **eight bounds in 77–84D**; the largest gains over the preceding certificates are **3,314,392** each in 81D and 82D. [Proof and replay](verifications/improved/dim77-84-gamma72-half-root-shells/).
@@ -242,7 +244,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 59 | 52 416 604 | **56 952 414** | 1.09 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
 | 60 | 52 416 841 | **58 631 571** | 1.12 | `classes` | [signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification](verifications/improved/dim49-60-p48-signed-refill/) |
 | 61 | 52 417 154 | **91 038 762** | 1.74 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
-| 62 | 52 417 932 | **126 570 636** | 2.41 | `codes` | [Coordinate-weighted distance](verifications/improved/dim62-coordinate-weighted-distance/)
+| 62 | 52 417 932 | **126 571 579** | 2.41 | `codes` | [Partial nonary signed refill](verifications/improved/dim62-partial-nonary-refill/) |
 | 63 | 52 418 564 | **184 428 848** | 3.52 | `codes` | [Mixed-depth dense owner clones](verifications/improved/dim63-64-mixed-depth-clones/)
 | 64 | 331 737 984 | **335 798 944** | 1.01 | `codes` | [Mixed-depth dense owner clones](verifications/improved/dim63-64-mixed-depth-clones/)
 | 65 | 331 737 986 | **336 258 432** | 1.01 | `codes` | [Mixed-depth clone transfer](verifications/improved/dim65-mixed-depth-transfer/)

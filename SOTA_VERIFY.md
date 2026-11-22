@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+The [62D partial sign refill](verifications/improved/dim62-partial-nonary-refill/) replays with `python verifications/improved/dim62-partial-nonary-refill/verify.py`. It checks the pinned parent, all sign overlaps, and the removal union.
+
 The [71D single-block Γ72 refill](verifications/improved/dim71-gamma72-single-block-refill/) replays with `python verifications/improved/dim71-gamma72-single-block-refill/verify.py`. It checks the block shell and the exact replacement count.
 
 The [77–84D half-root Γ72 proof](verifications/improved/dim77-84-gamma72-half-root-shells/) replays with `python verifications/improved/dim77-84-gamma72-half-root-shells/verify.py`. It verifies all shorter-length gates and convolves exact vertical parity shells with Leech contact counts.

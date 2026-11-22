@@ -63,7 +63,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 59 | 52 416 604 | [Leech–Sloane P48 (1971)](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [11D tail: Bianchi et al. 2026](https://arxiv.org/abs/2606.10402) *(derived)* | **56 952 414** | **SOTA** | +8.6534% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
 | 60 | 52 416 841 | [Leech–Sloane P48 (1971)](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [12D tail: Takhanov et al. 2026](https://arxiv.org/abs/2606.18984) *(derived)* | **58 631 571** | **SOTA** | +11.8564% | — | updated 2026-11-13 | [Signed P48 classes](verifications/improved/dim49-60-p48-signed-refill/) | — |
 | 61 | 52 417 154 | [Leech–Sloane P48 (1971)](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail: Zinoviev–Ericson 1999](https://www.mathnet.ru/eng/ppi457) *(derived)* | **91 038 762** | **SOTA** | +73.681238% | — | updated 2026-11-22 | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/) | — |
-| 62 | 52 417 932 | [Leech–Sloane P48 (1971)](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail: Ganzhinov 2022](https://arxiv.org/abs/2207.08266) *(derived)* | **126 570 636** | **SOTA** | +141.464383% | — | updated 2026-11-22 | [Coordinate-weighted distance](verifications/improved/dim62-coordinate-weighted-distance/) | — |
+| 62 | 52 417 932 | [Leech–Sloane P48 (1971)](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail: Ganzhinov 2022](https://arxiv.org/abs/2207.08266) *(derived)* | **126 571 579** | **SOTA** | +141.466181% | — | updated 2026-11-22 | [Partial nonary signed refill](verifications/improved/dim62-partial-nonary-refill/) | — |
 | 63 | 52 418 564 | [Leech–Sloane P48 (1971)](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail: Leech–Sloane 1971](https://doi.org/10.4153/CJM-1971-081-3) *(derived)* | **184 428 848** | **SOTA** | +251.838803% | — | updated 2026-11-22 | [Mixed-depth dense owner clones](verifications/improved/dim63-64-mixed-depth-clones/) | — |
 | 64 | 331 737 984 | [Edel-Rains-Sloane (1998)](https://arxiv.org/abs/math/0207291) | **335 798 944** | **SOTA** | +1.224147% | — | updated 2026-11-22 | [Mixed-depth dense owner clones](verifications/improved/dim63-64-mixed-depth-clones/) | — |
 | 65 | 331 737 986 | [ERS64 (1998)](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **336 258 432** | **SOTA** | +1.362656% | — | updated 2026-11-22 | [Mixed-depth clone transfer](verifications/improved/dim65-mixed-depth-transfer/) | — |
@@ -99,6 +99,8 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code (2001)](https://doi.org/10.1109/18.923742) *(derived by sign embedding)* | **209 299 907 072** | **SOTA** | +52.285725% | — | updated 2026-11-22 | [Mixed-tetrad row-alphabet repack](verifications/improved/dim96-mixed-tetrad-row-alphabet-repack/) | — |
 
 ## Recent updates
+
+**22 November 2026 — 62D partial nonary refill.** An exact sign exchange adds 1,914 and retires 971 old rays, producing **126,571,579** (+943). [Proof and replay](verifications/improved/dim62-partial-nonary-refill/).
 
 **22 November 2026 — 71D single-block refill.** Keeping the entire norm-ten slice, a Leech-block exchange adds 81,952 rays and removes 4,600, giving **2,623,656,288** (+77,352). [Exact proof and replay](verifications/improved/dim71-gamma72-single-block-refill/).
 

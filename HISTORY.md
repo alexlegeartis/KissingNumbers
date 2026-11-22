@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>16–22 November 2026: exact exchanges and high-dimensional layers (through 22 November)</summary>
 
+**22 November 2026 — 62D partial nonary refill.** An exact sign exchange adds 1,914 and retires 971 old rays, producing **126,571,579** (+943). [Proof and replay](verifications/improved/dim62-partial-nonary-refill/).
+
 **22 November 2026 — 71D single-block refill.** Keeping the entire norm-ten slice, a Leech-block exchange adds 81,952 rays and removes 4,600, giving **2,623,656,288** (+77,352). [Exact proof and replay](verifications/improved/dim71-gamma72-single-block-refill/).
 
 **22 November 2026 — Half-root Γ72 shells.** Exact lattice shells improve **eight bounds in 77–84D**; the largest gains over the preceding certificates are **3,314,392** each in 81D and 82D. [Proof and replay](verifications/improved/dim77-84-gamma72-half-root-shells/).
