@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-130 packages, one per **construction idea** rather than one per dimension, because several
+131 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -18,6 +18,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim30-contact-sum-exchanges`](improved/dim30-contact-sum-exchanges/) | 30 | 248,351 points. Exact contact-sum exchange and complete geometry. |
 | [`dim28-takhanov-root-exchange`](improved/dim28-takhanov-root-exchange/) | 28 | 223,528 points, 32 above Takhanov. Exact source exchange and complete geometry. |
 | [`dim30-31-midpoint-exchanges`](improved/dim30-31-midpoint-exchanges/) | 30, 31 | 248,289 and 251,524 points. Complete exact geometry and separate integer exchange checks. |
+| [`dim89-mixed-matching-rows`](improved/dim89-mixed-matching-rows/) | 89 | Mixed five- through eight-row matching codes; exact replay |
 | [`dim88-89-signed-row-designs`](improved/dim88-89-signed-row-designs/) | 88–89 | Signed plane trades and triality row layers; exact replay |
 | [`dim88-89-golay-variable-punctures`](improved/dim88-89-golay-variable-punctures/) | 88–89 | variable-puncture Golay supports; exact replay |
 | [`dim92-96-flat-rs-layers`](improved/dim92-96-flat-rs-layers/) | 92–96 | flat Reed–Solomon layers; exact replay |

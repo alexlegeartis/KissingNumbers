@@ -1,0 +1,10 @@
+{
+  "dimension": 89,
+  "base_without_previous_matching_append": 15178573330,
+  "patterns": {"5":1,"6":851,"7":3,"8":61},
+  "rays_per_pattern": {"5":1024,"6":4096,"7":8192,"8":32768},
+  "addition": 5510144,
+  "lower_bound": 15184083474,
+  "previous": 15179459090,
+  "gain": 4624384
+}

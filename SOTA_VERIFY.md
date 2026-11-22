@@ -32,6 +32,8 @@ The [Re-marked axial Pless and Steiner squares](verifications/improved/dim86-87-
 
 The [Oriented polyhedral norm-ten latitude](verifications/improved/dim75-76-oriented-norm10-latitudes/) replays with `python verifications/improved/dim75-76-oriented-norm10-latitudes/verify.py`.
 
+The [latest 89D mixed matching-row construction](verifications/improved/dim89-mixed-matching-rows/) gives **15,184,083,474**; run `python verifications/improved/dim89-mixed-matching-rows/verify.py` for exact mixed pattern and inner-code checks.
+
 The [new 88–89D signed plane and row designs](verifications/improved/dim88-89-signed-row-designs/) are verified by `python verifications/improved/dim88-89-signed-row-designs/verify.py`. This checks the support and signed-row geometry against the pinned parents.
 
 The [88D axial Pless construction](verifications/improved/dim88-axial-pless/) replays with `python verifications/improved/dim88-axial-pless/verify.py`.

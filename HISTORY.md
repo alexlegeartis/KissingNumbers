@@ -17,6 +17,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **21 November 2026 — re-marking and Steiner squares.** [A refined Pless repacking](verifications/improved/dim86-87-remarked-square/) further raises 86D to **8,008,545,838** and 87D to **8,160,981,972**, with 2,223 square supports in each dimension.
 
+**22 November 2026 — Mixed matching-row codes.** **15,184,083,474** in 89D (+4,624,384), replacing the 865 five-row families with 916 mixed five- through eight-row patterns. [Exact replay](verifications/improved/dim89-mixed-matching-rows/).
+
 **22 November 2026 — Signed plane and row designs.** **13,357,793,920** in 88D (+24,268) by a doubled Steiner system and two rotated plane layers; **15,179,459,090** in 89D (+2,069,008) by three triality frames and tagged five-row D4 fibers. [Exact replay](verifications/improved/dim88-89-signed-row-designs/).
 
 **22 November 2026 — QR 12-flat phase repacking.** **544,666** in 37D (+192 over the radical-family construction), replacing 384 all-phase octad points with a 576-point paired-coordinate parity code. The [448-point refill](https://github.com/alexlegeartis/KissingNumbers/commit/9124b78a1e2eed5132d0fe3e14669e0e451e8b11) was an intermediate step. [Exact replay](verifications/improved/dim37-qr-flat-repack/).

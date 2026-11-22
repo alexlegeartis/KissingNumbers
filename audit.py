@@ -763,6 +763,10 @@ with io.open(os.path.join(IMP, 'dim88-89-signed-row-designs', 'claims.json'), en
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim88-89-signed-row-designs', 'verify.py: exact signed planes and row codes')
 
+with io.open(os.path.join(IMP, 'dim89-mixed-matching-rows', 'claims.json'), encoding='utf-8') as _file:
+    _row = json.load(_file)
+    add(_row['dimension'], _row['lower_bound'], 'dim89-mixed-matching-rows', 'verify.py: exact mixed row codes')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
