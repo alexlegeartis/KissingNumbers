@@ -874,6 +874,11 @@ with io.open(os.path.join(IMP, 'dim91-93-complementary-parity-steiner-append', '
 for _row in _adapted9495['claims']:
     add(_row['dimension'], _row['lower_bound'], 'dim91-93-complementary-parity-steiner-append', 'verify.py: complementary parity Steiner append')
 
+with io.open(os.path.join(IMP, 'dim91-93-nonsteiner-triality-append', 'claims.json'), encoding='utf-8') as _file:
+    _adapted9495 = json.load(_file)
+for _row in _adapted9495['claims']:
+    add(_row['dimension'], _row['lower_bound'], 'dim91-93-nonsteiner-triality-append', 'verify.py: non-Steiner triality append')
+
 with io.open(os.path.join(IMP, 'dim66-67-mixed-depth-transfer', 'claims.json'), encoding='utf-8') as _file:
     _mixed_66_67 = json.load(_file)
 for _row in _mixed_66_67['dimensions']:

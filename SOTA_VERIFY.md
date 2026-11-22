@@ -62,6 +62,8 @@ The [94–95D coordinate-aligned dodecad fibres](verifications/improved/dim94-95
 
 The [91–93D complementary parity Steiner append](verifications/improved/dim91-93-complementary-parity-steiner-append/) replays with `python verifications/improved/dim91-93-complementary-parity-steiner-append/verify.py`, verifying the mixed frame geometry and retained stock.
 
+The [91–93D non-Steiner triality append](verifications/improved/dim91-93-nonsteiner-triality-append/) replays with `python verifications/improved/dim91-93-nonsteiner-triality-append/verify.py`, checking all affected retained modes and the fourteen new ones.
+
 The [94–95D mixed-tetrad axis and sign fibres](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/) replay with `python verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/verify.py` and a C++17 compiler. The replay checks the retained post-refinement monochrome geometry, matching modes, and actual shifted cross-frame interfaces.
 
 The [96D adapted sign kernels](verifications/improved/dim96-adapted-dodecad-fibres/) replay with `python verifications/improved/dim96-adapted-dodecad-fibres/verify.py`. Each kernel is reconstructed from its active projection equations, checked at minimum Hamming distance three, and checked against the unchanged post-RS stock.

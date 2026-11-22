@@ -1,5 +1,7 @@
 # Results
 
+22 November 2026: fourteen non-Steiner triality modes append another 14,336 rays each in 91D, 92D, and 93D. [Exact replay](verifications/improved/dim91-93-nonsteiner-triality-append/).
+
 22 November 2026: complementary parity Steiner modes append 40,960 rays each in 91D, 92D, and 93D. [Exact replay](verifications/improved/dim91-93-complementary-parity-steiner-append/).
 
 22 November 2026: repacking the row alphabets of seven mixed-tetrad modes adds a net 35,872 points in 96D, reaching 209,299,907,072. [Exact replay](verifications/improved/dim96-mixed-tetrad-row-alphabet-repack/).
@@ -252,9 +254,9 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 88 | 6 218 179 920 | **13 357 793 920** | 2.15 | `codes` | [Signed plane and row designs](verifications/improved/dim88-89-signed-row-designs/)
 | 89 | 6 218 181 330 | **15 185 856 402** | 2.44 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
 | 90 | 6 218 183 254 | **21 943 640 934** | 3.53 | `codes` | [Pless weight 15 words with nonlinear 7812-word hexagonal phases; complete phase-pair and exact cross-layer checks, published parent minima](verifications/improved/dim90-92-hexagonal-phase-layers/) |
-| 91 | 6 218 187 548 | **25 923 323 664** | 4.17 | `codes` | [Complementary parity Steiner append](verifications/improved/dim91-93-complementary-parity-steiner-append/)
-| 92 | 8 589 934 592 | **34 513 258 256** | 4.02 | `codes` | [Complementary parity Steiner append](verifications/improved/dim91-93-complementary-parity-steiner-append/)
-| 93 | 17 179 869 184 | **47 398 160 144** | 2.76 | `codes` | [Complementary parity Steiner append](verifications/improved/dim91-93-complementary-parity-steiner-append/)
+| 91 | 6 218 187 548 | **25 923 338 000** | 4.17 | `codes` | [Non-Steiner triality append](verifications/improved/dim91-93-nonsteiner-triality-append/)
+| 92 | 8 589 934 592 | **34 513 272 592** | 4.02 | `codes` | [Non-Steiner triality append](verifications/improved/dim91-93-nonsteiner-triality-append/)
+| 93 | 17 179 869 184 | **47 398 174 480** | 2.76 | `codes` | [Non-Steiner triality append](verifications/improved/dim91-93-nonsteiner-triality-append/)
 | 94 | 34 359 738 368 | **74 147 456 772** | 2.16 | `codes` | [Mixed-tetrad axis and sign fibres](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/)
 | 95 | 68 719 476 736 | **117 097 130 108** | 1.70 | `codes` | [Mixed-tetrad axis and sign fibres](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/)
 | 96 | 137 438 953 472 | **209 299 907 072** | 1.52 | `codes` | [Mixed-tetrad row-alphabet repack](verifications/improved/dim96-mixed-tetrad-row-alphabet-repack/)
