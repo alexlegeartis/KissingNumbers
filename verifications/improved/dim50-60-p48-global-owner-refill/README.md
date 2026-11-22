@@ -14,7 +14,7 @@ New certified lower bounds:
 | 57 | 54,760,693 | 5,936 | 352 | 54,766,981 |
 | 58 | 56,270,076 | 11,619 | 0 | 56,281,695 |
 | 59 | 56,952,414 | 14,933 | 224 | 56,967,571 |
-| 60 | 58,631,571 | 25,722 | 5,135 | 58,662,428 |
+| 60 | 58,631,571 | 27,016 | 5,135 | 58,663,722 |
 
 A donor may replace multiple incompatible signed owners in its destination
 class. A signed owner appearing in a different class may also be reassigned,
@@ -22,7 +22,8 @@ provided its old assignment is deleted. We priced the union of these
 requirements with one maximum-closure computation across all classes for each
 dimension, using a common bank of 4,000 candidate vectors. Next we refilled
 against the resulting retained stock, favoring several compatible donors that
-share one surviving blocker. Verification does not rely on optimization output
+share a small set of surviving blockers. The 60D row includes a third
+pass that permits groups sharing up to two such blockers. Verification does not rely on optimization output
 beyond the literal inserted coordinates/classes and checks the exact removal
 union from scratch.
 
