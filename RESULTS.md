@@ -16,6 +16,8 @@
 
 22 November 2026: omitted-fibre weighted spikes give 89116048 in 61D and 123209522 in 62D. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
 
+22 November 2026: 103 affine-phase patterns append 421888 points in 96D, giving 209292294976. [Exact replay](verifications/improved/dim96-affine-phase-projections/).
+
 22 November 2026: 348 further six-row patterns add 1425408 in 96D, giving 209291873088. [Exact replay](verifications/improved/dim96-mixed-triality-six-rows/).
 
 22 November 2026: mixed triality rows add 3366912 in 96D. [Exact replay](verifications/improved/dim96-mixed-triality-six-rows/).
@@ -221,7 +223,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 93 | 17 179 869 184 | **47 397 139 984** | 2.76 | `codes` | [Triality and matching-row transfer](verifications/improved/dim91-93-triality-matching-transfer/)
 | 94 | 34 359 738 368 | **74 141 118 156** | 2.16 | `codes` | [Mixed triality six-row append](verifications/improved/dim94-95-mixed-triality/)
 | 95 | 68 719 476 736 | **117 090 791 492** | 1.70 | `codes` | [Mixed triality six-row append](verifications/improved/dim94-95-mixed-triality/)
-| 96 | 137 438 953 472 | **209 291 873 088** | 1.52 | `codes` | [Mixed triality six-row append](verifications/improved/dim96-mixed-triality-six-rows/)
+| 96 | 137 438 953 472 | **209 292 294 976** | 1.52 | `codes` | [Affine-phase mixed triality](verifications/improved/dim96-affine-phase-projections/)
 
 ## Status: what would have to change
 

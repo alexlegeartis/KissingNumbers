@@ -1,0 +1,13 @@
+{
+  "dimension": 96,
+  "previous": 209291873088,
+  "added_patterns": 103,
+  "per_pattern": 4096,
+  "rescued_pairs": [
+    79,
+    64,
+    0
+  ],
+  "gain": 421888,
+  "lower_bound": 209292294976
+}

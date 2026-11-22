@@ -46,6 +46,8 @@ The [new 88–89D signed plane and row designs](verifications/improved/dim88-89-
 
 The [94–95D mixed triality append](verifications/improved/dim94-95-mixed-triality/) replays with `python verifications/improved/dim94-95-mixed-triality/verify.py` with the true physical RS grouping.
 
+The [96D affine-phase append](verifications/improved/dim96-affine-phase-projections/) replays with `python verifications/improved/dim96-affine-phase-projections/verify.py`, verifying projected affine codes across all interfaces with the earlier mixed and hexary patterns.
+
 The [96D mixed triality append](verifications/improved/dim96-mixed-triality-six-rows/) replays with `python verifications/improved/dim96-mixed-triality-six-rows/verify.py` and checks the pinned grouped roots, flat and Reed–Solomon interfaces.
 
 The [94–95D matching-row append](verifications/improved/dim94-95-matching-row-append/) replays with `python verifications/improved/dim94-95-matching-row-append/verify.py` and checks the pinned Golay, flat and Reed–Solomon interfaces.
