@@ -822,6 +822,7 @@ for _package, _description in (
         ('dim44-d4-section', 'verify.py (exact parent minimum, spherical moments and projected class distances)'),
         ('dim49-joint-signed-exchange', 'final.py: exact complete signed class geometry'),
         ('dim50-59-p48-joint-transport', 'verify.py: exact changed pairs and signed ownership'),
+        ('dim50-60-p48-global-owner-refill', 'verify.py: exact owner migration, refill and tail geometry'),
         ('dim54-60-p48-tail-antipodes', 'verify.py: exact tail geometry, point counts and signed ownership')):
     _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'), os.path.join(IMP, _package, 'final.py'))
     _driver = importlib.util.module_from_spec(_spec)
@@ -1836,6 +1837,8 @@ else:
     # These proof documents carry frozen coordinate-package manifests. Their
     # dated comparison tables remain part of the original certificate bytes.
     _frozen_proofs = {
+        'verifications/improved/dim54-60-p48-tail-antipodes/README.md': '3a33db541a30977c02568884591cb3f4c0050e10e982e12a5e5b67633825f7d0',
+        'verifications/improved/dim50-59-p48-joint-transport/README.md': '6fb701d44038120bb3f76957db5dc7d80a06527ddec51daa48b587f3896135c7',
         'verifications/improved/dim49-60-p48-pointwise-refill/README.md':
             'daf064d4dae3e569bc4b707a207c1a0e201894e2709c0db81835a2ecf1b56805',
         'verifications/improved/dim49-60-p48-signed-refill/README.md':
@@ -2660,6 +2663,7 @@ if '--write-results' in sys.argv and not fail:
         'dim49-60-p48-pointwise-refill': 'pointwise P48 refill with ownership rerouting; two exact head proofs, exact tails and poles, complete-coordinate disjointness',
         'dim49-joint-signed-exchange': 'joint signed P48 exchange with exact full final-class check',
         'dim50-59-p48-joint-transport': 'transported signed P48 trades with exact pair and ownership checks',
+        'dim50-60-p48-global-owner-refill': 'global P48 owner exchanges and exact tetrahedral tail geometry',
         'dim54-60-p48-tail-antipodes': 'complementary tail directions above signed P48 with exact ownership and angles',
         'dim49-60-p48-signed-refill': 'signed P48 classes with individual ownership; complete finite class, isometry, tail and pole verification',
         'dim54-59-p48-coverage': 'joint maximum-coverage selections of existing P48 class images; exact tails, isometries and full-coordinate ownership replay',
@@ -2682,6 +2686,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append("22 November 2026 — Global owner migration and a second refill improve 50–60D. The 60D construction reaches 58,662,428, combining exact owner changes with the 16-head sign cube and nested tetrahedral palettes. [Exact replay](verifications/improved/dim50-60-p48-global-owner-refill/).")
     out.append("22 November 2026 — New signed-head exchanges and complementary tail directions improve every dimension from 49D through 60D. [Transport proof](verifications/improved/dim50-59-p48-joint-transport/). [Tail proof and replay](verifications/improved/dim54-60-p48-tail-antipodes/) · [49D proof](verifications/improved/dim49-joint-signed-exchange/).")
     out.append('22 November 2026 — A scaled D4 in P48m gives 4940961 points in 44D. [Configuration and exact moment proof](verifications/improved/dim44-d4-section/).')
     out.append('22 November 2026 — Affine shells in the P48q and P48p complements give 1460066 in 41D, 1991475 in 42D and 2921073 in 43D. [Exact replay](verifications/improved/dim41-43-affine-sections/).')

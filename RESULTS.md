@@ -1,5 +1,7 @@
 # Results
 
+22 November 2026 — Global owner migration and a second refill improve 50–60D. The 60D construction reaches 58,662,428, combining exact owner changes with the 16-head sign cube and nested tetrahedral palettes. [Exact replay](verifications/improved/dim50-60-p48-global-owner-refill/).
+
 22 November 2026 — New signed-head exchanges and complementary tail directions improve every dimension from 49D through 60D. [Transport proof](verifications/improved/dim50-59-p48-joint-transport/). [Tail proof and replay](verifications/improved/dim54-60-p48-tail-antipodes/) · [49D proof](verifications/improved/dim49-joint-signed-exchange/).
 **22 November 2026 — 62D partial nonary refill.** An exact sign exchange adds 1,914 and retires 971 old rays, producing **126,571,579** (+943). [Proof and replay](verifications/improved/dim62-partial-nonary-refill/).
 
@@ -237,17 +239,17 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 45 | 7 380 090 | **7 655 056** | 1.04 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 46 | 12 309 600 | **13 387 797** | 1.09 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 49 | 52 416 002 | **52 431 658** | 1.00 | `classes` | [joint signed P48 exchange with exact full final-class check](verifications/improved/dim49-joint-signed-exchange/) |
-| 50 | 52 416 006 | **52 462 974** | 1.00 | `classes` | [transported signed P48 trades with exact pair and ownership checks](verifications/improved/dim50-59-p48-joint-transport/) |
-| 51 | 52 416 012 | **52 509 940** | 1.00 | `classes` | [transported signed P48 trades with exact pair and ownership checks](verifications/improved/dim50-59-p48-joint-transport/) |
-| 52 | 52 416 024 | **52 603 800** | 1.00 | `classes` | [transported signed P48 trades with exact pair and ownership checks](verifications/improved/dim50-59-p48-joint-transport/) |
-| 53 | 52 416 040 | **52 728 705** | 1.01 | `classes` | [transported signed P48 trades with exact pair and ownership checks](verifications/improved/dim50-59-p48-joint-transport/) |
-| 54 | 52 416 072 | **52 977 769** | 1.01 | `classes` | [transported signed P48 trades with exact pair and ownership checks](verifications/improved/dim50-59-p48-joint-transport/) |
-| 55 | 52 416 126 | **53 395 469** | 1.02 | `classes` | [transported signed P48 trades with exact pair and ownership checks](verifications/improved/dim50-59-p48-joint-transport/) |
-| 56 | 52 416 240 | **54 266 509** | 1.04 | `classes` | [transported signed P48 trades with exact pair and ownership checks](verifications/improved/dim50-59-p48-joint-transport/) |
-| 57 | 52 416 306 | **54 764 394** | 1.04 | `classes` | [transported signed P48 trades with exact pair and ownership checks](verifications/improved/dim50-59-p48-joint-transport/) |
-| 58 | 52 416 510 | **56 274 806** | 1.07 | `classes` | [transported signed P48 trades with exact pair and ownership checks](verifications/improved/dim50-59-p48-joint-transport/) |
-| 59 | 52 416 604 | **56 957 415** | 1.09 | `classes` | [transported signed P48 trades with exact pair and ownership checks](verifications/improved/dim50-59-p48-joint-transport/) |
-| 60 | 52 416 841 | **58 635 154** | 1.12 | `classes` | [complementary tail directions above signed P48 with exact ownership and angles](verifications/improved/dim54-60-p48-tail-antipodes/) |
+| 50 | 52 416 006 | **52 462 983** | 1.00 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
+| 51 | 52 416 012 | **52 509 956** | 1.00 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
+| 52 | 52 416 024 | **52 603 839** | 1.00 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
+| 53 | 52 416 040 | **52 728 778** | 1.01 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
+| 54 | 52 416 072 | **52 978 100** | 1.01 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
+| 55 | 52 416 126 | **53 396 038** | 1.02 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
+| 56 | 52 416 240 | **54 267 873** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
+| 57 | 52 416 306 | **54 766 981** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
+| 58 | 52 416 510 | **56 281 695** | 1.07 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
+| 59 | 52 416 604 | **56 967 571** | 1.09 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
+| 60 | 52 416 841 | **58 662 428** | 1.12 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 61 | 52 417 154 | **91 038 762** | 1.74 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
 | 62 | 52 417 932 | **126 571 579** | 2.41 | `codes` | [Partial nonary signed refill](verifications/improved/dim62-partial-nonary-refill/) |
 | 63 | 52 418 564 | **184 428 848** | 3.52 | `codes` | [Mixed-depth dense owner clones](verifications/improved/dim63-64-mixed-depth-clones/)
@@ -357,8 +359,7 @@ refreshed table, not more search.
 | 44 | `dim44-d4-section` | verify.py (exact parent minimum, spherical moments and projected class distances) |
 | 45-46 | `dim41-46-p48-heads` | verify.py (integer angles and exact ranks; inherited population tables, not a fresh body enumeration) |
 | 49 | `dim49-joint-signed-exchange` | final.py: exact complete signed class geometry |
-| 60 | `dim54-60-p48-tail-antipodes` | verify.py: exact tail geometry, point counts and signed ownership |
-| 50-59 | `dim50-59-p48-joint-transport` | verify.py: exact changed pairs and signed ownership |
+| 50-60 | `dim50-60-p48-global-owner-refill` | verify.py: exact changed-class pairs, signed ownership and tetrahedral tail replay |
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 63-65 | `dim63-65-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 65–67 | `dim65-67-bch-exterior-caps` | exact extended BCH codes, cap distances, inherited sparse geometry and counts |

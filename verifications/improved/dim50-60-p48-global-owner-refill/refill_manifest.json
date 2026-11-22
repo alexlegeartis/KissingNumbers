@@ -1,0 +1,47 @@
+{
+  "50": {
+    "refill_sha256": "66e8f2f9d6a4ef13ae27f3d3ef9dc669b6a83dbe13288b8350aa1d0e3d52532a",
+    "migration_sha256": "384c05628fff0c50c478ef5dda1c59b63312893f943ed48b0d04d8a7524c8a61"
+  },
+  "51": {
+    "refill_sha256": "c4801b04967cb5ea655d729810324733dfc7b93c43b1e22c4360df4809c752c9",
+    "migration_sha256": "0f30fbde29abdb574bfb0065deb141639c50d598c5db08cda2ef29557937614c"
+  },
+  "52": {
+    "refill_sha256": "897290eda2c153e30b0c71b8898b1ae774d63c473e7a2d98d766315aa1b36c5d",
+    "migration_sha256": "915153e943dedfcd12aff9e5d88aba613492a6df721fba11d501b8b1abcfee3a"
+  },
+  "53": {
+    "refill_sha256": "578ba1d5f75d982a75a9611755b31a279e227012cb8e6fc6060743d415f21e77",
+    "migration_sha256": "b0d38087b3c39ec75ffb5f457559d5391641fe381a562d6ac04a147bd7d036df"
+  },
+  "54": {
+    "refill_sha256": "9db0ebee28f35081d073cc83be059445a175fd01ac692a9bb9b763c7ffcdd8ce",
+    "migration_sha256": "8e94126e5e8f601661d7332df8e462d367dcd0d8a86aca80c2bf1856ebba9af8"
+  },
+  "55": {
+    "refill_sha256": "b82a2e0f535cbaae067b3ff5727e3e97874e5d89fa649ec20028d8ac8d7ac55f",
+    "migration_sha256": "ae029475f43371f144a3d212a711836c1c0fb68abd0be20702122292238b5c3b"
+  },
+  "56": {
+    "refill_sha256": "04e20619697a43f5a393dedb8fe7aeca3e7d0c16fa1975df16d77e8ffe0568bb",
+    "migration_sha256": "b7e184500b7b29bfb945c484434fd218e6fc20862cfda14c15eebbed931e1379"
+  },
+  "57": {
+    "refill_sha256": "8aa4446107318a31ce0ec2f17473a6f673bb1432a618214165ccf9c1bd08c1ae",
+    "migration_sha256": "68f6b81908bb2c501a77e2dcc2a17721c33d9ca4921d76abd964426faf9c7f28"
+  },
+  "58": {
+    "refill_sha256": "3d8c951ea8dfd4e29c9bfe1538ff95dd89b3cd532811845942a03ed623f12a9a",
+    "migration_sha256": "7d0192209d0dc6f4a6a319065fb9b7dd1b3a9427da9c287d90581a98e9a98ea2"
+  },
+  "59": {
+    "refill_sha256": "28ee556c901fee014fb7e3a69fbbc2877c4558ad5edf6e0eb0840024d5b7bcfd",
+    "migration_sha256": "3e4c865907694dea6317fa66386539f6fdd305ac9c01e0bc2d4811cef9a349c3"
+  },
+  "60": {
+    "refill_sha256": "138113f2aef4d1ad1e2662334d3424d16998c1a4972d568057fbbde3f47de5fc",
+    "migration_sha256": "841ec616c18efe427f7f5bd1665a79b5e8e0c57538606fa14141e183e3276393",
+    "cube_witness_sha256": "eda5f406319e48b8ba9cd1151c4378195be7192d607e70e4b203a38a7c8d278b"
+  }
+}
