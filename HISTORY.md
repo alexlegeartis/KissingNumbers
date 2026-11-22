@@ -17,6 +17,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **21 November 2026 — re-marking and Steiner squares.** [A refined Pless repacking](verifications/improved/dim86-87-remarked-square/) further raises 86D to **8,008,545,838** and 87D to **8,160,981,972**, with 2,223 square supports in each dimension.
 
+**22 November 2026 — Weighted distance on all sixty marks.** Upgrading every shortened kernel to rank 16 adds **1,945,600** points in 62D, for **126,570,636**. [Exact replay](verifications/improved/dim62-coordinate-weighted-distance/).
+
 **22 November 2026 — Four omitted Delsarte–Goethals fibres.** Two more deleted labels with larger signed tails add **983,040** points to 61D, reaching **91,038,762**, with no additional deletions. [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).
 
 **22 November 2026 — All sixty omitted-fibre axes.** Restoring the predecessor’s original nine-support layer in place of the marked capsules frees all sixty ordinary axes. The bounds rise to **90,055,722** in 61D (+432,794) and **124,625,036** in 62D (+874,842). [Exact replay](verifications/improved/dim61-62-omitted-fibre-spikes/).

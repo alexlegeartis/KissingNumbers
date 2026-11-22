@@ -811,6 +811,10 @@ with io.open(os.path.join(IMP, 'dim96-partial-triality-fibres', 'claims.json'), 
     _partial96 = json.load(_file)
 add(_partial96['dimension'], _partial96['lower_bound'], 'dim96-partial-triality-fibres', 'verify.py: exact partial axis fibre append')
 
+with io.open(os.path.join(IMP, 'dim62-coordinate-weighted-distance', 'claims.json'), encoding='utf-8') as _file:
+    _weighted62 = json.load(_file)
+add(_weighted62['dimension'], _weighted62['lower_bound'], 'dim62-coordinate-weighted-distance', 'verify.py: exact rank-16 coordinate-weighted distances')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.

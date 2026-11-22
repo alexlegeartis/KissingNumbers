@@ -8,6 +8,8 @@ The [Marked caps and nine-support refill](verifications/improved/dim61-62-marked
 
 The [Balanced signed nine-support refill](verifications/improved/dim63-balanced-nine-refill/) replays with `python verifications/improved/dim63-balanced-nine-refill/verify.py`.
 
+The [62D coordinate-weighted distance upgrade](verifications/improved/dim62-coordinate-weighted-distance/) replays with `python verifications/improved/dim62-coordinate-weighted-distance/verify.py`. It reads the sixty explicit rank-16 kernels and checks every weighted difference and translated word assignment in exact arithmetic.
+
 The [61–62D omitted-fibre construction](verifications/improved/dim61-62-omitted-fibre-spikes/) replays with `python verifications/improved/dim61-62-omitted-fibre-spikes/verify.py` and checks the exact shortened-code distances and weighted geometry.
 
 The [63–64D dense owner clones](verifications/improved/dim63-64-dense-owner-clones/) replay with `python verifications/improved/dim63-64-dense-owner-clones/verify.py` and validate all altered signs and pair products. These are alternative witnesses, not an append to the GF(8) layers.
