@@ -7,7 +7,7 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-127 packages, one per **construction idea** rather than one per dimension, because several
+128 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
@@ -29,6 +29,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim91-z8-asymmetric-planes`](improved/dim91-z8-asymmetric-planes/) | 91 | 24 asymmetric variable-radius Z8 fibers; sparse and hexacode replay |
 | [`dim61-62-marked-caps`](improved/dim61-62-marked-caps/) | 61–62 | Marked caps and nine-support refill; exact replay |
 | [`dim63-balanced-nine-refill`](improved/dim63-balanced-nine-refill/) | 63 | Balanced signed nine-support refill; exact replay |
+| [`dim37-qr-flat-repack`](improved/dim37-qr-flat-repack/) | 37 | QR 12-flat phase repacking; exact replay |
 | [`dim66-67-kerdock-axis-owners`](improved/dim66-67-kerdock-axis-owners/) | 66–67 | Kerdock-axis owner lifts; exact replay |
 | [`dim94-96-hexary-parity-packing`](improved/dim94-96-hexary-parity-packing/) | 94–96 | Complementary parity six-row packings; exact replay |
 | [`dim65-dg-dense-owners`](improved/dim65-dg-dense-owners/) | 65 | Delsarte–Goethals dense owners; exact replay |

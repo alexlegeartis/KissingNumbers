@@ -106,6 +106,7 @@ PAPER = _paper()
 
 # (label, directory, argv, minutes, in the fast set?)
 JOBS = [
+    ('dim37-qr-flat-repack: exact signed 12-flat substitution', os.path.join(V, 'improved', 'dim37-qr-flat-repack'), ['verify.py'], 0.1, True),
     ('dim37-qr-radical-families: exact layered construction', os.path.join(V, 'improved', 'dim37-qr-radical-families'), ['verify.py'], 1.0, True),
     ('dim37-qr-radical-families: explicit radical pair audit', os.path.join(V, 'improved', 'dim37-qr-radical-families'), ['audit.py'], 1.0, True),
     ('dim37-qr-shared-stars: exact sparse insertion', os.path.join(V, 'improved', 'dim37-qr-shared-stars'), ['verify.py'], 1.0, True),
@@ -598,6 +599,7 @@ def _sota_jobs(quick=False):
         ('dim31-annealed-design', ('verify.py',)),
         ('dim36-ct-nonlocal', ('verify.py',)),
         ('dim36-ct-nonlocal', ('verify_independent.py',)),
+        ('dim37-qr-flat-repack', ('verify.py',)),
         ('dim37-qr-radical-families', ('verify.py',)),
         ('dim37-qr-radical-families', ('audit.py',)),
         ('dim37-qr-shared-stars', ('verify.py',)),
@@ -799,6 +801,7 @@ def _sota_coverage(jobs, results=None):
         ('dim38-qr-octad-switches', [38], [('verify.py',), ('audit.py',)], 'ten verified octad switches, 288 stars, 240 root deletions and unchanged QR fibres'),
         ('dim38-qr-star-trades', [38], [('verify.py',), ('audit.py',)], '144 explicit stars with 128 root deletions'),
         ('dim38-qr-free-offsets', [38], [('verify.py',), ('audit.py',)], '31 full QR fibres with independently optimized offsets and two retained sparse layers'),
+        ('dim37-qr-flat-repack', [37], [('verify.py',)], 'exact signed 12-flat repacking on the verified radical-family predecessor'),
         ('dim37-qr-radical-families', [37], [('verify.py',), ('audit.py',)], '168 radical families, exact affected geometry and explicit 57,797,376 radical pairs'),
         ('dim37-qr-shared-stars', [37], [('verify.py',), ('audit.py',), ('audit_six.py',)], 'exact sparse geometry, shared signed-root accounting, and radical-layer replay'),
         ('dim37-38-qr-merge', [37,38], [('verify.py',), ('audit.py',)], 'exact integer dense compression, projective octads and sparse cross products'),

@@ -1,0 +1,15 @@
+{
+  "source": "Yang et al., arXiv:2609.35051v1, Appendix B, Tables 11 and 12",
+  "source_url": "https://arxiv.org/html/2609.35051v1",
+  "license": "CC BY 4.0",
+  "length": 38,
+  "generators_hex": [
+    "2000C0DE0B", "1000AA229D", "8009F5CD6", "4004FAE6B",
+    "200ED9AAD", "100BC80CE", "805E4067", "40E56DAB",
+    "20B8FB4D", "1096303E", "84B181F", "4EFC197", "2BDAD53", "1949B31"
+  ],
+  "representatives_hex": [
+    "0", "C6E94", "DF6ABF", "27B441", "D3CE66", "41BBBB",
+    "BC1E1F", "52727", "9951C8", "7001EB", "3F6969"
+  ]
+}

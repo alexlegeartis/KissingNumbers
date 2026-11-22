@@ -1,0 +1,9 @@
+[
+  {
+    "dimension": 37,
+    "previous_bound": 544474,
+    "lower_bound": 544538,
+    "gain": 64,
+    "verification": "python verify.py"
+  }
+]

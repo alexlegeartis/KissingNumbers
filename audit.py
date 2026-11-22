@@ -753,6 +753,8 @@ with io.open(os.path.join(IMP, 'dim94-96-hexary-parity-packing', 'claims.json'),
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim94-96-hexary-parity-packing', 'verify.py: exact construction replay')
 
+add(37, 544538, 'dim37-qr-flat-repack', 'verify.py: exact local signed pairs and inherited interfaces')
+
 claims.sort()
 # The manuscript remains the earlier snapshot until it is separately updated.
 # Its documented partition and claim counts must be checked against that scope.
@@ -2405,6 +2407,7 @@ if '--write-results' in sys.argv and not fail:
         'dim25-collective-deformation': 'collective rational deformation of 971 Leech circles and 102 moved points; exact biquadratic comparisons',
         'dim31-dual-centres': 'shared midpoint replacements and dual E7 centres; exact coordinate replay',
         'dim36-ct-nonlocal': 'Nonlocal Coxeter–Todd phase rebuild; two exact integer replays',
+        'dim37-qr-flat-repack': 'QR 12-flat phase repacking',
         'dim37-qr-radical-families': 'QR compression and radical support packing; exact changed-pair proof',
         'dim37-qr-shared-stars': 'QR compression and shared signed-root cuts; exact sparse geometry',
         'dim38-qr-octad-switches': 'Unchanged QR fibres, ten octad switches and a verified signed star/root trade',
@@ -2450,6 +2453,8 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
+    out.append('22 November 2026: a 448-point 12-flat repacking replaces 384 octad phases and gives 544538 in 37D (+64). [Exact replay](verifications/improved/dim37-qr-flat-repack/).')
+    out.append('')
     out.append('19 November 2026: 168 signed six-support families and two unit poles give 544474 in 37D (+10,610 over the original QR construction). [Exact replays](verifications/improved/dim37-qr-radical-families/).')
     out.append('19 November 2026: shared signed-root cuts and a seven-site layer give 536440 in 37D (+2,576). [Exact replay](verifications/improved/dim37-qr-shared-stars/).')
     out.append('20 November 2026: 27D section and rational kernel give 201204 in 26D, 12 above Takhanov. [Exact replay](verifications/improved/dim26-section-rational-kernel/).')
