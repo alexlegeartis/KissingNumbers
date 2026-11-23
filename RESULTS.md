@@ -2,6 +2,8 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Signed sparse shelves and a 24-cell head on 94 affine hyperplanes raise the verified kissing lower bounds to **448,201,606 in 67D** and **479,699,848 in 68D**, gains of 1.33% and 1.50% over the preceding repository constructions. [Exact replay](verifications/improved/dim63-68-affine-hyperplane-heads/).
+
 23 November 2026 — Support-specific Hamming codes allow signed supports to overlap in 9 or 10 coordinates. The new bounds in 63–67D include **216,972,548** in 63D and **442,334,086** in 67D. [Exact replay](verifications/improved/dim63-67-signed-overlap/).
 
 23 November 2026 — Internal weight-12 tags strengthen the 63D, 64D, and 66D shells. A three-cell BCH polar layer and the new equator bring 65D to **413,985,666** (+196,608). [Exact replay](verifications/improved/dim63-66-internal-tags-bch/).
@@ -272,12 +274,12 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 60 | 52 416 841 | **58 665 998** | 1.12 | `classes` | [Common-class 48-frame and signed tail](verifications/improved/dim60-p48-frame48-tail/) |
 | 61 | 52 417 154 | **91 038 762** | 1.74 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
 | 62 | 52 417 932 | **150 561 804** | 2.87 | `codes` | [Dense code and its sparse shells](verifications/improved/dim62-67-rm2-selfsparse/) |
-| 63 | 52 418 564 | **216 972 548** | 4.14 | `codes` | [Support-specific Hamming sign codes](verifications/improved/dim63-67-signed-overlap/) |
-| 64 | 331 737 984 | **418 347 904** | 1.26 | `codes` | [Support-specific Hamming sign codes](verifications/improved/dim63-67-signed-overlap/) |
-| 65 | 331 737 986 | **418 741 122** | 1.26 | `codes` | [Support-specific Hamming sign codes](verifications/improved/dim63-67-signed-overlap/) |
-| 66 | 331 737 990 | **426 343 300** | 1.29 | `codes` | [Support-specific Hamming sign codes](verifications/improved/dim63-67-signed-overlap/) |
-| 67 | 331 737 996 | **442 334 086** | 1.33 | `codes` | [Support-specific Hamming sign codes](verifications/improved/dim63-67-signed-overlap/) |
-| 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
+| 63 | 52 418 564 | **217 044 228** | 4.14 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
+| 64 | 331 737 984 | **418 478 976** | 1.26 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
+| 65 | 331 737 986 | **418 874 240** | 1.26 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
+| 66 | 331 737 990 | **429 011 844** | 1.29 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
+| 67 | 331 737 996 | **448 201 606** | 1.35 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
+| 68 | 331 737 984 | **479 699 848** | 1.45 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 151 808** | 4.10 | `heads` | [Mixed Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-mixed-a2-normals/) |
 | 71 | 331 737 984 | **2 623 656 288** | 7.91 | `heads` | [Single-block Γ72 refill](verifications/improved/dim71-gamma72-single-block-refill/) |
@@ -287,12 +289,12 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 76 | 6 218 175 624 | **6 221 459 976** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 77 | 6 218 175 640 | **6 222 013 132** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
 | 78 | 6 218 175 672 | **6 223 119 444** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
-| 79 | 6 218 175 726 | **6 224 780 712** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
-| 80 | 6 218 175 840 | **6 228 104 952** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
-| 81 | 6 218 175 906 | **6 228 378 586** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
-| 82 | 6 218 176 110 | **6 228 925 854** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
-| 83 | 6 218 176 204 | **6 229 747 428** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
-| 84 | 6 218 176 441 | **6 231 391 584** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
+| 79 | 6 218 175 726 | **6 224 782 016** | 1.00 | `cosets` | [Half-root shell extensions](verifications/improved/dim79-84-gamma72-half-root-appends/) |
+| 80 | 6 218 175 840 | **6 228 105 432** | 1.00 | `cosets` | [Half-root shell extensions](verifications/improved/dim79-84-gamma72-half-root-appends/) |
+| 81 | 6 218 175 906 | **6 228 379 066** | 1.00 | `cosets` | [Half-root shell extensions](verifications/improved/dim79-84-gamma72-half-root-appends/) |
+| 82 | 6 218 176 110 | **6 228 926 334** | 1.00 | `cosets` | [Half-root shell extensions](verifications/improved/dim79-84-gamma72-half-root-appends/) |
+| 83 | 6 218 176 204 | **6 229 747 908** | 1.00 | `cosets` | [Half-root shell extensions](verifications/improved/dim79-84-gamma72-half-root-appends/) |
+| 84 | 6 218 176 441 | **6 231 392 064** | 1.00 | `cosets` | [Half-root shell extensions](verifications/improved/dim79-84-gamma72-half-root-appends/) |
 | 85 | 6 218 176 754 | **6 235 993 850** | 1.00 | `heads` | [Finer exact Γ72 recurrence](verifications/improved/dim74-85-gamma72-fine-recurrence/) |
 | 86 | 6 218 177 532 | **8 008 552 282** | 1.29 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 87 | 6 218 178 164 | **8 160 988 416** | 1.31 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
@@ -387,9 +389,11 @@ refreshed table, not more search.
 | 59 | `dim59-p48-frame-cube` | verify.py: exact Pless head/owner compatibility and variable-radius tails |
 | 59 | `dim59-p48-pure94` | verify.py: integer inequalities against all inherited tail families |
 | 63–66 | `dim63-66-internal-tags-bch` | verify.py: literal tagged support overlaps, an exact section, and normalized BCH polar separation |
+| 79–84 | `dim79-84-gamma72-half-root-appends` | verify.py: exact rational append geometry and pinned source stock |
+| 63–68 | `dim63-68-affine-hyperplane-heads` | verify.py: exact signed shelves, 24-cell hyperplane codes, and mixed polar heights |
 | 63–67 | `dim63-67-signed-overlap` | verify.py: exact shared-parity overlaps, section and polar separation |
 | 66–67 | `dim66-67-rm2-axial-weight12` | verify.py: literal support overlaps and exact signed axial tags |
-| 65 | `dim65-rm2-polar-lift` | verify.py: exact subcode checks and normalized cross-layer bounds |
+| 65 | `dim65-rm2-polar-lift` | **418 874 240** | 642445.15 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) 
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 63-65 | `dim63-65-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 65–67 | `dim65-67-bch-exterior-caps` | exact extended BCH codes, cap distances, inherited sparse geometry and counts |
@@ -415,7 +419,7 @@ typed by hand. Sources:
 | 18, 25-39 | Cohn's pinned table; 28 and 36-37 use the October 2026 comparisons |
 | 41-46 | Cohn's comparison entries recorded 23 October 2026 |
 | 49-63 | 52 416 000 + tau(k): the direct sum P_48 (+) best k-dimensional lattice. Cohn's table has no entry between 48 and 72. |
-| 64 | Edel-Rains-Sloane 1998: 331 737 984 |
+| 64 | Edel-Rains-Sloane 1998: 331 737 984 | **418 478 976** | 0.00 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) 
 | 65-67 | direct sum of ERS64 and the 1D/2D/3D lattice: 331 737 984 + 2/6/12 |
 | 68-71 | 331 737 984, inherited by monotonicity from dimension 64 (Edel-Rains-Sloane 1998). No table has any entry for 65-71. |
 | 73-91 | 6 218 175 600 + tau(k): the direct sum Gamma_72 (+) best k-dimensional lattice. |

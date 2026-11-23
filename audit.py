@@ -743,6 +743,10 @@ with io.open(os.path.join(IMP, 'dim71-gamma72-single-block-refill', 'pattern.jso
     _row = json.load(_file)
     add(_row['dimension'], _row['lower_bound'], 'dim71-gamma72-single-block-refill', 'verify.py: single-Leech-block replacement of 4600 with 81952')
 
+with io.open(os.path.join(IMP, 'dim79-84-gamma72-half-root-appends', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _row in json.load(_file).items():
+        add(int(_d), int(_row['lower_bound']), 'dim79-84-gamma72-half-root-appends', 'verify.py: exact rational half-root shell append')
+
 with io.open(os.path.join(IMP, 'dim77-84-gamma72-half-root-shells', 'comparisons.json'), encoding='utf-8') as _file:
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim77-84-gamma72-half-root-shells', 'verify.py: half-root lattice and exact convolved shortest shell')
@@ -841,6 +845,10 @@ for _row in _driver.results():
 with io.open(os.path.join(IMP, 'dim65-rm2-polar-lift', 'claims.json'), encoding='utf-8') as _file:
     _row = json.load(_file)
     add(_row['dimension'], _row['lower_bound'], 'dim65-rm2-polar-lift', 'verify.py: exact polar code, distances and norm checks')
+
+with io.open(os.path.join(IMP, 'dim63-68-affine-hyperplane-heads', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim63-68-affine-hyperplane-heads', 'verify.py: signed shelves, affine hyperplane heads, and mixed polar heights')
 
 with io.open(os.path.join(IMP, 'dim63-67-signed-overlap', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
@@ -2711,6 +2719,8 @@ if '--write-results' in sys.argv and not fail:
         'dim59-p48-frame-cube': 'Weighted Pless cube',
         'dim59-p48-pure94': 'Antipodal pure-tail refill',
         'dim63-66-internal-tags-bch': 'Internal tags and BCH polar cells',
+        'dim63-68-affine-hyperplane-heads': 'Affine hyperplanes with 24-cell heads',
+        'dim79-84-gamma72-half-root-appends': 'Half-root shell extensions',
         'dim63-67-signed-overlap': 'Support-specific Hamming sign codes',
         'dim66-67-rm2-axial-weight12': 'Axial weight-12 additions',
         'dim65-rm2-polar-lift': 'Alternating-checksum polar shelves',
@@ -2738,6 +2748,7 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
     out.append("")
+    out.append("23 November 2026 — Signed sparse shelves and a 24-cell head on 94 affine hyperplanes raise the verified kissing lower bounds to **448,201,606 in 67D** and **479,699,848 in 68D**, gains of 1.33% and 1.50% over the preceding repository constructions. [Exact replay](verifications/improved/dim63-68-affine-hyperplane-heads/).")
     out.append("23 November 2026 — Support-specific Hamming codes allow signed supports to overlap in 9 or 10 coordinates. The new bounds in 63–67D include **216,972,548** in 63D and **442,334,086** in 67D. [Exact replay](verifications/improved/dim63-67-signed-overlap/).")
     out.append("")
     out.append("23 November 2026 — Internal weight-12 tags strengthen the 63D, 64D, and 66D shells. A three-cell BCH polar layer and the new equator bring 65D to **413,985,666** (+196,608). [Exact replay](verifications/improved/dim63-66-internal-tags-bch/).")

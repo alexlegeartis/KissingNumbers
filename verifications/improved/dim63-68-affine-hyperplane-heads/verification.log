@@ -1,0 +1,13 @@
+New tagged signed supports 4981
+HEADS checked 5828 sparse guards; 94 hyperplanes; 24 quadratic phases
+HEADS checked 0 sparse guards; 94 hyperplanes; 24 quadratic phases
+extra signed overlap layers 192
+Checked signed overlap edges 31512
+DIM 64 sparse 40414 N 418478976
+DIM 65 sparse 40414 N 418478978
+DIM 66 sparse 45181 N 429011844
+DIM 67 sparse 54363 N 448201606
+DIM 68 sparse 68051 N 479699848
+DIM 63 N 217044228 at 14,46
+POLAR 65 393216 low replacement points and 2048 tall points; remove 2 old poles
+{"lower_bounds": {"63": 217044228, "64": 418478976, "65": 418874240, "66": 429011844, "67": 448201606, "68": 479699848}, "status": "PASS"}
