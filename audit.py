@@ -902,6 +902,9 @@ with io.open(os.path.join(IMP, 'dim64-65-dg-split-amplitudes', 'claims.json'), e
 with io.open(os.path.join(IMP, 'dim65-68-dg-retained-atlas', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim65-68-dg-retained-atlas', 'verify.py: atlas compatibility and rephased support guards')
+with io.open(os.path.join(IMP, 'dim65-dg-three-site-donors', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim65-dg-three-site-donors', 'verify.py: exact three-site donor geometry and inherited rephased support guards')
 with io.open(os.path.join(IMP, 'dim86-90-qr-pless-phase7906', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim86-90-qr-pless-phase7906', 'verify.py: all ternary phase pairs, exact mixed-layer gates and pinned counts')
@@ -2857,6 +2860,7 @@ if '--write-results' in sys.argv and not fail:
         'dim85-gamma72-ze99-tail': 'Zinoviev–Ericson tail with all profiles',
         'dim64-65-dg-split-amplitudes': 'Split-amplitude Delsarte–Goethals donors',
         'dim65-68-dg-retained-atlas': 'Split-amplitude donors with retained hyperplanes',
+        'dim65-dg-three-site-donors': 'Three-site Delsarte–Goethals donors (partly theorem-dependent)',
         'dim86-90-qr-pless-phase7906': 'Larger ternary QR–Pless phases',
         'dim62-dg-three-prefixes': 'Three Delsarte–Goethals spike prefixes',
         'dim62-63-dg-spike-banks': 'Delsarte–Goethals spike banks',
@@ -2907,6 +2911,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("23 November 2026 — Spike-amplified Delsarte–Goethals layers add **982,920** contacts in 60D and **1,474,440** in 61D, for **69,704,624** and **120,324,786** respectively. [Exact replay](verifications/improved/dim60-61-dg-spike-banks/).")
     out.append("23 November 2026 — Replacing the Barnes–Wall tail by the 1,154-point Zinoviev–Ericson code raises **85D to 6,297,176,738** (+2,055,936). [Exact replay](verifications/improved/dim85-gamma72-ze99-tail/).")
     out.append("23 November 2026 — Split-amplitude Delsarte–Goethals replacements raise **64D to 422,673,152** (+4,194,176) and **65D to 422,678,354** (+3,678,080). The 65D four-site count inherits its existing theorem. [Exact replay](verifications/improved/dim64-65-dg-split-amplitudes/).")
+    out.append("23 November 2026 — Three-site Delsarte–Goethals replacements raise **65D to 424,169,298** (+1,310,720). The four-site count retains its theorem dependency. [Exact replay](verifications/improved/dim65-dg-three-site-donors/).")
+    out.append("")
     out.append("23 November 2026 — Replacing the 7,812-word ternary phase code by an exact 7,906-word one raises **86D to 8,009,440,206**, **87D to 8,161,875,776**, **88D to 13,361,878,540**, and **90D to 21,956,420,122**. The QR–Pless construction does not use the Nebe lattice. [Exact replay](verifications/improved/dim86-90-qr-pless-phase7906/).")
     out.append("23 November 2026 — Retaining 44 hyperplanes alongside the split-amplitude donors raises **65D to 422,858,578**, **66D to 432,812,452**, **67D to 451,803,398**, and **68D to 481,928,984**. [Exact replay](verifications/improved/dim65-68-dg-retained-atlas/).")
     out.append("23 November 2026 — Three omitted prefixes give **173,717,908** in 62D (+982,920), replacing the single spike layer. [Exact replay](verifications/improved/dim62-dg-three-prefixes/).")
