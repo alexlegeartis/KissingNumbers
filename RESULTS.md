@@ -1,5 +1,9 @@
 # Results
 
+23 November 2026 — A separate norm-four layer raises **82D to 6,269,102,538** (+14,976) and **83D to 6,278,834,796** (+66,816); the 83D construction uses a perfect matching of the five-cube. [Exact replay](verifications/improved/dim82-83-gamma72-norm4-tail-weave/).
+
+23 November 2026 — An eight-for-six pure-tail exchange raises **59D to 56,969,166** (+2), with all mixed stock unchanged. [Exact replay](verifications/improved/dim59-p48-signed103/).
+
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
 23 November 2026 — Transferring signed support banks between dimensions raises **60D to 68,721,704** (+688,128) and **61D to 118,850,346** (+210,944). [Exact replay](verifications/improved/dim60-61-rm80-guard-transfer/).
@@ -348,7 +352,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 56 | 52 416 240 | **54 267 873** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 57 | 52 416 306 | **54 766 981** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 58 | 52 416 510 | **56 281 695** | 1.07 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
-| 59 | 52 416 604 | **56 969 164** | 1.09 | `classes` | [Signed pure-tail trade](verifications/improved/dim59-p48-signed101/)
+| 59 | 52 416 604 | **56 969 166** | 1.09 | `classes` | [Eight-for-six pure-tail exchange](verifications/improved/dim59-p48-signed103/)
 | 60 | 52 416 841 | **69 704 624** | 1.33 | `classes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
 | 61 | 52 417 154 | **120 324 786** | 2.30 | `codes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
 | 62 | 52 417 932 | **173 717 908** | 3.31 | `codes` | [Three Delsarte–Goethals spike prefixes](verifications/improved/dim62-dg-three-prefixes/) |
@@ -370,8 +374,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 79 | 6 218 175 726 | **6 233 438 398** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
 | 80 | 6 218 175 840 | **6 246 118 720** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
 | 81 | 6 218 175 906 | **6 251 523 810** | 1.01 | `cosets` | [Antipodal support codes as Γ72 tails](verifications/improved/dim81-84-antipodal-tail-codes/) |
-| 82 | 6 218 176 110 | **6 269 087 562** | 1.01 | `cosets` | [Larger signed norm-4+8 packets](verifications/improved/dim82-83-gamma72-signed-apron/)
-| 83 | 6 218 176 204 | **6 278 767 980** | 1.01 | `cosets` | [Larger signed norm-4+8 packets](verifications/improved/dim82-83-gamma72-signed-apron/)
+| 82 | 6 218 176 110 | **6 269 102 538** | 1.01 | `cosets` | [D5 and weighted norm-four tail layer](verifications/improved/dim82-83-gamma72-norm4-tail-weave/)
+| 83 | 6 218 176 204 | **6 278 834 796** | 1.01 | `cosets` | [Five-cube matching tail layer](verifications/improved/dim82-83-gamma72-norm4-tail-weave/)
 | 84 | 6 218 176 441 | **6 292 644 032** | 1.01 | `cosets` | [Signed packets and additional norm-four tails](verifications/improved/dim84-85-gamma72-norm4-tail-weave/)
 | 85 | 6 218 176 754 | **6 297 321 110** | 1.01 | `cosets` | [Signed packets and additional norm-four tails](verifications/improved/dim84-85-gamma72-norm4-tail-weave/)
 | 86 | 6 218 177 532 | **8 009 440 206** | 1.29 | `codes` | [Larger ternary QR–Pless phases](verifications/improved/dim86-90-qr-pless-phase7906/) 
@@ -505,6 +509,8 @@ refreshed table, not more search.
 | 62 | `dim62-dg-three-prefixes` | verify.py: exact three-prefix angular and parity gates |
 | 62–63 | `dim62-63-dg-spike-banks` | verify.py: exact cubic-class spike geometry and short-guard bank overlaps |
 | 62 | `dim62-two-mark-diagonals` | verify.py: exact head geometry and simultaneous parity constraints |
+| 59 | `dim59-p48-signed103` | verify.py: exact eight-for-six pure-tail exchange and inherited interfaces |
+| 82–83 | `dim82-83-gamma72-norm4-tail-weave` | verify.py: exact D5/weighted shell and perfect-matching norm-four tail layers |
 | 84–85 | `dim84-85-gamma72-norm4-tail-weave` | verify.py: exact signed Γ72 packet and orthogonal norm-four tail layers |
 | 84–85 | `dim84-85-all-profiles-append` | verify.py: exact profile intersections and triple component separation |
 | 85 | `dim85-shared-phase-refill` | verify.py: exact shared phase occupancy and separation |
