@@ -12,6 +12,10 @@
 
 23 November 2026 — Split-amplitude Delsarte–Goethals replacements raise **64D to 422,673,152** (+4,194,176) and **65D to 422,678,354** (+3,678,080). The 65D four-site count inherits its existing theorem. [Exact replay](verifications/improved/dim64-65-dg-split-amplitudes/).
 
+23 November 2026 — Retaining 44 hyperplanes alongside the split-amplitude donors raises **65D to 422,858,578**, **66D to 432,812,452**, **67D to 451,803,398**, and **68D to 481,928,984**. [Exact replay](verifications/improved/dim65-68-dg-retained-atlas/).
+
+23 November 2026 — Three omitted prefixes give **173,717,908** in 62D (+982,920), replacing the single spike layer. [Exact replay](verifications/improved/dim62-dg-three-prefixes/).
+
 23 November 2026 — Orthogonal two-mark heads and shared parity checks raise **62D to 172,134,412**, adding **1,854,464** (+1.09%) over the preceding bound. [Exact replay](verifications/improved/dim62-two-mark-diagonals/).
 
 23 November 2026 — Sharing phase occupancy across all three horizontal profiles and reallocating triple groups raises **84D to 6,292,388,112** and **85D to 6,295,120,802**. [Exact replay](verifications/improved/dim84-85-all-profiles-append/).
@@ -325,13 +329,13 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 59 | 52 416 604 | **56 969 157** | 1.09 | `classes` | [Antipodal pure-tail refill](verifications/improved/dim59-p48-pure94/) |
 | 60 | 52 416 841 | **69 704 624** | 1.33 | `classes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
 | 61 | 52 417 154 | **120 324 786** | 2.30 | `codes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
-| 62 | 52 417 932 | **172 734 988** | 3.30 | `codes` | [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) |
+| 62 | 52 417 932 | **173 717 908** | 3.31 | `codes` | [Three Delsarte–Goethals spike prefixes](verifications/improved/dim62-dg-three-prefixes/) |
 | 63 | 52 418 564 | **232 191 236** | 4.43 | `codes` | [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) |
 | 64 | 331 737 984 | **422 673 152** | 1.27 | `codes` | [Split-amplitude Delsarte–Goethals donors](verifications/improved/dim64-65-dg-split-amplitudes/) |
-| 65 | 331 737 986 | **422 678 354** | 1.27 | `codes` | [Split-amplitude Delsarte–Goethals donors (partly theorem-dependent)](verifications/improved/dim64-65-dg-split-amplitudes/) |
-| 66 | 331 737 990 | **429 290 020** | 1.29 | `codes` | [Grouped four-site designs](verifications/improved/dim65-66-grouped-four-site-designs/) |
-| 67 | 331 737 996 | **448 616 838** | 1.35 | `codes` | [Nested affine face trades](verifications/improved/dim66-68-nested-affine-face-trades/) |
-| 68 | 331 737 984 | **481 044 376** | 1.45 | `codes` | [Nested affine face trades](verifications/improved/dim66-68-nested-affine-face-trades/) |
+| 65 | 331 737 986 | **422 858 578** | 1.27 | `codes` | [Split-amplitude donors with retained hyperplanes (partly theorem-dependent)](verifications/improved/dim65-68-dg-retained-atlas/) |
+| 66 | 331 737 990 | **432 812 452** | 1.30 | `codes` | [Split-amplitude donors with retained hyperplanes](verifications/improved/dim65-68-dg-retained-atlas/) |
+| 67 | 331 737 996 | **451 803 398** | 1.36 | `codes` | [Split-amplitude donors with retained hyperplanes](verifications/improved/dim65-68-dg-retained-atlas/) |
+| 68 | 331 737 984 | **481 928 984** | 1.45 | `codes` | [Split-amplitude donors with retained hyperplanes](verifications/improved/dim65-68-dg-retained-atlas/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 151 808** | 4.10 | `heads` | [Mixed Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-mixed-a2-normals/) |
 | 71 | 331 737 984 | **2 623 656 288** | 7.91 | `heads` | [Single-block Γ72 refill](verifications/improved/dim71-gamma72-single-block-refill/) |
@@ -448,7 +452,7 @@ refreshed table, not more search.
 | 77–84 | `dim77-84-gamma72-half-root-rephased` | verify.py: exact rephased half-root and rational append checks |
 | 79–84 | `dim79-84-gamma72-half-root-appends` | verify.py: exact rational append geometry and pinned source stock |
 | 65–68 | `dim65-68-complete-hyperplane-atlas` | verify.py: full affine atlas with exact parity guards and four-site stock |
-| 65 | `dim65-optimal-quadruple-layer` | **422 678 354** | 1.27 || [Split-amplitude Delsarte–Goethals donors (partly theorem-dependent)](verifications/improved/dim64-65-dg-split-amplitudes/) 
+| 65 | `dim65-optimal-quadruple-layer` | **422 858 578** | 1.27 || [Split-amplitude donors with retained hyperplanes (partly theorem-dependent)](verifications/improved/dim65-68-dg-retained-atlas/) 
 | 65–66 | `dim65-66-grouped-four-site-designs` | verify.py: grouped four-site designs and exact predecessor replay |
 | 66–68 | `dim66-68-nested-affine-face-trades` | verify.py: exact affine face trades and complete predecessor replay |
 | 36 | `dim36-ct-pocket-trade` | verify.py: exact root-phase pocket trades and Gram replay |
@@ -465,8 +469,10 @@ refreshed table, not more search.
 | 60–61 | `dim60-61-dg-spike-banks` | verify.py: exact DG spike angles and affine-prefix counts |
 | 85 | `dim85-gamma72-ze99-tail` | verify.py: exact algebraic tail Gram and full horizontal profile replay |
 | 64–65 | `dim64-65-dg-split-amplitudes` | verify.py: exact dense replacements and rephased support guards |
+| 65–68 | `dim65-68-dg-retained-atlas` | verify.py: atlas compatibility and rephased support guards |
+| 62 | `dim62-dg-three-prefixes` | verify.py: exact three-prefix angular and parity gates |
 | 62–63 | `dim62-63-dg-spike-banks` | verify.py: exact cubic-class spike geometry and short-guard bank overlaps |
-| 62 | `dim62-two-mark-diagonals` | **172 734 988** | 3.30 || [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) 
+| 62 | `dim62-two-mark-diagonals` | **173 717 908** | 3.31 || [Three Delsarte–Goethals spike prefixes](verifications/improved/dim62-dg-three-prefixes/) 
 | 84–85 | `dim84-85-all-profiles-append` | verify.py: exact profile intersections and triple component separation |
 | 85 | `dim85-shared-phase-refill` | **6 297 176 738** | 1.01 || [Zinoviev–Ericson tail with all profiles](verifications/improved/dim85-gamma72-ze99-tail/) 
 | 60–61 | `dim60-61-rm80-puncture` | verify_extra.py: exact simultaneous rephasing and dense–sparse contact gates |
@@ -479,7 +485,7 @@ refreshed table, not more search.
 | 63–68 | `dim63-68-affine-hyperplane-heads` | verify.py: exact signed shelves, 24-cell hyperplane codes, and mixed polar heights |
 | 63–67 | `dim63-67-signed-overlap` | verify.py: exact shared-parity overlaps, section and polar separation |
 | 66–67 | `dim66-67-rm2-axial-weight12` | verify.py: literal support overlaps and exact signed axial tags |
-| 65 | `dim65-rm2-polar-lift` | **422 678 354** | 1.27 || [Split-amplitude Delsarte–Goethals donors (partly theorem-dependent)](verifications/improved/dim64-65-dg-split-amplitudes/) 
+| 65 | `dim65-rm2-polar-lift` | **422 858 578** | 1.27 || [Split-amplitude donors with retained hyperplanes (partly theorem-dependent)](verifications/improved/dim65-68-dg-retained-atlas/) 
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 63-65 | `dim63-65-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 65–67 | `dim65-67-bch-exterior-caps` | exact extended BCH codes, cap distances, inherited sparse geometry and counts |

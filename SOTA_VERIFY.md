@@ -12,6 +12,10 @@
 
 23 November 2026 — Split-amplitude Delsarte–Goethals replacements raise **64D to 422,673,152** (+4,194,176) and **65D to 422,678,354** (+3,678,080). The 65D four-site count inherits its existing theorem. [Exact replay](verifications/improved/dim64-65-dg-split-amplitudes/).
 
+23 November 2026 — Retaining 44 hyperplanes alongside the split-amplitude donors raises **65D to 422,858,578**, **66D to 432,812,452**, **67D to 451,803,398**, and **68D to 481,928,984**. [Exact replay](verifications/improved/dim65-68-dg-retained-atlas/).
+
+23 November 2026 — Three omitted prefixes give **173,717,908** in 62D (+982,920), replacing the single spike layer. [Exact replay](verifications/improved/dim62-dg-three-prefixes/).
+
 23 November 2026 — Orthogonal two-mark heads and shared parity checks raise **62D to 172,134,412**, adding **1,854,464** (+1.09%) over the preceding bound. [Exact replay](verifications/improved/dim62-two-mark-diagonals/).
 
 23 November 2026 — Sharing phase occupancy across all three horizontal profiles and reallocating triple groups raises **84D to 6,292,388,112** and **85D to 6,295,120,802**. [Exact replay](verifications/improved/dim84-85-all-profiles-append/).

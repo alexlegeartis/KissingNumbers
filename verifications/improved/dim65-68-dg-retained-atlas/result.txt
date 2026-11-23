@@ -1,0 +1,10 @@
+New tagged signed supports 4981
+HEAD assignment backtracks 26
+HEADS checked 2728 sparse guards; 44 hyperplanes; 24 quadratic phases
+extra signed overlap layers 416
+Checked signed overlap edges 31512
+ATLAS 65 40414 180224
+ATLAS 66 45181 360448
+ATLAS 67 54363 540672
+ATLAS 68 68275 2162688
+{"lower_bounds": {"65": 422858578, "66": 432812452, "67": 451803398, "68": 481928984}, "status": "PASS"}
