@@ -1,0 +1,5 @@
+Complete predecessor replay PASS
+DIM 66: four-site stock 11088; gain 10240; N 429284740
+DIM 67: four-site stock 11792; gain 20480; N 448616838
+DIM 68: four-site stock 12529; gain 30720; N 481044376
+{"lower_bounds": {"66": 429284740, "67": 448616838, "68": 481044376}, "status": "PASS"}

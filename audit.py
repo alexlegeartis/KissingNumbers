@@ -854,6 +854,10 @@ with io.open(os.path.join(IMP, 'dim65-rm2-polar-lift', 'claims.json'), encoding=
     _row = json.load(_file)
     add(_row['dimension'], _row['lower_bound'], 'dim65-rm2-polar-lift', 'verify.py: exact polar code, distances and norm checks')
 
+with io.open(os.path.join(IMP, 'dim66-68-nested-affine-face-trades', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim66-68-nested-affine-face-trades', 'verify.py: exact affine face trades and complete predecessor replay')
+
 with io.open(os.path.join(IMP, 'dim65-68-complete-hyperplane-atlas', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim65-68-complete-hyperplane-atlas', 'verify.py: complete affine hyperplanes and four-site XOR matching')
@@ -2737,6 +2741,7 @@ if '--write-results' in sys.argv and not fail:
         'dim59-p48-pure94': 'Antipodal pure-tail refill',
         'dim63-66-internal-tags-bch': 'Internal tags and BCH polar cells',
         'dim65-68-complete-hyperplane-atlas': 'All 126 affine hyperplanes with 24-cell heads',
+        'dim66-68-nested-affine-face-trades': 'Nested affine face trades',
         'dim77-79-gamma72-seven-charts': 'Seven-chart Γ72 tail fibres',
         'dim63-68-affine-hyperplane-heads': 'Affine hyperplanes with 24-cell heads',
         'dim77-84-gamma72-half-root-rephased': 'Rephased half-root shell and exact appends',
@@ -2768,6 +2773,7 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
     out.append("")
+    out.append("23 November 2026 — Nested affine face trades give **429,284,740 in 66D**, **448,616,838 in 67D**, and **481,044,376 in 68D**. [Exact replay](verifications/improved/dim66-68-nested-affine-face-trades/).")
     out.append("23 November 2026 — The complete 126-hyperplane atlas gives **481,013,656 in 68D**. An independent seven-chart Γ72 construction raises the bounds in 77–79D, including **6,226,104,558 in 79D**. [Atlas replay](verifications/improved/dim65-68-complete-hyperplane-atlas/) · [Seven-chart replay](verifications/improved/dim77-79-gamma72-seven-charts/). Two complete trine fibres give **502,929 in 36D**. [36D replay](verifications/improved/dim36-ct-double-trine/).")
     out.append("23 November 2026 — Signed sparse shelves and a 24-cell head on 94 affine hyperplanes raise the verified kissing lower bounds to **448,201,606 in 67D** and **479,699,848 in 68D**, gains of 1.33% and 1.50% over the preceding repository constructions. [Exact replay](verifications/improved/dim63-68-affine-hyperplane-heads/).")
     out.append("23 November 2026 — Support-specific Hamming codes allow signed supports to overlap in 9 or 10 coordinates. The new bounds in 63–67D include **216,972,548** in 63D and **442,334,086** in 67D. [Exact replay](verifications/improved/dim63-67-signed-overlap/).")

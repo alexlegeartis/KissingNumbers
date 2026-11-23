@@ -2,6 +2,8 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Nested affine face trades give **429,284,740 in 66D**, **448,616,838 in 67D**, and **481,044,376 in 68D**. [Exact replay](verifications/improved/dim66-68-nested-affine-face-trades/).
+
 23 November 2026 — The complete 126-hyperplane atlas gives **481,013,656 in 68D**. An independent seven-chart Γ72 construction raises the bounds in 77–79D, including **6,226,104,558 in 79D**. [Atlas replay](verifications/improved/dim65-68-complete-hyperplane-atlas/) · [Seven-chart replay](verifications/improved/dim77-79-gamma72-seven-charts/). Two complete trine fibres give **502,929 in 36D**. [36D replay](verifications/improved/dim36-ct-double-trine/).
 
 23 November 2026 — Signed sparse shelves and a 24-cell head on 94 affine hyperplanes raise the verified kissing lower bounds to **448,201,606 in 67D** and **479,699,848 in 68D**, gains of 1.33% and 1.50% over the preceding repository constructions. [Exact replay](verifications/improved/dim63-68-affine-hyperplane-heads/).
