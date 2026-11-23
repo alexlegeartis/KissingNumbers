@@ -860,6 +860,9 @@ with io.open(os.path.join(IMP, 'dim36-ct-pocket-trade', 'claims.json'), encoding
 with io.open(os.path.join(IMP, 'dim65-optimal-quadruple-layer', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim65-optimal-quadruple-layer', 'verify.py: exact composition with cited quadruple packing theorem')
+with io.open(os.path.join(IMP, 'dim80-gamma72-partial-fibres', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim80-gamma72-partial-fibres', 'verify.py: exact partial-shell clipping in seven charts')
 with io.open(os.path.join(IMP, 'dim65-66-grouped-four-site-designs', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim65-66-grouped-four-site-designs', 'verify.py: grouped four-site designs and exact predecessor replay')
@@ -2752,6 +2755,7 @@ if '--write-results' in sys.argv and not fail:
         'dim65-68-complete-hyperplane-atlas': 'All 126 affine hyperplanes with 24-cell heads',
         'dim36-ct-pocket-trade': 'Coxeter–Todd pocket trades',
         'dim65-optimal-quadruple-layer': 'Optimal quadruple layer (existence proof)',
+        'dim80-gamma72-partial-fibres': 'Clipped Γ72–E8 fibres',
         'dim65-66-grouped-four-site-designs': 'Grouped four-site designs',
         'dim66-68-nested-affine-face-trades': 'Nested affine face trades',
         'dim77-79-gamma72-seven-charts': 'Seven-chart Γ72 tail fibres',
@@ -2784,6 +2788,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("# Results")
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
+    out.append("")
+    out.append("23 November 2026 — Clipping only the blocked portions of twelve minimum-depth fibres gives **6,228,431,712 in 80D**. [Exact replay](verifications/improved/dim80-gamma72-partial-fibres/).")
     out.append("")
     out.append("23 November 2026 — Coxeter–Todd pocket trades and spare-block refills raise **36D to 503,548**. A cited optimal quadruple design raises **65D to 419,000,274**. [36D exact replay](verifications/improved/dim36-ct-pocket-trade/) · [65D existence proof](verifications/improved/dim65-optimal-quadruple-layer/).")
     out.append("")

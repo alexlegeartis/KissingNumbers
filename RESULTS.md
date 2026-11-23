@@ -2,6 +2,8 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Clipping only the blocked portions of twelve minimum-depth fibres gives **6,228,431,712 in 80D**. [Exact replay](verifications/improved/dim80-gamma72-partial-fibres/).
+
 23 November 2026 — Coxeter–Todd pocket trades and spare-block refills raise **36D to 503,548**. A cited optimal quadruple design raises **65D to 419,000,274**. [36D exact replay](verifications/improved/dim36-ct-pocket-trade/) · [65D existence proof](verifications/improved/dim65-optimal-quadruple-layer/).
 
 23 November 2026 — Grouped four-site designs raise **65D to 419,000,034** and **66D to 429,290,020**. The 66D layer attains the exact four-site alphabet cap. [Exact replay](verifications/improved/dim65-66-grouped-four-site-designs/).
@@ -298,7 +300,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 77 | 6 218 175 640 | **6 222 276 760** | 1.00 | `cosets` | [Seven-chart Γ72 tail fibres](verifications/improved/dim77-79-gamma72-seven-charts/) |
 | 78 | 6 218 175 672 | **6 223 917 240** | 1.00 | `cosets` | [Seven-chart Γ72 tail fibres](verifications/improved/dim77-79-gamma72-seven-charts/) |
 | 79 | 6 218 175 726 | **6 226 104 558** | 1.00 | `cosets` | [Seven-chart Γ72 tail fibres](verifications/improved/dim77-79-gamma72-seven-charts/) |
-| 80 | 6 218 175 840 | **6 228 106 200** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
+| 80 | 6 218 175 840 | **6 228 431 712** | 1.00 | `cosets` | [Clipped Γ72–E8 fibres](verifications/improved/dim80-gamma72-partial-fibres/) |
 | 81 | 6 218 175 906 | **6 228 379 802** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
 | 82 | 6 218 176 110 | **6 228 927 150** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
 | 83 | 6 218 176 204 | **6 229 748 820** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
@@ -397,6 +399,7 @@ refreshed table, not more search.
 | 59 | `dim59-p48-frame-cube` | verify.py: exact Pless head/owner compatibility and variable-radius tails |
 | 59 | `dim59-p48-pure94` | verify.py: integer inequalities against all inherited tail families |
 | 63–66 | `dim63-66-internal-tags-bch` | verify.py: literal tagged support overlaps, an exact section, and normalized BCH polar separation |
+| 80 | `dim80-gamma72-partial-fibres` | verify.py: exact partial-shell clipping in seven charts |
 | 77–84 | `dim77-84-gamma72-half-root-rephased` | verify.py: exact rephased half-root and rational append checks |
 | 79–84 | `dim79-84-gamma72-half-root-appends` | verify.py: exact rational append geometry and pinned source stock |
 | 65–68 | `dim65-68-complete-hyperplane-atlas` | verify.py: full affine atlas with exact parity guards and four-site stock |

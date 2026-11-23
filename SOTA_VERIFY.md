@@ -2,6 +2,8 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Clipping only the blocked portions of twelve minimum-depth fibres gives **6,228,431,712 in 80D**. [Exact replay](verifications/improved/dim80-gamma72-partial-fibres/).
+
 23 November 2026 — Coxeter–Todd pocket trades and spare-block refills raise **36D to 503,548**. A cited optimal quadruple design raises **65D to 419,000,274**. [36D exact replay](verifications/improved/dim36-ct-pocket-trade/) · [65D existence proof](verifications/improved/dim65-optimal-quadruple-layer/).
 
 23 November 2026 — Grouped four-site designs raise **65D to 419,000,034** and **66D to 429,290,020**. The 66D layer attains the exact four-site alphabet cap. [Exact replay](verifications/improved/dim65-66-grouped-four-site-designs/).
