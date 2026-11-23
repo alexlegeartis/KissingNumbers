@@ -18,6 +18,8 @@
 
 23 November 2026 — A signed pure-tail trade raises **59D to 56,969,164** (+7), keeping all weighted and mixed families. [Exact replay](verifications/improved/dim59-p48-signed101/).
 
+23 November 2026 — Independent packet choices for each signed tail raise **82D to 6,269,084,390** (+16,144) and **83D to 6,278,756,940** (+10,760). [Exact replay](verifications/improved/dim82-83-gamma72-signed-packets/).
+
 23 November 2026 — Three-site donors on a tail diagonal raise **66D to 434,139,558**, **67D to 453,138,696**, and **68D to 483,338,010** (gains of +1,327,106, +1,335,298, and +1,409,026). Two additional atlas hyperplanes and the unused coordinate poles raise **65D to 424,177,492**. [Exact replay](verifications/improved/dim65-68-dg-diagonal-triples/).
 
 23 November 2026 — Three-site Delsarte–Goethals replacements raise **65D to 424,169,298** (+1,310,720). The four-site count retains its theorem dependency. [Exact replay](verifications/improved/dim65-dg-three-site-donors/).
@@ -360,8 +362,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 79 | 6 218 175 726 | **6 233 438 398** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
 | 80 | 6 218 175 840 | **6 246 118 720** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
 | 81 | 6 218 175 906 | **6 251 523 810** | 1.01 | `cosets` | [Antipodal support codes as Γ72 tails](verifications/improved/dim81-84-antipodal-tail-codes/) |
-| 82 | 6 218 176 110 | **6 269 068 246** | 1.01 | `cosets` | [Complete antipodal 510- and 604-point tails](verifications/improved/dim82-83-gamma72-antipodal-tails/) |
-| 83 | 6 218 176 204 | **6 278 746 180** | 1.01 | `cosets` | [Complete antipodal 510- and 604-point tails](verifications/improved/dim82-83-gamma72-antipodal-tails/) |
+| 82 | 6 218 176 110 | **6 269 084 390** | 1.01 | `cosets` | [Independent signed Γ72 packets](verifications/improved/dim82-83-gamma72-signed-packets/)
+| 83 | 6 218 176 204 | **6 278 756 940** | 1.01 | `cosets` | [Independent signed Γ72 packets](verifications/improved/dim82-83-gamma72-signed-packets/)
 | 84 | 6 218 176 441 | **6 292 388 112** | 1.01 | `cosets` | [Shared phases and horizontal triple components](verifications/improved/dim84-85-all-profiles-append/) |
 | 85 | 6 218 176 754 | **6 297 176 738** | 1.01 | `cosets` | [Zinoviev–Ericson tail with all profiles](verifications/improved/dim85-gamma72-ze99-tail/) |
 | 86 | 6 218 177 532 | **8 009 440 206** | 1.29 | `codes` | [Larger ternary QR–Pless phases](verifications/improved/dim86-90-qr-pless-phase7906/) 
@@ -485,6 +487,7 @@ refreshed table, not more search.
 | 65–68 | `dim65-68-dg-retained-atlas` | verify.py: atlas compatibility and rephased support guards |
 | 66–68 | `dim66-68-dg-d4-tail-donors` | verify.py: exact cubic, sparse parity and atlas clearance |
 | 59 | `dim59-p48-signed101` | verify.py: exact signed pure-tail separation and inherited interfaces |
+| 82–83 | `dim82-83-gamma72-signed-packets` | verify.py: exact signed-tail Gram and horizontal packet replay |
 | 65–68 | `dim65-68-dg-diagonal-triples` | verify.py: exact tagged-bank parity, atlas refill, and diagonal-profile gates |
 | 65 | `dim65-dg-three-site-donors` | verify.py: exact three-site donor geometry and inherited rephased support guards |
 | 86–88, 90 | `dim86-90-qr-pless-phase7906` | verify.py: all ternary phase pairs, exact mixed-layer gates and pinned counts |

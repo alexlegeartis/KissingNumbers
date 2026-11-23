@@ -902,6 +902,9 @@ with io.open(os.path.join(IMP, 'dim64-65-dg-split-amplitudes', 'claims.json'), e
 with io.open(os.path.join(IMP, 'dim65-68-dg-retained-atlas', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim65-68-dg-retained-atlas', 'verify.py: atlas compatibility and rephased support guards')
+with io.open(os.path.join(IMP, 'dim82-83-gamma72-signed-packets', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim82-83-gamma72-signed-packets', 'verify.py: exact signed-tail Gram and horizontal packet replay')
 with io.open(os.path.join(IMP, 'dim82-83-gamma72-antipodal-tails', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim82-83-gamma72-antipodal-tails', 'verify.py: exact algebraic tail Gram and all three horizontal profile replays')
@@ -2874,6 +2877,7 @@ if '--write-results' in sys.argv and not fail:
         'dim64-65-dg-split-amplitudes': 'Split-amplitude Delsarte–Goethals donors',
         'dim65-68-dg-retained-atlas': 'Split-amplitude donors with retained hyperplanes',
         'dim82-83-gamma72-antipodal-tails': 'Complete antipodal 510- and 604-point tails',
+        'dim82-83-gamma72-signed-packets': 'Independent signed Γ72 packets',
         'dim65-68-dg-diagonal-triples': 'Three-site donors with a 46-hyperplane atlas',
         'dim66-68-dg-d4-tail-donors': 'Delsarte–Goethals donors on D4 tail roots',
         'dim65-dg-three-site-donors': 'Three-site Delsarte–Goethals donors (partly theorem-dependent)',
@@ -2932,6 +2936,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("23 November 2026 — Delsarte–Goethals layers on D4 tail roots raise **66D to 434,387,366**, **67D to 454,068,488**, and **68D to 485,390,106** (+247,808, +929,792, and +2,052,096). [Exact replay](verifications/improved/dim66-68-dg-d4-tail-donors/).")
     out.append("")
     out.append("23 November 2026 — A signed pure-tail trade raises **59D to 56,969,164** (+7), keeping all weighted and mixed families. [Exact replay](verifications/improved/dim59-p48-signed101/).")
+    out.append("")
+    out.append("23 November 2026 — Independent packet choices for each signed tail raise **82D to 6,269,084,390** (+16,144) and **83D to 6,278,756,940** (+10,760). [Exact replay](verifications/improved/dim82-83-gamma72-signed-packets/).")
     out.append("")
     out.append("23 November 2026 — Three-site donors on a tail diagonal raise **66D to 434,139,558**, **67D to 453,138,696**, and **68D to 483,338,010** (gains of +1,327,106, +1,335,298, and +1,409,026). Two additional atlas hyperplanes and the unused coordinate poles raise **65D to 424,177,492**. [Exact replay](verifications/improved/dim65-68-dg-diagonal-triples/).")
     out.append("")
