@@ -2,6 +2,8 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — The complete 126-hyperplane atlas gives **481,013,656 in 68D**. An independent seven-chart Γ72 construction raises the bounds in 77–79D, including **6,226,104,558 in 79D**. [Atlas replay](verifications/improved/dim65-68-complete-hyperplane-atlas/) · [Seven-chart replay](verifications/improved/dim77-79-gamma72-seven-charts/). Two complete trine fibres give **502,929 in 36D**. [36D replay](verifications/improved/dim36-ct-double-trine/).
+
 23 November 2026 — Signed sparse shelves and a 24-cell head on 94 affine hyperplanes raise the verified kissing lower bounds to **448,201,606 in 67D** and **479,699,848 in 68D**, gains of 1.33% and 1.50% over the preceding repository constructions. [Exact replay](verifications/improved/dim63-68-affine-hyperplane-heads/).
 
 23 November 2026 — Support-specific Hamming codes allow signed supports to overlap in 9 or 10 coordinates. The new bounds in 63–67D include **216,972,548** in 63D and **442,334,086** in 67D. [Exact replay](verifications/improved/dim63-67-signed-overlap/).
@@ -249,7 +251,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 33 | 370 240 | **370 528** | 1.00 | `codes` | [joint repacking of individual signed octads, stars and roots](verifications/improved/dim33-joint-signed-refill/) |
 | 34 | 390 980 | **391 004** | 1.00 | `heads` | [coordinated octad switches and root-star exchanges; two exact proofs](verifications/improved/dim34-octad-switches/) |
 | 35 | 415 308 | **415 360** | 1.00 | `heads` | [joint signed-star and root repacking](verifications/improved/dim35-joint-star-root/) |
-| 36 | 484 760 | **502 902** | 1.04 | `cosets` | [Coxeter–Todd triangle switches and phase refill with an explicit changed-point audit](verifications/improved/dim36-ct-triangle-refill/) |
+| 36 | 484 760 | **502 929** | 1.04 | `cosets` | [Two full Coxeter–Todd trine fibres](verifications/improved/dim36-ct-double-trine/) |
 | 37 | 500 008 | **544 666** | 1.09 | `codes` | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) |
 | 38 | 566 652 | **652 076** | 1.15 | `codes` | [QR offsets, ten octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) |
 | 39 | 755 988 | **783 468** | 1.03 | `codes` | [QR fibres with three-coordinate heads and projected support checks](verifications/improved/dim39-qr-three-coordinate-heads/) |
@@ -276,10 +278,10 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 62 | 52 417 932 | **150 561 804** | 2.87 | `codes` | [Dense code and its sparse shells](verifications/improved/dim62-67-rm2-selfsparse/) |
 | 63 | 52 418 564 | **217 044 228** | 4.14 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
 | 64 | 331 737 984 | **418 478 976** | 1.26 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
-| 65 | 331 737 986 | **418 874 240** | 1.26 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
-| 66 | 331 737 990 | **429 011 844** | 1.29 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
-| 67 | 331 737 996 | **448 201 606** | 1.35 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
-| 68 | 331 737 984 | **479 699 848** | 1.45 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
+| 65 | 331 737 986 | **418 995 074** | 1.26 | `codes` | [All 126 affine hyperplanes with 24-cell heads](verifications/improved/dim65-68-complete-hyperplane-atlas/) |
+| 66 | 331 737 990 | **429 274 500** | 1.29 | `codes` | [All 126 affine hyperplanes with 24-cell heads](verifications/improved/dim65-68-complete-hyperplane-atlas/) |
+| 67 | 331 737 996 | **448 596 358** | 1.35 | `codes` | [All 126 affine hyperplanes with 24-cell heads](verifications/improved/dim65-68-complete-hyperplane-atlas/) |
+| 68 | 331 737 984 | **481 013 656** | 1.45 | `codes` | [All 126 affine hyperplanes with 24-cell heads](verifications/improved/dim65-68-complete-hyperplane-atlas/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 151 808** | 4.10 | `heads` | [Mixed Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-mixed-a2-normals/) |
 | 71 | 331 737 984 | **2 623 656 288** | 7.91 | `heads` | [Single-block Γ72 refill](verifications/improved/dim71-gamma72-single-block-refill/) |
@@ -287,9 +289,9 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 74 | 6 218 175 606 | **6 218 995 830** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 75 | 6 218 175 612 | **6 219 816 924** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 76 | 6 218 175 624 | **6 221 459 976** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
-| 77 | 6 218 175 640 | **6 222 013 324** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
-| 78 | 6 218 175 672 | **6 223 119 668** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
-| 79 | 6 218 175 726 | **6 224 782 016** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
+| 77 | 6 218 175 640 | **6 222 276 760** | 1.00 | `cosets` | [Seven-chart Γ72 tail fibres](verifications/improved/dim77-79-gamma72-seven-charts/) |
+| 78 | 6 218 175 672 | **6 223 917 240** | 1.00 | `cosets` | [Seven-chart Γ72 tail fibres](verifications/improved/dim77-79-gamma72-seven-charts/) |
+| 79 | 6 218 175 726 | **6 226 104 558** | 1.00 | `cosets` | [Seven-chart Γ72 tail fibres](verifications/improved/dim77-79-gamma72-seven-charts/) |
 | 80 | 6 218 175 840 | **6 228 106 200** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
 | 81 | 6 218 175 906 | **6 228 379 802** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
 | 82 | 6 218 176 110 | **6 228 927 150** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
@@ -371,7 +373,7 @@ refreshed table, not more search.
 | 34 | `dim34-octad-switches` | Two exact replays of four octad switches and the final 391,004 directions |
 | 32-35 | `dim32-35-signed-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 35 | `dim35-joint-star-root` | Integer replay of 415,360 directions with 262 stars and 2,158 signed roots |
-| 36 | `dim36-ct-triangle-refill` | verify.py and verify_expanded.py: exact triangle switches and changed-point geometry |
+| 36 | `dim36-ct-triangle-refill` | **502 929** | 13970.25 | `cosets` | [Two full Coxeter–Todd trine fibres](verifications/improved/dim36-ct-double-trine/) 
 | 37 | `dim37-qr-flat-repack` | verify.py: exact signed pairs and inherited-layer interfaces; composes with the radical-family proof |
 | 38 | `dim38-qr-octad-switches` | verify.py and audit.py: exact replay of 31 dense fibres, ten new octad supports, 288 stars and the signed-root ledger |
 | 39 | `dim39-deformed-orbits` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
@@ -391,10 +393,13 @@ refreshed table, not more search.
 | 63–66 | `dim63-66-internal-tags-bch` | verify.py: literal tagged support overlaps, an exact section, and normalized BCH polar separation |
 | 77–84 | `dim77-84-gamma72-half-root-rephased` | verify.py: exact rephased half-root and rational append checks |
 | 79–84 | `dim79-84-gamma72-half-root-appends` | verify.py: exact rational append geometry and pinned source stock |
+| 65–68 | `dim65-68-complete-hyperplane-atlas` | verify.py: full affine atlas with exact parity guards and four-site stock |
+| 36 | `dim36-ct-double-trine` | verify.py: exact complete trine swap and base checks |
+| 77–79 | `dim77-79-gamma72-seven-charts` | verify.py: exact transported phase and root-tail construction |
 | 63–68 | `dim63-68-affine-hyperplane-heads` | verify.py: exact signed shelves, 24-cell hyperplane codes, and mixed polar heights |
 | 63–67 | `dim63-67-signed-overlap` | verify.py: exact shared-parity overlaps, section and polar separation |
 | 66–67 | `dim66-67-rm2-axial-weight12` | verify.py: literal support overlaps and exact signed axial tags |
-| 65 | `dim65-rm2-polar-lift` | **418 874 240** | 642445.15 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) 
+| 65 | `dim65-rm2-polar-lift` | **418 995 074** | 642630.48 | `codes` | [All 126 affine hyperplanes with 24-cell heads](verifications/improved/dim65-68-complete-hyperplane-atlas/) 
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 63-65 | `dim63-65-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 65–67 | `dim65-67-bch-exterior-caps` | exact extended BCH codes, cap distances, inherited sparse geometry and counts |

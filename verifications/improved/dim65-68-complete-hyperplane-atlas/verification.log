@@ -1,0 +1,13 @@
+Exact Krawtchouk bound 2048
+New tagged signed supports 4981
+HEAD assignment backtracks 164
+HEADS checked 7812 sparse guards; 126 hyperplanes; 24 quadratic phases
+extra signed overlap layers 64
+Checked signed overlap edges 31512
+DIM 64 sparse 40414 four 0 N 418478976
+DIM 65 sparse 40414 four 0 N 418995074
+DIM 66 sparse 45181 four 32 N 429274500
+DIM 67 sparse 54363 four 96 N 448596358
+DIM 68 sparse 67923 four 193 N 481013656
+DIM 63 N 217044228 at 14,46
+{"lower_bounds": {"65": 418995074, "66": 429274500, "67": 448596358, "68": 481013656}, "status": "PASS"}

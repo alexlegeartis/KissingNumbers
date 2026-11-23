@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "dimension": 36,
+  "previous": 502902,
+  "points": 502929,
+  "added": 54,
+  "removed": 27,
+  "exact_new_old_root_products": 5356692,
+  "new_base_family_checks": 77490
+}
