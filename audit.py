@@ -893,6 +893,9 @@ with io.open(os.path.join(IMP, 'dim60-61-rm80-guard-transfer', 'claims.json'), e
 with io.open(os.path.join(IMP, 'dim60-61-dg-spike-banks', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim60-61-dg-spike-banks', 'verify.py: exact DG spike angles and affine-prefix counts')
+with io.open(os.path.join(IMP, 'dim85-gamma72-signed-apron', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim85-gamma72-signed-apron', 'verify.py: exact signed Γ72 and Zinoviev–Ericson tail packets')
 with io.open(os.path.join(IMP, 'dim85-gamma72-ze99-tail', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim85-gamma72-ze99-tail', 'verify.py: exact algebraic tail Gram and full horizontal profile replay')
@@ -902,12 +905,18 @@ with io.open(os.path.join(IMP, 'dim64-65-dg-split-amplitudes', 'claims.json'), e
 with io.open(os.path.join(IMP, 'dim65-68-dg-retained-atlas', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim65-68-dg-retained-atlas', 'verify.py: atlas compatibility and rephased support guards')
+with io.open(os.path.join(IMP, 'dim82-83-gamma72-signed-apron', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim82-83-gamma72-signed-apron', 'verify.py: exact signed norm-4+8 packet replacement and counts')
 with io.open(os.path.join(IMP, 'dim82-83-gamma72-signed-packets', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim82-83-gamma72-signed-packets', 'verify.py: exact signed-tail Gram and horizontal packet replay')
 with io.open(os.path.join(IMP, 'dim82-83-gamma72-antipodal-tails', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim82-83-gamma72-antipodal-tails', 'verify.py: exact algebraic tail Gram and all three horizontal profile replays')
+with io.open(os.path.join(IMP, 'dim66-68-dg-rephased-banks', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim66-68-dg-rephased-banks', 'verify.py: simultaneous sign guards and exact DG tail clearances')
 with io.open(os.path.join(IMP, 'dim66-68-dg-d4-tail-donors', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim66-68-dg-d4-tail-donors', 'verify.py: exact cubic, sparse parity and atlas clearance')
@@ -2873,12 +2882,15 @@ if '--write-results' in sys.argv and not fail:
         'dim84-85-all-profiles-append': 'Shared phases and horizontal triple components',
         'dim60-61-rm80-guard-transfer': 'Transferred Reed–Muller sign banks',
         'dim60-61-dg-spike-banks': 'Delsarte–Goethals spikes on transferred banks',
+        'dim85-gamma72-signed-apron': 'Independent signed Γ72 norm-4+8 packets',
         'dim85-gamma72-ze99-tail': 'Zinoviev–Ericson tail with all profiles',
         'dim64-65-dg-split-amplitudes': 'Split-amplitude Delsarte–Goethals donors',
         'dim65-68-dg-retained-atlas': 'Split-amplitude donors with retained hyperplanes',
         'dim82-83-gamma72-antipodal-tails': 'Complete antipodal 510- and 604-point tails',
+        'dim82-83-gamma72-signed-apron': 'Larger signed norm-4+8 packets',
         'dim82-83-gamma72-signed-packets': 'Independent signed Γ72 packets',
         'dim65-68-dg-diagonal-triples': 'Three-site donors with a 46-hyperplane atlas',
+        'dim66-68-dg-rephased-banks': 'Rephased sparse banks and off-axis DG donors',
         'dim66-68-dg-d4-tail-donors': 'Delsarte–Goethals donors on D4 tail roots',
         'dim65-dg-three-site-donors': 'Three-site Delsarte–Goethals donors (partly theorem-dependent)',
         'dim86-90-qr-pless-phase7906': 'Larger ternary QR–Pless phases',
@@ -2932,6 +2944,12 @@ if '--write-results' in sys.argv and not fail:
     out.append("23 November 2026 — Replacing the Barnes–Wall tail by the 1,154-point Zinoviev–Ericson code raises **85D to 6,297,176,738** (+2,055,936). [Exact replay](verifications/improved/dim85-gamma72-ze99-tail/).")
     out.append("23 November 2026 — Split-amplitude Delsarte–Goethals replacements raise **64D to 422,673,152** (+4,194,176) and **65D to 422,678,354** (+3,678,080). The 65D four-site count inherits its existing theorem. [Exact replay](verifications/improved/dim64-65-dg-split-amplitudes/).")
     out.append("23 November 2026 — Using complete antipodal small-dimensional tails raises **82D to 6,269,068,246** (+14,289,094) and **83D to 6,278,746,180** (+13,542,662), with the Γ72 carrier unchanged. [Exact replay](verifications/improved/dim82-83-gamma72-antipodal-tails/).")
+    out.append("")
+    out.append("23 November 2026 — Rephasing the overlapping sparse banks and adding off-axis donors raises **66D to 434,471,332**, **67D to 454,416,648**, and **68D to 486,029,082** (+83,966, +348,160 and +638,976). [Exact replay](verifications/improved/dim66-68-dg-rephased-banks/).")
+    out.append("")
+    out.append("23 November 2026 — Choosing the sign of the norm-eight component separately gives **6,269,087,562 in 82D** (+3,172) and **6,278,767,980 in 83D** (+11,040). [Exact replay](verifications/improved/dim82-83-gamma72-signed-apron/).")
+    out.append("")
+    out.append("23 November 2026 — Signed norm-4+8 packets with the Zinoviev–Ericson tail raise **85D to 6,297,207,062** (+30,324). [Exact replay](verifications/improved/dim85-gamma72-signed-apron/).")
     out.append("")
     out.append("23 November 2026 — Delsarte–Goethals layers on D4 tail roots raise **66D to 434,387,366**, **67D to 454,068,488**, and **68D to 485,390,106** (+247,808, +929,792, and +2,052,096). [Exact replay](verifications/improved/dim66-68-dg-d4-tail-donors/).")
     out.append("")

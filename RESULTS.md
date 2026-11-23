@@ -14,6 +14,12 @@
 
 23 November 2026 — Using complete antipodal small-dimensional tails raises **82D to 6,269,068,246** (+14,289,094) and **83D to 6,278,746,180** (+13,542,662), with the Γ72 carrier unchanged. [Exact replay](verifications/improved/dim82-83-gamma72-antipodal-tails/).
 
+23 November 2026 — Rephasing the overlapping sparse banks and adding off-axis donors raises **66D to 434,471,332**, **67D to 454,416,648**, and **68D to 486,029,082** (+83,966, +348,160 and +638,976). [Exact replay](verifications/improved/dim66-68-dg-rephased-banks/).
+
+23 November 2026 — Choosing the sign of the norm-eight component separately gives **6,269,087,562 in 82D** (+3,172) and **6,278,767,980 in 83D** (+11,040). [Exact replay](verifications/improved/dim82-83-gamma72-signed-apron/).
+
+23 November 2026 — Signed norm-4+8 packets with the Zinoviev–Ericson tail raise **85D to 6,297,207,062** (+30,324). [Exact replay](verifications/improved/dim85-gamma72-signed-apron/).
+
 23 November 2026 — Delsarte–Goethals layers on D4 tail roots raise **66D to 434,387,366**, **67D to 454,068,488**, and **68D to 485,390,106** (+247,808, +929,792, and +2,052,096). [Exact replay](verifications/improved/dim66-68-dg-d4-tail-donors/).
 
 23 November 2026 — A signed pure-tail trade raises **59D to 56,969,164** (+7), keeping all weighted and mixed families. [Exact replay](verifications/improved/dim59-p48-signed101/).
@@ -347,9 +353,9 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 63 | 52 418 564 | **232 191 236** | 4.43 | `codes` | [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) |
 | 64 | 331 737 984 | **422 673 152** | 1.27 | `codes` | [Split-amplitude Delsarte–Goethals donors](verifications/improved/dim64-65-dg-split-amplitudes/) |
 | 65 | 331 737 986 | **424 177 492** | 1.28 | `codes` | [Three-site donors with a 46-hyperplane atlas](verifications/improved/dim65-68-dg-diagonal-triples/) |
-| 66 | 331 737 990 | **434 387 366** | 1.31 | `codes` | [Delsarte–Goethals donors on D4 tail roots](verifications/improved/dim66-68-dg-d4-tail-donors/)
-| 67 | 331 737 996 | **454 068 488** | 1.37 | `codes` | [Delsarte–Goethals donors on D4 tail roots](verifications/improved/dim66-68-dg-d4-tail-donors/)
-| 68 | 331 737 984 | **485 390 106** | 1.46 | `codes` | [Delsarte–Goethals donors on D4 tail roots](verifications/improved/dim66-68-dg-d4-tail-donors/)
+| 66 | 331 737 990 | **434 471 332** | 1.31 | `codes` | [Rephased sparse banks and off-axis DG donors](verifications/improved/dim66-68-dg-rephased-banks/)
+| 67 | 331 737 996 | **454 416 648** | 1.37 | `codes` | [Rephased sparse banks and off-axis DG donors](verifications/improved/dim66-68-dg-rephased-banks/)
+| 68 | 331 737 984 | **486 029 082** | 1.47 | `codes` | [Rephased sparse banks and off-axis DG donors](verifications/improved/dim66-68-dg-rephased-banks/)
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 151 808** | 4.10 | `heads` | [Mixed Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-mixed-a2-normals/) |
 | 71 | 331 737 984 | **2 623 656 288** | 7.91 | `heads` | [Single-block Γ72 refill](verifications/improved/dim71-gamma72-single-block-refill/) |
@@ -362,10 +368,10 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 79 | 6 218 175 726 | **6 233 438 398** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
 | 80 | 6 218 175 840 | **6 246 118 720** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
 | 81 | 6 218 175 906 | **6 251 523 810** | 1.01 | `cosets` | [Antipodal support codes as Γ72 tails](verifications/improved/dim81-84-antipodal-tail-codes/) |
-| 82 | 6 218 176 110 | **6 269 084 390** | 1.01 | `cosets` | [Independent signed Γ72 packets](verifications/improved/dim82-83-gamma72-signed-packets/)
-| 83 | 6 218 176 204 | **6 278 756 940** | 1.01 | `cosets` | [Independent signed Γ72 packets](verifications/improved/dim82-83-gamma72-signed-packets/)
+| 82 | 6 218 176 110 | **6 269 087 562** | 1.01 | `cosets` | [Larger signed norm-4+8 packets](verifications/improved/dim82-83-gamma72-signed-apron/)
+| 83 | 6 218 176 204 | **6 278 767 980** | 1.01 | `cosets` | [Larger signed norm-4+8 packets](verifications/improved/dim82-83-gamma72-signed-apron/)
 | 84 | 6 218 176 441 | **6 292 388 112** | 1.01 | `cosets` | [Shared phases and horizontal triple components](verifications/improved/dim84-85-all-profiles-append/) |
-| 85 | 6 218 176 754 | **6 297 176 738** | 1.01 | `cosets` | [Zinoviev–Ericson tail with all profiles](verifications/improved/dim85-gamma72-ze99-tail/) |
+| 85 | 6 218 176 754 | **6 297 207 062** | 1.01 | `cosets` | [Independent signed Γ72 norm-4+8 packets](verifications/improved/dim85-gamma72-signed-apron/)
 | 86 | 6 218 177 532 | **8 009 440 206** | 1.29 | `codes` | [Larger ternary QR–Pless phases](verifications/improved/dim86-90-qr-pless-phase7906/) 
 | 87 | 6 218 178 164 | **8 161 875 776** | 1.31 | `codes` | [Larger ternary QR–Pless phases](verifications/improved/dim86-90-qr-pless-phase7906/) 
 | 88 | 6 218 179 920 | **13 361 878 540** | 2.15 | `codes` | [Larger ternary QR–Pless phases](verifications/improved/dim86-90-qr-pless-phase7906/) 
@@ -452,21 +458,21 @@ refreshed table, not more search.
 | 45-46 | `dim41-46-p48-heads` | verify.py (integer angles and exact ranks; inherited population tables, not a fresh body enumeration) |
 | 49 | `dim49-joint-signed-exchange` | final.py: exact complete signed class geometry |
 | 50-60 | `dim50-60-p48-global-owner-refill` | verify.py: exact changed-class pairs, signed ownership and tetrahedral tail replay |
-| 60 | `dim60-p48-n12-blockers` | **69 704 624** | 1.33 || [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) 
-| 60 | `dim60-p48-frame48-tail` | **69 704 624** | 1.33 || [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) 
+| 60 | `dim60-p48-n12-blockers` | verify.py and audit_angles.py: exact paired latitude and conservative blocker union |
+| 60 | `dim60-p48-frame48-tail` | verify.py and audit_angles.py: frame, exact tail geometry and signed retirement |
 | 62–67 | `dim62-67-rm2-cubic-cosets` | verify.py: two exact cubic-coset checks and sparse-layer transfer |
 | 62–67 | `dim62-67-rm2-selfsparse` | verify.py: two independent code reconstructions, exact sections and translated support shells |
 | 59 | `dim59-p48-frame-cube` | verify.py: exact Pless head/owner compatibility and variable-radius tails |
 | 59 | `dim59-p48-pure94` | verify.py: integer inequalities against all inherited tail families |
 | 63–66 | `dim63-66-internal-tags-bch` | verify.py: literal tagged support overlaps, an exact section, and normalized BCH polar separation |
-| 80 | `dim80-gamma72-partial-fibres` | **6 246 118 720** | 773800.63 |  | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
+| 80 | `dim80-gamma72-partial-fibres` | verify.py: exact partial-shell clipping in seven charts |
 | 81–82 | `dim81-82-gamma72-clipped-sidecars` | verify.py: exact A1/A2 sidecar fibres and inherited shell |
 | 82–84 | `dim82-84-gamma72-full-sidecar` | verify.py: exact cross-chart short shells and D4 sidecar |
 | 77–79 | `dim77-79-gamma72-clipped-fibres` | verify.py: exact D5, E6 and E7 partial-shell clipping |
 | 77–84 | `dim77-84-gamma72-half-root-rephased` | verify.py: exact rephased half-root and rational append checks |
 | 79–84 | `dim79-84-gamma72-half-root-appends` | verify.py: exact rational append geometry and pinned source stock |
 | 65–68 | `dim65-68-complete-hyperplane-atlas` | verify.py: full affine atlas with exact parity guards and four-site stock |
-| 65 | `dim65-optimal-quadruple-layer` | **424 177 492** | 1.28 || [Three-site donors with a 46-hyperplane atlas](verifications/improved/dim65-68-dg-diagonal-triples/) 
+| 65 | `dim65-optimal-quadruple-layer` | verify.py: exact composition with cited quadruple packing theorem |
 | 65–66 | `dim65-66-grouped-four-site-designs` | verify.py: grouped four-site designs and exact predecessor replay |
 | 66–68 | `dim66-68-nested-affine-face-trades` | verify.py: exact affine face trades and complete predecessor replay |
 | 36 | `dim36-ct-pocket-trade` | verify.py: exact root-phase pocket trades and Gram replay |
@@ -482,20 +488,23 @@ refreshed table, not more search.
 | 60–61 | `dim60-61-rm80-guard-transfer` | verify.py: transferred supports, exact overlap tests and shared Hamming parities |
 | 60–61 | `dim60-61-dg-spike-banks` | verify.py: exact DG spike angles and affine-prefix counts |
 | 82–83 | `dim82-83-gamma72-antipodal-tails` | verify.py: exact algebraic tail Gram and all three horizontal profile replays |
+| 85 | `dim85-gamma72-signed-apron` | verify.py: exact signed Γ72 and Zinoviev–Ericson tail packets |
 | 85 | `dim85-gamma72-ze99-tail` | verify.py: exact algebraic tail Gram and full horizontal profile replay |
 | 64–65 | `dim64-65-dg-split-amplitudes` | verify.py: exact dense replacements and rephased support guards |
 | 65–68 | `dim65-68-dg-retained-atlas` | verify.py: atlas compatibility and rephased support guards |
+| 66–68 | `dim66-68-dg-rephased-banks` | verify.py: simultaneous sign guards and exact DG tail clearances |
 | 66–68 | `dim66-68-dg-d4-tail-donors` | verify.py: exact cubic, sparse parity and atlas clearance |
 | 59 | `dim59-p48-signed101` | verify.py: exact signed pure-tail separation and inherited interfaces |
+| 82–83 | `dim82-83-gamma72-signed-apron` | verify.py: exact signed norm-4+8 packet replacement and counts |
 | 82–83 | `dim82-83-gamma72-signed-packets` | verify.py: exact signed-tail Gram and horizontal packet replay |
 | 65–68 | `dim65-68-dg-diagonal-triples` | verify.py: exact tagged-bank parity, atlas refill, and diagonal-profile gates |
 | 65 | `dim65-dg-three-site-donors` | verify.py: exact three-site donor geometry and inherited rephased support guards |
 | 86–88, 90 | `dim86-90-qr-pless-phase7906` | verify.py: all ternary phase pairs, exact mixed-layer gates and pinned counts |
 | 62 | `dim62-dg-three-prefixes` | verify.py: exact three-prefix angular and parity gates |
 | 62–63 | `dim62-63-dg-spike-banks` | verify.py: exact cubic-class spike geometry and short-guard bank overlaps |
-| 62 | `dim62-two-mark-diagonals` | **173 717 908** | 3.31 || [Three Delsarte–Goethals spike prefixes](verifications/improved/dim62-dg-three-prefixes/) 
+| 62 | `dim62-two-mark-diagonals` | verify.py: exact head geometry and simultaneous parity constraints |
 | 84–85 | `dim84-85-all-profiles-append` | verify.py: exact profile intersections and triple component separation |
-| 85 | `dim85-shared-phase-refill` | **6 297 176 738** | 1.01 || [Zinoviev–Ericson tail with all profiles](verifications/improved/dim85-gamma72-ze99-tail/) 
+| 85 | `dim85-shared-phase-refill` | verify.py: exact shared phase occupancy and separation |
 | 60–61 | `dim60-61-rm80-puncture` | verify_extra.py: exact simultaneous rephasing and dense–sparse contact gates |
 | 36 | `dim36-ct-neutral-reheat` | verify.py: exact whole-cell and reassignments; independent coordinate delta |
 | 82–83, 85 | `dim82-85-bw16-tail-sections` | verify.py: exact equality sections and all three profile graphs |
@@ -506,7 +515,7 @@ refreshed table, not more search.
 | 63–68 | `dim63-68-affine-hyperplane-heads` | verify.py: exact signed shelves, 24-cell hyperplane codes, and mixed polar heights |
 | 63–67 | `dim63-67-signed-overlap` | verify.py: exact shared-parity overlaps, section and polar separation |
 | 66–67 | `dim66-67-rm2-axial-weight12` | verify.py: literal support overlaps and exact signed axial tags |
-| 65 | `dim65-rm2-polar-lift` | **424 177 492** | 1.28 || [Three-site donors with a 46-hyperplane atlas](verifications/improved/dim65-68-dg-diagonal-triples/) 
+| 65 | `dim65-rm2-polar-lift` | verify.py: exact polar code, distances and norm checks |
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 63-65 | `dim63-65-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 65–67 | `dim65-67-bch-exterior-caps` | exact extended BCH codes, cap distances, inherited sparse geometry and counts |

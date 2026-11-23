@@ -14,6 +14,12 @@
 
 23 November 2026 — Using complete antipodal small-dimensional tails raises **82D to 6,269,068,246** (+14,289,094) and **83D to 6,278,746,180** (+13,542,662), with the Γ72 carrier unchanged. [Exact replay](verifications/improved/dim82-83-gamma72-antipodal-tails/).
 
+23 November 2026 — Rephasing the overlapping sparse banks and adding off-axis donors raises **66D to 434,471,332**, **67D to 454,416,648**, and **68D to 486,029,082** (+83,966, +348,160 and +638,976). [Exact replay](verifications/improved/dim66-68-dg-rephased-banks/).
+
+23 November 2026 — Choosing the sign of the norm-eight component separately gives **6,269,087,562 in 82D** (+3,172) and **6,278,767,980 in 83D** (+11,040). [Exact replay](verifications/improved/dim82-83-gamma72-signed-apron/).
+
+23 November 2026 — Signed norm-4+8 packets with the Zinoviev–Ericson tail raise **85D to 6,297,207,062** (+30,324). [Exact replay](verifications/improved/dim85-gamma72-signed-apron/).
+
 23 November 2026 — Delsarte–Goethals layers on D4 tail roots raise **66D to 434,387,366**, **67D to 454,068,488**, and **68D to 485,390,106** (+247,808, +929,792, and +2,052,096). [Exact replay](verifications/improved/dim66-68-dg-d4-tail-donors/).
 
 23 November 2026 — A signed pure-tail trade raises **59D to 56,969,164** (+7), keeping all weighted and mixed families. [Exact replay](verifications/improved/dim59-p48-signed101/).
