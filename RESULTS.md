@@ -1,5 +1,7 @@
 # Results
 
+23 November 2026 — Support-specific Hamming codes allow signed supports to overlap in 9 or 10 coordinates. The new bounds in 63–67D include **216,972,548** in 63D and **442,334,086** in 67D. [Exact replay](verifications/improved/dim63-67-signed-overlap/).
+
 23 November 2026 — Internal weight-12 tags strengthen the 63D, 64D, and 66D shells. A three-cell BCH polar layer and the new equator bring 65D to **413,985,666** (+196,608). [Exact replay](verifications/improved/dim63-66-internal-tags-bch/).
 
 23 November 2026 — A diagonally weighted Pless-frame cube improves 59D by 1,520 points to **56,969,091**. [Exact replay](verifications/improved/dim59-p48-frame-cube/).
@@ -268,11 +270,11 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 60 | 52 416 841 | **58 665 998** | 1.12 | `classes` | [Common-class 48-frame and signed tail](verifications/improved/dim60-p48-frame48-tail/) |
 | 61 | 52 417 154 | **91 038 762** | 1.74 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
 | 62 | 52 417 932 | **150 561 804** | 2.87 | `codes` | [Dense code and its sparse shells](verifications/improved/dim62-67-rm2-selfsparse/) |
-| 63 | 52 418 564 | **214 125 316** | 4.08 | `codes` | [Internal tags and BCH polar cells](verifications/improved/dim63-66-internal-tags-bch/) |
-| 64 | 331 737 984 | **413 592 448** | 1.25 | `codes` | [Internal tags and BCH polar cells](verifications/improved/dim63-66-internal-tags-bch/) |
-| 65 | 331 737 986 | **413 985 666** | 1.25 | `codes` | [Internal tags and BCH polar cells](verifications/improved/dim63-66-internal-tags-bch/) |
-| 66 | 331 737 990 | **421 604 228** | 1.27 | `codes` | [Internal tags and BCH polar cells](verifications/improved/dim63-66-internal-tags-bch/) |
-| 67 | 331 737 996 | **437 537 670** | 1.32 | `codes` | [Axial weight-12 additions](verifications/improved/dim66-67-rm2-axial-weight12/) |
+| 63 | 52 418 564 | **216 972 548** | 4.14 | `codes` | [Support-specific Hamming sign codes](verifications/improved/dim63-67-signed-overlap/) |
+| 64 | 331 737 984 | **418 347 904** | 1.26 | `codes` | [Support-specific Hamming sign codes](verifications/improved/dim63-67-signed-overlap/) |
+| 65 | 331 737 986 | **418 741 122** | 1.26 | `codes` | [Support-specific Hamming sign codes](verifications/improved/dim63-67-signed-overlap/) |
+| 66 | 331 737 990 | **426 343 300** | 1.29 | `codes` | [Support-specific Hamming sign codes](verifications/improved/dim63-67-signed-overlap/) |
+| 67 | 331 737 996 | **442 334 086** | 1.33 | `codes` | [Support-specific Hamming sign codes](verifications/improved/dim63-67-signed-overlap/) |
 | 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 151 808** | 4.10 | `heads` | [Mixed Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-mixed-a2-normals/) |
@@ -382,6 +384,7 @@ refreshed table, not more search.
 | 62–67 | `dim62-67-rm2-selfsparse` | verify.py: two independent code reconstructions, exact sections and translated support shells |
 | 59 | `dim59-p48-frame-cube` | verify.py: exact Pless head/owner compatibility and variable-radius tails |
 | 63–66 | `dim63-66-internal-tags-bch` | verify.py: literal tagged support overlaps, an exact section, and normalized BCH polar separation |
+| 63–67 | `dim63-67-signed-overlap` | verify.py: exact shared-parity overlaps, section and polar separation |
 | 66–67 | `dim66-67-rm2-axial-weight12` | verify.py: literal support overlaps and exact signed axial tags |
 | 65 | `dim65-rm2-polar-lift` | verify.py: exact subcode checks and normalized cross-layer bounds |
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |

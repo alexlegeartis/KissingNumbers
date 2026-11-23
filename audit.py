@@ -842,6 +842,10 @@ with io.open(os.path.join(IMP, 'dim65-rm2-polar-lift', 'claims.json'), encoding=
     _row = json.load(_file)
     add(_row['dimension'], _row['lower_bound'], 'dim65-rm2-polar-lift', 'verify.py: exact polar code, distances and norm checks')
 
+with io.open(os.path.join(IMP, 'dim63-67-signed-overlap', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim63-67-signed-overlap', 'verify.py: exact shared-parity overlaps, section and polar separation')
+
 with io.open(os.path.join(IMP, 'dim63-66-internal-tags-bch', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim63-66-internal-tags-bch', 'verify.py: exact internal tags, section and BCH polar distances')
@@ -2702,6 +2706,7 @@ if '--write-results' in sys.argv and not fail:
         'dim62-67-rm2-selfsparse': 'Dense code and its sparse shells',
         'dim59-p48-frame-cube': 'Weighted Pless cube',
         'dim63-66-internal-tags-bch': 'Internal tags and BCH polar cells',
+        'dim63-67-signed-overlap': 'Support-specific Hamming sign codes',
         'dim66-67-rm2-axial-weight12': 'Axial weight-12 additions',
         'dim65-rm2-polar-lift': 'Alternating-checksum polar shelves',
         'dim54-60-p48-tail-antipodes': 'complementary tail directions above signed P48 with exact ownership and angles',
@@ -2725,6 +2730,8 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append("")
+    out.append("23 November 2026 — Support-specific Hamming codes allow signed supports to overlap in 9 or 10 coordinates. The new bounds in 63–67D include **216,972,548** in 63D and **442,334,086** in 67D. [Exact replay](verifications/improved/dim63-67-signed-overlap/).")
     out.append("")
     out.append("23 November 2026 — Internal weight-12 tags strengthen the 63D, 64D, and 66D shells. A three-cell BCH polar layer and the new equator bring 65D to **413,985,666** (+196,608). [Exact replay](verifications/improved/dim63-66-internal-tags-bch/).")
     out.append("")
