@@ -884,6 +884,9 @@ with io.open(os.path.join(IMP, 'dim81-85-gamma72-apn-complete-dm', 'claims.json'
 with io.open(os.path.join(IMP, 'dim81-84-antipodal-tail-codes', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim81-84-antipodal-tail-codes', 'verify.py: exact antipodal tail Grams and coupled profile replay')
+with io.open(os.path.join(IMP, 'dim84-85-gamma72-norm4-tail-weave', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim84-85-gamma72-norm4-tail-weave', 'verify.py: exact signed Γ72 packet and orthogonal norm-four tail layers')
 with io.open(os.path.join(IMP, 'dim84-85-all-profiles-append', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim84-85-all-profiles-append', 'verify.py: exact profile intersections and triple component separation')
@@ -2879,6 +2882,7 @@ if '--write-results' in sys.argv and not fail:
         'dim77-80-gamma72-apn-coupled-tails': 'Complete Γ72 tails and coupled contacts',
         'dim81-85-gamma72-apn-complete-dm': 'Complete D-type Γ72 fibres',
         'dim81-84-antipodal-tail-codes': 'Antipodal support codes as Γ72 tails',
+        'dim84-85-gamma72-norm4-tail-weave': 'Signed packets and additional norm-four tails',
         'dim84-85-all-profiles-append': 'Shared phases and horizontal triple components',
         'dim60-61-rm80-guard-transfer': 'Transferred Reed–Muller sign banks',
         'dim60-61-dg-spike-banks': 'Delsarte–Goethals spikes on transferred banks',
@@ -2950,6 +2954,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("23 November 2026 — Choosing the sign of the norm-eight component separately gives **6,269,087,562 in 82D** (+3,172) and **6,278,767,980 in 83D** (+11,040). [Exact replay](verifications/improved/dim82-83-gamma72-signed-apron/).")
     out.append("")
     out.append("23 November 2026 — Signed norm-4+8 packets with the Zinoviev–Ericson tail raise **85D to 6,297,207,062** (+30,324). [Exact replay](verifications/improved/dim85-gamma72-signed-apron/).")
+    out.append("")
+    out.append("23 November 2026 — A separate norm-four tail layer gives **6,292,644,032 in 84D** (+255,920 over its preceding public construction) and **6,297,321,110 in 85D** (+114,048 over its signed-mask result). [Exact replay](verifications/improved/dim84-85-gamma72-norm4-tail-weave/).")
     out.append("")
     out.append("23 November 2026 — Delsarte–Goethals layers on D4 tail roots raise **66D to 434,387,366**, **67D to 454,068,488**, and **68D to 485,390,106** (+247,808, +929,792, and +2,052,096). [Exact replay](verifications/improved/dim66-68-dg-d4-tail-donors/).")
     out.append("")

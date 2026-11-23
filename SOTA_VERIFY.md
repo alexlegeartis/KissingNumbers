@@ -20,6 +20,8 @@
 
 23 November 2026 — Signed norm-4+8 packets with the Zinoviev–Ericson tail raise **85D to 6,297,207,062** (+30,324). [Exact replay](verifications/improved/dim85-gamma72-signed-apron/).
 
+23 November 2026 — A separate norm-four tail layer gives **6,292,644,032 in 84D** (+255,920 over its preceding public construction) and **6,297,321,110 in 85D** (+114,048 over its signed-mask result). [Exact replay](verifications/improved/dim84-85-gamma72-norm4-tail-weave/).
+
 23 November 2026 — Delsarte–Goethals layers on D4 tail roots raise **66D to 434,387,366**, **67D to 454,068,488**, and **68D to 485,390,106** (+247,808, +929,792, and +2,052,096). [Exact replay](verifications/improved/dim66-68-dg-d4-tail-donors/).
 
 23 November 2026 — A signed pure-tail trade raises **59D to 56,969,164** (+7), keeping all weighted and mixed families. [Exact replay](verifications/improved/dim59-p48-signed101/).

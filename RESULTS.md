@@ -20,6 +20,8 @@
 
 23 November 2026 — Signed norm-4+8 packets with the Zinoviev–Ericson tail raise **85D to 6,297,207,062** (+30,324). [Exact replay](verifications/improved/dim85-gamma72-signed-apron/).
 
+23 November 2026 — A separate norm-four tail layer gives **6,292,644,032 in 84D** (+255,920 over its preceding public construction) and **6,297,321,110 in 85D** (+114,048 over its signed-mask result). [Exact replay](verifications/improved/dim84-85-gamma72-norm4-tail-weave/).
+
 23 November 2026 — Delsarte–Goethals layers on D4 tail roots raise **66D to 434,387,366**, **67D to 454,068,488**, and **68D to 485,390,106** (+247,808, +929,792, and +2,052,096). [Exact replay](verifications/improved/dim66-68-dg-d4-tail-donors/).
 
 23 November 2026 — A signed pure-tail trade raises **59D to 56,969,164** (+7), keeping all weighted and mixed families. [Exact replay](verifications/improved/dim59-p48-signed101/).
@@ -370,8 +372,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 81 | 6 218 175 906 | **6 251 523 810** | 1.01 | `cosets` | [Antipodal support codes as Γ72 tails](verifications/improved/dim81-84-antipodal-tail-codes/) |
 | 82 | 6 218 176 110 | **6 269 087 562** | 1.01 | `cosets` | [Larger signed norm-4+8 packets](verifications/improved/dim82-83-gamma72-signed-apron/)
 | 83 | 6 218 176 204 | **6 278 767 980** | 1.01 | `cosets` | [Larger signed norm-4+8 packets](verifications/improved/dim82-83-gamma72-signed-apron/)
-| 84 | 6 218 176 441 | **6 292 388 112** | 1.01 | `cosets` | [Shared phases and horizontal triple components](verifications/improved/dim84-85-all-profiles-append/) |
-| 85 | 6 218 176 754 | **6 297 207 062** | 1.01 | `cosets` | [Independent signed Γ72 norm-4+8 packets](verifications/improved/dim85-gamma72-signed-apron/)
+| 84 | 6 218 176 441 | **6 292 644 032** | 1.01 | `cosets` | [Signed packets and additional norm-four tails](verifications/improved/dim84-85-gamma72-norm4-tail-weave/)
+| 85 | 6 218 176 754 | **6 297 321 110** | 1.01 | `cosets` | [Signed packets and additional norm-four tails](verifications/improved/dim84-85-gamma72-norm4-tail-weave/)
 | 86 | 6 218 177 532 | **8 009 440 206** | 1.29 | `codes` | [Larger ternary QR–Pless phases](verifications/improved/dim86-90-qr-pless-phase7906/) 
 | 87 | 6 218 178 164 | **8 161 875 776** | 1.31 | `codes` | [Larger ternary QR–Pless phases](verifications/improved/dim86-90-qr-pless-phase7906/) 
 | 88 | 6 218 179 920 | **13 361 878 540** | 2.15 | `codes` | [Larger ternary QR–Pless phases](verifications/improved/dim86-90-qr-pless-phase7906/) 
@@ -503,6 +505,7 @@ refreshed table, not more search.
 | 62 | `dim62-dg-three-prefixes` | verify.py: exact three-prefix angular and parity gates |
 | 62–63 | `dim62-63-dg-spike-banks` | verify.py: exact cubic-class spike geometry and short-guard bank overlaps |
 | 62 | `dim62-two-mark-diagonals` | verify.py: exact head geometry and simultaneous parity constraints |
+| 84–85 | `dim84-85-gamma72-norm4-tail-weave` | verify.py: exact signed Γ72 packet and orthogonal norm-four tail layers |
 | 84–85 | `dim84-85-all-profiles-append` | verify.py: exact profile intersections and triple component separation |
 | 85 | `dim85-shared-phase-refill` | verify.py: exact shared phase occupancy and separation |
 | 60–61 | `dim60-61-rm80-puncture` | verify_extra.py: exact simultaneous rephasing and dense–sparse contact gates |
