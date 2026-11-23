@@ -6,7 +6,7 @@ from io import StringIO
 from pathlib import Path
 from itertools import combinations
 from fractions import Fraction
-import gzip,json,runpy
+import base64,gzip,json,runpy
 assert __debug__
 root=Path(__file__).resolve().parent
 with redirect_stdout(StringIO()):
@@ -20,7 +20,7 @@ for n in (60,61):
     modes={0:0} if n==60 else {0:0,1:1,1<<20:-1}
     prior=v['x' if n==60 else 'y']['total']
     old={s for s in oldAll if (s&marks) in modes}
-    D=json.loads(gzip.decompress((root/f'extra{n}.json.gz').read_bytes()))
+    D=json.loads(gzip.decompress(base64.b64decode((root/f"extra{n}.json.gz.b64").read_bytes())))
     X=D['extra']; N=set(X)
     assert len(X)==len(N) and not old&N
     all_=old|N

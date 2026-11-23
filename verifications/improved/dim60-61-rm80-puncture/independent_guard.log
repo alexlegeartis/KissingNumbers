@@ -1,0 +1,3 @@
+PASS exact 60 and 61: 66657320 116711210 sparse 12005 3956 3956 planes 7995 8555
+PASS complete guarded extra 60 68033576 extra 1376256 banks 672 guards 2232 ranks {3: 273, 1: 1808, 2: 307, 4: 176}
+PASS complete guarded extra 61 118639402 extra 1928192 banks 1211 guards 5212 ranks {3: 523, 2: 729, 1: 3504, 4: 544}

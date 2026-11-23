@@ -881,6 +881,12 @@ with io.open(os.path.join(IMP, 'dim77-80-gamma72-apn-coupled-tails', 'claims.jso
 with io.open(os.path.join(IMP, 'dim81-85-gamma72-apn-complete-dm', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim81-85-gamma72-apn-complete-dm', 'verify.py: exact full D-type root and horizontal contact shell replay')
+with io.open(os.path.join(IMP, 'dim81-84-antipodal-tail-codes', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim81-84-antipodal-tail-codes', 'verify.py: exact antipodal tail Grams and coupled profile replay')
+with io.open(os.path.join(IMP, 'dim85-shared-phase-refill', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim85-shared-phase-refill', 'verify.py: exact shared phase occupancy and separation')
 with io.open(os.path.join(IMP, 'dim60-61-rm80-puncture', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim60-61-rm80-puncture', 'verify_extra.py: exact simultaneous rephasing and dense–sparse contact gates')
@@ -2814,6 +2820,8 @@ if '--write-results' in sys.argv and not fail:
         'dim62-63-guarded-rephase': 'Simultaneous support rephasing',
         'dim77-80-gamma72-apn-coupled-tails': 'Complete Γ72 tails and coupled contacts',
         'dim81-85-gamma72-apn-complete-dm': 'Complete D-type Γ72 fibres',
+        'dim81-84-antipodal-tail-codes': 'Antipodal support codes as Γ72 tails',
+        'dim85-shared-phase-refill': 'Shared-phase Γ72 contact refill',
         'dim60-61-rm80-puncture': 'Punctured Reed–Muller signs, unequal heads and shared parity checks',
         'dim36-ct-neutral-reheat': 'Coxeter–Todd cell perturbations and recovery',
         'dim82-85-bw16-tail-sections': 'Barnes–Wall-type equality-section tails',
@@ -2853,6 +2861,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
     out.append("")
+    out.append("23 November 2026 — Antipodal support-code tails raise **81D to 6,251,523,810** and **84D to 6,291,169,688**. Sharing phases without sharing any horizontal point raises **85D to 6,294,162,634**. [81/84D replay](verifications/improved/dim81-84-antipodal-tail-codes/) · [85D replay](verifications/improved/dim85-shared-phase-refill/).")
+    out.append('')
     out.append("23 November 2026 — Four-coordinate Reed–Muller puncturing, unequal heights and shared parity checks raise **60D to 68,033,576** and **61D to 118,639,402** (+15.97% and +30.32% over the preceding bounds). [Exact replay](verifications/improved/dim60-61-rm80-puncture/).")
     out.append('')
     out.append("23 November 2026 — Barnes–Wall-type equality-section tails improve **82D, 83D and 85D**, including **6,265,203,518 in 83D** and **6,292,777,568 in 85D**. [Exact replay](verifications/improved/dim82-85-bw16-tail-sections/).")

@@ -1,0 +1,4 @@
+components 1727751 groups 1315824 maxgroup 728 maxcomponent 728 edges 433683 seed 1800683 result 1818806 gained 18123
+PASS exact extra tail 81 6251523810 raw 1773553 recoupled 27130 component gain 18123 two-profile counts 52521 530876 rays 153
+components 3341712 groups 2204958 maxgroup 1536 maxcomponent 1536 edges 2503024 seed 3834092 result 3933895 gained 99803
+PASS exact extra tail 84 6291169688 raw 3646820 recoupled 187272 component gain 99803 two-profile counts 62216 1256366 rays 384

@@ -1,0 +1,4 @@
+PASS all final duplicate-phase groups 1 2 726635
+PASS all final duplicate-phase groups 1 3 726630
+PASS all final duplicate-phase groups 2 3 728741
+PASS final BW85 extra 6294162634 triple gain 1384928 pure gain 138

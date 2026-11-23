@@ -2,6 +2,8 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Antipodal support-code tails raise **81D to 6,251,523,810** and **84D to 6,291,169,688**. Sharing phases without sharing any horizontal point raises **85D to 6,294,162,634**. [81/84D replay](verifications/improved/dim81-84-antipodal-tail-codes/) · [85D replay](verifications/improved/dim85-shared-phase-refill/).
+
 23 November 2026 — Four-coordinate Reed–Muller puncturing, unequal heights and shared parity checks raise **60D to 68,033,576** and **61D to 118,639,402** (+15.97% and +30.32% over the preceding bounds). [Exact replay](verifications/improved/dim60-61-rm80-puncture/).
 
 23 November 2026 — Barnes–Wall-type equality-section tails improve **82D, 83D and 85D**, including **6,265,203,518 in 83D** and **6,292,777,568 in 85D**. [Exact replay](verifications/improved/dim82-85-bw16-tail-sections/).

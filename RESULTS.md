@@ -2,6 +2,8 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Antipodal support-code tails raise **81D to 6,251,523,810** and **84D to 6,291,169,688**. Sharing phases without sharing any horizontal point raises **85D to 6,294,162,634**. [81/84D replay](verifications/improved/dim81-84-antipodal-tail-codes/) · [85D replay](verifications/improved/dim85-shared-phase-refill/).
+
 23 November 2026 — Four-coordinate Reed–Muller puncturing, unequal heights and shared parity checks raise **60D to 68,033,576** and **61D to 118,639,402** (+15.97% and +30.32% over the preceding bounds). [Exact replay](verifications/improved/dim60-61-rm80-puncture/).
 
 23 November 2026 — Barnes–Wall-type equality-section tails improve **82D, 83D and 85D**, including **6,265,203,518 in 83D** and **6,292,777,568 in 85D**. [Exact replay](verifications/improved/dim82-85-bw16-tail-sections/).
@@ -327,11 +329,11 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 78 | 6 218 175 672 | **6 227 143 800** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
 | 79 | 6 218 175 726 | **6 233 438 398** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
 | 80 | 6 218 175 840 | **6 246 118 720** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
-| 81 | 6 218 175 906 | **6 248 779 696** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
+| 81 | 6 218 175 906 | **6 251 523 810** | 1.01 | `cosets` | [Antipodal support codes as Γ72 tails](verifications/improved/dim81-84-antipodal-tail-codes/) |
 | 82 | 6 218 176 110 | **6 254 779 152** | 1.01 | `cosets` | [Barnes–Wall-type equality-section tails](verifications/improved/dim82-85-bw16-tail-sections/) |
 | 83 | 6 218 176 204 | **6 265 203 518** | 1.01 | `cosets` | [Barnes–Wall-type equality-section tails](verifications/improved/dim82-85-bw16-tail-sections/) |
-| 84 | 6 218 176 441 | **6 281 841 864** | 1.01 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
-| 85 | 6 218 176 754 | **6 292 777 568** | 1.01 | `cosets` | [Barnes–Wall-type equality-section tails](verifications/improved/dim82-85-bw16-tail-sections/) |
+| 84 | 6 218 176 441 | **6 291 169 688** | 1.01 | `cosets` | [Antipodal support codes as Γ72 tails](verifications/improved/dim81-84-antipodal-tail-codes/) |
+| 85 | 6 218 176 754 | **6 294 162 634** | 1.01 | `cosets` | [Shared-phase Γ72 contact refill](verifications/improved/dim85-shared-phase-refill/) |
 | 86 | 6 218 177 532 | **8 008 552 282** | 1.29 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 87 | 6 218 178 164 | **8 160 988 416** | 1.31 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 88 | 6 218 179 920 | **13 358 363 692** | 2.15 | `codes` | [Full Pless census and new chord marks](verifications/improved/dim88-full-pless-chord-marks/) 
@@ -444,6 +446,8 @@ refreshed table, not more search.
 | 62–63 | `dim62-63-guarded-rephase` | verify.py: exact support overlap and simultaneous affine guard parities |
 | 77–80 | `dim77-80-gamma72-apn-coupled-tails` | verify.py: exact full root and B-only tails, coupled singleton contacts |
 | 81–85 | `dim81-85-gamma72-apn-complete-dm` | verify.py: exact full D-type root and horizontal contact shell replay |
+| 81, 84 | `dim81-84-antipodal-tail-codes` | verify.py: exact antipodal tail Grams and coupled profile replay |
+| 85 | `dim85-shared-phase-refill` | verify.py: exact shared phase occupancy and separation |
 | 60–61 | `dim60-61-rm80-puncture` | verify_extra.py: exact simultaneous rephasing and dense–sparse contact gates |
 | 36 | `dim36-ct-neutral-reheat` | verify.py: exact whole-cell and reassignments; independent coordinate delta |
 | 82–83, 85 | `dim82-85-bw16-tail-sections` | verify.py: exact equality sections and all three profile graphs |
