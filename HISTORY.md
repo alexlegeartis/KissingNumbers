@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>23–29 November 2026: code shells (through 23 November)</summary>
 
+23 November 2026 — Two alternating-checksum polar shelves add 262,144 kissing points in 65D, reaching **413,789,058**. [Exact replay](verifications/improved/dim65-rm2-polar-lift/).
+
 23 November 2026 — A common-class 48-frame and 32-color tail give **58,665,998** in 60D (+1,814), with literal signed deletion accounting. [Exact replay](verifications/improved/dim60-p48-frame48-tail/).
 
 23 November 2026 — One binary code supplies both dense and sparse layers, improving all six 62–67D lower bounds again. The 64D bound is **413,526,912** (+10,706,944), and three tagged weight-14 shells raise 67D to **437,513,094** (+15,308,784). [Exact replay](verifications/improved/dim62-67-rm2-selfsparse/).
