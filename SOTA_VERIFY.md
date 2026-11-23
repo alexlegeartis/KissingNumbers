@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+23 November 2026 — Weight-12 bodies with axial tags add 65,536 kissing points in 66D and 24,576 in 67D. [Exact replay](verifications/improved/dim66-67-rm2-axial-weight12/).
+
 23 November 2026 — Two alternating-checksum polar shelves add 262,144 kissing points in 65D, reaching **413,789,058**. [Exact replay](verifications/improved/dim65-rm2-polar-lift/).
 
 23 November 2026 — A common-class 48-frame and 32-color tail give **58,665,998** in 60D (+1,814), with literal signed deletion accounting. [Exact replay](verifications/improved/dim60-p48-frame48-tail/).

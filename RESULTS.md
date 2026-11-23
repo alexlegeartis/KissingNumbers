@@ -1,5 +1,7 @@
 # Results
 
+23 November 2026 — Weight-12 bodies with axial tags add 65,536 kissing points in 66D and 24,576 in 67D. [Exact replay](verifications/improved/dim66-67-rm2-axial-weight12/).
+
 23 November 2026 — Two alternating-checksum polar shelves add 262,144 kissing points in 65D, reaching **413,789,058**. [Exact replay](verifications/improved/dim65-rm2-polar-lift/).
 
 23 November 2026 — A common-class 48-frame and 32-color tail give **58,665,998** in 60D (+1,814), with literal signed deletion accounting. [Exact replay](verifications/improved/dim60-p48-frame48-tail/).
@@ -265,8 +267,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 63 | 52 418 564 | **214 085 892** | 4.08 | `codes` | [Dense code and its sparse shells](verifications/improved/dim62-67-rm2-selfsparse/) |
 | 64 | 331 737 984 | **413 526 912** | 1.25 | `codes` | [Dense code and its sparse shells](verifications/improved/dim62-67-rm2-selfsparse/) |
 | 65 | 331 737 986 | **413 789 058** | 1.25 | `codes` | [Alternating-checksum polar shelves](verifications/improved/dim65-rm2-polar-lift/) |
-| 66 | 331 737 990 | **421 522 308** | 1.27 | `codes` | [Dense code and its sparse shells](verifications/improved/dim62-67-rm2-selfsparse/) |
-| 67 | 331 737 996 | **437 513 094** | 1.32 | `codes` | [Dense code and its sparse shells](verifications/improved/dim62-67-rm2-selfsparse/) |
+| 66 | 331 737 990 | **421 587 844** | 1.27 | `codes` | [Axial weight-12 additions](verifications/improved/dim66-67-rm2-axial-weight12/) |
+| 67 | 331 737 996 | **437 537 670** | 1.32 | `codes` | [Axial weight-12 additions](verifications/improved/dim66-67-rm2-axial-weight12/) |
 | 68 | 331 737 984 | **472 598 888** | 1.42 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 151 808** | 4.10 | `heads` | [Mixed Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-mixed-a2-normals/) |
@@ -374,6 +376,7 @@ refreshed table, not more search.
 | 60 | `dim60-p48-frame48-tail` | verify.py and audit_angles.py: integral frame, signed tail and conservative exact owner charge |
 | 62–67 | `dim62-67-rm2-cubic-cosets` | verify.py: two exact cubic-coset checks and sparse-layer transfer |
 | 62–67 | `dim62-67-rm2-selfsparse` | verify.py: two independent code reconstructions, exact sections and translated support shells |
+| 66–67 | `dim66-67-rm2-axial-weight12` | verify.py: literal support overlaps and exact signed axial tags |
 | 65 | `dim65-rm2-polar-lift` | verify.py: exact subcode checks and normalized cross-layer bounds |
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 63-65 | `dim63-65-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
