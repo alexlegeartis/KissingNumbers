@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "dimension": 36,
+  "previous": 502929,
+  "points": 503548,
+  "added": 1017,
+  "deleted_base": 513,
+  "deleted_roots": 0,
+  "restored_base": 115,
+  "restored_cross_checks": 57894795,
+  "exact_new_old_root_products": 100911825,
+  "exact_new_old_two_block_products": 408260412,
+  "exact_new_new_unordered": 516636
+}

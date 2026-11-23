@@ -2,6 +2,8 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Coxeter–Todd pocket trades and spare-block refills raise **36D to 503,548**. A cited optimal quadruple design raises **65D to 419,000,274**. [36D exact replay](verifications/improved/dim36-ct-pocket-trade/) · [65D existence proof](verifications/improved/dim65-optimal-quadruple-layer/).
+
 23 November 2026 — Grouped four-site designs raise **65D to 419,000,034** and **66D to 429,290,020**. The 66D layer attains the exact four-site alphabet cap. [Exact replay](verifications/improved/dim65-66-grouped-four-site-designs/).
 
 23 November 2026 — Nested affine face trades give **429,284,740 in 66D**, **448,616,838 in 67D**, and **481,044,376 in 68D**. [Exact replay](verifications/improved/dim66-68-nested-affine-face-trades/).
@@ -255,7 +257,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 33 | 370 240 | **370 528** | 1.00 | `codes` | [joint repacking of individual signed octads, stars and roots](verifications/improved/dim33-joint-signed-refill/) |
 | 34 | 390 980 | **391 004** | 1.00 | `heads` | [coordinated octad switches and root-star exchanges; two exact proofs](verifications/improved/dim34-octad-switches/) |
 | 35 | 415 308 | **415 360** | 1.00 | `heads` | [joint signed-star and root repacking](verifications/improved/dim35-joint-star-root/) |
-| 36 | 484 760 | **502 929** | 1.04 | `cosets` | [Two full Coxeter–Todd trine fibres](verifications/improved/dim36-ct-double-trine/) |
+| 36 | 484 760 | **503 548** | 1.04 | `cosets` | [Coxeter–Todd pocket trades](verifications/improved/dim36-ct-pocket-trade/) |
 | 37 | 500 008 | **544 666** | 1.09 | `codes` | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) |
 | 38 | 566 652 | **652 076** | 1.15 | `codes` | [QR offsets, ten octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) |
 | 39 | 755 988 | **783 468** | 1.03 | `codes` | [QR fibres with three-coordinate heads and projected support checks](verifications/improved/dim39-qr-three-coordinate-heads/) |
@@ -282,7 +284,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 62 | 52 417 932 | **150 561 804** | 2.87 | `codes` | [Dense code and its sparse shells](verifications/improved/dim62-67-rm2-selfsparse/) |
 | 63 | 52 418 564 | **217 044 228** | 4.14 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
 | 64 | 331 737 984 | **418 478 976** | 1.26 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
-| 65 | 331 737 986 | **419 000 034** | 1.26 | `codes` | [Grouped four-site designs](verifications/improved/dim65-66-grouped-four-site-designs/) |
+| 65 | 331 737 986 | **419 000 274** | 1.26 | `codes` | [Optimal quadruple layer (existence proof)](verifications/improved/dim65-optimal-quadruple-layer/) |
 | 66 | 331 737 990 | **429 290 020** | 1.29 | `codes` | [Grouped four-site designs](verifications/improved/dim65-66-grouped-four-site-designs/) |
 | 67 | 331 737 996 | **448 616 838** | 1.35 | `codes` | [Nested affine face trades](verifications/improved/dim66-68-nested-affine-face-trades/) |
 | 68 | 331 737 984 | **481 044 376** | 1.45 | `codes` | [Nested affine face trades](verifications/improved/dim66-68-nested-affine-face-trades/) |
@@ -377,7 +379,7 @@ refreshed table, not more search.
 | 34 | `dim34-octad-switches` | Two exact replays of four octad switches and the final 391,004 directions |
 | 32-35 | `dim32-35-signed-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 35 | `dim35-joint-star-root` | Integer replay of 415,360 directions with 262 stars and 2,158 signed roots |
-| 36 | `dim36-ct-triangle-refill` | **502 929** | 13970.25 | `cosets` | [Two full Coxeter–Todd trine fibres](verifications/improved/dim36-ct-double-trine/) 
+| 36 | `dim36-ct-triangle-refill` | verify.py: exact root-phase and trine replacement checks |
 | 37 | `dim37-qr-flat-repack` | verify.py: exact signed pairs and inherited-layer interfaces; composes with the radical-family proof |
 | 38 | `dim38-qr-octad-switches` | verify.py and audit.py: exact replay of 31 dense fibres, ten new octad supports, 288 stars and the signed-root ledger |
 | 39 | `dim39-deformed-orbits` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
@@ -398,8 +400,10 @@ refreshed table, not more search.
 | 77–84 | `dim77-84-gamma72-half-root-rephased` | verify.py: exact rephased half-root and rational append checks |
 | 79–84 | `dim79-84-gamma72-half-root-appends` | verify.py: exact rational append geometry and pinned source stock |
 | 65–68 | `dim65-68-complete-hyperplane-atlas` | verify.py: full affine atlas with exact parity guards and four-site stock |
+| 65 | `dim65-optimal-quadruple-layer` | verify.py: exact composition with cited quadruple packing theorem |
 | 65–66 | `dim65-66-grouped-four-site-designs` | verify.py: grouped four-site designs and exact predecessor replay |
 | 66–68 | `dim66-68-nested-affine-face-trades` | verify.py: exact affine face trades and complete predecessor replay |
+| 36 | `dim36-ct-pocket-trade` | verify.py: exact root-phase pocket trades and Gram replay |
 | 36 | `dim36-ct-double-trine` | verify.py: exact complete trine swap and base checks |
 | 77–79 | `dim77-79-gamma72-seven-charts` | verify.py: exact transported phase and root-tail construction |
 | 63–68 | `dim63-68-affine-hyperplane-heads` | verify.py: exact signed shelves, 24-cell hyperplane codes, and mixed polar heights |

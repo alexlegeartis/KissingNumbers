@@ -854,6 +854,12 @@ with io.open(os.path.join(IMP, 'dim65-rm2-polar-lift', 'claims.json'), encoding=
     _row = json.load(_file)
     add(_row['dimension'], _row['lower_bound'], 'dim65-rm2-polar-lift', 'verify.py: exact polar code, distances and norm checks')
 
+with io.open(os.path.join(IMP, 'dim36-ct-pocket-trade', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim36-ct-pocket-trade', 'verify.py: exact root-phase pocket trades and Gram replay')
+with io.open(os.path.join(IMP, 'dim65-optimal-quadruple-layer', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim65-optimal-quadruple-layer', 'verify.py: exact composition with cited quadruple packing theorem')
 with io.open(os.path.join(IMP, 'dim65-66-grouped-four-site-designs', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim65-66-grouped-four-site-designs', 'verify.py: grouped four-site designs and exact predecessor replay')
@@ -2744,6 +2750,8 @@ if '--write-results' in sys.argv and not fail:
         'dim59-p48-pure94': 'Antipodal pure-tail refill',
         'dim63-66-internal-tags-bch': 'Internal tags and BCH polar cells',
         'dim65-68-complete-hyperplane-atlas': 'All 126 affine hyperplanes with 24-cell heads',
+        'dim36-ct-pocket-trade': 'Coxeter–Todd pocket trades',
+        'dim65-optimal-quadruple-layer': 'Optimal quadruple layer (existence proof)',
         'dim65-66-grouped-four-site-designs': 'Grouped four-site designs',
         'dim66-68-nested-affine-face-trades': 'Nested affine face trades',
         'dim77-79-gamma72-seven-charts': 'Seven-chart Γ72 tail fibres',
@@ -2776,6 +2784,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("# Results")
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
+    out.append("")
+    out.append("23 November 2026 — Coxeter–Todd pocket trades and spare-block refills raise **36D to 503,548**. A cited optimal quadruple design raises **65D to 419,000,274**. [36D exact replay](verifications/improved/dim36-ct-pocket-trade/) · [65D existence proof](verifications/improved/dim65-optimal-quadruple-layer/).")
     out.append("")
     out.append("23 November 2026 — Grouped four-site designs raise **65D to 419,000,034** and **66D to 429,290,020**. The 66D layer attains the exact four-site alphabet cap. [Exact replay](verifications/improved/dim65-66-grouped-four-site-designs/).")
     out.append("")

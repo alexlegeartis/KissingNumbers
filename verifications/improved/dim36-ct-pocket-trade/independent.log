@@ -1,0 +1,2 @@
+PASS recovered 115 with max 6 in 57777840 old products, 116955 new root products and 6555 within recovered pairs; partial sum cap 576
+PASS independent literal expansion: exact max 6 over 511478793 new-old products; float64 absolute partial-sum cap 576 ; 503548 with 1017 added; 513 base deletions and 0 root deletions.
