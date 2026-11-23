@@ -1,0 +1,58 @@
+{
+  "77": {
+    "prior": 6222013132,
+    "rephased_shell": 6222013324,
+    "append": 0,
+    "gain": 192,
+    "lower_bound": 6222013324
+  },
+  "78": {
+    "prior": 6223119444,
+    "rephased_shell": 6223119668,
+    "append": 0,
+    "gain": 224,
+    "lower_bound": 6223119668
+  },
+  "79": {
+    "prior": 6224780712,
+    "rephased_shell": 6224780712,
+    "append": 1304,
+    "gain": 1304,
+    "lower_bound": 6224782016
+  },
+  "80": {
+    "prior": 6228104952,
+    "rephased_shell": 6228106104,
+    "append": 96,
+    "gain": 1248,
+    "lower_bound": 6228106200
+  },
+  "81": {
+    "prior": 6228378586,
+    "rephased_shell": 6228379706,
+    "append": 96,
+    "gain": 1216,
+    "lower_bound": 6228379802
+  },
+  "82": {
+    "prior": 6228925854,
+    "rephased_shell": 6228927054,
+    "append": 96,
+    "gain": 1296,
+    "lower_bound": 6228927150
+  },
+  "83": {
+    "prior": 6229747428,
+    "rephased_shell": 6229748724,
+    "append": 96,
+    "gain": 1392,
+    "lower_bound": 6229748820
+  },
+  "84": {
+    "prior": 6231391584,
+    "rephased_shell": 6231393488,
+    "append": 96,
+    "gain": 2000,
+    "lower_bound": 6231393584
+  }
+}

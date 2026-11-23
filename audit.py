@@ -747,6 +747,10 @@ with io.open(os.path.join(IMP, 'dim79-84-gamma72-half-root-appends', 'claims.jso
     for _d, _row in json.load(_file).items():
         add(int(_d), int(_row['lower_bound']), 'dim79-84-gamma72-half-root-appends', 'verify.py: exact rational half-root shell append')
 
+with io.open(os.path.join(IMP, 'dim77-84-gamma72-half-root-rephased', 'phase_claims.json'), encoding='utf-8') as _file:
+    for _d, _row in json.load(_file).items():
+        add(int(_d), int(_row['lower_bound']), 'dim77-84-gamma72-half-root-rephased', 'verify.py: exact rational half-root rephasing and appends')
+
 with io.open(os.path.join(IMP, 'dim77-84-gamma72-half-root-shells', 'comparisons.json'), encoding='utf-8') as _file:
     for _row in json.load(_file):
         add(_row['dimension'], _row['lower_bound'], 'dim77-84-gamma72-half-root-shells', 'verify.py: half-root lattice and exact convolved shortest shell')
@@ -2720,6 +2724,7 @@ if '--write-results' in sys.argv and not fail:
         'dim59-p48-pure94': 'Antipodal pure-tail refill',
         'dim63-66-internal-tags-bch': 'Internal tags and BCH polar cells',
         'dim63-68-affine-hyperplane-heads': 'Affine hyperplanes with 24-cell heads',
+        'dim77-84-gamma72-half-root-rephased': 'Rephased half-root shell and exact appends',
         'dim79-84-gamma72-half-root-appends': 'Half-root shell extensions',
         'dim63-67-signed-overlap': 'Support-specific Hamming sign codes',
         'dim66-67-rm2-axial-weight12': 'Axial weight-12 additions',

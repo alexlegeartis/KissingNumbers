@@ -287,14 +287,14 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 74 | 6 218 175 606 | **6 218 995 830** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 75 | 6 218 175 612 | **6 219 816 924** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 76 | 6 218 175 624 | **6 221 459 976** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
-| 77 | 6 218 175 640 | **6 222 013 132** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
-| 78 | 6 218 175 672 | **6 223 119 444** | 1.00 | `cosets` | [Half-root Γ72 lattice and exact shortest shell](verifications/improved/dim77-84-gamma72-half-root-shells/) |
-| 79 | 6 218 175 726 | **6 224 782 016** | 1.00 | `cosets` | [Half-root shell extensions](verifications/improved/dim79-84-gamma72-half-root-appends/) |
-| 80 | 6 218 175 840 | **6 228 105 432** | 1.00 | `cosets` | [Half-root shell extensions](verifications/improved/dim79-84-gamma72-half-root-appends/) |
-| 81 | 6 218 175 906 | **6 228 379 066** | 1.00 | `cosets` | [Half-root shell extensions](verifications/improved/dim79-84-gamma72-half-root-appends/) |
-| 82 | 6 218 176 110 | **6 228 926 334** | 1.00 | `cosets` | [Half-root shell extensions](verifications/improved/dim79-84-gamma72-half-root-appends/) |
-| 83 | 6 218 176 204 | **6 229 747 908** | 1.00 | `cosets` | [Half-root shell extensions](verifications/improved/dim79-84-gamma72-half-root-appends/) |
-| 84 | 6 218 176 441 | **6 231 392 064** | 1.00 | `cosets` | [Half-root shell extensions](verifications/improved/dim79-84-gamma72-half-root-appends/) |
+| 77 | 6 218 175 640 | **6 222 013 324** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
+| 78 | 6 218 175 672 | **6 223 119 668** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
+| 79 | 6 218 175 726 | **6 224 782 016** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
+| 80 | 6 218 175 840 | **6 228 106 200** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
+| 81 | 6 218 175 906 | **6 228 379 802** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
+| 82 | 6 218 176 110 | **6 228 927 150** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
+| 83 | 6 218 176 204 | **6 229 748 820** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
+| 84 | 6 218 176 441 | **6 231 393 584** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
 | 85 | 6 218 176 754 | **6 235 993 850** | 1.00 | `heads` | [Finer exact Γ72 recurrence](verifications/improved/dim74-85-gamma72-fine-recurrence/) |
 | 86 | 6 218 177 532 | **8 008 552 282** | 1.29 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 87 | 6 218 178 164 | **8 160 988 416** | 1.31 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
@@ -389,6 +389,7 @@ refreshed table, not more search.
 | 59 | `dim59-p48-frame-cube` | verify.py: exact Pless head/owner compatibility and variable-radius tails |
 | 59 | `dim59-p48-pure94` | verify.py: integer inequalities against all inherited tail families |
 | 63–66 | `dim63-66-internal-tags-bch` | verify.py: literal tagged support overlaps, an exact section, and normalized BCH polar separation |
+| 77–84 | `dim77-84-gamma72-half-root-rephased` | verify.py: exact rephased half-root and rational append checks |
 | 79–84 | `dim79-84-gamma72-half-root-appends` | verify.py: exact rational append geometry and pinned source stock |
 | 63–68 | `dim63-68-affine-hyperplane-heads` | verify.py: exact signed shelves, 24-cell hyperplane codes, and mixed polar heights |
 | 63–67 | `dim63-67-signed-overlap` | verify.py: exact shared-parity overlaps, section and polar separation |

@@ -1,0 +1,49 @@
+PASS isotropic depth 6 count 136704
+PASS {'dimension': 73, 'count': 6218449010, 'contacts_by_vertical_norm': {2: 273408, 4: 0, 6: 0, 8: 2}}
+PASS {'dimension': 74, 'count': 6218995830, 'contacts_by_vertical_norm': {2: 820224, 4: 0, 6: 0, 8: 6}}
+PASS {'dimension': 75, 'count': 6219816924, 'contacts_by_vertical_norm': {2: 1640448, 4: 864, 6: 0, 8: 12}}
+PASS {'dimension': 76, 'count': 6221459976, 'contacts_by_vertical_norm': {2: 3280896, 4: 3456, 6: 0, 8: 24}}
+PASS {'dimension': 77, 'count': 6221737226, 'contacts_by_vertical_norm': {2: 3554304, 4: 7296, 6: 0, 8: 26}}
+PASS {'dimension': 78, 'count': 6222291726, 'contacts_by_vertical_norm': {2: 4101120, 4: 14976, 6: 0, 8: 30}}
+PASS {'dimension': 79, 'count': 6223124388, 'contacts_by_vertical_norm': {2: 4921344, 4: 27360, 6: 0, 8: 84}}
+PASS {'dimension': 80, 'count': 6224790624, 'contacts_by_vertical_norm': {2: 6561792, 4: 52992, 6: 0, 8: 240}}
+PASS {'dimension': 81, 'count': 6225064194, 'contacts_by_vertical_norm': {2: 6835200, 4: 53152, 6: 0, 8: 242}}
+PASS {'dimension': 82, 'count': 6225611462, 'contacts_by_vertical_norm': {2: 7382016, 4: 53600, 6: 0, 8: 246}}
+PASS exact comparison arithmetic
+PASS 77D kissing code 6222013132, gain vs pinned old result 275906, extra contacts {2: 546816, 3: 6144, 4: 192, 5: 0, 6: 0, 7: 0, 8: 4}
+PASS 78D kissing code 6223119444, gain vs pinned old result 827718, extra contacts {2: 1640448, 3: 18432, 4: 576, 5: 0, 6: 0, 7: 0, 8: 12}
+PASS 79D kissing code 6224780712, gain vs pinned old result 1656324, extra contacts {2: 3280896, 3: 36864, 4: 2952, 5: 0, 6: 0, 7: 0, 8: 24}
+PASS 80D kissing code 6228104952, gain vs pinned old result 3314328, extra contacts {2: 6561792, 3: 73728, 4: 9408, 5: 0, 6: 0, 7: 0, 8: 48}
+PASS 81D kissing code 6228378586, vertical contact histogram {4: 13088, 2: 10116096, 5: 0, 3: 73728, 6: 0, 7: 0, 8: 74}
+PASS 82D kissing code 6228925854, vertical contact histogram {8: 78, 4: 13536, 2: 10662912, 5: 0, 3: 73728, 6: 0, 7: 0}
+PASS 83D kissing code 6229747428, vertical contact histogram {8: 84, 6: 0, 4: 14880, 2: 11483136, 7: 0, 5: 0, 3: 73728}
+PASS 84D kissing code 6231391584, vertical contact histogram {8: 96, 6: 0, 4: 18576, 2: 13123584, 7: 0, 5: 0, 3: 73728}
+PASS 85D kissing code 6231665298, vertical contact histogram {8: 98, 6: 0, 4: 18880, 2: 13396992, 7: 0, 5: 0, 3: 73728}
+PASS 86D kissing code 6232212726, vertical contact histogram {8: 102, 6: 0, 4: 19488, 2: 13943808, 7: 0, 5: 0, 3: 73728}
+PASS 87D kissing code 6233034924, vertical contact histogram {8: 108, 6: 0, 4: 21456, 2: 14764032, 7: 0, 5: 0, 3: 73728}
+PASS 88D kissing code 6234679368, vertical contact histogram {8: 120, 6: 0, 4: 25440, 2: 16404480, 7: 0, 5: 0, 3: 73728}
+PASS 89D kissing code 6234953258, vertical contact histogram {8: 122, 6: 0, 4: 25920, 2: 16677888, 7: 0, 5: 0, 3: 73728}
+PASS 90D kissing code 6235501038, vertical contact histogram {8: 126, 6: 0, 4: 26880, 2: 17224704, 7: 0, 5: 0, 3: 73728}
+PASS 91D kissing code 6236323428, vertical contact histogram {8: 132, 6: 0, 4: 29040, 2: 18044928, 7: 0, 5: 0, 3: 73728}
+PASS 92D kissing code 6237968592, vertical contact histogram {8: 144, 6: 0, 4: 33744, 2: 19685376, 7: 0, 5: 0, 3: 73728}
+PASS 93D kissing code 6238242514, vertical contact histogram {8: 146, 6: 0, 4: 34256, 2: 19958784, 7: 0, 5: 0, 3: 73728}
+PASS 94D kissing code 6238790358, vertical contact histogram {8: 150, 6: 0, 4: 35280, 2: 20505600, 7: 0, 5: 0, 3: 73728}
+PASS 95D kissing code 6239612700, vertical contact histogram {8: 156, 6: 0, 4: 37392, 2: 21325824, 7: 0, 5: 0, 3: 73728}
+PASS 96D kissing code 6241258744, vertical contact histogram {8: 232, 6: 0, 4: 42912, 2: 22966272, 7: 0, 5: 0, 3: 73728}
+PASS all eight filed comparison rows
+BASE 77 6222013324 gain 192
+PASS 77 {'prior': 6222013132, 'rephased_shell': 6222013324, 'append': 0, 'gain': 192, 'lower_bound': 6222013324} 0
+BASE 78 6223119668 gain 224
+PASS 78 {'prior': 6223119444, 'rephased_shell': 6223119668, 'append': 0, 'gain': 224, 'lower_bound': 6223119668} 0
+BASE 79 6224780712 gain 0
+PASS 79 {'prior': 6224780712, 'rephased_shell': 6224780712, 'append': 1304, 'gain': 1304, 'lower_bound': 6224782016} 17
+BASE 80 6228106104 gain 1152
+PASS 80 {'prior': 6228104952, 'rephased_shell': 6228106104, 'append': 96, 'gain': 1248, 'lower_bound': 6228106200} 48
+BASE 81 6228379706 gain 1120
+PASS 81 {'prior': 6228378586, 'rephased_shell': 6228379706, 'append': 96, 'gain': 1216, 'lower_bound': 6228379802} 48
+BASE 82 6228927054 gain 1200
+PASS 82 {'prior': 6228925854, 'rephased_shell': 6228927054, 'append': 96, 'gain': 1296, 'lower_bound': 6228927150} 48
+BASE 83 6229748724 gain 1296
+PASS 83 {'prior': 6229747428, 'rephased_shell': 6229748724, 'append': 96, 'gain': 1392, 'lower_bound': 6229748820} 48
+BASE 84 6231393488 gain 1904
+PASS 84 {'prior': 6231391584, 'rephased_shell': 6231393488, 'append': 96, 'gain': 2000, 'lower_bound': 6231393584} 48
