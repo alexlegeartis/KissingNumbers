@@ -890,6 +890,9 @@ with io.open(os.path.join(IMP, 'dim84-85-all-profiles-append', 'claims.json'), e
 with io.open(os.path.join(IMP, 'dim60-61-rm80-guard-transfer', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim60-61-rm80-guard-transfer', 'verify.py: transferred supports, exact overlap tests and shared Hamming parities')
+with io.open(os.path.join(IMP, 'dim60-61-dg-spike-banks', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim60-61-dg-spike-banks', 'verify.py: exact DG spike angles and affine-prefix counts')
 with io.open(os.path.join(IMP, 'dim62-63-dg-spike-banks', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim62-63-dg-spike-banks', 'verify.py: exact cubic-class spike geometry and short-guard bank overlaps')
@@ -2835,6 +2838,7 @@ if '--write-results' in sys.argv and not fail:
         'dim81-84-antipodal-tail-codes': 'Antipodal support codes as Γ72 tails',
         'dim84-85-all-profiles-append': 'Shared phases and horizontal triple components',
         'dim60-61-rm80-guard-transfer': 'Transferred Reed–Muller sign banks',
+        'dim60-61-dg-spike-banks': 'Delsarte–Goethals spikes on transferred banks',
         'dim62-63-dg-spike-banks': 'Delsarte–Goethals spike banks',
         'dim62-two-mark-diagonals': 'Orthogonal two-mark heads',
         'dim85-shared-phase-refill': 'Shared-phase Γ72 contact refill',
@@ -2880,6 +2884,7 @@ if '--write-results' in sys.argv and not fail:
     out.append("23 November 2026 — Transferring signed support banks between dimensions raises **60D to 68,721,704** (+688,128) and **61D to 118,850,346** (+210,944). [Exact replay](verifications/improved/dim60-61-rm80-guard-transfer/).")
     out.append("")
     out.append("23 November 2026 — Delsarte–Goethals spike banks and short guards raise **62D to 172,734,988** (+600,576) and **63D to 232,191,236** (+2,031,616). [Exact replay](verifications/improved/dim62-63-dg-spike-banks/).")
+    out.append("23 November 2026 — Spike-amplified Delsarte–Goethals layers add **982,920** contacts in 60D and **1,474,440** in 61D, for **69,704,624** and **120,324,786** respectively. [Exact replay](verifications/improved/dim60-61-dg-spike-banks/).")
     out.append("")
     out.append("23 November 2026 — Orthogonal two-mark heads and shared parity checks raise **62D to 172,134,412**, adding **1,854,464** (+1.09%) over the preceding bound. [Exact replay](verifications/improved/dim62-two-mark-diagonals/).")
     out.append("")

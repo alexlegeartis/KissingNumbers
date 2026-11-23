@@ -6,6 +6,8 @@
 
 23 November 2026 — Delsarte–Goethals spike banks and short guards raise **62D to 172,734,988** (+600,576) and **63D to 232,191,236** (+2,031,616). [Exact replay](verifications/improved/dim62-63-dg-spike-banks/).
 
+23 November 2026 — Spike-amplified Delsarte–Goethals layers add **982,920** contacts in 60D and **1,474,440** in 61D, for **69,704,624** and **120,324,786** respectively. [Exact replay](verifications/improved/dim60-61-dg-spike-banks/).
+
 23 November 2026 — Orthogonal two-mark heads and shared parity checks raise **62D to 172,134,412**, adding **1,854,464** (+1.09%) over the preceding bound. [Exact replay](verifications/improved/dim62-two-mark-diagonals/).
 
 23 November 2026 — Sharing phase occupancy across all three horizontal profiles and reallocating triple groups raises **84D to 6,292,388,112** and **85D to 6,295,120,802**. [Exact replay](verifications/improved/dim84-85-all-profiles-append/).
@@ -317,8 +319,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 57 | 52 416 306 | **54 766 981** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 58 | 52 416 510 | **56 281 695** | 1.07 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 59 | 52 416 604 | **56 969 157** | 1.09 | `classes` | [Antipodal pure-tail refill](verifications/improved/dim59-p48-pure94/) |
-| 60 | 52 416 841 | **68 721 704** | 1.31 | `classes` | [Transferred Reed–Muller sign banks](verifications/improved/dim60-61-rm80-guard-transfer/) |
-| 61 | 52 417 154 | **118 850 346** | 2.27 | `codes` | [Transferred Reed–Muller sign banks](verifications/improved/dim60-61-rm80-guard-transfer/) |
+| 60 | 52 416 841 | **69 704 624** | 1.33 | `classes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
+| 61 | 52 417 154 | **120 324 786** | 2.30 | `codes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
 | 62 | 52 417 932 | **172 734 988** | 3.30 | `codes` | [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) |
 | 63 | 52 418 564 | **232 191 236** | 4.43 | `codes` | [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) |
 | 64 | 331 737 984 | **418 478 976** | 1.26 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
@@ -428,8 +430,8 @@ refreshed table, not more search.
 | 45-46 | `dim41-46-p48-heads` | verify.py (integer angles and exact ranks; inherited population tables, not a fresh body enumeration) |
 | 49 | `dim49-joint-signed-exchange` | final.py: exact complete signed class geometry |
 | 50-60 | `dim50-60-p48-global-owner-refill` | verify.py: exact changed-class pairs, signed ownership and tetrahedral tail replay |
-| 60 | `dim60-p48-n12-blockers` | verify.py and audit_angles.py: exact paired latitude, label permutation and shared blocker count |
-| 60 | `dim60-p48-frame48-tail` | verify.py and audit_angles.py: integral frame, signed tail and conservative exact owner charge |
+| 60 | `dim60-p48-n12-blockers` | **69 704 624** | 1.33 || [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) 
+| 60 | `dim60-p48-frame48-tail` | **69 704 624** | 1.33 || [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) 
 | 62–67 | `dim62-67-rm2-cubic-cosets` | verify.py: two exact cubic-coset checks and sparse-layer transfer |
 | 62–67 | `dim62-67-rm2-selfsparse` | verify.py: two independent code reconstructions, exact sections and translated support shells |
 | 59 | `dim59-p48-frame-cube` | verify.py: exact Pless head/owner compatibility and variable-radius tails |
@@ -456,6 +458,7 @@ refreshed table, not more search.
 | 81–85 | `dim81-85-gamma72-apn-complete-dm` | verify.py: exact full D-type root and horizontal contact shell replay |
 | 81, 84 | `dim81-84-antipodal-tail-codes` | verify.py: exact antipodal tail Grams and coupled profile replay |
 | 60–61 | `dim60-61-rm80-guard-transfer` | verify.py: transferred supports, exact overlap tests and shared Hamming parities |
+| 60–61 | `dim60-61-dg-spike-banks` | verify.py: exact DG spike angles and affine-prefix counts |
 | 62–63 | `dim62-63-dg-spike-banks` | verify.py: exact cubic-class spike geometry and short-guard bank overlaps |
 | 62 | `dim62-two-mark-diagonals` | **172 734 988** | 3.30 || [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) 
 | 84–85 | `dim84-85-all-profiles-append` | verify.py: exact profile intersections and triple component separation |

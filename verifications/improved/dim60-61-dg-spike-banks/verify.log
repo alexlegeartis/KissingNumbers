@@ -1,0 +1,2 @@
+{"status": "PASS", "dimension": 60, "prior": 68721704, "added_spikes": 983040, "dropped_ordinary_poles": 120, "net_gain": 982920, "lower_bound": 69704624, "labels": [2, 3], "norms_squared": ["357/4", "357/4"]}
+{"status": "PASS", "dimension": 61, "prior": 118850346, "added_spikes": 1474560, "dropped_ordinary_poles": 120, "net_gain": 1474440, "lower_bound": 120324786, "labels": [7, 5, 6], "norms_squared": ["38281/400", "38281/400", "141201/1600"]}
