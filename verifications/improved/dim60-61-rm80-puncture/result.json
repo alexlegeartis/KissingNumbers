@@ -1,0 +1,37 @@
+[
+  {
+    "n": 60,
+    "marks": [
+      0,
+      20,
+      41,
+      61
+    ],
+    "headmarks": [],
+    "dense": 41943040,
+    "ordinary_supports": 12005,
+    "marked_points": 0,
+    "planes": 7995,
+    "poles": 120,
+    "total": 66657320
+  },
+  {
+    "n": 61,
+    "marks": [
+      0,
+      20,
+      41,
+      61
+    ],
+    "headmarks": [
+      0,
+      20
+    ],
+    "dense": 83886080,
+    "ordinary_supports": 12005,
+    "marked_points": 8101888,
+    "planes": 8555,
+    "poles": 122,
+    "total": 116711210
+  }
+]

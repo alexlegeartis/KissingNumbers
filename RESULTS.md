@@ -2,6 +2,8 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Four-coordinate Reed–Muller puncturing, unequal heights and shared parity checks raise **60D to 68,033,576** and **61D to 118,639,402** (+15.97% and +30.32% over the preceding bounds). [Exact replay](verifications/improved/dim60-61-rm80-puncture/).
+
 23 November 2026 — Barnes–Wall-type equality-section tails improve **82D, 83D and 85D**, including **6,265,203,518 in 83D** and **6,292,777,568 in 85D**. [Exact replay](verifications/improved/dim82-85-bw16-tail-sections/).
 
 23 November 2026 — Perturbing and reassembling Coxeter–Todd cells raises **36D to 506,628** (+252). [Exact replay](verifications/improved/dim36-ct-neutral-reheat/).
@@ -305,8 +307,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 57 | 52 416 306 | **54 766 981** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 58 | 52 416 510 | **56 281 695** | 1.07 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 59 | 52 416 604 | **56 969 157** | 1.09 | `classes` | [Antipodal pure-tail refill](verifications/improved/dim59-p48-pure94/) |
-| 60 | 52 416 841 | **58 665 998** | 1.12 | `classes` | [Common-class 48-frame and signed tail](verifications/improved/dim60-p48-frame48-tail/) |
-| 61 | 52 417 154 | **91 038 762** | 1.74 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
+| 60 | 52 416 841 | **68 033 576** | 1.30 | `classes` | [Punctured Reed–Muller signs, unequal heads and shared parity checks](verifications/improved/dim60-61-rm80-puncture/) |
+| 61 | 52 417 154 | **118 639 402** | 2.26 | `codes` | [Punctured Reed–Muller signs, unequal heads and shared parity checks](verifications/improved/dim60-61-rm80-puncture/) |
 | 62 | 52 417 932 | **170 279 948** | 3.25 | `codes` | [Simultaneous support rephasing](verifications/improved/dim62-63-guarded-rephase/) |
 | 63 | 52 418 564 | **230 159 620** | 4.39 | `codes` | [Simultaneous support rephasing](verifications/improved/dim62-63-guarded-rephase/) |
 | 64 | 331 737 984 | **418 478 976** | 1.26 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
@@ -442,6 +444,7 @@ refreshed table, not more search.
 | 62–63 | `dim62-63-guarded-rephase` | verify.py: exact support overlap and simultaneous affine guard parities |
 | 77–80 | `dim77-80-gamma72-apn-coupled-tails` | verify.py: exact full root and B-only tails, coupled singleton contacts |
 | 81–85 | `dim81-85-gamma72-apn-complete-dm` | verify.py: exact full D-type root and horizontal contact shell replay |
+| 60–61 | `dim60-61-rm80-puncture` | verify_extra.py: exact simultaneous rephasing and dense–sparse contact gates |
 | 36 | `dim36-ct-neutral-reheat` | verify.py: exact whole-cell and reassignments; independent coordinate delta |
 | 82–83, 85 | `dim82-85-bw16-tail-sections` | verify.py: exact equality sections and all three profile graphs |
 | 77–85 | `dim81-85-gamma72-half-sign` | verify.py and verify77.py: exact half-sign and contact-graph replay |

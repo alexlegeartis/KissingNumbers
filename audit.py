@@ -881,6 +881,9 @@ with io.open(os.path.join(IMP, 'dim77-80-gamma72-apn-coupled-tails', 'claims.jso
 with io.open(os.path.join(IMP, 'dim81-85-gamma72-apn-complete-dm', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim81-85-gamma72-apn-complete-dm', 'verify.py: exact full D-type root and horizontal contact shell replay')
+with io.open(os.path.join(IMP, 'dim60-61-rm80-puncture', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim60-61-rm80-puncture', 'verify_extra.py: exact simultaneous rephasing and dense–sparse contact gates')
 with io.open(os.path.join(IMP, 'dim36-ct-neutral-reheat', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim36-ct-neutral-reheat', 'verify.py: exact Coxeter–Todd whole-cell perturbation and vertex delta')
@@ -2811,6 +2814,7 @@ if '--write-results' in sys.argv and not fail:
         'dim62-63-guarded-rephase': 'Simultaneous support rephasing',
         'dim77-80-gamma72-apn-coupled-tails': 'Complete Γ72 tails and coupled contacts',
         'dim81-85-gamma72-apn-complete-dm': 'Complete D-type Γ72 fibres',
+        'dim60-61-rm80-puncture': 'Punctured Reed–Muller signs, unequal heads and shared parity checks',
         'dim36-ct-neutral-reheat': 'Coxeter–Todd cell perturbations and recovery',
         'dim82-85-bw16-tail-sections': 'Barnes–Wall-type equality-section tails',
         'dim81-85-gamma72-half-sign': 'Half-sign tails and coupled Γ72 profiles',
@@ -2849,6 +2853,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
     out.append("")
+    out.append("23 November 2026 — Four-coordinate Reed–Muller puncturing, unequal heights and shared parity checks raise **60D to 68,033,576** and **61D to 118,639,402** (+15.97% and +30.32% over the preceding bounds). [Exact replay](verifications/improved/dim60-61-rm80-puncture/).")
+    out.append('')
     out.append("23 November 2026 — Barnes–Wall-type equality-section tails improve **82D, 83D and 85D**, including **6,265,203,518 in 83D** and **6,292,777,568 in 85D**. [Exact replay](verifications/improved/dim82-85-bw16-tail-sections/).")
     out.append('')
     out.append("23 November 2026 — Perturbing and reassembling Coxeter–Todd cells raises **36D to 506,628** (+252). [Exact replay](verifications/improved/dim36-ct-neutral-reheat/).")

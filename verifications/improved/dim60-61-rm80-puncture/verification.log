@@ -1,0 +1,2 @@
+{"dimension": 60, "added_supports": {"0": 672}, "total_guards": 2232, "dangerous_pairs": 2232, "added_points": 1376256, "lower_bound": 68033576}
+{"dimension": 61, "added_supports": {"0": 672, "1": 253, "1048576": 286}, "total_guards": 5212, "dangerous_pairs": 5212, "added_points": 1928192, "lower_bound": 118639402}
