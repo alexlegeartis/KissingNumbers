@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "dimension": 59,
+  "prior": 56967571,
+  "old_signed_superset": 4586146,
+  "axes": 24,
+  "weighted_tails": 32,
+  "cube_words": 1024,
+  "doubled_words": 1024,
+  "new_vectors": 2112,
+  "removed_equator": 16,
+  "removed_poles": 576,
+  "improvement": 1520,
+  "lower_bound": 56969091,
+  "lower_bounds": {
+    "59": 56969091
+  }
+}

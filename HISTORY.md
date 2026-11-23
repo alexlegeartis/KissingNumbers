@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>23–29 November 2026: code shells (through 23 November)</summary>
 
+23 November 2026 — A diagonally weighted Pless-frame cube improves 59D by 1,520 points to **56,969,091**. [Exact replay](verifications/improved/dim59-p48-frame-cube/).
+
 23 November 2026 — Weight-12 bodies with axial tags add 65,536 kissing points in 66D and 24,576 in 67D. [Exact replay](verifications/improved/dim66-67-rm2-axial-weight12/).
 
 23 November 2026 — Two alternating-checksum polar shelves add 262,144 kissing points in 65D, reaching **413,789,058**. [Exact replay](verifications/improved/dim65-rm2-polar-lift/).

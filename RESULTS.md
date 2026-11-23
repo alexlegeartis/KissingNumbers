@@ -1,5 +1,7 @@
 # Results
 
+23 November 2026 — A diagonally weighted Pless-frame cube improves 59D by 1,520 points to **56,969,091**. [Exact replay](verifications/improved/dim59-p48-frame-cube/).
+
 23 November 2026 — Weight-12 bodies with axial tags add 65,536 kissing points in 66D and 24,576 in 67D. [Exact replay](verifications/improved/dim66-67-rm2-axial-weight12/).
 
 23 November 2026 — Two alternating-checksum polar shelves add 262,144 kissing points in 65D, reaching **413,789,058**. [Exact replay](verifications/improved/dim65-rm2-polar-lift/).
@@ -260,7 +262,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 56 | 52 416 240 | **54 267 873** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 57 | 52 416 306 | **54 766 981** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 58 | 52 416 510 | **56 281 695** | 1.07 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
-| 59 | 52 416 604 | **56 967 571** | 1.09 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
+| 59 | 52 416 604 | **56 969 091** | 1.09 | `classes` | [Weighted Pless cube](verifications/improved/dim59-p48-frame-cube/) |
 | 60 | 52 416 841 | **58 665 998** | 1.12 | `classes` | [Common-class 48-frame and signed tail](verifications/improved/dim60-p48-frame48-tail/) |
 | 61 | 52 417 154 | **91 038 762** | 1.74 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
 | 62 | 52 417 932 | **150 561 804** | 2.87 | `codes` | [Dense code and its sparse shells](verifications/improved/dim62-67-rm2-selfsparse/) |
@@ -376,6 +378,7 @@ refreshed table, not more search.
 | 60 | `dim60-p48-frame48-tail` | verify.py and audit_angles.py: integral frame, signed tail and conservative exact owner charge |
 | 62–67 | `dim62-67-rm2-cubic-cosets` | verify.py: two exact cubic-coset checks and sparse-layer transfer |
 | 62–67 | `dim62-67-rm2-selfsparse` | verify.py: two independent code reconstructions, exact sections and translated support shells |
+| 59 | `dim59-p48-frame-cube` | verify.py: exact Pless head/owner compatibility and variable-radius tails |
 | 66–67 | `dim66-67-rm2-axial-weight12` | verify.py: literal support overlaps and exact signed axial tags |
 | 65 | `dim65-rm2-polar-lift` | verify.py: exact subcode checks and normalized cross-layer bounds |
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |

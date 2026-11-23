@@ -842,6 +842,10 @@ with io.open(os.path.join(IMP, 'dim65-rm2-polar-lift', 'claims.json'), encoding=
     _row = json.load(_file)
     add(_row['dimension'], _row['lower_bound'], 'dim65-rm2-polar-lift', 'verify.py: exact polar code, distances and norm checks')
 
+with io.open(os.path.join(IMP, 'dim59-p48-frame-cube', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim59-p48-frame-cube', 'verify.py: exact Pless head checks and variable-radius tails')
+
 with io.open(os.path.join(IMP, 'dim66-67-rm2-axial-weight12', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim66-67-rm2-axial-weight12', 'verify.py: exact shifted body overlaps and axial signs')
@@ -2692,6 +2696,7 @@ if '--write-results' in sys.argv and not fail:
         'dim60-p48-frame48-tail': 'Common-class 48-frame and signed tail',
         'dim62-67-rm2-cubic-cosets': 'Eighty cubic cosets with exact sparse transfer',
         'dim62-67-rm2-selfsparse': 'Dense code and its sparse shells',
+        'dim59-p48-frame-cube': 'Weighted Pless cube',
         'dim66-67-rm2-axial-weight12': 'Axial weight-12 additions',
         'dim65-rm2-polar-lift': 'Alternating-checksum polar shelves',
         'dim54-60-p48-tail-antipodes': 'complementary tail directions above signed P48 with exact ownership and angles',
@@ -2715,6 +2720,8 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append("")
+    out.append("23 November 2026 — A diagonally weighted Pless-frame cube improves 59D by 1,520 points to **56,969,091**. [Exact replay](verifications/improved/dim59-p48-frame-cube/).")
     out.append("")
     out.append("23 November 2026 — Weight-12 bodies with axial tags add 65,536 kissing points in 66D and 24,576 in 67D. [Exact replay](verifications/improved/dim66-67-rm2-axial-weight12/).")
     out.append("")
