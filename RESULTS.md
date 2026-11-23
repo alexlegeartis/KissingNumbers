@@ -12,6 +12,8 @@
 
 23 November 2026 — Split-amplitude Delsarte–Goethals replacements raise **64D to 422,673,152** (+4,194,176) and **65D to 422,678,354** (+3,678,080). The 65D four-site count inherits its existing theorem. [Exact replay](verifications/improved/dim64-65-dg-split-amplitudes/).
 
+23 November 2026 — Replacing the 7,812-word ternary phase code by an exact 7,906-word one raises **86D to 8,009,440,206**, **87D to 8,161,875,776**, **88D to 13,361,878,540**, and **90D to 21,956,420,122**. The QR–Pless construction does not use the Nebe lattice. [Exact replay](verifications/improved/dim86-90-qr-pless-phase7906/).
+
 23 November 2026 — Retaining 44 hyperplanes alongside the split-amplitude donors raises **65D to 422,858,578**, **66D to 432,812,452**, **67D to 451,803,398**, and **68D to 481,928,984**. [Exact replay](verifications/improved/dim65-68-dg-retained-atlas/).
 
 23 November 2026 — Three omitted prefixes give **173,717,908** in 62D (+982,920), replacing the single spike layer. [Exact replay](verifications/improved/dim62-dg-three-prefixes/).
@@ -352,11 +354,11 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 83 | 6 218 176 204 | **6 265 203 518** | 1.01 | `cosets` | [Barnes–Wall-type equality-section tails](verifications/improved/dim82-85-bw16-tail-sections/) |
 | 84 | 6 218 176 441 | **6 292 388 112** | 1.01 | `cosets` | [Shared phases and horizontal triple components](verifications/improved/dim84-85-all-profiles-append/) |
 | 85 | 6 218 176 754 | **6 297 176 738** | 1.01 | `cosets` | [Zinoviev–Ericson tail with all profiles](verifications/improved/dim85-gamma72-ze99-tail/) |
-| 86 | 6 218 177 532 | **8 008 552 282** | 1.29 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
-| 87 | 6 218 178 164 | **8 160 988 416** | 1.31 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
-| 88 | 6 218 179 920 | **13 358 363 692** | 2.15 | `codes` | [Full Pless census and new chord marks](verifications/improved/dim88-full-pless-chord-marks/) 
+| 86 | 6 218 177 532 | **8 009 440 206** | 1.29 | `codes` | [Larger ternary QR–Pless phases](verifications/improved/dim86-90-qr-pless-phase7906/) 
+| 87 | 6 218 178 164 | **8 161 875 776** | 1.31 | `codes` | [Larger ternary QR–Pless phases](verifications/improved/dim86-90-qr-pless-phase7906/) 
+| 88 | 6 218 179 920 | **13 361 878 540** | 2.15 | `codes` | [Larger ternary QR–Pless phases](verifications/improved/dim86-90-qr-pless-phase7906/) 
 | 89 | 6 218 181 330 | **15 185 856 402** | 2.44 | `codes` | [Restricted Reed–Solomon axis code](verifications/improved/dim89-96-rs-axis-code-repack/)
-| 90 | 6 218 183 254 | **21 944 111 386** | 3.53 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/) |
+| 90 | 6 218 183 254 | **21 956 420 122** | 3.53 | `codes` | [Larger ternary QR–Pless phases](verifications/improved/dim86-90-qr-pless-phase7906/) |
 | 91 | 6 218 187 548 | **25 923 338 000** | 4.17 | `codes` | [Non-Steiner triality append](verifications/improved/dim91-93-nonsteiner-triality-append/)
 | 92 | 8 589 934 592 | **34 513 272 592** | 4.02 | `codes` | [Non-Steiner triality append](verifications/improved/dim91-93-nonsteiner-triality-append/)
 | 93 | 17 179 869 184 | **49 545 659 928** | 2.88 | `codes` | [Bipartite D5 heads and 46 Z8 fibres](verifications/improved/dim93-z8-split-d5-heads/) 
@@ -470,6 +472,7 @@ refreshed table, not more search.
 | 85 | `dim85-gamma72-ze99-tail` | verify.py: exact algebraic tail Gram and full horizontal profile replay |
 | 64–65 | `dim64-65-dg-split-amplitudes` | verify.py: exact dense replacements and rephased support guards |
 | 65–68 | `dim65-68-dg-retained-atlas` | verify.py: atlas compatibility and rephased support guards |
+| 86–88, 90 | `dim86-90-qr-pless-phase7906` | verify.py: all ternary phase pairs, exact mixed-layer gates and pinned counts |
 | 62 | `dim62-dg-three-prefixes` | verify.py: exact three-prefix angular and parity gates |
 | 62–63 | `dim62-63-dg-spike-banks` | verify.py: exact cubic-class spike geometry and short-guard bank overlaps |
 | 62 | `dim62-two-mark-diagonals` | **173 717 908** | 3.31 || [Three Delsarte–Goethals spike prefixes](verifications/improved/dim62-dg-three-prefixes/) 
