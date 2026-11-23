@@ -1,0 +1,42 @@
+77–80D primary replay
+components 272604 groups 245916 maxgroup 144 maxcomponent 32 edges 4386 seed 273350 result 273424 gained 74
+PASS coupled profiles 77 6223377992 new triples 74 profile counts 85168 102978 new profile contacts 142480
+components 482307 groups 419155 maxgroup 208 maxcomponent 56 edges 17609 seed 484849 result 485219 gained 370
+PASS coupled profiles 78 6227143800 new triples 370 profile counts 79237 150038 new profile contacts 566408
+components 822549 groups 680287 maxgroup 624 maxcomponent 624 edges 59479 seed 831882 result 833529 gained 1647
+PASS coupled profiles 79 6233438398 new triples 1647 profile counts 81265 239264 new profile contacts 1263992
+components 1484543 groups 1138217 maxgroup 1032 maxcomponent 1032 edges 224259 seed 1521939 result 1529348 gained 7409
+PASS coupled profiles 80 6246118720 new triples 7409 profile counts 93227 429844 new profile contacts 2692936
+
+81–85D primary replay
+components 1595939 groups 1215611 maxgroup 664 maxcomponent 664 edges 328500 seed 1645599 result 1659303 gained 13704
+two-profile replay 81 162638 501364 169976 CacheInfo(hits=174, misses=3614, maxsize=640, currsize=640)
+PASS half-sign 81 6248779696 gain 14120752 triples 688235 recoupled 11245 component gain 13704 two-block 0 profile counts [0, 0]
+components 1761866 groups 1326208 maxgroup 840 maxcomponent 840 edges 433101 seed 1829346 result 1849554 gained 20208
+two-profile replay 82 176296 564033 185112 CacheInfo(hits=317, misses=4707, maxsize=640, currsize=640)
+PASS half-sign 82 6252353036 gain 13941544 triples 643182 recoupled 14088 component gain 20208 two-block 0 profile counts [0, 0]
+components 1940656 groups 1436053 maxgroup 1096 maxcomponent 1096 edges 551704 seed 2034362 result 2058076 gained 23714
+two-profile replay 83 201386 639092 200952 CacheInfo(hits=576, misses=5861, maxsize=640, currsize=640)
+PASS half-sign 83 6256290188 gain 13753664 triples 599585 recoupled 17452 component gain 23714 two-block 0 profile counts [0, 0]
+components 2950534 groups 2054351 maxgroup 1520 maxcomponent 1520 edges 1959862 seed 3308856 result 3412491 gained 103635
+two-profile replay 84 238486 1119828 227532 CacheInfo(hits=871, misses=22646, maxsize=640, currsize=640)
+PASS half-sign 84 6281841864 gain 34677952 triples 1533245 recoupled 89821 component gain 103635 two-block 0 profile counts [0, 0]
+components 3191490 groups 2116882 maxgroup 1536 maxcomponent 1504 edges 2081055 seed 3572455 result 3676519 gained 104064
+two-profile replay 85 240906 1194531 227564 CacheInfo(hits=614, misses=24694, maxsize=640, currsize=640)
+PASS half-sign 85 6286710352 gain 34860968 triples 1498461 recoupled 99473 component gain 104064 two-block 0 profile counts [0, 0]
+
+Independent 81–85D triple and profile replay
+PASS final optimized triples 82 original triples 1172076 optimized triples 1849554 net contacts 10839648 pair group comparisons [114369, 113387, 114317] triple-only lower 6249251140
+PASS 83 6252129884 extra 9593360 surviving rows 599585 old clips 1603 new clips 250 q4 vertical bound 8
+PASS final optimized triples 83 original triples 1417325 optimized triples 2058076 net contacts 10252016 pair group comparisons [146984, 146949, 148192] triple-only lower 6252788540
+PASS 84 6271695832 extra 24531920 surviving rows 1533245 old clips 5148 new clips 2603 q4 vertical bound 8
+PASS final optimized triples 84 original triples 1685790 optimized triples 3412491 net contacts 27627216 pair group comparisons [421999, 423068, 423173] triple-only lower 6274791128
+PASS 85 6275824760 extra 23975376 surviving rows 1498461 old clips 5284 new clips 2768 q4 vertical bound 8
+PASS final optimized triples 85 original triples 1974521 optimized triples 3676519 net contacts 27231968 pair group comparisons [533852, 532053, 535692] triple-only lower 6279081352
+Loaded literal profile support shapes (128, 144, 3) (128, 3072, 2) (1919, 24, 24) (6144, 24)
+PASS exact shell coordinates, parity classes, and all 128 allowed 4+8/6+6 layouts
+PASS final exact profiles 81 6248779696 old 1301104 new 4010912 profiles48,66 83572 417792 relevant Gram checks 0 32456 4374528 4374528
+PASS final exact profiles 82 6252353036 old 1410368 new 4512264 profiles48,66 90945 473088 relevant Gram checks 0 54465 5778432 5778432
+PASS final exact profiles 83 6256290188 old 1611088 new 5112736 profiles48,66 104564 534528 relevant Gram checks 0 46786 7314432 7314432
+PASS final exact profiles 84 6281841864 old 1907888 new 8958624 profiles48,66 124500 995328 relevant Gram checks 0 8139 26035200 26035200
+PASS final exact profiles 85 6286710352 old 1927248 new 9556248 profiles48,66 125475 1069056 relevant Gram checks 0 56704 27672576 27672576

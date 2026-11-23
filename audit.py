@@ -881,6 +881,9 @@ with io.open(os.path.join(IMP, 'dim77-80-gamma72-apn-coupled-tails', 'claims.jso
 with io.open(os.path.join(IMP, 'dim81-85-gamma72-apn-complete-dm', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim81-85-gamma72-apn-complete-dm', 'verify.py: exact full D-type root and horizontal contact shell replay')
+with io.open(os.path.join(IMP, 'dim81-85-gamma72-half-sign', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim81-85-gamma72-half-sign', 'verify.py and verify77.py: exact half-sign and contact-graph replay')
 with io.open(os.path.join(IMP, 'dim81-85-gamma72-norm4-layer', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim81-85-gamma72-norm4-layer', 'verify.py: exact norm-four B-only phases and pure eight-set tails')
@@ -2802,6 +2805,7 @@ if '--write-results' in sys.argv and not fail:
         'dim62-63-guarded-rephase': 'Simultaneous support rephasing',
         'dim77-80-gamma72-apn-coupled-tails': 'Complete Γ72 tails and coupled contacts',
         'dim81-85-gamma72-apn-complete-dm': 'Complete D-type Γ72 fibres',
+        'dim81-85-gamma72-half-sign': 'Half-sign tails and coupled Γ72 profiles',
         'dim81-85-gamma72-norm4-layer': 'Complete D-type fibres and B-only tail shells',
         'dim77-79-gamma72-clipped-fibres': 'Clipped Γ72–D5, E6, E7 fibres',
         'dim65-66-grouped-four-site-designs': 'Grouped four-site designs',
@@ -2837,6 +2841,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
     out.append("")
+    out.append("23 November 2026 — Half-sign tails and three separate horizontal contact graphs improve **77–85D**, including **6,281,841,864 in 84D** and **6,286,710,352 in 85D**. [Exact replay](verifications/improved/dim81-85-gamma72-half-sign/).")
+    out.append('')
     out.append("23 November 2026 — Coordinated Coxeter–Todd cell swaps and lifted-fibre reassignment raise **36D to 506,376**, an increase of 2,011. [Exact replay](verifications/improved/dim36-ct-multicell-fibres/).")
     out.append('')
     out.append("23 November 2026 — Shared eight-site parity checks add signed supports without shrinking any old bank: **170,279,948 in 62D** and **230,159,620 in 63D**. [Exact replay](verifications/improved/dim62-63-guarded-rephase/).")

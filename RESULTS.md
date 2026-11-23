@@ -2,6 +2,8 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Half-sign tails and three separate horizontal contact graphs improve **77–85D**, including **6,281,841,864 in 84D** and **6,286,710,352 in 85D**. [Exact replay](verifications/improved/dim81-85-gamma72-half-sign/).
+
 23 November 2026 — Coordinated Coxeter–Todd cell swaps and lifted-fibre reassignment raise **36D to 506,376**, an increase of 2,011. [Exact replay](verifications/improved/dim36-ct-multicell-fibres/).
 
 23 November 2026 — Shared eight-site parity checks add signed supports without shrinking any old bank: **170,279,948 in 62D** and **230,159,620 in 63D**. [Exact replay](verifications/improved/dim62-63-guarded-rephase/).
@@ -315,15 +317,15 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 74 | 6 218 175 606 | **6 218 995 830** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 75 | 6 218 175 612 | **6 219 816 924** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 76 | 6 218 175 624 | **6 221 459 976** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
-| 77 | 6 218 175 640 | **6 223 234 328** | 1.00 | `cosets` | [Complete Γ72 tails and coupled contacts](verifications/improved/dim77-80-gamma72-apn-coupled-tails/) |
-| 78 | 6 218 175 672 | **6 226 571 472** | 1.00 | `cosets` | [Complete Γ72 tails and coupled contacts](verifications/improved/dim77-80-gamma72-apn-coupled-tails/) |
-| 79 | 6 218 175 726 | **6 232 148 054** | 1.00 | `cosets` | [Complete Γ72 tails and coupled contacts](verifications/improved/dim77-80-gamma72-apn-coupled-tails/) |
-| 80 | 6 218 175 840 | **6 243 307 240** | 1.00 | `cosets` | [Complete Γ72 tails and coupled contacts](verifications/improved/dim77-80-gamma72-apn-coupled-tails/) |
-| 81 | 6 218 175 906 | **6 234 658 944** | 1.00 | `cosets` | [Complete D-type fibres and B-only tail shells](verifications/improved/dim81-85-gamma72-norm4-layer/) |
-| 82 | 6 218 176 110 | **6 238 411 492** | 1.00 | `cosets` | [Complete D-type fibres and B-only tail shells](verifications/improved/dim81-85-gamma72-norm4-layer/) |
-| 83 | 6 218 176 204 | **6 242 536 524** | 1.00 | `cosets` | [Complete D-type fibres and B-only tail shells](verifications/improved/dim81-85-gamma72-norm4-layer/) |
-| 84 | 6 218 176 441 | **6 247 163 912** | 1.00 | `cosets` | [Complete D-type fibres and B-only tail shells](verifications/improved/dim81-85-gamma72-norm4-layer/) |
-| 85 | 6 218 176 754 | **6 251 849 384** | 1.01 | `cosets` | [Complete D-type fibres and B-only tail shells](verifications/improved/dim81-85-gamma72-norm4-layer/) |
+| 77 | 6 218 175 640 | **6 223 377 992** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
+| 78 | 6 218 175 672 | **6 227 143 800** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
+| 79 | 6 218 175 726 | **6 233 438 398** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
+| 80 | 6 218 175 840 | **6 246 118 720** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
+| 81 | 6 218 175 906 | **6 248 779 696** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
+| 82 | 6 218 176 110 | **6 252 353 036** | 1.01 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
+| 83 | 6 218 176 204 | **6 256 290 188** | 1.01 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
+| 84 | 6 218 176 441 | **6 281 841 864** | 1.01 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
+| 85 | 6 218 176 754 | **6 286 710 352** | 1.01 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
 | 86 | 6 218 177 532 | **8 008 552 282** | 1.29 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 87 | 6 218 178 164 | **8 160 988 416** | 1.31 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 88 | 6 218 179 920 | **13 358 363 692** | 2.15 | `codes` | [Full Pless census and new chord marks](verifications/improved/dim88-full-pless-chord-marks/) 
@@ -417,7 +419,7 @@ refreshed table, not more search.
 | 59 | `dim59-p48-frame-cube` | verify.py: exact Pless head/owner compatibility and variable-radius tails |
 | 59 | `dim59-p48-pure94` | verify.py: integer inequalities against all inherited tail families |
 | 63–66 | `dim63-66-internal-tags-bch` | verify.py: literal tagged support overlaps, an exact section, and normalized BCH polar separation |
-| 80 | `dim80-gamma72-partial-fibres` | verify.py: exact partial-shell clipping in seven charts |
+| 80 | `dim80-gamma72-partial-fibres` | **6 246 118 720** | 773800.63 |  | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
 | 81–82 | `dim81-82-gamma72-clipped-sidecars` | verify.py: exact A1/A2 sidecar fibres and inherited shell |
 | 82–84 | `dim82-84-gamma72-full-sidecar` | verify.py: exact cross-chart short shells and D4 sidecar |
 | 77–79 | `dim77-79-gamma72-clipped-fibres` | verify.py: exact D5, E6 and E7 partial-shell clipping |
@@ -436,6 +438,7 @@ refreshed table, not more search.
 | 62–63 | `dim62-63-guarded-rephase` | verify.py: exact support overlap and simultaneous affine guard parities |
 | 77–80 | `dim77-80-gamma72-apn-coupled-tails` | verify.py: exact full root and B-only tails, coupled singleton contacts |
 | 81–85 | `dim81-85-gamma72-apn-complete-dm` | verify.py: exact full D-type root and horizontal contact shell replay |
+| 77–85 | `dim81-85-gamma72-half-sign` | verify.py and verify77.py: exact half-sign and contact-graph replay |
 | 81–85 | `dim81-85-gamma72-norm4-layer` | verify.py: exact norm-four B-only phases and pure eight-set tails |
 | 36 | `dim36-ct-double-trine` | verify.py: exact complete trine swap and base checks |
 | 77–79 | `dim77-79-gamma72-seven-charts` | verify.py: exact transported phase and root-tail construction |
