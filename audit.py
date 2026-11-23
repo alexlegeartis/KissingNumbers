@@ -902,6 +902,12 @@ with io.open(os.path.join(IMP, 'dim64-65-dg-split-amplitudes', 'claims.json'), e
 with io.open(os.path.join(IMP, 'dim65-68-dg-retained-atlas', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim65-68-dg-retained-atlas', 'verify.py: atlas compatibility and rephased support guards')
+with io.open(os.path.join(IMP, 'dim82-83-gamma72-antipodal-tails', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim82-83-gamma72-antipodal-tails', 'verify.py: exact algebraic tail Gram and all three horizontal profile replays')
+with io.open(os.path.join(IMP, 'dim65-68-dg-diagonal-triples', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim65-68-dg-diagonal-triples', 'verify.py: exact tagged-bank parity, atlas refill, and diagonal-profile gates')
 with io.open(os.path.join(IMP, 'dim65-dg-three-site-donors', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim65-dg-three-site-donors', 'verify.py: exact three-site donor geometry and inherited rephased support guards')
@@ -2860,6 +2866,8 @@ if '--write-results' in sys.argv and not fail:
         'dim85-gamma72-ze99-tail': 'Zinoviev–Ericson tail with all profiles',
         'dim64-65-dg-split-amplitudes': 'Split-amplitude Delsarte–Goethals donors',
         'dim65-68-dg-retained-atlas': 'Split-amplitude donors with retained hyperplanes',
+        'dim82-83-gamma72-antipodal-tails': 'Complete antipodal 510- and 604-point tails',
+        'dim65-68-dg-diagonal-triples': 'Three-site donors with a 46-hyperplane atlas',
         'dim65-dg-three-site-donors': 'Three-site Delsarte–Goethals donors (partly theorem-dependent)',
         'dim86-90-qr-pless-phase7906': 'Larger ternary QR–Pless phases',
         'dim62-dg-three-prefixes': 'Three Delsarte–Goethals spike prefixes',
@@ -2911,6 +2919,10 @@ if '--write-results' in sys.argv and not fail:
     out.append("23 November 2026 — Spike-amplified Delsarte–Goethals layers add **982,920** contacts in 60D and **1,474,440** in 61D, for **69,704,624** and **120,324,786** respectively. [Exact replay](verifications/improved/dim60-61-dg-spike-banks/).")
     out.append("23 November 2026 — Replacing the Barnes–Wall tail by the 1,154-point Zinoviev–Ericson code raises **85D to 6,297,176,738** (+2,055,936). [Exact replay](verifications/improved/dim85-gamma72-ze99-tail/).")
     out.append("23 November 2026 — Split-amplitude Delsarte–Goethals replacements raise **64D to 422,673,152** (+4,194,176) and **65D to 422,678,354** (+3,678,080). The 65D four-site count inherits its existing theorem. [Exact replay](verifications/improved/dim64-65-dg-split-amplitudes/).")
+    out.append("23 November 2026 — Using complete antipodal small-dimensional tails raises **82D to 6,269,068,246** (+14,289,094) and **83D to 6,278,746,180** (+13,542,662), with the Γ72 carrier unchanged. [Exact replay](verifications/improved/dim82-83-gamma72-antipodal-tails/).")
+    out.append("")
+    out.append("23 November 2026 — Three-site donors on a tail diagonal raise **66D to 434,139,558**, **67D to 453,138,696**, and **68D to 483,338,010** (gains of +1,327,106, +1,335,298, and +1,409,026). Two additional atlas hyperplanes and the unused coordinate poles raise **65D to 424,177,492**. [Exact replay](verifications/improved/dim65-68-dg-diagonal-triples/).")
+    out.append("")
     out.append("23 November 2026 — Three-site Delsarte–Goethals replacements raise **65D to 424,169,298** (+1,310,720). The four-site count retains its theorem dependency. [Exact replay](verifications/improved/dim65-dg-three-site-donors/).")
     out.append("")
     out.append("23 November 2026 — Replacing the 7,812-word ternary phase code by an exact 7,906-word one raises **86D to 8,009,440,206**, **87D to 8,161,875,776**, **88D to 13,361,878,540**, and **90D to 21,956,420,122**. The QR–Pless construction does not use the Nebe lattice. [Exact replay](verifications/improved/dim86-90-qr-pless-phase7906/).")

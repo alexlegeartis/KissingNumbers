@@ -23,6 +23,10 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 23 November 2026 — Split-amplitude Delsarte–Goethals replacements raise **64D to 422,673,152** (+4,194,176) and **65D to 422,678,354** (+3,678,080). The 65D four-site count inherits its existing theorem. [Exact replay](verifications/improved/dim64-65-dg-split-amplitudes/).
 
+23 November 2026 — Using complete antipodal small-dimensional tails raises **82D to 6,269,068,246** (+14,289,094) and **83D to 6,278,746,180** (+13,542,662), with the Γ72 carrier unchanged. [Exact replay](verifications/improved/dim82-83-gamma72-antipodal-tails/).
+
+23 November 2026 — Three-site donors on a tail diagonal raise **66D to 434,139,558**, **67D to 453,138,696**, and **68D to 483,338,010** (gains of +1,327,106, +1,335,298, and +1,409,026). Two additional atlas hyperplanes and the unused coordinate poles raise **65D to 424,177,492**. [Exact replay](verifications/improved/dim65-68-dg-diagonal-triples/).
+
 23 November 2026 — Three-site Delsarte–Goethals replacements raise **65D to 424,169,298** (+1,310,720). The four-site count retains its theorem dependency. [Exact replay](verifications/improved/dim65-dg-three-site-donors/).
 
 23 November 2026 — Replacing the 7,812-word ternary phase code by an exact 7,906-word one raises **86D to 8,009,440,206**, **87D to 8,161,875,776**, **88D to 13,361,878,540**, and **90D to 21,956,420,122**. The QR–Pless construction does not use the Nebe lattice. [Exact replay](verifications/improved/dim86-90-qr-pless-phase7906/).
