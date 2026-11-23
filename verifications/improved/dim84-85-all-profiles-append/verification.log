@@ -1,0 +1,5 @@
+components 3187596 groups 2204958 maxgroup 1752 maxcomponent 1752 edges 3718309 seed 3983083 result 4009847 gained 26764
+PASS appended profiles 84 6292388112 additional 1218424 groups [49188, 399, 0] pure 0 reallocated triples 26764
+components 3277121 groups 2204958 maxgroup 1880 maxcomponent 1880 edges 4985296 seed 4114902 result 4173622 gained 58720
+PASS appended profiles 85 6295120802 additional 958168 groups [86558, 2331, 0] pure 138 reallocated triples 58720
+Independent raw key and profile Gram replay: complete selections verified in both dimensions.

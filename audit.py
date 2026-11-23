@@ -884,6 +884,12 @@ with io.open(os.path.join(IMP, 'dim81-85-gamma72-apn-complete-dm', 'claims.json'
 with io.open(os.path.join(IMP, 'dim81-84-antipodal-tail-codes', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim81-84-antipodal-tail-codes', 'verify.py: exact antipodal tail Grams and coupled profile replay')
+with io.open(os.path.join(IMP, 'dim84-85-all-profiles-append', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim84-85-all-profiles-append', 'verify.py: exact profile intersections and triple component separation')
+with io.open(os.path.join(IMP, 'dim62-two-mark-diagonals', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim62-two-mark-diagonals', 'verify.py: exact head geometry and simultaneous parity constraints')
 with io.open(os.path.join(IMP, 'dim85-shared-phase-refill', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim85-shared-phase-refill', 'verify.py: exact shared phase occupancy and separation')
@@ -2821,6 +2827,8 @@ if '--write-results' in sys.argv and not fail:
         'dim77-80-gamma72-apn-coupled-tails': 'Complete Γ72 tails and coupled contacts',
         'dim81-85-gamma72-apn-complete-dm': 'Complete D-type Γ72 fibres',
         'dim81-84-antipodal-tail-codes': 'Antipodal support codes as Γ72 tails',
+        'dim84-85-all-profiles-append': 'Shared phases and horizontal triple components',
+        'dim62-two-mark-diagonals': 'Orthogonal two-mark heads',
         'dim85-shared-phase-refill': 'Shared-phase Γ72 contact refill',
         'dim60-61-rm80-puncture': 'Punctured Reed–Muller signs, unequal heads and shared parity checks',
         'dim36-ct-neutral-reheat': 'Coxeter–Todd cell perturbations and recovery',
@@ -2860,6 +2868,10 @@ if '--write-results' in sys.argv and not fail:
     out.append("# Results")
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
+    out.append("")
+    out.append("23 November 2026 — Orthogonal two-mark heads and shared parity checks raise **62D to 172,134,412**, adding **1,854,464** (+1.09%) over the preceding bound. [Exact replay](verifications/improved/dim62-two-mark-diagonals/).")
+    out.append("")
+    out.append("23 November 2026 — Sharing phase occupancy across all three horizontal profiles and reallocating triple groups raises **84D to 6,292,388,112** and **85D to 6,295,120,802**. [Exact replay](verifications/improved/dim84-85-all-profiles-append/).")
     out.append("")
     out.append("23 November 2026 — Antipodal support-code tails raise **81D to 6,251,523,810** and **84D to 6,291,169,688**. Sharing phases without sharing any horizontal point raises **85D to 6,294,162,634**. [81/84D replay](verifications/improved/dim81-84-antipodal-tail-codes/) · [85D replay](verifications/improved/dim85-shared-phase-refill/).")
     out.append('')
