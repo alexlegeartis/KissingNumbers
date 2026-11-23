@@ -846,6 +846,10 @@ with io.open(os.path.join(IMP, 'dim63-67-signed-overlap', 'claims.json'), encodi
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim63-67-signed-overlap', 'verify.py: exact shared-parity overlaps, section and polar separation')
 
+with io.open(os.path.join(IMP, 'dim59-p48-pure94', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim59-p48-pure94', 'verify.py: exact normalized pure-tail separation')
+
 with io.open(os.path.join(IMP, 'dim63-66-internal-tags-bch', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim63-66-internal-tags-bch', 'verify.py: exact internal tags, section and BCH polar distances')
@@ -2705,6 +2709,7 @@ if '--write-results' in sys.argv and not fail:
         'dim62-67-rm2-cubic-cosets': 'Eighty cubic cosets with exact sparse transfer',
         'dim62-67-rm2-selfsparse': 'Dense code and its sparse shells',
         'dim59-p48-frame-cube': 'Weighted Pless cube',
+        'dim59-p48-pure94': 'Antipodal pure-tail refill',
         'dim63-66-internal-tags-bch': 'Internal tags and BCH polar cells',
         'dim63-67-signed-overlap': 'Support-specific Hamming sign codes',
         'dim66-67-rm2-axial-weight12': 'Axial weight-12 additions',
@@ -2730,6 +2735,8 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append("")
+    out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
     out.append("")
     out.append("23 November 2026 — Support-specific Hamming codes allow signed supports to overlap in 9 or 10 coordinates. The new bounds in 63–67D include **216,972,548** in 63D and **442,334,086** in 67D. [Exact replay](verifications/improved/dim63-67-signed-overlap/).")
     out.append("")

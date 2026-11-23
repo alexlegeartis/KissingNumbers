@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prior": 56969091,
+  "old_pure_retained": 0,
+  "new_pure": 94,
+  "improvement": 66,
+  "lower_bound": 56969157,
+  "lower_bounds": {
+    "59": 56969157
+  }
+}

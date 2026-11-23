@@ -1,5 +1,7 @@
 # Results
 
+23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
+
 23 November 2026 — Support-specific Hamming codes allow signed supports to overlap in 9 or 10 coordinates. The new bounds in 63–67D include **216,972,548** in 63D and **442,334,086** in 67D. [Exact replay](verifications/improved/dim63-67-signed-overlap/).
 
 23 November 2026 — Internal weight-12 tags strengthen the 63D, 64D, and 66D shells. A three-cell BCH polar layer and the new equator bring 65D to **413,985,666** (+196,608). [Exact replay](verifications/improved/dim63-66-internal-tags-bch/).
@@ -266,7 +268,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 56 | 52 416 240 | **54 267 873** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 57 | 52 416 306 | **54 766 981** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 58 | 52 416 510 | **56 281 695** | 1.07 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
-| 59 | 52 416 604 | **56 969 091** | 1.09 | `classes` | [Weighted Pless cube](verifications/improved/dim59-p48-frame-cube/) |
+| 59 | 52 416 604 | **56 969 157** | 1.09 | `classes` | [Antipodal pure-tail refill](verifications/improved/dim59-p48-pure94/) |
 | 60 | 52 416 841 | **58 665 998** | 1.12 | `classes` | [Common-class 48-frame and signed tail](verifications/improved/dim60-p48-frame48-tail/) |
 | 61 | 52 417 154 | **91 038 762** | 1.74 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
 | 62 | 52 417 932 | **150 561 804** | 2.87 | `codes` | [Dense code and its sparse shells](verifications/improved/dim62-67-rm2-selfsparse/) |
@@ -383,6 +385,7 @@ refreshed table, not more search.
 | 62–67 | `dim62-67-rm2-cubic-cosets` | verify.py: two exact cubic-coset checks and sparse-layer transfer |
 | 62–67 | `dim62-67-rm2-selfsparse` | verify.py: two independent code reconstructions, exact sections and translated support shells |
 | 59 | `dim59-p48-frame-cube` | verify.py: exact Pless head/owner compatibility and variable-radius tails |
+| 59 | `dim59-p48-pure94` | verify.py: integer inequalities against all inherited tail families |
 | 63–66 | `dim63-66-internal-tags-bch` | verify.py: literal tagged support overlaps, an exact section, and normalized BCH polar separation |
 | 63–67 | `dim63-67-signed-overlap` | verify.py: exact shared-parity overlaps, section and polar separation |
 | 66–67 | `dim66-67-rm2-axial-weight12` | verify.py: literal support overlaps and exact signed axial tags |
