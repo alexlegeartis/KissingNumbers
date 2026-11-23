@@ -25,6 +25,10 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 23 November 2026 — Using complete antipodal small-dimensional tails raises **82D to 6,269,068,246** (+14,289,094) and **83D to 6,278,746,180** (+13,542,662), with the Γ72 carrier unchanged. [Exact replay](verifications/improved/dim82-83-gamma72-antipodal-tails/).
 
+23 November 2026 — Delsarte–Goethals layers on D4 tail roots raise **66D to 434,387,366**, **67D to 454,068,488**, and **68D to 485,390,106** (+247,808, +929,792, and +2,052,096). [Exact replay](verifications/improved/dim66-68-dg-d4-tail-donors/).
+
+23 November 2026 — A signed pure-tail trade raises **59D to 56,969,164** (+7), keeping all weighted and mixed families. [Exact replay](verifications/improved/dim59-p48-signed101/).
+
 23 November 2026 — Three-site donors on a tail diagonal raise **66D to 434,139,558**, **67D to 453,138,696**, and **68D to 483,338,010** (gains of +1,327,106, +1,335,298, and +1,409,026). Two additional atlas hyperplanes and the unused coordinate poles raise **65D to 424,177,492**. [Exact replay](verifications/improved/dim65-68-dg-diagonal-triples/).
 
 23 November 2026 — Three-site Delsarte–Goethals replacements raise **65D to 424,169,298** (+1,310,720). The four-site count retains its theorem dependency. [Exact replay](verifications/improved/dim65-dg-three-site-donors/).

@@ -1,0 +1,26 @@
+{
+  "66": {
+    "lower_bound": 434387366,
+    "gain": 247808,
+    "layers": 2,
+    "dropped_banks": 3,
+    "dropped_atlas": 4,
+    "unique_cubic_labels": 1
+  },
+  "67": {
+    "lower_bound": 454068488,
+    "gain": 929792,
+    "layers": 10,
+    "dropped_banks": 170,
+    "dropped_atlas": 16,
+    "unique_cubic_labels": 3
+  },
+  "68": {
+    "lower_bound": 485390106,
+    "gain": 2052096,
+    "layers": 22,
+    "dropped_banks": 312,
+    "dropped_atlas": 94,
+    "unique_cubic_labels": 4
+  }
+}

@@ -14,6 +14,10 @@
 
 23 November 2026 — Using complete antipodal small-dimensional tails raises **82D to 6,269,068,246** (+14,289,094) and **83D to 6,278,746,180** (+13,542,662), with the Γ72 carrier unchanged. [Exact replay](verifications/improved/dim82-83-gamma72-antipodal-tails/).
 
+23 November 2026 — Delsarte–Goethals layers on D4 tail roots raise **66D to 434,387,366**, **67D to 454,068,488**, and **68D to 485,390,106** (+247,808, +929,792, and +2,052,096). [Exact replay](verifications/improved/dim66-68-dg-d4-tail-donors/).
+
+23 November 2026 — A signed pure-tail trade raises **59D to 56,969,164** (+7), keeping all weighted and mixed families. [Exact replay](verifications/improved/dim59-p48-signed101/).
+
 23 November 2026 — Three-site donors on a tail diagonal raise **66D to 434,139,558**, **67D to 453,138,696**, and **68D to 483,338,010** (gains of +1,327,106, +1,335,298, and +1,409,026). Two additional atlas hyperplanes and the unused coordinate poles raise **65D to 424,177,492**. [Exact replay](verifications/improved/dim65-68-dg-diagonal-triples/).
 
 23 November 2026 — Three-site Delsarte–Goethals replacements raise **65D to 424,169,298** (+1,310,720). The four-site count retains its theorem dependency. [Exact replay](verifications/improved/dim65-dg-three-site-donors/).
@@ -334,16 +338,16 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 56 | 52 416 240 | **54 267 873** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 57 | 52 416 306 | **54 766 981** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 58 | 52 416 510 | **56 281 695** | 1.07 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
-| 59 | 52 416 604 | **56 969 157** | 1.09 | `classes` | [Antipodal pure-tail refill](verifications/improved/dim59-p48-pure94/) |
+| 59 | 52 416 604 | **56 969 164** | 1.09 | `classes` | [Signed pure-tail trade](verifications/improved/dim59-p48-signed101/)
 | 60 | 52 416 841 | **69 704 624** | 1.33 | `classes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
 | 61 | 52 417 154 | **120 324 786** | 2.30 | `codes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
 | 62 | 52 417 932 | **173 717 908** | 3.31 | `codes` | [Three Delsarte–Goethals spike prefixes](verifications/improved/dim62-dg-three-prefixes/) |
 | 63 | 52 418 564 | **232 191 236** | 4.43 | `codes` | [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) |
 | 64 | 331 737 984 | **422 673 152** | 1.27 | `codes` | [Split-amplitude Delsarte–Goethals donors](verifications/improved/dim64-65-dg-split-amplitudes/) |
 | 65 | 331 737 986 | **424 177 492** | 1.28 | `codes` | [Three-site donors with a 46-hyperplane atlas](verifications/improved/dim65-68-dg-diagonal-triples/) |
-| 66 | 331 737 990 | **434 139 558** | 1.31 | `codes` | [Three-site donors with a 46-hyperplane atlas](verifications/improved/dim65-68-dg-diagonal-triples/) |
-| 67 | 331 737 996 | **453 138 696** | 1.37 | `codes` | [Three-site donors with a 46-hyperplane atlas](verifications/improved/dim65-68-dg-diagonal-triples/) |
-| 68 | 331 737 984 | **483 338 010** | 1.46 | `codes` | [Three-site donors with a 46-hyperplane atlas](verifications/improved/dim65-68-dg-diagonal-triples/) |
+| 66 | 331 737 990 | **434 387 366** | 1.31 | `codes` | [Delsarte–Goethals donors on D4 tail roots](verifications/improved/dim66-68-dg-d4-tail-donors/)
+| 67 | 331 737 996 | **454 068 488** | 1.37 | `codes` | [Delsarte–Goethals donors on D4 tail roots](verifications/improved/dim66-68-dg-d4-tail-donors/)
+| 68 | 331 737 984 | **485 390 106** | 1.46 | `codes` | [Delsarte–Goethals donors on D4 tail roots](verifications/improved/dim66-68-dg-d4-tail-donors/)
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
 | 70 | 331 737 984 | **1 361 151 808** | 4.10 | `heads` | [Mixed Γ72 A2 normal embedding](verifications/improved/dim70-gamma72-mixed-a2-normals/) |
 | 71 | 331 737 984 | **2 623 656 288** | 7.91 | `heads` | [Single-block Γ72 refill](verifications/improved/dim71-gamma72-single-block-refill/) |
@@ -479,6 +483,8 @@ refreshed table, not more search.
 | 85 | `dim85-gamma72-ze99-tail` | verify.py: exact algebraic tail Gram and full horizontal profile replay |
 | 64–65 | `dim64-65-dg-split-amplitudes` | verify.py: exact dense replacements and rephased support guards |
 | 65–68 | `dim65-68-dg-retained-atlas` | verify.py: atlas compatibility and rephased support guards |
+| 66–68 | `dim66-68-dg-d4-tail-donors` | verify.py: exact cubic, sparse parity and atlas clearance |
+| 59 | `dim59-p48-signed101` | verify.py: exact signed pure-tail separation and inherited interfaces |
 | 65–68 | `dim65-68-dg-diagonal-triples` | verify.py: exact tagged-bank parity, atlas refill, and diagonal-profile gates |
 | 65 | `dim65-dg-three-site-donors` | verify.py: exact three-site donor geometry and inherited rephased support guards |
 | 86–88, 90 | `dim86-90-qr-pless-phase7906` | verify.py: all ternary phase pairs, exact mixed-layer gates and pinned counts |

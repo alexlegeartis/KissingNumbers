@@ -905,6 +905,9 @@ with io.open(os.path.join(IMP, 'dim65-68-dg-retained-atlas', 'claims.json'), enc
 with io.open(os.path.join(IMP, 'dim82-83-gamma72-antipodal-tails', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim82-83-gamma72-antipodal-tails', 'verify.py: exact algebraic tail Gram and all three horizontal profile replays')
+with io.open(os.path.join(IMP, 'dim66-68-dg-d4-tail-donors', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim66-68-dg-d4-tail-donors', 'verify.py: exact cubic, sparse parity and atlas clearance')
 with io.open(os.path.join(IMP, 'dim65-68-dg-diagonal-triples', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim65-68-dg-diagonal-triples', 'verify.py: exact tagged-bank parity, atlas refill, and diagonal-profile gates')
@@ -979,6 +982,9 @@ with io.open(os.path.join(IMP, 'dim63-67-signed-overlap', 'claims.json'), encodi
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim63-67-signed-overlap', 'verify.py: exact shared-parity overlaps, section and polar separation')
 
+with io.open(os.path.join(IMP, 'dim59-p48-signed101', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim59-p48-signed101', 'verify.py: exact signed pure-tail separation and inherited interfaces')
 with io.open(os.path.join(IMP, 'dim59-p48-pure94', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim59-p48-pure94', 'verify.py: exact normalized pure-tail separation')
@@ -2844,6 +2850,7 @@ if '--write-results' in sys.argv and not fail:
         'dim62-67-rm2-selfsparse': 'Dense code and its sparse shells',
         'dim59-p48-frame-cube': 'Weighted Pless cube',
         'dim59-p48-pure94': 'Antipodal pure-tail refill',
+        'dim59-p48-signed101': 'Signed pure-tail trade',
         'dim63-66-internal-tags-bch': 'Internal tags and BCH polar cells',
         'dim65-68-complete-hyperplane-atlas': 'All 126 affine hyperplanes with 24-cell heads',
         'dim36-ct-pocket-trade': 'Coxeter–Todd pocket trades',
@@ -2868,6 +2875,7 @@ if '--write-results' in sys.argv and not fail:
         'dim65-68-dg-retained-atlas': 'Split-amplitude donors with retained hyperplanes',
         'dim82-83-gamma72-antipodal-tails': 'Complete antipodal 510- and 604-point tails',
         'dim65-68-dg-diagonal-triples': 'Three-site donors with a 46-hyperplane atlas',
+        'dim66-68-dg-d4-tail-donors': 'Delsarte–Goethals donors on D4 tail roots',
         'dim65-dg-three-site-donors': 'Three-site Delsarte–Goethals donors (partly theorem-dependent)',
         'dim86-90-qr-pless-phase7906': 'Larger ternary QR–Pless phases',
         'dim62-dg-three-prefixes': 'Three Delsarte–Goethals spike prefixes',
@@ -2920,6 +2928,10 @@ if '--write-results' in sys.argv and not fail:
     out.append("23 November 2026 — Replacing the Barnes–Wall tail by the 1,154-point Zinoviev–Ericson code raises **85D to 6,297,176,738** (+2,055,936). [Exact replay](verifications/improved/dim85-gamma72-ze99-tail/).")
     out.append("23 November 2026 — Split-amplitude Delsarte–Goethals replacements raise **64D to 422,673,152** (+4,194,176) and **65D to 422,678,354** (+3,678,080). The 65D four-site count inherits its existing theorem. [Exact replay](verifications/improved/dim64-65-dg-split-amplitudes/).")
     out.append("23 November 2026 — Using complete antipodal small-dimensional tails raises **82D to 6,269,068,246** (+14,289,094) and **83D to 6,278,746,180** (+13,542,662), with the Γ72 carrier unchanged. [Exact replay](verifications/improved/dim82-83-gamma72-antipodal-tails/).")
+    out.append("")
+    out.append("23 November 2026 — Delsarte–Goethals layers on D4 tail roots raise **66D to 434,387,366**, **67D to 454,068,488**, and **68D to 485,390,106** (+247,808, +929,792, and +2,052,096). [Exact replay](verifications/improved/dim66-68-dg-d4-tail-donors/).")
+    out.append("")
+    out.append("23 November 2026 — A signed pure-tail trade raises **59D to 56,969,164** (+7), keeping all weighted and mixed families. [Exact replay](verifications/improved/dim59-p48-signed101/).")
     out.append("")
     out.append("23 November 2026 — Three-site donors on a tail diagonal raise **66D to 434,139,558**, **67D to 453,138,696**, and **68D to 483,338,010** (gains of +1,327,106, +1,335,298, and +1,409,026). Two additional atlas hyperplanes and the unused coordinate poles raise **65D to 424,177,492**. [Exact replay](verifications/improved/dim65-68-dg-diagonal-triples/).")
     out.append("")

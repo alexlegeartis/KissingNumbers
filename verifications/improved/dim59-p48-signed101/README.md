@@ -1,0 +1,9 @@
+# 59D: pure-pole signed reconfiguration
+
+The exact lower bound is **56,969,164**, improving the preceding 56,969,157 by seven points. All existing mixed and equatorial points are unchanged. The previous 94 pure poles are replaced by 101 signed pure poles.
+
+The input pure group is the preceding exact 94-pole certificate, with eight tetrahedral support triples and 32 rational tails from its pinned weighted-cube interface. We first remove three old antipodal lines and add five. In the resulting 98-pole list (positive rows followed by their negatives), then remove three **individual signs** and add six signed rays. The signed change need not preserve antipodality. The verifier reconstructs both ledger steps from literal rows, and checks every final signed pair without relying on any search result.
+
+For each raw row \(y\), the corresponding pole is \(y/\|y\|\) in the 11-dimensional tail, with zero body. Two final pure poles satisfy the required angular condition if their raw dot product is nonpositive or four times the squared dot is at most the product of squared norms. The weighted cube interface is certified conservatively by \(3L(y)^2\le27203\|y\|^2\), where \(L\) uses absolute coordinate weights \((50\times8,49\times3)\), and each retained tetrahedral support by \(5(\sum_{i\in S}|y_i|)^2\le6\|y\|^2\). The 32 rational mixed tails are checked directly with the signed inequality and their pinned common denominator. All earlier long owner lifts put tail amplitude exactly \(1/2\), so Cauchy–Schwarz gives the needed bound without further new scans, and the equator has zero tail.
+
+Run python verify.py with Python 3 and NumPy. The source JSON inputs are checked by published SHA-256 digests. All computations in the verification are exact integers. The construction inherits the common body, counts and validity of the mixed interfaces from the preceding [59D pure-pole certificate](../dim59-p48-pure94/).

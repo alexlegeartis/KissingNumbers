@@ -1,0 +1,10 @@
+{
+  "atlas46.inc": "bbb75ee55eb6f91581bb1f391924500c809b97fb81e5fee02f0f012a86684a42",
+  "claims.json": "340ad96ba385d1158ab2c7ae48ed6736ff9ac4663f09127f859b7cabf50b4189",
+  "cross.cpp": "66ae2a386fd7661d0467d600fe5b4ebeea2cc209eea626682a06ac8516d20921",
+  "rephase.json": "0bf244360341e40af9db0841812dc16aa8c2dd2ab8a0af063c11ad44eafb1da8",
+  "triple_assignment.txt": "54e0fe8ccb6fb903f3cc49757d7758a8d931ae19dce03c749d8e63dc2ba27806",
+  "verify.py": "05cd1fa87379a0de33d8f734a88e15408f4b29f6c505d2784ae7694571c72af8",
+  "verify_atlas46.cpp": "c181791c9969abafd5d46d64794026e6ddcde8b617dde264db980c206febced5",
+  "verify_diagonal.py": "098b76b1d679863ac0862060dbc58a592c5e2b478ec71c6eccf4533a93b7e577"
+}
