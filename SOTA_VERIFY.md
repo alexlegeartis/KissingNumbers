@@ -2,6 +2,10 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Shared eight-site parity checks add signed supports without shrinking any old bank: **170,279,948 in 62D** and **230,159,620 in 63D**. [Exact replay](verifications/improved/dim62-63-guarded-rephase/).
+
+23 November 2026 — Full root tails, coupled contacts and additional B-only fibres raise **77–85D**, including **6,243,307,240 in 80D** and **6,251,849,384 in 85D**. [77–80D replay](verifications/improved/dim77-80-gamma72-apn-coupled-tails/) · [81–85D replay](verifications/improved/dim81-85-gamma72-norm4-layer/).
+
 23 November 2026 — A signed shell obtained by detaching one marked coordinate gives **166,921,228 in 62D** and **226,280,708 in 63D**. [Exact replay](verifications/improved/dim62-single-mark-square/).
 
 23 November 2026 — A finite-field Sidon map couples the clipped Γ72 fibres to multipartite D-type root systems, raising **81–85D**, including **6,246,072,200 in 85D**. [Exact replay](verifications/improved/dim81-85-gamma72-apn-multipartite/).

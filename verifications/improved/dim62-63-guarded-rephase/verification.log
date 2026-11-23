@@ -1,0 +1,36 @@
+PASS independent Plotkin-split RM recursion, 176 cubic differences, min16
+verified RM(2,6) rank 22, cubic representatives 80, pair-difference types incl self 176
+minimum distance 16: 176 difference types
+dense 64D vectors 335544320
+weight-16 supports 37996
+best 63D pair 0 20, neither 21361, both 2363, lower bound 214085892
+dimension 64 lower bound 413526912
+dimension 65 lower bound 413526914
+dimension 66 lower bound 413526916
+dimension 67 lower bound 413526918
+dimension 68 lower bound 413526920
+64 supports 37996 63 best 0 20 none 21361 both 2363 62 best 0 20 41 61 none 12005
+PASS 528 translated pair difference types, all distance >=14; exact pairwise 16-support overlaps <=8
+tail support counts 37996 3904 3904 3904
+{
+  "status": "PASS",
+  "supports64": 37996,
+  "supports62": 12005,
+  "lower_bounds": {
+    "62": 150561804,
+    "63": 214085892,
+    "64": 413526912,
+    "65": 413526914,
+    "66": 421522308,
+    "67": 437513094
+  }
+}
+{
+  "status": "PASS",
+  "lower_bounds": {
+    "62": 166921228,
+    "63": 226280708
+  }
+}
+PASS 62 170279948 gain 3358720 new banks 2134 rephased old banks 10497
+PASS 63 230159620 gain 3878912 new banks 2076 rephased old banks 11614

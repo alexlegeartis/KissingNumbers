@@ -2,6 +2,10 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Shared eight-site parity checks add signed supports without shrinking any old bank: **170,279,948 in 62D** and **230,159,620 in 63D**. [Exact replay](verifications/improved/dim62-63-guarded-rephase/).
+
+23 November 2026 — Full root tails, coupled contacts and additional B-only fibres raise **77–85D**, including **6,243,307,240 in 80D** and **6,251,849,384 in 85D**. [77–80D replay](verifications/improved/dim77-80-gamma72-apn-coupled-tails/) · [81–85D replay](verifications/improved/dim81-85-gamma72-norm4-layer/).
+
 23 November 2026 — A signed shell obtained by detaching one marked coordinate gives **166,921,228 in 62D** and **226,280,708 in 63D**. [Exact replay](verifications/improved/dim62-single-mark-square/).
 
 23 November 2026 — A finite-field Sidon map couples the clipped Γ72 fibres to multipartite D-type root systems, raising **81–85D**, including **6,246,072,200 in 85D**. [Exact replay](verifications/improved/dim81-85-gamma72-apn-multipartite/).
@@ -295,8 +299,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 59 | 52 416 604 | **56 969 157** | 1.09 | `classes` | [Antipodal pure-tail refill](verifications/improved/dim59-p48-pure94/) |
 | 60 | 52 416 841 | **58 665 998** | 1.12 | `classes` | [Common-class 48-frame and signed tail](verifications/improved/dim60-p48-frame48-tail/) |
 | 61 | 52 417 154 | **91 038 762** | 1.74 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
-| 62 | 52 417 932 | **166 921 228** | 3.18 | `codes` | [Single-mark signed shells](verifications/improved/dim62-single-mark-square/) |
-| 63 | 52 418 564 | **226 280 708** | 4.32 | `codes` | [Single-mark signed shells](verifications/improved/dim62-single-mark-square/) |
+| 62 | 52 417 932 | **170 279 948** | 3.25 | `codes` | [Simultaneous support rephasing](verifications/improved/dim62-63-guarded-rephase/) |
+| 63 | 52 418 564 | **230 159 620** | 4.39 | `codes` | [Simultaneous support rephasing](verifications/improved/dim62-63-guarded-rephase/) |
 | 64 | 331 737 984 | **418 478 976** | 1.26 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
 | 65 | 331 737 986 | **419 000 274** | 1.26 | `codes` | [Optimal quadruple layer (existence proof)](verifications/improved/dim65-optimal-quadruple-layer/) |
 | 66 | 331 737 990 | **429 290 020** | 1.29 | `codes` | [Grouped four-site designs](verifications/improved/dim65-66-grouped-four-site-designs/) |
@@ -309,15 +313,15 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 74 | 6 218 175 606 | **6 218 995 830** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 75 | 6 218 175 612 | **6 219 816 924** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
 | 76 | 6 218 175 624 | **6 221 459 976** | 1.00 | `cosets` | [Depth-six Γ72 lattice and exact shortest shell](verifications/improved/dim73-82-gamma72-depth6-lattice/) |
-| 77 | 6 218 175 640 | **6 223 198 744** | 1.00 | `cosets` | [Clipped Γ72–D5, E6, E7 fibres](verifications/improved/dim77-79-gamma72-clipped-fibres/) |
-| 78 | 6 218 175 672 | **6 225 814 200** | 1.00 | `cosets` | [Clipped Γ72–D5, E6, E7 fibres](verifications/improved/dim77-79-gamma72-clipped-fibres/) |
-| 79 | 6 218 175 726 | **6 226 634 478** | 1.00 | `cosets` | [Clipped Γ72–D5, E6, E7 fibres](verifications/improved/dim77-79-gamma72-clipped-fibres/) |
-| 80 | 6 218 175 840 | **6 228 431 712** | 1.00 | `cosets` | [Clipped Γ72–E8 fibres](verifications/improved/dim80-gamma72-partial-fibres/) |
-| 81 | 6 218 175 906 | **6 232 188 256** | 1.00 | `cosets` | [APN-coloured multipartite Γ72–D fibres](verifications/improved/dim81-85-gamma72-apn-multipartite/) |
-| 82 | 6 218 176 110 | **6 235 144 100** | 1.00 | `cosets` | [APN-coloured multipartite Γ72–D fibres](verifications/improved/dim81-85-gamma72-apn-multipartite/) |
-| 83 | 6 218 176 204 | **6 238 576 140** | 1.00 | `cosets` | [APN-coloured multipartite Γ72–D fibres](verifications/improved/dim81-85-gamma72-apn-multipartite/) |
-| 84 | 6 218 176 441 | **6 242 540 232** | 1.00 | `cosets` | [APN-coloured multipartite Γ72–D fibres](verifications/improved/dim81-85-gamma72-apn-multipartite/) |
-| 85 | 6 218 176 754 | **6 246 072 200** | 1.00 | `cosets` | [APN-coloured multipartite Γ72–D fibres](verifications/improved/dim81-85-gamma72-apn-multipartite/) |
+| 77 | 6 218 175 640 | **6 223 234 328** | 1.00 | `cosets` | [Complete Γ72 tails and coupled contacts](verifications/improved/dim77-80-gamma72-apn-coupled-tails/) |
+| 78 | 6 218 175 672 | **6 226 571 472** | 1.00 | `cosets` | [Complete Γ72 tails and coupled contacts](verifications/improved/dim77-80-gamma72-apn-coupled-tails/) |
+| 79 | 6 218 175 726 | **6 232 148 054** | 1.00 | `cosets` | [Complete Γ72 tails and coupled contacts](verifications/improved/dim77-80-gamma72-apn-coupled-tails/) |
+| 80 | 6 218 175 840 | **6 243 307 240** | 1.00 | `cosets` | [Complete Γ72 tails and coupled contacts](verifications/improved/dim77-80-gamma72-apn-coupled-tails/) |
+| 81 | 6 218 175 906 | **6 234 658 944** | 1.00 | `cosets` | [Complete D-type fibres and B-only tail shells](verifications/improved/dim81-85-gamma72-norm4-layer/) |
+| 82 | 6 218 176 110 | **6 238 411 492** | 1.00 | `cosets` | [Complete D-type fibres and B-only tail shells](verifications/improved/dim81-85-gamma72-norm4-layer/) |
+| 83 | 6 218 176 204 | **6 242 536 524** | 1.00 | `cosets` | [Complete D-type fibres and B-only tail shells](verifications/improved/dim81-85-gamma72-norm4-layer/) |
+| 84 | 6 218 176 441 | **6 247 163 912** | 1.00 | `cosets` | [Complete D-type fibres and B-only tail shells](verifications/improved/dim81-85-gamma72-norm4-layer/) |
+| 85 | 6 218 176 754 | **6 251 849 384** | 1.01 | `cosets` | [Complete D-type fibres and B-only tail shells](verifications/improved/dim81-85-gamma72-norm4-layer/) |
 | 86 | 6 218 177 532 | **8 008 552 282** | 1.29 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 87 | 6 218 178 164 | **8 160 988 416** | 1.31 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 88 | 6 218 179 920 | **13 358 363 692** | 2.15 | `codes` | [Full Pless census and new chord marks](verifications/improved/dim88-full-pless-chord-marks/) 
@@ -426,6 +430,10 @@ refreshed table, not more search.
 | 36 | `dim36-ct-whole-cell-response` | verify.py: exact CT whole-cell and heavy-fibre reconstruction |
 | 62–63 | `dim62-single-mark-square` | verify.py: exact RM2 parity, shortened Hamming signs and redirected roots |
 | 81–85 | `dim81-85-gamma72-apn-multipartite` | verify.py: exact APN vertex labels, depth-six and singleton clipping |
+| 62–63 | `dim62-63-guarded-rephase` | verify.py: exact support overlap and simultaneous affine guard parities |
+| 77–80 | `dim77-80-gamma72-apn-coupled-tails` | verify.py: exact full root and B-only tails, coupled singleton contacts |
+| 81–85 | `dim81-85-gamma72-apn-complete-dm` | verify.py: exact full D-type root and horizontal contact shell replay |
+| 81–85 | `dim81-85-gamma72-norm4-layer` | verify.py: exact norm-four B-only phases and pure eight-set tails |
 | 36 | `dim36-ct-double-trine` | verify.py: exact complete trine swap and base checks |
 | 77–79 | `dim77-79-gamma72-seven-charts` | verify.py: exact transported phase and root-tail construction |
 | 63–68 | `dim63-68-affine-hyperplane-heads` | verify.py: exact signed shelves, 24-cell hyperplane codes, and mixed polar heights |

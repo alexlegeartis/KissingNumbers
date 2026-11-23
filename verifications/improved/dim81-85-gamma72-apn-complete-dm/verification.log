@@ -1,0 +1,23 @@
+PASS isotropic depth 6 count 136704
+PASS {'dimension': 73, 'count': 6218449010, 'contacts_by_vertical_norm': {2: 273408, 4: 0, 6: 0, 8: 2}}
+PASS {'dimension': 74, 'count': 6218995830, 'contacts_by_vertical_norm': {2: 820224, 4: 0, 6: 0, 8: 6}}
+PASS {'dimension': 75, 'count': 6219816924, 'contacts_by_vertical_norm': {2: 1640448, 4: 864, 6: 0, 8: 12}}
+PASS {'dimension': 76, 'count': 6221459976, 'contacts_by_vertical_norm': {2: 3280896, 4: 3456, 6: 0, 8: 24}}
+PASS {'dimension': 77, 'count': 6221737226, 'contacts_by_vertical_norm': {2: 3554304, 4: 7296, 6: 0, 8: 26}}
+PASS {'dimension': 78, 'count': 6222291726, 'contacts_by_vertical_norm': {2: 4101120, 4: 14976, 6: 0, 8: 30}}
+PASS {'dimension': 79, 'count': 6223124388, 'contacts_by_vertical_norm': {2: 4921344, 4: 27360, 6: 0, 8: 84}}
+PASS {'dimension': 80, 'count': 6224790624, 'contacts_by_vertical_norm': {2: 6561792, 4: 52992, 6: 0, 8: 240}}
+PASS {'dimension': 81, 'count': 6225064194, 'contacts_by_vertical_norm': {2: 6835200, 4: 53152, 6: 0, 8: 242}}
+PASS {'dimension': 82, 'count': 6225611462, 'contacts_by_vertical_norm': {2: 7382016, 4: 53600, 6: 0, 8: 246}}
+PASS exact comparison arithmetic
+PASS 81 6232188256 gain 3483134 antipodal rays 60
+PASS 82 6235144100 gain 5892158 antipodal rays 74
+PASS 83 6238576140 gain 8503968 antipodal rays 90
+PASS 84 6242540232 gain 10827600 antipodal rays 108
+PASS 85 6246072200 gain 10078350 antipodal rays 126
+READY full shell classes 1919 6144
+PASS all roots 81 6234614752 gain 2426496 two-block gain 47728
+PASS all roots 82 6238339364 gain 3195264 two-block gain 52544
+PASS all roots 83 6242464108 gain 3887968 two-block gain 44368
+PASS all roots 84 6247056392 gain 4516160 two-block gain 27824
+PASS all roots 85 6251695496 gain 5623296 two-block gain 47184
