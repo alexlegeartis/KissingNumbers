@@ -2,6 +2,8 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Grouped four-site designs raise **65D to 419,000,034** and **66D to 429,290,020**. The 66D layer attains the exact four-site alphabet cap. [Exact replay](verifications/improved/dim65-66-grouped-four-site-designs/).
+
 23 November 2026 — Nested affine face trades give **429,284,740 in 66D**, **448,616,838 in 67D**, and **481,044,376 in 68D**. [Exact replay](verifications/improved/dim66-68-nested-affine-face-trades/).
 
 23 November 2026 — The complete 126-hyperplane atlas gives **481,013,656 in 68D**. An independent seven-chart Γ72 construction raises the bounds in 77–79D, including **6,226,104,558 in 79D**. [Atlas replay](verifications/improved/dim65-68-complete-hyperplane-atlas/) · [Seven-chart replay](verifications/improved/dim77-79-gamma72-seven-charts/). Two complete trine fibres give **502,929 in 36D**. [36D replay](verifications/improved/dim36-ct-double-trine/).
@@ -280,8 +282,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 62 | 52 417 932 | **150 561 804** | 2.87 | `codes` | [Dense code and its sparse shells](verifications/improved/dim62-67-rm2-selfsparse/) |
 | 63 | 52 418 564 | **217 044 228** | 4.14 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
 | 64 | 331 737 984 | **418 478 976** | 1.26 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
-| 65 | 331 737 986 | **418 995 074** | 1.26 | `codes` | [All 126 affine hyperplanes with 24-cell heads](verifications/improved/dim65-68-complete-hyperplane-atlas/) |
-| 66 | 331 737 990 | **429 284 740** | 1.29 | `codes` | [Nested affine face trades](verifications/improved/dim66-68-nested-affine-face-trades/) |
+| 65 | 331 737 986 | **419 000 034** | 1.26 | `codes` | [Grouped four-site designs](verifications/improved/dim65-66-grouped-four-site-designs/) |
+| 66 | 331 737 990 | **429 290 020** | 1.29 | `codes` | [Grouped four-site designs](verifications/improved/dim65-66-grouped-four-site-designs/) |
 | 67 | 331 737 996 | **448 616 838** | 1.35 | `codes` | [Nested affine face trades](verifications/improved/dim66-68-nested-affine-face-trades/) |
 | 68 | 331 737 984 | **481 044 376** | 1.45 | `codes` | [Nested affine face trades](verifications/improved/dim66-68-nested-affine-face-trades/) |
 | 69 | 331 737 984 | **780 388 888** | 2.35 | `heads` | [mixed norm-8/norm-10 sections and antipodal ternary QR48 head compression with XOR-zero sparse layers; independent finite checks with explicit published source premises](verifications/improved/dim68-91-lattice-code-continuation/) |
@@ -396,13 +398,14 @@ refreshed table, not more search.
 | 77–84 | `dim77-84-gamma72-half-root-rephased` | verify.py: exact rephased half-root and rational append checks |
 | 79–84 | `dim79-84-gamma72-half-root-appends` | verify.py: exact rational append geometry and pinned source stock |
 | 65–68 | `dim65-68-complete-hyperplane-atlas` | verify.py: full affine atlas with exact parity guards and four-site stock |
+| 65–66 | `dim65-66-grouped-four-site-designs` | verify.py: grouped four-site designs and exact predecessor replay |
 | 66–68 | `dim66-68-nested-affine-face-trades` | verify.py: exact affine face trades and complete predecessor replay |
 | 36 | `dim36-ct-double-trine` | verify.py: exact complete trine swap and base checks |
 | 77–79 | `dim77-79-gamma72-seven-charts` | verify.py: exact transported phase and root-tail construction |
 | 63–68 | `dim63-68-affine-hyperplane-heads` | verify.py: exact signed shelves, 24-cell hyperplane codes, and mixed polar heights |
 | 63–67 | `dim63-67-signed-overlap` | verify.py: exact shared-parity overlaps, section and polar separation |
 | 66–67 | `dim66-67-rm2-axial-weight12` | verify.py: literal support overlaps and exact signed axial tags |
-| 65 | `dim65-rm2-polar-lift` | **418 995 074** | 642630.48 | `codes` | [All 126 affine hyperplanes with 24-cell heads](verifications/improved/dim65-68-complete-hyperplane-atlas/) 
+| 65 | `dim65-rm2-polar-lift` | verify.py: exact polar code, distances and norm checks |
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 63-65 | `dim63-65-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 65–67 | `dim65-67-bch-exterior-caps` | exact extended BCH codes, cap distances, inherited sparse geometry and counts |
