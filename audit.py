@@ -863,6 +863,9 @@ with io.open(os.path.join(IMP, 'dim65-optimal-quadruple-layer', 'claims.json'), 
 with io.open(os.path.join(IMP, 'dim80-gamma72-partial-fibres', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim80-gamma72-partial-fibres', 'verify.py: exact partial-shell clipping in seven charts')
+with io.open(os.path.join(IMP, 'dim82-84-gamma72-full-sidecar', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim82-84-gamma72-full-sidecar', 'verify.py: exact cross-chart short shells and D4 sidecar')
 with io.open(os.path.join(IMP, 'dim81-82-gamma72-clipped-sidecars', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim81-82-gamma72-clipped-sidecars', 'verify.py: exact A1/A2 sidecar fibres and inherited shell')
@@ -2766,6 +2769,7 @@ if '--write-results' in sys.argv and not fail:
         'dim65-optimal-quadruple-layer': 'Optimal quadruple layer (existence proof)',
         'dim80-gamma72-partial-fibres': 'Clipped Γ72–E8 fibres',
         'dim81-82-gamma72-clipped-sidecars': 'Clipped Γ72–E8 fibres with orthogonal sidecars',
+        'dim82-84-gamma72-full-sidecar': 'Full D4 sidecar on clipped Γ72–E8 fibres',
         'dim36-ct-joint-relocation': 'Joint Coxeter–Todd trine relocation',
         'dim77-79-gamma72-clipped-fibres': 'Clipped Γ72–D5, E6, E7 fibres',
         'dim65-66-grouped-four-site-designs': 'Grouped four-site designs',
@@ -2800,6 +2804,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("# Results")
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
+    out.append("")
+    out.append("23 November 2026 — Exact cross-chart shell checks let the clipped 80D construction carry a full orthogonal D4 sidecar. The resulting bounds are **6,229,251,942 in 82D**, **6,230,072,172 in 83D** and **6,231,712,632 in 84D**. [Exact replay](verifications/improved/dim82-84-gamma72-full-sidecar/).")
     out.append("")
     out.append("23 November 2026 — A four-cell min-cut raises **36D to 504,037**. Orthogonal root-system sidecars extend the 80D clipped-fibre construction to **6,228,705,122 in 81D** and **6,229,187,942 in 82D**. [36D replay](verifications/improved/dim36-ct-joint-relocation/) · [81–82D replay](verifications/improved/dim81-82-gamma72-clipped-sidecars/).")
     out.append("")

@@ -13,6 +13,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Exact cross-chart shell checks let the clipped 80D construction carry a full orthogonal D4 sidecar. The resulting bounds are **6,229,251,942 in 82D**, **6,230,072,172 in 83D** and **6,231,712,632 in 84D**. [Exact replay](verifications/improved/dim82-84-gamma72-full-sidecar/).
+
 23 November 2026 — A four-cell min-cut raises **36D to 504,037**. Orthogonal root-system sidecars extend the 80D clipped-fibre construction to **6,228,705,122 in 81D** and **6,229,187,942 in 82D**. [36D replay](verifications/improved/dim36-ct-joint-relocation/) · [81–82D replay](verifications/improved/dim81-82-gamma72-clipped-sidecars/).
 
 23 November 2026 — Joint trine relocation raises **36D to 504,015**, and the clipped-fibre construction transfers to **77–79D**, reaching **6,225,814,200 in 78D**. [36D exact replay](https://github.com/alexlegeartis/KissingNumbers/tree/220a01c660ebe09c1a80a4a4856ee7ced7ce0803/verifications/improved/dim36-ct-joint-relocation) · [77–79D exact replay](verifications/improved/dim77-79-gamma72-clipped-fibres/).
