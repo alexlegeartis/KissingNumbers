@@ -846,6 +846,10 @@ with io.open(os.path.join(IMP, 'dim62-67-rm2-cubic-cosets', 'transfer.json'), en
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim62-67-rm2-cubic-cosets', 'verify.py: exact cubic coset distance and inherited sparse-layer geometry')
 
+with io.open(os.path.join(IMP, 'dim60-p48-frame48-tail', 'claims.json'), encoding='utf-8') as _file:
+    _row = json.load(_file)
+    add(_row['dimension'], _row['lower_bound'], 'dim60-p48-frame48-tail', 'verify.py and audit_angles.py: frame, exact tail geometry and signed retirement')
+
 with io.open(os.path.join(IMP, 'dim60-p48-n12-blockers', 'claims.json'), encoding='utf-8') as _file:
     _row = json.load(_file)
     add(_row['dimension'], _row['lower_bound'], 'dim60-p48-n12-blockers', 'verify.py and audit_angles.py: exact paired latitude and conservative blocker union')
@@ -2677,6 +2681,7 @@ if '--write-results' in sys.argv and not fail:
         'dim50-59-p48-joint-transport': 'transported signed P48 trades with exact pair and ownership checks',
         'dim50-60-p48-global-owner-refill': 'global P48 owner exchanges and exact tetrahedral tail geometry',
         'dim60-p48-n12-blockers': 'matched norm-12 layer with exact shared-blocker accounting',
+        'dim60-p48-frame48-tail': 'Common-class 48-frame and signed tail',
         'dim62-67-rm2-cubic-cosets': 'Eighty cubic cosets with exact sparse transfer',
         'dim62-67-rm2-selfsparse': 'Dense code and its sparse shells',
         'dim54-60-p48-tail-antipodes': 'complementary tail directions above signed P48 with exact ownership and angles',
@@ -2700,6 +2705,8 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append("")
+    out.append("23 November 2026 — A common-class 48-frame and 32-color tail give **58,665,998** in 60D (+1,814), with literal signed deletion accounting. [Exact replay](verifications/improved/dim60-p48-frame48-tail/).")
     out.append("")
     out.append("23 November 2026 — One binary code supplies both dense and sparse layers, improving all six 62–67D lower bounds again. The 64D bound is **413,526,912** (+10,706,944), and three tagged weight-14 shells raise 67D to **437,513,094** (+15,308,784). [Exact replay](verifications/improved/dim62-67-rm2-selfsparse/).")
     out.append("")

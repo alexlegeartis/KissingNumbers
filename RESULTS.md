@@ -1,5 +1,7 @@
 # Results
 
+23 November 2026 — A common-class 48-frame and 32-color tail give **58,665,998** in 60D (+1,814), with literal signed deletion accounting. [Exact replay](verifications/improved/dim60-p48-frame48-tail/).
+
 23 November 2026 — One binary code supplies both dense and sparse layers, improving all six 62–67D lower bounds again. The 64D bound is **413,526,912** (+10,706,944), and three tagged weight-14 shells raise 67D to **437,513,094** (+15,308,784). [Exact replay](verifications/improved/dim62-67-rm2-selfsparse/).
 
 22 November 2026 — Eighty cubic cosets of RM(2,6) give 335,544,320 dense signs and improve all dimensions 62–67. The 64D lower bound is **402,819,968** (+67,021,024), and the 67D lower bound is **422,204,310**. [Exact replay](verifications/improved/dim62-67-rm2-cubic-cosets/).
@@ -255,7 +257,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 57 | 52 416 306 | **54 766 981** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 58 | 52 416 510 | **56 281 695** | 1.07 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 59 | 52 416 604 | **56 967 571** | 1.09 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
-| 60 | 52 416 841 | **58 664 184** | 1.12 | `classes` | [matched norm-12 layer with exact shared-blocker accounting](verifications/improved/dim60-p48-n12-blockers/) |
+| 60 | 52 416 841 | **58 665 998** | 1.12 | `classes` | [Common-class 48-frame and signed tail](verifications/improved/dim60-p48-frame48-tail/) |
 | 61 | 52 417 154 | **91 038 762** | 1.74 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
 | 62 | 52 417 932 | **150 561 804** | 2.87 | `codes` | [Dense code and its sparse shells](verifications/improved/dim62-67-rm2-selfsparse/) |
 | 63 | 52 418 564 | **214 085 892** | 4.08 | `codes` | [Dense code and its sparse shells](verifications/improved/dim62-67-rm2-selfsparse/) |
@@ -367,6 +369,7 @@ refreshed table, not more search.
 | 49 | `dim49-joint-signed-exchange` | final.py: exact complete signed class geometry |
 | 50-60 | `dim50-60-p48-global-owner-refill` | verify.py: exact changed-class pairs, signed ownership and tetrahedral tail replay |
 | 60 | `dim60-p48-n12-blockers` | verify.py and audit_angles.py: exact paired latitude, label permutation and shared blocker count |
+| 60 | `dim60-p48-frame48-tail` | verify.py and audit_angles.py: integral frame, signed tail and conservative exact owner charge |
 | 62–67 | `dim62-67-rm2-cubic-cosets` | verify.py: two exact cubic-coset checks and sparse-layer transfer |
 | 62–67 | `dim62-67-rm2-selfsparse` | verify.py: two independent code reconstructions, exact sections and translated support shells |
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |

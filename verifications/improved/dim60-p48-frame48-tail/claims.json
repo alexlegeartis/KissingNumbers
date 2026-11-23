@@ -1,0 +1,1 @@
+{"status": "PASS", "dimension": 60, "old_body": 58658586, "control_cube": 4096, "retained_sparse_heads": 16, "frame_axes": 48, "active_axes": 32, "tails": 1536, "signed_candidates_tested": 6289330, "charged_blockers": 236, "lower_bound": 58665998}
