@@ -863,6 +863,12 @@ with io.open(os.path.join(IMP, 'dim65-optimal-quadruple-layer', 'claims.json'), 
 with io.open(os.path.join(IMP, 'dim80-gamma72-partial-fibres', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim80-gamma72-partial-fibres', 'verify.py: exact partial-shell clipping in seven charts')
+with io.open(os.path.join(IMP, 'dim36-ct-joint-relocation', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim36-ct-joint-relocation', 'verify.py: exact joint CT trine relocations and Gram replay')
+with io.open(os.path.join(IMP, 'dim77-79-gamma72-clipped-fibres', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim77-79-gamma72-clipped-fibres', 'verify.py: exact D5, E6 and E7 partial-shell clipping')
 with io.open(os.path.join(IMP, 'dim65-66-grouped-four-site-designs', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim65-66-grouped-four-site-designs', 'verify.py: grouped four-site designs and exact predecessor replay')
@@ -2756,6 +2762,8 @@ if '--write-results' in sys.argv and not fail:
         'dim36-ct-pocket-trade': 'Coxeter–Todd pocket trades',
         'dim65-optimal-quadruple-layer': 'Optimal quadruple layer (existence proof)',
         'dim80-gamma72-partial-fibres': 'Clipped Γ72–E8 fibres',
+        'dim36-ct-joint-relocation': 'Joint Coxeter–Todd trine relocation',
+        'dim77-79-gamma72-clipped-fibres': 'Clipped Γ72–D5, E6, E7 fibres',
         'dim65-66-grouped-four-site-designs': 'Grouped four-site designs',
         'dim66-68-nested-affine-face-trades': 'Nested affine face trades',
         'dim77-79-gamma72-seven-charts': 'Seven-chart Γ72 tail fibres',
@@ -2788,6 +2796,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("# Results")
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
+    out.append("")
+    out.append("23 November 2026 — Joint trine relocation raises **36D to 504,015**, and the clipped-fibre construction transfers to **77–79D**, reaching **6,225,814,200 in 78D**. [36D exact replay](verifications/improved/dim36-ct-joint-relocation/) · [77–79D exact replay](verifications/improved/dim77-79-gamma72-clipped-fibres/).")
     out.append("")
     out.append("23 November 2026 — Clipping only the blocked portions of twelve minimum-depth fibres gives **6,228,431,712 in 80D**. [Exact replay](verifications/improved/dim80-gamma72-partial-fibres/).")
     out.append("")

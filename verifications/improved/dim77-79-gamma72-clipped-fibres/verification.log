@@ -1,0 +1,18 @@
+PASS isotropic depth 6 count 136704
+PASS {'dimension': 73, 'count': 6218449010, 'contacts_by_vertical_norm': {2: 273408, 4: 0, 6: 0, 8: 2}}
+PASS {'dimension': 74, 'count': 6218995830, 'contacts_by_vertical_norm': {2: 820224, 4: 0, 6: 0, 8: 6}}
+PASS {'dimension': 75, 'count': 6219816924, 'contacts_by_vertical_norm': {2: 1640448, 4: 864, 6: 0, 8: 12}}
+PASS {'dimension': 76, 'count': 6221459976, 'contacts_by_vertical_norm': {2: 3280896, 4: 3456, 6: 0, 8: 24}}
+PASS {'dimension': 77, 'count': 6221737226, 'contacts_by_vertical_norm': {2: 3554304, 4: 7296, 6: 0, 8: 26}}
+PASS {'dimension': 78, 'count': 6222291726, 'contacts_by_vertical_norm': {2: 4101120, 4: 14976, 6: 0, 8: 30}}
+PASS {'dimension': 79, 'count': 6223124388, 'contacts_by_vertical_norm': {2: 4921344, 4: 27360, 6: 0, 8: 84}}
+PASS {'dimension': 80, 'count': 6224790624, 'contacts_by_vertical_norm': {2: 6561792, 4: 52992, 6: 0, 8: 240}}
+PASS {'dimension': 81, 'count': 6225064194, 'contacts_by_vertical_norm': {2: 6835200, 4: 53152, 6: 0, 8: 242}}
+PASS {'dimension': 82, 'count': 6225611462, 'contacts_by_vertical_norm': {2: 7382016, 4: 53600, 6: 0, 8: 246}}
+PASS exact comparison arithmetic
+PASS 77 6222276760 15 fibre pairs 40 pure roots
+PASS 78 6223917240 21 fibre pairs 72 pure roots
+PASS 79 6226104558 29 fibre pairs 126 pure roots
+PASS 77D 6223198744 gain 921984 full 12 partial 8
+PASS 78D 6225814200 gain 1896960 full 21 partial 9
+PASS 79D 6226634478 gain 529920 full 24 partial 9

@@ -13,6 +13,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Joint trine relocation raises **36D to 504,015**, and the clipped-fibre construction transfers to **77–79D**, reaching **6,225,814,200 in 78D**. [36D exact replay](verifications/improved/dim36-ct-joint-relocation/) · [77–79D exact replay](verifications/improved/dim77-79-gamma72-clipped-fibres/).
+
 23 November 2026 — Clipping only the blocked portions of twelve minimum-depth fibres gives **6,228,431,712 in 80D**. [Exact replay](verifications/improved/dim80-gamma72-partial-fibres/).
 
 23 November 2026 — Coxeter–Todd pocket trades and spare-block refills raise **36D to 503,548**. A cited optimal quadruple design raises **65D to 419,000,274**. [36D exact replay](verifications/improved/dim36-ct-pocket-trade/) · [65D existence proof](verifications/improved/dim65-optimal-quadruple-layer/).
