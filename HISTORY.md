@@ -21,6 +21,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 23 November 2026 — Replacing the Barnes–Wall tail by the 1,154-point Zinoviev–Ericson code raises **85D to 6,297,176,738** (+2,055,936). [Exact replay](verifications/improved/dim85-gamma72-ze99-tail/).
 
+23 November 2026 — Split-amplitude Delsarte–Goethals replacements raise **64D to 422,673,152** (+4,194,176) and **65D to 422,678,354** (+3,678,080). The 65D four-site count inherits its existing theorem. [Exact replay](verifications/improved/dim64-65-dg-split-amplitudes/).
+
 23 November 2026 — Orthogonal two-mark heads and shared parity checks raise **62D to 172,134,412**, adding **1,854,464** (+1.09%) over the preceding bound. [Exact replay](verifications/improved/dim62-two-mark-diagonals/).
 
 23 November 2026 — Sharing phase occupancy across all three horizontal profiles and reallocating triple groups raises **84D to 6,292,388,112** and **85D to 6,295,120,802**. [Exact replay](verifications/improved/dim84-85-all-profiles-append/).

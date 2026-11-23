@@ -896,6 +896,9 @@ with io.open(os.path.join(IMP, 'dim60-61-dg-spike-banks', 'claims.json'), encodi
 with io.open(os.path.join(IMP, 'dim85-gamma72-ze99-tail', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim85-gamma72-ze99-tail', 'verify.py: exact algebraic tail Gram and full horizontal profile replay')
+with io.open(os.path.join(IMP, 'dim64-65-dg-split-amplitudes', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim64-65-dg-split-amplitudes', 'verify.py: exact dense replacements and rephased support guards')
 with io.open(os.path.join(IMP, 'dim62-63-dg-spike-banks', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim62-63-dg-spike-banks', 'verify.py: exact cubic-class spike geometry and short-guard bank overlaps')
@@ -2843,6 +2846,7 @@ if '--write-results' in sys.argv and not fail:
         'dim60-61-rm80-guard-transfer': 'Transferred Reed–Muller sign banks',
         'dim60-61-dg-spike-banks': 'Delsarte–Goethals spikes on transferred banks',
         'dim85-gamma72-ze99-tail': 'Zinoviev–Ericson tail with all profiles',
+        'dim64-65-dg-split-amplitudes': 'Split-amplitude Delsarte–Goethals donors',
         'dim62-63-dg-spike-banks': 'Delsarte–Goethals spike banks',
         'dim62-two-mark-diagonals': 'Orthogonal two-mark heads',
         'dim85-shared-phase-refill': 'Shared-phase Γ72 contact refill',
@@ -2890,6 +2894,7 @@ if '--write-results' in sys.argv and not fail:
     out.append("23 November 2026 — Delsarte–Goethals spike banks and short guards raise **62D to 172,734,988** (+600,576) and **63D to 232,191,236** (+2,031,616). [Exact replay](verifications/improved/dim62-63-dg-spike-banks/).")
     out.append("23 November 2026 — Spike-amplified Delsarte–Goethals layers add **982,920** contacts in 60D and **1,474,440** in 61D, for **69,704,624** and **120,324,786** respectively. [Exact replay](verifications/improved/dim60-61-dg-spike-banks/).")
     out.append("23 November 2026 — Replacing the Barnes–Wall tail by the 1,154-point Zinoviev–Ericson code raises **85D to 6,297,176,738** (+2,055,936). [Exact replay](verifications/improved/dim85-gamma72-ze99-tail/).")
+    out.append("23 November 2026 — Split-amplitude Delsarte–Goethals replacements raise **64D to 422,673,152** (+4,194,176) and **65D to 422,678,354** (+3,678,080). The 65D four-site count inherits its existing theorem. [Exact replay](verifications/improved/dim64-65-dg-split-amplitudes/).")
     out.append("")
     out.append("23 November 2026 — Orthogonal two-mark heads and shared parity checks raise **62D to 172,134,412**, adding **1,854,464** (+1.09%) over the preceding bound. [Exact replay](verifications/improved/dim62-two-mark-diagonals/).")
     out.append("")

@@ -65,8 +65,8 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 61 | 52 417 154 | [Leech–Sloane P48 (1971)](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [13D tail: Zinoviev–Ericson 1999](https://www.mathnet.ru/eng/ppi457) *(derived)* | **120 324 786** | **SOTA** | +129.552306% | — | updated 2026-11-23 | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) | — |
 | 62 | 52 417 932 | [Leech–Sloane P48 (1971)](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail: Ganzhinov 2022](https://arxiv.org/abs/2207.08266) *(derived)* | **172 734 988** | **SOTA** | +229.534153% | — | updated 2026-11-23 | [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) | — |
 | 63 | 52 418 564 | [Leech–Sloane P48 (1971)](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail: Leech–Sloane 1971](https://doi.org/10.4153/CJM-1971-081-3) *(derived)* | **232 191 236** | **SOTA** | +342.956118% | — | updated 2026-11-23 | [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) | — |
-| 64 | 331 737 984 | [Edel-Rains-Sloane (1998)](https://arxiv.org/abs/math/0207291) | **418 478 976** | **SOTA** | +26.147441% | — | updated 2026-11-23 | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) | — |
-| 65 | 331 737 986 | [ERS64 (1998)](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **419 000 274** | **SOTA** | +26.304581% | — | updated 2026-11-23 | [Optimal quadruple layer (existence proof)](verifications/improved/dim65-optimal-quadruple-layer/) | — |
+| 64 | 331 737 984 | [Edel-Rains-Sloane (1998)](https://arxiv.org/abs/math/0207291) | **422 673 152** | **SOTA** | +27.411744% | — | updated 2026-11-23 | [Split-amplitude Delsarte–Goethals donors](verifications/improved/dim64-65-dg-split-amplitudes/) | — |
+| 65 | 331 737 986 | [ERS64 (1998)](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **422 678 354** | **SOTA** | +27.413312% | — | updated 2026-11-23 | [Split-amplitude Delsarte–Goethals donors (partly theorem-dependent)](verifications/improved/dim64-65-dg-split-amplitudes/) | — |
 | 66 | 331 737 990 | [Edel–Rains–Sloane 64D (1998)](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **429 290 020** | **SOTA** | +29.406349% | — | updated 2026-11-23 | [Grouped four-site designs](verifications/improved/dim65-66-grouped-four-site-designs/) | — |
 | 67 | 331 737 996 | [Edel–Rains–Sloane 64D (1998)](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **448 616 838** | **SOTA** | +35.232275% | — | updated 2026-11-23 | [Nested affine face trades](verifications/improved/dim66-68-nested-affine-face-trades/) | — |
 | 68 | 331 737 984 | [Edel–Rains–Sloane 64D (1998)](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **481 044 376** | **SOTA** | +45.007325% | — | updated 2026-11-23 | [Nested affine face trades](verifications/improved/dim66-68-nested-affine-face-trades/) | — |
@@ -105,6 +105,8 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 **23 November 2026 — **Spike-amplified Delsarte–Goethals layers add **982,920** contacts in 60D and **1,474,440** in 61D, for **69,704,624** and **120,324,786** respectively. [Exact replay](verifications/improved/dim60-61-dg-spike-banks/).
 
 **23 November 2026 — **Replacing the Barnes–Wall tail by the 1,154-point Zinoviev–Ericson code raises **85D to 6,297,176,738** (+2,055,936). [Exact replay](verifications/improved/dim85-gamma72-ze99-tail/).
+
+**23 November 2026 — **Split-amplitude Delsarte–Goethals replacements raise **64D to 422,673,152** (+4,194,176) and **65D to 422,678,354** (+3,678,080). The 65D four-site count inherits its existing theorem. [Exact replay](verifications/improved/dim64-65-dg-split-amplitudes/).
 
 **23 November 2026 — 62D two-mark heads.** Adds **1,854,464** to reach **172,134,412** (+1.09%). [Exact replay](verifications/improved/dim62-two-mark-diagonals/).
 

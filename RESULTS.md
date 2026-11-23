@@ -10,6 +10,8 @@
 
 23 November 2026 — Replacing the Barnes–Wall tail by the 1,154-point Zinoviev–Ericson code raises **85D to 6,297,176,738** (+2,055,936). [Exact replay](verifications/improved/dim85-gamma72-ze99-tail/).
 
+23 November 2026 — Split-amplitude Delsarte–Goethals replacements raise **64D to 422,673,152** (+4,194,176) and **65D to 422,678,354** (+3,678,080). The 65D four-site count inherits its existing theorem. [Exact replay](verifications/improved/dim64-65-dg-split-amplitudes/).
+
 23 November 2026 — Orthogonal two-mark heads and shared parity checks raise **62D to 172,134,412**, adding **1,854,464** (+1.09%) over the preceding bound. [Exact replay](verifications/improved/dim62-two-mark-diagonals/).
 
 23 November 2026 — Sharing phase occupancy across all three horizontal profiles and reallocating triple groups raises **84D to 6,292,388,112** and **85D to 6,295,120,802**. [Exact replay](verifications/improved/dim84-85-all-profiles-append/).
@@ -325,8 +327,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 61 | 52 417 154 | **120 324 786** | 2.30 | `codes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
 | 62 | 52 417 932 | **172 734 988** | 3.30 | `codes` | [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) |
 | 63 | 52 418 564 | **232 191 236** | 4.43 | `codes` | [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) |
-| 64 | 331 737 984 | **418 478 976** | 1.26 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
-| 65 | 331 737 986 | **419 000 274** | 1.26 | `codes` | [Optimal quadruple layer (existence proof)](verifications/improved/dim65-optimal-quadruple-layer/) |
+| 64 | 331 737 984 | **422 673 152** | 1.27 | `codes` | [Split-amplitude Delsarte–Goethals donors](verifications/improved/dim64-65-dg-split-amplitudes/) |
+| 65 | 331 737 986 | **422 678 354** | 1.27 | `codes` | [Split-amplitude Delsarte–Goethals donors (partly theorem-dependent)](verifications/improved/dim64-65-dg-split-amplitudes/) |
 | 66 | 331 737 990 | **429 290 020** | 1.29 | `codes` | [Grouped four-site designs](verifications/improved/dim65-66-grouped-four-site-designs/) |
 | 67 | 331 737 996 | **448 616 838** | 1.35 | `codes` | [Nested affine face trades](verifications/improved/dim66-68-nested-affine-face-trades/) |
 | 68 | 331 737 984 | **481 044 376** | 1.45 | `codes` | [Nested affine face trades](verifications/improved/dim66-68-nested-affine-face-trades/) |
@@ -446,7 +448,7 @@ refreshed table, not more search.
 | 77–84 | `dim77-84-gamma72-half-root-rephased` | verify.py: exact rephased half-root and rational append checks |
 | 79–84 | `dim79-84-gamma72-half-root-appends` | verify.py: exact rational append geometry and pinned source stock |
 | 65–68 | `dim65-68-complete-hyperplane-atlas` | verify.py: full affine atlas with exact parity guards and four-site stock |
-| 65 | `dim65-optimal-quadruple-layer` | verify.py: exact composition with cited quadruple packing theorem |
+| 65 | `dim65-optimal-quadruple-layer` | **422 678 354** | 1.27 || [Split-amplitude Delsarte–Goethals donors (partly theorem-dependent)](verifications/improved/dim64-65-dg-split-amplitudes/) 
 | 65–66 | `dim65-66-grouped-four-site-designs` | verify.py: grouped four-site designs and exact predecessor replay |
 | 66–68 | `dim66-68-nested-affine-face-trades` | verify.py: exact affine face trades and complete predecessor replay |
 | 36 | `dim36-ct-pocket-trade` | verify.py: exact root-phase pocket trades and Gram replay |
@@ -462,6 +464,7 @@ refreshed table, not more search.
 | 60–61 | `dim60-61-rm80-guard-transfer` | verify.py: transferred supports, exact overlap tests and shared Hamming parities |
 | 60–61 | `dim60-61-dg-spike-banks` | verify.py: exact DG spike angles and affine-prefix counts |
 | 85 | `dim85-gamma72-ze99-tail` | verify.py: exact algebraic tail Gram and full horizontal profile replay |
+| 64–65 | `dim64-65-dg-split-amplitudes` | verify.py: exact dense replacements and rephased support guards |
 | 62–63 | `dim62-63-dg-spike-banks` | verify.py: exact cubic-class spike geometry and short-guard bank overlaps |
 | 62 | `dim62-two-mark-diagonals` | **172 734 988** | 3.30 || [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) 
 | 84–85 | `dim84-85-all-profiles-append` | verify.py: exact profile intersections and triple component separation |
@@ -476,7 +479,7 @@ refreshed table, not more search.
 | 63–68 | `dim63-68-affine-hyperplane-heads` | verify.py: exact signed shelves, 24-cell hyperplane codes, and mixed polar heights |
 | 63–67 | `dim63-67-signed-overlap` | verify.py: exact shared-parity overlaps, section and polar separation |
 | 66–67 | `dim66-67-rm2-axial-weight12` | verify.py: literal support overlaps and exact signed axial tags |
-| 65 | `dim65-rm2-polar-lift` | verify.py: exact polar code, distances and norm checks |
+| 65 | `dim65-rm2-polar-lift` | **422 678 354** | 1.27 || [Split-amplitude Delsarte–Goethals donors (partly theorem-dependent)](verifications/improved/dim64-65-dg-split-amplitudes/) 
 | 61-62, 66 | `dim61-62-66-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 63-65 | `dim63-65-affine-reconstruction` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 65–67 | `dim65-67-bch-exterior-caps` | exact extended BCH codes, cap distances, inherited sparse geometry and counts |
@@ -502,7 +505,7 @@ typed by hand. Sources:
 | 18, 25-39 | Cohn's pinned table; 28 and 36-37 use the October 2026 comparisons |
 | 41-46 | Cohn's comparison entries recorded 23 October 2026 |
 | 49-63 | 52 416 000 + tau(k): the direct sum P_48 (+) best k-dimensional lattice. Cohn's table has no entry between 48 and 72. |
-| 64 | Edel-Rains-Sloane 1998: 331 737 984 | **418 478 976** | 0.00 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) 
+| 64 | Edel-Rains-Sloane 1998: 331 737 984 | **422 673 152** | 1.27 | `codes` | [Split-amplitude Delsarte–Goethals donors](verifications/improved/dim64-65-dg-split-amplitudes/) 
 | 65-67 | direct sum of ERS64 and the 1D/2D/3D lattice: 331 737 984 + 2/6/12 |
 | 68-71 | 331 737 984, inherited by monotonicity from dimension 64 (Edel-Rains-Sloane 1998). No table has any entry for 65-71. |
 | 73-91 | 6 218 175 600 + tau(k): the direct sum Gamma_72 (+) best k-dimensional lattice. |

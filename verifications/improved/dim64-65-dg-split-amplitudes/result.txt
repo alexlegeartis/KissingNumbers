@@ -1,0 +1,3 @@
+PASS parent minimum 16 (checked 176 cubic differences)
+PASS every one of 816625491 support pairs, 14723 guards
+{"lower_bounds": {"64": 422673152, "65": 422678354}, "status": "PASS"}
