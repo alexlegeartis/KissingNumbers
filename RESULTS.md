@@ -8,6 +8,8 @@
 
 23 November 2026 — Spike-amplified Delsarte–Goethals layers add **982,920** contacts in 60D and **1,474,440** in 61D, for **69,704,624** and **120,324,786** respectively. [Exact replay](verifications/improved/dim60-61-dg-spike-banks/).
 
+23 November 2026 — Replacing the Barnes–Wall tail by the 1,154-point Zinoviev–Ericson code raises **85D to 6,297,176,738** (+2,055,936). [Exact replay](verifications/improved/dim85-gamma72-ze99-tail/).
+
 23 November 2026 — Orthogonal two-mark heads and shared parity checks raise **62D to 172,134,412**, adding **1,854,464** (+1.09%) over the preceding bound. [Exact replay](verifications/improved/dim62-two-mark-diagonals/).
 
 23 November 2026 — Sharing phase occupancy across all three horizontal profiles and reallocating triple groups raises **84D to 6,292,388,112** and **85D to 6,295,120,802**. [Exact replay](verifications/improved/dim84-85-all-profiles-append/).
@@ -343,7 +345,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 82 | 6 218 176 110 | **6 254 779 152** | 1.01 | `cosets` | [Barnes–Wall-type equality-section tails](verifications/improved/dim82-85-bw16-tail-sections/) |
 | 83 | 6 218 176 204 | **6 265 203 518** | 1.01 | `cosets` | [Barnes–Wall-type equality-section tails](verifications/improved/dim82-85-bw16-tail-sections/) |
 | 84 | 6 218 176 441 | **6 292 388 112** | 1.01 | `cosets` | [Shared phases and horizontal triple components](verifications/improved/dim84-85-all-profiles-append/) |
-| 85 | 6 218 176 754 | **6 295 120 802** | 1.01 | `cosets` | [Shared phases and horizontal triple components](verifications/improved/dim84-85-all-profiles-append/) |
+| 85 | 6 218 176 754 | **6 297 176 738** | 1.01 | `cosets` | [Zinoviev–Ericson tail with all profiles](verifications/improved/dim85-gamma72-ze99-tail/) |
 | 86 | 6 218 177 532 | **8 008 552 282** | 1.29 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 87 | 6 218 178 164 | **8 160 988 416** | 1.31 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 88 | 6 218 179 920 | **13 358 363 692** | 2.15 | `codes` | [Full Pless census and new chord marks](verifications/improved/dim88-full-pless-chord-marks/) 
@@ -459,10 +461,11 @@ refreshed table, not more search.
 | 81, 84 | `dim81-84-antipodal-tail-codes` | verify.py: exact antipodal tail Grams and coupled profile replay |
 | 60–61 | `dim60-61-rm80-guard-transfer` | verify.py: transferred supports, exact overlap tests and shared Hamming parities |
 | 60–61 | `dim60-61-dg-spike-banks` | verify.py: exact DG spike angles and affine-prefix counts |
+| 85 | `dim85-gamma72-ze99-tail` | verify.py: exact algebraic tail Gram and full horizontal profile replay |
 | 62–63 | `dim62-63-dg-spike-banks` | verify.py: exact cubic-class spike geometry and short-guard bank overlaps |
 | 62 | `dim62-two-mark-diagonals` | **172 734 988** | 3.30 || [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) 
 | 84–85 | `dim84-85-all-profiles-append` | verify.py: exact profile intersections and triple component separation |
-| 85 | `dim85-shared-phase-refill` | verify.py: exact shared phase occupancy and separation |
+| 85 | `dim85-shared-phase-refill` | **6 297 176 738** | 1.01 || [Zinoviev–Ericson tail with all profiles](verifications/improved/dim85-gamma72-ze99-tail/) 
 | 60–61 | `dim60-61-rm80-puncture` | verify_extra.py: exact simultaneous rephasing and dense–sparse contact gates |
 | 36 | `dim36-ct-neutral-reheat` | verify.py: exact whole-cell and reassignments; independent coordinate delta |
 | 82–83, 85 | `dim82-85-bw16-tail-sections` | verify.py: exact equality sections and all three profile graphs |

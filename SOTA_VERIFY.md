@@ -8,6 +8,8 @@
 
 23 November 2026 — Spike-amplified Delsarte–Goethals layers add **982,920** contacts in 60D and **1,474,440** in 61D, for **69,704,624** and **120,324,786** respectively. [Exact replay](verifications/improved/dim60-61-dg-spike-banks/).
 
+23 November 2026 — Replacing the Barnes–Wall tail by the 1,154-point Zinoviev–Ericson code raises **85D to 6,297,176,738** (+2,055,936). [Exact replay](verifications/improved/dim85-gamma72-ze99-tail/).
+
 23 November 2026 — Orthogonal two-mark heads and shared parity checks raise **62D to 172,134,412**, adding **1,854,464** (+1.09%) over the preceding bound. [Exact replay](verifications/improved/dim62-two-mark-diagonals/).
 
 23 November 2026 — Sharing phase occupancy across all three horizontal profiles and reallocating triple groups raises **84D to 6,292,388,112** and **85D to 6,295,120,802**. [Exact replay](verifications/improved/dim84-85-all-profiles-append/).
