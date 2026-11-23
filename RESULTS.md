@@ -2,7 +2,9 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
-23 November 2026 — Joint trine relocation raises **36D to 504,015**, and the clipped-fibre construction transfers to **77–79D**, reaching **6,225,814,200 in 78D**. [36D exact replay](verifications/improved/dim36-ct-joint-relocation/) · [77–79D exact replay](verifications/improved/dim77-79-gamma72-clipped-fibres/).
+23 November 2026 — A four-cell min-cut raises **36D to 504,037**. Orthogonal root-system sidecars extend the 80D clipped-fibre construction to **6,228,705,122 in 81D** and **6,229,187,942 in 82D**. [36D replay](verifications/improved/dim36-ct-joint-relocation/) · [81–82D replay](verifications/improved/dim81-82-gamma72-clipped-sidecars/).
+
+23 November 2026 — Joint trine relocation raises **36D to 504,015**, and the clipped-fibre construction transfers to **77–79D**, reaching **6,225,814,200 in 78D**. [36D exact replay](https://github.com/alexlegeartis/KissingNumbers/tree/220a01c660ebe09c1a80a4a4856ee7ced7ce0803/verifications/improved/dim36-ct-joint-relocation) · [77–79D exact replay](verifications/improved/dim77-79-gamma72-clipped-fibres/).
 
 23 November 2026 — Clipping only the blocked portions of twelve minimum-depth fibres gives **6,228,431,712 in 80D**. [Exact replay](verifications/improved/dim80-gamma72-partial-fibres/).
 
@@ -261,7 +263,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 33 | 370 240 | **370 528** | 1.00 | `codes` | [joint repacking of individual signed octads, stars and roots](verifications/improved/dim33-joint-signed-refill/) |
 | 34 | 390 980 | **391 004** | 1.00 | `heads` | [coordinated octad switches and root-star exchanges; two exact proofs](verifications/improved/dim34-octad-switches/) |
 | 35 | 415 308 | **415 360** | 1.00 | `heads` | [joint signed-star and root repacking](verifications/improved/dim35-joint-star-root/) |
-| 36 | 484 760 | **504 015** | 1.04 | `cosets` | [Joint Coxeter–Todd trine relocation](verifications/improved/dim36-ct-joint-relocation/) |
+| 36 | 484 760 | **504 037** | 1.04 | `cosets` | [Joint Coxeter–Todd trine relocation](verifications/improved/dim36-ct-joint-relocation/) |
 | 37 | 500 008 | **544 666** | 1.09 | `codes` | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) |
 | 38 | 566 652 | **652 076** | 1.15 | `codes` | [QR offsets, ten octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) |
 | 39 | 755 988 | **783 468** | 1.03 | `codes` | [QR fibres with three-coordinate heads and projected support checks](verifications/improved/dim39-qr-three-coordinate-heads/) |
@@ -303,8 +305,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 78 | 6 218 175 672 | **6 225 814 200** | 1.00 | `cosets` | [Clipped Γ72–D5, E6, E7 fibres](verifications/improved/dim77-79-gamma72-clipped-fibres/) |
 | 79 | 6 218 175 726 | **6 226 634 478** | 1.00 | `cosets` | [Clipped Γ72–D5, E6, E7 fibres](verifications/improved/dim77-79-gamma72-clipped-fibres/) |
 | 80 | 6 218 175 840 | **6 228 431 712** | 1.00 | `cosets` | [Clipped Γ72–E8 fibres](verifications/improved/dim80-gamma72-partial-fibres/) |
-| 81 | 6 218 175 906 | **6 228 379 802** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
-| 82 | 6 218 176 110 | **6 228 927 150** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
+| 81 | 6 218 175 906 | **6 228 705 122** | 1.00 | `cosets` | [Clipped Γ72–E8 fibres with orthogonal sidecars](verifications/improved/dim81-82-gamma72-clipped-sidecars/) |
+| 82 | 6 218 176 110 | **6 229 187 942** | 1.00 | `cosets` | [Clipped Γ72–E8 fibres with orthogonal sidecars](verifications/improved/dim81-82-gamma72-clipped-sidecars/) |
 | 83 | 6 218 176 204 | **6 229 748 820** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
 | 84 | 6 218 176 441 | **6 231 393 584** | 1.00 | `cosets` | [Rephased half-root shell and exact appends](verifications/improved/dim77-84-gamma72-half-root-rephased/) |
 | 85 | 6 218 176 754 | **6 235 993 850** | 1.00 | `heads` | [Finer exact Γ72 recurrence](verifications/improved/dim74-85-gamma72-fine-recurrence/) |
@@ -402,6 +404,7 @@ refreshed table, not more search.
 | 59 | `dim59-p48-pure94` | verify.py: integer inequalities against all inherited tail families |
 | 63–66 | `dim63-66-internal-tags-bch` | verify.py: literal tagged support overlaps, an exact section, and normalized BCH polar separation |
 | 80 | `dim80-gamma72-partial-fibres` | verify.py: exact partial-shell clipping in seven charts |
+| 81–82 | `dim81-82-gamma72-clipped-sidecars` | verify.py: exact A1/A2 sidecar fibres and inherited shell |
 | 77–79 | `dim77-79-gamma72-clipped-fibres` | verify.py: exact D5, E6 and E7 partial-shell clipping |
 | 77–84 | `dim77-84-gamma72-half-root-rephased` | verify.py: exact rephased half-root and rational append checks |
 | 79–84 | `dim79-84-gamma72-half-root-appends` | verify.py: exact rational append geometry and pinned source stock |

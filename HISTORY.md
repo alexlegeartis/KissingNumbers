@@ -13,7 +13,9 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
-23 November 2026 — Joint trine relocation raises **36D to 504,015**, and the clipped-fibre construction transfers to **77–79D**, reaching **6,225,814,200 in 78D**. [36D exact replay](verifications/improved/dim36-ct-joint-relocation/) · [77–79D exact replay](verifications/improved/dim77-79-gamma72-clipped-fibres/).
+23 November 2026 — A four-cell min-cut raises **36D to 504,037**. Orthogonal root-system sidecars extend the 80D clipped-fibre construction to **6,228,705,122 in 81D** and **6,229,187,942 in 82D**. [36D replay](verifications/improved/dim36-ct-joint-relocation/) · [81–82D replay](verifications/improved/dim81-82-gamma72-clipped-sidecars/).
+
+23 November 2026 — Joint trine relocation raises **36D to 504,015**, and the clipped-fibre construction transfers to **77–79D**, reaching **6,225,814,200 in 78D**. [36D exact replay](https://github.com/alexlegeartis/KissingNumbers/tree/220a01c660ebe09c1a80a4a4856ee7ced7ce0803/verifications/improved/dim36-ct-joint-relocation) · [77–79D exact replay](verifications/improved/dim77-79-gamma72-clipped-fibres/).
 
 23 November 2026 — Clipping only the blocked portions of twelve minimum-depth fibres gives **6,228,431,712 in 80D**. [Exact replay](verifications/improved/dim80-gamma72-partial-fibres/).
 
