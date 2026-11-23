@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+23 November 2026 — One binary code supplies both dense and sparse layers, improving all six 62–67D lower bounds again. The 64D bound is **413,526,912** (+10,706,944), and three tagged weight-14 shells raise 67D to **437,513,094** (+15,308,784). [Exact replay](verifications/improved/dim62-67-rm2-selfsparse/). Run `python verifications/improved/dim62-67-rm2-selfsparse/verify.py`.
+
 22 November 2026 — Eighty cubic cosets of RM(2,6) give 335,544,320 dense signs and improve all dimensions 62–67. The 64D lower bound is **402,819,968** (+67,021,024), and the 67D lower bound is **422,204,310**. [Exact replay](verifications/improved/dim62-67-rm2-cubic-cosets/).
 
 22 November 2026 — The signed-owner replay corrects the 60D bound to **58,664,184** (+462 over 58,663,722), with 231 compatible ray pairs and no blockers. [Exact replay and correction](verifications/improved/dim60-p48-n12-blockers/).

@@ -6,6 +6,15 @@ Dated milestones and comparison history retained from the main README. [Current 
 
 The improvement story is grouped by calendar week, newest first. Expand a week to see dated milestones, intermediate constructions and verification links. These are historical checkpoints: use the [results table](README.md#results-and-construction-history) for current bounds. Unless an external comparison is named, an incremental gain is over the preceding repository certificate; inherited premises and priority caveats remain attached to each result. The [manuscript update remains deferred](RESEARCH_GUIDE.md#the-write-up).
 
+<a id="week-2026-11-23"></a>
+
+<details>
+<summary>23–29 November 2026: code shells (through 23 November)</summary>
+
+23 November 2026 — One binary code supplies both dense and sparse layers, improving all six 62–67D lower bounds again. The 64D bound is **413,526,912** (+10,706,944), and three tagged weight-14 shells raise 67D to **437,513,094** (+15,308,784). [Exact replay](verifications/improved/dim62-67-rm2-selfsparse/).
+
+</details>
+
 <a id="week-2026-11-16"></a>
 
 <details>
