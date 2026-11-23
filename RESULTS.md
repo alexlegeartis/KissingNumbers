@@ -2,6 +2,10 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — A signed shell obtained by detaching one marked coordinate gives **166,921,228 in 62D** and **226,280,708 in 63D**. [Exact replay](verifications/improved/dim62-single-mark-square/).
+
+23 November 2026 — A finite-field Sidon map couples the clipped Γ72 fibres to multipartite D-type root systems, raising **81–85D**, including **6,246,072,200 in 85D**. [Exact replay](verifications/improved/dim81-85-gamma72-apn-multipartite/).
+
 23 November 2026 — Replacing whole Coxeter–Todd label cells and recomputing the heavy-vector assignments raises **36D to 504,365**, an increase of 328 over the four-cell construction. [Exact replay](verifications/improved/dim36-ct-whole-cell-response/).
 
 23 November 2026 — Exact cross-chart shell checks let the clipped 80D construction carry a full orthogonal D4 sidecar. The resulting bounds are **6,229,251,942 in 82D**, **6,230,072,172 in 83D** and **6,231,712,632 in 84D**. [Exact replay](verifications/improved/dim82-84-gamma72-full-sidecar/).
@@ -291,8 +295,8 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 59 | 52 416 604 | **56 969 157** | 1.09 | `classes` | [Antipodal pure-tail refill](verifications/improved/dim59-p48-pure94/) |
 | 60 | 52 416 841 | **58 665 998** | 1.12 | `classes` | [Common-class 48-frame and signed tail](verifications/improved/dim60-p48-frame48-tail/) |
 | 61 | 52 417 154 | **91 038 762** | 1.74 | `codes` | [Omitted-fibre weighted spikes](verifications/improved/dim61-62-omitted-fibre-spikes/)
-| 62 | 52 417 932 | **150 561 804** | 2.87 | `codes` | [Dense code and its sparse shells](verifications/improved/dim62-67-rm2-selfsparse/) |
-| 63 | 52 418 564 | **217 044 228** | 4.14 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
+| 62 | 52 417 932 | **166 921 228** | 3.18 | `codes` | [Single-mark signed shells](verifications/improved/dim62-single-mark-square/) |
+| 63 | 52 418 564 | **226 280 708** | 4.32 | `codes` | [Single-mark signed shells](verifications/improved/dim62-single-mark-square/) |
 | 64 | 331 737 984 | **418 478 976** | 1.26 | `codes` | [Affine hyperplanes with 24-cell heads](verifications/improved/dim63-68-affine-hyperplane-heads/) |
 | 65 | 331 737 986 | **419 000 274** | 1.26 | `codes` | [Optimal quadruple layer (existence proof)](verifications/improved/dim65-optimal-quadruple-layer/) |
 | 66 | 331 737 990 | **429 290 020** | 1.29 | `codes` | [Grouped four-site designs](verifications/improved/dim65-66-grouped-four-site-designs/) |
@@ -309,11 +313,11 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 78 | 6 218 175 672 | **6 225 814 200** | 1.00 | `cosets` | [Clipped Γ72–D5, E6, E7 fibres](verifications/improved/dim77-79-gamma72-clipped-fibres/) |
 | 79 | 6 218 175 726 | **6 226 634 478** | 1.00 | `cosets` | [Clipped Γ72–D5, E6, E7 fibres](verifications/improved/dim77-79-gamma72-clipped-fibres/) |
 | 80 | 6 218 175 840 | **6 228 431 712** | 1.00 | `cosets` | [Clipped Γ72–E8 fibres](verifications/improved/dim80-gamma72-partial-fibres/) |
-| 81 | 6 218 175 906 | **6 228 705 122** | 1.00 | `cosets` | [Clipped Γ72–E8 fibres with orthogonal sidecars](verifications/improved/dim81-82-gamma72-clipped-sidecars/) |
-| 82 | 6 218 176 110 | **6 229 251 942** | 1.00 | `cosets` | [Full D4 sidecar on clipped Γ72–E8 fibres](verifications/improved/dim82-84-gamma72-full-sidecar/) |
-| 83 | 6 218 176 204 | **6 230 072 172** | 1.00 | `cosets` | [Full D4 sidecar on clipped Γ72–E8 fibres](verifications/improved/dim82-84-gamma72-full-sidecar/) |
-| 84 | 6 218 176 441 | **6 231 712 632** | 1.00 | `cosets` | [Full D4 sidecar on clipped Γ72–E8 fibres](verifications/improved/dim82-84-gamma72-full-sidecar/) |
-| 85 | 6 218 176 754 | **6 235 993 850** | 1.00 | `heads` | [Finer exact Γ72 recurrence](verifications/improved/dim74-85-gamma72-fine-recurrence/) |
+| 81 | 6 218 175 906 | **6 232 188 256** | 1.00 | `cosets` | [APN-coloured multipartite Γ72–D fibres](verifications/improved/dim81-85-gamma72-apn-multipartite/) |
+| 82 | 6 218 176 110 | **6 235 144 100** | 1.00 | `cosets` | [APN-coloured multipartite Γ72–D fibres](verifications/improved/dim81-85-gamma72-apn-multipartite/) |
+| 83 | 6 218 176 204 | **6 238 576 140** | 1.00 | `cosets` | [APN-coloured multipartite Γ72–D fibres](verifications/improved/dim81-85-gamma72-apn-multipartite/) |
+| 84 | 6 218 176 441 | **6 242 540 232** | 1.00 | `cosets` | [APN-coloured multipartite Γ72–D fibres](verifications/improved/dim81-85-gamma72-apn-multipartite/) |
+| 85 | 6 218 176 754 | **6 246 072 200** | 1.00 | `cosets` | [APN-coloured multipartite Γ72–D fibres](verifications/improved/dim81-85-gamma72-apn-multipartite/) |
 | 86 | 6 218 177 532 | **8 008 552 282** | 1.29 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 87 | 6 218 178 164 | **8 160 988 416** | 1.31 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 88 | 6 218 179 920 | **13 358 363 692** | 2.15 | `codes` | [Full Pless census and new chord marks](verifications/improved/dim88-full-pless-chord-marks/) 
@@ -420,6 +424,8 @@ refreshed table, not more search.
 | 36 | `dim36-ct-pocket-trade` | verify.py: exact root-phase pocket trades and Gram replay |
 | 36 | `dim36-ct-joint-relocation` | verify.py: exact joint CT trine relocations and Gram replay |
 | 36 | `dim36-ct-whole-cell-response` | verify.py: exact CT whole-cell and heavy-fibre reconstruction |
+| 62–63 | `dim62-single-mark-square` | verify.py: exact RM2 parity, shortened Hamming signs and redirected roots |
+| 81–85 | `dim81-85-gamma72-apn-multipartite` | verify.py: exact APN vertex labels, depth-six and singleton clipping |
 | 36 | `dim36-ct-double-trine` | verify.py: exact complete trine swap and base checks |
 | 77–79 | `dim77-79-gamma72-seven-charts` | verify.py: exact transported phase and root-tail construction |
 | 63–68 | `dim63-68-affine-hyperplane-heads` | verify.py: exact signed shelves, 24-cell hyperplane codes, and mixed polar heights |

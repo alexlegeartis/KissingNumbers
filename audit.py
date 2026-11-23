@@ -869,6 +869,12 @@ with io.open(os.path.join(IMP, 'dim82-84-gamma72-full-sidecar', 'claims.json'), 
 with io.open(os.path.join(IMP, 'dim81-82-gamma72-clipped-sidecars', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim81-82-gamma72-clipped-sidecars', 'verify.py: exact A1/A2 sidecar fibres and inherited shell')
+with io.open(os.path.join(IMP, 'dim62-single-mark-square', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim62-single-mark-square', 'verify.py: exact RM2 parity, shortened Hamming signs and redirected roots')
+with io.open(os.path.join(IMP, 'dim81-85-gamma72-apn-multipartite', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim81-85-gamma72-apn-multipartite', 'verify.py: exact APN vertex labels, depth-six and singleton clipping')
 with io.open(os.path.join(IMP, 'dim36-ct-whole-cell-response', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim36-ct-whole-cell-response', 'verify.py: exact CT whole-cell and heavy-fibre reconstruction')
@@ -2775,6 +2781,8 @@ if '--write-results' in sys.argv and not fail:
         'dim82-84-gamma72-full-sidecar': 'Full D4 sidecar on clipped Γ72–E8 fibres',
         'dim36-ct-joint-relocation': 'Joint Coxeter–Todd trine relocation',
         'dim36-ct-whole-cell-response': 'Coxeter–Todd whole-cell reallocation',
+        'dim62-single-mark-square': 'Single-mark signed shells',
+        'dim81-85-gamma72-apn-multipartite': 'APN-coloured multipartite Γ72–D fibres',
         'dim77-79-gamma72-clipped-fibres': 'Clipped Γ72–D5, E6, E7 fibres',
         'dim65-66-grouped-four-site-designs': 'Grouped four-site designs',
         'dim66-68-nested-affine-face-trades': 'Nested affine face trades',
@@ -2808,6 +2816,10 @@ if '--write-results' in sys.argv and not fail:
     out.append("# Results")
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
+    out.append("")
+    out.append("23 November 2026 — A signed shell obtained by detaching one marked coordinate gives **166,921,228 in 62D** and **226,280,708 in 63D**. [Exact replay](verifications/improved/dim62-single-mark-square/).")
+    out.append("")
+    out.append("23 November 2026 — A finite-field Sidon map couples the clipped Γ72 fibres to multipartite D-type root systems, raising **81–85D**, including **6,246,072,200 in 85D**. [Exact replay](verifications/improved/dim81-85-gamma72-apn-multipartite/).")
     out.append("")
     out.append("23 November 2026 — Replacing whole Coxeter–Todd label cells and recomputing the heavy-vector assignments raises **36D to 504,365**, an increase of 328 over the four-cell construction. [Exact replay](verifications/improved/dim36-ct-whole-cell-response/).")
     out.append("")
