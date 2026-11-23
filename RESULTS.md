@@ -1,5 +1,9 @@
 # Results
 
+23 November 2026 — The D9 root system and an even octad layer give **6,251,562,978 in 81D** (+39,168). [Exact replay](verifications/improved/dim81-gamma72-d9-octad/).
+
+23 November 2026 — A fourth Delsarte–Goethals spike prefix using a Kerdock subcode gives **173,733,268 in 62D** (+15,360). [Exact replay](verifications/improved/dim62-dg-fourth-kerdock/).
+
 23 November 2026 — A separate norm-four layer raises **82D to 6,269,102,538** (+14,976) and **83D to 6,278,834,796** (+66,816); the 83D construction uses a perfect matching of the five-cube. [Exact replay](verifications/improved/dim82-83-gamma72-norm4-tail-weave/).
 
 23 November 2026 — An eight-for-six pure-tail exchange raises **59D to 56,969,166** (+2), with all mixed stock unchanged. [Exact replay](verifications/improved/dim59-p48-signed103/).
@@ -355,7 +359,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 59 | 52 416 604 | **56 969 166** | 1.09 | `classes` | [Eight-for-six pure-tail exchange](verifications/improved/dim59-p48-signed103/)
 | 60 | 52 416 841 | **69 704 624** | 1.33 | `classes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
 | 61 | 52 417 154 | **120 324 786** | 2.30 | `codes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
-| 62 | 52 417 932 | **173 717 908** | 3.31 | `codes` | [Three Delsarte–Goethals spike prefixes](verifications/improved/dim62-dg-three-prefixes/) |
+| 62 | 52 417 932 | **173 733 268** | 3.31 | `codes` | [Four spike prefixes with a Kerdock subcode](verifications/improved/dim62-dg-fourth-kerdock/) |
 | 63 | 52 418 564 | **232 191 236** | 4.43 | `codes` | [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) |
 | 64 | 331 737 984 | **422 673 152** | 1.27 | `codes` | [Split-amplitude Delsarte–Goethals donors](verifications/improved/dim64-65-dg-split-amplitudes/) |
 | 65 | 331 737 986 | **424 177 492** | 1.28 | `codes` | [Three-site donors with a 46-hyperplane atlas](verifications/improved/dim65-68-dg-diagonal-triples/) |
@@ -373,7 +377,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 78 | 6 218 175 672 | **6 227 143 800** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
 | 79 | 6 218 175 726 | **6 233 438 398** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
 | 80 | 6 218 175 840 | **6 246 118 720** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
-| 81 | 6 218 175 906 | **6 251 523 810** | 1.01 | `cosets` | [Antipodal support codes as Γ72 tails](verifications/improved/dim81-84-antipodal-tail-codes/) |
+| 81 | 6 218 175 906 | **6 251 562 978** | 1.01 | `cosets` | [D9 roots and even-octad tail layer](verifications/improved/dim81-gamma72-d9-octad/) |
 | 82 | 6 218 176 110 | **6 269 102 538** | 1.01 | `cosets` | [D5 and weighted norm-four tail layer](verifications/improved/dim82-83-gamma72-norm4-tail-weave/)
 | 83 | 6 218 176 204 | **6 278 834 796** | 1.01 | `cosets` | [Five-cube matching tail layer](verifications/improved/dim82-83-gamma72-norm4-tail-weave/)
 | 84 | 6 218 176 441 | **6 292 644 032** | 1.01 | `cosets` | [Signed packets and additional norm-four tails](verifications/improved/dim84-85-gamma72-norm4-tail-weave/)
@@ -510,6 +514,8 @@ refreshed table, not more search.
 | 62–63 | `dim62-63-dg-spike-banks` | verify.py: exact cubic-class spike geometry and short-guard bank overlaps |
 | 62 | `dim62-two-mark-diagonals` | verify.py: exact head geometry and simultaneous parity constraints |
 | 59 | `dim59-p48-signed103` | verify.py: exact eight-for-six pure-tail exchange and inherited interfaces |
+| 62 | `dim62-dg-fourth-kerdock` | verify.py: exact Kerdock spike and refitted DG prefixes |
+| 81 | `dim81-gamma72-d9-octad` | verify.py: exact D9 and even-octad horizontal gluing |
 | 82–83 | `dim82-83-gamma72-norm4-tail-weave` | verify.py: exact D5/weighted shell and perfect-matching norm-four tail layers |
 | 84–85 | `dim84-85-gamma72-norm4-tail-weave` | verify.py: exact signed Γ72 packet and orthogonal norm-four tail layers |
 | 84–85 | `dim84-85-all-profiles-append` | verify.py: exact profile intersections and triple component separation |
