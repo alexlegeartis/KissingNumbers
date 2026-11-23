@@ -2,6 +2,8 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Coordinated Coxeter–Todd cell swaps and lifted-fibre reassignment raise **36D to 506,376**, an increase of 2,011. [Exact replay](verifications/improved/dim36-ct-multicell-fibres/).
+
 23 November 2026 — Shared eight-site parity checks add signed supports without shrinking any old bank: **170,279,948 in 62D** and **230,159,620 in 63D**. [Exact replay](verifications/improved/dim62-63-guarded-rephase/).
 
 23 November 2026 — Full root tails, coupled contacts and additional B-only fibres raise **77–85D**, including **6,243,307,240 in 80D** and **6,251,849,384 in 85D**. [77–80D replay](verifications/improved/dim77-80-gamma72-apn-coupled-tails/) · [81–85D replay](verifications/improved/dim81-85-gamma72-norm4-layer/).
@@ -275,7 +277,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 33 | 370 240 | **370 528** | 1.00 | `codes` | [joint repacking of individual signed octads, stars and roots](verifications/improved/dim33-joint-signed-refill/) |
 | 34 | 390 980 | **391 004** | 1.00 | `heads` | [coordinated octad switches and root-star exchanges; two exact proofs](verifications/improved/dim34-octad-switches/) |
 | 35 | 415 308 | **415 360** | 1.00 | `heads` | [joint signed-star and root repacking](verifications/improved/dim35-joint-star-root/) |
-| 36 | 484 760 | **504 365** | 1.04 | `cosets` | [Coxeter–Todd whole-cell reallocation](verifications/improved/dim36-ct-whole-cell-response/) |
+| 36 | 484 760 | **506 376** | 1.04 | `cosets` | [Coxeter–Todd multicell fibre reassignment](verifications/improved/dim36-ct-multicell-fibres/)
 | 37 | 500 008 | **544 666** | 1.09 | `codes` | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) |
 | 38 | 566 652 | **652 076** | 1.15 | `codes` | [QR offsets, ten octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) |
 | 39 | 755 988 | **783 468** | 1.03 | `codes` | [QR fibres with three-coordinate heads and projected support checks](verifications/improved/dim39-qr-three-coordinate-heads/) |
@@ -427,6 +429,7 @@ refreshed table, not more search.
 | 66–68 | `dim66-68-nested-affine-face-trades` | verify.py: exact affine face trades and complete predecessor replay |
 | 36 | `dim36-ct-pocket-trade` | verify.py: exact root-phase pocket trades and Gram replay |
 | 36 | `dim36-ct-joint-relocation` | verify.py: exact joint CT trine relocations and Gram replay |
+| 36 | `dim36-ct-multicell-fibres` | verify.py: exact CT multicell and lifted-fibre reconstruction |
 | 36 | `dim36-ct-whole-cell-response` | verify.py: exact CT whole-cell and heavy-fibre reconstruction |
 | 62–63 | `dim62-single-mark-square` | verify.py: exact RM2 parity, shortened Hamming signs and redirected roots |
 | 81–85 | `dim81-85-gamma72-apn-multipartite` | verify.py: exact APN vertex labels, depth-six and singleton clipping |

@@ -1,0 +1,4 @@
+PASS new×new literal pairs 52906041
+Exact base blocker subset 4860 with additional planned deletions 0
+PASS recovered 2196 with max 6 in 1083739176 old products, 22590252 new root products and 2410110 within recovered pairs; partial sum cap 576
+PASS independent literal expansion: exact upper cap 6 over 5173630623 new-old products; float64 absolute partial-sum cap 576 ; 505989 with 10287 added; 4860 base deletions and 4563 root deletions, actual root blockers 4563

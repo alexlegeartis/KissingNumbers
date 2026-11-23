@@ -887,6 +887,9 @@ with io.open(os.path.join(IMP, 'dim81-85-gamma72-norm4-layer', 'claims.json'), e
 with io.open(os.path.join(IMP, 'dim81-85-gamma72-apn-multipartite', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim81-85-gamma72-apn-multipartite', 'verify.py: exact APN vertex labels, depth-six and singleton clipping')
+with io.open(os.path.join(IMP, 'dim36-ct-multicell-fibres', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim36-ct-multicell-fibres', 'verify.py: exact CT multicell and lifted-fibre reconstruction')
 with io.open(os.path.join(IMP, 'dim36-ct-whole-cell-response', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim36-ct-whole-cell-response', 'verify.py: exact CT whole-cell and heavy-fibre reconstruction')
@@ -2792,6 +2795,7 @@ if '--write-results' in sys.argv and not fail:
         'dim81-82-gamma72-clipped-sidecars': 'Clipped Γ72–E8 fibres with orthogonal sidecars',
         'dim82-84-gamma72-full-sidecar': 'Full D4 sidecar on clipped Γ72–E8 fibres',
         'dim36-ct-joint-relocation': 'Joint Coxeter–Todd trine relocation',
+        'dim36-ct-multicell-fibres': 'Coxeter–Todd multicell fibre reassignment',
         'dim36-ct-whole-cell-response': 'Coxeter–Todd whole-cell reallocation',
         'dim62-single-mark-square': 'Single-mark signed shells',
         'dim81-85-gamma72-apn-multipartite': 'APN-coloured multipartite Γ72–D fibres',
@@ -2833,6 +2837,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
     out.append("")
+    out.append("23 November 2026 — Coordinated Coxeter–Todd cell swaps and lifted-fibre reassignment raise **36D to 506,376**, an increase of 2,011. [Exact replay](verifications/improved/dim36-ct-multicell-fibres/).")
+    out.append('')
     out.append("23 November 2026 — Shared eight-site parity checks add signed supports without shrinking any old bank: **170,279,948 in 62D** and **230,159,620 in 63D**. [Exact replay](verifications/improved/dim62-63-guarded-rephase/).")
     out.append("")
     out.append("23 November 2026 — Full root tails, coupled contacts and additional B-only fibres raise **77–85D**, including **6,243,307,240 in 80D** and **6,251,849,384 in 85D**. [77–80D replay](verifications/improved/dim77-80-gamma72-apn-coupled-tails/) · [81–85D replay](verifications/improved/dim81-85-gamma72-norm4-layer/).")
