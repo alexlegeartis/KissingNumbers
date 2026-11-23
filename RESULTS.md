@@ -2,6 +2,8 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Replacing whole Coxeter–Todd label cells and recomputing the heavy-vector assignments raises **36D to 504,365**, an increase of 328 over the four-cell construction. [Exact replay](verifications/improved/dim36-ct-whole-cell-response/).
+
 23 November 2026 — Exact cross-chart shell checks let the clipped 80D construction carry a full orthogonal D4 sidecar. The resulting bounds are **6,229,251,942 in 82D**, **6,230,072,172 in 83D** and **6,231,712,632 in 84D**. [Exact replay](verifications/improved/dim82-84-gamma72-full-sidecar/).
 
 23 November 2026 — A four-cell min-cut raises **36D to 504,037**. Orthogonal root-system sidecars extend the 80D clipped-fibre construction to **6,228,705,122 in 81D** and **6,229,187,942 in 82D**. [36D replay](verifications/improved/dim36-ct-joint-relocation/) · [81–82D replay](verifications/improved/dim81-82-gamma72-clipped-sidecars/).
@@ -265,7 +267,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 33 | 370 240 | **370 528** | 1.00 | `codes` | [joint repacking of individual signed octads, stars and roots](verifications/improved/dim33-joint-signed-refill/) |
 | 34 | 390 980 | **391 004** | 1.00 | `heads` | [coordinated octad switches and root-star exchanges; two exact proofs](verifications/improved/dim34-octad-switches/) |
 | 35 | 415 308 | **415 360** | 1.00 | `heads` | [joint signed-star and root repacking](verifications/improved/dim35-joint-star-root/) |
-| 36 | 484 760 | **504 037** | 1.04 | `cosets` | [Joint Coxeter–Todd trine relocation](verifications/improved/dim36-ct-joint-relocation/) |
+| 36 | 484 760 | **504 365** | 1.04 | `cosets` | [Coxeter–Todd whole-cell reallocation](verifications/improved/dim36-ct-whole-cell-response/) |
 | 37 | 500 008 | **544 666** | 1.09 | `codes` | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) |
 | 38 | 566 652 | **652 076** | 1.15 | `codes` | [QR offsets, ten octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) |
 | 39 | 755 988 | **783 468** | 1.03 | `codes` | [QR fibres with three-coordinate heads and projected support checks](verifications/improved/dim39-qr-three-coordinate-heads/) |
@@ -417,6 +419,7 @@ refreshed table, not more search.
 | 66–68 | `dim66-68-nested-affine-face-trades` | verify.py: exact affine face trades and complete predecessor replay |
 | 36 | `dim36-ct-pocket-trade` | verify.py: exact root-phase pocket trades and Gram replay |
 | 36 | `dim36-ct-joint-relocation` | verify.py: exact joint CT trine relocations and Gram replay |
+| 36 | `dim36-ct-whole-cell-response` | verify.py: exact CT whole-cell and heavy-fibre reconstruction |
 | 36 | `dim36-ct-double-trine` | verify.py: exact complete trine swap and base checks |
 | 77–79 | `dim77-79-gamma72-seven-charts` | verify.py: exact transported phase and root-tail construction |
 | 63–68 | `dim63-68-affine-hyperplane-heads` | verify.py: exact signed shelves, 24-cell hyperplane codes, and mixed polar heights |

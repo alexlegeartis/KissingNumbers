@@ -869,6 +869,9 @@ with io.open(os.path.join(IMP, 'dim82-84-gamma72-full-sidecar', 'claims.json'), 
 with io.open(os.path.join(IMP, 'dim81-82-gamma72-clipped-sidecars', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim81-82-gamma72-clipped-sidecars', 'verify.py: exact A1/A2 sidecar fibres and inherited shell')
+with io.open(os.path.join(IMP, 'dim36-ct-whole-cell-response', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim36-ct-whole-cell-response', 'verify.py: exact CT whole-cell and heavy-fibre reconstruction')
 with io.open(os.path.join(IMP, 'dim36-ct-joint-relocation', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim36-ct-joint-relocation', 'verify.py: exact joint CT trine relocations and Gram replay')
@@ -2771,6 +2774,7 @@ if '--write-results' in sys.argv and not fail:
         'dim81-82-gamma72-clipped-sidecars': 'Clipped Γ72–E8 fibres with orthogonal sidecars',
         'dim82-84-gamma72-full-sidecar': 'Full D4 sidecar on clipped Γ72–E8 fibres',
         'dim36-ct-joint-relocation': 'Joint Coxeter–Todd trine relocation',
+        'dim36-ct-whole-cell-response': 'Coxeter–Todd whole-cell reallocation',
         'dim77-79-gamma72-clipped-fibres': 'Clipped Γ72–D5, E6, E7 fibres',
         'dim65-66-grouped-four-site-designs': 'Grouped four-site designs',
         'dim66-68-nested-affine-face-trades': 'Nested affine face trades',
@@ -2804,6 +2808,8 @@ if '--write-results' in sys.argv and not fail:
     out.append("# Results")
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
+    out.append("")
+    out.append("23 November 2026 — Replacing whole Coxeter–Todd label cells and recomputing the heavy-vector assignments raises **36D to 504,365**, an increase of 328 over the four-cell construction. [Exact replay](verifications/improved/dim36-ct-whole-cell-response/).")
     out.append("")
     out.append("23 November 2026 — Exact cross-chart shell checks let the clipped 80D construction carry a full orthogonal D4 sidecar. The resulting bounds are **6,229,251,942 in 82D**, **6,230,072,172 in 83D** and **6,231,712,632 in 84D**. [Exact replay](verifications/improved/dim82-84-gamma72-full-sidecar/).")
     out.append("")

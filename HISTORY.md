@@ -13,6 +13,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Replacing whole Coxeter–Todd label cells and recomputing the heavy-vector assignments raises **36D to 504,365**, an increase of 328 over the four-cell construction. [Exact replay](verifications/improved/dim36-ct-whole-cell-response/).
+
 23 November 2026 — Exact cross-chart shell checks let the clipped 80D construction carry a full orthogonal D4 sidecar. The resulting bounds are **6,229,251,942 in 82D**, **6,230,072,172 in 83D** and **6,231,712,632 in 84D**. [Exact replay](verifications/improved/dim82-84-gamma72-full-sidecar/).
 
 23 November 2026 — A four-cell min-cut raises **36D to 504,037**. Orthogonal root-system sidecars extend the 80D clipped-fibre construction to **6,228,705,122 in 81D** and **6,229,187,942 in 82D**. [36D replay](verifications/improved/dim36-ct-joint-relocation/) · [81–82D replay](verifications/improved/dim81-82-gamma72-clipped-sidecars/).
@@ -170,7 +172,7 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **22 November 2026 — Signed Netto trades.** **342,389,574** in 66D (+16) and **355,195,404** in 67D (+13), replacing selected signed quadruples without changing the exterior BCH caps. [Exact replay](verifications/improved/dim66-67-netto-signed-trades/).
 
-**22 November 2026 — Exterior BCH cap bodies.** **336,256,796** in 65D (+327,680); **342,389,558** in 66D (+8,192); **355,195,391** in 67D (+12,288). [Exact replay](verifications/improved/dim65-67-bch-exterior-caps/).
+**22 November 2026 — Exterior BCH cap bodies.** **336,256,796** in 65D (+327,680); **342,389,558** in 66D (+8,192); **355,195,391** in 67D (+12,396). [Exact replay](verifications/improved/dim65-67-bch-exterior-caps/).
 
 **22 November 2026 — Kerdock-axis owner lifts.** **342,381,366** in 66D (+8,188); **355,183,103** in 67D (+12,282). [Exact replay](verifications/improved/dim66-67-kerdock-axis-owners/).
 
