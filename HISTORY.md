@@ -13,6 +13,10 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Barnes–Wall-type equality-section tails improve **82D, 83D and 85D**, including **6,265,203,518 in 83D** and **6,292,777,568 in 85D**. [Exact replay](verifications/improved/dim82-85-bw16-tail-sections/).
+
+23 November 2026 — Perturbing and reassembling Coxeter–Todd cells raises **36D to 506,628** (+252). [Exact replay](verifications/improved/dim36-ct-neutral-reheat/).
+
 23 November 2026 — Half-sign tails and three separate horizontal contact graphs improve **77–85D**, including **6,281,841,864 in 84D** and **6,286,710,352 in 85D**. [Exact replay](verifications/improved/dim81-85-gamma72-half-sign/).
 
 23 November 2026 — Coordinated Coxeter–Todd cell swaps and lifted-fibre reassignment raise **36D to 506,376**, an increase of 2,011. [Exact replay](verifications/improved/dim36-ct-multicell-fibres/).

@@ -881,6 +881,12 @@ with io.open(os.path.join(IMP, 'dim77-80-gamma72-apn-coupled-tails', 'claims.jso
 with io.open(os.path.join(IMP, 'dim81-85-gamma72-apn-complete-dm', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim81-85-gamma72-apn-complete-dm', 'verify.py: exact full D-type root and horizontal contact shell replay')
+with io.open(os.path.join(IMP, 'dim36-ct-neutral-reheat', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim36-ct-neutral-reheat', 'verify.py: exact Coxeter–Todd whole-cell perturbation and vertex delta')
+with io.open(os.path.join(IMP, 'dim82-85-bw16-tail-sections', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim82-85-bw16-tail-sections', 'verify.py: exact Barnes–Wall-type tail sections and coupled profile replay')
 with io.open(os.path.join(IMP, 'dim81-85-gamma72-half-sign', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim81-85-gamma72-half-sign', 'verify.py and verify77.py: exact half-sign and contact-graph replay')
@@ -2805,6 +2811,8 @@ if '--write-results' in sys.argv and not fail:
         'dim62-63-guarded-rephase': 'Simultaneous support rephasing',
         'dim77-80-gamma72-apn-coupled-tails': 'Complete Γ72 tails and coupled contacts',
         'dim81-85-gamma72-apn-complete-dm': 'Complete D-type Γ72 fibres',
+        'dim36-ct-neutral-reheat': 'Coxeter–Todd cell perturbations and recovery',
+        'dim82-85-bw16-tail-sections': 'Barnes–Wall-type equality-section tails',
         'dim81-85-gamma72-half-sign': 'Half-sign tails and coupled Γ72 profiles',
         'dim81-85-gamma72-norm4-layer': 'Complete D-type fibres and B-only tail shells',
         'dim77-79-gamma72-clipped-fibres': 'Clipped Γ72–D5, E6, E7 fibres',
@@ -2841,6 +2849,10 @@ if '--write-results' in sys.argv and not fail:
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
     out.append("")
+    out.append("23 November 2026 — Barnes–Wall-type equality-section tails improve **82D, 83D and 85D**, including **6,265,203,518 in 83D** and **6,292,777,568 in 85D**. [Exact replay](verifications/improved/dim82-85-bw16-tail-sections/).")
+    out.append('')
+    out.append("23 November 2026 — Perturbing and reassembling Coxeter–Todd cells raises **36D to 506,628** (+252). [Exact replay](verifications/improved/dim36-ct-neutral-reheat/).")
+    out.append('')
     out.append("23 November 2026 — Half-sign tails and three separate horizontal contact graphs improve **77–85D**, including **6,281,841,864 in 84D** and **6,286,710,352 in 85D**. [Exact replay](verifications/improved/dim81-85-gamma72-half-sign/).")
     out.append('')
     out.append("23 November 2026 — Coordinated Coxeter–Todd cell swaps and lifted-fibre reassignment raise **36D to 506,376**, an increase of 2,011. [Exact replay](verifications/improved/dim36-ct-multicell-fibres/).")

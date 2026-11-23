@@ -1,0 +1,6 @@
+components 1894717 groups 1398847 maxgroup 696 maxcomponent 696 edges 475847 seed 1971436 result 1994656 gained 23220
+PASS BW tail section 82 6254779152 raw triple 1937810 recoupled 33626 component gain 23220 two-profile counts 36601 586090 rays 168
+components 2405636 groups 1654380 maxgroup 984 maxcomponent 984 edges 704383 seed 2528604 result 2562354 gained 33750
+PASS BW tail section 83 6265203518 raw triple 2476275 recoupled 52329 component gain 33750 two-profile counts 45304 753727 rays 219
+components 3468726 groups 2204958 maxgroup 1536 maxcomponent 1536 edges 2281425 seed 3925751 result 4028344 gained 102593
+PASS BW tail section 85 6292777568 raw triple 3746464 recoupled 179287 component gain 102593 two-profile counts 64124 1268462 rays 384

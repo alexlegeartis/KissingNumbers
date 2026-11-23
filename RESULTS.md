@@ -2,6 +2,10 @@
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
+23 November 2026 — Barnes–Wall-type equality-section tails improve **82D, 83D and 85D**, including **6,265,203,518 in 83D** and **6,292,777,568 in 85D**. [Exact replay](verifications/improved/dim82-85-bw16-tail-sections/).
+
+23 November 2026 — Perturbing and reassembling Coxeter–Todd cells raises **36D to 506,628** (+252). [Exact replay](verifications/improved/dim36-ct-neutral-reheat/).
+
 23 November 2026 — Half-sign tails and three separate horizontal contact graphs improve **77–85D**, including **6,281,841,864 in 84D** and **6,286,710,352 in 85D**. [Exact replay](verifications/improved/dim81-85-gamma72-half-sign/).
 
 23 November 2026 — Coordinated Coxeter–Todd cell swaps and lifted-fibre reassignment raise **36D to 506,376**, an increase of 2,011. [Exact replay](verifications/improved/dim36-ct-multicell-fibres/).
@@ -279,7 +283,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 33 | 370 240 | **370 528** | 1.00 | `codes` | [joint repacking of individual signed octads, stars and roots](verifications/improved/dim33-joint-signed-refill/) |
 | 34 | 390 980 | **391 004** | 1.00 | `heads` | [coordinated octad switches and root-star exchanges; two exact proofs](verifications/improved/dim34-octad-switches/) |
 | 35 | 415 308 | **415 360** | 1.00 | `heads` | [joint signed-star and root repacking](verifications/improved/dim35-joint-star-root/) |
-| 36 | 484 760 | **506 376** | 1.04 | `cosets` | [Coxeter–Todd multicell fibre reassignment](verifications/improved/dim36-ct-multicell-fibres/)
+| 36 | 484 760 | **506 628** | 1.05 | `cosets` | [Coxeter–Todd cell perturbations and recovery](verifications/improved/dim36-ct-neutral-reheat/) |
 | 37 | 500 008 | **544 666** | 1.09 | `codes` | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) |
 | 38 | 566 652 | **652 076** | 1.15 | `codes` | [QR offsets, ten octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) |
 | 39 | 755 988 | **783 468** | 1.03 | `codes` | [QR fibres with three-coordinate heads and projected support checks](verifications/improved/dim39-qr-three-coordinate-heads/) |
@@ -322,10 +326,10 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 79 | 6 218 175 726 | **6 233 438 398** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
 | 80 | 6 218 175 840 | **6 246 118 720** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
 | 81 | 6 218 175 906 | **6 248 779 696** | 1.00 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
-| 82 | 6 218 176 110 | **6 252 353 036** | 1.01 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
-| 83 | 6 218 176 204 | **6 256 290 188** | 1.01 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
+| 82 | 6 218 176 110 | **6 254 779 152** | 1.01 | `cosets` | [Barnes–Wall-type equality-section tails](verifications/improved/dim82-85-bw16-tail-sections/) |
+| 83 | 6 218 176 204 | **6 265 203 518** | 1.01 | `cosets` | [Barnes–Wall-type equality-section tails](verifications/improved/dim82-85-bw16-tail-sections/) |
 | 84 | 6 218 176 441 | **6 281 841 864** | 1.01 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
-| 85 | 6 218 176 754 | **6 286 710 352** | 1.01 | `cosets` | [Half-sign tails and coupled Γ72 profiles](verifications/improved/dim81-85-gamma72-half-sign/) |
+| 85 | 6 218 176 754 | **6 292 777 568** | 1.01 | `cosets` | [Barnes–Wall-type equality-section tails](verifications/improved/dim82-85-bw16-tail-sections/) |
 | 86 | 6 218 177 532 | **8 008 552 282** | 1.29 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 87 | 6 218 178 164 | **8 160 988 416** | 1.31 | `codes` | [Rotated plane trades](verifications/improved/dim86-87-90-rotated-plane-trades/)
 | 88 | 6 218 179 920 | **13 358 363 692** | 2.15 | `codes` | [Full Pless census and new chord marks](verifications/improved/dim88-full-pless-chord-marks/) 
@@ -438,6 +442,8 @@ refreshed table, not more search.
 | 62–63 | `dim62-63-guarded-rephase` | verify.py: exact support overlap and simultaneous affine guard parities |
 | 77–80 | `dim77-80-gamma72-apn-coupled-tails` | verify.py: exact full root and B-only tails, coupled singleton contacts |
 | 81–85 | `dim81-85-gamma72-apn-complete-dm` | verify.py: exact full D-type root and horizontal contact shell replay |
+| 36 | `dim36-ct-neutral-reheat` | verify.py: exact whole-cell and reassignments; independent coordinate delta |
+| 82–83, 85 | `dim82-85-bw16-tail-sections` | verify.py: exact equality sections and all three profile graphs |
 | 77–85 | `dim81-85-gamma72-half-sign` | verify.py and verify77.py: exact half-sign and contact-graph replay |
 | 81–85 | `dim81-85-gamma72-norm4-layer` | verify.py: exact norm-four B-only phases and pure eight-set tails |
 | 36 | `dim36-ct-double-trine` | verify.py: exact complete trine swap and base checks |
