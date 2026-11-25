@@ -1,0 +1,15 @@
+{
+  "dimension": 40,
+  "total": 1139120,
+  "supports": 4267,
+  "support_weight": 8,
+  "support_minimum_distance": 8,
+  "support_sha256": "0566ebf4da8b4997c9a782ea537ba3f35125d9c53201fa0cd94551a803ac47e2",
+  "support_source": "https://aeb.win.tue.nl/codes/cwc/d8/a40.8.8.4267H",
+  "dense_words": 589824,
+  "dense_minimum_distance": 10,
+  "dense_source": "https://arxiv.org/abs/math/0207291",
+  "previous_repository_bound": 1126365,
+  "gain": 12755,
+  "checked_support_pairs": 9101511
+}
