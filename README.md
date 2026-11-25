@@ -238,8 +238,15 @@ These commands have different verification scopes. See [coverage and inherited i
 
 ## Licence, citation, and how this was made
 
-MIT (see `[LICENSE](LICENSE)`). `[CITATION.cff](CITATION.cff)` carries the metadata GitHub
-uses for its "Cite this repository" button.
+MIT (see [LICENSE](LICENSE)). [CITATION.cff](CITATION.cff) supplies GitHub’s
+“Cite this repository” metadata. For the verified constructions and code, cite
+the dated repository snapshot rather than the older manuscript:
+
+> A. Kravatskiy, *Kissing numbers: new lower bounds in dimensions 18 through 96, with verification packages*, repository snapshot 2026.11.25, Nov. 25, 2026. [Online]. Available: [GitHub, commit `b752a6f`](https://github.com/alexlegeartis/KissingNumbers/tree/b752a6fd7c9b34b63fe027970ab391aacc5c659a).
+
+For a construction published after this snapshot, cite the specific commit
+containing its verification package. The manuscript PDF is a separate, older
+checkpoint.
 
 The constructions, the verification code and the write-ups in this repository were developed
 by the author working with **Claude Code** (Anthropic), **ChatGPT Pro (GPT 6)**, and **Astra & Sol 6.1 in Codex**. The repository is deliberately

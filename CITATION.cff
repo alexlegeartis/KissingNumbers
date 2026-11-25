@@ -3,19 +3,12 @@ message: "If you use these bounds or this verification code, please cite it."
 title: "Kissing numbers: new lower bounds in dimensions 18 through 96, with verification packages"
 abstract: >-
   Verification packages for constructive kissing-number lower bounds in 70
-  dimensions: 18, 25-46, 49-71 and 73-96. The synchronized 28 October 2026
-  registry gives 201136, 209600, 221694, 231638, 247960 and 251110 in
-  dimensions 26-31, improving the pinned PackingStar configurations by
-  2, 14, 30, 2, 4 and 108 points. Complete exact coordinate checks include
-  every unpaired point in the asymmetric constructions. Concurrent results
-  include 611522 in 38D, 2919782 in 43D and 142162362560 in 96D.
-  The nonlinear (96,2^37,24) parent code is prior work of Duursma,
-  Greferath, Litsyn and Schmidt (2001); sparse additions and exact central
-  sections are documented separately from that published dense-code gain.
-  Packages state their exact arithmetic, independent replays and inherited
-  inputs. These are lower bounds without unrestricted optimality claims.
-  The paper and PDF retain their earlier 66-result checkpoint; pending
-  dimensions and improvements are listed in common/manuscript_scope.json.
+  dimensions: 18, 25-46, 49-71 and 73-96. The 25 November 2026 repository
+  snapshot records the constructions, exact checks, inherited inputs and
+  source-attributed comparisons. An entry in the registry is not necessarily
+  the current world record; later external constructions are identified
+  separately. The paper and PDF retain their earlier 66-result checkpoint
+  documented in common/manuscript_scope.json.
 authors:
   - family-names: Kravatskiy
     given-names: Alexey
@@ -24,9 +17,10 @@ authors:
       MIRIAI (Moscow Independent Research Institute of Artificial
       Intelligence), Moscow, Russia
 repository-code: "https://github.com/alexlegeartis/KissingNumbers"
-url: "https://github.com/alexlegeartis/KissingNumbers"
-version: "1.1.1"
-date-released: "2026-09-11"
+url: "https://github.com/alexlegeartis/KissingNumbers/tree/b752a6fd7c9b34b63fe027970ab391aacc5c659a"
+version: "2026.11.25"
+commit: "b752a6fd7c9b34b63fe027970ab391aacc5c659a"
+date-released: "2026-11-25"
 license: MIT
 keywords:
   - kissing number
