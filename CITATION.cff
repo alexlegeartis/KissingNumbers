@@ -17,9 +17,9 @@ authors:
       MIRIAI (Moscow Independent Research Institute of Artificial
       Intelligence), Moscow, Russia
 repository-code: "https://github.com/alexlegeartis/KissingNumbers"
-url: "https://github.com/alexlegeartis/KissingNumbers/tree/b752a6fd7c9b34b63fe027970ab391aacc5c659a"
+url: "https://github.com/alexlegeartis/KissingNumbers/tree/457c3d1dd85fba09aa9c252ba66a837b69afd231"
 version: "2026.11.25"
-commit: "b752a6fd7c9b34b63fe027970ab391aacc5c659a"
+commit: "457c3d1dd85fba09aa9c252ba66a837b69afd231"
 date-released: "2026-11-25"
 license: MIT
 keywords:

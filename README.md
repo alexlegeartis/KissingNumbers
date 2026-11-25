@@ -242,7 +242,7 @@ MIT (see [LICENSE](LICENSE)). [CITATION.cff](CITATION.cff) supplies GitHub’s
 “Cite this repository” metadata. For the verified constructions and code, cite
 the dated repository snapshot rather than the older manuscript:
 
-> A. Kravatskiy, *Kissing numbers: new lower bounds in dimensions 18 through 96, with verification packages*, repository snapshot 2026.11.25, Nov. 25, 2026. [Online]. Available: [GitHub, commit `b752a6f`](https://github.com/alexlegeartis/KissingNumbers/tree/b752a6fd7c9b34b63fe027970ab391aacc5c659a).
+> A. Kravatskiy, *Kissing numbers: new lower bounds in dimensions 18 through 96, with verification packages*, repository snapshot 2026.11.25, Nov. 25, 2026. [Online]. Available: [GitHub, commit `457c3d1`](https://github.com/alexlegeartis/KissingNumbers/tree/457c3d1dd85fba09aa9c252ba66a837b69afd231).
 
 For a construction published after this snapshot, cite the specific commit
 containing its verification package. The manuscript PDF is a separate, older
