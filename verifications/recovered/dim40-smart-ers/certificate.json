@@ -11,5 +11,6 @@
   "dense_source": "https://arxiv.org/abs/math/0207291",
   "previous_repository_bound": 1126365,
   "gain": 12755,
-  "checked_support_pairs": 9101511
+  "checked_support_pairs": 9101511,
+  "kind": "external ingredients / exact derived comparison, not a repository construction record"
 }

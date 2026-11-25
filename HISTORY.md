@@ -634,6 +634,8 @@ its [documented earlier snapshot](common/manuscript_scope.json).
 
 ## Record status and retained results
 
+**40D, external comparison (not ours).** Smart's published weight-eight code, with the published Edel–Rains–Sloane layers, gives **1,139,120**, exceeding our **1,126,365** by 12,755. [Attribution and independent replay](verifications/recovered/dim40-smart-ers/). The historical **1,092,000** comparison is due to [Dorofeev–Sun–Wang](https://arxiv.org/html/2607.20359v4).
+
 **14 November comparison.** The [pinned-source review](common/source_review_20261114_26_31.json) records repository bounds ahead of PackingStar in every dimension from 26D through 31D, by **8, 22, 16, 40, 220 and 166** respectively. Complete coordinate proofs establish the configurations independently; the comparison scope is the reviewed dated sources.
 
 **29 October comparison history.** PackingStar’s [October 28 release](https://github.com/CDM1619/PackingStar/tree/477df34cf2a09bb9476b735a685b538a82da8c55/25D-31D/new_bounds_20261028) gives 209 760, 221 864, 231 676, 247 967 and 251 169 in 27–31D. Those certificates regained 27–31D against that release. The then-current 28D certificate was 124 points above it. The [source review](common/source_review_20261029_27_31.json) pins the comparison and verification scope.

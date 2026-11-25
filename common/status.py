@@ -668,5 +668,3 @@ STATUS[39] = ('codes', '84 QR quotient fibres with three-coordinate heads; exact
 STATUS[30] = ('heads', 'lifted Leech contact midpoints give 248506 by a 340-for-250 exchange (dim30-row-midpoint-packing/verify.py)')
 
 STATUS[33] = ('codes', 'joint signed refill gives 370528 by selecting octad signs, stars and roots together (dim33-joint-signed-refill/verify.py)')
-
-STATUS[40] = ('codes', 'Smart octads and inherited dense signs give 1139120; exact support pairs and all layer inequalities (dim40-smart-ers/verify.py)')

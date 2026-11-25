@@ -1,6 +1,6 @@
-# 40D: 1,139,120 kissing points from Smart's octads
+# External 40D comparator: 1,139,120 from Smart's octads
 
-Combine [B. Smart's \(A(40,8,8)\ge4267\) code (2026)](https://aeb.win.tue.nl/codes/cwc/d8/a40.8.8.4267H) with the length-40 dense sign layer used by [Edel, Rains and Sloane, *On Kissing Numbers in Dimensions 32 to 128*, 1998](https://arxiv.org/abs/math/0207291), and all \(D_{40}\) roots. The result improves the [previous repository certificate](../dim40-p48q-affine-refill/) by **12,755**. Smart is credited for the constant-weight code and Edel–Rains–Sloane for the layered construction and the published \(A(40,10)\ge589824\) input. This is a lower bound, not an optimum proof.
+Combine [B. Smart's \(A(40,8,8)\ge4267\) code (2026)](https://aeb.win.tue.nl/codes/cwc/d8/a40.8.8.4267H) with the length-40 dense sign layer used by [Edel, Rains and Sloane, *On Kissing Numbers in Dimensions 32 to 128*, 1998](https://arxiv.org/abs/math/0207291), and all \(D_{40}\) roots. This externally sourced comparison exceeds [our retained 1,126,365-point certificate](../../improved/dim40-p48q-affine-refill/) by **12,755**. The repository independently verifies the support data and records the numerical consequence; it does not claim priority, ownership, or an independent new record. The older 1,092,000 comparator is [Dorofeev–Sun–Wang](https://arxiv.org/html/2607.20359v4). Smart is credited for the constant-weight code and Edel–Rains–Sloane for the layered construction and the published \(A(40,10)\ge589824\) input. This is a lower bound, not an optimum proof.
 
 | Layer | Size | Unnormalized squared norm |
 | --- | ---: | ---: |
@@ -15,4 +15,4 @@ The [Brouwer table](https://aeb.win.tue.nl/codes/Andw.html) indexes Smart's code
 python verify.py --download
 python verify.py /path/to/a40.8.8.4267H
 ```
-The replay pins the exact downloaded SHA-256. `python final.py` independently recomputes the registered count from its ledger, without network.
+The replay pins the exact downloaded SHA-256. `python final.py` independently recomputes the external comparison count from its ledger, without network.

@@ -43,7 +43,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 37 | 500 008 | [Olivier, using Lin's code (2026)](https://doi.org/10.5281/zenodo.23569153) | **544 666** | **SOTA** | +8.9315% | — | updated 2026-11-22 | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) | — |
 | 38 | 605 322 | [Qihong Lin, Leech equatorial augmentation (2026)](https://arxiv.org/abs/2611.03682) | **652 076** | **SOTA** | +7.7238% | — | updated 2026-11-20 | [QR offsets, octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) | — |
 | 39 | 755 988 | [Edel–Rains–Sloane (1998 method)](https://arxiv.org/abs/math/0207291) + [Brouwer’s archived 39D bound](https://aeb.win.tue.nl/codes/Andw.html-old5#kiss) | **783 468** | **SOTA** | +3.63% | — | updated 2026-11-20 | [Three-coordinate QR heads](verifications/improved/dim39-qr-three-coordinate-heads/) | — |
-| 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections (2026)](https://arxiv.org/html/2607.20359v4) | **1 139 120** | **SOTA** | +4.32% | — | updated 2026-11-25 | [Smart octads with exact three-layer transfer](verifications/improved/dim40-smart-ers/) | — |
+| 40 | 1 092 000 | [Dorofeev–Sun–Wang, P48 sections (2026)](https://arxiv.org/html/2607.20359v4) | **1 126 365** | 1 139 120 | +3.15% | +1.13% | superseded; noted 2026-11-25 | [P48q affine core and short-layer exchange](verifications/improved/dim40-p48q-affine-refill/) | [Smart’s code with the published Edel–Rains–Sloane layers (external inputs; derived comparison)](verifications/recovered/dim40-smart-ers/) |
 | 41 | 1 324 472 | [Dorofeev–Sun–Wang, P48 sections (2026)](https://arxiv.org/abs/2607.20359v4) | **1 460 066** | **SOTA** | +10% | — | updated 2026-11-22 | [Affine shell replay](verifications/improved/dim41-43-affine-sections/) | — |
 | 42 | 1 792 386 | [Dorofeev–Sun–Wang, P48 sections (2026)](https://arxiv.org/abs/2607.20359v4) | **1 991 475** | **SOTA** | +11% | — | updated 2026-11-22 | [Affine shell replay](verifications/improved/dim41-43-affine-sections/) | — |
 | 43 | 2 553 792 | [Yang et al., P48n section (2026)](https://arxiv.org/abs/2609.35051v1) | **2 921 073** | **SOTA** | +14% | — | updated 2026-11-22 | [Affine shell replay](verifications/improved/dim41-43-affine-sections/) | — |
@@ -154,7 +154,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 
 Expand a week for the main milestones; follow its history link for the full dated sequence, intermediate values and proof notes. Current bounds are in the table above.
 
-25 November 2026 — Smart's constant-weight code and the Edel–Rains–Sloane layers raise **40D to 1,139,120**, up 12,755. [Exact support and angle replay](verifications/improved/dim40-smart-ers/).
+**40D, external comparison (not ours).** Smart's published weight-eight code, with the published Edel–Rains–Sloane layers, gives **1,139,120**, exceeding our **1,126,365** by 12,755. [Attribution and independent replay](verifications/recovered/dim40-smart-ers/). The historical **1,092,000** comparison is due to [Dorofeev–Sun–Wang](https://arxiv.org/html/2607.20359v4).
 
 A joint short-layer exchange in the \(P_{48q}\) complement takes **40D to 1,126,365** (+38 over the \(P_{48n}\) construction). [Exact replay](verifications/improved/dim40-p48q-affine-refill/).
 
