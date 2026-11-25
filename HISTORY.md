@@ -634,6 +634,8 @@ its [documented earlier snapshot](common/manuscript_scope.json).
 
 ## Record status and retained results
 
+**26D and 29D, 25 November 2026.** [Rustem Takhanov, version 0.2](https://github.com/k-nic/KissingNumbers/tree/77f0860bf93a745140e6e25481d3f60773b11441/version2) reports and supplies exact certificates for **201,212** and **232,230**, respectively. These supersede our retained **201,204** and **232,157** by **8** and **73**. The source release separately pins our comparison revision; its [published verification summary](https://github.com/k-nic/KissingNumbers/blob/77f0860bf93a745140e6e25481d3f60773b11441/version2/certificates/reports/summary.json) records the original full checks. Our construction registry and earlier historical baselines are unchanged.
+
 **40D, external comparison (not ours).** Smart's published weight-eight code, with the published Edel–Rains–Sloane layers, gives **1,139,120**, exceeding our **1,126,365** by 12,755. [Attribution and independent replay](verifications/recovered/dim40-smart-ers/). The historical **1,092,000** comparison is due to [Dorofeev–Sun–Wang](https://arxiv.org/html/2607.20359v4).
 
 **14 November comparison.** The [pinned-source review](common/source_review_20261114_26_31.json) records repository bounds ahead of PackingStar in every dimension from 26D through 31D, by **8, 22, 16, 40, 220 and 166** respectively. Complete coordinate proofs establish the configurations independently; the comparison scope is the reviewed dated sources.
