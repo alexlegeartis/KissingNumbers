@@ -1,5 +1,7 @@
 # 26D: four six-row octahedral modules, a 21-point sufficiency gate
 
+**Status update:** the conditional 21-row gate below has now been [proved impossible for these fixed donor coordinates](takhanov26_one_tripod_cap20.md). The exact maximum is not asserted; an upper bound of 20 suffices to reject the 201,213 construction. The combinatorial geometry and reduction below remain as provenance.
+
 This is a new exact reduction, not a verified new record. External baseline Rustem Takhanov v0.2 at 77f0860 remains 201,212. Source 200,864-point exterior and ten orthogonal axes are as in the previously verified four native six-coordinate charts. Starting skeleton consists of 20 signed axes and 224 signed tetrad rows. Four original five-coordinate chambers are A=(0,1,2,3,9), B=(0,3,5,7,8), C=(1,2,4,6,8), D=(4,5,6,7,9). Pair A,D shares only old tail 9; pair B,C only tail 8. Other pairs share two regular coordinates, no old tail.
 
 Within each chamber select hot index 0 (A,B) or 4 (C,D), and place the other three regular indices in increasing order. Let T be the old tail, S the other tail. Set denominator sqrt(10089). Use hot, old tail and new tail numerators 50,49,2 respectively. On the other three axes place any of
