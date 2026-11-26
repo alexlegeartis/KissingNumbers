@@ -53,3 +53,22 @@ for U in (A[:1],A):
     assert [r[0] for r in P]==[1 if len(U)==1 else 26,0,0,0]
     print("two-tube",len(U),P[0])
 print("PASS: incumbent orientation prices only; no new kissing bound.")
+
+# Conditional two-chamber +1 reduction, last existence step not supplied.
+U1=[name({0:25,1:21*sg(s,0),2:21*sg(s,1),3:21*sg(s,2),8:6,9:23}) for s in (0,3,5,6)]
+U4=[name({4:25,5:21*sg(s,0),6:21*sg(s,1),7:21*sg(s,2),8:6,9:23}) for s in (0,3,5,6)]
+for X,head in ((U1,range(4)),(U4,range(4,8))):
+    assert all(sum(v*v for v in x)==2513 and 4*max(map(abs,x))**2<=2513 for x in X)
+    assert all((sum(abs(x[i]) for i in head)+2*abs(x[8]))**2<=4*2513 for x in X)
+    assert all(2*sum(a*b for a,b in zip(x,y))<=2513 for x,y in itertools.combinations(X,2))
+assert all(sum(a*b for a,b in zip(x,y))==565 and 2*565<2513 for x in U1 for y in U4)
+assert [(i,z) for i,z in enumerate(blocks(U1+U4,2513)) if z]==[(5,[0,1,2])]
+assert all(len(set(x)&set(y))<=2 for x,y in itertools.combinations(B,2))
+assert all(len(set(q)&set(B[j]))<=2 for q in Q for j in (0,3))
+for b,s in ((B[1],16),(B[2],4)):
+    for x in U1+U4:
+        for t in T:
+            v=sum(x[j]*t[i]*sg(s,i) for i,j in enumerate(b))
+            assert v<=0 or 4*v*v<=2513*t[5]**2
+assert 200864+20+224-3+52+8+2*24==201213
+print("PASS: two chambers reduce +1 to a common 24-row clipped code, not supplied.")
