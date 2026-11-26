@@ -14,3 +14,5 @@ These are structural results for specific constructions, not new unrestricted ki
 Each note states which inputs are inherited and how to replay the finite part. The 19D and 22D scripts are self-contained; the 26D replay reads the pinned upstream coordinate certificate.
 
 [Exact layered interfaces](layer_interfaces.md): different weighted binary banks, a rank-three tetrad classification, and the 26D mirror-pair quotient.
+
+[Expanded-cone cap 21 for the fixed donors](takhanov26_expanded_cone.md) · [one negative axis without fixed donors: exact split-support theorem and open 27-row target](takhanov26_one_negative_axis.md).
