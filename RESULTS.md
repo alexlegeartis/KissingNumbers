@@ -1,5 +1,7 @@
 # Results
 
+26 November 2026 — A one-for-forty split of a central QR word gives **1,139,159 in 40D** (+39 over Smart + Edel–Rains–Sloane), retaining all signed octads and roots. [QR48 central-word split with an exact forty-daughter shell](verifications/improved/dim40-qr-central-split/).
+
 26 November 2026 — Transferring the scaled D4 projection and rational heads from P48m to P48n gives **7,655,249 in 45D** (+36). [Proof and exact replay](verifications/improved/dim45-p48n-d4-heads/).
 
 26 November 2026 — Replacing the P48m normal frame and adding two compatible families raises 45D to **7,655,213** (+122 from the preceding certificate). [Proof and exact replay](verifications/improved/dim45-p48m-d4-heads/).
@@ -345,7 +347,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 37 | 500 008 | **544 666** | 1.09 | `codes` | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) |
 | 38 | 566 652 | **652 076** | 1.15 | `codes` | [QR offsets, ten octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) |
 | 39 | 755 988 | **783 468** | 1.03 | `codes` | [QR fibres with three-coordinate heads and projected support checks](verifications/improved/dim39-qr-three-coordinate-heads/) |
-| 40 | 1 092 000 | **1 126 365** | 1.03 | `heads` | [P48q affine core and joint short-layer exchange](verifications/improved/dim40-p48q-affine-refill/) |
+| 40 | 1 092 000 | **1 139 159** | 1.04 | `heads` | [QR48 central-word split with an exact forty-daughter shell](verifications/improved/dim40-qr-central-split/) |
 | 41 | 1 324 472 | **1 460 066** | 1.10 | `heads` | [affine body shells with rational heads and fresh counts for every family](verifications/improved/dim41-43-affine-sections/) |
 | 42 | 1 792 386 | **1 991 475** | 1.11 | `heads` | [affine body shells with rational heads and fresh counts for every family](verifications/improved/dim41-43-affine-sections/) |
 | 43 | 2 553 792 | **2 921 073** | 1.14 | `heads` | [affine body shells with rational heads and fresh counts for every family](verifications/improved/dim41-43-affine-sections/) |
@@ -468,7 +470,7 @@ refreshed table, not more search.
 | 38 | `dim38-qr-octad-switches` | verify.py and audit.py: exact replay of 31 dense fibres, ten new octad supports, 288 stars and the signed-root ledger |
 | 39 | `dim39-deformed-orbits` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 39 | `dim39-qr-pentapolar` | exact rational head, Hamming quotient, and sparse cross-angle checks |
-| 40 | `dim40-p48q-affine-refill` | verify.py: fresh lattice and core enumeration with exact cross-layer pairs |
+| 40 | `dim40-qr-central-split` | verify.py: QR48 reconstruction, exact layer inequalities and pinned Smart support replay |
 | 41-43 | `dim41-43-affine-sections` | verify.py (fresh affine shell counts, exact ranks and integer angle checks) |
 | 44 | `dim44-d4-section` | verify.py (exact parent minimum, spherical moments and projected class distances) |
 | 45-46 | `dim41-46-p48-heads` | verify.py (integer angles and exact ranks; inherited population tables, not a fresh body enumeration) |

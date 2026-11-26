@@ -844,6 +844,10 @@ for _package, _description in (
     for _row in _driver.results():
         add(_row['dimension'], _row['total'], _package, _description)
 
+with io.open(os.path.join(IMP, 'dim40-qr-central-split', 'claims.json'), encoding='utf-8') as _file:
+    _row = json.load(_file)
+    add(_row['dimension'], _row['lower_bound'], 'dim40-qr-central-split', 'verify.py: QR48 reconstruction, exact layer inequalities and pinned Smart support replay')
+
 _package = 'dim40-p48q-affine-refill'
 _spec = importlib.util.spec_from_file_location(_package.replace('-', '_'),
     os.path.join(IMP, _package, 'final.py'))
@@ -2728,6 +2732,7 @@ if '--write-results' in sys.argv and not fail:
         return "{:,}".format(x).replace(",", "\u202f")
 
     PKGDOC = {
+        'dim40-qr-central-split': 'QR48 central-word split with an exact forty-daughter shell',
         'dim79-86-norm10-triangle-layers': 'Gamma72 norm-ten shells with exact joint-moment and marginal duals, local triangle bounds and blocked independence recurrence',
         'dim70-gamma72-d4-planar-heads': 'D4-profile compression with anisotropic planar heads and independently replayed Gamma72 populations',
         'dim92-four-row-partition-heads': 'Four-row partition heads with three crosspolytope alphabets and compatible Reed-Solomon/root layers',

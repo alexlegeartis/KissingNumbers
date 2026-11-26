@@ -7,12 +7,13 @@ shows where the doors are shut.
 
 ## [`improved/`](improved/) — all 70 claims, including retained historical records
 
-179 packages, one per **construction idea** rather than one per dimension, because several
+180 packages, one per **construction idea** rather than one per dimension, because several
 ideas each cover a range. Each has a README with the idea in prose, a description of every
 file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
+| [`dim40-qr-central-split`](improved/dim40-qr-central-split/) | 40 | **1,139,159**. Exact QR48 central-word split; unchanged Smart octads and roots. |
 | [`dim62-partial-nonary-refill`](improved/dim62-partial-nonary-refill/) | 62 | Exact partial signs and individually checked old blockers |
 | [`dim71-gamma72-single-block-refill`](improved/dim71-gamma72-single-block-refill/) | 71 | Exact Leech-block shell refill |
 | [`dim77-84-gamma72-half-root-shells`](improved/dim77-84-gamma72-half-root-shells/) | 77–84 | Half-root Γ72 lattices and exact convolved contact counts |

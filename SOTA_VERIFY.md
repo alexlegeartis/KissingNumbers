@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+26 November 2026 — A one-for-forty split of a central QR word gives **1,139,159 in 40D** (+39 over Smart + Edel–Rains–Sloane), retaining all signed octads and roots. [QR48 central-word split with an exact forty-daughter shell](verifications/improved/dim40-qr-central-split/).
+
 26 November 2026 — Transferring the scaled D4 projection and rational heads from P48m to P48n gives **7,655,249 in 45D** (+36). [Proof and exact replay](verifications/improved/dim45-p48n-d4-heads/).
 
 26 November 2026 — Replacing the P48m normal frame and adding two compatible families raises 45D to **7,655,213** (+122 from the preceding certificate). [Proof and exact replay](verifications/improved/dim45-p48m-d4-heads/).
@@ -309,9 +311,9 @@ The 44D verifier checks a 48D Gram matrix, an extremal lattice minimum and a com
 
 The 41D–43D affine-shell verifier reconstructs every family from its Gram matrix and residue. Short-difference enumerations and direct integer products certify the angles. [Witnesses and full replay](verifications/improved/dim41-43-affine-sections/).
 
-**40D, external comparison (not ours).** Smart's published weight-eight code, with the published Edel–Rains–Sloane layers, gives **1,139,120**, exceeding our **1,126,365** by 12,755. [Attribution and independent replay](verifications/recovered/dim40-smart-ers/). The historical **1,092,000** comparison is due to [Dorofeev–Sun–Wang](https://arxiv.org/html/2607.20359v4).
+**40D, provenance.** Smart’s octads with published Edel–Rains–Sloane layers gave the external **1,139,120** and previously surpassed our P48q construction at **1,126,365**. Only the subsequent +39 comes from our [QR48 central-word split with an exact forty-daughter shell](verifications/improved/dim40-qr-central-split/). The older **1,092,000** belongs to [Dorofeev–Sun–Wang](https://arxiv.org/html/2607.20359v4). [External comparator replay](verifications/recovered/dim40-smart-ers/).
 
-Our retained 40D result gives **1,126,365** with a joint short-layer exchange in the \(P_{48q}\) complement. The replay proves the lattice minimum, enumerates the 1,084,590-point affine core and checks all remaining unordered pairs. [40D P48q proof](verifications/improved/dim40-p48q-affine-refill/).
+The historical 40D P48q construction gave **1,126,365** with a joint short-layer exchange in the \(P_{48q}\) complement. The replay proves the lattice minimum, enumerates the 1,084,590-point affine core and checks all remaining unordered pairs. [40D P48q proof](verifications/improved/dim40-p48q-affine-refill/).
 
 The \(P_{48n}\) construction gave **1,126,327** with an alternate affine centre and thirteen individual short-shell points. Its two replays check the gluing geometry and enumerate the affine core. [40D P48n proof](verifications/improved/dim40-affine-centre-refill/).
 
@@ -412,7 +414,7 @@ not a new mathematical verification. All commands require assertions enabled.
 | 18 | Reconstruct all 8,358 points and check every pair exactly | None beyond the stated mathematical construction |
 | 25 | Independent Leech rebuild, all 971 circles and 102 moved points; exact biquadratic comparisons | Standard Leech shell kissing property |
 | 27–31 | Complete integer coordinates, all unordered point pairs and direct-int64 inserted-point checks; current 30D/31D modules also have independent exact reconstruction | NumPy; no baseline validity assumption. The retained earlier 31D package additionally provides an integer-only C++ full-pair replay |
-| 40 | Independent lattice minimum enumeration and all auxiliary/core pair types | NumPy and C++17 g++ with __int128; exact bounded integer BLAS |
+| 40 | Full QR48 Gray replay; exact surd angle gates; pinned 4,267 supports verified separately | Python 3 standard library |
 | 26 | 27D section, exact rational kernel, and every unordered exterior pair with `--full` | NumPy |
 | 38 | Two independent exact proofs rebuild all cap classes, equatorial lines and axes; check 120 cap deletions and all 6,656 expanded latitude points | Golay lattice congruences and weight enumerator prove the parent minimum |
 | 39 | Replay sparse supports and root replacements; check every relative pair of 1,281 dense sign orbits | Bounded integer arithmetic and complete Walsh enumeration |

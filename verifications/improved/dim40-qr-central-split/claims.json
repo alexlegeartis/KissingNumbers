@@ -1,0 +1,11 @@
+{
+  "dimension": 40,
+  "lower_bound": 1139159,
+  "external_comparator": 1139120,
+  "net_gain": 39,
+  "dense_original": 589824,
+  "dense_removed": 1,
+  "daughters": 40,
+  "signed_octads": 546176,
+  "roots": 3120
+}
