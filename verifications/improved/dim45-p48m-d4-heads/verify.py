@@ -2,7 +2,7 @@
 Uses the pinned parent P48m minimum-six certificate and its proved D4 affine population identities.
 Supply --moments to rerun the universal affine identity proof in the parent verifier.
 """
-import argparse, hashlib, itertools, json, sys
+import argparse, base64, hashlib, itertools, json, sys, zlib
 from pathlib import Path
 import numpy as np
 
@@ -29,8 +29,20 @@ def main():
         G=q["gram"].astype(np.int64); X=q["section_points"].astype(np.int64); N0=q["normals"].astype(np.int64)
     with np.load(parent/"families.npz", allow_pickle=False) as q:
         forms=q["affine_counts"].astype(np.int64); calib=q["calibrations"].astype(np.int64)
-    a,b=w["section_point_indices"]
-    N=np.vstack((N0[:2], -X[a],-X[b]))
+    if "first_two_section" in w:
+        shell=json.loads((args.witness.parent / w["first_two_section"]).read_text())
+        if "section_zlib_b64" in shell:
+            assert shell["encoding"] == "zlib-base64-int8-row-major"
+            raw=zlib.decompress(base64.b64decode(shell["section_zlib_b64"],validate=True))
+            assert len(raw)==1656*48
+            X=np.frombuffer(raw,dtype=np.int8).astype(np.int64).reshape(1656,48)
+        else:
+            X=np.asarray(shell["section_points"],dtype=np.int64)
+        N=np.array(shell["normals"],dtype=np.int64)
+        assert X.shape==(1656,48) and N.shape==(4,48) and np.max(np.abs(X))<128 and np.max(np.abs(N))<128
+    else:
+        a,b=w["section_point_indices"]
+        N=np.vstack((N0[:2],-X[a],-X[b]))
     K=np.array([[6,-3,-3,-3],[-3,6,0,0],[-3,0,6,0],[-3,0,0,6]],dtype=np.int64)
     adj=np.array([[216,108,108,108],[108,108,54,54],[108,54,108,54],[108,54,54,108]],dtype=np.int64)
     assert np.array_equal(N@G@N.T,K) and np.array_equal(K@adj,324*np.eye(4,dtype=np.int64))
@@ -72,8 +84,8 @@ def main():
             assert z<=0 or z*z<=n*m, (i,j,r,t,h,g,d,z*z,n*m)
     assert w["pure_head_signs"]==[-1,1] and all(4*h*h<=n for i,r,h,n in active)
     total=sum(sizes)+2
-    assert len(active)==51 and total==w["total"] and total>7655056
-    print(json.dumps({"dimension":45,"points":total,"old":7655056,"pure_heads":2,"gain":total-7655056,
+    assert total==w["total"] and total>7655091
+    print(json.dumps({"dimension":45,"points":total,"old":7655091,"pure_heads":2,"gain":total-7655091,
                       "families":len(active),"cross_family_tests":len(active)*(len(active)-1)//2,
                       "D4_calibrations":counts,"parameters":param.tolist(),"sizes":sizes}))
 if __name__=="__main__": main()
