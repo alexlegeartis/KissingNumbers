@@ -12,3 +12,5 @@ These are structural results for specific constructions, not new unrestricted ki
 | [40](qr40_angular_gate.md) | Exact angular exclusion around all flat signs for augmenting the retained QR-plus-daughters bank | Materially non-flat amplitudes or replacement of some existing dense points |
 
 Each note states which inputs are inherited and how to replay the finite part. The 19D and 22D scripts are self-contained; the 26D replay reads the pinned upstream coordinate certificate.
+
+[Exact layered interfaces](layer_interfaces.md): different weighted binary banks, a rank-three tetrad classification, and the 26D mirror-pair quotient.
