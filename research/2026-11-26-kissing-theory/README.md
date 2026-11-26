@@ -9,4 +9,6 @@ These are structural results for specific constructions, not new unrestricted ki
 | [22](signed_caps_22.md) | Sharp 336-point signed weight-five cap with equality classification, and the 49,896 upper limit for the stated fixed-magnitude three-layer architecture; explicit ties | A new magnitude, latitude or equator |
 | [26](takhanov_exchange_26.md) | Exact obstructions and sharp transverse amplitude for specified local trades over Takhanov’s 201,212-point exterior | A joint noncoaxial unequal-amplitude trade or a different core |
 
+| [40](qr40_angular_gate.md) | Exact angular exclusion around all flat signs for augmenting the retained QR-plus-daughters bank | Materially non-flat amplitudes or replacement of some existing dense points |
+
 Each note states which inputs are inherited and how to replay the finite part. The 19D and 22D scripts are self-contained; the 26D replay reads the pinned upstream coordinate certificate.
