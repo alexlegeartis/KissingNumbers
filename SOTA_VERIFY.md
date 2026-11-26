@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+26 November 2026 — A new weight-18 QR shell over an equal-size rephased QR15 replacement raises **90D to 21,956,420,880** (+758). The packed witness verifies every new cross-layer constraint and retains the previous-size base. [Proof and exact replay](verifications/improved/dim90-qr18-marked-pencil/).
+
 26 November 2026 — A one-for-forty split of a central QR word gives **1,139,159 in 40D** (+39 over Smart + Edel–Rains–Sloane), retaining all signed octads and roots. [QR48 central-word split with an exact forty-daughter shell](verifications/improved/dim40-qr-central-split/).
 
 26 November 2026 — Transferring the scaled D4 projection and rational heads from P48m to P48n gives **7,655,249 in 45D** (+36). [Proof and exact replay](verifications/improved/dim45-p48n-d4-heads/).
