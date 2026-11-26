@@ -62,3 +62,47 @@ For fixed H=E∪F, give each h∈H a palette S_h of line directions. For adjacen
 Unlike the unrestricted 21,504 (word,label) graph, a specified 63-hole candidate uses at most 63×21 binary palette slots. Isolated holes may offer every direction without any side effects; independent H recovers the old sufficient domination construction. When the graph induced by H is a matching plus isolated vertices, a stronger exact shortcut applies: create one resource for each pair of incompatible slots and one free resource for each unpaired slot, connect each word to the resources of its possible slots. The slots’ conflict graph is a matching, since each slot’s target hole has degree ≤1. A matching covering every word is then equivalent to a valid selection. A failed Hall test applies only to that H; isolated user demands with no possible slots are failures immediately.
 
 Asymmetric constructive sieve: fix E, compute the list D_y of directions from odd y to E. Odd y with empty list are forced holes. For each even x outside E and direction P the odd target x+P must be a hole if x takes P. Every neighbor y=x+R, R≠P, with D_y={P} must also be a hole. This is an inexpensive exact lower bound on the cost of a direction before trying an even assignment. If an even assignment is fixed (one label per selected even), an odd word is eligible iff no even targets it and at least one P in D_y does not appear at any selected even neighbor. All eligible odd words can then be taken simultaneously: odd–odd neighbors never conflict. This gives the exact best completion to any one-sided assignment.
+
+## Explicit nonlinear positive control (verified here; ties, does not improve, Li)
+
+With the same polynomial coordinates as the Python replay, write span(L) for the 1024-word component. Take four parity checks with decimal bitmasks M = (317651,405196,1307954,498987); define K₀ as their common kernel in span(L). Let v=136264, and let U be the binary span of (1185854,1258025,176283,236172,1005402,949581,2020840). Set
+
+H = (K₀ minus U) union (v + U).
+
+K₀ has 64 words, U has 16 and is contained in K₀, and v has nonzero syndrome 4. H has 64 holes; the translation period of H has 16 elements. Each parity contains 32 holes of affine span **dimension six**. The 960 words outside H comprise precisely 768 with one possible target hole and 192 with three. H is independent, so give each word any direction to a hole. Every line-neighbor pair in the resulting canonical labeling (first admissible line in Golay ordering) was checked with zero violations. Copy across four components for an equal-size 31,560-ray sanity control. This shows the new search condition is achievable, not sufficient; we do not assert this control is inequivalent to the earlier nonlinear examples.
+
+Standalone verification after the first snippet:
+
+```python
+C = span(lines)
+masks = (317651,405196,1307954,498987)
+K0 = {w for w in C if all((w&m).bit_count()%2 == 0 for m in masks)}
+U = span((1185854,1258025,176283,236172,1005402,949581,2020840))
+v = 136264
+assert len(K0)==64 and len(U)==16 and U<=K0 and v not in K0
+H = (K0-U) | {v^w for w in U}
+assert len(H)==64 and all(w^p not in H for w in H for p in lines)
+for b in (0,1):
+    h = [w for w in H if w.bit_count()%2==b]
+    assert len(h)==32 and len(span([w^h[0] for w in h]))==64
+hist = Counter(sum(w^p in H for p in lines) for w in C-H)
+assert hist == {1:768,3:192}
+lab = {w:next(p for p in lines if w^p in H) for w in C-H}
+assert all(len({lab[w],lab[w^p],p})==3 for w in lab for p in lines if w^p in lab)
+```
+
+Thus the proposed search is not merely the prescription “try nonlinear”: the 960-word construction is already available, and the palette mechanism tells exactly how to certify a candidate of 961 even when its holes are adjacent. Goal 63, not “better solver fitness”.
+
+## Short direct derivation of the cross-angle rule (optional replacement for relying on old scans)
+
+For line labels A,B the product before sign changes sums to 159+|A∩B|, which is 160 or 164. On the sign-difference support S the product sum is
+9|S|−3(|S∩A|+|S∩B|)+|S∩A∩B|.
+The signed dot is the total minus twice this sum. For |S|≥8 the sum is ≥42. For |S|=7, each line meets S in at most 3 points because S XOR that line is a nonzero word of punctured minimum distance 5; the sum is ≥45. For |S|=6, its lift in the extended Golay code has weight 8 and two of the deleted coordinates (the lift is unique, and weights are multiples of four with minimum 8). A line lifts to an octad containing all three deleted coordinates. Extended self-orthogonality makes |S∩A| and |S∩B| even; the punctured distance restriction gives ≤3, hence ≤2. The product sum is ≥42. In all three cases the signed dot ≤80, below 82. For a weight-five difference S=P, if A,B,P are distinct, the dot is 82 or 80 according as the three lines are nonconcurrent or concurrent. If A=B≠P it is 84, if exactly one label equals P it is 104, and if A=B=P it is 124. For no sign difference distinct labels give 160. This is a direct proof of every cross-layer angle case, with no numerical decision or pair enumeration.
+
+## Optional sharper incidence bound in the surjective case
+
+Write f_j for the odd-hole counts in the 16 quotient cosets and m=Σ f_j. For each nonzero syndrome s, all 32 of its even words are outside K. Repeat the sole-neighbor incidence count on that coset alone: if private, its unique direction must belong to a repeated direction class. It follows that
+
+64 ≤ Σ_j n_j (1 + 1_{n_j>1}) f_{s+j}.
+
+Indeed each direction in class j supplies exactly one neighbor of syndrome s per odd hole in class s+j. For the (6) profile, the displayed RHS is m+11 f_{s+a}, where a has multiplicity six. If m≤41, all fifteen classes s+a with s≠0 have at least three holes and therefore m≥45. Hence m≥42. For profile (5,2), with those classes a,b, the RHS is m+9 f_{s+a}+3 f_{s+b}. If m≤37 then 3 f_{s+a}+f_{s+b}≥9 for every nonzero s. Pair the 16 cosets by translation a+b. On the seven pairs where both reversed inequalities are present, summing gives at least five holes per pair; the remaining pair has at least three from its single inequality. Hence m≥7×5+3=38, a contradiction. Thus m≥38 in this case, regardless of any hole/label symmetry. No assertion is made that these bounds are attained.
