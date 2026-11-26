@@ -1,6 +1,6 @@
 # A two-chamber reduction for a possible +1 in 26D
 
-**Conditional construction, not a record.** The exterior, exact axes and original chamber charts come from [Takhanov v0.2](https://github.com/k-nic/KissingNumbers/tree/77f0860bf93a745140e6e25481d3f60773b11441/version2) at 201,212. The [previous theorem](takhanov26_paid_tetrads.md) caps the clipped replacement chamber at 24; its attaining 24 is open.
+**Conditional construction, not a record.** The exterior, exact axes and original chamber charts come from [Takhanov v0.2](https://github.com/k-nic/KissingNumbers/tree/77f0860bf93a745140e6e25481d3f60773b11441/version2) at 201,212. The [previous theorem](takhanov26_paid_tetrads.md) caps the clipped replacement chamber at 24; its attaining 24 was the open step at first write. It is now [rigorously excluded for the 2513 quartet](takhanov26_2513_23.md); see the [balanced-amplitude alternative](takhanov26_balanced_quartet.md) for a live target.
 
 Pin Takhanov v0.2 77f0860, independently read data d26_blocks.json.
 

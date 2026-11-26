@@ -72,3 +72,18 @@ for b,s in ((B[1],16),(B[2],4)):
             assert v<=0 or 4*v*v<=2513*t[5]**2
 assert 200864+20+224-3+52+8+2*24==201213
 print("PASS: two chambers reduce +1 to a common 24-row clipped code, not supplied.")
+
+N=1000911
+def balanced(k,s):
+    return name({k:500,k+1:405*sg(s,0),k+2:405*sg(s,1),
+                 k+3:405*sg(s,2),8:94,9:500})
+W=[[balanced(k,s) for s in (0,3,5,6)] for k in (0,4)]
+F=sum(W,[])
+for X,head in zip(W,(range(4),range(4,8))):
+    assert all(sum(v*v for v in x)==N and 4*max(map(abs,x))**2<=N for x in X)
+    assert all((sum(abs(x[i]) for i in head)+2*abs(x[8]))**2<=4*N for x in X)
+    assert all(2*sum(a*b for a,b in zip(x,y))<=N for x,y in itertools.combinations(X,2))
+assert all(2*sum(a*b for a,b in zip(x,y))<=N for x in W[0] for y in W[1])
+assert [(i,z) for i,z in enumerate(blocks(F,N)) if z]==[(5,[0,1,2])]
+assert all(sum(abs(x[i]) for i in b)**2<=N for x in F for b in B[1:3])
+print("PASS: balanced quartet has the same three paid rows; the 24-row witness is open.")
