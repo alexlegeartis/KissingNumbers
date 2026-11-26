@@ -1,5 +1,7 @@
 # Results
 
+26 November 2026 — A new scaled D4 embedding in P48m and rational heads give **7,655,091 in 45D** (+35). [Proof and exact replay](verifications/improved/dim45-p48m-d4-heads/).
+
 23 November 2026 — The D9 root system and an even octad layer give **6,251,562,978 in 81D** (+39,168). [Exact replay](verifications/improved/dim81-gamma72-d9-octad/).
 
 23 November 2026 — A fourth Delsarte–Goethals spike prefix using a Kerdock subcode gives **173,733,268 in 62D** (+15,360). [Exact replay](verifications/improved/dim62-dg-fourth-kerdock/).
@@ -344,7 +346,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 42 | 1 792 386 | **1 991 475** | 1.11 | `heads` | [affine body shells with rational heads and fresh counts for every family](verifications/improved/dim41-43-affine-sections/) |
 | 43 | 2 553 792 | **2 921 073** | 1.14 | `heads` | [affine body shells with rational heads and fresh counts for every family](verifications/improved/dim41-43-affine-sections/) |
 | 44 | 4 153 600 | **4 940 961** | 1.19 | `heads` | [scaled D4 section with exact projected shell populations and class distances](verifications/improved/dim44-d4-section/) |
-| 45 | 7 380 090 | **7 655 056** | 1.04 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
+| 45 | 7 380 090 | **7 655 091** | 1.04 | `heads` | [P48m projected shell populations and rational heads](verifications/improved/dim45-p48m-d4-heads/) |
 | 46 | 12 309 600 | **13 387 797** | 1.09 | `heads` | [independently normalized P48n body families with rational heads, partial-family 43D points and coordinated 45D motion; angles and exact ranks replay using inherited body populations](verifications/improved/dim41-46-p48-heads/) |
 | 49 | 52 416 002 | **52 431 658** | 1.00 | `classes` | [joint signed P48 exchange with exact full final-class check](verifications/improved/dim49-joint-signed-exchange/) |
 | 50 | 52 416 006 | **52 462 983** | 1.00 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |

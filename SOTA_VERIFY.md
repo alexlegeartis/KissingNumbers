@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+26 November 2026 — A new scaled D4 embedding in P48m and rational heads give **7,655,091 in 45D** (+35). [Proof and exact replay](verifications/improved/dim45-p48m-d4-heads/).
+
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
 23 November 2026 — Transferring signed support banks between dimensions raises **60D to 68,721,704** (+688,128) and **61D to 118,850,346** (+210,944). [Exact replay](verifications/improved/dim60-61-rm80-guard-transfer/).

@@ -832,6 +832,7 @@ for _row in _driver.results():
 for _package, _description in (
         ('dim41-43-affine-sections', 'verify.py (fresh affine shell counts, exact ranks and integer angle checks)'),
         ('dim44-d4-section', 'verify.py (exact parent minimum, spherical moments and projected class distances)'),
+        ('dim45-p48m-d4-heads', 'verify.py (exact projected shell populations, rational heads and class distances)'),
         ('dim49-joint-signed-exchange', 'final.py: exact complete signed class geometry'),
         ('dim50-59-p48-joint-transport', 'verify.py: exact changed pairs and signed ownership'),
         ('dim50-60-p48-global-owner-refill', 'verify.py: exact owner migration, refill and tail geometry'),
@@ -2842,6 +2843,7 @@ if '--write-results' in sys.argv and not fail:
         'dim40-affine-shells': 'affine lattice shells and eight minimum-shell vectors, verified by exact integer products',
         'dim40-affine-centre-refill': 'alternate affine centre and thirteen individual short-shell points',
         'dim44-d4-section': 'scaled D4 section with exact projected shell populations and class distances',
+        'dim45-p48m-d4-heads': 'P48m projected shell populations and rational heads',
         'dim41-43-affine-sections': 'affine body shells with rational heads and fresh counts for every family',
         'dim40-p48q-affine-refill': 'P48q affine core and joint short-layer exchange',
         'dim38-latitude-extension': '24 additional latitude points and an exact rational axis rotation over the Leech caps and Lin equator',

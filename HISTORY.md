@@ -9,7 +9,9 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <a id="week-2026-11-23"></a>
 
 <details>
-<summary>23–29 November 2026: code shells (through 23 November)</summary>
+<summary>23–29 November 2026: code shells and a P48m projection (through 26 November)</summary>
+
+26 November 2026 — A new scaled D4 embedding in P48m and rational heads give **7,655,091 in 45D** (+35). [Proof and exact replay](verifications/improved/dim45-p48m-d4-heads/).
 
 23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).
 
