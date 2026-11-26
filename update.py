@@ -61,6 +61,7 @@ DRIVERS = [
     ('dims 36, 37', os.path.join(V, 'dim36-37-coxeter-todd'), 'final.py'),
     ('dims 41-46', os.path.join(V, 'dim41-46-p48-heads'), 'final.py'),
     ('45D projected P48m shells', os.path.join(V, 'dim45-p48m-d4-heads'), 'final.py'),
+    ('45D projected P48n shells', os.path.join(V, 'dim45-p48n-d4-heads'), 'final.py'),
     ('dims 49-63', os.path.join(V, 'dim49-63-p48-caps'), 'final.py'),
     ('dims 73-80', os.path.join(V, 'dim73-95-gamma72-caps'), 'final73-80.py'),
     ('dims 81-95', os.path.join(V, 'dim73-95-gamma72-caps'), 'final81-95.py'),

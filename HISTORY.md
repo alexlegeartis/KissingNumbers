@@ -11,6 +11,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 <details>
 <summary>23–29 November 2026: code shells and a P48m projection (through 26 November)</summary>
 
+26 November 2026 — Transferring the scaled D4 projection and rational heads from P48m to P48n gives **7,655,249 in 45D** (+36). [Proof and exact replay](verifications/improved/dim45-p48n-d4-heads/).
+
 26 November 2026 — Replacing the P48m normal frame and adding two compatible families raises 45D to **7,655,213** (+122 from the preceding certificate). [Proof and exact replay](verifications/improved/dim45-p48m-d4-heads/).
 
 26 November 2026 — A new scaled D4 embedding in P48m and rational heads give **7,655,091 in 45D** (+35). [Proof and exact replay](https://github.com/alexlegeartis/KissingNumbers/tree/91c1bef4ebe42f0b774adb0f29b069af2697d481/verifications/improved/dim45-p48m-d4-heads/).

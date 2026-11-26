@@ -48,7 +48,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 42 | 1 792 386 | [Dorofeev–Sun–Wang, P48 sections (2026)](https://arxiv.org/abs/2607.20359v4) | **1 991 475** | **SOTA** | +11% | — | updated 2026-11-22 | [Affine shell replay](verifications/improved/dim41-43-affine-sections/) | — |
 | 43 | 2 553 792 | [Yang et al., P48n section (2026)](https://arxiv.org/abs/2609.35051v1) | **2 921 073** | **SOTA** | +14% | — | updated 2026-11-22 | [Affine shell replay](verifications/improved/dim41-43-affine-sections/) | — |
 | 44 | 4 153 600 | [Conway–Sloane P48 sections (1982)](https://doi.org/10.2307/2007025); [counts: Dorofeev–Sun–Wang (2026)](https://arxiv.org/abs/2607.20359v4) | **4 940 961** | **SOTA** | +19% | — | updated 2026-11-22 | [Scaled D4 section](verifications/improved/dim44-d4-section/) | — |
-| 45 | 7 380 090 | [Yang et al., QR neighbour projection (2026)](https://arxiv.org/abs/2609.35051v1) | **7 655 213** | **SOTA** | +3.7% | — | 2026-11-26 | [P48m D4 projection and heads](verifications/improved/dim45-p48m-d4-heads/) | — |
+| 45 | 7 380 090 | [Yang et al., QR neighbour projection (2026)](https://arxiv.org/abs/2609.35051v1) | **7 655 249** | **SOTA** | +3.7% | — | 2026-11-26 | [P48n D4 projection and heads](verifications/improved/dim45-p48n-d4-heads/) | — |
 | 46 | 12 309 600 | [Conway–Sloane P48 sections (1982)](https://doi.org/10.2307/2007025); [counts: Dorofeev–Sun–Wang (2026)](https://arxiv.org/abs/2607.20359v4) | **13 387 797** | **SOTA** | +8.8% | — | since 2026-10-23 | [P48n heads](verifications/improved/dim41-46-p48-heads/) | — |
 | 49 | 52 416 002 | [Leech–Sloane P48 (1971)](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [1D tail](common/published.py) *(derived)* | **52 431 658** | **SOTA** | +0.0299% | — | updated 2026-11-22 | [Joint signed exchange](verifications/improved/dim49-joint-signed-exchange/) | — |
 | 50 | 52 416 006 | [Leech–Sloane P48 (1971)](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [2D tail](common/published.py) *(derived)* | **52 462 983** | **SOTA** | +0.0896% | — | updated 2026-11-22 | [Global owner refill and tail palettes](verifications/improved/dim50-60-p48-global-owner-refill/) | — |
@@ -99,6 +99,8 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code (2001)](https://doi.org/10.1109/18.923742) *(derived by sign embedding)* | **209 299 907 072** | **SOTA** | +52.285725% | — | updated 2026-11-22 | [Mixed-tetrad row-alphabet repack](verifications/improved/dim96-mixed-tetrad-row-alphabet-repack/) | — |
 
 ## Recent updates
+
+26 November 2026 — Transferring the scaled D4 projection and rational heads from P48m to P48n gives **7,655,249 in 45D** (+36). [Proof and exact replay](verifications/improved/dim45-p48n-d4-heads/).
 
 26 November 2026 — Replacing the P48m normal frame and adding two compatible families raises 45D to **7,655,213** (+122 from the preceding certificate). [Proof and exact replay](verifications/improved/dim45-p48m-d4-heads/).
 
