@@ -1,6 +1,6 @@
 # Results
 
-27 November 2026 — Opposite-tail three-donor groups on paired body sites raise **65D to 424,312,626** (+135,134), retaining 30 signed atlas fibres. The four-site layer uses the same cited existence theorem. [Exact replay](verifications/improved/dim65-pair-triple-rails/).
+27 November 2026 — Opposite-tail three-donor groups on paired body sites raise **65D to 424,312,658** (+135,166), retaining 30 signed atlas fibres. The four-site layer uses the same cited existence theorem. [Exact replay](verifications/improved/dim65-pair-triple-rails/).
 
 26 November 2026 — A one-for-forty split of a central QR word gives **1,139,159 in 40D** (+39 over Smart + Edel–Rains–Sloane), retaining all signed octads and roots. [QR48 central-word split with an exact forty-daughter shell](verifications/improved/dim40-qr-central-split/).
 
@@ -372,7 +372,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 62 | 52 417 932 | **173 733 268** | 3.31 | `codes` | [Four spike prefixes with a Kerdock subcode](verifications/improved/dim62-dg-fourth-kerdock/) |
 | 63 | 52 418 564 | **232 191 236** | 4.43 | `codes` | [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) |
 | 64 | 331 737 984 | **422 673 152** | 1.27 | `codes` | [Split-amplitude Delsarte–Goethals donors](verifications/improved/dim64-65-dg-split-amplitudes/) |
-| 65 | 331 737 986 | **424 312 626** | 1.28 | `codes` | [Paired-body Delsarte–Goethals donors with opposite tail signs](verifications/improved/dim65-pair-triple-rails/) |
+| 65 | 331 737 986 | **424 312 658** | 1.28 | `codes` | [Paired-body Delsarte–Goethals donors with opposite tail signs](verifications/improved/dim65-pair-triple-rails/) |
 | 66 | 331 737 990 | **434 471 332** | 1.31 | `codes` | [Rephased sparse banks and off-axis DG donors](verifications/improved/dim66-68-dg-rephased-banks/)
 | 67 | 331 737 996 | **454 416 648** | 1.37 | `codes` | [Rephased sparse banks and off-axis DG donors](verifications/improved/dim66-68-dg-rephased-banks/)
 | 68 | 331 737 984 | **486 029 082** | 1.47 | `codes` | [Rephased sparse banks and off-axis DG donors](verifications/improved/dim66-68-dg-rephased-banks/)

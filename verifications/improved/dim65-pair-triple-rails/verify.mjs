@@ -31,6 +31,16 @@ if(process.argv[2]){
  check("dim65-dg-three-site-donors/verify_gates.py","9e6532e37ebdf15dbbbf1aa929e76d3dbcb60ad7");
 }
 const z=(()=>{const D=1000n,S=D*D;
+// Angular skips are safe after independently relabeling the four-site packing.
+// A leave link has min degree >=1 (63 minus twice the number of blocks through a pair).
+// A maximal matching of size s in a 64-vertex link with m edges satisfies m>=64-s.
+for (const [blocks, expected] of [[10741, 31], [10726, 29]]) {
+   const uncovered = (65*64*63)/6 - 4*blocks;
+   const edges = Math.floor(3*uncovered/65);
+   assert.equal(63 % 2, 1);
+   assert.equal(64-edges, expected);
+   assert(expected >= 2); // two disjoint marked pairs
+}
 const base=335544320+40414*2048+10741*16+2;
 const old=[
   [-5645n,1250n,1250n,0n],
@@ -68,7 +78,7 @@ for(let a=0;a<ps.length;a++){
     let t=16n*D,z=0;for(let k=0;k<r;k++)if(e>>k&1){z++;t+=ab(p[k])-D;if(p[k]<0n)t-=2n*D;}
     gate("zero-tail weight 16",t*D,n,16n*S);
     for(let h=0;h<2;h++){
-      if(a!==0&&i===2&&z===2&&h===1)continue; // delete at most one old design block for each new pair
+      if(a!==0&&i===2&&z===2&&h===1)continue; // the leave-link relabeling excludes this triple for each new pair
       let v=BigInt(4-z-h)*D+(h?ab(p.at(-1)):0n);
       for(let k=0;k<r;k++)if(e>>k&1)v+=ab(p[k]);
       gate("four-position",v*D,n,4n*S);
@@ -76,11 +86,11 @@ for(let a=0;a<ps.length;a++){
   }
  }
 }
-const total=base+22*2*131072-2*16;
-if(total!==424251186)throw Error("count");
+const total=base+22*2*131072;
+if(total!==424251218)throw Error("count");
 return {count,base,total,prior:424177492,gain:total-424177492,norms:ps.map(arr=>arr.map(p=>+norm(p).toString()))};})();
 assert.equal(z.base+21*2*131072+46*2*2048+2,z.prior);
-assert.equal(z.prior+2*131072-46*2*2048-2-2*16,z.total);
+assert.equal(z.prior+2*131072-46*2*2048-2,z.total);
 const coeff=labels.trim().split(/\s+/).map(Number);
 assert.equal(coeff.length,80); assert.equal(new Set(coeff).size,80);
 const pop6=x=>{let r=0;for(;x;x&=x-1)r++;return r;};
@@ -145,5 +155,6 @@ const retained=V.H.flatMap((h,i)=>[-1,1].flatMap((s,j)=>u[i][j]&&v[i][j]?[[h,s]]
 assert.deepEqual(retained,cfg.keep);
 assert.equal(retained.length,30);
 const result=z.total+retained.length*2048;
-assert.equal(result,424312626);
+assert.equal(result,424312658);
+assert.equal(result-(10741-10726)*16,424312418);
 console.log(JSON.stringify({status:"PASS",old:z.prior,new:result,gain:result-z.prior,atlas:retained.length,quadraticComparisons:V.H.length*2*65536,geometry:z.count}));

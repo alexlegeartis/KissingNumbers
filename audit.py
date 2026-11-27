@@ -2952,7 +2952,7 @@ if '--write-results' in sys.argv and not fail:
     out = []
     out.append("# Results")
     out.append("")
-    out.append("27 November 2026 — Opposite-tail three-donor groups on paired body sites raise **65D to 424,312,626** (+135,134), retaining 30 signed atlas fibres. The four-site layer uses the same cited existence theorem. [Exact replay](verifications/improved/dim65-pair-triple-rails/).")
+    out.append("27 November 2026 — Opposite-tail three-donor groups on paired body sites raise **65D to 424,312,658** (+135,166), retaining 30 signed atlas fibres. The four-site layer uses the same cited existence theorem. [Exact replay](verifications/improved/dim65-pair-triple-rails/).")
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
     out.append("")

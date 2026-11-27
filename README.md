@@ -66,7 +66,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 62 | 52 417 932 | [Leech–Sloane P48 (1971)](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [14D tail: Ganzhinov 2022](https://arxiv.org/abs/2207.08266) *(derived)* | **173 733 268** | **SOTA** | +231.438615% | — | updated 2026-11-23 | [Four spike prefixes with a Kerdock subcode](verifications/improved/dim62-dg-fourth-kerdock/) | — |
 | 63 | 52 418 564 | [Leech–Sloane P48 (1971)](https://doi.org/10.4153/CJM-1971-081-3) ⊕ [15D tail: Leech–Sloane 1971](https://doi.org/10.4153/CJM-1971-081-3) *(derived)* | **232 191 236** | **SOTA** | +342.956118% | — | updated 2026-11-23 | [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) | — |
 | 64 | 331 737 984 | [Edel-Rains-Sloane (1998)](https://arxiv.org/abs/math/0207291) | **422 673 152** | **SOTA** | +27.411744% | — | updated 2026-11-23 | [Split-amplitude Delsarte–Goethals donors](verifications/improved/dim64-65-dg-split-amplitudes/) | — |
-| 65 | 331 737 986 | [ERS64 (1998)](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **424 312 626** | **SOTA** | +27.905951% | — | updated 2026-11-27 | [Paired-body Delsarte–Goethals donors with opposite tail signs](verifications/improved/dim65-pair-triple-rails/) | — |
+| 65 | 331 737 986 | [ERS64 (1998)](https://arxiv.org/abs/math/0207291) plus two poles *(derived)* | **424 312 658** | **SOTA** | +27.905961% | — | updated 2026-11-27 | [Paired-body Delsarte–Goethals donors with opposite tail signs](verifications/improved/dim65-pair-triple-rails/) | — |
 | 66 | 331 737 990 | [Edel–Rains–Sloane 64D (1998)](https://arxiv.org/abs/math/0207291) ⊕ A2 *(derived)* | **434 471 332** | **SOTA** | +30.968217% | — | updated 2026-11-23 | [Rephased sparse banks and off-axis DG donors](verifications/improved/dim66-68-dg-rephased-banks/) | — |
 | 67 | 331 737 996 | [Edel–Rains–Sloane 64D (1998)](https://arxiv.org/abs/math/0207291) ⊕ A3 *(derived)* | **454 416 648** | **SOTA** | +36.980585% | — | updated 2026-11-23 | [Rephased sparse banks and off-axis DG donors](verifications/improved/dim66-68-dg-rephased-banks/) | — |
 | 68 | 331 737 984 | [Edel–Rains–Sloane 64D (1998)](https://arxiv.org/abs/math/0207291), embedded *(derived)* | **486 029 082** | **SOTA** | +46.509928% | — | updated 2026-11-23 | [Rephased sparse banks and off-axis DG donors](verifications/improved/dim66-68-dg-rephased-banks/) | — |
@@ -100,7 +100,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 
 ## Recent updates
 
-**27 November 2026** — Opposite-tail three-donor groups on paired body sites raise **65D to 424,312,626** (+135,134), retaining 30 signed atlas fibres. The four-site layer uses the same cited existence theorem. [Exact replay](verifications/improved/dim65-pair-triple-rails/).
+**27 November 2026** — Opposite-tail three-donor groups on paired body sites raise **65D to 424,312,658** (+135,166), retaining 30 signed atlas fibres. The four-site layer uses the same cited existence theorem. [Exact replay](verifications/improved/dim65-pair-triple-rails/).
 
 **27 November 2026** — A marked QR16 construction with all old QR15 phase banks retained raises **90D to 21,956,424,500** (+3,620 vs the previous package). Its 4,378 new rays replace the previous 758; they are not counted together. [Proof and exact replay](verifications/improved/dim90-qr16-constant-rails/).
 
