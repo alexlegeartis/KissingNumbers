@@ -929,6 +929,9 @@ with io.open(os.path.join(IMP, 'dim66-68-dg-rephased-banks', 'claims.json'), enc
 with io.open(os.path.join(IMP, 'dim66-68-dg-d4-tail-donors', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim66-68-dg-d4-tail-donors', 'verify.py: exact cubic, sparse parity and atlas clearance')
+with io.open(os.path.join(IMP, 'dim65-pair-triple-rails', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim65-pair-triple-rails', 'verify.mjs: exact grouped angular and retained atlas checks')
 with io.open(os.path.join(IMP, 'dim65-68-dg-diagonal-triples', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim65-68-dg-diagonal-triples', 'verify.py: exact tagged-bank parity, atlas refill, and diagonal-profile gates')
@@ -2902,6 +2905,7 @@ if '--write-results' in sys.argv and not fail:
         'dim82-83-gamma72-antipodal-tails': 'Complete antipodal 510- and 604-point tails',
         'dim82-83-gamma72-signed-apron': 'Larger signed norm-4+8 packets',
         'dim82-83-gamma72-signed-packets': 'Independent signed Γ72 packets',
+        'dim65-pair-triple-rails': 'Paired-body Delsarte–Goethals donors with opposite tail signs',
         'dim65-68-dg-diagonal-triples': 'Three-site donors with a 46-hyperplane atlas',
         'dim66-68-dg-rephased-banks': 'Rephased sparse banks and off-axis DG donors',
         'dim66-68-dg-d4-tail-donors': 'Delsarte–Goethals donors on D4 tail roots',
@@ -2947,6 +2951,8 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append("")
+    out.append("27 November 2026 — Opposite-tail three-donor groups on paired body sites raise **65D to 424,312,626** (+135,134), retaining 30 signed atlas fibres. The four-site layer uses the same cited existence theorem. [Exact replay](verifications/improved/dim65-pair-triple-rails/).")
     out.append("")
     out.append("23 November 2026 — Replacing the remaining pure poles by a 94-point antipodal code improves 59D to **56,969,157**. [Exact replay](verifications/improved/dim59-p48-pure94/).")
     out.append("")
