@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run every verification in this repository and report a single verdict.
 
-    python run_all.py              # 256 scripts, including large exact certificate replays
-    python run_all.py --full       # 279 scripts
+    python run_all.py              # 257 scripts, including large exact certificate replays
+    python run_all.py --full       # 280 scripts
     python run_all.py --list       # just list what would run
     python run_all.py --changed    # do not re-run a job whose inputs have not moved
     python run_all.py --only dim31 # just the jobs whose label or command matches
@@ -301,6 +301,7 @@ JOBS = [
     ('Signed packets and additional norm-four tails', os.path.join(V, 'improved', 'dim84-85-gamma72-norm4-tail-weave'), ['verify.py'], 950.0, False),
     ('Shared phases and horizontal triple components', os.path.join(V, 'improved', 'dim84-85-all-profiles-append'), ['verify.py'], 850.0, False),
     ('Transferred Reed–Muller sign banks', os.path.join(V, 'improved', 'dim60-61-rm80-guard-transfer'), ['verify.py'], 650.0, False),
+    ('60D affine-cube D4 fold', os.path.join(V, 'improved', 'dim60-d4-affine-cube-fold'), ['verify.py'], 0.1, True),
     ('Delsarte–Goethals spikes on transferred banks', os.path.join(V, 'improved', 'dim60-61-dg-spike-banks'), ['verify.py'], 650.0, False),
     ('Independent signed Γ72 norm-4+8 packets', os.path.join(V, 'improved', 'dim85-gamma72-signed-apron'), ['verify.py'], 950.0, False),
     ('Zinoviev–Ericson tail with all profiles', os.path.join(V, 'improved', 'dim85-gamma72-ze99-tail'), ['verify.py'], 650.0, False),
@@ -814,6 +815,7 @@ def _sota_jobs(quick=False):
         ('dim84-85-gamma72-norm4-tail-weave', ('verify.py',)),
         ('dim84-85-all-profiles-append', ('verify.py',)),
         ('dim60-61-rm80-guard-transfer', ('verify.py',)),
+        ('dim60-d4-affine-cube-fold', ('verify.py',)),
         ('dim60-61-dg-spike-banks', ('verify.py',)),
         ('dim85-gamma72-signed-apron', ('verify.py',)),
         ('dim85-gamma72-ze99-tail', ('verify.py',)),
@@ -1160,6 +1162,7 @@ def _sota_coverage(jobs, results=None):
         ('dim84-85-gamma72-norm4-tail-weave', [84,85], [('verify.py',)], 'verify.py: exact signed Γ72 packet and orthogonal norm-four tail layers'),
         ('dim84-85-all-profiles-append', [84,85], [('verify.py',)], 'verify.py: exact profile intersections and triple component separation'),
         ('dim60-61-rm80-guard-transfer', [60,61], [('verify.py',)], 'verify.py: transferred supports, exact overlap tests and shared Hamming parities'),
+        ('dim60-d4-affine-cube-fold', [60], [('verify.py',)], 'verify.py: exact D4 fold, sparse support guards and angular replay'),
         ('dim60-61-dg-spike-banks', [60,61], [('verify.py',)], 'verify.py: exact DG spike angles and affine-prefix counts'),
         ('dim85-gamma72-signed-apron', [85], [('verify.py',)], 'verify.py: exact signed Γ72 and Zinoviev–Ericson tail packets'),
         ('dim85-gamma72-ze99-tail', [85], [('verify.py',)], 'verify.py: exact algebraic tail Gram and full horizontal profile replay'),

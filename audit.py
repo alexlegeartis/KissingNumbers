@@ -899,6 +899,9 @@ with io.open(os.path.join(IMP, 'dim84-85-all-profiles-append', 'claims.json'), e
 with io.open(os.path.join(IMP, 'dim60-61-rm80-guard-transfer', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim60-61-rm80-guard-transfer', 'verify.py: transferred supports, exact overlap tests and shared Hamming parities')
+with io.open(os.path.join(IMP, 'dim60-d4-affine-cube-fold', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim60-d4-affine-cube-fold', 'verify.py: exact D4 fold, sparse support guards and angular replay')
 with io.open(os.path.join(IMP, 'dim60-61-dg-spike-banks', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim60-61-dg-spike-banks', 'verify.py: exact DG spike angles and affine-prefix counts')
@@ -2900,6 +2903,7 @@ if '--write-results' in sys.argv and not fail:
         'dim84-85-gamma72-norm4-tail-weave': 'Signed packets and additional norm-four tails',
         'dim84-85-all-profiles-append': 'Shared phases and horizontal triple components',
         'dim60-61-rm80-guard-transfer': 'Transferred Reed–Muller sign banks',
+        'dim60-d4-affine-cube-fold': 'Affine-cube fold into D4 heads and guarded sparse sign banks',
         'dim60-61-dg-spike-banks': 'Delsarte–Goethals spikes on transferred banks',
         'dim85-gamma72-signed-apron': 'Independent signed Γ72 norm-4+8 packets',
         'dim85-gamma72-ze99-tail': 'Zinoviev–Ericson tail with all profiles',
@@ -2955,6 +2959,8 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append("")
+    out.append("27 November 2026 — Folding eight affine-cube coordinates into four D4 head coordinates raises **60D to 82,821,160** (+13,116,536, or 18.82%), with an exact guarded sparse layer. [Exact replay](verifications/improved/dim60-d4-affine-cube-fold/).")
     out.append("")
     out.append("27 November 2026 — Independent linear selectors in the contracted quadratic conflict graph double the 63D spike layer and raise **63D to 234,222,852** (+2,031,616), preserving all non-spike points. [Exact replay](verifications/improved/dim63-doubled-spike-quotient/).")
     out.append("")

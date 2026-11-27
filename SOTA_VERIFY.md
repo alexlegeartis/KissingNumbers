@@ -1,5 +1,9 @@
 # Verification of the retained SOTA results
 
+27 November 2026 — Folding eight affine-cube coordinates into four D4 head coordinates raises **60D to 82,821,160** (+13,116,536, or 18.82%), with an exact guarded sparse layer. [Exact replay](verifications/improved/dim60-d4-affine-cube-fold/).
+
+The 60D replay needs Node.js. It reconstructs the guarded sparse support/sign families; the minimum distance of the hash-pinned 80-coset parent is checked in its own package.
+
 27 November 2026 — Independent linear selectors in the contracted quadratic conflict graph double the 63D spike layer and raise **63D to 234,222,852** (+2,031,616), preserving all non-spike points. [Exact replay](verifications/improved/dim63-doubled-spike-quotient/).
 
 27 November 2026 — Opposite-tail three-donor groups on paired body sites raise **65D to 424,312,658** (+135,166), retaining 30 signed atlas fibres. The four-site layer uses the same cited existence theorem. [Exact replay](verifications/improved/dim65-pair-triple-rails/).

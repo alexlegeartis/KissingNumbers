@@ -1,5 +1,7 @@
 # Results
 
+27 November 2026 — Folding eight affine-cube coordinates into four D4 head coordinates raises **60D to 82,821,160** (+13,116,536, or 18.82%), with an exact guarded sparse layer. [Exact replay](verifications/improved/dim60-d4-affine-cube-fold/).
+
 27 November 2026 — Independent linear selectors in the contracted quadratic conflict graph double the 63D spike layer and raise **63D to 234,222,852** (+2,031,616), preserving all non-spike points. [Exact replay](verifications/improved/dim63-doubled-spike-quotient/).
 
 27 November 2026 — Opposite-tail three-donor groups on paired body sites raise **65D to 424,312,658** (+135,166), retaining 30 signed atlas fibres. The four-site layer uses the same cited existence theorem. [Exact replay](verifications/improved/dim65-pair-triple-rails/).
@@ -369,7 +371,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 57 | 52 416 306 | **54 766 981** | 1.04 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 58 | 52 416 510 | **56 281 695** | 1.07 | `classes` | [global P48 owner exchanges and exact tetrahedral tail geometry](verifications/improved/dim50-60-p48-global-owner-refill/) |
 | 59 | 52 416 604 | **56 969 166** | 1.09 | `classes` | [Eight-for-six pure-tail exchange](verifications/improved/dim59-p48-signed103/)
-| 60 | 52 416 841 | **69 704 624** | 1.33 | `classes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
+| 60 | 52 416 841 | **82 821 160** | 1.58 | `classes` | [Affine-cube fold into D4 heads and guarded sparse sign banks](verifications/improved/dim60-d4-affine-cube-fold/) |
 | 61 | 52 417 154 | **120 324 786** | 2.30 | `codes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
 | 62 | 52 417 932 | **173 733 268** | 3.31 | `codes` | [Four spike prefixes with a Kerdock subcode](verifications/improved/dim62-dg-fourth-kerdock/) |
 | 63 | 52 418 564 | **234 222 852** | 4.47 | `codes` | [Doubled spike quotient](verifications/improved/dim63-doubled-spike-quotient/) |
@@ -480,6 +482,7 @@ refreshed table, not more search.
 | 45-46 | `dim41-46-p48-heads` | verify.py (integer angles and exact ranks; inherited population tables, not a fresh body enumeration) |
 | 49 | `dim49-joint-signed-exchange` | final.py: exact complete signed class geometry |
 | 50-60 | `dim50-60-p48-global-owner-refill` | verify.py: exact changed-class pairs, signed ownership and tetrahedral tail replay |
+| 60 | `dim60-d4-affine-cube-fold` | verify.py: exact D4 fold, sparse support guards and angular replay |
 | 60 | `dim60-p48-n12-blockers` | verify.py and audit_angles.py: exact paired latitude and conservative blocker union |
 | 60 | `dim60-p48-frame48-tail` | verify.py and audit_angles.py: frame, exact tail geometry and signed retirement |
 | 62–67 | `dim62-67-rm2-cubic-cosets` | verify.py: two exact cubic-coset checks and sparse-layer transfer |
