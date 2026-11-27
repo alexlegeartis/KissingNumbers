@@ -1,0 +1,9 @@
+{
+  "points": 232231,
+  "old_removed": 7585,
+  "new_rows": 7586,
+  "switched_pair_bodies": 3792,
+  "new_vs_retained_max": 64,
+  "new_vs_new_max": 64,
+  "sorted_int16_rows_sha256": "07eee7f2628cafc8fe5d45c80596e5edb261d65066e45466b8eaad4f6bc511dc"
+}
