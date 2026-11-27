@@ -1,0 +1,12 @@
+{
+  "dimension": 93,
+  "previous": 49545659928,
+  "gain": 819200,
+  "lower_bound": 49546479128,
+  "retained_dense": 49392123904,
+  "retained_body_only": 153534224,
+  "retained_roots": 1800,
+  "heads": 32,
+  "cosets": 800,
+  "coset_size": 1024
+}

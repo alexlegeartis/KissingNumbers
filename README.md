@@ -93,12 +93,14 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 90 | 6 218 183 254 | [Nebe Γ72 (2010 preprint; 2012 journal)](https://arxiv.org/abs/1008.2862v3) ⊕ [18D tail: Cohn–Li 2024](https://arxiv.org/abs/2411.04916v1) *(derived)* | **21 956 424 500** | **SOTA** | +253.100312% | — | updated 2026-11-27 | [QR16 constant rails](verifications/improved/dim90-qr16-constant-rails/) | — |
 | 91 | 6 218 187 548 | [Nebe Γ72 (2010 preprint; 2012 journal)](https://arxiv.org/abs/1008.2862v3) ⊕ [19D tail: Ho 2026](https://arxiv.org/abs/2603.10425) *(derived)* | **25 923 338 000** | **SOTA** | +316.895402% | — | updated 2026-11-22 | [Non-Steiner triality append](verifications/improved/dim91-93-nonsteiner-triality-append/) | — |
 | 92 | 8 589 934 592 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code (2001)](https://doi.org/10.1109/18.923742) *(shortened)* | **34 513 272 592** | **SOTA** | +301.787374% | — | updated 2026-11-22 | [Non-Steiner triality append](verifications/improved/dim91-93-nonsteiner-triality-append/) | — |
-| 93 | 17 179 869 184 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code (2001)](https://doi.org/10.1109/18.923742) *(shortened)* | **49 545 659 928** | **SOTA** | +188.393697% | — | updated 2026-11-22 | [Bipartite D5 heads and 46 Z8 fibres](verifications/improved/dim93-z8-split-d5-heads/) | — |
+| 93 | 17 179 869 184 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code (2001)](https://doi.org/10.1109/18.923742) *(shortened)* | **49 546 479 128** | **SOTA** | +188.398466% | — | updated 2026-11-27 | [Long-radius heads with exact Z8 coset shells](verifications/improved/dim93-z8-long-radius-shell/) | — |
 | 94 | 34 359 738 368 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code (2001)](https://doi.org/10.1109/18.923742) *(shortened)* | **74 147 456 772** | **SOTA** | +115.797501% | — | updated 2026-11-22 | [Mixed-tetrad axis and sign fibres](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/) | — |
 | 95 | 68 719 476 736 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code (2001)](https://doi.org/10.1109/18.923742) *(shortened)* | **117 097 130 108** | **SOTA** | +70.398751% | — | updated 2026-11-22 | [Mixed-tetrad axis and sign fibres](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/) | — |
 | 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code (2001)](https://doi.org/10.1109/18.923742) *(derived by sign embedding)* | **209 299 907 072** | **SOTA** | +52.285725% | — | updated 2026-11-22 | [Mixed-tetrad row-alphabet repack](verifications/improved/dim96-mixed-tetrad-row-alphabet-repack/) | — |
 
 ## Recent updates
+
+27 November 2026 — A separate long-head shell raises **93D to 49,546,479,128** (+819,200), retaining all 46 full preceding fibres and the complete sparse stock. [Exact replay](verifications/improved/dim93-z8-long-radius-shell/).
 
 **27 November 2026** — Folding eight affine-cube coordinates into four D4 head coordinates raises **60D to 82,821,160** (+13,116,536, or 18.82%), with an exact guarded sparse layer. [Exact replay](verifications/improved/dim60-d4-affine-cube-fold/).
 

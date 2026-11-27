@@ -1175,6 +1175,10 @@ with io.open(os.path.join(IMP, 'dim93-z8-split-d5-heads', 'claims.json'), encodi
     _row = json.load(_file)
 add(_row['dimension'], _row['lower_bound'], 'dim93-z8-split-d5-heads', 'verify.py: 46 full Z8 fibres and head/body roots')
 
+with io.open(os.path.join(IMP, 'dim93-z8-long-radius-shell', 'claims.json'), encoding='utf-8') as _file:
+    _row = json.load(_file)
+add(_row['dimension'], _row['lower_bound'], 'dim93-z8-long-radius-shell', 'verify.py: exact long radius and correlated Z8 cosets')
+
 with io.open(os.path.join(IMP, 'dim66-67-mixed-depth-transfer', 'claims.json'), encoding='utf-8') as _file:
     _mixed_66_67 = json.load(_file)
 for _row in _mixed_66_67['dimensions']:
@@ -2901,6 +2905,7 @@ if '--write-results' in sys.argv and not fail:
         'dim81-85-gamma72-apn-complete-dm': 'Complete D-type Γ72 fibres',
         'dim81-84-antipodal-tail-codes': 'Antipodal support codes as Γ72 tails',
         'dim84-85-gamma72-norm4-tail-weave': 'Signed packets and additional norm-four tails',
+        'dim93-z8-long-radius-shell': 'Long-radius heads with exact Z8 coset shells',
         'dim84-85-all-profiles-append': 'Shared phases and horizontal triple components',
         'dim60-61-rm80-guard-transfer': 'Transferred Reed–Muller sign banks',
         'dim60-d4-affine-cube-fold': 'Affine-cube fold into D4 heads and guarded sparse sign banks',
@@ -2959,6 +2964,8 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append("")
+    out.append("27 November 2026 — A separate long-head shell raises **93D to 49,546,479,128** (+819,200), retaining all 46 full preceding fibres and the complete sparse stock. [Exact replay](verifications/improved/dim93-z8-long-radius-shell/).")
     out.append("")
     out.append("27 November 2026 — Folding eight affine-cube coordinates into four D4 head coordinates raises **60D to 82,821,160** (+13,116,536, or 18.82%), with an exact guarded sparse layer. [Exact replay](verifications/improved/dim60-d4-affine-cube-fold/).")
     out.append("")

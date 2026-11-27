@@ -1,5 +1,7 @@
 # Results
 
+27 November 2026 — A separate long-head shell raises **93D to 49,546,479,128** (+819,200), retaining all 46 full preceding fibres and the complete sparse stock. [Exact replay](verifications/improved/dim93-z8-long-radius-shell/).
+
 27 November 2026 — Folding eight affine-cube coordinates into four D4 head coordinates raises **60D to 82,821,160** (+13,116,536, or 18.82%), with an exact guarded sparse layer. [Exact replay](verifications/improved/dim60-d4-affine-cube-fold/).
 
 27 November 2026 — Independent linear selectors in the contracted quadratic conflict graph double the 63D spike layer and raise **63D to 234,222,852** (+2,031,616), preserving all non-spike points. [Exact replay](verifications/improved/dim63-doubled-spike-quotient/).
@@ -403,7 +405,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 90 | 6 218 183 254 | **21 956 420 122** | 3.53 | `codes` | [Larger ternary QR–Pless phases](verifications/improved/dim86-90-qr-pless-phase7906/) |
 | 91 | 6 218 187 548 | **25 923 338 000** | 4.17 | `codes` | [Non-Steiner triality append](verifications/improved/dim91-93-nonsteiner-triality-append/)
 | 92 | 8 589 934 592 | **34 513 272 592** | 4.02 | `codes` | [Non-Steiner triality append](verifications/improved/dim91-93-nonsteiner-triality-append/)
-| 93 | 17 179 869 184 | **49 545 659 928** | 2.88 | `codes` | [Bipartite D5 heads and 46 Z8 fibres](verifications/improved/dim93-z8-split-d5-heads/) 
+| 93 | 17 179 869 184 | **49 546 479 128** | 2.88 | `codes` | [Long-radius heads with exact Z8 coset shells](verifications/improved/dim93-z8-long-radius-shell/) 
 | 94 | 34 359 738 368 | **74 147 456 772** | 2.16 | `codes` | [Mixed-tetrad axis and sign fibres](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/)
 | 95 | 68 719 476 736 | **117 097 130 108** | 1.70 | `codes` | [Mixed-tetrad axis and sign fibres](verifications/improved/dim94-95-mixed-tetrad-axis-sign-fibres/)
 | 96 | 137 438 953 472 | **209 299 907 072** | 1.52 | `codes` | [Mixed-tetrad row-alphabet repack](verifications/improved/dim96-mixed-tetrad-row-alphabet-repack/)

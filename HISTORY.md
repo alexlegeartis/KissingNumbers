@@ -4,6 +4,8 @@ Dated milestones and comparison history retained from the main README. [Current 
 
 ## Recent updates
 
+**27 November 2026 — Long-radius shell in 93D.** A separate long-head shell raises **93D to 49,546,479,128** (+819,200), retaining all 46 full preceding fibres and the complete sparse stock. [Exact replay](verifications/improved/dim93-z8-long-radius-shell/).
+
 The improvement story is grouped by calendar week, newest first. Expand a week to see dated milestones, intermediate constructions and verification links. These are historical checkpoints: use the [results table](README.md#results-and-construction-history) for current bounds. Unless an external comparison is named, an incremental gain is over the preceding repository certificate; inherited premises and priority caveats remain attached to each result. The [manuscript update remains deferred](RESEARCH_GUIDE.md#the-write-up).
 
 <a id="week-2026-11-23"></a>
