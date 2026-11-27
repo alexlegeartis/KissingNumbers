@@ -1,0 +1,50 @@
+# 22D: a shared real head-plane chamber is rigid through five ordinary coordinates
+
+Lower71, 27 November 2026, nominal 05:30–06:00 UTC. **No new bound.** The named external comparator is Leech's **49,896**, as cited and stated in [Cohn–Li v3, Table 1.1](https://arxiv.org/html/2411.04916v3). This is not the prior A2 donor triangle selection or a one-spike bound. We permit arbitrary real new bodies, heights, and pointwise sign choices, while freezing a specific external set.
+
+## Model and theorem
+
+Take the 22D Leech section with three coordinate entries equal. In integer raw scale an ordinary point has coordinates (x∈R^21, h∈R) of squared norm 32 and admissible pair dot ≤16. The last scalar is actual Euclidean h, equal to √3 times the corresponding original integer raw coordinate. Let C be the [21,9,8] triple-shortened extended binary Golay code, D=C^⊥ the triple-punctured [21,12,5] code. The 210 weight-eight supports of C are O; the 21 weight-five supports of D are the lines of PG(2,4). The equator is 840 signed roots (±4,±4) at height zero and 26,880 full even signings of the 210 octads (entries ±2). Positive middle rays have ordinary signs from C, except one mark flipped and weighted 3 rather than 1, and height +√3. Negative middle rays are their antipodes. Thus each side has 21·512=10,752. Each outer side has 21·16=336 signed 5-coordinate line rays, ±2 in ordinary coordinates, at height ±√12; the positive side has even sign parity on each line and the other side is antipodal.
+
+Fix any ordinary coordinate t, and now regard its coordinate and h as a shared two-dimensional head plane. Release all equatorial roots incident to t (80 points) and both outer banks on each of the five lines through t (160 points). Keep the remaining 49,656 points fixed. The five lines through t partition the other 20 coordinates into five tetrads. The old removed points are the eight signed root body fibres and sixteen signed tetrad body fibres in each tetrad, each with two actual head vectors.
+
+**Theorem.** A vector of squared norm 32 compatible with the frozen exterior and supported on the head plane plus at most five arbitrary ordinary coordinates is one of the original 240 released vectors. In particular choosing any new set of those arbitrary continuously variable coordinates, including mixing coordinates lying in different tetrads, cannot improve the whole configuration. This only treats the specified frozen exterior and the specified bound on ordinary support. To improve under the same deletion budget one must use a body with at least six nonzero ordinary coordinates or remove additional exterior points.
+
+## Why the necessary chamber walls apply
+
+By exterior antipodality assume h≥0, and put Y=√3 h. Complete the body's support to any five positions J disjoint from t, add zeros if needed, and set S_0=J∪{t}. Let a≥b≥c≥d≥e≥0 be the five ordinary magnitudes, z=|x_t|≥0. For every donor the following necessary inequalities hold:
+
+1. a+b≤4 from the retained signed root involving its two largest ordinary coordinates.
+2. z+a+b+c≤8 from an octad containing t and its three largest ordinary coordinates. Any four positions outside the deleted triple lie in a shortened octad: exactly five Witt octads through a 4-set, and at most three can hit a deleted point because each 5-set has a unique Witt octad. The required four signs can always match in the full octad parity bank; the soft signs on any other body coordinates of that octad may also be matched, because S_0 has at most six positions and the octad has eight.
+3. a+Y≤8 from a retained outer cap line through the largest ordinary coordinate, avoiding both t and at least one position of the full line from donor support. Such a line exists since at least four lines through that coordinate avoid t, and at most one is wholly contained in J. Its sign choices allow matching on every coordinate of its intersection with J; using merely the largest component gives the bound. More generally for any two chosen positions on different t-lines, if their common line is not wholly contained in J, the frozen outer bank gives their two magnitudes plus Y≤8.
+
+The image of C on S_0 has at most one independent parity relation: its orthogonal space is given by words of D supported in S_0, and any two distinct such words would have weight≥5 each and difference of weight at most 2·6−5−5=2, a contradiction. The possibilities are no relation, a six-support relation (hexad), or a five-support relation H (a projective line). Each sign parity that obeys the relation occurs. For no relation, the same-side middle bank gives
+  T+2M+Y≤16,
+where T=a+b+c+d+e+z and M=max(a,z) (mark a coordinate attaining M). In the no-relation or hexad cases J is not itself a line. There is another position in J in a different t-line from its largest ordinary coordinate, so there is a retained outer cap giving the extra necessary a+e+Y≤8.
+
+For a hexad relation let p be the number of donor negative signs on its support mod 2. Positive and negative unmarked sign groups have even parity because the support size is even. A mark on the hexad changes that parity to odd. The maximum dot in either bank at a largest-magnitude mark is therefore T+2M−2m+Y when p=0 and T+2M+Y when p=1, where m=min(e,z). For the former, one mismatched sign at a smallest coordinate distinct from the chosen mark costs exactly 2m; all sign choices with the prescribed parity are available. Require the corresponding expression ≤16.
+
+For a line relation H, let E be the single position in S_0\H, write q for its magnitude, and M_H,m_H for the largest/smallest magnitude over H. Positive unmarked parity is even, negative unmarked is odd (line length five). Marking outside H retains the parity, marking inside H flips it. If p=0 the necessary middle walls are
+  T+2M_H−Y≤16,  T+2M_H−2m_H+Y≤16,  T+2q+Y≤16.
+If p=1 the walls are
+  T+2M_H+Y≤16,  T+2q−Y≤16,  T+2q−2m_H+Y≤16.
+For each inside mark the minimum penalty can be realized by choosing a largest mark and a different smallest coordinate; ties cause no issue. For an outside mark all coordinates in H have amplitude one in the old row, so the penalty is again exactly 2m_H. If t∈H and the extra coordinate E is ordinary, its line with a largest ordinary coordinate inside H is retained, and their magnitudes plus Y≤8 (that line meets H in one point and cannot be fully contained in J). If t=E then J=H is a retained outer line, so also use the full line itself. Its positive sign bank is even and negative odd. For p=0 this gives T_H+Y≤8, where T_H=sum of the five line magnitudes. For p=1 it gives T_H−Y≤8 and T_H−2m_H+Y≤8.
+
+There are no generic-position assumptions: if a coordinate is zero, adopt either sign that is compatible with a chosen representative of its sign chamber; the support formulas remain true because the corresponding mismatch costs zero.
+
+## Exact chamber result
+
+For sorted a≥b≥c≥d≥e and nonnegative z,Y, split z into each of the six relative positions. In each slot enumerate no relation, hexad with p=0 or p=1, and line relation with each extra position E and each p. There are 90 rational polytopes. They are bounded by the root, octad and outer inequalities; the squared norm
+  a²+b²+c²+d²+e²+z²+Y²/3
+is positive definite, strictly convex. Its maximum is attained at a vertex. The dependency-free exact verifier enumerates each seven-row basis, solves by fraction-free elimination and tests all walls with integer arithmetic. It checks 279,378 bases, 20,280 feasible bases including repeats and 3,259 norm-32 bases. Every actual vertex has norm at most 32 and equality only at:
+- (a,b,c,d,e,z,Y)=(4,0,0,0,0,4,0), an original root involving t;
+- (2,2,2,2,0,2,6), only for line relation H containing t, with E the zero fifth ordinary position and even parity for positive height. These are exactly original upper caps on lines through t, plus their antipodes for negative height.
+A strictly convex squared norm cannot attain the maximum in a convex combination of distinct vertices. This proves the full continuous theorem. Run the supplied `verify.mjs` in Node; no LP solver, floating arithmetic, source file, downloaded coordinates or subprocesses are involved.
+
+The theorem uses the standard exact Golay and projective-plane incidence description, not a floating antecedent. For a direct optional coordinate replay of the frame, use generator polynomial 1+X+X^5+X^6+X^7+X^9+X^11 for the 23-bit cyclic Golay and extend each generator by its parity bit. Delete the three highest coordinates. The paper cited above documents the 21-coordinate Golay model and refers to the original Leech construction. This proof reconstructs only the required polar walls, not every frozen dot by a list.
+
+## Other 22D directions in this round
+
+A genuinely different family projected norm-four and norm-six Leech strata onto a 21-dimensional orthogonal complement to three marked normals and reattached a scalar height. Three charts used independent normal lattices with Gram determinant 48, 44, and 36. The secondary norm-six shell has 16,773,120 ambient points; exact enumeration of only the mark profiles gives 22,080-point or 18,480-point projected families in some noncentral residue classes. In the first two charts, a search keeping complete families at extreme or zero height and respecting the bound from the shortest normal representative reaches at most 43,552 or 31,812 when forcing any of those tested large secondary families at height zero. This is not an all-real, all-family upper bound. It diagnosed why the large stocks do not immediately combine; the polar theorem above is the verified mathematical outcome and is independent of this exploration.
+
+Next credible constructive opening: dispersed bodies using **at least six** ordinary positions from two or more t-line cells, with whole sign groups selected by restrictions of punctured Golay. Alternatively actually rebuild one of the frozen large middle banks to widen the polar chamber, charging the released sparse rows across all five tetrads simultaneously. No native compute was used.
