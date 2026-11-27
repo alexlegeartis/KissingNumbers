@@ -36,7 +36,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 30 | 220 440 | [Ma et al., PackingStar (2025; v5 2026)](https://arxiv.org/abs/2511.13391v5) | **248 506** | **SOTA** | +12.73181% | — | updated 2026-11-22 | [Lifted Leech contact midpoints](verifications/improved/dim30-row-midpoint-packing/) | — |
 | 31 | 238 350 | [Ma et al., PackingStar (2026; v5)](https://arxiv.org/abs/2511.13391v5) | **251 524** | **SOTA** | +5.52717% | — | updated 2026-11-18 | [Joint midpoint exchange](verifications/improved/dim30-31-midpoint-exchanges/) | — |
 | 32 | 352 320 | [Lin, support code + ERS layers (2026)](https://github.com/QH-Lin/kissing-number-32/tree/f367a9c5a051c0d6821ce71324b9dfa1ead76c2e) | **352 992** | **SOTA** | +0.190736% | — | since 2026-11-07 | [Non-antipodal signed octad continuation](verifications/improved/dim32-35-signed-layers/nonantipodal32/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal32/evidence/public_comparison.json) |
-| 33 | 370 240 | [Lin, support code + ERS layers (2026)](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 528** | **SOTA** | +0.077787% | — | updated 2026-11-22 | [Joint signed refill](verifications/improved/dim33-joint-signed-refill/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal33/evidence/public_comparison.json) |
+| 33 | 370 240 | [Lin, support code + ERS layers (2026)](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **370 556** | 370 568 (reported) | +0.085350% | +0.003238% | superseded, 2026 | [Root–star matching exchange](verifications/improved/dim33-root-star-exchange/) | [P. Carder (2026), dataset](https://doi.org/10.5281/zenodo.24577265) |
 | 34 | 390 980 | [Lin, support code + ERS layers (2026)](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **391 004** | **SOTA** | +0.00614% | — | updated 2026-11-20 | [Octad swaps and signed stars](verifications/improved/dim34-octad-switches/) | — |
 | 35 | 415 308 | [Lin, support code + ERS layers (2026)](https://github.com/QH-Lin/kissing-numbers-33-39/tree/0c4e2bd486061b3fd55e128ac3497bfb12b73f07) | **415 360** | **SOTA** | +0.01252% | — | updated 2026-11-21 | [Joint signed-star and root repacking](verifications/improved/dim35-joint-star-root/) | — |
 | 36 | 484 760 | [Yang et al., signed replacements (2026)](https://arxiv.org/abs/2609.35051v1) | **506 628** | **SOTA** | +4.511098% | — | updated 2026-11-23 | [Coxeter–Todd cell perturbations and recovery](verifications/improved/dim36-ct-neutral-reheat/) | — |
@@ -183,7 +183,9 @@ Individual Coxeter–Todd triangle switches and a three-block phase refill raise
 
 A larger radical support packing takes **37D to 544,474** (+10,610 over the original QR result). [37D proof](verifications/improved/dim37-qr-radical-families/). The [536,440-point intermediate](verifications/improved/dim37-qr-shared-stars/) is retained.
 
-Joint repacking raises **33D to 370,528** (+112). [Exact 33D proof](verifications/improved/dim33-joint-signed-refill/).
+A [root–star matching exchange](verifications/improved/dim33-root-star-exchange/) raises the repository construction to **370,556 in 33D**, +28. This remains below [P. Carder's reported 370,568](https://doi.org/10.5281/zenodo.24577265).
+
+Earlier joint repacking raised **33D to 370,528** (+112). [Exact 33D proof](verifications/improved/dim33-joint-signed-refill/).
 
 Four octad swaps raise **34D to 391,004** (+12). [34D proof](verifications/improved/dim34-octad-switches/).
 

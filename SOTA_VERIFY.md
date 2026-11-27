@@ -291,7 +291,9 @@ Earlier 36D and 37D: **502,767** and **506,709**, gains of 945 and 1,071. The [C
 
 Preceding 38D: **611,798**, a gain of 160. The [triangular Hamming proof](verifications/improved/dim38-triangle-hamming/) gives two exact coordinate reconstructions and changed-pair checks, inheriting the unchanged Leech minimum-norm argument.
 
-The latest 33D witness has **370,528** points, up 112. The complete signed geometry checks the dense code, the full octad layer and every explicit point. [33D refill proof](verifications/improved/dim33-joint-signed-refill/).
+A [root–star matching exchange](verifications/improved/dim33-root-star-exchange/) raises the repository construction to **370,556 in 33D**, +28. This remains below [P. Carder's reported 370,568](https://doi.org/10.5281/zenodo.24577265). The certificate checks all 68,655,689,290 final pairs at common squared norm 32.
+
+The earlier 33D witness has **370,528** points, up 112. The complete signed geometry checks the dense code, the full octad layer and every explicit point. [33D refill proof](verifications/improved/dim33-joint-signed-refill/).
 
 The preceding 33D witness has **370,416** (+8). Two [exact replays](verifications/improved/dim33-octad-switches/) check the octad switches, all exceptional interactions and the signed-root ledger.
 

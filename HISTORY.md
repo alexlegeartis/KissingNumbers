@@ -154,6 +154,8 @@ The improvement story is grouped by calendar week, newest first. Expand a week t
 
 **22 November 2026 — 30D lifted contact midpoints.** An exchange of 340 new points for 250 old ones gives **248,506**, a gain of 90. The complete integer coordinates and exact pair checks are available in the [30D proof](verifications/improved/dim30-row-midpoint-packing/).
 
+**27 November 2026 — 33D root–star exchange.** A [root–star matching exchange](verifications/improved/dim33-root-star-exchange/) raises the repository construction to **370,556 in 33D**, +28. This remains below [P. Carder's reported 370,568](https://doi.org/10.5281/zenodo.24577265). All final pairs were checked exactly; the original Carder coordinates were not independently replayed here.
+
 **22 November 2026 — joint 33D signed refill.** Joint repacking of the explicit signed octads, stars and roots gives **370,528**, a gain of 112. [Exact 33D proof](verifications/improved/dim33-joint-signed-refill/).
 
 **21 November 2026 — marked caps and refills.** [Two exact support exchanges](verifications/improved/dim61-62-marked-caps/) yield **89,082,322 in 61D** (+9,520) and **122,668,916 in 62D** (+9,840).

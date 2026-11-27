@@ -1,5 +1,7 @@
 # Results
 
+27 November 2026 — A [root–star matching exchange](verifications/improved/dim33-root-star-exchange/) raises the repository construction to **370,556 in 33D**, +28. This remains below [P. Carder's reported 370,568](https://doi.org/10.5281/zenodo.24577265).
+
 27 November 2026 — A [two-colour midpoint switch](verifications/improved/dim29-kempe-tail-switch/) gives **232,236 in 29D**, six above [Takhanov’s 232,230](https://github.com/k-nic/KissingNumbers/tree/77f0860bf93a745140e6e25481d3f60773b11441/version2) and 79 above our preceding witness. It reorients 3,792 full antipodal fibres and replaces six singletons with pairs.
 
 27 November 2026 — A separate long-head shell raises **93D to 49,546,479,128** (+819,200), retaining all 46 full preceding fibres and the complete sparse stock. [Exact replay](verifications/improved/dim93-z8-long-radius-shell/).
@@ -350,7 +352,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 30 | 220 440 | **248 506** | 1.13 | `heads` | [packing of lifted Leech contact midpoints with complete exact geometry](verifications/improved/dim30-row-midpoint-packing/) |
 | 31 | 238 350 | **251 524** | 1.06 | `heads` | [joint row-midpoint, fibre, auxiliary and Leech-root exchanges; complete exact geometry](verifications/improved/dim30-31-midpoint-exchanges/) |
 | 32 | 352 320 | **352 992** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |
-| 33 | 370 240 | **370 528** | 1.00 | `codes` | [joint repacking of individual signed octads, stars and roots](verifications/improved/dim33-joint-signed-refill/) |
+| 33 | 370 240 | **370 556** | 1.00 | `codes` | [Root–star matching exchange](verifications/improved/dim33-root-star-exchange/), exact expanded verification |
 | 34 | 390 980 | **391 004** | 1.00 | `heads` | [coordinated octad switches and root-star exchanges; two exact proofs](verifications/improved/dim34-octad-switches/) |
 | 35 | 415 308 | **415 360** | 1.00 | `heads` | [joint signed-star and root repacking](verifications/improved/dim35-joint-star-root/) |
 | 36 | 484 760 | **506 628** | 1.05 | `cosets` | [Coxeter–Todd cell perturbations and recovery](verifications/improved/dim36-ct-neutral-reheat/) |
@@ -471,7 +473,7 @@ refreshed table, not more search.
 | 29 | `dim29-kempe-tail-switch` | verify.py d29_coordinates.npz: reconstruct using Takhanov v0.2 source, check all new and retained comparisons |
 | 30 | `dim30-row-midpoint-packing` | verify.py: complete exact coordinates and independent direct-integer module exchange |
 | 31 | `dim30-31-midpoint-exchanges` | verify.py: complete exact coordinates and independent direct-integer module exchange |
-| 33 | `dim33-joint-signed-refill` | verify.py: complete signed geometry for 370,528 directions with optional all-pairs replay |
+| 33 | `dim33-root-star-exchange` | verify.py: complete signed geometry for 370,556 directions with optional all-pairs replay |
 | 34 | `dim34-octad-switches` | Two exact replays of four octad switches and the final 391,004 directions |
 | 32-35 | `dim32-35-signed-layers` | verify.py: isolated replay of supplied codes, integer geometry and exact certificate checks |
 | 35 | `dim35-joint-star-root` | Integer replay of 415,360 directions with 262 stars and 2,158 signed roots |
