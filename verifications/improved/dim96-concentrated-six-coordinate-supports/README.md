@@ -1,0 +1,24 @@
+# 96D: block-concentrated six-coordinate signed layer
+
+**Exact lower bound: 209,300,845,920**, an increase of **938,848** over the prior project value **209,299,907,072** (about **0.0004486%**). Pinned opening baseline KissingNumbers main abda686407447f0f2770d43077bf2b95fb8c29bf. The historical external comparator recorded in the project table is 137,438,953,472, attributed there to [Duursma–Greferath–Litsyn–Schmidt (2001)](https://doi.org/10.1109/18.923742); not a claim that all current external literature is exhausted. The previous exact certificate is [the 96D row-alphabet repack](https://github.com/alexlegeartis/KissingNumbers/tree/abda686407447f0f2770d43077bf2b95fb8c29bf/verifications/improved/dim96-mixed-tetrad-row-alphabet-repack), claims Git blob feb31d4023a963927e5b86f8288f6c5200c3948f.
+
+Divide the 96 coordinates into 24 consecutive rows of width four, and six physical groups of four rows. Add 32 even-sign vectors, with amplitudes two and squared norm 24, on each of the **29,429** six-coordinate supports. Of these, 13,612 have distinct rows and arise from 83 explicit row masks, each carrying a 164-word restricted extended quinary RS axis code inherited from [the preceding project package](https://github.com/alexlegeartis/KissingNumbers/tree/abda686407447f0f2770d43077bf2b95fb8c29bf/verifications/improved/dim89-96-rs-axis-code-repack). It uses evaluations of a cubic at the five finite field points plus its leading coefficient, excludes the letter vector (0,0,0,0,4,4) coordinatewise, and relabels remaining letters into four axes. The known A4(6,3) code/lower bound is due to [Bogdanova–Brouwer–Kapralov–Östergård](https://doi.org/10.1023/A:1011275112159), not a new coding bound. The remaining **15,817** supports have two occupied sites in at least one row, at most two sites in each row, and exactly two sites in each of three physical groups.
+
+**New/New.** Check that no two distinct physical supports share a four-subset. Then their raw dot is at most 4×3=12. On a common support different even signs disagree at at least two sites, so dot ≤4×(4−2)=8. All points distinct. Four-subset indexing checks at most 15 keys per support rather than materializing any signed list. The checker deterministically regenerates the finite support list and independently checks its geometry.
+
+**Old short/new.** The retained ordinary and paired-group flat BCH vectors have squared norm 24, coordinate amplitudes at most one, and hence raw dot against a new vector at most 12. Earlier flat RS was replaced by these BCH fibres. For a short triality mode let A be its axial rows (one coordinate of magnitude two); F its flat rows (four coordinates of magnitude one). For a new support let U be its occupied rows, D the double rows. Regardless of all old signs and axes, the ordinary axial row costs at most four once, even on a double row; a flat row costs two per matched site. The exact raw bound is therefore at most
+```
+4 |U ∩ A| + 2 |U ∩ F| + 2 |D ∩ F|.
+```
+The verifier checks this is ≤12 across all 1,771 literal old triality profiles and all new supports. Those old geometries consist of 1,170 mixed triality, 438 complementary hexary, 103 affine and 60 partial profiles. Post-RS in 96D changes the axis and sign options, not occupied rows or flat/axial labels, so even these later replacements are covered.
+
+**Old long/new.** Each dense three-alphabet entry, shifted Golay/dodecacode point, adapted dodecad and final mixed tetrad vector has squared norm 96 and entries bounded by two, so new dot ≤6×4=24. Each old amplitude-four RS vector has one occupied coordinate per physical group, and every new support occupies at most three groups, so dot ≤3×8=24. The same normalized separation cap of 1/2 holds. The palette also excludes any cross-family duplicates automatically from those inequalities.
+
+**Exact root payment.** Old grouped roots are sqrt(48)(±e_i±e_j), within a physical group, originally 6×binom(16,2)×4=2,880. The explicit support set uses all 720 same-group coordinate pairs, so we simply remove the entire grouped-root orbit. No other old row or signed word is removed. The ledger is
+```
+29,429 × 32 − 2,880 = 941,728 − 2,880 = 938,848.
+```
+
+**Replay.** From a checkout run `node verifications/improved/dim96-concentrated-six-coordinate-supports/verify.cjs .`. The Node standard-library checker deterministically regenerates the 15,817 extra supports and independently checks all new support geometry, all old short modes, the exact grouped-root deletion, and the count against the six Git-blob-pinned inputs under `verifications/improved`. Old-to-old compatibility is inherited from the pinned exact project baseline; the long-layer comparison follows the proof above. No binary data or randomized search is needed.
+
+This supersedes the strictly smaller 83-mode/433,280-increase fallback; the physical supports are not restricted to one coordinate per row.

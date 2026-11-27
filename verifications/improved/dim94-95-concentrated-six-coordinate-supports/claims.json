@@ -1,0 +1,12 @@
+{
+  "lower_bounds": {
+    "94": 74147571308,
+    "95": 117097244644
+  },
+  "previous_lower_bounds": {
+    "94": 74147456772,
+    "95": 117097130108
+  },
+  "added_per_dimension": 115968,
+  "removed_per_dimension": 1432
+}
