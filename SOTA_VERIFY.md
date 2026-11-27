@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+27 November 2026 — Independent linear selectors in the contracted quadratic conflict graph double the 63D spike layer and raise **63D to 234,222,852** (+2,031,616), preserving all non-spike points. [Exact replay](verifications/improved/dim63-doubled-spike-quotient/).
+
 27 November 2026 — Opposite-tail three-donor groups on paired body sites raise **65D to 424,312,658** (+135,166), retaining 30 signed atlas fibres. The four-site layer uses the same cited existence theorem. [Exact replay](verifications/improved/dim65-pair-triple-rails/).
 
 27 November 2026 — A marked QR16 construction with all old QR15 phase banks retained raises **90D to 21,956,424,500** (+3,620 vs the previous package). Its 4,378 new rays replace the previous 758; they are not counted together. [Proof and exact replay](verifications/improved/dim90-qr16-constant-rails/).

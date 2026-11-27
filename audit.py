@@ -947,6 +947,9 @@ with io.open(os.path.join(IMP, 'dim62-dg-three-prefixes', 'claims.json'), encodi
 with io.open(os.path.join(IMP, 'dim62-63-dg-spike-banks', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim62-63-dg-spike-banks', 'verify.py: exact cubic-class spike geometry and short-guard bank overlaps')
+with io.open(os.path.join(IMP, 'dim63-doubled-spike-quotient', 'claims.json'), encoding='utf-8') as _file:
+    for _d, _n in json.load(_file)['lower_bounds'].items():
+        add(int(_d), int(_n), 'dim63-doubled-spike-quotient', 'verify.mjs: exact contracted conflict graph and 62 linear selectors')
 with io.open(os.path.join(IMP, 'dim62-two-mark-diagonals', 'claims.json'), encoding='utf-8') as _file:
     for _d, _n in json.load(_file)['lower_bounds'].items():
         add(int(_d), int(_n), 'dim62-two-mark-diagonals', 'verify.py: exact head geometry and simultaneous parity constraints')
@@ -2913,6 +2916,7 @@ if '--write-results' in sys.argv and not fail:
         'dim86-90-qr-pless-phase7906': 'Larger ternary QR–Pless phases',
         'dim62-dg-three-prefixes': 'Three Delsarte–Goethals spike prefixes',
         'dim62-63-dg-spike-banks': 'Delsarte–Goethals spike banks',
+        'dim63-doubled-spike-quotient': 'Doubled spike quotient',
         'dim62-two-mark-diagonals': 'Orthogonal two-mark heads',
         'dim85-shared-phase-refill': 'Shared-phase Γ72 contact refill',
         'dim60-61-rm80-puncture': 'Punctured Reed–Muller signs, unequal heads and shared parity checks',
@@ -2951,6 +2955,8 @@ if '--write-results' in sys.argv and not fail:
     PKGTREE = {'dim96-ers-takeover': 'closed'}
     out = []
     out.append("# Results")
+    out.append("")
+    out.append("27 November 2026 — Independent linear selectors in the contracted quadratic conflict graph double the 63D spike layer and raise **63D to 234,222,852** (+2,031,616), preserving all non-spike points. [Exact replay](verifications/improved/dim63-doubled-spike-quotient/).")
     out.append("")
     out.append("27 November 2026 — Opposite-tail three-donor groups on paired body sites raise **65D to 424,312,658** (+135,166), retaining 30 signed atlas fibres. The four-site layer uses the same cited existence theorem. [Exact replay](verifications/improved/dim65-pair-triple-rails/).")
     out.append("")

@@ -1,5 +1,7 @@
 # Results
 
+27 November 2026 — Independent linear selectors in the contracted quadratic conflict graph double the 63D spike layer and raise **63D to 234,222,852** (+2,031,616), preserving all non-spike points. [Exact replay](verifications/improved/dim63-doubled-spike-quotient/).
+
 27 November 2026 — Opposite-tail three-donor groups on paired body sites raise **65D to 424,312,658** (+135,166), retaining 30 signed atlas fibres. The four-site layer uses the same cited existence theorem. [Exact replay](verifications/improved/dim65-pair-triple-rails/).
 
 26 November 2026 — A one-for-forty split of a central QR word gives **1,139,159 in 40D** (+39 over Smart + Edel–Rains–Sloane), retaining all signed octads and roots. [QR48 central-word split with an exact forty-daughter shell](verifications/improved/dim40-qr-central-split/).
@@ -370,7 +372,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 60 | 52 416 841 | **69 704 624** | 1.33 | `classes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
 | 61 | 52 417 154 | **120 324 786** | 2.30 | `codes` | [Delsarte–Goethals spikes on transferred banks](verifications/improved/dim60-61-dg-spike-banks/) |
 | 62 | 52 417 932 | **173 733 268** | 3.31 | `codes` | [Four spike prefixes with a Kerdock subcode](verifications/improved/dim62-dg-fourth-kerdock/) |
-| 63 | 52 418 564 | **232 191 236** | 4.43 | `codes` | [Delsarte–Goethals spike banks](verifications/improved/dim62-63-dg-spike-banks/) |
+| 63 | 52 418 564 | **234 222 852** | 4.47 | `codes` | [Doubled spike quotient](verifications/improved/dim63-doubled-spike-quotient/) |
 | 64 | 331 737 984 | **422 673 152** | 1.27 | `codes` | [Split-amplitude Delsarte–Goethals donors](verifications/improved/dim64-65-dg-split-amplitudes/) |
 | 65 | 331 737 986 | **424 312 658** | 1.28 | `codes` | [Paired-body Delsarte–Goethals donors with opposite tail signs](verifications/improved/dim65-pair-triple-rails/) |
 | 66 | 331 737 990 | **434 471 332** | 1.31 | `codes` | [Rephased sparse banks and off-axis DG donors](verifications/improved/dim66-68-dg-rephased-banks/)
@@ -522,6 +524,7 @@ refreshed table, not more search.
 | 65 | `dim65-dg-three-site-donors` | verify.py: exact three-site donor geometry and inherited rephased support guards |
 | 86–88, 90 | `dim86-90-qr-pless-phase7906` | verify.py: all ternary phase pairs, exact mixed-layer gates and pinned counts |
 | 62 | `dim62-dg-three-prefixes` | verify.py: exact three-prefix angular and parity gates |
+| 63 | `dim63-doubled-spike-quotient` | verify.mjs: exact contracted conflict graph and 62 linear selectors |
 | 62–63 | `dim62-63-dg-spike-banks` | verify.py: exact cubic-class spike geometry and short-guard bank overlaps |
 | 62 | `dim62-two-mark-diagonals` | verify.py: exact head geometry and simultaneous parity constraints |
 | 59 | `dim59-p48-signed103` | verify.py: exact eight-for-six pure-tail exchange and inherited interfaces |
