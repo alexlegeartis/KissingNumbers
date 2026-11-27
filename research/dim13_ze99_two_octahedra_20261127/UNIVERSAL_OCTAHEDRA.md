@@ -1,0 +1,16 @@
+# Universal 51-quartet leave geometry in 12D
+
+This strengthens Part C of the 13D Zinoviev–Ericson note: the support and mixed-sign equal-amplitude 168 bound applies to **every** maximal 51-support equator, not just the pinned archive. It is purely combinatorial; no search and no general kissing upper bound.
+
+Let Q be any set of 51 four-subsets of a 12-set X with pairwise intersection at most two. Define its leave hypergraph H to be the triples not included in Q. At a point i with replication r_i, the link leave on X without i consists of 55−3 r_i edges, because each quartet through i uses three distinct link edges. Degrees in the link leave are even: a vertex j has degree 10−2 λ_{ij}, where λ_{ij} counts quartets containing i and j. Therefore r_i≤17: the trivial upper is 18 and 18 leaves exactly one edge, impossible with even degrees. (This also proves the packing upper 51 without a computer.) Since the total replication is 4×51=204, every r_i=17. Each link leave is an even simple graph with four edges, hence a single 4-cycle.
+
+The nonempty leave triples therefore form a disjoint union of closed triangulated surfaces: each vertex link is a circle, and each leave edge is in two leave triangles. Each connected component with v vertices has degree four everywhere, so e=2v, f=4v/3 and Euler characteristic χ=v−e+f=v/3. A connected closed surface has χ≤2 (alternatively over F₂ the rank of H₂ is at most one); hence v≤6. Also v≥5 and v divisible by three, so v=6. Its 4-regular graph is K₆ minus a perfect matching, and there are exactly eight possible triangles in this graph, equal to its face count. Thus its faces are all choices one from each of three opposite pairs. There are exactly two such octahedral components covering X.
+
+Every 7-set H' contains at least two old quartets, not merely one. Indeed let T=X\H' have size 5. Inclusion–exclusion with the universal 17 replication, λ_{ij}=5−1_{ij a leave edge}, and each non- leave triple covered exactly once gives the count of quartets inside H':
+```
+51 − 5·17 + (50−e_H(T)) − (10−f_H(T)) + q(T)
+ = 6−e_H(T)+f_H(T)+q(T),
+```
+where e_H(T) and f_H(T) count leave edges and triples in T and q(T) counts quartets of Q wholly in T. In the two disjoint three-partite octahedral graphs, e_H(T)−f_H(T)≤4: for 5 sites in one octahedron, occupancies (2,2,1) give 8−4=4; for 4+1 across octahedra, maximum is 4 from (2,2,0), and for 3+2 maximum is 2+1=3. Thus the count is at least two.
+
+For a unit 13D point of height 1/2 with w equal-magnitude nonzero ordinary entries, the exact equator gate is 3 |S∩Q|²≤4w for every quartet Q. The only possibilities are w=1 (any axis), w=3 (one of the 16 leave triples), and w=12 (all coordinates). Indeed pairs are covered, any four sites have a triple not in the leave (each component has only three parts and there are no cross-component leave triples), and every seven sites contain a quartet. The signed-code case split in Part C therefore proves the **arbitrary equator+equal-amplitude two standard caps** construction cannot exceed 816+2·168+2=1154 whenever the equator has all 51 full signed supports. This extension does not assert the universal analogue of the separate parallel-class or nine-set polar assumptions.
