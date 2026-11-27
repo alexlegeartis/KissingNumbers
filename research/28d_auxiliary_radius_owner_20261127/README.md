@@ -1,0 +1,38 @@
+# 28D exact geometry of the octad-plus-tail core: why three new latitude routes cannot gain
+
+**The 28D lower bound is unchanged at 223,528.** Named external comparator: [Rustem Takhanov's 223,496-point configuration, version 0.1](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1), dated November 17, 2026. The [current external version 0.2](https://github.com/k-nic/KissingNumbers/tree/77f0860bf93a745140e6e25481d3f60773b11441/version2) changes 26D and 29D only. Pin the [actual 223,528-point parent](https://github.com/alexlegeartis/KissingNumbers/tree/d53024aff3f114773d87db90a8b60740ef63876e/verifications/improved/dim28-takhanov-root-exchange) and its `data/coordinates28_223528.npz`, SHA-256 `3556adb1c32b26116bd83df0793e4eca0b007ca1c751da47c50d3e37cb66d5d2`. Every actual point is on squared norm 128; the pair bound is 64.
+
+Split into octad **I={0,2,4,5,6,10,11,23}**, its Leech complement **J**, and four additional coordinates **T**. Keep the 222,816 actual points with nonzero J. Any test point in I⊕T sees only their projections, whose exact distinct count is 3,833. Their nonzero tail-bearing projected types have squared norms (64,32), (32,32) or (0,64) in I and T, and each fixed projected body has both tail signs. The **712-point** old J=0 core comprises 176 pure E8, 128 body-midpoint, 384 auxiliary and 24 pure tail points.
+
+## 1. Sharp auxiliary-transport barrier, including arbitrary real bodies
+
+The 24 pure tail poles are the vectors (±8,±8,0,0) and their permutations. If they are kept, any mixed donor's tail satisfies the sum of its two largest absolute entries ≤8. Its squared tail norm is then ≤64. At equality the tail is one of the 24 vectors (±8,0,0,0) or (±4,±4,±4,±4); indeed for top magnitudes a≥b, its squared norm is at most a²+3b²≤(8−b)²+3b²≤64 on 0≤b≤4. For each such tail, bodies of squared norm 64 meet pairwise at nonpositive dot and thus number at most twice dimension eight. One short proof of this elementary Rankin bound: normalized Gram G=I−A with A nonnegative off diagonal, zero diagonal. PSD gives Perron root λ_max(A)≤1; all its eigenvalues have absolute value ≤1; so λ_max(G)≤2 and N=tr G≤2 rank G. The old auxiliary layer is exactly 24 complete orthoplexes of 16 bodies and saturates 384. Conversely every possible pure T point compatible with the fixed outside is one of the same old 24 poles: the 768 exterior points projected to the 24 pure short tails force |t_i|≤8 and ||t||₁≤16. To achieve squared norm 128 every nonzero entry must have absolute value 8, and exactly two such entries occur.
+
+A stronger necessary condition uses **only** the actual 384 auxiliary points, even if all 328 other core points were deleted. For a proposed real point (a,t) with nonzero body, put α=||a||² and β=128−α. Define S=max(||t||∞,||t||₁/2); the short 24 heads have maximum t-product exactly 8S and β≤2S². At the selected head, any complete body frame has max body dot at least √(8α). Therefore S+√(α/8)≤8, forcing α≥2048/25 by (8−p)²≥β/2=64−4p², p=√(α/8)>0.
+
+In fact **α must exceed 82**. Suppose 2048/25≤α≤82. Then 479/100≤S≤24/5 and Δ=2S²−β≤2/25. Each magnitude u_i=|t_i| satisfies u_i(S−u_i)≤Δ, because their sum is S||t||₁−β≤Δ. Thus every u_i lies within 1/25 of 0 or S. Exactly two are near S: one could not give β≥46, while three would give ||t||₁>2S. For the six dual-D4 heads consisting of the two signed axes and the four full-support signs matching these top two tail signs, every t-product is at least 8S−16/25. Hence for all axes f in their six attached body frames, |a·f|≤26.32<53/2.
+
+In the first of these frames, p_i=a·f_i have Σp_i²=64α; with seven other terms each ≤(53/2)², every |p_i|>18. Form a₀=(2/5)Σ sign(p_i)f_i, so that |a₀·f_i|=128/5. The perturbation against any axis f of any frame obeys |(a−a₀)·f|≤√(Σ(p_i−a₀·f_i)²)<22. The literal six-frame calculation checks all 256 sign choices for each of the 24 signed top-coordinate pairs: for every a₀ the largest |a₀·f| across the six frames is at least 256/5 (it is exactly the minimum over signs for all pairs). Some actual |a·f| therefore exceeds 256/5−22=29.2, contradiction. This rules out every mixed α≤82 with the actual 384 intact, irrespective of noninteger amplitudes or removing the other layers. It says where to change construction, not a general 28D upper bound.
+
+## 2. Even 80+48 shelf: no gain even when jointly replacing the old core
+
+Allow every old core point to be deleted, but keep all exterior points. Only admit new all-even raw integer points with squared I norm 80 and T norm 48. At this radius the complete even tail possibilities are the 96 signs/permutations of (4,4,4,0) or (6,2,2,2); both automatically satisfy the old pure tail inequalities, so no need to keep those poles for this claim.
+
+| Absolute body profile | Signed body choices | Exterior-legal bodies | Exterior-legal body–tail points |
+|---|---:|---:|---:|
+| (8,4) | 224 | 0 | 0 |
+| (8,2,2,2,2) | 8,960 | 0 | 0 |
+| (6,6,2,2) | 6,720 | 120 | 624 |
+| (6,4,4,2,2,2) | 107,520 | 0 | 0 |
+| (4,4,4,4,4) | 1,792 | 0 | 0 |
+| (4,4,4,4,2,2,2,2) | 17,920 | 120 | 576 |
+
+These exhaust partitions of 80/4 into eight square slots. The exact compact certificate maps each of the 1,200 possible donors to one of **75 old core points actually incompatible with it**. Any two donors assigned the same owner themselves have inner product >64. In any feasible new code each used donor therefore forces a distinct old deletion. This proves no simultaneous exchange can improve the count, including exchanges that abandon any or all old affine-point families or the pure-tail poles. The assignment discovery has no bearing on the bound; the checker directly proves both sets of dot inequalities and exhaustiveness of the candidate menu.
+
+## 3. Real tails for the fixed (8,4) body
+
+For all 224 signed placements of body magnitudes (8,4), keep the 3,833 exterior projection constraints and old 24 pure tail poles. Without imposing any integrality on t, each exact tail feasible set is of the form |t_i±t_j|≤b_{ij,±} with integer bounds, obtained from the tightest literal projection. Pure short T64 exterior constraints are redundant under these existing pure tail poles (they imply ||t||∞≤8 and ||t||₁≤16). The convex objective ||t||² attains its maximum at a vertex of this bounded polytope. Enumerate independent supports of four walls and sign choices (overall tail negation is immaterial) by integer Cramer's rule. Exact tail squared maxima are 20, 24, 32 for 148, 28, 48 signed bodies, respectively, strictly below the needed 48. This excludes a continuous rescue by merely rotating these tails, and differs from the preceding donor graph (which covers deletion of all pure tail poles but restricts all coordinates to be even).
+
+## Reproduction and scope
+
+Run `node verify.mjs path/to/coordinates28_223528.npz`. The literal verifier pins the source bytes by SHA-256, decompresses the one NumPy array, checks every source norm and the split ledger, verifies all 24 orthoplexes and the real-radius stability constants, enumerates every candidate and both inner-product conditions in the 75-owner certificate, and enumerates the independent four-wall vertices. Current result remains a construction lower bound. A new useful mechanism must alter the auxiliary frames jointly, use a different body radius and allow other nontrivial shapes, or change the exterior; checking more orthoplex-sized small tails one at a time does not address the obstruction.
