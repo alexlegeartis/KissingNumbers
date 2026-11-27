@@ -25,3 +25,32 @@ for(let r=0;r<3;r++)for(let u=0;u<4;u++){
 eq(new Set(sig).size,12);
 console.log(JSON.stringify(result.map(({flex,H,SM})=>({flex,H,SM}))));
 
+
+
+/* Append after the previous replay; reuses const G and eq. */
+const PP=Array.from({length:24},(_,i)=>G.pose(Math.floor(i/4),i%4));
+const EE=PP.map((v,i)=>PP.map((w,j)=>i!==j&&!G.dot(v,w).some(Boolean)));
+function perms(x){if(!x.length)return [[]];return x.flatMap((a,i)=>perms(x.filter((_,j)=>i!==j)).map(y=>[a,...y]));}
+const AA=[];
+for(let i=0;i<24;i++)for(let j=i+1;j<24;j++)if(EE[i][j])for(let k=j+1;k<24;k++)if(EE[i][k]&&EE[j][k])for(let l=k+1;l<24;l++)if([i,j,k].every(q=>EE[q][l]))AA.push([i,j,k,l]);
+eq(AA.reduce((m,q)=>(m[q.filter(i=>i<12).length]=(m[q.filter(i=>i<12).length]||0)+1,m),{}),{0:3,2:18,4:3});
+const d=12,RR=AA.filter(q=>!q.includes(d)).flatMap(q=>perms(q).filter(v=>EE[v[0]][d]));
+eq(RR.length,144);
+const HH=RR.map((u,i)=>RR.map((v,j)=>i!==j&&u.every((x,k)=>EE[x][v[k]])));
+const TT=[];
+for(let i=0;i<RR.length;i++)for(let j=i+1;j<RR.length;j++)if(HH[i][j])for(let k=j+1;k<RR.length;k++)if(HH[i][k]&&HH[j][k])TT.push([i,j,k]);
+eq(TT.length,72);
+const KK=Array.from({length:3},(_,r)=>{
+ const heads=PP.slice(12+4*r,16+4*r).filter(q=>G.dot(q,PP[0]).some(Boolean));eq(heads.length,2);
+ const k=heads.map(u=>[0,1,2,3].filter(i=>G.dot(u,PP[i]).some(Boolean)));eq(k[0],k[1]);eq(k[0].length,2);eq(k[0][0],0);return k[0][1];
+});
+eq(KK,[1,2,3]);let counted=0;
+for(const t of TT)for(const W of perms(t)){
+ const X=W.map(i=>RR[i]);
+ for(let s=0;s<3;s++)
+  eq(RR.some(Y=>X.every((Z,r)=>[Z[0],Z[KK[s]]].every(x=>EE[x][Y[0]]&&EE[x][Y[KK[r]]]))),false);
+ counted++;
+}
+eq(counted,432);
+console.log(JSON.stringify({thirdFrames:AA.length,strictRows:RR.length,firstStrictTriples:counted,anyOppositeStrictFrame:0}));
+
