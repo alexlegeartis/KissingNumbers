@@ -1,6 +1,6 @@
 # 60D: affine-cube compression into a D4 tag constellation
 
-**Exact construction: 82,821,160 kissing points in 60 dimensions.** This is **13,116,536** above the opening project bound of 69,704,624 (opening main ab408918cfddac0bc96d6c3585c608e5bb139d41), or about **18.82%**. [Kamenetsky, Table 4](https://arxiv.org/html/2611.01906v1#S6) gives the separately attributed published external comparison 57,573,374. Neither is an upper bound or a worldwide priority claim. This is an entirely new construction; do not add its layers to the old 60D stock.
+**Exact construction: 82,821,160 kissing points in 60 dimensions.** This is **13,116,536** above the opening project bound of 69,704,624 (opening main ab408918cfddac0bc96d6c3585c608e5bb139d41), or about **18.82%**. [Kamenetsky, Table 3](https://arxiv.org/html/2611.01906v1#S6) gives the separately attributed published external comparison 57,573,374. Neither is an upper bound or a worldwide priority claim. This is an entirely new construction; do not add its layers to the old 60D stock.
 
 ## The folding principle
 
