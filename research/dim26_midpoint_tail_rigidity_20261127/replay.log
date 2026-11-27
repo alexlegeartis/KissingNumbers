@@ -1,0 +1,11 @@
+{"components": 18, "pinned": 1}
+{"available_vacant_midpoint_bodies": 367270}
+{"pass_paired_body": 74278, "line_pass_frozen": 332, "inconsistent_components": 332}
+{"giant": 1, "counts": [2048, 2048], "pinned": true}
+{"hist": [[[64, 64], 128], [[64, 96], 64], [[96, 64], 64], [[96, 96], 294], [[128, 128], 73728]], "geometric_candidates": 256}
+{"bodies": 256, "exact_angles_tested": 7626, "gain": 0}
+SOFT_ANGLE_PIN Counter({True: 128})
+SURV Counter({'no_hard_exact': 9088, 'passes_giant_hard_caps': 240}) critical dots2 [80, 96, 112, 128]
+SOFT_ANGLE_PIN Counter({True: 128})
+{"forced": [1], "giant": 1, "soft_at": {"1": 512}}
+{"tested": 14800, "relaxed_survivors": 0}
