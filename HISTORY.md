@@ -646,7 +646,7 @@ its [documented earlier snapshot](common/manuscript_scope.json).
 
 ## Record status and retained results
 
-**29D reclaimed, 27 November 2026.** A [two-colour midpoint switch](verifications/improved/dim29-kempe-tail-switch/) gives **232,231 in 29D**, one above [Takhanov’s 232,230](https://github.com/k-nic/KissingNumbers/tree/77f0860bf93a745140e6e25481d3f60773b11441/version2) and 74 above our preceding witness. It reorients 3,792 full antipodal fibres and replaces one singleton with a pair.
+**29D reclaimed, 27 November 2026.** A [two-colour midpoint switch](verifications/improved/dim29-kempe-tail-switch/) gives **232,236 in 29D**, six above [Takhanov’s 232,230](https://github.com/k-nic/KissingNumbers/tree/77f0860bf93a745140e6e25481d3f60773b11441/version2) and 79 above our preceding witness. It reorients 3,792 full antipodal fibres and replaces six singletons with pairs.
 
 **26D and 29D, 25 November 2026.** [Rustem Takhanov, version 0.2](https://github.com/k-nic/KissingNumbers/tree/77f0860bf93a745140e6e25481d3f60773b11441/version2) reports and supplies exact certificates for **201,212** and **232,230**, respectively. These supersede our retained **201,204** and **232,157** by **8** and **73**. The source release separately pins our comparison revision; its [published verification summary](https://github.com/k-nic/KissingNumbers/blob/77f0860bf93a745140e6e25481d3f60773b11441/version2/certificates/reports/summary.json) records the original full checks. Our construction registry and earlier historical baselines are unchanged.
 

@@ -1,6 +1,6 @@
 # Results
 
-27 November 2026 — A [two-colour midpoint switch](verifications/improved/dim29-kempe-tail-switch/) gives **232,231 in 29D**, one above [Takhanov’s 232,230](https://github.com/k-nic/KissingNumbers/tree/77f0860bf93a745140e6e25481d3f60773b11441/version2) and 74 above our preceding witness. It reorients 3,792 full antipodal fibres and replaces one singleton with a pair.
+27 November 2026 — A [two-colour midpoint switch](verifications/improved/dim29-kempe-tail-switch/) gives **232,236 in 29D**, six above [Takhanov’s 232,230](https://github.com/k-nic/KissingNumbers/tree/77f0860bf93a745140e6e25481d3f60773b11441/version2) and 79 above our preceding witness. It reorients 3,792 full antipodal fibres and replaces six singletons with pairs.
 
 27 November 2026 — A separate long-head shell raises **93D to 49,546,479,128** (+819,200), retaining all 46 full preceding fibres and the complete sparse stock. [Exact replay](verifications/improved/dim93-z8-long-radius-shell/).
 
@@ -346,7 +346,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 26 | 199 868 | **201 204** | 1.01 | `heads` | [27D section and 340-point rational kernel](verifications/improved/dim26-section-rational-kernel/); complete exact geometry |
 | 27 | 201 589 | **209 884** | 1.04 | `heads` | [26D radical-orbit and 27D E8 head-frame exchanges over PackingStar; complete exact final geometry and independent integer exchanges](verifications/improved/dim26-27-radical-orbits/) |
 | 28 | 205 172 | **223 528** | 1.09 | `heads` | [E8 contact cycles and auxiliary-frame exchange over the pinned Takhanov witness; complete exact geometry](verifications/improved/dim28-takhanov-root-exchange/) |
-| 29 | 209 496 | **232 231** | 1.11 | `heads` | [Two-colour midpoint switch](verifications/improved/dim29-kempe-tail-switch/) with exact changed-pair replay |
+| 29 | 209 496 | **232 236** | 1.11 | `heads` | [Two-colour midpoint switch](verifications/improved/dim29-kempe-tail-switch/) with exact changed-pair replay |
 | 30 | 220 440 | **248 506** | 1.13 | `heads` | [packing of lifted Leech contact midpoints with complete exact geometry](verifications/improved/dim30-row-midpoint-packing/) |
 | 31 | 238 350 | **251 524** | 1.06 | `heads` | [joint row-midpoint, fibre, auxiliary and Leech-root exchanges; complete exact geometry](verifications/improved/dim30-31-midpoint-exchanges/) |
 | 32 | 352 320 | **352 992** | 1.00 | `codes` | [signed octad layers, rational 34D heavy-head rotation and shared root-star deletions; two independent exact proofs](verifications/improved/dim32-35-signed-layers/) |

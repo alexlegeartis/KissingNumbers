@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild and verify the 232,231-point witness from the public 232,230 stock."""
+"""Rebuild and verify the 232,236-point witness from the public 232,230 stock."""
 import argparse
 import hashlib
 import json
@@ -12,6 +12,13 @@ SOURCE_POINTS_SHA256 = "3675c465c219c0e542f881356774f85dc9d67cb7ad0f83cfb805d0e8
 TARGET = (4,-2,0,-2,0,0,4,0,0,0,0,4,0,0,2,-2,2,2,-2,0,0,2,0,4,4,0,0,0,4)
 A = np.array((0,4,0,-4,0),np.int32)
 B = np.array((4,0,0,0,-4),np.int32)
+EXTRA_BODIES = (
+    ((-4, 0, 0, -2, 0, 0, 4, 0, 0, 0, 0, 4, 2, -2, 0, 0, 0, 2, 2, 2, 0, -2, -2, -4), 'B'),
+    ((-4, 0, 0, 2, 0, 0, 4, 0, 0, 0, 0, 4, -2, 2, 0, 0, 0, -2, -2, -2, 0, 2, 2, -4), 'B'),
+    ((-2, 0, 2, 0, 2, -6, -2, 2, 2, 2, 2, -2, -2, -2, 0, 0, 0, 0, 0, -2, 2, 0, -2, -2), 'A'),
+    ((0, 0, -4, 0, -4, 4, 0, 2, -2, 2, 4, 0, 2, -2, 0, 0, 0, 0, 0, -2, -2, 0, 2, 0), 'B'),
+    ((2, 0, 6, 0, -2, -2, 2, 2, 2, 2, -2, 2, -2, -2, 0, 0, 0, 0, 0, -2, 2, 0, -2, 2), 'A'),
+)
 
 def point_hash(x):
     order=np.lexsort(x.T[::-1])
@@ -21,6 +28,7 @@ def main():
     p=argparse.ArgumentParser()
     p.add_argument("source",type=Path)
     p.add_argument("--output",type=Path)
+    p.add_argument("--full",action="store_true",help="also check every retained-retained pair")
     opt=p.parse_args()
     assert hashlib.sha256(opt.source.read_bytes()).hexdigest()==SOURCE_SHA256
     with np.load(opt.source,allow_pickle=False) as f:
@@ -63,9 +71,15 @@ def main():
             keep[[i,k]]=False
             new.extend((np.r_[body,t],np.r_[body,-t]))
     new.extend((np.r_[h,B],np.r_[h,-B]))
+    for body,colour in EXTRA_BODIES:
+        locus=np.flatnonzero((H==body).all(axis=1))
+        assert len(locus)==1 and keep[locus[0]]
+        keep[locus]=False
+        t=A if colour=="A" else B
+        new.extend((np.r_[body,t],np.r_[body,-t]))
     added=np.array(new,np.int32)
     old=source[keep]
-    assert len(old)==224645 and len(added)==7586
+    assert len(old)==224640 and len(added)==7596
     assert (np.einsum("ij,ij->i",added,added)==128).all()
     # Each partial sum of each dot product is an integer of magnitude at most
     # 128 by Cauchy-Schwarz. Binary32 matmul is therefore exact on these inputs.
@@ -80,6 +94,13 @@ def main():
         r=np.arange(len(z));g[r,r+start]=-128
         max_new=max(max_new,int(np.max(g)))
     assert max_old<=64 and max_new<=64
+    if opt.full:
+        assert (np.einsum("ij,ij->i",old,old)==128).all()
+        for start in range(0,len(old),256):
+            z=oldT[:,start:start+256].T.copy()
+            g=z@oldT[:,start:]
+            r=np.arange(len(z));g[r,r]=-128
+            assert g.max()<=64
     final=np.vstack((old,added))
     dg=point_hash(final)
     print(json.dumps(dict(points=len(final),old_removed=int((~keep).sum()),new_rows=len(added),

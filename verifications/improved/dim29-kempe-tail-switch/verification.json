@@ -1,9 +1,9 @@
 {
-  "points": 232231,
-  "old_removed": 7585,
-  "new_rows": 7586,
+  "points": 232236,
+  "old_removed": 7590,
+  "new_rows": 7596,
   "switched_pair_bodies": 3792,
   "new_vs_retained_max": 64,
   "new_vs_new_max": 64,
-  "sorted_int16_rows_sha256": "07eee7f2628cafc8fe5d45c80596e5edb261d65066e45466b8eaad4f6bc511dc"
+  "sorted_int16_rows_sha256": "81d5f3043438cbf3f8f3521033ecaa5de44a50e774b4610caee8ce54d2b234c6"
 }
