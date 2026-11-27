@@ -13,6 +13,7 @@ file, and the history of the lower bound in its dimensions.
 
 | package | dims | status |
 |---|---|---|
+| [`dim90-qr16-constant-rails`](improved/dim90-qr16-constant-rails/) | 90 | **21,956,424,500**. Exact marked QR16 donors and explicit shifted QR15 fibers; supersedes the QR18 witness. |
 | [`dim90-qr18-marked-pencil`](improved/dim90-qr18-marked-pencil/) | 90 | **21,956,420,880**. Exact QR18 marked pencil and explicit shifted QR15 fibers. |
 | [`dim40-qr-central-split`](improved/dim40-qr-central-split/) | 40 | **1,139,159**. Exact QR48 central-word split; unchanged Smart octads and roots. |
 | [`dim62-partial-nonary-refill`](improved/dim62-partial-nonary-refill/) | 62 | Exact partial signs and individually checked old blockers |

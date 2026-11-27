@@ -1,5 +1,7 @@
 # Verification of the retained SOTA results
 
+27 November 2026 — A marked QR16 construction with all old QR15 phase banks retained raises **90D to 21,956,424,500** (+3,620 vs the previous package). Its 4,378 new rays replace the previous 758; they are not counted together. [Proof and exact replay](verifications/improved/dim90-qr16-constant-rails/).
+
 26 November 2026 — A new weight-18 QR shell over an equal-size rephased QR15 replacement raises **90D to 21,956,420,880** (+758). The packed witness verifies every new cross-layer constraint and retains the previous-size base. [Proof and exact replay](verifications/improved/dim90-qr18-marked-pencil/).
 
 26 November 2026 — A one-for-forty split of a central QR word gives **1,139,159 in 40D** (+39 over Smart + Edel–Rains–Sloane), retaining all signed octads and roots. [QR48 central-word split with an exact forty-daughter shell](verifications/improved/dim40-qr-central-split/).
