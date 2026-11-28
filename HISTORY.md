@@ -650,6 +650,8 @@ its [documented earlier snapshot](common/manuscript_scope.json).
 
 ## Record status and retained results
 
+**29D, 28 November 2026, continuation.** [Four-body colour switch and restoration](verifications/improved/dim29-four-body-restore/) gives **232,244**, +2 over 232,242 and +14 over Takhanov’s 232,230. It preserves the complete Leech equator and all auxiliary points.
+
 **29D, 28 November 2026.** [Shared tail-antipode reflection](verifications/improved/dim29-shared-tail-reflection/) gives **232,242**, +6 over the exact 232,236 Kempe switch and +12 over Takhanov’s 232,230. Ten new rows share four old conflicts; the exact literal splice is independently verified.
 
 **29D reclaimed, 27 November 2026.** A [two-colour midpoint switch](verifications/improved/dim29-kempe-tail-switch/) gives **232,236 in 29D**, six above [Takhanov’s 232,230](https://github.com/k-nic/KissingNumbers/tree/77f0860bf93a745140e6e25481d3f60773b11441/version2) and 79 above our preceding witness. It reorients 3,792 full antipodal fibres and replaces six singletons with pairs.

@@ -1,0 +1,9 @@
+{
+  "points": 232244,
+  "inherited_rows": 232234,
+  "removed": 8,
+  "added": 10,
+  "new_vs_retained_max": 64,
+  "new_vs_new_max": 64,
+  "sorted_int16_rows_sha256": "535725b88ca163f30194802929e58046e940ad041932341abf0beab5ce91cffa"
+}
