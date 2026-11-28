@@ -2,7 +2,7 @@
 
 [Henry Cohn’s kissing-number table](https://cohn.mit.edu/kissing-numbers/) was **checked 28 November 2026 (Moscow time)**. It credits this repository in **19 dimensions**: 18, 25, 28, 30–32 and 34–46. [Dated 48-row comparison and attribution](common/cohn_20261128.json).
 
-**Current comparisons.** [Takhanov](https://github.com/k-nic/KissingNumbers) leads in **26D** (201,212 vs. our 201,204) and **27D** (210,108 vs. 209,884). [Philip Carder](https://doi.org/10.5281/zenodo.24577266) leads in **33D** (370,568 vs. 370,556; [independent replay](common/carder_33d_replay_20261128.md)). **29D is reclaimed:** our 232,236 exceeds the 232,230 still shown by Cohn. **36D** remains at our listed 506,628.
+**Current comparisons.** [Takhanov](https://github.com/k-nic/KissingNumbers) leads in **26D** (201,212 vs. our 201,204) and **27D** (210,108 vs. 209,884). [Philip Carder](https://doi.org/10.5281/zenodo.24577266) leads in **33D** (370,568 vs. 370,556; [independent replay](common/carder_33d_replay_20261128.md)). **29D is reclaimed:** our 232,242 is 12 above Takhanov’s 232,230 in the dated Cohn comparison. **36D** remains at our listed 506,628.
 
 Verified construction lower bounds in **70 dimensions**, with exact proof packages and retained research history. A kissing configuration consists of unit vectors whose pairwise inner products are at most 1/2.
 
@@ -36,7 +36,7 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 26 | 199 868 | [Takhanov–Yun, deformed caps + free heads (2026)](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **201 204** | 201 212 | +0.66844% | +0.00398% | superseded 2026-11-25 | [27D section and rational kernel](verifications/improved/dim26-section-rational-kernel/) | [Takhanov (2026), v0.2: four replacement codes](https://github.com/k-nic/KissingNumbers/tree/77f0860bf93a745140e6e25481d3f60773b11441/version2) |
 | 27 | 201 589 | [Takhanov–Yun, cap colouring (2026)](https://github.com/k-nic/kissing_d25-31/blob/b3768310ba566da5c8947546266c103fbcdce181/paper.pdf) | **209 884** | 210 108 | +4.1148% | +0.10673% | superseded 2026-11-17 | [E8 head-frame replacement](verifications/improved/dim26-27-radical-orbits/) | [Takhanov’s Leech midpoint construction (2026)](https://github.com/k-nic/KissingNumbers/tree/dadcb2940f7c3c3bd478b0543931d3eef9f4bd65/version1) |
 | 28 | 205 172 | [K. Li, Leech lift and auxiliary layers (2026)](https://github.com/Felpix-Studios/kissing-number/blob/b823640f4e98134b9d55b27288132ee954a8affa/preprints/leech-lift-d28-d31/paper.pdf) | **223 528** | **SOTA** | +8.94664% | — | updated 2026-11-18 | [E8 root and auxiliary exchange](verifications/improved/dim28-takhanov-root-exchange/) | — |
-| 29 | 209 496 | [Ma et al., PackingStar (2025; v4 2026)](https://arxiv.org/abs/2511.13391v4) | **232 236** | **SOTA** | +10.85462% | — | reclaimed 2026-11-27 | [Two-colour midpoint switch](verifications/improved/dim29-kempe-tail-switch/) | — |
+| 29 | 209 496 | [Ma et al., PackingStar (2025; v4 2026)](https://arxiv.org/abs/2511.13391v4) | **232 242** | **SOTA** | +10.85749% | — | reclaimed 2026-11-27; updated 2026-11-28 | [Shared tail-antipode reflection](verifications/improved/dim29-shared-tail-reflection/) | — |
 | 30 | 220 440 | [Ma et al., PackingStar (2025; v5 2026)](https://arxiv.org/abs/2511.13391v5) | **248 506** | **SOTA** | +12.73181% | — | updated 2026-11-22 | [Lifted Leech contact midpoints](verifications/improved/dim30-row-midpoint-packing/) | — |
 | 31 | 238 350 | [Ma et al., PackingStar (2026; v5)](https://arxiv.org/abs/2511.13391v5) | **251 524** | **SOTA** | +5.52717% | — | updated 2026-11-18 | [Joint midpoint exchange](verifications/improved/dim30-31-midpoint-exchanges/) | — |
 | 32 | 352 320 | [Lin, support code + ERS layers (2026)](https://github.com/QH-Lin/kissing-number-32/tree/f367a9c5a051c0d6821ce71324b9dfa1ead76c2e) | **352 992** | **SOTA** | +0.190736% | — | since 2026-11-07 | [Non-antipodal signed octad continuation](verifications/improved/dim32-35-signed-layers/nonantipodal32/) | [Comparison scope](verifications/improved/dim32-35-signed-layers/nonantipodal32/evidence/public_comparison.json) |
@@ -103,6 +103,8 @@ The [shortening and larger pattern lists](verifications/improved/dim88-95-golay-
 | 96 | 137 438 953 472 | [Duursma–Greferath–Litsyn–Schmidt nonlinear Golay code (2001)](https://doi.org/10.1109/18.923742) *(derived by sign embedding)* | **209 300 845 920** | **SOTA** | +52.286408% | — | updated 2026-11-28 | [Concentrated six-coordinate signed layer](verifications/improved/dim96-concentrated-six-coordinate-supports/) | — |
 
 ## Recent updates
+
+**28 November 2026**: A [shared tail-antipode reflection](verifications/improved/dim29-shared-tail-reflection/) raises **29D to 232,242** (+6 over the preceding exact construction; +12 over Takhanov’s 232,230). The ten new rows need only four distinct old rows removed; the entire predecessor equator is retained.
 
 27 November 2026 — A separate long-head shell raises **93D to 49,546,479,128** (+819,200), retaining all 46 full preceding fibres and the complete sparse stock. [Exact replay](verifications/improved/dim93-z8-long-radius-shell/).
 

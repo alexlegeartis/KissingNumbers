@@ -307,6 +307,8 @@ Preceding 35D: **415,336**, two above its predecessor. The [shared-root proof](v
 
 Latest 28D: **223,528**, 32 above Takhanov’s pinned construction. The [E8 root exchange](verifications/improved/dim28-takhanov-root-exchange/) checks all **24,982,271,628** unordered final pairs and separately verifies the 320-for-288 exchange in signed int64.
 
+Latest 29D: **232,242**. The [shared tail-antipode splice](verifications/improved/dim29-shared-tail-reflection/) inherits 232,232 rows from the pinned 232,236 witness, removes four rows and checks all ten additions against the retained stock and each other with signed integer arithmetic. Both maxima are 64 at norm squared 128.
+
 A [two-colour midpoint switch](verifications/improved/dim29-kempe-tail-switch/) gives **232,236 in 29D**, six above [Takhanov’s 232,230](https://github.com/k-nic/KissingNumbers/tree/77f0860bf93a745140e6e25481d3f60773b11441/version2) and 79 above our preceding witness. It reorients 3,792 full antipodal fibres and replaces six singletons with pairs. The replay rebuilds and checks all 7,596 new rows against the 224,640 retained rows and each other; both inner-product maxima are exactly 64 at squared norm 128. Retained–retained pairs are inherited in the default verifier; the `--full` replay also checked all 26,966,663,730 distinct final pairs directly.
 
 The earlier 29D witness has **232,157** points, 3 above the previous certificate and 4 above Takhanov’s pinned release. The direct integer replay checks all 3,250,156 donor–incumbent products and 91 donor pairs; `--full` checks all **26,948,320,246** final unordered pairs. [14-for-11 even-grid exchange](verifications/improved/dim29-even-grid-exchange/).
