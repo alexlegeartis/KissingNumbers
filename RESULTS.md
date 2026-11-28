@@ -358,7 +358,7 @@ The 28 October fill/correct continuation gives 13290553536 in 96D (+294912 over 
 | 36 | 484 760 | **506 628** | 1.05 | `cosets` | [Coxeter–Todd cell perturbations and recovery](verifications/improved/dim36-ct-neutral-reheat/) |
 | 37 | 500 008 | **544 666** | 1.09 | `codes` | [QR 12-flat phase repacking](verifications/improved/dim37-qr-flat-repack/) |
 | 38 | 566 652 | **652 076** | 1.15 | `codes` | [QR offsets, ten octad switches and signed stars](verifications/improved/dim38-qr-octad-switches/) |
-| 39 | 755 988 | **783 468** | 1.03 | `codes` | [QR fibres with three-coordinate heads and projected support checks](verifications/improved/dim39-qr-three-coordinate-heads/) |
+| 39 | 755 988 | **783 484** | 1.03 | `codes` | [QR body permutation with independently chosen octad parities](verifications/improved/dim39-qr-body-parity-783484/) |
 | 40 | 1 092 000 | **1 139 159** | 1.04 | `heads` | [QR48 central-word split with an exact forty-daughter shell](verifications/improved/dim40-qr-central-split/) |
 | 41 | 1 324 472 | **1 460 066** | 1.10 | `heads` | [affine body shells with rational heads and fresh counts for every family](verifications/improved/dim41-43-affine-sections/) |
 | 42 | 1 792 386 | **1 991 475** | 1.11 | `heads` | [affine body shells with rational heads and fresh counts for every family](verifications/improved/dim41-43-affine-sections/) |

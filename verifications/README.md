@@ -143,6 +143,7 @@ file, and the history of the lower bound in its dimensions.
 | [`dim31-dual-centres`](improved/dim31-dual-centres/) | 31 | shared midpoint replacements and dual E7 centres; exact coordinate replay |
 | [`dim38-joint-latitudes`](improved/dim38-joint-latitudes/) | 38 | 611,638 points; orthogonal Hamming replacement, retained Fano grid and exact cross-layer proofs with the source Golay/Leech minimum-norm premise |
 | [`dim39-deformed-orbits`](improved/dim39-deformed-orbits/) | 39 | current 769,852 from reduced-symmetry dense sign orbits; two independent complete exact proofs; retained 769,180 certificate |
+| [`dim39-qr-body-parity-783484`](improved/dim39-qr-body-parity-783484/) | 39 | **783,484**; simultaneous QR body embedding and exact octad parity choices |
 | [`dim39-qr-three-coordinate-heads`](improved/dim39-qr-three-coordinate-heads/) | 39 | **783,468**; 84 QR fibres with rational three-coordinate heads |
 | [`dim39-qr-pentapolar`](improved/dim39-qr-pentapolar/) | 39 | **774,972**; five rational QR head positions with exact replay |
 | [`dim40-affine-shells`](improved/dim40-affine-shells/) | 40 | **1,126,322**: affine lattice shells and eight minimum-shell refills; exact cross-products |

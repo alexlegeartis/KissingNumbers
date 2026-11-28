@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "dimension": 39,
+  "points": 783484,
+  "improvement": 16,
+  "dense": 344064,
+  "octad_points": 436448,
+  "removed_octad_points": 1824,
+  "roots": 2908,
+  "stars": 64,
+  "kernel_minimum_distance": 12,
+  "fibres": 84
+}
